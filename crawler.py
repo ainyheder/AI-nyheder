@@ -57,7 +57,15 @@ DYBDE_ANTAL = 30                 # de N nyeste artikler får komplet brief
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 
+# --- AI-billeder til tophistorierne (kræver GEMINI_API_KEY + betaling slået til) ---
+BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
+BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
+BILLED_MAPPE = ROOT / "data" / "img"
+MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel
+BILLED_BREDDE = 640              # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
+
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
+_billed_model = BILLED_MODEL     # billedmodellen (kan også falde tilbage)
 
 USER_AGENT = "Mozilla/5.0 (compatible; AIRadarCrawler/2.0; +https://github.com)"
 NS = {"atom": "http://www.w3.org/2005/Atom"}
@@ -322,6 +330,91 @@ def dybe_briefs(artikler: list[dict]) -> None:
         print(f"   … {i}/{len(med_tekst)}")
 
 
+# ----- AI-billeder til tophistorierne -----------------------------------------
+
+def _billed_navn(link: str) -> str:
+    import hashlib
+    return hashlib.md5(link.encode()).hexdigest()[:16] + ".jpg"
+
+
+def _gem_billede(raa: bytes, sti: Path) -> None:
+    """Gemmer billedet - nedskaleret til web-størrelse hvis pillow findes."""
+    try:
+        from PIL import Image
+        import io
+        img = Image.open(io.BytesIO(raa)).convert("RGB")
+        h = int(img.height * BILLED_BREDDE / img.width)
+        img.resize((BILLED_BREDDE, h)).save(sti, "JPEG", quality=78)
+    except ImportError:
+        sti.write_bytes(raa)
+
+
+def lav_billeder(artikler: list[dict]) -> None:
+    """Genererer ét AI-billede pr. tophistorie. Billedet laves kun én gang
+    (filnavn = hash af linket) og bruges for altid. Kræver GEMINI_API_KEY,
+    og at betaling er slået til - ellers springes trinnet bare over."""
+    global _billed_model
+    if not GEMINI_KEY:
+        print("🎨 GEMINI_API_KEY ikke sat - springer AI-billeder over")
+        return
+    BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
+
+    top = [a for a in artikler[:DYBDE_ANTAL] if a.get("rubrik")]
+    lavet, fejl_i_traek = 0, 0
+    for a in top:
+        navn = _billed_navn(a["link"])
+        sti = BILLED_MAPPE / navn
+        if sti.exists():                                  # allerede lavet
+            a["billede"] = f"data/img/{navn}"
+            continue
+        if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
+            continue
+        prompt = (f"Redaktionel nyhedsillustration i moderne, enkel, flad stil med bløde "
+                  f"farver og god kontrast. INGEN tekst, bogstaver, tal eller logoer. "
+                  f"Motiv: {a['rubrik']}. Kontekst: {a.get('resume_da', '')[:150]}")
+        body = json.dumps({
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {"responseModalities": ["IMAGE"],
+                                 "imageConfig": {"aspectRatio": "16:9"}},
+        }).encode()
+        try:
+            try:
+                svar = hent_url(
+                    f"https://generativelanguage.googleapis.com/v1beta/models/{_billed_model}:generateContent",
+                    data=body, headers={"x-goog-api-key": GEMINI_KEY, "content-type": "application/json"})
+            except urllib.error.HTTPError as f:
+                if f.code in (400, 404) and _billed_model != BILLED_FALLBACK:
+                    print(f"  ℹ️  {_billed_model} ikke tilgængelig - prøver {BILLED_FALLBACK}")
+                    _billed_model = BILLED_FALLBACK
+                    svar = hent_url(
+                        f"https://generativelanguage.googleapis.com/v1beta/models/{_billed_model}:generateContent",
+                        data=body, headers={"x-goog-api-key": GEMINI_KEY, "content-type": "application/json"})
+                else:
+                    raise
+            import base64
+            for del_ in json.loads(svar)["candidates"][0]["content"]["parts"]:
+                data64 = del_.get("inlineData", del_.get("inline_data", {})).get("data")
+                if data64:
+                    _gem_billede(base64.b64decode(data64), sti)
+                    a["billede"] = f"data/img/{navn}"
+                    lavet += 1
+                    fejl_i_traek = 0
+                    break
+            time.sleep(GEMINI_PAUSE_SEK)
+        except Exception as f:
+            fejl_i_traek += 1
+            print(f"  ⚠️  Billede fejlede ({a['kilde']}): {type(f).__name__} "
+                  f"{'- er betaling slået til på Google-kontoen?' if fejl_i_traek >= 2 else ''}")
+    if lavet:
+        print(f"🎨 Genererede {lavet} nye artikelbilleder")
+
+    # ryd op: slet billeder for artikler der er røget ud af listen
+    brugte = {_billed_navn(a["link"]) for a in artikler}
+    for fil in BILLED_MAPPE.glob("*.jpg"):
+        if fil.name not in brugte:
+            fil.unlink(missing_ok=True)
+
+
 def omskriv_nye(artikler: list[dict], cache: dict) -> None:
     """Sætter rubrik/resume_da på artiklerne - fra cache, seed-fil eller Claude."""
     for a in artikler:                       # 1) genbrug alt vi allerede har betalt for
@@ -332,6 +425,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             if gammel.get("brief"):
                 a["brief"] = gammel["brief"]
                 a["pointer"] = gammel.get("pointer", [])
+            if gammel.get("billede"):
+                a["billede"] = gammel["billede"]
 
     # 2) håndlavede omskrivninger fra seeds_da.json (matcher på titel-prefix)
     seed_fil = ROOT / "seeds_da.json"
@@ -414,13 +509,15 @@ def main() -> None:
                     cache[a["link"]] = {"rubrik": a["rubrik"],
                                         "resume_da": a.get("resume_da", ""),
                                         "brief": a.get("brief", ""),
-                                        "pointer": a.get("pointer", [])}
+                                        "pointer": a.get("pointer", []),
+                                        "billede": a.get("billede", "")}
         except (json.JSONDecodeError, KeyError):
             pass
 
     print()
     omskriv_nye(unikke, cache)
     dybe_briefs(unikke)
+    lav_billeder(unikke)
 
     for a in unikke:
         a["dato"] = a["dato"].isoformat() if a["dato"] else None

@@ -44,12 +44,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
-        run: python3 crawler.py
+        run: |
+          pip install pillow -q
+          python3 crawler.py
 
       - name: Commit de nye artikler
         run: |
           git config user.name "ai-news-bot"
           git config user.email "actions@github.com"
-          git add data/articles.json
+          git add data
           git diff --staged --quiet || git commit -m "Automatisk opdatering af nyheder"
           git push
