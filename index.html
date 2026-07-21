@@ -100,6 +100,18 @@ a { color: inherit; }
   display: grid; place-items: center; transition: transform .2s;
 }
 .tema-knap:hover { transform: rotate(14deg) scale(1.07); }
+.visning-skift {
+  display: flex; border: 1px solid var(--linje); border-radius: 999px;
+  background: var(--bg-kort); overflow: hidden;
+}
+.visning-skift button {
+  border: 0; background: transparent; color: var(--blaek-svag);
+  font-family: inherit; font-size: 12.5px; font-weight: 700;
+  padding: 9px 14px; cursor: pointer; display: flex; gap: 6px; align-items: center;
+  transition: all .18s;
+}
+.visning-skift button.aktiv { background: var(--blaek); color: var(--bg); }
+[data-tema="moerk"] .visning-skift button.aktiv { background: var(--accent); color: #fff; }
 
 /* ---------- Filtre ---------- */
 .filtre {
@@ -205,6 +217,56 @@ a { color: inherit; }
 
 @keyframes ind { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
+/* ---------- KOMPAKT OVERBLIK ---------- */
+.mini-hero {
+  display: flex; gap: 0; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--skygge); margin-bottom: 20px;
+  text-decoration: none; transition: transform .2s; animation: ind .4s ease both;
+}
+.mini-hero:hover { transform: translateY(-2px); }
+.mini-hero-art { width: 300px; min-height: 150px; position: relative; flex-shrink: 0; }
+.mini-hero-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mini-hero-tekst { padding: 18px 26px; display: flex; flex-direction: column; gap: 7px; justify-content: center; }
+.mini-hero-tekst h1 {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(19px, 2vw, 26px); line-height: 1.12; letter-spacing: -.015em;
+}
+.mini-hero-tekst p { font-size: 13.5px; color: var(--blaek-svag); max-width: 78ch; }
+@media (max-width: 700px) { .mini-hero-art { width: 110px; } .mini-hero-tekst { padding: 14px 16px; } }
+
+.tavle {
+  display: grid; gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+.raekke {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 12px; padding: 10px 12px;
+  text-decoration: none; transition: transform .15s, border-color .15s;
+  animation: ind .3s ease both;
+}
+.raekke:hover { transform: translateY(-2px); border-color: var(--accent); }
+.frimaerke {
+  width: 52px; height: 52px; border-radius: 9px; overflow: hidden;
+  position: relative; flex-shrink: 0;
+}
+.frimaerke svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.raekke-tekst { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.raekke-tekst .kicker { font-size: 9.5px; letter-spacing: .1em; }
+.raekke-tekst .kicker .adskil { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.raekke h3 {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: 14.5px; line-height: 1.25; letter-spacing: -.01em;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.raekke .resume-skjult {
+  font-size: 12px; color: var(--blaek-svag); line-height: 1.45;
+  max-height: 0; opacity: 0; overflow: hidden; transition: max-height .25s ease, opacity .25s ease;
+}
+.raekke:hover .resume-skjult { max-height: 90px; opacity: 1; }
+.raekke .tid { font-size: 10.5px; color: var(--blaek-svag); font-weight: 500; }
+
 .tom { text-align: center; padding: 70px 20px; color: var(--blaek-svag); font-size: 15px; }
 .note {
   background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
@@ -230,6 +292,10 @@ footer a { color: var(--accent); }
     <div class="sog">
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
       <input id="sogefelt" type="search" placeholder="Søg i nyhederne …">
+    </div>
+    <div class="visning-skift" id="visningSkift" title="Skift visning">
+      <button data-visning="kompakt" class="aktiv">☰ Overblik</button>
+      <button data-visning="magasin">▦ Magasin</button>
     </div>
     <button class="tema-knap" id="temaKnap" title="Lyst/mørkt tema">🌙</button>
   </div>
@@ -258,6 +324,7 @@ footer a { color: var(--accent); }
 let artikler = [];
 let aktivKategori = "Alle";
 let sogeTekst = "";
+let visning = "kompakt";     // "kompakt" = tæt overblik · "magasin" = store kort
 
 const indhold = document.getElementById("indhold");
 const filtreEl = document.getElementById("filtre");
@@ -394,6 +461,19 @@ function kortHtml(a, id, stor = false) {
   </a>`;
 }
 
+function raekkeHtml(a, id) {
+  return `
+  <a class="raekke" href="${esc(a.link)}" target="_blank" rel="noopener" style="animation-delay:${Math.min(id * 12, 350)}ms">
+    <div class="frimaerke">${kunst(a, id)}</div>
+    <div class="raekke-tekst">
+      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}</div>
+      <h3>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h3>
+      <div class="resume-skjult">${brodtekst(a)}</div>
+      <span class="tid">${relativTid(a.dato)}</span>
+    </div>
+  </a>`;
+}
+
 function tegn() {
   const liste = filtrerede();
   document.getElementById("antalTekst").textContent =
@@ -410,6 +490,23 @@ function tegn() {
   const heroArtikel = liste.find(a => a.rubrik) || liste[0];
   const rest = liste.filter(a => a !== heroArtikel);
 
+  if (visning === "kompakt") {
+    // ---- OVERBLIK: slank hero + tæt tavle (resumé foldes ud ved hover) ----
+    const miniHero = `
+    <a class="mini-hero" href="${esc(heroArtikel.link)}" target="_blank" rel="noopener">
+      <div class="mini-hero-art">${kunst(heroArtikel, 9999)}</div>
+      <div class="mini-hero-tekst">
+        <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)} · ${relativTid(heroArtikel.dato)}</span></div>
+        <h1>${overskrift(heroArtikel)}</h1>
+        <p>${brodtekst(heroArtikel)}</p>
+      </div>
+    </a>`;
+    indhold.innerHTML = note + miniHero +
+      `<div class="tavle">${rest.map((a, i) => raekkeHtml(a, i)).join("")}</div>`;
+    return;
+  }
+
+  // ---- MAGASIN: stor hero + mosaik-kort ----
   const hero = `
   <a class="hero" href="${esc(heroArtikel.link)}" target="_blank" rel="noopener">
     <div class="hero-art">${kunst(heroArtikel, 9999)}</div>
@@ -421,9 +518,7 @@ function tegn() {
     </div>
   </a>`;
 
-  // Mosaik: hvert 7. kort er stort
   const kort = rest.map((a, i) => kortHtml(a, i, i % 7 === 0 && i > 0)).join("");
-
   indhold.innerHTML = note + hero +
     `<div class="sektion-titel">Seneste historier</div><div class="grid">${kort}</div>`;
 }
@@ -437,6 +532,15 @@ filtreEl.addEventListener("click", e => {
   tegnFiltre(); tegn();
 });
 document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
+
+document.getElementById("visningSkift").addEventListener("click", e => {
+  const knap = e.target.closest("button");
+  if (!knap) return;
+  visning = knap.dataset.visning;
+  document.querySelectorAll("#visningSkift button").forEach(b =>
+    b.classList.toggle("aktiv", b === knap));
+  tegn();
+});
 
 const temaKnap = document.getElementById("temaKnap");
 if (matchMedia("(prefers-color-scheme: dark)").matches) {
