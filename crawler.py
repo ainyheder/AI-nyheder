@@ -39,8 +39,9 @@ TIMEOUT_SEK = 20
 # --- AI-omskrivning (Claude ELLER Gemini - crawleren bruger den nøgle der findes) ---
 CLAUDE_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
-CLAUDE_MODEL = "claude-haiku-4-5"     # $1/$5 pr. mio. tokens
-GEMINI_MODEL = "gemini-3.5-flash"     # $1.50/$9 - men har gratis-niveau (rate-begrænset)
+CLAUDE_MODEL = "claude-haiku-4-5"          # $1/$5 pr. mio. tokens
+GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst (lanceret 21/7-2026)
+GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
 
 # Er begge nøgler sat, vinder AI_UDBYDER ("claude" eller "gemini"), ellers Claude
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
@@ -55,6 +56,8 @@ GEMINI_PAUSE_SEK = 4             # pause mellem Gemini-kald (gratis-niveauets fa
 DYBDE_ANTAL = 30                 # de N nyeste artikler får komplet brief
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
+
+_gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
 
 USER_AGENT = "Mozilla/5.0 (compatible; AIRadarCrawler/2.0; +https://github.com)"
 NS = {"atom": "http://www.w3.org/2005/Atom"}
@@ -210,18 +213,28 @@ def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
         })
         return json.loads(svar)["content"][0]["text"]
 
-    # Gemini
+    # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises
+    global _gemini_model
     body = json.dumps({
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": bruger_tekst}]}],
         "generationConfig": {"maxOutputTokens": max_tokens},
     }).encode()
-    svar = hent_url(
-        f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent",
-        data=body, headers={"x-goog-api-key": API_KEY, "content-type": "application/json"})
+    try:
+        svar = hent_url(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{_gemini_model}:generateContent",
+            data=body, headers={"x-goog-api-key": API_KEY, "content-type": "application/json"})
+    except urllib.error.HTTPError as fejl:
+        if fejl.code in (400, 404) and _gemini_model != GEMINI_FALLBACK:
+            print(f"  ℹ️  {_gemini_model} ikke tilgængelig endnu - skifter til {GEMINI_FALLBACK}")
+            _gemini_model = GEMINI_FALLBACK
+            svar = hent_url(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{_gemini_model}:generateContent",
+                data=body, headers={"x-goog-api-key": API_KEY, "content-type": "application/json"})
+        else:
+            raise
     tekst = json.loads(svar)["candidates"][0]["content"]["parts"][0]["text"]
-    if UDBYDER == "gemini":
-        time.sleep(GEMINI_PAUSE_SEK)         # bliv under gratis-niveauets fartgrænse
+    time.sleep(GEMINI_PAUSE_SEK)             # bliv under gratis-niveauets fartgrænse
     return tekst
 
 
