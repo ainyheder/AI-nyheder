@@ -2,13 +2,13 @@
 # Automatisk crawl af AI-nyheder
 # ---------------------------------------------------------------------
 # Denne workflow koerer paa GitHubs servere (gratis) og:
-#   1. Koerer crawler.py hver 6. time
+#   1. Koerer crawler.py hver 6. time (crawl + AI-omskrivning til dansk)
 #   2. Committer den nye data/articles.json til main
 #   3. GitHub Pages serverer derefter automatisk den nye version
 #
-# I behoever IKKE goere noget for at den koerer - den passer sig selv.
-# I kan ogsaa starte den manuelt: fanen "Actions" -> "Crawl AI-nyheder"
-# -> "Run workflow".
+# AI-omskrivningen kraever en repository secret ved navn ANTHROPIC_API_KEY
+# (Settings -> Secrets and variables -> Actions). Uden den vises artiklerne
+# paa engelsk - alt andet virker stadig.
 # =====================================================================
 
 name: Crawl AI-nyheder
@@ -39,7 +39,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Koer crawleren
+      - name: Koer crawleren (AI-omskrivning hvis noeglen findes)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 crawler.py
 
       - name: Commit de nye artikler
