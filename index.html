@@ -277,23 +277,21 @@ a { color: inherit; }
   background: var(--bg-kort); border: 1px solid var(--linje);
   border-radius: 22px; width: calc(100vw - 48px); max-width: none;
   box-shadow: 0 30px 80px rgba(0,0,0,.35); overflow: hidden;
-  display: grid; grid-template-columns: minmax(280px, 36%) 1fr;
+  position: relative;
   animation: laeserInd .3s cubic-bezier(.2,.9,.3,1) both;
 }
 @keyframes laeserInd { from { opacity: 0; transform: translateY(26px) scale(.98); } to { opacity: 1; transform: none; } }
-.laeser-art { min-height: 320px; height: 100%; position: relative; }
-.laeser-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .laeser-luk {
-  position: absolute; top: 14px; right: 14px; z-index: 2;
-  width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer;
-  background: rgba(0,0,0,.35); color: #fff; font-size: 17px;
-  display: grid; place-items: center; backdrop-filter: blur(4px);
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--linje); cursor: pointer;
+  background: var(--bg); color: var(--blaek); font-size: 16px;
+  display: grid; place-items: center;
   transition: transform .15s, background .15s;
 }
-.laeser-luk:hover { transform: rotate(90deg); background: rgba(0,0,0,.55); }
-.laeser-krop { padding: 36px 48px 40px; min-width: 0; }
+.laeser-luk:hover { transform: rotate(90deg); background: var(--accent-svag); }
+.laeser-krop { padding: 40px 56px 44px; min-width: 0; }
 .laeser-indhold { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap; }
-.laeser-indhold .laeser-brief { flex: 1 1 420px; max-width: 75ch; }
+.laeser-indhold .laeser-brief { flex: 1 1 520px; max-width: 82ch; }
 .laeser-indhold .laeser-pointer { flex: 0 1 320px; margin: 0; }
 .laeser-krop h1 {
   font-family: var(--font-display); font-weight: 900;
@@ -302,6 +300,8 @@ a { color: inherit; }
 }
 .laeser-brief { font-size: 16px; line-height: 1.75; color: var(--blaek); }
 .laeser-brief p { margin-bottom: 14px; }
+.laeser-brief strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.laeser-brief .laeser-sektion:first-child { margin-top: 0; }
 .laeser-pointer { margin: 20px 0 4px; padding: 18px 22px;
   background: var(--accent-svag); border-radius: 14px; }
 .laeser-sektion {
@@ -341,8 +341,7 @@ a { color: inherit; }
 .kilde-knap:hover { transform: translateY(-2px); }
 .laeser-note { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; margin-top: 14px; }
 @media (max-width: 900px) {
-  .laeser { grid-template-columns: 1fr; width: calc(100vw - 24px); }
-  .laeser-art { min-height: 160px; height: 160px; }
+  .laeser { width: calc(100vw - 24px); }
   .laeser-krop { padding: 22px 20px 26px; }
 }
 
@@ -551,6 +550,7 @@ function relativTid(iso) {
   return new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "short" });
 }
 function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }
+function fed(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
 function overskrift(a) { return a.rubrik ? esc(a.rubrik) : esc(a.titel) + '<span class="en-chip">EN</span>'; }
 function brodtekst(a) {
   if (a.resume_da) return esc(a.resume_da);
@@ -617,7 +617,16 @@ const laeserBoks = document.getElementById("laeserBoks");
 
 function aabnLaeser(a) {
   let briefHtml;
-  if (a.brief) {
+  if (a.sektioner && a.sektioner.length) {
+    briefHtml = a.sektioner.map(s =>
+      `<div class="laeser-sektion">${esc(s.overskrift)}</div><p>${fed(s.tekst)}</p>`).join("");
+    if (a.detaljer && a.detaljer.length)
+      briefHtml += `<div class="laeser-sektion">Detaljerne</div>
+        <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${esc(d)}</li>`).join("")}</ul>`;
+    if (a.betydning)
+      briefHtml += `<div class="laeser-sektion">Hvad betyder det for dig?</div>
+        <div class="laeser-betydning">${esc(a.betydning)}</div>`;
+  } else if (a.brief) {
     briefHtml = a.brief.split(/\n\n+/).map(afsnit => `<p>${esc(afsnit)}</p>`).join("");
     if (a.detaljer && a.detaljer.length)
       briefHtml += `<div class="laeser-sektion">Detaljerne</div>
@@ -636,9 +645,7 @@ function aabnLaeser(a) {
        <ul>${a.pointer.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>` : "";
 
   laeserBoks.innerHTML = `
-    <div class="laeser-art">${visuel(a, 8888)}
-      <button class="laeser-luk" id="laeserLuk" aria-label="Luk">✕</button>
-    </div>
+    <button class="laeser-luk" id="laeserLuk" aria-label="Luk">✕</button>
     <div class="laeser-krop">
       <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)} · ${relativTid(a.dato)}</span></div>
       <h1>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h1>

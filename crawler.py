@@ -276,12 +276,17 @@ uden teknisk baggrund. Ud fra artikelteksten skriver du en SELVSTÆNDIG dansk
 genfortælling i dine helt egne ord - oversæt ALDRIG sætninger direkte, og citér
 ikke fra kilden. Skriv ALTID "AI" - aldrig "kunstig intelligens".
 
+Fremhæv de 1-2 vigtigste tal eller navne i hver sektion med **dobbelt-stjerner**.
+Skriv levende og varieret - ALDRIG tre ens grå afsnit i træk.
+
 Svar KUN med ét JSON-objekt:
 {
  "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon,
  "resume":    1-2 korte sætninger (max 30 ord) til oversigten,
- "brief":     2-3 afsnit (i alt 120-180 ord) på letlæst hverdagsdansk om hvad
-              der er sket og baggrunden. Afsnit adskilt af \n\n,
+ "sektioner": 2-4 afsnit med hver sin KORTE, konkrete mini-overskrift (2-4 ord,
+              fx "Det er sket", "Pengene bag", "Kritikerne siger", "Hvad nu?").
+              Hvert afsnit 40-70 ord letlæst hverdagsdansk:
+              [{"overskrift": "...", "tekst": "..."}, ...],
  "detaljer":  4-7 punkter med de vigtigste fakta, tal og detaljer fra artiklen
               (hvert punkt én sætning, max 20 ord),
  "betydning": ét afsnit (50-80 ord): hvad kan det her betyde for almindelige
@@ -297,7 +302,7 @@ def kald_ai_brief(a: dict, tekst: str) -> dict | None:
             SYSTEM_BRIEF,
             f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}",
             1500))
-        if r.get("rubrik") and r.get("brief"):
+        if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
             return r
     except Exception as fejl:
         print(f"  ⚠️  Brief-kald fejlede ({a['kilde']}): {type(fejl).__name__}")
@@ -307,8 +312,7 @@ def kald_ai_brief(a: dict, tekst: str) -> dict | None:
 def dybe_briefs(artikler: list[dict]) -> None:
     """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
-    kandidater = [a for a in artikler[:DYBDE_ANTAL]
-                  if not a.get("brief") or not a.get("detaljer")]
+    kandidater = [a for a in artikler[:DYBDE_ANTAL] if not a.get("sektioner")]
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -331,7 +335,10 @@ def dybe_briefs(artikler: list[dict]) -> None:
         if r:
             a["rubrik"] = str(r["rubrik"]).strip()
             a["resume_da"] = str(r.get("resume", "")).strip() or a.get("resume_da", "")
-            a["brief"] = str(r["brief"]).strip()
+            a["sektioner"] = [{"overskrift": str(x.get("overskrift", "")).strip(),
+                               "tekst": str(x.get("tekst", "")).strip()}
+                              for x in r.get("sektioner", []) if x.get("tekst")][:4]
+            a["brief"] = str(r.get("brief", "")).strip()
             a["detaljer"] = [str(d).strip() for d in r.get("detaljer", [])][:7]
             a["betydning"] = str(r.get("betydning", "")).strip()
             a["pointer"] = [str(p).strip() for p in r.get("pointer", [])][:4]
@@ -547,8 +554,9 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
         if gammel:
             a["rubrik"] = gammel.get("rubrik", "")
             a["resume_da"] = gammel.get("resume_da", "")
-            if gammel.get("brief"):
-                a["brief"] = gammel["brief"]
+            if gammel.get("brief") or gammel.get("sektioner"):
+                a["brief"] = gammel.get("brief", "")
+                a["sektioner"] = gammel.get("sektioner", [])
                 a["detaljer"] = gammel.get("detaljer", [])
                 a["betydning"] = gammel.get("betydning", "")
                 a["pointer"] = gammel.get("pointer", [])
@@ -703,6 +711,7 @@ def main() -> None:
                     cache[a["link"]] = {"rubrik": a["rubrik"],
                                         "resume_da": a.get("resume_da", ""),
                                         "brief": a.get("brief", ""),
+                                        "sektioner": a.get("sektioner", []),
                                         "detaljer": a.get("detaljer", []),
                                         "betydning": a.get("betydning", ""),
                                         "pointer": a.get("pointer", []),
@@ -734,6 +743,10 @@ def main() -> None:
         for felt in ("pointer", "detaljer"):
             if a.get(felt):
                 a[felt] = [kort_ai(p) for p in a[felt]]
+        if a.get("sektioner"):
+            for sek in a["sektioner"]:
+                sek["overskrift"] = kort_ai(sek["overskrift"])
+                sek["tekst"] = kort_ai(sek["tekst"])
 
     for a in unikke:
         a["dato"] = a["dato"].isoformat() if a["dato"] else None
