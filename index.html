@@ -183,6 +183,11 @@ a { color: inherit; }
 .kort.stor h2 { font-size: 26px; }
 @media (max-width: 700px) { .kort.stor { grid-column: span 1; } .kort.stor .kort-art { aspect-ratio: 16/9; } }
 
+.vigtig-chip {
+  font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
+  background: #f4b400; color: #191714;
+  border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
+}
 .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: var(--blaek); color: var(--bg);
@@ -348,6 +353,10 @@ footer a { color: var(--accent); }
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
       <input id="sogefelt" type="search" placeholder="Søg i nyhederne …">
     </div>
+    <div class="visning-skift" id="sortSkift" title="Sortering">
+      <button data-sort="vigtigst" class="aktiv">★ Vigtigst</button>
+      <button data-sort="nyeste">Nyeste</button>
+    </div>
     <div class="visning-skift" id="visningSkift" title="Skift visning">
       <button data-visning="kompakt" class="aktiv">☰ Overblik</button>
       <button data-visning="magasin">▦ Magasin</button>
@@ -382,6 +391,7 @@ let artikler = [];
 let aktivKategori = "Alle";
 let sogeTekst = "";
 let visning = "kompakt";     // "kompakt" = tæt overblik · "magasin" = store kort
+let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kronologi
 
 const indhold = document.getElementById("indhold");
 const filtreEl = document.getElementById("filtre");
@@ -513,12 +523,21 @@ function tegnFiltre() {
     `<button class="pill ${k === aktivKategori ? "aktiv" : ""}" data-kategori="${esc(k)}">${esc(k)}</button>`).join("");
 }
 
+function prioAf(a) {
+  // flerkilde-historier er per definition vigtigere
+  return (a.prio ?? 5) + (a.andre && a.andre.length ? 1 : 0);
+}
+
 function filtrerede() {
   const q = sogeTekst.toLowerCase();
-  return artikler.filter(a =>
+  const liste = artikler.filter(a =>
     (aktivKategori === "Alle" || a.kategori === aktivKategori) &&
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
+  if (sortering === "vigtigst") {
+    liste.sort((x, y) => prioAf(y) - prioAf(x) || new Date(y.dato || 0) - new Date(x.dato || 0));
+  }
+  return liste;
 }
 
 /* ---------- Læsevisning ---------- */
@@ -583,7 +602,7 @@ function kortHtml(a, id, stor = false) {
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
     <div class="kort-art">${visuel(a, id)}</div>
     <div class="kort-krop">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}</div>
+      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}${(a.prio ?? 0) >= 8 ? '<span class="vigtig-chip">★ Vigtig</span>' : ""}</div>
       <h2>${overskrift(a)}</h2>
       <p>${brodtekst(a)}</p>
       <div class="meta"><span>${relativTid(a.dato)}</span><span class="laes" style="margin-left:auto">Læs</span></div>
@@ -596,7 +615,7 @@ function raekkeHtml(a, id) {
   <a class="raekke ${a.andre && a.andre.length ? "bred" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 12, 350)}ms">
     <div class="raekke-billede">${visuel(a, id)}</div>
     <div class="raekke-tekst">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}</div>
+      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}${(a.prio ?? 0) >= 8 ? '<span class="vigtig-chip">★ Vigtig</span>' : ""}</div>
       <h3>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h3>
       <span class="tid">${relativTid(a.dato)}</span>
     </div>
@@ -657,6 +676,14 @@ filtreEl.addEventListener("click", e => {
   tegnFiltre(); tegn();
 });
 document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
+
+document.getElementById("sortSkift").addEventListener("click", e => {
+  const knap = e.target.closest("button");
+  if (!knap) return;
+  sortering = knap.dataset.sort;
+  document.querySelectorAll("#sortSkift button").forEach(b => b.classList.toggle("aktiv", b === knap));
+  tegn();
+});
 
 document.getElementById("visningSkift").addEventListener("click", e => {
   const knap = e.target.closest("button");

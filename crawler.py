@@ -335,9 +335,12 @@ def dybe_briefs(artikler: list[dict]) -> None:
 KATEGORIER = ["Lanceringer", "Benchmarks", "Hverdags-AI", "Penge & marked",
               "Politik & jura", "Samfund & etik", "Forskning"]
 
-SYSTEM_KATEGORI = f"""Du kategoriserer AI-nyheder. Vælg for hver artikel PRÆCIS ÉN
-kategori fra denne liste (skriv navnet nøjagtigt som her):
+SYSTEM_KATEGORI = f"""Du analyserer AI-nyheder for en almindelig dansker, der vil
+opdage muligheder for at tjene penge og være forberedt på fremtiden.
 
+For hver artikel giver du:
+
+1) "kategori" - PRÆCIS ÉN fra denne liste (skriv navnet nøjagtigt):
 - Lanceringer: nye modeller, produkter og funktioner der udgives
 - Benchmarks: tests, sammenligninger og målinger af modellers ydeevne
 - Hverdags-AI: værktøjer og funktioner almindelige mennesker selv kan bruge
@@ -346,31 +349,44 @@ kategori fra denne liste (skriv navnet nøjagtigt som her):
 - Samfund & etik: jobs, deepfakes, sikkerhed, strømforbrug, AI's påvirkning af samfundet
 - Forskning: videnskabelige artikler, metoder og gennembrud
 
-Svar KUN med et JSON-array af kategorinavne i samme rækkefølge som input:
-["Lanceringer", "Forskning", ...]"""
+2) "prio" - vigtighed 1-10 for læseren:
+- 9-10: store modellanceringer, ægte gennembrud, nye muligheder man selv kan
+  udnytte NU, store markedsskift der påvirker almindelige menneskers økonomi
+- 6-8: væsentlige produktnyheder, vigtige benchmarks, betydelig regulering,
+  tendenser der er værd at forberede sig på
+- 3-5: almindelige branchenyheder, mindre opdateringer
+- 1-2: inkrementel/niche-forskning, akademiske detaljer, smalle tekniske emner
+
+Svar KUN med et JSON-array i samme rækkefølge som input:
+[{{"kategori": "Lanceringer", "prio": 9}}, ...]"""
 
 
 def klassificer(artikler: list[dict]) -> None:
-    """Giver hver artikel en indholdskategori via AI (én gang pr. artikel)."""
-    mangler = [a for a in artikler if not a.get("kat_ai")]
+    """Giver hver artikel indholdskategori + vigtighedsscore via AI (én gang pr. artikel)."""
+    mangler = [a for a in artikler if not a.get("kat_ai") or "prio" not in a]
     if not mangler:
         return
     if not API_KEY:
         print("🏷️  Ingen AI-nøgle - beholder kilde-kategorierne")
         return
-    print(f"🏷️  Kategoriserer {len(mangler)} artikler efter indhold …")
+    print(f"🏷️  Kategoriserer og prioriterer {len(mangler)} artikler …")
     for i in range(0, len(mangler), 30):
         batch = mangler[i:i + 30]
         liste = [{"nr": j + 1, "titel": a["titel"], "tekst": a["resume"][:200]}
                  for j, a in enumerate(batch)]
         try:
             svar = parse_json_svar(kald_ai(SYSTEM_KATEGORI,
-                                           json.dumps(liste, ensure_ascii=False), 1500))
+                                           json.dumps(liste, ensure_ascii=False), 2500))
             if isinstance(svar, list) and len(svar) == len(batch):
-                for a, k in zip(batch, svar):
-                    if str(k).strip() in KATEGORIER:
-                        a["kategori"] = str(k).strip()
+                for a, r in zip(batch, svar):
+                    k = str(r.get("kategori", "")).strip()
+                    if k in KATEGORIER:
+                        a["kategori"] = k
                         a["kat_ai"] = True
+                    try:
+                        a["prio"] = max(1, min(10, int(r.get("prio", 5))))
+                    except (ValueError, TypeError):
+                        a["prio"] = 5
         except Exception as fejl:
             print(f"  ⚠️  Kategorisering fejlede: {type(fejl).__name__}")
 
@@ -531,6 +547,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             if gammel.get("kat_ai") and gammel.get("kategori"):
                 a["kategori"] = gammel["kategori"]
                 a["kat_ai"] = True
+            if gammel.get("prio") is not None:
+                a["prio"] = gammel["prio"]
 
     # 2) håndlavede omskrivninger fra seeds_da.json (matcher på titel-prefix)
     seed_fil = ROOT / "seeds_da.json"
@@ -616,7 +634,8 @@ def main() -> None:
                                         "pointer": a.get("pointer", []),
                                         "billede": a.get("billede", ""),
                                         "kategori": a.get("kategori", ""),
-                                        "kat_ai": a.get("kat_ai", False)}
+                                        "kat_ai": a.get("kat_ai", False),
+                                        "prio": a.get("prio")}
         except (json.JSONDecodeError, KeyError):
             pass
 
