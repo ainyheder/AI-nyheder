@@ -215,12 +215,25 @@ def udtraek_billeder(html_raa: str, base_url: str) -> list[dict]:
 
 
 def hent_artikeltekst(a: dict) -> tuple[dict, str, list[dict]]:
-    """Henter artiklens egen side og returnerer (artikel, brødtekst, billeder)."""
+    """Henter artiklens egen side og returnerer (artikel, brødtekst, billeder).
+    Billeder hentes OGSÅ fra historiens øvrige kilder ("+kilder") - det er tit
+    dér, benchmark-graferne ligger."""
     try:
         raa = hent_url(a["link"]).decode("utf-8", errors="replace")
-        return a, udtraek_tekst(raa), udtraek_billeder(raa, a["link"])
+        tekst, billeder = udtraek_tekst(raa), udtraek_billeder(raa, a["link"])
     except Exception:                        # paywall, botblokering, timeout …
         return a, "", []
+    for b in billeder:
+        b["kilde"] = a["kilde"]
+    for kilde in a.get("andre", [])[:2]:     # samme historie hos andre medier
+        try:
+            raa2 = hent_url(kilde["link"]).decode("utf-8", errors="replace")
+            for b2 in udtraek_billeder(raa2, kilde["link"]):
+                b2["kilde"] = kilde["kilde"]
+                billeder.append(b2)
+        except Exception:
+            pass
+    return a, tekst, billeder[:10]
 
 
 # ----- AI-omskrivning til letlæst dansk --------------------------------------
@@ -357,7 +370,7 @@ def dybe_briefs(artikler: list[dict]) -> None:
     """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
     kandidater = [a for a in artikler[:DYBDE_ANTAL]
-                  if not a.get("sektioner") or "noegletal" not in a or "figurer" not in a]
+                  if GENKOER_ALT or not a.get("sektioner")]
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -384,11 +397,12 @@ def dybe_briefs(artikler: list[dict]) -> None:
                                "tekst": str(x.get("tekst", "")).strip()}
                               for x in r.get("sektioner", []) if x.get("tekst")][:4]
             a["brief"] = str(r.get("brief", "")).strip()
-            gyldige_urls = {b["url"] for b in billeder}
+            kilde_af = {b["url"]: b.get("kilde", a["kilde"]) for b in billeder}
             a["figurer"] = [{"url": str(f.get("url", "")).strip(),
-                             "tekst": str(f.get("tekst", "")).strip()}
+                             "tekst": str(f.get("tekst", "")).strip(),
+                             "kilde": kilde_af.get(f.get("url"), a["kilde"])}
                             for f in r.get("figurer", [])
-                            if f.get("url") in gyldige_urls][:3]
+                            if f.get("url") in kilde_af][:3]
             a["noegletal"] = [{"tal": str(n.get("tal", "")).strip(),
                                "label": str(n.get("label", "")).strip()}
                               for n in r.get("noegletal", []) if n.get("tal")][:5]
@@ -669,6 +683,9 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
 # ----- Benchmarks fra Artificial Analysis --------------------------------------
 
 AA_KEY = os.environ.get("AA_API_KEY", "").strip()
+# Sæt GENKOER_ALT=ja (manuel workflow-kørsel) for én gangs skyld at genskrive
+# HELE arkivet i nyeste format. Ellers behandles kun artikler, der aldrig er behandlet.
+GENKOER_ALT = os.environ.get("GENKOER_ALT", "").strip().lower() in ("ja", "1", "true")
 BENCH_FIL = ROOT / "data" / "benchmarks.json"
 
 

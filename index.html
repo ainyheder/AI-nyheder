@@ -637,7 +637,7 @@ function aabnLaeser(a) {
       briefHtml += a.figurer.map(f =>
         `<figure class="laeser-figur"><img src="${esc(f.url)}" alt="${esc(f.tekst)}" loading="lazy"
            onerror="this.closest('figure').style.display='none'">
-         <figcaption>${esc(f.tekst)} · Kilde: ${esc(a.kilde)}</figcaption></figure>`).join("");
+         <figcaption>${esc(f.tekst)} · Kilde: ${esc(f.kilde || a.kilde)}</figcaption></figure>`).join("");
     if (a.detaljer && a.detaljer.length)
       briefHtml += `<div class="laeser-sektion">Detaljerne</div>
         <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${esc(d)}</li>`).join("")}</ul>`;
