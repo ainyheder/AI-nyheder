@@ -19,7 +19,7 @@ on:
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
-        description: "Genskriv HELE arkivet i nyeste format? (ja/nej)"
+        description: "Genkoer: ja = hele arkivet, soegeord = kun matchende artikler, nej = kun nye"
         default: "nej"
         required: false
   push:

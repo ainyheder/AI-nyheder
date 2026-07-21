@@ -369,8 +369,13 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
 def dybe_briefs(artikler: list[dict]) -> None:
     """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
-    kandidater = [a for a in artikler[:DYBDE_ANTAL]
-                  if GENKOER_ALT or not a.get("sektioner")]
+    if GENKOER_FILTER:
+        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+                      if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]).lower()]
+        print(f"📰 Genkører {len(kandidater)} artikler der matcher '{GENKOER_FILTER}'")
+    else:
+        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+                      if GENKOER_ALT or not a.get("sektioner")]
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -683,9 +688,12 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
 # ----- Benchmarks fra Artificial Analysis --------------------------------------
 
 AA_KEY = os.environ.get("AA_API_KEY", "").strip()
-# Sæt GENKOER_ALT=ja (manuel workflow-kørsel) for én gangs skyld at genskrive
-# HELE arkivet i nyeste format. Ellers behandles kun artikler, der aldrig er behandlet.
-GENKOER_ALT = os.environ.get("GENKOER_ALT", "").strip().lower() in ("ja", "1", "true")
+# Manuel genkørsel (workflow-input): "ja" = genskriv HELE arkivet i nyeste format,
+# et søgeord (fx "computerhjerner") = genskriv kun artikler hvis rubrik/titel matcher.
+# Ellers behandles kun artikler, der aldrig er behandlet.
+_GENKOER_RAW = os.environ.get("GENKOER_ALT", "").strip()
+GENKOER_ALT = _GENKOER_RAW.lower() in ("ja", "1", "true")
+GENKOER_FILTER = "" if _GENKOER_RAW.lower() in ("", "ja", "1", "true", "nej", "no", "false")     else _GENKOER_RAW.lower()
 BENCH_FIL = ROOT / "data" / "benchmarks.json"
 
 
