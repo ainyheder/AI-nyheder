@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-07-21T22:37:10.233390+00:00",
-  "antal": 134,
+  "opdateret": "2026-07-21T22:47:36.991131+00:00",
+  "antal": 135,
   "artikler": [
     {
       "titel": "Neill Blomkamp’s new zombie AI ‘film’ is just slop warmed over",
@@ -265,7 +265,7 @@
     {
       "titel": "AI makes programming differently difficult",
       "link": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/",
-      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 131 # Comments: 109",
+      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 133 # Comments: 110",
       "dato": "2026-07-21T18:30:21+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -393,6 +393,13 @@
           "tekst": "Selvom nyhederne vækker opsigt, mangler det helt store samtaleemne nemlig den ventede opdatering til **Gemini Pro**. Konkurrenter som **OpenAI** og **Anthropic** har for længst sendt nye sværvægtere på markedet. Google kæmper dog med interne forsinkelser, selvom de allerede er gået i gang med at træne den endnu større **Gemini 4**."
         }
       ],
+      "noegletal": [
+        {
+          "tal": "17 %",
+          "label": "lavere dataforbrug i den nye model"
+        }
+      ],
+      "figurer": [],
       "detaljer": [
         "Google har lanceret tre nye varianter i deres Gemini-serie.",
         "Modellen Gemini 3.6 Flash reducerer forbruget af data med op til 17 procent.",
@@ -420,19 +427,12 @@
           "kilde": "Google DeepMind",
           "link": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/"
         }
-      ],
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "17 %",
-          "label": "lavere dataforbrug i den nye model"
-        }
       ]
     },
     {
       "titel": "Meta's AI models are powering the first wave of Genesis Mission projects",
       "link": "https://ai.meta.com/blog/genesis-mission-lawrence-berkeley-national-laboratory-segment-anything-dino/?_fb_noscript=1",
-      "resume": "https://www.energy.gov/undersecretaryforscience/genesis-miss... Comments URL: https://news.ycombinator.com/item?id=48995074 Points: 84 # Comments: 60",
+      "resume": "https://www.energy.gov/undersecretaryforscience/genesis-miss... Comments URL: https://news.ycombinator.com/item?id=48995074 Points: 87 # Comments: 62",
       "dato": "2026-07-21T17:03:18+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -596,28 +596,59 @@
       "dato": "2026-07-21T13:27:42+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
-      "rubrik": "Halvdelen af al ny musik er lavet af AI",
-      "resume_da": "Musiktjenesten Deezer oplever en eksplosion i antallet af sange skabt af AI, hvilket nu udgør over halvdelen af de daglige uploads.",
-      "brief": "Flere og flere sange på musiktjenesten Deezer bliver i dag skabt af maskiner frem for mennesker. Selskabet bag tjenesten oplyser, at mere end halvdelen af de nye sange, der lander på platformen hver eneste dag, er genereret af AI. Udviklingen er gået utrolig stærk, da tallet for blot et par år siden var langt lavere. Denne massive bølge af computer-musik har tvunget musiktjenesterne til at reagere, da mange af de nye numre bliver brugt til fup og svindel for at hive penge ud af systemet.\n\nFor at beskytte både rigtige kunstnere og lytterne har Deezer nu strammet kursen. Tjenesten vil fremover slette sange lavet af AI, hvis de ikke er blevet afspillet i løbet af et halvt år, eller hvis de er involveret i mistænkelig snyd med afspilninger. Samtidig har musiktjenesten udviklet særligt udstyr, der kan spotte numre lavet af systemer som Suno og Udio, så de kan blive holdt adskilt fra den rigtige musik.",
-      "sektioner": [],
-      "detaljer": [
-        "Over halvdelen af alle daglige uploads på Deezer er nu lavet af AI.",
-        "I juni nåede platformen et gennemsnit på 90.000 nye AI-sange om dagen.",
-        "I begyndelsen af 2025 udgjorde den slags musik kun ti procent af de daglige uploads.",
-        "Deezer fjerner nu AI-sange, der ikke er blevet spillet af nogen i seks måneder.",
-        "Tiltaget skal stoppe svindel med falske afspilninger og beskytte rigtige sangskrivere.",
-        "Deezer har desuden udviklet teknologi, der kan afsløre AI-musik på tværs af forskellige platforme."
+      "rubrik": "Halvdelen af alle nye sange på Deezer er skabt af AI",
+      "resume_da": "Musik-tjenesten Deezer oplever en voldsom stigning i computerlavet musik, hvilket nu udgør over halvdelen af de daglige opuploadede numre.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En voldsom stigning",
+          "tekst": "Musiktjenesten Deezer oplever en massiv bølge af nyskabt musik, hvor mere end **50 %** af alle daglige uploads nu stammer fra AI. Tilbage i januar **2025** udgjorde denne type numre blot **10 %**, men tallet er eksploderet og ramte et foreløbigt gennemsnit på **90.000** numre om dagen i juni **2026**."
+        },
+        {
+          "overskrift": "Rydder op i systemet",
+          "tekst": "For at beskytte rigtige kunstnere og stoppe svindel sletter musiktjenesten nu numre, der ikke er blevet lyttet til i seks måneder, eller som misbruger systemet til falske penge. Direktør **Alexis Lanternier** understreger, at målet er at beskytte ophavsretten og fokusere på det, som lytterne reelt holder af."
+        },
+        {
+          "overskrift": "Forskellige regler i branchen",
+          "tekst": "Streaming-tjenesterne kæmper for at finde en fælles linje, og hvor Bandcamp helt udelukker AI-musik, vælger andre som Apple Music at indføre frivillig mærkning. Samtidig har Deezer udviklet sin egen teknologi, der kan spotte sange lavet af omstridte tjenester som Suno og Udio."
+        }
       ],
-      "betydning": "For almindelige mennesker betyder udviklingen, at det bliver sværere at kende forskel på ægte kunstnere og computer-genererede lyde. Da pengene i streaming-systemet ofte fordeles efter, hvor meget musikken bliver hørt, kan den store mængde AI-numre skubbe rigtige musikere til side. På sigt kan det ændre den musik, vi opdager, og gøre det vigtigere for musiktjenesterne at beskytte kvaliteten, så lytterne ikke mister tilliden til det, de hører.",
+      "detaljer": [
+        "{'punkt': 'Deezer har fulgt udviklingen af AI-musik siden sidste år for at modvirke svindel.'}",
+        "{'punkt': 'I juni 2026 nåede de månedlige gennemsnitlige uploads op på 90.000 numre dagligt.'}",
+        "{'punkt': 'I januar 2025 var der kun 10.000 daglige uploads af denne type, svarende til 10%.'}",
+        "{'punkt': 'I april 2026 ramte tallet 75.000 numre, hvilket udgjorde 44% af de daglige uploads.'}",
+        "{'punkt': 'Tjenesten fjerner nu numre, der ikke er blevet afspillet inden for de seneste seks måneder.'}"
+      ],
+      "betydning": "At halvdelen af alt nyt musikmateriale på en stor tjeneste er skabt af AI, viser en massiv forandring af den kreative branche. For almindelige lyttere betyder det, at strømmen af sange vokser ukontrollabelt, hvilket tvinger udbyderne til at indføre strengere filtre for at skelne mellem ægte menneskelig kunst og automatiseret indhold. Det kan i sidste ende beskytte udbetalingerne til rigtige musikere.",
       "pointer": [
-        "Over 50 procent af nye Deezer-sange er skabt af AI.",
-        "Platformen sletter ubeskrevne AI-numre for at undgå svindel.",
-        "Udviklingen er gået meget stærkt siden begyndelsen af 2025.",
-        "Ny teknologi skal hjælpe med at afsløre falske sange."
+        "Over 50% af Deezers daglige uploads er AI-musik.",
+        "Mængden er steget voldsomt siden januar 2025.",
+        "Tjenesten sletter nu ullyttede og svigagtige numre.",
+        "Forskellige streaming-tjenester har vidt forskellige politikker."
       ],
       "billede": "data/img/a70f755423c2f663.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "50 %",
+          "label": "andel af daglige uploads fra AI i dag"
+        },
+        {
+          "tal": "90.000",
+          "label": "gennemsnitlige daglige AI-numre i juni 2026"
+        },
+        {
+          "tal": "10 %",
+          "label": "andel af daglige uploads i januar 2025"
+        },
+        {
+          "tal": "6 måneder",
+          "label": "grænse for sletning af ullyttede numre"
+        }
+      ]
     },
     {
       "titel": "Halliday’s latest smart glasses feature a much-improved display",
@@ -1170,26 +1201,50 @@
       "dato": "2026-07-21T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
-      "rubrik": "Ny metode gør det lettere at lære AI nye tricks",
-      "resume_da": "Forskere har udviklet en smart genvej, der hjælper computerhjerner med at lære lynhurtigt fra hinanden med minimale midler.",
-      "brief": "At lære en avanceret computerhjernen at tænke rigtigt kræver normalt masser af tid og computerkraft. Men nu viser en ny forskningsrapport, at det faktisk kan gøres langt smartere og billigere ved at lade systemerne udveksle helt korte beskeder.\n\nIdéen bag metoden er at lade en stærk computerhjernen lære fra en lidt svagere makker ved hjælp af bittesmå bidder af information. I stedet for at slæbe sig igennem store mængder data, kan systemet nøjes med blot otte små brudstykker for at fange meningen og forbedre sine evner markant.\n\nForskningen bag metoden peger på, at vi fremover kan skabe langt klogere teknologier uden at skulle bruge de enorme mængder strøm og reserver, som vi plejer. Det åbner døren for, at udviklingen kan gå endnu hurtigere i de kommende år.",
-      "sektioner": [],
-      "detaljer": [
-        "Metoden hedder på fagsproget Weak-to-Strong Off-Policy RL via Auxiliary Branches.",
-        "Forskningen bag resultaterne er udført af Dayu Wang og seks andre eksperter.",
-        "Teknikken gør det muligt for avancerede systemer at drage nytte af svagere modeller.",
-        "Systemet kan nøjes med at bruge blot otte små informationsenheder til indlæringen.",
-        "Tilgangen reducerer behovet for de enorme datamængder, der normalt kræves."
+      "rubrik": "Ny AI-metode kræver kun ganske få data",
+      "resume_da": "Forskere har præsenteret en ny AI-metode, der kun behøver et ganske lille antal elementer for at fungere effektivt.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Metodens hemmelighed",
+          "tekst": "En gruppe forskere anført af **Dayu Wang** har fundet en ny måde at styrke AI-systemer på. Ved at bruge en særlig fremgangsmåde, der blot kræver **8 tokens**, kan en svagere model løfte sig ved hjælp af stærkere modeller uden at vælte budgettet eller kræve endeløse mængder computerkraft."
+        },
+        {
+          "overskrift": "Bag om opdagelsen",
+          "tekst": "Forskningen bag gennembruddet er netop blevet offentliggjort og samler bidrag fra **7** forskellige forfattere. Projektet bygger på avancerede teknikker inden for forstærket læring, hvilket gør det muligt at overføre viden langt hurtigere end tidligere set i branchen."
+        }
       ],
-      "betydning": "For almindelige mennesker betyder den slags gennembrud, at morgendagens teknologier bliver billigere og hurtigere at udvikle. Når udviklerne kan skabe klogere systemer med færre ressourcer, kan det i sidste ende føre til mere nyttige og lettilgængelige digitale værktøjer i hverdagen.",
+      "detaljer": [
+        "Studiet hedder It Takes 8 Tokens: Weak-to-Strong Off-Policy RL via Auxiliary Branches.",
+        "Forskningen er udgivet i maj 2026.",
+        "Hovedforfatteren bag projektet er Dayu Wang.",
+        "Der er i alt 7 forfattere med på det videnskabelige papir.",
+        "Metoden fokuserer på at lade svage AI-modeller lære af stærke."
+      ],
+      "betydning": "For almindelige danskere betyder denne type teknologiske fremskridt, at fremtidens digitale assistenter og sprogmodeller kan blive både klogere og billigere at drifte. Når forskere finder måder at træne AI på med færre ressourcer, kan det bane vejen for hurtigere og mere tilgængelige programmer, som vi bruger i hverdagen.",
       "pointer": [
-        "Ny metode gør det billigere at opgradere computerhjerner.",
-        "Stærke systemer kan lære af svagere modeller.",
-        "Teknikken kræver blot otte små stumper data."
+        "Ny AI-metode kræver kun 8 tokens.",
+        "Bag studiet står Dayu Wang og 6 andre.",
+        "Forskningen blev offentliggjort i maj 2026."
       ],
       "billede": "data/img/4a78c2c744e3a217.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "8",
+          "label": "tokens kræves for metoden"
+        },
+        {
+          "tal": "7",
+          "label": "forfattere bag studiet"
+        },
+        {
+          "tal": "2026",
+          "label": "udgivelsesår for forskningen"
+        }
+      ]
     },
     {
       "titel": "PPO-HSC: An Exploratory Reinforcement Learning Framework Based on Wide-Area Policy Coverage Optimization",
@@ -1293,26 +1348,42 @@
       "dato": "2026-07-21T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
-      "rubrik": "Ny teknologi skal gøre søgning langt klogere",
-      "resume_da": "Forskere har udviklet en ny metode til at forbedre søgning i komplekse mængder af data og billeder.",
-      "brief": "Moderne digitale systemer kæmper ofte med at finde de mest præcise svar, når store mængder information og billeder skal gennemsøges på én gang. En ny forskningsartikel præsenterer en avanceret tilgang kaldet ColGraphRAG, som forsøger at løse dette problem ved at ændre den måde, computere henter og samler beviser på.\n\nNår vi taler om AI, er det afgørende, at systemerne ikke bare gætter, men rent faktisk kan finde den korrekte dokumentation bag deres svar. Denne nye teknik kombinerer forskellige datatyper langt bedre end tidligere, så både tekst og visuelt materiale inddrages mere naturligt.\n\nBag opdagelsen står forskeren Seonok Kim, som har offentliggjort arbejdet via platformen arXiv. Selvom der stadig er tale om forskning på et tidligt stadie, viser metoden vejen frem mod mere pålidelige digitale søgemuligheder i fremtiden.",
-      "sektioner": [],
-      "detaljer": [
-        "Metoden hedder ColGraphRAG og fokuserer på forbedret informationssøgning.",
-        "Teknikken arbejder med såkaldt multimodal data, hvilket vil sige både tekst og billeder.",
-        "Arbejdet er præsenteret af forskeren Seonok Kim i maj 2026.",
-        "Filstørrelsen på den tilhørende forskningsartikel er 5.609 kilobyte.",
-        "Projektet er tilgængelig på det digitale arkiv arXiv for interesserede."
+      "rubrik": "Ny metode forbedrer AI-søgning i store datamængder",
+      "resume_da": "En ny forskningsartikel præsenterer ColGraphRAG, en avanceret teknik til at finde og analysere information ved hjælp af AI.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nyt om systemet",
+          "tekst": "Bag udviklingen står **Seonok Kim**, som har skrevet den nye videnskabelige artikel om emnet. Metoden fokuserer på at kombinere tekst og visuelle elementer i såkaldte netværksstrukturer. Det gør det muligt for AI at søge langt mere præcist, når den skal finde frem til svære og komplekse svar i enorme databaser."
+        },
+        {
+          "overskrift": "Teknologien bag",
+          "tekst": "Selve filstørrelsen på den publicerede forskning er på **5.609 KB**, hvilket vidner om en grundig og omfattende teknisk gennemgang. Systemet udnytter avancerede principper for sen interaktion til at samle beviser og data på tværs af forskellige medier. Det er et vigtigt skridt fremad for at gøre AI-systemer mere pålidelige i hverdagen."
+        }
       ],
-      "betydning": "For almindelige danskere betyder denne type forskning, at vi i fremtiden vil opleve langt klogere og mere præcise søgemaskiner samt chatbots. Når AI bliver bedre til at hente den rette dokumentation frem, mindskes risikoen for fejl og misforståelser. Det kan gøre det nemmere at finde troværdige svar på komplekse spørgsmål i hverdagen.",
+      "detaljer": [
+        "{'tal': 'Artiklen blev offentliggjort den **9. maj 2026** på arkivbasen.'}",
+        "{'tal': 'Bag udgivelsen står forskeren **Seonok Kim**.'}",
+        "{'tal': 'Forskningen fylder **5.609 KB** i sin fulde udgave.'}",
+        "{'tal': 'Teknologien hedder **ColGraphRAG** og arbejder med multimodale grafer.'}"
+      ],
+      "betydning": "For helt almindelige danskere betyder denne type teknologiske fremskridt, at fremtidens digitale søgetjenester og AI-assistenter bliver bedre til at forstå sammenhænge i store mængder information. Når systemerne kan hente mere præcise data, mindskes risikoen for fejl og misforståelser, hvilket gør det nemmere at få hurtige og korrekte svar på komplekse spørgsmål i hverdagen.",
       "pointer": [
-        "Ny metode forbedrer computersøgning i komplekse data",
-        "Kombinerer både tekst og billeder mere effektivt",
-        "Forskningsprojektet er offentliggjort af Seonok Kim"
+        "Ny forskning præsenterer metoden ColGraphRAG.",
+        "Artiklen er skrevet af Seonok Kim.",
+        "Filerne fylder 5.609 KB i alt.",
+        "Teknologien forbedrer AI-søgning i data."
       ],
       "billede": "data/img/bcf148fd728e91cc.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5.609 KB",
+          "label": "filstørrelse på forskningsartiklen"
+        }
+      ]
     },
     {
       "titel": "Shapley Context Pruning: A Cooperative Game Perspective for Context Reranking and Pruning",
@@ -1410,25 +1481,49 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "rubrik": "Ny opdagelse giver AI langt bedre hukommelse",
-      "resume_da": "Forskere har knækket koden til at give AI en superhukommelse. Det gør fremtidens digitale hjælpere langt smartere.",
-      "brief": "Teknologien bag AI har længe lidt af et klassisk problem: Den glemmer hurtigt, hvad I talte om for lidt siden, hvis samtalen bliver for lang. Det er som at tale med en person, der har en korttidshukommelse som en guldfisk. Men nu har en gruppe eksperter fundet en smart måde at løse dette problem på, så systemerne kan huske vigtige ting over lange perioder uden at gå ned på tempo.\n\nMed den nye metode kan fremtidens digitale assistenter holde styr på store mængder information på en langt mere effektiv måde. Det betyder, at du fremover kan have lange, komplekse samtaler eller bede om hjælp til store projekter, uden at den kloge computer taber tråden undervejs.",
-      "sektioner": [],
-      "detaljer": [
-        "En gruppe forskere står bag opdagelsen af den nye langtidshukommelse til AI.",
-        "Metoden gør det muligt at huske detaljer fra lange samtaler uden at miste overblikket.",
-        "Systemet arbejder både hurtigere og mere præcist end tidligere udgaver.",
-        "Teknologien er præsenteret i en ny akademisk rapport om emnet.",
-        "Seks forfattere har bidraget til udviklingen af den banebrydende hukommelsesfunktion."
+      "resume_da": "Forskere har udviklet en ny metode, der giver AI-systemer en langt mere præcis og effektiv langtidshukommelse.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Problemet med hukommelse",
+          "tekst": "Når man taler med AI i længere tid, glemmer teknologien ofte, hvad der blev sagt i starten. Det skyldes, at det er voldsomt svært for systemerne at huske store mængder information over tid uden at miste vigtige detaljer undervejs."
+        },
+        {
+          "overskrift": "Ny løsning på vej",
+          "tekst": "En forskergruppe med **Zicheng Zhao** og **5** andre eksperter i spidsen har fundet en smartere måde at gribe det an på. De præsenterer en ny fremgangsmåde, der gør det muligt for AI at gemme og hente data frem igen uden unødvendigt spild."
+        },
+        {
+          "overskrift": "Hvad det betyder",
+          "tekst": "Med denne opdatering kan du fremover føre meget længere og mere komplekse samtaler med din foretrukne AI, uden at den taber tråden. Den vil huske dine tidligere præferencer og aftaler langt bedre end før."
+        }
       ],
-      "betydning": "For dig betyder det, at dine digitale hjælpere i fremtiden bliver langt mere pålidelige og personlige. Du behøver ikke længere gentage dig selv, når du arbejder med store opgaver over flere dage. Det gør hverdagen nemmere og sparer dig for værdifuld tid, når teknologien endelig kan huske dine præferencer og tidligere aftaler.",
+      "detaljer": [
+        "Forskningen er offentliggjort i maj 2026 af en gruppe anført af Zicheng Zhao.",
+        "Projektet er skabt i samarbejde med i alt seks forskere.",
+        "Metoden fokuserer på at gøre AI-systemers langtidshukommelse både mere præcis og effektiv.",
+        "Dokumentet fylder i alt 1.469 KB i sin oprindelige form.",
+        "Arbejdet er udgivet på den åbne forskningsportal arXiv inden for feltet cs.AI."
+      ],
+      "betydning": "For almindelige mennesker betyder bedre langtidshukommelse i AI, at dine digitale hjælpere fremover vil lære dine personlige præferencer og arbejdsrutiner langt hurtigere at kende. Du slipper for konstant at gentage dig selv, når du løser opgaver, og du kan med ro i sindet lade teknologien samle op på store projekter over flere uger.",
       "pointer": [
-        "AI har hidtil haft svært ved at huske over lang tid.",
-        "Ny metode giver systemerne en langt bedre hukommelse.",
-        "Fremtidens digitale hjælpere taber sjældnere tråden i samtaler.",
-        "Teknologien gør det muligt at løse større opgaver."
+        "Forskere har løst en stor udfordring med AI-hukommelse.",
+        "Zicheng Zhao står i spidsen for holdet bag opdagelsen.",
+        "Teknologien kan nu huske store mængder data bedre.",
+        "Det giver langt mere sammenhængende samtaler i fremtiden."
       ],
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "6",
+          "label": "forskere bag den nye metode"
+        },
+        {
+          "tal": "1.469 KB",
+          "label": "størrelse på forskningsartiklen"
+        }
+      ]
     },
     {
       "titel": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
@@ -1650,26 +1745,45 @@
       "dato": "2026-07-21T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
-      "rubrik": "Ny teknologi gør det lettere at samarbejde med AI",
-      "resume_da": "Forskere har udviklet en ny metode, der gør AI bedre til at forstå og løse komplekse opgaver sammen med mennesker.",
-      "brief": "Teknologien bag nutidens computerhjælpere tager nu et skridt videre. En ny forskningsartikel præsenterer en metode til at forbedre måden, hvorpå AI forstår menneskers hensigter, når der skal løses opgaver i fællesskab.\n\nOfte kan det være svært for digitale systemer at gennemskue præcist, hvad brugeren ønsker, især når opgaven ændrer sig undervejs. Forskerne bag det nye studie har fundet en måde at gribe dette an på, så computeren løbende kan tilpasse sig situationen. Det minder om den måde, to mennesker arbejder sammen på, hvor man hele tiden tjekker ind og retter kursen.\n\nSelvom der er tale om grundlæggende forskning, viser det, at udviklingen bevæger sig mod langt mere fleksible og smarte systemer. Målet er at skabe teknologier, der i højere grad forstår vores udtalte og udtalte behov i hverdagen.",
-      "sektioner": [],
-      "detaljer": [
-        "En ny videnskabelig artikel med titlen \"Interactive Task Alignment as a POMDP\" er netop udgivet.",
-        "Forskningen er udført af Andy Dai og fire andre medforfattere.",
-        "Metoden fokuserer på, hvordan AI bedre kan tilpasse sig opgaver i realtid.",
-        "Teknologien bag bygger på matematiske modeller for usikkerhed og beslutningstagning.",
-        "Arbejdet er offentliggjort på det åbne arkiv for forskningsartikler, arXiv."
+      "rubrik": "Ny forskning vil forbedre AI-opgaver",
+      "resume_da": "En ny videnskabelig artikel af **Andy Dai** og fire andre forskere undersøger, hvordan AI kan blive bedre til at løse opgaver.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nyt forskningsarbejde",
+          "tekst": "En frisk akademisk artikel har set dagens lys på det digitale arkiv arXiv. Bag udgivelsen står **Andy Dai** sammen med fire andre medforfattere. De kigger nærmere på, hvordan teknologi kan blive klogere på at tilpasse sig komplekse opgaver undervejs. Det handler om at gøre systemerne mere pålidelige i praksis."
+        },
+        {
+          "overskrift": "Tekniske detaljer",
+          "tekst": "Dokumentet fylder præcis **5.675 KB** og blev offentliggjort den **17. juli 2026**. Forskerne bag bruger avanceret metodeudvikling inden for feltet, som er kategoriseret under AI og relaterede videnskabelige emner. Publikationen viser, hvordan forskning i øjeblikket bevæger sig fremad på dette felt."
+        }
       ],
-      "betydning": "For almindelige mennesker betyder denne type forskning, at fremtidens digitale assistenter bliver markant bedre til at forstå os. I stedet for at vi skal tale stift og præcist til maskinerne, vil de i højere grad kunne aflæse vores behov og rette ind undervejs. Det kan spare os for tid og frustrationer, når vi bruger computere til at løse både simple og svære opgaver i hverdagen.",
+      "detaljer": [
+        "Artiklen blev udgivet den **17. juli 2026** på det åbne arkiv arXiv.",
+        "Hovedforfatteren bag det nye studie er **Andy Dai**.",
+        "I alt har **5** forskere bidraget til det videnskabelige arbejde.",
+        "Hele dokumentet fylder **5.675 KB** som PDF-fil.",
+        "Forskningen fokuserer på interaktiv tilpasning af opgaver for AI."
+      ],
+      "betydning": "Selvom denne type grundforskning kan virke tør og svær at gennemskue for almindelige danskere, er den med til at forme fremtidens digitale værktøjer. Når forskere knækker koden til, hvordan AI bedre forstår komplekse opgaver og interagerer med omgivelserne, fører det på sigt til smartere, mere nyttige programmer og tjenester i vores hverdag.",
       "pointer": [
-        "Ny metode gør det lettere for AI at samarbejde med mennesker.",
-        "Systemet kan løbende tilpasse sig, når opgaver ændrer sig.",
-        "Forskningen hjælper med at mindske misforståelser mellem menneske og maskine.",
-        "Teknologien peger frem mod mere menneskevenlige digitale assistenter."
+        "Ny forskningsartikel udgivet af **Andy Dai** og kolleger",
+        "Dokumentet fylder **5.675 KB** og udkom i **2026**",
+        "Fokus på at forbedre AI-opgaver gennem ny teori"
       ],
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5.675 KB",
+          "label": "filstørrelse for den nye forskningsartikel"
+        },
+        {
+          "tal": "5",
+          "label": "antal forfattere bag udgivelsen"
+        }
+      ]
     },
     {
       "titel": "When to Plan: Learning to Select Between Reactive Control and Deliberative Planning",
@@ -1797,7 +1911,7 @@
     {
       "titel": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding",
       "link": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding",
-      "resume": "https://archive.ph/20260720174223/https://asia.nikkei.com/bu... Comments URL: https://news.ycombinator.com/item?id=48987863 Points: 350 # Comments: 237",
+      "resume": "https://archive.ph/20260720174223/https://asia.nikkei.com/bu... Comments URL: https://news.ycombinator.com/item?id=48987863 Points: 351 # Comments: 238",
       "dato": "2026-07-21T03:56:03+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -2434,7 +2548,7 @@
     {
       "titel": "Mythologizing AI makes it more likely that we’ll fail to operate it well (2023)",
       "link": "https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai",
-      "resume": "Article URL: https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai Comments URL: https://news.ycombinator.com/item?id=48980238 Points: 79 # Comments: 151",
+      "resume": "Article URL: https://www.newyorker.com/science/annals-of-artificial-intelligence/there-is-no-ai Comments URL: https://news.ycombinator.com/item?id=48980238 Points: 79 # Comments: 150",
       "dato": "2026-07-20T15:28:32+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -2527,7 +2641,7 @@
     {
       "titel": "China’s open-weights AI strategy is winning",
       "link": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
-      "resume": "Article URL: https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/ Comments URL: https://news.ycombinator.com/item?id=48979269 Points: 1207 # Comments: 913",
+      "resume": "Article URL: https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/ Comments URL: https://news.ycombinator.com/item?id=48979269 Points: 1208 # Comments: 913",
       "dato": "2026-07-20T14:21:47+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -3199,7 +3313,7 @@
     {
       "titel": "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
       "link": "https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/",
-      "resume": "Article URL: https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/ Comments URL: https://news.ycombinator.com/item?id=48952880 Points: 562 # Comments: 378",
+      "resume": "Article URL: https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/ Comments URL: https://news.ycombinator.com/item?id=48952880 Points: 562 # Comments: 379",
       "dato": "2026-07-17T22:26:30+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -3764,13 +3878,7 @@
         "Sikkerheden er markant forbedret i den seneste modeludgave."
       ],
       "kat_ai": true,
-      "prio": 8,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/unlocking-self-improvement-gpt-red"
-        }
-      ]
+      "prio": 8
     },
     {
       "titel": "OpenAI's first branded hardware is... a light-up keyboard?",
@@ -3825,6 +3933,18 @@
       "resume_da": "Amerikanske politikere vil bruge lokale love til at skabe faste, sikre rammer for fremtidens teknologier.",
       "kat_ai": true,
       "prio": 7
+    },
+    {
+      "titel": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "resume": "Explore GPT-Red, OpenAI’s automated red teaming system that uses self-play to improve AI safety, alignment, and prompt injection robustness.",
+      "dato": "2026-07-15T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "rubrik": "Ny metode skal gøre tænke-programmer mere sikre",
+      "resume_da": "OpenAI har skabt et system, hvor deres AI tester sig selv for at blive bedre til at modstå snyd og fejl.",
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
