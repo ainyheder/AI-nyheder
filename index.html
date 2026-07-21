@@ -171,10 +171,10 @@ a { color: inherit; }
 .kort-art { aspect-ratio: 16 / 9; position: relative; overflow: hidden; }
 .kort-art svg { position: absolute; inset: 0; width: 100%; height: 100%; transition: transform .5s ease; }
 .kort:hover .kort-art svg { transform: scale(1.05); }
-.kort-krop { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+.kort-krop { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .kort h2 {
   font-family: var(--font-display); font-weight: 800;
-  font-size: 19px; line-height: 1.22; letter-spacing: -.015em;
+  font-size: 17.5px; line-height: 1.22; letter-spacing: -.015em;
 }
 .kort p { font-size: 13.5px; color: var(--blaek-svag); flex: 1; }
 .kort .meta { margin-top: 2px; }
@@ -183,6 +183,14 @@ a { color: inherit; }
 .kort.stor h2 { font-size: 26px; }
 @media (max-width: 700px) { .kort.stor { grid-column: span 1; } .kort.stor .kort-art { aspect-ratio: 16/9; } }
 
+.tid-pille {
+  position: absolute; right: 8px; bottom: 8px; z-index: 2;
+  background: rgba(255,255,255,.94); color: #191714;
+  font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.18);
+}
+.art-chips { position: absolute; left: 8px; top: 8px; z-index: 2; display: flex; gap: 5px; }
+.art-chips span { margin-left: 0 !important; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
 .vigtig-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: #f4b400; color: #191714;
@@ -234,7 +242,7 @@ a { color: inherit; }
 .raekke-billede { position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
 .raekke-billede svg, .raekke-billede img { position: absolute; inset: 0; width: 100%; height: 100%; transition: transform .4s ease; }
 .raekke:hover .raekke-billede svg, .raekke:hover .raekke-billede img { transform: scale(1.04); }
-.raekke-tekst { min-width: 0; display: flex; flex-direction: column; gap: 5px; padding: 12px 15px 15px; flex: 1; }
+.raekke-tekst { min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 10px 12px 12px; flex: 1; }
 .raekke-tekst .kicker { font-size: 9.5px; letter-spacing: .1em; flex-wrap: wrap; }
 .raekke h3 {
   font-family: var(--font-display); font-weight: 800;
@@ -300,6 +308,22 @@ a { color: inherit; }
 .laeser-brief p { margin-bottom: 14px; }
 .laeser-pointer { margin: 20px 0 4px; padding: 18px 22px;
   background: var(--accent-svag); border-radius: 14px; }
+.laeser-sektion {
+  font-family: var(--font-display); font-weight: 800; font-size: 17px;
+  margin: 22px 0 10px; letter-spacing: -.01em;
+}
+.laeser-detaljer { list-style: none; margin: 0 0 4px; }
+.laeser-detaljer li {
+  font-size: 14.5px; line-height: 1.6; padding: 7px 0 7px 26px;
+  position: relative; border-bottom: 1px dashed var(--linje);
+}
+.laeser-detaljer li:last-child { border-bottom: 0; }
+.laeser-detaljer li::before { content: "•"; position: absolute; left: 8px; color: var(--accent); font-weight: 800; }
+.laeser-betydning {
+  background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px;
+  font-size: 15px; line-height: 1.65; margin-top: 6px;
+}
 .laeser-pointer h4 {
   font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
   color: var(--accent); margin-bottom: 10px;
@@ -523,6 +547,22 @@ function tegnFiltre() {
     `<button class="pill ${k === aktivKategori ? "aktiv" : ""}" data-kategori="${esc(k)}">${esc(k)}</button>`).join("");
 }
 
+function dagNoegle(iso) {
+  if (!iso) return "Ældre";
+  const d = new Date(iso);
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+
+function dagEtiket(noegle) {
+  if (noegle === "Ældre") return "Ældre";
+  const iDag = dagNoegle(new Date().toISOString());
+  const iGaar = dagNoegle(new Date(Date.now() - 86400000).toISOString());
+  if (noegle === iDag) return "I dag";
+  if (noegle === iGaar) return "I går";
+  return new Date(noegle).toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })
+    .replace(/^./, c => c.toUpperCase());
+}
+
 function prioAf(a) {
   // flerkilde-historier er per definition vigtigere
   return (a.prio ?? 5) + (a.andre && a.andre.length ? 1 : 0);
@@ -535,7 +575,10 @@ function filtrerede() {
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
-    liste.sort((x, y) => prioAf(y) - prioAf(x) || new Date(y.dato || 0) - new Date(x.dato || 0));
+    liste.sort((x, y) =>
+      dagNoegle(y.dato).localeCompare(dagNoegle(x.dato)) ||
+      prioAf(y) - prioAf(x) ||
+      new Date(y.dato || 0) - new Date(x.dato || 0));
   }
   return liste;
 }
@@ -546,11 +589,20 @@ const laeserBag = document.getElementById("laeserBag");
 const laeserBoks = document.getElementById("laeserBoks");
 
 function aabnLaeser(a) {
-  const briefHtml = a.brief
-    ? a.brief.split(/\n\n+/).map(afsnit => `<p>${esc(afsnit)}</p>`).join("")
-    : `<p>${brodtekst(a)}</p>
+  let briefHtml;
+  if (a.brief) {
+    briefHtml = a.brief.split(/\n\n+/).map(afsnit => `<p>${esc(afsnit)}</p>`).join("");
+    if (a.detaljer && a.detaljer.length)
+      briefHtml += `<div class="laeser-sektion">Detaljerne</div>
+        <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${esc(d)}</li>`).join("")}</ul>`;
+    if (a.betydning)
+      briefHtml += `<div class="laeser-sektion">Hvad betyder det for dig?</div>
+        <div class="laeser-betydning">${esc(a.betydning)}</div>`;
+  } else {
+    briefHtml = `<p>${brodtekst(a)}</p>
        <p class="laeser-note">Det komplette brief er på vej — det skrives automatisk,
        når AI-omskrivningen har behandlet artiklen. Indtil da kan du læse originalen herunder.</p>`;
+  }
 
   const pointerHtml = (a.pointer && a.pointer.length)
     ? `<div class="laeser-pointer"><h4>Hovedpointer</h4>
@@ -600,24 +652,32 @@ indhold.addEventListener("click", e => {
 function kortHtml(a, id, stor = false) {
   return `
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
-    <div class="kort-art">${visuel(a, id)}</div>
+    <div class="kort-art">${visuel(a, id)}${artOverlay(a)}</div>
     <div class="kort-krop">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}${(a.prio ?? 0) >= 8 ? '<span class="vigtig-chip">★ Vigtig</span>' : ""}</div>
-      <h2>${overskrift(a)}</h2>
+      <h2>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h2>
       <p>${brodtekst(a)}</p>
-      <div class="meta"><span>${relativTid(a.dato)}</span><span class="laes" style="margin-left:auto">Læs</span></div>
     </div>
   </a>`;
+}
+
+function artChips(a) {
+  let c = "";
+  if ((a.prio ?? 0) >= 8) c += '<span class="vigtig-chip">★ Vigtig</span>';
+  if (a.andre && a.andre.length) c += `<span class="flere-chip">+${a.andre.length} kilder</span>`;
+  if (!a.rubrik) c += '<span class="en-chip">EN</span>';
+  return c ? `<div class="art-chips">${c}</div>` : "";
+}
+
+function artOverlay(a) {
+  return artChips(a) + `<span class="tid-pille">${relativTid(a.dato)}</span>`;
 }
 
 function raekkeHtml(a, id) {
   return `
   <a class="raekke ${a.andre && a.andre.length ? "bred" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 12, 350)}ms">
-    <div class="raekke-billede">${visuel(a, id)}</div>
+    <div class="raekke-billede">${visuel(a, id)}${artOverlay(a)}</div>
     <div class="raekke-tekst">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}${(a.prio ?? 0) >= 8 ? '<span class="vigtig-chip">★ Vigtig</span>' : ""}</div>
       <h3>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h3>
-      <span class="tid">${relativTid(a.dato)}</span>
     </div>
   </a>`;
 }
@@ -645,8 +705,23 @@ function tegn() {
         <p>${brodtekst(heroArtikel)}</p>
       </div>
     </a>`;
-    indhold.innerHTML = note + miniHero +
-      `<div class="tavle">${rest.map((a, i) => raekkeHtml(a, i)).join("")}</div>`;
+    let krop;
+    if (sortering === "vigtigst") {
+      // sektion pr. dag med de vigtigste øverst i hver dag
+      const dage = [];
+      for (const a of rest) {
+        const n = dagNoegle(a.dato);
+        if (!dage.length || dage[dage.length - 1].noegle !== n) dage.push({ noegle: n, artikler: [] });
+        dage[dage.length - 1].artikler.push(a);
+      }
+      let id = 0;
+      krop = dage.map(d =>
+        `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
+         <div class="tavle" style="margin-bottom:26px">${d.artikler.map(a => raekkeHtml(a, id++)).join("")}</div>`).join("");
+    } else {
+      krop = `<div class="tavle">${rest.map((a, i) => raekkeHtml(a, i)).join("")}</div>`;
+    }
+    indhold.innerHTML = note + miniHero + krop;
     return;
   }
 
@@ -662,9 +737,22 @@ function tegn() {
     </div>
   </a>`;
 
-  const kort = rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("");
-  indhold.innerHTML = note + hero +
-    `<div class="sektion-titel">Seneste historier</div><div class="grid">${kort}</div>`;
+  let magKrop;
+  if (sortering === "vigtigst") {
+    const dage = [];
+    for (const a of rest) {
+      const n = dagNoegle(a.dato);
+      if (!dage.length || dage[dage.length - 1].noegle !== n) dage.push({ noegle: n, artikler: [] });
+      dage[dage.length - 1].artikler.push(a);
+    }
+    let id = 0;
+    magKrop = dage.map(d =>
+      `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
+       <div class="grid" style="margin-bottom:30px">${d.artikler.map(a => kortHtml(a, id++, !!(a.andre && a.andre.length))).join("")}</div>`).join("");
+  } else {
+    magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`;
+  }
+  indhold.innerHTML = note + hero + magKrop;
 }
 
 /* ---------- Events ---------- */

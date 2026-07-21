@@ -53,7 +53,8 @@ MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
 GEMINI_PAUSE_SEK = 4             # pause mellem Gemini-kald (gratis-niveauets fartgrænse)
 
 # --- Dybe briefs (hele artiklen hentes og genfortælles) ---
-DYBDE_ANTAL = 30                 # de N nyeste artikler får komplet brief
+DYBDE_ANTAL = 250                # ALLE artikler får komplet brief (loft som sikkerhed)
+BILLED_ANTAL = 30                # men kun de N nyeste får AI-billede (billeder koster)
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 
@@ -199,6 +200,7 @@ For hver artikel laver du:
   og hvorfor det er interessant for almindelige mennesker. Max 30 ord i alt.
   Forbudt: engelske låneord der har et dansk ord, forkortelser uden forklaring,
   og buzzwords. Skriv som til en klog nabo.
+- Skriv ALTID "AI" - aldrig "kunstig intelligens" (det er for langt).
 
 Svar KUN med et JSON-array, ét objekt pr. artikel, i samme rækkefølge som input:
 [{"rubrik": "...", "resume": "..."}, ...]"""
@@ -270,18 +272,21 @@ def kald_ai_batch(artikler: list[dict]) -> list[dict] | None:
 
 
 SYSTEM_BRIEF = """Du er journalist på et dansk nyhedssite for almindelige mennesker
-uden teknisk baggrund. Ud fra artikelteksten skriver du et SELVSTÆNDIGT dansk
-brief i dine helt egne ord - genfortæl, oversæt ALDRIG sætninger direkte, og
-citér ikke fra kilden.
+uden teknisk baggrund. Ud fra artikelteksten skriver du en SELVSTÆNDIG dansk
+genfortælling i dine helt egne ord - oversæt ALDRIG sætninger direkte, og citér
+ikke fra kilden. Skriv ALTID "AI" - aldrig "kunstig intelligens".
 
 Svar KUN med ét JSON-objekt:
 {
- "rubrik":  fængende dansk overskrift, max 8 ord, ingen jargon,
- "resume":  1-2 korte sætninger (max 30 ord) til oversigten,
- "brief":   150-200 ord letlæst hverdagsdansk i 2-3 afsnit adskilt af \\n\\n.
-            Forklar hvad der er sket, hvorfor det er interessant, og hvad det
-            kan betyde for almindelige mennesker,
- "pointer": liste med 3-4 korte hovedpointer (hver max 12 ord)
+ "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon,
+ "resume":    1-2 korte sætninger (max 30 ord) til oversigten,
+ "brief":     2-3 afsnit (i alt 120-180 ord) på letlæst hverdagsdansk om hvad
+              der er sket og baggrunden. Afsnit adskilt af \n\n,
+ "detaljer":  4-7 punkter med de vigtigste fakta, tal og detaljer fra artiklen
+              (hvert punkt én sætning, max 20 ord),
+ "betydning": ét afsnit (50-80 ord): hvad kan det her betyde for almindelige
+              mennesker, deres penge og deres fremtid,
+ "pointer":   3-4 ultrakorte hovedpointer (hver max 12 ord)
 }"""
 
 
@@ -302,7 +307,8 @@ def kald_ai_brief(a: dict, tekst: str) -> dict | None:
 def dybe_briefs(artikler: list[dict]) -> None:
     """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
-    kandidater = [a for a in artikler[:DYBDE_ANTAL] if not a.get("brief")]
+    kandidater = [a for a in artikler[:DYBDE_ANTAL]
+                  if not a.get("brief") or not a.get("detaljer")]
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -326,6 +332,8 @@ def dybe_briefs(artikler: list[dict]) -> None:
             a["rubrik"] = str(r["rubrik"]).strip()
             a["resume_da"] = str(r.get("resume", "")).strip() or a.get("resume_da", "")
             a["brief"] = str(r["brief"]).strip()
+            a["detaljer"] = [str(d).strip() for d in r.get("detaljer", [])][:7]
+            a["betydning"] = str(r.get("betydning", "")).strip()
             a["pointer"] = [str(p).strip() for p in r.get("pointer", [])][:4]
         print(f"   … {i}/{len(med_tekst)}")
 
@@ -476,7 +484,7 @@ def lav_billeder(artikler: list[dict]) -> None:
         return
     BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
 
-    top = [a for a in artikler[:DYBDE_ANTAL] if a.get("rubrik")]
+    top = [a for a in artikler[:BILLED_ANTAL] if a.get("rubrik")]
     lavet, fejl_i_traek = 0, 0
     for a in top:
         navn = _billed_navn(a["link"])
@@ -541,6 +549,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             a["resume_da"] = gammel.get("resume_da", "")
             if gammel.get("brief"):
                 a["brief"] = gammel["brief"]
+                a["detaljer"] = gammel.get("detaljer", [])
+                a["betydning"] = gammel.get("betydning", "")
                 a["pointer"] = gammel.get("pointer", [])
             if gammel.get("billede"):
                 a["billede"] = gammel["billede"]
@@ -631,6 +641,8 @@ def main() -> None:
                     cache[a["link"]] = {"rubrik": a["rubrik"],
                                         "resume_da": a.get("resume_da", ""),
                                         "brief": a.get("brief", ""),
+                                        "detaljer": a.get("detaljer", []),
+                                        "betydning": a.get("betydning", ""),
                                         "pointer": a.get("pointer", []),
                                         "billede": a.get("billede", ""),
                                         "kategori": a.get("kategori", ""),
@@ -645,6 +657,20 @@ def main() -> None:
     unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
     lav_billeder(unikke)
+
+    # "kunstig intelligens" -> "AI" i alle tekster (også gamle, cachede)
+    def kort_ai(t: str) -> str:
+        t = re.sub(r"[Dd]en kunstige intelligens", "AI'en", t)
+        t = re.sub(r"[Kk]unstige intelligenser", "AI'er", t)
+        t = re.sub(r"[Kk]unstig(?:e)? intelligens", "AI", t)
+        return t
+    for a in unikke:
+        for felt in ("rubrik", "resume_da", "brief", "betydning"):
+            if a.get(felt):
+                a[felt] = kort_ai(a[felt])
+        for felt in ("pointer", "detaljer"):
+            if a.get(felt):
+                a[felt] = [kort_ai(p) for p in a[felt]]
 
     for a in unikke:
         a["dato"] = a["dato"].isoformat() if a["dato"] else None
