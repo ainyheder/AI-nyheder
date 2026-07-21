@@ -1,13 +1,24 @@
 # 🛰️ AI Radar
 
-En hjemmeside der automatisk samler AI-nyheder fra en række gode kilder (RSS-feeds) og præsenterer dem lækkert — med søgning, kategorifilter og mørkt tema.
+Et lille AI-nyhedsmagasin: samler automatisk AI-nyheder fra gode kilder, **omskriver dem til ultrakort, letlæst dansk med Claude**, og viser dem på en magasin-forside med unik genereret kunst til hver historie.
 
 **Sådan hænger det sammen:**
 
 ```
-feeds.json  ──►  crawler.py  ──►  data/articles.json  ──►  index.html
-(kilderne)      (henter nyt)      (alle artiklerne)        (den flotte side)
+feeds.json  ──►  crawler.py  ──────────────►  data/articles.json  ──►  index.html
+(kilderne)      (henter nyt + omskriver          (alle artiklerne)       (magasinet +
+                 til dansk med Claude API)                                genereret kunst)
 ```
+
+## 🔑 AI-omskrivningen (kræver én ting af jer)
+
+Crawleren omskriver hver ny artikel til letlæst dansk via Claude API. Det virker først, når der ligger en API-nøgle i GitHub:
+
+1. Opret en nøgle på [console.anthropic.com](https://console.anthropic.com) → *API keys*
+2. I repo'et: **Settings → Secrets and variables → Actions → New repository secret**
+3. Navn: `ANTHROPIC_API_KEY` · Value: nøglen → **Add secret**
+
+Uden nøglen kører alt stadig — historierne vises bare på engelsk. Omskrivninger **caches** i `data/articles.json` (nøgle = artiklens link), så hver artikel kun omskrives én gang. Med modellen Claude Haiku koster en opdatering typisk **under 10 øre**, og et helt døgn under 1 kr.
 
 GitHub Actions kører crawleren automatisk hver 6. time, og GitHub Pages hoster siden gratis. Når først det er sat op, passer det sig selv.
 
