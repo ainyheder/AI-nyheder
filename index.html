@@ -236,6 +236,10 @@ a { color: inherit; }
   font-size: 15.5px; line-height: 1.28; letter-spacing: -.01em;
 }
 .raekke .tid { margin-top: auto; padding-top: 4px; }
+.raekke.bred { grid-column: span 2; }
+.raekke.bred h3 { font-size: 19px; }
+.raekke.bred .raekke-billede { aspect-ratio: 21 / 9; }
+@media (max-width: 640px) { .raekke.bred { grid-column: span 1; } }
 /* Svæve-popup med det ultrakorte resumé - flyder OVER alt, intet rykker sig */
 #tip {
   position: fixed; z-index: 300; max-width: 380px;
@@ -589,7 +593,7 @@ function kortHtml(a, id, stor = false) {
 
 function raekkeHtml(a, id) {
   return `
-  <a class="raekke" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 12, 350)}ms">
+  <a class="raekke ${a.andre && a.andre.length ? "bred" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 12, 350)}ms">
     <div class="raekke-billede">${visuel(a, id)}</div>
     <div class="raekke-tekst">
       <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}</div>
@@ -639,7 +643,7 @@ function tegn() {
     </div>
   </a>`;
 
-  const kort = rest.map((a, i) => kortHtml(a, i, i % 7 === 0 && i > 0)).join("");
+  const kort = rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("");
   indhold.innerHTML = note + hero +
     `<div class="sektion-titel">Seneste historier</div><div class="grid">${kort}</div>`;
 }
