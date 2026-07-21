@@ -209,6 +209,12 @@ a { color: inherit; }
 .kort.stor h2 { font-size: 26px; }
 @media (max-width: 700px) { .kort.stor { grid-column: span 1; } .kort.stor .kort-art { aspect-ratio: 16/9; } }
 
+.flere-chip {
+  font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
+  background: var(--blaek); color: var(--bg);
+  border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
+}
+[data-tema="moerk"] .flere-chip { background: var(--accent); color: #fff; }
 .en-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .08em;
   background: var(--accent-svag); color: var(--accent);
@@ -564,8 +570,11 @@ function aabnLaeser(a) {
         ${pointerHtml}
       </div>
       <div class="laeser-bund">
-        <span class="laeser-note" style="margin:0">Genfortalt i egne ord · Kilde: ${esc(a.kilde)}</span>
-        <a class="kilde-knap" href="${esc(a.link)}" target="_blank" rel="noopener">Læs originalen →</a>
+        <span class="laeser-note" style="margin:0">Genfortalt i egne ord · ${a.andre && a.andre.length ? "Dækket af " + (a.andre.length + 1) + " medier" : "Kilde: " + esc(a.kilde)}</span>
+        <span style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="kilde-knap" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.kilde)} →</a>
+          ${(a.andre || []).map(k => `<a class="kilde-knap" href="${esc(k.link)}" target="_blank" rel="noopener">${esc(k.kilde)} →</a>`).join("")}
+        </span>
       </div>
     </div>`;
   laeserBag.classList.add("aaben");
@@ -595,7 +604,7 @@ function kortHtml(a, id, stor = false) {
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
     <div class="kort-art">${visuel(a, id)}</div>
     <div class="kort-krop">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span></div>
+      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}</div>
       <h2>${overskrift(a)}</h2>
       <p>${brodtekst(a)}</p>
       <div class="meta"><span>${relativTid(a.dato)}</span><span class="laes" style="margin-left:auto">Læs</span></div>
@@ -608,7 +617,7 @@ function raekkeHtml(a, id) {
   <a class="raekke" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 12, 350)}ms">
     <div class="frimaerke">${visuel(a, id)}</div>
     <div class="raekke-tekst">
-      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}</div>
+      <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)}</span>${a.rubrik ? "" : '<span class="en-chip">EN</span>'}${a.andre && a.andre.length ? `<span class="flere-chip">+${a.andre.length} kilder</span>` : ""}</div>
       <h3>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h3>
       <span class="tid">${relativTid(a.dato)}</span>
     </div>
@@ -637,7 +646,7 @@ function tegn() {
     <a class="mini-hero" href="${esc(heroArtikel.link)}" data-link="${esc(heroArtikel.link)}">
       <div class="mini-hero-art">${visuel(heroArtikel, 9999)}</div>
       <div class="mini-hero-tekst">
-        <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)} · ${relativTid(heroArtikel.dato)}</span></div>
+        <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)} · ${relativTid(heroArtikel.dato)}</span>${heroArtikel.andre && heroArtikel.andre.length ? `<span class="flere-chip">+${heroArtikel.andre.length} kilder</span>` : ""}</div>
         <h1>${overskrift(heroArtikel)}</h1>
         <p>${brodtekst(heroArtikel)}</p>
       </div>
@@ -652,7 +661,7 @@ function tegn() {
   <a class="hero" href="${esc(heroArtikel.link)}" data-link="${esc(heroArtikel.link)}">
     <div class="hero-art">${visuel(heroArtikel, 9999)}</div>
     <div class="hero-tekst">
-      <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)}</span></div>
+      <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)}</span>${heroArtikel.andre && heroArtikel.andre.length ? `<span class="flere-chip">+${heroArtikel.andre.length} kilder</span>` : ""}</div>
       <h1>${overskrift(heroArtikel)}</h1>
       <p>${brodtekst(heroArtikel)}</p>
       <div class="meta"><span>${relativTid(heroArtikel.dato)}</span><span class="laes">Læs hele historien</span></div>

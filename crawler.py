@@ -330,6 +330,62 @@ def dybe_briefs(artikler: list[dict]) -> None:
         print(f"   … {i}/{len(med_tekst)}")
 
 
+# ----- Dublet-historier (samme nyhed fra flere medier) -------------------------
+
+SYSTEM_DUBLET = """Du får en nummereret liste af nyhedsoverskrifter fra forskellige medier.
+Find grupper af artikler der dækker PRÆCIS SAMME nyhedsbegivenhed (fx samme
+produktlancering, samme retssag, samme opkøb - omtalt af flere medier).
+
+VIGTIGT: Kun artikler om den samme konkrete begivenhed må grupperes.
+Artikler der blot handler om samme emne eller firma, er IKKE dubletter.
+Er du i tvivl, så lad være med at gruppere.
+
+Svar KUN med et JSON-array af grupper, hver gruppe et array af numre, fx:
+[[3, 17, 41], [8, 22]]
+Ingen grupper? Svar: []"""
+
+
+def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
+    """Finder nyheder som flere medier dækker, beholder den bedste udgave og
+    gemmer de øvrige som ekstra kilder på historien ("andre")."""
+    if not API_KEY:
+        return artikler
+    # forskning (arXiv) dublerer aldrig nyhedsmedierne - spring den over
+    kandidater = [a for a in artikler if a["kategori"] != "Forskning"][:90]
+    if len(kandidater) < 2:
+        return artikler
+    liste = "\n".join(f"{i+1}. [{a['kilde']}] {a['titel']}" for i, a in enumerate(kandidater))
+    try:
+        grupper = parse_json_svar(kald_ai(SYSTEM_DUBLET, liste, 1000))
+        assert isinstance(grupper, list)
+    except Exception as fejl:
+        print(f"  ⚠️  Dublet-tjek fejlede: {type(fejl).__name__} - fortsætter uden")
+        return artikler
+
+    fjern: set[str] = set()
+    samlet = 0
+    for gruppe in grupper:
+        try:
+            medlemmer = [kandidater[int(n) - 1] for n in gruppe
+                         if 1 <= int(n) <= len(kandidater)]
+        except (ValueError, TypeError):
+            continue
+        if len(medlemmer) < 2:
+            continue
+        # behold den med mest indhold: brief > dansk rubrik > nyeste
+        primaer = next((m for m in medlemmer if m.get("brief")), None) \
+               or next((m for m in medlemmer if m.get("rubrik")), None) \
+               or medlemmer[0]
+        andre = [m for m in medlemmer if m is not primaer]
+        primaer.setdefault("andre", [])
+        primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"]} for m in andre]
+        fjern.update(m["link"] for m in andre)
+        samlet += len(andre)
+    if samlet:
+        print(f"🔗 Samlede {samlet} dublet-artikler under deres hovedhistorier")
+    return [a for a in artikler if a["link"] not in fjern]
+
+
 # ----- AI-billeder til tophistorierne -----------------------------------------
 
 def _billed_navn(link: str) -> str:
@@ -516,6 +572,7 @@ def main() -> None:
 
     print()
     omskriv_nye(unikke, cache)
+    unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
     lav_billeder(unikke)
 
