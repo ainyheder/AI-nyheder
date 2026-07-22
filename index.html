@@ -115,12 +115,25 @@ a { color: inherit; }
   box-shadow: 0 14px 40px rgba(0,0,0,.14);
 }
 .emne-menu.aaben { display: flex; }
-.emne-valg {
-  text-align: left; padding: 9px 13px; border: 0; border-radius: 9px;
-  background: none; cursor: pointer; font: inherit; font-size: 13.5px; color: var(--blaek);
+.emne-valg { display: flex; align-items: center; gap: 9px; padding: 3px 5px; border-radius: 9px; }
+.emne-valg:hover { background: var(--accent-svag); }
+.emne-tjek {
+  width: 20px; height: 20px; flex: none; border: 1.5px solid var(--linje); border-radius: 6px;
+  background: var(--bg); cursor: pointer; font-size: 12px; font-weight: 800;
+  color: var(--bg); display: grid; place-items: center; padding: 0;
 }
-.emne-valg:hover { background: var(--accent-svag); color: var(--accent); }
-.emne-valg.aktiv { font-weight: 700; color: var(--accent); }
+.emne-tjek.valgt { background: var(--accent); border-color: var(--accent); color: #fff; }
+.emne-navn {
+  flex: 1; text-align: left; padding: 7px 4px; border: 0; background: none;
+  cursor: pointer; font: inherit; font-size: 13.5px; color: var(--blaek);
+}
+.emne-navn:hover { color: var(--accent); }
+.emne-alle {
+  margin-top: 4px; padding: 7px 12px; border: 0; border-top: 1px solid var(--linje);
+  background: none; cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+  color: var(--blaek-svag); text-align: left;
+}
+.emne-alle:hover { color: var(--accent); }
 
 /* ---------- Hero ---------- */
 .wrap { margin: 0 auto; padding: 20px 28px 70px; }
@@ -508,7 +521,9 @@ footer a { color: var(--accent); }
    ================================================================ */
 
 let artikler = [];
-let aktivKategori = "Alle";
+let aktivKategori = "Nyheder";   // "Nyheder" (med emne-flueben) eller "Forskning"
+let emneValg = null;             // Set af tilvalgte kategorier (null = alle)
+let emneMenuAaben = false;
 let sogeTekst = "";
 let visning = "magasin";     // "magasin" = store kort (standard) · "kompakt" = kategori-kolonner
 let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kronologi
@@ -639,15 +654,23 @@ function tegnFiltre() {
     const ia = KATEGORI_ORDEN.indexOf(a), ib = KATEGORI_ORDEN.indexOf(b);
     return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
   });
-  // Trimmet hovedmenu: Alle · Emner ▾ (de 5 kategorier) · Forskning
+  // Hovedmenu: Nyheder ▾ (kategorier med flueben, alle til fra start) · Forskning
   const emner = fundne.filter(k => k !== "Forskning");
-  const emneAktiv = aktivKategori !== "Alle" && aktivKategori !== "Forskning";
+  if (!emneValg) emneValg = new Set(emner);          // udgangspunkt: alle slået til
+  const valgte = emner.filter(k => emneValg.has(k));
+  const etiket = valgte.length === emner.length ? "Nyheder"
+               : valgte.length === 1 ? valgte[0]
+               : `Nyheder · ${valgte.length}/${emner.length}`;
   filtreEl.innerHTML = `
-    <button class="pill ${aktivKategori === "Alle" ? "aktiv" : ""}" data-kategori="Alle">Alle</button>
     <span class="emne-holder">
-      <button class="pill ${emneAktiv ? "aktiv" : ""}" id="emneKnap">${emneAktiv ? esc(aktivKategori) : "Emner"} <span class="emne-pil">▾</span></button>
-      <span class="emne-menu" id="emneMenu">
-        ${emner.map(k => `<button class="emne-valg ${k === aktivKategori ? "aktiv" : ""}" data-kategori="${esc(k)}">${esc(k)}</button>`).join("")}
+      <button class="pill ${aktivKategori === "Nyheder" ? "aktiv" : ""}" id="emneKnap">${esc(etiket)} <span class="emne-pil">▾</span></button>
+      <span class="emne-menu ${emneMenuAaben ? "aaben" : ""}" id="emneMenu">
+        ${emner.map(k => `
+        <span class="emne-valg">
+          <button class="emne-tjek ${emneValg.has(k) ? "valgt" : ""}" data-tjek="${esc(k)}" title="Slå til/fra">${emneValg.has(k) ? "✓" : ""}</button>
+          <button class="emne-navn" data-solo="${esc(k)}" title="Vis kun ${esc(k)}">${esc(k)}</button>
+        </span>`).join("")}
+        <button class="emne-alle" id="emneAlle">Vælg alle</button>
       </span>
     </span>
     ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}`;
@@ -677,9 +700,10 @@ function prioAf(a) {
 function filtrerede() {
   const q = sogeTekst.toLowerCase();
   const liste = artikler.filter(a =>
-    // Forskning vises KUN under sit eget filter - aldrig under "Alle"
-    (aktivKategori === "Alle" ? a.kategori !== "Forskning"
-                              : a.kategori === aktivKategori) &&
+    // Forskning har sit eget filter; Nyheder viser de tilvalgte kategorier
+    (aktivKategori === "Forskning"
+      ? a.kategori === "Forskning"
+      : a.kategori !== "Forskning" && (!emneValg || emneValg.has(a.kategori))) &&
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
@@ -925,25 +949,47 @@ function tegn() {
 /* ---------- Events ---------- */
 
 filtreEl.addEventListener("click", e => {
-  const valg = e.target.closest(".emne-valg");
-  if (valg) {                                  // valgt kategori i Emner-menuen
-    aktivKategori = valg.dataset.kategori;
+  const tjek = e.target.closest(".emne-tjek");
+  if (tjek) {                                  // flueben til/fra (menuen bliver åben)
+    const k = tjek.dataset.tjek;
+    emneValg.has(k) ? emneValg.delete(k) : emneValg.add(k);
+    aktivKategori = "Nyheder";
     tegnFiltre(); tegn();
     return;
   }
-  if (e.target.closest("#emneKnap")) {         // fold Emner-menuen ud/ind
-    document.getElementById("emneMenu").classList.toggle("aaben");
+  const solo = e.target.closest(".emne-navn");
+  if (solo) {                                  // klik på navnet = vis KUN den kategori
+    emneValg = new Set([solo.dataset.solo]);
+    aktivKategori = "Nyheder";
+    emneMenuAaben = false;
+    tegnFiltre(); tegn();
+    return;
+  }
+  if (e.target.closest("#emneAlle")) {         // alle flueben på igen
+    emneValg = null;
+    aktivKategori = "Nyheder";
+    tegnFiltre(); tegn();
+    return;
+  }
+  if (e.target.closest("#emneKnap")) {         // Nyheder-pillen folder menuen ud/ind
+    if (aktivKategori === "Nyheder") emneMenuAaben = !emneMenuAaben;
+    else { aktivKategori = "Nyheder"; emneMenuAaben = true; }
+    tegnFiltre(); tegn();
     return;
   }
   const knap = e.target.closest(".pill");
   if (!knap || !knap.dataset.kategori) return;
-  aktivKategori = knap.dataset.kategori;
+  aktivKategori = knap.dataset.kategori;       // Forskning
+  emneMenuAaben = false;
   tegnFiltre(); tegn();
 });
-// klik udenfor lukker Emner-menuen
+// klik udenfor lukker Nyheder-menuen
 document.addEventListener("click", e => {
-  const menu = document.getElementById("emneMenu");
-  if (menu && !e.target.closest(".emne-holder")) menu.classList.remove("aaben");
+  if (emneMenuAaben && !e.target.closest(".emne-holder")) {
+    emneMenuAaben = false;
+    const menu = document.getElementById("emneMenu");
+    if (menu) menu.classList.remove("aaben");
+  }
 });
 document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
 
