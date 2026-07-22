@@ -106,6 +106,21 @@ a { color: inherit; }
 }
 .pill:hover { border-color: var(--accent); color: var(--accent); }
 .pill.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
+.emne-holder { position: relative; display: inline-block; }
+.emne-pil { font-size: 10px; opacity: .7; }
+.emne-menu {
+  position: absolute; top: calc(100% + 8px); left: 0; z-index: 60;
+  display: none; flex-direction: column; min-width: 190px; padding: 6px;
+  background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.14);
+}
+.emne-menu.aaben { display: flex; }
+.emne-valg {
+  text-align: left; padding: 9px 13px; border: 0; border-radius: 9px;
+  background: none; cursor: pointer; font: inherit; font-size: 13.5px; color: var(--blaek);
+}
+.emne-valg:hover { background: var(--accent-svag); color: var(--accent); }
+.emne-valg.aktiv { font-weight: 700; color: var(--accent); }
 
 /* ---------- Hero ---------- */
 .wrap { margin: 0 auto; padding: 20px 28px 70px; }
@@ -624,9 +639,18 @@ function tegnFiltre() {
     const ia = KATEGORI_ORDEN.indexOf(a), ib = KATEGORI_ORDEN.indexOf(b);
     return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
   });
-  const kategorier = ["Alle", ...fundne];
-  filtreEl.innerHTML = kategorier.map(k =>
-    `<button class="pill ${k === aktivKategori ? "aktiv" : ""}" data-kategori="${esc(k)}">${esc(k)}</button>`).join("");
+  // Trimmet hovedmenu: Alle · Emner ▾ (de 5 kategorier) · Forskning
+  const emner = fundne.filter(k => k !== "Forskning");
+  const emneAktiv = aktivKategori !== "Alle" && aktivKategori !== "Forskning";
+  filtreEl.innerHTML = `
+    <button class="pill ${aktivKategori === "Alle" ? "aktiv" : ""}" data-kategori="Alle">Alle</button>
+    <span class="emne-holder">
+      <button class="pill ${emneAktiv ? "aktiv" : ""}" id="emneKnap">${emneAktiv ? esc(aktivKategori) : "Emner"} <span class="emne-pil">▾</span></button>
+      <span class="emne-menu" id="emneMenu">
+        ${emner.map(k => `<button class="emne-valg ${k === aktivKategori ? "aktiv" : ""}" data-kategori="${esc(k)}">${esc(k)}</button>`).join("")}
+      </span>
+    </span>
+    ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}`;
 }
 
 function dagNoegle(iso) {
@@ -901,10 +925,25 @@ function tegn() {
 /* ---------- Events ---------- */
 
 filtreEl.addEventListener("click", e => {
+  const valg = e.target.closest(".emne-valg");
+  if (valg) {                                  // valgt kategori i Emner-menuen
+    aktivKategori = valg.dataset.kategori;
+    tegnFiltre(); tegn();
+    return;
+  }
+  if (e.target.closest("#emneKnap")) {         // fold Emner-menuen ud/ind
+    document.getElementById("emneMenu").classList.toggle("aaben");
+    return;
+  }
   const knap = e.target.closest(".pill");
-  if (!knap) return;
+  if (!knap || !knap.dataset.kategori) return;
   aktivKategori = knap.dataset.kategori;
   tegnFiltre(); tegn();
+});
+// klik udenfor lukker Emner-menuen
+document.addEventListener("click", e => {
+  const menu = document.getElementById("emneMenu");
+  if (menu && !e.target.closest(".emne-holder")) menu.classList.remove("aaben");
 });
 document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
 
