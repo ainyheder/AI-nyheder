@@ -290,9 +290,11 @@ a { color: inherit; }
 }
 .laeser-luk:hover { transform: rotate(90deg); background: var(--accent-svag); }
 .laeser-krop { padding: 40px 56px 44px; min-width: 0; }
-.laeser-indhold { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap; }
+.laeser-indhold { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap;
+  justify-content: space-between; }
 .laeser-indhold .laeser-brief { flex: 1 1 520px; max-width: 82ch; }
-.laeser-indhold .laeser-pointer { flex: 0 1 320px; margin: 0; }
+.laeser-indhold .laeser-side { flex: 1 1 340px; min-width: 240px; max-width: 460px;
+  display: flex; flex-direction: column; gap: 16px; }
 .laeser-krop h1 {
   font-family: var(--font-display); font-weight: 900;
   font-size: clamp(24px, 4vw, 32px); line-height: 1.12; letter-spacing: -.02em;
@@ -302,8 +304,19 @@ a { color: inherit; }
 .laeser-brief p { margin-bottom: 14px; }
 .laeser-brief strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
 .laeser-brief .laeser-sektion:first-child { margin-top: 0; }
-.laeser-pointer { margin: 20px 0 4px; padding: 18px 22px;
-  background: var(--accent-svag); border-radius: 14px; }
+.side-boks { padding: 18px 22px; background: var(--accent-svag); border-radius: 14px; }
+.laeser-side h4 {
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 10px;
+}
+.laeser-side .stat-raekke {
+  margin: 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px;
+}
+.laeser-side .stat-flise { min-width: 0; }
+.laeser-side .laeser-betydning { margin-top: 0; }
+.laeser-side .laeser-detaljer { margin: 0; }
+.laeser-side .laeser-detaljer li { border-bottom-color: rgba(91, 75, 240, .16); }
 .stat-raekke { display: flex; gap: 10px; flex-wrap: wrap; margin: 2px 0 20px; }
 .stat-flise {
   background: var(--bg); border: 1px solid var(--linje);
@@ -333,15 +346,6 @@ a { color: inherit; }
   border-radius: 0 12px 12px 0; padding: 14px 18px;
   font-size: 15px; line-height: 1.65; margin-top: 6px;
 }
-.laeser-pointer h4 {
-  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 10px;
-}
-.laeser-pointer ul { list-style: none; }
-.laeser-pointer li {
-  font-size: 14px; padding-left: 22px; position: relative; margin-bottom: 7px; line-height: 1.5;
-}
-.laeser-pointer li::before { content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
 .laeser-bund {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--linje); flex-wrap: wrap;
@@ -638,40 +642,35 @@ function aabnLaeser(a) {
         `<figure class="laeser-figur"><img src="${esc(f.url)}" alt="${esc(f.tekst)}" loading="lazy"
            onerror="this.closest('figure').style.display='none'">
          <figcaption>${esc(f.tekst)} · Kilde: ${esc(f.kilde || a.kilde)}</figcaption></figure>`).join("");
-    if (a.detaljer && a.detaljer.length)
-      briefHtml += `<div class="laeser-sektion">Detaljerne</div>
-        <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${fed(d)}</li>`).join("")}</ul>`;
-    if (a.betydning)
-      briefHtml += `<div class="laeser-sektion">Hvad betyder det for dig?</div>
-        <div class="laeser-betydning">${fed(a.betydning)}</div>`;
   } else if (a.brief) {
     briefHtml = a.brief.split(/\n\n+/).map(afsnit => `<p>${esc(afsnit)}</p>`).join("");
-    if (a.detaljer && a.detaljer.length)
-      briefHtml += `<div class="laeser-sektion">Detaljerne</div>
-        <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${fed(d)}</li>`).join("")}</ul>`;
-    if (a.betydning)
-      briefHtml += `<div class="laeser-sektion">Hvad betyder det for dig?</div>
-        <div class="laeser-betydning">${fed(a.betydning)}</div>`;
   } else {
     briefHtml = `<p>${brodtekst(a)}</p>
        <p class="laeser-note">Det komplette brief er på vej — det skrives automatisk,
        når AI-omskrivningen har behandlet artiklen. Indtil da kan du læse originalen herunder.</p>`;
   }
 
-  const pointerHtml = (a.pointer && a.pointer.length)
-    ? `<div class="laeser-pointer"><h4>Hovedpointer</h4>
-       <ul>${a.pointer.map(p => `<li>${fed(p)}</li>`).join("")}</ul></div>` : "";
+  // Højre kolonne: nøgletal øverst, så Detaljerne i boksen, så "Hvad betyder det for dig?"
+  const sideDele = [];
+  if (a.noegletal && a.noegletal.length)
+    sideDele.push(`<div class="stat-raekke">${a.noegletal.map(n =>
+      `<div class="stat-flise"><div class="stat-tal">${esc(n.tal)}</div><div class="stat-label">${esc(n.label)}</div></div>`).join("")}</div>`);
+  if (a.detaljer && a.detaljer.length)
+    sideDele.push(`<div class="side-boks"><h4>Detaljerne</h4>
+      <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${fed(d)}</li>`).join("")}</ul></div>`);
+  if (a.betydning)
+    sideDele.push(`<div class="laeser-betydning"><h4>Hvad betyder det for dig?</h4>${fed(a.betydning)}</div>`);
+  const sideHtml = sideDele.length
+    ? `<aside class="laeser-side">${sideDele.join("")}</aside>` : "";
 
   laeserBoks.innerHTML = `
     <button class="laeser-luk" id="laeserLuk" aria-label="Luk">✕</button>
     <div class="laeser-krop">
       <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)} · ${relativTid(a.dato)}</span></div>
       <h1>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h1>
-      ${a.noegletal && a.noegletal.length ? `<div class="stat-raekke">${a.noegletal.map(n =>
-        `<div class="stat-flise"><div class="stat-tal">${esc(n.tal)}</div><div class="stat-label">${esc(n.label)}</div></div>`).join("")}</div>` : ""}
       <div class="laeser-indhold">
         <div class="laeser-brief">${briefHtml}</div>
-        ${pointerHtml}
+        ${sideHtml}
       </div>
       <div class="laeser-bund">
         <span class="laeser-note" style="margin:0">Genfortalt i egne ord · ${a.andre && a.andre.length ? "Dækket af " + (a.andre.length + 1) + " medier" : "Kilde: " + esc(a.kilde)}</span>
