@@ -107,7 +107,18 @@ a { color: inherit; }
 .pill:hover { border-color: var(--accent); color: var(--accent); }
 .pill.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
 .emne-holder { position: relative; display: inline-block; }
-.emne-pil { font-size: 10px; opacity: .7; }
+.pill-delt { display: inline-flex; align-items: stretch; padding: 0; overflow: hidden; }
+.pill-navn {
+  border: 0; background: none; color: inherit; font: inherit; cursor: pointer;
+  padding: 6px 4px 6px 13px;
+}
+.pill-pil {
+  border: 0; background: none; color: inherit; font-family: inherit; cursor: pointer;
+  font-size: 15px; padding: 4px 12px 6px 8px; line-height: 1;
+  display: grid; place-items: center;
+}
+.pill-pil:hover { color: var(--accent); }
+.pill.aktiv .pill-pil:hover { color: var(--bg); opacity: .75; }
 .emne-menu {
   position: absolute; top: calc(100% + 8px); left: 0; z-index: 60;
   display: none; flex-direction: column; min-width: 190px; padding: 6px;
@@ -663,7 +674,10 @@ function tegnFiltre() {
                : `Nyheder · ${valgte.length}/${emner.length}`;
   filtreEl.innerHTML = `
     <span class="emne-holder">
-      <button class="pill ${aktivKategori === "Nyheder" ? "aktiv" : ""}" id="emneKnap">${esc(etiket)} <span class="emne-pil">▾</span></button>
+      <span class="pill pill-delt ${aktivKategori === "Nyheder" ? "aktiv" : ""}">
+        <button class="pill-navn" id="nyhederKnap">${esc(etiket)}</button>
+        <button class="pill-pil" id="emnePil" title="Vælg kategorier" aria-label="Vælg kategorier">▾</button>
+      </span>
       <span class="emne-menu ${emneMenuAaben ? "aaben" : ""}" id="emneMenu">
         ${emner.map(k => `
         <span class="emne-valg">
@@ -971,9 +985,15 @@ filtreEl.addEventListener("click", e => {
     tegnFiltre(); tegn();
     return;
   }
-  if (e.target.closest("#emneKnap")) {         // Nyheder-pillen folder menuen ud/ind
-    if (aktivKategori === "Nyheder") emneMenuAaben = !emneMenuAaben;
-    else { aktivKategori = "Nyheder"; emneMenuAaben = true; }
+  if (e.target.closest("#emnePil")) {          // KUN pilen folder menuen ud/ind
+    if (aktivKategori !== "Nyheder") { aktivKategori = "Nyheder"; emneMenuAaben = true; }
+    else emneMenuAaben = !emneMenuAaben;
+    tegnFiltre(); tegn();
+    return;
+  }
+  if (e.target.closest("#nyhederKnap")) {      // navnet skifter bare til Nyheder
+    aktivKategori = "Nyheder";
+    emneMenuAaben = false;
     tegnFiltre(); tegn();
     return;
   }
