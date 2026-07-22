@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-07-22T09:16:07.865100+00:00",
+  "opdateret": "2026-07-22T09:23:51.756353+00:00",
   "antal": 133,
   "artikler": [
     {
@@ -91,9 +91,7 @@
       "kategori": "Forskning",
       "rubrik": "Ny metode gør det lettere at analysere virksomhedsdata",
       "resume_da": "En ny forskningsartikel præsenterer en metode til at lade AI håndtere komplekse dataopgaver i virksomheder mere effektivt.",
-      "billede": "data/img/53c387f6ad912161.jpg",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye studie",
@@ -104,14 +102,13 @@
           "tekst": "Metoden fokuserer på at opbygge specifikke planer for, hvordan opgaver skal udføres i en virksomhed. I stedet for at køre alt i en fast rækkefølge, styrer AI processen dynamisk. Det gør det muligt at håndtere store og uforudsigelige datamængder langt hurtigere end før."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2026",
           "label": "udgivelsesår for studiet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "{'tal': '', 'tekst': 'Forskningen er udgivet i april 2026 af forfatteren Anupreet Walia.'}",
         "{'tal': '', 'tekst': 'Arbejdet fokuserer på at forbedre dataanalyse i virksomheder ved hjælp af AI.'}"
@@ -121,7 +118,10 @@
         "Ny forskning af Anupreet Walia fra april 2026",
         "Fokus på bedre dataanalyse med AI",
         "Gør virksomheders databehandling mere fleksibel"
-      ]
+      ],
+      "billede": "data/img/53c387f6ad912161.jpg",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "AI Tool Discovery at Scale: All You Need is DNS",
@@ -574,11 +574,40 @@
       "dato": "2026-07-22T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
-      "rubrik": "Mere stabil AI gennem bedre menneskelig vejledning",
-      "resume_da": "AI bliver bedre til at lære af vores input uden at gå i sort. Det giver langt mere pålidelige svar.",
+      "rubrik": "Ny metode gør træning af AI mere stabil",
+      "resume_da": "Forskere har udviklet en ny fremgangsmåde kaldet S2T-RLHF, der forbedrer træningen af AI gennem bedre fordeling af ros og kritik.",
       "billede": "data/img/89b9be1bb094e4ab.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Bag om metoden",
+          "tekst": "Et hold af forskere anført af **Wei Chen** har præsenteret en ny teknik til at finpudse AI-modeller. Når AI skal lære af menneskers præferencer, opstår der ofte udfordringer med stabiliteten undervejs i processen. Den nye fremgangsmåde løser dette ved at fordele æren for gode svar mere præcist igennem hele systemets opbygning, hvilket i alt involverer **5** forskere bag opdagelsen."
+        },
+        {
+          "overskrift": "Stabil læring",
+          "tekst": "Traditionelle metoder har det med at snuble, når de forsøger at tilpasse sig menneskelig smag og feedback. Med den nye tilgang bliver det lettere for teknologien at fastholde en jævn kurs. Det sikrer, at AI-modellerne ikke pludselig mister kvalitet, når de modtager store mængder rettelser og vurderinger fra brugere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5",
+          "label": "forskere bag den nye metode"
+        }
+      ],
+      "detaljer": [
+        "{'tal': 'Metoden er udviklet af et hold på **5** forskere med **Wei Chen** i spidsen.'}",
+        "{'tal': 'Teknikken hedder S2T-RLHF og fokuserer på hierarkisk fordeling af feedback.'}",
+        "{'tal': 'Arbejdet er netop blevet offentliggjort i maj **2026** som et nyt videnskabeligt papir.'}"
+      ],
+      "betydning": "For almindelige mennesker betyder mere stabile træningsmetoder, at fremtidige AI-værktøjer bliver mere pålidelige og bedre til at lytte til menneskelig feedback. Når forskerne knækker koden til at gøre indlæringen mere ensartet, mindskes risikoen for, at teknologien pludselig opfører sig uforudsigeligt eller leverer dårlige svar. Det er et vigtigt skridt på vejen mod mere sikre og brugervenlige digitale assistenter i hverdagen.",
+      "pointer": [
+        "Ny metode skaber mere stabil AI-træning",
+        "Udviklet af hold på fem forskere",
+        "Løser problemer med menneskelig feedback"
+      ]
     },
     {
       "titel": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
@@ -1332,20 +1361,13 @@
     {
       "titel": "Five tech giants are hiding $1.6T in AI debt, using the trick that toppled Enron",
       "link": "https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai",
-      "resume": "Article URL: https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai Comments URL: https://news.ycombinator.com/item?id=48996760 Points: 87 # Comments: 15",
+      "resume": "Article URL: https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai Comments URL: https://news.ycombinator.com/item?id=48996760 Points: 88 # Comments: 15",
       "dato": "2026-07-21T19:11:27+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
       "rubrik": "Tech-giganter skjuler milliardgæld bag AI-forbrug",
       "resume_da": "Fem store tech-giganter gemmer på enorme gældsbeløb uden for regnskaberne for at finansiere AI-kapløbet.",
-      "kat_ai": true,
-      "prio": 9,
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding"
-        }
-      ],
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "De skjulte regninger",
@@ -1360,8 +1382,6 @@
           "tekst": "Hele branchen forventes at pløje mere end **3 billioner dollar** i AI-infrastruktur frem mod **2028**. Når de enorme datacentre står færdige, vælter de store lejekontrakter dog ind i de officielle regnskaber på én gang. Hvis efterspørgslen på AI svigter, kan det ramme både investorer, långivere og forsikringsselskaber hårdt, og store kreditvurderingsbureauer som S&P har allerede svinget kniven."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "$1,65T",
@@ -1380,6 +1400,13 @@
           "label": "siden Enron-skandalen rystede finansverdenen"
         }
       ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding"
+        }
+      ],
       "detaljer": [
         "{'tekst': 'Fem tech-giganter gemmer en skjult gæld på samlet 1,65 billioner dollar til AI-investeringer.'}",
         "{'tekst': 'Det usynlige beløb er steget otte gange over cirka fire år ifølge en undersøgelse fra Nikkei.'}",
@@ -1394,7 +1421,9 @@
         "{'tekst': 'Metoden er lovlig, men vækker mindelser om Enron.'}",
         "{'tekst': 'Lejekontrakter vælter ind i regnskaberne, når datacentrene står klar.'}",
         "{'tekst': 'Kreditbureauer advarer om voksende finansiel risiko.'}"
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 9
     },
     {
       "titel": "AI Agent – TRMNL",
@@ -1405,8 +1434,7 @@
       "kategori": "Hverdags-AI",
       "rubrik": "Byg egne plugins med nye AI-værktøjer",
       "resume_da": "En ny AI-assistent lader dig skabe dine egne plugins til TRMNL ved blot at skrive en almindelig sætning.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sådan fungerer det",
@@ -1421,14 +1449,13 @@
           "tekst": "Selvom teknologien er smart, modtager holdet bag endnu ikke automatisk genererede plugins i massevis, da deres interne systemer skal udbygges først. Hvis du oplever fejl eller mærkelig opførsel undervejs, opfordres du til at kontakte deres support direkte via e-mail eller livechat."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2,20 USD",
           "label": "samlet pris for at skabe et test-plugin"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Systemet kræver en API-nøgle fra enten OpenRouter eller Anthropic for at fungere.",
         "En gratis nøgle fra Tavily giver adgang til internetsøgning og websider.",
@@ -1443,7 +1470,9 @@
         "Kræver nøgler fra tjenester som OpenRouter",
         "Understøtter flere forskellige teknologimodeller",
         "Koster et lille beløb per færdigt produkt"
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "AI makes programming differently difficult",
@@ -1633,8 +1662,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Meta-modeller redder gigantiske mængder forskningsdata på 15 minutter",
       "resume_da": "Amerikanske forskningslaboratorier bruger Meta-modeller til at analysere enorme mængder røntgendata på få minutter i stedet for måneder.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Databjerge i forskningen",
@@ -1649,8 +1677,6 @@
           "tekst": "Det nye AI-system er allerede blevet testet på at forstå, hvordan vinstokke reagerer på tørke helt nede på celleniveau. Ved at analysere røntgenscanninger kan systemet automatisk udpege de mikroskopiske rørsystemer, der transporterer vand i planten. Det giver vigtig viden om, hvordan man kan skabe mere tørkeresistente afgrøder i fremtiden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "100.000",
@@ -1669,6 +1695,7 @@
           "label": "nationale laboratorier der samarbejder i projektet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Lawrence Berkeley National Laboratory driver store videnskabelige anlæg som Advanced Light Source.",
         "De amerikanske energilaboratorier producerer nu tocifrede petabytes med data hvert eneste år.",
@@ -1682,7 +1709,9 @@
         "Røntgenanlæg producerer enorme mængder billeder, som mennesker ikke kan nå at analysere manuelt.",
         "Meta-modellerne SAM 3 og DINOv3 klares af supercomputere på blot et kvarter.",
         "Teknologien hjælper forskere med at forstå tørkeramte planter og udvikle fremtidens afgrøder."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "Introducing the ChatGPT for small business program",
@@ -2135,8 +2164,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Vrede vælgere straffer politikere pga. gigantiske anlæg",
       "resume_da": "Lokale modstandere og vrede vælgere gør modstand mod de gigantiske AI-centre, hvilket nu koster politikere deres pladser.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kamp om ressourcer",
@@ -2151,8 +2179,6 @@
           "tekst": "Modstanden mod de store byggerier er gået så vidt, at det nu får direkte konsekvenser for magtfulde politikere. Eksempelvis mistede en fremtrædende politiker, **Stuart Adams**, sin plads i **juni 2026** efter at have banet vejen for et enormt anlæg i staten Utah."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "30+",
@@ -2171,6 +2197,7 @@
           "label": "tidspunkt hvor vælgerne afsatte politiker"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "{'tal': 'Over 30', 'tekst': 'Over 30 store og små datacentre er blevet foreslået i den amerikanske stat Michigan på bare to år.'}",
         "{'tekst': 'Lokale vandmyndigheder har i visse tilfælde afvist at levere kølevand til de store tech-projekter.'}",
@@ -2183,7 +2210,9 @@
         "AI-projekter skaber voldsom lokal modstand mod støj og ressourceforbrug.",
         "Ét enkelt anlæg kan sluge lige så meget strøm som 2 millioner hjem.",
         "Vrede vælgere straffer nu politikere, der støtter de upopulære byggerier."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 8
     },
     {
       "titel": "Trump’s latest AI czar has already resigned",
@@ -2586,10 +2615,59 @@
       "dato": "2026-07-20T16:36:36+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
-      "rubrik": "Er det svært at afsløre tekster skrevet af AI?",
-      "resume_da": "Forskere har forsøgt at måle, hvor meget tekst der skrives af AI. Det viser sig at være sværere end antaget.",
+      "rubrik": "Hver tredje videnskabelige artikel er skrevet af AI",
+      "resume_da": "En stor undersøgelse af næsten 13.000 forskningsartikler viser, at op mod en tredjedel nu bærer præg af at være skrevet ved hjælp af AI.",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Sådan blev det målt",
+          "tekst": "Forskerne har undersøgt **12.750** dokumenter fra arkivet for at finde ud af, hvor udbredt AI-tekst er blevet. For at sikre et præcist udgangspunkt kiggede de på historiske opgaver fra år **2021** og **2022**, som er fra før teknologien slog igennem. Metoden er indstillet, så der kun er en fejlrate på **0,4 %** på ægte menneskeskrevne tekster, hvilket skaber en solid bundlinje for hele analysen."
+        },
+        {
+          "overskrift": "Voldsom stigning i kurven",
+          "tekst": "Efter lanceringen af de nye modeller gik det stærkt med at tage hjælpen i brug. Andelen af tekster, der udløser alarmen, er steget i to store bølger og rammer omkring **32 %** i det seneste fulde kvartal. Det højeste niveau blev målt i begyndelsen af **2026**, hvor næsten **39 %** af de indsendte tekster lignede noget, der var skrevet af AI."
+        },
+        {
+          "overskrift": "Store forskelle på fag",
+          "tekst": "Ikke alle videnskabelige miljøer bruger teknologien ens. Inden for datalogi er andelen af tekster, der flages, oppe på omkring **65 %**, mens matematik ligger helt nede ved **0,7 %**. Forskerne advarer dog om, at matematikken kan være svær at måle, fordi formler og symboler fylder mere end traditionel prosa, hvilket gør det sværere for systemet at opdage eventuel hjælp."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "12.750",
+          "label": "analyserede forskningsartikler i alt"
+        },
+        {
+          "tal": "32 %",
+          "label": "andel af nye tekster markeret som maskinskrevne"
+        },
+        {
+          "tal": "65 %",
+          "label": "andelen inden for datalogi"
+        },
+        {
+          "tal": "0,4 %",
+          "label": "fejlrate sat ud fra gamle kontroltekster"
+        }
+      ],
+      "detaljer": [
+        "Undersøgelsen omfattede præcis 12.750 forskningsartikler fra databasen arXiv.",
+        "Før-ChatGPT årene 2021 og 2022 blev brugt som kontrolgruppe med 200 tekster pr. felt.",
+        "Fejlraten blev kalibreret til nøjagtigt 0,4 procent på de ældre kontroltekster.",
+        "Andelen af maskinskrevne tekster toppede tæt ved 39 procent i begyndelsen af 2026.",
+        "Datalogi topper listen med omkring 65 procent markerede tekster.",
+        "Matematik ligger lavest med kun 0,7 procent markerede tekster."
+      ],
+      "betydning": "At op mod hver tredje videnskabelige artikel nu bærer præg af AI-skrivning, viser, hvor hurtigt teknologien er blevet en fast del af forskernes hverdag. For almindelige mennesker betyder det, at informationsstrømmen og mængden af nyt stof vil vokse eksplosivt. Samtidig rejser det vigtige spørgsmål om troværdighed og ægthed i den viden, der præsenteres for offentligheden fremover.",
+      "pointer": [
+        "Næsten hver tredje nye forskningsartikel bærer præg af AI.",
+        "Datalogi er det fagfelt, der bruger teknologien mest.",
+        "Matematik skiller sig ud med ekstremt lave målinger.",
+        "Historiske kontrolgrupper sikrer mod falske alarmer."
+      ]
     },
     {
       "titel": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
@@ -2706,8 +2784,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Stop med at gøre AI til et magisk væsen",
       "resume_da": "En datalog advarer mod at tillægge AI menneskelige egenskaber. Vi bør i stedet betragte det som et avanceret arbejdsredskab og en form for digitalt samarbejde.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Farlige myter",
@@ -2722,8 +2799,6 @@
           "tekst": "Den store fordel ved de nye systemer er deres fleksibilitet, som kan gøre op med de ufleksible it-systemer, vi kender fra lægens venteværelse. Teknologien kan tilpasse sig den enkelte bruger, så vi slipper for at bøje os efter firkantede skærme og i stedet får mere kontrol over vores egne digitale oplevelser."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "50 %",
@@ -2734,6 +2809,7 @@
           "label": "risiko for menneskelig undergang ifølge meningsmåling"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Termen AI opstod i 1950'erne i den tidlige barndom for computere.",
         "OpenAI-chefen Sam Altman har delt lignende bekymringer om teknologiens mulige konsekvenser.",
@@ -2747,7 +2823,9 @@
         "Systemerne fungerer ved at blande eksisterende menneskeskabt materiale.",
         "Frygten for dommedag bygger på science fiction-mytologi og misforståelser.",
         "Fleksibiliteten kan gøre digitale løsninger langt mere menneskevenlige."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "YouTube clarifies policies around AI slop and upsetting videos",
@@ -2799,8 +2877,7 @@
       "kategori": "Penge & marked",
       "rubrik": "Kina vinder kapløbet med åben AI",
       "resume_da": "Kina satser på åbne AI-modeller og truer dermed USA's førerposition. Amerikanske lukkede systemer risikerer at tabe terræn.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kinas smarte træk",
@@ -2815,14 +2892,13 @@
           "tekst": "Ifølge investoren **Martin Casado** fra **a16z** er der hele **80 %** sandsynlighed for, at nye virksomheder i dag vælger at bruge modeller fra Kina. Kløften mellem lukkede og åbne løsninger er blevet mindre, og de åbne alternativer vinder hurtigt frem på det globale marked."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "80 %",
           "label": "sandsynlighed for brug af kinesiske modeller i nye startups"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "{'punkt': 'Kinesiske virksomheder er i fuld gang med at overtage føringen på markedet.'}",
         "{'punkt': 'Amerikanske tech-giganter forsøger at låse kunderne fast i lukkede systemer.'}",
@@ -2836,7 +2912,9 @@
         "Amerikanske selskaber holder stramt fast i lukkede systemer.",
         "Det er let for brugere at skifte mellem forskellige udbydere.",
         "Startups vælger i høj grad de tilgængelige kinesiske modeller."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 8
     },
     {
       "titel": "Beyond grep: The case for a context-rich AI coding harness",
@@ -2953,8 +3031,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "AI gør os dummere, men meget mere selvsikre",
       "resume_da": "Et nyt studie viser, at adgang til AI får folk til at svare forkert langt hyppigere, mens deres tro på egen formåen stikker helt af.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Studiet bag",
@@ -2969,8 +3046,6 @@
           "tekst": "Selvom forskerne tilbød pengene som belønning for korrekte svar, hjalp det næsten ikke. Villigheden til at indrømme manglende viden krøb kun op fra **3 %** til **8 %**, mens rigtigheden ramte **16 %**. Det er stadig milevidt fra det udgangspunkt, hvor deltagerne arbejdede helt uden teknisk hjælp."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "9 %",
@@ -2985,6 +3060,7 @@
           "label": "indrømmede uvidenheid mod før 44 %"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "{'tal': '9 %', 'label': 'Forskere fandt at rigtigheden faldt fra 27 % til 9 % ved brug af AI.'}",
         "{'tal': '76 %', 'label': 'Sikkerheden på egne svar steg fra 30 % til 76 %.'}",
@@ -2998,7 +3074,9 @@
         "Skråsikre brugere troede blindt på fejl",
         "Evnen til at sige ved ikke forsvandt",
         "Pengepremier ændrede næsten inttting ved det"
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "What to watch for after Jensen Huang’s Japan visit",
@@ -3075,14 +3153,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Ekspert advarer: Massiv blind tro på AI",
       "resume_da": "Virksomheder verden over kaster sig blindt ud i AI uden reelle resultater. Frygt og falske succeser holder illusionen i live.",
-      "kat_ai": true,
-      "prio": 7,
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"
-        }
-      ],
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "En blindgyde",
@@ -3097,8 +3168,6 @@
           "tekst": "Interne og eksterne chatbots fejler på stribe. Medarbejdere dropper dem, fordi det underliggende materiale er for ringe, og kunderne efterlades i uvisse køer. Et konkret eksempel med bilproducenten **Mitsubishi** viste en fin stemme, men resulterede i et totalt svigt og intet opkald efter **6** måneder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "300",
@@ -3117,6 +3186,13 @@
           "label": "måneder uden svar fra kundeservice"
         }
       ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"
+        }
+      ],
       "detaljer": [
         "Forfatteren har talt med omkring **300** fagfolk og ledere i branchen.",
         "Kun **10** brugere rørte nogensinde et specifikt system før et nyt pivot.",
@@ -3131,7 +3207,9 @@
         "Ærlig kritik straffes med fyring eller tavshed.",
         "Chatbots efterlader kunder og ansatte i stikken.",
         "Køb af licenser fejres som falske sejre."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "NYC may require landlords and realtors to disclose the use of AI in listings",
@@ -3142,8 +3220,7 @@
       "kategori": "Politik & jura",
       "rubrik": "New York vil tvinge udlejere til at oplyse om AI",
       "resume_da": "New York City vil have boligudlejere og mæglere til åbent at fortælle, når de bruger AI til at pynte på boligannoncer.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Boligjagt uden snyd",
@@ -3158,18 +3235,17 @@
           "tekst": "De nye stramninger kommer efter store høringer, hvor **2.400** borgere har delt deres oplevelser med svigagtige udlejere. Ifølge **Cea Weaver** fra kontoret for lejerbeskyttelse handler det om at give magten tilbage til lejerne og sikre gennemsigtighed på boligmarkedet."
         }
       ],
-      "brief": "",
+      "noegletal": [
+        {
+          "tal": "2.400",
+          "label": "borgere deltog i høringerne"
+        }
+      ],
       "figurer": [
         {
           "url": "https://petapixel.com/assets/uploads/2026/07/International-Pet-Photographer-year-2026-finalists-300x157.jpg",
           "tekst": "A close-up of a fluffy chicken on the left, and on the right, a white cat jumping to block a small soccer ball in front of a goal on a sports field.",
           "kilde": "Hacker News: AI"
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "2.400",
-          "label": "borgere deltog i høringerne"
         }
       ],
       "detaljer": [
@@ -3184,7 +3260,9 @@
         "New York vil kræve åbenhed om AI i boligannoncer.",
         "UdlEJERE bruger ofte AI til at pynte på lejligheder.",
         "Tusindvis af borgere har klaget over vildledende billeder."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "Will AI fix prior authorization—or make it worse?",
@@ -3265,8 +3343,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Hvorfor ligner AI-logoer måsseklicheer?",
       "resume_da": "En sjov undersøgelse viser, at næsten alle store AI-virksomheder bruger runde, hvirvlende logoer med et hul i midten.",
-      "kat_ai": true,
-      "prio": 1,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Den runde dille",
@@ -3281,8 +3358,6 @@
           "tekst": "Når store direktører og rådgivere skal enes om et mærke, vinder det sikre valg altid. Da **OpenAI** fik succes med deres runde form, kopierede alle andre stilen for at fremstå troværdige, hvilket har skabt en bølge af fantasiløs ensartethed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2",
@@ -3297,6 +3372,7 @@
           "label": "FastCompany opdagede den hvirvlende trend"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Flere store AI-selskaber har næsten identiske runde logoer med et centralt hul.",
         "OpenAI beskriver selv deres blomster-logo som en balance mellem menneskevarme og teknologi.",
@@ -3311,7 +3387,9 @@
         "Designet opstår, fordi virksomheder ikke tør skille sig ud.",
         "Kun få undtagelser som DeepSeek og Midjourney bryder mønsteret.",
         "Ensrettet design rammer hele tech-branchen."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 1
     },
     {
       "titel": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
