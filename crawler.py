@@ -346,12 +346,17 @@ Svar KUN med ét JSON-objekt:
               regne ud selv - men ALDRIG clickbait, der oversælger,
  "resume":    1-2 korte sætninger (max 30 ord) til oversigten,
  "sektioner": 2-4 afsnit med hver sin KORTE, konkrete mini-overskrift (2-4 ord,
-              fx "Det er sket", "Pengene bag", "Kritikerne siger", "Hvad nu?").
+              fx "Det er sket", "Pengene bag", "Kritikerne siger", "Hvad nu?" -
+              ALDRIG **fremhævning** i selve overskriften).
               Hvert afsnit 40-70 ord letlæst hverdagsdansk:
               [{"overskrift": "...", "tekst": "..."}, ...],
- "noegletal": 2-5 af artiklens vigtigste tal som fliser:
-              [{"tal": "17 %", "label": "billigere end forgængeren"}, ...].
-              Tom liste hvis artiklen ingen tal har,
+ "noegletal": KUN til tal hvor TALLET I SIG SELV er nyheden: benchmark-scores,
+              priser, hastigheder, investeringsbeløb, brugertal i millioner.
+              Testen er: Ville en avis sætte tallet med kæmpe typer på
+              forsiden? [{"tal": "17 %", "label": "billigere end forgængeren"}].
+              ALDRIG trivia som spilletid, antal medvirkende, sidetal eller
+              udgivelsesår. Langt de fleste artikler skal have TOM liste her -
+              det er kun benchmark- og pengehistorier, der har ægte nøgletal,
  "detaljer":  4-7 punkter med de vigtigste fakta, tal og detaljer fra artiklen
               (hvert punkt én sætning, max 20 ord),
  "betydning": ét afsnit (50-80 ord): hvad kan det her betyde for almindelige
@@ -360,7 +365,13 @@ Svar KUN med ét JSON-objekt:
  "figurer":   Fra listen KANDIDAT-BILLEDER udvælger du 0-3, der viser
               benchmarks, grafer, tabeller eller andre data - IKKE almindelige
               pressefotos. Returnér dem med en kort dansk billedtekst:
-              [{"url": "...", "tekst": "..."}]. Tom liste hvis ingen er relevante.
+              [{"url": "...", "tekst": "..."}]. Tom liste hvis ingen er relevante,
+ "billedmotiv": Du er også art director: Beskriv i max 25 ord ÉN konkret scene
+              med 1-3 genkendelige genstande, som fortæller PRÆCIS denne
+              histories pointe - så en læser der ser billedet, kan gætte
+              historien. Ingen mennesker, ingen tekst i billedet. Vær specifik
+              ("en flyttekasse fuld af robotarme med prisskilt"), aldrig
+              generisk ("abstrakte former der symboliserer AI").
 }"""
 
 
@@ -477,6 +488,7 @@ def dybe_briefs(artikler: list[dict]) -> None:
             a["detaljer"] = [str(d).strip() for d in r.get("detaljer", [])][:7]
             a["betydning"] = str(r.get("betydning", "")).strip()
             a["pointer"] = [str(p).strip() for p in r.get("pointer", [])][:4]
+            a["billedmotiv"] = str(r.get("billedmotiv", "")).strip()
         print(f"   … {i}/{len(med_tekst)}")
 
 
@@ -610,7 +622,7 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
 
 # ----- AI-billeder til tophistorierne -----------------------------------------
 
-BILLED_STIL_VERSION = "v3"   # bump denne for at få ALLE billeder lavet om i ny stil
+BILLED_STIL_VERSION = "v5"   # bump denne for at få ALLE billeder lavet om i ny stil
 
 
 def _billed_navn(link: str) -> str:
@@ -643,6 +655,40 @@ def _gem_billede(raa: bytes, sti: Path) -> None:
         img.save(sti, "JPEG", quality=86)
     except ImportError:
         sti.write_bytes(raa)
+
+
+SYSTEM_MOTIV = """Du er art director på et dansk nyhedssite. For hver artikel
+beskriver du i max 25 ord ÉN konkret scene med 1-3 genkendelige genstande, der
+fortæller PRÆCIS artiklens pointe - så en læser kan gætte historien ud fra
+billedet alene. Ingen mennesker, ingen tekst i billedet. Vær specifik
+("en flyttekasse fuld af robotarme med prisskilt på"), aldrig generisk
+("abstrakte former der symboliserer AI").
+Svar KUN med et JSON-array i samme rækkefølge som input:
+[{"motiv": "..."}, ...]"""
+
+
+def udfyld_billedmotiver(artikler: list[dict]) -> None:
+    """Sørger for at ALLE billedkandidater har et konkret art director-motiv,
+    før der genereres billeder - også ældre artikler fra før motiv-feltet."""
+    top = [a for a in artikler[:BILLED_ANTAL]
+           if a.get("rubrik") and not a.get("billedmotiv")]
+    if not top or not API_KEY:
+        return
+    print(f"🎬 Finder billedmotiver til {len(top)} artikler …")
+    for i in range(0, len(top), 15):
+        batch = top[i:i + 15]
+        liste = [{"nr": j + 1, "rubrik": a["rubrik"],
+                  "resume": a.get("resume_da", ""),
+                  "detaljer": a.get("detaljer", [])[:4]}
+                 for j, a in enumerate(batch)]
+        try:
+            svar = parse_json_svar(kald_ai(
+                SYSTEM_MOTIV, json.dumps(liste, ensure_ascii=False), 2000))
+            if isinstance(svar, list) and len(svar) == len(batch):
+                for a, r in zip(batch, svar):
+                    a["billedmotiv"] = str(r.get("motiv", "")).strip()
+        except Exception as fejl:
+            print(f"  ⚠️  Motiv-kald fejlede: {type(fejl).__name__}")
 
 
 def _for_lille(sti: Path) -> bool:
@@ -680,23 +726,34 @@ def lav_billeder(artikler: list[dict]) -> None:
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
         farve = KATEGORI_FARVER.get(a.get("kategori"), "varm cremehvid (#f7f3ec)")
+        # Art director-motivet fra tekst-AI'en (har læst hele artiklen).
+        # Fallback: byg scenen ud fra rubrik + resumé.
+        motiv = a.get("billedmotiv") or (
+            f"én konkret scene med 1-3 genkendelige genstande, der fortæller "
+            f"historien '{a['rubrik']}' ({a.get('resume_da', '')[:120]})")
         prompt = (
-            "Eksklusiv redaktionel 3D-render i cinematisk stil, som marketing-art "
-            "fra et førende tech-brand: bløde, taktile 3D-former i matte, stoflige "
-            "materialer (mat keramik, papir, frostet glas, børstet metal), "
-            "fotorealistisk studielys med bløde skygger og let dybdeskarphed. "
-            f"Rolig scene med ensfarvet baggrund i {farve}, og én klar lilla "
-            "accentfarve (#5b4bf0) som gennemgående signatur plus højst to "
-            "dæmpede støttefarver. "
-            "ÉN enkel, klog visuel metafor for emnet - ét stort hovedmotiv, "
-            "elegant komposition med luft omkring, aldrig en collage. "
-            "Metaforen skal have et lille dramatisk twist eller en overraskelse, "
-            "der vækker nysgerrighed og gør, at man MÅ læse historien. "
-            "UNDGÅ ALTID: mennesker, ansigter, hænder, robotter, humanoider, "
-            "kredsløb, printplader, lysende hjerner, skærmbilleder, tekst, "
-            "bogstaver, tal og logoer. "
-            f"Emnet der skal illustreres: {a['rubrik']}. "
-            f"Kontekst: {a.get('resume_da', '')[:150]}")
+            f"SCENEN DER SKAL BYGGES: {motiv}. "
+            "Genstandene skal være genkendelige og fortælle netop denne historie - "
+            "ikke abstrakt pynt. "
+            "STIL: Eksklusiv redaktionel 3D-render i cinematisk stil, som "
+            "marketing-art fra et førende tech-brand. Materialerne følger "
+            "genstandene (metal ligner metal, papir ligner papir, glas ligner glas) "
+            "i en blød, mat, eksklusiv finish - aldrig billig plastik-glans. "
+            "FARVER: Genstandene bruger deres naturlige farver - rige, men let "
+            f"afdæmpede. Hele scenen er tonet af sit lys: baggrund og "
+            f"lysstemning i {farve}, så billedet hænger sammen med resten af "
+            "avisen. Den lilla signaturfarve (#5b4bf0) optræder som én lille, "
+            "elegant detalje et sted i scenen. Handler historien om ét bestemt "
+            "firma, må genstandenes farver gerne nikke diskret til firmaets "
+            "kendte farver (fx Googles fire farver, Metas blå, OpenAIs sorte/hvide) "
+            "- men ALDRIG deres logo, navnetræk eller bogstaver. "
+            "LYS OG KAMERA: Fotorealistisk studielys med bløde skygger, let "
+            "dybdeskarphed, komponeret som eksklusiv produktfotografering med "
+            "85 mm-objektiv i tre-kvart vinkel. Ét stort hovedmotiv, elegant "
+            "komposition med luft omkring - aldrig en collage. "
+            "UNDGÅ ALTID: mennesker, ansigter, hænder, tekst, bogstaver, tal og logoer. "
+            "Undgå klichéer som generiske robotter, kredsløb og lysende hjerner - "
+            "MEDMINDRE historien konkret handler om dem.")
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["IMAGE"],
@@ -759,6 +816,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
                 a["detaljer"] = gammel.get("detaljer", [])
                 a["betydning"] = gammel.get("betydning", "")
                 a["pointer"] = gammel.get("pointer", [])
+                a["billedmotiv"] = gammel.get("billedmotiv", "")
             if gammel.get("billede"):
                 a["billede"] = gammel["billede"]
             if gammel.get("kat_ai") and gammel.get("kategori"):
@@ -818,6 +876,44 @@ GENKOER_ALT = _GENKOER_RAW.lower() in ("ja", "1", "true")
 GENKOER_FILTER = "" if _GENKOER_RAW.lower() in ("", "ja", "1", "true", "nej", "no", "false")     else _GENKOER_RAW.lower()
 
 
+# ----- RSS-feed af vores egne artikler ----------------------------------------
+
+SITE_URL = "https://ainyheder.com"
+
+
+def lav_rss(artikler: list[dict]) -> None:
+    """Skriver feed.xml med de nyeste artikler, så man kan abonnere på sitet."""
+    from email.utils import format_datetime
+    from urllib.parse import quote
+    punkter = []
+    for a in artikler[:40]:
+        if not a.get("rubrik"):
+            continue
+        led = f"{SITE_URL}/#a=" + quote(a["link"], safe="")
+        try:
+            dato = format_datetime(datetime.fromisoformat(a["dato"]))
+        except (TypeError, ValueError):
+            dato = ""
+        punkter.append(
+            "<item>"
+            f"<title>{html.escape(a['rubrik'])}</title>"
+            f"<link>{html.escape(led)}</link>"
+            f"<guid isPermaLink=\"false\">{html.escape(a['link'])}</guid>"
+            + (f"<pubDate>{dato}</pubDate>" if dato else "")
+            + f"<category>{html.escape(a.get('kategori', ''))}</category>"
+            f"<description>{html.escape(a.get('resume_da') or a.get('resume', ''))}</description>"
+            "</item>")
+    xml = ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+           "<rss version=\"2.0\"><channel>"
+           "<title>AI-nyheder</title>"
+           f"<link>{SITE_URL}/</link>"
+           "<description>Dagens AI-nyheder på letlæst dansk</description>"
+           "<language>da</language>"
+           + "".join(punkter) + "</channel></rss>")
+    (ROOT / "feed.xml").write_text(xml, encoding="utf-8")
+    print(f"📡 Skrev feed.xml med {len(punkter)} artikler")
+
+
 # ----- Hovedprogram ----------------------------------------------------------
 
 def main() -> None:
@@ -865,6 +961,7 @@ def main() -> None:
                                         "detaljer": a.get("detaljer", []),
                                         "betydning": a.get("betydning", ""),
                                         "pointer": a.get("pointer", []),
+                                        "billedmotiv": a.get("billedmotiv", ""),
                                         "billede": a.get("billede", ""),
                                         "kategori": a.get("kategori", ""),
                                         "kat_ai": a.get("kat_ai", False),
@@ -888,6 +985,7 @@ def main() -> None:
             a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
+    udfyld_billedmotiver(unikke)
     lav_billeder(unikke)
 
     # "kunstig intelligens" -> "AI" i alle tekster (også gamle, cachede)
@@ -928,6 +1026,7 @@ def main() -> None:
     omskrevet = sum(1 for a in unikke if a.get("rubrik"))
     print(f"\n💾 Gemte {len(unikke)} artikler ({omskrevet} på dansk) i "
           f"{OUTPUT_FIL.relative_to(ROOT)}")
+    lav_rss(unikke)
 
 
 if __name__ == "__main__":

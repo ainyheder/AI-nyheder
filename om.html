@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om AI-nyheder · Sådan laver vi siden</title>
+<meta name="description" content="AI-nyheder gør udviklingen inden for AI letforståelig for alle. Læs hvordan siden bliver til, og hvordan vi arbejder med kilder og AI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff;
+  --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd;
+  --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.55; }
+a { color: inherit; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 90;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje);
+}
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 18px; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.tilbage {
+  margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort);
+  padding: 8px 16px; border-radius: 999px; transition: all .15s;
+}
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+
+main { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+h1 {
+  font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(30px, 5vw, 44px); line-height: 1.08; margin-bottom: 18px;
+}
+.manchet { font-size: 18px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 42px; }
+h2 {
+  font-family: var(--font-display); font-weight: 800; font-size: 21px;
+  letter-spacing: -.01em; margin: 38px 0 12px;
+}
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 14px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.kilde-raekke { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+.kilde-tag {
+  font-size: 12.5px; font-weight: 600; color: var(--blaek-svag);
+  border: 1px solid var(--linje); background: var(--bg-kort);
+  border-radius: 999px; padding: 5px 13px;
+}
+.aerlig {
+  background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 18px 0;
+  font-size: 15px; line-height: 1.65;
+}
+footer {
+  border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center;
+  font-size: 12px; color: var(--blaek-svag);
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="tilbage" href="./">← Til forsiden</a>
+  </div>
+</div>
+
+<main>
+  <h1>AI-nyheder, alle kan forstå</h1>
+  <p class="manchet">
+    Udviklingen inden for AI går hurtigere end nogen anden teknologi i vores levetid,
+    og den kommer til at påvirke dit arbejde, din økonomi og din hverdag.
+    AI-nyheder findes, fordi alle fortjener en fair chance for at følge med —
+    ikke kun dem, der taler flydende teknologisk.
+  </p>
+
+  <h2>Det gør vi</h2>
+  <p>
+    Vi følger de vigtigste internationale tech-medier og forskningskilder døgnet rundt
+    og genfortæller dagens væsentligste AI-historier på <strong>kort, letlæst dansk</strong> —
+    i vores egne ord, uden jargon og uden fyld. Hver artikel prioriteres efter,
+    hvor meget den betyder for almindelige mennesker: nye muligheder, penge,
+    og det man bør være forberedt på.
+  </p>
+  <p>
+    Når flere medier dækker samme historie, samler vi dem til én — så du slipper
+    for at læse den samme nyhed fem gange. Og under hver artikel finder du altid
+    <strong>"Hvad betyder det for dig?"</strong> — vores bud på, hvorfor historien
+    er værd at kende.
+  </p>
+
+  <h2>Vores kilder</h2>
+  <p>Historierne bygger på anerkendte internationale kilder, blandt andre:</p>
+  <div class="kilde-raekke">
+    <span class="kilde-tag">TechCrunch</span>
+    <span class="kilde-tag">The Verge</span>
+    <span class="kilde-tag">Ars Technica</span>
+    <span class="kilde-tag">MIT Technology Review</span>
+    <span class="kilde-tag">VentureBeat</span>
+    <span class="kilde-tag">OpenAI</span>
+    <span class="kilde-tag">Google DeepMind</span>
+    <span class="kilde-tag">arXiv</span>
+  </div>
+  <p>
+    Hver eneste artikel linker til sin originalkilde, så du altid kan gå
+    direkte til førstehåndsmaterialet.
+  </p>
+
+  <h2>Sådan bruger vi AI — helt åbent</h2>
+  <p>
+    AI-nyheder er selv bygget med den teknologi, vi skriver om. Vores system
+    indsamler nyhederne, og en sprogmodel genfortæller dem på letlæst dansk og
+    fremhæver de vigtigste tal og fakta. Illustrationerne er AI-genererede og
+    skabt unikt til hver historie. Redaktionelle valg — hvilke kilder vi følger,
+    hvordan der prioriteres, og hvordan der skrives — er truffet af mennesker.
+  </p>
+  <div class="aerlig">
+    <strong>Ærlighed frem for alt:</strong> AI kan begå fejl, og en genfortælling
+    kan aldrig erstatte originalen. Opdager du en fejl, så skriv til os — og tjek
+    altid kildelinket, hvis en historie er vigtig for dine beslutninger.
+  </div>
+
+  <h2>Kontakt</h2>
+  <p>
+    Ris, ros, fejl eller tips til historier: skriv til
+    <a href="mailto:AInyhed@gmail.com" style="color:var(--accent)">AInyhed@gmail.com</a>.
+  </p>
+</main>
+
+<footer>
+  Opdateres løbende hele døgnet · © 2026 AI-nyheder · ainyheder.com
+</footer>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

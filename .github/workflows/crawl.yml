@@ -59,7 +59,7 @@ jobs:
         run: |
           git config user.name "ai-news-bot"
           git config user.email "actions@github.com"
-          git add data
+          git add data feed.xml
           # Commit kun hvis der faktisk er ændringer
           git diff --staged --quiet || git commit -m "🤖 Automatisk opdatering af nyheder"
           git push

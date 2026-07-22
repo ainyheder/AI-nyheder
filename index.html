@@ -4,7 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI-nyheder · Dagens AI på letlæst dansk</title>
-<meta name="description" content="Dagens AI-nyheder omskrevet til kort, letlæst dansk – med kunst til hver historie.">
+<meta name="description" content="Dagens AI-nyheder omskrevet til kort, letlæst dansk — så alle kan følge med i udviklingen.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="AI-nyheder · Dagens AI på letlæst dansk">
+<meta property="og:description" content="Dagens AI-nyheder omskrevet til kort, letlæst dansk — så alle kan følge med i udviklingen.">
+<meta property="og:url" content="https://ainyheder.com/">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="AI-nyheder" href="https://ainyheder.com/feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -469,6 +480,29 @@ a { color: inherit; }
 }
 .bench-kredit a { color: var(--accent); }
 
+/* ---------- "Lige nu"-linjen (puls under topbaren) ---------- */
+.lige-nu {
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 28px; border-bottom: 1px solid var(--linje);
+  background: var(--bg-kort); font-size: 13.5px;
+}
+.lige-nu-label {
+  flex: none; font-size: 10.5px; font-weight: 800; letter-spacing: .14em;
+  text-transform: uppercase; color: #fff; background: var(--accent);
+  border-radius: 999px; padding: 3px 11px;
+}
+.lige-nu-tekst {
+  flex: 1; min-width: 0; color: var(--blaek); text-decoration: none; font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: opacity .35s;
+}
+.lige-nu-tekst.skift { opacity: 0; }
+.lige-nu-tekst:hover { color: var(--accent); }
+.nyt-chip {
+  flex: none; background: var(--accent-svag); color: var(--accent);
+  font-weight: 800; font-size: 12px; border-radius: 999px; padding: 4px 12px;
+}
+
 .tom { text-align: center; padding: 70px 20px; color: var(--blaek-svag); font-size: 15px; }
 .note {
   background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
@@ -476,10 +510,16 @@ a { color: inherit; }
   padding: 14px 20px; font-size: 13.5px; margin-bottom: 26px;
 }
 footer {
-  border-top: 1px solid var(--linje); padding: 26px; text-align: center;
+  border-top: 1px solid var(--linje); padding: 34px 26px 30px; text-align: center;
   font-size: 13px; color: var(--blaek-svag);
 }
 footer a { color: var(--accent); }
+.footer-mission {
+  font-size: 15px; line-height: 1.6; color: var(--blaek);
+  max-width: 62ch; margin: 0 auto 10px;
+}
+.footer-mission strong { font-family: var(--font-display); font-weight: 800; }
+.footer-lille { font-size: 12px; color: var(--blaek-svag); }
 </style>
 </head>
 <body>
@@ -508,6 +548,12 @@ footer a { color: var(--accent); }
   </div>
 </div>
 
+<div class="lige-nu" id="ligeNu" hidden>
+  <span class="lige-nu-label">Lige nu</span>
+  <a class="lige-nu-tekst" id="ligeNuTekst" href="#"></a>
+  <span class="nyt-chip" id="nytChip" hidden></span>
+</div>
+
 <main class="wrap">
   <div id="indhold"><div class="tom">Henter nyheder …</div></div>
 </main>
@@ -519,9 +565,12 @@ footer a { color: var(--accent); }
 </div>
 
 <footer>
-  Nyheder samles automatisk og omskrives til letlæst dansk med AI ·
-  Kunstværkerne er genereret unikt til hver historie ·
-  <a href="https://github.com/ainyheder/AI-nyheder">Koden på GitHub</a>
+  <div class="footer-mission">
+    <strong>AI-nyheder</strong> gør udviklingen inden for AI letforståelig for alle —
+    så du har en fair chance for at følge med i den teknologi, der forandrer vores hverdag.
+  </div>
+  <div class="footer-lille">Opdateres løbende hele døgnet · © 2026 AI-nyheder ·
+    <a href="om.html">Om os & sådan arbejder vi</a> · <a href="feed.xml">RSS</a></div>
 </footer>
 
 <script>
@@ -750,7 +799,7 @@ function aabnLaeser(a) {
   let briefHtml;
   if (a.sektioner && a.sektioner.length) {
     briefHtml = a.sektioner.map(s =>
-      `<div class="laeser-sektion">${esc(s.overskrift)}</div><p>${fed(s.tekst)}</p>`).join("");
+      `<div class="laeser-sektion">${fed(s.overskrift)}</div><p>${fed(s.tekst)}</p>`).join("");
     if (a.figurer && a.figurer.length)
       briefHtml += a.figurer.map(f =>
         `<figure class="laeser-figur"><img src="${esc(f.url)}" alt="${esc(f.tekst)}" loading="lazy"
@@ -1060,6 +1109,46 @@ indhold.addEventListener("mouseout", e => {
 });
 indhold.addEventListener("click", () => tip.classList.remove("synlig"), true);
 
+/* ---------- "Lige nu"-ticker og nyt-siden-sidst ---------- */
+
+function startLigeNu() {
+  const bar = document.getElementById("ligeNu");
+  const el = document.getElementById("ligeNuTekst");
+  const nyeste = artikler.filter(a => a.dato)
+    .sort((x, y) => new Date(y.dato) - new Date(x.dato)).slice(0, 6);
+  if (!nyeste.length) return;
+  bar.hidden = false;
+  let i = 0;
+  const vis = () => {
+    const a = nyeste[i % nyeste.length];
+    el.textContent = (a.rubrik || a.titel) + "  ·  " + relativTid(a.dato);
+    el.dataset.link = a.link;
+  };
+  vis();
+  setInterval(() => {
+    el.classList.add("skift");
+    setTimeout(() => { i++; vis(); el.classList.remove("skift"); }, 350);
+  }, 5000);
+  el.addEventListener("click", e => {
+    e.preventDefault();
+    const a = artikler.find(x => x.link === el.dataset.link);
+    if (a) aabnLaeser(a);
+  });
+}
+
+function visNytSidenSidst() {
+  try {
+    const chip = document.getElementById("nytChip");
+    const sidst = +localStorage.getItem("sidsteBesoeg") || 0;
+    if (sidst) {
+      const nye = artikler.filter(a => a.dato && new Date(a.dato).getTime() > sidst).length;
+      if (nye > 0) { chip.textContent = `+${nye} nye siden dit sidste besøg`; chip.hidden = false; }
+    }
+    // besøget tæller først som "set" efter ét minut, så en hurtig reload ikke nulstiller
+    setTimeout(() => { try { localStorage.setItem("sidsteBesoeg", String(Date.now())); } catch (e) {} }, 60000);
+  } catch (e) {}   // localStorage kan være blokeret - så springer vi bare over
+}
+
 /* ---------- Start ---------- */
 
 fetch("data/articles.json")
@@ -1073,6 +1162,7 @@ fetch("data/articles.json")
       if ((a.kilde || "").toLowerCase().includes("arxiv")) a.kategori = "Forskning";
     });
     tegnFiltre(); tegn();
+    startLigeNu(); visNytSidenSidst();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);
     if (m) {
@@ -1085,5 +1175,7 @@ fetch("data/articles.json")
       Kør <code>python3 crawler.py</code> og åbn siden via <code>python3 -m http.server</code>.</div>`;
   });
 </script>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
 </body>
 </html>
