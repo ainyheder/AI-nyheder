@@ -275,7 +275,7 @@ a { color: inherit; }
 .laeser-bag.aaben { display: flex; }
 .laeser {
   background: var(--bg-kort); border: 1px solid var(--linje);
-  border-radius: 22px; width: calc(100vw - 48px); max-width: none;
+  border-radius: 22px; width: calc(100vw - 48px); max-width: 1240px;
   box-shadow: 0 30px 80px rgba(0,0,0,.35); overflow: hidden;
   position: relative;
   animation: laeserInd .3s cubic-bezier(.2,.9,.3,1) both;
@@ -290,17 +290,19 @@ a { color: inherit; }
 }
 .laeser-luk:hover { transform: rotate(90deg); background: var(--accent-svag); }
 .laeser-krop { padding: 40px 56px 44px; min-width: 0; }
-.laeser-indhold { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap;
-  justify-content: space-between; }
-.laeser-indhold .laeser-brief { flex: 1 1 520px; max-width: 82ch; }
-.laeser-indhold .laeser-side { flex: 1 1 340px; min-width: 240px; max-width: 460px;
-  display: flex; flex-direction: column; gap: 16px; }
+.laeser-indhold { display: grid; grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 8px 48px; align-items: start; }
+.laeser-indhold .laeser-brief { min-width: 0; }
+.laeser-indhold .laeser-side { display: flex; flex-direction: column; gap: 16px; }
+@media (max-width: 980px) {
+  .laeser-indhold { grid-template-columns: 1fr; }
+}
 .laeser-krop h1 {
   font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(24px, 4vw, 32px); line-height: 1.12; letter-spacing: -.02em;
-  margin: 10px 0 14px;
+  font-size: clamp(26px, 4vw, 38px); line-height: 1.1; letter-spacing: -.02em;
+  margin: 10px 0 22px; max-width: 26ch;
 }
-.laeser-brief { font-size: 16px; line-height: 1.75; color: var(--blaek); }
+.laeser-brief { font-size: 16.5px; line-height: 1.75; color: var(--blaek); }
 .laeser-brief p { margin-bottom: 14px; }
 .laeser-brief strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
 .laeser-brief .laeser-sektion:first-child { margin-top: 0; }
@@ -311,9 +313,10 @@ a { color: inherit; }
 }
 .laeser-side .stat-raekke {
   margin: 0; display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px;
+  grid-template-columns: repeat(2, 1fr); gap: 10px;
 }
 .laeser-side .stat-flise { min-width: 0; }
+.laeser-side .stat-flise:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .laeser-side .laeser-betydning { margin-top: 0; }
 .laeser-side .laeser-detaljer { margin: 0; }
 .laeser-side .laeser-detaljer li { border-bottom-color: rgba(91, 75, 240, .16); }
