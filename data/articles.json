@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-07-22T10:53:16.345668+00:00",
-  "antal": 114,
+  "opdateret": "2026-07-22T10:58:39.957662+00:00",
+  "antal": 133,
   "artikler": [
     {
       "titel": "Utility companies are promising to spare us from AI’s energy bill",
@@ -58,6 +58,19 @@
       "billede": "data/img/190df8c6e736b036.jpg",
       "kat_ai": true,
       "prio": 7
+    },
+    {
+      "titel": "Glow emerges from stealth at $1.2B valuation to challenge endpoint security in the AI era",
+      "link": "https://techcrunch.com/2026/07/22/glow-emerges-from-stealth-at-1-2b-valuation-to-challenge-endpoint-security-in-the-ai-era/",
+      "resume": "Glow is targeting a new class of endpoint risks created by the rapid adoption of AI agents and developer tools inside enterprises.",
+      "dato": "2026-07-22T10:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "rubrik": "Ny gigantisk it-sikkerhedsvirksomhed beskytter mod AI",
+      "resume_da": "Et nyt firma er 8 milliarder kroner værd fra start. De vil beskytte virksomheder mod de sikkerhedsrisici, som følger med brugen af AI.",
+      "kat_ai": true,
+      "prio": 9,
+      "billede": "data/img/e75398f513acc1c9.jpg"
     },
     {
       "titel": "Synthesia’s AI training platform is moving beyond videos into live coaching",
@@ -378,6 +391,517 @@
       "billede": "data/img/f7c00ace1af4e175.jpg",
       "kat_ai": true,
       "prio": 3
+    },
+    {
+      "titel": "Phionyx: A Deterministic AI Runtime Architecture with Structured State Management and Pre-Response Governance",
+      "link": "https://arxiv.org/abs/2607.18246",
+      "resume": "We present Phionyx, a deterministic AI runtime architecture derived from the broader Echoism interaction framework that introduces a governance-first approach to AI engineering: treating large language model (LLM) outputs as noisy sensor measurements rather than direct decisions. Unlike probabilistic agents, Phionyx enforces deterministic state evolution via a structured state vector governed by…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny metode gør AI mere sikker og stabil",
+      "resume_da": "Forskere har opfundet en teknik, der behandler svar fra AI som usikre målinger. Det gør teknologien langt mere pålidelig i hverdagen.",
+      "kat_ai": true,
+      "prio": 3,
+      "billede": "data/img/db75000802b40a94.jpg"
+    },
+    {
+      "titel": "Integro-differential equations in angular stabilization of drone motion by distributed feedback control",
+      "link": "https://arxiv.org/abs/2607.18251",
+      "resume": "In this paper, we propose angular stabilization of drone motion using distributed feedback control in the form of an integral operator. It should be stressed that the memory of this integral operator could be unbounded. It is intuitively clear that large length of the observation time open new possibilities to construct better control based on previous states of the control object. Unbounded…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny opfindelse skal holde droner helt stabile",
+      "resume_da": "Forskere har fundet en bedre måde at styre droner på, så de kan holde balancen i luften selv under svære vejrforhold.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/a9a56e4415fab031.jpg"
+    },
+    {
+      "titel": "MILP-Evo: Closed-Loop Fully Automatic Design of MILP Solvers",
+      "link": "https://arxiv.org/abs/2607.18252",
+      "resume": "Machine learning methods have shown that data-driven policies can accelerate mixed-integer linear programming (MILP) solvers, but many such approaches remain difficult to inspect, adapt, and deploy because the learned policy is represented as an external predictor or other opaque model. By contrast, explicit solver logic is easier to understand and integrate, but is usually hand-designed rather…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Computere skal selv designe bedre svære regneprogrammer",
+      "resume_da": "Forskere har skabt en metode, hvor computere automatisk kan forbedre de programmer, der løser svære matematiske gåder.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/7b261ddbe95df449.jpg"
+    },
+    {
+      "titel": "Beyond Accuracy and Cost: Latency-Aware LLM Query Routing for Dynamic Workloads",
+      "link": "https://arxiv.org/abs/2607.18253",
+      "resume": "Modern language query routers improve inference efficiency by assigning each query to a model that balances response quality and monetary cost. However, current query routers are largely latency-agnostic and do not consider the generation latency experienced by queries at model instances. In practice, latency is often controlled by load-balancing policies such as round-robin or…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny teknik sender dine spørgsmål til den hurtigste AI",
+      "resume_da": "Et nyt system vælger altid den hurtigste computerhjerne til dit spørgsmål, så du slipper for irriterende ventetid.",
+      "kat_ai": true,
+      "prio": 3,
+      "billede": "data/img/032ad6f51811d049.jpg"
+    },
+    {
+      "titel": "Cross-Dialect Generalization Without Retraining: Benchmarks and Evaluation of Schema-Derived Constrained Decoding for MLIR",
+      "link": "https://arxiv.org/abs/2607.18254",
+      "resume": "Multi-Level Intermediate Representation (MLIR) underlies modern ML compiler infrastructure (TensorFlow, JAX/StableHLO, PyTorch Inductor, IREE), yet appears only in trace amounts in code-LM pretraining corpora. MLIR is also extensible by design: new dialects ship per application domain, so a fine-tuned model per dialect does not scale. We ask whether inference-time priors derived mechanically from…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny teknik gør AI bedre til programmering",
+      "resume_da": "Forskere har udviklet en metode, der lader AI forstå forskellige kodesprog uden at blive genstartet eller opdateret fra bunden.",
+      "kat_ai": true,
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Smartere sprogforståelse",
+          "tekst": "Når man beder en AI om at hjælpe med at skrive computerkode, opstår der ofte problemer, hvis koden bruger en ny eller anderledes variant af et sprog. Forskere har fundet ud af, at man ved hjælp af faste skemaer kan styre, hvordan AI genererer sin tekst, helt uden at hele systemet skal trænes om fra bunden af."
+        },
+        {
+          "overskrift": "Slip for genstart",
+          "tekst": "Det plejer at kræve enorme mængder regnekraft og tid at tilpasse AI til nye dialekter inden for programmering. Den nye fremgangsmåde fungerer i stedet som en striks opskrift, der tvinger systemet til at holde sig inden for de rigtige rammer, mens det arbejder, hvilket sparer både tid og ressourcer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskerne har undersøgt, hvordan AI kan forstå nye kodedialekter.",
+        "Metoden kaldes schema-derived constrained decoding.",
+        "Teknikken fjerner behovet for at genoplære modellerne helt forfra.",
+        "Systemet bruger faste regler til at styre tekstgenereringen direkte.",
+        "Forskningen fokuserer specifikt på komplekse programmeringssprog og rammeværker."
+      ],
+      "betydning": "For almindelige mennesker betyder denne type grundforskning, at fremtidens digitale assistenter bliver mere fleksible og pålidelige, når de skal hjælpe med tekniske opgaver. Selvom metoden her er rettet mod specialiserede systemer, er målet at skabe AI-værktøjer, der hurtigere forstår det sprog, du taler til dem i, uden at kræve endeløse opdateringer.",
+      "pointer": [
+        "Ny metode styrer AI gennem faste regler.",
+        "Undgår dyre og tidkrævende genstartsprocesser.",
+        "Gør systemer bedre til at forstå forskellige sprogvarianter."
+      ],
+      "billede": "data/img/2d4ae5ac9464530d.jpg"
+    },
+    {
+      "titel": "Semantic Cooperative Games for Contribution Attribution in LLM-Based Multi-Agent Systems",
+      "link": "https://arxiv.org/abs/2607.18255",
+      "resume": "Contribution attribution has become a central problem in LLM-based multi-agent systems, where final outputs are produced through multiple agents, message exchanges, and ordered workflow dependencies. Existing attribution methods often rely on counterfactual valuation, such as removing agents or comparing score changes across altered agent subsets. In language-mediated workflows, these methods…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Hvem gjorde hvad? AI finder æren for fælles arbejde",
+      "resume_da": "Et nyt system kan regne ud, præcist hvilken del af et samarbejde de forskellige computerhjerner har bidraget med.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/9e4aa06f50558e6c.jpg"
+    },
+    {
+      "titel": "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language",
+      "link": "https://arxiv.org/abs/2607.18256",
+      "resume": "Optimization modeling is the process of translating real-world decision problems, often described in natural language, into formal mathematical formulations and executable solver code. While recent advances in large language models have shown promise in automating this process, most existing approaches remain one-shot: a model produces a formulation once, without executing it, conditioning on…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny AI gør det lettere at løse svære problemer",
+      "resume_da": "Forskere har udviklet en ny metode, der gør det muligt for AI at omsætte almindelig menneskesprog til avancerede matematiske optimeringsmodeller.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Fra sprog til matematik",
+          "tekst": "Når almindelige mennesker forsøger at beskrive komplekse problemer, foregår det på et helt almindeligt hverdagssprog. Men computere og matematiske systemer kræver stramme, præcise formler for at kunne regne løsninger ud. Det skaber ofte en stor kløft mellem den måde, vi tænker på, og den måde maskinerne forstår verden på. Forskere har nu fundet en smart genvej."
+        },
+        {
+          "overskrift": "Smartere dialog",
+          "tekst": "Den nye metode hedder **PEARL**, og den fungerer ved, at teknologien arbejder tæt sammen med særlige matematiske beregningsværktøjer i en løbende proces. I stedet for bare at gætte svaret på én gang, taler AI-modellen frem og tilbage med systemet, retter sine egne fejl undervejs og prøver sig frem, indtil den rammer rigtigt."
+        },
+        {
+          "overskrift": "Hvad det kan bruges til",
+          "tekst": "Selvom opdagelsen umiddelbart lyder meget akademisk, åbner den døre for fremtiden. Snart kan systemer af denne type hjælpe virksomheder og helt almindelige borgere med at planlægge alt fra indkøbsruter og logistik til svære hverdagsbeslutninger, uden at man behøver at være ekspert i hverken programmering eller avanceret matematik."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Metoden hedder **PEARL** og kobler sprogmodeller sammen med eksterne beregningsværktøjer.",
+        "Systemet arbejder i en løbende proces for at ramme den korrekte matematiske formel.",
+        "Målet er at bygge bro mellem menneskers hverdagssprog og maskiners behov for præcision.",
+        "Teknologien kan gøre det langt nemmere at løse komplekse planlægningsopgaver."
+      ],
+      "betydning": "På sigt kan denne type forskning betyde, at avancerede computerberegninger bliver tilgængelige for alle. Hvor man før skulle hyre dyre specialister til at sætte komplekse regnestykker op, kan du måske i fremtiden blot fortælle systemet hvad du ønsker at opnå på helt almindeligt dansk, hvorefter teknologien klarer resten bag kulisserne.",
+      "pointer": [
+        "Ny teknologi omsætter almindeligt sprog til avanceret matematik.",
+        "Systemet arbejder i en løbende dialog med beregningsværktøjer.",
+        "Forskningen gør det lettere at udnytte computere til svære opgaver."
+      ],
+      "billede": "data/img/d37763684048c0db.jpg"
+    },
+    {
+      "titel": "S2T-RLHF: Hierarchical Credit Assignment for Stable Preference-Based RLHF",
+      "link": "https://arxiv.org/abs/2607.18258",
+      "resume": "Reinforcement learning from human feedback (RLHF) with preference-based reward models often exhibits unstable training dynamics. A key contributing factor is that standard RLHF relies on a single sequence-level scalar reward, which is propagated to token-level policy updates and leaves credit assignment within a response inherently ambiguous. Recent work has attempted to address this issue by…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Gør AI-oplæring mere stabil og menneskelig",
+      "resume_da": "Forskere har fundet en bedre måde at lære AI at kende forskel på gode og dårlige svar, hvilket gør den mere stabil.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/89b9be1bb094e4ab.jpg"
+    },
+    {
+      "titel": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
+      "link": "https://arxiv.org/abs/2607.18259",
+      "resume": "Steering vectors (SVs), an inference-time intervention technique for large language models (LLMs), guide the generation process by adding a concept-specific direction vector to intermediate activations during inference. However, existing SV methods frequently yield representation-incoherent behaviors that undermine interpretability and fine-grained control, largely because prior work has focused…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Giv AI en moralsk kompasnål undervejs",
+      "resume_da": "En ny teknik lader os styre computerens svar i den rigtige retning, mens den sidder og tænker over tingene.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/75abf27a528c4501.jpg"
+    },
+    {
+      "titel": "FindStatBench: Evaluating Large Language Models on Combinatorial Code Synthesis",
+      "link": "https://arxiv.org/abs/2607.18260",
+      "resume": "We introduce FindStatBench, an execution benchmark for evaluating large language models on combinatorial code synthesis. Built from FindStat, it contains 2,329 tasks across 24 collections and 5.52M hidden instances, covering statistic synthesis, which maps objects to integers, and map synthesis, which maps objects to objects. Each task gives a mathematical description and at most five public…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny test afslører begrænsninger i tænkende computerprogrammer",
+      "resume_da": "Forskere har lavet en ny sværhedsgrad for at teste, hvor gode computerprogrammer er til at løse svære matematiske opgaver.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/591b6d2b7a3cb163.jpg"
+    },
+    {
+      "titel": "When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents",
+      "link": "https://arxiv.org/abs/2607.18261",
+      "resume": "LLM agents are increasingly used as transaction compilers: a user states an intent in natural language, and the model emits a structured object that an API can execute. JSON Schema and provider-level structured-output modes are useful because they remove a large class of parse failures, but they do not by themselves decide whether the object is a safe, faithful transaction. We introduce…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Når AI fejler på trods af faste rammer",
+      "resume_da": "Ny forskning viser, at selv når man tvinger AI til at følge faste formater, kan den stadig misforstå meningen i opgaverne.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det stive format",
+          "tekst": "Når virksomheder lader AI sortere og ordne data, bruger de ofte strenge regler for, hvordan svarene skal opbygges. Det sikrer, at computeren svarer i et fast skabelonformat, som andre systemer let kan læse. Men selvom skabelonen er overholdt til punkt og prikke, betyder det ikke altid, at selve rækkefølgen eller indholdet giver mening i den virkelige verden."
+        },
+        {
+          "overskrift": "Skjulte misforståelser",
+          "tekst": "Forskningen peger på, at AI kan finde på at bytte rundt på vigtige elementer eller prioritere helt forkert, selvom det tekniske svar ser fuldstændig rigtigt ud på overfladen. Det skyldes, at sprogmodellerne kan have svært ved at fastholde den dybere mening og logik, når de skal sortere komplekse emner i en bestemt rækkefølge."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskere har undersøgt, hvor pålidelig AI er, når den arbejder under faste skema-krav.",
+        "Selvom AI-systemer følger formelle regler for opsætning, svigter de ofte på meningsfuld sortering.",
+        "Problemet opstår, når sprogmodeller skal rækkefølgebestemme elementer ud fra logiske kriterier.",
+        "Tekniske rammer kan ikke alene garantere, at resultatet er semantisk korrekt.",
+        "Opdagelsen kaster lys over de begrænsninger, der stadig findes i moderne sprogmodeller."
+      ],
+      "betydning": "For helt almindelige mennesker betyder denne opdagelse, at man ikke blindt kan stole på digitale systemer, blot fordi de leverer data i et pænt og standardiseret format. Når virksomheder og offentlige myndigheder fremover automatiserer sagsbehandling, indkøb eller kundeservice med AI, vil der stadig være risiko for skjulte fejl i logikken. Det understreger behovet for, at mennesker bevarer kontrollen og tjekker efter, når vigtige beslutninger overlades til teknologien.",
+      "pointer": [
+        "Fastlåste formater fjerner ikke alle fejl.",
+        "AI kan overholde regler men fejle logisk.",
+        "Menneskelig kontrol er stadig nødvendig."
+      ],
+      "billede": "data/img/d9d1b015a79a6527.jpg"
+    },
+    {
+      "titel": "ProbSPARQL: Querying Knowledge Graphs with Multi-dimensional, Uncertain Numeric Data",
+      "link": "https://arxiv.org/abs/2607.18262",
+      "resume": "The SFB 1574 Circular Factory is building a shared knowledge graph infrastructure for integrating data about returned products. A central challenge is that circular-factory data include numeric measurements that (i) originate from sensors or are derived from sensor-based measurements, (ii) are frequently multi-dimensional, and (iii) are inherently uncertain, while downstream triage, validation,…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny metode gør det lettere at spørge videnbanker",
+      "resume_da": "Forskere har udviklet en ny måde at stille spørgsmål til store databaser på, når oplysningerne er usikre.",
+      "kat_ai": true,
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Nye muligheder med AI",
+          "tekst": "Moderne systemer bygger på enorme mængder information, som er koblet sammen i store netværk. Når vi forsøger at hente præcise svar ud af disse systemer, opstår der ofte problemer, hvis tallene ikke er helt sikre eller passer ind i rigide kasser. Forskerne har arbejdet på at løse denne udfordring for at gøre søgninger mere smidige."
+        },
+        {
+          "overskrift": "Styr på usikre tal",
+          "tekst": "Den nye tilgang gør det muligt for AI at håndtere information, der svinger eller er forbundet med tvivl. I stedet for blot at svare ja eller nej kan systemet nu regne på sandsynligheder og tage højde for, at virkeligheden sjældent er sort-hvid. Det giver langt mere nuancerede resultater ved komplekse forespørgsler."
+        },
+        {
+          "overskrift": "Hvad det betyder",
+          "tekst": "Selvom forskningen er teknisk funderet, baner den vejen for, at digitale assistenter og søgemaskiner fremover forstår vores virkelighed bedre. Når data ikke er helt præcise, kan systemerne fremover tænke mere som mennesker og vurdere, hvad der er mest sandsynligt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskere har udviklet en ny metode til at søge i store videnbanker.",
+        "Metoden fokuserer på usikre og flersidede numeriske data.",
+        "Systemet kan håndtere information, der svinger eller er upræcis.",
+        "Teknologien forbedrer den måde, AI fortolker komplekse forespørgsler på."
+      ],
+      "betydning": "For almindelige mennesker kan denne type forskning på sigt føre til langt klogere digitale værktøjer. Når du søger efter svar på nettet eller bruger avancerede AI-programmer, vil de blive bedre til at håndtere situationer, hvor oplysningerne ikke er helt sikre eller entydige. Det betyder færre fejlsvar og en mere naturlig oplevelse i hverdagen.",
+      "pointer": [
+        "Ny metode til at søge i komplekse data.",
+        "Håndterer usikre og flersidede tal.",
+        "Giver mere nuancerede og præcise svar."
+      ],
+      "billede": "data/img/5ca3155045bc767d.jpg"
+    },
+    {
+      "titel": "Position: AI/ML Deepfake Research is Misaligned with AI-Generated Non-Consensual Intimate Imagery (AIG-NCII)",
+      "link": "https://arxiv.org/abs/2607.18263",
+      "resume": "AI-generated non-consensual intimate imagery (AIG-NCII) is not adequately addressed in AI/ML literature regarding AI-generated media, commonly referred to as \"deepfakes\". While research on deepfakes currently focuses on its epistemic harms -- or harms relating to truth and authenticity -- this is misaligned with the dominant reality of generative AI abuse involving sexualized imagery. We conduct…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Forskning i falske billeder rammer for ved siden af",
+      "resume_da": "Ny forskning viser, at eksperter fokuserer på forkerte problemer, når de forsøger at bekæmpe krænkende digitale billeder skabt af AI.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Skæv prioritering",
+          "tekst": "Moderne teknologi gør det desværre nemt at misbruge billeder af mennesker. En ny videnskabelig analyse peger på et stort problem i den måde, forskere hidtil har grebet sagen an på. Eksperterne kigger simpelthen på de forkerte ting, når de forsøger at løse udfordringen med uønsket og intimt materiale lavet af AI."
+        },
+        {
+          "overskrift": "Manglende fokus",
+          "tekst": "Ifølge undersøgelsen afspejler den nuværende indsats dårligt nok virkelighedens udfordringer. Mens almindelige mennesker risikerer at få krænket deres privatliv groft, retter forskningen sjældent opmærksomheden mod de reelle ofre. Det betyder, at de digitale beskyttelsessystemer, der bliver udviklet, ikke rammer plet der, hvor behovet er størst."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskere har analyseret, hvordan fagfolk arbejder med falske og krænkende billeder.",
+        "Undersøgelsen viser en tydelig skævhed i det nuværende forskningsfokus.",
+        "Teknologiens hurtige udvikling gør det lettere at lave misbruget.",
+        "Der mangler fokus på at beskytte helt almindelige mennesker mod krænkelser."
+      ],
+      "betydning": "For almindelige mennesker handler det her om tryghed på nettet. Hvis forskere og udviklere ikke forstår at beskytte os mod misbrug af vores personlige billeder, står vi svagere over for den nye teknologi. Det er afgørende, at fremtidens sikkerhedsløsninger rent faktisk tager udgangspunkt i de virkelige problemer, som rammer helt almindelige borgere.",
+      "pointer": [
+        "Eksisterende forskning rammer for ved siden af.",
+        "Privatlivet er truet af dårligt målrettede løsninger.",
+        "Forskere skal ændre fokus for at hjælpe ofre."
+      ],
+      "billede": "data/img/8e6d0f9bf2575dbe.jpg"
+    },
+    {
+      "titel": "MUX: Continuous Reasoning via Multiplexed Tokens",
+      "link": "https://arxiv.org/abs/2607.18264",
+      "resume": "Language models solve complex problems by articulating intermediate reasoning steps in natural language. While effective, this process is computationally bottlenecked: each reasoning step conveys only a single subword, and many are spent expressing a thought instead of carrying out computation. We propose MUX, a simple method for high-bandwidth and compact reasoning based on distillation of…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny metode gør AI bedre til at tænke",
+      "resume_da": "Forskere har udviklet en ny teknik kaldet MUX, der hjælper AI med at ræsonnere bedre og mere sammenhængende over længere forløb.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det nye gennembrud",
+          "tekst": "Moderne AI kæmper ofte med at holde den røde tråd, når den skal løse svære opgaver, der kræver dyb og vedvarende tænkning. Nu har en forskergruppe præsenteret en snedig løsning kaldet MUX. Metoden ændrer den måde, systemerne håndterer information på, så de kan arbejde mere flydende og uafbrudt."
+        },
+        {
+          "overskrift": "Sådan fungerer det",
+          "tekst": "Teknikken bag bygger på at samle og flette de små tankeenheder, som AI’en bruger til at opbygge sine svar. Ved at lade systemet tænke kontinuerligt i stedet for at tage skarpe, adskilte pauser, undgår man typiske fejl. Det giver en langt mere stabil proces, hvor logikken hænger bedre sammen fra start til slut."
+        },
+        {
+          "overskrift": "Perspektiver for fremtiden",
+          "tekst": "Selvom opdagelsen i første omgang er foretaget i et forskningslaboratorium, peger pilen fremad mod smartere digitale assistenter. Når AI bliver bedre til at ræsonnere, kan vi i fremtiden forvente endnu skarpere hjælp til komplekse problemer inden for alt fra kodning til rådgivning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskerne bag den nye metode præsenterede teknikken under navnet MUX.",
+        "Metoden fokuserer på at forbedre AI'ens evne til kontinuerligt ræsonnement.",
+        "Teknikken bruger såkaldte multiplexed tokens til at binde tankerne bedre sammen.",
+        "Målet er at løse problemet med, at AI mister overblikket under svære opgaver."
+      ],
+      "betydning": "For almindelige mennesker betyder denne type grundforskning, at vores daglige digitale værktøjer gradvist bliver mere pålidelige. Når AI bedre kan tænke sig om og løse kringlede problemer uden at snuble i logikken, bliver det lettere at få præcise og nyttige svar på svære spørgsmål i hverdagen.",
+      "pointer": [
+        "Ny MUX-metode forbedrer AI's tænkning.",
+        "Teknikken sikrer mere sammenhængende svar.",
+        "Forskningen baner vejen for klogere systemer."
+      ],
+      "billede": "data/img/1c3eec67e4ab7fd5.jpg"
+    },
+    {
+      "titel": "State Compression in Two-Agent LLM Relays: A Closed-World Study of Constraint Preservation",
+      "link": "https://arxiv.org/abs/2607.18265",
+      "resume": "Long-running Large Language Model (LLM)-based agents often accumulate large intermediate traces containing audits, eliminations, and numeric calculations. In practice, this state is compressed before handing it to a downstream decision step, creating an information bottleneck in which small omissions can break strict numeric or categorical constraints. This paper evaluates hand-off compression in…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Når computere glemmer vigtige detaljer undervejs",
+      "resume_da": "Når computere skal løse lange opgaver, glemmer de ofte små vigtige detaljer, hvilket skaber fejl.",
+      "kat_ai": true,
+      "prio": 2,
+      "billede": "data/img/b9d8d8610628e4bc.jpg"
+    },
+    {
+      "titel": "Structured Synthetic Reasoning Data for Arithmetic Fine-Tuning of Small Language Models",
+      "link": "https://arxiv.org/abs/2607.18266",
+      "resume": "Small language models are attractive for local deployment, but they often struggle with multi-step arithmetic reasoning. We study whether structured synthetic reasoning data can improve this behaviour under consumer-hardware constraints. Starting from GSM8K, we generated a 21,250-example corpus of grade-school arithmetic word-problem variants using GPT-5-mini, combining natural-language solution…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny metode gør mindre AI-modeller skarpe til regning",
+      "resume_da": "Forskere har udviklet en ny måde at træne mindre AI-modeller på, så de bliver markant bedre til at løse svære matematiske regnestykker.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Smartere træning",
+          "tekst": "Det har længe været en udfordring at få mindre sprogmodeller til at forstå grundlæggende matematik. Ofte fejler de i helt simple regneopgaver, fordi de mangler de rette arbejdsmetoder. Nu har en forskergruppe fundet en løsning ved at fodre AI med særligt tilrettelagte, syntetiske regneeksempler, som viser trin for trin, hvordan man når frem til det rigtige svar."
+        },
+        {
+          "overskrift": "Hvorfor det virker",
+          "tekst": "Hemmeligheden bag den nye fremgangsmåde er at opdele komplekse talopgaver i mindre, logiske bidder. Når den digitale hjerne bliver trænet på denne strukturerede måde, udvikler den en langt bedre forståelse for tallenes verden. Det gør den i stand til at regne fejlfrit på områder, hvor den tidligere ville snuble over sine egne digitale ben."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Metoden fokuserer på at forbedre mindre sprogmodeller.",
+        "Forskerne bruger syntetiske data til at træne AI'en.",
+        "Træningen fokuserer specifikt på aritmetisk ræsonnement.",
+        "Målet er at få små modeller til at præstere som de store."
+      ],
+      "betydning": "På sigt kan denne type forskning gøre det muligt at køre dygtige regneassistenter direkte på din egen telefon eller computer, uden at man behøver oprette forbindelse til store, dyre datacentre. Det kan give almindelige mennesker hurtigere og mere private AI-værktøjer til hverdagens regneopgaver, uanset om det gælder budgettet eller lektierne.",
+      "pointer": [
+        "Mindre AI-modeller får svære ved matematik.",
+        "Ny træningsmetode bruger strukturerede tænkeopgaver.",
+        "Resultatet er færre regnefejl i små modeller."
+      ],
+      "billede": "data/img/0ecfe0148c239815.jpg"
+    },
+    {
+      "titel": "Fence: Specialized SLM Guardrails for LLM Applications",
+      "link": "https://arxiv.org/abs/2607.18268",
+      "resume": "Real-world applications that use closed-source large language models (LLMs) need advanced safety measures that go beyond the basic content filters. Content moderation filters such as toxicity and bias have relatively standard definitions where as application specific guardrails like hallucination, topic drift and behaviour deviation are more difficult to model and can vary by use case.…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny vagthund skal beskytte store sprogmodeller",
+      "resume_da": "Forskere har udviklet en ny type AI-sikkerhedssystem kaldet Fence, der bruger mindre sprogmodeller som effektive vagthunde.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Smartere sikkerhed",
+          "tekst": "Når vi bruger avancerede AI-systemer, er det vigtigt at holde dem på sporet og undgå upassende svar. En ny metode ved navn **Fence** forsøger at løse dette problem ved at koble mindre og mere overskuelige sprogmodeller på som faste kontrollører. Det gør det muligt at opdage problemer i tide, før de når ud til brugeren."
+        },
+        {
+          "overskrift": "Mindre modeller",
+          "tekst": "De store AI-modeller kræver enorm en masse regnekraft, men denne nye tilgang udnytter mindre systemer, som er hurtigere og billigere i drift. Ved at lade disse specialiserede vagthunde overvåge de større systemer, kan virksomheder opretholde en høj sikkerhed uden at sprænge budgettet eller sænke hastigheden mærkbart."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Systemet kaldes Fence og fungerer som et sikkerhedsnet for store sprogmodeller.",
+        "Metoden benytter mindre sprogmodeller som specialiserede vagthunde.",
+        "Formålet er at bremse uønskede eller skadelige svar fra AI-applikationer.",
+        "Teknikken forsøger at gøre overvågning af AI billigere og hurtigere."
+      ],
+      "betydning": "For almindelige mennesker betyder sikrere AI-systemer, at vi trygt kan bruge de nye teknologier i hverdagen uden frygt for stødende eller farlige svar. Når virksomheder kan overvåge deres programmer billigere og mere effektivt, kan det i sidste ende give os bedre, mere pålidelige digitale tjenester i vores hverdag.",
+      "pointer": [
+        "Fence er et nyt sikkerhedssystem til AI.",
+        "Mindre sprogmodeller bruges som vagthunde.",
+        "Metoden øger sikkerheden i store sprogmodeller."
+      ],
+      "billede": "data/img/43bf4ae680927969.jpg"
+    },
+    {
+      "titel": "Wisdom of LLM Crowds: Aggregation and Contamination in Language Model Ensembles",
+      "link": "https://arxiv.org/abs/2607.18269",
+      "resume": "The wisdom of crowds -- the finding that aggregating judgments across individuals often outperforms the best individual -- has been extensively studied with human forecasters. Whether the same phenomenon emerges when the ``crowd'' consists of large language models (LLMs) is an open question with both theoretical and practical implications. We elicited probability estimates from 15 LLMs on 254…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Kan flere AI-modeller tænke bedre sammen?",
+      "resume_da": "Ny forskning undersøger, om man kan opnå bedre resultater ved at lade en hel flok af forskellige AI-modeller samarbejde om at løse opgaver.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Flokkens visdom",
+          "tekst": "Når almindelige mennesker skal træffe svære beslutninger, er det ofte en god idé at spørge en masse forskellige eksperter og lægge deres svar sammen. Forskere har nu kigget på, om det samme princip gælder for AI, hvor man lader flere forskellige systemer byde ind på den samme opgave i stedet for blot at stole på én enkelt."
+        },
+        {
+          "overskrift": "Udfordringer undervejs",
+          "tekst": "Selvom idéen lyder lovende, viser undersøgelsen, at det langt fra er ligetil at samle svarene fra de forskellige systemer. Forskere peger på, at hvis de underliggende modeller er fodret med de samme fejlbehæftede data, risikerer man bare at gange fejlene op, så det samlede resultat ender med at blive endnu mere upålideligt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskningen undersøger metoder til at samle svar fra flere sprogmodeller.",
+        "Undersøgelsen belyser faren for, at dataforurening forplanter sig i systemerne.",
+        "Principperne trækker på ældre teorier om flokkevisdom fra menneskers verden.",
+        "Målet er at finde ud af, hvornår et hold af AI-modeller overgår enkeltstående systemer."
+      ],
+      "betydning": "For helt almindelige danskere betyder denne type forskning, at fremtidens digitale værktøjer forhåbentlig bliver mere pålidelige. Hvis man kan knække koden til at lade flere AI-systemer tjekke hinanden, mindsker man risikoen for, at vi modtager forkerte svar på vigtige spørgsmål om alt fra sundhed til økonomi.",
+      "pointer": [
+        "Flere AI-modeller kan muligvis samarbejde om bedre svar.",
+        "Idéen bygger på den klassiske tanke om flokkens visdom.",
+        "Fælles fejl i data kan dog spolere samarbejdet fuldstændigt."
+      ],
+      "billede": "data/img/0c31b765a583c271.jpg"
+    },
+    {
+      "titel": "Trajectory-Aware Clinical Risk Prediction via Severity-Grounded Knowledge Graphs and Retrieval-Augmented Generation",
+      "link": "https://arxiv.org/abs/2607.18270",
+      "resume": "While Electronic Health Records (EHRs) offer a wealth of clinical data, effectively augmenting a patient's records with heterogeneous external knowledge to predict the patient's clinical risk remains a significant challenge. Existing methods fail to capture disease severity, treatment responses, and nuanced clinical progression, due to data sparsity and the underutilization of unstructured…",
+      "dato": "2026-07-22T00:00:00-04:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "rubrik": "Ny AI-metode forudsiger alvorlig sygdom bedre",
+      "resume_da": "Forskere har udviklet en ny AI-metode, der kan forudsige sygdomsforløb mere præcist ved at koble patienters historik med sundhedsviden.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Sygdomme under lup",
+          "tekst": "Moderne AI bliver hele tiden bedre til at forstå komplekse mønstre. En ny forskningsartikel viser, hvordan teknologien kan bruges til at kigge på en patients hidtidige sygdomsforløb og vurdere fremtidige risici. Ved at kombinere data om patientens tilstand med store mængder medicinsk viden kan systemet hjælpe med at spotte faresignaler i tide."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Metoden fungerer ved, at AI'en trækker på avancerede vidensbanker, der er bygget op omkring sygdommenes sværhedsgrad. Når systemet modtager nye oplysninger om en patient, slår det op i disse registre for at vurdere, hvordan tilstanden sandsynligvis vil udvikle sig. Det giver et mere oplyst grundlag for at vurdere, hvem der har brug for ekstra hjælp."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Forskningen fokuserer på at forudsige kliniske risici ud fra patienters sygdomsforløb.",
+        "Systemet bruger avancerede vidensbanker til at vurdere sygdommens sværhedsgrad.",
+        "Metoden integrerer opslag i eksterne databaser for at forbedre AI'ens præcision.",
+        "Bag arbejdet står en gruppe forskere, der har offentliggjort deres resultater i en videnskabelig artikel."
+      ],
+      "betydning": "På sigt kan denne type forskning være med til at give læger bedre og mere præcise redskaber til at vurdere patienters helbred og risici. Selvom teknologien stadig er på et tidligt stadie, kan den i fremtiden måske hjælpe med at opdage alvorlige sygdomme tidligere, så behandlingen kan sættes ind, før problemerne vokser sig for store.",
+      "pointer": [
+        "Ny AI-metode forudsiger sundhedsrisici bedre.",
+        "Kombinerer patientforløb med medicinsk viden.",
+        "Kan hjælpe med tidligere og mere præcise vurderinger."
+      ],
+      "billede": "data/img/72109d2ac0d59ceb.jpg"
     },
     {
       "titel": "The Anthropic-Physical Intelligence rumor roiling AI Twitter",
@@ -2608,48 +3132,6 @@
       ],
       "kat_ai": true,
       "prio": 7
-    },
-    {
-      "titel": "What to watch for after Jensen Huang’s Japan visit",
-      "link": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
-      "resume": "Jensen Huang left Tokyo with deals spanning Japan's entire tech ecosystem.",
-      "dato": "2026-07-19T21:16:07+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "rubrik": "Japansk storsatsning på tænkende robotter og chips",
-      "resume_da": "Topchefen for chipgiganten Nvidia har indgået historiske aftaler i Tokyo om at digitalisere landets fabrikker og robotter med ny teknologi.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Historisk japansk kæmpeinvestering",
-          "tekst": "Regeringen i Tokyo satser massive summer på at fremtidssikre landets berømte industri. Gennem et gigantisk nationalt samarbejde, hvor store navne som SoftBank og Sony trækker det tunge læs, vil man udvikle egne digitale hjernesystemer. Projektet skal sikre, at fremtidens maskiner og køretøjer forstår japansk sprog og kultur, uden at landet bliver afhængigt af udefrakommende supermagter."
-        },
-        {
-          "overskrift": "Robothær skal redde produktionen",
-          "tekst": "Mangel på arbejdskraft tvinger den asiatiske nation til at tænke helt nyt. Planen er at udstyre utallige fabrikker med intelligente robotter, der kan samarbejde og løse komplekse opgaver på gulvet. Lokale giganter inden for automation og bilindustrien har sagt ja til at bruge Nvidias avancerede systemer som fundament for deres kommende maskinpark."
-        },
-        {
-          "overskrift": "Amerikansk supercomputer i Tokyo",
-          "tekst": "Selvom softwaren skal være lokalt udviklet, kommer selve computerkraften udefra. Der opføres et enormt datacenter fyldt med næste generations mikrochips, som skal stå klar i **2028**. Dette teknologiske kraftværk bliver rygraden i udviklingen af de avancerede modeller, der skal styre landets kommende flåde af arbejdsrobotter."
-        }
-      ],
-      "detaljer": [
-        "Nvidias direktør **Jensen Huang** besøgte Tokyo i juli for at lukke aftaler med landets teknologielite.",
-        "Den japanske stat og erhvervslivet vil investere op mod **65 milliarder dollars** i projektet.",
-        "Målet er at have **10 millioner** intelligente robotter fordelt på 18 sektorer inden 2040.",
-        "Det nye nationale supercenter vil rumme **13.750** CPU'er og **27.500** GPU'er.",
-        "Samarbejdet bygger på historiske bånd, der startede med en tidlig investering for **30 år** siden.",
-        "Landet sigter efter at erobre over **30 procent** af det globale marked for intelligente robotautomationer."
-      ],
-      "betydning": "Udviklingen viser, hvordan traditionelle industrinationer presses til at omfavne avanceret digitalisering for at modvirke faldende befolkningstal. For almindelige mennesker betyder det, at robotter og automatiserede systemer vil overtage langt flere fysiske arbejdsopgaver på fabrikker og i trafikken, hvilket på sigt vil ændre både arbejdsliv, priser på varer og behovet for nye faglige kompetencer i samfundet.",
-      "pointer": [
-        "Japan satser massivt på intelligente maskiner og robotter.",
-        "Nvidia leverer de afgørende superchips til det nye samarbejde.",
-        "Målet er at modvirke manglen på arbejdskraft frem mod 2040.",
-        "Lokale virksomheder og staten betaler for den nye AI-infrastruktur."
-      ],
-      "kat_ai": true,
-      "prio": 6
     },
     {
       "titel": "Moonshot AI suspends new subscriptions due to Kimi K3 demand",
