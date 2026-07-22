@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sådan skriver du en god prompt — få bedre svar fra AI · AI-nyheder</title>
+<meta name="description" content="Fem enkle greb, der gør dine AI-svar markant bedre: kontekst, format, eksempler, roller og opfølgning. Med danske eksempler.">
+<meta name="theme-color" content="#f4f2ec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 36px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 40px 0 12px; letter-spacing: -.01em; }
+h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 8px; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+li { font-size: 15.5px; line-height: 1.7; margin: 0 0 8px 22px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+.kort-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
+.net-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px; text-decoration: none; box-shadow: var(--skygge); transition: transform .15s, border-color .15s; display: block; }
+.net-kort:hover { transform: translateY(-3px); border-color: var(--accent); }
+.net-kort .ikon { font-size: 26px; }
+.net-kort h3 { margin: 10px 0 6px; }
+.net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+.trin { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px 26px; margin: 16px 0; box-shadow: var(--skygge); }
+.trin .nr { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 800; font-size: 14px; margin-right: 10px; }
+.trin h3 { display: flex; align-items: center; margin: 0 0 10px; }
+.eksempel { background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px;
+  padding: 12px 16px; font-size: 14px; margin: 10px 0; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="./">← Nyhederne</a>
+  </div>
+</div>
+<main>
+<h1>Sådan skriver du en god prompt</h1>
+<p class="manchet">Forskellen på et middelmådigt og et fremragende AI-svar ligger næsten altid i det, DU skriver. Her er de fem greb, der batter mest — med eksempler du kan stjæle.</p>
+<div class="trin"><h3><span class="nr">1</span>Giv kontekst — hvem, hvad, hvorfor</h3><p>AI'en ved ingenting om din situation, medmindre du fortæller det. Jo mere relevant baggrund, jo bedre svar.</p>
+<div class="eksempel">Svag: "Skriv en ansøgning."<br><br>Stærk: "Skriv en jobansøgning til en stilling som lagermedarbejder hos et byggemarked. Jeg er 45 år, har kørt truck i 12 år og skifter branche, fordi mit gamle firma lukkede. Tonen skal være ligefrem og uden fine ord."</div></div>
+<div class="trin"><h3><span class="nr">2</span>Sig præcis, hvilket format du vil have</h3><p>Vil du have en liste? En tabel? Tre forslag? Max 100 ord? Sig det! AI'en opfylder gerne formkrav — men kun hvis de findes.</p>
+<div class="eksempel">"Giv mig svaret som en tabel med tre kolonner: mulighed, pris, fordele og ulemper."</div></div>
+<div class="trin"><h3><span class="nr">3</span>Vis et eksempel på det, du ønsker</h3><p>Det stærkeste trick overhovedet: Vis AI'en et eksempel på stilen eller formatet, du er ude efter — så rammer den langt oftere rigtigt første gang.</p>
+<div class="eksempel">"Skriv fem produktbeskrivelser i samme stil som denne her: [indsæt et eksempel du kan lide]"</div></div>
+<div class="trin"><h3><span class="nr">4</span>Giv AI'en en rolle</h3><p>Bed AI'en tage en bestemt faglighed på sig — det styrer både niveau og perspektiv i svaret.</p>
+<div class="eksempel">"Du er en erfaren boligadvokat. Gennemgå denne lejekontrakt og påpeg alt det, jeg som lejer skal være opmærksom på."</div></div>
+<div class="trin"><h3><span class="nr">5</span>Brug samtalen — første svar er et udkast</h3><p>Lad være med at nøjes med første svar. Skriv "gør det kortere", "mere formelt", "giv mig tre alternativer", "du glemte X". Hvert svar er et udgangspunkt, ikke facit — og forbedringerne er gratis.</p></div>
+<div class="boks"><strong>Husketeknik:</strong> K-F-E-R-O — <strong>K</strong>ontekst, <strong>F</strong>ormat, <strong>E</strong>ksempel, <strong>R</strong>olle, <strong>O</strong>pfølgning. Har din prompt bare tre af de fem, er du foran de fleste.</div>
+<p>Vil du springe skrivearbejdet over? Vi har samlet <a href="prompts.html" style="color:var(--accent)">færdige prompts til hverdagen</a>, du bare kan kopiere.</p>
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

@@ -117,6 +117,7 @@ a { color: inherit; }
 }
 .pill:hover { border-color: var(--accent); color: var(--accent); }
 .pill.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
+a.pill { text-decoration: none; display: inline-block; }
 .emne-holder { position: relative; display: inline-block; }
 .pill-delt { display: inline-flex; align-items: stretch; padding: 0; overflow: hidden; }
 .pill-navn {
@@ -570,7 +571,7 @@ footer a { color: var(--accent); }
     så du har en fair chance for at følge med i den teknologi, der forandrer vores hverdag.
   </div>
   <div class="footer-lille">Opdateres løbende hele døgnet · © 2026 AI-nyheder ·
-    <a href="om.html">Om os & sådan arbejder vi</a> · <a href="feed.xml">RSS</a></div>
+    <a href="laer.html">Lær AI</a> · <a href="om.html">Om os & sådan arbejder vi</a> · <a href="feed.xml">RSS</a></div>
 </footer>
 
 <script>
@@ -736,7 +737,8 @@ function tegnFiltre() {
         <button class="emne-alle" id="emneAlle">Vælg alle</button>
       </span>
     </span>
-    ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}`;
+    ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}
+    <a class="pill" href="laer.html">🎓 Lær AI</a>`;
 }
 
 function dagNoegle(iso) {

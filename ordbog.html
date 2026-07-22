@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-ordbog — begreberne forklaret på letlæst dansk · AI-nyheder</title>
+<meta name="description" content="Hvad er en LLM? Hvad betyder prompt? AI-ordbogen forklarer alle de vigtigste AI-begreber kort og på letlæst dansk.">
+<meta name="theme-color" content="#f4f2ec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 36px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 40px 0 12px; letter-spacing: -.01em; }
+h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 8px; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+li { font-size: 15.5px; line-height: 1.7; margin: 0 0 8px 22px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+.kort-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
+.net-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px; text-decoration: none; box-shadow: var(--skygge); transition: transform .15s, border-color .15s; display: block; }
+.net-kort:hover { transform: translateY(-3px); border-color: var(--accent); }
+.net-kort .ikon { font-size: 26px; }
+.net-kort h3 { margin: 10px 0 6px; }
+.net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+.sog-felt { width: 100%; padding: 13px 18px; font: inherit; font-size: 15px;
+  border: 1px solid var(--linje); border-radius: 999px; background: var(--bg-kort); margin-bottom: 22px; }
+.sog-felt:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.ord-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.ord-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px; padding: 18px 20px; }
+.ord-kort h3 { margin: 0 0 6px; color: var(--accent); }
+.ord-kort p { font-size: 14px; margin: 0; color: var(--blaek); }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="./">← Nyhederne</a>
+  </div>
+</div>
+<main>
+<h1>AI-ordbogen</h1>
+<p class="manchet">Alle de ord, der flyver rundt i AI-debatten — forklaret kort og uden indforstået teknik-snak. Søg, eller scroll listen igennem.</p>
+<input class="sog-felt" id="ordSog" type="search" placeholder="Søg efter et begreb … fx LLM, prompt, hallucination">
+<div class="ord-net"><div class="ord-kort" id="agi">
+<h3>AGI</h3><p>Kunstig generel intelligens: en (endnu hypotetisk) AI, der kan alt det, et menneske kan intellektuelt - ikke kun én slags opgave.</p></div><div class="ord-kort" id="ai">
+<h3>AI</h3><p>Kort for &#x27;kunstig intelligens&#x27; - computerprogrammer, der kan løse opgaver, som normalt kræver menneskelig tænkning: skrive, oversætte, genkende billeder og meget mere.</p></div><div class="ord-kort" id="ai-agent">
+<h3>AI-agent</h3><p>En AI, der ikke bare svarer, men selv udfører opgaver i flere trin - fx researcher, booker eller skriver kode, mens du laver andet.</p></div><div class="ord-kort" id="ai-detektor">
+<h3>AI-detektor</h3><p>Værktøj, der forsøger at afgøre, om tekst eller billeder er lavet af AI. Virker desværre upålideligt - især på tekst.</p></div><div class="ord-kort" id="ai-model">
+<h3>AI-model</h3><p>Selve &#x27;hjernen&#x27; bag en AI-tjeneste. ChatGPT, Gemini og Claude er kendte tjenester - bag hver af dem sidder en model, der er trænet på enorme mængder tekst.</p></div><div class="ord-kort" id="alignment">
+<h3>Alignment</h3><p>Arbejdet med at få AI til at ville det samme som os - altså opføre sig hjælpsomt og sikkert, også når ingen kigger.</p></div><div class="ord-kort" id="api">
+<h3>API</h3><p>En &#x27;stikkontakt&#x27; til et program. Virksomheder bruger AI-firmaernes API&#x27;er til at bygge AI ind i deres egne produkter.</p></div><div class="ord-kort" id="benchmark">
+<h3>Benchmark</h3><p>En standardiseret test, der måler hvor god en AI-model er - fx til matematik, kodning eller almen viden. Bruges til at sammenligne modeller.</p></div><div class="ord-kort" id="bias">
+<h3>Bias</h3><p>Skævheder i AI&#x27;ens svar, som stammer fra skævheder i det materiale, den er trænet på - fx fordomme om køn eller nationalitet.</p></div><div class="ord-kort" id="billedgenerering">
+<h3>Billedgenerering</h3><p>AI, der skaber helt nye billeder ud fra en tekstbeskrivelse. Kendte værktøjer: Midjourney, DALL-E og Nano Banana.</p></div><div class="ord-kort" id="chain-of-thought">
+<h3>Chain of thought</h3><p>Når AI&#x27;en viser sine mellemregninger - tænker højt i skridt. Grundlaget for ræsonnement-modellerne.</p></div><div class="ord-kort" id="chatbot">
+<h3>Chatbot</h3><p>Et program, man kan skrive med i almindeligt sprog. Moderne chatbots som ChatGPT bygger på store sprogmodeller.</p></div><div class="ord-kort" id="chatgpt">
+<h3>ChatGPT</h3><p>Verdens mest kendte AI-chatbot, lavet af OpenAI. Fik AI-bølgen til at rulle, da den udkom i november 2022.</p></div><div class="ord-kort" id="claude">
+<h3>Claude</h3><p>AI-chatbot og modelfamilie fra firmaet Anthropic, kendt for lange, gennemarbejdede svar og fokus på sikkerhed.</p></div><div class="ord-kort" id="cloud">
+<h3>Cloud</h3><p>&#x27;Skyen&#x27; - store datacentre, hvor AI&#x27;en faktisk kører. Når du skriver med en chatbot, sker regnearbejdet i et datacenter, ikke på din telefon.</p></div><div class="ord-kort" id="datacenter">
+<h3>Datacenter</h3><p>Kæmpe haller fulde af computere. AI kræver enorme mængder regnekraft og strøm - derfor bygges der datacentre som aldrig før.</p></div><div class="ord-kort" id="deepfake">
+<h3>Deepfake</h3><p>Falske billeder, lyd eller video skabt med AI, der ligner ægte optagelser. Bruges desværre ofte til svindel og misinformation.</p></div><div class="ord-kort" id="eus-ai-forordning">
+<h3>EU&#x27;s AI-forordning</h3><p>Verdens første store AI-lov (AI Act). Stiller krav til AI efter risiko: jo mere indgribende brug, desto strammere regler. Indføres gradvist i disse år.</p></div><div class="ord-kort" id="finjustering">
+<h3>Finjustering</h3><p>At efter-træne en færdig AI-model på et bestemt område, så den bliver ekstra god til fx jura, medicin eller et firmas egne dokumenter.</p></div><div class="ord-kort" id="frontier-model">
+<h3>Frontier-model</h3><p>Betegnelse for de allermest avancerede AI-modeller i verden lige nu - &#x27;fronten&#x27; af udviklingen.</p></div><div class="ord-kort" id="gemini">
+<h3>Gemini</h3><p>Googles AI-familie - både chatbotten og modellerne bag. Indbygget i Googles produkter fra søgning til Gmail.</p></div><div class="ord-kort" id="gpt">
+<h3>GPT</h3><p>OpenAIs modelfamilie (forkortelse for Generative Pre-trained Transformer). Tallet - fx GPT-5.5 - angiver generationen.</p></div><div class="ord-kort" id="gpu">
+<h3>GPU</h3><p>Den chiptype, AI trænes og køres på. Oprindeligt lavet til computerspil - i dag guld værd. Nvidia er den største producent.</p></div><div class="ord-kort" id="hallucination">
+<h3>Hallucination</h3><p>Når AI&#x27;en svarer selvsikkert med noget, der er forkert eller opdigtet. Den lyver ikke bevidst - den gætter overbevisende. Tjek altid vigtige fakta.</p></div><div class="ord-kort" id="inferens">
+<h3>Inferens</h3><p>Fagordet for at &#x27;køre&#x27; en AI-model - altså når den besvarer dine spørgsmål. Træning er at bygge hjernen; inferens er at bruge den.</p></div><div class="ord-kort" id="jailbreak">
+<h3>Jailbreak</h3><p>Tricks, der lokker en AI til at bryde sine egne regler og fx give farlige svar. AI-firmaerne lukker hullerne løbende.</p></div><div class="ord-kort" id="kompute">
+<h3>Kompute</h3><p>Slang for regnekraft. &#x27;Mere kompute&#x27; = flere chips og strøm = som regel klogere modeller. AI-kapløbets vigtigste råvare.</p></div><div class="ord-kort" id="kontekstvindue">
+<h3>Kontekstvindue</h3><p>AI&#x27;ens &#x27;korttidshukommelse&#x27;: hvor meget tekst den kan have i hovedet på én gang. Større vindue = længere dokumenter og samtaler.</p></div><div class="ord-kort" id="llm">
+<h3>LLM</h3><p>Large Language Model - stor sprogmodel. Den teknologi, der driver moderne chatbots: et program trænet på enorme tekstmængder til at forudsige det næste ord.</p></div><div class="ord-kort" id="maskinlæring">
+<h3>Maskinlæring</h3><p>Metoden bag moderne AI: I stedet for at programmere alle regler lader man computeren lære mønstre af eksempler.</p></div><div class="ord-kort" id="multimodal">
+<h3>Multimodal</h3><p>En AI, der kan mere end tekst - fx også se billeder, høre lyd og tale. De nyeste topmodeller er multimodale.</p></div><div class="ord-kort" id="neuralt-netværk">
+<h3>Neuralt netværk</h3><p>Den matematiske struktur inde i AI-modeller, løst inspireret af hjernens forbundne nerveceller.</p></div><div class="ord-kort" id="open-source-model">
+<h3>Open source-model</h3><p>En AI-model, alle frit kan hente og bruge, som Metas Llama-modeller. Modsætningen er lukkede modeller, man kun kan leje adgang til.</p></div><div class="ord-kort" id="openai">
+<h3>OpenAI</h3><p>Firmaet bag ChatGPT og GPT-modellerne - startede som nonprofit i 2015 og er i dag et af verdens mest værdifulde tech-selskaber.</p></div><div class="ord-kort" id="ophavsret-og-ai">
+<h3>Ophavsret og AI</h3><p>Det store juridiske slagsmål: Må AI trænes på bøger, artikler og billeder uden tilladelse? Domstole og forlig former lige nu svaret.</p></div><div class="ord-kort" id="parameter">
+<h3>Parameter</h3><p>AI-modellens &#x27;skruer&#x27; - de tal, der justeres under træningen. Store modeller har hundredvis af milliarder af dem.</p></div><div class="ord-kort" id="prompt">
+<h3>Prompt</h3><p>Det, du skriver til AI&#x27;en: dit spørgsmål eller din instruks. Jo bedre prompt, jo bedre svar - se vores guide til gode prompts.</p></div><div class="ord-kort" id="prompt-injection">
+<h3>Prompt injection</h3><p>Et angreb, hvor skjulte instruktioner i fx en hjemmeside eller mail forsøger at kapre AI&#x27;en, mens den arbejder for dig.</p></div><div class="ord-kort" id="rag">
+<h3>RAG</h3><p>Retrieval-Augmented Generation: AI&#x27;en slår op i dokumenter eller databaser, FØR den svarer - så svaret bygger på faktiske kilder i stedet for kun hukommelsen.</p></div><div class="ord-kort" id="ræsonnement">
+<h3>Ræsonnement</h3><p>Nyere modeller kan &#x27;tænke sig om&#x27; - arbejde sig gennem et problem i skridt, før de svarer. Giver bedre svar på svære opgaver, men tager længere tid.</p></div><div class="ord-kort" id="sprogmodel">
+<h3>Sprogmodel</h3><p>Dansk ord for LLM - en AI-model, der forstår og producerer sprog.</p></div><div class="ord-kort" id="syntetiske-data">
+<h3>Syntetiske data</h3><p>Træningsdata, som AI selv har produceret. Bruges når ægte data slipper op - men kan forstærke fejl, hvis man ikke passer på.</p></div><div class="ord-kort" id="systemprompt">
+<h3>Systemprompt</h3><p>Den skjulte grundinstruks, en chatbot har fået af sine skabere: hvem den er, hvad den må, og hvordan den skal opføre sig.</p></div><div class="ord-kort" id="temperatur">
+<h3>Temperatur</h3><p>En indstilling for, hvor kreativ eller forudsigelig AI&#x27;en skal være. Lav temperatur = ensartede svar; høj = mere variation og vildskab.</p></div><div class="ord-kort" id="token">
+<h3>Token</h3><p>De bidder, AI&#x27;en deler tekst op i - typisk stumper af ord. AI-tjenester afregnes ofte pr. token; derfor betyder korte og lange svar noget for prisen.</p></div><div class="ord-kort" id="træning">
+<h3>Træning</h3><p>Processen hvor en model &#x27;lærer&#x27; ved at gennemtygge enorme tekstmængder på tusindvis af GPU&#x27;er. Koster ofte milliarder af kroner for topmodeller.</p></div><div class="ord-kort" id="vandmærke">
+<h3>Vandmærke</h3><p>Usynlige spor gemt i AI-genererede billeder eller tekst, så man senere kan afsløre, at indholdet er skabt af AI. Fx Googles SynthID.</p></div><div class="ord-kort" id="vægte">
+<h3>Vægte</h3><p>Et andet ord for modellens parametre. Når et firma &#x27;frigiver vægtene&#x27;, kan alle køre modellen selv.</p></div></div>
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+<script>
+document.getElementById("ordSog").addEventListener("input", e => {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll(".ord-kort").forEach(k =>
+    k.style.display = k.textContent.toLowerCase().includes(q) ? "" : "none");
+});
+</script>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
