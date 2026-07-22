@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-07-22T09:23:51.756353+00:00",
+  "opdateret": "2026-07-22T09:30:13.135335+00:00",
   "antal": 133,
   "artikler": [
     {
@@ -576,9 +576,7 @@
       "kategori": "Forskning",
       "rubrik": "Ny metode gør træning af AI mere stabil",
       "resume_da": "Forskere har udviklet en ny fremgangsmåde kaldet S2T-RLHF, der forbedrer træningen af AI gennem bedre fordeling af ros og kritik.",
-      "billede": "data/img/89b9be1bb094e4ab.jpg",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Bag om metoden",
@@ -589,14 +587,13 @@
           "tekst": "Traditionelle metoder har det med at snuble, når de forsøger at tilpasse sig menneskelig smag og feedback. Med den nye tilgang bliver det lettere for teknologien at fastholde en jævn kurs. Det sikrer, at AI-modellerne ikke pludselig mister kvalitet, når de modtager store mængder rettelser og vurderinger fra brugere."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "5",
           "label": "forskere bag den nye metode"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "{'tal': 'Metoden er udviklet af et hold på **5** forskere med **Wei Chen** i spidsen.'}",
         "{'tal': 'Teknikken hedder S2T-RLHF og fokuserer på hierarkisk fordeling af feedback.'}",
@@ -607,7 +604,10 @@
         "Ny metode skaber mere stabil AI-træning",
         "Udviklet af hold på fem forskere",
         "Løser problemer med menneskelig feedback"
-      ]
+      ],
+      "billede": "data/img/89b9be1bb094e4ab.jpg",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
@@ -864,11 +864,57 @@
       "dato": "2026-07-22T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
-      "rubrik": "AI glemmer vigtige detaljer undervejs",
-      "resume_da": "Når en AI arbejder længe på en opgave, mister den ofte vigtige informationer, hvilket giver fejl i regnestykker.",
+      "rubrik": "Ny forskning i AI-beskeder mellem agenter",
+      "resume_da": "Forskere har undersøgt, hvordan AI-systemer udveksler information i lukkede systemer, hvilket kan forbedre fremtidig digital kommunikation.",
       "billede": "data/img/b9d8d8610628e4bc.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Nyt studie",
+          "tekst": "En forskergruppe bestående af **Anantha Sharma** og tre andre kolleger har offentliggjort en videnskabelig artikel om emnet. Arbejdet dykker ned i, hvordan to separate AI-enheder sender beskeder til hinanden, og hvordan vigtige regler bevares undervejs i processen."
+        },
+        {
+          "overskrift": "Lukkede miljøer",
+          "tekst": "Forskerne har set på såkaldte lukkede verdener, hvor informationen skal pakkes sammen, før den sendes videre mellem parterne. Det handler om at sikre, at ingen vigtige detaljer går tabt, når en AI forsøger at fatte sig i korthed over for en anden."
+        },
+        {
+          "overskrift": "Udgivet online",
+          "tekst": "Selve dokumentet er blevet gjort tilgængeligt via arkivet for forskningsartikler den **20. maj 2026**. Filen fylder **998 KB** i sin fulde størrelse, og interesserede kan finde hele teksten online som PDF."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2",
+          "label": "AI-agenter involveret i studiet"
+        },
+        {
+          "tal": "4",
+          "label": "forfattere bag forskningsartiklen"
+        },
+        {
+          "tal": "998 KB",
+          "label": "størrelse på dokumentet"
+        },
+        {
+          "tal": "2026",
+          "label": "udgivelsesår for studiet"
+        }
+      ],
+      "detaljer": [
+        "{'tal': 'Anantha Sharma'}",
+        "{'tal': '20. maj 2026'}",
+        "{'tal': '998 KB'}",
+        "{'tal': 'cs.AI'}"
+      ],
+      "betydning": "For almindelige mennesker kan denne type forskning virke ret teoretisk, men den har stor betydning for, hvordan fremtidige digitale assistenter kommer til at arbejde sammen. Når flere systemer skal løse opgaver i fællesskab bag kulisserne, er det afgørende, at de kan udveksle præcise beskeder uden misforståelser. Det kan i sidste ende give os hurtigere og mere pålidelige digitale tjenester i hverdagen.",
+      "pointer": [
+        "Ny forskning undersøger AI-kommunikation",
+        "Arbejdet er udgivet i maj 2026",
+        "Dokumentet fylder næsten en megabyte"
+      ]
     },
     {
       "titel": "Structured Synthetic Reasoning Data for Arithmetic Fine-Tuning of Small Language Models",
@@ -2617,8 +2663,7 @@
       "kategori": "Forskning",
       "rubrik": "Hver tredje videnskabelige artikel er skrevet af AI",
       "resume_da": "En stor undersøgelse af næsten 13.000 forskningsartikler viser, at op mod en tredjedel nu bærer præg af at være skrevet ved hjælp af AI.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sådan blev det målt",
@@ -2633,8 +2678,6 @@
           "tekst": "Ikke alle videnskabelige miljøer bruger teknologien ens. Inden for datalogi er andelen af tekster, der flages, oppe på omkring **65 %**, mens matematik ligger helt nede ved **0,7 %**. Forskerne advarer dog om, at matematikken kan være svær at måle, fordi formler og symboler fylder mere end traditionel prosa, hvilket gør det sværere for systemet at opdage eventuel hjælp."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "12.750",
@@ -2653,6 +2696,7 @@
           "label": "fejlrate sat ud fra gamle kontroltekster"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Undersøgelsen omfattede præcis 12.750 forskningsartikler fra databasen arXiv.",
         "Før-ChatGPT årene 2021 og 2022 blev brugt som kontrolgruppe med 200 tekster pr. felt.",
@@ -2667,7 +2711,9 @@
         "Datalogi er det fagfelt, der bruger teknologien mest.",
         "Matematik skiller sig ud med ekstremt lave målinger.",
         "Historiske kontrolgrupper sikrer mod falske alarmer."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "Launch HN: Bloomy (YC S26) – AI-powered mastery learning for K-12",
