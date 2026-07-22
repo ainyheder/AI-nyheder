@@ -357,6 +357,13 @@ Svar KUN med ét JSON-objekt:
 }"""
 
 
+# Ord der afslører, at et billede er en graf/benchmark - bruges som
+# deterministisk sikkerhedsnet, hvis AI'en ikke selv vælger nogen figurer.
+FIGUR_ORD = re.compile(
+    r"eval|benchmark|chart|graph|figure|figur|score|leaderboard|compar|"
+    r"result|table|tabel|graf|maaling|diagram", re.I)
+
+
 def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
     """Laver et komplet dansk brief ud fra artiklens fulde tekst."""
     try:
@@ -417,6 +424,17 @@ def dybe_briefs(artikler: list[dict]) -> None:
                                          "tekst": str(f.get("tekst", "")).strip(),
                                          "kilde": match[1]})
             a["figurer"] = a["figurer"][:3]
+            # Sikkerhedsnet: vælger AI'en ingen figurer, tager vi selv dem,
+            # hvis URL eller billedtekst tydeligt lugter af benchmark/graf.
+            if not a["figurer"]:
+                for b in billeder:
+                    if FIGUR_ORD.search(b["url"]) or FIGUR_ORD.search(b.get("tekst", "")):
+                        a["figurer"].append({
+                            "url": b["url"],
+                            "tekst": b.get("tekst", "").strip() or "Figur fra artiklen",
+                            "kilde": b.get("kilde", a["kilde"])})
+                        if len(a["figurer"]) == 3:
+                            break
             a["noegletal"] = [{"tal": str(n.get("tal", "")).strip(),
                                "label": str(n.get("label", "")).strip()}
                               for n in r.get("noegletal", []) if n.get("tal")][:5]
