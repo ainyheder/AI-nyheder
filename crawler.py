@@ -1178,10 +1178,6 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
         gammel = json.loads(UGE_JSON.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         gammel = {}
-    if gammel.get("uge") == noegle:
-        return                                    # allerede skrevet i denne uge
-    if ugedag < 5 and gammel:
-        return                                    # vent til fredag (5)
 
     # ugens kandidater: nyeste 7 dage, vigtigst først
     friske = []
@@ -1193,6 +1189,26 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
         if alder <= 7 and a.get("rubrik") and a.get("kategori") != "Forskning":
             friske.append(a)
     friske.sort(key=lambda a: ((a.get("prio") or 5) + (1 if a.get("andre") else 0)), reverse=True)
+
+    if gammel.get("uge") == noegle:
+        # Indholdet er allerede skrevet i denne uge. Men siden GEN-RENDERES
+        # gratis ved hver kørsel, så designændringer og nye billeder slår
+        # igennem med det samme - uden nye AI-kald.
+        b_af = {a["link"]: a.get("billede", "") for a in artikler}
+        k_af = {a["link"]: a.get("kategori", "") for a in artikler}
+        for h in gammel.get("historier", []):
+            if not h.get("billede"):
+                h["billede"] = b_af.get(h.get("link", ""), "")
+            if not h.get("kategori"):
+                h["kategori"] = k_af.get(h.get("link", ""), "")
+        gammel.setdefault("stats", {"historier": len(friske),
+                                    "kilder": len({a["kilde"] for a in friske})})
+        UGE_JSON.write_text(json.dumps(gammel, ensure_ascii=False, indent=1), encoding="utf-8")
+        UGE_HTML.write_text(_uge_side_html(gammel), encoding="utf-8")
+        UGE_FEED.write_text(_uge_feed_xml(gammel), encoding="utf-8")
+        return
+    if ugedag < 5 and gammel:
+        return                                    # vent til fredag (5)
     if len(friske) < 5:
         return
     billede_af = {a["link"]: a.get("billede", "") for a in friske}
