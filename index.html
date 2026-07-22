@@ -264,6 +264,29 @@ a { color: inherit; }
   text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
 .raekke .tid { font-size: 10.5px; color: var(--blaek-svag); font-weight: 500; }
 
+/* ---------- OVERBLIK: kategori-kolonner med mikro-rækker ---------- */
+.kat-kolonner { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 10px 40px; align-items: start; }
+.kat-titel {
+  font-family: var(--font-display); font-weight: 800; font-size: 17px; letter-spacing: -.01em;
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding-bottom: 9px; border-bottom: 2px solid var(--blaek); margin: 16px 0 2px;
+}
+.kat-antal { font-size: 11.5px; font-weight: 700; color: var(--blaek-svag); }
+.mikro {
+  display: flex; gap: 12px; align-items: flex-start; padding: 10px 0;
+  border-bottom: 1px dashed var(--linje); color: inherit; text-decoration: none;
+}
+.kat-kolonne .mikro:last-child { border-bottom: 0; }
+.mikro-billede { width: 52px; height: 52px; flex: none; border-radius: 9px;
+  overflow: hidden; background: var(--bg); border: 1px solid var(--linje); }
+.mikro-billede img, .mikro-billede svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mikro-tekst { min-width: 0; }
+.mikro h3 { font-size: 13.5px; font-weight: 600; line-height: 1.45; transition: color .12s; }
+.mikro:hover h3 { color: var(--accent); }
+.mikro-stjerne { color: var(--accent); }
+.mikro-meta { font-size: 10.5px; color: var(--blaek-svag); margin-top: 3px; }
+
 /* ---------- LÆSEVISNING (artikel-modal) ---------- */
 .laeser-bag {
   position: fixed; inset: 0; z-index: 200;
@@ -438,8 +461,8 @@ footer a { color: var(--accent); }
       <button data-sort="nyeste">Nyeste</button>
     </div>
     <div class="visning-skift" id="visningSkift" title="Skift visning">
-      <button data-visning="kompakt" class="aktiv">☰ Overblik</button>
-      <button data-visning="magasin">▦ Magasin</button>
+      <button data-visning="magasin" class="aktiv">▦ Magasin</button>
+      <button data-visning="kompakt">☰ Overblik</button>
       <button data-visning="benchmarks">▤ Benchmarks</button>
     </div>
   </div>
@@ -471,7 +494,7 @@ footer a { color: var(--accent); }
 let artikler = [];
 let aktivKategori = "Alle";
 let sogeTekst = "";
-let visning = "kompakt";     // "kompakt" = tæt overblik · "magasin" = store kort
+let visning = "magasin";     // "magasin" = store kort (standard) · "kompakt" = kategori-kolonner
 let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kronologi
 let benchData = null;
 let benchSort = { felt: "indeks", retning: -1 };
@@ -758,7 +781,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") lukLaeser();
 
 // Klik på en historie åbner læseren i stedet for at sende os væk
 indhold.addEventListener("click", e => {
-  const kort = e.target.closest(".kort, .raekke, .hero, .mini-hero");
+  const kort = e.target.closest(".kort, .raekke, .hero, .mini-hero, .mikro");
   if (!kort) return;
   e.preventDefault();
   const a = artikler.find(x => x.link === kort.dataset.link);
@@ -786,6 +809,20 @@ function artChips(a) {
 
 function artOverlay(a) {
   return artChips(a) + `<span class="tid-pille">${relativTid(a.dato)}</span>`;
+}
+
+const KAT_ORDEN = ["Lanceringer", "Benchmarks", "Hverdags-AI", "Penge & marked",
+                   "Politik & jura", "Samfund & etik", "Forskning"];
+
+function mikroHtml(a, id) {
+  return `
+  <a class="mikro" href="${esc(a.link)}" data-link="${esc(a.link)}">
+    <div class="mikro-billede">${visuel(a, id)}</div>
+    <div class="mikro-tekst">
+      <h3>${(a.prio ?? 0) >= 8 ? '<span class="mikro-stjerne">★</span> ' : ""}${overskrift(a)}</h3>
+      <div class="mikro-meta">${relativTid(a.dato)}${a.andre && a.andre.length ? ` · +${a.andre.length} kilder` : ""}</div>
+    </div>
+  </a>`;
 }
 
 function raekkeHtml(a, id) {
@@ -866,33 +903,21 @@ function tegn() {
   const rest = liste.filter(a => a !== heroArtikel);
 
   if (visning === "kompakt") {
-    // ---- OVERBLIK: slank hero + tæt tavle (resumé foldes ud ved hover) ----
-    const miniHero = `
-    <a class="mini-hero" href="${esc(heroArtikel.link)}" data-link="${esc(heroArtikel.link)}">
-      <div class="mini-hero-art">${visuel(heroArtikel, 9999)}</div>
-      <div class="mini-hero-tekst">
-        <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)} · ${relativTid(heroArtikel.dato)}</span>${heroArtikel.andre && heroArtikel.andre.length ? `<span class="flere-chip">+${heroArtikel.andre.length} kilder</span>` : ""}</div>
-        <h1>${overskrift(heroArtikel)}</h1>
-        <p>${brodtekst(heroArtikel)}</p>
-      </div>
-    </a>`;
-    let krop;
-    if (sortering === "vigtigst") {
-      // sektion pr. dag med de vigtigste øverst i hver dag
-      const dage = [];
-      for (const a of rest) {
-        const n = dagNoegle(a.dato);
-        if (!dage.length || dage[dage.length - 1].noegle !== n) dage.push({ noegle: n, artikler: [] });
-        dage[dage.length - 1].artikler.push(a);
-      }
-      let id = 0;
-      krop = dage.map(d =>
-        `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
-         <div class="tavle" style="margin-bottom:26px">${d.artikler.map(a => raekkeHtml(a, id++)).join("")}</div>`).join("");
-    } else {
-      krop = `<div class="tavle">${rest.map((a, i) => raekkeHtml(a, i)).join("")}</div>`;
+    // ---- OVERBLIK: kategori-kolonner med mikrobilleder + tekst ved siden af ----
+    const grupper = new Map();
+    for (const a of liste) {
+      const k = a.kategori || "Andet";
+      if (!grupper.has(k)) grupper.set(k, []);
+      grupper.get(k).push(a);
     }
-    indhold.innerHTML = note + miniHero + krop;
+    const orden = [...KAT_ORDEN.filter(k => grupper.has(k)),
+                   ...[...grupper.keys()].filter(k => !KAT_ORDEN.includes(k))];
+    let id = 0;
+    indhold.innerHTML = note + `<div class="kat-kolonner">` + orden.map(k => `
+      <section class="kat-kolonne">
+        <div class="kat-titel">${esc(k)} <span class="kat-antal">${grupper.get(k).length}</span></div>
+        ${grupper.get(k).map(a => mikroHtml(a, id++)).join("")}
+      </section>`).join("") + `</div>`;
     return;
   }
 
@@ -962,7 +987,7 @@ document.getElementById("datoIdag").textContent =
 const tip = document.getElementById("tip");
 
 indhold.addEventListener("mouseover", e => {
-  const kort = e.target.closest(".raekke, .kort");
+  const kort = e.target.closest(".raekke, .kort, .mikro");
   if (!kort || !kort.dataset.link) return;
   const a = artikler.find(x => x.link === kort.dataset.link);
   if (!a) return;
@@ -974,7 +999,7 @@ indhold.addEventListener("mouseover", e => {
   tip.classList.add("synlig");
 });
 indhold.addEventListener("mouseout", e => {
-  if (e.target.closest(".raekke, .kort")) tip.classList.remove("synlig");
+  if (e.target.closest(".raekke, .kort, .mikro")) tip.classList.remove("synlig");
 });
 indhold.addEventListener("click", () => tip.classList.remove("synlig"), true);
 
