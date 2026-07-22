@@ -264,9 +264,13 @@ a { color: inherit; }
   text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
 .raekke .tid { font-size: 10.5px; color: var(--blaek-svag); font-weight: 500; }
 
-/* ---------- OVERBLIK: kategori-kolonner med mikro-rækker ---------- */
-.kat-kolonner { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  gap: 10px 40px; align-items: start; }
+/* ---------- OVERBLIK: kategori-kolonner med rene tekst-rækker ---------- */
+.kat-kolonner { display: grid;
+  grid-template-columns: repeat(var(--kat-n, 5), minmax(0, 1fr));
+  gap: 10px 34px; align-items: start; }
+@media (max-width: 1500px) { .kat-kolonner { grid-template-columns: repeat(min(var(--kat-n, 3), 3), minmax(0, 1fr)); } }
+@media (max-width: 980px)  { .kat-kolonner { grid-template-columns: repeat(min(var(--kat-n, 2), 2), minmax(0, 1fr)); } }
+@media (max-width: 620px)  { .kat-kolonner { grid-template-columns: 1fr; } }
 .kat-titel {
   font-family: var(--font-display); font-weight: 800; font-size: 17px; letter-spacing: -.01em;
   display: flex; align-items: baseline; justify-content: space-between;
@@ -274,13 +278,10 @@ a { color: inherit; }
 }
 .kat-antal { font-size: 11.5px; font-weight: 700; color: var(--blaek-svag); }
 .mikro {
-  display: flex; gap: 12px; align-items: flex-start; padding: 10px 0;
+  display: block; padding: 9px 0;
   border-bottom: 1px dashed var(--linje); color: inherit; text-decoration: none;
 }
 .kat-kolonne .mikro:last-child { border-bottom: 0; }
-.mikro-billede { width: 52px; height: 52px; flex: none; border-radius: 9px;
-  position: relative; overflow: hidden; background: var(--bg); border: 1px solid var(--linje); }
-.mikro-billede img, .mikro-billede svg { width: 100%; height: 100%; object-fit: cover; display: block; }
 .mikro-tekst { min-width: 0; }
 .mikro h3 { font-size: 13.5px; font-weight: 600; line-height: 1.45; transition: color .12s; }
 .mikro:hover h3 { color: var(--accent); }
@@ -817,7 +818,6 @@ const KAT_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
 function mikroHtml(a, id) {
   return `
   <a class="mikro" href="${esc(a.link)}" data-link="${esc(a.link)}">
-    <div class="mikro-billede">${visuel(a, id)}</div>
     <div class="mikro-tekst">
       <h3>${(a.prio ?? 0) >= 8 ? '<span class="mikro-stjerne">★</span> ' : ""}${overskrift(a)}</h3>
       <div class="mikro-meta">${relativTid(a.dato)}${a.andre && a.andre.length ? ` · +${a.andre.length} kilder` : ""}</div>
@@ -860,7 +860,7 @@ function tegn() {
     const orden = [...KAT_ORDEN.filter(k => grupper.has(k)),
                    ...[...grupper.keys()].filter(k => !KAT_ORDEN.includes(k))];
     let id = 0;
-    indhold.innerHTML = note + `<div class="kat-kolonner">` + orden.map(k => `
+    indhold.innerHTML = note + `<div class="kat-kolonner" style="--kat-n:${Math.min(orden.length, 5)}">` + orden.map(k => `
       <section class="kat-kolonne">
         <div class="kat-titel">${esc(k)} <span class="kat-antal">${grupper.get(k).length}</span></div>
         ${grupper.get(k).map(a => mikroHtml(a, id++)).join("")}
@@ -961,8 +961,12 @@ fetch("data/articles.json")
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(data => {
     artikler = data.artikler;
-    // Benchmarks-kategorien er nedlagt - gamle artikler vises under Lanceringer
-    artikler.forEach(a => { if (a.kategori === "Benchmarks") a.kategori = "Lanceringer"; });
+    // Benchmarks-kategorien er nedlagt - gamle artikler vises under Lanceringer.
+    // Og alt fra arXiv regnes ALTID som Forskning.
+    artikler.forEach(a => {
+      if (a.kategori === "Benchmarks") a.kategori = "Lanceringer";
+      if ((a.kilde || "").toLowerCase().includes("arxiv")) a.kategori = "Forskning";
+    });
     tegnFiltre(); tegn();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);

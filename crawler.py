@@ -848,13 +848,19 @@ def main() -> None:
             pass
 
     print()
-    # Kategorien "Benchmarks" er nedlagt - gamle artikler flyttes til Lanceringer
+    # Kategorien "Benchmarks" er nedlagt - gamle artikler flyttes til Lanceringer.
+    # Og alt fra arXiv ER forskning, uanset hvad AI-kategoriseringen siger.
     for a in unikke:
         if a.get("kategori") == "Benchmarks":
             a["kategori"] = "Lanceringer"
+        if "arxiv" in a.get("kilde", "").lower():
+            a["kategori"] = "Forskning"
 
     omskriv_nye(unikke, cache)
     klassificer(unikke)
+    for a in unikke:                         # arXiv-reglen igen EFTER klassificering
+        if "arxiv" in a.get("kilde", "").lower():
+            a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
     lav_billeder(unikke)
