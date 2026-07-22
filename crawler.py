@@ -341,7 +341,9 @@ Er der ingen meningsfulde tal, SKAL listen være tom.
 
 Svar KUN med ét JSON-objekt:
 {
- "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon,
+ "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon. Den skal
+              vække ægte nysgerrighed - lov læseren en indsigt, de ikke kan
+              regne ud selv - men ALDRIG clickbait, der oversælger,
  "resume":    1-2 korte sætninger (max 30 ord) til oversigten,
  "sektioner": 2-4 afsnit med hver sin KORTE, konkrete mini-overskrift (2-4 ord,
               fx "Det er sket", "Pengene bag", "Kritikerne siger", "Hvad nu?").
@@ -608,9 +610,25 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
 
 # ----- AI-billeder til tophistorierne -----------------------------------------
 
+BILLED_STIL_VERSION = "v3"   # bump denne for at få ALLE billeder lavet om i ny stil
+
+
 def _billed_navn(link: str) -> str:
     import hashlib
-    return hashlib.md5(link.encode()).hexdigest()[:16] + ".jpg"
+    return hashlib.md5((link + BILLED_STIL_VERSION).encode()).hexdigest()[:16] + ".jpg"
+
+
+# Scenetone pr. kategori - seks SARTE toner i samme lyse familie, så forsiden
+# får rytme uden at blive kaotisk, når kategorierne blandes. Det fælles lys,
+# materialerne og den lilla accent binder det hele sammen.
+KATEGORI_FARVER = {
+    "Lanceringer":    "sart lilla-tonet (#e7e3f7)",
+    "Hverdags-AI":    "sart salviegrøn (#e2eadd)",
+    "Penge & marked": "sart varm sandfarvet (#f0e4c8)",
+    "Politik & jura": "sart støvet dueblå (#dde5ee)",
+    "Samfund & etik": "sart rosa-terracotta (#f4e0d9)",
+    "Forskning":      "sart kølig gråblå (#e2e7ee)",
+}
 
 
 def _gem_billede(raa: bytes, sti: Path) -> None:
@@ -661,15 +679,22 @@ def lav_billeder(artikler: list[dict]) -> None:
                 continue
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
+        farve = KATEGORI_FARVER.get(a.get("kategori"), "varm cremehvid (#f7f3ec)")
         prompt = (
-            "Minimalistisk redaktionel illustration i en fast husstil, som en leder-"
-            "illustration i en fornem avis: flad vektorstil med let papirtekstur, "
-            "varm cremehvid baggrund (#f7f3ec), mørke blæk-detaljer (#1e1b2e) og "
-            "én lilla accentfarve (#5b4bf0) plus højst to dæmpede støttefarver. "
-            "ÉN enkel, klog visuel metafor for emnet med masser af luft omkring - "
-            "aldrig en collage. "
-            "UNDGÅ ALTID: robotter, humanoider, kredsløb, printplader, lysende "
-            "hjerner, svævende ikoner, skærmbilleder, tekst, bogstaver, tal og logoer. "
+            "Eksklusiv redaktionel 3D-render i cinematisk stil, som marketing-art "
+            "fra et førende tech-brand: bløde, taktile 3D-former i matte, stoflige "
+            "materialer (mat keramik, papir, frostet glas, børstet metal), "
+            "fotorealistisk studielys med bløde skygger og let dybdeskarphed. "
+            f"Rolig scene med ensfarvet baggrund i {farve}, og én klar lilla "
+            "accentfarve (#5b4bf0) som gennemgående signatur plus højst to "
+            "dæmpede støttefarver. "
+            "ÉN enkel, klog visuel metafor for emnet - ét stort hovedmotiv, "
+            "elegant komposition med luft omkring, aldrig en collage. "
+            "Metaforen skal have et lille dramatisk twist eller en overraskelse, "
+            "der vækker nysgerrighed og gør, at man MÅ læse historien. "
+            "UNDGÅ ALTID: mennesker, ansigter, hænder, robotter, humanoider, "
+            "kredsløb, printplader, lysende hjerner, skærmbilleder, tekst, "
+            "bogstaver, tal og logoer. "
             f"Emnet der skal illustreres: {a['rubrik']}. "
             f"Kontekst: {a.get('resume_da', '')[:150]}")
         body = json.dumps({
