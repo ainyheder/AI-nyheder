@@ -151,7 +151,7 @@ def crawl_feed(feed: dict) -> tuple[dict, list[dict], str | None]:
         else parse_atom(rod)
 
     rensede = []
-    for a in artikler[:MAX_PER_FEED]:
+    for a in artikler[:feed.get("max", MAX_PER_FEED)]:
         if not a["titel"] or not a["link"]:
             continue
         a["kilde"] = feed["navn"]
@@ -334,6 +334,11 @@ eller sammenligningstal, SKAL de konkrete tal med i genfortællingen - i
 nøgletal-fliserne, detaljerne og/eller sektionerne. Tal må ALDRIG koges væk
 til vage ord som "markant bedre".
 
+Nøgletal-fliserne er KUN til tal med reel nyhedsværdi: benchmark-scores,
+priser, hastigheder, procenter, brugertal og beløb. Brug ALDRIG fyldtal som
+antal forfattere, filstørrelser, sidetal, årstal eller versionsnumre.
+Er der ingen meningsfulde tal, SKAL listen være tom.
+
 Svar KUN med ét JSON-objekt:
 {
  "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon,
@@ -357,6 +362,21 @@ Svar KUN med ét JSON-objekt:
 }"""
 
 
+# Ekstra instruks når artiklen er en forskningsartikel (arXiv m.fl.):
+# formidling frem for akademiske fyldtal.
+SYSTEM_BRIEF_FORSKNING = """
+
+SÆRLIGT FOR DENNE ARTIKEL - DET ER EN VIDENSKABELIG FORSKNINGSARTIKEL:
+- Fortæl som en begejstret formidler: Hvad har forskerne opdaget, hvad er
+  det NYE, og hvad kan det bruges til ude i virkeligheden?
+- Nævn ALDRIG antal forfattere, dokumentstørrelse, sidetal eller udgivelsesdato.
+- "noegletal" skal som regel være en TOM liste. Kun hvis artiklen rapporterer
+  konkrete resultater (fx "3x hurtigere" eller "92 % nøjagtighed"), må de med.
+- "betydning" er den vigtigste del: Gør opdagelsen jordnær og konkret.
+- Er indholdet så smalt, at det ikke kan gøres relevant for almindelige
+  mennesker, så skriv kort og nøgternt - pust det ALDRIG kunstigt op."""
+
+
 # Ord der afslører, at et billede er en graf/benchmark - bruges som
 # deterministisk sikkerhedsnet, hvis AI'en ikke selv vælger nogen figurer.
 FIGUR_ORD = re.compile(
@@ -367,8 +387,9 @@ FIGUR_ORD = re.compile(
 def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
     """Laver et komplet dansk brief ud fra artiklens fulde tekst."""
     try:
+        er_forskning = "arxiv" in a.get("kilde", "").lower() or a.get("kategori") == "Forskning"
         r = parse_json_svar(kald_ai(
-            SYSTEM_BRIEF,
+            SYSTEM_BRIEF + (SYSTEM_BRIEF_FORSKNING if er_forskning else ""),
             f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}",
             1500))
         if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
@@ -383,7 +404,8 @@ def dybe_briefs(artikler: list[dict]) -> None:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
     if GENKOER_FILTER:
         kandidater = [a for a in artikler[:DYBDE_ANTAL]
-                      if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]).lower()]
+                      if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]
+                                            + " " + a["kilde"]).lower()]
         print(f"📰 Genkører {len(kandidater)} artikler der matcher '{GENKOER_FILTER}'")
     else:
         kandidater = [a for a in artikler[:DYBDE_ANTAL]
@@ -446,7 +468,7 @@ def dybe_briefs(artikler: list[dict]) -> None:
 
 # ----- Indholdskategorier (AI vælger kategori ud fra indholdet) ----------------
 
-KATEGORIER = ["Lanceringer", "Benchmarks", "Hverdags-AI", "Penge & marked",
+KATEGORIER = ["Lanceringer", "Hverdags-AI", "Penge & marked",
               "Politik & jura", "Samfund & etik", "Forskning"]
 
 SYSTEM_KATEGORI = f"""Du analyserer AI-nyheder for en almindelig dansker, der vil
@@ -455,8 +477,8 @@ opdage muligheder for at tjene penge og være forberedt på fremtiden.
 For hver artikel giver du:
 
 1) "kategori" - PRÆCIS ÉN fra denne liste (skriv navnet nøjagtigt):
-- Lanceringer: nye modeller, produkter og funktioner der udgives
-- Benchmarks: tests, sammenligninger og målinger af modellers ydeevne
+- Lanceringer: nye modeller, produkter og funktioner - inkl. tests,
+  benchmarks og sammenligninger af modellers ydeevne
 - Hverdags-AI: værktøjer og funktioner almindelige mennesker selv kan bruge
 - Penge & marked: investeringer, opkøb, økonomi, aktier, forretning
 - Politik & jura: lovgivning, retssager, ophavsret, sanktioner, regulering
@@ -848,6 +870,11 @@ def main() -> None:
             pass
 
     print()
+    # Kategorien "Benchmarks" er nedlagt - gamle artikler flyttes til Lanceringer
+    for a in unikke:
+        if a.get("kategori") == "Benchmarks":
+            a["kategori"] = "Lanceringer"
+
     omskriv_nye(unikke, cache)
     klassificer(unikke)
     unikke = saml_dublet_historier(unikke)

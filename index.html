@@ -616,7 +616,7 @@ function brodtekst(a) {
 
 /* ---------- Rendering ---------- */
 
-const KATEGORI_ORDEN = ["Lanceringer", "Benchmarks", "Hverdags-AI", "Penge & marked",
+const KATEGORI_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
                         "Politik & jura", "Samfund & etik", "Forskning"];
 
 function tegnFiltre() {
@@ -654,7 +654,9 @@ function prioAf(a) {
 function filtrerede() {
   const q = sogeTekst.toLowerCase();
   const liste = artikler.filter(a =>
-    (aktivKategori === "Alle" || a.kategori === aktivKategori) &&
+    // Forskning vises KUN under sit eget filter - aldrig under "Alle"
+    (aktivKategori === "Alle" ? a.kategori !== "Forskning"
+                              : a.kategori === aktivKategori) &&
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
@@ -811,7 +813,7 @@ function artOverlay(a) {
   return artChips(a) + `<span class="tid-pille">${relativTid(a.dato)}</span>`;
 }
 
-const KAT_ORDEN = ["Lanceringer", "Benchmarks", "Hverdags-AI", "Penge & marked",
+const KAT_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
                    "Politik & jura", "Samfund & etik", "Forskning"];
 
 function mikroHtml(a, id) {
@@ -1014,6 +1016,8 @@ fetch("data/articles.json")
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
   .then(data => {
     artikler = data.artikler;
+    // Benchmarks-kategorien er nedlagt - gamle artikler vises under Lanceringer
+    artikler.forEach(a => { if (a.kategori === "Benchmarks") a.kategori = "Lanceringer"; });
     tegnFiltre(); tegn();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);
