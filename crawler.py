@@ -63,7 +63,7 @@ BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
 BILLED_MAPPE = ROOT / "data" / "img"
 MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel
-BILLED_BREDDE = 640              # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
+BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
 _billed_model = BILLED_MODEL     # billedmodellen (kan også falde tilbage)
@@ -222,7 +222,7 @@ def hent_artikeltekst(a: dict) -> tuple[dict, str, list[dict]]:
         raa = hent_url(a["link"]).decode("utf-8", errors="replace")
         tekst, billeder = udtraek_tekst(raa), udtraek_billeder(raa, a["link"])
     except Exception:                        # paywall, botblokering, timeout …
-        return a, "", []
+        tekst, billeder = "", []             # … men prøv stadig de andre kilder
     for b in billeder:
         b["kilde"] = a["kilde"]
     for kilde in a.get("andre", [])[:2]:     # samme historie hos andre medier
@@ -425,7 +425,19 @@ def dybe_briefs(artikler: list[dict]) -> None:
             if len(tekst) >= MIN_TEKST:
                 med_tekst.append((a, tekst, billeder))
             else:
-                print(f"   ⚠️  {a['kilde']}: kunne ikke hente brødtekst - beholder kort resumé")
+                # Nødplan: kan artiklen ikke hentes (paywall/bot-værn), skriver
+                # vi et kortere brief ud fra RSS-resuméet, så INGEN artikel
+                # står helt uden tekst.
+                nod = (a.get("resume") or "").strip()
+                if tekst.strip() or len(nod) >= 80:
+                    nodtekst = ("OBS: Artiklens fulde tekst kunne ikke hentes. Skriv en "
+                                "KORTERE genfortælling (2 sektioner er fint) KUN ud fra "
+                                "materialet herunder - opdigt ALDRIG tal eller detaljer, "
+                                "der ikke står der.\n\n"
+                                f"{a['titel']}\n\n{nod}{tekst}")
+                    med_tekst.append((a, nodtekst, billeder))
+                else:
+                    print(f"   ⚠️  {a['kilde']}: hverken brødtekst eller resumé - beholder kort resumé")
 
     for i, (a, tekst, billeder) in enumerate(med_tekst, 1):
         r = kald_ai_brief(a, tekst, billeder)
@@ -607,10 +619,22 @@ def _gem_billede(raa: bytes, sti: Path) -> None:
         from PIL import Image
         import io
         img = Image.open(io.BytesIO(raa)).convert("RGB")
-        h = int(img.height * BILLED_BREDDE / img.width)
-        img.resize((BILLED_BREDDE, h)).save(sti, "JPEG", quality=78)
+        if img.width > BILLED_BREDDE:                 # nedskalér kun - opskalér aldrig
+            h = int(img.height * BILLED_BREDDE / img.width)
+            img = img.resize((BILLED_BREDDE, h), Image.LANCZOS)
+        img.save(sti, "JPEG", quality=86)
     except ImportError:
         sti.write_bytes(raa)
+
+
+def _for_lille(sti: Path) -> bool:
+    """True hvis et gemt billede er fra dengang vi nedskalerede til 640px."""
+    try:
+        from PIL import Image
+        with Image.open(sti) as img:
+            return img.width < 800
+    except Exception:
+        return False
 
 
 def lav_billeder(artikler: list[dict]) -> None:
@@ -628,14 +652,26 @@ def lav_billeder(artikler: list[dict]) -> None:
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
-        if sti.exists():                                  # allerede lavet
-            a["billede"] = f"data/img/{navn}"
-            continue
+        if sti.exists():
+            # Gamle billeder i lav opløsning (640px-æraen) laves om én gang
+            if _for_lille(sti):
+                sti.unlink()
+            else:                                         # allerede lavet og skarpt
+                a["billede"] = f"data/img/{navn}"
+                continue
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
-        prompt = (f"Redaktionel nyhedsillustration i moderne, enkel, flad stil med bløde "
-                  f"farver og god kontrast. INGEN tekst, bogstaver, tal eller logoer. "
-                  f"Motiv: {a['rubrik']}. Kontekst: {a.get('resume_da', '')[:150]}")
+        prompt = (
+            "Minimalistisk redaktionel illustration i en fast husstil, som en leder-"
+            "illustration i en fornem avis: flad vektorstil med let papirtekstur, "
+            "varm cremehvid baggrund (#f7f3ec), mørke blæk-detaljer (#1e1b2e) og "
+            "én lilla accentfarve (#5b4bf0) plus højst to dæmpede støttefarver. "
+            "ÉN enkel, klog visuel metafor for emnet med masser af luft omkring - "
+            "aldrig en collage. "
+            "UNDGÅ ALTID: robotter, humanoider, kredsløb, printplader, lysende "
+            "hjerner, svævende ikoner, skærmbilleder, tekst, bogstaver, tal og logoer. "
+            f"Emnet der skal illustreres: {a['rubrik']}. "
+            f"Kontekst: {a.get('resume_da', '')[:150]}")
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["IMAGE"],
