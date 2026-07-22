@@ -50,7 +50,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
-          GENKOER_ALT: ${{ inputs.genkoer_alt }}
+          GENKOER_ALT: ${{ inputs.genkoer_alt || vars.GENKOER_ALT }}
         run: |
           pip install pillow -q
           python3 crawler.py
