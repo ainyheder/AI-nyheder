@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-07-22T10:27:54.784916+00:00",
+  "opdateret": "2026-07-22T10:38:08.313666+00:00",
   "antal": 114,
   "artikler": [
     {
@@ -9,10 +9,9 @@
       "dato": "2026-07-22T06:12:13-04:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
-      "kat_ai": true,
-      "prio": 7,
       "rubrik": "El-firmaer lover at beskytte os mod AI-regning",
       "resume_da": "Store energiselskaber skriver under på en aftale, der skal forhindre, at AI-udviklingen sender elpriserne i vejret for almindelige forbrugere.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Store løfter",
@@ -27,8 +26,6 @@
           "tekst": "Allerede nu viser det store pres fra AI-centrene tænder, da netværksoperatøren PJM står over for at lægge **6.3 milliarder** dollars oven i udgifterne for forbrugere i 13 stater. Kritikerne påpeger, at aftalen er frivillig og helt uden straf, hvilket gør det svært at gribe ind, hvis løfterne bliver brudt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "200",
@@ -43,6 +40,7 @@
           "label": "ekstra omkostninger ventes på elnettet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Næsten 200 organisationer har skrevet under på det såkaldte rate payer protection pledge.",
         "Blandt de nye underskrivere er selskaber som NextEra Energy, Duke Energy, Equinix og Digital Realty.",
@@ -57,7 +55,9 @@
         "Næsten 200 virksomheder har tilsluttet sig aftalen",
         "Aftalen mangler dog reelle straffe ved brud"
       ],
-      "billede": "data/img/190df8c6e736b036.jpg"
+      "billede": "data/img/190df8c6e736b036.jpg",
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "Synthesia’s AI training platform is moving beyond videos into live coaching",
@@ -119,7 +119,7 @@
       "resume": "Power-seeking defined as behaviors where AI systems acquire resources, evade oversight, or resist termination beyond task requirements is identified as a key driver of Loss of Control (LoC) risk. In this work, we introduce SysAdmin, a benchmark that positions frontier language models as autonomous system administrators in a high-fidelity Linux sandbox to measure power-seeking propensity across…",
       "dato": "2026-07-22T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
-      "kategori": "Samfund & etik",
+      "kategori": "Forskning",
       "rubrik": "Ny forskning undersøger magthunger hos avanceret AI",
       "resume_da": "En ny videnskabelig artikel kigger nærmere på, hvordan moderne AI-systemer muligvis kan søge mere kontrol og magt, end vi ønsker.",
       "brief": "",
@@ -294,7 +294,7 @@
       "resume": "Agentic AI is crossing trust boundaries faster than current risk models can represent. Existing approaches provide one of two partial views. They either describe failure mechanisms without producing a transferable residual-risk estimate, or they produce a risk estimate while treating the internal failure path as a black box. We couple those two views by proposing CPSAINT, a seven-layer integrity…",
       "dato": "2026-07-22T00:00:00-04:00",
       "kilde": "arXiv cs.AI",
-      "kategori": "Samfund & etik",
+      "kategori": "Forskning",
       "rubrik": "Ny metode skal tjekke sikkerheden i AI",
       "resume_da": "Forskere har udviklet en ny ramme til at regne på risici og fejl i avancerede AI-systemer.",
       "brief": "",
@@ -753,7 +753,7 @@
     {
       "titel": "Five tech giants are hiding $1.6T in AI debt, using the trick that toppled Enron",
       "link": "https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai",
-      "resume": "Article URL: https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai Comments URL: https://news.ycombinator.com/item?id=48996760 Points: 89 # Comments: 15",
+      "resume": "Article URL: https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai Comments URL: https://news.ycombinator.com/item?id=48996760 Points: 89 # Comments: 16",
       "dato": "2026-07-21T19:11:27+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -869,7 +869,7 @@
     {
       "titel": "AI makes programming differently difficult",
       "link": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/",
-      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 149 # Comments: 127",
+      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 151 # Comments: 127",
       "dato": "2026-07-21T18:30:21+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -2155,10 +2155,9 @@
       "dato": "2026-07-20T16:32:10+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Hverdags-AI",
-      "kat_ai": true,
-      "prio": 6,
       "rubrik": "Ny digital lærer hjælper skolebørn",
       "resume_da": "En ny platform bruger AI til at finde huller i elevers skolearbejde og give dem skræddersyet undervisning i blandt andet matematik.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Skræddersyet til hver elev",
@@ -2169,14 +2168,13 @@
           "tekst": "Når en elev starter på platformen, begynder systemet med at undersøge, hvor der mangler viden. AI-værktøjet diagnosticerer præcist, hvilke faglige mangler eleven har. Derefter bliver der lagt en helt personlig plan for resten af læringsforløbet, så barnet kan arbejde videre med lektioner, der passer nøjagtigt til det niveau, der er brug for."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "YC S26",
           "label": "optaget på Y Combinator hold"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Projektet hedder Bloomy og er en ny digital læringsplatform.",
         "Målgruppen er elever i alderen fra børnehaveklasse til gymnasieforberedende klasser.",
@@ -2189,7 +2187,9 @@
         "Ny platform ved navn Bloomy til skolebørn",
         "Bruger AI til at finde faglige huller",
         "Tilbyder personlige lektioner i matematik og sprog"
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "Adobe camera app’s new feature will critique your photos using AI",
@@ -2252,10 +2252,9 @@
       "dato": "2026-07-20T15:28:32+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "Stop med at gøre AI til et levende væsen",
       "resume_da": "En ekspert advarer mod at betragte AI som en selvstændig tænker. Det er blot et avanceret værktøj bygget på menneskers arbejde.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "En farlig myte",
@@ -2270,8 +2269,6 @@
           "tekst": "Den store fordel ved teknologien er dens bløde og fleksible natur. Hvor ældre programmer tvang mennesker til at tilpasse sig stive systemer, kan AI forme sig efter vores individuelle behov. Det giver os endelig en chance for at tage magten tilbage over vores egne digitale liv."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "50 %",
@@ -2282,6 +2279,7 @@
           "label": "risiko for totalskade ifølge frygtsomme eksperter"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Termen AI stammer helt tilbage fra **1950**'erne i computerens barndom.",
         "Kulturelle ikoner som **The Terminator** og **The Matrix** har skabt en religiøs mytologi i tech-miljøet.",
@@ -2294,7 +2292,9 @@
         "AI bør betragtes som et værktøj, ikke en selvstændig væsen.",
         "Frygten for dommedag bunder i misforstået sci-fi-mytologi.",
         "Teknologien er blot et avanceret mix af menneskers eget arbejde."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "YouTube clarifies policies around AI slop and upsetting videos",
@@ -2874,8 +2874,7 @@
       "kategori": "Samfund & etik",
       "rubrik": "Hvorfor ligner alle AI-logoer det samme?",
       "resume_da": "En sjov sjov tendens viser, at utrolig mange AI-firmaers logoer har en mystisk lighed med anatomiske åbninger.",
-      "kat_ai": true,
-      "prio": 1,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Cirkler og åbninger",
@@ -2890,9 +2889,8 @@
           "tekst": "Det er dog ikke alle, der hopper med på den runde bølge. Firmaer som **DeepSeek** og **Midjourney** skiller sig ud ved at have helt andre maritime designtemaer. De beviser, at man godt kan tænke ud af boksen uden at ligne resten af flokken."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Mange store AI-firmaer bruger runde logoer med et centralt hul.",
         "FastCompany skrev om denne specielle designtrend allerede i 2023.",
@@ -2906,7 +2904,9 @@
         "Runde former skal virke trygge og venlige.",
         "Frygten for at skille sig ud styrer designet.",
         "Kun få firmaer tør prøve noget helt nyt."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 1
     },
     {
       "titel": "AI Mania Is Eviscerating Global Decision-Making",
@@ -4465,8 +4465,7 @@
       "kategori": "Penge & marked",
       "rubrik": "Deutsche Telekom bruger AI til at ændre teleselskabet",
       "resume_da": "Det store teleselskab Deutsche Telekom indgår et samarbejde med OpenAI for at gøre AI til en fast del af hele forretningen.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nye måder at arbejde på",
@@ -4477,9 +4476,8 @@
           "tekst": "En af de store dele af aftalen fokuserer på at ændre den fremtidige brug af stemmebaseret kommunikation. Ved at udnytte den nyeste AI-teknologi vil selskabet forbedre de oplevelser, som kunderne møder, når de er i kontakt med virksomheden. Det skal gøre hverdagen nemmere og mere effektiv for både ansatte og kunder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Deutsche Telekom samarbejder med OpenAI om at omdanne virksomheden.",
         "Kundeservice bliver en af de primære modtagere af de nye AI-løsninger.",
@@ -4492,7 +4490,9 @@
         "Deutsche Telekom bliver en AI-drevet virksomhed",
         "Samarbejdet med OpenAI omfatter kundeservice og netværk",
         "Fremtidens stemmeteknologi er en vigtig del af planen"
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "Getting started with ChatGPT",
@@ -5159,8 +5159,7 @@
       "kategori": "Penge & marked",
       "rubrik": "ChatGPT vinder frem over hele jorden",
       "resume_da": "Nye tal fra OpenAI viser, at brugen af ChatGPT vokser markant på tværs af sprog og landegrænser verden over.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Voksende global interesse",
@@ -5171,9 +5170,8 @@
           "tekst": "Efterhånden som AI-systemet bliver bedre, følger brugerne med ved at udvide deres forbrug. Udviklingen viser en klar tendens til, at folk ikke blot nøjes med det basale, men i højere grad udforsker hele paletten af muligheder, som platformen tilbyder i hverdagen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI Signals står bag de nye opgørelser om udbredelsen.",
         "Brugerne over hele kloden øger deres daglige forbrug af AI.",
@@ -5185,7 +5183,9 @@
         "ChatGPT vokser globalt set.",
         "Brugerne udforsker flere funktioner.",
         "Væksten dækker mange sprog."
-      ]
+      ],
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "Introducing computer use in Gemini 3.5 Flash",
