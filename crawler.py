@@ -63,8 +63,7 @@ MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
 BILLED_MAPPE = ROOT / "data" / "img"
-MAX_BILLEDER_PR_KOERSEL = 250    # MIDLERTIDIGT hævet til engangs-indhentning af
-                                 # hele arkivet - sættes tilbage til 35 bagefter
+MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel (værn mod løbske omkostninger)
 BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
