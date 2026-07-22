@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Radar · AI-nyheder på letlæst dansk</title>
+<title>AI-nyheder · Dagens AI på letlæst dansk</title>
 <meta name="description" content="Dagens AI-nyheder omskrevet til kort, letlæst dansk – med kunst til hver historie.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ================================================================
-   AI RADAR · magasin-design
+   AI-NYHEDER · magasin-design
    Farver, skrifter og afstande styres af variablerne i :root.
    ================================================================ */
 :root {
@@ -405,7 +405,7 @@ footer a { color: var(--accent); }
   <div class="topbar-inner">
     <a class="brand" href="#">
       <span class="puls"></span>
-      <span class="brand-navn">AI<em>Radar</em></span>
+      <span class="brand-navn">AI<em>-nyheder</em></span>
       <span class="brand-dato" id="datoIdag"></span>
     </a>
     <div class="filtre" id="filtre"></div>
@@ -438,12 +438,12 @@ footer a { color: var(--accent); }
 <footer>
   Nyheder samles automatisk og omskrives til letlæst dansk med AI ·
   Kunstværkerne er genereret unikt til hver historie ·
-  <a href="https://github.com/freaksenfreakshow-max/ai-radar">Koden på GitHub</a>
+  <a href="https://github.com/ainyheder/AI-nyheder">Koden på GitHub</a>
 </footer>
 
 <script>
 /* ================================================================
-   AI RADAR · logik
+   AI-NYHEDER · logik
    1) hent data/articles.json  2) tegn hero + mosaik-grid
    3) generativ kunst pr. artikel (deterministisk ud fra titlen)
    ================================================================ */

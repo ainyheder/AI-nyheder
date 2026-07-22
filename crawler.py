@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI Radar - crawler + AI-omskrivning
+AI-nyheder - crawler + AI-omskrivning
 ===================================
 1. Henter AI-nyheder fra RSS/Atom-feeds (feeds.json)
 2. Omskriver hver artikel til ULTRAKORT, letlæst dansk med Claude API
@@ -68,7 +68,7 @@ BILLED_BREDDE = 640              # nedskaleres til denne bredde (kræver pillow,
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
 _billed_model = BILLED_MODEL     # billedmodellen (kan også falde tilbage)
 
-USER_AGENT = "Mozilla/5.0 (compatible; AIRadarCrawler/2.0; +https://github.com)"
+USER_AGENT = "Mozilla/5.0 (compatible; AInyhederCrawler/2.0; +https://github.com)"
 NS = {"atom": "http://www.w3.org/2005/Atom"}
 
 

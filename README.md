@@ -1,4 +1,4 @@
-# 🛰️ AI Radar
+# 🛰️ AI-nyheder
 
 Et lille AI-nyhedsmagasin: samler automatisk AI-nyheder fra gode kilder, **omskriver dem til ultrakort, letlæst dansk med Claude**, og viser dem på en magasin-forside med unik genereret kunst til hver historie.
 
@@ -34,15 +34,15 @@ GitHub Actions kører crawleren automatisk hver 6. time, og GitHub Pages hoster 
 ### 1. Læg projektet på GitHub
 
 1. Opret en konto på [github.com](https://github.com), hvis du ikke har en
-2. Klik **New repository**, kald det f.eks. `ai-radar`, vælg **Public** (kræves for gratis GitHub Pages)
+2. Klik **New repository**, kald det f.eks. `AI-nyheder`, vælg **Public** (kræves for gratis GitHub Pages)
 3. Åbn en terminal i denne mappe og kør:
 
 ```bash
 git init
 git add .
-git commit -m "Første version af AI Radar"
+git commit -m "Første version af AI-nyheder"
 git branch -M main
-git remote add origin https://github.com/DIT-BRUGERNAVN/ai-radar.git
+git remote add origin https://github.com/DIT-BRUGERNAVN/AI-nyheder.git
 git push -u origin main
 ```
 
@@ -51,7 +51,7 @@ git push -u origin main
 1. Gå til dit repo på GitHub → **Settings** → **Pages**
 2. Under *Build and deployment* → *Source*: vælg **Deploy from a branch**
 3. Vælg branch **main** og mappen **/ (root)** → **Save**
-4. Efter et minut ligger siden på `https://DIT-BRUGERNAVN.github.io/ai-radar/` 🎉
+4. Efter et minut ligger siden på `https://DIT-BRUGERNAVN.github.io/AI-nyheder/` 🎉
 
 ### 3. Tjek at automatikken kører
 
@@ -70,8 +70,8 @@ Kernen er **Git + GitHub**: I har hver jeres lokale kopi og arbejder på hver je
 ### Første gang (gøres af jer begge)
 
 ```bash
-git clone https://github.com/BRUGERNAVN/ai-radar.git
-cd ai-radar
+git clone https://github.com/BRUGERNAVN/AI-nyheder.git
+cd AI-nyheder
 ```
 
 ### Den daglige arbejdsgang
