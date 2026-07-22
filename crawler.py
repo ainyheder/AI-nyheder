@@ -1017,35 +1017,31 @@ Svar KUN med ét JSON-objekt:
 
 
 def _uge_side_html(d: dict) -> str:
-    """Renderer den statiske uge.html som et lille ugemagasin med billeder."""
+    """Ugemagasinet: mørk forside, nedtælling og kategorifarvede kort."""
     from urllib.parse import quote
+    TONE = {"Lanceringer": "#e7e3f7", "Hverdags-AI": "#e2eadd",
+            "Penge & marked": "#f0e4c8", "Politik & jura": "#dde5ee",
+            "Samfund & etik": "#f4e0d9", "Forskning": "#e2e7ee"}
     historier = d.get("historier", [])
+    forside_billede = (historier[0].get("billede") or "assets/og.png") if historier else "assets/og.png"
+    stats = d.get("stats", {})
 
-    def _img(h, klasse):
-        b = h.get("billede", "")
-        if not b:
-            return ""
-        return (f'<img class="{klasse}" src="{html.escape(b)}" alt="" loading="lazy" '
-                'onerror="this.remove()">')
-
-    dele = []
+    kort = []
     for nr, h in enumerate(historier, 1):
         led = f"{SITE_URL}/#a=" + quote(h.get("link", ""), safe="")
-        if nr == 1:
-            dele.append(f"""<a class="uge-hero" href="{led}">
-{_img(h, "uge-hero-billede")}
-<div class="uge-hero-tekst"><span class="uge-nr">1</span>
+        tone = TONE.get(h.get("kategori", ""), "#efece4")
+        billede = (f'<div class="k-billede"><img src="{html.escape(h.get("billede", ""))}" alt="" '
+                   'loading="lazy" onerror="this.parentNode.remove()"></div>') if h.get("billede") else ""
+        kort.append(f"""<a class="k {'k-flip' if nr % 2 == 0 else ''}" href="{led}" style="--tone:{tone}">
+<span class="k-nr">{nr}</span>
+{billede}
+<div class="k-tekst">
+<span class="k-kat">{html.escape(h.get("kategori", ""))}</span>
 <h3>{html.escape(h.get("overskrift", ""))}</h3>
 <p>{html.escape(h.get("tekst", ""))}</p>
-<span class="uge-laes">Læs hele historien →</span></div></a>""")
-        else:
-            dele.append(f"""<a class="uge-kort" href="{led}">
-{_img(h, "uge-thumb")}
-<div class="uge-kort-tekst"><span class="uge-nr">{nr}</span>
-<h3>{html.escape(h.get("overskrift", ""))}</h3>
-<p>{html.escape(h.get("tekst", ""))}</p>
-<span class="uge-laes">Læs hele historien →</span></div></a>""")
-    historie_html = "".join(dele)
+<span class="k-laes">Læs hele historien →</span>
+</div></a>""")
+    kort_html = "".join(kort)
     dato = datetime.fromisoformat(d["dato"]).strftime("%d.%m.%Y")
     return f"""<!DOCTYPE html>
 <html lang="da">
@@ -1054,69 +1050,93 @@ def _uge_side_html(d: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ugens AI-overblik · uge {d.get("uge_nr", "")} · AI-nyheder</title>
 <meta name="description" content="{html.escape(d.get("indledning", ""))[:150]}">
-<meta name="theme-color" content="#f4f2ec">
+<meta name="theme-color" content="#191714">
 <meta property="og:title" content="Ugens AI-overblik: {html.escape(d.get("rubrik", ""))}">
 <meta property="og:description" content="{html.escape(d.get("indledning", ""))[:150]}">
-<meta property="og:image" content="{SITE_URL}/{html.escape(historier[0].get("billede", "assets/og.png") or "assets/og.png") if historier else "assets/og.png"}">
+<meta property="og:image" content="{SITE_URL}/{html.escape(forside_billede)}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {{ --bg:#f4f2ec; --bg-kort:#fff; --blaek:#191714; --blaek-svag:#6d675d; --linje:#e2ddd2;
---accent:#5b4bf0; --accent-svag:#ecebfd; --radius:18px;
---skygge:0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+--accent:#5b4bf0; --accent-svag:#ecebfd; --radius:20px;
+--skygge:0 2px 4px rgba(25,23,20,.05), 0 16px 44px rgba(25,23,20,.10);
 --font-ui:"Inter",sans-serif; --font-display:"Fraunces",Georgia,serif; }}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{font-family:var(--font-ui);background:var(--bg);color:var(--blaek);line-height:1.6}}
 a{{color:inherit;text-decoration:none}}
-.topbar{{position:sticky;top:0;z-index:90;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--linje)}}
-.topbar-inner{{padding:14px 28px;display:flex;align-items:center;gap:14px}}
-.brand{{display:flex;align-items:baseline;gap:10px}}
-.brand-navn{{font-family:var(--font-display);font-weight:900;font-size:24px;letter-spacing:-.03em}}
-.brand-navn em{{font-style:normal;color:var(--accent)}}
-.tilbage{{margin-left:auto;font-size:13px;font-weight:700;border:1px solid var(--linje);background:var(--bg-kort);padding:8px 16px;border-radius:999px}}
-.tilbage:hover{{border-color:var(--accent);color:var(--accent)}}
-main{{max-width:820px;margin:0 auto;padding:44px 24px 80px}}
-.kicker{{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}}
-h1{{font-family:var(--font-display);font-weight:900;letter-spacing:-.02em;font-size:clamp(28px,5vw,44px);line-height:1.08;margin-bottom:14px}}
-.manchet{{font-size:17px;line-height:1.65;color:var(--blaek-svag);margin-bottom:30px}}
-.uge-nr{{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:14px;margin-bottom:10px}}
-.uge-hero{{display:block;background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);overflow:hidden;box-shadow:var(--skygge);margin-bottom:18px;transition:transform .15s}}
-.uge-hero:hover{{transform:translateY(-3px)}}
-.uge-hero-billede{{width:100%;aspect-ratio:21/9;object-fit:cover;display:block}}
-.uge-hero-tekst{{padding:24px 28px 26px}}
-.uge-hero h3{{font-family:var(--font-display);font-weight:900;font-size:26px;line-height:1.15;margin-bottom:10px}}
-.uge-hero p{{font-size:15.5px;line-height:1.7;color:var(--blaek)}}
-.uge-kort{{display:flex;gap:0;background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);overflow:hidden;box-shadow:var(--skygge);margin-bottom:14px;transition:transform .15s}}
-.uge-kort:hover{{transform:translateY(-2px)}}
-.uge-thumb{{width:190px;min-height:100%;object-fit:cover;flex:none}}
-.uge-kort-tekst{{padding:18px 24px}}
-.uge-kort h3{{font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:6px}}
-.uge-kort p{{font-size:14.5px;line-height:1.65;color:var(--blaek)}}
-.uge-laes{{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--accent)}}
-.tendens{{background:var(--accent-svag);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:18px 22px;margin:28px 0;font-size:15.5px;line-height:1.7}}
-.tendens b{{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}}
-.mail-boks{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin-top:30px;text-align:center}}
+
+/* ---- Magasinforsiden ---- */
+.omslag{{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#191714}}
+.omslag img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}}
+.omslag::after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,23,20,.25) 0%,rgba(25,23,20,.05) 35%,rgba(25,23,20,.88) 100%)}}
+.omslag-top{{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;gap:14px;padding:18px 28px}}
+.o-brand{{font-family:var(--font-display);font-weight:900;font-size:22px;letter-spacing:-.03em;color:#fff}}
+.o-brand em{{font-style:normal;color:#b3aaff}}
+.o-tilbage{{margin-left:auto;font-size:13px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.4);padding:8px 16px;border-radius:999px;backdrop-filter:blur(6px)}}
+.o-tilbage:hover{{background:rgba(255,255,255,.15)}}
+.omslag-indhold{{position:relative;z-index:2;padding:0 28px 54px;max-width:900px;margin:0 auto;width:100%}}
+.o-kicker{{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:16px}}
+.omslag h1{{font-family:var(--font-display);font-weight:900;letter-spacing:-.02em;font-size:clamp(34px,6vw,60px);line-height:1.04;margin-bottom:14px;text-shadow:0 2px 24px rgba(0,0,0,.35)}}
+.o-manchet{{font-size:17px;line-height:1.6;max-width:56ch;color:rgba(255,255,255,.92)}}
+.o-stats{{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap}}
+.o-stat b{{display:block;font-family:var(--font-display);font-size:26px;font-weight:900;line-height:1}}
+.o-stat span{{font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.75)}}
+
+/* ---- Nedtællingen ---- */
+main{{max-width:900px;margin:0 auto;padding:54px 24px 80px}}
+.ned-titel{{font-family:var(--font-display);font-weight:900;font-size:clamp(22px,3.5vw,30px);letter-spacing:-.01em;margin-bottom:22px}}
+.ned-titel em{{font-style:normal;color:var(--accent)}}
+.k{{position:relative;display:flex;background:var(--tone,#fff);border:1px solid var(--linje);border-radius:var(--radius);overflow:hidden;box-shadow:var(--skygge);margin-bottom:22px;transition:transform .16s}}
+.k:hover{{transform:translateY(-4px) rotate(-.3deg)}}
+.k-flip{{flex-direction:row-reverse}}
+.k-flip:hover{{transform:translateY(-4px) rotate(.3deg)}}
+.k-billede{{flex:0 0 42%;min-height:230px}}
+.k-billede img{{width:100%;height:100%;object-fit:cover;display:block}}
+.k-tekst{{flex:1;padding:26px 30px;display:flex;flex-direction:column;justify-content:center}}
+.k-nr{{position:absolute;top:10px;left:18px;z-index:2;font-family:var(--font-display);font-weight:900;font-size:92px;line-height:1;color:var(--accent);opacity:.16;pointer-events:none}}
+.k-flip .k-nr{{left:auto;right:18px}}
+.k-kat{{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}}
+.k h3{{font-family:var(--font-display);font-weight:900;font-size:clamp(20px,3vw,26px);line-height:1.12;margin-bottom:10px}}
+.k p{{font-size:15px;line-height:1.7}}
+.k-laes{{margin-top:12px;font-size:13px;font-weight:700;color:var(--accent)}}
+
+/* ---- Rød tråd + mail ---- */
+.tendens{{background:var(--blaek);color:#fff;border-radius:var(--radius);padding:34px 38px;margin:40px 0 0}}
+.tendens b{{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b3aaff;margin-bottom:12px}}
+.tendens p{{font-family:var(--font-display);font-size:clamp(18px,2.6vw,23px);font-weight:600;line-height:1.45}}
+.mail-boks{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin-top:22px;text-align:center;font-size:14.5px}}
 .mail-boks a{{color:var(--accent);font-weight:700}}
 footer{{border-top:1px solid var(--linje);padding:30px;text-align:center;font-size:12px;color:var(--blaek-svag)}}
 footer a{{color:var(--accent)}}
-@media (max-width:640px){{.uge-kort{{flex-direction:column}}.uge-thumb{{width:100%;aspect-ratio:16/9}}}}
+@media (max-width:680px){{.k,.k-flip{{flex-direction:column}}.k-billede{{flex:none;height:190px}}.omslag{{min-height:64vh}}}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="topbar-inner">
-<a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
-<a class="tilbage" href="./">← Dagens nyheder</a>
-</div></div>
-<main>
-<div class="kicker">Ugens AI-overblik · uge {d.get("uge_nr", "")} · {dato}</div>
+<header class="omslag">
+<img src="{html.escape(forside_billede)}" alt="" onerror="this.remove()">
+<div class="omslag-top">
+<a class="o-brand" href="./">AI<em>-nyheder</em></a>
+<a class="o-tilbage" href="./">← Dagens nyheder</a>
+</div>
+<div class="omslag-indhold">
+<span class="o-kicker">Ugens AI-overblik · uge {d.get("uge_nr", "")} · {dato}</span>
 <h1>{html.escape(d.get("rubrik", ""))}</h1>
-<p class="manchet">{html.escape(d.get("indledning", ""))}</p>
-{historie_html}
-<div class="tendens"><b>Ugens røde tråd</b>{html.escape(d.get("tendens", ""))}</div>
-<div class="mail-boks">Vil du have ugens overblik hver fredag?
-Abonnér med din feed-læser: <a href="feed-uge.xml">ugens RSS-feed</a> — eller følg med her på siden.</div>
+<p class="o-manchet">{html.escape(d.get("indledning", ""))}</p>
+<div class="o-stats">
+<div class="o-stat"><b>{stats.get("historier", "")}</b><span>historier fulgt</span></div>
+<div class="o-stat"><b>{stats.get("kilder", "")}</b><span>kilder</span></div>
+<div class="o-stat"><b>5</b><span>du SKAL kende</span></div>
+</div>
+</div>
+</header>
+<main>
+<h2 class="ned-titel">Ugens <em>5 vigtigste</em> historier</h2>
+{kort_html}
+<div class="tendens"><b>Ugens røde tråd</b><p>{html.escape(d.get("tendens", ""))}</p></div>
+<div class="mail-boks">Vil du have ugens overblik hver fredag? Abonnér med din feed-læser:
+<a href="feed-uge.xml">ugens RSS-feed</a> — eller følg med her på siden.</div>
 </main>
 <footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="laer.html">Lær AI</a></footer>
 <!-- Cloudflare Web Analytics -->
@@ -1176,6 +1196,7 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
     if len(friske) < 5:
         return
     billede_af = {a["link"]: a.get("billede", "") for a in friske}
+    kategori_af = {a["link"]: a.get("kategori", "") for a in friske}
     payload = [{"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
                 "betydning": a.get("betydning", "")[:200], "kategori": a.get("kategori"),
                 "link": a["link"]} for a in friske[:8]]
@@ -1192,8 +1213,11 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
             "historier": [{"overskrift": str(h.get("overskrift", "")).strip(),
                            "tekst": str(h.get("tekst", "")).strip(),
                            "link": str(h.get("link", "")).strip(),
-                           "billede": billede_af.get(str(h.get("link", "")).strip(), "")}
+                           "billede": billede_af.get(str(h.get("link", "")).strip(), ""),
+                           "kategori": kategori_af.get(str(h.get("link", "")).strip(), "")}
                           for h in r["historier"][:5]],
+            "stats": {"historier": len(friske),
+                      "kilder": len({a["kilde"] for a in friske})},
             "tendens": str(r.get("tendens", "")).strip()}
     UGE_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     UGE_HTML.write_text(_uge_side_html(data), encoding="utf-8")
