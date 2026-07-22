@@ -408,7 +408,47 @@ FIGUR_ORD = re.compile(
     r"result|table|tabel|graf|maaling|diagram", re.I)
 
 
-def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
+# ----- Redaktør-agenten: kvalitetstjek FØR udgivelse ---------------------------
+
+SYSTEM_REDAKTOER = """Du er en benhård, men fair redaktionschef på et dansk
+AI-nyhedssite for almindelige mennesker. Du får et artikel-brief og afgør, om
+det må udgives. Du tjekker KUN disse regler:
+
+1. RUBRIK: max 8 ord, letlæst dansk, vækker ægte nysgerrighed uden clickbait.
+   Ordene "kunstig intelligens" er FORBUDT (skriv "AI").
+2. SPROG: hverdagsdansk uden jargon og fyld. Sektionerne skal sige noget
+   FORSKELLIGT - ikke gentage hinanden med nye ord. Ingen **stjerner** i
+   mini-overskrifterne.
+3. NØGLETAL: kun tal med forside-værdi (scores, priser, beløb, hastigheder).
+   Årstal, antal forfattere, spilletid og lignende trivia er FORBUDT som
+   nøgletal. En tom liste er helt fint.
+4. BETYDNING: skal være konkret for almindelige danskere - ikke floskler som
+   "AI ændrer vores hverdag".
+
+VIGTIGT: Godkend alt, der overholder reglerne - omskrivninger koster penge.
+Afvis KUN ved klare regelbrud, og vær så konkret i dine noter, at skribenten
+kan rette det i ét forsøg.
+
+Svar KUN med JSON: {"godkendt": true/false, "problemer": ["kort, konkret note", ...]}"""
+
+
+def redaktoer_tjek(a: dict) -> dict | None:
+    """Lader redaktør-agenten vurdere et netop skrevet brief. None ved fejl."""
+    try:
+        udkast = {"rubrik": a.get("rubrik"), "resume": a.get("resume_da"),
+                  "sektioner": a.get("sektioner"), "noegletal": a.get("noegletal"),
+                  "betydning": a.get("betydning"), "kategori": a.get("kategori")}
+        r = parse_json_svar(kald_ai(
+            SYSTEM_REDAKTOER, json.dumps(udkast, ensure_ascii=False), 400))
+        if isinstance(r, dict) and "godkendt" in r:
+            return r
+    except Exception as fejl:
+        print(f"  ⚠️  Redaktør-tjek fejlede: {type(fejl).__name__}")
+    return None
+
+
+def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
+                  redaktoer_noter: str = "") -> dict | None:
     """Laver et komplet dansk brief ud fra artiklens fulde tekst."""
     try:
         er_forskning = "arxiv" in a.get("kilde", "").lower() or a.get("kategori") == "Forskning"
@@ -416,10 +456,12 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
         sys_prompt = SYSTEM_BRIEF \
             + (SYSTEM_BRIEF_FORSKNING if er_forskning else "") \
             + (SYSTEM_BRIEF_LANG if er_vigtig and not er_forskning else "")
+        bruger = f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}"
+        if redaktoer_noter:
+            bruger += ("\n\nREDAKTØRENS NOTER TIL DIT FORRIGE UDKAST - "
+                       f"RET PRÆCIS DISSE PROBLEMER:\n{redaktoer_noter}")
         r = parse_json_svar(kald_ai(
-            sys_prompt,
-            f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}",
-            2200 if er_vigtig else 1500))
+            sys_prompt, bruger, 2200 if er_vigtig else 1500))
         if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
             return r
     except Exception as fejl:
@@ -467,9 +509,29 @@ def dybe_briefs(artikler: list[dict]) -> None:
                 else:
                     print(f"   ⚠️  {a['kilde']}: hverken brødtekst eller resumé - beholder kort resumé")
 
+    rettet = 0
     for i, (a, tekst, billeder) in enumerate(med_tekst, 1):
         r = kald_ai_brief(a, tekst, billeder)
         if r:
+            _anvend_brief(a, r, billeder)
+            # Redaktør-agenten læser med, FØR briefet udgives.
+            dom = redaktoer_tjek(a)
+            if dom is not None and not dom.get("godkendt", True) and dom.get("problemer"):
+                noter = " · ".join(str(p) for p in dom["problemer"][:4])[:400]
+                print(f"   ✏️  Redaktøren kræver omskrivning: {noter[:110]}")
+                r2 = kald_ai_brief(a, tekst, billeder, redaktoer_noter=noter)
+                if r2:
+                    _anvend_brief(a, r2, billeder)
+                    rettet += 1
+        print(f"   … {i}/{len(med_tekst)}")
+    if rettet:
+        print(f"✏️  Redaktøren fik omskrevet {rettet} af {len(med_tekst)} briefs")
+
+
+def _anvend_brief(a: dict, r: dict, billeder: list[dict]) -> None:
+    """Lægger et AI-brief ind på artiklen (bruges både til første udkast
+    og til redaktørens omskrivninger)."""
+    if True:
             a["rubrik"] = str(r["rubrik"]).strip()
             a["resume_da"] = str(r.get("resume", "")).strip() or a.get("resume_da", "")
             a["sektioner"] = [{"overskrift": str(x.get("overskrift", "")).strip(),
@@ -504,7 +566,6 @@ def dybe_briefs(artikler: list[dict]) -> None:
             a["betydning"] = str(r.get("betydning", "")).strip()
             a["pointer"] = [str(p).strip() for p in r.get("pointer", [])][:4]
             a["billedmotiv"] = str(r.get("billedmotiv", "")).strip()
-        print(f"   … {i}/{len(med_tekst)}")
 
 
 # ----- Indholdskategorier (AI vælger kategori ud fra indholdet) ----------------
@@ -929,6 +990,179 @@ def lav_rss(artikler: list[dict]) -> None:
     print(f"📡 Skrev feed.xml med {len(punkter)} artikler")
 
 
+
+
+# ----- Ugens overblik (fredags-digest + nyhedsbrevs-feed) ----------------------
+
+UGE_JSON = ROOT / "data" / "uge.json"
+UGE_HTML = ROOT / "uge.html"
+UGE_FEED = ROOT / "feed-uge.xml"
+
+SYSTEM_UGE = """Du skriver 'Ugens AI-overblik' for et dansk nyhedssite for
+almindelige mennesker. Du får ugens vigtigste artikler og koger dem ned til
+ét overblik, man kan læse på fem minutter og føle sig HELT opdateret af.
+Skriv levende, letlæst hverdagsdansk. Skriv ALTID "AI" - aldrig "kunstig
+intelligens". Ingen clickbait, ingen floskler.
+
+Svar KUN med ét JSON-objekt:
+{
+ "rubrik": fængende overskrift for ugen, max 10 ord,
+ "indledning": 2-3 sætninger der fanger ugens store linje (max 50 ord),
+ "historier": de 5 vigtigste historier, hver med:
+   [{"overskrift": max 8 ord, "tekst": 50-80 ord om hvad der skete og hvorfor
+     det betyder noget, "link": KOPIÉR artiklens link-felt PRÆCIST}, ...],
+ "tendens": 40-70 ord: Hvad er ugens røde tråd, og hvad skal man holde øje
+   med i næste uge?
+}"""
+
+
+def _uge_side_html(d: dict) -> str:
+    """Renderer den statiske uge.html i sidens design."""
+    from urllib.parse import quote
+    historier = "".join(
+        f"""<div class="uge-kort"><h3>{html.escape(h.get("overskrift", ""))}</h3>
+<p>{html.escape(h.get("tekst", ""))}</p>
+<a class="uge-laes" href="{SITE_URL}/#a={quote(h.get("link", ""), safe="")}">Læs hele historien →</a></div>"""
+        for h in d.get("historier", []))
+    dato = datetime.fromisoformat(d["dato"]).strftime("%d.%m.%Y")
+    return f"""<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ugens AI-overblik · uge {d.get("uge_nr", "")} · AI-nyheder</title>
+<meta name="description" content="{html.escape(d.get("indledning", ""))[:150]}">
+<meta name="theme-color" content="#f4f2ec">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='38' fill='%235b4bf0'/><circle cx='50' cy='50' r='16' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {{ --bg:#f4f2ec; --bg-kort:#fff; --blaek:#191714; --blaek-svag:#6d675d; --linje:#e2ddd2;
+--accent:#5b4bf0; --accent-svag:#ecebfd; --radius:18px;
+--skygge:0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+--font-ui:"Inter",sans-serif; --font-display:"Fraunces",Georgia,serif; }}
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:var(--font-ui);background:var(--bg);color:var(--blaek);line-height:1.6}}
+a{{color:inherit}}
+.topbar{{position:sticky;top:0;z-index:90;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--linje)}}
+.topbar-inner{{padding:14px 28px;display:flex;align-items:center;gap:14px}}
+.brand{{display:flex;align-items:baseline;gap:10px;text-decoration:none}}
+.brand-navn{{font-family:var(--font-display);font-weight:900;font-size:24px;letter-spacing:-.03em}}
+.brand-navn em{{font-style:normal;color:var(--accent)}}
+.tilbage{{margin-left:auto;font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--linje);background:var(--bg-kort);padding:8px 16px;border-radius:999px}}
+.tilbage:hover{{border-color:var(--accent);color:var(--accent)}}
+main{{max-width:760px;margin:0 auto;padding:48px 24px 80px}}
+.kicker{{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}}
+h1{{font-family:var(--font-display);font-weight:900;letter-spacing:-.02em;font-size:clamp(28px,5vw,42px);line-height:1.1;margin-bottom:14px}}
+.manchet{{font-size:17px;line-height:1.65;color:var(--blaek-svag);margin-bottom:34px}}
+.uge-kort{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin:14px 0;box-shadow:var(--skygge)}}
+.uge-kort h3{{font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:8px}}
+.uge-kort p{{font-size:15px;line-height:1.7}}
+.uge-laes{{display:inline-block;margin-top:10px;font-size:13.5px;font-weight:700;color:var(--accent);text-decoration:none}}
+.tendens{{background:var(--accent-svag);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:18px 22px;margin:26px 0;font-size:15.5px;line-height:1.7}}
+.tendens b{{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}}
+.mail-boks{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin-top:34px;text-align:center}}
+.mail-boks a{{color:var(--accent);font-weight:700}}
+footer{{border-top:1px solid var(--linje);padding:30px;text-align:center;font-size:12px;color:var(--blaek-svag)}}
+footer a{{color:var(--accent)}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+<a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+<a class="tilbage" href="./">← Dagens nyheder</a>
+</div></div>
+<main>
+<div class="kicker">Ugens AI-overblik · uge {d.get("uge_nr", "")} · {dato}</div>
+<h1>{html.escape(d.get("rubrik", ""))}</h1>
+<p class="manchet">{html.escape(d.get("indledning", ""))}</p>
+{historier}
+<div class="tendens"><b>Ugens røde tråd</b>{html.escape(d.get("tendens", ""))}</div>
+<div class="mail-boks">Vil du have ugens overblik hver fredag?
+Abonnér med din feed-læser: <a href="feed-uge.xml">ugens RSS-feed</a> — eller følg med her på siden.</div>
+</main>
+<footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="laer.html">Lær AI</a></footer>
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}\'></script>
+</body>
+</html>"""
+
+
+def _uge_feed_xml(d: dict) -> str:
+    from email.utils import format_datetime
+    tekst = html.escape(d.get("indledning", "") + "\n\n" + "\n\n".join(
+        f"{h.get(chr(39)+chr(39), '') if False else h.get('overskrift','')}: {h.get('tekst','')}"
+        for h in d.get("historier", [])))
+    dato = format_datetime(datetime.fromisoformat(d["dato"]))
+    return ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+            "<rss version=\"2.0\"><channel>"
+            "<title>Ugens AI-overblik · AI-nyheder</title>"
+            f"<link>{SITE_URL}/uge.html</link>"
+            "<description>Ugens vigtigste AI-nyheder samlet i ét overblik hver fredag</description>"
+            "<language>da</language>"
+            "<item>"
+            f"<title>{html.escape(d.get('rubrik', ''))}</title>"
+            f"<link>{SITE_URL}/uge.html</link>"
+            f"<guid isPermaLink=\"false\">uge-{d.get('uge', '')}</guid>"
+            f"<pubDate>{dato}</pubDate>"
+            f"<description>{tekst}</description>"
+            "</item></channel></rss>")
+
+
+def lav_ugens_overblik(artikler: list[dict]) -> None:
+    """Skriver ugens digest fredag-søndag (én gang pr. uge) - eller første
+    gang overhovedet, så siden aldrig står tom."""
+    if not API_KEY:
+        return
+    nu = datetime.now(timezone.utc)
+    aar, uge_nr, ugedag = nu.isocalendar()
+    noegle = f"{aar}-{uge_nr}"
+    try:
+        gammel = json.loads(UGE_JSON.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        gammel = {}
+    if gammel.get("uge") == noegle:
+        return                                    # allerede skrevet i denne uge
+    if ugedag < 5 and gammel:
+        return                                    # vent til fredag (5)
+
+    # ugens kandidater: nyeste 7 dage, vigtigst først
+    friske = []
+    for a in artikler:
+        try:
+            alder = (nu - datetime.fromisoformat(a["dato"])).days
+        except (TypeError, ValueError):
+            continue
+        if alder <= 7 and a.get("rubrik") and a.get("kategori") != "Forskning":
+            friske.append(a)
+    friske.sort(key=lambda a: ((a.get("prio") or 5) + (1 if a.get("andre") else 0)), reverse=True)
+    if len(friske) < 5:
+        return
+    payload = [{"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
+                "betydning": a.get("betydning", "")[:200], "kategori": a.get("kategori"),
+                "link": a["link"]} for a in friske[:8]]
+    try:
+        r = parse_json_svar(kald_ai(SYSTEM_UGE, json.dumps(payload, ensure_ascii=False), 2500))
+        if not (r.get("rubrik") and len(r.get("historier", [])) >= 3):
+            raise ValueError("ufuldstændigt uge-svar")
+    except Exception as fejl:
+        print(f"🗞️ ⚠️ Ugens overblik fejlede: {type(fejl).__name__}")
+        return
+    data = {"uge": noegle, "uge_nr": uge_nr, "dato": nu.isoformat(),
+            "rubrik": str(r["rubrik"]).strip(),
+            "indledning": str(r.get("indledning", "")).strip(),
+            "historier": [{"overskrift": str(h.get("overskrift", "")).strip(),
+                           "tekst": str(h.get("tekst", "")).strip(),
+                           "link": str(h.get("link", "")).strip()}
+                          for h in r["historier"][:5]],
+            "tendens": str(r.get("tendens", "")).strip()}
+    UGE_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    UGE_HTML.write_text(_uge_side_html(data), encoding="utf-8")
+    UGE_FEED.write_text(_uge_feed_xml(data), encoding="utf-8")
+    print(f"🗞️ Skrev Ugens overblik (uge {uge_nr}): {data['rubrik']}")
+
+
 # ----- Hovedprogram ----------------------------------------------------------
 
 def main() -> None:
@@ -1042,6 +1276,7 @@ def main() -> None:
     print(f"\n💾 Gemte {len(unikke)} artikler ({omskrevet} på dansk) i "
           f"{OUTPUT_FIL.relative_to(ROOT)}")
     lav_rss(unikke)
+    lav_ugens_overblik(unikke)
 
 
 if __name__ == "__main__":
