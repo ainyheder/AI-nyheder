@@ -54,7 +54,8 @@ GEMINI_PAUSE_SEK = 4             # pause mellem Gemini-kald (gratis-niveauets fa
 
 # --- Dybe briefs (hele artiklen hentes og genfortælles) ---
 DYBDE_ANTAL = 250                # ALLE artikler får komplet brief (loft som sikkerhed)
-BILLED_ANTAL = 30                # men kun de N nyeste får AI-billede (billeder koster)
+BILLED_ANTAL = 250               # ALLE artikler får AI-billede (bagkatalog indhentes
+                                 # gradvist pga. MAX_BILLEDER_PR_KOERSEL)
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 
@@ -62,7 +63,8 @@ MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
 BILLED_MAPPE = ROOT / "data" / "img"
-MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel
+MAX_BILLEDER_PR_KOERSEL = 250    # MIDLERTIDIGT hævet til engangs-indhentning af
+                                 # hele arkivet - sættes tilbage til 35 bagefter
 BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
@@ -375,6 +377,16 @@ Svar KUN med ét JSON-objekt:
 }"""
 
 
+# Ekstra instruks til dagens vigtigste historier: mere dybde, ikke mere fyld.
+SYSTEM_BRIEF_LANG = """
+
+DENNE HISTORIE ER EN AF DAGENS VIGTIGSTE - GIV DEN MERE DYBDE:
+- 4-6 sektioner (stadig 40-80 ord pr. sektion) i stedet for de normale 2-4.
+- 5-7 detaljer og en grundigere "betydning".
+- Mere dybde betyder FLERE konkrete fakta, tal, reaktioner og perspektiver
+  fra kilderne - ALDRIG længere omskrivninger af det samme."""
+
+
 # Ekstra instruks når artiklen er en forskningsartikel (arXiv m.fl.):
 # formidling frem for akademiske fyldtal.
 SYSTEM_BRIEF_FORSKNING = """
@@ -401,10 +413,14 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict]) -> dict | None:
     """Laver et komplet dansk brief ud fra artiklens fulde tekst."""
     try:
         er_forskning = "arxiv" in a.get("kilde", "").lower() or a.get("kategori") == "Forskning"
+        er_vigtig = (a.get("prio") or 0) >= 8 or bool(a.get("andre"))
+        sys_prompt = SYSTEM_BRIEF \
+            + (SYSTEM_BRIEF_FORSKNING if er_forskning else "") \
+            + (SYSTEM_BRIEF_LANG if er_vigtig and not er_forskning else "")
         r = parse_json_svar(kald_ai(
-            SYSTEM_BRIEF + (SYSTEM_BRIEF_FORSKNING if er_forskning else ""),
+            sys_prompt,
             f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}",
-            1500))
+            2200 if er_vigtig else 1500))
         if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
             return r
     except Exception as fejl:
@@ -459,7 +475,7 @@ def dybe_briefs(artikler: list[dict]) -> None:
             a["resume_da"] = str(r.get("resume", "")).strip() or a.get("resume_da", "")
             a["sektioner"] = [{"overskrift": str(x.get("overskrift", "")).strip(),
                                "tekst": str(x.get("tekst", "")).strip()}
-                              for x in r.get("sektioner", []) if x.get("tekst")][:4]
+                              for x in r.get("sektioner", []) if x.get("tekst")][:6]
             a["brief"] = str(r.get("brief", "")).strip()
             def _noegle(u): return str(u or "").split("?")[0].strip()
             kilde_af = {_noegle(b["url"]): (b["url"], b.get("kilde", a["kilde"])) for b in billeder}
