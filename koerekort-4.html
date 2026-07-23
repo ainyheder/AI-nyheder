@@ -89,6 +89,32 @@ footer a { color: var(--accent); }
 .knap-videre:hover { opacity: .9; }
 .knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
   padding: 12px 20px; margin-top: 10px; }
+
+.bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
+.bedoem-knap:disabled { background: var(--linje); color: var(--blaek-svag); cursor: default; }
+.bedoem-knap:not(:disabled):hover { opacity: .9; }
+.svar.valgt { border-color: var(--accent); background: var(--accent-svag); font-weight: 700; }
+.quiz-status { display: none; background: var(--roed-svag); border: 2px solid var(--roed);
+  border-radius: var(--radius); padding: 20px 24px; margin: 18px 0; }
+.quiz-status p { font-size: 15px; margin-bottom: 10px; }
+.igen-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border: none; border-radius: 999px; padding: 11px 22px; cursor: pointer; }
+.igen-knap:hover { background: var(--accent); color: #fff; }
+
+.praktik { background: var(--bg-kort); border: 2px solid var(--accent); border-radius: var(--radius);
+  padding: 24px 28px; margin: 24px 0; box-shadow: var(--skygge); }
+.praktik textarea { font-family: var(--font-ui); font-size: 15px; width: 100%; min-height: 120px;
+  padding: 12px 16px; border: 1px solid var(--linje); border-radius: 10px; background: var(--bg);
+  color: var(--blaek); resize: vertical; margin: 12px 0 4px; }
+.praktik textarea:focus { outline: none; border-color: var(--accent); }
+.praktik-tjekliste { list-style: none; margin: 12px 0 0; padding: 0; display: none; }
+.praktik-tjekliste li { font-size: 14px; margin: 6px 0 6px 0; padding-left: 26px; position: relative; }
+.praktik-tjekliste li::before { content: "✗"; position: absolute; left: 4px; color: var(--roed); font-weight: 700; }
+.praktik-tjekliste li.ok::before { content: "✓"; color: var(--groen); }
+.praktik-tjekliste li.ok { color: var(--blaek-svag); }
+.praktik-godkendt { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
+  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14.5px; margin-top: 12px; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -106,7 +132,7 @@ footer a { color: var(--accent); }
 <span class="modul-tag">Modul 4 af 7 · ca. 10 min</span>
 <h1>Når AI tager fejl</h1>
 <p class="manchet">AI'ens største svaghed er ikke, at den tager fejl — det gør mennesker også. Det er, at den tager fejl med fuldstændig selvsikkerhed. Dette modul gør dig til en venlig, men vaks kontrollant.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Kender du allerede faldgruberne? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Kender du allerede faldgruberne? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
 
 <h2>De tre typiske fejl</h2>
 <ul>
@@ -133,38 +159,38 @@ footer a { color: var(--accent); }
 <div class="facit" id="facit-1"><strong>Du bør se:</strong> måske helt rigtige bøger — og måske titler, der lyder ægte, men er digt. Tjek et par stykker på bibliotek.dk eller Google. Pointen er følelsen: svaret <em>ser</em> lige troværdigt ud, uanset om det er sandt. Derfor tjekker man.</div>
 </div>
 
-<h2 id="quiz">Quiz: Har du fat i det?</h2>
-<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
-
-<div class="quiz-sp" data-sp="1">
-  <div class="sp">1. AI'en underbygger sit svar med en kilde og et link. Hvad gør du?</div>
-  <button class="svar" data-rigtig="nej">Stoler på svaret — kilder betyder, at det er sandt</button>
-  <button class="svar" data-rigtig="ja">Klikker på linket og tjekker, at kilden findes og faktisk siger det påståede</button>
-  <button class="svar" data-rigtig="nej">Ignorerer kilden — links fra AI er altid falske</button>
-  <div class="forklaring">AI kan opdigte kilder, der ser ægte ud — men den giver også tit rigtige. Den eneste måde at vide det på er at klikke og læse efter.</div>
+<h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
+<p>Kontrollant-øvelsen: en prompt, der er bygget til at afsløre gæt. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<div class="praktik">
+  <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
+  <p>Skriv en prompt, der stiller AI'en et faktaspørgsmål (vælg selv emnet) og samtidig kræver kilder OG en vurdering af, hvor sikker den er på svaret.</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Som bog-øvelsen fra modulet — kravet om kilder og sikkerhed tvinger usikkerheden frem i lyset.</p>
+  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
+  <ul class="praktik-tjekliste" id="praktik-liste">
+    <li id="krav-0">Beder om kilder</li>
+    <li id="krav-1">Beder om en sikkerhedsvurdering (fx "hvor sikker er du — i procent?")</li>
+    <li id="krav-2">Er en rigtig besked (mindst 60 tegn)</li>
+  </ul>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
 </div>
 
-<div class="quiz-sp" data-sp="2">
-  <div class="sp">2. Hvorfor kan AI svare forkert om noget, der skete i sidste uge?</div>
-  <button class="svar" data-rigtig="ja">Den er trænet på ældre tekst og kender ikke det nyeste, medmindre den søger på nettet</button>
-  <button class="svar" data-rigtig="nej">Den lyver med vilje for at virke klog</button>
-  <button class="svar" data-rigtig="nej">Nyheder er hemmelige for AI-firmaer</button>
-  <div class="forklaring">Modellens viden stopper ved trænings-tidspunktet. Bed den søge på nettet, når emnet er dagsaktuelt.</div>
+<div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
+<div id="quiz-indhold" style="display:none;">
+<h2 id="quiz">Prøven: Har du fat i det?</h2>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<div id="quiz-omraade"></div>
+<button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
+<div class="quiz-status" id="quiz-status">
+  <p><strong id="quiz-score"></strong> — alle fem skal sidde, før modulet er gennemført. Ingen panik: du får fem nye spørgsmål i næste forsøg.</p>
+  <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
-
-<div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Hvad er en "hallucination" i AI-sammenhæng?</div>
-  <button class="svar" data-rigtig="nej">Når AI'en ser mærkelige ting i billeder</button>
-  <button class="svar" data-rigtig="ja">Når AI'en opdigter noget, der lyder rigtigt, men er forkert</button>
-  <button class="svar" data-rigtig="nej">En teknisk fejl i din skærm</button>
-  <div class="forklaring">Det er ordet for AI'ens selvsikre digt: fakta, navne og kilder, der lyder plausible, men ikke passer. Nu ved du, hvordan du fanger dem.</div>
-</div>
-
 <div class="quiz-resultat" id="quiz-resultat">
   <h3>🎉 Modul 4 gennemført!</h3>
   <p>Du er nu en vaks kontrollant. I modul 5 bruger vi det hele på rigtige hverdagsopgaver.</p>
   <a class="knap-videre" href="koerekort-5.html">Videre til modul 5 →</a>
   <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 
 </main>
@@ -173,6 +199,9 @@ footer a { color: var(--accent); }
 <script>
 (function(){
   var MODUL = 4;
+  var TRAEK = 5;
+  var BANK = [{"sp": "AI'en underbygger sit svar med en kilde og et link. Hvad gør du?", "svar": [["Stoler på svaret — kilder betyder, at det er sandt", false], ["Klikker på linket og tjekker, at kilden findes og faktisk siger det påståede", true], ["Ignorerer kilden — links fra AI er altid falske", false]], "fork": "AI kan opdigte kilder, der ser ægte ud — men giver også tit rigtige. Klik og læs efter."}, {"sp": "Hvorfor kan AI svare forkert om noget, der skete i sidste uge?", "svar": [["Den er trænet på ældre tekst og kender ikke det nyeste uden websøgning", true], ["Den lyver med vilje for at virke klog", false], ["Nyheder er hemmelige for AI-firmaer", false]], "fork": "Modellens viden stopper ved træningstidspunktet. Bed den søge på nettet, når emnet er dagsaktuelt."}, {"sp": "Hvad er en \"hallucination\" i AI-sammenhæng?", "svar": [["Når AI'en ser mærkelige ting i billeder", false], ["Når AI'en opdigter noget, der lyder rigtigt, men er forkert", true], ["En teknisk fejl i din skærm", false]], "fork": "AI'ens selvsikre digt: fakta, navne og kilder, der lyder plausible, men ikke passer."}, {"sp": "Hvordan kan du få AI'ens usikkerhed frem i lyset?", "svar": [["Spørge direkte: \"hvor sikker er du, og hvad bygger du det på?\"", true], ["Det kan ikke lade sig gøre", false], ["Skrive spørgsmålet med store bogstaver", false]], "fork": "Direkte spørgsmål om sikkerhed og grundlag giver ofte overraskende ærlige svar — og afslører gæt."}, {"sp": "Hvad er \"skævheder\" (bias) i AI?", "svar": [["Mønstre fra menneskers tekster — fx fordomme — som AI'en har lært med", true], ["Skæve billeder på skærmen", false], ["En fejl, der kun findes i gratis-udgaver", false]], "fork": "AI'en har lært af menneskers tekster — inklusive vores blinde vinkler. Dem gentager den gerne."}, {"sp": "Hvornår bør du bede AI'en søge på nettet?", "svar": [["Når emnet er dagsaktuelt: priser, nyheder, gældende regler", true], ["Aldrig — nettet gør svarene værre", false], ["Altid — ellers virker den slet ikke", false]], "fork": "Til tidløs viden er modellen fin alene. Til alt, der ændrer sig, skal den have friske oplysninger."}, {"sp": "AI'en henviser til en bestemt lov med paragrafnummer. Før du handler på det?", "svar": [["Tjekker paragraffen hos en officiel kilde, fx retsinformation.dk", true], ["Stoler på den — love ændrer sig sjældent", false], ["Spørger den samme AI \"er du sikker?\" og nøjes med det", false]], "fork": "Paragrafnumre og regler er klassiske hallucinations-ofre. Officiel kilde før handling — altid."}, {"sp": "Hvilket AI-svar bør vække din skepsis MEST?", "svar": [["Et præcist årstal og beløb for noget, der er sket for nylig", true], ["En generel forklaring af et begreb", false], ["Et forslag til en fødselsdagssang", false]], "fork": "Præcise tal om nye ting er dér, hvor gæt ligner viden mest. Generelle forklaringer og kreative opgaver er langt sikrere farvand."}, {"sp": "Hvorfor er \"det lyder rigtigt\" ikke nok?", "svar": [["AI er trænet til at lyde rigtig — også når den gætter forkert", true], ["Rigtige svar lyder altid mærkelige", false], ["Det er nok — sproglig kvalitet er lig med sandhed", false]], "fork": "Flydende sprog er dens speciale, uanset om indholdet holder. Derfor tjekker man indholdet, ikke tonen."}];
+  var KRAV = [{"m": "kilde", "t": "Beder om kilder"}, {"m": "hvor sikker|sikkerhed|procent|%|usikker", "t": "Beder om en sikkerhedsvurdering (fx \"hvor sikker er du — i procent?\")"}, {"laengde": 60, "t": "Er en rigtig besked (mindst 60 tegn)"}];
 
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){
@@ -195,41 +224,129 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Quiz
-  var rigtige = {};
-  document.querySelectorAll('.quiz-sp').forEach(function(sp){
-    sp.querySelectorAll('.svar').forEach(function(knap){
-      knap.addEventListener('click', function(){
-        var erRigtig = knap.getAttribute('data-rigtig') === 'ja';
-        if (erRigtig) {
-          sp.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; k.classList.remove('forkert'); });
-          knap.classList.add('rigtig');
-          sp.querySelector('.forklaring').style.display = 'block';
-          rigtige[sp.getAttribute('data-sp')] = true;
-          tjekFaerdig();
-        } else {
-          knap.classList.add('forkert');
-          knap.disabled = true;
-        }
-      });
+  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  var felt = document.getElementById('praktik-felt');
+  var liste = document.getElementById('praktik-liste');
+  var praktikOk = false;
+
+  function laasPraktikOp(){
+    praktikOk = true;
+    document.getElementById('praktik-godkendt').style.display = 'block';
+    document.getElementById('quiz-laas').style.display = 'none';
+    document.getElementById('quiz-indhold').style.display = 'block';
+    try {
+      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
+      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+    } catch(e) {}
+  }
+
+  document.getElementById('praktik-tjek').addEventListener('click', function(){
+    var tekst = felt.value || '';
+    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    liste.style.display = 'block';
+    var alle = true;
+    KRAV.forEach(function(k, i){
+      var ok;
+      if (k.laengde) { ok = tekst.trim().length >= k.laengde; }
+      else {
+        var fundet = new RegExp(k.m, 'i').test(tekst);
+        ok = k.neg ? !fundet : fundet;
+      }
+      document.getElementById('krav-' + i).className = ok ? 'ok' : '';
+      if (!ok) { alle = false; }
     });
+    if (alle) { laasPraktikOp(); }
   });
 
-  function tjekFaerdig(){
-    if (Object.keys(rigtige).length === 3) {
-      try {
-        var faerdige = JSON.parse(localStorage.getItem('aikort') || '[]');
-        if (faerdige.indexOf(MODUL) === -1) { faerdige.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(faerdige));
-      } catch(e) {}
-      var resultat = document.getElementById('quiz-resultat');
-      resultat.style.display = 'block';
-      if (resultat.scrollIntoView) { resultat.scrollIntoView({behavior:'smooth', block:'center'}); }
+  // allerede godkendt tidligere?
+  try {
+    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    if (gemt) { felt.value = gemt; }
+    if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
+  } catch(e) {}
+
+  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  var omraade = document.getElementById('quiz-omraade');
+  var bedoemKnap = document.getElementById('quiz-bedoem');
+  var spgs = [], valgte = [];
+
+  function bland(a){
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
     }
+    return a;
   }
+
+  function nyProeve(){
+    spgs = bland(BANK.slice()).slice(0, TRAEK);
+    valgte = new Array(spgs.length);
+    omraade.innerHTML = '';
+    document.getElementById('quiz-status').style.display = 'none';
+    document.getElementById('quiz-resultat').style.display = 'none';
+    bedoemKnap.style.display = '';
+    bedoemKnap.disabled = true;
+    spgs.forEach(function(q, qi){
+      var boks = document.createElement('div');
+      boks.className = 'quiz-sp';
+      var sp = document.createElement('div');
+      sp.className = 'sp';
+      sp.textContent = (qi + 1) + '. ' + q.sp;
+      boks.appendChild(sp);
+      bland(q.svar.map(function(_, i){ return i; })).forEach(function(si){
+        var k = document.createElement('button');
+        k.type = 'button';
+        k.className = 'svar';
+        k.textContent = q.svar[si][0];
+        k.addEventListener('click', function(){
+          if (k.disabled) return;
+          boks.querySelectorAll('.svar').forEach(function(x){ x.classList.remove('valgt'); });
+          k.classList.add('valgt');
+          valgte[qi] = si;
+          bedoemKnap.disabled = !valgte.every(function(v){ return v !== undefined; }) || valgte.length !== spgs.length;
+        });
+        boks.appendChild(k);
+      });
+      var fork = document.createElement('div');
+      fork.className = 'forklaring';
+      fork.textContent = q.fork;
+      boks.appendChild(fork);
+      omraade.appendChild(boks);
+    });
+  }
+
+  bedoemKnap.addEventListener('click', function(){
+    var rigtige = 0;
+    spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
+    omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
+    bedoemKnap.style.display = 'none';
+    if (rigtige === spgs.length && praktikOk) {
+      omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
+        boks.querySelector('.svar.valgt').classList.add('rigtig');
+        boks.querySelector('.forklaring').style.display = 'block';
+      });
+      try {
+        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
+        localStorage.setItem('aikort', JSON.stringify(f));
+      } catch(e) {}
+      var res = document.getElementById('quiz-resultat');
+      res.style.display = 'block';
+      if (res.scrollIntoView) { res.scrollIntoView({behavior:'smooth', block:'center'}); }
+    } else {
+      var st = document.getElementById('quiz-status');
+      document.getElementById('quiz-score').textContent = rigtige + ' af ' + spgs.length + ' rigtige';
+      st.style.display = 'block';
+      if (st.scrollIntoView) { st.scrollIntoView({behavior:'smooth', block:'center'}); }
+    }
+  });
+
+  document.getElementById('quiz-igen').addEventListener('click', nyProeve);
+  nyProeve();
 })();
 </script>
-
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
 </body>

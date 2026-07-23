@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
-<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet Erhverv · Modul 3</title>
+<meta name="description" content="Erhvervsmodul 3: Prompt-skabeloner, faste instruktioner og AI-agenter — automatisér de tilbagevendende opgaver med mennesket i loopet.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,11 +62,6 @@ footer a { color: var(--accent); }
 .kopier { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--accent);
   background: var(--accent-svag); border: none; border-radius: 999px; padding: 8px 18px; cursor: pointer; }
 .kopier:hover { background: var(--accent); color: #fff; }
-.facit-knap { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--blaek-svag);
-  background: var(--bg); border: 1px solid var(--linje); border-radius: 999px; padding: 8px 18px; cursor: pointer; margin-left: 8px; }
-.facit-knap:hover { border-color: var(--accent); color: var(--accent); }
-.facit { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
-  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; margin-top: 12px; }
 
 /* Quiz */
 .quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
@@ -87,8 +82,6 @@ footer a { color: var(--accent); }
 .knap-videre { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff;
   background: var(--accent); padding: 12px 26px; border-radius: 999px; margin-top: 10px; }
 .knap-videre:hover { opacity: .9; }
-.knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
-  padding: 12px 20px; margin-top: 10px; }
 
 .bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
   border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
@@ -125,75 +118,56 @@ footer a { color: var(--accent); }
     <a class="top-led" href="ordbog.html">Ordbog</a>
     <a class="top-led" href="prompts.html">Prompts</a>
     <a class="top-led" href="faq.html">FAQ</a>
-    <a class="tilbage" href="koerekort.html">← Kørekortet</a>
+    <a class="tilbage" href="erhverv.html">← Erhverv</a>
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
-<h1>Din første AI-samtale</h1>
-<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Chatter du allerede med AI til daglig? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
+<div class="boks" id="e-graense" style="display:none;">🔒 <strong>Erhvervsmodulerne er en overbygning.</strong> De kræver, at <a href="koerekort.html" style="color:var(--accent); font-weight:700;">grundkørekortet</a> er gennemført (alle 7 moduler) i denne browser.</div>
+<div id="e-indhold">
+<span class="modul-tag">Erhverv · Modul 3 af 4 · ca. 20 min</span>
+<h1>Automatisér arbejdsgangene</h1>
+<p class="manchet">Den største professionelle gevinst ligger ikke i at prompte godt én gang — men i at gøre det gode genbrugeligt. Skabeloner, faste instruktioner og små automatiske arbejdsgange: det er dét, dette modul handler om.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Automatiserer du allerede med AI? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du begge dele, er modulet gennemført.</p>
 
-<h2>Først: Har du en chatbot klar?</h2>
-<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
-<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
-
-<h2>Opgave 1: Få hjælp til noget praktisk</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 1 af 3</span>
-<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
-<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
-<button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
-</div>
-
-<h2>Opgave 2: Få en svær tekst forklaret</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 2 af 3</span>
-<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
-<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
-<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
-</div>
-
-<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 3 af 3</span>
-<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
-<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
-<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
-<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
-<ul style="margin-top:6px">
-<li>"Den anden idé lyder god — uddyb den."</li>
-<li>"Gør det billigere."</li>
-<li>"Hvad hvis det regner?"</li>
+<h2>Trappen: fra prompt til automatik</h2>
+<ul>
+<li><strong>Trin 1 — Skabeloner:</strong> Skriv din bedste prompt til en tilbagevendende opgave én gang, med <strong>[FELTER]</strong> til det, der skifter: "Skriv et svar til [KUNDE] om [EMNE], venlig tone, maks [ANTAL] ord." Gem den, del den med teamet.</li>
+<li><strong>Trin 2 — Faste instruktioner:</strong> De fleste chatbots kan huske faste præferencer på tværs af samtaler ("custom instructions"): din rolle, dit sprog, dine formatkrav. Sæt dem én gang — og hver eneste samtale starter klogere.</li>
+<li><strong>Trin 3 — Agenter og flows:</strong> En AI-agent udfører flertrinsopgaver: læser en indbakke, udkaster svar, opdaterer et regneark. Kraftfuldt — og præcis derfor med regler (nedenfor).</li>
 </ul>
-<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
-</div>
+
+<h2>Hvornår betaler automatisering sig?</h2>
+<p>Regnestykket er enkelt: <strong>hyppighed × ensartethed</strong>. En opgave, der kommer hver uge og ligner sig selv (referater, statusmails, produkttekster), er guld. En opgave, der er ny hver gang, automatiseres dårligt — dér er den håndholdte samtale bedre. Start med at skrive din manuelle proces ned trin for trin; det, der kan beskrives præcist, kan ofte automatiseres.</p>
+
+<h2>Mennesket i loopet — reglen, der ikke fraviges</h2>
+<ul>
+<li><strong>Kritisk output godkendes af et menneske,</strong> før det rammer kunder, kolleger eller systemer. Automatisér udkastet — aldrig afsendelsen af det vigtige.</li>
+<li><strong>Beslutninger om mennesker</strong> (ansættelser, afslag, vurderinger) må aldrig automatiseres helt. Det er både dårlig skik og — for mange anvendelser — på kant med EU's AI-regler (modul 4).</li>
+<li><strong>Byg kontrolpunkter ind:</strong> stikprøver af output, en log over hvad flowet har gjort, og en tydelig "stop-knap". Fejl i automatik skalerer lige så hurtigt som gevinsterne.</li>
+</ul>
+<div class="boks"><strong>Eksempel fra virkeligheden:</strong> Denne hjemmesides nyheder produceres af netop sådan et flow: én AI skriver udkast, en anden kvalitetstjekker, og faste regler afgør, hvad der publiceres. Skabelon + kontrolled + menneskeligt tilsyn — samme opskrift, uanset størrelse.</div>
 
 <h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
-<p>I en rigtig AI-samtale er den vigtigste færdighed at styre samtalen videre. Det øver vi nu. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<p>Nu bygger du selv trin 1: en genbrugelig skabelon-prompt til en opgave, der gentager sig på dit arbejde. Denne del <strong>skal godkendes, før prøven låses op</strong>.</p>
 <div class="praktik">
   <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
-  <p>Forestil dig, at AI'en har svaret på dit spørgsmål med en lang, teknisk tekstvæg. Skriv den opfølgende besked, du ville sende: bed om enklere sprog OG et konkret format (fx punkter eller en tabel).</p>
-  <p style="font-size:13.5px; color:var(--blaek-svag);">Husk fra modulet: samtalen fortsætter — du behøver ikke starte forfra, bare sige hvad du vil have anderledes.</p>
-  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <p>Skriv en skabelon-prompt til en tilbagevendende arbejdsopgave med mindst to [FELTER] i kantede parenteser til det, der skifter fra gang til gang — plus en rolle eller klar opgavebeskrivelse og et formatkrav.</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Fx: "Du er kundeservicemedarbejder. Skriv et svar til [KUNDENAVN] om [PROBLEM]. Venlig, konkret, maks [ANTAL] ord, afslut med næste skridt."</p>
+  <textarea id="praktik-felt" placeholder="Skriv dit svar her..."></textarea>
   <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
   <ul class="praktik-tjekliste" id="praktik-liste">
-    <li id="krav-0">Beder om enklere eller kortere sprog</li>
-    <li id="krav-1">Bestiller et konkret format (fx punkter, tabel, trin)</li>
-    <li id="krav-2">Er en rigtig besked (mindst 40 tegn)</li>
+    <li id="krav-0">Har mindst to [FELTER] i kantede parenteser</li>
+    <li id="krav-1">Giver en rolle eller klar opgavebeskrivelse</li>
+    <li id="krav-2">Bestiller et format eller en længde</li>
+    <li id="krav-3">Er en rigtig skabelon (mindst 120 tegn)</li>
   </ul>
-  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Dit svar opfylder alle kriterier — fortsæt til prøven nedenfor.</div>
 </div>
 
 <div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
 <div id="quiz-indhold" style="display:none;">
 <h2 id="quiz">Prøven: Har du fat i det?</h2>
-<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål.</p>
 <div id="quiz-omraade"></div>
 <button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
 <div class="quiz-status" id="quiz-status">
@@ -201,10 +175,11 @@ footer a { color: var(--accent); }
   <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 2 gennemført!</h3>
-  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
-  <a class="knap-videre" href="koerekort-3.html">Videre til modul 3 →</a>
-  <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+  <h3>🎉 Erhvervsmodul 3 gennemført!</h3>
+  <p>Du kan nu gøre det gode genbrugeligt — med mennesket i loopet. Sidste modul: reglerne og AI-politikken.</p>
+  <a class="knap-videre" href="erhverv-4.html">Videre til modul 4 →</a>
+  <br><a href="erhverv.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 </div>
 
@@ -213,12 +188,19 @@ footer a { color: var(--accent); }
 
 <script>
 (function(){
-  var MODUL = 2;
+  var MODUL = 3;
   var TRAEK = 5;
-  var BANK = [{"sp": "Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?", "svar": [["Starte en helt ny samtale med et bedre spørgsmål", false], ["Skrive \"kortere og enklere, tak\" i samme samtale", true], ["Læse det hele og finde de gode dele selv", false]], "fork": "Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme."}, {"sp": "Skal du skrive fejlfrit og formelt, når du taler med en chatbot?", "svar": [["Ja, ellers forstår den ikke opgaven", false], ["Ja, man skal bruge særlige kommandoer", false], ["Nej — skriv som du taler, slåfejl er helt fint", true]], "fork": "Der findes ingen kommandoer at lære. Skriv naturligt dansk — den forstår dig alligevel."}, {"sp": "Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?", "svar": [["Indsætter brevet, som det er — det går nok", false], ["Fjerner navn og CPR-nummer, før jeg indsætter teksten", true], ["Dropper det — AI må aldrig se breve", false]], "fork": "Teksten må AI'en gerne hjælpe med. Men personnummer og følsomme oplysninger fjerner du først."}, {"sp": "Hvad koster det at komme i gang med ChatGPT, Gemini eller Claude?", "svar": [["Ingenting — gratis-udgaverne er rigelige til at starte med", true], ["Det kræver betalingskort fra første dag", false], ["Det er kun gratis for studerende", false]], "fork": "Alle tre store chatbots har gratis udgaver uden betalingskort — rigeligt til at lære dem at kende."}, {"sp": "Svaret rammer ved siden af, fordi AI'en har misforstået dig. Hvad gør du?", "svar": [["Forklarer i samme samtale, hvad jeg mente", true], ["Ikke noget — man kan ikke rette en AI", false], ["Sletter min konto og opretter en ny", false]], "fork": "\"Nej, jeg mente...\" er en helt normal del af en AI-samtale. Den retter ind med det samme."}, {"sp": "Hvad husker AI'en undervejs i en samtale?", "svar": [["Alt det, I har skrevet tidligere i samme samtale", true], ["Ingenting — hver besked starter helt forfra", false], ["Kun det første spørgsmål", false]], "fork": "Derfor behøver du aldrig gentage dig selv — du kan bygge videre: \"gør den kortere\", \"hvad med om vinteren?\""}, {"sp": "Du vil have et svært brev forklaret. Hvad er den bedste fremgangsmåde?", "svar": [["Indsætte teksten og bede om en forklaring med almindelige ord", true], ["Beskrive brevet efter hukommelsen", false], ["Spørge \"kan du gætte, hvad kommunen vil mig?\"", false]], "fork": "Giv AI'en selve teksten (uden navn og CPR) — så er forklaringen præcis i stedet for et gæt."}, {"sp": "Hvor personligt må du skrive i en chatbot?", "svar": [["Frit om hverdagsting — men aldrig CPR, koder eller andres private forhold", true], ["Kun om vejret og madopskrifter", false], ["Alt, også adgangskoder — det er sikkert nok", false]], "fork": "Skriv gerne personligt — det gør svarene bedre. Grænsen går ved identitet, koder og andres privatliv."}, {"sp": "Din besked har tre slåfejl. Hvad gør du?", "svar": [["Sender den bare — AI'en forstår dig alligevel", true], ["Starter forfra — ellers bliver svaret forkert", false], ["Undskylder for fejlene, før jeg spørger", false]], "fork": "Slåfejl, halve sætninger, blandet dansk-engelsk: den forstår det hele. Ingen grund til perfektion."}];
-  var KRAV = [{"m": "kortere|enklere|simplere|lettere|almindelige ord|jævnt dansk|uden fagord|mindre teknisk", "t": "Beder om enklere eller kortere sprog"}, {"m": "punkter|punktform|tabel|liste|trin|overskrifter|maks\\s*\\d+|højst\\s*\\d+", "t": "Bestiller et konkret format (fx punkter, tabel, trin)"}, {"laengde": 40, "t": "Er en rigtig besked (mindst 40 tegn)"}];
+  var BANK = [{"sp": "Hvad er en prompt-skabelon?", "svar": [["En gennemarbejdet prompt med [FELTER] til det, der skifter fra gang til gang", true], ["En prompt, der er skrevet med skabelon-skrifttype", false], ["En prompt, AI'en selv finder på", false]], "fork": "Skriv det gode én gang, genbrug det hver uge — og hele teamet leverer pludselig på samme niveau."}, {"sp": "Hvilken opgave egner sig BEDST til automatisering?", "svar": [["Det ugentlige statusreferat med fast struktur", true], ["En enestående krisehåndtering", false], ["En følsom personalesamtale", false]], "fork": "Hyppighed × ensartethed. Det tilbagevendende og forudsigelige automatiseres; det unikke og menneskelige håndholdes."}, {"sp": "Hvad er \"faste instruktioner\" (custom instructions)?", "svar": [["Præferencer, AI'en husker på tværs af alle samtaler: rolle, sprog, format", true], ["Regler, som kun gælder i én samtale", false], ["Producentens skjulte styring af svarene", false]], "fork": "Sæt dine faste krav én gang — så starter hver samtale klogere, uden at du gentager dig selv."}, {"sp": "Hvad er en AI-agent, kort fortalt?", "svar": [["AI, der udfører flertrinsopgaver med værktøjer — ikke bare svarer på spørgsmål", true], ["En menneskelig AI-konsulent", false], ["Et andet ord for en chatbot", false]], "fork": "Agenten handler: læser, skriver, opdaterer, gentager. Deraf både styrken og behovet for kontrolpunkter."}, {"sp": "Hvad er det vigtigste princip i automatiske AI-arbejdsgange?", "svar": [["Et menneske godkender kritisk output, før det rammer modtagerne", true], ["Jo mindre menneskelig indblanding, jo bedre", false], ["Automatik skal holdes hemmelig for kunderne", false]], "fork": "Human-in-the-loop: automatisér udkastet, aldrig afsendelsen af det vigtige. Fejl i automatik skalerer."}, {"sp": "Hvilken slags beslutning må ALDRIG overlades helt til AI?", "svar": [["Beslutninger om mennesker: ansættelser, afslag, vurderinger", true], ["Valg af overskrift til et nyhedsbrev", false], ["Sortering af indkommende mails i mapper", false]], "fork": "Både etik og EU-regler peger samme sted hen: mennesker vurderer mennesker. AI kan forberede — ikke afgøre."}, {"sp": "Et automatiseret flow har kørt med en fejl i tre uger, før nogen opdagede det. Hvad manglede?", "svar": [["Kontrolpunkter: stikprøver af output og en log over flowets handlinger", true], ["En hurtigere computer", false], ["Flere automatiserede led", false]], "fork": "Automatik uden tilsyn er en fejl, der venter på at skalere. Stikprøver, log og stop-knap er standardudstyr."}, {"sp": "Hvad er det bedste FØRSTE skridt mod at automatisere en opgave?", "svar": [["Skrive den manuelle proces ned, trin for trin", true], ["Købe det dyreste agent-værktøj", false], ["Fyre den, der laver opgaven manuelt", false]], "fork": "Det, der kan beskrives præcist, kan ofte automatiseres. Det, der ikke kan, skal alligevel forstås først."}, {"sp": "Teamet bruger din skabelon-prompt, og alle svar lyder pludselig ens og lidt robotagtige. Hvad gør du?", "svar": [["Justerer skabelonen med krav om personlig tilpasning — og gør gennemlæsning til en del af flowet", true], ["Ingenting — ensartethed er altid godt", false], ["Dropper skabeloner og lader alle starte forfra hver gang", false]], "fork": "Skabelonen er bunden, ikke loftet. Byg variation og obligatorisk menneskelig tilpasning ind — så får du både tempo og tone."}];
+  var KRAV = [{"t": "Har mindst to [FELTER] i kantede parenteser", "m": "\\[[^\\]]+\\][\\s\\S]*\\[[^\\]]+\\]"}, {"t": "Giver en rolle eller klar opgavebeskrivelse", "m": "du er|skriv|lav|udarbejd|opsummer|gennemgå"}, {"t": "Bestiller et format eller en længde", "m": "tabel|punkter|liste|maks|højst|\\d+\\s*(ord|linjer)|format|trin"}, {"t": "Er en rigtig skabelon (mindst 120 tegn)", "laengde": 120}];
 
-  // Kopiér-knapper
+  // Adgangskrav: grundkørekortet skal være bestået
+  var grundOk = false;
+  try { grundOk = JSON.parse(localStorage.getItem('aikort') || '[]').length >= 7; } catch(e) {}
+  if (!grundOk) {
+    document.getElementById('e-graense').style.display = 'block';
+    document.getElementById('e-indhold').style.display = 'none';
+  }
+
   document.querySelectorAll('.kopier').forEach(function(knap){
     knap.addEventListener('click', function(){
       var tekst = document.getElementById(knap.getAttribute('data-mål')).textContent.replace(/^"|"$/g, '');
@@ -229,19 +211,8 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Facit-knapper
-  document.querySelectorAll('.facit-knap').forEach(function(knap){
-    knap.addEventListener('click', function(){
-      var facit = document.getElementById(knap.getAttribute('data-mål'));
-      var aaben = facit.style.display === 'block';
-      facit.style.display = aaben ? 'none' : 'block';
-      knap.textContent = aaben ? 'Hvad bør jeg se? ▾' : 'Skjul facit ▴';
-    });
-  });
-
-  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  // ---- Praktik ----
   var felt = document.getElementById('praktik-felt');
-  var liste = document.getElementById('praktik-liste');
   var praktikOk = false;
 
   function laasPraktikOp(){
@@ -250,16 +221,16 @@ footer a { color: var(--accent); }
     document.getElementById('quiz-laas').style.display = 'none';
     document.getElementById('quiz-indhold').style.display = 'block';
     try {
-      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      var p = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
       if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
-      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+      localStorage.setItem('aikort_e_praktik', JSON.stringify(p));
     } catch(e) {}
   }
 
   document.getElementById('praktik-tjek').addEventListener('click', function(){
     var tekst = felt.value || '';
-    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
-    liste.style.display = 'block';
+    try { localStorage.setItem('aikort_e_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    document.getElementById('praktik-liste').style.display = 'block';
     var alle = true;
     KRAV.forEach(function(k, i){
       var ok;
@@ -274,15 +245,14 @@ footer a { color: var(--accent); }
     if (alle) { laasPraktikOp(); }
   });
 
-  // allerede godkendt tidligere?
   try {
-    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
-    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    var tidligere = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_e_praktik_tekst_' + MODUL);
     if (gemt) { felt.value = gemt; }
     if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
   } catch(e) {}
 
-  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  // ---- Prøven ----
   var omraade = document.getElementById('quiz-omraade');
   var bedoemKnap = document.getElementById('quiz-bedoem');
   var spgs = [], valgte = [];
@@ -337,15 +307,15 @@ footer a { color: var(--accent); }
     spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
     omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
     bedoemKnap.style.display = 'none';
-    if (rigtige === spgs.length && praktikOk) {
+    if (rigtige === spgs.length && praktikOk && grundOk) {
       omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
         boks.querySelector('.svar.valgt').classList.add('rigtig');
         boks.querySelector('.forklaring').style.display = 'block';
       });
       try {
-        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        var f = JSON.parse(localStorage.getItem('aikort_e') || '[]');
         if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(f));
+        localStorage.setItem('aikort_e', JSON.stringify(f));
       } catch(e) {}
       var res = document.getElementById('quiz-resultat');
       res.style.display = 'block';

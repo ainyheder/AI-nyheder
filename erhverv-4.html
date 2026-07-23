@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
-<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet Erhverv · Modul 4</title>
+<meta name="description" content="Erhvervsmodul 4: EU's AI-forordning i store træk, GDPR i praksis, ophavsret på AI-indhold — og udkastet til jeres egen AI-politik.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,11 +62,6 @@ footer a { color: var(--accent); }
 .kopier { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--accent);
   background: var(--accent-svag); border: none; border-radius: 999px; padding: 8px 18px; cursor: pointer; }
 .kopier:hover { background: var(--accent); color: #fff; }
-.facit-knap { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--blaek-svag);
-  background: var(--bg); border: 1px solid var(--linje); border-radius: 999px; padding: 8px 18px; cursor: pointer; margin-left: 8px; }
-.facit-knap:hover { border-color: var(--accent); color: var(--accent); }
-.facit { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
-  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; margin-top: 12px; }
 
 /* Quiz */
 .quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
@@ -87,8 +82,6 @@ footer a { color: var(--accent); }
 .knap-videre { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff;
   background: var(--accent); padding: 12px 26px; border-radius: 999px; margin-top: 10px; }
 .knap-videre:hover { opacity: .9; }
-.knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
-  padding: 12px 20px; margin-top: 10px; }
 
 .bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
   border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
@@ -125,75 +118,55 @@ footer a { color: var(--accent); }
     <a class="top-led" href="ordbog.html">Ordbog</a>
     <a class="top-led" href="prompts.html">Prompts</a>
     <a class="top-led" href="faq.html">FAQ</a>
-    <a class="tilbage" href="koerekort.html">← Kørekortet</a>
+    <a class="tilbage" href="erhverv.html">← Erhverv</a>
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
-<h1>Din første AI-samtale</h1>
-<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Chatter du allerede med AI til daglig? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
+<div class="boks" id="e-graense" style="display:none;">🔒 <strong>Erhvervsmodulerne er en overbygning.</strong> De kræver, at <a href="koerekort.html" style="color:var(--accent); font-weight:700;">grundkørekortet</a> er gennemført (alle 7 moduler) i denne browser.</div>
+<div id="e-indhold">
+<span class="modul-tag">Erhverv · Modul 4 af 4 · ca. 20 min</span>
+<h1>Regler, ansvar & AI-politik</h1>
+<p class="manchet">Sidste modul gør dig til den kollega, der ved, hvad der gælder: EU's AI-regler i store træk, GDPR i praksis, ophavsret — og hvordan en fornuftig AI-politik ser ud, hvis arbejdspladsen mangler en.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Kender du allerede reglerne? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du begge dele, er modulet gennemført.</p>
 
-<h2>Først: Har du en chatbot klar?</h2>
-<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
-<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
+<h2>EU's AI-forordning — det, en medarbejder skal vide</h2>
+<p>EU's AI-forordning (AI Act) regulerer AI efter <strong>risiko</strong>: jo større risiko for menneskers rettigheder, jo strengere krav. Uacceptabel risiko (fx social scoring) er forbudt. <strong>Høj-risiko</strong> — fx AI til rekruttering, kreditvurdering og eksamensbedømmelse — kræver dokumentation, kontrol og menneskeligt tilsyn. Almindelige chatbots og kontor-AI er i den lette ende, men med gennemsigtighedskrav: mennesker skal kunne vide, at de taler med eller ser AI.</p>
+<div class="boks"><strong>Oversat til hverdagen:</strong> Bruger I AI til at vurdere <em>mennesker</em> — ansøgere, kunder, elever — gælder skærpede krav, og et menneske skal reelt kunne omgøre resultatet. Brug til tekster, analyser og udkast er langt friere.</div>
 
-<h2>Opgave 1: Få hjælp til noget praktisk</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 1 af 3</span>
-<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
-<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
-<button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
-</div>
-
-<h2>Opgave 2: Få en svær tekst forklaret</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 2 af 3</span>
-<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
-<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
-<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
-</div>
-
-<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 3 af 3</span>
-<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
-<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
-<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
-<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
-<ul style="margin-top:6px">
-<li>"Den anden idé lyder god — uddyb den."</li>
-<li>"Gør det billigere."</li>
-<li>"Hvad hvis det regner?"</li>
+<h2>GDPR i praksis — de tre spørgsmål</h2>
+<ul>
+<li><strong>Er der persondata i det, jeg deler?</strong> Navne, CPR, helbred, sager — også i vedhæftede filer.</li>
+<li><strong>Har værktøjet en databehandleraftale,</strong> og er det godkendt af virksomheden til persondata?</li>
+<li><strong>Er det nødvendigt?</strong> Kan opgaven løses anonymiseret, skal den løses anonymiseret.</li>
 </ul>
-<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
-</div>
+
+<h2>Ophavsret — kort og ærligt</h2>
+<p>Må du bruge AI-output kommercielt? Som hovedregel ja — de store leverandører giver dig retten til output i deres vilkår. Men to forbehold: rent AI-genereret indhold nyder i mange lande <strong>ingen selvstændig ophavsretsbeskyttelse</strong> (menneskelig bearbejdning styrker jeres rettigheder), og output, der ligger for tæt på eksisterende beskyttet materiale, kan krænke andres rettigheder. Efterlign stil — kopiér aldrig værker.</p>
+
+<h2>AI-politikken — fire punkter, der dækker det meste</h2>
+<p>Mangler arbejdspladsen en AI-politik, er her skelettet, du kan foreslå: <strong>1) Godkendte værktøjer</strong> (hvilke, til hvad), <strong>2) Dataregler</strong> (hvad må aldrig deles, hvornår kræves anonymisering), <strong>3) Kvalitetssikring</strong> (gennemlæsning før afsendelse, stikprøver, henvisningskrav), <strong>4) Ansvar og åbenhed</strong> (afsenderen står inde for indholdet; vær ærlig om AI-brug, hvor det betyder noget). Fire afsnit på én side slår ti siders jura, ingen læser.</p>
 
 <h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
-<p>I en rigtig AI-samtale er den vigtigste færdighed at styre samtalen videre. Det øver vi nu. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<p>Til sidst skriver du selv kernen i en AI-politik — den, du kunne foreslå din leder i morgen. Denne del <strong>skal godkendes, før prøven låses op</strong>.</p>
 <div class="praktik">
   <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
-  <p>Forestil dig, at AI'en har svaret på dit spørgsmål med en lang, teknisk tekstvæg. Skriv den opfølgende besked, du ville sende: bed om enklere sprog OG et konkret format (fx punkter eller en tabel).</p>
-  <p style="font-size:13.5px; color:var(--blaek-svag);">Husk fra modulet: samtalen fortsætter — du behøver ikke starte forfra, bare sige hvad du vil have anderledes.</p>
-  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <p>Skriv 3-4 korte regler til en mini-AI-politik for din arbejdsplads. De skal tilsammen dække: persondata/fortrolighed, kvalitetssikring af AI-output, og hvilke værktøjer der må bruges (godkendelse).</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Kort og konkret — som regler, kolleger faktisk kan huske. Fx "1) Persondata må kun ... 2) Alt AI-output gennemlæses ... 3) Vi bruger kun værktøjer, som ..."</p>
+  <textarea id="praktik-felt" placeholder="Skriv dit svar her..."></textarea>
   <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
   <ul class="praktik-tjekliste" id="praktik-liste">
-    <li id="krav-0">Beder om enklere eller kortere sprog</li>
-    <li id="krav-1">Bestiller et konkret format (fx punkter, tabel, trin)</li>
-    <li id="krav-2">Er en rigtig besked (mindst 40 tegn)</li>
+    <li id="krav-0">Dækker persondata eller fortrolighed (GDPR, CPR, kundedata...)</li>
+    <li id="krav-1">Dækker kvalitetssikring (gennemlæs, tjek, godkend, stikprøve...)</li>
+    <li id="krav-2">Dækker godkendte værktøjer (godkendt, tilladt, aftale...)</li>
+    <li id="krav-3">Er en rigtig politik (mindst 150 tegn)</li>
   </ul>
-  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Dit svar opfylder alle kriterier — fortsæt til prøven nedenfor.</div>
 </div>
 
 <div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
 <div id="quiz-indhold" style="display:none;">
 <h2 id="quiz">Prøven: Har du fat i det?</h2>
-<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål.</p>
 <div id="quiz-omraade"></div>
 <button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
 <div class="quiz-status" id="quiz-status">
@@ -201,10 +174,11 @@ footer a { color: var(--accent); }
   <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 2 gennemført!</h3>
-  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
-  <a class="knap-videre" href="koerekort-3.html">Videre til modul 3 →</a>
-  <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+  <h3>🎉 Erhvervsmodul 4 gennemført!</h3>
+  <p>Du har gennemført HELE erhvervsoverbygningen! Gå til oversigten og hent dit erhvervsbevis.</p>
+  <a class="knap-videre" href="erhverv.html#bevis">Hent dit erhvervsbevis 🎓</a>
+  <br><a href="erhverv.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 </div>
 
@@ -213,12 +187,19 @@ footer a { color: var(--accent); }
 
 <script>
 (function(){
-  var MODUL = 2;
+  var MODUL = 4;
   var TRAEK = 5;
-  var BANK = [{"sp": "Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?", "svar": [["Starte en helt ny samtale med et bedre spørgsmål", false], ["Skrive \"kortere og enklere, tak\" i samme samtale", true], ["Læse det hele og finde de gode dele selv", false]], "fork": "Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme."}, {"sp": "Skal du skrive fejlfrit og formelt, når du taler med en chatbot?", "svar": [["Ja, ellers forstår den ikke opgaven", false], ["Ja, man skal bruge særlige kommandoer", false], ["Nej — skriv som du taler, slåfejl er helt fint", true]], "fork": "Der findes ingen kommandoer at lære. Skriv naturligt dansk — den forstår dig alligevel."}, {"sp": "Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?", "svar": [["Indsætter brevet, som det er — det går nok", false], ["Fjerner navn og CPR-nummer, før jeg indsætter teksten", true], ["Dropper det — AI må aldrig se breve", false]], "fork": "Teksten må AI'en gerne hjælpe med. Men personnummer og følsomme oplysninger fjerner du først."}, {"sp": "Hvad koster det at komme i gang med ChatGPT, Gemini eller Claude?", "svar": [["Ingenting — gratis-udgaverne er rigelige til at starte med", true], ["Det kræver betalingskort fra første dag", false], ["Det er kun gratis for studerende", false]], "fork": "Alle tre store chatbots har gratis udgaver uden betalingskort — rigeligt til at lære dem at kende."}, {"sp": "Svaret rammer ved siden af, fordi AI'en har misforstået dig. Hvad gør du?", "svar": [["Forklarer i samme samtale, hvad jeg mente", true], ["Ikke noget — man kan ikke rette en AI", false], ["Sletter min konto og opretter en ny", false]], "fork": "\"Nej, jeg mente...\" er en helt normal del af en AI-samtale. Den retter ind med det samme."}, {"sp": "Hvad husker AI'en undervejs i en samtale?", "svar": [["Alt det, I har skrevet tidligere i samme samtale", true], ["Ingenting — hver besked starter helt forfra", false], ["Kun det første spørgsmål", false]], "fork": "Derfor behøver du aldrig gentage dig selv — du kan bygge videre: \"gør den kortere\", \"hvad med om vinteren?\""}, {"sp": "Du vil have et svært brev forklaret. Hvad er den bedste fremgangsmåde?", "svar": [["Indsætte teksten og bede om en forklaring med almindelige ord", true], ["Beskrive brevet efter hukommelsen", false], ["Spørge \"kan du gætte, hvad kommunen vil mig?\"", false]], "fork": "Giv AI'en selve teksten (uden navn og CPR) — så er forklaringen præcis i stedet for et gæt."}, {"sp": "Hvor personligt må du skrive i en chatbot?", "svar": [["Frit om hverdagsting — men aldrig CPR, koder eller andres private forhold", true], ["Kun om vejret og madopskrifter", false], ["Alt, også adgangskoder — det er sikkert nok", false]], "fork": "Skriv gerne personligt — det gør svarene bedre. Grænsen går ved identitet, koder og andres privatliv."}, {"sp": "Din besked har tre slåfejl. Hvad gør du?", "svar": [["Sender den bare — AI'en forstår dig alligevel", true], ["Starter forfra — ellers bliver svaret forkert", false], ["Undskylder for fejlene, før jeg spørger", false]], "fork": "Slåfejl, halve sætninger, blandet dansk-engelsk: den forstår det hele. Ingen grund til perfektion."}];
-  var KRAV = [{"m": "kortere|enklere|simplere|lettere|almindelige ord|jævnt dansk|uden fagord|mindre teknisk", "t": "Beder om enklere eller kortere sprog"}, {"m": "punkter|punktform|tabel|liste|trin|overskrifter|maks\\s*\\d+|højst\\s*\\d+", "t": "Bestiller et konkret format (fx punkter, tabel, trin)"}, {"laengde": 40, "t": "Er en rigtig besked (mindst 40 tegn)"}];
+  var BANK = [{"sp": "Hvordan inddeler EU's AI-forordning AI-systemer?", "svar": [["Efter risiko for menneskers rettigheder — jo højere risiko, jo strengere krav", true], ["Efter pris — dyre systemer reguleres hårdest", false], ["Efter land — kun amerikansk AI er reguleret", false]], "fork": "Risikobaseret regulering: forbudt i toppen, høj-risiko med skrappe krav, og lette gennemsigtighedskrav til hverdags-AI."}, {"sp": "Hvilken anvendelse regnes som HØJ-risiko under EU's AI-regler?", "svar": [["AI, der screener jobansøgere", true], ["AI, der foreslår madopskrifter", false], ["AI, der retter stavefejl", false]], "fork": "AI, der vurderer mennesker — rekruttering, kredit, eksamen — er høj-risiko: dokumentation, kontrol og menneskeligt tilsyn kræves."}, {"sp": "Hvad er GDPR-kernen i professionel AI-brug?", "svar": [["Persondata kun i godkendte værktøjer med databehandleraftale — og kun når det er nødvendigt", true], ["Persondata er fint, hvis chatten slettes bagefter", false], ["GDPR gælder ikke for AI", false]], "fork": "De tre spørgsmål: Er der persondata? Er værktøjet godkendt med databehandleraftale? Er det nødvendigt — eller kan det anonymiseres?"}, {"sp": "Må du som hovedregel bruge AI-genereret tekst kommercielt?", "svar": [["Typisk ja ifølge leverandørens vilkår — men tjek dem, og undgå output der kopierer beskyttet materiale", true], ["Nej, aldrig", false], ["Ja, og alt AI-output er automatisk dit ophavsretsbeskyttede værk", false]], "fork": "Retten til output følger typisk med — men rent AI-indhold nyder ofte ingen selvstændig beskyttelse, og plagiat er stadig plagiat."}, {"sp": "Hvad bør en god AI-politik som minimum indeholde?", "svar": [["Godkendte værktøjer, dataregler, kvalitetssikring samt ansvar og åbenhed", true], ["Et totalforbud mod AI", false], ["Regler for medarbejdernes private AI-brug derhjemme", false]], "fork": "Fire afsnit på én side: værktøjer, data, kvalitet, ansvar. Kort nok til at blive husket — konkret nok til at virke."}, {"sp": "En kollega vil lave et AI-billede af en anden kollega til firmafesten — uden at spørge. Hvad siger du?", "svar": [["At det kræver samtykke — man genererer ikke billeder af rigtige personer uden deres ja", true], ["At det er fint, når det bare er for sjov", false], ["At det kun er et problem, hvis billedet deles eksternt", false]], "fork": "Andres ansigt og stemme er deres. Samtykke først — det gælder også internt, og også \"for sjov\"."}, {"sp": "Hvem skal reelt kunne omgøre en AI-vurdering af et menneske (fx en jobansøger)?", "svar": [["Et menneske med reel beslutningskompetence", true], ["En anden AI", false], ["Ingen — AI-vurderinger er endelige", false]], "fork": "Menneskeligt tilsyn skal være ægte: en person, der kan og tør ændre resultatet — ikke en gummistempel-funktion."}, {"sp": "En kunde spørger direkte, om AI har været brugt i jeres leverance. Hvad gør du?", "svar": [["Svarer ærligt i tråd med virksomhedens linje om åbenhed", true], ["Benægter — det lyder mere professionelt", false], ["Undviger spørgsmålet", false]], "fork": "Ærlighed om AI-brug er både god skik og i stigende grad et lovkrav. Uærlighed opdages — og koster mere end åbenhed."}, {"sp": "En kollega bryder AI-politikken — tilsyneladende af ren uvidenhed. Hvad er det rigtige træk?", "svar": [["Gøre opmærksom på reglen og foreslå, at teamet får en kort oplæring", true], ["Melde det til Datatilsynet med det samme", false], ["Ignorere det — det er ikke dit bord", false]], "fork": "Langt de fleste brud er uvidenhed, ikke ond vilje. Kollegial korrektion plus oplæring løser problemet — og bygger kulturen."}];
+  var KRAV = [{"t": "Dækker persondata eller fortrolighed (GDPR, CPR, kundedata...)", "m": "persondata|gdpr|cpr|fortroli|kundedata|følsom"}, {"t": "Dækker kvalitetssikring (gennemlæs, tjek, godkend, stikprøve...)", "m": "gennemlæs|tjek|kontrol|godkend|stikprøve|efterprøv|ansvar"}, {"t": "Dækker godkendte værktøjer (godkendt, tilladt, aftale...)", "m": "godkendt|tilladt|aftale|må bruge|whiteliste|liste"}, {"t": "Er en rigtig politik (mindst 150 tegn)", "laengde": 150}];
 
-  // Kopiér-knapper
+  // Adgangskrav: grundkørekortet skal være bestået
+  var grundOk = false;
+  try { grundOk = JSON.parse(localStorage.getItem('aikort') || '[]').length >= 7; } catch(e) {}
+  if (!grundOk) {
+    document.getElementById('e-graense').style.display = 'block';
+    document.getElementById('e-indhold').style.display = 'none';
+  }
+
   document.querySelectorAll('.kopier').forEach(function(knap){
     knap.addEventListener('click', function(){
       var tekst = document.getElementById(knap.getAttribute('data-mål')).textContent.replace(/^"|"$/g, '');
@@ -229,19 +210,8 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Facit-knapper
-  document.querySelectorAll('.facit-knap').forEach(function(knap){
-    knap.addEventListener('click', function(){
-      var facit = document.getElementById(knap.getAttribute('data-mål'));
-      var aaben = facit.style.display === 'block';
-      facit.style.display = aaben ? 'none' : 'block';
-      knap.textContent = aaben ? 'Hvad bør jeg se? ▾' : 'Skjul facit ▴';
-    });
-  });
-
-  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  // ---- Praktik ----
   var felt = document.getElementById('praktik-felt');
-  var liste = document.getElementById('praktik-liste');
   var praktikOk = false;
 
   function laasPraktikOp(){
@@ -250,16 +220,16 @@ footer a { color: var(--accent); }
     document.getElementById('quiz-laas').style.display = 'none';
     document.getElementById('quiz-indhold').style.display = 'block';
     try {
-      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      var p = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
       if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
-      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+      localStorage.setItem('aikort_e_praktik', JSON.stringify(p));
     } catch(e) {}
   }
 
   document.getElementById('praktik-tjek').addEventListener('click', function(){
     var tekst = felt.value || '';
-    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
-    liste.style.display = 'block';
+    try { localStorage.setItem('aikort_e_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    document.getElementById('praktik-liste').style.display = 'block';
     var alle = true;
     KRAV.forEach(function(k, i){
       var ok;
@@ -274,15 +244,14 @@ footer a { color: var(--accent); }
     if (alle) { laasPraktikOp(); }
   });
 
-  // allerede godkendt tidligere?
   try {
-    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
-    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    var tidligere = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_e_praktik_tekst_' + MODUL);
     if (gemt) { felt.value = gemt; }
     if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
   } catch(e) {}
 
-  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  // ---- Prøven ----
   var omraade = document.getElementById('quiz-omraade');
   var bedoemKnap = document.getElementById('quiz-bedoem');
   var spgs = [], valgte = [];
@@ -337,15 +306,15 @@ footer a { color: var(--accent); }
     spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
     omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
     bedoemKnap.style.display = 'none';
-    if (rigtige === spgs.length && praktikOk) {
+    if (rigtige === spgs.length && praktikOk && grundOk) {
       omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
         boks.querySelector('.svar.valgt').classList.add('rigtig');
         boks.querySelector('.forklaring').style.display = 'block';
       });
       try {
-        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        var f = JSON.parse(localStorage.getItem('aikort_e') || '[]');
         if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(f));
+        localStorage.setItem('aikort_e', JSON.stringify(f));
       } catch(e) {}
       var res = document.getElementById('quiz-resultat');
       res.style.display = 'block';

@@ -89,6 +89,32 @@ footer a { color: var(--accent); }
 .knap-videre:hover { opacity: .9; }
 .knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
   padding: 12px 20px; margin-top: 10px; }
+
+.bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
+.bedoem-knap:disabled { background: var(--linje); color: var(--blaek-svag); cursor: default; }
+.bedoem-knap:not(:disabled):hover { opacity: .9; }
+.svar.valgt { border-color: var(--accent); background: var(--accent-svag); font-weight: 700; }
+.quiz-status { display: none; background: var(--roed-svag); border: 2px solid var(--roed);
+  border-radius: var(--radius); padding: 20px 24px; margin: 18px 0; }
+.quiz-status p { font-size: 15px; margin-bottom: 10px; }
+.igen-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border: none; border-radius: 999px; padding: 11px 22px; cursor: pointer; }
+.igen-knap:hover { background: var(--accent); color: #fff; }
+
+.praktik { background: var(--bg-kort); border: 2px solid var(--accent); border-radius: var(--radius);
+  padding: 24px 28px; margin: 24px 0; box-shadow: var(--skygge); }
+.praktik textarea { font-family: var(--font-ui); font-size: 15px; width: 100%; min-height: 120px;
+  padding: 12px 16px; border: 1px solid var(--linje); border-radius: 10px; background: var(--bg);
+  color: var(--blaek); resize: vertical; margin: 12px 0 4px; }
+.praktik textarea:focus { outline: none; border-color: var(--accent); }
+.praktik-tjekliste { list-style: none; margin: 12px 0 0; padding: 0; display: none; }
+.praktik-tjekliste li { font-size: 14px; margin: 6px 0 6px 0; padding-left: 26px; position: relative; }
+.praktik-tjekliste li::before { content: "✗"; position: absolute; left: 4px; color: var(--roed); font-weight: 700; }
+.praktik-tjekliste li.ok::before { content: "✓"; color: var(--groen); }
+.praktik-tjekliste li.ok { color: var(--blaek-svag); }
+.praktik-godkendt { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
+  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14.5px; margin-top: 12px; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -106,7 +132,7 @@ footer a { color: var(--accent); }
 <span class="modul-tag">Modul 3 af 7 · ca. 15 min</span>
 <h1>Prompts, der virker</h1>
 <p class="manchet">En "prompt" er bare det, du skriver til AI'en. Og forskellen på et sløvt og et fremragende svar ligger næsten altid i prompten. Fem enkle greb gør dig bedre end de fleste.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Skriver du allerede gode prompts? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Skriver du allerede gode prompts? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
 
 <h2>De fem greb</h2>
 <ul>
@@ -139,38 +165,39 @@ footer a { color: var(--accent); }
 <div class="facit" id="facit-2"><strong>For eksempel:</strong> "Du er en nøgtern privatøkonomisk rådgiver. Jeg er single, tjener 29.000 kr. udbetalt og vil gerne spare 2.000 kr. op om måneden. Stil mig først 5 spørgsmål om mit forbrug — og lav derefter et månedsbudget som en simpel tabel." Læg mærke til tricket til sidst: at bede AI'en <strong>stille spørgsmål først</strong> giver markant bedre svar.</div>
 </div>
 
-<h2 id="quiz">Quiz: Har du fat i det?</h2>
-<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
-
-<div class="quiz-sp" data-sp="1">
-  <div class="sp">1. Hvad løfter kvaliteten af et AI-svar allermest?</div>
-  <button class="svar" data-rigtig="nej">Pæne og høflige formuleringer</button>
-  <button class="svar" data-rigtig="ja">Kontekst: hvem du er, hvad svaret skal bruges til, og hvem der skal læse det</button>
-  <button class="svar" data-rigtig="nej">At skrive det hele med store bogstaver</button>
-  <div class="forklaring">AI'en kan ikke gætte det, du ikke fortæller. Jo mere relevant kontekst, jo mere personligt og brugbart bliver svaret.</div>
+<h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
+<p>Svendeprøven i prompt-skrivning: nu skal alle fem greb i spil i én prompt. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<div class="praktik">
+  <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
+  <p>Vælg selv en opgave fra dit liv (en mail, en plan, en ansøgning...) og skriv en komplet prompt med: en rolle til AI'en, kontekst om dig og situationen, et formatkrav og en længdegrænse.</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Som jobansøgnings-eksemplet fra modulet — men om DIN opgave.</p>
+  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
+  <ul class="praktik-tjekliste" id="praktik-liste">
+    <li id="krav-0">Giver AI'en en rolle (fx "Du er en erfaren ...")</li>
+    <li id="krav-1">Bestiller et format (fx brev, tabel, punkter, udkast)</li>
+    <li id="krav-2">Sætter en længdegrænse med et tal</li>
+    <li id="krav-3">Har rigtig kontekst med (mindst 120 tegn i alt)</li>
+  </ul>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
 </div>
 
-<div class="quiz-sp" data-sp="2">
-  <div class="sp">2. Svaret er en lang tekstvæg, men du ville have en overskuelig tabel. Hvad gør du?</div>
-  <button class="svar" data-rigtig="ja">Skriver "sæt det op som en tabel" i samme samtale</button>
-  <button class="svar" data-rigtig="nej">Kopierer det hele til Word og bygger tabellen selv</button>
-  <button class="svar" data-rigtig="nej">Accepterer det — AI bestemmer formatet</button>
-  <div class="forklaring">Formatet er dit at bestille — både i første prompt og undervejs. Ét kort ønske, og svaret bliver sat om.</div>
+<div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
+<div id="quiz-indhold" style="display:none;">
+<h2 id="quiz">Prøven: Har du fat i det?</h2>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<div id="quiz-omraade"></div>
+<button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
+<div class="quiz-status" id="quiz-status">
+  <p><strong id="quiz-score"></strong> — alle fem skal sidde, før modulet er gennemført. Ingen panik: du får fem nye spørgsmål i næste forsøg.</p>
+  <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
-
-<div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Hvad gør det, når du starter med "Du er en erfaren jobkonsulent"?</div>
-  <button class="svar" data-rigtig="nej">Det er snyd og giver upålidelige svar</button>
-  <button class="svar" data-rigtig="nej">Ingenting — det er kun pynt</button>
-  <button class="svar" data-rigtig="ja">Det styrer tone og faglighed, så svaret ligner en fagpersons</button>
-  <div class="forklaring">En rolle giver AI'en et perspektiv at svare ud fra. Det er et af de mest effektive — og mest oversete — greb.</div>
-</div>
-
 <div class="quiz-resultat" id="quiz-resultat">
   <h3>🎉 Modul 3 gennemført!</h3>
   <p>Du skriver nu bedre prompts end de fleste. I modul 4 lærer du at fange AI'ens fejl, før de fanger dig.</p>
   <a class="knap-videre" href="koerekort-4.html">Videre til modul 4 →</a>
   <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 
 </main>
@@ -179,6 +206,9 @@ footer a { color: var(--accent); }
 <script>
 (function(){
   var MODUL = 3;
+  var TRAEK = 5;
+  var BANK = [{"sp": "Hvad løfter kvaliteten af et AI-svar allermest?", "svar": [["Pæne og høflige formuleringer", false], ["Kontekst: hvem du er, hvad svaret skal bruges til, og hvem der skal læse det", true], ["At skrive det hele med store bogstaver", false]], "fork": "AI'en kan ikke gætte det, du ikke fortæller. Relevant kontekst er forskellen på skabelon og skræddersyet."}, {"sp": "Svaret er en lang tekstvæg, men du ville have en overskuelig tabel. Hvad gør du?", "svar": [["Skriver \"sæt det op som en tabel\" i samme samtale", true], ["Kopierer det hele til Word og bygger tabellen selv", false], ["Accepterer det — AI bestemmer formatet", false]], "fork": "Formatet er dit at bestille — både i første prompt og undervejs."}, {"sp": "Hvad gør det, når du starter med \"Du er en erfaren jobkonsulent\"?", "svar": [["Det er snyd og giver upålidelige svar", false], ["Ingenting — det er kun pynt", false], ["Det styrer tone og faglighed, så svaret ligner en fagpersons", true]], "fork": "En rolle giver AI'en et perspektiv at svare ud fra — et af de mest effektive og oversete greb."}, {"sp": "\"Skriv en tale\" gav et kedeligt svar. Hvad manglede prompten?", "svar": [["Kontekst: anledningen, modtageren, længden og tonen", true], ["Flere udråbstegn", false], ["Engelsk — AI forstår ikke dansk", false]], "fork": "Anledning, modtager, længde, tone. Fire oplysninger — og talen går fra skabelon til personlig."}, {"sp": "Hvad opnår du med \"svar med højst 100 ord\"?", "svar": [["Et svar, der passer til dit behov, i stedet for en tekstvæg", true], ["Ikke noget — længden kan ikke styres", false], ["AI'en springer det vigtigste over som straf", false]], "fork": "Længde, format og detaljeniveau kan bestilles præcist — og det virker."}, {"sp": "Du vil have en tekst i en helt bestemt stil. Hvad er den hurtigste vej?", "svar": [["Vise et eksempel: \"skriv i samme stil som denne tekst: ...\"", true], ["Skrive \"vær rigtig god\"", false], ["Stilen kan ikke påvirkes", false]], "fork": "Et eksempel siger mere end ti tillægsord. AI'en aflæser stilen og efterligner den."}, {"sp": "Første svar er kun halvgodt. Hvad er det stærkeste træk?", "svar": [["Bede om ændringer: \"kortere, varmere tone, giv mig tre varianter\"", true], ["Acceptere det — bedre bliver det ikke", false], ["Skifte til en anden chatbot med det samme", false]], "fork": "Første svar er et udkast. Man arbejder sig frem til det gode svar — det er hele pointen med en samtale."}, {"sp": "Hvad er fidusen ved at bede AI'en stille DIG spørgsmål først?", "svar": [["Den får den kontekst, du ikke selv vidste var vigtig", true], ["Det er en høflighedsregel", false], ["Det låser svaret fast, så det ikke kan ændres", false]], "fork": "\"Stil mig 5 spørgsmål først\" tvinger den vigtige kontekst frem — et af de bedste tricks til svære opgaver."}, {"sp": "Hvilken prompt giver den bedste madplan?", "svar": [["\"Lav en madplan\"", false], ["\"Lav en madplan for 2 voksne: hurtige hverdagsretter, ingen fisk, og lav en samlet indkøbsliste\"", true], ["\"MADPLAN. NU.\"", false]], "fork": "Antal personer, krav og ønsket format — jo mere præcis bestilling, jo mere brugbar plan."}];
+  var KRAV = [{"m": "du er (en|et|min)|som (rådgiver|konsulent|lærer|ekspert|coach)", "t": "Giver AI'en en rolle (fx \"Du er en erfaren ...\")"}, {"m": "tabel|punkter|punktform|liste|brev|mail|udkast|trin|program|plan", "t": "Bestiller et format (fx brev, tabel, punkter, udkast)"}, {"m": "\\d+\\s*(ord|linjer|sætninger|minutter|sider?)|((højst|maks|max)\\s*\\d+)|(én|en|halv)\\s*side", "t": "Sætter en længdegrænse med et tal"}, {"laengde": 120, "t": "Har rigtig kontekst med (mindst 120 tegn i alt)"}];
 
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){
@@ -201,41 +231,129 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Quiz
-  var rigtige = {};
-  document.querySelectorAll('.quiz-sp').forEach(function(sp){
-    sp.querySelectorAll('.svar').forEach(function(knap){
-      knap.addEventListener('click', function(){
-        var erRigtig = knap.getAttribute('data-rigtig') === 'ja';
-        if (erRigtig) {
-          sp.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; k.classList.remove('forkert'); });
-          knap.classList.add('rigtig');
-          sp.querySelector('.forklaring').style.display = 'block';
-          rigtige[sp.getAttribute('data-sp')] = true;
-          tjekFaerdig();
-        } else {
-          knap.classList.add('forkert');
-          knap.disabled = true;
-        }
-      });
+  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  var felt = document.getElementById('praktik-felt');
+  var liste = document.getElementById('praktik-liste');
+  var praktikOk = false;
+
+  function laasPraktikOp(){
+    praktikOk = true;
+    document.getElementById('praktik-godkendt').style.display = 'block';
+    document.getElementById('quiz-laas').style.display = 'none';
+    document.getElementById('quiz-indhold').style.display = 'block';
+    try {
+      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
+      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+    } catch(e) {}
+  }
+
+  document.getElementById('praktik-tjek').addEventListener('click', function(){
+    var tekst = felt.value || '';
+    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    liste.style.display = 'block';
+    var alle = true;
+    KRAV.forEach(function(k, i){
+      var ok;
+      if (k.laengde) { ok = tekst.trim().length >= k.laengde; }
+      else {
+        var fundet = new RegExp(k.m, 'i').test(tekst);
+        ok = k.neg ? !fundet : fundet;
+      }
+      document.getElementById('krav-' + i).className = ok ? 'ok' : '';
+      if (!ok) { alle = false; }
     });
+    if (alle) { laasPraktikOp(); }
   });
 
-  function tjekFaerdig(){
-    if (Object.keys(rigtige).length === 3) {
-      try {
-        var faerdige = JSON.parse(localStorage.getItem('aikort') || '[]');
-        if (faerdige.indexOf(MODUL) === -1) { faerdige.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(faerdige));
-      } catch(e) {}
-      var resultat = document.getElementById('quiz-resultat');
-      resultat.style.display = 'block';
-      if (resultat.scrollIntoView) { resultat.scrollIntoView({behavior:'smooth', block:'center'}); }
+  // allerede godkendt tidligere?
+  try {
+    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    if (gemt) { felt.value = gemt; }
+    if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
+  } catch(e) {}
+
+  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  var omraade = document.getElementById('quiz-omraade');
+  var bedoemKnap = document.getElementById('quiz-bedoem');
+  var spgs = [], valgte = [];
+
+  function bland(a){
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
     }
+    return a;
   }
+
+  function nyProeve(){
+    spgs = bland(BANK.slice()).slice(0, TRAEK);
+    valgte = new Array(spgs.length);
+    omraade.innerHTML = '';
+    document.getElementById('quiz-status').style.display = 'none';
+    document.getElementById('quiz-resultat').style.display = 'none';
+    bedoemKnap.style.display = '';
+    bedoemKnap.disabled = true;
+    spgs.forEach(function(q, qi){
+      var boks = document.createElement('div');
+      boks.className = 'quiz-sp';
+      var sp = document.createElement('div');
+      sp.className = 'sp';
+      sp.textContent = (qi + 1) + '. ' + q.sp;
+      boks.appendChild(sp);
+      bland(q.svar.map(function(_, i){ return i; })).forEach(function(si){
+        var k = document.createElement('button');
+        k.type = 'button';
+        k.className = 'svar';
+        k.textContent = q.svar[si][0];
+        k.addEventListener('click', function(){
+          if (k.disabled) return;
+          boks.querySelectorAll('.svar').forEach(function(x){ x.classList.remove('valgt'); });
+          k.classList.add('valgt');
+          valgte[qi] = si;
+          bedoemKnap.disabled = !valgte.every(function(v){ return v !== undefined; }) || valgte.length !== spgs.length;
+        });
+        boks.appendChild(k);
+      });
+      var fork = document.createElement('div');
+      fork.className = 'forklaring';
+      fork.textContent = q.fork;
+      boks.appendChild(fork);
+      omraade.appendChild(boks);
+    });
+  }
+
+  bedoemKnap.addEventListener('click', function(){
+    var rigtige = 0;
+    spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
+    omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
+    bedoemKnap.style.display = 'none';
+    if (rigtige === spgs.length && praktikOk) {
+      omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
+        boks.querySelector('.svar.valgt').classList.add('rigtig');
+        boks.querySelector('.forklaring').style.display = 'block';
+      });
+      try {
+        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
+        localStorage.setItem('aikort', JSON.stringify(f));
+      } catch(e) {}
+      var res = document.getElementById('quiz-resultat');
+      res.style.display = 'block';
+      if (res.scrollIntoView) { res.scrollIntoView({behavior:'smooth', block:'center'}); }
+    } else {
+      var st = document.getElementById('quiz-status');
+      document.getElementById('quiz-score').textContent = rigtige + ' af ' + spgs.length + ' rigtige';
+      st.style.display = 'block';
+      if (st.scrollIntoView) { st.scrollIntoView({behavior:'smooth', block:'center'}); }
+    }
+  });
+
+  document.getElementById('quiz-igen').addEventListener('click', nyProeve);
+  nyProeve();
 })();
 </script>
-
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
 </body>

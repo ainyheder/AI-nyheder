@@ -89,6 +89,32 @@ footer a { color: var(--accent); }
 .knap-videre:hover { opacity: .9; }
 .knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
   padding: 12px 20px; margin-top: 10px; }
+
+.bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
+.bedoem-knap:disabled { background: var(--linje); color: var(--blaek-svag); cursor: default; }
+.bedoem-knap:not(:disabled):hover { opacity: .9; }
+.svar.valgt { border-color: var(--accent); background: var(--accent-svag); font-weight: 700; }
+.quiz-status { display: none; background: var(--roed-svag); border: 2px solid var(--roed);
+  border-radius: var(--radius); padding: 20px 24px; margin: 18px 0; }
+.quiz-status p { font-size: 15px; margin-bottom: 10px; }
+.igen-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border: none; border-radius: 999px; padding: 11px 22px; cursor: pointer; }
+.igen-knap:hover { background: var(--accent); color: #fff; }
+
+.praktik { background: var(--bg-kort); border: 2px solid var(--accent); border-radius: var(--radius);
+  padding: 24px 28px; margin: 24px 0; box-shadow: var(--skygge); }
+.praktik textarea { font-family: var(--font-ui); font-size: 15px; width: 100%; min-height: 120px;
+  padding: 12px 16px; border: 1px solid var(--linje); border-radius: 10px; background: var(--bg);
+  color: var(--blaek); resize: vertical; margin: 12px 0 4px; }
+.praktik textarea:focus { outline: none; border-color: var(--accent); }
+.praktik-tjekliste { list-style: none; margin: 12px 0 0; padding: 0; display: none; }
+.praktik-tjekliste li { font-size: 14px; margin: 6px 0 6px 0; padding-left: 26px; position: relative; }
+.praktik-tjekliste li::before { content: "✗"; position: absolute; left: 4px; color: var(--roed); font-weight: 700; }
+.praktik-tjekliste li.ok::before { content: "✓"; color: var(--groen); }
+.praktik-tjekliste li.ok { color: var(--blaek-svag); }
+.praktik-godkendt { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
+  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14.5px; margin-top: 12px; font-weight: 600; }
 </style>
 </head>
 <body>
@@ -106,7 +132,7 @@ footer a { color: var(--accent); }
 <span class="modul-tag">Modul 6 af 7 · ca. 15 min</span>
 <h1>AI på jobbet</h1>
 <p class="manchet">På jobbet kan AI spare dig for timer hver uge — hvis du bruger den rigtigt. Men arbejdspladsen har også data, der aldrig må havne i en chatbot. Dette modul giver dig både gevinsterne og reglerne.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Bruger du allerede AI professionelt? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Bruger du allerede AI professionelt? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
 
 <h2>Det, AI er bedst til på jobbet</h2>
 <ul>
@@ -136,38 +162,39 @@ footer a { color: var(--accent); }
 </ul>
 <div class="boks"><strong>Tommelfingerregel:</strong> Ville du være tryg ved, at teksten stod i en mail til en fremmed? Så må den gerne komme i chatbotten. Ville du ikke? Så anonymisér først — eller lad være.</div>
 
-<h2 id="quiz">Quiz: Har du fat i det?</h2>
-<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
-
-<div class="quiz-sp" data-sp="1">
-  <div class="sp">1. Du vil have AI til at skrive referat af et møde, hvor kunders navne og sager blev nævnt. Hvad gør du?</div>
-  <button class="svar" data-rigtig="nej">Indsætter det hele — referatet skal jo være præcist</button>
-  <button class="svar" data-rigtig="ja">Anonymiserer navne og sager først — eller bruger virksomhedens godkendte AI-værktøj</button>
-  <button class="svar" data-rigtig="nej">Dropper AI på jobbet helt</button>
-  <div class="forklaring">Persondata i en privat chatbot-konto er et GDPR-problem. Anonymisér ("kunde A", "sag 1") eller brug en godkendt løsning — så får du gevinsten uden risikoen.</div>
+<h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
+<p>Job-praktikken: et referat bestilt professionelt — og uden persondata. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<div class="praktik">
+  <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
+  <p>Skriv en prompt, der beder om et referat af et møde med tydelig struktur (beslutninger, opgaver, deadlines) — og find selv på 3-4 korte, ANONYMISEREDE mødenoter, du sætter ind i prompten. Ingen rigtige navne eller CPR-numre!</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Som referat-øvelsen fra modulet — men dine egne noter, fx "kollega A tjekker priser inden fredag".</p>
+  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
+  <ul class="praktik-tjekliste" id="praktik-liste">
+    <li id="krav-0">Bestiller et referat eller en opsummering</li>
+    <li id="krav-1">Beder om struktur (beslutninger, opgaver, deadlines...)</li>
+    <li id="krav-2">Indeholder INGEN CPR-lignende numre</li>
+    <li id="krav-3">Har mødenoter med (mindst 100 tegn i alt)</li>
+  </ul>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
 </div>
 
-<div class="quiz-sp" data-sp="2">
-  <div class="sp">2. Hvem har ansvaret for indholdet i en AI-skrevet mail, du sender til en kunde?</div>
-  <button class="svar" data-rigtig="nej">AI-firmaet — det er deres tekst</button>
-  <button class="svar" data-rigtig="ja">Dig — du skal læse og rette, før du sender</button>
-  <button class="svar" data-rigtig="nej">Ingen — AI-tekster er juridisk gråzone</button>
-  <div class="forklaring">AI'en er dit udkastværktøj, ikke din afsender. Det, der går ud med dit navn på, står du inde for — derfor læser du altid igennem.</div>
+<div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
+<div id="quiz-indhold" style="display:none;">
+<h2 id="quiz">Prøven: Har du fat i det?</h2>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<div id="quiz-omraade"></div>
+<button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
+<div class="quiz-status" id="quiz-status">
+  <p><strong id="quiz-score"></strong> — alle fem skal sidde, før modulet er gennemført. Ingen panik: du får fem nye spørgsmål i næste forsøg.</p>
+  <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
-
-<div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Din arbejdsplads har ingen regler om AI endnu. Hvad er det kloge træk?</div>
-  <button class="svar" data-rigtig="nej">Så er alt tilladt — fyr løs med alle data</button>
-  <button class="svar" data-rigtig="nej">Undgå AI, indtil loven kræver det</button>
-  <button class="svar" data-rigtig="ja">Spørg din leder om en afklaring — og hold fortrolige data ude imens</button>
-  <div class="forklaring">Ingen politik betyder ikke frit spil — det betyder uafklaret. Spørg, foreslå gerne selv retningslinjer, og brug sund fornuft med data, indtil svaret kommer.</div>
-</div>
-
 <div class="quiz-resultat" id="quiz-resultat">
   <h3>🎉 Modul 6 gennemført!</h3>
   <p>Du kan nu bruge AI professionelt — med både gevinsterne og reglerne på plads. Sidste modul: sikkerhed og god AI-skik.</p>
   <a class="knap-videre" href="koerekort-7.html">Videre til modul 7 →</a>
   <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 
 </main>
@@ -176,6 +203,9 @@ footer a { color: var(--accent); }
 <script>
 (function(){
   var MODUL = 6;
+  var TRAEK = 5;
+  var BANK = [{"sp": "Du vil have AI til at skrive referat af et møde, hvor kunders navne og sager blev nævnt. Hvad gør du?", "svar": [["Indsætter det hele — referatet skal jo være præcist", false], ["Anonymiserer navne og sager først — eller bruger virksomhedens godkendte AI-værktøj", true], ["Dropper AI på jobbet helt", false]], "fork": "Persondata i en privat chatbot-konto er et GDPR-problem. Anonymisér, eller brug en godkendt løsning."}, {"sp": "Hvem har ansvaret for indholdet i en AI-skrevet mail, du sender til en kunde?", "svar": [["AI-firmaet — det er deres tekst", false], ["Dig — du skal læse og rette, før du sender", true], ["Ingen — AI-tekster er juridisk gråzone", false]], "fork": "AI'en er dit udkastværktøj. Det, der går ud med dit navn på, står du inde for."}, {"sp": "Din arbejdsplads har ingen regler om AI endnu. Hvad er det kloge træk?", "svar": [["Så er alt tilladt — fyr løs med alle data", false], ["Undgå AI, indtil loven kræver det", false], ["Spørg din leder om en afklaring — og hold fortrolige data ude imens", true]], "fork": "Ingen politik betyder uafklaret, ikke frit spil. Spørg — og brug sund fornuft imens."}, {"sp": "Hvilken jobopgave egner sig BEDST til AI?", "svar": [["Første udkast til en svær mail", true], ["At underskrive kontrakter", false], ["At beslutte, hvem der skal forfremmes", false]], "fork": "Udkast, omskrivninger og opsummeringer er hjemmebanen. Beslutninger om mennesker og forpligtelser er menneskearbejde."}, {"sp": "En kollega indsætter hele kundelisten med telefonnumre i sin private chatbot. Hvad tænker du?", "svar": [["Det er en GDPR-risiko — det bør nævnes for kollegaen eller lederen", true], ["Helt fint — alle gør det", false], ["Kun et problem, hvis kunderne opdager det", false]], "fork": "Persondata i private AI-konti er et reelt compliance-problem — uanset om nogen opdager det."}, {"sp": "Hvad er en \"godkendt AI-løsning\" på en arbejdsplads?", "svar": [["Et værktøj, virksomheden har aftale med og styr på datahåndteringen i", true], ["Den chatbot, der er gratis", false], ["Alt, hvad der ligger på nettet", false]], "fork": "Forskellen er databehandleraftaler og kontrol: hvor havner dataene, og hvem må se dem?"}, {"sp": "AI'en har skrevet et mødereferat for dig. Hvad gør du, før du deler det?", "svar": [["Læser og retter — AI kan have misforstået eller opfundet detaljer", true], ["Deler det direkte — det sparer tid", false], ["Sletter det — referater skal skrives i hånden", false]], "fork": "AI-referater er gode udkast, men kan fejlhuske beslutninger. Du er redaktøren."}, {"sp": "AI'en giver dig en Excel-formel. Hvad gør du?", "svar": [["Tester den på et par rækker, hvor du kender facit", true], ["Bruger den på hele regnskabet med det samme", false], ["Formler fra AI virker aldrig — dropper det", false]], "fork": "Formler fra AI er tit rigtige — men test på kendte tal først. To minutters kontrol mod timers fejlfinding."}, {"sp": "Hvornår bør du fortælle, at AI har hjulpet med en tekst?", "svar": [["Når modtageren med rimelighed tror, den er din egen — fx eksamen eller vigtige dokumenter", true], ["Aldrig — det er pinligt", false], ["Altid, også ved indkøbslisten", false]], "fork": "God skik: vær ærlig dér, hvor det betyder noget for modtageren. Ingen skylder verden en fodnote på huskesedlen."}];
+  var KRAV = [{"m": "referat|opsummer|sammenfat", "t": "Bestiller et referat eller en opsummering"}, {"m": "beslutning|opgave|deadline|ansvarlig|punkter|frist", "t": "Beder om struktur (beslutninger, opgaver, deadlines...)"}, {"m": "\\d{6}-?\\d{4}", "neg": true, "t": "Indeholder INGEN CPR-lignende numre"}, {"laengde": 100, "t": "Har mødenoter med (mindst 100 tegn i alt)"}];
 
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){
@@ -198,41 +228,129 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Quiz
-  var rigtige = {};
-  document.querySelectorAll('.quiz-sp').forEach(function(sp){
-    sp.querySelectorAll('.svar').forEach(function(knap){
-      knap.addEventListener('click', function(){
-        var erRigtig = knap.getAttribute('data-rigtig') === 'ja';
-        if (erRigtig) {
-          sp.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; k.classList.remove('forkert'); });
-          knap.classList.add('rigtig');
-          sp.querySelector('.forklaring').style.display = 'block';
-          rigtige[sp.getAttribute('data-sp')] = true;
-          tjekFaerdig();
-        } else {
-          knap.classList.add('forkert');
-          knap.disabled = true;
-        }
-      });
+  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  var felt = document.getElementById('praktik-felt');
+  var liste = document.getElementById('praktik-liste');
+  var praktikOk = false;
+
+  function laasPraktikOp(){
+    praktikOk = true;
+    document.getElementById('praktik-godkendt').style.display = 'block';
+    document.getElementById('quiz-laas').style.display = 'none';
+    document.getElementById('quiz-indhold').style.display = 'block';
+    try {
+      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
+      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+    } catch(e) {}
+  }
+
+  document.getElementById('praktik-tjek').addEventListener('click', function(){
+    var tekst = felt.value || '';
+    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    liste.style.display = 'block';
+    var alle = true;
+    KRAV.forEach(function(k, i){
+      var ok;
+      if (k.laengde) { ok = tekst.trim().length >= k.laengde; }
+      else {
+        var fundet = new RegExp(k.m, 'i').test(tekst);
+        ok = k.neg ? !fundet : fundet;
+      }
+      document.getElementById('krav-' + i).className = ok ? 'ok' : '';
+      if (!ok) { alle = false; }
     });
+    if (alle) { laasPraktikOp(); }
   });
 
-  function tjekFaerdig(){
-    if (Object.keys(rigtige).length === 3) {
-      try {
-        var faerdige = JSON.parse(localStorage.getItem('aikort') || '[]');
-        if (faerdige.indexOf(MODUL) === -1) { faerdige.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(faerdige));
-      } catch(e) {}
-      var resultat = document.getElementById('quiz-resultat');
-      resultat.style.display = 'block';
-      if (resultat.scrollIntoView) { resultat.scrollIntoView({behavior:'smooth', block:'center'}); }
+  // allerede godkendt tidligere?
+  try {
+    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    if (gemt) { felt.value = gemt; }
+    if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
+  } catch(e) {}
+
+  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  var omraade = document.getElementById('quiz-omraade');
+  var bedoemKnap = document.getElementById('quiz-bedoem');
+  var spgs = [], valgte = [];
+
+  function bland(a){
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
     }
+    return a;
   }
+
+  function nyProeve(){
+    spgs = bland(BANK.slice()).slice(0, TRAEK);
+    valgte = new Array(spgs.length);
+    omraade.innerHTML = '';
+    document.getElementById('quiz-status').style.display = 'none';
+    document.getElementById('quiz-resultat').style.display = 'none';
+    bedoemKnap.style.display = '';
+    bedoemKnap.disabled = true;
+    spgs.forEach(function(q, qi){
+      var boks = document.createElement('div');
+      boks.className = 'quiz-sp';
+      var sp = document.createElement('div');
+      sp.className = 'sp';
+      sp.textContent = (qi + 1) + '. ' + q.sp;
+      boks.appendChild(sp);
+      bland(q.svar.map(function(_, i){ return i; })).forEach(function(si){
+        var k = document.createElement('button');
+        k.type = 'button';
+        k.className = 'svar';
+        k.textContent = q.svar[si][0];
+        k.addEventListener('click', function(){
+          if (k.disabled) return;
+          boks.querySelectorAll('.svar').forEach(function(x){ x.classList.remove('valgt'); });
+          k.classList.add('valgt');
+          valgte[qi] = si;
+          bedoemKnap.disabled = !valgte.every(function(v){ return v !== undefined; }) || valgte.length !== spgs.length;
+        });
+        boks.appendChild(k);
+      });
+      var fork = document.createElement('div');
+      fork.className = 'forklaring';
+      fork.textContent = q.fork;
+      boks.appendChild(fork);
+      omraade.appendChild(boks);
+    });
+  }
+
+  bedoemKnap.addEventListener('click', function(){
+    var rigtige = 0;
+    spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
+    omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
+    bedoemKnap.style.display = 'none';
+    if (rigtige === spgs.length && praktikOk) {
+      omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
+        boks.querySelector('.svar.valgt').classList.add('rigtig');
+        boks.querySelector('.forklaring').style.display = 'block';
+      });
+      try {
+        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
+        localStorage.setItem('aikort', JSON.stringify(f));
+      } catch(e) {}
+      var res = document.getElementById('quiz-resultat');
+      res.style.display = 'block';
+      if (res.scrollIntoView) { res.scrollIntoView({behavior:'smooth', block:'center'}); }
+    } else {
+      var st = document.getElementById('quiz-status');
+      document.getElementById('quiz-score').textContent = rigtige + ' af ' + spgs.length + ' rigtige';
+      st.style.display = 'block';
+      if (st.scrollIntoView) { st.scrollIntoView({behavior:'smooth', block:'center'}); }
+    }
+  });
+
+  document.getElementById('quiz-igen').addEventListener('click', nyProeve);
+  nyProeve();
 })();
 </script>
-
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
 </body>

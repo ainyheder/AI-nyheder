@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
-<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet Erhverv · Modul 2</title>
+<meta name="description" content="Erhvervsmodul 2: Analysér rapporter og kontrakter med AI — og kvalitetssikr resultatet med sidehenvisninger, stikprøver og sund skepsis.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,11 +62,6 @@ footer a { color: var(--accent); }
 .kopier { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--accent);
   background: var(--accent-svag); border: none; border-radius: 999px; padding: 8px 18px; cursor: pointer; }
 .kopier:hover { background: var(--accent); color: #fff; }
-.facit-knap { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--blaek-svag);
-  background: var(--bg); border: 1px solid var(--linje); border-radius: 999px; padding: 8px 18px; cursor: pointer; margin-left: 8px; }
-.facit-knap:hover { border-color: var(--accent); color: var(--accent); }
-.facit { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
-  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; margin-top: 12px; }
 
 /* Quiz */
 .quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
@@ -87,8 +82,6 @@ footer a { color: var(--accent); }
 .knap-videre { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff;
   background: var(--accent); padding: 12px 26px; border-radius: 999px; margin-top: 10px; }
 .knap-videre:hover { opacity: .9; }
-.knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
-  padding: 12px 20px; margin-top: 10px; }
 
 .bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
   border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
@@ -125,75 +118,60 @@ footer a { color: var(--accent); }
     <a class="top-led" href="ordbog.html">Ordbog</a>
     <a class="top-led" href="prompts.html">Prompts</a>
     <a class="top-led" href="faq.html">FAQ</a>
-    <a class="tilbage" href="koerekort.html">← Kørekortet</a>
+    <a class="tilbage" href="erhverv.html">← Erhverv</a>
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
-<h1>Din første AI-samtale</h1>
-<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Chatter du allerede med AI til daglig? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du, er modulet gennemført.</p>
+<div class="boks" id="e-graense" style="display:none;">🔒 <strong>Erhvervsmodulerne er en overbygning.</strong> De kræver, at <a href="koerekort.html" style="color:var(--accent); font-weight:700;">grundkørekortet</a> er gennemført (alle 7 moduler) i denne browser.</div>
+<div id="e-indhold">
+<span class="modul-tag">Erhverv · Modul 2 af 4 · ca. 20 min</span>
+<h1>Dokumenter & kvalitetssikring</h1>
+<p class="manchet">AI kan læse en rapport på sekunder — men det professionelle håndværk ligger i kvalitetssikringen. Dette modul handler om at få efterprøvbare svar ud af dokumenter, ikke bare flotte svar.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Kvalitetssikrer du allerede AI-analyser? <a href="#praktik" style="color:var(--accent); font-weight:700;">Spring direkte til praktik og prøve ↓</a> — består du begge dele, er modulet gennemført.</p>
 
-<h2>Først: Har du en chatbot klar?</h2>
-<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
-<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
-
-<h2>Opgave 1: Få hjælp til noget praktisk</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 1 af 3</span>
-<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
-<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
-<button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
-</div>
-
-<h2>Opgave 2: Få en svær tekst forklaret</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 2 af 3</span>
-<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
-<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
-<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
-</div>
-
-<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 3 af 3</span>
-<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
-<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
-<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
-<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
-<ul style="margin-top:6px">
-<li>"Den anden idé lyder god — uddyb den."</li>
-<li>"Gør det billigere."</li>
-<li>"Hvad hvis det regner?"</li>
+<h2>Hvad dokument-AI kan i praksis</h2>
+<ul>
+<li><strong>Opsummere:</strong> "Opsummér rapportens hovedkonklusioner for en travl direktion — maks 10 punkter."</li>
+<li><strong>Udtrække:</strong> "Find alle beløb og datoer i kontrakten, og sæt dem i en tabel."</li>
+<li><strong>Sammenligne:</strong> "Sammenlign de to tilbud punkt for punkt: pris, leveringstid, forbehold."</li>
+<li><strong>Oversætte niveau:</strong> "Forklar det tekniske afsnit, så en ikke-tekniker kan tage stilling."</li>
 </ul>
-<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
-</div>
+
+<h2>Kvalitetssikringens tre greb</h2>
+<ul>
+<li><strong>Kræv henvisninger.</strong> Tilføj altid: "angiv for hver pointe, hvor i dokumentet den står (side/afsnit), gerne med et kort citat." Det gør hvert svar efterprøvbart — og det gør AI'en målbart mere præcis.</li>
+<li><strong>Tag stikprøver.</strong> Slå 2-3 af de vigtigste påstande op i kildedokumentet. Passer de, er resten sandsynligvis også i orden; passer de ikke, ved du det, før det koster.</li>
+<li><strong>Spørg til det modsatte.</strong> "Hvad taler imod denne konklusion? Hvad har du udeladt?" tvinger nuancerne frem og afslører huller.</li>
+</ul>
+<div class="boks"><strong>Husk fra grundkørekortet:</strong> AI kan "finde" tal og formuleringer, der ikke står i dokumentet — hallucinationer stopper ikke, fordi der er en PDF vedhæftet. Henvisningskravet er dit værn.</div>
+
+<h2>Fortrolige dokumenter</h2>
+<p>Reglen fra modul 1 gælder skærpet her: kontrakter, personalesager og forretningshemmeligheder må kun ind i værktøjer, som virksomheden har godkendt til fortroligt indhold. Er du i tvivl, så anonymisér — eller lad være. Og husk: "jeg sletter chatten bagefter" er ikke en databeskyttelsesstrategi.</p>
+
+<h2>Arbejdsgangen, når tiden er knap</h2>
+<p>Lang rapport, kort deadline? Den professionelle rækkefølge: 1) AI-opsummering med henvisninger, 2) læs selv de afsnit, der bærer beslutningen, 3) stikprøve på tallene, 4) skriv din indstilling — selv. AI'en leverer overblikket; du leverer dømmekraften og står bag resultatet.</p>
 
 <h2 id="praktik">Praktisk opgave: Skriv selv 🖊️</h2>
-<p>I en rigtig AI-samtale er den vigtigste færdighed at styre samtalen videre. Det øver vi nu. Denne del <strong>skal godkendes, før prøven låses op</strong> — for man lærer ikke at cykle af at se på cykler.</p>
+<p>Nu skriver du en dokument-analyse-prompt med indbygget kvalitetssikring. Denne del <strong>skal godkendes, før prøven låses op</strong>.</p>
 <div class="praktik">
   <p style="font-weight:700; margin-bottom:4px;">Din opgave:</p>
-  <p>Forestil dig, at AI'en har svaret på dit spørgsmål med en lang, teknisk tekstvæg. Skriv den opfølgende besked, du ville sende: bed om enklere sprog OG et konkret format (fx punkter eller en tabel).</p>
-  <p style="font-size:13.5px; color:var(--blaek-svag);">Husk fra modulet: samtalen fortsætter — du behøver ikke starte forfra, bare sige hvad du vil have anderledes.</p>
-  <textarea id="praktik-felt" placeholder="Skriv din prompt her..."></textarea>
+  <p>Skriv en prompt, der beder AI'en analysere et dokument (vælg selv: rapport, kontrakt, tilbud...) med krav om: en klar analyseopgave, henvisninger til hvor i dokumentet tingene står, og et struktureret format.</p>
+  <p style="font-size:13.5px; color:var(--blaek-svag);">Fx: "Gennemgå vedhæftede kontrakt ... angiv for hvert punkt, hvor i dokumentet det står ... sæt det op som tabel."</p>
+  <textarea id="praktik-felt" placeholder="Skriv dit svar her..."></textarea>
   <button class="bedoem-knap" id="praktik-tjek" style="margin-top:8px;">Tjek mit svar</button>
   <ul class="praktik-tjekliste" id="praktik-liste">
-    <li id="krav-0">Beder om enklere eller kortere sprog</li>
-    <li id="krav-1">Bestiller et konkret format (fx punkter, tabel, trin)</li>
-    <li id="krav-2">Er en rigtig besked (mindst 40 tegn)</li>
+    <li id="krav-0">Stiller en klar analyseopgave (opsummér, sammenlign, gennemgå, find...)</li>
+    <li id="krav-1">Kræver henvisninger eller citater ("hvor i dokumentet", side, afsnit...)</li>
+    <li id="krav-2">Bestiller et struktureret format (tabel, punkter, oversigt...)</li>
+    <li id="krav-3">Er en rigtig arbejdsprompt (mindst 120 tegn)</li>
   </ul>
-  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Din prompt opfylder alle kriterier. Prøv den gerne af i din chatbot — og fortsæt til prøven nedenfor.</div>
+  <div class="praktik-godkendt" id="praktik-godkendt">✓ Godkendt! Dit svar opfylder alle kriterier — fortsæt til prøven nedenfor.</div>
 </div>
 
 <div class="boks" id="quiz-laas">🔒 <strong>Prøven er låst.</strong> Den låses op, når din praktiske opgave ovenfor er godkendt.</div>
 <div id="quiz-indhold" style="display:none;">
 <h2 id="quiz">Prøven: Har du fat i det?</h2>
-<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål — læs eventuelt stoffet ovenfor igen først.</p>
+<p>Fem spørgsmål, trukket tilfældigt blandt ni. <strong>Alle fem skal være rigtige</strong>, og du får først facit, når du har svaret på det hele. Rammer du forbi, trækker vi nye spørgsmål.</p>
 <div id="quiz-omraade"></div>
 <button class="bedoem-knap" id="quiz-bedoem" disabled>Se resultat</button>
 <div class="quiz-status" id="quiz-status">
@@ -201,10 +179,11 @@ footer a { color: var(--accent); }
   <button class="igen-knap" id="quiz-igen">Prøv igen med nye spørgsmål</button>
 </div>
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 2 gennemført!</h3>
-  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
-  <a class="knap-videre" href="koerekort-3.html">Videre til modul 3 →</a>
-  <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+  <h3>🎉 Erhvervsmodul 2 gennemført!</h3>
+  <p>Du kan nu få efterprøvbare svar ud af dokumenter. I modul 3: automatisér de opgaver, der gentager sig.</p>
+  <a class="knap-videre" href="erhverv-3.html">Videre til modul 3 →</a>
+  <br><a href="erhverv.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+</div>
 </div>
 </div>
 
@@ -215,10 +194,17 @@ footer a { color: var(--accent); }
 (function(){
   var MODUL = 2;
   var TRAEK = 5;
-  var BANK = [{"sp": "Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?", "svar": [["Starte en helt ny samtale med et bedre spørgsmål", false], ["Skrive \"kortere og enklere, tak\" i samme samtale", true], ["Læse det hele og finde de gode dele selv", false]], "fork": "Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme."}, {"sp": "Skal du skrive fejlfrit og formelt, når du taler med en chatbot?", "svar": [["Ja, ellers forstår den ikke opgaven", false], ["Ja, man skal bruge særlige kommandoer", false], ["Nej — skriv som du taler, slåfejl er helt fint", true]], "fork": "Der findes ingen kommandoer at lære. Skriv naturligt dansk — den forstår dig alligevel."}, {"sp": "Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?", "svar": [["Indsætter brevet, som det er — det går nok", false], ["Fjerner navn og CPR-nummer, før jeg indsætter teksten", true], ["Dropper det — AI må aldrig se breve", false]], "fork": "Teksten må AI'en gerne hjælpe med. Men personnummer og følsomme oplysninger fjerner du først."}, {"sp": "Hvad koster det at komme i gang med ChatGPT, Gemini eller Claude?", "svar": [["Ingenting — gratis-udgaverne er rigelige til at starte med", true], ["Det kræver betalingskort fra første dag", false], ["Det er kun gratis for studerende", false]], "fork": "Alle tre store chatbots har gratis udgaver uden betalingskort — rigeligt til at lære dem at kende."}, {"sp": "Svaret rammer ved siden af, fordi AI'en har misforstået dig. Hvad gør du?", "svar": [["Forklarer i samme samtale, hvad jeg mente", true], ["Ikke noget — man kan ikke rette en AI", false], ["Sletter min konto og opretter en ny", false]], "fork": "\"Nej, jeg mente...\" er en helt normal del af en AI-samtale. Den retter ind med det samme."}, {"sp": "Hvad husker AI'en undervejs i en samtale?", "svar": [["Alt det, I har skrevet tidligere i samme samtale", true], ["Ingenting — hver besked starter helt forfra", false], ["Kun det første spørgsmål", false]], "fork": "Derfor behøver du aldrig gentage dig selv — du kan bygge videre: \"gør den kortere\", \"hvad med om vinteren?\""}, {"sp": "Du vil have et svært brev forklaret. Hvad er den bedste fremgangsmåde?", "svar": [["Indsætte teksten og bede om en forklaring med almindelige ord", true], ["Beskrive brevet efter hukommelsen", false], ["Spørge \"kan du gætte, hvad kommunen vil mig?\"", false]], "fork": "Giv AI'en selve teksten (uden navn og CPR) — så er forklaringen præcis i stedet for et gæt."}, {"sp": "Hvor personligt må du skrive i en chatbot?", "svar": [["Frit om hverdagsting — men aldrig CPR, koder eller andres private forhold", true], ["Kun om vejret og madopskrifter", false], ["Alt, også adgangskoder — det er sikkert nok", false]], "fork": "Skriv gerne personligt — det gør svarene bedre. Grænsen går ved identitet, koder og andres privatliv."}, {"sp": "Din besked har tre slåfejl. Hvad gør du?", "svar": [["Sender den bare — AI'en forstår dig alligevel", true], ["Starter forfra — ellers bliver svaret forkert", false], ["Undskylder for fejlene, før jeg spørger", false]], "fork": "Slåfejl, halve sætninger, blandet dansk-engelsk: den forstår det hele. Ingen grund til perfektion."}];
-  var KRAV = [{"m": "kortere|enklere|simplere|lettere|almindelige ord|jævnt dansk|uden fagord|mindre teknisk", "t": "Beder om enklere eller kortere sprog"}, {"m": "punkter|punktform|tabel|liste|trin|overskrifter|maks\\s*\\d+|højst\\s*\\d+", "t": "Bestiller et konkret format (fx punkter, tabel, trin)"}, {"laengde": 40, "t": "Er en rigtig besked (mindst 40 tegn)"}];
+  var BANK = [{"sp": "Hvad er det vigtigste enkeltkrav i en dokument-analyse-prompt?", "svar": [["At AI'en angiver, hvor i dokumentet hver pointe står", true], ["At svaret er så kort som muligt", false], ["At AI'en lover at være omhyggelig", false]], "fork": "Henvisningskravet gør svaret efterprøvbart — og hæver samtidig præcisionen. Det er kvalitetssikringens greb nummer ét."}, {"sp": "AI'en har opsummeret en kontrakt. Hvad er den rigtige kvalitetssikring, før du handler på den?", "svar": [["Stikprøve: slå de vigtigste påstande op i selve kontrakten", true], ["Ingen — opsummeringen er lavet af AI", false], ["Bede den samme AI bekræfte sit eget svar", false]], "fork": "Stikprøven mod kilden er den eneste kontrol, der reelt tæller. AI der bekræfter sig selv, er ikke kontrol."}, {"sp": "Hvad er en \"stikprøve-kontrol\" af et AI-svar?", "svar": [["At efterprøve udvalgte, vigtige påstande direkte mod kildedokumentet", true], ["At læse svaret to gange", false], ["At spørge en kollega, om det lyder rigtigt", false]], "fork": "2-3 kritiske påstande slås op i kilden. Holder de, er tilliden fortjent; holder de ikke, fangede du det i tide."}, {"sp": "AI'en skal sammenligne to tilbud. Hvad øger pålideligheden mest?", "svar": [["En tabel punkt for punkt med citater fra hvert dokument", true], ["At spørge hvem der \"vinder\" uden begrundelse", false], ["At stille spørgsmålet to gange og tage gennemsnittet", false]], "fork": "Struktur + citater = gennemsigtighed. Du kan se præcis, hvad sammenligningen bygger på, og efterprøve den."}, {"sp": "Et fortroligt dokument skal analyseres. Hvad tjekker du FØRST?", "svar": [["At værktøjet er godkendt af virksomheden til fortroligt indhold", true], ["At dokumentet er konverteret til PDF", false], ["At chatten kan slettes bagefter", false]], "fork": "Godkendelsen er porten. Og nej — at slette chatten bagefter er ikke en databeskyttelsesstrategi."}, {"sp": "AI'en nævner et beløb, som slet ikke står i dokumentet. Hvad er der sket?", "svar": [["En hallucination — AI'en har opdigtet et plausibelt tal", true], ["Dokumentet har opdateret sig selv", false], ["Det er umuligt — AI læser fejlfrit", false]], "fork": "Hallucinationer stopper ikke, fordi der er en PDF vedhæftet. Derfor: henvisningskrav og stikprøver."}, {"sp": "Hvorfor bede AI'en om \"hvad taler imod denne konklusion?\"", "svar": [["Det tvinger nuancer og udeladelser frem, som et enkelt svar skjuler", true], ["Det er høfligt at give AI'en modspil", false], ["Det gør svaret kortere", false]], "fork": "Modspørgsmålet er den billigste second opinion, der findes — og afslører, hvad førsteudgaven sprang over."}, {"sp": "Lang rapport, kort deadline. Hvad er den professionelle arbejdsgang?", "svar": [["AI-opsummering med henvisninger → læs selv de bærende afsnit → stikprøve → skriv selv indstillingen", true], ["Send AI-opsummeringen direkte til direktionen", false], ["Spring rapporten over og gæt", false]], "fork": "AI leverer overblikket, du leverer dømmekraften. Beslutningsgrundlag med dit navn på skal igennem dine hænder."}, {"sp": "Hvem er ansvarlig for et AI-genereret beslutningsgrundlag, der viser sig at være forkert?", "svar": [["Den medarbejder, der leverede det uden kontrol", true], ["AI-leverandøren", false], ["Ingen — teknologien var skyld i det", false]], "fork": "Ansvaret følger afsenderen — præcis som med alt andet arbejde. Derfor er kvalitetssikringen ikke valgfri."}];
+  var KRAV = [{"t": "Stiller en klar analyseopgave (opsummér, sammenlign, gennemgå, find...)", "m": "opsummer|sammenlign|gennemgå|analyser|find|udtræk"}, {"t": "Kræver henvisninger eller citater (\"hvor i dokumentet\", side, afsnit...)", "m": "citat|hvor i|side|afsnit|henvisning|dokumentation"}, {"t": "Bestiller et struktureret format (tabel, punkter, oversigt...)", "m": "tabel|punkter|punktform|liste|oversigt|trin"}, {"t": "Er en rigtig arbejdsprompt (mindst 120 tegn)", "laengde": 120}];
 
-  // Kopiér-knapper
+  // Adgangskrav: grundkørekortet skal være bestået
+  var grundOk = false;
+  try { grundOk = JSON.parse(localStorage.getItem('aikort') || '[]').length >= 7; } catch(e) {}
+  if (!grundOk) {
+    document.getElementById('e-graense').style.display = 'block';
+    document.getElementById('e-indhold').style.display = 'none';
+  }
+
   document.querySelectorAll('.kopier').forEach(function(knap){
     knap.addEventListener('click', function(){
       var tekst = document.getElementById(knap.getAttribute('data-mål')).textContent.replace(/^"|"$/g, '');
@@ -229,19 +215,8 @@ footer a { color: var(--accent); }
     });
   });
 
-  // Facit-knapper
-  document.querySelectorAll('.facit-knap').forEach(function(knap){
-    knap.addEventListener('click', function(){
-      var facit = document.getElementById(knap.getAttribute('data-mål'));
-      var aaben = facit.style.display === 'block';
-      facit.style.display = aaben ? 'none' : 'block';
-      knap.textContent = aaben ? 'Hvad bør jeg se? ▾' : 'Skjul facit ▴';
-    });
-  });
-
-  // ---- Praktik: skriv selv en prompt, tjek mod kriterierne ----
+  // ---- Praktik ----
   var felt = document.getElementById('praktik-felt');
-  var liste = document.getElementById('praktik-liste');
   var praktikOk = false;
 
   function laasPraktikOp(){
@@ -250,16 +225,16 @@ footer a { color: var(--accent); }
     document.getElementById('quiz-laas').style.display = 'none';
     document.getElementById('quiz-indhold').style.display = 'block';
     try {
-      var p = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
+      var p = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
       if (p.indexOf(MODUL) === -1) { p.push(MODUL); }
-      localStorage.setItem('aikort_praktik', JSON.stringify(p));
+      localStorage.setItem('aikort_e_praktik', JSON.stringify(p));
     } catch(e) {}
   }
 
   document.getElementById('praktik-tjek').addEventListener('click', function(){
     var tekst = felt.value || '';
-    try { localStorage.setItem('aikort_praktik_tekst_' + MODUL, tekst); } catch(e) {}
-    liste.style.display = 'block';
+    try { localStorage.setItem('aikort_e_praktik_tekst_' + MODUL, tekst); } catch(e) {}
+    document.getElementById('praktik-liste').style.display = 'block';
     var alle = true;
     KRAV.forEach(function(k, i){
       var ok;
@@ -274,15 +249,14 @@ footer a { color: var(--accent); }
     if (alle) { laasPraktikOp(); }
   });
 
-  // allerede godkendt tidligere?
   try {
-    var tidligere = JSON.parse(localStorage.getItem('aikort_praktik') || '[]');
-    var gemt = localStorage.getItem('aikort_praktik_tekst_' + MODUL);
+    var tidligere = JSON.parse(localStorage.getItem('aikort_e_praktik') || '[]');
+    var gemt = localStorage.getItem('aikort_e_praktik_tekst_' + MODUL);
     if (gemt) { felt.value = gemt; }
     if (tidligere.indexOf(MODUL) !== -1) { laasPraktikOp(); }
   } catch(e) {}
 
-  // ---- Prøven: træk 5 tilfældige spørgsmål, bland svarene, alle skal sidde ----
+  // ---- Prøven ----
   var omraade = document.getElementById('quiz-omraade');
   var bedoemKnap = document.getElementById('quiz-bedoem');
   var spgs = [], valgte = [];
@@ -337,15 +311,15 @@ footer a { color: var(--accent); }
     spgs.forEach(function(q, i){ if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++; });
     omraade.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; });
     bedoemKnap.style.display = 'none';
-    if (rigtige === spgs.length && praktikOk) {
+    if (rigtige === spgs.length && praktikOk && grundOk) {
       omraade.querySelectorAll('.quiz-sp').forEach(function(boks){
         boks.querySelector('.svar.valgt').classList.add('rigtig');
         boks.querySelector('.forklaring').style.display = 'block';
       });
       try {
-        var f = JSON.parse(localStorage.getItem('aikort') || '[]');
+        var f = JSON.parse(localStorage.getItem('aikort_e') || '[]');
         if (f.indexOf(MODUL) === -1) { f.push(MODUL); }
-        localStorage.setItem('aikort', JSON.stringify(f));
+        localStorage.setItem('aikort_e', JSON.stringify(f));
       } catch(e) {}
       var res = document.getElementById('quiz-resultat');
       res.style.display = 'block';
