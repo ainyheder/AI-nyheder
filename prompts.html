@@ -66,6 +66,27 @@ footer a { color: var(--accent); }
   font: inherit; font-size: 12.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
 .kopier:hover { border-color: var(--accent); color: var(--accent); }
 .kopier.ok { background: #1e9e6a; border-color: #1e9e6a; color: #fff; }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
+.hop-raekke { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+.hop { font-size: 13px; font-weight: 700; text-decoration: none; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: 999px; padding: 7px 15px; }
+.hop:hover { border-color: var(--accent); color: var(--accent); }
 </style>
 </head>
 <body>
@@ -80,9 +101,17 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Værktøjskasse · 17 færdige prompts · kopiér og brug</span>
 <h1>Prompt-biblioteket</h1>
-<p class="manchet">Færdige prompts til hverdagens opgaver — kopiér, udfyld de [firkantede felter], og sæt ind i din chatbot. Virker i ChatGPT, Gemini og Claude.</p>
-<h2>Hverdag</h2><div class="prompt-net"><div class="prompt-kort">
+<p class="manchet">Færdige prompts til hverdagens opgaver — kopiér, udfyld de [firkantede felter], og sæt ind i din chatbot. Virker i ChatGPT, Gemini og Claude. Hver prompt her har sparet nogen for en times arbejde — find dén, der sparer din.</p>
+<div class="hop-raekke">
+  <a class="hop" href="#kat-hverdag">🏠 Hverdag</a>
+  <a class="hop" href="#kat-job">💼 Job & karriere</a>
+  <a class="hop" href="#kat-oekonomi">💰 Økonomi</a>
+  <a class="hop" href="#kat-skole">🎓 Skole & læring</a>
+  <a class="hop" href="#kat-tekst">✍️ Tekst & kommunikation</a>
+</div>
+<h2 id="kat-hverdag">Hverdag</h2><div class="prompt-net"><div class="prompt-kort">
 <h3>Madplan uden stress</h3>
 <pre>Lav en madplan for mandag-fredag til [antal] personer. Budget: cirka [beløb] kr. Vi kan ikke lide [ingredienser]. Hverdagsretter må max tage 30 minutter. Lav også en samlet indkøbsliste sorteret efter supermarkedets afdelinger.</pre>
 <button class="kopier" data-p="Lav en madplan for mandag-fredag til [antal] personer. Budget: cirka [beløb] kr. Vi kan ikke lide [ingredienser]. Hverdagsretter må max tage 30 minutter. Lav også en samlet indkøbsliste sorteret efter supermarkedets afdelinger.">Kopiér prompt</button>
@@ -102,7 +131,7 @@ footer a { color: var(--accent); }
 <h3>Gaveidéer der rammer</h3>
 <pre>Foreslå 10 gaveidéer til [person, fx min far på 70], som interesserer sig for [interesser]. Budget [beløb] kr. Ingen kedelige standardgaver - og forklar kort, hvorfor hver gave passer til ham/hende.</pre>
 <button class="kopier" data-p="Foreslå 10 gaveidéer til [person, fx min far på 70], som interesserer sig for [interesser]. Budget [beløb] kr. Ingen kedelige standardgaver - og forklar kort, hvorfor hver gave passer til ham/hende.">Kopiér prompt</button>
-</div></div><h2>Job &amp; karriere</h2><div class="prompt-net"><div class="prompt-kort">
+</div></div><h2 id="kat-job">Job &amp; karriere</h2><div class="prompt-net"><div class="prompt-kort">
 <h3>Jobansøgningen</h3>
 <pre>Skriv en jobansøgning til stillingen som [titel] hos [firma]. Om mig: [3-5 linjer om din erfaring og hvorfor du søger]. Tonen skal være selvsikker men jordnær, uden floskler som &#x27;brænder for&#x27;. Max én side. Her er jobopslaget: [indsæt]</pre>
 <button class="kopier" data-p="Skriv en jobansøgning til stillingen som [titel] hos [firma]. Om mig: [3-5 linjer om din erfaring og hvorfor du søger]. Tonen skal være selvsikker men jordnær, uden floskler som &#x27;brænder for&#x27;. Max én side. Her er jobopslaget: [indsæt]">Kopiér prompt</button>
@@ -118,7 +147,7 @@ footer a { color: var(--accent); }
 <h3>CV-løftet</h3>
 <pre>Her er mit CV: [indsæt]. Omskriv mine punkter, så de viser resultater i stedet for opgaver (fx &#x27;øgede salget 20 %&#x27; frem for &#x27;stod for salg&#x27;). Behold sandheden - find bare de stærkeste formuleringer.</pre>
 <button class="kopier" data-p="Her er mit CV: [indsæt]. Omskriv mine punkter, så de viser resultater i stedet for opgaver (fx &#x27;øgede salget 20 %&#x27; frem for &#x27;stod for salg&#x27;). Behold sandheden - find bare de stærkeste formuleringer.">Kopiér prompt</button>
-</div></div><h2>Økonomi</h2><div class="prompt-net"><div class="prompt-kort">
+</div></div><h2 id="kat-oekonomi">Økonomi</h2><div class="prompt-net"><div class="prompt-kort">
 <h3>Privatøkonomisk overblik</h3>
 <pre>Her er mine månedlige indtægter og udgifter: [indsæt tal]. Lav et overblik over, hvor pengene går hen, og giv mig de 5 steder, hvor jeg lettest kan spare uden at det gør ondt. Vær konkret med beløb.</pre>
 <button class="kopier" data-p="Her er mine månedlige indtægter og udgifter: [indsæt tal]. Lav et overblik over, hvor pengene går hen, og giv mig de 5 steder, hvor jeg lettest kan spare uden at det gør ondt. Vær konkret med beløb.">Kopiér prompt</button>
@@ -130,7 +159,7 @@ footer a { color: var(--accent); }
 <h3>Abonnements-oprydning</h3>
 <pre>Her er en liste over mine faste abonnementer og priser: [indsæt]. Grupper dem i behold/overvej/drop, og beregn hvad jeg sparer om året ved at følge dine råd.</pre>
 <button class="kopier" data-p="Her er en liste over mine faste abonnementer og priser: [indsæt]. Grupper dem i behold/overvej/drop, og beregn hvad jeg sparer om året ved at følge dine råd.">Kopiér prompt</button>
-</div></div><h2>Skole &amp; læring</h2><div class="prompt-net"><div class="prompt-kort">
+</div></div><h2 id="kat-skole">Skole &amp; læring</h2><div class="prompt-net"><div class="prompt-kort">
 <h3>Den tålmodige lærer</h3>
 <pre>Forklar [emne, fx fotosyntese] for mig i tre niveauer: 1) som til en 10-årig, 2) som til en gymnasieelev, 3) som til en voksen, der vil imponeres til en middag. Slut med tre spørgsmål, jeg kan teste mig selv med.</pre>
 <button class="kopier" data-p="Forklar [emne, fx fotosyntese] for mig i tre niveauer: 1) som til en 10-årig, 2) som til en gymnasieelev, 3) som til en voksen, der vil imponeres til en middag. Slut med tre spørgsmål, jeg kan teste mig selv med.">Kopiér prompt</button>
@@ -142,7 +171,7 @@ footer a { color: var(--accent); }
 <h3>Lær et nyt emne på en uge</h3>
 <pre>Jeg vil lære det grundlæggende om [emne] på 7 dage med max 30 minutter om dagen. Lav en dagsplan, hvor hver dag har ét fokus, en kort forklaring og en lille øvelse.</pre>
 <button class="kopier" data-p="Jeg vil lære det grundlæggende om [emne] på 7 dage med max 30 minutter om dagen. Lav en dagsplan, hvor hver dag har ét fokus, en kort forklaring og en lille øvelse.">Kopiér prompt</button>
-</div></div><h2>Tekst &amp; kommunikation</h2><div class="prompt-net"><div class="prompt-kort">
+</div></div><h2 id="kat-tekst">Tekst &amp; kommunikation</h2><div class="prompt-net"><div class="prompt-kort">
 <h3>Sprogvasken</h3>
 <pre>Gør denne tekst klarere og mere levende uden at ændre indholdet. Fjern fyldord og kancellisprog, del lange sætninger op, og behold min tone: [indsæt tekst]</pre>
 <button class="kopier" data-p="Gør denne tekst klarere og mere levende uden at ændre indholdet. Fjern fyldord og kancellisprog, del lange sætninger op, og behold min tone: [indsæt tekst]">Kopiér prompt</button>
@@ -155,7 +184,10 @@ footer a { color: var(--accent); }
 <pre>Lav dette rodede mødereferat/noter om til: 1) beslutninger, 2) hvem gør hvad inden hvornår, 3) uafklarede spørgsmål. Kort og skarpt: [indsæt noter]</pre>
 <button class="kopier" data-p="Lav dette rodede mødereferat/noter om til: 1) beslutninger, 2) hvem gør hvad inden hvornår, 3) uafklarede spørgsmål. Kort og skarpt: [indsæt noter]">Kopiér prompt</button>
 </div></div>
-<div class="boks">Savner du en prompt? Lær at skrive dine egne i <a href="guide-prompts.html" style="color:var(--accent)">guiden til gode prompts</a>.</div>
+<div class="naeste-net">
+  <a class="naeste" href="guide-prompts.html"><div class="n-titel">✍️ Lær at skrive dine egne</div><p>Fem greb, der gør enhver prompt bedre — så du kan tilpasse alle prompts her til DIT liv.</p></a>
+  <a class="naeste" href="laer.html#dagens-titel"><div class="n-titel">✨ Dagens prompt</div><p>På Lær AI-forsiden ligger en ny udvalgt prompt hver dag — kig forbi i morgen.</p></a>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 <script>

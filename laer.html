@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI-nyheder.com · Lær AI</title>
-<meta name="description" content="Alt det, der gør dig klogere på AI: begynderguides, AI-ordbog, færdige prompts og svar på de mest stillede spørgsmål. Gratis og på letlæst dansk.">
+<meta name="description" content="Lær at bruge AI — gratis og på letlæst dansk. Vælg din vej: begynderguides, AI-kørekortet med bevis, eller erhvervsoverbygningen. Plus ordbog, prompts og dagens prompt.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,6 +18,7 @@
 :root {
   --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
   --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --groen: #2e9e5b; --groen-svag: #e3f4ea; --rav: #c2711d; --rav-svag: #faf0e1;
   --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: "Fraunces", Georgia, serif;
@@ -38,34 +39,86 @@ a { color: inherit; }
 .tilbage:hover { border-color: var(--accent); color: var(--accent); }
 main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
 h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
-  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
-.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 36px; max-width: 64ch; }
-h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 40px 0 12px; letter-spacing: -.01em; }
-h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 8px; }
+  font-size: clamp(30px, 5.5vw, 46px); line-height: 1.08; margin-bottom: 14px; }
+h1 em { font-style: normal; color: var(--accent); }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 22px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 24px; margin: 44px 0 6px; letter-spacing: -.01em; }
+.h2-under { font-size: 14.5px; color: var(--blaek-svag); margin-bottom: 18px; }
 p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
-li { font-size: 15.5px; line-height: 1.7; margin: 0 0 8px 22px; }
 strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
 .boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
   border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
-.kort-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
-.net-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
-  padding: 22px; text-decoration: none; box-shadow: var(--skygge); transition: transform .15s, border-color .15s; display: block; }
-.net-kort:hover { transform: translateY(-3px); border-color: var(--accent); }
-.net-kort .ikon { font-size: 26px; }
-.net-kort h3 { margin: 10px 0 6px; }
-.net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
 footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
 footer a { color: var(--accent); }
+
+/* Stats */
+.stat-raekke { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+.stat { font-size: 13px; font-weight: 700; background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 999px; padding: 7px 15px; }
+.stat b { color: var(--accent); }
+
+/* Flagskib */
 .hero-kort { display: block; background: var(--blaek); color: var(--bg); border-radius: var(--radius);
-  padding: 28px 30px; margin-bottom: 8px; text-decoration: none; box-shadow: var(--skygge);
-  transition: transform .15s; }
+  padding: 28px 30px; margin-bottom: 14px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s; position: relative; overflow: hidden; }
 .hero-kort:hover { transform: translateY(-3px); }
+.hero-kort::after { content: "🪪"; position: absolute; right: 18px; bottom: 4px; font-size: 84px; opacity: .16; transform: rotate(-8deg); }
 .hero-kort .maerkat { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; background: var(--accent); color: #fff; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
 .hero-kort h2 { font-family: var(--font-display); font-weight: 900; font-size: clamp(22px, 4vw, 30px);
-  margin: 0 0 8px; letter-spacing: -.02em; }
+  margin: 0 0 8px; letter-spacing: -.02em; color: var(--bg); }
 .hero-kort p { font-size: 14.5px; color: #c9c4b8; margin: 0; max-width: 60ch; }
-.hero-kort .pil { color: var(--accent); font-weight: 700; font-size: 14px; display: inline-block; margin-top: 12px; }
+.hero-kort .pil { color: #a99ff7; font-weight: 700; font-size: 14px; display: inline-block; margin-top: 12px; }
+
+/* Vælg din vej */
+.sti-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.sti { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.sti:hover { transform: translateY(-3px); border-color: var(--accent); }
+.sti.groen { border-top-color: var(--groen); }
+.sti.rav { border-top-color: var(--rav); }
+.sti .ikon { font-size: 30px; }
+.sti h3 { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin: 10px 0 4px; }
+.sti .hvem { font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--blaek-svag); }
+.sti p { font-size: 13.5px; color: var(--blaek-svag); margin: 8px 0 0; }
+.sti .pil { display: inline-block; margin-top: 12px; font-size: 13.5px; font-weight: 700; color: var(--accent); }
+.sti.groen .pil { color: var(--groen); }
+.sti.rav .pil { color: var(--rav); }
+
+/* Dagens prompt */
+.dagens { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 24px 28px; box-shadow: var(--skygge); }
+.dagens .maerkat { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.dagens h3 { font-family: var(--font-display); font-weight: 800; font-size: 19px; margin: 8px 0 10px; }
+.dagens pre { white-space: pre-wrap; font: 14px/1.6 var(--font-ui); color: var(--blaek);
+  background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+.dagens button { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 10px 20px; cursor: pointer; }
+.dagens button:hover { opacity: .9; }
+.dagens .note { font-size: 12.5px; color: var(--blaek-svag); margin: 10px 0 0; }
+
+/* Værktøjskassen */
+.kort-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.net-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; display: block; }
+.net-kort:hover { transform: translateY(-3px); border-color: var(--accent); }
+.net-kort:nth-child(3n+2) { border-top-color: var(--groen); }
+.net-kort:nth-child(3n) { border-top-color: var(--rav); }
+.net-kort .ikon { font-size: 26px; }
+.net-kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 10px 0 6px; }
+.net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .sti, .net-kort, .hero-kort, .dagens { animation: op .5s ease-out backwards; }
+  .sti:nth-child(2), .net-kort:nth-child(2) { animation-delay: .06s; }
+  .sti:nth-child(3), .net-kort:nth-child(3) { animation-delay: .12s; }
+  .net-kort:nth-child(4) { animation-delay: .18s; }
+  .net-kort:nth-child(5) { animation-delay: .24s; }
+  .net-kort:nth-child(6) { animation-delay: .3s; }
+  @keyframes op { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+}
 </style>
 </head>
 <body>
@@ -80,14 +133,61 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
-<h1>Lær AI — uden teknisk tågesnak</h1>
-<p class="manchet">Nyhederne fortæller dig, HVAD der sker. Denne sektion lærer dig at bruge det. Alt er skrevet på letlæst dansk til folk, der gerne vil følge med — ikke til teknikere.</p>
+<h1>Om et år er du enten foran <em>eller bagud.</em> Du vælger nu.</h1>
+<p class="manchet">AI er ikke en dille, der går over — det er den nye grundfærdighed, ligesom det engang var at kunne søge på nettet. Den gode nyhed: Du kan lære det her. Gratis, på letlæst dansk, i dit eget tempo — og du kan begynde om ét minut.</p>
+<div class="stat-raekke">
+  <span class="stat"><b>11</b> moduler med bevis</span>
+  <span class="stat"><b>99</b> prøvespørgsmål</span>
+  <span class="stat"><b>17+</b> færdige prompts</span>
+  <span class="stat"><b>48</b> ord i ordbogen</span>
+  <span class="stat"><b>100 %</b> gratis</span>
+</div>
+
 <a class="hero-kort" href="koerekort.html">
-  <span class="maerkat">Nyt</span>
-  <h2>Tag AI-kørekortet 🪪</h2>
-  <p>Syv korte moduler med øvelser og quiz, der tager dig fra nysgerrig til tryg AI-bruger. Gratis, uden tilmelding og i dit eget tempo.</p>
+  <span class="maerkat">Flagskibet</span>
+  <h2>Tag AI-kørekortet</h2>
+  <p>Syv moduler med praktiske opgaver og rigtige prøver — fra "hvad er AI?" til tryg, kritisk hverdagsbruger. Bestå, og hent dit personlige bevis med verificerbart bevis-nummer. Og vil du videre: erhvervsoverbygningen venter ovenpå.</p>
   <span class="pil">Start med modul 1 →</span>
 </a>
+
+<h2>Vælg din vej</h2>
+<p class="h2-under">Tre indgange — alt efter hvor du står i dag.</p>
+<div class="sti-net">
+  <a class="sti groen" href="guide-igang.html">
+    <span class="ikon">🌱</span>
+    <div class="hvem">Helt ny?</div>
+    <h3>Din første AI-samtale om 10 minutter</h3>
+    <p>Ingen teknik, ingen kreditkort. Bare en venlig guide fra nul til "nåå, ER det bare sådan?".</p>
+    <span class="pil">Kom i gang →</span>
+  </a>
+  <a class="sti" href="koerekort.html">
+    <span class="ikon">🪪</span>
+    <div class="hvem">Vil du kunne det?</div>
+    <h3>AI-kørekortet — med bevis på det</h3>
+    <p>7 moduler, praktik og prøver. Gennemsnitligt par timer i alt — og et bevis, du kan vise frem.</p>
+    <span class="pil">Se forløbet →</span>
+  </a>
+  <a class="sti rav" href="erhverv.html">
+    <span class="ikon">💼</span>
+    <div class="hvem">Skal du bruge det på jobbet?</div>
+    <h3>Erhvervsoverbygningen</h3>
+    <p>Værktøjsvalg, dokumenter, automatisering og reglerne. For dig, der vil være afdelingens AI-stærke kollega.</p>
+    <span class="pil">Se overbygningen →</span>
+  </a>
+</div>
+
+<h2>Dagens prompt ✨</h2>
+<p class="h2-under">Ny hver dag — prøv den i din chatbot, og mærk hvad præcise prompts gør.</p>
+<div class="dagens">
+  <span class="maerkat">I dag</span>
+  <h3 id="dagens-titel"></h3>
+  <pre id="dagens-tekst"></pre>
+  <button id="dagens-kopier">Kopiér dagens prompt</button>
+  <p class="note">Udfyld de [firkantede felter] med dine egne oplysninger. Vil du have flere? <a href="prompts.html" style="color:var(--accent); font-weight:700;">Hele biblioteket ligger her</a>.</p>
+</div>
+
+<h2>Værktøjskassen</h2>
+<p class="h2-under">Opslagsværkerne, du vender tilbage til — også længe efter kørekortet.</p>
 <div class="kort-net">
   <a class="net-kort" href="guide-igang.html"><span class="ikon">🚀</span><h3>Kom i gang med AI</h3><p>Fra nul til din første nyttige AI-samtale på ti minutter. Gratis og uden teknisk snilde.</p></a>
   <a class="net-kort" href="guide-prompts.html"><span class="ikon">✍️</span><h3>Skriv gode prompts</h3><p>Fem greb, der gør dine AI-svar markant bedre — med eksempler, du kan stjæle.</p></a>
@@ -96,8 +196,41 @@ footer a { color: var(--accent); }
   <a class="net-kort" href="prompts.html"><span class="ikon">🧰</span><h3>Prompt-biblioteket</h3><p>Færdige prompts til madplaner, jobansøgninger, økonomi og meget mere. Kopiér og brug.</p></a>
   <a class="net-kort" href="faq.html"><span class="ikon">💬</span><h3>Spørgsmål & svar</h3><p>Er AI farligt? Tager den mit job? Ærlige svar på det, alle spørger om.</p></a>
 </div>
+
+<div class="boks" style="margin-top:34px;"><strong>Fem minutter om dagen er nok.</strong> Du behøver ikke et kursus i weekenden eller en teknisk ven. Læs én nyhed, prøv én prompt, tag ét modul, når du har tid. Om en måned er du den i familien, de andre spørger til råds — og dét er hele idéen med denne side.</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<script>
+(function(){
+  var PROMPTS = [
+    ['Madplan uden stress', 'Lav en madplan for mandag-fredag til [antal] personer. Budget: cirka [beløb] kr. Vi kan ikke lide [ingredienser]. Hverdagsretter må max tage 30 minutter. Lav også en samlet indkøbsliste sorteret efter supermarkedets afdelinger.'],
+    ['Den tålmodige lærer', 'Forklar [emne, fx renters rente] for mig i tre niveauer: 1) som til en 10-årig, 2) som til en gymnasieelev, 3) som til en voksen, der vil imponeres til en middag. Slut med tre spørgsmål, jeg kan teste mig selv med.'],
+    ['Forklar et svært brev', 'Jeg har fået dette brev fra [kommunen/banken/forsikringen]. Forklar mig i almindeligt dansk: 1) Hvad vil de? 2) Skal jeg gøre noget - og hvornår? 3) Er der noget, jeg skal være på vagt over for?\n\n[indsæt brevet]'],
+    ['Forbered jobsamtalen', 'Jeg skal til samtale som [stilling] hos [firma]. Stil mig de 8 mest sandsynlige spørgsmål én ad gangen, vent på mit svar, og giv mig ærlig feedback på hvert svar, før du stiller det næste.'],
+    ['Ferieplanlæggeren', 'Planlæg [antal] dage i [by/land] for [hvem]. Budget: [niveau]. Vi elsker [interesser] og hader [fx lange køer]. Giv en dag-for-dag-plan med ét hovedstop formiddag og eftermiddag samt et frokostforslag i nærheden.'],
+    ['Sprogvasken', 'Gør denne tekst klarere og mere levende uden at ændre indholdet. Fjern fyldord og kancellisprog, del lange sætninger op, og behold min tone: [indsæt tekst]'],
+    ['Abonnements-oprydning', 'Her er en liste over mine faste abonnementer og priser: [indsæt]. Grupper dem i behold/overvej/drop, og beregn hvad jeg sparer om året ved at følge dine råd.'],
+    ['Talen til festen', 'Skriv en tale på 3 minutter til [anledning]. Om personen: [5 stikord og gerne en anekdote]. Tonen: varm og med et glimt i øjet - højst én mild drillebemærkning.'],
+    ['Referatet på 2 minutter', 'Lav dette rodede mødereferat/noter om til: 1) beslutninger, 2) hvem gør hvad inden hvornår, 3) uafklarede spørgsmål. Kort og skarpt: [indsæt noter]'],
+    ['Lær et nyt emne på en uge', 'Jeg vil lære det grundlæggende om [emne] på 7 dage med max 30 minutter om dagen. Lav en dagsplan, hvor hver dag har ét fokus, en kort forklaring og en lille øvelse.'],
+    ['Gaveidéer der rammer', 'Foreslå 10 gaveidéer til [person], som interesserer sig for [interesser]. Budget [beløb] kr. Ingen kedelige standardgaver - og forklar kort, hvorfor hver gave passer.'],
+    ['Lektiehjælperen der ikke snyder', 'Mit barn i [klasse] sidder fast i denne opgave: [indsæt]. Løs den IKKE - men forklar metoden trin for trin med et ANDET eksempel, så barnet selv kan løse den rigtige opgave bagefter.'],
+    ['Stil mig spørgsmål først', 'Du er en nøgtern rådgiver. Jeg vil gerne have hjælp til [dit mål]. Stil mig først 5 korte spørgsmål én ad gangen, så du forstår min situation - og giv mig derefter en konkret plan.'],
+    ['Djævlens advokat', 'Jeg overvejer at [beslutning]. Argumentér først FOR, så IMOD - og stil mig til sidst de tre spørgsmål, jeg burde kunne svare på, før jeg beslutter mig.']
+  ];
+  var dag = Math.floor(Date.now() / 86400000) % PROMPTS.length;
+  document.getElementById('dagens-titel').textContent = PROMPTS[dag][0];
+  document.getElementById('dagens-tekst').textContent = PROMPTS[dag][1];
+  document.getElementById('dagens-kopier').addEventListener('click', function(){
+    var knap = this;
+    navigator.clipboard.writeText(document.getElementById('dagens-tekst').textContent).then(function(){
+      knap.textContent = 'Kopieret ✓';
+      setTimeout(function(){ knap.textContent = 'Kopiér dagens prompt'; }, 1800);
+    });
+  });
+})();
+</script>
 
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>

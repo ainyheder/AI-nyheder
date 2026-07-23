@@ -64,6 +64,23 @@ footer a { color: var(--accent); }
 .trin h3 { display: flex; align-items: center; margin: 0 0 10px; }
 .eksempel { background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px;
   padding: 12px 16px; font-size: 14px; margin: 10px 0; font-style: italic; }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
 </style>
 </head>
 <body>
@@ -78,8 +95,17 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Guide · 10 minutter · helt for begyndere</span>
 <h1>Sådan kommer du i gang med AI</h1>
-<p class="manchet">Du behøver hverken teknisk viden eller penge for at prøve AI. Denne guide tager dig fra nul til din første nyttige AI-samtale på ti minutter.</p>
+<p class="manchet">Du behøver hverken teknisk viden eller penge for at prøve AI — og du kan ikke ødelægge noget. Denne guide tager dig fra nul til din første nyttige AI-samtale på ti minutter. De fleste når til "jamen, ER det bare sådan?" allerede ved trin 3.</p>
+<div class="tjekliste">
+  <div class="tl-titel">Efter denne guide kan du</div>
+  <ul>
+    <li>Oprette en gratis konto hos en af de tre store chatbots</li>
+    <li>Skrive til AI'en, præcis som du taler — og få nyttige svar</li>
+    <li>Styre samtalen videre med "kortere", "enklere" og "hvad hvis..."</li>
+  </ul>
+</div>
 <div class="trin"><h3><span class="nr">1</span>Vælg en chatbot — de er alle gode</h3><p>De tre store hedder <strong>ChatGPT</strong> (chatgpt.com), <strong>Gemini</strong> (gemini.google.com) og <strong>Claude</strong> (claude.ai). Alle tre har en gratis udgave, der er rigeligt til at komme i gang. Er du i tvivl, så start bare med én af dem — forskellene er små i hverdagsbrug.</p></div>
 <div class="trin"><h3><span class="nr">2</span>Opret en konto</h3><p>Gå til hjemmesiden eller hent appen, og opret dig med din e-mail (eller Google-konto). Det tager to minutter, og den gratis udgave kræver ikke betalingskort.</p></div>
 <div class="trin"><h3><span class="nr">3</span>Skriv, som du taler</h3><p>Der er ingen kommandoer at lære. Skriv til AI'en, præcis som du ville skrive til et menneske — gerne på dansk, og gerne med slåfejl. Prøv fx:</p>
@@ -89,7 +115,10 @@ footer a { color: var(--accent); }
 <div class="trin"><h3><span class="nr">4</span>Stil opfølgende spørgsmål</h3><p>Det vigtigste trick: <strong>Samtalen fortsætter.</strong> Er svaret for langt, så skriv "kortere". Er det for teknisk, så skriv "forklar det enklere". AI'en husker, hvad I lige har talt om, og retter til — du behøver aldrig starte forfra.</p></div>
 <div class="trin"><h3><span class="nr">5</span>Brug den til noget ægte</h3><p>AI bliver først rigtig nyttig, når du bruger den på dine egne opgaver: skriv en klage, forbered en jobsamtale, få forklaret et brev fra kommunen, planlæg en rejse eller få hjælp til lektier. Start med noget, du alligevel skulle i dag.</p></div>
 <div class="boks"><strong>Én vigtig vane fra dag ét:</strong> AI kan tage fejl med stor selvsikkerhed (det kaldes at <a href="ordbog.html#hallucination" style="color:var(--accent)">hallucinere</a>). Brug den til udkast, forklaringer og idéer — men dobbelttjek vigtige fakta, beløb og datoer, før du handler på dem.</div>
-<p>Klar til næste skridt? Lær at få markant bedre svar i <a href="guide-prompts.html" style="color:var(--accent)">guiden til gode prompts</a>.</p>
+<div class="naeste-net">
+  <a class="naeste" href="guide-prompts.html"><div class="n-titel">✍️ Næste skridt: Skriv gode prompts</div><p>Fem greb, der gør dine svar markant bedre — 10 minutter mere, og du er foran de fleste.</p></a>
+  <a class="naeste" href="koerekort.html"><div class="n-titel">🪪 Eller gå direkte til AI-kørekortet</div><p>Hele forløbet med praktik, prøver og et bevis, du kan vise frem.</p></a>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 

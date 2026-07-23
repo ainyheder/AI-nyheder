@@ -64,6 +64,23 @@ footer a { color: var(--accent); }
 .faq summary::after { content: "+"; position: absolute; right: 4px; color: var(--accent); font-size: 20px; font-weight: 800; }
 .faq[open] summary::after { content: "–"; }
 .faq p { padding: 0 0 16px; color: var(--blaek); }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
 </style>
 </head>
 <body>
@@ -78,10 +95,15 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Ærlige svar · ingen tågesnak</span>
 <h1>Spørgsmål & svar om AI</h1>
 <p class="manchet">De spørgsmål, folk faktisk stiller — besvaret ærligt og uden teknisk tågesnak. Klik på et spørgsmål for at folde svaret ud.</p>
 <details class="faq"><summary>Er AI farligt?</summary><p>AI er et værktøj - og som alle kraftfulde værktøjer kan det bruges godt og skidt. De reelle bekymringer i dag handler om svindel med deepfakes, misinformation og jobforandringer, mens forskerne samtidig arbejder seriøst med de langsigtede risici. For dig som bruger er AI ufarligt at prøve - de vigtigste forholdsregler står i vores sikkerhedsguide.</p></details><details class="faq"><summary>Tager AI mit job?</summary><p>AI ændrer flere job, end den fjerner - foreløbig. Opgaver som rutinetekst, oversættelse og simpel sagsbehandling automatiseres hurtigt, mens job med fysisk arbejde, ansvar og menneskekontakt påvirkes langsommere. Det bedste, du kan gøre, er at lære værktøjerne at kende nu: Dem, der kan bruge AI, står stærkere end dem, der ignorerer den.</p></details><details class="faq"><summary>Må jeg bruge ChatGPT i skolen eller på studiet?</summary><p>Det bestemmer din skole - reglerne svinger fra totalforbud til aktiv opfordring. Tommelfingerregel: Brug AI til at FORSTÅ stoffet og få feedback, ikke til at aflevere dens tekst som din egen. Og spørg din lærer, hvad der er tilladt - det er altid bedre end at gætte.</p></details><details class="faq"><summary>Kan man stole på det, AI siger?</summary><p>Ikke blindt. AI-modeller kan &#x27;hallucinere&#x27;: svare selvsikkert med noget, der er forkert eller opdigtet. De bliver bedre år for år, men grundreglen består: Brug AI til forklaringer, udkast og idéer, og dobbelttjek vigtige fakta, tal og kilder, før du handler på dem.</p></details><details class="faq"><summary>Hvad koster det at bruge AI?</summary><p>De store chatbots har gratis udgaver, der rækker langt til almindelig brug. Betalingsudgaverne (typisk 150-250 kr. om måneden) giver flere beskeder, de nyeste modeller og ekstra funktioner. Start gratis - opgradér kun, hvis du støder på loftet.</p></details><details class="faq"><summary>Hvad er forskellen på ChatGPT, Gemini og Claude?</summary><p>De tre store chatbots kan i praksis det samme og skifter løbende plads i toppen af testene. ChatGPT (OpenAI) er den mest udbredte, Gemini (Google) er vævet ind i Googles produkter, og Claude (Anthropic) roses ofte for lange, gennemarbejdede svar. Prøv dig frem - din yndlings bliver den, hvis &#x27;personlighed&#x27; passer dig.</p></details><details class="faq"><summary>Læser AI-firmaerne mine samtaler?</summary><p>Dine samtaler behandles af firmaets systemer og kan i nogle tilfælde bruges til at forbedre fremtidige modeller - de fleste tjenester lader dig slå det fra i indstillingerne. Del aldrig CPR-numre, adgangskoder eller dybt private oplysninger, og tjek privatlivsindstillingerne første gang, du logger ind.</p></details><details class="faq"><summary>Hvordan kan jeg se, om et billede er lavet med AI?</summary><p>Det bliver sværere for hver måned, og AI-detektorer er upålidelige. Kig efter ulogiske detaljer (hænder, tekst i billedet, skygger), tjek hvor billedet først blev delt, og vær ekstra skeptisk over for billeder, der bekræfter noget opsigtsvækkende. Nogle firmaer vandmærker deres AI-billeder usynligt, men det er endnu ikke en garanti på tværs af tjenester.</p></details><details class="faq"><summary>Hvad er en LLM egentlig?</summary><p>En stor sprogmodel (Large Language Model) er et computerprogram, der er trænet på enorme mængder tekst til at forudsige det næste ord i en sætning. Det lyder simpelt, men i stor skala giver det evnen til at skrive, oversætte, opsummere og ræsonnere. Se flere begreber i AI-ordbogen.</p></details><details class="faq"><summary>Kan AI erstatte min læge eller advokat?</summary><p>Nej - men den kan gøre dig til en bedre patient og klient. AI er god til at forklare diagnoser, paragraffer og breve i klart sprog og til at forberede dine spørgsmål. Men den kender ikke din journal eller din sag, og den tager fejl uden at rødme. Brug den før og efter mødet med fagpersonen - ikke i stedet for.</p></details><details class="faq"><summary>Hvorfor skriver alle om AI hele tiden?</summary><p>Fordi udviklingen går usædvanligt stærkt: Modellerne bliver målbart klogere med få måneders mellemrum, der investeres flere penge end i noget andet teknologiskifte i historien, og teknologien rammer alt fra skoler til sygehuse. Det er derfor, denne side findes - så du kan følge med uden at drukne i støj.</p></details><details class="faq"><summary>Hvor starter jeg, hvis jeg ingenting ved?</summary><p>Lige her: Læs vores guide &#x27;Sådan kommer du i gang med AI&#x27;, prøv en gratis chatbot i ti minutter, og slå ukendte ord op i AI-ordbogen. Følg derefter med i nyhederne på forsiden - vi skriver dem netop, så alle kan være med.</p></details>
 <div class="boks">Fik du ikke svar? Skriv til os på <a href="mailto:AInyhed@gmail.com" style="color:var(--accent)">AInyhed@gmail.com</a> — gode spørgsmål ender ofte som nye punkter her på siden.</div>
+<div class="naeste-net">
+  <a class="naeste" href="guide-igang.html"><div class="n-titel">🚀 Fik du mod på at prøve?</div><p>Fra nul til din første AI-samtale på ti minutter — gratis og ufarligt.</p></a>
+  <a class="naeste" href="koerekort.html"><div class="n-titel">🪪 Eller tag hele AI-kørekortet</div><p>7 moduler med praktik, prøver og et bevis med dit navn på.</p></a>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 

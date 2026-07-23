@@ -64,6 +64,23 @@ footer a { color: var(--accent); }
 .trin h3 { display: flex; align-items: center; margin: 0 0 10px; }
 .eksempel { background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px;
   padding: 12px 16px; font-size: 14px; margin: 10px 0; font-style: italic; }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
 </style>
 </head>
 <body>
@@ -78,8 +95,17 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Guide · 8 minutter · pas på dig selv og dine</span>
 <h1>Sådan bruger du AI sikkert og fornuftigt</h1>
-<p class="manchet">AI er et fantastisk værktøj — men som alle værktøjer skal det bruges med omtanke. Seks tommelfingerregler dækker det meste.</p>
+<p class="manchet">AI er et fantastisk værktøj — men som alle værktøjer skal det bruges med omtanke. Den gode nyhed: Du behøver ikke være paranoid, bare forberedt. Seks tommelfingerregler dækker det meste — og nummer 4 kan redde dig eller dine forældre fra et svindelnummer.</p>
+<div class="tjekliste">
+  <div class="tl-titel">Efter denne guide ved du</div>
+  <ul>
+    <li>Hvad du aldrig deler med en chatbot — og hvad du roligt kan</li>
+    <li>Hvordan du gennemskuer AI-svindel med stemmer og billeder</li>
+    <li>Hvilke indstillinger du bør slå fra første gang, du logger ind</li>
+  </ul>
+</div>
 <div class="trin"><h3><span class="nr">1</span>Del ikke det, der ikke tåler at slippe ud</h3><p>Skriv aldrig CPR-numre, adgangskoder, bankoplysninger eller andres private oplysninger ind i en chatbot. Tommelfingerregel: <strong>Skriv kun det, du ville være tryg ved at sende i en mail til en flink, men fremmed konsulent.</strong></p></div>
 <div class="trin"><h3><span class="nr">2</span>Dobbelttjek fakta, tal og kilder</h3><p>AI'er kan finde på — selvsikkert og fejlfrit formuleret. Skal du bruge svaret til noget vigtigt (økonomi, jura, helbred), så bed om kilder og slå efter, eller spørg en fagperson. Brug AI som klog sparringspartner, ikke som facitliste.</p></div>
 <div class="trin"><h3><span class="nr">3</span>Pas på med arbejdets hemmeligheder</h3><p>Mange arbejdspladser har regler for AI-brug. Tjek dem, før du sætter kundedata eller interne dokumenter ind i en privat chatbot-konto — brug firmaets godkendte AI-løsning, hvis der findes en.</p></div>
@@ -87,6 +113,10 @@ footer a { color: var(--accent); }
 <div class="trin"><h3><span class="nr">5</span>AI-svar om helbred og jura er startpunkter</h3><p>AI er glimrende til at forklare en diagnose i klart sprog eller oversætte paragraffer til dansk. Men den kender ikke din journal og din sag. Brug den til at forberede spørgsmål til lægen eller advokaten — ikke i stedet for dem.</p></div>
 <div class="trin"><h3><span class="nr">6</span>Slå fra, hvad du ikke vil dele</h3><p>De fleste chatbots har indstillinger for, om dine samtaler må bruges til at træne fremtidige modeller. Kig under indstillinger/privatliv første gang, du logger ind, og vælg det, du er tryg ved.</p></div>
 <div class="boks"><strong>Den korte version:</strong> Del med omtanke, tjek vigtige fakta, og hold hovedet koldt over for perfekte billeder og stemmer. Så er du allerede blandt de sikreste AI-brugere.</div>
+<div class="naeste-net">
+  <a class="naeste" href="koerekort-7.html"><div class="n-titel">🛡️ Gå i dybden: Kørekortets modul 7</div><p>Sikkerhed og god AI-skik — med praktikopgave om familiekodeordet og en rigtig prøve.</p></a>
+  <a class="naeste" href="faq.html"><div class="n-titel">💬 Flere ærlige svar</div><p>Er AI farligt? Tager den mit job? Læser firmaerne mine samtaler? Vi svarer ligeud.</p></a>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 

@@ -64,6 +64,23 @@ footer a { color: var(--accent); }
 .trin h3 { display: flex; align-items: center; margin: 0 0 10px; }
 .eksempel { background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px;
   padding: 12px 16px; font-size: 14px; margin: 10px 0; font-style: italic; }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
 </style>
 </head>
 <body>
@@ -78,8 +95,17 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Guide · 10 minutter · den vigtigste AI-færdighed</span>
 <h1>Sådan skriver du en god prompt</h1>
-<p class="manchet">Forskellen på et middelmådigt og et fremragende AI-svar ligger næsten altid i det, DU skriver. Her er de fem greb, der batter mest — med eksempler du kan stjæle.</p>
+<p class="manchet">Forskellen på et middelmådigt og et fremragende AI-svar ligger næsten altid i det, DU skriver. Det er den ene færdighed, der løfter alt andet — og den kan læres på ti minutter. Her er de fem greb, der batter mest, med eksempler du kan stjæle.</p>
+<div class="tjekliste">
+  <div class="tl-titel">Efter denne guide kan du</div>
+  <ul>
+    <li>Give AI'en kontekst og en rolle, så svaret rammer din situation</li>
+    <li>Bestille præcis det format og den længde, du vil have</li>
+    <li>Bruge K-F-E-R-O-huskereglen, når et svar skuffer</li>
+  </ul>
+</div>
 <div class="trin"><h3><span class="nr">1</span>Giv kontekst — hvem, hvad, hvorfor</h3><p>AI'en ved ingenting om din situation, medmindre du fortæller det. Jo mere relevant baggrund, jo bedre svar.</p>
 <div class="eksempel">Svag: "Skriv en ansøgning."<br><br>Stærk: "Skriv en jobansøgning til en stilling som lagermedarbejder hos et byggemarked. Jeg er 45 år, har kørt truck i 12 år og skifter branche, fordi mit gamle firma lukkede. Tonen skal være ligefrem og uden fine ord."</div></div>
 <div class="trin"><h3><span class="nr">2</span>Sig præcis, hvilket format du vil have</h3><p>Vil du have en liste? En tabel? Tre forslag? Max 100 ord? Sig det! AI'en opfylder gerne formkrav — men kun hvis de findes.</p>
@@ -90,7 +116,10 @@ footer a { color: var(--accent); }
 <div class="eksempel">"Du er en erfaren boligadvokat. Gennemgå denne lejekontrakt og påpeg alt det, jeg som lejer skal være opmærksom på."</div></div>
 <div class="trin"><h3><span class="nr">5</span>Brug samtalen — første svar er et udkast</h3><p>Lad være med at nøjes med første svar. Skriv "gør det kortere", "mere formelt", "giv mig tre alternativer", "du glemte X". Hvert svar er et udgangspunkt, ikke facit — og forbedringerne er gratis.</p></div>
 <div class="boks"><strong>Husketeknik:</strong> K-F-E-R-O — <strong>K</strong>ontekst, <strong>F</strong>ormat, <strong>E</strong>ksempel, <strong>R</strong>olle, <strong>O</strong>pfølgning. Har din prompt bare tre af de fem, er du foran de fleste.</div>
-<p>Vil du springe skrivearbejdet over? Vi har samlet <a href="prompts.html" style="color:var(--accent)">færdige prompts til hverdagen</a>, du bare kan kopiere.</p>
+<div class="naeste-net">
+  <a class="naeste" href="prompts.html"><div class="n-titel">🧰 Spring skrivearbejdet over</div><p>17+ færdige prompts til hverdagen — kopiér, udfyld felterne, og brug dem i dag.</p></a>
+  <a class="naeste" href="koerekort-3.html"><div class="n-titel">🪪 Test dig selv i kørekortets modul 3</div><p>Prøv grebene af i praktikopgaven "Prompts, der virker" — med prøve og det hele.</p></a>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 

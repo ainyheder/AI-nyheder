@@ -64,6 +64,23 @@ footer a { color: var(--accent); }
 .ord-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px; padding: 18px 20px; }
 .ord-kort h3 { margin: 0 0 6px; color: var(--accent); }
 .ord-kort p { font-size: 14px; margin: 0; color: var(--blaek); }
+
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
+.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--blaek-svag); margin-bottom: 8px; }
+.tjekliste ul { list-style: none; margin: 0; }
+.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
+.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
 </style>
 </head>
 <body>
@@ -78,8 +95,10 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
+<span class="kicker">Opslagsværk · 48 begreber · opdateres løbende</span>
 <h1>AI-ordbogen</h1>
-<p class="manchet">Alle de ord, der flyver rundt i AI-debatten — forklaret kort og uden indforstået teknik-snak. Søg, eller scroll listen igennem.</p>
+<p class="manchet">Alle de ord, der flyver rundt i AI-debatten — forklaret kort og uden indforstået teknik-snak. Søg, scroll, eller start med <strong>dagens ord</strong> — så kan du kaste det ind ved aftensbordet.</p>
+<div class="boks" id="dagens-ord-boks" style="display:none; margin-bottom:20px;"><strong>📖 Dagens ord: <span id="dagens-ord-navn"></span></strong> — <span id="dagens-ord-tekst"></span></div>
 <input class="sog-felt" id="ordSog" type="search" placeholder="Søg efter et begreb … fx LLM, prompt, hallucination">
 <div class="ord-net"><div class="ord-kort" id="agi">
 <h3>AGI</h3><p>Kunstig generel intelligens: en (endnu hypotetisk) AI, der kan alt det, et menneske kan intellektuelt - ikke kun én slags opgave.</p></div><div class="ord-kort" id="ai">
@@ -133,6 +152,15 @@ footer a { color: var(--accent); }
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 <script>
+// Dagens ord: roterer efter dato
+(function(){
+  var kort = document.querySelectorAll('.ord-kort');
+  if (!kort.length) return;
+  var dag = Math.floor(Date.now() / 86400000) % kort.length;
+  document.getElementById('dagens-ord-navn').textContent = kort[dag].querySelector('h3').textContent;
+  document.getElementById('dagens-ord-tekst').textContent = kort[dag].querySelector('p').textContent;
+  document.getElementById('dagens-ord-boks').style.display = 'block';
+})();
 document.getElementById("ordSog").addEventListener("input", e => {
   const q = e.target.value.toLowerCase();
   document.querySelectorAll(".ord-kort").forEach(k =>
