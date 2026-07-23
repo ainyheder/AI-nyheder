@@ -225,37 +225,56 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
     ).toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
 
     var tegn = function(id){
-      var INK = '#191714', GRAA = '#6d675d', LILLA = '#5b4bf0', LILLA_M = '#4a3dd0', CREME = '#f4f2ec', LINJE = '#e2ddd2';
+      var INK = '#191714', GRAA = '#6d675d', LILLA = '#5b4bf0', LILLA_M = '#4a3dd0', LILLA_D = '#372cae',
+          CREME = '#f6f3ea', GULD = '#a8853c', GULD_L = '#cfb26a', LINJE = '#e2ddd2';
       var W = 2400, H = 1700, CX = W / 2;
       var c = document.createElement('canvas');
       c.width = W; c.height = H;
       var g = c.getContext('2d');
       if (!g) { return; }
 
-      // ---- baggrund: creme med fine diagonale nålestriber ----
+      // ---- baggrund: creme papir med fint krydsmønster ----
       g.fillStyle = CREME; g.fillRect(0, 0, W, H);
-      g.strokeStyle = 'rgba(25,23,20,0.022)'; g.lineWidth = 1;
-      for (var s = -H; s < W + H; s += 16) {
+      g.strokeStyle = 'rgba(25,23,20,0.016)'; g.lineWidth = 1;
+      for (var s = -H; s < W + H; s += 18) {
         g.beginPath(); g.moveTo(s, 0); g.lineTo(s + H, H); g.stroke();
+        g.beginPath(); g.moveTo(s + H, 0); g.lineTo(s, H); g.stroke();
       }
+      // vandmærke-segl bag midten
+      g.save();
+      g.strokeStyle = 'rgba(91,75,240,0.045)'; g.lineWidth = 3;
+      g.beginPath(); g.arc(CX, 870, 430, 0, Math.PI * 2); g.stroke();
+      g.beginPath(); g.arc(CX, 870, 400, 0, Math.PI * 2); g.stroke();
+      g.textAlign = 'center';
+      g.fillStyle = 'rgba(91,75,240,0.04)';
+      g.font = '900 430px Fraunces, Georgia, serif';
+      g.fillText('AI.', CX, 1020);
+      g.restore();
       // blid vignet, så midten lyser op
       var vg = g.createRadialGradient(CX, H/2, 300, CX, H/2, 1500);
       vg.addColorStop(0, 'rgba(255,255,255,0.35)'); vg.addColorStop(1, 'rgba(255,255,255,0)');
       g.fillStyle = vg; g.fillRect(0, 0, W, H);
 
-      // ---- rammer ----
+      // ---- rammer: blæk yderst, guld-dobbeltstreg og lilla hårstreg inderst ----
       g.strokeStyle = INK; g.lineWidth = 10; g.strokeRect(60, 60, W-120, H-120);
-      g.strokeStyle = LILLA; g.lineWidth = 3; g.strokeRect(86, 86, W-172, H-172);
-      g.strokeStyle = LINJE; g.lineWidth = 1.5; g.strokeRect(104, 104, W-208, H-208);
-      // hjørne-ornamenter: dobbeltlinjer + lilla diamant
-      var hj = [[86,86,1,1],[W-86,86,-1,1],[86,H-86,1,-1],[W-86,H-86,-1,-1]];
+      g.strokeStyle = GULD; g.lineWidth = 3; g.strokeRect(88, 88, W-176, H-176);
+      g.strokeStyle = GULD_L; g.lineWidth = 1.2; g.strokeRect(100, 100, W-200, H-200);
+      g.strokeStyle = 'rgba(91,75,240,0.5)'; g.lineWidth = 1.5; g.strokeRect(112, 112, W-224, H-224);
+      // hjørne-filigran: dobbelte guldvinkler, små guldfacetter og lilla diamant i guldindfatning
+      var hj = [[88,88,1,1],[W-88,88,-1,1],[88,H-88,1,-1],[W-88,H-88,-1,-1]];
       hj.forEach(function(h){
         var x = h[0], y = h[1], dx = h[2], dy = h[3];
-        g.strokeStyle = LILLA; g.lineWidth = 2.5;
-        g.beginPath(); g.moveTo(x + 14*dx, y + 90*dy); g.lineTo(x + 14*dx, y + 14*dy); g.lineTo(x + 90*dx, y + 14*dy); g.stroke();
-        g.beginPath(); g.moveTo(x + 30*dx, y + 90*dy); g.lineTo(x + 30*dx, y + 30*dy); g.lineTo(x + 90*dx, y + 30*dy); g.stroke();
+        g.strokeStyle = GULD; g.lineWidth = 2.5;
+        g.beginPath(); g.moveTo(x + 16*dx, y + 110*dy); g.lineTo(x + 16*dx, y + 16*dy); g.lineTo(x + 110*dx, y + 16*dy); g.stroke();
+        g.beginPath(); g.moveTo(x + 34*dx, y + 110*dy); g.lineTo(x + 34*dx, y + 34*dy); g.lineTo(x + 110*dx, y + 34*dy); g.stroke();
+        [58, 84].forEach(function(d){
+          g.fillStyle = GULD;
+          g.save(); g.translate(x + d*dx, y + 25*dy); g.rotate(Math.PI/4); g.fillRect(-4, -4, 8, 8); g.restore();
+          g.save(); g.translate(x + 25*dx, y + d*dy); g.rotate(Math.PI/4); g.fillRect(-4, -4, 8, 8); g.restore();
+        });
         g.save(); g.translate(x, y); g.rotate(Math.PI/4);
-        g.fillStyle = LILLA; g.fillRect(-9, -9, 18, 18); g.restore();
+        g.strokeStyle = GULD; g.lineWidth = 2; g.strokeRect(-17, -17, 34, 34);
+        g.fillStyle = LILLA; g.fillRect(-10, -10, 20, 20); g.restore();
       });
 
       g.textAlign = 'center';
@@ -269,10 +288,13 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
       g.fillStyle = GRAA; g.font = '600 27px Inter, sans-serif';
       g.fillText('AI-NYHEDER.COM', CX, 296);
       try { g.letterSpacing = '0px'; } catch(e) {}
-      // ornament-linje
-      g.strokeStyle = LINJE; g.lineWidth = 1.5;
+      // ornament-linje i guld med lilla diamant
+      g.strokeStyle = GULD; g.lineWidth = 1.5;
       g.beginPath(); g.moveTo(CX-260, 335); g.lineTo(CX-40, 335); g.stroke();
       g.beginPath(); g.moveTo(CX+40, 335); g.lineTo(CX+260, 335); g.stroke();
+      g.fillStyle = GULD;
+      g.beginPath(); g.arc(CX-260, 335, 3.5, 0, Math.PI*2); g.fill();
+      g.beginPath(); g.arc(CX+260, 335, 3.5, 0, Math.PI*2); g.fill();
       g.save(); g.translate(CX, 335); g.rotate(Math.PI/4); g.fillStyle = LILLA; g.fillRect(-6, -6, 12, 12); g.restore();
 
       // ---- titel + undertitel ----
@@ -283,9 +305,13 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
       g.fillText('BEVIS FOR GENNEMFØRT FORLØB', CX, 585);
       try { g.letterSpacing = '0px'; } catch(e) {}
       var ub = g.measureText('BEVIS FOR GENNEMFØRT FORLØB').width;
-      g.strokeStyle = LILLA; g.lineWidth = 2;
+      g.strokeStyle = GULD; g.lineWidth = 2;
       g.beginPath(); g.moveTo(CX - ub/2 - 160, 572); g.lineTo(CX - ub/2 - 40, 572); g.stroke();
       g.beginPath(); g.moveTo(CX + ub/2 + 40, 572); g.lineTo(CX + ub/2 + 160, 572); g.stroke();
+      g.fillStyle = GULD;
+      [[-1, -160], [-1, -40], [1, 40], [1, 160]].forEach(function(pkt){
+        g.save(); g.translate(CX + pkt[0] * ub/2 + pkt[1], 572); g.rotate(Math.PI/4); g.fillRect(-3.5, -3.5, 7, 7); g.restore();
+      });
 
       // ---- navn ----
       g.fillStyle = GRAA; g.font = 'italic 400 42px Inter, sans-serif';
@@ -296,11 +322,13 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
         nf -= 6; g.font = '900 ' + nf + 'px Fraunces, Georgia, serif';
       }
       g.fillStyle = INK; g.fillText(navn, CX, 880);
-      // flourish under navnet
-      g.strokeStyle = LILLA; g.lineWidth = 3;
-      g.beginPath(); g.moveTo(CX-500, 928); g.lineTo(CX+500, 928); g.stroke();
-      [[-500,0],[500,0]].forEach(function(pkt){
-        g.save(); g.translate(CX + pkt[0], 928); g.rotate(Math.PI/4); g.fillStyle = LILLA; g.fillRect(-7, -7, 14, 14); g.restore();
+      // flourish under navnet: blidt svungen guldlinje med lilla diamanter
+      g.strokeStyle = GULD; g.lineWidth = 3;
+      g.beginPath(); g.moveTo(CX-520, 926); g.quadraticCurveTo(CX, 944, CX+520, 926); g.stroke();
+      g.strokeStyle = GULD_L; g.lineWidth = 1.2;
+      g.beginPath(); g.moveTo(CX-460, 938); g.quadraticCurveTo(CX, 954, CX+460, 938); g.stroke();
+      [[-520, 926], [520, 926]].forEach(function(pkt){
+        g.save(); g.translate(CX + pkt[0], pkt[1]); g.rotate(Math.PI/4); g.fillStyle = LILLA; g.fillRect(-7, -7, 14, 14); g.restore();
       });
 
       // ---- brødtekst ----
@@ -314,35 +342,49 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
 
       // ---- segl med bånd ----
       var scx = CX, scy = 1330, r = 118;
-      // bånd (bag seglet)
-      [[-1, LILLA_M], [1, LILLA]].forEach(function(b){
+      // bånd (bag seglet) med mørkere fold og lys midterstribe
+      [[-1, LILLA_D, LILLA_M], [1, LILLA_M, LILLA]].forEach(function(b){
         g.save(); g.translate(scx, scy + 40); g.rotate(b[0] * 0.30);
-        g.fillStyle = b[1];
+        g.fillStyle = b[2];
         g.beginPath();
         g.moveTo(-34, 0); g.lineTo(34, 0); g.lineTo(34, 148); g.lineTo(0, 116); g.lineTo(-34, 148);
-        g.closePath(); g.fill(); g.restore();
+        g.closePath(); g.fill();
+        g.fillStyle = b[1]; g.fillRect(-34, 0, 12, 148 - 16);
+        g.fillStyle = 'rgba(255,255,255,0.16)'; g.fillRect(-6, 0, 12, 140);
+        g.restore();
       });
-      // takket kant
-      g.fillStyle = LILLA;
+      // guldkrans: takket kant i guld med lys guldring bag seglet
+      g.fillStyle = GULD;
       for (var t = 0; t < 36; t++) {
         var v = t / 36 * Math.PI * 2;
         g.beginPath(); g.arc(scx + Math.cos(v) * r, scy + Math.sin(v) * r, 13, 0, Math.PI * 2); g.fill();
       }
+      g.fillStyle = GULD_L;
+      g.beginPath(); g.arc(scx, scy, r + 3, 0, Math.PI * 2); g.fill();
       // selve seglet med gradient
       var sg = g.createRadialGradient(scx - 35, scy - 45, 15, scx, scy, r + 8);
       sg.addColorStop(0, '#7d70f5'); sg.addColorStop(0.55, LILLA); sg.addColorStop(1, LILLA_M);
       g.fillStyle = sg;
-      g.beginPath(); g.arc(scx, scy, r, 0, Math.PI * 2); g.fill();
-      g.strokeStyle = 'rgba(255,255,255,0.55)'; g.lineWidth = 2.5;
-      g.beginPath(); g.arc(scx, scy, r - 17, 0, Math.PI * 2); g.stroke();
-      g.strokeStyle = 'rgba(255,255,255,0.28)'; g.lineWidth = 1.5;
-      g.beginPath(); g.arc(scx, scy, r - 27, 0, Math.PI * 2); g.stroke();
+      g.beginPath(); g.arc(scx, scy, r - 2, 0, Math.PI * 2); g.fill();
+      // gyldne og hvide indre ringe
+      g.strokeStyle = 'rgba(207,178,106,0.9)'; g.lineWidth = 3;
+      g.beginPath(); g.arc(scx, scy, r - 15, 0, Math.PI * 2); g.stroke();
+      g.strokeStyle = 'rgba(255,255,255,0.35)'; g.lineWidth = 1.5;
+      g.beginPath(); g.arc(scx, scy, r - 25, 0, Math.PI * 2); g.stroke();
       // stjerneprikker rundt i ringen
       g.fillStyle = 'rgba(255,255,255,0.75)';
       for (var p = 0; p < 14; p++) {
         var pv = p / 14 * Math.PI * 2 - Math.PI / 2;
-        g.beginPath(); g.arc(scx + Math.cos(pv) * (r - 22), scy + Math.sin(pv) * (r - 22), 2.6, 0, Math.PI * 2); g.fill();
+        g.beginPath(); g.arc(scx + Math.cos(pv) * (r - 20), scy + Math.sin(pv) * (r - 20), 2.6, 0, Math.PI * 2); g.fill();
       }
+      // blank refleks øverst
+      g.save();
+      g.beginPath(); g.arc(scx, scy, r - 2, 0, Math.PI * 2); g.clip();
+      var hl = g.createLinearGradient(scx, scy - r, scx, scy);
+      hl.addColorStop(0, 'rgba(255,255,255,0.18)'); hl.addColorStop(1, 'rgba(255,255,255,0)');
+      g.fillStyle = hl;
+      g.beginPath(); g.ellipse(scx, scy - r + 34, r * 0.82, 52, 0, 0, Math.PI * 2); g.fill();
+      g.restore();
       // monogram i seglet
       g.fillStyle = '#ffffff'; g.font = '900 74px Fraunces, Georgia, serif';
       g.fillText('AI.', scx, scy + 8);
@@ -373,7 +415,11 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
       g.fillText('UDSTEDER', 1780, 1398);
       try { g.letterSpacing = '0px'; } catch(e) {}
 
-      // ---- bundlinje ----
+      // ---- bundlinje med lille guld-ornament ----
+      g.strokeStyle = GULD_L; g.lineWidth = 1.2;
+      g.beginPath(); g.moveTo(CX-150, 1512); g.lineTo(CX-24, 1512); g.stroke();
+      g.beginPath(); g.moveTo(CX+24, 1512); g.lineTo(CX+150, 1512); g.stroke();
+      g.save(); g.translate(CX, 1512); g.rotate(Math.PI/4); g.fillStyle = GULD; g.fillRect(-4.5, -4.5, 9, 9); g.restore();
       g.fillStyle = GRAA; g.font = '400 24px Inter, sans-serif';
       g.fillText('Bevis-nr. ' + id + ' · Pensum v1 (juli 2026) · Tjek ægthed: ainyheder.com/koerekort-tjek.html', CX, 1562);
 
