@@ -1048,7 +1048,7 @@ def _uge_side_html(d: dict) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ugens AI-overblik · uge {d.get("uge_nr", "")} · AI-nyheder</title>
+<title>AI-nyheder.com · Ugens overblik uge {d.get("uge_nr", "")}</title>
 <meta name="description" content="{html.escape(d.get("indledning", ""))[:150]}">
 <meta name="theme-color" content="#191714">
 <meta property="og:title" content="Ugens AI-overblik: {html.escape(d.get("rubrik", ""))}">
