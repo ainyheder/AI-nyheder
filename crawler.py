@@ -739,6 +739,9 @@ fortæller PRÆCIS artiklens pointe - så en læser kan gætte historien ud fra
 billedet alene. Ingen mennesker, ingen tekst i billedet. Vær specifik
 ("en flyttekasse fuld af robotarme med prisskilt på"), aldrig generisk
 ("abstrakte former der symboliserer AI").
+Beskriv KUN genstandene - ALDRIG omgivelser, rum eller baggrund (ingen
+serverrum, kontorer, værksteder eller gader). Genstandene står altid på en
+ren, enkel studiebaggrund.
 Svar KUN med et JSON-array i samme rækkefølge som input:
 [{"motiv": "..."}, ...]"""
 
@@ -815,6 +818,12 @@ def lav_billeder(artikler: list[dict]) -> None:
             "marketing-art fra et førende tech-brand. Materialerne følger "
             "genstandene (metal ligner metal, papir ligner papir, glas ligner glas) "
             "i en blød, mat, eksklusiv finish - aldrig billig plastik-glans. "
+            "BAGGRUND: Altid helt enkel og rolig - en ren, sømløs "
+            "studiebaggrund som i eksklusiv produktfotografering. INGEN rum, "
+            "interiører, serverrum, reoler, vægge med detaljer eller gade- og "
+            "værkstedsmiljøer. Kun en jævn flade med blød farvegradient og "
+            "genstandenes egne skygger, så al opmærksomhed samles om "
+            "hovedmotivet. "
             "FARVER: Genstandene bruger deres naturlige farver - rige, men let "
             f"afdæmpede. Hele scenen er tonet af sit lys: baggrund og "
             f"lysstemning i {farve}, så billedet hænger sammen med resten af "
