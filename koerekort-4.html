@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
-<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet · Modul 4</title>
+<meta name="description" content="Modul 4 af AI-kørekortet: Hallucinationer, forældet viden og skævheder — lær at fange AI'ens fejl, før de fanger dig.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -103,82 +103,67 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
-<h1>Din første AI-samtale</h1>
-<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Chatter du allerede med AI til daglig? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
+<span class="modul-tag">Modul 4 af 7 · ca. 10 min</span>
+<h1>Når AI tager fejl</h1>
+<p class="manchet">AI'ens største svaghed er ikke, at den tager fejl — det gør mennesker også. Det er, at den tager fejl med fuldstændig selvsikkerhed. Dette modul gør dig til en venlig, men vaks kontrollant.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Kender du allerede faldgruberne? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
 
-<h2>Først: Har du en chatbot klar?</h2>
-<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
-<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
+<h2>De tre typiske fejl</h2>
+<ul>
+<li><strong>Hallucinationer.</strong> AI'en opdigter fakta, navne, årstal — og endda kilder og links — der lyder helt rigtige, men ikke findes. Det sker, fordi den gætter det mest <em>sandsynlige</em> svar, ikke det mest <em>sande</em> (husker du modul 1?).</li>
+<li><strong>Forældet viden.</strong> Modellen er trænet på tekst frem til et bestemt tidspunkt. Spørger du til priser, regler eller nyheder, kan svaret være måneder eller år bagud — medmindre AI'en søger på nettet.</li>
+<li><strong>Skævheder.</strong> AI'en har lært af tekster skrevet af mennesker — med alle vores skævheder. Den kan fx antage, at en sygeplejerske er en kvinde, eller overse synspunkter, der er sjældne på nettet.</li>
+</ul>
 
-<h2>Opgave 1: Få hjælp til noget praktisk</h2>
+<h2>Sådan fanger du fejlene</h2>
+<ul>
+<li><strong>Bed om kilder — og klik på dem.</strong> Findes kilden? Siger den faktisk det, AI'en påstår?</li>
+<li><strong>Spørg: "Hvor sikker er du på det her?"</strong> AI'en er ofte overraskende ærlig, når du spørger direkte.</li>
+<li><strong>Krydstjek det vigtige.</strong> Beløb, datoer, regler og helbredsråd: slå efter hos en officiel kilde, før du handler.</li>
+<li><strong>Brug websøgning til dagsaktuelt.</strong> De fleste chatbots kan søge på nettet — bed dem om det, når emnet er nyt.</li>
+</ul>
+
+<h2>Prøv at fange en hallucination</h2>
 <div class="oevelse">
-<span class="maerkat">Øvelse 1 af 3</span>
-<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
-<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
+<span class="maerkat">Øvelse</span>
+<p style="margin-top:8px">Denne slags spørgsmål trækker ofte hallucinationer frem. Prøv den i din chatbot:</p>
+<div class="prompt-kasse" id="opgave-1">"Nævn tre danske bøger om kunstig intelligens med forfatter og udgivelsesår. Skriv ud for hver, hvor sikker du er på, at den findes — i procent."</div>
 <button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
 <button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
-</div>
-
-<h2>Opgave 2: Få en svær tekst forklaret</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 2 af 3</span>
-<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
-<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
-<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
-</div>
-
-<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 3 af 3</span>
-<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
-<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
-<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
-<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
-<ul style="margin-top:6px">
-<li>"Den anden idé lyder god — uddyb den."</li>
-<li>"Gør det billigere."</li>
-<li>"Hvad hvis det regner?"</li>
-</ul>
-<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
+<div class="facit" id="facit-1"><strong>Du bør se:</strong> måske helt rigtige bøger — og måske titler, der lyder ægte, men er digt. Tjek et par stykker på bibliotek.dk eller Google. Pointen er følelsen: svaret <em>ser</em> lige troværdigt ud, uanset om det er sandt. Derfor tjekker man.</div>
 </div>
 
 <h2 id="quiz">Quiz: Har du fat i det?</h2>
 <p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
 
 <div class="quiz-sp" data-sp="1">
-  <div class="sp">1. Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?</div>
-  <button class="svar" data-rigtig="nej">Starte en helt ny samtale med et bedre spørgsmål</button>
-  <button class="svar" data-rigtig="ja">Skrive "kortere og enklere, tak" i samme samtale</button>
-  <button class="svar" data-rigtig="nej">Læse det hele og finde de gode dele selv</button>
-  <div class="forklaring">Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme. Det er hurtigere end at formulere den perfekte prompt i første forsøg.</div>
+  <div class="sp">1. AI'en underbygger sit svar med en kilde og et link. Hvad gør du?</div>
+  <button class="svar" data-rigtig="nej">Stoler på svaret — kilder betyder, at det er sandt</button>
+  <button class="svar" data-rigtig="ja">Klikker på linket og tjekker, at kilden findes og faktisk siger det påståede</button>
+  <button class="svar" data-rigtig="nej">Ignorerer kilden — links fra AI er altid falske</button>
+  <div class="forklaring">AI kan opdigte kilder, der ser ægte ud — men den giver også tit rigtige. Den eneste måde at vide det på er at klikke og læse efter.</div>
 </div>
 
 <div class="quiz-sp" data-sp="2">
-  <div class="sp">2. Skal du skrive fejlfrit og formelt, når du taler med en chatbot?</div>
-  <button class="svar" data-rigtig="nej">Ja, ellers forstår den ikke opgaven</button>
-  <button class="svar" data-rigtig="nej">Ja, man skal bruge særlige kommandoer</button>
-  <button class="svar" data-rigtig="ja">Nej — skriv som du taler, slåfejl er helt fint</button>
-  <div class="forklaring">Der findes ingen kommandoer at lære. Skriv naturligt dansk med alle de slåfejl, du vil — den forstår dig alligevel.</div>
+  <div class="sp">2. Hvorfor kan AI svare forkert om noget, der skete i sidste uge?</div>
+  <button class="svar" data-rigtig="ja">Den er trænet på ældre tekst og kender ikke det nyeste, medmindre den søger på nettet</button>
+  <button class="svar" data-rigtig="nej">Den lyver med vilje for at virke klog</button>
+  <button class="svar" data-rigtig="nej">Nyheder er hemmelige for AI-firmaer</button>
+  <div class="forklaring">Modellens viden stopper ved trænings-tidspunktet. Bed den søge på nettet, når emnet er dagsaktuelt.</div>
 </div>
 
 <div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?</div>
-  <button class="svar" data-rigtig="nej">Indsætter brevet som det er — det går nok</button>
-  <button class="svar" data-rigtig="ja">Fjerner navn og CPR-nummer, før jeg indsætter teksten</button>
-  <button class="svar" data-rigtig="nej">Dropper det — AI må aldrig se breve</button>
-  <div class="forklaring">Selve teksten må AI'en gerne hjælpe med — det er dét, den er god til. Men personnummer og andre følsomme oplysninger fjerner du først. God vane fra dag ét.</div>
+  <div class="sp">3. Hvad er en "hallucination" i AI-sammenhæng?</div>
+  <button class="svar" data-rigtig="nej">Når AI'en ser mærkelige ting i billeder</button>
+  <button class="svar" data-rigtig="ja">Når AI'en opdigter noget, der lyder rigtigt, men er forkert</button>
+  <button class="svar" data-rigtig="nej">En teknisk fejl i din skærm</button>
+  <div class="forklaring">Det er ordet for AI'ens selvsikre digt: fakta, navne og kilder, der lyder plausible, men ikke passer. Nu ved du, hvordan du fanger dem.</div>
 </div>
 
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 2 gennemført!</h3>
-  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
-  <a class="knap-videre" href="koerekort-3.html">Videre til modul 3 →</a>
+  <h3>🎉 Modul 4 gennemført!</h3>
+  <p>Du er nu en vaks kontrollant. I modul 5 bruger vi det hele på rigtige hverdagsopgaver.</p>
+  <a class="knap-videre" href="koerekort-5.html">Videre til modul 5 →</a>
   <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
 </div>
 
@@ -187,7 +172,7 @@ footer a { color: var(--accent); }
 
 <script>
 (function(){
-  var MODUL = 2;
+  var MODUL = 4;
 
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){

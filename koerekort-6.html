@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
-<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet · Modul 6</title>
+<meta name="description" content="Modul 6 af AI-kørekortet: Brug AI til mails, referater og idéer på jobbet — og lær reglerne om persondata og fortrolighed.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -103,82 +103,70 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
-<h1>Din første AI-samtale</h1>
-<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
-<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Chatter du allerede med AI til daglig? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
+<span class="modul-tag">Modul 6 af 7 · ca. 15 min</span>
+<h1>AI på jobbet</h1>
+<p class="manchet">På jobbet kan AI spare dig for timer hver uge — hvis du bruger den rigtigt. Men arbejdspladsen har også data, der aldrig må havne i en chatbot. Dette modul giver dig både gevinsterne og reglerne.</p>
+<p style="font-size:14px; margin-top:-24px; margin-bottom:32px;">Bruger du allerede AI professionelt? <a href="#quiz" style="color:var(--accent); font-weight:700;">Spring direkte til quizzen ↓</a> — består du, er modulet gennemført.</p>
 
-<h2>Først: Har du en chatbot klar?</h2>
-<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
-<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
+<h2>Det, AI er bedst til på jobbet</h2>
+<ul>
+<li><strong>Mails og tekster:</strong> udkast, venligere tone, kortere version, oversættelse.</li>
+<li><strong>Referater:</strong> indsæt dine rodede noter — få et struktureret referat med beslutninger og opgaver.</li>
+<li><strong>Idéudvikling:</strong> "giv mig 10 vinkler på..." — og brug de to bedste.</li>
+<li><strong>Tunge dokumenter:</strong> "opsummér de vigtigste punkter i denne rapport for en travl kollega".</li>
+<li><strong>Regneark:</strong> "skriv en Excel-formel, der..." — en klassiker, der virker forbløffende godt.</li>
+</ul>
 
-<h2>Opgave 1: Få hjælp til noget praktisk</h2>
+<h2>Prøv referat-tricket</h2>
 <div class="oevelse">
-<span class="maerkat">Øvelse 1 af 3</span>
-<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
-<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
+<span class="maerkat">Øvelse</span>
+<p style="margin-top:8px">Indsæt denne prompt med de opdigtede mødenoter — eller endnu bedre: brug dine egne (uden navne og fortrolige detaljer):</p>
+<div class="prompt-kasse" id="opgave-1">"Lav et kort referat med beslutninger og opgaver ud fra disse rodede noter: budget ok men vent med nyansættelse — Lars tjekker leverandørpriser inden fredag — sommerfest flyttes til 21/8 — kunde X utilfreds med leveringstid, vi ringer mandag — næste møde om 14 dage."</div>
 <button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
 <button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
+<div class="facit" id="facit-1"><strong>Du bør se:</strong> et struktureret referat med beslutninger, ansvarlige og deadlines — ud af fem rodede linjer. Det er måske det mest tidsbesparende AI-trick på en arbejdsplads. Læs det igennem, før du sender det ud: du er stadig redaktøren.</div>
 </div>
 
-<h2>Opgave 2: Få en svær tekst forklaret</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 2 af 3</span>
-<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
-<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
-<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
-<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
-</div>
-
-<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
-<div class="oevelse">
-<span class="maerkat">Øvelse 3 af 3</span>
-<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
-<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
-<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
-<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
-<ul style="margin-top:6px">
-<li>"Den anden idé lyder god — uddyb den."</li>
-<li>"Gør det billigere."</li>
-<li>"Hvad hvis det regner?"</li>
+<h2>Reglerne — kort og ærligt</h2>
+<ul>
+<li><strong>Følg arbejdspladsens AI-politik.</strong> Findes der ingen? Så spørg din leder — og vær forsigtig, indtil der er en afklaring.</li>
+<li><strong>Persondata er persondata.</strong> Kunders og kollegers navne, CPR-numre, helbred og sager må ikke ind i en privat chatbot-konto — det er GDPR. Anonymisér, eller brug en løsning, virksomheden har godkendt.</li>
+<li><strong>Forretningshemmeligheder bliver hjemme.</strong> Priser, kontrakter, strategi og kode: del det kun i værktøjer, arbejdspladsen har godkendt til formålet.</li>
+<li><strong>Du har ansvaret.</strong> En AI-skrevet mail, du sender, er <em>din</em> mail. Læs, ret, stå inde for den.</li>
 </ul>
-<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
-<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
-</div>
+<div class="boks"><strong>Tommelfingerregel:</strong> Ville du være tryg ved, at teksten stod i en mail til en fremmed? Så må den gerne komme i chatbotten. Ville du ikke? Så anonymisér først — eller lad være.</div>
 
 <h2 id="quiz">Quiz: Har du fat i det?</h2>
 <p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
 
 <div class="quiz-sp" data-sp="1">
-  <div class="sp">1. Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?</div>
-  <button class="svar" data-rigtig="nej">Starte en helt ny samtale med et bedre spørgsmål</button>
-  <button class="svar" data-rigtig="ja">Skrive "kortere og enklere, tak" i samme samtale</button>
-  <button class="svar" data-rigtig="nej">Læse det hele og finde de gode dele selv</button>
-  <div class="forklaring">Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme. Det er hurtigere end at formulere den perfekte prompt i første forsøg.</div>
+  <div class="sp">1. Du vil have AI til at skrive referat af et møde, hvor kunders navne og sager blev nævnt. Hvad gør du?</div>
+  <button class="svar" data-rigtig="nej">Indsætter det hele — referatet skal jo være præcist</button>
+  <button class="svar" data-rigtig="ja">Anonymiserer navne og sager først — eller bruger virksomhedens godkendte AI-værktøj</button>
+  <button class="svar" data-rigtig="nej">Dropper AI på jobbet helt</button>
+  <div class="forklaring">Persondata i en privat chatbot-konto er et GDPR-problem. Anonymisér ("kunde A", "sag 1") eller brug en godkendt løsning — så får du gevinsten uden risikoen.</div>
 </div>
 
 <div class="quiz-sp" data-sp="2">
-  <div class="sp">2. Skal du skrive fejlfrit og formelt, når du taler med en chatbot?</div>
-  <button class="svar" data-rigtig="nej">Ja, ellers forstår den ikke opgaven</button>
-  <button class="svar" data-rigtig="nej">Ja, man skal bruge særlige kommandoer</button>
-  <button class="svar" data-rigtig="ja">Nej — skriv som du taler, slåfejl er helt fint</button>
-  <div class="forklaring">Der findes ingen kommandoer at lære. Skriv naturligt dansk med alle de slåfejl, du vil — den forstår dig alligevel.</div>
+  <div class="sp">2. Hvem har ansvaret for indholdet i en AI-skrevet mail, du sender til en kunde?</div>
+  <button class="svar" data-rigtig="nej">AI-firmaet — det er deres tekst</button>
+  <button class="svar" data-rigtig="ja">Dig — du skal læse og rette, før du sender</button>
+  <button class="svar" data-rigtig="nej">Ingen — AI-tekster er juridisk gråzone</button>
+  <div class="forklaring">AI'en er dit udkastværktøj, ikke din afsender. Det, der går ud med dit navn på, står du inde for — derfor læser du altid igennem.</div>
 </div>
 
 <div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?</div>
-  <button class="svar" data-rigtig="nej">Indsætter brevet som det er — det går nok</button>
-  <button class="svar" data-rigtig="ja">Fjerner navn og CPR-nummer, før jeg indsætter teksten</button>
-  <button class="svar" data-rigtig="nej">Dropper det — AI må aldrig se breve</button>
-  <div class="forklaring">Selve teksten må AI'en gerne hjælpe med — det er dét, den er god til. Men personnummer og andre følsomme oplysninger fjerner du først. God vane fra dag ét.</div>
+  <div class="sp">3. Din arbejdsplads har ingen regler om AI endnu. Hvad er det kloge træk?</div>
+  <button class="svar" data-rigtig="nej">Så er alt tilladt — fyr løs med alle data</button>
+  <button class="svar" data-rigtig="nej">Undgå AI, indtil loven kræver det</button>
+  <button class="svar" data-rigtig="ja">Spørg din leder om en afklaring — og hold fortrolige data ude imens</button>
+  <div class="forklaring">Ingen politik betyder ikke frit spil — det betyder uafklaret. Spørg, foreslå gerne selv retningslinjer, og brug sund fornuft med data, indtil svaret kommer.</div>
 </div>
 
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 2 gennemført!</h3>
-  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
-  <a class="knap-videre" href="koerekort-3.html">Videre til modul 3 →</a>
+  <h3>🎉 Modul 6 gennemført!</h3>
+  <p>Du kan nu bruge AI professionelt — med både gevinsterne og reglerne på plads. Sidste modul: sikkerhed og god AI-skik.</p>
+  <a class="knap-videre" href="koerekort-7.html">Videre til modul 7 →</a>
   <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
 </div>
 
@@ -187,7 +175,7 @@ footer a { color: var(--accent); }
 
 <script>
 (function(){
-  var MODUL = 2;
+  var MODUL = 6;
 
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){
