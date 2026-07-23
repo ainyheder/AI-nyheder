@@ -69,6 +69,16 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   border-radius: 999px; background: var(--accent-svag); color: var(--accent); align-self: center; white-space: nowrap; }
 .modul.faerdig .status { background: #e3f4ea; color: #2e9e5b; }
 .modul.laast .status { background: var(--bg); color: var(--blaek-svag); border: 1px solid var(--linje); }
+
+/* Bevis */
+.bevis-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px 26px; margin: 14px 0; box-shadow: var(--skygge); }
+#bevis-navn { font-family: var(--font-ui); font-size: 15px; padding: 11px 16px; border: 1px solid var(--linje);
+  border-radius: 10px; width: 100%; max-width: 340px; margin-right: 10px; margin-bottom: 10px; background: var(--bg); color: var(--blaek); }
+#bevis-navn:focus { outline: none; border-color: var(--accent); }
+.bevis-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 24px; cursor: pointer; }
+.bevis-knap:hover { opacity: .9; }
 </style>
 </head>
 <body>
@@ -85,6 +95,8 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
 <main>
 <h1>AI-kørekortet 🪪</h1>
 <p class="manchet">Syv korte moduler, der tager dig fra "jeg har hørt om ChatGPT" til at bruge AI trygt og nyttigt i din hverdag. Hvert modul tager 10-15 minutter og slutter med en lille quiz. Gratis, uden tilmelding — og din fremdrift gemmes i din browser.</p>
+<div class="boks" style="margin-bottom:16px;"><strong>Allerede i gang med AI?</strong> Du bestemmer selv rækkefølgen — og du kan springe læsestoffet over og gå direkte til quizzen i hvert modul. Består du, tæller modulet som gennemført. Kørekortet er bestået, når alle 7 er i hus.</div>
+<div class="boks" style="margin-bottom:24px;"><strong>🎓 Og når du er igennem:</strong> Så kan du hente dit personlige AI-kørekort som bevis — med dit navn og dato. Det er ikke en officiel uddannelse, men det viser initiativ og AI-forståelse, og det kan du sagtens nævne i din næste jobansøgning. <a href="#bevis" style="color:var(--accent); font-weight:700;">Se beviset ↓</a></div>
 
 <div class="fremdrift">
   <div class="fremdrift-tekst" id="fremdrift-tekst">0 af 7 moduler gennemført</div>
@@ -128,6 +140,17 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
 </div>
 
 <div class="boks"><strong>Hvorfor et kørekort?</strong> Fordi AI rammer alle — også dem, der ikke har bedt om det. Jo flere danskere, der kan bruge værktøjerne kritisk og sikkert, jo bedre står vi som land. Del gerne kørekortet med én, du kender, som er gået i stå ved "jeg forstår det ikke".</div>
+
+<h2 id="bevis" style="font-family:var(--font-display); font-weight:800; font-size:22px; margin:40px 0 12px; letter-spacing:-.01em;">Dit bevis 🎓</h2>
+<div class="bevis-kort" id="bevis-laast">
+  <p style="margin:0; font-size:15px; color:var(--blaek-svag);">Gennemfør alle 7 moduler, og hent dit personlige AI-kørekort her — et pænt bevis med dit navn og dato, klar til at gemme, printe eller vise frem. <span id="bevis-mangler"></span></p>
+</div>
+<div class="bevis-kort" id="bevis-aaben" style="display:none;">
+  <p style="font-size:15px; margin-bottom:14px;"><strong>Tillykke — alle 7 moduler er gennemført!</strong> Skriv dit navn, som det skal stå på beviset:</p>
+  <input type="text" id="bevis-navn" placeholder="Dit fulde navn" maxlength="60">
+  <button class="bevis-knap" id="bevis-hent">Hent dit AI-kørekort (billede)</button>
+  <p id="bevis-fejl" style="display:none; color:#c04545; font-size:13.5px; margin:10px 0 0;">Skriv dit navn først 🙂</p>
+</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 
@@ -148,6 +171,202 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   });
   document.getElementById('fremdrift-tekst').textContent = antal + ' af 7 moduler gennemført';
   document.getElementById('fremdrift-fyld').style.width = Math.round(antal / 7 * 100) + '%';
+
+  // Bevis: lås op ved 7 af 7
+  if (antal === 7) {
+    document.getElementById('bevis-laast').style.display = 'none';
+    document.getElementById('bevis-aaben').style.display = 'block';
+  } else {
+    document.getElementById('bevis-mangler').textContent = 'Du mangler ' + (7 - antal) + (7 - antal === 1 ? ' modul.' : ' moduler.');
+  }
+
+  // Tegn og hent certifikatet som PNG
+  function hentBevis(){
+    var navn = (document.getElementById('bevis-navn').value || '').trim();
+    if (!navn) { document.getElementById('bevis-fejl').style.display = 'block'; return; }
+    document.getElementById('bevis-fejl').style.display = 'none';
+
+    var tegn = function(){
+      var INK = '#191714', GRAA = '#6d675d', LILLA = '#5b4bf0', LILLA_M = '#4a3dd0', CREME = '#f4f2ec', LINJE = '#e2ddd2';
+      var W = 2400, H = 1700, CX = W / 2;
+      var c = document.createElement('canvas');
+      c.width = W; c.height = H;
+      var g = c.getContext('2d');
+
+      // unikt bevis-nummer (gemmes, så det er det samme ved gen-download)
+      var id;
+      try {
+        id = localStorage.getItem('aikort_bevisnr');
+        if (!id) {
+          id = 'AIK-' + new Date().getFullYear() + '-' + String(Math.floor(1000 + Math.random() * 9000));
+          localStorage.setItem('aikort_bevisnr', id);
+        }
+      } catch(e) { id = 'AIK-' + new Date().getFullYear(); }
+
+      // ---- baggrund: creme med fine diagonale nålestriber ----
+      g.fillStyle = CREME; g.fillRect(0, 0, W, H);
+      g.strokeStyle = 'rgba(25,23,20,0.022)'; g.lineWidth = 1;
+      for (var s = -H; s < W + H; s += 16) {
+        g.beginPath(); g.moveTo(s, 0); g.lineTo(s + H, H); g.stroke();
+      }
+      // blid vignet, så midten lyser op
+      var vg = g.createRadialGradient(CX, H/2, 300, CX, H/2, 1500);
+      vg.addColorStop(0, 'rgba(255,255,255,0.35)'); vg.addColorStop(1, 'rgba(255,255,255,0)');
+      g.fillStyle = vg; g.fillRect(0, 0, W, H);
+
+      // ---- rammer ----
+      g.strokeStyle = INK; g.lineWidth = 10; g.strokeRect(60, 60, W-120, H-120);
+      g.strokeStyle = LILLA; g.lineWidth = 3; g.strokeRect(86, 86, W-172, H-172);
+      g.strokeStyle = LINJE; g.lineWidth = 1.5; g.strokeRect(104, 104, W-208, H-208);
+      // hjørne-ornamenter: dobbeltlinjer + lilla diamant
+      var hj = [[86,86,1,1],[W-86,86,-1,1],[86,H-86,1,-1],[W-86,H-86,-1,-1]];
+      hj.forEach(function(h){
+        var x = h[0], y = h[1], dx = h[2], dy = h[3];
+        g.strokeStyle = LILLA; g.lineWidth = 2.5;
+        g.beginPath(); g.moveTo(x + 14*dx, y + 90*dy); g.lineTo(x + 14*dx, y + 14*dy); g.lineTo(x + 90*dx, y + 14*dy); g.stroke();
+        g.beginPath(); g.moveTo(x + 30*dx, y + 90*dy); g.lineTo(x + 30*dx, y + 30*dy); g.lineTo(x + 90*dx, y + 30*dy); g.stroke();
+        g.save(); g.translate(x, y); g.rotate(Math.PI/4);
+        g.fillStyle = LILLA; g.fillRect(-9, -9, 18, 18); g.restore();
+      });
+
+      g.textAlign = 'center';
+
+      // ---- top: monogram + afsender ----
+      g.font = '900 66px Fraunces, Georgia, serif';
+      var mAI = g.measureText('AI').width, mP = g.measureText('.').width;
+      g.fillStyle = INK; g.fillText('AI', CX - mP/2, 235);
+      g.fillStyle = LILLA; g.fillText('.', CX + mAI/2, 235);
+      try { g.letterSpacing = '10px'; } catch(e) {}
+      g.fillStyle = GRAA; g.font = '600 27px Inter, sans-serif';
+      g.fillText('AI-NYHEDER.COM', CX, 296);
+      try { g.letterSpacing = '0px'; } catch(e) {}
+      // ornament-linje
+      g.strokeStyle = LINJE; g.lineWidth = 1.5;
+      g.beginPath(); g.moveTo(CX-260, 335); g.lineTo(CX-40, 335); g.stroke();
+      g.beginPath(); g.moveTo(CX+40, 335); g.lineTo(CX+260, 335); g.stroke();
+      g.save(); g.translate(CX, 335); g.rotate(Math.PI/4); g.fillStyle = LILLA; g.fillRect(-6, -6, 12, 12); g.restore();
+
+      // ---- titel + undertitel ----
+      g.fillStyle = INK; g.font = '900 148px Fraunces, Georgia, serif';
+      g.fillText('AI-kørekortet', CX, 500);
+      try { g.letterSpacing = '7px'; } catch(e) {}
+      g.fillStyle = LILLA; g.font = '700 38px Inter, sans-serif';
+      g.fillText('BEVIS FOR GENNEMFØRT FORLØB', CX, 585);
+      try { g.letterSpacing = '0px'; } catch(e) {}
+      var ub = g.measureText('BEVIS FOR GENNEMFØRT FORLØB').width;
+      g.strokeStyle = LILLA; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(CX - ub/2 - 160, 572); g.lineTo(CX - ub/2 - 40, 572); g.stroke();
+      g.beginPath(); g.moveTo(CX + ub/2 + 40, 572); g.lineTo(CX + ub/2 + 160, 572); g.stroke();
+
+      // ---- navn ----
+      g.fillStyle = GRAA; g.font = 'italic 400 42px Inter, sans-serif';
+      g.fillText('Dette bevis tildeles', CX, 730);
+      var nf = 112;
+      g.font = '900 ' + nf + 'px Fraunces, Georgia, serif';
+      while (g.measureText(navn).width > 1560 && nf > 48) {
+        nf -= 6; g.font = '900 ' + nf + 'px Fraunces, Georgia, serif';
+      }
+      g.fillStyle = INK; g.fillText(navn, CX, 880);
+      // flourish under navnet
+      g.strokeStyle = LILLA; g.lineWidth = 3;
+      g.beginPath(); g.moveTo(CX-500, 928); g.lineTo(CX+500, 928); g.stroke();
+      [[-500,0],[500,0]].forEach(function(pkt){
+        g.save(); g.translate(CX + pkt[0], 928); g.rotate(Math.PI/4); g.fillStyle = LILLA; g.fillRect(-7, -7, 14, 14); g.restore();
+      });
+
+      // ---- brødtekst ----
+      g.fillStyle = INK; g.font = '400 39px Inter, sans-serif';
+      g.fillText('for at have gennemført alle 7 moduler i AI-kørekortet', CX, 1012);
+      g.fillStyle = GRAA; g.font = '400 30px Inter, sans-serif';
+      g.fillText('Hvad AI er · Din første AI-samtale · Prompts, der virker · Når AI tager fejl', CX, 1066);
+      g.fillText('AI i hverdagen · AI på jobbet · Sikkerhed og god AI-skik', CX, 1110);
+      g.fillStyle = INK; g.font = 'italic 400 31px Inter, sans-serif';
+      g.fillText('Beviset bekræfter indehaverens initiativ, AI-nysgerrighed og forståelse for tryg brug af kunstig intelligens.', CX, 1172);
+
+      // ---- segl med bånd ----
+      var scx = CX, scy = 1330, r = 118;
+      // bånd (bag seglet)
+      [[-1, LILLA_M], [1, LILLA]].forEach(function(b){
+        g.save(); g.translate(scx, scy + 40); g.rotate(b[0] * 0.30);
+        g.fillStyle = b[1];
+        g.beginPath();
+        g.moveTo(-34, 0); g.lineTo(34, 0); g.lineTo(34, 148); g.lineTo(0, 116); g.lineTo(-34, 148);
+        g.closePath(); g.fill(); g.restore();
+      });
+      // takket kant
+      g.fillStyle = LILLA;
+      for (var t = 0; t < 36; t++) {
+        var v = t / 36 * Math.PI * 2;
+        g.beginPath(); g.arc(scx + Math.cos(v) * r, scy + Math.sin(v) * r, 13, 0, Math.PI * 2); g.fill();
+      }
+      // selve seglet med gradient
+      var sg = g.createRadialGradient(scx - 35, scy - 45, 15, scx, scy, r + 8);
+      sg.addColorStop(0, '#7d70f5'); sg.addColorStop(0.55, LILLA); sg.addColorStop(1, LILLA_M);
+      g.fillStyle = sg;
+      g.beginPath(); g.arc(scx, scy, r, 0, Math.PI * 2); g.fill();
+      g.strokeStyle = 'rgba(255,255,255,0.55)'; g.lineWidth = 2.5;
+      g.beginPath(); g.arc(scx, scy, r - 17, 0, Math.PI * 2); g.stroke();
+      g.strokeStyle = 'rgba(255,255,255,0.28)'; g.lineWidth = 1.5;
+      g.beginPath(); g.arc(scx, scy, r - 27, 0, Math.PI * 2); g.stroke();
+      // stjerneprikker rundt i ringen
+      g.fillStyle = 'rgba(255,255,255,0.75)';
+      for (var p = 0; p < 14; p++) {
+        var pv = p / 14 * Math.PI * 2 - Math.PI / 2;
+        g.beginPath(); g.arc(scx + Math.cos(pv) * (r - 22), scy + Math.sin(pv) * (r - 22), 2.6, 0, Math.PI * 2); g.fill();
+      }
+      // monogram i seglet
+      g.fillStyle = '#ffffff'; g.font = '900 74px Fraunces, Georgia, serif';
+      g.fillText('AI.', scx, scy + 8);
+      try { g.letterSpacing = '3px'; } catch(e) {}
+      g.font = '700 20px Inter, sans-serif';
+      g.fillText('7 MODULER', scx, scy + 52);
+      try { g.letterSpacing = '0px'; } catch(e) {}
+
+      // ---- dato & udsteder ----
+      var dato = new Date().toLocaleDateString('da-DK', { day: 'numeric', month: 'long', year: 'numeric' });
+      g.fillStyle = INK; g.font = '600 36px Inter, sans-serif';
+      g.fillText(dato, 620, 1330);
+      g.strokeStyle = INK; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(430, 1358); g.lineTo(810, 1358); g.stroke();
+      try { g.letterSpacing = '4px'; } catch(e) {}
+      g.fillStyle = GRAA; g.font = '600 23px Inter, sans-serif';
+      g.fillText('DATO', 620, 1398);
+      try { g.letterSpacing = '0px'; } catch(e) {}
+
+      g.fillStyle = INK; g.font = '900 42px Fraunces, Georgia, serif';
+      var mAI2 = g.measureText('AI-nyheder').width;
+      g.fillText('AI-nyheder', 1780 - 4, 1330);
+      g.fillStyle = LILLA; g.font = '900 42px Fraunces, Georgia, serif';
+      g.fillText('.', 1780 + mAI2/2, 1330);
+      g.strokeStyle = INK; g.lineWidth = 2;
+      g.beginPath(); g.moveTo(1590, 1358); g.lineTo(1970, 1358); g.stroke();
+      try { g.letterSpacing = '4px'; } catch(e) {}
+      g.fillStyle = GRAA; g.font = '600 23px Inter, sans-serif';
+      g.fillText('UDSTEDER', 1780, 1398);
+      try { g.letterSpacing = '0px'; } catch(e) {}
+
+      // ---- bundlinje ----
+      g.fillStyle = GRAA; g.font = '400 24px Inter, sans-serif';
+      g.fillText('Bevis-nr. ' + id + ' · Gratis læringsforløb med quiz i alle moduler · ainyheder.com/koerekort.html', CX, 1562);
+
+      // download
+      var a = document.createElement('a');
+      a.download = 'AI-koerekort-' + navn.replace(/[^a-zA-Z0-9æøåÆØÅ]+/g, '-') + '.png';
+      a.href = c.toDataURL('image/png');
+      a.click();
+    };
+    // sørg for at Fraunces er indlæst, før vi tegner
+    if (document.fonts && document.fonts.load) {
+      Promise.all([
+        document.fonts.load('900 148px Fraunces'),
+        document.fonts.load('400 30px Inter'),
+        document.fonts.load('600 30px Inter'),
+        document.fonts.load('700 38px Inter')
+      ]).then(tegn, tegn);
+    } else { tegn(); }
+  }
+  var hentKnap = document.getElementById('bevis-hent');
+  if (hentKnap) { hentKnap.addEventListener('click', hentBevis); }
 })();
 </script>
 
