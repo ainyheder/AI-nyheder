@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · AI-kørekortet · Modul 1</title>
-<meta name="description" content="Modul 1 af AI-kørekortet: Hvad er AI egentlig? Forstå hvad en chatbot gør, hvad den kan og ikke kan — med øvelse og quiz. Gratis og på letlæst dansk.">
+<title>AI-nyheder.com · AI-kørekortet · Modul 2</title>
+<meta name="description" content="Modul 2 af AI-kørekortet: Din første AI-samtale. Løs tre hverdagsopgaver med AI — med facit at sammenligne med. Gratis og på letlæst dansk.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -62,6 +62,11 @@ footer a { color: var(--accent); }
 .kopier { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--accent);
   background: var(--accent-svag); border: none; border-radius: 999px; padding: 8px 18px; cursor: pointer; }
 .kopier:hover { background: var(--accent); color: #fff; }
+.facit-knap { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--blaek-svag);
+  background: var(--bg); border: 1px solid var(--linje); border-radius: 999px; padding: 8px 18px; cursor: pointer; margin-left: 8px; }
+.facit-knap:hover { border-color: var(--accent); color: var(--accent); }
+.facit { display: none; background: var(--groen-svag); border-left: 3px solid var(--groen);
+  border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; margin-top: 12px; }
 
 /* Quiz */
 .quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
@@ -82,6 +87,8 @@ footer a { color: var(--accent); }
 .knap-videre { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff;
   background: var(--accent); padding: 12px 26px; border-radius: 999px; margin-top: 10px; }
 .knap-videre:hover { opacity: .9; }
+.knap-sekundaer { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--accent);
+  padding: 12px 20px; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -96,70 +103,81 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
-<span class="modul-tag">Modul 1 af 7 · ca. 10 min</span>
-<h1>Hvad er AI egentlig?</h1>
-<p class="manchet">Før du kan bruge AI klogt, skal du vide, hvad der faktisk sker, når du skriver til en chatbot. Det er nemmere, end du tror — og når du forstår det, forstår du også, hvorfor AI nogle gange tager fejl.</p>
+<span class="modul-tag">Modul 2 af 7 · ca. 15 min</span>
+<h1>Din første AI-samtale</h1>
+<p class="manchet">I modul 1 lærte du, hvad AI er. Nu skal du selv prøve. Du løser tre små hverdagsopgaver — og for hver opgave kan du folde et "hvad du bør se"-facit ud, så du ved, om du er på rette spor.</p>
 
-<h2>En meget velbevandret gætte-maskine</h2>
-<p>En chatbot som ChatGPT, Gemini eller Claude er ikke et opslagsværk, og den "tænker" ikke som et menneske. Den er en <strong>sprogmodel</strong>: et program, der har læst enorme mængder tekst — bøger, artikler, hjemmesider — og er blevet ekstremt god til én ting: <strong>at gætte, hvilket ord der passer bedst som det næste.</strong></p>
-<p>Når du spørger "Hvad er hovedstaden i Frankrig?", slår den ikke op i et leksikon. Den har set sætningen så mange gange i sin træning, at "Paris" er det oplagte næste ord. Det lyder simpelt, men når man gætter næste ord milliarder af gange på baggrund af næsten alt, mennesker har skrevet, opstår der noget, der minder forbløffende meget om forståelse.</p>
-<div class="boks"><strong>Husk denne ene sætning:</strong> AI'en skriver det, der er <em>sandsynligt</em> — ikke nødvendigvis det, der er <em>sandt</em>. Det er nøglen til alt, hvad du lærer i resten af kørekortet.</div>
+<h2>Først: Har du en chatbot klar?</h2>
+<p>Du skal bruge en gratis konto hos <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a> — det er lige meget hvilken. Har du ikke en endnu, tager det to minutter: følg <a href="guide-igang.html" style="color:var(--accent)">kom i gang-guiden</a>, og kom tilbage hertil.</p>
+<div class="boks"><strong>Én regel, før du skriver løs:</strong> Del aldrig personnummer, adgangskoder eller andres private oplysninger med en chatbot. Skriv frit om alt det upersonlige — det er rigeligt til i dag. (Meget mere om det i modul 7.)</div>
 
-<h2>Hvad den er god til — og dårlig til</h2>
-<h3>God til 💪</h3>
-<ul>
-<li><strong>Sprog:</strong> skrive udkast, forkorte, oversætte, ændre tone, forklare svære tekster med lette ord.</li>
-<li><strong>Idéer og overblik:</strong> brainstorme, lave planer, stille de spørgsmål, du ikke selv havde tænkt på.</li>
-<li><strong>Tålmodighed:</strong> den bliver aldrig træt af at forklare det samme på en ny måde, kl. 3 om natten.</li>
-</ul>
-<h3>Dårlig til ⚠️</h3>
-<ul>
-<li><strong>Præcise fakta:</strong> tal, datoer, navne og kilder kan være gættet forkert — med fuld selvsikkerhed. Det kaldes at <a href="ordbog.html#hallucination" style="color:var(--accent)">hallucinere</a>.</li>
-<li><strong>Det nyeste:</strong> modellen er trænet på tekst frem til et bestemt tidspunkt og kender ikke nødvendigvis gårsdagens nyheder (medmindre den søger på nettet).</li>
-<li><strong>At sige "det ved jeg ikke":</strong> den vil hellere gætte end indrømme tvivl. Dét skal du kompensere for.</li>
-</ul>
-
-<h2>Prøv det selv (2 minutter)</h2>
+<h2>Opgave 1: Få hjælp til noget praktisk</h2>
 <div class="oevelse">
-<span class="maerkat">Øvelse</span>
-<p style="margin-top:8px">Åbn <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a>, og indsæt denne prompt:</p>
-<div class="prompt-kasse" id="oevelse-prompt">"Forklar med højst 100 ord, hvordan en sprogmodel virker — som om jeg var 10 år. Slut af med at nævne én ting, du som AI er dårlig til."</div>
-<button class="kopier" data-mål="oevelse-prompt">Kopiér prompten</button>
-<p style="margin-top:14px; font-size:14px; color:var(--blaek-svag)">Læg mærke til to ting: hvor let den forklarer sig selv — og at den faktisk godt <em>ved</em>, hvad den er dårlig til, når du spørger direkte.</p>
+<span class="maerkat">Øvelse 1 af 3</span>
+<p style="margin-top:8px">Indsæt denne prompt — og ret den gerne til, så den passer til din egen husstand:</p>
+<div class="prompt-kasse" id="opgave-1">"Lav en madplan for mandag til fredag i næste uge til 2 personer. Det skal være hurtig hverdagsmad, gerne dansk-inspireret, og højst én ret med fisk. Lav bagefter en samlet indkøbsliste."</div>
+<button class="kopier" data-mål="opgave-1">Kopiér prompten</button>
+<button class="facit-knap" data-mål="facit-1">Hvad bør jeg se? ▾</button>
+<div class="facit" id="facit-1"><strong>Du bør se:</strong> fem konkrete aftensmadsretter og en indkøbsliste bagefter. Læg mærke til, at den overholdt dine krav (hurtigt, højst én fiskeret). Gjorde den ikke det? Så skriv bare "du glemte, at..." — det er helt normalt at rette AI'en.</div>
+</div>
+
+<h2>Opgave 2: Få en svær tekst forklaret</h2>
+<div class="oevelse">
+<span class="maerkat">Øvelse 2 af 3</span>
+<p style="margin-top:8px">AI er fremragende til at oversætte "kancellisprog" til dansk. Prøv med denne (opdigtede) tekst fra et brev:</p>
+<div class="prompt-kasse" id="opgave-2">"Forklar dette med almindelige ord, og fortæl mig hvad jeg konkret skal gøre: 'Såfremt indsigelse mod afgørelsen ønskes fremsat, skal denne være forvaltningen i hænde senest 4 uger fra modtagelsesdatoen, idet afgørelsen i modsat fald anses for endelig.'"</div>
+<button class="kopier" data-mål="opgave-2">Kopiér prompten</button>
+<button class="facit-knap" data-mål="facit-2">Hvad bør jeg se? ▾</button>
+<div class="facit" id="facit-2"><strong>Du bør se:</strong> noget i retning af "Hvis du vil klage, skal kommunen have din klage inden 4 uger — ellers står afgørelsen fast." Næste gang du får et uforståeligt brev, ved du, hvad du gør: indsæt teksten og bed om en forklaring. (Fjern bare navn og CPR-nummer først.)</div>
+</div>
+
+<h2>Opgave 3: Det vigtigste trick — fortsæt samtalen</h2>
+<div class="oevelse">
+<span class="maerkat">Øvelse 3 af 3</span>
+<p style="margin-top:8px">Nybegyndere starter forfra, hver gang svaret ikke er perfekt. Lad være! AI'en husker samtalen. Skriv først:</p>
+<div class="prompt-kasse" id="opgave-3">"Giv mig tre idéer til, hvad jeg kan lave en lørdag med en person, der ikke gider gå langt."</div>
+<button class="kopier" data-mål="opgave-3">Kopiér prompten</button>
+<p style="margin-top:14px">Og når svaret kommer, så prøv at svare med korte beskeder som:</p>
+<ul style="margin-top:6px">
+<li>"Den anden idé lyder god — uddyb den."</li>
+<li>"Gør det billigere."</li>
+<li>"Hvad hvis det regner?"</li>
+</ul>
+<button class="facit-knap" data-mål="facit-3">Hvad bør jeg se? ▾</button>
+<div class="facit" id="facit-3"><strong>Du bør se:</strong> at AI'en bygger videre på sine egne forslag uden at du behøver gentage noget. Det er dét, der gør chatbots stærke: du forhandler dig frem til et godt svar i stedet for at skulle stille det perfekte spørgsmål første gang.</div>
 </div>
 
 <h2>Quiz: Har du fat i det?</h2>
-<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet — du kan bare prøve igen, hvis du rammer forkert.</p>
+<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet.</p>
 
 <div class="quiz-sp" data-sp="1">
-  <div class="sp">1. Hvad gør en sprogmodel grundlæggende, når den svarer dig?</div>
-  <button class="svar" data-rigtig="nej">Den slår svaret op i en stor database med fakta</button>
-  <button class="svar" data-rigtig="ja">Den gætter, hvilke ord der passer bedst som de næste</button>
-  <button class="svar" data-rigtig="nej">Den ringer til en menneskelig ekspert</button>
-  <div class="forklaring">Rigtigt svar: den forudsiger næste ord ud fra alt, den har læst. Derfor er svaret <em>sandsynligt</em> — men ikke garanteret sandt.</div>
+  <div class="sp">1. Svaret fra AI'en er alt for langt og kringlet. Hvad er det smarteste træk?</div>
+  <button class="svar" data-rigtig="nej">Starte en helt ny samtale med et bedre spørgsmål</button>
+  <button class="svar" data-rigtig="ja">Skrive "kortere og enklere, tak" i samme samtale</button>
+  <button class="svar" data-rigtig="nej">Læse det hele og finde de gode dele selv</button>
+  <div class="forklaring">Samtalen fortsætter — AI'en husker, hvad I talte om, og retter til med det samme. Det er hurtigere end at formulere den perfekte prompt i første forsøg.</div>
 </div>
 
 <div class="quiz-sp" data-sp="2">
-  <div class="sp">2. AI'en svarer selvsikkert med et årstal, du ikke kender. Hvad gør du?</div>
-  <button class="svar" data-rigtig="nej">Stoler på det — den lød meget sikker</button>
-  <button class="svar" data-rigtig="nej">Opgiver at bruge AI til noget som helst</button>
-  <button class="svar" data-rigtig="ja">Dobbelttjekker årstallet, før jeg handler på det</button>
-  <div class="forklaring">Selvsikkerhed er ikke det samme som korrekthed. Brug AI til udkast og forklaringer — og tjek vigtige fakta, tal og datoer selv.</div>
+  <div class="sp">2. Skal du skrive fejlfrit og formelt, når du taler med en chatbot?</div>
+  <button class="svar" data-rigtig="nej">Ja, ellers forstår den ikke opgaven</button>
+  <button class="svar" data-rigtig="nej">Ja, man skal bruge særlige kommandoer</button>
+  <button class="svar" data-rigtig="ja">Nej — skriv som du taler, slåfejl er helt fint</button>
+  <div class="forklaring">Der findes ingen kommandoer at lære. Skriv naturligt dansk med alle de slåfejl, du vil — den forstår dig alligevel.</div>
 </div>
 
 <div class="quiz-sp" data-sp="3">
-  <div class="sp">3. Hvilken opgave er en chatbot BEDST til?</div>
-  <button class="svar" data-rigtig="ja">"Gør denne mail venligere i tonen"</button>
-  <button class="svar" data-rigtig="nej">"Hvad kostede en liter mælk i Netto i går?"</button>
-  <button class="svar" data-rigtig="nej">"Hvad er telefonnummeret til min læge?"</button>
-  <div class="forklaring">Sprogopgaver er dens hjemmebane. Dagsaktuelle priser og konkrete opslag som telefonnumre er lige præcis dér, den gætter — og gætter forkert.</div>
+  <div class="sp">3. Du vil have hjælp til at forstå et brev fra kommunen. Hvad gør du med dine personlige oplysninger?</div>
+  <button class="svar" data-rigtig="nej">Indsætter brevet som det er — det går nok</button>
+  <button class="svar" data-rigtig="ja">Fjerner navn og CPR-nummer, før jeg indsætter teksten</button>
+  <button class="svar" data-rigtig="nej">Dropper det — AI må aldrig se breve</button>
+  <div class="forklaring">Selve teksten må AI'en gerne hjælpe med — det er dét, den er god til. Men personnummer og andre følsomme oplysninger fjerner du først. God vane fra dag ét.</div>
 </div>
 
 <div class="quiz-resultat" id="quiz-resultat">
-  <h3>🎉 Modul 1 gennemført!</h3>
-  <p>Du ved nu mere om, hvordan AI virker, end de fleste. Din fremdrift er gemt her i browseren.</p>
-  <a class="knap-videre" href="koerekort-2.html">Videre til modul 2 →</a>
-  <br><a href="koerekort.html" style="font-size:13px; font-weight:700; color:var(--accent); display:inline-block; margin-top:12px;">Tilbage til oversigten</a>
+  <h3>🎉 Modul 2 gennemført!</h3>
+  <p>Du har nu haft dine første rigtige AI-samtaler. I modul 3 lærer du at skrive prompts, der giver markant bedre svar.</p>
+  <a class="knap-videre" href="koerekort.html">Tilbage til kørekortet →</a>
 </div>
 
 </main>
@@ -167,6 +185,8 @@ footer a { color: var(--accent); }
 
 <script>
 (function(){
+  var MODUL = 2;
+
   // Kopiér-knapper
   document.querySelectorAll('.kopier').forEach(function(knap){
     knap.addEventListener('click', function(){
@@ -175,6 +195,16 @@ footer a { color: var(--accent); }
         knap.textContent = 'Kopieret ✓';
         setTimeout(function(){ knap.textContent = 'Kopiér prompten'; }, 2000);
       });
+    });
+  });
+
+  // Facit-knapper
+  document.querySelectorAll('.facit-knap').forEach(function(knap){
+    knap.addEventListener('click', function(){
+      var facit = document.getElementById(knap.getAttribute('data-mål'));
+      var aaben = facit.style.display === 'block';
+      facit.style.display = aaben ? 'none' : 'block';
+      knap.textContent = aaben ? 'Hvad bør jeg se? ▾' : 'Skjul facit ▴';
     });
   });
 
@@ -202,7 +232,7 @@ footer a { color: var(--accent); }
     if (Object.keys(rigtige).length === 3) {
       try {
         var faerdige = JSON.parse(localStorage.getItem('aikort') || '[]');
-        if (faerdige.indexOf(1) === -1) { faerdige.push(1); }
+        if (faerdige.indexOf(MODUL) === -1) { faerdige.push(MODUL); }
         localStorage.setItem('aikort', JSON.stringify(faerdige));
       } catch(e) {}
       var resultat = document.getElementById('quiz-resultat');
