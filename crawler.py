@@ -1106,8 +1106,14 @@ main{{max-width:900px;margin:0 auto;padding:54px 24px 80px}}
 .tendens{{background:var(--blaek);color:#fff;border-radius:var(--radius);padding:34px 38px;margin:40px 0 0}}
 .tendens b{{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b3aaff;margin-bottom:12px}}
 .tendens p{{font-family:var(--font-display);font-size:clamp(18px,2.6vw,23px);font-weight:600;line-height:1.45}}
-.mail-boks{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin-top:22px;text-align:center;font-size:14.5px}}
-.mail-boks a{{color:var(--accent);font-weight:700}}
+.mail-boks{{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:26px 28px;margin-top:22px;text-align:center;font-size:14.5px}}
+.mail-titel{{display:block;font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:14px}}
+.tilmeld{{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}}
+.tilmeld input{{font:inherit;font-size:15px;padding:12px 18px;border:1px solid var(--linje);border-radius:999px;background:var(--bg);min-width:260px}}
+.tilmeld input:focus{{outline:2px solid var(--accent);border-color:transparent}}
+.tilmeld button{{font:inherit;font-size:14px;font-weight:800;padding:12px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}}
+.tilmeld button:hover{{background:#4a3bd6}}
+.mail-note{{display:block;margin-top:10px;font-size:12px;color:var(--blaek-svag)}}
 footer{{border-top:1px solid var(--linje);padding:30px;text-align:center;font-size:12px;color:var(--blaek-svag)}}
 footer a{{color:var(--accent)}}
 @media (max-width:680px){{.k,.k-flip{{flex-direction:column}}.k-billede{{flex:none;height:190px}}.omslag{{min-height:64vh}}}}
@@ -1135,8 +1141,14 @@ footer a{{color:var(--accent)}}
 <h2 class="ned-titel">Ugens <em>5 vigtigste</em> historier</h2>
 {kort_html}
 <div class="tendens"><b>Ugens røde tråd</b><p>{html.escape(d.get("tendens", ""))}</p></div>
-<div class="mail-boks">Vil du have ugens overblik hver fredag? Abonnér med din feed-læser:
-<a href="feed-uge.xml">ugens RSS-feed</a> — eller følg med her på siden.</div>
+<div class="mail-boks">
+<b class="mail-titel">Få ugens AI-overblik på mail — hver fredag, helt gratis</b>
+<form class="tilmeld" action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank">
+<input type="email" name="email" placeholder="din@email.dk" required>
+<button type="submit">Tilmeld</button>
+</form>
+<span class="mail-note">Én mail om ugen. Ingen spam. Afmeld med ét klik.</span>
+</div>
 </main>
 <footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="laer.html">Lær AI</a></footer>
 <!-- Cloudflare Web Analytics -->
@@ -1164,6 +1176,39 @@ def _uge_feed_xml(d: dict) -> str:
             f"<pubDate>{dato}</pubDate>"
             f"<description>{tekst}</description>"
             "</item></channel></rss>")
+
+
+
+
+def _send_nyhedsbrev(d: dict) -> None:
+    """Sender ugens overblik som nyhedsbrev via Buttondowns API (gratis plan).
+    Kræver secret'en BUTTONDOWN_API_KEY - ellers springes trinnet bare over."""
+    noegle = os.environ.get("BUTTONDOWN_API_KEY", "").strip()
+    if not noegle:
+        print("💌 BUTTONDOWN_API_KEY ikke sat - springer nyhedsbrevs-udsendelse over")
+        return
+    from urllib.parse import quote
+    dele = [d.get("indledning", ""), ""]
+    for nr, h in enumerate(d.get("historier", []), 1):
+        led = f"{SITE_URL}/#a=" + quote(h.get("link", ""), safe="")
+        dele += [f"## {nr}. {h.get('overskrift', '')}", "",
+                 h.get("tekst", ""), "", f"[Læs hele historien →]({led})", ""]
+    dele += ["---", "", f"**Ugens røde tråd:** {d.get('tendens', '')}", "",
+             f"God weekend! Læs mere på [ainyheder.com]({SITE_URL}) — "
+             f"og del gerne ugens overblik: {SITE_URL}/uge.html", "",
+             "*Du får denne mail, fordi du har tilmeldt dig Ugens AI-overblik.*"]
+    body = json.dumps({
+        "subject": f"Ugens AI-overblik: {d.get('rubrik', '')}",
+        "body": "\n".join(dele),
+        "status": "about_to_send",
+    }).encode()
+    try:
+        hent_url("https://api.buttondown.com/v1/emails", data=body,
+                 headers={"Authorization": f"Token {noegle}",
+                          "Content-Type": "application/json"})
+        print("💌 Nyhedsbrevet er sendt til abonnenterne")
+    except Exception as fejl:
+        print(f"💌 ⚠️ Nyhedsbrev fejlede: {type(fejl).__name__} - overblikket er stadig på sitet")
 
 
 def lav_ugens_overblik(artikler: list[dict]) -> None:
@@ -1239,6 +1284,7 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
     UGE_HTML.write_text(_uge_side_html(data), encoding="utf-8")
     UGE_FEED.write_text(_uge_feed_xml(data), encoding="utf-8")
     print(f"🗞️ Skrev Ugens overblik (uge {uge_nr}): {data['rubrik']}")
+    _send_nyhedsbrev(data)
 
 
 # ----- Hovedprogram ----------------------------------------------------------
