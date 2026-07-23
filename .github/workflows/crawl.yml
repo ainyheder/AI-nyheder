@@ -15,8 +15,8 @@ name: Crawl AI-nyheder
 
 on:
   schedule:
-    - cron: "0 4-21 * * *"   # hver time i dagtimerne (ca. 6-23 dansk tid)
-    - cron: "0 1 * * *"      # én natlig kørsel (ca. kl. 3 dansk tid)
+    - cron: "37 4-21 * * *"  # hver time i dagtimerne (ca. 6-23 dansk tid) — skævt minuttal, så GitHub ikke dropper kørslen
+    - cron: "37 1 * * *"     # én natlig kørsel (ca. kl. 3 dansk tid)
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
