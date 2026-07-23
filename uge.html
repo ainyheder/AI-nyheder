@@ -61,8 +61,14 @@ main{max-width:900px;margin:0 auto;padding:54px 24px 80px}
 .tendens{background:var(--blaek);color:#fff;border-radius:var(--radius);padding:34px 38px;margin:40px 0 0}
 .tendens b{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#b3aaff;margin-bottom:12px}
 .tendens p{font-family:var(--font-display);font-size:clamp(18px,2.6vw,23px);font-weight:600;line-height:1.45}
-.mail-boks{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:22px 26px;margin-top:22px;text-align:center;font-size:14.5px}
-.mail-boks a{color:var(--accent);font-weight:700}
+.mail-boks{background:var(--bg-kort);border:1px solid var(--linje);border-radius:var(--radius);padding:26px 28px;margin-top:22px;text-align:center;font-size:14.5px}
+.mail-titel{display:block;font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:14px}
+.tilmeld{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.tilmeld input{font:inherit;font-size:15px;padding:12px 18px;border:1px solid var(--linje);border-radius:999px;background:var(--bg);min-width:260px}
+.tilmeld input:focus{outline:2px solid var(--accent);border-color:transparent}
+.tilmeld button{font:inherit;font-size:14px;font-weight:800;padding:12px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}
+.tilmeld button:hover{background:#4a3bd6}
+.mail-note{display:block;margin-top:10px;font-size:12px;color:var(--blaek-svag)}
 footer{border-top:1px solid var(--linje);padding:30px;text-align:center;font-size:12px;color:var(--blaek-svag)}
 footer a{color:var(--accent)}
 @media (max-width:680px){.k,.k-flip{flex-direction:column}.k-billede{flex:none;height:190px}.omslag{min-height:64vh}}
@@ -130,8 +136,14 @@ footer a{color:var(--accent)}
 <span class="k-laes">Læs hele historien →</span>
 </div></a>
 <div class="tendens"><b>Ugens røde tråd</b><p>Ugens røde tråd er de massive og næsten uforståelige mængder penge og energi, som hældes i AI-udviklingen lige nu. Både det vilde hacker-udslip og de skjulte milliardregnskaber viser en branche under enormt pres. Hold øje med, hvordan energiforbruget og de nye politiske stramninger vil påvirke priserne for almindelige forbrugere i den kommende tid.</p></div>
-<div class="mail-boks">Vil du have ugens overblik hver fredag? Abonnér med din feed-læser:
-<a href="feed-uge.xml">ugens RSS-feed</a> — eller følg med her på siden.</div>
+<div class="mail-boks">
+<b class="mail-titel">Få ugens AI-overblik på mail — hver fredag, helt gratis</b>
+<form class="tilmeld" action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank">
+<input type="email" name="email" placeholder="din@email.dk" required>
+<button type="submit">Tilmeld</button>
+</form>
+<span class="mail-note">Én mail om ugen. Ingen spam. Afmeld med ét klik.</span>
+</div>
 </main>
 <footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="laer.html">Lær AI</a></footer>
 <!-- Cloudflare Web Analytics -->
