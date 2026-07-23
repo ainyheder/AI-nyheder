@@ -725,7 +725,7 @@ function esc(s) { const d = document.createElement("div"); d.textContent = s ?? 
 function fed(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
 function overskrift(a) { return a.rubrik ? esc(a.rubrik) : esc(a.titel) + '<span class="en-chip">EN</span>'; }
 function brodtekst(a) {
-  if (a.resume_da) return esc(a.resume_da);
+  if (a.resume_da) return fed(a.resume_da);   // ** bliver til fed skrift, ikke rå stjerner
   const t = a.resume || "";
   return esc(t.length > 140 ? t.slice(0, 140).split(" ").slice(0, -1).join(" ") + "…" : t);
 }
