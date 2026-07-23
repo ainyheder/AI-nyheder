@@ -15,7 +15,7 @@ name: Crawl AI-nyheder
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # hver 6. time (UTC)
+    - cron: "0 */3 * * *"   # hver 3. time (UTC)
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
