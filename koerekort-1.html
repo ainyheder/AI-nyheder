@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · AI-kørekortet · Modul 1</title>
+<meta name="description" content="Modul 1 af AI-kørekortet: Hvad er AI egentlig? Forstå hvad en chatbot gør, hvad den kan og ikke kan — med øvelse og quiz. Gratis og på letlæst dansk.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --groen: #2e9e5b; --groen-svag: #e3f4ea; --roed: #c04545; --roed-svag: #fbeaea;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+.modul-tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 36px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 40px 0 12px; letter-spacing: -.01em; }
+h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 8px; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+li { font-size: 15.5px; line-height: 1.7; margin: 0 0 8px 22px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+/* Øvelse */
+.oevelse { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px 26px; margin: 20px 0; box-shadow: var(--skygge); }
+.oevelse .maerkat { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.prompt-kasse { background: var(--bg); border: 1px dashed var(--linje); border-radius: 10px;
+  padding: 12px 16px; font-size: 14px; margin: 12px 0; font-style: italic; }
+.kopier { font-family: var(--font-ui); font-size: 13px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border: none; border-radius: 999px; padding: 8px 18px; cursor: pointer; }
+.kopier:hover { background: var(--accent); color: #fff; }
+
+/* Quiz */
+.quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 20px 24px; margin: 14px 0; box-shadow: var(--skygge); }
+.quiz-sp .sp { font-weight: 700; font-size: 15.5px; margin-bottom: 12px; }
+.svar { display: block; width: 100%; text-align: left; font-family: var(--font-ui); font-size: 14.5px;
+  background: var(--bg); border: 1px solid var(--linje); border-radius: 10px; padding: 10px 14px;
+  margin: 8px 0; cursor: pointer; transition: border-color .15s; }
+.svar:hover { border-color: var(--accent); }
+.svar.rigtig { background: var(--groen-svag); border-color: var(--groen); font-weight: 700; }
+.svar.forkert { background: var(--roed-svag); border-color: var(--roed); }
+.svar:disabled { cursor: default; }
+.forklaring { display: none; font-size: 14px; color: var(--blaek-svag); margin-top: 10px;
+  padding-top: 10px; border-top: 1px dashed var(--linje); }
+.quiz-resultat { display: none; text-align: center; background: var(--bg-kort); border: 2px solid var(--groen);
+  border-radius: var(--radius); padding: 28px; margin: 24px 0; box-shadow: var(--skygge); }
+.quiz-resultat h3 { font-size: 22px; margin-top: 0; }
+.knap-videre { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; color: #fff;
+  background: var(--accent); padding: 12px 26px; border-radius: 999px; margin-top: 10px; }
+.knap-videre:hover { opacity: .9; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="koerekort.html">← Kørekortet</a>
+  </div>
+</div>
+<main>
+<span class="modul-tag">Modul 1 af 7 · ca. 10 min</span>
+<h1>Hvad er AI egentlig?</h1>
+<p class="manchet">Før du kan bruge AI klogt, skal du vide, hvad der faktisk sker, når du skriver til en chatbot. Det er nemmere, end du tror — og når du forstår det, forstår du også, hvorfor AI nogle gange tager fejl.</p>
+
+<h2>En meget velbevandret gætte-maskine</h2>
+<p>En chatbot som ChatGPT, Gemini eller Claude er ikke et opslagsværk, og den "tænker" ikke som et menneske. Den er en <strong>sprogmodel</strong>: et program, der har læst enorme mængder tekst — bøger, artikler, hjemmesider — og er blevet ekstremt god til én ting: <strong>at gætte, hvilket ord der passer bedst som det næste.</strong></p>
+<p>Når du spørger "Hvad er hovedstaden i Frankrig?", slår den ikke op i et leksikon. Den har set sætningen så mange gange i sin træning, at "Paris" er det oplagte næste ord. Det lyder simpelt, men når man gætter næste ord milliarder af gange på baggrund af næsten alt, mennesker har skrevet, opstår der noget, der minder forbløffende meget om forståelse.</p>
+<div class="boks"><strong>Husk denne ene sætning:</strong> AI'en skriver det, der er <em>sandsynligt</em> — ikke nødvendigvis det, der er <em>sandt</em>. Det er nøglen til alt, hvad du lærer i resten af kørekortet.</div>
+
+<h2>Hvad den er god til — og dårlig til</h2>
+<h3>God til 💪</h3>
+<ul>
+<li><strong>Sprog:</strong> skrive udkast, forkorte, oversætte, ændre tone, forklare svære tekster med lette ord.</li>
+<li><strong>Idéer og overblik:</strong> brainstorme, lave planer, stille de spørgsmål, du ikke selv havde tænkt på.</li>
+<li><strong>Tålmodighed:</strong> den bliver aldrig træt af at forklare det samme på en ny måde, kl. 3 om natten.</li>
+</ul>
+<h3>Dårlig til ⚠️</h3>
+<ul>
+<li><strong>Præcise fakta:</strong> tal, datoer, navne og kilder kan være gættet forkert — med fuld selvsikkerhed. Det kaldes at <a href="ordbog.html#hallucination" style="color:var(--accent)">hallucinere</a>.</li>
+<li><strong>Det nyeste:</strong> modellen er trænet på tekst frem til et bestemt tidspunkt og kender ikke nødvendigvis gårsdagens nyheder (medmindre den søger på nettet).</li>
+<li><strong>At sige "det ved jeg ikke":</strong> den vil hellere gætte end indrømme tvivl. Dét skal du kompensere for.</li>
+</ul>
+
+<h2>Prøv det selv (2 minutter)</h2>
+<div class="oevelse">
+<span class="maerkat">Øvelse</span>
+<p style="margin-top:8px">Åbn <a href="https://chatgpt.com" target="_blank" rel="noopener" style="color:var(--accent)">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener" style="color:var(--accent)">Gemini</a> eller <a href="https://claude.ai" target="_blank" rel="noopener" style="color:var(--accent)">Claude</a>, og indsæt denne prompt:</p>
+<div class="prompt-kasse" id="oevelse-prompt">"Forklar med højst 100 ord, hvordan en sprogmodel virker — som om jeg var 10 år. Slut af med at nævne én ting, du som AI er dårlig til."</div>
+<button class="kopier" data-mål="oevelse-prompt">Kopiér prompten</button>
+<p style="margin-top:14px; font-size:14px; color:var(--blaek-svag)">Læg mærke til to ting: hvor let den forklarer sig selv — og at den faktisk godt <em>ved</em>, hvad den er dårlig til, når du spørger direkte.</p>
+</div>
+
+<h2>Quiz: Har du fat i det?</h2>
+<p>Tre hurtige spørgsmål. Svar rigtigt på alle tre for at gennemføre modulet — du kan bare prøve igen, hvis du rammer forkert.</p>
+
+<div class="quiz-sp" data-sp="1">
+  <div class="sp">1. Hvad gør en sprogmodel grundlæggende, når den svarer dig?</div>
+  <button class="svar" data-rigtig="nej">Den slår svaret op i en stor database med fakta</button>
+  <button class="svar" data-rigtig="ja">Den gætter, hvilke ord der passer bedst som de næste</button>
+  <button class="svar" data-rigtig="nej">Den ringer til en menneskelig ekspert</button>
+  <div class="forklaring">Rigtigt svar: den forudsiger næste ord ud fra alt, den har læst. Derfor er svaret <em>sandsynligt</em> — men ikke garanteret sandt.</div>
+</div>
+
+<div class="quiz-sp" data-sp="2">
+  <div class="sp">2. AI'en svarer selvsikkert med et årstal, du ikke kender. Hvad gør du?</div>
+  <button class="svar" data-rigtig="nej">Stoler på det — den lød meget sikker</button>
+  <button class="svar" data-rigtig="nej">Opgiver at bruge AI til noget som helst</button>
+  <button class="svar" data-rigtig="ja">Dobbelttjekker årstallet, før jeg handler på det</button>
+  <div class="forklaring">Selvsikkerhed er ikke det samme som korrekthed. Brug AI til udkast og forklaringer — og tjek vigtige fakta, tal og datoer selv.</div>
+</div>
+
+<div class="quiz-sp" data-sp="3">
+  <div class="sp">3. Hvilken opgave er en chatbot BEDST til?</div>
+  <button class="svar" data-rigtig="ja">"Gør denne mail venligere i tonen"</button>
+  <button class="svar" data-rigtig="nej">"Hvad kostede en liter mælk i Netto i går?"</button>
+  <button class="svar" data-rigtig="nej">"Hvad er telefonnummeret til min læge?"</button>
+  <div class="forklaring">Sprogopgaver er dens hjemmebane. Dagsaktuelle priser og konkrete opslag som telefonnumre er lige præcis dér, den gætter — og gætter forkert.</div>
+</div>
+
+<div class="quiz-resultat" id="quiz-resultat">
+  <h3>🎉 Modul 1 gennemført!</h3>
+  <p>Du ved nu mere om, hvordan AI virker, end de fleste. Din fremdrift er gemt her i browseren.</p>
+  <a class="knap-videre" href="koerekort.html">Tilbage til kørekortet →</a>
+</div>
+
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<script>
+(function(){
+  // Kopiér-knapper
+  document.querySelectorAll('.kopier').forEach(function(knap){
+    knap.addEventListener('click', function(){
+      var tekst = document.getElementById(knap.getAttribute('data-mål')).textContent.replace(/^"|"$/g, '');
+      navigator.clipboard.writeText(tekst).then(function(){
+        knap.textContent = 'Kopieret ✓';
+        setTimeout(function(){ knap.textContent = 'Kopiér prompten'; }, 2000);
+      });
+    });
+  });
+
+  // Quiz
+  var rigtige = {};
+  document.querySelectorAll('.quiz-sp').forEach(function(sp){
+    sp.querySelectorAll('.svar').forEach(function(knap){
+      knap.addEventListener('click', function(){
+        var erRigtig = knap.getAttribute('data-rigtig') === 'ja';
+        if (erRigtig) {
+          sp.querySelectorAll('.svar').forEach(function(k){ k.disabled = true; k.classList.remove('forkert'); });
+          knap.classList.add('rigtig');
+          sp.querySelector('.forklaring').style.display = 'block';
+          rigtige[sp.getAttribute('data-sp')] = true;
+          tjekFaerdig();
+        } else {
+          knap.classList.add('forkert');
+          knap.disabled = true;
+        }
+      });
+    });
+  });
+
+  function tjekFaerdig(){
+    if (Object.keys(rigtige).length === 3) {
+      try {
+        var faerdige = JSON.parse(localStorage.getItem('aikort') || '[]');
+        if (faerdige.indexOf(1) === -1) { faerdige.push(1); }
+        localStorage.setItem('aikort', JSON.stringify(faerdige));
+      } catch(e) {}
+      var resultat = document.getElementById('quiz-resultat');
+      resultat.style.display = 'block';
+      if (resultat.scrollIntoView) { resultat.scrollIntoView({behavior:'smooth', block:'center'}); }
+    }
+  }
+})();
+</script>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

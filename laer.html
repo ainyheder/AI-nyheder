@@ -56,6 +56,16 @@ strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--ac
 .net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
 footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
 footer a { color: var(--accent); }
+.hero-kort { display: block; background: var(--blaek); color: var(--bg); border-radius: var(--radius);
+  padding: 28px 30px; margin-bottom: 8px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s; }
+.hero-kort:hover { transform: translateY(-3px); }
+.hero-kort .maerkat { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; background: var(--accent); color: #fff; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+.hero-kort h2 { font-family: var(--font-display); font-weight: 900; font-size: clamp(22px, 4vw, 30px);
+  margin: 0 0 8px; letter-spacing: -.02em; }
+.hero-kort p { font-size: 14.5px; color: #c9c4b8; margin: 0; max-width: 60ch; }
+.hero-kort .pil { color: var(--accent); font-weight: 700; font-size: 14px; display: inline-block; margin-top: 12px; }
 </style>
 </head>
 <body>
@@ -72,6 +82,12 @@ footer a { color: var(--accent); }
 <main>
 <h1>Lær AI — uden teknisk tågesnak</h1>
 <p class="manchet">Nyhederne fortæller dig, HVAD der sker. Denne sektion lærer dig at bruge det. Alt er skrevet på letlæst dansk til folk, der gerne vil følge med — ikke til teknikere.</p>
+<a class="hero-kort" href="koerekort.html">
+  <span class="maerkat">Nyt</span>
+  <h2>Tag AI-kørekortet 🪪</h2>
+  <p>Syv korte moduler med øvelser og quiz, der tager dig fra nysgerrig til tryg AI-bruger. Gratis, uden tilmelding og i dit eget tempo.</p>
+  <span class="pil">Start med modul 1 →</span>
+</a>
 <div class="kort-net">
   <a class="net-kort" href="guide-igang.html"><span class="ikon">🚀</span><h3>Kom i gang med AI</h3><p>Fra nul til din første nyttige AI-samtale på ti minutter. Gratis og uden teknisk snilde.</p></a>
   <a class="net-kort" href="guide-prompts.html"><span class="ikon">✍️</span><h3>Skriv gode prompts</h3><p>Fem greb, der gør dine AI-svar markant bedre — med eksempler, du kan stjæle.</p></a>
