@@ -183,7 +183,7 @@ footer a { color: var(--accent); }
   <h3 id="dagens-titel"></h3>
   <pre id="dagens-tekst"></pre>
   <button id="dagens-kopier">Kopiér dagens prompt</button>
-  <p class="note">Udfyld de [firkantede felter] med dine egne oplysninger. Vil du have flere? <a href="prompts.html" style="color:var(--accent); font-weight:700;">Hele biblioteket ligger her</a>.</p>
+  <p class="note">Skrevet af redaktionens AI — én ny hver dag. Udfyld de [firkantede felter] med dine egne oplysninger. Alle tidligere ligger i <a href="prompt-arkiv.html" style="color:var(--accent); font-weight:700;">Prompt-kartoteket</a>.</p>
 </div>
 
 <h2>Værktøjskassen</h2>
@@ -194,6 +194,7 @@ footer a { color: var(--accent); }
   <a class="net-kort" href="guide-sikkerhed.html"><span class="ikon">🛡️</span><h3>Brug AI sikkert</h3><p>Hvad må man dele? Kan man stole på svarene? Seks tommelfingerregler.</p></a>
   <a class="net-kort" href="ordbog.html"><span class="ikon">📖</span><h3>AI-ordbogen</h3><p>Knap 50 begreber — fra LLM til hallucination — forklaret kort og klart.</p></a>
   <a class="net-kort" href="prompts.html"><span class="ikon">🧰</span><h3>Prompt-biblioteket</h3><p>Færdige prompts til madplaner, jobansøgninger, økonomi og meget mere. Kopiér og brug.</p></a>
+  <a class="net-kort" href="prompt-arkiv.html"><span class="ikon">🗂️</span><h3>Prompt-kartoteket</h3><p>Én ny AI-skrevet prompt hver dag — hele samlingen, søgbar og klar til kopiering.</p></a>
   <a class="net-kort" href="faq.html"><span class="ikon">💬</span><h3>Spørgsmål & svar</h3><p>Er AI farligt? Tager den mit job? Ærlige svar på det, alle spørger om.</p></a>
 </div>
 
@@ -219,9 +220,21 @@ footer a { color: var(--accent); }
     ['Stil mig spørgsmål først', 'Du er en nøgtern rådgiver. Jeg vil gerne have hjælp til [dit mål]. Stil mig først 5 korte spørgsmål én ad gangen, så du forstår min situation - og giv mig derefter en konkret plan.'],
     ['Djævlens advokat', 'Jeg overvejer at [beslutning]. Argumentér først FOR, så IMOD - og stil mig til sidst de tre spørgsmål, jeg burde kunne svare på, før jeg beslutter mig.']
   ];
-  var dag = Math.floor(Date.now() / 86400000) % PROMPTS.length;
-  document.getElementById('dagens-titel').textContent = PROMPTS[dag][0];
-  document.getElementById('dagens-tekst').textContent = PROMPTS[dag][1];
+  function vis(titel, tekst){
+    document.getElementById('dagens-titel').textContent = titel;
+    document.getElementById('dagens-tekst').textContent = tekst;
+  }
+  function reserve(){
+    var dag = Math.floor(Date.now() / 86400000) % PROMPTS.length;
+    vis(PROMPTS[dag][0], PROMPTS[dag][1]);
+  }
+  // Hent dagens AI-skrevne prompt fra kartoteket; fald tilbage på den faste liste
+  if (window.fetch) {
+    fetch('data/prompts.json').then(function(r){ return r.json(); }).then(function(d){
+      var p = d && d.prompts && d.prompts[0];
+      if (p && p.titel && p.tekst) { vis(p.titel, p.tekst); } else { reserve(); }
+    }).catch(reserve);
+  } else { reserve(); }
   document.getElementById('dagens-kopier').addEventListener('click', function(){
     var knap = this;
     navigator.clipboard.writeText(document.getElementById('dagens-tekst').textContent).then(function(){

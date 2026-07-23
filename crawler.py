@@ -528,6 +528,25 @@ def dybe_briefs(artikler: list[dict]) -> None:
         print(f"✏️  Redaktøren fik omskrevet {rettet} af {len(med_tekst)} briefs")
 
 
+def _som_tekst(v) -> str:
+    """Gør et element fra et AI-svar til ren tekst. Modellerne leverer af og
+    til liste-punkter som objekter ({'tal': ..., 'sætning': ...}) i stedet for
+    strenge - uden dette værn ender Python-krøller som rå tekst på sitet."""
+    if isinstance(v, dict):
+        for noegle in ("sætning", "saetning", "tekst", "punkt", "detalje", "label"):
+            if v.get(noegle):
+                return str(v[noegle]).strip()
+        return " - ".join(str(x).strip() for x in v.values() if str(x).strip())
+    s = str(v).strip()
+    if s.startswith("{") and s.endswith("}"):
+        try:
+            import ast
+            return _som_tekst(ast.literal_eval(s))
+        except (ValueError, SyntaxError):
+            pass
+    return s
+
+
 def _anvend_brief(a: dict, r: dict, billeder: list[dict]) -> None:
     """Lægger et AI-brief ind på artiklen (bruges både til første udkast
     og til redaktørens omskrivninger)."""
@@ -562,9 +581,9 @@ def _anvend_brief(a: dict, r: dict, billeder: list[dict]) -> None:
             a["noegletal"] = [{"tal": str(n.get("tal", "")).strip(),
                                "label": str(n.get("label", "")).strip()}
                               for n in r.get("noegletal", []) if n.get("tal")][:5]
-            a["detaljer"] = [str(d).strip() for d in r.get("detaljer", [])][:7]
+            a["detaljer"] = [t for t in (_som_tekst(d) for d in r.get("detaljer", [])) if t][:7]
             a["betydning"] = str(r.get("betydning", "")).strip()
-            a["pointer"] = [str(p).strip() for p in r.get("pointer", [])][:4]
+            a["pointer"] = [t for t in (_som_tekst(p) for p in r.get("pointer", [])) if t][:4]
             a["billedmotiv"] = str(r.get("billedmotiv", "")).strip()
 
 
@@ -1298,6 +1317,69 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
     _send_nyhedsbrev(data)
 
 
+# ----- Dagens prompt (prompt-kartoteket) -------------------------------------
+
+PROMPT_ARKIV = ROOT / "data" / "prompts.json"
+PROMPT_KATEGORIER = ["Hverdag", "Job", "Økonomi", "Skole", "Tekst", "Kreativt", "Sundhed & livet"]
+
+SYSTEM_KARTOTEK = """Du skriver dagens prompt til ainyheder.com - et dansk site, der lærer helt almindelige danskere at bruge AI.
+Svar KUN med ét JSON-objekt: {"titel": "...", "kategori": "...", "tekst": "...", "hvorfor": "..."}
+Krav:
+- titel: fængende, højst 5 ord, på dansk.
+- kategori: præcis én af: Hverdag, Job, Økonomi, Skole, Tekst, Kreativt, Sundhed & livet.
+- tekst: selve prompten på dansk (2-6 sætninger) med [firkantede felter] til brugerens egne oplysninger. Konkret, umiddelbart brugbar og uden teknisk snak. Brug gerne stærke greb: giv AI'en en rolle, bed den stille opklarende spørgsmål først, kræv et bestemt format.
+- hvorfor: én kort sætning om, hvad der gør prompten smart.
+- VIGTIGT: Lav noget nyt - undgå emner og vinkler fra titellisten, du får. Aldrig medicinsk/juridisk rådgivning som facit (kun forberedelse til fagfolk)."""
+
+
+def lav_dagens_prompt() -> None:
+    """Skriver ét nyt AI-forfattet prompt i kartoteket pr. dag (dansk tid).
+    Fejler stille - kartoteket må aldrig vælte selve crawlet."""
+    if not API_KEY:
+        return
+    try:
+        try:
+            from zoneinfo import ZoneInfo
+            dag = datetime.now(ZoneInfo("Europe/Copenhagen")).date().isoformat()
+        except Exception:
+            dag = datetime.now(timezone.utc).date().isoformat()
+
+        arkiv = {"prompts": []}
+        if PROMPT_ARKIV.exists():
+            try:
+                arkiv = json.loads(PROMPT_ARKIV.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                pass
+        if any(p.get("dato") == dag for p in arkiv.get("prompts", [])):
+            return  # dagens prompt findes allerede
+
+        titler = [p.get("titel", "") for p in arkiv.get("prompts", [])][:60]
+        r = parse_json_svar(kald_ai(
+            SYSTEM_KARTOTEK,
+            "Dags dato: " + dag + ". Tidligere titler (undgå gentagelser): "
+            + json.dumps(titler, ensure_ascii=False),
+            600))
+        titel = str(r.get("titel", "")).strip()
+        tekst = str(r.get("tekst", "")).strip()
+        hvorfor = str(r.get("hvorfor", "")).strip()
+        kategori = str(r.get("kategori", "")).strip()
+        if kategori not in PROMPT_KATEGORIER:
+            kategori = "Hverdag"
+        if not titel or len(tekst) < 40:
+            print("✨ Dagens prompt: svaret var for tyndt - springer over i dag")
+            return
+        arkiv.setdefault("prompts", []).insert(0, {
+            "dato": dag, "titel": titel, "kategori": kategori,
+            "tekst": tekst, "hvorfor": hvorfor,
+        })
+        PROMPT_ARKIV.parent.mkdir(exist_ok=True)
+        PROMPT_ARKIV.write_text(json.dumps(arkiv, ensure_ascii=False, indent=1),
+                                encoding="utf-8")
+        print(f"✨ Dagens prompt skrevet: \"{titel}\" ({kategori})")
+    except Exception as e:
+        print(f"✨ Dagens prompt sprang over ({e})")
+
+
 # ----- Hovedprogram ----------------------------------------------------------
 
 def main() -> None:
@@ -1331,9 +1413,12 @@ def main() -> None:
 
     # Cache af tidligere omskrivninger (nøgle = link)
     cache: dict = {}
+    foerst_set_gammel: dict = {}
     if OUTPUT_FIL.exists():
         try:
             for a in json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))["artikler"]:
+                if a.get("foerst_set") or a.get("dato"):
+                    foerst_set_gammel[a["link"]] = a.get("foerst_set") or a.get("dato")
                 if a.get("rubrik"):
                     cache[a["link"]] = {"rubrik": a["rubrik"],
                                         "resume_da": a.get("resume_da", ""),
@@ -1352,6 +1437,15 @@ def main() -> None:
                                         "prio": a.get("prio")}
         except (json.JSONDecodeError, KeyError):
             pass
+
+    # "Først set": hvornår crawleren så artiklen første gang. Der sorteres efter
+    # dette i stedet for kildens udgivelsestid, så nyopdagede artikler altid
+    # lander øverst - i stedet for at flette sig ind langt nede i listen.
+    for a in unikke:
+        a["foerst_set"] = foerst_set_gammel.get(a["link"]) or nu.isoformat()
+    unikke.sort(key=lambda a: (a["foerst_set"],
+                               a["dato"].isoformat() if a["dato"] else ""),
+                reverse=True)
 
     print()
     # Kategorien "Benchmarks" er nedlagt - gamle artikler flyttes til Lanceringer.
@@ -1384,7 +1478,8 @@ def main() -> None:
                 a[felt] = kort_ai(a[felt])
         for felt in ("pointer", "detaljer"):
             if a.get(felt):
-                a[felt] = [kort_ai(p) for p in a[felt]]
+                # _som_tekst reparerer også gamle cachede punkter, der ligger som dict-tekst
+                a[felt] = [kort_ai(_som_tekst(p)) for p in a[felt] if _som_tekst(p)]
         if a.get("sektioner"):
             for sek in a["sektioner"]:
                 sek["overskrift"] = kort_ai(sek["overskrift"])
@@ -1412,6 +1507,7 @@ def main() -> None:
           f"{OUTPUT_FIL.relative_to(ROOT)}")
     lav_rss(unikke)
     lav_ugens_overblik(unikke)
+    lav_dagens_prompt()
 
 
 if __name__ == "__main__":

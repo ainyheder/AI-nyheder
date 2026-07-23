@@ -250,6 +250,11 @@ a.pill { text-decoration: none; display: inline-block; }
   background: #f4b400; color: #191714;
   border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
 }
+.ny-chip {
+  font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
+  background: var(--accent); color: #fff;
+  border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
+}
 .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: var(--blaek); color: var(--bg);
@@ -801,10 +806,12 @@ function filtrerede() {
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
+    // Grupperer pr. dag efter hvornår VI så artiklen (foerst_set) - så en
+    // nyopdaget artikel ikke gemmer sig nede mellem gårsdagens læste.
     liste.sort((x, y) =>
-      dagNoegle(y.dato).localeCompare(dagNoegle(x.dato)) ||
+      dagNoegle(y.foerst_set || y.dato).localeCompare(dagNoegle(x.foerst_set || x.dato)) ||
       prioAf(y) - prioAf(x) ||
-      new Date(y.dato || 0) - new Date(x.dato || 0));
+      new Date(y.foerst_set || y.dato || 0) - new Date(x.foerst_set || x.dato || 0));
   }
   return liste;
 }
@@ -844,11 +851,9 @@ function aabnLaeser(a) {
        når AI-omskrivningen har behandlet artiklen. Indtil da kan du læse originalen herunder.</p>`;
   }
 
-  // Højre kolonne: nøgletal øverst, så Detaljerne i boksen, så "Hvad betyder det for dig?"
+  // Højre kolonne: Detaljerne i boksen, så "Hvad betyder det for dig?"
+  // (Nøgletal-fliserne er fjernet - tallene står allerede i Detaljerne.)
   const sideDele = [];
-  if (a.noegletal && a.noegletal.length)
-    sideDele.push(`<div class="stat-raekke">${a.noegletal.map(n =>
-      `<div class="stat-flise"><div class="stat-tal">${esc(n.tal)}</div><div class="stat-label">${esc(n.label)}</div></div>`).join("")}</div>`);
   if (a.detaljer && a.detaljer.length)
     sideDele.push(`<div class="side-boks"><h4>Detaljerne</h4>
       <ul class="laeser-detaljer">${a.detaljer.map(d => `<li>${fed(d)}</li>`).join("")}</ul></div>`);
@@ -942,8 +947,15 @@ function kortHtml(a, id, stor = false) {
   </a>`;
 }
 
+function erNyankommet(a) {
+  // Set af crawleren inden for de seneste 3 timer
+  if (!a.foerst_set) return false;
+  return Date.now() - new Date(a.foerst_set).getTime() < 3 * 3600 * 1000;
+}
+
 function artChips(a) {
   let c = "";
+  if (erNyankommet(a)) c += '<span class="ny-chip">NY</span>';
   if ((a.prio ?? 0) >= 8) c += '<span class="vigtig-chip">★ Vigtig</span>';
   if (a.andre && a.andre.length) c += `<span class="flere-chip">+${a.andre.length} kilder</span>`;
   if (!a.rubrik) c += '<span class="en-chip">EN</span>';

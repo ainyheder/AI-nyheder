@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Prompt-kartoteket</title>
+<meta name="description" content="Prompt-kartoteket: Hver dag skriver vores AI en ny, gennemtænkt prompt til hverdagen — og alle gemmes her. Søg, filtrér og kopiér.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 26px; max-width: 64ch; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+.sog-felt { width: 100%; padding: 13px 18px; font: inherit; font-size: 15px;
+  border: 1px solid var(--linje); border-radius: 999px; background: var(--bg-kort); margin-bottom: 14px; }
+.sog-felt:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.filter-raekke { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.filter { font-family: var(--font-ui); font-size: 13px; font-weight: 700; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: 999px; padding: 7px 15px; cursor: pointer; }
+.filter:hover { border-color: var(--accent); color: var(--accent); }
+.filter.aktiv { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.arkiv-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.p-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px;
+  padding: 18px 20px; display: flex; flex-direction: column; }
+.p-kort.nyeste { border: 2px solid var(--accent); grid-column: 1 / -1; }
+.p-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+.p-kat { font-size: 11.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); border-radius: 999px; padding: 3px 10px; }
+.p-dato { font-size: 12px; color: var(--blaek-svag); font-weight: 600; }
+.p-ny { font-size: 11.5px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 999px; padding: 3px 10px; }
+.p-kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 0 0 8px; }
+.p-kort pre { white-space: pre-wrap; font: 13.5px/1.6 var(--font-ui); color: var(--blaek);
+  background: var(--bg); border-radius: 10px; padding: 12px 14px; flex: 1; margin-bottom: 10px; }
+.p-hvorfor { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; margin-bottom: 12px; }
+.kopier { align-self: flex-start; border: 1px solid var(--linje); background: var(--bg-kort); color: var(--blaek);
+  font: inherit; font-size: 12.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.kopier:hover { border-color: var(--accent); color: var(--accent); }
+.kopier.ok { background: #1e9e6a; border-color: #1e9e6a; color: #fff; }
+.tom { display: none; text-align: center; padding: 40px 20px; color: var(--blaek-svag); font-size: 15px; }
+.p-punkt { display: flex; align-items: center; gap: 12px; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: 14px; padding: 14px 18px; cursor: pointer;
+  font: inherit; text-align: left; width: 100%; transition: transform .12s, border-color .12s; }
+.p-punkt:hover { transform: translateY(-2px); border-color: var(--accent); }
+.p-punkt .titel { font-family: var(--font-display); font-weight: 800; font-size: 15.5px; }
+.p-punkt .lokke { font-size: 12.5px; color: var(--blaek-svag); margin-top: 1px; }
+.p-punkt .aabn { margin-left: auto; flex: none; color: var(--accent); font-weight: 800; font-size: 16px; }
+.modal-bg { display: none; position: fixed; inset: 0; z-index: 200;
+  background: rgba(25, 23, 20, .55); backdrop-filter: blur(4px);
+  align-items: center; justify-content: center; padding: 20px; }
+.modal-bg.aaben { display: flex; }
+.modal { background: var(--bg); border-radius: 22px; max-width: 660px; width: 100%;
+  max-height: 88vh; overflow-y: auto; padding: 30px 32px; position: relative;
+  box-shadow: 0 24px 80px rgba(25,23,20,.35); animation: modal-ind .22s ease-out; }
+@keyframes modal-ind { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+.modal-luk { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--linje); background: var(--bg-kort); font-size: 15px; font-weight: 700;
+  cursor: pointer; color: var(--blaek-svag); }
+.modal-luk:hover { border-color: var(--accent); color: var(--accent); }
+.modal h3 { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.02em; margin-bottom: 6px; }
+.modal .m-hvorfor { font-size: 14px; color: var(--blaek-svag); font-style: italic; margin-bottom: 16px; }
+.modal pre { white-space: pre-wrap; font: 14.5px/1.65 var(--font-ui); color: var(--blaek);
+  background: var(--bg-kort); border: 1px dashed var(--linje); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+.modal .m-kopier { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff;
+  background: var(--accent); border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; }
+.modal .m-kopier:hover { opacity: .9; }
+.modal .m-kopier.ok { background: #1e9e6a; }
+.modal .m-tip { font-size: 12.5px; color: var(--blaek-svag); margin: 12px 0 0; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="laer.html">← Lær AI</a>
+  </div>
+</div>
+<main>
+<span class="kicker">Kartotek · én ny prompt hver dag · skrevet af vores AI</span>
+<h1>Prompt-kartoteket 🗂️</h1>
+<p class="manchet">Hver dag skriver redaktionens AI én ny, gennemtænkt prompt til hverdagen — og alle sammen gemmes her, så kartoteket vokser dag for dag. Søg, filtrér på kategori, kopiér og brug. Udfyld selv de [firkantede felter].</p>
+
+<input class="sog-felt" id="arkivSog" type="search" placeholder="Søg i kartoteket … fx madplan, jobsamtale, budget">
+<div class="filter-raekke" id="filterRaekke"><button class="filter aktiv" data-kat="">Alle</button></div>
+
+<div class="arkiv-net" id="arkivNet"></div>
+<div class="tom" id="arkivTom"></div>
+
+<div class="boks" style="margin-top:30px;"><strong>Psst:</strong> De 17 klassikere — madplanen, jobansøgningen, talen til festen — ligger fortsat i <a href="prompts.html" style="color:var(--accent); font-weight:700;">prompt-biblioteket</a>. Kartoteket her er det, der vokser hver dag.</div>
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="modal-luk" id="modalLuk" aria-label="Luk">✕</button>
+    <div class="p-top"><span class="p-kat" id="mKat"></span> <span class="p-dato" id="mDato"></span></div>
+    <h3 id="mTitel"></h3>
+    <p class="m-hvorfor" id="mHvorfor"></p>
+    <pre id="mTekst"></pre>
+    <button class="m-kopier" id="mKopier">Kopiér prompten</button>
+    <p class="m-tip">Udfyld de [firkantede felter] med dine egne oplysninger, før du sender. Virker i ChatGPT, Gemini og Claude.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var net = document.getElementById('arkivNet');
+  var tom = document.getElementById('arkivTom');
+  var filterRaekke = document.getElementById('filterRaekke');
+  var alle = [];
+  var aktivKat = '';
+
+  function undgaaHtml(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+  function datoTekst(iso){
+    try {
+      var d = new Date(iso + 'T12:00:00');
+      return d.toLocaleDateString('da-DK', { day: 'numeric', month: 'short', year: 'numeric' });
+    } catch(e) { return iso; }
+  }
+
+  var bg = document.getElementById('modalBg');
+  var aktuel = null;
+  function aabnModal(p){
+    aktuel = p;
+    document.getElementById('mKat').textContent = p.kategori || 'Hverdag';
+    document.getElementById('mDato').textContent = datoTekst(p.dato);
+    document.getElementById('mTitel').textContent = p.titel;
+    document.getElementById('mHvorfor').textContent = p.hvorfor ? '💡 ' + p.hvorfor : '';
+    document.getElementById('mTekst').textContent = p.tekst;
+    var k = document.getElementById('mKopier');
+    k.classList.remove('ok'); k.textContent = 'Kopiér prompten';
+    bg.classList.add('aaben');
+    document.body.style.overflow = 'hidden';
+  }
+  function lukModal(){ bg.classList.remove('aaben'); document.body.style.overflow = ''; aktuel = null; }
+  document.getElementById('modalLuk').addEventListener('click', lukModal);
+  bg.addEventListener('click', function(e){ if (e.target === bg) lukModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && bg.classList.contains('aaben')) lukModal(); });
+  document.getElementById('mKopier').addEventListener('click', function(){
+    if (!aktuel) return;
+    var k = this;
+    navigator.clipboard.writeText(aktuel.tekst).then(function(){
+      k.classList.add('ok'); k.textContent = 'Kopieret ✓ — sæt ind i din chatbot';
+      setTimeout(function(){ k.classList.remove('ok'); k.textContent = 'Kopiér prompten'; }, 2200);
+    });
+  });
+
+  function tegn(){
+    var q = (document.getElementById('arkivSog').value || '').toLowerCase();
+    net.innerHTML = '';
+    var vist = 0;
+    alle.forEach(function(p, i){
+      if (aktivKat && p.kategori !== aktivKat) return;
+      if (q && (p.titel + ' ' + p.tekst + ' ' + (p.hvorfor || '') + ' ' + p.kategori).toLowerCase().indexOf(q) === -1) return;
+      if (i === 0 && !q && !aktivKat) {
+        // dagens prompt vises fuldt udfoldet
+        var kort = document.createElement('div');
+        kort.className = 'p-kort nyeste';
+        kort.innerHTML =
+          '<div class="p-top"><span class="p-ny">Dagens prompt</span>' +
+          '<span class="p-kat">' + undgaaHtml(p.kategori || 'Hverdag') + '</span>' +
+          '<span class="p-dato">' + undgaaHtml(datoTekst(p.dato)) + '</span></div>' +
+          '<h3>' + undgaaHtml(p.titel) + '</h3>' +
+          '<pre></pre>' +
+          (p.hvorfor ? '<div class="p-hvorfor">💡 ' + undgaaHtml(p.hvorfor) + '</div>' : '') +
+          '<button class="kopier" type="button">Kopiér prompt</button>';
+        kort.querySelector('pre').textContent = p.tekst;
+        var knap = kort.querySelector('.kopier');
+        knap.addEventListener('click', function(){
+          navigator.clipboard.writeText(p.tekst).then(function(){
+            knap.classList.add('ok'); knap.textContent = 'Kopieret ✓';
+            setTimeout(function(){ knap.classList.remove('ok'); knap.textContent = 'Kopiér prompt'; }, 1600);
+          });
+        });
+        net.appendChild(kort);
+      } else {
+        // resten som kompakte titelkort, der åbner pop-uppen
+        var punkt = document.createElement('button');
+        punkt.type = 'button';
+        punkt.className = 'p-punkt';
+        punkt.innerHTML = '<span><span class="titel">' + undgaaHtml(p.titel) +
+          '</span><br><span class="lokke">' + undgaaHtml((p.kategori || 'Hverdag') + ' · ' + datoTekst(p.dato)) +
+          '</span></span><span class="aabn">→</span>';
+        punkt.addEventListener('click', function(){ aabnModal(p); });
+        net.appendChild(punkt);
+      }
+      vist++;
+    });
+    tom.style.display = vist ? 'none' : 'block';
+    tom.textContent = alle.length ? 'Ingen prompts matcher din søgning.' :
+      'Kartoteket åbner, så snart maskinen har skrevet sin første prompt — kig forbi i morgen. ✨';
+  }
+
+  function byggFiltre(){
+    var kats = [];
+    alle.forEach(function(p){ if (p.kategori && kats.indexOf(p.kategori) === -1) kats.push(p.kategori); });
+    kats.forEach(function(k){
+      var b = document.createElement('button');
+      b.className = 'filter'; b.setAttribute('data-kat', k); b.textContent = k;
+      filterRaekke.appendChild(b);
+    });
+    filterRaekke.addEventListener('click', function(e){
+      var b = e.target.closest('.filter');
+      if (!b) return;
+      filterRaekke.querySelectorAll('.filter').forEach(function(x){ x.classList.remove('aktiv'); });
+      b.classList.add('aktiv');
+      aktivKat = b.getAttribute('data-kat');
+      tegn();
+    });
+  }
+
+  document.getElementById('arkivSog').addEventListener('input', tegn);
+
+  if (window.fetch) {
+    fetch('data/prompts.json').then(function(r){ return r.json(); }).then(function(d){
+      alle = (d && d.prompts) || [];
+      byggFiltre();
+      tegn();
+    }).catch(function(){ tegn(); });
+  } else { tegn(); }
+})();
+</script>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

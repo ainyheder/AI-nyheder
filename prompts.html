@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Prompt-bibliotek</title>
-<meta name="description" content="Færdige AI-prompts på dansk til hverdagen: madplan, jobansøgning, økonomi, lektiehjælp og svære mails. Kopiér og brug direkte i ChatGPT, Gemini eller Claude.">
+<title>AI-nyheder.com · Prompt-biblioteket</title>
+<meta name="description" content="17 gennemarbejdede prompts til hverdag, job, økonomi, skole og tekst. Klik på en titel, se prompten flot sat op, og kopiér med ét tryk. Virker i ChatGPT, Gemini og Claude.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -37,45 +37,60 @@ a { color: inherit; }
   border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
 .tilbage:hover { border-color: var(--accent); color: var(--accent); }
 main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
 h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
   font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
-.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 36px; max-width: 64ch; }
-h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 40px 0 12px; letter-spacing: -.01em; }
-h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 8px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 24px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin: 36px 0 14px; letter-spacing: -.01em; }
 p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
-li { font-size: 15.5px; line-height: 1.7; margin: 0 0 8px 22px; }
 strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
 .boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
   border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
-.kort-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
-.net-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
-  padding: 22px; text-decoration: none; box-shadow: var(--skygge); transition: transform .15s, border-color .15s; display: block; }
-.net-kort:hover { transform: translateY(-3px); border-color: var(--accent); }
-.net-kort .ikon { font-size: 26px; }
-.net-kort h3 { margin: 10px 0 6px; }
-.net-kort p { font-size: 13.5px; color: var(--blaek-svag); margin: 0; }
 footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
 footer a { color: var(--accent); }
 
-.prompt-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; margin-bottom: 8px; }
-.prompt-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; }
-.prompt-kort h3 { margin: 0 0 10px; }
-.prompt-kort pre { white-space: pre-wrap; font: 13px/1.55 var(--font-ui); color: var(--blaek-svag);
-  background: var(--bg); border-radius: 10px; padding: 12px; flex: 1; margin-bottom: 12px; }
-.kopier { align-self: flex-start; border: 1px solid var(--linje); background: var(--bg-kort); color: var(--blaek);
-  font: inherit; font-size: 12.5px; font-weight: 700; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
-.kopier:hover { border-color: var(--accent); color: var(--accent); }
-.kopier.ok { background: #1e9e6a; border-color: #1e9e6a; color: #fff; }
+.sog-felt { width: 100%; padding: 13px 18px; font: inherit; font-size: 15px;
+  border: 1px solid var(--linje); border-radius: 999px; background: var(--bg-kort); margin-bottom: 24px; }
+.sog-felt:focus { outline: 2px solid var(--accent); border-color: transparent; }
 
-.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
-.tjekliste { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
-  padding: 18px 22px; margin: 0 0 26px; box-shadow: var(--skygge); }
-.tjekliste .tl-titel { font-size: 12.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
-  color: var(--blaek-svag); margin-bottom: 8px; }
-.tjekliste ul { list-style: none; margin: 0; }
-.tjekliste li { font-size: 14.5px; margin: 6px 0; padding-left: 26px; position: relative; }
-.tjekliste li::before { content: "✓"; position: absolute; left: 2px; color: #2e9e5b; font-weight: 800; }
+/* Kompakte titelkort */
+.p-liste { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.p-punkt { display: flex; align-items: center; gap: 12px; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: 14px; padding: 14px 18px; cursor: pointer;
+  font: inherit; text-align: left; width: 100%; transition: transform .12s, border-color .12s; }
+.p-punkt:hover { transform: translateY(-2px); border-color: var(--accent); }
+.p-punkt .ikon { font-size: 22px; flex: none; }
+.p-punkt .titel { font-family: var(--font-display); font-weight: 800; font-size: 15.5px; }
+.p-punkt .lokke { font-size: 12.5px; color: var(--blaek-svag); margin-top: 1px; }
+.p-punkt .aabn { margin-left: auto; flex: none; color: var(--accent); font-weight: 800; font-size: 16px; }
+
+/* Modal */
+.modal-bg { display: none; position: fixed; inset: 0; z-index: 200;
+  background: rgba(25, 23, 20, .55); backdrop-filter: blur(4px);
+  align-items: center; justify-content: center; padding: 20px; }
+.modal-bg.aaben { display: flex; }
+.modal { background: var(--bg); border-radius: 22px; max-width: 660px; width: 100%;
+  max-height: 88vh; overflow-y: auto; padding: 30px 32px; position: relative;
+  box-shadow: 0 24px 80px rgba(25,23,20,.35); animation: modal-ind .22s ease-out; }
+@keyframes modal-ind { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+.modal-luk { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--linje); background: var(--bg-kort); font-size: 15px; font-weight: 700;
+  cursor: pointer; color: var(--blaek-svag); }
+.modal-luk:hover { border-color: var(--accent); color: var(--accent); }
+.modal .m-kat { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--accent); background: var(--accent-svag);
+  border-radius: 999px; padding: 4px 12px; margin-bottom: 10px; }
+.modal h3 { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.02em; margin-bottom: 6px; }
+.modal .m-hvorfor { font-size: 14px; color: var(--blaek-svag); font-style: italic; margin-bottom: 16px; }
+.modal pre { white-space: pre-wrap; font: 14.5px/1.65 var(--font-ui); color: var(--blaek);
+  background: var(--bg-kort); border: 1px dashed var(--linje); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+.modal .m-kopier { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff;
+  background: var(--accent); border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; }
+.modal .m-kopier:hover { opacity: .9; }
+.modal .m-kopier.ok { background: #1e9e6a; }
+.modal .m-tip { font-size: 12.5px; color: var(--blaek-svag); margin: 12px 0 0; }
+
 .naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
 .naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
   border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
@@ -83,10 +98,6 @@ footer a { color: var(--accent); }
 .naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
 .naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
 .naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
-.hop-raekke { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
-.hop { font-size: 13px; font-weight: 700; text-decoration: none; background: var(--bg-kort);
-  border: 1px solid var(--linje); border-radius: 999px; padding: 7px 15px; }
-.hop:hover { border-color: var(--accent); color: var(--accent); }
 </style>
 </head>
 <body>
@@ -101,103 +112,166 @@ footer a { color: var(--accent); }
   </div>
 </div>
 <main>
-<span class="kicker">Værktøjskasse · 17 færdige prompts · kopiér og brug</span>
+<span class="kicker">Værktøjskasse · 17 gennemarbejdede prompts · klik og kopiér</span>
 <h1>Prompt-biblioteket</h1>
-<p class="manchet">Færdige prompts til hverdagens opgaver — kopiér, udfyld de [firkantede felter], og sæt ind i din chatbot. Virker i ChatGPT, Gemini og Claude. Hver prompt her har sparet nogen for en times arbejde — find dén, der sparer din.</p>
-<div class="hop-raekke">
-  <a class="hop" href="#kat-hverdag">🏠 Hverdag</a>
-  <a class="hop" href="#kat-job">💼 Job & karriere</a>
-  <a class="hop" href="#kat-oekonomi">💰 Økonomi</a>
-  <a class="hop" href="#kat-skole">🎓 Skole & læring</a>
-  <a class="hop" href="#kat-tekst">✍️ Tekst & kommunikation</a>
-</div>
-<h2 id="kat-hverdag">Hverdag</h2><div class="prompt-net"><div class="prompt-kort">
-<h3>Madplan uden stress</h3>
-<pre>Lav en madplan for mandag-fredag til [antal] personer. Budget: cirka [beløb] kr. Vi kan ikke lide [ingredienser]. Hverdagsretter må max tage 30 minutter. Lav også en samlet indkøbsliste sorteret efter supermarkedets afdelinger.</pre>
-<button class="kopier" data-p="Lav en madplan for mandag-fredag til [antal] personer. Budget: cirka [beløb] kr. Vi kan ikke lide [ingredienser]. Hverdagsretter må max tage 30 minutter. Lav også en samlet indkøbsliste sorteret efter supermarkedets afdelinger.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Forklar et svært brev</h3>
-<pre>Jeg har fået dette brev fra [kommunen/banken/forsikringen]. Forklar mig i almindeligt dansk: 1) Hvad vil de? 2) Skal jeg gøre noget - og hvornår? 3) Er der noget, jeg skal være på vagt over for?
+<p class="manchet">Find din opgave i listen, klik — og få en gennemarbejdet prompt sat flot op, klar til at kopiere. Det her er ikke "skriv en madplan"-prompts: Hver eneste bruger grebene fra <a href="guide-prompts.html" style="color:var(--accent)">prompt-guiden</a> — roller, modspørgsmål, formatkrav — så svaret bliver noget, du faktisk kan bruge.</p>
+<input class="sog-felt" id="pSog" type="search" placeholder="Søg … fx madplan, jobsamtale, tale, budget">
+<div id="pIndhold"></div>
 
-[indsæt brevet]</pre>
-<button class="kopier" data-p="Jeg har fået dette brev fra [kommunen/banken/forsikringen]. Forklar mig i almindeligt dansk: 1) Hvad vil de? 2) Skal jeg gøre noget - og hvornår? 3) Er der noget, jeg skal være på vagt over for?
-
-[indsæt brevet]">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Ferieplanlæggeren</h3>
-<pre>Planlæg [antal] dage i [by/land] for [hvem, fx to voksne og et barn på 6]. Budget: [niveau]. Vi elsker [interesser] og hader [fx lange køer]. Giv en dag-for-dag-plan med ét hovedstop formiddag og eftermiddag samt et frokostforslag i nærheden.</pre>
-<button class="kopier" data-p="Planlæg [antal] dage i [by/land] for [hvem, fx to voksne og et barn på 6]. Budget: [niveau]. Vi elsker [interesser] og hader [fx lange køer]. Giv en dag-for-dag-plan med ét hovedstop formiddag og eftermiddag samt et frokostforslag i nærheden.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Gaveidéer der rammer</h3>
-<pre>Foreslå 10 gaveidéer til [person, fx min far på 70], som interesserer sig for [interesser]. Budget [beløb] kr. Ingen kedelige standardgaver - og forklar kort, hvorfor hver gave passer til ham/hende.</pre>
-<button class="kopier" data-p="Foreslå 10 gaveidéer til [person, fx min far på 70], som interesserer sig for [interesser]. Budget [beløb] kr. Ingen kedelige standardgaver - og forklar kort, hvorfor hver gave passer til ham/hende.">Kopiér prompt</button>
-</div></div><h2 id="kat-job">Job &amp; karriere</h2><div class="prompt-net"><div class="prompt-kort">
-<h3>Jobansøgningen</h3>
-<pre>Skriv en jobansøgning til stillingen som [titel] hos [firma]. Om mig: [3-5 linjer om din erfaring og hvorfor du søger]. Tonen skal være selvsikker men jordnær, uden floskler som &#x27;brænder for&#x27;. Max én side. Her er jobopslaget: [indsæt]</pre>
-<button class="kopier" data-p="Skriv en jobansøgning til stillingen som [titel] hos [firma]. Om mig: [3-5 linjer om din erfaring og hvorfor du søger]. Tonen skal være selvsikker men jordnær, uden floskler som &#x27;brænder for&#x27;. Max én side. Her er jobopslaget: [indsæt]">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Forbered jobsamtalen</h3>
-<pre>Jeg skal til samtale som [stilling] hos [firma]. Stil mig de 8 mest sandsynlige spørgsmål én ad gangen, vent på mit svar, og giv mig ærlig feedback på hvert svar, før du stiller det næste.</pre>
-<button class="kopier" data-p="Jeg skal til samtale som [stilling] hos [firma]. Stil mig de 8 mest sandsynlige spørgsmål én ad gangen, vent på mit svar, og giv mig ærlig feedback på hvert svar, før du stiller det næste.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Den svære mail</h3>
-<pre>Hjælp mig med at skrive en mail til [modtager] om [den svære situation, fx en klage eller en opsigelse]. Den skal være bestemt men venlig, kort, og uden at jeg kommer til at undskylde for meget. Vigtigste pointe: [pointen].</pre>
-<button class="kopier" data-p="Hjælp mig med at skrive en mail til [modtager] om [den svære situation, fx en klage eller en opsigelse]. Den skal være bestemt men venlig, kort, og uden at jeg kommer til at undskylde for meget. Vigtigste pointe: [pointen].">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>CV-løftet</h3>
-<pre>Her er mit CV: [indsæt]. Omskriv mine punkter, så de viser resultater i stedet for opgaver (fx &#x27;øgede salget 20 %&#x27; frem for &#x27;stod for salg&#x27;). Behold sandheden - find bare de stærkeste formuleringer.</pre>
-<button class="kopier" data-p="Her er mit CV: [indsæt]. Omskriv mine punkter, så de viser resultater i stedet for opgaver (fx &#x27;øgede salget 20 %&#x27; frem for &#x27;stod for salg&#x27;). Behold sandheden - find bare de stærkeste formuleringer.">Kopiér prompt</button>
-</div></div><h2 id="kat-oekonomi">Økonomi</h2><div class="prompt-net"><div class="prompt-kort">
-<h3>Privatøkonomisk overblik</h3>
-<pre>Her er mine månedlige indtægter og udgifter: [indsæt tal]. Lav et overblik over, hvor pengene går hen, og giv mig de 5 steder, hvor jeg lettest kan spare uden at det gør ondt. Vær konkret med beløb.</pre>
-<button class="kopier" data-p="Her er mine månedlige indtægter og udgifter: [indsæt tal]. Lav et overblik over, hvor pengene går hen, og giv mig de 5 steder, hvor jeg lettest kan spare uden at det gør ondt. Vær konkret med beløb.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Forstå et lånetilbud</h3>
-<pre>Forklar dette lånetilbud for mig som til en, der ikke ved noget om finans: [indsæt tilbud]. Hvad er den reelle årlige omkostning? Hvad skal jeg spørge banken om, før jeg siger ja? Hvad er faldgruberne?</pre>
-<button class="kopier" data-p="Forklar dette lånetilbud for mig som til en, der ikke ved noget om finans: [indsæt tilbud]. Hvad er den reelle årlige omkostning? Hvad skal jeg spørge banken om, før jeg siger ja? Hvad er faldgruberne?">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Abonnements-oprydning</h3>
-<pre>Her er en liste over mine faste abonnementer og priser: [indsæt]. Grupper dem i behold/overvej/drop, og beregn hvad jeg sparer om året ved at følge dine råd.</pre>
-<button class="kopier" data-p="Her er en liste over mine faste abonnementer og priser: [indsæt]. Grupper dem i behold/overvej/drop, og beregn hvad jeg sparer om året ved at følge dine råd.">Kopiér prompt</button>
-</div></div><h2 id="kat-skole">Skole &amp; læring</h2><div class="prompt-net"><div class="prompt-kort">
-<h3>Den tålmodige lærer</h3>
-<pre>Forklar [emne, fx fotosyntese] for mig i tre niveauer: 1) som til en 10-årig, 2) som til en gymnasieelev, 3) som til en voksen, der vil imponeres til en middag. Slut med tre spørgsmål, jeg kan teste mig selv med.</pre>
-<button class="kopier" data-p="Forklar [emne, fx fotosyntese] for mig i tre niveauer: 1) som til en 10-årig, 2) som til en gymnasieelev, 3) som til en voksen, der vil imponeres til en middag. Slut med tre spørgsmål, jeg kan teste mig selv med.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Lektiehjælperen der ikke snyder</h3>
-<pre>Min datter/søn i [klasse] sidder fast i denne opgave: [indsæt]. Løs den IKKE - men forklar metoden trin for trin med et ANDET eksempel, så hun/han selv kan løse den rigtige opgave bagefter.</pre>
-<button class="kopier" data-p="Min datter/søn i [klasse] sidder fast i denne opgave: [indsæt]. Løs den IKKE - men forklar metoden trin for trin med et ANDET eksempel, så hun/han selv kan løse den rigtige opgave bagefter.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Lær et nyt emne på en uge</h3>
-<pre>Jeg vil lære det grundlæggende om [emne] på 7 dage med max 30 minutter om dagen. Lav en dagsplan, hvor hver dag har ét fokus, en kort forklaring og en lille øvelse.</pre>
-<button class="kopier" data-p="Jeg vil lære det grundlæggende om [emne] på 7 dage med max 30 minutter om dagen. Lav en dagsplan, hvor hver dag har ét fokus, en kort forklaring og en lille øvelse.">Kopiér prompt</button>
-</div></div><h2 id="kat-tekst">Tekst &amp; kommunikation</h2><div class="prompt-net"><div class="prompt-kort">
-<h3>Sprogvasken</h3>
-<pre>Gør denne tekst klarere og mere levende uden at ændre indholdet. Fjern fyldord og kancellisprog, del lange sætninger op, og behold min tone: [indsæt tekst]</pre>
-<button class="kopier" data-p="Gør denne tekst klarere og mere levende uden at ændre indholdet. Fjern fyldord og kancellisprog, del lange sætninger op, og behold min tone: [indsæt tekst]">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Talen til festen</h3>
-<pre>Skriv en tale på 3 minutter til [anledning, fx min mors 70-års fødselsdag]. Om personen: [5 stikord og gerne en anekdote]. Tonen: varm og med et glimt i øjet - højst én mild drillebemærkning. Ingen klichéer om &#x27;livets efterår&#x27;.</pre>
-<button class="kopier" data-p="Skriv en tale på 3 minutter til [anledning, fx min mors 70-års fødselsdag]. Om personen: [5 stikord og gerne en anekdote]. Tonen: varm og med et glimt i øjet - højst én mild drillebemærkning. Ingen klichéer om &#x27;livets efterår&#x27;.">Kopiér prompt</button>
-</div><div class="prompt-kort">
-<h3>Referatet på 2 minutter</h3>
-<pre>Lav dette rodede mødereferat/noter om til: 1) beslutninger, 2) hvem gør hvad inden hvornår, 3) uafklarede spørgsmål. Kort og skarpt: [indsæt noter]</pre>
-<button class="kopier" data-p="Lav dette rodede mødereferat/noter om til: 1) beslutninger, 2) hvem gør hvad inden hvornår, 3) uafklarede spørgsmål. Kort og skarpt: [indsæt noter]">Kopiér prompt</button>
-</div></div>
 <div class="naeste-net">
   <a class="naeste" href="guide-prompts.html"><div class="n-titel">✍️ Lær at skrive dine egne</div><p>Fem greb, der gør enhver prompt bedre — så du kan tilpasse alle prompts her til DIT liv.</p></a>
-  <a class="naeste" href="laer.html#dagens-titel"><div class="n-titel">✨ Dagens prompt</div><p>På Lær AI-forsiden ligger en ny udvalgt prompt hver dag — kig forbi i morgen.</p></a>
+  <a class="naeste" href="prompt-arkiv.html"><div class="n-titel">🗂️ Prompt-kartoteket</div><p>Vores AI skriver én ny prompt hver dag — og de gemmes alle sammen her. Kartoteket vokser dag for dag.</p></a>
 </div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitel">
+    <button class="modal-luk" id="modalLuk" aria-label="Luk">✕</button>
+    <span class="m-kat" id="mKat"></span>
+    <h3 id="mTitel"></h3>
+    <p class="m-hvorfor" id="mHvorfor"></p>
+    <pre id="mTekst"></pre>
+    <button class="m-kopier" id="mKopier">Kopiér prompten</button>
+    <p class="m-tip">Udfyld de [firkantede felter] med dine egne oplysninger, før du sender. Virker i ChatGPT, Gemini og Claude.</p>
+  </div>
+</div>
+
 <script>
-document.querySelectorAll(".kopier").forEach(k => k.addEventListener("click", () => {
-  navigator.clipboard.writeText(k.dataset.p).then(() => {
-    k.classList.add("ok"); k.textContent = "Kopieret ✓";
-    setTimeout(() => { k.classList.remove("ok"); k.textContent = "Kopiér prompt"; }, 1600);
+(function(){
+  var KATEGORIER = [
+    ['🏠', 'Hverdag'], ['💼', 'Job & karriere'], ['💰', 'Økonomi'], ['🎓', 'Skole & læring'], ['✍️', 'Tekst & kommunikation']
+  ];
+  var PROMPTS = [
+    // ---- Hverdag ----
+    { kat: 'Hverdag', titel: 'Madplan uden stress', lokke: 'Interviewer dig først — og planlægger med rester',
+      hvorfor: 'AI’en spørger, før den planlægger — og tænker rester og indkøb med fra start.',
+      tekst: 'Du er en erfaren og jordnær madplanlægger for travle danske familier.\n\nStil mig først 4 korte spørgsmål (én ad gangen): antal personer, budget, hvad vi ikke kan lide, og hvor meget tid vi har på hverdagsaftener.\n\nLav derefter en madplan for mandag-fredag hvor: mindst to retter genbruger rester fra dagen før, ingen ret tager længere end min tidsgrænse, og der er variation i både kød/fisk/vegetar og køkkener.\n\nAflever det hele som: 1) en tabel med dag, ret og tid, 2) en samlet indkøbsliste sorteret efter supermarkedets afdelinger, 3) ét tip til hvad jeg kan forberede i weekenden.' },
+    { kat: 'Hverdag', titel: 'Forklar et svært brev', lokke: 'Oversætter kancellisprog — og skriver svaret med',
+      hvorfor: 'Du får ikke bare en forklaring, men også frister, faldgruber og et færdigt svarudkast.',
+      tekst: 'Du er en erfaren borgerrådgiver, der oversætter kancellisprog til almindeligt dansk.\n\nJeg har fået dette brev fra [kommunen/banken/forsikringen]. Giv mig:\n1) Hvad de vil have, i én sætning.\n2) Alle frister og beløb i en punktliste — fremhæv den vigtigste dato.\n3) Hvad der sker, hvis jeg ikke reagerer.\n4) Det, jeg bør være på vagt over for, før jeg accepterer noget.\n5) Et kort udkast til mit svar, hvis et svar er nødvendigt.\n\nBrevet (navn og CPR har jeg fjernet):\n[indsæt brevet]' },
+    { kat: 'Hverdag', titel: 'Ferieplanlæggeren', lokke: 'Dag-for-dag-plan med plan B for regnvejr',
+      hvorfor: 'Modspørgsmål først, plan B ved regn og en bookingliste — som en rigtig rejsekonsulent.',
+      tekst: 'Du er en rejseplanlægger, der kender [by/land] indgående og hader turistfælder.\n\nStil mig først 5 korte spørgsmål om rejsen (hvem, hvor længe, budget, tempo, interesser) — én ad gangen.\n\nLav derefter en dag-for-dag-plan med: ét hovedstop formiddag og eftermiddag, frokostforslag i nærheden (ikke turistfælder — begrund), gåafstande, og en plan B for hver dag, hvis det regner.\n\nSlut med: et realistisk budgetoverslag pr. person og en liste over det, jeg bør booke hjemmefra — sorteret efter hvor hurtigt det bliver udsolgt.' },
+    { kat: 'Hverdag', titel: 'Gaveidéer der rammer', lokke: 'Interviewer dig om personen — 3 prisklasser',
+      hvorfor: 'Interviewet gør idéerne personlige i stedet for generiske — og prisklasserne gør dem realistiske.',
+      tekst: 'Du er en betænksom gavefinder med god smag og sans for, hvad folk FAKTISK bliver glade for.\n\nStil mig først 4 spørgsmål om modtageren: relation og alder, interesser og hverdag, noget personen har nævnt eller manglet på det seneste, og mit budget.\n\nGiv mig derefter 9 idéer fordelt i tre prisklasser (billig/mellem/flot) med for hver: hvorfor netop dén passer til personen, og hvor jeg kan købe den i Danmark.\n\nIngen gavekort, ingen "en god bog" uden konkret titel — og mindst én idé skal være en oplevelse frem for en ting.' },
+    // ---- Job & karriere ----
+    { kat: 'Job & karriere', titel: 'Jobansøgningen', lokke: 'Analyserer opslaget, før den skriver ét ord',
+      hvorfor: 'To-trins-metoden (analyse → ansøgning) spejler jobopslagets sprog og rammer det, de faktisk søger.',
+      tekst: 'Du er en erfaren jobkonsulent, der har læst tusindvis af ansøgninger — og ved præcis, hvad der ryger i bunken.\n\nTrin 1: Analysér dette jobopslag og list de 5 vigtigste krav mellem linjerne — også de usagte: [indsæt jobopslaget]\n\nTrin 2: Her er min baggrund: [3-5 linjer om din erfaring og hvorfor du søger]. Match min baggrund med de 5 krav, og sig ærligt, hvor jeg står svagt.\n\nTrin 3: Skriv ansøgningen: maks én side, selvsikker men jordnær, spejl opslagets egne ord uden at plagiere, og start med en sætning, der IKKE begynder med "Jeg". Forbudte ord: "brænder for", "passioneret", "teamplayer".\n\nSlut med de 3 spørgsmål, jeg bør forberede svar på til samtalen.' },
+    { kat: 'Job & karriere', titel: 'Forbered jobsamtalen', lokke: 'Træningssamtale med karakterbog til sidst',
+      hvorfor: 'Simulation med feedback efter STAR-metoden — som en generalprøve med en ærlig ven.',
+      tekst: 'Du er en garvet rekrutteringschef hos [firma-type]. Jeg skal til samtale som [stilling].\n\nKør en realistisk træningssamtale: Stil mig de 8 mest sandsynlige spørgsmål — ét ad gangen, og vent på mit svar hver gang. Mindst ét skal være ubehageligt ("hvorfor skiftede du...", "din svaghed...").\n\nEfter hvert svar: giv mig kort feedback på struktur (brugte jeg konkrete eksempler? STAR-metoden: Situation, opgave, handling, resultat), og foreslå en stærkere formulering, hvis min var vag.\n\nTil sidst: en lille karakterbog — mine 2 stærkeste svar, mine 2 svageste, og de 3 vigtigste ting at øve inden den rigtige samtale.' },
+    { kat: 'Job & karriere', titel: 'Den svære mail', lokke: 'Tre versioner: diplomatisk, direkte og kort',
+      hvorfor: 'Tre tonelejer at vælge imellem gør det let at finde din stemme i en svær situation.',
+      tekst: 'Du er en erfaren kommunikationsrådgiver med sans for at sige svære ting ordentligt.\n\nJeg skal skrive til [modtager] om [den svære situation — fx en klage, en opsigelse, et afslag eller en rykker]. Min vigtigste pointe: [pointen]. Relationen må gerne overleve: [ja/nej/ligegyldigt].\n\nSkriv tre versioner af mailen: 1) DIPLOMATISK — varm, men uden at pointen drukner, 2) DIREKTE — venlig, kort, ingen omsvøb, 3) MINIMAL — tre sætninger, professionel.\n\nMarkér i hver version den sætning, der bærer budskabet. Anbefal til sidst én af de tre — og begrund hvorfor. Ingen undskyldninger på mine vegne, medmindre jeg faktisk har begået en fejl.' },
+    { kat: 'Job & karriere', titel: 'CV-løftet', lokke: 'Graver resultaterne frem, du glemte at prale af',
+      hvorfor: 'Den spørger efter tallene bag dine opgaver — det er dér, CV’et vinder.',
+      tekst: 'Du er en CV-ekspert, der ved, at resultater slår opgavebeskrivelser — hver gang.\n\nHer er mit CV: [indsæt]\n\nTrin 1: Gennemgå mine punkter, og stil mig opklarende spørgsmål dér, hvor der gemmer sig et resultat, jeg ikke har sat tal på ("hvor meget", "hvor mange", "hvad førte det til?"). Maks 5 spørgsmål.\n\nTrin 2: Omskriv derefter alle punkter fra opgaver til resultater (fx "øgede salget 20 %" i stedet for "stod for salg"). Behold sandheden — find bare de stærkeste formuleringer.\n\nTrin 3: Foreslå en skarp 3-linjers profiltekst til toppen, og list de 5 nøgleord fra min branche, som CV’et bør indeholde for at klare automatisk sortering.' },
+    // ---- Økonomi ----
+    { kat: 'Økonomi', titel: 'Privatøkonomisk overblik', lokke: 'Overblik, benchmark og en plan for næste måned',
+      hvorfor: 'Sammenligner med 50/30/20-reglen og slutter med en konkret handlingsplan — ikke bare pæne ord.',
+      tekst: 'Du er en nøgtern privatøkonomisk rådgiver. Du sælger ikke noget, og du dømmer ikke.\n\nHer er mine månedlige indtægter og udgifter: [indsæt tal]\n\nGiv mig:\n1) Et overblik i en tabel: kategori, beløb, procent af indkomst.\n2) En sammenligning med 50/30/20-reglen (behov/ønsker/opsparing) — hvor afviger jeg mest?\n3) De 5 besparelser, der batter mest — med anslået kr. pr. måned og en sværhedsgrad fra 1-5 (1 = mærkes ikke, 5 = gør ondt).\n4) En konkret plan for næste måned: tre ting jeg gør, og hvad de tilsammen flytter.\n\nStil mig først ét spørgsmål: hvad sparer jeg op til — og hvornår skal det bruges?' },
+    { kat: 'Økonomi', titel: 'Forstå et lånetilbud', lokke: 'ÅOP på dansk, red flags og spørgsmål til banken',
+      hvorfor: 'Tvinger de samlede omkostninger og faldgruberne frem — det, banken ikke fremhæver med fed.',
+      tekst: 'Du er en uafhængig økonomisk rådgiver, der IKKE tjener penge på, hvad jeg vælger.\n\nForklar dette lånetilbud, som til en der aldrig har lånt før: [indsæt tilbuddet]\n\nGiv mig:\n1) ÅOP forklaret på dansk — og hvad DETTE lån reelt koster mig i kroner over hele løbetiden.\n2) En tabel: lånebeløb, månedlig ydelse, samlet tilbagebetaling, samlede omkostninger.\n3) Red flags: gebyrer, variable renter, ting med småt der bør undersøges.\n4) De 5 spørgsmål, jeg skal stille banken, før jeg skriver under — og hvilke svar der bør få mig til at gå.\n5) Mindst ét alternativ, jeg bør undersøge, før jeg siger ja.\n\nVigtige beløb dobbelttjekker jeg selv — sig det gerne, hvor det er ekstra vigtigt.' },
+    { kat: 'Økonomi', titel: 'Abonnements-oprydning', lokke: 'Behold/overvej/drop — med opsigelsestekster',
+      hvorfor: 'Regner årsbesparelsen ud OG skriver opsigelserne — så oprydningen faktisk bliver til noget.',
+      tekst: 'Du er en venlig, men skånselsløs oprydningskonsulent for privatøkonomi.\n\nHer er mine faste abonnementer med priser: [indsæt liste]\n\n1) Gruppér dem i en tabel: BEHOLD (bruges og giver værdi), OVERVEJ (dyrt i forhold til brugen — spørg mig om min brug, hvis du er i tvivl), DROP (oplagt at opsige).\n2) Beregn den årlige besparelse ved at følge dine råd — vis regnestykket.\n3) Skriv en kort, høflig opsigelsestekst for hvert abonnement i DROP-gruppen, klar til at sende.\n4) Bonus: nævn de 2 klassiske "glemte abonnementer", danskere plejer at overse — og mind mig om at tjekke min betalingsoversigt for dem.' },
+    // ---- Skole & læring ----
+    { kat: 'Skole & læring', titel: 'Den tålmodige lærer', lokke: 'Tre niveauer — og den tjekker, om du forstod det',
+      hvorfor: 'Kontrolspørgsmålene til sidst afslører, om du faktisk forstod det — eller bare nikkede.',
+      tekst: 'Du er en tålmodig lærer, der elsker dit fag og aldrig taler ned til nogen.\n\nForklar [emne, fx renters rente] i tre niveauer:\n1) Som til en 10-årig — med en hverdagsanalogi.\n2) Som til en gymnasieelev — med det rigtige fagsprog forklaret undervejs.\n3) Som til en voksen, der vil kunne imponere til en middag — med den ene overraskende detalje, de færreste kender.\n\nBagefter: Stil mig 3 kontrolspørgsmål ét ad gangen for at teste, om jeg forstod det. Ret mine svar venligt, og forklar det, jeg misforstod, på en NY måde — ikke med samme ord som første gang.' },
+    { kat: 'Skole & læring', titel: 'Lektiehjælperen der ikke snyder', lokke: 'Lærer metoden — løser aldrig selve opgaven',
+      hvorfor: 'Andet eksempel + træningsopgave = barnet lærer metoden i stedet for at aflevere AI’ens svar.',
+      tekst: 'Du er en dygtig lektiehjælper med jernprincipper: Du løser ALDRIG elevens egen opgave — du lærer metoden fra dig.\n\nMit barn i [klassetrin] sidder fast i denne opgave: [indsæt opgaven]\n\n1) Forklar metoden trin for trin med et ANDET eksempel end opgavens — samme type, andre tal/ord.\n2) Stil derefter 2-3 ledende spørgsmål, der hjælper barnet i gang med sin egen opgave, uden at afsløre svaret.\n3) Lav til sidst én ekstra træningsopgave af samme type, med facit nederst — så vi kan tjekke, om metoden sidder.\n\nSprog: alderssvarende til klassetrinnet, opmuntrende tone, korte sætninger.' },
+    { kat: 'Skole & læring', titel: 'Lær et nyt emne på en uge', lokke: '7-dages plan med daglig quiz og mini-eksamen',
+      hvorfor: 'Daglige quizspørgsmål og en afsluttende prøve gør planen til læring — ikke bare læsning.',
+      tekst: 'Du er en læringsdesigner, der ved, at man husker det, man bliver testet i — ikke det, man skimmer.\n\nJeg vil lære det grundlæggende om [emne] på 7 dage, maks 30 minutter om dagen. Mit udgangspunkt: [helt nybegynder / ved lidt].\n\nLav en plan hvor hver dag har: ét klart fokus, en kort forklaring af dagens kernebegreber, en lille praktisk øvelse (noget jeg GØR, ikke bare læser) — og 3 quizspørgsmål om gårsdagens stof, så det gamle holdes ved lige.\n\nDag 7 er eksamensdag: 10 spørgsmål på tværs af ugen, med facit til sidst og en ærlig vurdering: hvad sidder fast, og hvad bør jeg repetere?\n\nStart med dag 1 nu — og vent så på, at jeg siger "næste dag".' },
+    // ---- Tekst & kommunikation ----
+    { kat: 'Tekst & kommunikation', titel: 'Sprogvasken', lokke: 'Renser teksten — og viser dig hvad den ændrede',
+      hvorfor: 'Ændringslisten lærer dig at se dine egne sprog-uvaner — så teksterne bliver bedre fremover.',
+      tekst: 'Du er en skarp sprogredaktør af den gamle skole: Du elsker klart sprog og hader fyldord.\n\nGør denne tekst klarere og mere levende uden at ændre indholdet eller min personlige tone: [indsæt tekst]\n\nRegler: fjern fyldord og kancellisprog, del lange sætninger op, aktiv form frem for passiv, konkret frem for abstrakt.\n\nAflever: 1) Den rensede tekst. 2) En kort ændringsliste: de 5 vigtigste ting, du ændrede, og hvorfor — så jeg lærer mine egne uvaner at kende. 3) Min "sprog-uvane nummer ét", hvis du kan spotte et mønster.' },
+    { kat: 'Tekst & kommunikation', titel: 'Talen til festen', lokke: 'Interviewer dig om personen — leverer i to længder',
+      hvorfor: 'Interviewet trækker anekdoterne ud af dig — det er dem, der gør talen personlig og ikke til skabelon.',
+      tekst: 'Du er en erfaren taleskriver, der ved, at én god anekdote slår ti pæne tillægsord.\n\nJeg skal holde tale til [anledning, fx min mors 70-års fødselsdag].\n\nInterview mig først: Stil mig 5 spørgsmål ét ad gangen om personen — vores relation, en konkret episode jeg husker tydeligt, hvad personen er kendt for i familien, hvad jeg beundrer mest, og hvad der ville få personen selv til at grine.\n\nSkriv derefter talen i to udgaver: 2 minutter (til den utålmodige festmiddag) og 4 minutter (hvis stemningen bærer). Struktur: overraskende åbning (ALDRIG "kære alle sammen"), anekdoten som hjerte, varm afslutning med skål. Markér [PAUSE] dér, hvor jeg skal lade den hænge. Tone: varm med et glimt i øjet — højst én mild drillebemærkning, ingen klichéer.' },
+    { kat: 'Tekst & kommunikation', titel: 'Referatet på 2 minutter', lokke: 'Rodede noter → referat + opfølgningsmail',
+      hvorfor: 'Ansvar og deadlines i tabel plus en færdig opfølgningsmail — hele mødets efterarbejde i ét hug.',
+      tekst: 'Du er en effektiv mødesekretær, der kan skille beslutninger fra snak.\n\nHer er mine rodede noter fra mødet (navne er anonymiseret): [indsæt noter]\n\nLav:\n1) BESLUTNINGER: punktliste — kun det, der faktisk blev besluttet.\n2) OPGAVER: tabel med opgave, ansvarlig og deadline. Mangler en deadline i noterne, så skriv "AFTAL FRIST" med stort.\n3) UAFKLAREDE SPØRGSMÅL: det, der blev nævnt, men ikke besluttet — så det ikke forsvinder.\n4) Et udkast til en kort opfølgningsmail til deltagerne med referatet i pæn form.\n\nSpørg mig, hvis noget i noterne kan tolkes på to måder — gæt ikke.' }
+  ];
+
+  // ---- render kompakt liste pr. kategori ----
+  var indhold = document.getElementById('pIndhold');
+  function tegn(filter){
+    indhold.innerHTML = '';
+    KATEGORIER.forEach(function(kat){
+      var ikon = kat[0], navn = kat[1];
+      var liste = PROMPTS.filter(function(p){
+        if (p.kat !== navn) return false;
+        if (!filter) return true;
+        return (p.titel + ' ' + p.lokke + ' ' + p.tekst).toLowerCase().indexOf(filter) !== -1;
+      });
+      if (!liste.length) return;
+      var h = document.createElement('h2');
+      h.textContent = ikon + ' ' + navn;
+      indhold.appendChild(h);
+      var net = document.createElement('div');
+      net.className = 'p-liste';
+      liste.forEach(function(p){
+        var knap = document.createElement('button');
+        knap.type = 'button';
+        knap.className = 'p-punkt';
+        knap.innerHTML = '<span class="ikon">' + ikon + '</span><span><span class="titel">' + p.titel +
+          '</span><br><span class="lokke">' + p.lokke + '</span></span><span class="aabn">→</span>';
+        knap.addEventListener('click', function(){ aabnModal(p, ikon); });
+        net.appendChild(knap);
+      });
+      indhold.appendChild(net);
+    });
+    if (!indhold.children.length) {
+      indhold.innerHTML = '<p style="color:var(--blaek-svag); text-align:center; padding:30px 0;">Ingen prompts matcher din søgning — prøv et andet ord.</p>';
+    }
+  }
+
+  // ---- modal ----
+  var bg = document.getElementById('modalBg');
+  var aktuel = null;
+  function aabnModal(p, ikon){
+    aktuel = p;
+    document.getElementById('mKat').textContent = ikon + ' ' + p.kat;
+    document.getElementById('mTitel').textContent = p.titel;
+    document.getElementById('mHvorfor').textContent = '💡 ' + p.hvorfor;
+    document.getElementById('mTekst').textContent = p.tekst;
+    var k = document.getElementById('mKopier');
+    k.classList.remove('ok'); k.textContent = 'Kopiér prompten';
+    bg.classList.add('aaben');
+    document.body.style.overflow = 'hidden';
+  }
+  function lukModal(){
+    bg.classList.remove('aaben');
+    document.body.style.overflow = '';
+    aktuel = null;
+  }
+  document.getElementById('modalLuk').addEventListener('click', lukModal);
+  bg.addEventListener('click', function(e){ if (e.target === bg) lukModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && bg.classList.contains('aaben')) lukModal(); });
+  document.getElementById('mKopier').addEventListener('click', function(){
+    if (!aktuel) return;
+    var k = this;
+    navigator.clipboard.writeText(aktuel.tekst).then(function(){
+      k.classList.add('ok'); k.textContent = 'Kopieret ✓ — sæt ind i din chatbot';
+      setTimeout(function(){ k.classList.remove('ok'); k.textContent = 'Kopiér prompten'; }, 2200);
+    });
   });
-}));
+
+  document.getElementById('pSog').addEventListener('input', function(){
+    tegn((this.value || '').trim().toLowerCase());
+  });
+  tegn('');
+})();
 </script>
+
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
 </body>
