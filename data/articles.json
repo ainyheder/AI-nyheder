@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-07-24T10:01:50.933694+00:00",
-  "antal": 123,
+  "opdateret": "2026-07-24T12:29:41.272770+00:00",
+  "antal": 107,
   "artikler": [
     {
       "titel": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
@@ -58,10 +58,10 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Computere skal selv teste programmer og finde fejl",
       "resume_da": "Forskere har lavet et system, hvor selvkørende computerprogrammer selv finder fejl i ny kode.",
+      "billede": "data/img/730e6adf1f50ff55.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "Et tastatur, hvor tasterne er erstattet af røde advarselstrekanter og et lupglas.",
-      "billede": "data/img/730e6adf1f50ff55.jpg"
+      "billedmotiv": "Et tastatur med en rød lup oven på en glødende, fejlsøgende kode på skærmen."
     },
     {
       "titel": "Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts",
@@ -725,8 +725,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Ny metode afslører strømmens veje i elnettet",
       "resume_da": "Forskere har udviklet en ny metode til at kortlægge strømforbindelser i elnettet mere præcist.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye gennembrud",
@@ -737,9 +736,8 @@
           "tekst": "Systemet udnytter avancerede matematiske modeller og AI til at regne sig frem til netværkets struktur ud fra de tilgængelige målinger. I stedet for at famle i blinde kan forsyningsselskaberne nu opbygge et langt klarere billede af, hvor strømmene flyder hen. Det sparer både tid og kræfter i forhold til ældre og mere besværlige metoder til fejlsøgning og planlægning."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden fokuserer på forsyningssystemers opbygning og struktur.",
         "Forskningen benytter avancerede beregninger ud fra flere datakilder.",
@@ -753,7 +751,9 @@
         "Giver forsyningsselskaber et bedre overblik."
       ],
       "billedmotiv": "En computer skærm der viser et lysende, sammenfiltret netværk af blå linjer og punkter på et mørkt bord.",
-      "billede": "data/img/571bf129af40eec7.jpg"
+      "billede": "data/img/571bf129af40eec7.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
@@ -765,8 +765,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Ny metode sender tunge AI-opgaver ud af huset",
       "resume_da": "En ny svensk-inspireret eller international metode lader AI fordele opgaver klogere uden at kræve dyr genoptræning.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye princip",
@@ -777,9 +776,8 @@
           "tekst": "Når AI-systemer skal håndtere store mængder information, løber de hurtigt tør for hukommelse på den lokale enhed. Den nye teknik løser problemet ved løbende at vurdere, hvilke dele af en opgave der er sikre at flytte til andre servere, og hvilke der skal blive. Det sker helt automatisk baseret på en indbygget pålideligheds-tjekker, som sikrer, at kvaliteten ikke falder undervejs."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden hedder offloading via reliability gating og kræver ingen forudgående træning.",
         "Systemet fordeler arbejdsbyrden dynamisk mellem forskellige lag af maskinkraft.",
@@ -794,7 +792,9 @@
         "Holder øje med kvaliteten undervejs i processen"
       ],
       "billedmotiv": "En lille computerchip ved siden af en stor bog, hvor der stikker glødende kabler ud mellem dem.",
-      "billede": "data/img/50268506b03863fd.jpg"
+      "billede": "data/img/50268506b03863fd.jpg",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
@@ -1013,56 +1013,37 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "rubrik": "Pas på politisk snyd i nyheder",
-      "resume_da": "Undersøgelse viser, at AI kan finde på at lyve politisk i nyhederne. Det gør det svært at skelne fup fra fakta.",
+      "rubrik": "Når AI fordrejer nyheder i bestemt retning",
+      "resume_da": "Forskere har opdaget, at AI-modeller kan finde på at vride fakta i en bestemt politisk retning, når de svarer på spørgsmål ud fra nyhedsartikler.",
       "billede": "data/img/a86f1e33b3047d28.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En mikrofon med en stor, rød stopklods viklet rundt om ledningen."
-    },
-    {
-      "titel": "AI bet goes awry: Oracle fires 21,000 employees",
-      "link": "https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD",
-      "resume": "Article URL: https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD Comments URL: https://news.ycombinator.com/item?id=49025754 Points: 101 # Comments: 24",
-      "dato": "2026-07-23T18:07:33+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "rubrik": "Kæmpe gigant skærer drastisk i staben",
-      "resume_da": "Teknologigiganten Oracle har opsagt **21.000** ansatte, efter en stor satsning på AI er slået fejl.",
-      "billede": "data/img/b14601ebd5b7f210.jpg",
-      "kat_ai": true,
-      "prio": 9,
       "sektioner": [
         {
-          "overskrift": "Fejlet satsning",
-          "tekst": "En stor økonomisk og strategisk satsning på AI har vist sig at være en fiasko for Oracle. Det har nu fået voldsomme konsekvenser for dem, der arbejder i virksomheden, da ledelsen har set sig nødsaget til at trække i nødbremsen efter de manglende resultater."
+          "overskrift": "Skæve svar",
+          "tekst": "Når du beder en AI om at svare på spørgsmål baseret på virkelige nyheder, sker der undertiden noget uventet. Den kan finde på at digte videre på historien, så den pludselig hælder mod en bestemt politisk holdning. Fænomenet viser, at teknologien ikke bare gengiver virkeligheden neutralt, men kan præge svarene i en bestemt retning uden din tilladelse."
         },
         {
-          "overskrift": "Massive fyringer",
-          "tekst": "Hele **21.000** medarbejdere har mistet deres job som direkte konsekvens af den fejlslagne strategi. Det er en af de største nedskæringer i nyere tid, som sender chokbølger gennem hele branchen og skaber stor usikkerheid om fremtiden."
+          "overskrift": "Usynlig drejning",
+          "tekst": "Forskningen viser, at disse såkaldte retningsbestemte fejltrin sniger sig ind i teksten, når AI forsøger at samle trådene fra forskellige kilder. Den griber fat i enkelte ord eller vinkler og forstørrer dem, så det samlede svar får en slagside. Det sker helt automatisk, hvilket gør det svært for almindelige brugere at opdage, hvornår de modtager et farvet svar."
         }
       ],
       "brief": "",
       "figurer": [],
-      "noegletal": [
-        {
-          "tal": "21.000",
-          "label": "medarbejdere som er blevet fyret"
-        }
-      ],
+      "noegletal": [],
       "detaljer": [
-        "medarbejdere er blevet afskediget fra Oracle",
-        "point modtog historien på Hacker News",
-        "kommentarer blev skabt i debatten online"
+        "Forskere har undersøgt, hvordan AI opfører sig, når den svarer på baggrund af nyhedsartikler.",
+        "Teknologien kan præge svar i en bestemt ideologisk retning frem for at forblive neutral.",
+        "Fejlene opstår, når modellen fortolker og sammenskriver informationer fra dagens nyheder.",
+        "Det kan føre til misvisende svar, selvom udgangspunktet var en ægte nyhedsartikel."
       ],
-      "betydning": "Denne store fyringsrunde viser med alt tydelighed, at tech-branchens massive satsninger på AI ikke er uden risiko. For almindelige mennesker og ansatte i branchen understreger det en voksende usikkerhed, hvor store strategiske fejltrin hurtigt kan koste tusindvis af arbejdspladser, selv hos de mest veletablerede giganter.",
+      "betydning": "Når vi i stigende grad henter vores viden og nyheder via AI-assistenter, er det afgørende, at svarene er pålidelige. Hvis teknologien uforvarende begynder at vride informationer i en bestemt politisk retning, kan det påvirke vores opfattelse af samfundet og vigtige dagsordener uden, at vi opdager det.",
       "pointer": [
-        "Oracle har fyret **21.000** ansatte",
-        "Satsningen på AI er slået fejl",
-        "Historien vækker opsigt online"
+        "AI kan vride nyheder i en bestemt politisk retning",
+        "Fejlene opstår uforvarende under bearbejdning af kildetekster",
+        "Det gør det sværere at stole blindt på AI-genererede svar"
       ],
-      "billedmotiv": "En tom kontorstol ved et skrivebord med en slukket skærm, hvor der står et skilt med et rødt minustegn."
+      "billedmotiv": "En computer skærm der viser en nyhedsartikel, hvor ordene langsomt ændrer farve og form til en politisk løbeseddel."
     },
     {
       "titel": "Alexa Plus is getting an AI update to handle more complicated instructions",
@@ -1510,140 +1491,6 @@
       "prio": 7
     },
     {
-      "titel": "The arguments against open source AI are bad",
-      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
-      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 277 # Comments: 194",
-      "dato": "2026-07-23T16:49:57+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Hvorfor fri og åben AI ikke kan stoppes",
-      "resume_da": "Debatten om åben kildekode inden for AI rummer mange misforståelser. Historien viser, at forsøg på at bremse den slags teknologi altid slår fejl.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Frygten for åbenhed",
-          "tekst": "Modstandere af frit tilgængelige AI-modeller forsøger ofte at fremstille dem som farlige. De argumenterer for, at teknologien kun bør ligge hos få, udvalgte vogtere for at sikre ansvarlighed. Men dette overser den fundamentale virkelighed, at avanceret software næsten altid bygger på netop åbne fundamenter, som virksomheder og udviklere i årtier har delt med hinanden for at skabe fælles fremgang."
-        },
-        {
-          "overskrift": "Historien gentager sig",
-          "tekst": "Forsøg på at kontrollere eller begrænse udbredelsen af digital teknologi er dømt til at mislykkes. Da regeringen tidligere forsøgte at lægge bånd på digital kryptering, virkede det mod hensigten og svækkede blot de lokale aktører. Den slags politiske benspænd skaber blot unødvendigt papirarbejde og skubber væksten ud over landets grænser, mens teknologien ufortrødent flyder frit."
-        },
-        {
-          "overskrift": "Selvejende software",
-          "tekst": "Nogle frygter, at gratis og åbne modeller fra eksempelvis Asien vil udkonkurrere lokale virksomheder på samme måde som fysiske varer. Men digital kode opfører sig fuldstændig anderledes end stål eller solceller, fordi man her frit kan tilpasse og ændre indholdet. Hvis en åben model har en skæv politisk vinkel, kan hvem som helst blot ændre den til at passe bedre til egne værdier."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Åben software udgør fundamentet for alt lukket og kommercielt software.",
-        "Tidligere tiders eksportkontrol af digital kryptering slog fuldstændig fejl.",
-        "USA forsøgte i 1991 at retsforfølge opfinderen af den populære krypteringsteknologi PGP.",
-        "Fysiske varer som solceller og stål kræver enorme, faste forsyningskæder.",
-        "AI-modeller er digital kode, der nemt kan tilpasses og ændres af alle.",
-        "Åbne modeller gør det muligt for udviklere at opdage sikkerhedshuller hurtigere."
-      ],
-      "betydning": "For almindelige mennesker betyder det, at teknologien vil forblive tilgængelig og billig uanset politiske modvind. Forsøg på at begrænse adgangen vil sandsynligvis kun skade de lande, der forsøger at lukke sig om sig selv, mens resten af verden nyder godt af de åbne fremskridt.",
-      "pointer": [
-        "Åben AI kan ikke stoppes af politikere.",
-        "Historisk fiasko rammer kontrol af kode.",
-        "Digital software adskiller sig fra fysiske varer."
-      ],
-      "billedmotiv": "En åben bærbar computer på et træbord, hvor skæv og lige kildekode flyder frit ud som glødende tråde mod skærmens kant.",
-      "billede": "data/img/9a151c1c9892dad0.jpg",
-      "kat_ai": true,
-      "prio": 4
-    },
-    {
-      "titel": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
-      "link": "https://github.com/onecli/onecli",
-      "resume": "hey HN, Jonathan and Guy here, creators of OneCLI ( https://onecli.sh/ ). OneCLI is an open source vault for AI Agents. Traditional vaults are used to store your secrets and, on demand, provide them to you all in a secure way, trusting the person to keep them safe. We figured that in the agent's world, this is not the case, as you don't know what happens with the secret after it's delivered to…",
-      "dato": "2026-07-23T15:42:40+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Nyt dansk værn mod læk af koder",
-      "resume_da": "Et nyt åbent kildekode-værktøj beskytter følsomme adgangskoder, når du lader AI-assistenter arbejde med eksterne systemer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sikkerhed i trafikken",
-          "tekst": "Når avancerede AI-systemer skal løse opgaver på nettet, kræver det ofte adgang til en lang række eksterne tjenester. Hidtil har man måttet udlevere de rigtige adgangskoder direkte til systemerne, hvilket skaber en massiv sikkerhedsrisiko. Det nye **OneCLI**-projekt fungerer som en digital mellemmand, der opsnapper beskeder og sørger for, at de hemmelige koder aldrig havner i de forkerte hænder."
-        },
-        {
-          "overskrift": "Sådan virker det",
-          "tekst": "Selve systemet er bygget op omkring et **Rust**-baseret hjerte, der lynhurtigt håndterer al netværkstrafik og udskifter midlertidige nøgler med de ægte på et brøkdel af et sekund. Brugerne administrerer det hele via et overskueligt kontrolpanel lavet i **Next.js**, hvor adgangskoderne opbevares sikkert og krypteret, indtil de skal bruges i en konkret forespørgsel."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Værktøjet hedder OneCLI og fungerer som en åben sikkerheds-gateway.",
-        "AI-agenter modtager kun falske nøgler og ser aldrig de rigtige koder.",
-        "Følsomme oplysninger gemmes krypteret med AES-256-GCM-standarden.",
-        "Selve trafikken håndteres af en hurtig gateway skrevet i programmeringssproget Rust.",
-        "Opsætningen kan køre lokalt uden login eller udvides med Google OAuth til hold.",
-        "Projektet inkluderer et webbaseret kontrolpanel til styring af tilladelser og agenter."
-      ],
-      "betydning": "For almindelige mennesker og virksomheder, der ønsker at automatisere hverdagen, mindsker denne type teknologi risikoen for, at følsomme data slipper ud i det fri. Ved at adskille de intelligente systemer fra de faktiske adgangskoder kan man tryggere tage nye digitale hjælpere i brug uden fryds for hacking eller utilsigtede datalæk.",
-      "pointer": [
-        "Ny åben kildekode-gateway beskytter mod læk af adgangskoder.",
-        "AI-agenter arbejder udelukkende med midlertidige og falske nøgler.",
-        "Følsomme data opbevares stærkt krypteret bag en sikker mur."
-      ],
-      "billedmotiv": "En aflåst metalkasse forbundet med et fint netværk af lysende kabler og en lille skærm med en grøn lås.",
-      "billede": "data/img/d9e05c57a7a5f793.jpg",
-      "kat_ai": true,
-      "prio": 6
-    },
-    {
-      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
-      "link": "https://github.com/palmier-io/palmier-pro",
-      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
-      "dato": "2026-07-23T15:11:37+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Nyhed: Gratis Mac-redigering lader dig styre videoer med AI",
-      "resume_da": "Et nyt, gratis videoprogram til Mac giver dig mulighed for at bygge film sammen med AI direkte på tidslinjen.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skabt til Mac",
-          "tekst": "Udviklerne har bygget programmet helt fra bunden i **Swift** for at ramme samme høje standarder som de professionelle systemer. Man kan hente værktøjet helt uden at oprette en brugerkonto eller betale en krone. Designet lægger sig tæt op ad kendte standarder, så man hurtigt føler sig hjemme ved tidslinjen."
-        },
-        {
-          "overskrift": "Arbejd med agenter",
-          "tekst": "Selve programmet starter en lokal server op på adressen **127.0.0.1**, hvilket gør det muligt at koble populære assistenter på. Du kan lade din foretrukne hjælper redigere direkte i projektet side om side med dig. Det åbner for helt nye måder at samarbejde om klipningen på."
-        },
-        {
-          "overskrift": "Åben kode",
-          "tekst": "Størstedelen af programmet deles frit med alle interesserede, så man kan kigge kildekoden efter i sømmene. Det er udelukkende de avancerede funktioner til at skabe nyt indhold, der holdes bag lukkede døre. Selve grundstrukturen og forbindelserne til de eksterne systemer er fuldt tilgængelige."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Programmet hedder Palmier Pro og er udviklet til Mac-computere.",
-        "Det kan gratis hentes uden krav om login.",
-        "Selve programkoden til redigering og servere er åben for alle.",
-        "Man kan koble værktøjer som Claude og Cursor på via MCP.",
-        "Serveren kører lokalt på port 19789."
-      ],
-      "betydning": "For almindelige videointeresserede betyder det her, at professionelle arbejdsgange pludselig bliver tilgængelige uden dyre abonnementer. Ved at lade AI overtage de tunge rutiner på tidslinjen kan hobbyskabere spare massevis af timer. Det fjerner de tekniske barrierer for at skabe flot indhold derhjemme.",
-      "pointer": [
-        "Ny gratis videoredigerer til Mac.",
-        "AI hjælper til direkte på tidslinjen.",
-        "Åben kildekode til de vigtigste dele.",
-        "Let integration med eksterne assistenter."
-      ],
-      "billedmotiv": "En Macbook stående på et rent træbord ved siden af en krus kaffe og et enkelt redigeret videoklip på skærmen.",
-      "billede": "data/img/a1df1f6c071a5b2f.jpg",
-      "kat_ai": true,
-      "prio": 6
-    },
-    {
       "titel": "Patreon is laying off 20 percent of workers",
       "link": "https://www.theverge.com/tech/970211/patreon-layoffs-ai",
       "resume": "Patreon is laying off 20 percent of its workers, or around 93 employees, as reported earlier by 404 Media. In a memo to employees, Patreon CEO Jack Conte writes that the company isn't making these changes \"because we believe AI replaces humans,\" but says AI has \"fundamentally transformed the tech industry, including how we work, […]",
@@ -1696,53 +1543,6 @@
       "billede": "data/img/7925d49071828ee3.jpg",
       "kat_ai": true,
       "prio": 7
-    },
-    {
-      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
-      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 243 # Comments: 271",
-      "dato": "2026-07-23T13:51:36+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Amerikansk militær flyver jagerfly styret af AI",
-      "resume_da": "Det amerikanske flyvevåben og DARPA har gennemført testflyvninger med en F-16 styret af AI.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Historisk flyvning",
-          "tekst": "Det amerikanske forsvars forskningsarm **DARPA** har sammen med landets flyvevåben taget et stort skridt ind i fremtiden. De har nemlig succesfuldt fløjet et militært **F-16** jagerfly, hvor det var en avanceret AI, der styrede maskinen i luften uden menneskelig indblanding i cockpittet."
-        },
-        {
-          "overskrift": "Massiv interesse",
-          "tekst": "Nyheden om det ubemandede jagerfly har vakt stor opsigt på nettet. Historien har modtaget **113** point og skabt en livlig debat med hele **105** kommentarer fra folk, der diskuterer konsekvenserne af at overlade militær flyvning til maskiner."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [
-        {
-          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
-          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
-          "kilde": "Hacker News: AI"
-        }
-      ],
-      "detaljer": [
-        "DARPA står bag testen sammen med det amerikanske flyvevåben.",
-        "Det testede fly er en F-16 jagerfly.",
-        "Styringen blev håndteret af AI.",
-        "Historien fik 113 point på Hacker News.",
-        "Der kom 105 kommentarer til opslaget."
-      ],
-      "betydning": "At militæret nu tester jagerfly styret helt af AI viser, hvor hurtigt teknologien udvikler sig. For almindelige mennesker rejser det vigtige spørgsmål om sikkerhed og etik, når maskiner overtager så magtfulde og potentielt farlige opgaver i vores forsvar.",
-      "pointer": [
-        "DARPA og det amerikanske flyvevåben testede AI-styret F-16.",
-        "Nyheden skabte stor debat på nettet med over 100 kommentarer.",
-        "Teknologien rykker tættere på militær virkelighed."
-      ],
-      "billedmotiv": "En grå F-16 jagerfly stående på en startbane med en stor digital skærm foran næsen, der viser kode og scanningslinjer i stedet for en pilot.",
-      "billede": "data/img/81638fb59aa553c7.jpg",
-      "kat_ai": true,
-      "prio": 6
     },
     {
       "titel": "Meta launched a new AI optimism ad set to a song about human extinction",
@@ -1868,45 +1668,6 @@
       "billede": "data/img/c6670d6970133a75.jpg",
       "kat_ai": true,
       "prio": 9
-    },
-    {
-      "titel": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
-      "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
-      "resume": "https://littletech.org/ https://static.politico.com/4a/bf/9c4021d8404386b0a311dcccf0... Comments URL: https://news.ycombinator.com/item?id=49023016 Points: 934 # Comments: 772",
-      "dato": "2026-07-23T15:18:40+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-23T15:18:40+00:00",
-      "rubrik": "Iværksættere advarer Trump mod at blokere kinesisk AI",
-      "resume_da": "En gruppe iværksættere forsøger at overtale Donald Trump til at lade kinesisk AI med åben kode forblive tilgængelig.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Bøn til Trump",
-          "tekst": "En gruppe stiftere af nye virksomheder råber nu op over for **Trump** administrationens planer. De frygter, at en lukning af adgangen til kinesisk teknologi vil skade udviklingen. Det drejer sig helt konkret om den type AI, hvor kildekoden ligger frit fremme for alle."
-        },
-        {
-          "overskrift": "Åben kode i spil",
-          "tekst": "Debatten handler om de åbne modeller fra Kina, som skaber stor røre i branchen. Disse systemer deles bredt, hvilket gør dem attraktive for mindre spillere på markedet. **Iværksætterne** mener, at et stop for disse værktøjer vil kvæle den frie konkurrence og innovation på tværs af landegrænser."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Iværksættere beder Trump om ikke at blokere kinesisk AI.",
-        "Modstanderne vil undgå et stop for åben kildekode.",
-        "Teknologien kommer fra Kina og deles frit i branchen."
-      ],
-      "betydning": "For helt almindelige danskere kan denne debat virke fjern, men den påvirker de digitale værktøjer, vi alle kommer til at bruge. Hvis der lægges politiske hindringer i vejen for den globale udvikling af åben kildekode, kan det gøre fremtidens teknologi dyrere og mindre tilgængelig. Det handler i bund og grund om, hvem der kommer til at kontrollere de systemer, der snarest bliver en fast del af vores hverdag.",
-      "pointer": [
-        "Iværksættere advarer Trump mod at lukke for kinesisk AI.",
-        "Konflikten drejer sig om modeller med åben kildekode.",
-        "Branchen frygter, at et stop vil skade innovationen."
-      ],
-      "billedmotiv": "En åben bærbar computer med kinesiske skrifttegn på skærmen ved siden af et amerikansk flag lavet af plastik.",
-      "billede": "data/img/0dbec3c324f5322f.jpg",
-      "kat_ai": true,
-      "prio": 7
     },
     {
       "titel": "Nvidia is sending GPUs to the moon",
@@ -2094,228 +1855,6 @@
       "prio": 8
     },
     {
-      "titel": "I think you might be fooling yourself with AI",
-      "link": "https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html",
-      "resume": "Article URL: https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html Comments URL: https://news.ycombinator.com/item?id=49021843 Points: 80 # Comments: 162",
-      "dato": "2026-07-23T14:05:43+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-23T14:05:43+00:00",
-      "rubrik": "Narres du af AI-snyd og falske gevinster?",
-      "resume_da": "Selvom AI føles effektivt, viser det sig ofte at være en illusion. Teknologien koster spidsen af en jetons, og regningen ender hos os.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Den store illusion",
-          "tekst": "Det føles fantastisk at lade AI skrive koden eller hjælpe med arbejdet. Vores egen hjerne narrer os nemt til at tro, at vi arbejder hurtigere. Men en stor undersøgelse fra **2025** viser faktisk det modsatte, for deltagerne var omkring **19 %** langsommere om at nå i mål, selvom de selv følte det modsatte."
-        },
-        {
-          "overskrift": "Regningen venter",
-          "tekst": "De nuværende priser er stærkt subsidierede af store tech-firmaer. Et abonnement til **200 dollars** dækker reelt forbrug for op til **14.000 dollars** via API'er. Når disse kæmpe tilskud stopper, vil den sande pris vælte budgetterne for både firmaer og private brugere."
-        },
-        {
-          "overskrift": "Salg og fyringer",
-          "tekst": "Mange virksomheder skyder skylden på AI, når de skærer i staben, men ofte dækker det blot over overansættelse. Pengene flyttes i stedet til at købe dyr teknologi. Hele branchen står på usikker grund med tårnhøje udgifter og manglende beviser for reelt overskud."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "19 %",
-          "label": "langsommere ifølge studiet fra slutningen af 2025"
-        },
-        {
-          "tal": "200 $",
-          "label": "månedlig pris for abonnementet"
-        },
-        {
-          "tal": "14.000 $",
-          "label": "reelle værdi i API-forbrug"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Udviklere følte sig hurtigere, men var faktisk omkring 19 % langkopmre med AI.",
-        "Der mangler uafhængig, videnskabelig dokumentation for reel produktivitetsfremgang.",
-        "Abonnementer til 200 dollars dækker en reel omkostning på 14.000 dollars.",
-        "Mange nylige fyringer skyldes såkaldt AI-washing frem for ægte effektivisering.",
-        "Næsten en billion dollar er investeret i en branche uden klare indtægtskilder.",
-        "Enorme energikrav og miljøomkostninger følger med brugen af teknologien."
-      ],
-      "betydning": "Forbrugerne risikerer at betale en meget højere pris i fremtiden, når tech-giganterne opgiver deres gigantiske tilskud til AI. Hvis teknologien viser sig at være en økonomisk blindgyde, kan det ramme hele økonomien hårdt. Derudover peger kritikken på, at vi overser alvorlige etiske og miljømæssige problemer ved ukritisk at omfavne systemerne.",
-      "pointer": [
-        "AI føles effektiv, men gør dig rent faktisk langsommere.",
-        "Dyre abonnementer er stærkt subsidierede og uholdbare på sigt.",
-        "Mange fyringer skyldes dårlig økonomi frem for AI-effekter."
-      ],
-      "billedmotiv": "En lommeregner der viser et skyhøjt beløb ved siden af en udbrændt elpære på et mørkt bord.",
-      "billede": "data/img/05543a07c49edb1a.jpg",
-      "kat_ai": true,
-      "prio": 5
-    },
-    {
-      "titel": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
-      "link": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
-      "resume": "Article URL: https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet Comments URL: https://news.ycombinator.com/item?id=49020999 Points: 649 # Comments: 342",
-      "dato": "2026-07-23T13:09:10+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-07-23T13:09:10+00:00",
-      "rubrik": "Tekngiganter skjuler gigantisk gæld bag smarte tricks",
-      "resume_da": "Fem store tech-giganter skjuler enorme gældsbeløb uden for regnskaberne for at finansiere dyre AI-investeringer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Enorme summer",
-          "tekst": "Udviklingen af stadig mere avancerede AI-modeller kræver enorme mængder regnekraft og gigantiske datacentre. For at følge med denne vilde udvikling sender tech-virksomhederne ufattelige pengestrømme ind i byggeriet. Det er en ekstremt dyr kamp, der drives af enorm hype og enorme låneoptag."
-        },
-        {
-          "overskrift": "Skjulte lån",
-          "tekst": "En stor avisundersøgelse viser, at blot **fem** amerikanske giganter — herunder **Alphabet**, **Microsoft**, **Amazon**, **Meta** og **Oracle** — gemmer på svimlende **1,65 billioner dollar** i gæld, som slet ikke fremgår af de officielle regnskabsoversigter. Det er mere end de **1,35 billioner dollar**, de selv har oplyst."
-        },
-        {
-          "overskrift": "Meta i spidsen",
-          "tekst": "Alene **Meta** står for omkring **420 milliarder dollar** af denne skjulte gæld. Det viser, hvor usikker situationen er blevet, og det vækker ubehagelige minder om det berygtede energiselskab Enron, der krakamerede i **2001** efter at have skjult milliardgæld i særlige selskabskonstruktioner for at pynte på tallene."
-        },
-        {
-          "overskrift": "Eksperternes frygt",
-          "tekst": "Smarte regnskabsmetoder er populære, men eksperter advarer om, at det kan vælte hele korthuset, hvis forretningen vakler. Der er fortsat en kæmpe kløft mellem de tårnhøje selskabsvurderinger og de ret beskedne indtægter fra teknologien, hvilket nærer frygten for en bristende boble."
-        },
-        {
-          "overskrift": "Sælger aktier",
-          "tekst": "For at skaffe nye penge udsteder giganterne også friske aktier, hvilket risikerer at udvande værdien for de nuværende aktionærer og svække tilliden. Det kan gøre dem ekstremt sårbare, hvis efterspørgslen på de mange nye datacentre svigter."
-        },
-        {
-          "overskrift": "Regnskaber på vej",
-          "tekst": "Pressekredsene holder vejret, da **fire** af de **fem** undersøgte virksomheder står over for at offentliggøre deres kvartalsregnskaber i den kommende tid. Det vil afsløre endnu mere om virkeligheden bag kulisserne."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1,65 billioner $",
-          "label": "skjult gæld hos fem tech-giganter"
-        },
-        {
-          "tal": "420 milliarder $",
-          "label": "gæld gemt væk af Meta alene"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai"
-        },
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://asia.nikkei.com/business/technology/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding"
-        }
-      ],
-      "detaljer": [
-        "Fem store amerikanske tech-giganter skjuler 1,65 billioner dollar i gæld uden for regnskaberne.",
-        "Det er mere end de 1,35 billioner dollar, de officielt har oplyst i deres seneste regnskaber.",
-        "Meta tegner sig for cirka 420 milliarder dollar af denne skjulte gæld.",
-        "Virksomhederne bruger særlige datterselskaber til at få deres økonomi til at se sundere ud.",
-        "Eksperter advarer om, at metoden minder om krakket i energiselskabet Enron.",
-        "Giganterne sælger også nye aktier for at finansiere de enorme data- og infrastrukturprojekter."
-      ],
-      "betydning": "Situationen viser, at boomet inden for AI er bygget på et fundament af lånte penge og voldsom finansiel risiko. Hvis slutbrugerne og virksomhederne ikke ender med at betale for de dyre tjenester, kan det føre til et markant krak i tech-sektoren, hvilket vil kunne mærkes på de globale finansmarkeder og ramme helt almindelige pensionsopsparere og investorer.",
-      "pointer": [
-        "Fem giganter skjuler enorme milliardbeløb uden for de officielle regnskaber.",
-        "Metoden vækker minder om det historiske Enron-krak.",
-        "Eksperter frygter, at AI-branchen er en stor økonomisk boble.",
-        "Nye kvartalsregnskaber kan afsløre endnu flere svagheder."
-      ],
-      "billedmotiv": "En stabel officielle regnskabshæfter, hvor der stikker mørke regninger og udlejningskontrakter ud fra bunden af stablen.",
-      "billede": "data/img/4595b84e0d7ff403.jpg",
-      "kat_ai": true,
-      "prio": 9
-    },
-    {
-      "titel": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
-      "link": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
-      "resume": "Article URL: https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china Comments URL: https://news.ycombinator.com/item?id=49020868 Points: 284 # Comments: 321",
-      "dato": "2026-07-23T13:00:03+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-23T13:00:03+00:00",
-      "rubrik": "De store tech-giganter slår sig sammen mod nye trusler",
-      "resume_da": "De to sværvægtere OpenAI og Anthropic går nu sammen om at beskytte deres forretning mod nye konkurrenter.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fælles front",
-          "tekst": "De toneangivende virksomheder **OpenAI** og **Anthropic** har besluttet at stå sammen i en uventet alliance. De er bekymrede for, at frit tilgængelige teknologimodeller kan skade deres indtjening og markedsandel alvorligt. Derfor forsøger de at overbevise beslutningstagere om at stramme grebet, så deres egen lukkede forretningsmodel forbliver den mest attraktive på markedet."
-        },
-        {
-          "overskrift": "Politiske spil",
-          "tekst": "Alliancen forsøger at påvirke den politiske dagsorden for at bremse udbredelsen af de frit delte systemer. Særligt **Trump**-administrationen og udviklingen i **Kina** spiller en central rolle i de argumenter, giganterne bruger. De forsøger at overbevise magthaverne om, at åbenhed udgør en sikkerhedsrisiko, som kan true landets position."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI og Anthropic er gået sammen mod frie modeller.",
-        "Truslen retter sig mod virksomhedernes samlede indtjening.",
-        "Debatten involverer politiske kræfter som Trump.",
-        "Udviklingen i Kina indgår som et centralt argument i konflikten."
-      ],
-      "betydning": "Når de største aktører på markedet forsøger at begrænse udbredelsen af frit tilgængelig teknologi, kan det ende med at lægge en dæmper på den frie konkurrence. For almindelige forbrugere kan det betyde færre gratis og uafhængige alternativer, da magten samles hos færre kommercielle spillere. Prisen for at benytte disse tjenester kan også blive påvirket, hvis giganterne får held med at skabe et marked uden reel modstand fra åbne projekter.",
-      "pointer": [
-        "To store udbydere danner alliance",
-        "Frie modeller truer indtjeningen",
-        "Politisk indflydelse søges"
-      ],
-      "billedmotiv": "En pengeseddel der ligger klemt fast mellem to tunge mønsterbeskyttede metalkasser uden håndtag.",
-      "billede": "data/img/3c61adabc8ba69ce.jpg",
-      "kat_ai": true,
-      "prio": 7
-    },
-    {
-      "titel": "Understanding the AI Economy",
-      "link": "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/",
-      "resume": "Article URL: https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/ Comments URL: https://news.ycombinator.com/item?id=49020335 Points: 73 # Comments: 145",
-      "dato": "2026-07-23T12:11:05+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-07-23T12:11:05+00:00",
-      "rubrik": "Sådan bruger milliarder af mennesker egentlig AI",
-      "resume_da": "En ny stor undersøgelse afslører, hvordan mennesker verden over faktisk indretter deres hverdag og arbejdsliv med AI.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kæmpe data-indsamling",
-          "tekst": "Projektet **ATLAS** kigger dybt i, hvordan almindelige mennesker anvender moderne teknologi i hverdagen. Det første store datasæt bygger på millioner af anonymiserede samtaler på tværs af **150** lande. Formålet er at skabe et klart billede af den igangværende forandring."
-        },
-        {
-          "overskrift": "Hjælp til opgaver",
-          "tekst": "Undersøgelsen viser, at de fleste foretrækker at lade teknologien fungere som en praktisk makker frem for at overtage alt arbejdet. Folk på tværs af brancher bruger værktøjet til at løse opgaver hurtigere. Det gælder både på traditionelle kontorer og ude på diverse værksteder."
-        },
-        {
-          "overskrift": "Fremtidens retning",
-          "tekst": "Eksperter understreger, at den økonomiske omvæltning ikke sker af sig selv. Samfundet skal i fællesskab forme brugen af de nye systemer klogt. Derfor er det afgørende med konkrete kendsgerninger for at træffe de rigtige beslutninger fremover."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Undersøgelsen hedder ATLAS og står for Activity, Task, Landscape, and Adoption Study.",
-        "Første version bygger på **15 millioner** anonymiserede menneske-AI-interaktioner.",
-        "Data dækker over **150** lande og **140** forskellige sprog.",
-        "Rapporten omfatter hele **800** forskellige erhverv og **4.000** unikke opgaver.",
-        "Forskningsprojektet er udviklet med omfattende beskyttelse af personfølsomme oplysninger."
-      ],
-      "betydning": "At forstå hvordan mennesker rent faktisk benytter AI i deres dagligdag er afgørende for at forudsige fremtidens jobmarked og økonomi. Når virksomheder og politikere får adgang til faktuel viden om teknologiens udbredelse, kan de bedre tilpasse uddannelser og støtteordninger. På sigt kan det være med til at sikre, at gevinsten ved automatisering kommer hele samfundet til gode i stedet for blot at skabe usikkerhed om fremtidige arbejdspladser.",
-      "pointer": [
-        "Nyt studie karterer global AI-brug",
-        "Teknologien bruges mest som hjælper",
-        "Grundig beskyttelse af privatlivet"
-      ],
-      "billedmotiv": "En åben skødecomputer på et lyst træbord omgivet af trykte landkort og farvede noter.",
-      "billede": "data/img/5fb1a0d1d9328cd3.jpg",
-      "kat_ai": true,
-      "prio": 6
-    },
-    {
       "titel": "How AI helps scientists design the next generation of medicines",
       "link": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/",
       "resume": "Designing and developing a new medicine is an expensive, failure-prone scientific challenge. A new drug can take many years to develop, at the cost of a significant investment. And even then, most possible candidates never reach the patient. For biologic medicines, therapies made from engineered proteins rather than synthetic chemistry (which are often used to…",
@@ -2359,51 +1898,6 @@
       "billede": "data/img/54155f1a16cd7e47.jpg",
       "kat_ai": true,
       "prio": 7
-    },
-    {
-      "titel": "New Framework Desktop Option with AMD Ryzen AI Max+ Pro 495 and 192GB Memory",
-      "link": "https://frame.work/desktop?tab=192gb-coming-soon",
-      "resume": "Article URL: https://frame.work/desktop?tab=192gb-coming-soon Comments URL: https://news.ycombinator.com/item?id=49019694 Points: 76 # Comments: 110",
-      "dato": "2026-07-23T11:09:48+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-23T11:09:48+00:00",
-      "rubrik": "Ny computer med vild mængde hukommelse",
-      "resume_da": "Selskabet bag de modulære computere lancerer en ny stationær maskine med en kraftfuld **AMD**-processor og en massiv mængde hukommelse.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kraftfuldt indmad",
-          "tekst": "Producenten Framework har løftet sløret for en ny stationær opsætning, som er udrustet med en **AMD Ryzen AI Max+ Pro 495**-processor. Det er en stærk komponent, der gør maskinen særligt velegnet til krævende opgaver, hvor AI-programmer skal køre direkte på selve hardwaren uden at sløve resten af systemet."
-        },
-        {
-          "overskrift": "Enorm hukommelse",
-          "tekst": "Det mest opsigtsvækkende ved den nye maskine er den gigantiske mængde RAM, der følger med. Hele **192GB** hukommelse bliver tilgængeligt, hvilket giver rigelig plads til at køre store AI-modeller og komplekse programmer på din egen hjemme- eller kontorcomputer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "192 GB",
-          "label": "hukommelse i den nye maskine"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Framework står bag den nye stationære computerløsning.",
-        "Maskinen benytter en AMD Ryzen AI Max+ Pro 495-processor.",
-        "Computeren leveres med hele 192GB hukommelse.",
-        "Nyheden har vakt opsigt online med 68 point og 89 kommentarer."
-      ],
-      "betydning": "For almindelige mennesker betyder udviklingen, at det bliver langt nemmere at køre store og avancerede AI-modeller derhjemme på sin egen computer. Med så massiv en mængde hukommelse behøver man ikke længere at være afhængig af store og dyre internet-skyer for at udnytte den nyeste teknologi.",
-      "pointer": [
-        "Framework lancerer ny stationær computerløsning.",
-        "Udstyret med AMD Ryzen AI Max+ Pro 495.",
-        "Kommer med en massiv hukommelse på 192GB."
-      ],
-      "billedmotiv": "Et åbent computerkabinet fyldt med enorme hukommelsesklodser og en stor køler på processoren.",
-      "billede": "data/img/8adfaec514b4849e.jpg",
-      "kat_ai": true,
-      "prio": 6
     },
     {
       "titel": "Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
@@ -3120,52 +2614,6 @@
       "prio": 8
     },
     {
-      "titel": "Are AI labs pelicanmaxxing?",
-      "link": "https://dylancastillo.co/posts/pelicanmaxxing.html",
-      "resume": "Article URL: https://dylancastillo.co/posts/pelicanmaxxing.html Comments URL: https://news.ycombinator.com/item?id=49010129 Points: 667 # Comments: 240",
-      "dato": "2026-07-22T17:17:54+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-22T17:17:54+00:00",
-      "rubrik": "Snyder udviklerne med en skør test?",
-      "resume_da": "En kendt uformell test med en pelikan på cykel mistænkes for at blive udnyttet af selskaberne bag AI. En ny stor undersøgelse afslører sandheden.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Den skøre test",
-          "tekst": "Et skævt billede af en pelikan på cykel er blevet en fast målestok for, hvor dygtige systemerne er til at tegne. Da der er styrtende rigdomme på spil i branchen, opstår mistanken om, at udviklerne måske snyder og træner deres modeller specifikt til at mestre netop dette motiv. For at finde ud af om mistanken taler sandt, har en uafhængig entusiast sat sig for at undersøge sagen til bunds med en stor mængde testbilleder."
-        },
-        {
-          "overskrift": "Overraskende resultater",
-          "tekst": "Undersøgelsen viser stik mod forventning, at fuglen og cyklen faktisk klarer sig ret sløjt. Systemerne tegner langt hellere almindelige kæledyr og store havdyr langt bedre end den berømte fugl. Cyklen placerer sig også i den kedelige ende af statistikken, fordi det er en teknisk svær udfordring at gengive eger, pedaler og stel korrekt. De snyder altså næppe med netop dette motiv."
-        },
-        {
-          "overskrift": "Hvad det betyder",
-          "tekst": "Selvom visse genkendelige detaljer går igen på tværs af tegningerne, peger alt på, at det skyldes naturlige begrænsninger frem for snyd. Når alle modeller konsekvent vender figuren mod højre, skyldes det udelukkende, at det er lettest at gengive fra siden. For almindelige mennesker betyder det, at de populære målestokke på nettet er sjove, men at de ikke afslører decideret snyd bag kulisserne hos udviklerne."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "En uformel tegnetest med en pelikan på cykel er blevet kendt i tech-miljøet.",
-        "Kritikere mistænker udviklerne for at finpudse systemerne netop til dette motiv.",
-        "En ny analyse af et stort antal tegninger modbeviser teorien om snyd.",
-        "Fuglen og cyklen placerer sig overraskende lavt i den samlede kvalitetsscore.",
-        "Simle kæledyr og store havdyr tegnes generelt meget bedre end det kendte motiv.",
-        "Alle testede systemer tegner fuglen vendt mod højre på grund af geometrisk lethed."
-      ],
-      "betydning": "Undersøgelsen viser, at man ikke ukritisk skal stole på sjove internettests, når man vurderer kvaliteten af ny teknologi. For almindelige forbrugere betyder det, at tech-branchens egne markedsføringstricks og populære trends på sociale medier sjældent afspejler den virkelige formåen, hvilket gør det vigtigt at forholde sig kritisk til digitalt indhold og populære målestokke.",
-      "pointer": [
-        "En kendt pelikan-test mistænkes for snyd.",
-        "Ny stor undersøgelse afviser mistanken fuldstændigt.",
-        "Modellerne er bare dårlige til cykler."
-      ],
-      "billedmotiv": "En klassisk gul cykel parkeret op ad en hvid mur ved siden af en stor fjerpind og et digitalt målebånd.",
-      "billede": "data/img/d3d4fa178c838663.jpg",
-      "kat_ai": true,
-      "prio": 5
-    },
-    {
       "titel": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
       "link": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
       "resume": "As Chinese AI models grow in capability and popularity among U.S. companies, the arguing over what should be done about them has reached a fever pitch.",
@@ -3210,46 +2658,6 @@
       "billede": "data/img/08a5fdf75f8bea81.jpg",
       "kat_ai": true,
       "prio": 6
-    },
-    {
-      "titel": "Quality non-fiction books are the antithesis of AI slop",
-      "link": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the",
-      "resume": "https://book-prize-index.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=49007247 Points: 481 # Comments: 235",
-      "dato": "2026-07-22T14:18:05+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-22T14:18:05+00:00",
-      "rubrik": "Hvorfor ægte bøger slår hurtigt lavet indhold",
-      "resume_da": "Fagbøger af høj kvalitet bliver fremhævet som modgiften til det overflødige indhold, som AI spytter ud.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kampen mod skrammel",
-          "tekst": "Der er stor forskel på det grundige og det overfladiske. Mens maskiner hurtigt kan generere store mængder tekst, står de traditionelle fagbøger for det modsatte. De er skabt med dybde, research og ægte menneskelig omtanke, som det digitale skidt har svært ved at matche."
-        },
-        {
-          "overskrift": "Værdsat af læserne",
-          "tekst": "Debatten om kvaliteten af det indhold, vi omgiver os med, fylder meget blandt læserne. Flere fremhæver, at de ægte udgivelser giver en langt større værdi, fordi der ligger rigtigt arbejde bag. Det viser, at folk stadig foretrækker substans frem for hurtige genveje."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Fagbøger af høj kvalitet fremhæves som modgiften til dårligt digitalt indhold.",
-        "Mange reagerer på det store pres med automatisk genererede tekster.",
-        "Ægte forfatterskab kræver tid og grundig menneskelig research.",
-        "Debatten viser en voksende modreaktion mod det hurtige indhold."
-      ],
-      "betydning": "For almindelige mennesker betyder det, at vi fremover vil værdsætte ægte, menneskeskabt indhold endnu højere. Når internettet flyder over med letkøbt tekst, stiger værdien af det ægte håndværk, og det kan gøre de trykte bøger og dybdegående artikler til en kærkommen pause fra skærmens hurtige strøm.",
-      "pointer": [
-        "Fagbøger er modgiften til automatisk genereret tekst.",
-        "Kvalitet slår hurtigt produceret indhold på nettet.",
-        "Læserne foretrækker dybde frem for kvantitet."
-      ],
-      "billedmotiv": "En enkelt slidt bog i læderindbinding ved siden af en glødende skærm med endeløse tekstlinjer.",
-      "billede": "data/img/789a5b2d596c0eba.jpg",
-      "kat_ai": true,
-      "prio": 5
     },
     {
       "titel": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
@@ -3446,58 +2854,6 @@
       ],
       "billedmotiv": "En computer skærm der viser en avisartikel ved siden af et glødende digitalt netværk.",
       "billede": "data/img/f1b719b557b175d7.jpg",
-      "kat_ai": true,
-      "prio": 5
-    },
-    {
-      "titel": "Businesses with ugly AI menu redesigns",
-      "link": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
-      "resume": "Article URL: https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/ Comments URL: https://news.ycombinator.com/item?id=49005973 Points: 373 # Comments: 300",
-      "dato": "2026-07-22T12:49:45+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-22T12:49:45+00:00",
-      "rubrik": "Restaurant vækker opsigt med nye AI-menukort",
-      "resume_da": "En restaurant fik kritik for at bruge maskinelt genererede menukort, selvom maden stadig smagte glimrende.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Menuens nye udtryk",
-          "tekst": "Et besøg på en populær spisesteder tog en uventet drejning, da gæsterne opdagede, at menukortet havde fået en digital overhaling. De visuelle elementer bar præg af at være skabt af AI, hvilket skuffede gæsteselskabet, der primært bestod af kreative fagfolk med sans for æstetisk design."
-        },
-        {
-          "overskrift": "Smagen fejlede intet",
-          "tekst": "Trods det uheldige visuelle udtryk på de nye kort levede maden heldigvis op til forventningerne. Retten til **10** dollars smagte præcis som hjemmelavet morgenmad lavet af en mor, hvilket skabte et sjovt dilemma for gæsterne, der elsker at støtte lokale spisesteder."
-        },
-        {
-          "overskrift": "Det svære valg",
-          "tekst": "Mange mindre erhvervsdrivende kæmper med stramme budgetter, men brugen af computergenereret grafik møder alligevel modstand. Forfatteren bag oplevelsen indrømmer ærligt, at klassiske, udskældte skrifttyper som **Comic Sans** ville være at foretrække frem for de mærkelige, digitale illustrationer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "10 $",
-          "label": "pris på den bestilte ret"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Restauranten serverede filippinsk og hawaiiansk mad med familiestemning.",
-        "Selve menukortet var blevet redesignet ved hjælp af AI.",
-        "Gæsterne, der opdagede det, arbejdede selv med kunst og design.",
-        "Retten med spam og hvidløgsris kostede kun **10** dollars.",
-        "Madens smag mindede om hjemmelavet morgenmad fra barndommen.",
-        "Små virksomheder tyr ofte til den nye teknologi på grund af økonomi."
-      ],
-      "betydning": "Historien viser, hvordan ny teknologi sniger sig ind i hverdagen hos helt almindelige, små erhvervsdrivende. Forbrugerne står tilbage med et dilemma, hvor de gerne vil bakke op om lokale butikker, men samtidig væmmes ved den billige, digitale æstetik, der erstatter menneskeligt håndværk.",
-      "pointer": [
-        "Lokalt spisested skiftede til AI-menukort",
-        "Gæsterne fandt det visuelle udtryk rædselsvækkende",
-        "Maden smagte stadig fantastisk godt",
-        "Små virksomheder mangler ofte designforståelse"
-      ],
-      "billedmotiv": "En slidt restaurantmenu i papir, hvor billedet af en spejlæg-ret har tydelige, forvrænget digitale fejl i form af for mange fingre på en gaffel.",
-      "billede": "data/img/19b598f32bb88882.jpg",
       "kat_ai": true,
       "prio": 5
     },
@@ -3803,97 +3159,6 @@
       ],
       "billedmotiv": "En computerudskrift med fejlkoder ved siden af et stopur, der viser præcis en halv time.",
       "billede": "data/img/b7abf12e5685ae66.jpg",
-      "kat_ai": true,
-      "prio": 6
-    },
-    {
-      "titel": "AI Agent – TRMNL",
-      "link": "https://help.trmnl.com/en/articles/14130438-ai-agent",
-      "resume": "Article URL: https://help.trmnl.com/en/articles/14130438-ai-agent Comments URL: https://news.ycombinator.com/item?id=48996236 Points: 51 # Comments: 29",
-      "dato": "2026-07-21T18:32:21+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-21T18:32:21+00:00",
-      "rubrik": "Byg egne programmer ved blot at skrive",
-      "resume_da": "Med det nye værktøj fra TRMNL kan du skabe plugins ved hjælp af almindelig tekst og AI.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sådan virker det",
-          "tekst": "Systemet lader dig beskrive dine ønsker i en almindelig besked, hvorefter AI klarer opgaven. Du skal blot koble en nøgle fra udbydere som OpenRouter eller Claude til opsætningen. Hvis du ønsker, at programmet selv skal finde oplysninger på nettet, kan du supplere med en gratis nøgle til internetsøgning."
-        },
-        {
-          "overskrift": "Forbind med omverdenen",
-          "tekst": "Bag kulisserne har holdet bag TRMNL udstyret systemet med udførlige instrukser på almindeligt sprog. Det giver den digitale hjælper adgang til nyttige redskaber som redigering, opdatering af indstillinger og live-søgning. Desuden kan du hente en særlig nøgle, hvis du vil køre processerne direkte på din egen computer."
-        },
-        {
-          "overskrift": "Priser og modeller",
-          "tekst": "Du bestemmer selv, hvilken motor der skal drive værktøjet, og du kan vælge alt fra kendte modeller som Claude Sonnet til åbne systemer. I et konkret eksempel kostede det **2,20 USD** at udvikle et færdigt program, og processen tog blot et par minutter. Indtil videre godkender holdet bag alle indsendte programmer manuelt, da de forventer et stort boom i mængden."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$2,20 USD",
-          "label": "samlet pris for at udvikle et plugin"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Værktøjet kræver en API-nøgle fra eksempelvis OpenRouter eller Claude.",
-        "En gratis Tavily-nøgle giver adgang til internetsøgning.",
-        "Udviklingen af et simpelt program tog et par minutter.",
-        "Prisen for at skabe et nyt plugin landede på **2,20 USD**.",
-        "Systemet understøtter flere forskellige motorer som Gemini og Claude Sonnet."
-      ],
-      "betydning": "For almindelige mennesker betyder denne type teknologi, at den tekniske barriere for at skabe egne digitale løsninger forsvinder. Du behøver ikke længere at kunne programmere for at føre en god idé ud i livet, da du blot kan fortælle maskinen, hvad du ønsker. Det vil gøre det langt hurtigere og billigere at udvikle skræddersyede værktøjer til både arbejde og fritid.",
-      "pointer": [
-        "Skab programmer ved at skrive almindelig tekst",
-        "Kræver tilknytning af en ekstern nøgle",
-        "Understøtter en lang række populære modeller",
-        "Koster et lille beløb per færdigt program"
-      ],
-      "billedmotiv": "En computer skærm med en enkelt linje tekst i et simpelt skrivefelt, og ved siden af ligger en pung med en mønt på.",
-      "billede": "data/img/34e1831114b1effe.jpg",
-      "kat_ai": true,
-      "prio": 5
-    },
-    {
-      "titel": "AI makes programming differently difficult",
-      "link": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/",
-      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 164 # Comments: 142",
-      "dato": "2026-07-21T18:30:21+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-21T18:30:21+00:00",
-      "rubrik": "Hvorfor kodning med AI slet ikke er blevet lettere",
-      "resume_da": "Ny debat viser, at AI ikke fjerner problemerne ved programmering, men blot ændrer dem til en ny type udfordringer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "En ændret hverdag",
-          "tekst": "Mange tror fejlagtigt, at brugen af AI fjerner alt det svære arbejde med at skabe programmer og systemer. I virkeligheden oplever udviklere blot, at sværhedsgraden flytter sig til andre områder af processen, så man skal tænke på en helt ny måde."
-        },
-        {
-          "overskrift": "Fokus på detaljen",
-          "tekst": "Når teknologien klarer de første skridt, opstår der nye flaskehalse og udfordringer, som man skal forholde sig til. Det kræver stadig stor ekspertise at gennemskue og rette de fejl, der kan snige sig ind i det færdige arbejde."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "AI har ændret måden, man griber programmering an på.",
-        "Sværhedsgraden er ikke faldet, men blot blevet anderledes.",
-        "Debatten om udviklingen har tiltrukket **163** point online.",
-        "Tråden om emnet rummer **141** kommentarer."
-      ],
-      "betydning": "For helt almindelige mennesker betyder det, at løsninger skabt med AI ikke bare kører fejlfrit af sig selv. Selvom det kan virke som om, at teknologien gør det hele hurtigere, vil der stadig være brug for grundig menneskelig kontrol og forståelse for at sikre, at slutresultatet rent faktisk fungerer i praksis.",
-      "pointer": [
-        "AI gør ikke programmering lettere.",
-        "Svampede opgaver erstattes af nye udfordringer.",
-        "Menneskelig kontrol er fortsat afgørende."
-      ],
-      "billedmotiv": "En bærbar computer med en glødende sløjfekode på skærmen ved siden af et forstørrelsesglas.",
-      "billede": "data/img/fc6b848cd5055e31.jpg",
       "kat_ai": true,
       "prio": 6
     },
@@ -5673,7 +4938,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et reagensglas med grøn væske og en stor guldmynt ved siden af."
+      "billedmotiv": "En petriskål med bakterier viklet ind i et rødt, digitalt sikkerhedsbånd."
     },
     {
       "titel": "ChatGPT is now a partner for your most ambitious work",
