@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-07-24T06:42:29.995486+00:00",
+  "opdateret": "2026-07-24T10:01:50.933694+00:00",
   "antal": 123,
   "artikler": [
     {
@@ -10,10 +10,9 @@
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 7,
       "rubrik": "Sikkerhedsbarrierer spæner ben for it-eksperter",
       "resume_da": "Skarpe sikkerhedsspærringer i AI-modeller forsøger at stoppe kriminelle, men spæner i stedet ben for de etiske eksperter, der skal beskytte os.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Skarpe spærringer",
@@ -28,9 +27,8 @@
           "tekst": "De strenge begrænsninger skubber i stigende grad de etiske eksperter væk fra de officielle systemer og over mod åbne, udenlandske alternativer, der kører lokalt uden nogen form for kontrol. Det vækker bekymring for, at de professionelle forsvarere sakker bagud i kapløbet om at beskytte mod fremtidige angreb."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Teknologigiganter har indført strenge sikkerhedsbarrierer for at forhindre skadelige hackerangreb.",
         "Sikkerhedsfolk og forskere oplever, at de strenge filtre spæner ben for deres legitime arbejde.",
@@ -46,7 +44,9 @@
         "Strenge regler skubber eksperter over mod uregulerede alternativer."
       ],
       "billedmotiv": "En computerterminal med rød advarselstekst på skærmen, ved siden af en klassisk værktøjskasse i metal og en mørk serverenhed.",
-      "billede": "data/img/9fe7f31da4b03b4c.jpg"
+      "billede": "data/img/9fe7f31da4b03b4c.jpg",
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "AINTMA: Agentic AI Architecture for Autonomous Test Management with Generative Intelligence, Secure Cloud Communication and Adaptive Quality Analytics",
@@ -56,8 +56,12 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
+      "rubrik": "Computere skal selv teste programmer og finde fejl",
+      "resume_da": "Forskere har lavet et system, hvor selvkørende computerprogrammer selv finder fejl i ny kode.",
       "kat_ai": true,
-      "prio": 2
+      "prio": 3,
+      "billedmotiv": "Et tastatur, hvor tasterne er erstattet af røde advarselstrekanter og et lupglas.",
+      "billede": "data/img/730e6adf1f50ff55.jpg"
     },
     {
       "titel": "Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts",
@@ -67,10 +71,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Nye svagheder afsløret i AI-fingeraftryk på sygehuse",
       "resume_da": "Forskere har undersøgt, hvordan man sporer AI-tekster i sundhedsvæsnet, og fundet store udfordringer med de nuværende metoder.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Skjulte mærker",
@@ -81,9 +84,8 @@
           "tekst": "Læger og sygehuse bruger en helt særlig fagterminologi med lange, præcise ord og faste vendinger. Denne stramme struktur spænder ben for de usynlige mærker. Systemerne fejler nemlig, fordi de forveksler den medicinske fagsprogstone med de spor, som AI normalt efterlader."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har undersøgt systemer til at spore AI-tekster inden for medicin.",
         "Metoderne til at mærke AI-indhold har svære kår i den sundhedsfaglige genre.",
@@ -97,7 +99,9 @@
         "Sikkerheden på sygehuse skal tænkes om"
       ],
       "billedmotiv": "En hvid lægebrik i plast ved siden af et forstørrelsesglas på et sterilt, lyseblåt metalbord.",
-      "billede": "data/img/418890ee338a113b.jpg"
+      "billede": "data/img/418890ee338a113b.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "ClickGuard: Detecting and Spoiling Clickbait News with Informativeness Measures and Large Language Models",
@@ -107,10 +111,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 4,
       "rubrik": "Ny teknologi afslører clickbait og ødelægger overraskelsen",
       "resume_da": "Forskere har udviklet et nyt system, som både kan fange manipulative overskrifter og afsløre indholdet på forhånd med hjælp fra AI.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Fælden lukker i",
@@ -121,9 +124,8 @@
           "tekst": "Systemet bærer navnet ClickGuard og kombinerer avancerede målinger af, hvor meget information en overskrift egentlig indeholder, med moderne AI-modeller. Når programmet opdager en manipulerende artikel, nøjes det ikke bare med at advare læseren – det afslører ganske enkelt hele pointen med det samme, så man slet ikke behøver at klikke."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Teknologien hedder **ClickGuard** og er udviklet af en forskergruppe ledet af **Wojciech Michaluk**.",
         "Systemet er designet til at bekæmpe manipulative nyhedsoverskrifter på internettet.",
@@ -138,7 +140,9 @@
         "AI og informationsmålinger bruges til at gennemskue fup."
       ],
       "billedmotiv": "En computerudskrift af en overskrift med store bogstaver, hvor en rød streg skærer igennem og viser den virkelige sandhed nedenunder.",
-      "billede": "data/img/f37d9e0e3616e6eb.jpg"
+      "billede": "data/img/f37d9e0e3616e6eb.jpg",
+      "kat_ai": true,
+      "prio": 4
     },
     {
       "titel": "Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between Temperature Variation and Model Diversity in LLMs",
@@ -148,10 +152,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 1,
       "rubrik": "Derfor giver det samme svar, selvom du ændrer indstillingerne",
       "resume_da": "Ny forskning viser, at når vi beder AI om at være kreativ ved at skrue på temperaturen, ændrer vi reelt kun overfladen.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "En falsk følelse af variation",
@@ -162,9 +165,8 @@
           "tekst": "Årsagen er, at den matematiske dybde i svarene er begrænset af selve modellens grundopbygning. Selvom ordene skifter, bevæger systemet sig rundt i præcis det samme lukkede rum af idéer. Det svarer til at male den samme bil i forskellige farver frem for rent faktisk at skifte køretøjet ud."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har analyseret forholdet mellem temperaturvariation og reel modeldiversitet.",
         "At skrue på temperaturen ændrer kun overfladen af modellens svar.",
@@ -179,7 +181,9 @@
         "Rigtig diversitet kræver helt andre modeller."
       ],
       "billedmotiv": "En klassisk farveskala på et skrivebord, hvor den samme genstand gentager sig i fem forskellige nuancer uden at skifte form.",
-      "billede": "data/img/55686d52cc0389ed.jpg"
+      "billede": "data/img/55686d52cc0389ed.jpg",
+      "kat_ai": true,
+      "prio": 1
     },
     {
       "titel": "JAXBench: Benchmarking Autonomous TPU Kernel Optimization",
@@ -189,10 +193,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny testmetode gør AI hurtigere på specialchips",
       "resume_da": "Forskere har udviklet en ny testramme, kaldet JAXBench, som gør det muligt for AI at optimere tunge beregninger på specialdesignede TPU-chips helt automatisk.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Flaskehalsen i maskinen",
@@ -203,9 +206,8 @@
           "tekst": "En gruppe forskere har nu skabt et system, der lader AI overtage dette slidsomme arbejde. Ved at bruge den nye testramme kan teknologien selv eksperimentere med og forbedre de afgørende kodeelementer. Det betyder, at systemerne lynhurtigt finder frem til den mest effektive måde at udføre de tunge beregninger på, uden at mennesker skal gribe ind undervejs."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne har lanceret et nyt system til optimering af koden bag AI.",
         "Rammen hedder JAXBench og fokuserer på specifikke hardwarekomponenter.",
@@ -220,7 +222,9 @@
         "Gør udnyttelsen af specialchips langt bedre"
       ],
       "billedmotiv": "En avanceret mikrochip omgivet af glødende datalinjer på en mørk baggrund, som illustrerer intelligent optimering af hardware.",
-      "billede": "data/img/85f26b4684679d50.jpg"
+      "billede": "data/img/85f26b4684679d50.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding",
@@ -230,10 +234,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny metode gør AI drønende hurtig uden ekstra træning",
       "resume_da": "Forskere har udviklet en snedig genvej, der lader AI generere tekst i et hæsblæsende tempo uden at skulle genoptrænes fra bund af.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Flaskehalsen brydes",
@@ -244,9 +247,8 @@
           "tekst": "Metoden fungerer ved først at lave et hurtigt udkast til teksten, som derefter bruges som et slags kort. AI kan nu vurdere, hvor den trygt kan tage store skridt fremad i stedet for at gå i sneglefart gennem hver eneste sætningsdel. Det betyder, at systemet i praksis gætter sig frem til de næste store blokke af ord med stor præcision."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Den nye teknik hedder DC-Leap og accelererer tekstgenerering.",
         "Metoden fungerer helt uden nogen form for forudgående træning.",
@@ -260,7 +262,9 @@
         "Systemet springer over unødvendige trin."
       ],
       "billedmotiv": "En åben bærbar computer, hvor skærmen viser flydende tekst, der springer over store blokke af ord i et lynhurtigt tempo.",
-      "billede": "data/img/79816e7658567f84.jpg"
+      "billede": "data/img/79816e7658567f84.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
@@ -270,10 +274,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny test afslører hvordan AI gør sig selv hurtigere",
       "resume_da": "Forskere har udviklet en ny test, der viser, hvordan AI-systemer selv kan regne ud, hvordan de arbejder hurtigere og smartere.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ny testmetode",
@@ -284,9 +287,8 @@
           "tekst": "Når en stor sprogmodel skal svare på spørgsmål, kræver det enorme mængder regnekraft. I stedet for at eksperter manuelt retter koden, lader man nu AI-agenter om at eksperimentere sig frem til de bedste løsninger. De tester forskellige måder at køre på og finder selv de flaskehalse, der bremser systemet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "En ny testmetode ved navn InferenceBench er blevet lanceret.",
         "Målet er at optimere, hvordan AI kører i praksis.",
@@ -300,7 +302,9 @@
         "Målet er at skære ned på spildt regnekraft."
       ],
       "billedmotiv": "En åben bærbar computer, hvor skærmen viser flydende kode i stærke farver, flankeret af et digitalt stopur.",
-      "billede": "data/img/9dabe2ca2e9750c7.jpg"
+      "billede": "data/img/9dabe2ca2e9750c7.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
@@ -310,10 +314,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 1,
       "rubrik": "Ny forskning åbner døren til AI's indre tankemønstre",
       "resume_da": "Forskere har udviklet en ny metode til at spore og forstå de usynlige beslutninger, som AI træffer, mens den genererer tekst.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ind i maskinen",
@@ -328,9 +331,8 @@
           "tekst": "At kunne følge med i disse skjulte processer giver en helt enestående kontrol over teknologien. Fremover kan det blive langt enklere at opdage fejl, før de dukker op i det færdige svar. Det baner vejen for langt mere pålidelige systemer, som vi bedre kan stole på i hverdagen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har undersøgt, hvordan AI træffer beslutninger under selve skriveprocessen.",
         "Metoden kaster lys over et hidtil usynligt fælles rum i maskinens hukommelse.",
@@ -345,7 +347,9 @@
         "Det kan føre til sikrere og mere pålidelig AI"
       ],
       "billedmotiv": "Et oplyst mikroskop rettet mod en flydende, glødende strøm af digitale bogstaver og koder på et mørkt bord.",
-      "billede": "data/img/13fe429452c332f9.jpg"
+      "billede": "data/img/13fe429452c332f9.jpg",
+      "kat_ai": true,
+      "prio": 1
     },
     {
       "titel": "PlanE: Meta Planning of Data, Tuning, and Inference for Extractive-based LLMs",
@@ -355,10 +359,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny metode gør det lettere at styre AI",
       "resume_da": "En ny forskningsartikel præsenterer en metode kaldet PlanE, som bedre koordinerer data, tilpasning og kørsel for sprogmodeller.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Smartere planlægning",
@@ -369,9 +372,8 @@
           "tekst": "Systemet fokuserer på at vælge de rigtige data og tilpasse modellen præcist efter behov. Ved at binde disse elementer tættere sammen opnår man en mere strømlinet proces. Det sikrer, at teknologien bruger sine ressourcer klogere, når den skal finde frem til de ønskede svar og levere præcise resultater til brugeren."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden hedder **PlanE** og fokuserer på sprogmodeller.",
         "Forskningen er udgivet inden for feltet for AI.",
@@ -385,7 +387,9 @@
         "Giver mere effektive sprogmodeller."
       ],
       "billedmotiv": "En åben notesbog på et lyst træbord med en række farvede byggeklodser, der er sat logisk sammen i rækker.",
-      "billede": "data/img/7af7420d149a92d6.jpg"
+      "billede": "data/img/7af7420d149a92d6.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Benchmarking the Personalization Capabilities of Large Language Models",
@@ -395,10 +399,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "Hvor god er AI til at kende dig?",
       "resume_da": "Ny forskning undersøger, hvor godt sprogmodeller egentlig formår at tilpasse sig den enkelte brugers unikke behov og præferencer.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nye måder at teste på",
@@ -409,9 +412,8 @@
           "tekst": "Når vi bruger digital hjælp i hverdagen, forventer vi, at systemerne lærer vores præferencer at kende over tid. Ved at afprøve disse evner systematisk kan udviklerne gøre det langt nemmere at få skræddersyede svar uden at skulle forklare de samme ting igen og igen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen undersøger personlig tilpasning i avancerede sprogmodeller.",
         "Arbejdet fokuserer på at opstille klare standarder for måling af AI-egenskaber.",
@@ -424,7 +426,9 @@
         "Teknologien skal lære af brugeren"
       ],
       "billedmotiv": "En åben notesbog ved siden af et tastatur og et glødende skærmikon, der symboliserer personlig indstilling.",
-      "billede": "data/img/5798f03f224a231d.jpg"
+      "billede": "data/img/5798f03f224a231d.jpg",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
@@ -434,10 +438,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 5,
       "rubrik": "Ny forskning beskytter sprogmodeller mod snedige samtale-angreb",
       "resume_da": "Forskere har udviklet en ny metode til at forsvare AI mod langvarige og listige snakke-angreb, der ellers kan narre systemerne.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Snedige samtale-angreb",
@@ -448,9 +451,8 @@
           "tekst": "Et hold forskere har nu præsenteret en metode kaldet **Robust Critics**, der fungerer som en intelligent vagt undervejs. Vagt-systemet holder øje med hele samtalens forløb og fanger manipulationer, før de når at skabe skade. Dermed lukkes de bagdøre, som tidligere gjorde teknologien sårbar over for vedholdende forsøg."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Sprogmodeller svinger i sikkerhed, når de udsættes for gentagne spørgsmål.",
         "Forskere har udviklet et forsvar kaldet Robust Critics.",
@@ -464,7 +466,9 @@
         "Systemet overvåger løbende hele dialogens udvikling."
       ],
       "billedmotiv": "En computer skærm der viser en sikkerhedslås, som blokerer en kæde af samtale-beskeder.",
-      "billede": "data/img/7e5ab0dabea71643.jpg"
+      "billede": "data/img/7e5ab0dabea71643.jpg",
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "Incomplete Prompt Jailbreaks in Large Language Models",
@@ -474,10 +478,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 5,
       "rubrik": "Sådan narrer ufuldstændige beskeder de smarte systemer",
       "resume_da": "Ny forskning afslører en overraskende svaghed, hvor mangelfulde instrukser kan omgå sikkerheden i moderne AI-modeller.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sikkerhedens blinde vinkel",
@@ -488,9 +491,8 @@
           "tekst": "Metoden handler om at fodre systemet med brudstykker i stedet for hele sætninger. Det snyder den indbyggede kontrol, fordi AI-modellen selv forsøger at udfylde de manglende brikker. Derved kommer den til at skabe det indhold, som ellers var blokeret af sikkerhedsfiltrene."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Ny forskning undersøger en specifik svaghed kaldet ufuldstændige prompt-angreb.",
         "Metoden udnytter, at AI forsøger at fuldende ufærdige sætninger.",
@@ -504,7 +506,9 @@
         "Sikkerhedsfiltre overser ofte denne type svaghed."
       ],
       "billedmotiv": "En computer skærm der viser en ufuldstændig sætning skrevet i kodedesign, ved siden af en lås der er gået op.",
-      "billede": "data/img/427ad51d70430ad7.jpg"
+      "billede": "data/img/427ad51d70430ad7.jpg",
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification",
@@ -514,10 +518,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny metode gør det lettere at tale med systemer",
       "resume_da": "Forskere har udviklet en ny metode, der gør det langt sikrere at bruge almindeligt sprog til at lave komplekse matematiske beregninger.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet med ord",
@@ -528,9 +531,8 @@
           "tekst": "Forskerholdet bag har udtænkt en snedig fremgangsmåde, der automatisk forenkler og kontrollerer de modeller, som AI genererer. Ved at bryde opgaverne ned og dobbelttjekke hvert enkelt trin sikrer systemet, at de endelige matematiske formler rent faktisk hænger logisk sammen og overholder alle regler."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden gør det muligt at oversætte menneskelig tekst til præcise matematiske optimeringsmodeller.",
         "Systemet bruger en særlig proces til at verificere og forenkle de genererede formler.",
@@ -544,7 +546,9 @@
         "Automatisk kontrol fjerner dyre regnefejl"
       ],
       "billedmotiv": "En notesblok med indviklede matematiske formler ved siden af en åben bærbar computer, hvor skærmen viser et simpelt rutediagram.",
-      "billede": "data/img/65d21c424de69abf.jpg"
+      "billede": "data/img/65d21c424de69abf.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
@@ -554,10 +558,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Ny metode gør det markant hurtigere at køre avanceret AI",
       "resume_da": "Forskere har udviklet en ny teknik kaldet SonicSampler, som samler flere vigtige trin i AI-programmering. Det kan give mærkbare forbedringer i hastighed.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye gennembrud",
@@ -568,9 +571,8 @@
           "tekst": "Traditionelt bliver arbejdet delt op i mange små bidder, hvilket skaber unødvendig ventetid, når hardwaren skal hente data frem og tilbage. Den nye fremgangsmåde organiserer arbejdet i faste blokke. Det betyder, at processoren kan udnytte sin kapacitet langt bedre uden at spildekræfter på unødvendige pauser."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden hedder SonicSampler og samler flere processer i AI.",
         "Fokus er rettet mod både tekstgenerering og kontrol af svar.",
@@ -584,7 +586,9 @@
         "Giver markant hurtigere svartider."
       ],
       "billedmotiv": "En computerprocessor omgivet af små, organiserede byggeklodser i klare farver, der viser effektiv datahåndtering uden menneskelig indblanding.",
-      "billede": "data/img/0dfa1a48abe1e695.jpg"
+      "billede": "data/img/0dfa1a48abe1e695.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Benchmarking Large Language Models on Multi-Sensor Physical Hazard Assessment",
@@ -594,10 +598,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Kan AI redde os fra usynlige farer?",
       "resume_da": "Ny forskning viser, hvor godt AI-modeller klarer at vurdere fysiske risici ud fra mange sensorer på én gang.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nye måder at teste på",
@@ -612,9 +615,8 @@
           "tekst": "De nye metoder kan på sigt gøre vores fysiske omgivelser langt sikrere at færdes i. Hvis teknologien lærer at aflæse omgivelserne lige så godt som mennesker, kan vi undgå mange ulykker i industrien og trafikken. Forskningen tager nu de første vigtige skridt mod denne fremtid."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har undersøgt AI-modellers evne til at vurdere fysiske farer.",
         "Metoden bygger på analyse af data fra mange sensorer samtidig.",
@@ -629,7 +631,9 @@
         "Målet er at opdage farer hurtigere"
       ],
       "billedmotiv": "En avanceret vejrstation omgivet af blinkende røde advarselslys og digitale måleskærme, der viser grafiske kurver over potentielle risici.",
-      "billede": "data/img/ae342b64d12a09ac.jpg"
+      "billede": "data/img/ae342b64d12a09ac.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Semi-Supervised Text-Attributed Graph Distillation",
@@ -639,10 +643,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 1,
       "rubrik": "Ny metode gør AI-netværk langt hurtigere",
       "resume_da": "Forskere har udviklet en ny teknik til at komprimere store informationsnetværk, så de kan køre langt mere effektivt.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Store netværk",
@@ -653,9 +656,8 @@
           "tekst": "For at løse dette problem har forskeren **Yurui Lai** og kolleger udviklet en avanceret komprimeringsteknik. Metoden skærer overflødigt fyld væk, så AI-modeller kan arbejde med en langt mindre, men præcis kopi af det oprindelige netværk."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden hedder Semi-Supervised Text-Attributed Graph Distillation.",
         "Teknikken er skabt af **Yurui Lai** og tre andre forskere.",
@@ -669,7 +671,9 @@
         "Gør det muligt at køre AI hurtigere."
       ],
       "billedmotiv": "En computerfladskærm der viser et glødende netværk af punkter, hvor halvdelen af punkterne skrumper ind til en skarp, samlet klynge.",
-      "billede": "data/img/ab3aa301da69cbd6.jpg"
+      "billede": "data/img/ab3aa301da69cbd6.jpg",
+      "kat_ai": true,
+      "prio": 1
     },
     {
       "titel": "Beyond Liars' Bench: The Impact of Lie Typology, Depth, and Sparsity on Deception Detection in LLMs",
@@ -679,10 +683,9 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Kan vi overhovedet stole på hvad AI siger?",
       "resume_da": "Forskere har kigget nærmere på, hvordan sprogmodeller lyver. Det kan gøre os klogere på at spotte de falske svar.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Når maskinen lyver",
@@ -693,9 +696,8 @@
           "tekst": "For at blive bedre til at opdage de skjulte fejl har eksperter undersøgt, hvad der helt præcist udløser uærlig adfærd. De kigger på dybden af fejlene og mængden af vildledning. Ved at finde ud af, hvordan mekanismerne hænger sammen, håber man at kunne bygge stærkere værn mod decideret snyd."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Ny forskning undersøger, hvordan AI lyver og bedrager.",
         "Eksperter har kigget på forskellige typer af usandheder.",
@@ -709,7 +711,9 @@
         "Det skal give os mere pålidelige teknologiske værktøjer."
       ],
       "billedmotiv": "En klassisk træskammel med et brædt, der vipper mistænkeligt, stående på et hvidt gulv under et skarpt spotlight.",
-      "billede": "data/img/1805e1873ea35933.jpg"
+      "billede": "data/img/1805e1873ea35933.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Enabling Scalable Topology Inference in Distribution Systems via Constrained Multi-Source Inference",
@@ -719,8 +723,37 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
+      "rubrik": "Ny metode afslører strømmens veje i elnettet",
+      "resume_da": "Forskere har udviklet en ny metode til at kortlægge strømforbindelser i elnettet mere præcist.",
       "kat_ai": true,
-      "prio": 1
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Det nye gennembrud",
+          "tekst": "Et hold af forskere har kastet sig over udfordringen med at forstå, hvordan strømmen reelt bevæger sig ud til de enkelte forbrugere. Moderne elnet bliver stadig mere komplekse, efterhånden som vedvarende energi og lokale el-løsninger vinder frem. Derfor er det afgørende at have præcise kort over netværkets opbygning, hvilket den nye teknik gør muligt ved at analysere data fra flere kilder på én gang."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Systemet udnytter avancerede matematiske modeller og AI til at regne sig frem til netværkets struktur ud fra de tilgængelige målinger. I stedet for at famle i blinde kan forsyningsselskaberne nu opbygge et langt klarere billede af, hvor strømmene flyder hen. Det sparer både tid og kræfter i forhold til ældre og mere besværlige metoder til fejlsøgning og planlægning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Metoden fokuserer på forsyningssystemers opbygning og struktur.",
+        "Forskningen benytter avancerede beregninger ud fra flere datakilder.",
+        "Teknologien kan hjælpe med at håndtere mere komplekse elnet.",
+        "Målet er at gøre det lettere at forstå strømmens veje."
+      ],
+      "betydning": "For almindelige forbrugere kan denne type forskning på sigt betyde færre strømafbrydelser og et mere stabilt energinet. Når forsyningsselskaberne får bedre overblik over deres ledninger, kan de hurtigere opdage fejl og omstille til grøn strøm uden at risikere overbelastning af systemet.",
+      "pointer": [
+        "Ny metode kortlægger komplekse elnet.",
+        "AI hjælper med at regne strømmens veje ud.",
+        "Giver forsyningsselskaber et bedre overblik."
+      ],
+      "billedmotiv": "En computer skærm der viser et lysende, sammenfiltret netværk af blå linjer og punkter på et mørkt bord.",
+      "billede": "data/img/571bf129af40eec7.jpg"
     },
     {
       "titel": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
@@ -730,8 +763,38 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
+      "rubrik": "Ny metode sender tunge AI-opgaver ud af huset",
+      "resume_da": "En ny svensk-inspireret eller international metode lader AI fordele opgaver klogere uden at kræve dyr genoptræning.",
       "kat_ai": true,
-      "prio": 2
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det nye princip",
+          "tekst": "Forskerne har fundet en smartere måde at styre, hvordan store sprogmodeller arbejder sammen på. I stedet for at træne systemet op helt fra bunden, bruger man en intelligent portvagt til at fordele opgaverne mellem forskellige enheder. Det gør hele processen langt mere fleksibel, fordi man kan styre præcist, hvor meget arbejde der sendes videre."
+        },
+        {
+          "overskrift": "Smartere fordeling",
+          "tekst": "Når AI-systemer skal håndtere store mængder information, løber de hurtigt tør for hukommelse på den lokale enhed. Den nye teknik løser problemet ved løbende at vurdere, hvilke dele af en opgave der er sikre at flytte til andre servere, og hvilke der skal blive. Det sker helt automatisk baseret på en indbygget pålideligheds-tjekker, som sikrer, at kvaliteten ikke falder undervejs."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Metoden hedder offloading via reliability gating og kræver ingen forudgående træning.",
+        "Systemet fordeler arbejdsbyrden dynamisk mellem forskellige lag af maskinkraft.",
+        "Målet er at få store sprogmodeller til at køre på mindre udstyr.",
+        "Teknikken giver fuld kontrol over, præcist hvor stor en del af opgaven der flyttes.",
+        "Løsningen mindsker risikoen for, at systemet mister tråden undervejs."
+      ],
+      "betydning": "For almindelige mennesker betyder denne type forskning, at vi i fremtiden kan køre avancerede AI-funktioner direkte på vores egne computere og telefoner. I stedet for at alt skal sendes til store, dyre datacentre, kan opgaverne deles op, så udstyret derhjemme kan være med. Det kan gøre AI både billigere i drift, hurtigere at bruge og mere privat i hverdagen.",
+      "pointer": [
+        "Ny metode fordeler AI-opgaver uden genoptræning",
+        "Sikrer at tunge modeller kan køre på mindre udstyr",
+        "Holder øje med kvaliteten undervejs i processen"
+      ],
+      "billedmotiv": "En lille computerchip ved siden af en stor bog, hvor der stikker glødende kabler ud mellem dem.",
+      "billede": "data/img/50268506b03863fd.jpg"
     },
     {
       "titel": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
@@ -743,8 +806,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Ny test afslører om AI forstår dig",
       "resume_da": "Forskere har udviklet en ny metode til at teste, hvor godt AI-assistenter kan tilpasse sig individuelle menneskers vaner og præferencer på nettet.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Skræddersyet til dig",
@@ -755,9 +817,8 @@
           "tekst": "For at nå dertil har forskerholdet bag projektet skabt en avanceret prøveform, der ser på ægte færden på nettet. Den nye test måler, om systemerne kan navigere og træffe valg, der passer præcist til en bestemt brugers historik og behov. Det gør det muligt at se, hvor dygtige de digitale hjælpere reelt er til at ramme plet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har skabt en ny metode til at teste AI-assistenter.",
         "Metoden fokuserer på personlig tilpasning ved færden på nettet.",
@@ -771,7 +832,9 @@
         "Skaber grundlag for mere hjælpsomme digitale værktøjer"
       ],
       "billedmotiv": "En computer skærm der viser et kort med snoede stier, hvor forskellige farvede markører peger på unikke digitale fodspor.",
-      "billede": "data/img/b6bdc4b064a54a58.jpg"
+      "billede": "data/img/b6bdc4b064a54a58.jpg",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "Tractable Hierarchical Control of Autoregressive Language Models",
@@ -783,8 +846,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Ny metode gør det lettere at styre avanceret AI",
       "resume_da": "Forskere har udviklet en ny teknik til at kontrollere store sprogmodeller bedre.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Smart styring",
@@ -795,9 +857,8 @@
           "tekst": "Den nye fremgangsmåde fungerer lidt som en virksomhed med en direktør og medarbejdere. En overordnet del lægger rammerne, mens mindre enheder tager sig af detaljerne i teksten. På den måde undgår man, at systemet farer vild i egne formuleringer, når der skal løses komplekse opgaver."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden fokuserer på hierarkisk kontrol af sprogmodeller.",
         "Teknikken gør det muligt at styre tekstgenerering i flere niveauer.",
@@ -810,7 +871,9 @@
         "Giver mere præcise resultater."
       ],
       "billedmotiv": "En stabel farvede byggeklodser, hvor den øverste klods styrer retningen for de andre.",
-      "billede": "data/img/fe667304c753bc50.jpg"
+      "billede": "data/img/fe667304c753bc50.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "The Devil is in the Spectrum: Mitigating Representation Collapse in LLMs via Topologically Regularized Side-Path",
@@ -822,8 +885,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Sådan undgår forskere at AI glemmer",
       "resume_da": "Ny forskning viser, hvordan man kan forhindre, at avanceret AI mister sin indre mangfoldighed og begynder at gentage sig selv.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet med ensartethed",
@@ -838,9 +900,8 @@
           "tekst": "Ved hjælp af denne matematiske overbygning kan teknologien fastholde et bredere perspektiv på de emner, den bearbejder. Det modvirker den kedelige tendens til, at alle svar efterhånden begynder at lyde ens. Resultatet er en langt mere stabil og alsidig digital hjælper, som bevarer sin grundlæggende skarphed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har fundet en metode til at modvirke ensartethed i store sprogmodeller.",
         "Metoden bruger en særlig digital sidevej til at styre systemets tænkning.",
@@ -855,7 +916,9 @@
         "Teknologien leverer mere nuancerede og præcise svar."
       ],
       "billedmotiv": "En avanceret optisk prisme, der opsplitter en enkelt lysstråle i et rigt spektrum af klare farver på en mørk baggrund.",
-      "billede": "data/img/549602a31bbcce29.jpg"
+      "billede": "data/img/549602a31bbcce29.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Expectation Alignment of Language Models for Real-World User Expectations",
@@ -867,8 +930,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Sådan lærer AI at forstå dine rigtige behov",
       "resume_da": "Forskere har udviklet en ny metode til at få AI til at opfylde de forventninger, som almindelige mennesker har i hverdagen.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Forventninger og virkelighed",
@@ -883,9 +945,8 @@
           "tekst": "Projektet viser, at det kan betale sig at finjustere, hvordan sprogmodeller tolker vores input. Ved at træne teknologien til at spejle menneskelig logik mere præcist rykker vi tættere på digitale assistenter, der forstår os uden lange forklaringer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskeren Miaomiao Li står bag det nye studie om forventningsafstemning.",
         "Metoden fokuserer på at mindske kløften mellem brugerens hensigt og teknologiens svar.",
@@ -900,7 +961,9 @@
         "Forskningen bringer teknologien tættere på hverdagsbrug."
       ],
       "billedmotiv": "En åben notesbog ved siden af et glødende skærmpanel, der viser et grønt flueben over en liste af menneskelige ønsker.",
-      "billede": "data/img/ef6c8db149d8d5a8.jpg"
+      "billede": "data/img/ef6c8db149d8d5a8.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "OPTScientist: Multi-Agent Discovery of Typed Optimizer Programs for Transformer Pretraining",
@@ -912,8 +975,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Ny metode finder bedre koder til AI",
       "resume_da": "Forskere har udviklet et nyt system, hvor flere AI-agenter arbejder sammen om at opfinde bedre optimeringsprogrammer til sprogmodeller.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Holdarbejde bag koden",
@@ -924,9 +986,8 @@
           "tekst": "Systemet fungerer ved, at de forskellige digitale enheder har hver deres opgave i processen. Nogle udformer idéerne, mens andre tester dem grundigt igennem for fejl og mangler. På den måde kan der skabes langt bedre programmer på kortere tid, uden at en menneskelig programmør behøver blande sig i hvert enkelt trin."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden bruger flere AI-agenter til at opdage optimeringsprogrammer.",
         "Systemet er skabt til træning af moderne sprogmodeller.",
@@ -940,7 +1001,9 @@
         "Målet er at forbedre træningen af store sprogmodeller."
       ],
       "billedmotiv": "En computerskærm i et mørkt lokale, der viser et lysende netværk af forbundne knudepunkter i blå og grønne nuancer.",
-      "billede": "data/img/c13521fa6b722955.jpg"
+      "billede": "data/img/c13521fa6b722955.jpg",
+      "kat_ai": true,
+      "prio": 2
     },
     {
       "titel": "Directional Hallucinations: Ideological Drift in News-Grounded LLM Question Answering",
@@ -952,25 +1015,54 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Pas på politisk snyd i nyheder",
       "resume_da": "Undersøgelse viser, at AI kan finde på at lyve politisk i nyhederne. Det gør det svært at skelne fup fra fakta.",
+      "billede": "data/img/a86f1e33b3047d28.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En mikrofon viklet ind i et rødt computerskilt.",
-      "billede": "data/img/a86f1e33b3047d28.jpg"
+      "billedmotiv": "En mikrofon med en stor, rød stopklods viklet rundt om ledningen."
     },
     {
       "titel": "AI bet goes awry: Oracle fires 21,000 employees",
       "link": "https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD",
-      "resume": "Article URL: https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD Comments URL: https://news.ycombinator.com/item?id=49025754 Points: 96 # Comments: 19",
+      "resume": "Article URL: https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD Comments URL: https://news.ycombinator.com/item?id=49025754 Points: 101 # Comments: 24",
       "dato": "2026-07-23T18:07:33+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "rubrik": "Kæmpe-fyringer rammer kendt teknologigigant",
-      "resume_da": "Selskabet Oracle fyrer over 20.000 ansatte, efter en stor satsning på ny teknologi er gået galt. Det ryster branchen.",
+      "rubrik": "Kæmpe gigant skærer drastisk i staben",
+      "resume_da": "Teknologigiganten Oracle har opsagt **21.000** ansatte, efter en stor satsning på AI er slået fejl.",
+      "billede": "data/img/b14601ebd5b7f210.jpg",
       "kat_ai": true,
       "prio": 9,
-      "billedmotiv": "Et id-kort med et stort sort kryds over og en stak gulnede fyresedler.",
-      "billede": "data/img/b14601ebd5b7f210.jpg"
+      "sektioner": [
+        {
+          "overskrift": "Fejlet satsning",
+          "tekst": "En stor økonomisk og strategisk satsning på AI har vist sig at være en fiasko for Oracle. Det har nu fået voldsomme konsekvenser for dem, der arbejder i virksomheden, da ledelsen har set sig nødsaget til at trække i nødbremsen efter de manglende resultater."
+        },
+        {
+          "overskrift": "Massive fyringer",
+          "tekst": "Hele **21.000** medarbejdere har mistet deres job som direkte konsekvens af den fejlslagne strategi. Det er en af de største nedskæringer i nyere tid, som sender chokbølger gennem hele branchen og skaber stor usikkerheid om fremtiden."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "21.000",
+          "label": "medarbejdere som er blevet fyret"
+        }
+      ],
+      "detaljer": [
+        "medarbejdere er blevet afskediget fra Oracle",
+        "point modtog historien på Hacker News",
+        "kommentarer blev skabt i debatten online"
+      ],
+      "betydning": "Denne store fyringsrunde viser med alt tydelighed, at tech-branchens massive satsninger på AI ikke er uden risiko. For almindelige mennesker og ansatte i branchen understreger det en voksende usikkerhed, hvor store strategiske fejltrin hurtigt kan koste tusindvis af arbejdspladser, selv hos de mest veletablerede giganter.",
+      "pointer": [
+        "Oracle har fyret **21.000** ansatte",
+        "Satsningen på AI er slået fejl",
+        "Historien vækker opsigt online"
+      ],
+      "billedmotiv": "En tom kontorstol ved et skrivebord med en slukket skærm, hvor der står et skilt med et rødt minustegn."
     },
     {
       "titel": "Alexa Plus is getting an AI update to handle more complicated instructions",
@@ -982,8 +1074,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Alexa Plus får hjælp til svære opgaver",
       "resume_da": "Amazon opgraderer stemmeassistenten Alexa Plus, så den kan styre flere husholdningsapparater og bestille rejser direkte.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nye mærker på vej",
@@ -998,9 +1089,8 @@
           "tekst": "En række udvalgte partnere vil desuden gøre det muligt at gennemføre køb direkte gennem systemet ved hjælp af **Amazon Wallet**. Det gælder blandt andet billetbestilling og rejseplanlægning, hvor man før skulle bruge separate apps på sin telefon for at færdiggøre betalingen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Alexa Plus får udvidet støtte til udstyr fra producenter som iRobot og Bosch.",
         "Systemet kan selv vælge det korrekte vaskeprogram ud fra tøjets vaskeanvisninger.",
@@ -1015,7 +1105,9 @@
         "Rejser og billetter kan snart købes gennem assistenten."
       ],
       "billedmotiv": "En trådløs højtaler ved siden af en vaskemaskine i et lyst bryggers, badet i blødt dagslys.",
-      "billede": "data/img/909f771938eb78ff.jpg"
+      "billede": "data/img/909f771938eb78ff.jpg",
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "How Codex became a collaborator for OpenAI’s creative team",
@@ -1027,8 +1119,7 @@
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
       "rubrik": "Sådan bruger designere Codex som kreativ makker",
       "resume_da": "Åbningssiden afslører, hvordan OpenAI's eget kreative hold udnytter Codex til at opbygge skræddersyede værktøjer og hurtigere idéudvikling.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kreative værktøjer",
@@ -1039,9 +1130,8 @@
           "tekst": "Når holdet skal kaste bolde op og finde på nye koncepters udformning, fungerer det tekstbaserede værktøj som en fast samarbejdspartner. Processen med at afprøve og teste nye tanker bliver markant kortere, når maskinen kan spytte prototyper ud på samlebånd. Det giver plads til at eksperimentere langt vildere end før."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI's kreative hold bruger Codex som en fast medspiller.",
         "Teknologien hjælper med at udvikle helt specifikke kreative værktøjer.",
@@ -1055,7 +1145,9 @@
         "Processen fra tanke til færdigt værktøj forkortes"
       ],
       "billedmotiv": "En åben bærbar computer på et træbord viser rækker af farverig programkode ved siden af en skitseblok med håndtegnede ikoner.",
-      "billede": "data/img/b5ed6f5ae8935089.jpg"
+      "billede": "data/img/b5ed6f5ae8935089.jpg",
+      "kat_ai": true,
+      "prio": 5
     },
     {
       "titel": "AMD takes on Nvidia with its Helios AI rack-scale system",
@@ -1420,16 +1512,14 @@
     {
       "titel": "The arguments against open source AI are bad",
       "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
-      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 251 # Comments: 171",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 277 # Comments: 194",
       "dato": "2026-07-23T16:49:57+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-23T20:37:15.313153+00:00",
       "rubrik": "Hvorfor fri og åben AI ikke kan stoppes",
       "resume_da": "Debatten om åben kildekode inden for AI rummer mange misforståelser. Historien viser, at forsøg på at bremse den slags teknologi altid slår fejl.",
-      "billede": "data/img/9a151c1c9892dad0.jpg",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Frygten for åbenhed",
@@ -1444,9 +1534,8 @@
           "tekst": "Nogle frygter, at gratis og åbne modeller fra eksempelvis Asien vil udkonkurrere lokale virksomheder på samme måde som fysiske varer. Men digital kode opfører sig fuldstændig anderledes end stål eller solceller, fordi man her frit kan tilpasse og ændre indholdet. Hvis en åben model har en skæv politisk vinkel, kan hvem som helst blot ændre den til at passe bedre til egne værdier."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Åben software udgør fundamentet for alt lukket og kommercielt software.",
         "Tidligere tiders eksportkontrol af digital kryptering slog fuldstændig fejl.",
@@ -1461,7 +1550,10 @@
         "Historisk fiasko rammer kontrol af kode.",
         "Digital software adskiller sig fra fysiske varer."
       ],
-      "billedmotiv": "En åben bærbar computer på et træbord, hvor skæv og lige kildekode flyder frit ud som glødende tråde mod skærmens kant."
+      "billedmotiv": "En åben bærbar computer på et træbord, hvor skæv og lige kildekode flyder frit ud som glødende tråde mod skærmens kant.",
+      "billede": "data/img/9a151c1c9892dad0.jpg",
+      "kat_ai": true,
+      "prio": 4
     },
     {
       "titel": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
@@ -1561,8 +1653,7 @@
       "foerst_set": "2026-07-23T20:37:15.313153+00:00",
       "rubrik": "Patreon skærer i staben efter store teknologiske ændringer",
       "resume_da": "Betalingsplatformen Patreon skiller sig af med en femtedel af medarbejderne, da ny teknologi ændrer hele måden at arbejde på.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Store personalenedskæringer rammer",
@@ -1577,8 +1668,6 @@
           "tekst": "Det er ikke første gang, at den populære platform strammer livremmen ind over for personalet. Tilbage i **2022** måtte virksomheden sige farvel til **17 procent** af staben samt dreje nøglen om på de fysiske kontorer i byer som Dublin og Berlin."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "20 %",
@@ -1589,6 +1678,7 @@
           "label": "medarbejdere ramt af fyringer"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Patreon fyrer 20 procent af sine ansatte, svarende til omkring 93 personer.",
         "Topchef Jack Conte slår fast, at fyringerne ikke skyldes, at maskiner erstatter mennesker.",
@@ -1603,12 +1693,14 @@
         "Ledelsen frygter at dø uden ny teknologi"
       ],
       "billedmotiv": "En bærbar computer med en åben meddelelse om personalereduktion ved siden af en bunke opsigelsespapirer på et skrivebord",
-      "billede": "data/img/7925d49071828ee3.jpg"
+      "billede": "data/img/7925d49071828ee3.jpg",
+      "kat_ai": true,
+      "prio": 7
     },
     {
       "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
       "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
-      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 219 # Comments: 236",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 243 # Comments: 271",
       "dato": "2026-07-23T13:51:36+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -1780,7 +1872,7 @@
     {
       "titel": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
       "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
-      "resume": "https://littletech.org/ https://static.politico.com/4a/bf/9c4021d8404386b0a311dcccf0... Comments URL: https://news.ycombinator.com/item?id=49023016 Points: 856 # Comments: 726",
+      "resume": "https://littletech.org/ https://static.politico.com/4a/bf/9c4021d8404386b0a311dcccf0... Comments URL: https://news.ycombinator.com/item?id=49023016 Points: 934 # Comments: 772",
       "dato": "2026-07-23T15:18:40+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Politik & jura",
@@ -2004,7 +2096,7 @@
     {
       "titel": "I think you might be fooling yourself with AI",
       "link": "https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html",
-      "resume": "Article URL: https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html Comments URL: https://news.ycombinator.com/item?id=49021843 Points: 80 # Comments: 158",
+      "resume": "Article URL: https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html Comments URL: https://news.ycombinator.com/item?id=49021843 Points: 80 # Comments: 162",
       "dato": "2026-07-23T14:05:43+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -2063,7 +2155,7 @@
     {
       "titel": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
       "link": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
-      "resume": "Article URL: https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet Comments URL: https://news.ycombinator.com/item?id=49020999 Points: 637 # Comments: 327",
+      "resume": "Article URL: https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet Comments URL: https://news.ycombinator.com/item?id=49020999 Points: 649 # Comments: 342",
       "dato": "2026-07-23T13:09:10+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -2141,7 +2233,7 @@
     {
       "titel": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
       "link": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
-      "resume": "Article URL: https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china Comments URL: https://news.ycombinator.com/item?id=49020868 Points: 281 # Comments: 318",
+      "resume": "Article URL: https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china Comments URL: https://news.ycombinator.com/item?id=49020868 Points: 284 # Comments: 321",
       "dato": "2026-07-23T13:00:03+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Politik & jura",
@@ -2181,7 +2273,7 @@
     {
       "titel": "Understanding the AI Economy",
       "link": "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/",
-      "resume": "Article URL: https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/ Comments URL: https://news.ycombinator.com/item?id=49020335 Points: 72 # Comments: 144",
+      "resume": "Article URL: https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/ Comments URL: https://news.ycombinator.com/item?id=49020335 Points: 73 # Comments: 145",
       "dato": "2026-07-23T12:11:05+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -3030,7 +3122,7 @@
     {
       "titel": "Are AI labs pelicanmaxxing?",
       "link": "https://dylancastillo.co/posts/pelicanmaxxing.html",
-      "resume": "Article URL: https://dylancastillo.co/posts/pelicanmaxxing.html Comments URL: https://news.ycombinator.com/item?id=49010129 Points: 664 # Comments: 240",
+      "resume": "Article URL: https://dylancastillo.co/posts/pelicanmaxxing.html Comments URL: https://news.ycombinator.com/item?id=49010129 Points: 667 # Comments: 240",
       "dato": "2026-07-22T17:17:54+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -3360,7 +3452,7 @@
     {
       "titel": "Businesses with ugly AI menu redesigns",
       "link": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
-      "resume": "Article URL: https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/ Comments URL: https://news.ycombinator.com/item?id=49005973 Points: 371 # Comments: 300",
+      "resume": "Article URL: https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/ Comments URL: https://news.ycombinator.com/item?id=49005973 Points: 373 # Comments: 300",
       "dato": "2026-07-22T12:49:45+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Hverdags-AI",
@@ -5581,7 +5673,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et reagensglas mærket med en rød advarselstrekant ved siden af en pengeseddel."
+      "billedmotiv": "Et reagensglas med grøn væske og en stor guldmynt ved siden af."
     },
     {
       "titel": "ChatGPT is now a partner for your most ambitious work",
