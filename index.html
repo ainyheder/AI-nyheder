@@ -262,34 +262,7 @@ a.pill { text-decoration: none; display: inline-block; }
   box-shadow: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07); }
 .brief-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
 .brief-kicker { font-family: var(--font-display); font-weight: 800; font-size: 18px; }
-.brief-top .lyt-knap { margin-left: auto; }
-.brief-liste { list-style: none; margin: 0; counter-reset: brief; }
-.brief-liste li { font-size: 14.5px; line-height: 1.6; padding: 8px 0 8px 34px; position: relative;
-  border-bottom: 1px dashed var(--linje); counter-increment: brief; }
-.brief-liste li:last-child { border-bottom: 0; }
-.brief-liste li::before { content: counter(brief); position: absolute; left: 0; top: 8px;
-  width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: #fff;
-  font-size: 12px; font-weight: 800; display: grid; place-items: center; }
-.brief-klik { cursor: pointer; }
-.brief-klik:hover { color: var(--accent); }
-.brief-note { font-size: 12px; color: var(--blaek-svag); margin-top: 10px; }
-/* Kompakt liste under dagens topkort */
-.mikro-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 2px 30px; margin-bottom: 34px; }
-/* Betydningslinjen på kortene */
-.kort-betydning { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; margin-top: 8px;
-  padding-top: 8px; border-top: 1px dashed var(--linje); }
-
-.laest { opacity: .5; transition: opacity .15s; }
-.laest:hover { opacity: 1; }
-.laest .ny-chip { display: none; }
-.lyt-knap {
-  font: inherit; font-size: 12.5px; font-weight: 700; color: var(--accent);
-  background: var(--accent-svag); border: none; border-radius: 999px;
-  padding: 8px 16px; cursor: pointer; white-space: nowrap;
-}
-.lyt-knap:hover { background: var(--accent); color: #fff; }
-.flere-chip {
+.brief-top .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: var(--blaek); color: var(--bg);
   border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
@@ -523,24 +496,12 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .bench-kredit a { color: var(--accent); }
 
-/* ---------- "Lige nu"-linjen (puls under topbaren) ---------- */
-.lige-nu {
-  display: flex; align-items: center; gap: 12px;
+/* ---------- "Nye siden sidst"-linjen (diskret, kun når der er nyt) ---------- */
+.nyt-linje {
+  display: flex; align-items: center; justify-content: center;
   padding: 8px 28px; border-bottom: 1px solid var(--linje);
-  background: var(--bg-kort); font-size: 13.5px;
+  background: var(--bg-kort);
 }
-.lige-nu-label {
-  flex: none; font-size: 10.5px; font-weight: 800; letter-spacing: .14em;
-  text-transform: uppercase; color: #fff; background: var(--accent);
-  border-radius: 999px; padding: 3px 11px;
-}
-.lige-nu-tekst {
-  flex: 1; min-width: 0; color: var(--blaek); text-decoration: none; font-weight: 600;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  transition: opacity .35s;
-}
-.lige-nu-tekst.skift { opacity: 0; }
-.lige-nu-tekst:hover { color: var(--accent); }
 .nyt-chip {
   flex: none; background: var(--accent-svag); color: var(--accent);
   font-weight: 800; font-size: 12px; border-radius: 999px; padding: 4px 12px;
@@ -608,10 +569,8 @@ footer a { color: var(--accent); }
   </div>
 </div>
 
-<div class="lige-nu" id="ligeNu" hidden>
-  <span class="lige-nu-label">Lige nu</span>
-  <a class="lige-nu-tekst" id="ligeNuTekst" href="#"></a>
-  <span class="nyt-chip" id="nytChip" hidden></span>
+<div class="nyt-linje" id="nytLinje" hidden>
+  <span class="nyt-chip" id="nytChip"></span>
 </div>
 
 <main class="wrap">
@@ -950,7 +909,6 @@ function aabnLaeser(a) {
       </div>
       <div class="laeser-bund">
         <span class="laeser-note" style="margin:0">Genfortalt i egne ord · ${a.andre && a.andre.length ? "Dækket af " + (a.andre.length + 1) + " medier" : "Kilde: " + esc(a.kilde)}</span>
-        <button class="lyt-knap" id="lytKnap" type="button">🔊 Læs højt</button>
         ${delHtml}
         <span style="display:flex;gap:8px;flex-wrap:wrap">
           <a class="kilde-knap" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.kilde)} →</a>
@@ -970,47 +928,11 @@ function aabnLaeser(a) {
     if (el.dataset.link === a.link) el.classList.add("laest");
   });
 
-  // Læs højt (browserens indbyggede oplæsning - gratis og uden data ud af huset)
-  const lyt = document.getElementById("lytKnap");
-  if (lyt) {
-    if (!("speechSynthesis" in window)) { lyt.style.display = "none"; }
-    else lyt.addEventListener("click", () => {
-      if (speechSynthesis.speaking) {
-        speechSynthesis.cancel();
-        lyt.textContent = "🔊 Læs højt";
-        return;
-      }
-      const dele = [a.rubrik || a.titel, a.resume_da || a.resume || ""];
-      (a.sektioner || []).forEach(s => { dele.push(s.overskrift); dele.push(s.tekst); });
-      if (a.betydning) { dele.push("Hvad betyder det for dig?"); dele.push(a.betydning); }
-      const u = new SpeechSynthesisUtterance(dele.join(". ").replace(/\*\*/g, ""));
-      u.lang = "da-DK";
-      u.rate = 1.02;
-      const daStemme = speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith("da"));
-      if (daStemme) u.voice = daStemme;
-      u.onend = () => { lyt.textContent = "🔊 Læs højt"; };
-      speechSynthesis.cancel();
-      speechSynthesis.speak(u);
-      lyt.textContent = "⏹ Stop oplæsning";
-    });
-  }
-
-  const kop = document.getElementById("delKopier");
-  if (kop) kop.addEventListener("click", () => {
-    navigator.clipboard.writeText(delUrl).then(() => {
-      kop.classList.add("ok"); kop.innerHTML = IKON.ok;
-      setTimeout(() => { kop.classList.remove("ok"); kop.innerHTML = IKON.link; }, 1600);
-    }).catch(() => {});
-  });
-  const nativ = document.getElementById("delNativ");
-  if (nativ) nativ.addEventListener("click", () =>
-    navigator.share({ title: delTitel, url: delUrl }).catch(() => {}));
 }
 
 function lukLaeser() {
   laeserBag.classList.remove("aaben");
   document.body.style.overflow = "";
-  if ("speechSynthesis" in window) speechSynthesis.cancel();
   history.replaceState(null, "", location.pathname + location.search);
 }
 laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
@@ -1260,31 +1182,6 @@ indhold.addEventListener("click", () => tip.classList.remove("synlig"), true);
 
 /* ---------- "Lige nu"-ticker og nyt-siden-sidst ---------- */
 
-function startLigeNu() {
-  const bar = document.getElementById("ligeNu");
-  const el = document.getElementById("ligeNuTekst");
-  const nyeste = artikler.filter(a => a.dato)
-    .sort((x, y) => new Date(y.dato) - new Date(x.dato)).slice(0, 6);
-  if (!nyeste.length) return;
-  bar.hidden = false;
-  let i = 0;
-  const vis = () => {
-    const a = nyeste[i % nyeste.length];
-    el.textContent = (a.rubrik || a.titel) + "  ·  " + relativTid(a.dato);
-    el.dataset.link = a.link;
-  };
-  vis();
-  setInterval(() => {
-    el.classList.add("skift");
-    setTimeout(() => { i++; vis(); el.classList.remove("skift"); }, 350);
-  }, 5000);
-  el.addEventListener("click", e => {
-    e.preventDefault();
-    const a = artikler.find(x => x.link === el.dataset.link);
-    if (a) aabnLaeser(a);
-  });
-}
-
 function visDagensBrief() {
   // "Har du kun ét minut?" - AI-skrevet 5-punkts overblik over døgnet
   if (!window.fetch) return;
@@ -1295,8 +1192,7 @@ function visDagensBrief() {
       if (d.dato !== dagNoegle(new Date().toISOString())) return;   // kun dagens
       const boks = document.getElementById("dagensBrief");
       boks.innerHTML = `
-        <div class="brief-top"><span class="brief-kicker">☀️ Dagens overblik på 60 sekunder</span>
-          <button class="lyt-knap" id="briefLyt" type="button">🔊 Læs op</button></div>
+        <div class="brief-top"><span class="brief-kicker">☀️ Dagens overblik på 60 sekunder</span></div>
         <ol class="brief-liste">${d.punkter.map(p =>
           `<li${p.link ? ` class="brief-klik" data-link="${esc(p.link)}"` : ""}>${esc(p.tekst)}</li>`).join("")}</ol>
         <div class="brief-note">Skrevet automatisk ud fra døgnets vigtigste historier · klik på et punkt for hele historien</div>`;
@@ -1306,23 +1202,6 @@ function visDagensBrief() {
         if (!li) return;
         const a = artikler.find(x => x.link === li.dataset.link);
         if (a) aabnLaeser(a);
-      });
-      const lyt = document.getElementById("briefLyt");
-      if (!("speechSynthesis" in window)) { lyt.style.display = "none"; return; }
-      lyt.addEventListener("click", () => {
-        if (speechSynthesis.speaking) {
-          speechSynthesis.cancel();
-          lyt.textContent = "🔊 Læs op";
-          return;
-        }
-        const u = new SpeechSynthesisUtterance(
-          "Dagens overblik fra AI-nyheder. " + d.punkter.map((p, i) => (i + 1) + ". " + p.tekst).join(" "));
-        u.lang = "da-DK";
-        const stemme = speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith("da"));
-        if (stemme) u.voice = stemme;
-        u.onend = () => { lyt.textContent = "🔊 Læs op"; };
-        speechSynthesis.speak(u);
-        lyt.textContent = "⏹ Stop";
       });
     })
     .catch(() => {});
@@ -1335,7 +1214,10 @@ function visNytSidenSidst() {
     if (sidst) {
       const nye = artikler.filter(a => (a.foerst_set || a.dato) &&
         new Date(a.foerst_set || a.dato).getTime() > sidst && !erLaest(a)).length;
-      if (nye > 0) { chip.textContent = `+${nye} nye siden dit sidste besøg`; chip.hidden = false; }
+      if (nye > 0) {
+        chip.textContent = `+${nye} nye siden dit sidste besøg`;
+        document.getElementById("nytLinje").hidden = false;
+      }
     }
     // besøget tæller først som "set" efter ét minut, så en hurtig reload ikke nulstiller
     setTimeout(() => { try { localStorage.setItem("sidsteBesoeg", String(Date.now())); } catch (e) {} }, 60000);
@@ -1355,7 +1237,7 @@ fetch("data/articles.json")
       if ((a.kilde || "").toLowerCase().includes("arxiv")) a.kategori = "Forskning";
     });
     tegnFiltre(); tegn();
-    startLigeNu(); visNytSidenSidst(); visDagensBrief();
+    visNytSidenSidst(); visDagensBrief();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);
     if (m) {
