@@ -650,12 +650,17 @@ def klassificer(artikler: list[dict]) -> None:
 
 # ----- Dublet-historier (samme nyhed fra flere medier) -------------------------
 
-SYSTEM_DUBLET = """Du får en nummereret liste af nyhedsoverskrifter fra forskellige medier.
+SYSTEM_DUBLET = """Du får en nummereret liste af nyhedsartikler (kilde, overskrift og kort resumé) fra forskellige medier.
 Find grupper af artikler der dækker PRÆCIS SAMME nyhedsbegivenhed (fx samme
-produktlancering, samme retssag, samme opkøb - omtalt af flere medier).
+produktlancering, samme retssag, samme opkøb, samme regnskab - omtalt af flere medier).
+
+HUSK: Medierne vinkler den samme begivenhed vidt forskelligt, så overskrifterne
+kan se helt forskellige ud. Brug RESUMÉERNE til at afgøre, om kernen er den samme
+begivenhed: samme aktør + samme handling + samme tidspunkt.
 
 VIGTIGT: Kun artikler om den samme konkrete begivenhed må grupperes.
-Artikler der blot handler om samme emne eller firma, er IKKE dubletter.
+Artikler der blot handler om samme emne, firma eller tema, er IKKE dubletter.
+To forskellige nyheder om samme firma samme uge er IKKE dubletter.
 Er du i tvivl, så lad være med at gruppere.
 
 Svar KUN med et JSON-array af grupper, hver gruppe et array af numre, fx:
@@ -672,15 +677,33 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     artikler = [a for a in artikler if a["link"] not in kendte_dubletter]
     if not API_KEY:
         return artikler
-    # forskningsartikler (arXiv) dublerer aldrig nyhedsmedierne - spring dem over
-    kandidater = [a for a in artikler if a["kilde"] != "arXiv cs.AI"][:90]
+    # forskningsartikler (arXiv) dublerer aldrig nyhedsmedierne - spring dem over.
+    # Dubletter opstår inden for få dage, så vi sammenligner de sidste 5 dages
+    # artikler (op til 130) i stedet for blot de 90 nyeste i arkivet.
+    graense = datetime.now(timezone.utc) - timedelta(days=5)
+    kandidater = [a for a in artikler
+                  if a["kilde"] != "arXiv cs.AI"
+                  and (a.get("dato") is None or a["dato"] >= graense)][:130]
     if len(kandidater) < 2:
         return artikler
-    liste = "\n".join(f"{i+1}. [{a['kilde']}] {a['titel']}" for i, a in enumerate(kandidater))
+
+    def _linje(i: int, a: dict) -> str:
+        # dansk rubrik + resumé gør det muligt at genkende samme historie
+        # bag vidt forskellige overskrifter
+        resume = (a.get("resume_da") or a.get("resume") or "").replace("\n", " ").strip()[:150]
+        rubrik = (a.get("rubrik") or "").strip()
+        tekst = f"{i+1}. [{a['kilde']}] {a['titel']}"
+        if rubrik:
+            tekst += f" / {rubrik}"
+        if resume:
+            tekst += f" — {resume}"
+        return tekst
+
+    liste = "\n".join(_linje(i, a) for i, a in enumerate(kandidater))
     grupper = None
     for forsoeg in (1, 2):
         try:
-            grupper = parse_json_svar(kald_ai(SYSTEM_DUBLET, liste, 1000))
+            grupper = parse_json_svar(kald_ai(SYSTEM_DUBLET, liste, 1500))
             assert isinstance(grupper, list)
             break
         except Exception as fejl:
@@ -698,6 +721,11 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
         except (ValueError, TypeError):
             continue
         if len(medlemmer) < 2:
+            continue
+        # sikkerhedsregel: samme begivenhed udgives inden for få dage - er
+        # spredningen større, er det næsten sikkert en fejlgruppering
+        datoer = [m["dato"] for m in medlemmer if m.get("dato")]
+        if datoer and (max(datoer) - min(datoer)) > timedelta(days=3):
             continue
         # behold den med mest indhold: brief > dansk rubrik > nyeste
         primaer = next((m for m in medlemmer if m.get("brief")), None) \
