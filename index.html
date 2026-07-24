@@ -527,17 +527,6 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .bench-kredit a { color: var(--accent); }
 
-/* ---------- "Nye siden sidst"-linjen (diskret, kun når der er nyt) ---------- */
-.nyt-linje {
-  display: flex; align-items: center; justify-content: center;
-  padding: 8px 28px; border-bottom: 1px solid var(--linje);
-  background: var(--bg-kort);
-}
-.nyt-chip {
-  flex: none; background: var(--accent-svag); color: var(--accent);
-  font-weight: 800; font-size: 12px; border-radius: 999px; padding: 4px 12px;
-}
-
 .tom { text-align: center; padding: 70px 20px; color: var(--blaek-svag); font-size: 15px; }
 .note {
   background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
@@ -598,10 +587,6 @@ footer a { color: var(--accent); }
       <button data-visning="benchmarks" title="Åbner Artificial Analysis i ny fane">▤ Benchmarks ↗</button>
     </div>
   </div>
-</div>
-
-<div class="nyt-linje" id="nytLinje" hidden>
-  <span class="nyt-chip" id="nytChip"></span>
 </div>
 
 <main class="wrap">
@@ -1241,23 +1226,6 @@ function visDagensBrief() {
     .catch(() => {});
 }
 
-function visNytSidenSidst() {
-  try {
-    const chip = document.getElementById("nytChip");
-    const sidst = +localStorage.getItem("sidsteBesoeg") || 0;
-    if (sidst) {
-      const nye = artikler.filter(a => (a.foerst_set || a.dato) &&
-        new Date(a.foerst_set || a.dato).getTime() > sidst && !erLaest(a)).length;
-      if (nye > 0) {
-        chip.textContent = `+${nye} nye siden dit sidste besøg`;
-        document.getElementById("nytLinje").hidden = false;
-      }
-    }
-    // besøget tæller først som "set" efter ét minut, så en hurtig reload ikke nulstiller
-    setTimeout(() => { try { localStorage.setItem("sidsteBesoeg", String(Date.now())); } catch (e) {} }, 60000);
-  } catch (e) {}   // localStorage kan være blokeret - så springer vi bare over
-}
-
 /* ---------- Start ---------- */
 
 fetch("data/articles.json")
@@ -1271,7 +1239,7 @@ fetch("data/articles.json")
       if ((a.kilde || "").toLowerCase().includes("arxiv")) a.kategori = "Forskning";
     });
     tegnFiltre(); tegn();
-    visNytSidenSidst(); visDagensBrief();
+    visDagensBrief();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);
     if (m) {
