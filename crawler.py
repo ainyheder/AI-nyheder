@@ -1553,6 +1553,70 @@ def lav_dagens_prompt() -> None:
         print(f"✨ Dagens prompt sprang over ({e})")
 
 
+# ----- Dagens overblik (60-sekunders brief på forsiden) ------------------------
+
+BRIEF_FIL = ROOT / "data" / "brief.json"
+
+SYSTEM_BRIEF = """Du skriver "Dagens overblik" til ainyheder.com - fem punkter, der giver en travl dansker hele AI-døgnet på 60 sekunder.
+Du får en nummereret liste over døgnets vigtigste historier (rubrik + resumé).
+Svar KUN med et JSON-array med PRÆCIS 5 objekter: [{"nr": <historiens nummer>, "tekst": "..."}]
+Krav til tekst: én sætning på letlæst dansk (maks 25 ord), konkret, med tal hvor de findes.
+Ingen indledninger som "I dag" i hvert punkt - lige på sagen.
+Vælg de 5 vigtigste og mest FORSKELLIGE historier - aldrig to punkter om samme begivenhed."""
+
+
+def lav_dagens_brief(artikler: list[dict]) -> None:
+    """Ét nyt 5-punkts overblik pr. dag (dansk tid) til forsiden.
+    Fejler stille - briefet må aldrig vælte crawlet."""
+    if not API_KEY:
+        return
+    try:
+        try:
+            from zoneinfo import ZoneInfo
+            dag = datetime.now(ZoneInfo("Europe/Copenhagen")).date().isoformat()
+        except Exception:
+            dag = datetime.now(timezone.utc).date().isoformat()
+        if BRIEF_FIL.exists():
+            try:
+                if json.loads(BRIEF_FIL.read_text(encoding="utf-8")).get("dato") == dag:
+                    return   # dagens brief findes allerede
+            except json.JSONDecodeError:
+                pass
+
+        graense = (datetime.now(timezone.utc) - timedelta(hours=26)).isoformat()
+        kandidater = [a for a in artikler
+                      if a.get("rubrik")
+                      and (a.get("foerst_set") or a.get("dato") or "") >= graense]
+        kandidater.sort(key=lambda a: a.get("prio") or 5, reverse=True)
+        kandidater = kandidater[:12]
+        if len(kandidater) < 5:
+            return   # for stille et døgn til et overblik
+
+        stof = [{"nr": i + 1, "rubrik": a["rubrik"],
+                 "resume": (a.get("resume_da") or "")[:200]}
+                for i, a in enumerate(kandidater)]
+        r = parse_json_svar(kald_ai(SYSTEM_BRIEF, json.dumps(stof, ensure_ascii=False), 800))
+
+        punkter = []
+        for p in r if isinstance(r, list) else []:
+            tekst = str(p.get("tekst", "")).strip()
+            try:
+                link = kandidater[int(p.get("nr", 0)) - 1]["link"]
+            except (ValueError, TypeError, IndexError):
+                link = ""
+            if len(tekst) >= 20:
+                punkter.append({"tekst": tekst, "link": link})
+        if len(punkter) < 5:
+            print("☀️ Dagens brief: svaret var for tyndt - prøver igen næste kørsel")
+            return
+        BRIEF_FIL.write_text(json.dumps(
+            {"dato": dag, "punkter": punkter[:5]}, ensure_ascii=False, indent=1),
+            encoding="utf-8")
+        print(f"☀️ Dagens overblik skrevet ({dag})")
+    except Exception as e:
+        print(f"☀️ Dagens brief sprang over ({e})")
+
+
 # ----- Ugens nyhedsquiz --------------------------------------------------------
 
 QUIZ_FIL = ROOT / "data" / "quiz.json"
@@ -1748,6 +1812,7 @@ def main() -> None:
     lav_ugens_overblik(unikke)
     lav_dagens_prompt()
     lav_ugens_quiz(unikke)
+    lav_dagens_brief(unikke)
 
 
 if __name__ == "__main__":
