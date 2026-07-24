@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Værktøjsoversigten</title>
+<meta name="description" content="Hvilken AI skal du bruge til hvad? Redaktionens oversigt over de vigtigste AI-værktøjer — chatbots, billeder, research, oversættelse og lyd — med ærlige noter om, hvad de er gode til.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --groen: #2e9e5b; --rav: #c2711d;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 26px; max-width: 64ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 23px; margin: 40px 0 14px; letter-spacing: -.01em; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+.v-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+.v-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--skygge); }
+.v-kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 2px; }
+.v-kort .fra { font-size: 12px; color: var(--blaek-svag); font-weight: 600; margin-bottom: 10px; }
+.v-kort p { font-size: 14px; margin-bottom: 10px; }
+.v-god { font-size: 13.5px; margin: 4px 0; padding-left: 24px; position: relative; }
+.v-god::before { content: "✓"; position: absolute; left: 2px; color: var(--groen); font-weight: 800; }
+.v-pas { font-size: 13.5px; margin: 4px 0; padding-left: 24px; position: relative; color: var(--blaek-svag); }
+.v-pas::before { content: "!"; position: absolute; left: 6px; color: var(--rav); font-weight: 800; }
+.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
+.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
+  transition: transform .15s, border-color .15s; }
+.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
+.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
+.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="laer.html">← Lær AI</a>
+  </div>
+</div>
+<main>
+<span class="kicker">Redaktionens oversigt · opdateres løbende</span>
+<h1>Hvilken AI til hvad? 🧭</h1>
+<p class="manchet">Der udkommer et nyt "revolutionerende" AI-værktøj hver uge — men til hverdagsbrug rækker en håndfuld gennemprøvede langt. Her er dem, vi selv ville pege på, sorteret efter opgave. Alle har gratis udgaver eller prøveperioder.</p>
+<div class="boks"><strong>Ærligt forbehold:</strong> Priser, funktioner og modeller skifter hurtigere, end nogen oversigt kan følge med til. Brug siden her til at vælge <em>retning</em> — og tjek detaljerne hos udbyderen, før du lægger arbejde eller penge i et værktøj.</div>
+
+<h2>💬 Skrive, tænke og få svar</h2>
+<div class="v-net">
+  <div class="v-kort"><h3>ChatGPT</h3><div class="fra">OpenAI · chatgpt.com</div>
+    <p>Den mest udbredte chatbot — og for de fleste det naturlige sted at starte.</p>
+    <div class="v-god">Alsidig: tekst, billeder, websøgning og stemme i ét</div>
+    <div class="v-god">Størst økosystem af vejledninger og hjælp på nettet</div>
+    <div class="v-pas">Så populær, at gratis-udgaven kan være presset i myldretiden</div></div>
+  <div class="v-kort"><h3>Gemini</h3><div class="fra">Google · gemini.google.com</div>
+    <p>Googles chatbot — vævet ind i Gmail, Docs, Android og søgningen.</p>
+    <div class="v-god">Stærk, hvis din hverdag i forvejen er Google</div>
+    <div class="v-god">God til at kombinere søgning og svar</div>
+    <div class="v-pas">Tjek indstillingerne for, hvad der deles med din Google-konto</div></div>
+  <div class="v-kort"><h3>Claude</h3><div class="fra">Anthropic · claude.ai</div>
+    <p>Kendt for gennemarbejdede, lange svar og god tekstforståelse.</p>
+    <div class="v-god">Stærk til lange dokumenter og grundige gennemskrivninger</div>
+    <div class="v-god">God, naturlig dansk tone</div>
+    <div class="v-pas">Færre indbyggede ekstrafunktioner end de to store</div></div>
+  <div class="v-kort"><h3>Microsoft Copilot</h3><div class="fra">Microsoft · copilot.microsoft.com</div>
+    <p>AI'en i Windows, Word, Outlook og Excel — dér hvor mange arbejder i forvejen.</p>
+    <div class="v-god">Arbejder direkte i dine dokumenter og mails</div>
+    <div class="v-god">Ofte det, arbejdspladsen allerede har licens til</div>
+    <div class="v-pas">Fuld styrke kræver typisk et Microsoft 365-abonnement</div></div>
+</div>
+
+<h2>🔎 Research og opslagsværk</h2>
+<div class="v-net">
+  <div class="v-kort"><h3>Perplexity</h3><div class="fra">Perplexity · perplexity.ai</div>
+    <p>En "svarmaskine": søger på nettet og svarer med kildehenvisninger.</p>
+    <div class="v-god">Kilder med i hvert svar — let at efterprøve</div>
+    <div class="v-god">God til dagsaktuelle spørgsmål</div>
+    <div class="v-pas">Kilderne skal stadig tjekkes — den kan fejllæse dem</div></div>
+  <div class="v-kort"><h3>NotebookLM</h3><div class="fra">Google · notebooklm.google.com</div>
+    <p>Upload dine egne dokumenter og stil spørgsmål til netop dem.</p>
+    <div class="v-god">Svarer KUN ud fra dine kilder — mindre digt</div>
+    <div class="v-god">Kan lave lyd-overblik af dine dokumenter</div>
+    <div class="v-pas">Kun så god som de dokumenter, du giver den</div></div>
+</div>
+
+<h2>🎨 Billeder og design</h2>
+<div class="v-net">
+  <div class="v-kort"><h3>Billeder i chatbotten</h3><div class="fra">ChatGPT / Gemini</div>
+    <p>De store chatbots laver i dag billeder direkte i samtalen — nemmeste vej i gang.</p>
+    <div class="v-god">Ingen ny konto — bare beskriv billedet på dansk</div>
+    <div class="v-god">Nemt at bede om rettelser i samme samtale</div>
+    <div class="v-pas">Lav aldrig billeder af virkelige personer uden samtykke</div></div>
+  <div class="v-kort"><h3>Midjourney</h3><div class="fra">Midjourney · midjourney.com</div>
+    <p>Kunstnernes favorit — ofte de flotteste og mest stemningsfulde billeder.</p>
+    <div class="v-god">Meget høj billedkvalitet og stil</div>
+    <div class="v-pas">Betalingsværktøj og lidt stejlere at lære</div></div>
+  <div class="v-kort"><h3>Canva</h3><div class="fra">Canva · canva.com</div>
+    <p>Design-værktøjet til plakater, opslag og invitationer — nu med AI indbygget.</p>
+    <div class="v-god">Færdige skabeloner + AI-hjælp = hurtige, pæne resultater</div>
+    <div class="v-god">God gratis-udgave til privat brug</div>
+    <div class="v-pas">AI-funktionerne ligger delvist bag betalingsplanen</div></div>
+</div>
+
+<h2>🌍 Sprog, lyd og møder</h2>
+<div class="v-net">
+  <div class="v-kort"><h3>DeepL</h3><div class="fra">DeepL · deepl.com</div>
+    <p>Specialist i oversættelse — ofte mere naturlig end de generelle chatbots.</p>
+    <div class="v-god">Fremragende dansk-engelsk og omvendt</div>
+    <div class="v-god">Kan oversætte hele dokumenter med formatering</div>
+    <div class="v-pas">Vigtige tekster (kontrakter!) skal stadig læses efter</div></div>
+  <div class="v-kort"><h3>ElevenLabs</h3><div class="fra">ElevenLabs · elevenlabs.io</div>
+    <p>Naturlige AI-stemmer — oplæsning af tekst i høj kvalitet, også på dansk.</p>
+    <div class="v-god">Imponerende naturlige stemmer</div>
+    <div class="v-pas">Klon aldrig andres stemme uden tydeligt samtykke</div></div>
+  <div class="v-kort"><h3>Mødereferat-AI</h3><div class="fra">Indbygget i Teams, Meet & Zoom</div>
+    <p>Mødeværktøjerne kan i dag selv optage, transskribere og opsummere møder.</p>
+    <div class="v-god">Referatet skriver sig selv, mens du deltager</div>
+    <div class="v-pas">Sig altid højt, at der optages — og følg arbejdspladsens regler</div></div>
+</div>
+
+<div class="boks" style="margin-top:30px;"><strong>Tommelfingerreglen, når du vælger:</strong> Start med den chatbot, der ligger tættest på det, du bruger i forvejen (Google-menneske → Gemini, Microsoft-arbejdsplads → Copilot, ellers ChatGPT eller Claude). Specialværktøjerne henter du først, når du rammer chatbottens grænser.</div>
+
+<div class="naeste-net">
+  <a class="naeste" href="erhverv-1.html"><div class="n-titel">💼 Vælg værktøj som professionel</div><p>Erhvervsmodul 1 lærer dig at vælge med datavilkår og GDPR på plads — med prøve og bevis.</p></a>
+  <a class="naeste" href="guide-igang.html"><div class="n-titel">🚀 Helt ny? Start her</div><p>Fra nul til din første AI-samtale på ti minutter — gratis og ufarligt.</p></a>
+</div>
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
+</body>
+</html>

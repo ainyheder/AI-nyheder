@@ -17,6 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="AI-nyheder" href="https://ainyheder.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="Ugens AI-overblik (hver fredag)" href="https://ainyheder.com/feed-uge.xml">
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -255,6 +256,15 @@ a.pill { text-decoration: none; display: inline-block; }
   background: var(--accent); color: #fff;
   border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
 }
+.laest { opacity: .5; transition: opacity .15s; }
+.laest:hover { opacity: 1; }
+.laest .ny-chip { display: none; }
+.lyt-knap {
+  font: inherit; font-size: 12.5px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border: none; border-radius: 999px;
+  padding: 8px 16px; cursor: pointer; white-space: nowrap;
+}
+.lyt-knap:hover { background: var(--accent); color: #fff; }
 .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: var(--blaek); color: var(--bg);
@@ -625,6 +635,25 @@ let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kron
 const indhold = document.getElementById("indhold");
 const filtreEl = document.getElementById("filtre");
 
+/* ---------- Læst/ulæst (gemmes i browseren) ---------- */
+let laeste = {};
+try { laeste = JSON.parse(localStorage.getItem("laeste") || "{}"); } catch (e) {}
+function erLaest(a) { return !!laeste[a.link]; }
+function markerLaest(a) {
+  laeste[a.link] = Date.now();
+  const noegler = Object.keys(laeste);
+  if (noegler.length > 800) {                       // hold listen i ave
+    noegler.sort((x, y) => laeste[x] - laeste[y])
+           .slice(0, noegler.length - 800).forEach(k => delete laeste[k]);
+  }
+  try { localStorage.setItem("laeste", JSON.stringify(laeste)); } catch (e) {}
+}
+function markerLaesteIDom() {
+  indhold.querySelectorAll("[data-link]").forEach(el => {
+    if (laeste[el.dataset.link]) el.classList.add("laest");
+  });
+}
+
 /* ---------- Generativ kunst ----------
    Hver artikel får sit eget lille kunstværk. Samme artikel giver altid
    samme billede (hash af titlen styrer form og farver), så siden er rolig. */
@@ -864,7 +893,9 @@ function aabnLaeser(a) {
 
   // Deleknapper — hver artikel har sit eget link (#a=...), så modtageren
   // lander direkte i den åbne artikel.
-  const delUrl = location.origin + location.pathname + "#a=" + encodeURIComponent(a.link);
+  // Del helst den statiske artikelside (pæne forhåndsvisninger på sociale medier)
+  const delUrl = a.side ? location.origin + "/" + a.side
+                        : location.origin + location.pathname + "#a=" + encodeURIComponent(a.link);
   const delTitel = a.rubrik || a.titel;
   const eU = encodeURIComponent(delUrl), eT = encodeURIComponent(delTitel);
   const delHtml = `<div class="del-raekke">
@@ -894,6 +925,7 @@ function aabnLaeser(a) {
       </div>
       <div class="laeser-bund">
         <span class="laeser-note" style="margin:0">Genfortalt i egne ord · ${a.andre && a.andre.length ? "Dækket af " + (a.andre.length + 1) + " medier" : "Kilde: " + esc(a.kilde)}</span>
+        <button class="lyt-knap" id="lytKnap" type="button">🔊 Læs højt</button>
         ${delHtml}
         <span style="display:flex;gap:8px;flex-wrap:wrap">
           <a class="kilde-knap" href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.kilde)} →</a>
@@ -906,6 +938,37 @@ function aabnLaeser(a) {
   document.body.style.overflow = "hidden";
   document.getElementById("laeserLuk").addEventListener("click", lukLaeser);
   history.replaceState(null, "", "#a=" + encodeURIComponent(a.link));
+
+  // markér som læst - både i lageret og på kortet bag modalen
+  markerLaest(a);
+  indhold.querySelectorAll(`[data-link]`).forEach(el => {
+    if (el.dataset.link === a.link) el.classList.add("laest");
+  });
+
+  // Læs højt (browserens indbyggede oplæsning - gratis og uden data ud af huset)
+  const lyt = document.getElementById("lytKnap");
+  if (lyt) {
+    if (!("speechSynthesis" in window)) { lyt.style.display = "none"; }
+    else lyt.addEventListener("click", () => {
+      if (speechSynthesis.speaking) {
+        speechSynthesis.cancel();
+        lyt.textContent = "🔊 Læs højt";
+        return;
+      }
+      const dele = [a.rubrik || a.titel, a.resume_da || a.resume || ""];
+      (a.sektioner || []).forEach(s => { dele.push(s.overskrift); dele.push(s.tekst); });
+      if (a.betydning) { dele.push("Hvad betyder det for dig?"); dele.push(a.betydning); }
+      const u = new SpeechSynthesisUtterance(dele.join(". ").replace(/\*\*/g, ""));
+      u.lang = "da-DK";
+      u.rate = 1.02;
+      const daStemme = speechSynthesis.getVoices().find(v => v.lang && v.lang.startsWith("da"));
+      if (daStemme) u.voice = daStemme;
+      u.onend = () => { lyt.textContent = "🔊 Læs højt"; };
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+      lyt.textContent = "⏹ Stop oplæsning";
+    });
+  }
 
   const kop = document.getElementById("delKopier");
   if (kop) kop.addEventListener("click", () => {
@@ -922,6 +985,7 @@ function aabnLaeser(a) {
 function lukLaeser() {
   laeserBag.classList.remove("aaben");
   document.body.style.overflow = "";
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
   history.replaceState(null, "", location.pathname + location.search);
 }
 laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
@@ -1019,6 +1083,7 @@ function tegn() {
         <div class="kat-titel">${esc(k)} <span class="kat-antal">${grupper.get(k).length}</span></div>
         ${grupper.get(k).map(a => mikroHtml(a, id++)).join("")}
       </section>`).join("") + `</div>`;
+    markerLaesteIDom();
     return;
   }
 
@@ -1051,6 +1116,7 @@ function tegn() {
     magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`;
   }
   indhold.innerHTML = note + hero + magKrop;
+  markerLaesteIDom();
 }
 
 /* ---------- Events ---------- */
@@ -1185,7 +1251,8 @@ function visNytSidenSidst() {
     const chip = document.getElementById("nytChip");
     const sidst = +localStorage.getItem("sidsteBesoeg") || 0;
     if (sidst) {
-      const nye = artikler.filter(a => a.dato && new Date(a.dato).getTime() > sidst).length;
+      const nye = artikler.filter(a => (a.foerst_set || a.dato) &&
+        new Date(a.foerst_set || a.dato).getTime() > sidst && !erLaest(a)).length;
       if (nye > 0) { chip.textContent = `+${nye} nye siden dit sidste besøg`; chip.hidden = false; }
     }
     // besøget tæller først som "set" efter ét minut, så en hurtig reload ikke nulstiller
@@ -1221,5 +1288,8 @@ fetch("data/articles.json")
 </script>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
 </body>
 </html>

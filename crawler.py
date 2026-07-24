@@ -23,7 +23,7 @@ import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -1317,6 +1317,151 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
     _send_nyhedsbrev(data)
 
 
+# ----- Statiske artikelsider (SEO) --------------------------------------------
+
+ARTIKEL_MAPPE = ROOT / "artikel"
+
+
+def _artikel_slug(link: str) -> str:
+    import hashlib
+    return hashlib.md5(link.encode()).hexdigest()[:16]
+
+
+def _fed_html(tekst: str) -> str:
+    """Escaper HTML og omsætter **fremhævning** til <strong>."""
+    t = html.escape(str(tekst or ""))
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
+
+
+def _artikel_side_html(a: dict) -> str:
+    rubrik = html.escape(a.get("rubrik") or a.get("titel", ""))
+    resume = html.escape(a.get("resume_da") or a.get("resume") or "")
+    slug = _artikel_slug(a["link"])
+    url = f"{SITE_URL}/artikel/{slug}.html"
+    billede = f"{SITE_URL}/{a['billede']}" if a.get("billede") else f"{SITE_URL}/assets/og.png"
+    dato_vis = (a.get("dato") or "")[:10]
+
+    krop = ""
+    for s in a.get("sektioner", []):
+        krop += f'<h2>{_fed_html(s.get("overskrift", ""))}</h2>\n<p>{_fed_html(s.get("tekst", ""))}</p>\n'
+    if not krop and a.get("brief"):
+        krop = f"<p>{_fed_html(a['brief'])}</p>\n"
+
+    detaljer = ""
+    if a.get("detaljer"):
+        punkter = "".join(f"<li>{_fed_html(d)}</li>" for d in a["detaljer"])
+        detaljer = f'<div class="boks"><strong>Detaljerne</strong><ul>{punkter}</ul></div>'
+
+    betydning = ""
+    if a.get("betydning"):
+        betydning = (f'<div class="boks" style="border-left-color:#2e9e5b;">'
+                     f'<strong>Hvad betyder det for dig?</strong><br>{_fed_html(a["betydning"])}</div>')
+
+    kilder = f'<a class="kilde" href="{html.escape(a["link"])}" rel="noopener">{html.escape(a["kilde"])} →</a>'
+    for k in a.get("andre") or []:
+        kilder += f' <a class="kilde" href="{html.escape(k["link"])}" rel="noopener">{html.escape(k["kilde"])} →</a>'
+
+    return f"""<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · {rubrik}</title>
+<meta name="description" content="{resume}">
+<link rel="canonical" href="{url}">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="{rubrik}">
+<meta property="og:description" content="{resume}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{billede}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {{ --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
+  --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; }}
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
+.topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }}
+.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }}
+.brand em {{ font-style:normal; color:var(--accent); }}
+main {{ max-width:720px; margin:0 auto; padding:44px 24px 80px; }}
+.kicker {{ font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }}
+h1 {{ font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }}
+.manchet {{ font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }}
+img.top {{ width:100%; border-radius:16px; margin-bottom:24px; }}
+h2 {{ font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }}
+p {{ font-size:15.5px; line-height:1.75; margin-bottom:13px; }}
+li {{ font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }}
+.boks {{ background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }}
+.kilde {{ display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }}
+.kilde:hover {{ border-color:var(--accent); color:var(--accent); }}
+.cta {{ display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }}
+.note {{ font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }}
+footer {{ border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }}
+footer a {{ color:var(--accent); }}
+</style>
+</head>
+<body>
+<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<main>
+<div class="kicker">{html.escape(a.get("kategori") or "AI-nyt")} · {html.escape(a.get("kilde", ""))} · {dato_vis}</div>
+<h1>{rubrik}</h1>
+<p class="manchet">{resume}</p>
+{f'<img class="top" src="/{html.escape(a["billede"])}" alt="">' if a.get("billede") else ""}
+{krop}
+{detaljer}
+{betydning}
+<p style="margin-top:24px"><strong>Kilder:</strong><br>{kilder}</p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}'></script>
+</body>
+</html>"""
+
+
+def lav_artikelsider(artikler: list[dict]) -> None:
+    """Skriver en statisk HTML-side pr. dansk artikel (SEO) + eget sitemap.
+    Gamle sider slettes ikke - de bliver stående som evigt indhold."""
+    ARTIKEL_MAPPE.mkdir(exist_ok=True)
+    skrevet = 0
+    poster = []
+    for a in artikler:
+        if not a.get("rubrik"):
+            continue                        # kun danske genfortællinger
+        slug = _artikel_slug(a["link"])
+        a["side"] = f"artikel/{slug}.html"
+        sti = ARTIKEL_MAPPE / f"{slug}.html"
+        indhold = _artikel_side_html(a)
+        if not sti.exists() or sti.read_text(encoding="utf-8") != indhold:
+            sti.write_text(indhold, encoding="utf-8")
+            skrevet += 1
+        poster.append((slug, (a.get("foerst_set") or "")[:10]))
+    # eget sitemap for artikelsiderne (alle, også de historiske)
+    alle_sider = sorted(ARTIKEL_MAPPE.glob("*.html"))
+    linjer = "".join(
+        f"  <url><loc>{SITE_URL}/artikel/{p.name}</loc></url>\n" for p in alle_sider)
+    (ROOT / "sitemap-artikler.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{linjer}</urlset>\n", encoding="utf-8")
+    print(f"🔎 Artikelsider: {skrevet} skrevet/opdateret, {len(alle_sider)} i alt")
+
+
 # ----- Dagens prompt (prompt-kartoteket) -------------------------------------
 
 PROMPT_ARKIV = ROOT / "data" / "prompts.json"
@@ -1378,6 +1523,70 @@ def lav_dagens_prompt() -> None:
         print(f"✨ Dagens prompt skrevet: \"{titel}\" ({kategori})")
     except Exception as e:
         print(f"✨ Dagens prompt sprang over ({e})")
+
+
+# ----- Ugens nyhedsquiz --------------------------------------------------------
+
+QUIZ_FIL = ROOT / "data" / "quiz.json"
+
+SYSTEM_QUIZ = """Du laver ugens nyhedsquiz til ainyheder.com ud fra ugens vigtigste AI-historier.
+Svar KUN med et JSON-array med præcis 5 objekter: [{"sp": "...", "svar": [["tekst", true/false], ["tekst", false], ["tekst", false]], "fork": "..."}]
+Krav:
+- sp: et klart spørgsmål på letlæst dansk om noget fra materialet ("Hvilket firma...", "Hvor mange...").
+- svar: præcis 3 muligheder, hvor NETOP ÉN er sand (true). De forkerte skal være plausible, ikke fjollede.
+- fork: én sætning, der forklarer det rigtige svar.
+- Byg KUN på det materiale, du får - opdigt aldrig tal eller navne.
+- Spred spørgsmålene over forskellige historier."""
+
+
+def lav_ugens_quiz(artikler: list[dict]) -> None:
+    """Én quiz pr. ISO-uge, genereret af AI ud fra ugens tophistorier.
+    Fejler stille - quizzen må aldrig vælte crawlet."""
+    if not API_KEY:
+        return
+    try:
+        try:
+            from zoneinfo import ZoneInfo
+            nu_dk = datetime.now(ZoneInfo("Europe/Copenhagen"))
+        except Exception:
+            nu_dk = datetime.now(timezone.utc)
+        iso = nu_dk.isocalendar()
+        uge_noegle = f"{iso[0]}-U{iso[1]:02d}"
+
+        if QUIZ_FIL.exists():
+            try:
+                if json.loads(QUIZ_FIL.read_text(encoding="utf-8")).get("uge") == uge_noegle:
+                    return   # ugens quiz findes allerede
+            except json.JSONDecodeError:
+                pass
+
+        graense = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+        kandidater = [a for a in artikler
+                      if a.get("rubrik") and (a.get("dato") or "") >= graense]
+        kandidater.sort(key=lambda a: a.get("prio") or 5, reverse=True)
+        stof = [{"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
+                 "detaljer": (a.get("detaljer") or [])[:3]} for a in kandidater[:10]]
+        if len(stof) < 5:
+            return
+
+        r = parse_json_svar(kald_ai(SYSTEM_QUIZ, json.dumps(stof, ensure_ascii=False), 2000))
+        gyldige = []
+        for q in r if isinstance(r, list) else []:
+            svar = q.get("svar") or []
+            if (q.get("sp") and len(svar) == 3
+                    and sum(1 for s in svar if s[1] is True) == 1):
+                gyldige.append({"sp": str(q["sp"]).strip(),
+                                "svar": [[str(s[0]).strip(), bool(s[1])] for s in svar],
+                                "fork": str(q.get("fork", "")).strip()})
+        if len(gyldige) < 5:
+            print("🎯 Ugens quiz: for få gyldige spørgsmål - prøver igen næste kørsel")
+            return
+        QUIZ_FIL.write_text(json.dumps(
+            {"uge": uge_noegle, "genereret": nu_dk.date().isoformat(),
+             "spoergsmaal": gyldige[:5]}, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"🎯 Ugens quiz skrevet ({uge_noegle})")
+    except Exception as e:
+        print(f"🎯 Ugens quiz sprang over ({e})")
 
 
 # ----- Hovedprogram ----------------------------------------------------------
@@ -1494,6 +1703,8 @@ def main() -> None:
     for a in unikke:
         a["dato"] = a["dato"].isoformat() if a["dato"] else None
 
+    lav_artikelsider(unikke)   # statiske SEO-sider + "side"-felt til delelinks
+
     resultat = {
         "opdateret": nu.isoformat(),
         "antal": len(unikke),
@@ -1508,6 +1719,7 @@ def main() -> None:
     lav_rss(unikke)
     lav_ugens_overblik(unikke)
     lav_dagens_prompt()
+    lav_ugens_quiz(unikke)
 
 
 if __name__ == "__main__":

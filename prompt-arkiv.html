@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -266,5 +267,8 @@ footer a { color: var(--accent); }
 
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
 </body>
 </html>

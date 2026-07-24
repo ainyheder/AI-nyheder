@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Ugens AI-quiz</title>
+<meta name="description" content="Test dig selv i ugens vigtigste AI-nyheder: 5 spørgsmål, ny quiz hver uge — lavet automatisk ud fra ugens historier. Hvor mange kan du få rigtige?">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:title" content="Ugens AI-quiz — hvor mange kan du få rigtige?">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --groen: #2e9e5b; --groen-svag: #e3f4ea; --roed: #c04545; --roed-svag: #fbeaea;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 28px; max-width: 64ch; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+
+.quiz-sp { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 20px 24px; margin: 14px 0; box-shadow: var(--skygge); }
+.quiz-sp .sp { font-weight: 700; font-size: 15.5px; margin-bottom: 12px; }
+.svar { display: block; width: 100%; text-align: left; font-family: var(--font-ui); font-size: 14.5px;
+  background: var(--bg); border: 1px solid var(--linje); border-radius: 10px; padding: 10px 14px;
+  margin: 8px 0; cursor: pointer; transition: border-color .15s; }
+.svar:hover { border-color: var(--accent); }
+.svar.valgt { border-color: var(--accent); background: var(--accent-svag); font-weight: 700; }
+.svar.rigtig { background: var(--groen-svag); border-color: var(--groen); font-weight: 700; }
+.svar.forkert { background: var(--roed-svag); border-color: var(--roed); }
+.svar:disabled { cursor: default; }
+.forklaring { display: none; font-size: 14px; color: var(--blaek-svag); margin-top: 10px;
+  padding-top: 10px; border-top: 1px dashed var(--linje); }
+.bedoem-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 6px; }
+.bedoem-knap:disabled { background: var(--linje); color: var(--blaek-svag); cursor: default; }
+.resultat { display: none; text-align: center; background: var(--bg-kort); border: 2px solid var(--accent);
+  border-radius: var(--radius); padding: 28px; margin: 24px 0; box-shadow: var(--skygge); }
+.resultat h3 { font-family: var(--font-display); font-weight: 900; font-size: 30px; margin-bottom: 6px; }
+.resultat p { font-size: 15px; }
+.del-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
+  border: none; border-radius: 999px; padding: 12px 26px; cursor: pointer; margin-top: 12px; }
+.del-knap:hover { opacity: .9; }
+.tom { text-align: center; padding: 50px 20px; color: var(--blaek-svag); font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="laer.html">Lær AI</a>
+    <a class="top-led" href="ordbog.html">Ordbog</a>
+    <a class="top-led" href="prompts.html">Prompts</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="./">← Nyhederne</a>
+  </div>
+</div>
+<main>
+<span class="kicker" id="quizUge">Ugens AI-quiz</span>
+<h1>Fulgte du med i denne uge? 🎯</h1>
+<p class="manchet">Fem spørgsmål om ugens vigtigste AI-nyheder — lavet automatisk ud fra de historier, vi har bragt. Svar på alle fem, se din score, og del den med én, der tror, de følger bedre med end dig.</p>
+
+<div id="quizOmraade"></div>
+<button class="bedoem-knap" id="quizBedoem" disabled style="display:none">Se min score</button>
+
+<div class="resultat" id="quizResultat">
+  <h3 id="resScore"></h3>
+  <p id="resTekst"></p>
+  <button class="del-knap" id="resDel">Del din score</button>
+  <p style="font-size:13px; color:var(--blaek-svag); margin-top:12px;">Ny quiz hver uge — kig forbi igen på fredag.</p>
+</div>
+
+<div class="tom" id="quizTom" style="display:none">Ugens quiz er ved at blive skrevet af maskinen — kig forbi lidt senere. ✨<br><br><a href="./" style="color:var(--accent); font-weight:700;">Læs ugens nyheder imens →</a></div>
+
+<div class="boks" style="margin-top:34px;"><strong>Vil du klare dig bedre i næste uge?</strong> Læs <a href="./" style="color:var(--accent); font-weight:700;">dagens nyheder</a> fem minutter om dagen — eller tag <a href="koerekort.html" style="color:var(--accent); font-weight:700;">AI-kørekortet</a>, mens du er i gang.</div>
+</main>
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<script>
+(function(){
+  var omraade = document.getElementById('quizOmraade');
+  var bedoem = document.getElementById('quizBedoem');
+  var spgs = [], valgte = [];
+
+  function bland(a){
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function tegn(){
+    bedoem.style.display = '';
+    spgs.forEach(function(q, qi){
+      var boks = document.createElement('div');
+      boks.className = 'quiz-sp';
+      var sp = document.createElement('div');
+      sp.className = 'sp';
+      sp.textContent = (qi + 1) + '. ' + q.sp;
+      boks.appendChild(sp);
+      bland(q.svar.map(function(_, i){ return i; })).forEach(function(si){
+        var k = document.createElement('button');
+        k.type = 'button'; k.className = 'svar';
+        k.textContent = q.svar[si][0];
+        k.addEventListener('click', function(){
+          if (k.disabled) return;
+          boks.querySelectorAll('.svar').forEach(function(x){ x.classList.remove('valgt'); });
+          k.classList.add('valgt');
+          valgte[qi] = si;
+          bedoem.disabled = !valgte.every(function(v){ return v !== undefined; }) || valgte.length !== spgs.length;
+        });
+        boks.appendChild(k);
+      });
+      var fork = document.createElement('div');
+      fork.className = 'forklaring';
+      fork.textContent = q.fork;
+      boks.appendChild(fork);
+      omraade.appendChild(boks);
+    });
+  }
+
+  bedoem.addEventListener('click', function(){
+    var rigtige = 0;
+    omraade.querySelectorAll('.quiz-sp').forEach(function(boks, i){
+      var q = spgs[i];
+      boks.querySelectorAll('.svar').forEach(function(k){
+        k.disabled = true;
+        var erRigtigt = q.svar.some(function(s){ return s[0] === k.textContent && s[1]; });
+        if (erRigtigt) k.classList.add('rigtig');
+        else if (k.classList.contains('valgt')) k.classList.add('forkert');
+      });
+      if (q.svar[valgte[i]] && q.svar[valgte[i]][1]) rigtige++;
+      boks.querySelector('.forklaring').style.display = 'block';
+    });
+    bedoem.style.display = 'none';
+    var tekster = ['Av — men nu ved du, hvor du skal læse op! 📚', 'Der er plads til forbedring — heldigvis udkommer vi hver dag.',
+      'Midt på skiven — pænt klaret!', 'Stærkt — du følger godt med!', 'Flot — næsten fuldt hus!', 'Perfekt score — du er ugens AI-orakel! 👑'];
+    document.getElementById('resScore').textContent = rigtige + ' af 5 rigtige';
+    document.getElementById('resTekst').textContent = tekster[rigtige];
+    var res = document.getElementById('quizResultat');
+    res.style.display = 'block';
+    if (res.scrollIntoView) res.scrollIntoView({behavior:'smooth', block:'center'});
+
+    document.getElementById('resDel').addEventListener('click', function(){
+      var besked = 'Jeg fik ' + rigtige + ' af 5 i ugens AI-quiz 🎯 Kan du slå mig? https://ainyheder.com/quiz.html';
+      var knap = this;
+      if (navigator.share) { navigator.share({ text: besked }).catch(function(){}); }
+      else navigator.clipboard.writeText(besked).then(function(){
+        knap.textContent = 'Kopieret — sæt ind i en besked ✓';
+        setTimeout(function(){ knap.textContent = 'Del din score'; }, 2200);
+      });
+    });
+  });
+
+  function visTom(){ document.getElementById('quizTom').style.display = 'block'; }
+
+  if (window.fetch) {
+    fetch('data/quiz.json').then(function(r){ return r.json(); }).then(function(d){
+      if (d && d.spoergsmaal && d.spoergsmaal.length === 5) {
+        spgs = d.spoergsmaal;
+        valgte = new Array(5);
+        if (d.uge) document.getElementById('quizUge').textContent = 'Ugens AI-quiz · uge ' + d.uge.split('U')[1];
+        tegn();
+      } else visTom();
+    }).catch(visTom);
+  } else visTom();
+})();
+</script>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
+</body>
+</html>

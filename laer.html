@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -194,6 +195,8 @@ footer a { color: var(--accent); }
   <a class="net-kort" href="guide-sikkerhed.html"><span class="ikon">🛡️</span><h3>Brug AI sikkert</h3><p>Hvad må man dele? Kan man stole på svarene? Seks tommelfingerregler.</p></a>
   <a class="net-kort" href="ordbog.html"><span class="ikon">📖</span><h3>AI-ordbogen</h3><p>Knap 50 begreber — fra LLM til hallucination — forklaret kort og klart.</p></a>
   <a class="net-kort" href="prompts.html"><span class="ikon">🧰</span><h3>Prompt-biblioteket</h3><p>Færdige prompts til madplaner, jobansøgninger, økonomi og meget mere. Kopiér og brug.</p></a>
+  <a class="net-kort" href="vaerktoejer.html"><span class="ikon">🧭</span><h3>Hvilken AI til hvad?</h3><p>Redaktionens oversigt over de vigtigste værktøjer — chatbots, billeder, research og lyd.</p></a>
+  <a class="net-kort" href="quiz.html"><span class="ikon">🎯</span><h3>Ugens AI-quiz</h3><p>Fulgte du med i denne uge? Fem spørgsmål, ny quiz hver uge — del din score.</p></a>
   <a class="net-kort" href="prompt-arkiv.html"><span class="ikon">🗂️</span><h3>Prompt-kartoteket</h3><p>Én ny AI-skrevet prompt hver dag — hele samlingen, søgbar og klar til kopiering.</p></a>
   <a class="net-kort" href="faq.html"><span class="ikon">💬</span><h3>Spørgsmål & svar</h3><p>Er AI farligt? Tager den mit job? Ærlige svar på det, alle spørger om.</p></a>
 </div>
@@ -247,5 +250,8 @@ footer a { color: var(--accent); }
 
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
 </body>
 </html>
