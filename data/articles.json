@@ -1,7 +1,724 @@
 {
-  "opdateret": "2026-07-24T13:04:46.693476+00:00",
-  "antal": 107,
+  "opdateret": "2026-07-24T13:09:54.789979+00:00",
+  "antal": 124,
   "artikler": [
+    {
+      "titel": "AI bet goes awry: Oracle fires 21,000 employees",
+      "link": "https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD",
+      "resume": "Article URL: https://www.msn.com/en-us/money/economy/ai-bet-goes-awry-oracle-fires-21-000-employees/ar-AA28vWuD Comments URL: https://news.ycombinator.com/item?id=49025754 Points: 103 # Comments: 25",
+      "dato": "2026-07-23T18:07:33+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Kæmpe tech-firma fyrer 21.000 efter fejlslagen satsning",
+      "resume_da": "Giganten Oracle har fyret tusindvis af ansatte, fordi en stor satsning på AI ikke gik som håbet.",
+      "kat_ai": true,
+      "prio": 9,
+      "billedmotiv": "En papkasse fyldt med firmabetjente adgangskort ved siden af en død computer med et stort rødt kryds på skærmen.",
+      "billede": "data/img/b14601ebd5b7f210.jpg",
+      "side": "artikel/c307a1d41140d887.html"
+    },
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 290 # Comments: 199",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Eksperter i strid om frit tilgængelig AI",
+      "resume_da": "Der er heftig debat om, hvorvidt alle frit bør få adgang til at bruge og rette i avanceret AI.",
+      "kat_ai": true,
+      "prio": 6,
+      "billedmotiv": "En stor rød knap placeret midt mellem to identiske, åbne nøglebundter i metal.",
+      "billede": "data/img/9a151c1c9892dad0.jpg",
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
+      "link": "https://github.com/onecli/onecli",
+      "resume": "hey HN, Jonathan and Guy here, creators of OneCLI ( https://onecli.sh/ ). OneCLI is an open source vault for AI Agents. Traditional vaults are used to store your secrets and, on demand, provide them to you all in a secure way, trusting the person to keep them safe. We figured that in the agent's world, this is not the case, as you don't know what happens with the secret after it's delivered to…",
+      "dato": "2026-07-23T15:42:40+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Nyt åbent vaern beskytter mod snagede koder",
+      "resume_da": "Open-source vaerktoej holder adgangskoder vaek fra AI ved automatisk at indsaette noegler i trafikken.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Sikkerhed for koder",
+          "tekst": "Naar du lader **AI** haandtere opgaver, kraever det ofte adgang til forskellige digitale tjenester. Hidtil har loesningen vaeret at udlevere de rigtige noegler direkte, hvilket udgoer en sikkerhedsrisiko. Med **OneCLI** undgaas dette, da systemet fungerer som en sikker mellemand, der haandterer alle foelsomme oplysninger i baggrunden."
+        },
+        {
+          "overskrift": "Saadan virker det",
+          "tekst": "Systemet erstatter dine rigtige noegler med midlertidige erstatninger under arbejdet. Naar **AI** sender en forespoergsel af Sted, snupper gatewayen den og bytter erstatningen ud med den aegte noegler lige inden turen gaar videre. Det betyder, at hjerne-systemerne aldrig nogensinde faar kendskab til de faktiske adgangskoder."
+        },
+        {
+          "overskrift": "Nem opsaetning",
+          "tekst": "Loesningen er bygget op om en **Rust**-gateway og et **Next.js**-kontrolpanel til at styre rettighederne. Data bliver beskyttet med **AES-256-GCM** kryptering, indtil de skal bruges. Udviklere kan komme i gang med faa kommandoer og koere det lokalt paa maskinen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OneCLI fungerer som en open-source sikkerhedsvaeg for koder.",
+        "Systemet placerer sig som et bindeled mellem systemer og tjenester.",
+        "Egentlige noegler udskiftes i flyvende fart under forespoergelser.",
+        "Datalagringen benytter stærk AES-256-GCM kryptering.",
+        "Der kan vaelges mellem enkeltbruger-tilstand og Google login."
+      ],
+      "betydning": "For almindelige brugere betyder det en sikrere hverdag, hvor automatiserede hjaelpere kan udfoere administrative opgaver paa tvaers af konti uden risiko for, at private noegler laekkes eller misbruges. Det mindsker chancen for digital stoevtyverivaerkstoejer.",
+      "pointer": [
+        "Sikkerhedsvaeg mod laek af noegler",
+        "Automatisk udskiftning af adgangskoder",
+        "Open-source vaerktøj til udviklere"
+      ],
+      "billedmotiv": "En digital laas med et gloedende noeglehul, omgivet af svage data- stroemme paa en moerk baggrund.",
+      "billede": "data/img/d9e05c57a7a5f793.jpg",
+      "side": "artikel/761ce3ae56419893.html"
+    },
+    {
+      "titel": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+      "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+      "resume": "https://littletech.org/ https://static.politico.com/4a/bf/9c4021d8404386b0a311dcccf0... Comments URL: https://news.ycombinator.com/item?id=49023016 Points: 996 # Comments: 802",
+      "dato": "2026-07-23T15:18:40+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Iværksættere advarer mod at blokere kinesisk AI",
+      "resume_da": "Chefer for nye teknologiselskaber opfordrer den amerikanske regering til ikke at lukke for adgangen til åben kinesisk AI.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Kraftig opfordring",
+          "tekst": "En gruppe stiftere af mindre teknologiselskaber har rettet henvendelse til myndighederne i USA. De slår alarm, fordi de frygter politiske indgreb mod frit tilgængelig teknologi fra Asien. Deres primære budskab er, at et forbud vil skade den frie konkurrence og udviklingen på området."
+        },
+        {
+          "overskrift": "Stort engagement",
+          "tekst": "Debatten har vakt opsigt og skabt massivt engagement online med **996** point og over **800** kommentarer. Det viser, at spændingerne mellem stormagterne på det digitale marked berører centrale dilemmaer om åbenhed, sikkerhed og fremtidens digitale infrastruktur."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "En gruppe iværksættere beder den amerikanske regering om ikke at blokere kinesisk AI.",
+        "Diskussionen handler specifikt om teknologimodeller med åben kildekode.",
+        "Hændelsen har skabt stor debat i tech-miljøet med 996 point.",
+        "Opslaget har modtaget 802 kommentarer fra brugere verden over."
+      ],
+      "betydning": "For almindelige mennesker kan politiske begrænsninger på tværs af landegrænser betyde færre valgmuligheder og dyrere digitale tjenester. Når udviklere og mindre virksomheder kæmper for fri adgang til al teknologi, handler det i sidste ende om, hvem der skal kontrollere fremtidens digitale værktøjer, og om innovationen kan fortsætte uafhængigt af storpolitiske konflikter.",
+      "pointer": [
+        "Iværksættere vil undgå amerikansk stop for kinesisk AI",
+        "Debatten samler hundredvis af kommentarer online",
+        "Spørgsmålet handler om fri adgang til åben teknologi"
+      ],
+      "billedmotiv": "En papirskasse fyldt med papirer mærket med kinesiske skrifttegn, placeret ved siden af et amerikansk flag.",
+      "billede": "data/img/0dbec3c324f5322f.jpg",
+      "side": "artikel/aca257bb93fd12fa.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Ny Mac-video-app lader AI klippe med",
+      "resume_da": "Et nyt gratis videoprogram til Mac kombinerer klassisk tidslinjeklipning med avanceret AI, så du kan redigere sammen med en digital medarbejder.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Skabt til Mac",
+          "tekst": "Programmet hedder Palmier Pro og er udviklet helt fra bunden i **Swift** for at køre optimalt på Apple-computere. Udviklerne har ladet sig inspirere af professionelle programmer som Adobe Premiere for at skabe en velkendt oplevelse, hvor AI er vævet naturligt ind i hele arbejdsprocessen."
+        },
+        {
+          "overskrift": "Byg dine film",
+          "tekst": "Direkte på tidslinjen kan du skabe både levende billeder og grafik ved hjælp af kraftfulde modeller som **Seedance**, **Kling** og **Nano Banana Pro**. Det gør det muligt at generere nyt indhold, mens du arbejder på dit videoprojekt, uden at du behøver skifte mellem forskellige programmer undervejs."
+        },
+        {
+          "overskrift": "Samarbejd direkte",
+          "tekst": "Du kan koble populære systemer som **Claude**, **Codex** eller **Cursor** til programmet og lade dem styre tidslinjen sammen med dig. Systemet deler data via en lokal adresse, og det er muligt at opsætte forbindelsen med få klik direkte fra programmets hjælpe-menu."
+        },
+        {
+          "overskrift": "Frit og åbent",
+          "tekst": "Selve videoredigeringen og forbindelsesdelene er fuldstændig åbne og gratis at bruge uden nogen form for login, mens selve AI-behandlingerne foregår i lukkede systemer. Programmet fungerer som et gratis alternativ til eksisterende programmer, og udviklerne deler det med hele fællesskabet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Palmier Pro er et gratis open-source videoredigeringsprogram skabt særligt til Mac.",
+        "Programmet er bygget helt fra bunden ved hjælp af programmeringssproget Swift.",
+        "Du kan generere både billeder og videoer direkte på tidslinjen ved hjælp af avancerede AI-modeller.",
+        "Programmet forbinder til eksterne systemer via en indbygget lokal server på din computer.",
+        "Brugerne kan koble værktøjer som Claude, Codex og Cursor til for at styre projektet.",
+        "Selve redigeringsdelen og serveren er gratis at bruge uden krav om et personligt login."
+      ],
+      "betydning": "For almindelige videoentusiaster og kreative skabere betyder det her, at professionelle arbejdsgange bliver langt mere tilgængelige. Når AI kan flytte klip og tilføje effekter direkte via en samtale, mindskes behovet for at lære svære, tunge programmer fra grunden. Det kan gøre videoproduktion hurtigere og billigere for alle, der drømmer om at fortælle historier i levende billeder.",
+      "pointer": [
+        "Gratis video-app til Mac kombinerer tidslinje og AI.",
+        "Koble systemer som Claude og Cursor direkte på.",
+        "Generer video og billeder direkte i tidslinjen."
+      ],
+      "billedmotiv": "En slank bærbar computer på et træbord viser en farverig videoredigeringstidslinje, hvor en digital robotarm svæver let hen over skærmen.",
+      "billede": "data/img/a1df1f6c071a5b2f.jpg",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "I think you might be fooling yourself with AI",
+      "link": "https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html",
+      "resume": "Article URL: https://louwrentius.com/i-think-you-might-be-fooling-yourself-with-ai.html Comments URL: https://news.ycombinator.com/item?id=49021843 Points: 81 # Comments: 166",
+      "dato": "2026-07-23T14:05:43+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Narres vi af vores egen begejstring for AI?",
+      "resume_da": "Selvom AI føles effektivt, mangler der solid dokumentation for reel produktivitetsfremme, og de høje omkostninger kan true teknologien på sigt.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Følelsen af effektivitet",
+          "tekst": "Når man bruger AI til daglige opgaver som programmering, er det nemt at blive overbevist om, at arbejdet glider hurtigere. Værktøjerne virker utroligt skarpe og giver en stærk fornemmelse af fremdrift. Men denne subjektive oplevelse kan skygge for virkeligheden, fordi det er næsten umuligt at måle sin egen indsats objektivt uden at tage højde for den personlige begejstring og de blinde vinkler, man uundgåeligt har."
+        },
+        {
+          "overskrift": "Måling modbeviser myten",
+          "tekst": "Undersøgelser viser et overraskende gab mellem den følte og den faktiske effektivitet. Et studie fra **2025** pegede på, at deltagere, der følte sig hurtigere med AI, reelt var omkring **19 %** langsommere til at løse opgaverne. Selvom senere målinger har vist andre tendenser, afslører forskningen, at vi let overvurderer værdien af disse teknologier i hverdagen."
+        },
+        {
+          "overskrift": "Regningen gemmer sig",
+          "tekst": "De nuværende priser på tjenester som **200** dollars om måneden er stærkt subsidierede af udbyderne. Faktisk koster den reelle API-forbrug op til **14.000** dollars, hvis man udnytter det fuldt ud. Når selskaberne stopper med at spæde penge til, vil den sande pris vælte frem, og så er det uvist, hvor mange der stadig vil finde teknologien pengene værd."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "19 %",
+          "label": "langsommere ifølge studie fra sent i 2025"
+        },
+        {
+          "tal": "$200",
+          "label": "månedlig abonnementspris for ChatGPT"
+        },
+        {
+          "tal": "$14.000",
+          "label": "reelle API-omkostninger ved fuldt forbrug"
+        }
+      ],
+      "detaljer": [
+        "Mange oplever at blive narret af deres egen begejstring, når de anvender AI til daglige gøremål.",
+        "Et studie fra slutningen af 2025 viste, at udviklere var omkring 19 % langsommere, selvom de følte det modsatte.",
+        "Tidligere opsigelser i tech-branchen skyldes ofte overansættelser frem for en reel effektivisering via AI.",
+        "ChatGPT-abonnementet til 200 dollars dækker over faktiske API-omkostninger på op til 14.000 dollars.",
+        "De enorme udgifter til drift og datacentre skaber tvivl om AI-markedets langsigtede overlevelse.",
+        "Kritikere peger på store omkostninger i form af energiforbrug, klimabelastning og ophavsretskrænkelser."
+      ],
+      "betydning": "For almindelige mennesker betyder denne udvikling, at man bør være kritisk over for påstande om uundgåelig effektivisering og fremtidig vækst. Hvis de nuværende gigantiske subsidier falder bort, kan prisen på AI stige drastisk, hvilket vil ramme både virksomheder og forbrugere. Samtidig rejser de enorme samfundsmæssige omkostninger til energi og ressourcer svære etiske spørgsmål om, hvorvidt teknologien reelt skaber mere værdi, end den ødelægger.",
+      "pointer": [
+        "AI-produktivitet er svær at dokumentere objektivt.",
+        "Brugere overvurderer ofte, hvor meget hurtigere de arbejder.",
+        "Nupriserne på AI er stærkt subsidierede og urealistiske.",
+        "Store miljøomkostninger og etiske dilemmaer følger med teknologien."
+      ],
+      "billedmotiv": "En regnemaskine oven på en stak ubetalte energiregninger ved siden af en glødende computerskærm i et mørkt rum.",
+      "billede": "data/img/05543a07c49edb1a.jpg",
+      "side": "artikel/808e4613716c4fd6.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 257 # Comments: 301",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Amerikansk militærfly har fløjet med AI",
+      "resume_da": "Det amerikanske flyvevåben og DARPA har gennemført en flyvning med et F-16 kampfly styret af AI.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Historisk flyvning",
+          "tekst": "Det amerikanske militær har taget et stort skridt ind i fremtiden ved at lade en avanceret teknologi overtage kontrollen i luften. I samarbejde med **DARPA** har det amerikanske flyvevåben gennemført en opsigtsvækkende test med et **F-16** kampfly, hvor en computerstyret hjerne har styret maskinen helt uden menneskelig indgriben i cockpittet."
+        },
+        {
+          "overskrift": "Mange reaktioner",
+          "tekst": "Nyheden om den ubemandede militærflyvning har vakt opsigt på nettet og skabt livlig debat. På diskussionssiden Hacker News har brugen af AI i kampfly udløst **301** kommentarer og høstet **257** point fra nysgerrige læserne, som diskuterer perspektiverne i den nye militære teknologi."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "Det amerikanske flyvevåben og DARPA har testet et AI-styret F-16 kampfly.",
+        "Historien har skabt stor debat online med 301 kommentarer på Hacker News.",
+        "Opslaget opnåede 257 point i diskussionen på nettet."
+      ],
+      "betydning": "At militæret nu tester flystyring med AI viser, hvor hurtigt teknologien rykker ind i kritiske og fysiske områder. For almindelige mennesker rejser det vigtige spørgsmål om sikkerhed, og hvordan automatiserede systemer kommer til at præge fremtidens forsvar og samfund.",
+      "pointer": [
+        "DARPA og flyvevåbnet har testet AI i et F-16.",
+        "Testen viser at militæret tager AI til sig.",
+        "Nyheden skaber debat online med over 300 kommentarer."
+      ],
+      "billedmotiv": "Et militært F-16 kampfly på en landingsbane med et blåt, lysende digitalt netværk svævende over cockpittet.",
+      "billede": "data/img/81638fb59aa553c7.jpg",
+      "side": "artikel/cc744205c493c965.html"
+    },
+    {
+      "titel": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+      "link": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+      "resume": "Article URL: https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet Comments URL: https://news.ycombinator.com/item?id=49020999 Points: 660 # Comments: 351",
+      "dato": "2026-07-23T13:09:10+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Tekngiganter skjuler en enorm gæld bag hypen",
+      "resume_da": "Fem store tech-giganter gemmer på gigantiske lånebeløb uden for de officielle regnskaber for at finansiere den vilde udvikling.",
+      "kat_ai": true,
+      "prio": 9,
+      "sektioner": [
+        {
+          "overskrift": "De skjulte milliarder",
+          "tekst": "Fem amerikanske tech-giganter holder en massiv gæld ude af rampelyset for at finansiere de enorme ambitioner. Ifølge en undersøgelse foretaget af avisen Nikkei Asia drejer det sig om **1.65 billioner** dollars, som ikke fremgår af virksomhedernes officielle regnskaber. Det overstiger rent faktisk de **1.35 billioner** dollars, som de samme koncerner ellers officielt oplyser i deres seneste kvartalsrapporter."
+        },
+        {
+          "overskrift": "Meta i front",
+          "tekst": "Alene selskabet Meta står for en stor del af disse uofficielle forpligtelser med omkring **420 milliarder** dollars gemt væk. Metoden minder uhyggeligt meget om det krakkede energiselskab Enron, der i sin tid brugte snedige selskabskonstruktioner til at skjule pengemangel. Eksperter advarer om, at denne type regnskabstricks gør det svært at gennemskue den reelle økonomiske sundhedstilstand bag de mange investeringer."
+        },
+        {
+          "overskrift": "Kampen om data",
+          "tekst": "Årsagen til de voldsomme låneoptagelser skal findes i det enorme behov for at opbygge gigantiske serverhaller til at køre avancerede AI-modeller. Selskaberne kaster utallige formuer efter disse projekter for at holde trit i kapløbet. Samtidig udsteder de nye aktier for at rejse kapital, hvilket risikerer at udvande værdien for eksisterende ejere."
+        },
+        {
+          "overskrift": "Risikoen for krak",
+          "tekst": "Flere fagfolk frygter, at hele industrien udvikler sig til en gigantisk spekulativ boble, fordi de skyhøje selskabsværdier slet ikke modsvares af tilsvarende indtjening. Hvis interessen eller efterspørgslen svigter, står de involverede virksomheder ekstremt sårbare over for et pludseligt økonomisk tilbageslag. Fire af de fem undersøgte giganter står over for at offentliggøre nye regnskabstal, som vil blive fulgt tæt af nervøse iagttagere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1.65 billioner $",
+          "label": "skjult gæld hos fem tech-giganter"
+        },
+        {
+          "tal": "420 milliarder $",
+          "label": "off-balance-gæld alene hos Meta"
+        }
+      ],
+      "detaljer": [
+        "skjult gæld fundet af Nikkei Asia",
+        "officielt rapporteret gæld i seneste kvartal",
+        "dollars i uofficiel gæld for selskabet Meta",
+        "De fem selskaber bag undersøgelsen er Alphabet, Microsoft, Amazon, Meta og Oracle.",
+        "Metoden med at skjule gæld vækker minder om energiselskabet Enrons historiske kollaps.",
+        "Selskaberne udsteder nye aktier for at skaffe friske midler til at finansiere udgifterne."
+      ],
+      "betydning": "For almindelige mennesker kan denne voldsomme gældsætning få stor betydning, hvis tech-markedet viser sig at være en ustabil boble. Mange pensionsordninger og almindelige investorer ejer indirekte aktier i disse giganter, og et pludseligt krak kan ryste de globale finansmarkeder. Samtidig viser det, hvor ekstremt dyrt det er at drive den teknologiske udvikling frem, hvilket kan føre til højere priser eller færre ressourcer til andre samfundsområder, hvis regningen en dag skal betales.",
+      "pointer": [
+        "Fem tech-giganter gemmer på gæld for 1.65 billioner dollars.",
+        "Meta alene står for omkring 420 milliarder dollars i skjulte lån.",
+        "Eksperter frygter en økonomisk boble på grund af gigantiske data-investeringer."
+      ],
+      "billedmotiv": "En stabel officielle regnskaber med et skjult, mørkt pengeskab fyldt med regninger nedenunder.",
+      "billede": "data/img/4595b84e0d7ff403.jpg",
+      "side": "artikel/c478b8dfb1116ce7.html"
+    },
+    {
+      "titel": "OpenAI and Anthropic unite against open-weight AI risks to their bottom line",
+      "link": "https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china",
+      "resume": "Article URL: https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china Comments URL: https://news.ycombinator.com/item?id=49020868 Points: 287 # Comments: 321",
+      "dato": "2026-07-23T13:00:03+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "OpenAI og Anthropic slår alarm om åben AI",
+      "resume_da": "De store AI-udbydere prøver at bremse udviklingen af frit tilgængelige modeller af hensyn til deres forretning.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "En uventet alliance",
+          "tekst": "De to store AI-giganter **OpenAI** og **Anthropic** har fundet sammen om at udtrykke bekymring. De peger på, at frit tilgængelige systemer kan udgøre en trussel. Det sker i en tid, hvor der er stor politisk bevågenhed omkring teknologien, herunder fra den amerikanske præsident **Trump** og konkurrencen mod **Kina**."
+        },
+        {
+          "overskrift": "Kampen om indtjeningen",
+          "tekst": "Baggrunden for de to virksomheders fælles opråb handler i høj grad om penge. Når AI-modeller gøres åbne for alle, bliver det sværere for producenterne at beskytte deres forretningsmodeller. De frygter, at det vil gå ud over deres indtjening, når andre frit kan bygge videre på teknologien uden at betale for det."
+        },
+        {
+          "overskrift": "Politiske vinde",
+          "tekst": "Spørgsmålet om åbenhed versus lukkede systemer rækker langt ud over de enkelte selskabers kontorer. Politiske dagsordener spiller en central rolle, hvor særligt forholdet til **Kina** og nationale sikkerhedshensyn bruges som argumenter. Debatten blusser op, efterhånden som AI-systemerne bliver mere og mere avancerede og sværere at kontrollere for myndighederne."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI og Anthropic samarbejder om at advare mod åbne AI-modeller.",
+        "Bekymringen retter sig mod selskabernes egne indtjeningsmuligheder.",
+        "Spørgsmålet om åbenhed er tæt forbundet med geopolitik og Kina.",
+        "Trumps administration nævnes i forbindelse med de nye politiske vinde.",
+        "Debatten rejser svære spørgsmål om fremtidens kontrol med teknologien."
+      ],
+      "betydning": "Udviklingen viser, at kampen om fremtidens AI ikke kun handler om teknologi, men i høj grad om penge og magt. Når de største spillere forsøger at begrænse adgangen til åbne modeller, kan det betyde færre valgmuligheder for almindelige brugere og mindre gennemsigtighed. På sigt kan det cementere magten hos ganske få gigantselskaber og gøre det sværere for mindre aktører at være med.",
+      "pointer": [
+        "OpenAI og Anthropic advarer mod åbne AI-modeller.",
+        "Frygten bunder i tab af indtjening og kontrol.",
+        "Politik og forholdet til Kina spiller en stor rolle."
+      ],
+      "billedmotiv": "En lukket metalkiste på et skrivebord, hvor der stikker pengesedler og et glødende printkort ud af sprækken.",
+      "billede": "data/img/3c61adabc8ba69ce.jpg",
+      "side": "artikel/26d36eec4c92c048.html"
+    },
+    {
+      "titel": "Understanding the AI Economy",
+      "link": "https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/",
+      "resume": "Article URL: https://blog.google/innovation-and-ai/technology/research/understanding-the-ai-economy/ Comments URL: https://news.ycombinator.com/item?id=49020335 Points: 73 # Comments: 146",
+      "dato": "2026-07-23T12:11:05+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Sådan bruger milliarder af mennesker egentlig AI",
+      "resume_da": "En ny stor undersøgelse fra Google viser, hvordan mennesker verden over faktisk anvender AI i hverdagen og på jobbet.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Kæmpe undersøgelse",
+          "tekst": "Google har sat luppen over brugen af AI med et omfattende nyt projekt kaldet ATLAS. Den første store rapport bygger på hele **15 millioner** anonymiserede samtaler og handlinger. Det giver et hidtil uset indblik i, hvordan teknologien væves ind i arbejdslivet og privatsfæren for de mere end **1 milliard** månedlige brugere."
+        },
+        {
+          "overskrift": "Global udbredelse",
+          "tekst": "Undersøgelsen kigger bredt på tværs af kloden og favner mere end **150 lande**. Dataene dækker over **140 sprog**, et spektrum på **800 forskellige erhverv** samt **4.000 unikke opgaver**. Det viser en massiv og alsidig interesse for at få hjælp af AI til alt fra kontorarbejde til praktiske fag."
+        },
+        {
+          "overskrift": "Folk vil have hjælp",
+          "tekst": "Resultaterne peger på, at folk sjældent lader teknologien klare det hele alene. I stedet fungerer AI som en effektiv medhjælper, der gør arbejdsgange hurtigere. Undersøgelsen er skabt i samarbejde med uafhængige eksperter fra universiteter som Cambridge og MIT."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "15 millioner",
+          "label": "anonymiserede AI-interaktioner i det første datasæt"
+        },
+        {
+          "tal": "1 milliard",
+          "label": "månedlige brugere af de undersøgte Google-værktøjer"
+        },
+        {
+          "tal": "150+",
+          "label": "lande dækket af den nye undersøgelse"
+        },
+        {
+          "tal": "4.000",
+          "label": "forskellige opgaver analyseret i rapporten"
+        }
+      ],
+      "detaljer": [
+        "Google står bag den nye rapport kaldet ATLAS, som karter forbruget af AI.",
+        "Det første datasæt rummer 15 millioner anonymiserede interaktioner fra Gemini og relaterede tjenester.",
+        "Undersøgelsen dækker over 150 lande og 140 forskellige sprog.",
+        "Rapporten afdækker brugen fordelt på 800 faggrupper og 4.000 specifikke opgaver.",
+        "Data er renset for personfølsomme oplysninger for at beskytte brugernes privatliv."
+      ],
+      "betydning": "Forbindelsen mellem mennesker og AI former fremtidens arbejdsmarked og økonomi. Når vi forstår præcis, hvordan teknologien bliver brugt i praksis, kan samfundet bedre forberede sig på forandringerne. Det giver virksomheder og politikere et stærkere fundament for at træffe kloge beslutninger om job, uddannelse og fremtidig vækst.",
+      "pointer": [
+        "Google kortlægger den globale brug af AI",
+        "Undersøgelsen bygger på 15 millioner interaktioner",
+        "Folk bruger primært AI som praktisk medhjælper",
+        "Dataen dækker over 150 lande og 800 erhverv"
+      ],
+      "billedmotiv": "En stor åben skærm med verdenskort og farvede grafer over opgaver, flankeret af et anonymt tastatur.",
+      "billede": "data/img/5fb1a0d1d9328cd3.jpg",
+      "side": "artikel/56b912d6b4cde9bc.html"
+    },
+    {
+      "titel": "New Framework Desktop Option with AMD Ryzen AI Max+ Pro 495 and 192GB Memory",
+      "link": "https://frame.work/desktop?tab=192gb-coming-soon",
+      "resume": "Article URL: https://frame.work/desktop?tab=192gb-coming-soon Comments URL: https://news.ycombinator.com/item?id=49019694 Points: 77 # Comments: 111",
+      "dato": "2026-07-23T11:09:48+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Ny computer bygget til tung AI",
+      "resume_da": "En ny computer er på vej med ekstremt meget hukommelse. Den er skabt til at køre krævende AI-opgaver derhjemme.",
+      "kat_ai": true,
+      "prio": 6,
+      "billedmotiv": "Et glødende computerkredsløb med en massiv, funklende guldmønt placeret ovenpå.",
+      "billede": "data/img/8adfaec514b4849e.jpg",
+      "side": "artikel/6a597cba3e69a848.html"
+    },
+    {
+      "titel": "Are AI labs pelicanmaxxing?",
+      "link": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+      "resume": "Article URL: https://dylancastillo.co/posts/pelicanmaxxing.html Comments URL: https://news.ycombinator.com/item?id=49010129 Points: 671 # Comments: 240",
+      "dato": "2026-07-22T17:17:54+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Narres vi af de sjove AI-testbilleder?",
+      "resume_da": "En kendt, sjov test med en pelikan på en cykel afslører, om AI-firmaerne snyder med resultaterne.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Den skøre test",
+          "tekst": "Et af de mest berømte internet-eksperimenter for AI startede som en sjov idé: at bede systemerne tegne en pelikan på cykel. Mange brugere følger spændt med for at se, om teknologien bliver bedre, men det har rejst en mistanke om, hvorvidt udviklerne bevidst optimerer modellerne til netop denne sjove udfordring."
+        },
+        {
+          "overskrift": "Seksogtredive kombinationer",
+          "tekst": "For at nå til bunds i sagen har en nysgerrig iagttager sat en stor undersøgelse i gang med **1.008** genererede tegninger fordelt på alverdens dyr og køretøjer. Ved at teste de førende systemer på markedet mod hinanden kan man se, om pelikanen rent faktisk får en urimelig særbehandling i forhold til andre svære motorer."
+        },
+        {
+          "overskrift": "Overraskende placering",
+          "tekst": "Resultatet viser en uventet virkelighed, hvor pelikanen og cyklerne faktisk lander nede i den tunge ende af kvalitetsskalaen. Analysen viser præcist, at dyr som katte og hvaler klares langt bedre, hvilket modbeviser teorien om, at der er blevet snydt med træningen for at imponere folk."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Testen omfattede i alt **1.008** genererede tegninger fordelt på forskellige systemer.",
+        "Eksperimentet testede syv af de største modeller på markedet.",
+        "Pelikanen landede samlet set som nummer **42** ud af **48** mulige kombinationer.",
+        "Hver sjette af alle testede billeder vendte mod højre i kompositionen.",
+        "Systemerne havde særligt svært ved at tegne cykler og flyvemaskiner korrekt."
+      ],
+      "betydning": "For almindelige forbrugere viser dette, at man ikke skal lade sig blinde af sjove, virale demoer på nettet. Selvom en AI kan virke ekstremt trænet til en enkelt finurlig opgave, viser grundige målinger, at de generelle evner ofte er mere nøgterne. Det hjælper os med at gennemskue markedsføringen fra de store teknologigiganter.",
+      "pointer": [
+        "Kendt internet-test afslører AI-firmaers snydevaner.",
+        "Over tusind billeder er analyseret i stor skala.",
+        "Pelikanen på cykel er slet ikke så speciel for teknologien."
+      ],
+      "billedmotiv": "En computerudskrift af en skitse med en pelikan og en cykel ved siden af et forstørrelsesglas på et træbord.",
+      "billede": "data/img/d3d4fa178c838663.jpg",
+      "side": "artikel/5e48565febeac4f5.html"
+    },
+    {
+      "titel": "Quality non-fiction books are the antithesis of AI slop",
+      "link": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the",
+      "resume": "https://book-prize-index.vercel.app/ Comments URL: https://news.ycombinator.com/item?id=49007247 Points: 483 # Comments: 235",
+      "dato": "2026-07-22T14:18:05+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Derfor slår rigtige fagbøger hurtigt digitalt snyd",
+      "resume_da": "Faglitteratur af høj kvalitet fungerer som et effektivt værn mod masseproduceret AI-indhold på nettet, viser ny debat.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Værdien af trykt viden",
+          "tekst": "Rigtige fagbøger skiller sig markant ud ved at tilbyde dybde og troværdighed, som maskiner har svært ved at kopiere. Nettet flyder i øjeblikket over med overfladisk fyld, hvilket gør det fysiske og gennemarbejdede bogværk mere værdifuldt for læsere, der søger reel forståelse frem for hurtige svar."
+        },
+        {
+          "overskrift": "Modgiften mod skidt",
+          "tekst": "Debatten om kvalitet viser, at folk efterspørger verificeret stof skrevet af eksperter. Mens automatinhold udvander værdien af almindelige artikler online, holder de traditionelle forlagsudgivelser stand som en pålidelig kilde til ægte indsigt og redigeret stof."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Faglitteratur fremhæves som den modsatte reaktion på overfladisk digitalt indhold.",
+        "Internettet oversvømmes af automatisk genereret fyldstof uden reel substans.",
+        "Læsere og debattører sætter pris på grundig research og redaktionel kvalitet.",
+        "Trykte udgivelser fungerer som et trygt alternativ til hurtige net-artikler."
+      ],
+      "betydning": "For almindelige mennesker betyder denne udvikling, at det fremover bliver endnu vigtigere at vælge sine kilder med omhu. Når internettet flyder over med letkøbt indhold, vil rigtige bøger og professionelt redigeret materiale stige i kurs som de sikreste steder at finde sanddru og dybdegående viden til både uddannelse og fritid.",
+      "pointer": [
+        "Faglitteratur er det modsatte af masseproduceret net-indhold.",
+        "Automatiserede tekster oversvømmer det moderne internet.",
+        "Kvalitetsbøger sikrer læseren dybde og troværdighed."
+      ],
+      "billedmotiv": "En enkelt indbundet fagbog af ægte papir, der ligger åben ved siden af en glødende computerskærm fuld af meningsløst vrøvl.",
+      "billede": "data/img/789a5b2d596c0eba.jpg",
+      "side": "artikel/9f90536071ea53ea.html"
+    },
+    {
+      "titel": "Businesses with ugly AI menu redesigns",
+      "link": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+      "resume": "Article URL: https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/ Comments URL: https://news.ycombinator.com/item?id=49005973 Points: 373 # Comments: 300",
+      "dato": "2026-07-22T12:49:45+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Lokalt spisested vækker opsigt med menukort",
+      "resume_da": "Et populært spisested har skiftet det klassiske menukort ud med grafik lavet af AI, hvilket skuffer gæsterne.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Skuffet selskab",
+          "tekst": "En gruppe venner med baggrund i den kreative branchen aflagde besøg på en ellers roset spiseforretning. De så frem til at udforske det asiatisk-inspirerede udvalg, men blev mødt af et visuelt udtryk, der bar præg af at være skabt af AI. De uheldige illustrationer på kortet vakte hurtigt undren og irritation blandt gæsterne."
+        },
+        {
+          "overskrift": "Mad med nostalgi",
+          "tekst": "Til trods for det mislykkede design faldt valget på en klassisk morgenmadsret til en pris af **10 dollars**. Retten bragte varme minder frem om mors madlavning derhjemme, selvom de visuelle elementer omkring måltidet fejlede fælt. Stedet kæmper som mange andre med stramme budgetter, men den digitale grafik deler vandene."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Spisestedet har udskiftet sit menukort med grafik skabt af AI.",
+        "Besøgende med kunstnerisk baggrund reagerede stærkt på det uperfekte visuelle udtryk.",
+        "Prisen for den valgte morgenmadsret var 10 dollars.",
+        "Smagsoplevelsen mindede gæsten om hjemmelavet morgenmad fra barndommen."
+      ],
+      "betydning": "Historien viser, hvordan mindre erhvervsdrivende forsøger at spare penge ved at bruge AI til grafisk arbejde. For almindelige forbrugere kan det betyde en dalende æstetisk oplevelse på restauranter og caféer, når traditionelt design erstattes af billige, digitale genveje.",
+      "pointer": [
+        "Spisested erstattede sit menukort med AI-grafik",
+        "Kreative gæster kritiserede det forkerte og mærkelige udseende",
+        "Madoplevelsen var dog stadig god og mindede om barndommen"
+      ],
+      "billedmotiv": "En trykt restaurantmenu med underlige billeder af retter ved siden af en tallerken med spejlæg og ris.",
+      "billede": "data/img/19b598f32bb88882.jpg",
+      "side": "artikel/e5f9146399ca714c.html"
+    },
+    {
+      "titel": "Five tech giants are hiding $1.6T in AI debt, using the trick that toppled Enron",
+      "link": "https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai",
+      "resume": "Article URL: https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai Comments URL: https://news.ycombinator.com/item?id=48996760 Points: 102 # Comments: 19",
+      "dato": "2026-07-21T19:11:27+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Kæmpe milliardgæld gemt væk af tech-giganter",
+      "resume_da": "Fem gigantiske teknologiselskaber holder gigantiske summer skjult uden for regnskaberne for at finansiere vild vækst.",
+      "kat_ai": true,
+      "prio": 9,
+      "sektioner": [
+        {
+          "overskrift": "Det skjulte regnskab",
+          "tekst": "Store teknologivirksomheder som Alphabet, Microsoft, Amazon, Meta og Oracle viser pæne og kontrollerbare regnskaber til offentligheden. Men dykker man ned i de skjulte bilag, åbenbarer der sig en helt anden virkelighed. Ifølge en undersøgelse fra Nikkei gemmer de fem giganter enorme beløb uden for de officielle bøger."
+        },
+        {
+          "overskrift": "Milliarder i skyggerne",
+          "tekst": "Undersøgelsen peger på en samlet skjult gæld på **1,65 billioner** dollars, hvilket overstiger de **1,35 billioner** dollars, som de fem koncerner rent faktisk indberetter officielt. Metas hemmelige gæld alene beløber sig til **420 milliarder** dollars, hvilket er næsten tre gange så meget som deres officielt kendte gæld."
+        },
+        {
+          "overskrift": "Metoden bag lånene",
+          "tekst": "Selskaberne placerer omkostningerne til avancerede chips, store servere og energikrævende anlæg i særskilte juridiske enheder. Det betyder, at udgifterne aldrig belaster moderkoncernens egne regnskaber direkte. Et tydeligt eksempel er Metas gigantiske Hyperion-datacenter i Louisiana, hvor en separat konstruktion optog **27 milliarder** dollars i gæld."
+        },
+        {
+          "overskrift": "Historisk sammenligning",
+          "tekst": "Brugen af særlige selskabskonstruktioner minder om den metode, det hedengangne energiselskab Enron benyttede sig af før sit dramatiske krak for årtier siden. Dengang var der tale om regulært bedrag, men strammere regler og fyldigere fodnoter gør nutidens konstruktioner fuldt lovlige og åbne for den, der gider læse med."
+        },
+        {
+          "overskrift": "Fremtidens store regning",
+          "tekst": "Hele branchen ventes at pumpe mere end **3 billioner** dollars ind i opbygningen af AI-datacentre. Når disse anlæg står færdige, vælter de store lejekontrakter dog ind i de officielle regnskaber på én gang. Eksperter frygter konsekvenserne, hvis efterspørgslen på AI en dag svigter og efterlader långiverne med store tab."
+        },
+        {
+          "overskrift": "Reaktioner fra markedet",
+          "tekst": "Flere toneangivende kreditvurderingsbureauer har allerede reageret på udviklingen. S&P har sænket Oracles kreditvurdering på grund af den pressede gældssituation, mens både Morgan Stanley og Moody’s advarer om de bredere risici. Investorner risikerer dermed at undervurdere den reelle risiko i selskaberne."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1,65 billioner dollars",
+          "label": "samlet skjult gæld"
+        },
+        {
+          "tal": "420 milliarder dollars",
+          "label": "Metas off-balance gæld"
+        }
+      ],
+      "detaljer": [
+        "Fem store teknologigiganter skjuler en enorm gæld uden for deres officielle regnskaber.",
+        "Den skjulte gæld beløber sig ifølge undersøgelser til 1,65 billioner dollars.",
+        "Metas off-balance-gæld er næsten tredoblet i forhold til det, selskabet officielt oplyser.",
+        "Oracle har alene bundet 260 milliarder dollars i fremtidige lejekontrakter.",
+        "Hele tech-branchen forventes at investere over 3 billioner dollars i AI-infrastruktur.",
+        "Kreditvurderingsbureauet S&P har allerede nedgraderet Oracles kreditvurdering."
+      ],
+      "betydning": "For almindelige mennesker og investorer betyder denne udvikling, at tech-giganternes finansielle styrke fremstår langt mere pragtfuld, end den måske reelt er. Hvis interessen for AI modner langsommere end ventet, eller hvis indtjeningen udebliver, kan de massive uindfriede forpligtelser vælte ind over regnskaberne. Det kan i yderste konsekvens ramme den globale finanssektor, pensionskasser og den bredere økonomi, fordi så store pengesummer er spundet ind i byggeriet af fremtidens datacentre.",
+      "pointer": [
+        "Tech-giganter gemmer milliarder i skjulte regnskaber.",
+        "Metoden er lovlig, men minder om historiske selskabsskandaler.",
+        "Over tre billioner dollars pløjes ind i AI-infrastruktur.",
+        "Investorer risikerer at overse alvorlige finansielle risici."
+      ],
+      "billedmotiv": "En luksuriøs pengeseddel bunker i brand med et glødende mikrochip-mønster i baggrunden, fotograferet i mørke.",
+      "billede": "data/img/6286400f0d8dde24.jpg",
+      "side": "artikel/191e8b1780421d51.html"
+    },
+    {
+      "titel": "AI Agent – TRMNL",
+      "link": "https://help.trmnl.com/en/articles/14130438-ai-agent",
+      "resume": "Article URL: https://help.trmnl.com/en/articles/14130438-ai-agent Comments URL: https://news.ycombinator.com/item?id=48996236 Points: 51 # Comments: 29",
+      "dato": "2026-07-21T18:32:21+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Ny digital hjælper gør det lettere at holde overblik",
+      "resume_da": "En lille smart hjælper til skærme gør det nemmere at modtage vigtige beskeder i hverdagen.",
+      "kat_ai": true,
+      "prio": 4,
+      "billedmotiv": "En lille mekanisk skrivebordsklokke med en post-it seddel og et digitalt timeglas ved siden af.",
+      "billede": "data/img/34e1831114b1effe.jpg",
+      "side": "artikel/204c4c1911bfcdd4.html"
+    },
+    {
+      "titel": "AI makes programming differently difficult",
+      "link": "https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/",
+      "resume": "Article URL: https://cacm.acm.org/opinion/ai-didnt-make-programming-easier-it-just-made-it-differently-difficult/ Comments URL: https://news.ycombinator.com/item?id=48996197 Points: 164 # Comments: 142",
+      "dato": "2026-07-21T18:30:21+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-24T13:09:54.789979+00:00",
+      "rubrik": "Hvorfor AI gør kodning mere besværlig",
+      "resume_da": "Teknologien fjerner ikke besværet med at skabe software, men ændrer blot opgavens natur og udfordringer.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "En ny slags bøvl",
+          "tekst": "Programmering er ikke blevet en dans på roser, selvom man tager moderne AI til hjælp. I stedet for at slippe for besværet oplever udviklere, at opgaverne blot har skiftet form. Det kræver nye måder at tænke på, når maskinerne genererer koden for os."
+        },
+        {
+          "overskrift": "Harpiks i maskineriet",
+          "tekst": "Debatten om de ændrede vilkår for softwareudvikling kører på højtryk blandt fagfolk. Her diskuterer **142** deltagere livligt, hvordan hverdagen er blevet vendt på hovedet. Interessen er enorm, og indlægget har høstet **164** stemmer i det digitale forum."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Artiklen stammer fra Communications of the ACM.",
+        "Debatten om emnet har fået 164 stemmer online.",
+        "Der er knyttet 142 kommentarer til tråden.",
+        "Hovedbudskabet er, at kodning ikke er blevet lettere."
+      ],
+      "betydning": "For helt almindelige mennesker betyder det, at fremtidens digitale løsninger ikke bare dukker op af sig selv uden sværdslag. Selvom teknologien kan skrive koden hurtigere, opstår der nye flaskehalse og problemer, som fagfolkene skal løse. Det kan påvirke både tidsplaner og priser på de programmer, vi bruger i hverdagen.",
+      "pointer": [
+        "Kodning er ikke blevet lettere med ny teknologi.",
+        "Opgaverne har blot ændret karakter.",
+        "Fagfolk diskuterer de nye udfordringer livligt."
+      ],
+      "billedmotiv": "En skærm med flimrende kildekode, hvor en stor rødspraglet knude af garn snor sig hen over tasterne.",
+      "billede": "data/img/fc6b848cd5055e31.jpg",
+      "side": "artikel/3e1218bf11d80e2f.html"
+    },
     {
       "titel": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
       "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
@@ -46,7 +763,8 @@
       "billedmotiv": "En computerterminal med rød advarselstekst på skærmen, ved siden af en klassisk værktøjskasse i metal og en mørk serverenhed.",
       "billede": "data/img/9fe7f31da4b03b4c.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/f254e58029de8cb9.html"
     },
     {
       "titel": "AINTMA: Agentic AI Architecture for Autonomous Test Management with Generative Intelligence, Secure Cloud Communication and Adaptive Quality Analytics",
@@ -56,12 +774,38 @@
       "kilde": "arXiv cs.AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "rubrik": "Computere skal selv teste programmer og finde fejl",
-      "resume_da": "Forskere har lavet et system, hvor selvkørende computerprogrammer selv finder fejl i ny kode.",
+      "rubrik": "Ny opdagelse viser hvordan AI styrer test",
+      "resume_da": "Forskere præsenterer en ny måde at lade AI håndtere softwaretester helt automatisk i skyen.",
       "billede": "data/img/730e6adf1f50ff55.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "Et tastatur med en rød lup hen over en enkelt grøn tændt tast."
+      "sektioner": [
+        {
+          "overskrift": "Nyt system",
+          "tekst": "Et hold af forskere har udviklet en spændende ramme kaldet AINTMA, som gør det muligt for AI at styre hele testprocessen på egen hånd. Systemet bruger den nyeste teknologi til at skabe intelligente løsninger, der kan tilpasse sig undervejs og sikre langt bedre kvalitet i det færdige arbejde."
+        },
+        {
+          "overskrift": "Sikkerhed i skyen",
+          "tekst": "For at få det hele til at køre glat, benytter opsætningen sig af sikre forbindelser via skyen. Det betyder, at data flyder trygt mellem de forskellige dele af systemet, mens AI-enhederne arbejder sammen om at finde fejl og forbedre processen uden menneskelig indblanding."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Systemet hedder AINTMA og fokuserer på autonom teststyring.",
+        "Det benytter sig af generativ intelligens til at skabe smarte løsninger.",
+        "Sikker cloud-kommunikation beskytter data undervejs i processen.",
+        "Adaptive kvalitetsanalyser hjælper med at tilpasse testene løbende."
+      ],
+      "betydning": "Selvom forskningen kan virke teknisk, baner den vejen for fremtidens softwareudvikling. Når AI automatisk kan finde fejl og kvalitetssikre programmer, kan virksomheder levere langt mere stabile digitale tjenester til danskerne, hvilket i sidste ende sparer både tid og penge i hverdagen.",
+      "pointer": [
+        "Ny AI-arkitektur til automatiseret test",
+        "Sikker kommunikation via cloud-systemer",
+        "Løbende tilpasning og kvalitetskontrol"
+      ],
+      "billedmotiv": "En moderne computerskærm der viser et digitalt diagram over flydende dataforbindelser og automatiserede testprocesser i skyen.",
+      "side": "artikel/a5f97276cdc5f4de.html"
     },
     {
       "titel": "Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts",
@@ -101,7 +845,8 @@
       "billedmotiv": "En hvid lægebrik i plast ved siden af et forstørrelsesglas på et sterilt, lyseblåt metalbord.",
       "billede": "data/img/418890ee338a113b.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/330865b00b60b3b1.html"
     },
     {
       "titel": "ClickGuard: Detecting and Spoiling Clickbait News with Informativeness Measures and Large Language Models",
@@ -142,7 +887,8 @@
       "billedmotiv": "En computerudskrift af en overskrift med store bogstaver, hvor en rød streg skærer igennem og viser den virkelige sandhed nedenunder.",
       "billede": "data/img/f37d9e0e3616e6eb.jpg",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "side": "artikel/b06f77da394cbcf7.html"
     },
     {
       "titel": "Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between Temperature Variation and Model Diversity in LLMs",
@@ -183,7 +929,8 @@
       "billedmotiv": "En klassisk farveskala på et skrivebord, hvor den samme genstand gentager sig i fem forskellige nuancer uden at skifte form.",
       "billede": "data/img/55686d52cc0389ed.jpg",
       "kat_ai": true,
-      "prio": 1
+      "prio": 1,
+      "side": "artikel/4bb589bb3394fc7b.html"
     },
     {
       "titel": "JAXBench: Benchmarking Autonomous TPU Kernel Optimization",
@@ -224,7 +971,8 @@
       "billedmotiv": "En avanceret mikrochip omgivet af glødende datalinjer på en mørk baggrund, som illustrerer intelligent optimering af hardware.",
       "billede": "data/img/85f26b4684679d50.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/0d899a6bf1289756.html"
     },
     {
       "titel": "DC-Leap: Training-Free Acceleration of dLLMs via Draft-Guided Contiguous Leaping Decoding",
@@ -264,7 +1012,8 @@
       "billedmotiv": "En åben bærbar computer, hvor skærmen viser flydende tekst, der springer over store blokke af ord i et lynhurtigt tempo.",
       "billede": "data/img/79816e7658567f84.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/ac28acde5b7c31d8.html"
     },
     {
       "titel": "InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents",
@@ -304,7 +1053,8 @@
       "billedmotiv": "En åben bærbar computer, hvor skærmen viser flydende kode i stærke farver, flankeret af et digitalt stopur.",
       "billede": "data/img/9dabe2ca2e9750c7.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/754db646cac6448f.html"
     },
     {
       "titel": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
@@ -349,7 +1099,8 @@
       "billedmotiv": "Et oplyst mikroskop rettet mod en flydende, glødende strøm af digitale bogstaver og koder på et mørkt bord.",
       "billede": "data/img/13fe429452c332f9.jpg",
       "kat_ai": true,
-      "prio": 1
+      "prio": 1,
+      "side": "artikel/231cf68071c3da38.html"
     },
     {
       "titel": "PlanE: Meta Planning of Data, Tuning, and Inference for Extractive-based LLMs",
@@ -389,7 +1140,8 @@
       "billedmotiv": "En åben notesbog på et lyst træbord med en række farvede byggeklodser, der er sat logisk sammen i rækker.",
       "billede": "data/img/7af7420d149a92d6.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/edcd0ace93cd4ae4.html"
     },
     {
       "titel": "Benchmarking the Personalization Capabilities of Large Language Models",
@@ -428,7 +1180,8 @@
       "billedmotiv": "En åben notesbog ved siden af et tastatur og et glødende skærmikon, der symboliserer personlig indstilling.",
       "billede": "data/img/5798f03f224a231d.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "side": "artikel/72f1eb2512bcf850.html"
     },
     {
       "titel": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
@@ -468,7 +1221,8 @@
       "billedmotiv": "En computer skærm der viser en sikkerhedslås, som blokerer en kæde af samtale-beskeder.",
       "billede": "data/img/7e5ab0dabea71643.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/8871a7ea21fe8f65.html"
     },
     {
       "titel": "Incomplete Prompt Jailbreaks in Large Language Models",
@@ -508,7 +1262,8 @@
       "billedmotiv": "En computer skærm der viser en ufuldstændig sætning skrevet i kodedesign, ved siden af en lås der er gået op.",
       "billede": "data/img/427ad51d70430ad7.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/09f10157ce7ba456.html"
     },
     {
       "titel": "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification",
@@ -548,7 +1303,8 @@
       "billedmotiv": "En notesblok med indviklede matematiske formler ved siden af en åben bærbar computer, hvor skærmen viser et simpelt rutediagram.",
       "billede": "data/img/65d21c424de69abf.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/c83dcf82392b99c0.html"
     },
     {
       "titel": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
@@ -588,7 +1344,8 @@
       "billedmotiv": "En computerprocessor omgivet af små, organiserede byggeklodser i klare farver, der viser effektiv datahåndtering uden menneskelig indblanding.",
       "billede": "data/img/0dfa1a48abe1e695.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/bf1565bed48dd27a.html"
     },
     {
       "titel": "Benchmarking Large Language Models on Multi-Sensor Physical Hazard Assessment",
@@ -633,7 +1390,8 @@
       "billedmotiv": "En avanceret vejrstation omgivet af blinkende røde advarselslys og digitale måleskærme, der viser grafiske kurver over potentielle risici.",
       "billede": "data/img/ae342b64d12a09ac.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/f22e19dd758e371a.html"
     },
     {
       "titel": "Semi-Supervised Text-Attributed Graph Distillation",
@@ -673,7 +1431,8 @@
       "billedmotiv": "En computerfladskærm der viser et glødende netværk af punkter, hvor halvdelen af punkterne skrumper ind til en skarp, samlet klynge.",
       "billede": "data/img/ab3aa301da69cbd6.jpg",
       "kat_ai": true,
-      "prio": 1
+      "prio": 1,
+      "side": "artikel/696a176807522456.html"
     },
     {
       "titel": "Beyond Liars' Bench: The Impact of Lie Typology, Depth, and Sparsity on Deception Detection in LLMs",
@@ -713,7 +1472,8 @@
       "billedmotiv": "En klassisk træskammel med et brædt, der vipper mistænkeligt, stående på et hvidt gulv under et skarpt spotlight.",
       "billede": "data/img/1805e1873ea35933.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/aeab2679e17a8261.html"
     },
     {
       "titel": "Enabling Scalable Topology Inference in Distribution Systems via Constrained Multi-Source Inference",
@@ -753,7 +1513,8 @@
       "billedmotiv": "En computer skærm der viser et lysende, sammenfiltret netværk af blå linjer og punkter på et mørkt bord.",
       "billede": "data/img/571bf129af40eec7.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/a260b6bdc3dfd5e4.html"
     },
     {
       "titel": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
@@ -794,7 +1555,8 @@
       "billedmotiv": "En lille computerchip ved siden af en stor bog, hvor der stikker glødende kabler ud mellem dem.",
       "billede": "data/img/50268506b03863fd.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "side": "artikel/6866252581f7de27.html"
     },
     {
       "titel": "PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails",
@@ -834,7 +1596,8 @@
       "billedmotiv": "En computer skærm der viser et kort med snoede stier, hvor forskellige farvede markører peger på unikke digitale fodspor.",
       "billede": "data/img/b6bdc4b064a54a58.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "side": "artikel/f82151dc4fdbe8ef.html"
     },
     {
       "titel": "Tractable Hierarchical Control of Autoregressive Language Models",
@@ -873,7 +1636,8 @@
       "billedmotiv": "En stabel farvede byggeklodser, hvor den øverste klods styrer retningen for de andre.",
       "billede": "data/img/fe667304c753bc50.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/77bd1842ef61ec14.html"
     },
     {
       "titel": "The Devil is in the Spectrum: Mitigating Representation Collapse in LLMs via Topologically Regularized Side-Path",
@@ -918,7 +1682,8 @@
       "billedmotiv": "En avanceret optisk prisme, der opsplitter en enkelt lysstråle i et rigt spektrum af klare farver på en mørk baggrund.",
       "billede": "data/img/549602a31bbcce29.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/7f7fb1efa1a693ee.html"
     },
     {
       "titel": "Expectation Alignment of Language Models for Real-World User Expectations",
@@ -963,7 +1728,8 @@
       "billedmotiv": "En åben notesbog ved siden af et glødende skærmpanel, der viser et grønt flueben over en liste af menneskelige ønsker.",
       "billede": "data/img/ef6c8db149d8d5a8.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/025e7430cf42c486.html"
     },
     {
       "titel": "OPTScientist: Multi-Agent Discovery of Typed Optimizer Programs for Transformer Pretraining",
@@ -1003,7 +1769,8 @@
       "billedmotiv": "En computerskærm i et mørkt lokale, der viser et lysende netværk af forbundne knudepunkter i blå og grønne nuancer.",
       "billede": "data/img/c13521fa6b722955.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "side": "artikel/7a8c7f601739cb81.html"
     },
     {
       "titel": "Directional Hallucinations: Ideological Drift in News-Grounded LLM Question Answering",
@@ -1043,7 +1810,8 @@
       "billedmotiv": "En computer skærm der viser en nyhedsartikel, hvor ordene langsomt ændrer farve og form til en politisk løbeseddel.",
       "billede": "data/img/a86f1e33b3047d28.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/57fe86f115e090e4.html"
     },
     {
       "titel": "Alexa Plus is getting an AI update to handle more complicated instructions",
@@ -1088,7 +1856,8 @@
       "billedmotiv": "En trådløs højtaler ved siden af en vaskemaskine i et lyst bryggers, badet i blødt dagslys.",
       "billede": "data/img/909f771938eb78ff.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/27b0ad2998637a52.html"
     },
     {
       "titel": "How Codex became a collaborator for OpenAI’s creative team",
@@ -1128,7 +1897,8 @@
       "billedmotiv": "En åben bærbar computer på et træbord viser rækker af farverig programkode ved siden af en skitseblok med håndtegnede ikoner.",
       "billede": "data/img/b5ed6f5ae8935089.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/41170cb100dac73a.html"
     },
     {
       "titel": "AMD takes on Nvidia with its Helios AI rack-scale system",
@@ -1186,7 +1956,8 @@
       "billedmotiv": "En avanceret serverrack fyldt med blinkende led-lys og metalkomponenter i et mørkt, kølet datacenter.",
       "billede": "data/img/ea52deb4e101b64f.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/2a9598e40ea54824.html"
     },
     {
       "titel": "AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems",
@@ -1260,7 +2031,8 @@
       "billedmotiv": "En stor digital serverinfrastruktur med en rød nødknap placeret midt i ledningskaosset, fotograferet i dæmpet, klinisk belysning.",
       "billede": "data/img/52ef1fc7668026c2.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/668efd44031df10e.html"
     },
     {
       "titel": "Anthropic updates Claude voice mode with more capable models",
@@ -1320,7 +2092,8 @@
       "billedmotiv": "En trådløs øreprop ved siden af et åbent e-mail-vindue og en kalender på en skærm.",
       "billede": "data/img/7aa05f2c4093cd41.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/0a457876b00708b0.html"
     },
     {
       "titel": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
@@ -1376,7 +2149,8 @@
       "billedmotiv": "En åben bærbar computer på et mørkt skrivebord viser et glødende, digitalt skjold, der blokerer en svindelmail med en vedhæftet fil.",
       "billede": "data/img/a5d9deb65bfbfae9.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/83feacd899b0ad95.html"
     },
     {
       "titel": "Runway launches AI model router as generative media gets crowded",
@@ -1421,7 +2195,8 @@
       "billedmotiv": "En avanceret serverhal med blinkende lamper, hvor tre forskellige farvede lysstråler flettes sammen i en midterste enhed.",
       "billede": "data/img/91e06dc548804e90.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/7280fe4d8d9af175.html"
     },
     {
       "titel": "OpenAI makes ChatGPT Health available to all US users",
@@ -1488,7 +2263,8 @@
       "billedmotiv": "En åben bærbar computer på et rent bord viser en digital sundhedsjournal ved siden af et stetoskop og en rød pilleæske.",
       "billede": "data/img/391fad9c07bf5357.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/a9cb3adc849dcf59.html"
     },
     {
       "titel": "Patreon is laying off 20 percent of workers",
@@ -1542,7 +2318,8 @@
       "billedmotiv": "En bærbar computer med en åben meddelelse om personalereduktion ved siden af en bunke opsigelsespapirer på et skrivebord",
       "billede": "data/img/7925d49071828ee3.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/655cdfa99e06ad45.html"
     },
     {
       "titel": "Meta launched a new AI optimism ad set to a song about human extinction",
@@ -1588,7 +2365,8 @@
       "billedmotiv": "En flad skærm der viser en dyster sangtekst ved siden af en glat, hvid robotarm i et sterilt studiemiljø.",
       "billede": "data/img/d3aad55ab2789c5d.jpg",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "side": "artikel/5ba8a5eff9b76c16.html"
     },
     {
       "titel": "Google just had its first negative cash flow quarter due to massive AI spending",
@@ -1667,7 +2445,8 @@
       "billedmotiv": "En gigantisk serverhal fuld af blinkende sorte kabinetter, hvor et enkelt display viser et stort rødt minus-tegn foran et svimlende milliardbeløb.",
       "billede": "data/img/c6670d6970133a75.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/253603c3c808d70f.html"
     },
     {
       "titel": "Nvidia is sending GPUs to the moon",
@@ -1712,7 +2491,8 @@
       "billedmotiv": "En lille metalkasse med solpaneler og synlige linser står på et gråt, vulkansk klippelandskab under en sort stjernehimmel.",
       "billede": "data/img/641dd26442bda069.jpg",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "side": "artikel/1422aada1fe911a1.html"
     },
     {
       "titel": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
@@ -1780,7 +2560,8 @@
       "billedmotiv": "En avanceret computerchip i silizium placeret på et mørkt, glat bord omgivet af svagt glødende fiberkabler i blålige nuancer.",
       "billede": "data/img/210c35f5115721a5.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/8d7c08e5e756a910.html"
     },
     {
       "titel": "Google’s Gemini nears billion-user milestone",
@@ -1852,7 +2633,8 @@
       "billedmotiv": "En moderne smartphone med en glødende skærm ved siden af en stak regneark og grafer på et mørkt træbord.",
       "billede": "data/img/5fa6faac083c006c.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/6b6c0e694dc0a8b6.html"
     },
     {
       "titel": "How AI helps scientists design the next generation of medicines",
@@ -1897,7 +2679,8 @@
       "billedmotiv": "En futuristisk glasreagensglas-opsats med funklende blå væsker og et digitalt måleapparat i et sterilt, hvidt laboratorium uden mennesker.",
       "billede": "data/img/54155f1a16cd7e47.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/7f188a0c6b4b89a7.html"
     },
     {
       "titel": "Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
@@ -1948,7 +2731,8 @@
       "billedmotiv": "En computerterminal i et mørkt lokale viser fejlkoder på skærmen ved siden af en stak mikrochips under en rød advarselslampe.",
       "billede": "data/img/d7d536507df90e35.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/592ce226d696f64b.html"
     },
     {
       "titel": "Apple’s OpenAI lawsuit is about who gets to define the post-smartphone era",
@@ -2003,7 +2787,8 @@
       "billedmotiv": "En stabel fortrolige papirer med et digitalt låsesymbol ved siden af en avanceret computerchip på et mørkt bord.",
       "billede": "data/img/aad83ba05dede158.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/139da2dd039e7a08.html"
     },
     {
       "titel": "The right-wing boomers protesting data centers have a lot in common with the left",
@@ -2072,7 +2857,8 @@
       "billedmotiv": "En rød kasket og en bunke protestskilte mod larmende teknologianlæg på et slidt træbord foran en landlig bygning.",
       "billede": "data/img/c7802fec6f653984.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/3f28938cbf3f1b06.html"
     },
     {
       "titel": "ServiceNow bets $40 million on Indian banking software specialist to expand its financial services push",
@@ -2130,7 +2916,8 @@
       "billedmotiv": "En gulnet papirmappe med bankkontrakter oven på en moderne skærm, der viser glødende grafer i blåt lys.",
       "billede": "data/img/6fb19d1fa33da3bb.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/3d07170d3443d0c9.html"
     },
     {
       "titel": "After shocking quarter, IBM insists that AI isn’t killing the mainframe",
@@ -2189,7 +2976,8 @@
       "billedmotiv": "En enorm, gammeldags servermaskine i metal, hvor en stak pengedunke og et rødt faldende graflinje-skilt står placeret ovenpå.",
       "billede": "data/img/0640ea736a53d538.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/97d598949ef96232.html"
     },
     {
       "titel": "Google justifies its massive AI spending with a booming cloud business",
@@ -2269,7 +3057,8 @@
       "billedmotiv": "En stor digital serverhal fyldt med blinkende lamper, hvor en enkelt skærm viser stigende grafer i guld og grønne farver.",
       "billede": "data/img/d6186f6544dc5b47.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/42dd8f7444e9a3bc.html"
     },
     {
       "titel": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
@@ -2356,7 +3145,8 @@
       "billedmotiv": "En digital skærm der viser en rød advarselslampe ved siden af et virtuelt bur, hvor løse datakoder bryder ud.",
       "billede": "data/img/72e7e604eca91715.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/298db90fda8b2bd4.html"
     },
     {
       "titel": "Travis Kalanick’s robotics company raises $1.7B, led by a16z",
@@ -2407,7 +3197,8 @@
       "billedmotiv": "En skinnende robotarm i stål, der løfter en glødende model af en fabrik ved siden af en stak pengesedler på et mørkt bord.",
       "billede": "data/img/06c13dc26f3df722.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/6a7f08f97575001b.html"
     },
     {
       "titel": "Hyundai claims humanoid robot plan is not part of talks with striking workers",
@@ -2480,7 +3271,8 @@
       "billedmotiv": "En gul robotarm og en stålfarvet metalhjälm på et råt samlebånd af beton i en tom fabrik.",
       "billede": "data/img/743947a70ecb82b9.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/ccda4e78083a1251.html"
     },
     {
       "titel": "Yope raises $12.3M to build a private social network without algorithms or ads",
@@ -2536,7 +3328,8 @@
       "billedmotiv": "En lukket notesbog i læder omgivet af udskårne polaroidbilleder og små farvede klistermærker på et rent træbord.",
       "billede": "data/img/e9ee50a87e6042b0.jpg",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "side": "artikel/2eef0e4f7c292068.html"
     },
     {
       "titel": "Monday.com lays off hundreds to focus on AI",
@@ -2611,7 +3404,8 @@
       "billedmotiv": "En computer med en fyreseddel på skærmen ved siden af et glødende AI-logo og en stor regning.",
       "billede": "data/img/ecd9bbf8a100095f.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/e726d7442e641016.html"
     },
     {
       "titel": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
@@ -2657,7 +3451,8 @@
       "billedmotiv": "En lukket serverrack oplyst af rødt lys ved siden af et åbent skrivebord med en computer, der viser rød og blå kode.",
       "billede": "data/img/08a5fdf75f8bea81.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/22ff93960bae81b8.html"
     },
     {
       "titel": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
@@ -2707,7 +3502,8 @@
       "billedmotiv": "En avanceret elektronmikroskop-skærm viser et krystalgitter i regnbuens farver ved siden af et digitalt stopur der viser tallet tretten.",
       "billede": "data/img/d26c4fde17510026.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/860743384445f2e5.html"
     },
     {
       "titel": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
@@ -2774,7 +3570,8 @@
       "billedmotiv": "En militær uniform ved et skrivebord foran en skærm, der viser en rød advarsel om opbrugt digital kvote.",
       "billede": "data/img/f3d307d5763c6cce.jpg",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "side": "artikel/b33bfbbe9e9dd1da.html"
     },
     {
       "titel": "Building AI infrastructure with the Effingham County community",
@@ -2815,7 +3612,8 @@
       "billedmotiv": "En model af et moderne energianlæg ved siden af en stor jordskærmsbygning med et skilt mærket Project Camellia.",
       "billede": "data/img/6addda908b699052.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/4eb3751221ad853a.html"
     },
     {
       "titel": "How news organizations are using AI to advance their vital missions",
@@ -2855,7 +3653,8 @@
       "billedmotiv": "En computer skærm der viser en avisartikel ved siden af et glødende digitalt netværk.",
       "billede": "data/img/f1b719b557b175d7.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/7c5769317a9434a6.html"
     },
     {
       "titel": "Here’s what Samsung’s smart glasses actually look like",
@@ -2911,7 +3710,8 @@
       "billedmotiv": "Et let brilleetui i læder ved siden af et par elegante, sorte briller med et mikroskopisk kameralinse på stelsiden.",
       "billede": "data/img/88a23aa88ca5f8ce.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/1ffa788719ecc6b5.html"
     },
     {
       "titel": "Advancing the next era of national science",
@@ -2951,7 +3751,8 @@
       "billedmotiv": "En glødende atommodel svæver over en åben skærm, der viser komplekse grafer og formler i et mørkt laboratorium.",
       "billede": "data/img/30303fa1a7bee59f.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/1de8660326e5e2b6.html"
     },
     {
       "titel": "AMD commits up to $5 billion to Anthropic",
@@ -3024,7 +3825,8 @@
       "billedmotiv": "En gylden computerchip omgivet af tykke, glødende kabler og et digitalt måleur, der viser milliarder.",
       "billede": "data/img/446c0e7b20ffa362.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/ce017b45b9103a0e.html"
     },
     {
       "titel": "Meta made its own AI detection system. It should have just used Google’s",
@@ -3075,7 +3877,8 @@
       "billedmotiv": "Et digitalt kameraobjektiv med et usynligt, glødende digitalt mønster på indfatningen.",
       "billede": "data/img/e39783701e21a46e.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/d822ef4f614f4b3a.html"
     },
     {
       "titel": "Introducing OpenAI Presence",
@@ -3115,7 +3918,8 @@
       "billedmotiv": "En moderne kontorstol foran en skærm med et glødende stemmeikon og et chatvindue ved siden af.",
       "billede": "data/img/6f70e7202a187a0b.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/1f5d786bd553f599.html"
     },
     {
       "titel": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
@@ -3160,7 +3964,8 @@
       "billedmotiv": "En computerudskrift med fejlkoder ved siden af et stopur, der viser præcis en halv time.",
       "billede": "data/img/b7abf12e5685ae66.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/0723f553c0b85844.html"
     },
     {
       "titel": "Anthropic’s $1.5B copyright settlement approved; only 350 authors opted out",
@@ -3214,7 +4019,8 @@
       "billedmotiv": "En stak pengasedler gennemhullet af en fyldepen med en lille juridisk hammerskaft.",
       "billede": "data/img/ac86081af801f2f1.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/e014711cfc53c145.html"
     },
     {
       "titel": "Introducing the ChatGPT for small business program",
@@ -3255,7 +4061,8 @@
       "billedmotiv": "Et lille kaffekrus med et start-up logo ved siden af en bærbar computer med åben chat.",
       "billede": "data/img/ab6361257ffbb4da.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/9783627bd88cddeb.html"
     },
     {
       "titel": "Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4",
@@ -3340,7 +4147,8 @@
       "billedmotiv": "En åben bærbar computer ved siden af et digitalt stopur og en møntbunke på et træbord.",
       "billede": "data/img/d0ad6fcfae8b35ee.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/856fa25c6c2097c8.html"
     },
     {
       "titel": "Advancing next-gen AI with materials science innovation",
@@ -3385,7 +4193,8 @@
       "billedmotiv": "Et avanceret printkort nedsænket i en glaskasse fyldt med blåt kølevæske.",
       "billede": "data/img/f3d4ca92ab357251.jpg",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "side": "artikel/6d5a86555da5e529.html"
     },
     {
       "titel": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
@@ -3425,7 +4234,8 @@
       "billedmotiv": "Et læderindbundet bestyrelsesreferat med en pen og et firmalogo i guldtryk.",
       "billede": "data/img/0000be3dcd63111f.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/10666aebf14a4743.html"
     },
     {
       "titel": "Firefighting drones in the works as wildfires plague US nearly year-round",
@@ -3469,7 +4279,8 @@
       "billedmotiv": "En lille rød brandslukker fastgjort under bugen på en flyvende drone.",
       "billede": "data/img/f7ce14170f389017.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/84fc32bc99ca71a2.html"
     },
     {
       "titel": "China’s AI models have Trump’s AI world at war with itself",
@@ -3513,7 +4324,8 @@
       "billedmotiv": "En rød kinesisk papirspose fyldt med mikrochips og en rød advarselslampe.",
       "billede": "data/img/c1882872d12da2bb.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/61d13d1985062617.html"
     },
     {
       "titel": "Beyond grep: The case for a context-rich AI coding harness",
@@ -3557,7 +4369,8 @@
       "billedmotiv": "En skærm med rød computerkode og et forstørrelsesglas ovenpå.",
       "billede": "data/img/8f753b605382c8a5.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/6962de4dec94cd03.html"
     },
     {
       "titel": "Safety and alignment in an era of long-horizon models",
@@ -3596,7 +4409,8 @@
       "billedmotiv": "En papkasse med sikkerhedshjelme og et blåt advarselsskilt.",
       "billede": "data/img/89de090f18a3e9b3.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/960e35dd4f7dc710.html"
     },
     {
       "titel": "AI is more likely than humans to form biases when hiring",
@@ -3640,7 +4454,8 @@
       "billedmotiv": "En stak jobansøgninger med et stempel, hvor der står afvist på.",
       "billede": "data/img/8d50f27cd1c119b6.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/d213c30d2534c57d.html"
     },
     {
       "titel": "Will AI fix prior authorization—or make it worse?",
@@ -3701,7 +4516,8 @@
       "billedmotiv": "Et lægeskrivebord med et stetoskop og en tablet, hvor skærmen viser et stort, rødt afvisningsstempel.",
       "billede": "data/img/0fd2f9bbf08ec2c9.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/c1a46929e322cd48.html"
     },
     {
       "titel": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
@@ -3764,7 +4580,8 @@
       "billedmotiv": "En avanceret kikkert rettet mod en rød ildflamme under en glasklokke.",
       "billede": "data/img/b6e1f6669fc2e347.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/56c954d7e0112780.html"
     },
     {
       "titel": "San Francisco orders Apple, Google to remove nudify apps from app stores",
@@ -3829,7 +4646,8 @@
       "billedmotiv": "En lilla smartphone med et stort, rødt kryds over skærmen, der ligger på et mørkt træbord.",
       "billede": "data/img/e54e64fb409d0aa4.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/b887a1bbf3ba8e48.html"
     },
     {
       "titel": "Introducing Gemini 3.5 Flash Cyber",
@@ -3879,7 +4697,8 @@
       "billedmotiv": "En sølvfarvet USB-nøgle med et indgraveret skjold og et forstørrelsesglas ved siden af.",
       "billede": "data/img/44c772f8db4c73d5.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/d6d19d126db7227d.html"
     },
     {
       "titel": "A scorecard for the AI age",
@@ -3919,7 +4738,8 @@
       "billedmotiv": "En gammeldags mekanisk vægt i messing, hvor den ene skål er fyldt med mønter og den anden med computerdele.",
       "billede": "data/img/dfea9991dc0f481b.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/be04b43c70288909.html"
     },
     {
       "titel": "The risk of weather data sabotage is rising",
@@ -3964,7 +4784,8 @@
       "billedmotiv": "Et termometer med en digital skærm, der viser 22 grader, og en rød advarselstrekant i plast.",
       "billede": "data/img/5ed7c346d4ee21e7.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/5777494d3bc56bb1.html"
     },
     {
       "titel": "It's official: EU will force Google to share search data and open up AI on Android",
@@ -4025,7 +4846,8 @@
       "billedmotiv": "En åben bærbar computer, hvor skærmen er splittet i fire ens kasser med forskellige firmalogoer.",
       "billede": "data/img/99a04661d01d1f63.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/a015012761beb9b2.html"
     },
     {
       "titel": "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
@@ -4089,7 +4911,8 @@
       "billedmotiv": "Et par sorte håndjern der ligger ovenpå en åben bærbar computer med skærmen flækket.",
       "billede": "data/img/4115d5ebdf10c04d.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/1a2a4d4edc22f884.html"
     },
     {
       "titel": "Linus Torvalds to critics of AI coding in Linux: \"Fork it. Or just walk away.\"",
@@ -4133,7 +4956,8 @@
       "billedmotiv": "Et mekanisk tastatur i retro-design, hvor 'Enter'-tasten er skiftet ud med en rød 'Block'-knap.",
       "billede": "data/img/cde2d87f2b94e0d1.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/1d45a549968409cd.html"
     },
     {
       "titel": "Why teens deserve access to safe AI",
@@ -4173,7 +4997,8 @@
       "billedmotiv": "En smartphone med børnesikret tastatur og et par høretelefoner i et pastelfarvet etui på et træbord.",
       "billede": "data/img/9b09264948c0fe13.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/fc1dde757a2d9ae0.html"
     },
     {
       "titel": "Energy IPOs surge as investors hunt for ways to play AI boom",
@@ -4217,7 +5042,8 @@
       "billedmotiv": "En pengeseddelbundtet rullende ind i et vindkraftværk i miniatureformat på en grøn mark.",
       "billede": "data/img/edfaf948ea0eaa8f.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/3b5274402cd7e719.html"
     },
     {
       "titel": "Our approach to bioresilience",
@@ -4256,7 +5082,8 @@
       "billedmotiv": "En laboratoriekolbe med en digital stregkode og et skjold-ikon trykt på glasset.",
       "billede": "data/img/5d38f51030655cfc.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/39191aed0f2bd8fd.html"
     },
     {
       "titel": "How Cars24 scales conversations and builds faster with OpenAI",
@@ -4305,7 +5132,8 @@
       "billedmotiv": "Et headset liggende ved siden af en lille seddel med en streg, der viser stigende salgstal.",
       "billede": "data/img/2fe62d19d8c81a6c.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/b57416a816cc0de0.html"
     },
     {
       "titel": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
@@ -4370,7 +5198,8 @@
       "billedmotiv": "En rød nøgle og et mikroskop placeret foran en computerskærm med binær kode.",
       "billede": "data/img/773a7d240b83324c.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/0081d2e6c395e5ff.html"
     },
     {
       "titel": "OpenAI's first branded hardware is... a light-up keyboard?",
@@ -4415,7 +5244,8 @@
       "billedmotiv": "Et lille mekanisk tastatur med seks farvede lysdioder, der lyser op i mørket.",
       "billede": "data/img/0dd2086f95ee67be.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/eb7b70aba509d318.html"
     },
     {
       "titel": "The US is advancing AI safety through state and federal action",
@@ -4456,7 +5286,8 @@
       "billedmotiv": "Et stempel med teksten 'Godkendt' placeret på et officielt dokument ved siden af et amerikansk flag.",
       "billede": "data/img/20356d8f93106b42.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/817e2aedd430f5d9.html"
     },
     {
       "titel": "Lawsuit claims Meta's layoff decisions were made by AI, not humans",
@@ -4500,7 +5331,8 @@
       "billedmotiv": "En stak ansættelseskraver med et digitalt rødt kryds over det øverste papir.",
       "billede": "data/img/47801547afb26a68.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/1f25b396a659b3a0.html"
     },
     {
       "titel": "How to manage AI investments in the agentic era",
@@ -4539,7 +5371,8 @@
       "billedmotiv": "En lommeregner, en stak pengedsedler og et glødende mikrochip.",
       "billede": "data/img/704804b85d9a421a.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/e59f55fe659df0a8.html"
     },
     {
       "titel": "How data science teams use ChatGPT Work",
@@ -4579,7 +5412,8 @@
       "billedmotiv": "Et stykke millimeterpapir, en rød kuglepen og en åben bærbar computer med grafer.",
       "billede": "data/img/68185df168c9abc2.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/afc8cde3e2c86608.html"
     },
     {
       "titel": "How sales teams use ChatGPT Work",
@@ -4620,7 +5454,8 @@
       "billedmotiv": "En bærbar computer med et åbent skema, en termokop kaffe og et headset på et skrivebord.",
       "billede": "data/img/4296276d80f53473.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/ca8d7bccf4afaa2a.html"
     },
     {
       "titel": "What Anthropic’s latest AI discovery does—and doesn’t—show",
@@ -4665,7 +5500,8 @@
       "billedmotiv": "Et forstørrelsesglas der svæver over en skinnende hjerneformet krystal.",
       "billede": "data/img/72bca51c04d4776b.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/50ee0b4631ad54ee.html"
     },
     {
       "titel": "Empowering India’s next generation of innovators with ATL Saathi",
@@ -4705,7 +5541,8 @@
       "billedmotiv": "En globus, et farvekridt og et lille plastiklaboratorieudstyr på et træbord.",
       "billede": "data/img/8793821f8b79618e.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/228200827ba929ba.html"
     },
     {
       "titel": "How Deutsche Telekom is rewiring telecommunications with AI",
@@ -4746,7 +5583,8 @@
       "billedmotiv": "En fastnettelefon, et firmabadge og en åben bærbar computer med et logo.",
       "billede": "data/img/0684c89833d5c2da.jpg",
       "kat_ai": true,
-      "prio": 7
+      "prio": 7,
+      "side": "artikel/31630fbac8b6535b.html"
     },
     {
       "titel": "Getting started with ChatGPT",
@@ -4787,7 +5625,8 @@
       "billedmotiv": "En notesbog med en blank side, en spids blyant og en kaffekop.",
       "billede": "data/img/3eb26246627595b5.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/076e1c59813985b4.html"
     },
     {
       "titel": "Anthropic found a hidden space where Claude puzzles over concepts",
@@ -4843,7 +5682,8 @@
       "billedmotiv": "Et røntgenbillede af en computerchip med et tal skrevet med blæk på.",
       "billede": "data/img/aa9f44b5d96589a6.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/a90a0d3e9300d25f.html"
     },
     {
       "titel": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
@@ -4883,7 +5723,8 @@
       "billedmotiv": "En computer skærm med et kontorprogram, et tastatur og et blåt kuglepen.",
       "billede": "data/img/29d787245d5f0549.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/a9ac60dc9fcf283f.html"
     },
     {
       "titel": "GPT-5.6: Frontier intelligence that scales with your ambition",
@@ -4923,7 +5764,8 @@
       "billedmotiv": "En guldbarre, en prismeglas og en mikrochip med lys i.",
       "billede": "data/img/ca4fb5bb4d8d067a.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/6e3eba7a17b37312.html"
     },
     {
       "titel": "GPT-5.5 Bio Bug Bounty",
@@ -4938,7 +5780,8 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En åben petriskål med selvlysende blåt pulver og en guldmedalje ved siden af."
+      "billedmotiv": "Et mikroskop ved siden af en læderpung med pengesedler stikkende ud og en rød advarselstrekant.",
+      "side": "artikel/0453af9ffcc0d040.html"
     },
     {
       "titel": "ChatGPT is now a partner for your most ambitious work",
@@ -4978,7 +5821,8 @@
       "billedmotiv": "En robotarm der holder en kuglepen og skriver på et stykke papir.",
       "billede": "data/img/a38dca32167bd98f.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/10a73f0831bfbed7.html"
     },
     {
       "titel": "The foundational elements of AI architecture that IT leaders need to scale",
@@ -5027,7 +5871,8 @@
       "billedmotiv": "Fire ens træterninger med bogstaverne D, K, S og M opstillet på en række.",
       "billede": "data/img/88e4ba2b24f769f1.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/34dc6f6de3b4a015.html"
     },
     {
       "titel": "Your family’s $300 stake in OpenAI",
@@ -5076,7 +5921,8 @@
       "billedmotiv": "En pengeseddel med et officielt nationalflag og et guldskilt med et procenttegn.",
       "billede": "data/img/bd8ab397d4136e41.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "side": "artikel/e930f63d2b6117cb.html"
     },
     {
       "titel": "Google DeepMind and A24 announce first-of-its-kind research partnership",
@@ -5117,7 +5963,8 @@
       "billedmotiv": "En klassisk gammeldags filmrulle og en lysende microchip ved siden af hinanden.",
       "billede": "data/img/3f11ddafdcd0f928.jpg",
       "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "side": "artikel/19d1bfd8b691b57f.html"
     },
     {
       "titel": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
@@ -5171,7 +6018,8 @@
       "billedmotiv": "Et videokamera og et stillbilledkamera stående tæt op ad hinanden på et bord.",
       "billede": "data/img/06ebf9e16b3836a5.jpg",
       "kat_ai": true,
-      "prio": 8
+      "prio": 8,
+      "side": "artikel/d866a21bc3340953.html"
     },
     {
       "titel": "Introducing computer use in Gemini 3.5 Flash",
@@ -5226,7 +6074,8 @@
       "billedmotiv": "Et computertastatur hvor musen selv bevæger sig hen over tasterne.",
       "billede": "data/img/f012693b8e1b4c76.jpg",
       "kat_ai": true,
-      "prio": 9
+      "prio": 9,
+      "side": "artikel/8efda96ee963978f.html"
     }
   ]
 }
