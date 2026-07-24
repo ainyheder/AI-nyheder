@@ -360,8 +360,10 @@ Svar KUN med ét JSON-objekt:
               det er kun benchmark- og pengehistorier, der har ægte nøgletal,
  "detaljer":  4-7 punkter med de vigtigste fakta, tal og detaljer fra artiklen
               (hvert punkt én sætning, max 20 ord),
- "betydning": ét afsnit (50-80 ord): hvad kan det her betyde for almindelige
-              mennesker, deres penge og deres fremtid,
+ "betydning": 1-2 sætninger (maks 35 ord): den ENE konsekvens, der rammer
+              læserens hverdag, penge eller fremtid. Skriv direkte til "du",
+              start aldrig med "Det betyder" eller "Denne nyhed" - lige på
+              pointen. Skarp og konkret slår lang og forsigtig,
  "pointer":   3-4 ultrakorte hovedpointer (hver max 12 ord),
  "figurer":   Fra listen KANDIDAT-BILLEDER udvælger du 0-3, der viser
               benchmarks, grafer, tabeller eller andre data - IKKE almindelige
@@ -381,7 +383,8 @@ SYSTEM_BRIEF_LANG = """
 
 DENNE HISTORIE ER EN AF DAGENS VIGTIGSTE - GIV DEN MERE DYBDE:
 - 4-6 sektioner (stadig 40-80 ord pr. sektion) i stedet for de normale 2-4.
-- 5-7 detaljer og en grundigere "betydning".
+- 5-7 detaljer. "betydning" forbliver kort og skarp (maks 35 ord) - dybden
+  skal i sektionerne, ikke i betydningen.
 - Mere dybde betyder FLERE konkrete fakta, tal, reaktioner og perspektiver
   fra kilderne - ALDRIG længere omskrivninger af det samme."""
 
@@ -1553,6 +1556,44 @@ def lav_dagens_prompt() -> None:
         print(f"✨ Dagens prompt sprang over ({e})")
 
 
+# ----- Stram gamle "Hvad betyder det for dig?"-tekster --------------------------
+
+SYSTEM_STRAM = """Du strammer "Hvad betyder det for dig?"-tekster til ainyheder.com.
+Du får en nummereret liste af tekster, der er for lange.
+Skriv hver enkelt om til 1-2 sætninger (maks 35 ord): den ENE konsekvens, der
+rammer læserens hverdag, penge eller fremtid. Direkte "du"-sprog. Start aldrig
+med "Det betyder" eller "Denne nyhed". Bevar fakta og tal - opdigt intet.
+Svar KUN med et JSON-array: [{"nr": 1, "tekst": "..."}, ...] - ét objekt pr. input."""
+
+
+def stram_betydninger(artikler: list[dict]) -> None:
+    """Selvhelende: gamle, lange betydninger skrives om i klumper af 40 pr.
+    kørsel, til alle er korte og skarpe. Fejler stille."""
+    if not API_KEY:
+        return
+    lange = [a for a in artikler
+             if a.get("betydning") and len(a["betydning"].split()) > 45][:40]
+    if not lange:
+        return
+    try:
+        payload = [{"nr": i + 1, "tekst": a["betydning"]} for i, a in enumerate(lange)]
+        r = parse_json_svar(kald_ai(SYSTEM_STRAM, json.dumps(payload, ensure_ascii=False), 3000))
+        rettede = 0
+        for p in r if isinstance(r, list) else []:
+            try:
+                a = lange[int(p.get("nr", 0)) - 1]
+            except (ValueError, TypeError, IndexError):
+                continue
+            tekst = str(p.get("tekst", "")).strip()
+            if 15 <= len(tekst) < len(a["betydning"]):
+                a["betydning"] = tekst
+                rettede += 1
+        if rettede:
+            print(f"✂️  Strammede {rettede} \"Hvad betyder det for dig?\"-tekster")
+    except Exception as e:
+        print(f"✂️  Stramning sprang over ({e})")
+
+
 # ----- Dagens overblik (60-sekunders brief på forsiden) ------------------------
 
 BRIEF_FIL = ROOT / "data" / "brief.json"
@@ -1764,6 +1805,7 @@ def main() -> None:
             a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
+    stram_betydninger(unikke)   # skriver gamle, for lange betydninger om i klumper
     udfyld_billedmotiver(unikke)
     lav_billeder(unikke)
 
