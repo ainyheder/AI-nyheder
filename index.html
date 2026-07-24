@@ -1038,7 +1038,8 @@ function tegn() {
   if (sortering === "vigtigst") {
     const dage = [];
     for (const a of rest) {
-      const n = dagNoegle(a.dato);
+      // Gruppér efter hvornår VI så artiklen (som sorteringen) - ikke udgivelsesdatoen
+      const n = dagNoegle(a.foerst_set || a.dato);
       if (!dage.length || dage[dage.length - 1].noegle !== n) dage.push({ noegle: n, artikler: [] });
       dage[dage.length - 1].artikler.push(a);
     }
