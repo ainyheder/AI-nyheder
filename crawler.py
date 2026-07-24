@@ -796,11 +796,30 @@ Svar KUN med et JSON-array i samme rækkefølge som input:
 [{"motiv": "..."}, ...]"""
 
 
+def _kort_artikler(artikler: list[dict]) -> set:
+    """Links på de artikler, der vises som BILLEDKORT på forsiden: de 5
+    vigtigste pr. opdagelsesdag (hero + 4 kort). Resten vises som tekstlinjer
+    og bruger sitets genererede kunst - dem koster vi ikke AI-billeder på."""
+    dage: dict = {}
+    for a in artikler:
+        if not a.get("rubrik"):
+            continue
+        noegle = str(a.get("foerst_set") or a.get("dato") or "")[:10]
+        dage.setdefault(noegle, []).append(a)
+    valgte: set = set()
+    for gruppe in dage.values():
+        gruppe = sorted(gruppe, key=lambda a: (a.get("prio") or 5), reverse=True)
+        valgte.update(a["link"] for a in gruppe[:5])
+    return valgte
+
+
 def udfyld_billedmotiver(artikler: list[dict]) -> None:
-    """Sørger for at ALLE billedkandidater har et konkret art director-motiv,
-    før der genereres billeder - også ældre artikler fra før motiv-feltet."""
+    """Sørger for at billedkandidaterne har et konkret art director-motiv,
+    før der genereres billeder."""
+    kandidater = _kort_artikler(artikler)
     top = [a for a in artikler[:BILLED_ANTAL]
-           if a.get("rubrik") and not a.get("billedmotiv")]
+           if a.get("rubrik") and not a.get("billedmotiv")
+           and a["link"] in kandidater]
     if not top or not API_KEY:
         return
     print(f"🎬 Finder billedmotiver til {len(top)} artikler …")
@@ -840,18 +859,22 @@ def lav_billeder(artikler: list[dict]) -> None:
         return
     BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
 
+    kandidater = _kort_artikler(artikler)
     top = [a for a in artikler[:BILLED_ANTAL] if a.get("rubrik")]
     lavet, fejl_i_traek = 0, 0
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
         if sti.exists():
-            # Gamle billeder i lav opløsning (640px-æraen) laves om én gang
-            if _for_lille(sti):
+            # Gamle billeder i lav opløsning (640px-æraen) laves om én gang -
+            # men kun for kort-artikler; tekstlinjer beholder det, de har
+            if a["link"] in kandidater and _for_lille(sti):
                 sti.unlink()
-            else:                                         # allerede lavet og skarpt
+            else:                                         # allerede lavet - brug det
                 a["billede"] = f"data/img/{navn}"
                 continue
+        if a["link"] not in kandidater:
+            continue     # tekstlinje-artikel: genereret kunst er rigeligt
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
         farve = KATEGORI_FARVER.get(a.get("kategori"), "varm cremehvid (#f7f3ec)")
