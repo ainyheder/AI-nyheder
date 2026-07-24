@@ -256,12 +256,43 @@ a.pill { text-decoration: none; display: inline-block; }
   background: var(--accent); color: #fff;
   border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
 }
-/* Dagens overblik */
-#dagensBrief { background: var(--bg-kort); border: 1px solid var(--linje); border-left: 4px solid var(--accent);
-  border-radius: var(--radius, 18px); padding: 20px 26px; margin: 0 0 26px;
-  box-shadow: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07); }
-.brief-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-.brief-kicker { font-family: var(--font-display); font-weight: 800; font-size: 18px; }
+
+/* Dagens overblik - mørkt morgenbrief-kort */
+#dagensBrief { background: var(--blaek); color: var(--bg); border-radius: 18px;
+  padding: 26px 32px 22px; margin: 0 0 28px; position: relative; overflow: hidden;
+  box-shadow: 0 2px 4px rgba(25,23,20,.08), 0 16px 40px rgba(25,23,20,.16); }
+#dagensBrief::after { content: "☀️"; position: absolute; right: 16px; top: -14px;
+  font-size: 92px; opacity: .12; transform: rotate(12deg); pointer-events: none; }
+.brief-top { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; }
+.brief-kicker { font-family: var(--font-display); font-weight: 900; font-size: 23px;
+  letter-spacing: -.02em; color: var(--bg); }
+.brief-dato { font-size: 12px; font-weight: 600; color: #9a948a; margin-left: auto;
+  text-transform: capitalize; }
+.brief-liste { list-style: none; margin: 0; counter-reset: brief;
+  display: grid; grid-template-columns: 1fr; gap: 0 44px; }
+@media (min-width: 940px) { .brief-liste { grid-template-columns: 1fr 1fr; } }
+.brief-liste li { font-size: 14.5px; line-height: 1.55; color: #e8e4da;
+  padding: 11px 0 11px 38px; position: relative; counter-increment: brief;
+  border-bottom: 1px solid rgba(244, 242, 236, .1); }
+.brief-liste li::before { content: counter(brief); position: absolute; left: 0; top: 11px;
+  width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff;
+  font-family: var(--font-display); font-size: 13px; font-weight: 800;
+  display: grid; place-items: center; }
+.brief-klik { cursor: pointer; transition: color .12s; }
+.brief-klik:hover { color: #fff; }
+.brief-klik:hover::after { content: " →"; color: #a99ff7; font-weight: 700; }
+.brief-note { font-size: 11.5px; color: #8f897e; margin-top: 12px; }
+/* Kompakt liste under dagens topkort */
+.mikro-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2px 30px; margin-bottom: 34px; }
+/* Betydningslinjen på kortene */
+.kort-betydning { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; margin-top: 8px;
+  padding-top: 8px; border-top: 1px dashed var(--linje); }
+/* Læst-markering */
+.laest { opacity: .5; transition: opacity .15s; }
+.laest:hover { opacity: 1; }
+.laest .ny-chip { display: none; }
+
 .brief-top .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
   background: var(--blaek); color: var(--bg);
@@ -1191,11 +1222,14 @@ function visDagensBrief() {
       if (!d || !d.punkter || d.punkter.length < 3) return;
       if (d.dato !== dagNoegle(new Date().toISOString())) return;   // kun dagens
       const boks = document.getElementById("dagensBrief");
+      const datoTekst = new Date(d.dato + "T12:00:00").toLocaleDateString("da-DK",
+        { weekday: "long", day: "numeric", month: "long" });
       boks.innerHTML = `
-        <div class="brief-top"><span class="brief-kicker">☀️ Dagens overblik på 60 sekunder</span></div>
+        <div class="brief-top"><span class="brief-kicker">Dagens overblik — på 60 sekunder</span>
+          <span class="brief-dato">${esc(datoTekst)}</span></div>
         <ol class="brief-liste">${d.punkter.map(p =>
           `<li${p.link ? ` class="brief-klik" data-link="${esc(p.link)}"` : ""}>${esc(p.tekst)}</li>`).join("")}</ol>
-        <div class="brief-note">Skrevet automatisk ud fra døgnets vigtigste historier · klik på et punkt for hele historien</div>`;
+        <div class="brief-note">Skrevet automatisk ud fra døgnets vigtigste historier · klik på et punkt og læs hele historien</div>`;
       boks.hidden = false;
       boks.addEventListener("click", e => {
         const li = e.target.closest(".brief-klik");
