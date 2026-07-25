@@ -1031,6 +1031,12 @@ function aabnLaeser(a) {
          <figcaption>${esc(f.tekst)} · Kilde: ${esc(f.kilde || a.kilde)}</figcaption></figure>`).join("");
   } else if (a.brief) {
     briefHtml = a.brief.split(/\n\n+/).map(afsnit => `<p>${esc(afsnit)}</p>`).join("");
+  } else if (a.kun_aktuel) {
+    // Kilder der kun tillader, at deres aktuelle feed vises - aldrig et arkiv.
+    briefHtml = `<p>${brodtekst(a)}</p>
+       <p class="laeser-note">${esc(kildeNavn(a.kilde))} tillader ikke, at vi gemmer
+       eller genfortæller deres artikler. Vi viser overskriften, mens historien er
+       aktuel — hele artiklen læser du hos dem.</p>`;
   } else {
     briefHtml = `<p>${brodtekst(a)}</p>
        <p class="laeser-note">Det komplette brief er på vej — det skrives automatisk,

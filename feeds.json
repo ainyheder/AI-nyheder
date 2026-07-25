@@ -1,5 +1,5 @@
 {
-  "kommentar": "Tilføj eller fjern kilder her - crawleren læser denne fil. 'kategori' er reserve-kategori. 'max' begrænser antal artikler pr. kørsel fra den kilde (ellers 25).",
+  "kommentar": "Tilføj eller fjern kilder her - crawleren læser denne fil. 'kategori' er reserve-kategori. 'max' begrænser antal artikler pr. kørsel fra den kilde (ellers 25). 'kun_aktuel': true bruges til udgivere, der IKKE tillader et arkiv af deres overskrifter - de får ingen artikelside, ingen genfortælling og ingen plads i sitemap, og forsvinder når de ryger ud af udgiverens eget feed.",
   "feeds": [
     { "navn": "TechCrunch AI",        "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "kategori": "Nyheder" },
     { "navn": "The Verge AI",         "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "kategori": "Nyheder" },
@@ -9,6 +9,8 @@
     { "navn": "OpenAI Blog",          "url": "https://openai.com/news/rss.xml", "kategori": "Labs" },
     { "navn": "Google DeepMind",      "url": "https://deepmind.google/blog/rss.xml", "kategori": "Labs" },
     { "navn": "arXiv cs.AI",          "url": "https://rss.arxiv.org/rss/cs.AI", "kategori": "Forskning" },
-    { "navn": "Hacker News: AI",      "url": "https://hnrss.org/newest?q=AI&points=50", "kategori": "Community" }
+    { "navn": "Hacker News: AI",      "url": "https://hnrss.org/newest?q=AI&points=150", "kategori": "Community", "max": 6 },
+    { "navn": "Version2",             "url": "https://www.version2.dk/rss", "kategori": "Nyheder", "kun_aktuel": true, "max": 15 },
+    { "navn": "Ingeniøren",           "url": "https://ing.dk/rss", "kategori": "Nyheder", "kun_aktuel": true, "max": 15 }
   ]
 }

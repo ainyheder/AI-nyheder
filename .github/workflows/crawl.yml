@@ -56,6 +56,14 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          # Sociale opslag. Uden OPSLAG_LIVE=ja skrives der KUN udkast i loggen.
+          OPSLAG_LIVE: ${{ vars.OPSLAG_LIVE }}
+          BLUESKY_BRUGER: ${{ secrets.BLUESKY_BRUGER }}
+          BLUESKY_KODE: ${{ secrets.BLUESKY_KODE }}
+          FACEBOOK_SIDE_ID: ${{ secrets.FACEBOOK_SIDE_ID }}
+          FACEBOOK_TOKEN: ${{ secrets.FACEBOOK_TOKEN }}
+          LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
           GENKOER_ALT: ${{ inputs.genkoer_alt || vars.GENKOER_ALT }}
         run: |

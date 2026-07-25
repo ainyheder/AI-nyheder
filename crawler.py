@@ -160,6 +160,11 @@ def crawl_feed(feed: dict) -> tuple[dict, list[dict], str | None]:
             continue
         a["kilde"] = feed["navn"]
         a["kategori"] = feed.get("kategori", "Andet")
+        # Nogle udgivere tillader kun, at DET AKTUELLE feed vises - ikke at vi
+        # bygger et arkiv af deres overskrifter. Mærkes her og respekteres
+        # både i arkivet, i artikelsiderne og i sitemap.
+        if feed.get("kun_aktuel"):
+            a["kun_aktuel"] = True
         rensede.append(a)
     return feed, rensede, None
 
@@ -522,7 +527,9 @@ def dybe_briefs(artikler: list[dict]) -> None:
         print(f"📰 Genkører {len(kandidater)} artikler der matcher '{GENKOER_FILTER}'")
     else:
         kandidater = [a for a in artikler[:DYBDE_ANTAL]
-                      if GENKOER_ALT or not a.get("sektioner")]
+                      if (GENKOER_ALT or not a.get("sektioner"))
+                      and not a.get("kun_aktuel")]   # ingen fuld genfortælling
+                                                     # af kilder med arkivforbud
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -842,7 +849,7 @@ def _kort_artikler(artikler: list[dict]) -> set:
     og bruger sitets genererede kunst - dem koster vi ikke AI-billeder på."""
     dage: dict = {}
     for a in artikler:
-        if not a.get("rubrik"):
+        if not a.get("rubrik") or a.get("kun_aktuel"):
             continue
         noegle = str(a.get("foerst_set") or a.get("dato") or "")[:10]
         dage.setdefault(noegle, []).append(a)
@@ -1537,6 +1544,8 @@ def lav_artikelsider(artikler: list[dict]) -> None:
     for a in artikler:
         if not a.get("rubrik"):
             continue                        # kun danske genfortællinger
+        if a.get("kun_aktuel"):
+            continue                        # udgiveren tillader ikke et arkiv
         slug = _artikel_slug(a["link"])
         a["side"] = f"artikel/{slug}.html"
         sti = ARTIKEL_MAPPE / f"{slug}.html"
@@ -2546,6 +2555,199 @@ def lav_youtube() -> None:
 
 # ----- Hovedprogram ----------------------------------------------------------
 
+# ----- Opslag på sociale platforme -------------------------------------------
+#
+# TØRKØRSEL ER STANDARD. Uden secret'en OPSLAG_LIVE=ja skriver crawleren kun
+# udkastet i loggen og rører aldrig en platform. Det er med vilje: et opslag
+# kan ikke trækkes tilbage, og et forkert et koster mere end et udeblevet.
+
+OPSLAG_FIL = ROOT / "data" / "opslag.json"
+OPSLAG_MAX_PR_DAG = 2        # loft, så en fejl aldrig bliver til spam
+OPSLAG_MIN_PRIO = 7          # kun historier redaktionen selv ville fremhæve
+
+SYSTEM_OPSLAG = """Du skriver opslag til sociale medier for ainyheder.com -
+et dansk nyhedssite, der forklarer AI for helt almindelige mennesker.
+
+Du får én historie (rubrik, resumé og "hvad betyder det for dig"). Skriv opslag,
+der får en travl dansker til at standse op - uden clickbait og uden at love mere,
+end historien holder.
+
+Krav til alle varianter:
+- Dansk, letlæst, konkret. Nævn virksomheden eller produktet ved navn.
+- Ingen hashtag-tæpper, ingen "🚀 Wow!", ingen "Du vil ikke tro ...".
+- Skriv aldrig at læseren SKAL noget. Fortæl hvad der er sket, og hvorfor det rager dem.
+- Linket sættes på automatisk bagefter - skriv det ikke selv.
+
+Svar KUN med JSON:
+{"kort": "...", "facebook": "...", "linkedin": "..."}
+- "kort": max 240 tegn (Bluesky). Én pointe, skarpt sat.
+- "facebook": 2-4 linjer i hverdagssprog. Må slutte med et ægte spørgsmål.
+- "linkedin": 3-5 linjer, saglig og fagligt nysgerrig tone, til folk der møder AI på jobbet."""
+
+
+def _opslag_log() -> dict:
+    if OPSLAG_FIL.exists():
+        try:
+            return json.loads(OPSLAG_FIL.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    return {"sendt": [], "udkast": []}
+
+
+def _opslag_dag() -> str:
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Europe/Copenhagen")).date().isoformat()
+    except Exception:
+        return datetime.now(timezone.utc).date().isoformat()
+
+
+def _bluesky_post(tekst: str, url: str) -> None:
+    """Bluesky: log ind med app-adgangskode og skriv ét indlæg med link."""
+    bruger = os.environ.get("BLUESKY_BRUGER", "").strip()
+    kode = os.environ.get("BLUESKY_KODE", "").strip()
+    if not (bruger and kode):
+        raise RuntimeError("BLUESKY_BRUGER/BLUESKY_KODE mangler")
+    svar = json.loads(hent_url(
+        "https://bsky.social/xrpc/com.atproto.server.createSession",
+        data=json.dumps({"identifier": bruger, "password": kode}).encode(),
+        headers={"content-type": "application/json"}))
+    jwt, did = svar["accessJwt"], svar["did"]
+    fuld = f"{tekst}\n\n{url}"
+    b = fuld.encode("utf-8")
+    start = b.find(url.encode("utf-8"))
+    indlaeg = {
+        "$type": "app.bsky.feed.post", "text": fuld,
+        "createdAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "langs": ["da"],
+        "facets": [{"index": {"byteStart": start, "byteEnd": start + len(url.encode())},
+                    "features": [{"$type": "app.bsky.richtext.facet#link", "uri": url}]}],
+    }
+    hent_url("https://bsky.social/xrpc/com.atproto.repo.createRecord",
+             data=json.dumps({"repo": did, "collection": "app.bsky.feed.post",
+                              "record": indlaeg}).encode(),
+             headers={"content-type": "application/json",
+                      "Authorization": f"Bearer {jwt}"})
+
+
+def _facebook_post(tekst: str, url: str) -> None:
+    """Facebook-side: kræver side-ID og et langtidsholdbart side-token."""
+    side = os.environ.get("FACEBOOK_SIDE_ID", "").strip()
+    token = os.environ.get("FACEBOOK_TOKEN", "").strip()
+    if not (side and token):
+        raise RuntimeError("FACEBOOK_SIDE_ID/FACEBOOK_TOKEN mangler")
+    from urllib.parse import urlencode
+    hent_url(f"https://graph.facebook.com/v21.0/{side}/feed",
+             data=urlencode({"message": tekst, "link": url,
+                             "access_token": token}).encode(),
+             headers={"content-type": "application/x-www-form-urlencoded"})
+
+
+def _linkedin_post(tekst: str, url: str) -> None:
+    """LinkedIn-virksomhedsside: kræver organisations-ID og godkendt token."""
+    org = os.environ.get("LINKEDIN_ORG_ID", "").strip()
+    token = os.environ.get("LINKEDIN_TOKEN", "").strip()
+    if not (org and token):
+        raise RuntimeError("LINKEDIN_ORG_ID/LINKEDIN_TOKEN mangler")
+    krop = {
+        "author": f"urn:li:organization:{org}",
+        "commentary": f"{tekst}\n\n{url}",
+        "visibility": "PUBLIC",
+        "distribution": {"feedDistribution": "MAIN_FEED",
+                         "targetEntities": [], "thirdPartyDistributionChannels": []},
+        "lifecycleState": "PUBLISHED",
+        "isReshareDisabledByAuthor": False,
+    }
+    hent_url("https://api.linkedin.com/rest/posts",
+             data=json.dumps(krop).encode(),
+             headers={"Authorization": f"Bearer {token}",
+                      "Content-Type": "application/json",
+                      "LinkedIn-Version": "202601",
+                      "X-Restli-Protocol-Version": "2.0.0"})
+
+
+PLATFORME = [
+    ("Bluesky",  "kort",     _bluesky_post,  ("BLUESKY_BRUGER", "BLUESKY_KODE")),
+    ("Facebook", "facebook", _facebook_post, ("FACEBOOK_SIDE_ID", "FACEBOOK_TOKEN")),
+    ("LinkedIn", "linkedin", _linkedin_post, ("LINKEDIN_ORG_ID", "LINKEDIN_TOKEN")),
+]
+
+
+def del_paa_platforme(artikler: list[dict]) -> None:
+    """Vælger dagens bedste historie, får AI'en til at skrive opslag og deler
+    dem - men KUN hvis OPSLAG_LIVE=ja. Ellers logges udkastet.
+    Fejler altid stille: et mislykket opslag må aldrig vælte crawlet."""
+    if not API_KEY:
+        return
+    try:
+        log = _opslag_log()
+        dag = _opslag_dag()
+        sendt = log.get("sendt", [])
+        i_dag = [s for s in sendt if s.get("dag") == dag]
+        if len(i_dag) >= OPSLAG_MAX_PR_DAG:
+            return
+        delt = {s.get("link") for s in sendt}
+
+        graense = (datetime.now(timezone.utc) - timedelta(hours=20)).isoformat()
+        kandidater = [a for a in artikler
+                      if a.get("rubrik") and a.get("betydning")
+                      and not a.get("kun_aktuel")
+                      and a["link"] not in delt
+                      and (a.get("prio") or 0) >= OPSLAG_MIN_PRIO
+                      and (a.get("foerst_set") or "") >= graense]
+        if not kandidater:
+            return
+        a = max(kandidater, key=lambda x: (x.get("prio") or 0,
+                                           len(x.get("andre") or [])))
+
+        stof = {"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
+                "betydning": a.get("betydning", "")}
+        r = parse_json_objekt(kald_ai(SYSTEM_OPSLAG,
+                                      json.dumps(stof, ensure_ascii=False), 700))
+        tekster = {n: _som_tekst(r.get(n, "")).strip() for _, n, _, _ in PLATFORME}
+        if not any(tekster.values()):
+            return
+        url = f"{SITE_URL}/{a['side']}" if a.get("side") else SITE_URL
+
+        live = os.environ.get("OPSLAG_LIVE", "").strip().lower() in ("ja", "true", "1")
+        resultat = []
+        for navn, noegle, sender, kraev in PLATFORME:
+            tekst = tekster.get(noegle) or tekster.get("kort") or ""
+            if not tekst:
+                continue
+            if not all(os.environ.get(k, "").strip() for k in kraev):
+                continue                          # platformen er ikke sat op endnu
+            if not live:
+                print(f"📣 [TØRKØRSEL] {navn}: {tekst[:110]}")
+                resultat.append(navn + " (tørkørsel)")
+                continue
+            try:
+                sender(tekst, url)
+                print(f"📣 Delt på {navn}: {a['rubrik'][:60]}")
+                resultat.append(navn)
+            except Exception as fejl:
+                print(f"📣 ⚠️ {navn} fejlede: {type(fejl).__name__}: {fejl}")
+
+        if not live:
+            log.setdefault("udkast", []).insert(
+                0, {"dag": dag, "link": a["link"], "rubrik": a["rubrik"],
+                    "url": url, "tekster": tekster})
+            log["udkast"] = log["udkast"][:60]
+            if not resultat:
+                print(f"📣 [TØRKØRSEL] Udkast klar til: {a['rubrik'][:60]} "
+                      "(ingen platform sat op endnu)")
+        elif resultat:
+            sendt.insert(0, {"dag": dag, "link": a["link"], "rubrik": a["rubrik"],
+                             "platforme": resultat,
+                             "tid": datetime.now(timezone.utc).isoformat()})
+            log["sendt"] = sendt[:400]
+        OPSLAG_FIL.parent.mkdir(exist_ok=True)
+        OPSLAG_FIL.write_text(json.dumps(log, ensure_ascii=False, indent=2),
+                              encoding="utf-8")
+    except Exception as fejl:
+        print(f"📣 Opslag sprang over ({type(fejl).__name__}: {fejl})")
+
+
 def main() -> None:
     # Skriv ALTID hvilken model der skriver teksten - så det kan ses i
     # Actions-loggen, uden at gætte ud fra hvilke nøgler der er sat.
@@ -2691,6 +2893,7 @@ def main() -> None:
     lav_dagens_prompt()
     lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke)
+    del_paa_platforme(unikke)  # tørkørsel indtil OPSLAG_LIVE=ja
     try:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
     except Exception as fejl:
