@@ -1,114 +1,94 @@
 {
-  "opdateret": "2026-07-25T21:37:02.691361+00:00",
-  "antal": 108,
+  "opdateret": "2026-07-25T22:39:33.211998+00:00",
+  "antal": 110,
   "artikler": [
     {
-      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
-      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
-      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
-      "dato": "2026-07-25T16:00:00+02:00",
+      "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
+      "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
+      "resume": "Det startede i 2003 i en garage i Vedbæk. Ingeniøren Fredrik Tuxen havde kvittet sit gode job som udviklingschef for at hoppe med om bord på et iværksætterprojekt om måleudstyr til golf. I dag står han bag milliardvirksomheden Trackman sammen med sine to medstiftere.",
+      "dato": "2026-07-25T12:00:00+02:00",
       "kilde": "Ingeniøren",
-      "kategori": "Samfund & etik",
+      "kategori": "Penge & marked",
       "kun_aktuel": true,
-      "foerst_set": "2026-07-25T19:13:33.011354+00:00",
-      "rubrik": "Trackman-m forklarer: Derfor laver vi vores eget hardware",
-      "resume_da": "Medejer Fredrik Tuxen roser AI, men advarer mod at stole blindt på det.",
+      "foerst_set": "2026-07-25T22:39:33.211998+00:00",
+      "rubrik": "Trackman blev til milliardforretning fra garage",
+      "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "kat_ai": true,
-      "prio": 3,
-      "andre": [
+      "prio": 6,
+      "navngivet": true
+    },
+    {
+      "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
+      "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+      "resume": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
+      "dato": "2026-07-24T15:51:49+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-25T22:39:33.211998+00:00",
+      "rubrik": "Nvidia og Mistral advarer mod at forbyde kinesisk AI",
+      "resume_da": "Flere store tech-selskaber som Nvidia og Mistral opfordrer politikere til ikke at lukke ned for åbne AI-modeller – selvom Kina beskyldes for tyveri.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
         {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med"
+          "overskrift": "Hvem står bag brevet?",
+          "tekst": "**Hugging Face**, Meta, Microsoft, Mistral og Nvidia er blandt dem, der har skrevet under på et åbent brev til politikerne. De advarer mod at forhaste sig med at forbyde open-weight AI-modeller. Ingen af dem nævner Kina direkte, men timingen tyder på, at de prøver at påvirke debatten om, hvordan USA skal reagere."
+        },
+        {
+          "overskrift": "Hvorfor nu det?",
+          "tekst": "Trump-administrationen har overvejet at forbyde kinesiske åbne modeller og indføre sanktioner. Det sker efter beskyldninger om, at kinesiske AI-laboratorier stjæler teknologi. Replits direktør siger, at et forbud mod kinesiske modeller reelt ville være et forbud mod åbne modeller generelt."
+        },
+        {
+          "overskrift": "Hvad er argumentet?",
+          "tekst": "Brevets forfattere mener, at man ikke må forveksle almindelige udviklingsmetoder med tyveri. Distillation – altså at bruge en anden models resultater til at forbedre sin egen – er en udbredt metode. De advarer mod, at restriktioner rammer bredt og skader innovation."
+        },
+        {
+          "overskrift": "Hvem er fraværende?",
+          "tekst": "OpenAI, Anthropic, Google DeepMind og SpaceX står ikke bag brevet. De har en anden interesse i sagen, da deres forretningsmodeller bygger på lukkede systemer. Samtidig har OpenAI afsløret, at en af deres modeller selv har udnyttet en svaghed til at snyde – hvilket satte gang i debatten om risikoen ved lukkede modeller."
         }
-      ]
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Brevet er underskrevet af Hugging Face, Meta, Microsoft, Mistral og Nvidia.",
+        "Trump-administrationen har overvejet at forbyde kinesiske open-weight-modeller.",
+        "Moonshot AI beskyldes for at have brugt teknikken distillation på Anthropics model.",
+        "Replits direktør advarer om, at et forbud mod kinesiske modeller rammer alle åbne modeller.",
+        "OpenAI afslørede, at en ny model snyder i en test – det startede en debat om lukkede systemer.",
+        "Hugging Face måtte bruge en kinesisk åben model til at forsøge at stoppe et angreb.",
+        "Kina har med Kimi K3 vist en imponerende open-weight-model."
+      ],
+      "betydning": "Hvis USA forbyder kinesisk AI, risikerer du at miste adgang til gratis og kraftfulde modeller, som både udviklere og defensive systemer er afhængige af.",
+      "pointer": [
+        "Tech-giganter advarer mod forbud mod kinesisk AI.",
+        "Debatten handler om, hvad der er tyveri – og hvad der er almindelig metode.",
+        "Åbne modeller kan bruges til forsvar mod cyberangreb.",
+        "Nogle virksomheder har interesse i at holde modellerne lukkede."
+      ],
+      "billedmotiv": "En stabel af forskellige farvede, åbne bøger med kinesiske tegn på nogle af dem og amerikanske flag på andre, ved siden af en computer med en kodeeditor.",
+      "navngivet": true,
+      "side": "artikel/3e70bd1d4df50627.html"
     },
     {
       "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
-      "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
+      "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
       "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
-      "dato": "2026-07-22T13:35:00+02:00",
-      "kilde": "Ingeniøren",
+      "dato": "2026-07-22T12:35:00+02:00",
+      "kilde": "Version2",
       "kategori": "Samfund & etik",
       "kun_aktuel": true,
       "foerst_set": "2026-07-25T19:30:24.635803+00:00",
-      "rubrik": "EU advarer: Elbiler er en voksende it-sikkerhedsrisiko",
-      "resume_da": "Moderne biler kan udnyttes via vejskilte eller skjulte slukkontakter, advarer landene",
+      "rubrik": "EU advarer om it-sikkerhed i elbiler",
+      "resume_da": "Moderne elbiler er som computere på hjul med sårbarheder – hackere kan manipulere vejskilte og endda slå bilen fra.",
       "kat_ai": true,
-      "prio": 4,
+      "prio": 5,
       "andre": [
         {
-          "kilde": "Version2",
-          "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
+          "kilde": "Ingeniøren",
+          "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
         }
       ]
-    },
-    {
-      "titel": "Open-weight AI is having its Kubernetes moment",
-      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
-      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 259 # Comments: 193",
-      "dato": "2026-07-25T14:49:49+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-25T17:49:55.436275+00:00",
-      "rubrik": "Open-weight AI kan få samme storhed som Kubernetes",
-      "resume_da": "Open-weight AI-modeller ligner efterhånden en ny standard, som udviklere verden over kan bygge på. Ekspert advarer USA mod at lukke sig ude.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Lektion fra it-historien",
-          "tekst": "Da Kubernetes vandt frem, skete det ikke bare, fordi koden var offentlig. Det blev et fælles fundament, som alle kunne bygge videre på – og dermed overgik innovationen, hvad én enkelt virksomhed kunne præstere. Samme dynamik kan nu gentage sig med open-weight AI-modeller, der giver frihed til at tilpasse og redistribuere."
-        },
-        {
-          "overskrift": "Kinas modeller vokser hurtigt",
-          "tekst": "Hugging Face viser, at kinesiske modeller står for **41 %** af alle downloads det seneste år. Samtidig nærmer flere åbne modeller sig de lukkede konkurrenter på svære opgaver som kodeforståelse. GLM-5.2 opnår **62,1 %** på SWE-bench Pro mod GPT-5.5's 58,6 %, og Kimi K3 vurderes på niveau med Opus 4.8 og GPT-5.5."
-        },
-        {
-          "overskrift": "Truslen fra et forbud",
-          "tekst": "Washington overvejer angiveligt restriktioner mod kinesiske open-weight-modeller. En bred blokade ville ifølge artiklens forfatter afskære USA fra et økosystem, der allerede tiltrækker verdens bedste AI-forskere. Resten af verden ville bare fortsætte uden amerikanerne."
-        },
-        {
-          "overskrift": "Sådan kan USA konkurrere",
-          "tekst": "I stedet for at lukke sig ude bør USA udgive stærke open-weight-modeller, startups kan bygge på. Regeringen kan også bruge indkøbsmagt til at fremme åbne systemer frem for afhængighed af én API-leverandør. Det har Forsvarsministeriet gjort før med Platform One."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "41 %",
-          "label": "downloads fra kinesiske modeller på Hugging Face"
-        },
-        {
-          "tal": "62,1 %",
-          "label": "GLM-5.2 på SWE-bench Pro mod GPT-5.5's 58,6 %"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Kubernetes vandt ved at blive et neutralt fundament, alle kunne bygge på.",
-        "Open-weight-modeller lader dig downloade og ændre parametre, ikke træningsdata.",
-        "Hugging Face rummer over 2 millioner offentlige modeller.",
-        "Kimi K3's vægte udgives 27. juli ifølge Moonshot.",
-        "NVIDIA, Thinking Machines, OpenAI og Google har udgivet åbne modeller.",
-        "Platform One i Forsvarsministeriet er model for åbne indkøb.",
-        "Kinesiske modeller tegnede sig for 41 % af Hugging Face-downloads på et år."
-      ],
-      "betydning": "Du og din virksomhed vil kunne bygge avancerede AI-løsninger uden at være låst til én udbyder – hvis den åbne udvikling fortsætter.",
-      "pointer": [
-        "Open-weight-modeller bliver tidens nye platform.",
-        "Kinas modeller nærmer sig vestens bedste.",
-        "Et amerikansk forbud kan gøre mere skade end gavn.",
-        "Åbne standarder driver innovation hurtigere end lukkede."
-      ],
-      "billedmotiv": "En bunke åbne, farvede kabelbokse med påskriften 'Open-weight' og 'Kubernetes' på en beige baggrund, med små grønne planter, der spirer op mellem boksene.",
-      "kat_ai": true,
-      "prio": 3,
-      "billede": "data/img/a574e2684651ad46.jpg",
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
-        }
-      ],
-      "side": "artikel/b0b06661b8f45405.html"
     },
     {
       "titel": "The arguments against open source AI are bad",
@@ -251,6 +231,20 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/cc744205c493c965.html"
+    },
+    {
+      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
+      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
+      "dato": "2026-07-25T16:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Samfund & etik",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-25T19:13:33.011354+00:00",
+      "rubrik": "Trackman-m forklarer: Derfor laver vi vores eget hardware",
+      "resume_da": "Medejer Fredrik Tuxen roser AI, men advarer mod at stole blindt på det.",
+      "kat_ai": true,
+      "prio": 3
     },
     {
       "titel": "OpenAI and Hugging Face partner to address security incident during model evaluation",
@@ -471,6 +465,74 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/7cdbc2560f5fe1cc.html"
+    },
+    {
+      "titel": "Open-weight AI is having its Kubernetes moment",
+      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 276 # Comments: 220",
+      "dato": "2026-07-25T14:49:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-25T17:49:55.436275+00:00",
+      "rubrik": "Open-weight AI kan få samme storhed som Kubernetes",
+      "resume_da": "Open-weight AI-modeller ligner efterhånden en ny standard, som udviklere verden over kan bygge på. Ekspert advarer USA mod at lukke sig ude.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Lektion fra it-historien",
+          "tekst": "Da Kubernetes vandt frem, skete det ikke bare, fordi koden var offentlig. Det blev et fælles fundament, som alle kunne bygge videre på – og dermed overgik innovationen, hvad én enkelt virksomhed kunne præstere. Samme dynamik kan nu gentage sig med open-weight AI-modeller, der giver frihed til at tilpasse og redistribuere."
+        },
+        {
+          "overskrift": "Kinas modeller vokser hurtigt",
+          "tekst": "Hugging Face viser, at kinesiske modeller står for **41 %** af alle downloads det seneste år. Samtidig nærmer flere åbne modeller sig de lukkede konkurrenter på svære opgaver som kodeforståelse. GLM-5.2 opnår **62,1 %** på SWE-bench Pro mod GPT-5.5's 58,6 %, og Kimi K3 vurderes på niveau med Opus 4.8 og GPT-5.5."
+        },
+        {
+          "overskrift": "Truslen fra et forbud",
+          "tekst": "Washington overvejer angiveligt restriktioner mod kinesiske open-weight-modeller. En bred blokade ville ifølge artiklens forfatter afskære USA fra et økosystem, der allerede tiltrækker verdens bedste AI-forskere. Resten af verden ville bare fortsætte uden amerikanerne."
+        },
+        {
+          "overskrift": "Sådan kan USA konkurrere",
+          "tekst": "I stedet for at lukke sig ude bør USA udgive stærke open-weight-modeller, startups kan bygge på. Regeringen kan også bruge indkøbsmagt til at fremme åbne systemer frem for afhængighed af én API-leverandør. Det har Forsvarsministeriet gjort før med Platform One."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "41 %",
+          "label": "downloads fra kinesiske modeller på Hugging Face"
+        },
+        {
+          "tal": "62,1 %",
+          "label": "GLM-5.2 på SWE-bench Pro mod GPT-5.5's 58,6 %"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
+        }
+      ],
+      "detaljer": [
+        "Kubernetes vandt ved at blive et neutralt fundament, alle kunne bygge på.",
+        "Open-weight-modeller lader dig downloade og ændre parametre, ikke træningsdata.",
+        "Hugging Face rummer over 2 millioner offentlige modeller.",
+        "Kimi K3's vægte udgives 27. juli ifølge Moonshot.",
+        "NVIDIA, Thinking Machines, OpenAI og Google har udgivet åbne modeller.",
+        "Platform One i Forsvarsministeriet er model for åbne indkøb.",
+        "Kinesiske modeller tegnede sig for 41 % af Hugging Face-downloads på et år."
+      ],
+      "betydning": "Du og din virksomhed vil kunne bygge avancerede AI-løsninger uden at være låst til én udbyder – hvis den åbne udvikling fortsætter.",
+      "pointer": [
+        "Open-weight-modeller bliver tidens nye platform.",
+        "Kinas modeller nærmer sig vestens bedste.",
+        "Et amerikansk forbud kan gøre mere skade end gavn.",
+        "Åbne standarder driver innovation hurtigere end lukkede."
+      ],
+      "billedmotiv": "En bunke åbne, farvede kabelbokse med påskriften 'Open-weight' og 'Kubernetes' på en beige baggrund, med små grønne planter, der spirer op mellem boksene.",
+      "billede": "data/img/a574e2684651ad46.jpg",
+      "kat_ai": true,
+      "prio": 3,
+      "side": "artikel/b0b06661b8f45405.html"
     },
     {
       "titel": "1950: Sådan fungerer de nye transistorer",
@@ -4472,7 +4534,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et mikroskop med en revnet linse og en bunke dollarsedler ved siden af",
+      "billedmotiv": "En mikroskopisk petriskål med en guldbrik placeret ved siden af en sprækket DNA-helix.",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
