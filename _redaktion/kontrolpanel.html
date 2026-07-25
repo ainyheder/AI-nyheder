@@ -30,7 +30,20 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   padding:13px 17px; font-size:14px; margin-bottom:24px; }
 .flow { background:var(--kort); border:1px solid var(--linje); border-radius:16px; padding:20px; box-shadow:var(--skygge); }
 .flow svg { width:100%; height:auto; display:block; }
-.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:12px; }
+.etape { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
+  padding:16px 18px 18px; box-shadow:var(--skygge); margin-bottom:10px; }
+.etape-top { display:flex; align-items:baseline; gap:10px; margin-bottom:12px; }
+.etape-nr { width:24px; height:24px; border-radius:50%; background:var(--accent); color:#fff;
+  font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:12.5px;
+  display:grid; place-items:center; flex:none; }
+.etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:17px; }
+.etape-hvornaar { font-size:12px; color:var(--svag); margin-left:auto; }
+.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(238px,1fr)); gap:10px; }
+.pil { text-align:center; color:#b4b2a9; font-size:17px; line-height:1; margin:2px 0 10px; }
+.ikke { background:color-mix(in srgb, var(--blaek) 4%, transparent);
+  border:1px dashed var(--linje); border-radius:12px; padding:13px 16px; }
+.ikke .n { font-weight:700; font-size:14px; }
+.ikke .b { font-size:12.5px; color:var(--svag); margin-top:2px; }
 .hj { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--linje);
   border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
   transition:transform .12s, border-color .12s; }
@@ -84,10 +97,10 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
 <div class="advarsel" id="advarsel" hidden></div>
 
 <h2>Arbejdsflowet</h2>
-<div class="flow" id="flow"></div>
-
-<h2>Arbejdstrinnene</h2>
-<div class="net" id="net"></div>
+<p class="manchet" style="margin-bottom:18px">Rækkefølgen herunder er den, crawleren
+faktisk arbejder i. <strong>Alle de hvide kasser kan klikkes og ændres.</strong>
+De grå er ikke AI — de gør bare noget mekanisk.</p>
+<div id="flow"></div>
 <div class="tom" id="tomboks" hidden></div>
 </main>
 
@@ -105,7 +118,7 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
 <script>
 (function () {
   var S = window.HJERNE_STATUS;
-  var net = document.getElementById("net");
+  var net = document.getElementById("flow");
   var adv = document.getElementById("advarsel");
 
   if (!S) {
@@ -114,7 +127,7 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
       "Kunne ikke finde <code>hjerne-data.js</code>.<br><br>" +
       "Filen skrives af crawleren. Kør et crawl (eller <code>python3 crawler.py</code>) én gang, " +
       "og genindlæs så denne side.";
-    document.getElementById("flow").hidden = true;
+    
     return;
   }
 
@@ -161,18 +174,66 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
     return !!(e.prompt && e.prompt.trim() !== (S.hjerner[n].standard_prompt || "").trim());
   }
 
+  // Rækkefølgen crawleren faktisk arbejder i.
+  var ETAPER = [
+    { navn: "Hent nyhederne", hvornaar: "hver kørsel",
+      ikke: [["RSS-kilderne", "opsaetning/feeds.json — 11 kilder, ingen AI"]] },
+    { navn: "Skriv historien på dansk", hvornaar: "kun nye artikler",
+      trin: ["omskriv", "kategori", "dublet", "brief", "redaktoer"] },
+    { navn: "Hold arkivet i orden", hvornaar: "lidt ad gangen hver kørsel",
+      trin: ["navngiv", "stram"] },
+    { navn: "Lav billederne", hvornaar: "kun dagens top-5",
+      trin: ["motiv"],
+      ikke: [["Billedmodellen", "Tegner selve billedet — vælges ikke her"]] },
+    { navn: "Byg siderne", hvornaar: "hver kørsel",
+      ikke: [["Artikelsider, RSS og sitemap", "Ren filskrivning, ingen AI"]] },
+    { navn: "De faste indslag", hvornaar: "én gang om dagen eller ugen",
+      trin: ["dagens_overblik", "kartotek", "quiz", "ugens_overblik"] },
+    { navn: "YouTube", hvornaar: "op til 14 videoer pr. kørsel",
+      trin: ["youtube"] },
+    { navn: "Ud i verden", hvornaar: "max 2 opslag om dagen",
+      trin: ["opslag"] },
+    { navn: "Se på det hele bagefter", hvornaar: "én gang i døgnet",
+      ikke: [["Læsertal fra Cloudflare", "Hentes ind, så gennemgangen kan se hvad folk læser"]],
+      trin: ["gennemgang"] }
+  ];
+
+  function trinHtml(n) {
+    var h = S.hjerner[n], a = erAendret(n);
+    return '<button class="hj' + (a ? " aendret" : "") + '" data-n="' + n + '">' +
+      '<div class="n">' + esc(n.replace(/_/g, " ")) + (a ? '<span class="flag">ÆNDRET</span>' : "") + "</div>" +
+      '<div class="b">' + esc(h.beskrivelse) + "</div>" +
+      '<span class="m">' + esc(aktivModel(n)) + "</span></button>";
+  }
+
   function tegn() {
-    net.innerHTML = Object.keys(S.hjerner).map(function (n) {
-      var h = S.hjerner[n], a = erAendret(n);
-      return '<button class="hj' + (a ? " aendret" : "") + '" data-n="' + n + '">' +
-        '<div class="n">' + esc(n.replace(/_/g, " ")) + (a ? '<span class="flag">ÆNDRET</span>' : "") + "</div>" +
-        '<div class="b">' + esc(h.beskrivelse) + "</div>" +
-        '<span class="m">' + esc(aktivModel(n)) + "</span></button>";
+    var brugt = {};
+    net.innerHTML = ETAPER.map(function (e, i) {
+      var kasser = (e.ikke || []).map(function (k) {
+        return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
+               '<div class="b">' + esc(k[1]) + "</div></div>";
+      }).concat((e.trin || []).map(function (n) { brugt[n] = 1; return trinHtml(n); }));
+      return '<div class="etape"><div class="etape-top">' +
+        '<span class="etape-nr">' + (i + 1) + "</span>" +
+        '<span class="etape-navn">' + esc(e.navn) + "</span>" +
+        '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span></div>" +
+        '<div class="net">' + kasser.join("") + "</div></div>" +
+        (i < ETAPER.length - 1 ? '<div class="pil">↓</div>' : "");
     }).join("");
+
+    // Værn: skulle crawleren få et nyt trin, som jeg har glemt at placere,
+    // dukker det op her i stedet for at forsvinde ud af panelet.
+    var glemte = Object.keys(S.hjerner).filter(function (n) { return !brugt[n]; });
+    if (glemte.length) {
+      net.innerHTML += '<div class="etape"><div class="etape-top">' +
+        '<span class="etape-navn">Ikke placeret i flowet endnu</span></div>' +
+        '<div class="net">' + glemte.map(trinHtml).join("") + "</div></div>";
+    }
+
     var n = Object.keys(S.hjerner).filter(erAendret).length;
     document.getElementById("bundtekst").textContent = n === 0
       ? "Ingen ændringer endnu"
-      : n + (n === 1 ? " trin er ændret" : " trin er ændret") + " — husk at hente filen";
+      : n + " trin er ændret — husk at gemme";
   }
 
   var bag = document.getElementById("bag"), modal = document.getElementById("modal");
@@ -277,38 +338,6 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
   document.getElementById("nulstilAlt").addEventListener("click", function () {
     if (confirm("Nulstil alle trin til crawlerens indbyggede instrukser?")) { aendret = {}; tegn(); }
   });
-
-  // ---- Arbejdsflowet ----
-  document.getElementById("flow").innerHTML =
-    '<svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">' +
-    '<defs><marker id="pil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">' +
-    '<path d="M0 0 L10 5 L0 10 z" fill="#b4b2a9"/></marker></defs>' +
-    boks(230, 8, 200, 44, "#ecebfd", "#5b4bf0", "redaktionens-oejne.md", "Ni punkter. Definerer “godt”") +
-    linje("M330 52 L330 74") + linje("M330 74 L110 74 L110 96") +
-    linje("M330 74 L330 96") + linje("M330 74 L550 74 L550 96") +
-    boks(20, 96, 180, 52, "#fff", "#e2ddd2", "Crawlerens model", "Skriver · sorterer · " + S.daglig_model) +
-    boks(240, 96, 180, 52, "#fff", "#e2ddd2", "Natlig gennemgang", "Måler · " + (aktivModel("gennemgang"))) +
-    boks(460, 96, 180, 52, "#e1f5ee", "#1d9e75", "Natsessionen", "Bygger · tester · 23 og 03") +
-    linje("M330 148 L330 176") + linje("M550 148 L550 176") +
-    linje("M110 148 L110 232 L228 232") +
-    boks(240, 176, 180, 38, "#fff", "#e2ddd2", "opgavekoe.md", "") +
-    boks(460, 176, 180, 38, "#fff", "#e2ddd2", "nat-log.md", "") +
-    linje("M420 195 L460 195") + linje("M550 214 L550 250 L432 250") +
-    boks(230, 228, 200, 44, "#faece7", "#d85a30", "Torben", "Prioriterer · pusher · overrules") +
-    linje("M330 272 L330 292") +
-    boks(240, 294, 180, 36, "#fff", "#e2ddd2", "ainyheder.com", "") +
-    '<path d="M240 312 L40 312 L40 30 L230 30" stroke="#b4b2a9" stroke-width="1.4" fill="none" stroke-dasharray="4 4" marker-end="url(#pil)"/>' +
-    '<text x="48" y="180" font-size="10.5" fill="#888780">han retter</text>' +
-    '<text x="48" y="194" font-size="10.5" fill="#888780">målestokken</text>' +
-    "</svg>";
-
-  function boks(x, y, w, h, fyld, kant, titel, under) {
-    var midt = x + w / 2;
-    return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="8" fill="' + fyld + '" stroke="' + kant + '"/>' +
-      '<text x="' + midt + '" y="' + (y + (under ? 20 : 23)) + '" text-anchor="middle" font-size="12.5" font-weight="600" fill="#191714">' + esc(titel) + "</text>" +
-      (under ? '<text x="' + midt + '" y="' + (y + 36) + '" text-anchor="middle" font-size="10.5" fill="#6d675d">' + esc(under) + "</text>" : "");
-  }
-  function linje(d) { return '<path d="' + d + '" stroke="#b4b2a9" stroke-width="1.4" fill="none" marker-end="url(#pil)"/>'; }
 
   tegn();
 })();

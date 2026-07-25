@@ -274,9 +274,14 @@ konkret hvem (fx "Kinesisk techgigant ..." eller "EU-Kommissionen ...").
 For hver artikel laver du:
 - "rubrik": fængende dansk overskrift på MAX 9 ord, med navn (se ovenfor).
   Ingen jargon udover selve navnene. Ingen punktum til sidst.
-- "resume": 1-2 KORTE sætninger på hverdagsdansk. Forklar hvad der er sket,
-  og hvorfor det er interessant for almindelige mennesker. Max 30 ord i alt.
-  Nævn også her hvem det handler om.
+- "resume": 1-2 KORTE sætninger på hverdagsdansk. Max 30 ord i alt.
+  Resuméet må ALDRIG bare gentage rubrikken med andre ord. Rubrikken siger
+  HVAD der skete; resuméet tilføjer det, læseren ikke kunne gætte - tallet,
+  konsekvensen, modparten, hvad der nu sker.
+    RUBRIK:  "Oracle fyrer 21.000 medarbejdere efter AI-satsning"
+    DÅRLIGT: "Oracle har afskediget 21.000 ansatte på grund af en AI-satsning."
+    GODT:    "Fyringerne rammer især salg og support. Oracle vil bruge pengene
+              på datacentre i stedet."
   Forbudt: engelske låneord der har et dansk ord, forkortelser uden forklaring,
   og buzzwords. Skriv som til en klog nabo.
 - Skriv ALTID "AI" - aldrig "kunstig intelligens" (det er for langt).
@@ -540,7 +545,11 @@ Svar KUN med ét JSON-objekt:
  "sektioner": 2-4 afsnit med hver sin KORTE, konkrete mini-overskrift (2-4 ord,
               fx "Det er sket", "Pengene bag", "Kritikerne siger", "Hvad nu?" -
               ALDRIG **fremhævning** i selve overskriften).
-              Hvert afsnit 40-70 ord letlæst hverdagsdansk:
+              Hvert afsnit 40-70 ord letlæst hverdagsdansk.
+              PRØVEN: hvert afsnit skal svare på et NYT spørgsmål. Kan afsnit 2
+              slettes, uden at læseren mister noget, har du skrevet det samme
+              to gange - og så skal der stå noget andet. Har artiklen kun stof
+              til to afsnit, så skriv to. To skarpe slår fire tynde:
               [{"overskrift": "...", "tekst": "..."}, ...],
  "noegletal": KUN til tal hvor TALLET I SIG SELV er nyheden: benchmark-scores,
               priser, hastigheder, investeringsbeløb, brugertal i millioner.
@@ -807,6 +816,12 @@ For hver artikel giver du:
   tendenser der er værd at forberede sig på
 - 3-5: almindelige branchenyheder, mindre opdateringer
 - 1-2: inkrementel/niche-forskning, akademiske detaljer, smalle tekniske emner
+
+VÆR NÆRIG MED DE HØJE TAL. Prioriteten styrer, hvad der kommer øverst på
+forsiden, og hvad der bliver delt - så inflation ødelægger den. Retningslinje
+for en normal dag: de FLESTE artikler ligger på 3-6. Kun ganske få når 7-8.
+9-10 er en historie, en dansk avis ville skrive om - typisk én om ugen, ikke
+én om dagen. Er du i tvivl mellem to tal, så vælg det laveste.
 
 Svar KUN med et JSON-array i samme rækkefølge som input:
 [{{"kategori": "Lanceringer", "prio": 9}}, ...]"""
@@ -1877,9 +1892,33 @@ Svar KUN med ét JSON-objekt: {"titel": "...", "kategori": "...", "tekst": "..."
 Krav:
 - titel: fængende, højst 5 ord, på dansk.
 - kategori: præcis én af: Hverdag, Job, Økonomi, Skole, Tekst, Kreativt, Sundhed & livet.
-- tekst: selve prompten på dansk (2-6 sætninger) med [firkantede felter] til brugerens egne oplysninger. Konkret, umiddelbart brugbar og uden teknisk snak. Brug gerne stærke greb: giv AI'en en rolle, bed den stille opklarende spørgsmål først, kræv et bestemt format.
+- tekst: selve prompten på dansk (2-6 sætninger) med [firkantede felter] til brugerens egne oplysninger.
 - hvorfor: én kort sætning om, hvad der gør prompten smart.
-- VIGTIGT: Lav noget nyt - undgå emner og vinkler fra titellisten, du får. Aldrig medicinsk/juridisk rådgivning som facit (kun forberedelse til fagfolk)."""
+- VIGTIGT: Lav noget nyt - undgå emner og vinkler fra titellisten, du får. Aldrig medicinsk/juridisk rådgivning som facit (kun forberedelse til fagfolk).
+
+TÆNK PÅ HVEM DER SKAL BRUGE DEN. En dansker der aldrig har brugt AI før, skal
+kunne kopiere prompten, udfylde felterne og få noget brugbart i FØRSTE forsøg -
+uden at vide noget om prompts. Det udelukker alt, der kræver opfølgning eller
+teknisk forståelse.
+
+TRE KRAV, DER SKILLER EN GOD PROMPT FRA EN KEDELIG:
+1. Den løser en opgave, folk faktisk har - ikke en, der lyder smart.
+   Ja: klage over en regning, forstå et brev fra kommunen, planlægge en fest
+   for 12, forberede en lønsamtale. Nej: "brainstorm idéer til mit brand".
+2. Den giver AI'en noget at arbejde MED: en rolle, en modtager, en tone, et
+   format - så svaret bliver skræddersyet i stedet for generisk.
+3. Resultatet skal kunne bruges direkte. Ikke et oplæg til mere arbejde.
+
+EKSEMPEL PÅ NIVEAUET:
+titel: "Forstå brevet fra kommunen"
+tekst: "Du er en tålmodig sagsbehandler, der er god til at forklare.
+Her er et brev, jeg har fået: [indsæt brevet uden navn og CPR].
+Svar med tre ting: 1) Hvad vil de have af mig, i én sætning.
+2) Hvad skal jeg gøre, og hvornår er fristen. 3) Er der noget, jeg skal
+være opmærksom på? Skriv i punktform og undgå fagudtryk."
+hvorfor: "Rollen og de tre faste punkter gør, at du får det samme brugbare
+svar hver gang - uanset hvor rodet brevet er."
+"""
 
 
 def lav_dagens_prompt() -> None:
@@ -1937,6 +1976,17 @@ Du får en nummereret liste af tekster, der er for lange.
 Skriv hver enkelt om til 1-2 sætninger (maks 35 ord): den ENE konsekvens, der
 rammer læserens hverdag, penge eller fremtid. Direkte "du"-sprog. Start aldrig
 med "Det betyder" eller "Denne nyhed". Bevar fakta og tal - opdigt intet.
+
+FØR: "Denne udvikling betyder, at der i fremtiden potentielt kan opstå
+      situationer, hvor forbrugere oplever ændrede vilkår for de digitale
+      tjenester, de bruger i hverdagen, hvilket kan få betydning for økonomien."
+EFTER: "Bliver modellerne dyrere at drive, ender regningen hos dig - de gratis
+      versioner er som regel de første, der bliver skåret ned."
+
+Bemærk: det er ikke bare kortere. Det er konkret, hvor originalen var vag.
+Kan du ikke pege på ÉN konsekvens i materialet, så skriv den ene ting, der
+faktisk står der - hellere beskedent og sandt end stort og tomt.
+
 Svar KUN med et JSON-array: [{"nr": 1, "tekst": "..."}, ...] - ét objekt pr. input."""
 
 
@@ -2159,7 +2209,17 @@ Krav:
 - svar: præcis 3 muligheder, hvor NETOP ÉN er sand (true). De forkerte skal være plausible, ikke fjollede.
 - fork: én sætning, der forklarer det rigtige svar.
 - Byg KUN på det materiale, du får - opdigt aldrig tal eller navne.
-- Spred spørgsmålene over forskellige historier."""
+- Spred spørgsmålene over forskellige historier.
+
+FORRÅD IKKE SVARET. En quiz er ligegyldig, hvis man kan gætte uden at have
+læst med. Derfor:
+- De tre svarmuligheder skal være omtrent lige lange. Det rigtige svar må
+  ALDRIG være det længste eller det mest detaljerede.
+- De forkerte svar skal være ting, der kunne have været sande - andre rigtige
+  firmaer, realistiske tal, plausible årstal. Ikke tydeligt forkerte.
+- Undgå "alle ovenstående", "ingen af delene" og absolutter som "aldrig".
+- Er tallet i det rigtige svar fx 21.000, så lad de forkerte være 14.000 og
+  35.000 - ikke 3 og 900.000."""
 
 
 def lav_ugens_quiz(artikler: list[dict]) -> None:
