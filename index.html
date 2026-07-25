@@ -164,19 +164,19 @@ a.pill { text-decoration: none; display: inline-block; }
 .emne-alle:hover { color: var(--accent); }
 
 /* ---------- Hero ---------- */
-.wrap { margin: 0 auto; padding: 20px 28px 70px; }
+.wrap { margin: 0 auto; padding: 14px 28px 70px; }
 .hero {
   display: grid; grid-template-columns: 1.15fr 1fr; gap: 0;
   background: var(--bg-kort); border: 1px solid var(--linje);
   border-radius: calc(var(--radius) + 6px); overflow: hidden;
-  box-shadow: var(--skygge); margin-bottom: 34px;
+  box-shadow: var(--skygge); margin-bottom: 26px;
   text-decoration: none; transition: transform .25s, box-shadow .25s;
   animation: ind .5s ease both;
 }
 .hero:hover { transform: translateY(-4px); }
-.hero-art { min-height: 340px; position: relative; }
+.hero-art { min-height: 300px; position: relative; }
 .hero-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero-tekst { padding: 42px 44px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+.hero-tekst { padding: 32px 40px; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
 .kicker {
   font-size: 11.5px; font-weight: 700; letter-spacing: .14em;
   text-transform: uppercase; color: var(--accent);
@@ -271,7 +271,7 @@ a.pill { text-decoration: none; display: inline-block; }
 
 /* Dagens overblik - mørkt morgenbrief-kort */
 #dagensBrief { background: var(--blaek); color: var(--bg); border-radius: 18px;
-  padding: 26px 32px 22px; margin: 0 0 28px; position: relative; overflow: hidden;
+  padding: 21px 30px 17px; margin: 0 0 22px; position: relative; overflow: hidden;
   box-shadow: 0 2px 4px rgba(25,23,20,.08), 0 16px 40px rgba(25,23,20,.16); }
 #dagensBrief::after { content: "☀️"; position: absolute; right: 16px; top: -14px;
   font-size: 92px; opacity: .12; transform: rotate(12deg); pointer-events: none; }
@@ -283,16 +283,19 @@ a.pill { text-decoration: none; display: inline-block; }
 .brief-liste { list-style: none; margin: 0; counter-reset: brief;
   display: grid; grid-template-columns: 1fr; gap: 0 44px; }
 @media (min-width: 940px) { .brief-liste { grid-template-columns: 1fr 1fr; } }
-.brief-liste li { font-size: 14.5px; line-height: 1.55; color: #e8e4da;
-  padding: 11px 0 11px 38px; position: relative; counter-increment: brief;
+.brief-liste li { font-size: 14.5px; line-height: 1.5; color: #e8e4da;
+  padding: 8px 0 8px 38px; position: relative; counter-increment: brief;
   border-bottom: 1px solid rgba(244, 242, 236, .1); }
-.brief-liste li::before { content: counter(brief); position: absolute; left: 0; top: 11px;
+.brief-liste li::before { content: counter(brief); position: absolute; left: 0; top: 8px;
   width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff;
   font-family: var(--font-display); font-size: 13px; font-weight: 800;
   display: grid; place-items: center; }
+/* Punkterne er klikbare - og det skal kunne SES uden mus, for på mobil
+   findes :hover ikke. Pilen står derfor permanent. */
 .brief-klik { cursor: pointer; transition: color .12s; }
+.brief-klik::after { content: " →"; color: #a99ff7; font-weight: 700; }
 .brief-klik:hover { color: #fff; }
-.brief-klik:hover::after { content: " →"; color: #a99ff7; font-weight: 700; }
+.brief-klik:hover::after { color: #fff; }
 /* Kompakt liste under dagens topkort */
 .mikro-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2px 30px; margin-bottom: 34px; }
@@ -300,9 +303,13 @@ a.pill { text-decoration: none; display: inline-block; }
 .kort-betydning { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; margin-top: 8px;
   padding-top: 8px; border-top: 1px dashed var(--linje); }
 /* Læst-markering */
-.laest { opacity: .5; transition: opacity .15s; }
-.laest:hover { opacity: 1; }
+/* Læst-markering: vi dæmper KUN teksten - aldrig billedet. Ellers gråner
+   forsiden for præcis den daglige læser, vi gerne vil have igen. */
+.laest h2, .laest h3 { color: var(--blaek-svag); }
+.laest .kort-krop p, .laest .kort-betydning { opacity: .8; }
 .laest .ny-chip { display: none; }
+.laest-maerke { display: none; }
+.laest .laest-maerke { display: inline; color: #2e9e5b; font-weight: 700; }
 
 .brief-top .flere-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
@@ -560,6 +567,145 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .bench-kredit a { color: var(--accent); }
 
+/* ================================================================
+   FASTHOLDELSE — værktøjsmenu, kompakt fold og vejen videre
+   ================================================================ */
+
+/* --- Topbarens værktøjer (sortering, visning, genveje) ---
+   På desktop står de frit i baren. På mobil samles de i én menu, så
+   topbaren kan holdes på én række og nyhederne kommer op i første skærm. */
+.top-valg { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.valg-titel { display: none; }
+.valg-links { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.top-ikon {
+  display: none; border: 1px solid var(--linje); background: var(--bg-kort);
+  color: var(--blaek-svag); font-family: inherit; font-size: 12.5px; font-weight: 700;
+  padding: 8px 13px; border-radius: 999px; cursor: pointer; align-items: center; gap: 6px;
+  transition: all .18s; flex: none;
+}
+.top-ikon:hover { border-color: var(--accent); color: var(--accent); }
+.top-ikon.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
+.top-ikon svg { width: 16px; height: 16px; stroke: currentColor; fill: none;
+  stroke-width: 2.2; stroke-linecap: round; display: block; }
+#valgKnap circle { fill: var(--bg-kort); }
+#valgKnap.aktiv circle { fill: var(--blaek); }
+
+@media (max-width: 820px) {
+  .topbar-inner { padding: 10px 14px; gap: 7px; flex-wrap: nowrap; }
+  .brand { flex: none; white-space: nowrap; }
+  .brand-navn { font-size: 19px; }
+  .puls { display: none; }
+  /* Filterrækken må krympe og rulle vandret, så intet støder sammen */
+  .filtre { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; gap: 5px;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    /* Blød kant, så en afklippet pille læses som "der er mere" - ikke som en fejl */
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 20px), transparent); }
+  .filtre::-webkit-scrollbar { display: none; }
+  .filtre > * { flex: none; }
+  .pill { font-size: 12px; padding: 6px 11px; }
+  /* Dropdownen skal ud af den rullende beholder, ellers klippes den væk */
+  .emne-menu { position: fixed; top: auto; left: 14px; right: 14px; min-width: 0; }
+  /* YouTube er et mål, ikke et filter: på mobil får den sin egen faste knap,
+     så den ikke ruller ud af syne sammen med kategorierne */
+  .filtre a.pill.yt-pill, .filtre .menu-skel { display: none; }
+  .top-ikon-yt { display: inline-flex; color: var(--yt-roed); border-color: var(--linje); }
+  .top-ikon-yt:hover { border-color: var(--yt-roed); color: var(--yt-roed); }
+  .top-ikon-yt svg { width: 19px; height: 14px; }
+  /* Genvejene og skifterne bor i menuen på mobil */
+  .top-ikon { display: inline-flex; }
+  .sog { max-width: none; margin: 0; width: 100%; }
+  .top-valg {
+    display: none; position: absolute; right: 12px; top: calc(100% + 6px); z-index: 70;
+    flex-direction: column; align-items: stretch; gap: 14px; min-width: 214px;
+    padding: 16px; background: var(--bg-kort); border: 1px solid var(--linje);
+    border-radius: 14px; box-shadow: 0 14px 40px rgba(0,0,0,.16);
+  }
+  .top-valg.aaben { display: flex; }
+  .valg-titel { display: block; font-size: 10px; font-weight: 800; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--blaek-svag); margin-bottom: 6px; }
+  .valg-links { flex-direction: column; align-items: stretch;
+    padding-top: 12px; border-top: 1px solid var(--linje); }
+  .valg-links .pill { text-align: center; }
+  .visning-skift { width: 100%; }
+  .visning-skift button { flex: 1; justify-content: center; white-space: nowrap; }
+}
+/* Under ca. 430px er der kun plads til de vigtigste piller i baren */
+@media (max-width: 430px) {
+  .filtre .pill-skjul-smal { display: none; }
+}
+
+/* --- Kompakt "Dagens overblik" ---
+   Boksen fyldte 711px af en 812px mobilskærm. Nu er der plads til, at
+   toppen af nyhederne stikker op i første skærm. */
+@media (max-width: 700px) {
+  #dagensBrief { padding: 17px 18px 13px; border-radius: 14px; margin-bottom: 20px; }
+  #dagensBrief::after { font-size: 66px; right: 10px; top: -10px; }
+  .brief-kicker { font-size: 18.5px; }
+  .brief-top { margin-bottom: 9px; gap: 8px; }
+  .brief-dato { font-size: 10.5px; }
+  .brief-liste li { font-size: 13px; line-height: 1.45; padding: 7px 0 7px 29px; }
+  .brief-liste li::before { width: 20px; height: 20px; font-size: 11px; top: 7px; }
+  .wrap { padding: 14px 16px 60px; }
+}
+
+/* --- Læsetid og læst-mærke på kortene --- */
+.kort-laesetid { white-space: nowrap; }
+
+/* --- Vejen videre, nederst i læseren ---
+   Ligger FØR kildeknapperne, så det første en færdig læser møder er en
+   ny historie på sitet - ikke en udgang. */
+.fortsaet { margin-top: 30px; padding-top: 24px; border-top: 2px solid var(--linje); }
+.fortsaet-titel {
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px;
+}
+.naeste-kort {
+  display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 0;
+  background: var(--bg); border: 1px solid var(--linje); border-radius: 16px;
+  overflow: hidden; text-decoration: none; cursor: pointer;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.naeste-kort:hover { transform: translateY(-3px); box-shadow: var(--skygge); border-color: var(--accent); }
+.naeste-art { position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
+.naeste-art svg, .naeste-art img { position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; transition: transform .4s ease; }
+.naeste-kort:hover .naeste-art svg, .naeste-kort:hover .naeste-art img { transform: scale(1.04); }
+.naeste-tekst { padding: 18px 22px; display: flex; flex-direction: column; gap: 7px; justify-content: center; }
+.naeste-meta { font-size: 11.5px; color: var(--blaek-svag); font-weight: 500;
+  display: flex; gap: 7px; flex-wrap: wrap; }
+.naeste-tekst h3 {
+  font-family: var(--font-display); font-weight: 800; font-size: 21px;
+  line-height: 1.18; letter-spacing: -.015em;
+}
+.naeste-tekst p { font-size: 13.5px; color: var(--blaek-svag); line-height: 1.5; }
+.naeste-videre { font-size: 13px; font-weight: 700; color: var(--accent); margin-top: 2px; }
+.naeste-videre::after { content: "→"; margin-left: 5px; transition: transform .2s; display: inline-block; }
+.naeste-kort:hover .naeste-videre::after { transform: translateX(4px); }
+@media (max-width: 620px) {
+  .naeste-kort { grid-template-columns: 1fr; }
+  .naeste-tekst { padding: 14px 16px 16px; }
+  .naeste-tekst h3 { font-size: 18px; }
+}
+
+.ogsaa-titel {
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--blaek-svag); margin: 24px 0 12px;
+}
+.ogsaa-net { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.ogsaa-kort {
+  display: flex; gap: 11px; align-items: flex-start; padding: 9px;
+  border: 1px solid var(--linje); border-radius: 12px; background: var(--bg);
+  text-decoration: none; cursor: pointer; transition: border-color .15s, transform .15s;
+}
+.ogsaa-kort:hover { border-color: var(--accent); transform: translateY(-2px); }
+.ogsaa-art { width: 74px; flex: none; aspect-ratio: 16 / 10; border-radius: 8px;
+  overflow: hidden; position: relative; }
+.ogsaa-art svg, .ogsaa-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ogsaa-tekst { min-width: 0; }
+.ogsaa-tekst h4 { font-size: 13px; font-weight: 700; line-height: 1.3; }
+.ogsaa-tekst .naeste-meta { font-size: 10.5px; margin-top: 3px; }
+
 /* ---------- YouTube-båndet på forsiden ---------- */
 .menu-skel { width: 1px; height: 20px; background: var(--linje); margin: 0 4px; flex: none; }
 a.pill.yt-pill { display: inline-flex; align-items: center; gap: 6px; }
@@ -655,18 +801,32 @@ footer a { color: var(--accent); }
       <span class="brand-dato" id="datoIdag"></span>
     </a>
     <div class="filtre" id="filtre"></div>
-    <div class="sog">
-      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
-      <input id="sogefelt" type="search" placeholder="Søg i nyhederne …">
-    </div>
-    <div class="visning-skift" id="sortSkift" title="Sortering">
-      <button data-sort="vigtigst" class="aktiv">★ Vigtigst</button>
-      <button data-sort="nyeste">Nyeste</button>
-    </div>
-    <div class="visning-skift" id="visningSkift" title="Skift visning">
-      <button data-visning="magasin" class="aktiv">▦ Magasin</button>
-      <button data-visning="kompakt">☰ Overblik</button>
-      <button data-visning="benchmarks" title="Åbner Artificial Analysis i ny fane">▤ Benchmarks ↗</button>
+    <a class="top-ikon top-ikon-yt" href="youtube.html" aria-label="AI på YouTube" title="AI på YouTube">
+      <svg viewBox="0 0 24 17" aria-hidden="true"><path fill="currentColor" stroke="none" d="M23.5 2.7A3 3 0 0 0 21.4.6C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7C0 4.6 0 8.5 0 8.5s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 12.1V4.9l6.3 3.6-6.3 3.6z"/></svg>
+    </a>
+    <button class="top-ikon" id="valgKnap" aria-label="Søg, sortering og genveje" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line><circle cx="10" cy="8" r="2.6"></circle><circle cx="16" cy="16" r="2.6"></circle></svg>
+    </button>
+    <div class="top-valg" id="topValg">
+      <div class="sog" id="sog">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
+        <input id="sogefelt" type="search" placeholder="Søg i nyhederne …">
+      </div>
+      <div>
+        <span class="valg-titel">Sortér efter</span>
+        <div class="visning-skift" id="sortSkift" title="Sortering">
+          <button data-sort="vigtigst" class="aktiv">★ Vigtigst</button>
+          <button data-sort="nyeste">Nyeste</button>
+        </div>
+      </div>
+      <div>
+        <span class="valg-titel">Visning</span>
+        <div class="visning-skift" id="visningSkift" title="Skift visning">
+          <button data-visning="magasin" class="aktiv">▦ Magasin</button>
+          <button data-visning="kompakt">☰ Overblik</button>
+        </div>
+      </div>
+      <div class="valg-links" id="valgLinks"></div>
     </div>
   </div>
 </div>
@@ -697,7 +857,8 @@ footer a { color: var(--accent); }
   <div class="footer-lille">Opdateres løbende hele døgnet · © 2026 AI-nyheder ·
     <a href="youtube.html">AI på YouTube</a> ·
     <a href="uge.html">Ugens overblik</a> · <a href="laer.html">Lær AI</a> ·
-    <a href="om.html">Om os & sådan arbejder vi</a> · <a href="feed.xml">RSS</a></div>
+    <a href="om.html">Om os & sådan arbejder vi</a> ·
+    <a href="cookies.html">Cookies og lagring</a> · <a href="feed.xml">RSS</a></div>
 </footer>
 
 <script>
@@ -713,8 +874,20 @@ let aktivKategori = "Nyheder";   // "Nyheder" (med emne-flueben) eller "Forsknin
 let emneValg = null;             // Set af tilvalgte kategorier (null = alle)
 let emneMenuAaben = false;
 let sogeTekst = "";
-let visning = "magasin";     // "magasin" = store kort (standard) · "kompakt" = kategori-kolonner
-let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kronologi
+/* Brugerens egne valg gemmes i browseren, så en tilbagevendende læser ikke
+   skal sætte sin foretrukne visning hver gang. Ligger kun lokalt - se
+   cookies.html for den fulde oversigt over, hvad vi gemmer. */
+function husk(noegle, vaerdi) { try { localStorage.setItem(noegle, vaerdi); } catch (e) {} }
+function husket(noegle, gyldige, standard) {
+  try {
+    const v = localStorage.getItem(noegle);
+    if (gyldige.includes(v)) return v;
+  } catch (e) {}
+  return standard;
+}
+
+let visning = husket("visning", ["magasin", "kompakt"], "magasin");
+let sortering = husket("sortering", ["vigtigst", "nyeste"], "vigtigst");
 let synligeDage = 2;         // forsiden starter med 2 dage - resten hentes med "Vis flere"
 let synligeFlade = 24;       // samme greb i "Nyeste"-visningen, hvor der ikke er dage
 
@@ -870,6 +1043,19 @@ function brodtekst(a) {
   return esc(t.length > 140 ? t.slice(0, 140).split(" ").slice(0, -1).join(" ") + "…" : t);
 }
 
+/* Læsetid: et konkret løfte om, hvad klikket koster. Regnes ud af den tekst
+   vi faktisk viser, ved ca. 200 ord i minuttet. */
+function laesetid(a) {
+  let ord = 0;
+  const tael = t => { if (t) ord += String(t).trim().split(/\s+/).length; };
+  (a.sektioner || []).forEach(s => { tael(s.overskrift); tael(s.tekst); });
+  tael(a.brief);
+  (a.detaljer || []).forEach(tael);
+  tael(a.betydning);
+  if (!ord) tael(a.resume_da || a.resume);
+  return Math.max(1, Math.round(ord / 200));
+}
+
 /* ---------- Rendering ---------- */
 
 const KATEGORI_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
@@ -907,11 +1093,19 @@ function tegnFiltre() {
       </span>
     </span>
     ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}
-    <span class="menu-skel" title="Herefter kommer video i stedet for artikler"></span>
-    <a class="pill yt-pill" href="youtube.html">${IKON_YT} YouTube</a>
-    <span class="menu-skel"></span>
+    <span class="menu-skel pill-skjul-smal" title="Herefter kommer video i stedet for artikler"></span>
+    <a class="pill yt-pill" href="youtube.html">${IKON_YT} YouTube</a>`;
+}
+
+/* Genvejene til de øvrige sider. På desktop står de i baren; på mobil
+   flytter CSS'en dem ned i Visning-menuen, så topbaren kan holdes på
+   én række og nyhederne når op i første skærm. */
+function tegnVaerktoejer() {
+  document.getElementById("valgLinks").innerHTML = `
     <a class="pill" href="uge.html">🗞️ Ugens overblik</a>
-    <a class="pill" href="laer.html">🎓 Lær AI</a>`;
+    <a class="pill" href="laer.html">🎓 Lær AI</a>
+    <a class="pill" href="https://artificialanalysis.ai/" target="_blank" rel="noopener"
+       title="Eksternt site med AI-benchmarks">▤ Benchmarks ↗</a>`;
 }
 
 /* ---------- YouTube-båndet ----------
@@ -1019,6 +1213,57 @@ const IKON = {
   ok: `<svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>`
 };
 
+/* ---------- Vejen videre ----------
+   Slutningen af en artikel er dér, hvor læseren er mest villig til at klikke
+   igen. Derfor får den en ny historie som primært element - placeret FØR
+   kildeknapperne, så det interne kommer først i læserækkefølgen. */
+
+function fortsaetBlok(a) {
+  const liste = filtrerede();
+  const i = liste.findIndex(x => x.link === a.link);
+  const ulaest = x => x.link !== a.link && !erLaest(x);
+
+  // "Næste" følger den rækkefølge, brugeren selv kigger i. Er artiklen åbnet
+  // via delt link eller dagens overblik, tager vi den nyeste ulæste i stedet.
+  let naeste = i >= 0 ? liste.slice(i + 1).find(x => x.link !== a.link) : null;
+  if (!naeste) naeste = liste.find(ulaest) || liste.find(x => x.link !== a.link);
+  if (!naeste) return "";
+
+  // "Læs også": samme kategori først, så resten - altid ulæste forrest
+  const brugt = new Set([a.link, naeste.link]);
+  const kandidater = liste.filter(x => !brugt.has(x.link));
+  const ogsaa = [
+    ...kandidater.filter(x => x.kategori === a.kategori && !erLaest(x)),
+    ...kandidater.filter(x => x.kategori !== a.kategori && !erLaest(x)),
+    ...kandidater.filter(x => erLaest(x)),
+  ].slice(0, 3);
+
+  const meta = x => `<span>${esc(kildeNavn(x.kilde))}</span><span>· ${relativTid(x.dato)}</span>`
+                  + `<span>· ${laesetid(x)} min.</span>`;
+
+  return `<div class="fortsaet">
+    <div class="fortsaet-titel">Næste historie</div>
+    <a class="naeste-kort" href="${esc(naeste.link)}" data-naeste="${esc(naeste.link)}">
+      <div class="naeste-art">${visuel(naeste, 7001)}</div>
+      <div class="naeste-tekst">
+        <div class="naeste-meta">${meta(naeste)}</div>
+        <h3>${naeste.rubrik ? esc(naeste.rubrik) : esc(naeste.titel)}</h3>
+        <p>${esc(kortTekst(naeste.resume_da || naeste.resume || "", 150))}</p>
+        <span class="naeste-videre">Læs videre</span>
+      </div>
+    </a>
+    ${ogsaa.length ? `<div class="ogsaa-titel">Læs også</div>
+    <div class="ogsaa-net">${ogsaa.map((x, n) => `
+      <a class="ogsaa-kort" href="${esc(x.link)}" data-naeste="${esc(x.link)}">
+        <div class="ogsaa-art">${visuel(x, 7100 + n)}</div>
+        <div class="ogsaa-tekst">
+          <h4>${x.rubrik ? esc(x.rubrik) : esc(x.titel)}</h4>
+          <div class="naeste-meta">${meta(x)}</div>
+        </div>
+      </a>`).join("")}</div>` : ""}
+  </div>`;
+}
+
 function aabnLaeser(a) {
   let briefHtml;
   if (a.sektioner && a.sektioner.length) {
@@ -1086,6 +1331,7 @@ function aabnLaeser(a) {
         <div class="laeser-brief">${briefHtml}</div>
         ${sideHtml}
       </div>
+      ${fortsaetBlok(a)}
       <div class="laeser-bund">
         <span class="laeser-note" style="margin:0">Genfortalt i egne ord · ${a.andre && a.andre.length ? "Dækket af " + (a.andre.length + 1) + " medier" : "Kilde: " + esc(a.kilde)}</span>
         ${delHtml}
@@ -1117,6 +1363,17 @@ function lukLaeser() {
 laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") lukLaeser(); });
 
+// "Næste historie"/"Læs også" åbner den nye artikel i samme læser
+laeserBoks.addEventListener("click", e => {
+  const kort = e.target.closest("[data-naeste]");
+  if (!kort) return;
+  e.preventDefault();
+  const naeste = artikler.find(x => x.link === kort.dataset.naeste);
+  if (!naeste) return;
+  aabnLaeser(naeste);
+  laeserBag.scrollTop = 0;      // start øverst i den nye historie
+});
+
 // Klik på en historie åbner læseren i stedet for at sende os væk
 indhold.addEventListener("click", e => {
   const kort = e.target.closest(".kort, .raekke, .hero, .mini-hero, .mikro");
@@ -1131,7 +1388,7 @@ function kortHtml(a, id, stor = false) {
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
     <div class="kort-art">${visuel(a, id)}${artChips(a)}</div>
     <div class="kort-krop">
-      <div class="kort-meta"><span class="kort-kilde">${esc(kildeNavn(a.kilde))}</span><span class="kort-tid">· ${tidsTekst(a)}</span></div>
+      <div class="kort-meta"><span class="kort-kilde">${esc(kildeNavn(a.kilde))}</span><span class="kort-tid">· ${tidsTekst(a)}</span><span class="kort-laesetid">· ${laesetid(a)} min.</span><span class="laest-maerke">· ✓ Læst</span></div>
       <h2>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h2>
       <p>${brodtekst(a)}</p>
       ${a.betydning ? `<div class="kort-betydning">💡 ${esc(kortTekst(a.betydning, 110))}</div>` : ""}
@@ -1338,6 +1595,7 @@ document.getElementById("sortSkift").addEventListener("click", e => {
   const knap = e.target.closest("button");
   if (!knap) return;
   sortering = knap.dataset.sort;
+  husk("sortering", sortering);
   nulstilVisning();
   document.querySelectorAll("#sortSkift button").forEach(b => b.classList.toggle("aktiv", b === knap));
   tegn();
@@ -1346,15 +1604,48 @@ document.getElementById("sortSkift").addEventListener("click", e => {
 document.getElementById("visningSkift").addEventListener("click", e => {
   const knap = e.target.closest("button");
   if (!knap) return;
-  if (knap.dataset.visning === "benchmarks") {          // eksternt link, ikke en visning
-    window.open("https://artificialanalysis.ai/", "_blank", "noopener");
-    return;
-  }
   visning = knap.dataset.visning;
+  husk("visning", visning);
   document.querySelectorAll("#visningSkift button").forEach(b =>
     b.classList.toggle("aktiv", b === knap));
   tegn();
 });
+
+/* ---------- Topbarens menuer (kun synlige på mobil) ---------- */
+
+const topValg = document.getElementById("topValg");
+const valgKnap = document.getElementById("valgKnap");
+
+function lukTopMenuer() {
+  topValg.classList.remove("aaben");
+  valgKnap.classList.remove("aktiv");
+  valgKnap.setAttribute("aria-expanded", "false");
+}
+
+valgKnap.addEventListener("click", () => {
+  const aaben = !topValg.classList.contains("aaben");
+  topValg.classList.toggle("aaben", aaben);
+  valgKnap.classList.toggle("aktiv", aaben);
+  valgKnap.setAttribute("aria-expanded", String(aaben));
+  if (aaben) document.getElementById("sogefelt").focus();
+});
+
+// Klik udenfor lukker menuen igen
+document.addEventListener("click", e => {
+  if (e.target.closest("#topValg, #valgKnap")) return;
+  lukTopMenuer();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") lukTopMenuer(); });
+
+/* Sæt knapperne så de matcher det, brugeren valgte sidste gang */
+function synkValgKnapper() {
+  document.querySelectorAll("#sortSkift button").forEach(b =>
+    b.classList.toggle("aktiv", b.dataset.sort === sortering));
+  document.querySelectorAll("#visningSkift button").forEach(b =>
+    b.classList.toggle("aktiv", b.dataset.visning === visning));
+}
+synkValgKnapper();
+tegnVaerktoejer();
 
 document.getElementById("datoIdag").textContent =
   new Date().toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" });
@@ -1396,7 +1687,7 @@ function visDagensBrief() {
       const datoTekst = new Date(d.dato + "T12:00:00").toLocaleDateString("da-DK",
         { weekday: "long", day: "numeric", month: "long" });
       boks.innerHTML = `
-        <div class="brief-top"><span class="brief-kicker">Dagens overblik — på 60 sekunder</span>
+        <div class="brief-top"><span class="brief-kicker">Dagens overblik</span>
           <span class="brief-dato">${esc(datoTekst)}</span></div>
         <ol class="brief-liste">${d.punkter.map(p =>
           `<li${p.link ? ` class="brief-klik" data-link="${esc(p.link)}"` : ""}>${esc(p.tekst)}</li>`).join("")}</ol>`;

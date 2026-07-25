@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Cookies og lagring</title>
+<meta name="description" content="AI-nyheder bruger ingen cookies og sporer dig ikke. Se præcis hvad vi gemmer i din browser, hvorfor, hvor længe — og slet det med ét klik.">
+<meta name="theme-color" content="#f4f2ec">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ainyheder.com/cookies.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
+  --groen: #2e9e5b; --groen-svag: #e3f4ea; --rav: #c2711d; --rav-svag: #faf0e1;
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
+a { color: inherit; }
+.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
+.top-led:hover { color: var(--accent); }
+.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 820px; margin: 0 auto; padding: 44px 24px 80px; }
+h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(29px, 5vw, 42px); line-height: 1.09; margin-bottom: 14px; }
+h1 em { font-style: normal; color: var(--accent); }
+.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 26px; max-width: 62ch; }
+h2 { font-family: var(--font-display); font-weight: 800; font-size: 23px; margin: 40px 0 10px; letter-spacing: -.01em; }
+h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px; margin: 24px 0 6px; }
+p { font-size: 15.5px; line-height: 1.72; margin-bottom: 13px; }
+ul { margin: 0 0 14px 20px; }
+li { font-size: 15.5px; line-height: 1.7; margin-bottom: 6px; }
+strong { font-weight: 700; }
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 13.5px;
+  background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 5px; padding: 1px 6px; }
+.kort-fakta { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin-bottom: 30px; }
+.fakta { background: var(--groen-svag); border: 1px solid color-mix(in srgb, var(--groen) 22%, transparent);
+  border-radius: 14px; padding: 14px 17px; }
+.fakta b { display: block; font-family: var(--font-display); font-weight: 800; font-size: 15.5px; margin-bottom: 2px; }
+.fakta span { font-size: 13.5px; color: var(--blaek-svag); line-height: 1.5; }
+.tabel-ramme { overflow-x: auto; margin: 8px 0 22px; border: 1px solid var(--linje);
+  border-radius: 14px; background: var(--bg-kort); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+th { text-align: left; font-size: 10.5px; font-weight: 800; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--blaek-svag);
+  padding: 13px 16px; border-bottom: 2px solid var(--linje); white-space: nowrap; }
+td { padding: 12px 16px; border-bottom: 1px solid var(--linje); vertical-align: top; line-height: 1.55; }
+tr:last-child td { border-bottom: 0; }
+td code { white-space: nowrap; }
+.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 15px 19px; margin: 20px 0; font-size: 15px; }
+.boks-rav { background: var(--rav-svag); border-left-color: var(--rav); }
+.boks h3 { margin-top: 0; }
+.slet-boks { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  padding: 22px 24px; margin: 22px 0 8px; }
+.slet-knap { font: inherit; font-size: 14.5px; font-weight: 700; padding: 12px 24px; border: 0;
+  border-radius: 999px; background: var(--blaek); color: var(--bg); cursor: pointer;
+  transition: transform .15s, background .15s; }
+.slet-knap:hover { transform: translateY(-2px); background: #000; }
+.slet-knap:disabled { background: var(--groen); cursor: default; transform: none; }
+.slet-status { font-size: 13.5px; color: var(--blaek-svag); margin-top: 11px; min-height: 20px; }
+.opgoerelse { font-size: 13.5px; color: var(--blaek-svag); margin-bottom: 14px; }
+.opdateret { font-size: 13px; color: var(--blaek-svag); margin-top: 40px;
+  padding-top: 18px; border-top: 1px solid var(--linje); }
+footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="top-led" href="om.html">Om os</a>
+    <a class="top-led" href="faq.html">FAQ</a>
+    <a class="tilbage" href="./">← Nyhederne</a>
+  </div>
+</div>
+<main>
+
+<h1>Cookies og <em>lagring</em></h1>
+<p class="manchet">Vi vil hellere være konkrete end juridiske. Her står præcis, hvad
+AI-nyheder gemmer i din browser, hvorfor det er der, hvor længe det bliver liggende —
+og en knap, der sletter det hele med ét klik.</p>
+
+<div class="kort-fakta">
+  <div class="fakta"><b>Ingen cookies</b><span>Sitet sætter ikke én eneste cookie — hverken vores egne eller andres.</span></div>
+  <div class="fakta"><b>Ingen sporing</b><span>Vi følger dig ikke på tværs af sites og laver ingen profil på dig.</span></div>
+  <div class="fakta"><b>Ingen reklamer</b><span>Der er ingen annoncenetværk og ingen videresalg af data.</span></div>
+  <div class="fakta"><b>Intet forlader din browser</b><span>Det vi gemmer, bliver på din enhed. Vi kan ikke se det.</span></div>
+</div>
+
+<h2>Vi sætter ingen cookies</h2>
+<p>En cookie er en lille tekstfil, som et website beder din browser om at gemme og
+sende med tilbage ved hvert besøg. Det er den mekanik, der gør det muligt at følge
+folk rundt på nettet. <strong>AI-nyheder bruger den ikke.</strong> Der findes ingen
+cookies på sitet — heller ikke tekniske eller såkaldt nødvendige.</p>
+
+<h2>Hvad vi til gengæld gemmer i din browser</h2>
+<p>Vi bruger <em>local storage</em> — en lomme i din egen browser, som kun det website,
+der har lagt noget i den, kan læse. Til forskel fra en cookie bliver indholdet
+<strong>aldrig sendt til os eller til nogen anden</strong>. Det ligger udelukkende på
+din egen enhed, og vi har ingen mulighed for at se det. Her er alt, hvad vi lægger der:</p>
+
+<div class="tabel-ramme">
+<table>
+  <thead><tr><th>Navn</th><th>Hvad det indeholder</th><th>Hvorfor</th><th>Levetid</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>laeste</code></td>
+      <td>Adresserne på de artikler, du har åbnet, med tidspunkt</td>
+      <td>Så læste historier kan markeres med et flueben, og du kan se, hvad du mangler</td>
+      <td>Indtil du sletter. De 800 nyeste beholdes, ældre ryddes selv</td>
+    </tr>
+    <tr>
+      <td><code>visning</code></td>
+      <td>Om du foretrækker <em>Magasin</em> eller <em>Overblik</em></td>
+      <td>Så du ikke skal vælge din visning forfra ved hvert besøg</td>
+      <td>Indtil du sletter</td>
+    </tr>
+    <tr>
+      <td><code>sortering</code></td>
+      <td>Om du foretrækker <em>Vigtigst</em> eller <em>Nyeste</em></td>
+      <td>Samme grund — sitet husker, hvordan du kan lide at læse</td>
+      <td>Indtil du sletter</td>
+    </tr>
+    <tr>
+      <td><code>aikort…</code><br><code>aike…</code></td>
+      <td>Dine svar, dit fremskridt og dit bevisnummer i AI-kørekortet og
+          erhvervsoverbygningen</td>
+      <td>Så du kan holde pause midt i et modul og hente dit bevis bagefter</td>
+      <td>Indtil du sletter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Derudover registrerer din browser en <strong>service worker</strong> (filen
+<code>sw.js</code>). Den gør, at sitet kan installeres som app og vise en pæn
+besked, hvis du er offline. Den indsamler ingenting.</p>
+
+<h2>Derfor møder du ikke en cookie-boks</h2>
+<p>De danske regler om cookies gælder ikke kun cookies, men al lagring i og adgang til
+oplysninger på dit udstyr. Reglerne indeholder samtidig en undtagelse for det, der er
+nødvendigt for at levere den tjeneste, du selv har bedt om.</p>
+<p>De fire ting ovenfor er alle af den type: de husker <em>dine egne valg</em> og
+<em>din egen læsehistorik</em> for at få sitet til at fungere, som du har bedt om.
+De indeholder ikke navn, e-mail, IP-adresse eller nogen anden oplysning, der kan pege
+tilbage på dig som person. De bliver aldrig sendt nogen steder, aldrig delt, aldrig
+brugt til at profilere eller til at genkende dig på andre websites.</p>
+<p>Derfor har vi vurderet, at et samtykkevindue hverken er påkrævet eller ærligt her:
+det ville få dig til at tro, at der foregår en sporing, som ikke findes — og du kan
+ikke give et meningsfuldt samtykke til noget, der ikke er der. Til gengæld skal du
+kunne se alt og slette alt. Det kan du på denne side.</p>
+
+<h2>Tredjeparter</h2>
+<p>Fire eksterne tjenester er involveret, når du bruger sitet. Ingen af dem sætter
+cookies hos dig, men to af dem får din IP-adresse at se, simpelthen fordi din browser
+henter noget fra dem:</p>
+
+<div class="tabel-ramme">
+<table>
+  <thead><tr><th>Tjeneste</th><th>Hvad den laver</th><th>Hvad den får</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Cloudflare Web&nbsp;Analytics</strong></td>
+      <td>Tæller besøg, så vi kan se hvilke artikler der læses</td>
+      <td>Ingen cookies og ingen lagring på din enhed. Statistikken er anonym og
+          kan ikke føres tilbage til dig</td>
+    </tr>
+    <tr>
+      <td><strong>Google Fonts</strong></td>
+      <td>Leverer sidens to skrifttyper (Fraunces og Inter)</td>
+      <td>Din IP-adresse, fordi browseren henter filerne hos Google. Ingen cookies</td>
+    </tr>
+    <tr>
+      <td><strong>Buttondown</strong></td>
+      <td>Håndterer nyhedsbrevet</td>
+      <td>Kun din e-mailadresse, og kun hvis du selv skriver den og trykker tilmeld</td>
+    </tr>
+    <tr>
+      <td><strong>YouTube</strong></td>
+      <td>Viser videoen på <a href="youtube.html">YouTube-siden</a></td>
+      <td>Ingenting, indtil du selv trykker afspil. Vi bruger youtube-nocookie.com,
+          og afspilleren indlæses først ved dit klik</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="boks boks-rav">
+  <h3>Én ting vi selv er opmærksomme på</h3>
+  <p style="margin-bottom:0">Skrifttyperne hentes i dag fra Googles servere, og dermed
+  ser Google din IP-adresse, når du besøger sitet. Det kan undgås ved at lægge de to
+  skrifttyper på vores eget domæne i stedet. Det står på vores liste.</p>
+</div>
+
+<h2>Slet alt, hvad vi har gemt</h2>
+<div class="slet-boks">
+  <div class="opgoerelse" id="opgoerelse">Tæller op …</div>
+  <button class="slet-knap" id="sletKnap">Slet alt fra denne enhed</button>
+  <div class="slet-status" id="sletStatus"></div>
+</div>
+<p>Sletningen rammer kun denne browser på denne enhed. Bruger du sitet på både
+telefon og computer, skal du gøre det på begge. Du kan også altid rydde
+"webstedsdata" i din browsers egne indstillinger — sitet virker fint uden.</p>
+
+<h2>Dine rettigheder og kontakt</h2>
+<p>Fordi vi ikke gemmer oplysninger om dig på vores side, har vi som udgangspunkt
+ingen personoplysninger at give indsigt i, rette eller slette. Melder du dig til
+nyhedsbrevet, ligger din e-mailadresse hos Buttondown, indtil du melder dig fra —
+det kan du gøre med afmeldingslinket i enhver mail fra os.</p>
+<p>Spørgsmål om cookies, lagring eller persondata:
+<a href="mailto:kontakt@ainyheder.com">kontakt@ainyheder.com</a>. Du kan altid klage
+til Datatilsynet, hvis du mener, vi behandler oplysninger forkert.</p>
+
+<div class="opdateret">Senest opdateret 25. juli 2026 · <a href="om.html">Om os og sådan arbejder vi</a></div>
+</main>
+<footer>© 2026 AI-nyheder · <a href="./">Nyhederne</a> · <a href="om.html">Om os</a> ·
+  <a href="faq.html">FAQ</a> · <a href="cookies.html">Cookies og lagring</a></footer>
+
+<script>
+(function () {
+  // Alt hvad sitet kan have lagt i local storage. Vi rører intet andet.
+  var FASTE = ["laeste", "visning", "sortering", "sidsteBesoeg"];
+  var PRAEFIX = ["aikort", "aike"];
+
+  function voresNoegler() {
+    var fundne = [];
+    try {
+      for (var i = 0; i < localStorage.length; i++) {
+        var n = localStorage.key(i);
+        if (!n) continue;
+        var vores = FASTE.indexOf(n) !== -1 || PRAEFIX.some(function (p) { return n.indexOf(p) === 0; });
+        if (vores) fundne.push(n);
+      }
+    } catch (e) { return null; }        // lagring kan være slået fra i browseren
+    return fundne;
+  }
+
+  var opgoerelse = document.getElementById("opgoerelse");
+  var knap = document.getElementById("sletKnap");
+  var status = document.getElementById("sletStatus");
+
+  function opdaterOpgoerelse() {
+    var n = voresNoegler();
+    if (n === null) {
+      opgoerelse.textContent = "Din browser tillader ikke lagring — så der ligger ingenting.";
+      knap.disabled = true;
+      return;
+    }
+    var laeste = 0;
+    try { laeste = Object.keys(JSON.parse(localStorage.getItem("laeste") || "{}")).length; } catch (e) {}
+    if (!n.length) {
+      opgoerelse.textContent = "Der ligger intet fra AI-nyheder i denne browser lige nu.";
+      knap.disabled = true;
+    } else {
+      opgoerelse.textContent = "Lige nu ligger der " + n.length +
+        (n.length === 1 ? " ting" : " ting") + " fra AI-nyheder i denne browser" +
+        (laeste ? ", heriblandt " + laeste + " læste artikler" : "") + ".";
+      knap.disabled = false;
+    }
+  }
+
+  knap.addEventListener("click", function () {
+    var n = voresNoegler() || [];
+    n.forEach(function (noegle) { try { localStorage.removeItem(noegle); } catch (e) {} });
+    status.textContent = "✓ Slettet. " + n.length +
+      (n.length === 1 ? " ting" : " ting") + " er fjernet fra denne browser.";
+    opdaterOpgoerelse();
+    knap.textContent = "Alt er slettet";
+  });
+
+  opdaterOpgoerelse();
+})();
+</script>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
