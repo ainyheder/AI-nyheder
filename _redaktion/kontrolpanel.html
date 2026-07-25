@@ -95,7 +95,8 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
   <span class="tekst" id="bundtekst">Ingen ændringer endnu</span>
   <button class="k" id="nulstilAlt">Nulstil alle</button>
   <button class="k" id="kopier">Kopiér JSON</button>
-  <button class="k fyldt" id="hent">Hent hjerner.json</button>
+  <button class="k" id="hent">Hent fil</button>
+  <button class="k fyldt" id="gem">Gem i mappen</button>
 </div>
 
 <div class="bag" id="bag"><div class="modal" id="modal"></div></div>
@@ -225,11 +226,46 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
     }, null, 2);
   }
 
-  document.getElementById("hent").addEventListener("click", function () {
+  function hentFil() {
     var b = new Blob([json()], { type: "application/json" });
     var a = document.createElement("a");
     a.href = URL.createObjectURL(b); a.download = "hjerner.json";
     document.body.appendChild(a); a.click(); a.remove();
+  }
+  document.getElementById("hent").addEventListener("click", hentFil);
+
+  // Gem direkte i mappen, hvis browseren tillader det. Første gang skal du
+  // pege på _redaktion/hjerner.json; derefter husker knappen filen, så længe
+  // fanen er åben, og gemmer oveni med ét klik.
+  var filhandle = null;
+  document.getElementById("gem").addEventListener("click", async function () {
+    var k = this, tekst = json();
+    function kvitter(besked) {
+      k.textContent = besked;
+      setTimeout(function () { k.textContent = "Gem i mappen"; }, 2200);
+    }
+    if (!window.showSaveFilePicker) {
+      hentFil();
+      kvitter("Hentet i stedet ↓");
+      return;
+    }
+    try {
+      if (!filhandle) {
+        filhandle = await window.showSaveFilePicker({
+          suggestedName: "hjerner.json",
+          types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
+        });
+      }
+      var w = await filhandle.createWritable();
+      await w.write(tekst);
+      await w.close();
+      kvitter("Gemt ✓ — push nu");
+    } catch (fejl) {
+      if (fejl && fejl.name === "AbortError") return;   // du fortrød
+      filhandle = null;
+      hentFil();
+      kvitter("Kunne ikke gemme — hentet ↓");
+    }
   });
   document.getElementById("kopier").addEventListener("click", function () {
     var k = this;
