@@ -5,7 +5,7 @@ Et lille AI-nyhedsmagasin: samler automatisk AI-nyheder fra gode kilder, **omskr
 **Sådan hænger det sammen:**
 
 ```
-feeds.json  ──►  crawler.py  ──────────────►  data/articles.json  ──►  index.html
+opsaetning/  ──►  crawler.py  ──────────────►  data/articles.json  ──►  index.html
 (kilderne)      (henter nyt + omskriver          (alle artiklerne)       (magasinet +
                  til dansk med Claude API)                                genereret kunst)
 ```
@@ -128,10 +128,10 @@ python3 -m http.server
 
 | Idé | Hvor kigger du? |
 |---|---|
-| Tilføj/fjern nyhedskilder | `feeds.json` — tilføj bare en linje |
+| Tilføj/fjern nyhedskilder | `opsaetning/feeds.json` — tilføj bare en linje |
 | Ændr farver og udseende | `index.html` — CSS-variablerne øverst i `:root` |
 | Ændr hvor tit der crawles | `.github/workflows/crawl.yml` — cron-linjen |
-| Flere kategorier | Sæt `kategori` i `feeds.json`; filterknapperne dannes automatisk |
+| Flere kategorier | Sæt `kategori` i `opsaetning/feeds.json`; filterknapperne dannes automatisk |
 | Nyt filter (f.eks. pr. kilde) | `index.html` — funktionen `filtrerede()` |
 | Ældre/nyere artikler med | `crawler.py` — `MAX_DAGE_GAMMEL` og `MAX_PER_FEED` |
 
@@ -142,10 +142,10 @@ python3 -m http.server
 | Fil | Hvad den gør |
 |---|---|
 | `crawler.py` | Henter alle feeds, renser teksten, fjerner dubletter, gemmer JSON |
-| `feeds.json` | Listen over nyhedskilder — projektets "indstillinger" |
+| `opsaetning/feeds.json` | Listen over nyhedskilder — projektets "indstillinger" |
 | `data/articles.json` | Selve artiklerne (genereres automatisk — ret den aldrig i hånden) |
 | `index.html` | Hele hjemmesiden: HTML + CSS + JavaScript i én fil |
-| `youtube.json` | Listen over YouTube-kanaler vi følger — inddelt i grupper |
+| `opsaetning/youtube-kanaler.json` | Listen over YouTube-kanaler vi følger — inddelt i grupper |
 | `youtube.html` | Undersiden med AI-videoer fra YouTube |
 | `data/youtube.json` | Videoerne med danske resuméer (genereres automatisk) |
 | `.github/workflows/crawl.yml` | Automatikken: crawl hver 6. time + commit |
@@ -153,7 +153,7 @@ python3 -m http.server
 ## 📺 YouTube-delen
 
 Samme kørsel henter også de nyeste videoer fra de kanaler, der står i
-`youtube.json`. For hver video henter crawleren **underteksterne med tidskoder**
+`opsaetning/youtube-kanaler.json`. For hver video henter crawleren **underteksterne med tidskoder**
 og lader AI'en skrive et dansk resumé plus 3-6 **højdepunkter med tidsstempel** —
 så man kan klikke og springe direkte til det interessante sted i videoen.
 
@@ -163,7 +163,7 @@ bliver punktet smidt væk — der kommer aldrig et link, som fører et forkert s
 
 | Vil du … | Gør sådan |
 |---|---|
-| Følge en ny kanal | Tilføj en linje i `youtube.json`. Kanal-ID'et (`UC…`) finder du i kanalsidens kildekode under `<link rel="canonical">` |
+| Følge en ny kanal | Tilføj en linje i `opsaetning/youtube-kanaler.json`. Kanal-ID'et (`UC…`) finder du i kanalsidens kildekode under `<link rel="canonical">` |
 | Ændre hvor langt tilbage vi kigger | `YT_MAX_DAGE` i `crawler.py` |
 | Skrue op/ned for AI-forbruget | `YT_MAX_AI_PR_KOERSEL` i `crawler.py` |
 | Filtrere Shorts og korte klip væk | `YT_MIN_LAENGDE` i `crawler.py` (sekunder) |

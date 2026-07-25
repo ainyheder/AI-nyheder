@@ -2,7 +2,7 @@
 """
 AI-nyheder - crawler + AI-omskrivning
 ===================================
-1. Henter AI-nyheder fra RSS/Atom-feeds (feeds.json)
+1. Henter AI-nyheder fra RSS/Atom-feeds (opsaetning/feeds.json)
 2. Omskriver hver artikel til ULTRAKORT, letlæst dansk med DeepSeek eller Gemini
    (springes over hvis ingen API-nøgle er sat - så vises originalen)
 3. Gemmer alt i data/articles.json, som hjemmesiden læser
@@ -30,7 +30,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # ----- Indstillinger ---------------------------------------------------------
 
 ROOT = Path(__file__).parent
-FEEDS_FIL = ROOT / "feeds.json"
+OPSAETNING = ROOT / "opsaetning"      # det, DU redigerer. data/ er maskinens
+FEEDS_FIL = OPSAETNING / "feeds.json"
 OUTPUT_FIL = ROOT / "data" / "articles.json"
 MAX_PER_FEED = 25            # max artikler pr. feed
 MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
@@ -1172,8 +1173,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             if gammel.get("prio") is not None:
                 a["prio"] = gammel["prio"]
 
-    # 2) håndlavede omskrivninger fra seeds_da.json (matcher på titel-prefix)
-    seed_fil = ROOT / "seeds_da.json"
+    # 2) håndlavede omskrivninger fra opsaetning/seeds_da.json (matcher på titel-prefix)
+    seed_fil = OPSAETNING / "seeds_da.json"
     if seed_fil.exists():
         try:
             seeds = json.loads(seed_fil.read_text(encoding="utf-8"))
@@ -1186,7 +1187,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
                         a["resume_da"] = s["resume"]
                         break
         except (json.JSONDecodeError, KeyError):
-            print("  ⚠️  seeds_da.json kunne ikke læses - springer over")
+            print("  ⚠️  opsaetning/seeds_da.json kunne ikke læses - springer over")
 
     mangler = [a for a in artikler if not a.get("rubrik")]
     if not mangler:
@@ -2222,7 +2223,7 @@ def lav_ugens_quiz(artikler: list[dict]) -> None:
 #     kun ét AI-kald i hele videoens levetid)
 # ============================================================================
 
-YT_FIL = ROOT / "youtube.json"
+YT_FIL = OPSAETNING / "youtube-kanaler.json"
 YT_OUTPUT = ROOT / "data" / "youtube.json"
 YT_MAX_DAGE = 45             # så langt tilbage vi kigger. Skal være rundeligt:
                              # kanaler som Lex Fridman udgiver kun en gang om
