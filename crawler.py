@@ -1745,6 +1745,471 @@ def lav_ugens_quiz(artikler: list[dict]) -> None:
         print(f"🎯 Ugens quiz sprang over ({e})")
 
 
+# ============================================================================
+#  YOUTUBE - hvad rører sig hos de største AI-kanaler
+# ----------------------------------------------------------------------------
+#  1. Henter hver kanals RSS-feed (titel, dato, thumbnail, visninger, beskrivelse)
+#  2. Henter videoens undertekster MED tidskoder (YouTubes eget timedtext-API)
+#  3. Lader AI'en skrive et dansk resumé + højdepunkter, hvor HVERT højdepunkt
+#     har et tidsstempel, så læseren kan springe direkte til stedet i videoen
+#  4. Gemmer alt i data/youtube.json (cache pr. video-ID - hver video koster
+#     kun ét AI-kald i hele videoens levetid)
+# ============================================================================
+
+YT_FIL = ROOT / "youtube.json"
+YT_OUTPUT = ROOT / "data" / "youtube.json"
+YT_MAX_DAGE = 45             # så langt tilbage vi kigger. Skal være rundeligt:
+                             # kanaler som Lex Fridman udgiver kun en gang om
+                             # måneden, og de skal stadig være med
+YT_MAX_PR_KANAL = 6          # max videoer pr. kanal pr. kørsel
+YT_MIN_LAENGDE = 180         # spring Shorts og små klip over (sekunder)
+YT_MAX_AI_PR_KOERSEL = 14    # loft over AI-kald pr. kørsel (holder prisen nede)
+YT_MAX_TRANSKRIPT = 42000    # så mange tegn transkript sender vi til AI'en
+YT_BLOK_SEK = 40             # undertekster samles i blokke af 40 sekunder
+
+# YouTubes interne app-API. Web-klienten kræver i dag et "proof of origin"-token
+# for at udlevere undertekster, men iOS-klienten gør ikke - derfor bruger vi den.
+YT_INNERTUBE = "https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8"
+YT_UA_IOS = ("com.google.ios.youtube/20.10.4 (iPhone16,2; U; CPU iOS 18_3_2 "
+             "like Mac OS X)")
+YT_UA_ANDROID = "com.google.android.youtube/20.10.38 (Linux; U; Android 11) gzip"
+YT_KLIENTER = [
+    ("IOS", {"clientName": "IOS", "clientVersion": "20.10.4",
+             "deviceModel": "iPhone16,2", "hl": "en", "gl": "US"}, YT_UA_IOS),
+    ("ANDROID", {"clientName": "ANDROID", "clientVersion": "20.10.38",
+                 "androidSdkVersion": 30, "hl": "en", "gl": "US"}, YT_UA_ANDROID),
+]
+
+YT_NS = {"a": "http://www.w3.org/2005/Atom",
+         "yt": "http://www.youtube.com/xml/schemas/2015",
+         "media": "http://search.yahoo.com/mrss/"}
+
+# Kapitler i videoens beskrivelse ("0:00 Intro", "01:23 - Kimi K3"). Bruges som
+# ekstra hjælp til AI'en - og som reserve-højdepunkter hvis underteksterne
+# ikke kan hentes.
+YT_KAPITEL = re.compile(
+    r"^[\s>*•-]*\(?((?:\d{1,2}:)?\d{1,2}:\d{2})\)?\s*[-–—:.)|]*\s+(\S.{2,88})$", re.M)
+
+# Reklameindslag skal aldrig ende som et højdepunkt
+YT_REKLAME = re.compile(r"sponsor|ad break|\bads?\b|promo|rabat|discount|"
+                        r"use code|abonner|subscribe|giveaway|affiliate", re.I)
+
+YT_EMNER = ["Nye modeller", "Værktøjer & apps", "Kode & agenter", "Forskning",
+            "Penge & marked", "Politik & samfund", "Robotter & hardware",
+            "Billede & video", "Fremtid & visioner"]
+
+
+def _yt_hent(url: str, data: bytes | None = None, ua: str = USER_AGENT) -> bytes:
+    req = urllib.request.Request(url, data=data, headers={
+        "User-Agent": ua, "Accept-Language": "en-US,en;q=0.9",
+        **({"content-type": "application/json"} if data else {})})
+    with urllib.request.urlopen(req, timeout=40 if data else TIMEOUT_SEK) as svar:
+        return svar.read()
+
+
+def _mmss(sek: float) -> str:
+    """Sekunder -> "7:04" eller "1:07:04" (som YouTube selv skriver det)."""
+    sek = max(0, int(sek))
+    t, rest = divmod(sek, 3600)
+    m, s = divmod(rest, 60)
+    return f"{t}:{m:02d}:{s:02d}" if t else f"{m}:{s:02d}"
+
+
+def _sek_af_tid(tid: str) -> int | None:
+    """"1:07:04" / "7:04" -> sekunder. None hvis det ikke er en tidsangivelse."""
+    dele = str(tid or "").strip().split(":")
+    if not 2 <= len(dele) <= 3 or not all(d.strip().isdigit() for d in dele):
+        return None
+    tal = [int(d) for d in dele]
+    return tal[0] * 3600 + tal[1] * 60 + tal[2] if len(tal) == 3 else tal[0] * 60 + tal[1]
+
+
+def yt_crawl_kanal(kanal: dict) -> tuple[dict, list[dict], str | None]:
+    """Henter kanalens RSS-feed og returnerer de nyeste videoer."""
+    url = f"https://www.youtube.com/feeds/videos.xml?channel_id={kanal['kanal_id']}"
+    try:
+        rod = ET.fromstring(_yt_hent(url))
+    except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError) as fejl:
+        return kanal, [], f"{type(fejl).__name__}: {fejl}"
+
+    videoer = []
+    for e in rod.findall("a:entry", YT_NS)[:kanal.get("max", YT_MAX_PR_KANAL)]:
+        vid = (e.findtext("yt:videoId", namespaces=YT_NS) or "").strip()
+        titel = rens_tekst(e.findtext("a:title", default="", namespaces=YT_NS), 200)
+        if not vid or not titel:
+            continue
+        grp = e.find("media:group", YT_NS)
+        beskrivelse = (grp.findtext("media:description", default="", namespaces=YT_NS)
+                       if grp is not None else "") or ""
+        thumb = ""
+        stat = None
+        if grp is not None:
+            t = grp.find("media:thumbnail", YT_NS)
+            thumb = t.get("url", "") if t is not None else ""
+            stat = grp.find("media:community/media:statistics", YT_NS)
+        videoer.append({
+            "id": vid,
+            "titel": titel,
+            "link": f"https://www.youtube.com/watch?v={vid}",
+            "kanal": kanal["navn"],
+            "gruppe": kanal.get("gruppe", "Andet"),
+            "kanal_url": f"https://www.youtube.com/@{kanal['handle']}"
+                         if kanal.get("handle") else
+                         f"https://www.youtube.com/channel/{kanal['kanal_id']}",
+            "dato": parse_dato(e.findtext("a:published", namespaces=YT_NS)),
+            "thumb": thumb or f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+            "visninger": int(stat.get("views") or 0) if stat is not None else 0,
+            "_beskrivelse": beskrivelse,
+        })
+    return kanal, videoer, None
+
+
+def yt_undertekster(vid: str) -> tuple[list[tuple[float, str]], str, int]:
+    """Henter videoens undertekster med tidskoder.
+    Returnerer (liste af (sekund, tekst), spor-type, videolængde i sekunder)."""
+    for navn, klient, ua in YT_KLIENTER:
+        try:
+            body = json.dumps({"context": {"client": klient}, "videoId": vid,
+                               "contentCheckOk": True, "racyCheckOk": True}).encode()
+            svar = json.loads(_yt_hent(YT_INNERTUBE, data=body, ua=ua))
+        except Exception:
+            continue
+        varighed = int(svar.get("videoDetails", {}).get("lengthSeconds") or 0)
+        spor = ((svar.get("captions") or {}).get("playerCaptionsTracklistRenderer")
+                or {}).get("captionTracks") or []
+        if not spor:
+            if svar.get("playabilityStatus", {}).get("status") == "OK":
+                return [], "ingen", varighed      # videoen findes, men har ingen tekst
+            continue
+        # Manuelle engelske undertekster er bedre end maskingenererede
+        spor.sort(key=lambda s: (s.get("kind") == "asr",
+                                 not str(s.get("languageCode", "")).startswith("en")))
+        try:
+            rod = ET.fromstring(_yt_hent(spor[0]["baseUrl"] + "&fmt=srv1", ua=ua))
+        except Exception:
+            continue
+        cues = []
+        for t in rod.findall("text"):
+            tekst = html.unescape(re.sub(r"\s+", " ", t.text or "")).strip()
+            if tekst:
+                cues.append((float(t.get("start") or 0), tekst))
+        if cues:
+            art = "manuelle undertekster" if spor[0].get("kind") != "asr" \
+                  else "automatiske undertekster"
+            return cues, art, varighed or int(cues[-1][0]) + 10
+    return [], "ingen", 0
+
+
+def yt_kapitler(beskrivelse: str, varighed: int) -> list[dict]:
+    """Trækker YouTube-kapitler ud af videoens beskrivelse."""
+    kapitler = []
+    for tid, tekst in YT_KAPITEL.findall(beskrivelse or ""):
+        sek = _sek_af_tid(tid)
+        if sek is None or (varighed and sek > varighed):
+            continue
+        tekst = re.sub(r"\s+", " ", tekst).strip(" -–—:|·")
+        if not tekst or len(tekst) < 3 or YT_REKLAME.search(tekst):
+            continue
+        kapitler.append({"sek": sek, "tid": _mmss(sek), "titel": tekst[:88]})
+    # kapitler skal være i stigende rækkefølge - ellers er det tilfældige tal
+    i_orden = [k for i, k in enumerate(kapitler)
+               if i == 0 or k["sek"] > kapitler[i - 1]["sek"]]
+    return i_orden[:14] if len(i_orden) >= 3 else []
+
+
+def yt_transkript_tekst(cues: list[tuple[float, str]]) -> str:
+    """Samler underteksterne i blokke med tidsstempel foran, så AI'en kan
+    henvise til et konkret sted i videoen. Er transkriptet for langt (lange
+    podcasts kan være 40.000 ord), tyndes blokkene JÆVNT ud - så beholder vi
+    dækning over hele videoen i stedet for kun de første minutter."""
+    blokke: list[list] = []
+    for start, tekst in cues:
+        if blokke and start - blokke[-1][0] < YT_BLOK_SEK:
+            blokke[-1][1].append(tekst)
+        else:
+            blokke.append([start, [tekst]])
+    samlet = [(b[0], " ".join(b[1])) for b in blokke]
+    while True:
+        tekst = "\n".join(f"[{_mmss(s)}] {t}" for s, t in samlet)
+        if len(tekst) <= YT_MAX_TRANSKRIPT or len(samlet) <= 30:
+            return tekst[:YT_MAX_TRANSKRIPT]
+        samlet = samlet[::2]
+
+
+SYSTEM_YT = f"""Du er redaktør på et dansk AI-nyhedssite for almindelige
+mennesker uden teknisk baggrund. Du får en YouTube-videos transkript med
+tidsstempler i formen [MM:SS] foran hvert afsnit. Du skriver en dansk
+opsummering, så læseren på 30 sekunder ved, om videoen er værd at se - og
+præcis hvor i videoen det interessante ligger.
+
+REGLER FOR SPROGET
+- Skriv ultrakort, letlæst hverdagsdansk. Ingen jargon, ingen buzzwords.
+- Skriv ALTID "AI" - aldrig "kunstig intelligens".
+- Modelnavne (Gemini, GPT, Claude, Llama osv.) skrives præcis som i videoen.
+- Genfortæl i DINE EGNE ord. Oversæt aldrig sætninger direkte fra transkriptet.
+- Fremhæv de 1-2 vigtigste tal eller navne pr. afsnit med **dobbelt-stjerner**.
+
+REGLER FOR HØJDEPUNKTER (det vigtigste)
+- Tidsstemplet SKAL komme fra transkriptet - find det [MM:SS], hvor emnet
+  faktisk starter. Gæt ALDRIG et tidspunkt, og opfind ALDRIG et emne.
+- Vælg de steder, en travl dansker ville spole hen til: nye modeller,
+  konkrete demoer, tal og benchmarks, skarpe holdninger, overraskelser.
+- Spring reklamer, sponsorater, intro-jingler og "husk at abonnere" over.
+- Skriv hvad der SKER på stedet - ikke "her taler han om X".
+
+Svar KUN med ét JSON-objekt:
+{{
+ "rubrik":   dansk overskrift til videoen, max 9 ord, ingen clickbait.
+             Sig hvad videoen HANDLER om, ikke hvad kanalen heder,
+ "resume":   2-3 sætninger (max 45 ord): hvad handler videoen om, og hvorfor
+             er den værd at bruge tid på,
+ "hoejdepunkter": 3-6 punkter, i tidsrækkefølge:
+             [{{"tid": "12:34", "titel": "kort dansk overskrift, max 6 ord",
+               "tekst": "1-2 sætninger om hvad der sker her, max 30 ord"}}],
+ "pointer":  3-4 ultrakorte hovedpointer fra videoen (hver max 12 ord),
+ "betydning": 1-2 sætninger (max 35 ord) skrevet direkte til "du": hvad kan
+             DU bruge det til, eller hvorfor bør du holde øje. Start aldrig
+             med "Det betyder" - lige på pointen,
+ "emner":    1-3 emner fra PRÆCIS denne liste: {", ".join(YT_EMNER)},
+ "prio":     1-10. Hvor vigtig er videoen for en dansker, der vil følge med i
+             AI? 9-10 = stor nyhed alle bør kende. 5 = fin, men smal.
+             1-3 = reklametung, gentagelse eller uden reelt nyt indhold,
+ "om_ai":    true/false. Handler videoen i det hele taget om AI eller teknologi?
+             Flere af kanalerne laver også videoer om helt andre emner
+             (historie, sundhed, politik) - dem har siden ikke brug for.
+             Sæt false, hvis AI kun nævnes i forbifarten
+}}"""
+
+
+# Nødplan: kan underteksterne ikke hentes (YouTube afviser af og til kald fra
+# servere), skriver vi resuméet ud fra beskrivelsen og kapitlerne i stedet.
+SYSTEM_YT_UDEN_TRANSKRIPT = """
+
+VIGTIG UNDTAGELSE FOR DENNE VIDEO: Underteksterne kunne IKKE hentes. Du får i
+stedet kanalens egen beskrivelse og kapitelliste.
+- Skriv KUN det, materialet dækker. Opdigt ALDRIG detaljer, tal eller udtalelser.
+- Hold resuméet kortere og mere forsigtigt - beskriv hvad videoen handler om,
+  ikke hvad der konkret bliver sagt.
+- "hoejdepunkter" SKAL bruge kapitlernes tidsstempler præcis som de står.
+  Er der ingen kapitler, skal listen være TOM.
+- "pointer" må være en tom liste, hvis beskrivelsen ikke rummer nok."""
+
+
+def yt_kald_ai(v: dict, transkript: str, kapitler: list[dict],
+               beskrivelse: str = "") -> dict | None:
+    """Får AI'en til at skrive dansk resumé + højdepunkter for én video."""
+    try:
+        bruger = (f"KANAL: {v['kanal']}\nVIDEOENS TITEL: {v['titel']}\n"
+                  f"LÆNGDE: {_mmss(v.get('varighed') or 0)}\n")
+        if kapitler:
+            bruger += ("\nKANALENS EGNE KAPITLER"
+                       + (":\n" if not transkript else
+                          " (vejledende - brug dem kun hvis transkriptet bekræfter dem):\n")
+                       + "\n".join(f"[{k['tid']}] {k['titel']}" for k in kapitler))
+        if transkript:
+            bruger += f"\n\nTRANSKRIPT MED TIDSSTEMPLER:\n{transkript}"
+        else:
+            bruger += f"\n\nKANALENS BESKRIVELSE AF VIDEOEN:\n{beskrivelse[:4000]}"
+        r = parse_json_svar(kald_ai(
+            SYSTEM_YT + ("" if transkript else SYSTEM_YT_UDEN_TRANSKRIPT),
+            bruger, 1800))
+        # Uden transkript er højdepunkter valgfrie - resuméet er stadig værdifuldt
+        return r if r.get("rubrik") and (r.get("hoejdepunkter") or not transkript) else None
+    except Exception as fejl:
+        print(f"  ⚠️  YouTube-resumé fejlede ({v['kanal']}): {type(fejl).__name__}: {fejl}")
+    return None
+
+
+def _yt_anvend(v: dict, r: dict, cues: list[tuple[float, str]],
+               kapitler: list[dict] | None = None) -> None:
+    """Lægger AI-svaret ind på videoen - og VERIFICERER hvert tidsstempel mod
+    de rigtige undertekster, så et link aldrig peger et sted, der ikke findes.
+    Findes der ingen undertekster, holdes tidsstemplerne op mod kapitlerne."""
+    v["rubrik"] = str(r["rubrik"]).strip()
+    v["resume_da"] = str(r.get("resume", "")).strip()
+    v["betydning"] = str(r.get("betydning", "")).strip()
+    v["pointer"] = [t for t in (_som_tekst(p) for p in r.get("pointer", [])) if t][:4]
+    v["emner"] = [e for e in (str(x).strip() for x in r.get("emner", []))
+                  if e in YT_EMNER][:3]
+    try:
+        v["prio"] = max(1, min(10, int(float(r.get("prio") or 5))))
+    except (TypeError, ValueError):
+        v["prio"] = 5
+
+    # Hvad holder vi tidsstemplerne op mod? Underteksterne er bedst; ellers
+    # kapitlerne. Har vi hverken det ene eller det andet, kan vi ikke
+    # kontrollere et enkelt tidsstempel - og så udgiver vi ingen.
+    if cues:
+        starter, slip_paa = sorted(c[0] for c in cues), 90
+    elif kapitler:
+        starter, slip_paa = sorted(float(k["sek"]) for k in kapitler), 5
+    else:
+        v["hoejdepunkter"] = []
+        return
+
+    varighed = v.get("varighed") or 0
+    punkter = []
+    for h in r.get("hoejdepunkter", []) or []:
+        if not isinstance(h, dict):
+            continue
+        sek = _sek_af_tid(h.get("tid"))
+        if sek is None and str(h.get("sek") or "").strip().isdigit():
+            sek = int(h["sek"])
+        titel = re.sub(r"\s+", " ", str(h.get("titel", "")).strip())
+        tekst = re.sub(r"\s+", " ", str(h.get("tekst", "")).strip())
+        if sek is None or not titel or (varighed and sek > varighed + 5):
+            continue
+        # Sæt tidsstemplet på det nærmeste sted, hvor der faktisk bliver sagt
+        # noget. Ligger AI'ens gæt for langt fra alt, vi kan bekræfte,
+        # er det opdigtet - så ryger punktet ud.
+        naermest = min(starter, key=lambda s: abs(s - sek))
+        if abs(naermest - sek) > slip_paa:
+            continue
+        sek = int(naermest)
+        punkter.append({"sek": max(0, sek), "tid": _mmss(sek),
+                        "titel": titel[:70], "tekst": tekst[:220]})
+    punkter.sort(key=lambda p: p["sek"])
+    v["hoejdepunkter"] = punkter[:6]
+
+
+def lav_youtube() -> None:
+    """Crawler AI-kanalerne på YouTube og skriver data/youtube.json."""
+    if not YT_FIL.exists():
+        return
+    try:
+        opsaet = json.loads(YT_FIL.read_text(encoding="utf-8"))
+        kanaler = opsaet["kanaler"]
+    except (json.JSONDecodeError, KeyError) as fejl:
+        print(f"📺 youtube.json kunne ikke læses ({fejl}) - springer YouTube over")
+        return
+
+    print(f"\n📺 Crawler {len(kanaler)} YouTube-kanaler …")
+    nu = datetime.now(timezone.utc)
+
+    # Cache: en video, der én gang er opsummeret, opsummeres aldrig igen.
+    # "afvist" husker de videoer, vi har set på og sagt nej til (Shorts og
+    # videoer uden med AI at gøre) - så vi aldrig betaler for dem to gange.
+    cache: dict = {}
+    afvist: list = []
+    if YT_OUTPUT.exists():
+        try:
+            gemt = json.loads(YT_OUTPUT.read_text(encoding="utf-8"))
+            for g in gemt.get("videoer", []):
+                if g.get("rubrik") or g.get("hoejdepunkter"):
+                    cache[g["id"]] = g
+            afvist = [str(i) for i in gemt.get("afvist", [])][:400]
+        except (json.JSONDecodeError, KeyError):
+            pass
+    afvist_set = set(afvist)     # slå hurtigt op
+    nye_afvist: list = []        # afvist i DENNE kørsel (kommer forrest i filen)
+
+    alle: list[dict] = []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        jobs = [pool.submit(yt_crawl_kanal, k) for k in kanaler]
+        for job in as_completed(jobs):
+            kanal, videoer, fejl = job.result()
+            print(f"  {'⚠️ ' if fejl else '✅'} {kanal['navn']}: "
+                  f"{fejl if fejl else str(len(videoer)) + ' videoer'}")
+            alle.extend(videoer)
+
+    # For gamle væk + nyeste først
+    friske = [v for v in alle
+              if v["dato"] is None or (nu - v["dato"]).days <= YT_MAX_DAGE]
+    friske.sort(key=lambda v: v["dato"] or datetime.min.replace(tzinfo=timezone.utc),
+                reverse=True)
+
+    nye = [v for v in friske if v["id"] not in cache and v["id"] not in afvist_set]
+    if GENKOER_ALT:
+        nye = friske
+        afvist, afvist_set, nye_afvist = [], set(), []
+    print(f"📺 {len(friske)} videoer inden for {YT_MAX_DAGE} dage "
+          f"({len(nye)} skal behandles, resten ligger i cache)")
+
+    brugt = 0
+    for v in nye:
+        if brugt >= YT_MAX_AI_PR_KOERSEL:
+            print(f"📺 Nåede loftet på {YT_MAX_AI_PR_KOERSEL} videoer - "
+                  "resten tages næste kørsel")
+            break
+        cues, sportype, varighed = yt_undertekster(v["id"])
+        v["varighed"] = varighed
+        if varighed and varighed < YT_MIN_LAENGDE:
+            afvist_set.add(v["id"]); nye_afvist.append(v["id"])   # Shorts/små klip
+            continue
+        kapitler = yt_kapitler(v.get("_beskrivelse", ""), varighed)
+        if kapitler:
+            v["hoejdepunkter"] = kapitler        # reserve indtil AI'en har været her
+            v["hp_kilde"] = "kapitler"
+        if cues:
+            v["kilde_type"] = sportype
+        if not API_KEY:
+            continue                             # ingen nøgle: kun kapitler og titel
+        beskrivelse = v.get("_beskrivelse", "")
+        if not cues and len(beskrivelse) < 200 and not kapitler:
+            print(f"   ⚠️  {v['kanal']}: hverken undertekster, kapitler eller "
+                  f"beskrivelse ({v['titel'][:36]}) - springer resumé over")
+            continue
+        if not cues:
+            print(f"   ℹ️  {v['kanal']}: ingen undertekster - skriver resumé ud "
+                  "fra beskrivelsen i stedet")
+        r = yt_kald_ai(v, yt_transkript_tekst(cues) if cues else "",
+                       kapitler, beskrivelse)
+        brugt += 1
+        if r and r.get("om_ai") is False:
+            afvist_set.add(v["id"]); nye_afvist.append(v["id"])   # ikke om AI
+            print(f"   ⤫ {v['kanal']}: handler ikke om AI - {v['titel'][:44]}")
+            continue
+        if r:
+            _yt_anvend(v, r, cues, kapitler)
+            v["hp_kilde"] = "undertekster" if cues else "kapitler"
+            if not v.get("hoejdepunkter") and kapitler:
+                # AI'ens punkter faldt for tidstjekket - brug kanalens kapitler
+                v["hoejdepunkter"], v["hp_kilde"] = kapitler, "kapitler"
+        print(f"   … {brugt}/{min(len(nye), YT_MAX_AI_PR_KOERSEL)} "
+              f"{v['kanal']}: {v.get('rubrik') or v['titel'][:48]}")
+
+    # Byg den endelige liste: cache-værdier bevares, nye lægges oveni
+    resultat = []
+    for v in friske:
+        if v["id"] in afvist_set:
+            continue
+        gammel = cache.get(v["id"], {})
+        if gammel.get("varighed", 0) and gammel["varighed"] < YT_MIN_LAENGDE:
+            continue
+        ny = {**gammel, **{k: x for k, x in v.items()
+                           if not k.startswith("_") and x not in (None, "", 0, [])}}
+        ny["dato"] = v["dato"].isoformat() if v["dato"] else gammel.get("dato")
+        ny["foerst_set"] = gammel.get("foerst_set") or nu.isoformat()
+        ny["visninger"] = v.get("visninger") or gammel.get("visninger", 0)
+        ny.pop("_beskrivelse", None)
+        ny.pop("_spring", None)
+        resultat.append(ny)
+
+    # Nyeste først (efter hvornår VI så videoen, som på forsiden)
+    resultat.sort(key=lambda v: (v.get("foerst_set") or "", v.get("dato") or ""),
+                  reverse=True)
+
+    YT_OUTPUT.parent.mkdir(exist_ok=True)
+    YT_OUTPUT.write_text(json.dumps({
+        "opdateret": nu.isoformat(),
+        "antal": len(resultat),
+        "grupper": opsaet.get("grupper", []),
+        "emner": YT_EMNER,
+        "kanaler": [{"navn": k["navn"], "gruppe": k.get("gruppe", "Andet"),
+                     "url": f"https://www.youtube.com/@{k['handle']}"
+                            if k.get("handle") else
+                            f"https://www.youtube.com/channel/{k['kanal_id']}"}
+                    for k in kanaler],
+        "videoer": resultat,
+        # Huskeliste over videoer vi har sagt nej til - så de aldrig koster igen
+        "afvist": (nye_afvist
+                   + [i for i in afvist if i not in set(nye_afvist)])[:400],
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    paa_dansk = sum(1 for v in resultat if v.get("rubrik"))
+    print(f"💾 Gemte {len(resultat)} YouTube-videoer ({paa_dansk} med dansk resumé) "
+          f"i {YT_OUTPUT.relative_to(ROOT)}")
+
+
 # ----- Hovedprogram ----------------------------------------------------------
 
 def main() -> None:
@@ -1878,6 +2343,10 @@ def main() -> None:
     lav_dagens_prompt()
     lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke)
+    try:
+        lav_youtube()          # må aldrig vælte nyhedscrawlet
+    except Exception as fejl:
+        print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
 
 
 if __name__ == "__main__":

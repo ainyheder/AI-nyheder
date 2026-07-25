@@ -1,0 +1,21 @@
+{
+  "kommentar": "YouTube-kanaler crawleren følger. 'kanal_id' er YouTubes eget ID (UC...) - find det ved at åbne kanalen og se 'canonical'-linket i sidens kilde. 'handle' bruges kun til links. 'gruppe' styrer inddelingen på youtube.html. 'max' begrænser antal videoer pr. kørsel fra kanalen (ellers 6).",
+  "grupper": [
+    { "navn": "Nyheder & trends",           "beskrivelse": "Ugens vigtigste AI-nyheder, samlet og forklaret" },
+    { "navn": "Forskning & visualisering",  "beskrivelse": "Nye forskningsresultater gjort til noget man kan se" },
+    { "navn": "Fremtid & interview",        "beskrivelse": "Lange samtaler om hvor teknologien fører os hen" },
+    { "navn": "Praktisk & kode",            "beskrivelse": "Sådan bruger du værktøjerne selv - i praksis" }
+  ],
+  "kanaler": [
+    { "navn": "Matt Wolfe",         "kanal_id": "UChpleBmo18P08aKCIgti38g", "handle": "mreflow",         "gruppe": "Nyheder & trends" },
+    { "navn": "TheAIGRID",          "kanal_id": "UCbY9xX3_jW5c2fjlZVBI4cg", "handle": "TheAiGrid",       "gruppe": "Nyheder & trends" },
+    { "navn": "Wes Roth",           "kanal_id": "UCqcbQf6yw5KzRoDDcZ_wBSw", "handle": "WesRoth",         "gruppe": "Nyheder & trends" },
+    { "navn": "Two Minute Papers",  "kanal_id": "UCbfYPyITQ-7l4upoX8nvctg", "handle": "TwoMinutePapers", "gruppe": "Forskning & visualisering" },
+    { "navn": "Yannic Kilcher",     "kanal_id": "UCZHmQk67mSJgfCCTn7xBfew", "handle": "YannicKilcher",   "gruppe": "Forskning & visualisering" },
+    { "navn": "Peter H. Diamandis", "kanal_id": "UCvxm0qTrGN_1LMYgUaftWyQ", "handle": "PeterDiamandis",  "gruppe": "Fremtid & interview" },
+    { "navn": "Lex Fridman",        "kanal_id": "UCSHZKyawb77ixDdsGog4iWA", "handle": "lexfridman",      "gruppe": "Fremtid & interview", "max": 3 },
+    { "navn": "AI Jason",           "kanal_id": "UCrXSVX9a1mj8l0CMLwKgMVw", "handle": "AIJasonZ",        "gruppe": "Praktisk & kode" },
+    { "navn": "bycloud",            "kanal_id": "UCgfe2ooZD3VJPB6aJAnuQng", "handle": "bycloudAI",       "gruppe": "Praktisk & kode" },
+    { "navn": "Siraj Raval",        "kanal_id": "UCWN3xxRkmTPmbKwht9FuE5A", "handle": "SirajRaval",      "gruppe": "Praktisk & kode" }
+  ]
+}

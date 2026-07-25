@@ -37,6 +37,7 @@
   --linje: #e2ddd2;
   --accent: #5b4bf0;
   --accent-svag: #ecebfd;
+  --yt-roed: #cc2b2b;       /* bruges kun til YouTube-indhold */
   --radius: 18px;
   --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -527,6 +528,55 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .bench-kredit a { color: var(--accent); }
 
+/* ---------- YouTube-båndet på forsiden ---------- */
+.menu-skel { width: 1px; height: 20px; background: var(--linje); margin: 0 4px; flex: none; }
+a.pill.yt-pill { display: inline-flex; align-items: center; gap: 6px; }
+a.pill.yt-pill svg { width: 15px; height: 11px; fill: var(--yt-roed); }
+a.pill.yt-pill:hover { border-color: var(--yt-roed); color: var(--yt-roed); }
+a.pill.yt-pill:hover svg { fill: var(--yt-roed); }
+
+.yt-baand {
+  background: color-mix(in srgb, var(--blaek) 4%, var(--bg));
+  border: 1px solid var(--linje); border-radius: calc(var(--radius) + 4px);
+  padding: 22px 26px 26px; margin: 4px 0 34px;
+}
+.yt-baand-top { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; flex-wrap: wrap; }
+.yt-kicker {
+  font-family: var(--font-display); font-weight: 900; font-size: 21px; letter-spacing: -.02em;
+  display: inline-flex; align-items: center; gap: 9px;
+}
+.yt-kicker svg { width: 24px; height: 17px; fill: var(--yt-roed); }
+.yt-under { font-size: 13px; color: var(--blaek-svag); }
+.yt-alle {
+  margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  color: var(--yt-roed); white-space: nowrap;
+}
+.yt-alle:hover { text-decoration: underline; }
+.yt-raekke { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.yt-kort {
+  background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px;
+  overflow: hidden; text-decoration: none; display: flex; flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.yt-kort:hover { transform: translateY(-3px); box-shadow: var(--skygge); }
+.yt-art { position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; }
+.yt-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.yt-kort:hover .yt-art img { transform: scale(1.05); }
+.yt-spil { position: absolute; inset: 0; display: grid; place-items: center;
+  background: linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.28)); }
+.yt-spil span { width: 44px; height: 31px; border-radius: 8px; background: rgba(204,43,43,.94);
+  display: grid; place-items: center; box-shadow: 0 3px 12px rgba(0,0,0,.3); transition: transform .2s; }
+.yt-kort:hover .yt-spil span { transform: scale(1.12); }
+.yt-spil svg { width: 15px; height: 15px; fill: #fff; margin-left: 2px; }
+.yt-laengde { position: absolute; right: 7px; bottom: 7px; z-index: 2;
+  background: rgba(0,0,0,.82); color: #fff; font-size: 10.5px; font-weight: 700;
+  padding: 2px 6px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+.yt-krop { padding: 11px 13px 13px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+.yt-kanal { font-size: 10.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--yt-roed); }
+.yt-kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 15px; line-height: 1.25; letter-spacing: -.01em; }
+.yt-hp { font-size: 11.5px; color: var(--blaek-svag); margin-top: auto; padding-top: 7px; }
+.yt-hp b { color: var(--accent); font-weight: 700; }
+
 .tom { text-align: center; padding: 70px 20px; color: var(--blaek-svag); font-size: 15px; }
 .note {
   background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
@@ -613,6 +663,7 @@ footer a { color: var(--accent); }
     så du har en fair chance for at følge med i den teknologi, der forandrer vores hverdag.
   </div>
   <div class="footer-lille">Opdateres løbende hele døgnet · © 2026 AI-nyheder ·
+    <a href="youtube.html">AI på YouTube</a> ·
     <a href="uge.html">Ugens overblik</a> · <a href="laer.html">Lær AI</a> ·
     <a href="om.html">Om os & sådan arbejder vi</a> · <a href="feed.xml">RSS</a></div>
 </footer>
@@ -625,6 +676,7 @@ footer a { color: var(--accent); }
    ================================================================ */
 
 let artikler = [];
+let ytVideoer = [];              // de vigtigste YouTube-videoer (bånd på forsiden)
 let aktivKategori = "Nyheder";   // "Nyheder" (med emne-flueben) eller "Forskning"
 let emneValg = null;             // Set af tilvalgte kategorier (null = alle)
 let emneMenuAaben = false;
@@ -800,8 +852,58 @@ function tegnFiltre() {
       </span>
     </span>
     ${fundne.includes("Forskning") ? `<button class="pill ${aktivKategori === "Forskning" ? "aktiv" : ""}" data-kategori="Forskning">Forskning</button>` : ""}
+    <span class="menu-skel" title="Herefter kommer video i stedet for artikler"></span>
+    <a class="pill yt-pill" href="youtube.html">${IKON_YT} YouTube</a>
+    <span class="menu-skel"></span>
     <a class="pill" href="uge.html">🗞️ Ugens overblik</a>
     <a class="pill" href="laer.html">🎓 Lær AI</a>`;
+}
+
+/* ---------- YouTube-båndet ----------
+   Forsiden viser de vigtigste videoer som teaser. Klik fører til youtube.html,
+   hvor hele opsummeringen med tidsstempler ligger - så vi ikke skal
+   vedligeholde to læsevisninger. */
+
+const IKON_YT = `<svg viewBox="0 0 24 17" aria-hidden="true"><path d="M23.5 2.7A3 3 0 0 0 21.4.6C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7C0 4.6 0 8.5 0 8.5s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 12.1V4.9l6.3 3.6-6.3 3.6z"/></svg>`;
+const IKON_SPIL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
+
+function ytLaengde(sek) {
+  sek = Math.max(0, Math.round(sek || 0));
+  const t = Math.floor(sek / 3600), m = Math.floor((sek % 3600) / 60), s = sek % 60;
+  return t ? `${t}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`
+           : `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function ytBaandHtml() {
+  if (!ytVideoer.length) return "";
+  // De vigtigste: højeste prioritet, helst med højdepunkter, ellers nyeste
+  const top = [...ytVideoer].sort((a, b) =>
+    (b.prio ?? 5) - (a.prio ?? 5) ||
+    ((b.hoejdepunkter || []).length ? 1 : 0) - ((a.hoejdepunkter || []).length ? 1 : 0) ||
+    new Date(b.foerst_set || b.dato || 0) - new Date(a.foerst_set || a.dato || 0)
+  ).slice(0, 4);
+  return `<section class="yt-baand">
+    <div class="yt-baand-top">
+      <span class="yt-kicker">${IKON_YT} Det rører sig på YouTube</span>
+      <span class="yt-under">Opsummeret på dansk — med tidsstempler til højdepunkterne</span>
+      <a class="yt-alle" href="youtube.html">Se alle ${ytVideoer.length} videoer →</a>
+    </div>
+    <div class="yt-raekke">${top.map(v => {
+      const hp = (v.hoejdepunkter || []).length;
+      return `<a class="yt-kort" href="youtube.html#v=${encodeURIComponent(v.id)}">
+        <div class="yt-art">
+          <img src="${esc(v.thumb)}" alt="" loading="lazy">
+          <span class="yt-spil"><span>${IKON_SPIL}</span></span>
+          ${v.varighed ? `<span class="yt-laengde">${ytLaengde(v.varighed)}</span>` : ""}
+        </div>
+        <div class="yt-krop">
+          <div class="yt-kanal">${esc(v.kanal)}</div>
+          <h3>${esc(v.rubrik || v.titel)}</h3>
+          <div class="yt-hp">${hp ? `<b>${hp} højdepunkt${hp === 1 ? "" : "er"}</b> · ` : ""}${relativTid(v.dato)}</div>
+        </div>
+      </a>`;
+    }).join("")}</div>
+  </section>`;
 }
 
 function dagNoegle(iso) {
@@ -1053,7 +1155,7 @@ function tegn() {
       <section class="kat-kolonne">
         <div class="kat-titel">${esc(k)} <span class="kat-antal">${grupper.get(k).length}</span></div>
         ${grupper.get(k).map(a => mikroHtml(a, id++)).join("")}
-      </section>`).join("") + `</div>`;
+      </section>`).join("") + `</div>` + `<div style="margin-top:34px">${ytBaandHtml()}</div>`;
     markerLaesteIDom();
     return;
   }
@@ -1082,15 +1184,19 @@ function tegn() {
     let id = 0;
     // Avisforside-hierarki: dagens 4 vigtigste som store kort med billede,
     // resten som kompakte linjer - så vigtigheden kan SES i layoutet.
-    magKrop = dage.map(d => {
+    // YouTube-båndet lægges ind EFTER dagens første blok: dagens nyheder
+    // kommer først, men videoerne skal stadig kunne ses uden at rulle langt.
+    magKrop = dage.map((d, nr) => {
       const store = d.artikler.slice(0, 4);
       const smaa = d.artikler.slice(4);
       return `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
        <div class="grid" style="margin-bottom:${smaa.length ? 12 : 30}px">${store.map(a => kortHtml(a, id++, !!(a.andre && a.andre.length))).join("")}</div>` +
-       (smaa.length ? `<div class="mikro-net">${smaa.map(a => mikroHtml(a, id++)).join("")}</div>` : "");
+       (smaa.length ? `<div class="mikro-net">${smaa.map(a => mikroHtml(a, id++)).join("")}</div>` : "") +
+       (nr === 0 ? ytBaandHtml() : "");
     }).join("");
   } else {
-    magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`;
+    magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`
+            + ytBaandHtml();
   }
   indhold.innerHTML = note + hero + magKrop;
   markerLaesteIDom();
@@ -1226,6 +1332,19 @@ function visDagensBrief() {
     .catch(() => {});
 }
 
+function hentYouTube() {
+  // Fejler stille: kan videoerne ikke hentes, ser forsiden ud som før
+  if (!window.fetch) return;
+  fetch("data/youtube.json")
+    .then(r => r.ok ? r.json() : null)
+    .then(d => {
+      if (!d || !Array.isArray(d.videoer) || !d.videoer.length) return;
+      ytVideoer = d.videoer;
+      tegn();                      // tegn forsiden igen, nu med båndet
+    })
+    .catch(() => {});
+}
+
 /* ---------- Start ---------- */
 
 fetch("data/articles.json")
@@ -1239,7 +1358,7 @@ fetch("data/articles.json")
       if ((a.kilde || "").toLowerCase().includes("arxiv")) a.kategori = "Forskning";
     });
     tegnFiltre(); tegn();
-    visDagensBrief();
+    visDagensBrief(); hentYouTube();
     // Delt link? Åbn artiklen direkte.
     const m = location.hash.match(/^#a=(.+)/);
     if (m) {
