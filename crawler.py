@@ -43,14 +43,15 @@ CLAUDE_MODEL = "claude-haiku-4-5"          # $1/$5 pr. mio. tokens
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst (lanceret 21/7-2026)
 GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
 
-# Er begge nøgler sat, vinder AI_UDBYDER ("claude" eller "gemini"), ellers Claude
+# Er begge nøgler sat, vinder AI_UDBYDER ("claude" eller "gemini") - ellers
+# vælges Gemini, fordi Flash Lite er ca. 3x billigere end Claude Haiku.
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
-    or ("claude" if CLAUDE_KEY else "gemini" if GEMINI_KEY else "")
+    or ("gemini" if GEMINI_KEY else "claude" if CLAUDE_KEY else "")
 API_KEY = CLAUDE_KEY if UDBYDER == "claude" else GEMINI_KEY
 
 BATCH_STR = 10                   # artikler pr. API-kald (korte resuméer)
 MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
-GEMINI_PAUSE_SEK = 4             # pause mellem Gemini-kald (gratis-niveauets fartgrænse)
+GEMINI_PAUSE_SEK = 2             # pause mellem Gemini-kald (værn mod fartgrænsen)
 
 # --- Dybe briefs (hele artiklen hentes og genfortælles) ---
 DYBDE_ANTAL = 250                # ALLE artikler får komplet brief (loft som sikkerhed)
@@ -243,13 +244,32 @@ def hent_artikeltekst(a: dict) -> tuple[dict, str, list[dict]]:
 # ----- AI-omskrivning til letlæst dansk --------------------------------------
 
 SYSTEM_PROMPT = """Du omskriver tech-nyheder til danskere HELT uden teknisk baggrund.
+
+VIGTIGSTE REGEL - NÆVN ALTID NAVNENE:
+Rubrikken SKAL nævne, hvem historien handler om: virksomheden, produktet eller
+modellen ved rigtigt navn (Google, OpenAI, Oracle, Midjourney, ChatGPT, Gemini,
+Claude, EU, Folketinget ...). Navne er ikke jargon - de er dét, læseren
+genkender, googler og husker.
+FORBUDT i rubrikker: "en kæmpe gigant", "et stort firma", "et selskab",
+"en kendt tjeneste", "et nyt værktøj" - når kilden nævner navnet.
+  DÅRLIGT: "Kæmpe gigant fyrer 21.000 medarbejdere"
+  GODT:    "Oracle fyrer 21.000 medarbejdere efter AI-satsning"
+  DÅRLIGT: "Ny digital hjerne er billigere og bedre"
+  GODT:    "Anthropics nye Opus 5 er billigere og bedre"
+Står navnet ikke i materialet, opfinder du det ALDRIG - så beskriver du i stedet
+konkret hvem (fx "Kinesisk techgigant ..." eller "EU-Kommissionen ...").
+
 For hver artikel laver du:
-- "rubrik": fængende dansk overskrift, MAX 8 ord, ingen jargon
+- "rubrik": fængende dansk overskrift på MAX 9 ord, med navn (se ovenfor).
+  Ingen jargon udover selve navnene. Ingen punktum til sidst.
 - "resume": 1-2 KORTE sætninger på hverdagsdansk. Forklar hvad der er sket,
   og hvorfor det er interessant for almindelige mennesker. Max 30 ord i alt.
+  Nævn også her hvem det handler om.
   Forbudt: engelske låneord der har et dansk ord, forkortelser uden forklaring,
   og buzzwords. Skriv som til en klog nabo.
 - Skriv ALTID "AI" - aldrig "kunstig intelligens" (det er for langt).
+- Er et fagudtryk uundgåeligt, så forklar det med tre-fire almindelige ord
+  ("en sprogmodel - den slags AI, der skriver tekst").
 
 Svar KUN med et JSON-array, ét objekt pr. artikel, i samme rækkefølge som input:
 [{"rubrik": "...", "resume": "..."}, ...]"""
@@ -285,7 +305,8 @@ def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
             data=body, headers={"x-goog-api-key": API_KEY, "content-type": "application/json"})
     except urllib.error.HTTPError as fejl:
         if fejl.code in (400, 404) and _gemini_model != GEMINI_FALLBACK:
-            print(f"  ℹ️  {_gemini_model} ikke tilgængelig endnu - skifter til {GEMINI_FALLBACK}")
+            print(f"  ⚠️  MODELSKIFT: {_gemini_model} blev afvist ({fejl.code}) "
+                  f"- resten af kørslen bruger den DYRERE {GEMINI_FALLBACK}")
             _gemini_model = GEMINI_FALLBACK
             svar = hent_url(
                 f"https://generativelanguage.googleapis.com/v1beta/models/{_gemini_model}:generateContent",
@@ -1617,6 +1638,122 @@ def stram_betydninger(artikler: list[dict]) -> None:
         print(f"✂️  Stramning sprang over ({e})")
 
 
+# ----- Navne tilbage i overskrifterne (selvhelende reparation) ----------------
+
+# Mærker vi genkender som "rigtige navne" - også når de står først i rubrikken,
+# hvor stort begyndelsesbogstav ellers ikke afslører et egennavn.
+_MAERKER = {
+    "google", "alphabet", "deepmind", "openai", "anthropic", "meta", "facebook",
+    "instagram", "whatsapp", "apple", "amazon", "aws", "microsoft", "nvidia",
+    "oracle", "intel", "amd", "ibm", "tesla", "xai", "spacex", "adobe", "salesforce",
+    "samsung", "huawei", "alibaba", "bytedance", "baidu", "tencent", "deepseek",
+    "mistral", "midjourney", "perplexity", "stability", "runway", "figma", "canva",
+    "github", "linkedin", "tiktok", "youtube", "netflix", "spotify", "reddit",
+    "snapchat", "uber", "airbnb", "shopify", "stripe", "zoom", "slack", "notion",
+    "chatgpt", "gemini", "claude", "copilot", "llama", "grok", "sora", "veo",
+    "alexa", "siri", "cursor", "gpt", "opus", "sonnet", "haiku", "qwen", "kimi",
+    "eu", "usa", "kina", "danmark", "norge", "sverige", "tyskland", "storbritannien",
+    "folketinget", "regeringen", "kommissionen", "nato", "fn", "trump", "biden",
+}
+
+# Formuleringer, der skjuler hvem historien handler om
+_VAGE_VENDINGER = (
+    "kæmpe gigant", "en gigant", "stor gigant", "stort firma", "stort selskab",
+    "et firma", "et selskab", "nyt selskab", "ny virksomhed", "stor virksomhed",
+    "en kendt", "kendt firma", "kendt tjeneste", "stor spiller", "en stor spiller",
+    "tech-firma", "techfirma", "tech-gigant", "techgigant", "et værktøj",
+    "en tjeneste", "udvikler af", "en udbyder",
+)
+
+
+def _har_navn(rubrik: str) -> bool:
+    """Sandt hvis rubrikken nævner mindst ét rigtigt navn (firma, produkt, land)."""
+    ord_ = re.findall(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", rubrik or "")
+    for i, o in enumerate(ord_):
+        ren = o.strip("-.'’").lower()
+        if not ren:
+            continue
+        if ren.split("-")[0] in _MAERKER or ren in _MAERKER:
+            return True
+        if len(re.sub(r"[^A-ZÆØÅ]", "", o)) >= 2 and o == o.upper() and ren != "ai":
+            return True                       # USA, EU, IBM, GPT-5
+        if re.search(r"[a-zæøå][A-ZÆØÅ]", o):
+            return True                       # OpenAI, DeepSeek, iPhone
+        if i > 0 and o[:1].isupper():
+            return True                       # stort bogstav midt i en dansk sætning
+    return False
+
+
+def _mangler_navn(rubrik: str) -> bool:
+    lav = (rubrik or "").lower()
+    if any(v in lav for v in _VAGE_VENDINGER):
+        return True
+    return not _har_navn(rubrik)
+
+
+SYSTEM_NAVNGIV = """Du retter anonyme overskrifter på ainyheder.com - et dansk
+nyhedssite for folk uden teknisk baggrund.
+
+Problemet: overskrifterne har fjernet navnene, så læseren ikke kan se, hvem
+historien handler om ("Kæmpe gigant fyrer 21.000" i stedet for "Oracle fyrer 21.000").
+
+Du får den originale engelske titel og resuméet plus vores nuværende danske
+rubrik og resumé. Skriv dem om, så virksomheden, produktet eller modellen nævnes
+ved rigtigt navn - og BEVAR ellers det enkle, folkelige sprog.
+
+Krav:
+- "rubrik": max 9 ord, navnet med, intet punktum til sidst.
+- "resume": 1-2 sætninger, max 30 ord, hverdagsdansk, navnet med.
+- Skriv "AI", aldrig "kunstig intelligens".
+- Opdigt ALDRIG navne eller tal. Står navnet ikke i materialet, så skriv i stedet
+  konkret hvem det er ("Kinesisk techgigant ...", "EU-Kommissionen ...").
+- Behold gerne folkelige billeder ("digital hjerne"), men sæt navnet foran:
+  "Anthropics nye digitale hjerne ...".
+
+Svar KUN med et JSON-array: [{"nr": 1, "rubrik": "...", "resume": "..."}, ...]"""
+
+
+def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
+    """Selvhelende: finder rubrikker uden navne og skriver dem om i klumper,
+    så arkivet gradvist bliver konkret. Fejler stille."""
+    if not API_KEY:
+        return
+    anonyme = [a for a in artikler
+               if a.get("rubrik") and not a.get("navngivet")
+               and _mangler_navn(a["rubrik"])][:portion]
+    if not anonyme:
+        return
+    try:
+        payload = [{"nr": i + 1,
+                    "engelsk_titel": a.get("titel", "")[:160],
+                    "engelsk_resume": (a.get("resume") or "")[:250],
+                    "dansk_rubrik": a["rubrik"],
+                    "dansk_resume": (a.get("resume_da") or "")[:250]}
+                   for i, a in enumerate(anonyme)]
+        r = parse_json_svar(kald_ai(SYSTEM_NAVNGIV,
+                                    json.dumps(payload, ensure_ascii=False), 3500))
+        rettede = 0
+        for p in r if isinstance(r, list) else []:
+            try:
+                a = anonyme[int(p.get("nr", 0)) - 1]
+            except (ValueError, TypeError, IndexError):
+                continue
+            ny = _som_tekst(p.get("rubrik", "")).strip().rstrip(".")
+            nyt_res = _som_tekst(p.get("resume", "")).strip()
+            if 10 <= len(ny) <= 90 and len(ny.split()) <= 11 and _har_navn(ny):
+                a["rubrik"] = ny
+                a["navngivet"] = True         # prøv kun én gang pr. artikel
+                if 20 <= len(nyt_res) <= 400:
+                    a["resume_da"] = nyt_res
+                rettede += 1
+            else:
+                a["navngivet"] = True         # AI'en kunne ikke finde et navn - lad den være
+        if rettede:
+            print(f"🏷️  Satte navn på {rettede} overskrifter")
+    except Exception as e:
+        print(f"🏷️  Navngivning sprang over ({e})")
+
+
 # ----- Dagens overblik (60-sekunders brief på forsiden) ------------------------
 
 BRIEF_FIL = ROOT / "data" / "brief.json"
@@ -2213,6 +2350,18 @@ def lav_youtube() -> None:
 # ----- Hovedprogram ----------------------------------------------------------
 
 def main() -> None:
+    # Skriv ALTID hvilken model der skriver teksten - så det kan ses i
+    # Actions-loggen, uden at gætte ud fra hvilke nøgler der er sat.
+    if not API_KEY:
+        print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
+    elif UDBYDER == "claude":
+        print(f"🤖 Tekstmodel: Claude · {CLAUDE_MODEL}")
+    else:
+        print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
+    if GEMINI_KEY:
+        print(f"🎨 Billedmodel: {BILLED_MODEL}")
+    print()
+
     feeds = json.loads(FEEDS_FIL.read_text(encoding="utf-8"))["feeds"]
     print(f"Crawler {len(feeds)} feeds …\n")
 
@@ -2264,6 +2413,7 @@ def main() -> None:
                                         "billede": a.get("billede", ""),
                                         "kategori": a.get("kategori", ""),
                                         "kat_ai": a.get("kat_ai", False),
+                                        "navngivet": a.get("navngivet", False),
                                         "prio": a.get("prio")}
         except (json.JSONDecodeError, KeyError):
             pass
@@ -2293,6 +2443,7 @@ def main() -> None:
             a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke)
     dybe_briefs(unikke)
+    navngiv_rubrikker(unikke)   # sætter navn på gamle, anonyme overskrifter i klumper
     stram_betydninger(unikke)   # skriver gamle, for lange betydninger om i klumper
     udfyld_billedmotiver(unikke)
     lav_billeder(unikke)

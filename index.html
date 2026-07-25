@@ -233,6 +233,17 @@ a.pill { text-decoration: none; display: inline-block; }
   font-size: 17.5px; line-height: 1.22; letter-spacing: -.015em;
 }
 .kort p { font-size: 13.5px; color: var(--blaek-svag); flex: 1; }
+/* Afsender + tid over rubrikken - som i en rigtig avis */
+.kort-meta {
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+  font-size: 10.5px; color: var(--blaek-svag); margin-bottom: -2px;
+}
+.kort-kilde {
+  font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--accent);
+}
+.kort-tid { white-space: nowrap; }
+.kort.stor .kort-meta { font-size: 11.5px; }
 .kort .meta { margin-top: 2px; }
 .kort.stor { grid-column: span 2; }
 .kort.stor .kort-art { aspect-ratio: 21 / 9; }
@@ -385,6 +396,28 @@ a.pill { text-decoration: none; display: inline-block; }
 .mikro:hover h3 { color: var(--accent); }
 .mikro-stjerne { color: var(--accent); }
 .mikro-meta { font-size: 10.5px; color: var(--blaek-svag); margin-top: 3px; }
+.mikro-kat {
+  display: inline-block; font-size: 9.5px; font-weight: 800; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--blaek-svag);
+  background: color-mix(in srgb, var(--blaek) 7%, transparent);
+  border-radius: 4px; padding: 1px 6px; margin-right: 7px; vertical-align: 1px;
+}
+.mikro-kilde { font-weight: 700; color: var(--accent); }
+
+/* "Vis flere historier" - forsiden starter kort og folder sig ud på ønske */
+.vis-flere {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; margin: 6px 0 34px; padding: 15px 20px;
+  font-family: var(--font-ui); font-size: 14.5px; font-weight: 700; color: var(--blaek);
+  background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: var(--radius); cursor: pointer;
+  box-shadow: var(--skygge); transition: border-color .15s, color .15s, transform .15s;
+}
+.vis-flere:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.vis-flere span {
+  font-size: 11.5px; font-weight: 700; color: var(--accent);
+  background: var(--accent-svag); border-radius: 999px; padding: 3px 11px;
+}
 
 /* ---------- LÆSEVISNING (artikel-modal) ---------- */
 .laeser-bag {
@@ -683,6 +716,8 @@ let emneMenuAaben = false;
 let sogeTekst = "";
 let visning = "magasin";     // "magasin" = store kort (standard) · "kompakt" = kategori-kolonner
 let sortering = "vigtigst";  // "vigtigst" = AI-prioritet · "nyeste" = ren kronologi
+let synligeDage = 2;         // forsiden starter med 2 dage - resten hentes med "Vis flere"
+let synligeFlade = 24;       // samme greb i "Nyeste"-visningen, hvor der ikke er dage
 
 const indhold = document.getElementById("indhold");
 const filtreEl = document.getElementById("filtre");
@@ -809,6 +844,24 @@ function relativTid(iso) {
   if (d < 7) return `for ${d} ${d === 1 ? "dag" : "dage"} siden`;
   return new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "short" });
 }
+function kildeNavn(k) {
+  // Feednavnene hedder "TechCrunch AI", "Hacker News: AI" osv. - læseren skal
+  // bare se mediet: TechCrunch, Hacker News.
+  return String(k || "").replace(/\s*[:·-]?\s*\bAI\b\s*$/i, "").trim() || String(k || "");
+}
+function tidsTekst(a) {
+  // Vis hvornår historien kom PÅ SIDEN (foerst_set) - så tiden passer med den
+  // dag, kortet står under. Er originalen væsentligt ældre, siger vi det ærligt.
+  const set = a.foerst_set ? new Date(a.foerst_set).getTime() : null;
+  const pub = a.dato ? new Date(a.dato).getTime() : null;
+  const vis = set || pub;
+  if (!vis) return "";
+  let t = relativTid(new Date(vis).toISOString());
+  if (set && pub && set - pub > 36 * 3600 * 1000) {
+    t += " · udgivet " + new Date(pub).toLocaleDateString("da-DK", { day: "numeric", month: "short" });
+  }
+  return t;
+}
 function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }
 function fed(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
 function overskrift(a) { return a.rubrik ? esc(a.rubrik) : esc(a.titel) + '<span class="en-chip">EN</span>'; }
@@ -823,7 +876,10 @@ function brodtekst(a) {
 const KATEGORI_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
                         "Politik & jura", "Samfund & etik", "Forskning"];
 
+function nulstilVisning() { synligeDage = 2; synligeFlade = 24; }
+
 function tegnFiltre() {
+  nulstilVisning();            // nyt filter = start forfra øverst på forsiden
   const fundne = [...new Set(artikler.map(a => a.kategori))];
   fundne.sort((a, b) => {
     const ia = KATEGORI_ORDEN.indexOf(a), ib = KATEGORI_ORDEN.indexOf(b);
@@ -1068,8 +1124,9 @@ indhold.addEventListener("click", e => {
 function kortHtml(a, id, stor = false) {
   return `
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
-    <div class="kort-art">${visuel(a, id)}${artOverlay(a)}</div>
+    <div class="kort-art">${visuel(a, id)}${artChips(a)}</div>
     <div class="kort-krop">
+      <div class="kort-meta"><span class="kort-kilde">${esc(kildeNavn(a.kilde))}</span><span class="kort-tid">· ${tidsTekst(a)}</span></div>
       <h2>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h2>
       <p>${brodtekst(a)}</p>
       ${a.betydning ? `<div class="kort-betydning">💡 ${esc(kortTekst(a.betydning, 110))}</div>` : ""}
@@ -1100,7 +1157,7 @@ function artChips(a) {
 }
 
 function artOverlay(a) {
-  return artChips(a) + `<span class="tid-pille">${relativTid(a.dato)}</span>`;
+  return artChips(a) + `<span class="tid-pille">${tidsTekst(a)}</span>`;
 }
 
 const KAT_ORDEN = ["Lanceringer", "Hverdags-AI", "Penge & marked",
@@ -1111,7 +1168,7 @@ function mikroHtml(a, id) {
   <a class="mikro" href="${esc(a.link)}" data-link="${esc(a.link)}">
     <div class="mikro-tekst">
       <h3>${(a.prio ?? 0) >= 8 ? '<span class="mikro-stjerne">★</span> ' : ""}${overskrift(a)}</h3>
-      <div class="mikro-meta">${relativTid(a.dato)}${a.andre && a.andre.length ? ` · +${a.andre.length} kilder` : ""}</div>
+      <div class="mikro-meta">${a.kategori ? `<span class="mikro-kat">${esc(a.kategori)}</span>` : ""}<span class="mikro-kilde">${esc(kildeNavn(a.kilde))}</span> · ${tidsTekst(a)}${a.andre && a.andre.length ? ` · +${a.andre.length} kilder` : ""}</div>
     </div>
   </a>`;
 }
@@ -1136,8 +1193,13 @@ function tegn() {
   const note = paaDansk === 0 ? `<div class="note">🔑 AI-omskrivningen er ikke aktiveret endnu — historierne vises på engelsk.
       Tilføj en <code>ANTHROPIC_API_KEY</code>-secret i GitHub, så oversætter siden sig selv ved næste opdatering.</div>` : "";
 
-  // Hero = nyeste historie med dansk rubrik (ellers bare den nyeste)
-  const heroArtikel = liste.find(a => a.rubrik) || liste[0];
+  // Hero = dagens vigtigste historie. Er der intet fra det seneste døgn,
+  // siger etiketten det ærligt i stedet for at kalde en gammel historie "dagens".
+  const doegn = Date.now() - 24 * 3600 * 1000;
+  const friske = liste.filter(a => a.rubrik &&
+    new Date(a.foerst_set || a.dato || 0).getTime() >= doegn);
+  const heroArtikel = friske[0] || liste.find(a => a.rubrik) || liste[0];
+  const heroEtiket = friske.length ? "Dagens historie" : "Største historie lige nu";
   const rest = liste.filter(a => a !== heroArtikel);
 
   if (visning === "kompakt") {
@@ -1165,10 +1227,10 @@ function tegn() {
   <a class="hero" href="${esc(heroArtikel.link)}" data-link="${esc(heroArtikel.link)}">
     <div class="hero-art">${visuel(heroArtikel, 9999)}</div>
     <div class="hero-tekst">
-      <div class="kicker">Dagens historie <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(heroArtikel.kilde)}</span>${heroArtikel.andre && heroArtikel.andre.length ? `<span class="flere-chip">+${heroArtikel.andre.length} kilder</span>` : ""}</div>
+      <div class="kicker">${heroEtiket} <span class="adskil">· ${esc(heroArtikel.kategori)} · ${esc(kildeNavn(heroArtikel.kilde))}</span>${heroArtikel.andre && heroArtikel.andre.length ? `<span class="flere-chip">+${heroArtikel.andre.length} kilder</span>` : ""}</div>
       <h1>${overskrift(heroArtikel)}</h1>
       <p>${brodtekst(heroArtikel)}</p>
-      <div class="meta"><span>${relativTid(heroArtikel.dato)}</span><span class="laes">Læs hele historien</span></div>
+      <div class="meta"><span>${tidsTekst(heroArtikel)}</span><span class="laes">Læs hele historien</span></div>
     </div>
   </a>`;
 
@@ -1186,7 +1248,9 @@ function tegn() {
     // resten som kompakte linjer - så vigtigheden kan SES i layoutet.
     // YouTube-båndet lægges ind EFTER dagens første blok: dagens nyheder
     // kommer først, men videoerne skal stadig kunne ses uden at rulle langt.
-    magKrop = dage.map((d, nr) => {
+    const vises = dage.slice(0, synligeDage);
+    const resterende = dage.slice(synligeDage).reduce((n, d) => n + d.artikler.length, 0);
+    magKrop = vises.map((d, nr) => {
       const store = d.artikler.slice(0, 4);
       const smaa = d.artikler.slice(4);
       return `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
@@ -1194,11 +1258,21 @@ function tegn() {
        (smaa.length ? `<div class="mikro-net">${smaa.map(a => mikroHtml(a, id++)).join("")}</div>` : "") +
        (nr === 0 ? ytBaandHtml() : "");
     }).join("");
+    if (resterende) magKrop += `<button class="vis-flere" id="visFlere">Vis flere historier <span>${resterende} tilbage</span></button>`;
   } else {
-    magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${rest.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`
+    const vises = rest.slice(0, synligeFlade);
+    magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${vises.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`
+            + (rest.length > vises.length
+                ? `<button class="vis-flere" id="visFlere">Vis flere historier <span>${rest.length - vises.length} tilbage</span></button>` : "")
             + ytBaandHtml();
   }
   indhold.innerHTML = note + hero + magKrop;
+  const flereKnap = document.getElementById("visFlere");
+  if (flereKnap) flereKnap.addEventListener("click", e => {
+    e.preventDefault();
+    synligeDage += 3; synligeFlade += 24;
+    tegn();
+  });
   markerLaesteIDom();
 }
 
@@ -1253,12 +1327,13 @@ document.addEventListener("click", e => {
     if (menu) menu.classList.remove("aaben");
   }
 });
-document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
+document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; nulstilVisning(); tegn(); });
 
 document.getElementById("sortSkift").addEventListener("click", e => {
   const knap = e.target.closest("button");
   if (!knap) return;
   sortering = knap.dataset.sort;
+  nulstilVisning();
   document.querySelectorAll("#sortSkift button").forEach(b => b.classList.toggle("aktiv", b === knap));
   tegn();
 });
