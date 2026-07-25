@@ -2697,6 +2697,124 @@ def lav_youtube() -> None:
 
 # ----- Hovedprogram ----------------------------------------------------------
 
+# ----- Læsertal fra Cloudflare Web Analytics ---------------------------------
+#
+# Uden de her tal kan loopet kun se, om siden er PÆN - ikke om nogen læser den.
+# Kræver secrets CLOUDFLARE_API_TOKEN og CLOUDFLARE_ACCOUNT_ID. Mangler de,
+# springes trinnet stille over, og gennemgangen kører videre uden læsertal.
+
+LAESERTAL_FIL = ROOT / "data" / "laesertal.json"
+CF_GRAPHQL = "https://api.cloudflare.com/client/v4/graphql"
+CF_SITE_TAG = "fda17dd7ade34a579f4ec6d615265fa6"   # samme token som i beacon'en
+LAESERTAL_DAGE = 7
+
+
+def hent_laesertal() -> dict | None:
+    """Henter de seneste dages besøg pr. side fra Cloudflare Web Analytics.
+    Fejler stille - læsertal er en gave, ikke en forudsætning."""
+    token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+    konto = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    if not token:
+        return None
+    nu = datetime.now(timezone.utc)
+    fra = (nu - timedelta(days=LAESERTAL_DAGE)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    til = nu.strftime("%Y-%m-%dT%H:%M:%SZ")
+    # Konto-id er valgfrit: er det ikke sat, spørger vi bare om de konti,
+    # tokenet har adgang til, og bruger den første. Har man kun én konto -
+    # og det har de fleste - er der ingenting at slå op.
+    variabler = {"tag": CF_SITE_TAG, "fra": fra, "til": til}
+    if konto:
+        variabler["konto"] = konto
+    query = ("""
+query (%s$tag: String!, $fra: Time!, $til: Time!) {
+  viewer { accounts%s {""" % (
+        "$konto: String!, " if konto else "",
+        "(filter: {accountTag: $konto})" if konto else "(limit: 1)")) + """
+    sider: rumPageloadEventsAdaptiveGroups(
+      limit: 60, orderBy: [sum_visits_DESC],
+      filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
+    ) { sum { visits } count dimensions { requestPath } }
+    henvisere: rumPageloadEventsAdaptiveGroups(
+      limit: 12, orderBy: [sum_visits_DESC],
+      filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0,
+               refererHost_neq: "ainyheder.com"}
+    ) { sum { visits } dimensions { refererHost } }
+  } }
+}"""
+    try:
+        svar = json.loads(hent_url(CF_GRAPHQL, data=json.dumps({
+            "query": query,
+            "variables": variabler,
+        }).encode(), headers={"Authorization": f"Bearer {token}",
+                              "Content-Type": "application/json"}))
+        if svar.get("errors"):
+            print(f"📈 ⚠️ Cloudflare svarede med fejl: "
+                  f"{str(svar['errors'])[:140]}")
+            return None
+        konti = (svar.get("data") or {}).get("viewer", {}).get("accounts") or []
+        if not konti:
+            print("📈 ⚠️ Cloudflare gav ingen konti tilbage - har tokenet "
+                  "rettigheden Account Analytics · Read?")
+            return None
+        d = konti[0]
+        sider = [{"sti": (r.get("dimensions") or {}).get("requestPath", ""),
+                  "besoeg": (r.get("sum") or {}).get("visits", 0),
+                  "visninger": r.get("count", 0)}
+                 for r in d.get("sider") or []]
+        sider = [s for s in sider if s["sti"]]
+        henvisere = [{"fra": (r.get("dimensions") or {}).get("refererHost") or "direkte",
+                      "besoeg": (r.get("sum") or {}).get("visits", 0)}
+                     for r in d.get("henvisere") or []]
+        tal = {
+            "opdateret": nu.isoformat(),
+            "dage": LAESERTAL_DAGE,
+            "besoeg_i_alt": sum(s["besoeg"] for s in sider),
+            "sidevisninger_i_alt": sum(s["visninger"] for s in sider),
+            "sider": sider,
+            "henvisere": henvisere,
+        }
+        LAESERTAL_FIL.parent.mkdir(exist_ok=True)
+        LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
+                                 encoding="utf-8")
+        print(f"📈 Læsertal: {tal['besoeg_i_alt']} besøg på "
+              f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage")
+        return tal
+    except Exception as fejl:
+        print(f"📈 Læsertal sprang over ({type(fejl).__name__}: {fejl})")
+        return None
+
+
+def _laeser_afsnit() -> dict:
+    """Læsertallene sat op, så en model kan se hvad der IKKE bliver læst -
+    det er som regel det interessante."""
+    tal = None
+    if LAESERTAL_FIL.exists():
+        try:
+            tal = json.loads(LAESERTAL_FIL.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    if not tal or not tal.get("sider"):
+        return {"status": "ingen læsertal - CLOUDFLARE_API_TOKEN er ikke sat"}
+
+    besoegt = {s["sti"].rstrip("/") or "/": s["besoeg"] for s in tal["sider"]}
+    faste = ["/", "/laer.html", "/koerekort.html", "/erhverv.html", "/prompts.html",
+             "/prompt-arkiv.html", "/ordbog.html", "/quiz.html", "/uge.html",
+             "/youtube.html", "/vaerktoejer.html", "/faq.html", "/om.html",
+             "/guide-igang.html", "/guide-prompts.html", "/guide-sikkerhed.html"]
+    artikelbesoeg = sum(v for k, v in besoegt.items() if k.startswith("/artikel"))
+    videobesoeg = sum(v for k, v in besoegt.items() if k.startswith("/video"))
+    return {
+        "periode_dage": tal.get("dage"),
+        "besoeg_i_alt": tal.get("besoeg_i_alt"),
+        "sidevisninger_i_alt": tal.get("sidevisninger_i_alt"),
+        "mest_laeste": [f'{s["sti"]} ({s["besoeg"]})' for s in tal["sider"][:10]],
+        "faste_sider_uden_besoeg": [p for p in faste if besoegt.get(p, 0) == 0],
+        "besoeg_paa_artikelsider": artikelbesoeg,
+        "besoeg_paa_videosider": videobesoeg,
+        "kommer_fra": [f'{h["fra"]} ({h["besoeg"]})' for h in tal.get("henvisere", [])[:8]],
+    }
+
+
 # ----- Den natlige gennemgang ("redaktionens øjne") --------------------------
 #
 # Én gang i døgnet standser crawleren op og ser på sit eget arbejde med
@@ -2712,6 +2830,12 @@ ejerens egne øjne. Du får hans målestok og en faktuel tilstandsrapport.
 
 Din opgave: find de TRE vigtigste ting, der bør laves nu. Ikke de tre nemmeste,
 og ikke de tre mest ambitiøse - de tre der betyder mest for læseren.
+
+VÆGT LÆSERNE HØJEST. Afsnittet "LAESERNE" i rapporten er det eneste sted, du kan
+se, om arbejdet virker. En side, ingen besøger, er et større problem end en side,
+der mangler en detalje - uanset hvor pæn den mangler er. Står en hel sektion med
+nul besøg, så rejs spørgsmålet: skal den gøres synlig, laves om, eller væk?
+Er der ingen læsertal, så sig det i overblikket og bedøm på resten.
 
 Regler:
 - Byg KUN på tallene i tilstandsrapporten. Opdigt aldrig et problem, du ikke
@@ -2767,6 +2891,7 @@ def _tilstandsrapport(artikler: list[dict]) -> dict:
         rapport["videoer"] = "MANGLER"
     rapport["artikelsider"] = len(list(ARTIKEL_MAPPE.glob("*.html"))) if ARTIKEL_MAPPE.exists() else 0
     rapport["videosider"] = len(list(VIDEO_MAPPE.glob("*.html"))) if VIDEO_MAPPE.exists() else 0
+    rapport["LAESERNE"] = _laeser_afsnit()
     return rapport
 
 
@@ -3193,6 +3318,7 @@ def main() -> None:
     lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke)
     del_paa_platforme(unikke)  # tørkørsel indtil OPSLAG_LIVE=ja
+    hent_laesertal()           # så gennemgangen kan se, hvad folk faktisk læser
     natlig_gennemgang(unikke)  # ser på siden med redaktionens øjne, ændrer intet
     try:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
