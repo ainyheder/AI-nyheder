@@ -14,9 +14,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css">
 <style>
 :root {
   --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
@@ -172,9 +170,9 @@ ikke give et meningsfuldt samtykke til noget, der ikke er der. Til gengæld skal
 kunne se alt og slette alt. Det kan du på denne side.</p>
 
 <h2>Tredjeparter</h2>
-<p>Fire eksterne tjenester er involveret, når du bruger sitet. Ingen af dem sætter
-cookies hos dig, men to af dem får din IP-adresse at se, simpelthen fordi din browser
-henter noget fra dem:</p>
+<p>Tre eksterne tjenester er involveret, når du bruger sitet. Ingen af dem sætter
+cookies hos dig. Skrifttyperne ligger på vores eget domæne, så dem sendes der ingenting
+til — men YouTube ser din IP-adresse, når din browser henter et miniaturebillede:</p>
 
 <div class="tabel-ramme">
 <table>
@@ -187,30 +185,38 @@ henter noget fra dem:</p>
           kan ikke føres tilbage til dig</td>
     </tr>
     <tr>
-      <td><strong>Google Fonts</strong></td>
-      <td>Leverer sidens to skrifttyper (Fraunces og Inter)</td>
-      <td>Din IP-adresse, fordi browseren henter filerne hos Google. Ingen cookies</td>
-    </tr>
-    <tr>
       <td><strong>Buttondown</strong></td>
       <td>Håndterer nyhedsbrevet</td>
       <td>Kun din e-mailadresse, og kun hvis du selv skriver den og trykker tilmeld</td>
     </tr>
     <tr>
       <td><strong>YouTube</strong></td>
-      <td>Viser videoen på <a href="youtube.html">YouTube-siden</a></td>
-      <td>Ingenting, indtil du selv trykker afspil. Vi bruger youtube-nocookie.com,
-          og afspilleren indlæses først ved dit klik</td>
+      <td>Leverer miniaturebillederne til videoerne og selve afspilleren på
+          <a href="youtube.html">YouTube-siden</a></td>
+      <td>Din IP-adresse, når browseren henter et miniaturebillede. Selve afspilleren
+          indlæses først, når du trykker afspil — og vi bruger youtube-nocookie.com,
+          så der ikke sættes cookies</td>
     </tr>
   </tbody>
 </table>
 </div>
 
+<div class="boks">
+  <h3>Skrifttyperne ligger nu hos os selv</h3>
+  <p style="margin-bottom:0">Sidens to skrifttyper blev tidligere hentet fra Googles
+  servere, hvilket sendte din IP-adresse til Google ved hver sidevisning. De ligger nu
+  på vores eget domæne, så det sker ikke længere. Skrifttyperne er
+  <a href="https://openfontlicense.org/" rel="noopener">frit licenserede</a>
+  (SIL Open Font License 1.1), og licensteksten følger med filerne.</p>
+</div>
+
 <div class="boks boks-rav">
   <h3>Én ting vi selv er opmærksomme på</h3>
-  <p style="margin-bottom:0">Skrifttyperne hentes i dag fra Googles servere, og dermed
-  ser Google din IP-adresse, når du besøger sitet. Det kan undgås ved at lægge de to
-  skrifttyper på vores eget domæne i stedet. Det står på vores liste.</p>
+  <p style="margin-bottom:0">Miniaturebillederne til YouTube-videoerne hentes fra
+  YouTubes billedservere, og dermed ser de din IP-adresse — også før du trykker afspil.
+  Det kan undgås ved at hente billederne ned til vores eget domæne, når vi crawler
+  videoerne, på samme måde som vi gør med artiklernes illustrationer. Det står på
+  vores liste.</p>
 </div>
 
 <h2>Slet alt, hvad vi har gemt</h2>
