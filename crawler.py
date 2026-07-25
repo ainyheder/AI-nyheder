@@ -2928,6 +2928,8 @@ ejerens egne øjne. Du får hans målestok og en faktuel tilstandsrapport.
 Din opgave: find de TRE vigtigste ting, der bør laves nu. Ikke de tre nemmeste,
 og ikke de tre mest ambitiøse - de tre der betyder mest for læseren.
 
+{retning}
+
 VÆGT LÆSERNE HØJEST. Afsnittet "LAESERNE" i rapporten er det eneste sted, du kan
 se, om arbejdet virker. En side, ingen besøger, er et større problem end en side,
 der mangler en detalje - uanset hvor pæn den mangler er. Står en hel sektion med
@@ -2948,6 +2950,32 @@ Svar KUN med JSON:
  "forslag": [{"hvad": "...", "punkt": "<nummer og navn fra målestokken>",
               "hvorfor": "...", "mindste_rettelse": "...",
               "vigtighed": <1-10>}]}"""
+
+# Seks dage om ugen leder gennemgangen efter fejl. Om søndagen stiller den et
+# andet spørgsmål - ellers kan systemet kun reparere, aldrig vokse.
+RETNING_HVERDAG = """Led efter det, der er GALT: noget der er i stykker, noget der
+bryder målestokken, noget der er blevet efterladt halvt."""
+
+RETNING_SOENDAG = """DET ER SØNDAG - I DAG SPØRGER DU OM NOGET ANDET.
+
+Glem fejlfinding. De seks andre dage leder du efter, hvad der er i stykker. I dag
+skal du svare på ét spørgsmål: **hvad ville få flere danskere til at bruge siden?**
+
+Læs punkt 10 i målestokken. En fejlfri side, ingen læser, opfylder ikke sit formål.
+
+Tænk i disse baner - og brug tallene i "LAESERNE" til at afgøre hvilken:
+- Ligger noget godt SKJULT? Har siden noget værdifuldt, som næsten ingen finder,
+  fordi det ikke er synligt dér, hvor folk lander?
+- Er der en åbenlys vej, der ikke bliver brugt? Google, deling, nyhedsbrev,
+  gentagne besøg.
+- Bliver noget lavet hver dag og brugt ét sted? Genbrug er billigere end nybyg.
+- Er der en gruppe danskere, siden allerede kunne tjene, men ikke taler til?
+
+Forslagene må gerne være NYE ting, siden ikke har i dag - men de skal stadig kunne
+laves i overskuelig tid, og de skal bygge på noget, der allerede findes.
+Foreslå aldrig noget, der kræver betaling, login eller persondata.
+
+Skriv "10. Det skal nå nogen" i "punkt"-feltet."""
 
 
 def _tilstandsrapport(artikler: list[dict]) -> dict:
@@ -3008,11 +3036,62 @@ def _opret_issue(titel: str, krop: str) -> bool:
     return True
 
 
+def _kritik_i_koen(forslag: list, dag: str) -> None:
+    """Skriver nattens forslag direkte ind i opgavekøen.
+
+    Uden det her har natsessionen to lister at forholde sig til - kritikken og
+    køen - og ingen regel for hvad der vinder. Med det her er der ÉN kø.
+    Punkterne lægges nederst i køen; natsessionens fase 3 sorterer dem på plads."""
+    koe = ROOT / "_redaktion" / "opgavekoe.md"
+    if not koe.exists():
+        return
+    try:
+        tekst = koe.read_text(encoding="utf-8")
+        if "## Klaret" not in tekst:
+            return
+        eksisterende = tekst.lower()
+        nye = []
+        for f in forslag:
+            hvad = _som_tekst(f.get("hvad", "")).strip()
+            # Undgå at lægge det samme punkt ind hver eneste nat: er de første
+            # fem betydende ord der allerede, springer vi over.
+            fingeraftryk = " ".join(hvad.lower().split()[:5])
+            if not hvad or (fingeraftryk and fingeraftryk in eksisterende):
+                continue
+            nye.append(
+                f"- [ ] **{hvad}** "
+                f"({_som_tekst(f.get('vigtighed', '?'))}/10 · fra gennemgangen {dag})  \n"
+                f"      {_som_tekst(f.get('hvorfor', ''))}  \n"
+                f"      *Mindste rettelse:* {_som_tekst(f.get('mindste_rettelse', ''))}  \n"
+                f"      *Bryder:* {_som_tekst(f.get('punkt', ''))}\n")
+        if not nye:
+            return
+        blok = f"\n### Fra den natlige gennemgang {dag}\n\n" + "\n".join(nye)
+        foer, efter = tekst.split("## Klaret", 1)
+        koe.write_text(foer.rstrip() + "\n" + blok + "\n---\n\n## Klaret" + efter,
+                       encoding="utf-8")
+        print(f"🔍 Lagde {len(nye)} forslag i opgavekøen")
+    except Exception as fejl:
+        print(f"🔍 Kunne ikke skrive i opgavekøen ({type(fejl).__name__}: {fejl})")
+
+
 def natlig_gennemgang(artikler: list[dict]) -> None:
     """Én gennemgang i døgnet. Ændrer intet - foreslår kun. Fejler stille."""
     if not API_KEY or not OEJNE_FIL.exists():
         return
     try:
+        # Gennemgangen skal være FRISK, når natsessionen læser den kl. 23.
+        # Kørte den ved dagens første crawl, ville den være næsten et døgn
+        # gammel og bygge på siden, som den så ud i morges. Derfor: først fra
+        # kl. 21 dansk tid. Bliver ét crawl droppet, tager det næste den.
+        try:
+            from zoneinfo import ZoneInfo
+            time_dk = datetime.now(ZoneInfo("Europe/Copenhagen")).hour
+        except Exception:
+            time_dk = (datetime.now(timezone.utc).hour + 2) % 24
+        if time_dk < 21 and not GENKOER_ALT:
+            return
+
         dag = _opslag_dag()
         if KRITIK_STEMPEL.exists():
             try:
@@ -3021,14 +3100,17 @@ def natlig_gennemgang(artikler: list[dict]) -> None:
             except json.JSONDecodeError:
                 pass
 
-        maalestok = OEJNE_FIL.read_text(encoding="utf-8")[:6000]
+        maalestok = OEJNE_FIL.read_text(encoding="utf-8")[:7000]
         rapport = _tilstandsrapport(artikler)
+        soendag = datetime.now(timezone.utc).isoweekday() == 7
+        system_kritik = SYSTEM_KRITIK.replace(
+            "{retning}", RETNING_SOENDAG if soendag else RETNING_HVERDAG)
         bruger = ("MÅLESTOKKEN:\n" + maalestok
                   + "\n\nTILSTANDSRAPPORT (målt lige nu):\n"
                   + json.dumps(rapport, ensure_ascii=False, indent=1))
         # Den kloge model som standard - kontrolpanelet kan vælge en anden.
         brugt_model = hjerne_model("gennemgang") or KRITIK_MODEL
-        raa = hjerne_kald("gennemgang", SYSTEM_KRITIK, bruger, 1600,
+        raa = hjerne_kald("gennemgang", system_kritik, bruger, 1600,
                           standard_model=KRITIK_MODEL)
         r = parse_json_objekt(raa)
         forslag = [f for f in (r.get("forslag") or []) if isinstance(f, dict) and f.get("hvad")]
@@ -3036,8 +3118,11 @@ def natlig_gennemgang(artikler: list[dict]) -> None:
             return
 
         forslag.sort(key=lambda f: f.get("vigtighed") or 0, reverse=True)
-        linjer = [f"# Natlig gennemgang · {dag}", "",
-                  _som_tekst(r.get("overblik", "")), ""]
+        linjer = [f"# {'Retningsrunde' if soendag else 'Natlig gennemgang'} · {dag}", ""]
+        if soendag:
+            linjer += ["*Søndag: i dag handler det ikke om fejl, men om "
+                       "hvad der ville få flere danskere med.*", ""]
+        linjer += [_som_tekst(r.get("overblik", "")), ""]
         for nr, f in enumerate(forslag[:3], 1):
             linjer += [f"## {nr}. {_som_tekst(f.get('hvad'))}",
                        f"**Bryder:** {_som_tekst(f.get('punkt'))} · "
@@ -3054,11 +3139,13 @@ def natlig_gennemgang(artikler: list[dict]) -> None:
 
         KRITIK_FIL.parent.mkdir(exist_ok=True)
         KRITIK_FIL.write_text(tekst, encoding="utf-8")
+        _kritik_i_koen(forslag[:3], dag)
         KRITIK_STEMPEL.parent.mkdir(exist_ok=True)
         KRITIK_STEMPEL.write_text(json.dumps({"dato": dag}, ensure_ascii=False),
                                   encoding="utf-8")
         try:
-            sendt = _opret_issue(f"Natlig gennemgang · {dag}", tekst)
+            sendt = _opret_issue(
+                ("Retningsrunde · " if soendag else "Natlig gennemgang · ") + dag, tekst)
         except Exception as fejl:
             sendt = False
             print(f"🔍 ⚠️ Kunne ikke oprette issue: {type(fejl).__name__}: {fejl}")

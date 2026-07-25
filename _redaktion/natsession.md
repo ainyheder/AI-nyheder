@@ -16,13 +16,38 @@ Der kører to sessioner i døgnet, og de må aldrig arbejde samtidig i de samme 
 2. Ellers: skriv nuværende tidspunkt (ISO 8601) i `_redaktion/.nat-koerer`.
 3. **Slet altid `_redaktion/.nat-koerer`, før du slutter** — også hvis du stopper undervejs.
 
+## Hvilken kørsel er du?
+
+Der er to hver nat, og de har **forskellige opgaver**. Kig på klokken:
+
+- **Er den mellem 22 og 01: du er FØRSTE kørsel.** Du laver kun fase 1 — arbejd
+  køen. Du skal hverken evaluere eller omprioritere. Spring fase 2 og 3 over.
+- **Er den mellem 02 og 05: du er SIDSTE kørsel.** Du laver fase 1, og derefter
+  fase 2 og 3, som afslutter natten.
+- **Er du i tvivl** (kørslen er forsinket, eller den første aldrig kørte): kig i
+  `nat-log.md`. Findes der allerede et "Nattens regnskab" for i dag, er du
+  første kørsel af den næste nat. Findes der ikke noget for i dag, og klokken er
+  efter 01, så tag hele turen — fase 1, 2 og 3.
+
+Grunden: evaluering og omprioritering skal ske ÉN gang pr. nat. Sker det to
+gange, omgør den anden kørsel den førstes prioritering, og køen skifter
+rækkefølge uden at nogen har lært noget nyt.
+
 ## Læs derefter, i denne rækkefølge
 
 1. `_redaktion/redaktionens-oejne.md` — målestokken. Ni punkter, og et afsnit om
    hvad der IKKE er et problem. Den afgør alt.
-2. `_redaktion/opgavekoe.md` — køen. Du arbejder oppefra og ned.
-3. `_redaktion/kritik-seneste.md` — crawlerens egen gennemgang, hvis den findes.
-4. `_redaktion/nat-log.md` — hvad tidligere nætter fandt og besluttede.
+2. `_redaktion/opgavekoe.md` — køen. Du arbejder oppefra og ned. Crawlerens
+   natlige gennemgang skriver selv sine forslag ind nederst i køen under
+   "Fra den natlige gennemgang" — så der er kun ÉN liste at forholde sig til.
+3. `_redaktion/nat-log.md` — hvad tidligere nætter fandt og besluttede.
+4. `_redaktion/kritik-seneste.md` — gennemgangens fulde tekst med tallene bag.
+   Kun hvis du har brug for baggrunden; forslagene står allerede i køen.
+
+**Tjek også, om der ligger uafhentet arbejde.** Kør `git status --short`. Er der
+ændrede filer fra tidligere nætter, har Torben ikke pushet endnu. Skriv det
+ØVERST i nat-loggen med det samme — han bygger videre på noget, verden ikke har
+set, og de filer, crawleren selv skriver, vil begynde at give merge-konflikter.
 
 ---
 
@@ -54,12 +79,34 @@ skriv hvorfor, flyt det ned med en note, og tag det næste. Gå ikke i stå.
 
 **Log efter hvert punkt, ikke til sidst.**
 
-**Stop i tide.** Sørg for at have plads tilbage til fase 2 og 3. De er vigtigere
-end ét punkt mere.
+**Stop i tide.** Er du sidste kørsel, så sørg for at have plads tilbage til fase
+2 og 3. De er vigtigere end ét punkt mere.
+
+### Til allersidst i fase 1: virker det hele stadig sammen?
+
+Hvert punkt er testet for sig. Det siger intet om, hvad tre ændringer gør ved
+hinanden. Har du rørt noget som helst i nat, så kør en samlet prøve, FØR du går
+videre:
+
+- `python3 -c "import ast;ast.parse(open('crawler.py',encoding='utf-8').read())"`
+- Indlæs `crawler.py` som modul, og tjek at der ikke er dobbeltdefinerede
+  konstanter på modulniveau. Præcis dén fejl gjorde, at hver eneste artikel-brief
+  blev skrevet med den forkerte instruks i ugevis, uden at nogen opdagede det.
+- Forsiden i jsdom mod de rigtige datafiler: ingen JS-fejl, kortene tegnes,
+  dagens overblik vises, og et klik åbner en artikel.
+- Er der rørt ved kontrolpanelet: samme prøve på `_redaktion/kontrolpanel.html`.
+
+Fejler noget, så ret det, før du logger. En nat, der efterlader siden i stykker,
+er værre end en nat uden arbejde — Torben pusher om morgenen uden at læse koden.
+Skriv resultatet af den samlede prøve i loggen, også når alt er grønt.
 
 ## Fase 2 — Evaluér siden med friske øjne
 
-Tæl, hvor mange punkter du klarede. Kald tallet N.
+**Kun sidste kørsel.** Er du første kørsel, springer du fase 2 og 3 over, skriver
+loggen for det, du nåede, sletter låsefilen og stopper.
+
+Tæl, hvor mange punkter der er klaret i nat i alt — også dem, første kørsel tog.
+Kald tallet N.
 
 Gå på jagt efter nye. Vælg et sted, der ikke har været gennemgået de seneste
 nætter — en side, en del af crawleren, en måling. Se på det som en læser.

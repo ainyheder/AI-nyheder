@@ -14,6 +14,37 @@ mere "gå det efter i sømmene". Hvert punkt siger, hvilket af de ni punkter i
 
 ## Kø
 
+### Rækkevidde — punkt 10
+
+*Baggrunden står i `retning.md`. De her punkter handler ikke om, at noget er i
+stykker, men om at godt arbejde ligger skjult.*
+
+- [ ] **Ingen ved, om Google har set de 83 artikelsider.** De blev synlige for
+      første gang i aften; indtil da blev de bygget og smidt væk ved hver kørsel.
+      Tjek om `sitemap-artikler.xml` og `sitemap-videoer.xml` svarer korrekt live,
+      og om artikelsiderne kan hentes. Skriv i loggen, hvad Torben skal gøre i
+      Google Search Console — det kan kun han.
+      *Punkt 10. Uden det er hele SEO-arbejdet spildt.*
+
+- [ ] **Kørekortet er gemt bag nyhederne.** Nyheder kan alle levere; et gratis
+      dansk AI-kørekort med et bevis, der kan efterprøves, kan ingen andre. En
+      førstegangsbesøgende skal kunne se inden for tre sekunder, at man kan
+      *lære* noget her. Foreslå én konkret indgang på forsiden — ikke et banner.
+      *Punkt 10 og 7.*
+
+- [ ] **Dagens overblik skrives hver dag og bruges ét sted.** Fem færdige punkter
+      ligger i `data/brief.json` hver morgen og står kun på forsiden. Nyhedsbrevet
+      udkommer kun fredag. Undersøg, hvad der skal til for at sende det som en
+      daglig mail — og om Buttondowns gratis plan kan.
+      *Punkt 10. En daglig vane slår en ugentlig påmindelse.*
+
+- [ ] **Der findes ingen side, der taler til undervisere.** Et jobcenter, en
+      aftenskole eller en fagforening, der tager kørekortet i brug, er 200
+      læsere ad gangen — og de kommer igen hvert hold. Skriv et udkast til en
+      side: hvad forløbet er, hvor lang tid det tager, og hvad beviset kan bruges
+      til. Torben tager selv kontakten.
+      *Punkt 10. Det tætteste siden kommer på et forspring.*
+
 ### Kendte fejl — målt, ikke gættet
 
 - [ ] **35 af 96 artikler mangler det fulde brief.** Mål årsagen først: rammer

@@ -21,7 +21,7 @@ gide læse videre?
 
 ---
 
-## De ni ting der bedømmes
+## De ti ting der bedømmes
 
 **1. Navne, ikke omskrivninger.**
 "Oracle fyrer 21.000", aldrig "Kæmpe gigant fyrer 21.000". Et navn er ikke
@@ -62,6 +62,17 @@ udadtil, men heller ingen påstande om at være større, end vi er.
 **9. Gratis og for alle.**
 Ingen betalingsmur, ingen krav om login for at læse eller lære. Bruger vi
 penge, skal det være på indhold — ikke på maskineri.
+
+**10. Det skal nå nogen.**
+En fejlfri side, ingen læser, opfylder ikke sit formål. Siden findes for, at
+danskere ikke skal sakke bagud — og det tæller kun, hvis de finder den. Er der
+et sted, hvor godt arbejde ligger skjult, hvor Google ikke kan se os, eller hvor
+en åbenlys vej til flere læsere står ubrugt hen, er dét et problem på lige fod
+med en fejl i koden. Ofte et større.
+
+Bemærk: de ni første handler om, at det, vi laver, er godt nok. Det tiende
+handler om, at det overhovedet bliver set. De trækker ikke i samme retning, og
+det er meningen.
 
 ---
 

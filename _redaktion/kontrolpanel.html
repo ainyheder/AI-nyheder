@@ -22,10 +22,34 @@ body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color
 .brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:22px; letter-spacing:-.03em; }
 .brand em { font-style:normal; color:var(--accent); }
 .stempel { font-size:12px; color:var(--svag); margin-left:auto; }
-main { max-width:1080px; margin:0 auto; padding:32px 24px 100px; }
-h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:34px; letter-spacing:-.02em; margin-bottom:8px; }
-.manchet { font-size:16px; color:var(--svag); margin-bottom:26px; max-width:70ch; }
-h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; margin:34px 0 12px; }
+.app { display:flex; align-items:stretch; min-height:calc(100vh - 57px); }
+.side { width:262px; flex:none; border-right:1px solid var(--linje);
+  padding:18px 12px 90px; position:sticky; top:57px; align-self:flex-start;
+  max-height:calc(100vh - 57px); overflow-y:auto; }
+.side-gruppe { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--svag); padding:14px 12px 7px; }
+.side-punkt { display:flex; align-items:center; gap:9px; width:100%; text-align:left;
+  font:inherit; font-size:13.5px; background:none; border:0; border-radius:9px;
+  padding:8px 11px; cursor:pointer; color:var(--blaek); line-height:1.35; }
+.side-punkt:hover { background:color-mix(in srgb, var(--blaek) 5%, transparent); }
+.side-punkt.valgt { background:var(--accent-svag); color:var(--accent); font-weight:600; }
+.side-punkt .nr { width:20px; height:20px; border-radius:50%; flex:none;
+  background:color-mix(in srgb, var(--blaek) 8%, transparent); color:var(--svag);
+  font-size:10.5px; font-weight:700; display:grid; place-items:center; }
+.side-punkt.valgt .nr { background:var(--accent); color:#fff; }
+.side-punkt .prik { width:7px; height:7px; border-radius:50%; background:var(--groen); flex:none; margin-left:auto; }
+.ind { flex:1; min-width:0; padding:26px 34px 96px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:30px; letter-spacing:-.02em; margin-bottom:6px; }
+.manchet { font-size:15px; color:var(--svag); margin-bottom:22px; max-width:80ch; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; margin:0 0 12px; }
+@media (max-width:900px) {
+  .app { display:block; }
+  .side { width:auto; position:static; max-height:none; border-right:0;
+    border-bottom:1px solid var(--linje); display:flex; flex-wrap:wrap; gap:4px; padding:10px; }
+  .side-gruppe { width:100%; padding:6px 8px 2px; }
+  .side-punkt { width:auto; }
+  .ind { padding:20px 16px 96px; }
+}
 .advarsel { background:#fdf3e3; border-left:3px solid var(--rav); border-radius:0 10px 10px 0;
   padding:13px 17px; font-size:14px; margin-bottom:24px; }
 .flow { background:var(--kort); border:1px solid var(--linje); border-radius:16px; padding:20px; box-shadow:var(--skygge); }
@@ -38,7 +62,7 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   display:grid; place-items:center; flex:none; }
 .etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:17px; }
 .etape-hvornaar { font-size:12px; color:var(--svag); margin-left:auto; }
-.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(238px,1fr)); gap:10px; }
+.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:12px; }
 .pil { text-align:center; color:#b4b2a9; font-size:17px; line-height:1; margin:2px 0 10px; }
 .ikke { background:color-mix(in srgb, var(--blaek) 4%, transparent);
   border:1px dashed var(--linje); border-radius:12px; padding:13px 16px; }
@@ -56,6 +80,27 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   background:#f6ecd8; border-radius:5px; padding:2px 7px; display:inline-block; }
 .dok.laes .f { color:var(--svag); background:color-mix(in srgb, var(--blaek) 6%, transparent); }
 .dok .flag { font-size:10.5px; font-weight:700; color:var(--groen); margin-left:6px; }
+/* Køen som læsbar liste */
+.kliste { margin:4px 0 0; }
+.kgruppe { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--svag); margin:20px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--linje); }
+.kgruppe:first-child { margin-top:4px; }
+.kpunkt { display:flex; gap:12px; align-items:flex-start; background:var(--kort);
+  border:1px solid var(--linje); border-radius:11px; padding:11px 13px; margin-bottom:7px; }
+.kpunkt.top { border-color:var(--accent); border-left:4px solid var(--accent); }
+.knr { width:22px; height:22px; border-radius:50%; flex:none; margin-top:1px;
+  background:color-mix(in srgb, var(--blaek) 7%, transparent); color:var(--svag);
+  font-size:11px; font-weight:700; display:grid; place-items:center; }
+.kpunkt.top .knr { background:var(--accent); color:#fff; }
+.ktekst { flex:1; min-width:0; }
+.ktitel { font-size:14px; font-weight:600; line-height:1.4; }
+.kdetalje { font-size:12.5px; color:var(--svag); line-height:1.5; margin-top:3px; }
+.kknapper { display:flex; gap:3px; flex:none; }
+.kknapper button { width:27px; height:27px; border-radius:7px; border:1px solid var(--linje);
+  background:var(--bg); cursor:pointer; font-size:12px; color:var(--svag); line-height:1; padding:0; }
+.kknapper button:hover { border-color:var(--accent); color:var(--accent); }
+.kknapper button.ok:hover { border-color:var(--groen); color:var(--groen); }
+.ktom { color:var(--svag); font-size:14px; padding:20px 0; }
 .hj { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--linje);
   border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
   transition:transform .12s, border-color .12s; }
@@ -100,29 +145,14 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   <span class="stempel" id="stempel"></span>
 </div>
 
-<main>
-<h1>Hvem tænker hvad</h1>
-<p class="manchet">Hver kasse er et arbejdstrin med sin egen model og sin egen instruks.
-Klik på en kasse for at læse eller ændre den. Ændringerne hentes som en fil, du lægger
-i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
-
-<div class="advarsel" id="advarsel" hidden></div>
-
-<h2>Arbejdsflowet</h2>
-<p class="manchet" style="margin-bottom:18px">Rækkefølgen herunder er den, crawleren
-faktisk arbejder i. <strong>Alle de hvide kasser kan klikkes og ændres.</strong>
-De grå er ikke AI — de gør bare noget mekanisk.</p>
-<div id="flow"></div>
-
-<h2>Natteloopet</h2>
-<p class="manchet" style="margin-bottom:18px">Mens crawleren kører hver time, kører
-det her loop én gang i døgnet: maskinen ser på siden, skriver hvad der bør laves,
-og en session om natten laver det. <strong>De tre gule kasser styrer det hele</strong>
-— de er ikke prompts, men dokumenter, du kan skrive i.</p>
-<div id="natflow"></div>
-
-<div class="tom" id="tomboks" hidden></div>
-</main>
+<div class="app">
+  <aside class="side" id="side"></aside>
+  <main class="ind">
+    <div class="advarsel" id="advarsel" hidden></div>
+    <div id="rude"></div>
+    <div class="tom" id="tomboks" hidden></div>
+  </main>
+</div>
 
 <div class="bund">
   <span class="tekst" id="bundtekst">Ingen ændringer endnu</span>
@@ -138,7 +168,6 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
 <script>
 (function () {
   var S = window.HJERNE_STATUS;
-  var net = document.getElementById("flow");
   var adv = document.getElementById("advarsel");
 
   if (!S) {
@@ -226,35 +255,80 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
       '<span class="m">' + esc(aktivModel(n)) + "</span></button>";
   }
 
-  function tegn() {
-    var brugt = {};
-    net.innerHTML = ETAPER.map(function (e, i) {
-      var kasser = (e.ikke || []).map(function (k) {
-        return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
-               '<div class="b">' + esc(k[1]) + "</div></div>";
-      }).concat((e.trin || []).map(function (n) { brugt[n] = 1; return trinHtml(n); }));
-      return '<div class="etape"><div class="etape-top">' +
-        '<span class="etape-nr">' + (i + 1) + "</span>" +
-        '<span class="etape-navn">' + esc(e.navn) + "</span>" +
-        '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span></div>" +
-        '<div class="net">' + kasser.join("") + "</div></div>" +
-        (i < ETAPER.length - 1 ? '<div class="pil">↓</div>' : "");
+  var side = document.getElementById("side");
+  var rude = document.getElementById("rude");
+  var valgt = null;
+
+  function alleEtaper() {
+    var ud = [];
+    ETAPER.forEach(function (e, i) {
+      ud.push({ id: "c" + i, gruppe: "Crawleren · hver time", nr: i + 1,
+                navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, trin: e.trin });
+    });
+    NATETAPER.forEach(function (e, i) {
+      ud.push({ id: "n" + i, gruppe: "Natteloopet · hvert døgn", nr: i + 1,
+                navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, dok: e.dok });
+    });
+    var placeret = {};
+    ud.forEach(function (e) { (e.trin || []).forEach(function (t) { placeret[t] = 1; }); });
+    var glemte = Object.keys(S.hjerner).filter(function (n) { return !placeret[n]; });
+    if (glemte.length) ud.push({ id: "x", gruppe: "Crawleren · hver time", nr: "?",
+      navn: "Ikke placeret i flowet", hvornaar: "", trin: glemte });
+    return ud;
+  }
+
+  function etapeAendret(e) {
+    return (e.trin || []).some(erAendret) || (e.dok || []).some(dokErAendret);
+  }
+
+  function tegnSide() {
+    var alle = alleEtaper(), sidsteGruppe = null;
+    side.innerHTML = alle.map(function (e) {
+      var g = e.gruppe !== sidsteGruppe ? '<div class="side-gruppe">' + esc(e.gruppe) + "</div>" : "";
+      sidsteGruppe = e.gruppe;
+      return g + '<button class="side-punkt' + (e.id === valgt ? " valgt" : "") +
+        '" data-etape="' + e.id + '"><span class="nr">' + e.nr + "</span>" +
+        "<span>" + esc(e.navn) + "</span>" +
+        (etapeAendret(e) ? '<span class="prik" title="ændret"></span>' : "") + "</button>";
     }).join("");
+  }
 
-    // Værn: skulle crawleren få et nyt trin, som jeg har glemt at placere,
-    // dukker det op her i stedet for at forsvinde ud af panelet.
-    var glemte = Object.keys(S.hjerner).filter(function (n) { return !brugt[n]; });
-    if (glemte.length) {
-      net.innerHTML += '<div class="etape"><div class="etape-top">' +
-        '<span class="etape-navn">Ikke placeret i flowet endnu</span></div>' +
-        '<div class="net">' + glemte.map(trinHtml).join("") + "</div></div>";
-    }
+  function tegnRude() {
+    var e = alleEtaper().filter(function (x) { return x.id === valgt; })[0];
+    if (!e) return;
+    var kasser = (e.ikke || []).map(function (k) {
+      return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
+             '<div class="b">' + esc(k[1]) + "</div></div>";
+    }).concat((e.trin || []).map(trinHtml)).concat((e.dok || []).map(dokHtml));
+    var hjaelp = e.dok
+      ? "Gule kasser er dokumenter, du kan skrive i — de styrer natteloopet. Grå og stiplede skriver maskinen selv."
+      : "Hvide kasser er AI-trin: klik for at skifte model eller instruks. Grå og stiplede er ikke AI.";
+    rude.innerHTML = "<h1>" + esc(e.navn) + "</h1>" +
+      '<p class="manchet">' + (e.hvornaar ? "<strong>" + esc(e.hvornaar) + "</strong> · " : "") +
+      hjaelp + "</p>" + '<div class="net">' + kasser.join("") + "</div>";
+  }
 
-    var n = Object.keys(S.hjerner).filter(erAendret).length;
+  function tegn() {
+    if (!valgt) valgt = "c1";
+    tegnSide(); tegnRude();
+    var n = Object.keys(S.hjerner).filter(erAendret).length +
+            Object.keys(dokAendret).filter(dokErAendret).length;
     document.getElementById("bundtekst").textContent = n === 0
       ? "Ingen ændringer endnu"
-      : n + " trin er ændret — husk at gemme";
+      : n + " ting er ændret — husk at gemme";
   }
+  function tegnNat() { tegn(); }
+
+  side.addEventListener("click", function (ev) {
+    var k = ev.target.closest(".side-punkt");
+    if (k) { valgt = k.dataset.etape; tegn(); window.scrollTo(0, 0); }
+  });
+  rude.addEventListener("click", function (ev) {
+    var t = ev.target.closest(".hj");
+    if (t) { aabn(t.dataset.n); return; }
+    var d = ev.target.closest(".dok");
+    if (d) aabnDok(d.dataset.dok);
+  });
 
   var bag = document.getElementById("bag"), modal = document.getElementById("modal");
   function luk() { bag.classList.remove("aaben"); document.body.style.overflow = ""; }
@@ -294,12 +368,8 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
       tegn(); luk();
     });
   }
-  net.addEventListener("click", function (e) {
-    var k = e.target.closest(".hj"); if (k) aabn(k.dataset.n);
-  });
 
   // ---- Natteloopet: dokumenter i stedet for prompts ----
-  var natflow = document.getElementById("natflow");
   var DOK = {};
   (S.natteloop || []).forEach(function (d) { DOK[d.noegle] = d; });
   var dokAendret = {};        // noegle -> ny tekst, kun i denne session
@@ -334,24 +404,143 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
       '<span class="f">' + esc(d.fil) + (d.kan_rettes ? "" : " · kun læsning") + "</span></button>";
   }
 
-  function tegnNat() {
-    natflow.innerHTML = NATETAPER.map(function (e, i) {
-      var kasser = (e.ikke || []).map(function (k) {
-        return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
-               '<div class="b">' + esc(k[1]) + "</div></div>";
-      }).concat((e.dok || []).map(dokHtml));
-      return '<div class="etape"><div class="etape-top">' +
-        '<span class="etape-nr" style="background:var(--rav)">' + (i + 1) + "</span>" +
-        '<span class="etape-navn">' + esc(e.navn) + "</span>" +
-        '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span></div>" +
-        '<div class="net">' + kasser.join("") + "</div></div>" +
-        (i < NATETAPER.length - 1 ? '<div class="pil">↓</div>' : "");
+  // ---- Køen som liste: parse, vis, byg om ----
+  // Filen har tre dele: alt før "## Kø", selve køen, og alt fra "## Klaret".
+  // Vi rører kun den midterste, så "Klaret" og "Ting kun Torben kan gøre"
+  // altid overlever, uanset hvad der flyttes rundt.
+  function parseKoe(tekst) {
+    var iKoe = tekst.indexOf("## Kø");
+    var iKlaret = tekst.indexOf("## Klaret");
+    if (iKoe < 0 || iKlaret < 0 || iKlaret < iKoe) return null;
+    var hoved = tekst.slice(0, iKoe + "## Kø".length);
+    var hale = tekst.slice(iKlaret);
+    var krop = tekst.slice(iKoe + "## Kø".length, iKlaret);
+    var blokke = [], nu = null;
+    krop.split("\n").forEach(function (l) {
+      var h = l.match(/^#{3,4}\s+(.*\S)\s*$/);
+      var p = l.match(/^- \[( |x)\] ?(.*)$/);
+      if (h) { nu = null; blokke.push({ type: "gruppe", tekst: h[1] }); }
+      else if (p) { nu = { type: "punkt", faerdig: p[1] === "x", linjer: [p[2]] }; blokke.push(nu); }
+      else if (nu && l.trim()) { nu.linjer.push(l.trim()); }
+      else { nu = null; }
+    });
+    return { hoved: hoved, hale: hale, blokke: blokke };
+  }
+
+  function byggKoe(k) {
+    var ud = [k.hoved, ""];
+    k.blokke.forEach(function (b) {
+      if (b.type === "gruppe") { ud.push("", "### " + b.tekst, ""); return; }
+      ud.push("- [" + (b.faerdig ? "x" : " ") + "] " + b.linjer[0]);
+      b.linjer.slice(1).forEach(function (l) { ud.push("      " + l); });
+      ud.push("");
+    });
+    ud.push("---", "");
+    return ud.join("\n").replace(/\n{4,}/g, "\n\n\n") + k.hale;
+  }
+
+  function titelAf(p) {
+    var m = p.linjer[0].match(/^\*\*(.+?)\*\*/);
+    return m ? m[1] : p.linjer[0].replace(/\*\*/g, "");
+  }
+  function restAf(p) {
+    var f = p.linjer[0].replace(/^\*\*.+?\*\*/, "").trim();
+    return [f].concat(p.linjer.slice(1)).join(" ")
+      .replace(/\*\*/g, "").replace(/\*/g, "").replace(/\s+/g, " ").trim();
+  }
+
+  var koeData = null;
+
+  function tegnKoeliste() {
+    var vaert = document.getElementById("kliste");
+    if (!vaert || !koeData) return;
+    var nr = 0;
+    var aabne = koeData.blokke.filter(function (b) { return b.type === "punkt" && !b.faerdig; });
+    if (!aabne.length) {
+      vaert.innerHTML = '<div class="ktom">Køen er tom. Natsessionen fylder den selv, ' +
+        "næste gang den gennemgår siden.</div>";
+      return;
+    }
+    vaert.innerHTML = koeData.blokke.map(function (b, i) {
+      if (b.type === "gruppe") return '<div class="kgruppe">' + esc(b.tekst) + "</div>";
+      if (b.faerdig) return "";
+      nr++;
+      var rest = restAf(b);
+      return '<div class="kpunkt' + (nr === 1 ? " top" : "") + '">' +
+        '<span class="knr">' + nr + "</span>" +
+        '<div class="ktekst"><div class="ktitel">' + esc(titelAf(b)) + "</div>" +
+        (rest ? '<div class="kdetalje">' + esc(rest) + "</div>" : "") + "</div>" +
+        '<div class="kknapper">' +
+        '<button data-flyt="op" data-i="' + i + '" title="Op">↑</button>' +
+        '<button data-flyt="ned" data-i="' + i + '" title="Ned">↓</button>' +
+        '<button class="ok" data-flyt="klaret" data-i="' + i + '" title="Markér som klaret">✓</button>' +
+        "</div></div>";
     }).join("");
+  }
+
+  function koeKlik(ev) {
+    var b = ev.target.closest("[data-flyt]");
+    if (!b || !koeData) return;
+    var i = +b.dataset.i, blokke = koeData.blokke;
+    if (b.dataset.flyt === "klaret") {
+      var p = blokke.splice(i, 1)[0];
+      p.faerdig = true;
+      p.linjer[0] += " *(klaret " + new Date().toISOString().slice(0, 10) + ")*";
+      koeData.hale = koeData.hale.replace(/^## Klaret\n/,
+        "## Klaret\n\n- [x] " + p.linjer[0] + "\n");
+    } else {
+      var ret = b.dataset.flyt === "op" ? -1 : 1, j = i + ret;
+      while (j >= 0 && j < blokke.length && blokke[j].type !== "punkt") j += ret;
+      if (j < 0 || j >= blokke.length) return;
+      var t = blokke[i]; blokke[i] = blokke[j]; blokke[j] = t;
+    }
+    dokAendret.opgavekoe = byggKoe(koeData);
+    tegnKoeliste();
+    var ta = document.getElementById("dTekst");
+    if (ta) ta.value = dokAendret.opgavekoe;
+    tegn();
   }
 
   function aabnDok(k) {
     var d = DOK[k];
     var kan = d.kan_rettes;
+    if (k === "opgavekoe") {
+      koeData = parseKoe(dokTekst(k));
+      if (koeData) {
+        modal.innerHTML =
+          '<button class="luk" id="mLuk">✕</button>' +
+          "<h3>Opgavekøen</h3>" +
+          '<div class="b">Rækkefølgen er dét, der bliver lavet. Øverste punkt tages i nat. ' +
+          "Flyt med pilene, eller markér som klaret med fluebenet.</div>" +
+          '<div class="kliste" id="kliste"></div>' +
+          '<div class="raekke">' +
+          '<button class="k fyldt" id="dGem">Gem opgavekoe.md</button>' +
+          '<button class="k" id="dTekstSkift">Rediger som tekst</button>' +
+          '<button class="k" id="dFortryd">Fortryd mine ændringer</button></div>' +
+          '<div id="tekstrude" hidden><label>Rå fil</label>' +
+          '<textarea id="dTekst" spellcheck="false" style="min-height:420px">' +
+          esc(dokTekst(k)) + "</textarea></div>";
+        bag.classList.add("aaben");
+        document.body.style.overflow = "hidden";
+        tegnKoeliste();
+        document.getElementById("kliste").addEventListener("click", koeKlik);
+        document.getElementById("mLuk").addEventListener("click", luk);
+        document.getElementById("dTekstSkift").addEventListener("click", function () {
+          var r = document.getElementById("tekstrude");
+          r.hidden = !r.hidden;
+          this.textContent = r.hidden ? "Rediger som tekst" : "Skjul teksten";
+        });
+        document.getElementById("dFortryd").addEventListener("click", function () {
+          delete dokAendret.opgavekoe; koeData = null; tegn(); luk();
+        });
+        gemKnap(k, d, function () {
+          var ta = document.getElementById("dTekst");
+          return (ta && !document.getElementById("tekstrude").hidden)
+            ? ta.value : dokTekst(k);
+        });
+        return;
+      }
+    }
     modal.innerHTML =
       '<button class="luk" id="mLuk">✕</button>' +
       "<h3>" + esc(d.navn) + "</h3>" +
@@ -370,45 +559,50 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
     if (!kan) return;
 
     function tekst() { return document.getElementById("dTekst").value; }
-    function hent() {
-      var b = new Blob([tekst()], { type: "text/markdown" });
-      var a = document.createElement("a");
-      a.href = URL.createObjectURL(b); a.download = d.fil;
-      document.body.appendChild(a); a.click(); a.remove();
-    }
     document.getElementById("dHent").addEventListener("click", function () {
-      dokAendret[k] = tekst(); tegnNat(); hent();
+      dokAendret[k] = tekst(); tegn(); hentDok(d, tekst());
     });
     document.getElementById("dFortryd").addEventListener("click", function () {
-      delete dokAendret[k]; tegnNat(); luk();
+      delete dokAendret[k]; tegn(); luk();
     });
-    document.getElementById("dGem").addEventListener("click", async function () {
-      var knap = this;
-      dokAendret[k] = tekst();
-      tegnNat();
+    gemKnap(k, d, tekst);
+  }
+
+  function hentDok(d, tekst) {
+    var b = new Blob([tekst], { type: "text/markdown" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(b); a.download = d.fil;
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+
+  // Fælles gem-knap for alle dokumenter - både listen og den rå tekst.
+  function gemKnap(k, d, tekstFn) {
+    var knap = document.getElementById("dGem");
+    if (!knap) return;
+    knap.addEventListener("click", async function () {
+      var t = tekstFn();
+      dokAendret[k] = t;
+      tegn();
       function kvitter(b) {
         knap.textContent = b;
         setTimeout(function () { knap.textContent = "Gem " + d.fil; }, 2200);
       }
-      if (!window.showSaveFilePicker) { hent(); kvitter("Hentet i stedet ↓"); return; }
+      if (!window.showSaveFilePicker) { hentDok(d, t); kvitter("Hentet i stedet ↓"); return; }
       try {
         var h = await window.showSaveFilePicker({
           suggestedName: d.fil,
           types: [{ description: "Markdown", accept: { "text/markdown": [".md"] } }]
         });
         var w = await h.createWritable();
-        await w.write(tekst());
+        await w.write(t);
         await w.close();
         kvitter("Gemt ✓ — push nu");
       } catch (fejl) {
         if (fejl && fejl.name === "AbortError") return;
-        hent(); kvitter("Kunne ikke gemme — hentet ↓");
+        hentDok(d, t); kvitter("Kunne ikke gemme — hentet ↓");
       }
     });
   }
-  natflow.addEventListener("click", function (e) {
-    var k = e.target.closest(".dok"); if (k) aabnDok(k.dataset.dok);
-  });
 
   function json() {
     var ud = {};
@@ -472,7 +666,6 @@ og en session om natten laver det. <strong>De tre gule kasser styrer det hele</s
   });
 
   tegn();
-  tegnNat();
 })();
 </script>
 </body>
