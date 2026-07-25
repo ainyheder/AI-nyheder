@@ -293,7 +293,6 @@ a.pill { text-decoration: none; display: inline-block; }
 .brief-klik { cursor: pointer; transition: color .12s; }
 .brief-klik:hover { color: #fff; }
 .brief-klik:hover::after { content: " →"; color: #a99ff7; font-weight: 700; }
-.brief-note { font-size: 11.5px; color: #8f897e; margin-top: 12px; }
 /* Kompakt liste under dagens topkort */
 .mikro-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2px 30px; margin-bottom: 34px; }
@@ -1191,7 +1190,7 @@ function tegn() {
 
   const paaDansk = artikler.filter(a => a.rubrik).length;
   const note = paaDansk === 0 ? `<div class="note">🔑 AI-omskrivningen er ikke aktiveret endnu — historierne vises på engelsk.
-      Tilføj en <code>ANTHROPIC_API_KEY</code>-secret i GitHub, så oversætter siden sig selv ved næste opdatering.</div>` : "";
+      Tilføj en <code>DEEPSEEK_API_KEY</code>- eller <code>GEMINI_API_KEY</code>-secret i GitHub, så oversætter siden sig selv ved næste opdatering.</div>` : "";
 
   // Hero = dagens vigtigste historie. Er der intet fra det seneste døgn,
   // siger etiketten det ærligt i stedet for at kalde en gammel historie "dagens".
@@ -1394,8 +1393,7 @@ function visDagensBrief() {
         <div class="brief-top"><span class="brief-kicker">Dagens overblik — på 60 sekunder</span>
           <span class="brief-dato">${esc(datoTekst)}</span></div>
         <ol class="brief-liste">${d.punkter.map(p =>
-          `<li${p.link ? ` class="brief-klik" data-link="${esc(p.link)}"` : ""}>${esc(p.tekst)}</li>`).join("")}</ol>
-        <div class="brief-note">Skrevet automatisk ud fra døgnets vigtigste historier · klik på et punkt og læs hele historien</div>`;
+          `<li${p.link ? ` class="brief-klik" data-link="${esc(p.link)}"` : ""}>${esc(p.tekst)}</li>`).join("")}</ol>`;
       boks.hidden = false;
       boks.addEventListener("click", e => {
         const li = e.target.closest(".brief-klik");

@@ -3,8 +3,8 @@
 AI-nyheder - crawler + AI-omskrivning
 ===================================
 1. Henter AI-nyheder fra RSS/Atom-feeds (feeds.json)
-2. Omskriver hver artikel til ULTRAKORT, letlæst dansk med Claude API
-   (springes over hvis ANTHROPIC_API_KEY ikke er sat - så vises originalen)
+2. Omskriver hver artikel til ULTRAKORT, letlæst dansk med DeepSeek eller Gemini
+   (springes over hvis ingen API-nøgle er sat - så vises originalen)
 3. Gemmer alt i data/articles.json, som hjemmesiden læser
 
 Kør:  python3 crawler.py
@@ -37,21 +37,19 @@ MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
 TIMEOUT_SEK = 20
 
 # --- AI-omskrivning (Claude ELLER Gemini - crawleren bruger den nøgle der findes) ---
-CLAUDE_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
-CLAUDE_MODEL = "claude-haiku-4-5"          # $1/$5 pr. mio. tokens
-GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst (lanceret 21/7-2026)
+GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
 GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
 DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
-# Er flere nøgler sat, vinder AI_UDBYDER ("deepseek", "gemini" eller "claude").
-# Ellers vælges den billigste tilgængelige: DeepSeek → Gemini → Claude.
+# Er begge nøgler sat, vinder AI_UDBYDER ("deepseek" eller "gemini").
+# Ellers vælges den billigste tilgængelige: DeepSeek → Gemini.
+# (Gemini-nøglen bruges under alle omstændigheder til artikelbillederne.)
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
-    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "claude" if CLAUDE_KEY else "")
-API_KEY = {"claude": CLAUDE_KEY, "gemini": GEMINI_KEY,
-           "deepseek": DEEPSEEK_KEY}.get(UDBYDER, "")
+    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "")
+API_KEY = {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY}.get(UDBYDER, "")
 
 BATCH_STR = 10                   # artikler pr. API-kald (korte resuméer)
 MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
@@ -300,20 +298,6 @@ def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
         })
         return json.loads(svar)["choices"][0]["message"]["content"]
 
-    if UDBYDER == "claude":
-        body = json.dumps({
-            "model": CLAUDE_MODEL,
-            "max_tokens": max_tokens,
-            "system": system,
-            "messages": [{"role": "user", "content": bruger_tekst}],
-        }).encode()
-        svar = hent_url("https://api.anthropic.com/v1/messages", data=body, headers={
-            "x-api-key": API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        })
-        return json.loads(svar)["content"][0]["text"]
-
     # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises
     global _gemini_model
     body = json.dumps({
@@ -344,6 +328,19 @@ def parse_json_svar(raa: str):
     """Fjerner evt. kodehegn og parser modellens JSON-svar."""
     raa = re.sub(r"^```(json)?\s*|\s*```$", "", raa.strip())
     return json.loads(raa)
+
+
+def parse_json_objekt(raa: str) -> dict:
+    """Som parse_json_svar, men garanterer en dict.
+
+    Modellerne er ikke enige med sig selv: nogle svarer {...}, andre pakker
+    det samme objekt i et array, [{...}]. Uden denne udpakning fejler hvert
+    eneste kald med AttributeError ('list' har ingen .get) - og fejlen er
+    stille, så artiklerne bare står uden brief."""
+    r = parse_json_svar(raa)
+    if isinstance(r, list):
+        r = next((x for x in r if isinstance(x, dict)), None)
+    return r if isinstance(r, dict) else {}
 
 
 def kald_ai_batch(artikler: list[dict]) -> list[dict] | None:
@@ -484,12 +481,12 @@ def redaktoer_tjek(a: dict) -> dict | None:
         udkast = {"rubrik": a.get("rubrik"), "resume": a.get("resume_da"),
                   "sektioner": a.get("sektioner"), "noegletal": a.get("noegletal"),
                   "betydning": a.get("betydning"), "kategori": a.get("kategori")}
-        r = parse_json_svar(kald_ai(
+        r = parse_json_objekt(kald_ai(
             SYSTEM_REDAKTOER, json.dumps(udkast, ensure_ascii=False), 400))
         if isinstance(r, dict) and "godkendt" in r:
             return r
     except Exception as fejl:
-        print(f"  ⚠️  Redaktør-tjek fejlede: {type(fejl).__name__}")
+        print(f"  ⚠️  Redaktør-tjek fejlede: {type(fejl).__name__}: {fejl}")
     return None
 
 
@@ -506,12 +503,12 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
         if redaktoer_noter:
             bruger += ("\n\nREDAKTØRENS NOTER TIL DIT FORRIGE UDKAST - "
                        f"RET PRÆCIS DISSE PROBLEMER:\n{redaktoer_noter}")
-        r = parse_json_svar(kald_ai(
+        r = parse_json_objekt(kald_ai(
             sys_prompt, bruger, 2200 if er_vigtig else 1500))
         if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
             return r
     except Exception as fejl:
-        print(f"  ⚠️  Brief-kald fejlede ({a['kilde']}): {type(fejl).__name__}")
+        print(f"  ⚠️  Brief-kald fejlede ({a['kilde']}): {type(fejl).__name__}: {fejl}")
     return None
 
 
@@ -530,7 +527,7 @@ def dybe_briefs(artikler: list[dict]) -> None:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
     if not API_KEY:
-        print("📰 Ingen AI-nøgle sat (ANTHROPIC_API_KEY/GEMINI_API_KEY) - springer dybe briefs over")
+        print("📰 Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY) - springer dybe briefs over")
         return
 
     print(f"📰 Henter og genfortæller {len(kandidater)} artikler i fuld længde …")
@@ -1047,7 +1044,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
         print("✍️  Alle artikler er allerede omskrevet (cache)")
         return
     if not API_KEY:
-        print(f"✍️  Ingen AI-nøgle sat (ANTHROPIC_API_KEY/GEMINI_API_KEY) - springer omskrivning over "
+        print(f"✍️  Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY) - springer omskrivning over "
               f"({len(mangler)} artikler vises på engelsk)")
         return
 
@@ -1389,7 +1386,7 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
                 "betydning": a.get("betydning", "")[:200], "kategori": a.get("kategori"),
                 "link": a["link"]} for a in friske[:8]]
     try:
-        r = parse_json_svar(kald_ai(SYSTEM_UGE, json.dumps(payload, ensure_ascii=False), 2500))
+        r = parse_json_objekt(kald_ai(SYSTEM_UGE, json.dumps(payload, ensure_ascii=False), 2500))
         if not (r.get("rubrik") and len(r.get("historier", [])) >= 3):
             raise ValueError("ufuldstændigt uge-svar")
     except Exception as fejl:
@@ -1596,7 +1593,7 @@ def lav_dagens_prompt() -> None:
             return  # dagens prompt findes allerede
 
         titler = [p.get("titel", "") for p in arkiv.get("prompts", [])][:60]
-        r = parse_json_svar(kald_ai(
+        r = parse_json_objekt(kald_ai(
             SYSTEM_KARTOTEK,
             "Dags dato: " + dag + ". Tidligere titler (undgå gentagelser): "
             + json.dumps(titler, ensure_ascii=False),
@@ -2169,7 +2166,7 @@ def yt_kald_ai(v: dict, transkript: str, kapitler: list[dict],
             bruger += f"\n\nTRANSKRIPT MED TIDSSTEMPLER:\n{transkript}"
         else:
             bruger += f"\n\nKANALENS BESKRIVELSE AF VIDEOEN:\n{beskrivelse[:4000]}"
-        r = parse_json_svar(kald_ai(
+        r = parse_json_objekt(kald_ai(
             SYSTEM_YT + ("" if transkript else SYSTEM_YT_UDEN_TRANSKRIPT),
             bruger, 1800))
         # Uden transkript er højdepunkter valgfrie - resuméet er stadig værdifuldt
@@ -2378,8 +2375,6 @@ def main() -> None:
         print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
     elif UDBYDER == "deepseek":
         print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (tænkning slået fra)")
-    elif UDBYDER == "claude":
-        print(f"🤖 Tekstmodel: Claude · {CLAUDE_MODEL}")
     else:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     if GEMINI_KEY:
