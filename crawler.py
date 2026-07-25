@@ -416,9 +416,16 @@ def _standard_prompts() -> dict:
 
 
 def skriv_hjerne_status() -> None:
-    """Skriver hvad der FAKTISK kører lige nu, så kontrolpanelet kan vise
-    sandheden i stedet for hvad filen påstår. Skrives både som JSON og som en
-    JS-fil, så panelet kan åbnes direkte fra mappen uden en webserver."""
+    """Data til kontrolpanelet: hvilke modeller og instrukser der er i brug,
+    og natteloopets dokumenter. Skrives både som JSON og som en JS-fil, så
+    panelet kan åbnes direkte fra mappen uden en webserver.
+
+    KUN LOKALT. På GitHubs servere springes det over med vilje: filerne
+    genskrives ved hver kørsel, og skriver både robotten og os i dem, giver
+    det en merge-konflikt hver gang. Én skribent, ingen konflikter. Indholdet
+    ændrer sig alligevel kun, når VI ændrer en prompt eller en model."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        return
     daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else GEMINI_MODEL
     std = _standard_prompts()
     status = {
