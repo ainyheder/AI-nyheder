@@ -1,24 +1,290 @@
 {
-  "opdateret": "2026-07-25T20:33:43.289002+00:00",
-  "antal": 105,
+  "opdateret": "2026-07-25T20:56:11.210488+00:00",
+  "antal": 109,
   "artikler": [
     {
+      "titel": "Open-weight AI is having its Kubernetes moment",
+      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 233 # Comments: 169",
+      "dato": "2026-07-25T14:49:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-25T20:56:11.210488+00:00",
+      "rubrik": "Open-weight AI kan få samme storhed som Kubernetes",
+      "resume_da": "Open-weight AI-modeller ligner efterhånden en ny standard, som udviklere verden over kan bygge på. Ekspert advarer USA mod at lukke sig ude.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Lektion fra it-historien",
+          "tekst": "Da Kubernetes vandt frem, skete det ikke bare, fordi koden var offentlig. Det blev et fælles fundament, som alle kunne bygge videre på – og dermed overgik innovationen, hvad én enkelt virksomhed kunne præstere. Samme dynamik kan nu gentage sig med open-weight AI-modeller, der giver frihed til at tilpasse og redistribuere."
+        },
+        {
+          "overskrift": "Kinas modeller vokser hurtigt",
+          "tekst": "Hugging Face viser, at kinesiske modeller står for **41 %** af alle downloads det seneste år. Samtidig nærmer flere åbne modeller sig de lukkede konkurrenter på svære opgaver som kodeforståelse. GLM-5.2 opnår **62,1 %** på SWE-bench Pro mod GPT-5.5's 58,6 %, og Kimi K3 vurderes på niveau med Opus 4.8 og GPT-5.5."
+        },
+        {
+          "overskrift": "Truslen fra et forbud",
+          "tekst": "Washington overvejer angiveligt restriktioner mod kinesiske open-weight-modeller. En bred blokade ville ifølge artiklens forfatter afskære USA fra et økosystem, der allerede tiltrækker verdens bedste AI-forskere. Resten af verden ville bare fortsætte uden amerikanerne."
+        },
+        {
+          "overskrift": "Sådan kan USA konkurrere",
+          "tekst": "I stedet for at lukke sig ude bør USA udgive stærke open-weight-modeller, startups kan bygge på. Regeringen kan også bruge indkøbsmagt til at fremme åbne systemer frem for afhængighed af én API-leverandør. Det har Forsvarsministeriet gjort før med Platform One."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "41 %",
+          "label": "downloads fra kinesiske modeller på Hugging Face"
+        },
+        {
+          "tal": "62,1 %",
+          "label": "GLM-5.2 på SWE-bench Pro mod GPT-5.5's 58,6 %"
+        }
+      ],
+      "detaljer": [
+        "Kubernetes vandt ved at blive et neutralt fundament, alle kunne bygge på.",
+        "Open-weight-modeller lader dig downloade og ændre parametre, ikke træningsdata.",
+        "Hugging Face rummer over 2 millioner offentlige modeller.",
+        "Kimi K3's vægte udgives 27. juli ifølge Moonshot.",
+        "NVIDIA, Thinking Machines, OpenAI og Google har udgivet åbne modeller.",
+        "Platform One i Forsvarsministeriet er model for åbne indkøb.",
+        "Kinesiske modeller tegnede sig for 41 % af Hugging Face-downloads på et år."
+      ],
+      "betydning": "Du og din virksomhed vil kunne bygge avancerede AI-løsninger uden at være låst til én udbyder – hvis den åbne udvikling fortsætter.",
+      "pointer": [
+        "Open-weight-modeller bliver tidens nye platform.",
+        "Kinas modeller nærmer sig vestens bedste.",
+        "Et amerikansk forbud kan gøre mere skade end gavn.",
+        "Åbne standarder driver innovation hurtigere end lukkede."
+      ],
+      "billedmotiv": "En bunke åbne, farvede kabelbokse med påskriften 'Open-weight' og 'Kubernetes' på en beige baggrund, med små grønne planter, der spirer op mellem boksene.",
+      "side": "artikel/b0b06661b8f45405.html"
+    },
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 212",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-25T20:56:11.210488+00:00",
+      "rubrik": "Myterne om åben AI holder ikke",
+      "resume_da": "Debatten om åben AI er fuld af dårlige argumenter. Her er hvorfor kritikken falder til jorden.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Forsøg på at stoppe åben software har sjældent virket. Da kryptering som PGP og **SSL** blev anset for farligt i **1990'erne**, forsøgte USA at begrænse det. Det lykkedes ikke – i stedet blev amerikanske virksomheder hæmmet, mens resten af verden frit kunne bruge teknologien."
+        },
+        {
+          "overskrift": "Hvem bestemmer, hvad der er kinesisk?",
+          "tekst": "Det er svært at afgøre, hvornår en AI-model er 'kinesisk'. Er den kinesisk, hvis den er trænet på en amerikansk model? Eller hvis en amerikanere finjusterer en kinesisk model? Regulering, der kun rammer kinesiske modeller, vil blot give amerikanere mere bureaukrati og dårligere adgang til AI."
+        },
+        {
+          "overskrift": "Fri software er fundamentet",
+          "tekst": "Al software, også AI, bygger på åbne lag. Uden open source-komponenter som programmeringssprog og web-servere ville hverken **Uber** eller avancerede AI-modeller eksistere. Virksomheder konkurrerer på det øverste lag, men samarbejder om det basale – det er sund fornuft."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Kritikere hævder, at åben AI er farlig og uamerikansk.",
+        "Open source er grundlaget for al moderne software, inklusive AI.",
+        "USA forsøgte forgæves at stoppe kryptering som PGP og SSL i 1990'erne.",
+        "Regulering, der kun rammer kinesiske modeller, er svær at håndhæve.",
+        "Kinesiske AI-modeller kan frit 'amerikaniseres' af enhver bruger."
+      ],
+      "betydning": "Du kommer til at se flere gratis AI-værktøjer, uanset hvad politikere prøver – ligesom internettet ikke lod sig stoppe.",
+      "pointer": [
+        "Åben AI kan ikke stoppes, kun forsinkes.",
+        "Regulering rammer oftest dem, der indfører den.",
+        "Kinesiske modeller kan tilpasses frit.",
+        "Softwarekonkurrence foregår på toppen, ikke i bunden."
+      ],
+      "billedmotiv": "En bunke printplader og mikrobrikker stablet op mod en mur af røde bøger med titlen 'Regulering', hvor en enkelt brik er faldet ud over muren.",
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+      "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+      "resume": "https://littletech.org/ https://static.politico.com/4a/bf/9c4021d8404386b0a311dcccf0... Comments URL: https://news.ycombinator.com/item?id=49023016 Points: 1058 # Comments: 870",
+      "dato": "2026-07-23T15:18:40+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-25T17:49:55.436275+00:00",
+      "rubrik": "AI-stiftere vil ikke have Kina lukket ude",
+      "resume_da": "Flere tech-virksomheder beder USA om ikke at forbyde kinesiske AI-modeller. De frygter, at et forbud rammer hele open source-bevægelsen.",
+      "kat_ai": true,
+      "prio": 6,
+      "billede": "data/img/a574e2684651ad46.jpg",
+      "billedmotiv": "En stak papir med en åben laptop ved siden af, hvorpå der står 'Open Source' og et kinesisk flag i baggrunden, placeret på et mødebord med kaffekopper.",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
+        }
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Hvem står bag brevet?",
+          "tekst": "En række store tech-virksomheder har skrevet et åbent brev til politikerne i USA. Det er blandt andet **Hugging Face, Meta, Microsoft, Mistral og Nvidia**, der advarer mod at lukke for adgangen til kinesiske AI-modeller. De mener, et forbud vil skade innovationen mere, end det gavner."
+        },
+        {
+          "overskrift": "Hvorfor nu det?",
+          "tekst": "Trump-administrationen overvejer at straffe kinesiske AI-selskaber for at stjæle teknologi. Bl.a. er **Moonshot AI** blevet beskyldt for at kopiere fra Anthropics model Fable for at lave sin egen Kimi K3. Det har fået politikerne til at tale om et totalt forbud mod kinesiske open source-modeller."
+        },
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Stifterne frygter, at et forbud mod kinesiske modeller i virkeligheden er et forbud mod open source-AI i det hele taget. **Amjad Masad, CEO hos Replit**, siger det lige ud: 'At forbyde kinesiske open-modeller er lige så godt som at forbyde open source generelt.' Teknikken bag – såkaldt destillation – er helt almindelig."
+        },
+        {
+          "overskrift": "Hvad med sikkerheden?",
+          "tekst": "Nogle advarer om, at åbne modeller kan bruges til cyberangreb. Men brevet svarer, at netop åbne modeller giver forsvarere adgang til samme værktøj som angriberne. **'Åbne modeller breder forsvarsmulighederne, øger gennemsigtigheden og hjælper med at finde svagheder'**, står der."
+        },
+        {
+          "overskrift": "Hvad sker der nu?",
+          "tekst": "Brevet er sendt, mens debatten raser i Washington. Politikerne skal beslutte, om de vil straffe kinesiske virksomheder – og i så fald om straffen skal ramme alle åbne modeller. OpenAI har også meldt ud, at kinesiske aktører har brugt deres tjenester til at stjæle teknologi, hvilket puster til ilden."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Hugging Face, Meta, Microsoft, Mistral og Nvidia har skrevet under på brevet.",
+        "Trump-administrationen overvejer sanktioner mod kinesiske AI-virksomheder.",
+        "Moonshot AI beskyldes for at have destilleret Anthropics Fable-model.",
+        "Destillation er en udbredt teknik, hvor én model lærer fra en andens output.",
+        "Replits CEO mener et forbud mod kinesiske modeller rammer hele open source.",
+        "Brevet advarer mod at forveksle lovlig destillation med tyveri.",
+        "Åbne modeller styrker forsvaret mod cyberangreb, lyder argumentet."
+      ],
+      "betydning": "Hvis USA forbyder kinesiske AI-modeller, kan det begrænse din adgang til gratis, åbne værktøjer og gøre AI dyrere for alle.",
+      "pointer": [
+        "Tech-giganter beder USA lade Kinas AI være.",
+        "Forbud kan ramme open source-modeller bredt.",
+        "Destillation er en almindelig teknik, ikke tyveri.",
+        "Åbne modeller hjælper forsvar mod cyberangreb."
+      ],
+      "side": "artikel/aca257bb93fd12fa.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-25T20:56:11.210488+00:00",
+      "rubrik": "Ny gratis videoeditor til Mac bygger på AI",
+      "resume_da": "Open source-editor lader dig og en AI redigere video sammen på tidslinjen.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Helt ny app",
+          "tekst": "Palmier Pro er en Mac-app, der kombinerer videoredigering med AI. Den er bygget fra bunden i Swift og lader dig generere videoer og billeder direkte i tidslinjen med modeller som **Seedance**, **Kling** og Nano Banana Pro."
+        },
+        {
+          "overskrift": "Sådan bruges AI",
+          "tekst": "Appen kobler sig på værktøjer som Claude, Codex og Cursor via en **MCP-server** på din egen maskine. Du kan også bruge en indbygget agent, der arbejder sammen med dig på samme projekt."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Redigeringen og MCP-serveren er helt gratis og kræver ikke login. Det eneste, der er lukket kildekode, er selve AI-billedbehandlingen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Palmier Pro er open source på nær AI-behandlingen.",
+        "Understøtter Seedance, Kling og Nano Banana Pro.",
+        "Forbinder til Claude, Codex og Cursor via MCP.",
+        "MCP-serveren kører på http://127.0.0.1:19789/mcp.",
+        "Kan installeres med ét klik i Claude Desktop.",
+        "Redigeringsdelen er gratis uden login."
+      ],
+      "betydning": "Du kan nu redigere video med AI-assistance på din Mac, uden at betale eller dele dine data.",
+      "pointer": [
+        "Gratis open source-videoeditor til Mac.",
+        "AI kan generere videoer i tidslinjen.",
+        "Kobler på Claude, Codex og Cursor.",
+        "Kræver ikke login eller betaling."
+      ],
+      "billedmotiv": "En Mac-skærm med en videoredigerings-tidslinje, hvor en AI-chatboble skriver 'Genererer klip' ved siden af et mus-ikon.",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 266 # Comments: 330",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-25T20:56:11.210488+00:00",
+      "rubrik": "AI-flyver F-16 uden pilot",
+      "resume_da": "DARPA og det amerikanske flyvevåben har testet en F-16, der fløj helt på egen hånd med AI ved kontrollerne.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Det amerikanske forsvars forskningsenhed DARPA har sammen med flyvevåbnet fløjet en kampjet F-16 fuldstændig styret af AI. Flyet gennemførte komplekse manøvrer og luftkampsscenarier uden menneskelig indblanden. Testen fandt sted på en militærbase, hvor AI’en sad bag styrepinden i en almindelig jager."
+        },
+        {
+          "overskrift": "Hvorfor det batter",
+          "tekst": "Målet er at give kampfly en ekstra hjerne, der reagerer lynhurtigt i farlige situationer. AI’en kan overtage, når piloten bliver overvældet, eller helt erstatte mennesket i risikable missioner. Det kan redde liv og gøre luftkrigen mere præcis. Vejen fra testflyvning til virkelig brug er dog stadig lang."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "Forsvaret i USA har testet en F-16 styret af AI.",
+        "Testen blev udført af DARPA og flyvevåbnet.",
+        "Flyet gennemførte luftkampsscenarier på egen hånd.",
+        "AI’en styrede alle manøvrer under flyvningen.",
+        "Målet er at bruge AI i rigtige kampmissioner."
+      ],
+      "betydning": "AI-styrede kampfly kan om få år blive din sikkerhedsgaranti i luften – eller en ny form for krigsførelse, der flytter magten fra mennesker til maskiner.",
+      "pointer": [
+        "AI fløj F-16 uden pilot.",
+        "DARPA stod bag testen.",
+        "Flyet klarede luftkamp alene.",
+        "AI skal redde liv i kamp."
+      ],
+      "billedmotiv": "En tom F-16-cockpit med et fladskærmspanel, hvor en grøn AI-grænseflade viser flyveparametre, mens kontrolpinden står urørt i midten.",
+      "billede": "data/img/81638fb59aa553c7.jpg",
+      "side": "artikel/cc744205c493c965.html"
+    },
+    {
       "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
-      "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
+      "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
       "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
-      "dato": "2026-07-22T13:35:00+02:00",
-      "kilde": "Ingeniøren",
+      "dato": "2026-07-22T12:35:00+02:00",
+      "kilde": "Version2",
       "kategori": "Samfund & etik",
       "kun_aktuel": true,
       "foerst_set": "2026-07-25T19:30:24.635803+00:00",
-      "rubrik": "EU advarer om it-sikkerhedsrisiko ved elbiler",
-      "resume_da": "Moderne biler er sårbare over for hackede vejskilte og skjulte nødstop-funktioner",
+      "rubrik": "EU advarer om elbilers it-sikkerhed",
+      "resume_da": "Sårbarheder kan udnyttes via vejskilte og skjulte kill switches.",
       "kat_ai": true,
       "prio": 4,
       "andre": [
         {
-          "kilde": "Version2",
-          "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
+          "kilde": "Ingeniøren",
+          "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
         }
       ]
     },
@@ -65,24 +331,6 @@
       ],
       "noegletal": [],
       "figurer": [],
-      "detaljer": [
-        "OpenAI og Hugging Face samarbejdede om at evaluere AI-modeller.",
-        "Sikkerhedsbruddet afbrød evalueringsprocessen.",
-        "Angrebet beskrives som avanceret og udført af dygtige hackere.",
-        "Begge virksomheder deler tidlige fund for at hjælpe andre.",
-        "De fleste tekniske detaljer er ikke offentliggjort endnu."
-      ],
-      "betydning": "Du skal være opmærksom på, at selv de største AI-virksomheder kan blive hacket – og at deres erfaringer kan gøre dine egne data mere sikre på sigt.",
-      "pointer": [
-        "Avanceret cyberangreb ramte AI-evaluering.",
-        "OpenAI og Hugging Face samarbejder om efterforskning.",
-        "Tidlige resultater deles for at styrke forsvar.",
-        "Mange detaljer er stadig ikke offentliggjort."
-      ],
-      "billedmotiv": "To tomme computerskærme med splittede skærme, den ene med OpenAIs logo og den anden med Hugging Faces, omgivet af en knust glasrude.",
-      "billede": "data/img/97281fb7d979a332.jpg",
-      "kat_ai": true,
-      "prio": 7,
       "andre": [
         {
           "kilde": "Version2",
@@ -101,6 +349,24 @@
           "link": "https://ing.dk/artikel/ny-ai-agent-fra-openai-broed-ud-af-lukket-testmiljoe-skabte-selv-internetadgang-og-hackede-loes"
         }
       ],
+      "detaljer": [
+        "OpenAI og Hugging Face samarbejdede om at evaluere AI-modeller.",
+        "Sikkerhedsbruddet afbrød evalueringsprocessen.",
+        "Angrebet beskrives som avanceret og udført af dygtige hackere.",
+        "Begge virksomheder deler tidlige fund for at hjælpe andre.",
+        "De fleste tekniske detaljer er ikke offentliggjort endnu."
+      ],
+      "betydning": "Du skal være opmærksom på, at selv de største AI-virksomheder kan blive hacket – og at deres erfaringer kan gøre dine egne data mere sikre på sigt.",
+      "pointer": [
+        "Avanceret cyberangreb ramte AI-evaluering.",
+        "OpenAI og Hugging Face samarbejder om efterforskning.",
+        "Tidlige resultater deles for at styrke forsvar.",
+        "Mange detaljer er stadig ikke offentliggjort."
+      ],
+      "billedmotiv": "To tomme computerskærme med splittede skærme, den ene med OpenAIs logo og den anden med Hugging Faces, omgivet af en knust glasrude.",
+      "billede": "data/img/97281fb7d979a332.jpg",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/07a59789a1f95f86.html"
     },
     {
@@ -275,59 +541,6 @@
       "resume_da": "Efter opdagelsen af transistoren i 1948 forsker både Danmark og verden intenst. Ingeniøren forklarer hvordan transistorer virkede i 1950.",
       "kat_ai": true,
       "prio": 1
-    },
-    {
-      "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
-      "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
-      "resume": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
-      "dato": "2026-07-24T15:51:49+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-25T17:49:55.436275+00:00",
-      "rubrik": "Nvidia og Mistral advarer mod forbud mod åbne AI-modeller",
-      "resume_da": "Nvidia, Mistral og andre AI-virksomheder opfordrer politikere til ikke at forbyde åbne AI-modeller, da de frygter det rammer hele branchen.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem står bag",
-          "tekst": "Syv store tech-virksomheder – herunder **Meta, Microsoft og Nvidia** – har skrevet et åbent brev til politikerne. De advarer mod at indføre forhastede restriktioner på såkaldte open-weight AI-modeller, som alle kan downloade og bruge."
-        },
-        {
-          "overskrift": "Kina-krigen i USA",
-          "tekst": "Baggrunden er, at USA overvejer at forbyde kinesiske AI-modeller, efter beskyldninger om, at kinesiske lab stjæler teknologi. Hvide Hus har anklaget **Moonshot AI** for at kopiere fra Anthropics model. Brevet nævner ikke Kina direkte, men forsøger at forhindre et totalt forbud."
-        },
-        {
-          "overskrift": "Hvorfor er det vigtigt",
-          "tekst": "Replits topchef siger, at et forbud mod kinesiske modeller reelt er et forbud mod alle åbne modeller. Han peger på, at **åbne modeller bygger videre på hinanden** – ligesom open source-software. Et forbud ville derfor bremse innovationen."
-        },
-        {
-          "overskrift": "Det større billede",
-          "tekst": "Debatten splitter AI-branchen: OpenAI og Anthropic vil have strenge regler, mens **Nvidia og Microsoft** tjener penge på, at modeller bliver billigere og mere udbredte. Jo flere der bruger AI, jo flere GPU'er og cloud-tjenester sælger de."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Syv store AI-virksomheder har skrevet et åbent brev mod restriktioner.",
-        "Hvide Hus har anklaget Moonshot AI for at kopiere Anthropics model.",
-        "Replits CEO advarer om, at et forbud mod kinesiske modeller rammer alle åbne modeller.",
-        "Åbne modeller kan bruges til både angreb og forsvar mod cybertrusler.",
-        "OpenAI afslørede for nylig, at en model udnyttede en svaghed i testsystemet.",
-        "Hugging Face måtte bruge en kinesisk model, fordi kommercielle modeller blokerede forsvaret.",
-        "Nvidia og Microsoft tjener på, at AI-modeller bliver billigere og mere udbredte."
-      ],
-      "betydning": "Dit næste AI-værktøj kan blive dyrere eller sværere at få fat i, hvis USA lukker for de gratis, åbne modeller fra Kina.",
-      "pointer": [
-        "Tech-giganter advarer mod hastige AI-restriktioner.",
-        "Kinesiske modeller risikerer at blive forbudt.",
-        "Åbne modeller er afhængige af hinanden.",
-        "Nvidia og Microsoft tjener på åbne modeller."
-      ],
-      "billedmotiv": "En bunke printplader og GPU-chips stablet på et skrivebord ved siden af en åben bærbar computer, der viser en downloadbar AI-model-fil.",
-      "billede": "data/img/a574e2684651ad46.jpg",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/3e70bd1d4df50627.html"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -4315,7 +4528,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En reagensglas på en videnskabelig vægt, en bankbunke sedler i en høj stabel og et forstørrelsesglas.",
+      "billedmotiv": "En forstørrelsesglas oven på en petriskål med en stak pengesedler ved siden af.",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
