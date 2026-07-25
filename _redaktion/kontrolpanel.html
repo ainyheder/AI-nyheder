@@ -44,6 +44,18 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   border:1px dashed var(--linje); border-radius:12px; padding:13px 16px; }
 .ikke .n { font-weight:700; font-size:14px; }
 .ikke .b { font-size:12.5px; color:var(--svag); margin-top:2px; }
+.dok { background:#fdf9ef; border:1px solid #e8dcc0; border-left:4px solid var(--rav);
+  border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
+  transition:transform .12s, border-color .12s; }
+.dok:hover { transform:translateY(-2px); border-color:var(--rav); }
+.dok.laes { cursor:pointer; background:color-mix(in srgb, var(--blaek) 3%, transparent);
+  border:1px dashed var(--linje); border-left:1px dashed var(--linje); }
+.dok .n { font-weight:700; font-size:14.5px; }
+.dok .b { font-size:12.5px; color:var(--svag); margin:3px 0 8px; }
+.dok .f { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--rav);
+  background:#f6ecd8; border-radius:5px; padding:2px 7px; display:inline-block; }
+.dok.laes .f { color:var(--svag); background:color-mix(in srgb, var(--blaek) 6%, transparent); }
+.dok .flag { font-size:10.5px; font-weight:700; color:var(--groen); margin-left:6px; }
 .hj { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--linje);
   border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
   transition:transform .12s, border-color .12s; }
@@ -101,6 +113,14 @@ i <code>_redaktion/hjerner.json</code> — først dér træder de i kraft.</p>
 faktisk arbejder i. <strong>Alle de hvide kasser kan klikkes og ændres.</strong>
 De grå er ikke AI — de gør bare noget mekanisk.</p>
 <div id="flow"></div>
+
+<h2>Natteloopet</h2>
+<p class="manchet" style="margin-bottom:18px">Mens crawleren kører hver time, kører
+det her loop én gang i døgnet: maskinen ser på siden, skriver hvad der bør laves,
+og en session om natten laver det. <strong>De tre gule kasser styrer det hele</strong>
+— de er ikke prompts, men dokumenter, du kan skrive i.</p>
+<div id="natflow"></div>
+
 <div class="tom" id="tomboks" hidden></div>
 </main>
 
@@ -278,6 +298,118 @@ De grå er ikke AI — de gør bare noget mekanisk.</p>
     var k = e.target.closest(".hj"); if (k) aabn(k.dataset.n);
   });
 
+  // ---- Natteloopet: dokumenter i stedet for prompts ----
+  var natflow = document.getElementById("natflow");
+  var DOK = {};
+  (S.natteloop || []).forEach(function (d) { DOK[d.noegle] = d; });
+  var dokAendret = {};        // noegle -> ny tekst, kun i denne session
+
+  var NATETAPER = [
+    { navn: "Maskinen ser på siden", hvornaar: "én gang i døgnet",
+      ikke: [["Den natlige gennemgang", "Måler siden og læsertallene · gemini-3.6-flash — instruksen ligger i flowet ovenfor"]],
+      dok: ["maalestok"] },
+    { navn: "Den skriver, hvad der bør laves", hvornaar: "3 forslag + et GitHub-issue",
+      dok: ["kritik", "opgavekoe"] },
+    { navn: "Natsessionen laver det", hvornaar: "kl. 23:00 og 03:00",
+      dok: ["natsession"] },
+    { navn: "Du læser regnskabet om morgenen", hvornaar: "og pusher",
+      dok: ["natlog"] }
+  ];
+
+  function dokTekst(k) {
+    return dokAendret[k] !== undefined ? dokAendret[k] : (DOK[k] ? DOK[k].indhold : "");
+  }
+  function dokErAendret(k) {
+    return dokAendret[k] !== undefined && DOK[k] && dokAendret[k] !== DOK[k].indhold;
+  }
+
+  function dokHtml(k) {
+    var d = DOK[k];
+    if (!d) return "";
+    var a = dokErAendret(k);
+    return '<button class="dok' + (d.kan_rettes ? "" : " laes") + '" data-dok="' + k + '">' +
+      '<div class="n">' + esc(d.navn) + (a ? '<span class="flag">ÆNDRET</span>' : "") +
+      (d.findes ? "" : ' <span class="flag" style="color:var(--rav)">FINDES IKKE ENDNU</span>') + "</div>" +
+      '<div class="b">' + esc(d.beskrivelse) + "</div>" +
+      '<span class="f">' + esc(d.fil) + (d.kan_rettes ? "" : " · kun læsning") + "</span></button>";
+  }
+
+  function tegnNat() {
+    natflow.innerHTML = NATETAPER.map(function (e, i) {
+      var kasser = (e.ikke || []).map(function (k) {
+        return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
+               '<div class="b">' + esc(k[1]) + "</div></div>";
+      }).concat((e.dok || []).map(dokHtml));
+      return '<div class="etape"><div class="etape-top">' +
+        '<span class="etape-nr" style="background:var(--rav)">' + (i + 1) + "</span>" +
+        '<span class="etape-navn">' + esc(e.navn) + "</span>" +
+        '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span></div>" +
+        '<div class="net">' + kasser.join("") + "</div></div>" +
+        (i < NATETAPER.length - 1 ? '<div class="pil">↓</div>' : "");
+    }).join("");
+  }
+
+  function aabnDok(k) {
+    var d = DOK[k];
+    var kan = d.kan_rettes;
+    modal.innerHTML =
+      '<button class="luk" id="mLuk">✕</button>' +
+      "<h3>" + esc(d.navn) + "</h3>" +
+      '<div class="b">' + esc(d.beskrivelse) + " · <code>_redaktion/" + esc(d.fil) + "</code></div>" +
+      (kan ? "" : '<div class="advarsel">Den her fil skriver maskinen selv. Du kan læse den, ikke rette den.</div>') +
+      "<label>" + (kan ? "Indhold" : "Indhold (kun læsning)") + "</label>" +
+      '<textarea id="dTekst" spellcheck="false" style="min-height:420px"' +
+      (kan ? "" : " readonly") + ">" + esc(dokTekst(k)) + "</textarea>" +
+      (kan ? '<div class="raekke">' +
+        '<button class="k fyldt" id="dGem">Gem ' + esc(d.fil) + "</button>" +
+        '<button class="k" id="dHent">Hent fil</button>' +
+        '<button class="k" id="dFortryd">Fortryd mine ændringer</button></div>' : "");
+    bag.classList.add("aaben");
+    document.body.style.overflow = "hidden";
+    document.getElementById("mLuk").addEventListener("click", luk);
+    if (!kan) return;
+
+    function tekst() { return document.getElementById("dTekst").value; }
+    function hent() {
+      var b = new Blob([tekst()], { type: "text/markdown" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(b); a.download = d.fil;
+      document.body.appendChild(a); a.click(); a.remove();
+    }
+    document.getElementById("dHent").addEventListener("click", function () {
+      dokAendret[k] = tekst(); tegnNat(); hent();
+    });
+    document.getElementById("dFortryd").addEventListener("click", function () {
+      delete dokAendret[k]; tegnNat(); luk();
+    });
+    document.getElementById("dGem").addEventListener("click", async function () {
+      var knap = this;
+      dokAendret[k] = tekst();
+      tegnNat();
+      function kvitter(b) {
+        knap.textContent = b;
+        setTimeout(function () { knap.textContent = "Gem " + d.fil; }, 2200);
+      }
+      if (!window.showSaveFilePicker) { hent(); kvitter("Hentet i stedet ↓"); return; }
+      try {
+        var h = await window.showSaveFilePicker({
+          suggestedName: d.fil,
+          types: [{ description: "Markdown", accept: { "text/markdown": [".md"] } }]
+        });
+        var w = await h.createWritable();
+        await w.write(tekst());
+        await w.close();
+        kvitter("Gemt ✓ — push nu");
+      } catch (fejl) {
+        if (fejl && fejl.name === "AbortError") return;
+        hent(); kvitter("Kunne ikke gemme — hentet ↓");
+      }
+    });
+  }
+  natflow.addEventListener("click", function (e) {
+    var k = e.target.closest(".dok"); if (k) aabnDok(k.dataset.dok);
+  });
+
   function json() {
     var ud = {};
     Object.keys(aendret).forEach(function (n) { if (erAendret(n)) ud[n] = aendret[n]; });
@@ -340,6 +472,7 @@ De grå er ikke AI — de gør bare noget mekanisk.</p>
   });
 
   tegn();
+  tegnNat();
 })();
 </script>
 </body>

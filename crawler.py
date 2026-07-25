@@ -365,6 +365,41 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     return kald_ai(system, bruger, max_tokens)
 
 
+# Natteloopets dokumenter. De styrer den natlige gennemgang og natsessionen -
+# og kan redigeres i kontrolpanelet ligesom prompterne.
+NAT_DOKUMENTER = [
+    ("maalestok", "redaktionens-oejne.md", "Målestokken",
+     "Ni punkter der definerer 'godt'. Bruges af BÅDE den natlige gennemgang "
+     "og natsessionen. Ret her, og begge ændrer adfærd.", True),
+    ("natsession", "natsession.md", "Natsessionens instruks",
+     "Hele nattens arbejdsgang: de tre faser, hvordan der testes, hvornår der "
+     "stoppes. Læses forfra hver nat kl. 23 og 03.", True),
+    ("opgavekoe", "opgavekoe.md", "Opgavekøen",
+     "Det, der bliver lavet — oppefra og ned. Flyt en linje op for at "
+     "prioritere den frem.", True),
+    ("kritik", "kritik-seneste.md", "Seneste gennemgang",
+     "Skrevet af maskinen i nat. Kun til at læse.", False),
+    ("natlog", "nat-log.md", "Nat-loggen",
+     "Hvad nætterne har lavet, og hvad du skal vide. Kun til at læse.", False),
+]
+
+
+def _natteloop_status() -> list:
+    ud = []
+    for noegle, fil, navn, besk, kan_rettes in NAT_DOKUMENTER:
+        sti = ROOT / "_redaktion" / fil
+        try:
+            indhold = sti.read_text(encoding="utf-8")
+        except OSError:
+            indhold = ""
+        ud.append({"noegle": noegle, "fil": fil, "navn": navn,
+                   "beskrivelse": besk, "kan_rettes": kan_rettes,
+                   "findes": bool(indhold),
+                   # loggen kan blive lang - panelet skal kun vise toppen
+                   "indhold": indhold if kan_rettes else indhold[:4000]})
+    return ud
+
+
 def _standard_prompts() -> dict:
     """De indbyggede prompts, så kontrolpanelet kan vise dem og lade Torben
     starte fra dem i stedet for fra et tomt felt."""
@@ -403,6 +438,7 @@ def skriv_hjerne_status() -> None:
                 "aktiv_prompt": hjerne_prompt(navn, std.get(navn, "")),
             } for navn, besk in HJERNE_BESKRIVELSE.items()
         },
+        "natteloop": _natteloop_status(),
     }
     HJERNER_STATUS.parent.mkdir(exist_ok=True)
     HJERNER_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2),
