@@ -920,6 +920,55 @@ Svar KUN med et JSON-array af grupper, hver gruppe et array af numre, fx:
 Ingen grupper? Svar: []"""
 
 
+# Ord der er for almindelige til at sige noget om, hvilken historie det er
+_DUBLET_STOP = set("""og i at en et den det der som til af for på med om er var blev fra kan
+skal vil har have hvis når man sig sin sit sine deres nye ny stor store mere mest end også kun
+bare over under mod ved efter før nu ind ud op ned alle andre samme egen selv the a an and of
+to in for on with is are was were be been by from that this it its new now more most""".split())
+
+
+def _dublet_ord(a: dict) -> set:
+    """Betydningsbærende ord i en artikel, klippet til seks tegn så dansk
+    bøjning ikke spænder ben ('hackede' og 'hacked' bliver til 'hacked')."""
+    t = " ".join([a.get("rubrik", ""), a.get("titel", ""), a.get("resume_da", "")]).lower()
+    return {o[:6] for o in re.findall(r"[a-zæøå0-9]+", t)
+            if len(o) > 2 and o not in _DUBLET_STOP}
+
+
+def _samme_historie(a: dict, b: dict) -> bool:
+    """Er de to artikler ÅBENLYST den samme historie?
+
+    Bevidst striks: kun når over halvdelen af ordene er fælles OG der er mindst
+    fem af dem. Målt på det rigtige arkiv rammer det kun ægte dubletter - fx
+    Version2 og Ingeniøren, der deler 83 % af deres ord om den samme historie
+    og alligevel stod som to nyheder. De tvivlsomme tilfælde overlades til AI'en."""
+    A, B = _dublet_ord(a), _dublet_ord(b)
+    if not A or not B:
+        return False
+    faelles = A & B
+    return len(faelles) >= 5 and len(faelles) / min(len(A), len(B)) >= 0.50
+
+
+def _klynger(artikler: list[dict]) -> list[list[dict]]:
+    """Samler artikler i klynger, hvor alle hænger sammen med mindst én anden."""
+    forael = list(range(len(artikler)))
+
+    def rod(i):
+        while forael[i] != i:
+            forael[i] = forael[forael[i]]
+            i = forael[i]
+        return i
+
+    for i in range(len(artikler)):
+        for j in range(i + 1, len(artikler)):
+            if rod(i) != rod(j) and _samme_historie(artikler[i], artikler[j]):
+                forael[rod(j)] = rod(i)
+    grupper: dict = {}
+    for i, a in enumerate(artikler):
+        grupper.setdefault(rod(i), []).append(a)
+    return [g for g in grupper.values() if len(g) > 1]
+
+
 def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     """Finder nyheder som flere medier dækker, beholder den bedste udgave og
     gemmer de øvrige som ekstra kilder på historien ("andre")."""
@@ -927,6 +976,22 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     #    ekstra kilde under en anden historie, skal blive væk
     kendte_dubletter = {k["link"] for a in artikler for k in a.get("andre", [])}
     artikler = [a for a in artikler if a["link"] not in kendte_dubletter]
+
+    # 1) Tag de ÅBENLYSE først, uden at spørge nogen. En model, der skal
+    #    sammenligne 130 artikler i ét hug, overser det indlysende: Version2 og
+    #    Ingeniøren stod som to nyheder om den samme historie, selvom de delte
+    #    83 % af deres ord. Det er ikke en svær vurdering - det er en, ingen
+    #    havde stillet. Gratis, øjeblikkeligt og uden risiko for at gætte.
+    fjern_lex: set = set()
+    for gruppe in _klynger([a for a in artikler if a.get("rubrik")]):
+        datoer = [m["dato"] for m in gruppe if m.get("dato")]
+        if datoer and (max(datoer) - min(datoer)) > timedelta(days=3):
+            continue
+        fjern_lex |= _slaa_sammen(gruppe)
+    if fjern_lex:
+        artikler = [a for a in artikler if a["link"] not in fjern_lex]
+        print(f"🔗 Ordsammenligning samlede {len(fjern_lex)} åbenlyse dubletter")
+
     if not API_KEY:
         return artikler
     # forskningsartikler (arXiv) dublerer aldrig nyhedsmedierne - spring dem over.
@@ -979,20 +1044,50 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
         datoer = [m["dato"] for m in medlemmer if m.get("dato")]
         if datoer and (max(datoer) - min(datoer)) > timedelta(days=3):
             continue
-        # behold den med mest indhold: brief > dansk rubrik > nyeste
-        primaer = next((m for m in medlemmer if m.get("brief")), None) \
-               or next((m for m in medlemmer if m.get("rubrik")), None) \
-               or medlemmer[0]
-        andre = [m for m in medlemmer if m is not primaer]
-        primaer.setdefault("andre", [])
-        har = {k["link"] for k in primaer["andre"]}
-        primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"]}
-                             for m in andre if m["link"] not in har]
-        fjern.update(m["link"] for m in andre)
-        samlet += len(andre)
+        fjernet = _slaa_sammen(medlemmer)
+        fjern.update(fjernet)
+        samlet += len(fjernet)
     if samlet:
-        print(f"🔗 Samlede {samlet} dublet-artikler under deres hovedhistorier")
+        print(f"🔗 AI'en samlede {samlet} dublet-artikler under deres hovedhistorier")
     return [a for a in artikler if a["link"] not in fjern]
+
+
+def _slaa_sammen(medlemmer: list[dict]) -> set:
+    """Gør én gruppe til én historie. Returnerer de links, der skal væk."""
+    # Behold den med mest indhold: brief > dansk rubrik > nyeste.
+    # MEN aldrig en kilde med arkivforbud, hvis vi har et alternativ: bliver
+    # Version2 hovedhistorie, mister historien sin artikelside og sin
+    # genfortælling - selvom Ars Technica også dækkede den og gerne må arkiveres.
+    frie = [m for m in medlemmer if not m.get("kun_aktuel")] or medlemmer
+    primaer = next((m for m in frie if m.get("brief")), None) \
+           or next((m for m in frie if m.get("rubrik")), None) \
+           or frie[0]
+    andre = [m for m in medlemmer if m is not primaer]
+
+    # En historie bliver ikke NY igen, bare fordi et nyt medie skriver om den
+    # i dag. Arv det TIDLIGSTE tidspunkt, nogen af udgaverne blev set - ellers
+    # hopper gårsdagens historie op på forsiden med et NY-mærke, og læseren
+    # bliver præsenteret for det samme to dage i træk.
+    tider = [m.get("foerst_set") for m in medlemmer if m.get("foerst_set")]
+    if tider:
+        primaer["foerst_set"] = min(tider)
+
+    # Arv billedet, hvis vi allerede har betalt for et. Uden det her laves der
+    # et nyt billede, hver gang en historie får en ekstra kilde - og det gamle
+    # slettes bagefter som forældreløst. Dobbelt spild.
+    if not primaer.get("billede"):
+        for m in medlemmer:
+            if m.get("billede"):
+                primaer["billede"] = m["billede"]
+                if not primaer.get("billedmotiv") and m.get("billedmotiv"):
+                    primaer["billedmotiv"] = m["billedmotiv"]
+                break
+
+    primaer.setdefault("andre", [])
+    har = {k["link"] for k in primaer["andre"]}
+    primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"]}
+                         for m in andre if m["link"] not in har]
+    return {m["link"] for m in andre}
 
 
 # ----- AI-billeder til tophistorierne -----------------------------------------
