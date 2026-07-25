@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · YouTube</title>
+<meta name="description" content="Hvad rører sig på YouTube inden for AI? Vi følger de største kanaler og opsummerer videoerne på letlæst dansk — med tidsstempler, så du kan springe direkte til det interessante.">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="AI på YouTube · opsummeret på dansk">
+<meta property="og:description" content="De største AI-kanaler på YouTube, opsummeret på letlæst dansk — med tidsstempler til de vigtigste højdepunkter.">
+<meta property="og:url" content="https://ainyheder.com/youtube.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   AI-NYHEDER · YouTube-siden
+   Samme design-DNA som forsiden — creme papir, Fraunces + Inter.
+   ================================================================ */
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd;
+  --roed: #cc2b2b; --roed-svag: #fdecec;
+  --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.55; }
+a { color: inherit; }
+
+/* ---------- Topbar ---------- */
+.topbar { position: sticky; top: 0; z-index: 90;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center;
+  gap: 14px; flex-wrap: wrap; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+
+/* Opdelingen i menuen: artikler til venstre, YouTube til højre */
+.hovedmenu { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.menu-led { font-size: 12.5px; font-weight: 600; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort); color: var(--blaek-svag);
+  padding: 6px 13px; border-radius: 999px; transition: all .18s; }
+.menu-led:hover { border-color: var(--accent); color: var(--accent); }
+.menu-led.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
+.menu-led.yt { display: inline-flex; align-items: center; gap: 6px; }
+.menu-led.yt svg { width: 15px; height: 11px; }
+.menu-led.yt.aktiv { background: var(--roed); border-color: var(--roed); color: #fff; }
+.menu-skel { width: 1px; height: 22px; background: var(--linje); margin: 0 6px; flex: none; }
+.sog { flex: 1; min-width: 150px; max-width: 300px; margin-left: auto; position: relative; }
+.sog input { width: 100%; padding: 9px 16px 9px 38px; border: 1px solid var(--linje);
+  border-radius: 999px; background: var(--bg-kort); color: var(--blaek);
+  font-size: 14px; font-family: inherit; outline: none; transition: border .2s, box-shadow .2s; }
+.sog input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-svag); }
+.sog svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  width: 15px; height: 15px; stroke: var(--blaek-svag); fill: none; stroke-width: 2.2; stroke-linecap: round; }
+
+/* ---------- Sidehoved ---------- */
+.wrap { margin: 0 auto; padding: 26px 28px 70px; max-width: 1500px; }
+.side-hoved { margin-bottom: 22px; }
+.side-hoved h1 { font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(28px, 4vw, 40px); line-height: 1.08; letter-spacing: -.02em; margin-bottom: 10px; }
+.side-hoved h1 em { font-style: normal; color: var(--roed); }
+.side-hoved p { font-size: 16px; line-height: 1.6; color: var(--blaek-svag); max-width: 68ch; }
+.opdateret { font-size: 12px; color: var(--blaek-svag); margin-top: 8px; }
+
+/* ---------- Filtre ---------- */
+.filter-baand { display: flex; flex-direction: column; gap: 10px; margin: 0 0 26px;
+  padding: 16px 0 18px; border-top: 1px solid var(--linje); border-bottom: 1px solid var(--linje); }
+.filter-raekke { display: flex; gap: 7px; flex-wrap: wrap; align-items: center; }
+.filter-titel { font-size: 10.5px; font-weight: 800; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--blaek-svag); margin-right: 6px; min-width: 62px; }
+.pill { border: 1px solid var(--linje); background: var(--bg-kort); color: var(--blaek-svag);
+  font-size: 12.5px; font-weight: 600; padding: 6px 13px; border-radius: 999px;
+  cursor: pointer; font-family: inherit; transition: all .18s; }
+.pill:hover { border-color: var(--accent); color: var(--accent); }
+.pill.aktiv { background: var(--blaek); border-color: var(--blaek); color: var(--bg); }
+.pill .antal { font-size: 10.5px; opacity: .65; margin-left: 5px; font-weight: 700; }
+.emne-pill.aktiv { background: var(--accent); border-color: var(--accent); color: #fff; }
+.nulstil { border: 0; background: none; font: inherit; font-size: 12px; font-weight: 700;
+  color: var(--blaek-svag); cursor: pointer; text-decoration: underline; padding: 6px 4px; }
+.nulstil:hover { color: var(--accent); }
+
+/* ---------- Hero ---------- */
+.hero { display: grid; grid-template-columns: 1.25fr 1fr; background: var(--bg-kort);
+  border: 1px solid var(--linje); border-radius: calc(var(--radius) + 6px); overflow: hidden;
+  box-shadow: var(--skygge); margin-bottom: 34px; text-decoration: none;
+  transition: transform .25s; animation: ind .5s ease both; cursor: pointer; }
+.hero:hover { transform: translateY(-4px); }
+.hero-art { position: relative; min-height: 300px; background: #000; }
+.hero-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-tekst { padding: 34px 38px; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+.hero-tekst h2 { font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(24px, 3vw, 36px); line-height: 1.07; letter-spacing: -.02em; }
+.hero-tekst p { font-size: 15.5px; line-height: 1.6; color: var(--blaek-svag); max-width: 48ch; }
+@media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .hero-art { min-height: 200px; } .hero-tekst { padding: 22px 22px 26px; } }
+.kicker { font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--roed); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.kicker .adskil { color: var(--blaek-svag); font-weight: 500; letter-spacing: .02em; text-transform: none; font-size: 11.5px; }
+
+/* ---------- Kort ---------- */
+.sektion-titel { font-family: var(--font-display); font-weight: 800; font-size: 21px;
+  letter-spacing: -.01em; margin: 8px 0 18px; display: flex; align-items: center; gap: 14px; }
+.sektion-titel::after { content: ""; flex: 1; height: 1px; background: var(--linje); }
+.grid { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); margin-bottom: 34px; }
+.kort { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: var(--radius);
+  overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--skygge);
+  text-decoration: none; cursor: pointer; transition: transform .22s; animation: ind .45s ease both; }
+.kort:hover { transform: translateY(-4px); }
+.kort-art { aspect-ratio: 16 / 9; position: relative; overflow: hidden; background: #000; }
+.kort-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.kort:hover .kort-art img { transform: scale(1.05); }
+.kort-krop { padding: 13px 15px 15px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+.kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 17px;
+  line-height: 1.22; letter-spacing: -.015em; }
+.kort p { font-size: 13.5px; color: var(--blaek-svag); flex: 1; }
+.kort-fod { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-size: 11.5px; color: var(--blaek-svag); font-weight: 500; }
+.kanal-navn { font-weight: 700; color: var(--blaek); }
+.hp-linje { font-size: 12px; color: var(--blaek-svag); margin-top: 6px; padding-top: 7px;
+  border-top: 1px dashed var(--linje); display: flex; align-items: center; gap: 6px; }
+.hp-linje b { color: var(--accent); font-weight: 700; }
+
+/* Overlay på miniaturebilledet */
+.varighed { position: absolute; right: 8px; bottom: 8px; z-index: 2;
+  background: rgba(0,0,0,.82); color: #fff; font-size: 11px; font-weight: 700;
+  padding: 2px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; }
+.art-chips { position: absolute; left: 8px; top: 8px; z-index: 2; display: flex; gap: 5px; flex-wrap: wrap; max-width: calc(100% - 16px); }
+.art-chips span { font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
+  border-radius: 5px; padding: 3px 7px; white-space: nowrap; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+.ny-chip { background: var(--accent); color: #fff; }
+.vigtig-chip { background: #f4b400; color: #191714; }
+.en-chip { background: #fff; color: var(--blaek-svag); }
+.spil-knap { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center;
+  background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.3)); transition: background .2s; }
+.kort:hover .spil-knap, .hero:hover .spil-knap { background: linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.45)); }
+.spil-knap span { width: 54px; height: 38px; border-radius: 10px; background: rgba(204,43,43,.94);
+  display: grid; place-items: center; box-shadow: 0 4px 16px rgba(0,0,0,.3); transition: transform .2s; }
+.kort:hover .spil-knap span, .hero:hover .spil-knap span { transform: scale(1.1); }
+.spil-knap svg { width: 18px; height: 18px; fill: #fff; margin-left: 2px; }
+@keyframes ind { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* ---------- Kanal-oversigt ---------- */
+.kanaler { margin-top: 46px; padding-top: 30px; border-top: 1px solid var(--linje); }
+.kanaler h2 { font-family: var(--font-display); font-weight: 800; font-size: 22px; margin-bottom: 6px; }
+.kanaler > p { font-size: 14px; color: var(--blaek-svag); margin-bottom: 20px; }
+.kanal-net { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.kanal-gruppe { background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 14px; padding: 16px 18px; }
+.kanal-gruppe h3 { font-family: var(--font-display); font-weight: 800; font-size: 15.5px; margin-bottom: 3px; }
+.kanal-gruppe .om { font-size: 12px; color: var(--blaek-svag); margin-bottom: 11px; line-height: 1.45; }
+.kanal-gruppe a { display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  font-size: 13.5px; font-weight: 600; text-decoration: none; padding: 6px 0;
+  border-top: 1px dashed var(--linje); transition: color .12s; }
+.kanal-gruppe a:hover { color: var(--roed); }
+.kanal-gruppe a .n { font-size: 11px; color: var(--blaek-svag); font-weight: 700; }
+
+/* ---------- Læsevisning ---------- */
+.laeser-bag { position: fixed; inset: 0; z-index: 200;
+  background: color-mix(in srgb, var(--blaek) 45%, transparent); backdrop-filter: blur(6px);
+  display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 4vh 16px 6vh; }
+.laeser-bag.aaben { display: flex; }
+.laeser { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 22px;
+  width: calc(100vw - 48px); max-width: 1240px; box-shadow: 0 30px 80px rgba(0,0,0,.35);
+  overflow: hidden; position: relative; animation: laeserInd .3s cubic-bezier(.2,.9,.3,1) both; }
+@keyframes laeserInd { from { opacity: 0; transform: translateY(26px) scale(.98); } to { opacity: 1; transform: none; } }
+.laeser-luk { position: absolute; top: 16px; right: 16px; z-index: 3; width: 36px; height: 36px;
+  border-radius: 50%; border: 1px solid var(--linje); cursor: pointer; background: var(--bg);
+  color: var(--blaek); font-size: 16px; display: grid; place-items: center; transition: transform .15s, background .15s; }
+.laeser-luk:hover { transform: rotate(90deg); background: var(--accent-svag); }
+.laeser-krop { padding: 36px 48px 40px; }
+.laeser-krop h2 { font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(24px, 3.4vw, 34px); line-height: 1.1; letter-spacing: -.02em;
+  margin: 10px 0 16px; max-width: 30ch; }
+.laeser-manchet { font-size: 16.5px; line-height: 1.7; color: var(--blaek); margin-bottom: 24px; max-width: 70ch; }
+.laeser-manchet strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.laeser-net { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 30px; align-items: start; }
+@media (max-width: 1020px) { .laeser-net { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .laeser { width: calc(100vw - 24px); } .laeser-krop { padding: 22px 20px 26px; } }
+.laeser-h4 { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 12px; }
+
+/* Højdepunkter med tidsstempel */
+.hp-liste { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.hp { display: grid; grid-template-columns: 66px 1fr; gap: 12px; align-items: start;
+  width: 100%; text-align: left; border: 0; background: none; font: inherit;
+  padding: 11px 10px; border-radius: 12px; cursor: pointer; transition: background .14s; }
+.hp:hover { background: var(--accent-svag); }
+.hp-tid { font-size: 12.5px; font-weight: 800; color: var(--accent); background: var(--accent-svag);
+  border-radius: 7px; padding: 4px 0; text-align: center; font-variant-numeric: tabular-nums;
+  transition: background .14s, color .14s; }
+.hp:hover .hp-tid { background: var(--accent); color: #fff; }
+.hp-titel { font-family: var(--font-display); font-weight: 800; font-size: 15.5px; line-height: 1.25; }
+.hp-tekst { font-size: 13.5px; line-height: 1.55; color: var(--blaek-svag); margin-top: 3px; }
+.hp-note { font-size: 12px; color: var(--blaek-svag); font-style: italic; margin-top: 12px; }
+
+/* Afspilleren i højre kolonne */
+.afspiller { position: sticky; top: 20px; display: flex; flex-direction: column; gap: 14px; }
+.afspiller-ramme { aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden;
+  background: #000; border: 1px solid var(--linje); }
+.afspiller-ramme iframe { width: 100%; height: 100%; border: 0; display: block; }
+.afspiller-plakat { position: relative; width: 100%; height: 100%; border: 0; padding: 0;
+  cursor: pointer; background: #000; display: block; }
+.afspiller-plakat img { width: 100%; height: 100%; object-fit: cover; }
+.side-boks { background: var(--accent-svag); border-radius: 14px; padding: 16px 20px; }
+.side-boks ul { list-style: none; }
+.side-boks li { font-size: 14px; line-height: 1.55; padding: 6px 0 6px 20px; position: relative;
+  border-bottom: 1px dashed rgba(91,75,240,.18); }
+.side-boks li:last-child { border-bottom: 0; }
+.side-boks li::before { content: "•"; position: absolute; left: 4px; color: var(--accent); font-weight: 800; }
+.betydning { background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 14px 18px; font-size: 15px; line-height: 1.65; }
+.laeser-bund { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--linje); flex-wrap: wrap; }
+.yt-knap { background: var(--roed); color: #fff; text-decoration: none; font-size: 13px;
+  font-weight: 700; padding: 10px 18px; border-radius: 999px; display: inline-flex;
+  align-items: center; gap: 8px; transition: transform .15s; }
+.yt-knap:hover { transform: translateY(-2px); }
+.yt-knap svg { width: 16px; height: 12px; fill: currentColor; }
+.kanal-knap { background: var(--bg); border: 1px solid var(--linje); color: var(--blaek);
+  text-decoration: none; font-size: 13px; font-weight: 700; padding: 10px 18px; border-radius: 999px; }
+.kanal-knap:hover { border-color: var(--accent); color: var(--accent); }
+.laeser-note { font-size: 12.5px; color: var(--blaek-svag); font-style: italic; }
+.emne-maerkat { font-size: 11px; font-weight: 700; background: var(--bg); border: 1px solid var(--linje);
+  color: var(--blaek-svag); border-radius: 999px; padding: 3px 10px; }
+
+.tom { text-align: center; padding: 70px 20px; color: var(--blaek-svag); font-size: 15px; }
+.note { background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: var(--radius); padding: 14px 20px; font-size: 13.5px; margin-bottom: 26px; }
+footer { border-top: 1px solid var(--linje); padding: 34px 26px 30px; text-align: center;
+  font-size: 12px; color: var(--blaek-svag); }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <nav class="hovedmenu">
+      <a class="menu-led" href="./">📄 Artikler</a>
+      <span class="menu-skel"></span>
+      <a class="menu-led yt aktiv" href="youtube.html">
+        <svg viewBox="0 0 24 17" aria-hidden="true"><path fill="currentColor" d="M23.5 2.7A3 3 0 0 0 21.4.6C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7C0 4.6 0 8.5 0 8.5s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/><path fill="#fff" d="M9.6 12.1V4.9l6.3 3.6-6.3 3.6z"/></svg>
+        YouTube</a>
+      <span class="menu-skel"></span>
+      <a class="menu-led" href="uge.html">🗞️ Ugens overblik</a>
+      <a class="menu-led" href="laer.html">🎓 Lær AI</a>
+    </nav>
+    <div class="sog">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
+      <input id="sogefelt" type="search" placeholder="Søg i videoerne …">
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="side-hoved">
+    <h1>Hvad rører sig på <em>YouTube?</em></h1>
+    <p>Vi følger de kanaler, der sætter dagsordenen inden for AI, og opsummerer hver video på
+      letlæst dansk — med tidsstempler til højdepunkterne, så du kan springe direkte til det,
+      der interesserer dig, i stedet for at se en halv time igennem.</p>
+    <div class="opdateret" id="opdateret"></div>
+  </div>
+
+  <div class="filter-baand" id="filterBaand" hidden>
+    <div class="filter-raekke" id="grupper"></div>
+    <div class="filter-raekke" id="emner"></div>
+  </div>
+
+  <div id="indhold"><div class="tom">Henter videoer …</div></div>
+
+  <section class="kanaler" id="kanaler" hidden>
+    <h2>Kanalerne vi følger</h2>
+    <p>Ti af de mest indflydelsesrige stemmer inden for AI — inddelt efter hvad de er bedst til.</p>
+    <div class="kanal-net" id="kanalNet"></div>
+  </section>
+</main>
+
+<div class="laeser-bag" id="laeserBag" role="dialog" aria-modal="true">
+  <article class="laeser" id="laeserBoks"></article>
+</div>
+
+<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder ·
+  <a href="./">Nyhederne</a> · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
+
+<script>
+/* ================================================================
+   YouTube-siden · logik
+   1) hent data/youtube.json  2) filtre pr. gruppe og emne
+   3) læsevisning med højdepunkter, der springer i videoen
+   ================================================================ */
+
+let videoer = [], grupper = [], emneListe = [], kanaler = [];
+let aktivGruppe = "Alle";
+let valgteEmner = new Set();
+let sogeTekst = "";
+
+const indhold = document.getElementById("indhold");
+
+/* ---------- Hjælpere ---------- */
+function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }
+function fed(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
+function mmss(sek) {
+  sek = Math.max(0, Math.round(sek || 0));
+  const t = Math.floor(sek / 3600), m = Math.floor((sek % 3600) / 60), s = sek % 60;
+  return t ? `${t}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`
+           : `${m}:${String(s).padStart(2, "0")}`;
+}
+function relativTid(iso) {
+  if (!iso) return "";
+  const min = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (min < 60) return "for " + Math.max(1, min) + " min. siden";
+  const t = Math.round(min / 60);
+  if (t < 24) return `for ${t} ${t === 1 ? "time" : "timer"} siden`;
+  const d = Math.round(t / 24);
+  if (d < 8) return `for ${d} ${d === 1 ? "dag" : "dage"} siden`;
+  return new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "short" });
+}
+function visninger(n) {
+  if (!n) return "";
+  if (n >= 1000000) return (n / 1000000).toFixed(1).replace(".", ",") + " mio. visninger";
+  return n.toLocaleString("da-DK") + " visninger";
+}
+function overskrift(v) { return v.rubrik ? esc(v.rubrik) : esc(v.titel); }
+function resumeAf(v) {
+  if (v.resume_da) return fed(v.resume_da);
+  return `<em>Resuméet er på vej — det skrives automatisk, næste gang siden opdateres.
+    Indtil da kan du bruge tidsstemplerne til at springe rundt i videoen.</em>`;
+}
+function erNy(v) {
+  return v.foerst_set && Date.now() - new Date(v.foerst_set).getTime() < 24 * 3600 * 1000;
+}
+function dagNoegle(iso) {
+  if (!iso) return "Ældre";
+  const d = new Date(iso);
+  return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+}
+function dagEtiket(n) {
+  if (n === "Ældre") return "Ældre";
+  const iDag = dagNoegle(new Date().toISOString());
+  const iGaar = dagNoegle(new Date(Date.now() - 86400000).toISOString());
+  if (n === iDag) return "I dag";
+  if (n === iGaar) return "I går";
+  return new Date(n).toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })
+    .replace(/^./, c => c.toUpperCase());
+}
+const IKON_SPIL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
+const IKON_YT = `<svg viewBox="0 0 24 17" aria-hidden="true"><path d="M23.5 2.7A3 3 0 0 0 21.4.6C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7C0 4.6 0 8.5 0 8.5s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 12.1V4.9l6.3 3.6-6.3 3.6z"/></svg>`;
+
+/* ---------- Filtrering ---------- */
+function filtrerede() {
+  const q = sogeTekst.toLowerCase();
+  return videoer.filter(v =>
+    (aktivGruppe === "Alle" || v.gruppe === aktivGruppe) &&
+    (!valgteEmner.size || (v.emner || []).some(e => valgteEmner.has(e))) &&
+    (!q || (v.titel + " " + (v.rubrik || "") + " " + (v.resume_da || "") + " " + v.kanal + " " +
+            (v.hoejdepunkter || []).map(h => h.titel + " " + (h.tekst || "")).join(" ")
+           ).toLowerCase().includes(q)));
+}
+
+function tegnFiltre() {
+  const antalGruppe = g => videoer.filter(v => g === "Alle" || v.gruppe === g).length;
+  const gr = ["Alle", ...grupper.map(g => g.navn).filter(n => videoer.some(v => v.gruppe === n))];
+  document.getElementById("grupper").innerHTML =
+    `<span class="filter-titel">Kategori</span>` + gr.map(g =>
+      `<button class="pill ${aktivGruppe === g ? "aktiv" : ""}" data-gruppe="${esc(g)}">${esc(g)}<span class="antal">${antalGruppe(g)}</span></button>`).join("");
+
+  const brugte = emneListe.filter(e => videoer.some(v => (v.emner || []).includes(e)));
+  document.getElementById("emner").innerHTML = brugte.length
+    ? `<span class="filter-titel">Emner</span>` + brugte.map(e =>
+        `<button class="pill emne-pill ${valgteEmner.has(e) ? "aktiv" : ""}" data-emne="${esc(e)}">${esc(e)}</button>`).join("")
+      + (valgteEmner.size ? `<button class="nulstil" id="nulstilEmner">Ryd emner</button>` : "")
+    : "";
+  document.getElementById("filterBaand").hidden = false;
+}
+
+/* ---------- Kort ---------- */
+function chips(v) {
+  let c = "";
+  if (erNy(v)) c += '<span class="ny-chip">NY</span>';
+  if ((v.prio ?? 0) >= 8) c += '<span class="vigtig-chip">★ Vigtig</span>';
+  if (!v.rubrik) c += '<span class="en-chip">EN</span>';
+  return c ? `<div class="art-chips">${c}</div>` : "";
+}
+function plakat(v) {
+  return `<img src="${esc(v.thumb)}" alt="" loading="lazy">
+    <span class="spil-knap"><span>${IKON_SPIL}</span></span>${chips(v)}
+    ${v.varighed ? `<span class="varighed">${mmss(v.varighed)}</span>` : ""}`;
+}
+function kortHtml(v) {
+  const hp = (v.hoejdepunkter || []).length;
+  return `
+  <a class="kort" href="${esc(v.link)}" data-id="${esc(v.id)}">
+    <div class="kort-art">${plakat(v)}</div>
+    <div class="kort-krop">
+      <div class="kicker"><span class="kanal-navn">${esc(v.kanal)}</span></div>
+      <h3>${overskrift(v)}</h3>
+      <p>${resumeAf(v)}</p>
+      <div class="kort-fod">
+        <span>${relativTid(v.dato)}</span>
+        ${v.visninger ? `<span>· ${esc(visninger(v.visninger))}</span>` : ""}
+      </div>
+      ${hp ? `<div class="hp-linje"><b>${hp} højdepunkt${hp === 1 ? "" : "er"}</b> med tidsstempel</div>` : ""}
+    </div>
+  </a>`;
+}
+
+function tegn() {
+  const liste = filtrerede();
+  if (!liste.length) {
+    indhold.innerHTML = `<div class="tom">Ingen videoer matcher 🤷</div>`;
+    return;
+  }
+  const paaDansk = videoer.filter(v => v.rubrik).length;
+  const note = paaDansk === 0
+    ? `<div class="note">🔑 De danske resuméer skrives, næste gang crawleren kører med en AI-nøgle.
+        Indtil da viser vi videoernes egne kapitler som højdepunkter.</div>` : "";
+
+  // Vigtigste video øverst som hero: højeste prioritet, og helst en med
+  // højdepunkter — et tomt hero-kort ville være en dårlig forside
+  const hero = [...liste].sort((a, b) =>
+    (b.prio ?? 5) - (a.prio ?? 5) ||
+    ((b.hoejdepunkter || []).length ? 1 : 0) - ((a.hoejdepunkter || []).length ? 1 : 0) ||
+    new Date(b.foerst_set || b.dato || 0) - new Date(a.foerst_set || a.dato || 0))[0];
+  const rest = liste.filter(v => v !== hero);
+
+  const heroHtml = `
+  <a class="hero" href="${esc(hero.link)}" data-id="${esc(hero.id)}">
+    <div class="hero-art">${plakat(hero)}</div>
+    <div class="hero-tekst">
+      <div class="kicker">Mest værd at se <span class="adskil">· ${esc(hero.kanal)} · ${esc(hero.gruppe)}</span></div>
+      <h2>${overskrift(hero)}</h2>
+      <p>${resumeAf(hero)}</p>
+      <div class="kort-fod">
+        <span>${relativTid(hero.dato)}</span>
+        ${hero.varighed ? `<span>· ${mmss(hero.varighed)}</span>` : ""}
+        ${hero.visninger ? `<span>· ${esc(visninger(hero.visninger))}</span>` : ""}
+        ${(hero.hoejdepunkter || []).length ? `<span>· <b style="color:var(--accent)">${hero.hoejdepunkter.length} højdepunkter</b></span>` : ""}
+      </div>
+    </div>
+  </a>`;
+
+  // Resten grupperet pr. dag, som på forsiden
+  const dage = [];
+  for (const v of rest) {
+    const n = dagNoegle(v.dato || v.foerst_set);
+    if (!dage.length || dage[dage.length - 1].noegle !== n) dage.push({ noegle: n, v: [] });
+    dage[dage.length - 1].v.push(v);
+  }
+  indhold.innerHTML = note + heroHtml + dage.map(d =>
+    `<div class="sektion-titel">${dagEtiket(d.noegle)}</div>
+     <div class="grid">${d.v.map(kortHtml).join("")}</div>`).join("");
+}
+
+function tegnKanaler() {
+  const net = grupper.map(g => {
+    const egne = kanaler.filter(k => k.gruppe === g.navn);
+    if (!egne.length) return "";
+    return `<div class="kanal-gruppe">
+      <h3>${esc(g.navn)}</h3>
+      <div class="om">${esc(g.beskrivelse || "")}</div>
+      ${egne.map(k => {
+        const n = videoer.filter(v => v.kanal === k.navn).length;
+        return `<a href="${esc(k.url)}" target="_blank" rel="noopener">
+          <span>${esc(k.navn)}</span>
+          <span class="n">${n ? n + (n === 1 ? " video" : " videoer") : "ingen nye"}</span></a>`;
+      }).join("")}
+    </div>`;
+  }).join("");
+  document.getElementById("kanalNet").innerHTML = net;
+  document.getElementById("kanaler").hidden = false;
+}
+
+/* ---------- Læsevisning ---------- */
+const laeserBag = document.getElementById("laeserBag");
+const laeserBoks = document.getElementById("laeserBoks");
+
+function aabnVideo(v) {
+  const hp = v.hoejdepunkter || [];
+  const hpHtml = hp.length
+    ? `<ul class="hp-liste">${hp.map(h => `
+        <li><button class="hp" data-sek="${h.sek}">
+          <span class="hp-tid">${esc(h.tid || mmss(h.sek))}</span>
+          <span>
+            <span class="hp-titel">${esc(h.titel)}</span>
+            ${h.tekst ? `<span class="hp-tekst">${fed(h.tekst)}</span>` : ""}
+          </span>
+        </button></li>`).join("")}</ul>
+       <div class="hp-note">Klik på et tidsstempel — så starter videoen præcis dér.
+         ${v.hp_kilde === "undertekster"
+            ? "Punkterne er fundet i videoens undertekster."
+            : "Punkterne er videoens egne kapitler."}</div>`
+    : `<p class="hp-note">Der er endnu ingen højdepunkter for denne video.</p>`;
+
+  const side = [];
+  if ((v.pointer || []).length)
+    side.push(`<div class="side-boks"><div class="laeser-h4">Kort fortalt</div>
+      <ul>${v.pointer.map(p => `<li>${fed(p)}</li>`).join("")}</ul></div>`);
+  if (v.betydning)
+    side.push(`<div class="betydning"><div class="laeser-h4">Hvad kan du bruge det til?</div>${fed(v.betydning)}</div>`);
+
+  laeserBoks.innerHTML = `
+    <button class="laeser-luk" id="laeserLuk" aria-label="Luk">✕</button>
+    <div class="laeser-krop">
+      <div class="kicker"><span class="kanal-navn">${esc(v.kanal)}</span>
+        <span class="adskil">· ${esc(v.gruppe)} · ${relativTid(v.dato)}${v.varighed ? " · " + mmss(v.varighed) : ""}</span>
+        ${(v.emner || []).map(e => `<span class="emne-maerkat">${esc(e)}</span>`).join("")}</div>
+      <h2>${overskrift(v)}</h2>
+      <div class="laeser-manchet">${resumeAf(v)}</div>
+      <div class="laeser-net">
+        <div>
+          <div class="laeser-h4">Højdepunkter</div>
+          ${hpHtml}
+        </div>
+        <aside class="afspiller">
+          <div class="afspiller-ramme" id="ramme">
+            <button class="afspiller-plakat" id="startVideo" aria-label="Afspil videoen">
+              <img src="${esc(v.thumb)}" alt="">
+              <span class="spil-knap"><span>${IKON_SPIL}</span></span>
+            </button>
+          </div>
+          ${side.join("")}
+        </aside>
+      </div>
+      <div class="laeser-bund">
+        <span class="laeser-note">${v.rubrik
+          ? "Opsummeret automatisk ud fra videoens undertekster"
+          : "Bygget på videoens egne kapitler"} · videoen tilhører ${esc(v.kanal)}</span>
+        <span style="display:flex;gap:8px;flex-wrap:wrap">
+          <a class="kanal-knap" href="${esc(v.kanal_url || "#")}" target="_blank" rel="noopener">${esc(v.kanal)}s kanal →</a>
+          <a class="yt-knap" href="${esc(v.link)}" target="_blank" rel="noopener">${IKON_YT} Se på YouTube</a>
+        </span>
+      </div>
+    </div>`;
+
+  laeserBag.classList.add("aaben");
+  laeserBag.scrollTop = 0;
+  document.body.style.overflow = "hidden";
+  document.getElementById("laeserLuk").addEventListener("click", lukLaeser);
+  history.replaceState(null, "", "#v=" + encodeURIComponent(v.id));
+
+  // Videoen indlejres først når man klikker — så YouTube ikke sættes i gang uopfordret
+  const ramme = document.getElementById("ramme");
+  function spil(sek) {
+    ramme.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?start=${Math.max(0, sek | 0)}&autoplay=1&rel=0"
+      title="${esc(v.rubrik || v.titel)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+  }
+  document.getElementById("startVideo").addEventListener("click", () => spil(0));
+  laeserBoks.querySelectorAll(".hp").forEach(knap =>
+    knap.addEventListener("click", () => spil(+knap.dataset.sek || 0)));
+}
+
+function lukLaeser() {
+  laeserBag.classList.remove("aaben");
+  laeserBoks.innerHTML = "";              // stopper også en kørende video
+  document.body.style.overflow = "";
+  history.replaceState(null, "", location.pathname + location.search);
+}
+laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && laeserBag.classList.contains("aaben")) lukLaeser(); });
+
+indhold.addEventListener("click", e => {
+  const kort = e.target.closest("[data-id]");
+  if (!kort) return;
+  e.preventDefault();
+  const v = videoer.find(x => x.id === kort.dataset.id);
+  if (v) aabnVideo(v);
+});
+
+/* ---------- Events ---------- */
+document.getElementById("filterBaand").addEventListener("click", e => {
+  const g = e.target.closest("[data-gruppe]");
+  if (g) { aktivGruppe = g.dataset.gruppe; tegnFiltre(); tegn(); return; }
+  const em = e.target.closest("[data-emne]");
+  if (em) {
+    const k = em.dataset.emne;
+    valgteEmner.has(k) ? valgteEmner.delete(k) : valgteEmner.add(k);
+    tegnFiltre(); tegn(); return;
+  }
+  if (e.target.closest("#nulstilEmner")) { valgteEmner.clear(); tegnFiltre(); tegn(); }
+});
+document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; tegn(); });
+
+/* ---------- Start ---------- */
+fetch("data/youtube.json")
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(d => {
+    videoer = d.videoer || [];
+    grupper = d.grupper || [];
+    emneListe = d.emner || [];
+    kanaler = d.kanaler || [];
+    if (d.opdateret)
+      document.getElementById("opdateret").textContent =
+        videoer.length + " videoer · senest opdateret " + relativTid(d.opdateret);
+    tegnFiltre(); tegn(); tegnKanaler();
+    const m = location.hash.match(/^#v=(.+)/);
+    if (m) {
+      const delt = videoer.find(x => x.id === decodeURIComponent(m[1]));
+      if (delt) aabnVideo(delt);
+    }
+  })
+  .catch(fejl => {
+    indhold.innerHTML = `<div class="tom">Kunne ikke hente videoerne (${esc(fejl.message)}).<br><br>
+      Kør <code>python3 crawler.py</code> og åbn siden via <code>python3 -m http.server</code>.</div>`;
+  });
+</script>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
+</body>
+</html>

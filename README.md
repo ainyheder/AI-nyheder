@@ -143,7 +143,28 @@ python3 -m http.server
 | `feeds.json` | Listen over nyhedskilder — projektets "indstillinger" |
 | `data/articles.json` | Selve artiklerne (genereres automatisk — ret den aldrig i hånden) |
 | `index.html` | Hele hjemmesiden: HTML + CSS + JavaScript i én fil |
+| `youtube.json` | Listen over YouTube-kanaler vi følger — inddelt i grupper |
+| `youtube.html` | Undersiden med AI-videoer fra YouTube |
+| `data/youtube.json` | Videoerne med danske resuméer (genereres automatisk) |
 | `.github/workflows/crawl.yml` | Automatikken: crawl hver 6. time + commit |
+
+## 📺 YouTube-delen
+
+Samme kørsel henter også de nyeste videoer fra de kanaler, der står i
+`youtube.json`. For hver video henter crawleren **underteksterne med tidskoder**
+og lader AI'en skrive et dansk resumé plus 3-6 **højdepunkter med tidsstempel** —
+så man kan klikke og springe direkte til det interessante sted i videoen.
+
+Tidsstemplerne kontrolleres altid mod de rigtige undertekster (eller kanalens
+egne kapitler). Passer et tidsstempel ikke på noget, der faktisk bliver sagt,
+bliver punktet smidt væk — der kommer aldrig et link, som fører et forkert sted hen.
+
+| Vil du … | Gør sådan |
+|---|---|
+| Følge en ny kanal | Tilføj en linje i `youtube.json`. Kanal-ID'et (`UC…`) finder du i kanalsidens kildekode under `<link rel="canonical">` |
+| Ændre hvor langt tilbage vi kigger | `YT_MAX_DAGE` i `crawler.py` |
+| Skrue op/ned for AI-forbruget | `YT_MAX_AI_PR_KOERSEL` i `crawler.py` |
+| Filtrere Shorts og korte klip væk | `YT_MIN_LAENGDE` i `crawler.py` (sekunder) |
 
 God fornøjelse! 🚀
 
