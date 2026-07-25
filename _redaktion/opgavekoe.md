@@ -47,6 +47,13 @@ stykker, men om at godt arbejde ligger skjult.*
 
 ### Kendte fejl — målt, ikke gættet
 
+- [ ] **Sammenlagte historier efterlader en forældreløs artikelside.** Når to
+      medier dækker samme nyhed, bliver den ene hovedhistorie og får sin egen
+      permanente side — men den andens side står stadig i `artikel/` og i
+      sitemappet med næsten samme indhold. Mål hvor mange sider det drejer sig
+      om, og find ud af, om hovedhistorien i stedet kan arve den ældste URL.
+      *Punkt 4 og 10 — Google kan se det som dobbelt indhold.*
+
 - [ ] **35 af 96 artikler mangler det fulde brief.** Mål årsagen først: rammer
       vi et loft pr. kørsel, fejler `hent_artikeltekst` på bestemte kilder, eller
       afviser redaktør-agenten dem? Ret så dét, der viser sig at være årsagen.
