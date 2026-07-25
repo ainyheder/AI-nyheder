@@ -41,6 +41,10 @@ GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
 GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
+# Den natlige gennemgang er det ene sted, hvor det handler om dømmekraft og ikke
+# om mængde: ét kald i døgnet. Derfor den kloge model, uanset hvem der skriver
+# artiklerne til daglig.
+KRITIK_MODEL = "gemini-3.6-flash"
 DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
@@ -282,8 +286,150 @@ Svar KUN med et JSON-array, ét objekt pr. artikel, i samme rækkefølge som inp
 [{"rubrik": "...", "resume": "..."}, ...]"""
 
 
+# ----- Hjernerne: model og prompt pr. arbejdstrin ----------------------------
+#
+# Alt herunder kan overstyres i _redaktion/hjerner.json uden at røre koden.
+# Filen behøver kun at indeholde dét, der er ændret - resten kører videre på
+# det indbyggede. Er filen væk eller i stykker, sker der ingenting.
+
+HJERNER_FIL = ROOT / "_redaktion" / "hjerner.json"
+HJERNER_STATUS = ROOT / "data" / "hjerner-status.json"
+
+# navn -> hvad trinnet laver (vises i kontrolpanelet)
+HJERNE_BESKRIVELSE = {
+    "omskriv": "Skriver rubrik og resumé på dansk for hver ny artikel",
+    "kategori": "Sætter kategori og prioritet 1-10 på hver artikel",
+    "dublet": "Finder artikler fra flere medier om samme begivenhed",
+    "brief": "Skriver den fulde danske genfortælling af en artikel",
+    "redaktoer": "Læser genfortællingen igennem og kræver omskrivning ved fejl",
+    "stram": "Strammer for lange 'Hvad betyder det for dig'-tekster",
+    "navngiv": "Sætter navne på gamle, anonyme overskrifter",
+    "motiv": "Finder billedmotivet til artikelillustrationerne",
+    "kartotek": "Skriver dagens prompt til prompt-kartoteket",
+    "quiz": "Laver ugens nyhedsquiz",
+    "dagens_overblik": "Skriver de fem punkter i Dagens overblik på forsiden",
+    "ugens_overblik": "Skriver ugens digest og nyhedsbrevet",
+    "youtube": "Opsummerer YouTube-videoer på dansk med tidsstempler",
+    "opslag": "Skriver opslag til de sociale platforme",
+    "gennemgang": "Den natlige gennemgang af hele siden",
+}
+
+_hjerner_cache: dict | None = None
+
+
+def _hjerner() -> dict:
+    global _hjerner_cache
+    if _hjerner_cache is None:
+        _hjerner_cache = {}
+        if HJERNER_FIL.exists():
+            try:
+                d = json.loads(HJERNER_FIL.read_text(encoding="utf-8"))
+                if isinstance(d.get("hjerner"), dict):
+                    _hjerner_cache = d["hjerner"]
+            except (json.JSONDecodeError, OSError) as fejl:
+                print(f"🧠 ⚠️ hjerner.json kunne ikke læses ({fejl}) "
+                      "- kører videre på de indbyggede prompts")
+    return _hjerner_cache
+
+
+def hjerne_prompt(navn: str, standard: str) -> str:
+    """Systemprompten for et arbejdstrin - overstyret eller indbygget."""
+    p = (_hjerner().get(navn) or {}).get("prompt")
+    return p.strip() if isinstance(p, str) and p.strip() else standard
+
+
+def hjerne_model(navn: str) -> str | None:
+    """Gemini-model for et trin, hvis panelet har valgt en bestemt."""
+    mo = (_hjerner().get(navn) or {}).get("model")
+    return mo.strip() if isinstance(mo, str) and mo.strip() else None
+
+
+def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
+                max_tokens: int, standard_model: str | None = None) -> str:
+    """Kalder AI'en for ét arbejdstrin. Er der valgt en bestemt Gemini-model
+    til trinnet, bruges den - ellers den daglige udbyder."""
+    system = hjerne_prompt(navn, standard_prompt)
+    model = hjerne_model(navn) or standard_model
+    if model and GEMINI_KEY:
+        try:
+            return kald_gemini_model(system, bruger, max_tokens, model)
+        except Exception as fejl:
+            print(f"🧠 ⚠️ {navn}: {model} svarede ikke "
+                  f"({type(fejl).__name__}) - bruger den daglige model")
+    return kald_ai(system, bruger, max_tokens)
+
+
+def _standard_prompts() -> dict:
+    """De indbyggede prompts, så kontrolpanelet kan vise dem og lade Torben
+    starte fra dem i stedet for fra et tomt felt."""
+    return {
+        "omskriv": SYSTEM_PROMPT, "kategori": SYSTEM_KATEGORI,
+        "dublet": SYSTEM_DUBLET, "brief": SYSTEM_BRIEF_ARTIKEL,
+        "redaktoer": SYSTEM_REDAKTOER, "stram": SYSTEM_STRAM,
+        "navngiv": SYSTEM_NAVNGIV, "motiv": SYSTEM_MOTIV,
+        "kartotek": SYSTEM_KARTOTEK, "quiz": SYSTEM_QUIZ,
+        "dagens_overblik": SYSTEM_BRIEF, "ugens_overblik": SYSTEM_UGE,
+        "youtube": SYSTEM_YT, "opslag": SYSTEM_OPSLAG,
+        "gennemgang": SYSTEM_KRITIK,
+    }
+
+
+def skriv_hjerne_status() -> None:
+    """Skriver hvad der FAKTISK kører lige nu, så kontrolpanelet kan vise
+    sandheden i stedet for hvad filen påstår. Skrives både som JSON og som en
+    JS-fil, så panelet kan åbnes direkte fra mappen uden en webserver."""
+    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else GEMINI_MODEL
+    std = _standard_prompts()
+    status = {
+        "opdateret": datetime.now(timezone.utc).isoformat(),
+        "daglig_model": daglig,
+        "udbyder": UDBYDER or "ingen",
+        "billedmodel": BILLED_MODEL if GEMINI_KEY else "ingen",
+        "kritik_model": KRITIK_MODEL,
+        "gemini_tilgaengelig": bool(GEMINI_KEY),
+        "hjerner": {
+            navn: {
+                "beskrivelse": besk,
+                "model": hjerne_model(navn) or (KRITIK_MODEL if navn == "gennemgang" else daglig),
+                "egen_model": bool(hjerne_model(navn)),
+                "egen_prompt": bool((_hjerner().get(navn) or {}).get("prompt")),
+                "standard_prompt": std.get(navn, ""),
+                "aktiv_prompt": hjerne_prompt(navn, std.get(navn, "")),
+            } for navn, besk in HJERNE_BESKRIVELSE.items()
+        },
+    }
+    HJERNER_STATUS.parent.mkdir(exist_ok=True)
+    HJERNER_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2),
+                              encoding="utf-8")
+    # Samme data som JavaScript - så kontrolpanelet virker fra file://.
+    # Ligger i data/, fordi det er dén mappe, workflow'en committer.
+    (HJERNER_STATUS.parent / "hjerne-data.js").write_text(
+        "window.HJERNE_STATUS = "
+        + json.dumps(status, ensure_ascii=False, indent=1) + ";\n",
+        encoding="utf-8")
+
+
+def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
+                      model: str) -> str:
+    """Kalder en BESTEMT Gemini-model. Bruges til den natlige gennemgang, hvor
+    vi vil have den kloge model uanset hvem der skriver artiklerne til daglig.
+    Ingen fallback: virker modellen ikke, skal vi vide det."""
+    if not GEMINI_KEY:
+        raise RuntimeError("GEMINI_API_KEY mangler")
+    body = json.dumps({
+        "systemInstruction": {"parts": [{"text": system}]},
+        "contents": [{"role": "user", "parts": [{"text": bruger_tekst}]}],
+        "generationConfig": {"maxOutputTokens": max_tokens},
+    }).encode()
+    svar = hent_url(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+        data=body, headers={"x-goog-api-key": GEMINI_KEY,
+                            "content-type": "application/json"})
+    return json.loads(svar)["candidates"][0]["content"]["parts"][0]["text"]
+
+
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
-    """Ét fælles AI-kald - taler med Claude eller Gemini alt efter hvilken
+    """Ét fælles AI-kald - taler med DeepSeek eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
     if UDBYDER == "deepseek":
         # OpenAI-formatet. VIGTIGT: "thinking" er slået TIL som standard hos
@@ -353,8 +499,7 @@ def kald_ai_batch(artikler: list[dict]) -> list[dict] | None:
     input_liste = [{"nr": i + 1, "titel": a["titel"], "tekst": a["resume"][:350],
                     "kilde": a["kilde"]} for i, a in enumerate(artikler)]
     try:
-        resultat = parse_json_svar(kald_ai(
-            SYSTEM_PROMPT,
+        resultat = parse_json_svar(hjerne_kald("omskriv", SYSTEM_PROMPT,
             "Omskriv disse artikler:\n" + json.dumps(input_liste, ensure_ascii=False),
             4000))
         if isinstance(resultat, list) and len(resultat) == len(artikler):
@@ -365,7 +510,7 @@ def kald_ai_batch(artikler: list[dict]) -> list[dict] | None:
     return None
 
 
-SYSTEM_BRIEF = """Du er journalist på et dansk nyhedssite for almindelige mennesker
+SYSTEM_BRIEF_ARTIKEL = """Du er journalist på et dansk nyhedssite for almindelige mennesker
 uden teknisk baggrund. Ud fra artikelteksten skriver du en SELVSTÆNDIG dansk
 genfortælling i dine helt egne ord - oversæt ALDRIG sætninger direkte, og citér
 ikke fra kilden. Kald teknologien "AI" - skriv ALDRIG "kunstig intelligens"
@@ -486,8 +631,7 @@ def redaktoer_tjek(a: dict) -> dict | None:
         udkast = {"rubrik": a.get("rubrik"), "resume": a.get("resume_da"),
                   "sektioner": a.get("sektioner"), "noegletal": a.get("noegletal"),
                   "betydning": a.get("betydning"), "kategori": a.get("kategori")}
-        r = parse_json_objekt(kald_ai(
-            SYSTEM_REDAKTOER, json.dumps(udkast, ensure_ascii=False), 400))
+        r = parse_json_objekt(hjerne_kald("redaktoer", SYSTEM_REDAKTOER, json.dumps(udkast, ensure_ascii=False), 400))
         if isinstance(r, dict) and "godkendt" in r:
             return r
     except Exception as fejl:
@@ -501,15 +645,14 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
     try:
         er_forskning = "arxiv" in a.get("kilde", "").lower() or a.get("kategori") == "Forskning"
         er_vigtig = (a.get("prio") or 0) >= 8 or bool(a.get("andre"))
-        sys_prompt = SYSTEM_BRIEF \
+        sys_prompt = SYSTEM_BRIEF_ARTIKEL \
             + (SYSTEM_BRIEF_FORSKNING if er_forskning else "") \
             + (SYSTEM_BRIEF_LANG if er_vigtig and not er_forskning else "")
         bruger = f"KILDE: {a['kilde']}\nTITEL: {a['titel']}\n\nARTIKELTEKST:\n{tekst}"
         if redaktoer_noter:
             bruger += ("\n\nREDAKTØRENS NOTER TIL DIT FORRIGE UDKAST - "
                        f"RET PRÆCIS DISSE PROBLEMER:\n{redaktoer_noter}")
-        r = parse_json_objekt(kald_ai(
-            sys_prompt, bruger, 2200 if er_vigtig else 1500))
+        r = parse_json_objekt(hjerne_kald("brief", sys_prompt, bruger, 2200 if er_vigtig else 1500))
         if r.get("rubrik") and (r.get("sektioner") or r.get("brief")):
             return r
     except Exception as fejl:
@@ -682,7 +825,7 @@ def klassificer(artikler: list[dict]) -> None:
         liste = [{"nr": j + 1, "titel": a["titel"], "tekst": a["resume"][:200]}
                  for j, a in enumerate(batch)]
         try:
-            svar = parse_json_svar(kald_ai(SYSTEM_KATEGORI,
+            svar = parse_json_svar(hjerne_kald("kategori", SYSTEM_KATEGORI,
                                            json.dumps(liste, ensure_ascii=False), 2500))
             if isinstance(svar, list) and len(svar) == len(batch):
                 for a, r in zip(batch, svar):
@@ -753,7 +896,7 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     grupper = None
     for forsoeg in (1, 2):
         try:
-            grupper = parse_json_svar(kald_ai(SYSTEM_DUBLET, liste, 1500))
+            grupper = parse_json_svar(hjerne_kald("dublet", SYSTEM_DUBLET, liste, 1500))
             assert isinstance(grupper, list)
             break
         except Exception as fejl:
@@ -877,8 +1020,7 @@ def udfyld_billedmotiver(artikler: list[dict]) -> None:
                   "detaljer": a.get("detaljer", [])[:4]}
                  for j, a in enumerate(batch)]
         try:
-            svar = parse_json_svar(kald_ai(
-                SYSTEM_MOTIV, json.dumps(liste, ensure_ascii=False), 2000))
+            svar = parse_json_svar(hjerne_kald("motiv", SYSTEM_MOTIV, json.dumps(liste, ensure_ascii=False), 2000))
             if isinstance(svar, list) and len(svar) == len(batch):
                 for a, r in zip(batch, svar):
                     a["billedmotiv"] = str(r.get("motiv", "")).strip()
@@ -1393,7 +1535,7 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
                 "betydning": a.get("betydning", "")[:200], "kategori": a.get("kategori"),
                 "link": a["link"]} for a in friske[:8]]
     try:
-        r = parse_json_objekt(kald_ai(SYSTEM_UGE, json.dumps(payload, ensure_ascii=False), 2500))
+        r = parse_json_objekt(hjerne_kald("ugens_overblik", SYSTEM_UGE, json.dumps(payload, ensure_ascii=False), 2500))
         if not (r.get("rubrik") and len(r.get("historier", [])) >= 3):
             raise ValueError("ufuldstændigt uge-svar")
     except Exception as fejl:
@@ -1761,8 +1903,8 @@ def lav_dagens_prompt() -> None:
             return  # dagens prompt findes allerede
 
         titler = [p.get("titel", "") for p in arkiv.get("prompts", [])][:60]
-        r = parse_json_objekt(kald_ai(
-            SYSTEM_KARTOTEK,
+        r = parse_json_objekt(hjerne_kald(
+            "kartotek", SYSTEM_KARTOTEK,
             "Dags dato: " + dag + ". Tidligere titler (undgå gentagelser): "
             + json.dumps(titler, ensure_ascii=False),
             600))
@@ -1808,7 +1950,7 @@ def stram_betydninger(artikler: list[dict]) -> None:
         return
     try:
         payload = [{"nr": i + 1, "tekst": a["betydning"]} for i, a in enumerate(lange)]
-        r = parse_json_svar(kald_ai(SYSTEM_STRAM, json.dumps(payload, ensure_ascii=False), 3000))
+        r = parse_json_svar(hjerne_kald("stram", SYSTEM_STRAM, json.dumps(payload, ensure_ascii=False), 3000))
         rettede = 0
         for p in r if isinstance(r, list) else []:
             try:
@@ -1917,7 +2059,7 @@ def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
                     "dansk_rubrik": a["rubrik"],
                     "dansk_resume": (a.get("resume_da") or "")[:250]}
                    for i, a in enumerate(anonyme)]
-        r = parse_json_svar(kald_ai(SYSTEM_NAVNGIV,
+        r = parse_json_svar(hjerne_kald("navngiv", SYSTEM_NAVNGIV,
                                     json.dumps(payload, ensure_ascii=False), 3500))
         rettede = 0
         for p in r if isinstance(r, list) else []:
@@ -1983,7 +2125,7 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
         stof = [{"nr": i + 1, "rubrik": a["rubrik"],
                  "resume": (a.get("resume_da") or "")[:200]}
                 for i, a in enumerate(kandidater)]
-        r = parse_json_svar(kald_ai(SYSTEM_BRIEF, json.dumps(stof, ensure_ascii=False), 800))
+        r = parse_json_svar(hjerne_kald("dagens_overblik", SYSTEM_BRIEF, json.dumps(stof, ensure_ascii=False), 800))
 
         punkter = []
         for p in r if isinstance(r, list) else []:
@@ -2049,7 +2191,7 @@ def lav_ugens_quiz(artikler: list[dict]) -> None:
         if len(stof) < 5:
             return
 
-        r = parse_json_svar(kald_ai(SYSTEM_QUIZ, json.dumps(stof, ensure_ascii=False), 2000))
+        r = parse_json_svar(hjerne_kald("quiz", SYSTEM_QUIZ, json.dumps(stof, ensure_ascii=False), 2000))
         gyldige = []
         for q in r if isinstance(r, list) else []:
             svar = q.get("svar") or []
@@ -2335,7 +2477,7 @@ def yt_kald_ai(v: dict, transkript: str, kapitler: list[dict],
             bruger += f"\n\nTRANSKRIPT MED TIDSSTEMPLER:\n{transkript}"
         else:
             bruger += f"\n\nKANALENS BESKRIVELSE AF VIDEOEN:\n{beskrivelse[:4000]}"
-        r = parse_json_objekt(kald_ai(
+        r = parse_json_objekt(hjerne_kald("youtube",
             SYSTEM_YT + ("" if transkript else SYSTEM_YT_UDEN_TRANSKRIPT),
             bruger, 1800))
         # Uden transkript er højdepunkter valgfrie - resuméet er stadig værdifuldt
@@ -2555,6 +2697,157 @@ def lav_youtube() -> None:
 
 # ----- Hovedprogram ----------------------------------------------------------
 
+# ----- Den natlige gennemgang ("redaktionens øjne") --------------------------
+#
+# Én gang i døgnet standser crawleren op og ser på sit eget arbejde med
+# Torbens målestok i hånden (_redaktion/redaktionens-oejne.md). Den ændrer
+# ingenting - den skriver en prioriteret liste og åbner et GitHub-issue.
+
+OEJNE_FIL = ROOT / "_redaktion" / "redaktionens-oejne.md"
+KRITIK_FIL = ROOT / "_redaktion" / "kritik-seneste.md"
+KRITIK_STEMPEL = ROOT / "data" / "kritik.json"
+
+SYSTEM_KRITIK = """Du er redaktionschef på ainyheder.com og gennemgår siden med
+ejerens egne øjne. Du får hans målestok og en faktuel tilstandsrapport.
+
+Din opgave: find de TRE vigtigste ting, der bør laves nu. Ikke de tre nemmeste,
+og ikke de tre mest ambitiøse - de tre der betyder mest for læseren.
+
+Regler:
+- Byg KUN på tallene i tilstandsrapporten. Opdigt aldrig et problem, du ikke
+  kan pege på i data. Er der intet galt, så sig det - tre svage forslag er
+  værre end ét godt.
+- Hvert forslag skal kunne kobles til et af de ni punkter i målestokken.
+- "hvad" skal beskrive, hvad en LÆSER oplever - ikke hvad koden gør.
+- "mindste_rettelse" skal være noget, der kan laves i dag. Ikke en plan.
+- Skriv dansk, direkte, uden floskler. Ingen ros for rosens skyld.
+
+Svar KUN med JSON:
+{"overblik": "1-2 sætninger om sidens tilstand lige nu",
+ "forslag": [{"hvad": "...", "punkt": "<nummer og navn fra målestokken>",
+              "hvorfor": "...", "mindste_rettelse": "...",
+              "vigtighed": <1-10>}]}"""
+
+
+def _tilstandsrapport(artikler: list[dict]) -> dict:
+    """Faktuelle tal om sidens tilstand. Ingen vurdering - kun målinger,
+    så kritikken bygger på noget, der faktisk kan efterprøves."""
+    nu = datetime.now(timezone.utc)
+    doegn = (nu - timedelta(hours=24)).isoformat()
+    med_rubrik = [a for a in artikler if a.get("rubrik")]
+    friske = [a for a in artikler if (a.get("foerst_set") or "") >= doegn]
+
+    def andel(liste, praedikat):
+        return f"{sum(1 for a in liste if praedikat(a))} af {len(liste)}"
+
+    rapport = {
+        "artikler_i_alt": len(artikler),
+        "nye_seneste_doegn": len(friske),
+        "uden_dansk_rubrik": len(artikler) - len(med_rubrik),
+        "rubrikker_uden_navn": andel(med_rubrik, lambda a: _mangler_navn(a["rubrik"])),
+        "uden_komplet_brief": andel(med_rubrik, lambda a: not a.get("sektioner")),
+        "uden_hvad_betyder_det": andel(med_rubrik, lambda a: not a.get("betydning")),
+        "uden_billede": andel(med_rubrik, lambda a: not a.get("billede")),
+        "for_lange_betydninger": andel(
+            med_rubrik, lambda a: len((a.get("betydning") or "").split()) > 45),
+        "flerkilde_historier": andel(med_rubrik, lambda a: bool(a.get("andre"))),
+        "kilder": sorted({a.get("kilde", "") for a in artikler}),
+    }
+    for navn, sti in (("dagens_overblik", BRIEF_FIL), ("ugens_quiz", QUIZ_FIL),
+                      ("dagens_prompt", PROMPT_ARKIV), ("ugens_overblik", UGE_JSON)):
+        try:
+            d = json.loads(sti.read_text(encoding="utf-8"))
+            rapport[navn] = d.get("uge") or d.get("dato") or "findes"
+        except Exception:
+            rapport[navn] = "MANGLER"
+    try:
+        yt = json.loads(YT_OUTPUT.read_text(encoding="utf-8"))["videoer"]
+        rapport["videoer"] = f"{len(yt)} i alt, {sum(1 for v in yt if v.get('rubrik'))} med dansk resumé"
+    except Exception:
+        rapport["videoer"] = "MANGLER"
+    rapport["artikelsider"] = len(list(ARTIKEL_MAPPE.glob("*.html"))) if ARTIKEL_MAPPE.exists() else 0
+    rapport["videosider"] = len(list(VIDEO_MAPPE.glob("*.html"))) if VIDEO_MAPPE.exists() else 0
+    return rapport
+
+
+def _opret_issue(titel: str, krop: str) -> bool:
+    """Åbner et GitHub-issue med Actions-tokenet. Uden token: springes over."""
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    if not (token and repo):
+        return False
+    hent_url(f"https://api.github.com/repos/{repo}/issues",
+             data=json.dumps({"title": titel, "body": krop,
+                              "labels": ["natlig gennemgang"]}).encode(),
+             headers={"Authorization": f"Bearer {token}",
+                      "Accept": "application/vnd.github+json",
+                      "Content-Type": "application/json",
+                      "User-Agent": "ainyheder-crawler"})
+    return True
+
+
+def natlig_gennemgang(artikler: list[dict]) -> None:
+    """Én gennemgang i døgnet. Ændrer intet - foreslår kun. Fejler stille."""
+    if not API_KEY or not OEJNE_FIL.exists():
+        return
+    try:
+        dag = _opslag_dag()
+        if KRITIK_STEMPEL.exists():
+            try:
+                if json.loads(KRITIK_STEMPEL.read_text(encoding="utf-8")).get("dato") == dag:
+                    return                      # allerede gennemgået i dag
+            except json.JSONDecodeError:
+                pass
+
+        maalestok = OEJNE_FIL.read_text(encoding="utf-8")[:6000]
+        rapport = _tilstandsrapport(artikler)
+        bruger = ("MÅLESTOKKEN:\n" + maalestok
+                  + "\n\nTILSTANDSRAPPORT (målt lige nu):\n"
+                  + json.dumps(rapport, ensure_ascii=False, indent=1))
+        # Den kloge model som standard - kontrolpanelet kan vælge en anden.
+        brugt_model = hjerne_model("gennemgang") or KRITIK_MODEL
+        raa = hjerne_kald("gennemgang", SYSTEM_KRITIK, bruger, 1600,
+                          standard_model=KRITIK_MODEL)
+        r = parse_json_objekt(raa)
+        forslag = [f for f in (r.get("forslag") or []) if isinstance(f, dict) and f.get("hvad")]
+        if not forslag:
+            return
+
+        forslag.sort(key=lambda f: f.get("vigtighed") or 0, reverse=True)
+        linjer = [f"# Natlig gennemgang · {dag}", "",
+                  _som_tekst(r.get("overblik", "")), ""]
+        for nr, f in enumerate(forslag[:3], 1):
+            linjer += [f"## {nr}. {_som_tekst(f.get('hvad'))}",
+                       f"**Bryder:** {_som_tekst(f.get('punkt'))} · "
+                       f"**Vigtighed:** {f.get('vigtighed', '?')}/10", "",
+                       _som_tekst(f.get("hvorfor")), "",
+                       f"**Mindste rettelse:** {_som_tekst(f.get('mindste_rettelse'))}", ""]
+        linjer += ["---", "", "<details><summary>Tilstandsrapporten bag</summary>", "",
+                   "```json", json.dumps(rapport, ensure_ascii=False, indent=1), "```",
+                   "", "</details>", "",
+                   f"*Gennemgået af `{brugt_model}` ud fra "
+                   "`_redaktion/redaktionens-oejne.md`. "
+                   "Ret målestokken, hvis gennemgangen kigger det forkerte sted.*"]
+        tekst = "\n".join(linjer)
+
+        KRITIK_FIL.parent.mkdir(exist_ok=True)
+        KRITIK_FIL.write_text(tekst, encoding="utf-8")
+        KRITIK_STEMPEL.parent.mkdir(exist_ok=True)
+        KRITIK_STEMPEL.write_text(json.dumps({"dato": dag}, ensure_ascii=False),
+                                  encoding="utf-8")
+        try:
+            sendt = _opret_issue(f"Natlig gennemgang · {dag}", tekst)
+        except Exception as fejl:
+            sendt = False
+            print(f"🔍 ⚠️ Kunne ikke oprette issue: {type(fejl).__name__}: {fejl}")
+        print(f"🔍 Natlig gennemgang: {len(forslag[:3])} forslag"
+              + (" - issue oprettet" if sendt else " - skrevet til _redaktion/kritik-seneste.md"))
+        for f in forslag[:3]:
+            print(f"   {f.get('vigtighed', '?')}/10 · {_som_tekst(f.get('hvad'))[:96]}")
+    except Exception as fejl:
+        print(f"🔍 Natlig gennemgang sprang over ({type(fejl).__name__}: {fejl})")
+
+
 # ----- Opslag på sociale platforme -------------------------------------------
 #
 # TØRKØRSEL ER STANDARD. Uden secret'en OPSLAG_LIVE=ja skriver crawleren kun
@@ -2702,7 +2995,7 @@ def del_paa_platforme(artikler: list[dict]) -> None:
 
         stof = {"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
                 "betydning": a.get("betydning", "")}
-        r = parse_json_objekt(kald_ai(SYSTEM_OPSLAG,
+        r = parse_json_objekt(hjerne_kald("opslag", SYSTEM_OPSLAG,
                                       json.dumps(stof, ensure_ascii=False), 700))
         tekster = {n: _som_tekst(r.get(n, "")).strip() for _, n, _, _ in PLATFORME}
         if not any(tekster.values()):
@@ -2759,6 +3052,12 @@ def main() -> None:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     if GEMINI_KEY:
         print(f"🎨 Billedmodel: {BILLED_MODEL}")
+        print(f"🔍 Natlig gennemgang: {hjerne_model('gennemgang') or KRITIK_MODEL}")
+    egne = [n for n in HJERNE_BESKRIVELSE
+            if hjerne_model(n) or (_hjerner().get(n) or {}).get("prompt")]
+    if egne:
+        print(f"🧠 Overstyret i kontrolpanelet: {', '.join(egne)}")
+    skriv_hjerne_status()
     print()
 
     feeds = json.loads(FEEDS_FIL.read_text(encoding="utf-8"))["feeds"]
@@ -2894,6 +3193,7 @@ def main() -> None:
     lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke)
     del_paa_platforme(unikke)  # tørkørsel indtil OPSLAG_LIVE=ja
+    natlig_gennemgang(unikke)  # ser på siden med redaktionens øjne, ændrer intet
     try:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
     except Exception as fejl:

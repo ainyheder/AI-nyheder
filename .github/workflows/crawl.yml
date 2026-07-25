@@ -33,6 +33,7 @@ on:
 
 permissions:
   contents: write            # workflow'en skal have lov at committe data-filen
+  issues: write              # den natlige gennemgang åbner et issue med sine forslag
 
 concurrency:
   group: crawl
@@ -64,6 +65,9 @@ jobs:
           FACEBOOK_TOKEN: ${{ secrets.FACEBOOK_TOKEN }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
+          # Den natlige gennemgang åbner et issue med sine forslag
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
           GENKOER_ALT: ${{ inputs.genkoer_alt || vars.GENKOER_ALT }}
         run: |
