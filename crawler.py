@@ -1556,6 +1556,165 @@ def lav_artikelsider(artikler: list[dict]) -> None:
     print(f"🔎 Artikelsider: {skrevet} skrevet/opdateret, {len(alle_sider)} i alt")
 
 
+# ----- Statiske videosider (SEO) ---------------------------------------------
+
+VIDEO_MAPPE = ROOT / "video"
+
+
+def _video_side_html(v: dict) -> str:
+    """Én statisk side pr. YouTube-video med det danske resumé.
+    Værdien for læseren - og for Google - er den danske genfortælling;
+    selve videoen ligger stadig hos YouTube."""
+    rubrik = html.escape(v.get("rubrik") or v.get("titel", ""))
+    resume = html.escape(v.get("resume_da") or "")
+    vid = re.sub(r"[^A-Za-z0-9_-]", "", str(v.get("id", "")))
+    url = f"{SITE_URL}/video/{vid}.html"
+    thumb = html.escape(v.get("thumb") or f"{SITE_URL}/assets/og.png")
+    dato = str(v.get("dato") or "")
+    dato_vis = dato[:10]
+
+    hp = ""
+    if v.get("hoejdepunkter"):
+        raekker = "".join(
+            f'<li><a href="{html.escape(v["link"])}&t={int(h.get("sek", 0))}s" rel="noopener">'
+            f'<strong>{html.escape(str(h.get("tid", "")))}</strong></a> '
+            f'{_fed_html(h.get("titel", ""))}</li>'
+            for h in v["hoejdepunkter"])
+        hp = f"<h2>Højdepunkter — hop direkte til stedet</h2>\n<ul>{raekker}</ul>"
+
+    pointer = ""
+    if v.get("pointer"):
+        punkter = "".join(f"<li>{_fed_html(p)}</li>" for p in v["pointer"])
+        pointer = f'<div class="boks"><strong>Kort fortalt</strong><ul>{punkter}</ul></div>'
+
+    betydning = ""
+    if v.get("betydning"):
+        betydning = ('<div class="boks" style="border-left-color:#2e9e5b;">'
+                     f'<strong>Hvad betyder det for dig?</strong><br>{_fed_html(v["betydning"])}</div>')
+
+    # Struktureret data, så Google kan vise siden som videoresultat
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": v.get("rubrik") or v.get("titel", ""),
+        "description": v.get("resume_da") or "",
+        "thumbnailUrl": v.get("thumb", ""),
+        "uploadDate": dato,
+        "duration": v.get("varighed") or None,
+        "embedUrl": f"https://www.youtube.com/embed/{vid}",
+        "url": url,
+        "publisher": {"@type": "Organization", "name": "AI-nyheder",
+                      "url": SITE_URL},
+    }, ensure_ascii=False)
+
+    return f"""<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · {rubrik}</title>
+<meta name="description" content="{resume}">
+<link rel="canonical" href="{url}">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:type" content="video.other">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="{rubrik}">
+<meta property="og:description" content="{resume}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{thumb}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{jsonld}</script>
+<style>
+:root {{ --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
+  --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; --yt:#cc2b2b; }}
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
+.topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }}
+.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }}
+.brand em {{ font-style:normal; color:var(--accent); }}
+main {{ max-width:720px; margin:0 auto; padding:44px 24px 80px; }}
+.kicker {{ font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--yt); margin-bottom:12px; }}
+h1 {{ font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }}
+.manchet {{ font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }}
+.afspil {{ display:block; position:relative; margin-bottom:24px; border-radius:16px; overflow:hidden; background:#000; }}
+.afspil img {{ width:100%; display:block; }}
+.afspil span {{ position:absolute; inset:0; display:grid; place-items:center; }}
+.afspil b {{ width:64px; height:45px; border-radius:12px; background:rgba(204,43,43,.94); display:grid; place-items:center; color:#fff; font-size:20px; }}
+h2 {{ font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }}
+p {{ font-size:15.5px; line-height:1.75; margin-bottom:13px; }}
+li {{ font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }}
+li a {{ color:var(--accent); text-decoration:none; font-variant-numeric:tabular-nums; }}
+li a:hover {{ text-decoration:underline; }}
+.boks {{ background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }}
+.kilde {{ display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }}
+.kilde:hover {{ border-color:var(--yt); color:var(--yt); }}
+.cta {{ display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }}
+.note {{ font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }}
+footer {{ border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }}
+footer a {{ color:var(--accent); }}
+</style>
+</head>
+<body>
+<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<main>
+<div class="kicker">AI på YouTube · {html.escape(v.get("kanal", ""))} · {dato_vis}</div>
+<h1>{rubrik}</h1>
+<p class="manchet">{resume}</p>
+<a class="afspil" href="{html.escape(v.get("link", ""))}" rel="noopener">
+  <img src="{thumb}" alt="" loading="lazy"><span><b>▶</b></span></a>
+{pointer}
+{hp}
+{betydning}
+<p style="margin-top:24px"><strong>Se videoen:</strong><br>
+  <a class="kilde" href="{html.escape(v.get("link", ""))}" rel="noopener">Åbn på YouTube →</a>
+  <a class="kilde" href="{html.escape(v.get("kanal_url", "") or v.get("link", ""))}" rel="noopener">{html.escape(v.get("kanal", ""))} →</a></p>
+<a class="cta" href="/youtube.html">Flere AI-videoer opsummeret på dansk →</a>
+<p class="note">Resuméet er skrevet af AI-nyheder.com ud fra videoen · Vi ejer ikke videoen, og den ligger fortsat hos {html.escape(v.get("kanal", "kanalen"))} · Tjek altid originalen, hvis noget er vigtigt for dig.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}'></script>
+</body>
+</html>"""
+
+
+def lav_videosider(videoer: list[dict]) -> None:
+    """Statisk side pr. video med dansk resumé + eget sitemap.
+    Kun videoer med dansk rubrik - resten har intet at tilbyde en læser."""
+    VIDEO_MAPPE.mkdir(exist_ok=True)
+    skrevet = 0
+    for v in videoer:
+        if not (v.get("rubrik") and v.get("id")):
+            continue
+        vid = re.sub(r"[^A-Za-z0-9_-]", "", str(v["id"]))
+        if not vid:
+            continue
+        v["side"] = f"video/{vid}.html"
+        sti = VIDEO_MAPPE / f"{vid}.html"
+        indhold = _video_side_html(v)
+        if not sti.exists() or sti.read_text(encoding="utf-8") != indhold:
+            sti.write_text(indhold, encoding="utf-8")
+            skrevet += 1
+    alle = sorted(VIDEO_MAPPE.glob("*.html"))
+    (ROOT / "sitemap-videoer.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{SITE_URL}/video/{p.name}</loc></url>\n" for p in alle)
+        + "</urlset>\n", encoding="utf-8")
+    print(f"🔎 Videosider: {skrevet} skrevet/opdateret, {len(alle)} i alt")
+
+
 # ----- Dagens prompt (prompt-kartoteket) -------------------------------------
 
 PROMPT_ARKIV = ROOT / "data" / "prompts.json"
@@ -1920,6 +2079,7 @@ YT_MAX_DAGE = 45             # så langt tilbage vi kigger. Skal være rundeligt
 YT_MAX_PR_KANAL = 6          # max videoer pr. kanal pr. kørsel
 YT_MIN_LAENGDE = 180         # spring Shorts og små klip over (sekunder)
 YT_MAX_AI_PR_KOERSEL = 14    # loft over AI-kald pr. kørsel (holder prisen nede)
+YT_MAX_FORSOEG = 3           # så mange gange prøver vi at få dansk tekst på en video
 YT_MAX_TRANSKRIPT = 42000    # så mange tegn transkript sender vi til AI'en
 YT_BLOK_SEK = 40             # undertekster samles i blokke af 40 sekunder
 
@@ -2274,7 +2434,18 @@ def lav_youtube() -> None:
     friske.sort(key=lambda v: v["dato"] or datetime.min.replace(tzinfo=timezone.utc),
                 reverse=True)
 
-    nye = [v for v in friske if v["id"] not in cache and v["id"] not in afvist_set]
+    # En video regnes FÆRDIG når den har et dansk resumé - ikke bare fordi den
+    # ligger i cachen. Ellers låser en video sig fast for evigt: kapitlerne
+    # gemmes nemlig FØR AI-kaldet, så et mislykket kald efterlod den i cachen
+    # uden dansk tekst og uden nogensinde at blive prøvet igen.
+    def _skal_proeves(v: dict) -> bool:
+        g = cache.get(v["id"])
+        if g is None:
+            return True                                   # aldrig set før
+        return (not g.get("rubrik")
+                and int(g.get("forsoeg") or 0) < YT_MAX_FORSOEG)
+
+    nye = [v for v in friske if v["id"] not in afvist_set and _skal_proeves(v)]
     if GENKOER_ALT:
         nye = friske
         afvist, afvist_set, nye_afvist = [], set(), []
@@ -2308,6 +2479,9 @@ def lav_youtube() -> None:
         if not cues:
             print(f"   ℹ️  {v['kanal']}: ingen undertekster - skriver resumé ud "
                   "fra beskrivelsen i stedet")
+        # Tæl forsøget FØR kaldet - så en video, der bliver ved med at fejle,
+        # giver op efter YT_MAX_FORSOEG i stedet for at koste penge hver time.
+        v["forsoeg"] = int(cache.get(v["id"], {}).get("forsoeg") or 0) + 1
         r = yt_kald_ai(v, yt_transkript_tekst(cues) if cues else "",
                        kapitler, beskrivelse)
         brugt += 1
@@ -2339,11 +2513,15 @@ def lav_youtube() -> None:
         ny["visninger"] = v.get("visninger") or gammel.get("visninger", 0)
         ny.pop("_beskrivelse", None)
         ny.pop("_spring", None)
+        if ny.get("rubrik"):
+            ny.pop("forsoeg", None)        # lykkedes - nulstil tælleren
         resultat.append(ny)
 
     # Nyeste først (efter hvornår VI så videoen, som på forsiden)
     resultat.sort(key=lambda v: (v.get("foerst_set") or "", v.get("dato") or ""),
                   reverse=True)
+
+    lav_videosider(resultat)     # statiske SEO-sider + "side"-felt til links
 
     YT_OUTPUT.parent.mkdir(exist_ok=True)
     YT_OUTPUT.write_text(json.dumps({

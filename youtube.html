@@ -541,6 +541,7 @@ function aabnVideo(v) {
           ? "Opsummeret automatisk ud fra videoens undertekster"
           : "Bygget på videoens egne kapitler"} · videoen tilhører ${esc(v.kanal)}</span>
         <span style="display:flex;gap:8px;flex-wrap:wrap">
+          ${v.side ? `<a class="kanal-knap" href="/${esc(v.side)}">Egen side (del &amp; gem) →</a>` : ""}
           <a class="kanal-knap" href="${esc(v.kanal_url || "#")}" target="_blank" rel="noopener">${esc(v.kanal)}s kanal →</a>
           <a class="yt-knap" href="${esc(v.link)}" target="_blank" rel="noopener">${IKON_YT} Se på YouTube</a>
         </span>

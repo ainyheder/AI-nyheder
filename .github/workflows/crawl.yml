@@ -68,6 +68,11 @@ jobs:
           git config user.email "actions@github.com"
           git add data feed.xml
           git add uge.html feed-uge.xml 2>/dev/null || true
+          # De statiske artikelsider + deres sitemap. UDEN denne linje bliver
+          # siderne genereret i hver kørsel og smidt væk igen - så peger både
+          # sitemap og alle delelinks på 404.
+          git add artikel sitemap-artikler.xml 2>/dev/null || true
+          git add video sitemap-videoer.xml 2>/dev/null || true
           # Commit kun hvis der faktisk er ændringer
           git diff --staged --quiet || git commit -m "🤖 Automatisk opdatering af nyheder"
           git push
