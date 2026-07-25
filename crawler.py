@@ -39,15 +39,19 @@ TIMEOUT_SEK = 20
 # --- AI-omskrivning (Claude ELLER Gemini - crawleren bruger den nøgle der findes) ---
 CLAUDE_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 CLAUDE_MODEL = "claude-haiku-4-5"          # $1/$5 pr. mio. tokens
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst (lanceret 21/7-2026)
 GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
+DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
+DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
-# Er begge nøgler sat, vinder AI_UDBYDER ("claude" eller "gemini") - ellers
-# vælges Gemini, fordi Flash Lite er ca. 3x billigere end Claude Haiku.
+# Er flere nøgler sat, vinder AI_UDBYDER ("deepseek", "gemini" eller "claude").
+# Ellers vælges den billigste tilgængelige: DeepSeek → Gemini → Claude.
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
-    or ("gemini" if GEMINI_KEY else "claude" if CLAUDE_KEY else "")
-API_KEY = CLAUDE_KEY if UDBYDER == "claude" else GEMINI_KEY
+    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "claude" if CLAUDE_KEY else "")
+API_KEY = {"claude": CLAUDE_KEY, "gemini": GEMINI_KEY,
+           "deepseek": DEEPSEEK_KEY}.get(UDBYDER, "")
 
 BATCH_STR = 10                   # artikler pr. API-kald (korte resuméer)
 MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
@@ -278,6 +282,24 @@ Svar KUN med et JSON-array, ét objekt pr. artikel, i samme rækkefølge som inp
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
     """Ét fælles AI-kald - taler med Claude eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
+    if UDBYDER == "deepseek":
+        # OpenAI-formatet. VIGTIGT: "thinking" er slået TIL som standard hos
+        # DeepSeek, og tankerne afregnes som udskrift. Til omskrivning af
+        # nyheder har vi ikke brug for dem - så de slås fra her.
+        body = json.dumps({
+            "model": DEEPSEEK_MODEL,
+            "messages": [{"role": "system", "content": system},
+                         {"role": "user", "content": bruger_tekst}],
+            "max_tokens": max_tokens,
+            "thinking": {"type": "disabled"},
+            "stream": False,
+        }).encode()
+        svar = hent_url(DEEPSEEK_URL, data=body, headers={
+            "Authorization": f"Bearer {API_KEY}",
+            "content-type": "application/json",
+        })
+        return json.loads(svar)["choices"][0]["message"]["content"]
+
     if UDBYDER == "claude":
         body = json.dumps({
             "model": CLAUDE_MODEL,
@@ -2354,6 +2376,8 @@ def main() -> None:
     # Actions-loggen, uden at gætte ud fra hvilke nøgler der er sat.
     if not API_KEY:
         print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
+    elif UDBYDER == "deepseek":
+        print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (tænkning slået fra)")
     elif UDBYDER == "claude":
         print(f"🤖 Tekstmodel: Claude · {CLAUDE_MODEL}")
     else:

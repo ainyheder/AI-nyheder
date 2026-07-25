@@ -15,8 +15,13 @@ name: Crawl AI-nyheder
 
 on:
   schedule:
+    # Tiderne er UTC. Dansk sommertid = UTC+2.
+    # DeepSeek tager DOBBELT pris i peak: 01-04 og 06-10 UTC (03-06 og 08-12 dansk).
+    # Nat-peak springer vi over — der er alligevel ingen læsere kl. 3-6 om morgenen.
+    # Formiddags-peak beholder vi bevidst: det er dansk prime time, og de fire
+    # ekstra kørsler koster kun ca. 6 kr./md. ved dobbelt takst.
     - cron: "37 4-21 * * *"  # hver time i dagtimerne (ca. 6-23 dansk tid) — skævt minuttal, så GitHub ikke dropper kørslen
-    - cron: "37 1 * * *"     # én natlig kørsel (ca. kl. 3 dansk tid)
+    - cron: "37 0 * * *"     # én natlig kørsel kl. 00:37 UTC (02:37 dansk) — uden for peak
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
@@ -49,6 +54,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
