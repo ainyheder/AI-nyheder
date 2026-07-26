@@ -24,22 +24,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
-- [ ] **Nat-loggen i panelet opdaterer sig ikke selv.** Panelet læser ikke
-      `_redaktion/*.md` direkte — det læser et øjebliksbillede i
-      `data/hjerne-data.js`, hvor teksten er indlejret. Og
-      `skriv_hjerne_status()` springes med vilje over på GitHub Actions
-      (`if os.environ.get("GITHUB_ACTIONS"): return`), så filen opdateres **kun,
-      når crawleren køres lokalt**. Målt 26.07: statusfilen var fra 22:28,
-      nat-loggen fra 23:20, og panelet sagde derfor "FINDES IKKE ENDNU" om en
-      fil, der havde ligget der i ni timer. Torben åbner panelet om morgenen for
-      at læse nattens regnskab og får gårsdagens.
-      Mindste rettelse: lad natsessionen kalde `skriv_hjerne_status()` som
-      sidste skridt, efter loggen er skrevet — den kører lokalt, så den må
-      gerne. Det er en linje i `natsession.md`, som Torben ejer. At lade panelet
-      `fetch`e filerne selv virker ikke fra `file://`, og det er netop dét,
-      JS-filen findes for. *Punkt 6 — man skal kunne holde styr på det.*
-      (Selve visningen blev lavet 26.07 — se Klaret.)
-
 - [ ] **Kørekortet kan ikke nulstilles, og det spærrer for hold.** Al fremdrift
       ligger i `localStorage` (`aikort`, `aikort_praktik`, `aikort_e` m.fl.), og
       der findes **ingen** måde at rydde den på — jeg søgte efter en. På en delt
@@ -189,6 +173,8 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Nat-loggen i panelet opdaterer sig ikke selv** *(klaret 2026-07-26 — natsessionen kalder nu `skriv_hjerne_status()` som sidste skridt; verificeret: loggen fylder 31.861 tegn i panelet)*
 
 *(Natsessionen flytter afkrydsede punkter herned med dato.)*
 
