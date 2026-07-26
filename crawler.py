@@ -3514,6 +3514,55 @@ CF_GRAPHQL = "https://api.cloudflare.com/client/v4/graphql"
 CF_SITE_TAG = "fda17dd7ade34a579f4ec6d615265fa6"   # samme token som i beacon'en
 LAESERTAL_DAGE = 7
 
+# Bliver vi fundet i AI-chats? Cloudflare fortæller kun, HVILKEN vært folk kom
+# fra. Listen her oversætter de værter, vi kender, til læselige navne. Ukendte
+# værter tælles ikke med: hellere et lavt tal, vi kan stole på, end et højt,
+# der er gættet. Søgemaskiner hører ikke til her - kun chats.
+AI_CHAT_KILDER = [
+    ("chatgpt.com", "ChatGPT"),
+    ("chat.openai.com", "ChatGPT"),
+    ("perplexity.ai", "Perplexity"),
+    ("claude.ai", "Claude"),
+    ("copilot.microsoft.com", "Microsoft Copilot"),
+    ("gemini.google.com", "Gemini"),
+    ("bard.google.com", "Gemini"),
+    ("chat.deepseek.com", "DeepSeek"),
+    ("chat.mistral.ai", "Le Chat"),
+    ("grok.com", "Grok"),
+    ("x.ai", "Grok"),
+    ("you.com", "You.com"),
+    ("poe.com", "Poe"),
+    ("phind.com", "Phind"),
+]
+
+
+# De sider, vi selv har besluttet skal findes. Får en af dem nul besøg på en
+# uge, er det den interessante oplysning - ikke at forsiden klarer sig fint.
+# Står her ét sted, fordi både gennemgangen og kontrolpanelet spørger om den.
+FASTE_SIDER = [
+    "/", "/laer.html", "/koerekort.html", "/erhverv.html", "/prompts.html",
+    "/prompt-arkiv.html", "/ordbog.html", "/quiz.html", "/uge.html",
+    "/youtube.html", "/vaerktoejer.html", "/faq.html", "/om.html",
+    "/guide-igang.html", "/guide-prompts.html", "/guide-sikkerhed.html",
+]
+
+
+def _ai_chat_navn(vaert: str) -> str | None:
+    """Navnet på den AI-chat, en henviser-vært hører til - ellers None.
+    Matcher på endelsen, så www. og andre underdomæner også fanges."""
+    v = (vaert or "").lower().lstrip(".")
+    for endelse, navn in AI_CHAT_KILDER:
+        if v == endelse or v.endswith("." + endelse):
+            return navn
+    return None
+
+
+def _faste_uden_besoeg(sider: list) -> list:
+    """De faste sider, ingen har åbnet i perioden. Cloudflare nævner slet ikke
+    en side uden besøg, så fraværet ER svaret."""
+    besoegt = {s["sti"].rstrip("/") or "/": s["besoeg"] for s in sider}
+    return [p for p in FASTE_SIDER if besoegt.get(p, 0) == 0]
+
 
 def hent_laesertal() -> dict | None:
     """Henter de seneste dages besøg pr. side fra Cloudflare Web Analytics.
@@ -3541,7 +3590,7 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
       filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
     ) { sum { visits } count dimensions { requestPath } }
     henvisere: rumPageloadEventsAdaptiveGroups(
-      limit: 12, orderBy: [sum_visits_DESC],
+      limit: 50, orderBy: [sum_visits_DESC],
       filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0,
                refererHost_neq: "ainyheder.com"}
     ) { sum { visits } dimensions { refererHost } }
@@ -3571,6 +3620,15 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
         henvisere = [{"fra": (r.get("dimensions") or {}).get("refererHost") or "direkte",
                       "besoeg": (r.get("sum") or {}).get("visits", 0)}
                      for r in d.get("henvisere") or []]
+        # Læg AI-chatterne sammen pr. tjeneste: to værter kan pege på det samme
+        # (chatgpt.com og chat.openai.com), og delt op ligner det ingenting.
+        pr_chat: dict[str, int] = {}
+        for h in henvisere:
+            navn = _ai_chat_navn(h["fra"])
+            if navn:
+                pr_chat[navn] = pr_chat.get(navn, 0) + h["besoeg"]
+        ai_chats = sorted(({"navn": n, "besoeg": b} for n, b in pr_chat.items()),
+                          key=lambda a: -a["besoeg"])
         tal = {
             "opdateret": nu.isoformat(),
             "dage": LAESERTAL_DAGE,
@@ -3578,12 +3636,23 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
             "sidevisninger_i_alt": sum(s["visninger"] for s in sider),
             "sider": sider,
             "henvisere": henvisere,
+            "ai_chats": ai_chats,
+            "ai_chat_besoeg": sum(a["besoeg"] for a in ai_chats),
+            "faste_uden_besoeg": _faste_uden_besoeg(sider),
         }
         LAESERTAL_FIL.parent.mkdir(exist_ok=True)
         LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
                                  encoding="utf-8")
+        # Samme data som JavaScript - så kontrolpanelet virker fra file://,
+        # præcis som hjerne-data.js. Ligger i data/, fordi det er dén mappe,
+        # workflow'en committer.
+        (LAESERTAL_FIL.parent / "laesertal-data.js").write_text(
+            "window.LAESERTAL = "
+            + json.dumps(tal, ensure_ascii=False, indent=1) + ";\n",
+            encoding="utf-8")
         print(f"📈 Læsertal: {tal['besoeg_i_alt']} besøg på "
-              f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage")
+              f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage"
+              + (f" · {tal['ai_chat_besoeg']} fra AI-chats" if ai_chats else ""))
         return tal
     except Exception as fejl:
         print(f"📈 Læsertal sprang over ({type(fejl).__name__}: {fejl})")
@@ -3603,10 +3672,6 @@ def _laeser_afsnit() -> dict:
         return {"status": "ingen læsertal - CLOUDFLARE_API_TOKEN er ikke sat"}
 
     besoegt = {s["sti"].rstrip("/") or "/": s["besoeg"] for s in tal["sider"]}
-    faste = ["/", "/laer.html", "/koerekort.html", "/erhverv.html", "/prompts.html",
-             "/prompt-arkiv.html", "/ordbog.html", "/quiz.html", "/uge.html",
-             "/youtube.html", "/vaerktoejer.html", "/faq.html", "/om.html",
-             "/guide-igang.html", "/guide-prompts.html", "/guide-sikkerhed.html"]
     artikelbesoeg = sum(v for k, v in besoegt.items() if k.startswith("/artikel"))
     videobesoeg = sum(v for k, v in besoegt.items() if k.startswith("/video"))
     return {
@@ -3614,10 +3679,15 @@ def _laeser_afsnit() -> dict:
         "besoeg_i_alt": tal.get("besoeg_i_alt"),
         "sidevisninger_i_alt": tal.get("sidevisninger_i_alt"),
         "mest_laeste": [f'{s["sti"]} ({s["besoeg"]})' for s in tal["sider"][:10]],
-        "faste_sider_uden_besoeg": [p for p in faste if besoegt.get(p, 0) == 0],
+        # Gamle filer fra før feltet fandtes har det ikke - så regn det ud.
+        "faste_sider_uden_besoeg": (tal.get("faste_uden_besoeg")
+                                    if "faste_uden_besoeg" in tal
+                                    else _faste_uden_besoeg(tal["sider"])),
         "besoeg_paa_artikelsider": artikelbesoeg,
         "besoeg_paa_videosider": videobesoeg,
         "kommer_fra": [f'{h["fra"]} ({h["besoeg"]})' for h in tal.get("henvisere", [])[:8]],
+        "fra_ai_chats": ([f'{a["navn"]} ({a["besoeg"]})' for a in tal.get("ai_chats", [])]
+                         or "ingen besøg fra AI-chats i perioden"),
     }
 
 

@@ -16,6 +16,39 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Strukturerede data. Artikelsiderne har NewsArticle; forsiden havde intet,
+     så hverken Google eller en AI-chat kunne se, hvem der udgiver stedet.
+     Organisationen er skrevet magen til den i artikelsidernes schema. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://ainyheder.com/#udgiver",
+      "name": "AI-nyheder",
+      "url": "https://ainyheder.com",
+      "description": "AI-nyheder gør udviklingen inden for kunstig intelligens letforståelig på dansk.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ainyheder.com/assets/ikon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "knowsLanguage": "da-DK"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ainyheder.com/#hjemmeside",
+      "name": "AI-nyheder",
+      "url": "https://ainyheder.com",
+      "description": "Dagens AI-nyheder omskrevet til kort, letlæst dansk — så alle kan følge med i udviklingen.",
+      "inLanguage": "da-DK",
+      "publisher": { "@id": "https://ainyheder.com/#udgiver" }
+    }
+  ]
+}
+</script>
 <link rel="alternate" type="application/rss+xml" title="AI-nyheder" href="https://ainyheder.com/feed.xml">
 <link rel="alternate" type="application/rss+xml" title="Ugens AI-overblik (hver fredag)" href="https://ainyheder.com/feed-uge.xml">
 <link rel="manifest" href="/manifest.json">

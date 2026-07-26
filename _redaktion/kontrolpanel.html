@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
 <title>AI-nyheder · Kontrolpanel</title>
-<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<!-- Relativ sti med vilje: panelet åbnes fra file://, hvor "/assets/..." peger
+     på filsystemets rod og skrifterne derfor slet ikke bliver hentet. -->
+<link rel="stylesheet" href="../assets/fonts/skrifter.css">
 <style>
 :root {
   --bg:#f4f2ec; --kort:#fff; --blaek:#191714; --svag:#6d675d; --linje:#e2ddd2;
@@ -109,6 +111,34 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
 .hj .m { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--accent);
   background:var(--accent-svag); border-radius:5px; padding:2px 7px; display:inline-block; }
 .hj .flag { font-size:10.5px; font-weight:700; color:var(--groen); margin-left:6px; }
+/* Læsertal. Én måleenhed (besøg), så én farve - accenten. Tallene står i
+   tekstfarver, aldrig i accentfarven: en lys farve er ulæselig som tekst. */
+.kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(184px,1fr)); gap:12px; }
+.kpi-kort { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
+  padding:15px 18px 16px; box-shadow:var(--skygge); }
+.kpi-tal { font-size:33px; font-weight:600; letter-spacing:-.022em; line-height:1.12; }
+.kpi-mrk { font-size:12.5px; color:var(--svag); margin-top:3px; }
+.lgruppe { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:18px; margin:28px 0 4px; }
+.lmanchet { font-size:13px; color:var(--svag); margin-bottom:11px; max-width:74ch; }
+.bjaelker { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
+  padding:4px 18px 6px; box-shadow:var(--skygge); }
+.bj { display:grid; grid-template-columns:minmax(0,1fr) 62px; gap:14px; align-items:center;
+  padding:10px 0; border-bottom:1px solid var(--linje); }
+.bj:last-child { border-bottom:0; }
+.bj-navn { font-size:13.5px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+/* 8px tynd bjælke, firkantet ved nulpunktet og rundet i den ende, der bærer
+   værdien - så øjet kan se, hvor tallet slutter. */
+.bj-spor { height:8px; margin-top:6px; border-radius:0 4px 4px 0;
+  background:color-mix(in srgb, var(--accent) 13%, transparent); }
+.bj-fyld { height:100%; border-radius:0 4px 4px 0; background:var(--accent); }
+.bj-tal { font-size:13px; text-align:right; color:var(--svag); font-variant-numeric:tabular-nums; }
+.nul { background:#fdf9ef; border:1px solid #e8dcc0; border-left:4px solid var(--rav);
+  border-radius:12px; padding:14px 17px; }
+.nul-liste { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+.nul-liste code { font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--rav);
+  background:#f6ecd8; border-radius:6px; padding:3px 9px; }
+.lgodt { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--groen);
+  border-radius:12px; padding:14px 17px; font-size:14px; }
 .bag { display:none; position:fixed; inset:0; z-index:200; background:rgba(25,23,20,.55);
   backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:20px; }
 .bag.aaben { display:flex; }
@@ -231,6 +261,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 <div class="bag" id="bag"><div class="modal" id="modal"></div></div>
 
 <script src="../data/hjerne-data.js" onerror="window.HJERNE_MANGLER=true"></script>
+<!-- Læsertallene. Filen findes først, når CLOUDFLARE_API_TOKEN er sat som
+     GitHub-secret; indtil da siger Læserne-ruden selv, hvad der mangler. -->
+<script src="../data/laesertal-data.js" onerror="window.LAESERTAL_MANGLER=true"></script>
 <script>
 (function () {
   var S = window.HJERNE_STATUS;
@@ -321,12 +354,104 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       '<span class="m">' + esc(aktivModel(n)) + "</span></button>";
   }
 
+  // ---- Læserne -------------------------------------------------------------
+  // window.LAESERTAL skrives af crawleren (hent_laesertal i crawler.py).
+  // Mangler den, er Cloudflare-tokenet ikke sat - og så siger ruden det selv.
+  var L = window.LAESERTAL;
+  var harTal = !!(L && L.sider && L.sider.length);
+
+  function ltal(n) { return (n == null ? 0 : n).toLocaleString("da-DK"); }
+
+  function kpiKort(vaerdi, maerkat) {
+    return '<div class="kpi-kort"><div class="kpi-tal">' + esc(vaerdi) + "</div>" +
+      '<div class="kpi-mrk">' + esc(maerkat) + "</div></div>";
+  }
+
+  // Én måleenhed pr. liste, så bjælkerne må gerne dele farve. Bredden er
+  // relativ til den største i listen - ikke til det samlede antal besøg.
+  function bjaelker(raekker) {
+    var storst = raekker.reduce(function (m, r) { return Math.max(m, r.vaerdi); }, 0);
+    return '<div class="bjaelker">' + raekker.map(function (r) {
+      // Gulv på 2%, så en række med ét enkelt besøg stadig er synlig.
+      var pct = storst > 0 ? Math.max(2, r.vaerdi / storst * 100) : 0;
+      return '<div class="bj"><div><div class="bj-navn" title="' + esc(r.navn) + '">' +
+        esc(r.navn) + '</div><div class="bj-spor"><div class="bj-fyld" style="width:' +
+        pct.toFixed(1) + '%"></div></div></div>' +
+        '<div class="bj-tal">' + ltal(r.vaerdi) + "</div></div>";
+    }).join("") + "</div>";
+  }
+
+  function laeserHtml() {
+    var ud = "<h1>Læserne</h1>";
+    if (!harTal) {
+      return ud + '<p class="manchet">Hvad bliver læst, hvad bliver ikke — og hvem ' +
+        "sender folk herind.</p>" +
+        '<div class="advarsel" style="margin:0"><strong>Der er ingen tal endnu.</strong> ' +
+        "Filen <code>data/laesertal-data.js</code> skrives af crawleren, når den kan komme " +
+        "til Cloudflare. Det kræver ét GitHub-secret — <code>CLOUDFLARE_API_TOKEN</code> — " +
+        "og opskriften står i <code>_redaktion/laesertal-opsaetning.md</code>. " +
+        "Når det er sat, står tallene her efter næste kørsel.</div>";
+    }
+
+    var maalt = new Date(L.opdateret).toLocaleString("da-DK",
+      { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+    ud += '<p class="manchet">Seneste <strong>' + esc(String(L.dage || 7)) +
+      " dage</strong>, målt " + esc(maalt) + ". Tallene kommer fra Cloudflare, " +
+      "som sorterer bots fra — det her er mennesker.</p>";
+
+    ud += '<div class="kpi">' +
+      kpiKort(ltal(L.besoeg_i_alt), "besøg") +
+      kpiKort(ltal(L.sidevisninger_i_alt), "sidevisninger") +
+      kpiKort(ltal(L.ai_chat_besoeg), "besøg fra AI-chats") + "</div>";
+
+    ud += '<div class="lgruppe">Mest læste sider</div>' +
+      '<p class="lmanchet">De 12 mest besøgte. Bjælken viser dem i forhold til ' +
+      "hinanden, ikke til det hele.</p>" +
+      bjaelker(L.sider.slice(0, 12).map(function (s) {
+        return { navn: s.sti, vaerdi: s.besoeg };
+      }));
+
+    var nul = L.faste_uden_besoeg || [];
+    ud += '<div class="lgruppe">Faste sider uden ét eneste besøg</div>';
+    ud += nul.length
+      ? '<div class="nul">Ingen åbnede de her sider i perioden. Det er som regel ' +
+        "den mest brugbare oplysning på skærmen: enten skal siderne være lettere at " +
+        "finde, eller også skal de væk." +
+        '<div class="nul-liste">' + nul.map(function (p) {
+          return "<code>" + esc(p) + "</code>";
+        }).join("") + "</div></div>"
+      : '<div class="lgodt">✓ Alle faste sider havde mindst ét besøg.</div>';
+
+    var henv = (L.henvisere || []).slice(0, 10);
+    ud += '<div class="lgruppe">Hvor de kommer fra</div>';
+    ud += henv.length
+      ? '<p class="lmanchet">Værten, browseren kom fra. <strong>direkte</strong> er ' +
+        "dem, der skrev adressen selv, havde et bogmærke eller klikkede i en mail.</p>" +
+        bjaelker(henv.map(function (h) { return { navn: h.fra, vaerdi: h.besoeg }; }))
+      : '<p class="lmanchet">Ingen henvisere registreret i perioden.</p>';
+
+    var chats = L.ai_chats || [];
+    ud += '<div class="lgruppe">Fundet i AI-chats</div>';
+    ud += chats.length
+      ? '<p class="lmanchet">Besøg, hvor nogen klikkede sig herind fra en AI-chat.</p>' +
+        bjaelker(chats.map(function (c) { return { navn: c.navn, vaerdi: c.besoeg }; }))
+      : '<div class="lgodt" style="border-left-color:var(--linje)">Ingen besøg fra ' +
+        "ChatGPT, Perplexity, Claude, Gemini, Copilot eller de andre i perioden. " +
+        "Det er normalt i begyndelsen — chatterne skal først have hentet siderne, " +
+        "og de skal have en grund til at citere dem.</div>";
+
+    return ud;
+  }
+
   var side = document.getElementById("side");
   var rude = document.getElementById("rude");
   var valgt = null;
 
   function alleEtaper() {
     var ud = [];
+    // Læserne står øverst: det er dét, man kommer for at se om morgenen.
+    ud.push({ id: "laes", gruppe: "Læserne · seneste 7 dage", nr: "·",
+              navn: "Hvad bliver læst", laesertal: true });
     ETAPER.forEach(function (e, i) {
       ud.push({ id: "c" + i, gruppe: "Crawleren · hver time", nr: i + 1,
                 navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, trin: e.trin });
@@ -362,6 +487,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function tegnRude() {
     var e = alleEtaper().filter(function (x) { return x.id === valgt; })[0];
     if (!e) return;
+    if (e.laesertal) { rude.innerHTML = laeserHtml(); return; }
     var kasser = (e.ikke || []).map(function (k) {
       return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
              '<div class="b">' + esc(k[1]) + "</div></div>";
@@ -375,7 +501,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   }
 
   function tegn() {
-    if (!valgt) valgt = "c1";
+    // Er der læsertal, åbner panelet på dem. Er der ikke, bliver det stående
+    // hvor det plejede - så intet ændrer sig, før tokenet er sat.
+    if (!valgt) valgt = harTal ? "laes" : "c1";
     tegnSide(); tegnRude();
     var n = Object.keys(S.hjerner).filter(erAendret).length +
             Object.keys(dokAendret).filter(dokErAendret).length;

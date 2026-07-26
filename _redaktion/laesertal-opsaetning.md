@@ -56,14 +56,51 @@ Står der i stedet en advarsel, fortæller den hvad der er galt:
 | `Cloudflare svarede med fejl: Authentication error` | Tokenet er forkert eller mangler Account Analytics · Read |
 | `Cloudflare gav ingen data - er konto-id'et rigtigt?` | `CLOUDFLARE_ACCOUNT_ID` passer ikke |
 
-Tallene lander i `data/laesertal.json`, som du selv kan åbne.
+Tallene lander i `data/laesertal.json`, som du selv kan åbne — og i
+`data/laesertal-data.js`, som er nøjagtig det samme, bare pakket ind i en
+JavaScript-variabel, så kontrolpanelet kan læse dem fra `file://`.
+
+---
+
+## Hvor du selv ser tallene
+
+Åbn `_redaktion/kontrolpanel.html`. Så snart der er tal, åbner panelet på en ny
+rude, **Læserne**, øverst i sidebjælken. Er der ingen tal endnu, står panelet
+hvor det plejer, og ruden fortæller selv, hvad der mangler.
+
+Ruden viser fire ting:
+
+| Afsnit | Hvad det svarer på |
+|---|---|
+| Tre tal øverst | Besøg, sidevisninger og hvor mange der kom fra en AI-chat |
+| Mest læste sider | De 12 mest besøgte, med bjælker i forhold til hinanden |
+| Faste sider uden ét eneste besøg | Dét, der som regel er værd at handle på |
+| Hvor de kommer fra + Fundet i AI-chats | Henviserne, og AI-chatterne trukket ud for sig |
+
+## Bliver vi fundet i AI-chats?
+
+Kom nogen ind via ChatGPT, Perplexity, Claude, Gemini, Copilot, Grok, DeepSeek,
+Le Chat, You.com, Poe eller Phind, bliver det talt for sig. To adresser for
+samme tjeneste (`chatgpt.com` og `chat.openai.com`) lægges sammen til ét tal.
+
+To ting, det **ikke** er:
+
+- **Søgemaskiner tælles ikke med.** Google, Bing og DuckDuckGo står i
+  "Hvor de kommer fra", ikke under AI-chats — også når de viser et AI-svar.
+- **Det er ikke det samme som at blive citeret.** Her tælles kun dem, der rent
+  faktisk *klikkede*. Bliver siden citeret uden link, ser vi det ikke. Og
+  AI-robotternes egen hentning af siderne tælles heller ikke: Cloudflare
+  sorterer bots fra, før tallene når hertil.
+
+Nul er derfor et helt normalt sted at starte.
 
 ---
 
 ## Hvad det ændrer
 
 Den natlige gennemgang får nu et afsnit, den skal vægte **højest**: hvilke
-sider bliver læst, hvilke får nul besøg, og hvor folk kommer fra.
+sider bliver læst, hvilke får nul besøg, hvor folk kommer fra — og om nogen
+overhovedet finder frem gennem en AI-chat.
 
 Det flytter samtalen fra *"AI-kørekortet har syv moduler"* til *"AI-kørekortet
 havde tre besøgende i sidste uge"* — og det er dét andet spørgsmål, der afgør,
