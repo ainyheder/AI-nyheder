@@ -1,7 +1,289 @@
 {
-  "opdateret": "2026-07-26T07:31:32.553591+00:00",
-  "antal": 102,
+  "opdateret": "2026-07-26T07:36:38.467720+00:00",
+  "antal": 108,
   "artikler": [
+    {
+      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
+      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
+      "dato": "2026-07-25T16:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Samfund & etik",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "Trackman-stifter advarer om AI's begrænsninger",
+      "resume_da": "Fredrik Tuxen er glad for, at Trackman laver sit eget hardware. Han ser AI som et fantastisk værktøj, men ikke uden faldgruber.",
+      "kat_ai": true,
+      "prio": 4
+    },
+    {
+      "titel": "Open-weight AI is having its Kubernetes moment",
+      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 369 # Comments: 286",
+      "dato": "2026-07-25T14:49:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "Open-weight AI har sit Kubernetes-øjeblik",
+      "resume_da": "Åbne AI-modeller kan blive fundamentet for en revolution, ligesom Kubernetes var for cloud-teknologi.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Forfatteren var med til at skabe Mesosphere, der blev overhalet af Kubernetes, fordi det åbne system tiltrak udviklere og innovation. I dag ser han samme mønster med åbne AI-modeller, hvor fællesskaber bygger oven på hinandens arbejde."
+        },
+        {
+          "overskrift": "Hvad er open-weight?",
+          "tekst": "Open-weight modeller kan downloades og tilpasses, men selve træningsdata er sjældent åbent. Det er ikke helt som klassisk open source, men nok til, at udviklere kan bygge videre. Alligevel er der **over 2 millioner** offentlige modeller på Hugging Face alene."
+        },
+        {
+          "overskrift": "Kinas modeller bliver bedre",
+          "tekst": "Kinesiske modeller som Kimi K3 og GLM-5.2 nærmer sig de bedste lukkede. **Kimi K3** klarer sig ifølge tests på niveau med GPT-5.5 og Opus 4.8. Samtidig står kinesiske modeller for **41%** af alle downloads på Hugging Face det seneste år."
+        },
+        {
+          "overskrift": "Politisk dilemma i USA",
+          "tekst": "Trump-administrationen overvejer at begrænse brugen af kinesiske open-weight modeller. Men et forbud kan skade USA selv, fordi mange af verdens bedste AI-forskere arbejder i det åbne økosystem. I stedet bør USA konkurrere ved at udgive bedre åbne modeller."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2 mio.",
+          "label": "offentlige AI-modeller på Hugging Face"
+        },
+        {
+          "tal": "41 %",
+          "label": "af downloads på Hugging Face er kinesiske modeller"
+        }
+      ],
+      "detaljer": [
+        "Kubernetes vandt fordi det var en neutral platform alle kunne bygge på.",
+        "Open-weight modeller kan downloades og tilpasses, men træningsdata er lukket.",
+        "Kimi K3 klarer sig på niveau med GPT-5.5 ifølge uafhængige tests.",
+        "Kinesiske modeller står for 41% af downloads på Hugging Face.",
+        "GLM-5.2 scorer 62,1% på SWE-bench Pro mod GPT-5.5's 58,6%.",
+        "Trump-administrationen overvejer restriktioner på kinesiske AI-modeller.",
+        "Forfatteren mener USA bør konkurrere med åbne modeller, ikke lukke sig inde."
+      ],
+      "betydning": "Du kan snart vælge mellem mange gratis, åbne AI-modeller i stedet for at være låst til én dyr leverandør.",
+      "pointer": [
+        "Åbne AI-modeller tiltrækker udviklere og innovation.",
+        "Kinesiske modeller nærmer sig de bedste lukkede.",
+        "Et forbud kan skade USA's konkurrenceevne.",
+        "Kubernetes-lignende økosystem vokser omkring AI."
+      ],
+      "billedmotiv": "En bunke åbne notesbøger og kodeblokke stablet oven på hinanden med et stort 'MIT License'-stempel på forsiden.",
+      "navngivet": true,
+      "billede": "data/img/6e08697404783a2e.jpg",
+      "side": "artikel/b0b06661b8f45405.html"
+    },
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 213",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "Debat: Er åbne AI-modeller virkelig farlige?",
+      "resume_da": "Kritikere kalder open source AI en trussel. Men argumenterne holder ikke, siger en ny kommentar.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Flere politikere og erhvervsledere advarer mod åbne AI-modeller. De mener, at de er farlige og kan underminere amerikansk førerposition. OpenAI's Dean Ball kalder det endda for 'AI-kommunisme' og mener, at AI bør være et kommercielt produkt – ikke en offentlig ressource."
+        },
+        {
+          "overskrift": "Historien siger noget andet",
+          "tekst": "Forsøg på at stoppe open source er sjældent lykkedes. Det så man med kryptering. Da myndigheder i **1991** prøvede at stoppe PGP, tabte de i retten. Netscape måtte kun sælge en svækket SSL-version internationalt – men den endte med at blive brugt af alle. At forbyde noget får det ofte bare til at sprede sig."
+        },
+        {
+          "overskrift": "Hvad med Kina?",
+          "tekst": "Frygten for kinesiske AI-modeller er overdrevet. AI er ikke som solceller eller stål – software kræver ikke fysiske forsyningskæder. Hvis en kinesisk model har politisk slagside, kan alle med en computer lave en vestlig version. Det er netop styrken ved åbne modeller: De kan tjekkes og rettes af alle."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Open source-software er fundamentet for al kommerciel software, også AI.",
+        "Forsøg på at stoppe open source har historisk set mislykkedes.",
+        "PGP-kryptering blev betragtet som militær teknologi, men vandt i retten.",
+        "Netscapes svækkede SSL endte med at blive brugt af alle, også amerikanere.",
+        "Kinesiske AI-modeller kan frit rettes af alle, der ikke kan lide deres politiske vinkel.",
+        "AI-modeller er software – ikke fysiske varer som stål eller solceller."
+      ],
+      "betydning": "Du kan regne med, at open source AI bliver en fast del af din hverdag – uanset hvad politikere prøver at forbyde.",
+      "pointer": [
+        "Open source AI er for svær at stoppe.",
+        "Fortidens forbud mod kryptering mislykkedes.",
+        "Kinesiske modeller kan rettes af alle.",
+        "Software er ikke som fysiske varer."
+      ],
+      "billedmotiv": "En stakprintede kildekoder med gule 'Open Source' og røde 'Censureret' klistermærker stablet som et tårn, med en makuleringsmaskine tom ved siden af.",
+      "billede": "data/img/9a151c1c9892dad0.jpg",
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "Ny gratis Mac-videoeditor bygger AI ind i tidslinjen",
+      "resume_da": "Palmier Pro er en open source-videoeditor til Mac, der lader dig og en AI-assistent redigere og generere video direkte i tidslinjen.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Palmier Pro er en helt ny videoeditor bygget fra bunden i Swift. Den er inspireret af Premiere Pro, men med AI-integration direkte i redigeringsflowet. Du kan generere video og billeder med topmodeller som **Seedance** og **Kling** inde fra tidslinjen – uden at skifte program."
+        },
+        {
+          "overskrift": "Sådan virker det med AI",
+          "tekst": "Editoren kobler sig på AI-værktøjer som **Claude, Codex og Cursor** via en MCP-server. Når programmet kører, åbner det en lokal forbindelse, så en AI-agent kan arbejde på samme projekt som dig. Du kan installere det med ét klik fra hjælpemenuen eller manuelt via en konfigurationsfil."
+        },
+        {
+          "overskrift": "Pris og åbenhed",
+          "tekst": "Hele videoeditoren er **open source og gratis** – ingen login nødvendigt. Kun den generative AI-behandling er lukket kildekode. MCP-serveren og agent-chatten er også åbne. Du kan downloade den i dag og bruge den som et alternativ til CapCut eller Adobe Premiere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Palmier Pro er bygget fra bunden i Swift til macOS.",
+        "Understøtter Seedance, Kling og Nano Banana Pro til AI-generering.",
+        "Forbinder til Claude, Codex og Cursor via en MCP-server på http://127.0.0.1:19789/mcp.",
+        "Installation kan ske med ét klik fra hjælpemenuen eller manuelt i en mcp.json-fil.",
+        "Videoeditoren, MCP-serveren og agent-chatten er open source.",
+        "Den generative AI-behandling er den eneste lukkede del.",
+        "Editoren er gratis og kræver ingen login eller betaling."
+      ],
+      "betydning": "Du får en gratis, åben videoeditor, hvor både du og en AI-assistent kan redigere og generere indhold i samme tidslinje – uden abonnement.",
+      "pointer": [
+        "Gratis open source-videoeditor til Mac.",
+        "AI-modeller som Kling og Seedance integreret i tidslinjen.",
+        "AI-assistent kan redigere sammen med dig via MCP.",
+        "Kun AI-behandling er lukket kildekode."
+      ],
+      "billedmotiv": "En Mac-computerskærm med en video-tidslinje, hvor en AI-chatboble hænger over et videoklip med et kameraikon.",
+      "billede": "data/img/a1df1f6c071a5b2f.jpg",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "Claude’s voice mode is now available for Opus and Sonnet",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+      "resume": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack, and Canva. When Anthropic launched voice mode last year, it was primarily focused on delivering […]",
+      "dato": "2026-07-23T15:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "Claudes stemme får dybere hjerne hos Anthropic",
+      "resume_da": "Anthropic udvider stemmestyring til de kraftigere AI-modeller Opus og Sonnet.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er nyt?",
+          "tekst": "Stemmefunktionen var tidligere kun tilgængelig på **Haiku** – den hurtige, men simple model. Nu kan du også bruge den på **Opus** og **Sonnet**, der er bygget til svære problemstillinger og kan levere dybdegående svar."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Du kan skifte mellem tekst og tale midt i en samtale, og også hoppe fra Haiku til Opus, hvis en hurtig idé kræver mere analyse. AI'en kan handle for dig – for eksempel rykke kalenderaftaler, hvis toget er forsinket."
+        },
+        {
+          "overskrift": "Nye sprog",
+          "tekst": "Stemmestyring er ikke længere kun på engelsk. Nu understøttes **fransk**, **tysk**, **spansk**, **hindi**, **indonesisk**, italiensk, japansk, koreansk og portugisisk."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Sonnet og Opus ligger over Haiku i pris. Hvis du vil have adgang til de dybere modeller med stemme, kræver det et abonnement – priserne starter ved omkring 20 dollars om måneden for Sonnet via Anthropics API."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "9",
+          "label": "nye sprog understøttet"
+        }
+      ],
+      "detaljer": [
+        "Stemmefunktionen kom først på Haiku, men nu også på Opus og Sonnet.",
+        "Brugere kan skifte mellem tekst- og stemmetilstand midt i en samtale.",
+        "Sonnet og Opus er designet til komplekse opgaver som planlægning og analyse.",
+        "AI'en kan selv udføre handlinger i apps som Gmail, Slack og Canva.",
+        "Stemmestyring er nu tilgængelig på ni sprog ud over engelsk.",
+        "Opus er den dyreste model, mens Sonnet er et mellemniveau.",
+        "Anthropic opdaterede lanceringstidspunktet fra 2026 til 2025."
+      ],
+      "betydning": "Du kan nu tale med AI'en om alvorlige arbejdsopgaver og få den til at flytte møder eller skrive pitch-dokumenter – uden at taste en linje.",
+      "pointer": [
+        "Stemmefunktionen udvides til dybere AI-modeller.",
+        "Skift mellem tale og tekst midt i samtalen.",
+        "AI'en kan handle i dine apps.",
+        "Ni nye sprog understøttes."
+      ],
+      "billedmotiv": "En kaffekop og en mobiltelefon liggende på et skrivebord med en kalender-app åben, hvor aftaler er blevet flyttet.",
+      "navngivet": true,
+      "billede": "data/img/68035073d36087d2.jpg",
+      "side": "artikel/f7a651ced6714ba3.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 267 # Comments: 331",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-07-26T07:36:38.467720+00:00",
+      "rubrik": "AI styrer F-16 i virkelige flyvninger",
+      "resume_da": "DARPA og US Air Force har fløjet en F-16 med AI-pilot. Det er et stort skridt mod autonome kampfly.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Forsvarsorganisationen DARPA og det amerikanske luftvåben har afprøvet en F-16, der blev styret af AI. Flyvningerne er de første af sin slags med et jagerfly i fuld størrelse, og de viser, at AI kan håndtere komplekse luftmanøvrer."
+        },
+        {
+          "overskrift": "Hvorfor det er vigtigt",
+          "tekst": "AI-piloter kan reaktionshurtigere end mennesker og trættes aldrig. Teknologien kan i fremtiden bruges til at assistere piloter eller flyve helt alene i farlige missioner. Det rejser dog også spørgsmål om sikkerhed og etik."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "DARPA står bag projektet sammen med US Air Force.",
+        "Flyet er en almindelig F-16 modificeret til AI-styring.",
+        "AI-piloten har gennemført flere flyvninger.",
+        "Målet er at gøre kampfly hurtigere og mere effektive.",
+        "Teknologien kan mindske risikoen for menneskelige piloter."
+      ],
+      "betydning": "AI-styrede kampfly kan ændre militær luftkrig og påvirke din sikkerhed, når forsvaret investerer i ny teknologi.",
+      "pointer": [
+        "AI fløj selv en F-16.",
+        "Det er første gang i fuld størrelse.",
+        "Teknologien kan redde piloter.",
+        "Debatten om etik følger med."
+      ],
+      "billedmotiv": "En F-16 på startbanen med cockpit-taget åbent, hvor et sort kabel og en lille computerboks sidder på sædet.",
+      "billede": "data/img/81638fb59aa553c7.jpg",
+      "side": "artikel/cc744205c493c965.html"
+    },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
       "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer",
@@ -14,80 +296,7 @@
       "rubrik": "Danske Systematic leverer software til australsk hær",
       "resume_da": "Det er led i en stor modernisering af Australiens forsvar. Systematic står bag leverancen.",
       "kat_ai": true,
-      "prio": 4,
-      "navngivet": true
-    },
-    {
-      "titel": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
-      "link": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
-      "resume": "A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
-      "dato": "2026-07-26T01:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Monday.com fyrer 600 – skyder skylden på AI",
-      "resume_da": "Arbejdsplatformen Monday.com fyrer en femtedel af medarbejderne og henviser til AI. Det er langt fra en enlig svale.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Monday.com fyrer **600 ansatte**, svarende til 20 procent af staben. I en officiel meddelelse til den amerikanske børsmyndighed forklarer ledelsen, at fyringerne skyldes en 'AI-drevet vækststrategi'. Medstifteren skrev på LinkedIn, at det ikke handler om at spare penge, men om at omstille sig til en ny tid."
-        },
-        {
-          "overskrift": "Fyringsbølgen breder sig",
-          "tekst": "Monday.com er ikke alene. Ifølge en ny analyse fra Financial Times har amerikanske techvirksomheder i år skåret næsten **140.000 stillinger** væk – og mange af dem peger på AI som årsag. Amazon, Oracle, Meta og Microsoft står alene for næsten 50.000 af fyringerne. Samtidig pumper de milliarder i AI-byggeri."
-        },
-        {
-          "overskrift": "Markedet tror det ikke",
-          "tekst": "Når virksomheder siger, at AI er grunden til fyringer, straffer markedet dem. Financial Times har regnet ud, at de pågældende selskaber i gennemsnit klarer sig **10 procent dårligere** end tech-indekset Nasdaq i de 30 dage, der følger efter en fyringsrunde. Investorerne køber altså ikke helt historien."
-        },
-        {
-          "overskrift": "Nye job – bare andre steder",
-          "tekst": "Der bliver dog stadig ansat. AI-virksomheder som Anthropic og OpenAI hyrer så hurtigt, de kan. Og hos Meta rykkede **7.000 medarbejdere** ind i AI-afdelinger, samtidig med at 8.000 blev fyret. IBM tredobler ansættelser af nyuddannede til AI-området. Jobbene forsvinder ikke – de flytter sig."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "20 %",
-          "label": "af Monday.com's ansatte fyres"
-        },
-        {
-          "tal": "140.000",
-          "label": "job skåret væk i amerikansk tech i år"
-        },
-        {
-          "tal": "7.000",
-          "label": "Meta-flyttet til AI-roller"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Monday.com fyrer godt 600 ud af 3.000 ansatte.",
-        "Fyringerne koster selskabet 45-55 millioner dollars i omstrukturering.",
-        "Oracle har skåret 21.000 stillinger på ét år, 13 procent af staben.",
-        "GitLab fyrer 350 – 14 procent – for at investere i AI-infrastruktur.",
-        "Google har fyret op mod 3.000 ingeniører i 2026, men aldrig meldt et samlet tal.",
-        "Intuit fyrer 3.000, svarende til 17 procent, og satser på AI.",
-        "Cisco skærer 4.000 stillinger og omstiller til blandt andet AI."
-      ],
-      "betydning": "Når din arbejdsgiver siger 'AI', skal du være på vagt – fyringerne følger ofte, men pengene fosser stadig ind i tech-sektoren.",
-      "pointer": [
-        "AI bruges som undskyldning for massefyringer.",
-        "140.000 har mistet jobbet i år alene.",
-        "Markedet straffer selskaber der fyrer.",
-        "AI-firmaer ansætter massivt i stedet."
-      ],
-      "billedmotiv": "En tom kontorlandskab med 20 farvede Monday.com-tavler slukket på væggen og en ensom robotstøvsuger midt på gulvet.",
-      "billede": "data/img/91cd3ea05ffae1ee.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/970211/patreon-layoffs-ai"
-        }
-      ],
-      "side": "artikel/cb61b6a2a5da5e6d.html"
+      "prio": 4
     },
     {
       "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
@@ -181,12 +390,6 @@
       "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
-        }
-      ],
       "navngivet": true
     },
     {
@@ -249,174 +452,6 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/07a59789a1f95f86.html"
-    },
-    {
-      "titel": "Anthropic launches Opus 5",
-      "link": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
-      "resume": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases.",
-      "dato": "2026-07-24T17:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Anthropic sender billigere AI-model på gaden",
-      "resume_da": "Den nye Opus 5-model koster halvt så meget som Fable 5 og klarer sig overraskende godt i test.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt?",
-          "tekst": "Anthropic har lanceret Opus 5, en opdatering af deres store AI-model. Den er ikke lige så kraftfuld som topmodellen Fable 5, men den er **halvt så dyr** og har færre begrænsninger. Det gør den til et mere praktisk valg for de fleste virksomheder."
-        },
-        {
-          "overskrift": "Testresultaterne",
-          "tekst": "Opus 5 slår faktisk Fable 5 i flere benchmarks. Ifølge Anthropic er modellen særligt god til at tjekke sit eget arbejde og gentage opgaver indtil de lykkes. I én test skrev den selv en computer-vision-pipeline ud fra en ufuldstændig instruks."
-        },
-        {
-          "overskrift": "Pris og data",
-          "tekst": "Prisen er **$5 pr. million input-tokens og $25 pr. million output** – samme niveau som forgængeren Opus 4.8, men markant billigere end Fable 5. Opus 5 er heller ikke underlagt den 30-dages datalagringspolitik, som har bekymret privatlivsbevidste brugere."
-        },
-        {
-          "overskrift": "Sikkerhed og regulering",
-          "tekst": "Modellen har stærkere cybersikkerhedsforanstaltninger end Opus 4.8, men færre restriktioner end Fable 5. Den må blandt andet ikke scanne software efter sårbarheder. Anthropic forventer, at sikkerhedsfiltrene aktiveres **85 % sjældnere** end på Fable 5."
-        },
-        {
-          "overskrift": "Ny funktion: Automatisk nødhjælp",
-          "tekst": "En ny beta-funktion, Automatic Fallbacks, sender automatisk opgaver videre til en mindre model, hvis sikkerhedsfiltrene slår til. Det betyder, at API-brugere får et svar i stedet for en fejlmeddelelse – en stor forbedring i daglig brug."
-        },
-        {
-          "overskrift": "Hård konkurrence",
-          "tekst": "Kinesiske Kimi K3 koster kun **$15 pr. million output-tokens** med lignende ydelse. Flere firmaer som Cursor og Meta bygger såkaldte model-routers, der automatisk vælger den billigste model til opgaven. Prispresset i AI-branchen er enormt."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$5/$25",
-          "label": "pr. million tokens (input/output)"
-        },
-        {
-          "tal": "halv pris",
-          "label": "af Fable 5"
-        },
-        {
-          "tal": "85 %",
-          "label": "færre sikkerhedsaktiveringer end Fable 5"
-        },
-        {
-          "tal": "$15",
-          "label": "Kimi K3's pris pr. million output-tokens"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
-        },
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
-        }
-      ],
-      "detaljer": [
-        "Opus 5 udkom kun to måneder efter Opus 4.8, som blev lanceret 28. maj.",
-        "Modellen klarer sig bedre end Fable 5 i flere benchmarks, ifølge Anthropic.",
-        "Opus 5 er ikke underlagt 30-dages datalagring som Fable 5.",
-        "Modellen må ikke scanne softwarebinary for sårbarheder, men må søge i kildekode.",
-        "Automatic Fallbacks sender opgaver til en mindre model, når sikkerhedsfiltre aktiveres.",
-        "Opus 5 markedsføres især til virksomheder inden for vidensarbejde og biologi.",
-        "Trump-administrationen har indført nye regler for AI-modeller efter Fable-sagen."
-      ],
-      "betydning": "Du får næsten samme AI-kraft som den bedste model – til halv pris og uden de strenge dataregler. Det kan blive din nye standardmodel på jobbet.",
-      "pointer": [
-        "Opus 5 koster det halve af Fable 5.",
-        "Klarer sig bedre end Fable 5 i flere tests.",
-        "Færre restriktioner og bedre privatliv.",
-        "Ny nødfunktion undgår fejlmeddelelser."
-      ],
-      "billedmotiv": "En stabel kontanter ved siden af to robotarme, hvor den ene har et prisskilt på halv størrelse af den anden, og begge peger mod en computerterminal.",
-      "billede": "data/img/7adb27624aad3241.jpg",
-      "kat_ai": true,
-      "prio": 10,
-      "side": "artikel/352b1db2596bfce6.html"
-    },
-    {
-      "titel": "Midjourney acquired the astrology app Co-Star",
-      "link": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/",
-      "resume": "The AI lab Midjourney continues to expand its purview beyond image and video generation.",
-      "dato": "2026-07-24T15:09:55+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-07-24T18:07:51.070444+00:00",
-      "rubrik": "AI-firma Midjourney køber stjernetyderi-app",
-      "resume_da": "Midjourney har købt astrologi-appen Co-Star. Købet skal hjælpe AI-firmaet med at lave sin første rigtige app.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem har købt hvem?",
-          "tekst": "AI-firmaet Midjourney, kendt for at lave billeder og videoer med AI, har købt astrologi-appen Co-Star. Det skriver Bloomberg. Købsprisen er ikke offentliggjort, og handlen blev ifølge The Verge lukket i foråret."
-        },
-        {
-          "overskrift": "Hvorfor en astrologi-app?",
-          "tekst": "Co-Star har **4,3 millioner** månedlige brugere, der får horoskoper og kærlighedsråd baseret på deres stjernetegn. Appen blander AI, menneskelige skribenter og data fra NASA. For Midjourney, der også eksperimenterer med medicin og spa, passer købet ind i en bred strategi."
-        },
-        {
-          "overskrift": "Hvad får Midjourney ud af det?",
-          "tekst": "Co-Star har et hold på **24 ansatte**, der nu arbejder for Midjourney. Holdet har stor erfaring med at lave apps til almindelige mennesker. Midjourneys chef, David Holz, siger, at de skal hjælpe med at bygge firmaets første rigtige app – måske en til at lave AI-billeder."
-        },
-        {
-          "overskrift": "Hvad sker der med Co-Star?",
-          "tekst": "Co-Star fortsætter som før. Grundlæggeren Banu Guler bliver ved med at styre appen, men får også en ny rolle som designchef i Midjourney. Det betyder, at astrologi-appen ikke lukker, men at holdet samtidig skal bygge noget nyt for moderselskabet."
-        },
-        {
-          "overskrift": "Hvad betyder det for dig?",
-          "tekst": "Midjourney findes i dag kun via Discord og en hjemmeside. Med Co-Star-holdet om bord kan du snart få en decideret app til din telefon. Det gør det meget lettere at lave AI-billeder direkte fra mobilen – uden at skulle rode dig ud i beskedtjenester."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "4,3 mio.",
-          "label": "månedlige brugere af Co-Star"
-        },
-        {
-          "tal": "24",
-          "label": "medarbejdere fra Co-Star skifter til Midjourney"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/"
-        }
-      ],
-      "detaljer": [
-        "Købsprisen er ikke offentliggjort.",
-        "Handlen blev lukket i foråret 2025.",
-        "Co-Star bruger både AI, mennesker og NASA-data til horoskoper.",
-        "Midjourney vil også udvikle en medicinsk afdeling og en spa.",
-        "Holdet fra Co-Star skal hjælpe med at bygge Midjourneys første app.",
-        "Banu Guler bliver designchef i Midjourney.",
-        "Midjourneys AI-modeller findes i dag kun på web og i Discord."
-      ],
-      "betydning": "Du får snart en app til at lave AI-billeder på din telefon – meget lettere end at sidde på Discord.",
-      "pointer": [
-        "Midjourney køber astrologi-app.",
-        "24 ansatte følger med i handlen.",
-        "Grundlægger bliver designchef i Midjourney.",
-        "Første rigtige app er på vej."
-      ],
-      "billedmotiv": "En iPhone med en åben astrologi-app ved siden af en lukket Discord-chat fuld af AI-billeder af katte.",
-      "kat_ai": true,
-      "prio": 4,
-      "billede": "data/img/32b725731d6e3309.jpg",
-      "side": "artikel/7cdbc2560f5fe1cc.html"
     },
     {
       "titel": "1950: Sådan fungerer de nye transistorer",
@@ -1206,6 +1241,82 @@
       "side": "artikel/336e69437c671d33.html"
     },
     {
+      "titel": "Midjourney acquired the astrology app Co-Star",
+      "link": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/",
+      "resume": "The AI lab Midjourney continues to expand its purview beyond image and video generation.",
+      "dato": "2026-07-24T15:09:55+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-24T18:07:51.070444+00:00",
+      "rubrik": "AI-firma Midjourney køber stjernetyderi-app",
+      "resume_da": "Midjourney har købt astrologi-appen Co-Star. Købet skal hjælpe AI-firmaet med at lave sin første rigtige app.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hvem har købt hvem?",
+          "tekst": "AI-firmaet Midjourney, kendt for at lave billeder og videoer med AI, har købt astrologi-appen Co-Star. Det skriver Bloomberg. Købsprisen er ikke offentliggjort, og handlen blev ifølge The Verge lukket i foråret."
+        },
+        {
+          "overskrift": "Hvorfor en astrologi-app?",
+          "tekst": "Co-Star har **4,3 millioner** månedlige brugere, der får horoskoper og kærlighedsråd baseret på deres stjernetegn. Appen blander AI, menneskelige skribenter og data fra NASA. For Midjourney, der også eksperimenterer med medicin og spa, passer købet ind i en bred strategi."
+        },
+        {
+          "overskrift": "Hvad får Midjourney ud af det?",
+          "tekst": "Co-Star har et hold på **24 ansatte**, der nu arbejder for Midjourney. Holdet har stor erfaring med at lave apps til almindelige mennesker. Midjourneys chef, David Holz, siger, at de skal hjælpe med at bygge firmaets første rigtige app – måske en til at lave AI-billeder."
+        },
+        {
+          "overskrift": "Hvad sker der med Co-Star?",
+          "tekst": "Co-Star fortsætter som før. Grundlæggeren Banu Guler bliver ved med at styre appen, men får også en ny rolle som designchef i Midjourney. Det betyder, at astrologi-appen ikke lukker, men at holdet samtidig skal bygge noget nyt for moderselskabet."
+        },
+        {
+          "overskrift": "Hvad betyder det for dig?",
+          "tekst": "Midjourney findes i dag kun via Discord og en hjemmeside. Med Co-Star-holdet om bord kan du snart få en decideret app til din telefon. Det gør det meget lettere at lave AI-billeder direkte fra mobilen – uden at skulle rode dig ud i beskedtjenester."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "4,3 mio.",
+          "label": "månedlige brugere af Co-Star"
+        },
+        {
+          "tal": "24",
+          "label": "medarbejdere fra Co-Star skifter til Midjourney"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/"
+        }
+      ],
+      "detaljer": [
+        "Købsprisen er ikke offentliggjort.",
+        "Handlen blev lukket i foråret 2025.",
+        "Co-Star bruger både AI, mennesker og NASA-data til horoskoper.",
+        "Midjourney vil også udvikle en medicinsk afdeling og en spa.",
+        "Holdet fra Co-Star skal hjælpe med at bygge Midjourneys første app.",
+        "Banu Guler bliver designchef i Midjourney.",
+        "Midjourneys AI-modeller findes i dag kun på web og i Discord."
+      ],
+      "betydning": "Du får snart en app til at lave AI-billeder på din telefon – meget lettere end at sidde på Discord.",
+      "pointer": [
+        "Midjourney køber astrologi-app.",
+        "24 ansatte følger med i handlen.",
+        "Grundlægger bliver designchef i Midjourney.",
+        "Første rigtige app er på vej."
+      ],
+      "billedmotiv": "En iPhone med en åben astrologi-app ved siden af en lukket Discord-chat fuld af AI-billeder af katte.",
+      "billede": "data/img/32b725731d6e3309.jpg",
+      "kat_ai": true,
+      "prio": 4,
+      "side": "artikel/7cdbc2560f5fe1cc.html"
+    },
+    {
       "titel": "‘AI communism’, rogue models, and the why Kimi K3 spooked Wall Street",
       "link": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street/",
       "resume": "Chinese AI lab Moonshot’s open model Kimi went viral this week for reasons that had less to do with the model itself and more to do with how the U.S. AI industry reacted to it. Meanwhile, an unreleased OpenAI model wandered outside its test environment and ended up connected to a real security breach at Hugging Face — a reminder […]",
@@ -1642,6 +1753,170 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/41170cb100dac73a.html"
+    },
+    {
+      "titel": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
+      "link": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "resume": "A running look — in reverse chronological order — at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+      "dato": "2026-07-26T01:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
+      "rubrik": "Monday.com fyrer 600 – skyder skylden på AI",
+      "resume_da": "Arbejdsplatformen Monday.com fyrer en femtedel af medarbejderne og henviser til AI. Det er langt fra en enlig svale.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Monday.com fyrer **600 ansatte**, svarende til 20 procent af staben. I en officiel meddelelse til den amerikanske børsmyndighed forklarer ledelsen, at fyringerne skyldes en 'AI-drevet vækststrategi'. Medstifteren skrev på LinkedIn, at det ikke handler om at spare penge, men om at omstille sig til en ny tid."
+        },
+        {
+          "overskrift": "Fyringsbølgen breder sig",
+          "tekst": "Monday.com er ikke alene. Ifølge en ny analyse fra Financial Times har amerikanske techvirksomheder i år skåret næsten **140.000 stillinger** væk – og mange af dem peger på AI som årsag. Amazon, Oracle, Meta og Microsoft står alene for næsten 50.000 af fyringerne. Samtidig pumper de milliarder i AI-byggeri."
+        },
+        {
+          "overskrift": "Markedet tror det ikke",
+          "tekst": "Når virksomheder siger, at AI er grunden til fyringer, straffer markedet dem. Financial Times har regnet ud, at de pågældende selskaber i gennemsnit klarer sig **10 procent dårligere** end tech-indekset Nasdaq i de 30 dage, der følger efter en fyringsrunde. Investorerne køber altså ikke helt historien."
+        },
+        {
+          "overskrift": "Nye job – bare andre steder",
+          "tekst": "Der bliver dog stadig ansat. AI-virksomheder som Anthropic og OpenAI hyrer så hurtigt, de kan. Og hos Meta rykkede **7.000 medarbejdere** ind i AI-afdelinger, samtidig med at 8.000 blev fyret. IBM tredobler ansættelser af nyuddannede til AI-området. Jobbene forsvinder ikke – de flytter sig."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "20 %",
+          "label": "af Monday.com's ansatte fyres"
+        },
+        {
+          "tal": "140.000",
+          "label": "job skåret væk i amerikansk tech i år"
+        },
+        {
+          "tal": "7.000",
+          "label": "Meta-flyttet til AI-roller"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/970211/patreon-layoffs-ai"
+        }
+      ],
+      "detaljer": [
+        "Monday.com fyrer godt 600 ud af 3.000 ansatte.",
+        "Fyringerne koster selskabet 45-55 millioner dollars i omstrukturering.",
+        "Oracle har skåret 21.000 stillinger på ét år, 13 procent af staben.",
+        "GitLab fyrer 350 – 14 procent – for at investere i AI-infrastruktur.",
+        "Google har fyret op mod 3.000 ingeniører i 2026, men aldrig meldt et samlet tal.",
+        "Intuit fyrer 3.000, svarende til 17 procent, og satser på AI.",
+        "Cisco skærer 4.000 stillinger og omstiller til blandt andet AI."
+      ],
+      "betydning": "Når din arbejdsgiver siger 'AI', skal du være på vagt – fyringerne følger ofte, men pengene fosser stadig ind i tech-sektoren.",
+      "pointer": [
+        "AI bruges som undskyldning for massefyringer.",
+        "140.000 har mistet jobbet i år alene.",
+        "Markedet straffer selskaber der fyrer.",
+        "AI-firmaer ansætter massivt i stedet."
+      ],
+      "billedmotiv": "En tom kontorlandskab med 20 farvede Monday.com-tavler slukket på væggen og en ensom robotstøvsuger midt på gulvet.",
+      "billede": "data/img/91cd3ea05ffae1ee.jpg",
+      "kat_ai": true,
+      "prio": 6,
+      "side": "artikel/cb61b6a2a5da5e6d.html"
+    },
+    {
+      "titel": "Anthropic launches Opus 5",
+      "link": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
+      "resume": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases.",
+      "dato": "2026-07-24T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
+      "rubrik": "Anthropic sender billigere AI-model på gaden",
+      "resume_da": "Den nye Opus 5-model koster halvt så meget som Fable 5 og klarer sig overraskende godt i test.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hvad er nyt?",
+          "tekst": "Anthropic har lanceret Opus 5, en opdatering af deres store AI-model. Den er ikke lige så kraftfuld som topmodellen Fable 5, men den er **halvt så dyr** og har færre begrænsninger. Det gør den til et mere praktisk valg for de fleste virksomheder."
+        },
+        {
+          "overskrift": "Testresultaterne",
+          "tekst": "Opus 5 slår faktisk Fable 5 i flere benchmarks. Ifølge Anthropic er modellen særligt god til at tjekke sit eget arbejde og gentage opgaver indtil de lykkes. I én test skrev den selv en computer-vision-pipeline ud fra en ufuldstændig instruks."
+        },
+        {
+          "overskrift": "Pris og data",
+          "tekst": "Prisen er **$5 pr. million input-tokens og $25 pr. million output** – samme niveau som forgængeren Opus 4.8, men markant billigere end Fable 5. Opus 5 er heller ikke underlagt den 30-dages datalagringspolitik, som har bekymret privatlivsbevidste brugere."
+        },
+        {
+          "overskrift": "Sikkerhed og regulering",
+          "tekst": "Modellen har stærkere cybersikkerhedsforanstaltninger end Opus 4.8, men færre restriktioner end Fable 5. Den må blandt andet ikke scanne software efter sårbarheder. Anthropic forventer, at sikkerhedsfiltrene aktiveres **85 % sjældnere** end på Fable 5."
+        },
+        {
+          "overskrift": "Ny funktion: Automatisk nødhjælp",
+          "tekst": "En ny beta-funktion, Automatic Fallbacks, sender automatisk opgaver videre til en mindre model, hvis sikkerhedsfiltrene slår til. Det betyder, at API-brugere får et svar i stedet for en fejlmeddelelse – en stor forbedring i daglig brug."
+        },
+        {
+          "overskrift": "Hård konkurrence",
+          "tekst": "Kinesiske Kimi K3 koster kun **$15 pr. million output-tokens** med lignende ydelse. Flere firmaer som Cursor og Meta bygger såkaldte model-routers, der automatisk vælger den billigste model til opgaven. Prispresset i AI-branchen er enormt."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "$5/$25",
+          "label": "pr. million tokens (input/output)"
+        },
+        {
+          "tal": "halv pris",
+          "label": "af Fable 5"
+        },
+        {
+          "tal": "85 %",
+          "label": "færre sikkerhedsaktiveringer end Fable 5"
+        },
+        {
+          "tal": "$15",
+          "label": "Kimi K3's pris pr. million output-tokens"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
+        },
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
+        }
+      ],
+      "detaljer": [
+        "Opus 5 udkom kun to måneder efter Opus 4.8, som blev lanceret 28. maj.",
+        "Modellen klarer sig bedre end Fable 5 i flere benchmarks, ifølge Anthropic.",
+        "Opus 5 er ikke underlagt 30-dages datalagring som Fable 5.",
+        "Modellen må ikke scanne softwarebinary for sårbarheder, men må søge i kildekode.",
+        "Automatic Fallbacks sender opgaver til en mindre model, når sikkerhedsfiltre aktiveres.",
+        "Opus 5 markedsføres især til virksomheder inden for vidensarbejde og biologi.",
+        "Trump-administrationen har indført nye regler for AI-modeller efter Fable-sagen."
+      ],
+      "betydning": "Du får næsten samme AI-kraft som den bedste model – til halv pris og uden de strenge dataregler. Det kan blive din nye standardmodel på jobbet.",
+      "pointer": [
+        "Opus 5 koster det halve af Fable 5.",
+        "Klarer sig bedre end Fable 5 i flere tests.",
+        "Færre restriktioner og bedre privatliv.",
+        "Ny nødfunktion undgår fejlmeddelelser."
+      ],
+      "billedmotiv": "En stabel kontanter ved siden af to robotarme, hvor den ene har et prisskilt på halv størrelse af den anden, og begge peger mod en computerterminal.",
+      "billede": "data/img/7adb27624aad3241.jpg",
+      "kat_ai": true,
+      "prio": 10,
+      "side": "artikel/352b1db2596bfce6.html"
     },
     {
       "titel": "AMD takes on Nvidia with its Helios AI rack-scale system",
@@ -4156,7 +4431,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En petriskål med et mikroskop og en stak dollarsedler under en lup",
+      "billedmotiv": "Et guldbarreobelisk med petriskål og mikroskop støtter sig mod en sprækket petriskål",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
