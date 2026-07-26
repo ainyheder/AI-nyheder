@@ -434,15 +434,16 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       }));
 
     var nul = L.faste_uden_besoeg || [];
-    ud += '<div class="lgruppe">Faste sider uden ét eneste besøg</div>';
+    ud += '<div class="lgruppe">Faste sider, ingen har åbnet</div>';
     ud += nul.length
-      ? '<div class="nul">Ingen åbnede de her sider i perioden. Det er som regel ' +
+      ? '<div class="nul">Ikke én eneste sidevisning i perioden — hverken udefra ' +
+        "eller via et klik herinde. Det er som regel " +
         "den mest brugbare oplysning på skærmen: enten skal siderne være lettere at " +
         "finde, eller også skal de væk." +
         '<div class="nul-liste">' + nul.map(function (p) {
           return "<code>" + esc(p) + "</code>";
         }).join("") + "</div></div>"
-      : '<div class="lgodt">✓ Alle faste sider havde mindst ét besøg.</div>';
+      : '<div class="lgodt">✓ Alle faste sider blev åbnet mindst én gang.</div>';
 
     var henv = (L.henvisere || []).slice(0, 10);
     ud += '<div class="lgruppe">Hvor de kommer fra</div>';

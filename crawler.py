@@ -3564,10 +3564,16 @@ def _ai_chat_navn(vaert: str) -> str | None:
 
 
 def _faste_uden_besoeg(sider: list) -> list:
-    """De faste sider, ingen har åbnet i perioden. Cloudflare nævner slet ikke
-    en side uden besøg, så fraværet ER svaret."""
-    besoegt = {s["sti"].rstrip("/") or "/": s["besoeg"] for s in sider}
-    return [p for p in FASTE_SIDER if besoegt.get(p, 0) == 0]
+    """De faste sider, som slet ingen har åbnet i perioden.
+
+    Tæller SIDEVISNINGER, ikke besøg. "Besøg" er kun dem, der landede på siden
+    udefra - så en side kan have nul besøg og alligevel være læst af mange, der
+    klikkede sig derind fra forsiden. Målt 26.07.2026 havde /prompts.html nul
+    besøg og fjorten visninger; kaldte vi den ulæst, ville gennemgangen gå i
+    gang med at rette noget, der ikke fejlede. Cloudflare nævner slet ikke en
+    side uden trafik, så fraværet fra listen ER svaret."""
+    set_ = {s["sti"].rstrip("/") or "/": s["visninger"] for s in sider}
+    return [p for p in FASTE_SIDER if set_.get(p, 0) == 0]
 
 
 def hent_laesertal() -> dict | None:
