@@ -27,6 +27,177 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-07-26 (ekstra kørsel kl. 14) · Ingen af de statiske sider har en canonical
+
+**Fandt:** Tallet holdt — **2 af 33** HTML-filer i roden havde en canonical
+(`cookies.html` og `undervisning.html`). Men da jeg skulle rette dem, viste
+målingen noget, punktet ikke nævnte: **`uge.html` er ikke en statisk fil.**
+Crawleren genskriver den fra bunden i `_uge_side_html()` hver gang ugens
+overblik opdateres (`UGE_HTML.write_text(...)`, to steder). En canonical skrevet
+i hånden dér ville være forsvundet ved næste kørsel — præcis den fælde, noten om
+stavefejlen advarede imod i går. Jeg gennemgik alle 22 `write_text` i crawleren
+og hele `crawl.yml`: `uge.html` er **den eneste** rod-HTML, der genereres, så de
+27 andre er trygge at rette i hånden.
+
+**Gjorde:** Sat canonical på **28 sider** — 27 i hånden plus skabelonen bag
+`uge.html`, så den overlever en kørsel. Format og placering er crawlerens eget:
+`<link rel="canonical" href="https://ainyheder.com/<fil>">`, lige efter
+`<meta name="description">`.
+
+`index.html` peger på `https://ainyheder.com/` **uden** `index.html` — samme
+form som `<loc>` i sitemappet. Det er hele pointen med at gøre det: at `/` og
+`/index.html` ikke længere kan indekseres som to sider.
+
+**Tre sider fik den med vilje ikke:**
+
+- `404.html` — en fejlside. En canonical dér er en invitation til at indeksere den.
+- `tak.html` og `velkommen.html` — de har allerede `<meta name="robots"
+  content="noindex">`. En canonical ville sende et modsatrettet signal om noget,
+  vi udtrykkeligt ikke vil have indekseret.
+
+**Testede:** 203 assertions, alle grønne.
+
+- 98 statiske: hver af de 33 filer har præcis én canonical (nul for de tre
+  undtagne), den ligger inde i `<head>`, URL'en peger på sig selv, og hver fil
+  har stadig ét `<head>`/`</head>` og `<!DOCTYPE>` først. Diffen er **28 linjer
+  tilføjet, 0 slettet, 0 ændret** — hver enkelt en canonical og intet andet.
+- Krydstjek mod `sitemap.xml`: alle 29 sitemap-URL'er har nu en side, der
+  peger på præcis den adresse. Ingen uenighed mellem de to.
+- `_uge_side_html()` genskabt fra `data/uge.json` og sammenlignet med filen på
+  disken: **byte for byte identisk**. Skabelonen og filen er altså enige, og
+  næste kørsel hverken fjerner eller dublerer linjen.
+- 105 i jsdom på 21 af siderne (forsiden, ugesiden, alle slags kørekort- og
+  erhvervsmoduler, guider, quiz, ordbog, værktøjer, tjek-siden): ingen JS-fejl,
+  browseren parser præcis én `link[rel=canonical]` med den rigtige `href`,
+  `<title>` intakt, body har indhold.
+- `ast.parse` grøn, modulet indlæses, ingen dobbeltdefinerede konstanter.
+
+**Til Torben:**
+
+- **Det virker først, når Google henter siderne igen.** Canonical er et signal,
+  ikke en omdirigering. Og det hjælper kun på det, der allerede er indekseret —
+  sitemappene er stadig ikke indsendt, og det kan kun du gøre (instruksen står
+  længere ned i loggen). Uden det er dette en ryddet vej, ingen kører på.
+- **`undervisning.html` har en canonical, men står ikke i sitemappet.** Den er
+  stadig ikke linket fra nogen side. Det punkt ligger i køen.
+- **Overvej `noindex` på `koerekort-tjek.html`** hvis den ikke skal findes i
+  Google. Jeg har givet den en canonical, fordi den er en rigtig side, men det
+  er dit valg, om en bevis-tjekker skal kunne søges frem.
+
+---
+
+## 2026-07-26 (ekstra kørsel kl. 14) · 12 rubrikker mangler stadig et navn
+
+**Kørte selvom du var i gang.** Køen var rørt fire minutter før jeg startede
+(`opgavekoe.md`, 14:08), og du committede den 14:10 — så du har trykket **Kør
+nu** oven på din egen redigering. Den ene rørte fil er netop det punkt, jeg
+skulle arbejde på, så jeg fortsatte, som instruksen tillader. Intet uafhentet
+arbejde: `git status` var tom. Ingen `.git/*.lock` hverken før eller efter — jeg
+brugte `git --no-optional-locks status` fra starten. **Linjen i `natsession.md`
+er stadig uden flaget**, så den næste kørsel rammer det igen; rettelsen står i
+noten øverst.
+
+**Fandt:** Tallet holder — **12 af 96**, og alle 12 er låst af `navngivet`.
+Der er ingen uprøvede tilbage. Men de er ikke låst, fordi AI'en "gav op": de er
+låst, fordi **den blev bedt om at finde navne i materiale, navnene var pillet ud
+af.**
+
+`navngiv_rubrikker` viste modellen fire ting: den engelske titel (160 tegn),
+det engelske RSS-resumé (250 tegn) og vores egen navnløse rubrik og resumé.
+Den viste den **aldrig** `sektioner` og `detaljer` — den danske genfortælling,
+crawleren selv skriver ét kald tidligere i `main()`. Og det er lige præcis dér,
+navnene står:
+
+| rubrik | navn i det, modellen fik | navn i det, vi allerede havde |
+|---|---|---|
+| Nye materialer skal redde fremtidens AI-kraft | — | **Microsoft**, Syensqo |
+| Computere opfinder helt nye fordomme ved ansættelser | — | **ChatGPT, Claude, Gemini**, OpenAI, Princeton |
+| Sådan bruger medierne verden over AI | OpenAI | OpenAI |
+
+**Og der er et bevis for, at det gik galt.** Git-historikken over
+`articles.json` (40 revisioner) viser præcis én af de 12 rubrikker ændre sig:
+
+> 24.07: *"Nye materialer skal redde fremtidens **computerkraft**"*
+> 25.07: *"Nye materialer skal redde fremtidens **AI-kraft**"* — `navngivet: true`
+
+Det er hele omskrivningen. Modellen havde intet navn at arbejde med, satte
+ordet **AI** ind, og den dengang utætte `_har_navn` godtog "AI" som et navn —
+så svaret blev accepteret, skrevet ind i arkivet og **låst for evigt**.
+Artiklen handler om Microsoft. Reparationsrunden gjorde altså rubrikken en
+smule ringere og lukkede derefter døren. De øvrige 11 svar blev afvist, og
+flaget blev sat alligevel.
+
+**For de øvrige 9 er låsen rigtig.** Jeg gennemsøgte hele posten — sektioner,
+detaljer, pointer, nøgletal, figurer, betydning — og der er intet navn nogen
+steder. Fem af dem (`Christians AI-værktøj`, `Specialist: Skærp kravene`,
+`Kommune brugte AI`, `Vibrationer i dit kranie`, `Sundhedsdata`) er
+`kun_aktuel`, altså arkivforbud: vi gemmer med vilje ikke udgiverens tekst, så
+vi får **aldrig** mere materiale om dem. At nulstille deres flag ville være at
+betale for at få samme svar igen. Ingeniøren og Version2 valgte selv at holde
+kommunen og rådgivningsfirmaet ude af overskriften.
+
+**Gjorde:** Tre ting i `crawler.py` og én i `data/articles.json`.
+
+1. **Ny `_dansk_uddrag()`** samler genfortællingen (sektioner + detaljer +
+   pointer) og lægger den i payloaden som `dansk_uddrag`, max 700 tegn.
+   Artikler uden genfortælling får feltet slet ikke — frem for en tom streng.
+2. **Uddraget prioriterer de stumper, der bærer et navn** (`_uddrag_vaegt`).
+   Det er ikke pynt: en simpel klipning ved 700 tegn nåede aldrig frem, fordi
+   `sektioner` alene fylder ~1.100 tegn — Microsoft stod sent, og ChatGPT/
+   Claude/Gemini stod i `detaljer`, som slet ikke kom med. Nu kommer sikre
+   navne først, korteste stump først, fordi `detaljer` har den højeste
+   navnetæthed (én linje på 60 tegn kan rumme tre navne).
+3. **Prompten** siger nu, at feltet findes og at navnet ofte kun står dér — at
+   ordet "AI" **ikke** er et navn og ikke tæller som en løsning — og at et tomt
+   svar er et gyldigt "jeg fandt intet navn". Desuden: ét vrøvl-element i
+   svaret tabte før hele klumpen (`p.get()` på en streng kaster
+   `AttributeError`, som kun den ydre `except` fangede).
+4. **Nulstillet `navngivet` for præcis de 3**, hvor uddraget nu leverer et
+   sikkert navn. Ikke alle 12. Diffen er 3 linjer: `true` → `false`.
+
+**Testede:** 58 assertions, alle grønne.
+
+- 44 på `navngiv_rubrikker` med `hjerne_kald` erstattet af en falsk funktion:
+  gyldigt svar (Microsoft og ChatGPT skrives ind, `resume_da` følger med),
+  svar pakket i en dict, ren vrøvl, tom streng, `null`, `42`, array af strenge,
+  array med `null` i (den gyldige post bruges alligevel), rubrik som liste,
+  `nr` som tekst, `nr` uden for listen, tom rubrik. **Og det svar, der før slap
+  igennem:** "…fremtidens AI-kraft" bliver nu afvist, rubrikken står uændret.
+  Samme for "techgigant", "Gigantens", for lang, for kort, for mange ord.
+  Uden API-nøgle røres intet.
+- `ast.parse` grøn, modulet indlæses, **ingen dobbeltdefinerede konstanter** på
+  modulniveau.
+- `articles.json`: stadig gyldig, stadig 96 artikler, samme nøgler og
+  rækkefølge, `opdateret` urørt, **kun** `navngivet` ændret på 3 poster, filen
+  voksede 3 bytes. Sikkerhedskopi lå i `/tmp` undervejs.
+- Forsiden i jsdom mod de rigtige datafiler: 14 assertions grønne, ingen
+  JS-fejl, 97 kort tegnes, dagens overblik vises, 49 kort har `data-link`, og
+  et klik åbner læsevisningen med indhold. De tre rubrikker står uændret på
+  deres egne artikelsider.
+
+**Til Torben:**
+
+- **Næste crawler-kørsel prøver de 3 igen — det koster ét AI-kald.** Bliver
+  svaret godt, hedder de to vigtigste noget i retning af *"Microsoft leder
+  efter nye materialer til AI-servere"* og *"ChatGPT og Claude udvikler
+  fordomme ved ansættelser"*. Den sidste er prio 8 og ligger højt på forsiden.
+- **De 9 andre lader jeg blive låst med vilje.** Vil du have dem prøvet
+  alligevel, er det én linje: sæt `navngivet` til `false` i `articles.json`.
+  Men for de fem `kun_aktuel` er svaret det samme som sidst, og det koster.
+- **Værd at bemærke:** to af de 12 er OpenAI's egen blog (*"Sådan bruger
+  medierne verden over AI"*, *"Styr på udgifterne til AI i virksomhederne"*),
+  og flere er MIT Tech Review-artikler af typen "sådan gør IT-chefer". De er
+  navnløse, fordi de ikke handler om en begivenhed, men er rådgivning — og for
+  OpenAI-posternes del er afsenderen selv sælgeren. Det er ikke punkt 1, det er
+  punkt 5. Jeg har ikke skrevet et punkt om det i køen (det hører til
+  hovedkørslens fase 2), men det er værd at tage stilling til, om den slags
+  hører hjemme i nyhedsstrømmen.
+- **Målt og lagt fra mig:** jeg tjekkede, om "IT" leaker gennem `_har_navn`
+  ligesom "AI" gjorde. Det gør det ikke — af 96 rubrikker bæres kun tre af en
+  forkortelse, og alle tre er "EU", som er en rigtig aktør. Ingen ændring.
+
+---
+
 ## 2026-07-26 · Læs 20 rubrikker som en nabo uden teknisk baggrund
 
 **Fandt:** Læste alle 107, ikke 20. Det, punktet spurgte om — jargon — er
@@ -966,6 +1137,15 @@ billedudvalg mod forsidens, og skribentens prompt mod redaktørens. 79
 assertions, alle grønne. To ting uden for køen: **`.git/index.lock` lå der
 igen** (ryddet — se nedenfor), og der stod **en stavefejl i en rubrik på
 forsiden**.
+
+**Ekstra kørsel 14:13–15:0x:** klarede **2 punkter** mere — de 12 navnløse
+rubrikker og canonical på de statiske sider. Køen er ikke omprioriteret; det
+hører til hovedkørslen. Begge punkter var **rigtigt målt, men forkert
+forklaret**: rubrikkerne var ikke låst, fordi AI'en gav op, men fordi den aldrig
+fik crawlerens egen genfortælling at se — og canonical-punktet regnede
+`uge.html` for en statisk fil, som crawleren i virkeligheden genskriver. 261
+assertions, alle grønne. Jeg kørte oven på din egen redigering af køen kl. 14:08,
+fordi den ene rørte fil var netop det punkt, jeg skulle arbejde på.
 
 Klaret: **7 punkter** — 3 af første kørsel, 4 af sidste. Nye i køen: **4**.
 

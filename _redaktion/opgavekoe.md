@@ -24,24 +24,16 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
+*Ingen kendte lige nu.*
+
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Ingen af de 31 statiske sider har en canonical.** Alle 102 artikelsider
-      og alle 40 videosider har én — crawleren sætter den, fordi den er
-      nødvendig. Men forsiden, `koerekort.html`, alle syv kørekortmoduler, alle
-      fire erhvervsmoduler, `laer.html`, `ordbog.html`, `faq.html` og resten har
-      ingen. Målt: 1 af 32 sider i roden har canonical, og det er
-      `undervisning.html`, som blev skrevet i nat. Det er præcis de sider,
-      Google *har* indekseret. Uden canonical kan samme side indekseres under
-      flere adresser (med og uden `www`, med `?utm_source=…` fra et delt link),
-      og signalerne splittes mellem dem. Mindste rettelse: én linje pr. side.
-      *Punkt 10 — en åbenlys vej til flere læsere, der står ubrugt hen.*
-
 - [ ] **Artikelsider fryses, når de falder ud af 30-dages-vinduet.** Målt i nat:
-      **15 af de 16 sider under 900 tegn** er sider, crawleren ikke længere kan
-      røre, fordi artiklen er ude af `articles.json`. De står på en ældre
-      skabelon med 375–462 tegn hver. Tallet vokser hver måned, og enhver
-      fremtidig forbedring vil kun ramme den nyeste måned. Første kørsel måtte
+      15 af 16 sider under 900 tegn kunne crawleren ikke røre, fordi artiklen
+      var ude af `articles.json`. **Målt 26.07 kl. 11: 0 sider under 900 tegn** -
+      engangsscriptet ryddede dem alle. Men mekanismen er uændret: arkivet
+      holder 30 dage, så om en måned er problemet tilbage, og enhver fremtidig
+      forbedring vil kun ramme den nyeste måned. Første kørsel måtte
       skrive et engangsscript af samme grund. Mindste rettelse: crawleren kan
       genskrive en side ud fra sidens eget indhold, sådan som
       `opsaetning/opgrader-gamle-artikelsider.py` allerede gør — den skal bare
@@ -79,10 +71,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
-
-- [ ] **Viser videosiderne faktisk tidsstempler?** De 18 låste videoer har nu
-      dansk resumé. Får højdepunkterne plads på deres statiske sider, eller
-      falder de stadig for tidstjekket i `_yt_anvend`? *Punkt 7.*
 
 - [ ] **Tjek dubletfangeren.** Find historier i arkivet, der reelt dækker samme
       begivenhed, men står som to. Er `saml_dublet_historier` for forsigtig?
@@ -136,6 +124,44 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Ingen af de statiske sider har en canonical.** *(26.07.2026, ekstra
+      kørsel kl. 14)* Målt: 2 af 33 havde én. Sat på **28 sider** i crawlerens
+      eget format, lige efter `<meta name="description">`. `index.html` peger på
+      `https://ainyheder.com/` uden filnavn — samme form som sitemappets `<loc>`,
+      så `/` og `/index.html` ikke længere kan indekseres som to sider. Undervejs
+      viste målingen, at **`uge.html` ikke er en statisk fil**: crawleren
+      genskriver den fra `_uge_side_html()`, så en rettelse i hånden var
+      forsvundet ved næste kørsel. Linjen er lagt i skabelonen, og den genskabte
+      fil er byte for byte identisk med den på disken. Alle 22 `write_text` i
+      crawleren og hele `crawl.yml` gennemgået: `uge.html` er den eneste rod-HTML,
+      der genereres. `404.html` fik med vilje ingen (fejlside), og `tak.html` +
+      `velkommen.html` heller ikke (de har allerede `noindex`). Alle 29
+      sitemap-URL'er har nu en side, der peger på præcis den adresse. 203
+      assertions, alle grønne.
+
+- [x] **12 rubrikker mangler stadig et navn.** *(26.07.2026, ekstra kørsel kl. 14)*
+      Tallet holdt — 12 af 96, alle låst af `navngivet`, ingen uprøvede. Men de
+      var ikke låst, fordi AI'en gav op: `navngiv_rubrikker` viste den kun den
+      engelske titel, RSS-resuméet og vores egen navnløse rubrik — **aldrig**
+      `sektioner` og `detaljer`, den danske genfortælling crawleren selv skriver
+      ét kald tidligere. Navnene stod netop dér: **Microsoft** i én, **ChatGPT,
+      Claude og Gemini** i en anden. Git-historikken beviser skaden: rubrikken
+      *"…fremtidens computerkraft"* blev 25.07 omskrevet til *"…fremtidens
+      **AI-kraft**"* og låst — modellen satte ordet "AI" ind, og den dengang
+      utætte `_har_navn` godtog det som et navn. Rettet: nyt `_dansk_uddrag()`
+      lægger genfortællingen i payloaden, navnebærende stumper først (en simpel
+      klipning ved 700 tegn nåede aldrig frem, fordi sektionerne fylder 1.100);
+      prompten siger nu, at "AI" ikke er et navn, og at et tomt svar er gyldigt;
+      ét vrøvl-element taber ikke længere hele klumpen. `navngivet` nulstillet
+      for **præcis de 3**, hvor uddraget nu leverer et sikkert navn — de øvrige
+      9 har intet navn i noget materiale vi har, og fem af dem er `kun_aktuel`,
+      hvor vi aldrig får mere. 58 assertions, alle grønne.
+
+- [x] **Viser videosiderne faktisk tidsstempler?** *(målt 26.07 kl. 11)* Ja.
+      17 af 40 videoer har hoejdepunkter, og praecis de 17 videosider viser dem
+      - ingen falder for tidstjekket. De 23 uden har intet at vise, fordi
+      YouTube ikke udleverede undertekster. Intet at rette.
 
 - [x] **Læs 20 tilfældige rubrikker som en nabo uden teknisk baggrund.**
       *(26.07.2026, ekstra kørsel)* Læste alle 107. Jargon er **ikke**
