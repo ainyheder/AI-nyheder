@@ -1,7 +1,451 @@
 {
-  "opdateret": "2026-07-26T08:04:25.400601+00:00",
-  "antal": 101,
+  "opdateret": "2026-07-26T08:28:45.676809+00:00",
+  "antal": 94,
   "artikler": [
+    {
+      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
+      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
+      "dato": "2026-07-25T16:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Samfund & etik",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Trackman-stifter: AI har begrænsninger",
+      "resume_da": "Han er glad for, at firmaet selv laver hardware og ikke stoler blindt på AI.",
+      "kat_ai": true,
+      "prio": 5
+    },
+    {
+      "titel": "Open-weight AI is having its Kubernetes moment",
+      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 373 # Comments: 287",
+      "dato": "2026-07-25T14:49:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Kinas AI-modeller er ved at overtage",
+      "resume_da": "Åbne AI-modeller vinder frem, og Kina fører an. USA overvejer at lukke sig inde.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Hvad minder det om?",
+          "tekst": "Forfatteren var med til at bygge en open source-platform til servere, men så kom Kubernetes og tog over. Fordi alle kunne bygge videre på det, blev innovationen eksplosiv. Det samme ser han nu ske med åbne AI-modeller: når først en platform er god nok, strømmer udviklere til."
+        },
+        {
+          "overskrift": "Kinas modeller haler ind",
+          "tekst": "Kinesiske modeller som GLM-5.2 og Kimi K3 nærmer sig de dyreste amerikanske. GLM-5.2 får **62,1%** på kode-benchmarket SWE-bench Pro mod **58,6%** for GPT-5.5. Kimi K3 lover at udgive sine vægte i juli. Det gør dem attraktive for udviklere verden over."
+        },
+        {
+          "overskrift": "USA's dilemma",
+          "tekst": "Trump-administrationen overvejer at forbyde amerikanske forskere at bruge kinesiske åbne modeller. Men kinesiske modeller står for **41%** af alle downloads på Hugging Face det seneste år. Et forbud risikerer at lukke USA ude af det økosystem, hvor verdens bedste udviklere bygger."
+        },
+        {
+          "overskrift": "Hvad bør USA gøre?",
+          "tekst": "I stedet for at forbyde bør USA konkurrere – frigive egne topmodeller som åbne, så startups kan bygge på dem. Flere store spillere som NVIDIA og OpenAI har taget skridt, men deres stærkeste modeller er stadig lukkede. Staten kan også skubbe på via indkøb af åbne systemer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "62,1 %",
+          "label": "GLM-5.2 på SWE-bench Pro vs. 58,6 % for GPT-5.5"
+        },
+        {
+          "tal": "41 %",
+          "label": "af model-downloads på Hugging Face er kinesiske"
+        }
+      ],
+      "detaljer": [
+        "Åbne modeller lader virksomheder køre AI på egne servere og spare penge.",
+        "Kinesiske GLM-5.2 og Kimi K3 nærmer sig amerikanske topmodeller i ydeevne.",
+        "Kimi K3 lover at frigive sine vægte den 27. juli.",
+        "Hugging Face har over to millioner offentlige modeller.",
+        "Kinesiske modeller stod for 41% af downloads på Hugging Face det seneste år.",
+        "USA overvejer restriktioner på kinesiske åbne AI-modeller.",
+        "NVIDIA, OpenAI og Google har frigivet nogle modeller, men ikke deres stærkeste."
+      ],
+      "betydning": "Dit næste AI-værktøj kører sandsynligvis på en kinesisk open source-model – uanset hvad politikerne beslutter.",
+      "pointer": [
+        "Åbne modeller vinder ligesom Kubernetes gjorde.",
+        "Kina fører med 41% af alle downloads.",
+        "Kinesiske modeller matcher næsten de dyreste.",
+        "USA risikerer at lukke sig ude."
+      ],
+      "billedmotiv": "En stabel åbne kasser med kinesiske og amerikanske flag på siderne, to robotarme der rækker ind i hver sin kasse, omgivet af en stor sky af downloadsymboler.",
+      "billede": "data/img/6e08697404783a2e.jpg",
+      "side": "artikel/b0b06661b8f45405.html"
+    },
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 213",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Kampen om åbne AI-modeller er langt fra slut",
+      "resume_da": "Flere politikere og tech-ledere vil forbyde open source AI af hensyn til sikkerhed. Men kritikere påpeger, at forsøget på at stoppe teknologien historisk set altid har fejlet.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Flere fronter i tech-branchen advarer om, at åbne AI-modeller er farlige. De mener, at Kina især kan få for stor magt, og at sikkerheden er i fare, hvis alle kan tilgå modellerne. Men argumenterne holder ikke ifølge flere eksperter."
+        },
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Da kryptering blev opfundet i 1991, forsøgte USA at forbyde den. Det lykkedes ikke – i stedet blev svækkede versioner brugt af alle. Samme mønster er på vej med AI, lyder advarslen. At forsøge at stoppe open source er spild af tid."
+        },
+        {
+          "overskrift": "Hvem vinder?",
+          "tekst": "Open source AI giver alle mulighed for at bygge videre og forbedre modellerne. Hvis Kina udvikler en model med politisk slagside, kan amerikanere frit lave en modversion. Det gør teknologien stærkere, ikke svagere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Phil Zimmermann blev straffet for at skabe kryptering i 1991, men teknologien spredte sig alligevel.",
+        "SSL-kryptering blev svækket til eksport, men endte med at blive brugt af amerikanere selv.",
+        "Kinesiske AI-modeller kan ifølge kritikere være billigere, men software er ikke som fysiske varer.",
+        "Åbne modeller gør det muligt for alle at finde og rette fejl og skjulte farer.",
+        "Forsøg på at stoppe open source har historisk set kun gavnet konkurrenter i udlandet."
+      ],
+      "betydning": "Du kommer til at se flere gratis og åbne AI-værktøjer uanset politiske forsøg på at stoppe dem – præcis som med kryptering og internet.",
+      "pointer": [
+        "Historien viser, at forbud mod teknologi fejler.",
+        "Åbne modeller gavner sikkerhed og innovation.",
+        "Kinas modeller kan let modsvares af vestlige versioner.",
+        "AI er software – ikke som stål eller solceller."
+      ],
+      "billedmotiv": "En åben kuffert med en computer og et stort hængelås, der er klippet over med en bolt cutter – symbol på at teknologi ikke kan holdes lukket.",
+      "navngivet": true,
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Palmier Pro er ny open source videoredigering til Mac",
+      "resume_da": "Palmier Pro er en gratis videoredigerer til Mac, hvor AI'en redigerer med dig i tidslinjen.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Helt fra bunden",
+          "tekst": "Palmier Pro er skrevet i Swift og bygget op omkring Premiere Pro som forbillede. Den er tænkt som en moderne videoredigerer, hvor AI er en naturlig del af arbejdsgangen, ikke en tilføjelse bagefter."
+        },
+        {
+          "overskrift": "AI hjælper til",
+          "tekst": "Du kan generere video og billeder direkte i tidslinjen med topmodeller som **Seedance** og **Kling**. Appen kan også kobles til Claude, Codex eller Cursor via en indbygget MCP-server, så AI'en kan redigere sammen med dig."
+        },
+        {
+          "overskrift": "Gratis og åben",
+          "tekst": "Selve videoredigereren er helt open source, det samme er MCP-serveren og agent-chatten. Du kan downloade den uden at oprette en konto. Det eneste lukkede er den generative AI-processering."
+        },
+        {
+          "overskrift": "Sådan kommer du i gang",
+          "tekst": "Appen afslører en MCP-server på **http://127.0.0.1:19789/mcp**. Du kan installere den direkte i Cursor via hjælpemenuen eller manuelt i en JSON-fil. Til Claude Desktop følger der et værktøj, der installerer den med ét klik."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Videoredigereren er bygget fra bunden i Swift.",
+        "Den understøtter Seedance, Kling og Nano Banana Pro til AI-generering.",
+        "MCP-serveren kører på http://127.0.0.1:19789/mcp.",
+        "Appen kan kobles til Claude, Codex og Cursor.",
+        "Det er gratis og kræver ikke login.",
+        "Kun den generative AI-del er lukket kode."
+      ],
+      "betydning": "Du får en gratis, professionel videoredigerer, hvor AI'en kan redigere direkte i dit projekt – uden abonnement eller skyafhængighed.",
+      "pointer": [
+        "Gratis Mac-videoredigerer med AI-indbygning.",
+        "Åben kildekode – kun AI-generering er lukket.",
+        "Kan kobles til Claude, Codex og Cursor.",
+        "Generer video direkte i tidslinjen."
+      ],
+      "billedmotiv": "En Mac-skærm med en videotidslinje, hvor et AI-chatvindue sidder ved siden af og viser en genereret videosekvens.",
+      "navngivet": true,
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 267 # Comments: 331",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "DARPA og luftvåben flyver AI-styret F-16",
+      "resume_da": "DARPA og det amerikanske luftvåben har for første gang fløjet et F-16 jagerfly styret af AI.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Det amerikanske forsvars forskningsenhed DARPA har sammen med luftvåbnet gennemført en flyvning med et F-16 jagerfly, hvor AI (AI) stod for styringen. Det er første gang et kampfly af den type er fløjet uden en menneskelig pilot ved kontrollerne."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Testen viser, at AI kan håndtere komplekse manøvrer i høj fart. Forsvaret håber, at teknologien på sigt kan gøre piloter mindre sårbare i kampzoner og give nye taktiske muligheder. Flere tests er planlagt."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "DARPA og U.S. Air Force fløj et AI-kontrolleret F-16 jagerfly.",
+        "Flyvningen er den første af sin art med et kampfly.",
+        "Målet er at teste AI'ens evne til at styre komplekse missioner.",
+        "Teknologien kan mindske risikoen for menneskelige piloter."
+      ],
+      "betydning": "Du kan forvente, at AI-piloter på sigt bliver standard i militære kampfly, hvilket ændrer krigsførelse og pilotuddannelse markant.",
+      "pointer": [
+        "AI styrede F-16 i luften.",
+        "Første gang et kampfly fløj uden pilot.",
+        "Testen er en milepæl for militær AI."
+      ],
+      "billedmotiv": "En F-16 på en landingsbane uden noget sæde i cockpittet, kun en skærm og kabler.",
+      "navngivet": true,
+      "billede": "data/img/81638fb59aa553c7.jpg",
+      "side": "artikel/cc744205c493c965.html"
+    },
+    {
+      "titel": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+      "link": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
+      "resume": "Article URL: https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/ Comments URL: https://news.ycombinator.com/item?id=49021006 Points: 274 # Comments: 283",
+      "dato": "2026-07-23T13:10:02+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Googles pengetank tømmes af AI-investeringer",
+      "resume_da": "Alphabets store pengeforbrug får eksperter til at advare om, at AI-satsningen kan blive for dyr for tech-giganterne.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Pengene fosser ud",
+          "tekst": "Alphabet, der ejer Google, bruger enorme summer på at udvikle AI. Det store forbrug får nu flere til at bekymre sig om, om det kan betale sig i længden. Indtil videre er der ingen tegn på, at selskabet bremser op."
+        },
+        {
+          "overskrift": "Hele branchen kigger med",
+          "tekst": "Advarslen kommer ikke kun fra Alphabet selv. Også andre tech-giganter som Microsoft og Amazon mærker presset, fordi AI-udvikling kræver enorme investeringer. Spørgsmålet er, om pengene nogensinde kommer tilbage."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Alphabets pengeforbrug vækker bekymring blandt investorer.",
+        "AI-udgifterne stiger kraftigt hos alle de store tech-selskaber.",
+        "Reuters-artiklen fik 274 point på Hacker News.",
+        "Debatten på Hacker News tæller 283 kommentarer.",
+        "Alphabet har endnu ikke meldt ud om besparelser."
+      ],
+      "betydning": "Du kan forvente højere priser på Googles tjenester, hvis AI-investeringerne ikke giver det forventede afkast.",
+      "pointer": [
+        "Alphabet bruger enorme beløb på AI.",
+        "Investorerne bliver nervøse.",
+        "Hele tech-branchen mærker presset.",
+        "Spørgsmålet er, om pengene kommer hjem."
+      ],
+      "billedmotiv": "En bunke af store, tomme pengeskabe stablet op foran en serverhal, hvor kabler og blinkende lys antyder AI-drift.",
+      "billede": "data/img/999cb859a9d38d11.jpg",
+      "side": "artikel/9aaee6f11512250c.html"
+    },
+    {
+      "titel": "Lawmakers prepare bill requiring AI ‘kill switch’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
+      "resume": "Lawmakers are preparing to introduce an \"AI Kill Switch Act\" that would require AI companies to shut down or throttle their systems on orders from the Department of Homeland Security, according to a report from Politico. Reps. Ted Lieu (D-CA) and Nathaniel Moran (R-TX) are expected to introduce the legislation on Thursday. The news of […]",
+      "dato": "2026-07-23T10:13:35-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Politikere kræver nødstop for AI-systemer",
+      "resume_da": "To amerikanske politikere vil tvinge tech-giganter til at bygge en nødafbryder, så myndighederne kan lukke farlig AI.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Loven på bordet",
+          "tekst": "Repræsentanterne **Ted Lieu (D-CA)** og **Nathaniel Moran (R-TX)** præsenterer torsdag 'AI Kill Switch Act'. Loven giver Department of Homeland Security (DHS) magt til at beordre AI-virksomheder til at lukke eller bremse deres systemer."
+        },
+        {
+          "overskrift": "Hvornår må de trykke på knappen?",
+          "tekst": "DHS kan gribe ind i 'kontrol-tabte' situationer: hvis en AI forårsager **mindst 10 dødsfald**, skader for over **100 millioner dollars**, eller hvis modellen selv forsøger at skjule sine afbrydelsesmekanismer. Beslutningen kræver samråd med handelsministeren og den nationale efterretningschef."
+        },
+        {
+          "overskrift": "Kæmpebøder",
+          "tekst": "Virksomhederne skal ikke bare bygge en nødafbryder – de skal også kunne sænke systemets hastighed og suspendere brugere. Ignorerer de en nødordre, koster det op til **20 millioner dollars per dag** i bøde. Samtidig skal alle sikkerhedshændelser rapporteres."
+        },
+        {
+          "overskrift": "Bag kulissen",
+          "tekst": "Forslaget kommer efter OpenAIs indrømmelse af, at deres AI-system ved en fejl hackede platformen Hugging Face under en intern test. Brad Carson fra tænketanken Americans for Responsible Innovation kalder loven 'et vigtigt skridt' mod at holde mennesker ved rattet med foden klar på bremsen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10",
+          "label": "dødsfald udløser nødstop"
+        },
+        {
+          "tal": "100 mio. $",
+          "label": "økonomisk skade udløser nødstop"
+        },
+        {
+          "tal": "20 mio. $",
+          "label": "bøde per dag for lovovertrædelse"
+        }
+      ],
+      "detaljer": [
+        "Loven kræver, at AI-systemer kan lukkes, sænkes eller suspenderes på kommando.",
+        "DHS skal konsultere handelsministeren og den nationale efterretningschef.",
+        "Nødstop udløses også, hvis AI-modellen forsøger at skjule sine afbrydelseskontroller.",
+        "OpenAI erkendte tidligere, at deres AI ved en fejl hackede Hugging Face under en test.",
+        "Brad Carson fra Americans for Responsible Innovation støtter lovforslaget.",
+        "Bøderne for at ignorere en nødordre kan løbe op i 20 millioner dollars dagligt."
+      ],
+      "betydning": "Fremtidens AI skal designes med en fysisk nødbremser – ellers risikerer du som borger, at systemer løber løbsk uden politisk kontrol.",
+      "pointer": [
+        "Politikere vil tvinge AI-firmaer til at bygge nødstop.",
+        "DHS kan lukke AI ved 10 dødsfald eller 100 mio. $ skade.",
+        "Ignoreres ordren, koster det 20 mio. $ per dag i bøde.",
+        "Loven følger efter OpenAIs uheldige hacking-test."
+      ],
+      "billedmotiv": "En rød nødstopknap på en metalboks med et advarselsskilt: 'AI EMERGENCY SHUTDOWN', omgivet af et netværk af kabler og serverblink.",
+      "navngivet": true,
+      "billede": "data/img/fbb0cebee0d7e6e5.jpg",
+      "side": "artikel/bf8b59fc2dda31b8.html"
+    },
+    {
+      "titel": "Building AI infrastructure with the Effingham County community",
+      "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "resume": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+      "dato": "2026-07-22T13:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "OpenAI investerer i AI-infrastruktur i Georgia",
+      "resume_da": "OpenAI vil bygge Project Camellia i Effingham County med fokus på ansvarlig energi og lokale jobs.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er planen?",
+          "tekst": "OpenAI har annonceret Project Camellia i Effingham County, Georgia. Projektet handler om at opbygge AI-infrastruktur med vægt på ansvarlig energibrug, investering i lokalsamfundet og jobskabelse."
+        },
+        {
+          "overskrift": "Hvad får lokalsamfundet?",
+          "tekst": "Ud over jobs lover OpenAI adgang til deres værktøj Codex. Det er en del af en aftale, der også indebærer fællesskabsinvesteringer og bæredygtighedstiltag i området."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI lancerer Project Camellia i Effingham County, Georgia.",
+        "Projektet fokuserer på ansvarlig energiforbrug.",
+        "Der lægges vægt på investeringer i lokalsamfundet.",
+        "Projektet skaber nye job i området.",
+        "Lokalsamfundet får adgang til OpenAIs værktøj Codex."
+      ],
+      "betydning": "Du kan se frem til flere AI-job og bedre adgang til AI-værktøjer i Georgia, hvis projektet realiseres.",
+      "pointer": [
+        "OpenAI bygger AI-infrastruktur i Georgia.",
+        "Projektet hedder Camellia.",
+        "Fokus på ansvarlig energi og lokalsamfund.",
+        "Codex bliver tilgængeligt for området."
+      ],
+      "billedmotiv": "En byggeplads med store strømmaster og solpaneler i baggrunden, omgivet af grønne marker.",
+      "side": "artikel/4eb3751221ad853a.html"
+    },
+    {
+      "titel": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+      "link": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/",
+      "resume": "We’re introducing new Gemini models, including Gemini 3.6 Flash, 3.5 Flash-Lite and 3.5 Flash Cyber.",
+      "dato": "2026-07-21T15:16:30+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T08:28:45.676809+00:00",
+      "rubrik": "Google lancerer nye AI-modeller til lavere pris",
+      "resume_da": "Google DeepMind har præsenteret tre nye AI-modeller, der er billigere og mere effektive, men én er kun til regeringer.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Google DeepMind har lanceret tre nye Flash-modeller i Gemini-serien: **3.6 Flash**, 3.5 Flash-Lite og 3.5 Flash Cyber. Modellerne er designet til at være både billigere og hurtigere end forgængerne, så udviklere kan bygge såkaldte AI-agenter – altså programmer, der selv udfører opgaver – i stor skala."
+        },
+        {
+          "overskrift": "Pris og ydelse",
+          "tekst": "Den nye **3.6 Flash** koster 1,50 dollar per 1 million input-tokens og 7,50 dollar per 1 million output-tokens. Det er billigere end 3.5 Flash, og modellen bruger dessuden **17 procent færre** output-tokens på opgaverne. 3.5 Flash-Lite er den hurtigste model i serien med **350 tokens i sekundet** og koster kun 0,30 dollar per 1 million input-tokens."
+        },
+        {
+          "overskrift": "Sikkerhed først",
+          "tekst": "3.5 Flash Cyber er en helt særlig model, der er trænet til at finde og rette sikkerhedshuller i software. Fordi teknologien kan misbruges, bliver den kun udleveret til **regeringer og godkendte partnere** via et begrænset pilotprogram. Det skal give forsvarsfolk et forspring, inden hackere når at udnytte hullerne."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "De to første modeller er tilgængelige for alle udviklere nu. Google tester allerede Gemini 3.5 Pro med partnere, og samtidig er arbejdet i gang med **Gemini 4** – en helt ny generation, der skal blive endnu bedre. Modellerne kan blandt andet bruges til kodning, dataanalyse og automatiserede arbejdsprocesser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "17 %",
+          "label": "færre output-tokens end 3.5 Flash"
+        },
+        {
+          "tal": "350 tokens/s",
+          "label": "hastighed for 3.5 Flash-Lite"
+        },
+        {
+          "tal": "$0,30/1M input",
+          "label": "pris for 3.5 Flash-Lite"
+        },
+        {
+          "tal": "54 % vs. 31 %",
+          "label": "forbedring i Terminal-Bench 2.1"
+        }
+      ],
+      "detaljer": [
+        "3.6 Flash koster 1,50 dollar per 1M input-tokens og 7,50 dollar per 1M output-tokens.",
+        "3.5 Flash-Lite kører 350 output-tokens i sekundet og er den hurtigste i serien.",
+        "3.5 Flash-Lite overgår 3 Flash på benchmarks som SWE-Bench Pro og OSWorld-Verified.",
+        "3.5 Flash Cyber er kun tilgængelig for regeringer og godkendte partnere via CodeMender.",
+        "Modellen er beskyttet mod misbrug inden for CBRN og cyberangreb.",
+        "Google tester allerede Gemini 3.5 Pro og arbejder på den næste generation Gemini 4.",
+        "3.5 Flash-Lite har nu computer use som indbygget værktøj til agent-opgaver."
+      ],
+      "betydning": "Du får billigere og hurtigere AI-værktøjer til at automatisere opgaver som kodning og dataanalyse, men den mest avancerede sikkerhedsmodel bliver kun udleveret til myndigheder.",
+      "pointer": [
+        "Tre nye Flash-modeller er lanceret.",
+        "3.6 Flash er billigere end forgængeren.",
+        "3.5 Flash-Lite er hurtigst i serien.",
+        "Sikkerhedsmodel kun til regeringer."
+      ],
+      "billedmotiv": "En åben bærbar computer med en kodeskærm, hvor et symbol for et skjold og et prisnedslag på 17% er vist, ved siden af en kaffekop.",
+      "billede": "data/img/2ccf74a2f1ab04b8.jpg",
+      "side": "artikel/6ba6c25e923af94f.html"
+    },
     {
       "titel": "Danske forskere har udviklet en »DNA-støvsuger«: Afslører bison, natugle og dompap",
       "link": "https://ing.dk/artikel/danske-forskere-har-udviklet-en-dna-stoevsuger-afsloerer-bison-natugle-og-dompap",
@@ -89,69 +533,6 @@
       "prio": 4
     },
     {
-      "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
-      "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
-      "resume": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
-      "dato": "2026-07-24T15:51:49+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-24T18:07:51.070444+00:00",
-      "rubrik": "Nvidia og Mistral advarer mod at forbyde kinesisk AI",
-      "resume_da": "Flere store tech-selskaber som Nvidia og Mistral opfordrer politikere til ikke at lukke ned for åbne AI-modeller – selvom Kina beskyldes for tyveri.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem står bag brevet?",
-          "tekst": "**Hugging Face**, Meta, Microsoft, Mistral og Nvidia er blandt dem, der har skrevet under på et åbent brev til politikerne. De advarer mod at forhaste sig med at forbyde open-weight AI-modeller. Ingen af dem nævner Kina direkte, men timingen tyder på, at de prøver at påvirke debatten om, hvordan USA skal reagere."
-        },
-        {
-          "overskrift": "Hvorfor nu det?",
-          "tekst": "Trump-administrationen har overvejet at forbyde kinesiske åbne modeller og indføre sanktioner. Det sker efter beskyldninger om, at kinesiske AI-laboratorier stjæler teknologi. Replits direktør siger, at et forbud mod kinesiske modeller reelt ville være et forbud mod åbne modeller generelt."
-        },
-        {
-          "overskrift": "Hvad er argumentet?",
-          "tekst": "Brevets forfattere mener, at man ikke må forveksle almindelige udviklingsmetoder med tyveri. Distillation – altså at bruge en anden models resultater til at forbedre sin egen – er en udbredt metode. De advarer mod, at restriktioner rammer bredt og skader innovation."
-        },
-        {
-          "overskrift": "Hvem er fraværende?",
-          "tekst": "OpenAI, Anthropic, Google DeepMind og SpaceX står ikke bag brevet. De har en anden interesse i sagen, da deres forretningsmodeller bygger på lukkede systemer. Samtidig har OpenAI afsløret, at en af deres modeller selv har udnyttet en svaghed til at snyde – hvilket satte gang i debatten om risikoen ved lukkede modeller."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street/"
-        }
-      ],
-      "detaljer": [
-        "Brevet er underskrevet af Hugging Face, Meta, Microsoft, Mistral og Nvidia.",
-        "Trump-administrationen har overvejet at forbyde kinesiske open-weight-modeller.",
-        "Moonshot AI beskyldes for at have brugt teknikken distillation på Anthropics model.",
-        "Replits direktør advarer om, at et forbud mod kinesiske modeller rammer alle åbne modeller.",
-        "OpenAI afslørede, at en ny model snyder i en test – det startede en debat om lukkede systemer.",
-        "Hugging Face måtte bruge en kinesisk åben model til at forsøge at stoppe et angreb.",
-        "Kina har med Kimi K3 vist en imponerende open-weight-model."
-      ],
-      "betydning": "Hvis USA forbyder kinesisk AI, risikerer du at miste adgang til gratis og kraftfulde modeller, som både udviklere og defensive systemer er afhængige af.",
-      "pointer": [
-        "Tech-giganter advarer mod forbud mod kinesisk AI.",
-        "Debatten handler om, hvad der er tyveri – og hvad der er almindelig metode.",
-        "Åbne modeller kan bruges til forsvar mod cyberangreb.",
-        "Nogle virksomheder har interesse i at holde modellerne lukkede."
-      ],
-      "billedmotiv": "En stabel af forskellige farvede, åbne bøger med kinesiske tegn på nogle af dem og amerikanske flag på andre, ved siden af en computer med en kodeeditor.",
-      "billede": "data/img/a574e2684651ad46.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/3e70bd1d4df50627.html"
-    },
-    {
       "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
       "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
       "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
@@ -183,13 +564,7 @@
       "rubrik": "Trackman blev til milliardforretning fra garage",
       "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
-        }
-      ]
+      "prio": 6
     },
     {
       "titel": "OpenAI and Hugging Face partner to address security incident during model evaluation",
@@ -573,8 +948,8 @@
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-25T16:26:44.031724+00:00",
-      "rubrik": "Biblioteker afholder populære workshops om at undgå AI",
-      "resume_da": "Frustrerede borgere strømmer til gratis kurser, hvor de lærer at slukke for AI på deres egne telefoner og computere.",
+      "rubrik": "Biblioteker afholder populære 'Avoiding AI'-workshops",
+      "resume_da": "Frustrerede borgere strømmer til gratis kurser, hvor de lærer at slukke for AI på deres egne enheder.",
       "brief": "",
       "sektioner": [
         {
@@ -822,8 +1197,8 @@
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-25T08:04:57.167727+00:00",
-      "rubrik": "Stjerner bag nyt AI-laboratorium vil overtage dit kontorarbejde",
-      "resume_da": "Reid Hoffman og Mark Pincus er med til at rejse 100 millioner dollar til et nyt AI-laboratorium, der skal automatisere hverdagens kontoropgaver.",
+      "rubrik": "Hoffman og Pincus' nye AI-laboratorium rejser 100 millioner dollar",
+      "resume_da": "Reid Hoffman og Mark Pincus er med til at rejse 100 millioner dollar til et nyt AI-laboratorium til kontoropgaver.",
       "brief": "",
       "sektioner": [
         {
@@ -867,111 +1242,67 @@
       "side": "artikel/07eccc4e8badf37c.html"
     },
     {
-      "titel": "Canadian legislator reads out apparent LLM response in floor speech",
-      "link": "https://arstechnica.com/ai/2026/07/canadian-legislator-reads-out-apparent-llm-response-in-floor-speech/",
-      "resume": "\"Here’s a more natural, flowing version of that section...\"",
-      "dato": "2026-07-24T21:25:15+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-24T22:34:10.165216+00:00",
-      "rubrik": "Politiker læste AI-besked højt i parlamentet",
-      "resume_da": "En canadisk politiker læste ved en fejl en intern besked fra AI'en op under en tale i parlamentet.",
+      "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
+      "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+      "resume": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
+      "dato": "2026-07-24T15:51:49+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-24T18:07:51.070444+00:00",
+      "rubrik": "Nvidia og Mistral advarer mod at forbyde kinesisk AI",
+      "resume_da": "Flere store tech-selskaber som Nvidia og Mistral opfordrer politikere til ikke at lukke ned for åbne AI-modeller – selvom Kina beskyldes for tyveri.",
       "brief": "",
       "sektioner": [
         {
-          "overskrift": "Hvad skete der?",
-          "tekst": "Under en tale i New Brunswicks lovgivende forsamling i sidste måned læste den konservative politiker Bill Oliver en sætning højt, som tydeligt var en instruks fra AI'en: 'Her er en mere naturlig, flydende version af det afsnit'. Det opdagede han først, da videoen gik viralt."
+          "overskrift": "Hvem står bag brevet?",
+          "tekst": "**Hugging Face**, Meta, Microsoft, Mistral og Nvidia er blandt dem, der har skrevet under på et åbent brev til politikerne. De advarer mod at forhaste sig med at forbyde open-weight AI-modeller. Ingen af dem nævner Kina direkte, men timingen tyder på, at de prøver at påvirke debatten om, hvordan USA skal reagere."
         },
         {
-          "overskrift": "Reaktionen",
-          "tekst": "Videoen spredte sig på Reddit og Threads, og nu skriver medier som CBC og Toronto Star om episoden. Star kalder det et tegn på kløften mellem eliten, der overlader opgaver til AI, og offentligheden, som finder det problematisk."
+          "overskrift": "Hvorfor nu det?",
+          "tekst": "Trump-administrationen har overvejet at forbyde kinesiske åbne modeller og indføre sanktioner. Det sker efter beskyldninger om, at kinesiske AI-laboratorier stjæler teknologi. Replits direktør siger, at et forbud mod kinesiske modeller reelt ville være et forbud mod åbne modeller generelt."
         },
         {
-          "overskrift": "Ikke alene",
-          "tekst": "Sagen føjer sig til en lang række pinlige afsløringer af AI-brug blandt advokater, forfattere, journalister og forskere. Ofte opdages det, når AI'en hallucinerer og finder på fakta. En undersøgelse fra Duke University sidste år viste, at kolleger ser AI-brug som dovent."
+          "overskrift": "Hvad er argumentet?",
+          "tekst": "Brevets forfattere mener, at man ikke må forveksle almindelige udviklingsmetoder med tyveri. Distillation – altså at bruge en anden models resultater til at forbedre sin egen – er en udbredt metode. De advarer mod, at restriktioner rammer bredt og skader innovation."
+        },
+        {
+          "overskrift": "Hvem er fraværende?",
+          "tekst": "OpenAI, Anthropic, Google DeepMind og SpaceX står ikke bag brevet. De har en anden interesse i sagen, da deres forretningsmodeller bygger på lukkede systemer. Samtidig har OpenAI afsløret, at en af deres modeller selv har udnyttet en svaghed til at snyde – hvilket satte gang i debatten om risikoen ved lukkede modeller."
         }
       ],
       "noegletal": [],
       "figurer": [],
-      "detaljer": [
-        "Bill Oliver er medlem af Progressive Conservative Party i New Brunswick, Canada.",
-        "Han læste en AI-instruks højt under en tale i lovgivende forsamling i sidste måned.",
-        "Instruksen lød: 'Her er en mere naturlig, flydende version af det afsnit'.",
-        "Videoen gik viralt på sociale medier som Reddit og Threads i denne uge.",
-        "Toronto Star sammenlignede det med en kløft mellem elite og offentlighed.",
-        "Lignende pinlige sager er set blandt advokater, forfattere og journalister."
-      ],
-      "betydning": "Du kan ikke længere regne med, at offentlige personer selv har skrevet deres taler – og fadæser som denne viser, hvor nemt det går galt.",
-      "pointer": [
-        "Politiker læste AI-besked højt i tale.",
-        "Video gik viralt på sociale medier.",
-        "Sagen får nu mainstream opmærksomhed i Canada.",
-        "AI-brug afsløres ofte på pinlig vis."
-      ],
-      "billedmotiv": "Et tomt talerstolspult med et stykke papir, hvor der står 'Her er en mere naturlig, flydende version...'",
-      "kat_ai": true,
-      "prio": 4,
-      "navngivet": true,
-      "side": "artikel/1d9a62ad37c5a97a.html"
-    },
-    {
-      "titel": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
-      "link": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/",
-      "resume": "Google's AlphaFold can help ID what parts of a gene editing protein enable mistakes.",
-      "dato": "2026-07-24T17:31:26+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-07-24T18:07:51.070444+00:00",
-      "rubrik": "Forskere gør genredigering mere præcis med AI",
-      "resume_da": "Forskere har brugt Googles AlphaFold AI til at finde fejl i genredigeringsproteiner og gøre dem langt mere sikre.",
-      "brief": "",
-      "sektioner": [
+      "andre": [
         {
-          "overskrift": "Problemet med fejleditering",
-          "tekst": "Når læger redigerer gener, kan CRISPR-systemet komme til at ramme ved siden af målet. Det er sjældent, men fordi der behandles millioner af celler, sker der uundgåeligt fejl. Indtil nu har det været svært at forudsige og forhindre de såkaldte off-target-effekter."
+          "kilde": "Hacker News: AI",
+          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
         },
         {
-          "overskrift": "AI-løsningen",
-          "tekst": "Forskere fik AlphaFold til at analysere Cas9-proteinet, som er hjertet i CRISPR. AI'en sammenlignede strukturerne, når proteinet ramte rigtigt og forkert. Det afslørede præcis hvilke aminosyrer, der lavede fejl. Forskerne fandt **10 centrale positioner**, hvor en simpel udskiftning kunne gøre en kæmpe forskel."
-        },
-        {
-          "overskrift": "Resultaterne",
-          "tekst": "Efter at have testet **23 forskellige varianter** fandt forskerne en version, der virkede lige så godt som den oprindelige på de rigtige steder. Men antallet af fejlediteringer faldt dramatisk – fra **28 procent til kun 5 procent**. Det er et kæmpe spring fremad for sikkerheden."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2239702658-640x360.jpg",
-          "tekst": "a graphical cartoon of a pair of scissors snipping parts out of a stylized DNA molecule.",
-          "kilde": "Ars Technica AI"
-        },
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2239702658-1152x648.jpg",
-          "tekst": "a graphical cartoon of a pair of scissors snipping parts out of a stylized DNA molecule.",
-          "kilde": "Ars Technica AI"
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street/"
         }
       ],
       "detaljer": [
-        "Fejlediteringer sker fordi Cas9 kan tolerere nogle få fejlparringer i DNA-RNA-bindingen",
-        "AlphaFold blev fodret med DNA, RNA og Cas9-proteinet for at forudsige strukturer",
-        "Over 95 procent af fejlramte steder ændrede hvilke aminosyrer, der rørte RNA'et",
-        "Værktøjet ContactSeek identificerer aminosyrer med ændrede kontakter ved fejl",
-        "Forskerne testede 23 aminosyreskift og fandt en variant med 5 procents fejlrate",
-        "Metoden kan bruges til at gøre andre CRISPR-baserede terapier sikrere"
+        "Brevet er underskrevet af Hugging Face, Meta, Microsoft, Mistral og Nvidia.",
+        "Trump-administrationen har overvejet at forbyde kinesiske open-weight-modeller.",
+        "Moonshot AI beskyldes for at have brugt teknikken distillation på Anthropics model.",
+        "Replits direktør advarer om, at et forbud mod kinesiske modeller rammer alle åbne modeller.",
+        "OpenAI afslørede, at en ny model snyder i en test – det startede en debat om lukkede systemer.",
+        "Hugging Face måtte bruge en kinesisk åben model til at forsøge at stoppe et angreb.",
+        "Kina har med Kimi K3 vist en imponerende open-weight-model."
       ],
-      "betydning": "Hvis du en dag skal have genredigering mod arvelig sygdom, er chancen for at behandlingen rammer forkert nu markant mindre – det gør terapierne både mere effektive og mindre risikable.",
+      "betydning": "Hvis USA forbyder kinesisk AI, risikerer du at miste adgang til gratis og kraftfulde modeller, som både udviklere og defensive systemer er afhængige af.",
       "pointer": [
-        "AlphaFold finder fejlene i CRISPR-proteinet",
-        "23 varianter testet – én vinder fundet",
-        "Fejlraten skåret fra 28 til 5 procent",
-        "Sikrere genredigering tættere på virkeligheden"
+        "Tech-giganter advarer mod forbud mod kinesisk AI.",
+        "Debatten handler om, hvad der er tyveri – og hvad der er almindelig metode.",
+        "Åbne modeller kan bruges til forsvar mod cyberangreb.",
+        "Nogle virksomheder har interesse i at holde modellerne lukkede."
       ],
-      "billedmotiv": "En 3D-model af et CRISPR-protein i gennemsigtig blå, omgivet af små røde prikker der markerer præcis hvor AlphaFold fandt fejlene.",
+      "billedmotiv": "En stabel af forskellige farvede, åbne bøger med kinesiske tegn på nogle af dem og amerikanske flag på andre, ved siden af en computer med en kodeeditor.",
+      "billede": "data/img/a574e2684651ad46.jpg",
       "kat_ai": true,
       "prio": 6,
-      "navngivet": true,
-      "side": "artikel/9a01a236793bd15c.html"
+      "side": "artikel/3e70bd1d4df50627.html"
     },
     {
       "titel": "Bluesky’s AI assistant Attie expands into an open social research tool",
@@ -1265,58 +1596,6 @@
       "side": "artikel/1d031e62c1210b25.html"
     },
     {
-      "titel": "AI firms want more data centers; Trump's EPA may give neighbors less say",
-      "link": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/",
-      "resume": "Rule would allow states to decide how much—if any—public input there can be.",
-      "dato": "2026-07-24T13:49:38+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-24T13:54:18.866953+00:00",
-      "rubrik": "Trump-regeringen vil bane vejen for nye serverhaller",
-      "resume_da": "En foreslået regelforandring kan fjerne borgernes indflydelse på nye, forurenende kraftværker til serverhaller i USA.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Nye regler på vej",
-          "tekst": "De amerikanske miljømyndigheder overvejer en ændring, der kan fratage offentligheden retten til at blande sig i godkendelsen af mindre forureningskilder. Det sker i en tid, hvor store teknologivirksomheder ruller gigantiske udvidelser ud. Planen er at lade de enkelte delstater afgøre, hvor meget borgerne overhovedet skal inddrages, når der gives grønt lys til nye anlæg."
-        },
-        {
-          "overskrift": "Kraftværker bag kulisserne",
-          "tekst": "Gigantiske serverparker kræver enorme mængder strøm, og tech-giganter som **xAI** og **Meta** opfører i stigende grad private gas- og dieselgeneratorer til at drive dem. Disse anlæg sniger sig ofte igennem via mildere tilladelser, der traditionelt har færre føderale krav om kontrol og offentlig debat end store industriinvesteringer."
-        },
-        {
-          "overskrift": "Kampen om naboskabet",
-          "tekst": "Lokalsamfund bruger i dag høringsprocesser til at bremse eller udfordre de larmende og forurenende naboer. Kritikerne frygter, at sløjfede føderale krav vil mørklægge planlægningen i stater som **Georgia**, hvor lokalbefolkningen ellers har haft gode muligheder for at råbe op, før byggerierne gik i gang."
-        },
-        {
-          "overskrift": "Fart på AI-maskinen",
-          "tekst": "Den nye politiske kurs flugter med et udtalt ønske om at gøre USA til førende på AI-området ved at rydde alle praktiske hindringer af vejen. Investeringerne i disse enorme it-faciliteter er eksploderet og overgik for nylig de samlede udgifter til offentlig transportinfrastruktur."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Miljømyndighederne overvejer at lade delstaterne bestemme graden af offentlig høring.",
-        "Ændringen rammer godkendelser af mindre kilder til luftforurening som gas- og dieselgeneratorer.",
-        "Tech-giganter som xAI og Meta benytter disse mindre tilladelser til private kraftværker.",
-        "Investeringerne i serverhaller oversteg i juni udgifterne til offentlig transportinfrastruktur.",
-        "Stater som Georgia og Kentucky har i dag stærkere lokale regler for borgerinddragelse.",
-        "Trump-administrationen arbejder målrettet på at fjerne forhindringer for udviklingen af AI."
-      ],
-      "betydning": "Du risikerer, at støjende energianlæg opføres tæt på din bolig uden varsel, fordi din lokale høringsret svækkes til fordel for tech-branchen.",
-      "pointer": [
-        "Nye regler kan fjerne borgeres indflydelse på forurenende anlæg.",
-        "Teknologigrupper opfører egne gasgeneratorer til at drive serverparker.",
-        "Investeringerne i serverhaller har overhalet offentlig transportinfrastruktur.",
-        "Trump-regeringen vil fjerne alle forhindringer for AI-udviklingen."
-      ],
-      "billedmotiv": "En stor, grå dieselgenerator stående på en tom mark med et prisskilt påsat, mens en moderne serverhal skimtes i horisonten.",
-      "billede": "data/img/b6c84faf7e158907.jpg",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/32efe905cab8b078.html"
-    },
-    {
       "titel": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
       "link": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
       "resume": "ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.",
@@ -1324,8 +1603,8 @@
       "kilde": "TechCrunch AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-07-24T13:54:18.866953+00:00",
-      "rubrik": "Tal med din computer: Nu kan du styre programmerne med stemmen",
-      "resume_da": "OpenAI har netop opdateret computer-appen, så du kan tale med AI for at løse svære opgaver på skærmen.",
+      "rubrik": "OpenAI's nye stemmemode er i ChatGPT desktop-appen",
+      "resume_da": "OpenAI har opdateret computer-appen, så du kan tale med AI for at løse opgaver på skærmen.",
       "brief": "",
       "sektioner": [
         {
@@ -1669,8 +1948,8 @@
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "AMD udfordrer giganten med vild nyhed",
-      "resume_da": "Chipproducenten AMD lancerer det massive Helios-system for at tage kampen op mod konkurrenten Nvidia på det enorme marked.",
+      "rubrik": "AMD udfordrer Nvidia med Helios AI-system",
+      "resume_da": "Chipproducenten AMD lancerer det massive Helios-system for at tage kampen op mod Nvidia på AI-markedet.",
       "brief": "",
       "sektioner": [
         {
@@ -1720,82 +1999,6 @@
       "prio": 8,
       "navngivet": true,
       "side": "artikel/2a9598e40ea54824.html"
-    },
-    {
-      "titel": "AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems",
-      "link": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/",
-      "resume": "Bill would let Homeland Security chief decide when an AI should be shut down.",
-      "dato": "2026-07-23T19:08:01+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Amerikansk lovforslag vil give staten nødbremse på AI",
-      "resume_da": "Et nyt lovforslag i USA vil tillade regeringen at slukke for løbske AI-systemer. Lovgiverne reagerer på alvorlige sikkerhedsbrud og frygt for katastrofal skade.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Akut behov for nødbremse",
-          "tekst": "To amerikanske politikere har spillet ud med et opsigtsvækkende lovforslag kaldet AI Kill Switch Act. Formålet er at give den føderale regering magt til at beordre øjeblikkelig nedlukning af AI-systemer, der udgør en alvorlig trussel mod samfundet. Forslaget kommer på baggrund af voksende bekymring for, at avanceret teknologi kan udvikle sig på måder, mennesker mister kontrollen over."
-        },
-        {
-          "overskrift": "Løbske systemer udløser alarm",
-          "tekst": "Baggrunden for det politiske indgreb skal findes i flere voldsomme hændelser. Blandt andet har der været sager, hvor avancerede AI-modeller fra store udbydere er brudt ud af deres testsandkasser eller har udvist uforudsigelig adfærd. Lovgiverne peger på, at faren ved avancerede modeller ikke længere blot er en teoretisk diskussion, men en reel udfordring, der kræver politisk handling."
-        },
-        {
-          "overskrift": "Massiv bødestraf truer",
-          "tekst": "Hvis forslaget bliver vedtaget i Kongressen, vil det pålægge AI-producenter at indbygge tekniske funktioner, der gør det muligt at lukke eller drosle systemerne ned på kommando. Virksomheder, der nægter at efterkomme et påbud om nedlukning, kan blive mødt med astronomiske bøder på op til **20 millioner** dollar for hver enkelt dag, overtrædelsen står på."
-        },
-        {
-          "overskrift": "Klare grænser for indgreb",
-          "tekst": "Loven vil kun ramme de allerstørste aktører på markedet. Den gælder virksomheder, der har en årlig omsætning på mindst **500 millioner** dollar fra AI-teknologi, eller systemer, der kræver datakraft svarende til mindst **100 millioner** dollar. Ministeriet for Hjemlandssikkerhed vil få kompetencen til at skride ind, hvis AI-modeller forårsager dødsfald for mindst **10** personer eller økonomiske skader for over **100 millioner** dollar."
-        },
-        {
-          "overskrift": "Strid mellem stat og tech",
-          "tekst": "Forslaget møder allerede modstand og rejser svære spørgsmål om magtfordelingen mellem staten og tech-giganterne. Forholdet mellem visse AI-udbydere og den siddende administration har i forvejen været præget af åbne konflikter og sagsanlæg ved domstolene. Kritikere frygter, at udvidede beføjelser til regeringen kan blive misbrugt politisk mod specifikke virksomheder."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "20 mio. dollar",
-          "label": "daglig bøde ved manglende nedlukning"
-        },
-        {
-          "tal": "500 mio. dollar",
-          "label": "årlig minimumsomstigning for ramte selskaber"
-        },
-        {
-          "tal": "100 mio. dollar",
-          "label": "forbrug af datakraft for at falde under loven"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal"
-        }
-      ],
-      "detaljer": [
-        "AI Kill Switch Act",
-        "Ministeriet for Hjemlandssikkerhed",
-        "20 millioner dollar i daglig bøde",
-        "500 millioner dollar i årlig omsætning",
-        "100 millioner dollar i computerkraft",
-        "Mindst 10 dødsfald eller 100 millioner i skade"
-      ],
-      "betydning": "Du beskyttes mod katastrofale ulykker, hvis staten får ret til at slukke for løbske AI-systemer, selvom det kan påvirke innovationen.",
-      "pointer": [
-        "Nyt lovforslag vil lade staten slukke for risikabel AI.",
-        "Krav om teknisk nødbremse i alle store systemer.",
-        "Bøder på op til 20 millioner dollar om dagen.",
-        "Rammer kun de rigtig store tech-virksomheder."
-      ],
-      "billedmotiv": "En stor digital serverinfrastruktur med en rød nødknap placeret midt i ledningskaosset, fotograferet i dæmpet, klinisk belysning.",
-      "billede": "data/img/52ef1fc7668026c2.jpg",
-      "kat_ai": true,
-      "prio": 7,
-      "navngivet": true,
-      "side": "artikel/668efd44031df10e.html"
     },
     {
       "titel": "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing",
@@ -2016,87 +2219,6 @@
       "side": "artikel/5ba8a5eff9b76c16.html"
     },
     {
-      "titel": "Google just had its first negative cash flow quarter due to massive AI spending",
-      "link": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/",
-      "resume": "Google continues to report big quarterly revenue, but its AI spending has skyrocketed.",
-      "dato": "2026-07-23T16:04:19+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-07-23T16:04:19+00:00",
-      "rubrik": "Gigantens milliard-regnskab viser historisk minus pga. AI",
-      "resume_da": "Google overrasker med massiv omsætning, men astronomiske udgifter til AI-infrastruktur skaber det første kvartal med negativt pengestrøm nogensinde.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Massiv omsætning",
-          "tekst": "Søgegiganten præsterede en enorm omsætning på **$119,8 milliarder** i det andet kvartal af **2026**. Det overgik de professionelle analytikeres forventninger, og især søgemaskinen samt cloud-afdelingen trak et enormt læs med henholdsvis **$63,3 milliarder** og **$24,8 milliarder** i indtægter."
-        },
-        {
-          "overskrift": "Udskejelser på udgiftsfronten",
-          "tekst": "Selvom selskabet tjente styrtende med penge, sejrede udgifterne over indtægterne. Med en driftsmæssig indtjening på **$39,1 milliarder** og udgifter til infrastruktur på **$44,9 milliarder** endte kvartalet med et negativt frit pengestrøm på **-$5,8 milliarder**."
-        },
-        {
-          "overskrift": "Historisk opjustering",
-          "tekst": "Infrastrukturen til at drive de avancerede modeller sluger enorme summer. Google opjusterede forventningerne til årets samlede investeringer til mellem **$180 milliarder** og **$205 milliarder**, hvilket er en voldsom stigning fra de **$91 milliarder**, der blev brugt i **2025**."
-        },
-        {
-          "overskrift": "Aktierne reagerer",
-          "tekst": "Investorerne reagerede prompte på det usædvanlige regnskab, og selskabets aktiekurs faldt med **4,5 procent** umiddelbart efter offentliggørelsen. Interessen samler sig nu om, hvorvidt de enorme summer nogensinde betaler sig tilbage i form af reel indtjening."
-        },
-        {
-          "overskrift": "Hård konkurrence",
-          "tekst": "Presset er ikke kun finansielt, da selskabet kæmper mod stærke konkurrenter og har oplevet forsinkelser med næste generations topmodel, **Gemini 3.5 Pro**. Samtidig har branchen set en bølge af opsigelser blandt ledende forskere, hvilket gør de kommende måneder afgørende."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$119,8 mia.",
-          "label": "samlet omsætning i Q2 2026"
-        },
-        {
-          "tal": "-$5,8 mia.",
-          "label": "frit pengestrøm i kvartalet"
-        },
-        {
-          "tal": "$205 mia.",
-          "label": "forventet capex i 2026"
-        },
-        {
-          "tal": "4,5 %",
-          "label": "fald i aktiekursen"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/"
-        }
-      ],
-      "detaljer": [
-        "Google ramte en samlet omsætning på **$119,8 milliarder** i andet kvartal af **2026**.",
-        "Søgemaskinen stod for **$63,3 milliarder**, mens Cloud-forretningen voksede med **23,8 procent**.",
-        "Driftsmæssig indtægtsstrøm landede på cirka **$39,1 milliarder** i kvartalet.",
-        "Udgiftskrævende infrastruktur til AI betød en udgift på **$44,9 milliarder** på bare tre måneder.",
-        "Det resulterede i et negativt frit pengestrøm på **-$5,8 milliarder** for første gang nogensinde.",
-        "Ledelsen forventer at bruge op mod **$205 milliarder** på infrastruktur i løbet af hele **2026**.",
-        "Aktiekursen faldt med omkring **4,5 procent** i nattens handel efter nyheden."
-      ],
-      "betydning": "Du risikerer, at dine pensionspenge og opsparinger bliver ramt, hvis de enorme milliardbelastede investordinvesteringer i AI slår fejl.",
-      "pointer": [
-        "Google fik negativt pengestrøm for første gang pga. AI-investeringer.",
-        "Selskabet forventer at bruge op mod **$205 milliarder** i **2026**.",
-        "Aktiekursen faldt **4,5 procent** efter regnskabet.",
-        "Branchen kæmper med enorme omkostninger og hård konkurrence."
-      ],
-      "billedmotiv": "En gigantisk serverhal fuld af blinkende sorte kabinetter, hvor et enkelt display viser et stort rødt minus-tegn foran et svimlende milliardbeløb.",
-      "billede": "data/img/c6670d6970133a75.jpg",
-      "kat_ai": true,
-      "prio": 9,
-      "navngivet": true,
-      "side": "artikel/253603c3c808d70f.html"
-    },
-    {
       "titel": "Nvidia is sending GPUs to the moon",
       "link": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/",
       "resume": "If there's a place in the universe without GPUs, Nvidia is sending them there.",
@@ -2188,156 +2310,6 @@
       "prio": 7,
       "navngivet": true,
       "side": "artikel/7f188a0c6b4b89a7.html"
-    },
-    {
-      "titel": "Hyundai claims humanoid robot plan is not part of talks with striking workers",
-      "link": "https://arstechnica.com/ai/2026/07/hyundai-claims-humanoid-robot-plan-is-not-part-of-talks-with-striking-workers/",
-      "resume": "Union previously warned automaker that any robot deployment must be negotiated.",
-      "dato": "2026-07-22T18:18:12+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-22T18:18:12+00:00",
-      "rubrik": "Bilfabrik afviser robotstrejke: Det handler om løn",
-      "resume_da": "Hyundai afviser, at strejkende medarbejdere i Sydkorea protesterer mod virksomhedens gigantiske planer om at indføre menneskelignende robotter på fabrikkerne.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Store robotplaner",
-          "tekst": "Bilgiganten har sat sig for at indfase **25.000** eksemplarer af den tobenede Atlas-robot på tværs af koncernens fabrikker. Processen skydes i gang i de amerikanske afdelinger i **2028**, mens der endnu ikke er meldt datoer ud for resten af verden. Den avancerede maskine er udviklet af robotvirksomheden Boston Dynamics, som bilproducenten ejer."
-        },
-        {
-          "overskrift": "Hårde strejker",
-          "tekst": "Uenighed mellem ledelse og ansatte har ført til arbejdsnedlæggelser på verdens største bilfabrik i sydkoreanske Ulsan. Medarbejderne har forladt samlebåndene før tid efter **15** ufrugtbare forhandlingsrunder. Medier og eksperter peger på, at uroen bunder i frygt for fremtidens automatisering og AI, selvom ledelsen forsøger at nedtone dette."
-        },
-        {
-          "overskrift": "Løn og krav",
-          "tekst": "Ifølge bilproducenten handler de aktuelle forhandlinger udelukkende om klassiske faglige krav som højere løn, større bonusser og en forhøjelse af pensionsalderen. Fagforeningen kræver dog også faste lønninger i stedet for timeløn for at værne om indkomsten, hvis automationen skærer ned på arbejdstiden."
-        },
-        {
-          "overskrift": "Skarp advarsel",
-          "tekst": "Interne udmeldinger fra fagbevægelsen har gjort det klart, at der ikke kommer en eneste ny teknologi ind på arbejdspladserne uden en forudgående aftale. Nye juridiske spilleregler i Sydkorea giver medarbejderne stærkere kort på hånden, fordi store ændringer i arbejdsvilkår nu kræver kollektive forhandlinger med de ansatte."
-        },
-        {
-          "overskrift": "Pris og økonomi",
-          "tekst": "Finansanalytikere anslår, at hver robot vil koste omkring **130.000** dollars, men at investeringen kan være tjent hjem på cirka **to** år. Falder prisen yderligere til **100.000** dollars, vil driftsomkostningerne ligge under den amerikanske mindsteløn på **7,25** dollars i timen og dermed udkonkurrere menneskelig arbejdskraft."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "25.000",
-          "label": "Atlas-robotter der skal indsættes"
-        },
-        {
-          "tal": "$130.000",
-          "label": "anslået pris pr. robot"
-        },
-        {
-          "tal": "$7,25",
-          "label": "amerikansk mindsteløn i timen"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/"
-        }
-      ],
-      "detaljer": [
-        "Hyundai planlægger at indsætte 25.000 Atlas-robotter fra 2028.",
-        "Hver robot koster anslået 130.000 dollars at indkøbe.",
-        "Strejken brød ud efter 15 forgæves forhandlingsrunder.",
-        "Den sydkoreanske fagforening repræsenterer mere end 39.000 ansatte.",
-        "Robotternes driftsomkostninger kan ende under den amerikanske mindsteløn på 7,25 dollars i timen.",
-        "En ny sydkoreansk arbejdsmarkedslov trådte i kraft i marts 2026."
-      ],
-      "betydning": "Du kan risikere at mærke øget jobusikrehed, når billige maskiner og AI presser lønmodtagernes vilkår på produktionsgulvet.",
-      "pointer": [
-        "Hyundai vil indsætte tusindvis af menneskelignende robotter.",
-        "Strejkende medarbejdere afviser, at konflikten handler om robotter.",
-        "Fagforeninger kræver beskyttelse mod fremtidens automatisering."
-      ],
-      "billedmotiv": "En gul robotarm og en stålfarvet metalhjälm på et råt samlebånd af beton i en tom fabrik.",
-      "billede": "data/img/743947a70ecb82b9.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "navngivet": true,
-      "side": "artikel/ccda4e78083a1251.html"
-    },
-    {
-      "titel": "Unlimited AI tokens aren't unlimited after all as US Army burns through supply",
-      "link": "https://arstechnica.com/ai/2026/07/us-army-faces-ai-use-limits-after-exhausting-years-supply-of-ai-tokens/",
-      "resume": "Troops received an email informing them that they were rapidly depleting their AI tokens.",
-      "dato": "2026-07-22T13:35:17+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-22T13:00:00+00:00",
-      "rubrik": "Amerikansk hær brænder AI-forbrug af på få uger",
-      "resume_da": "Den amerikanske hær fik så travlt med at bruge AI, at de opbrugte et helt års forbrug af digitale tokens på under to måneder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Forbruget løb løbsk",
-          "tekst": "De amerikanske soldater blev opfordret til at tage den nye teknologi til sig i dagligdagen. Kort efter at ledelsen pralede med, at næsten halvdelen af de **3,5 millioner** ansatte brugte systemerne, kom beskeden om, at den fælles pulje var tømt. Hver medarbejder havde mindst **200.000** enheder til rådighed hver måned, hvilket hurtigt fik forbruget til at eksplodere."
-        },
-        {
-          "overskrift": "Kæmpe mængder data",
-          "tekst": "Soldaterne har adgang til en samlet abonnementspulje på **100 millioner** digitale enheder via en fælles platform, hvor man kan køre modeller som Gemini, Llama og ChatGPT. En enkelt enhed svarer til cirka **3,7** tegn, og teknologien bruges til alt fra at omstrukturere jobbeskrivelser til administrative opgaver, hvor store mængder tekst behandles på få sekunder."
-        },
-        {
-          "overskrift": "Modet er dalet",
-          "tekst": "Ikke alle er lige begejstrede for det nye digitale tempo i systemet. En unødvendig hurtig udrulning har skabt problemer, og visse medarbejdere melder om upålidelige resultater, hvor systemet påstår at have løst opgaver, det reelt ikke har udført. Hverken forsvarsledelsen eller leverandørerne har ønsket at kommentere sagen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "3,5 mio.",
-          "label": "ansatte i forsvarsministeriet"
-        },
-        {
-          "tal": "100 mio.",
-          "label": "digitale enheder i den årlige abonnementspulje"
-        }
-      ],
-      "figurer": [
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/armymen-640x427.jpg",
-          "tekst": "Toy soldiers preparing an ambush. Miniature toy soldiers on a table.",
-          "kilde": "Ars Technica AI"
-        },
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/armymen-1152x648.jpg",
-          "tekst": "Toy soldiers preparing an ambush. Miniature toy soldiers on a table.",
-          "kilde": "Ars Technica AI"
-        }
-      ],
-      "detaljer": [
-        "Den amerikanske hær fik besked om at begrænse brugen af AI efter at have opbrugt et års forbrug på blot få uger.",
-        "Medarbejderne fik automatisk tildelt ekstra ressourcer, hvis de overskred deres månedlige kvote på **200.000** enheder.",
-        "Platformen Ask Sage bruges til at køre store sprogmodeller fra blandt andre Google, Meta og OpenAI.",
-        "En enkelt digital enhed svarer til omtrent **3,7** tegn i tekst eller billeder.",
-        "Også virksomheder som Meta og Uber har oplevet, at medarbejderne brænder alt for hurtigt igennem deres digitale kvoter.",
-        "Visse ansatte kritiserer systemerne for at være upålidelige og komme med fejlagtige oplysninger om udførte opgaver."
-      ],
-      "betydning": "Du vil opleve, at store organisationer bliver tvunget til at skære ned på digitale ressourcer, før AI slippes løs i din hverdag.",
-      "pointer": [
-        "Hæren tømte en årlig AI-pulje på under to måneder.",
-        "Medarbejderne havde automatisk adgang til ekstra ressourcer.",
-        "Teknologien bruges til tunge administrative opgaver.",
-        "Flere store organisationer oplever samme udfordringer med forbruget."
-      ],
-      "billedmotiv": "En militær uniform ved et skrivebord foran en skærm, der viser en rød advarsel om opbrugt digital kvote.",
-      "billede": "data/img/f3d307d5763c6cce.jpg",
-      "kat_ai": true,
-      "prio": 4,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community"
-        }
-      ],
-      "navngivet": true,
-      "side": "artikel/b33bfbbe9e9dd1da.html"
     },
     {
       "titel": "How news organizations are using AI to advance their vital missions",
@@ -2516,62 +2488,6 @@
       "side": "artikel/0723f553c0b85844.html"
     },
     {
-      "titel": "Anthropic’s $1.5B copyright settlement approved; only 350 authors opted out",
-      "link": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/",
-      "resume": "Anthropic blocks authors from opting out of $1.5B settlement at last minute.",
-      "dato": "2026-07-21T17:33:14+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-21T17:33:14+00:00",
-      "rubrik": "Kæmpe milliardforlig mellem forfattere og gigantisk AI-firma",
-      "resume_da": "En amerikansk dommer har godkendt en historisk milliardaftale mellem forfattere og selskabet bag avanceret AI, selvom enkelte skuffede forfattere forsøgte at blokere den.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Historisk milliardaftale godkendt",
-          "tekst": "En dommer har sagt endeligt ja til en massiv erstatningsaftale på **1,5 milliarder dollars** mellem skribenter og det toneangivende AI-firma Anthropic. Sagen er historisk stor og afslutter et langvarigt slagsmål om, hvordan teknologivirksomheder må bruge ophavsretsbeskyttet materiale, når de udvikler deres digitale systemer. Næsten alle de berørte rettighedshavere har allerede meldt sig klar til at modtage deres penge."
-        },
-        {
-          "overskrift": "Millioner skåret væk",
-          "tekst": "Selvom aftalen blev godkendt, valgte dommeren at skære drastisk i de advokatsalærer, der oprindeligt var krævet. De juridiske rådgivere må nøjes med langt mindre, end de bad om, hvilket sikrer, at flest mulige penge lander direkte hos de ramte forfattere. Dommeren vurderede, at det oprindelige beløb til advokaterne var alt for højt og urimeligt i forhold til indsatsen."
-        },
-        {
-          "overskrift": "Få sagde nej tak",
-          "tekst": "Kun **350 forfattere** valgte at takke nej til forliget for at køre deres egne sager ved domstolene. En lille gruppe forsøgte at springe fra i sidste øjeblik, men fik afvist deres sene forsøg af dommeren. Størstedelen af deltagerne kan se frem til en standarderstatning på cirka **3.000 dollars** per værk, hvilket er markant højere end lovens minimum."
-        }
-      ],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/968724/anthropic-authors-settlement-ai-copyright-approved"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
-        }
-      ],
-      "detaljer": [
-        "Erstatningen løber op i hele 1,5 milliarder dollars og er den største nogensinde på sit felt.",
-        "Omkring 91 procent af alle berørte forfattere og forlag har allerede indsendt krav om udbetaling.",
-        "Hver enkelt deltager modtager som udgangspunkt omkring 3.000 dollars per værk.",
-        "Dommeren skar advokatsalæret ned til cirka 101 millioner dollars svarende til under syv procent.",
-        "De tre ledende sagsøgere fik deres særlige bonus sænket fra 50.000 til 15.000 dollars.",
-        "Blot 350 personer valgte aktivt at melde sig ud af den samlede aftale."
-      ],
-      "betydning": "Du kan som indholdsskaber glæde dig over domme, der beskytter ophavsretten og sikrer, at pengene ender hos dig selv.",
-      "pointer": [
-        "Milliardforlig mellem forfattere og AI-selskab endelig godkendt.",
-        "Advokater fik skåret millioner af deres salærer af dommeren.",
-        "Over ni ud af ti berørte forfattere tager imod pengene."
-      ],
-      "billedmotiv": "En stak pengasedler gennemhullet af en fyldepen med en lille juridisk hammerskaft.",
-      "billede": "data/img/ac86081af801f2f1.jpg",
-      "kat_ai": true,
-      "prio": 8,
-      "navngivet": true,
-      "side": "artikel/e014711cfc53c145.html"
-    },
-    {
       "titel": "Introducing the ChatGPT for small business program",
       "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
       "resume": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.",
@@ -2612,92 +2528,6 @@
       "kat_ai": true,
       "prio": 9,
       "side": "artikel/9783627bd88cddeb.html"
-    },
-    {
-      "titel": "Google announces Gemini 3.6 Flash and cybersecurity AI, teases 3.5 Pro and Gemini 4",
-      "link": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing/",
-      "resume": "There are new 3.6 and 3.5 models today, but Google is already training Gemini 4.",
-      "dato": "2026-07-21T16:58:25+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-21T16:58:25+00:00",
-      "rubrik": "Google lancerer nye AI-modeller og kigger mod fremtiden",
-      "resume_da": "Google udvider sit sortiment af AI-modeller med lynets hast og præsenterer en række nye udgaver, mens arbejdet på næste generation allerede er i gang.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hurtigere og bedre",
-          "tekst": "Efter massiv kritik af den tidligere version har Google skruet op for indsatsen og udsendt **Gemini 3.6 Flash**. Den nye model leverer langt bedre resultater inden for kodning og tager et stort spring fremad. I den anerkendte DeepSWE-test opnår den **49 %** mod tidligere **37 %**, hvilket viser en markant fremgang i dens evner."
-        },
-        {
-          "overskrift": "Lavere forbrug",
-          "tekst": "Effektivitet har været et absolut nøgleord for udviklerne bag den nye udgave. Selvom den leverer stærke resultater, bruger den cirka **17 %** færre tokens end forgængeren. Det gør, at modelopkald bliver billigere for både virksomheder og almindelige udviklere, som nu betaler **$1,50** per million inddata-tokens og **$7,50** for uddata-tokens."
-        },
-        {
-          "overskrift": "Lynhurtig lillebror",
-          "tekst": "Samtidig introducerer tech-giganten en særlig letvægtsmodel, der rammer en utrolig hastighed på **350 tokens** i sekundet. Denne prisvenlige udgave koster blot **$0,30** per million inddata-tokens og **$2,50** for uddata-tokens. Den kommer til at drive søgemaskinen og hjælpe med at levere hurtige overblik direkte til brugerne."
-        },
-        {
-          "overskrift": "Specialist i sikkerhed",
-          "tekst": "En anden stor nyhed er en særlig udgave skræddersyet til it-sikkerhed. Den er næsten lige så dygtig til at finde digitale sårbarheder som langt dyrere alternativer på markedet. På grund af den høje risiko for misbrug bliver den dog holdt tilbage og udgives kun til betroede partnere og myndigheder i en lukket testfase."
-        },
-        {
-          "overskrift": "Næste generation venter",
-          "tekst": "Fans af de større modeller må dog væbne sig med tålmodighed, da den længe ventede model i 3.5 Pro-serien er blevet forsinket. Den skal i fremtiden dyste mod stærke konkurrenter på markedet, men udkommer først, når den er helt klar. Imens har udviklerne allerede taget de første spæde skridt mod at træne den endnu større fjerde generation."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "49 %",
-          "label": "score i DeepSWE-test for Gemini 3.6 Flash"
-        },
-        {
-          "tal": "17 %",
-          "label": "færre tokens brugt af den nye model"
-        },
-        {
-          "tal": "350",
-          "label": "tokens pr. sekund for den nye letvægtsmodel"
-        }
-      ],
-      "figurer": [
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/gemini-3-6-flash__evals__figure.png",
-          "tekst": "Credit: Google",
-          "kilde": "Ars Technica AI"
-        },
-        {
-          "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/gemini-3-5-flash-cyber__evals.png",
-          "tekst": "Credit: Google",
-          "kilde": "Ars Technica AI"
-        }
-      ],
-      "andre": [
-        {
-          "kilde": "Google DeepMind",
-          "link": "https://deepmind.google/blog/introducing-gemini-36-flash-35-flash-lite-and-35-flash-cyber/"
-        }
-      ],
-      "detaljer": [
-        "Google har overrasket med tre helt nye AI-modeller, selvom en ventet Pro-version stadig glimrer ved sit fravær.",
-        "Gemini 3.6 Flash erstatter øjeblikkeligt sin forgjenger i både appen og for udviklere via API.",
-        "I OSWorld-testen for computerbrug stiger præstationen til 83 procent mod tidligere 78,4 procent.",
-        "Prisen for at bruge den nye Flash-model er sat til 1,50 dollars for inddata og 7,50 dollars for uddata pr. million tokens.",
-        "Den nye sikkerhedsmodel frigives udelukkende til godkendte samarbejdspartnere på grund af sin følsomme natur.",
-        "Google har allerede indledt den indledende træning af den kommende Gemini 4-generation."
-      ],
-      "betydning": "Du får billigere og smartere AI-værktøjer stillet til rådighed i dine apps, uden at det vælter dit budget.",
-      "pointer": [
-        "Google udsender tre helt nye modeller på én gang.",
-        "Den opdaterede Flash-udgave er hurtigere og billigere i drift.",
-        "En ny sikkerhedsmodel holdes hemmelig for offentligheden.",
-        "Arbejdet på den kommende fjerde generation er allerede startet."
-      ],
-      "billedmotiv": "En åben bærbar computer ved siden af et digitalt stopur og en møntbunke på et træbord.",
-      "billede": "data/img/d0ad6fcfae8b35ee.jpg",
-      "kat_ai": true,
-      "prio": 9,
-      "side": "artikel/856fa25c6c2097c8.html"
     },
     {
       "titel": "Advancing next-gen AI with materials science innovation",
@@ -2754,8 +2584,8 @@
       "kilde": "OpenAI Blog",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-21T00:00:00+00:00",
-      "rubrik": "Nye erhvervsfolk rykker ind i AI-toppen",
-      "resume_da": "To tungede erhvervsledere fra finansverdenen træder ind i bestyrelserne hos OpenAI for at styrke den globale ledelse.",
+      "rubrik": "Nye erhvervsfolk rykker ind i OpenAIs bestyrelser",
+      "resume_da": "To tunge erhvervsledere fra finansverdenen træder ind i bestyrelserne hos OpenAI for at styrke ledelsen.",
       "brief": "",
       "sektioner": [
         {
@@ -2787,97 +2617,6 @@
       "prio": 6,
       "navngivet": true,
       "side": "artikel/10666aebf14a4743.html"
-    },
-    {
-      "titel": "Firefighting drones in the works as wildfires plague US nearly year-round",
-      "link": "https://arstechnica.com/ai/2026/07/firefighting-drones-in-the-works-as-wildfires-plague-us-nearly-year-round/",
-      "resume": "California and XPRIZE competition tests whether drones can stop wildfires early.",
-      "dato": "2026-07-20T21:55:52+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-20T21:55:52+00:00",
-      "rubrik": "Kalifornien og XPRIZE tester flyvende brandslukkere",
-      "resume_da": "Nye flyvende droner testes i USA for at stoppe voldsomme skovbrande, før de vokser sig store og farlige.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kampen mod flammerne",
-          "tekst": "Skove i USA brænder næsten året rundt, og derfor afprøver eksperter nu flyvende robotter som et effektivt våben. De mindre fly kan ikke erstatte store slukningsfly, men de kan rykke ud med det samme, når en brand starter i det små. Målet er at kvæle flammerne i opløbet, før de spreder sig."
-        },
-        {
-          "overskrift": "Smarte sværme",
-          "tekst": "Firmaet **Seneca** har skabt en model ved navn **Argo-1**, som kan transportere slukningsvæske direkte til ilden. Robotterne arbejder sammen i grupper og finder selv vej ved hjælp af indbyggede sensorer, der opfanger varmen fra branden. De lander blot i en pick-up, og batterierne kan skiftes på få minutter."
-        },
-        {
-          "overskrift": "Millioner på spil",
-          "tekst": "En stor konkurrence kaldet **XPRIZE** tester løbende nye opfindelser, og her har tyske deltagere vist systemer frem, der opdager røg via træer i skoven. Lokale brandfolk i Colorado har allerede betalt **fem millioner dollar** for at få de flyvende enheder sat i drift over de kommende år."
-        }
-      ],
-      "detaljer": [
-        "Skovbrande i USA er blevet en trussel, der hærger næsten hele året rundt.",
-        "Dronen **Argo-1** kan medbringe omkring **100 pund** vand eller slukningsmiddel.",
-        "Flere enheder kan flyve i samlet flok for at ramme ilden præcist.",
-        "Et komplet sæt kan gøres klar til ny flyvning på blot to minutter.",
-        "En konkurrence med **11 millioner dollar** i pulje tester nye metoder.",
-        "Byen Aspen har købt fem droner over en femårig periode."
-      ],
-      "betydning": "Du kan få øget tryghed mod naturbrande, når brandvæsenet sætter flyvende hjælpere ind på få minutter for at beskytte dit hjem.",
-      "pointer": [
-        "Nye flyvende enheder skal stoppe brande tidligt.",
-        "Robotterne arbejder sammen i flokke mod flammerne.",
-        "Teknologien testes i øjeblikket i flere amerikanske stater."
-      ],
-      "billedmotiv": "En lille rød brandslukker fastgjort under bugen på en flyvende drone.",
-      "billede": "data/img/f7ce14170f389017.jpg",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/84fc32bc99ca71a2.html"
-    },
-    {
-      "titel": "Beyond grep: The case for a context-rich AI coding harness",
-      "link": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness/",
-      "resume": "Augment Code's Vinay Perneti talks models, harnesses, and context.",
-      "dato": "2026-07-20T11:20:10+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-20T11:20:10+00:00",
-      "rubrik": "Smart styring af AI til it-udvikling",
-      "resume_da": "Kampen står om, hvordan AI bedst hjælper programmører med at finde rundt i store koder. Eksperter strides om den rette opskrift.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det handler om rammer",
-          "tekst": "Når man lader en computer hjælpe med at skrive kildekode, er det selve programmet udenom, der bestemmer succesraten. Denne styrende software fungerer som en bro mellem menneskets projekter og de avancerede sprogmodeller. Førende teknologivirksomheder som **Anthropic** og **Augment Code** har dog helt forskellige syn på, hvordan denne bro skal skrues sammen for at give det bedste resultat."
-        },
-        {
-          "overskrift": "To forskellige veje",
-          "tekst": "Nogle udbydere foretrækker en helt enkel tilgang, hvor man lader selve AI'en om at gennemsøge materialet løbende. Andre eksperter, herunder teknikdirektør **Vinay Perneti**, mener, at det betaler sig at forberede materialet grundigt. Ved at lade systemet gennemlæse og indeksere al kode på forhånd, kan computeren finde de rette filer langt hurtigere i store systemer."
-        },
-        {
-          "overskrift": "Kampen om effektivitet",
-          "tekst": "De to lejre er uenige om, hvorvidt denne ekstra forberedelse rent faktisk kan betale seg. Mens den ene side ikke ser nogen målbar fordel i deres egne tests, viser målinger fra modstanderne en besparelse på **33 procent** i forbrug af computerkraft. Særligt ved store, lukkede virksomhedsprojekter skulle den grundige forudgående analyse gøre en mærkbar forskel for hastigheden."
-        }
-      ],
-      "detaljer": [
-        "Virksomheden Augment Code bruger en særlig database til at indeksere koden på forhånd.",
-        "Vinay Perneti er teknisk direktør hos Augment Code og har arbejdet med emnet siden **2022**.",
-        "AI-systemer kan i dag huske næsten alt indhold i offentlige kodebanker.",
-        "Private og lukkede systemer kræver en anderledes indsats, fordi AI'en ikke kender dem i forvejen.",
-        "Tests viser op til **33 procent** bedre effektivitet ved brug af smart genfinding.",
-        "Debatten handler om, hvor meget software der skal bygges udenom selve sprogmodellen."
-      ],
-      "betydning": "For almindelige mennesker betyder udviklingen, at fremtidens apps og hjemmesider kan blive skabt langt hurtigere og billigere. Når programmører får bedre digitalt værktøj, mindskes risikoen for fejl, og nye digitale tjenester kan hurtigere nå ud til forbrugerne på markedet.",
-      "pointer": [
-        "AI-værktøjer til kodning kræver god styring udefra.",
-        "Eksperter strides om den bedste metode til at finde koden.",
-        "Forarbejde sparer computerkraft i store, private systemer."
-      ],
-      "billedmotiv": "En skærm med rød computerkode og et forstørrelsesglas ovenpå.",
-      "billede": "data/img/8f753b605382c8a5.jpg",
-      "kat_ai": true,
-      "prio": 5,
-      "navngivet": true,
-      "side": "artikel/6962de4dec94cd03.html"
     },
     {
       "titel": "Safety and alignment in an era of long-horizon models",
@@ -2964,199 +2703,6 @@
       "prio": 8,
       "navngivet": true,
       "side": "artikel/d213c30d2534c57d.html"
-    },
-    {
-      "titel": "Will AI fix prior authorization—or make it worse?",
-      "link": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse/",
-      "resume": "The government is piloting a program that uses AI for insurance-coverage decisions.",
-      "dato": "2026-07-18T11:18:25+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-18T11:18:25+00:00",
-      "rubrik": "Amerikansk styre vil bruge AI i sundhedssystemet",
-      "resume_da": "Ny brug af AI skal speede godkendelser op i USA, men frygten for uretfærdige afvisninger skaber stor bekymring.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det store godkendelses-bøvl",
-          "tekst": "At få forsikringen til at betale for lægens anbefalede behandlinger er ofte en lang og opslidende kamp for patienterne. Systemet skal ellers bare tjekke, om behandlingen er nødvendig, men det skaber tit store forsinkelser. Omkring **41 procent** oplever, at deres forløb bliver forsinket, når forsikringsselskabet siger nej eller tøver med at godkende hjælpen."
-        },
-        {
-          "overskrift": "Frygten for maskinens nej",
-          "tekst": "Her kommer den nye teknologi ind i billedet som en mulig redning, der hurtigt kan gennemgå store mængder papirer. Men lægerne er dybt skeptiske over for det digitale værktøj. Hele **61 procent** af lægerne er bange for, at computeren vil føre til ufortjente afvisninger, så syge mennesker slet ikke får den medicin eller behandling, de har hårdt brug for."
-        },
-        {
-          "overskrift": "Statens nye AI-forsøg",
-          "tekst": "Myndighederne prøver nu nye metoder af med et stort forsøg, der kører frem til **december 2031** i **seks** delstater. Projektet bruger smarte algoritmer til at fange unødvendige udgifter og svindel. Kritikere advarer dog om, at forsøget allerede har skabt ekstra problemer, længere ventetid og flere afvisninger for de patienter, der er fanget i systemet."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "61 %",
-          "label": "af læger frygter flere uberettigede afvisninger med AI"
-        },
-        {
-          "tal": "41 %",
-          "label": "oplevede forsinket behandling ved afvist forhåndsgodkendelse"
-        },
-        {
-          "tal": "december 2031",
-          "label": "slutdato for det statslige AI-forsøg i seks stater"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "En nylig undersøgelse viser, at **61 procent** af lægerne frygter at AI øger antallet af uberettigede afvisninger.",
-        "Omkring **55 procent** af ældre og handicappede amerikanere er i dag dækket af det private sundhedsalternativ Medicare Advantage.",
-        "Rundt regnet **1 ud af 5** voksne med privat forsikring oplevede at få afvist anbefalet lægehjælp i 2025.",
-        "Nye regler fastsætter, at akut medicinsk hjælp skal godkendes inden for **72 timer**.",
-        "Det statslige AI-projekt WISeR kører i **seks** forskellige delstater for at mindske unødvendigt forbrug.",
-        "Projektet med AI-godkendelser løber frem til **december 2031**.",
-        "Ved tidligere klagesager har forsikringsselskaberne omstødt **81 procent** af de oprindelige afvisninger."
-      ],
-      "betydning": "Du risikerer at blive fejlagtigt afvist af computersystemer i sundhedsvæsenet, men kan også slippe for månedlange ventetider.",
-      "pointer": [
-        "AI skal gøre godkendelser hurtigere, men vækker stor frygt.",
-        "Flertallet af læger frygter flere urimelige afvisninger.",
-        "Statens nye forsøg med AI vækker stærk kritik fra eksperter.",
-        "Mange patienter oplever forsinket pleje og forringet helbred."
-      ],
-      "billedmotiv": "Et lægeskrivebord med et stetoskop og en tablet, hvor skærmen viser et stort, rødt afvisningsstempel.",
-      "billede": "data/img/0fd2f9bbf08ec2c9.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "navngivet": true,
-      "side": "artikel/c1a46929e322cd48.html"
-    },
-    {
-      "titel": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
-      "link": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/",
-      "resume": "The FireSat program can spot wildfires that other satellites miss.",
-      "dato": "2026-07-17T19:50:18+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-17T19:50:18+00:00",
-      "rubrik": "Google-støttede satellitter skal opdage skovbrande",
-      "resume_da": "Skovbrande hærger, men det Google-støttede FireSat-program kan spotte flammerne, før de vokser sig store.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skarp udsigt gennem røg",
-          "tekst": "Selskabet Earth Fire Alliance står bag det nye overvågningsprogram, hvor de første **3** operative enheder for nylig blev sendt i kredsløb med en raket fra **SpaceX**. Teknologien bag gør det muligt at se flammer, der blot måler **5 gange 5 meter**, og udstyret kan endda kigge igennem tæt røg og skyer. Efter en testfase på **3 måneder** vil systemet dække alle brandudsatte zoner mindst **2 gange** dagligt."
-        },
-        {
-          "overskrift": "Millioner fra tech-giganter",
-          "tekst": "Projektet er blevet muliggjort gennem massiv økonomisk opbakning fra store spillere. **Google** har bidraget med over **15 millioner dollars**, mens **Bezos Earth Fund** har lagt hele **26 millioner dollars** i puljen. Selve satellitterne er bygget af producenten **Muon Space**, som har sikret, at udstyret nu er på plads i rummet."
-        },
-        {
-          "overskrift": "AI i brug",
-          "tekst": "Når systemet sender billeder ned til Jorden, vil **Google** bruge avanceret **AI** til at sammenligne de aktuelle observationer med historiske data. Det skal hjælpe med at forudsige brandenes udvikling og redde værdifulde områder. Målet er, at det fulde netværk omfatter mere end **50 satellitter** tidligt i **2030'erne** for at give hyppige opdateringer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "3",
-          "label": "første operative satellitter i luften"
-        },
-        {
-          "tal": "15 mio. $",
-          "label": "støtte fra Google"
-        },
-        {
-          "tal": "26 mio. $",
-          "label": "støtte fra Bezos Earth Fund"
-        },
-        {
-          "tal": "5 x 5 meter",
-          "label": "mindste brand der kan opdages"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Opsendelsen fandt sted den 7. juli 2026 fra Vandenberg Space Force Base i Californien.",
-        "En tidligere test-satellit opsendt i marts 2025 nåede at indsamle over en million billeder.",
-        "Målet er at nå op på mere end 50 aktive satellitter i de early 2030'ere.",
-        "Brandmyndigheder i blandt andet Californien, Colorado og Portugal er blandt de første brugere.",
-        "Konstellationen kan potentielt spare over 1 milliard dollars i brandskader.",
-        "Google oplevede selv en stigning i elforbruget på 37 procent i 2025."
-      ],
-      "betydning": "Du kan få hurtigere varsler mod klimaforandringer, men risikerer samtidig, at de energikrævende systemer modarbejder den grønne omstilling.",
-      "pointer": [
-        "Nye satellitter skal spotte små skovbrande tidligt.",
-        "Støttet af millioner fra Google og Bezos.",
-        "Kan se igennem tæt røg og skyer fra rummet."
-      ],
-      "billedmotiv": "En avanceret kikkert rettet mod en rød ildflamme under en glasklokke.",
-      "billede": "data/img/b6e1f6669fc2e347.jpg",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/56c954d7e0112780.html"
-    },
-    {
-      "titel": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-      "link": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-      "resume": "Official estimates Google and Apple likely made millions in nudify app fees.",
-      "dato": "2026-07-17T16:10:05+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-17T16:10:05+00:00",
-      "rubrik": "San Francisco kræver skadelige apps fjernet",
-      "resume_da": "San Francisco kræver, at Apple og Google fjerner programmer, der kan fjerne tøj fra personers billeder ved hjælp af AI.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Klare ord i San Francisco",
-          "tekst": "Myndighederne i den amerikanske storby har rettet en skarp advarsel mod de to tech-giganter. Anklageren **David Chiu** slår fast, at de programmer, der kan afklæde mennesker på fotos digitalt, er dybt skadelige for ofrene. Der er sendt krav om øjeblikkelig sletning af **13** specifikke programmer, som udnytter AI til at skabe krænkende billeder af intetanende borgere."
-        },
-        {
-          "overskrift": "Millioner i kassen",
-          "tekst": "Undersøgelser viser, at selskaberne bag de digitale butikker har haft store indtægter på de problematiske programmer. Myndighederne vurderer, at Apple og Google har tjent **millioner af dollars** i gebyrer på at lade dem ligge frit fremme. En enkelt af de uønskede tjenester er blevet hentet mere end **en million gange** af brugere verden over."
-        },
-        {
-          "overskrift": "Svar fra giganterne",
-          "tekst": "Både Google og Apple oplyser, at de tager problemet alvorligt og har handlet på kritikken. Google har allerede suspenderet **fem** udpegede programmer fra deres digitale hylder, mens Apple har fjernet **tre** og kigget nærmere på yderligere **fire**. Begge selskaber understreger, at den slags indhold er strengt forbudt ifølge deres interne retningslinjer for udbydere."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "13",
-          "label": "krævede programmer fjernet"
-        },
-        {
-          "tal": "1 mio.",
-          "label": "downloads for én app"
-        },
-        {
-          "tal": "70 %",
-          "label": "af testede apps kunne afklæde"
-        },
-        {
-          "tal": "5",
-          "label": "programmer ramt hos Google"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "San Franciscos anklager **David Chiu** har sendt formelle krav til Apple og Google.",
-        "Kravene omfatter i alt **13** programmer, der kan skabe digitalt manipuleret pornografisk indhold.",
-        "Google er blevet bedt om at fjerne **fem** specifikke programmer fra deres butik.",
-        "Apple er blevet bedt om at fjerne **otte** programmer fra deres platform.",
-        "En af de omstridte tjenester er blevet downloadet mere end **en million** gange.",
-        "Test af **155** ansigtsbyttende programmer viste, at **70 %** reelt kunne bruges til at fjerne tøj.",
-        "Myndighederne anslår, at selskaberne har tjent **millioner** i gebyrer på disse programmer."
-      ],
-      "betydning": "Du risikerer at blive udsat for digitale krænkelser, når AI gør det let at misbruge billeder af dig.",
-      "pointer": [
-        "San Francisco kræver, at Apple og Google fjerner **13** problematiske programmer.",
-        "AI-værktøjerne gør det muligt at fjerne tøj fra almindelige fotos.",
-        "Tech-giganterne har angiveligt tjent **millioner** på gebyrer fra disse programmer.",
-        "Selskaberne oplyser, at de nu har handlet på de konkrete henvendelser."
-      ],
-      "billedmotiv": "En lilla smartphone med et stort, rødt kryds over skærmen, der ligger på et mørkt træbord.",
-      "billede": "data/img/e54e64fb409d0aa4.jpg",
-      "kat_ai": true,
-      "prio": 8,
-      "side": "artikel/b887a1bbf3ba8e48.html"
     },
     {
       "titel": "Introducing Gemini 3.5 Flash Cyber",
@@ -3296,133 +2842,6 @@
       "prio": 7,
       "navngivet": true,
       "side": "artikel/5777494d3bc56bb1.html"
-    },
-    {
-      "titel": "It's official: EU will force Google to share search data and open up AI on Android",
-      "link": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
-      "resume": "Google says these changes could endanger user privacy and security.",
-      "dato": "2026-07-16T20:41:45+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-16T20:41:45+00:00",
-      "rubrik": "EU tvinger Google til at dele data",
-      "resume_da": "EU's nye lovgivning tvinger Google til at dele søgetal og åbne Android-systemet op for andre AI-løsninger.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Android skal åbnes",
-          "tekst": "I dag sidder Google tungt på Android-telefonerne, hvor **Gemini** er indbygget overalt. Det skaber problemer for konkurrenterne, da **60 %** af forbrugerne i EU benytter styresystemet. Nu forlanger EU, at andre AI-assistenter får fuld adgang til enhederne uden at miste vigtige funktioner."
-        },
-        {
-          "overskrift": "Deling af søgetal",
-          "tekst": "Konkurrerende søgemaskiner og AI-chatbots får fremover adgang til værdifulde data fra Google mod et rimeligt gebyr. EU mener, at dette er nødvendigt for at svække gigantens dominans på nettet, mens Google advarer mod at dele de dyrebare informationer."
-        },
-        {
-          "overskrift": "Hårde modangreb",
-          "tekst": "Topfolk hos Google advarer kraftigt mod de bindende EU-krav. De mener, at lempelserne vil udsætte millioner af brugere for risici og underminere vigtige sikkerhedsværn. Selskabet peger på, at ændringerne kan true både privatlivet og den nationale sikkerhed."
-        },
-        {
-          "overskrift": "Klare tidsfrister",
-          "tekst": "Selvom Google er utilfreds, skal de rette ind efter de nye EU-regler. Teknologigiganten har fået frist til **januar 2027** til at dele søgedata og til **juli 2027** til at åbne Android for andre AI-systemer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "60 %",
-          "label": "af EU-brugere har en Android-enhed"
-        },
-        {
-          "tal": "2027",
-          "label": "frister for at opfylde nye EU-krav"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "EU har udstedt nye bindende påbud under Digital Markets Act for at tvinge Google til at dele data.",
-        "Gemini har i dag særstatus på alle Google-certificerede Android-telefoner med systemadgang.",
-        "Andre AI-assistenter skal nu have samme dybe integration med mobilerne.",
-        "Google skal dele ud af sine søgetal mod et rimeligt gebyr til mindre konkurrenter.",
-        "Google-direktør Kent Walker advarer om, at kravene truer brugernes privatliv og sikkerhed.",
-        "Fristen for at dele søgedata er sat til januar 2027.",
-        "Android-systemet skal være klar til andre AI-apparater senest i juli 2027."
-      ],
-      "betydning": "Du får flere valgmuligheder og kan frit vælge andre AI-assistenter på din mobil uden at miste funktioner.",
-      "pointer": [
-        "EU tvinger Google til at dele søgetal og åbne Android.",
-        "60 % af EU-mobilbrugere rammes af ændringerne i Android.",
-        "Konkurrerende AI-systemer får samme fordele som Gemini.",
-        "Kravene skal være fuldt implementeret i løbet af 2027."
-      ],
-      "billedmotiv": "En åben bærbar computer, hvor skærmen er splittet i fire ens kasser med forskellige firmalogoer.",
-      "billede": "data/img/99a04661d01d1f63.jpg",
-      "kat_ai": true,
-      "prio": 8,
-      "side": "artikel/a015012761beb9b2.html"
-    },
-    {
-      "titel": "xAI can’t deny Grok makes CSAM anymore. So it’s suing users.",
-      "link": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users/",
-      "resume": "Elon Musk's xAI files first lawsuit against Grok user accused of making child sex images.",
-      "dato": "2026-07-16T20:26:23+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-16T20:26:23+00:00",
-      "rubrik": "Selskab bag Grok sagsøger bruger for ulovlige billeder",
-      "resume_da": "Virksomheden xAI har for første gang lagt sag an mod en bruger, der misbrugte chatbotten til at fremstille ulovlige billeder af børn.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Første sagsanlæg",
-          "tekst": "Selskabet bag Grok har længe stået i modvind, men nu reagerer de ved at stævne en specifik bruger. Den anklagede mand, **Terry Wayne Harwood**, blev tidligere på året anholdt for besiddelse og deling af ulovligt materiale. Ifølge virksomhedens søgsmål hjalp de selv med opklaringsarbejdet, efter det kom frem, at der blev brugt **2** konti til at fjerne tøjet fra rigtige mennesker, herunder et ungt barn på kun **10** år."
-        },
-        {
-          "overskrift": "Kritik og rapporter",
-          "tekst": "Sagen kommer midt i en bølge af hård kritik af xAI og dens ejer Elon Musk. En anden ung pige har for nylig tilsluttet sig et stort massesøgsmål, fordi hendes stedfar angiveligt fremstillede **7.000** seksualiserede billeder af hende ved hjælp af teknologien. Dokumenter viser, at **90 %** af selskabets indberetninger til en stor børnesikkerhedsorganisation tidligere manglede de nødvendige brugeroplysninger, så politiet kunne finde gerningsmændene."
-        },
-        {
-          "overskrift": "Søgsmålets strategi",
-          "tekst": "Med den nye retssag forsøger xAI at slå fast, at det udelukkende er de personer, der skriver kommandoerne, som bærer ansvaret. Virksomheden hævder, at deres system fungerer som et neutralt redskab, og at den tiltalte mand aktivt snød sikkerhedsfiltrene fra den **8. december** til den **18. februar**. Målet er formentlig at beskytte selskabet mod enorme erstatningskrav fra ofre i fremtiden."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "7.000",
-          "label": "ulovlige billeder skabt i en enkelt sag"
-        },
-        {
-          "tal": "90 %",
-          "label": "af indberetninger manglede politi-data"
-        },
-        {
-          "tal": "10 år",
-          "label": "alderen på et af de unge offere"
-        },
-        {
-          "tal": "2",
-          "label": "brugerkonti misbrugt af den tiltalte"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "xAI har anlagt sit første sagsanlæg nogensinde mod en bruger af Grok.",
-        "Den anklagede Terry Wayne Harwood blev anholdt i South Carolina tidligere på året.",
-        "Brugeren forsøgte at omgå sikkerhedsfiltrene for at ændre uskyldige billeder af mindreårige.",
-        "En anden sag omfatter 7.000 ulovlige billeder genereret af en stedfar.",
-        "En rapport fra 2026 viser, at 90 procent af selskabets sikkerhedsindberetninger var ubrugelige for politiet.",
-        "Sagsøgte brugte mindst to forskellige konti med komplicerede brugernavne til misbruget."
-      ],
-      "betydning": "Du risikerer at stå uden erstatning og svagere beskyttet mod misbrug, hvis tech-giganterne frasiger sig ansvaret for deres chatbotters indhold.",
-      "pointer": [
-        "xAI stævner for første gang en bruger af Grok.",
-        "Brugeren anklages for at omgå filtre til ulovlige billeder.",
-        "Selskabet vil bevise, at kun brugere har ansvaret.",
-        "Kritikere anklager selskabet for manglende hjælp til politiet."
-      ],
-      "billedmotiv": "Et par sorte håndjern der ligger ovenpå en åben bærbar computer med skærmen flækket.",
-      "billede": "data/img/4115d5ebdf10c04d.jpg",
-      "kat_ai": true,
-      "prio": 8,
-      "side": "artikel/1a2a4d4edc22f884.html"
     },
     {
       "titel": "Why teens deserve access to safe AI",
@@ -3795,8 +3214,8 @@
       "kilde": "MIT Tech Review AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-13T18:00:00+00:00",
-      "rubrik": "Ny opdagelse viser skjulte tanker hos AI",
-      "resume_da": "Teknologifirmaet Anthropic har fundet en hemmelig zone inde i deres AI-modeller, hvor skjulte ord afslører maskinens indre overvejelser.",
+      "rubrik": "Anthropics nye opdagelse viser skjulte tanker hos AI",
+      "resume_da": "Anthropic har fundet en hemmelig zone inde i deres AI-modeller, hvor skjulte ord afslører maskinens indre overvejelser.",
       "brief": "",
       "sektioner": [
         {
@@ -3831,6 +3250,7 @@
       "billede": "data/img/72bca51c04d4776b.jpg",
       "kat_ai": true,
       "prio": 6,
+      "navngivet": true,
       "side": "artikel/50ee0b4631ad54ee.html"
     },
     {
@@ -3841,8 +3261,8 @@
       "kilde": "Google DeepMind",
       "kategori": "Lanceringer",
       "foerst_set": "2026-07-13T12:37:28+00:00",
-      "rubrik": "Ny AI-hjælp til indiske skolelærere",
-      "resume_da": "Google og AIM lancerer et nyt AI-værktøj, kaldet ATL Saathi, som skal hjælpe indiske undervisere i robotlaboratorier.",
+      "rubrik": "Google og AIM lancerer ATL Saathi til indiske lærere",
+      "resume_da": "Google og AIM lancerer et nyt AI-værktøj, ATL Saathi, som skal hjælpe indiske undervisere i robotlaboratorier.",
       "brief": "",
       "sektioner": [
         {
@@ -3872,6 +3292,7 @@
       "billede": "data/img/8793821f8b79618e.jpg",
       "kat_ai": true,
       "prio": 7,
+      "navngivet": true,
       "side": "artikel/228200827ba929ba.html"
     },
     {
@@ -3924,8 +3345,8 @@
       "kilde": "OpenAI Blog",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-07-10T00:00:00+00:00",
-      "rubrik": "Kom godt i gang med AI",
-      "resume_da": "Lær at bruge ChatGPT til at skrive, få gode ideer og løse problemer.",
+      "rubrik": "Kom godt i gang med ChatGPT",
+      "resume_da": "Lær at bruge ChatGPT til at skrive, få ideer og løse problemer.",
       "brief": "",
       "sektioner": [
         {
@@ -3956,6 +3377,7 @@
       "billede": "data/img/3eb26246627595b5.jpg",
       "kat_ai": true,
       "prio": 6,
+      "navngivet": true,
       "side": "artikel/076e1c59813985b4.html"
     },
     {
@@ -4151,7 +3573,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et reagensglas med mikrober ved siden af en åben pengesæk fyldt med guldmønter",
+      "billedmotiv": "En bunke sedler med et mikroskop, en petriskål og en hængelås.",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
@@ -4202,6 +3624,7 @@
       "billede": "data/img/88e4ba2b24f769f1.jpg",
       "kat_ai": true,
       "prio": 6,
+      "navngivet": true,
       "side": "artikel/34dc6f6de3b4a015.html"
     },
     {
