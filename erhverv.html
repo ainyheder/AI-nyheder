@@ -169,7 +169,8 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   // ---- Verificerbart bevis-nummer ----
   // Nummeret beregnes som SHA-256 af (navn + udstedelsesdato + salt) og kan
   // efterprøves af enhver på koerekort-tjek.html. Samme navn + dato giver
-  // altid samme nummer; et opdigtet nummer vil ikke stemme.
+  // altid samme nummer. Saltet står i klartekst her, så nummeret kan ikke
+  // gættes, men det er ikke sikret mod nogen, der bevidst vil omgå det.
   var BEVIS_SALT = 'ainyheder-koerekort-e-v1';
   function normaliserNavn(n){ return n.trim().replace(/\s+/g, ' ').toLowerCase(); }
   function lavBevisKode(navn, datoKompakt){

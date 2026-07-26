@@ -78,6 +78,20 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
 .bevis-knap { font-family: var(--font-ui); font-size: 14px; font-weight: 700; color: #fff; background: var(--accent);
   border: none; border-radius: 999px; padding: 12px 24px; cursor: pointer; }
 .bevis-knap:hover { opacity: .9; }
+
+/* Nulstil fremdrift (delte computere) */
+.nulstil { border-top: 1px solid var(--linje); margin-top: 40px; padding-top: 22px; }
+.nulstil h3 { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin: 0 0 6px; }
+.nulstil p { font-size: 13.5px; line-height: 1.7; color: var(--blaek-svag); margin: 0 0 13px; max-width: 66ch; }
+.nulstil-knap { font-family: var(--font-ui); font-size: 13.5px; font-weight: 700; color: var(--blaek-svag);
+  background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 999px; padding: 10px 20px; cursor: pointer; }
+.nulstil-knap:hover, .nulstil-knap:focus-visible { border-color: #c04545; color: #c04545; }
+.nulstil-knap.ja { background: #c04545; border-color: #c04545; color: #fff; }
+.nulstil-knap.ja:hover, .nulstil-knap.ja:focus-visible { opacity: .9; color: #fff; }
+.nulstil-fortryd { font-family: var(--font-ui); font-size: 13.5px; font-weight: 600; color: var(--blaek-svag);
+  background: none; border: none; cursor: pointer; text-decoration: underline; padding: 10px 8px; }
+.nulstil-fortryd:hover, .nulstil-fortryd:focus-visible { color: var(--blaek); }
+.nulstil-kvit { font-size: 14px; font-weight: 700; color: #2e9e5b; margin: 0; }
 </style>
 </head>
 <body>
@@ -154,6 +168,24 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   <p style="font-size:13px; color:var(--blaek-svag); margin:14px 0 0;">Beviset får et unikt bevis-nummer, som enhver — fx en arbejdsgiver — kan efterprøve på <a href="koerekort-tjek.html" style="color:var(--accent); font-weight:700;">tjek-siden</a>.</p>
 </div>
 <p style="font-size:13.5px; color:var(--blaek-svag); margin-top:10px;">Er du arbejdsgiver og har fået forevist et bevis? <a href="koerekort-tjek.html" style="color:var(--accent); font-weight:700;">Tjek bevisets ægthed her</a>.</p>
+
+<div class="nulstil">
+  <h3>Deler du computeren med andre?</h3>
+  <p>Din fremdrift gemmes kun i denne browser — vi har den ikke. Skal en anden begynde forfra på den samme
+     computer, kan du rydde det hele her. Det fjerner de gennemførte moduler, dine svar i praktik-øvelserne
+     og bevisdatoen — både for grundforløbet og for erhvervsoverbygningen. Et bevis, der allerede er hentet,
+     bliver ikke ugyldigt af det. Det kan ikke fortrydes.</p>
+  <div id="nulstil-trin1">
+    <button class="nulstil-knap" id="nulstil-start" type="button">Nulstil fremdrift på denne computer</button>
+  </div>
+  <div id="nulstil-trin2" style="display:none;">
+    <p style="margin-bottom:11px;"><span id="nulstil-antal" style="font-weight:700; color:var(--blaek);"></span></p>
+    <button class="nulstil-knap ja" id="nulstil-ja" type="button">Ja, ryd det hele</button>
+    <button class="nulstil-fortryd" id="nulstil-nej" type="button">Fortryd</button>
+  </div>
+  <p class="nulstil-kvit" id="nulstil-kvit" style="display:none;" role="status">✓ Ryddet. Kørekortet starter forfra på denne computer.</p>
+</div>
+
 <p style="font-size:12.5px; color:var(--blaek-svag); margin-top:34px;">Udgivet af redaktionen bag AI-nyheder · Pensum version 1 (juli 2026) · <a href="om.html" style="color:var(--accent);">Hvem står bag?</a></p>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
@@ -165,6 +197,8 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   var antal = 0;
   document.querySelectorAll('[data-modul]').forEach(function(el){
     var nr = parseInt(el.getAttribute('data-modul'), 10);
+    // gem den oprindelige status-tekst, så en nulstilling kan sætte den tilbage
+    el.setAttribute('data-status0', el.querySelector('.status').textContent);
     if (faerdige.indexOf(nr) !== -1) {
       antal++;
       el.classList.remove('laast');
@@ -187,7 +221,8 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   // ---- Verificerbart bevis-nummer ----
   // Nummeret beregnes som SHA-256 af (navn + udstedelsesdato + salt) og kan
   // efterprøves af enhver på koerekort-tjek.html. Samme navn + dato giver
-  // altid samme nummer; et opdigtet nummer vil ikke stemme.
+  // altid samme nummer. Saltet står i klartekst her, så nummeret kan ikke
+  // gættes, men det er ikke sikret mod nogen, der bevidst vil omgå det.
   var BEVIS_SALT = 'ainyheder-koerekort-v1';
   function normaliserNavn(n){ return n.trim().replace(/\s+/g, ' ').toLowerCase(); }
   function lavBevisKode(navn, datoKompakt){
@@ -447,6 +482,89 @@ a.modul:hover { transform: translateY(-2px); border-color: var(--accent); }
   }
   var hentKnap = document.getElementById('bevis-hent');
   if (hentKnap) { hentKnap.addEventListener('click', hentBevis); }
+
+  // ---- Nulstil fremdrift på en delt computer ----
+  // Fremdriften ligger i localStorage under TO præfikser: 'aikort…' for begge forløb,
+  // og 'aike_…' for erhvervsbevisets dato og nummer. Det sidste matcher IKKE 'aikort*',
+  // så et mønster på 'aikort' alene ville efterlade aike_udstedt og aike_bevisnr —
+  // og næste deltager ville arve forrige deltagers udstedelsesdato på sit bevis.
+  function fremdriftsNoegler(){
+    var ud = [];
+    try {
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && (k.indexOf('aikort') === 0 || k.indexOf('aike_') === 0)) { ud.push(k); }
+      }
+    } catch(e) {}
+    return ud;
+  }
+  function antalIListe(navn){
+    try { var v = JSON.parse(localStorage.getItem(navn) || '[]'); return Array.isArray(v) ? v.length : 0; }
+    catch(e) { return 0; }
+  }
+
+  var nulStart = document.getElementById('nulstil-start');
+  if (nulStart) {
+    var trin1 = document.getElementById('nulstil-trin1');
+    var trin2 = document.getElementById('nulstil-trin2');
+    var kvit  = document.getElementById('nulstil-kvit');
+    var nulJa = document.getElementById('nulstil-ja');
+    var nulNej = document.getElementById('nulstil-nej');
+
+    nulStart.addEventListener('click', function(){
+      var dele = [];
+      var g = antalIListe('aikort'), e = antalIListe('aikort_e');
+      var svar = antalIListe('aikort_praktik') + antalIListe('aikort_e_praktik');
+      if (g) { dele.push(g + (g === 1 ? ' gennemført modul' : ' gennemførte moduler') + ' i grundforløbet'); }
+      if (e) { dele.push(e + (e === 1 ? ' modul' : ' moduler') + ' i erhvervsoverbygningen'); }
+      if (svar) { dele.push(svar + (svar === 1 ? ' gemt svar' : ' gemte svar') + ' fra øvelserne'); }
+      var tekst;
+      if (dele.length) {
+        tekst = 'Dette fjerner ' + dele.join(', ').replace(/, ([^,]*)$/, ' og $1') + '. Er du sikker?';
+      } else if (fremdriftsNoegler().length) {
+        tekst = 'Ingen moduler er gennemført, men der ligger stadig rester fra kørekortet i browseren. Ryd dem?';
+      } else {
+        tekst = 'Der er ingen fremdrift at rydde på denne computer.';
+      }
+      document.getElementById('nulstil-antal').textContent = tekst;
+      kvit.style.display = 'none';
+      trin1.style.display = 'none';
+      trin2.style.display = 'block';
+      nulJa.focus();
+    });
+
+    nulNej.addEventListener('click', function(){
+      trin2.style.display = 'none';
+      trin1.style.display = 'block';
+      nulStart.focus();
+    });
+
+    nulJa.addEventListener('click', function(){
+      var noegler = fremdriftsNoegler();
+      for (var i = 0; i < noegler.length; i++) {
+        try { localStorage.removeItem(noegler[i]); } catch(e) {}
+      }
+      // tegn siden om, så den viser det, der nu faktisk står gemt
+      document.querySelectorAll('[data-modul]').forEach(function(el){
+        el.classList.remove('faerdig');
+        el.querySelector('.nr').textContent = el.getAttribute('data-modul');
+        el.querySelector('.status').textContent = el.getAttribute('data-status0') || 'Åbn modul';
+      });
+      document.getElementById('fremdrift-tekst').textContent = '0 af 7 moduler gennemført';
+      document.getElementById('fremdrift-fyld').style.width = '0%';
+      document.getElementById('bevis-aaben').style.display = 'none';
+      document.getElementById('bevis-laast').style.display = 'block';
+      document.getElementById('bevis-mangler').textContent = 'Du mangler 7 moduler.';
+      var navnFelt = document.getElementById('bevis-navn');
+      if (navnFelt) { navnFelt.value = ''; }
+      trin2.style.display = 'none';
+      trin1.style.display = 'block';
+      kvit.style.display = 'block';
+      kvit.textContent = '✓ Ryddet — ' + noegler.length +
+        (noegler.length === 1 ? ' gemt oplysning' : ' gemte oplysninger') +
+        ' er slettet. Kørekortet starter forfra på denne computer.';
+    });
+  }
 })();
 </script>
 
