@@ -3627,6 +3627,57 @@ query ($konto: String!, $tag: String!, $fra: Time!, $til: Time!) {
         return []
 
 
+def _hent_sidehenvisere(token: str, konto_tag: str, dage: int) -> dict:
+    """Hvor læserne kom fra - opdelt PR. SIDE, ikke for hele sitet under ét.
+
+    Samme datasæt som de øvrige tal, men grupperet på to dimensioner på én
+    gang (sti × henviser). Det er dét, der gør det muligt at klikke ind på en
+    artikel og se, om folk kom fra Facebook eller fra Google. Egen forespørgsel
+    med vilje: fejler den, mister vi kun opdelingen."""
+    nu = datetime.now(timezone.utc)
+    query = """
+query ($konto: String!, $tag: String!, $fra: Time!, $til: Time!) {
+  viewer { accounts(filter: {accountTag: $konto}) {
+    par: rumPageloadEventsAdaptiveGroups(
+      limit: 500, orderBy: [sum_visits_DESC],
+      filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
+    ) { sum { visits } count dimensions { requestPath refererHost } }
+  } }
+}"""
+    try:
+        svar = json.loads(hent_url(CF_GRAPHQL, data=json.dumps({
+            "query": query,
+            "variables": {
+                "konto": konto_tag, "tag": CF_SITE_TAG,
+                "fra": (nu - timedelta(days=dage)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "til": nu.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            },
+        }).encode(), headers={"Authorization": f"Bearer {token}",
+                              "Content-Type": "application/json"}))
+        if svar.get("errors"):
+            print(f"📈 ⚠️ Henvisere pr. side sprang over: {str(svar['errors'])[:120]}")
+            return {}
+        konti = (svar.get("data") or {}).get("viewer", {}).get("accounts") or []
+        pr_sti: dict = {}
+        for r in ((konti[0].get("par") if konti else []) or []):
+            dim = r.get("dimensions") or {}
+            sti = dim.get("requestPath") or ""
+            if not sti:
+                continue
+            vaert = dim.get("refererHost") or "direkte"
+            if vaert == "ainyheder.com":
+                vaert = "herfra selv"     # klik videre inde på siden
+            pr_sti.setdefault(sti, []).append(
+                {"fra": vaert, "besoeg": (r.get("sum") or {}).get("visits", 0),
+                 "visninger": r.get("count", 0)})
+        for liste in pr_sti.values():
+            liste.sort(key=lambda h: -h["visninger"])
+        return pr_sti
+    except Exception as fejl:
+        print(f"📈 ⚠️ Henvisere pr. side sprang over ({type(fejl).__name__}: {fejl})")
+        return {}
+
+
 def _artikel_kartotek() -> dict:
     """Sti -> {rubrik, kategori, dato} for hver artikelside, vi kan finde.
 
@@ -3708,7 +3759,7 @@ def hent_laesertal() -> dict | None:
         "udgivne_temaer": _tema_serie(kartotek, LAESERTAL_SERIE_DAGE),
         "maaling": "mangler_token",
         "besoeg_i_alt": 0, "sidevisninger_i_alt": 0, "ai_chat_besoeg": 0,
-        "sider": [], "henvisere": [], "ai_chats": [],
+        "sider": [], "henvisere": [], "ai_chats": [], "sidehenvisere": {},
         "faste_uden_besoeg": [], "serie": [], "artikler": [], "laeste_temaer": [],
     }
     if os.environ.get("CLOUDFLARE_API_TOKEN", "").strip():
@@ -3804,6 +3855,8 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
         # nyheder der blev læst - ikke en liste af hashede filnavne. Kartoteket
         # kommer udefra: det er allerede læst én gang, og de 110 filer skal
         # ikke åbnes to gange pr. kørsel.
+        pr_sti = _hent_sidehenvisere(token, d.get("accountTag") or konto,
+                                     LAESERTAL_DAGE)
         artikler = []
         for s in sider:
             if not s["sti"].startswith("/artikel/"):
@@ -3813,8 +3866,11 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
                 "sti": s["sti"], "besoeg": s["besoeg"], "visninger": s["visninger"],
                 "rubrik": k.get("rubrik") or s["sti"].rsplit("/", 1)[-1],
                 "kategori": k.get("kategori", ""), "dato": k.get("dato", ""),
+                "henvisere": pr_sti.get(s["sti"], []),
             })
         artikler.sort(key=lambda a: (-a["visninger"], -a["besoeg"]))
+        # Samme opdeling for de faste sider, så man også kan klikke ind på dem
+        sidehenvisere = {s["sti"]: pr_sti.get(s["sti"], []) for s in sider}
         # Hvilke temaer bliver rent faktisk LÆST. Tomt i begyndelsen, fordi
         # artikeltrafikken skal komme først - og det er i sig selv svaret.
         pr_tema: dict[str, int] = {}
@@ -3838,6 +3894,7 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
                                      LAESERTAL_SERIE_DAGE),
             "artikler": artikler,
             "laeste_temaer": laeste_temaer,
+            "sidehenvisere": sidehenvisere,
         }
         print(f"📈 Læsertal: {tal['besoeg_i_alt']} besøg på "
               f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage"

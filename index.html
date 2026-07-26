@@ -1539,7 +1539,9 @@ function fortsaetBlok(a) {
   </div>`;
 }
 
-function aabnLaeser(a) {
+// fraHistorik = true, når læseren åbnes af tilbage/frem-knappen eller af et
+// delt link. Så skal adressen IKKE skubbes på historikken igen.
+function aabnLaeser(a, fraHistorik) {
   let briefHtml;
   if (a.sektioner && a.sektioner.length) {
     briefHtml = a.sektioner.map(s =>
@@ -1620,7 +1622,7 @@ function aabnLaeser(a) {
   laeserBag.scrollTop = 0;
   document.body.style.overflow = "hidden";
   document.getElementById("laeserLuk").addEventListener("click", lukLaeser);
-  history.replaceState(null, "", "#a=" + encodeURIComponent(a.link));
+  laeserAdresse(a, fraHistorik);
 
   // markér som læst - både i lageret og på kortet bag modalen
   markerLaest(a);
@@ -1630,11 +1632,42 @@ function aabnLaeser(a) {
 
 }
 
-function lukLaeser() {
+// ----- Læserens adresse -----------------------------------------------------
+// Artiklen får sin RIGTIGE sti i adresselinjen, ikke et "#a=...".
+// Grunden er målbarhed: Cloudflares beacon sammenligner pathname, og et hash
+// giver samme sti som forsiden - så en læst artikel talte som endnu en
+// visning af "/" og forsvandt i mængden. Beacon'en hooker desuden kun
+// pushState, aldrig replaceState, så et replaceState når den slet ikke.
+// Sidegevinst: delelinks bliver pæne, og tilbage-knappen begynder at virke.
+function laeserAdresse(a, erstat) {
+  const url = a.side ? "/" + a.side
+                     : location.pathname + "#a=" + encodeURIComponent(a.link);
+  const stand = { artikel: a.side || null, link: a.link, start: !!erstat };
+  if (erstat) history.replaceState(stand, "", url);
+  else history.pushState(stand, "", url);
+}
+
+function skjulLaeser() {
   laeserBag.classList.remove("aaben");
   document.body.style.overflow = "";
+}
+
+function lukLaeser() {
+  const st = history.state;
+  // Skubbede vi selv artiklen på historikken, går vi tilbage - så retter
+  // popstate adressen, og tilbage-knappen opfører sig, som man forventer.
+  // Kom læseren fra et delt link (start:true), er der intet at gå tilbage til.
+  if (st && st.link && !st.start) { history.back(); return; }
+  skjulLaeser();
   history.replaceState(null, "", location.pathname + location.search);
 }
+
+// Tilbage/frem: åbn eller luk læseren, så skærmen passer til adressen.
+window.addEventListener("popstate", () => {
+  const st = history.state;
+  const a = st && st.link && artikler.find(x => x.link === st.link);
+  if (a) aabnLaeser(a, true); else skjulLaeser();
+});
 laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") lukLaeser(); });
 
@@ -2126,10 +2159,13 @@ fetch("data/articles.json")
     tegnFiltre(); tegn();
     visDagensBrief(); hentYouTube();
     // Delt link? Åbn artiklen direkte.
+    // Gamle delte links bruger stadig #a=... De skal blive ved med at virke.
+    // true = erstat adressen i stedet for at skubbe en post oveni, så der
+    // ikke ligger en tom forside bag artiklen i historikken.
     const m = location.hash.match(/^#a=(.+)/);
     if (m) {
       const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
-      if (delt) aabnLaeser(delt);
+      if (delt) aabnLaeser(delt, true);
     }
   })
   .catch(fejl => {

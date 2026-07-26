@@ -154,10 +154,15 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
 .tegnf span { display:inline-flex; align-items:center; gap:6px; }
 .tegnf i { width:10px; height:10px; border-radius:3px; flex:none; }
 .tegnf b { color:var(--blaek); font-weight:600; font-variant-numeric:tabular-nums; }
-/* Artikelliste med tema-prik */
+/* Artikelliste med tema-prik. Hele rækken er en knap - klik åbner detaljerne. */
 .art { display:grid; grid-template-columns:22px minmax(0,1fr) 68px; gap:11px;
-  align-items:baseline; padding:11px 0; border-bottom:1px solid var(--linje); }
+  align-items:baseline; padding:11px 0; border-bottom:1px solid var(--linje);
+  width:100%; text-align:left; font:inherit; background:none; border-left:0;
+  border-right:0; border-top:0; cursor:pointer; }
 .art:last-child { border-bottom:0; }
+.art:hover { background:color-mix(in srgb, var(--accent) 5%, transparent); }
+.art:hover .art-rub { color:var(--accent); }
+.art-pil { font-size:11px; color:var(--svag); margin-left:6px; }
 .art-nr { font-size:11px; font-weight:700; color:var(--svag); text-align:right;
   font-variant-numeric:tabular-nums; }
 .art-rub { font-size:14px; line-height:1.4; }
@@ -183,8 +188,10 @@ select, textarea { width:100%; font-family:inherit; font-size:14px; padding:10px
 textarea { font-family:"JetBrains Mono",monospace; font-size:12.5px; line-height:1.6; min-height:300px; resize:vertical; }
 select:focus, textarea:focus { outline:2px solid var(--accent); border-color:transparent; }
 .raekke { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; align-items:center; }
-button.k { font:inherit; font-size:14px; font-weight:700; border-radius:999px; padding:11px 22px; cursor:pointer; border:1px solid var(--linje); background:var(--kort); color:var(--blaek); }
-button.k:hover { border-color:var(--accent); color:var(--accent); }
+/* a.k er med, fordi "Åbn artiklen" er et rigtigt link og ikke en knap - den
+   skal kunne åbnes i ny fane, men se ud som resten. */
+button.k, a.k { font:inherit; font-size:14px; font-weight:700; border-radius:999px; padding:11px 22px; cursor:pointer; border:1px solid var(--linje); background:var(--kort); color:var(--blaek); display:inline-block; text-decoration:none; }
+button.k:hover, a.k:hover { border-color:var(--accent); color:var(--accent); }
 button.k.fyldt { background:var(--accent); color:#fff; border-color:var(--accent); }
 button.k.fyldt:hover { opacity:.9; color:#fff; }
 .bund { position:fixed; left:0; right:0; bottom:0; background:var(--kort); border-top:1px solid var(--linje);
@@ -664,14 +671,16 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         "flyttes: nyhederne er hele grunden til, at siden findes.</div>";
     } else {
       ud += '<p class="lmanchet">Sorteret efter sidevisninger. Farveprikken er ' +
-        "artiklens tema.</p><div class=\"bjaelker\">" +
-        arts.slice(0, 15).map(function (a, i) {
-          return '<div class="art"><div class="art-nr">' + (i + 1) + "</div><div>" +
-            '<div class="art-rub">' + esc(a.rubrik) + "</div>" +
+        "artiklens tema. <strong>Klik på en linje</strong> for at se, hvor " +
+        "læserne kom fra.</p><div class=\"bjaelker\">" +
+        arts.slice(0, 20).map(function (a, i) {
+          return '<button class="art" data-art="' + i + '">' +
+            '<div class="art-nr">' + (i + 1) + "</div><div>" +
+            '<div class="art-rub">' + esc(a.rubrik) + '<span class="art-pil">›</span></div>' +
             '<div class="art-meta">' + (a.kategori
               ? '<i style="background:' + temafarve(a.kategori, katNavne) + '"></i>' +
                 esc(a.kategori) + " · " : "") + esc(a.dato || "") + "</div></div>" +
-            '<div class="art-tal"><b>' + ltal(a.visninger) + "</b><span>visninger</span></div></div>";
+            '<div class="art-tal"><b>' + ltal(a.visninger) + "</b><span>visninger</span></div></button>";
         }).join("") + "</div>";
     }
 
@@ -744,6 +753,95 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     laesnyt: laeserNyhederHtml,
     laestraf: laeserTrafikHtml
   };
+
+  // Læselige navne på de værter, folk kommer fra. Cloudflare siger
+  // "l.facebook.com"; det er samme sted som "m.facebook.com", og delt op
+  // ligner hver af dem ingenting.
+  var HENVISERNAVNE = [
+    ["facebook.com", "Facebook"], ["fb.com", "Facebook"],
+    ["linkedin.com", "LinkedIn"], ["lnkd.in", "LinkedIn"],
+    ["google.", "Google"], ["bing.com", "Bing"],
+    ["duckduckgo.com", "DuckDuckGo"], ["t.co", "X/Twitter"],
+    ["x.com", "X/Twitter"], ["twitter.com", "X/Twitter"],
+    ["bsky.app", "Bluesky"], ["reddit.com", "Reddit"],
+    ["instagram.com", "Instagram"], ["buttondown.com", "Nyhedsbrevet"],
+    ["news.ycombinator.com", "Hacker News"],
+    // AI-chats. Samme liste som AI_CHAT_KILDER i crawler.py - står de her
+    // også, får de et læseligt navn i opdelingen pr. artikel.
+    ["chatgpt.com", "ChatGPT"], ["chat.openai.com", "ChatGPT"],
+    ["perplexity.ai", "Perplexity"], ["claude.ai", "Claude"],
+    ["copilot.microsoft.com", "Microsoft Copilot"],
+    ["gemini.google.com", "Gemini"], ["chat.deepseek.com", "DeepSeek"],
+    ["grok.com", "Grok"], ["you.com", "You.com"], ["poe.com", "Poe"]
+  ];
+
+  function henviserNavn(vaert) {
+    if (vaert === "direkte" || vaert === "herfra selv") return vaert;
+    var v = String(vaert || "").toLowerCase();
+    // Længste match først, så "gemini.google.com" ikke bliver til "Google"
+    var bedst = null;
+    for (var i = 0; i < HENVISERNAVNE.length; i++) {
+      var m = HENVISERNAVNE[i][0];
+      if (v.indexOf(m) >= 0 && (!bedst || m.length > bedst[0].length)) {
+        bedst = HENVISERNAVNE[i];
+      }
+    }
+    return bedst ? bedst[1] : vaert;
+  }
+
+  // Læg værter sammen, der er samme sted: l./m./www.facebook.com -> Facebook
+  function samlHenvisere(liste) {
+    var pr = {}, orden = [];
+    (liste || []).forEach(function (h) {
+      var n = henviserNavn(h.fra);
+      if (!pr[n]) { pr[n] = { navn: n, visninger: 0, besoeg: 0 }; orden.push(n); }
+      pr[n].visninger += nul(h.visninger);
+      pr[n].besoeg += nul(h.besoeg);
+    });
+    return orden.map(function (n) { return pr[n]; })
+      .sort(function (a, b) { return b.visninger - a.visninger; });
+  }
+
+  function aabnArtikel(i) {
+    var a = (L.artikler || [])[i];
+    if (!a) return;
+    var katNavne = (((L || {}).udgivne_temaer || {}).serier || [])
+      .map(function (s) { return s.navn; });
+    var kilder = samlHenvisere(a.henvisere);
+    var krop =
+      '<button class="luk" id="mLuk">✕</button>' +
+      "<h3>" + esc(a.rubrik) + "</h3>" +
+      '<div class="b">' + (a.kategori
+        ? '<i style="width:9px;height:9px;border-radius:50%;display:inline-block;' +
+          "margin-right:6px;background:" + temafarve(a.kategori, katNavne) + '"></i>' +
+          esc(a.kategori) + " · " : "") + esc(a.dato || "") + "</div>" +
+      '<div class="kpi" style="margin-bottom:6px">' +
+      kpiKort(ltal(a.visninger), "sidevisninger") +
+      kpiKort(ltal(a.besoeg), "besøg udefra") + "</div>" +
+      '<p class="lmanchet" style="margin-top:12px"><strong>Besøg</strong> er dem, ' +
+      "der landede direkte på artiklen. <strong>Sidevisninger</strong> tæller " +
+      "også dem, der klikkede sig derind fra forsiden.</p>";
+
+    krop += '<div class="lgruppe" style="margin-top:18px">Hvor de kom fra</div>';
+    krop += kilder.length
+      ? '<p class="lmanchet">Målt på sidevisninger. <strong>herfra selv</strong> ' +
+        "er klik inde på siden — typisk fra forsiden.</p>" +
+        bjaelker(kilder.map(function (k) {
+          return { navn: k.navn, vaerdi: k.visninger };
+        }))
+      : (L.hasOwnProperty("sidehenvisere")
+          ? '<div class="lgodt" style="border-left-color:var(--linje)">Ingen ' +
+            "henvisere registreret for den her artikel i perioden.</div>"
+          : venterPaaCrawl("Opdelingen pr. artikel"));
+
+    krop += '<div class="raekke"><a class="k" href="https://ainyheder.com' +
+      esc(a.sti) + '" target="_blank" rel="noopener" ' +
+      'style="text-decoration:none">Åbn artiklen ↗</a></div>';
+    modal.innerHTML = krop;
+    bag.classList.add("aaben");
+    document.body.style.overflow = "hidden";
+    document.getElementById("mLuk").addEventListener("click", luk);
+  }
 
   var side = document.getElementById("side");
   var rude = document.getElementById("rude");
@@ -826,6 +924,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   rude.addEventListener("click", function (ev) {
     var t = ev.target.closest(".hj");
     if (t) { aabn(t.dataset.n); return; }
+    var a = ev.target.closest(".art");
+    if (a) { aabnArtikel(Number(a.dataset.art)); return; }
     var d = ev.target.closest(".dok");
     if (d) aabnDok(d.dataset.dok);
   });
