@@ -1,19 +1,47 @@
 {
-  "opdateret": "2026-07-26T06:54:22.396504+00:00",
-  "antal": 108,
+  "opdateret": "2026-07-26T07:10:58.391318+00:00",
+  "antal": 110,
   "artikler": [
+    {
+      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
+      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
+      "dato": "2026-07-25T16:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Samfund & etik",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-26T07:10:58.391318+00:00",
+      "rubrik": "Trackman-stifter advarer mod AI-blinde vinkler",
+      "resume_da": "Han er glad for, at firmaet selv laver hardware – så mister man ikke kontrollen.",
+      "kat_ai": true,
+      "prio": 5
+    },
+    {
+      "titel": "Danskere skal levere vigtig software til den australske hær",
+      "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer",
+      "resume": "Det sker som led i en større modernisering af Australiens forsvar.",
+      "dato": "2026-07-21T11:45:00+02:00",
+      "kilde": "Version2",
+      "kategori": "Penge & marked",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-26T07:10:58.391318+00:00",
+      "rubrik": "Danske firma leverer software til australsk hær",
+      "resume_da": "Det sker som del af en stor modernisering af Australiens forsvarssystemer.",
+      "kat_ai": true,
+      "prio": 4,
+      "navngivet": true
+    },
     {
       "titel": "Open-weight AI is having its Kubernetes moment",
       "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
-      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 363 # Comments: 283",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 365 # Comments: 283",
       "dato": "2026-07-25T14:49:49+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Lanceringer",
       "foerst_set": "2026-07-26T06:54:22.396504+00:00",
       "rubrik": "Open-weight AI på vej mod sit Kubernetes-øjeblik",
       "resume_da": "En tidligere iværksætter ser samme mønster som med Kubernetes: åbne AI-modeller kan blive den nye standard, som hele branchen bygger på.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad minder det om?",
@@ -28,9 +56,8 @@
           "tekst": "I Washington overvejer man at forbyde kinesiske open-weight-modeller. Men forfatteren advarer: Det vil isolere USA fra det økosystem, hvor verdens bedste AI-folk allerede arbejder. I stedet bør amerikanske virksomheder udgive deres egne åbne modeller på licenser, som startups kan bruge. Staten kan også skabe efterspørgsel efter åbne systemer gennem indkøb."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Kinesiske modeller står for **41 %** af alle downloads på Hugging Face det seneste år.",
         "**GLM-5.2** scorer **62,1 %** på SWE-bench Pro, mens GPT-5.5 får **58,6 %** .",
@@ -48,6 +75,8 @@
       ],
       "billedmotiv": "En bunke kuber (Kubernetes-logoer) stablet op ved siden af en åben bærbar computer med en AI-model, som en hånd rækker ud efter.",
       "billede": "data/img/6e08697404783a2e.jpg",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/b0b06661b8f45405.html"
     },
     {
@@ -60,8 +89,7 @@
       "foerst_set": "2026-07-26T06:54:22.396504+00:00",
       "rubrik": "Store aktørers argumenter mod open source AI halter",
       "resume_da": "Kritikere kalder open source AI for farligt, men de glemmer historien. Åbne modeller er svære at stoppe.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad siger kritikken",
@@ -80,14 +108,13 @@
           "tekst": "Nogle frygter, at fjendtlige aktører kan gemme snyd i åbne AI-modeller. Men det bedste forsvar er netop, at alle kan inspicere koden. Jo flere der kigger, jo hurtigere findes fejl. At begrænse adgangen til værktøjerne gavner kun dem, der vil misbruge dem."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1991",
           "label": "år, USA forsøgte at forbyde kryptering"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Open source-software er fundamentet for al kommerciel software, inklusiv AI-modeller.",
         "USA's forsøg på at forbyde kryptering i 1991 førte til retssag og nederlag.",
@@ -105,6 +132,8 @@
       ],
       "billedmotiv": "En bunke printplader og netværkskabler stablet op foran en mur med et gammelt 'GODKENDT KRYPT' stempel.",
       "billede": "data/img/9a151c1c9892dad0.jpg",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/d475976aa2aee8d4.html"
     },
     {
@@ -117,8 +146,7 @@
       "foerst_set": "2026-07-26T06:54:22.396504+00:00",
       "rubrik": "Ny open source-videoeditor gør AI til makker",
       "resume_da": "Palmier Pro lader dig og en AI-agent redigere video sammen i tidslinjen – helt gratis og uden login.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -133,14 +161,13 @@
           "tekst": "Hele videoeditoren og MCP-serveren er open source og gratis. Du behøver ikke oprette en konto. Eneste lukkede del er selve AI-genereringen. Du kan downloade appen med det samme og begynde at eksperimentere med dine egne AI-agentforbindelser."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "Gratis",
           "label": "pris for editor og MCP-server"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Editoren er bygget i Swift og inspireret af Adobe Premiere Pro.",
         "AI-modeller som Seedance og Kling kører direkte i tidslinjen.",
@@ -159,6 +186,8 @@
       ],
       "billedmotiv": "En Mac-skærm med en videotidslinje. Til venstre en lille robotarm, der holder et kamera, til højre en chatboble med teksten 'Skab en droneflyvning over byen'.",
       "billede": "data/img/a1df1f6c071a5b2f.jpg",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/fa7a24d15387e004.html"
     },
     {
@@ -171,8 +200,7 @@
       "foerst_set": "2026-07-26T06:54:22.396504+00:00",
       "rubrik": "AI alene i cockpittet: Ny F-16 fløjet af robot",
       "resume_da": "USA's forsvarsministerium og flyvevåben har testet en F-16-kampflyvemaskine styret alene af AI. Det åbner for en ny æra uden mennesker i cockpittet.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Testen",
@@ -183,7 +211,7 @@
           "tekst": "Forsvaret ser potentiale i at lade AI overtage farlige missioner og dermed spare piloter. De første anvendelser bliver formentlig som en co-pilot, der aflaster mennesket, eller i helt automatiserede opgaver som overvågning."
         }
       ],
-      "brief": "",
+      "noegletal": [],
       "figurer": [
         {
           "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
@@ -191,7 +219,6 @@
           "kilde": "Hacker News: AI"
         }
       ],
-      "noegletal": [],
       "detaljer": [
         "Testflyvningen blev gennemført af DARPA og U.S. Air Force.",
         "F-16'en blev styret udelukkende af AI uden en pilot om bord.",
@@ -208,6 +235,8 @@
       ],
       "billedmotiv": "Et tomt F-16-cockpit med intet sæde, men en skærm, hvor en grøn AI-linje tegner en flyverute over et sort kort.",
       "billede": "data/img/81638fb59aa553c7.jpg",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/cc744205c493c965.html"
     },
     {
@@ -307,6 +336,12 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
+        }
+      ],
       "detaljer": [
         "Brevet er underskrevet af Hugging Face, Meta, Microsoft, Mistral og Nvidia.",
         "Trump-administrationen har overvejet at forbyde kinesiske open-weight-modeller.",
@@ -327,12 +362,6 @@
       "billede": "data/img/a574e2684651ad46.jpg",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
-        }
-      ],
       "side": "artikel/3e70bd1d4df50627.html"
     },
     {
@@ -368,12 +397,6 @@
       "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
-        }
-      ],
       "navngivet": true
     },
     {
@@ -748,13 +771,7 @@
       "rubrik": "Minister kritiseres for Energiø-roderi",
       "resume_da": "Danmarksdemokraterne er vrede på klima- og energiminister Samira Nawa, fordi hun ifølge dem skjulte store budgetproblemer på Energiø Bornholm.",
       "kat_ai": true,
-      "prio": 3,
-      "andre": [
-        {
-          "kilde": "Version2",
-          "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer"
-        }
-      ]
+      "prio": 3
     },
     {
       "titel": "Nato-chef advarer: En drone-tsunami er på vej, og Europa er ikke klar",
@@ -4518,7 +4535,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En petriskål med bakteriekultur og en forstørrelsesglas over en stak pengesedler",
+      "billedmotiv": "Mikroskop med revnet linse og en stak dollarsedler på en petriskål",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
