@@ -139,6 +139,39 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   background:#f6ecd8; border-radius:6px; padding:3px 9px; }
 .lgodt { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--groen);
   border-radius:12px; padding:14px 17px; font-size:14px; }
+/* Grafer. Tegnet i hånden som SVG - panelet åbnes fra file:// og må ikke
+   afhænge af et bibliotek, der skal hentes. */
+.graf { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
+  padding:15px 18px 11px; box-shadow:var(--skygge); }
+.graf svg { width:100%; height:auto; display:block; overflow:visible; }
+.gnet { stroke:#e1e0d9; stroke-width:1; }
+.gakse { fill:#898781; font-size:10.5px; font-family:"Inter",sans-serif; }
+.gvaerdi { fill:var(--blaek); font-size:11px; font-weight:600; font-family:"Inter",sans-serif; }
+/* Tegnforklaring. Ved to eller flere serier er den obligatorisk - farve alene
+   må aldrig være det eneste, der adskiller dem. */
+.tegnf { display:flex; flex-wrap:wrap; gap:7px 16px; margin-top:11px;
+  font-size:12.5px; color:var(--svag); }
+.tegnf span { display:inline-flex; align-items:center; gap:6px; }
+.tegnf i { width:10px; height:10px; border-radius:3px; flex:none; }
+.tegnf b { color:var(--blaek); font-weight:600; font-variant-numeric:tabular-nums; }
+/* Artikelliste med tema-prik. Hele rækken er en knap - klik åbner detaljerne. */
+.art { display:grid; grid-template-columns:22px minmax(0,1fr) 68px; gap:11px;
+  align-items:baseline; padding:11px 0; border-bottom:1px solid var(--linje);
+  width:100%; text-align:left; font:inherit; background:none; border-left:0;
+  border-right:0; border-top:0; cursor:pointer; }
+.art:last-child { border-bottom:0; }
+.art:hover { background:color-mix(in srgb, var(--accent) 5%, transparent); }
+.art:hover .art-rub { color:var(--accent); }
+.art-pil { font-size:11px; color:var(--svag); margin-left:6px; }
+.art-nr { font-size:11px; font-weight:700; color:var(--svag); text-align:right;
+  font-variant-numeric:tabular-nums; }
+.art-rub { font-size:14px; line-height:1.4; }
+.art-meta { font-size:11.5px; color:var(--svag); margin-top:3px; }
+.art-meta i { width:8px; height:8px; border-radius:50%; display:inline-block;
+  margin-right:5px; vertical-align:baseline; }
+.art-tal { text-align:right; font-size:13px; font-variant-numeric:tabular-nums; }
+.art-tal b { display:block; font-size:15px; font-weight:600; color:var(--blaek); }
+.art-tal span { font-size:11px; color:var(--svag); }
 .bag { display:none; position:fixed; inset:0; z-index:200; background:rgba(25,23,20,.55);
   backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:20px; }
 .bag.aaben { display:flex; }
@@ -155,8 +188,10 @@ select, textarea { width:100%; font-family:inherit; font-size:14px; padding:10px
 textarea { font-family:"JetBrains Mono",monospace; font-size:12.5px; line-height:1.6; min-height:300px; resize:vertical; }
 select:focus, textarea:focus { outline:2px solid var(--accent); border-color:transparent; }
 .raekke { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; align-items:center; }
-button.k { font:inherit; font-size:14px; font-weight:700; border-radius:999px; padding:11px 22px; cursor:pointer; border:1px solid var(--linje); background:var(--kort); color:var(--blaek); }
-button.k:hover { border-color:var(--accent); color:var(--accent); }
+/* a.k er med, fordi "Åbn artiklen" er et rigtigt link og ikke en knap - den
+   skal kunne åbnes i ny fane, men se ud som resten. */
+button.k, a.k { font:inherit; font-size:14px; font-weight:700; border-radius:999px; padding:11px 22px; cursor:pointer; border:1px solid var(--linje); background:var(--kort); color:var(--blaek); display:inline-block; text-decoration:none; }
+button.k:hover, a.k:hover { border-color:var(--accent); color:var(--accent); }
 button.k.fyldt { background:var(--accent); color:#fff; border-color:var(--accent); }
 button.k.fyldt:hover { opacity:.9; color:#fff; }
 .bund { position:fixed; left:0; right:0; bottom:0; background:var(--kort); border-top:1px solid var(--linje);
@@ -374,57 +409,235 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 
   // Én måleenhed pr. liste, så bjælkerne må gerne dele farve. Bredden er
   // relativ til den største i listen - ikke til det samlede antal besøg.
+  // r.farve er valgfri. Er den sat, følger farven ENTITETEN - så en kategori
+  // har samme farve her som i temagrafen. Uden den bruges accenten, fordi
+  // listen så kun måler én ting og ikke skal farvekodes overhovedet.
   function bjaelker(raekker) {
     var storst = raekker.reduce(function (m, r) { return Math.max(m, r.vaerdi); }, 0);
     return '<div class="bjaelker">' + raekker.map(function (r) {
       // Gulv på 2%, så en række med ét enkelt besøg stadig er synlig.
       var pct = storst > 0 ? Math.max(2, r.vaerdi / storst * 100) : 0;
+      var f = r.farve
+        ? ' style="width:' + pct.toFixed(1) + '%;background:' + r.farve + '"'
+        : ' style="width:' + pct.toFixed(1) + '%"';
+      var spor = r.farve
+        ? ' style="background:color-mix(in srgb, ' + r.farve + ' 13%, transparent)"' : "";
       return '<div class="bj"><div><div class="bj-navn" title="' + esc(r.navn) + '">' +
-        esc(r.navn) + '</div><div class="bj-spor"><div class="bj-fyld" style="width:' +
-        pct.toFixed(1) + '%"></div></div></div>' +
+        esc(r.navn) + '</div><div class="bj-spor"' + spor + '><div class="bj-fyld"' +
+        f + "></div></div></div>" +
         '<div class="bj-tal">' + ltal(r.vaerdi) + "</div></div>";
     }).join("") + "</div>";
   }
 
-  function laeserHtml() {
-    var ud = "<h1>Læserne</h1>";
+  // Farver til flere serier. Valideret palet (kørt mod hvid flade): alle
+  // nabopar klarer både farveblindheds- og normalsynsgulvet. RÆKKEFØLGEN er
+  // selve sikkerheden - byt ikke om på den uden at validere igen. Tre af dem
+  // har under 3:1 kontrast mod hvid, derfor står der altid en skreven
+  // tegnforklaring med tal ved siden af; farven er aldrig eneste kendetegn.
+  var SERIEFARVER = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"];
+
+  // Runde akse-tal i stedet for 27. Trinene er tætte med vilje: med kun
+  // 1/2/2,5/5 blev et maksimum på 27 til en akse på 50, og så lå søjlerne
+  // mast ned i nederste femtedel af grafen.
+  function pentLoft(m) {
+    var p = Math.pow(10, Math.floor(Math.log(Math.max(m, 1)) / Math.LN10));
+    var trin = [1, 1.2, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10];
+    for (var i = 0; i < trin.length; i++) if (p * trin[i] >= m) return p * trin[i];
+    return p * 10;
+  }
+
+  function dagMrk(iso) {
+    return new Date(iso + "T12:00:00").toLocaleDateString("da-DK",
+      { day: "numeric", month: "short" });
+  }
+
+  function nul(v) { return (v == null ? 0 : v); }
+
+  // ---- Kurve: besøg og sidevisninger pr. dag -------------------------------
+  function dagskurve(serie) {
+    var W = 960, H = 186, mV = 48, mH = 14, mT = 10, mB = 22, n = serie.length;
+    var raa = 1;
+    serie.forEach(function (d) { raa = Math.max(raa, nul(d.visninger), nul(d.besoeg)); });
+    var top = pentLoft(raa);
+    function bx(i) { return mV + (W - mV - mH) * (n === 1 ? 0.5 : i / (n - 1)); }
+    function by(v) { return mT + (H - mT - mB) * (1 - nul(v) / top); }
+
+    var net = "";
+    [0, 0.5, 1].forEach(function (f) {
+      var y = by(top * f);
+      net += '<line class="gnet" x1="' + mV + '" y1="' + y.toFixed(1) + '" x2="' +
+        (W - mH) + '" y2="' + y.toFixed(1) + '"/><text class="gakse" x="' + (mV - 9) +
+        '" y="' + (y + 3.5).toFixed(1) + '" text-anchor="end">' +
+        ltal(Math.round(top * f)) + "</text>";
+    });
+    function linje(felt) {
+      return serie.map(function (d, i) {
+        return (i ? "L" : "M") + bx(i).toFixed(1) + " " + by(d[felt]).toFixed(1);
+      }).join(" ");
+    }
+    var vask = "M" + bx(0).toFixed(1) + " " + by(0).toFixed(1) + " " +
+      serie.map(function (d, i) {
+        return "L" + bx(i).toFixed(1) + " " + by(d.visninger).toFixed(1);
+      }).join(" ") + " L" + bx(n - 1).toFixed(1) + " " + by(0).toFixed(1) + " Z";
+
+    var mrk = "";
+    [0, Math.floor(n / 2), n - 1].forEach(function (i) {
+      mrk += '<text class="gakse" x="' + bx(i).toFixed(1) + '" y="' + (H - 5) +
+        '" text-anchor="' + (i === 0 ? "start" : (i === n - 1 ? "end" : "middle")) +
+        '">' + dagMrk(serie[i].dato) + "</text>";
+    });
+    var sidst = serie[n - 1];
+    // Prikkerne har en 2px hvid ring, så de kan ses, hvor kurverne krydser
+    function prik(felt, farve) {
+      return '<circle cx="' + bx(n - 1).toFixed(1) + '" cy="' + by(sidst[felt]).toFixed(1) +
+        '" r="4" fill="' + farve + '" stroke="#fff" stroke-width="2"/>';
+    }
+    return '<div class="graf"><svg viewBox="0 0 ' + W + " " + H +
+      '" role="img" aria-label="Besøg og sidevisninger pr. dag">' + net +
+      '<path d="' + vask + '" fill="' + SERIEFARVER[1] + '" fill-opacity="0.10"/>' +
+      '<path d="' + linje("visninger") + '" fill="none" stroke="' + SERIEFARVER[1] +
+      '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>' +
+      '<path d="' + linje("besoeg") + '" fill="none" stroke="' + SERIEFARVER[0] +
+      '" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>' +
+      prik("visninger", SERIEFARVER[1]) + prik("besoeg", SERIEFARVER[0]) + mrk +
+      "</svg>" +
+      '<div class="tegnf"><span><i style="background:' + SERIEFARVER[0] +
+      '"></i>besøg — seneste døgn <b>' + ltal(sidst.besoeg) + "</b></span>" +
+      '<span><i style="background:' + SERIEFARVER[1] +
+      '"></i>sidevisninger — seneste døgn <b>' + ltal(sidst.visninger) +
+      "</b></span></div></div>";
+  }
+
+  // ---- Stablede søjler: temaer pr. dag -------------------------------------
+  function temasoejler(t) {
+    var datoer = (t && t.datoer) || [], serier = (t && t.serier) || [];
+    if (!datoer.length || !serier.length) return "";
+    var W = 960, H = 186, mV = 40, mH = 10, mT = 10, mB = 22, n = datoer.length;
+    var totaler = datoer.map(function (_, i) {
+      return serier.reduce(function (s, r) { return s + nul(r.tal[i]); }, 0);
+    });
+    var top = pentLoft(Math.max.apply(null, totaler.concat([1])));
+    var baand = (W - mV - mH) / n;
+    var bred = Math.min(20, Math.max(3, baand - 3));   // aldrig hele båndet: luft imellem
+
+    var net = "";
+    [0, 0.5, 1].forEach(function (f) {
+      var y = mT + (H - mT - mB) * (1 - f);
+      net += '<line class="gnet" x1="' + mV + '" y1="' + y.toFixed(1) + '" x2="' +
+        (W - mH) + '" y2="' + y.toFixed(1) + '"/><text class="gakse" x="' + (mV - 9) +
+        '" y="' + (y + 3.5).toFixed(1) + '" text-anchor="end">' +
+        Math.round(top * f) + "</text>";
+    });
+    var soejler = "";
+    datoer.forEach(function (d, i) {
+      var x = mV + baand * i + (baand - bred) / 2, y = H - mB;
+      serier.forEach(function (r, si) {
+        var v = nul(r.tal[i]);
+        if (!v) return;
+        var h = (H - mT - mB) * v / top;
+        y -= h;
+        // 2px mellemrum i fladens farve adskiller segmenterne - ikke en streg
+        soejler += '<rect x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' +
+          bred.toFixed(1) + '" height="' + Math.max(1, h - 2).toFixed(1) +
+          '" rx="1.5" fill="' + SERIEFARVER[si % SERIEFARVER.length] + '"/>';
+      });
+    });
+    var mrk = "";
+    [0, Math.floor(n / 2), n - 1].forEach(function (i) {
+      mrk += '<text class="gakse" x="' + (mV + baand * i + baand / 2).toFixed(1) +
+        '" y="' + (H - 5) + '" text-anchor="' +
+        (i === 0 ? "start" : (i === n - 1 ? "end" : "middle")) + '">' +
+        dagMrk(datoer[i]) + "</text>";
+    });
+    var tegn = serier.map(function (r, si) {
+      var sum = r.tal.reduce(function (a, b) { return a + nul(b); }, 0);
+      return '<span><i style="background:' + SERIEFARVER[si % SERIEFARVER.length] +
+        '"></i>' + esc(r.navn) + " <b>" + ltal(sum) + "</b></span>";
+    }).join("");
+    return '<div class="graf"><svg viewBox="0 0 ' + W + " " + H +
+      '" role="img" aria-label="Udgivne artikler pr. tema pr. dag">' +
+      net + soejler + mrk + '</svg><div class="tegnf">' + tegn + "</div></div>";
+  }
+
+  function temafarve(navn, alle) {
+    var i = alle.indexOf(navn);
+    return SERIEFARVER[(i < 0 ? 0 : i) % SERIEFARVER.length];
+  }
+
+  // Fælles tomme tilstande, så alle tre ruder svarer ens
+  // Fire forskellige tilstande, som ikke må forveksles. Datafilen skrives nu
+  // ALTID - også uden token - så filens tilstedeværelse siger ingenting
+  // længere. Feltet "maaling" gør.
+  function laeserTom() {
     if (!harFil) {
-      return ud + '<p class="manchet">Hvad bliver læst, hvad bliver ikke — og hvem ' +
-        "sender folk herind.</p>" +
-        '<div class="advarsel" style="margin:0"><strong>Der er ingen tal endnu.</strong> ' +
-        "Filen <code>data/laesertal-data.js</code> skrives af crawleren, når den kan komme " +
-        "til Cloudflare. Det kræver ét GitHub-secret — <code>CLOUDFLARE_API_TOKEN</code> — " +
-        "og opskriften står i <code>_redaktion/laesertal-opsaetning.md</code>. " +
-        "Når det er sat, står tallene her efter næste kørsel.</div>";
+      return '<div class="advarsel" style="margin:0"><strong>Der er ingen datafil endnu.</strong> ' +
+        "<code>data/laesertal-data.js</code> skrives af crawleren. Kør et crawl — " +
+        "eller <code>python3 crawler.py</code> — og genindlæs så den her side.</div>";
+    }
+    if (L.maaling === "mangler_token") {
+      return '<div class="advarsel" style="margin:0"><strong>Læsertallene mangler en nøgle.</strong> ' +
+        "Crawleren kan ikke komme til Cloudflare uden GitHub-secret'et " +
+        "<code>CLOUDFLARE_API_TOKEN</code>. Opskriften står i " +
+        "<code>_redaktion/laesertal-opsaetning.md</code>. Temaerne herunder " +
+        "kommer fra vores egne filer og virker uanset.</div>";
+    }
+    if (L.maaling === "fejl") {
+      return '<div class="advarsel" style="margin:0"><strong>Cloudflare svarede ikke.</strong> ' +
+        "Nøglen kan være udløbet, eller API'et var nede. Actions-loggen har " +
+        "linjen med 📈 og siger hvad der gik galt. Temaerne herunder rammes ikke.</div>";
     }
     if (!harTal) {
-      var maaltTom = new Date(L.opdateret).toLocaleString("da-DK",
+      var m = new Date(L.opdateret).toLocaleString("da-DK",
         { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
-      return ud + '<p class="manchet">Målingen kører — men Cloudflare har ikke ' +
-        "registreret ét eneste besøg i perioden.</p>" +
-        '<div class="advarsel" style="margin:0"><strong>Nul besøg på ' +
-        esc(String(L.dage || 7)) + " dage.</strong> Hentet " + esc(maaltTom) +
-        ". Nøglen virker — ellers var filen her slet ikke — så det er ét af tre:" +
+      return '<div class="advarsel" style="margin:0"><strong>Nul besøg på ' +
+        esc(String(L.dage || 7)) + " dage.</strong> Hentet " + esc(m) +
+        ". Nøglen virker — Cloudflare svarede — så det er ét af tre:" +
         "<ul style='margin:9px 0 0 18px'>" +
         "<li>Der er reelt ingen besøgende endnu. Tjek Cloudflares eget overblik: " +
         "viser det også nul, passer tallet.</li>" +
-        "<li>Der læses fra den forkerte konto. Har du flere Cloudflare-konti, " +
-        "tager crawleren den første, den får. Så skal <code>CLOUDFLARE_ACCOUNT_ID</code> " +
-        "sættes som secret.</li>" +
-        "<li>Beacon-koden på siden hører til et andet site i Web Analytics, end " +
-        "det crawleren spørger om.</li></ul></div>";
+        "<li>Der læses fra den forkerte konto (flere Cloudflare-konti).</li>" +
+        "<li>Site-tag'et i <code>crawler.py</code> passer ikke med sitet i " +
+        "Web Analytics. Det er <em>ikke</em> det samme som beacon-tokenet.</li></ul></div>";
     }
+    return "";
+  }
 
-    var maalt = new Date(L.opdateret).toLocaleString("da-DK",
+  function laeserManchet() {
+    var m = new Date(L.opdateret).toLocaleString("da-DK",
       { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
-    ud += '<p class="manchet">Seneste <strong>' + esc(String(L.dage || 7)) +
-      " dage</strong>, målt " + esc(maalt) + ". Tallene kommer fra Cloudflare, " +
+    return '<p class="manchet">Seneste <strong>' + esc(String(L.dage || 7)) +
+      " dage</strong>, målt " + esc(m) + ". Tallene kommer fra Cloudflare, " +
       "som sorterer bots fra — det her er mennesker.</p>";
+  }
 
+  // Ældre datafiler mangler de nye felter. Sig det, i stedet for at vise tomt.
+  function venterPaaCrawl(hvad) {
+    return '<div class="lgodt" style="border-left-color:var(--rav)">' + esc(hvad) +
+      " kommer efter næste crawl — datafilen er skrevet før den her del fandtes.</div>";
+  }
+
+  // ---- Rude 1: Overblik ----------------------------------------------------
+  function laeserOverblikHtml() {
+    var ud = "<h1>Læserne</h1>";
+    var tom = laeserTom();
+    if (tom) {
+      return ud + '<p class="manchet">Hvad bliver læst, hvad bliver ikke — og hvem ' +
+        "sender folk herind.</p>" + tom;
+    }
+    ud += laeserManchet();
     ud += '<div class="kpi">' +
       kpiKort(ltal(L.besoeg_i_alt), "besøg") +
       kpiKort(ltal(L.sidevisninger_i_alt), "sidevisninger") +
       kpiKort(ltal(L.ai_chat_besoeg), "besøg fra AI-chats") + "</div>";
+
+    var serie = L.serie || [];
+    ud += '<div class="lgruppe">Udviklingen dag for dag</div>';
+    ud += serie.length
+      ? '<p class="lmanchet">Seneste ' + esc(String(L.serie_dage || 30)) +
+        " dage. Nuller i venstre side er ægte: målingen kom først på siden " +
+        "22. juli, og aksen er ikke klippet til for at skjule det.</p>" +
+        dagskurve(serie)
+      : venterPaaCrawl("Dagskurven");
 
     ud += '<div class="lgruppe">Mest læste sider</div>' +
       '<p class="lmanchet">De 12 mest besøgte. Bjælken viser dem i forhold til ' +
@@ -432,20 +645,80 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       bjaelker(L.sider.slice(0, 12).map(function (s) {
         return { navn: s.sti, vaerdi: s.besoeg };
       }));
+    return ud;
+  }
 
-    var nul = L.faste_uden_besoeg || [];
-    ud += '<div class="lgruppe">Faste sider uden ét eneste besøg</div>';
-    ud += nul.length
-      ? '<div class="nul">Ingen åbnede de her sider i perioden. Det er som regel ' +
-        "den mest brugbare oplysning på skærmen: enten skal siderne være lettere at " +
-        "finde, eller også skal de væk." +
-        '<div class="nul-liste">' + nul.map(function (p) {
-          return "<code>" + esc(p) + "</code>";
-        }).join("") + "</div></div>"
-      : '<div class="lgodt">✓ Alle faste sider havde mindst ét besøg.</div>';
+  // ---- Rude 2: Nyhederne ---------------------------------------------------
+  function laeserNyhederHtml() {
+    var ud = "<h1>Nyhederne</h1>" +
+      '<p class="manchet">Hvilke historier bliver læst, og hvad vi skriver om. ' +
+      "De to ting er ikke det samme, og de står hver for sig herunder.</p>";
+    // Bemærk: her returneres IKKE tidligt. Temaerne kommer fra vores egne
+    // filer, så de skal stå der, også når læsertallene mangler.
+    var tom = laeserTom();
+    var arts = L ? (L.artikler || []) : [];
+    var katNavne = (((L || {}).udgivne_temaer || {}).serier || [])
+      .map(function (s) { return s.navn; });
 
-    var henv = (L.henvisere || []).slice(0, 10);
-    ud += '<div class="lgruppe">Hvor de kommer fra</div>';
+    ud += '<div class="lgruppe">Mest læste nyheder</div>';
+    if (tom) {
+      ud += tom;
+    } else if (!L.hasOwnProperty("artikler")) {
+      ud += venterPaaCrawl("Listen over mest læste nyheder");
+    } else if (!arts.length) {
+      ud += '<div class="nul">Ingen artikelsider blev åbnet i perioden. ' +
+        "Alle besøg gik til forsiden og de faste sider. Det er dét, der skal " +
+        "flyttes: nyhederne er hele grunden til, at siden findes.</div>";
+    } else {
+      ud += '<p class="lmanchet">Sorteret efter sidevisninger. Farveprikken er ' +
+        "artiklens tema. <strong>Klik på en linje</strong> for at se, hvor " +
+        "læserne kom fra.</p><div class=\"bjaelker\">" +
+        arts.slice(0, 20).map(function (a, i) {
+          return '<button class="art" data-art="' + i + '">' +
+            '<div class="art-nr">' + (i + 1) + "</div><div>" +
+            '<div class="art-rub">' + esc(a.rubrik) + '<span class="art-pil">›</span></div>' +
+            '<div class="art-meta">' + (a.kategori
+              ? '<i style="background:' + temafarve(a.kategori, katNavne) + '"></i>' +
+                esc(a.kategori) + " · " : "") + esc(a.dato || "") + "</div></div>" +
+            '<div class="art-tal"><b>' + ltal(a.visninger) + "</b><span>visninger</span></div></button>";
+        }).join("") + "</div>";
+    }
+
+    var lt = (L || {}).laeste_temaer || [];
+    if (lt.length) {
+      ud += '<div class="lgruppe">Temaer, der bliver læst</div>' +
+        '<p class="lmanchet">Sidevisninger på artikler, lagt sammen pr. tema. ' +
+        "Farverne er de samme som i grafen nedenfor.</p>" +
+        bjaelker(lt.map(function (t) {
+          return { navn: t.navn, vaerdi: t.visninger,
+                   farve: temafarve(t.navn, katNavne) };
+        }));
+    }
+
+    ud += '<div class="lgruppe">Temaer over tid — hvad vi udgiver</div>';
+    var ut = (L || {}).udgivne_temaer;
+    if (!ut || !(ut.serier || []).length) {
+      ud += venterPaaCrawl("Temakurven");
+    } else {
+      ud += '<p class="lmanchet">Antal artikler udgivet pr. dag, stablet efter tema. ' +
+        "Det her er vores egen produktion — ikke hvad folk læste. Tallene i " +
+        "tegnforklaringen er perioden i alt.</p>" + temasoejler(ut);
+    }
+    return ud;
+  }
+
+  // ---- Rude 3: Trafikken ---------------------------------------------------
+  function laeserTrafikHtml() {
+    var ud = "<h1>Hvor de kommer fra</h1>";
+    var tom = laeserTom();
+    if (tom) {
+      return ud + '<p class="manchet">Henvisere, AI-chats og de sider, ingen ' +
+        "har åbnet.</p>" + tom;
+    }
+    ud += laeserManchet();
+
+    var henv = (L.henvisere || []).slice(0, 12);
+    ud += '<div class="lgruppe">Henvisere</div>';
     ud += henv.length
       ? '<p class="lmanchet">Værten, browseren kom fra. <strong>direkte</strong> er ' +
         "dem, der skrev adressen selv, havde et bogmærke eller klikkede i en mail.</p>" +
@@ -462,7 +735,112 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         "Det er normalt i begyndelsen — chatterne skal først have hentet siderne, " +
         "og de skal have en grund til at citere dem.</div>";
 
+    var ingen = L.faste_uden_besoeg || [];
+    ud += '<div class="lgruppe">Faste sider, ingen har åbnet</div>';
+    ud += ingen.length
+      ? '<div class="nul">Ikke én eneste sidevisning i perioden — hverken udefra ' +
+        "eller via et klik herinde. Det er som regel den mest brugbare oplysning " +
+        "på skærmen: enten skal siderne være lettere at finde, eller også skal de væk." +
+        '<div class="nul-liste">' + ingen.map(function (p) {
+          return "<code>" + esc(p) + "</code>";
+        }).join("") + "</div></div>"
+      : '<div class="lgodt">✓ Alle faste sider blev åbnet mindst én gang.</div>';
     return ud;
+  }
+
+  var LAESERRUDER = {
+    laes: laeserOverblikHtml,
+    laesnyt: laeserNyhederHtml,
+    laestraf: laeserTrafikHtml
+  };
+
+  // Læselige navne på de værter, folk kommer fra. Cloudflare siger
+  // "l.facebook.com"; det er samme sted som "m.facebook.com", og delt op
+  // ligner hver af dem ingenting.
+  var HENVISERNAVNE = [
+    ["facebook.com", "Facebook"], ["fb.com", "Facebook"],
+    ["linkedin.com", "LinkedIn"], ["lnkd.in", "LinkedIn"],
+    ["google.", "Google"], ["bing.com", "Bing"],
+    ["duckduckgo.com", "DuckDuckGo"], ["t.co", "X/Twitter"],
+    ["x.com", "X/Twitter"], ["twitter.com", "X/Twitter"],
+    ["bsky.app", "Bluesky"], ["reddit.com", "Reddit"],
+    ["instagram.com", "Instagram"], ["buttondown.com", "Nyhedsbrevet"],
+    ["news.ycombinator.com", "Hacker News"],
+    // AI-chats. Samme liste som AI_CHAT_KILDER i crawler.py - står de her
+    // også, får de et læseligt navn i opdelingen pr. artikel.
+    ["chatgpt.com", "ChatGPT"], ["chat.openai.com", "ChatGPT"],
+    ["perplexity.ai", "Perplexity"], ["claude.ai", "Claude"],
+    ["copilot.microsoft.com", "Microsoft Copilot"],
+    ["gemini.google.com", "Gemini"], ["chat.deepseek.com", "DeepSeek"],
+    ["grok.com", "Grok"], ["you.com", "You.com"], ["poe.com", "Poe"]
+  ];
+
+  function henviserNavn(vaert) {
+    if (vaert === "direkte" || vaert === "herfra selv") return vaert;
+    var v = String(vaert || "").toLowerCase();
+    // Længste match først, så "gemini.google.com" ikke bliver til "Google"
+    var bedst = null;
+    for (var i = 0; i < HENVISERNAVNE.length; i++) {
+      var m = HENVISERNAVNE[i][0];
+      if (v.indexOf(m) >= 0 && (!bedst || m.length > bedst[0].length)) {
+        bedst = HENVISERNAVNE[i];
+      }
+    }
+    return bedst ? bedst[1] : vaert;
+  }
+
+  // Læg værter sammen, der er samme sted: l./m./www.facebook.com -> Facebook
+  function samlHenvisere(liste) {
+    var pr = {}, orden = [];
+    (liste || []).forEach(function (h) {
+      var n = henviserNavn(h.fra);
+      if (!pr[n]) { pr[n] = { navn: n, visninger: 0, besoeg: 0 }; orden.push(n); }
+      pr[n].visninger += nul(h.visninger);
+      pr[n].besoeg += nul(h.besoeg);
+    });
+    return orden.map(function (n) { return pr[n]; })
+      .sort(function (a, b) { return b.visninger - a.visninger; });
+  }
+
+  function aabnArtikel(i) {
+    var a = (L.artikler || [])[i];
+    if (!a) return;
+    var katNavne = (((L || {}).udgivne_temaer || {}).serier || [])
+      .map(function (s) { return s.navn; });
+    var kilder = samlHenvisere(a.henvisere);
+    var krop =
+      '<button class="luk" id="mLuk">✕</button>' +
+      "<h3>" + esc(a.rubrik) + "</h3>" +
+      '<div class="b">' + (a.kategori
+        ? '<i style="width:9px;height:9px;border-radius:50%;display:inline-block;' +
+          "margin-right:6px;background:" + temafarve(a.kategori, katNavne) + '"></i>' +
+          esc(a.kategori) + " · " : "") + esc(a.dato || "") + "</div>" +
+      '<div class="kpi" style="margin-bottom:6px">' +
+      kpiKort(ltal(a.visninger), "sidevisninger") +
+      kpiKort(ltal(a.besoeg), "besøg udefra") + "</div>" +
+      '<p class="lmanchet" style="margin-top:12px"><strong>Besøg</strong> er dem, ' +
+      "der landede direkte på artiklen. <strong>Sidevisninger</strong> tæller " +
+      "også dem, der klikkede sig derind fra forsiden.</p>";
+
+    krop += '<div class="lgruppe" style="margin-top:18px">Hvor de kom fra</div>';
+    krop += kilder.length
+      ? '<p class="lmanchet">Målt på sidevisninger. <strong>herfra selv</strong> ' +
+        "er klik inde på siden — typisk fra forsiden.</p>" +
+        bjaelker(kilder.map(function (k) {
+          return { navn: k.navn, vaerdi: k.visninger };
+        }))
+      : (L.hasOwnProperty("sidehenvisere")
+          ? '<div class="lgodt" style="border-left-color:var(--linje)">Ingen ' +
+            "henvisere registreret for den her artikel i perioden.</div>"
+          : venterPaaCrawl("Opdelingen pr. artikel"));
+
+    krop += '<div class="raekke"><a class="k" href="https://ainyheder.com' +
+      esc(a.sti) + '" target="_blank" rel="noopener" ' +
+      'style="text-decoration:none">Åbn artiklen ↗</a></div>';
+    modal.innerHTML = krop;
+    bag.classList.add("aaben");
+    document.body.style.overflow = "hidden";
+    document.getElementById("mLuk").addEventListener("click", luk);
   }
 
   var side = document.getElementById("side");
@@ -472,8 +850,12 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function alleEtaper() {
     var ud = [];
     // Læserne står øverst: det er dét, man kommer for at se om morgenen.
-    ud.push({ id: "laes", gruppe: "Læserne · seneste 7 dage", nr: "·",
-              navn: "Hvad bliver læst", laesertal: true });
+    ud.push({ id: "laes", gruppe: "Læserne", nr: 1,
+              navn: "Overblik", laesertal: true });
+    ud.push({ id: "laesnyt", gruppe: "Læserne", nr: 2,
+              navn: "Nyhederne", laesertal: true });
+    ud.push({ id: "laestraf", gruppe: "Læserne", nr: 3,
+              navn: "Hvor de kommer fra", laesertal: true });
     ETAPER.forEach(function (e, i) {
       ud.push({ id: "c" + i, gruppe: "Crawleren · hver time", nr: i + 1,
                 navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, trin: e.trin });
@@ -509,7 +891,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function tegnRude() {
     var e = alleEtaper().filter(function (x) { return x.id === valgt; })[0];
     if (!e) return;
-    if (e.laesertal) { rude.innerHTML = laeserHtml(); return; }
+    if (e.laesertal) { rude.innerHTML = (LAESERRUDER[e.id] || laeserOverblikHtml)(); return; }
     var kasser = (e.ikke || []).map(function (k) {
       return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
              '<div class="b">' + esc(k[1]) + "</div></div>";
@@ -542,6 +924,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   rude.addEventListener("click", function (ev) {
     var t = ev.target.closest(".hj");
     if (t) { aabn(t.dataset.n); return; }
+    var a = ev.target.closest(".art");
+    if (a) { aabnArtikel(Number(a.dataset.art)); return; }
     var d = ev.target.closest(".dok");
     if (d) aabnDok(d.dataset.dok);
   });

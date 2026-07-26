@@ -3519,6 +3519,10 @@ CF_GRAPHQL = "https://api.cloudflare.com/client/v4/graphql"
 #   dash.cloudflare.com/<konto>/web-analytics/overview?siteTag~in=<DET HER>
 CF_SITE_TAG = "7abf4e75cf4e48bda49ad354e8cd6f27"
 LAESERTAL_DAGE = 7
+# Kurverne skal kunne vise en udvikling, og det kan syv dage ikke. De første
+# uger står der nuller i venstre side - beacon'en kom på siden 22.07.2026 -
+# og det er ærligere end at klippe aksen til, så det ligner mere, end det er.
+LAESERTAL_SERIE_DAGE = 30
 
 # Bliver vi fundet i AI-chats? Cloudflare fortæller kun, HVILKEN vært folk kom
 # fra. Listen her oversætter de værter, vi kender, til læselige navne. Ukendte
@@ -3564,13 +3568,210 @@ def _ai_chat_navn(vaert: str) -> str | None:
 
 
 def _faste_uden_besoeg(sider: list) -> list:
-    """De faste sider, ingen har åbnet i perioden. Cloudflare nævner slet ikke
-    en side uden besøg, så fraværet ER svaret."""
-    besoegt = {s["sti"].rstrip("/") or "/": s["besoeg"] for s in sider}
-    return [p for p in FASTE_SIDER if besoegt.get(p, 0) == 0]
+    """De faste sider, som slet ingen har åbnet i perioden.
+
+    Tæller SIDEVISNINGER, ikke besøg. "Besøg" er kun dem, der landede på siden
+    udefra - så en side kan have nul besøg og alligevel være læst af mange, der
+    klikkede sig derind fra forsiden. Målt 26.07.2026 havde /prompts.html nul
+    besøg og fjorten visninger; kaldte vi den ulæst, ville gennemgangen gå i
+    gang med at rette noget, der ikke fejlede. Cloudflare nævner slet ikke en
+    side uden trafik, så fraværet fra listen ER svaret."""
+    set_ = {s["sti"].rstrip("/") or "/": s["visninger"] for s in sider}
+    return [p for p in FASTE_SIDER if set_.get(p, 0) == 0]
+
+
+def _hent_dagsserie(token: str, konto_tag: str, dage: int) -> list:
+    """Besøg og sidevisninger pr. dag - kurven, der viser om det går frem.
+
+    Egen forespørgsel med vilje. Grupperingen på dato er den eneste del, jeg
+    ikke har set svare endnu, og fejler den, skal vi kun miste kurven - ikke
+    de tal, der allerede virker."""
+    nu = datetime.now(timezone.utc)
+    query = """
+query ($konto: String!, $tag: String!, $fra: Time!, $til: Time!) {
+  viewer { accounts(filter: {accountTag: $konto}) {
+    dage: rumPageloadEventsAdaptiveGroups(
+      limit: 400,
+      filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
+    ) { sum { visits } count dimensions { date } }
+  } }
+}"""
+    try:
+        svar = json.loads(hent_url(CF_GRAPHQL, data=json.dumps({
+            "query": query,
+            "variables": {
+                "konto": konto_tag, "tag": CF_SITE_TAG,
+                "fra": (nu - timedelta(days=dage)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "til": nu.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            },
+        }).encode(), headers={"Authorization": f"Bearer {token}",
+                              "Content-Type": "application/json"}))
+        if svar.get("errors"):
+            print(f"📈 ⚠️ Dagskurven sprang over: {str(svar['errors'])[:120]}")
+            return []
+        konti = (svar.get("data") or {}).get("viewer", {}).get("accounts") or []
+        raekker = (konti[0].get("dage") if konti else []) or []
+        maalt = {(r.get("dimensions") or {}).get("date"): r for r in raekker}
+        # Fyld hullerne ud: en dag uden besøg nævner Cloudflare slet ikke, og
+        # uden nulpunkterne ville kurven springe hen over de stille dage.
+        ud, idag = [], nu.date()
+        for i in range(dage - 1, -1, -1):
+            d = (idag - timedelta(days=i)).isoformat()
+            r = maalt.get(d)
+            ud.append({"dato": d,
+                       "besoeg": ((r or {}).get("sum") or {}).get("visits", 0),
+                       "visninger": (r or {}).get("count", 0)})
+        return ud
+    except Exception as fejl:
+        print(f"📈 ⚠️ Dagskurven sprang over ({type(fejl).__name__}: {fejl})")
+        return []
+
+
+def _hent_sidehenvisere(token: str, konto_tag: str, dage: int) -> dict:
+    """Hvor læserne kom fra - opdelt PR. SIDE, ikke for hele sitet under ét.
+
+    Samme datasæt som de øvrige tal, men grupperet på to dimensioner på én
+    gang (sti × henviser). Det er dét, der gør det muligt at klikke ind på en
+    artikel og se, om folk kom fra Facebook eller fra Google. Egen forespørgsel
+    med vilje: fejler den, mister vi kun opdelingen."""
+    nu = datetime.now(timezone.utc)
+    query = """
+query ($konto: String!, $tag: String!, $fra: Time!, $til: Time!) {
+  viewer { accounts(filter: {accountTag: $konto}) {
+    par: rumPageloadEventsAdaptiveGroups(
+      limit: 500, orderBy: [sum_visits_DESC],
+      filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
+    ) { sum { visits } count dimensions { requestPath refererHost } }
+  } }
+}"""
+    try:
+        svar = json.loads(hent_url(CF_GRAPHQL, data=json.dumps({
+            "query": query,
+            "variables": {
+                "konto": konto_tag, "tag": CF_SITE_TAG,
+                "fra": (nu - timedelta(days=dage)).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "til": nu.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            },
+        }).encode(), headers={"Authorization": f"Bearer {token}",
+                              "Content-Type": "application/json"}))
+        if svar.get("errors"):
+            print(f"📈 ⚠️ Henvisere pr. side sprang over: {str(svar['errors'])[:120]}")
+            return {}
+        konti = (svar.get("data") or {}).get("viewer", {}).get("accounts") or []
+        pr_sti: dict = {}
+        for r in ((konti[0].get("par") if konti else []) or []):
+            dim = r.get("dimensions") or {}
+            sti = dim.get("requestPath") or ""
+            if not sti:
+                continue
+            vaert = dim.get("refererHost") or "direkte"
+            if vaert == "ainyheder.com":
+                vaert = "herfra selv"     # klik videre inde på siden
+            pr_sti.setdefault(sti, []).append(
+                {"fra": vaert, "besoeg": (r.get("sum") or {}).get("visits", 0),
+                 "visninger": r.get("count", 0)})
+        for liste in pr_sti.values():
+            liste.sort(key=lambda h: -h["visninger"])
+        return pr_sti
+    except Exception as fejl:
+        print(f"📈 ⚠️ Henvisere pr. side sprang over ({type(fejl).__name__}: {fejl})")
+        return {}
+
+
+def _artikel_kartotek() -> dict:
+    """Sti -> {rubrik, kategori, dato} for hver artikelside, vi kan finde.
+
+    Cloudflare kender kun stien "/artikel/c13d67…html". Skal panelet vise en
+    rubrik i stedet for en hash, skal de to kobles her. articles.json har det
+    seneste vindue med de pæneste data; de statiske sider dækker resten, fordi
+    de overlever, når artiklen falder ud af arkivfilen."""
+    kartotek: dict = {}
+    for p in sorted(ARTIKEL_MAPPE.glob("*.html")):
+        h = p.read_text(encoding="utf-8", errors="ignore")
+        def felt(navn: str) -> str:
+            m = re.search(r'"%s":\s*"((?:[^"\\]|\\.)*)"' % navn, h)
+            # JSON-LD'en er escapet ("Samfund & etik"), så den skal tilbage
+            return json.loads('"%s"' % m.group(1)) if m else ""
+        kartotek["/" + p.relative_to(ROOT).as_posix()] = {
+            "rubrik": felt("headline"),
+            "kategori": felt("articleSection"),
+            "dato": felt("datePublished")[:10],
+        }
+    try:
+        arkiv = json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))
+        for a in arkiv.get("artikler", []):
+            if a.get("side"):
+                kartotek["/" + a["side"]] = {
+                    "rubrik": a.get("rubrik") or a.get("titel", ""),
+                    "kategori": a.get("kategori", ""),
+                    "dato": (a.get("dato") or "")[:10],
+                }
+    except (OSError, json.JSONDecodeError):
+        pass
+    return kartotek
+
+
+def _tema_serie(kartotek: dict, dage: int) -> dict:
+    """Hvor mange artikler vi UDGAV pr. kategori pr. dag.
+
+    Det er vores egen produktion, ikke hvad folk læste - to forskellige ting,
+    og panelet siger hvilken er hvilken. Den her kan regnes ud lokalt og har
+    hele arkivet bag sig, mens læsetallene kun kender de sidste dage."""
+    idag = datetime.now(timezone.utc).date()
+    datoer = [(idag - timedelta(days=i)).isoformat() for i in range(dage - 1, -1, -1)]
+    plads = {d: i for i, d in enumerate(datoer)}
+    pr_kat: dict = {}
+    for v in kartotek.values():
+        kat, d = v.get("kategori"), v.get("dato")
+        if not kat or d not in plads:
+            continue
+        pr_kat.setdefault(kat, [0] * len(datoer))[plads[d]] += 1
+    serier = sorted(({"navn": k, "tal": v} for k, v in pr_kat.items()),
+                    key=lambda s: -sum(s["tal"]))
+    return {"datoer": datoer, "serier": serier}
+
+
+def _skriv_laesertal(tal: dict) -> None:
+    """Skriver begge udgaver af datafilen: JSON til mennesker og maskiner, og
+    en .js-udgave, fordi kontrolpanelet åbnes fra file://, hvor browseren ikke
+    må hente JSON. Ligger i data/, fordi det er dén mappe, workflow'en
+    committer."""
+    LAESERTAL_FIL.parent.mkdir(exist_ok=True)
+    LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
+                             encoding="utf-8")
+    (LAESERTAL_FIL.parent / "laesertal-data.js").write_text(
+        "window.LAESERTAL = " + json.dumps(tal, ensure_ascii=False, indent=1) + ";\n",
+        encoding="utf-8")
 
 
 def hent_laesertal() -> dict | None:
+    """Skriver ALTID datafilen - også når Cloudflare ikke kan svare.
+
+    Temaerne regnes ud af vores egne artikelsider og har intet med Cloudflare
+    at gøre. Lå de inde i det svar, så et udløbet token også ville tage
+    temagrafen med sig, og det ville se ud som om arkivet var forsvundet.
+    Læsertallene er den valgfri del; temaerne er der altid."""
+    kartotek = _artikel_kartotek()
+    tal = {
+        "opdateret": datetime.now(timezone.utc).isoformat(),
+        "dage": LAESERTAL_DAGE,
+        "serie_dage": LAESERTAL_SERIE_DAGE,
+        "udgivne_temaer": _tema_serie(kartotek, LAESERTAL_SERIE_DAGE),
+        "maaling": "mangler_token",
+        "besoeg_i_alt": 0, "sidevisninger_i_alt": 0, "ai_chat_besoeg": 0,
+        "sider": [], "henvisere": [], "ai_chats": [], "sidehenvisere": {},
+        "faste_uden_besoeg": [], "serie": [], "artikler": [], "laeste_temaer": [],
+    }
+    if os.environ.get("CLOUDFLARE_API_TOKEN", "").strip():
+        maalt = _hent_cloudflare_tal(kartotek)
+        tal["maaling"] = "ok" if maalt else "fejl"
+        if maalt:
+            tal.update(maalt)
+    _skriv_laesertal(tal)
+    return tal
+
+
+def _hent_cloudflare_tal(kartotek: dict) -> dict | None:
     """Henter de seneste dages besøg pr. side fra Cloudflare Web Analytics.
     Fejler stille - læsertal er en gave, ikke en forudsætning."""
     token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
@@ -3650,6 +3851,34 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
                 pr_chat[navn] = pr_chat.get(navn, 0) + h["besoeg"]
         ai_chats = sorted(({"navn": n, "besoeg": b} for n, b in pr_chat.items()),
                           key=lambda a: -a["besoeg"])
+        # Artikelsiderne med rubrik og kategori på, så panelet kan vise, HVILKE
+        # nyheder der blev læst - ikke en liste af hashede filnavne. Kartoteket
+        # kommer udefra: det er allerede læst én gang, og de 110 filer skal
+        # ikke åbnes to gange pr. kørsel.
+        pr_sti = _hent_sidehenvisere(token, d.get("accountTag") or konto,
+                                     LAESERTAL_DAGE)
+        artikler = []
+        for s in sider:
+            if not s["sti"].startswith("/artikel/"):
+                continue
+            k = kartotek.get(s["sti"], {})
+            artikler.append({
+                "sti": s["sti"], "besoeg": s["besoeg"], "visninger": s["visninger"],
+                "rubrik": k.get("rubrik") or s["sti"].rsplit("/", 1)[-1],
+                "kategori": k.get("kategori", ""), "dato": k.get("dato", ""),
+                "henvisere": pr_sti.get(s["sti"], []),
+            })
+        artikler.sort(key=lambda a: (-a["visninger"], -a["besoeg"]))
+        # Samme opdeling for de faste sider, så man også kan klikke ind på dem
+        sidehenvisere = {s["sti"]: pr_sti.get(s["sti"], []) for s in sider}
+        # Hvilke temaer bliver rent faktisk LÆST. Tomt i begyndelsen, fordi
+        # artikeltrafikken skal komme først - og det er i sig selv svaret.
+        pr_tema: dict[str, int] = {}
+        for a in artikler:
+            if a["kategori"]:
+                pr_tema[a["kategori"]] = pr_tema.get(a["kategori"], 0) + a["visninger"]
+        laeste_temaer = sorted(({"navn": k, "visninger": v} for k, v in pr_tema.items()),
+                               key=lambda t: -t["visninger"])
         tal = {
             "opdateret": nu.isoformat(),
             "dage": LAESERTAL_DAGE,
@@ -3660,17 +3889,13 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
             "ai_chats": ai_chats,
             "ai_chat_besoeg": sum(a["besoeg"] for a in ai_chats),
             "faste_uden_besoeg": _faste_uden_besoeg(sider),
+            "serie_dage": LAESERTAL_SERIE_DAGE,
+            "serie": _hent_dagsserie(token, d.get("accountTag") or konto,
+                                     LAESERTAL_SERIE_DAGE),
+            "artikler": artikler,
+            "laeste_temaer": laeste_temaer,
+            "sidehenvisere": sidehenvisere,
         }
-        LAESERTAL_FIL.parent.mkdir(exist_ok=True)
-        LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
-                                 encoding="utf-8")
-        # Samme data som JavaScript - så kontrolpanelet virker fra file://,
-        # præcis som hjerne-data.js. Ligger i data/, fordi det er dén mappe,
-        # workflow'en committer.
-        (LAESERTAL_FIL.parent / "laesertal-data.js").write_text(
-            "window.LAESERTAL = "
-            + json.dumps(tal, ensure_ascii=False, indent=1) + ";\n",
-            encoding="utf-8")
         print(f"📈 Læsertal: {tal['besoeg_i_alt']} besøg på "
               f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage"
               + (f" · {tal['ai_chat_besoeg']} fra AI-chats" if ai_chats else ""))
