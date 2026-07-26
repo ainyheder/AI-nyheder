@@ -4,6 +4,27 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+> **Efterspil om morgenen (26.07, ca. 08:30).** Tre ting dukkede op, da Torben
+> skulle hente nattens arbejde, og de er værd at kende, fordi de kommer igen:
+>
+> 1. **En efterladt `.git/index.lock`** spærrede for hans commit. Tom fil, fra
+>    23:20, altså efterladt af en afbrudt git-kommando i første kørsel. Fjernet.
+> 2. **103 merge-konflikter.** Crawleren havde kørt seks gange på GitHub imens og
+>    lagt **selvhostede fonte** ind, mens nattens commit lagde **JSON-LD og
+>    alt-tekst** ind — begge steder i `<head>`. Kun én linje var reelt i konflikt
+>    i `crawler.py`; resten af nattens arbejde beholdt git selv. Løst ved at
+>    beholde begge, og for de 102 artikelsider ved at tage crawlerens nyere
+>    indhold og køre `opgrader-gamle-artikelsider.py`, som lagde JSON-LD og
+>    alt-tekst tilbage. Resultat: 142 af 142 sider har nu begge dele.
+>    **Læren: jo længere nattens arbejde ligger upushet, jo større bliver
+>    konflikten.** Crawleren rører de samme filer nitten gange i døgnet.
+> 3. **Kontrolpanelet sagde "Nat-loggen · FINDES IKKE ENDNU"** om en fil, der
+>    havde ligget der i ni timer. Panelet læser et øjebliksbillede i
+>    `data/hjerne-data.js`, og den fil skrives kun ved en **lokal** crawler-kørsel
+>    — statusfilen var fra 22:28, loggen fra 23:20. Kørt `skriv_hjerne_status()`
+>    manuelt. Lagt i køen som et selvstændigt punkt, for det rammer præcis dét,
+>    panelet er til: at læse regnskabet om morgenen.
+>
 > **Uafhentet arbejde ved start af sidste kørsel (03:00):** 110 ændrede filer,
 > intet committet. Jeg tjekkede, om noget stammer fra tidligere nætter — det gør
 > det ikke. HEAD er `0b54df2` fra kl. 22:55, og alle ændringer har tidsstempel
