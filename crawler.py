@@ -384,6 +384,35 @@ NAT_DOKUMENTER = [
 ]
 
 
+def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
+    """Klipper en lang log, uden at efterlade en halv indgang.
+
+    Nat-loggen vokser med en nat om dagen og er allerede over 50 KB. Panelet
+    skal kunne vise de seneste nætter uden at hele historikken indlejres i
+    `hjerne-data.js`, som ligger i data/ og committes. Nyeste står øverst, så
+    vi tager toppen - men klipper ved en `---`-grænse, så en indgang aldrig
+    ender midt i en sætning.
+    """
+    if len(tekst) <= maks:
+        return tekst
+    # Nattens regnskab skal ALTID med - panelets side hedder "Du læser
+    # regnskabet om morgenen", så det er selve pointen. Ligger det efter
+    # grænsen, flyttes grænsen ud til efter det i stedet for omvendt.
+    slut = maks
+    start = tekst.find("### Nattens regnskab")
+    if start >= 0:
+        efter = tekst.find("\n---\n", start)
+        slut = max(slut, len(tekst) if efter < 0 else efter + 5)
+    if slut >= len(tekst):
+        return tekst
+    skaaret = tekst[:slut]
+    graense = skaaret.rfind("\n---\n")
+    if graense > slut // 3:
+        skaaret = skaaret[:graense]
+    return (skaaret.rstrip() + "\n\n---\n\n*Ældre indgange er klippet fra her. "
+            "Hele historikken står i `_redaktion/nat-log.md`.*\n")
+
+
 def _natteloop_status() -> list:
     ud = []
     for noegle, fil, navn, besk, kan_rettes in NAT_DOKUMENTER:
@@ -395,8 +424,8 @@ def _natteloop_status() -> list:
         ud.append({"noegle": noegle, "fil": fil, "navn": navn,
                    "beskrivelse": besk, "kan_rettes": kan_rettes,
                    "findes": bool(indhold),
-                   # loggen kan blive lang - panelet skal kun vise toppen
-                   "indhold": indhold if kan_rettes else indhold[:4000]})
+                   # loggen kan blive lang - panelet skal kun vise de nyeste
+                   "indhold": indhold if kan_rettes else _klip_ved_sektion(indhold)})
     return ud
 
 

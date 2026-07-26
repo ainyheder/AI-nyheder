@@ -133,6 +133,62 @@ button.k.fyldt:hover { opacity:.9; color:#fff; }
   padding:14px 28px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; box-shadow:0 -4px 20px rgba(25,23,20,.06); }
 .bund .tekst { font-size:13.5px; color:var(--svag); margin-right:auto; }
 .tom { background:var(--kort); border:1px dashed var(--linje); border-radius:14px; padding:34px; text-align:center; color:var(--svag); font-size:15px; }
+
+/* ---- Læsevisning af nat-loggen og gennemgangen -------------------------- */
+.laesevis { font-size:15px; line-height:1.7; }
+.laesevis .intro { color:var(--svag); font-size:14px; margin-bottom:18px; }
+
+/* Én nat = ét kort */
+.lkort { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
+  padding:22px 26px; margin-bottom:14px; box-shadow:var(--skygge); }
+.lkort.regnskab { background:var(--accent-svag); border-color:#cfcafb; }
+.lkort > .dato { font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:700;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
+.lkort.regnskab > .dato { color:#4438c9; }
+.lkort > .titel { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:20px;
+  line-height:1.22; letter-spacing:-.01em; margin-bottom:14px; }
+.lkort > .titel:only-child, .lkort > .dato + .titel:last-child { margin-bottom:0; }
+
+/* Fandt / Gjorde / Testede / Til Torben */
+.lfelt { display:grid; grid-template-columns:96px 1fr; gap:14px; align-items:start;
+  padding:12px 0; border-top:1px solid var(--linje); }
+.lkort.regnskab .lfelt { border-top-color:#d9d4f7; }
+.lfelt:first-of-type { border-top:0; padding-top:2px; }
+.lfelt > .navn { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--svag); padding-top:4px; }
+.lfelt.torben > .navn { color:var(--rav); }
+.lfelt.torben { background:#fdf9ef; border-radius:10px; padding:14px 16px; margin:10px -16px 0;
+  border-top:0; border-left:3px solid var(--rav); }
+
+.laesevis p { margin:0 0 11px; }
+.laesevis p:last-child { margin-bottom:0; }
+.laesevis h4 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:16px;
+  margin:18px 0 8px; }
+.laesevis ul, .laesevis ol { margin:0 0 12px; padding-left:22px; }
+.laesevis li { margin-bottom:5px; }
+.laesevis li::marker { color:var(--accent); }
+.laesevis strong { font-weight:700; background:linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+.lkort.regnskab .laesevis strong, .lkort.regnskab strong { background:linear-gradient(transparent 62%, #dcd7fb 62%); }
+.laesevis em { font-style:italic; color:var(--svag); }
+.laesevis code { font-family:"JetBrains Mono",monospace; font-size:12.5px;
+  background:color-mix(in srgb, var(--blaek) 6%, transparent); border-radius:5px; padding:1.5px 6px; }
+.laesevis pre { background:#1d1b18; color:#e8e4dc; border-radius:12px; padding:15px 18px;
+  overflow-x:auto; margin:0 0 13px; }
+.laesevis pre code { background:none; padding:0; color:inherit; font-size:12.5px; line-height:1.6; }
+.laesevis blockquote { background:#fdf9ef; border-left:3px solid var(--rav);
+  border-radius:0 12px 12px 0; padding:14px 18px; margin:0 0 14px; font-size:14.5px; }
+.laesevis blockquote p:last-child { margin-bottom:0; }
+.laesevis blockquote ol, .laesevis blockquote ul { margin-bottom:0; }
+.laesevis hr { border:0; border-top:1px solid var(--linje); margin:16px 0; }
+.laesevis table { border-collapse:collapse; width:100%; font-size:13.5px; margin:0 0 14px; }
+.laesevis th, .laesevis td { border:1px solid var(--linje); padding:7px 11px; text-align:left; vertical-align:top; }
+.laesevis th { background:color-mix(in srgb, var(--blaek) 4%, transparent); font-weight:700; }
+.laesevis a { color:var(--accent); }
+.lslut { text-align:center; color:var(--svag); font-size:13px; padding:16px 0 4px; }
+@media (max-width:560px) {
+  .lfelt { grid-template-columns:1fr; gap:2px; }
+  .lkort { padding:18px; }
+}
 code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(--accent-svag); padding:2px 6px; border-radius:5px; }
 </style>
 </head>
@@ -391,6 +447,130 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     return dokAendret[k] !== undefined && DOK[k] && dokAendret[k] !== DOK[k].indhold;
   }
 
+  // ---- Markdown -> HTML, så nat-loggen kan læses i stedet for granskes ----
+  // Lille renderer med vilje: panelet åbnes ofte fra file://, hvor vi ikke kan
+  // hente et bibliotek. Alt escapes FØR der sættes tags på, så en rubrik fra et
+  // fremmed feed i loggen ikke kan finde på noget.
+  function mdTekst(s) {
+    return esc(s)
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[\s(—])\*([^*\n]+)\*/g, "$1<em>$2</em>")
+      // Kun harmløse adresser bliver til links. Loggen citerer rubrikker fra
+      // fremmede feeds, og "javascript:" i en markdown-parentes ville ellers
+      // blive et klikbart stykke kode.
+      .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (hele, tekst, url) {
+        return /^(https?:\/\/|\/|#|mailto:)/i.test(url)
+          ? '<a href="' + url + '" rel="noopener">' + tekst + "</a>"
+          : hele;
+      });
+  }
+
+  function mdBlok(md) {
+    var l = String(md || "").replace(/\r/g, "").split("\n"), ud = [], i = 0;
+    function afsnit(tekst) {
+      // "**Fandt:** ..." bliver til et felt med etiket i stedet for fed skrift
+      var m = tekst.match(/^\*\*(Fandt|Gjorde|Testede|Til Torben|Fandt ikke):?\*\*\s*([\s\S]*)$/);
+      if (m) {
+        var klasse = m[1] === "Til Torben" ? " torben" : "";
+        return '<div class="lfelt' + klasse + '"><div class="navn">' + esc(m[1]) +
+          '</div><div>' + mdTekst(m[2]) + "</div></div>";
+      }
+      return "<p>" + mdTekst(tekst) + "</p>";
+    }
+    while (i < l.length) {
+      var r = l[i];
+      if (!r.trim()) { i++; continue; }
+      if (/^```/.test(r)) {                                   // kodeblok
+        var kode = []; i++;
+        while (i < l.length && !/^```/.test(l[i])) { kode.push(l[i]); i++; }
+        i++;
+        ud.push("<pre><code>" + esc(kode.join("\n")) + "</code></pre>");
+      } else if (/^\s*\|.*\|\s*$/.test(r)) {                  // tabel
+        var raek = [];
+        while (i < l.length && /^\s*\|.*\|\s*$/.test(l[i])) { raek.push(l[i]); i++; }
+        var celler = raek.map(function (x) {
+          return x.trim().replace(/^\||\|$/g, "").split("|").map(function (c) { return c.trim(); });
+        }).filter(function (c) { return !c.every(function (x) { return /^:?-{2,}:?$/.test(x); }); });
+        var t = "<table>";
+        celler.forEach(function (c, n) {
+          t += "<tr>" + c.map(function (x) {
+            return n === 0 ? "<th>" + mdTekst(x) + "</th>" : "<td>" + mdTekst(x) + "</td>";
+          }).join("") + "</tr>";
+        });
+        ud.push(t + "</table>");
+      } else if (/^>\s?/.test(r)) {                           // citatblok
+        var cit = [];
+        while (i < l.length && (/^>\s?/.test(l[i]) || (cit.length && !l[i].trim()))) {
+          if (!l[i].trim()) { if (i + 1 < l.length && /^>/.test(l[i + 1])) cit.push(""); else break; }
+          else cit.push(l[i].replace(/^>\s?/, ""));
+          i++;
+        }
+        ud.push("<blockquote>" + mdBlok(cit.join("\n")) + "</blockquote>");
+      } else if (/^\s*([-*]|\d+\.)\s+/.test(r)) {             // liste
+        var nummer = /^\s*\d+\./.test(r), punkter = [], nu = null;
+        while (i < l.length && (/^\s*([-*]|\d+\.)\s+/.test(l[i]) || (nu !== null && /^\s{2,}\S/.test(l[i])))) {
+          var p = l[i].match(/^\s*(?:[-*]|\d+\.)\s+([\s\S]*)$/);
+          if (p) { nu = [p[1]]; punkter.push(nu); }
+          else if (nu) nu.push(l[i].trim());
+          i++;
+        }
+        ud.push((nummer ? "<ol>" : "<ul>") + punkter.map(function (p) {
+          return "<li>" + mdTekst(p.join(" ")) + "</li>";
+        }).join("") + (nummer ? "</ol>" : "</ul>"));
+      } else if (/^#{1,6}\s+/.test(r)) {                      // overskrift inde i et kort
+        ud.push("<h4>" + mdTekst(r.replace(/^#{1,6}\s+/, "")) + "</h4>"); i++;
+      } else if (/^(-{3,}|\*{3,})\s*$/.test(r)) {
+        ud.push("<hr>"); i++;
+      } else {                                                // almindeligt afsnit
+        var buf = [];
+        while (i < l.length && l[i].trim() && !/^(#{1,6}\s|>|```|\s*\||-{3,}\s*$)/.test(l[i])
+               && !/^\s*([-*]|\d+\.)\s+/.test(l[i])) { buf.push(l[i].trim()); i++; }
+        if (!buf.length) { i++; continue; }
+        ud.push(afsnit(buf.join(" ")));
+      }
+    }
+    return ud.join("");
+  }
+
+  // Deler loggen op, så hver nat bliver sit eget kort
+  function logHtml(md) {
+    var tekst = String(md || "").replace(/\r/g, "");
+    var l = tekst.split("\n"), intro = [], dele = [], nu = null;
+    l.forEach(function (r) {
+      var h = r.match(/^(#{2,3})\s+(.*\S)\s*$/);
+      if (h) { nu = { niveau: h[1].length, titel: h[2], krop: [] }; dele.push(nu); return; }
+      if (/^#\s+/.test(r)) return;                       // filens egen H1
+      (nu ? nu.krop : intro).push(r);
+    });
+    // introen: alt før første nat. Skillelinjer væk, resten som den er.
+    var ud = "";
+    var itxt = intro.join("\n").replace(/^\s*-{3,}\s*$/gm, "").trim();
+    if (itxt) ud += '<div class="intro">' + mdBlok(itxt) + "</div>";
+    if (!dele.length) return ud || mdBlok(tekst);
+    var MDR = ["januar", "februar", "marts", "april", "maj", "juni",
+               "juli", "august", "september", "oktober", "november", "december"];
+    dele.forEach(function (d) {
+      // Overskrifterne står som "2026-07-26 · Titel", men regnskabet vender om:
+      // "Nattens regnskab · 2026-07-26". Find datoen, hvor den end står, og lad
+      // resten være titlen - så også "(første kørsel)" bliver hængende rigtigt.
+      var dm = d.titel.match(/(\d{4})-(\d{2})-(\d{2})/);
+      var dato = "", titel = d.titel;
+      if (dm) {
+        dato = parseInt(dm[3], 10) + ". " + MDR[parseInt(dm[2], 10) - 1] + " " + dm[1];
+        titel = d.titel.replace(dm[0], "").replace(/\s*·\s*/g, " ")
+                       .replace(/\s{2,}/g, " ").trim() || "Natten";
+      }
+      var regnskab = /regnskab/i.test(d.titel);
+      var krop = d.krop.join("\n").replace(/^\s*-{3,}\s*$/gm, "").trim();
+      ud += '<article class="lkort' + (regnskab ? " regnskab" : "") + '">' +
+        (dato ? '<div class="dato">' + esc(dato) + "</div>" : "") +
+        '<div class="titel">' + mdTekst(titel) + "</div>" +
+        mdBlok(krop) + "</article>";
+    });
+    return ud;
+  }
+
   function dokHtml(k) {
     var d = DOK[k];
     if (!d) return "";
@@ -544,13 +724,16 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       "<h3>" + esc(d.navn) + "</h3>" +
       '<div class="b">' + esc(d.beskrivelse) + " · <code>_redaktion/" + esc(d.fil) + "</code></div>" +
       (kan ? "" : '<div class="advarsel">Den her fil skriver maskinen selv. Du kan læse den, ikke rette den.</div>') +
-      "<label>" + (kan ? "Indhold" : "Indhold (kun læsning)") + "</label>" +
-      '<textarea id="dTekst" spellcheck="false" style="min-height:420px"' +
-      (kan ? "" : " readonly") + ">" + esc(dokTekst(k)) + "</textarea>" +
-      (kan ? '<div class="raekke">' +
-        '<button class="k fyldt" id="dGem">Gem ' + esc(d.fil) + "</button>" +
-        '<button class="k" id="dHent">Hent fil</button>' +
-        '<button class="k" id="dFortryd">Fortryd mine ændringer</button></div>' : "");
+      (kan
+        ? "<label>Indhold</label>" +
+          '<textarea id="dTekst" spellcheck="false" style="min-height:420px">' +
+          esc(dokTekst(k)) + "</textarea>" +
+          '<div class="raekke">' +
+          '<button class="k fyldt" id="dGem">Gem ' + esc(d.fil) + "</button>" +
+          '<button class="k" id="dHent">Hent fil</button>' +
+          '<button class="k" id="dFortryd">Fortryd mine ændringer</button></div>'
+        : '<div class="laesevis">' + logHtml(dokTekst(k)) +
+          '<div class="lslut">Hele filen står i <code>_redaktion/' + esc(d.fil) + "</code></div></div>");
     bag.classList.add("aaben");
     document.body.style.overflow = "hidden";
     document.getElementById("mLuk").addEventListener("click", luk);

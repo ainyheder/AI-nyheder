@@ -38,6 +38,9 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       gerne. Alternativt kan panelet `fetch`e filerne selv, men det virker ikke
       fra `file://`, og det er netop dét, JS-filen findes for.
       *Punkt 6 — man skal kunne holde styr på det.*
+      **Bemærk:** selve *visningen* blev lavet 26.07 (loggen renderes nu som
+      kort i stedet for rå markdown, og grænsen er hævet fra 4.000 til 30.000
+      tegn). Det, der stadig mangler, er at filen bliver opdateret af sig selv.
 
 - [ ] **Kørekortet kan ikke nulstilles, og det spærrer for hold.** Al fremdrift
       ligger i `localStorage` (`aikort`, `aikort_praktik`, `aikort_e` m.fl.), og

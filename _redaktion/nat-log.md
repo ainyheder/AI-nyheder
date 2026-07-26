@@ -24,6 +24,15 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 >    — statusfilen var fra 22:28, loggen fra 23:20. Kørt `skriv_hjerne_status()`
 >    manuelt. Lagt i køen som et selvstændigt punkt, for det rammer præcis dét,
 >    panelet er til: at læse regnskabet om morgenen.
+> 4. **Loggen blev vist som rå markdown** i en monospace-tekstboks — med
+>    `**stjerner**`, `##` og backticks. Panelet renderer den nu som ét kort pr.
+>    nat, med datoen som etiket, titlen i Fraunces, og **Fandt / Gjorde /
+>    Testede / Til Torben** som mærkede felter. Nattens regnskab får sit eget
+>    fremhævede kort. Rendereren er skrevet i hånden (~70 linjer), fordi panelet
+>    åbnes fra `file://`, hvor et bibliotek ikke kan hentes. Grænsen for, hvor
+>    meget af loggen der indlejres, er hævet fra 4.000 til 30.000 tegn, og
+>    klipningen tager **altid** nattens regnskab med, uanset hvor langt nede det
+>    ligger — den første udgave klippede lige før det.
 >
 > **Uafhentet arbejde ved start af sidste kørsel (03:00):** 110 ændrede filer,
 > intet committet. Jeg tjekkede, om noget stammer fra tidligere nætter — det gør
