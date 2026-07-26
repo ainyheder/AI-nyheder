@@ -33,6 +33,14 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 >    meget af loggen der indlejres, er hævet fra 4.000 til 30.000 tegn, og
 >    klipningen tager **altid** nattens regnskab med, uanset hvor langt nede det
 >    ligger — den første udgave klippede lige før det.
+> 5. **Modalen udnyttede ikke skærmen.** Den var låst til 820 px, så en 30.000
+>    tegns log blev til meget scroll. Læsevisningen og opgavekøen åbner nu i
+>    `min(1560px, 96vw)` og 94 vh. Loggens kort sættes i **to spalter** over
+>    1120 px og tre over 1900 px, med `break-inside: avoid`, så et kort aldrig
+>    deles. Køen bliver bred, men **ikke** spaltet: dér er rækkefølgen selve
+>    indholdet, og to spalter ville gøre "flyt op" umulig at følge. De
+>    redigerbare dokumenter beholder de 820 px — en formular bliver ikke bedre
+>    af at være bred.
 >
 > **Uafhentet arbejde ved start af sidste kørsel (03:00):** 110 ændrede filer,
 > intet committet. Jeg tjekkede, om noget stammer fra tidligere nætter — det gør

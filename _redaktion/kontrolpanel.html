@@ -135,12 +135,24 @@ button.k.fyldt:hover { opacity:.9; color:#fff; }
 .tom { background:var(--kort); border:1px dashed var(--linje); border-radius:14px; padding:34px; text-align:center; color:var(--svag); font-size:15px; }
 
 /* ---- Læsevisning af nat-loggen og gennemgangen -------------------------- */
+/* Loggen er lang. På en bred skærm er der plads til to spalter, og så halveres
+   scrollen - hvert kort er selvstændigt, så man læser stadig ét ad gangen. */
+.modal.bred { max-width:min(1560px, 96vw); max-height:94vh; padding:24px 28px; }
 .laesevis { font-size:15px; line-height:1.7; }
 .laesevis .intro { color:var(--svag); font-size:14px; margin-bottom:18px; }
+@media (min-width:1120px) {
+  .modal.bred .laesevis { column-count:2; column-gap:18px; }
+  .modal.bred .laesevis .intro { column-span:all; }
+  .modal.bred .lslut { column-span:all; }
+}
+@media (min-width:1900px) {
+  .modal.bred .laesevis { column-count:3; }
+}
 
 /* Én nat = ét kort */
 .lkort { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
-  padding:22px 26px; margin-bottom:14px; box-shadow:var(--skygge); }
+  padding:22px 26px; margin-bottom:14px; box-shadow:var(--skygge);
+  break-inside:avoid; -webkit-column-break-inside:avoid; }
 .lkort.regnskab { background:var(--accent-svag); border-color:#cfcafb; }
 .lkort > .dato { font-family:"JetBrains Mono",monospace; font-size:11px; font-weight:700;
   letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
@@ -385,7 +397,10 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   });
 
   var bag = document.getElementById("bag"), modal = document.getElementById("modal");
-  function luk() { bag.classList.remove("aaben"); document.body.style.overflow = ""; }
+  function luk() {
+    bag.classList.remove("aaben"); document.body.style.overflow = "";
+    modal.classList.remove("bred");   // næste modal skal starte i normal bredde
+  }
   bag.addEventListener("click", function (e) { if (e.target === bag) luk(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") luk(); });
 
@@ -698,6 +713,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
           '<div id="tekstrude" hidden><label>Rå fil</label>' +
           '<textarea id="dTekst" spellcheck="false" style="min-height:420px">' +
           esc(dokTekst(k)) + "</textarea></div>";
+        // Bred, men ikke i spalter: rækkefølgen ER indholdet i køen, og to
+        // spalter ville gøre "flyt op" umulig at følge med øjnene.
+        modal.classList.add("bred");
         bag.classList.add("aaben");
         document.body.style.overflow = "hidden";
         tegnKoeliste();
@@ -734,6 +752,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
           '<button class="k" id="dFortryd">Fortryd mine ændringer</button></div>'
         : '<div class="laesevis">' + logHtml(dokTekst(k)) +
           '<div class="lslut">Hele filen står i <code>_redaktion/' + esc(d.fil) + "</code></div></div>");
+    modal.classList.toggle("bred", !kan);
     bag.classList.add("aaben");
     document.body.style.overflow = "hidden";
     document.getElementById("mLuk").addEventListener("click", luk);
