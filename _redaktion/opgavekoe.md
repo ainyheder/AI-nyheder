@@ -24,13 +24,21 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
+- [ ] **12 rubrikker mangler stadig et navn - nu hvor detektoren virker.** Da
+      `_har_navn` blev rettet 26.07 (den godtog "AI" som et navn), steg tallet
+      fra 9 til **12 af 96**. Reparationsrunden saetter flaget `navngivet` efter
+      ét forsoeg og proever aldrig igen, saa de kan vaere laast fast uden navn.
+      Mindste rettelse: laes de 12, og afgoer om navnet mangler i
+      kildematerialet (saa er det rimeligt), eller om AI'en bare gav op (saa
+      skal flaget nulstilles for netop dem). *Punkt 1.*
+
 ### 3 — Gør siden mærkbart bedre
 
 - [ ] **Ingen af de 31 statiske sider har en canonical.** Alle 102 artikelsider
       og alle 40 videosider har én — crawleren sætter den, fordi den er
       nødvendig. Men forsiden, `koerekort.html`, alle syv kørekortmoduler, alle
       fire erhvervsmoduler, `laer.html`, `ordbog.html`, `faq.html` og resten har
-      ingen. Målt: 1 af 32 sider i roden har canonical, og det er
+      ingen. Målt 26.07 kl. 11: **2 af 32** sider i roden har canonical -
       `undervisning.html`, som blev skrevet i nat. Det er præcis de sider,
       Google *har* indekseret. Uden canonical kan samme side indekseres under
       flere adresser (med og uden `www`, med `?utm_source=…` fra et delt link),
@@ -38,10 +46,11 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       *Punkt 10 — en åbenlys vej til flere læsere, der står ubrugt hen.*
 
 - [ ] **Artikelsider fryses, når de falder ud af 30-dages-vinduet.** Målt i nat:
-      **15 af de 16 sider under 900 tegn** er sider, crawleren ikke længere kan
-      røre, fordi artiklen er ude af `articles.json`. De står på en ældre
-      skabelon med 375–462 tegn hver. Tallet vokser hver måned, og enhver
-      fremtidig forbedring vil kun ramme den nyeste måned. Første kørsel måtte
+      15 af 16 sider under 900 tegn kunne crawleren ikke røre, fordi artiklen
+      var ude af `articles.json`. **Målt 26.07 kl. 11: 0 sider under 900 tegn** -
+      engangsscriptet ryddede dem alle. Men mekanismen er uændret: arkivet
+      holder 30 dage, så om en måned er problemet tilbage, og enhver fremtidig
+      forbedring vil kun ramme den nyeste måned. Første kørsel måtte
       skrive et engangsscript af samme grund. Mindste rettelse: crawleren kan
       genskrive en side ud fra sidens eget indhold, sådan som
       `opsaetning/opgrader-gamle-artikelsider.py` allerede gør — den skal bare
@@ -79,10 +88,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
-
-- [ ] **Viser videosiderne faktisk tidsstempler?** De 18 låste videoer har nu
-      dansk resumé. Får højdepunkterne plads på deres statiske sider, eller
-      falder de stadig for tidstjekket i `_yt_anvend`? *Punkt 7.*
 
 - [ ] **Tjek dubletfangeren.** Find historier i arkivet, der reelt dækker samme
       begivenhed, men står som to. Er `saml_dublet_historier` for forsigtig?
@@ -136,6 +141,11 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Viser videosiderne faktisk tidsstempler?** *(målt 26.07 kl. 11)* Ja.
+      17 af 40 videoer har hoejdepunkter, og praecis de 17 videosider viser dem
+      - ingen falder for tidstjekket. De 23 uden har intet at vise, fordi
+      YouTube ikke udleverede undertekster. Intet at rette.
 
 - [x] **Læs 20 tilfældige rubrikker som en nabo uden teknisk baggrund.**
       *(26.07.2026, ekstra kørsel)* Læste alle 107. Jargon er **ikke**
