@@ -19,22 +19,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ### 1 — I stykker for læseren lige nu
 
-- [ ] **11 frosne artikelsider har brudt billede igen.** Målt 26.07 kl. 15:25,
-      efter at crawlerens Actions-kørsel kl. 13:06 blev flettet ind. Nattens
-      rettelse lukker mekanismen, men **den kørte ikke på Actions, fordi den
-      ikke var pushet endnu** — så oprydningen slettede billederne under
-      siderne én gang mere. 11 af de 12 ramte sider er frosne (ude af
-      `articles.json`), så crawleren kan ikke selv nå dem; den tolvte retter den
-      ved næste kørsel. Rettelsen er den samme som i nat: fjern det døde `<img>`,
-      sæt `og:image` til `assets/og.png`, tag `image` ud af JSON-LD, og fjern
-      løftet om en illustration. **Vent, til Torben har pushet** — ellers
-      kolliderer rettelsen med næste Actions-kørsel, som det skete i dag.
-      *Punkt 4.*
-
-      Samme måling viste noget, der gør punktet om arkivet nedenfor mere akut,
-      end det står: **arkivet gik fra 101 til 89 artikler på under en time**, og
-      antallet af frosne sider fra 35 til 47. Fristen er altså ikke "dage" i
-      betydningen en uges tid — det er timer på et travlt døgn.
+*Ingen kendte lige nu.*
 
 ### 2 — Bryder målestokken synligt
 
@@ -59,6 +44,20 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 - [ ] **Forsiden på en telefon.** Hierarkiet er bygget og testet på bred skærm.
       Hvordan holder hero + fire kort + kompakt liste på 390 px? *Punkt 4.*
+      **Halvt undersøgt 26.07 kl. 15:45 — kan ikke lukkes herfra.** Der er ingen
+      browser i sandkassen (hverken Chromium, Puppeteer eller Playwright), og
+      jsdom beregner ikke layout, så det kan ikke *måles*, om noget flyder ud.
+      Statisk gennemgang af kaskaden ved præcis 390 px (13 media queries, 345
+      selektorer) udelukker det, der mekanisk skal sprænge: ingen faste bredder
+      over 390 px, alle fem grids falder til én kolonne (største spor 340 px mod
+      358 px indhold), læsevisningens to spalter slår om ved 820 px, `viewport`
+      er rigtig, `min-width: 0` står 10 steder. De længste rigtige ord passer
+      også — 31 tegn mod cirka 34 der er plads til. **Mangler: at nogen ser den
+      på en telefon.** Bemærk til hovedkørslen: der står 0 `overflow-wrap` og 0
+      `word-break` i hele stilarket, så margenen er tynd — og der ligger allerede
+      et **35-tegns** ubrydeligt token i data (en rå YouTube-URL i det uoversatte
+      `resume`-felt på "Ny gratis AI-videoredigering til din Mac"), som kun holdes
+      væk fra skærmen af, at `resume_da` findes på netop den artikel.
 
 - [ ] **Hvor hurtigt loader forsiden?** Mål størrelsen på `data/articles.json`
       og billederne. Er der noget, der er vokset sig for stort? *Punkt 4.*
@@ -163,6 +162,23 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 ---
 
 ## Klaret
+
+- [x] **11 frosne artikelsider havde brudt billede igen.** *(26.07.2026, ekstra
+      kørsel kl. 15:32)* Punktet ventede på Torbens push, og det kom kl. 15:30 —
+      `_BILLED_I_HTML`, `_billedfil`, `_har_noget_at_vise` og `_side_har_indhold`
+      ligger nu alle i `origin/main`, så mekanismen bag er lukket, og oprydningen
+      kan ikke slette billederne igen. Tallet 11 holdt, men hver side havde **tre**
+      døde referencer til den samme forsvundne fil, ikke én: `<img class="top">`,
+      `og:image` (sort delevisning) og `"image"` i JSON-LD ("Image not found" i
+      Search Console) — 33 i alt. Alle 11 viste sig at være **dubletsider**, hvis
+      canonical peger på en hovedhistorie; det forklarer, hvorfor de er frosne.
+      Rettet fire linjer pr. fil, 44 i alt, intet andet rørt. Efter: 0, 0, 0, og 0
+      sider der lover en illustration uden at have en. Kontrolleret at
+      håndrettelsen er tegn for tegn identisk med `_artikel_side_html()`s egen
+      udskrift for en død billedsti, og at crawleren fejler pænt på fem slags
+      vrøvl-input. 326 assertions på siderne, 18 på forsiden, alle grønne. Samme
+      måling bekræftede, at **0 af 109 artikelsider** har canonical mod en 404 —
+      køens latente punkt om dét er stadig på nul.
 
 - [x] **25 artikelsider viste et brudt billede.** *(26.07.2026, ekstra kørsel
       kl. 14:37 — fund uden for køen)* Målt: 25 af de 87 sider med billede pegede
