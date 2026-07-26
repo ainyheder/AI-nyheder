@@ -24,22 +24,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
-- [ ] **32 af 110 artikler står uden billede.** (Tallet var 20 af 96 — arkivet
-      er vokset, andelen er nogenlunde den samme.) Er det de rigtige 32, altså
-      dem der kun vises som tekstlinjer, eller mangler nogle af dagens topkort
-      deres illustration?
-      Mindste rettelse: sammenlign de 32 med det, `_kort_artikler()` udvælger.
-      Er der overlap, er det en fejl i udvælgelsen eller i loftet
-      `MAX_BILLEDER_PR_KOERSEL`. Er der intet overlap, virker det som tænkt —
-      og så skal punktet lukkes med målingen i loggen. *Punkt 4.*
-
-- [ ] **Læs 20 tilfældige "Hvad betyder det for dig" igennem.** Rammer de én
-      konkret konsekvens for læseren, eller er de blevet generiske? Skriv de
-      dårligste eksempler i loggen. *Punkt 2.*
-
-- [ ] **Læs 20 tilfældige rubrikker som en nabo uden teknisk baggrund.** Er der
-      ord, der kræver forklaring? *Punkt 1 og prøven i målestokken.*
-
 ### 3 — Gør siden mærkbart bedre
 
 - [ ] **Ingen af de 31 statiske sider har en canonical.** Alle 102 artikelsider
@@ -152,6 +136,53 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Læs 20 tilfældige rubrikker som en nabo uden teknisk baggrund.**
+      *(26.07.2026, ekstra kørsel)* Læste alle 107. Jargon er **ikke**
+      problemet — kun tre rubrikker kan en nabo ikke læse ("Runway lancerer ny
+      smart **model-router**", "Østrigs militær vælger **open source**",
+      "USA's hær opbruger alle sine **AI-tokens**"). Til gengæld stod der en
+      **stavefejl** på forsiden: *"barrierer **spæner** ben for eksperter"* —
+      det hedder "spænder ben". Modellen brugte ordet forkert 8 gange: 3 i
+      `articles.json` og 5 på artikelsiden, heriblandt `<title>`, `og:title`
+      og NewsArticle-schemaets `headline`, altså også dét Google viser.
+      Rettet begge steder via `json.load`/`dump`, diff på præcis 3 + 5 linjer,
+      JSON-LD stadig gyldig, forsiden grøn i jsdom. 9 af 107 rubrikker er over
+      8 ord; "kunstig intelligens" står 0 steder. De tre uforståelige
+      rubrikker kræver et AI-kald at omskrive.
+
+- [x] **Læs 20 tilfældige "Hvad betyder det for dig" igennem.**
+      *(26.07.2026, ekstra kørsel)* Læste alle 79 i stedet for 20. De fleste
+      er fine: median 21 ord, nul over to sætninger, nul gengangere. Men **6
+      taler OM "almindelige mennesker" i stedet for TIL læseren** — og de er
+      en anden slags tekst: median 42 ord mod 20, alle 6 uden "du", 4 af 6
+      over promptens grænse. Boksen hedder "Hvad betyder det for **dig**?", så
+      de svarer på et andet spørgsmål end det, der står over dem. Årsagen var
+      redaktør-agenten: dens regel 4 var selv formuleret i tredjeperson
+      ("konkret **for almindelige danskere**"), så den godkendte netop den
+      fejl, den skulle fange — og den håndhævede hverken de 35 ord eller
+      "du"-tiltalen, skribentens prompt kræver. Rettet regel 4, tilføjet et
+      deterministisk `_betydning_problemer()`, der fodrer den eksisterende
+      omskrivningsvej (udløses på 10 %, ikke på de gode), plus et værn mod at
+      omskrivningen gør det værre. `GENKOER_ALT=betydning` retter de 8
+      eksisterende for 8 kald i stedet for 80. 45 assertions, alle grønne.
+
+- [x] **32 af 110 artikler står uden billede.** *(26.07.2026, ekstra kørsel)*
+      Målt mod crawlerens eget udvalg: 0 overlap — men den måling spørger
+      crawleren, om den er enig med sig selv. Målt mod **forsiden** var
+      svaret et andet: `_kort_artikler()` og `index.html` var uenige om, hvad
+      et billedkort er, tre steder. (1) `kun_aktuel` blev udeladt, selvom
+      arkivforbuddet gælder udgiverens *tekst* — to prio 7-historier stod som
+      store kort med tomt billedfelt. (2) Forskning blev grupperet sammen med
+      nyhederne, selvom forsiden har to faner, der ikke deler artikler, så en
+      forskningsartikel brugte en plads, ingen ser på nyhedsfanen. (3)
+      Forsidens `prioAf()` giver flerkilde-historier +1; crawleren gjorde ikke
+      — alene dét flyttede 6 links. Standard var 2 af 9 pladser tom,
+      Forskning 5 af 6; begge er nu 100 % dækket. Udvalget går 53 → 61, og 8
+      billeder laves ved næste kørsel (~$0,27, loft 35). 25 Python-assertions
+      og 9 jsdom-assertions, alle grønne. **Emnefiltrene er stadig ikke
+      dækket** — det koster ~$1,46 at give alle artikler billede, og det er
+      Torbens beslutning; se loggen.
 
 - [x] **Overskrifter uden navn.** *(26.07.2026, ekstra kørsel)* Læste alle 102
       rubrikker. Svaret var ikke "er de ni rimelige?" men at **detektoren var i

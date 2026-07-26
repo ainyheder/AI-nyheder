@@ -4,6 +4,255 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+> **⚠️ `.git/index.lock` lå der igen — og det var `git status`, der lagde den.**
+> Samme fil, der spærrede dit commit i morges. Den blev skabt kl. 12:24:10,
+> nøjagtigt da jeg kørte `git status --short`, som instruksen beder mig om.
+> **Jeg har ryddet den, og der ligger ingen låse nu** — jeg har tjekket hele
+> `.git` for `*.lock`.
+>
+> Årsagen: git vil opdatere sin cache, når filer har ændret sig, og det kræver
+> låsen. Første `git status` kl. 12:03 efterlod ingen — den kl. 12:24 gjorde,
+> fordi jeg imens havde ændret tre filer. Så det sker ikke hver gang, men det
+> sker netop, når natsessionen har lavet noget. Sandkassen må normalt ikke
+> slette i `.git/`, så jeg måtte bede om lov undervejs.
+>
+> **Rettelsen er ét flag:** `git --no-optional-locks status --short`. Jeg har
+> prøvet begge dele i aften — den efterlader ingen lås. Vil du undgå det her
+> tredje gang, så ret linjen i `natsession.md` under "Tjek også, om der ligger
+> uafhentet arbejde". **Jeg har ikke rettet den selv** — det er din fil, og du
+> redigerer den gennem panelet.
+>
+> Der lå intet uafhentet arbejde, da jeg startede: `git status` var tom, så de
+> 8 filer fra i formiddags er pushet.
+
+---
+
+## 2026-07-26 · Læs 20 rubrikker som en nabo uden teknisk baggrund
+
+**Fandt:** Læste alle 107, ikke 20. Det, punktet spurgte om — jargon — er
+**ikke det største problem.** Det, jeg fandt i stedet, var **en stavefejl på
+forsiden**:
+
+> *"OpenAI og Anthropics barrierer **spæner** ben for eksperter"*
+
+Det hedder "spænder ben". "Spæne" betyder at løbe stærkt, så sætningen er
+meningsløs. Og modellen brugte det forkerte ord **konsekvent gennem hele
+artiklen** — 3 steder i `data/articles.json` (rubrik, en detalje og en pointe)
+og 5 på artikelsiden, heriblandt `<title>`, `og:title` og
+NewsArticle-schemaets `headline`. Altså også dét, Google og et delt link
+viser. Det er målestokkens punkt 4: en stavefejl i en overskrift er præcis
+det, der får en side til at ligne et hjemmeprojekt frem for en redaktion.
+
+**Om jargonen — svaret er nej, med tre undtagelser.** Af 107 rubrikker er der
+kun tre, en nabo ikke kan læse:
+
+- *"Runway lancerer ny smart **model-router**"* — den værste. "Model-router"
+  står ikke i ordbogen, og rubrikken siger intet andet; fjerner man ordet, er
+  der ingen historie tilbage.
+- *"Østrigs militær vælger **open source**"* — hele pointen er et begreb, der
+  ikke forklares. (Ordbogen har "Open source-model", men en rubrik skal kunne
+  læses uden opslag.)
+- *"USA's hær opbruger alle sine **AI-tokens** på én måned"* — "token" er i
+  ordbogen, men rubrikken kan ikke afkodes uden.
+
+Resten er fine. Ord som "nudify", "metadata", "kill switch", "pyrolyse",
+"hulkort", "transistorer" og "whistleblower" optræder én gang hver, og de står
+alle i en sætning, der bærer meningen selv. **9 af 107 rubrikker er over
+redaktørens grænse på 8 ord** (8 %) — ingen af dem er uforståelige.
+"Kunstig intelligens", som prompten forbyder, står **0 steder**.
+
+**Gjorde:** Rettede "spæner" → "spænder" i `data/articles.json` og
+`artikel/f254e58029de8cb9.html`. JSON'en er ændret via `json.load`/`dump`, ikke
+med søg-og-erstat i teksten, så strukturen ikke kunne brydes — og skrevet med
+crawlerens eget format (`ensure_ascii=False, indent=2`), så diffen er ren.
+Intet andet rørt; jeg har hverken slettet eller omskrevet noget.
+
+**Testede:** Diffen er præcis 3 linjer i `articles.json` og 5 i artikelsiden —
+kun det ene ord. Filen er stadig gyldig JSON med 107 artikler, uændrede nøgler
+og **nøjagtig én** ændret artikel; den voksede 3 bytes. Artikelsidens
+JSON-LD-blok parser stadig. Forsiden i jsdom mod den rettede fil: 9
+assertions grønne, ingen JS-fejl. `crawler.py` uændret sund. Sikkerhedskopier
+af begge filer lå i `/tmp` undervejs.
+
+**Til Torben:**
+
+- **De tre uforståelige rubrikker kan jeg ikke omskrive** — det kræver et
+  AI-kald med din nøgle. "Model-router" er den, jeg ville tage først.
+- **Værd at vide om stavefejlen:** den slap forbi både skribenten og
+  redaktør-agenten, og den var gentaget 8 gange. Jeg har *ikke* bygget en
+  stavekontrol — jeg har ét datapunkt, og en rettelsesliste med ét ord på er
+  mere vedligeholdelse end værdi. Dukker der flere af den slags op, er det et
+  mønster, der er værd at handle på.
+- Rettelsen ligger i en genereret fil. Genskrives artiklen med
+  `GENKOER_ALT`, kan fejlen komme igen — modellen skrev den jo selv.
+
+---
+
+## 2026-07-26 · Læs 20 "Hvad betyder det for dig" igennem
+
+**Fandt:** Læste alle 79 i stedet for 20 tilfældige — det koster ikke mere at
+måle dem alle. **De fleste er fine.** Median 21 ord, nul over to sætninger,
+nul ordret identiske, nul der starter med den forbudte indledning "Det
+betyder". Så nej, de er ikke generelt blevet generiske.
+
+Men der er én gruppe, der skiller sig skarpt ud: **6 af 79 taler OM en tredje
+part i stedet for TIL læseren** — *"For almindelige mennesker betyder det …"*,
+*"For forbrugerne …"*, *"Historien viser …"*. De er ikke bare lidt svagere,
+de er en anden slags tekst:
+
+| | de 6 | de øvrige 73 |
+|---|---|---|
+| median ordlængde | **42 ord** | 20 ord |
+| mangler "du" helt | **6 af 6** | 2 af 73 |
+| over promptens grænse på 35 ord | **4 af 6** | 1 af 73 |
+
+Boksen hedder **"Hvad betyder det for dig?"**. En tekst, der svarer *"For
+almindelige mennesker betyder det …"*, svarer bogstaveligt på et andet
+spørgsmål end det, der står over den. Det værste eksempel, 44 ord:
+
+> *"Kampen mellem store hardware-producenter har direkte indflydelse på prisen
+> og hastigheden for de digitale tjenester, vi bruger dagligt. Når virksomheder
+> investerer astronomiske summer i nye systemer, skaber det grundlaget for
+> hurtigere og klogere digitale assistenter, som på sigt vil præge både
+> arbejdsliv og privatforbrug."* — *AMD udfordrer Nvidia med Helios AI-system*
+
+**Årsagen var ikke skribenten — det var redaktøren.** Der findes allerede en
+redaktør-agent, der læser hvert brief og kan bestille en omskrivning. Dens
+regel 4 lød: *"BETYDNING: skal være konkret **for almindelige danskere**"*.
+Instruksen var altså selv formuleret i den tredjeperson, den skulle fange, så
+en betydning, der åbnede med "For almindelige mennesker …", lignede en
+opfyldelse af reglen. Samtidig håndhævede redaktøren hverken de 35 ord eller
+"du"-tiltalen, som skribentens egen prompt kræver. To prompter, der skulle
+være enige, var det ikke — samme slags fejl som i billedpunktet ovenfor.
+
+**Gjorde:** Tre ting i `crawler.py`, alle i samme spor:
+
+1. **Rettede redaktørens regel 4**, så den håndhæver præcis det, skribenten
+   bliver bedt om: tiltale i "du", højst 35 ord, ingen tredjepersons­omskrivning
+   — med de faktiske vendinger som eksempler.
+2. **Tilføjede `_betydning_problemer()`** — et deterministisk tjek af de krav,
+   der kan måles med en lineal frem for et skøn. Noterne fodres ind i den
+   omskrivning, redaktøren allerede kan bestille, så der kun bruges et ekstra
+   AI-kald, når noget faktisk er galt (målt: 8 af 79, altså 10 %). Et AI-skøn
+   alene er ikke pålideligt nok til et krav, der kan tælles.
+3. **Et værn:** omskrivningen må ikke gøre betydningen dårligere end den, den
+   erstattede. Uden det kunne det nye tjek forværre netop det felt, det skulle
+   beskytte.
+
+Og fordi de 8 eksisterende ellers ville stå for evigt: **`GENKOER_ALT=betydning`**
+genskriver nu kun de artikler, hvis betydning fejler tjekket — 8 kald i stedet
+for de 80, `GENKOER_ALT=ja` ville koste.
+
+**Testede:** 45 nye assertions, alle grønne. `_betydning_problemer`: gode
+tekster giver nul noter (også tom tekst, `None`, kun mellemrum og præcis 35
+ord), dårlige giver de rigtige, og ordgrænserne holder — "dukke", "dublet",
+"duel" og "dito" udløser ikke "du"-reglen. Hele `dybe_briefs` kørt med
+`hjerne_kald` erstattet af en falsk funktion: god betydning giver **ét** kald
+(ingen spildt omskrivning), dårlig giver to, en værre omskrivning rulles
+tilbage, vrøvl og tomt svar kræsjer ikke, array-pakket svar håndteres, og
+redaktørens egne noter kombineres med de deterministiske i ét retry.
+Kandidatudvælgelsen — crawlerens mest kritiske sti — testet i alle fire
+tilstande: normal drift vælger stadig kun ubehandlede, `ja` vælger alle,
+søgeord virker som før, `betydning` vælger præcis de svage.
+
+Samlet prøve efter begge nattens punkter: `ast.parse`, modulindlæsning og
+ingen dobbeltdefinerede konstanter ✅, og forsiden i jsdom mod de rigtige
+datafiler ✅ — **79 assertions i alt, ingen fejl.**
+
+**Til Torben:**
+
+- **De 8 gamle betydninger retter sig ikke selv.** Prompten og tjekket virker
+  kun på nye briefs; de eksisterende ligger i cache. Vil du rette dem, så kør
+  workflowet med **`GENKOER_ALT` = `betydning`**. Det rammer de 8 og koster
+  8 brief-kald. Jeg har ikke gjort det — det kræver din API-nøgle.
+- **Værd at bemærke:** 28 af 107 artikler har slet ingen "betydning". Jeg har
+  ikke undersøgt hvorfor; 26-27 af dem er sandsynligvis `kun_aktuel`
+  (arkivforbud, tilsigtet), men det har jeg ikke målt, og jeg vil ikke gætte.
+  Det er en kandidat til køen, ikke et fund.
+- Jeg har **ikke** rørt `index.html`, billedprompten eller noget i `data/`.
+
+---
+
+## 2026-07-26 · 32 af 110 artikler står uden billede
+
+**Fandt:** Spørgsmålet i køen var, om de billedløse artikler var "de rigtige".
+Målt mod crawlerens eget udvalg var svaret ja — **0 overlap**, alle 53
+kort-kandidater havde billede. Men den måling er cirkulær: den spørger
+crawleren, om crawleren er enig med sig selv. Den rigtige prøve er mod
+**forsiden**, og dér holder det ikke. `_kort_artikler()` i `crawler.py`
+bestemmer, hvem der får et billede; `index.html` bestemmer, hvem der får en
+billedplads. De var uenige tre steder:
+
+1. **`kun_aktuel` blev udeladt.** Arkivforbuddet gælder udgiverens tekst — vi
+   gemmer ikke deres artikel og bygger ingen artikelside. Men crawleren
+   nægtede dem også et *billede*, som er vores eget. Forsiden viser dem som
+   helt almindelige kort. To af dem stod med **prio 7** på forsidens store
+   kort med tomt billedfelt: *"Kommune brugte AI i borger-sag uden at sige
+   det"* og *"Sundhedsdata skal testes i nye AI-projekter"*.
+2. **Forskning spiste en billedplads.** Crawleren grupperede alle kategorier
+   sammen, men forsiden har to faner, der ikke deler artikler: "Nyheder" viser
+   alt undtagen Forskning, "Forskning" viser kun Forskning — og hver fane
+   tegner sine egne fem kort. Den 26.07 lå *"AlphaFold AI gør genredigering
+   mere sikker"* nr. 4 i udvalget og fik et billede, ingen ser på nyhedsfanen,
+   mens kortet, der faktisk tog pladsen dér, stod uden.
+3. **Vægten var ikke den samme.** Forsidens `prioAf()` lægger +1 til
+   flerkilde-historier. Crawleren sorterede på rå `prio`. Alene den forskel
+   flyttede 6 links.
+
+Målt på fanerne: **Standard 2 af 9 pladser tomme, Forskning 5 af 6.**
+
+**Gjorde:** Skrev `_kort_artikler()` om i `crawler.py` (ét sted, ~30 linjer
+inkl. forklaring). Den grupperer nu pr. `(dag, fane)`, medtager `kun_aktuel`
+og sorterer efter en ny `_kort_vaegt()`, der er en tro kopi af forsidens
+`prioAf()`. Konstanten `KORT_PR_DAG = 5` erstatter det nøgne `[:5]`.
+Docstringen forklarer koblingen til `index.html`, så næste ændring i den ene
+fil ikke stille afkobler den anden. **Intet andet rørt** — ikke `index.html`,
+ikke billedprompten, ikke loftet.
+
+**Testede:** 25 assertions i Python, alle grønne: `ast.parse`, ingen
+dobbeltdefinerede konstanter på modulniveau, `_kort_vaegt` mod forsidens
+formel (inkl. `prio: 0` som ikke må blive til 5), loftet pr. dag pr. fane,
+Forskning der ikke presser nyheder ud, dato-fallback og artikler helt uden
+dato. `udfyld_billedmotiver` kørt med `hjerne_kald` erstattet af en falsk
+funktion: gyldigt svar, svar pakket i et ekstra array, rent vrøvl, tomt svar
+og forkert svarlængde — alle fem fejler pænt uden at kræsje, og de fire
+ugyldige sætter intet motiv. Samlet prøve i jsdom mod de rigtige datafiler: 9
+assertions grønne, ingen JS-fejl, hero + 8 kort + 39 mikrokort tegnes, alle
+kortbilleder har alt-tekst, et klik åbner læsevisningen med indhold.
+
+DOM-prøven bekræftede målingen uafhængigt af min simulering: **9
+billedpladser, 7 med `<img>`, 2 med genereret SVG** — og de to var præcis de
+to `kun_aktuel`-artikler med prio 7. Efter rettelsen dækker udvalget **9/9 og
+6/6** pladser. Udvalget går fra 53 til 61 artikler; **8 billeder skal laves
+ved næste kørsel, ca. $0,27 engangs**, godt under loftet på 35 pr. kørsel.
+Billederne findes først, når crawleren har kørt med en `GEMINI_API_KEY` — jeg
+kan hverken generere dem eller bruge din nøgle.
+
+**Til Torben:**
+
+- **Emnefiltrene er ikke dækket, og det er en beslutning om penge, ikke om
+  kode.** Klikker en læser ét emne fra, tegner forsiden fire store kort inden
+  for dét emne — og de er sjældent dem, der fik billede. Målt nu: *Samfund &
+  etik* 3 af 9 pladser dækket, *Lanceringer* 1 af 5, *Politik & jura* 4 af 9,
+  *Hverdags-AI* 2 af 7, *Penge & marked* 2 af 5. Det kan kun lukkes helt ved at
+  give **alle** artikler et billede: 43 mangler i dag, **ca. $1,46 engangs** og
+  derefter prisen for hver ny artikel. Jeg har ikke gjort det — det er dine
+  penge. Værd at vide: kommentaren ved `BILLED_ANTAL = 250` i `crawler.py`
+  siger allerede *"ALLE artikler får AI-billede"*, så koden og hensigten har
+  været ude af trit et stykke tid. Jeg lægger det ikke i køen selv; jeg er en
+  ekstra kørsel og må ikke røre prioriteringen. **Hovedkørslen i aften bør tage
+  det op i fase 2.**
+- **Lille robusthedsting, ikke rettet:** svarer motiv-AI'en med et ekstra lag
+  array (`[[{...}]]`), fanger `udfyld_billedmotiver` det som `AttributeError`
+  og springer batchen over. Det fejler pænt — billedet får bare
+  reserve-motivet fra rubrik + resumé — så jeg lod det ligge frem for at rode i
+  en funktion, punktet ikke handlede om.
+- **Dine 8 filer fra i formiddags er væk fra `git status`** — de er altså
+  committet og pushet. Godt; crawlerens egne skrivninger giver ikke længere
+  merge-konflikter oven på dem.
+
+---
+
 > **Ekstra kørsel 26.07, formiddag — kort version.** Tre punkter klaret:
 > nulstil-knap på kørekortet, bevis-tjekket der lovede for meget, og
 > overskrifter uden navn. Alle tre viste sig at være **anderledes end køen
@@ -707,6 +956,16 @@ Tre ting, jeg **ikke** har rettet, fordi de er selvstændige beslutninger:
 kørekortet, overdrivelsen på bevis-tjekket, og overskrifter uden navn. Køen er
 ikke omprioriteret (det hører til hovedkørslen). Ét fund uden for køen:
 **ingen side linker til vores 103 artikelsider** — se øverst i loggen.
+
+**Ekstra kørsel 12:03–12:40:** klarede **3 punkter** mere — de manglende
+billeder, "Hvad betyder det for dig" og rubrikkerne læst som en nabo. Køen er
+ikke omprioriteret; det hører til hovedkørslen. Alle tre var **anderledes end
+køen beskrev dem**, og i alle tre tilfælde var årsagen den samme slags fejl:
+**to steder i systemet, der skulle være enige, var det ikke** — crawlerens
+billedudvalg mod forsidens, og skribentens prompt mod redaktørens. 79
+assertions, alle grønne. To ting uden for køen: **`.git/index.lock` lå der
+igen** (ryddet — se nedenfor), og der stod **en stavefejl i en rubrik på
+forsiden**.
 
 Klaret: **7 punkter** — 3 af første kørsel, 4 af sidste. Nye i køen: **4**.
 

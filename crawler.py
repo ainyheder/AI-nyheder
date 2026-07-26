@@ -697,8 +697,12 @@ det må udgives. Du tjekker KUN disse regler:
 3. NØGLETAL: kun tal med forside-værdi (scores, priser, beløb, hastigheder).
    Årstal, antal forfattere, spilletid og lignende trivia er FORBUDT som
    nøgletal. En tom liste er helt fint.
-4. BETYDNING: skal være konkret for almindelige danskere - ikke floskler som
-   "AI ændrer vores hverdag".
+4. BETYDNING: står under overskriften "Hvad betyder det for DIG?", så den skal
+   svare læseren direkte. Afvis hvis den (a) ikke tiltaler læseren med
+   "du/dig/din", (b) er længere end 35 ord, eller (c) taler OM en tredje part
+   i stedet for TIL læseren - "For almindelige mennesker betyder det …", "For
+   forbrugerne …", "Historien viser …". Ingen floskler som "AI ændrer vores
+   hverdag". Én konsekvens, ikke fem.
 
 VIGTIGT: Godkend alt, der overholder reglerne - omskrivninger koster penge.
 Afvis KUN ved klare regelbrud, og vær så konkret i dine noter, at skribenten
@@ -719,6 +723,51 @@ def redaktoer_tjek(a: dict) -> dict | None:
     except Exception as fejl:
         print(f"  ⚠️  Redaktør-tjek fejlede: {type(fejl).__name__}: {fejl}")
     return None
+
+
+# Vendinger, der taler OM en tredje part i stedet for TIL læseren. Boksen
+# hedder "Hvad betyder det for dig?", så de svarer på et andet spørgsmål end
+# det, der står over dem. Målt 26.07: de 6 betydninger, der brugte en af dem,
+# manglede ALLE "du" og havde median 42 ord mod 20 i resten - det er den
+# formulering, modellen glider over i, når den ikke har en konkret konsekvens.
+BETYDNING_TREDJEPERSON = re.compile(
+    r"\bfor (helt )?almindelige (mennesker|danskere|familier|forbrugere|brugere)\b"
+    r"|\bfor forbrugerne\b|\bfor danskerne\b|\bfor os alle\b|\bfor samfundet\b"
+    r"|\bhistorien viser\b", re.I)
+
+BETYDNING_MAX_ORD = 35          # samme grænse som SYSTEM_BRIEF_ARTIKEL lover
+_BETYDNING_DU = re.compile(r"\b(du|dig|din|dit|dine)\b", re.I)
+
+
+def _betydning_problemer(tekst: str) -> list[str]:
+    """Deterministisk tjek af "Hvad betyder det for dig?" - de krav i
+    brief-prompten, der kan måles med en lineal frem for et skøn.
+
+    Redaktør-agenten er et AI-kald og fanger dem ikke pålideligt; dens egen
+    regel var oven i købet formuleret i tredjeperson ("konkret for almindelige
+    danskere"), så den godkendte netop den fejl, den skulle fange. Noterne her
+    fodres ind i den omskrivning, redaktøren allerede kan bestille, så der kun
+    bruges et ekstra kald, når noget faktisk er galt.
+    """
+    t = (tekst or "").strip()
+    if not t:
+        return []
+    problemer = []
+    antal_ord = len(t.split())
+    if antal_ord > BETYDNING_MAX_ORD:
+        problemer.append(
+            f'"betydning" fylder {antal_ord} ord - skær ned til højst '
+            f'{BETYDNING_MAX_ORD} og behold kun den ENE vigtigste konsekvens')
+    if not _BETYDNING_DU.search(t):
+        problemer.append(
+            '"betydning" tiltaler ikke læseren - skriv direkte til "du", '
+            'fx "Du kan fremover …" i stedet for at beskrive hvad der sker')
+    fund = BETYDNING_TREDJEPERSON.search(t)
+    if fund:
+        problemer.append(
+            f'"betydning" taler om en tredje part ("{fund.group(0)}") i stedet '
+            'for til læseren - boksen hedder "Hvad betyder det for DIG?"')
+    return problemer
 
 
 def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
@@ -745,7 +794,15 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
 def dybe_briefs(artikler: list[dict]) -> None:
     """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
-    if GENKOER_FILTER:
+    if GENKOER_FILTER == "betydning":
+        # Målrettet genkørsel: kun de artikler, hvis "Hvad betyder det for dig?"
+        # bryder de målbare krav. Strammes kravene til feltet, koster det så
+        # nogle få kald i stedet for at genskrive hele arkivet.
+        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+                      if not a.get("kun_aktuel")
+                      and _betydning_problemer(a.get("betydning", ""))]
+        print(f'📰 Genkører {len(kandidater)} artikler med en svag "betydning"')
+    elif GENKOER_FILTER:
         kandidater = [a for a in artikler[:DYBDE_ANTAL]
                       if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]
                                             + " " + a["kilde"]).lower()]
@@ -791,12 +848,25 @@ def dybe_briefs(artikler: list[dict]) -> None:
             _anvend_brief(a, r, billeder)
             # Redaktør-agenten læser med, FØR briefet udgives.
             dom = redaktoer_tjek(a)
+            problemer = []
             if dom is not None and not dom.get("godkendt", True) and dom.get("problemer"):
-                noter = " · ".join(str(p) for p in dom["problemer"][:4])[:400]
+                problemer += [str(p) for p in dom["problemer"]]
+            # … og oven i skønnet et deterministisk tjek af "betydning", som
+            # redaktøren erfaringsmæssigt lader slippe igennem.
+            problemer += _betydning_problemer(a.get("betydning", ""))
+            if problemer:
+                noter = " · ".join(problemer[:4])[:400]
                 print(f"   ✏️  Redaktøren kræver omskrivning: {noter[:110]}")
+                betydning_foer = a.get("betydning", "")
                 r2 = kald_ai_brief(a, tekst, billeder, redaktoer_noter=noter)
                 if r2:
                     _anvend_brief(a, r2, billeder)
+                    # En omskrivning må ikke gøre betydningen dårligere end
+                    # den, den erstattede - ellers ville det nye tjek kunne
+                    # forværre præcis det felt, det skulle beskytte.
+                    if len(_betydning_problemer(a.get("betydning", ""))) > \
+                            len(_betydning_problemer(betydning_foer)):
+                        a["betydning"] = betydning_foer
                     rettet += 1
         print(f"   … {i}/{len(med_tekst)}")
     if rettet:
@@ -1210,20 +1280,50 @@ Svar KUN med et JSON-array i samme rækkefølge som input:
 [{"motiv": "..."}, ...]"""
 
 
+KORT_PR_DAG = 5     # hero + 4 store kort - skal følge index.html
+
+
+def _kort_vaegt(a: dict) -> int:
+    """Samme vægt som forsidens prioAf() i index.html. Afviger den, vælger
+    crawleren ét sæt kort og forsiden et andet - og forskellen bliver til
+    kort med tomt billedfelt."""
+    return (a.get("prio") if a.get("prio") is not None else 5) + (1 if a.get("andre") else 0)
+
+
 def _kort_artikler(artikler: list[dict]) -> set:
     """Links på de artikler, der vises som BILLEDKORT på forsiden: de 5
-    vigtigste pr. opdagelsesdag (hero + 4 kort). Resten vises som tekstlinjer
-    og bruger sitets genererede kunst - dem koster vi ikke AI-billeder på."""
+    vigtigste pr. opdagelsesdag PR. FANE (hero + 4 kort). Resten vises som
+    tekstlinjer og bruger sitets genererede kunst - dem koster vi ikke
+    AI-billeder på.
+
+    Funktionen er en spejling af index.html. Hver gang de to er uenige om,
+    hvad der er et kort, står der et stort kort på forsiden med et tomt
+    billedfelt. Tre ting holder dem sammen:
+
+    1. **Fanerne deler ikke artikler.** "Nyheder" viser alt UNDTAGEN Forskning,
+       "Forskning" viser kun Forskning, og hver fane tegner sine egne 5 kort.
+       Blandede vi dem her, ville en forskningsartikel bruge en billedplads,
+       ingen ser på nyhedsfanen, mens kortet, der faktisk tog pladsen dér,
+       stod uden billede.
+    2. **Vægten er den samme** som forsidens - inkl. flerkilde-bonussen.
+    3. **`kun_aktuel` udelades IKKE.** Arkivforbuddet gælder udgiverens tekst:
+       vi gemmer ikke artiklen og bygger ingen artikelside. Men billedet er
+       vores eget, og rubrik/resume_da er vores egen omskrivning, så et kort
+       med arkivforbud må gerne illustreres. Forsiden viser dem som helt
+       almindelige kort - udelod vi dem, stod prio 7-historier med tomt
+       billedfelt (målt 26.07: to gjorde).
+    """
     dage: dict = {}
     for a in artikler:
-        if not a.get("rubrik") or a.get("kun_aktuel"):
+        if not a.get("rubrik"):
             continue
-        noegle = str(a.get("foerst_set") or a.get("dato") or "")[:10]
-        dage.setdefault(noegle, []).append(a)
+        dag = str(a.get("foerst_set") or a.get("dato") or "")[:10]
+        fane = "forskning" if a.get("kategori") == "Forskning" else "nyheder"
+        dage.setdefault((dag, fane), []).append(a)
     valgte: set = set()
     for gruppe in dage.values():
-        gruppe = sorted(gruppe, key=lambda a: (a.get("prio") or 5), reverse=True)
-        valgte.update(a["link"] for a in gruppe[:5])
+        gruppe = sorted(gruppe, key=_kort_vaegt, reverse=True)
+        valgte.update(a["link"] for a in gruppe[:KORT_PR_DAG])
     return valgte
 
 
@@ -1441,6 +1541,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
 
 # Manuel genkørsel (workflow-input): "ja" = genskriv HELE arkivet i nyeste format,
 # et søgeord (fx "computerhjerner") = genskriv kun artikler hvis rubrik/titel matcher.
+# Ordet "betydning" er reserveret: det genskriver kun de artikler, hvis
+# "Hvad betyder det for dig?" ikke lever op til kravene (se _betydning_problemer).
 # Ellers behandles kun artikler, der aldrig er behandlet.
 _GENKOER_RAW = os.environ.get("GENKOER_ALT", "").strip()
 GENKOER_ALT = _GENKOER_RAW.lower() in ("ja", "1", "true")
