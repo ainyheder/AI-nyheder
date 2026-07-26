@@ -1,7 +1,104 @@
 {
-  "opdateret": "2026-07-26T12:58:34.910824+00:00",
-  "antal": 87,
+  "opdateret": "2026-07-26T13:06:17.691706+00:00",
+  "antal": 89,
   "artikler": [
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 213",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T13:06:17.691706+00:00",
+      "rubrik": "Er åben AI virkelig farligt? Eksperter siger nej",
+      "resume_da": "Flere politikere advarer mod åbne AI-modeller, men kritikere mener, det er baseret på dårlige argumenter og misforståelser.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Flere journalister, politikere og tech-ledere mener, at åbne AI-modeller er en trussel. De vil have, at kun betroede brugere skal have adgang. Kritikere kalder det en måde at kontrollere markedet på."
+        },
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Tidligere forsøg på at stoppe open source, som med kryptering i **1991**, slog fejl. Dengang tabte USA, mens resten af verden fik bedre adgang. Eksperter siger, at det samme vil ske med AI."
+        },
+        {
+          "overskrift": "Er kinesisk AI et problem?",
+          "tekst": "Nogle frygter, at gratis kinesiske AI-modeller vil udradde vestlig konkurrence, som med solceller og stål. Men AI er software, ikke fysiske varer – åbne modeller kan faktisk hjælpe amerikanske virksomheder med at innovere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Open source-software er fundamentet for al kommerciel software, inklusive AI-modeller.",
+        "Forsøg på at forbyde åbne AI-modeller vil svække amerikanske virksomheder mod internationale konkurrenter.",
+        "I 1991 blev Phil Zimmermann efterforsket for at udgive krypteringsværktøjet PGP.",
+        "USA's eksportkontrol af SSL slog fejl og gjorde den svækkede version mere udbredt.",
+        "Retten afgjorde senere, at krypteringskildekode er beskyttet ytring.",
+        "Kinesiske AI-modeller er open source, så amerikanere kan frit ændre dem til et 'amerikansk' synspunkt.",
+        "Åbne modeller gør det lettere at finde og rette sikkerhedshuller."
+      ],
+      "betydning": "Du får adgang til bedre og billigere AI-værktøjer, hvis udviklere frit kan bygge videre på åbne modeller – uanset hvor de kommer fra.",
+      "pointer": [
+        "Open source AI er svært at stoppe.",
+        "Historien viser, at forbud slår fejl.",
+        "Kinesisk AI kan gavne vestlig innovation.",
+        "Åbne modeller gør AI sikrere for alle."
+      ],
+      "billedmotiv": "En stak af åbne notesbøger med forskellige flags logoer stablet ved siden af en lukket pengeskabslåge med teksten 'Kun betroede'.",
+      "navngivet": true,
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T13:06:17.691706+00:00",
+      "rubrik": "Ny gratis AI-videoredigering til din Mac",
+      "resume_da": "Palmier Pro er en åben videoredigering til Mac, hvor du og AI'en redigerer sammen i tidslinjen.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Palmier Pro er en helt ny videoredigering til Mac, bygget fra bunden i Swift. Den er gratis og kræver ikke login. Du kan redigere videoer som i Premiere Pro eller CapCut, men med AI indbygget direkte i arbejdsgangen."
+        },
+        {
+          "overskrift": "AI'en arbejder med dig",
+          "tekst": "Du kan bruge avancerede AI-modeller som **Seedance**, Kling og Nano Banana Pro til at generere videoer og billeder inde i tidslinjen. Samtidig kan du forbinde den med Claude, Codex eller Cursor via MCP, så AI'en redigerer sammen med dig på samme projekt."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Hele videoredigeringen, MCP-serveren og agentchatten er åben og gratis. Kun den generative AI-behandling er lukket. Du henter den uden betaling eller login, og du kan straks begynde at redigere eller eksperimentere med AI-samarbejde."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Palmier Pro er bygget fra bunden i Swift til macOS.",
+        "Den integrerer SOTA-modeller som Seedance, Kling og Nano Banana Pro.",
+        "MCP-serveren kører på http://127.0.0.1:19789/mcp.",
+        "Du kan forbinde Claude, Codex og Cursor via MCP.",
+        "Installation i Cursor sker via Help-menuen eller manuelt i .cursor/mcp.json.",
+        "Claude Desktop får ét-klik installation via medfølgende mcpb.",
+        "Kun den generative AI-del er lukket; resten er åben kildekode."
+      ],
+      "betydning": "Du kan nu redigere videoer gratis på din Mac med AI som aktiv medredaktør – uden at skulle betale for abonnementer.",
+      "pointer": [
+        "Gratis video editor med AI-integration",
+        "AI-modeller som Seedance og Kling indbygget",
+        "Forbind Claude, Codex og Cursor via MCP",
+        "Åben kildekode bortset fra AI-behandlingen"
+      ],
+      "billedmotiv": "En Mac-skærm med en videoredigeringstidslinje, hvor en AI-assistenttegning trækker en video ind i et spor, mens et lille MCP-ikon blinker i hjørnet.",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
     {
       "titel": "Alexa Plus is getting an AI update to handle more complicated instructions",
       "link": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
@@ -12,8 +109,7 @@
       "foerst_set": "2026-07-26T12:58:34.910824+00:00",
       "rubrik": "Alexa Plus lærer at vaske tøj og bestille rejser",
       "resume_da": "Amazon opdaterer Alexa Plus, så AI'en selv kan finde ud af komplicerede kommandoer på tværs af mange flere apparater og tjenester.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad kan den nye Alexa?",
@@ -32,9 +128,8 @@
           "tekst": "Opdateringen er i preview – altså kun tilgængelig for nogle brugere i første omgang. Amazon har ikke sagt, hvornår den ruller bredt ud i Danmark. Men tendensen er klar: stemmestyring bliver mere intelligent og kan snart klare langt flere af dine gøremål uden, du behøver at taste en eneste ting."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Alexa Plus kan nu forbinde med Bosch, Delta, Ecovacs, iRobot, Yale Home, Whirlpool, Tapo og Eufy.",
         "AI'en vælger selv det rigtige vaskeprogram, når du siger en beskrivelse af tøjet.",
@@ -51,6 +146,8 @@
         "Åben standard gør det let for nye mærker."
       ],
       "billedmotiv": "En vaskemaskines digitale display, hvor en fodboldtrøje er tegnet med streger, og tekstlinjen 'Cold wash only' er markeret med en cirkel.",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/27b0ad2998637a52.html"
     },
     {
@@ -847,7 +944,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En støvsugerposer mærket 'DNA' med en uldfjerningsbørste og et fjer fra en ugle"
+      "billedmotiv": "En støvsugerdyse med bisonhår og uglefjer"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -972,7 +1069,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En transistor liggende på et stykke printplade med en forstørrelsesglas ovenpå"
+      "billedmotiv": "En transistor med 1950'er-detaljer og en åben lærebog"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -1061,7 +1158,7 @@
       "billede": "data/img/cf5afd19c383cd8b.jpg",
       "kat_ai": true,
       "prio": 2,
-      "billedmotiv": "En åben pilleæske med en ny pille ved siden af en ældre tom pilleæske mærket '1980'"
+      "billedmotiv": "En morfinsprøjte og en kalender, der viser 2024"
     },
     {
       "titel": "Blogindlæg: Techbros på retræte",
@@ -1134,7 +1231,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "En computer med et åbent dokument og en AI-chatboble der dækker en underskrift"
+      "billedmotiv": "En AI-logo boble og et officielt stempel med overstregning"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -1151,7 +1248,7 @@
       "kat_ai": true,
       "prio": 2,
       "navngivet": true,
-      "billedmotiv": "Et kranium med en højtaler fastgjort bag øret og en lydbølgeform ud for tindingen"
+      "billedmotiv": "En høretelefon med vibrationsmåler og et låse-symbol"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -1167,7 +1264,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En bunke hulkort med et spørgsmålstegn og et plus-tegn tegnet på det øverste kort"
+      "billedmotiv": "96 hulkort stablet, hvor ét kort har et spørgsmålstegn"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -1253,7 +1350,7 @@
       "billede": "data/img/d3b23f3add8aeca6.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En kalender med sommerdatoer overstreget og en stak ufærdige papirer ved siden af"
+      "billedmotiv": "En tom opslagstavle med en klæbrig seddel 'status?'"
     },
     {
       "titel": "Nu skal borgeres sundhedsdata bruges i nyt pilotprojekt med AI",
@@ -1270,7 +1367,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "Tre stakke sundhedsdata-dokumenter med en AI-hjerne over hver stak og en grøn fane"
+      "billedmotiv": "Tre AI-robotarme og en stak sundhedsjournaler"
     },
     {
       "titel": "China’s AI models have Trump’s AI world at war with itself",
@@ -2472,7 +2569,6 @@
       "billede": "data/img/f3d4ca92ab357251.jpg",
       "kat_ai": true,
       "prio": 4,
-      "navngivet": true,
       "side": "artikel/6d5a86555da5e529.html"
     },
     {
@@ -2599,7 +2695,6 @@
       "billede": "data/img/8d50f27cd1c119b6.jpg",
       "kat_ai": true,
       "prio": 8,
-      "navngivet": true,
       "side": "artikel/d213c30d2534c57d.html"
     },
     {
@@ -3468,7 +3563,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En mikroskopisk prøveglas mærket 'Biologi' med et hul i midten og en seddel med 'Dusør'",
+      "billedmotiv": "En petriskål med prisopgave-skilt og et biologimikroskop",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
