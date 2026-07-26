@@ -9,3 +9,13 @@ __pycache__/
 
 # Claudes midlertidige mappe
 _to_delete/
+
+# Natsessionens testværktøj. jsdom installeres for at kunne indlæse forsiden
+# og artikelsiderne med rigtige data, før noget bliver skrevet. Det hører ikke
+# til siden og skal aldrig pushes - 26 MB og 1.807 filer.
+node_modules/
+package.json
+package-lock.json
+
+# Natsessionens låsefil - kun til at holde de to natlige kørsler fra hinanden
+_redaktion/.nat-koerer

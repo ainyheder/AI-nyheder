@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Brug AI-kørekortet på dit hold</title>
+<meta name="description" content="AI-kørekortet er et gratis dansk AI-forløb i 7 moduler på i alt 95 minutter. Til jobcentre, aftenskoler, biblioteker, fagforeninger og HR-afdelinger. Ingen login, ingen betaling, ingen tilmelding.">
+<link rel="canonical" href="https://ainyheder.com/undervisning.html">
+<meta property="og:title" content="Brug AI-kørekortet på dit hold">
+<meta property="og:description" content="Et gratis dansk AI-forløb i 7 moduler på i alt 95 minutter — klar til at bruge i undervisning. Ingen login, ingen betaling.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ainyheder.com/undervisning.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff;
+  --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd;
+  --radius: 18px;
+  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.55; }
+a { color: inherit; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 90;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje);
+}
+.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 18px; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.03em; }
+.brand-navn em { font-style: normal; color: var(--accent); }
+.tilbage {
+  margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
+  border: 1px solid var(--linje); background: var(--bg-kort);
+  padding: 8px 16px; border-radius: 999px; transition: all .15s;
+}
+.tilbage:hover { border-color: var(--accent); color: var(--accent); }
+
+main { max-width: 780px; margin: 0 auto; padding: 56px 24px 80px; }
+h1 {
+  font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
+  font-size: clamp(30px, 5vw, 44px); line-height: 1.08; margin-bottom: 18px;
+}
+.manchet { font-size: 18px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 34px; }
+h2 {
+  font-family: var(--font-display); font-weight: 800; font-size: 21px;
+  letter-spacing: -.01em; margin: 44px 0 12px;
+}
+h3 { font-size: 15.5px; font-weight: 700; margin: 22px 0 6px; }
+p { font-size: 15.5px; line-height: 1.75; margin-bottom: 14px; }
+strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
+ul { margin: 0 0 16px 0; padding-left: 20px; }
+li { font-size: 15.5px; line-height: 1.7; margin-bottom: 7px; }
+
+/* Nøgletal øverst */
+.fakta {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px; margin: 0 0 8px;
+}
+.fakta div {
+  background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 14px; padding: 16px 14px; text-align: center;
+}
+.fakta b {
+  display: block; font-family: var(--font-display); font-weight: 900;
+  font-size: 26px; letter-spacing: -.02em; line-height: 1.1; color: var(--accent);
+}
+.fakta span { display: block; font-size: 12.5px; color: var(--blaek-svag); margin-top: 4px; }
+
+/* Moduloversigt */
+.moduler { border: 1px solid var(--linje); border-radius: var(--radius); overflow: hidden; background: var(--bg-kort); margin-bottom: 8px; }
+.moduler div {
+  display: flex; align-items: baseline; gap: 12px;
+  padding: 11px 18px; border-bottom: 1px solid var(--linje); font-size: 15px;
+}
+.moduler div:last-child { border-bottom: 0; }
+.moduler .nr {
+  flex: 0 0 22px; font-weight: 700; font-size: 12.5px; color: var(--accent);
+}
+.moduler .navn { flex: 1; }
+.moduler .tid { color: var(--blaek-svag); font-size: 13px; white-space: nowrap; }
+.moduler .sum { background: var(--accent-svag); font-weight: 700; }
+.moduler .sum .nr { color: var(--accent); }
+
+/* Undervisningsmodeller */
+.model {
+  background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 14px; padding: 18px 20px; margin-bottom: 12px;
+}
+.model h3 { margin: 0 0 4px; font-size: 15.5px; }
+.model p { margin: 0; font-size: 14.5px; color: var(--blaek-svag); }
+
+/* Ærlig varedeklaration */
+.aerlig {
+  background: var(--accent-svag); border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 20px 0;
+  font-size: 15px; line-height: 1.7;
+}
+.aerlig p:last-child { margin-bottom: 0; }
+.aerlig h3 { margin-top: 16px; }
+.aerlig h3:first-child { margin-top: 0; }
+
+/* Kontakt */
+.kontakt {
+  background: var(--blaek); color: var(--bg); border-radius: var(--radius);
+  padding: 28px 30px; margin: 40px 0 0;
+}
+.kontakt h2 { color: var(--bg); margin: 0 0 10px; }
+.kontakt p { color: #cfc9bd; margin-bottom: 16px; }
+.kontakt a.knap {
+  display: inline-block; background: var(--accent); color: #fff;
+  text-decoration: none; font-weight: 700; font-size: 15px;
+  padding: 12px 24px; border-radius: 999px;
+}
+.kontakt a.knap:hover { filter: brightness(1.1); }
+
+.gaa {
+  display: inline-block; margin-top: 4px; font-weight: 700; font-size: 15px;
+  color: var(--accent); text-decoration: none;
+}
+.gaa:hover { text-decoration: underline; }
+
+footer {
+  border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center;
+  font-size: 12px; color: var(--blaek-svag);
+}
+@media (max-width: 480px) {
+  main { padding: 36px 18px 60px; }
+  .fakta { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="tilbage" href="./">← Til forsiden</a>
+  </div>
+</div>
+
+<main>
+  <h1>Brug AI-kørekortet på dit hold</h1>
+  <p class="manchet">
+    AI-kørekortet er et gratis dansk AI-forløb, der er skrevet til folk uden
+    teknisk baggrund. Det kan bruges frit i undervisning — på et jobcenter, en
+    aftenskole, et bibliotek, i en fagforening eller på en arbejdsplads. Der er
+    ingen licens at købe, ingen aftale at indgå og ingen tilmelding.
+  </p>
+
+  <div class="fakta">
+    <div><b>7</b><span>moduler</span></div>
+    <div><b>95</b><span>minutter i alt</span></div>
+    <div><b>0 kr.</b><span>også for hold</span></div>
+    <div><b>Intet</b><span>login eller konto</span></div>
+  </div>
+  <p style="font-size:13.5px;color:var(--blaek-svag)">
+    Deltagerne skal dog have adgang til en gratis chatbot udefra — det står under
+    <a href="#krav">Hvad du skal bruge</a>.
+  </p>
+
+  <h2>Hvad deltagerne kommer igennem</h2>
+  <p>
+    Syv moduler, der tager en deltager fra "jeg har hørt om ChatGPT" til at kunne
+    bruge AI trygt til noget konkret. Hvert modul slutter med <strong>en praktisk
+    opgave, hvor deltageren selv skriver en prompt</strong>, og en prøve med fem
+    tilfældigt udtrukne spørgsmål, hvor alle fem skal være rigtige. Der trækkes
+    nye spørgsmål ved hvert forsøg, så man ikke kan huske sig igennem.
+  </p>
+
+  <div class="moduler">
+    <div><span class="nr">1</span><span class="navn">Hvad er AI egentlig?</span><span class="tid">10 min</span></div>
+    <div><span class="nr">2</span><span class="navn">Din første AI-samtale</span><span class="tid">15 min</span></div>
+    <div><span class="nr">3</span><span class="navn">Prompts, der virker</span><span class="tid">15 min</span></div>
+    <div><span class="nr">4</span><span class="navn">Når AI tager fejl</span><span class="tid">10 min</span></div>
+    <div><span class="nr">5</span><span class="navn">AI i din hverdag</span><span class="tid">15 min</span></div>
+    <div><span class="nr">6</span><span class="navn">AI på jobbet</span><span class="tid">15 min</span></div>
+    <div><span class="nr">7</span><span class="navn">Sikkerhed og god AI-skik</span><span class="tid">15 min</span></div>
+    <div class="sum"><span class="nr"></span><span class="navn">I alt</span><span class="tid">95 min</span></div>
+  </div>
+  <p><a class="gaa" href="koerekort.html">Se hele forløbet, som deltagerne ser det →</a></p>
+
+  <h2>Sådan kan det lægges ind i en undervisningsdag</h2>
+  <p>
+    De 95 minutter er ren gennemgangstid for en deltager, der arbejder alene og
+    ikke går i stå. Regn med mere på et hold — folk skal hjælpes i gang, og
+    samtalen undervejs er ofte det, der giver mest. Tre modeller, der passer til
+    de rammer, undervisning normalt har:
+  </p>
+
+  <div class="model">
+    <h3>To lektioner à 45 minutter</h3>
+    <p>Modul 1–3 den ene gang (40 min), modul 4–7 den anden (55 min). Delingen midtvejs — 1–4 og 5–7 — giver 50 og 45 minutter og sprænger den første lektion. Deltagerne kan nå hjemmearbejde imellem.</p>
+  </div>
+  <div class="model">
+    <h3>En formiddag på tre timer</h3>
+    <p>Alle syv moduler med to pauser og tid til at tale om det undervejs. Beviset hentes til sidst, mens alle er samlet — det er nemmere end at bede folk gøre det hjemmefra.</p>
+  </div>
+  <div class="model">
+    <h3>Et modul om ugen i syv uger</h3>
+    <p>Til aftenskolehold og læsekredse. Bemærk forbeholdet om fremdrift på delte computere længere nede — ved denne model skal deltagerne bruge deres egen enhed hver gang.</p>
+  </div>
+
+  <h2 id="krav">Hvad du skal bruge</h2>
+  <ul>
+    <li><strong>En computer eller tablet per deltager</strong> med en almindelig, opdateret browser. Forløbet virker også på telefon, men de praktiske opgaver kræver, at man kan have to vinduer åbne samtidig, og det er trangt på en lille skærm.</li>
+    <li><strong>En gratis chatbot-konto per deltager</strong> — ChatGPT, Gemini eller Claude, det er ligegyldigt hvilken. Det er den eneste reelle forhindring: kontooprettelse kræver typisk en e-mailadresse eller et telefonnummer, og det tager tid for et helt hold. Få det klaret før dagen, eller sæt tyve minutter af til det i starten.</li>
+    <li><strong>Intet andet.</strong> Ingen installation, intet login på ainyheder.com, ingen tilmelding, ingen oplysninger om deltagerne til os.</li>
+  </ul>
+  <p>
+    Som forberedelse er det nok at tage forløbet selv én gang. Der er ikke noget
+    undervisermateriale at læse — modulerne forklarer sig selv, og din rolle er at
+    hjælpe dem, der går i stå.
+  </p>
+
+  <h2>Beviset</h2>
+  <p>
+    Når alle syv moduler er gennemført, kan deltageren skrive sit navn og hente et
+    bevis som billedfil. Beviset har et nummer i formen
+    <strong>AIK-20260726-K7M2P9</strong>, og nummeret er ikke tilfældigt: det er
+    regnet ud fra navnet og datoen. Enhver kan taste navn og nummer ind på
+    <a href="koerekort-tjek.html">tjek-siden</a> og se, om det stemmer.
+  </p>
+  <p>
+    For et hold er den praktiske værdi, at deltageren har noget at tage med sig —
+    til en jobansøgning, til en medarbejdersamtale, eller bare til sig selv. Det
+    er dét, beviset er til.
+  </p>
+
+  <div class="aerlig">
+    <h3>Ærligt om, hvad beviset ikke er</h3>
+    <p>
+      Det er <strong>ikke en offentligt anerkendt uddannelse</strong>, ikke
+      SU-berettiget, ikke ECTS-givende og ikke godkendt af nogen myndighed. Det er
+      et bevis for, at man har taget et selvstudie hos et dansk nyhedsmedie.
+    </p>
+    <p>
+      Tjekket bekræfter, at nummeret passer til navnet og datoen — ikke mere end
+      det. Nummeret kan ikke gættes, men det er regnet ud i browseren, så det er
+      ikke sikret mod nogen, der bevidst vil omgå det. Og det siger intet om,
+      hvem der sad ved tastaturet; forløbet er ikke overvåget. Vil du kunne stå
+      inde for, at holdet faktisk har været igennem det, er det din
+      tilstedeværelse i lokalet, der dokumenterer det — ikke beviset.
+    </p>
+
+    <h3>Og om fremdriften: den følger browseren, ikke personen</h3>
+    <p>
+      Vi gemmer ingen data om deltagerne. Til gengæld gemmes "modul 3 er
+      gennemført" lokalt i den browser, der blev brugt. Det har to konsekvenser, du
+      skal kende, før du planlægger:
+    </p>
+    <ul>
+      <li><strong>Delte computere deler fremdrift.</strong> Sætter to deltagere sig ved samme maskine, ser nummer to modulerne som allerede gennemført. Brug én enhed per deltager, eller lad dem bruge deres egen.</li>
+      <li><strong>Der er ingen nulstil-knap.</strong> Skal en maskine bruges af et nyt hold, skal browserdata for ainyheder.com ryddes manuelt — eller man kan bruge et privat vindue, men så forsvinder fremdriften også, når vinduet lukkes.</li>
+    </ul>
+    <p>
+      Det er prisen for, at forløbet er gratis og uden login. Vi mener, det er den
+      rigtige handel — men den skal du kende på forhånd.
+    </p>
+  </div>
+
+  <h2>Hvis holdet skal bruge AI på jobbet</h2>
+  <p>
+    Der ligger en overbygning på fire moduler oven på grundkørekortet:
+    <strong>Vælg det rigtige værktøj</strong>, <strong>Dokumenter og
+    kvalitetssikring</strong>, <strong>Automatisér arbejdsgangene</strong> og
+    <strong>Regler, ansvar og AI-politik</strong>. Fire gange 20 minutter, altså
+    80 minutter mere. Den låses op, når grundkørekortet er bestået, og giver sit
+    eget bevis.
+  </p>
+  <p>
+    Den er skrevet til folk, der møder AI i deres arbejde — ikke til
+    IT-afdelingen. Modulet om regler og AI-politik er typisk det, en arbejdsplads
+    får mest ud af.
+  </p>
+  <p><a class="gaa" href="erhverv.html">Se erhvervsoverbygningen →</a></p>
+
+  <h2>Må vi bruge det, som vi vil?</h2>
+  <p>
+    Ja. Vis det på storskærm, henvis til det i et kursusprogram, send linket ud på
+    forhånd, lad deltagerne tage det i eget tempo. Vi beder kun om, at I
+    <strong>linker til siden frem for at kopiere teksten ind i eget materiale</strong>
+    — pensum bliver rettet løbende, og en kopi bliver forældet uden at nogen
+    opdager det. Forløbet er versioneret, så du kan se, hvad dit hold tog:
+    aktuelt <strong>pensum version 1, juli 2026</strong>.
+  </p>
+
+  <div class="kontakt">
+    <h2>Skal vi hjælpe jer i gang?</h2>
+    <p>
+      Skriv, hvis I overvejer at bruge kørekortet på et hold — også bare for at
+      fortælle os det. Vi vil gerne vide, hvor det bliver brugt, og hvad der
+      mangler for at det passer til jeres deltagere. Har I brug for noget, der
+      ikke findes endnu, er det den slags, der rykker først.
+    </p>
+    <a class="knap" href="mailto:kontakt@ainyheder.com?subject=AI-k%C3%B8rekortet%20p%C3%A5%20vores%20hold">Skriv til kontakt@ainyheder.com</a>
+  </div>
+
+</main>
+
+<footer>
+  Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a>
+</footer>
+
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
+</script>
+</body>
+</html>

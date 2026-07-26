@@ -1052,6 +1052,27 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     return [a for a in artikler if a["link"] not in fjern]
 
 
+def _indholdsvaegt(m: dict) -> int:
+    """Hvor meget genfortalt indhold har vi faktisk om denne udgave?
+
+    Bruges til at vælge hovedhistorie, når flere medier har dækket det samme.
+    Målt på arkivet: uden det her vandt OpenAI Blogs egen pressemeddelelse over
+    to Ars Technica-udgaver af samme historie - 1.417 tegn diplomatisk tekst
+    frem for 2.798 tegn med de konkrete detaljer. Pressemeddelelser er næsten
+    altid tyndere end uafhængig dækning, og de stod bare først i listen.
+    """
+    vaegt = 0
+    for felt in ("resume_da", "betydning"):
+        vaegt += len(str(m.get(felt) or ""))
+    for felt in ("sektioner", "detaljer", "pointer", "noegletal", "figurer"):
+        v = m.get(felt)
+        if isinstance(v, (list, tuple, dict)):
+            vaegt += len(str(v))
+        elif v:
+            vaegt += len(str(v))
+    return vaegt
+
+
 def _slaa_sammen(medlemmer: list[dict]) -> set:
     """Gør én gruppe til én historie. Returnerer de links, der skal væk."""
     # Behold den med mest indhold: brief > dansk rubrik > nyeste.
@@ -1059,9 +1080,29 @@ def _slaa_sammen(medlemmer: list[dict]) -> set:
     # Version2 hovedhistorie, mister historien sin artikelside og sin
     # genfortælling - selvom Ars Technica også dækkede den og gerne må arkiveres.
     frie = [m for m in medlemmer if not m.get("kun_aktuel")] or medlemmer
-    primaer = next((m for m in frie if m.get("brief")), None) \
-           or next((m for m in frie if m.get("rubrik")), None) \
-           or frie[0]
+    # Inden for hvert trin: den med MEST indhold, ikke den der tilfældigvis stod
+    # først. Det var dét, kommentaren ovenfor lovede - men next() tog den første.
+    #
+    # Trin 1 var før `m.get("brief")`, og dét felt er dødt: SYSTEM_BRIEF_ARTIKEL
+    # beder om "sektioner", aldrig om "brief", så `r.get("brief", "")` er altid
+    # tom. Målt på arkivet: 0 af 105 artikler har brief, 78 har sektioner.
+    # Trinnet kunne altså aldrig ramme, og prioriteringen var i praksis kun
+    # ét trin. `sektioner` er det felt, der faktisk betyder "fuld genfortælling".
+    # Bemærk: porten skal spørge til REELT indhold, ikke bare til at feltet
+    # findes. En liste med tolv tomme sektioner er sand, og ville ellers slå en
+    # udgave med 800 tegn rigtig tekst - den anden ville aldrig komme i puljen,
+    # så vægten blev aldrig sammenlignet.
+    def _har_tekst(m: dict) -> bool:
+        sek = m.get("sektioner")
+        if not isinstance(sek, (list, tuple)):
+            return bool(sek)
+        return any(isinstance(s, dict) and str(s.get("tekst") or "").strip()
+                   for s in sek)
+
+    pulje = [m for m in frie if _har_tekst(m)] \
+         or [m for m in frie if m.get("rubrik")] \
+         or frie
+    primaer = max(pulje, key=_indholdsvaegt)
     andre = [m for m in medlemmer if m is not primaer]
 
     # En historie bliver ikke NY igen, bare fordi et nyt medie skriver om den
@@ -1455,7 +1496,10 @@ def _uge_side_html(d: dict) -> str:
     for nr, h in enumerate(historier, 1):
         led = f"{SITE_URL}/#a=" + quote(h.get("link", ""), safe="")
         tone = TONE.get(h.get("kategori", ""), "#efece4")
-        billede = (f'<div class="k-billede"><img src="{html.escape(h.get("billede", ""))}" alt="" '
+        # uge.json gemmer ikke billedmotivet, så overskriften er alt-teksten
+        h_alt = html.escape(str(h.get("overskrift") or "")[:180])
+        billede = (f'<div class="k-billede"><img src="{html.escape(h.get("billede", ""))}" '
+                   f'alt="{h_alt}" '
                    'loading="lazy" onerror="this.parentNode.remove()"></div>') if h.get("billede") else ""
         kort.append(f"""<a class="k {'k-flip' if nr % 2 == 0 else ''}" href="{led}" style="--tone:{tone}">
 <span class="k-nr">{nr}</span>
@@ -1730,9 +1774,33 @@ def _fed_html(tekst: str) -> str:
     return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
 
 
+def _jsonld(data: dict) -> str:
+    """JSON til et <script type="application/ld+json">-element.
+
+    Indholdet kommer fra fremmede feeds, og et script-element er rå tekst -
+    så visse tegnfølger i en rubrik kan slippe ud af blokken:
+
+      "</script>"     lukker tagget for tidligt, så resten af JSON-LD'en
+                      havner som synlig tekst på siden.
+      "<!--<script"   er værre: den sætter HTML-parseren i en tilstand, hvor
+                      det følgende "</script>" IKKE afslutter blokken, og så
+                      bliver resten af dokumentet slugt som scriptindhold -
+                      siden ender helt blank. De to dele kan endda ligge i
+                      hver sit felt, så ingen enkelt streng ser mistænkelig ud.
+
+    Derfor escapes < > og & som JSON-unicode i stedet for at lappe på "</".
+    \\u003c er gyldig JSON og læses ens af enhver parser, Googles med, men
+    ingen af de farlige tegnfølger kan opstå i det, browseren ser.
+    """
+    return (json.dumps(data, ensure_ascii=False)
+            .replace("<", "\\u003c")
+            .replace(">", "\\u003e")
+            .replace("&", "\\u0026"))
+
+
 def _artikel_side_html(a: dict) -> str:
-    rubrik = html.escape(a.get("rubrik") or a.get("titel", ""))
-    resume = html.escape(a.get("resume_da") or a.get("resume") or "")
+    rubrik = html.escape(str(a.get("rubrik") or a.get("titel") or ""))
+    resume = html.escape(str(a.get("resume_da") or a.get("resume") or ""))
     slug = _artikel_slug(a["link"])
     url = f"{SITE_URL}/artikel/{slug}.html"
     billede = f"{SITE_URL}/{a['billede']}" if a.get("billede") else f"{SITE_URL}/assets/og.png"
@@ -1758,6 +1826,44 @@ def _artikel_side_html(a: dict) -> str:
     for k in a.get("andre") or []:
         kilder += f' <a class="kilde" href="{html.escape(k["link"])}" rel="noopener">{html.escape(k["kilde"])} →</a>'
 
+    # Alt-tekst: billedmotivet er art direction-beskrivelsen af præcis den
+    # scene, billedet viser - altså den bedste alt-tekst vi har. Falder tilbage
+    # på rubrikken. Uden den er billedet usynligt for skærmlæsere og for
+    # Google Billeder.
+    alt_tekst = html.escape(
+        str(a.get("billedmotiv") or a.get("rubrik") or a.get("titel") or "")[:180])
+    billed_html = (f'<img class="top" src="/{html.escape(a["billede"])}" '
+                   f'alt="{alt_tekst}">') if a.get("billede") else ""
+
+    # Struktureret data, så Google kan vise siden som nyhedsresultat med dato
+    # og billede. Videosiderne har haft det hele tiden; artikelsiderne ikke.
+    # isBasedOn peger på originalkilden - vi genfortæller, og det skal stå der.
+    ld: dict = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": str(a.get("rubrik") or a.get("titel") or "")[:110],
+        "description": str(a.get("resume_da") or a.get("resume") or ""),
+        "url": url,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "inLanguage": "da-DK",
+        "isAccessibleForFree": True,
+        "author": {"@type": "Organization", "name": "AI-nyheder", "url": SITE_URL},
+        "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": SITE_URL},
+    }
+    if a.get("billede"):
+        ld["image"] = billede
+    if a.get("dato"):
+        ld["datePublished"] = a["dato"]
+        # Bevidst ikke dateModified: "foerst_set" er hvornår crawleren så
+        # artiklen, ikke hvornår siden sidst blev ændret, og et ærligt
+        # dateModified=nu ville få hver kørsel til at genskrive alle sider,
+        # fordi indholdet så ville se ændret ud. Feltet er valgfrit hos Google.
+    if a.get("kategori"):
+        ld["articleSection"] = a["kategori"]
+    if a.get("link"):
+        ld["isBasedOn"] = a["link"]
+    jsonld = _jsonld(ld)
+
     return f"""<!DOCTYPE html>
 <html lang="da">
 <head>
@@ -1780,6 +1886,7 @@ def _artikel_side_html(a: dict) -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{jsonld}</script>
 <style>
 :root {{ --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
   --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; }}
@@ -1816,7 +1923,7 @@ footer a {{ color:var(--accent); }}
 <div class="kicker">{html.escape(a.get("kategori") or "AI-nyt")} · {html.escape(a.get("kilde", ""))} · {dato_vis}</div>
 <h1>{rubrik}</h1>
 <p class="manchet">{resume}</p>
-{f'<img class="top" src="/{html.escape(a["billede"])}" alt="">' if a.get("billede") else ""}
+{billed_html}
 {krop}
 {detaljer}
 {betydning}
@@ -1831,10 +1938,86 @@ footer a {{ color:var(--accent); }}
 </html>"""
 
 
+def _peg_dubletsider_mod_hovedhistorien(artikler: list[dict]) -> set[str]:
+    """Når to medier dækkede samme historie, står den tabende udgaves side
+    stadig på disk med sin egen canonical, der peger på sig selv.
+
+    Siden må ikke slettes - nogen kan have linket til den, og en 404 er værre
+    end en dublet. Men Google skal vide, hvilken af dem der er den rigtige,
+    ellers konkurrerer vores egne sider med hinanden om den samme søgning.
+    Vi retter derfor canonical til at pege på hovedhistorien og holder siden
+    ude af sitemappet - et sitemap bør kun indeholde canonical-URL'er.
+
+    Retter kun canonical. Hvilke sider der ER dubletter, læses bagefter af
+    disken - se `_dubletsider_paa_disk`.
+    """
+    rettet = 0
+    for a in artikler:
+        if not a.get("andre") or not a.get("rubrik") or a.get("kun_aktuel"):
+            continue
+        eget = _artikel_slug(a["link"])
+        maal = f"{SITE_URL}/artikel/{eget}.html"
+        for kilde in a["andre"]:
+            link = kilde.get("link")
+            if not link:
+                continue
+            slug = _artikel_slug(link)
+            if slug == eget:
+                continue            # en historie kan ikke være dublet af sig selv
+            sti = ARTIKEL_MAPPE / f"{slug}.html"
+            if not sti.exists():
+                continue
+            try:
+                gammel = sti.read_text(encoding="utf-8")
+            except OSError:
+                continue
+            ny, antal = re.subn(
+                r'(<link rel="canonical" href=")[^"]*(")',
+                lambda m: m.group(1) + html.escape(maal, quote=True) + m.group(2),
+                gammel, count=1)
+            if antal and ny != gammel:
+                try:
+                    sti.write_text(ny, encoding="utf-8")
+                except OSError:
+                    continue
+                rettet += 1
+    if rettet:
+        print(f"🔗 {rettet} dubletsider peger nu på deres hovedhistorie")
+
+
+def _dubletsider_paa_disk() -> set[str]:
+    """Hvilke artikelsider er sammenlagt under en anden historie?
+
+    Svaret læses af DISKEN - af sidernes egen canonical - og ikke af dagens
+    artikelliste. Grunden er målt: en hovedhistorie kan forsvinde ud af feedet
+    i en enkelt kørsel (den ene af vores egne dubletgrupper manglede i 6 af 14
+    kørsler, fordi `crawl_feed` returnerer en tom liste ved timeout). Udledte
+    vi dubletterne af `artikler`, ville siden dén kørsel ikke være kendt som
+    dublet: hovedløkken ville skrive den om med en canonical til sig selv og
+    lægge den tilbage i sitemappet - og næste kørsel ville vende det tilbage
+    igen. Canonical på disken er permanent hukommelse; artikellisten er ikke.
+    """
+    ude: set[str] = set()
+    for p in ARTIKEL_MAPPE.glob("*.html"):
+        try:
+            tekst = p.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        m = re.search(r'<link rel="canonical" href="([^"]*)"', tekst)
+        if m and m.group(1) != f"{SITE_URL}/artikel/{p.name}":
+            ude.add(p.stem)
+    return ude
+
+
 def lav_artikelsider(artikler: list[dict]) -> None:
     """Skriver en statisk HTML-side pr. dansk artikel (SEO) + eget sitemap.
     Gamle sider slettes ikke - de bliver stående som evigt indhold."""
     ARTIKEL_MAPPE.mkdir(exist_ok=True)
+    # 1) nye sammenlægninger: peg de tabende udgavers sider mod hovedhistorien
+    _peg_dubletsider_mod_hovedhistorien(artikler)
+    # 2) spørg disken, hvilke sider der er dubletter - både nattens og alle
+    #    tidligere. Se forklaringen i _dubletsider_paa_disk.
+    dubletter = _dubletsider_paa_disk()
     skrevet = 0
     poster = []
     for a in artikler:
@@ -1844,21 +2027,26 @@ def lav_artikelsider(artikler: list[dict]) -> None:
             continue                        # udgiveren tillader ikke et arkiv
         slug = _artikel_slug(a["link"])
         a["side"] = f"artikel/{slug}.html"
+        if slug in dubletter:
+            continue    # sammenlagt under en anden historie - lad siden stå
         sti = ARTIKEL_MAPPE / f"{slug}.html"
         indhold = _artikel_side_html(a)
         if not sti.exists() or sti.read_text(encoding="utf-8") != indhold:
             sti.write_text(indhold, encoding="utf-8")
             skrevet += 1
         poster.append((slug, (a.get("foerst_set") or "")[:10]))
-    # eget sitemap for artikelsiderne (alle, også de historiske)
-    alle_sider = sorted(ARTIKEL_MAPPE.glob("*.html"))
+    # eget sitemap for artikelsiderne (alle, også de historiske - men ikke
+    # dubletsider, som peger et andet sted hen med deres canonical)
+    alle_sider = sorted(p for p in ARTIKEL_MAPPE.glob("*.html")
+                        if p.stem not in dubletter)
     linjer = "".join(
         f"  <url><loc>{SITE_URL}/artikel/{p.name}</loc></url>\n" for p in alle_sider)
     (ROOT / "sitemap-artikler.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{linjer}</urlset>\n", encoding="utf-8")
-    print(f"🔎 Artikelsider: {skrevet} skrevet/opdateret, {len(alle_sider)} i alt")
+    print(f"🔎 Artikelsider: {skrevet} skrevet/opdateret, {len(alle_sider)} i sitemap"
+          + (f", {len(dubletter)} dubletter udeladt" if dubletter else ""))
 
 
 # ----- Statiske videosider (SEO) ---------------------------------------------
@@ -1898,11 +2086,11 @@ def _video_side_html(v: dict) -> str:
                      f'<strong>Hvad betyder det for dig?</strong><br>{_fed_html(v["betydning"])}</div>')
 
     # Struktureret data, så Google kan vise siden som videoresultat
-    jsonld = json.dumps({
+    jsonld = _jsonld({
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        "name": v.get("rubrik") or v.get("titel", ""),
-        "description": v.get("resume_da") or "",
+        "name": str(v.get("rubrik") or v.get("titel") or ""),
+        "description": str(v.get("resume_da") or ""),
         "thumbnailUrl": v.get("thumb", ""),
         "uploadDate": dato,
         "duration": v.get("varighed") or None,
@@ -1910,7 +2098,7 @@ def _video_side_html(v: dict) -> str:
         "url": url,
         "publisher": {"@type": "Organization", "name": "AI-nyheder",
                       "url": SITE_URL},
-    }, ensure_ascii=False)
+    })
 
     return f"""<!DOCTYPE html>
 <html lang="da">
@@ -1977,7 +2165,7 @@ footer a {{ color:var(--accent); }}
 <h1>{rubrik}</h1>
 <p class="manchet">{resume}</p>
 <a class="afspil" href="{html.escape(v.get("link", ""))}" rel="noopener">
-  <img src="{thumb}" alt="" loading="lazy"><span><b>▶</b></span></a>
+  <img src="{thumb}" alt="Se videoen på YouTube: {rubrik[:160]}" loading="lazy"><span><b>▶</b></span></a>
 {pointer}
 {hp}
 {betydning}

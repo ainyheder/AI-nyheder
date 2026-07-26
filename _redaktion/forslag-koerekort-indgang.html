@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forslag · indgang til kørekortet på forsiden</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Sidens rigtige farver og fonte, så forslaget kan bedømmes som det ville se ud */
+:root {
+  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
+  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd;
+  --radius: 18px; --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --font-ui: "Inter", -apple-system, sans-serif; --font-display: "Fraunces", Georgia, serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-ui); background: #e8e5dc; color: var(--blaek); line-height: 1.6; }
+.ramme { max-width: 1080px; margin: 0 auto; padding: 40px 24px 90px; }
+
+.side-titel { font-family: var(--font-display); font-weight: 900; font-size: 34px;
+  letter-spacing: -.02em; margin-bottom: 8px; }
+.side-under { color: var(--blaek-svag); font-size: 15.5px; max-width: 70ch; margin-bottom: 34px; }
+.side-under strong { color: var(--blaek); }
+
+h2.afsnit { font-family: var(--font-display); font-weight: 800; font-size: 22px;
+  margin: 44px 0 6px; letter-spacing: -.01em; }
+h2.afsnit:first-of-type { margin-top: 0; }
+.afsnit-under { color: var(--blaek-svag); font-size: 14.5px; margin-bottom: 18px; max-width: 74ch; }
+
+.maaling { background: var(--bg-kort); border: 1px solid var(--linje); border-radius: 14px;
+  padding: 20px 24px; margin-bottom: 30px; }
+.maaling ul { list-style: none; }
+.maaling li { font-size: 14.5px; padding: 8px 0 8px 26px; position: relative;
+  border-bottom: 1px solid var(--linje); }
+.maaling li:last-child { border-bottom: 0; }
+.maaling li::before { content: "▪"; position: absolute; left: 6px; color: var(--accent); font-weight: 700; }
+.maaling b { font-variant-numeric: tabular-nums; }
+
+/* --- forsidens rigtige udsnit, så forslaget ses i sin sammenhæng --- */
+.forside { background: var(--bg); border-radius: 18px; padding: 28px;
+  box-shadow: var(--skygge); margin-bottom: 12px; }
+.mrk { background: var(--blaek); color: var(--bg); border-radius: 18px;
+  padding: 26px 32px 22px; position: relative; overflow: hidden;
+  box-shadow: 0 2px 4px rgba(25,23,20,.08), 0 16px 40px rgba(25,23,20,.16); }
+.mrk::after { content: "☀️"; position: absolute; right: 16px; top: -14px;
+  font-size: 92px; opacity: .12; transform: rotate(12deg); pointer-events: none; }
+.brief-top { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; }
+.brief-kicker { font-family: var(--font-display); font-weight: 900; font-size: 23px;
+  letter-spacing: -.02em; }
+.brief-dato { font-size: 12px; font-weight: 600; color: #9a948a; margin-left: auto; }
+.brief-liste { list-style: none; counter-reset: brief; display: grid; gap: 0 44px;
+  grid-template-columns: 1fr 1fr; }
+.brief-liste li { font-size: 14.5px; line-height: 1.55; color: #e8e4da;
+  padding: 11px 0 11px 38px; position: relative; counter-increment: brief;
+  border-bottom: 1px solid rgba(244,242,236,.1); }
+.brief-liste li::before { content: counter(brief); position: absolute; left: 0; top: 11px;
+  width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff;
+  font-family: var(--font-display); font-size: 13px; font-weight: 800;
+  display: grid; place-items: center; }
+
+/* ====== FORSLAGET: fodlinjen i dagens overblik ====== */
+.brief-fod {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  margin-top: 18px; padding-top: 16px;
+  border-top: 1px solid rgba(244, 242, 236, .16);
+}
+.brief-fod-tekst { font-size: 13.5px; color: #b8b2a6; }
+.brief-fod-tekst b { color: var(--bg); font-weight: 600; }
+.brief-fod-link {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13.5px; font-weight: 700; text-decoration: none;
+  color: var(--bg); background: rgba(244, 242, 236, .1);
+  border: 1px solid rgba(244, 242, 236, .22);
+  padding: 9px 17px; border-radius: 999px;
+  transition: background .14s, border-color .14s, transform .14s;
+}
+.brief-fod-link:hover { background: var(--accent); border-color: var(--accent); transform: translateX(2px); }
+.brief-fod-link .pil { transition: transform .14s; }
+.brief-fod-link:hover .pil { transform: translateX(3px); }
+@media (max-width: 620px) {
+  .brief-fod-link { margin-left: 0; width: 100%; justify-content: center; }
+}
+/* ==================================================== */
+
+.mrk.foer .brief-fod { display: none; }
+
+.mrk-etiket { font-size: 11px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--blaek-svag); margin: 0 0 8px 4px; }
+
+.dom { border-left: 3px solid var(--accent); background: var(--accent-svag);
+  border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 20px 0 0; font-size: 14.5px; }
+.dom b { display: block; margin-bottom: 4px; }
+
+pre { background: var(--blaek); color: #e8e4da; border-radius: 12px;
+  padding: 18px 20px; overflow-x: auto; font-size: 12.5px; line-height: 1.7;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; margin: 10px 0 0; }
+pre b { color: #a99ff7; font-weight: 600; }
+.filsti { font-family: ui-monospace, Menlo, monospace; font-size: 12.5px;
+  background: var(--accent-svag); color: var(--accent); padding: 2px 7px; border-radius: 5px; }
+
+.afvist { background: var(--bg-kort); border: 1px solid var(--linje);
+  border-radius: 14px; padding: 8px 24px 18px; }
+.afvist h3 { font-size: 15px; margin: 16px 0 4px; }
+.afvist p { font-size: 14px; color: var(--blaek-svag); }
+</style>
+</head>
+<body>
+<div class="ramme">
+
+  <div class="side-titel">Én indgang til kørekortet</div>
+  <p class="side-under">
+    Forslag fra natsessionen 25. juli 2026 til køpunktet <strong>„Kørekortet er gemt bag
+    nyhederne“</strong>. Intet er sat ind på forsiden — det her er til at sige ja eller nej til.
+    Farver, fonte og mål er sidens egne, så udsnittet nedenfor viser, hvordan det faktisk
+    ville se ud.
+  </p>
+
+  <h2 class="afsnit">Hvad målingen viste</h2>
+  <p class="afsnit-under">
+    Jeg indlæste forsiden med dens egne data og talte, hvad en førstegangsbesøgende
+    kan klikke på.
+  </p>
+  <div class="maaling">
+    <ul>
+      <li><b>2 af 56 links</b> på forsiden peger på noget, man kan lære af. De øvrige 54 er nyheder, filtre og kilder.</li>
+      <li><b>0 links</b> peger direkte på kørekortet. Heller ikke på ordbogen, prompts, guiderne, quizzen eller erhvervsdelen.</li>
+      <li>Det ene lære-link er pillen <b>„🎓 Lær AI“</b> — <b>sidst</b> i topbarens filterrække, efter kategorier, emnemenu, Forskning, YouTube og Ugens overblik. Den har samme <span class="filsti">.pill</span>-klasse som nyhedsfiltrene, så den <b>ser ud som et filter</b>, ikke som en vej videre.</li>
+      <li>Det andet ligger i <b>footeren</b>.</li>
+      <li>Begge fører til <span class="filsti">laer.html</span> — en mellemside. Kørekortet er <b>to klik væk</b>, og ordet „kørekort“ optræder <b>ikke ét sted</b> på forsiden.</li>
+    </ul>
+  </div>
+  <p class="afsnit-under" style="margin-bottom:0">
+    Indholdet er der og er godt: <span class="filsti">laer.html</span> har en skarp
+    overskrift, en tre-vejs-indgang og ni kort. Problemet er ikke, hvad der ligger bag
+    døren. Det er, at forsiden ikke fortæller, at døren findes.
+  </p>
+
+  <h2 class="afsnit">Forslaget: en fodlinje i dagens overblik</h2>
+  <p class="afsnit-under">
+    Dagens overblik er det første, en besøgende ser, og det eneste sted på forsiden, hvor
+    redaktionen taler direkte til læseren. Når man netop har læst fem punkter om, hvad der
+    sker i AI, er det dér spørgsmålet <em>„burde jeg egentlig forstå det her bedre?“</em>
+    opstår. Indgangen skal ligge i det øjeblik — ikke ovenover det, og ikke nede i footeren.
+  </p>
+
+  <p class="mrk-etiket">Som forsiden ser ud i dag</p>
+  <div class="forside">
+    <div class="mrk foer">
+      <div class="brief-top">
+        <span class="brief-kicker">Dagens overblik — på 60 sekunder</span>
+        <span class="brief-dato">lørdag 25. juli</span>
+      </div>
+      <ol class="brief-liste">
+        <li>OpenAI og Anthropic advarer sammen mod åbne AI-modeller.</li>
+        <li>Oracle fyrer 21.000 og peger på AI som forklaring.</li>
+        <li>EU advarer om it-sikkerhedsrisiko ved elbiler.</li>
+        <li>Strava lancerer AI-ruter og snyderbekæmpelse.</li>
+        <li>Claude topper App Store efter ny hukommelsesfunktion.</li>
+      </ol>
+      <div class="brief-fod"></div>
+    </div>
+  </div>
+
+  <p class="mrk-etiket" style="margin-top:26px">Med forslaget</p>
+  <div class="forside">
+    <div class="mrk">
+      <div class="brief-top">
+        <span class="brief-kicker">Dagens overblik — på 60 sekunder</span>
+        <span class="brief-dato">lørdag 25. juli</span>
+      </div>
+      <ol class="brief-liste">
+        <li>OpenAI og Anthropic advarer sammen mod åbne AI-modeller.</li>
+        <li>Oracle fyrer 21.000 og peger på AI som forklaring.</li>
+        <li>EU advarer om it-sikkerhedsrisiko ved elbiler.</li>
+        <li>Strava lancerer AI-ruter og snyderbekæmpelse.</li>
+        <li>Claude topper App Store efter ny hukommelsesfunktion.</li>
+      </ol>
+      <div class="brief-fod">
+        <span class="brief-fod-tekst">
+          Vil du kunne det selv? <b>AI-kørekortet</b> — syv moduler, 15 minutter ad gangen, gratis.
+        </span>
+        <a class="brief-fod-link" href="../koerekort.html">
+          Start modul 1 <span class="pil">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dom">
+    <b>Hvorfor netop sådan</b>
+    Den er ikke et banner: den ligger inde i et kort, der allerede er der, adskilt af en
+    tynd linje — samme greb som „Hvad betyder det for dig“ på artikelsiderne. Den lover
+    kun det, kørekortet holder: syv moduler, 15–20 minutter hvert, gratis, uden login
+    (målt i <span class="filsti">koerekort.html</span>). Knappen siger
+    <em>„Start modul 1“</em> og ikke <em>„Læs mere“</em>, fordi den fører til noget, man
+    kan begynde på med det samme — og den springer mellemsiden over.
+  </div>
+
+  <h2 class="afsnit">Hvad det kræver</h2>
+  <p class="afsnit-under">
+    To steder i <span class="filsti">index.html</span>. Al CSS'en er allerede skrevet
+    ovenfor og kan kopieres som den er.
+  </p>
+  <pre><b>1) I visDagensBrief(), efter &lt;/ol&gt; i boks.innerHTML (omkring linje 1408):</b>
+
+  &lt;div class="brief-fod"&gt;
+    &lt;span class="brief-fod-tekst"&gt;Vil du kunne det selv?
+      &lt;b&gt;AI-kørekortet&lt;/b&gt; — syv moduler, 15 minutter ad gangen, gratis.&lt;/span&gt;
+    &lt;a class="brief-fod-link" href="koerekort.html"&gt;Start modul 1 &lt;span class="pil"&gt;→&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+<b>2) I &lt;style&gt;, lige efter reglerne for .brief-klik:</b>
+
+  reglerne for .brief-fod, .brief-fod-tekst og .brief-fod-link
+  — de står i kilden til denne fil, mellem de to ==== linjer</pre>
+
+  <div class="dom" style="border-left-color:#c98a1e;background:#faf1dd">
+    <b>Én ting at være klar over</b>
+    Dagens overblik skjuler sig selv, hvis <span class="filsti">brief.json</span> ikke er
+    fra i dag (<span class="filsti">if (d.dato !== dagNoegle(…)) return;</span>). Fejler
+    crawleren en morgen, forsvinder indgangen sammen med overblikket. Det er en rimelig
+    pris for placeringen — men skal indgangen stå uanset hvad, hører den i stedet lige
+    under <span class="filsti">#dagensBrief</span> som sit eget element.
+  </div>
+
+  <h2 class="afsnit">Tre andre placeringer, og hvorfor ikke dem</h2>
+  <div class="afvist">
+    <h3>Et bånd øverst på siden</h3>
+    <p>Punktet bad udtrykkeligt om at undgå det, og med god grund: et bånd over nyhederne
+      siger, at reklamen er vigtigere end indholdet. Det er også det første, en vant
+      læser lærer at overse.</p>
+    <h3>Et kort inde i nyhedsstrømmen</h3>
+    <p>Det ville få flest klik, netop fordi det ligner en artikel. Derfor bryder det punkt 5:
+      læseren tror, hun klikker på en nyhed. Et lærekort må ikke gå i forklædning.</p>
+    <h3>Gør „🎓 Lær AI“-pillen mere synlig</h3>
+    <p>Billigst, men den bliver ikke set: den ligger sidst i en række, der på en telefon
+      er scrollet ud til højre, og alt i den række er filtre. Værd at gøre <em>oveni</em> —
+      men den løser ikke problemet alene.</p>
+  </div>
+
+</div>
+</body>
+</html>

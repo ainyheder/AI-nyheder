@@ -772,8 +772,14 @@ function rng(seed) {
 }
 
 function visuel(a, id) {
-  if (a.billede) return `<img src="${esc(a.billede)}" alt="" loading="lazy"
+  // billedmotiv er art director-beskrivelsen af netop den scene, billedet
+  // viser - altså den bedste alt-tekst vi har. Uden den er kortets billede
+  // usynligt for skærmlæsere og for Google Billeder.
+  if (a.billede) {
+    const alt = esc(String(a.billedmotiv || a.rubrik || a.titel || "").slice(0, 180));
+    return `<img src="${esc(a.billede)}" alt="${alt}" loading="lazy"
     style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">`;
+  }
   return kunst(a, id);
 }
 
@@ -861,7 +867,12 @@ function tidsTekst(a) {
   }
   return t;
 }
-function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML; }
+/* textContent -> innerHTML escaper & < >, men IKKE anførselstegn. Flere steder
+   sættes værdien ind i en attribut (alt="…", data-link="…", title="…"), og der
+   ville et " i teksten bryde ud af attributten og kunne tilføje fx onload=.
+   Billedmotiver og YouTube-titler indeholder ofte anførselstegn, så &quot; er
+   ikke til pynt. */
+function esc(s) { const d = document.createElement("div"); d.textContent = s ?? ""; return d.innerHTML.replaceAll('"', "&quot;"); }
 function fed(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
 function overskrift(a) { return a.rubrik ? esc(a.rubrik) : esc(a.titel) + '<span class="en-chip">EN</span>'; }
 function brodtekst(a) {
@@ -947,7 +958,7 @@ function ytBaandHtml() {
       const hp = (v.hoejdepunkter || []).length;
       return `<a class="yt-kort" href="youtube.html#v=${encodeURIComponent(v.id)}">
         <div class="yt-art">
-          <img src="${esc(v.thumb)}" alt="" loading="lazy">
+          <img src="${esc(v.thumb)}" alt="Videominiature: ${esc(String(v.rubrik || v.titel || "").slice(0, 160))}" loading="lazy">
           <span class="yt-spil"><span>${IKON_SPIL}</span></span>
           ${v.varighed ? `<span class="yt-laengde">${ytLaengde(v.varighed)}</span>` : ""}
         </div>
