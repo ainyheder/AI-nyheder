@@ -19,8 +19,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ### 1 — I stykker for læseren lige nu
 
-*Ingen kendte. Alt, der var målt i stykker, er klaret. Står der intet her
-næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.*
+*Ingen kendte lige nu.*
 
 ### 2 — Bryder målestokken synligt
 
@@ -28,19 +27,37 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Artikelsider fryses, når de falder ud af 30-dages-vinduet.** Målt i nat:
-      15 af 16 sider under 900 tegn kunne crawleren ikke røre, fordi artiklen
-      var ude af `articles.json`. **Målt 26.07 kl. 11: 0 sider under 900 tegn** -
-      engangsscriptet ryddede dem alle. Men mekanismen er uændret: arkivet
-      holder 30 dage, så om en måned er problemet tilbage, og enhver fremtidig
-      forbedring vil kun ramme den nyeste måned. Første kørsel måtte
-      skrive et engangsscript af samme grund. Mindste rettelse: crawleren kan
-      genskrive en side ud fra sidens eget indhold, sådan som
-      `opsaetning/opgrader-gamle-artikelsider.py` allerede gør — den skal bare
-      kaldes fast i stedet for i hånden. *Punkt 4 og 10.*
+- [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
+      26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
+      og bruger kun den gamle fil som cache pr. link. Derfor lever en artikel
+      præcis så længe, kildens RSS-feed nævner den — **dage på et travlt feed**,
+      ikke de 30 dage `MAX_DAGE_GAMMEL` lover. **35 af 109 artikelsider er ude
+      af listen lige nu, den nyeste fra i går.** Konsekvensen er, at ingen
+      forbedring af artikelskabelonen nogensinde rammer mere end den nyeste uge,
+      og at hver ny nat skal skrive endnu et engangsscript. Nattens rettelser
+      lukkede symptomerne (tomme sider bygges ikke, billeder slettes ikke under
+      siderne), men ikke årsagen. Mindste rettelse: bevar artikler, der har en
+      side, indtil de 30 dage faktisk er gået. **Venter på Torben:** forsiden
+      ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
+      kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
+      det er afklaret. *Punkt 4 og 10.*
 
 - [ ] **Forsiden på en telefon.** Hierarkiet er bygget og testet på bred skærm.
       Hvordan holder hero + fire kort + kompakt liste på 390 px? *Punkt 4.*
+      **Halvt undersøgt 26.07 kl. 15:45 — kan ikke lukkes herfra.** Der er ingen
+      browser i sandkassen (hverken Chromium, Puppeteer eller Playwright), og
+      jsdom beregner ikke layout, så det kan ikke *måles*, om noget flyder ud.
+      Statisk gennemgang af kaskaden ved præcis 390 px (13 media queries, 345
+      selektorer) udelukker det, der mekanisk skal sprænge: ingen faste bredder
+      over 390 px, alle fem grids falder til én kolonne (største spor 340 px mod
+      358 px indhold), læsevisningens to spalter slår om ved 820 px, `viewport`
+      er rigtig, `min-width: 0` står 10 steder. De længste rigtige ord passer
+      også — 31 tegn mod cirka 34 der er plads til. **Mangler: at nogen ser den
+      på en telefon.** Bemærk til hovedkørslen: der står 0 `overflow-wrap` og 0
+      `word-break` i hele stilarket, så margenen er tynd — og der ligger allerede
+      et **35-tegns** ubrydeligt token i data (en rå YouTube-URL i det uoversatte
+      `resume`-felt på "Ny gratis AI-videoredigering til din Mac"), som kun holdes
+      væk fra skærmen af, at `resume_da` findes på netop den artikel.
 
 - [ ] **Hvor hurtigt loader forsiden?** Mål størrelsen på `data/articles.json`
       og billederne. Er der noget, der er vokset sig for stort? *Punkt 4.*
@@ -69,6 +86,27 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
+
+- [ ] **`data/img/` kan ikke længere rydde op efter sig.** Fra 26.07 sletter
+      oprydningen aldrig et billede, en side på disken peger på — det var
+      rettelsen, der fjernede 25 brudte billeder. Prisen er, at **62 af 69 filer
+      nu er permanente**, og at mappen vokser med ~10 billeder à 88 kB på travle
+      dage, altså 25–30 MB om måneden i git. Hæves `BILLED_STIL_VERSION`, låses
+      hele det gamle sæt fast oveni. Intet er i stykker; spørgsmålet er, hvornår
+      repoet bliver ubehageligt stort. Mindste rettelse er formentlig at flytte
+      billeder for sider ældre end X måneder ud af git og lade siderne pege på
+      `assets/og.png` — men det er Torbens valg, om det er værd at gøre endnu.
+      *Punkt 4.*
+
+- [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
+      `_peg_dubletsider_mod_hovedhistorien` kaldes øverst i `lav_artikelsider`,
+      altså **før** den nye `_har_noget_at_vise`-vagt, og den tjekker ikke, at
+      vinderens side faktisk bliver skrevet. Før 26.07 var `rubrik` nok til at
+      vinderen blev bygget; nu kan vagten blokere den, og så står dubletsiden
+      med en canonical mod en 404 — samtidig med at den selv er ude af
+      sitemappet. **Målt 26.07 kl. 15: 0 tilfælde**, så intet er i stykker nu.
+      Mindste rettelse: samme vagt i vinder-tjekket. Fundet af den uafhængige
+      gennemgang. *Punkt 4 og 10.*
 
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
 
@@ -124,6 +162,64 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **11 frosne artikelsider havde brudt billede igen.** *(26.07.2026, ekstra
+      kørsel kl. 15:32)* Punktet ventede på Torbens push, og det kom kl. 15:30 —
+      `_BILLED_I_HTML`, `_billedfil`, `_har_noget_at_vise` og `_side_har_indhold`
+      ligger nu alle i `origin/main`, så mekanismen bag er lukket, og oprydningen
+      kan ikke slette billederne igen. Tallet 11 holdt, men hver side havde **tre**
+      døde referencer til den samme forsvundne fil, ikke én: `<img class="top">`,
+      `og:image` (sort delevisning) og `"image"` i JSON-LD ("Image not found" i
+      Search Console) — 33 i alt. Alle 11 viste sig at være **dubletsider**, hvis
+      canonical peger på en hovedhistorie; det forklarer, hvorfor de er frosne.
+      Rettet fire linjer pr. fil, 44 i alt, intet andet rørt. Efter: 0, 0, 0, og 0
+      sider der lover en illustration uden at have en. Kontrolleret at
+      håndrettelsen er tegn for tegn identisk med `_artikel_side_html()`s egen
+      udskrift for en død billedsti, og at crawleren fejler pænt på fem slags
+      vrøvl-input. 326 assertions på siderne, 18 på forsiden, alle grønne. Samme
+      måling bekræftede, at **0 af 109 artikelsider** har canonical mod en 404 —
+      køens latente punkt om dét er stadig på nul.
+
+- [x] **25 artikelsider viste et brudt billede.** *(26.07.2026, ekstra kørsel
+      kl. 14:37 — fund uden for køen)* Målt: 25 af de 87 sider med billede pegede
+      på en fil, der ikke findes; dertil 25 døde `og:image` (ødelagt delevisning)
+      og 17 døde billeder i structured data ("Image not found" i Search Console).
+      Årsagen var to regler, der trak i hver sin retning: `lav_artikelsider`
+      gemmer siderne for evigt, mens oprydningen i `lav_billeder` slettede alt,
+      der ikke stod i den aktuelle liste — og artiklen forlader listen efter
+      dage. Et tredje hul lå i cachen, der bar en `billede`-sti videre til en
+      slettet fil, så **forsiden** viste det brudte billede for 2 levende
+      artikler i stedet for den tegnede grafik. Rettet fire steder: oprydningen
+      spørger nu siderne (nyt `_BILLED_I_HTML`), nyt `_billedfil()` slår filen op
+      og udelader `<img>`, `og:image` og JSON-LD-billedet på én gang, `main()`
+      rydder en død sti før `lav_billeder`, og de 25 sider er reparteret på
+      disken. Efter: 0, 0 og 0. 117 jsdom-assertions på 20 sider, alle grønne.
+
+- [x] **22 sider lovede en illustration, de ikke havde.** *(26.07.2026, ekstra
+      kørsel kl. 14:37 — fund uden for køen)* Varedeklarationen nederst stod som
+      fast tekst i skabelonen og sagde "AI-genereret illustration" også på sider
+      helt uden billede. Punkt 5. Noten bygges nu af led, og de 22 sider er
+      rettet på disken med samme ordlyd. Tørløb krævede præcis én ændret linje
+      pr. fil. Efter: 0 lyver, 87 med billede siger det stadig.
+
+- [x] **Artikelsider fryses, når de falder ud af 30-dages-vinduet.**
+      *(26.07.2026, ekstra kørsel kl. 14:37)* Punktet var rigtigt i, at siderne
+      fryser, men **forkert forklaret på tre måder**. (1) Fristen er dage, ikke
+      30: `articles.json` bygges forfra af feedene hver kørsel, så 35 af 109
+      sider er ude af listen nu, den nyeste fra i går. (2) Målingen kl. 11 talte
+      kun levende sider; tælles alle 109, er der **16 tomme** på 465–574 tegn, og
+      **12 af dem stod i sitemappet**, så Google blev inviteret til at sende
+      læsere til en rubrik, én sætning og et link ud af huset. (3) De blev ikke
+      tynde af at fryse — de blev **bygget** tynde, fordi en side skrives så snart
+      `rubrik` findes, ét AI-kald før genfortællingen; 12 af de 15 er Hacker
+      News-links til PDF'er, hvor der ikke var tekst at hente. Køens forslag
+      kunne ikke bruges: `opgrader-gamle-artikelsider.py` skriver kun JSON-LD og
+      alt-tekst, og på de 15 sider er der intet indhold at genskrive ud fra.
+      Rettet med to gratis guards: `_har_noget_at_vise()` venter med at bygge,
+      til der er noget at læse (placeret før `a["side"]` sættes, så forsiden ikke
+      linker i blinde), og `_side_har_indhold()` holder tomme sider ude af
+      sitemappet — 72 URL'er mod 85. 38 assertions. **Årsagen står urørt og er
+      skrevet ind i køen som eget punkt.**
 
 - [x] **Ingen af de statiske sider har en canonical.** *(26.07.2026, ekstra
       kørsel kl. 14)* Målt: 2 af 33 havde én. Sat på **28 sider** i crawlerens

@@ -71,6 +71,14 @@ MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
 BILLED_MAPPE = ROOT / "data" / "img"
+# Bruges af oprydningen til at spørge siderne, hvilke billeder de peger på,
+# før noget slettes. Kun filnavnet fanges.
+#
+# Skråstregen foran er valgfri med vilje: artikelsiderne skriver den absolutte
+# sti (`src="/data/img/…"`), men `uge.html` skriver den relative
+# (`src="data/img/…"`). Krævede mønstret skråstregen, ville ugesidens billeder
+# ikke være fredet - og det var netop dem, oprydningen havde slettet.
+_BILLED_I_HTML = re.compile(r"\bdata/img/([0-9a-f]{16}\.jpg)")
 MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel (værn mod løbske omkostninger)
 BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
@@ -1461,11 +1469,32 @@ def lav_billeder(artikler: list[dict]) -> None:
     if lavet:
         print(f"🎨 Genererede {lavet} nye artikelbilleder")
 
-    # ryd op: slet billeder for artikler der er røget ud af listen
+    # ryd op: slet billeder for artikler, der er røget ud af listen - men kun
+    # dem, ingen side på disken stadig peger på.
+    #
+    # De to regler trak i hver sin retning: artikelsiderne bliver med vilje
+    # stående for evigt (se lav_artikelsider), mens artiklen forsvinder ud af
+    # articles.json, så snart kildens RSS-feed holder op med at nævne den -
+    # dage, ikke de 30 MAX_DAGE_GAMMEL antyder. Ryddede vi blot efter listen,
+    # stod siden tilbage med et brudt billede, et dødt og:image (ødelagt
+    # delevisning) og "Image not found" i structured data. Målt 26.07: 25 af 87
+    # sider med billede var i præcis den tilstand.
     brugte = {_billed_navn(a["link"]) for a in artikler}
+    for mappe, moenster in ((ARTIKEL_MAPPE, "*.html"), (ROOT, "*.html")):
+        if not mappe.is_dir():
+            continue
+        for p in mappe.glob(moenster):
+            try:
+                brugte |= set(_BILLED_I_HTML.findall(p.read_text(encoding="utf-8")))
+            except OSError:
+                continue        # en ulæselig side må ikke koste os billederne
+    slettet = 0
     for fil in BILLED_MAPPE.glob("*.jpg"):
         if fil.name not in brugte:
             fil.unlink(missing_ok=True)
+            slettet += 1
+    if slettet:
+        print(f"🧹 Slettede {slettet} billeder, ingen side peger på")
 
 
 def omskriv_nye(artikler: list[dict], cache: dict) -> None:
@@ -1620,7 +1649,10 @@ def _uge_side_html(d: dict) -> str:
             "Penge & marked": "#f0e4c8", "Politik & jura": "#dde5ee",
             "Samfund & etik": "#f4e0d9", "Forskning": "#e2e7ee"}
     historier = d.get("historier", [])
-    forside_billede = (historier[0].get("billede") or "assets/og.png") if historier else "assets/og.png"
+    # Samme diskopslag som artikelsiderne får af _billedfil: uge.json bærer en
+    # billedsti videre i en uge, og filen kan være ryddet imens. Slår vi den
+    # ikke op, står ugesiden med brudte billeder og et dødt og:image.
+    forside_billede = (_billedfil(historier[0]) if historier else "") or "assets/og.png"
     stats = d.get("stats", {})
 
     kort = []
@@ -1629,9 +1661,10 @@ def _uge_side_html(d: dict) -> str:
         tone = TONE.get(h.get("kategori", ""), "#efece4")
         # uge.json gemmer ikke billedmotivet, så overskriften er alt-teksten
         h_alt = html.escape(str(h.get("overskrift") or "")[:180])
-        billede = (f'<div class="k-billede"><img src="{html.escape(h.get("billede", ""))}" '
+        h_bil = _billedfil(h)
+        billede = (f'<div class="k-billede"><img src="{html.escape(h_bil)}" '
                    f'alt="{h_alt}" '
-                   'loading="lazy" onerror="this.parentNode.remove()"></div>') if h.get("billede") else ""
+                   'loading="lazy" onerror="this.parentNode.remove()"></div>') if h_bil else ""
         kort.append(f"""<a class="k {'k-flip' if nr % 2 == 0 else ''}" href="{led}" style="--tone:{tone}">
 <span class="k-nr">{nr}</span>
 {billede}
@@ -1843,8 +1876,17 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
         b_af = {a["link"]: a.get("billede", "") for a in artikler}
         k_af = {a["link"]: a.get("kategori", "") for a in artikler}
         for h in gammel.get("historier", []):
+            # Ugens overblik skrives én gang om ugen og gen-renderes hver kørsel,
+            # men billedstien blev gemt i uge.json og aldrig efterprøvet. Var
+            # filen slettet imens, stod ugesiden med brudte billeder og et dødt
+            # og:image - altså sort delevisning på Facebook og LinkedIn. Samme
+            # opslag som _billedfil laver for artikelsiderne.
+            if h.get("billede") and not (ROOT / h["billede"]).is_file():
+                h["billede"] = ""
             if not h.get("billede"):
                 h["billede"] = b_af.get(h.get("link", ""), "")
+            if h.get("billede") and not (ROOT / h["billede"]).is_file():
+                h["billede"] = ""
             if not h.get("kategori"):
                 h["kategori"] = k_af.get(h.get("link", ""), "")
         gammel.setdefault("stats", {"historier": len(friske),
@@ -1928,12 +1970,32 @@ def _jsonld(data: dict) -> str:
             .replace("&", "\\u0026"))
 
 
+def _billedfil(a: dict) -> str:
+    """Artiklens billede, men kun hvis filen faktisk ligger der. Ellers "".
+
+    Feltet "billede" bliver sat, den kørsel billedet laves, og bliver stående
+    bagefter. Er filen siden røget - ryddet op, mislykket overførsel - må
+    skabelonen ikke pege på den alligevel: så får læseren et brudt billede,
+    delevisningen på sociale medier går i sort, og Search Console svarer
+    "Image not found" på den structured data. Ét opslag på disken lukker alle
+    tre huller på én gang.
+    """
+    sti = a.get("billede")
+    if not sti:
+        return ""
+    try:
+        return sti if (ROOT / sti).is_file() else ""
+    except OSError:
+        return ""
+
+
 def _artikel_side_html(a: dict) -> str:
     rubrik = html.escape(str(a.get("rubrik") or a.get("titel") or ""))
     resume = html.escape(str(a.get("resume_da") or a.get("resume") or ""))
     slug = _artikel_slug(a["link"])
     url = f"{SITE_URL}/artikel/{slug}.html"
-    billede = f"{SITE_URL}/{a['billede']}" if a.get("billede") else f"{SITE_URL}/assets/og.png"
+    billedfil = _billedfil(a)
+    billede = f"{SITE_URL}/{billedfil}" if billedfil else f"{SITE_URL}/assets/og.png"
     dato_vis = (a.get("dato") or "")[:10]
 
     krop = ""
@@ -1962,8 +2024,19 @@ def _artikel_side_html(a: dict) -> str:
     # Google Billeder.
     alt_tekst = html.escape(
         str(a.get("billedmotiv") or a.get("rubrik") or a.get("titel") or "")[:180])
-    billed_html = (f'<img class="top" src="/{html.escape(a["billede"])}" '
-                   f'alt="{alt_tekst}">') if a.get("billede") else ""
+    billed_html = (f'<img class="top" src="/{html.escape(billedfil)}" '
+                   f'alt="{alt_tekst}">') if billedfil else ""
+
+    # Varedeklarationen nederst må kun nævne illustrationen, når der ER en.
+    # Billedet laves først en senere kørsel (MAX_BILLEDER_PR_KOERSEL), og nogle
+    # sider får aldrig et - så stod der "AI-genereret illustration" på en side
+    # helt uden billede. Punkt 5 i redaktionens øjne: ærlighed frem for
+    # markedsføring, også når det er os selv, teksten smigrer.
+    note_dele = ["Genfortalt i egne ord af AI-nyheder.com"]
+    if billedfil:
+        note_dele.append("AI-genereret illustration")
+    note_dele.append("Tjek altid originalkilden, før du handler på vigtige oplysninger.")
+    note = " · ".join(note_dele)
 
     # Struktureret data, så Google kan vise siden som nyhedsresultat med dato
     # og billede. Videosiderne har haft det hele tiden; artikelsiderne ikke.
@@ -1980,7 +2053,7 @@ def _artikel_side_html(a: dict) -> str:
         "author": {"@type": "Organization", "name": "AI-nyheder", "url": SITE_URL},
         "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": SITE_URL},
     }
-    if a.get("billede"):
+    if billedfil:
         ld["image"] = billede
     if a.get("dato"):
         ld["datePublished"] = a["dato"]
@@ -2057,7 +2130,7 @@ footer a {{ color:var(--accent); }}
 {betydning}
 <p style="margin-top:24px"><strong>Kilder:</strong><br>{kilder}</p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
-<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+<p class="note">{note}</p>
 </main>
 <footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
@@ -2137,6 +2210,36 @@ def _dubletsider_paa_disk() -> set[str]:
     return ude
 
 
+def _har_noget_at_vise(a: dict) -> bool:
+    """Er der andet på siden end rubrikken og den ene resumésætning?
+
+    En artikel har kun en rubrik, indtil genfortællingen er skrevet, og
+    rubrikken alene er ikke en artikel: siden bliver en overskrift, én sætning
+    og et link ud af huset. Bygger vi den alligevel, står den der for evigt.
+    Artiklen forsvinder nemlig ud af articles.json, så snart kildens RSS-feed
+    holder op med at nævne den - dage, ikke de 30 dage MAX_DAGE_GAMMEL
+    antyder, for arkivet bliver bygget forfra af feedene hver kørsel og bruger
+    kun den gamle fil som cache pr. link. Derefter kan ingen kørsel røre siden
+    igen. Så vi venter. Er genfortællingen der næste kørsel, bygges siden da.
+    """
+    # "brief" står med vilje ikke her: feltet udfyldes aldrig (prompten beder om
+    # "sektioner"), og en side bygget på brief alene ville få en <p> uden <h2> og
+    # uden boks - altså blive kaldt tom af _side_har_indhold og holdt ude af
+    # sitemappet for evigt. To vagter, der er uenige, er værre end én, der er
+    # streng.
+    return bool(a.get("sektioner") or a.get("detaljer") or a.get("betydning"))
+
+
+def _side_har_indhold(h: str) -> bool:
+    """Samme spørgsmål, stillet til en side på disken.
+
+    Bruges til sitemappet, hvor de ældste siders artikel ikke længere står i
+    articles.json, så vi kun har siden selv at spørge. Ingen <h2> og ingen
+    boks betyder hverken sektioner, detaljer eller "Hvad betyder det for dig".
+    """
+    return "<h2>" in h or 'class="boks"' in h
+
+
 def lav_artikelsider(artikler: list[dict]) -> None:
     """Skriver en statisk HTML-side pr. dansk artikel (SEO) + eget sitemap.
     Gamle sider slettes ikke - de bliver stående som evigt indhold."""
@@ -2153,6 +2256,8 @@ def lav_artikelsider(artikler: list[dict]) -> None:
             continue                        # kun danske genfortællinger
         if a.get("kun_aktuel"):
             continue                        # udgiveren tillader ikke et arkiv
+        if not _har_noget_at_vise(a):
+            continue        # kun en rubrik endnu - se _har_noget_at_vise
         slug = _artikel_slug(a["link"])
         a["side"] = f"artikel/{slug}.html"
         if slug in dubletter:
@@ -2164,9 +2269,25 @@ def lav_artikelsider(artikler: list[dict]) -> None:
             skrevet += 1
         poster.append((slug, (a.get("foerst_set") or "")[:10]))
     # eget sitemap for artikelsiderne (alle, også de historiske - men ikke
-    # dubletsider, som peger et andet sted hen med deres canonical)
-    alle_sider = sorted(p for p in ARTIKEL_MAPPE.glob("*.html")
-                        if p.stem not in dubletter)
+    # dubletsider, som peger et andet sted hen med deres canonical, og ikke
+    # sider uden genfortælling: et sitemap er en invitation, og en side med
+    # rubrik + én sætning giver læseren ingenting at blive for. De ældste af
+    # dem kan ikke længere udfyldes - kilden er ude af feedet, og teksten har
+    # vi ikke gemt - så de holdes ude i stedet.
+    tomme = 0
+    alle_sider = []
+    for p in sorted(ARTIKEL_MAPPE.glob("*.html")):
+        if p.stem in dubletter:
+            continue
+        try:
+            indhold = p.read_text(encoding="utf-8")
+        except OSError:
+            alle_sider.append(p)   # kan ikke læses: behold den, frem for at
+            continue               # vælte hele kørslen på én ulæselig fil
+        if not _side_har_indhold(indhold):
+            tomme += 1
+            continue
+        alle_sider.append(p)
     linjer = "".join(
         f"  <url><loc>{SITE_URL}/artikel/{p.name}</loc></url>\n" for p in alle_sider)
     (ROOT / "sitemap-artikler.xml").write_text(
@@ -2174,7 +2295,8 @@ def lav_artikelsider(artikler: list[dict]) -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{linjer}</urlset>\n", encoding="utf-8")
     print(f"🔎 Artikelsider: {skrevet} skrevet/opdateret, {len(alle_sider)} i sitemap"
-          + (f", {len(dubletter)} dubletter udeladt" if dubletter else ""))
+          + (f", {len(dubletter)} dubletter udeladt" if dubletter else "")
+          + (f", {tomme} uden genfortælling udeladt" if tomme else ""))
 
 
 # ----- Statiske videosider (SEO) ---------------------------------------------
@@ -4125,6 +4247,19 @@ def main() -> None:
     navngiv_rubrikker(unikke)   # sætter navn på gamle, anonyme overskrifter i klumper
     stram_betydninger(unikke)   # skriver gamle, for lange betydninger om i klumper
     udfyld_billedmotiver(unikke)
+    # Glem billeder, hvis fil ikke er der længere, FØR vi prøver at lave nye.
+    # "billede" bliver båret videre af cachen (nøgle = link), så en artikel, der
+    # forsvandt ud af feedet én kørsel og kom tilbage den næste, kunne stå med
+    # en sti til en fil, oprydningen havde slettet imens. Så viste forsiden et
+    # brudt billede i stedet for at falde tilbage på den tegnede grafik.
+    # Ryddes feltet, kan billedet laves igen ad den normale vej.
+    glemt = 0
+    for a in unikke:
+        if a.get("billede") and not (ROOT / a["billede"]).is_file():
+            a["billede"] = ""
+            glemt += 1
+    if glemt:
+        print(f"🖼️  Glemte {glemt} billedstier, hvis fil var væk")
     lav_billeder(unikke)
 
     # "kunstig intelligens" -> "AI" i alle tekster (også gamle, cachede)
