@@ -24,23 +24,21 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
-- [ ] **Kontrolpanelet viser altid et forældet billede af natteloopet.** Målt
-      26.07: panelet sagde "Nat-loggen · FINDES IKKE ENDNU", selvom filen havde
-      ligget der i ni timer. Panelet læser ikke `_redaktion/*.md` direkte — det
-      læser et øjebliksbillede i `data/hjerne-data.js`, hvor teksten er
-      indlejret. Og `skriv_hjerne_status()` springes med vilje over på GitHub
-      Actions (`if os.environ.get("GITHUB_ACTIONS"): return`), så filen
-      opdateres **kun, når crawleren køres lokalt**. Statusfilen var fra 22:28,
-      nat-loggen fra 23:20. Torben åbner altså panelet om morgenen for at læse
-      nattens regnskab og får gårsdagens.
+- [ ] **Nat-loggen i panelet opdaterer sig ikke selv.** Panelet læser ikke
+      `_redaktion/*.md` direkte — det læser et øjebliksbillede i
+      `data/hjerne-data.js`, hvor teksten er indlejret. Og
+      `skriv_hjerne_status()` springes med vilje over på GitHub Actions
+      (`if os.environ.get("GITHUB_ACTIONS"): return`), så filen opdateres **kun,
+      når crawleren køres lokalt**. Målt 26.07: statusfilen var fra 22:28,
+      nat-loggen fra 23:20, og panelet sagde derfor "FINDES IKKE ENDNU" om en
+      fil, der havde ligget der i ni timer. Torben åbner panelet om morgenen for
+      at læse nattens regnskab og får gårsdagens.
       Mindste rettelse: lad natsessionen kalde `skriv_hjerne_status()` som
       sidste skridt, efter loggen er skrevet — den kører lokalt, så den må
-      gerne. Alternativt kan panelet `fetch`e filerne selv, men det virker ikke
-      fra `file://`, og det er netop dét, JS-filen findes for.
-      *Punkt 6 — man skal kunne holde styr på det.*
-      **Bemærk:** selve *visningen* blev lavet 26.07 (loggen renderes nu som
-      kort i stedet for rå markdown, og grænsen er hævet fra 4.000 til 30.000
-      tegn). Det, der stadig mangler, er at filen bliver opdateret af sig selv.
+      gerne. Det er en linje i `natsession.md`, som Torben ejer. At lade panelet
+      `fetch`e filerne selv virker ikke fra `file://`, og det er netop dét,
+      JS-filen findes for. *Punkt 6 — man skal kunne holde styr på det.*
+      (Selve visningen blev lavet 26.07 — se Klaret.)
 
 - [ ] **Kørekortet kan ikke nulstilles, og det spærrer for hold.** Al fremdrift
       ligger i `localStorage` (`aikort`, `aikort_praktik`, `aikort_e` m.fl.), og
@@ -60,13 +58,17 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       Mindste rettelse: skriv "nummeret kan ikke gættes" i stedet for "kan ikke
       opdigtes". Resten af varedeklarationen på siden er god. *Punkt 5.*
 
-- [ ] **4 overskrifter mangler stadig navn.** Er de opgivet af reparationsrunden
-      (flaget `navngivet`), og er det rimeligt i netop de fire tilfælde?
-      *Punkt 1 — den vigtigste regel i målestokken.*
+- [ ] **Overskrifter uden navn.** Målt 26.07: **9 artikler** bærer flaget
+      `navngivet`, altså har været gennem reparationsrunden én gang — enten fik
+      de et navn, eller AI'en opgav. Flaget skelner ikke mellem de to, så det
+      kræver, at man læser de ni rubrikker. Er der stadig nogen uden navn, og er
+      det rimeligt i netop de tilfælde? *Punkt 1 — den vigtigste regel i
+      målestokken.*
 
-- [ ] **20 af 96 artikler står uden billede.** Er det de rigtige 20 (dem der kun
-      vises som tekstlinjer), eller mangler nogle af dagens topkort deres
-      illustration? *Punkt 4.*
+- [ ] **32 af 110 artikler står uden billede.** (Tallet var 20 af 96 — arkivet
+      er vokset, andelen er nogenlunde den samme.) Er det de rigtige 32, altså
+      dem der kun vises som tekstlinjer, eller mangler nogle af dagens topkort
+      deres illustration? *Punkt 4.*
 
 - [ ] **Læs 20 tilfældige "Hvad betyder det for dig" igennem.** Rammer de én
       konkret konsekvens for læseren, eller er de blevet generiske? Skriv de
@@ -108,9 +110,13 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       kontrasten god nok til svagtseende? (Alt-tekst er klaret 25.07.)
       *Punkt 9.*
 
-- [ ] **Er `sitemap.xml` opdateret?** Den er skrevet i hånden og nævner ikke
-      alle sider — bl.a. hverken `velkommen.html`, `tak.html` eller den nye
-      `undervisning.html`. Sammenlign med de faktiske filer. *Punkt 4.*
+- [ ] **`sitemap.xml` mangler tre sider.** Målt 26.07: 29 URL'er i sitemappet,
+      32 HTML-filer i roden (404 fraregnet). De tre, der mangler, er
+      `velkommen.html`, `tak.html` og `undervisning.html`. De to første er
+      formentlig med vilje ude (kvitteringssider), men det står ingen steder —
+      og `undervisning.html` skal ind, den dag den bliver linket. Filen er
+      skrevet i hånden, så den falder bagud, hver gang der kommer en side til.
+      *Punkt 4 og 10.*
 
 - [ ] **Tjek at alle interne links virker.** Gennemgå alle HTML-sider for links
       til sider, der ikke findes. *Punkt 4.*
@@ -126,10 +132,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
-
-- [ ] **Virker det strammede Hacker News-feed?** Point-grænsen er hævet fra 50
-      til 150. Kom der stadig artikler igennem i de seneste kørsler, eller er
-      feedet gået i nul? *Punkt 6.*
 
 - [ ] **Viser videosiderne faktisk tidsstempler?** De 18 låste videoer har nu
       dansk resumé. Får højdepunkterne plads på deres statiske sider, eller
@@ -189,6 +191,26 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ## Klaret
 
 *(Natsessionen flytter afkrydsede punkter herned med dato.)*
+
+- [x] **Virker det strammede Hacker News-feed?** *(26.07.2026)* Ja. Med
+      point-grænsen hævet fra 50 til 150 ligger der **4 Hacker News-artikler**
+      i arkivet, og alle fire er set **i dag**: om open-weight-modeller, om
+      argumenterne mod open source-AI, om en ny videoeditor og om en F-16 fløjet
+      af en robot. Feedet er ikke gået i nul, og de fire ligner præcis dét, den
+      højere grænse skulle give — historier med reel vægt frem for støj.
+
+- [x] **Nat-loggen blev vist som rå markdown i kontrolpanelet.**
+      *(26.07.2026)* Panelet viste `**stjerner**`, `##` og backticks i en
+      monospace-tekstboks. Den renderes nu som ét kort pr. nat med datoen skrevet
+      ud, titlen i Fraunces og **Fandt / Gjorde / Testede / Til Torben** som
+      mærkede felter; nattens regnskab får sit eget fremhævede kort. Rendereren
+      er skrevet i hånden, fordi panelet åbnes fra `file://`. Grænsen for,
+      hvor meget der indlejres, er hævet fra 4.000 til 30.000 tegn, og
+      klipningen tager altid nattens regnskab med. Modalen bruger nu skærmen:
+      `min(1560px, 96vw)`, to spalter over 1120 px og tre over 1900 px. Elleve
+      injektionsforsøg afvist — heriblandt et `javascript:`-link, der slap
+      igennem første udgave. **Det, filen bliver vist med, er løst; at den bliver
+      opdateret, er det ikke** — se punktet i køen.
 
 - [x] **ordbog.html — mangler der ord, folk møder i nyhederne i dag?**
       *(26.07.2026)* Gennemgået i fase 2. Ordbogen har 48 opslag. Jeg trak alle
