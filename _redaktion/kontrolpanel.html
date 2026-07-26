@@ -358,6 +358,11 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   // window.LAESERTAL skrives af crawleren (hent_laesertal i crawler.py).
   // Mangler den, er Cloudflare-tokenet ikke sat - og så siger ruden det selv.
   var L = window.LAESERTAL;
+  // To forskellige tilstande, som ikke må forveksles: ingen fil betyder, at
+  // tokenet mangler. En fil uden sider betyder, at målingen kører fint - men
+  // at Cloudflare ikke har registreret ét eneste besøg. Det er to helt
+  // forskellige problemer, og de skal have hver sin besked.
+  var harFil = !!L;
   var harTal = !!(L && L.sider && L.sider.length);
 
   function ltal(n) { return (n == null ? 0 : n).toLocaleString("da-DK"); }
@@ -383,7 +388,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 
   function laeserHtml() {
     var ud = "<h1>Læserne</h1>";
-    if (!harTal) {
+    if (!harFil) {
       return ud + '<p class="manchet">Hvad bliver læst, hvad bliver ikke — og hvem ' +
         "sender folk herind.</p>" +
         '<div class="advarsel" style="margin:0"><strong>Der er ingen tal endnu.</strong> ' +
@@ -391,6 +396,23 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         "til Cloudflare. Det kræver ét GitHub-secret — <code>CLOUDFLARE_API_TOKEN</code> — " +
         "og opskriften står i <code>_redaktion/laesertal-opsaetning.md</code>. " +
         "Når det er sat, står tallene her efter næste kørsel.</div>";
+    }
+    if (!harTal) {
+      var maaltTom = new Date(L.opdateret).toLocaleString("da-DK",
+        { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+      return ud + '<p class="manchet">Målingen kører — men Cloudflare har ikke ' +
+        "registreret ét eneste besøg i perioden.</p>" +
+        '<div class="advarsel" style="margin:0"><strong>Nul besøg på ' +
+        esc(String(L.dage || 7)) + " dage.</strong> Hentet " + esc(maaltTom) +
+        ". Nøglen virker — ellers var filen her slet ikke — så det er ét af tre:" +
+        "<ul style='margin:9px 0 0 18px'>" +
+        "<li>Der er reelt ingen besøgende endnu. Tjek Cloudflares eget overblik: " +
+        "viser det også nul, passer tallet.</li>" +
+        "<li>Der læses fra den forkerte konto. Har du flere Cloudflare-konti, " +
+        "tager crawleren den første, den får. Så skal <code>CLOUDFLARE_ACCOUNT_ID</code> " +
+        "sættes som secret.</li>" +
+        "<li>Beacon-koden på siden hører til et andet site i Web Analytics, end " +
+        "det crawleren spørger om.</li></ul></div>";
     }
 
     var maalt = new Date(L.opdateret).toLocaleString("da-DK",
@@ -503,7 +525,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function tegn() {
     // Er der læsertal, åbner panelet på dem. Er der ikke, bliver det stående
     // hvor det plejede - så intet ændrer sig, før tokenet er sat.
-    if (!valgt) valgt = harTal ? "laes" : "c1";
+    if (!valgt) valgt = harFil ? "laes" : "c1";
     tegnSide(); tegnRude();
     var n = Object.keys(S.hjerner).filter(erAendret).length +
             Object.keys(dokAendret).filter(dokErAendret).length;

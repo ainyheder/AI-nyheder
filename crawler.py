@@ -3452,17 +3452,20 @@ def hent_laesertal() -> dict | None:
     nu = datetime.now(timezone.utc)
     fra = (nu - timedelta(days=LAESERTAL_DAGE)).strftime("%Y-%m-%dT%H:%M:%SZ")
     til = nu.strftime("%Y-%m-%dT%H:%M:%SZ")
-    # Konto-id er valgfrit: er det ikke sat, spørger vi bare om de konti,
-    # tokenet har adgang til, og bruger den første. Har man kun én konto -
-    # og det har de fleste - er der ingenting at slå op.
+    # Konto-id er valgfrit. Er det ikke sat, spørger vi ALLE de konti, tokenet
+    # har adgang til, og vælger bagefter den, der faktisk har tal for vores
+    # site-tag. Før tog vi bare den første (limit: 1) - og havde man mere end
+    # én konto, skrev vi tavst nuller fra den forkerte. Det ligner til
+    # forveksling "ingen har besøgt siden", og det er en dyr forveksling.
     variabler = {"tag": CF_SITE_TAG, "fra": fra, "til": til}
     if konto:
         variabler["konto"] = konto
     query = ("""
 query (%s$tag: String!, $fra: Time!, $til: Time!) {
-  viewer { accounts%s {""" % (
+  viewer { accounts%s {
+    accountTag""" % (
         "$konto: String!, " if konto else "",
-        "(filter: {accountTag: $konto})" if konto else "(limit: 1)")) + """
+        "(filter: {accountTag: $konto})" if konto else "")) + """
     sider: rumPageloadEventsAdaptiveGroups(
       limit: 60, orderBy: [sum_visits_DESC],
       filter: {siteTag: $tag, datetime_geq: $fra, datetime_leq: $til, bot: 0}
@@ -3489,12 +3492,24 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
             print("📈 ⚠️ Cloudflare gav ingen konti tilbage - har tokenet "
                   "rettigheden Account Analytics · Read?")
             return None
-        d = konti[0]
+        # Vælg den konto, der rent faktisk har tal for vores site-tag. Har man
+        # kun én, er det den. Har man flere, er det den rigtige - i stedet for
+        # den første, der tilfældigvis kom retur.
+        med_data = [k for k in konti if (k.get("sider") or [])]
+        if len(konti) > 1:
+            print(f"📈 Tokenet ser {len(konti)} Cloudflare-konti; "
+                  f"{len(med_data)} har data for site-tag {CF_SITE_TAG[:8]}…")
+        d = med_data[0] if med_data else konti[0]
         sider = [{"sti": (r.get("dimensions") or {}).get("requestPath", ""),
                   "besoeg": (r.get("sum") or {}).get("visits", 0),
                   "visninger": r.get("count", 0)}
                  for r in d.get("sider") or []]
         sider = [s for s in sider if s["sti"]]
+        if not sider:
+            print(f"📈 ⚠️ Nul sidevisninger for site-tag {CF_SITE_TAG[:8]}… på "
+                  f"{len(konti)} konto(er). Enten er der reelt ingen besøg, "
+                  f"eller også hører beacon'en på siden til et andet site i "
+                  f"Web Analytics - sammenlign tag'et med snippet'en derinde.")
         henvisere = [{"fra": (r.get("dimensions") or {}).get("refererHost") or "direkte",
                       "besoeg": (r.get("sum") or {}).get("visits", 0)}
                      for r in d.get("henvisere") or []]
