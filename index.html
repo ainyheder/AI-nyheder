@@ -418,7 +418,7 @@ a.pill { text-decoration: none; display: inline-block; }
   font-size: 12.5px; color: var(--ov-tekst-svag); }
 .ov-meta .ov-ur { opacity: .75; }
 
-/* --- Mest læste ---
+/* --- Mest omtalte ---
    Smal tilstand (under 1300px): ren overskriftsliste i fuld bredde under
    nettet. Bred tilstand: egen spalte til højre, hvor nr. 1 får billede. */
 .ov-mest { display: flex; flex-direction: column; min-width: 0; }
@@ -470,6 +470,8 @@ a.pill { text-decoration: none; display: inline-block; }
   .ov-mest-et .ov-mest-nr { display: none; }   /* billedet siger allerede "nummer et" */
   .ov-mest-et .ov-mest-rubrik { font-size: 15.5px; font-weight: 700; line-height: 1.28; }
   .ov-mest .ov-meta { display: flex; margin-top: 7px; font-size: 11.5px; }
+  /* Kildetallet er grunden til placeringen, så det må gerne ses */
+  .ov-mest-kilder { color: var(--ov-lilla); font-weight: 600; }
 }
 
 /* --- Foden --- */
@@ -864,7 +866,7 @@ a.pill { text-decoration: none; display: inline-block; }
      koster - kilden står i selve artiklen. Uden den er der plads til, at
      læsetid og knap står side om side på det store kort. */
   .ov-meta .ov-kilde { display: none; }
-  /* Mest læste på mobil: rene overskrifter, ingen billeder, og kun fire.
+  /* Mest omtalte på mobil: rene overskrifter, ingen billeder, og kun fire.
      Hver rubrik fylder to linjer her, så det femte punkt koster 53px for
      én historie mere - de er bedre brugt på at få nyhederne op i skærmen. */
   .ov-mest { margin-top: 2px; }
@@ -1970,39 +1972,43 @@ function overblikRaekkeHtml(p, nr) {
   </a>`;
 }
 
-/* ---------- Mest læste ----------
-   Tallene kommer fra Cloudflare Web Analytics via crawlerens hent_laesertal().
-   Findes data/laesertal.json ikke (CLOUDFLARE_API_TOKEN er ikke sat), springes
-   hele spalten over - vi gætter aldrig på, hvad der er mest læst. */
-function mestLaeste(tal, antal) {
-  if (!tal || !Array.isArray(tal.sider) || !artikler.length) return [];
-  const ud = [];
-  for (const s of tal.sider) {                      // allerede sorteret efter besøg
-    const sti = String(s.sti || "").replace(/^\//, "");
-    if (!sti.startsWith("artikel/")) continue;      // forsiden og temasiderne er ikke nyheder
-    const a = artikler.find(x => x.side === sti);
-    if (a && !ud.includes(a)) ud.push(a);
-    if (ud.length >= antal) break;
-  }
-  return ud;
+/* ---------- Mest omtalte ----------
+   Rangeret efter hvor mange kilder der dækker samme historie - crawleren
+   samler dubletter i feltet "andre". Det er et redaktionelt signal, ikke et
+   læsertal: når fem medier skriver om det samme, er historien stor.
+   Vindue på en uge, så listen følger med døgnet og ikke hænger fast i arkivet.
+   Ved lige mange kilder afgør prioritet, derefter hvor frisk historien er. */
+const OMTALT_DAGE = 7;
+
+function mestOmtalte(antal) {
+  const graense = Date.now() - OMTALT_DAGE * 86400000;
+  return artikler
+    .filter(a => a.rubrik && (a.andre || []).length &&
+                 new Date(a.foerst_set || a.dato || 0).getTime() >= graense)
+    .sort((x, y) => y.andre.length - x.andre.length ||
+                    (y.prio ?? 0) - (x.prio ?? 0) ||
+                    new Date(y.foerst_set || y.dato || 0) - new Date(x.foerst_set || x.dato || 0))
+    .slice(0, antal);
 }
 
-/* Nr. 1 får billede, kategori og læsetid; resten er rene overskrifter.
+/* Nr. 1 får billede, kategori og kildetal; resten er rene overskrifter.
    Under 1300px falder billedet og metalinjen væk, og topkortet bliver til
    første punkt i en almindelig liste - se CSS'en. Derfor bærer topkortet
    både et nummer (til den smalle tilstand) og et billede (til den brede). */
-function overblikMestHtml(liste, dage) {
+function overblikMestHtml(liste) {
   if (liste.length < 2) return "";                  // en liste med ét punkt er ingen liste
   const [top, ...resten] = liste;
+  const kilder = n => `${n + 1} kilder`;            // artiklen selv tæller med
   return `
   <aside class="ov-mest">
-    <div class="ov-mest-overskrift">Mest læste${dage ? `<span>${dage} dage</span>` : ""}</div>
+    <div class="ov-mest-overskrift">Mest omtalte<span>${OMTALT_DAGE} dage</span></div>
     <a class="ov-mest-et" href="${esc(top.link)}" data-link="${esc(top.link)}">
       <div class="ov-mest-art">${visuel(top, "ovm1")}</div>
       ${top.kategori ? `<div class="ov-mest-kat">${esc(top.kategori)}</div>` : ""}
       <span class="ov-mest-nr">1</span>
       <h3 class="ov-mest-rubrik">${esc(top.rubrik || top.titel)}</h3>
-      ${overblikMeta(top)}
+      <div class="ov-meta"><span class="ov-ur">🕐</span><span>${laesetid(top)} min. læsning</span>
+        <span class="ov-mest-kilder">· ${kilder(top.andre.length)}</span></div>
     </a>
     <ol class="ov-mest-liste">${resten.map((a, i) => `
       <li><a href="${esc(a.link)}" data-link="${esc(a.link)}">
@@ -2015,20 +2021,16 @@ function overblikMestHtml(liste, dage) {
 function visDagensBrief() {
   // "Har du kun ét minut?" - AI-skrevet 5-punkts overblik over døgnet
   if (!window.fetch) return;
-  Promise.all([
-    fetch("data/brief.json").then(r => r.json()),
-    // Læsertal er en gave, ikke en forudsætning - fejler den, står overblikket
-    // bare uden "Mest læste".
-    fetch("data/laesertal.json").then(r => r.ok ? r.json() : null).catch(() => null),
-  ])
-    .then(([d, tal]) => {
+  fetch("data/brief.json")
+    .then(r => r.json())
+    .then(d => {
       if (!d || !d.punkter || d.punkter.length < 3) return;
       if (d.dato !== dagNoegle(new Date().toISOString())) return;   // kun dagens
       const boks = document.getElementById("dagensBrief");
       const datoTekst = new Date(d.dato + "T12:00:00").toLocaleDateString("da-DK",
         { weekday: "long", day: "numeric", month: "long" });
       const [foerste, ...resten] = d.punkter;
-      const mestHtml = overblikMestHtml(mestLaeste(tal, 5), tal && tal.dage);
+      const mestHtml = overblikMestHtml(mestOmtalte(5));
       boks.innerHTML = `
         <div class="ov-top">
           <div>
