@@ -313,13 +313,23 @@ a.pill { text-decoration: none; display: inline-block; }
 
 /* --- Nettet: ét stort kort + fire rækker --- */
 .ov-net { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
-.ov-liste { display: grid; gap: 12px; }
+.ov-liste { display: grid; gap: 10px; }
 /* Kun i to spalter: rækkerne får deres naturlige højde, og overskuddet lægges
    ud i mellemrummene, så spalterne flugter forneden. Lige høje rækker (1fr)
    ville strække alle fire til den længste rubrik og koste ~80px dødt felt. */
 @media (min-width: 1000px) {
   .ov-net { grid-template-columns: minmax(0,1fr) minmax(0,1.04fr); }
   .ov-liste { align-content: space-between; }
+  /* Under 1300px er der ikke bredde til en tredje spalte. Så lægger "Mest
+     læste" sig i fuld bredde under nettet med overskrifterne i to spalter. */
+  .ov-mest { grid-column: 1 / -1; margin-top: 4px; }
+  .ov-mest-liste { columns: 2; column-gap: 34px; }
+  .ov-mest-liste li { break-inside: avoid; }
+}
+@media (min-width: 1300px) {
+  .ov-net.har-mest { grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,.58fr); }
+  .ov-net.har-mest .ov-mest { grid-column: auto; margin-top: 0; }
+  .ov-mest-liste { columns: auto; }
 }
 
 /* Fælles for begge korttyper */
@@ -388,8 +398,8 @@ a.pill { text-decoration: none; display: inline-block; }
 /* --- De fire rækker --- */
 /* Nummeret ligger uden for .ov-rk-art, så det overlever, når miniaturen
    skjules på mobil. Her svæver det bare oven på billedet igen. */
-.ov-rk { position: relative; display: grid; grid-template-columns: 205px minmax(0,1fr) auto;
-  align-items: center; gap: 18px; padding-right: 20px; }
+.ov-rk { position: relative; display: grid; grid-template-columns: 185px minmax(0,1fr) auto;
+  align-items: center; gap: 16px; padding-right: 18px; }
 .ov-rk-art { position: relative; align-self: stretch; min-height: 104px; overflow: hidden; }
 .ov-rk-art img, .ov-rk-art svg {
   position: absolute; inset: 0; width: 100%; height: 100%;
@@ -397,9 +407,9 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .ov-rk[data-link]:hover .ov-rk-art img, .ov-rk[data-link]:hover .ov-rk-art svg { transform: scale(1.05); }
 .ov-rk .ov-nr { left: 11px; top: 11px; min-width: 26px; height: 26px; font-size: 14px; border-radius: 8px; }
-.ov-rk-tekst { padding: 12px 0; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
-.ov-rk-kat { font-size: 10.5px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: var(--ov-lilla); }
-.ov-rk-tekst h3 { font-size: 16px; font-weight: 700; line-height: 1.32; letter-spacing: -.01em; color: #f0eee8; }
+.ov-rk-tekst { padding: 10px 0; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.ov-rk-kat { font-size: 10px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: var(--ov-lilla); }
+.ov-rk-tekst h3 { font-size: 15.5px; font-weight: 700; line-height: 1.28; letter-spacing: -.01em; color: #f0eee8; }
 .ov-pil { flex: none; font-size: 19px; color: var(--ov-lilla); transition: transform .18s; }
 .ov-rk[data-link]:hover .ov-pil { transform: translateX(4px); }
 
@@ -407,6 +417,60 @@ a.pill { text-decoration: none; display: inline-block; }
 .ov-meta { display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
   font-size: 12.5px; color: var(--ov-tekst-svag); }
 .ov-meta .ov-ur { opacity: .75; }
+
+/* --- Mest læste ---
+   Smal tilstand (under 1300px): ren overskriftsliste i fuld bredde under
+   nettet. Bred tilstand: egen spalte til højre, hvor nr. 1 får billede. */
+.ov-mest { display: flex; flex-direction: column; min-width: 0; }
+.ov-mest-overskrift {
+  display: flex; align-items: baseline; gap: 9px;
+  font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ov-lilla); padding-bottom: 8px; margin-bottom: 2px;
+  border-bottom: 1px solid var(--ov-kant);
+}
+.ov-mest-overskrift span {
+  font-size: 9.5px; font-weight: 700; letter-spacing: .06em;
+  color: var(--ov-tekst-svag); margin-left: auto;
+}
+.ov-mest-et, .ov-mest-liste a {
+  display: grid; grid-template-columns: auto minmax(0,1fr); align-items: baseline;
+  gap: 10px; padding: 7px 0; text-decoration: none; color: inherit;
+  border-bottom: 1px solid var(--ov-kant); transition: color .15s;
+}
+.ov-mest-liste { list-style: none; margin: 0; }
+.ov-mest-liste li:last-child a { border-bottom: 0; }
+.ov-mest-nr {
+  font-family: var(--font-display); font-size: 13px; font-weight: 900;
+  color: var(--ov-lilla); opacity: .75; font-variant-numeric: tabular-nums;
+}
+.ov-mest-rubrik { font-size: 13.5px; font-weight: 600; line-height: 1.35; color: #e8e4da; }
+.ov-mest-et:hover .ov-mest-rubrik, .ov-mest-liste a:hover .ov-mest-rubrik { color: #fff; }
+/* Billede, kategori og læsetid hører kun til den brede tilstand */
+.ov-mest-art, .ov-mest-kat, .ov-mest .ov-meta { display: none; }
+
+@media (min-width: 1300px) {
+  .ov-mest-et {
+    display: block; padding: 0 0 12px; margin-bottom: 4px;
+  }
+  /* Billedet må ikke gøre spalten til den højeste - så ville det sætte
+     højden på hele opslaget. Derfor loft over det. */
+  .ov-mest-art {
+    display: block; position: relative; aspect-ratio: 16 / 9; max-height: 175px;
+    border-radius: 12px; overflow: hidden; margin-bottom: 9px;
+  }
+  .ov-mest-art img, .ov-mest-art svg {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; transition: transform .5s ease;
+  }
+  .ov-mest-et:hover .ov-mest-art img, .ov-mest-et:hover .ov-mest-art svg { transform: scale(1.04); }
+  .ov-mest-kat {
+    display: block; font-size: 9.5px; font-weight: 800; letter-spacing: .11em;
+    text-transform: uppercase; color: var(--ov-lilla); margin-bottom: 5px;
+  }
+  .ov-mest-et .ov-mest-nr { display: none; }   /* billedet siger allerede "nummer et" */
+  .ov-mest-et .ov-mest-rubrik { font-size: 15.5px; font-weight: 700; line-height: 1.28; }
+  .ov-mest .ov-meta { display: flex; margin-top: 7px; font-size: 11.5px; }
+}
 
 /* --- Foden --- */
 .ov-bund { display: flex; justify-content: center; margin-top: 14px; }
@@ -797,6 +861,14 @@ a.pill { text-decoration: none; display: inline-block; }
      koster - kilden står i selve artiklen. Uden den er der plads til, at
      læsetid og knap står side om side på det store kort. */
   .ov-meta .ov-kilde { display: none; }
+  /* Mest læste på mobil: rene overskrifter, ingen billeder, og kun fire.
+     Hver rubrik fylder to linjer her, så det femte punkt koster 53px for
+     én historie mere - de er bedre brugt på at få nyhederne op i skærmen. */
+  .ov-mest { margin-top: 2px; }
+  .ov-mest-overskrift { padding-bottom: 6px; }
+  .ov-mest-et, .ov-mest-liste a { padding: 6px 0; gap: 9px; }
+  .ov-mest-rubrik { font-size: 13px; }
+  .ov-mest-liste li:nth-child(n+4) { display: none; }
   .ov-bund { margin-top: 13px; }
   .ov-tidligere { padding: 10px 17px; font-size: 12.5px; }
   .wrap { padding: 14px 16px 60px; }
@@ -1895,18 +1967,65 @@ function overblikRaekkeHtml(p, nr) {
   </a>`;
 }
 
+/* ---------- Mest læste ----------
+   Tallene kommer fra Cloudflare Web Analytics via crawlerens hent_laesertal().
+   Findes data/laesertal.json ikke (CLOUDFLARE_API_TOKEN er ikke sat), springes
+   hele spalten over - vi gætter aldrig på, hvad der er mest læst. */
+function mestLaeste(tal, antal) {
+  if (!tal || !Array.isArray(tal.sider) || !artikler.length) return [];
+  const ud = [];
+  for (const s of tal.sider) {                      // allerede sorteret efter besøg
+    const sti = String(s.sti || "").replace(/^\//, "");
+    if (!sti.startsWith("artikel/")) continue;      // forsiden og temasiderne er ikke nyheder
+    const a = artikler.find(x => x.side === sti);
+    if (a && !ud.includes(a)) ud.push(a);
+    if (ud.length >= antal) break;
+  }
+  return ud;
+}
+
+/* Nr. 1 får billede, kategori og læsetid; resten er rene overskrifter.
+   Under 1300px falder billedet og metalinjen væk, og topkortet bliver til
+   første punkt i en almindelig liste - se CSS'en. Derfor bærer topkortet
+   både et nummer (til den smalle tilstand) og et billede (til den brede). */
+function overblikMestHtml(liste, dage) {
+  if (liste.length < 2) return "";                  // en liste med ét punkt er ingen liste
+  const [top, ...resten] = liste;
+  return `
+  <aside class="ov-mest">
+    <div class="ov-mest-overskrift">Mest læste${dage ? `<span>${dage} dage</span>` : ""}</div>
+    <a class="ov-mest-et" href="${esc(top.link)}" data-link="${esc(top.link)}">
+      <div class="ov-mest-art">${visuel(top, "ovm1")}</div>
+      ${top.kategori ? `<div class="ov-mest-kat">${esc(top.kategori)}</div>` : ""}
+      <span class="ov-mest-nr">1</span>
+      <h3 class="ov-mest-rubrik">${esc(top.rubrik || top.titel)}</h3>
+      ${overblikMeta(top)}
+    </a>
+    <ol class="ov-mest-liste">${resten.map((a, i) => `
+      <li><a href="${esc(a.link)}" data-link="${esc(a.link)}">
+        <span class="ov-mest-nr">${i + 2}</span>
+        <span class="ov-mest-rubrik">${esc(a.rubrik || a.titel)}</span>
+      </a></li>`).join("")}</ol>
+  </aside>`;
+}
+
 function visDagensBrief() {
   // "Har du kun ét minut?" - AI-skrevet 5-punkts overblik over døgnet
   if (!window.fetch) return;
-  fetch("data/brief.json")
-    .then(r => r.json())
-    .then(d => {
+  Promise.all([
+    fetch("data/brief.json").then(r => r.json()),
+    // Læsertal er en gave, ikke en forudsætning - fejler den, står overblikket
+    // bare uden "Mest læste".
+    fetch("data/laesertal.json").then(r => r.ok ? r.json() : null).catch(() => null),
+  ])
+    .then(([d, tal]) => {
       if (!d || !d.punkter || d.punkter.length < 3) return;
       if (d.dato !== dagNoegle(new Date().toISOString())) return;   // kun dagens
       const boks = document.getElementById("dagensBrief");
       const datoTekst = new Date(d.dato + "T12:00:00").toLocaleDateString("da-DK",
         { weekday: "long", day: "numeric", month: "long" });
       const [foerste, ...resten] = d.punkter;
+      const mestHtml = overblikMestHtml(mestLaeste(tal, 5), tal && tal.dage);
       boks.innerHTML = `
         <div class="ov-top">
           <div>
@@ -1917,9 +2036,10 @@ function visDagensBrief() {
           </div>
           <div class="ov-dato"><span>☀️</span>${esc(datoTekst)}</div>
         </div>
-        <div class="ov-net">
+        <div class="ov-net${mestHtml ? " har-mest" : ""}">
           ${overblikHeroHtml(foerste, 1)}
           <div class="ov-liste">${resten.map((p, i) => overblikRaekkeHtml(p, i + 2)).join("")}</div>
+          ${mestHtml}
         </div>
         <div class="ov-bund">
           <a class="ov-tidligere" href="uge.html"><span>🗞️</span>Se hele ugens overblik</a>
