@@ -53,6 +53,12 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-07-26 (kl. 23:38) · Sprang over — 23:00-kørslen var stadig i gang
+
+**Sprang over:** Låsen `_redaktion/.nat-koerer` var 37 minutter gammel (grænsen er 3 timer), og `crawler.py` (23:27), `index.html` (23:29) og denne log (23:33) var rørt inden for 11 minutter — to uafhængige tegn på, at 23:00-kørslen arbejder lige nu. Jeg rørte ingen af projektets filer og lod låsen ligge med vilje, så den kørende session beholder den; den ryddes af den selv, eller som forældet efter 3 timer.
+
+**Til Torben:** mit ene `git status` efterlod en tom `.git/index.lock` — den er ryddet igen, og `git status` svarer normalt. Det er fjerde gang i dag, den dukker op, og den ville have blokeret dit næste commit i GitHub Desktop med "Unable to create index.lock: File exists". Ligger den der, og kører ingen git-proces, kan den altid slettes uden risiko.
+
 ## 2026-07-26 (kl. 23:30) · Flettet mit arbejde med de rigtige artikel-URL'er
 
 **Fandt:** Efter dit commit hentede pull 13 commits ned, og `index.html` gik i
