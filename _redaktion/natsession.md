@@ -16,22 +16,29 @@ Der kører to sessioner i døgnet, og de må aldrig arbejde samtidig i de samme 
 2. Ellers: skriv nuværende tidspunkt (ISO 8601) i `_redaktion/.nat-koerer`.
 3. **Slet altid `_redaktion/.nat-koerer`, før du slutter** — også hvis du stopper undervejs.
 
-## Hvilken kørsel er du?
+## Hvilken slags kørsel er du?
 
-Der er to hver nat, og de har **forskellige opgaver**. Kig på klokken:
+Du kan blive startet på tre måder: automatisk kl. 23, automatisk kl. 03, eller
+fordi Torben trykker **Kør nu** midt på dagen. **Kig ikke på klokken — kig på,
+hvad der allerede er sket.** Så virker det samme regelsæt uanset hvornår du starter.
 
-- **Er den mellem 22 og 01: du er FØRSTE kørsel.** Du laver kun fase 1 — arbejd
-  køen. Du skal hverken evaluere eller omprioritere. Spring fase 2 og 3 over.
-- **Er den mellem 02 og 05: du er SIDSTE kørsel.** Du laver fase 1, og derefter
-  fase 2 og 3, som afslutter natten.
-- **Er du i tvivl** (kørslen er forsinket, eller den første aldrig kørte): kig i
-  `nat-log.md`. Findes der allerede et "Nattens regnskab" for i dag, er du
-  første kørsel af den næste nat. Findes der ikke noget for i dag, og klokken er
-  efter 01, så tag hele turen — fase 1, 2 og 3.
+Åbn `nat-log.md` og se efter en overskrift `### Nattens regnskab · <dagens dato>`.
 
-Grunden: evaluering og omprioritering skal ske ÉN gang pr. nat. Sker det to
-gange, omgør den anden kørsel den førstes prioritering, og køen skifter
-rækkefølge uden at nogen har lært noget nyt.
+- **Findes der INTET regnskab for i dag:** du er dagens hovedkørsel. Du tager
+  hele turen — fase 1, 2 og 3 — og skriver regnskabet til sidst.
+- **Findes der ALLEREDE et regnskab for i dag:** du er en ekstra kørsel. Du laver
+  **kun fase 1**: arbejd køen, og skriv en log-post pr. færdigt punkt. Rør ikke
+  prioriteringen, og skriv ikke et regnskab til. Tilføj i stedet én linje under
+  dagens regnskab: `**Ekstra kørsel <klokkeslæt>:** klarede <N> punkter mere.`
+
+Grunden: evaluering og omprioritering skal ske ÉN gang i døgnet. Sker det oftere,
+omgør hver kørsel den forriges rækkefølge, og køen skifter udseende, uden at
+nogen har lært noget nyt. At arbejde køen kan derimod ske så mange gange, det skal
+være.
+
+**Bliver du startet manuelt, er Torben sandsynligvis vågen.** Det ændrer ikke,
+hvad du laver — men skriv loggen, som om han læser den om fem minutter, ikke i
+morgen tidlig.
 
 ## Læs derefter, i denne rækkefølge
 
@@ -156,6 +163,18 @@ og skriv øverst i `nat-log.md`:
 **Testede:** <hvad du kørte, og hvad der kom ud>
 **Til Torben:** <hvad han skal vide, beslutte eller gøre>
 ```
+
+**Opdatér kontrolpanelet, før du slutter.** Panelet læser et øjebliksbillede i
+`data/hjerne-data.js`, ikke filerne direkte — så uden det her viser det din log
+og din kø, som de så ud sidst, nogen huskede at genskabe dem. Kør:
+
+```
+python3 -c "import importlib.util,os;os.chdir('.');\
+s=importlib.util.spec_from_file_location('c','crawler.py');\
+m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.skriv_hjerne_status()"
+```
+
+Den kræver ingen API-nøgle og rører kun de to panelfiler.
 
 Afslut natten med:
 
