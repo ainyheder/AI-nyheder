@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-26T15:42:31.473101+00:00",
+ "opdateret": "2026-07-26T16:27:21.086857+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -100,7 +100,7 @@ window.LAESERTAL = {
      1,
      2,
      1,
-     7,
+     6,
      3,
      3,
      0
@@ -170,7 +170,7 @@ window.LAESERTAL = {
      0,
      1,
      2,
-     2,
+     3,
      4,
      0,
      0
@@ -381,6 +381,208 @@ window.LAESERTAL = {
   }
  ],
  "ai_chats": [],
+ "sidehenvisere": {
+  "/": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 205
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 181,
+    "visninger": 181
+   },
+   {
+    "fra": "l.facebook.com",
+    "besoeg": 13,
+    "visninger": 13
+   },
+   {
+    "fra": "www.google.com",
+    "besoeg": 4,
+    "visninger": 4
+   },
+   {
+    "fra": "m.facebook.com",
+    "besoeg": 3,
+    "visninger": 3
+   },
+   {
+    "fra": "www.facebook.com",
+    "besoeg": 3,
+    "visninger": 3
+   }
+  ],
+  "/tak.html": [
+   {
+    "fra": "buttondown.com",
+    "besoeg": 3,
+    "visninger": 3
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/youtube.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 16
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 3,
+    "visninger": 3
+   }
+  ],
+  "/laer.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 86
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 2,
+    "visninger": 2
+   }
+  ],
+  "/velkommen.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 2,
+    "visninger": 2
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/om.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 7
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/koerekort.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 25
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/uge.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 71
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/erhverv.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/about": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/koerekort-2.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/guide-igang.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/prompts.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 14
+   }
+  ],
+  "/koerekort-6.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/faq.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 9
+   }
+  ],
+  "/koerekort-1.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/guide-prompts.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 8
+   }
+  ],
+  "/koerekort-7.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/guide-sikkerhed.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/ordbog.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ]
+ },
  "faste_uden_besoeg": [
   "/prompt-arkiv.html",
   "/quiz.html",
