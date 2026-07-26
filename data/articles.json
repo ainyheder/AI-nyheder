@@ -1,7 +1,206 @@
 {
-  "opdateret": "2026-07-26T10:03:49.061241+00:00",
-  "antal": 99,
+  "opdateret": "2026-07-26T10:27:47.976833+00:00",
+  "antal": 103,
   "artikler": [
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 213",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T10:27:47.976833+00:00",
+      "rubrik": "Hvorfor frygten for åben AI er overdrevet",
+      "resume_da": "Åbne AI-modeller bliver beskyldt for at være farlige, men historien viser, at forsøg på at stoppe dem sjældent virker.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Flere politikere og ledere i tech-branchen advarer om, at **åbne AI-modeller** er en trussel. De mener, at kun få udvalgte virksomheder bør have lov til at kontrollere teknologien. Men kritikere peger på, at åben software altid har været fundamentet for al anden software – også de kommercielle produkter, vi bruger hver dag."
+        },
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Forsøg på at bremse teknologi har sjældent succes. Da **PGP-kryptering** kom i 1991, åbnede USA en straffesag mod opfinderen. Amerikanske myndigheder forsøgte også at begrænse eksporten af stærk kryptering. Resultatet? Den svage version blev brugt over hele verden, og kontrollen ramte kun amerikanerne selv."
+        },
+        {
+          "overskrift": "Det handler om konkurrence",
+          "tekst": "Debatten handler ofte om at vinde et 'AI-kapløb' mod Kina. Men i modsætning til solpaneler og stål er AI ikke en fysisk vare. Åbne modeller fra Kina kan faktisk hjælpe amerikanske virksomheder, fordi de kan bygge ovenpå dem. Hvis en model har en politisk slagside, kan alle bare rette den."
+        },
+        {
+          "overskrift": "Hvad så nu?",
+          "tekst": "Forsøg på at lukke ned for åbne AI-modeller vil næppe virke i længden. Historien viser, at teknologien finder vej alligevel. I stedet for at spilde kræfter på at stoppe den, bør vi fokusere på at udnytte den bedst muligt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Åbne modeller danner basis for næsten al kommerciel software, inklusiv AI.",
+        "USA forsøgte at kriminalisere kryptering i 1991, men opgav efter retssager.",
+        "Eksportkontrol af SSL førte til, at svage versioner blev standard over hele verden.",
+        "Det er svært at definere, hvad der gør en AI-model 'kinesisk'.",
+        "Åbne modeller giver virksomheder frihed til at tilpasse og forbedre dem.",
+        "Regulering af åbne modeller risikerer at ramme amerikanerne hårdest."
+      ],
+      "betydning": "Du får adgang til billigere og mere varierede AI-værktøjer, fordi åbne modeller skaber konkurrence – uanset hvad myndighederne prøver.",
+      "pointer": [
+        "Åben software er grundlaget for al teknologi.",
+        "Tidligere forsøg på kontrol slog fejl.",
+        "Kinesiske AI-modeller kan gavne vestlige virksomheder.",
+        "Åbne modeller er svære at stoppe."
+      ],
+      "billedmotiv": "En bunke åbne kodelåse på en stak slidte bøger om softwarehistorie, ved siden af en kop kaffe og en gammel computer.",
+      "navngivet": true,
+      "billede": "data/img/9a151c1c9892dad0.jpg",
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-26T10:27:47.976833+00:00",
+      "rubrik": "Ny gratis Mac-app: Rediger videoer med AI-hjælp",
+      "resume_da": "Palmier Pro er en åben videoredigering til Mac, der lader dig og en AI-assistent klippe og generere indhold direkte i tidslinjen.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Palmier Pro er en gratis, åben videoredigeringsapp til Mac, bygget fra bunden i Swift. Den er inspireret af Adobe Premiere Pro, men har indbygget AI – så du kan generere videoer og billeder med topmodeller som Seedance, **Kling** og Nano Banana Pro direkte i tidslinjen."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Appen kobler sig til værktøjer som Claude, Codex eller Cursor via MCP-protokollen. Når Palmier Pro kører, åbner den en server på **http://127.0.0.1:19789/mcp** – så kan din AI-assistent tale direkte med redigeringsprogrammet. Du kan også bruge appens egen indbyggede agent."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Videoredigeringsdelen og MCP-serveren er helt åbne og gratis – ingen login påkrævet. Det eneste lukkede er den generative AI-proces. Du kan downloade appen og begynde at eksperimentere med det samme, både som selvstændig editor og med AI-kobling via Claude, Codex eller Cursor."
+        },
+        {
+          "overskrift": "Hvor finder du det?",
+          "tekst": "Appen er tilgængelig på Palmiers hjemmeside og via GitHub. Udviklerne har også en Discord-server, Twitter/X-profil (@Palmier_io) og Instagram (@palmier.io). Fejl og feedback kan sendes som GitHub-issue eller mail til founders@palmier.io."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Appen er bygget fra bunden i Swift.",
+        "Understøtter Seedance, Kling og Nano Banana Pro til videogenerering.",
+        "MCP-server åbner på http://127.0.0.1:19789/mcp.",
+        "Kan kobles til Claude, Codex eller Cursor.",
+        "Videoredigering og MCP-server er open source.",
+        "Kun den generative AI-proces er lukket.",
+        "Ingen login nødvendig for at downloade og bruge."
+      ],
+      "betydning": "Du kan nu redigere videoer på Mac og samtidig få en AI-assistent til at generere indhold – alt sammen gratis og uden at skulle logge ind.",
+      "pointer": [
+        "Gratis og open source videoredigering til Mac.",
+        "Indbygget AI til at generere video og billeder.",
+        "Kobler til Claude, Codex og Cursor via MCP.",
+        "Kræver ikke login – bare download og brug."
+      ],
+      "billedmotiv": "En Mac-skrivebord med tidslinje fra et videoredigeringsprogram, hvor der ved siden af en AI-chatboks står en kaffekop og en lille robotfigur.",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 267 # Comments: 331",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T10:27:47.976833+00:00",
+      "rubrik": "AI-pilot fløj F-16 i nyt forsøg",
+      "resume_da": "DARPA og det amerikanske luftvåben testede en F-16 styret af AI. Testen viser, at AI tager styring i kampfly.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Forsvarsorganisationen DARPA fløj sammen med det amerikanske luftvåben for nylig en F-16-jager styret udelukkende af AI. Testen er et stort skridt mod at give AI-kontrol over avancerede kampfly."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Hvis AI kan styre F-16, kan det betyde hurtigere reaktioner og færre menneskelige fejl i luftkamp. Men det rejser også spørgsmål om sikkerhed og etik, når maskiner træffer dødbringende beslutninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "DARPA og det amerikanske luftvåben stod bag testen.",
+        "En F-16 blev fløjet med AI som pilot.",
+        "Testen er offentliggjort i 2026.",
+        "Nyheden fik 267 point på Hacker News."
+      ],
+      "betydning": "AI-styrede kampfly kan ændre, hvordan luftforsvar fungerer – hastigere og mindre afhængigt af mennesker.",
+      "pointer": [
+        "AI fløj F-16 i test.",
+        "DARPA og luftvåbnet stod bag.",
+        "Rejser spørgsmål om sikkerhed."
+      ],
+      "billedmotiv": "Nærbillede af en F-16's cockpit med skærme fulde af AI-data, ingen menneskehænder på styrepinden.",
+      "side": "artikel/cc744205c493c965.html"
+    },
+    {
+      "titel": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+      "link": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "resume": "Google commits $40M in AI tokens and credits for the Genesis Mission",
+      "dato": "2026-07-22T13:38:54+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-07-26T10:27:47.976833+00:00",
+      "rubrik": "Google giver gratis AI-adgang til amerikanske forskere",
+      "resume_da": "Google donerer AI-værktøjer for 300 millioner kroner til USAs energiministeriums forskningslaboratorier for at speede opdagelser op.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "En ny mission",
+          "tekst": "Google DeepMind lægger **40 millioner dollars** i AI-kredit på bordet, så forskere på USAs førende energilaboratorier kan bruge avanceret AI til at knække nogle af de sværeste videnskabelige nødder – fra fusionsplasma til nye materialer."
+        },
+        {
+          "overskrift": "Robotterne overtager",
+          "tekst": "På National Laboratory of the Rockies har forskere sat **Gemini** i deres mikroskoper. Resultatet: kalibreringstiden er skrumpet fra over **90 minutter** til 13, og antallet af manuelle trin til at fokusere et billede er faldet fra **50 til to**. Forskernes tid bliver i stedet brugt på selve videnskaben."
+        },
+        {
+          "overskrift": "Matematik i maskinhastighed",
+          "tekst": "Ved Pacific Northwest National Laboratory bruger seniorforsker Dr. Henry Kvinge AlphaEvolve til at kortlægge ufatteligt komplekse matematiske systemer. AI'en finder selv skjulte sammenhænge, som ville tage mennesker årevis at opdage – og resultaterne former allerede fremtidens forskning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Google giver 40 millioner dollars i AI-kredit og cloud-adgang til energiministeriets forskere.",
+        "De 17 nationale laboratorier under DOE får nu adgang til DeepMinds AI-værktøjer.",
+        "Mikroskop-kalibrering på NLR gik fra 90 minutter til 13 minutter med Gemini.",
+        "Antallet af manuelle trin til fokusering faldt fra 50 til to.",
+        "AlphaEvolve bruges til at kortlægge matematiske systemer for hurtigt at finde nye sammenhænge.",
+        "Initiativet er en del af Genesis Mission, der sigter mod at fordoble tempoet i amerikansk videnskab.",
+        "Tusindvis af brugere på laboratorierne får gratis adgang til Gemini for Government i et år."
+      ],
+      "betydning": "Du kommer hurtigere til at se nye materialer og energiløsninger, fordi forskerne får AI-assistenter, der gør kedeligt laboratoriearbejde på få minutter i stedet for timer.",
+      "pointer": [
+        "300 millioner kroner i gratis AI-kredit.",
+        "Mikroskop-kalibrering syv gange hurtigere.",
+        "Fra 50 til to klik med AI-hjælp.",
+        "Ambition: dobbelt så hurtig videnskab på ti år."
+      ],
+      "billedmotiv": "Et laboratoriemikroskop med et stort Google Gemini-logo på siden, ved siden af en skærm der viser et kalibreringsur, der går fra 90 til 13 minutter.",
+      "side": "artikel/860743384445f2e5.html"
+    },
     {
       "titel": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
       "link": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/",
@@ -114,10 +313,10 @@
         "UAW advarer mod humanoid robotteknologi."
       ],
       "billedmotiv": "En tom fabrikshal med et enkelt Atlas-robot-skelet på en sokkel, omgivet af gule advarselstape og en fane fra fagforeningen.",
+      "billede": "data/img/743947a70ecb82b9.jpg",
       "kat_ai": true,
       "prio": 5,
       "navngivet": true,
-      "billede": "data/img/743947a70ecb82b9.jpg",
       "side": "artikel/ccda4e78083a1251.html"
     },
     {
@@ -180,7 +379,6 @@
       "billedmotiv": "En stor, tom mælkecylinder med påskriften 'AI-tokens 2026' og en enkelt dråbe i bunden.",
       "kat_ai": true,
       "prio": 4,
-      "navngivet": true,
       "side": "artikel/b33bfbbe9e9dd1da.html"
     },
     {
@@ -959,70 +1157,6 @@
       "prio": 3
     },
     {
-      "titel": "Claude’s voice mode is now available for Opus and Sonnet",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
-      "resume": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack, and Canva. When Anthropic launched voice mode last year, it was primarily focused on delivering […]",
-      "dato": "2026-07-23T15:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-24T13:54:18.866953+00:00",
-      "rubrik": "Claudes stemme får dybere hjerne hos Anthropic",
-      "resume_da": "Anthropic udvider stemmestyring til de kraftigere AI-modeller Opus og Sonnet.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt?",
-          "tekst": "Stemmefunktionen var tidligere kun tilgængelig på **Haiku** – den hurtige, men simple model. Nu kan du også bruge den på **Opus** og **Sonnet**, der er bygget til svære problemstillinger og kan levere dybdegående svar."
-        },
-        {
-          "overskrift": "Sådan virker det",
-          "tekst": "Du kan skifte mellem tekst og tale midt i en samtale, og også hoppe fra Haiku til Opus, hvis en hurtig idé kræver mere analyse. AI'en kan handle for dig – for eksempel rykke kalenderaftaler, hvis toget er forsinket."
-        },
-        {
-          "overskrift": "Nye sprog",
-          "tekst": "Stemmestyring er ikke længere kun på engelsk. Nu understøttes **fransk**, **tysk**, **spansk**, **hindi**, **indonesisk**, italiensk, japansk, koreansk og portugisisk."
-        },
-        {
-          "overskrift": "Hvad koster det?",
-          "tekst": "Sonnet og Opus ligger over Haiku i pris. Hvis du vil have adgang til de dybere modeller med stemme, kræver det et abonnement – priserne starter ved omkring 20 dollars om måneden for Sonnet via Anthropics API."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "9",
-          "label": "nye sprog understøttet"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Stemmefunktionen kom først på Haiku, men nu også på Opus og Sonnet.",
-        "Brugere kan skifte mellem tekst- og stemmetilstand midt i en samtale.",
-        "Sonnet og Opus er designet til komplekse opgaver som planlægning og analyse.",
-        "AI'en kan selv udføre handlinger i apps som Gmail, Slack og Canva.",
-        "Stemmestyring er nu tilgængelig på ni sprog ud over engelsk.",
-        "Opus er den dyreste model, mens Sonnet er et mellemniveau.",
-        "Anthropic opdaterede lanceringstidspunktet fra 2026 til 2025."
-      ],
-      "betydning": "Du kan nu tale med AI'en om alvorlige arbejdsopgaver og få den til at flytte møder eller skrive pitch-dokumenter – uden at taste en linje.",
-      "pointer": [
-        "Stemmefunktionen udvides til dybere AI-modeller.",
-        "Skift mellem tale og tekst midt i samtalen.",
-        "AI'en kan handle i dine apps.",
-        "Ni nye sprog understøttes."
-      ],
-      "billedmotiv": "En kaffekop og en mobiltelefon liggende på et skrivebord med en kalender-app åben, hvor aftaler er blevet flyttet.",
-      "billede": "data/img/68035073d36087d2.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/"
-        }
-      ],
-      "side": "artikel/f7a651ced6714ba3.html"
-    },
-    {
       "titel": "Danskere skal levere vigtig software til den australske hær",
       "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer",
       "resume": "Det sker som led i en større modernisering af Australiens forsvar.",
@@ -1552,6 +1686,12 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/"
+        }
+      ],
       "detaljer": [
         "En nedfalden elledning udløste spændingsstød over hele PJM-nettet, som forsyner 67 millioner kunder.",
         "Over 3 gigawatt datacentre afbrød strømmen på under 30 sekunder.",
@@ -1572,12 +1712,6 @@
       "billede": "data/img/f5b29321c0ccd0e1.jpg",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/"
-        }
-      ],
       "side": "artikel/102564d4308f8be4.html"
     },
     {
@@ -2050,68 +2184,68 @@
       "side": "artikel/9e99a2ed73e61def.html"
     },
     {
-      "titel": "The tech-broification of American science has officially begun",
-      "link": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
-      "resume": "The Trump administration unveiled the first \"Genesis Mission\" grants on Thursday, directing $5 billion toward hundreds of AI-driven science projects in an effort the White House has described as \"comparable in urgency and ambition to the Manhattan Project.\" At roughly the same time, Trump's science adviser Michael Kratsios was on Capitol Hill selling lawmakers on […]",
-      "dato": "2026-07-24T10:43:55-04:00",
+      "titel": "Claude’s voice mode is now available for Opus and Sonnet",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+      "resume": "Until now, voice mode has only been available on Claude Haiku, Anthropic's faster but less powerful model. Now the company is making its Opus and Sonnet models available in voice mode, and extending its reach into apps like Gmail, Slack, and Canva. When Anthropic launched voice mode last year, it was primarily focused on delivering […]",
+      "dato": "2026-07-23T15:00:00-04:00",
       "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-22T12:00:00+00:00",
-      "rubrik": "Trump sætter 37 milliarder på AI-forskning",
-      "resume_da": "Ny milliardsatsning skal omforme amerikansk forskning, men kritikere kalder det et politisk kup uden respekt for basal videnskab.",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-24T13:54:18.866953+00:00",
+      "rubrik": "Claudes stemme får dybere hjerne hos Anthropic",
+      "resume_da": "Anthropic udvider stemmestyring til de kraftigere AI-modeller Opus og Sonnet.",
       "brief": "",
       "sektioner": [
         {
-          "overskrift": "En guldalder?",
-          "tekst": "Trump-administrationen lancerer **Genesis Mission** med **37 milliarder kroner** til 278 AI-drevne forskningsprojekter. Ifølge Det Hvide Hus er ambitionen på niveau med Manhattan-projektet. Samtidig præsenterer videnskabsrådgiver Michael Kratsios en plan for en 'ny guldalder' for amerikansk forskning, hvor AI, robotteknologi og atomkraft prioriteres på bekostning af livsvidenskab."
+          "overskrift": "Hvad er nyt?",
+          "tekst": "Stemmefunktionen var tidligere kun tilgængelig på **Haiku** – den hurtige, men simple model. Nu kan du også bruge den på **Opus** og **Sonnet**, der er bygget til svære problemstillinger og kan levere dybdegående svar."
         },
         {
-          "overskrift": "Kritikken hagler ned",
-          "tekst": "Forskere advarer om, at planen er et ideologisk kup, der behandler forskning som en Silicon Valley-startup. Ifølge Claes de Vreese fra Amsterdam Universitet kan man ikke 'bruge venturekapital til at tvinge gennembrud igennem, mens man nærmest allerede sælger patentet'. Han frygter, at AI vil producere 'bjerge af sludder', som ingen længere kan skelne fra ægte opdagelser."
+          "overskrift": "Sådan virker det",
+          "tekst": "Du kan skifte mellem tekst og tale midt i en samtale, og også hoppe fra Haiku til Opus, hvis en hurtig idé kræver mere analyse. AI'en kan handle for dig – for eksempel rykke kalenderaftaler, hvis toget er forsinket."
         },
         {
-          "overskrift": "En opdeling af forskningen",
-          "tekst": "Planen vil blandt andet flytte magt fra universiteter til individuelle forskere og private virksomheder. Politiske udpegede får vetoret over bevillinger. Målet er hurtige, målbare resultater, men kritikere påpeger, at grundforskning tit tager årtier og kræver tålmodighed – noget en startup-model ikke kan levere."
+          "overskrift": "Nye sprog",
+          "tekst": "Stemmestyring er ikke længere kun på engelsk. Nu understøttes **fransk**, **tysk**, **spansk**, **hindi**, **indonesisk**, italiensk, japansk, koreansk og portugisisk."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Sonnet og Opus ligger over Haiku i pris. Hvis du vil have adgang til de dybere modeller med stemme, kræver det et abonnement – priserne starter ved omkring 20 dollars om måneden for Sonnet via Anthropics API."
         }
       ],
       "noegletal": [
         {
-          "tal": "37 mia. kr.",
-          "label": "til 278 AI-projekter via Genesis Mission"
-        },
-        {
-          "tal": "5.000",
-          "label": "ansøgninger til de 278 pladser"
+          "tal": "9",
+          "label": "nye sprog understøttet"
         }
       ],
       "figurer": [],
-      "detaljer": [
-        "Genesis Mission uddeles af Energiministeriet med støtte fra Google, Microsoft og OpenAI.",
-        "Videnskabsrådgiver Michael Kratsios har ingen forskningsbaggrund.",
-        "278 projekter blev udvalgt blandt over 5.000 ansøgninger.",
-        "Planen nedprioriterer livsvidenskab til fordel for AI, robotteknologi og atomkraft.",
-        "Politisk udpegede får magt til at blokere bevillinger, de er uenige i.",
-        "Reformen hyldes af nogle for at ville skabe mere stabilitet og hurtigere sagsbehandling.",
-        "Teknologigiganter bidrager med regnekraft, AI-kreditter og anden støtte."
-      ],
-      "betydning": "Du kan se frem til, at amerikanske forskningsmidler i højere går til AI-projekter, mens traditionel grundforskning og livsvidenskab får sværere ved at få penge.",
-      "pointer": [
-        "Trump sætter 37 milliarder af til AI-forskning.",
-        "Kritikere kalder det et politisk kup uden respekt for basal videnskab.",
-        "Planen flytter magt fra universiteter til private virksomheder.",
-        "Forskere frygter, at AI-projekter drukner i ubrugelige resultater."
-      ],
-      "billedmotiv": "En bunke 1000-dollarsedler stablet som en pyramide, med en AI-chatbobbel øverst og et mikroskop klemt nederst.",
-      "billede": "data/img/129ddebceb32c084.jpg",
-      "kat_ai": true,
-      "prio": 7,
       "andre": [
         {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/advancing-the-next-era-of-national-science"
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/"
         }
       ],
-      "side": "artikel/1d031e62c1210b25.html"
+      "detaljer": [
+        "Stemmefunktionen kom først på Haiku, men nu også på Opus og Sonnet.",
+        "Brugere kan skifte mellem tekst- og stemmetilstand midt i en samtale.",
+        "Sonnet og Opus er designet til komplekse opgaver som planlægning og analyse.",
+        "AI'en kan selv udføre handlinger i apps som Gmail, Slack og Canva.",
+        "Stemmestyring er nu tilgængelig på ni sprog ud over engelsk.",
+        "Opus er den dyreste model, mens Sonnet er et mellemniveau.",
+        "Anthropic opdaterede lanceringstidspunktet fra 2026 til 2025."
+      ],
+      "betydning": "Du kan nu tale med AI'en om alvorlige arbejdsopgaver og få den til at flytte møder eller skrive pitch-dokumenter – uden at taste en linje.",
+      "pointer": [
+        "Stemmefunktionen udvides til dybere AI-modeller.",
+        "Skift mellem tale og tekst midt i samtalen.",
+        "AI'en kan handle i dine apps.",
+        "Ni nye sprog understøttes."
+      ],
+      "billedmotiv": "En kaffekop og en mobiltelefon liggende på et skrivebord med en kalender-app åben, hvor aftaler er blevet flyttet.",
+      "billede": "data/img/68035073d36087d2.jpg",
+      "kat_ai": true,
+      "prio": 6,
+      "side": "artikel/f7a651ced6714ba3.html"
     },
     {
       "titel": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
@@ -2826,6 +2960,70 @@
       "prio": 5,
       "navngivet": true,
       "side": "artikel/7c5769317a9434a6.html"
+    },
+    {
+      "titel": "The tech-broification of American science has officially begun",
+      "link": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+      "resume": "The Trump administration unveiled the first \"Genesis Mission\" grants on Thursday, directing $5 billion toward hundreds of AI-driven science projects in an effort the White House has described as \"comparable in urgency and ambition to the Manhattan Project.\" At roughly the same time, Trump's science adviser Michael Kratsios was on Capitol Hill selling lawmakers on […]",
+      "dato": "2026-07-24T10:43:55-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-22T12:00:00+00:00",
+      "rubrik": "Trump sætter 37 milliarder på AI-forskning",
+      "resume_da": "Ny milliardsatsning skal omforme amerikansk forskning, men kritikere kalder det et politisk kup uden respekt for basal videnskab.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "En guldalder?",
+          "tekst": "Trump-administrationen lancerer **Genesis Mission** med **37 milliarder kroner** til 278 AI-drevne forskningsprojekter. Ifølge Det Hvide Hus er ambitionen på niveau med Manhattan-projektet. Samtidig præsenterer videnskabsrådgiver Michael Kratsios en plan for en 'ny guldalder' for amerikansk forskning, hvor AI, robotteknologi og atomkraft prioriteres på bekostning af livsvidenskab."
+        },
+        {
+          "overskrift": "Kritikken hagler ned",
+          "tekst": "Forskere advarer om, at planen er et ideologisk kup, der behandler forskning som en Silicon Valley-startup. Ifølge Claes de Vreese fra Amsterdam Universitet kan man ikke 'bruge venturekapital til at tvinge gennembrud igennem, mens man nærmest allerede sælger patentet'. Han frygter, at AI vil producere 'bjerge af sludder', som ingen længere kan skelne fra ægte opdagelser."
+        },
+        {
+          "overskrift": "En opdeling af forskningen",
+          "tekst": "Planen vil blandt andet flytte magt fra universiteter til individuelle forskere og private virksomheder. Politiske udpegede får vetoret over bevillinger. Målet er hurtige, målbare resultater, men kritikere påpeger, at grundforskning tit tager årtier og kræver tålmodighed – noget en startup-model ikke kan levere."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "37 mia. kr.",
+          "label": "til 278 AI-projekter via Genesis Mission"
+        },
+        {
+          "tal": "5.000",
+          "label": "ansøgninger til de 278 pladser"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/advancing-the-next-era-of-national-science"
+        }
+      ],
+      "detaljer": [
+        "Genesis Mission uddeles af Energiministeriet med støtte fra Google, Microsoft og OpenAI.",
+        "Videnskabsrådgiver Michael Kratsios har ingen forskningsbaggrund.",
+        "278 projekter blev udvalgt blandt over 5.000 ansøgninger.",
+        "Planen nedprioriterer livsvidenskab til fordel for AI, robotteknologi og atomkraft.",
+        "Politisk udpegede får magt til at blokere bevillinger, de er uenige i.",
+        "Reformen hyldes af nogle for at ville skabe mere stabilitet og hurtigere sagsbehandling.",
+        "Teknologigiganter bidrager med regnekraft, AI-kreditter og anden støtte."
+      ],
+      "betydning": "Du kan se frem til, at amerikanske forskningsmidler i højere går til AI-projekter, mens traditionel grundforskning og livsvidenskab får sværere ved at få penge.",
+      "pointer": [
+        "Trump sætter 37 milliarder af til AI-forskning.",
+        "Kritikere kalder det et politisk kup uden respekt for basal videnskab.",
+        "Planen flytter magt fra universiteter til private virksomheder.",
+        "Forskere frygter, at AI-projekter drukner i ubrugelige resultater."
+      ],
+      "billedmotiv": "En bunke 1000-dollarsedler stablet som en pyramide, med en AI-chatbobbel øverst og et mikroskop klemt nederst.",
+      "billede": "data/img/129ddebceb32c084.jpg",
+      "kat_ai": true,
+      "prio": 7,
+      "side": "artikel/1d031e62c1210b25.html"
     },
     {
       "titel": "Introducing OpenAI Presence",
@@ -3996,7 +4194,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En petriskål med en gul prisseddel på 15.000 kroner klistret på låget",
+      "billedmotiv": "Et mikroskop med en tallerk med guldmønter og en stak rapporter mærket 'svagheder'",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
