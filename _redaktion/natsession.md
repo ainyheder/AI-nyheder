@@ -5,7 +5,31 @@ Ret den frit — den læses forfra hver nat, så ændringer virker med det samme
 
 ---
 
-## Først: tjek at du er alene
+## Allerførst: sidder Torben og arbejder lige nu?
+
+Du deler mappe med ham. Redigerer I den samme fil samtidig, vinder den, der
+skriver sidst — der er ingen fletning, og den anden mister sit arbejde uden at
+opdage det. Derfor: kig efter, om nogen har rørt projektet for nylig.
+
+```
+find . -newermt '-30 minutes' \( -name '*.py' -o -name '*.html' -o -name '*.md' \
+  -o -name '*.json' -o -name '*.yml' \) -not -path './data/*' -not -path './.git/*' \
+  -not -path './artikel/*' -not -path './video/*' -not -path './_to_delete/*'
+```
+
+`data/`, `artikel/` og `video/` er undtaget, fordi crawleren selv skriver dem
+nitten gange i døgnet — de siger intet om, hvorvidt et menneske er i gang.
+
+**Kommer der filer ud af den kommando, arbejder Torben sandsynligvis lige nu.**
+Så stopper du: skriv én linje i `nat-log.md` om, at du sprang over, hvilke filer
+der var rørt, og hvornår — og slut. Prøv ikke at arbejde udenom. Den næste
+kørsel samler op, og køen løber ingen steder.
+
+Kører du, fordi Torben lige har trykket **Kør nu**, vil hans egne ændringer ofte
+udløse den her. Er de eneste rørte filer dem, opgaven i køen handler om, må du
+gerne fortsætte — men skriv i loggen, at du gjorde det, og hvorfor.
+
+## Dernæst: er en anden session i gang?
 
 Der kører to sessioner i døgnet, og de må aldrig arbejde samtidig i de samme filer.
 

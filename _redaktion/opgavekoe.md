@@ -24,31 +24,6 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
-- [ ] **Kørekortet kan ikke nulstilles, og det spærrer for hold.** Al fremdrift
-      ligger i `localStorage` (`aikort`, `aikort_praktik`, `aikort_e` m.fl.), og
-      der findes **ingen** måde at rydde den på — jeg søgte efter en. På en delt
-      computer på et bibliotek eller et jobcenter ser deltager nummer to
-      modulerne som allerede gennemført, og næste hold arver forrige holds
-      afkrydsninger. Mindste rettelse: én knap nederst på `koerekort.html`, der
-      rydder `aikort*`-nøglerne efter en bekræftelse. *Punkt 7 — og det er den
-      konkrete forhindring for vej 3 i `retning.md`.*
-
-- [ ] **`koerekort-tjek.html` lover mere, end tjekket kan holde.** Siden skriver
-      "et opdigtet nummer vil ikke stemme". Men bevis-nummeret er
-      `SHA-256(navn|dato|salt)`, og **begge salte står i klartekst i
-      kildekoden** (`ainyheder-koerekort-v1` og `ainyheder-koerekort-e-v1`).
-      Enhver, der åbner "vis kilde", kan lave et gyldigt nummer til et hvilket
-      som helst navn. Det kan ikke laves om uden en server — men sætningen kan.
-      Mindste rettelse: skriv "nummeret kan ikke gættes" i stedet for "kan ikke
-      opdigtes". Resten af varedeklarationen på siden er god. *Punkt 5.*
-
-- [ ] **Overskrifter uden navn.** Målt 26.07: **9 artikler** bærer flaget
-      `navngivet`, altså har været gennem reparationsrunden én gang — enten fik
-      de et navn, eller AI'en opgav. Flaget skelner ikke mellem de to, så det
-      kræver, at man læser de ni rubrikker. Er der stadig nogen uden navn, og er
-      det rimeligt i netop de tilfælde? *Punkt 1 — den vigtigste regel i
-      målestokken.*
-
 - [ ] **32 af 110 artikler står uden billede.** (Tallet var 20 af 96 — arkivet
       er vokset, andelen er nogenlunde den samme.) Er det de rigtige 32, altså
       dem der kun vises som tekstlinjer, eller mangler nogle af dagens topkort
@@ -173,6 +148,47 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Overskrifter uden navn.** *(26.07.2026, ekstra kørsel)* Læste alle 102
+      rubrikker. Svaret var ikke "er de ni rimelige?" men at **detektoren var i
+      stykker**: `_har_navn` godtog **"AI"** som et navn, fordi et stort bogstav
+      midt i en sætning tæller som navn — og "AI" står i næsten hver eneste
+      rubrik på et AI-nyhedssite. Samme leak gav "Det" og "Nu" efter et kolon.
+      Derfor mente crawleren, at kun **7 af 102** manglede navn, og 5 af de 7 var
+      falske alarmer. Imens slap **"Gigantens milliard-regnskab…"** og
+      **"…gigantisk AI-firma"** igennem — præcis det eksempel, målestokkens
+      punkt 1 er skrevet imod. Rettet: "AI" tæller ikke, stort bogstav efter
+      kolon tæller ikke, rolleord ("Gigant", "Kommune", "Forskere") tæller ikke,
+      ejefald slår nu op i mærkelisten ("Blueskys", "Østrigs"). Tallet er gået
+      fra 7 til **29 af 102**, og de 29 er læst igennem — de mangler alle et
+      navn. 42 assertions, alle grønne.
+
+- [x] **`koerekort-tjek.html` lover mere, end tjekket kan holde.**
+      *(26.07.2026, ekstra kørsel)* Bevist først: jeg lavede et gyldigt
+      bevis-nummer til "Aldrig Deltaget Hansen" med ti linjer kode og vores egen
+      kildekode, og vores egen tjek-side svarede "✅ Beviset er ægte" —
+      både på grundkort og erhverv. Så det var ikke kun én sætning, der var
+      forkert; det var også den grønne overskrift, en arbejdsgiver ser.
+      Rettet fem steder: overskriften er nu "Nummeret passer til navnet",
+      manchetten og meta-beskrivelsen lover ikke længere "ægte udstedt", og
+      varedeklarationen siger, hvad tjekket faktisk gør. Tilføjet én boks, der
+      siger rent ud, at opskriften står i kildekoden, at én der kan læse kode
+      kan lave et nummer til et hvilket som helst navn, og at det ville kræve
+      server og login at forhindre — hvad kørekortet bevidst ikke har.
+      Kodekommentaren i `koerekort.html` og `erhverv.html` rettet samme sted.
+      14 assertions, alle grønne; tjekket godkender og afviser som før.
+
+- [x] **Kørekortet kan ikke nulstilles, og det spærrer for hold.**
+      *(26.07.2026, ekstra kørsel)* Bygget: et afsnit nederst på `koerekort.html`
+      med to-trins bekræftelse, der siger præcis hvad der ryddes ("7 gennemførte
+      moduler i grundforløbet, 4 moduler i erhvervsoverbygningen og 9 gemte svar
+      fra øvelserne") og en kvittering med antal. Målingen ændrede rettelsen:
+      **`aikort*` var ikke nok.** Erhvervsbeviset gemmer sin dato og sit nummer
+      under `aike_udstedt` og `aike_bevisnr` — uden "ort" — så det mønster, der
+      stod i køen, ville have efterladt to nøgler, og næste deltager ville arve
+      forrige deltagers udstedelsesdato. Knappen spørger nu til begge præfikser.
+      `laeste` (læste artikler på forsiden) og andet i browseren røres ikke.
+      40 assertions i jsdom, alle grønne.
 
 - [x] **Nat-loggen i panelet opdaterer sig ikke selv** *(klaret 2026-07-26 — natsessionen kalder nu `skriv_hjerne_status()` som sidste skridt; verificeret: loggen fylder 31.861 tegn i panelet)*
 

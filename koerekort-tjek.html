@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI-nyheder.com · Tjek et AI-kørekort</title>
-<meta name="description" content="Har du fået forevist et AI-kørekort fra ainyheder.com? Tast navn og bevis-nummer, og få efterprøvet om beviset er ægte udstedt.">
+<meta name="description" content="Har du fået forevist et AI-kørekort fra ainyheder.com? Tast navn og bevis-nummer, og få efterprøvet om nummeret passer til navnet og datoen.">
 <meta name="theme-color" content="#f4f2ec">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -76,7 +76,7 @@ input:focus { outline: none; border-color: var(--accent); }
 </div>
 <main>
 <h1>Tjek et AI-kørekort 🔎</h1>
-<p class="manchet">Har du fået forevist et AI-kørekort fra ainyheder.com — fx i en jobansøgning? Tast navnet og bevis-nummeret fra beviset — det gælder både grundkørekortet (AIK-...) og erhvervsoverbygningen (AIKE-...) — så efterprøver vi, om nummeret er ægte udstedt til det navn.</p>
+<p class="manchet">Har du fået forevist et AI-kørekort fra ainyheder.com — fx i en jobansøgning? Tast navnet og bevis-nummeret fra beviset — det gælder både grundkørekortet (AIK-...) og erhvervsoverbygningen (AIKE-...) — så efterprøver vi, om nummeret passer til navnet og datoen.</p>
 
 <div class="tjek-kort">
   <label for="tjek-navn">Fulde navn (præcis som det står på beviset)</label>
@@ -86,10 +86,11 @@ input:focus { outline: none; border-color: var(--accent); }
   <button class="tjek-knap" id="tjek-knap">Tjek beviset</button>
 
   <div class="resultat" id="res-gyldig">
-    <h3>✅ Beviset er ægte</h3>
-    <p>Bevis-nummeret <strong id="res-nr"></strong> er udstedt af ainyheder.com til <strong id="res-navn"></strong>.</p>
+    <h3>✅ Nummeret passer til navnet</h3>
+    <p>Bevis-nummeret <strong id="res-nr"></strong> er det, ainyheder.coms kørekort udsteder til <strong id="res-navn"></strong>.</p>
     <p>Udstedelsesdato: <strong id="res-dato"></strong>.</p>
     <p>Bevistype: <strong id="res-type"></strong>.</p>
+    <p style="font-size:13.5px; opacity:.85; margin-top:12px;">Nummeret kan ikke gættes — men det regnes ud i browseren, så det er ikke sikret mod nogen, der bevidst vil omgå det. Se nedenfor.</p>
   </div>
   <div class="resultat" id="res-ugyldig">
     <h3>❌ Beviset kunne ikke bekræftes</h3>
@@ -99,8 +100,9 @@ input:focus { outline: none; border-color: var(--accent); }
 </div>
 
 <h2 style="font-family:var(--font-display); font-weight:800; font-size:22px; margin:40px 0 12px;">Sådan virker tjekket — og hvad det ikke kan</h2>
-<p>Bevis-nummeret er ikke tilfældigt: det beregnes matematisk ud fra navnet og udstedelsesdatoen, når beviset hentes. Denne side laver samme beregning igen. Stemmer nummeret, er beviset udstedt af ainyheder.com til præcis dét navn på præcis dén dato — et opdigtet nummer vil ikke stemme.</p>
-<div class="boks"><strong>Ærlig varedeklaration:</strong> Tjekket bekræfter bevisets ægthed — ikke personens identitet, og ikke <em>hvordan</em> quizzerne blev bestået. AI-kørekortet er et gratis selvstudie i 7 moduler. Hvert modul kræver både en praktisk opgave — kandidaten skriver selv en prompt, som tjekkes mod faste håndværkskriterier — og en teoriprøve: fem tilfældigt udtrukne spørgsmål, alle skal besvares rigtigt, og der trækkes nye spørgsmål ved hvert forsøg. Forløbene udgives af <a href="om.html" style="color:var(--accent)">redaktionen bag AI-nyheder</a> og er versionerede (aktuelt pensum v1, juli 2026). Se beviset som udtryk for initiativ og grundlæggende AI-forståelse — og suppler gerne med at bede kandidaten vise sine AI-færdigheder i praksis til samtalen. <a href="koerekort.html" style="color:var(--accent)">Se hele forløbet her</a>.</div>
+<p>Bevis-nummeret er ikke tilfældigt: det beregnes matematisk ud fra navnet og udstedelsesdatoen, når beviset hentes. Denne side laver samme beregning igen. Stemmer nummeret, hører det sammen med præcis dét navn og præcis dén dato — man kan ikke gætte eller finde på et nummer, der går igennem.</p>
+<div class="boks" style="border-left-color:#a8853c; background:#faf6ec;"><strong>Hvad tjekket ikke kan:</strong> Beregningen sker i din browser, og opskriften står derfor i sidens kildekode. Én, der kan læse kode, kan regne et gyldigt nummer ud til et hvilket som helst navn uden at have taget et eneste modul. At forhindre det ville kræve en server og et login, og kørekortet er gratis og uden begge dele — så vi siger det hellere lige ud: <strong>tjekket fanger tastefejl og gæt, ikke nogen der bevidst vil omgå det.</strong></div>
+<div class="boks"><strong>Ærlig varedeklaration:</strong> Tjekket siger, at nummeret passer til navnet og datoen — ikke hvem der sad ved tastaturet, og ikke <em>hvordan</em> quizzerne blev bestået. AI-kørekortet er et gratis selvstudie i 7 moduler. Hvert modul kræver både en praktisk opgave — kandidaten skriver selv en prompt, som tjekkes mod faste håndværkskriterier — og en teoriprøve: fem tilfældigt udtrukne spørgsmål, alle skal besvares rigtigt, og der trækkes nye spørgsmål ved hvert forsøg. Forløbene udgives af <a href="om.html" style="color:var(--accent)">redaktionen bag AI-nyheder</a> og er versionerede (aktuelt pensum v1, juli 2026). Se beviset som udtryk for initiativ og grundlæggende AI-forståelse — og suppler gerne med at bede kandidaten vise sine AI-færdigheder i praksis til samtalen. <a href="koerekort.html" style="color:var(--accent)">Se hele forløbet her</a>.</div>
 </main>
 <footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="laer.html">Lær AI</a></footer>
 

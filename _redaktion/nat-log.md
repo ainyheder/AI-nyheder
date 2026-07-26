@@ -4,6 +4,264 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+> **Ekstra kørsel 26.07, formiddag — kort version.** Tre punkter klaret:
+> nulstil-knap på kørekortet, bevis-tjekket der lovede for meget, og
+> overskrifter uden navn. Alle tre viste sig at være **anderledes end køen
+> beskrev dem**, og i alle tre tilfælde fandt målingen det, ikke beskrivelsen.
+> Ét fund uden for køen, som jeg mener er dagens største: **ingen side på
+> ainyheder.com linker til de 103 artikelsider.** Se nedenfor.
+>
+> **8 ændrede filer at pushe:** `crawler.py`, `koerekort.html`,
+> `koerekort-tjek.html`, `erhverv.html`, `data/hjerne-data.js`,
+> `data/hjerner-status.json`, `nat-log.md`, `opgavekoe.md`. Intet i `artikel/`,
+> `video/` eller `.github/`, intet slettet. Jeg har tjekket, at der ikke ligger
+> en `.git/index.lock` — der lå faktisk en, som mit eget git-kald efterlod, og
+> den er fjernet. Det var præcis den, der spærrede for dit commit i morges.
+>
+> **Du redigerede `natsession.md` kl. 10:01, mens jeg arbejdede.** Jeg læste
+> instruksen kl. 09:37, så jeg har arbejdet efter den gamle udgave og har
+> **ikke** fulgt din nye førsteregel om at tjekke, om du sidder ved maskinen —
+> den fandtes ikke, da jeg startede. Din ændring står urørt; jeg har hverken
+> overskrevet eller flettet den. Vi har ikke været i de samme filer: du var i
+> `natsession.md`, jeg i `crawler.py`, de tre kørekortsider, køen og loggen.
+> Fra næste kørsel gælder din nye regel. Havde den været der i morges, ville
+> `find . -newermt '-30 minutes'` have fundet dine egne 09:29-ændringer og
+> stoppet kørslen — værd at vide, hvis du trykker **Kør nu** lige efter at have
+> rettet noget i panelet.
+
+---
+
+## 2026-07-26 (ekstra kørsel, formiddag) · FUND: ingen linker til vores 103 artikelsider
+
+**Dette er ikke en opgave fra køen.** Det faldt ud af den samlede prøve, hvor jeg
+skulle tjekke, at "et klik åbner en artikel". Det gør det — bare ikke vores egen.
+
+**Målt:**
+
+```
+artikelsider på disken:                     103
+sider i roden, der linker IND i artikel/:     0
+artikelsider, der linker TILBAGE til forsiden: 103 af 103
+artikelsider, der linker til hinanden:          0
+URL'er i sitemap-artikler.xml:                 94   (9 sider mangler)
+```
+
+Forsidens kort har `href` og `data-link` sat til **kildens** adresse
+(`version2.dk/artikel/…`, `techcrunch.com/…`), og selve artiklen åbnes som en
+overlay på forsiden med `#a=<kildens url>`. Det er et fint design for læseren —
+men det betyder, at de 103 sider i `artikel/` er **forældreløse**: der findes
+ingen vej ind i dem fra nogen side på ainyheder.com. Kun ud af dem.
+
+Det forklarer noget, der allerede står i loggen fra 25.07: *"Google har
+indekseret 0 artikelsider."* Uden ét eneste indgående link har Google ingen
+grund til at kravle dem og ingen signaler at rangere dem på. Sitemappet var den
+eneste vej — og det er, som du ved, aldrig indsendt. Alt arbejdet fra de sidste
+to nætter — JSON-LD på 142 sider, alt-tekst på 129 billeder, canonicals,
+NewsArticle-schema — ligger på sider, ingen kan nå.
+
+*Punkt 10 i målestokken: "Er der et sted, hvor godt arbejde ligger skjult, hvor
+Google ikke kan se os … er dét et problem på lige fod med en fejl i koden. Ofte
+et større."*
+
+**Jeg har ikke rørt det, og jeg har ikke lagt det i køen.** Jeg er en ekstra
+kørsel; instruksen siger, at omprioritering sker én gang i døgnet, og det er
+nattens hovedkørsel, der skal placere det. Men det er efter min måling det
+største enkeltfund i dag, større end de tre punkter jeg har lavet, og det bør
+formentlig ind som nummer ét under trin 3 — over canonical-punktet, som handler
+om de samme sider.
+
+Bemærk også de 9 sider, der ligger på disken men ikke i sitemappet. 5 af dem er
+dubletterne, der bevidst blev taget ud i nat. De sidste 4 har jeg ikke
+undersøgt.
+
+---
+
+## 2026-07-26 (ekstra kørsel, formiddag) · "AI" talte som et navn
+
+**Fandt:** Køen spurgte, om de ni flagede rubrikker var rimelige. Jeg læste alle
+102 i stedet, og spørgsmålet viste sig at være det forkerte. **Selve detektoren
+var i stykker.**
+
+`_har_navn()` har fire regler. Den sidste siger: et stort bogstav midt i en
+dansk sætning er et navn. På et AI-nyhedssite betyder det, at **"AI" tæller som
+et navn** — og "AI" står i næsten hver eneste rubrik. Reglen lige ovenfor
+udelukker udtrykkeligt "ai" (`ren != "ai"`), så hensigten var klar nok; den
+næste linje åbnede hullet igen. Samme leak gjorde "Det" og "Nu" til navne, når
+de stod efter et kolon: *"Bilfabrik afviser robotstrejke: **Det** handler om løn"*.
+
+Resultatet var en måling, der pegede næsten stik modsat virkeligheden:
+
+| | før | efter |
+|---|---|---|
+| rubrikker crawleren mente manglede navn | 7 af 102 | 29 af 102 |
+| af dem, der var falske alarmer | 5 af 7 | 0 |
+
+Og imens de fem falske alarmer optog pladsen, sejlede disse to forbi:
+
+- *"**Gigantens** milliard-regnskab viser historisk minus pga. AI"*
+- *"Kæmpe milliardforlig mellem forfattere og **gigantisk AI-firma**"*
+
+Det er ordret det eksempel, punkt 1 i målestokken er skrevet imod: *"Oracle
+fyrer 21.000", aldrig "Kæmpe gigant fyrer 21.000".* Reparationsrunden har kørt
+i ugevis og har aldrig set dem.
+
+Et sidste fund i samme funktion: prompten `SYSTEM_NAVNGIV` bad AI'en om at
+skrive *"Kinesisk techgigant ..."*, når den ikke kan finde et navn — men
+"techgigant" står på listen over vage vendinger og ville altid blive afvist.
+Prompten foreslog altså et svar, som koden var sikker på at kassere, og brændte
+artiklens ene forsøg af.
+
+**Gjorde:** `crawler.py`, alt sammen omkring `_har_navn`:
+
+- "AI" (og "AI-model", "AI-firma", "AI-laboratorium") tæller ikke længere som
+  navn — hverken som forkortelse eller som stort bogstav i sætningen.
+- Et stort bogstav lige efter kolon, semikolon eller tankestreg tæller ikke.
+  Det er grammatik, ikke et navn.
+- Ny liste `_GENERISKE_AKTOERER`: rolleord som "Gigant", "Kommune", "Forskere",
+  "Stjerner", "Bilfabrik", "Politiker" tæller aldrig som navn, uanset placering.
+- `"giganten"` og `"gigantens"` er føjet til de vage vendinger. **Ikke**
+  "gigantisk" alene — det er som regel bare et tillægsord om noget andet
+  ("OpenAI bygger gigantisk infrastruktur i Georgia"), og at forbyde det gav en
+  falsk alarm med det samme. Kun de faste vendinger ("gigantisk AI-firma").
+- Ejefald slår nu op i mærkelisten, så *"**Blueskys** AI-assistent"* og
+  *"**Østrigs** militær"* genkendes. Mærkelisten har fået lande og de danske
+  institutioner, der går igen i feedene (Skat, Ingeniøren, Version2, PFA).
+- Prompten beder nu om det mest konkrete, der faktisk står i materialet, og
+  siger direkte, at omskrivninger bliver afvist.
+
+**Testede:** 42 assertions — 18 rubrikker der skal fanges, 24 der ikke må
+fanges. Alle grønne. To falske alarmer dukkede op undervejs og blev rettet
+(`Blueskys` på ejefald, `OpenAI bygger gigantisk infrastruktur` på tillægsordet).
+Dertil den samlede prøve: `ast.parse` OK, ingen dobbeltdefinerede konstanter på
+modulniveau, `crawler.py` indlæses som modul, `navngiv_rubrikker` uden API-nøgle
+ændrer ingenting, og forsiden + kontrolpanelet + de tre rørte sider kører i
+jsdom mod de rigtige datafiler uden JS-fejl.
+
+**Til Torben:** To ting.
+
+1. **Næste kørsel vil sende ~29 rubrikker til AI'en** i stedet for ingen. Det er
+   en engangsudgift — den tager 25 ad gangen, og hver artikel prøves kun én
+   gang — men den kommer på regningen i morgen. Vil du hellere have den delt
+   over flere dage, kan `portion=25` sættes ned.
+2. Jeg har **ikke** rettet de 29 rubrikker i hånden. Crawleren gør det selv, og
+   jeg ville ikke have to hænder i de samme felter.
+
+---
+
+## 2026-07-26 (ekstra kørsel, formiddag) · Bevis-tjekket lovede for meget
+
+**Fandt:** Køen bad om at bytte én sætning ud. Jeg valgte at efterprøve påstanden
+først, og det var godt, for problemet var større end sætningen.
+
+Jeg skrev de ti linjer kode, en udenforstående ville skrive — SHA-256 over
+`navn|dato|salt`, med begge salte hentet fra vores egen kildekode — og lavede et
+bevis-nummer til **"Aldrig Deltaget Hansen"**, som aldrig har åbnet et modul:
+
+```
+Grundkort: AIK-20260715-9ZB6MK
+Erhverv:   AIKE-20260715-FU4LZ5
+```
+
+Begge to fik vores egen tjek-side til at svare **"✅ Beviset er ægte —
+udstedt af ainyheder.com til Aldrig Deltaget Hansen, 15. juli 2026"**. Det er
+den skærm, en arbejdsgiver kigger på. Så det var ikke kun sætningen nede i
+brødteksten, der var forkert — det var også den grønne overskrift, og
+manchetten, og meta-beskrivelsen, og første linje i varedeklarationen. Fem
+steder sagde det samme, som ikke passer.
+
+Til gengæld virker afvisningen præcis, som den skal: gæt, forkert navn, forkert
+format og fremtidige datoer bliver alle afvist. Tjekket er ikke værdiløst — det
+er bare noget andet, end vi skrev.
+
+**Gjorde:** `koerekort-tjek.html`. Overskriften ved et gyldigt svar er nu
+**"✅ Nummeret passer til navnet"** i stedet for "Beviset er ægte", og linjen
+under siger, at nummeret er dét, kørekortet udsteder til navnet — ikke at
+personen har bestået noget. Manchet og meta-beskrivelse siger "passer til navnet
+og datoen". Varedeklarationen begynder nu med, hvad tjekket siger, ikke med
+"bekræfter bevisets ægthed".
+
+Og så tilføjede jeg en boks, der siger det lige ud: beregningen sker i browseren,
+opskriften står derfor i sidens kildekode, én der kan læse kode kan lave et
+gyldigt nummer til et hvilket som helst navn, og at forhindre det ville kræve en
+server og et login — som kørekortet bevidst ikke har. Det er punkt 5 og punkt 9
+i samme afsnit: vi vælger gratis og uden login, og så må vi sige, hvad det
+koster. Kodekommentaren, som påstanden oprindelig stammer fra, er rettet samme
+sted i `koerekort.html` og `erhverv.html`.
+
+**Testede:** 14 assertions. Seks på at hver enkelt overdrivelse er væk, tre på at
+forbeholdet står der, én på at rådet om at bede kandidaten vise sine færdigheder
+kun står ét sted (jeg kom til at skrive det to gange og fjernede den ene —
+punkt 3), og fire på at selve tjekket stadig godkender ægte numre og afviser
+gæt, forkert navn, forkert format og fremtidige datoer. Alle grønne. Ingen
+JS-fejl. Ingen dark mode på sitet, så de to hardkodede farver i den nye boks
+(`#a8853c`, `#faf6ec`) er de samme, filen bruger i forvejen.
+
+**Til Torben:** Der står nu sort på hvidt på tjek-siden, at beviset kan omgås af
+én der kan læse kode. Det er ærligt, og det er den rigtige beslutning efter
+målestokken — men det er også første gang, siden siger noget negativt om sit
+eget produkt, og du kan have en anden mening om, hvor højt det skal stå. Boksen
+er let at flytte eller tone ned. Det, jeg **ikke** vil anbefale, er at gå tilbage
+til "Beviset er ægte": den sætning er målt forkert nu.
+
+Vil du have et bevis, der faktisk ikke kan omgås, kræver det en server, der
+udsteder og slår op. Det er et større stykke arbejde og bryder med "gratis og
+uden login" — jeg har ikke lagt det i køen, fordi det er dit valg, ikke et fund.
+
+---
+
+## 2026-07-26 (ekstra kørsel, formiddag) · Nulstil-knap på kørekortet
+
+**Fandt:** Rettelsen, som stod i køen, var forkert — og ville have set ud til at
+virke. Køen sagde: "ryd `aikort*`-nøglerne". Jeg talte nøglerne igennem alle 31
+HTML-sider først, og der er **elleve** i spil, ikke ni: `aikort`,
+`aikort_praktik`, `aikort_praktik_tekst_1`–`_7`, `aikort_udstedt`,
+`aikort_bevisnr`, `aikort_e`, `aikort_e_praktik`, `aikort_e_praktik_tekst_1`–`_4`
+— **og `aike_udstedt` og `aike_bevisnr`**. De to sidste er
+erhvervsbevisets dato og nummer, og de hedder `aike_`, ikke `aikort_`. Et mønster
+på `aikort*` rammer dem ikke. Konsekvensen ville have været den værste slags: en
+nulstil-knap, der ser ud til at rydde alt, men lader deltager nummer to hente et
+erhvervsbevis med **forrige deltagers udstedelsesdato** på. Jeg fandt det kun,
+fordi jeg listede nøglerne i stedet for at stole på beskrivelsen.
+
+Desuden: `laeste` (læste artikler, forsiden og cookiesiden) ligger i samme
+localStorage og må **ikke** ryddes med. Den er ikke kørekortfremdrift.
+
+**Gjorde:** `koerekort.html` — nyt afsnit "Deler du computeren med andre?" nederst,
+lige over kolofonen, plus ~70 linjer JS i det eksisterende IIFE og en håndfuld
+CSS-regler. Knappen er ikke en `confirm()`-dialog, men to trin i selve siden:
+første klik viser, hvad der står gemt, i klar tekst — *"Dette fjerner 7
+gennemførte moduler i grundforløbet, 4 moduler i erhvervsoverbygningen og 9
+gemte svar fra øvelserne. Er du sikker?"* — med **Ja, ryd det hele** og
+**Fortryd** ved siden af. Efter rydningen tegnes modullisten, fremdriftsbjælken
+og bevisboksen om med det samme, så siden viser det, der nu faktisk står gemt,
+og kvitteringen tæller sletningerne. Der ryddes på **begge** præfikser,
+`aikort` og `aike_`, og på intet andet. Tilføjede også én linje i den
+eksisterende indlæsningsløkke, der gemmer modulernes oprindelige status-tekst
+("Start her" / "Åbn modul"), så nulstillingen kan sætte dem tilbage præcist.
+
+Teksten siger rent ud, at fremdriften kun ligger i browseren, at vi ikke har den,
+at det ikke kan fortrydes, og at et bevis, der allerede er hentet, ikke bliver
+ugyldigt af det.
+
+**Testede:** 40 assertions i jsdom mod den rigtige fil, alle grønne — fuldt
+gennemført forløb, tom browser, rester uden gennemførte moduler, ødelagt JSON i
+localStorage, og localStorage helt spærret (privat browsing). Kontrolleret
+specifikt at `aike_udstedt` og `aike_bevisnr` forsvinder, at `laeste` og
+`cookie_valg` overlever, at **Fortryd** ikke sletter noget, og at der står
+præcis to fremmede nøgler tilbage bagefter. Testen ligger ikke i repoet.
+
+Undervejs fangede testen syv "fejl", der viste sig at være min egen: jeg havde
+sat `navigator.serviceWorker = undefined`, hvilket gør `"serviceWorker" in
+navigator` sand og `.register` udefineret — en tilstand ingen rigtig browser
+har. Rettet i testen, ikke i siden.
+
+**Til Torben:** Knappen sidder kun på `koerekort.html`, ikke på `erhverv.html`.
+Den rydder begge forløb, så den dækker, men en der står på erhvervssiden skal
+klikke sig tilbage for at finde den. Jeg lod være med at tilføje en linje der
+også — det er én sætning, hvis du vil have den. Og: den her knap var
+forudsætningen for hold-brug, som `undervisning.html` lægger op til. Siden er
+stadig ikke linket fra noget.
+
 > **Efterspil om morgenen (26.07, ca. 08:30).** Tre ting dukkede op, da Torben
 > skulle hente nattens arbejde, og de er værd at kende, fordi de kommer igen:
 >
@@ -444,6 +702,11 @@ Tre ting, jeg **ikke** har rettet, fordi de er selvstændige beslutninger:
 ---
 
 ### Nattens regnskab · 2026-07-26
+
+**Ekstra kørsel 09:37–11:0x:** klarede 3 punkter mere — nulstil-knappen på
+kørekortet, overdrivelsen på bevis-tjekket, og overskrifter uden navn. Køen er
+ikke omprioriteret (det hører til hovedkørslen). Ét fund uden for køen:
+**ingen side linker til vores 103 artikelsider** — se øverst i loggen.
 
 Klaret: **7 punkter** — 3 af første kørsel, 4 af sidste. Nye i køen: **4**.
 

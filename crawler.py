@@ -2383,6 +2383,16 @@ _MAERKER = {
     "alexa", "siri", "cursor", "gpt", "opus", "sonnet", "haiku", "qwen", "kimi",
     "eu", "usa", "kina", "danmark", "norge", "sverige", "tyskland", "storbritannien",
     "folketinget", "regeringen", "kommissionen", "nato", "fn", "trump", "biden",
+    # lande og regioner: et stednavn fortæller læseren, hvem det handler om
+    "frankrig", "italien", "spanien", "holland", "belgien", "schweiz", "østrig",
+    "polen", "finland", "island", "irland", "portugal", "grækenland", "tyrkiet",
+    "rusland", "ukraine", "israel", "indien", "japan", "sydkorea", "taiwan",
+    "australien", "canada", "brasilien", "mexico", "sydafrika", "egypten",
+    "saudi-arabien", "californien", "texas", "georgia", "washington",
+    # danske institutioner og medier, der går igen i feedene
+    "skat", "politiet", "forsvaret", "dsb", "novo", "mærsk", "pfa", "atp",
+    "ingeniøren", "version2", "datamuseum", "systematic", "trackman",
+    "bluesky", "codeberg", "hugging", "xprize", "monday",
 }
 
 # Formuleringer, der skjuler hvem historien handler om
@@ -2392,23 +2402,101 @@ _VAGE_VENDINGER = (
     "en kendt", "kendt firma", "kendt tjeneste", "stor spiller", "en stor spiller",
     "tech-firma", "techfirma", "tech-gigant", "techgigant", "et værktøj",
     "en tjeneste", "udvikler af", "en udbyder",
+    # "Gigantens milliard-regnskab" er præcis det eksempel, målestokken forbyder.
+    # Kun bestemt form og faste vendinger — "gigantisk" alene er tit bare et
+    # tillægsord om noget andet ("bygger gigantisk infrastruktur i Georgia").
+    "giganten", "gigantens", "gigantisk firma", "gigantisk selskab",
+    "gigantisk virksomhed", "gigantisk ai-firma", "gigantiske firma",
 )
+
+# Ord, der ligner et navn (stort begyndelsesbogstav), men kun beskriver en rolle.
+# De må aldrig alene tælle som "rubrikken nævner, hvem det handler om".
+_GENERISKE_AKTOERER = {
+    "gigant", "giganten", "gigantens", "firma", "firmaet", "selskab", "selskabet",
+    "virksomhed", "virksomheden", "virksomheder", "koncern", "koncernen",
+    "producent", "producenten", "leverandør", "udbyder", "tjeneste", "tjenesten",
+    "værktøj", "værktøjet", "app", "appen", "platform", "platformen",
+    "forsker", "forskere", "forskerne", "ekspert", "eksperter", "specialist",
+    "specialister", "politiker", "politikere", "minister", "ministeren",
+    "advokat", "advokaten", "kommune", "kommunen", "kommuner", "myndighed",
+    "myndigheder", "styrelse", "regering", "hospital", "hospitalet", "bank",
+    "banken", "skole", "skoler", "bibliotek", "biblioteker", "bilfabrik",
+    "fabrik", "medarbejder", "medarbejdere", "chef", "chefen", "topchef",
+    "stjerner", "stjernerne", "computer", "computere", "computeren",
+    "teleselskab", "mediet", "medier", "medierne", "avis", "aviser",
+    "brugere", "kunder", "borgere", "eksperten", "analytiker", "analytikere",
+}
+
+# "AI" står i næsten hver eneste rubrik på et AI-nyhedssite og fortæller derfor
+# ikke læseren, HVEM historien handler om. Samme for de rene AI-sammensætninger.
+_IKKE_ET_NAVN = {"ai", "ki"}
+
+# Tegn, der starter en ny sætning. Ordet lige efter har stort bogstav af
+# grammatiske grunde ("Nu kan du...", "Det handler om løn") — ikke fordi det er et navn.
+_SAETNINGSSTART = set(":;–—.!?")
+
+
+def _kendt_maerke(ren: str) -> bool:
+    """Slår op i _MAERKER — også i ejefald ("Blueskys", "Østrigs", "Trumps")."""
+    for form in (ren, ren.split("-")[0]):
+        if form in _MAERKER:
+            return True
+        if form.endswith("s") and form[:-1] in _MAERKER:
+            return True
+    return False
+
+
+def _stærkt_navnesignal(o: str, ren: str) -> bool:
+    """Signaler, der holder også som FØRSTE ord i en rubrik."""
+    if _kendt_maerke(ren):
+        return True                           # Google, Trump, Danmark, Blueskys
+    if len(re.sub(r"[^A-ZÆØÅ]", "", o)) >= 2 and o == o.upper():
+        return True                           # USA, EU, IBM, GPT-5
+    if re.search(r"[a-zæøå][A-ZÆØÅ]", o):
+        return True                           # OpenAI, DeepSeek, iPhone
+    if o[:1].isupper() and (re.search(r"\d", o) or "." in o.strip(".")):
+        return True                           # Datamuseum.dk, Monday.com, GPT-5.6
+    return False
 
 
 def _har_navn(rubrik: str) -> bool:
-    """Sandt hvis rubrikken nævner mindst ét rigtigt navn (firma, produkt, land)."""
-    ord_ = re.findall(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", rubrik or "")
+    """Sandt hvis rubrikken nævner mindst ét rigtigt navn (firma, produkt, land).
+
+    Tre ting gør den strengere, end den ser ud:
+      1. "AI" tæller ikke. Det står i næsten hver rubrik og siger intet om hvem.
+      2. Et stort bogstav lige efter kolon eller tankestreg tæller ikke — det er
+         grammatik ("Nu kan du...", "Det handler om løn"), ikke et navn.
+      3. Rolleord som "Gigant", "Kommune", "Forskere" tæller ikke, uanset hvor
+         de står. Det er dem, målestokkens punkt 1 handler om.
+    """
+    tekst = rubrik or ""
+    ord_ = re.findall(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", tekst)
+    # hvilke ord står lige efter et sætningsskel?
+    efter_skel = set()
+    forrige_var_skel = False
+    for stykke in re.finditer(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+|[^\sA-Za-z0-9ÆØÅæøåé]", tekst):
+        s = stykke.group()
+        if re.match(r"[0-9A-Za-zÆØÅÉæøåé]", s):
+            if forrige_var_skel:
+                efter_skel.add(stykke.start())
+            forrige_var_skel = False
+        elif s in _SAETNINGSSTART:
+            forrige_var_skel = True
+    pladser = [mo.start() for mo in re.finditer(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", tekst)]
+
     for i, o in enumerate(ord_):
         ren = o.strip("-.'’").lower()
+        stamme = ren.split("-")[0]
         if not ren:
             continue
-        if ren.split("-")[0] in _MAERKER or ren in _MAERKER:
+        if stamme in _IKKE_ET_NAVN or ren in _IKKE_ET_NAVN:
+            continue                          # AI, AI-model, AI-firma
+        if (stamme in _GENERISKE_AKTOERER or ren in _GENERISKE_AKTOERER) \
+                and not _kendt_maerke(ren):
+            continue                          # Gigantens, Kommune, Forskere
+        if _stærkt_navnesignal(o, ren):
             return True
-        if len(re.sub(r"[^A-ZÆØÅ]", "", o)) >= 2 and o == o.upper() and ren != "ai":
-            return True                       # USA, EU, IBM, GPT-5
-        if re.search(r"[a-zæøå][A-ZÆØÅ]", o):
-            return True                       # OpenAI, DeepSeek, iPhone
-        if i > 0 and o[:1].isupper():
+        if i > 0 and o[:1].isupper() and pladser[i] not in efter_skel:
             return True                       # stort bogstav midt i en dansk sætning
     return False
 
@@ -2434,8 +2522,11 @@ Krav:
 - "rubrik": max 9 ord, navnet med, intet punktum til sidst.
 - "resume": 1-2 sætninger, max 30 ord, hverdagsdansk, navnet med.
 - Skriv "AI", aldrig "kunstig intelligens".
-- Opdigt ALDRIG navne eller tal. Står navnet ikke i materialet, så skriv i stedet
-  konkret hvem det er ("Kinesisk techgigant ...", "EU-Kommissionen ...").
+- Opdigt ALDRIG navne eller tal. Står navnet ikke i materialet, så find det
+  mest konkrete, der ER der: et land, en myndighed, et produkt ("EU-Kommissionen ...",
+  "Sydkoreas regering ...", "Alexa Plus ..."). Skriv ALDRIG "techgigant",
+  "et stort selskab", "giganten" eller lignende omskrivninger - de bliver afvist,
+  og så beholder vi den gamle rubrik.
 - Behold gerne folkelige billeder ("digital hjerne"), men sæt navnet foran:
   "Anthropics nye digitale hjerne ...".
 
