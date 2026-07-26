@@ -50,18 +50,6 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       formentlig hente en let liste og først resten på klik. Det er en større
       ombygning end arkivet selv, og den bør regnes med i beslutningen.
 
-- [ ] **Tilgængelighed.** Kan man bruge forsiden med tastatur alene? Er
-      kontrasten god nok til svagtseende? (Alt-tekst er klaret 25.07.)
-      *Punkt 9.*
-
-- [ ] **`sitemap.xml` mangler tre sider.** Målt 26.07: 29 URL'er i sitemappet,
-      32 HTML-filer i roden (404 fraregnet). De tre, der mangler, er
-      `velkommen.html`, `tak.html` og `undervisning.html`. De to første er
-      formentlig med vilje ude (kvitteringssider), men det står ingen steder —
-      og `undervisning.html` skal ind, den dag den bliver linket. Filen er
-      skrevet i hånden, så den falder bagud, hver gang der kommer en side til.
-      *Punkt 4 og 10.*
-
 - [ ] **Tjek at alle interne links virker.** Gennemgå alle HTML-sider for links
       til sider, der ikke findes. *Punkt 4.*
 
@@ -150,6 +138,46 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 ---
 
 ## Klaret
+
+- [x] **`sitemap.xml` manglede én side, ikke tre.** *(26.07.2026, ekstra kørsel
+      kl. 17:05)* Målt: 33 HTML-filer, 29 URL'er, fire filer udenfor — og **tre
+      af de fire er rigtige at holde ude**: `404.html` er en fejlside, og
+      `tak.html` + `velkommen.html` har begge `noindex`, så en invitation til dem
+      ville modsige sig selv. Det var bare aldrig skrevet ned, og dét var køens
+      egentlige klage. **Kun `undervisning.html` var en reel mangel** — 6.232 tegn
+      synlig tekst, egen canonical, ingen `noindex`, og **intet på sitet linker
+      til den** (søgt i alle 33 filer), så Google kunne slet ikke nå den. Punkt
+      10. Lagt ind (29 → 30 URL'er) og begrundelsen for de tre andre skrevet ind i
+      filen. Dertil: `sitemap.xml` er den **eneste** af de tre sitemaps, der er
+      håndskrevet, så nyt `tjek_statisk_sitemap()` i `crawler.py` siger nu til i
+      Actions-loggen, hvis listen falder bagud — glemt side, `noindex` sluppet
+      ind, eller URL uden fil. Skriver intet, retter intet, kan ikke vælte et
+      crawl. **12 påstande, alle grønne** — testet at den *fanger* fejl, ikke kun
+      at den er tilfreds, plus vrøvl-input. **Venter på Torben:** siden er nu
+      synlig for Google, men **intet linker til den for en læser** — hvor den skal
+      stå er hans valg.
+
+- [x] **Tilgængelighed: tastatur og kontrast.** *(26.07.2026, ekstra kørsel kl.
+      17:05)* **Tastaturets grundlag var i orden — men læseren var i stykker.**
+      Alle interaktive elementer er ægte `<button>`/`<a>` (nul `onclick` på en
+      `div`), og fokusringen er intakt: kun **ét** `outline:none` i filen, på
+      søgefeltet, som har sin egen `:focus`-erstatning. **Rør ikke ved det.**
+      Tre ting holdt ikke: (1) **24 tabtryk** fra sidens start til første rubrik
+      og intet spring-over-link; (2) **læseren efterlod fokus bag sit eget
+      overlay** — `aabnLaeser` kaldte aldrig `.focus()`, så vejen til Luk var
+      **40 tabtryk, 39 gennem usynlige elementer**, mens `aria-modal="true"`
+      lovede, at de 72 elementer udenfor ikke fandtes; (3) **3 af 97
+      tekststilarter** under WCAG AA. Rettet i `index.html` alene (95 linjer ind,
+      5 ud): spring-over-link, `<main>` som fokusmål, dialogen fik `tabindex`,
+      navn og en Tab-fælde, fokus flyttes til rullebeholderen ved åbning og gives
+      tilbage til kortet ved luk, og to farver mørknet (`--yt-roed` 4,38 →
+      **4,63**; `.laest-maerke` 3,41 → **4,95**). **64 påstande, alle grønne** —
+      den samlede prøve kørt mod `git show HEAD` også: 18/21 før, 21/21 efter.
+      **To målefejl hos mig selv blev smidt undervejs:** en kontrast på 1,17:1 var
+      min parsers manglende `color(srgb …)`, og påstanden om at artiklen ikke kan
+      rulles med tastatur **kunne ikke bevises** — værktøjet kan ikke sende
+      tastetryk til siden. **Venter på Torben:** tryk PageDown i en åben artikel
+      én gang og bekræft, at den ruller. Se loggen.
 
 - [x] **Hvor hurtigt loader forsiden?** *(26.07.2026, ekstra kørsel kl. 16:45)*
       **Intet er vokset sig for stort.** Målt på den levende side med cachen

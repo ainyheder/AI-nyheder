@@ -4150,6 +4150,60 @@ def del_paa_platforme(artikler: list[dict]) -> None:
         print(f"📣 Opslag sprang over ({type(fejl).__name__}: {fejl})")
 
 
+def tjek_statisk_sitemap() -> list[str]:
+    """Siger til, hvis sitemap.xml er faldet bagud for filerne i roden.
+
+    sitemap.xml vedligeholdes i hånden (i modsætning til sitemap-artikler.xml
+    og sitemap-videoer.xml, som skrives her i filen). Derfor falder den bagud,
+    hver gang der kommer en ny side til - og ingen opdager det, fordi
+    ingenting går i stykker. Det skete med undervisning.html: 6.232 tegn
+    færdig side, som hverken var linket eller stod i sitemappet, altså
+    usynlig for Google i dagevis.
+
+    Skriver ikke noget. Retter ikke noget. Returnerer listen af klager, så
+    den kan testes, og printer dem, så de står i Actions-loggen.
+    """
+    klager: list[str] = []
+    try:
+        sti = ROOT / "sitemap.xml"
+        if not sti.exists():
+            print("🗺️  sitemap.xml findes ikke")
+            return ["sitemap.xml findes ikke"]
+        xml = sti.read_text(encoding="utf-8")
+        # Kommentarer ud først, så en side nævnt i en forklaring ikke tæller med
+        uden_kommentar = re.sub(r"<!--.*?-->", "", xml, flags=re.S)
+        i_sitemap = set()
+        for adresse in re.findall(r"<loc>(.*?)</loc>", uden_kommentar):
+            navn = adresse.rstrip("/").rsplit("/", 1)[-1]
+            i_sitemap.add(navn if navn.endswith(".html") else "index.html")
+
+        for fil in sorted(ROOT.glob("*.html")):
+            if fil.name == "404.html":          # fejlside, aldrig i et sitemap
+                continue
+            tekst = fil.read_text(encoding="utf-8", errors="ignore")
+            noindex = "noindex" in tekst.lower()
+            staar = fil.name in i_sitemap
+            if noindex and staar:
+                klager.append(f"{fil.name} siger noindex, men står i sitemap.xml")
+            elif not noindex and not staar:
+                klager.append(f"{fil.name} mangler i sitemap.xml")
+
+        for navn in sorted(i_sitemap):
+            if not (ROOT / navn).exists():
+                klager.append(f"sitemap.xml peger på {navn}, som ikke findes")
+
+        if klager:
+            print(f"🗺️  sitemap.xml passer ikke med filerne ({len(klager)}):")
+            for k in klager:
+                print(f"    - {k}")
+        else:
+            print(f"🗺️  sitemap.xml passer: {len(i_sitemap)} sider, ingen glemte")
+    except Exception as fejl:
+        # Må aldrig vælte et crawl for en oprydningsdetalje
+        print(f"🗺️  Sitemap-tjekket sprang over ({type(fejl).__name__}: {fejl})")
+    return klager
+
+
 def main() -> None:
     # Skriv ALTID hvilken model der skriver teksten - så det kan ses i
     # Actions-loggen, uden at gætte ud fra hvilke nøgler der er sat.
@@ -4321,6 +4375,7 @@ def main() -> None:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
     except Exception as fejl:
         print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
+    tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
 
 
 if __name__ == "__main__":
