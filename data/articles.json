@@ -1,19 +1,18 @@
 {
-  "opdateret": "2026-07-26T14:19:31.118082+00:00",
-  "antal": 81,
+  "opdateret": "2026-07-26T14:51:32.138168+00:00",
+  "antal": 79,
   "artikler": [
     {
       "titel": "Cloudflare's new AI traffic options for customers",
       "link": "https://blog.cloudflare.com/content-independence-day-ai-options/",
-      "resume": "Article URL: https://blog.cloudflare.com/content-independence-day-ai-options/ Comments URL: https://news.ycombinator.com/item?id=49052564 Points: 150 # Comments: 129",
+      "resume": "Article URL: https://blog.cloudflare.com/content-independence-day-ai-options/ Comments URL: https://news.ycombinator.com/item?id=49052564 Points: 154 # Comments: 131",
       "dato": "2026-07-25T22:50:49+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Lanceringer",
       "foerst_set": "2026-07-26T14:19:31.118082+00:00",
       "rubrik": "Cloudflare giver kunder ny kontrol over AI-trafik",
       "resume_da": "Cloudflare lancerer nye værktøjer, der lader kunder selv bestemme, hvordan AI-bots og -tjenester må bruge deres hjemmesider.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye værktøj",
@@ -28,9 +27,8 @@
           "tekst": "Kunder kan vælge at blokere al AI-trafik, kun tillade bestemte AI-tjenester, eller lade alt køre frit. Systemet genkender automatisk kendte AI-bots og giver en oversigt over, hvilke der har besøgt sitet. Det kræver ingen teknisk indsigt at sætte op."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Cloudflare giver nu kunder mulighed for at styre AI-trafik på deres sider.",
         "Der er tre indstillinger: blokere alt, tillade udvalgte, eller tillade alt.",
@@ -47,22 +45,10 @@
         "Brugere kan vælge mellem tre forskellige beskyttelsesniveauer"
       ],
       "billedmotiv": "En computer-skærm med Cloudflares kontrolpanel åbent, hvor tre knapper med teksterne 'Bloker', 'Tillad udvalgte' og 'Tillad alt' er tydeligt synlige.",
+      "kat_ai": true,
+      "prio": 3,
       "navngivet": true,
       "side": "artikel/c13d67073208cf10.html"
-    },
-    {
-      "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
-      "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
-      "resume": "AI er et fantastisk værktøj, men man skal være opmærksom på de begrænsninger, det har. Sådan lyder det fra medejer af Trackman, udviklingschef og ingeniør Fredrik Tuxen.",
-      "dato": "2026-07-25T16:00:00+02:00",
-      "kilde": "Ingeniøren",
-      "kategori": "Samfund & etik",
-      "kun_aktuel": true,
-      "foerst_set": "2026-07-26T14:19:31.118082+00:00",
-      "rubrik": "Trackman-stifter: Hardware vigtigere end AI",
-      "resume_da": "Fredrik Tuxen roser AI, men advarer mod at glemme begrænsningerne ved teknologien.",
-      "kat_ai": true,
-      "prio": 4
     },
     {
       "titel": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
@@ -74,8 +60,7 @@
       "foerst_set": "2026-07-26T14:19:31.118082+00:00",
       "rubrik": "Nu kan du tale til ChatGPT på din computer",
       "resume_da": "OpenAI opdaterer desktop-appen med stemmestyring, så du kan diktere kommandoer og styre AI-agenter uden at røre tastaturet.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -94,9 +79,8 @@
           "tekst": "Anthropic har også opdateret stemmefunktionen til deres AI-model **Claude**. Den kan nu bruge modeller som Opus, Sonnet og Haiku til at udføre opgaver i apps som Gmail, Calendar, Slack, Notion og Canva. Kampen om stemmestyret AI på computeren er for alvor i gang."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Stemmefunktionen hedder ChatGPT Voice og bruger ChatGPT-Live-modellen",
         "Den virker med ChatGPT Work og Codex på desktop",
@@ -114,56 +98,9 @@
         "Claude får også opdateret stemmefunktion"
       ],
       "billedmotiv": "En åben laptop med ChatGPT-appen i forgrunden, en mikrofon-ikon ved siden af tastaturet, og en skærm fyldt med kode og pull requests",
-      "side": "artikel/28465398b0195b25.html"
-    },
-    {
-      "titel": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
-      "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
-      "resume": "We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.",
-      "dato": "2026-07-24T01:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-26T14:19:31.118082+00:00",
-      "rubrik": "OpenAI og Anthropic spænder ben for sikkerhedsforskere",
-      "resume_da": "OpenAI og Anthropics AI-guardrails blokerer sikkerhedsforskere i at teste sårbarheder, advarer Chris Anley fra NCC Group.",
       "kat_ai": true,
       "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Problemet",
-          "tekst": "AI-giganter som **Anthropic** og **OpenAI** har indført strikse restriktioner for at forhindre ondsindede hackere i at misbruge deres modeller. Men de samme barrierer rammer nu de sikkerhedsforskere, der netop skal finde huller, før skurke gør det."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Sikkerhedsforskeren Chris Anley sammenligner AI-modellen med en hammer: du kan ikke bygge et hus uden, men den er også et våben. Når modellen nægter at svare på et spørgsmål om sårbarheder, mister forsvaret et vigtigt værktøj."
-        },
-        {
-          "overskrift": "Vejen udenom",
-          "tekst": "Flere forskere skifter til kinesiske open source-modeller som **GLM**, der kører lokalt uden restriktioner. Chefen for RemoteThreat advarer: de ansvarlige forskere skubbes væk fra amerikanske systemer til udenlandske – det skader mere end det gavner."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "USA indførte i juni eksportrestriktioner på Anthropics modeller Mythos og Fable.",
-        "Anthropic markedsfører Mythos som en 'dommedags-maskine' kun til godkendte brugere.",
-        "OpenAI og Anthropic har særlige adgangsprogrammer for sikkerhedsforskere.",
-        "Chris Anley fra NCC Group siger, at guardrails blokerer for at teste sårbarheder.",
-        "Paolo Stagno fra Crowdfense kalder adgangsprogrammerne for 'babysitting'.",
-        "En anonym forsker siger, at Anthropics værktøj er ubrugeligt til sikkerhedsarbejde.",
-        "Chris Thompson advarer om, at forskere presses mod kinesiske modeller som GLM."
-      ],
-      "betydning": "Din digitale sikkerhed bliver dårligere, fordi de samme barrierer, der skal stoppe hackere, også forhindrer forskere i at finde og lukke huller i tide.",
-      "pointer": [
-        "AI-restriktioner rammer forsvaret hårdere end angriberne.",
-        "Sikkerhedsforskere skifter til kinesiske modeller uden begrænsninger.",
-        "Guardrails er uforudsigelige og spilder forskernes tid.",
-        "Godkendelsesprogrammer bliver kaldt barnepasning af eksperter."
-      ],
-      "billedmotiv": "Et splitbillede: venstre side en hammer med prisskilt, højre side en hammer med kæde og hængelås – værktøj versus bevæbnet lås.",
-      "navngivet": true,
-      "side": "artikel/f254e58029de8cb9.html"
+      "side": "artikel/28465398b0195b25.html"
     },
     {
       "titel": "Patreon is laying off 20 percent of workers",
@@ -175,8 +112,7 @@
       "foerst_set": "2026-07-26T14:19:31.118082+00:00",
       "rubrik": "Patreon fyrer hver femte medarbejder",
       "resume_da": "Platformen til kreative skabere skærer 93 stillinger væk. Direktøren understreger, at AI ikke overtager job - men ændrer alt.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvem rammer det",
@@ -191,8 +127,6 @@
           "tekst": "Allerede i et interview i sidste måned slog Conte fast, at Patreon '100 procent omfavner' AI internt. Hvis ikke virksomheden griber teknologien for at give værktøjer tilbage til skaberne, 'er vi døde om tre år', sagde han. Samtidig lukkede Patreon sidste år sine kontorer i Dublin og Berlin."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "20 %",
@@ -203,6 +137,7 @@
           "label": "ansatte mister jobbet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Fyringerne rammer omkring 93 medarbejdere.",
         "CEO Jack Conte siger, AI har ændret tech-industrien, men ikke erstatter mennesker.",
@@ -219,8 +154,10 @@
         "Virksomheden satser stort på AI internt."
       ],
       "billedmotiv": "En bunke afbrudte abonnementskort med Patreons logo ligger på et kontorgulv, omgivet af en tom kontorstol og en skærm med teksten 'AI tools'.",
-      "navngivet": true,
       "billede": "data/img/7925d49071828ee3.jpg",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
       "side": "artikel/655cdfa99e06ad45.html"
     },
     {
@@ -233,8 +170,7 @@
       "foerst_set": "2026-07-26T14:19:31.118082+00:00",
       "rubrik": "AstraZeneca bruger AI til at designe ny medicin",
       "resume_da": "AstraZenecas AI og robotlaboratorium i Cambridge forkorter udvikling af lægemidler og tester molekyler i virtuelle forsøg.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hurtigere udvikling",
@@ -253,14 +189,13 @@
           "tekst": "Den største udfordring er at forudsige, om et AI-designet molekyle er sikkert i mennesker. AstraZeneca tester derfor kandidater i virtuelle forsøg med miniatureorganer og avancerede celler. Målet er, at AI en dag kan designe helt nye proteiner fra bunden – klar til patienterne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "50 %",
           "label": "forventet reduktion af udviklingstid"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "AI forkorter udviklingstiden ved at forudsige, hvilke molekyler der virker bedst.",
         "Forskere tester kun de bedste kandidater i laboratoriet, hvilket reducerer spild.",
@@ -278,8 +213,9 @@
         "Førhen umulige sygdomme kan nu behandles."
       ],
       "billedmotiv": "Et robotarm-system, der håndterer tusindvis af små væskeprøver i en laboratoriehal, med en skærm væg bagved, der viser molekylestrukturer og data i realtid.",
-      "navngivet": true,
       "billede": "data/img/54155f1a16cd7e47.jpg",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/7f188a0c6b4b89a7.html"
     },
     {
@@ -883,6 +819,10 @@
         {
           "kilde": "Hacker News: AI",
           "link": "https://github.com/palmier-io/palmier-pro"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/"
         }
       ],
       "detaljer": [
@@ -920,7 +860,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En støvsuger med en DNA-spiral som slange"
+      "billedmotiv": "En reagensglasstøvsuger med bison-uldbørste og ugle-fjer i opsamlingsbeholder"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -938,21 +878,21 @@
     },
     {
       "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
-      "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
+      "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
       "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
-      "dato": "2026-07-22T12:35:00+02:00",
-      "kilde": "Version2",
+      "dato": "2026-07-22T13:35:00+02:00",
+      "kilde": "Ingeniøren",
       "kategori": "Samfund & etik",
       "kun_aktuel": true,
       "foerst_set": "2026-07-25T19:30:24.635803+00:00",
-      "rubrik": "EU-lande: Elbiler er voksende it-sikkerhedsrisiko",
-      "resume_da": "Moderne elbiler er som computere på hjul og har sårbarheder - fra manipulerede vejskilte til skjulte sluk-knapper. EU advarer om truslen.",
+      "rubrik": "EU advarer om it-risiko ved elbiler",
+      "resume_da": "EU-lande advarer om sikkerhedshuller i elbiler. Hackere kan manipulere vejskilte og aktivere skjulte funktioner.",
       "kat_ai": true,
-      "prio": 4,
+      "prio": 5,
       "andre": [
         {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
+          "kilde": "Version2",
+          "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
         }
       ]
     },
@@ -969,7 +909,14 @@
       "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "billede": "data/img/0a0357248473fd4f.jpg",
       "kat_ai": true,
-      "prio": 6
+      "prio": 6,
+      "andre": [
+        {
+          "kilde": "Ingeniøren",
+          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
+        }
+      ],
+      "billedmotiv": "En golfkølle med prisskilt på en garagebænk"
     },
     {
       "titel": "OpenAI and Hugging Face partner to address security incident during model evaluation",
@@ -1046,7 +993,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En transistor med en pil der viser elektronstrøm gennem en halvleder"
+      "billedmotiv": "En transistor af glas med kobbertråde"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -1135,7 +1082,7 @@
       "billede": "data/img/cf5afd19c383cd8b.jpg",
       "kat_ai": true,
       "prio": 2,
-      "billedmotiv": "En morfinflaske med et nyt mærkat og dato 2024"
+      "billedmotiv": "En sprøjte med etiket '1980' ved siden af en ny medicinflaske"
     },
     {
       "titel": "Nyt forbud skal ændre måden, vi genanvender plastaffald: Men smuthuller vækker bekymring",
@@ -1268,7 +1215,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "En kommunal stempel med AI-chip på håndtaget"
+      "billedmotiv": "En AI-chatboble på en sagsmappe med forseglet kuvert"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -1285,7 +1232,7 @@
       "kat_ai": true,
       "prio": 2,
       "navngivet": true,
-      "billedmotiv": "Et kranium med vibrationsbølger og en låseikon"
+      "billedmotiv": "Et kranie med vibrerende linjer ud for øret og en hængelås"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -1301,7 +1248,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "Et hulkort stablet i 96 bunker med en gådefuld sum"
+      "billedmotiv": "Et stabilt hulkort med række huller i mønster 96"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -1387,7 +1334,7 @@
       "billede": "data/img/d3b23f3add8aeca6.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "Et sommerhusur med en museumspære der lyser halvt"
+      "billedmotiv": "En støvet museumsskilt der hænger på skrå med sommerstatus"
     },
     {
       "titel": "Nu skal borgeres sundhedsdata bruges i nyt pilotprojekt med AI",
@@ -1403,8 +1350,7 @@
       "billede": "data/img/23ba10585dff64fe.jpg",
       "kat_ai": true,
       "prio": 7,
-      "navngivet": true,
-      "billedmotiv": "En sundhedsjournal med AI-symbol og stempel 'godkendt'"
+      "navngivet": true
     },
     {
       "titel": "China’s AI models have Trump’s AI world at war with itself",
@@ -3250,7 +3196,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En petriskål med DNA-streng og en dusørplakat"
+      "billedmotiv": "En bunke dollarsedler med insektnet over petriskål"
     },
     {
       "titel": "The foundational elements of AI architecture that IT leaders need to scale",
