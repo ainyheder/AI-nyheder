@@ -27,7 +27,11 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 - [ ] **32 af 110 artikler står uden billede.** (Tallet var 20 af 96 — arkivet
       er vokset, andelen er nogenlunde den samme.) Er det de rigtige 32, altså
       dem der kun vises som tekstlinjer, eller mangler nogle af dagens topkort
-      deres illustration? *Punkt 4.*
+      deres illustration?
+      Mindste rettelse: sammenlign de 32 med det, `_kort_artikler()` udvælger.
+      Er der overlap, er det en fejl i udvælgelsen eller i loftet
+      `MAX_BILLEDER_PR_KOERSEL`. Er der intet overlap, virker det som tænkt —
+      og så skal punktet lukkes med målingen i loggen. *Punkt 4.*
 
 - [ ] **Læs 20 tilfældige "Hvad betyder det for dig" igennem.** Rammer de én
       konkret konsekvens for læseren, eller er de blevet generiske? Skriv de
