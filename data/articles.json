@@ -1,7 +1,28 @@
 {
-  "opdateret": "2026-07-26T14:27:45.477542+00:00",
-  "antal": 80,
+  "opdateret": "2026-07-26T14:35:52.893173+00:00",
+  "antal": 79,
   "artikler": [
+    {
+      "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
+      "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
+      "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
+      "dato": "2026-07-22T13:35:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Samfund & etik",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-25T19:30:24.635803+00:00",
+      "rubrik": "El-biler kan hackes via vejskilte",
+      "resume_da": "EU-lande advarer om alvorlige it-sikkerhedshuller i moderne elbiler. Angribere kan manipulere skilte eller aktivere skjulte dræberkontakter.",
+      "kat_ai": true,
+      "prio": 5,
+      "andre": [
+        {
+          "kilde": "Version2",
+          "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
+        }
+      ],
+      "navngivet": true
+    },
     {
       "titel": "Cloudflare's new AI traffic options for customers",
       "link": "https://blog.cloudflare.com/content-independence-day-ai-options/",
@@ -101,54 +122,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/28465398b0195b25.html"
-    },
-    {
-      "titel": "How AI guardrails are impeding the work of offensive cybersecurity researchers",
-      "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
-      "resume": "We spoke with several cybersecurity researchers, who look for unknown vulnerabilities and develop tools to exploit them, about how OpenAI’s and Anthropic’s guardrails affect their work.",
-      "dato": "2026-07-24T01:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-26T14:19:31.118082+00:00",
-      "rubrik": "OpenAI og Anthropic spænder ben for sikkerhedsforskere",
-      "resume_da": "OpenAI og Anthropics AI-guardrails blokerer sikkerhedsforskere i at teste sårbarheder, advarer Chris Anley fra NCC Group.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Problemet",
-          "tekst": "AI-giganter som **Anthropic** og **OpenAI** har indført strikse restriktioner for at forhindre ondsindede hackere i at misbruge deres modeller. Men de samme barrierer rammer nu de sikkerhedsforskere, der netop skal finde huller, før skurke gør det."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Sikkerhedsforskeren Chris Anley sammenligner AI-modellen med en hammer: du kan ikke bygge et hus uden, men den er også et våben. Når modellen nægter at svare på et spørgsmål om sårbarheder, mister forsvaret et vigtigt værktøj."
-        },
-        {
-          "overskrift": "Vejen udenom",
-          "tekst": "Flere forskere skifter til kinesiske open source-modeller som **GLM**, der kører lokalt uden restriktioner. Chefen for RemoteThreat advarer: de ansvarlige forskere skubbes væk fra amerikanske systemer til udenlandske – det skader mere end det gavner."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "USA indførte i juni eksportrestriktioner på Anthropics modeller Mythos og Fable.",
-        "Anthropic markedsfører Mythos som en 'dommedags-maskine' kun til godkendte brugere.",
-        "OpenAI og Anthropic har særlige adgangsprogrammer for sikkerhedsforskere.",
-        "Chris Anley fra NCC Group siger, at guardrails blokerer for at teste sårbarheder.",
-        "Paolo Stagno fra Crowdfense kalder adgangsprogrammerne for 'babysitting'.",
-        "En anonym forsker siger, at Anthropics værktøj er ubrugeligt til sikkerhedsarbejde.",
-        "Chris Thompson advarer om, at forskere presses mod kinesiske modeller som GLM."
-      ],
-      "betydning": "Din digitale sikkerhed bliver dårligere, fordi de samme barrierer, der skal stoppe hackere, også forhindrer forskere i at finde og lukke huller i tide.",
-      "pointer": [
-        "AI-restriktioner rammer forsvaret hårdere end angriberne.",
-        "Sikkerhedsforskere skifter til kinesiske modeller uden begrænsninger.",
-        "Guardrails er uforudsigelige og spilder forskernes tid.",
-        "Godkendelsesprogrammer bliver kaldt barnepasning af eksperter."
-      ],
-      "billedmotiv": "Et splitbillede: venstre side en hammer med prisskilt, højre side en hammer med kæde og hængelås – værktøj versus bevæbnet lås.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/f254e58029de8cb9.html"
     },
     {
       "titel": "Patreon is laying off 20 percent of workers",
@@ -867,6 +840,10 @@
         {
           "kilde": "Hacker News: AI",
           "link": "https://github.com/palmier-io/palmier-pro"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/"
         }
       ],
       "detaljer": [
@@ -904,7 +881,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En støvsuger slange med en DNA-dobbelt helix fanget i filteret"
+      "billedmotiv": "En støvsugerpose med en DNA-dobbelt helix og et uglestjært, der stikker op"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -919,26 +896,6 @@
       "resume_da": "Det er led i en stor modernisering af Australiens forsvar. Systematic står bag leverancen.",
       "kat_ai": true,
       "prio": 4
-    },
-    {
-      "titel": "EU-lande advarer: El-biler udgør en stigende it-sikkerhedsrisiko",
-      "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
-      "resume": "Gyldne gensyn: Moderne »computere på hjul« rummer alvorlige potentielle sårbarheder, fra manipulerede vejskilte til skjulte 'kill switch'-funktioner.",
-      "dato": "2026-07-22T12:35:00+02:00",
-      "kilde": "Version2",
-      "kategori": "Samfund & etik",
-      "kun_aktuel": true,
-      "foerst_set": "2026-07-25T19:30:24.635803+00:00",
-      "rubrik": "EU-lande: Elbiler er voksende it-sikkerhedsrisiko",
-      "resume_da": "Moderne elbiler er som computere på hjul og har sårbarheder - fra manipulerede vejskilte til skjulte sluk-knapper. EU advarer om truslen.",
-      "kat_ai": true,
-      "prio": 4,
-      "andre": [
-        {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
-        }
-      ]
     },
     {
       "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
@@ -960,7 +917,7 @@
           "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
         }
       ],
-      "billedmotiv": "En golfkølle liggende ved siden af en proptrækker og en garageport-fjernbetjening"
+      "billedmotiv": "En golfkølle og en garageportåbner med en prismærkat på 1 mia. kr."
     },
     {
       "titel": "OpenAI and Hugging Face partner to address security incident during model evaluation",
@@ -1037,7 +994,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En metallisk transistor med tre ben ved siden af en åben lærebog fra 1950"
+      "billedmotiv": "Tre transistorer i glasbeholdere med årstallet 1950 på en lille etiket"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -1126,7 +1083,7 @@
       "billede": "data/img/cf5afd19c383cd8b.jpg",
       "kat_ai": true,
       "prio": 2,
-      "billedmotiv": "En delt tabletpille med et gammelt og et nyt opioid-molekyle"
+      "billedmotiv": "En morgenkåbe med hætte og en pilleske med enkel pille"
     },
     {
       "titel": "Nyt forbud skal ændre måden, vi genanvender plastaffald: Men smuthuller vækker bekymring",
@@ -1259,7 +1216,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "En borgersagsmappe med en AI-chip gemt under et klæbelag"
+      "billedmotiv": "En computerskærm med et ansigt, der har en mund lukket med tape"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -1276,7 +1233,7 @@
       "kat_ai": true,
       "prio": 2,
       "navngivet": true,
-      "billedmotiv": "Et kranie med en vibrator fastgjort til issen og en lås"
+      "billedmotiv": "Et kranium med en lille vibrator og en lås fastgjort"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -1292,7 +1249,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "Et stak hulkort stablet som en pyramide med et spørgsmålstegn"
+      "billedmotiv": "En stak på 96 hulkort med et spørgsmålstegn som skygge"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -1378,7 +1335,7 @@
       "billede": "data/img/d3b23f3add8aeca6.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "Flere hulkort med sommerfugleklistermærker og en uofficiel status-note"
+      "billedmotiv": "En sommerhat og en nøglering med hængelås på et gulv"
     },
     {
       "titel": "Nu skal borgeres sundhedsdata bruges i nyt pilotprojekt med AI",
@@ -3240,7 +3197,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En DNA-streng med en prisskilt på 10.000 dollar og en forstørrelsesglas"
+      "billedmotiv": "En pengepung med dollar-symbol og et reagensglas med en fejlmarkør"
     },
     {
       "titel": "The foundational elements of AI architecture that IT leaders need to scale",
