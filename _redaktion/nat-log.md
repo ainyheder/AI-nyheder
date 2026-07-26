@@ -53,6 +53,53 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-07-26 (kl. 23:30) · Flettet mit arbejde med de rigtige artikel-URL'er
+
+**Fandt:** Efter dit commit hentede pull 13 commits ned, og `index.html` gik i
+konflikt med 2 steder. Årsagen er, at en anden kørsel har lagt **rigtige
+artikel-stier i adresselinjen** ind (`/artikel/xxx.html` i stedet for `#a=…`,
+fordi Cloudflares beacon sammenligner pathname og aldrig ser et hash). Den
+ombygning døbte `lukLaeser` om til `skjulLaeser` og lagde et `history.back()` +
+`popstate` ind — præcis de to funktioner, mine fokusrettelser sad i.
+
+**Og git flettede den ene halvdel forkert, uden at det gav konflikt.** Min blok,
+der giver fokus tilbage til kortet, endte inde i `lukLaeser` — efter linjen
+`if (st && st.link && !st.start) { history.back(); return; }`. Den linje er den
+**normale** vej ud, så alt efter den bliver aldrig kørt. Havde jeg nøjedes med at
+fjerne konfliktmarkørerne, ville fokus kun være blevet givet tilbage for delte
+links, og ingen prøve ville have fanget det.
+
+**Gjorde:** Flyttede fokus-genskabelsen til **`skjulLaeser()`**. Læseren lukkes
+ad tre veje — Luk-knappen, Escape og browserens tilbage-knap — og de to første
+går gennem `lukLaeser`, men **alle tre ender i `skjulLaeser`**. Vagten
+(`if (!aaben) return`) ligger nu samme sted, så et `popstate` på en allerede
+lukket læser ikke flytter fokus. `lukLaeser` fik samme vagt øverst, så Escape på
+en lukket læser ikke kan udløse et `history.back()`, der sender dig ud af sitet.
+Origins adresse-mekanik er urørt.
+
+**Testede:** **84 påstande, alle grønne.** Ny `lukstier.js` prøver **hver af de
+tre luk-stier fra en frisk åbning** — Luk-knappen, Escape og tilbage-knappen: alle
+tre lukker, låser body op, sætter adressen tilbage på forsiden og giver fokus
+tilbage til kortet. Fjerde sti: efter "Næste historie" fører ét luk til den
+**forrige artikel** i stedet for at lukke — det er origins design, og det er nu
+skrevet ned som en påstand, så ingen "retter" det. Dertil 43 i
+tilgængelighedsprøven og 21 i den samlede.
+
+**To gange målte jeg forkert og tjekkede efter.** Seks prøver fejlede først, og
+det lignede fletningen. Så prøvede jeg, om jsdom overhovedet udløser `popstate`
+ved `history.back()` — **det gør den** — så fejlen var reel og lå i min egen
+prøves rækkefølge: den trykkede "Næste historie", før den lukkede, og så er ét
+luk *ikke* et luk. Rettet i prøven, ikke i koden.
+
+**Verificeret linje for linje, at ingen af siderne tabte noget:** alle **35** nye
+linjer fra origins 13 commits og alle **86** af mine står i den flettede fil.
+
+**Til Torben:** Filen er markeret som løst (`git add` — jeg har hverken committet
+eller pushet). **Tryk "Continue Merge"** i GitHub Desktop. Der er 0 filer i
+konflikt.
+
+---
+
 ## 2026-07-26 (ekstra kørsel kl. 17:05) · sitemap.xml manglede én side, ikke tre
 
 **Fandt:** Punktet sagde tre manglende sider. **Målt: kun én af dem hører ind,
