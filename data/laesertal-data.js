@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-26T16:27:21.086857+00:00",
+ "opdateret": "2026-07-26T18:47:48.956890+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      6,
      2,
      2,
-     1
+     2
     ]
    },
    {
@@ -100,7 +100,7 @@ window.LAESERTAL = {
      1,
      2,
      1,
-     6,
+     7,
      3,
      3,
      0
@@ -170,7 +170,7 @@ window.LAESERTAL = {
      0,
      1,
      2,
-     3,
+     2,
      4,
      0,
      0
@@ -249,109 +249,44 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 219,
- "sidevisninger_i_alt": 679,
+ "besoeg_i_alt": 230,
+ "sidevisninger_i_alt": 680,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 204,
-   "visninger": 409
-  },
-  {
-   "sti": "/tak.html",
-   "besoeg": 3,
-   "visninger": 5
+   "besoeg": 210,
+   "visninger": 430
   },
   {
    "sti": "/youtube.html",
-   "besoeg": 3,
-   "visninger": 19
+   "besoeg": 20,
+   "visninger": 40
   },
   {
    "sti": "/laer.html",
-   "besoeg": 2,
-   "visninger": 88
-  },
-  {
-   "sti": "/velkommen.html",
-   "besoeg": 2,
-   "visninger": 3
-  },
-  {
-   "sti": "/om.html",
-   "besoeg": 1,
-   "visninger": 8
-  },
-  {
-   "sti": "/koerekort.html",
-   "besoeg": 1,
-   "visninger": 26
-  },
-  {
-   "sti": "/uge.html",
-   "besoeg": 1,
-   "visninger": 72
-  },
-  {
-   "sti": "/erhverv.html",
-   "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/about",
-   "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/koerekort-2.html",
    "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/guide-igang.html",
-   "besoeg": 0,
-   "visninger": 3
+   "visninger": 100
   },
   {
    "sti": "/prompts.html",
    "besoeg": 0,
-   "visninger": 14
+   "visninger": 10
   },
   {
-   "sti": "/koerekort-6.html",
+   "sti": "/koerekort.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 30
   },
   {
-   "sti": "/faq.html",
+   "sti": "/uge.html",
    "besoeg": 0,
-   "visninger": 9
-  },
-  {
-   "sti": "/koerekort-1.html",
-   "besoeg": 0,
-   "visninger": 1
+   "visninger": 60
   },
   {
    "sti": "/guide-prompts.html",
    "besoeg": 0,
-   "visninger": 8
-  },
-  {
-   "sti": "/koerekort-7.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/guide-sikkerhed.html",
-   "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/ordbog.html",
-   "besoeg": 0,
-   "visninger": 3
+   "visninger": 10
   }
  ],
  "henvisere": [
@@ -386,207 +321,77 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 205
+    "visninger": 220
    },
    {
     "fra": "direkte",
-    "besoeg": 181,
-    "visninger": 181
-   },
-   {
-    "fra": "l.facebook.com",
-    "besoeg": 13,
-    "visninger": 13
+    "besoeg": 200,
+    "visninger": 200
    },
    {
     "fra": "www.google.com",
-    "besoeg": 4,
-    "visninger": 4
-   },
-   {
-    "fra": "m.facebook.com",
-    "besoeg": 3,
-    "visninger": 3
-   },
-   {
-    "fra": "www.facebook.com",
-    "besoeg": 3,
-    "visninger": 3
-   }
-  ],
-  "/tak.html": [
-   {
-    "fra": "buttondown.com",
-    "besoeg": 3,
-    "visninger": 3
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
+    "besoeg": 10,
+    "visninger": 10
    }
   ],
   "/youtube.html": [
    {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 16
+    "fra": "direkte",
+    "besoeg": 20,
+    "visninger": 20
    },
    {
-    "fra": "direkte",
-    "besoeg": 3,
-    "visninger": 3
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 20
    }
   ],
   "/laer.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 86
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 2,
-    "visninger": 2
-   }
-  ],
-  "/velkommen.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 2,
-    "visninger": 2
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 7
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/koerekort.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 25
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/uge.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 71
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/erhverv.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/about": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/koerekort-2.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/guide-igang.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
+    "visninger": 100
    }
   ],
   "/prompts.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 14
+    "visninger": 10
    }
   ],
-  "/koerekort-6.html": [
+  "/koerekort.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 30
    }
   ],
-  "/faq.html": [
+  "/uge.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 9
-   }
-  ],
-  "/koerekort-1.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
+    "visninger": 60
    }
   ],
   "/guide-prompts.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 8
-   }
-  ],
-  "/koerekort-7.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/guide-sikkerhed.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/ordbog.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
+    "visninger": 10
    }
   ]
  },
  "faste_uden_besoeg": [
+  "/erhverv.html",
   "/prompt-arkiv.html",
+  "/ordbog.html",
   "/quiz.html",
-  "/vaerktoejer.html"
+  "/vaerktoejer.html",
+  "/faq.html",
+  "/om.html",
+  "/guide-igang.html",
+  "/guide-sikkerhed.html"
  ],
  "serie": [
   {
