@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-26T14:55:44.799794+00:00",
+ "opdateret": "2026-07-26T14:59:35.685688+00:00",
  "dage": 7,
  "besoeg_i_alt": 218,
  "sidevisninger_i_alt": 678,
@@ -134,14 +134,8 @@ window.LAESERTAL = {
  "ai_chats": [],
  "ai_chat_besoeg": 0,
  "faste_uden_besoeg": [
-  "/prompts.html",
   "/prompt-arkiv.html",
-  "/ordbog.html",
   "/quiz.html",
-  "/vaerktoejer.html",
-  "/faq.html",
-  "/guide-igang.html",
-  "/guide-prompts.html",
-  "/guide-sikkerhed.html"
+  "/vaerktoejer.html"
  ]
 };
