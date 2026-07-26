@@ -19,8 +19,22 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ### 1 — I stykker for læseren lige nu
 
-*Ingen kendte. Alt, der var målt i stykker, er klaret. Står der intet her
-næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.*
+- [ ] **11 frosne artikelsider har brudt billede igen.** Målt 26.07 kl. 15:25,
+      efter at crawlerens Actions-kørsel kl. 13:06 blev flettet ind. Nattens
+      rettelse lukker mekanismen, men **den kørte ikke på Actions, fordi den
+      ikke var pushet endnu** — så oprydningen slettede billederne under
+      siderne én gang mere. 11 af de 12 ramte sider er frosne (ude af
+      `articles.json`), så crawleren kan ikke selv nå dem; den tolvte retter den
+      ved næste kørsel. Rettelsen er den samme som i nat: fjern det døde `<img>`,
+      sæt `og:image` til `assets/og.png`, tag `image` ud af JSON-LD, og fjern
+      løftet om en illustration. **Vent, til Torben har pushet** — ellers
+      kolliderer rettelsen med næste Actions-kørsel, som det skete i dag.
+      *Punkt 4.*
+
+      Samme måling viste noget, der gør punktet om arkivet nedenfor mere akut,
+      end det står: **arkivet gik fra 101 til 89 artikler på under en time**, og
+      antallet af frosne sider fra 35 til 47. Fristen er altså ikke "dage" i
+      betydningen en uges tid — det er timer på et travlt døgn.
 
 ### 2 — Bryder målestokken synligt
 
