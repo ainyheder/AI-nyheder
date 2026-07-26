@@ -3680,7 +3680,47 @@ def _tema_serie(kartotek: dict, dage: int) -> dict:
     return {"datoer": datoer, "serier": serier}
 
 
+def _skriv_laesertal(tal: dict) -> None:
+    """Skriver begge udgaver af datafilen: JSON til mennesker og maskiner, og
+    en .js-udgave, fordi kontrolpanelet åbnes fra file://, hvor browseren ikke
+    må hente JSON. Ligger i data/, fordi det er dén mappe, workflow'en
+    committer."""
+    LAESERTAL_FIL.parent.mkdir(exist_ok=True)
+    LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
+                             encoding="utf-8")
+    (LAESERTAL_FIL.parent / "laesertal-data.js").write_text(
+        "window.LAESERTAL = " + json.dumps(tal, ensure_ascii=False, indent=1) + ";\n",
+        encoding="utf-8")
+
+
 def hent_laesertal() -> dict | None:
+    """Skriver ALTID datafilen - også når Cloudflare ikke kan svare.
+
+    Temaerne regnes ud af vores egne artikelsider og har intet med Cloudflare
+    at gøre. Lå de inde i det svar, så et udløbet token også ville tage
+    temagrafen med sig, og det ville se ud som om arkivet var forsvundet.
+    Læsertallene er den valgfri del; temaerne er der altid."""
+    kartotek = _artikel_kartotek()
+    tal = {
+        "opdateret": datetime.now(timezone.utc).isoformat(),
+        "dage": LAESERTAL_DAGE,
+        "serie_dage": LAESERTAL_SERIE_DAGE,
+        "udgivne_temaer": _tema_serie(kartotek, LAESERTAL_SERIE_DAGE),
+        "maaling": "mangler_token",
+        "besoeg_i_alt": 0, "sidevisninger_i_alt": 0, "ai_chat_besoeg": 0,
+        "sider": [], "henvisere": [], "ai_chats": [],
+        "faste_uden_besoeg": [], "serie": [], "artikler": [], "laeste_temaer": [],
+    }
+    if os.environ.get("CLOUDFLARE_API_TOKEN", "").strip():
+        maalt = _hent_cloudflare_tal(kartotek)
+        tal["maaling"] = "ok" if maalt else "fejl"
+        if maalt:
+            tal.update(maalt)
+    _skriv_laesertal(tal)
+    return tal
+
+
+def _hent_cloudflare_tal(kartotek: dict) -> dict | None:
     """Henter de seneste dages besøg pr. side fra Cloudflare Web Analytics.
     Fejler stille - læsertal er en gave, ikke en forudsætning."""
     token = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
@@ -3761,8 +3801,9 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
         ai_chats = sorted(({"navn": n, "besoeg": b} for n, b in pr_chat.items()),
                           key=lambda a: -a["besoeg"])
         # Artikelsiderne med rubrik og kategori på, så panelet kan vise, HVILKE
-        # nyheder der blev læst - ikke en liste af hashede filnavne.
-        kartotek = _artikel_kartotek()
+        # nyheder der blev læst - ikke en liste af hashede filnavne. Kartoteket
+        # kommer udefra: det er allerede læst én gang, og de 110 filer skal
+        # ikke åbnes to gange pr. kørsel.
         artikler = []
         for s in sider:
             if not s["sti"].startswith("/artikel/"):
@@ -3797,18 +3838,7 @@ query (%s$tag: String!, $fra: Time!, $til: Time!) {
                                      LAESERTAL_SERIE_DAGE),
             "artikler": artikler,
             "laeste_temaer": laeste_temaer,
-            "udgivne_temaer": _tema_serie(kartotek, LAESERTAL_SERIE_DAGE),
         }
-        LAESERTAL_FIL.parent.mkdir(exist_ok=True)
-        LAESERTAL_FIL.write_text(json.dumps(tal, ensure_ascii=False, indent=2),
-                                 encoding="utf-8")
-        # Samme data som JavaScript - så kontrolpanelet virker fra file://,
-        # præcis som hjerne-data.js. Ligger i data/, fordi det er dén mappe,
-        # workflow'en committer.
-        (LAESERTAL_FIL.parent / "laesertal-data.js").write_text(
-            "window.LAESERTAL = "
-            + json.dumps(tal, ensure_ascii=False, indent=1) + ";\n",
-            encoding="utf-8")
         print(f"📈 Læsertal: {tal['besoeg_i_alt']} besøg på "
               f"{len(sider)} sider de seneste {LAESERTAL_DAGE} dage"
               + (f" · {tal['ai_chat_besoeg']} fra AI-chats" if ai_chats else ""))

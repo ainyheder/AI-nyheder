@@ -558,20 +558,33 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   }
 
   // Fælles tomme tilstande, så alle tre ruder svarer ens
+  // Fire forskellige tilstande, som ikke må forveksles. Datafilen skrives nu
+  // ALTID - også uden token - så filens tilstedeværelse siger ingenting
+  // længere. Feltet "maaling" gør.
   function laeserTom() {
     if (!harFil) {
-      return '<div class="advarsel" style="margin:0"><strong>Der er ingen tal endnu.</strong> ' +
-        "Filen <code>data/laesertal-data.js</code> skrives af crawleren, når den kan komme " +
-        "til Cloudflare. Det kræver ét GitHub-secret — <code>CLOUDFLARE_API_TOKEN</code> — " +
-        "og opskriften står i <code>_redaktion/laesertal-opsaetning.md</code>. " +
-        "Når det er sat, står tallene her efter næste kørsel.</div>";
+      return '<div class="advarsel" style="margin:0"><strong>Der er ingen datafil endnu.</strong> ' +
+        "<code>data/laesertal-data.js</code> skrives af crawleren. Kør et crawl — " +
+        "eller <code>python3 crawler.py</code> — og genindlæs så den her side.</div>";
+    }
+    if (L.maaling === "mangler_token") {
+      return '<div class="advarsel" style="margin:0"><strong>Læsertallene mangler en nøgle.</strong> ' +
+        "Crawleren kan ikke komme til Cloudflare uden GitHub-secret'et " +
+        "<code>CLOUDFLARE_API_TOKEN</code>. Opskriften står i " +
+        "<code>_redaktion/laesertal-opsaetning.md</code>. Temaerne herunder " +
+        "kommer fra vores egne filer og virker uanset.</div>";
+    }
+    if (L.maaling === "fejl") {
+      return '<div class="advarsel" style="margin:0"><strong>Cloudflare svarede ikke.</strong> ' +
+        "Nøglen kan være udløbet, eller API'et var nede. Actions-loggen har " +
+        "linjen med 📈 og siger hvad der gik galt. Temaerne herunder rammes ikke.</div>";
     }
     if (!harTal) {
       var m = new Date(L.opdateret).toLocaleString("da-DK",
         { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
       return '<div class="advarsel" style="margin:0"><strong>Nul besøg på ' +
         esc(String(L.dage || 7)) + " dage.</strong> Hentet " + esc(m) +
-        ". Nøglen virker — ellers var filen her slet ikke — så det er ét af tre:" +
+        ". Nøglen virker — Cloudflare svarede — så det er ét af tre:" +
         "<ul style='margin:9px 0 0 18px'>" +
         "<li>Der er reelt ingen besøgende endnu. Tjek Cloudflares eget overblik: " +
         "viser det også nul, passer tallet.</li>" +
@@ -630,19 +643,20 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 
   // ---- Rude 2: Nyhederne ---------------------------------------------------
   function laeserNyhederHtml() {
-    var ud = "<h1>Nyhederne</h1>";
-    var tom = laeserTom();
-    if (tom) {
-      return ud + '<p class="manchet">Hvilke historier bliver læst — og hvilke ' +
-        "temaer fylder over tid.</p>" + tom;
-    }
-    ud += '<p class="manchet">Hvilke historier bliver læst, og hvad vi skriver om. ' +
+    var ud = "<h1>Nyhederne</h1>" +
+      '<p class="manchet">Hvilke historier bliver læst, og hvad vi skriver om. ' +
       "De to ting er ikke det samme, og de står hver for sig herunder.</p>";
+    // Bemærk: her returneres IKKE tidligt. Temaerne kommer fra vores egne
+    // filer, så de skal stå der, også når læsertallene mangler.
+    var tom = laeserTom();
+    var arts = L ? (L.artikler || []) : [];
+    var katNavne = (((L || {}).udgivne_temaer || {}).serier || [])
+      .map(function (s) { return s.navn; });
 
-    var arts = L.artikler || [];
-    var katNavne = ((L.udgivne_temaer || {}).serier || []).map(function (s) { return s.navn; });
     ud += '<div class="lgruppe">Mest læste nyheder</div>';
-    if (!L.hasOwnProperty("artikler")) {
+    if (tom) {
+      ud += tom;
+    } else if (!L.hasOwnProperty("artikler")) {
       ud += venterPaaCrawl("Listen over mest læste nyheder");
     } else if (!arts.length) {
       ud += '<div class="nul">Ingen artikelsider blev åbnet i perioden. ' +
@@ -661,7 +675,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         }).join("") + "</div>";
     }
 
-    var lt = L.laeste_temaer || [];
+    var lt = (L || {}).laeste_temaer || [];
     if (lt.length) {
       ud += '<div class="lgruppe">Temaer, der bliver læst</div>' +
         '<p class="lmanchet">Sidevisninger på artikler, lagt sammen pr. tema. ' +
@@ -673,7 +687,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     }
 
     ud += '<div class="lgruppe">Temaer over tid — hvad vi udgiver</div>';
-    var ut = L.udgivne_temaer;
+    var ut = (L || {}).udgivne_temaer;
     if (!ut || !(ut.serier || []).length) {
       ud += venterPaaCrawl("Temakurven");
     } else {
