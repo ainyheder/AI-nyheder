@@ -1650,6 +1650,7 @@ def _uge_side_html(d: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI-nyheder.com · Ugens overblik uge {d.get("uge_nr", "")}</title>
 <meta name="description" content="{html.escape(d.get("indledning", ""))[:150]}">
+<link rel="canonical" href="{SITE_URL}/uge.html">
 <meta name="theme-color" content="#191714">
 <meta property="og:title" content="Ugens AI-overblik: {html.escape(d.get("rubrik", ""))}">
 <meta property="og:description" content="{html.escape(d.get("indledning", ""))[:150]}">
@@ -2617,7 +2618,12 @@ Problemet: overskrifterne har fjernet navnene, så læseren ikke kan se, hvem
 historien handler om ("Kæmpe gigant fyrer 21.000" i stedet for "Oracle fyrer 21.000").
 
 Du får den originale engelske titel og resuméet plus vores nuværende danske
-rubrik og resumé. Skriv dem om, så virksomheden, produktet eller modellen nævnes
+rubrik og resumé. Har vi selv skrevet en genfortælling af artiklen, får du et
+uddrag af den i "dansk_uddrag" - og **navnet står ofte KUN dér**. Læs altid
+uddraget igennem for firma-, produkt- eller landenavne, før du konkluderer, at
+materialet ikke nævner nogen.
+
+Skriv rubrik og resumé om, så virksomheden, produktet eller modellen nævnes
 ved rigtigt navn - og BEVAR ellers det enkle, folkelige sprog.
 
 Krav:
@@ -2629,10 +2635,75 @@ Krav:
   "Sydkoreas regering ...", "Alexa Plus ..."). Skriv ALDRIG "techgigant",
   "et stort selskab", "giganten" eller lignende omskrivninger - de bliver afvist,
   og så beholder vi den gamle rubrik.
+- Ordet "AI" er IKKE et navn. Det står i næsten hver rubrik på siden og siger
+  intet om, hvem historien handler om. At sætte "AI" ind i rubrikken tæller ikke
+  som en løsning, og svaret bliver afvist.
+- Kan du IKKE finde et navn i materialet, så skriv "rubrik": "" for det nummer.
+  Så beholder vi den gamle rubrik. Det er et rigtigt svar, ikke en fejl.
 - Behold gerne folkelige billeder ("digital hjerne"), men sæt navnet foran:
   "Anthropics nye digitale hjerne ...".
 
 Svar KUN med et JSON-array: [{"nr": 1, "rubrik": "...", "resume": "..."}, ...]"""
+
+
+def _dansk_uddrag(a: dict, graense: int = 700) -> str:
+    """Crawlerens EGEN danske genfortælling - dér, hvor navnene faktisk står.
+
+    `dybe_briefs()` skriver `sektioner`, `detaljer` og `pointer` ét kald før
+    navngivningen i `main()`, men payloaden nedenfor viste dem aldrig til
+    modellen: den fik kun den engelske titel (160 tegn), det engelske RSS-resumé
+    (250 tegn) og vores egen navnløse rubrik. Målt 26.07 på de 12 låste
+    rubrikker stod navnet for tre af dem i netop disse felter og INTET andet
+    sted i posten - Microsoft i én, og ChatGPT, Claude og Gemini i en anden.
+    Modellen blev altså bedt om at finde navne i materiale, navnene var pillet
+    ud af.
+
+    Stumperne MED et navn kommer først. Det er ikke pynt: genfortællingen fylder
+    typisk 1.100 tegn alene i `sektioner`, så en simpel klipning ved 700 nåede
+    aldrig frem til navnet - Microsoft stod sent i sektionerne, og ChatGPT,
+    Claude og Gemini stod i `detaljer`, som slet ikke kom med. Feltet findes for
+    at levere navne, så det er navnene, der får pladsen.
+
+    Artikler med `kun_aktuel` (arkivforbud) har ingen genfortælling og får
+    tom streng - for dem er der reelt intet mere at vise.
+    """
+    dele: list[str] = []
+    for sek in a.get("sektioner") or []:
+        if isinstance(sek, dict):
+            dele.append(" ".join(str(sek.get(n) or "")
+                                 for n in ("overskrift", "tekst")))
+    for felt in ("detaljer", "pointer"):
+        for d in a.get(felt) or []:
+            dele.append(d if isinstance(d, str)
+                        else " ".join(str(v) for v in d.values())
+                        if isinstance(d, dict) else str(d))
+    rene = [t.strip() for t in dele if t and t.strip()]
+    rene.sort(key=_uddrag_vaegt)
+    return " ".join(rene)[:graense]
+
+
+def _uddrag_vaegt(stump: str) -> tuple[int, int]:
+    """Sorteringsnøgle: stumper med et sikkert navn først, korteste først.
+
+    Rangen er nødvendig, fordi `sektioner` fylder hele budgettet, hvis den får
+    lov. Længden er nødvendig, fordi navnene sidder tættest i `detaljer`, hvor
+    én linje på 60 tegn kan rumme tre ("ChatGPT, Claude og Gemini") - mens et
+    sektionsafsnit på 300 tegn ofte kun rummer ét. Korteste først giver derfor
+    flest navne pr. tegn.
+
+    Rang 0: et navn vi er sikre på - kendt mærke, ORD I STORE BOGSTAVER,
+            camelCase. Rang 1: et muligt navn (stort bogstav midt i en sætning,
+            fx "Princeton"). Rang 2: ingen navne.
+    """
+    sikker = any(
+        _stærkt_navnesignal(o, o.strip("-.'’").lower())
+        for o in re.findall(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", stump)
+        if o.strip("-.'’").lower() not in _IKKE_ET_NAVN
+        and o.strip("-.'’").lower().split("-")[0] not in _IKKE_ET_NAVN
+        and o.strip("-.'’").lower() not in _GENERISKE_AKTOERER
+    )
+    rang = 0 if sikker else (1 if _har_navn(stump) else 2)
+    return (rang, len(stump))
 
 
 def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
@@ -2646,16 +2717,25 @@ def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
     if not anonyme:
         return
     try:
-        payload = [{"nr": i + 1,
+        payload = []
+        for i, a in enumerate(anonyme):
+            post = {"nr": i + 1,
                     "engelsk_titel": a.get("titel", "")[:160],
                     "engelsk_resume": (a.get("resume") or "")[:250],
                     "dansk_rubrik": a["rubrik"],
                     "dansk_resume": (a.get("resume_da") or "")[:250]}
-                   for i, a in enumerate(anonyme)]
+            uddrag = _dansk_uddrag(a)
+            if uddrag:                        # udelad feltet frem for at sende ""
+                post["dansk_uddrag"] = uddrag
+            payload.append(post)
         r = parse_json_svar(hjerne_kald("navngiv", SYSTEM_NAVNGIV,
                                     json.dumps(payload, ensure_ascii=False), 3500))
         rettede = 0
         for p in r if isinstance(r, list) else []:
+            if not isinstance(p, dict):
+                continue          # ét vrøvl-element må ikke tabe hele klumpen:
+                                  # p.get() på en streng kaster AttributeError,
+                                  # som kun den ydre except fanger.
             try:
                 a = anonyme[int(p.get("nr", 0)) - 1]
             except (ValueError, TypeError, IndexError):
@@ -2669,7 +2749,8 @@ def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
                     a["resume_da"] = nyt_res
                 rettede += 1
             else:
-                a["navngivet"] = True         # AI'en kunne ikke finde et navn - lad den være
+                a["navngivet"] = True         # intet navn i materialet (eller et
+                                              # svar, porten afviste) - lad den være
         if rettede:
             print(f"🏷️  Satte navn på {rettede} overskrifter")
     except Exception as e:

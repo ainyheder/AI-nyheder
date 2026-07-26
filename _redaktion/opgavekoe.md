@@ -24,26 +24,9 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 
 ### 2 — Bryder målestokken synligt
 
-- [ ] **12 rubrikker mangler stadig et navn - nu hvor detektoren virker.** Da
-      `_har_navn` blev rettet 26.07 (den godtog "AI" som et navn), steg tallet
-      fra 9 til **12 af 96**. Reparationsrunden saetter flaget `navngivet` efter
-      ét forsoeg og proever aldrig igen, saa de kan vaere laast fast uden navn.
-      Mindste rettelse: laes de 12, og afgoer om navnet mangler i
-      kildematerialet (saa er det rimeligt), eller om AI'en bare gav op (saa
-      skal flaget nulstilles for netop dem). *Punkt 1.*
+*Ingen kendte lige nu.*
 
 ### 3 — Gør siden mærkbart bedre
-
-- [ ] **Ingen af de 31 statiske sider har en canonical.** Alle 102 artikelsider
-      og alle 40 videosider har én — crawleren sætter den, fordi den er
-      nødvendig. Men forsiden, `koerekort.html`, alle syv kørekortmoduler, alle
-      fire erhvervsmoduler, `laer.html`, `ordbog.html`, `faq.html` og resten har
-      ingen. Målt 26.07 kl. 11: **2 af 32** sider i roden har canonical -
-      `undervisning.html`, som blev skrevet i nat. Det er præcis de sider,
-      Google *har* indekseret. Uden canonical kan samme side indekseres under
-      flere adresser (med og uden `www`, med `?utm_source=…` fra et delt link),
-      og signalerne splittes mellem dem. Mindste rettelse: én linje pr. side.
-      *Punkt 10 — en åbenlys vej til flere læsere, der står ubrugt hen.*
 
 - [ ] **Artikelsider fryses, når de falder ud af 30-dages-vinduet.** Målt i nat:
       15 af 16 sider under 900 tegn kunne crawleren ikke røre, fordi artiklen
@@ -141,6 +124,39 @@ næste nat heller, er det et godt tegn — ikke et tomt afsnit, der skal fyldes.
 ---
 
 ## Klaret
+
+- [x] **Ingen af de statiske sider har en canonical.** *(26.07.2026, ekstra
+      kørsel kl. 14)* Målt: 2 af 33 havde én. Sat på **28 sider** i crawlerens
+      eget format, lige efter `<meta name="description">`. `index.html` peger på
+      `https://ainyheder.com/` uden filnavn — samme form som sitemappets `<loc>`,
+      så `/` og `/index.html` ikke længere kan indekseres som to sider. Undervejs
+      viste målingen, at **`uge.html` ikke er en statisk fil**: crawleren
+      genskriver den fra `_uge_side_html()`, så en rettelse i hånden var
+      forsvundet ved næste kørsel. Linjen er lagt i skabelonen, og den genskabte
+      fil er byte for byte identisk med den på disken. Alle 22 `write_text` i
+      crawleren og hele `crawl.yml` gennemgået: `uge.html` er den eneste rod-HTML,
+      der genereres. `404.html` fik med vilje ingen (fejlside), og `tak.html` +
+      `velkommen.html` heller ikke (de har allerede `noindex`). Alle 29
+      sitemap-URL'er har nu en side, der peger på præcis den adresse. 203
+      assertions, alle grønne.
+
+- [x] **12 rubrikker mangler stadig et navn.** *(26.07.2026, ekstra kørsel kl. 14)*
+      Tallet holdt — 12 af 96, alle låst af `navngivet`, ingen uprøvede. Men de
+      var ikke låst, fordi AI'en gav op: `navngiv_rubrikker` viste den kun den
+      engelske titel, RSS-resuméet og vores egen navnløse rubrik — **aldrig**
+      `sektioner` og `detaljer`, den danske genfortælling crawleren selv skriver
+      ét kald tidligere. Navnene stod netop dér: **Microsoft** i én, **ChatGPT,
+      Claude og Gemini** i en anden. Git-historikken beviser skaden: rubrikken
+      *"…fremtidens computerkraft"* blev 25.07 omskrevet til *"…fremtidens
+      **AI-kraft**"* og låst — modellen satte ordet "AI" ind, og den dengang
+      utætte `_har_navn` godtog det som et navn. Rettet: nyt `_dansk_uddrag()`
+      lægger genfortællingen i payloaden, navnebærende stumper først (en simpel
+      klipning ved 700 tegn nåede aldrig frem, fordi sektionerne fylder 1.100);
+      prompten siger nu, at "AI" ikke er et navn, og at et tomt svar er gyldigt;
+      ét vrøvl-element taber ikke længere hele klumpen. `navngivet` nulstillet
+      for **præcis de 3**, hvor uddraget nu leverer et sikkert navn — de øvrige
+      9 har intet navn i noget materiale vi har, og fem af dem er `kun_aktuel`,
+      hvor vi aldrig får mere. 58 assertions, alle grønne.
 
 - [x] **Viser videosiderne faktisk tidsstempler?** *(målt 26.07 kl. 11)* Ja.
       17 af 40 videoer har hoejdepunkter, og praecis de 17 videosider viser dem
