@@ -40,6 +40,28 @@ her helt over: crawleren bruger bare den konto, tokenet giver adgang til.
 
 ---
 
+## Fælden: site-tag er ikke beacon-tokenet
+
+De to ligner hinanden — begge er 32 tegn hex — men de er **forskellige felter
+med forskellig værdi**, og de kan ikke bruges i stedet for hinanden.
+
+| Hvad | Hvor det står | Bruges til |
+|---|---|---|
+| **Beacon-token** | `data-cf-beacon` i hver HTML-side | At *sende* målinger til Cloudflare |
+| **Site-tag** | Adressen i Cloudflare, `?siteTag~in=…` | At *hente* dem igen via API'et |
+
+Crawleren skal bruge **site-tag'et**, og det står i `CF_SITE_TAG` i `crawler.py`.
+Find det ved at åbne Web Analytics for sitet og kigge i browserens adresselinje:
+
+```
+dash.cloudflare.com/<konto>/web-analytics/overview?siteTag~in=DET_HER&…
+```
+
+Bytter man dem om, sker der noget værre end en fejl: alt ser ud til at virke.
+Godkendelsen går igennem, kontoen findes, filen bliver skrevet — der står bare
+nul besøg overalt, som om ingen havde været på siden. Det kostede en eftermiddag
+første gang.
+
 ## Tjek at det virker
 
 Ved næste crawl står der i Actions-loggen:

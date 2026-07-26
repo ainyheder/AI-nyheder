@@ -3511,7 +3511,13 @@ def lav_youtube() -> None:
 
 LAESERTAL_FIL = ROOT / "data" / "laesertal.json"
 CF_GRAPHQL = "https://api.cloudflare.com/client/v4/graphql"
-CF_SITE_TAG = "fda17dd7ade34a579f4ec6d615265fa6"   # samme token som i beacon'en
+# Web Analytics' site-tag. Det er IKKE det samme som "token" i beacon-koden på
+# siderne (den er fda17dd7…) - de to er forskellige felter med hver sin værdi,
+# og netop dén forveksling gav nul besøg uden en eneste fejlbesked: kontoen
+# fandtes, godkendelsen virkede, og forespørgslen spurgte bare om et site, der
+# ikke eksisterede. Tag'et står i adressen, når sitet vises i Cloudflare:
+#   dash.cloudflare.com/<konto>/web-analytics/overview?siteTag~in=<DET HER>
+CF_SITE_TAG = "7abf4e75cf4e48bda49ad354e8cd6f27"
 LAESERTAL_DAGE = 7
 
 # Bliver vi fundet i AI-chats? Cloudflare fortæller kun, HVILKEN vært folk kom
