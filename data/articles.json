@@ -1,7 +1,215 @@
 {
-  "opdateret": "2026-07-26T06:47:00.229785+00:00",
-  "antal": 105,
+  "opdateret": "2026-07-26T06:54:22.396504+00:00",
+  "antal": 108,
   "artikler": [
+    {
+      "titel": "Open-weight AI is having its Kubernetes moment",
+      "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+      "resume": "Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 363 # Comments: 283",
+      "dato": "2026-07-25T14:49:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T06:54:22.396504+00:00",
+      "rubrik": "Open-weight AI på vej mod sit Kubernetes-øjeblik",
+      "resume_da": "En tidligere iværksætter ser samme mønster som med Kubernetes: åbne AI-modeller kan blive den nye standard, som hele branchen bygger på.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Hvad minder det om?",
+          "tekst": "Forfatteren stod selv i spidsen for Mesosphere, der byggede på open source-teknologien Mesos. Men da Kubernetes kom med en helt åben platform, rykkede alle udviklere og virksomheder over til den. Det samme sker nu med open-weight AI-modeller, hvor udviklere kan downloade og tilpasse modellerne – uden at skulle vente på en enkelt leverandør."
+        },
+        {
+          "overskrift": "Hvorfor er det vigtigt?",
+          "tekst": "Open-weight-modeller giver virksomheder kontrol over både data og omkostninger. Først handlede det om at køre modellerne selv. Nu bliver modellerne også gode nok til avancerede opgaver som kodning. Kinesiske modeller som **Kimi K3** og **GLM-5.2** klarer sig på niveau med de bedste lukkede modeller, og det får hele økosystemet til at vokse."
+        },
+        {
+          "overskrift": "Hvad bør USA gøre?",
+          "tekst": "I Washington overvejer man at forbyde kinesiske open-weight-modeller. Men forfatteren advarer: Det vil isolere USA fra det økosystem, hvor verdens bedste AI-folk allerede arbejder. I stedet bør amerikanske virksomheder udgive deres egne åbne modeller på licenser, som startups kan bruge. Staten kan også skabe efterspørgsel efter åbne systemer gennem indkøb."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Kinesiske modeller står for **41 %** af alle downloads på Hugging Face det seneste år.",
+        "**GLM-5.2** scorer **62,1 %** på SWE-bench Pro, mens GPT-5.5 får **58,6 %** .",
+        "**Kimi K3** lover at udgive sine vægte den 27. juli – uafhængige tests placerer den på niveau med Opus 4.8 og GPT-5.5.",
+        "Hugging Face har nu over to millioner offentlige modeller.",
+        "Open-weight betyder, at du kan downloade og ændre modellen, men ikke nødvendigvis træningsdata eller -proces.",
+        "Firmaer som NVIDIA, Google og OpenAI har udgivet nogle modeller under åbne licenser, men ikke deres bedste."
+      ],
+      "betydning": "Du får adgang til stadig bedre AI-modeller, du selv kan tilpasse og køre – og det kan ændre magtbalancen mellem store tech-selskaber og almindelige virksomheder.",
+      "pointer": [
+        "Åbne modeller kan blive branchens standard.",
+        "Kinesiske modeller leverer nu topydelse.",
+        "Et forbud mod kinesiske modeller kan skade USA.",
+        "Amerikanske virksomheder bør satse på åbne modeller."
+      ],
+      "billedmotiv": "En bunke kuber (Kubernetes-logoer) stablet op ved siden af en åben bærbar computer med en AI-model, som en hånd rækker ud efter.",
+      "billede": "data/img/6e08697404783a2e.jpg",
+      "side": "artikel/b0b06661b8f45405.html"
+    },
+    {
+      "titel": "The arguments against open source AI are bad",
+      "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+      "resume": "Article URL: https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/ Comments URL: https://news.ycombinator.com/item?id=49024643 Points: 309 # Comments: 213",
+      "dato": "2026-07-23T16:49:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-26T06:54:22.396504+00:00",
+      "rubrik": "Store aktørers argumenter mod open source AI halter",
+      "resume_da": "Kritikere kalder open source AI for farligt, men de glemmer historien. Åbne modeller er svære at stoppe.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvad siger kritikken",
+          "tekst": "En række journalister, politikere og topchefer advarer om, at åbne AI-modeller er en trussel. De kalder det uamerikansk og farligt. Nogle mener, at AI skal kontrolleres af få gatekeepere - helst dem selv. Men argumenterne holder ikke, viser erfaringer fra softwarebranchen."
+        },
+        {
+          "overskrift": "Historien gentager sig",
+          "tekst": "Da kryptering blev opfundet i **1991**, forsøgte USA at forbyde den. Det mislykkedes. Svækkede versioner blev hurtigt standard, og retten afgjorde, at kildekode er ytringsfrihed. Samme mønster vil ske med AI: forsøg på forbud gavner kun udenlandske konkurrenter og svækker amerikanerne."
+        },
+        {
+          "overskrift": "Kinas rolle",
+          "tekst": "Debatten handler ofte om at 'vinde AI-kapløbet' mod Kina. Men software er ikke som solpaneler eller stål. Et åbent kinesisk AI-værktøj forhindrer ikke amerikanske virksomheder i at tilpasse det og sælge deres egen version. Faktisk kan åbne modeller styrke innovation og økonomisk vækst."
+        },
+        {
+          "overskrift": "Sikkerhed og kontrol",
+          "tekst": "Nogle frygter, at fjendtlige aktører kan gemme snyd i åbne AI-modeller. Men det bedste forsvar er netop, at alle kan inspicere koden. Jo flere der kigger, jo hurtigere findes fejl. At begrænse adgangen til værktøjerne gavner kun dem, der vil misbruge dem."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1991",
+          "label": "år, USA forsøgte at forbyde kryptering"
+        }
+      ],
+      "detaljer": [
+        "Open source-software er fundamentet for al kommerciel software, inklusiv AI-modeller.",
+        "USA's forsøg på at forbyde kryptering i 1991 førte til retssag og nederlag.",
+        "Netscape måtte i 1990'erne udgive en svækket version af SSL internationalt.",
+        "Retten afgjorde, at udgivelse af krypteringskildekode er beskyttet ytring.",
+        "Et kinesisk åbent AI-værktøj kan frit justeres til en amerikansk version.",
+        "Åbne modeller gør det lettere at finde og rette sikkerhedshuller."
+      ],
+      "betydning": "Du vil fremover få adgang til flere gratis AI-værktøjer, fordi forbud mod åbne modeller historisk set altid mislykkes.",
+      "pointer": [
+        "Åbne AI-modeller er svære at stoppe.",
+        "USA tabte kampen mod kryptering tidligere.",
+        "Kinesiske modeller kan tilpasses lokalt.",
+        "Flere øjne på koden øger sikkerheden."
+      ],
+      "billedmotiv": "En bunke printplader og netværkskabler stablet op foran en mur med et gammelt 'GODKENDT KRYPT' stempel.",
+      "billede": "data/img/9a151c1c9892dad0.jpg",
+      "side": "artikel/d475976aa2aee8d4.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T06:54:22.396504+00:00",
+      "rubrik": "Ny open source-videoeditor gør AI til makker",
+      "resume_da": "Palmier Pro lader dig og en AI-agent redigere video sammen i tidslinjen – helt gratis og uden login.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Udviklerne bag Palmier Pro har bygget en Mac-videoeditor helt fra bunden i Swift. Ideen er at gøre det lige så let og kraftfuldt som Premiere Pro – men med AI indbygget i arbejdsgangen. Du kan både generere og redigere videoer direkte i tidslinjen."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Appen kan forbindes med AI-værktøjer som Claude, Codex eller Cursor via en MCP-server. Du kan også bruge den indbyggede agent til at samarbejde om et projekt. Avancerede modeller som Seedance, Kling og Nano Banana Pro kan generere video og billeder inde i editoren."
+        },
+        {
+          "overskrift": "Hvad koster det?",
+          "tekst": "Hele videoeditoren og MCP-serveren er open source og gratis. Du behøver ikke oprette en konto. Eneste lukkede del er selve AI-genereringen. Du kan downloade appen med det samme og begynde at eksperimentere med dine egne AI-agentforbindelser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Gratis",
+          "label": "pris for editor og MCP-server"
+        }
+      ],
+      "detaljer": [
+        "Editoren er bygget i Swift og inspireret af Adobe Premiere Pro.",
+        "AI-modeller som Seedance og Kling kører direkte i tidslinjen.",
+        "MCP-serveren kører lokalt på http://127.0.0.1:19789/mcp.",
+        "Du kan forbinde Claude, Codex eller Cursor via MCP.",
+        "Open source-kode dækker editor, MCP-server og agentchat.",
+        "Download kræver ingen login eller betaling.",
+        "Kun selve AI-genereringen er lukket kode."
+      ],
+      "betydning": "Du får en professionel videoeditor, hvor du kan arbejde side om side med en AI – uden at betale en krone eller dele dine data med skyen.",
+      "pointer": [
+        "Gratis Mac-editor med indbygget AI.",
+        "Samarbejd med Claude, Codex eller Cursor.",
+        "Avancerede AI-modeller i tidslinjen.",
+        "Open source – kun AI-generering er lukket."
+      ],
+      "billedmotiv": "En Mac-skærm med en videotidslinje. Til venstre en lille robotarm, der holder et kamera, til højre en chatboble med teksten 'Skab en droneflyvning over byen'.",
+      "billede": "data/img/a1df1f6c071a5b2f.jpg",
+      "side": "artikel/fa7a24d15387e004.html"
+    },
+    {
+      "titel": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "link": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "resume": "Article URL: https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16 Comments URL: https://news.ycombinator.com/item?id=49021597 Points: 267 # Comments: 331",
+      "dato": "2026-07-23T13:51:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T06:54:22.396504+00:00",
+      "rubrik": "AI alene i cockpittet: Ny F-16 fløjet af robot",
+      "resume_da": "USA's forsvarsministerium og flyvevåben har testet en F-16-kampflyvemaskine styret alene af AI. Det åbner for en ny æra uden mennesker i cockpittet.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Testen",
+          "tekst": "DARPA og det amerikanske flyvevåben har med succes fløjet en AI-styret F-16. Flyet gennemførte en række manøvrer helt uden en menneskelig pilot om bord. Det viser, at AI kan overtage komplekse opgaver i luften."
+        },
+        {
+          "overskrift": "Vejen videre",
+          "tekst": "Forsvaret ser potentiale i at lade AI overtage farlige missioner og dermed spare piloter. De første anvendelser bliver formentlig som en co-pilot, der aflaster mennesket, eller i helt automatiserede opgaver som overvågning."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://www.darpa.mil/sites/default/files/styles/2x_large_hero_banner_1920x555/public/gallery/2024-11/news-banner.jpg?itok=87qIS1NV",
+          "tekst": "cSearch our stories for world-changing results and new opportunities to contribute as a program manager, research performer, or transition partner.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "Testflyvningen blev gennemført af DARPA og U.S. Air Force.",
+        "F-16'en blev styret udelukkende af AI uden en pilot om bord.",
+        "Flyet udførte en række forskellige manøvrer under testen.",
+        "Militæret vil bruge AI til at aflaste eller erstatte menneskelige piloter.",
+        "Teknologien kan først bruges som co-pilot eller til overvågningsmissioner."
+      ],
+      "betydning": "Du betaler skat til Forsvaret, som nu investerer milliarder i AI-styrede kampfly. Det betyder færre danske jobs som kampflypilot, men flere stillinger inden for software og robotteknologi.",
+      "pointer": [
+        "AI fløj F-16 uden pilot om bord.",
+        "Testen udført af DARPA og flyvevåbnet.",
+        "Forskellige manøvrer gennemført med succes.",
+        "Forsvaret satser på AI til farlige missioner."
+      ],
+      "billedmotiv": "Et tomt F-16-cockpit med intet sæde, men en skærm, hvor en grøn AI-linje tegner en flyverute over et sort kort.",
+      "billede": "data/img/81638fb59aa553c7.jpg",
+      "side": "artikel/cc744205c493c965.html"
+    },
     {
       "titel": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
       "link": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
@@ -12,8 +220,7 @@
       "foerst_set": "2026-07-26T06:47:00.229785+00:00",
       "rubrik": "Monday.com fyrer 600 – skyder skylden på AI",
       "resume_da": "Arbejdsplatformen Monday.com fyrer en femtedel af medarbejderne og henviser til AI. Det er langt fra en enlig svale.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -32,8 +239,6 @@
           "tekst": "Der bliver dog stadig ansat. AI-virksomheder som Anthropic og OpenAI hyrer så hurtigt, de kan. Og hos Meta rykkede **7.000 medarbejdere** ind i AI-afdelinger, samtidig med at 8.000 blev fyret. IBM tredobler ansættelser af nyuddannede til AI-området. Jobbene forsvinder ikke – de flytter sig."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "20 %",
@@ -48,6 +253,7 @@
           "label": "Meta-flyttet til AI-roller"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Monday.com fyrer godt 600 ud af 3.000 ansatte.",
         "Fyringerne koster selskabet 45-55 millioner dollars i omstrukturering.",
@@ -66,28 +272,9 @@
       ],
       "billedmotiv": "En tom kontorlandskab med 20 farvede Monday.com-tavler slukket på væggen og en ensom robotstøvsuger midt på gulvet.",
       "billede": "data/img/91cd3ea05ffae1ee.jpg",
-      "side": "artikel/cb61b6a2a5da5e6d.html"
-    },
-    {
-      "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
-      "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
-      "resume": "Det startede i 2003 i en garage i Vedbæk. Ingeniøren Fredrik Tuxen havde kvittet sit gode job som udviklingschef for at hoppe med om bord på et iværksætterprojekt om måleudstyr til golf. I dag står han bag milliardvirksomheden Trackman sammen med sine to medstiftere.",
-      "dato": "2026-07-25T12:00:00+02:00",
-      "kilde": "Ingeniøren",
-      "kategori": "Penge & marked",
-      "kun_aktuel": true,
-      "foerst_set": "2026-07-25T19:13:33.011354+00:00",
-      "rubrik": "Trackman blev til milliardforretning fra garage",
-      "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "Ingeniøren",
-          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
-        }
-      ],
-      "navngivet": true
+      "side": "artikel/cb61b6a2a5da5e6d.html"
     },
     {
       "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
@@ -137,9 +324,15 @@
         "Nogle virksomheder har interesse i at holde modellerne lukkede."
       ],
       "billedmotiv": "En stabel af forskellige farvede, åbne bøger med kinesiske tegn på nogle af dem og amerikanske flag på andre, ved siden af en computer med en kodeeditor.",
+      "billede": "data/img/a574e2684651ad46.jpg",
       "kat_ai": true,
       "prio": 6,
-      "billede": "data/img/a574e2684651ad46.jpg",
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
+        }
+      ],
       "side": "artikel/3e70bd1d4df50627.html"
     },
     {
@@ -161,6 +354,27 @@
           "link": "https://ing.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0"
         }
       ]
+    },
+    {
+      "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
+      "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
+      "resume": "Det startede i 2003 i en garage i Vedbæk. Ingeniøren Fredrik Tuxen havde kvittet sit gode job som udviklingschef for at hoppe med om bord på et iværksætterprojekt om måleudstyr til golf. I dag står han bag milliardvirksomheden Trackman sammen med sine to medstiftere.",
+      "dato": "2026-07-25T12:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Penge & marked",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-25T19:13:33.011354+00:00",
+      "rubrik": "Trackman blev til milliardforretning fra garage",
+      "resume_da": "Fredrik Tuxen sagde sit job op i 2003 og udviklede måleudstyr til golf i en garage. I dag er virksomheden Trackman milliarder værd.",
+      "kat_ai": true,
+      "prio": 6,
+      "andre": [
+        {
+          "kilde": "Ingeniøren",
+          "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware"
+        }
+      ],
+      "navngivet": true
     },
     {
       "titel": "OpenAI and Hugging Face partner to address security incident during model evaluation",
@@ -534,7 +748,13 @@
       "rubrik": "Minister kritiseres for Energiø-roderi",
       "resume_da": "Danmarksdemokraterne er vrede på klima- og energiminister Samira Nawa, fordi hun ifølge dem skjulte store budgetproblemer på Energiø Bornholm.",
       "kat_ai": true,
-      "prio": 3
+      "prio": 3,
+      "andre": [
+        {
+          "kilde": "Version2",
+          "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer"
+        }
+      ]
     },
     {
       "titel": "Nato-chef advarer: En drone-tsunami er på vej, og Europa er ikke klar",
@@ -549,21 +769,6 @@
       "resume_da": "En Nato-chef advarer om, at Europa snart kan opleve droner angribe kritisk infrastruktur, og at vi ikke er klar til det.",
       "kat_ai": true,
       "prio": 7
-    },
-    {
-      "titel": "Danskere skal levere vigtig software til den australske hær",
-      "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer",
-      "resume": "Det sker som led i en større modernisering af Australiens forsvar.",
-      "dato": "2026-07-21T11:45:00+02:00",
-      "kilde": "Version2",
-      "kategori": "Penge & marked",
-      "kun_aktuel": true,
-      "foerst_set": "2026-07-25T17:49:55.436275+00:00",
-      "rubrik": "Dansk software til australsk hær",
-      "resume_da": "Danske udviklere skal levere software til Australiens forsvar som del af en større modernisering.",
-      "kat_ai": true,
-      "prio": 5,
-      "navngivet": true
     },
     {
       "titel": "Fortrolige oplysninger om kunders formue og investeringer delt i databrud hos pensionsselskab",
@@ -4313,7 +4518,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et mikroskop med en bunke dollarsedler under objektivet",
+      "billedmotiv": "En petriskål med bakteriekultur og en forstørrelsesglas over en stak pengesedler",
       "side": "artikel/0453af9ffcc0d040.html"
     },
     {
