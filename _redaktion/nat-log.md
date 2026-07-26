@@ -4,6 +4,191 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+> **⚠️ Kort version (kl. 16:28-kørslen) — du er vågen, du pushede et minut før jeg startede.**
+>
+> **0. To punkter klaret, ingen kode ændret.** Begge spurgte "er der et problem
+> her?", og svaret var nej i begge tilfælde. Det vigtigste, jeg fandt, er ikke et
+> af de to punkter, men et **tal til din parkerede beslutning**: skal
+> `articles.json` blive et rigtigt 30-dages-arkiv, vejer forsidens hentning
+> **cirka 7× mere end i dag** — 435–460 kB mod 62 kB, i én blok før der står noget
+> på skærmen. 781 bytes pr. artikel, og de sidste to hele døgn tog 24 og 19 nye
+> ind. Tallet står nu i selve punktet. Indlæsningen er ellers hurtig i dag: 225 kB
+> og 634 ms, skrifterne henter kun 2 af 4 filer, billederne er `lazy`.
+>
+> **1. Forsiden holder på en telefon. Punktet er lukket, og jeg rørte ingen kode.**
+> Jeg fandt en måde at måle det, forrige kørsel opgav: der er stadig ingen browser
+> i sandkassen, men der er en browser på *din* maskine. Forsiden i en 390 px
+> iframe giver en ægte telefon-viewport, fordi media queries i en iframe reagerer
+> på iframens egen bredde. **0 elementer stikker ud, 0 px vandret rul, 0 tekster
+> der flyder ud af deres egen kasse.** Og jeg har set den — den ser pæn ud.
+>
+> **2. Jeg troede et øjeblik, jeg havde fundet en alvorlig fejl. Det havde jeg ikke.**
+> Mine første tal sagde, at YouTube-knappen lå oven på "Forskning"-pillen med 47
+> px, og at et tryk på filteret ville åbne YouTube. **Det var en målefejl hos mig:**
+> `getBoundingClientRect` giver den *uklippede* layoutkasse, så en pille i en
+> vandret rullende beholder ser altid ud som om den overlapper naboen. Jeg
+> hit-testede hele bjælken i skridt af 5 px, og hvert tryk rammer det, det ser ud
+> som. Jeg skriver det her, fordi jeg var tæt på at logge det som en fejl.
+>
+> **3. Kun 4 filer venter på et push — log, kø og panelets to datafiler.**
+> Ingen kode er ændret i denne kørsel.
+>
+> **4. Én ting er din smagsdom, ikke en fejl.** Ved 390 px er der plads til
+> "Nyheder ▾" og 21 px af "Forskning" i topbjælken. Den er tonet ud med en maske,
+> så den *skal* læses som "der er mere — rul". Den er tappbar og virker. Men på
+> skærmen står der et enkelt falmet **"F"**, og om det ser bevidst eller afklippet
+> ud, kan kun du afgøre. Jeg har ikke lagt det i køen.
+
+---
+
+## 2026-07-26 (ekstra kørsel kl. 16:45) · Hvor hurtigt loader forsiden?
+
+**Fandt:** **Intet er vokset sig for stort — men jeg fandt et tal, din parkerede
+beslutning mangler.**
+
+Målt på den levende side med Chrome, med cachen forbigået. GitHub serverer gzip
+(`content-encoding: gzip`, `vary: Accept-Encoding`), så det, der faktisk går over
+tråden, er væsentligt mindre end filerne på disken:
+
+| hentes ved første besøg | på disken | på tråden |
+|---|---|---|
+| `index.html` | 102 kB | **29 kB** |
+| `data/articles.json` | 206 kB | **62 kB** |
+| `data/youtube.json` | 73 kB | **17 kB** |
+| `data/brief.json` | 1 kB | 1 kB |
+| `skrifter.css` | 6 kB | 2 kB |
+| 2 skrifter (woff2) | 113 kB | 113 kB |
+| **i alt** | | **≈ 225 kB** |
+
+Tider: svaret begynder efter **173 ms**, DOM klar efter **408 ms**, alt færdigt
+efter **634 ms**. Det er hurtigt, og det er langt under, hvad en gennemsnitlig
+webside vejer.
+
+To ting er sat rigtigt op, og det er værd at vide, så ingen "retter" dem:
+
+- **Skrifterne henter kun det halve.** Der ligger fire woff2-filer på 260 kB, men
+  browseren hentede **kun to** (113 kB). `skrifter.css` bruger `unicode-range`, og
+  jeg gennemgik hvert enkelt tegn i både `index.html` og alle seks tekstfelter i
+  `articles.json`: **ikke ét** tegn falder i latin-ext-området. De 144 kB
+  latin-ext bliver aldrig hentet af en dansk læser. Rør ikke ved det.
+- **Billederne er `loading="lazy"`.** Ved første indlæsning blev der hentet
+  **1 billede**, ikke 34.
+
+**Gjorde:** **Ingenting.** Punktet spurgte, om noget var vokset sig for stort.
+Svaret er nej, og så er der ikke noget at rette. Tre ting, jeg overvejede og lod
+være med:
+
+1. `youtube.json` (17 kB) hentes ved hver forsidevisning, selvom videostriben
+   ligger langt nede. 17 kB er ikke værd at bygge om for.
+2. **16 kB af `articles.json` er felter, forsiden aldrig læser** — `pointer` (10
+   kB), `noegletal` (4 kB), `kat_ai`, `navngivet`. Efter gzip er det ~5 kB. Ikke
+   værd at dele filen op for.
+3. `index.html` er 102 kB i én fil. Efter gzip 29 kB. Fint.
+
+**Testede:** `content-length` mod udpakket størrelse på tre filer for at bevise, at
+gzip virkelig er slået til (29.469 mod 104.418 bytes; 63.682 mod 210.591; 17.745 mod
+74.462). Ressourcelisten via Performance API på en frisk indlæsning: 10 ressourcer,
+2 skrifter, 1 billede, 4 JSON. Tegn-for-tegn-gennemgang af latin-ext-området i
+`index.html` og i felterne `rubrik`, `resume_da`, `betydning`, `kategori`, `kilde`
+og `titel` på alle 81 artikler.
+
+**Til Torben:** **Det tal, din parkerede beslutning mangler.** Køens øverste punkt
+— om `articles.json` skal blive et rigtigt 30-dages-arkiv — venter på dig, og du
+har fået at vide, at det koster penge i AI-kald. Det koster også vægt på forsiden,
+og det stod ingen steder:
+
+- **Nu:** 81 artikler = 62 kB på tråden. **781 bytes pr. artikel.**
+- **De sidste to hele døgn tog 24 og 19 nye artikler ind.** Et rigtigt
+  30-dages-arkiv bliver altså **omkring 570–600 artikler**, ikke 109.
+- **Det giver 435–460 kB på tråden — cirka syv gange mere end i dag**, hentet i
+  én blok, før der står noget som helst på skærmen.
+
+Pas på tallet 3,8/dag, hvis du selv regner efter: kun artikler, der **stadig** er i
+listen, har et `foerst_set` at tælle på, så alle dage ældre end et par døgn ser
+kunstigt tomme ud. De 19–24 er de rigtige.
+
+Det gør ikke beslutningen forkert — men hvis arkivet skal vokse så meget, bør
+forsiden formentlig hente en let liste og først resten på klik, i stedet for hele
+arkivet på forhånd. Det er en større ombygning end selve arkivet, og det hører med
+i prisen.
+
+---
+
+## 2026-07-26 (ekstra kørsel kl. 16:28) · Forsiden på en telefon
+
+**Fandt:** Punktet kunne lukkes, og svaret er **ja, den holder**. Forrige kørsel
+skrev, at det ikke kunne måles herfra, fordi der ikke er nogen browser i
+sandkassen. Det er stadig rigtigt — men det er den forkerte kasse at lede i:
+Chrome kører på Torbens maskine. Jeg lagde forsiden i en **390 px iframe** mod
+det rigtige, live `ainyheder.com`. Media queries i en iframe reagerer på iframens
+egen bredde, så det er en ægte telefon-viewport og ikke et gæt.
+
+Ved præcis 390 px viewport:
+
+- **0** elementer bredere end skærmen, **0** der stikker ud over kanten.
+- **0 px** vandret rul (`scrollWidth` = `clientWidth` = 390).
+- **0** elementer hvor teksten flyder ud af sin egen kasse.
+- Målt på **hele** siden — 9.274 px høj, alle elementer under `body`.
+
+Forrige kørsels to bekymringer holdt ikke:
+
+1. **Det 35-tegns ubrydelige token i data er væk.** Alle **81 af 81** artikler har
+   nu `resume_da`, så kæden `a.resume_da || a.resume` falder ingen steder tilbage
+   på den rå engelske tekst. Det er dér, URL'erne bor — den længste i `resume` er
+   på 64 tegn. Bemærk at tilbagefaldet **stadig findes** i koden; det er data, der
+   dækker det lige nu, ikke en spærring.
+2. **Margenen er tykkere end frygtet.** Jeg sprøjtede tokens på 26, 34, 40, 50,
+   64, 80 og 138 tegn ind i hero-overskriften, kortoverskriften, kortets brødtekst,
+   kortets "Hvad betyder det for dig", hero-kickeren og overbliksliste-punktet.
+   **0 px udflydning i hvert enkelt tilfælde**, også ved 138 tegn. Kun **ét**
+   element gav efter: `.mikro-meta` (metalinjen i den kompakte liste) — 3 px ved
+   64 tegn, 84 px ved 80, 417 px ved 138.
+
+**Gjorde:** **Ingenting. Bevidst.** `.mikro-meta` viser kun `kategori`,
+`kildeNavn(kilde)`, et formateret tidsstempel og "+N kilder". Længste ubrydelige
+token i de felter i hele `articles.json` er **11 tegn** (kategori) og **10 tegn**
+(kilde) — og begge kommer fra lukkede lister: seks faste kategorinavne og din egen
+kuraterede feedliste. Der skal 80 tegn til, før det kan mærkes. En læser kan ikke
+komme derhen, og målestokken siger udtrykkeligt, at teknisk gæld en læser ikke kan
+mærke, ikke er et problem. Så jeg lod CSS'en være i stedet for at lægge en linje
+ind på et problem, der ikke findes.
+
+**Testede:** Hit-test af hele topbjælken ved y=33 i skridt af 5 px fra x=120 til
+x=385: `Nyheder` 140–205, kategoripilen 210–230, `Forskning` 250–270, YouTube
+280–320, indstillinger 335–375 — **hvert tryk rammer det, det ser ud som**, ingen
+forkerte destinationer. Set med egne øjne på fire steder ned gennem siden: toppen
+med Dagens overblik, dagens historie, den kompakte liste og bunden med
+tilmeldingsformularen (formular 26→364, felt 70→320, knap 147→243 — alt inden for
+390). Samlet prøve bagefter: `ast.parse` på `crawler.py` OK, ingen
+dobbeltdefinerede konstanter eller funktioner på modulniveau, og forsiden i jsdom
+mod de rigtige datafiler: **11 påstande, 0 fejl** — ingen JS-fejl, 34 kort tegnet,
+Dagens overblik vist, et klik åbner læservisningen, ingen tomme overskrifter,
+ingen `undefined`/`NaN` i teksten, og 0 døde af 76 interne links.
+
+**Til Torben:** Tre ting.
+
+**Metoden virker og bør genbruges.** Køen har flere punkter, der er skrevet som
+"kan ikke måles herfra" — tilgængelighed, forsiden uden JavaScript, en tilfældig
+artikelside. Det er de samme punkter, der nu *kan* måles, når du er logget ind i
+Chrome. Fremtidige kørsler bør ikke skrive "ingen browser i sandkassen" og gå
+videre.
+
+**Jeg var tæt på at logge en fejl, der ikke fandtes.** Mine første tal pegede på,
+at YouTube-knappen lå 47 px oven på "Forskning"-pillen. Det var en målefejl:
+`getBoundingClientRect` returnerer layoutkassen uden klipning, så alt i en
+`overflow-x: auto`-beholder ser overlappende ud. Hit-testen afviste det. Værd at
+huske næste gang noget ser i stykker ud på papiret.
+
+**Én smagsdom er din.** Ved 390 px er der 144 px til filterrækken. "Nyheder ▾"
+tager 118, så der er 21 px tilbage til "Forskning" — læseren ser et falmet "F".
+Masken i CSS'en er lagt der med vilje, netop for at en afklippet pille skal læses
+som "der er mere", og den ruller og virker. Men det er et enkelt bogstav, og om
+det ser bevidst eller uafsluttet ud, er ikke noget jeg kan måle. Jeg har **ikke**
+lagt det i køen — hvis du synes det skal rettes, skriv det ind, så tager en senere
+kørsel det.
+
+---
+
 > **⚠️ Du er sandsynligvis vågen, så det korte først (kl. 15:32-kørslen).**
 >
 > **1. 15 filer venter på et push — 11 af dem er selve rettelsen.**
@@ -1556,6 +1741,23 @@ som crawleren selv ville skrive. Samme måling bekræftede, at køens latente
 canonical-punkt stadig er på **0**. En uafhængig gennemgang læste mit arbejde
 bagefter; den fandt ingen fejl i de 11 filer, men fem i min egen log — alle rettet
 i posten ovenfor.
+
+**Ekstra kørsel 16:28–16:45:** klarede **2 punkter** mere — forsiden på en telefon
+(som forrige kørsel måtte lade stå åbent) og forsidens indlæsningstid. Køen er ikke
+omprioriteret; det hører til hovedkørslen. **Ingen kode ændret i nogen af dem:**
+begge spørgsmål havde svaret "det er i orden". Indlæsningen er 225 kB på tråden og
+634 ms i alt; skrifterne henter kun 2 af 4 filer, og billederne er `lazy`. Men
+målingen gav ét tal, det parkerede arkiv-punkt manglede: **et rigtigt
+30-dages-arkiv vejer cirka 7× det nuværende** (781 B pr. artikel, 19–24 nye om
+dagen), og det er skrevet ind i punktet. Om telefonen: svaret var, at siden holder. Ved præcis 390 px
+er der 0 elementer der stikker ud, 0 px vandret rul og 0 tekster der flyder ud af
+deres kasse, og hvert tryk i topbjælken rammer det, det ser ud som. Forrige kørsels
+to bekymringer holdt ikke: det ubrydelige token er ude af data (81 af 81 artikler
+har `resume_da`), og en stress-prøve med tokens op til 138 tegn flyttede ingenting
+noget sted — kun `.mikro-meta` gav efter, og de felter kan højst indeholde 11 tegn.
+Nyt herfra: **det kan måles, når du er logget ind i Chrome** — en 390 px iframe
+giver en ægte telefon-viewport. Flere "kan ikke måles herfra"-punkter i køen er
+dermed åbne igen. 11 påstande på forsiden i jsdom, alle grønne.
 
 > **To tal nedenfor passer ikke, og jeg har ikke rettet dem.** De står i sidste
 > kørsels regnskab, og en ekstra kørsel skriver ikke et regnskab om. Det rigtige,

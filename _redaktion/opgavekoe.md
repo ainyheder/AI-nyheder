@@ -41,26 +41,14 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
       kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
       det er afklaret. *Punkt 4 og 10.*
-
-- [ ] **Forsiden på en telefon.** Hierarkiet er bygget og testet på bred skærm.
-      Hvordan holder hero + fire kort + kompakt liste på 390 px? *Punkt 4.*
-      **Halvt undersøgt 26.07 kl. 15:45 — kan ikke lukkes herfra.** Der er ingen
-      browser i sandkassen (hverken Chromium, Puppeteer eller Playwright), og
-      jsdom beregner ikke layout, så det kan ikke *måles*, om noget flyder ud.
-      Statisk gennemgang af kaskaden ved præcis 390 px (13 media queries, 345
-      selektorer) udelukker det, der mekanisk skal sprænge: ingen faste bredder
-      over 390 px, alle fem grids falder til én kolonne (største spor 340 px mod
-      358 px indhold), læsevisningens to spalter slår om ved 820 px, `viewport`
-      er rigtig, `min-width: 0` står 10 steder. De længste rigtige ord passer
-      også — 31 tegn mod cirka 34 der er plads til. **Mangler: at nogen ser den
-      på en telefon.** Bemærk til hovedkørslen: der står 0 `overflow-wrap` og 0
-      `word-break` i hele stilarket, så margenen er tynd — og der ligger allerede
-      et **35-tegns** ubrydeligt token i data (en rå YouTube-URL i det uoversatte
-      `resume`-felt på "Ny gratis AI-videoredigering til din Mac"), som kun holdes
-      væk fra skærmen af, at `resume_da` findes på netop den artikel.
-
-- [ ] **Hvor hurtigt loader forsiden?** Mål størrelsen på `data/articles.json`
-      og billederne. Er der noget, der er vokset sig for stort? *Punkt 4.*
+      **Vægten er målt 26.07 kl. 16:45 og hører med i prisen:** forsiden henter
+      hele `articles.json` i én blok, og den koster **781 bytes pr. artikel på
+      tråden** (81 artikler = 62 kB gzippet). De sidste to hele døgn tog **24 og
+      19** nye artikler ind, så et rigtigt 30-dages-arkiv bliver **~570–600
+      artikler = 435–460 kB, cirka 7× mere end i dag** — hentet i én blok, før der
+      står noget som helst på skærmen. Skal arkivet vokse så meget, bør forsiden
+      formentlig hente en let liste og først resten på klik. Det er en større
+      ombygning end arkivet selv, og den bør regnes med i beslutningen.
 
 - [ ] **Tilgængelighed.** Kan man bruge forsiden med tastatur alene? Er
       kontrasten god nok til svagtseende? (Alt-tekst er klaret 25.07.)
@@ -162,6 +150,40 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 ---
 
 ## Klaret
+
+- [x] **Hvor hurtigt loader forsiden?** *(26.07.2026, ekstra kørsel kl. 16:45)*
+      **Intet er vokset sig for stort.** Målt på den levende side med cachen
+      forbigået: GitHub serverer gzip, så første besøg henter **ca. 225 kB på
+      tråden** — `index.html` 29 kB (102 på disken), `articles.json` 62 kB (206 på
+      disken), `youtube.json` 17 kB, `brief.json` 1 kB, `skrifter.css` 2 kB og 113
+      kB skrifter. Svar efter **173 ms**, DOM klar efter **408 ms**, færdig efter
+      **634 ms**. To ting er sat rigtigt op og må ikke "rettes": `unicode-range` i
+      `skrifter.css` gør, at browseren kun henter **2 af 4** skriftfiler — ikke ét
+      tegn i `index.html` eller i seks tekstfelter på alle 81 artikler falder i
+      latin-ext, så de 144 kB hentes aldrig — og billederne er `loading="lazy"`,
+      så første indlæsning henter **1** billede, ikke 34. Ingenting ændret. **Men
+      målingen gav et tal, det parkerede arkiv-punkt manglede:** 781 bytes pr.
+      artikel på tråden, og de sidste to hele døgn tog 24 og 19 nye ind, så et
+      rigtigt 30-dages-arkiv bliver ~570–600 artikler = **435–460 kB, cirka 7×
+      mere end i dag**, hentet i én blok før der står noget på skærmen. Se loggen.
+
+- [x] **Forsiden på en telefon.** *(26.07.2026, ekstra kørsel kl. 16:28)* **Den
+      holder — ingen kode ændret.** Forrige kørsel skrev, at det ikke kunne måles,
+      fordi der ikke er nogen browser i sandkassen. Det er stadig sandt, men den
+      forkerte kasse: Chrome kører på Torbens maskine. Forsiden i en **390 px
+      iframe** mod live-siden giver en ægte telefon-viewport, fordi media queries i
+      en iframe reagerer på iframens egen bredde. Målt på hele siden (9.274 px):
+      **0** elementer bredere end skærmen, **0** der stikker ud, **0 px** vandret
+      rul, **0** tekster der flyder ud af deres egen kasse. Hit-test af topbjælken i
+      skridt af 5 px: hvert tryk rammer det, det ser ud som. Begge bekymringer i det
+      gamle punkt faldt: det 35-tegns token er ude af data (**81 af 81** artikler
+      har `resume_da`, så `resume`-tilbagefaldet fyrer ingen steder), og en
+      stress-prøve med tokens på 26–138 tegn i seks tekstfelter gav **0 px**
+      udflydning overalt undtagen `.mikro-meta` — og de felter kan højst rumme 11
+      tegn, fra lukkede lister. Ingen CSS lagt ind: målestokken siger, at teknisk
+      gæld en læser ikke kan mærke, ikke er et problem. 11 påstande på forsiden i
+      jsdom, alle grønne. **Til hovedkørslen: metoden kan genbruges** — flere punkter
+      i køen er lukket med "kan ikke måles herfra", og det gælder ikke længere.
 
 - [x] **11 frosne artikelsider havde brudt billede igen.** *(26.07.2026, ekstra
       kørsel kl. 15:32)* Punktet ventede på Torbens push, og det kom kl. 15:30 —
