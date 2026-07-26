@@ -276,7 +276,7 @@ a.pill { text-decoration: none; display: inline-block; }
   --ov-kant: rgba(255,255,255,.09);
   --ov-tekst-svag: #a8a29a;
   background: var(--blaek); color: var(--bg);
-  border-radius: 26px; padding: 34px 36px 26px; margin: 0 0 26px;
+  border-radius: 26px; padding: 25px 30px 19px; margin: 0 0 20px;
   position: relative; overflow: hidden;
   box-shadow: 0 2px 4px rgba(25,23,20,.08), 0 18px 46px rgba(25,23,20,.18);
 }
@@ -289,37 +289,37 @@ a.pill { text-decoration: none; display: inline-block; }
 #dagensBrief > * { position: relative; }
 
 /* --- Hovedet --- */
-.ov-top { display: flex; align-items: flex-start; gap: 22px; margin-bottom: 26px; }
+.ov-top { display: flex; align-items: flex-start; gap: 22px; margin-bottom: 17px; }
 .ov-kicker {
   display: inline-flex; align-items: center; gap: 9px;
   font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase;
-  color: var(--ov-lilla); margin-bottom: 12px;
+  color: var(--ov-lilla); margin-bottom: 8px;
 }
 .ov-kicker::before { content: ""; width: 7px; height: 7px; border-radius: 50%;
   background: var(--accent); box-shadow: 0 0 0 4px rgba(91,75,240,.22); }
 .ov-titel {
   font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(34px, 4.4vw, 54px); line-height: 1.02; letter-spacing: -.03em;
+  font-size: clamp(30px, 3.3vw, 42px); line-height: 1.02; letter-spacing: -.03em;
   color: var(--bg);
 }
-.ov-under { font-size: 14.5px; color: var(--ov-tekst-svag); margin-top: 10px; max-width: 54ch; }
+.ov-under { font-size: 13.5px; color: var(--ov-tekst-svag); margin-top: 7px; max-width: 54ch; }
 .ov-dato {
-  margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 11px;
-  background: var(--ov-flade); border: 1px solid var(--ov-kant); border-radius: 14px;
-  padding: 12px 18px; font-size: 13.5px; font-weight: 600; color: #e8e4da;
+  margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 10px;
+  background: var(--ov-flade); border: 1px solid var(--ov-kant); border-radius: 13px;
+  padding: 10px 16px; font-size: 13px; font-weight: 600; color: #e8e4da;
   text-transform: capitalize; white-space: nowrap;
 }
-.ov-dato span { font-size: 21px; line-height: 1; }
+.ov-dato span { font-size: 19px; line-height: 1; }
 
 /* --- Nettet: ét stort kort + fire rækker --- */
-.ov-net { display: grid; grid-template-columns: minmax(0,1fr); gap: 16px; }
-.ov-liste { display: grid; gap: 16px; }
-/* Kun i to spalter: 1fr pr. række, så de fire rækker deler højden med det
-   store kort og spalterne flugter forneden. I én spalte er der ingen nabo at
-   flugte med - der ville lige høje rækker bare koste 350px ekstra rulning. */
+.ov-net { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; }
+.ov-liste { display: grid; gap: 12px; }
+/* Kun i to spalter: rækkerne får deres naturlige højde, og overskuddet lægges
+   ud i mellemrummene, så spalterne flugter forneden. Lige høje rækker (1fr)
+   ville strække alle fire til den længste rubrik og koste ~80px dødt felt. */
 @media (min-width: 1000px) {
   .ov-net { grid-template-columns: minmax(0,1fr) minmax(0,1.04fr); }
-  .ov-liste { grid-auto-rows: 1fr; }
+  .ov-liste { align-content: space-between; }
 }
 
 /* Fælles for begge korttyper */
@@ -346,7 +346,7 @@ a.pill { text-decoration: none; display: inline-block; }
 
 /* --- Det store kort --- */
 .ov-hero { display: flex; flex-direction: column; }
-.ov-hero-art { position: relative; aspect-ratio: 16 / 10; overflow: hidden; flex: none; }
+.ov-hero-art { position: relative; height: 250px; overflow: hidden; flex: none; }
 .ov-hero-art img, .ov-hero-art svg {
   position: absolute; inset: 0; width: 100%; height: 100%;
   object-fit: cover; transition: transform .5s ease;
@@ -359,22 +359,31 @@ a.pill { text-decoration: none; display: inline-block; }
   padding: 6px 11px; font-size: 10px; font-weight: 800;
   letter-spacing: .1em; text-transform: uppercase; color: #f0eee8;
 }
-.ov-hero-tekst { padding: 22px 24px 20px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.ov-hero-tekst { padding: 17px 21px 16px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
 .ov-hero-tekst h3 {
   font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(21px, 2.1vw, 29px); line-height: 1.14; letter-spacing: -.02em; color: var(--bg);
+  font-size: clamp(20px, 1.85vw, 26px); line-height: 1.14; letter-spacing: -.02em; color: var(--bg);
 }
-.ov-hero-tekst p { font-size: 14px; line-height: 1.55; color: var(--ov-tekst-svag); }
-.ov-hero-bund { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: auto; padding-top: 6px; }
+.ov-hero-tekst p { font-size: 13.5px; line-height: 1.5; color: var(--ov-tekst-svag); }
+.ov-hero-bund { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: auto; padding-top: 3px; }
 .ov-knap {
   margin-left: auto; display: inline-flex; align-items: center; gap: 9px;
   background: var(--accent); color: #fff; border-radius: 11px;
-  padding: 12px 20px; font-size: 14px; font-weight: 700; white-space: nowrap;
+  padding: 10px 18px; font-size: 13.5px; font-weight: 700; white-space: nowrap;
   transition: background .18s;
 }
 .ov-hero[data-link]:hover .ov-knap { background: #6d5efb; }
 .ov-knap::after { content: "→"; transition: transform .18s; }
 .ov-hero[data-link]:hover .ov-knap::after { transform: translateX(4px); }
+
+/* I to spalter sættes højden af de fire rækker ved siden af. Billedet - ikke
+   teksten - skal æde den overskydende plads, ellers står der et tomt mørkt
+   felt mellem manchet og knap. Skal stå EFTER reglerne ovenfor: media queries
+   giver ikke ekstra specificitet, så det er kilderækkefølgen, der afgør det. */
+@media (min-width: 1000px) {
+  .ov-hero-art { flex: 1 1 auto; height: auto; min-height: 250px; }
+  .ov-hero-tekst { flex: none; }
+}
 
 /* --- De fire rækker --- */
 /* Nummeret ligger uden for .ov-rk-art, så det overlever, når miniaturen
@@ -388,7 +397,7 @@ a.pill { text-decoration: none; display: inline-block; }
 }
 .ov-rk[data-link]:hover .ov-rk-art img, .ov-rk[data-link]:hover .ov-rk-art svg { transform: scale(1.05); }
 .ov-rk .ov-nr { left: 11px; top: 11px; min-width: 26px; height: 26px; font-size: 14px; border-radius: 8px; }
-.ov-rk-tekst { padding: 15px 0; min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+.ov-rk-tekst { padding: 12px 0; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .ov-rk-kat { font-size: 10.5px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: var(--ov-lilla); }
 .ov-rk-tekst h3 { font-size: 16px; font-weight: 700; line-height: 1.32; letter-spacing: -.01em; color: #f0eee8; }
 .ov-pil { flex: none; font-size: 19px; color: var(--ov-lilla); transition: transform .18s; }
@@ -400,11 +409,11 @@ a.pill { text-decoration: none; display: inline-block; }
 .ov-meta .ov-ur { opacity: .75; }
 
 /* --- Foden --- */
-.ov-bund { display: flex; justify-content: center; margin-top: 22px; }
+.ov-bund { display: flex; justify-content: center; margin-top: 14px; }
 .ov-tidligere {
   display: inline-flex; align-items: center; gap: 9px;
   background: var(--ov-flade); border: 1px solid var(--ov-kant); border-radius: 12px;
-  padding: 12px 22px; font-size: 13.5px; font-weight: 600; color: #d8d4cb;
+  padding: 10px 19px; font-size: 13px; font-weight: 600; color: #d8d4cb;
   text-decoration: none; transition: border-color .18s, color .18s, background .18s;
 }
 .ov-tidligere span { font-size: 15px; line-height: 1; }
@@ -752,11 +761,6 @@ a.pill { text-decoration: none; display: inline-block; }
    Boksen må ikke æde hele mobilskærmen: toppen af nyhederne skal stikke op
    i første skærm. Derfor smallere billeder, kortere metalinje og ingen
    manchet på det store kort. */
-/* I én spalte er der ingen nabospalte at fylde ud - så ville 16:10 gøre
-   topbilledet 775px højt på en tablet. Fast højde holder det i skak. */
-@media (max-width: 999px) {
-  .ov-hero-art { aspect-ratio: auto; height: 250px; }
-}
 @media (max-width: 860px) {
   .ov-top { flex-direction: column; gap: 14px; }
   .ov-dato { margin-left: 0; padding: 9px 14px; font-size: 12.5px; }
@@ -1841,7 +1845,11 @@ indhold.addEventListener("click", () => tip.classList.remove("synlig"), true);
    stand-in, så kortet stadig får generativ kunst i stedet for et hul. */
 function overblikStof(p) {
   const a = p.link ? artikler.find(x => x.link === p.link) : null;
-  return a || { titel: p.tekst, rubrik: p.tekst, kilde: "", kategori: "Andet" };
+  // Uden kategori: hellere ingen etiket end en forkert. Crawleren beskærer
+  // articles.json i løbet af dagen, så et brief-punkt fra i morges kan sagtens
+  // pege på en artikel, der ikke er der længere - og "Andet" ville så stå som
+  // kategori på en historie, der rettelig er fx Lanceringer.
+  return a || { titel: p.tekst, rubrik: p.tekst, kilde: "", kategori: "" };
 }
 
 function overblikMeta(a) {
