@@ -1208,14 +1208,36 @@ function rng(seed) {
   };
 }
 
+// Billedstien i articles.json er relativ ("data/img/…"), og den MÅ ikke bruges
+// som den er. Læseren skriver artiklens rigtige sti i adresselinjen
+// (/artikel/….html), og efter det pushState opløser browseren en relativ sti
+// mod /artikel/ - så billedet hentes fra /artikel/data/img/… og falder til 404.
+// Målt 27.07: hvert eneste billede i "Næste historie" og "Læs også" var brudt,
+// og det lignede, at der slet ikke blev lavet billeder til artiklerne.
+// En rod-absolut sti er upåvirket af, hvad der står i adresselinjen.
+function billedSti(s) {
+  s = String(s || "");
+  return /^(?:https?:)?\/\//.test(s) ? s : "/" + s.replace(/^\/+/, "");
+}
+
+// Kaldes fra img.onerror. Er filen væk - fx ryddet op på serveren, mens
+// articles.json stadig peger på den - falder kortet tilbage på den tegnede
+// grafik i stedet for at stå med et brudt billedikon.
+function kunstFald(img, id) {
+  const sti = new URL(img.getAttribute("src"), location.origin).pathname;
+  const a = artikler.find(x => x.billede && billedSti(x.billede) === sti);
+  img.outerHTML = a ? kunst(a, id) : "";
+}
+
 function visuel(a, id) {
   // billedmotiv er art director-beskrivelsen af netop den scene, billedet
   // viser - altså den bedste alt-tekst vi har. Uden den er kortets billede
   // usynligt for skærmlæsere og for Google Billeder.
   if (a.billede) {
     const alt = esc(String(a.billedmotiv || a.rubrik || a.titel || "").slice(0, 180));
-    return `<img src="${esc(a.billede)}" alt="${alt}" loading="lazy"
-    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">`;
+    return `<img src="${esc(billedSti(a.billede))}" alt="${alt}" loading="lazy"
+    style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"
+    onerror="kunstFald(this,'${String(id).replace(/[^\w-]/g, "")}')">`;
   }
   return kunst(a, id);
 }
