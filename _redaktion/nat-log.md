@@ -4,6 +4,83 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-07-26 (kl. 23:01-kørslen) · Sprang over — du arbejdede undervejs
+
+**Jeg har ikke rettet noget i nat.** Jeg startede kl. 23:01, hvor der ikke var
+rørt en kodefil i over en time. Da jeg var færdig med at måle kl. 23:40, var
+`index.html` (23:29), `crawler.py` (23:27), `kontrolpanel.html` (23:27) og denne
+log (23:39) alle skrevet igen, og reflog viser to commits fra dig plus et pull.
+Du sad altså ved maskinen — og præcis i de to filer, min rettelse skulle ligge i.
+Instruksen siger stop i det tilfælde, og jeg stoppede. Køen løber ingen steder.
+
+**Men målingen er lavet, og den fandt noget. Det er værd at læse.**
+
+**Fandt:** Køens punkt *"Tjek at alle interne links virker"* har svaret: de
+statiske links er i orden — **2.861 interne referencer på 185 sider peger alle på
+en fil, der findes.** Sitemaps (30 + 53 + 41 URL'er), `manifest.json`, `llms.txt`,
+`sw.js` og `feed.xml`: nul døde. De 15 "døde links", min første måling gav, var
+alle min egen parser, der læste JavaScript-skabeloner (`${esc(a.link)}`) som
+adresser, og de to "døde fragmenter" `#udgiver` / `#hjemmeside` er JSON-LD-id'er,
+ikke links. Alt det er altså rent.
+
+**Ét sted er det ikke.** `uge.html` — ugens overblik — har fem historier, og
+**alle fem links er døde for læseren lige nu.** De peger på
+`https://ainyheder.com/#a=<kildens URL>`, og forsidens router slår artiklen op i
+`articles.json`:
+
+```js
+const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
+if (delt) aabnLaeser(delt, true);      // ← intet else
+```
+
+Er artiklen ikke i listen, sker der **ingenting**. Læseren klikker "Læs hele
+historien →", havner på forsiden, og ingen artikel åbner. Ingen fejl, ingen
+besked. `uge.json` er fra 22. juli — fire dage gammel — og 0 af 5 historier er
+tilbage i `articles.json`. Kun 1 af de 5 har overhovedet en artikelside på
+disken, så det er ikke et link, der kan omdirigeres; historierne er væk.
+
+**Det er samme årsag som køens arkiv-punkt** — `articles.json` bygges forfra af
+feedene, så en artikel lever dage, ikke 30 — men det er en *anden* konsekvens end
+den, der står i køen, og den kan rettes uden at afklare arkiv-spørgsmålet.
+
+**Og det rammer bredere end ugesiden.** Samme `#a=`-form bruges tre steder mere i
+`crawler.py`: `feed.xml` (linje 1594), ugesiden (1660) og **det ugentlige
+nyhedsbrev til abonnenterne** (1827, `_send_nyhedsbrev`). Dertil forsidens egne
+deleknapper (`index.html` 1610 og 1685). Feedet er friskt, når det skrives, så
+det måler 0 døde — men hver mail, du sender, og hvert link en læser deler på
+Facebook, holder op med at virke inden for få dage. Kommentaren i koden siger
+*"Gamle delte links bruger stadig #a=… De skal blive ved med at virke."* Det gør
+de ikke.
+
+**Gjorde:** Intet i `index.html`, `crawler.py` eller `uge.html` — du var i to af
+dem. Jeg har heller ikke skrevet punktet ind i `opgavekoe.md`, fordi du redigerer
+køen gennem kontrolpanelet, og det var også rørt 23:27. **Næste kørsel skal lægge
+det i køen.** Jeg ryddede én ting: `.git/index.lock` (0 bytes, lagt af mit eget
+`git status`) — den ville have blokeret dit næste commit med *"Unable to create
+index.lock: File exists"*. Der ligger ingen låse nu.
+
+**Testede:** Kun målt, intet ændret. 185 HTML-filer parset (33 rod, 111 artikel,
+41 video), 3.583 referencer i alt, hvoraf 2.861 interne og 722 eksterne til 48
+domæner. Fundet er verificeret mod dine filer *efter* din 23:29-ændring — routeren
+har stadig ingen `else`, og de fem links er stadig døde.
+
+**Til Torben:**
+
+1. **Den mindste rettelse er ét sted, og den fikser alle fem kanaler på én gang:**
+   giv routeren et `else`. Den har allerede kildens URL i hånden — `m[1]` *er*
+   kildelinket — så den kan sige "Den her historie er ikke længere på forsiden"
+   og tilbyde et link videre til kilden. Ti linjer i `index.html`, og så virker
+   ugesiden, nyhedsbrevet, feedet og hvert delt link fra i går.
+2. **`natsession.md`, linje 78 — fjerde gang nu.** Der står `git status --short`,
+   og det er den kommando, der lægger `.git/index.lock` og spærrer dine commits.
+   `git --no-optional-locks status --short` gør det samme uden at låse; jeg brugte
+   den resten af natten, og den efterlod ingenting. Én ord-rettelse i filen.
+3. **Er du stadig i gang, når kl. 03-kørslen starter, springer den også over.**
+   Vil du have punktet lavet i nat, så luk filerne — eller tryk **Kør nu**, når du
+   er færdig, og skriv gerne i køen, at routeren er min.
+
+---
+
 > **⚠️ Kort version (kl. 17:05-kørslen) — du er vågen, du pushede ti minutter før jeg startede.**
 >
 > **0. Alt er pushet.** `git status` var helt ren, da jeg startede — der ligger
@@ -50,6 +127,12 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 > "Unable to create index.lock: File exists". Det er tredje gang i dag, den
 > dukker op, så den er værd at kende: ligger den der, og kører ingen git-proces,
 > kan den slettes uden risiko. `git status` svarer normalt igen.
+
+---
+
+## 2026-07-26 (kl. 23:41) · Sprang over — 23:00-kørslen kører fortsat
+
+**Sprang over:** Låsen `_redaktion/.nat-koerer` var 39 minutter gammel (grænsen er 3 timer), og `index.html` (23:29), `crawler.py` og `kontrolpanel.html` (23:27) var rørt inden for 12 minutter — 23:00-kørslen arbejder stadig. Det er anden overspringning i træk (23:38-kørslen ramte det samme). Jeg rørte ingen projektfiler, kørte ikke `git status` (den efterlader `.git/index.lock`, som har generet dig fire gange i dag), og lod låsen ligge med vilje, så den kørende session beholder sin egen. Køen er urørt, og der er allerede et regnskab for i dag — 23:00-kørslen skriver panelet, når den er færdig.
 
 ---
 

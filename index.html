@@ -1026,6 +1026,15 @@ a.pill.yt-pill:hover svg { fill: var(--yt-roed); }
   color: var(--blaek); border-radius: var(--radius);
   padding: 14px 20px; font-size: 13.5px; margin-bottom: 26px;
 }
+/* Vises kun, når nogen er kommet ind ad et #a=-link til en historie, der er
+   faldet af forsiden — fra ugesiden, nyhedsbrevet, feedet eller et delt link. */
+.vaek-besked {
+  background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--blaek); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 14.5px; line-height: 1.55; margin-bottom: 26px;
+}
+.vaek-besked strong { display: block; margin-bottom: 3px; font-size: 15.5px; }
+.vaek-besked a { color: var(--accent); font-weight: 600; }
 footer {
   border-top: 1px solid var(--linje); padding: 34px 26px 30px; text-align: center;
   font-size: 13px; color: var(--blaek-svag);
@@ -1116,6 +1125,7 @@ footer a { color: var(--accent); }
 </div>
 
 <main class="wrap" id="hovedindhold" tabindex="-1">
+  <div class="vaek-besked" id="vaekBesked" role="status" hidden></div>
   <div id="dagensBrief" hidden></div>
   <div id="indhold"><div class="tom">Henter nyheder …</div></div>
 </main>
@@ -1686,6 +1696,51 @@ function laeserAdresse(a, erstat) {
   const stand = { artikel: a.side || null, link: a.link, start: !!erstat };
   if (erstat) history.replaceState(stand, "", url);
   else history.pushState(stand, "", url);
+}
+
+// ----- Delte #a=-links ------------------------------------------------------
+// Et #a=-link peger på KILDENS adresse, ikke på en side hos os, og routeren
+// slog den op i articles.json. Men articles.json bygges forfra af feedene hver
+// kørsel, så en historie lever dage — ikke 30. Fandt opslaget ingenting, skete
+// der før INGENTING: læseren klikkede "Læs hele historien →" i ugesiden eller i
+// nyhedsbrevet, landede på forsiden, og ingen artikel åbnede. Ingen fejl, ingen
+// besked. Målt 27.07: 5 af 5 links på uge.html var døde på præcis den måde.
+// Samme form bruges i feed.xml, i det ugentlige nyhedsbrev og i hvert link, en
+// læser har delt, så det er ét hul med fire udgange.
+function aabnDeltLink(raa) {
+  let kilde;
+  try { kilde = decodeURIComponent(raa); } catch (e) { kilde = raa; }   // %-vrøvl vælter ikke siden
+
+  const delt = artikler.find(x => x.link === kilde);
+  if (delt) { aabnLaeser(delt, true); return; }
+
+  // Historien kan stadig være her under en anden kilde: dubletter samles til
+  // én, og vinderen kan skifte, når en fyldigere udgave dukker op. Så et link,
+  // der var hovedkilden i går, står i "andre" i dag.
+  const samlet = artikler.find(x => (x.andre || []).some(k => k && k.link === kilde));
+  if (samlet) { aabnLaeser(samlet, true); return; }
+
+  visVaekBesked(kilde);
+}
+
+function visVaekBesked(kilde) {
+  const boks = document.getElementById("vaekBesked");
+  if (!boks) return;
+  // Kun http(s) må blive til et klikbart link — ellers kunne et hjemmelavet
+  // #a=javascript:… gøre vores egen besked til angrebsfladen.
+  const trygt = /^https?:\/\//i.test(kilde || "");
+  let vaert = "kilden";
+  if (trygt) { try { vaert = new URL(kilde).hostname.replace(/^www\./, ""); } catch (e) {} }
+  boks.innerHTML =
+    `<strong>Den historie er ikke på forsiden længere.</strong>` +
+    `Forsiden viser de nyeste nyheder, og ældre historier falder af listen.` +
+    (trygt ? ` Du kan stadig læse den hos <a href="${esc(kilde)}" target="_blank" rel="noopener">${esc(vaert)} →</a>`
+           : ``) +
+    ` Nedenfor er det, der er nyt lige nu.`;
+  boks.hidden = false;
+  // Fjern hash'et. Ellers dukker beskeden op igen ved genindlæsning, og et
+  // bogmærke på forsiden ville bære den med sig for evigt.
+  try { history.replaceState({}, "", location.pathname); } catch (e) {}
 }
 
 /* Fokus gives tilbage HER og ikke i lukLaeser, fordi læseren lukkes ad tre
@@ -2260,10 +2315,7 @@ fetch("data/articles.json")
     // true = erstat adressen i stedet for at skubbe en post oveni, så der
     // ikke ligger en tom forside bag artiklen i historikken.
     const m = location.hash.match(/^#a=(.+)/);
-    if (m) {
-      const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
-      if (delt) aabnLaeser(delt, true);
-    }
+    if (m) aabnDeltLink(m[1]);
   })
   .catch(fejl => {
     indhold.innerHTML = `<div class="tom">Kunne ikke hente nyhederne (${esc(fejl.message)}).<br><br>
