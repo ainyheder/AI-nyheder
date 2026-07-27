@@ -49,9 +49,9 @@ hvad der allerede er sket.** Så virker det samme regelsæt uanset hvornår du s
 Åbn `nat-log.md` og se efter en overskrift `### Nattens regnskab · <dagens dato>`.
 
 - **Findes der INTET regnskab for i dag:** du er dagens hovedkørsel. Du tager
-  hele turen — fase 1, 2 og 3 — og skriver regnskabet til sidst.
+  hele turen — fase 0, 1, 2 og 3 — og skriver regnskabet til sidst.
 - **Findes der ALLEREDE et regnskab for i dag:** du er en ekstra kørsel. Du laver
-  **kun fase 1**: arbejd køen, og skriv en log-post pr. færdigt punkt. Rør ikke
+  **fase 0 og fase 1**: analysér, arbejd køen, og skriv en log-post pr. færdigt punkt. Rør ikke
   prioriteringen, og skriv ikke et regnskab til. Tilføj i stedet én linje under
   dagens regnskab: `**Ekstra kørsel <klokkeslæt>:** klarede <N> punkter mere.`
 
@@ -66,14 +66,14 @@ morgen tidlig.
 
 ## Læs derefter, i denne rækkefølge
 
-1. `_redaktion/redaktionens-oejne.md` — målestokken. Ni punkter, og et afsnit om
+1. `_redaktion/redaktionens-oejne.md` — målestokken. Ti punkter, og et afsnit om
    hvad der IKKE er et problem. Den afgør alt.
-2. `_redaktion/opgavekoe.md` — køen. Du arbejder oppefra og ned. Crawlerens
-   natlige gennemgang skriver selv sine forslag ind nederst i køen under
-   "Fra den natlige gennemgang" — så der er kun ÉN liste at forholde sig til.
+2. `_redaktion/opgavekoe.md` — køen.
 3. `_redaktion/nat-log.md` — hvad tidligere nætter fandt og besluttede.
-4. `_redaktion/kritik-seneste.md` — gennemgangens fulde tekst med tallene bag.
-   Kun hvis du har brug for baggrunden; forslagene står allerede i køen.
+4. `_redaktion/analyse-seneste.md` — din egen analyse fra sidst, hvis den findes.
+
+Crawleren laver **ingen** gennemgang længere. Den måler kun rå tal
+(`data/laesertal.json` fra Cloudflare). Vurderingen er din alene.
 
 **Tjek også, om der ligger uafhentet arbejde.** Kør `git status --short`. Er der
 ændrede filer fra tidligere nætter, har Torben ikke pushet endnu. Skriv det
@@ -81,6 +81,54 @@ morgen tidlig.
 set, og de filer, crawleren selv skriver, vil begynde at give merge-konflikter.
 
 ---
+
+## Fase 0 — Din egen analyse, FØR du rører noget
+
+**Gør det her hver gang, også som ekstra kørsel.** Køen er et forslag fra i går.
+Siden har ændret sig siden — crawleren har kørt, artikler er kommet til og faldet
+ud, og forrige session har ændret kode. At gå direkte i gang med øverste punkt er
+at arbejde efter et kort, ingen har tjekket.
+
+Sæt cirka en tiendedel af natten af til det her. Ikke mere.
+
+**1. Mål tilstanden selv.** Skriv et lille engangsscript og kør det. Tæl i
+`data/articles.json`, `data/youtube.json`, `artikel/`, `video/`, `data/laesertal.json`
+og filerne i roden. Ikke ét fast sæt tal — se på dét, der er relevant i aften,
+og på dét, du ændrede sidste gang. Tallene i køen er fra i går; dine er fra nu.
+
+**2. Se på siden som en læser.** Hent forsiden og en tilfældig artikelside ind, og
+læs dem. Tal fortæller, om noget mangler — ikke om det er godt. Hold det op mod
+de ti punkter i målestokken.
+
+**3. Tjek dit eget arbejde fra sidst.** Læs den øverste post i `nat-log.md` og
+verificér, at rettelsen holder. Vi har set flere gange, at en rettelse løste
+symptomet og efterlod årsagen — eller flyttede fejlen et andet sted hen.
+
+**4. Afgør, hvad køen skal.** Nu — og først nu — læser du køen med dine egne tal
+i hånden:
+
+- Er øverste punkts påstand stadig sand? Er den ikke, så luk punktet med din
+  måling som dokumentation, eller skriv den om, så den passer.
+- Fandt du noget, der er værre end øverste punkt? Så skriv det ind og tag det.
+- Fandt du intet nyt, og passer køen? Så tag øverste punkt. Det er et fint svar.
+
+**5. Skriv analysen ned** i `_redaktion/analyse-seneste.md` (overskriv den
+forrige). Kort — det er et arbejdspapir, ikke en rapport:
+
+```
+# Analyse · <dato og klokkeslæt>
+**Målt:** <de tal, du faktisk kiggede på>
+**Set som læser:** <hvad du lagde mærke til på forsiden og artikelsiden>
+**Sidste nats arbejde:** <holder det, eller er der noget efterladt?>
+**Køen:** <hvad du ændrede i den, og hvorfor>
+**Jeg går i gang med:** <punktet> — <én sætning om hvorfor netop det>
+```
+
+Er det søndag, stiller du desuden ét ekstra spørgsmål: **hvad ville få flere
+danskere til at bruge siden?** Læs punkt 10 i målestokken. En fejlfri side, ingen
+læser, opfylder ikke sit formål. Forslag herfra må gerne være ting, siden ikke
+har i dag — men de skal bygge på noget, der allerede findes, og aldrig kræve
+betaling, login eller persondata. Skriv dem i køen.
 
 ## Fase 1 — Arbejd (hovedparten af natten)
 
@@ -133,7 +181,7 @@ Skriv resultatet af den samlede prøve i loggen, også når alt er grønt.
 
 ## Fase 2 — Evaluér siden med friske øjne
 
-**Kun sidste kørsel.** Er du første kørsel, springer du fase 2 og 3 over, skriver
+**Kun sidste kørsel.** Er du første kørsel, springer du fase 2 og 3 over (men ALDRIG fase 0), skriver
 loggen for det, du nåede, sletter låsefilen og stopper.
 
 Tæl, hvor mange punkter der er klaret i nat i alt — også dem, første kørsel tog.
