@@ -4,6 +4,109 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+> **⚠️ Læs det her først — du har allerede pushet rettelsen.**
+>
+> Jeg startede 03:01 og var færdig 08:50. **Kl. 08:48 committede og pushede du,
+> og med i den commit (`b48209d`) lå min ændring i `index.html`.** Du havde ikke
+> set den. Det gik godt — den var færdig og testet på det tidspunkt, 39 påstande
+> grønne, og den samlede prøve på forsiden er også grøn. Men det var held, ikke
+> planlægning, og det er værd at vide: **rører jeg en fil i det vindue, hvor du
+> pusher om morgenen, sender du den ud utestet.**
+>
+> **Jeg stoppede efter dét ene punkt.** `index.html` var rørt inden for de sidste
+> 30 minutter, altså er du ved maskinen. Instruksen siger stop, og undtagelsen
+> gælder kun den fil, opgaven selv handler om — hvilket den gjorde, så jeg gjorde
+> arbejdet færdigt og lod være med at tage det næste. **Fase 2 og 3 er sprunget
+> over**: at sortere hele køen om, mens du redigerer den i kontrolpanelet, ville
+> slette dine ændringer. Køen står, som den stod, plus to punkter flyttet til
+> Klaret og ét nyt skrevet ind.
+>
+> **Der står med vilje intet "Nattens regnskab · 2026-07-27" nedenfor.** Det er
+> ikke en forglemmelse: regnskabet skrives, når fase 2 og 3 er lavet, og det er
+> de ikke. Uden det ser kl. 23-kørslen i aften sig selv som dagens hovedkørsel og
+> tager evalueringen og omprioriteringen — hvilket er præcis det rigtige.
+>
+> **Én ting til dig:** åbn `uge.html` og klik "Læs hele historien →". Du skulle
+> nu få en pæn besked i stedet for ingenting. Historierne er stadig væk — det
+> retter beskeden ikke, det gør punktet øverst i køen.
+
+---
+
+## 2026-07-27 · Et delt link til en gammel historie gjorde ingenting
+
+**Fandt:** Forrige kørsel så det, men nåede ikke at rette det. Jeg målte det
+efter og fandt det samme plus lidt mere.
+
+Routeren i `index.html` slog `#a=<kildens URL>` op i `articles.json`:
+
+```js
+const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
+if (delt) aabnLaeser(delt, true);      // ← intet else
+```
+
+Var historien ikke i listen, skete der **ingenting**. Ingen fejl, ingen besked —
+læseren landede bare på forsiden. Og `articles.json` bygges forfra af feedene
+hver kørsel, så en historie lever **dage**, ikke 30. Målt i nat:
+
+- **`uge.html`: 5 af 5 links døde.** `uge.json` er fra 22. juli, og 0 af de 5
+  historier er tilbage i `articles.json`. **4 af de 5 har ikke engang en
+  artikelside på disken** (jeg søgte råt efter alle fem adresser i alle 112
+  sider), så det er ikke noget, der kan omdirigeres — historierne er væk.
+- **`feed.xml`: 40 links, 0 døde lige nu** — men den skrives frisk hver kørsel,
+  så den måler altid 0 og dør alligevel inden for få dage.
+- **Nyhedsbrevet bruger samme form** (`crawler.py` linje 1827). En sendt mail kan
+  ikke rettes.
+- **47 links, der ikke er hovedkilder.** Det her stod ikke i forrige måling:
+  dubletter samles til én historie, og siden 26.07 vælger `_slaa_sammen` den
+  fyldigste udgave, ikke den første. Så **vinderen kan skifte**, og et link, der
+  var hovedkilden i går, står i `andre` i dag — og var dødt, selvom historien
+  stod på forsiden.
+
+**Gjorde:** Ét sted, `index.html`. Nyt `aabnDeltLink()`, der gør tre ting i
+rækkefølge: finder historien → åbner den; finder den under `andre` → åbner
+hovedhistorien; ellers `visVaekBesked()`, som siger hvad der skete og linker
+videre til kilden, vi har i hånden. Kun `http(s)` bliver til et klikbart link
+(et hjemmelavet `#a=javascript:…` må ikke gøre vores egen besked til
+angrebsfladen), `decodeURIComponent` er pakket ind, så ugyldig %-kodning ikke
+vælter siden, og hash'et fjernes bagefter, så beskeden ikke dukker op igen ved
+genindlæsning. `crawler.py` er ikke rørt.
+
+**Testede:** 39 påstande i jsdom mod de rigtige datafiler, alle grønne — otte
+tilfælde: uden hash, levende link, `andre`-link, dødt uge-link, `javascript:`,
+html i adressen, ugyldig %-kodning, tomt hash. **Prøven er også kørt mod
+`2a2cfe3` (uden rettelsen): 13 røde, 0 grønne på præcis de påstande, rettelsen
+handler om.** Uden dét ville jeg ikke vide, om prøven måler noget. Samlet prøve
+bagefter: `ast.parse` på `crawler.py` OK, ingen dobbeltdefinerede konstanter på
+modulniveau, forsiden i jsdom 12 påstande grønne — kort tegnet, dagens overblik
+vist, klik åbner en artikel, luk virker, og spring-over-linket og fokusmålene
+fra 26.07 står urørt.
+
+**Undervejs fandt jeg to fejl hos mig selv.** Min første jsdom-opsætning satte
+`fetch` *efter* at scripts var kørt — hver eneste påstand var rød af den ene
+grund. Og min første sikkerhedspåstand søgte efter ordet "onerror" i `innerHTML`
+og var rød, selvom intet var galt: ordet står som escaped tekst inde i en
+`href`-værdi, ikke som en attribut. Påstanden spørger nu, om noget element rent
+faktisk har fået en `on*`-handler.
+
+**Til Torben:**
+
+1. **`natsession.md` linje 78 — femte gang.** Der står `git status --short`, og
+   den lægger `.git/index.lock`, som spærrer dine commits med *"Unable to create
+   index.lock"*. Den lå der igen i nat, og jeg ryddede den. `git
+   --no-optional-locks status --short` gør det samme uden at låse. Ét ord.
+   Jeg retter det ikke selv — du redigerer filen gennem panelet, og jeg vil ikke
+   skrive oven i dig.
+2. **Køen har fået ét nyt punkt, og det er den rigtige fortsættelse:** få
+   `crawler.py` til at linke til den permanente artikelside i stedet for `#a=`.
+   **56 af 82 artikler har en**, så ~68 % af fremtidens links ville holde op med
+   at dø. `feed.xml` er to linjer. Ugesiden og nyhedsbrevet kræver, at `side`
+   skrives med i `uge.json`, når den bygges.
+3. **"Tjek at alle interne links virker" er lukket** med forrige nats måling:
+   2.861 interne referencer, nul døde. `uge.html` var det eneste hul, og det er
+   rettet nu.
+
+---
+
 ## 2026-07-26 (kl. 23:01-kørslen) · Sprang over — du arbejdede undervejs
 
 **Jeg har ikke rettet noget i nat.** Jeg startede kl. 23:01, hvor der ikke var

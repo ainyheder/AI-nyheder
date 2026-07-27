@@ -27,6 +27,20 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ### 3 — Gør siden mærkbart bedre
 
+- [ ] **Nyhedsbrevet, feedet og ugesiden linker med `#a=` i stedet for den
+      permanente side.** Routeren siger nu pænt til, når historien er væk
+      (rettet 27.07) — men det bedste var, at linket slet ikke døde. `#a=` peger
+      på *kildens* adresse og slås op i `articles.json`, som kun lever dage;
+      artikelsiderne under `artikel/` slettes derimod aldrig. **Målt 27.07: 56 af
+      82 artikler har en permanent side**, så ~68 % af alle fremtidige links
+      kunne pege et sted, der bliver ved med at virke. Tre steder i
+      `crawler.py`: `feed.xml` (linje 1594) har `a["side"]` lige ved hånden og
+      er en to-linjers rettelse. Ugesiden (1660) og **nyhedsbrevet** (1827)
+      læser `uge.json`, som **ikke gemmer `side`** — der skal feltet skrives med,
+      når ugefilen bygges, og først derefter virker linket. Nyhedsbrevet er det
+      vigtigste af de tre: en mail kan ikke rettes, efter den er sendt.
+      *Punkt 6 og 10.*
+
 - [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
       26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
       og bruger kun den gamle fil som cache pr. link. Derfor lever en artikel
@@ -49,9 +63,6 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       står noget som helst på skærmen. Skal arkivet vokse så meget, bør forsiden
       formentlig hente en let liste og først resten på klik. Det er en større
       ombygning end arkivet selv, og den bør regnes med i beslutningen.
-
-- [ ] **Tjek at alle interne links virker.** Gennemgå alle HTML-sider for links
-      til sider, der ikke findes. *Punkt 4.*
 
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
       efter alle dagens ændringer. *Punkt 4.*
@@ -138,6 +149,30 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 ---
 
 ## Klaret
+
+- [x] **Et delt link til en historie, der er faldet af forsiden, gjorde
+      ingenting.** *(27.07.2026)* Routeren slog `#a=<kildens URL>` op i
+      `articles.json` og havde intet `else`. Fandt den ikke historien, skete der
+      **ingenting** — ingen fejl, ingen besked, bare forsiden. Målt 27.07: **5 af
+      5 links på `uge.html` var døde** på præcis den måde, og samme form bruges i
+      `feed.xml` (40 links), i det ugentlige nyhedsbrev og i hvert link, en læser
+      har delt. Rettet ét sted i `index.html`: nyt `aabnDeltLink()` slår nu også
+      op i `andre`, så en historie, der er slået sammen under en anden kilde,
+      stadig åbner (**47 sådanne links findes lige nu**), og ellers vises en
+      besked, der siger hvad der skete og linker videre til kilden. Kun
+      `http(s)` bliver klikbart, og hash'et fjernes bagefter. **39 påstande
+      grønne — og prøven kørt mod `2a2cfe3` også: 13 røde før, 0 efter.**
+      Samlet prøve på forsiden: 12 grønne. *Punkt 4, 6 og 10.*
+
+- [x] **Tjek at alle interne links virker.** *(målt 26.07 kl. 23:40, lukket
+      27.07)* **2.861 interne referencer på 185 sider peger alle på en fil, der
+      findes** — 33 rodsider, 111 artikelsider, 41 videosider, 3.583 referencer i
+      alt. Sitemaps (30 + 53 + 41 URL'er), `manifest.json`, `llms.txt`, `sw.js`
+      og `feed.xml`: nul døde. De 15 "døde links" i første måling var parserens
+      egne — den læste JavaScript-skabeloner (`${esc(a.link)}`) som adresser — og
+      `#udgiver` / `#hjemmeside` er JSON-LD-id'er, ikke links. **Det eneste
+      virkelige hul var `uge.html`s fem `#a=`-links**, og det har sit eget punkt
+      ovenfor, som er klaret. *Punkt 4.*
 
 - [x] **`sitemap.xml` manglede én side, ikke tre.** *(26.07.2026, ekstra kørsel
       kl. 17:05)* Målt: 33 HTML-filer, 29 URL'er, fire filer udenfor — og **tre
