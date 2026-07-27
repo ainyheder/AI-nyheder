@@ -51,6 +51,70 @@ alle. Det er værd at kigge på, før nogen bygger.
 
 **Ekstra kørsel 20:05 (chat):** kontrolpanelet kunne kun hakke punkter *af*, ikke sige nej til dem. Nu kan det. Se nedenfor.
 
+**Ekstra kørsel 20:45 (chat):** klarede 1 punkt mere — en fejlsammenlægning kan nu fortrydes. To artikler er sluppet løs igen. Se nedenfor.
+
+---
+
+## 2026-07-27 (ekstra kørsel kl. 20:45, chat) · En sammenlægning kunne ikke fortrydes
+
+**Fandt:** Køens øverste punkt bad om en deterministisk vagt mod, at
+dubletfangeren slår urelaterede historier sammen. Den vagt fandtes allerede —
+`_samme_sag` blev committet kl. 19:18 i `d95c041`, uden at nogen logfil blev
+rørt, og den virker: slugte artikler faldt fra 47 til 16, vindere med `andre`
+fra 15 til 12. Men den passer kun på nye sammenlægninger. **De 16, der allerede
+var lavet, kunne ikke fortrydes.** Trin 0 i `saml_dublet_historier` kræver, at
+begge udgaver står i dagens liste med deres tekst, og `data/articles.json`
+bygges forfra af feedsene hver kørsel, mens `andre` arves videre fra sidste fil
+(linje 1645). Taberen forsvinder altså ud af listen efter få dage, mens
+sammenlægningen bliver stående for evigt. Målt i dag: **0 af de 16 tabere var i
+dagens liste** — frigivelsen kunne fyre for ingen af dem. `_slaa_sammen` gemte
+kun `{kilde, link}`, så taberens rubrik og resumé var kastet væk.
+
+**Gjorde:** Teksten skal kunne læses, før nogen kan bedømme, om to udgaver hører
+sammen. Tre ting: `_slaa_sammen` gemmer nu taberens rubrik og resumé i `andre`
+(klippet ved 400 tegn), så fremtidige sammenlægninger bærer deres eget bevis med
+sig. `_taberens_udgave` henter teksten fra den frosne side i `artikel/`, hvor
+rubrik og resumé står i `og:title` og `og:description` — dét dækker de gamle
+sammenlægninger, 11 af de 16 har sådan en side. Og fordi en artikel, der er væk
+fra feedet, ikke kan samles op igen af en senere fase, hvis vi frigiver den
+forkert, kræves et strengere bevis: `_deler_intet` siger kun ja, når **begge**
+ben i `_samme_sag` falder — hverken over 15 % fælles ord eller ét fælles navn.
+Til sidst retter `_giv_frigivne_deres_canonical_tilbage` sidens canonical på
+disken, så den frigivne artikel kommer tilbage i sitemappet i stedet for at
+blive frigivet igen og igen uden at blive synlig.
+
+**Testede:** `/tmp/frigiv-proeve.py` — **30 grønne, 0 røde**. Kørt mod de
+rigtige datafiler, men mod en *kopi* af artikelsiderne, så arkivet ikke røres.
+Prøven dækker teksthentningen (frossen side, gemt rubrik, ukendt slug, ulæseligt
+link), den strenge regel, de rigtige tal på dagens data, diskrettelsen (to sider
+rettet, anden kørsel retter ingenting, en dublet der ikke er frigivet er urørt)
+og at teksten faktisk gemmes ved sammenlægning. En uafhængig gennemlæsning af
+diffen fandt fire ting: at `_samme_sag` alene ikke duer som frigivelsesregel,
+fordi 23 % af arkivets sider slet ikke nævner et stærkt navn (rettet med
+`_deler_intet`), at diskrettelsen kun har ét forsøg og kunne fejle på en
+gen-måling (rettet ved at stole på trin 0's strengere bevis), at trin 0 nu rører
+disken og skal tåle en ulæselig fil (rettet), og en fjerde, der ikke hører til
+her — den står nu som punkt 1 i køen.
+
+**Til redaktionen:** **2 af de 16** slippes løs — «Eks-googlere bag AegisAI
+skaffer millioner», der lå under «Strømsvigt i Washington afslører
+AI-datacentrene», og «Meta vælger dyster sang til glad AI-reklame», der lå under
+«Biblioteker afholder populære 'Avoiding AI'-workshops». Begge deler 0 % af
+deres ord med deres vinder og intet navn. Punktet i køen pegede på fire par; de
+to sidste bliver liggende med vilje, fordi de deler henholdsvis 28 % af ordene
+og navnet "anthropic" med deres vinder. **Vær uenig her, hvis du vil:** læst med
+øjnene ser begge to ud som forskellige historier, og en strengere ordgrænse
+ville frigive dem. Jeg har ikke villet gætte på en ny grænse ud fra to
+eksempler; mistanken står nu under `## Mistanker` og skal måles, før nogen
+skruer på tallet. De to frigivne artikler dukker først op på forsiden ved næste
+kørsel af crawleren.
+
+**Bemærk:** 30-minutters-tjekket for "arbejder nogen lige nu" viste
+`_redaktion/kontrolpanel.html` rørt — det var min egen ændring fra kl. 20:05,
+ikke en anden session. `.koerer` er sat tilbage til nulstemplet til sidst; jeg
+kan ikke slette filer på Torbens maskine, så den bliver stående med
+`2000-01-01T00:00:00+00:00`, som betyder "ingen kører".
+
 ---
 
 ## 2026-07-27 (ekstra kørsel kl. 20:05, chat) · Køen kunne ikke sige nej

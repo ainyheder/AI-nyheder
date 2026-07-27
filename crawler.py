@@ -1129,6 +1129,121 @@ def _klynger(artikler: list[dict]) -> list[list[dict]]:
     return [g for g in grupper.values() if len(g) > 1]
 
 
+# Hvor meget af taberens tekst gemmer vi med sammenlægningen? Kort med vilje:
+# `andre` ligger i articles.json og arves videre kørsel efter kørsel, og
+# `_dublet_ord` klipper alligevel hvert ord til seks tegn.
+_GEMT_TEKST_MAX = 400
+
+# Slugs på artikler, trin 0 har sluppet løs, mens de IKKE var i dagens feed.
+# `_giv_frigivne_deres_canonical_tilbage` kan ikke selv finde dem: deres side
+# peger stadig på vinderen, og de står ikke i dagens liste, så funktionens
+# normale krav ("levende og selvstændig") kan aldrig blive opfyldt for dem.
+_FRIGIVNE_UDEN_FEED: set = set()
+
+
+def _tekst_fra_artikelside(slug: str) -> dict | None:
+    """Rubrik og resumé læst ud af en frossen artikelside.
+
+    Siden blev skrevet dengang, artiklen var sin egen historie, og de to felter
+    står stadig i `og:title` og `og:description`. Det er den samme tekst,
+    `_dublet_ord` og `_navne_i` ellers ville have fået fra dagens liste.
+    """
+    try:
+        raa = (ARTIKEL_MAPPE / f"{slug}.html").read_text(encoding="utf-8")
+    except (OSError, ValueError):
+        # ValueError dækker UnicodeDecodeError på en halvskrevet fil. Trin 0 var
+        # før et rent opslag i en dict og kunne ikke fejle; nu rører det disken,
+        # og en enkelt beskadiget side må ikke vælte dublet-fasen for alle.
+        return None
+
+    def _felt(navn: str) -> str:
+        fundet = re.search(rf'<meta property="og:{navn}" content="([^"]*)"', raa)
+        return html.unescape(fundet.group(1)) if fundet else ""
+
+    rubrik = _felt("title")
+    if not rubrik:
+        return None
+    return {"rubrik": rubrik, "titel": rubrik, "resume_da": _felt("description")}
+
+
+def _taberens_udgave(kilde: dict, pr_link: dict) -> dict | None:
+    """Skaf taberens tekst, så en gammel sammenlægning kan efterprøves.
+
+    Frigivelsen i trin 0 kræver et BEVIS: to tekster, der kan holdes op mod
+    hinanden. Før den her fandtes, var dagens liste den eneste kilde til
+    taberens tekst — og `articles.json` bygges forfra af feedsene hver kørsel,
+    mens `andre` arves videre fra sidste fil. Taberen forsvinder altså ud af
+    listen efter få dage, mens sammenlægningen bliver stående for evigt. Målt
+    27.07: **0 af 16 tabere var i dagens liste**, så frigivelsen kunne fyre for
+    ingen af dem, uanset hvor forkerte de var.
+
+    Tre steder at hente teksten, i faldende troværdighed:
+      1. dagens liste — hele artiklen,
+      2. `rubrik`/`resume_da` gemt i selve `andre`-posten (gemmes herfra),
+      3. den frosne side i `artikel/`.
+
+    Findes teksten ingen af stederne, returneres None, og der sker ingenting.
+    Et fravær er stadig ikke et bevis.
+    """
+    link = kilde.get("link")
+    if not isinstance(link, str) or not link:
+        return None                      # `andre` kommer fra en fil, ikke fra os
+    if link in pr_link:
+        return pr_link[link]
+    if kilde.get("rubrik"):
+        return {"rubrik": kilde["rubrik"], "titel": kilde["rubrik"],
+                "resume_da": kilde.get("resume_da") or ""}
+    return _tekst_fra_artikelside(_artikel_slug(link))
+
+
+def _deler_intet(vinder: dict, taber: dict) -> bool:
+    """Deler de to udgaver så lidt, at ingen kan påstå, de er samme historie?
+
+    `_samme_sag` står på to ben — fælles ord OG fælles navn — og siger nej, så
+    snart ét af dem falder. Her skal BEGGE falde. Forskellen er ikke teoretisk:
+    23 % af siderne i arkivet nævner slet intet stærkt navn, og for dem kan
+    `_samme_sag` aldrig sige ja, uanset hvor ens teksterne er. Brugte
+    frigivelsen `_samme_sag` alene, ville en ægte dublet uden navn i rubrikken
+    blive splittet op i to sider, der konkurrerer om den samme søgning.
+    """
+    A, B = _dublet_ord(vinder), _dublet_ord(taber)
+    if not A or not B:
+        return False                     # ingen tekst er ikke et bevis
+    if len(A & B) / min(len(A), len(B)) >= _SAMME_SAG_ANDEL:
+        return False
+    return not (_navne_i(vinder) & _navne_i(taber))
+
+
+def _skal_frigives(vinder: dict, kilde: dict, pr_link: dict) -> bool:
+    """Skal den her `andre`-post slippes løs igen?
+
+    Er taberen i dagens liste, er svaret som hidtil: vagten siger nej. En
+    fejlagtig frigivelse er ufarlig dér, for begge udgaver er levende, og
+    lex-fasen eller AI-fasen samler dem bare igen længere nede i samme kørsel.
+
+    Er taberen VÆK fra feedet, findes den korrektion ikke — der er ingen anden
+    udgave at samle med, hverken i dag eller i morgen. Derfor et strengere
+    bevis: `_deler_intet`, altså at de to udgaver hverken deler ord eller navne.
+    Det er strengere end `_samme_historie`, som lex-fasen samler på, og det
+    koster: målt 27.07 frigiver den strenge regel 2 af 16 par i stedet for 4.
+    De to par, der bliver liggende, er «Er åben AI virkelig farligt?», som
+    deler 28 % af sine ord med vinderen, og «Claude taler nu ud med tre
+    stærke hjerner», som deler navnet "anthropic" med sin vinder. En
+    frigivelse, vi ikke kan fortryde, skal ikke bygge på så tyndt et grundlag.
+    """
+    if not isinstance(kilde, dict):
+        return False
+    taber = _taberens_udgave(kilde, pr_link)
+    if taber is None or _samme_sag(vinder, taber):
+        return False
+    if kilde.get("link") in pr_link:
+        return True
+    if not _deler_intet(vinder, taber):
+        return False
+    _FRIGIVNE_UDEN_FEED.add(_artikel_slug(kilde["link"]))
+    return True
+
+
 def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     """Finder nyheder som flere medier dækker, beholder den bedste udgave og
     gemmer de øvrige som ekstra kilder på historien ("andre")."""
@@ -1141,25 +1256,29 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     #    27.07: 40 af de 49 samlede par kunne læses, og 31 af dem delte næsten
     #    ingen ord med den historie, de lå under. De var låst for evigt.
     #
-    #    Frigivelsen kræver et BEVIS, ikke et fravær: begge udgaver skal være i
-    #    dagens liste med deres tekst, og vagten skal sige nej. Mangler vinderen
-    #    blot i feedet i én kørsel, sker der ingenting — se `_dubletsider_paa_disk`
-    #    om hvorfor det er vigtigt, at en enkelt kørsel ikke kan vende et valg.
+    #    Frigivelsen kræver et BEVIS, ikke et fravær: begge udgaver skal kunne
+    #    LÆSES, og vagten skal sige nej. Teksten må gerne komme fra det, vi
+    #    gemte ved sammenlægningen, eller fra taberens frosne side — se
+    #    `_taberens_udgave`. Kravet om at begge stod i dagens liste var i
+    #    praksis et krav om, at fejlen blev opdaget inden for få dage: målt
+    #    27.07 var 0 af 16 tabere tilbage i feedet. Kan teksten ikke skaffes,
+    #    sker der stadig ingenting — se `_dubletsider_paa_disk` om hvorfor det er
+    #    vigtigt, at en enkelt kørsel ikke kan vende et valg.
     pr_link = {a["link"]: a for a in artikler if a.get("link")}
+    _FRIGIVNE_UDEN_FEED.clear()
     frigivet = 0
     for a in artikler:
         kilder = a.get("andre")
         if not isinstance(kilder, list) or not kilder:
             continue
-        beholdt = [k for k in kilder
-                   if not (isinstance(k, dict) and k.get("link") in pr_link
-                           and not _samme_sag(a, pr_link[k["link"]]))]
+        beholdt = [k for k in kilder if not _skal_frigives(a, k, pr_link)]
         if len(beholdt) == len(kilder):
             continue
         for k in kilder:
             if k in beholdt:
                 continue
-            print(f"  ↩️  Frigivet: «{(pr_link[k['link']].get('rubrik') or '')[:52]}»"
+            taber = _taberens_udgave(k, pr_link) or {}
+            print(f"  ↩️  Frigivet: «{(taber.get('rubrik') or k.get('kilde') or '')[:52]}»"
                   f" var lagt under «{(a.get('rubrik') or a['titel'])[:52]}»")
         frigivet += len(kilder) - len(beholdt)
         if beholdt:
@@ -1340,7 +1459,13 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
 
     primaer.setdefault("andre", [])
     har = {k["link"] for k in primaer["andre"]}
-    primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"]}
+    # Gem taberens tekst med, ikke bare hans adresse. Uden den kan en forkert
+    # sammenlægning aldrig fortrydes: `articles.json` bygges forfra af feedsene
+    # hver kørsel, mens `andre` arves videre, så taberen er væk om få dage — og
+    # frigivelsen i trin 0 kræver to tekster at måle på. Se `_taberens_udgave`.
+    primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"],
+                          "rubrik": str(m.get("rubrik") or m.get("titel") or "")[:_GEMT_TEKST_MAX],
+                          "resume_da": str(m.get("resume_da") or "")[:_GEMT_TEKST_MAX]}
                          for m in andre if m["link"] not in har]
     return {m["link"] for m in andre}
 
@@ -2458,6 +2583,11 @@ def _giv_frigivne_deres_canonical_tilbage(artikler: list[dict]) -> int:
         `andre`), og
       * **den, den peger på, er også i dagens liste, og vagten siger nej.**
 
+    Én undtagelse: er siden noteret i `_FRIGIVNE_UDEN_FEED`, er beviset ført i
+    trin 0 med `_deler_intet`, som er strengere end vagten her — og taberen er
+    slet ikke i dagens liste, så det tredje krav kan aldrig opfyldes for den.
+    Se kommentaren nede i løkken.
+
     Det tredje krav er det vigtige. `_dubletsider_paa_disk` beskriver, hvorfor
     en manglende hovedhistorie ikke må kunne vælte en dublet: en enkelt kørsel
     med timeout på et feed ville ellers få canonical til at svinge frem og
@@ -2475,8 +2605,12 @@ def _giv_frigivne_deres_canonical_tilbage(artikler: list[dict]) -> int:
 
     rettet = 0
     for p in sorted(ARTIKEL_MAPPE.glob("*.html")):
-        if p.stem in tabere or p.stem not in levende:
-            continue                       # stadig dublet, eller ikke i listen
+        if p.stem in tabere:
+            continue                       # stadig dublet
+        denne = levende.get(p.stem)
+        frigivet_uden_feed = denne is None and p.stem in _FRIGIVNE_UDEN_FEED
+        if denne is None and not frigivet_uden_feed:
+            continue                       # ikke i listen
         try:
             gammel = p.read_text(encoding="utf-8")
         except OSError:
@@ -2487,9 +2621,16 @@ def _giv_frigivne_deres_canonical_tilbage(artikler: list[dict]) -> int:
         maal = html.unescape(fundet.group(1))
         if maal == f"{SITE_URL}/artikel/{p.name}" or not maal.startswith(forstavelse):
             continue                       # peger på sig selv, eller uden for arkivet
-        vinder = levende.get(maal[len(forstavelse):-len(".html")])
-        if vinder is None or _samme_sag(vinder, levende[p.stem]):
-            continue                       # intet bevis for at pegningen er forkert
+        if not frigivet_uden_feed:
+            vinder = levende.get(maal[len(forstavelse):-len(".html")])
+            if vinder is None or _samme_sag(vinder, denne):
+                continue                   # intet bevis for at pegningen er forkert
+        # Er siden frigivet uden feed, er beviset allerede ført i trin 0 — med
+        # `_deler_intet`, der er strengere end tjekket her. Vi må ikke føre det
+        # igen: den her funktion har kun ÉT forsøg. `_FRIGIVNE_UDEN_FEED` ryddes
+        # hver kørsel, og artiklen står ikke længere i nogens `andre`, så
+        # springer vi siden over nu, bliver den aldrig besøgt igen — frigivet i
+        # data og usynlig på disken for evigt.
         adresse = html.escape(f"{SITE_URL}/artikel/{p.name}", quote=True)
         ny, antal = re.subn(r'(<link rel="canonical" href=")[^"]*(")',
                             lambda mm: mm.group(1) + adresse + mm.group(2),

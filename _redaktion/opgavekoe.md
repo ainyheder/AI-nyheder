@@ -33,12 +33,13 @@ er dét, køen bedømmes op imod. Kan et fund ikke skrives som "gør X, og mål 
 bagefter", er det enten en mistanke eller et mål, og så skal det ikke i køen.
 
 **Dét, hele køen måles op imod — og som ikke selv er en opgave:** siden skal nå
-nogen. Målt 27.07, syv dage: **240 besøg**, hvoraf **229 er direkte trafik til
-forsiden** — altså redaktionen selv, bogmærker og appen. Udefra kom **19 besøg
-fra Facebook, 4 fra Google og 3 fra Buttondown**, og artikelsiderne fik **2
-visninger tilsammen**. Ethvert punkt i køen forbedrer altså noget, som under 30
-mennesker udefra ser om ugen. Det tal er baggrunden for rækkefølgen — det er
-ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
+nogen. Målt 27.07 kl. 19:46, syv dage: **257 besøg**, hvoraf **229 er direkte
+trafik til forsiden** — altså redaktionen selv, bogmærker og appen. Udefra kom
+**19 besøg fra Facebook, 4 fra Google og 3 fra Buttondown**, og de tal har ikke
+rørt sig siden formiddagen. Fire artikelsider har nu 1–3 visninger hver, men
+`sidehenvisere` siger "herfra selv" på dem alle. Ethvert punkt i køen forbedrer
+altså noget, som under 30 mennesker udefra ser om ugen. Det tal er baggrunden for
+rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
 ---
 
@@ -50,47 +51,31 @@ ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
 ### 1 — I stykker for læseren lige nu
 
-- [ ] **Dubletfangeren slår urelaterede historier sammen — 47 artikler er væk
-      fra forsiden.** Målt 27.07. `saml_dublet_historier` sender op til 130
-      artikler til AI'en og beder den gruppere dem. **Grupperne bliver brugt
-      som de kommer** — den eneste kontrol er, at datoerne ligger inden for
-      3 dage, hvilket alle nyheder gør. Der er intet tjek af, om artiklerne
-      handler om det samme.
+- [ ] **Frigivelsen ruller kun `andre` tilbage — vinderen beholder taberens
+      tidspunkt og billede.** Målt 27.07 kl. 20:40 på `data/articles.json` af en
+      uafhængig gennemlæsning af dagens ændring.
 
-      **Hvad en læser mister:** 13 grupper har slugt **47 artikler**, som ikke
-      længere står som deres egen historie på forsiden. Af de 38, der har en
-      side, jeg kan sammenligne teksten på, deler **25 under 5 % af deres ord**
-      med den historie, de er lagt ind under. Median: **3,4 %**. Kun **én af 38**
-      er over 25 % — og den er en ægte dublet ("Midjourney køber astrologi-appen
-      Co-Star", 44 %). Konkrete eksempler fra siden lige nu:
+      `_slaa_sammen` giver vinderen det **tidligste** `foerst_set` af alle
+      medlemmer og arver taberens billede, hvis vinderen mangler et. Frigivelsen
+      i trin 0 fjerner taberen fra `andre` — men rører hverken tidsstemplet
+      eller billedet. Vinderen bliver altså stående med en fortid, der stammer
+      fra en historie, den ikke længere er sammenlagt med.
 
-      - "Monday.com fyrer 600 – skyder skylden på AI" ligger under **"Anthropic
-        sender billigere AI-model på gaden"**
-      - "Alexa Plus får hjælp til svære opgaver" ligger under **"Google lancerer
-        nye AI-modeller"**
-      - "AlphaFold AI gør genredigering mere sikker" ligger under **"AMD
-        udfordrer Nvidia med Helios"**
-      - "AI Kill Switch Act" og "Meta AI bliver din personlige assistent" ligger
-        begge under **"Nvidia og Mistral advarer mod at forbyde kinesisk AI"**
+      **Målt:** **4 af de 12** artikler med `andre` har `foerst_set` mere end en
+      time før deres egen `dato`, mod **1 af 126** uden `andre`. Eksempel:
+      «Strømsvigt i Washington afslører AI-datacentrene» har `dato`
+      2026-07-25T13:05, men `foerst_set` 2026-07-23T20:37 — næsten to døgn før.
 
-      **Det koster mere end pladsen på forsiden.** Taberens side fryses og
-      skrives aldrig om — det var dét, der holdt 7 sider på gamle, navnløse
-      rubrikker indtil i nat. Taberens canonical peger på den forkerte historie,
-      så siden ryger ud af sitemappet. Og en vinder får **+1 i prioritet** for at
-      have `andre`, så en falsk sammenlægning skubber sig selv op i Dagens
-      overblik. Endelig gemmer `_slaa_sammen` kun `{kilde, link}` — taberens
-      rubrik og tekst kastes væk.
+      **Hvad en læser ser:** `index.html` bruger `foerst_set` til rækkefølgen
+      (linje 1460), til at gruppere efter dag (1517-1522), til NY-mærket (1890)
+      og til "seneste døgn" (1944). En historie, der er skrevet i går, kan derfor
+      ligge under forgårs dato uden NY-mærke — og læseren, der vil holde styr på
+      hvad han har set, får en forkert dag at gå efter.
 
-      **Mindste rettelse:** en deterministisk vagt efter AI'ens svar, i stil med
-      `_har_noget_at_vise`. Kræv at vinder og taber deler mindst ét **navn**
-      (mærkelisten fra 26.07 findes allerede, og den kan ejefald). Prøvet på
-      dagens data: **16 af 38 par deler et navn** og ville blive stående som
-      dubletter; de øvrige 22 ville blive selvstændige artikler igen. Ordoverlap
-      ≥ 0,15 giver omtrent samme snit. Ingen AI-kald, kan testes.
-
-      **Læs de 16, reglen beholder, før den lukkes** — jeg har kun stikprøvet dem.
-      **Rammer: 440 visninger/7 dage (forsiden).**
-      *Punkt 1, 4, 6 og 10.*
+      **Mindste rettelse:** gem vinderens eget `foerst_set` (og om billedet er
+      arvet), før det overskrives, og læg det tilbage, når en kilde frigives.
+      **Rammer: 450 visninger/7 dage (forsiden).**
+      *Punkt 6.*
 
 ### 2 — Bryder målestokken synligt
 
@@ -98,18 +83,18 @@ ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Ni faste sider fik nul besøg på syv dage.** Målt 27.07 i
-      `data/laesertal.json`: `erhverv.html`, `prompt-arkiv.html`, `ordbog.html`,
-      `quiz.html`, `vaerktoejer.html`, `faq.html`, `om.html`, `guide-igang.html`
-      og `guide-sikkerhed.html` står alle på **nul besøg og nul visninger** —
-      ikke få, nul. `laer.html` fik til sammenligning 100 visninger, hver eneste
-      indefra. Det er lære-indholdet, som målestokkens punkt 7 siger, læseren
-      skal komme tilbage til.
+- [ ] **Tre faste sider fik nul besøg på syv dage.** Målt 27.07 kl. 19:46 i
+      `data/laesertal.json`: `prompt-arkiv.html`, `quiz.html` og
+      `vaerktoejer.html` står på **nul besøg og nul visninger** — ikke få, nul.
+      Tallet var ni om formiddagen; de seks, der er kommet på tavlen siden, har
+      alle "herfra selv" som eneste henviser, altså redaktionens egne klik. Det
+      er lære-indholdet, som målestokkens punkt 7 siger, læseren skal komme
+      tilbage til, og ingen udefra har set det.
       **Mindste rettelse:** mål først, hvor mange links på forsiden der faktisk
-      fører til hver af de ni — samme metode som "Kørekortet er gemt bag
+      fører til hver af de tre — samme metode som "Kørekortet er gemt bag
       nyhederne", der fandt 2 af 56 — og ret så det billigste sted. Ingen ny
       side, ingen ombygning.
-      **Rammer: 440 visninger/7 dage (forsiden)** — det er det eneste sted, en
+      **Rammer: 450 visninger/7 dage (forsiden)** — det er det eneste sted, en
       vej ind kan bygges.
       *Punkt 7 og 10.*
 
@@ -167,7 +152,16 @@ den skal bare stå her og ikke i køen.
 Måler en session en mistanke efter, flytter den enten op i `## Kø` med sit tal
 eller ud herfra med en note om, at der ikke var noget.
 
-*(Ingen lige nu.)*
+- **To sammenlægninger ser forkerte ud, men er ikke frigivet.** Noteret 27.07:
+  «Er åben AI virkelig farligt?» ligger under «Nvidia og Mistral advarer mod at
+  forbyde kinesisk AI», og «Claude taler nu ud med tre stærke hjerner» ligger
+  under «Anthropic sender billigere AI-model på gaden». Læst med øjnene er det
+  to forskellige historier. Maskinen frigiver dem ikke, fordi de deler
+  henholdsvis 28 % af ordene og navnet "anthropic" med deres vinder — og en
+  frigivelse af en artikel, der ikke længere er i feedet, kan ikke fortrydes.
+  **Ikke målt:** hvor mange af den slags par der findes over tid, og om et
+  strengere ord-krav (fx 25 % i stedet for 15 %) ville ramme dem uden at splitte
+  ægte dubletter. Kun to eksempler er ikke et tal.
 
 ---
 
@@ -313,6 +307,46 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **En fejlsammenlægning kan ikke fortrydes — 16 artikler var låst under en
+      historie, de ikke handler om.** *(27.07.2026, ekstra kørsel kl. 20:20-20:45
+      — chat med Torben)* Målt på `data/articles.json` (138 artikler) med
+      crawlerens egne funktioner.
+
+      **Fundet:** den deterministiske vagt, punktet oprindeligt bad om, var
+      allerede committet kl. 19:18 i `d95c041` uden at nogen logfil blev rørt.
+      Den virker — slugte artikler faldt fra 47 til 16, vindere med `andre` fra
+      15 til 12. Tilbage stod fortrydelsen: trin 0 krævede, at **begge** udgaver
+      stod i dagens liste, men `articles.json` bygges forfra af feedsene hver
+      kørsel, mens `andre` arves videre (linje 1645). **0 af de 16 tabere var i
+      dagens liste**, så frigivelsen kunne fyre for ingen af dem, og
+      `_slaa_sammen` gemte kun `{kilde, link}` — taberens tekst var kastet væk.
+
+      **Gjort:** `_slaa_sammen` gemmer nu taberens rubrik og resumé (klippet ved
+      400 tegn), og `_taberens_udgave` kan hente teksten fra den frosne side i
+      `artikel/`, når taberen er væk fra feedet. Er taberen ude af feedet, kan en
+      forkert frigivelse ikke rettes af en ny sammenlægning senere i samme
+      kørsel, så beviset er strengere: `_deler_intet` kræver, at **begge** ben i
+      `_samme_sag` falder — hverken fælles ord over 15 % eller ét fælles navn.
+      `_giv_frigivne_deres_canonical_tilbage` retter bagefter siden på disken, så
+      den frigivne artikel kommer tilbage i sitemappet.
+
+      **Resultat, målt:** **2 af de 16** slippes løs i dag — «Eks-googlere bag
+      AegisAI skaffer millioner» (lå under «Strømsvigt i Washington») og «Meta
+      vælger dyster sang til glad AI-reklame» (lå under «Biblioteker afholder
+      'Avoiding AI'-workshops»), begge med 0 % fælles ord og intet fælles navn.
+      Punktet pegede oprindeligt på fire par; de to sidste bliver liggende, og
+      det er med vilje: «Er åben AI virkelig farligt?» deler 28 % af sine ord med
+      sin vinder, og «Claude taler nu ud med tre stærke hjerner» deler navnet
+      "anthropic". En frigivelse, der ikke kan fortrydes, skal ikke bygge på så
+      tyndt et grundlag. De to står nu under `## Mistanker`.
+
+      **Prøven:** `/tmp/frigiv-proeve.py`, 30 grønne, 0 røde — kørt mod de
+      rigtige datafiler, men mod en **kopi** af artikelsiderne, så arkivet ikke
+      røres. En uafhængig gennemlæsning fandt fire ting undervejs; tre er rettet
+      (den strenge regel, ét-forsøgs-risikoen i diskrettelsen, og at trin 0 nu
+      rører disken og skal tåle en ulæselig fil), og den fjerde står nu som
+      punkt 1 i køen. *Punkt 1, 4, 6 og 10.*
 
 - [x] **To af tre sitemaps var aldrig indsendt i Search Console.**
       *(27.07.2026, ekstra kørsel kl. 19:45 — chat med browseradgang)* Det stod
