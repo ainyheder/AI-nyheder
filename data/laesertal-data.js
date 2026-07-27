@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T18:47:37.302194+00:00",
+ "opdateret": "2026-07-27T19:05:44.584938+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -37,6 +37,41 @@ window.LAESERTAL = {
   ],
   "serier": [
    {
+    "navn": "Samfund & etik",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     2,
+     1,
+     0,
+     3,
+     1,
+     7,
+     5,
+     2,
+     3,
+     3,
+     6
+    ]
+   },
+   {
     "navn": "Forskning",
     "tal": [
      0,
@@ -69,41 +104,6 @@ window.LAESERTAL = {
      0,
      0,
      29
-    ]
-   },
-   {
-    "navn": "Samfund & etik",
-    "tal": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     2,
-     2,
-     1,
-     0,
-     3,
-     1,
-     7,
-     5,
-     2,
-     3,
-     2,
-     6
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      5,
      3,
      0,
-     1,
+     0,
      1
     ]
    },
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      4,
      0,
      0,
-     1
+     2
     ]
    }
   ]
  },
  "maaling": "ok",
  "besoeg_i_alt": 259,
- "sidevisninger_i_alt": 733,
+ "sidevisninger_i_alt": 734,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 244,
-   "visninger": 453
+   "visninger": 454
   },
   {
    "sti": "/tak.html",
@@ -416,7 +416,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 209
+    "visninger": 210
    },
    {
     "fra": "l.facebook.com",
@@ -820,7 +820,7 @@ window.LAESERTAL = {
    "sti": "/artikel/c13d67073208cf10.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Cloudflare giver kunder ny kontrol over AI-trafik",
+   "rubrik": "Cloudflare lader kunder styre AI-trafik",
    "kategori": "Lanceringer",
    "dato": "2026-07-25",
    "henvisere": [
