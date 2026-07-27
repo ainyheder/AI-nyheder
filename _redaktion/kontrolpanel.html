@@ -10,30 +10,30 @@
 <link rel="stylesheet" href="../assets/fonts/skrifter.css">
 <style>
 :root {
-  --bg:#f4f2ec; --kort:#fff; --blaek:#191714; --svag:#6d675d; --linje:#e2ddd2;
+  --bg:#ffffff; --kort:#ffffff; --flade:#f7f6f3; --blaek:#191714; --svag:#6d675d; --linje:#e2ddd2;
   --accent:#5b4bf0; --accent-svag:#ecebfd; --groen:#2e9e5b; --rav:#c2711d;
   --skygge:0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
-.topbar { position:sticky; top:0; z-index:50; background:color-mix(in srgb, var(--bg) 88%, transparent);
+.topbar { position:sticky; top:0; z-index:50; background:rgba(255,255,255,.9);
   backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px;
   display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
 .brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:22px; letter-spacing:-.03em; }
 .brand em { font-style:normal; color:var(--accent); }
 .stempel { font-size:12px; color:var(--svag); margin-left:auto; }
 .app { display:flex; align-items:stretch; min-height:calc(100vh - 57px); }
-.side { width:262px; flex:none; border-right:1px solid var(--linje);
+.side { width:236px; flex:none; border-right:1px solid var(--linje); background:var(--flade);
   padding:18px 12px 90px; position:sticky; top:57px; align-self:flex-start;
   max-height:calc(100vh - 57px); overflow-y:auto; }
 .side-gruppe { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
   color:var(--svag); padding:14px 12px 7px; }
-.side-punkt { display:flex; align-items:center; gap:9px; width:100%; text-align:left;
-  font:inherit; font-size:13.5px; background:none; border:0; border-radius:9px;
-  padding:8px 11px; cursor:pointer; color:var(--blaek); line-height:1.35; }
-.side-punkt:hover { background:color-mix(in srgb, var(--blaek) 5%, transparent); }
+.side-punkt { display:flex; align-items:center; gap:10px; width:100%; text-align:left;
+  font:inherit; font-size:14.5px; background:none; border:0; border-radius:10px;
+  padding:11px 13px; cursor:pointer; color:var(--blaek); line-height:1.35; }
+.side-punkt:hover { background:var(--flade); }
 .side-punkt.valgt { background:var(--accent-svag); color:var(--accent); font-weight:600; }
-.side-punkt .nr { width:20px; height:20px; border-radius:50%; flex:none;
+.side-punkt .nr { width:22px; height:22px; border-radius:50%; flex:none;
   background:color-mix(in srgb, var(--blaek) 8%, transparent); color:var(--svag);
   font-size:10.5px; font-weight:700; display:grid; place-items:center; }
 .side-punkt.valgt .nr { background:var(--accent); color:#fff; }
@@ -54,21 +54,27 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   padding:13px 17px; font-size:14px; margin-bottom:24px; }
 .flow { background:var(--kort); border:1px solid var(--linje); border-radius:16px; padding:20px; box-shadow:var(--skygge); }
 .flow svg { width:100%; height:auto; display:block; }
-.etape { background:var(--kort); border:1px solid var(--linje); border-radius:16px;
-  padding:16px 18px 18px; box-shadow:var(--skygge); margin-bottom:10px; }
+/* ---- Sekvenstræet ---- */
+.trae { position:relative; padding-left:34px; }
+.trae::before { content:""; position:absolute; left:11px; top:14px; bottom:22px; width:2px;
+  background:linear-gradient(180deg, var(--accent) 0%, var(--linje) 100%); border-radius:2px; }
+.etape { position:relative; background:var(--flade); border:1px solid var(--linje);
+  border-radius:16px; padding:15px 18px 17px; margin-bottom:14px; }
+.etape::before { content:""; position:absolute; left:-28px; top:19px; width:12px; height:12px;
+  border-radius:50%; background:#fff; border:2.5px solid var(--accent); }
+.etape.dok-etape { background:#fffdf8; border-color:#efe4cd; }
+.etape.dok-etape::before { border-color:var(--rav); }
 .etape-top { display:flex; align-items:baseline; gap:10px; margin-bottom:12px; }
-.etape-nr { width:24px; height:24px; border-radius:50%; background:var(--accent); color:#fff;
-  font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:12.5px;
-  display:grid; place-items:center; flex:none; }
-.etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:17px; }
+.etape-nr { display:none; }
+.etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:16.5px; }
 .etape-hvornaar { font-size:12px; color:var(--svag); margin-left:auto; }
 .net { display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:12px; }
 .pil { text-align:center; color:#b4b2a9; font-size:17px; line-height:1; margin:2px 0 10px; }
-.ikke { background:color-mix(in srgb, var(--blaek) 4%, transparent);
+.ikke { background:#fff;
   border:1px dashed var(--linje); border-radius:12px; padding:13px 16px; }
 .ikke .n { font-weight:700; font-size:14px; }
 .ikke .b { font-size:12.5px; color:var(--svag); margin-top:2px; }
-.dok { background:#fdf9ef; border:1px solid #e8dcc0; border-left:4px solid var(--rav);
+.dok { background:#fff; border:1px solid #e8dcc0; border-left:4px solid var(--rav);
   border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
   transition:transform .12s, border-color .12s; }
 .dok:hover { transform:translateY(-2px); border-color:var(--rav); }
@@ -120,6 +126,7 @@ textarea.oe-felt { min-height:96px; resize:vertical; font-size:14.5px; line-heig
 .oe-mrk { display:block; font-size:12px; font-weight:700; letter-spacing:.05em; text-transform:uppercase;
   color:var(--svag); margin:16px 0 7px; }
 .chips { display:flex; gap:8px; flex-wrap:wrap; }
+.laesfaner { display:flex; gap:8px; flex-wrap:wrap; margin:-8px 0 22px; }
 .chip { font:inherit; font-size:13.5px; background:var(--bg); border:1px solid var(--linje);
   border-radius:999px; padding:8px 16px; cursor:pointer; color:var(--blaek); }
 .chip:hover { border-color:var(--accent); }
@@ -143,7 +150,7 @@ textarea.oe-felt { min-height:96px; resize:vertical; font-size:14.5px; line-heig
 .oe-knapper button:hover { border-color:var(--accent); color:var(--accent); }
 .oe-tom { text-align:center; padding:40px 24px; color:var(--svag); font-size:15px;
   background:var(--kort); border:1px dashed var(--linje); border-radius:16px; }
-.hj { background:var(--kort); border:1px solid var(--linje); border-left:4px solid var(--linje);
+.hj { background:#fff; border:1px solid var(--linje); border-left:4px solid #dcd8cd;
   border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
   transition:transform .12s, border-color .12s; }
 .hj:hover { transform:translateY(-2px); border-color:var(--accent); }
@@ -236,7 +243,7 @@ button.k, a.k { font:inherit; font-size:14px; font-weight:700; border-radius:999
 button.k:hover, a.k:hover { border-color:var(--accent); color:var(--accent); }
 button.k.fyldt { background:var(--accent); color:#fff; border-color:var(--accent); }
 button.k.fyldt:hover { opacity:.9; color:#fff; }
-.bund { position:fixed; left:0; right:0; bottom:0; background:var(--kort); border-top:1px solid var(--linje);
+.bund { position:fixed; left:0; right:0; bottom:0; background:#fff; border-top:1px solid var(--linje);
   padding:14px 28px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; box-shadow:0 -4px 20px rgba(25,23,20,.06); }
 .bund .tekst { font-size:13.5px; color:var(--svag); margin-right:auto; }
 .tom { background:var(--kort); border:1px dashed var(--linje); border-radius:14px; padding:34px; text-align:center; color:var(--svag); font-size:15px; }
@@ -884,69 +891,108 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 
   var side = document.getElementById("side");
   var rude = document.getElementById("rude");
-  var valgt = null;
+  var valgt = null, laesFane = 0;
 
-  function alleEtaper() {
-    var ud = [];
-    // Læserne står øverst: det er dét, man kommer for at se om morgenen.
-    ud.push({ id: "laes", gruppe: "Læserne", nr: 1,
-              navn: "Overblik", laesertal: true });
-    ud.push({ id: "laesnyt", gruppe: "Læserne", nr: 2,
-              navn: "Nyhederne", laesertal: true });
-    ud.push({ id: "laestraf", gruppe: "Læserne", nr: 3,
-              navn: "Hvor de kommer fra", laesertal: true });
-    ETAPER.forEach(function (e, i) {
-      ud.push({ id: "c" + i, gruppe: "Crawleren · hver time", nr: i + 1,
-                navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, trin: e.trin });
-    });
-    LOOPETAPER.forEach(function (e, i) {
-      ud.push({ id: "n" + i, gruppe: "Arbejdsloopet · hvert døgn", nr: i + 1,
-                navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, dok: e.dok });
+  // Fire sektioner i menuen. Alt andet vises som et sekvenstræ inde i ruden.
+  function sektioner() {
+    var laes = [
+      { id: "laes",     nr: 1, navn: "Overblik",           laesertal: true },
+      { id: "laesnyt",  nr: 2, navn: "Nyhederne",          laesertal: true },
+      { id: "laestraf", nr: 3, navn: "Hvor de kommer fra", laesertal: true }
+    ];
+    var crawler = ETAPER.map(function (e, i) {
+      return { id: "c" + i, nr: i + 1, navn: e.navn, hvornaar: e.hvornaar,
+               ikke: e.ikke, trin: e.trin };
     });
     var placeret = {};
-    ud.forEach(function (e) { (e.trin || []).forEach(function (t) { placeret[t] = 1; }); });
+    crawler.forEach(function (e) { (e.trin || []).forEach(function (x) { placeret[x] = 1; }); });
     var glemte = Object.keys(S.hjerner).filter(function (n) { return !placeret[n]; });
-    if (glemte.length) ud.push({ id: "x", gruppe: "Crawleren · hver time", nr: "?",
-      navn: "Ikke placeret i flowet", hvornaar: "", trin: glemte });
-    return ud;
+    if (glemte.length) crawler.push({ id: "cx", nr: "?", navn: "Ikke placeret i flowet",
+                                      hvornaar: "", trin: glemte });
+    var loop = LOOPETAPER.map(function (e, i) {
+      return { id: "n" + i, nr: i + 1, navn: e.navn, hvornaar: e.hvornaar,
+               ikke: e.ikke, dok: e.dok, erDok: true };
+    });
+    return [
+      { id: "S-oensker", ikon: "✎", navn: "Mine ønsker",
+        under: "Skriv hvad du vil have lavet", enkeltdok: "oensker" },
+      { id: "S-laeserne", ikon: "◍", navn: "Læserne",
+        under: "Hvad folk faktisk læser", etaper: laes },
+      { id: "S-crawler", ikon: "⟳", navn: "Crawleren",
+        under: Object.keys(S.hjerner).length + " AI-trin i " + ETAPER.length +
+              " etaper · kører hver time", etaper: crawler },
+      { id: "S-loop", ikon: "◆", navn: "Arbejdsloopet",
+        under: "Sådan bliver siden bedre — 4 etaper", etaper: loop }
+    ];
   }
 
   function etapeAendret(e) {
     return (e.trin || []).some(erAendret) || (e.dok || []).some(dokErAendret);
   }
-
-  function tegnSide() {
-    var alle = alleEtaper(), sidsteGruppe = null;
-    side.innerHTML = alle.map(function (e) {
-      var g = e.gruppe !== sidsteGruppe ? '<div class="side-gruppe">' + esc(e.gruppe) + "</div>" : "";
-      sidsteGruppe = e.gruppe;
-      return g + '<button class="side-punkt' + (e.id === valgt ? " valgt" : "") +
-        '" data-etape="' + e.id + '"><span class="nr">' + e.nr + "</span>" +
-        "<span>" + esc(e.navn) + "</span>" +
-        (etapeAendret(e) ? '<span class="prik" title="ændret"></span>' : "") + "</button>";
-    }).join("");
+  function sektionAendret(s) {
+    if (s.enkeltdok) return dokErAendret(s.enkeltdok);
+    return (s.etaper || []).some(etapeAendret);
   }
 
-  function tegnRude() {
-    var e = alleEtaper().filter(function (x) { return x.id === valgt; })[0];
-    if (!e) return;
-    if (e.laesertal) { rude.innerHTML = (LAESERRUDER[e.id] || laeserOverblikHtml)(); return; }
+  function tegnSide() {
+    side.innerHTML = '<div class="side-gruppe">Kontrolpanel</div>' +
+      sektioner().map(function (s) {
+        return '<button class="side-punkt' + (s.id === valgt ? " valgt" : "") +
+          '" data-etape="' + s.id + '"><span class="nr">' + s.ikon + "</span>" +
+          "<span><b>" + esc(s.navn) + "</b><br><small style=\"opacity:.65;font-size:11.5px\">" +
+          esc(s.under) + "</small></span>" +
+          (sektionAendret(s) ? '<span class="prik" title="ændret"></span>' : "") + "</button>";
+      }).join("");
+  }
+
+  function etapeHtml(e) {
     var kasser = (e.ikke || []).map(function (k) {
       return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
              '<div class="b">' + esc(k[1]) + "</div></div>";
     }).concat((e.trin || []).map(trinHtml)).concat((e.dok || []).map(dokHtml));
-    var hjaelp = e.dok
-      ? "Gule kasser er dokumenter, du kan skrive i — de styrer arbejdsloopet. Grå og stiplede skriver maskinen selv."
-      : "Hvide kasser er AI-trin: klik for at skifte model eller instruks. Grå og stiplede er ikke AI.";
-    rude.innerHTML = "<h1>" + esc(e.navn) + "</h1>" +
-      '<p class="manchet">' + (e.hvornaar ? "<strong>" + esc(e.hvornaar) + "</strong> · " : "") +
-      hjaelp + "</p>" + '<div class="net">' + kasser.join("") + "</div>";
+    return '<div class="etape' + (e.erDok ? " dok-etape" : "") + '">' +
+      '<div class="etape-top"><span class="etape-navn">' + esc(e.navn) + "</span>" +
+      (e.hvornaar ? '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span>" : "") +
+      "</div>" + (kasser.length ? '<div class="net">' + kasser.join("") + "</div>" : "") +
+      "</div>";
+  }
+
+  function tegnRude() {
+    var s = sektioner().filter(function (x) { return x.id === valgt; })[0];
+    if (!s) return;
+    if (s.enkeltdok) {
+      rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
+        '<p class="manchet">Skriv det, du vil opnå — sessionen læser listen, før den ' +
+        "gør noget andet, og oversætter hvert ønske til en rigtig opgave.</p>" +
+        '<div class="net">' + dokHtml(s.enkeltdok) + "</div>";
+      return;
+    }
+    if (s.etaper[0] && s.etaper[0].laesertal) {
+      rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
+        '<div class="laesfaner" id="laesfaner">' + s.etaper.map(function (e, i) {
+          return '<button class="chip' + (i === laesFane ? " valgt" : "") +
+            '" data-fane="' + i + '">' + esc(e.navn) + "</button>"; }).join("") + "</div>" +
+        '<div id="laesindhold"></div>';
+      var e = s.etaper[laesFane] || s.etaper[0];
+      document.getElementById("laesindhold").innerHTML =
+        (LAESERRUDER[e.id] || laeserOverblikHtml)();
+      document.getElementById("laesfaner").addEventListener("click", function (ev) {
+        var c = ev.target.closest("[data-fane]");
+        if (c) { laesFane = +c.dataset.fane; tegnRude(); }
+      });
+      return;
+    }
+    var hjaelp = s.id === "S-loop"
+      ? "Gule kasser er dokumenter, du kan skrive i — de styrer, hvad sessionen laver."
+      : "Hvide kasser er AI-trin: klik for at skifte model eller instruks. " +
+        "Grå og stiplede er ikke AI — de gør noget mekanisk.";
+    rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
+      '<p class="manchet">' + esc(s.under) + " · " + hjaelp + "</p>" +
+      '<div class="trae">' + s.etaper.map(etapeHtml).join("") + "</div>";
   }
 
   function tegn() {
-    // Er der læsertal, åbner panelet på dem. Er der ikke, bliver det stående
-    // hvor det plejede - så intet ændrer sig, før tokenet er sat.
-    if (!valgt) valgt = harFil ? "laes" : "c1";
+    if (!valgt) valgt = "S-crawler";
     tegnSide(); tegnRude();
     var n = Object.keys(S.hjerner).filter(erAendret).length +
             Object.keys(dokAendret).filter(dokErAendret).length;
