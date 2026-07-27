@@ -47,6 +47,63 @@ alle. Det er værd at kigge på, før nogen bygger.
 
 **Ekstra kørsel 19:45 (chat):** klarede 1 punkt mere — de to manglende sitemaps er nu indsendt i Search Console.
 
+**Ekstra kørsel 19:55 (chat):** køens øverste punkt var ikke en opgave, men et mål, og er derfor lagt om. Se nedenfor.
+
+---
+
+## 2026-07-27 (ekstra kørsel kl. 19:55, chat) · Køens øverste punkt kunne aldrig blive færdigt
+
+**Fandt:** Torben skrev, at punkt 1 aldrig forsvinder fra køen. Han har ret, og
+det var ikke en fejl i panelet. Punktet hed *"Ingen kan finde siden"* — det er
+en **tilstand**, ikke en opgave. Der findes ingen handling, en session kan
+udføre og hakke af, så hver eneste kørsel gjorde det eneste, den kunne: skrev
+endnu en måling ind i punktet. Det er nu vokset til 15 linjer, og fordi det står
+i trin 1 med `Rammer: 440 visninger/7 dage`, sorterede fase 3 det tilbage øverst
+hver gang. Reelt spærrede det for de punkter, der faktisk kan laves — og det er
+i forvejen punkt 10 i `redaktionens-oejne.md`, altså allerede dét, alt måles op
+imod.
+
+**Gjorde:** delte punktet op i dets bestanddele og skrev en regel, så det ikke
+sker igen.
+
+- **Reglen** står nu i forordet til `opgavekoe.md`: et punkt i køen skal kunne
+  blive færdigt. Mål hører hjemme i målestokken. Kan et fund ikke skrives som
+  "gør X, og mål Y bagefter", er det en mistanke eller et mål — ikke et punkt.
+- **Det store mål** står samme sted som et fremhævet afsnit med tallene (240
+  besøg på syv dage, 229 direkte, 19 fra Facebook, 4 fra Google, 3 fra
+  Buttondown) — men uden afkrydsningsfelt, så det ikke kan sorteres ind i køen.
+  Tallene er stadig baggrunden for rækkefølgen; de er bare ikke længere en
+  opgave, ingen kan løse.
+- **Den målte del, der var lavet, er lukket:** de to uindsendte sitemaps ligger
+  nu under `## Klaret`.
+- **Den målte del, der kan laves, er skrevet som eget punkt:** *"Ni faste sider
+  fik nul besøg på syv dage"* — `erhverv`, `prompt-arkiv`, `ordbog`, `quiz`,
+  `vaerktoejer`, `faq`, `om`, `guide-igang`, `guide-sikkerhed`, alle på nul
+  besøg og nul visninger i `data/laesertal.json`. Mindste rettelse: mål antallet
+  af links fra forsiden til hver af dem, ret det billigste sted. Trin 3.
+- **Den del, der kun kan måles med tiden, er blevet et fast spørgsmål:** *"Hvad
+  har Google faktisk indekseret?"* under `## Fast gennemgang`, med
+  *Sidst set: 27.07.2026*.
+- **Den del, kun Torben kan svare på, er blevet et spørgsmål til redaktionen:**
+  *"Hvor skal læserne komme fra?"* under `## Venter på redaktionen`. Opslags-
+  maskinen er bygget, men `OPSLAG_LIVE` står på nej, og der findes ingen
+  Facebook-side, LinkedIn-side eller Bluesky-konto. Ingen kørsel må oprette
+  konti eller sende noget ud.
+
+**Testede:** filen har stadig præcis de seks lister plus "Ting kun et menneske
+kan gøre", de tre trin-overskrifter står urørt, og panelets egen opdeling
+(alt før `## Kø`, selve køen, halen fra næste `## `) rammer stadig rigtigt —
+køen fylder 6.209 tegn med 7 åbne punkter, forordet bærer reglen, og halen bærer
+de tre nye afsnit. Ordene "Ingen kan finde siden" står 0 steder tilbage.
+`skriv_hjerne_status()` kørt bagefter, så panelet viser den nye kø:
+`data/hjerne-data.js` er 159 kB, og den gamle formulering er væk også dér.
+
+**Til redaktionen:** øverst i køen står nu **dubletfangeren** — 47 artikler,
+der er slået sammen med urelaterede historier. Det er et punkt, der kan gøres
+færdigt. Læs advarslen i køen først: rettelsen kan gøre forsiden mere rodet,
+hvis nogle af de 22 par faktisk var dubletter, og de er stikprøvet, ikke læst
+igennem.
+
 ---
 
 ## 2026-07-27 (ekstra kørsel kl. 19:45, chat) · To af tre sitemaps var aldrig indsendt i Search Console

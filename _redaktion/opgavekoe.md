@@ -24,6 +24,22 @@ om — og **hvem det rammer**, målt i sidevisninger de sidste syv dage. Uden de
 er "det, der rammer flest læsere, kommer først" et gæt, og gættet har været
 forkert: en hel uges arbejde gik på sider med to visninger tilsammen.
 
+**Et punkt i køen skal kunne blive færdigt.** Det skal være noget, én session kan
+gøre og teste, så feltet kan hakkes af og punktet forsvinder herfra. Et *mål* er
+ikke et punkt: "ingen kan finde siden" kan aldrig blive færdigt, så det stod
+øverst i dagevis og spærrede for alt under sig, mens hver kørsel bare skrev endnu
+en måling på det. Mål hører hjemme i `redaktionens-oejne.md` — de ti punkter dér
+er dét, køen bedømmes op imod. Kan et fund ikke skrives som "gør X, og mål Y
+bagefter", er det enten en mistanke eller et mål, og så skal det ikke i køen.
+
+**Dét, hele køen måles op imod — og som ikke selv er en opgave:** siden skal nå
+nogen. Målt 27.07, syv dage: **240 besøg**, hvoraf **229 er direkte trafik til
+forsiden** — altså redaktionen selv, bogmærker og appen. Udefra kom **19 besøg
+fra Facebook, 4 fra Google og 3 fra Buttondown**, og artikelsiderne fik **2
+visninger tilsammen**. Ethvert punkt i køen forbedrer altså noget, som under 30
+mennesker udefra ser om ugen. Det tal er baggrunden for rækkefølgen — det er
+ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
+
 ---
 
 ## Kø
@@ -33,25 +49,6 @@ forkert: en hel uges arbejde gik på sider med to visninger tilsammen.
 `## Mistanker` og `## Fast gennemgang` længere nede.*
 
 ### 1 — I stykker for læseren lige nu
-
-- [ ] **Ingen kan finde siden. 141 artikelsider fik 2 sidevisninger på en uge.**
-      Målt 27.07 i `data/laesertal.json`, 7 dage: **248 besøg i alt, hvoraf 222 er
-      direkte trafik til forsiden** — altså redaktionen selv, bogmærker og appen.
-      Udefra kom der **19 besøg fra Facebook, 4 fra Google og 3 fra Buttondown**.
-      De 141 artikelsider fik **2 visninger tilsammen**, begge fra nogen der
-      klikkede fra forsiden; ingen kom fra en søgning. `prompt-arkiv.html`,
-      `quiz.html` og `vaerktoejer.html` fik nul.
-      **Rammer: 440 visninger/7 dage (forsiden)** — det er alt, hvad der er.
-      Ethvert andet punkt i denne kø forbedrer noget, som under 30 mennesker
-      udefra ser om ugen.
-      *Målt 27.07 kl. 19:45 direkte i Search Console (chat-kørsel med
-      browseradgang): sitemap.xml var indsendt 22.07 (Succes, 30 sider), men
-      sitemap-artikler.xml og sitemap-videoer.xml var ALDRIG indsendt — Google
-      kendte ingen af de 132 artikel-/videosider. Begge er nu indsendt:
-      artikler = Succes/91 sider straks; videoer = "Kunne ikke hentes" (kendt
-      ventestatus lige efter indsendelse; XML verificeret gyldig). Næste
-      måling: GSC's Sider-rapport + laesertal.json om nogle dage.*
-      *Punkt 10.*
 
 - [ ] **Dubletfangeren slår urelaterede historier sammen — 47 artikler er væk
       fra forsiden.** Målt 27.07. `saml_dublet_historier` sender op til 130
@@ -100,6 +97,21 @@ forkert: en hel uges arbejde gik på sider med to visninger tilsammen.
 *Ingen kendte lige nu.*
 
 ### 3 — Gør siden mærkbart bedre
+
+- [ ] **Ni faste sider fik nul besøg på syv dage.** Målt 27.07 i
+      `data/laesertal.json`: `erhverv.html`, `prompt-arkiv.html`, `ordbog.html`,
+      `quiz.html`, `vaerktoejer.html`, `faq.html`, `om.html`, `guide-igang.html`
+      og `guide-sikkerhed.html` står alle på **nul besøg og nul visninger** —
+      ikke få, nul. `laer.html` fik til sammenligning 100 visninger, hver eneste
+      indefra. Det er lære-indholdet, som målestokkens punkt 7 siger, læseren
+      skal komme tilbage til.
+      **Mindste rettelse:** mål først, hvor mange links på forsiden der faktisk
+      fører til hver af de ni — samme metode som "Kørekortet er gemt bag
+      nyhederne", der fandt 2 af 56 — og ret så det billigste sted. Ingen ny
+      side, ingen ombygning.
+      **Rammer: 440 visninger/7 dage (forsiden)** — det er det eneste sted, en
+      vej ind kan bygges.
+      *Punkt 7 og 10.*
 
 - [ ] **39 dubletsider modsiger sig selv over for Google.** Målt 27.07:
       `_peg_dubletsider_mod_hovedhistorien` retter kun `<link rel="canonical">`.
@@ -166,6 +178,12 @@ hører de ikke til i en kø. Har sessionen plads, eller er køen tom, tages **de
 der har ventet længst**. Én time, ikke mere. Findes der et målt problem, skrives
 det i køen; ellers noteres bare, at den holder. Sæt dagens dato på uanset hvad.
 
+- **Hvad har Google faktisk indekseret?** Sitemappene blev indsendt 27.07;
+  Search Consoles Sider-rapport er dét, der viser, om de 132 artikel- og
+  videosider kommer med — og `data/laesertal.json` viser, om det giver besøg.
+  Kræver browseradgang, så det kan kun gøres i en chat-kørsel. *Punkt 10.*
+  *Sidst set: 27.07.2026 — indsendt, endnu ikke indekseret.*
+
 - **Gennemgå kategoriseringen.** Ligger artiklerne i de rigtige kategorier,
   eller ender for meget i "Lanceringer"? *Punkt 6.*
   *Sidst set: aldrig.*
@@ -225,6 +243,15 @@ det i køen; ellers noteres bare, at den holder. Sæt dagens dato på uanset hva
 
 Målt og forstået, men må ikke bygges, før nogen har taget stilling. De sorteres
 ikke med i køen, og sessionen skal ikke gætte svaret.
+
+- **Hvor skal læserne komme fra?**
+  *Målt 27.07, syv dage: 19 besøg fra Facebook, 4 fra Google, 3 fra Buttondown —
+  resten er direkte. Sitemappene er nu indsendt, og det kan hjælpe hos Google,
+  men kun hos Google. Opslagsmaskinen er bygget og kører tørt (`OPSLAG_LIVE`
+  står på nej), og der findes hverken en Facebook-side, en LinkedIn-side eller
+  en Bluesky-konto. Sessionen må ikke oprette konti eller sende noget ud på
+  nogen platform. Uden en beslutning her kan intet punkt i køen flytte tallet —
+  se `## Ting kun et menneske kan gøre` nederst.*
 
 - **Skal `articles.json` blive et rigtigt 30-dages-arkiv?**
   *Spørgsmålet: forsiden ville vise mærkbart flere artikler, arkivet ville veje
@@ -286,6 +313,18 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **To af tre sitemaps var aldrig indsendt i Search Console.**
+      *(27.07.2026, ekstra kørsel kl. 19:45 — chat med browseradgang)* Det stod
+      i køen som en formodning, ingen kunne måle. Målt direkte i Search Console:
+      `sitemap.xml` var indsendt 22.07 (Succes, 30 sider), men
+      **`sitemap-artikler.xml` (91 sider) og `sitemap-videoer.xml` (41 sider)
+      var aldrig indsendt** — Google havde aldrig fået at vide, at de 132
+      artikel- og videosider fandtes. Begge er nu indsendt: artikler gik straks
+      til **Succes / 91 sider**, videoer står på "Kunne ikke hentes", som er den
+      kendte ventestatus lige efter indsendelse (XML'en er verificeret gyldig,
+      41 `<loc>`, HTTP 200). Om det flytter læsertallet, kan først måles om
+      nogle dage — dét spørgsmål står nu i `## Fast gennemgang`. *Punkt 10.*
 
 - [x] **Indsend sitemappene i Google Search Console.** *(27.07.2026, ekstra
       kørsel i chat)* Chat-sessionen har adgang til redaktionens browser og
