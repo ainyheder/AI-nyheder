@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T08:12:39.135398+00:00",
+ "opdateret": "2026-07-27T08:57:45.009655+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,7 +67,7 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     1,
+     0,
      26
     ]
    },
@@ -172,7 +172,7 @@ window.LAESERTAL = {
      8,
      5,
      1,
-     1,
+     2,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 224,
- "sidevisninger_i_alt": 688,
+ "besoeg_i_alt": 235,
+ "sidevisninger_i_alt": 699,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 209,
-   "visninger": 416
+   "besoeg": 220,
+   "visninger": 427
   },
   {
    "sti": "/tak.html",
@@ -362,7 +362,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 198
+   "besoeg": 209
   },
   {
    "fra": "l.facebook.com",
@@ -395,8 +395,8 @@ window.LAESERTAL = {
    },
    {
     "fra": "direkte",
-    "besoeg": 186,
-    "visninger": 186
+    "besoeg": 197,
+    "visninger": 197
    },
    {
     "fra": "l.facebook.com",
@@ -757,7 +757,7 @@ window.LAESERTAL = {
    "sti": "/artikel/c13d67073208cf10.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Cloudflare åbner for AI-afregning til kunder",
+   "rubrik": "Cloudflare giver kunderne våben mod AI-bots",
    "kategori": "Lanceringer",
    "dato": "2026-07-25",
    "henvisere": [
