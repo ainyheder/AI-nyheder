@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T12:47:43.191546+00:00",
+ "opdateret": "2026-07-27T13:47:35.077262+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     27
+     29
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      3,
      2,
-     0
+     1
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      3,
      3,
      0,
-     0
+     1
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      5,
      1,
      2,
-     0
+     1
     ]
    },
    {
@@ -204,7 +204,7 @@ window.LAESERTAL = {
      0,
      1,
      2,
-     4,
+     5,
      4,
      0,
      0,
@@ -240,209 +240,59 @@ window.LAESERTAL = {
      1,
      0,
      4,
-     4,
+     5,
      0,
      0,
      1
-    ]
-   },
-   {
-    "navn": "Nyheder",
-    "tal": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     1,
-     0,
-     0,
-     1
-    ]
-   },
-   {
-    "navn": "Dybde",
-    "tal": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     3
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 252,
- "sidevisninger_i_alt": 718,
+ "besoeg_i_alt": 240,
+ "sidevisninger_i_alt": 690,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 237,
-   "visninger": 444
-  },
-  {
-   "sti": "/tak.html",
-   "besoeg": 3,
-   "visninger": 5
+   "besoeg": 220,
+   "visninger": 440
   },
   {
    "sti": "/youtube.html",
-   "besoeg": 3,
-   "visninger": 20
+   "besoeg": 20,
+   "visninger": 40
   },
   {
    "sti": "/laer.html",
-   "besoeg": 2,
-   "visninger": 88
-  },
-  {
-   "sti": "/velkommen.html",
-   "besoeg": 2,
-   "visninger": 3
-  },
-  {
-   "sti": "/om.html",
-   "besoeg": 1,
-   "visninger": 8
-  },
-  {
-   "sti": "/koerekort.html",
-   "besoeg": 1,
-   "visninger": 26
-  },
-  {
-   "sti": "/uge.html",
-   "besoeg": 1,
-   "visninger": 72
-  },
-  {
-   "sti": "/erhverv.html",
-   "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/about",
-   "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/koerekort-2.html",
    "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/guide-igang.html",
-   "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/artikel/c13d67073208cf10.html",
-   "besoeg": 0,
-   "visninger": 1
+   "visninger": 100
   },
   {
    "sti": "/prompts.html",
    "besoeg": 0,
-   "visninger": 14
+   "visninger": 10
   },
   {
-   "sti": "/koerekort-6.html",
+   "sti": "/koerekort.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 30
   },
   {
-   "sti": "/faq.html",
+   "sti": "/uge.html",
    "besoeg": 0,
-   "visninger": 9
-  },
-  {
-   "sti": "/koerekort-1.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/1de8660326e5e2b6.html",
-   "besoeg": 0,
-   "visninger": 1
+   "visninger": 60
   },
   {
    "sti": "/guide-prompts.html",
    "besoeg": 0,
-   "visninger": 8
-  },
-  {
-   "sti": "/koerekort-7.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/artikel/7280fe4d8d9af175.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/guide-sikkerhed.html",
-   "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/ordbog.html",
-   "besoeg": 0,
-   "visninger": 3
+   "visninger": 10
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 226
+   "besoeg": 229
   },
   {
    "fra": "l.facebook.com",
@@ -470,8 +320,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 214,
-    "visninger": 214
+    "besoeg": 217,
+    "visninger": 217
    },
    {
     "fra": "herfra selv",
@@ -499,18 +349,6 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
-  "/tak.html": [
-   {
-    "fra": "buttondown.com",
-    "besoeg": 3,
-    "visninger": 3
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
   "/youtube.html": [
    {
     "fra": "herfra selv",
@@ -535,28 +373,11 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/velkommen.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 2,
-    "visninger": 2
-   },
+  "/prompts.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 7
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
+    "visninger": 14
    }
   ],
   "/koerekort.html": [
@@ -583,116 +404,24 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/erhverv.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/about": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/koerekort-2.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/guide-igang.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/artikel/c13d67073208cf10.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 14
-   }
-  ],
-  "/koerekort-6.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/faq.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 9
-   }
-  ],
-  "/koerekort-1.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/1de8660326e5e2b6.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/guide-prompts.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 8
    }
-  ],
-  "/koerekort-7.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/7280fe4d8d9af175.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/guide-sikkerhed.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/ordbog.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
   ]
  },
  "faste_uden_besoeg": [
+  "/erhverv.html",
   "/prompt-arkiv.html",
+  "/ordbog.html",
   "/quiz.html",
-  "/vaerktoejer.html"
+  "/vaerktoejer.html",
+  "/faq.html",
+  "/om.html",
+  "/guide-igang.html",
+  "/guide-sikkerhed.html"
  ],
  "serie": [
   {
@@ -846,61 +575,6 @@ window.LAESERTAL = {
    "visninger": 10
   }
  ],
- "artikler": [
-  {
-   "sti": "/artikel/c13d67073208cf10.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Cloudflare giver kunder nye våben mod AI-bots",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-25",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/1de8660326e5e2b6.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI og DeepMind satser på amerikansk forskning",
-   "kategori": "Samfund & etik",
-   "dato": "2026-07-22",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/7280fe4d8d9af175.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Runway lancerer AI-ruter til video og billeder",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-23",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  }
- ],
- "laeste_temaer": [
-  {
-   "navn": "Lanceringer",
-   "visninger": 2
-  },
-  {
-   "navn": "Samfund & etik",
-   "visninger": 1
-  }
- ]
+ "artikler": [],
+ "laeste_temaer": []
 };
