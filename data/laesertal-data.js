@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T08:57:45.009655+00:00",
+ "opdateret": "2026-07-27T09:16:38.377486+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -63,7 +63,7 @@ window.LAESERTAL = {
      0,
      0,
      1,
-     2,
+     1,
      1,
      1,
      0,
@@ -98,10 +98,10 @@ window.LAESERTAL = {
      0,
      3,
      1,
-     6,
+     7,
      6,
      2,
-     2,
+     3,
      2,
      0
     ]
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 235,
- "sidevisninger_i_alt": 699,
+ "besoeg_i_alt": 248,
+ "sidevisninger_i_alt": 713,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 220,
-   "visninger": 427
+   "besoeg": 233,
+   "visninger": 440
   },
   {
    "sti": "/tak.html",
@@ -349,6 +349,11 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
+   "sti": "/artikel/7280fe4d8d9af175.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/guide-sikkerhed.html",
    "besoeg": 0,
    "visninger": 3
@@ -362,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 209
+   "besoeg": 222
   },
   {
    "fra": "l.facebook.com",
@@ -389,14 +394,14 @@ window.LAESERTAL = {
  "sidehenvisere": {
   "/": [
    {
+    "fra": "direkte",
+    "besoeg": 210,
+    "visninger": 210
+   },
+   {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 207
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 197,
-    "visninger": 197
    },
    {
     "fra": "l.facebook.com",
@@ -580,6 +585,13 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
+  "/artikel/7280fe4d8d9af175.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/guide-sikkerhed.html": [
    {
     "fra": "herfra selv",
@@ -748,8 +760,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-07-27",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -767,12 +779,27 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
+  },
+  {
+   "sti": "/artikel/7280fe4d8d9af175.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Runway lancerer AI-ruter til video og billeder",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-23",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
   }
  ],
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 1
+   "visninger": 2
   }
  ]
 };
