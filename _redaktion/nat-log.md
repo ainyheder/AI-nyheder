@@ -4,6 +4,657 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+### Nattens regnskab · 2026-07-27
+
+**Klaret: 4 punkter** — 2 bygget og testet, 2 lukket ved at måle dem.
+
+1. Feed, ugeside, nyhedsbrev **og opslag** linker nu til den permanente
+   artikelside i stedet for `#a=`.
+2. 8 canonical-kæder brudt; 7 levende artikler fik deres egen canonical og
+   deres navne tilbage og kom i sitemappet *(fund uden for køen)*.
+3. *"Er dagens overblik virkelig dagens vigtigste fem?"* — målt: ja, 4 af 5
+   er de højest prioriterede, og den femte er et forsvarligt redaktionelt valg.
+   Intet at rette.
+4. *"Tjek dubletfangeren"* — undersøgt, og svaret blev det stik modsatte af
+   spørgsmålet. Se nedenfor.
+
+**Nye i køen: 2** af de 4, jeg måtte skrive. Jeg fandt ikke flere, der kunne
+svare på alle tre spørgsmål, og skrev derfor ikke flere.
+
+**Gennemgik i fase 2:** `uge.html` som læser (den er ærlig om sin alder og sin
+uge — intet at rette dér), de 41 videosiders canonical og sitemap (**0 fejl**),
+`brief.json` mod crawlerens egen kandidatliste, hvor uge.html linkes fra (2
+rodsider + sitemap — fint), og **de 13 dubletgrupper i `articles.json`**.
+
+**Den sidste var ikke en gennemgang, der endte i ingenting.** Køen spurgte, om
+dubletfangeren var for *forsigtig*. Den er det modsatte: 13 grupper har slugt
+**47 artikler**, og af de 38, jeg kan sammenligne teksten på, deler **25 under
+5 % af deres ord** med den historie, de er lagt ind under — median 3,4 %.
+"Monday.com fyrer 600" ligger under "Anthropic sender billigere AI-model".
+`saml_dublet_historier` bruger AI'ens grupper, som de kommer, med kun ét værn:
+at datoerne ligger inden for 3 dage. Det er dét, der fryser artikelsider, sender
+canonical det forkerte sted hen og giver falske vindere +1 i prioritet — altså
+årsagen bag begge de punkter, jeg rettede i nat.
+
+**Øverst i køen nu:** *Dubletfangeren slår urelaterede historier sammen.*
+Rækkefølgen ændrede sig, fordi de to ting, jeg rettede i nat, viste sig at være
+symptomer på den samme årsag — og fordi 47 artikler, der ikke er på forsiden, er
+det eneste punkt i køen, der er i stykker for læseren lige nu.
+
+**Vær uenig her, hvis du vil:** rettelsen kan gøre forsiden mere rodet, hvis
+nogle af de 22 par faktisk *var* dubletter. Jeg har stikprøvet, ikke læst dem
+alle. Det er værd at kigge på, før nogen bygger.
+
+---
+
+## 2026-07-27 · 7 gode artikler var usynlige for Google — og viste gamle rubrikker
+
+*(Fund uden for køen. Det dukkede op, mens jeg testede punktet nedenfor.)*
+
+**Fandt:** Jeg ville have `_dele_link` til at følge en dubletsides canonical
+hjem til hovedhistorien. Målingen stoppede mig: **8 af 112 artikelsider stod i
+en canonical-kæde** — A peger på B, som peger videre på C. En side om en gratis
+videoeditor til Mac pegede via to led på "AI Kill Switch Act". Havde jeg fulgt
+kæden, ville nyhedsbrevet have sendt folk til den forkerte historie. Så jeg
+fjernede følgeren igen og gik efter kæderne i stedet.
+
+Og de 8 var ikke tilfældige. **7 af dem var levende, selvstændige artikler** med
+egen rubrik i `articles.json` — forsiden viser dem, deleknapperne deler dem, og
+`_dele_link` sender nyhedsbrevet til dem. Alligevel sagde deres side til Google,
+at den rigtige udgave var en helt anden historie:
+
+| Siden handler om | ...men fortalte Google, at den rigtige var |
+|---|---|
+| Ny gratis AI-videoredigering til din Mac | AI Kill Switch Act |
+| Patreon skærer i staben | Monday.com fyrer 600 |
+| Hyundai afviser: robotter er ikke stridspunkt | Google giver gratis AI-adgang |
+| Sådan vil AI skabe fremtidens medicin | AlphaFold og genredigering |
+
+Og fordi `_dubletsider_paa_disk` netop læser den canonical, stod **0 af de 7 i
+sitemappet**. Indhold vi selv promoverer, kunne Google hverken finde eller
+tilskrive os. *Punkt 10 — og punkt 5: siden påstod noget om sig selv, der ikke
+var sandt.*
+
+**Årsagen er mekanisk.** `_peg_dubletsider_mod_hovedhistorien` peger en tabers
+side mod vinderen og ser aldrig på den igen. Bliver vinderen senere selv slået
+sammen — hvilket sker oftere, siden `_slaa_sammen` 26.07 begyndte at vælge den
+fyldigste udgave frem for den første — så står kæden der. Git bekræfter det:
+`fa7a24d1`s canonical blev ændret fra sig selv til `668efd44` i commit `906b9d8`
+26.07, og `668efd44` blev selv en taber bagefter.
+
+**Der lå mere under.** Da de 7 sider holdt op med at være dubletter, byggede
+`lav_artikelsider` dem forfra — og de havde stået frosne med **gamle rubrikker
+uden navne**, fordi navne-rettelsen 26.07 aldrig nåede dem:
+
+- "Politikere kræver nødstop for AI-systemer" → **"Ted Lieu og Nathaniel Moran
+  vil have nødstop på AI"**
+- "Sådan vil AI skabe fremtidens livreddende medicin" → **"AstraZeneca bruger AI
+  til at designe ny medicin"**
+- "Canadisk politiker læste OpenAI-svar op" → **"CBC: Canadisk politiker læste
+  ChatGPT-svar op"**
+- "Patreon skærer i staben efter store teknologiske ændringer" → **"Patreon fyrer
+  hver femte medarbejder"**
+
+Det er præcis målestokkens punkt 1. De sad fast, fordi en dubletside aldrig
+skrives om.
+
+**Gjorde:** Nyt `_bryd_canonical_kaeder()` i `crawler.py`, kaldt i
+`lav_artikelsider` mellem sammenlægningen og `_dubletsider_paa_disk` —
+rækkefølgen er nødvendig, ellers når de rettede sider ikke i sitemappet før
+næste dag. Den rører **kun kædehoveder**. En almindelig dublet, hvis mål selv er
+hovedhistorie, bliver stående urørt: det er dét, `_dubletsider_paa_disk` kalder
+permanent hukommelse, og en enkelt kørsel, hvor vinderen mangler i feedet, må
+ikke kunne vælte den. En kæde er derimod aldrig rigtig. Er kædehovedet en levende
+selvstændig artikel, får det sin egen canonical tilbage; ellers foldes kæden ud
+til sin ende.
+
+Efter: **0 kæder, 39 dubletter (var 46), sitemappet 53 → 60 URL'er**, og de 7
+sider er bygget forfra med nuværende rubrik, resumé og billede.
+
+**Testede:** 135 påstande, alle grønne — og prøven **bygger sine egne kæder** i
+en kopi af `artikel/`, så den giver samme svar, næste gang nogen kører den.
+Dækket: levende artikel i kæde får sig selv, ægte dublet foldes ud til enden,
+almindelig dublet røres ikke (heller ikke når vinderen mangler i dagens liste —
+timeout-scenariet), kæde mod en side der ikke findes lades stå, løkke A→B→A
+hænger ikke, syv slags vrøvl-input, og **hver eneste fil er kun ændret i
+canonical-linjen**. Dertil 21 påstande på de 7 reparerede sider: canonical og
+`og:url` er enige, de står i sitemappet, ingen `noindex`, gyldig JSON-LD,
+billederne findes. Tørløbet blev kørt i en kopi først — **og den første kopi
+gav et falsk tal**: jeg havde glemt `data/img/`, så alle billeder så ud til at
+mangle, og tørløbet sagde 53 ændrede filer. Med `data/img/` med er tallet **8**.
+
+**Til Torben:**
+
+1. **Sitemappet er indsendt til Google?** Hvis ja, får det nu 7 sider mere.
+   Hvis nej, står instruksen stadig i loggen fra 25.07 — det er den eneste
+   grund til, at ingen artikelsider er indekseret.
+2. **En ting mere, jeg IKKE har rettet:** alle 39 dubletsider har en canonical
+   mod hovedhistorien, men deres `og:url` og JSON-LD-`@id` peger stadig på dem
+   selv. Det er modstridende signaler til Google. Det er ikke i stykker, og det
+   har været sådan hele tiden — men det er et rigtigt punkt, og det står nu i køen.
+
+---
+
+## 2026-07-27 (kørslen kl. 09:30) · Feed, ugeside, nyhedsbrev og opslag linker nu permanent
+
+**Fandt:** Køens tal holdt næsten, men billedet var skarpere end beskrevet.
+58 af 84 artikler har en permanent side, og **alle 58 filer findes faktisk på
+disken** — nul løfter om sider, der ikke er skrevet. Det interessante var
+fordelingen: **feedets 40 punkter deler sig i præcis 20 med side og 20 uden,
+og alle 20 uden er `kun_aktuel`** (Ingeniøren og Version2, hvor udgiveren
+forbyder et arkiv). De skal *ikke* have en permanent side. Så tilbagefaldet til
+`#a=` er ikke en mangel — det er det rigtige svar for præcis den halvdel.
+
+**Køens forslag var mere arbejde end nødvendigt.** Der stod, at `side` skulle
+skrives med i `uge.json`, før ugesiden og nyhedsbrevet kunne linke permanent.
+Det behøves ikke: slugget er en ren md5 af linket, så siden kan slås op på
+disken ud fra linket alene. Det er ikke bare enklere — det er **bedre**, fordi
+det også rammer historier, der er ude af `articles.json`, altså netop dem `#a=`
+ikke kan finde. Ingen dataformat-ændring, og rettelsen virker bagud.
+
+**Gjorde:** Ét nyt `_dele_link()` i `crawler.py` og fire kaldesteder:
+`lav_rss` (feed.xml), `_uge_side_html` (ugesiden), `_send_nyhedsbrev` og
+**opslagene** — det fjerde sted, køen ikke nævnte. Opslagene pegede før på den
+bare forside, når artiklen ingen side havde; nu på `#a=`, så læseren i det
+mindste lander i historien. Samme argument som for mailen: et opslag kan ikke
+kaldes tilbage. Tre nu overflødige `from urllib.parse import quote` fjernet.
+`feed.xml` og `uge.html` genskrevet, så disken svarer til koden.
+
+**Testede:** 86 påstande, alle grønne — `_dele_link` mod virkelige data, mod
+tom streng, `None`, `javascript:`, 4.000 tegn, æøå og stitraversering, plus
+feed.xml parset som XML, ugesiden regex'et igennem og nyhedsbrevet bygget med
+`hent_url` erstattet af en falsk funktion (ingen mail sendt, nøglen fjernet
+igen). **Prøven er kørt mod `HEAD` uden rettelsen: 25 røde, 0 efter.**
+Samlet prøve: `ast.parse` OK, ingen dobbeltdefinerede konstanter på
+modulniveau, forsiden i jsdom mod de rigtige datafiler **11 påstande grønne** —
+kort tegnet, Dagens overblik tegnet med punkter, klik åbner læseren, lukkeknap
+findes, og spring-over-linket, `<main>` og deleknappernes `a.side`-regel står
+urørt. `uge.html` genskabt: præcis **1 linje ind, 1 ud**.
+
+**To fejl hos mig selv undervejs.** (1) Min påstand om stitraversering var
+forkert: `..` havner i *fragmentet* (`#a=..%2F..`), som aldrig når en server, og
+alle skråstreger er %-kodet — sti-delen er altid bare `https://ainyheder.com/`.
+Påstanden spørger nu om sti-delen. (2) Jeg byggede først en canonical-følger
+ind i `_dele_link` og **fjernede den igen**, da målingen viste hvorfor — se
+næste log-post.
+
+**Til Torben:**
+
+1. **Effekten er størst fremad.** `uge.html` går fra 0 til 1 permanent link af
+   5, fordi fire af den nuværende uges historier slet ikke har en side på
+   disken. Men **ugens otte kandidater lige nu har alle otte en side**, så
+   næste fredags nyhedsbrev bliver 5 af 5 permanente. Feedet er 20 af 40 fra nu.
+2. **`natsession.md` linje 78 — sjette gang.** `git status --short` lagde
+   `.git/index.lock` igen, og jeg kunne ikke fjerne den, før jeg havde bedt om
+   lov til at slette i mappen. Den er væk nu. `git --no-optional-locks status
+   --short` gør det samme uden at låse. Ét ord i instruksen.
+
+---
+
+> **⚠️ Læs det her først — du har allerede pushet rettelsen.**
+>
+> Jeg startede 03:01 og var færdig 08:50. **Kl. 08:48 committede og pushede du,
+> og med i den commit (`b48209d`) lå min ændring i `index.html`.** Du havde ikke
+> set den. Det gik godt — den var færdig og testet på det tidspunkt, 39 påstande
+> grønne, og den samlede prøve på forsiden er også grøn. Men det var held, ikke
+> planlægning, og det er værd at vide: **rører jeg en fil i det vindue, hvor du
+> pusher om morgenen, sender du den ud utestet.**
+>
+> **Jeg stoppede efter dét ene punkt.** `index.html` var rørt inden for de sidste
+> 30 minutter, altså er du ved maskinen. Instruksen siger stop, og undtagelsen
+> gælder kun den fil, opgaven selv handler om — hvilket den gjorde, så jeg gjorde
+> arbejdet færdigt og lod være med at tage det næste. **Fase 2 og 3 er sprunget
+> over**: at sortere hele køen om, mens du redigerer den i kontrolpanelet, ville
+> slette dine ændringer. Køen står, som den stod, plus to punkter flyttet til
+> Klaret og ét nyt skrevet ind.
+>
+> **Der stod med vilje intet "Nattens regnskab · 2026-07-27" nedenfor.** Det var
+> ikke en forglemmelse: regnskabet skrives, når fase 2 og 3 er lavet, og det var
+> de ikke. *(Tilføjet af kl. 09:30-kørslen: den så det manglende regnskab, tog
+> derfor hele turen som dagens hovedkørsel, og regnskabet står nu øverst. Det
+> virkede efter hensigten.)*
+>
+> **Én ting til dig:** åbn `uge.html` og klik "Læs hele historien →". Du skulle
+> nu få en pæn besked i stedet for ingenting. Historierne er stadig væk — det
+> retter beskeden ikke, det gør punktet øverst i køen.
+
+---
+
+## 2026-07-27 · Et delt link til en gammel historie gjorde ingenting
+
+**Fandt:** Forrige kørsel så det, men nåede ikke at rette det. Jeg målte det
+efter og fandt det samme plus lidt mere.
+
+Routeren i `index.html` slog `#a=<kildens URL>` op i `articles.json`:
+
+```js
+const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
+if (delt) aabnLaeser(delt, true);      // ← intet else
+```
+
+Var historien ikke i listen, skete der **ingenting**. Ingen fejl, ingen besked —
+læseren landede bare på forsiden. Og `articles.json` bygges forfra af feedene
+hver kørsel, så en historie lever **dage**, ikke 30. Målt i nat:
+
+- **`uge.html`: 5 af 5 links døde.** `uge.json` er fra 22. juli, og 0 af de 5
+  historier er tilbage i `articles.json`. **4 af de 5 har ikke engang en
+  artikelside på disken** (jeg søgte råt efter alle fem adresser i alle 112
+  sider), så det er ikke noget, der kan omdirigeres — historierne er væk.
+- **`feed.xml`: 40 links, 0 døde lige nu** — men den skrives frisk hver kørsel,
+  så den måler altid 0 og dør alligevel inden for få dage.
+- **Nyhedsbrevet bruger samme form** (`crawler.py` linje 1827). En sendt mail kan
+  ikke rettes.
+- **47 links, der ikke er hovedkilder.** Det her stod ikke i forrige måling:
+  dubletter samles til én historie, og siden 26.07 vælger `_slaa_sammen` den
+  fyldigste udgave, ikke den første. Så **vinderen kan skifte**, og et link, der
+  var hovedkilden i går, står i `andre` i dag — og var dødt, selvom historien
+  stod på forsiden.
+
+**Gjorde:** Ét sted, `index.html`. Nyt `aabnDeltLink()`, der gør tre ting i
+rækkefølge: finder historien → åbner den; finder den under `andre` → åbner
+hovedhistorien; ellers `visVaekBesked()`, som siger hvad der skete og linker
+videre til kilden, vi har i hånden. Kun `http(s)` bliver til et klikbart link
+(et hjemmelavet `#a=javascript:…` må ikke gøre vores egen besked til
+angrebsfladen), `decodeURIComponent` er pakket ind, så ugyldig %-kodning ikke
+vælter siden, og hash'et fjernes bagefter, så beskeden ikke dukker op igen ved
+genindlæsning. `crawler.py` er ikke rørt.
+
+**Testede:** 39 påstande i jsdom mod de rigtige datafiler, alle grønne — otte
+tilfælde: uden hash, levende link, `andre`-link, dødt uge-link, `javascript:`,
+html i adressen, ugyldig %-kodning, tomt hash. **Prøven er også kørt mod
+`2a2cfe3` (uden rettelsen): 13 røde, 0 grønne på præcis de påstande, rettelsen
+handler om.** Uden dét ville jeg ikke vide, om prøven måler noget. Samlet prøve
+bagefter: `ast.parse` på `crawler.py` OK, ingen dobbeltdefinerede konstanter på
+modulniveau, forsiden i jsdom 12 påstande grønne — kort tegnet, dagens overblik
+vist, klik åbner en artikel, luk virker, og spring-over-linket og fokusmålene
+fra 26.07 står urørt.
+
+**Undervejs fandt jeg to fejl hos mig selv.** Min første jsdom-opsætning satte
+`fetch` *efter* at scripts var kørt — hver eneste påstand var rød af den ene
+grund. Og min første sikkerhedspåstand søgte efter ordet "onerror" i `innerHTML`
+og var rød, selvom intet var galt: ordet står som escaped tekst inde i en
+`href`-værdi, ikke som en attribut. Påstanden spørger nu, om noget element rent
+faktisk har fået en `on*`-handler.
+
+**Til Torben:**
+
+1. **`natsession.md` linje 78 — femte gang.** Der står `git status --short`, og
+   den lægger `.git/index.lock`, som spærrer dine commits med *"Unable to create
+   index.lock"*. Den lå der igen i nat, og jeg ryddede den. `git
+   --no-optional-locks status --short` gør det samme uden at låse. Ét ord.
+   Jeg retter det ikke selv — du redigerer filen gennem panelet, og jeg vil ikke
+   skrive oven i dig.
+2. **Køen har fået ét nyt punkt, og det er den rigtige fortsættelse:** få
+   `crawler.py` til at linke til den permanente artikelside i stedet for `#a=`.
+   **56 af 82 artikler har en**, så ~68 % af fremtidens links ville holde op med
+   at dø. `feed.xml` er to linjer. Ugesiden og nyhedsbrevet kræver, at `side`
+   skrives med i `uge.json`, når den bygges.
+3. **"Tjek at alle interne links virker" er lukket** med forrige nats måling:
+   2.861 interne referencer, nul døde. `uge.html` var det eneste hul, og det er
+   rettet nu.
+
+---
+
+## 2026-07-26 (kl. 23:01-kørslen) · Sprang over — du arbejdede undervejs
+
+**Jeg har ikke rettet noget i nat.** Jeg startede kl. 23:01, hvor der ikke var
+rørt en kodefil i over en time. Da jeg var færdig med at måle kl. 23:40, var
+`index.html` (23:29), `crawler.py` (23:27), `kontrolpanel.html` (23:27) og denne
+log (23:39) alle skrevet igen, og reflog viser to commits fra dig plus et pull.
+Du sad altså ved maskinen — og præcis i de to filer, min rettelse skulle ligge i.
+Instruksen siger stop i det tilfælde, og jeg stoppede. Køen løber ingen steder.
+
+**Men målingen er lavet, og den fandt noget. Det er værd at læse.**
+
+**Fandt:** Køens punkt *"Tjek at alle interne links virker"* har svaret: de
+statiske links er i orden — **2.861 interne referencer på 185 sider peger alle på
+en fil, der findes.** Sitemaps (30 + 53 + 41 URL'er), `manifest.json`, `llms.txt`,
+`sw.js` og `feed.xml`: nul døde. De 15 "døde links", min første måling gav, var
+alle min egen parser, der læste JavaScript-skabeloner (`${esc(a.link)}`) som
+adresser, og de to "døde fragmenter" `#udgiver` / `#hjemmeside` er JSON-LD-id'er,
+ikke links. Alt det er altså rent.
+
+**Ét sted er det ikke.** `uge.html` — ugens overblik — har fem historier, og
+**alle fem links er døde for læseren lige nu.** De peger på
+`https://ainyheder.com/#a=<kildens URL>`, og forsidens router slår artiklen op i
+`articles.json`:
+
+```js
+const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
+if (delt) aabnLaeser(delt, true);      // ← intet else
+```
+
+Er artiklen ikke i listen, sker der **ingenting**. Læseren klikker "Læs hele
+historien →", havner på forsiden, og ingen artikel åbner. Ingen fejl, ingen
+besked. `uge.json` er fra 22. juli — fire dage gammel — og 0 af 5 historier er
+tilbage i `articles.json`. Kun 1 af de 5 har overhovedet en artikelside på
+disken, så det er ikke et link, der kan omdirigeres; historierne er væk.
+
+**Det er samme årsag som køens arkiv-punkt** — `articles.json` bygges forfra af
+feedene, så en artikel lever dage, ikke 30 — men det er en *anden* konsekvens end
+den, der står i køen, og den kan rettes uden at afklare arkiv-spørgsmålet.
+
+**Og det rammer bredere end ugesiden.** Samme `#a=`-form bruges tre steder mere i
+`crawler.py`: `feed.xml` (linje 1594), ugesiden (1660) og **det ugentlige
+nyhedsbrev til abonnenterne** (1827, `_send_nyhedsbrev`). Dertil forsidens egne
+deleknapper (`index.html` 1610 og 1685). Feedet er friskt, når det skrives, så
+det måler 0 døde — men hver mail, du sender, og hvert link en læser deler på
+Facebook, holder op med at virke inden for få dage. Kommentaren i koden siger
+*"Gamle delte links bruger stadig #a=… De skal blive ved med at virke."* Det gør
+de ikke.
+
+**Gjorde:** Intet i `index.html`, `crawler.py` eller `uge.html` — du var i to af
+dem. Jeg har heller ikke skrevet punktet ind i `opgavekoe.md`, fordi du redigerer
+køen gennem kontrolpanelet, og det var også rørt 23:27. **Næste kørsel skal lægge
+det i køen.** Jeg ryddede én ting: `.git/index.lock` (0 bytes, lagt af mit eget
+`git status`) — den ville have blokeret dit næste commit med *"Unable to create
+index.lock: File exists"*. Der ligger ingen låse nu.
+
+**Testede:** Kun målt, intet ændret. 185 HTML-filer parset (33 rod, 111 artikel,
+41 video), 3.583 referencer i alt, hvoraf 2.861 interne og 722 eksterne til 48
+domæner. Fundet er verificeret mod dine filer *efter* din 23:29-ændring — routeren
+har stadig ingen `else`, og de fem links er stadig døde.
+
+**Til Torben:**
+
+1. **Den mindste rettelse er ét sted, og den fikser alle fem kanaler på én gang:**
+   giv routeren et `else`. Den har allerede kildens URL i hånden — `m[1]` *er*
+   kildelinket — så den kan sige "Den her historie er ikke længere på forsiden"
+   og tilbyde et link videre til kilden. Ti linjer i `index.html`, og så virker
+   ugesiden, nyhedsbrevet, feedet og hvert delt link fra i går.
+2. **`natsession.md`, linje 78 — fjerde gang nu.** Der står `git status --short`,
+   og det er den kommando, der lægger `.git/index.lock` og spærrer dine commits.
+   `git --no-optional-locks status --short` gør det samme uden at låse; jeg brugte
+   den resten af natten, og den efterlod ingenting. Én ord-rettelse i filen.
+3. **Er du stadig i gang, når kl. 03-kørslen starter, springer den også over.**
+   Vil du have punktet lavet i nat, så luk filerne — eller tryk **Kør nu**, når du
+   er færdig, og skriv gerne i køen, at routeren er min.
+
+---
+
+> **⚠️ Kort version (kl. 17:05-kørslen) — du er vågen, du pushede ti minutter før jeg startede.**
+>
+> **0. Alt er pushet.** `git status` var helt ren, da jeg startede — der ligger
+> intet uafhentet arbejde fra tidligere kørsler. Mine egne ændringer i
+> `index.html` er det eneste, der venter nu.
+>
+> **1. Tastaturet var i langt bedre stand, end punktet antog — men læseren var
+> reelt i stykker.** Alle knapper og filtre på forsiden er ægte `<button>` og
+> `<a>`, og fokusringen er intakt overalt (kun ét `outline:none`, på søgefeltet,
+> og det har sin egen erstatning). Men når du åbner en artikel, blev fokus
+> efterladt på kortet **bag** det mørke overlay: **40 tabtryk** til Luk-knappen,
+> **39 af dem gennem elementer, ingen kan se**. Rettet.
+>
+> **2. Jeg var ved at logge en alvorlig fejl på et ødelagt måleinstrument.**
+> Jeg målte, at artiklen slet ikke kunne rulles med tastatur — 504 px
+> uopnåelige. Så prøvede jeg instrumentet af på en tom side: **tastetrykkene
+> nåede aldrig frem til siden overhovedet.** Målingen var værdiløs, og jeg
+> smed den. **Det er den ene ting, jeg gerne vil have dig til at tjekke med
+> egne hænder:** åbn en artikel, tryk PageDown, og se om teksten ruller.
+>
+> **3. Kontrasten var også en målefejl først.** Min første måling sagde, at
+> "Det rører sig på YouTube" stod med **1,17:1** — praktisk taget usynligt. Det
+> var min egen farveparser, der ikke kan læse `color(srgb …)` og læste lys beige
+> som næsten sort. Med en parser, der består sin egen prøve: **3 af 97
+> tekststilarter** under AA, ikke 5. To er rettet med hver sin farve.
+>
+> **4. Min egen første rettelse var forkert, og prøven fangede den.** Jeg gemte
+> en reference til kortet for at give fokus tilbage ved luk. Men forsiden tegnes
+> om, når YouTube-båndet ankommer, så elementet var **dødt**, når læseren blev
+> lukket. Nu huskes artiklens link i stedet, og kortet slås op på ny.
+>
+> **5. Sitemappet manglede én side, ikke tre.** `tak.html` og `velkommen.html`
+> har begge `noindex` og skal *blive* ude — det var bare aldrig skrevet ned. Men
+> **`undervisning.html` er 6.232 tegn færdig side, som intet linker til, og som
+> ikke stod i sitemappet.** Lagt ind. Crawleren siger nu til, hvis listen falder
+> bagud igen. **Din beslutning mangler stadig ét sted:** ingen *læser* kan finde
+> undervisningssiden ved at klikke — hvor linket skal stå, er din smagsdom.
+>
+> **6. Køens øverste punkt rørte jeg ikke.** Arkiv-punktet står med "Venter på
+> Torben: byg ikke, før det er afklaret". Jeg gik videre til de næste to.
+>
+> **7. `.git/index.lock` lå der igen — ryddet.** Den kom af mit eget
+> `git status` og ville have blokeret dit næste commit i GitHub Desktop med
+> "Unable to create index.lock: File exists". Det er tredje gang i dag, den
+> dukker op, så den er værd at kende: ligger den der, og kører ingen git-proces,
+> kan den slettes uden risiko. `git status` svarer normalt igen.
+
+---
+
+## 2026-07-26 (kl. 23:41) · Sprang over — 23:00-kørslen kører fortsat
+
+**Sprang over:** Låsen `_redaktion/.nat-koerer` var 39 minutter gammel (grænsen er 3 timer), og `index.html` (23:29), `crawler.py` og `kontrolpanel.html` (23:27) var rørt inden for 12 minutter — 23:00-kørslen arbejder stadig. Det er anden overspringning i træk (23:38-kørslen ramte det samme). Jeg rørte ingen projektfiler, kørte ikke `git status` (den efterlader `.git/index.lock`, som har generet dig fire gange i dag), og lod låsen ligge med vilje, så den kørende session beholder sin egen. Køen er urørt, og der er allerede et regnskab for i dag — 23:00-kørslen skriver panelet, når den er færdig.
+
+---
+
+## 2026-07-26 (kl. 23:38) · Sprang over — 23:00-kørslen var stadig i gang
+
+**Sprang over:** Låsen `_redaktion/.nat-koerer` var 37 minutter gammel (grænsen er 3 timer), og `crawler.py` (23:27), `index.html` (23:29) og denne log (23:33) var rørt inden for 11 minutter — to uafhængige tegn på, at 23:00-kørslen arbejder lige nu. Jeg rørte ingen af projektets filer og lod låsen ligge med vilje, så den kørende session beholder den; den ryddes af den selv, eller som forældet efter 3 timer.
+
+**Til Torben:** mit ene `git status` efterlod en tom `.git/index.lock` — den er ryddet igen, og `git status` svarer normalt. Det er fjerde gang i dag, den dukker op, og den ville have blokeret dit næste commit i GitHub Desktop med "Unable to create index.lock: File exists". Ligger den der, og kører ingen git-proces, kan den altid slettes uden risiko.
+
+## 2026-07-26 (kl. 23:30) · Flettet mit arbejde med de rigtige artikel-URL'er
+
+**Fandt:** Efter dit commit hentede pull 13 commits ned, og `index.html` gik i
+konflikt med 2 steder. Årsagen er, at en anden kørsel har lagt **rigtige
+artikel-stier i adresselinjen** ind (`/artikel/xxx.html` i stedet for `#a=…`,
+fordi Cloudflares beacon sammenligner pathname og aldrig ser et hash). Den
+ombygning døbte `lukLaeser` om til `skjulLaeser` og lagde et `history.back()` +
+`popstate` ind — præcis de to funktioner, mine fokusrettelser sad i.
+
+**Og git flettede den ene halvdel forkert, uden at det gav konflikt.** Min blok,
+der giver fokus tilbage til kortet, endte inde i `lukLaeser` — efter linjen
+`if (st && st.link && !st.start) { history.back(); return; }`. Den linje er den
+**normale** vej ud, så alt efter den bliver aldrig kørt. Havde jeg nøjedes med at
+fjerne konfliktmarkørerne, ville fokus kun være blevet givet tilbage for delte
+links, og ingen prøve ville have fanget det.
+
+**Gjorde:** Flyttede fokus-genskabelsen til **`skjulLaeser()`**. Læseren lukkes
+ad tre veje — Luk-knappen, Escape og browserens tilbage-knap — og de to første
+går gennem `lukLaeser`, men **alle tre ender i `skjulLaeser`**. Vagten
+(`if (!aaben) return`) ligger nu samme sted, så et `popstate` på en allerede
+lukket læser ikke flytter fokus. `lukLaeser` fik samme vagt øverst, så Escape på
+en lukket læser ikke kan udløse et `history.back()`, der sender dig ud af sitet.
+Origins adresse-mekanik er urørt.
+
+**Testede:** **84 påstande, alle grønne.** Ny `lukstier.js` prøver **hver af de
+tre luk-stier fra en frisk åbning** — Luk-knappen, Escape og tilbage-knappen: alle
+tre lukker, låser body op, sætter adressen tilbage på forsiden og giver fokus
+tilbage til kortet. Fjerde sti: efter "Næste historie" fører ét luk til den
+**forrige artikel** i stedet for at lukke — det er origins design, og det er nu
+skrevet ned som en påstand, så ingen "retter" det. Dertil 43 i
+tilgængelighedsprøven og 21 i den samlede.
+
+**To gange målte jeg forkert og tjekkede efter.** Seks prøver fejlede først, og
+det lignede fletningen. Så prøvede jeg, om jsdom overhovedet udløser `popstate`
+ved `history.back()` — **det gør den** — så fejlen var reel og lå i min egen
+prøves rækkefølge: den trykkede "Næste historie", før den lukkede, og så er ét
+luk *ikke* et luk. Rettet i prøven, ikke i koden.
+
+**Verificeret linje for linje, at ingen af siderne tabte noget:** alle **35** nye
+linjer fra origins 13 commits og alle **86** af mine står i den flettede fil.
+
+**Til Torben:** Filen er markeret som løst (`git add` — jeg har hverken committet
+eller pushet). **Tryk "Continue Merge"** i GitHub Desktop. Der er 0 filer i
+konflikt.
+
+---
+
+## 2026-07-26 (ekstra kørsel kl. 17:05) · sitemap.xml manglede én side, ikke tre
+
+**Fandt:** Punktet sagde tre manglende sider. **Målt: kun én af dem hører ind,
+og de to andre er provably rigtige at holde ude.** 33 HTML-filer i roden, 29
+URL'er i sitemappet, fire filer udenfor:
+
+| fil | står der noindex? | dom |
+|---|---|---|
+| `404.html` | nej | fejlside — skal aldrig i et sitemap |
+| `tak.html` | **JA** | kvitteringsside — korrekt udenfor |
+| `velkommen.html` | **JA** | kvitteringsside — korrekt udenfor |
+| `undervisning.html` | nej, og den har egen canonical | **reel mangel** |
+
+Et sitemap er en invitation. Inviterer man til en side med `noindex`, modsiger
+man sig selv, og Search Console melder det som en fejl — så `tak` og `velkommen`
+skal *blive* ude. Det var kun aldrig skrevet ned, og det var køens egentlige klage.
+
+**`undervisning.html` er derimod et punkt 10-problem i renkultur:** 15.935 bytes
+fil, **6.232 tegn synlig tekst**, rigtig `<title>`, én `<h1>`, syv `<h2>`, ingen
+`noindex`, egen canonical — altså en færdig side. Og **intet på hele sitet linker
+til den** (jeg søgte i alle 33 HTML-filer; det eneste træf var filen selv), den
+står ikke i sitemappet og ikke i feedet. Færdigt arbejde, som Google bogstaveligt
+talt ikke kan nå.
+
+Undervejs blev det også klart, at **`sitemap.xml` er den eneste af de tre
+sitemaps, der er håndskrevet.** `sitemap-artikler.xml` (53 URL'er) og
+`sitemap-videoer.xml` (40) skriver crawleren selv. Derfor er det kun den
+håndskrevne, der kan falde bagud — og den gør det i stilhed, for ingenting går i
+stykker, når en side glemmes.
+
+**Gjorde:** To små ting, og ingen omskrivning af noget, der virker.
+
+- **`undervisning.html` ind i `sitemap.xml`** (`monthly`, priority 0.7, placeret
+  ved `laer.html`, som den hører sammen med). 29 → **30 URL'er**.
+- **Skrevet ned, hvorfor de tre andre står udenfor** — som en kommentar i selve
+  filen, hvor den bliver læst, med henvisning til de to andre sitemaps og til
+  robots.txt.
+- **Nyt `tjek_statisk_sitemap()` i `crawler.py`** (55 linjer), kaldt som sidste
+  skridt i `main()`. Den **skriver ingenting og retter ingenting** — den
+  sammenligner filerne i roden med listen og siger til i Actions-loggen, hvis en
+  ny side er glemt, hvis en `noindex`-side er sluppet ind, eller hvis en URL
+  peger på en fil, der ikke findes. `404.html` er undtaget. Den returnerer sine
+  klager, så den kan testes. Hele kroppen ligger i `try/except`: et
+  oprydningstjek må aldrig vælte et crawl.
+
+**Testede:** **12 påstande på vagten, alle grønne** — og vigtigt: jeg testede
+ikke bare, at den er *tilfreds* nu, men at den faktisk **fanger** noget. I
+midlertidige mapper: en glemt ny side fanges, en `noindex`-side i sitemappet
+fanges, en URL uden fil fanges, `404.html` giver ingen klage, og en
+`noindex`-side uden for sitemappet giver ingen klage. **Fejler pænt:** manglende
+`sitemap.xml`, uafsluttet XML, en tom fil, `\x00`-bytes og en fil med kun en
+kommentar — intet kaster. Én fælde jeg selv gik i og lukkede: min nye kommentar
+nævner `tak.html` og `velkommen.html` ved navn, så en tidligere udgave af vagten
+ville have talt en URL inde i en kommentar som en rigtig URL. Kommentarer
+fjernes nu før optællingen, og der er en påstand på det.
+
+Dertil: `sitemap.xml` er gyldig XML (30 URL'er, 0 dubletter), `ast.parse` på
+`crawler.py` OK, modulet kan indlæses, **113 konstanter og 97 funktioner på
+modulniveau uden en enkelt dobbeltdefinition**, og forsiden er stadig grøn
+(21 + 43 påstande).
+
+**Til Torben:** **Én ting venter på dig, og det er ikke sitemappet.**
+`undervisning.html` bliver nu fundet af Google, men **intet på siden linker
+stadig til den** — en læser kan ikke finde den ved at klikke. Hvor den skal stå
+(`laer.html`? en pille på forsiden? en linje i fodnoten?) er din smagsdom, ikke
+min. Jeg har ikke rørt nogen navigation.
+
+---
+
+## 2026-07-26 (ekstra kørsel kl. 17:05) · Tilgængelighed: tastatur og kontrast
+
+**Fandt:** Punktet spurgte om to ting. **Svaret på det første er overvejende ja,
+og det er værd at vide, så ingen "retter" det:**
+
+- Alle interaktive elementer på forsiden er **ægte** `<button>` og `<a>` — nul
+  `onclick` på en `div`, nul `tabindex`. Filterpillerne, kategorimenuen,
+  sorteringen, visningsskiftet og alle 34 kort kan nås og aktiveres med tastatur.
+- **Fokusringen er intakt.** Der er præcis **ét** `outline:none` i hele filen, på
+  `.sog input`, og det felt har sin egen `:focus`-erstatning (accentfarvet kant +
+  3 px glød). Ingen af de 72 fokuserbare elementer mister deres ring.
+- Escape lukker læseren.
+
+**Men tre ting holdt ikke, og den midterste er reelt i stykker:**
+
+1. **Der var 24 tabtryk fra sidens start til den første rubrik**, hver gang, og
+   intet spring-over-link.
+2. **Læseren efterlod fokus bag sit eget overlay.** `aabnLaeser` kalder aldrig
+   `.focus()`. Målt på den levende side: efter Enter på dagens historie stod
+   fokus stadig på `A.hero`, og `elementFromPoint` på fokuspunktet svarede
+   `DIV.fortsaet` — altså **dækket af overlayet**. Vejen til Luk-knappen var
+   **40 tabtryk, 39 af dem gennem kort, videoer og knapper bag det mørke lag**.
+   Samtidig lover `aria-modal="true"` skærmlæsere, at resten af siden ikke
+   findes, mens **72 fokuserbare elementer** uden for dialogen stadig kunne nås.
+   Dialogen havde heller ikke noget navn (`aria-labelledby` manglede).
+3. **Tre af 97 tekststilarter er under WCAG AA.** `.laest-maerke` ("· ✓ Læst" på
+   kort, du har åbnet) stod i **3,41:1** ved 10,5 px, og `.yt-alle` ("Se alle 40
+   videoer →") i **4,38:1** på det beige bånd. Resten består; det laveste, der
+   klarer den, er 4,61.
+
+**To målefejl hos mig selv, som jeg smed undervejs — de hører med:**
+
+- **Kontrast 1,17:1 på YouTube-overskriften var opspind.** Min farveparser kunne
+  ikke læse `color(srgb 0.92251 0.914667 0.891608)` og læste den lyse beige
+  baggrund som næsten sort. Jeg skrev en parser, der **består sin egen prøve** på
+  fem farveformater først, og så faldt tallet fra 5 fejl til 3.
+- **Påstanden om at artiklen ikke kan rulles med tastatur kunne jeg ikke bevise.**
+  Jeg målte først, at 3× PageDown ikke flyttede noget, og at 504 px af artiklen
+  var uopnåelig. Så satte jeg en `keydown`-lytter på siden og trykkede igen:
+  **tasten nåede aldrig frem.** Værktøjet kan ikke sende tastetryk til denne
+  side, så både målingen og modprøven var ugyldige. Se **Til Torben**.
+
+**Gjorde:** Kun `index.html`, 95 linjer ind og 5 ud. Intet andet rørt.
+
+- **Spring-over-link** som første element i `<body>`, skjult på `top: -60px`
+  indtil det får fokus. `<main>` fik `id="hovedindhold"` og `tabindex="-1"`, så
+  fokus faktisk flytter sig, når man følger linket.
+- **Læseren er nu et rigtigt dialogvindue.** `.laeser-bag` fik `tabindex="-1"`
+  og `aria-labelledby="laeserTitel"` (rubrikken fik det id). Ved åbning flyttes
+  fokus til **selve rullebeholderen** — ikke til Luk-knappen — fordi beholderen
+  er den, der ruller; det er også dét, en skærmlæser skal annoncere.
+- **Tab holdes inde i dialogen**, så løftet i `aria-modal` bliver sandt. Tab midt
+  i dialogen blokeres ikke; kun springet ud i hver ende vendes om. Er der
+  ingenting at holde fokus på, gør fælden **ingenting** frem for at sluge Tab og
+  lave en blindgyde.
+- **Fokus gives tilbage ved luk** — og her lærte jeg noget: min første udgave
+  gemte en reference til kortet, men **forsiden tegnes om, når `youtube.json`
+  ankommer**, så elementet var væk fra dokumentet, når læseren blev lukket, og
+  fokus faldt til sidens top. Nu huskes artiklens **link**, og kortet slås op på
+  ny. Findes det slet ikke længere, lander fokus ved nyhedernes begyndelse.
+  `lukLaeser` fik også en vagt, så Escape på en lukket læser ikke længere
+  skriver i historikken.
+- **To farver mørknet:** `--yt-roed` fra `#cc2b2b` til `#c62828` (4,38 → **4,63**
+  på beige, 5,62 på hvidt) og `.laest .laest-maerke` fra `#2e9e5b` til `#218046`
+  (3,41 → **4,95**). Begge gamle værdier står i kommentarerne med tallene, så
+  ingen ruller dem tilbage ved et uheld.
+
+**Testede:** **64 påstande, alle grønne.**
+
+- **43 i tilgængelighedsprøven** (jsdom mod de rigtige datafiler): spring-over er
+  første fokuserbare element og peger på et mål, der findes; fokus havner inde i
+  dialogen; Tab-fælden vender om i begge ender og lader midten være; "Næste
+  historie" overskriver ikke, hvor vi kom fra; luk giver fokus tilbage til kortet
+  med samme link. **Og at det fejler pænt:** Escape med lukket læser, `lukLaeser`
+  to gange i træk, Tab i en tom dialog, og luk hvor kortet er fjernet fra siden
+  imens — intet kaster, dialogen lukker alligevel.
+- **21 i den samlede prøve** — og den kørte jeg **også mod filen fra `git show
+  HEAD`** for at se, om fejl var mine: før mine ændringer **18 af 21**, og de tre
+  fejl var præcis de tre ting, jeg har rettet. Efter: **21 af 21**. Én "fejl"
+  undervejs ("YouTube-båndet er tegnet") var et **kapløb i min egen prøve** —
+  `youtube.json` ankommer efter artiklerne. Båndet var der hele tiden (4 videokort).
+- **Primitiverne efterprøvet i Chrome med rigtigt layout**, fordi jsdom ikke
+  regner layout: rullebeholderen kan få fokus og er den, der ruller; mit nye
+  filter uden layoutmåling finder **13 elementer — præcis de samme 13** som et
+  filter, der måler bredde og højde; spring-over-linket flytter sig fra −60 px
+  til 8 px ved fokus.
+- `ast.parse` på `crawler.py` OK. 113 konstanter på modulniveau, **ingen
+  dobbeltdefinerede**, ingen dobbeltdefinerede funktioner. Crawleren er ikke rørt.
+
+**Til Torben:**
+
+1. **Tjek én ting med egne hænder, som jeg ikke kunne måle:** åbn en artikel på
+   forsiden, tryk **PageDown** eller pil ned, og se om teksten ruller. Fokus
+   ligger nu på rullebeholderen, så det *bør* virke — men mit værktøj kunne
+   ikke sende tastetryk til siden, så jeg har ikke set det virke. Virker det
+   ikke, er det en linje mere, ikke en ombygning.
+2. **Prøv selv tastaturet i en halv snes tryk:** Tab fra toppen (spring-over
+   kommer frem som første ting), Enter på en rubrik, Tab rundt i artiklen
+   (den skal ikke slippe ud), Escape (du skal stå på det kort, du kom fra).
+3. **Køens øverste punkt står urørt** — arkiv-spørgsmålet venter stadig på din
+   beslutning, og prisen står nu i punktet (~7× tungere forside).
+4. Der ligger **ingen** uafhentet arbejde ud over min egen ændring i
+   `index.html`. Alt før den var pushet, da jeg startede.
+
+---
+
 > **⚠️ Kort version (kl. 16:28-kørslen) — du er vågen, du pushede et minut før jeg startede.**
 >
 > **0. To punkter klaret, ingen kode ændret.** Begge spurgte "er der et problem
@@ -1697,6 +2348,16 @@ Tre ting, jeg **ikke** har rettet, fordi de er selvstændige beslutninger:
 kørekortet, overdrivelsen på bevis-tjekket, og overskrifter uden navn. Køen er
 ikke omprioriteret (det hører til hovedkørslen). Ét fund uden for køen:
 **ingen side linker til vores 103 artikelsider** — se øverst i loggen.
+
+**Ekstra kørsel 17:05:** klarede **2 punkter** mere — tilgængelighed (tastatur
+og kontrast) og sitemappets manglende side. Køen er ikke omprioriteret; det hører
+til hovedkørslen. Begge punkter var **anderledes end køen beskrev dem**: tastaturets
+grundlag var i orden, men læseren efterlod fokus bag sit eget overlay, og
+sitemappet manglede én side, ikke tre. **76 påstande, alle grønne.** To målefejl
+hos mig selv blev fundet og smidt undervejs — en kontrast på 1,17:1 der var min
+parsers fejl, og en rulle-måling foretaget med et værktøj, der slet ikke sendte
+tastetryk. **Én ting kan jeg ikke måle herfra og beder dig tjekke:** tryk PageDown
+i en åben artikel.
 
 **Ekstra kørsel 12:03–12:40:** klarede **3 punkter** mere — de manglende
 billeder, "Hvad betyder det for dig" og rubrikkerne læst som en nabo. Køen er

@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  De statiske sider. Artikel- og videosiderne har deres egne sitemaps, som
+  crawleren skriver: sitemap-artikler.xml og sitemap-videoer.xml. Alle tre er
+  meldt i robots.txt. DENNE fil vedligeholdes i hånden.
+
+  Tre HTML-filer i roden står med vilje UDEN FOR listen, og det er ikke en fejl:
+    404.html         fejlside — må ikke indekseres
+    tak.html         kvitteringsside, har <meta name="robots" content="noindex">
+    velkommen.html   kvitteringsside, har noindex
+  Et sitemap er en invitation. Inviterer man til en side, der siger noindex,
+  modsiger man sig selv, og Search Console melder det som en fejl.
+
+  Crawleren tjekker ved hver kørsel, at listen passer med filerne i roden, og
+  siger til, hvis en ny side er glemt eller en noindex-side er sluppet ind
+  (se tjek_statisk_sitemap i crawler.py). Tilføjet 26.07.2026, fordi
+  undervisning.html havde ligget færdig og usynlig for Google.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ainyheder.com/</loc><changefreq>hourly</changefreq><priority>1.0</priority></url>
   <url><loc>https://ainyheder.com/youtube.html</loc><changefreq>hourly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ainyheder.com/laer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ainyheder.com/undervisning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ainyheder.com/ordbog.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ainyheder.com/guide-igang.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ainyheder.com/guide-prompts.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

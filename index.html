@@ -69,7 +69,7 @@
   --linje: #e2ddd2;
   --accent: #5b4bf0;
   --accent-svag: #ecebfd;
-  --yt-roed: #cc2b2b;       /* bruges kun til YouTube-indhold */
+  --yt-roed: #c62828;       /* bruges kun til YouTube-indhold. Mørknet 26.07: #cc2b2b gav 4,38:1 for "Se alle videoer" på det beige bånd, under AA's 4,5 */
   --radius: 18px;
   --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -531,7 +531,8 @@ a.pill { text-decoration: none; display: inline-block; }
 .laest .kort-krop p, .laest .kort-betydning { opacity: .8; }
 .laest .ny-chip { display: none; }
 .laest-maerke { display: none; }
-.laest .laest-maerke { display: inline; color: #2e9e5b; font-weight: 700; }
+/* #2e9e5b gav kun 3,41:1 på hvidt kort ved 10,5 px — mørknet 26.07 til 4,95:1 */
+.laest .laest-maerke { display: inline; color: #218046; font-weight: 700; }
 
 /* "+N kilder" står to steder: i .art-chips oven på kortbillederne og i
    hero-kickeren. Begge er flex med egen gap, så pillen skal ikke selv have
@@ -1025,6 +1026,15 @@ a.pill.yt-pill:hover svg { fill: var(--yt-roed); }
   color: var(--blaek); border-radius: var(--radius);
   padding: 14px 20px; font-size: 13.5px; margin-bottom: 26px;
 }
+/* Vises kun, når nogen er kommet ind ad et #a=-link til en historie, der er
+   faldet af forsiden — fra ugesiden, nyhedsbrevet, feedet eller et delt link. */
+.vaek-besked {
+  background: var(--accent-svag); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--blaek); border-radius: var(--radius);
+  padding: 16px 20px; font-size: 14.5px; line-height: 1.55; margin-bottom: 26px;
+}
+.vaek-besked strong { display: block; margin-bottom: 3px; font-size: 15.5px; }
+.vaek-besked a { color: var(--accent); font-weight: 600; }
 footer {
   border-top: 1px solid var(--linje); padding: 34px 26px 30px; text-align: center;
   font-size: 13px; color: var(--blaek-svag);
@@ -1053,9 +1063,28 @@ footer a { color: var(--accent); }
 }
 .footer-mission strong { font-family: var(--font-display); font-weight: 800; }
 .footer-lille { font-size: 12px; color: var(--blaek-svag); }
+
+/* Spring til nyhederne. Målt 26.07: der var 24 tabtryk fra sidens start til
+   den første rubrik. Linket er skjult, indtil det får fokus. */
+.spring-over {
+  position: absolute; left: 8px; top: -60px; z-index: 400;
+  background: var(--bg-kort); color: var(--blaek);
+  border: 1px solid var(--linje); border-radius: 999px;
+  padding: 10px 18px; font-size: 14px; font-weight: 700; text-decoration: none;
+  box-shadow: var(--skygge); transition: top .12s;
+}
+.spring-over:focus { top: 8px; }
+/* Rullebeholderen i læseren får fokus programmatisk; den er ikke en knap,
+   så den skal ikke tegne en fokusring. Knapperne inde i den gør. */
+.laeser-bag:focus { outline: none; }
+/* Samme grund: <main> får kun fokus programmatisk, som mål for spring-over-
+   linket og som nødspor, når kortet bag læseren er tegnet væk. */
+#hovedindhold:focus { outline: none; }
 </style>
 </head>
 <body>
+
+<a class="spring-over" href="#hovedindhold">Spring til nyhederne</a>
 
 <div class="topbar">
   <div class="topbar-inner">
@@ -1095,14 +1124,16 @@ footer a { color: var(--accent); }
   </div>
 </div>
 
-<main class="wrap">
+<main class="wrap" id="hovedindhold" tabindex="-1">
+  <div class="vaek-besked" id="vaekBesked" role="status" hidden></div>
   <div id="dagensBrief" hidden></div>
   <div id="indhold"><div class="tom">Henter nyheder …</div></div>
 </main>
 
 <div id="tip"></div>
 
-<div class="laeser-bag" id="laeserBag" role="dialog" aria-modal="true">
+<div class="laeser-bag" id="laeserBag" role="dialog" aria-modal="true"
+     aria-labelledby="laeserTitel" tabindex="-1">
   <article class="laeser" id="laeserBoks"></article>
 </div>
 
@@ -1497,6 +1528,12 @@ function filtrerede() {
 
 const laeserBag = document.getElementById("laeserBag");
 const laeserBoks = document.getElementById("laeserBoks");
+/* Hvor læseren blev åbnet fra, så fokus kan gives tilbage ved luk.
+   Vi husker artiklens LINK og ikke selve elementet: forsiden tegnes om, når
+   YouTube-båndet og dagens overblik kommer ind, og så er det gamle kort væk
+   fra dokumentet. Målt 26.07 — en gemt elementreference var død ved luk. */
+let fokusFoerLaeserLink = null;
+let fokusFoerLaeserEl = null;   // hvis læseren blev åbnet fra noget uden data-link
 
 /* Ikoner til deleknapperne (fill: currentColor) */
 const IKON = {
@@ -1625,7 +1662,7 @@ function aabnLaeser(a, fraHistorik) {
     <button class="laeser-luk" id="laeserLuk" aria-label="Luk">✕</button>
     <div class="laeser-krop">
       <div class="kicker">${esc(a.kategori)} <span class="adskil">· ${esc(a.kilde)} · ${relativTid(a.dato)}</span></div>
-      <h1>${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h1>
+      <h1 id="laeserTitel">${a.rubrik ? esc(a.rubrik) : esc(a.titel)}</h1>
       <div class="laeser-indhold">
         <div class="laeser-brief">${briefHtml}</div>
         ${sideHtml}
@@ -1640,10 +1677,24 @@ function aabnLaeser(a, fraHistorik) {
         </span>
       </div>
     </div>`;
+  // Husk hvor læseren blev åbnet fra, så fokus kan gives tilbage ved luk.
+  // Kun ved FØRSTE åbning — "Næste historie" kalder aabnLaeser igen, og må
+  // ikke overskrive kortet med et element inde i modalen.
+  if (!laeserBag.classList.contains("aaben")) {
+    const havde = document.activeElement;
+    const kortet = havde && havde.closest ? havde.closest("[data-link]") : null;
+    fokusFoerLaeserLink = kortet ? kortet.dataset.link : null;
+    fokusFoerLaeserEl = kortet || havde === document.body ? null : havde;
+  }
   laeserBag.classList.add("aaben");
   laeserBag.scrollTop = 0;
   document.body.style.overflow = "hidden";
   document.getElementById("laeserLuk").addEventListener("click", lukLaeser);
+  // Flyt fokus ind i dialogen. Uden dette blev fokus efterladt på kortet BAG
+  // det mørke overlay: 40 tabtryk til Luk-knappen, 39 af dem gennem elementer
+  // ingen kan se. Beholderen er selv rullecontaineren, så PageDown og
+  // piletaster virker i artiklen, og skærmlæsere annoncerer dialogen.
+  laeserBag.focus({ preventScroll: true });
   laeserAdresse(a, fraHistorik);
 
   // markér som læst - både i lageret og på kortet bag modalen
@@ -1669,12 +1720,82 @@ function laeserAdresse(a, erstat) {
   else history.pushState(stand, "", url);
 }
 
+// ----- Delte #a=-links ------------------------------------------------------
+// Et #a=-link peger på KILDENS adresse, ikke på en side hos os, og routeren
+// slog den op i articles.json. Men articles.json bygges forfra af feedene hver
+// kørsel, så en historie lever dage — ikke 30. Fandt opslaget ingenting, skete
+// der før INGENTING: læseren klikkede "Læs hele historien →" i ugesiden eller i
+// nyhedsbrevet, landede på forsiden, og ingen artikel åbnede. Ingen fejl, ingen
+// besked. Målt 27.07: 5 af 5 links på uge.html var døde på præcis den måde.
+// Samme form bruges i feed.xml, i det ugentlige nyhedsbrev og i hvert link, en
+// læser har delt, så det er ét hul med fire udgange.
+function aabnDeltLink(raa) {
+  let kilde;
+  try { kilde = decodeURIComponent(raa); } catch (e) { kilde = raa; }   // %-vrøvl vælter ikke siden
+
+  const delt = artikler.find(x => x.link === kilde);
+  if (delt) { aabnLaeser(delt, true); return; }
+
+  // Historien kan stadig være her under en anden kilde: dubletter samles til
+  // én, og vinderen kan skifte, når en fyldigere udgave dukker op. Så et link,
+  // der var hovedkilden i går, står i "andre" i dag.
+  const samlet = artikler.find(x => (x.andre || []).some(k => k && k.link === kilde));
+  if (samlet) { aabnLaeser(samlet, true); return; }
+
+  visVaekBesked(kilde);
+}
+
+function visVaekBesked(kilde) {
+  const boks = document.getElementById("vaekBesked");
+  if (!boks) return;
+  // Kun http(s) må blive til et klikbart link — ellers kunne et hjemmelavet
+  // #a=javascript:… gøre vores egen besked til angrebsfladen.
+  const trygt = /^https?:\/\//i.test(kilde || "");
+  let vaert = "kilden";
+  if (trygt) { try { vaert = new URL(kilde).hostname.replace(/^www\./, ""); } catch (e) {} }
+  boks.innerHTML =
+    `<strong>Den historie er ikke på forsiden længere.</strong>` +
+    `Forsiden viser de nyeste nyheder, og ældre historier falder af listen.` +
+    (trygt ? ` Du kan stadig læse den hos <a href="${esc(kilde)}" target="_blank" rel="noopener">${esc(vaert)} →</a>`
+           : ``) +
+    ` Nedenfor er det, der er nyt lige nu.`;
+  boks.hidden = false;
+  // Fjern hash'et. Ellers dukker beskeden op igen ved genindlæsning, og et
+  // bogmærke på forsiden ville bære den med sig for evigt.
+  try { history.replaceState({}, "", location.pathname); } catch (e) {}
+}
+
+/* Fokus gives tilbage HER og ikke i lukLaeser, fordi læseren lukkes ad tre
+   veje: Luk-knappen, Escape, og browserens tilbage-knap. De to første går
+   gennem lukLaeser, men den tager history.back() og returnerer med det samme
+   i det normale tilfælde — så kode efter dét kald bliver aldrig kørt. Alle
+   tre veje ender derimod her. (Flettet 26.07: git lagde blokken i lukLaeser,
+   hvor den kun ville have virket for delte links.) */
 function skjulLaeser() {
+  if (!laeserBag.classList.contains("aaben")) return;   // der er ikke noget at lukke
   laeserBag.classList.remove("aaben");
   document.body.style.overflow = "";
+  // Giv fokus tilbage til det kort, læseren blev åbnet fra. Ellers falder
+  // fokus til sidens start, og man skal tabbe forfra for at læse videre.
+  // Kortet slås op på ny, fordi forsiden kan være tegnet om undervejs.
+  let maal = null;
+  if (fokusFoerLaeserLink) {
+    maal = [...indhold.querySelectorAll("[data-link]")]
+             .find(el => el.dataset.link === fokusFoerLaeserLink) || null;
+  }
+  if (!maal && fokusFoerLaeserEl && document.body.contains(fokusFoerLaeserEl)) {
+    maal = fokusFoerLaeserEl;
+  }
+  // Findes kortet slet ikke længere (nyt filter, ny tegning), så sæt fokus
+  // ved nyhedernes begyndelse i stedet for at lade det falde til sidens top.
+  if (!maal) maal = document.getElementById("hovedindhold");
+  if (maal) maal.focus({ preventScroll: true });
+  fokusFoerLaeserLink = null;
+  fokusFoerLaeserEl = null;
 }
 
 function lukLaeser() {
+  if (!laeserBag.classList.contains("aaben")) return;   // Escape på en lukket læser
   const st = history.state;
   // Skubbede vi selv artiklen på historikken, går vi tilbage - så retter
   // popstate adressen, og tilbage-knappen opfører sig, som man forventer.
@@ -1692,6 +1813,37 @@ window.addEventListener("popstate", () => {
 });
 laeserBag.addEventListener("click", e => { if (e.target === laeserBag) lukLaeser(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") lukLaeser(); });
+
+/* Hold Tab inde i dialogen så længe den er åben. aria-modal="true" lover
+   skærmlæsere, at resten af siden ikke findes; uden denne fælde kunne man
+   tabbe ud i 72 elementer bag overlayet, og løftet var usandt. */
+function laeserFokusbare() {
+  const vaelger = 'a[href], button:not([disabled]), input:not([disabled]),'
+                + ' select:not([disabled]), textarea:not([disabled]),'
+                + ' [tabindex]:not([tabindex="-1"])';
+  // Bevidst ingen måling af bredde/højde her: dialogens indhold bygges forfra
+  // ved hver åbning, så der er intet skjult i den — og en layoutmåling ville
+  // gøre fælden afhængig af, at layoutet er beregnet.
+  return [...laeserBag.querySelectorAll(vaelger)].filter(el => {
+    if (el.hasAttribute("hidden")) return false;
+    const s = getComputedStyle(el);
+    return s.display !== "none" && s.visibility !== "hidden";
+  });
+}
+laeserBag.addEventListener("keydown", e => {
+  if (e.key !== "Tab") return;
+  const f = laeserFokusbare();
+  // Ingen knapper at holde fokus på: lad browseren gøre sit frem for at
+  // sluge Tab og efterlade brugeren i en blindgyde. Escape lukker stadig.
+  if (!f.length) return;
+  const foerste = f[0], sidste = f[f.length - 1];
+  const paaBeholderen = document.activeElement === laeserBag;
+  if (e.shiftKey && (paaBeholderen || document.activeElement === foerste)) {
+    e.preventDefault(); sidste.focus();
+  } else if (!e.shiftKey && document.activeElement === sidste) {
+    e.preventDefault(); foerste.focus();
+  }
+});
 
 // "Næste historie"/"Læs også" åbner den nye artikel i samme læser
 laeserBoks.addEventListener("click", e => {
@@ -2185,10 +2337,7 @@ fetch("data/articles.json")
     // true = erstat adressen i stedet for at skubbe en post oveni, så der
     // ikke ligger en tom forside bag artiklen i historikken.
     const m = location.hash.match(/^#a=(.+)/);
-    if (m) {
-      const delt = artikler.find(x => x.link === decodeURIComponent(m[1]));
-      if (delt) aabnLaeser(delt, true);
-    }
+    if (m) aabnDeltLink(m[1]);
   })
   .catch(fejl => {
     indhold.innerHTML = `<div class="tom">Kunne ikke hente nyhederne (${esc(fejl.message)}).<br><br>

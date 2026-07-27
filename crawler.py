@@ -1607,15 +1607,49 @@ GENKOER_FILTER = "" if _GENKOER_RAW.lower() in ("", "ja", "1", "true", "nej", "n
 SITE_URL = "https://ainyheder.com"
 
 
+def _dele_link(link: str) -> str:
+    """Adressen vi sender folk til UDEFRA - fra feedet, ugesiden, nyhedsbrevet.
+
+    Førstevalget er den permanente artikelside. `#a=` peger nemlig på KILDENS
+    adresse og slås op i `articles.json`, som bygges forfra af feedene hver
+    kørsel - så et sådant link lever dage, ikke evigt. Siderne under `artikel/`
+    slettes derimod aldrig.
+
+    Slugget er en ren md5 af linket, så opslaget virker også for historier, der
+    for længst er ude af `articles.json` - præcis dem, `#a=` ikke kan finde. Vi
+    spørger disken frem for `a["side"]`, netop for at ramme dem, og for aldrig
+    at love en side, der ikke er skrevet endnu.
+
+    Findes filen ikke, falder vi tilbage til `#a=`. Det er ikke en fejl: 25 af
+    84 artikler er `kun_aktuel`, hvor udgiveren forbyder et arkiv, og de SKAL
+    ikke have en permanent side. Målt 27.07: 20 af feedets 40 punkter får en
+    permanent adresse, og de øvrige 20 er alle `kun_aktuel`.
+
+    Vi følger med vilje IKKE sidens canonical hjem til hovedhistorien, selvom
+    46 af 112 sider er dubletter, der peger videre. Målt 27.07: 8 af dem står i
+    en kæde (A → B → C), fordi vinderen selv blev slået sammen bagefter, og
+    kæderne ender på urelaterede historier - en side om en gratis videoeditor
+    peger via to led på "AI Kill Switch Act". At følge dem ville sende læseren
+    et forkert sted hen. En dubletside har fuld tekst og er den rigtige
+    historie; det er kun dens canonical, der er gal. Kæderne har deres eget
+    punkt i køen.
+    """
+    from urllib.parse import quote
+    if link:
+        side = f"artikel/{_artikel_slug(link)}.html"
+        if (ROOT / side).is_file():
+            return f"{SITE_URL}/{side}"
+    return f"{SITE_URL}/#a=" + quote(link or "", safe="")
+
+
 def lav_rss(artikler: list[dict]) -> None:
     """Skriver feed.xml med de nyeste artikler, så man kan abonnere på sitet."""
     from email.utils import format_datetime
-    from urllib.parse import quote
     punkter = []
     for a in artikler[:40]:
         if not a.get("rubrik"):
             continue
-        led = f"{SITE_URL}/#a=" + quote(a["link"], safe="")
+        led = _dele_link(a["link"])
         try:
             dato = format_datetime(datetime.fromisoformat(a["dato"]))
         except (TypeError, ValueError):
@@ -1668,7 +1702,6 @@ Svar KUN med ét JSON-objekt:
 
 def _uge_side_html(d: dict) -> str:
     """Ugemagasinet: mørk forside, nedtælling og kategorifarvede kort."""
-    from urllib.parse import quote
     TONE = {"Lanceringer": "#e7e3f7", "Hverdags-AI": "#e2eadd",
             "Penge & marked": "#f0e4c8", "Politik & jura": "#dde5ee",
             "Samfund & etik": "#f4e0d9", "Forskning": "#e2e7ee"}
@@ -1681,7 +1714,9 @@ def _uge_side_html(d: dict) -> str:
 
     kort = []
     for nr, h in enumerate(historier, 1):
-        led = f"{SITE_URL}/#a=" + quote(h.get("link", ""), safe="")
+        # uge.json lever en hel uge, og efter få dage er historien ude af
+        # articles.json - så et #a=-link her er dødt, længe før ugen er omme.
+        led = _dele_link(h.get("link", ""))
         tone = TONE.get(h.get("kategori", ""), "#efece4")
         # uge.json gemmer ikke billedmotivet, så overskriften er alt-teksten
         h_alt = html.escape(str(h.get("overskrift") or "")[:180])
@@ -1845,10 +1880,11 @@ def _send_nyhedsbrev(d: dict) -> None:
     if not noegle:
         print("💌 BUTTONDOWN_API_KEY ikke sat - springer nyhedsbrevs-udsendelse over")
         return
-    from urllib.parse import quote
     dele = [d.get("indledning", ""), ""]
     for nr, h in enumerate(d.get("historier", []), 1):
-        led = f"{SITE_URL}/#a=" + quote(h.get("link", ""), safe="")
+        # En sendt mail kan ikke rettes. Derfor er det HER, det betyder mest,
+        # at linket peger på en side, der bliver ved med at findes.
+        led = _dele_link(h.get("link", ""))
         dele += [f"## {nr}. {h.get('overskrift', '')}", "",
                  h.get("tekst", ""), "", f"[Læs hele historien →]({led})", ""]
     dele += ["---", "", f"**Ugens røde tråd:** {d.get('tendens', '')}", "",
@@ -2210,6 +2246,94 @@ def _peg_dubletsider_mod_hovedhistorien(artikler: list[dict]) -> set[str]:
         print(f"🔗 {rettet} dubletsider peger nu på deres hovedhistorie")
 
 
+def _bryd_canonical_kaeder(artikler: list[dict]) -> int:
+    """Retter de sider, hvis hovedhistorie SELV blev slået sammen bagefter.
+
+    `_peg_dubletsider_mod_hovedhistorien` peger en tabers side mod vinderen og
+    ser aldrig på den igen. Bliver vinderen senere selv slået sammen, står der
+    en kæde: A → B → C. Google følger ikke canonical-kæder - den behandler dem
+    som et brudt signal.
+
+    Målt 27.07: 8 af 112 sider stod i en kæde, og de var ikke tilfældige.
+    **7 af de 8 var levende, selvstændige artikler** med egen rubrik i
+    `articles.json`; forsidens deleknapper og `_dele_link` sender folk til dem.
+    Alligevel sagde deres side til Google, at den rigtige udgave var en helt
+    anden historie - "Ny gratis AI-videoredigering til din Mac" pegede via to
+    led på "AI Kill Switch Act" - og fordi `_dubletsider_paa_disk` læser netop
+    den canonical, stod **0 af de 7 i sitemappet**. Indhold, vi selv
+    promoverer, var usynligt for Google. Punkt 10, og punkt 5: siden påstod
+    noget om sig selv, der ikke var sandt.
+
+    **Vi rører kun kædehoveder.** En side, hvis mål selv er hovedhistorie, er
+    en almindelig dublet og bliver stående urørt - det er dét,
+    `_dubletsider_paa_disk` kalder permanent hukommelse, og en enkelt kørsel,
+    hvor vinderen mangler i feedet, må ikke kunne vælte den. En kæde er
+    derimod aldrig rigtig, uanset hvad dagens liste siger, og derfor er det
+    forsvarligt at træffe valget om igen netop dér.
+    """
+    forstavelse = f"{SITE_URL}/artikel/"
+    peger: dict[str, str] = {}
+    for p in ARTIKEL_MAPPE.glob("*.html"):
+        try:
+            tekst = p.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        fundet = re.search(r'<link rel="canonical" href="([^"]*)"', tekst)
+        if not fundet:
+            continue
+        maal = html.unescape(fundet.group(1))
+        if maal.startswith(forstavelse) and maal.endswith(".html"):
+            peger[p.stem] = maal[len(forstavelse):-len(".html")]
+
+    # Tåler en artikel uden `link` og et `andre`, der ikke er en liste. Vi
+    # skriver til disken her, så et enkelt skævt element må ikke vælte
+    # oprydningen for de øvrige 111 sider.
+    tabere: set[str] = set()
+    for a in artikler:
+        if not a.get("rubrik") or a.get("kun_aktuel"):
+            continue
+        for kilde in (a.get("andre") if isinstance(a.get("andre"), list) else []):
+            if isinstance(kilde, dict) and kilde.get("link"):
+                tabere.add(_artikel_slug(kilde["link"]))
+    selvstaendige = {_artikel_slug(a["link"]) for a in artikler
+                     if a.get("link") and a.get("rubrik")
+                     and not a.get("kun_aktuel")} - tabere
+
+    rettet = 0
+    for slug, maal in sorted(peger.items()):
+        if maal == slug or peger.get(maal, maal) == maal:
+            continue                    # ikke en kæde - lad den stå
+        ende, sete = maal, {slug, maal}
+        while peger.get(ende, ende) != ende and peger[ende] not in sete:
+            ende = peger[ende]
+            sete.add(ende)
+        # Er artiklen levende og selvstændig i dag, er den sin egen
+        # hovedhistorie. Ellers kan vi kun folde kæden ud til dens ende.
+        nyt = slug if slug in selvstaendige else ende
+        if nyt != slug and not (ARTIKEL_MAPPE / f"{nyt}.html").is_file():
+            continue                    # intet bedre at pege på
+        sti = ARTIKEL_MAPPE / f"{slug}.html"
+        try:
+            gammel = sti.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        adresse = html.escape(f"{forstavelse}{nyt}.html", quote=True)
+        ny, antal = re.subn(r'(<link rel="canonical" href=")[^"]*(")',
+                            lambda mm: mm.group(1) + adresse + mm.group(2),
+                            gammel, count=1)
+        if not antal or ny == gammel:
+            continue
+        try:
+            sti.write_text(ny, encoding="utf-8")
+        except OSError:
+            continue
+        peger[slug] = nyt
+        rettet += 1
+    if rettet:
+        print(f"🔗 {rettet} canonical-kæder brudt")
+    return rettet
+
+
 def _dubletsider_paa_disk() -> set[str]:
     """Hvilke artikelsider er sammenlagt under en anden historie?
 
@@ -2270,6 +2394,10 @@ def lav_artikelsider(artikler: list[dict]) -> None:
     ARTIKEL_MAPPE.mkdir(exist_ok=True)
     # 1) nye sammenlægninger: peg de tabende udgavers sider mod hovedhistorien
     _peg_dubletsider_mod_hovedhistorien(artikler)
+    # 1b) og ryd op efter dem, hvis hovedhistorie selv blev slået sammen siden.
+    #     SKAL køre før punkt 2, ellers når de rettede sider ikke i sitemappet
+    #     før i overmorgen.
+    _bryd_canonical_kaeder(artikler)
     # 2) spørg disken, hvilke sider der er dubletter - både nattens og alle
     #    tidligere. Se forklaringen i _dubletsider_paa_disk.
     dubletter = _dubletsider_paa_disk()
@@ -4358,7 +4486,11 @@ def del_paa_platforme(artikler: list[dict]) -> None:
         tekster = {n: _som_tekst(r.get(n, "")).strip() for _, n, _, _ in PLATFORME}
         if not any(tekster.values()):
             return
-        url = f"{SITE_URL}/{a['side']}" if a.get("side") else SITE_URL
+        # Samme regel som feed, ugeside og nyhedsbrev: et opslag kan heller
+        # ikke kaldes tilbage. Før pegede vi bare på forsiden, når artiklen
+        # ingen side havde - nu på #a=, så læseren i det mindste lander i
+        # historien, så længe den er på forsiden.
+        url = _dele_link(a["link"])
 
         live = os.environ.get("OPSLAG_LIVE", "").strip().lower() in ("ja", "true", "1")
         resultat = []
@@ -4397,6 +4529,60 @@ def del_paa_platforme(artikler: list[dict]) -> None:
                               encoding="utf-8")
     except Exception as fejl:
         print(f"📣 Opslag sprang over ({type(fejl).__name__}: {fejl})")
+
+
+def tjek_statisk_sitemap() -> list[str]:
+    """Siger til, hvis sitemap.xml er faldet bagud for filerne i roden.
+
+    sitemap.xml vedligeholdes i hånden (i modsætning til sitemap-artikler.xml
+    og sitemap-videoer.xml, som skrives her i filen). Derfor falder den bagud,
+    hver gang der kommer en ny side til - og ingen opdager det, fordi
+    ingenting går i stykker. Det skete med undervisning.html: 6.232 tegn
+    færdig side, som hverken var linket eller stod i sitemappet, altså
+    usynlig for Google i dagevis.
+
+    Skriver ikke noget. Retter ikke noget. Returnerer listen af klager, så
+    den kan testes, og printer dem, så de står i Actions-loggen.
+    """
+    klager: list[str] = []
+    try:
+        sti = ROOT / "sitemap.xml"
+        if not sti.exists():
+            print("🗺️  sitemap.xml findes ikke")
+            return ["sitemap.xml findes ikke"]
+        xml = sti.read_text(encoding="utf-8")
+        # Kommentarer ud først, så en side nævnt i en forklaring ikke tæller med
+        uden_kommentar = re.sub(r"<!--.*?-->", "", xml, flags=re.S)
+        i_sitemap = set()
+        for adresse in re.findall(r"<loc>(.*?)</loc>", uden_kommentar):
+            navn = adresse.rstrip("/").rsplit("/", 1)[-1]
+            i_sitemap.add(navn if navn.endswith(".html") else "index.html")
+
+        for fil in sorted(ROOT.glob("*.html")):
+            if fil.name == "404.html":          # fejlside, aldrig i et sitemap
+                continue
+            tekst = fil.read_text(encoding="utf-8", errors="ignore")
+            noindex = "noindex" in tekst.lower()
+            staar = fil.name in i_sitemap
+            if noindex and staar:
+                klager.append(f"{fil.name} siger noindex, men står i sitemap.xml")
+            elif not noindex and not staar:
+                klager.append(f"{fil.name} mangler i sitemap.xml")
+
+        for navn in sorted(i_sitemap):
+            if not (ROOT / navn).exists():
+                klager.append(f"sitemap.xml peger på {navn}, som ikke findes")
+
+        if klager:
+            print(f"🗺️  sitemap.xml passer ikke med filerne ({len(klager)}):")
+            for k in klager:
+                print(f"    - {k}")
+        else:
+            print(f"🗺️  sitemap.xml passer: {len(i_sitemap)} sider, ingen glemte")
+    except Exception as fejl:
+        # Må aldrig vælte et crawl for en oprydningsdetalje
+        print(f"🗺️  Sitemap-tjekket sprang over ({type(fejl).__name__}: {fejl})")
+    return klager
 
 
 def main() -> None:
@@ -4570,6 +4756,7 @@ def main() -> None:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
     except Exception as fejl:
         print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
+    tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
 
 
 if __name__ == "__main__":

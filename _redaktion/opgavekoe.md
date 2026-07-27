@@ -14,18 +14,91 @@ mere "gå det efter i sømmene". Hvert punkt siger, hvilket af de ni punkter i
 
 ## Kø
 
-*Sorteret 26.07.2026 efter: (1) i stykker for læseren nu, (2) bryder
+*Sorteret 27.07.2026 efter: (1) i stykker for læseren nu, (2) bryder
 målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ### 1 — I stykker for læseren lige nu
 
-*Ingen kendte lige nu.*
+- [ ] **Dubletfangeren slår urelaterede historier sammen — 47 artikler er væk
+      fra forsiden.** Målt 27.07. `saml_dublet_historier` sender op til 130
+      artikler til AI'en og beder den gruppere dem. **Grupperne bliver brugt
+      som de kommer** — den eneste kontrol er, at datoerne ligger inden for
+      3 dage, hvilket alle nyheder gør. Der er intet tjek af, om artiklerne
+      handler om det samme.
+
+      **Hvad en læser mister:** 13 grupper har slugt **47 artikler**, som ikke
+      længere står som deres egen historie på forsiden. Af de 38, der har en
+      side, jeg kan sammenligne teksten på, deler **25 under 5 % af deres ord**
+      med den historie, de er lagt ind under. Median: **3,4 %**. Kun **én af 38**
+      er over 25 % — og den er en ægte dublet ("Midjourney køber astrologi-appen
+      Co-Star", 44 %). Konkrete eksempler fra siden lige nu:
+
+      - "Monday.com fyrer 600 – skyder skylden på AI" ligger under **"Anthropic
+        sender billigere AI-model på gaden"**
+      - "Alexa Plus får hjælp til svære opgaver" ligger under **"Google lancerer
+        nye AI-modeller"**
+      - "AlphaFold AI gør genredigering mere sikker" ligger under **"AMD
+        udfordrer Nvidia med Helios"**
+      - "AI Kill Switch Act" og "Meta AI bliver din personlige assistent" ligger
+        begge under **"Nvidia og Mistral advarer mod at forbyde kinesisk AI"**
+
+      **Det koster mere end pladsen på forsiden.** Taberens side fryses og
+      skrives aldrig om — det var dét, der holdt 7 sider på gamle, navnløse
+      rubrikker indtil i nat. Taberens canonical peger på den forkerte historie,
+      så siden ryger ud af sitemappet. Og en vinder får **+1 i prioritet** for at
+      have `andre`, så en falsk sammenlægning skubber sig selv op i Dagens
+      overblik. Endelig gemmer `_slaa_sammen` kun `{kilde, link}` — taberens
+      rubrik og tekst kastes væk.
+
+      **Mindste rettelse:** en deterministisk vagt efter AI'ens svar, i stil med
+      `_har_noget_at_vise`. Kræv at vinder og taber deler mindst ét **navn**
+      (mærkelisten fra 26.07 findes allerede, og den kan ejefald). Prøvet på
+      dagens data: **16 af 38 par deler et navn** og ville blive stående som
+      dubletter; de øvrige 22 ville blive selvstændige artikler igen. Ordoverlap
+      ≥ 0,15 giver omtrent samme snit. Ingen AI-kald, kan testes.
+
+      **Læs de 16, reglen beholder, før den lukkes** — jeg har kun stikprøvet dem.
+      *Punkt 1, 4, 6 og 10.*
 
 ### 2 — Bryder målestokken synligt
 
 *Ingen kendte lige nu.*
 
 ### 3 — Gør siden mærkbart bedre
+
+- [ ] **39 dubletsider modsiger sig selv over for Google.** Målt 27.07:
+      `_peg_dubletsider_mod_hovedhistorien` retter kun `<link rel="canonical">`.
+      **Alle 39** har stadig et `og:url` og et JSON-LD-`url`/`@id`, der peger på
+      dem selv — så siden siger på én gang "den rigtige udgave er derovre" og
+      "jeg er den rigtige". Google bruger begge signaler, og modstrid er en
+      kendt grund til, at en canonical bliver ignoreret; sker det, konkurrerer
+      vores egne sider om samme søgning. **Intet er i stykker for et menneske**,
+      og sådan har det været hele tiden — men det er billigt at rette samme sted,
+      hvor canonical skrives, og det gælder hele arkivet. Mindste rettelse: sæt
+      `og:url` og JSON-LD-`mainEntityOfPage` til samme adresse som canonical.
+      *Punkt 5 og 10.*
+
+- [ ] **Gennemgå crawlerens fejlbeskeder.** Er der steder, hvor noget fejler
+      stille uden at sige hvorfor? Det var netop dét, der skjulte tre fejl —
+      og i nat en fjerde: **8 canonical-kæder stod i et døgn**, uden at nogen
+      kørsel sagde et ord, selvom `lav_artikelsider` skriver et tal ud hver gang.
+      *Punkt 6.*
+
+- [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
+      efter alle de seneste dages ændringer. *Punkt 4.*
+
+- [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
+      `_peg_dubletsider_mod_hovedhistorien` kaldes **før** `_har_noget_at_vise`-
+      vagten og tjekker ikke, at vinderens side faktisk bliver skrevet.
+      **Målt igen 27.07: 0 tilfælde** — og `_bryd_canonical_kaeder` nægter nu at
+      pege på en side, der ikke findes, så hullet er delvist lukket. Tilbage står
+      selve pegningen. Mindste rettelse: samme vagt i vinder-tjekket.
+      *Punkt 4 og 10.*
+
+- [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
+      workflow-filer. Er der noget, der skal gemmes, før den ryger?
+
+**Herunder: to punkter, natsessionen ikke må bygge, før Torben har besluttet.**
 
 - [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
       26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
@@ -50,31 +123,6 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       formentlig hente en let liste og først resten på klik. Det er en større
       ombygning end arkivet selv, og den bør regnes med i beslutningen.
 
-- [ ] **Tilgængelighed.** Kan man bruge forsiden med tastatur alene? Er
-      kontrasten god nok til svagtseende? (Alt-tekst er klaret 25.07.)
-      *Punkt 9.*
-
-- [ ] **`sitemap.xml` mangler tre sider.** Målt 26.07: 29 URL'er i sitemappet,
-      32 HTML-filer i roden (404 fraregnet). De tre, der mangler, er
-      `velkommen.html`, `tak.html` og `undervisning.html`. De to første er
-      formentlig med vilje ude (kvitteringssider), men det står ingen steder —
-      og `undervisning.html` skal ind, den dag den bliver linket. Filen er
-      skrevet i hånden, så den falder bagud, hver gang der kommer en side til.
-      *Punkt 4 og 10.*
-
-- [ ] **Tjek at alle interne links virker.** Gennemgå alle HTML-sider for links
-      til sider, der ikke findes. *Punkt 4.*
-
-- [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
-      efter alle dagens ændringer. *Punkt 4.*
-
-- [ ] **Gennemgå crawlerens fejlbeskeder.** Er der steder, hvor noget fejler
-      stille uden at sige hvorfor? Det var netop dét, der skjulte tre fejl.
-      *Punkt 6.*
-
-- [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
-      workflow-filer. Er der noget, der skal gemmes, før den ryger?
-
 - [ ] **`data/img/` kan ikke længere rydde op efter sig.** Fra 26.07 sletter
       oprydningen aldrig et billede, en side på disken peger på — det var
       rettelsen, der fjernede 25 brudte billeder. Prisen er, at **62 af 69 filer
@@ -86,26 +134,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       `assets/og.png` — men det er Torbens valg, om det er værd at gøre endnu.
       *Punkt 4.*
 
-- [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
-      `_peg_dubletsider_mod_hovedhistorien` kaldes øverst i `lav_artikelsider`,
-      altså **før** den nye `_har_noget_at_vise`-vagt, og den tjekker ikke, at
-      vinderens side faktisk bliver skrevet. Før 26.07 var `rubrik` nok til at
-      vinderen blev bygget; nu kan vagten blokere den, og så står dubletsiden
-      med en canonical mod en 404 — samtidig med at den selv er ude af
-      sitemappet. **Målt 26.07 kl. 15: 0 tilfælde**, så intet er i stykker nu.
-      Mindste rettelse: samme vagt i vinder-tjekket. Fundet af den uafhængige
-      gennemgang. *Punkt 4 og 10.*
-
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
-
-- [ ] **Tjek dubletfangeren.** Find historier i arkivet, der reelt dækker samme
-      begivenhed, men står som to. Er `saml_dublet_historier` for forsigtig?
-      *Punkt 3.* — Bemærk: selve **valget** af hovedhistorie blev rettet
-      26.07; det her handler om de grupper, den slet ikke finder.
-
-- [ ] **Er dagens overblik virkelig dagens vigtigste fem?** Sammenlign
-      `data/brief.json` med de højest prioriterede artikler samme døgn.
-      *Punkt 6.*
 
 - [ ] **Gennemgå kategoriseringen.** Ligger artiklerne i de rigtige kategorier,
       eller ender for meget i "Lanceringer"? *Punkt 6.*
@@ -150,6 +179,116 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 ---
 
 ## Klaret
+
+- [x] **Er dagens overblik virkelig dagens vigtigste fem?** *(målt 27.07.2026 i
+      fase 2)* **Ja — intet at rette.** `lav_dagens_brief` tilbyder AI'en de 12
+      højest prioriterede artikler set inden for 26 timer. Af dagens 5 punkter er
+      **4 blandt de 5 højest prioriterede**, alle 5 kommer fra kandidatlisten
+      (ingen opfundne), og prioriteterne falder pænt 8-7-6-5-5. Den ene afvigelse
+      er et bevidst valg: AI'en tog "Regeringen tester AI til at afgøre din
+      behandling" (prio 5) frem for "Sådan puster Kina-panik AI-debatten op"
+      (prio 6) — en historie, der rammer læserens eget liv, frem for en
+      debat-analyse. Det er redaktionelt rigtigt. *Punkt 6.*
+
+- [x] **Tjek dubletfangeren.** *(27.07.2026)* Undersøgelsen spurgte, om
+      `saml_dublet_historier` var for **forsigtig**. Målingen viste det modsatte,
+      og svaret står nu som et målt punkt øverst i køen i stedet: 47 artikler er
+      slået sammen, median ordoverlap 3,4 %. Undersøgelsen er dermed lukket.
+
+- [x] **7 levende artikler var usynlige for Google og viste gamle rubrikker.**
+      *(27.07.2026 — fund uden for køen)* **8 af 112 artikelsider stod i en
+      canonical-kæde** (A → B → C), fordi `_peg_dubletsider_mod_hovedhistorien`
+      peger en tabers side mod vinderen og aldrig ser på den igen — og vinderen
+      blev selv slået sammen bagefter. **7 af de 8 var levende, selvstændige
+      artikler**, som forsiden viser og deleknapperne deler, men hvis side
+      fortalte Google, at den rigtige udgave var en urelateret historie ("Ny
+      gratis AI-videoredigering til din Mac" → "AI Kill Switch Act"). Fordi
+      `_dubletsider_paa_disk` læser netop den canonical, stod **0 af de 7 i
+      sitemappet**. Nyt `_bryd_canonical_kaeder()` rører kun kædehoveder — en
+      almindelig dublet står urørt, også når vinderen mangler i dagens liste.
+      Efter: **0 kæder, sitemappet 53 → 60**. Da de 7 holdt op med at være
+      dubletter, blev de bygget forfra og fik deres **navne** tilbage:
+      "Politikere kræver nødstop" → "Ted Lieu og Nathaniel Moran vil have
+      nødstop på AI". 135 påstande grønne i en prøve, der bygger sine egne
+      kæder, plus 21 på de reparerede sider. *Punkt 1, 5 og 10.*
+
+- [x] **Nyhedsbrevet, feedet og ugesiden linkede med `#a=` i stedet for den
+      permanente side.** *(27.07.2026)* Rettet ét sted: nyt `_dele_link()` i
+      `crawler.py`, brugt af `lav_rss`, `_uge_side_html`, `_send_nyhedsbrev` —
+      og af opslagene, som var et fjerde sted, køen ikke nævnte. Køens forslag
+      om at skrive `side` med i `uge.json` viste sig **unødvendigt**: slugget er
+      en ren md5 af linket, så vi kan slå siden op på disken og rammer dermed
+      også historier, der for længst er ude af `articles.json` — netop dem,
+      `#a=` ikke kan finde. Ingen dataformat-ændring. **Målt efter: feed.xml
+      20 af 40 permanente**, og de 20 andre er alle `kun_aktuel`, hvor
+      udgiveren forbyder et arkiv — de *skal* have `#a=`. **Ugens otte
+      kandidater lige nu: 8 af 8 permanente**, så næste fredags nyhedsbrev
+      bliver 5 af 5. 86 påstande grønne; prøven kørt mod `HEAD` også: 25 røde
+      før, 0 efter. *Punkt 6 og 10.*
+
+- [x] **Et delt link til en historie, der er faldet af forsiden, gjorde
+      ingenting.** *(27.07.2026)* Routeren slog `#a=<kildens URL>` op i
+      `articles.json` og havde intet `else`. Fandt den ikke historien, skete der
+      **ingenting** — ingen fejl, ingen besked, bare forsiden. Målt 27.07: **5 af
+      5 links på `uge.html` var døde** på præcis den måde, og samme form bruges i
+      `feed.xml` (40 links), i det ugentlige nyhedsbrev og i hvert link, en læser
+      har delt. Rettet ét sted i `index.html`: nyt `aabnDeltLink()` slår nu også
+      op i `andre`, så en historie, der er slået sammen under en anden kilde,
+      stadig åbner (**47 sådanne links findes lige nu**), og ellers vises en
+      besked, der siger hvad der skete og linker videre til kilden. Kun
+      `http(s)` bliver klikbart, og hash'et fjernes bagefter. **39 påstande
+      grønne — og prøven kørt mod `2a2cfe3` også: 13 røde før, 0 efter.**
+      Samlet prøve på forsiden: 12 grønne. *Punkt 4, 6 og 10.*
+
+- [x] **Tjek at alle interne links virker.** *(målt 26.07 kl. 23:40, lukket
+      27.07)* **2.861 interne referencer på 185 sider peger alle på en fil, der
+      findes** — 33 rodsider, 111 artikelsider, 41 videosider, 3.583 referencer i
+      alt. Sitemaps (30 + 53 + 41 URL'er), `manifest.json`, `llms.txt`, `sw.js`
+      og `feed.xml`: nul døde. De 15 "døde links" i første måling var parserens
+      egne — den læste JavaScript-skabeloner (`${esc(a.link)}`) som adresser — og
+      `#udgiver` / `#hjemmeside` er JSON-LD-id'er, ikke links. **Det eneste
+      virkelige hul var `uge.html`s fem `#a=`-links**, og det har sit eget punkt
+      ovenfor, som er klaret. *Punkt 4.*
+
+- [x] **`sitemap.xml` manglede én side, ikke tre.** *(26.07.2026, ekstra kørsel
+      kl. 17:05)* Målt: 33 HTML-filer, 29 URL'er, fire filer udenfor — og **tre
+      af de fire er rigtige at holde ude**: `404.html` er en fejlside, og
+      `tak.html` + `velkommen.html` har begge `noindex`, så en invitation til dem
+      ville modsige sig selv. Det var bare aldrig skrevet ned, og dét var køens
+      egentlige klage. **Kun `undervisning.html` var en reel mangel** — 6.232 tegn
+      synlig tekst, egen canonical, ingen `noindex`, og **intet på sitet linker
+      til den** (søgt i alle 33 filer), så Google kunne slet ikke nå den. Punkt
+      10. Lagt ind (29 → 30 URL'er) og begrundelsen for de tre andre skrevet ind i
+      filen. Dertil: `sitemap.xml` er den **eneste** af de tre sitemaps, der er
+      håndskrevet, så nyt `tjek_statisk_sitemap()` i `crawler.py` siger nu til i
+      Actions-loggen, hvis listen falder bagud — glemt side, `noindex` sluppet
+      ind, eller URL uden fil. Skriver intet, retter intet, kan ikke vælte et
+      crawl. **12 påstande, alle grønne** — testet at den *fanger* fejl, ikke kun
+      at den er tilfreds, plus vrøvl-input. **Venter på Torben:** siden er nu
+      synlig for Google, men **intet linker til den for en læser** — hvor den skal
+      stå er hans valg.
+
+- [x] **Tilgængelighed: tastatur og kontrast.** *(26.07.2026, ekstra kørsel kl.
+      17:05)* **Tastaturets grundlag var i orden — men læseren var i stykker.**
+      Alle interaktive elementer er ægte `<button>`/`<a>` (nul `onclick` på en
+      `div`), og fokusringen er intakt: kun **ét** `outline:none` i filen, på
+      søgefeltet, som har sin egen `:focus`-erstatning. **Rør ikke ved det.**
+      Tre ting holdt ikke: (1) **24 tabtryk** fra sidens start til første rubrik
+      og intet spring-over-link; (2) **læseren efterlod fokus bag sit eget
+      overlay** — `aabnLaeser` kaldte aldrig `.focus()`, så vejen til Luk var
+      **40 tabtryk, 39 gennem usynlige elementer**, mens `aria-modal="true"`
+      lovede, at de 72 elementer udenfor ikke fandtes; (3) **3 af 97
+      tekststilarter** under WCAG AA. Rettet i `index.html` alene (95 linjer ind,
+      5 ud): spring-over-link, `<main>` som fokusmål, dialogen fik `tabindex`,
+      navn og en Tab-fælde, fokus flyttes til rullebeholderen ved åbning og gives
+      tilbage til kortet ved luk, og to farver mørknet (`--yt-roed` 4,38 →
+      **4,63**; `.laest-maerke` 3,41 → **4,95**). **64 påstande, alle grønne** —
+      den samlede prøve kørt mod `git show HEAD` også: 18/21 før, 21/21 efter.
+      **To målefejl hos mig selv blev smidt undervejs:** en kontrast på 1,17:1 var
+      min parsers manglende `color(srgb …)`, og påstanden om at artiklen ikke kan
+      rulles med tastatur **kunne ikke bevises** — værktøjet kan ikke sende
+      tastetryk til siden. **Venter på Torben:** tryk PageDown i en åben artikel
+      én gang og bekræft, at den ruller. Se loggen.
 
 - [x] **Hvor hurtigt loader forsiden?** *(26.07.2026, ekstra kørsel kl. 16:45)*
       **Intet er vokset sig for stort.** Målt på den levende side med cachen

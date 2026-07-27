@@ -1,10 +1,9 @@
 {
-  "opdateret": "2026-07-26T16:27:21.086857+00:00",
+  "opdateret": "2026-07-27T08:12:39.135398+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
     "datoer": [
-      "2026-06-27",
       "2026-06-28",
       "2026-06-29",
       "2026-06-30",
@@ -33,9 +32,45 @@
       "2026-07-23",
       "2026-07-24",
       "2026-07-25",
-      "2026-07-26"
+      "2026-07-26",
+      "2026-07-27"
     ],
     "serier": [
+      {
+        "navn": "Forskning",
+        "tal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          26
+        ]
+      },
       {
         "navn": "Samfund & etik",
         "tal": [
@@ -48,7 +83,6 @@
           0,
           0,
           0,
-          0,
           1,
           0,
           1,
@@ -68,7 +102,8 @@
           6,
           2,
           2,
-          1
+          2,
+          0
         ]
       },
       {
@@ -76,7 +111,6 @@
         "tal": [
           0,
           0,
-          0,
           1,
           0,
           0,
@@ -103,13 +137,13 @@
           6,
           3,
           3,
+          0,
           0
         ]
       },
       {
         "navn": "Penge & marked",
         "tal": [
-          0,
           0,
           0,
           0,
@@ -138,6 +172,7 @@
           8,
           5,
           1,
+          1,
           0
         ]
       },
@@ -156,7 +191,6 @@
           0,
           0,
           0,
-          0,
           1,
           0,
           0,
@@ -170,8 +204,9 @@
           0,
           1,
           2,
-          3,
           4,
+          4,
+          0,
           0,
           0
         ]
@@ -179,7 +214,6 @@
       {
         "navn": "Politik & jura",
         "tal": [
-          0,
           0,
           0,
           0,
@@ -208,40 +242,6 @@
           4,
           5,
           0,
-          0
-        ]
-      },
-      {
-        "navn": "Forskning",
-        "tal": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          1,
-          2,
-          1,
-          1,
           0,
           0
         ]
@@ -249,14 +249,14 @@
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 219,
-  "sidevisninger_i_alt": 679,
+  "besoeg_i_alt": 224,
+  "sidevisninger_i_alt": 688,
   "ai_chat_besoeg": 0,
   "sider": [
     {
       "sti": "/",
-      "besoeg": 204,
-      "visninger": 409
+      "besoeg": 209,
+      "visninger": 416
     },
     {
       "sti": "/tak.html",
@@ -266,7 +266,7 @@
     {
       "sti": "/youtube.html",
       "besoeg": 3,
-      "visninger": 19
+      "visninger": 20
     },
     {
       "sti": "/laer.html",
@@ -314,6 +314,11 @@
       "visninger": 3
     },
     {
+      "sti": "/artikel/c13d67073208cf10.html",
+      "besoeg": 0,
+      "visninger": 1
+    },
+    {
       "sti": "/prompts.html",
       "besoeg": 0,
       "visninger": 14
@@ -357,7 +362,7 @@
   "henvisere": [
     {
       "fra": "direkte",
-      "besoeg": 193
+      "besoeg": 198
     },
     {
       "fra": "l.facebook.com",
@@ -386,12 +391,12 @@
       {
         "fra": "herfra selv",
         "besoeg": 0,
-        "visninger": 205
+        "visninger": 207
       },
       {
         "fra": "direkte",
-        "besoeg": 181,
-        "visninger": 181
+        "besoeg": 186,
+        "visninger": 186
       },
       {
         "fra": "l.facebook.com",
@@ -430,7 +435,7 @@
       {
         "fra": "herfra selv",
         "besoeg": 0,
-        "visninger": 16
+        "visninger": 17
       },
       {
         "fra": "direkte",
@@ -526,6 +531,13 @@
         "visninger": 3
       }
     ],
+    "/artikel/c13d67073208cf10.html": [
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 1
+      }
+    ],
     "/prompts.html": [
       {
         "fra": "herfra selv",
@@ -589,11 +601,6 @@
     "/vaerktoejer.html"
   ],
   "serie": [
-    {
-      "dato": "2026-06-27",
-      "besoeg": 0,
-      "visninger": 0
-    },
     {
       "dato": "2026-06-28",
       "besoeg": 0,
@@ -738,8 +745,34 @@
       "dato": "2026-07-26",
       "besoeg": 30,
       "visninger": 60
+    },
+    {
+      "dato": "2026-07-27",
+      "besoeg": 0,
+      "visninger": 0
     }
   ],
-  "artikler": [],
-  "laeste_temaer": []
+  "artikler": [
+    {
+      "sti": "/artikel/c13d67073208cf10.html",
+      "besoeg": 0,
+      "visninger": 1,
+      "rubrik": "Cloudflare åbner for AI-afregning til kunder",
+      "kategori": "Lanceringer",
+      "dato": "2026-07-25",
+      "henvisere": [
+        {
+          "fra": "herfra selv",
+          "besoeg": 0,
+          "visninger": 1
+        }
+      ]
+    }
+  ],
+  "laeste_temaer": [
+    {
+      "navn": "Lanceringer",
+      "visninger": 1
+    }
+  ]
 }
