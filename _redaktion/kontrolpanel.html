@@ -54,38 +54,92 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
   padding:13px 17px; font-size:14px; margin-bottom:24px; }
 .flow { background:var(--kort); border:1px solid var(--linje); border-radius:16px; padding:20px; box-shadow:var(--skygge); }
 .flow svg { width:100%; height:auto; display:block; }
-/* ---- Sekvenstræet ---- */
-.trae { position:relative; padding-left:34px; }
-.trae::before { content:""; position:absolute; left:11px; top:14px; bottom:22px; width:2px;
+/* ---- Sekvenstræet ----------------------------------------------------------
+   Etiket til venstre, en lodret akse, kortene til højre. Læses som en
+   tidslinje: hvornår sker det, og hvad består det af. Kortene er ens opbygget
+   uanset type - ikon, navn, forklaring, og nederst hvad man kan gøre ved dem.
+   Farven og ikonet siger typen; teksten i foden gentager den med ord, så
+   kortet ikke kræver, at man har lært et farvesystem. */
+.forklar { display:flex; flex-wrap:wrap; gap:7px 16px; align-items:center;
+  margin:0 0 22px; padding:11px 15px; background:var(--flade);
+  border:1px solid var(--linje); border-radius:12px; }
+.forklar b { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--svag); }
+.forklar i { font-style:normal; display:inline-flex; align-items:center; gap:7px;
+  font-size:12.5px; color:var(--blaek); }
+.forklar .kk-ikon { width:21px; height:21px; font-size:11px; border-radius:7px; }
+/* Ikonfarverne står for sig, så forklaringen og kortene bruger præcis de samme. */
+.i-ai   { background:var(--accent-svag); color:var(--accent); }
+.i-dok  { background:#f8eeda; color:var(--rav); }
+.i-laes, .i-ikke { background:color-mix(in srgb, var(--blaek) 7%, transparent); color:var(--svag); }
+
+.trae { position:relative; }
+.trae::before { content:""; position:absolute; left:229px; top:18px; bottom:26px; width:2px;
   background:linear-gradient(180deg, var(--accent) 0%, var(--linje) 100%); border-radius:2px; }
-.etape { position:relative; background:var(--flade); border:1px solid var(--linje);
-  border-radius:16px; padding:15px 18px 17px; margin-bottom:14px; }
-.etape::before { content:""; position:absolute; left:-28px; top:19px; width:12px; height:12px;
-  border-radius:50%; background:#fff; border:2.5px solid var(--accent); }
-.etape.dok-etape { background:#fffdf8; border-color:#efe4cd; }
-.etape.dok-etape::before { border-color:var(--rav); }
-.etape-top { display:flex; align-items:baseline; gap:10px; margin-bottom:12px; }
-.etape-nr { display:none; }
-.etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:16.5px; }
-.etape-hvornaar { font-size:12px; color:var(--svag); margin-left:auto; }
-.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:12px; }
+/* Aksen tager farve efter det, den forbinder: lilla for AI-trin, rav for dokumenter. */
+.trae-dok::before { background:linear-gradient(180deg, var(--rav) 0%, var(--linje) 100%); }
+.etape { display:grid; grid-template-columns:204px 26px minmax(0,1fr); gap:0 13px;
+  align-items:start; padding-bottom:26px; }
+.etape:last-child { padding-bottom:6px; }
+.etape-mrk { padding-top:3px; text-align:right; }
+.etape-navn { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:16.5px;
+  line-height:1.28; letter-spacing:-.01em; }
+.etape-hvornaar { font-size:12px; color:var(--svag); margin-top:4px; }
+.etape-tal { display:inline-block; margin-top:8px; font-size:11px; font-weight:700;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--svag);
+  background:color-mix(in srgb, var(--blaek) 6%, transparent);
+  border-radius:999px; padding:3px 9px; }
+.etape-prik { position:relative; z-index:1; width:26px; height:26px; border-radius:50%;
+  background:#fff; border:2px solid var(--accent); color:var(--accent);
+  font-size:11.5px; font-weight:700; display:grid; place-items:center; margin-top:4px; }
+.etape.dok-etape .etape-prik { border-color:var(--rav); color:var(--rav); }
+.net { display:grid; grid-template-columns:repeat(auto-fill,minmax(252px,1fr)); gap:12px;
+  align-items:stretch; }
 .pil { text-align:center; color:#b4b2a9; font-size:17px; line-height:1; margin:2px 0 10px; }
-.ikke { background:#fff;
-  border:1px dashed var(--linje); border-radius:12px; padding:13px 16px; }
-.ikke .n { font-weight:700; font-size:14px; }
-.ikke .b { font-size:12.5px; color:var(--svag); margin-top:2px; }
-.dok { background:#fff; border:1px solid #e8dcc0; border-left:4px solid var(--rav);
-  border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
-  transition:transform .12s, border-color .12s; }
-.dok:hover { transform:translateY(-2px); border-color:var(--rav); }
-.dok.laes { cursor:pointer; background:color-mix(in srgb, var(--blaek) 3%, transparent);
-  border:1px dashed var(--linje); border-left:1px dashed var(--linje); }
-.dok .n { font-weight:700; font-size:14.5px; }
-.dok .b { font-size:12.5px; color:var(--svag); margin:3px 0 8px; }
-.dok .f { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--rav);
-  background:#f6ecd8; border-radius:5px; padding:2px 7px; display:inline-block; }
-.dok.laes .f { color:var(--svag); background:color-mix(in srgb, var(--blaek) 6%, transparent); }
-.dok .flag { font-size:10.5px; font-weight:700; color:var(--groen); margin-left:6px; }
+
+/* ---- Ét kort, fire varianter ---- */
+.kk { display:flex; flex-direction:column; gap:9px; width:100%; height:100%;
+  background:#fff; border:1px solid var(--linje); border-radius:14px;
+  padding:13px 15px 12px; text-align:left; font:inherit; color:var(--blaek);
+  transition:transform .12s, border-color .12s, box-shadow .12s; }
+.kk-klik { cursor:pointer; }
+.kk-klik:hover { transform:translateY(-2px); box-shadow:0 5px 16px rgba(25,23,20,.09); }
+.kk-hoved { display:flex; gap:10px; align-items:flex-start; }
+.kk-ikon { width:27px; height:27px; border-radius:9px; flex:none; display:grid;
+  place-items:center; font-size:13px; line-height:1; }
+.kk-hoved > span:last-child { flex:1; min-width:0; }
+.kk-navn { display:block; font-weight:700; font-size:14.5px; line-height:1.32; }
+.kk-b { display:block; font-size:12.5px; color:var(--svag); line-height:1.48; margin-top:3px; }
+.kk-fod { margin-top:auto; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.kk-goer { font-size:11.5px; color:var(--svag); margin-left:auto; white-space:nowrap; }
+.kk .m, .kk .f { font-family:"JetBrains Mono",monospace; font-size:11px;
+  border-radius:6px; padding:2px 8px; display:inline-block; }
+.kk .flag { font-size:10px; font-weight:700; letter-spacing:.05em; color:var(--groen);
+  margin-left:6px; white-space:nowrap; }
+/* AI-trin */
+.kk.kk-ai { border-left:3px solid #ded9cd; }
+.kk-ai .m { color:var(--accent); background:var(--accent-svag); }
+.kk-ai:hover { border-color:var(--accent); }
+.kk-ai.aendret { border-left-color:var(--accent); }
+/* Dokument man kan skrive i */
+.kk.kk-dok { border-color:#ecdfc4; border-left:3px solid var(--rav); }
+.kk-dok .f { color:var(--rav); background:#f6ecd8; }
+.kk-dok:hover { border-color:var(--rav); }
+/* Dokument der kun kan læses */
+.kk.kk-laes { background:var(--flade); border-style:dashed; }
+.kk-laes .f { color:var(--svag); background:color-mix(in srgb, var(--blaek) 7%, transparent); }
+.kk-laes:hover { border-color:var(--svag); }
+/* Ikke AI - sker af sig selv */
+.kk.kk-ikke { background:var(--flade); border-style:dashed; }
+@media (max-width:1080px) {
+  .trae::before { display:none; }
+  .etape { display:block; padding-bottom:22px; }
+  .etape-mrk { text-align:left; display:flex; align-items:baseline; gap:10px;
+    flex-wrap:wrap; margin-bottom:11px; padding-top:0; }
+  .etape-hvornaar, .etape-tal { margin-top:0; }
+  .etape-tal { order:3; }
+  .etape-prik { display:none; }
+}
 /* Køen som læsbar liste */
 .kliste { margin:4px 0 0; }
 .kgruppe { font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
@@ -150,16 +204,8 @@ textarea.oe-felt { min-height:96px; resize:vertical; font-size:14.5px; line-heig
 .oe-knapper button:hover { border-color:var(--accent); color:var(--accent); }
 .oe-tom { text-align:center; padding:40px 24px; color:var(--svag); font-size:15px;
   background:var(--kort); border:1px dashed var(--linje); border-radius:16px; }
-.hj { background:#fff; border:1px solid var(--linje); border-left:4px solid #dcd8cd;
-  border-radius:12px; padding:14px 16px; cursor:pointer; text-align:left; font:inherit;
-  transition:transform .12s, border-color .12s; }
-.hj:hover { transform:translateY(-2px); border-color:var(--accent); }
-.hj.aendret { border-left-color:var(--accent); }
-.hj .n { font-weight:700; font-size:14.5px; }
-.hj .b { font-size:12.5px; color:var(--svag); margin:3px 0 8px; }
-.hj .m { font-family:"JetBrains Mono",monospace; font-size:11px; color:var(--accent);
-  background:var(--accent-svag); border-radius:5px; padding:2px 7px; display:inline-block; }
-.hj .flag { font-size:10.5px; font-weight:700; color:var(--groen); margin-left:6px; }
+/* .hj og .dok er nu rene kroge, som klik-lytteren finder kortene på.
+   Alt udseende ligger i .kk-varianterne ovenfor. */
 /* Læsertal. Én måleenhed (besøg), så én farve - accenten. Tallene står i
    tekstfarver, aldrig i accentfarven: en lys farve er ulæselig som tekst. */
 .kpi { display:grid; grid-template-columns:repeat(auto-fit,minmax(184px,1fr)); gap:12px; }
@@ -427,12 +473,29 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       trin: ["opslag"] }
   ];
 
+  // Alle kort i træet bygges her, så de fire typer bliver ens opbygget og
+  // kun adskiller sig på ikon, farve og hvad foden siger.
+  function kortHtml(o) {
+    return "<" + (o.klik ? "button" : "div") + ' class="kk ' + o.type +
+      (o.klik ? " kk-klik" : "") + (o.ekstra || "") + '"' + (o.data || "") + ">" +
+      '<div class="kk-hoved"><span class="kk-ikon i-' + o.type.slice(3) + '">' + o.ikon + "</span>" +
+      '<span><span class="kk-navn">' + esc(o.navn) + (o.maerker || "") + "</span>" +
+      '<span class="kk-b">' + esc(o.beskrivelse) + "</span></span></div>" +
+      '<div class="kk-fod">' + (o.mrk || "") +
+      (o.goer ? '<span class="kk-goer">' + esc(o.goer) + "</span>" : "") +
+      "</div></" + (o.klik ? "button" : "div") + ">";
+  }
+
   function trinHtml(n) {
     var h = S.hjerner[n], a = erAendret(n);
-    return '<button class="hj' + (a ? " aendret" : "") + '" data-n="' + n + '">' +
-      '<div class="n">' + esc(n.replace(/_/g, " ")) + (a ? '<span class="flag">ÆNDRET</span>' : "") + "</div>" +
-      '<div class="b">' + esc(h.beskrivelse) + "</div>" +
-      '<span class="m">' + esc(aktivModel(n)) + "</span></button>";
+    return kortHtml({
+      type: "kk-ai", ikon: "◆", klik: true, ekstra: " hj" + (a ? " aendret" : ""),
+      data: ' data-n="' + n + '"', navn: n.replace(/_/g, " "),
+      maerker: a ? '<span class="flag">ÆNDRET</span>' : "",
+      beskrivelse: h.beskrivelse,
+      mrk: '<span class="m">' + esc(aktivModel(n)) + "</span>",
+      goer: "Skift model eller instruks"
+    });
   }
 
   // ---- Læserne -------------------------------------------------------------
@@ -945,16 +1008,43 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       }).join("");
   }
 
-  function etapeHtml(e) {
+  // Tællingen står med ord, fordi et tal alene ikke siger, om de tre ting i
+  // etapen er noget man kan rette eller noget der bare sker.
+  function etapeTal(e) {
+    // Samme rækkefølge som kortene står i, ellers skal man lede.
+    var d = [];
+    if ((e.ikke || []).length) d.push(e.ikke.length + " uden AI");
+    if ((e.trin || []).length) d.push(e.trin.length + " AI-trin");
+    if ((e.dok || []).length) d.push(e.dok.length + (e.dok.length === 1 ? " dokument" : " dokumenter"));
+    return d.join(" · ");
+  }
+
+  function etapeHtml(e, i) {
     var kasser = (e.ikke || []).map(function (k) {
-      return '<div class="ikke"><div class="n">' + esc(k[0]) + "</div>" +
-             '<div class="b">' + esc(k[1]) + "</div></div>";
+      return kortHtml({ type: "kk-ikke", ikon: "○", navn: k[0], beskrivelse: k[1],
+                        goer: "Sker af sig selv" });
     }).concat((e.trin || []).map(trinHtml)).concat((e.dok || []).map(dokHtml));
+    var tal = etapeTal(e);
     return '<div class="etape' + (e.erDok ? " dok-etape" : "") + '">' +
-      '<div class="etape-top"><span class="etape-navn">' + esc(e.navn) + "</span>" +
-      (e.hvornaar ? '<span class="etape-hvornaar">' + esc(e.hvornaar) + "</span>" : "") +
-      "</div>" + (kasser.length ? '<div class="net">' + kasser.join("") + "</div>" : "") +
-      "</div>";
+      '<div class="etape-mrk"><div class="etape-navn">' + esc(e.navn) + "</div>" +
+      (e.hvornaar ? '<div class="etape-hvornaar">' + esc(e.hvornaar) + "</div>" : "") +
+      (tal ? '<div class="etape-tal">' + esc(tal) + "</div>" : "") + "</div>" +
+      '<div class="etape-prik">' + (i + 1) + "</div>" +
+      '<div class="net">' + kasser.join("") + "</div></div>";
+  }
+
+  // Nøglen til farverne. Uden den skal man gætte, hvad en stiplet kant betyder.
+  function forklaringHtml(erLoop) {
+    var d = erLoop
+      ? [["dok", "✎", "Dokument du kan skrive i"],
+         ["laes", "▤", "Kun til at læse"],
+         ["ikke", "○", "Sker af sig selv"]]
+      : [["ai", "◆", "AI-trin · klik for at rette model og instruks"],
+         ["ikke", "○", "Ikke AI · sker af sig selv"]];
+    return '<div class="forklar"><b>Kortene</b>' + d.map(function (x) {
+      return '<i><span class="kk-ikon i-' + x[0] + '">' + x[1] + "</span>" +
+             esc(x[2]) + "</i>";
+    }).join("") + "</div>";
   }
 
   function tegnRude() {
@@ -982,13 +1072,17 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       });
       return;
     }
-    var hjaelp = s.id === "S-loop"
-      ? "Gule kasser er dokumenter, du kan skrive i — de styrer, hvad sessionen laver."
-      : "Hvide kasser er AI-trin: klik for at skifte model eller instruks. " +
-        "Grå og stiplede er ikke AI — de gør noget mekanisk.";
+    var erLoop = s.id === "S-loop";
+    var hjaelp = erLoop
+      ? "Læses oppefra og ned. Dokumenterne er det, sessionen retter sig efter — " +
+        "retter du i dem, laver den noget andet."
+      : "Rækkefølgen crawleren arbejder i, én gang i timen. Hvert AI-trin er et " +
+        "kald, du selv kan bestemme model og instruks for.";
     rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
       '<p class="manchet">' + esc(s.under) + " · " + hjaelp + "</p>" +
-      '<div class="trae">' + s.etaper.map(etapeHtml).join("") + "</div>";
+      forklaringHtml(erLoop) +
+      '<div class="trae' + (erLoop ? " trae-dok" : "") + '">' +
+      s.etaper.map(etapeHtml).join("") + "</div>";
   }
 
   function tegn() {
@@ -1208,12 +1302,17 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function dokHtml(k) {
     var d = DOK[k];
     if (!d) return "";
-    var a = dokErAendret(k);
-    return '<button class="dok' + (d.kan_rettes ? "" : " laes") + '" data-dok="' + k + '">' +
-      '<div class="n">' + esc(d.navn) + (a ? '<span class="flag">ÆNDRET</span>' : "") +
-      (d.findes ? "" : ' <span class="flag" style="color:var(--rav)">FINDES IKKE ENDNU</span>') + "</div>" +
-      '<div class="b">' + esc(d.beskrivelse) + "</div>" +
-      '<span class="f">' + esc(d.fil) + (d.kan_rettes ? "" : " · kun læsning") + "</span></button>";
+    var a = dokErAendret(k), skriv = !!d.kan_rettes;
+    return kortHtml({
+      type: skriv ? "kk-dok" : "kk-laes", ikon: skriv ? "✎" : "▤", klik: true,
+      ekstra: " dok" + (skriv ? "" : " laes"), data: ' data-dok="' + k + '"',
+      navn: d.navn,
+      maerker: (a ? '<span class="flag">ÆNDRET</span>' : "") +
+        (d.findes ? "" : '<span class="flag" style="color:var(--rav)">FINDES IKKE ENDNU</span>'),
+      beskrivelse: d.beskrivelse,
+      mrk: '<span class="f">' + esc(d.fil) + "</span>",
+      goer: skriv ? "Klik for at skrive" : "Kun læsning"
+    });
   }
 
   // ---- Køen som liste: parse, vis, byg om ----
