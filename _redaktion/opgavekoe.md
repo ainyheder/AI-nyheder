@@ -6,16 +6,24 @@ før det næste røres.
 **Redaktionen:** flyt en linje op, hvis du vil have den frem i køen. Skriv nye ønsker
 ind hvor som helst. Det, der står øverst, er det, der bliver lavet først.
 
-Punkterne øverst er *målte* problemer — vi ved, de findes. Længere nede er de
-mere "gå det efter i sømmene". Hvert punkt siger, hvilket af de ti punkter i
-`redaktionens-oejne.md` det handler om.
+Filen har fire lister, og de skal ikke blandes sammen:
+
+| Liste | Hvad det er | Bliver det lavet? |
+|---|---|---|
+| `## Kø` | Målte problemer. Hvert punkt har et tal og en dato. | Ja, oppefra og ned |
+| `## Mistanker` | Noget nogen har set, men ikke målt | Først når det er målt |
+| `## Fast gennemgang` | Spørgsmål uden ende, på skift | Når der er plads |
+| `## Venter på redaktionen` | Målt, men kræver en beslutning | Når du har svaret |
+
+Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handler om.
 
 ---
 
 ## Kø
 
-*Sorteret 27.07.2026 efter: (1) i stykker for læseren nu, (2) bryder
-målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
+*Sorteret efter: (1) i stykker for læseren nu, (2) bryder målestokken synligt,
+(3) gør siden mærkbart bedre. Kun målte problemer står her — resten ligger under
+`## Mistanker` og `## Fast gennemgang` længere nede.*
 
 ### 1 — I stykker for læseren lige nu
 
@@ -98,83 +106,133 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
-**Herunder: to punkter, sessionen ikke må bygge, før redaktionen har besluttet.**
+---
 
-- [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
-      26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
-      og bruger kun den gamle fil som cache pr. link. Derfor lever en artikel
-      præcis så længe, kildens RSS-feed nævner den — **dage på et travlt feed**,
-      ikke de 30 dage `MAX_DAGE_GAMMEL` lover. **35 af 109 artikelsider er ude
-      af listen lige nu, den nyeste fra i går.** Konsekvensen er, at ingen
-      forbedring af artikelskabelonen nogensinde rammer mere end den nyeste uge,
-      og at hver ny nat skal skrive endnu et engangsscript. Nattens rettelser
-      lukkede symptomerne (tomme sider bygges ikke, billeder slettes ikke under
-      siderne), men ikke årsagen. Mindste rettelse: bevar artikler, der har en
-      side, indtil de 30 dage faktisk er gået. **Venter på en beslutning:** forsiden
-      ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
-      kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
-      det er afklaret. *Punkt 4 og 10.*
-      **Vægten er målt 26.07 kl. 16:45 og hører med i prisen:** forsiden henter
-      hele `articles.json` i én blok, og den koster **781 bytes pr. artikel på
-      tråden** (81 artikler = 62 kB gzippet). De sidste to hele døgn tog **24 og
-      19** nye artikler ind, så et rigtigt 30-dages-arkiv bliver **~570–600
-      artikler = 435–460 kB, cirka 7× mere end i dag** — hentet i én blok, før der
-      står noget som helst på skærmen. Skal arkivet vokse så meget, bør forsiden
-      formentlig hente en let liste og først resten på klik. Det er en større
-      ombygning end arkivet selv, og den bør regnes med i beslutningen.
+## Mistanker
 
-- [ ] **`data/img/` kan ikke længere rydde op efter sig.** Fra 26.07 sletter
-      oprydningen aldrig et billede, en side på disken peger på — det var
-      rettelsen, der fjernede 25 brudte billeder. Prisen er, at **62 af 69 filer
-      nu er permanente**, og at mappen vokser med ~10 billeder à 88 kB på travle
-      dage, altså 25–30 MB om måneden i git. Hæves `BILLED_STIL_VERSION`, låses
-      hele det gamle sæt fast oveni. Intet er i stykker; spørgsmålet er, hvornår
-      repoet bliver ubehageligt stort. Mindste rettelse er formentlig at flytte
-      billeder for sider ældre end X måneder ud af git og lade siderne pege på
-      `assets/og.png` — men det er redaktionens valg, om det er værd at gøre endnu.
-      *Punkt 4.*
+Ting nogen har lagt mærke til, men ingen har målt. **De bliver ikke prioriteret
+og bliver ikke lavet, før nogen har målt dem.** Det er meningen: halvdelen af de
+punkter, der er blevet lavet, viste sig at være beskrevet forkert, fordi et fund
+uden tal blev skrevet ind som en opgave. En mistanke er en fin ting at aflevere —
+den skal bare stå her og ikke i køen.
 
-### 4 — Undersøgelser: vi ved ikke, om der er et problem
+Måler en session en mistanke efter, flytter den enten op i `## Kø` med sit tal
+eller ud herfra med en note om, at der ikke var noget.
 
-- [ ] **Gennemgå kategoriseringen.** Ligger artiklerne i de rigtige kategorier,
-      eller ender for meget i "Lanceringer"? *Punkt 6.*
+*(Ingen lige nu.)*
 
-- [ ] **Virker siden uden JavaScript?** Artikelsiderne gør. Forsiden gør ikke.
-      Er det et problem for Google og for folk med langsomme forbindelser?
-      *Punkt 9.*
+---
 
-- [ ] **AI-kørekortet, modul for modul.** Er sproget stadig til en nabo uden
-      teknisk baggrund, eller har der sneget sig jargon ind? *Punkt 7.*
+## Fast gennemgang
 
-- [ ] **Erhvervsoverbygningens fire moduler.** Samme gennemgang. Rammer de folk,
-      der møder AI på jobbet — uden at blive konsulentsprog? *Punkt 7.*
+Spørgsmål uden ende. De bliver aldrig klaret — de forfalder bare igen, og derfor
+hører de ikke til i en kø. Har sessionen plads, eller er køen tom, tages **den,
+der har ventet længst**. Én time, ikke mere. Findes der et målt problem, skrives
+det i køen; ellers noteres bare, at den holder. Sæt dagens dato på uanset hvad.
 
-- [ ] **prompts.html og prompt-arkivet.** Er de 17 prompts stadig de bedste, vi
-      kan lave? Er der gengangere mellem biblioteket og kartoteket? *Punkt 3.*
+- **Gennemgå kategoriseringen.** Ligger artiklerne i de rigtige kategorier,
+  eller ender for meget i "Lanceringer"? *Punkt 6.*
+  *Sidst set: aldrig.*
 
-- [ ] **vaerktoejer.html.** Er de 13 værktøjer og noterne stadig rigtige? Priser
-      og funktioner skifter hurtigt — flag det, der ser forældet ud, i loggen
-      i stedet for at gætte. *Punkt 5.*
+- **Virker siden uden JavaScript?** Artikelsiderne gør. Forsiden gør ikke.
+  Er det et problem for Google og for folk med langsomme forbindelser?
+  *Punkt 9.*
+  *Sidst set: aldrig.*
 
-- [ ] **laer.html.** Er den stadig inspirerende, eller er den blevet en
-      linksamling? *Punkt 7.*
+- **AI-kørekortet, modul for modul.** Er sproget stadig til en nabo uden
+  teknisk baggrund, eller har der sneget sig jargon ind? *Punkt 7.*
+  *Sidst set: aldrig.*
 
-- [ ] **faq.html.** Svarer den på det, en ny besøgende faktisk undrer sig over?
-      *Punkt 7.*
+- **Erhvervsoverbygningens fire moduler.** Samme gennemgang. Rammer de folk,
+  der møder AI på jobbet — uden at blive konsulentsprog? *Punkt 7.*
+  *Sidst set: aldrig.*
 
-- [ ] **En tilfældig artikelside.** Ser den professionel ud alene, uden forsiden
-      omkring sig? Det er den, folk lander på fra Google. *Punkt 4.*
+- **prompts.html og prompt-arkivet.** Er de 17 prompts stadig de bedste, vi
+  kan lave? Er der gengangere mellem biblioteket og kartoteket? *Punkt 3.*
+  *Sidst set: aldrig.*
 
-- [ ] **En tilfældig videoside.** Samme prøve. *Punkt 4.*
+- **vaerktoejer.html.** Er de 13 værktøjer og noterne stadig rigtige? Priser
+  og funktioner skifter hurtigt — flag det, der ser forældet ud, i loggen
+  i stedet for at gætte. *Punkt 5.*
+  *Sidst set: aldrig.*
 
-- [ ] **uge.html — ugens overblik.** Holder den stadig, eller er den blevet en
-      opremsning? *Punkt 2.*
+- **laer.html.** Er den stadig inspirerende, eller er den blevet en
+  linksamling? *Punkt 7.*
+  *Sidst set: aldrig.*
 
-- [ ] **om.html.** Stemmer beskrivelsen med, hvad siden faktisk gør i dag?
-      Kildelisten er ændret, og DeepSeek er på vej ind. *Punkt 5.*
+- **faq.html.** Svarer den på det, en ny besøgende faktisk undrer sig over?
+  *Punkt 7.*
+  *Sidst set: aldrig.*
 
-- [ ] **Læs `data/opslag.json` igennem, når der er udkast i den.** Er tonen i
-      de automatiske opslag noget, redaktionen ville skrive selv? *Punkt 5 og 8.*
+- **En tilfældig artikelside.** Ser den professionel ud alene, uden forsiden
+  omkring sig? Det er den, folk lander på fra Google. *Punkt 4.*
+  *Sidst set: aldrig.*
+
+- **En tilfældig videoside.** Samme prøve. *Punkt 4.*
+  *Sidst set: aldrig.*
+
+- **uge.html — ugens overblik.** Holder den stadig, eller er den blevet en
+  opremsning? *Punkt 2.*
+  *Sidst set: aldrig.*
+
+- **om.html.** Stemmer beskrivelsen med, hvad siden faktisk gør i dag?
+  Kildelisten er ændret, og DeepSeek er på vej ind. *Punkt 5.*
+  *Sidst set: aldrig.*
+
+- **Læs `data/opslag.json` igennem, når der er udkast i den.** Er tonen i
+  de automatiske opslag noget, redaktionen ville skrive selv? *Punkt 5 og 8.*
+  *Sidst set: aldrig.*
+
+---
+
+## Venter på redaktionen
+
+Målt og forstået, men må ikke bygges, før nogen har taget stilling. De sorteres
+ikke med i køen, og sessionen skal ikke gætte svaret.
+
+- **Skal `articles.json` blive et rigtigt 30-dages-arkiv?**
+  *Spørgsmålet: forsiden ville vise mærkbart flere artikler, arkivet ville veje
+  ~7× mere (435–460 kB mod 62 kB i dag), og 35 genoplivede artikler ville koste
+  penge i omskrivning og billeder. Ja, nej, eller ja-men-hent-let-liste-først?*
+
+  `articles.json` er ikke et arkiv, men det tror resten af koden. Målt
+  26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
+  og bruger kun den gamle fil som cache pr. link. Derfor lever en artikel
+  præcis så længe, kildens RSS-feed nævner den — **dage på et travlt feed**,
+  ikke de 30 dage `MAX_DAGE_GAMMEL` lover. **35 af 109 artikelsider er ude
+  af listen lige nu, den nyeste fra i går.** Konsekvensen er, at ingen
+  forbedring af artikelskabelonen nogensinde rammer mere end den nyeste uge,
+  og at hver ny nat skal skrive endnu et engangsscript. Nattens rettelser
+  lukkede symptomerne (tomme sider bygges ikke, billeder slettes ikke under
+  siderne), men ikke årsagen. Mindste rettelse: bevar artikler, der har en
+  side, indtil de 30 dage faktisk er gået. **Venter på en beslutning:** forsiden
+  ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
+  kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
+  det er afklaret. *Punkt 4 og 10.*
+  **Vægten er målt 26.07 kl. 16:45 og hører med i prisen:** forsiden henter
+  hele `articles.json` i én blok, og den koster **781 bytes pr. artikel på
+  tråden** (81 artikler = 62 kB gzippet). De sidste to hele døgn tog **24 og
+  19** nye artikler ind, så et rigtigt 30-dages-arkiv bliver **~570–600
+  artikler = 435–460 kB, cirka 7× mere end i dag** — hentet i én blok, før der
+  står noget som helst på skærmen. Skal arkivet vokse så meget, bør forsiden
+  formentlig hente en let liste og først resten på klik. Det er en større
+  ombygning end arkivet selv, og den bør regnes med i beslutningen.
+
+- **Er det tid at flytte gamle billeder ud af git?**
+  *Spørgsmålet: mappen vokser nu med 25–30 MB om måneden og kan ikke rydde op
+  længere. Skal sider ældre end X måneder pege på `assets/og.png` i stedet — og
+  hvad er X? Eller er repoets størrelse ikke et problem endnu?*
+
+  `data/img/` kan ikke længere rydde op efter sig. Fra 26.07 sletter
+  oprydningen aldrig et billede, en side på disken peger på — det var
+  rettelsen, der fjernede 25 brudte billeder. Prisen er, at **62 af 69 filer
+  nu er permanente**, og at mappen vokser med ~10 billeder à 88 kB på travle
+  dage, altså 25–30 MB om måneden i git. Hæves `BILLED_STIL_VERSION`, låses
+  hele det gamle sæt fast oveni. Intet er i stykker; spørgsmålet er, hvornår
+  repoet bliver ubehageligt stort. Mindste rettelse er formentlig at flytte
+  billeder for sider ældre end X måneder ud af git og lade siderne pege på
+  `assets/og.png` — men det er redaktionens valg, om det er værd at gøre endnu.
+  *Punkt 4.*
 
 ---
 

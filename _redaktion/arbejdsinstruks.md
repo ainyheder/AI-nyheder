@@ -76,7 +76,12 @@ morgen.
    ønsket blive stående, så der kan svares igen.
 2. `_redaktion/redaktionens-oejne.md` — målestokken. Ti punkter, og et afsnit om
    hvad der IKKE er et problem. Den afgør alt andet.
-3. `_redaktion/opgavekoe.md` — køen.
+3. `_redaktion/opgavekoe.md` — fire lister, som ikke må blandes sammen:
+   `## Kø` er **målte** problemer og det eneste, der prioriteres.
+   `## Mistanker` er set, men ikke målt — måles først, laves derefter.
+   `## Fast gennemgang` er den rotation, du tager af, når køen er tom.
+   `## Venter på redaktionen` rører du ikke; der er stillet et spørgsmål,
+   og du skal ikke gætte svaret.
 4. `_redaktion/arbejdslog.md` — hvad tidligere kørsler fandt og besluttede.
 5. `_redaktion/analyse-seneste.md` — din egen analyse fra sidst, hvis den findes.
 
@@ -98,6 +103,15 @@ ud, og forrige session har ændret kode. At gå direkte i gang med øverste punk
 at arbejde efter et kort, ingen har tjekket.
 
 Sæt cirka en tiendedel af din tid af til det her. Ikke mere.
+
+**Kører du kort efter en anden session, så lav kun forskellen.** Åbn
+`analyse-seneste.md`. Er den øverste analyse under tre timer gammel, og er der
+ikke pushet imens, er dens tal stadig gyldige. Så måler du ikke det hele forfra —
+du måler **det, der kan have flyttet sig siden**: hvad crawleren har lavet i
+mellemtiden, og hvad forrige session rørte. Skriv analysen som `**Siden
+<klokkeslæt>:** <hvad der har ændret sig>` og gå videre til punkt 4. To sessioner
+en halv time fra hinanden, der begge tæller alt fra bunden, bruger tid på at nå
+frem til det samme tal.
 
 **1. Mål tilstanden selv.** Skriv et lille engangsscript og kør det. Tæl i
 `data/articles.json`, `data/youtube.json`, `artikel/`, `video/`, `data/laesertal.json`
@@ -121,8 +135,10 @@ de ser noget, ingen måling fanger. Derefter:
 - Fandt du noget, der er værre end øverste punkt? Så skriv det ind og tag det.
 - Fandt du intet nyt, og passer køen? Så tag øverste punkt. Det er et fint svar.
 
-**5. Skriv analysen ned** i `_redaktion/analyse-seneste.md` (overskriv den
-forrige). Kort — det er et arbejdspapir, ikke en rapport:
+**5. Skriv analysen ned** øverst i `_redaktion/analyse-seneste.md`. Behold de to
+forrige nedenunder og slet resten — så kan næste session se, hvad der har
+flyttet sig, i stedet for kun hvor tingene står. Kort; det er et arbejdspapir,
+ikke en rapport:
 
 ```
 # Analyse · <dato og klokkeslæt>
@@ -148,6 +164,24 @@ flere timer. Når ét er færdigt, testet og logget, tager du det næste.
 når punkt et er færdigt. Fem halvfærdige ting, der hver især ser ud til at virke,
 er værre end ingenting.
 
+**Én undtagelse — samme årsag, samme måling.** Graver du i et punkt og finder
+noget mere, der har **samme rod**, ligger i **filer du allerede har målt**, og kan
+dækkes af **den prøve, du alligevel skal køre** — så retter du det nu og skriver
+det ind under samme log-post. Fandt du 11 sider med et brudt billede, og der er 25,
+retter du alle 25.
+
+Det er ikke en åbning for at samle op undervejs. Er der bare én af de tre ting,
+der ikke passer — anden rod, andre filer, egen prøve — så skriver du fundet i køen
+med din måling og lader det ligge. Reglen findes, fordi målingen er det dyre.
+Har du først betalt for at forstå et hjørne af koden, er det spild at lade et
+andet punkt betale for det igen i morgen. Loggen viser seks gange, hvor et fund
+ved siden af opgaven var mere værd end selve opgaven.
+
+**Er noget i stykker for læseren lige nu, må du tage det først** — også selvom det
+ikke står øverst. Kravet er, at du kan **måle** det, og at det hører til trin 1 i
+prioriteringen nedenfor. Skriv i loggen, at du sprang køen over, og hvad målingen
+viste. En kø fra i går må ikke holde en tom forside i live til i morgen.
+
 **Mål, før du bygger.** Antag aldrig at problembeskrivelsen er rigtig. Tæl i
 `data/articles.json`, læs koden, kør funktionen. Tre alvorlige fejl blev fundet
 præcis sådan: en `AttributeError` der tømte alle briefs, 83 artikelsider der blev
@@ -164,6 +198,10 @@ og noget vrøvl. Frontend: jsdom + node med `fetch` mod de rigtige datafiler,
 
 **Kan et punkt ikke lade sig gøre** — manglende adgang, forkert antagelse — så
 skriv hvorfor, flyt det ned med en note, og tag det næste. Gå ikke i stå.
+
+**Er `## Kø` tom, er du ikke færdig.** Så tager du enten den ældste i
+`## Fast gennemgang` eller måler en `## Mistanker` efter. En tom kø er et godt
+tegn, ikke en fejl — find ikke på arbejde for at fylde den.
 
 **Log efter hvert punkt, ikke til sidst.**
 
@@ -199,36 +237,81 @@ Kald tallet N.
 Gå på jagt efter nye. Vælg et sted, der ikke har været gennemgået de seneste
 kørsler — en side, en del af crawleren, en måling. Se på det som en læser.
 
-**Du må skrive op til N nye punkter i køen. Du SKAL ikke skrive N.**
+**Du må skrive op til N nye punkter. Du SKAL ikke skrive N.**
 
-Et punkt kommer kun i køen, hvis det kan svare på alle tre:
+### Hvor et fund skal hen — og hvorfor det er to steder
 
-1. Hvad ser eller mister **en læser**? Konkret, med et eksempel fra siden.
-2. Hvilket af de ni punkter i målestokken brydes?
-3. Hvad er den mindste rettelse? Noget, der kan laves på én nat.
+Halvdelen af alle punkter, der er blevet lavet, viste sig at være beskrevet
+forkert. Det står sort på hvidt i loggen: 14 ud af 28 poster begynder med, at
+målingen sagde noget andet end køen. *"Fristen er dage og ikke 30." "De 15 sider
+blev bygget tynde, ikke frosset tynde." "Det foreslåede script kan ikke skrive
+tekst."* Hver af dem kostede en session tid på at rette et kort, ingen havde
+tjekket — og prioriteringen i fase 3 var lavet oven på den forkerte beskrivelse.
 
-Fandt du ingen, skriver du nul og noterer: *"Gennemgik X — fandt intet, der
+Årsagen er ikke sjusk. Det er, at fase 2 skriver punkter ud fra at *kigge*, og at
+punktet så bliver læst som noget, nogen har *målt*. De to ting skal skilles ad:
+
+**Har du et tal, går fundet i `## Kø`.** Punktet skal indeholde:
+
+1. **Symptomet:** hvad ser eller mister en læser? Konkret, med et eksempel.
+2. **Målingen der beviser det:** tallet, datoen, og kommandoen eller filen, der
+   gav tallet. `Målt 27.07: 39 af 112 sider …`
+3. **Hvilket punkt i målestokken** der brydes.
+
+**Skriv ikke, hvad rettelsen er.** Du har ikke målt nok til at vide det, og et
+forkert forslag er værre end ingen: den næste session bruger tid på at afvise det.
+Har du en formodning, så skriv den som netop dét — *"formentlig i
+`saml_dublet_historier`"* — på en linje for sig.
+
+**Har du ikke et tal, går fundet i `## Mistanker`.** En mistanke er en helt
+ordentlig ting at aflevere: *"Forsiden føles lang på en telefon — ikke målt."*
+Den bliver ikke prioriteret og bliver ikke lavet, før nogen har målt den. Det er
+hele pointen. En mistanke, der får lov at ligge i køen som et punkt, bliver til
+et arbejdskort, ingen har dækning for.
+
+Fandt du ingen af delene, skriver du nul: *"Gennemgik X — fandt intet, der
 bryder målestokken."* Det er et fuldgyldigt resultat. Opfundet arbejde koster
 redaktionen tid og gør siden dårligere.
 
 Genåbn ikke noget fra "Klaret", medmindre du kan måle, at det er gået i stykker igen.
 
-## Fase 3 — Prioritér hele køen til næste kørsel
+## Fase 3 — Prioritér køen til næste kørsel
 
-Sortér **hele** køen om efter denne rækkefølge:
+Sortér `## Kø` om efter denne rækkefølge. **Kun `## Kø`** — `## Mistanker`,
+`## Fast gennemgang` og `## Venter på redaktionen` sorteres ikke. De er ikke
+arbejde endnu.
 
 1. **Noget er i stykker for læseren lige nu** — tomme sider, døde links, forkerte tal.
 2. **Noget bryder målestokken synligt** — jargon, gentagelser, uprofessionelt udseende.
 3. **Noget gør siden mærkbart bedre** — nyt indhold, bedre struktur, hurtigere.
-4. **Undersøgelser** — hvor vi ikke ved, om der er et problem.
 
 Inden for samme trin: det, der rammer flest læsere, kommer først. Ved uafgjort:
 det billigste at rette.
 
-Bliver køen længere end 40 punkter, flyttes de svageste ned under `## Parkeret`.
+**Er `## Kø` tom, er det ikke et problem.** Så tager næste session det øverste
+fra `## Fast gennemgang` — rotationen nedenfor — eller måler en mistanke efter.
+En kort kø betyder, at siden er i orden, ikke at nogen har glemt at finde fejl.
+
+**Tag stilling til aldrende punkter.** Er et punkt over en uge gammelt og aldrig
+blevet målt siden, så mål det om eller flyt det til `## Mistanker`. Tal fra i
+sidste uge er ikke tal.
+
+Bliver `## Kø` længere end 25 punkter, flyttes de svageste ned under `## Parkeret`.
 
 Skriv til sidst, hvad der nu står øverst — og én sætning om hvorfor rækkefølgen
 ændrede sig. Redaktionen skal kunne være uenig.
+
+## Fast gennemgang — rotationen
+
+Nogle spørgsmål har ingen ende: *er `laer.html` stadig inspirerende? Er de 17
+prompts stadig de bedste?* De hører ikke til i en kø, for de bliver aldrig
+klaret — de forfalder bare igen. Derfor står de for sig i `opgavekoe.md` under
+`## Fast gennemgang`, hver med en dato for, hvornår de sidst blev set på.
+
+Har du plads, eller er `## Kø` tom, tager du **den, der har ventet længst**.
+Sæt en time af, ikke mere. Ender det med et målt problem, skriver du det i køen
+og sætter dagens dato på gennemgangen. Ender det med "den holder", er det
+også et resultat — sæt datoen på og gå videre.
 
 ---
 

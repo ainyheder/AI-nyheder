@@ -90,7 +90,7 @@ det er meningen.
 Ét problem ad gangen. Hvert forslag skal kunne svare på:
 
 1. **Hvad ser en læser?** Konkret, ikke abstrakt. Gerne med et eksempel fra siden.
-2. **Hvilket af de ni punkter brydes?** Kan det ikke kobles til et af dem, er det
+2. **Hvilket af de ti punkter brydes?** Kan det ikke kobles til et af dem, er det
    sandsynligvis ikke vigtigt.
 3. **Hvad er det mindste, der ville rette det?**
 

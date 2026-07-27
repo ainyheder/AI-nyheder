@@ -161,6 +161,8 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
 .kknapper button:hover { border-color:var(--accent); color:var(--accent); }
 .kknapper button.ok:hover { border-color:var(--groen); color:var(--groen); }
 .ktom { color:var(--svag); font-size:14px; padding:20px 0; }
+.kpunkt.venter { border-color:#ecdfc4; border-left:4px solid var(--rav); background:#fffdf8; }
+.kpunkt.venter .knr { background:#f6ecd8; color:var(--rav); }
 
 /* ---- Ønsker: en formular, ikke en tekstfil ---- */
 .oe-top { display:flex; align-items:center; gap:14px; margin-bottom:18px; flex-wrap:wrap; }
@@ -1316,16 +1318,24 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   }
 
   // ---- Køen som liste: parse, vis, byg om ----
-  // Filen har tre dele: alt før "## Kø", selve køen, og alt fra "## Klaret".
-  // Vi rører kun den midterste, så "Klaret" og "Ting kun et menneske kan gøre"
-  // altid overlever, uanset hvad der flyttes rundt.
+  // Filen har tre dele: alt før "## Kø", selve køen, og alt fra næste "## ".
+  // Vi rører kun den midterste, så Mistanker, Fast gennemgang, Klaret og alt
+  // andet under egen ##-overskrift overlever, uanset hvad der flyttes rundt.
+  // Halen findes ved at lede efter den NÆSTE ##-overskrift og ikke ved navn:
+  // ellers ville en ny sektion mellem køen og "Klaret" blive slugt ved gem,
+  // fordi punkt-parseren nedenfor kun kender ###/#### og kasserer resten.
   function parseKoe(tekst) {
-    var iKoe = tekst.indexOf("## Kø");
-    var iKlaret = tekst.indexOf("## Klaret");
-    if (iKoe < 0 || iKlaret < 0 || iKlaret < iKoe) return null;
-    var hoved = tekst.slice(0, iKoe + "## Kø".length);
-    var hale = tekst.slice(iKlaret);
-    var krop = tekst.slice(iKoe + "## Kø".length, iKlaret);
+    // Skal forankres til linjestart: forordet nævner "## Kø" inde i en tabel,
+    // og et almindeligt indexOf ville finde dén og gøre køen tom.
+    var h = /^## Kø[^\S\n]*$/m.exec(tekst);
+    if (!h) return null;
+    var start = h.index + h[0].length;
+    var m = /\n## /.exec(tekst.slice(start));
+    var iSlut = m ? start + m.index + 1 : -1;
+    if (iSlut < 0) return null;
+    var hoved = tekst.slice(0, start);
+    var hale = tekst.slice(iSlut);
+    var krop = tekst.slice(start, iSlut);
     var blokke = [], nu = null;
     krop.split("\n").forEach(function (l) {
       var h = l.match(/^#{3,4}\s+(.*\S)\s*$/);
@@ -1362,14 +1372,46 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 
   var koeData = null;
 
+  // Sektioner uden for selve køen. De prioriteres ikke og kan ikke flyttes,
+  // men "Venter på redaktionen" er spørgsmål stillet TIL dig — de skal ses,
+  // ellers står loopet stille, uden at nogen opdager hvorfor.
+  function haleSektion(navn) {
+    if (!koeData) return [];
+    var h = new RegExp("^## " + navn + "[^\\S\\n]*$", "m").exec(koeData.hale);
+    if (!h) return [];
+    var fra = koeData.hale.slice(h.index + h[0].length);
+    var slut = /\n## /.exec(fra);
+    var krop = slut ? fra.slice(0, slut.index) : fra;
+    return krop.split(/\n(?=- )/).slice(1).map(function (p) {
+      var l = p.trim().replace(/^- /, "").split("\n");
+      var m = l[0].match(/^\*\*(.+?)\*\*/);
+      return { titel: m ? m[1] : l[0].replace(/\*\*/g, ""),
+               rest: l.slice(1).join(" ").replace(/[*`]/g, "").replace(/\s+/g, " ").trim() };
+    });
+  }
+
+  function venterHtml() {
+    var v = haleSektion("Venter på redaktionen");
+    if (!v.length) return "";
+    return '<div class="kgruppe">Venter på jer — ' + v.length +
+      " spørgsmål, der holder arbejdet tilbage</div>" +
+      v.map(function (p) {
+        return '<div class="kpunkt venter"><span class="knr">?</span>' +
+          '<div class="ktekst"><div class="ktitel">' + esc(p.titel) + "</div>" +
+          (p.rest ? '<div class="kdetalje">' + esc(p.rest.slice(0, 260)) +
+                    (p.rest.length > 260 ? "…" : "") + "</div>" : "") +
+          "</div></div>";
+      }).join("");
+  }
+
   function tegnKoeliste() {
     var vaert = document.getElementById("kliste");
     if (!vaert || !koeData) return;
     var nr = 0;
     var aabne = koeData.blokke.filter(function (b) { return b.type === "punkt" && !b.faerdig; });
     if (!aabne.length) {
-      vaert.innerHTML = '<div class="ktom">Køen er tom. Natsessionen fylder den selv, ' +
-        "næste gang den gennemgår siden.</div>";
+      vaert.innerHTML = '<div class="ktom">Køen er tom — det er et godt tegn. ' +
+        "Næste kørsel tager en fast gennemgang i stedet.</div>" + venterHtml();
       return;
     }
     vaert.innerHTML = koeData.blokke.map(function (b, i) {
@@ -1386,7 +1428,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         '<button data-flyt="ned" data-i="' + i + '" title="Ned">↓</button>' +
         '<button class="ok" data-flyt="klaret" data-i="' + i + '" title="Markér som klaret">✓</button>' +
         "</div></div>";
-    }).join("");
+    }).join("") + venterHtml();
   }
 
   function koeKlik(ev) {
@@ -1397,7 +1439,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       var p = blokke.splice(i, 1)[0];
       p.faerdig = true;
       p.linjer[0] += " *(klaret " + new Date().toISOString().slice(0, 10) + ")*";
-      koeData.hale = koeData.hale.replace(/^## Klaret\n/,
+      // m-flaget er nødvendigt: halen begynder ved "## Mistanker", ikke ved
+      // "## Klaret", så et uforankret ^ ville ramme forbi og tabe punktet.
+      koeData.hale = koeData.hale.replace(/^## Klaret[^\S\n]*\n/m,
         "## Klaret\n\n- [x] " + p.linjer[0] + "\n");
     } else {
       var ret = b.dataset.flyt === "op" ? -1 : 1, j = i + ret;
