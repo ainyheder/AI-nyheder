@@ -11,7 +11,7 @@
 <style>
 :root {
   --bg:#ffffff; --kort:#ffffff; --flade:#f7f6f3; --blaek:#191714; --svag:#6d675d; --linje:#e2ddd2;
-  --accent:#5b4bf0; --accent-svag:#ecebfd; --groen:#2e9e5b; --rav:#c2711d;
+  --accent:#5b4bf0; --accent-svag:#ecebfd; --groen:#2e9e5b; --rav:#c2711d; --roed:#b3392b;
   --skygge:0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -163,6 +163,13 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
 .ktom { color:var(--svag); font-size:14px; padding:20px 0; }
 .kpunkt.venter { border-color:#ecdfc4; border-left:4px solid var(--rav); background:#fffdf8; }
 .kpunkt.venter .knr { background:#f6ecd8; color:var(--rav); }
+.kknapper button.nej:hover { border-color:var(--roed); color:var(--roed); }
+.kpunkt.fravaelg { border-color:#e8d2cd; border-left:4px solid var(--roed); background:#fffaf9; }
+.kpunkt.fravaelg .knr { background:#f7e3df; color:var(--roed); }
+.kgrund { width:100%; margin-top:9px; padding:7px 10px; font:inherit; font-size:13.5px;
+  border:1px solid var(--linje); border-radius:8px; background:var(--kort); color:var(--blaek); }
+.kgrund:focus { outline:none; border-color:var(--roed); }
+.kgrund.mangler { border-color:var(--roed); background:#fff5f4; }
 
 /* ---- Ønsker: en formular, ikke en tekstfil ---- */
 .oe-top { display:flex; align-items:center; gap:14px; margin-bottom:18px; flex-wrap:wrap; }
@@ -1423,6 +1430,22 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       if (b.faerdig) return "";
       nr++;
       var rest = restAf(b);
+      // Fravælg sker i to trin: krydset åbner en grund-linje her i punktet.
+      // Uden grund ville "Fravalgt" blot være en skraldespand, og listen skal
+      // kunne læses af næste kørsel som en begrundelse for ikke at foreslå det igen.
+      if (b.fravaelger) {
+        return '<div class="kpunkt fravaelg"><span class="knr">✕</span>' +
+          '<div class="ktekst"><div class="ktitel">' + esc(titelAf(b)) + "</div>" +
+          '<div class="kdetalje">Hvorfor skal det ikke laves? Grunden kommer med ned i ' +
+          "<code>## Fravalgt</code>, så ingen kørsel foreslår det samme igen.</div>" +
+          '<input class="kgrund" id="kgrund" data-i="' + i + '" maxlength="240" ' +
+          'placeholder="fx: koster penge, og læseren mærker det ikke">' +
+          "</div>" +
+          '<div class="kknapper">' +
+          '<button class="nej" data-flyt="fravalg-ok" data-i="' + i + '" title="Fravælg punktet">✓</button>' +
+          '<button data-flyt="fravalg-fortryd" data-i="' + i + '" title="Fortryd">↩</button>' +
+          "</div></div>";
+      }
       return '<div class="kpunkt' + (nr === 1 ? " top" : "") + '">' +
         '<span class="knr">' + nr + "</span>" +
         '<div class="ktekst"><div class="ktitel">' + esc(titelAf(b)) + "</div>" +
@@ -1430,7 +1453,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         '<div class="kknapper">' +
         '<button data-flyt="op" data-i="' + i + '" title="Op">↑</button>' +
         '<button data-flyt="ned" data-i="' + i + '" title="Ned">↓</button>' +
-        '<button class="ok" data-flyt="klaret" data-i="' + i + '" title="Markér som klaret">✓</button>' +
+        '<button class="ok" data-flyt="klaret" data-i="' + i + '" title="Markér som klaret — punktet flytter til Klaret">✓</button>' +
+        '<button class="nej" data-flyt="fravalg" data-i="' + i + '" title="Fravælg — det her skal ikke laves">✕</button>' +
         "</div></div>";
     }).join("") + venterHtml();
   }
@@ -1439,7 +1463,34 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     var b = ev.target.closest("[data-flyt]");
     if (!b || !koeData) return;
     var i = +b.dataset.i, blokke = koeData.blokke;
-    if (b.dataset.flyt === "klaret") {
+    var handling = b.dataset.flyt;
+    if (handling === "fravalg") {
+      blokke.forEach(function (x) { delete x.fravaelger; });
+      blokke[i].fravaelger = true;
+      tegnKoeliste();
+      var felt = document.getElementById("kgrund");
+      if (felt) felt.focus();
+      return;                       // intet er ændret i filen endnu
+    }
+    if (handling === "fravalg-fortryd") {
+      delete blokke[i].fravaelger;
+      tegnKoeliste();
+      return;
+    }
+    if (handling === "fravalg-ok") {
+      var f = document.getElementById("kgrund");
+      var grund = f ? f.value.trim() : "";
+      if (!grund) {                 // en tom grund er værre end intet
+        if (f) { f.classList.add("mangler"); f.focus(); }
+        return;
+      }
+      var fp = blokke.splice(i, 1)[0];
+      delete fp.fravaelger;
+      tilFravalgt(titelAf(fp), grund);
+      gemKoe();
+      return;
+    }
+    if (handling === "klaret") {
       var p = blokke.splice(i, 1)[0];
       p.faerdig = true;
       p.linjer[0] += " *(klaret " + new Date().toISOString().slice(0, 10) + ")*";
@@ -1459,11 +1510,39 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       if (!t.linjer.some(function (l) { return /#fastholdt/.test(l); }))
         t.linjer[t.linjer.length - 1] += " `#fastholdt`";
     }
+    gemKoe();
+  }
+
+  // Ét sted, der skriver ændringen tilbage i filen, tegner listen og holder
+  // den rå tekstrude i sync. Kaldes fra hver gren i koeKlik.
+  function gemKoe() {
     dokAendret.opgavekoe = byggKoe(koeData);
     tegnKoeliste();
     var ta = document.getElementById("dTekst");
     if (ta) ta.value = dokAendret.opgavekoe;
     tegn();
+  }
+
+  // Læg et punkt nederst i "## Fravalgt" i filens eget format. Sektionen findes
+  // ved næste ##-overskrift og ikke ved navn på den efterfølgende, så en ny
+  // sektion imellem ikke sluger listen.
+  function tilFravalgt(titel, grund) {
+    var dato = new Date().toISOString().slice(0, 10);
+    var linje = "- **" + titel + "** — fravalgt " + dato + ": " +
+      grund.replace(/\s+/g, " ").replace(/\.*$/, "") + ".\n";
+    var h = /^## Fravalgt[^\S\n]*\n/m.exec(koeData.hale);
+    if (!h) { koeData.hale += "\n## Fravalgt\n\n" + linje; return; }
+    var fra = h.index + h[0].length;
+    var n = /\n## /.exec(koeData.hale.slice(fra));
+    var slut = n ? fra + n.index + 1 : koeData.hale.length;
+    var raa = koeData.hale.slice(fra, slut)
+      .replace(/^\*\(Ingen endnu\..*$/m, "");   // pladsholderen ryger ved første rigtige punkt
+    var deler = "";
+    var d = /\n[-*_]{3,}[^\S\n]*\n\s*$/.exec(raa);
+    if (d) { deler = "---\n\n"; raa = raa.slice(0, d.index); }  // stregen bliver stående nederst
+    var krop = raa.replace(/\s*$/, "\n\n");
+    koeData.hale = koeData.hale.slice(0, fra) + krop + linje + "\n" + deler +
+      koeData.hale.slice(slut);
   }
 
   // ---- Ønsker: formular i stedet for markdown ----
@@ -1655,7 +1734,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
           '<button class="luk" id="mLuk">✕</button>' +
           "<h3>Opgavekøen</h3>" +
           '<div class="b">Rækkefølgen er dét, der bliver lavet. Øverste punkt tages i nat. ' +
-          "Flyt med pilene, eller markér som klaret med fluebenet.</div>" +
+          "Flyt med pilene ↑↓, hak af med ✓ når noget er lavet, eller fjern det " +
+          "med ✕ — så ryger det ned i <b>Fravalgt</b> med din begrundelse, og " +
+          "ingen kørsel foreslår det igen. Husk at gemme filen bagefter.</div>" +
           '<div class="kliste" id="kliste"></div>' +
           '<div class="raekke">' +
           '<button class="k fyldt" id="dGem">Gem opgavekoe.md</button>' +

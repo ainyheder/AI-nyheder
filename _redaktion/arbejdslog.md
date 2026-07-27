@@ -49,6 +49,47 @@ alle. Det er værd at kigge på, før nogen bygger.
 
 **Ekstra kørsel 19:55 (chat):** køens øverste punkt var ikke en opgave, men et mål, og er derfor lagt om. Se nedenfor.
 
+**Ekstra kørsel 20:05 (chat):** kontrolpanelet kunne kun hakke punkter *af*, ikke sige nej til dem. Nu kan det. Se nedenfor.
+
+---
+
+## 2026-07-27 (ekstra kørsel kl. 20:05, chat) · Køen kunne ikke sige nej
+
+**Fandt:** Torben spurgte, hvordan han fjerner en opgave fra køen inde i
+kontrolpanelet — for kan han ikke det, er køen ikke hans. Han kunne ikke.
+Panelet havde ↑ ↓ og ✓, og ✓ betyder *klaret*: punktet flyttes til `## Klaret`
+og står derefter i loggen som udført arbejde. Der var ingen vej til `##
+Fravalgt`, selvom den sektion har stået i filformatet hele tiden og udtrykkeligt
+er dét, sessionen læser for ikke at foreslå den samme afviste idé igen. Med
+andre ord: den eneste måde at få et punkt væk på var at lyve om, at det var
+lavet — eller at åbne markdown-filen i hånden. Begge dele er præcis dét,
+panelet findes for at slippe for.
+
+**Gjorde:** Hvert punkt har nu et **✕** ved siden af ✓. Det sletter ikke noget
+med det samme: det folder et lille felt ud under punktet, hvor der skal skrives
+en grund. Uden grund sker der ingenting — feltet lyser rødt. Med grund flyttes
+punktet ned i `## Fravalgt` som én linje: `- **<titlen>** — fravalgt <dato>:
+<grunden>.` Begrundelsen er ikke pynt. Den er dét, næste kørsel læser, når den
+overvejer at skrive fundet ind igen. `↩` fortryder, og indtil der trykkes ✓ i
+feltet, er filen urørt.
+
+Panelet skriver kun i selve `## Fravalgt`-afsnittet. Alt andet — forord, de tre
+trin, de øvrige seks sektioner og "Ting kun et menneske kan gøre" — bliver stående
+tegn for tegn, og den vandrette streg nederst i afsnittet bliver liggende nederst.
+
+**Testede:** jsdom med de rigtige filer, 34 kontroller, alle grønne: ✕ åbner
+feltet uden at røre filen, tom grund afvises, ↩ fortryder, en rigtig fravælgning
+fjerner punktet fra køen og skriver det i Fravalgt med dato og grund (og
+pladsholderteksten forsvinder ved det første rigtige punkt), fravælgning nummer
+to lander under den første uden at flytte stregen, alle syv sektioner og alle tre
+trin er intakte bagefter, og ✓ og pilene virker som før.
+
+**Til redaktionen:** ✓ og ✕ er nu to forskellige beskeder, og forskellen betyder
+noget for, hvad maskinen gør bagefter. ✓ = *det er lavet* → `Klaret`, og det
+tæller med i regnskabet. ✕ = *det skal ikke laves* → `Fravalgt`, og ingen kørsel
+foreslår det igen, medmindre den kan måle, at grundlaget har ændret sig. Husk at
+gemme `opgavekoe.md` bagefter — panelet ændrer kun filen, når du trykker gem.
+
 ---
 
 ## 2026-07-27 (ekstra kørsel kl. 19:55, chat) · Køens øverste punkt kunne aldrig blive færdigt
