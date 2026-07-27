@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T18:07:23.975646+00:00",
+ "opdateret": "2026-07-27T18:47:37.302194+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      3,
      2,
-     5
+     6
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      4,
      3,
      0,
-     2
+     3
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 257,
- "sidevisninger_i_alt": 727,
+ "besoeg_i_alt": 259,
+ "sidevisninger_i_alt": 733,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 242,
-   "visninger": 450
+   "besoeg": 244,
+   "visninger": 453
   },
   {
    "sti": "/tak.html",
@@ -266,7 +266,7 @@ window.LAESERTAL = {
   {
    "sti": "/youtube.html",
    "besoeg": 3,
-   "visninger": 20
+   "visninger": 21
   },
   {
    "sti": "/velkommen.html",
@@ -291,7 +291,7 @@ window.LAESERTAL = {
   {
    "sti": "/uge.html",
    "besoeg": 1,
-   "visninger": 72
+   "visninger": 73
   },
   {
    "sti": "/erhverv.html",
@@ -332,6 +332,11 @@ window.LAESERTAL = {
    "sti": "/artikel/655cdfa99e06ad45.html",
    "besoeg": 0,
    "visninger": 3
+  },
+  {
+   "sti": "/artikel/f7a651ced6714ba3.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/guide-igang.html",
@@ -377,7 +382,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 231
+   "besoeg": 233
   },
   {
    "fra": "l.facebook.com",
@@ -405,13 +410,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 219,
-    "visninger": 219
+    "besoeg": 221,
+    "visninger": 221
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 208
+    "visninger": 209
    },
    {
     "fra": "l.facebook.com",
@@ -424,12 +429,12 @@ window.LAESERTAL = {
     "visninger": 4
    },
    {
-    "fra": "www.facebook.com",
+    "fra": "m.facebook.com",
     "besoeg": 3,
     "visninger": 3
    },
    {
-    "fra": "m.facebook.com",
+    "fra": "www.facebook.com",
     "besoeg": 3,
     "visninger": 3
    }
@@ -450,7 +455,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 17
+    "visninger": 18
    },
    {
     "fra": "direkte",
@@ -510,7 +515,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 71
+    "visninger": 72
    },
    {
     "fra": "direkte",
@@ -572,6 +577,13 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 3
+   }
+  ],
+  "/artikel/f7a651ced6714ba3.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/guide-igang.html": [
@@ -785,7 +797,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-07-27",
    "besoeg": 10,
-   "visninger": 50
+   "visninger": 70
   }
  ],
  "artikler": [
@@ -811,6 +823,21 @@ window.LAESERTAL = {
    "rubrik": "Cloudflare giver kunder ny kontrol over AI-trafik",
    "kategori": "Lanceringer",
    "dato": "2026-07-25",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/f7a651ced6714ba3.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Nu kan du tale med Claude på flere sprog",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-23",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -857,7 +884,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
-   "visninger": 2
+   "visninger": 3
   },
   {
    "navn": "Samfund & etik",
