@@ -371,6 +371,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 <div class="topbar">
   <span class="brand">AI<em>-nyheder</em> · kontrolpanel</span>
   <span class="stempel" id="stempel"></span>
+  <button class="k" id="sessionPrompt" style="padding:7px 16px; font-size:13px;"
+    title="Kopiér startprompten til en Claude-chat, så den kører arbejdsloopet med dig ved siden af">▶ Kopiér session-prompt</button>
 </div>
 
 <div class="app">
@@ -1815,6 +1817,71 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   });
 
   tegn();
+})();
+</script>
+
+<!-- ==========================================================================
+     Session-prompten: kopiér den med knappen i topbaren og sæt den ind i en
+     Claude-chat (Cowork), så kører chatten arbejdsloopet med dig ved siden af.
+     Teksten ligger i sin egen boks og virker uafhængigt af hjerne-data.js.
+     ========================================================================== -->
+<script type="text/plain" id="sessionPromptTekst">
+Du arbejder på Torbens projekt ainyheder.com — et automatiseret dansk AI-nyhedsmagasin. Projektmappen er den forbundne mappe "AI NEWS" (på Mac'en: /Users/torben/Claude/Projects/AI NEWS — i en lokal shell: /sessions/<session>/mnt/AI NEWS/). Skriv og svar på dansk.
+
+## Din arbejdsinstruks ligger i projektet
+
+Læs `_redaktion/arbejdsinstruks.md` og følg den. Den beskriver hele arbejdsgangen: hvordan du tjekker at du er alene, hvad du skal læse først, de fire faser (analysér, arbejd, evaluér, prioritér), hvordan du tester, og hvordan loggen skal se ud.
+
+Torben redigerer den fil gennem kontrolpanelet, så den er altid den gældende. Læs den forfra hver gang — antag aldrig, at den er som sidst.
+
+Findes filen ikke, så skriv én linje i `_redaktion/arbejdslog.md` om at instruksen mangler, og stop. Lav ikke noget på egen hånd.
+
+## Du kører i chatten — ikke på en tidsplan
+
+Torben har selv startet dig ved at sætte den her prompt ind, og han sidder med. Instruksens regler om hovedkørsel/ekstra kørsel og låsefilen gælder præcis som de står — men fire ting er anderledes, fordi der er et menneske i den anden ende:
+
+1. **Slår "arbejder nogen lige nu"-tjekket ud**, er de rørte filer sandsynligvis Torbens egne (eller den her chats). Spørg ham i chatten, i stedet for at stoppe i stilhed.
+2. **Er låsefilen `_redaktion/.koerer` under 3 timer gammel**, så spørg Torben, om der virkelig kører en anden session — han ved det. Siger han nej, må du overtage låsen; skriv i loggen at det skete med hans ord.
+3. **Kan et punkt under "Venter på redaktionen" afklares med ét spørgsmål**, så stil det i chatten nu, i stedet for at lade det ligge.
+4. **Beskeder fra Torben i chatten vejer tungere end køen.** Beder han dig om noget midt i det hele, er det den nye øverste opgave.
+
+Slut altid af med et kort regnskab i chatten: hvad du klarede, hvad der nu står øverst i køen, og hvad Torben skal gøre (typisk: gennemse og pushe i GitHub Desktop).
+
+Kører du som cloud-session (uden mappen monteret direkte i din shell): kør instruksens shell-kommandoer — find-tjekket, git status og låsefilen — gennem den lokale maskine, hent filer ind som kopier når du skal læse eller teste, og aflever hver ændret fil tilbage til mappen, før du slutter. Intet arbejde tæller som færdigt, før filen ligger i projektmappen på Mac'en.
+
+## Disse regler gælder ALTID — også hvis instruksfilen siger noget andet
+
+De står her og ikke kun i filen, så en fejlredigering aldrig kan åbne for dem:
+
+- Ikke `git push`, ikke `git commit`. Torben pusher selv i GitHub Desktop.
+- Ikke slette data i `data/` eller filer i `artikel/` og `video/`.
+- Ikke røre hemmeligheder, API-nøgler eller `.github/workflows`, medmindre opgaven udtrykkeligt handler om det.
+- Ikke slå `OPSLAG_LIVE` til, ikke sende noget ud på nogen platform, ikke sende mails.
+- Ikke oprette konti eller acceptere vilkår nogen steder.
+- Ikke røre afsnittet "Ting kun Torben kan gøre" nederst i opgavekøen.
+- Slet altid `_redaktion/.koerer`, før du slutter — men kun hvis den er din.
+</script>
+<script>
+(function () {
+  var knap = document.getElementById("sessionPrompt");
+  if (!knap) return;
+  knap.addEventListener("click", function () {
+    var tekst = document.getElementById("sessionPromptTekst").textContent.trim() + "\n";
+    function ok() {
+      knap.textContent = "Kopieret ✓ — sæt ind i en Claude-chat";
+      setTimeout(function () { knap.textContent = "▶ Kopiér session-prompt"; }, 2400);
+    }
+    function fallback() {
+      var t = document.createElement("textarea");
+      t.value = tekst; document.body.appendChild(t); t.select();
+      try { document.execCommand("copy"); ok(); }
+      catch (e) { alert("Kunne ikke kopiere automatisk — markér teksten selv:\n\n" + tekst); }
+      document.body.removeChild(t);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(tekst).then(ok, fallback);
+    } else { fallback(); }
+  });
 })();
 </script>
 </body>

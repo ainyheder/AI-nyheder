@@ -1039,7 +1039,11 @@ to in for on with is are was were be been by from that this it its new now more 
 def _dublet_ord(a: dict) -> set:
     """Betydningsbærende ord i en artikel, klippet til seks tegn så dansk
     bøjning ikke spænder ben ('hackede' og 'hacked' bliver til 'hacked')."""
-    t = " ".join([a.get("rubrik", ""), a.get("titel", ""), a.get("resume_da", "")]).lower()
+    # `or ""` og `str()` er ikke pynt: et felt kan stå som `null` i cachen, og
+    # `.get(f, "")` giver da None, ikke "". Før `_samme_sag` kaldte den her, var
+    # det uden konsekvens; nu afgør den, om en artikel bliver slået sammen, og
+    # en TypeError her ville vælte hele dublet-fasen for alle artikler.
+    t = " ".join(str(a.get(f) or "") for f in ("rubrik", "titel", "resume_da")).lower()
     return {o[:6] for o in re.findall(r"[a-zæøå0-9]+", t)
             if len(o) > 2 and o not in _DUBLET_STOP}
 
@@ -1056,6 +1060,53 @@ def _samme_historie(a: dict, b: dict) -> bool:
         return False
     faelles = A & B
     return len(faelles) >= 5 and len(faelles) / min(len(A), len(B)) >= 0.50
+
+
+def _navne_i(a: dict) -> set:
+    """Hvilke navne nævner denne artikel? Rubrik, original titel og resumé.
+
+    Kun de stærke — se `kun_staerke` i `_navne_i_tekst` om hvorfor.
+    """
+    return _navne_i_tekst(" ".join(str(a.get(f) or "")
+                                   for f in ("rubrik", "titel", "resume_da")),
+                          kun_staerke=True)
+
+
+# Hvor lidt må to udgaver af "samme historie" have til fælles? Målt på arkivet
+# 27.07 på de 40 sammenlægninger, hvor begge udgaver havde en side at læse:
+# 9 var ægte dubletter, 31 var ikke. Ved 15 % står alle 9 ægte tilbage, og 28 af
+# de 31 falske bliver frigivet igen. Sættes grænsen til 20 %, ryger en ægte med.
+_SAMME_SAG_ANDEL = 0.15
+
+
+def _samme_sag(primaer: dict, anden: dict) -> bool:
+    """Må de to artikler overhovedet være samme historie?
+
+    En vagt, ikke en detektor. `SYSTEM_DUBLET` beder udtrykkeligt modellen om
+    IKKE at gruppere to nyheder om samme firma — men den gør det alligevel, og
+    før den her fandtes, blev svaret brugt som det kom, med datoerne som eneste
+    kontrol. Målt 27.07: 17 grupper havde slugt 49 artikler, og af de 40 par jeg
+    kunne læse teksten på, delte 31 næsten ingen ord med den historie, de var
+    lagt ind under. "Monday.com fyrer 600" lå under "Anthropic sender billigere
+    AI-model på gaden".
+
+    To krav, begge gratis og deterministiske:
+      1. **Mindst ét fælles navn.** Handler de om samme begivenhed, nævner de
+         samme aktør. Alene er kravet for løst — på et AI-nyhedssite deler tre
+         urelaterede historier gerne "Anthropic" — derfor også:
+      2. **Mindst 15 % fælles betydningsbærende ord**, målt med `_dublet_ord`,
+         altså samme ordsammenligning som den gratis lex-fase bruger.
+
+    Bemærk, at kravene er svagere end `_samme_historie` (50 % og fem ord). Det
+    er med vilje: den finder dubletter af sig selv, den her siger kun nej til de
+    værste af AI'ens gæt. Bliver den strammere, taber vi ægte sammenlægninger.
+    """
+    A, B = _dublet_ord(primaer), _dublet_ord(anden)
+    if not A or not B:
+        return False
+    if len(A & B) / min(len(A), len(B)) < _SAMME_SAG_ANDEL:
+        return False
+    return bool(_navne_i(primaer) & _navne_i(anden))
 
 
 def _klynger(artikler: list[dict]) -> list[list[dict]]:
@@ -1082,7 +1133,42 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     """Finder nyheder som flere medier dækker, beholder den bedste udgave og
     gemmer de øvrige som ekstra kilder på historien ("andre")."""
     # 0) håndhæv tidligere samlinger: artikler der allerede er registreret som
-    #    ekstra kilde under en anden historie, skal blive væk
+    #    ekstra kilde under en anden historie, skal blive væk.
+    #
+    #    MEN først: slip dem løs, der aldrig burde have været samlet. Uden det
+    #    her er en fejlsammenlægning permanent — den står i `andre` og bliver
+    #    håndhævet hver kørsel, også efter `_samme_sag` er kommet til. Målt
+    #    27.07: 40 af de 49 samlede par kunne læses, og 31 af dem delte næsten
+    #    ingen ord med den historie, de lå under. De var låst for evigt.
+    #
+    #    Frigivelsen kræver et BEVIS, ikke et fravær: begge udgaver skal være i
+    #    dagens liste med deres tekst, og vagten skal sige nej. Mangler vinderen
+    #    blot i feedet i én kørsel, sker der ingenting — se `_dubletsider_paa_disk`
+    #    om hvorfor det er vigtigt, at en enkelt kørsel ikke kan vende et valg.
+    pr_link = {a["link"]: a for a in artikler if a.get("link")}
+    frigivet = 0
+    for a in artikler:
+        kilder = a.get("andre")
+        if not isinstance(kilder, list) or not kilder:
+            continue
+        beholdt = [k for k in kilder
+                   if not (isinstance(k, dict) and k.get("link") in pr_link
+                           and not _samme_sag(a, pr_link[k["link"]]))]
+        if len(beholdt) == len(kilder):
+            continue
+        for k in kilder:
+            if k in beholdt:
+                continue
+            print(f"  ↩️  Frigivet: «{(pr_link[k['link']].get('rubrik') or '')[:52]}»"
+                  f" var lagt under «{(a.get('rubrik') or a['titel'])[:52]}»")
+        frigivet += len(kilder) - len(beholdt)
+        if beholdt:
+            a["andre"] = beholdt
+        else:
+            a.pop("andre", None)
+    if frigivet:
+        print(f"↩️  {frigivet} artikler var samlet under en historie, de ikke handler om")
+
     kendte_dubletter = {k["link"] for a in artikler for k in a.get("andre", [])}
     artikler = [a for a in artikler if a["link"] not in kendte_dubletter]
 
@@ -1153,7 +1239,7 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
         datoer = [m["dato"] for m in medlemmer if m.get("dato")]
         if datoer and (max(datoer) - min(datoer)) > timedelta(days=3):
             continue
-        fjernet = _slaa_sammen(medlemmer)
+        fjernet = _slaa_sammen(medlemmer, vagt=_samme_sag)
         fjern.update(fjernet)
         samlet += len(fjernet)
     if samlet:
@@ -1182,8 +1268,14 @@ def _indholdsvaegt(m: dict) -> int:
     return vaegt
 
 
-def _slaa_sammen(medlemmer: list[dict]) -> set:
-    """Gør én gruppe til én historie. Returnerer de links, der skal væk."""
+def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
+    """Gør én gruppe til én historie. Returnerer de links, der skal væk.
+
+    `vagt` er en funktion `(primaer, anden) -> bool`, der kan sige nej til et
+    enkelt medlem, efter hovedhistorien er valgt. Den bruges kun på AI'ens
+    grupper (se `_samme_sag`); den gratis ordsammenligning i `_klynger` har
+    allerede sit eget, strengere krav og sendes ind uden vagt.
+    """
     # Behold den med mest indhold: brief > dansk rubrik > nyeste.
     # MEN aldrig en kilde med arkivforbud, hvis vi har et alternativ: bliver
     # Version2 hovedhistorie, mister historien sin artikelside og sin
@@ -1213,6 +1305,19 @@ def _slaa_sammen(medlemmer: list[dict]) -> set:
          or frie
     primaer = max(pulje, key=_indholdsvaegt)
     andre = [m for m in medlemmer if m is not primaer]
+
+    # Vagten kører HER — efter hovedhistorien er valgt, men før noget arves.
+    # Rækkefølgen er ikke tilfældig: nedenfor overtager primæren taberens
+    # tidspunkt og hans billede, og et medlem, vi er ved at afvise, skal ikke
+    # have lov at flytte hovedhistoriens dato eller forære sit billede væk.
+    if vagt is not None:
+        afvist = [m for m in andre if not vagt(primaer, m)]
+        andre = [m for m in andre if vagt(primaer, m)]
+        for m in afvist:
+            print(f"  ⛔ Ikke samme historie som «{(primaer.get('rubrik') or primaer['titel'])[:48]}»"
+                  f" — beholdt: «{(m.get('rubrik') or m['titel'])[:48]}»")
+        if not andre:
+            return set()
 
     # En historie bliver ikke NY igen, bare fordi et nyt medie skriver om den
     # i dag. Arv det TIDLIGSTE tidspunkt, nogen af udgaverne blev set - ellers
@@ -2336,6 +2441,71 @@ def _bryd_canonical_kaeder(artikler: list[dict]) -> int:
     return rettet
 
 
+def _giv_frigivne_deres_canonical_tilbage(artikler: list[dict]) -> int:
+    """Retter siderne for de artikler, `_samme_sag` har sluppet løs igen.
+
+    Frigivelsen i `saml_dublet_historier` fjerner artiklen fra vinderens
+    `andre`, men det gør ikke siden synlig: `_dubletsider_paa_disk` læser
+    canonical af DISKEN, og der står stadig vinderens adresse. Uden den her
+    ville en frigivet artikel blive frigivet igen og igen, uden nogensinde at
+    komme tilbage i sitemappet — årsagen rettet, symptomet ikke.
+
+    Samme bevisbyrde som frigivelsen selv, og den er hele grunden til, at den
+    her funktion kan tillade sig at overskrive et valg, disken har husket:
+
+      * siden peger på en anden artikelside,
+      * artiklen er levende og selvstændig i dagens liste (ingen har den i sit
+        `andre`), og
+      * **den, den peger på, er også i dagens liste, og vagten siger nej.**
+
+    Det tredje krav er det vigtige. `_dubletsider_paa_disk` beskriver, hvorfor
+    en manglende hovedhistorie ikke må kunne vælte en dublet: en enkelt kørsel
+    med timeout på et feed ville ellers få canonical til at svinge frem og
+    tilbage. Her sker der intet, når vinderen mangler — der rettes kun, når vi
+    kan holde de to tekster op mod hinanden og måle, at de ikke hører sammen.
+    """
+    forstavelse = f"{SITE_URL}/artikel/"
+    tabere: set[str] = set()
+    for a in artikler:
+        for kilde in (a.get("andre") if isinstance(a.get("andre"), list) else []):
+            if isinstance(kilde, dict) and kilde.get("link"):
+                tabere.add(_artikel_slug(kilde["link"]))
+    levende = {_artikel_slug(a["link"]): a for a in artikler
+               if a.get("link") and a.get("rubrik") and not a.get("kun_aktuel")}
+
+    rettet = 0
+    for p in sorted(ARTIKEL_MAPPE.glob("*.html")):
+        if p.stem in tabere or p.stem not in levende:
+            continue                       # stadig dublet, eller ikke i listen
+        try:
+            gammel = p.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        fundet = re.search(r'<link rel="canonical" href="([^"]*)"', gammel)
+        if not fundet:
+            continue
+        maal = html.unescape(fundet.group(1))
+        if maal == f"{SITE_URL}/artikel/{p.name}" or not maal.startswith(forstavelse):
+            continue                       # peger på sig selv, eller uden for arkivet
+        vinder = levende.get(maal[len(forstavelse):-len(".html")])
+        if vinder is None or _samme_sag(vinder, levende[p.stem]):
+            continue                       # intet bevis for at pegningen er forkert
+        adresse = html.escape(f"{SITE_URL}/artikel/{p.name}", quote=True)
+        ny, antal = re.subn(r'(<link rel="canonical" href=")[^"]*(")',
+                            lambda mm: mm.group(1) + adresse + mm.group(2),
+                            gammel, count=1)
+        if not antal or ny == gammel:
+            continue
+        try:
+            p.write_text(ny, encoding="utf-8")
+        except OSError:
+            continue
+        rettet += 1
+    if rettet:
+        print(f"↩️  {rettet} frigivne artikelsider peger nu på sig selv igen")
+    return rettet
+
+
 def _dubletsider_paa_disk() -> set[str]:
     """Hvilke artikelsider er sammenlagt under en anden historie?
 
@@ -2400,6 +2570,9 @@ def lav_artikelsider(artikler: list[dict]) -> None:
     #     SKAL køre før punkt 2, ellers når de rettede sider ikke i sitemappet
     #     før i overmorgen.
     _bryd_canonical_kaeder(artikler)
+    # 1c) og giv de frigivne deres egen canonical tilbage, så de kommer med i
+    #     sitemappet i denne kørsel og ikke først i overmorgen.
+    _giv_frigivne_deres_canonical_tilbage(artikler)
     # 2) spørg disken, hvilke sider der er dubletter - både nattens og alle
     #    tidligere. Se forklaringen i _dubletsider_paa_disk.
     dubletter = _dubletsider_paa_disk()
@@ -2838,8 +3011,12 @@ def _stærkt_navnesignal(o: str, ren: str) -> bool:
     return False
 
 
-def _har_navn(rubrik: str) -> bool:
-    """Sandt hvis rubrikken nævner mindst ét rigtigt navn (firma, produkt, land).
+def _navne_i_tekst(tekst: str, kun_staerke: bool = False) -> set:
+    """Hvilke navne (firma, produkt, land, person) nævner denne tekst?
+
+    Det er den samme vurdering som `_har_navn`, men den svarer HVILKE i stedet
+    for ja/nej. To ting bruger svaret: `_har_navn` (findes der bare ét?) og
+    `_samme_sag`, der skal vide, om to artikler handler om de samme aktører.
 
     Tre ting gør den strengere, end den ser ud:
       1. "AI" tæller ikke. Det står i næsten hver rubrik og siger intet om hvem.
@@ -2847,8 +3024,18 @@ def _har_navn(rubrik: str) -> bool:
          grammatik ("Nu kan du...", "Det handler om løn"), ikke et navn.
       3. Rolleord som "Gigant", "Kommune", "Forskere" tæller ikke, uanset hvor
          de står. Det er dem, målestokkens punkt 1 handler om.
+
+    Navnet slås ned til én form, så "OpenAI", "OpenAIs" og "OpenAI's" bliver
+    det samme navn. Uden det ville sammenligningen i `_samme_sag` sige nej til
+    to udgaver af samme historie, blot fordi den ene skrev det i ejefald.
+
+    `kun_staerke` udelader den svageste af de to slags fund: et ord med stort
+    begyndelsesbogstav midt i en dansk sætning. Til `_har_navn` er det signal
+    rigeligt — står der "Ted Lieu" i en rubrik, nævner den nogen. Men det er
+    for løst til at SAMMENLIGNE to artikler med: målt 27.07 gav det "Flere" og
+    "Den" som fælles navne og holdt dermed to fejlsammenlægninger i live.
     """
-    tekst = rubrik or ""
+    tekst = tekst or ""
     ord_ = re.findall(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", tekst)
     # hvilke ord står lige efter et sætningsskel?
     efter_skel = set()
@@ -2863,6 +3050,7 @@ def _har_navn(rubrik: str) -> bool:
             forrige_var_skel = True
     pladser = [mo.start() for mo in re.finditer(r"[0-9A-Za-zÆØÅÉæøåé\-\.'’]+", tekst)]
 
+    fundne: set = set()
     for i, o in enumerate(ord_):
         ren = o.strip("-.'’").lower()
         stamme = ren.split("-")[0]
@@ -2874,10 +3062,28 @@ def _har_navn(rubrik: str) -> bool:
                 and not _kendt_maerke(ren):
             continue                          # Gigantens, Kommune, Forskere
         if _stærkt_navnesignal(o, ren):
-            return True
-        if i > 0 and o[:1].isupper() and pladser[i] not in efter_skel:
-            return True                       # stort bogstav midt i en dansk sætning
-    return False
+            fundne.add(_navneform(ren))
+        elif not kun_staerke and i > 0 and o[:1].isupper() \
+                and pladser[i] not in efter_skel:
+            fundne.add(_navneform(ren))       # stort bogstav midt i en dansk sætning
+    return fundne
+
+
+def _navneform(ren: str) -> str:
+    """Én fast form pr. navn: kendt mærke slår igennem, ejefald skæres væk."""
+    uden_ejefald = re.sub(r"['’]s$", "", ren)
+    for form in (uden_ejefald, uden_ejefald.split("-")[0]):
+        if form in _MAERKER:
+            return form
+        if form.endswith("s") and form[:-1] in _MAERKER:
+            return form[:-1]
+    return uden_ejefald.rstrip("s")
+
+
+def _har_navn(rubrik: str) -> bool:
+    """Sandt hvis rubrikken nævner mindst ét rigtigt navn (firma, produkt, land).
+    Reglerne står i `_navne_i_tekst` — den her spørger bare, om der er nogen."""
+    return bool(_navne_i_tekst(rubrik))
 
 
 def _mangler_navn(rubrik: str) -> bool:
