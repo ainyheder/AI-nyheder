@@ -1,8 +1,8 @@
 # Redaktionens øjne
 
-Dette er den målestok, ainyheder.com bedømmes efter. Den bruges af den
-automatiske natlige gennemgang, og den er skrevet ud fra de beslutninger,
-Torben faktisk har truffet undervejs — ikke ud fra generelle råd om hjemmesider.
+Dette er den målestok, ainyheder.com bedømmes efter. Den bruges af arbejdssessionen ved hver
+eneste kørsel, og den er skrevet ud fra de beslutninger,
+redaktionen faktisk har truffet undervejs — ikke ud fra generelle råd om hjemmesider.
 
 Rettes den her, ændrer det, hvad maskinen leder efter. Det er meningen.
 

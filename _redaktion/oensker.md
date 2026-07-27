@@ -1,4 +1,4 @@
-# Torbens ønsker
+# Ønskelisten
 
 Skriv her, hvad du vil have lavet. **Brug knappen i kontrolpanelet** — så bliver
 formen rigtig af sig selv. Sessionen læser listen, før den gør noget andet,

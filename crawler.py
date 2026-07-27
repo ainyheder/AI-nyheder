@@ -371,7 +371,7 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
 # Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
 # i kontrolpanelet ligesom prompterne. Loopet er ikke bundet til noget tidspunkt.
 ARBEJDS_DOKUMENTER = [
-    ("oensker", "oensker.md", "Torbens ønsker",
+    ("oensker", "oensker.md", "Ønskelisten",
      "Skriv her, hvad du vil have lavet — i almindeligt dansk. Sessionen læser "
      "den før alt andet og oversætter ønskerne til punkter i køen.", True),
     ("maalestok", "redaktionens-oejne.md", "Målestokken",
@@ -436,7 +436,7 @@ def _arbejdsloop_status() -> list:
 
 
 def _standard_prompts() -> dict:
-    """De indbyggede prompts, så kontrolpanelet kan vise dem og lade Torben
+    """De indbyggede prompts, så kontrolpanelet kan vise dem og lade redaktionen
     starte fra dem i stedet for fra et tomt felt."""
     return {
         "omskriv": SYSTEM_PROMPT, "kategori": SYSTEM_KATEGORI,
@@ -4088,7 +4088,7 @@ def _laeser_afsnit() -> dict:
 # ----- Den natlige gennemgang ("redaktionens øjne") --------------------------
 #
 # Én gang i døgnet standser crawleren op og ser på sit eget arbejde med
-# Torbens målestok i hånden (_redaktion/redaktionens-oejne.md). Den ændrer
+# redaktionens målestok i hånden (_redaktion/redaktionens-oejne.md). Den ændrer
 # ingenting - den skriver en prioriteret liste og åbner et GitHub-issue.
 
 OEJNE_FIL = ROOT / "_redaktion" / "redaktionens-oejne.md"

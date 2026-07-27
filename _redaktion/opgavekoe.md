@@ -1,13 +1,13 @@
 # Opgavekø
 
-Natsessionen arbejder oppefra og ned. Ét punkt ad gangen, færdigt og testet,
+Sessionen arbejder oppefra og ned. Ét punkt ad gangen, færdigt og testet,
 før det næste røres.
 
-**Torben:** flyt en linje op, hvis du vil have den frem i køen. Skriv nye ønsker
-ind hvor som helst. Det, der står øverst, er det, der bliver lavet i nat.
+**Redaktionen:** flyt en linje op, hvis du vil have den frem i køen. Skriv nye ønsker
+ind hvor som helst. Det, der står øverst, er det, der bliver lavet først.
 
 Punkterne øverst er *målte* problemer — vi ved, de findes. Længere nede er de
-mere "gå det efter i sømmene". Hvert punkt siger, hvilket af de ni punkter i
+mere "gå det efter i sømmene". Hvert punkt siger, hvilket af de ti punkter i
 `redaktionens-oejne.md` det handler om.
 
 ---
@@ -98,7 +98,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
-**Herunder: to punkter, sessionen ikke må bygge, før Torben har besluttet.**
+**Herunder: to punkter, sessionen ikke må bygge, før redaktionen har besluttet.**
 
 - [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
       26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
@@ -110,7 +110,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       og at hver ny nat skal skrive endnu et engangsscript. Nattens rettelser
       lukkede symptomerne (tomme sider bygges ikke, billeder slettes ikke under
       siderne), men ikke årsagen. Mindste rettelse: bevar artikler, der har en
-      side, indtil de 30 dage faktisk er gået. **Venter på Torben:** forsiden
+      side, indtil de 30 dage faktisk er gået. **Venter på en beslutning:** forsiden
       ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
       kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
       det er afklaret. *Punkt 4 og 10.*
@@ -131,7 +131,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       hele det gamle sæt fast oveni. Intet er i stykker; spørgsmålet er, hvornår
       repoet bliver ubehageligt stort. Mindste rettelse er formentlig at flytte
       billeder for sider ældre end X måneder ud af git og lade siderne pege på
-      `assets/og.png` — men det er Torbens valg, om det er værd at gøre endnu.
+      `assets/og.png` — men det er redaktionens valg, om det er værd at gøre endnu.
       *Punkt 4.*
 
 ### 4 — Undersøgelser: vi ved ikke, om der er et problem
@@ -174,7 +174,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       Kildelisten er ændret, og DeepSeek er på vej ind. *Punkt 5.*
 
 - [ ] **Læs `data/opslag.json` igennem, når der er udkast i den.** Er tonen i
-      de automatiske opslag noget, Torben ville skrive selv? *Punkt 5 og 8.*
+      de automatiske opslag noget, redaktionen ville skrive selv? *Punkt 5 og 8.*
 
 ---
 
@@ -264,7 +264,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       Actions-loggen, hvis listen falder bagud — glemt side, `noindex` sluppet
       ind, eller URL uden fil. Skriver intet, retter intet, kan ikke vælte et
       crawl. **12 påstande, alle grønne** — testet at den *fanger* fejl, ikke kun
-      at den er tilfreds, plus vrøvl-input. **Venter på Torben:** siden er nu
+      at den er tilfreds, plus vrøvl-input. **Venter på en beslutning:** siden er nu
       synlig for Google, men **intet linker til den for en læser** — hvor den skal
       stå er hans valg.
 
@@ -287,7 +287,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
       **To målefejl hos mig selv blev smidt undervejs:** en kontrast på 1,17:1 var
       min parsers manglende `color(srgb …)`, og påstanden om at artiklen ikke kan
       rulles med tastatur **kunne ikke bevises** — værktøjet kan ikke sende
-      tastetryk til siden. **Venter på Torben:** tryk PageDown i en åben artikel
+      tastetryk til siden. **Venter på en beslutning:** tryk PageDown i en åben artikel
       én gang og bekræft, at den ruller. Se loggen.
 
 - [x] **Hvor hurtigt loader forsiden?** *(26.07.2026, ekstra kørsel kl. 16:45)*
@@ -597,7 +597,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ---
 
-## Ting kun Torben kan gøre
+## Ting kun et menneske kan gøre
 
 Disse venter på ham — sessionen skal ikke forsøge dem:
 

@@ -5,9 +5,9 @@ kører. Ret den frit; den læses forfra hver gang, så ændringer virker med det
 
 ---
 
-## Allerførst: sidder Torben og arbejder lige nu?
+## Allerførst: sidder nogen og arbejder lige nu?
 
-Du deler mappe med ham. Redigerer I den samme fil samtidig, vinder den, der
+Du deler mappe med redaktionen. Redigerer I den samme fil samtidig, vinder den, der
 skriver sidst — der er ingen fletning, og den anden mister sit arbejde uden at
 opdage det. Derfor: kig efter, om nogen har rørt projektet for nylig.
 
@@ -20,12 +20,12 @@ find . -newermt '-30 minutes' \( -name '*.py' -o -name '*.html' -o -name '*.md' 
 `data/`, `artikel/` og `video/` er undtaget, fordi crawleren selv skriver dem
 nitten gange i døgnet — de siger intet om, hvorvidt et menneske er i gang.
 
-**Kommer der filer ud af den kommando, arbejder Torben sandsynligvis lige nu.**
+**Kommer der filer ud af den kommando, arbejder et menneske sandsynligvis lige nu.**
 Så stopper du: skriv én linje i `arbejdslog.md` om, at du sprang over, hvilke filer
 der var rørt, og hvornår — og slut. Prøv ikke at arbejde udenom. Den næste
 kørsel samler op, og køen løber ingen steder.
 
-Kører du, fordi Torben lige har trykket **Kør nu**, vil hans egne ændringer ofte
+Kører du, fordi nogen lige har trykket **Kør nu**, vil de ændringer ofte
 udløse den her. Er de eneste rørte filer dem, opgaven i køen handler om, må du
 gerne fortsætte — men skriv i loggen, at du gjorde det, og hvorfor.
 
@@ -42,7 +42,7 @@ Der kan køre flere sessioner i døgnet, og de må aldrig arbejde samtidig i de 
 
 ## Hvilken slags kørsel er du?
 
-Du kan blive startet af en tidsplan eller af, at Torben trykker **Kør nu**.
+Du kan blive startet af en tidsplan eller af, at nogen trykker **Kør nu**.
 **Kig ikke på klokken — kig på, hvad der allerede er sket.** Så virker det samme
 regelsæt, uanset hvornår på døgnet du kører.
 
@@ -60,20 +60,20 @@ omgør hver kørsel den forriges rækkefølge, og køen skifter udseende, uden a
 nogen har lært noget nyt. At arbejde køen kan derimod ske så mange gange, det skal
 være.
 
-**Bliver du startet manuelt, er Torben sandsynligvis vågen.** Det ændrer ikke,
-hvad du laver — men skriv loggen, som om han læser den om fem minutter, ikke i
+**Bliver du startet manuelt, er redaktionen sandsynligvis til stede.** Det ændrer ikke,
+hvad du laver — men skriv loggen, som om den bliver læst om fem minutter, ikke i
 morgen.
 
 ## Læs derefter, i denne rækkefølge
 
-1. `_redaktion/oensker.md` — **Torbens egne ønsker. De kommer altid først.**
-   Her skriver han i almindeligt dansk, hvad han vil have. Hvert ønske skal du
+1. `_redaktion/oensker.md` — **Redaktionens egne ønsker. De kommer altid først.**
+   Her står i almindeligt dansk, hvad der ønskes. Hvert ønske skal du
    oversætte til et rigtigt køpunkt (hvad ser en læser, hvilket punkt i
    målestokken, mindste rettelse) og flytte ned under "Behandlet" med en note om,
    hvor det endte. Står der **HASTER** foran, ryger det øverst i køen, før alt
    andet — også før noget, du selv har målt som værre.
    Er et ønske en dårlig idé, så lav det ikke: skriv i loggen hvorfor, og lad
-   ønsket blive stående, så han kan svare igen.
+   ønsket blive stående, så der kan svares igen.
 2. `_redaktion/redaktionens-oejne.md` — målestokken. Ti punkter, og et afsnit om
    hvad der IKKE er et problem. Den afgør alt andet.
 3. `_redaktion/opgavekoe.md` — køen.
@@ -84,8 +84,8 @@ Crawleren laver **ingen** gennemgang længere. Den måler kun rå tal
 (`data/laesertal.json` fra Cloudflare). Vurderingen er din alene.
 
 **Tjek også, om der ligger uafhentet arbejde.** Kør `git status --short`. Er der
-ændrede filer fra tidligere nætter, har Torben ikke pushet endnu. Skriv det
-ØVERST i arbejdsloggen med det samme — han bygger videre på noget, verden ikke har
+ændrede filer fra tidligere nætter, er der ikke pushet endnu. Skriv det
+ØVERST i arbejdsloggen med det samme — der bygges videre på noget, verden ikke har
 set, og de filer, crawleren selv skriver, vil begynde at give merge-konflikter.
 
 ---
@@ -113,8 +113,8 @@ verificér, at rettelsen holder. Vi har set flere gange, at en rettelse løste
 symptomet og efterlod årsagen — eller flyttede fejlen et andet sted hen.
 
 **4. Afgør, hvad køen skal.** Nu — og først nu — læser du `oensker.md` og køen
-med dine egne tal i hånden. **Torbens ønsker vejer tungere end dine egne fund**;
-han ser noget, ingen måling fanger. Derefter:
+med dine egne tal i hånden. **Ønskelisten vejer tungere end dine egne fund**;
+de ser noget, ingen måling fanger. Derefter:
 
 - Er øverste punkts påstand stadig sand? Er den ikke, så luk punktet med din
   måling som dokumentation, eller skriv den om, så den passer.
@@ -185,7 +185,7 @@ videre:
 - Er der rørt ved kontrolpanelet: samme prøve på `_redaktion/kontrolpanel.html`.
 
 Fejler noget, så ret det, før du logger. En session, der efterlader siden i
-stykker, er værre end en session uden arbejde — Torben pusher om morgenen uden at læse koden.
+stykker, er værre end en session uden arbejde — der pushes uden at koden bliver læst igennem.
 Skriv resultatet af den samlede prøve i loggen, også når alt er grønt.
 
 ## Fase 2 — Evaluér siden med friske øjne
@@ -209,7 +209,7 @@ Et punkt kommer kun i køen, hvis det kan svare på alle tre:
 
 Fandt du ingen, skriver du nul og noterer: *"Gennemgik X — fandt intet, der
 bryder målestokken."* Det er et fuldgyldigt resultat. Opfundet arbejde koster
-Torben tid og gør siden dårligere.
+redaktionen tid og gør siden dårligere.
 
 Genåbn ikke noget fra "Klaret", medmindre du kan måle, at det er gået i stykker igen.
 
@@ -228,7 +228,7 @@ det billigste at rette.
 Bliver køen længere end 40 punkter, flyttes de svageste ned under `## Parkeret`.
 
 Skriv til sidst, hvad der nu står øverst — og én sætning om hvorfor rækkefølgen
-ændrede sig. Torben skal kunne være uenig.
+ændrede sig. Redaktionen skal kunne være uenig.
 
 ---
 
@@ -242,7 +242,7 @@ og skriv øverst i `arbejdslog.md`:
 **Fandt:** <hvad målingerne viste — også hvis problemet ikke var som beskrevet>
 **Gjorde:** <hvad du ændrede, i hvilke filer>
 **Testede:** <hvad du kørte, og hvad der kom ud>
-**Til Torben:** <hvad han skal vide, beslutte eller gøre>
+**Til redaktionen:** <hvad han skal vide, beslutte eller gøre>
 ```
 
 **Opdatér kontrolpanelet, før du slutter.** Panelet læser et øjebliksbillede i
