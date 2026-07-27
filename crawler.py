@@ -1380,6 +1380,15 @@ def lav_billeder(artikler: list[dict]) -> None:
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
+        # Et arvet billede hedder ikke det samme som hash af DETTE link: slår
+        # saml_dublet_historier to udgaver sammen, peger den primære artikel på
+        # en anden kildes fil. Kiggede vi kun efter vores eget hashnavn, betalte
+        # vi for et nyt billede til en historie, der allerede havde et - præcis
+        # den dobbelte udgift, arven skulle spare.
+        if not sti.exists() and a.get("billede"):
+            arvet = BILLED_MAPPE / Path(a["billede"]).name
+            if arvet.is_file():
+                navn, sti = arvet.name, arvet
         if sti.exists():
             # Gamle billeder i lav opløsning (640px-æraen) laves om én gang -
             # men kun for kort-artikler; tekstlinjer beholder det, de har
@@ -1473,7 +1482,22 @@ def lav_billeder(artikler: list[dict]) -> None:
     # stod siden tilbage med et brudt billede, et dødt og:image (ødelagt
     # delevisning) og "Image not found" i structured data. Målt 26.07: 25 af 87
     # sider med billede var i præcis den tilstand.
-    brugte = {_billed_navn(a["link"]) for a in artikler}
+    #
+    # Filnavnet er hash af ET link, men en artikel kan pege på et billede, der
+    # er hashet ud fra et ANDET: samler saml_dublet_historier to udgaver af
+    # samme historie, arver den primære artikel billedet fra en af de andre
+    # kilder (se kommentaren dér). Whitelistede vi kun det primære link, slettede
+    # oprydningen præcis det billede, artiklen selv peger på - og har historien
+    # arkivforbud, findes der ingen artikelside til at redde filen. Derfor tæller
+    # både `billede`-feltet og de sammenlagte kilders links med.
+    # Målt 27.07: 1 af 81 artikler stod med en billedsti til en slettet fil.
+    brugte = set()
+    for a in artikler:
+        brugte.add(_billed_navn(a["link"]))
+        for k in a.get("andre") or []:
+            brugte.add(_billed_navn(k["link"]))
+        if a.get("billede"):
+            brugte.add(Path(a["billede"]).name)
     for mappe, moenster in ((ARTIKEL_MAPPE, "*.html"), (ROOT, "*.html")):
         if not mappe.is_dir():
             continue
