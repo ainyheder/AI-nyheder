@@ -42,10 +42,6 @@ GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
 GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
-# Den natlige gennemgang er det ene sted, hvor det handler om dømmekraft og ikke
-# om mængde: ét kald i døgnet. Derfor den kloge model, uanset hvem der skriver
-# artiklerne til daglig.
-KRITIK_MODEL = "gemini-3.6-flash"
 DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
@@ -325,7 +321,6 @@ HJERNE_BESKRIVELSE = {
     "ugens_overblik": "Skriver ugens digest og nyhedsbrevet",
     "youtube": "Opsummerer YouTube-videoer på dansk med tidsstempler",
     "opslag": "Skriver opslag til de sociale platforme",
-    "gennemgang": "Den natlige gennemgang af hele siden",
 }
 
 _hjerner_cache: dict | None = None
@@ -373,22 +368,25 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     return kald_ai(system, bruger, max_tokens)
 
 
-# Natteloopets dokumenter. De styrer den natlige gennemgang og natsessionen -
-# og kan redigeres i kontrolpanelet ligesom prompterne.
-NAT_DOKUMENTER = [
+# Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
+# i kontrolpanelet ligesom prompterne. Loopet er ikke bundet til noget tidspunkt.
+ARBEJDS_DOKUMENTER = [
+    ("oensker", "oensker.md", "Torbens ønsker",
+     "Skriv her, hvad du vil have lavet — i almindeligt dansk. Sessionen læser "
+     "den før alt andet og oversætter ønskerne til punkter i køen.", True),
     ("maalestok", "redaktionens-oejne.md", "Målestokken",
-     "Ni punkter der definerer 'godt'. Bruges af BÅDE den natlige gennemgang "
-     "og natsessionen. Ret her, og begge ændrer adfærd.", True),
-    ("natsession", "natsession.md", "Natsessionens instruks",
-     "Hele nattens arbejdsgang: de tre faser, hvordan der testes, hvornår der "
-     "stoppes. Læses forfra hver nat kl. 23 og 03.", True),
+     "Ti punkter der definerer 'godt'. Afgør alt, hvad sessionen laver.", True),
+    ("instruks", "arbejdsinstruks.md", "Arbejdsinstruksen",
+     "Hele arbejdsgangen: de fire faser, hvordan der testes, hvornår der "
+     "stoppes. Læses forfra ved hver kørsel.", True),
     ("opgavekoe", "opgavekoe.md", "Opgavekøen",
      "Det, der bliver lavet — oppefra og ned. Flyt en linje op for at "
      "prioritere den frem.", True),
-    ("kritik", "kritik-seneste.md", "Seneste gennemgang",
-     "Skrevet af maskinen i nat. Kun til at læse.", False),
-    ("natlog", "nat-log.md", "Nat-loggen",
-     "Hvad nætterne har lavet, og hvad du skal vide. Kun til at læse.", False),
+    ("analyse", "analyse-seneste.md", "Sessionens egen analyse",
+     "Sessionens gennemgang af siden, skrevet FØR den gik i gang. "
+     "Kun til at læse.", False),
+    ("log", "arbejdslog.md", "Arbejdsloggen",
+     "Hvad kørslerne har lavet, og hvad du skal vide. Kun til at læse.", False),
 ]
 
 
@@ -418,12 +416,12 @@ def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
     if graense > slut // 3:
         skaaret = skaaret[:graense]
     return (skaaret.rstrip() + "\n\n---\n\n*Ældre indgange er klippet fra her. "
-            "Hele historikken står i `_redaktion/nat-log.md`.*\n")
+            "Hele historikken står i `_redaktion/arbejdslog.md`.*\n")
 
 
-def _natteloop_status() -> list:
+def _arbejdsloop_status() -> list:
     ud = []
-    for noegle, fil, navn, besk, kan_rettes in NAT_DOKUMENTER:
+    for noegle, fil, navn, besk, kan_rettes in ARBEJDS_DOKUMENTER:
         sti = ROOT / "_redaktion" / fil
         try:
             indhold = sti.read_text(encoding="utf-8")
@@ -448,13 +446,12 @@ def _standard_prompts() -> dict:
         "kartotek": SYSTEM_KARTOTEK, "quiz": SYSTEM_QUIZ,
         "dagens_overblik": SYSTEM_BRIEF, "ugens_overblik": SYSTEM_UGE,
         "youtube": SYSTEM_YT, "opslag": SYSTEM_OPSLAG,
-        "gennemgang": SYSTEM_KRITIK,
     }
 
 
 def skriv_hjerne_status() -> None:
     """Data til kontrolpanelet: hvilke modeller og instrukser der er i brug,
-    og natteloopets dokumenter. Skrives både som JSON og som en JS-fil, så
+    og arbejdsloopets dokumenter. Skrives både som JSON og som en JS-fil, så
     panelet kan åbnes direkte fra mappen uden en webserver.
 
     KUN LOKALT. På GitHubs servere springes det over med vilje: filerne
@@ -470,19 +467,18 @@ def skriv_hjerne_status() -> None:
         "daglig_model": daglig,
         "udbyder": UDBYDER or "ingen",
         "billedmodel": BILLED_MODEL if GEMINI_KEY else "ingen",
-        "kritik_model": KRITIK_MODEL,
         "gemini_tilgaengelig": bool(GEMINI_KEY),
         "hjerner": {
             navn: {
                 "beskrivelse": besk,
-                "model": hjerne_model(navn) or (KRITIK_MODEL if navn == "gennemgang" else daglig),
+                "model": hjerne_model(navn) or daglig,
                 "egen_model": bool(hjerne_model(navn)),
                 "egen_prompt": bool((_hjerner().get(navn) or {}).get("prompt")),
                 "standard_prompt": std.get(navn, ""),
                 "aktiv_prompt": hjerne_prompt(navn, std.get(navn, "")),
             } for navn, besk in HJERNE_BESKRIVELSE.items()
         },
-        "natteloop": _natteloop_status(),
+        "arbejdsloop": _arbejdsloop_status(),
     }
     HJERNER_STATUS.parent.mkdir(exist_ok=True)
     HJERNER_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2),
@@ -4096,243 +4092,6 @@ def _laeser_afsnit() -> dict:
 # ingenting - den skriver en prioriteret liste og åbner et GitHub-issue.
 
 OEJNE_FIL = ROOT / "_redaktion" / "redaktionens-oejne.md"
-KRITIK_FIL = ROOT / "_redaktion" / "kritik-seneste.md"
-KRITIK_STEMPEL = ROOT / "data" / "kritik.json"
-
-SYSTEM_KRITIK = """Du er redaktionschef på ainyheder.com og gennemgår siden med
-ejerens egne øjne. Du får hans målestok og en faktuel tilstandsrapport.
-
-Din opgave: find de TRE vigtigste ting, der bør laves nu. Ikke de tre nemmeste,
-og ikke de tre mest ambitiøse - de tre der betyder mest for læseren.
-
-{retning}
-
-VÆGT LÆSERNE HØJEST. Afsnittet "LAESERNE" i rapporten er det eneste sted, du kan
-se, om arbejdet virker. En side, ingen besøger, er et større problem end en side,
-der mangler en detalje - uanset hvor pæn den mangler er. Står en hel sektion med
-nul besøg, så rejs spørgsmålet: skal den gøres synlig, laves om, eller væk?
-Er der ingen læsertal, så sig det i overblikket og bedøm på resten.
-
-Regler:
-- Byg KUN på tallene i tilstandsrapporten. Opdigt aldrig et problem, du ikke
-  kan pege på i data. Er der intet galt, så sig det - tre svage forslag er
-  værre end ét godt.
-- Hvert forslag skal kunne kobles til et af de ni punkter i målestokken.
-- "hvad" skal beskrive, hvad en LÆSER oplever - ikke hvad koden gør.
-- "mindste_rettelse" skal være noget, der kan laves i dag. Ikke en plan.
-- Skriv dansk, direkte, uden floskler. Ingen ros for rosens skyld.
-
-Svar KUN med JSON:
-{"overblik": "1-2 sætninger om sidens tilstand lige nu",
- "forslag": [{"hvad": "...", "punkt": "<nummer og navn fra målestokken>",
-              "hvorfor": "...", "mindste_rettelse": "...",
-              "vigtighed": <1-10>}]}"""
-
-# Seks dage om ugen leder gennemgangen efter fejl. Om søndagen stiller den et
-# andet spørgsmål - ellers kan systemet kun reparere, aldrig vokse.
-RETNING_HVERDAG = """Led efter det, der er GALT: noget der er i stykker, noget der
-bryder målestokken, noget der er blevet efterladt halvt."""
-
-RETNING_SOENDAG = """DET ER SØNDAG - I DAG SPØRGER DU OM NOGET ANDET.
-
-Glem fejlfinding. De seks andre dage leder du efter, hvad der er i stykker. I dag
-skal du svare på ét spørgsmål: **hvad ville få flere danskere til at bruge siden?**
-
-Læs punkt 10 i målestokken. En fejlfri side, ingen læser, opfylder ikke sit formål.
-
-Tænk i disse baner - og brug tallene i "LAESERNE" til at afgøre hvilken:
-- Ligger noget godt SKJULT? Har siden noget værdifuldt, som næsten ingen finder,
-  fordi det ikke er synligt dér, hvor folk lander?
-- Er der en åbenlys vej, der ikke bliver brugt? Google, deling, nyhedsbrev,
-  gentagne besøg.
-- Bliver noget lavet hver dag og brugt ét sted? Genbrug er billigere end nybyg.
-- Er der en gruppe danskere, siden allerede kunne tjene, men ikke taler til?
-
-Forslagene må gerne være NYE ting, siden ikke har i dag - men de skal stadig kunne
-laves i overskuelig tid, og de skal bygge på noget, der allerede findes.
-Foreslå aldrig noget, der kræver betaling, login eller persondata.
-
-Skriv "10. Det skal nå nogen" i "punkt"-feltet."""
-
-
-def _tilstandsrapport(artikler: list[dict]) -> dict:
-    """Faktuelle tal om sidens tilstand. Ingen vurdering - kun målinger,
-    så kritikken bygger på noget, der faktisk kan efterprøves."""
-    nu = datetime.now(timezone.utc)
-    doegn = (nu - timedelta(hours=24)).isoformat()
-    med_rubrik = [a for a in artikler if a.get("rubrik")]
-    friske = [a for a in artikler if (a.get("foerst_set") or "") >= doegn]
-
-    def andel(liste, praedikat):
-        return f"{sum(1 for a in liste if praedikat(a))} af {len(liste)}"
-
-    rapport = {
-        "artikler_i_alt": len(artikler),
-        "nye_seneste_doegn": len(friske),
-        "uden_dansk_rubrik": len(artikler) - len(med_rubrik),
-        "rubrikker_uden_navn": andel(med_rubrik, lambda a: _mangler_navn(a["rubrik"])),
-        "uden_komplet_brief": andel(med_rubrik, lambda a: not a.get("sektioner")),
-        "uden_hvad_betyder_det": andel(med_rubrik, lambda a: not a.get("betydning")),
-        "uden_billede": andel(med_rubrik, lambda a: not a.get("billede")),
-        "for_lange_betydninger": andel(
-            med_rubrik, lambda a: len((a.get("betydning") or "").split()) > 45),
-        "flerkilde_historier": andel(med_rubrik, lambda a: bool(a.get("andre"))),
-        "kilder": sorted({a.get("kilde", "") for a in artikler}),
-    }
-    for navn, sti in (("dagens_overblik", BRIEF_FIL), ("ugens_quiz", QUIZ_FIL),
-                      ("dagens_prompt", PROMPT_ARKIV), ("ugens_overblik", UGE_JSON)):
-        try:
-            d = json.loads(sti.read_text(encoding="utf-8"))
-            rapport[navn] = d.get("uge") or d.get("dato") or "findes"
-        except Exception:
-            rapport[navn] = "MANGLER"
-    try:
-        yt = json.loads(YT_OUTPUT.read_text(encoding="utf-8"))["videoer"]
-        rapport["videoer"] = f"{len(yt)} i alt, {sum(1 for v in yt if v.get('rubrik'))} med dansk resumé"
-    except Exception:
-        rapport["videoer"] = "MANGLER"
-    rapport["artikelsider"] = len(list(ARTIKEL_MAPPE.glob("*.html"))) if ARTIKEL_MAPPE.exists() else 0
-    rapport["videosider"] = len(list(VIDEO_MAPPE.glob("*.html"))) if VIDEO_MAPPE.exists() else 0
-    rapport["LAESERNE"] = _laeser_afsnit()
-    return rapport
-
-
-def _opret_issue(titel: str, krop: str) -> bool:
-    """Åbner et GitHub-issue med Actions-tokenet. Uden token: springes over."""
-    token = os.environ.get("GITHUB_TOKEN", "").strip()
-    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
-    if not (token and repo):
-        return False
-    hent_url(f"https://api.github.com/repos/{repo}/issues",
-             data=json.dumps({"title": titel, "body": krop,
-                              "labels": ["natlig gennemgang"]}).encode(),
-             headers={"Authorization": f"Bearer {token}",
-                      "Accept": "application/vnd.github+json",
-                      "Content-Type": "application/json",
-                      "User-Agent": "ainyheder-crawler"})
-    return True
-
-
-def _kritik_i_koen(forslag: list, dag: str) -> None:
-    """Skriver nattens forslag direkte ind i opgavekøen.
-
-    Uden det her har natsessionen to lister at forholde sig til - kritikken og
-    køen - og ingen regel for hvad der vinder. Med det her er der ÉN kø.
-    Punkterne lægges nederst i køen; natsessionens fase 3 sorterer dem på plads."""
-    koe = ROOT / "_redaktion" / "opgavekoe.md"
-    if not koe.exists():
-        return
-    try:
-        tekst = koe.read_text(encoding="utf-8")
-        if "## Klaret" not in tekst:
-            return
-        eksisterende = tekst.lower()
-        nye = []
-        for f in forslag:
-            hvad = _som_tekst(f.get("hvad", "")).strip()
-            # Undgå at lægge det samme punkt ind hver eneste nat: er de første
-            # fem betydende ord der allerede, springer vi over.
-            fingeraftryk = " ".join(hvad.lower().split()[:5])
-            if not hvad or (fingeraftryk and fingeraftryk in eksisterende):
-                continue
-            nye.append(
-                f"- [ ] **{hvad}** "
-                f"({_som_tekst(f.get('vigtighed', '?'))}/10 · fra gennemgangen {dag})  \n"
-                f"      {_som_tekst(f.get('hvorfor', ''))}  \n"
-                f"      *Mindste rettelse:* {_som_tekst(f.get('mindste_rettelse', ''))}  \n"
-                f"      *Bryder:* {_som_tekst(f.get('punkt', ''))}\n")
-        if not nye:
-            return
-        blok = f"\n### Fra den natlige gennemgang {dag}\n\n" + "\n".join(nye)
-        foer, efter = tekst.split("## Klaret", 1)
-        koe.write_text(foer.rstrip() + "\n" + blok + "\n---\n\n## Klaret" + efter,
-                       encoding="utf-8")
-        print(f"🔍 Lagde {len(nye)} forslag i opgavekøen")
-    except Exception as fejl:
-        print(f"🔍 Kunne ikke skrive i opgavekøen ({type(fejl).__name__}: {fejl})")
-
-
-def natlig_gennemgang(artikler: list[dict]) -> None:
-    """Én gennemgang i døgnet. Ændrer intet - foreslår kun. Fejler stille."""
-    if not API_KEY or not OEJNE_FIL.exists():
-        return
-    try:
-        # Gennemgangen skal være FRISK, når natsessionen læser den kl. 23.
-        # Kørte den ved dagens første crawl, ville den være næsten et døgn
-        # gammel og bygge på siden, som den så ud i morges. Derfor: først fra
-        # kl. 21 dansk tid. Bliver ét crawl droppet, tager det næste den.
-        try:
-            from zoneinfo import ZoneInfo
-            time_dk = datetime.now(ZoneInfo("Europe/Copenhagen")).hour
-        except Exception:
-            time_dk = (datetime.now(timezone.utc).hour + 2) % 24
-        if time_dk < 21 and not GENKOER_ALT:
-            return
-
-        dag = _opslag_dag()
-        if KRITIK_STEMPEL.exists():
-            try:
-                if json.loads(KRITIK_STEMPEL.read_text(encoding="utf-8")).get("dato") == dag:
-                    return                      # allerede gennemgået i dag
-            except json.JSONDecodeError:
-                pass
-
-        maalestok = OEJNE_FIL.read_text(encoding="utf-8")[:7000]
-        rapport = _tilstandsrapport(artikler)
-        soendag = datetime.now(timezone.utc).isoweekday() == 7
-        system_kritik = SYSTEM_KRITIK.replace(
-            "{retning}", RETNING_SOENDAG if soendag else RETNING_HVERDAG)
-        bruger = ("MÅLESTOKKEN:\n" + maalestok
-                  + "\n\nTILSTANDSRAPPORT (målt lige nu):\n"
-                  + json.dumps(rapport, ensure_ascii=False, indent=1))
-        # Den kloge model som standard - kontrolpanelet kan vælge en anden.
-        brugt_model = hjerne_model("gennemgang") or KRITIK_MODEL
-        raa = hjerne_kald("gennemgang", system_kritik, bruger, 1600,
-                          standard_model=KRITIK_MODEL)
-        r = parse_json_objekt(raa)
-        forslag = [f for f in (r.get("forslag") or []) if isinstance(f, dict) and f.get("hvad")]
-        if not forslag:
-            return
-
-        forslag.sort(key=lambda f: f.get("vigtighed") or 0, reverse=True)
-        linjer = [f"# {'Retningsrunde' if soendag else 'Natlig gennemgang'} · {dag}", ""]
-        if soendag:
-            linjer += ["*Søndag: i dag handler det ikke om fejl, men om "
-                       "hvad der ville få flere danskere med.*", ""]
-        linjer += [_som_tekst(r.get("overblik", "")), ""]
-        for nr, f in enumerate(forslag[:3], 1):
-            linjer += [f"## {nr}. {_som_tekst(f.get('hvad'))}",
-                       f"**Bryder:** {_som_tekst(f.get('punkt'))} · "
-                       f"**Vigtighed:** {f.get('vigtighed', '?')}/10", "",
-                       _som_tekst(f.get("hvorfor")), "",
-                       f"**Mindste rettelse:** {_som_tekst(f.get('mindste_rettelse'))}", ""]
-        linjer += ["---", "", "<details><summary>Tilstandsrapporten bag</summary>", "",
-                   "```json", json.dumps(rapport, ensure_ascii=False, indent=1), "```",
-                   "", "</details>", "",
-                   f"*Gennemgået af `{brugt_model}` ud fra "
-                   "`_redaktion/redaktionens-oejne.md`. "
-                   "Ret målestokken, hvis gennemgangen kigger det forkerte sted.*"]
-        tekst = "\n".join(linjer)
-
-        KRITIK_FIL.parent.mkdir(exist_ok=True)
-        KRITIK_FIL.write_text(tekst, encoding="utf-8")
-        _kritik_i_koen(forslag[:3], dag)
-        KRITIK_STEMPEL.parent.mkdir(exist_ok=True)
-        KRITIK_STEMPEL.write_text(json.dumps({"dato": dag}, ensure_ascii=False),
-                                  encoding="utf-8")
-        try:
-            sendt = _opret_issue(
-                ("Retningsrunde · " if soendag else "Natlig gennemgang · ") + dag, tekst)
-        except Exception as fejl:
-            sendt = False
-            print(f"🔍 ⚠️ Kunne ikke oprette issue: {type(fejl).__name__}: {fejl}")
-        print(f"🔍 Natlig gennemgang: {len(forslag[:3])} forslag"
-              + (" - issue oprettet" if sendt else " - skrevet til _redaktion/kritik-seneste.md"))
-        for f in forslag[:3]:
-            print(f"   {f.get('vigtighed', '?')}/10 · {_som_tekst(f.get('hvad'))[:96]}")
-    except Exception as fejl:
-        print(f"🔍 Natlig gennemgang sprang over ({type(fejl).__name__}: {fejl})")
-
 
 # ----- Opslag på sociale platforme -------------------------------------------
 #
@@ -4596,7 +4355,6 @@ def main() -> None:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     if GEMINI_KEY:
         print(f"🎨 Billedmodel: {BILLED_MODEL}")
-        print(f"🔍 Natlig gennemgang: {hjerne_model('gennemgang') or KRITIK_MODEL}")
     egne = [n for n in HJERNE_BESKRIVELSE
             if hjerne_model(n) or (_hjerner().get(n) or {}).get("prompt")]
     if egne:
@@ -4751,7 +4509,6 @@ def main() -> None:
     lav_dagens_brief(unikke)
     del_paa_platforme(unikke)  # tørkørsel indtil OPSLAG_LIVE=ja
     hent_laesertal()           # så gennemgangen kan se, hvad folk faktisk læser
-    natlig_gennemgang(unikke)  # ser på siden med redaktionens øjne, ændrer intet
     try:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
     except Exception as fejl:

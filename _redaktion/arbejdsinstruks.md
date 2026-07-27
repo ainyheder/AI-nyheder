@@ -1,7 +1,7 @@
-# Natsessionens arbejdsinstruks
+# Arbejdssessionens instruks
 
-Det her er den instruks, natsessionen arbejder efter kl. 23 og kl. 03.
-Ret den frit — den læses forfra hver nat, så ændringer virker med det samme.
+Det her er den instruks, arbejdssessionen følger — uanset hvornår på døgnet den
+kører. Ret den frit; den læses forfra hver gang, så ændringer virker med det samme.
 
 ---
 
@@ -21,7 +21,7 @@ find . -newermt '-30 minutes' \( -name '*.py' -o -name '*.html' -o -name '*.md' 
 nitten gange i døgnet — de siger intet om, hvorvidt et menneske er i gang.
 
 **Kommer der filer ud af den kommando, arbejder Torben sandsynligvis lige nu.**
-Så stopper du: skriv én linje i `nat-log.md` om, at du sprang over, hvilke filer
+Så stopper du: skriv én linje i `arbejdslog.md` om, at du sprang over, hvilke filer
 der var rørt, og hvornår — og slut. Prøv ikke at arbejde udenom. Den næste
 kørsel samler op, og køen løber ingen steder.
 
@@ -31,27 +31,27 @@ gerne fortsætte — men skriv i loggen, at du gjorde det, og hvorfor.
 
 ## Dernæst: er en anden session i gang?
 
-Der kører to sessioner i døgnet, og de må aldrig arbejde samtidig i de samme filer.
+Der kan køre flere sessioner i døgnet, og de må aldrig arbejde samtidig i de samme filer.
 
-1. Findes `_redaktion/.nat-koerer`, så læs tidsstemplet. Er det mindre end 3 timer
+1. Findes `_redaktion/.koerer`, så læs tidsstemplet. Er det mindre end 3 timer
    gammelt, arbejder en anden session lige nu: **stop med det samme** og skriv én
-   linje i `_redaktion/nat-log.md` om, at du sprang over. Er den ældre, er den
+   linje i `_redaktion/arbejdslog.md` om, at du sprang over. Er den ældre, er den
    efterladt af en afbrudt session — overskriv den og fortsæt.
-2. Ellers: skriv nuværende tidspunkt (ISO 8601) i `_redaktion/.nat-koerer`.
-3. **Slet altid `_redaktion/.nat-koerer`, før du slutter** — også hvis du stopper undervejs.
+2. Ellers: skriv nuværende tidspunkt (ISO 8601) i `_redaktion/.koerer`.
+3. **Slet altid `_redaktion/.koerer`, før du slutter** — også hvis du stopper undervejs.
 
 ## Hvilken slags kørsel er du?
 
-Du kan blive startet på tre måder: automatisk kl. 23, automatisk kl. 03, eller
-fordi Torben trykker **Kør nu** midt på dagen. **Kig ikke på klokken — kig på,
-hvad der allerede er sket.** Så virker det samme regelsæt uanset hvornår du starter.
+Du kan blive startet af en tidsplan eller af, at Torben trykker **Kør nu**.
+**Kig ikke på klokken — kig på, hvad der allerede er sket.** Så virker det samme
+regelsæt, uanset hvornår på døgnet du kører.
 
-Åbn `nat-log.md` og se efter en overskrift `### Nattens regnskab · <dagens dato>`.
+Åbn `arbejdslog.md` og se efter en overskrift `### Sessionens regnskab · <dagens dato>`.
 
 - **Findes der INTET regnskab for i dag:** du er dagens hovedkørsel. Du tager
-  hele turen — fase 1, 2 og 3 — og skriver regnskabet til sidst.
+  hele turen — fase 0, 1, 2 og 3 — og skriver regnskabet til sidst.
 - **Findes der ALLEREDE et regnskab for i dag:** du er en ekstra kørsel. Du laver
-  **kun fase 1**: arbejd køen, og skriv en log-post pr. færdigt punkt. Rør ikke
+  **fase 0 og fase 1**: analysér, arbejd køen, og skriv en log-post pr. færdigt punkt. Rør ikke
   prioriteringen, og skriv ikke et regnskab til. Tilføj i stedet én linje under
   dagens regnskab: `**Ekstra kørsel <klokkeslæt>:** klarede <N> punkter mere.`
 
@@ -62,27 +62,84 @@ være.
 
 **Bliver du startet manuelt, er Torben sandsynligvis vågen.** Det ændrer ikke,
 hvad du laver — men skriv loggen, som om han læser den om fem minutter, ikke i
-morgen tidlig.
+morgen.
 
 ## Læs derefter, i denne rækkefølge
 
-1. `_redaktion/redaktionens-oejne.md` — målestokken. Ni punkter, og et afsnit om
-   hvad der IKKE er et problem. Den afgør alt.
-2. `_redaktion/opgavekoe.md` — køen. Du arbejder oppefra og ned. Crawlerens
-   natlige gennemgang skriver selv sine forslag ind nederst i køen under
-   "Fra den natlige gennemgang" — så der er kun ÉN liste at forholde sig til.
-3. `_redaktion/nat-log.md` — hvad tidligere nætter fandt og besluttede.
-4. `_redaktion/kritik-seneste.md` — gennemgangens fulde tekst med tallene bag.
-   Kun hvis du har brug for baggrunden; forslagene står allerede i køen.
+1. `_redaktion/oensker.md` — **Torbens egne ønsker. De kommer altid først.**
+   Her skriver han i almindeligt dansk, hvad han vil have. Hvert ønske skal du
+   oversætte til et rigtigt køpunkt (hvad ser en læser, hvilket punkt i
+   målestokken, mindste rettelse) og flytte ned under "Behandlet" med en note om,
+   hvor det endte. Står der **HASTER** foran, ryger det øverst i køen, før alt
+   andet — også før noget, du selv har målt som værre.
+   Er et ønske en dårlig idé, så lav det ikke: skriv i loggen hvorfor, og lad
+   ønsket blive stående, så han kan svare igen.
+2. `_redaktion/redaktionens-oejne.md` — målestokken. Ti punkter, og et afsnit om
+   hvad der IKKE er et problem. Den afgør alt andet.
+3. `_redaktion/opgavekoe.md` — køen.
+4. `_redaktion/arbejdslog.md` — hvad tidligere kørsler fandt og besluttede.
+5. `_redaktion/analyse-seneste.md` — din egen analyse fra sidst, hvis den findes.
+
+Crawleren laver **ingen** gennemgang længere. Den måler kun rå tal
+(`data/laesertal.json` fra Cloudflare). Vurderingen er din alene.
 
 **Tjek også, om der ligger uafhentet arbejde.** Kør `git status --short`. Er der
 ændrede filer fra tidligere nætter, har Torben ikke pushet endnu. Skriv det
-ØVERST i nat-loggen med det samme — han bygger videre på noget, verden ikke har
+ØVERST i arbejdsloggen med det samme — han bygger videre på noget, verden ikke har
 set, og de filer, crawleren selv skriver, vil begynde at give merge-konflikter.
 
 ---
 
-## Fase 1 — Arbejd (hovedparten af natten)
+## Fase 0 — Din egen analyse, FØR du rører noget
+
+**Gør det her hver gang, også som ekstra kørsel.** Køen er et forslag fra i går.
+Siden har ændret sig siden — crawleren har kørt, artikler er kommet til og faldet
+ud, og forrige session har ændret kode. At gå direkte i gang med øverste punkt er
+at arbejde efter et kort, ingen har tjekket.
+
+Sæt cirka en tiendedel af din tid af til det her. Ikke mere.
+
+**1. Mål tilstanden selv.** Skriv et lille engangsscript og kør det. Tæl i
+`data/articles.json`, `data/youtube.json`, `artikel/`, `video/`, `data/laesertal.json`
+og filerne i roden. Ikke ét fast sæt tal — se på dét, der er relevant i aften,
+og på dét, du ændrede sidste gang. Tallene i køen er fra i går; dine er fra nu.
+
+**2. Se på siden som en læser.** Hent forsiden og en tilfældig artikelside ind, og
+læs dem. Tal fortæller, om noget mangler — ikke om det er godt. Hold det op mod
+de ti punkter i målestokken.
+
+**3. Tjek dit eget arbejde fra sidst.** Læs den øverste post i `arbejdslog.md` og
+verificér, at rettelsen holder. Vi har set flere gange, at en rettelse løste
+symptomet og efterlod årsagen — eller flyttede fejlen et andet sted hen.
+
+**4. Afgør, hvad køen skal.** Nu — og først nu — læser du `oensker.md` og køen
+med dine egne tal i hånden. **Torbens ønsker vejer tungere end dine egne fund**;
+han ser noget, ingen måling fanger. Derefter:
+
+- Er øverste punkts påstand stadig sand? Er den ikke, så luk punktet med din
+  måling som dokumentation, eller skriv den om, så den passer.
+- Fandt du noget, der er værre end øverste punkt? Så skriv det ind og tag det.
+- Fandt du intet nyt, og passer køen? Så tag øverste punkt. Det er et fint svar.
+
+**5. Skriv analysen ned** i `_redaktion/analyse-seneste.md` (overskriv den
+forrige). Kort — det er et arbejdspapir, ikke en rapport:
+
+```
+# Analyse · <dato og klokkeslæt>
+**Målt:** <de tal, du faktisk kiggede på>
+**Set som læser:** <hvad du lagde mærke til på forsiden og artikelsiden>
+**Sidste nats arbejde:** <holder det, eller er der noget efterladt?>
+**Køen:** <hvad du ændrede i den, og hvorfor>
+**Jeg går i gang med:** <punktet> — <én sætning om hvorfor netop det>
+```
+
+Er det søndag, stiller du desuden ét ekstra spørgsmål: **hvad ville få flere
+danskere til at bruge siden?** Læs punkt 10 i målestokken. En fejlfri side, ingen
+læser, opfylder ikke sit formål. Forslag herfra må gerne være ting, siden ikke
+har i dag — men de skal bygge på noget, der allerede findes, og aldrig kræve
+betaling, login eller persondata. Skriv dem i køen.
+
+## Fase 1 — Arbejd (hovedparten af tiden)
 
 **Tag ét punkt ad gangen — men bliv ved.** Et punkt kan tage tyve minutter eller
 flere timer. Når ét er færdigt, testet og logget, tager du det næste.
@@ -110,13 +167,13 @@ skriv hvorfor, flyt det ned med en note, og tag det næste. Gå ikke i stå.
 
 **Log efter hvert punkt, ikke til sidst.**
 
-**Stop i tide.** Er du sidste kørsel, så sørg for at have plads tilbage til fase
+**Stop i tide.** Er du dagens hovedkørsel, så sørg for at have plads tilbage til fase
 2 og 3. De er vigtigere end ét punkt mere.
 
 ### Til allersidst i fase 1: virker det hele stadig sammen?
 
 Hvert punkt er testet for sig. Det siger intet om, hvad tre ændringer gør ved
-hinanden. Har du rørt noget som helst i nat, så kør en samlet prøve, FØR du går
+hinanden. Har du rørt noget som helst, så kør en samlet prøve, FØR du går
 videre:
 
 - `python3 -c "import ast;ast.parse(open('crawler.py',encoding='utf-8').read())"`
@@ -127,20 +184,20 @@ videre:
   dagens overblik vises, og et klik åbner en artikel.
 - Er der rørt ved kontrolpanelet: samme prøve på `_redaktion/kontrolpanel.html`.
 
-Fejler noget, så ret det, før du logger. En nat, der efterlader siden i stykker,
-er værre end en nat uden arbejde — Torben pusher om morgenen uden at læse koden.
+Fejler noget, så ret det, før du logger. En session, der efterlader siden i
+stykker, er værre end en session uden arbejde — Torben pusher om morgenen uden at læse koden.
 Skriv resultatet af den samlede prøve i loggen, også når alt er grønt.
 
 ## Fase 2 — Evaluér siden med friske øjne
 
-**Kun sidste kørsel.** Er du første kørsel, springer du fase 2 og 3 over, skriver
+**Kun sidste kørsel.** Er du første kørsel, springer du fase 2 og 3 over (men ALDRIG fase 0), skriver
 loggen for det, du nåede, sletter låsefilen og stopper.
 
-Tæl, hvor mange punkter der er klaret i nat i alt — også dem, første kørsel tog.
+Tæl, hvor mange punkter der er klaret i dag i alt — også dem, tidligere kørsler tog.
 Kald tallet N.
 
 Gå på jagt efter nye. Vælg et sted, der ikke har været gennemgået de seneste
-nætter — en side, en del af crawleren, en måling. Se på det som en læser.
+kørsler — en side, en del af crawleren, en måling. Se på det som en læser.
 
 **Du må skrive op til N nye punkter i køen. Du SKAL ikke skrive N.**
 
@@ -156,7 +213,7 @@ Torben tid og gør siden dårligere.
 
 Genåbn ikke noget fra "Klaret", medmindre du kan måle, at det er gået i stykker igen.
 
-## Fase 3 — Prioritér hele køen til næste nat
+## Fase 3 — Prioritér hele køen til næste kørsel
 
 Sortér **hele** køen om efter denne rækkefølge:
 
@@ -178,7 +235,7 @@ Skriv til sidst, hvad der nu står øverst — og én sætning om hvorfor række
 ## Loggen
 
 Efter hvert færdigt punkt: flyt det i `opgavekoe.md` ned under "Klaret" med dato,
-og skriv øverst i `nat-log.md`:
+og skriv øverst i `arbejdslog.md`:
 
 ```
 ## <dato> · <opgavens navn>
@@ -200,10 +257,10 @@ m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.skriv_hjerne_stat
 
 Den kræver ingen API-nøgle og rører kun de to panelfiler.
 
-Afslut natten med:
+Afslut med:
 
 ```
-### Nattens regnskab · <dato>
+### Sessionens regnskab · <dato>
 Klaret: <N> punkter. Nye i køen: <M> (<hvorfor færre end N, hvis M < N>).
 Gennemgik: <hvad du så på i fase 2>
 Øverst i køen nu: <punktet> — <én sætning om hvorfor>

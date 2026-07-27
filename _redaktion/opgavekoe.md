@@ -98,7 +98,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
 
-**Herunder: to punkter, natsessionen ikke må bygge, før Torben har besluttet.**
+**Herunder: to punkter, sessionen ikke må bygge, før Torben har besluttet.**
 
 - [ ] **`articles.json` er ikke et arkiv, men det tror resten af koden.** Målt
       26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
@@ -599,7 +599,7 @@ målestokken synligt, (3) gør siden mærkbart bedre, (4) undersøgelser.*
 
 ## Ting kun Torben kan gøre
 
-Disse venter på ham — natsessionen skal ikke forsøge dem:
+Disse venter på ham — sessionen skal ikke forsøge dem:
 
 - Læg `DEEPSEEK_API_KEY` i GitHub secrets, hvis DeepSeek skal overtage teksterne
 - Send besked til community@version2.dk om brug af deres RSS-feed

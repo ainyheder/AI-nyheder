@@ -199,7 +199,7 @@ button.k.fyldt:hover { opacity:.9; color:#fff; }
 .bund .tekst { font-size:13.5px; color:var(--svag); margin-right:auto; }
 .tom { background:var(--kort); border:1px dashed var(--linje); border-radius:14px; padding:34px; text-align:center; color:var(--svag); font-size:15px; }
 
-/* ---- Læsevisning af nat-loggen og gennemgangen -------------------------- */
+/* ---- Læsevisning af loggen og analysen -------------------------- */
 /* Loggen er lang. På en bred skærm er der plads til to spalter, og så halveres
    scrollen - hvert kort er selvstændigt, så man læser stadig ét ad gangen. */
 .modal.bred { max-width:min(1560px, 96vw); max-height:94vh; padding:24px 28px; }
@@ -375,10 +375,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     { navn: "YouTube", hvornaar: "op til 14 videoer pr. kørsel",
       trin: ["youtube"] },
     { navn: "Ud i verden", hvornaar: "max 2 opslag om dagen",
-      trin: ["opslag"] },
-    { navn: "Se på det hele bagefter", hvornaar: "én gang i døgnet",
-      ikke: [["Læsertal fra Cloudflare", "Hentes ind, så gennemgangen kan se hvad folk læser"]],
-      trin: ["gennemgang"] }
+      trin: ["opslag"] }
   ];
 
   function trinHtml(n) {
@@ -860,8 +857,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       ud.push({ id: "c" + i, gruppe: "Crawleren · hver time", nr: i + 1,
                 navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, trin: e.trin });
     });
-    NATETAPER.forEach(function (e, i) {
-      ud.push({ id: "n" + i, gruppe: "Natteloopet · hvert døgn", nr: i + 1,
+    LOOPETAPER.forEach(function (e, i) {
+      ud.push({ id: "n" + i, gruppe: "Arbejdsloopet · hvert døgn", nr: i + 1,
                 navn: e.navn, hvornaar: e.hvornaar, ikke: e.ikke, dok: e.dok });
     });
     var placeret = {};
@@ -897,7 +894,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
              '<div class="b">' + esc(k[1]) + "</div></div>";
     }).concat((e.trin || []).map(trinHtml)).concat((e.dok || []).map(dokHtml));
     var hjaelp = e.dok
-      ? "Gule kasser er dokumenter, du kan skrive i — de styrer natteloopet. Grå og stiplede skriver maskinen selv."
+      ? "Gule kasser er dokumenter, du kan skrive i — de styrer arbejdsloopet. Grå og stiplede skriver maskinen selv."
       : "Hvide kasser er AI-trin: klik for at skifte model eller instruks. Grå og stiplede er ikke AI.";
     rude.innerHTML = "<h1>" + esc(e.navn) + "</h1>" +
       '<p class="manchet">' + (e.hvornaar ? "<strong>" + esc(e.hvornaar) + "</strong> · " : "") +
@@ -972,21 +969,21 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     });
   }
 
-  // ---- Natteloopet: dokumenter i stedet for prompts ----
+  // ---- Arbejdsloopet: dokumenter i stedet for prompts ----
   var DOK = {};
-  (S.natteloop || []).forEach(function (d) { DOK[d.noegle] = d; });
+  (S.arbejdsloop || []).forEach(function (d) { DOK[d.noegle] = d; });
   var dokAendret = {};        // noegle -> ny tekst, kun i denne session
 
-  var NATETAPER = [
-    { navn: "Maskinen ser på siden", hvornaar: "én gang i døgnet",
-      ikke: [["Den natlige gennemgang", "Måler siden og læsertallene · gemini-3.6-flash — instruksen ligger i flowet ovenfor"]],
-      dok: ["maalestok"] },
-    { navn: "Den skriver, hvad der bør laves", hvornaar: "3 forslag + et GitHub-issue",
-      dok: ["kritik", "opgavekoe"] },
-    { navn: "Natsessionen laver det", hvornaar: "kl. 23:00 og 03:00",
-      dok: ["natsession"] },
-    { navn: "Du læser regnskabet om morgenen", hvornaar: "og pusher",
-      dok: ["natlog"] }
+  var LOOPETAPER = [
+    { navn: "Du siger, hvad du vil have", hvornaar: "når som helst",
+      ikke: [["Læsertal fra Cloudflare", "Rå tal om hvad folk læser — hentes af crawleren"]],
+      dok: ["oensker", "maalestok"] },
+    { navn: "Sessionen analyserer og planlægger", hvornaar: "fase 0, hver kørsel",
+      dok: ["analyse", "opgavekoe"] },
+    { navn: "Sessionen laver det", hvornaar: "efter tidsplan eller Kør nu",
+      dok: ["instruks"] },
+    { navn: "Du læser regnskabet", hvornaar: "og pusher",
+      dok: ["log"] }
   ];
 
   function dokTekst(k) {
@@ -996,7 +993,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     return dokAendret[k] !== undefined && DOK[k] && dokAendret[k] !== DOK[k].indhold;
   }
 
-  // ---- Markdown -> HTML, så nat-loggen kan læses i stedet for granskes ----
+  // ---- Markdown -> HTML, så loggen kan læses i stedet for granskes ----
   // Lille renderer med vilje: panelet åbnes ofte fra file://, hvor vi ikke kan
   // hente et bibliotek. Alt escapes FØR der sættes tags på, så en rubrik fra et
   // fremmed feed i loggen ikke kan finde på noget.
