@@ -44,10 +44,13 @@ forkert: en hel uges arbejde gik på sider med to visninger tilsammen.
       **Rammer: 440 visninger/7 dage (forsiden)** — det er alt, hvad der er.
       Ethvert andet punkt i denne kø forbedrer noget, som under 30 mennesker
       udefra ser om ugen.
-      *Formodning, ikke målt: sitemappene er aldrig indsendt i Google Search
-      Console, og det kan sessionen ikke gøre selv — se `## Venter på
-      redaktionen`. Men det er ikke sikkert, at det er hele forklaringen, og
-      resten kan måles herfra.*
+      *Målt 27.07 kl. 19:45 direkte i Search Console (chat-kørsel med
+      browseradgang): sitemap.xml var indsendt 22.07 (Succes, 30 sider), men
+      sitemap-artikler.xml og sitemap-videoer.xml var ALDRIG indsendt — Google
+      kendte ingen af de 132 artikel-/videosider. Begge er nu indsendt:
+      artikler = Succes/91 sider straks; videoer = "Kunne ikke hentes" (kendt
+      ventestatus lige efter indsendelse; XML verificeret gyldig). Næste
+      måling: GSC's Sider-rapport + laesertal.json om nogle dage.*
       *Punkt 10.*
 
 - [ ] **Dubletfangeren slår urelaterede historier sammen — 47 artikler er væk
@@ -223,12 +226,6 @@ det i køen; ellers noteres bare, at den holder. Sæt dagens dato på uanset hva
 Målt og forstået, men må ikke bygges, før nogen har taget stilling. De sorteres
 ikke med i køen, og sessionen skal ikke gætte svaret.
 
-- **Indsend sitemappene i Google Search Console.**
-  *Kun et menneske kan logge ind. Google sendte 4 besøg på syv dage til en side
-  med 215 sider og tre sitemaps — det er det billigste sted at lede efter en
-  forklaring. Adresserne står i `robots.txt`. Sessionen kan ikke selv oprette
-  konti eller acceptere vilkår.*
-
 - **Skal `articles.json` blive et rigtigt 30-dages-arkiv?**
   *Spørgsmålet: forsiden ville vise mærkbart flere artikler, arkivet ville veje
   ~7× mere (435–460 kB mod 62 kB i dag), og 35 genoplivede artikler ville koste
@@ -289,6 +286,13 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **Indsend sitemappene i Google Search Console.** *(27.07.2026, ekstra
+      kørsel i chat)* Chat-sessionen har adgang til redaktionens browser og
+      målte i stedet for at gætte: sitemap.xml var indsendt 22.07, men
+      sitemap-artikler.xml (91 sider) og sitemap-videoer.xml (41 sider) var
+      aldrig indsendt. Begge indsendt; artikler gik straks til Succes/91.
+      Effekten måles i GSC's Sider-rapport og laesertal.json. *Punkt 10.*
 
 - [x] **Er dagens overblik virkelig dagens vigtigste fem?** *(målt 27.07.2026 i
       fase 2)* **Ja — intet at rette.** `lav_dagens_brief` tilbyder AI'en de 12

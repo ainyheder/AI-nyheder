@@ -45,7 +45,47 @@ det eneste punkt i køen, der er i stykker for læseren lige nu.
 nogle af de 22 par faktisk *var* dubletter. Jeg har stikprøvet, ikke læst dem
 alle. Det er værd at kigge på, før nogen bygger.
 
+**Ekstra kørsel 19:45 (chat):** klarede 1 punkt mere — de to manglende sitemaps er nu indsendt i Search Console.
+
 ---
+
+## 2026-07-27 (ekstra kørsel kl. 19:45, chat) · To af tre sitemaps var aldrig indsendt i Search Console
+
+**Fandt:** Køens øverste punkt gættede på, at sitemappene aldrig var indsendt.
+Målt direkte i Search Console (chat-sessionen har adgang til redaktionens
+browser, hvor GSC er logget ind — det kan de planlagte kørsler ikke):
+**sitemap.xml VAR indsendt 22.07** (status Succes, 30 sider, sidst læst 27.07),
+men **sitemap-artikler.xml (91 sider) og sitemap-videoer.xml (41 sider) var
+aldrig indsendt**. Google har altså i al den tid kun fået besked om de 30
+rodsider — ingen af de 132 artikel- og videosider, som er præcis dem, en
+søgning skulle lande på. Det forklarer sandsynligvis en stor del af "4 besøg
+fra Google på en uge".
+
+**Gjorde:** Indsendte begge i GSC (ejendommen sc-domain:ainyheder.com under
+redaktionens anden Google-konto, authuser=1). `sitemap-artikler.xml` gik
+direkte til **Succes, 91 registrerede sider**. `sitemap-videoer.xml` står som
+"Kunne ikke hentes" umiddelbart efter indsendelsen — XML'en er verificeret
+gyldig (41 <loc>, HTTP 200), og statussen er GSC's kendte venteposition, før
+første crawl er kørt. Ingen filer i repoet er ændret.
+
+**Testede:** Live-tjek før og efter: forsiden 200, articles.json gyldig og
+identisk med disken (110 artikler), alle tre sitemaps HTTP 200.
+`sitemap-videoer.xml` parset som XML: gyldig, 41 URL'er. Skærmbillede af
+GSC-listen efter: artikler = Succes/91, sitemap.xml = Succes/30.
+
+**Til redaktionen:** 1) Tjek om nogle dage, at sitemap-videoer.xml er skiftet
+til Succes, og at GSC's "Sider"-rapport begynder at vise indekserede
+artikelsider — det er målingen på, om det her virkede. 2) Punktet "Indsend
+sitemappene" under *Venter på redaktionen* er hermed udført og flyttet til
+Klaret. 3) Ingen kode er rørt; samlet prøve og uafhængig gennemgang er derfor
+ikke kørt. 4) Chat-miljøet kan ikke slette filer i mappen, så
+`.koerer` er i stedet sat til år 2000 — det læses som en efterladt lås, og
+næste kørsel overtager den bare. Låsen var i øvrigt overtaget fra
+18:40-sessionen, der døde, da kontoens forbrug slap op — med Torbens ord i
+chatten.
+
+---
+
 
 ## 2026-07-27 · 7 gode artikler var usynlige for Google — og viste gamle rubrikker
 
