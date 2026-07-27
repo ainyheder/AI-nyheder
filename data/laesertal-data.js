@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-27T19:05:44.584938+00:00",
+ "opdateret": "2026-07-27T22:47:38.914391+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      2,
      3,
      3,
-     6
+     7
     ]
    },
    {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     0,
+     1,
      29
     ]
    },
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      6,
      1,
      1,
-     7
+     8
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      4,
      0,
      0,
-     2
+     3
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 259,
- "sidevisninger_i_alt": 734,
+ "besoeg_i_alt": 261,
+ "sidevisninger_i_alt": 738,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 244,
-   "visninger": 454
+   "besoeg": 246,
+   "visninger": 456
   },
   {
    "sti": "/tak.html",
@@ -301,6 +301,11 @@ window.LAESERTAL = {
   {
    "sti": "/about",
    "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "besoeg": 0,
    "visninger": 1
   },
   {
@@ -369,6 +374,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/719e63d03733035f.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/guide-sikkerhed.html",
    "besoeg": 0,
    "visninger": 3
@@ -382,7 +392,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 233
+   "besoeg": 235
   },
   {
    "fra": "l.facebook.com",
@@ -410,8 +420,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 221,
-    "visninger": 221
+    "besoeg": 223,
+    "visninger": 223
    },
    {
     "fra": "herfra selv",
@@ -429,12 +439,12 @@ window.LAESERTAL = {
     "visninger": 4
    },
    {
-    "fra": "m.facebook.com",
+    "fra": "www.facebook.com",
     "besoeg": 3,
     "visninger": 3
    },
    {
-    "fra": "www.facebook.com",
+    "fra": "m.facebook.com",
     "besoeg": 3,
     "visninger": 3
    }
@@ -537,6 +547,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/8756b60eb8fa9e43.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/prompts.html": [
    {
     "fra": "herfra selv",
@@ -622,6 +639,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/7280fe4d8d9af175.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/719e63d03733035f.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -817,6 +841,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI-firmaer pumper penge i lobbyarbejde i USA",
+   "kategori": "Politik & jura",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/c13d67073208cf10.html",
    "besoeg": 0,
    "visninger": 1,
@@ -875,6 +914,21 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
+  },
+  {
+   "sti": "/artikel/719e63d03733035f.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI tager ikke alle job - endnu",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-25",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
   }
  ],
  "laeste_temaer": [
@@ -888,6 +942,10 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
+   "visninger": 2
+  },
+  {
+   "navn": "Politik & jura",
    "visninger": 1
   }
  ]

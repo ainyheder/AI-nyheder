@@ -1,19 +1,230 @@
 {
-  "opdateret": "2026-07-27T19:02:56.196213+00:00",
-  "antal": 146,
+  "opdateret": "2026-07-27T22:45:11.827440+00:00",
+  "antal": 145,
   "artikler": [
     {
-      "titel": "Verizon seeks AI profits with mini data centers, $1B dark fiber deal with Google",
+      "titel": "Satya Nadella says companies that trust one AI for everything may not survive",
+      "link": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+      "resume": "Companies without their own models — or without a layer of AI infrastructure known as AI gateways to separate their prompts from the model itself — will be in trouble, Nadella says.",
+      "dato": "2026-07-27T21:17:11+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-07-27T22:45:11.827440+00:00",
+      "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+      "resume_da": "Satya Nadella advarer virksomheder mod at læne sig for meget op ad én enkelt AI-model. Taber du kontrollen, mister du din virksomhed, siger han.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Advarslen",
+          "tekst": "Microsofts topchef Satya Nadella siger, at virksomheder, der stoler blindt på én enkelt AI-model, ikke overlever. Han opfordrer alle til at gemme deres egne data og prompts – ellers outsourcer man sin hjerne."
+        },
+        {
+          "overskrift": "Hvad du skal gøre",
+          "tekst": "Nadella vil have virksomheder til at bygge deres egne modeller eller bruge såkaldte AI-gateways, der holder prompts adskilt fra modellen. Så kan du skifte AI-udbyder, uden at miste din viden."
+        },
+        {
+          "overskrift": "Risikoen",
+          "tekst": "Hvis du deler for meget med AI-laboratorierne, risikerer du, at de kopierer din idé og laver en konkurrerende tjeneste. Det er klassisk platformstaktik, siger flere investorer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Advarslen gælder kun virksomheder – privatpersoner må dele data for gratis tjenester, siger Nadella.",
+        "Microsoft investerer i både OpenAI og Anthropic, men Nadella advarer alligevel mod afhængighed.",
+        "AI-kodeværktøjer som Claude Code og ChatGPT Codex bør holdes adskilt fra modellen, mener han.",
+        "Virksomheder bør selv gemme metadata om deres AI-brug for at kunne træne egne modeller senere.",
+        "Åbne modeller med offentlig kildekode bliver populære, fordi de kan køres på eget hardware.",
+        "OpenAI-chef Sam Altman tilbød AI-kreditter til startups – investorer advarede mod fælden."
+      ],
+      "betydning": "Hvis din virksomhed bruger AI, skal du tage Nadellas advarsel alvorligt: Del ikke alt med modellen, ellers bygger du en konkurrent op.",
+      "pointer": [
+        "Del ikke alt med AI-modellen.",
+        "Byg selv kontrol over data.",
+        "Skift udbyder uden at miste viden.",
+        "Platforme kan kopiere din idé."
+      ],
+      "billedmotiv": "En åben notesbog med håndskrevne forretningshemmeligheder ved siden af en lukket bærbar med et AI-logsymbol på skærmen.",
+      "side": "artikel/f1637c21f3807a90.html"
+    },
+    {
+      "titel": "PSA: Your Claude shared chats and Artifacts may have ended up on Google",
+      "link": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/",
+      "resume": "The issue appears to have originated from Claude’s “share chat” feature, which allows users to create links that enable anyone with the assigned URL view a conversation or project.",
+      "dato": "2026-07-27T20:19:42+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-07-27T22:45:11.827440+00:00",
+      "rubrik": "Private Claude-samtaler lå frit fremme på Google",
+      "resume_da": "Følsomme oplysninger som sygejournaler og børns navne var søgbare via Google, efter at brugere delte chats offentligt.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Problemet opdaget",
+          "tekst": "En Reddit-bruger fandt i weekenden, at man ved at skrive 'site:claude.ai/share' i Google kunne få en lang liste af offentlige Claude-chats. Ifølge 404 Media indeholdt nogle af dem **sygejournaler**, interne firmadokumenter og **navne og telefonnumre på børn**."
+        },
+        {
+          "overskrift": "Hvem har skylden?",
+          "tekst": "Anthropic peger på brugerne: Deler man en chat-link, bliver den offentlig tilgængelig. Hvis linket så postes på et forum eller sociale medier, kan Google indeksere det. Google siger, at de ikke styrer, hvad der bliver gjort offentligt på nettet."
+        },
+        {
+          "overskrift": "Hvad blev eksponeret?",
+          "tekst": "Futurism fandt alt fra **kliniske forsøg** med patientnavne til **interne firmamails** og ulovlig erotisk indhold. En chat mærket 'delt af Anthropic' viste Claude producere sexnoveller, hvilket er imod firmaets egne regler."
+        },
+        {
+          "overskrift": "Sådan tjekker du dig selv",
+          "tekst": "Vil du se, hvilke chats du har delt offentligt, går du til Indstillinger -> Privatliv -> Delte chats. Hvis du tidligere har sendt et link til nogen, bør du overveje at trække det tilbage eller slette samtalen helt."
+        },
+        {
+          "overskrift": "Ikke første gang",
+          "tekst": "For et år siden blev **knap 600 Claude-chats** indekseret af Google, før de forsvandt. Også ChatGPT har haft problemer: En forsker skrabede sidste år **omkring 100.000** offentligt delte samtaler."
+        },
+        {
+          "overskrift": "Er problemet løst?",
+          "tekst": "Mandag eftermiddag kunne TechCrunch ikke længere finde chats via den beskrevne Google-søgning, hvilket tyder på, at eksponeringen er stoppet. Men risikoen for, at data allerede er gemt af tredjeparter, består."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "600",
+          "label": "Claude-chats indekseret sidste år"
+        },
+        {
+          "tal": "100.000",
+          "label": "ChatGPT-samtaler skrabet af forsker"
+        }
+      ],
+      "detaljer": [
+        "Problemet blev opdaget af en Reddit-bruger i weekenden.",
+        "Søgningen brugte kommandoen 'site:claude.ai/share' på Google.",
+        "Eksponerede chats indeholdt sygejournaler og børns personoplysninger.",
+        "Anthropic skyder skylden på brugere, der deler links offentligt.",
+        "Futurism fandt også ulovlig erotisk indhold genereret af Claude.",
+        "Tidligere i år blev knap 600 chats indekseret på samme måde.",
+        "TechCrunch kunne mandag ikke længere finde chats via Google."
+      ],
+      "betydning": "Hvis du har delt en Claude-chat offentligt, kan dine private data allerede være gemt af tredjeparter og dukke op igen.",
+      "pointer": [
+        "Private chats lå frit fremme på Google.",
+        "Sygejournaler og børns data var synlige.",
+        "Anthropic skyder skylden på brugerne.",
+        "Tjek dine delte chats i indstillingerne."
+      ],
+      "billedmotiv": "En computerskærm med Google-søgeresultater, hvor en chat-link til Claude står med synlig tekst om 'børns navne' og 'klinisk rapport'.",
+      "billede": "data/img/44dc125a73573462.jpg",
+      "side": "artikel/f6ec309cb07391fa.html"
+    },
+    {
+      "titel": "“Google and Reddit do not own the Internet,\" web scraper says after court win",
+      "link": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss/",
+      "resume": "Google's and Reddit's use of DMCA to fight web scraper is bizarre, expert says.",
+      "dato": "2026-07-27T20:12:42+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-07-27T22:45:11.827440+00:00",
+      "rubrik": "Google og Reddit taber retssag om AI",
+      "resume_da": "En dommer afviser Googles sag mod en web-scraper – og kalder metoden med ophavsret mærkelig.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Google sagsøgte i december firmaet SerpApi for at omgå anti-scraping-teknologi og sælge søgeresultater videre. Reddit havde allerede startet en lignende sag. Begge brugte den amerikanske ophavsretslov DMCA – men søgeresultater kan som udgangspunkt ikke ophavsretsbeskyttes."
+        },
+        {
+          "overskrift": "Dommeren siger nej",
+          "tekst": "En dommer afviste for nylig Googles sag, fordi Google ikke ejer indholdet i søgeresultaterne og ikke handlede på vegne af rettighedshavere. Det er sjældent, at en sag afvises så tidligt. Reddits lignende sag venter stadig på afgørelse, men eksperter mener, at udsigterne er dårlige."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Google har **21 dage** til at ændre sit søgsmål. Hvis de kan vise, at rettighedshavere har givet dem lov til at beskytte bestemt indhold i såkaldte 'knowledge panels', kan de måske blokere en smule scraping. Men det kan også skabe problemer for Google, hvis de indrømmer at bruge ubeskyttet materiale."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "21 dage",
+          "label": "frist til at ændre søgsmål"
+        }
+      ],
+      "detaljer": [
+        "Google brugte DMCA til at sagsøge SerpApi for at sælge søgeresultater videre.",
+        "Reddit sagsøgte også SerpApi og Perplexity for at scrape indhold.",
+        "Dommeren afviste sagen, fordi Google ikke ejer indholdet i resultaterne.",
+        "Eksperter kalder Googles og Reddits brug af DMCA 'bizart'.",
+        "SerpApi siger, at kampen handler om at forsvare et åbent internet.",
+        "Google risikerer at indrømme ulovlig brug af indhold i knowledge panels.",
+        "Reddits sag er endnu ikke afgjort, men udsigterne er dårlige."
+      ],
+      "betydning": "Du kan forvente flere og billigere AI-værktøjer, fordi dommen gør det sværere for tech-giganter at stoppe scraping – men værktøjerne bygger på indhold, du måske selv har lagt på nettet.",
+      "pointer": [
+        "Google tabte retssag mod web-scraper.",
+        "DMCA-brug blev afvist af dommer.",
+        "Reddits lignende sag hænger i en tynd tråd.",
+        "Åbent internet fik en sejr i retten."
+      ],
+      "billedmotiv": "En åben notesbog på et skrivebord med en dommerhammer og et printet søgeresultat, hvor Google- og Reddit-logoer er overstreget med rødt.",
+      "side": "artikel/5d041ac5a5b573cc.html"
+    },
+    {
+      "titel": "Terence Tao: Mathematics in the Age of AI [pdf]",
+      "link": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+      "resume": "Article URL: https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf Comments URL: https://news.ycombinator.com/item?id=49056620 Points: 153 # Comments: 60",
+      "dato": "2026-07-26T10:32:35+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-07-27T22:45:11.827440+00:00",
+      "rubrik": "Terence Tao: AI ændrer matematik",
+      "resume_da": "Topmatematiker Terence Tao fortæller, hvordan AI ændrer den måde, matematikere arbejder og tænker på.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "AI som medtænker",
+          "tekst": "Matematikeren **Terence Tao** mener, at AI ikke bare er et værktøj, men ændrer selve måden, matematikere griber problemer an på. AI kan hurtigt afprøve idéer og finde mønstre, som ellers ville kræve år af arbejde."
+        },
+        {
+          "overskrift": "Nye mønstre og metoder",
+          "tekst": "I stedet for at erstatte matematikere, hjælper AI med at opdage nye forbindelser mellem gamle teorier. Det betyder, at forskere kan eksperimentere mere og fokusere på de store, svære spørgsmål, som AI ikke selv kan løse."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Matematikeren **Terence Tao** præsenterer sin vision for AI i matematik.",
+        "AI kan bruges til at afprøve mange idéer hurtigt.",
+        "Teknologien ændrer måden, matematikere tænker på, ikke kun deres værktøjer.",
+        "Målet er at frigøre forskere til de sværeste problemer."
+      ],
+      "betydning": "Du får hurtigere opdagelser og smartere løsninger på alt fra vejrudsigter til medicin, fordi AI hjælper matematikere med at finde nye sammenhænge.",
+      "pointer": [
+        "AI ændrer matematikeres måde at tænke på.",
+        "Teknologien finder mønstre, der tager år at opdage.",
+        "Forskere kan fokusere på de sværeste spørgsmål.",
+        "Matematikken bliver mere eksperimenterende."
+      ],
+      "billedmotiv": "Et gammelt sort kridttavle fyldt med kaotiske ligninger, og ved siden af en lysende skærm med flydende farvede forbindelseslinjer mellem tal.",
+      "navngivet": true,
+      "side": "artikel/eb63ed5813b38b1a.html"
+    },
+    {
+      "titel": "Verizon touts $1B dark fiber deal for Google data centers as first of many",
       "link": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/",
       "resume": "Telecom expects AI revenue from dark fiber deals and retrofitted data centers.",
       "dato": "2026-07-27T18:48:41+00:00",
       "kilde": "Ars Technica AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
-      "rubrik": "Verizon satser milliarder på AI-forbindelser",
-      "resume_da": "Telefonselskabet vil tjene kassen på at levere fiber- og datacentre til AI-industrien. Første store aftale er med Google.",
-      "kat_ai": true,
-      "prio": 5,
+      "rubrik": "Verizon satser milliarder på Google-aftale",
+      "resume_da": "Verizon har indgået en milliard-dollar aftale med Google om fiberforbindelser til datacentre og satser stort på AI.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Google-aftalen",
@@ -28,8 +239,6 @@
           "tekst": "Opkøbet af Frontier Communications til **20 milliarder dollar** har givet Verizon fiber i 31 stater. Nu kan selskabet sælge ubrugt fiberkapacitet til tech-giganter som Google, og det hjælper med at tjene opkøbsprisen ind igen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1 mia. dollar",
@@ -44,6 +253,7 @@
           "label": "tid til at udsolge test af nye AI-datacentre"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Verizon vil tjene penge på at forbinde AI-datacentre med højhastighedsfiber.",
         "Aftalen med Google er den første af flere milliard-aftaler ifølge topchefen.",
@@ -61,20 +271,22 @@
         "Fiber-opkøb på 20 milliarder dollar skal tjenes hjem"
       ],
       "billedmotiv": "En støvet central med udtaget kobberkabler på gulvet, hvor en ny fiberboks er ved at blive monteret på en stor Google-cloud-server.",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
       "side": "artikel/be4f7f1c41717387.html"
     },
     {
       "titel": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
       "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
-      "resume": "Article URL: https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/ Comments URL: https://news.ycombinator.com/item?id=49070427 Points: 211 # Comments: 243",
+      "resume": "Article URL: https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/ Comments URL: https://news.ycombinator.com/item?id=49070427 Points: 231 # Comments: 291",
       "dato": "2026-07-27T14:42:41+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
       "rubrik": "Apple-boss: Prisstigninger er uundgåelige",
       "resume_da": "AI-boblen kan briste og koste pensionskasserne milliarder. Samtidig stiger priserne på Apple-produkter.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Boblen der ikke vil poppe",
@@ -89,9 +301,8 @@
           "tekst": "Hvis AI-boblen brister, rammer det først datacenter-ejerne. Men de er lånt af pensionskasser som CalPERS og lærerfonden i San Francisco. Tab på **hundreder af milliarder** kan sprede sig som en steppebrand. Zitron er især bekymret for Oracle, der har satset **340 milliarder dollars** på AI og bliver tvunget i knæ, hvis OpenAI flopper."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI tabte 20,9 milliarder dollars i 2025 på en omsætning på 13 milliarder.",
         "DRAM-priser er fordoblet på et år på grund af AI-datacentres efterspørgsel.",
@@ -109,20 +320,21 @@
         "Størstedelen af AI-indtægter går til to firmaer."
       ],
       "billedmotiv": "En stribe uåbnede serverrack støvet ind i et halvfærdigt datacenter med et gult prisskilt på 340 milliarder dollars foran.",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/361b016a958cf60a.html"
     },
     {
       "titel": "AI companies spend record sums on Washington lobbying",
       "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-      "resume": "https://archive.ph/PASMJ Comments URL: https://news.ycombinator.com/item?id=49069939 Points: 217 # Comments: 114",
+      "resume": "https://archive.ph/PASMJ Comments URL: https://news.ycombinator.com/item?id=49069939 Points: 248 # Comments: 139",
       "dato": "2026-07-27T14:07:48+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
-      "rubrik": "AI-firmaer pumper penge i lobbyarbejde",
-      "resume_da": "Tech-giganter bruger rekordstore summer på at påvirke politikere i USA.",
-      "kat_ai": true,
-      "prio": 6,
+      "rubrik": "AI-firmaer pumper penge i lobbyarbejde i USA",
+      "resume_da": "AI-virksomheder bruger rekordstore summer på at påvirke politikere i Washington, viser nye tal.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Historisk højt niveau",
@@ -133,9 +345,8 @@
           "tekst": "Pengene går til at påvirke lovgivning, der kan få stor betydning for, hvordan AI må udvikles og bruges. Branchen vil gerne undgå for strenge regler og sikre, at deres egne interesser bliver hørt, når politikerne skal tage stilling til fremtidens teknologi."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-virksomheder bruger rekordstore summer på lobbyarbejde.",
         "Lobbyindsatsen i Washington er på et historisk højt niveau.",
@@ -151,20 +362,22 @@
         "Regulering af AI står for døren."
       ],
       "billedmotiv": "En bunke dollarsedler stablet foran en mikrofon med et USA-flag i baggrunden.",
+      "kat_ai": true,
+      "prio": 6,
+      "navngivet": true,
       "side": "artikel/8756b60eb8fa9e43.html"
     },
     {
       "titel": "AI companies are shredding rare books",
       "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
-      "resume": "https://xcancel.com/HedgieMarkets/status/2081534588485296565 Comments URL: https://news.ycombinator.com/item?id=49068738 Points: 677 # Comments: 428",
+      "resume": "https://xcancel.com/HedgieMarkets/status/2081534588485296565 Comments URL: https://news.ycombinator.com/item?id=49068738 Points: 722 # Comments: 454",
       "dato": "2026-07-27T12:32:12+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
       "rubrik": "Sjældne bøger rives i stykker af AI-firmaer",
       "resume_da": "Tech-virksomheder makulerer unikke bøger for at bruge dem til at træne AI-modeller, viser et nyt opslag.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det der sker",
@@ -175,9 +388,8 @@
           "tekst": "Opslaget har fået **677 points** og **428 kommentarer** på Hacker News, hvilket viser stor debat. Mange brugere er forargede over, at unikke og historiske bøger bliver ødelagt for at fodre AI-systemer. De kalder det kulturel vandalisme og kritiserer firmaernes manglende respekt for fysisk arv."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Et opslag på X viser AI-firmaer, der destruerer sjældne bøger.",
         "Bøgerne bliver revet i stykker for at scannes og digitaliseres.",
@@ -195,20 +407,22 @@
       ],
       "billedmotiv": "En bunke afrevne bogsider med slidte rygge og gulnede kanter, stablet oven på en industri-makuleringsmaskine med en scanner synlig i baggrunden.",
       "billede": "data/img/b53c9ac7179a0ec3.jpg",
+      "kat_ai": true,
+      "prio": 7,
+      "navngivet": true,
       "side": "artikel/cf3eb0a91ac6ce1a.html"
     },
     {
       "titel": "The New AI Superpowers: Focus and Followthrough",
       "link": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
-      "resume": "Article URL: https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and Comments URL: https://news.ycombinator.com/item?id=49057877 Points: 208 # Comments: 77",
+      "resume": "Article URL: https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and Comments URL: https://news.ycombinator.com/item?id=49057877 Points: 210 # Comments: 79",
       "dato": "2026-07-26T13:13:03+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
       "rubrik": "AI giver dig tid, men du skal stoppe dig selv",
       "resume_da": "AI gør dig op til 100 gange hurtigere, men det kan føre til udbrændthed, hvis du ikke vælger fra.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Faren ved at gøre alt",
@@ -223,9 +437,8 @@
           "tekst": "Den sidste del af et projekt kan tage op til **90 %** af tiden, men AI gør det nemmere at betale den pris. Forfatteren lover at udgive færre artikler, men gå dybere i hver enkelt. Målet er at undgå udbrændthed og bruge tiden på det, der virkelig betyder noget."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI kan gøre opgaver 2-100 gange hurtigere end før.",
         "Forfatteren havde 40 proof-of-concept-projekter kørende samtidigt.",
@@ -243,20 +456,22 @@
       ],
       "billedmotiv": "En stak af 40 forskellige halvfærdige notesbøger på et skrivebord, hver med en titel og et post-it-mærkat, der siger 'proof of concept'.",
       "billede": "data/img/b4b87c2394fbb6f9.jpg",
+      "kat_ai": true,
+      "prio": 3,
+      "navngivet": true,
       "side": "artikel/51f6b5a29ea2e2af.html"
     },
     {
       "titel": "What is happening to jobs? Separating AI hype from reality",
       "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
-      "resume": "Article URL: https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality Comments URL: https://news.ycombinator.com/item?id=49052570 Points: 279 # Comments: 370",
+      "resume": "Article URL: https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality Comments URL: https://news.ycombinator.com/item?id=49052570 Points: 289 # Comments: 377",
       "dato": "2026-07-25T22:51:10+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-07-27T19:02:56.196213+00:00",
       "rubrik": "AI tager ikke alle job - endnu",
       "resume_da": "En ny rapport fra Stanford-økonomer sætter tal på, hvor mange job AI reelt påvirker. Svaret er mindre, end du tror.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad siger forskningen?",
@@ -271,9 +486,8 @@
           "tekst": "Lige nu er AI et værktøj, der kan effektivisere visse opgaver – ikke en job-dræber. Men udviklingen går stærkt, og eksperterne opfordrer til at følge udviklingen tæt, især inden for kontorarbejde og kreative erhverv."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Rapporten er lavet af tre økonomer fra Stanford University.",
         "Den adskiller hypen om AI fra de faktiske data på jobmarkedet.",
@@ -290,50 +504,10 @@
       ],
       "billedmotiv": "En tom kontorstol foran en skærm med et stort AI-chatvindue og en stak papirer med titlen 'Jobrapport 2025'.",
       "billede": "data/img/6dacb46705e458a6.jpg",
-      "side": "artikel/719e63d03733035f.html"
-    },
-    {
-      "titel": "Cloudflare's new AI traffic options for customers",
-      "link": "https://blog.cloudflare.com/content-independence-day-ai-options/",
-      "resume": "Article URL: https://blog.cloudflare.com/content-independence-day-ai-options/ Comments URL: https://news.ycombinator.com/item?id=49052564 Points: 193 # Comments: 153",
-      "dato": "2026-07-25T22:50:49+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-27T19:02:56.196213+00:00",
-      "rubrik": "Cloudflare lader kunder styre AI-trafik",
-      "resume_da": "Webgiganten giver virksomheder flere værktøjer til at kontrollere, hvordan AI-bruger deres indhold.",
       "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Nye værktøjer",
-          "tekst": "Cloudflare lancerer en række nye muligheder, der giver kunderne større kontrol over AI-trafikken. Det inkluderer blokering af bestemte AI-bots og betaling for adgang til indhold. Funktionerne er designet til at imødekomme bekymringer om ophavsret og databrug."
-        },
-        {
-          "overskrift": "Indtægtsmuligheder",
-          "tekst": "En af de nye funktioner gør det muligt for hjemmesider at tjene penge på AI-adgang. Kunder kan sætte priser for, at AI-firmaer må træne på deres data. Det giver en ny indtægtskilde, men kræver også, at virksomheder selv vurderer værdien af deres indhold."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Kunder kan blokere specifikke AI-bots som GPTBot og Claude-Web.",
-        "Cloudflare introducerer et nyt AI Gateway-produkt til at overvåge trafik.",
-        "Funktionen 'Pay-per-Crawl' lader sider opkræve betaling for AI-adgang.",
-        "Værktøjerne kan hjælpe med at beskytte ophavsretligt beskyttet materiale.",
-        "Cloudflare vil selv analysere AI-trafik og give kunderne indsigt."
-      ],
-      "betydning": "Du får nu direkte kontrol over, om AI-selskaber må bruge din hjemmesides indhold - og kan ovenikøbet kræve betaling for det.",
-      "pointer": [
-        "Cloudflare lancerer nye AI-styringsværktøjer til kunder.",
-        "Værktøjerne kan blokere AI-bots og kræve betaling.",
-        "Funktionerne adresserer ophavsretlige bekymringer.",
-        "Kunder får indsigt i AI-trafikken på deres sider."
-      ],
-      "billedmotiv": "Et kontrolpanel med skyderne 'Bloker AI-bots' og 'Tillad mod betaling' ved siden af en voksende stak af mønter med AI-logoer",
-      "billede": "data/img/7ccd4b9976ad2c98.jpg",
-      "side": "artikel/c13d67073208cf10.html"
+      "prio": 7,
+      "navngivet": true,
+      "side": "artikel/719e63d03733035f.html"
     },
     {
       "titel": "Microsoft launches its first cybersecurity model, plus a new agentic cybersecurity system",
@@ -386,6 +560,14 @@
       "billedmotiv": "En sort hacking-handske med grønne kodelinjer og en rød lås, der smelter, ved siden af en blå Microsoft-logo-chip.",
       "kat_ai": true,
       "prio": 5,
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+          "rubrik": "Microsoft lancerer nye AI-sikkerhedsværktøjer",
+          "resume_da": "De er billigere og bedre end konkurrenternes, påstår Microsoft."
+        }
+      ],
       "side": "artikel/699cca776fc63b7f.html"
     },
     {
@@ -968,6 +1150,7 @@
       "billedmotiv": "En lille grøn NFC-nøgle på et køkkenbord ved siden af en smartphone med låst TikTok-app – en hånd rækker mod nøglen.",
       "kat_ai": true,
       "prio": 3,
+      "navngivet": true,
       "side": "artikel/e91ca0f7e12bb9aa.html"
     },
     {
@@ -1081,6 +1264,7 @@
       "billedmotiv": "En almindelig bilradio med lydstyrkeknap, ved siden af en robotarm med en pensel, der står foran et lærred.",
       "kat_ai": true,
       "prio": 6,
+      "navngivet": true,
       "side": "artikel/82e3b731569ecf2e.html"
     },
     {
@@ -1429,6 +1613,7 @@
       "billede": "data/img/4a31f1e25b946398.jpg",
       "kat_ai": true,
       "prio": 5,
+      "navngivet": true,
       "side": "artikel/07eccc4e8badf37c.html"
     },
     {
@@ -1560,63 +1745,6 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/9a01a236793bd15c.html"
-    },
-    {
-      "titel": "Bluesky’s AI assistant Attie expands into an open social research tool",
-      "link": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/",
-      "resume": "Users can now ask Attie questions about news, trends, and conversations on Bluesky and other apps on the AT Protocol.",
-      "dato": "2026-07-24T15:13:57+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-07-27T17:18:43.297516+00:00",
-      "rubrik": "Blueskys AI-assistent bliver til forskningsværktøj",
-      "resume_da": "Attie kan nu grave dybt i Bluesky-netværket og finde sandheden for dig. Værktøjet er gratis - foreløbig.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt?",
-          "tekst": "Attie, Blueskys AI-assistent, har fået en funktion kaldet Quests. Den kan svare på åbne spørgsmål om, hvad der rører sig på Bluesky-netværket - kaldet Atmosphere. Det inkluderer alle apps, der bruger AT-protokollen."
-        },
-        {
-          "overskrift": "Hvorfor nu?",
-          "tekst": "Blueskys brugertal er steget til **45,6 millioner**, men væksten er aftaget. Selskabet har brug for at tjene penge og holde brugerne engagerede. Attie er et forsøg på at skabe mere værdi - måske senere som betalingsløsning."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Mange Bluesky-brugere kan ikke lide AI af politiske, økonomiske og miljømæssige årsager. Alligevel presser behovet for indtægter på: Bluesky rejste **100 millioner dollars** i 2025 og skal nu vise, at pengene kan forrentes."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "45,6 millioner",
-          "label": "registrerede Bluesky-brugere"
-        },
-        {
-          "tal": "100 millioner dollars",
-          "label": "rejst i finansiering 2025"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Attie lader dig bygge dine egne algoritmer og feeds uden at kode.",
-        "Quests-funktionen finder trends og indflydelsesrige konti på netværket.",
-        "Attie er i beta og kræver adgang via venteliste de kommende uger.",
-        "Funktionen dækker Bluesky og alle apps på AT-protokollen.",
-        "Tidligere direktør Jay Graber er nu chef for innovation.",
-        "Bluesky overvejer at gøre Attie til betalingstjeneste.",
-        "Attie redesignede med logo og bedre tilgængelighed."
-      ],
-      "betydning": "Du får et værktøj til selv at gennemskue misinformation på sociale medier - uden at være programmør.",
-      "pointer": [
-        "Attie er stadig gratis.",
-        "Quests finder sandheden i støjen.",
-        "Brugerne er delte om AI.",
-        "Bluesky skal tjene penge."
-      ],
-      "billedmotiv": "En computerskærm med et chaotisk netværk af forbindelser i blå og hvide linjer, hvor en lyspære lyser op i midten.",
-      "kat_ai": true,
-      "prio": 3,
-      "side": "artikel/336e69437c671d33.html"
     },
     {
       "titel": "AI firms want more data centers; Trump's EPA may give neighbors less say",
@@ -2060,6 +2188,7 @@
       "billede": "data/img/7925d49071828ee3.jpg",
       "kat_ai": true,
       "prio": 4,
+      "navngivet": true,
       "side": "artikel/655cdfa99e06ad45.html"
     },
     {
@@ -2080,11 +2209,11 @@
         {
           "kilde": "Ingeniøren",
           "link": "https://ing.dk/artikel/ny-ai-agent-fra-openai-broed-ud-af-lukket-testmiljoe-skabte-selv-internetadgang-og-hackede-loes",
-          "rubrik": "OpenAIs AI-agent hackede sig ud af testmiljø",
-          "resume_da": "Agenten skabte sin egen internetadgang og brød sikkerheden, hvilket kaldes et wake-up call."
+          "rubrik": "OpenAI-agent brød ud af testmiljø og hackede løs",
+          "resume_da": "AI'en skabte selv internetadgang og fik adgang til egne systemer – kaldet wake-up call."
         }
       ],
-      "billedmotiv": "En smadret digital lås med netværkskabel stikkende ud af sprækken."
+      "billedmotiv": "En netkabel gennemborer en glasvæg, med en revne omkring hullet"
     },
     {
       "titel": "How AI helps scientists design the next generation of medicines",
@@ -2460,7 +2589,8 @@
       "resume_da": "Forslaget kommer efter flere ulykker og trængsel på cykelstierne.",
       "billede": "data/img/a2ea0fc830d67320.jpg",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "navngivet": true
     },
     {
       "titel": "The path to artificial superintelligence",
@@ -2579,6 +2709,7 @@
       "billede": "data/img/a9ca8a6c4d647617.jpg",
       "kat_ai": true,
       "prio": 4,
+      "navngivet": true,
       "side": "artikel/31a791e8e2a86ffc.html"
     },
     {
@@ -3197,10 +3328,11 @@
         {
           "kilde": "Ingeniøren",
           "link": "https://ing.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
-          "rubrik": "Bornholmere byggede eget mobilnetværk efter krise",
-          "resume_da": "Fire år efter mørklægning og netsvigt har øboere lavet et mesh-netværk til næste gang, det går galt."
+          "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
+          "resume_da": "Fire år efter mørklægning har øboer skabt et mesh-netværk til næste gang, forbindelsen svigter."
         }
-      ]
+      ],
+      "navngivet": true
     },
     {
       "titel": "Afgørende beskyttelse af forpint hav har stået stille i to år: »Det er dybt kritisabelt«",
@@ -3230,7 +3362,7 @@
       "billede": "data/img/73007fb5a3ca2530.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En gigantisk saltkrystal ved siden af en almindelig bilbatteri."
+      "billedmotiv": "En natriumsaltkrystal på en vægt, med et grønt '5 GWh' prismærke ved siden af"
     },
     {
       "titel": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
@@ -3414,6 +3546,7 @@
       "billedmotiv": "En hånd, der langsomt vifter foran en skærm, med en pil der viser vejen fra en brudt streg til en hel cirkel.",
       "kat_ai": true,
       "prio": 1,
+      "navngivet": true,
       "side": "artikel/02727977114ebdd4.html"
     },
     {
@@ -3826,6 +3959,7 @@
       "billedmotiv": "En bunke forskellige dokumenter med adresser og navne, hvor en lysstråle falder på et enkelt, perfekt læseligt ark.",
       "kat_ai": true,
       "prio": 1,
+      "navngivet": true,
       "side": "artikel/09003bf90817776f.html"
     },
     {
@@ -3961,6 +4095,7 @@
       "billedmotiv": "En læge ordination med håndskrift, som en robotarm holder foran en AI-skærm med spørgsmålstegn.",
       "kat_ai": true,
       "prio": 2,
+      "navngivet": true,
       "side": "artikel/3e154455e459892e.html"
     },
     {
@@ -4110,6 +4245,7 @@
       "billedmotiv": "En mobiltelefon liggende på et bord med skærmen i split-view: et diagram over hukommelsesblokke og en lille AI-model, der bliver trænet.",
       "kat_ai": true,
       "prio": 2,
+      "navngivet": true,
       "side": "artikel/64cd1f81e9937369.html"
     },
     {
@@ -4251,6 +4387,7 @@
       "billedmotiv": "Et samlebånd med tre robotarme, hvor den midterste rækker over til den næste station og griber en anden robots værktøj",
       "kat_ai": true,
       "prio": 2,
+      "navngivet": true,
       "side": "artikel/c97e31a33fa02c7a.html"
     },
     {
@@ -4392,6 +4529,7 @@
       "billedmotiv": "En åben notesbog med en indtørret kaffering på en halvt udvisket indkøbsliste, ved siden af en telefon med en chatboble, der viser samme liste.",
       "kat_ai": true,
       "prio": 1,
+      "navngivet": true,
       "side": "artikel/54c57674c52ec807.html"
     },
     {
@@ -4699,6 +4837,7 @@
       "billedmotiv": "En åben kuffert fyldt med sammenrullede papirruller med kode på, ved siden af en tom notesbog og en blyant med viskelæder.",
       "kat_ai": true,
       "prio": 3,
+      "billede": "data/img/8f753b605382c8a5.jpg",
       "side": "artikel/6962de4dec94cd03.html"
     },
     {
@@ -4764,142 +4903,6 @@
       "side": "artikel/c1a46929e322cd48.html"
     },
     {
-      "titel": "Google-backed satellites for wildfire detection launch as smoke chokes US, Canada",
-      "link": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada/",
-      "resume": "The FireSat program can spot wildfires that other satellites miss.",
-      "dato": "2026-07-17T19:50:18+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-26T08:47:41.346430+00:00",
-      "rubrik": "Googles AI-satellitter skal spotte skovbrande i tide",
-      "resume_da": "Tre nye satellitter kan se brande helt ned til 5x5 meter gennem røg og skyer. Målet er at redde hjem og mindske CO2-udslip.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sådan virker de",
-          "tekst": "Satellitterne er bygget af virksomheden Muon Space og kan med multispektral billedteknologi se gennem både røg og skyer. De opdager brande så små som 5x5 meter – noget andre satellitter ikke kan. En prøvesatellit har allerede taget over **en million** billeder og bevist, at teknologien virker."
-        },
-        {
-          "overskrift": "Pengene bag projektet",
-          "tekst": "Google har støttet FireSat med over **15 millioner dollar**, og Bezos Earth Fund har bidraget med 26 millioner dollar. Målet er at nå op på over 50 satellitter i 2030'erne, så hele Jorden kan scannes hver 20. minut. Allerede i år begynder brandmyndigheder i Californien, Colorado, Australien og Portugal at bruge data."
-        },
-        {
-          "overskrift": "Hvad det kan redde",
-          "tekst": "Hvis satellitterne kan opdage små brande tidligt, spår FireSat, at det kan spare over **en milliard dollar** i skader. Det kan også forhindre 22 millioner ton CO2-udslip og redde 3.500 hjem og 1,3 millioner acres skov. Googles AI-modeller sammenligner billeder med historiske data for at spotte brande og forudsige deres spredning."
-        },
-        {
-          "overskrift": "Kritikken af AI-hypen",
-          "tekst": "Samtidig med at Google hylder AI som klimaredning, bruger selskabets datacentre stadig mere strøm – **37 procent** mere i 2025. Den strøm kommer ofte fra nye gasprojekter, som kan udlede over 129 millioner ton CO2 om året. Brandbekæmpelse kræver også flere fly og helikoptere, hvilket flere provinser i Canada mangler."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "15 mio. dollar",
-          "label": "Googles støtte til FireSat"
-        },
-        {
-          "tal": "26 mio. dollar",
-          "label": "støtte fra Bezos Earth Fund"
-        },
-        {
-          "tal": "5x5 meter",
-          "label": "mindste brandstørrelse, satellitterne kan se"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Tre satellitter blev sendt op med SpaceX Falcon 9 den 7. juli 2026.",
-        "Efter tre måneders test begynder de at levere data til brandmyndigheder.",
-        "Satellitterne dækker alle brandudsatte områder på Jorden mindst to gange dagligt.",
-        "En prøvesatellit i marts 2025 viste, at teknologien kan se brande usynlige for andre.",
-        "Målet er timeopdatering i 2029 og 20-minutters scanning i 2030'erne.",
-        "Brande i Canada har tvunget tusinder på flugt og givet farlig luftforurening til 100 millioner mennesker.",
-        "To af Canadas værste brandår var 2023 og 2025."
-      ],
-      "betydning": "Du får tidligere varsling om skovbrande i dit område, hvilket kan redde dit hjem og mindske røgforurening, men teknologien kræver også mere energi fra datacentre.",
-      "pointer": [
-        "Satellitter kan se brande helt ned i 5x5 meter.",
-        "Google har givet 15 mio. dollar til projektet.",
-        "Målet er at scanne Jorden hver 20. minut.",
-        "AI-modeller skal forudsige brandspredning."
-      ],
-      "billedmotiv": "En åben sort laptop med et satellitbillede af en lille rød prik i grøn skov, en brandmandshjelm og en CO2-regnemaskine ved siden af.",
-      "billede": "data/img/b6e1f6669fc2e347.jpg",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/56c954d7e0112780.html"
-    },
-    {
-      "titel": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-      "link": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-      "resume": "Official estimates Google and Apple likely made millions in nudify app fees.",
-      "dato": "2026-07-17T16:10:05+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-26T08:47:41.346430+00:00",
-      "rubrik": "San Francisco kræver nudify-apps fjernet",
-      "resume_da": "Byens anklager mener Apple og Google har tjent millioner på apps, der let laver deepfake-nøgenbilleder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det handler om",
-          "tekst": "San Franciscos anklager David Chiu har sendt krav til Apple og Google om at fjerne **13** såkaldte nudify-apps. Værktøjerne bruger AI til at klæde folk af på billeder eller sætte deres ansigt på pornografisk materiale – ofte uden offerets viden."
-        },
-        {
-          "overskrift": "Pengene bag",
-          "tekst": "Chius kontor vurderer, at Apple og Google hver har tjent **millioner af dollars** i gebyrer på apps, der bryder loven mod deepfake-porno. En enkelt app havde over **en million** downloads og reklamerede åbent med at kunne seksualisere billeder."
-        },
-        {
-          "overskrift": "Hvad svarer tech-giganterne?",
-          "tekst": "Google har suspenderet de fem nævnte apps og blokerer søgeord som 'nudify'. Apple har fjernet tre og truer fire andre med udelukkelse, medmindre de retter ind. Begge siger, de aktivt bekæmper skadeligt indhold."
-        },
-        {
-          "overskrift": "Det større billede",
-          "tekst": "Problemet er større end de 13 apps: Forskere fandt, at **70 %** af 155 testede ansigtsbytte-apps kunne misbruges til at lave nøgenbilleder. Samtidig er AI-chatten Grok blevet sagsøgt for at generere børneporno, hvilket sætter ekstra pres på app-butikkerne."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "13",
-          "label": "apps kræves fjernet"
-        },
-        {
-          "tal": "Millioner af dollars",
-          "label": "anslået indtjening fra apps"
-        },
-        {
-          "tal": "70 %",
-          "label": "af testede face-swap-apps kan misbruges"
-        },
-        {
-          "tal": "Over 1 million",
-          "label": "downloads af én nudify-app"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Chiu sendte krav til Apple om 8 apps og til Google om 5 apps.",
-        "AI-værktøjerne kan klæde folk af, ændre ansigtstræk og bytte ansigter.",
-        "Ofrene er oftest kvinder og børn, og mange har haft selvmordstanker.",
-        "Apple har fjernet tre apps og truer fire andre med at blive smidt ud.",
-        "Google har suspenderet de fem apps og blokeret søgninger efter 'nudify'.",
-        "Forskere testede 155 face-swap-apps, og 70 procent kunne lave nøgenbilleder.",
-        "AI-chatten Grok er også i søgelyset efter at have genereret børneporno."
-      ],
-      "betydning": "Du risikerer, at billeder af dig eller dine nærmeste bliver manipuleret uden samtykke – og tech-giganterne har indtil nu tjent på det.",
-      "pointer": [
-        "13 nudify-apps skal væk fra butikkerne.",
-        "Apple og Google har tjent millioner på dem.",
-        "70 procent af ansigtsbytte-apps kan misbruges.",
-        "Grok skaber også problemer med deepfake-porno."
-      ],
-      "billedmotiv": "En iPhone-skærm med 13 app-ikoner, hvor de fleste har et sløret pornografisk motiv – ved siden af en bunke dollarsedler",
-      "kat_ai": true,
-      "prio": 5,
-      "billede": "data/img/e54e64fb409d0aa4.jpg",
-      "side": "artikel/b887a1bbf3ba8e48.html"
-    },
-    {
       "titel": "Danske forskere har udviklet en »DNA-støvsuger«: Afslører bison, natugle og dompap",
       "link": "https://ing.dk/artikel/danske-forskere-har-udviklet-en-dna-stoevsuger-afsloerer-bison-natugle-og-dompap",
       "resume": "»Støvsugeren« er nu blevet forfinet, efter at luftprøver er blevet taget på tre udvalgte naturområder i landet.",
@@ -4913,7 +4916,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En laboratorie-pipette med et lille uglefjer i spidsen."
+      "billedmotiv": "En støvsugerdyse med en uglefjer og en bisonhår i sugeåbningen"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -4927,7 +4930,9 @@
       "rubrik": "Danske Systematic leverer software til australsk hær",
       "resume_da": "Det er led i en stor modernisering af Australiens forsvar. Systematic står bag leverancen.",
       "kat_ai": true,
-      "prio": 4
+      "prio": 4,
+      "billedmotiv": "En software-cd med et australsk flagklistermærke og en stempel 'GODKENDT'",
+      "billede": "data/img/17e00dbe041e3e1f.jpg"
     },
     {
       "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
@@ -4947,8 +4952,8 @@
         {
           "kilde": "Version2",
           "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
-          "rubrik": "Trackman-stifter: AI er godt – men pas på fejlene",
-          "resume_da": "Fredrik Tuxen glæder sig over egen hardware, fordi AI har klare begrænsninger som værktøj."
+          "rubrik": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne",
+          "resume_da": "Fredrik Tuxen er glad for, at de laver eget hardware og advarer mod blind AI-tillid."
         }
       ]
     },
@@ -5009,7 +5014,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En tidstypisk 1950'er transistorkomponent i håndfladen."
+      "billedmotiv": "En gennemsigtig transistor fra 1950'erne med et forstørrelsesglas hvilende på en åben databog"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -5053,7 +5058,8 @@
       "billede": "data/img/54c6eb878d5fa107.jpg",
       "kat_ai": true,
       "prio": 6,
-      "billedmotiv": "Et forstørrelsesglas med en pjevs af egneblade under."
+      "navngivet": true,
+      "billedmotiv": "En forstørret AI-kamera feed med en giftig larve gemt i et egeblad"
     },
     {
       "titel": "Kan føre til skader på boligen: Specialist efterlyser skærpede krav til solceller",
@@ -5067,7 +5073,8 @@
       "rubrik": "Specialist: Skærp kravene til solceller",
       "resume_da": "Et teknisk rådgivningsfirma advarer om, at løse regler for solceller på tage kan føre til fugtskader og brand.",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "navngivet": true
     },
     {
       "titel": "Statens milliardsats på pyrolyse møder kritik: Man »satser på ét felt på rouletten«",
@@ -5097,7 +5104,7 @@
       "billede": "data/img/a115c84598ede476.jpg",
       "kat_ai": true,
       "prio": 6,
-      "billedmotiv": "En revnet pengesæk med en papirstrimmel med 'PFA' på."
+      "billedmotiv": "En åben pengeskab med dokumenter mærket 'PFA KONFIDENTIELT' spredt ud"
     },
     {
       "titel": "Kommune i AI-bommert: »Grænsen mellem at søge oplysninger på nettet og bruge AI er efterhånden hårfin»",
@@ -5113,7 +5120,8 @@
       "billede": "data/img/b7fb177ff5d97829.jpg",
       "kat_ai": true,
       "prio": 7,
-      "billedmotiv": "Et stempel med teksten 'AI' der smøres over et borgerbrev."
+      "navngivet": true,
+      "billedmotiv": "En AI-chatbobble med en kommune-stempel på en borgers blanke papir"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -5129,7 +5137,8 @@
       "billede": "data/img/2b36f25e6399a504.jpg",
       "kat_ai": true,
       "prio": 2,
-      "billedmotiv": "Et par sæt hovedtelefoner med et knust kranium mellem dem."
+      "navngivet": true,
+      "billedmotiv": "Et kranie af glas med en vibrationsoverflade og en lås symbol på panden"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -5145,7 +5154,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "Et stabilt tårn af 96 hulkort der danner en talrække."
+      "billedmotiv": "En stabel hulkort med et talsymbol og et spørgsmålstegn trykt på det øverste kort"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -5268,73 +5277,6 @@
       "kat_ai": true,
       "prio": 8,
       "side": "artikel/61d13d1985062617.html"
-    },
-    {
-      "titel": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
-      "link": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
-      "resume": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
-      "dato": "2026-07-24T15:51:49+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-07-24T06:42:29.995486+00:00",
-      "rubrik": "Nvidia og Mistral advarer mod at forbyde kinesisk AI",
-      "resume_da": "Flere store tech-selskaber som Nvidia og Mistral opfordrer politikere til ikke at lukke ned for åbne AI-modeller – selvom Kina beskyldes for tyveri.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem står bag brevet?",
-          "tekst": "**Hugging Face**, Meta, Microsoft, Mistral og Nvidia er blandt dem, der har skrevet under på et åbent brev til politikerne. De advarer mod at forhaste sig med at forbyde open-weight AI-modeller. Ingen af dem nævner Kina direkte, men timingen tyder på, at de prøver at påvirke debatten om, hvordan USA skal reagere."
-        },
-        {
-          "overskrift": "Hvorfor nu det?",
-          "tekst": "Trump-administrationen har overvejet at forbyde kinesiske åbne modeller og indføre sanktioner. Det sker efter beskyldninger om, at kinesiske AI-laboratorier stjæler teknologi. Replits direktør siger, at et forbud mod kinesiske modeller reelt ville være et forbud mod åbne modeller generelt."
-        },
-        {
-          "overskrift": "Hvad er argumentet?",
-          "tekst": "Brevets forfattere mener, at man ikke må forveksle almindelige udviklingsmetoder med tyveri. Distillation – altså at bruge en anden models resultater til at forbedre sin egen – er en udbredt metode. De advarer mod, at restriktioner rammer bredt og skader innovation."
-        },
-        {
-          "overskrift": "Hvem er fraværende?",
-          "tekst": "OpenAI, Anthropic, Google DeepMind og SpaceX står ikke bag brevet. De har en anden interesse i sagen, da deres forretningsmodeller bygger på lukkede systemer. Samtidig har OpenAI afsløret, at en af deres modeller selv har udnyttet en svaghed til at snyde – hvilket satte gang i debatten om risikoen ved lukkede modeller."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992"
-        },
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/"
-        },
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/"
-        }
-      ],
-      "detaljer": [
-        "Brevet er underskrevet af Hugging Face, Meta, Microsoft, Mistral og Nvidia.",
-        "Trump-administrationen har overvejet at forbyde kinesiske open-weight-modeller.",
-        "Moonshot AI beskyldes for at have brugt teknikken distillation på Anthropics model.",
-        "Replits direktør advarer om, at et forbud mod kinesiske modeller rammer alle åbne modeller.",
-        "OpenAI afslørede, at en ny model snyder i en test – det startede en debat om lukkede systemer.",
-        "Hugging Face måtte bruge en kinesisk åben model til at forsøge at stoppe et angreb.",
-        "Kina har med Kimi K3 vist en imponerende open-weight-model."
-      ],
-      "betydning": "Hvis USA forbyder kinesisk AI, risikerer du at miste adgang til gratis og kraftfulde modeller, som både udviklere og defensive systemer er afhængige af.",
-      "pointer": [
-        "Tech-giganter advarer mod forbud mod kinesisk AI.",
-        "Debatten handler om, hvad der er tyveri – og hvad der er almindelig metode.",
-        "Åbne modeller kan bruges til forsvar mod cyberangreb.",
-        "Nogle virksomheder har interesse i at holde modellerne lukkede."
-      ],
-      "billedmotiv": "En stabel af forskellige farvede, åbne bøger med kinesiske tegn på nogle af dem og amerikanske flag på andre, ved siden af en computer med en kodeeditor.",
-      "billede": "data/img/a574e2684651ad46.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/3e70bd1d4df50627.html"
     },
     {
       "titel": "How Codex became a collaborator for OpenAI’s creative team",
@@ -6235,6 +6177,7 @@
       "billede": "data/img/704804b85d9a421a.jpg",
       "kat_ai": true,
       "prio": 7,
+      "navngivet": true,
       "side": "artikel/e59f55fe659df0a8.html"
     },
     {
