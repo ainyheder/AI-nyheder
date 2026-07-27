@@ -4,6 +4,193 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+### Nattens regnskab · 2026-07-27
+
+**Klaret: 4 punkter** — 2 bygget og testet, 2 lukket ved at måle dem.
+
+1. Feed, ugeside, nyhedsbrev **og opslag** linker nu til den permanente
+   artikelside i stedet for `#a=`.
+2. 8 canonical-kæder brudt; 7 levende artikler fik deres egen canonical og
+   deres navne tilbage og kom i sitemappet *(fund uden for køen)*.
+3. *"Er dagens overblik virkelig dagens vigtigste fem?"* — målt: ja, 4 af 5
+   er de højest prioriterede, og den femte er et forsvarligt redaktionelt valg.
+   Intet at rette.
+4. *"Tjek dubletfangeren"* — undersøgt, og svaret blev det stik modsatte af
+   spørgsmålet. Se nedenfor.
+
+**Nye i køen: 2** af de 4, jeg måtte skrive. Jeg fandt ikke flere, der kunne
+svare på alle tre spørgsmål, og skrev derfor ikke flere.
+
+**Gennemgik i fase 2:** `uge.html` som læser (den er ærlig om sin alder og sin
+uge — intet at rette dér), de 41 videosiders canonical og sitemap (**0 fejl**),
+`brief.json` mod crawlerens egen kandidatliste, hvor uge.html linkes fra (2
+rodsider + sitemap — fint), og **de 13 dubletgrupper i `articles.json`**.
+
+**Den sidste var ikke en gennemgang, der endte i ingenting.** Køen spurgte, om
+dubletfangeren var for *forsigtig*. Den er det modsatte: 13 grupper har slugt
+**47 artikler**, og af de 38, jeg kan sammenligne teksten på, deler **25 under
+5 % af deres ord** med den historie, de er lagt ind under — median 3,4 %.
+"Monday.com fyrer 600" ligger under "Anthropic sender billigere AI-model".
+`saml_dublet_historier` bruger AI'ens grupper, som de kommer, med kun ét værn:
+at datoerne ligger inden for 3 dage. Det er dét, der fryser artikelsider, sender
+canonical det forkerte sted hen og giver falske vindere +1 i prioritet — altså
+årsagen bag begge de punkter, jeg rettede i nat.
+
+**Øverst i køen nu:** *Dubletfangeren slår urelaterede historier sammen.*
+Rækkefølgen ændrede sig, fordi de to ting, jeg rettede i nat, viste sig at være
+symptomer på den samme årsag — og fordi 47 artikler, der ikke er på forsiden, er
+det eneste punkt i køen, der er i stykker for læseren lige nu.
+
+**Vær uenig her, hvis du vil:** rettelsen kan gøre forsiden mere rodet, hvis
+nogle af de 22 par faktisk *var* dubletter. Jeg har stikprøvet, ikke læst dem
+alle. Det er værd at kigge på, før nogen bygger.
+
+---
+
+## 2026-07-27 · 7 gode artikler var usynlige for Google — og viste gamle rubrikker
+
+*(Fund uden for køen. Det dukkede op, mens jeg testede punktet nedenfor.)*
+
+**Fandt:** Jeg ville have `_dele_link` til at følge en dubletsides canonical
+hjem til hovedhistorien. Målingen stoppede mig: **8 af 112 artikelsider stod i
+en canonical-kæde** — A peger på B, som peger videre på C. En side om en gratis
+videoeditor til Mac pegede via to led på "AI Kill Switch Act". Havde jeg fulgt
+kæden, ville nyhedsbrevet have sendt folk til den forkerte historie. Så jeg
+fjernede følgeren igen og gik efter kæderne i stedet.
+
+Og de 8 var ikke tilfældige. **7 af dem var levende, selvstændige artikler** med
+egen rubrik i `articles.json` — forsiden viser dem, deleknapperne deler dem, og
+`_dele_link` sender nyhedsbrevet til dem. Alligevel sagde deres side til Google,
+at den rigtige udgave var en helt anden historie:
+
+| Siden handler om | ...men fortalte Google, at den rigtige var |
+|---|---|
+| Ny gratis AI-videoredigering til din Mac | AI Kill Switch Act |
+| Patreon skærer i staben | Monday.com fyrer 600 |
+| Hyundai afviser: robotter er ikke stridspunkt | Google giver gratis AI-adgang |
+| Sådan vil AI skabe fremtidens medicin | AlphaFold og genredigering |
+
+Og fordi `_dubletsider_paa_disk` netop læser den canonical, stod **0 af de 7 i
+sitemappet**. Indhold vi selv promoverer, kunne Google hverken finde eller
+tilskrive os. *Punkt 10 — og punkt 5: siden påstod noget om sig selv, der ikke
+var sandt.*
+
+**Årsagen er mekanisk.** `_peg_dubletsider_mod_hovedhistorien` peger en tabers
+side mod vinderen og ser aldrig på den igen. Bliver vinderen senere selv slået
+sammen — hvilket sker oftere, siden `_slaa_sammen` 26.07 begyndte at vælge den
+fyldigste udgave frem for den første — så står kæden der. Git bekræfter det:
+`fa7a24d1`s canonical blev ændret fra sig selv til `668efd44` i commit `906b9d8`
+26.07, og `668efd44` blev selv en taber bagefter.
+
+**Der lå mere under.** Da de 7 sider holdt op med at være dubletter, byggede
+`lav_artikelsider` dem forfra — og de havde stået frosne med **gamle rubrikker
+uden navne**, fordi navne-rettelsen 26.07 aldrig nåede dem:
+
+- "Politikere kræver nødstop for AI-systemer" → **"Ted Lieu og Nathaniel Moran
+  vil have nødstop på AI"**
+- "Sådan vil AI skabe fremtidens livreddende medicin" → **"AstraZeneca bruger AI
+  til at designe ny medicin"**
+- "Canadisk politiker læste OpenAI-svar op" → **"CBC: Canadisk politiker læste
+  ChatGPT-svar op"**
+- "Patreon skærer i staben efter store teknologiske ændringer" → **"Patreon fyrer
+  hver femte medarbejder"**
+
+Det er præcis målestokkens punkt 1. De sad fast, fordi en dubletside aldrig
+skrives om.
+
+**Gjorde:** Nyt `_bryd_canonical_kaeder()` i `crawler.py`, kaldt i
+`lav_artikelsider` mellem sammenlægningen og `_dubletsider_paa_disk` —
+rækkefølgen er nødvendig, ellers når de rettede sider ikke i sitemappet før
+næste dag. Den rører **kun kædehoveder**. En almindelig dublet, hvis mål selv er
+hovedhistorie, bliver stående urørt: det er dét, `_dubletsider_paa_disk` kalder
+permanent hukommelse, og en enkelt kørsel, hvor vinderen mangler i feedet, må
+ikke kunne vælte den. En kæde er derimod aldrig rigtig. Er kædehovedet en levende
+selvstændig artikel, får det sin egen canonical tilbage; ellers foldes kæden ud
+til sin ende.
+
+Efter: **0 kæder, 39 dubletter (var 46), sitemappet 53 → 60 URL'er**, og de 7
+sider er bygget forfra med nuværende rubrik, resumé og billede.
+
+**Testede:** 135 påstande, alle grønne — og prøven **bygger sine egne kæder** i
+en kopi af `artikel/`, så den giver samme svar, næste gang nogen kører den.
+Dækket: levende artikel i kæde får sig selv, ægte dublet foldes ud til enden,
+almindelig dublet røres ikke (heller ikke når vinderen mangler i dagens liste —
+timeout-scenariet), kæde mod en side der ikke findes lades stå, løkke A→B→A
+hænger ikke, syv slags vrøvl-input, og **hver eneste fil er kun ændret i
+canonical-linjen**. Dertil 21 påstande på de 7 reparerede sider: canonical og
+`og:url` er enige, de står i sitemappet, ingen `noindex`, gyldig JSON-LD,
+billederne findes. Tørløbet blev kørt i en kopi først — **og den første kopi
+gav et falsk tal**: jeg havde glemt `data/img/`, så alle billeder så ud til at
+mangle, og tørløbet sagde 53 ændrede filer. Med `data/img/` med er tallet **8**.
+
+**Til Torben:**
+
+1. **Sitemappet er indsendt til Google?** Hvis ja, får det nu 7 sider mere.
+   Hvis nej, står instruksen stadig i loggen fra 25.07 — det er den eneste
+   grund til, at ingen artikelsider er indekseret.
+2. **En ting mere, jeg IKKE har rettet:** alle 39 dubletsider har en canonical
+   mod hovedhistorien, men deres `og:url` og JSON-LD-`@id` peger stadig på dem
+   selv. Det er modstridende signaler til Google. Det er ikke i stykker, og det
+   har været sådan hele tiden — men det er et rigtigt punkt, og det står nu i køen.
+
+---
+
+## 2026-07-27 (kørslen kl. 09:30) · Feed, ugeside, nyhedsbrev og opslag linker nu permanent
+
+**Fandt:** Køens tal holdt næsten, men billedet var skarpere end beskrevet.
+58 af 84 artikler har en permanent side, og **alle 58 filer findes faktisk på
+disken** — nul løfter om sider, der ikke er skrevet. Det interessante var
+fordelingen: **feedets 40 punkter deler sig i præcis 20 med side og 20 uden,
+og alle 20 uden er `kun_aktuel`** (Ingeniøren og Version2, hvor udgiveren
+forbyder et arkiv). De skal *ikke* have en permanent side. Så tilbagefaldet til
+`#a=` er ikke en mangel — det er det rigtige svar for præcis den halvdel.
+
+**Køens forslag var mere arbejde end nødvendigt.** Der stod, at `side` skulle
+skrives med i `uge.json`, før ugesiden og nyhedsbrevet kunne linke permanent.
+Det behøves ikke: slugget er en ren md5 af linket, så siden kan slås op på
+disken ud fra linket alene. Det er ikke bare enklere — det er **bedre**, fordi
+det også rammer historier, der er ude af `articles.json`, altså netop dem `#a=`
+ikke kan finde. Ingen dataformat-ændring, og rettelsen virker bagud.
+
+**Gjorde:** Ét nyt `_dele_link()` i `crawler.py` og fire kaldesteder:
+`lav_rss` (feed.xml), `_uge_side_html` (ugesiden), `_send_nyhedsbrev` og
+**opslagene** — det fjerde sted, køen ikke nævnte. Opslagene pegede før på den
+bare forside, når artiklen ingen side havde; nu på `#a=`, så læseren i det
+mindste lander i historien. Samme argument som for mailen: et opslag kan ikke
+kaldes tilbage. Tre nu overflødige `from urllib.parse import quote` fjernet.
+`feed.xml` og `uge.html` genskrevet, så disken svarer til koden.
+
+**Testede:** 86 påstande, alle grønne — `_dele_link` mod virkelige data, mod
+tom streng, `None`, `javascript:`, 4.000 tegn, æøå og stitraversering, plus
+feed.xml parset som XML, ugesiden regex'et igennem og nyhedsbrevet bygget med
+`hent_url` erstattet af en falsk funktion (ingen mail sendt, nøglen fjernet
+igen). **Prøven er kørt mod `HEAD` uden rettelsen: 25 røde, 0 efter.**
+Samlet prøve: `ast.parse` OK, ingen dobbeltdefinerede konstanter på
+modulniveau, forsiden i jsdom mod de rigtige datafiler **11 påstande grønne** —
+kort tegnet, Dagens overblik tegnet med punkter, klik åbner læseren, lukkeknap
+findes, og spring-over-linket, `<main>` og deleknappernes `a.side`-regel står
+urørt. `uge.html` genskabt: præcis **1 linje ind, 1 ud**.
+
+**To fejl hos mig selv undervejs.** (1) Min påstand om stitraversering var
+forkert: `..` havner i *fragmentet* (`#a=..%2F..`), som aldrig når en server, og
+alle skråstreger er %-kodet — sti-delen er altid bare `https://ainyheder.com/`.
+Påstanden spørger nu om sti-delen. (2) Jeg byggede først en canonical-følger
+ind i `_dele_link` og **fjernede den igen**, da målingen viste hvorfor — se
+næste log-post.
+
+**Til Torben:**
+
+1. **Effekten er størst fremad.** `uge.html` går fra 0 til 1 permanent link af
+   5, fordi fire af den nuværende uges historier slet ikke har en side på
+   disken. Men **ugens otte kandidater lige nu har alle otte en side**, så
+   næste fredags nyhedsbrev bliver 5 af 5 permanente. Feedet er 20 af 40 fra nu.
+2. **`natsession.md` linje 78 — sjette gang.** `git status --short` lagde
+   `.git/index.lock` igen, og jeg kunne ikke fjerne den, før jeg havde bedt om
+   lov til at slette i mappen. Den er væk nu. `git --no-optional-locks status
+   --short` gør det samme uden at låse. Ét ord i instruksen.
+
+---
+
 > **⚠️ Læs det her først — du har allerede pushet rettelsen.**
 >
 > Jeg startede 03:01 og var færdig 08:50. **Kl. 08:48 committede og pushede du,
@@ -21,10 +208,11 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 > slette dine ændringer. Køen står, som den stod, plus to punkter flyttet til
 > Klaret og ét nyt skrevet ind.
 >
-> **Der står med vilje intet "Nattens regnskab · 2026-07-27" nedenfor.** Det er
-> ikke en forglemmelse: regnskabet skrives, når fase 2 og 3 er lavet, og det er
-> de ikke. Uden det ser kl. 23-kørslen i aften sig selv som dagens hovedkørsel og
-> tager evalueringen og omprioriteringen — hvilket er præcis det rigtige.
+> **Der stod med vilje intet "Nattens regnskab · 2026-07-27" nedenfor.** Det var
+> ikke en forglemmelse: regnskabet skrives, når fase 2 og 3 er lavet, og det var
+> de ikke. *(Tilføjet af kl. 09:30-kørslen: den så det manglende regnskab, tog
+> derfor hele turen som dagens hovedkørsel, og regnskabet står nu øverst. Det
+> virkede efter hensigten.)*
 >
 > **Én ting til dig:** åbn `uge.html` og klik "Læs hele historien →". Du skulle
 > nu få en pæn besked i stedet for ingenting. Historierne er stadig væk — det
