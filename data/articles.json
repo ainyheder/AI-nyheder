@@ -1,7 +1,117 @@
 {
-  "opdateret": "2026-07-26T21:37:40.851850+00:00",
-  "antal": 82,
+  "opdateret": "2026-07-26T22:44:33.671648+00:00",
+  "antal": 84,
   "artikler": [
+    {
+      "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
+      "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
+      "resume": "Det startede i 2003 i en garage i Vedbæk. Ingeniøren Fredrik Tuxen havde kvittet sit gode job som udviklingschef for at hoppe med om bord på et iværksætterprojekt om måleudstyr til golf. I dag står han bag milliardvirksomheden Trackman sammen med sine to medstiftere.",
+      "dato": "2026-07-25T12:00:00+02:00",
+      "kilde": "Ingeniøren",
+      "kategori": "Penge & marked",
+      "kun_aktuel": true,
+      "foerst_set": "2026-07-26T22:44:33.671648+00:00",
+      "rubrik": "Fredrik Tuxen byggede golfmåler til milliarder",
+      "resume_da": "Han sagde sit job op som udviklingschef og startede Trackman i en garage. I dag er virksomheden en milliardforretning.",
+      "kat_ai": true,
+      "prio": 5,
+      "billedmotiv": "En golfbold med en radarskærm monteret på",
+      "billede": "data/img/0a0357248473fd4f.jpg"
+    },
+    {
+      "titel": "Cloudflare's new AI traffic options for customers",
+      "link": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+      "resume": "Article URL: https://blog.cloudflare.com/content-independence-day-ai-options/ Comments URL: https://news.ycombinator.com/item?id=49052564 Points: 185 # Comments: 143",
+      "dato": "2026-07-25T22:50:49+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-26T21:40:51.034311+00:00",
+      "rubrik": "Cloudflare åbner for AI-afregning til kunder",
+      "resume_da": "Cloudflare giver nu kunder mulighed for at vælge, hvordan AI-trafik skal håndteres og faktureres.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nye muligheder",
+          "tekst": "Cloudflare lancerer nye indstillinger, der lader kunder styre AI-trafik. Du kan nu vælge mellem forskellige prismodeller og regler for AI-bots, så du ikke betaler for unødvendig båndbredde."
+        },
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "AI-trafik er eksploderet, og mange kunder ønsker kontrol over, hvad deres systemer bruges til. Især AI-bots som Googles og OpenAIs crawlers kan belaste sider voldsomt uden at give værdi."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Via Cloudflare-dashboardet kan du sætte regler for, hvilken AI-trafik der accepteres, og hvordan den afregnes. Du kan blokere gratis, tilbyde betalt adgang eller lade alt løbe som normalt."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Cloudflare tilbyder nye regler for AI-bots og trafikstyring.",
+        "Kunder kan vælge mellem gratis blokering eller betalt adgang.",
+        "Indstillingerne findes i Cloudflare-dashboardet.",
+        "Funktionen er rettet mod AI-crawlers som fra OpenAI og Google.",
+        "Målet er at give kunder kontrol over båndbredde og omkostninger."
+      ],
+      "betydning": "Du kan nu selv bestemme, om AI-bots må bruge din hjemmeside – og om du vil tjene penge på det i stedet for bare at betale.",
+      "pointer": [
+        "Cloudflare lancerer AI-trafikindstillinger.",
+        "Kunder styrer AI-bots og priser.",
+        "Giver kontrol over båndbreddeomkostninger.",
+        "AI-trafik kan nu blokeres eller faktureres."
+      ],
+      "billedmotiv": "Et Cloudflare-dashboard på en skærm med en slider mærket 'AI bot access' ved siden af en pristabel.",
+      "billede": "data/img/7ccd4b9976ad2c98.jpg",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
+      "side": "artikel/c13d67073208cf10.html"
+    },
+    {
+      "titel": "Show HN: Palmier Pro – Open-source macOS video editor built for AI",
+      "link": "https://github.com/palmier-io/palmier-pro",
+      "resume": "Hi HN, we are Marcos and Harrison, cofounders of Palmier ( https://palmier.io ). We are building Palmier Pro, an open source macOS video editor, with built-in AI generation and a local MCP server that connects to your agent. Here are a few demos: - Making some AI transitions: https://www.youtube.com/watch?v=hbM_-eR1GX4 - Multicam editing with Codex: https://www.youtube.com/watch?v=SjS2q2LT1q8 -…",
+      "dato": "2026-07-23T15:11:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-07-26T21:40:51.034311+00:00",
+      "rubrik": "Gratis AI-videoeditor åben for alle på Mac",
+      "resume_da": "Palmier Pro lader dig redigere video med AI direkte i tidslinjen og er gratis at downloade.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "En gruppe udviklere har bygget Palmier Pro, en gratis open source videoeditor til Mac, der integrerer AI værktøjer. Værktøjet er inspireret af Adobe Premiere Pro, men med AI-generering indbygget i tidslinjen, så du kan lave videoer og billeder med modeller som **Seedance**, Kling og Nano Banana Pro."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Editoren har en indbygget AI-agent, som du kan samarbejde med. Du kan også tilslutte din Claude, Codex eller Cursor via **MCP-protokollen** – en simpel kommando sætter det hele i gang. Den generative del er lukket kildekode, men editoren og MCP-serveren er helt åbne."
+        },
+        {
+          "overskrift": "Prisen",
+          "tekst": "Det koster intet. Du downloader appen uden at oprette en konto, og du kan straks begynde at redigere. MCP-serveren er også gratis at bruge, så du kan eksperimentere med AI-funktioner uden at betale en krone. Det eneste lukkede er den generative AI-behandling, men det påvirker ikke prisen."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Palmier Pro er bygget fra bunden med Swift og er open source.",
+        "Rediger videoer med Seedance, Kling og Nano Banana Pro AI-modeller.",
+        "Forbind Claude, Codex eller Cursor via MCP-server på localhost:19789.",
+        "Kun generative AI-funktioner er lukket kildekode; resten er open source.",
+        "Appen kræver ingen login eller betaling for at bruge editoren."
+      ],
+      "betydning": "Du kan nu redigere video med AI-værktøjer gratis og åbent på din Mac – uden at binde dig til dyre abonnementer.",
+      "pointer": [
+        "Gratis open source videoeditor til Mac.",
+        "AI-generering integreret i tidslinjen.",
+        "Samarbejd med Claude, Codex eller Cursor via MCP.",
+        "Kræver hverken login eller betaling."
+      ],
+      "billedmotiv": "En Mac-skærm med en tidslinje, hvor en glødende AI-knap ved siden af Seedance-logoet lyser op mellem to videoklip.",
+      "kat_ai": true,
+      "prio": 4,
+      "side": "artikel/fa7a24d15387e004.html"
+    },
     {
       "titel": "Making sense of the panic over Chinese AI",
       "link": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
@@ -12,8 +122,7 @@
       "foerst_set": "2026-07-26T21:37:40.851850+00:00",
       "rubrik": "Sådan puster Kina-panik AI-debatten op",
       "resume_da": "Hver gang et kinesisk AI-program dukker op, brager panikken løs i USA. Men handler det om sikkerhed eller om at beskytte tech-giganter?",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Panik på repeat",
@@ -28,9 +137,8 @@
           "tekst": "Flere i tech-branchen advarer officielt om sikkerhed og spionage, når de taler om kinesisk AI. Men en OpenAI-chef blev fanget i at sige højt, hvad mange tænker: at USA bør skabe **frygt, usikkerhed og tvivl** for at bremse konkurrenterne. Da han trak i land, stod det klart, at nogle ting bare ikke siges højt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Kinesisk AI-model Kimi udløste ny debat om amerikansk konkurrenceevne.",
         "En AI-chef foreslog at skabe frygt for at bremse kinesiske modeller.",
@@ -49,6 +157,8 @@
       ],
       "billedmotiv": "Et bord fyldt med to bunker af sammenkrøllede papirer - den ene bunke mærket 'USA', den anden 'Kina' - med et stort rødt udråbstegn klistret på bordet.",
       "billede": "data/img/b264cfb0708c59d9.jpg",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/216b0412425af104.html"
     },
     {
@@ -111,22 +221,6 @@
       "kat_ai": true,
       "prio": 8,
       "side": "artikel/355626f29c21fdf8.html"
-    },
-    {
-      "titel": "Fredrik Tuxen kvittede sit gode job og tog chancen: I dag står han bag en milliardforretning med teknologi til golf",
-      "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
-      "resume": "Det startede i 2003 i en garage i Vedbæk. Ingeniøren Fredrik Tuxen havde kvittet sit gode job som udviklingschef for at hoppe med om bord på et iværksætterprojekt om måleudstyr til golf. I dag står han bag milliardvirksomheden Trackman sammen med sine to medstiftere.",
-      "dato": "2026-07-25T12:00:00+02:00",
-      "kilde": "Ingeniøren",
-      "kategori": "Penge & marked",
-      "kun_aktuel": true,
-      "foerst_set": "2026-07-26T18:46:35.514441+00:00",
-      "rubrik": "Fredrik Tuxen sagde jobbet op - i dag er Trackman milliard værd",
-      "resume_da": "Ingeniøren startede i en garage i 2003. Nu står han bag en milliardforretning med golftavler.",
-      "billede": "data/img/0a0357248473fd4f.jpg",
-      "kat_ai": true,
-      "prio": 6,
-      "billedmotiv": "en golfkølle ved siden af en stor stak pengesedler"
     },
     {
       "titel": "Canadian legislator reads out apparent LLM response in floor speech",
@@ -977,7 +1071,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "en støvsugerdyse med en dNA-helix indeni"
+      "billedmotiv": "En støvsuger med en DNA-spiral på slangen"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -1024,6 +1118,7 @@
       "foerst_set": "2026-07-25T19:13:33.011354+00:00",
       "rubrik": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne",
       "resume_da": "Fredrik Tuxen, medejer af Trackman, roser AI som værktøj men advarer mod at stole blindt på det. Han er glad for selv at lave hardware.",
+      "billede": "",
       "kat_ai": true,
       "prio": 4
     },
@@ -1102,7 +1197,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "en tidlig transistor lavet af germanium og guldtråde"
+      "billedmotiv": "En lille transistor med en støvle og årstallet 1950"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -1191,7 +1286,7 @@
       "billede": "data/img/cf5afd19c383cd8b.jpg",
       "kat_ai": true,
       "prio": 2,
-      "billedmotiv": "en kanyle med en smertestillende pille som stempel"
+      "billedmotiv": "En tom pilleæske med et gammelt 1980'er-prisskilt"
     },
     {
       "titel": "Nyt forbud skal ændre måden, vi genanvender plastaffald: Men smuthuller vækker bekymring",
@@ -1324,7 +1419,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "et stempel med teksten 'AI' presset ned i en bunke papirer"
+      "billedmotiv": "En dokumentmappe med et AI-symbol skjult under et klistermærke"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -1341,7 +1436,7 @@
       "kat_ai": true,
       "prio": 2,
       "navngivet": true,
-      "billedmotiv": "et kranium af gennemsigtig plastik med vibrerende linjer"
+      "billedmotiv": "Et menneskekranie med en vibrationsbølge og en lås"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -1357,7 +1452,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "et hulkort stablet som et puslespil med tal 0 og 1"
+      "billedmotiv": "Bunken af hulkort med et spørgsmålstegn på det øverste"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -1443,7 +1538,7 @@
       "billede": "data/img/d3b23f3add8aeca6.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "et sommerhus-skrivemaskine med museumskatalog ved siden af"
+      "billedmotiv": "En støvet sommerhat på en gammel computer"
     },
     {
       "titel": "Nu skal borgeres sundhedsdata bruges i nyt pilotprojekt med AI",
@@ -1460,7 +1555,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "et EKG-print med tre forskellige farvede AI-chip-logoer"
+      "billedmotiv": "Tre små AI-chips med en sygesikringskasse"
     },
     {
       "titel": "China’s AI models have Trump’s AI world at war with itself",
@@ -3317,7 +3412,7 @@
       "billede": "data/img/9232d1ff7c8c5095.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "en petriskål med DNA-spiral og en prisskilt på 10.000 dollars"
+      "billedmotiv": "En dusør-seddel med et DNA-spiral-motiv og fejlmarkør"
     },
     {
       "titel": "The foundational elements of AI architecture that IT leaders need to scale",
