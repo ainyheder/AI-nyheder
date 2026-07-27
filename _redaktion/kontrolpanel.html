@@ -1200,9 +1200,11 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     var l = String(md || "").replace(/\r/g, "").split("\n"), ud = [], i = 0;
     function afsnit(tekst) {
       // "**Fandt:** ..." bliver til et felt med etiket i stedet for fed skrift
-      var m = tekst.match(/^\*\*(Fandt|Gjorde|Testede|Til Torben|Fandt ikke):?\*\*\s*([\s\S]*)$/);
+      // Begge etiketter skal matche: instruksen skriver nu "Til redaktionen",
+      // men hele den gamle log siger "Til Torben", og begge skal fremhæves.
+      var m = tekst.match(/^\*\*(Fandt|Gjorde|Testede|Til Torben|Til redaktionen|Fandt ikke):?\*\*\s*([\s\S]*)$/);
       if (m) {
-        var klasse = m[1] === "Til Torben" ? " torben" : "";
+        var klasse = /^Til /.test(m[1]) ? " torben" : "";
         return '<div class="lfelt' + klasse + '"><div class="navn">' + esc(m[1]) +
           '</div><div>' + mdTekst(m[2]) + "</div></div>";
       }
@@ -1448,6 +1450,12 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       while (j >= 0 && j < blokke.length && blokke[j].type !== "punkt") j += ret;
       if (j < 0 || j >= blokke.length) return;
       var t = blokke[i]; blokke[i] = blokke[j]; blokke[j] = t;
+      // Mærk punktet, så sessionens omsortering i fase 3 lader det stå.
+      // Uden det ville næste kørsel sortere beslutningen væk usynligt.
+      // Mærket sættes på SIDSTE linje: en rubrik i fed kan gå over to linjer,
+      // og så ville et mærke på linje 0 lande midt inde i overskriften.
+      if (!t.linjer.some(function (l) { return /#fastholdt/.test(l); }))
+        t.linjer[t.linjer.length - 1] += " `#fastholdt`";
     }
     dokAendret.opgavekoe = byggKoe(koeData);
     tegnKoeliste();

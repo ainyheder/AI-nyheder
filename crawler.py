@@ -401,11 +401,17 @@ def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
     """
     if len(tekst) <= maks:
         return tekst
-    # Nattens regnskab skal ALTID med - panelets side hedder "Du læser
-    # regnskabet om morgenen", så det er selve pointen. Ligger det efter
-    # grænsen, flyttes grænsen ud til efter det i stedet for omvendt.
+    # Regnskabet skal ALTID med - panelets etape hedder "Du læser regnskabet",
+    # så det er selve pointen. Ligger det efter grænsen, flyttes grænsen ud til
+    # efter det i stedet for omvendt.
+    # Der ledes efter BEGGE overskrifter: de gamle poster hedder "Nattens
+    # regnskab", de nye "Sessionens". Leder man kun efter den ene, findes i
+    # stedet en flere uger gammel post langt nede i filen, og så flyttes
+    # grænsen dertil - dvs. hele loggen ryger med ind i data/hjerne-data.js.
     slut = maks
-    start = tekst.find("### Nattens regnskab")
+    start = min([i for i in (tekst.find("### Nattens regnskab"),
+                             tekst.find("### Sessionens regnskab")) if i >= 0],
+                default=-1)
     if start >= 0:
         efter = tekst.find("\n---\n", start)
         slut = max(slut, len(tekst) if efter < 0 else efter + 5)

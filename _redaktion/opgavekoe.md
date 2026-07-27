@@ -3,10 +3,12 @@
 Sessionen arbejder oppefra og ned. Ét punkt ad gangen, færdigt og testet,
 før det næste røres.
 
-**Redaktionen:** flyt en linje op, hvis du vil have den frem i køen. Skriv nye ønsker
-ind hvor som helst. Det, der står øverst, er det, der bliver lavet først.
+**Redaktionen:** flyt en linje op i panelet, hvis du vil have den frem. Så
+sætter panelet mærket `#fastholdt` på, og sessionens omsortering lader punktet
+stå — ellers ville din beslutning blive sorteret væk ved næste kørsel. Skriv nye
+ønsker i `oensker.md`. Det, der står øverst, er det, der bliver lavet først.
 
-Filen har fire lister, og de skal ikke blandes sammen:
+Filen har seks lister, og de skal ikke blandes sammen:
 
 | Liste | Hvad det er | Bliver det lavet? |
 |---|---|---|
@@ -14,8 +16,13 @@ Filen har fire lister, og de skal ikke blandes sammen:
 | `## Mistanker` | Noget nogen har set, men ikke målt | Først når det er målt |
 | `## Fast gennemgang` | Spørgsmål uden ende, på skift | Når der er plads |
 | `## Venter på redaktionen` | Målt, men kræver en beslutning | Når du har svaret |
+| `## Fravalgt` | Idéer der er sagt nej til, med begrundelse | Nej — og læses før nye skrives |
+| `## Klaret` | Historik | Nej — genåbnes kun med en måling |
 
-Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handler om.
+Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handler
+om — og **hvem det rammer**, målt i sidevisninger de sidste syv dage. Uden det tal
+er "det, der rammer flest læsere, kommer først" et gæt, og gættet har været
+forkert: en hel uges arbejde gik på sider med to visninger tilsammen.
 
 ---
 
@@ -26,6 +33,22 @@ Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handle
 `## Mistanker` og `## Fast gennemgang` længere nede.*
 
 ### 1 — I stykker for læseren lige nu
+
+- [ ] **Ingen kan finde siden. 141 artikelsider fik 2 sidevisninger på en uge.**
+      Målt 27.07 i `data/laesertal.json`, 7 dage: **248 besøg i alt, hvoraf 222 er
+      direkte trafik til forsiden** — altså redaktionen selv, bogmærker og appen.
+      Udefra kom der **19 besøg fra Facebook, 4 fra Google og 3 fra Buttondown**.
+      De 141 artikelsider fik **2 visninger tilsammen**, begge fra nogen der
+      klikkede fra forsiden; ingen kom fra en søgning. `prompt-arkiv.html`,
+      `quiz.html` og `vaerktoejer.html` fik nul.
+      **Rammer: 440 visninger/7 dage (forsiden)** — det er alt, hvad der er.
+      Ethvert andet punkt i denne kø forbedrer noget, som under 30 mennesker
+      udefra ser om ugen.
+      *Formodning, ikke målt: sitemappene er aldrig indsendt i Google Search
+      Console, og det kan sessionen ikke gøre selv — se `## Venter på
+      redaktionen`. Men det er ikke sikkert, at det er hele forklaringen, og
+      resten kan måles herfra.*
+      *Punkt 10.*
 
 - [ ] **Dubletfangeren slår urelaterede historier sammen — 47 artikler er væk
       fra forsiden.** Målt 27.07. `saml_dublet_historier` sender op til 130
@@ -66,6 +89,7 @@ Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handle
       ≥ 0,15 giver omtrent samme snit. Ingen AI-kald, kan testes.
 
       **Læs de 16, reglen beholder, før den lukkes** — jeg har kun stikprøvet dem.
+      **Rammer: 440 visninger/7 dage (forsiden).**
       *Punkt 1, 4, 6 og 10.*
 
 ### 2 — Bryder målestokken synligt
@@ -84,16 +108,22 @@ Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handle
       og sådan har det været hele tiden — men det er billigt at rette samme sted,
       hvor canonical skrives, og det gælder hele arkivet. Mindste rettelse: sæt
       `og:url` og JSON-LD-`mainEntityOfPage` til samme adresse som canonical.
+      **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen).**
       *Punkt 5 og 10.*
 
 - [ ] **Gennemgå crawlerens fejlbeskeder.** Er der steder, hvor noget fejler
       stille uden at sige hvorfor? Det var netop dét, der skjulte tre fejl —
       og i nat en fjerde: **8 canonical-kæder stod i et døgn**, uden at nogen
       kørsel sagde et ord, selvom `lav_artikelsider` skriver et tal ud hver gang.
+      **Rammer: intet direkte — det er en måling, ikke en side.** Kan derfor
+      aldrig stå højere end trin 3.
       *Punkt 6.*
 
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
-      efter alle de seneste dages ændringer. *Punkt 4.*
+      efter alle de seneste dages ændringer.
+      **Rammer: 440 visninger/7 dage (forsiden)** — en stor del af den direkte
+      trafik kommer sandsynligvis fra appen, så et brud ville ramme netop dem.
+      *Punkt 4.*
 
 - [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
       `_peg_dubletsider_mod_hovedhistorien` kaldes **før** `_har_noget_at_vise`-
@@ -101,10 +131,13 @@ Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handle
       **Målt igen 27.07: 0 tilfælde** — og `_bryd_canonical_kaeder` nægter nu at
       pege på en side, der ikke findes, så hullet er delvist lukket. Tilbage står
       selve pegningen. Mindste rettelse: samme vagt i vinder-tjekket.
+      **Rammer: 0 målte tilfælde og 2 visninger/7 dage på artikelsiderne.**
       *Punkt 4 og 10.*
 
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
+      **Rammer: ingen læsere** — det er husholdning, ikke en fejl. Står i trin 3,
+      fordi det er billigt, ikke fordi det haster. *Punkt 4.*
 
 ---
 
@@ -190,6 +223,12 @@ det i køen; ellers noteres bare, at den holder. Sæt dagens dato på uanset hva
 Målt og forstået, men må ikke bygges, før nogen har taget stilling. De sorteres
 ikke med i køen, og sessionen skal ikke gætte svaret.
 
+- **Indsend sitemappene i Google Search Console.**
+  *Kun et menneske kan logge ind. Google sendte 4 besøg på syv dage til en side
+  med 215 sider og tre sitemaps — det er det billigste sted at lede efter en
+  forklaring. Adresserne står i `robots.txt`. Sessionen kan ikke selv oprette
+  konti eller acceptere vilkår.*
+
 - **Skal `articles.json` blive et rigtigt 30-dages-arkiv?**
   *Spørgsmålet: forsiden ville vise mærkbart flere artikler, arkivet ville veje
   ~7× mere (435–460 kB mod 62 kB i dag), og 35 genoplivede artikler ville koste
@@ -233,6 +272,19 @@ ikke med i køen, og sessionen skal ikke gætte svaret.
   billeder for sider ældre end X måneder ud af git og lade siderne pege på
   `assets/og.png` — men det er redaktionens valg, om det er værd at gøre endnu.
   *Punkt 4.*
+
+---
+
+## Fravalgt
+
+Idéer, der er sagt nej til, og hvorfor. **Læs listen, før du skriver nye punkter.**
+Står dit fund her, skal det ikke i køen igen — medmindre du kan måle, at
+grundlaget har ændret sig, og så skal målingen med.
+
+Loggen fortæller kun, hvad der blev lavet. Uden den her liste kommer den samme
+afviste idé igen om en måned og koster den samme udredning forfra.
+
+*(Ingen endnu. Skriv dem som `- **<idéen>** — fravalgt <dato>: <hvorfor>.`)*
 
 ---
 
@@ -359,7 +411,7 @@ ikke med i køen, og sessionen skal ikke gætte svaret.
       tegn i `index.html` eller i seks tekstfelter på alle 81 artikler falder i
       latin-ext, så de 144 kB hentes aldrig — og billederne er `loading="lazy"`,
       så første indlæsning henter **1** billede, ikke 34. Ingenting ændret. **Men
-      målingen gav et tal, det parkerede arkiv-punkt manglede:** 781 bytes pr.
+      målingen gav et tal, arkiv-spørgsmålet under `## Venter på redaktionen` manglede:** 781 bytes pr.
       artikel på tråden, og de sidste to hele døgn tog 24 og 19 nye ind, så et
       rigtigt 30-dages-arkiv bliver ~570–600 artikler = **435–460 kB, cirka 7×
       mere end i dag**, hentet i én blok før der står noget på skærmen. Se loggen.
@@ -568,7 +620,6 @@ ikke med i køen, og sessionen skal ikke gætte svaret.
 
 - [x] **Nat-loggen i panelet opdaterer sig ikke selv** *(klaret 2026-07-26 — natsessionen kalder nu `skriv_hjerne_status()` som sidste skridt; verificeret: loggen fylder 31.861 tegn i panelet)*
 
-*(Natsessionen flytter afkrydsede punkter herned med dato.)*
 
 - [x] **Virker det strammede Hacker News-feed?** *(26.07.2026)* Ja. Med
       point-grænsen hævet fra 50 til 150 ligger der **4 Hacker News-artikler**
