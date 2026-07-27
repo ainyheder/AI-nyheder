@@ -368,23 +368,25 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     return kald_ai(system, bruger, max_tokens)
 
 
-# Natteloopets dokumenter. De styrer den natlige gennemgang og natsessionen -
-# og kan redigeres i kontrolpanelet ligesom prompterne.
-NAT_DOKUMENTER = [
+# Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
+# i kontrolpanelet ligesom prompterne. Loopet er ikke bundet til noget tidspunkt.
+ARBEJDS_DOKUMENTER = [
+    ("oensker", "oensker.md", "Torbens ønsker",
+     "Skriv her, hvad du vil have lavet — i almindeligt dansk. Sessionen læser "
+     "den før alt andet og oversætter ønskerne til punkter i køen.", True),
     ("maalestok", "redaktionens-oejne.md", "Målestokken",
-     "Ni punkter der definerer 'godt'. Bruges af BÅDE den natlige gennemgang "
-     "og natsessionen. Ret her, og begge ændrer adfærd.", True),
-    ("natsession", "natsession.md", "Natsessionens instruks",
-     "Hele nattens arbejdsgang: de tre faser, hvordan der testes, hvornår der "
-     "stoppes. Læses forfra hver nat kl. 23 og 03.", True),
+     "Ti punkter der definerer 'godt'. Afgør alt, hvad sessionen laver.", True),
+    ("instruks", "arbejdsinstruks.md", "Arbejdsinstruksen",
+     "Hele arbejdsgangen: de fire faser, hvordan der testes, hvornår der "
+     "stoppes. Læses forfra ved hver kørsel.", True),
     ("opgavekoe", "opgavekoe.md", "Opgavekøen",
      "Det, der bliver lavet — oppefra og ned. Flyt en linje op for at "
      "prioritere den frem.", True),
-    ("analyse", "analyse-seneste.md", "Nattens egen analyse",
-     "Natsessionens egen gennemgang af siden, skrevet FØR den gik i gang. "
+    ("analyse", "analyse-seneste.md", "Sessionens egen analyse",
+     "Sessionens gennemgang af siden, skrevet FØR den gik i gang. "
      "Kun til at læse.", False),
-    ("natlog", "nat-log.md", "Nat-loggen",
-     "Hvad nætterne har lavet, og hvad du skal vide. Kun til at læse.", False),
+    ("log", "arbejdslog.md", "Arbejdsloggen",
+     "Hvad kørslerne har lavet, og hvad du skal vide. Kun til at læse.", False),
 ]
 
 
@@ -414,12 +416,12 @@ def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
     if graense > slut // 3:
         skaaret = skaaret[:graense]
     return (skaaret.rstrip() + "\n\n---\n\n*Ældre indgange er klippet fra her. "
-            "Hele historikken står i `_redaktion/nat-log.md`.*\n")
+            "Hele historikken står i `_redaktion/arbejdslog.md`.*\n")
 
 
-def _natteloop_status() -> list:
+def _arbejdsloop_status() -> list:
     ud = []
-    for noegle, fil, navn, besk, kan_rettes in NAT_DOKUMENTER:
+    for noegle, fil, navn, besk, kan_rettes in ARBEJDS_DOKUMENTER:
         sti = ROOT / "_redaktion" / fil
         try:
             indhold = sti.read_text(encoding="utf-8")
@@ -449,7 +451,7 @@ def _standard_prompts() -> dict:
 
 def skriv_hjerne_status() -> None:
     """Data til kontrolpanelet: hvilke modeller og instrukser der er i brug,
-    og natteloopets dokumenter. Skrives både som JSON og som en JS-fil, så
+    og arbejdsloopets dokumenter. Skrives både som JSON og som en JS-fil, så
     panelet kan åbnes direkte fra mappen uden en webserver.
 
     KUN LOKALT. På GitHubs servere springes det over med vilje: filerne
@@ -476,7 +478,7 @@ def skriv_hjerne_status() -> None:
                 "aktiv_prompt": hjerne_prompt(navn, std.get(navn, "")),
             } for navn, besk in HJERNE_BESKRIVELSE.items()
         },
-        "natteloop": _natteloop_status(),
+        "arbejdsloop": _arbejdsloop_status(),
     }
     HJERNER_STATUS.parent.mkdir(exist_ok=True)
     HJERNER_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2),
