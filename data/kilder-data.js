@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-28T17:49:21.447982+00:00",
- "artikler_i_alt": 144,
+ "opdateret": "2026-07-28T19:00:28.836787+00:00",
+ "artikler_i_alt": 135,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -172,9 +172,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 1,
+   "i_listen": 9,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Nvidia og Microsoft går sammen om AI-sikkerhed",
+     "dato": "",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsofts nye AI-værktøj scorer højt i sikkerhedstest"
+    },
     {
      "rubrik": "(overskriften er ikke gemt)",
      "dato": "",
@@ -217,15 +226,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-27T17:18:43",
      "link": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
      "side": "artikel/c1fdca1de801e0c2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia og Microsoft går sammen om AI-sikkerhed",
-     "dato": "2026-07-27T08:06:22",
-     "foerst_set": "2026-07-27T12:44:06",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
-     "side": "artikel/40c3588f70cf4d8a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -277,11 +277,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "OpenAI Blog",
+     "Ars Technica AI",
+     2
+    ],
+    [
+     "Version2",
      1
     ],
     [
-     "Ars Technica AI",
+     "OpenAI Blog",
      1
     ]
    ]
@@ -342,20 +346,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Microsofts nye AI-værktøj scorer højt i sikkerhedstest",
-     "dato": "2026-07-27T21:56:14",
-     "foerst_set": "2026-07-27T18:45:48",
-     "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
-     "side": "artikel/531f2adf50891ad2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "ChatGPT nægter at kopiere dine yndlingsforfatteres stil",
      "dato": "2026-07-27T16:58:46",
      "foerst_set": "2026-07-27T17:18:43",
      "link": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
      "side": "artikel/e72772d9a311eb69.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsofts nye AI-værktøj scorer højt i sikkerhedstest",
+     "dato": "2026-07-27T21:56:14",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+     "side": "artikel/531f2adf50891ad2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -434,11 +438,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ]
    ]
@@ -564,9 +568,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
+   "i_listen": 23,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "OpenAI-rapport: Forskere bruger AI-kodeagenter til opdagelser",
+     "dato": "",
+     "foerst_set": "2026-07-28T17:24:15.701283+00:00",
+     "link": "https://openai.com/index/scientific-computing-agentic-ai",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI: Chatbrugere tager opgaver på tværs af roller"
+    },
     {
      "rubrik": "(overskriften er ikke gemt)",
      "dato": "",
@@ -575,15 +588,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer nyt program til små virksomheder"
-    },
-    {
-     "rubrik": "OpenAI-rapport: Forskere bruger AI-kodeagenter til opdagelser",
-     "dato": "2026-07-28T17:00:00",
-     "foerst_set": "2026-07-28T17:24:15",
-     "link": "https://openai.com/index/scientific-computing-agentic-ai",
-     "side": "artikel/8cc1ba4abc2977bf.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "OpenAIs nye system lader AI rette egne fejl",
@@ -681,6 +685,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-21T00:00:00",
      "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
      "side": "artikel/10666aebf14a4743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI deler erfaringer om langsigtede AI-modeller",
+     "dato": "2026-07-20T10:00:00",
+     "foerst_set": "2026-07-20T10:00:00",
+     "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+     "side": "artikel/960e35dd4f7dc710.html",
      "hvor": "forside",
      "under": ""
     }
@@ -902,67 +915,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Terence Tao: AI ændrer matematikken indefra",
-     "dato": "2026-07-26T10:32:35",
-     "foerst_set": "2026-07-27T22:45:11",
-     "link": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
-     "side": "artikel/eb63ed5813b38b1a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-boblen brister: Apple-brugere betaler prisen",
-     "dato": "2026-07-27T14:42:41",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
-     "side": "artikel/361b016a958cf60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-selskaber bruger rekordbeløb på lobbyarbejde i Washington",
-     "dato": "2026-07-27T14:07:48",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-     "side": "artikel/8756b60eb8fa9e43.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "HedgieMarkets: AI-selskaber makulerer sjældne bøger",
-     "dato": "2026-07-27T12:32:12",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
-     "side": "artikel/cf3eb0a91ac6ce1a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Frygt for AI-jobtab er overdrevet, siger Stanford-økonomer",
-     "dato": "2026-07-25T22:51:10",
-     "foerst_set": "2026-07-27T09:15:05",
-     "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
-     "side": "artikel/719e63d03733035f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Rick Manelius: AI gør dig 100 gange hurtigere og stresset",
-     "dato": "2026-07-26T13:13:03",
-     "foerst_set": "2026-07-27T06:56:48",
-     "link": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
-     "side": "artikel/51f6b5a29ea2e2af.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   },
   {
@@ -975,11 +933,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 13,
-   "som_ekstra": 2,
+   "i_listen": 12,
+   "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Trackman-stifter: AI er et fantastisk værktøj",
+     "rubrik": "Trackman-stifter: AI er nyttigt, men pas på",
      "dato": "",
      "foerst_set": "2026-07-28T15:23:09",
      "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
@@ -988,22 +946,22 @@ window.KILDER_STATUS = {
      "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
     },
     {
-     "rubrik": "Bornholmere byggede eget mobilnetværk efter krise",
+     "rubrik": "OpenAI hænger i bremsen, mens Kina rykker",
+     "dato": "",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://www.version2.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
+     "side": "",
+     "hvor": "under",
+     "under": "Kinas AI-gave skaber panik i Silicon Valley"
+    },
+    {
+     "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
      "dato": "",
      "foerst_set": "2026-07-27T08:55:57",
      "link": "https://www.version2.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
      "side": "",
      "hvor": "under",
      "under": "Bornholmere bygger eget mobilnetværk efter krisen i 2022"
-    },
-    {
-     "rubrik": "OpenAI hænger i bremsen, mens Kina rykker",
-     "dato": "2026-07-28T12:45:00",
-     "foerst_set": "2026-07-28T10:15:21",
-     "link": "https://www.version2.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Politikere: ChatGPT og andre AI-chatbots kan give våbenopskrifter",
@@ -1103,12 +1061,25 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Skat politianmelder egen whistleblower",
+     "dato": "2026-07-13T10:24:35",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/skat-politianmelder-whistleblower-en-ulovlig-og-grov-repressalie",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Ingeniøren",
-     4
+     3
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },
@@ -1123,19 +1094,10 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 13,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "OpenAI halter, mens Kina rykker tættere på i AI-kapløbet",
-     "dato": "",
-     "foerst_set": "2026-07-28T10:15:21",
-     "link": "https://ing.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI hænger i bremsen, mens Kina rykker"
-    },
-    {
-     "rubrik": "Politikere vil stoppe AI-opskrifter på biovåben",
+     "rubrik": "AI-chatbots afslører opskrifter på biologiske våben",
      "dato": "",
      "foerst_set": "2026-07-28T04:55:43",
      "link": "https://ing.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
@@ -1153,7 +1115,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Briter får lov til altansolceller i stikkontakten",
+     "rubrik": "Storbritannien lemper regler for altansolceller",
      "dato": "2026-07-28T14:03:00",
      "foerst_set": "2026-07-28T15:18:54",
      "link": "https://ing.dk/artikel/hjaelp-midt-i-hoeje-energipriser-briter-faar-lov-til-slutte-altansolceller-i-stikkontakten",
@@ -1255,7 +1217,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Version2",
-     4
+     3
     ]
    ]
   }
