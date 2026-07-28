@@ -1,0 +1,1337 @@
+window.KILDER_STATUS = {
+ "opdateret": "2026-07-28T16:12:43.541950+00:00",
+ "artikler_i_alt": 143,
+ "kilder": [
+  {
+   "navn": "TechCrunch AI",
+   "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+   "kategori": "Nyheder",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 17,
+   "som_ekstra": 3,
+   "seneste": [
+    {
+     "rubrik": "Microsoft leverer AI-hær i kamp mod hackere",
+     "dato": "",
+     "foerst_set": "2026-07-27T18:45:48",
+     "link": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsofts nye AI-værktøj scorer højt i sikkerhedstest"
+    },
+    {
+     "rubrik": "OpenAI-model brød ud under test og skabte panik",
+     "dato": "",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-debate-over-alignment-and-control/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Hugging Face-chef kræver svar fra OpenAI",
+     "dato": "",
+     "foerst_set": "2026-07-26T18:46:35",
+     "link": "https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Fish Audio henter 52 mio. dollars til AI-stemmer",
+     "dato": "2026-07-28T14:00:00",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+     "side": "artikel/72e62aa28e258fe4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-firma bruger næsten hele kassen på Amazon-skyen",
+     "dato": "2026-07-28T13:19:17",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/",
+     "side": "artikel/4fac336183884ac9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics Amodei frygter Kinas AI-misbrug",
+     "dato": "2026-07-28T00:13:33",
+     "foerst_set": "2026-07-28T04:55:43",
+     "link": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+     "side": "artikel/063a78a65e9ecc02.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-firma sænker prisen voldsomt i Indien",
+     "dato": "2026-07-28T04:30:00",
+     "foerst_set": "2026-07-28T04:46:26",
+     "link": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/",
+     "side": "artikel/470d3cc5669e08e8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+     "dato": "2026-07-27T21:17:11",
+     "foerst_set": "2026-07-27T22:45:11",
+     "link": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+     "side": "artikel/f1637c21f3807a90.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Private Claude-samtaler lå frit fremme på Google",
+     "dato": "2026-07-27T20:19:42",
+     "foerst_set": "2026-07-27T22:45:11",
+     "link": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/",
+     "side": "artikel/f6ec309cb07391fa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nu kan du chatte med AI i Threads",
+     "dato": "2026-07-27T16:45:24",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/",
+     "side": "artikel/e0cbdd2980b85a49.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google gør AI-svar til standard i søgning",
+     "dato": "2026-07-27T15:57:12",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
+     "side": "artikel/9787dc63d089b762.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TechCrunch Disrupt: AI presser elnettet",
+     "dato": "2026-07-27T15:30:00",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/power-up-your-ai-infrastructure-a-first-look-at-the-smart-systems-stage-agenda-at-techcrunch-disrupt-2026/",
+     "side": "artikel/2ad1fe773140f0bc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Lås dine apps med en fysisk NFC-nøgle",
+     "dato": "2026-07-27T15:25:37",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/this-9-key-physically-locks-your-most-addictive-apps/",
+     "side": "artikel/e91ca0f7e12bb9aa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sikker AI-satsning får milliarder fra Nvidia",
+     "dato": "2026-07-27T15:01:50",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+     "side": "artikel/255e648232d1e6e3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Robot-styring skal være lige så let som lydstyrke",
+     "dato": "2026-07-27T13:00:00",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
+     "side": "artikel/82e3b731569ecf2e.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "MIT Tech Review AI",
+     2
+    ],
+    [
+     "Ars Technica AI",
+     1
+    ]
+   ]
+  },
+  {
+   "navn": "The Verge AI",
+   "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+   "kategori": "Nyheder",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 10,
+   "som_ekstra": 1,
+   "seneste": [
+    {
+     "rubrik": "(overskriften er ikke gemt)",
+     "dato": "",
+     "foerst_set": "",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+     "side": "",
+     "hvor": "under",
+     "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "AI-assistent tager styringen på Windows",
+     "dato": "2026-07-28T08:30:00",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
+     "side": "artikel/39519f6ad210fea5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sandbars ring Stream dikterer noter",
+     "dato": "2026-07-28T08:00:00",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://www.theverge.com/gadgets/971744/smart-ring-ai-gadget-stream-index",
+     "side": "artikel/6c105a22f96046ce.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hugging Face brugt til at klæde folk af",
+     "dato": "2026-07-28T05:07:14",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
+     "side": "artikel/2cb97ade90fb06df.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kinas AI-gave skaber panik i Silicon Valley",
+     "dato": "2026-07-27T12:51:50",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
+     "side": "artikel/c1fdca1de801e0c2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia og Microsoft går sammen om AI-sikkerhed",
+     "dato": "2026-07-27T08:06:22",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity",
+     "side": "artikel/40c3588f70cf4d8a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-firmaet Midjourney køber astrologi-app",
+     "dato": "2026-07-24T15:06:58",
+     "foerst_set": "2026-07-24T22:34:10",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+     "side": "artikel/6dd5f2d4f0064ecb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google dropper aftalen med hjemmesider",
+     "dato": "2026-07-24T13:29:48",
+     "foerst_set": "2026-07-24T18:07:51",
+     "link": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
+     "side": "artikel/f4baa56ef4384c44.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic sender ny AI-model på gaden",
+     "dato": "2026-07-24T13:00:00",
+     "foerst_set": "2026-07-24T18:07:51",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+     "side": "artikel/668dd796408164b0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta gør AI-chatbot til din assistent",
+     "dato": "2026-07-24T13:00:00",
+     "foerst_set": "2026-07-24T18:07:51",
+     "link": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+     "side": "artikel/9e99a2ed73e61def.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump vil styre milliarder mod AI-forskning",
+     "dato": "2026-07-24T10:43:55",
+     "foerst_set": "2026-07-24T14:49:58",
+     "link": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+     "side": "artikel/1d031e62c1210b25.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "OpenAI Blog",
+     1
+    ],
+    [
+     "Ars Technica AI",
+     1
+    ]
+   ]
+  },
+  {
+   "navn": "VentureBeat AI",
+   "url": "https://venturebeat.com/category/ai/feed/",
+   "kategori": "Business",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 0,
+   "som_ekstra": 0,
+   "seneste": [],
+   "overlap": []
+  },
+  {
+   "navn": "Ars Technica AI",
+   "url": "https://arstechnica.com/ai/feed/",
+   "kategori": "Nyheder",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 19,
+   "som_ekstra": 1,
+   "seneste": [
+    {
+     "rubrik": "Anthropics Opus 5 sparer tokens, men springer ikke fremad",
+     "dato": "",
+     "foerst_set": "",
+     "link": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic sender ny AI-model på gaden"
+    },
+    {
+     "rubrik": "Google og Reddit taber retssag om AI",
+     "dato": "2026-07-27T20:12:42",
+     "foerst_set": "2026-07-27T22:45:11",
+     "link": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss/",
+     "side": "artikel/5d041ac5a5b573cc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Verizon satser milliarder på Google-aftale",
+     "dato": "2026-07-27T18:48:41",
+     "foerst_set": "2026-07-27T19:02:56",
+     "link": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/",
+     "side": "artikel/be4f7f1c41717387.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsofts nye AI-værktøj scorer højt i sikkerhedstest",
+     "dato": "2026-07-27T21:56:14",
+     "foerst_set": "2026-07-27T18:45:48",
+     "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+     "side": "artikel/531f2adf50891ad2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT nægter at kopiere dine yndlingsforfatteres stil",
+     "dato": "2026-07-27T16:58:46",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
+     "side": "artikel/e72772d9a311eb69.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Superelmer sagsøger Memes.ai for at sælge hans tegning",
+     "dato": "2026-07-27T10:50:37",
+     "foerst_set": "2026-07-27T11:03:47",
+     "link": "https://arstechnica.com/tech-policy/2026/07/artist-sues-ai-meme-generator-for-selling-deeply-personal-comic-as-ad-template/",
+     "side": "artikel/77fbfc3bf5b78fea.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "USA vil tvinge AI-firmaer til at installere nødstop",
+     "dato": "2026-07-23T19:08:01",
+     "foerst_set": "2026-07-26T08:47:41",
+     "link": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/",
+     "side": "artikel/668efd44031df10e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Googles historiske minus: AI suger penge hurtigere end søgemaskinen tjener dem",
+     "dato": "2026-07-23T16:04:19",
+     "foerst_set": "2026-07-26T08:47:41",
+     "link": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/",
+     "side": "artikel/253603c3c808d70f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hyundai: Robottaler ikke del af strejke i Sydkorea",
+     "dato": "2026-07-22T18:18:12",
+     "foerst_set": "2026-07-26T08:47:41",
+     "link": "https://arstechnica.com/ai/2026/07/hyundai-claims-humanoid-robot-plan-is-not-part-of-talks-with-striking-workers/",
+     "side": "artikel/ccda4e78083a1251.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic betaler 1,5 milliarder i forlig",
+     "dato": "2026-07-21T17:33:14",
+     "foerst_set": "2026-07-26T08:47:41",
+     "link": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/",
+     "side": "artikel/e014711cfc53c145.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer tre nye AI-modeller",
+     "dato": "2026-07-21T16:58:25",
+     "foerst_set": "2026-07-26T08:47:41",
+     "link": "https://arstechnica.com/google/2026/07/google-reveals-faster-and-cheaper-gemini-3-6-flash-says-3-5-pro-is-still-in-testing/",
+     "side": "artikel/856fa25c6c2097c8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Politiker læste AIs 'regneark' op i parlamentet",
+     "dato": "2026-07-24T21:25:15",
+     "foerst_set": "2026-07-24T22:34:10",
+     "link": "https://arstechnica.com/ai/2026/07/canadian-legislator-reads-out-apparent-llm-response-in-floor-speech/",
+     "side": "artikel/1d9a62ad37c5a97a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AlphaFold gør genredigering sikrere",
+     "dato": "2026-07-24T17:31:26",
+     "foerst_set": "2026-07-24T18:07:51",
+     "link": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/",
+     "side": "artikel/9a01a236793bd15c.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ]
+   ]
+  },
+  {
+   "navn": "MIT Tech Review AI",
+   "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+   "kategori": "Dybde",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 10,
+   "som_ekstra": 0,
+   "seneste": [
+    {
+     "rubrik": "Medarbejdere flygter fra Samsung til rival",
+     "dato": "2026-07-28T09:18:57",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
+     "side": "artikel/e9c7d242f0b7db07.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ciscos AGNTCY gør AI til superteam",
+     "dato": "2026-07-27T12:00:00",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://www.technologyreview.com/2026/07/27/1140724/the-path-to-artificial-superintelligence/",
+     "side": "artikel/25cc5f27cc6ab012.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI finder nye lægemidler - men rammer en væg",
+     "dato": "2026-07-27T11:40:16",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
+     "side": "artikel/31a791e8e2a86ffc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Intel finder vejen til pålidelig AI i virksomheder",
+     "dato": "2026-07-27T11:32:58",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://www.technologyreview.com/2026/07/27/1140668/building-the-enterprise-environment-for-agentic-ai/",
+     "side": "artikel/d10dbf6ad8c7c176.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-model hackede sig vej ud af bur",
+     "dato": "2026-07-27T18:00:00",
+     "foerst_set": "2026-07-26T18:46:35",
+     "link": "https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent/",
+     "side": "artikel/bd9265e44747f452.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AstraZeneca bruger AI til ny medicin",
+     "dato": "2026-07-23T12:00:00",
+     "foerst_set": "2026-07-23T12:00:00",
+     "link": "https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/",
+     "side": "artikel/7f188a0c6b4b89a7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft Discovery hjælper med at udvikle nye materialer til AI",
+     "dato": "2026-07-21T10:37:34",
+     "foerst_set": "2026-07-21T10:37:34",
+     "link": "https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation/",
+     "side": "artikel/6d5a86555da5e529.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kinesisk AI-model splitter Trumps folk",
+     "dato": "2026-07-20T18:00:00",
+     "foerst_set": "2026-07-20T18:00:00",
+     "link": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+     "side": "artikel/61d13d1985062617.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI, ChatGPT og Claude udvikler voldsomme fordomme",
+     "dato": "2026-07-20T08:39:01",
+     "foerst_set": "2026-07-20T08:39:01",
+     "link": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+     "side": "artikel/d213c30d2534c57d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Målestation i Paris-lufthavn manipuleret med AI-snyd",
+     "dato": "2026-07-17T08:57:32",
+     "foerst_set": "2026-07-17T08:57:32",
+     "link": "https://www.technologyreview.com/2026/07/17/1140622/weather-data-sabotage/",
+     "side": "artikel/5777494d3bc56bb1.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "TechCrunch AI",
+     2
+    ]
+   ]
+  },
+  {
+   "navn": "OpenAI Blog",
+   "url": "https://openai.com/news/rss.xml",
+   "kategori": "Labs",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 24,
+   "som_ekstra": 0,
+   "seneste": [
+    {
+     "rubrik": "(overskriften er ikke gemt)",
+     "dato": "",
+     "foerst_set": "",
+     "link": "https://openai.com/index/introducing-openai-presence",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer nyt program til små virksomheder"
+    },
+    {
+     "rubrik": "OpenAIs nye system lader AI rette egne fejl",
+     "dato": "2026-07-15T10:00:00",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+     "side": "artikel/5ea0a6358ff1dfeb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI: Chatbrugere tager opgaver på tværs af roller",
+     "dato": "2026-07-27T03:30:00",
+     "foerst_set": "2026-07-27T10:35:33",
+     "link": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+     "side": "artikel/680c3dc9eb024e0a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT får adgang til din medicin",
+     "dato": "2026-07-23T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://openai.com/index/health-in-chatgpt",
+     "side": "artikel/b6e63d5480204bec.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Hugging Face ramt af sikkerhedsbrud",
+     "dato": "2026-07-21T07:00:00",
+     "foerst_set": "2026-07-24T18:07:51",
+     "link": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+     "side": "artikel/07a59789a1f95f86.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sådan bruger designere Codex som kreativ makker",
+     "dato": "2026-07-16T07:00:00",
+     "foerst_set": "2026-07-24T06:42:29",
+     "link": "https://openai.com/index/codex-collaborator-creative-team",
+     "side": "artikel/41170cb100dac73a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI investerer i ny AI-by",
+     "dato": "2026-07-22T13:00:00",
+     "foerst_set": "2026-07-22T13:00:00",
+     "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+     "side": "artikel/4eb3751221ad853a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI skriver ind i nyhedsrummet",
+     "dato": "2026-07-22T13:00:00",
+     "foerst_set": "2026-07-22T13:00:00",
+     "link": "https://openai.com/index/how-news-organizations-are-using-ai",
+     "side": "artikel/7c5769317a9434a6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og DeepMind satser på amerikansk forskning",
+     "dato": "2026-07-22T12:00:00",
+     "foerst_set": "2026-07-22T12:00:00",
+     "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
+     "side": "artikel/1de8660326e5e2b6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "NTT DATA bruger Codex til fejlsøgning på 30 min",
+     "dato": "2026-07-22T00:00:00",
+     "foerst_set": "2026-07-22T00:00:00",
+     "link": "https://openai.com/index/ntt-data",
+     "side": "artikel/0723f553c0b85844.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer nyt program til små virksomheder",
+     "dato": "2026-07-21T17:00:00",
+     "foerst_set": "2026-07-21T17:00:00",
+     "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
+     "side": "artikel/9783627bd88cddeb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nye erhvervsfolk rykker ind i OpenAIs bestyrelser",
+     "dato": "2026-07-21T00:00:00",
+     "foerst_set": "2026-07-21T00:00:00",
+     "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
+     "side": "artikel/10666aebf14a4743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI deler erfaringer om langsigtede AI-modeller",
+     "dato": "2026-07-20T10:00:00",
+     "foerst_set": "2026-07-20T10:00:00",
+     "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+     "side": "artikel/960e35dd4f7dc710.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "The Verge AI",
+     1
+    ]
+   ]
+  },
+  {
+   "navn": "Google DeepMind",
+   "url": "https://deepmind.google/blog/rss.xml",
+   "kategori": "Labs",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 7,
+   "som_ekstra": 0,
+   "seneste": [
+    {
+     "rubrik": "Google opgraderer AI-modeller – de bliver billigere og hurtigere",
+     "dato": "2026-07-21T15:16:30",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/",
+     "side": "artikel/2ede6427da0c82cc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google hælder millioner i lynhurtig forskning",
+     "dato": "2026-07-22T13:38:54",
+     "foerst_set": "2026-07-22T13:38:54",
+     "link": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+     "side": "artikel/860743384445f2e5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer ny AI til it-sikkerhed",
+     "dato": "2026-07-17T15:00:11",
+     "foerst_set": "2026-07-17T15:00:11",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+     "side": "artikel/d6d19d126db7227d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google DeepMind satser på biologisk sikkerhed med AI",
+     "dato": "2026-07-16T09:30:42",
+     "foerst_set": "2026-07-16T09:30:42",
+     "link": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+     "side": "artikel/39191aed0f2bd8fd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google og AIM lancerer ATL Saathi til indiske lærere",
+     "dato": "2026-07-13T12:37:28",
+     "foerst_set": "2026-07-13T12:37:28",
+     "link": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
+     "side": "artikel/228200827ba929ba.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google indgår overraskende aftale med filmstudio",
+     "dato": "2026-07-03T14:25:43",
+     "foerst_set": "2026-07-03T14:25:43",
+     "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+     "side": "artikel/19d1bfd8b691b57f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer to nye hurtige medieværktøjer",
+     "dato": "2026-06-30T16:02:40",
+     "foerst_set": "2026-06-30T16:02:40",
+     "link": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
+     "side": "artikel/d866a21bc3340953.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": []
+  },
+  {
+   "navn": "arXiv cs.AI",
+   "url": "https://rss.arxiv.org/rss/cs.AI",
+   "kategori": "Forskning",
+   "kun_aktuel": false,
+   "max": null,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 25,
+   "som_ekstra": 0,
+   "seneste": [
+    {
+     "rubrik": "FlowEvo lader AI-agenter forbedre sig selv",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21596",
+     "side": "artikel/8d23ebd1b2763871.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ny arXiv-model advarer bedre om skovbrand",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21597",
+     "side": "artikel/9be98bbc887a1199.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Internal Information Decomposition splitter data",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21600",
+     "side": "artikel/3562d30ea97bee70.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere gør håndbevægelser til samtale med maskiner",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21601",
+     "side": "artikel/02727977114ebdd4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ArXiv-metode får AI til at køre hurtigere på din telefon",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21602",
+     "side": "artikel/7a89d59d36d1f336.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AgentKVShift genbruger AI's hukommelse",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21604",
+     "side": "artikel/53261bea112e2630.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TILT tegner præcist det du beder om",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21606",
+     "side": "artikel/2699f06212c0d286.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Spektral Flow Certificates hjælper GNN med store netværk",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21607",
+     "side": "artikel/cf41fc50ec9ae984.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "CHEST lader AI finde bedste løsning selv",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21609",
+     "side": "artikel/e44f3a8dc92a9d8c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "SCOPE og SCION tester AI's struktur-genkendelse",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21610",
+     "side": "artikel/c4e109ea76eeb428.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "LoRA kan ikke lære flertrinsprocedurer",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21612",
+     "side": "artikel/aea0056f4c3d7429.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere fandt AI'ens beslutningsknap",
+     "dato": "2026-07-28T00:00:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://arxiv.org/abs/2607.21613",
+     "side": "artikel/591530be4bd3e787.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": []
+  },
+  {
+   "navn": "Hacker News: AI",
+   "url": "https://hnrss.org/newest?q=AI&points=150",
+   "kategori": "Community",
+   "kun_aktuel": false,
+   "max": 6,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 6,
+   "som_ekstra": 0,
+   "seneste": [
+    {
+     "rubrik": "Terence Tao: AI ændrer matematikken indefra",
+     "dato": "2026-07-26T10:32:35",
+     "foerst_set": "2026-07-27T22:45:11",
+     "link": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+     "side": "artikel/eb63ed5813b38b1a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-boblen brister: Apple-brugere betaler prisen",
+     "dato": "2026-07-27T14:42:41",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+     "side": "artikel/361b016a958cf60a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+     "dato": "2026-07-27T14:07:48",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
+     "side": "artikel/8756b60eb8fa9e43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-selskaber makulerer sjældne bøger",
+     "dato": "2026-07-27T12:32:12",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
+     "side": "artikel/cf3eb0a91ac6ce1a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Frygt for AI-jobtab er overdrevet, siger Stanford-økonomer",
+     "dato": "2026-07-25T22:51:10",
+     "foerst_set": "2026-07-27T09:15:05",
+     "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+     "side": "artikel/719e63d03733035f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI kan gøre dig 100 gange hurtigere – og give dig stress",
+     "dato": "2026-07-26T13:13:03",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
+     "side": "artikel/51f6b5a29ea2e2af.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": []
+  },
+  {
+   "navn": "Version2",
+   "url": "https://www.version2.dk/rss",
+   "kategori": "Nyheder",
+   "kun_aktuel": true,
+   "max": 15,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 13,
+   "som_ekstra": 2,
+   "seneste": [
+    {
+     "rubrik": "Politikere kræver indgreb mod AI-våbenopskrifter",
+     "dato": "",
+     "foerst_set": "2026-07-28T15:23:09",
+     "link": "https://www.version2.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Google lokkes til at give våbenopskrifter"
+    },
+    {
+     "rubrik": "Trackman-stifter: AI har begrænsninger",
+     "dato": "",
+     "foerst_set": "2026-07-28T15:23:09",
+     "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+     "side": "",
+     "hvor": "under",
+     "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
+    },
+    {
+     "rubrik": "OpenAI bliver overhalet af Kina i AI-kapløbet",
+     "dato": "2026-07-28T12:45:00",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://www.version2.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kina overvåger Danmark med hjemme-spioner",
+     "dato": "2026-07-27T10:58:00",
+     "foerst_set": "2026-07-27T09:15:05",
+     "link": "https://www.version2.dk/holdning/indtaegtsdaekket-spionage",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
+     "dato": "2026-07-27T10:50:00",
+     "foerst_set": "2026-07-27T08:55:57",
+     "link": "https://www.version2.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAIs AI-agent slap fri og hackede selv",
+     "dato": "2026-07-23T13:50:00",
+     "foerst_set": "2026-07-25T19:30:24",
+     "link": "https://www.version2.dk/artikel/ny-ai-agent-fra-openai-broed-ud-af-lukket-testmiljoe-skabte-selv-internetadgang-og-hackede-loes",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EU advarer om elbilers sikkerhedshuller",
+     "dato": "2026-07-22T12:35:00",
+     "foerst_set": "2026-07-25T19:13:33",
+     "link": "https://www.version2.dk/artikel/eu-lande-advarer-el-biler-udgoer-en-stigende-it-sikkerhedsrisiko-0",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Codeberg forbyder AI-indhold: Techbros raser",
+     "dato": "2026-07-23T08:42:46",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/holdning/techbros-paa-retraete",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Danske Systematic leverer software til australsk hær",
+     "dato": "2026-07-21T11:45:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/danskere-skal-levere-vigtig-software-til-den-australske-haer",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "PFA lækker kunders pensionsoplysninger",
+     "dato": "2026-07-20T12:58:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/fortrolige-oplysninger-om-kunders-formue-og-investeringer-delt-i-databrud-hos-pensionsselskab",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kommune brugte AI i borger-sag uden at sige det",
+     "dato": "2026-07-18T12:00:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/kommune-i-ai-bommert-graensen-mellem-soege-oplysninger-paa-nettet-og-bruge-ai-er-efterhaanden",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nyt password: Vibrationer i dit kranie",
+     "dato": "2026-07-17T09:48:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/vibrationer-i-dit-kranie-kan-blive-dit-nye-password",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Datamuseum.dk udfordrer med hulkort-gåde",
+     "dato": "2026-07-16T21:21:03",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/holdning/datamuseumdks-sommeropgave",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Medarbejder i Skat forsvandt fra sag",
+     "dato": "2026-07-14T13:01:20",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://www.version2.dk/artikel/inhabil-medarbejder-forsvandt-sporloest-fra-whistleblowerportal-med-min-erfaring-er-der-foregaaet",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "Ingeniøren",
+     4
+    ]
+   ]
+  },
+  {
+   "navn": "Ingeniøren",
+   "url": "https://ing.dk/rss",
+   "kategori": "Nyheder",
+   "kun_aktuel": true,
+   "max": 15,
+   "aktiv": true,
+   "status": "ukendt",
+   "fejl": "",
+   "hentet": 0,
+   "i_listen": 12,
+   "som_ekstra": 2,
+   "seneste": [
+    {
+     "rubrik": "OpenAI på hælene, Kina nærmer sig",
+     "dato": "",
+     "foerst_set": "2026-07-28T15:23:09",
+     "link": "https://ing.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI bliver overhalet af Kina i AI-kapløbet"
+    },
+    {
+     "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
+     "dato": "",
+     "foerst_set": "2026-07-28T15:23:09",
+     "link": "https://ing.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
+     "side": "",
+     "hvor": "under",
+     "under": "Bornholmere bygger eget mobilnetværk efter krise"
+    },
+    {
+     "rubrik": "Fredrik Tuxen: Fra garage til milliardforretning med Trackman",
+     "dato": "",
+     "foerst_set": "2026-07-25T17:49:55.436275+00:00",
+     "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
+     "side": "",
+     "hvor": "under",
+     "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
+    },
+    {
+     "rubrik": "Energinet udelukker Energidrift",
+     "dato": "2026-07-28T15:07:00",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://ing.dk/artikel/kaos-om-klemte-elkunder-fortsaetter-energinet-udelukker-elselskab",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Briter får lov til altansolceller i stikkontakten",
+     "dato": "2026-07-28T14:03:00",
+     "foerst_set": "2026-07-28T15:18:54",
+     "link": "https://ing.dk/artikel/hjaelp-midt-i-hoeje-energipriser-briter-faar-lov-til-slutte-altansolceller-i-stikkontakten",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Færre vil være ingeniør - IDA-formand advarer",
+     "dato": "2026-07-28T10:35:00",
+     "foerst_set": "2026-07-28T10:15:21",
+     "link": "https://ing.dk/artikel/ingenioeroptaget-falder-igen-vi-fjerner-grundlaget-landets-ambitioner",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Google lokkes til at give våbenopskrifter",
+     "dato": "2026-07-28T06:00:00",
+     "foerst_set": "2026-07-28T04:46:26",
+     "link": "https://ing.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Henrik Stiesdal forklarer takker på vindmøllevinger",
+     "dato": "2026-07-27T15:55:00",
+     "foerst_set": "2026-07-27T17:18:43",
+     "link": "https://ing.dk/artikel/spoerg-fagfolket-hvorfor-er-der-takker-paa-vindmoellevinger",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cyklistforbundet: Send cykler ud på vejen",
+     "dato": "2026-07-27T14:00:00",
+     "foerst_set": "2026-07-27T12:44:06",
+     "link": "https://ing.dk/artikel/traengsel-paa-cykelstierne-vil-sende-de-hurtigste-cyklister-ud-blandt-bilerne",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Catl bygger kæmpe natrium-batterier i Europa",
+     "dato": "2026-07-27T09:30:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://ing.dk/artikel/natrium-ion-teknologien-tager-springet-ind-i-europa-det-er-naeste-skridt-i-vores-energilagring",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Maria Reumert Gjerding: Havbeskyttelse for langsom",
+     "dato": "2026-07-27T05:30:00",
+     "foerst_set": "2026-07-27T06:56:48",
+     "link": "https://ing.dk/artikel/afgoerende-beskyttelse-af-forpint-hav-har-staaet-stille-i-aar-det-er-dybt-kritisabelt",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Danske forskere laver DNA-støvsuger",
+     "dato": "2026-07-26T10:00:00",
+     "foerst_set": "2026-07-26T08:04:25",
+     "link": "https://ing.dk/artikel/danske-forskere-har-udviklet-en-dna-stoevsuger-afsloerer-bison-natugle-og-dompap",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne",
+     "dato": "2026-07-25T16:00:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://ing.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ingeniøren: Sådan virker de nye transistorer",
+     "dato": "2026-07-25T10:00:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://ing.dk/artikel/1950-saadan-fungerer-de-nye-transistorer",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "USA og Saudi-Arabien indgår atomkraftaftale",
+     "dato": "2026-07-24T15:50:00",
+     "foerst_set": "2026-07-25T17:49:55",
+     "link": "https://ing.dk/artikel/saudi-arabien-og-usa-indgaar-aftale-om-atomkraft-fornyer-frygt-vaabenkaploeb",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "Version2",
+     4
+    ]
+   ]
+  }
+ ],
+ "feeds_fil": {
+  "kommentar": "Tilføj eller fjern kilder her - crawleren læser denne fil. 'kategori' er reserve-kategori. 'max' begrænser antal artikler pr. kørsel fra den kilde (ellers 25). 'kun_aktuel': true bruges til udgivere, der IKKE tillader et arkiv af deres overskrifter - de får ingen artikelside, ingen genfortælling og ingen plads i sitemap, og forsvinder når de ryger ud af udgiverens eget feed.",
+  "feeds": [
+   {
+    "navn": "TechCrunch AI",
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "kategori": "Nyheder"
+   },
+   {
+    "navn": "The Verge AI",
+    "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+    "kategori": "Nyheder"
+   },
+   {
+    "navn": "VentureBeat AI",
+    "url": "https://venturebeat.com/category/ai/feed/",
+    "kategori": "Business"
+   },
+   {
+    "navn": "Ars Technica AI",
+    "url": "https://arstechnica.com/ai/feed/",
+    "kategori": "Nyheder"
+   },
+   {
+    "navn": "MIT Tech Review AI",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+    "kategori": "Dybde"
+   },
+   {
+    "navn": "OpenAI Blog",
+    "url": "https://openai.com/news/rss.xml",
+    "kategori": "Labs"
+   },
+   {
+    "navn": "Google DeepMind",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "kategori": "Labs"
+   },
+   {
+    "navn": "arXiv cs.AI",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "kategori": "Forskning"
+   },
+   {
+    "navn": "Hacker News: AI",
+    "url": "https://hnrss.org/newest?q=AI&points=150",
+    "kategori": "Community",
+    "max": 6
+   },
+   {
+    "navn": "Version2",
+    "url": "https://www.version2.dk/rss",
+    "kategori": "Nyheder",
+    "kun_aktuel": true,
+    "max": 15
+   },
+   {
+    "navn": "Ingeniøren",
+    "url": "https://ing.dk/rss",
+    "kategori": "Nyheder",
+    "kun_aktuel": true,
+    "max": 15
+   }
+  ]
+ }
+};

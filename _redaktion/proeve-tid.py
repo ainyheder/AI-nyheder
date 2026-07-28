@@ -199,8 +199,19 @@ efter = [a for a in kopi if a.get("foerst_set") and butik_fil.get(a["link"])
 print(f"     efter rettelsen: {len(efter)}")
 ok("C1 ingen artikel bærer længere et tidspunkt senere end hukommelsen",
    len(efter) == 0, [a["link"] for a in efter][:3])
-ok("C2 og rettelsen rammer faktisk noget (ellers prøver prøven intet)",
-   len(foer) > 10, len(foer))
+# Tallet må IKKE stå fast. Da prøven blev skrevet, bar 48 af 147 artikler et
+# for sent tidspunkt; efter første kørsel med rettelsen var det 0. En påstand
+# om "mindst 10" ville derfor gå rød af, at fejlen ER rettet. At mekanismen
+# virker, måles i afsnit A på opdigtede data — dét er stedet, den skal prøves.
+print(f"     (0 her betyder, at hukommelsen har gjort sit arbejde — ikke at prøven sover;"
+      f" mekanismen prøves i afsnit A)")
+ok("C2 og ingen af dem er blevet VÆRRE af rettelsen",
+   not [a for a, b_ in zip(kopi, arts)
+        if a.get("foerst_set") and b_.get("foerst_set")
+        and a["foerst_set"] > b_["foerst_set"]],
+   [a["link"] for a, b_ in zip(kopi, arts)
+    if a.get("foerst_set") and b_.get("foerst_set")
+    and a["foerst_set"] > b_["foerst_set"]][:3])
 ok("C3 intet eget_foerst_set ligger senere end butikkens tal",
    all(not a.get("eget_foerst_set") or a["eget_foerst_set"] <= butik_fil.get(a["link"], "9")
        for a in kopi))

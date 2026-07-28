@@ -306,6 +306,57 @@ select, textarea { width:100%; font-family:inherit; font-size:14px; padding:10px
 textarea { font-family:"JetBrains Mono",monospace; font-size:12.5px; line-height:1.6; min-height:300px; resize:vertical; }
 select:focus, textarea:focus { outline:2px solid var(--accent); border-color:transparent; }
 .raekke { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; align-items:center; }
+
+/* ---- Kilder ---- */
+table.kilder { width:100%; border-collapse:collapse; font-size:14px; }
+table.kilder th { text-align:left; font-size:11.5px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--svag); font-weight:700;
+  padding:0 10px 8px; border-bottom:1px solid var(--kant); }
+table.kilder th.tal, table.kilder td.tal { text-align:right; width:88px; }
+table.kilder td { padding:12px 10px; border-bottom:1px solid var(--kant);
+  vertical-align:top; }
+table.kilder td.tal { font-variant-numeric:tabular-nums; font-size:15px; }
+table.kilder td.tal b { font-size:17px; }
+.kilde-r.fra { opacity:.5; }
+.kilde-navn { font-weight:650; }
+.kilde-url { font-size:12px; color:var(--svag); word-break:break-all; margin-top:2px; }
+.kilde-noter { font-size:12px; color:var(--svag); margin-top:3px; }
+.kilde-fejl { font-size:12.5px; margin-top:5px; color:#8a4b00; max-width:60ch; }
+.kilde-knap { white-space:nowrap; width:1%; }
+.km { font-size:11px; padding:1px 7px; border-radius:99px; margin-left:6px;
+  vertical-align:middle; font-weight:700; letter-spacing:.02em; }
+.km-fra { background:#eceff3; color:#5b6675; }
+.km-fejl { background:#fde8e4; color:#8a2b16; }
+.km-tom { background:#fff2d6; color:#7a5300; }
+.km-ny { background:#e6f0ff; color:#1c4e8a; }
+.kilde-advarsel { margin-top:18px; padding:12px 14px; border-radius:10px;
+  background:#fff8e6; border:1px solid #f0dfae; font-size:13.5px; max-width:80ch; }
+.kilde-ny { margin-top:30px; padding-top:22px; border-top:1px solid var(--kant); }
+.kilde-felter { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px; max-width:900px; }
+.kilde-felter label { display:block; font-size:12px; color:var(--svag); font-weight:650; }
+.kilde-felter input[type=text], .kilde-felter input:not([type]) { width:100%;
+  margin-top:4px; padding:8px 10px; border:1px solid var(--kant);
+  border-radius:8px; font:inherit; font-size:14px; }
+.kilde-felter label.afkryds { grid-column:1/-1; display:flex; gap:8px;
+  align-items:flex-start; font-weight:500; color:inherit; font-size:13.5px; }
+.kilde-kvit { font-size:13px; color:var(--svag); }
+.kilde-gem { margin-top:26px; padding-top:20px; border-top:1px solid var(--kant); }
+.kilde-overlap { font-size:12.5px; margin-top:4px; color:#7a5300; }
+button.fold { border:0; background:none; cursor:pointer; font:inherit; font-size:13px;
+  color:var(--svag); padding:0 4px 0 0; line-height:1; }
+button.fold:hover { color:inherit; }
+tr.kilde-fold-r > td { background:var(--flade,#fafbfc); padding:0 10px 16px; }
+.kilde-artikler-top { font-size:12.5px; color:var(--svag); margin:2px 0 8px; }
+.ka { display:flex; gap:10px; align-items:baseline; padding:4px 0;
+  border-bottom:1px dotted var(--kant); font-size:13.5px; }
+.ka:last-child { border-bottom:0; }
+.ka-dato { font-size:11.5px; color:var(--svag); font-variant-numeric:tabular-nums;
+  white-space:nowrap; min-width:76px; }
+.ka a { color:inherit; }
+.ka-dublet { opacity:.72; }
+.ka-under { font-size:12px; color:#7a5300; white-space:nowrap; }
+.kilde-tom { font-size:13.5px; color:var(--svag); padding:6px 0 10px; }
 /* a.k er med, fordi "Åbn artiklen" er et rigtigt link og ikke en knap - den
    skal kunne åbnes i ny fane, men se ud som resten. */
 button.k, a.k { font:inherit; font-size:14px; font-weight:700; border-radius:999px; padding:11px 22px; cursor:pointer; border:1px solid var(--linje); background:var(--kort); color:var(--blaek); display:inline-block; text-decoration:none; }
@@ -419,6 +470,10 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
 <!-- Læsertallene. Filen findes først, når CLOUDFLARE_API_TOKEN er sat som
      GitHub-secret; indtil da siger Læserne-ruden selv, hvad der mangler. -->
 <script src="../data/laesertal-data.js" onerror="window.LAESERTAL_MANGLER=true"></script>
+<!-- Hvad hver nyhedskilde leverede. Skrives af crawleren ved HVER kørsel, også
+     på GitHub Actions - crawleren er eneste skribent, så der er ingen
+     flettekonflikt at frygte. Se skriv_kilde_status i crawler.py. -->
+<script src="../data/kilder-data.js" onerror="window.KILDER_MANGLER=true"></script>
 <script>
 (function () {
   var S = window.HJERNE_STATUS;
@@ -462,6 +517,13 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   });
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+  /* esc() dækker & < >, men IKKE anførselstegn — den blev skrevet til tekst
+     MELLEM tags. Bruges den i en attributværdi, kan et " bryde ud og tilføje
+     fx onmouseover=. Kildenavne og links kommer fra fremmede RSS-feeds og fra
+     et felt, redaktionen selv skriver, så begge veje er reelle: et link med et
+     " kørte kode i panelet, og en kilde ved navn Wired "AI" ødelagde
+     fold-ud-knappen uden en eneste fejlbesked. */
+  function escA(s) { return esc(s).replace(/"/g, "&quot;").replace(/'/g, "&#39;"); }
 
   function aktivModel(n) {
     if (aendret[n] && aendret[n].model) return aendret[n].model;
@@ -1011,9 +1073,231 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
               " etaper · kører hver time", etaper: crawler },
       { id: "S-loop", ikon: "◆", navn: "Arbejdsloopet",
         under: "Sådan bliver siden bedre — 4 etaper", etaper: loop },
+      { id: "S-kilder", ikon: "◎", navn: "Kilder",
+        under: kilderUnder(), egen: kilderHtml },
       { id: "S-historik", ikon: "◷", navn: "Historik",
         under: historikUnder(), egen: historikHtml }
     ];
+  }
+
+  /* ---- Kilder: hvor nyhederne kommer fra, og hvad hver enkelt leverer ----
+     Læses af crawlerens `data/kilder-data.js`. Redigeres her og gemmes tilbage
+     i `opsaetning/feeds.json` med samme fil-vælger som køen bruger.
+
+     `feedsArb` er arbejdskopien. Den starter som det, crawleren SIDST læste i
+     feeds.json - ikke som noget, panelet selv bygger af tællingerne. Det er med
+     vilje: kommer der et felt i feeds.json, som panelet ikke kender, skal det
+     overleve et gem i stedet for at blive slettet af en, der ikke vidste det
+     fandtes. */
+  var K = window.KILDER_STATUS || null;
+  var feedsArb = null, feedsRoert = false;
+
+  function feedsFil() {
+    if (!feedsArb) {
+      var raa = (K && K.feeds_fil) ? K.feeds_fil : { feeds: [] };
+      feedsArb = JSON.parse(JSON.stringify(raa));
+      if (!Array.isArray(feedsArb.feeds)) feedsArb.feeds = [];
+    }
+    return feedsArb;
+  }
+  function kilderUnder() {
+    if (!K) return "Kør et crawl, så tallene kommer";
+    var f = feedsFil().feeds;
+    var til = f.filter(function (x) { return x.aktiv !== false; }).length;
+    return f.length + " kilder · " + til + " slået til" +
+           (feedsRoert ? " · ikke gemt endnu" : "");
+  }
+  function kildeTal(navn) {
+    var r = ((K && K.kilder) || []).filter(function (x) { return x.navn === navn; })[0];
+    return r || { hentet: 0, i_listen: 0, som_ekstra: 0, status: "ukendt", fejl: "" };
+  }
+  function kildeMaerke(f, t) {
+    if (f.aktiv === false) return ['<span class="km km-fra">slået fra</span>', ""];
+    if (t.status === "fejl") return ['<span class="km km-fejl">svarede ikke</span>', t.fejl];
+    if (t.status === "ukendt") return ['<span class="km km-ny">ikke hentet endnu</span>',
+      "Kilden er tilføjet her, men crawleren har ikke kørt siden. Første kørsel viser, om adressen virker."];
+    if (!t.i_listen && !t.som_ekstra) return ['<span class="km km-tom">gav intet</span>',
+      "Feedet svarede, men ingen af artiklerne nåede forsiden."];
+    return ["", ""];
+  }
+
+  /* Fold-ud: hvad kilden faktisk har leveret. Formålet er ikke pynt — det er
+     at kunne se, om to sider skriver det samme, og så tage den ene ud. Derfor
+     står det tydeligt, når en artikel ligger UNDER en anden histories
+     overskrift: så var den en dublet, og en anden kilde vandt. */
+  var kilderAabne = {};
+
+  function kildeArtiklerHtml(navn, t) {
+    var liste = t.seneste || [];
+    if (!liste.length) {
+      return '<div class="kilde-tom">Ingen artikler fra ' + esc(navn) +
+        " i den nuværende liste. Enten leverer feedet intet, eller også er alt " +
+        "faldet ud igen som for gammelt.</div>";
+    }
+    var dubl = liste.filter(function (r) { return r.hvor === "under"; }).length;
+    return '<div class="kilde-artikler"><div class="kilde-artikler-top">' +
+      "Seneste " + liste.length + " fra " + esc(navn) +
+      (dubl ? " — <b>" + dubl + " af dem lå under en anden kildes overskrift</b>" : "") +
+      "</div>" + liste.map(function (r) {
+        var maal = r.side ? "../" + r.side : r.link;
+        return '<div class="ka' + (r.hvor === "under" ? " ka-dublet" : "") + '">' +
+          '<span class="ka-dato">' + esc((r.foerst_set || r.dato || "").slice(0, 10)) + "</span>" +
+          (maal ? '<a href="' + escA(maal) + '" target="_blank" rel="noopener">' +
+                  esc(r.rubrik || "(uden overskrift)") + "</a>"
+                : esc(r.rubrik || "(uden overskrift)")) +
+          (r.hvor === "under"
+            ? '<span class="ka-under">lå under «' + esc(r.under) + "»</span>" : "") +
+          "</div>";
+      }).join("") + "</div>";
+  }
+
+  function kilderHtml() {
+    if (!K) {
+      return '<div class="tom-besked"><b>Ingen tal endnu.</b><br><br>' +
+        "<code>data/kilder-data.js</code> skrives af crawleren ved hver kørsel. " +
+        "Kør et crawl, eller hent det seneste ned fra GitHub, så står listen her." +
+        "</div>";
+    }
+    var f = feedsFil().feeds;
+    var raekker = f.map(function (x, i) {
+      var t = kildeTal(x.navn), m = kildeMaerke(x, t);
+      var noter = [];
+      if (x.kategori) noter.push(esc(x.kategori));
+      if (x.kun_aktuel) noter.push("arkivforbud");
+      if (x.max) noter.push("højst " + x.max);
+      var aaben = kilderAabne[x.navn];
+      var over = (t.overlap || []).filter(function (o) { return o[0] !== x.navn; });
+      return '<tr class="kilde-r' + (x.aktiv === false ? " fra" : "") + '">' +
+        '<td><div class="kilde-navn">' +
+        '<button class="fold" data-kilde-fold="' + escA(x.navn) + '" aria-expanded="' +
+        (aaben ? "true" : "false") + '">' + (aaben ? "▾" : "▸") + "</button> " +
+        esc(x.navn) + " " + m[0] + "</div>" +
+        '<div class="kilde-url">' + esc(x.url) + "</div>" +
+        (noter.length ? '<div class="kilde-noter">' + noter.join(" · ") + "</div>" : "") +
+        (over.length ? '<div class="kilde-overlap">Skrev det samme som ' +
+          over.map(function (o) { return esc(o[0]) + " " + o[1] + "×"; }).join(", ") +
+          "</div>" : "") +
+        (m[1] ? '<div class="kilde-fejl">' + esc(m[1]) + "</div>" : "") + "</td>" +
+        '<td class="tal">' + t.hentet + "</td>" +
+        '<td class="tal"><b>' + t.i_listen + "</b></td>" +
+        '<td class="tal">' + t.som_ekstra + "</td>" +
+        '<td class="kilde-knap">' +
+        '<button class="k" data-kilde-til="' + i + '">' +
+        (x.aktiv === false ? "Slå til" : "Slå fra") + "</button> " +
+        '<button class="k" data-kilde-slet="' + i + '">Slet</button></td></tr>' +
+        (aaben ? '<tr class="kilde-fold-r"><td colspan="5">' + kildeArtiklerHtml(x.navn, t) +
+                 "</td></tr>" : "");
+    }).join("");
+
+    var ukendte = ((K && K.kilder) || []).filter(function (r) {
+      return r.status === "ikke_i_listen";
+    });
+
+    return '<p class="manchet">Hvor nyhederne kommer fra. <b>Hentet</b> er hvad ' +
+      "feedet gav ved seneste kørsel, <b>på forsiden</b> hvor mange der endte i " +
+      "listen, og <b>som ekstra</b> hvor tit kilden står som ekstra kilde under en " +
+      "anden histories overskrift. De tre tal er ikke ens: dubletter, for gamle " +
+      "artikler og sammenlægninger tager af puljen undervejs." +
+      (K.opdateret ? " Målt " + esc(String(K.opdateret).slice(0, 16).replace("T", " kl. ")) + "." : "") +
+      "</p>" +
+      '<table class="kilder"><thead><tr><th>Kilde</th><th class="tal">Hentet</th>' +
+      '<th class="tal">På forsiden</th><th class="tal">Som ekstra</th><th></th></tr></thead>' +
+      "<tbody>" + raekker + "</tbody></table>" +
+      (ukendte.length ? '<div class="kilde-advarsel"><b>' + ukendte.length +
+        " kilde(r) står i artiklerne, men ikke i listen:</b> " +
+        ukendte.map(function (r) { return esc(r.navn); }).join(", ") +
+        ". De er sandsynligvis lige slettet — deres artikler forsvinder fra " +
+        "forsiden ved næste kørsel, men artikelsiderne bliver liggende.</div>" : "") +
+      '<div class="kilde-ny"><h3>Tilføj en kilde</h3>' +
+      '<p class="manchet">Adressen skal være et RSS- eller Atom-feed. Panelet kan ' +
+      "ikke selv prøve den — browseren blokerer det — så først når crawleren har " +
+      "kørt, står der her, om den virkede.</p>" +
+      '<div class="kilde-felter">' +
+      '<label>Navn<input id="knNavn" placeholder="fx Wired AI" spellcheck="false"></label>' +
+      '<label>RSS-adresse<input id="knUrl" placeholder="https://…/feed" spellcheck="false"></label>' +
+      '<label>Kategori<input id="knKat" placeholder="Nyheder" spellcheck="false"></label>' +
+      '<label>Højst pr. kørsel<input id="knMax" placeholder="valgfrit" inputmode="numeric"></label>' +
+      '<label class="afkryds"><input type="checkbox" id="knAktuel"> Arkivforbud ' +
+      "(udgiveren tillader ikke, at vi gemmer teksten)</label>" +
+      "</div>" +
+      '<div class="raekke"><button class="k fyldt" id="knTilfoej">Tilføj kilde</button>' +
+      '<span class="kilde-kvit" id="knKvit"></span></div></div>' +
+      '<div class="raekke kilde-gem"><button class="k fyldt" id="kGem"' +
+      (feedsRoert ? "" : " disabled") + ">Gem feeds.json</button>" +
+      '<span class="kilde-kvit" id="kGemKvit">' +
+      (feedsRoert
+        ? "Ændringer er ikke gemt endnu"
+        : "Intet at gemme endnu") + "</span></div>" +
+      '<div class="kilde-advarsel kilde-alder">Listen her er, som <code>feeds.json' +
+      "</code> så ud, da crawleren sidst kørte" +
+      (K.opdateret ? " — " + esc(String(K.opdateret).slice(0, 16).replace("T", " kl. ")) : "") +
+      ". Gemmer du, skrives HELE filen. Har nogen rettet i den siden — i hånden " +
+      "eller fra en anden maskine — bliver den rettelse skrevet over. Hent ned " +
+      "fra GitHub først, hvis du er i tvivl.</div>";
+  }
+
+  function kilderHent() {
+    var b = new Blob([JSON.stringify(feedsFil(), null, 2) + "\n"],
+                     { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(b); a.download = "feeds.json";
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+
+  async function kilderGem() {
+    var kvit = document.getElementById("kGemKvit");
+    function sig(t) { if (kvit) kvit.textContent = t; }
+    var fil = feedsFil();
+    if (!Array.isArray(fil.feeds) || !fil.feeds.length) {
+      // Uden den her kan ét klik lægge en tom kildeliste oven i den rigtige,
+      // hvis øjebliksbilledet mangler. Så holder siden op med at få nyheder.
+      sig("Listen er tom — det gemmer jeg ikke oven i den rigtige fil.");
+      return;
+    }
+    var tekst = JSON.stringify(fil, null, 2) + "\n";
+    if (!window.showSaveFilePicker) { kilderHent(); sig("Hentet i stedet ↓ — læg den i opsaetning/"); return; }
+    try {
+      var h = await window.showSaveFilePicker({
+        suggestedName: "feeds.json",
+        types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
+      });
+      var w = await h.createWritable();
+      await w.write(tekst);
+      await w.close();
+      feedsRoert = false;
+      sig("Gemt ✓ — push, og ændringen gælder fra næste kørsel");
+      tegnSide();
+    } catch (fejl) {
+      if (fejl && fejl.name === "AbortError") return;
+      kilderHent(); sig("Kunne ikke gemme — hentet ↓");
+    }
+  }
+
+  function kilderBind() {
+    var t = document.getElementById("knTilfoej");
+    if (t) t.addEventListener("click", function () {
+      var navn = (document.getElementById("knNavn").value || "").trim();
+      var url = (document.getElementById("knUrl").value || "").trim();
+      var kvit = document.getElementById("knKvit");
+      if (!navn || !url) { kvit.textContent = "Både navn og adresse skal udfyldes."; return; }
+      if (!/^https?:\/\//i.test(url)) { kvit.textContent = "Adressen skal begynde med http:// eller https://"; return; }
+      var f = feedsFil().feeds;
+      if (f.some(function (x) { return x.navn === navn; })) {
+        kvit.textContent = "Der er allerede en kilde, der hedder " + navn + "."; return;
+      }
+      if (f.some(function (x) { return x.url === url; })) {
+        kvit.textContent = "Den adresse står allerede på listen."; return;
+      }
+      var ny = { navn: navn, url: url };
+      var kat = (document.getElementById("knKat").value || "").trim();
+      if (kat) ny.kategori = kat;
+      var mx = parseInt(document.getElementById("knMax").value, 10);
+      if (mx > 0) ny.max = mx;
+      if (document.getElementById("knAktuel").checked) ny.kun_aktuel = true;
+      f.push(ny); feedsRoert = true; tegn();
+    });
+    var g = document.getElementById("kGem");
+    if (g) g.addEventListener("click", kilderGem);
   }
 
   function etapeAendret(e) {
@@ -1085,9 +1369,14 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       return;
     }
     if (s.egen) {
-      rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
-        '<p class="manchet">Hvad sessionerne har lavet, nyeste først. Én linje pr. ' +
-        "post — klik på den for at læse hele posten.</p>" + s.egen();
+      // Manchetten hørte før kun til Historik og stod som fast tekst her. Med
+      // Kilder-ruden ville den have løjet, så hver egen-rude skriver nu sin egen.
+      var man = s.id === "S-historik"
+        ? '<p class="manchet">Hvad sessionerne har lavet, nyeste først. Én linje pr. ' +
+          "post — klik på den for at læse hele posten.</p>"
+        : "";
+      rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" + man + s.egen();
+      if (s.id === "S-kilder") kilderBind();
       return;
     }
     if (s.etaper[0] && s.etaper[0].laesertal) {
@@ -1134,6 +1423,38 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     if (k) { valgt = k.dataset.etape; tegn(); window.scrollTo(0, 0); }
   });
   rude.addEventListener("click", function (ev) {
+    var fold = ev.target.closest("[data-kilde-fold]");
+    if (fold) {
+      var n0 = fold.dataset.kildeFold;
+      kilderAabne[n0] = !kilderAabne[n0];
+      tegnRude();
+      return;
+    }
+    var til = ev.target.closest("[data-kilde-til]");
+    if (til) {
+      var f1 = feedsFil().feeds[+til.dataset.kildeTil];
+      if (f1) { f1.aktiv = (f1.aktiv === false); if (f1.aktiv) delete f1.aktiv; feedsRoert = true; tegn(); }
+      return;
+    }
+    var slet = ev.target.closest("[data-kilde-slet]");
+    if (slet) {
+      var i = +slet.dataset.kildeSlet, liste = feedsFil().feeds, f2 = liste[i];
+      if (!f2) return;
+      // To tryk, ikke ét. En slettet kilde tager sine artikler af forsiden ved
+      // næste kørsel, og adressen er væk. Knappen skifter tekst i stedet for at
+      // åbne en dialogboks: panelet kører fra file://, og en confirm() dér
+      // blokerer alt andet, hvis nogen klikker forkert.
+      if (slet.dataset.sikker !== "1") {
+        slet.dataset.sikker = "1";
+        slet.textContent = "Slet " + f2.navn + "?";
+        setTimeout(function () {
+          if (slet.isConnected) { slet.dataset.sikker = ""; slet.textContent = "Slet"; }
+        }, 4000);
+        return;
+      }
+      liste.splice(i, 1); feedsRoert = true; tegn();
+      return;
+    }
     var t = ev.target.closest(".hj");
     if (t) { aabn(t.dataset.n); return; }
     var a = ev.target.closest(".art");

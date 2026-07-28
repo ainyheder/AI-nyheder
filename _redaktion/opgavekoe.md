@@ -66,15 +66,6 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **`data/foerst_set.json` skal med i det næste push, ellers virker
-      tidsrettelsen ikke.** Ny fil fra 28.07. `.github/workflows/crawl.yml`
-      linje 84 kører `git add data`, så Actions tager den med af sig selv —
-      men den FØRSTE udgave skal med i redaktionens eget push. Kommer den
-      ikke med, læser crawleren en tom hukommelse, og `foerst_set` begynder
-      forfra med at rykke frem.
-      **Rammer: 456 visninger/7 dage (forsiden).** Kan hakkes af, når filen
-      står i `origin/main`. *Punkt 6.*
-
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
       efter alle de seneste dages ændringer.
       **Rammer: 456 visninger/7 dage (forsiden)** — en stor del af den direkte
@@ -429,6 +420,52 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **Kontrolpanelet kan nu vise og redigere nyhedskilderne.** *(28.07.2026,
+      chat — bedt om af redaktionen direkte)* Ny sektion "Kilder" i panelet, og
+      `data/kilder.json` + `kilder-data.js` skrevet af crawleren ved hver
+      kørsel — også på Actions, fordi crawleren er eneste skribent dér og der
+      derfor ikke er en flettekonflikt at frygte.
+
+      **Viser:** pr. kilde hvad feedet gav (`hentet`), hvad der endte på
+      forsiden (`i_listen`) og hvor tit kilden står som ekstra kilde under en
+      anden histories overskrift (`som_ekstra`). De tre tal er ikke ens, og det
+      står i manchetten hvorfor. **Målt ved bygningen: VentureBeat AI havde 0 og
+      0** — hentet 19 gange i døgnet uden at give noget.
+
+      **Fold ud pr. kilde** viser dens seneste artikler, med de dubletter, der
+      lå under en anden kildes overskrift, tydeligt markeret og med navnet på
+      den historie, de lå under. Dertil en linje pr. kilde om, hvem den skriver
+      det samme som. **Målt: Version2 og Ingeniøren overlapper 4 gange**,
+      TechCrunch og MIT Tech Review 2. Det er dét, der skal kunne afgøre, om en
+      kilde kan undværes.
+
+      **Redigering:** slå til/fra (nyt felt `aktiv` i `feeds.json`; kun præcis
+      `false` slukker, så en halvskrevet værdi ikke kan slukke for nyhederne),
+      slet med to tryk, og tilføj med navn/adresse/kategori/loft. Gemmes tilbage
+      i `opsaetning/feeds.json` med samme fil-vælger, køen bruger. Panelet kan
+      ikke selv prøve en ny adresse — browseren blokerer det fra `file://` — så
+      crawleren melder tilbage, og en ny kilde står som "ikke hentet endnu",
+      indtil den har kørt.
+
+      **Prøver:** `_redaktion/proeve-kilder.py` **40 grønne / 0 røde** og
+      `_redaktion/proeve-kilder.js` (jsdom mod det rigtige panel) **66 / 0**.
+      **17 mutationer**, alle fanget.
+
+      **Den uafhængige gennemgang fandt fem ting, og den første var alvorlig:**
+      panelets `esc()` escaper ikke anførselstegn — den blev skrevet til tekst
+      mellem tags — og jeg brugte den i to attributter. Et link fra et fremmed
+      RSS-feed med et `"` kunne køre kode i panelet, og en kilde ved navn
+      `Wired "AI"` ødelagde fold-ud-knappen uden en eneste fejlbesked. Ny
+      `escA()` til attributter. Dertil: fold-ud-loftet skar præcis de dubletter
+      væk, listen findes for (de har ofte intet `foerst_set`, så de sorterede
+      sidst — Ars Technica stod med "som ekstra 1" og nul at folde ud);
+      panelet kunne skrive et forældet øjebliksbillede tilbage og rulle en
+      tidligere ændring tilbage i tavshed (nu står der, hvor gammelt det er, og
+      knappen er låst, indtil noget er rørt); `som_ekstra` talte en kilde under
+      sig selv med; og to mutationer overlevede prøven. Alt rettet.
+      *Punkt 4 og 6.*
+
 
 - [x] **Frigivelsen ruller kun `andre` tilbage — vinderen beholder taberens
       tidspunkt og billede.** *(28.07.2026, hovedkørsel kl. 05:45-07:1x — chat

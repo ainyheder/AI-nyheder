@@ -35,6 +35,11 @@ FEEDS_FIL = OPSAETNING / "feeds.json"
 OUTPUT_FIL = ROOT / "data" / "articles.json"
 # Hukommelsen om, hvornår vi så en artikel første gang. Se `_laes_foerst_set_butik`.
 FOERST_SET_FIL = ROOT / "data" / "foerst_set.json"
+# Hvad hver kilde leverede — til kontrolpanelet. Se `skriv_kilde_status`.
+KILDER_FIL = ROOT / "data" / "kilder.json"
+# Hvor mange rubrikker pr. kilde der lægges i panelets fil. arXiv alene har 25
+# artikler i listen, og filen hentes i én blok, så der skal være et loft.
+_SENESTE_PR_KILDE = 12
 MAX_PER_FEED = 25            # max artikler pr. feed
 MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
 TIMEOUT_SEK = 20
@@ -497,6 +502,199 @@ def skriv_hjerne_status() -> None:
         "window.HJERNE_STATUS = "
         + json.dumps(status, ensure_ascii=False, indent=1) + ";\n",
         encoding="utf-8")
+
+
+def _aktive_feeds(alle: list) -> tuple[list, list]:
+    """Del kilderne i dem, der skal hentes, og dem, der er slået fra.
+
+    `aktiv: false` slår en kilde fra uden at glemme dens adresse. Kontakten
+    sidder i kontrolpanelet, og feltet mangler på alle de linjer, der stod i
+    `feeds.json` før 28.07 — derfor er standarden TIL.
+
+    Kun præcis `false` slukker. Står der `"false"`, `0`, `null` eller noget
+    tredje, er kilden tændt. Det er med vilje: filen redigeres i hånden og af
+    et panel, og en halvskrevet værdi må ikke kunne slukke for nyhederne uden
+    at nogen opdager det. Vil man slukke, skal man mene det.
+    """
+    til, fra = [], []
+    for f in alle:
+        if isinstance(f, dict) and f.get("aktiv", True) is False:
+            fra.append(f.get("navn", "?"))
+        else:
+            til.append(f)
+    return til, fra
+
+
+def skriv_kilde_status(feeds: list, resultat: dict, artikler: list,
+                       nu: datetime) -> None:
+    """Hvad hver kilde leverede — til kontrolpanelet.
+
+    Skrives ALTID, også på GitHub Actions. Det er med vilje og modsat
+    `skriv_hjerne_status`: dén fil skriver både robotten og os, og så giver den
+    en flettekonflikt hver gang. Her er crawleren eneste skribent — panelet
+    redigerer `opsaetning/feeds.json`, aldrig den her fil. Og tallene giver kun
+    mening, hvis de kommer fra de rigtige kørsler, som er dem på Actions.
+
+    Tre tal pr. kilde, og de er ikke det samme:
+      `hentet`   — hvad feedet gav i dag, før noget blev sorteret fra.
+      `i_listen` — hvad der endte på forsiden. Lavere, fordi dubletter, for
+                   gamle artikler og sammenlægninger tager af puljen.
+      `som_ekstra` — hvor tit kilden står som ekstra kilde under en anden
+                   historie. En kilde kan bidrage uden at have en eneste
+                   overskrift.
+
+    Målt 28.07: VentureBeat AI havde 0 i listen og 0 som ekstra — hentet 19
+    gange i døgnet uden at give noget. Det er dét, panelet skal kunne vise.
+    """
+    i_listen: dict = {}
+    som_ekstra: dict = {}
+    seneste: dict = {}
+    overlap: dict = {}
+    for a in artikler:
+        navn = a.get("kilde", "?")
+        i_listen[navn] = i_listen.get(navn, 0) + 1
+        seneste.setdefault(navn, []).append({
+            "rubrik": a.get("rubrik") or a.get("titel") or "",
+            "dato": str(a.get("dato") or "")[:19],
+            "foerst_set": str(a.get("foerst_set") or "")[:19],
+            "link": a.get("link", ""),
+            "side": a.get("side", ""),
+            "hvor": "forside",
+            "under": "",
+        })
+        for k in (a.get("andre") or []):
+            if not isinstance(k, dict) or not k.get("kilde"):
+                continue
+            if k["kilde"] == navn:
+                # Samme udgiver to gange om samme historie. Det er ikke to
+                # kilder, der skriver det samme, og manchetten i panelet lover
+                # udtrykkeligt "under en ANDEN histories overskrift". Linjen
+                # kommer stadig med i fold-ud — den skal bare ikke tælles som
+                # overlap, og den skal ikke stå som `som_ekstra`.
+                seneste.setdefault(navn, []).append({
+                    "rubrik": (k.get("rubrik") or "(overskriften er ikke gemt)"),
+                    "dato": "", "foerst_set": str(k.get("foerst_set") or ""),
+                    "link": k.get("link", ""), "side": "",
+                    "hvor": "under", "under": a.get("rubrik") or a.get("titel") or "",
+                })
+                continue
+            som_ekstra[k["kilde"]] = som_ekstra.get(k["kilde"], 0) + 1
+            seneste.setdefault(k["kilde"], []).append({
+                # `andre`-poster fra før 28.07 har ingen gemt rubrik — feltet
+                # kom til den dag. Uden det her ville fold-ud-listen i panelet
+                # vise en tom linje netop for de ældste, og det er dem, man
+                # helst vil kunne genkende. Den frosne side i `artikel/` har
+                # teksten i sin `og:title`; det er samme vej `_taberens_udgave`
+                # går. Findes siden ikke, siger vi det med ord.
+                "rubrik": (k.get("rubrik")
+                           or ((_tekst_fra_artikelside(_artikel_slug(k["link"]))
+                                or {}).get("rubrik") if k.get("link") else "")
+                           or "(overskriften er ikke gemt)"),
+                "dato": "",
+                "foerst_set": str(k.get("foerst_set") or "")[:19],
+                "link": k.get("link", ""),
+                "side": "",
+                "hvor": "under",
+                "under": a.get("rubrik") or a.get("titel") or "",
+            })
+            # Hvem skriver det samme som hvem. Det er dét, der afgør, om to
+            # kilder kan undværes til fordel for hinanden — se `seneste`.
+            overlap.setdefault(k["kilde"], {})
+            overlap[k["kilde"]][navn] = overlap[k["kilde"]].get(navn, 0) + 1
+            overlap.setdefault(navn, {})
+            overlap[navn][k["kilde"]] = overlap[navn].get(k["kilde"], 0) + 1
+
+    # Nyeste først, og et loft pr. kilde. Uden loftet ville arXiv alene lægge
+    # 25 rubrikker i filen hver kørsel, og filen hentes af panelet i én blok.
+    #
+    # MEN dubletterne skæres aldrig væk. Hele grunden til fold-ud-listen er at
+    # kunne se, at to sider skriver det samme — og `andre`-poster har ofte slet
+    # ingen `foerst_set` (3 af 7 i dagens data), fordi feltet først kom 28.07.
+    # En tom streng sorterer sidst, så loftet ramte præcis dem: Ars Technica
+    # stod med "som ekstra 1" og nul dublet-linjer at folde ud. Tabellen lovede
+    # noget, listen ikke kunne vise. Derfor får de deres egen plads.
+    for navn in seneste:
+        raa = seneste[navn]
+        dubl = [r for r in raa if r["hvor"] == "under"]
+        egne = [r for r in raa if r["hvor"] != "under"]
+        egne.sort(key=lambda r: r.get("foerst_set") or "", reverse=True)
+        dubl.sort(key=lambda r: r.get("foerst_set") or "", reverse=True)
+        del egne[_SENESTE_PR_KILDE:]
+        del dubl[_SENESTE_PR_KILDE:]
+        seneste[navn] = dubl + egne
+
+    raekker = []
+    for f in feeds:
+        navn = f.get("navn", "")
+        r = resultat.get(navn) or {}
+        raekker.append({
+            "navn": navn,
+            "url": f.get("url", ""),
+            "kategori": f.get("kategori", ""),
+            "kun_aktuel": bool(f.get("kun_aktuel")),
+            "max": f.get("max"),
+            "aktiv": f.get("aktiv", True) is not False,
+            "status": r.get("status", "ukendt"),
+            "fejl": r.get("fejl", ""),
+            "hentet": r.get("hentet", 0),
+            "i_listen": i_listen.get(navn, 0),
+            "som_ekstra": som_ekstra.get(navn, 0),
+            "seneste": seneste.get(navn, []),
+            "overlap": sorted(((k, v) for k, v in (overlap.get(navn) or {}).items()),
+                              key=lambda x: -x[1]),
+        })
+
+    # Kilder, der står i data, men ikke i feeds.json — typisk en kilde, nogen
+    # lige har slettet. Uden den her linje forsvandt artiklerne fra tællingen,
+    # og summen ville ikke passe med antallet af artikler.
+    kendte = {f.get("navn") for f in feeds}
+    for navn in sorted(set(i_listen) | set(som_ekstra)):
+        if navn in kendte:
+            continue
+        raekker.append({
+            "navn": navn, "url": "", "kategori": "", "kun_aktuel": False,
+            "max": None, "aktiv": False, "status": "ikke_i_listen", "fejl": "",
+            "hentet": 0, "i_listen": i_listen.get(navn, 0),
+            "som_ekstra": som_ekstra.get(navn, 0),
+            "seneste": seneste.get(navn, []),
+            "overlap": sorted(((k, v) for k, v in (overlap.get(navn) or {}).items()),
+                              key=lambda x: -x[1]),
+        })
+
+    # Hele `feeds.json` med. Panelet redigerer den fil og skriver den tilbage,
+    # og det skal kunne gøres uden at tabe et felt, ingen har tænkt på: den
+    # gemmer PRÆCIS det, den fik, med sine egne rettelser oveni. Havde panelet
+    # i stedet skullet bygge filen op af tællingerne ovenfor, ville et nyt felt
+    # i `feeds.json` blive slettet, første gang nogen trykkede gem.
+    try:
+        raa_fil = json.loads(FEEDS_FIL.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        raa_fil = {"feeds": feeds}
+
+    status = {
+        "opdateret": nu.isoformat(),
+        "artikler_i_alt": len(artikler),
+        "kilder": raekker,
+        "feeds_fil": raa_fil,
+    }
+    try:
+        KILDER_FIL.parent.mkdir(exist_ok=True)
+        KILDER_FIL.write_text(json.dumps(status, ensure_ascii=False, indent=1),
+                              encoding="utf-8")
+        # Samme data som JavaScript, så panelet kan læse den fra file://.
+        # Et `fetch` mod en .json-fil er blokeret dér; en <script> er ikke.
+        (KILDER_FIL.parent / "kilder-data.js").write_text(
+            "window.KILDER_STATUS = "
+            + json.dumps(status, ensure_ascii=False, indent=1) + ";\n",
+            encoding="utf-8")
+    except OSError as e:
+        print(f"  ⚠️  kunne ikke skrive kilde-status: {e}")
+        return
+    tomme = [r["navn"] for r in raekker
+             if r["aktiv"] and r["status"] == "ok"
+             and not r["i_listen"] and not r["som_ekstra"]]
+    if tomme:
+        print(f"📡 {', '.join(tomme)} leverede intet til forsiden i dag")
 
 
 def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
@@ -5054,16 +5252,28 @@ def main() -> None:
     skriv_hjerne_status()
     print()
 
-    feeds = json.loads(FEEDS_FIL.read_text(encoding="utf-8"))["feeds"]
-    print(f"Crawler {len(feeds)} feeds …\n")
+    alle_feeds = json.loads(FEEDS_FIL.read_text(encoding="utf-8"))["feeds"]
+    feeds, slukkede = _aktive_feeds(alle_feeds)
+    print(f"Crawler {len(feeds)} feeds …")
+    if slukkede:
+        print(f"   ⏸️  slået fra i panelet: {', '.join(slukkede)}")
+    print()
 
     alle: list[dict] = []
+    kilde_resultat: dict = {}
+    for f in slukkede:
+        kilde_resultat[f] = {"status": "slaaet_fra", "hentet": 0, "fejl": ""}
     with ThreadPoolExecutor(max_workers=8) as pool:
         jobs = [pool.submit(crawl_feed, feed) for feed in feeds]
         for job in as_completed(jobs):
             feed, artikler, fejl = job.result()
             print(f"  {'⚠️ ' if fejl else '✅'} {feed['navn']}: "
                   f"{fejl if fejl else str(len(artikler)) + ' artikler'}")
+            kilde_resultat[feed["navn"]] = {
+                "status": "fejl" if fejl else "ok",
+                "hentet": len(artikler),
+                "fejl": str(fejl)[:200] if fejl else "",
+            }
             alle.extend(artikler)
 
     # Dubletter væk (samme link)
@@ -5209,6 +5419,9 @@ def main() -> None:
     omskrevet = sum(1 for a in unikke if a.get("rubrik"))
     print(f"\n💾 Gemte {len(unikke)} artikler ({omskrevet} på dansk) i "
           f"{OUTPUT_FIL.relative_to(ROOT)}")
+    # Først HER er tallene sande: en kilde kan have hentet 20 artikler og stå
+    # med 12 i listen, fordi de øvrige var dubletter eller for gamle.
+    skriv_kilde_status(alle_feeds, kilde_resultat, unikke, nu)
     lav_rss(unikke)
     lav_ugens_overblik(unikke)
     lav_dagens_prompt()

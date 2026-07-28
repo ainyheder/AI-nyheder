@@ -274,6 +274,85 @@ rettelser, der var forkerte:**
 
 ---
 
+## 2026-07-28 (kl. 16:0x-18:0x, chat) · Kilderne kan nu ses og styres i panelet
+
+**Bedt om af redaktionen direkte:** man skal kunne se hvilke sider vi henter fra,
+hvor mange nyheder hver leverer, tilføje og fjerne kilder — og folde hver kilde
+ud for at se dens artikler, så to sider, der skriver det samme, kan opdages og
+den ene fjernes.
+
+**Fandt:** kilderne står i `opsaetning/feeds.json`, elleve stykker, og panelet
+kan allerede skrive filer tilbage med samme fil-vælger, køen bruger. Tallene
+fandtes bare ingen steder. Målt ved bygningen: **VentureBeat AI leverede 0
+artikler til forsiden og 0 som ekstra kilde** — hentet 19 gange i døgnet uden at
+give noget. Og **Version2 og Ingeniøren overlapper 4 gange**, TechCrunch og MIT
+Tech Review 2.
+
+**Gjort:**
+
+- `skriv_kilde_status()` skriver `data/kilder.json` + `kilder-data.js` ved HVER
+  kørsel, også på Actions. Modsat `skriv_hjerne_status`, som springes over dér —
+  forskellen er, at crawleren er eneste skribent på den nye fil, så der er ingen
+  flettekonflikt at frygte. JS-udgaven findes, fordi panelet åbnes fra `file://`
+  og ikke kan hente en `.json` med fetch.
+- Tre tal pr. kilde, og manchetten siger hvorfor de ikke er ens: `hentet` er hvad
+  feedet gav, `i_listen` hvad der endte på forsiden, `som_ekstra` hvor tit
+  kilden står under en anden histories overskrift.
+- `seneste`: op til 12 rubrikker pr. kilde, med dubletterne markeret og med
+  navnet på den historie, de lå under. `overlap`: hvem skriver det samme som
+  hvem.
+- `_aktive_feeds()`: `aktiv: false` slukker en kilde uden at glemme adressen.
+  **Kun præcis `false`** — `"false"`, `0` og `null` tænder. En halvskrevet værdi
+  må ikke kunne slukke for nyhederne.
+- Panelet: tabel, fold-ud, slå til/fra, slet med to tryk, tilføj-formular, og
+  gem tilbage til `opsaetning/feeds.json`.
+
+**Testede:** `proeve-kilder.py` **40/0**, `proeve-kilder.js` (jsdom mod det
+rigtige panel) **66/0**, og de tre ældre prøver stadig grønne. **17 mutationer,
+alle fanget** — heriblandt to, der overlevede første udgave af prøven.
+
+**Gennemgangen fandt fem ting. Den første var en sikkerhedsfejl, jeg selv lavede:**
+
+1. **`esc()` escaper ikke anførselstegn.** Den blev skrevet til tekst MELLEM
+   tags, og i HEAD blev den kun brugt sådan. Jeg brugte den i to attributter.
+   Målt i jsdom: et link fra et fremmed RSS-feed med et `"` blev til en rigtig
+   `onmouseover`-attribut, og en kilde ved navn `Wired "AI"` — som man selv kan
+   taste ind — ødelagde fold-ud-knappen uden en eneste fejlbesked. Ny `escA()`.
+2. **Fold-ud-loftet skar præcis de dubletter væk, listen findes for.**
+   `andre`-poster har ofte intet `foerst_set`, tom streng sorterer sidst, og så
+   røg de ved 12. Ars Technica stod med "som ekstra 1" og nul dublet-linjer at
+   folde ud — tabellen lovede noget, listen ikke kunne vise. Dubletterne har nu
+   deres egen plads under loftet.
+3. **Panelet kunne rulle en tidligere ændring tilbage i tavshed.** Arbejdskopien
+   kommer fra crawlerens seneste øjebliksbillede; er filen rettet siden, blev
+   det overskrevet uden varsel. Nu står der, hvor gammelt øjebliksbilledet er,
+   knappen er låst indtil noget er rørt, og en tom liste kan ikke gemmes oven i
+   den rigtige.
+4. `som_ekstra` talte en kilde under sig selv med, selvom manchetten lover "en
+   ANDEN histories overskrift".
+5. To mutationer overlevede prøven: vendt sorteringsrækkefølge og ombyttede
+   talkolonner. Begge dækket nu.
+
+**Bekræftet undervejs: morgenens tidsrettelse virker i produktion.** Crawleren
+kørte 15:23 med den nye kode. Før: 48 af 147 artikler bar et `foerst_set`, der
+var senere end det, vi selv havde registreret. Efter: **0 af 143.** Gulvet retter
+nu 0, og der er 0 kort, hvis dag-gruppe ligger mere end ét døgn før udgivelsen.
+`data/foerst_set.json` er committet og bliver vedligeholdt af Actions.
+
+**Til redaktionen:**
+
+1. `data/kilder.json` og `data/kilder-data.js` er nye filer i `data/`, som
+   `git add data` i workflowet tager med af sig selv. Den første udgave er lavet
+   nu med de rigtige tal, så panelet virker, før crawleren har kørt igen.
+2. Kilde-tallene er fra seneste kørsel. Første gang du åbner ruden, står
+   `Hentet` på 0 for alle — crawleren har ikke rapporteret endnu. Efter næste
+   kørsel er de rigtige.
+3. Slår du en kilde fra, forsvinder dens artikler fra forsiden ved næste kørsel.
+   De permanente artikelsider bliver liggende, og adressen huskes, så du kan slå
+   den til igen.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
 Klaret: 1 punkt. Nye i køen: 1 — begge trukket tilbage igen senere samme dag,
 se posten om loopet nedenfor. Køen står på 5, `## Nyt` på 2.
