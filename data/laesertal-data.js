@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-28T15:24:12.281823+00:00",
+ "opdateret": "2026-07-28T16:20:47.004516+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      3,
      2,
      7,
-     1
+     2
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 273,
- "sidevisninger_i_alt": 774,
+ "besoeg_i_alt": 274,
+ "sidevisninger_i_alt": 779,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 256,
-   "visninger": 473
+   "besoeg": 257,
+   "visninger": 476
   },
   {
    "sti": "/tak.html",
@@ -316,7 +316,7 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/f1637c21f3807a90.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 3
   },
   {
    "sti": "/faq.html",
@@ -437,7 +437,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 246
+   "besoeg": 247
   },
   {
    "fra": "l.facebook.com",
@@ -465,13 +465,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 233,
-    "visninger": 233
+    "besoeg": 234,
+    "visninger": 234
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 217
+    "visninger": 219
    },
    {
     "fra": "l.facebook.com",
@@ -615,7 +615,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 3
    }
   ],
   "/faq.html": [
@@ -938,6 +938,21 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
+   "sti": "/artikel/f1637c21f3807a90.html",
+   "besoeg": 0,
+   "visninger": 3,
+   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 3
+    }
+   ]
+  },
+  {
    "sti": "/artikel/655cdfa99e06ad45.html",
    "besoeg": 0,
    "visninger": 3,
@@ -977,21 +992,6 @@ window.LAESERTAL = {
    "besoeg": 0,
    "visninger": 1,
    "rubrik": "Kinas AI-gave skaber panik i Silicon Valley",
-   "kategori": "Penge & marked",
-   "dato": "2026-07-27",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/f1637c21f3807a90.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
    "kategori": "Penge & marked",
    "dato": "2026-07-27",
    "henvisere": [
@@ -1171,7 +1171,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Penge & marked",
-   "visninger": 7
+   "visninger": 9
   },
   {
    "navn": "Samfund & etik",
