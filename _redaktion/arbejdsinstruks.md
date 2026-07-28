@@ -83,6 +83,11 @@ være.
 
 1. `_redaktion/redaktionens-oejne.md` — målestokken. Ti punkter, og et afsnit om
    hvad der IKKE er et problem. Den afgør alt andet.
+1b. `_redaktion/retning.md` — hvor siden skal hen. **Den stod ikke på den her
+   liste før 28.07, og det betød, at ingen kørsel nogensinde åbnede den.** Filen
+   beskriver, hvad der er værd at bruge tid på — og den regner selv med en
+   søndagsregel, loopet aldrig har haft. Læs den som en kilde til arbejde, ikke
+   som baggrund: står der noget, siden burde kunne, hører det i `## Nyt`.
 2. `_redaktion/oensker.md` — **redaktionens egne ønsker. De kommer altid først.**
    Her står i almindeligt dansk, hvad der ønskes. Hvert ønske oversætter du til
    et rigtigt køpunkt og flytter ned under "Behandlet" med en note om, hvor det
@@ -92,8 +97,11 @@ være.
    `## Fravalgt`, og lad ønsket blive stående, så der kan svares igen.
    Du **læser** den her og **oversætter** den i fase 0, punkt 5 — når du har dine
 egne tal og kan se, hvad ønsket vejer op imod.
-3. `_redaktion/opgavekoe.md` — seks lister, som ikke må blandes sammen:
+3. `_redaktion/opgavekoe.md` — syv lister, som ikke må blandes sammen:
    `## Kø` er **målte** problemer og det eneste, der prioriteres.
+   `## Nyt` er ting, siden **bør kunne** og ikke kan — mangler, ikke fejl.
+   Den har sine egne regler; de står i filen. Der kræves intet rammer-tal,
+   men der kræves et svar på, hvad det mindste er, der kan bygges og ses virke.
    `## Mistanker` er set, men ikke målt — måles først, laves derefter.
    `## Fast gennemgang` er den rotation, du tager af, når køen er tom.
    `## Venter på redaktionen` rører du ikke; der er stillet et spørgsmål,
@@ -345,6 +353,26 @@ ikke mere, og skriv dagens dato på bagefter, uanset om du fandt noget.
 
 En tom kø er et godt tegn, ikke en fejl — find ikke på arbejde for at fylde den.
 
+**Men en tom `## Nyt` er IKKE et godt tegn.** Skrevet ind 28.07, fordi
+redaktionen sagde det rent ud: loopet bidrog ikke nok, det kørte i ring om det,
+der allerede fandtes. Årsagen var strukturel — `## Kø` er defineret som *målte
+problemer*, og fase 2 leder efter fejl, så der var ingen lovlig plads til
+sætningen *"siden bør kunne X"*. En fejlfindingsmaskine finder fejl, også når
+det, der mangler, ikke er en fejl.
+
+**To krav, der gælder fra nu:**
+
+- **Efter hver hovedkørsel skal der stå mindst ét punkt i `## Nyt`.** Findes der
+  intet, har ingen spurgt, hvad siden mangler — så gør det, før du logger.
+- **Der skal bygges mindst én ny ting om ugen.** Kig i loggen: er der gået syv
+  døgn, uden at noget nyt er kommet til, går det forud for køens øverste punkt,
+  medmindre noget er i stykker for læseren lige nu.
+
+**Spørg først, hvis** det koster penge, sender noget ud til nogen, opretter en
+side, der skal linkes fra forsiden, eller ændrer et dataformat. Alt andet bygger
+du og viser bagefter. Reglen er ikke en opfordring til at bygge stort: den
+mindste ting, der kan ses virke, slår stadig planen om det store.
+
 **Log efter hvert punkt, ikke til sidst.**
 
 **Stop i tide.** Er du dagens hovedkørsel, så hold plads tilbage til fase 2 og 3.
@@ -417,8 +445,8 @@ forklaring.
 
 ### Hvad du leder efter — det skifter hver gang
 
-Kig i `arbejdslog.md`, hvad forrige regnskab skrev under `Gennemgik:`. Stod der
-**kvalitet**, er det rækkevidde i dag. Stod der **rækkevidde**, er det kvalitet.
+Kig i `arbejdslog.md`, hvad forrige regnskab skrev under `Gennemgik:`. Der er
+tre slags, og de går på skift: **kvalitet → rækkevidde → udvikling → kvalitet**.
 Skriv selv, hvilken slags du kørte, så den næste kan se det.
 
 **Kvalitetsrunde.** Vælg et sted, der ikke har været gennemgået de seneste
@@ -438,7 +466,14 @@ eller persondata. Foreslå ikke noget, der kun kan udføres af et menneske, uden
 skrive det under `## Venter på redaktionen` — sessionen kan ikke oprette konti
 eller sende mails.
 
-Begge slags runder afleverer det samme sted, efter reglerne nedenfor.
+**Udviklingsrunde.** Ét spørgsmål: **hvad skal siden kunne, som den ikke kan
+i dag?** Læs `retning.md` og de sider, der findes, og spørg hvad en læser ikke
+kan gøre her. Fundene går i `## Nyt`, ikke i `## Kø` — de er mangler, ikke fejl,
+og de skal ikke have et rammer-tal. Det er den eneste af de tre runder, der kan
+gøre siden større; de to andre kan kun gøre den bedre.
+
+Alle tre slags runder afleverer efter reglerne nedenfor — kvalitet og rækkevidde
+i `## Kø` eller `## Mistanker`, udvikling i `## Nyt`.
 
 ### Hvor et fund skal hen — og hvorfor det er to steder
 
@@ -571,5 +606,6 @@ Læsere i dag: <besøg, og hvorfra de kom>
 Øverst i køen nu: <punktet> — <rammer-tal> — <én sætning om hvorfor>
 ```
 
-`Gennemgik:` skal begynde med **kvalitet** eller **rækkevidde**. Det er sådan,
-den næste kørsel ved, hvilken slags runde den selv skal tage.
+`Gennemgik:` skal begynde med **kvalitet**, **rækkevidde** eller **udvikling**.
+Det er sådan, den næste kørsel ved, hvilken slags runde den selv skal tage.
+Rækkefølgen er kvalitet → rækkevidde → udvikling → kvalitet.

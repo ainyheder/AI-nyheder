@@ -102,8 +102,92 @@ efter i dag, men det er dig, der betaler for det.
 
 ---
 
+## 2026-07-28 (kl. 07:4x, chat) · Loopet kunne ikke bygge noget. Nu kan det
+
+**Torbens indvending:** loopet bidrager ikke nok, det kører i ring om de
+funktioner, der allerede findes. Han har ret, og det er ikke en dårlig kørsel —
+det er designet. Tre steder, der alle peger samme vej:
+
+1. `## Kø` er defineret som *"målte problemer"*, og fase 2 leder efter fejl.
+   Sætningen *"siden bør kunne X"* kunne bogstaveligt talt ikke skrives ned
+   nogen steder i systemet. En fejlfindingsmaskine finder fejl — også når det,
+   der mangler, ikke er en fejl.
+2. `retning.md` siger det direkte under "Hvad jeg ville lade ligge": *"Flere
+   funktioner. Der er rigeligt indhold. Problemet er ikke mangel."* Og hele
+   dokumentet hviler på *"den næste funktion er mindre værd end de første tusind
+   læsere."*
+3. **`retning.md` stod ikke i instruksens læserækkefølge.** Filen, der beskriver
+   hvor siden skal hen, var aldrig blevet åbnet af nogen kørsel. Den regner
+   oven i købet med en søndagsregel — *"den natlige gennemgang stiller om
+   søndagen et andet spørgsmål"* — som aldrig er blevet bygget.
+
+Dokumentet skriver desuden om sig selv: *"dette er skrevet uden læsertal… Når
+tallene kommer, kan flere af konklusionerne vise sig at være forkerte."* Tallene
+er her. De tre veje, det udpeger, er enten færdige (Google/sitemaps) eller kan
+kun gås af et menneske. Loopet var altså sat til at jagte læsere, det ikke har
+midler til at skaffe, og forbudt at gøre det, det faktisk kan.
+
+**Gjort — struktur:**
+
+- Ny liste `## Nyt` i opgavekøen: ting siden **bør kunne** og ikke kan. Egne
+  regler: intet rammer-tal (det, der ikke findes, har ingen visninger), men krav
+  om at kunne svare på *hvad er det mindste, der kan bygges og ses virke*.
+- To krav i instruksen: **mindst ét punkt i `## Nyt` efter hver hovedkørsel**, og
+  **mindst én ny ting bygget om ugen**. Spørg først, hvis det koster penge,
+  sender noget ud, opretter en side der skal linkes fra forsiden, eller ændrer
+  et dataformat. Ellers byg.
+- Fase 2 kører nu **tre** runder på skift i stedet for to: kvalitet → rækkevidde
+  → **udvikling**. Udviklingsrunden spørger *"hvad skal siden kunne, som den
+  ikke kan?"* og afleverer i `## Nyt`.
+- `retning.md` er skrevet ind i læserækkefølgen som **kilde til arbejde**, ikke
+  som baggrund.
+
+**Gjort — fem beslutninger hentet hos redaktionen:**
+
+| Spørgsmål | Svar | Hvor det endte |
+|---|---|---|
+| Daglig mail af Dagens overblik | **Nej** — abonnenterne sagde ja til ugentlig | `## Fravalgt` |
+| Hvor skal `undervisning.html` linkes fra | `laer.html`, `koerekort.html`, `erhverv.html` — **ikke** forsiden | `## Nyt` |
+| Kørekort-indgang på forsiden | **Nej** — forsiden er nyheder | `## Fravalgt` |
+| 30-dages-arkiv | **Ja** — bevar artikler, der har en side | `## Kø` |
+| Billeder ud af git | ikke stillet endnu | `## Venter` |
+
+**Og så det ubehagelige: jeg skrev to falske punkter i morges, og min egen
+måling en time senere slog dem begge ihjel.**
+
+*"Forsiden linker kun til én af syv lære-sider"* og *"De 168 artikelsider har
+ingen vej til lære-indholdet"*. Målt 28.07: **`laer.html` linker til 11 af de 13
+lære-sider** — kørekortet, erhverv, prompts, prompt-arkivet, ordbogen, quizzen,
+værktøjslisten, alle tre guider og FAQ'en. Forsiden linker til `laer.html`.
+Artikelsiderne linker til `laer.html`. Vejen findes; den går gennem ét nav. Og
+det andet punkts overskrift modsagde sin egen brødtekst, hvor der stod, at hver
+artikelside linker til `/laer.html`.
+
+Tallene bekræfter, at navet virker: `laer.html` 88 visninger/7 dage,
+`koerekort.html` 26, `prompts.html` 14, `faq.html` 9. Og de tre sider med nul
+besøg **er linket fra `laer.html`** — så manglende links kan ikke forklare deres
+nul. Det er stadig bare, at der ikke er nogen endnu, præcis som redaktionen sagde.
+
+Fælles årsag, skrevet ind i `## Fravalgt` så det ikke gentages: begge punkter
+talte noget nemt (links på én sidetype) og konkluderede om noget andet (om en
+læser kan komme frem). Prøven, der ville have fanget dem, er at spørge *kan en
+læser faktisk ikke gøre det her?* — og så prøve det i stedet for at tælle.
+
+**Det eneste ægte hul, målingen fandt:** `undervisning.html` er den ene af de to
+sider, `laer.html` ikke linker til, og **0 af 33 rodsider** linker til den. Den
+står nu i `## Nyt` med redaktionens ja.
+
+**Til redaktionen:** køen er nu fem punkter, alle vedligehold — og det er i sig
+selv beviset for indvendingen. `## Nyt` har to. Der er ét ubesvaret spørgsmål
+tilbage af de fem (billeder ud af git) og ét gammelt (hvor skal læserne komme
+fra). Instruksen er din fil: læs `## Nyt`-reglerne og fase 2's tredje runde
+igennem, og skru på dem, hvis jeg har sat barren forkert.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
-Klaret: 1 punkt. Nye i køen: 1.
+Klaret: 1 punkt. Nye i køen: 1 — begge trukket tilbage igen senere samme dag,
+se posten om loopet nedenfor. Køen står på 5, `## Nyt` på 2.
 Gennemgik: **rækkevidde** — hvor mange døre ind i siden en Google-læser har,
 når han lander på en artikelside. Målt på alle 168 sider i `artikel/`.
 Læsere i dag: 261 besøg / 738 visninger på 7 dage. Udefra: **19 fra Facebook,

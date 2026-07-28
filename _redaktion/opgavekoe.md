@@ -8,11 +8,12 @@ sætter panelet mærket `#fastholdt` på, og sessionens omsortering lader punkte
 stå — ellers ville din beslutning blive sorteret væk ved næste kørsel. Skriv nye
 ønsker i `oensker.md`. Det, der står øverst, er det, der bliver lavet først.
 
-Filen har seks lister, og de skal ikke blandes sammen:
+Filen har syv lister, og de skal ikke blandes sammen:
 
 | Liste | Hvad det er | Bliver det lavet? |
 |---|---|---|
 | `## Kø` | Målte problemer. Hvert punkt har et tal og en dato. | Ja, oppefra og ned |
+| `## Nyt` | Ting siden BØR kunne, men ikke kan. Ikke fejl. | Ja — mindst én om ugen |
 | `## Mistanker` | Noget nogen har set, men ikke målt | Først når det er målt |
 | `## Fast gennemgang` | Spørgsmål uden ende, på skift | Når der er plads |
 | `## Venter på redaktionen` | Målt, men kræver en beslutning | Når du har svaret |
@@ -65,31 +66,36 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Forsiden linker kun til én af syv lære-sider.** Målt 28.07 i jsdom mod
-      den rigtige `index.html` og de rigtige datafiler: den tegnede forside har
-      **93 links, hvoraf 16 er interne**, og **2 af dem fører til lære-indhold —
-      begge til `laer.html`**. Der er **0 links til `koerekort.html`,
-      `erhverv.html`, `prompts.html`, `prompt-arkiv.html`, `ordbog.html`,
-      `quiz.html` og `vaerktoejer.html`**, og ordet "kørekort" står **0 gange**
-      i den tegnede tekst.
-
-      **Det her hviler ikke på besøgstal — se `## Fravalgt`.** Det er en
-      struktur, der kan måles og rettes, uanset hvor mange der bruger siden:
-      lære-indholdet er halvdelen af det, siden er, og forsiden har én dør ind
-      til det.
-
-      **Mindste rettelse er ikke afgjort** — hvor dørene skal stå, er
-      redaktionens valg. `_redaktion/forslag-koerekort-indgang.html` fra 25.07
-      ligger stadig som et ubesvaret forslag på præcis det spørgsmål.
-      **Rammer: 456 visninger/7 dage (forsiden)** — det er det eneste sted, en
-      vej ind kan bygges.
-      *Punkt 7.*
-
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
       efter alle de seneste dages ændringer.
       **Rammer: 456 visninger/7 dage (forsiden)** — en stor del af den direkte
       trafik kommer sandsynligvis fra appen, så et brud ville ramme netop dem.
       *Punkt 4.*
+
+- [ ] **`MAX_DAGE_GAMMEL` lover 30 dage og holder dage.** Redaktionen sagde ja
+      28.07: artikler, der har en side, skal bevares i 30 døgn.
+      **Målt 26.07 kl. 15 og bekræftet 28.07:** `main()` bygger listen forfra af
+      det, feedene serverer *nu*, og bruger kun den gamle fil som cache pr. link.
+      En artikel lever derfor præcis så længe, kildens RSS nævner den — **dage på
+      et travlt feed**, ikke de 30 døgn, konstanten lover. I dag ligger der
+      **168 sider i `artikel/` mod 145 i listen**.
+      **Hvad en læser mister:** forsiden viser færre artikler, end den skulle, og
+      enhver forbedring af artikelskabelonen rammer aldrig mere end den nyeste
+      uge.
+      **Mindste rettelse:** bevar artikler, der har en side på disken, indtil de
+      30 dage faktisk er gået.
+      **Mål før du bygger — to ting, redaktionen har accepteret prisen for, men
+      som skal kendes:** (1) vægten. Forsiden henter hele `articles.json` i én
+      blok, og den koster **781 bytes pr. artikel på tråden** (målt 26.07). De
+      sidste to hele døgn tog 24 og 19 nye ind, så et rigtigt arkiv bliver
+      **~570-600 artikler = 435-460 kB, cirka 7× mere end i dag**, hentet før der
+      står noget på skærmen. Forsiden svarer i dag efter 173 ms og er færdig
+      efter 634 ms; mål det igen bagefter og skriv tallet i loggen. (2) prisen.
+      Tjek FØR du bygger, om de genoplivede artikler udløser nye AI-kald eller
+      nye billeder — de har rubrik og resumé i cachen, men `lav_billeder` har sit
+      eget udvalg. Koster det penge, så stop og spørg.
+      **Rammer: 456 visninger/7 dage (forsiden).**
+      *Punkt 4 og 6.*
 
 - [ ] **39 dubletsider modsiger sig selv over for Google.** Målt 27.07:
       `_peg_dubletsider_mod_hovedhistorien` retter kun `<link rel="canonical">`.
@@ -103,21 +109,6 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
       `og:url` og JSON-LD-`mainEntityOfPage` til samme adresse som canonical.
       **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen).**
       *Punkt 5 og 10.*
-
-- [ ] **De 168 artikelsider har ingen vej til lære-indholdet.** Målt 28.07
-      over alle filer i `artikel/`:
-      **168 af 168 sider har præcis fire interne links** — to til forsiden, ét
-      til `/om.html` og ét til `/laer.html`. **0 til kørekortet, 0 til
-      prompts, 0 til ordbogen, 0 til quizzen, 0 til prompt-arkivet, 0 til
-      værktøjslisten.** Det er de sider, en Google-læser lander på.
-
-      **Vejen derfra til en læser er ikke hypotetisk:** `sitemap-artikler.xml`
-      blev indsendt i Search Console 27.07 og gik straks til **Succes / 91
-      sider**. Det er præcis de sider, Google nu er inviteret til at sende folk
-      til — og lige nu ender de et sted med to udgange.
-      **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen)** — tallet er lavt,
-      fordi indekseringen først er begyndt, ikke fordi siderne er ligegyldige.
-      *Punkt 7 og 10.*
 
 - [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
       `_peg_dubletsider_mod_hovedhistorien` kaldes **før** `_har_noget_at_vise`-
@@ -140,6 +131,63 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
       **Rammer: ingen læsere** — det er husholdning, ikke en fejl. Står i trin 3,
       fordi det er billigt, ikke fordi det haster. *Punkt 4.*
+
+---
+
+## Nyt
+
+Ting, siden **bør kunne**, men ikke kan i dag. Ikke fejl — mangler.
+
+Den her liste findes, fordi loopet indtil 28.07 ikke havde noget sted at skrive
+dem. `## Kø` er defineret som *målte problemer*, og fase 2 leder efter fejl, så
+sætningen *"siden bør kunne X"* kunne bogstaveligt talt ikke skrives ned nogen
+steder. Resultatet var en maskine, der kunne gøre siden fejlfri og aldrig større.
+
+**Reglerne her er andre end i `## Kø`:**
+
+- Et punkt skal sige, **hvad en læser får**, som han ikke får i dag. Ikke hvad
+  der er teknisk pænt.
+- Der kræves **ikke** et rammer-tal. Det, der ikke findes, har ingen
+  sidevisninger, og kravet ville gøre listen tom for altid.
+- Der kræves til gengæld et svar på: **hvad er det mindste, der kan bygges og
+  ses virke?** Kan du ikke svare, er det et ønske og hører hjemme i `oensker.md`.
+- **Spørg først, hvis** det koster penge, sender noget ud, opretter en side, der
+  skal linkes fra forsiden, eller ændrer et dataformat. Ellers byg det.
+- **Mindst ét punkt skal stå her efter hver hovedkørsel**, og **mindst én ny ting
+  skal bygges om ugen**. Er listen tom, er det ikke et godt tegn her — det
+  betyder, at ingen har spurgt, hvad siden mangler.
+
+- [ ] **`undervisning.html` findes, men ingen kan komme derhen.** Målt 28.07:
+      siden er bygget og testet 26.07 og står i `sitemap.xml`, men **0 af de 33
+      rodsider linker til den**. `laer.html` linker til 11 af 13 lære-sider —
+      den her er den ene af de to, der mangler. Den er altså synlig for Google
+      og usynlig for et menneske.
+      **Mindste ting, der kan bygges og ses virke:** et link fra `laer.html`
+      (88 visninger/7 dage) og en linje nederst på `koerekort.html` og
+      `erhverv.html` — *"Vil du bruge det her på et hold?"* Ren HTML, ingen
+      data, ingen penge.
+      **Hvad læseren får:** en underviser, der er nået til slutningen af
+      kørekortet, får at vide, at han må bruge det på sit hold. Det er vej 3 i
+      `retning.md`, og den er den eneste af de tre, siden har et forspring på.
+      **Redaktionen har sagt ja 28.07** til `laer.html`, `koerekort.html` og
+      `erhverv.html`. **Forsiden er et nej** — den er nyheder, og det gælder også
+      her. Spørg ikke om den igen.
+      *Punkt 7.*
+
+- [ ] **En læser kan ikke finde en artikel igen.** Målt 28.07: der ligger **168
+      sider i `artikel/`**, men forsiden viser kun de **145**, der står i
+      `data/articles.json` — og den liste bygges forfra af feedene hver kørsel,
+      så en artikel forsvinder fra forsiden efter dage. Der er ingen søgning på
+      tværs af arkivet, intet index over alle artikler, og ingen vej til de
+      sider, der er rullet ud. Læste man noget her i sidste uge, kan man ikke
+      finde det igen uden at gemme linket.
+      **Mindste ting, der kan bygges og ses virke:** en side, der lister alle
+      sider i `artikel/` med rubrik og dato, bygget af crawleren som
+      `sitemap-artikler.xml` allerede bliver det. Ingen ny datastruktur, ingen
+      AI-kald, ingen penge.
+      **Hvad læseren får:** en vej tilbage til noget, han har læst — og Google
+      får en side, der linker til alle 168 i stedet for 0.
+      *Punkt 6 og 7.*
 
 ---
 
@@ -264,34 +312,6 @@ ikke med i køen, og sessionen skal ikke gætte svaret.
   nogen platform. Uden en beslutning her kan intet punkt i køen flytte tallet —
   se `## Ting kun et menneske kan gøre` nederst.*
 
-- **Skal `articles.json` blive et rigtigt 30-dages-arkiv?**
-  *Spørgsmålet: forsiden ville vise mærkbart flere artikler, arkivet ville veje
-  ~7× mere (435–460 kB mod 62 kB i dag), og 35 genoplivede artikler ville koste
-  penge i omskrivning og billeder. Ja, nej, eller ja-men-hent-let-liste-først?*
-
-  `articles.json` er ikke et arkiv, men det tror resten af koden. Målt
-  26.07 kl. 15: `main()` bygger listen forfra af det, feedene serverer *nu*,
-  og bruger kun den gamle fil som cache pr. link. Derfor lever en artikel
-  præcis så længe, kildens RSS-feed nævner den — **dage på et travlt feed**,
-  ikke de 30 dage `MAX_DAGE_GAMMEL` lover. **35 af 109 artikelsider er ude
-  af listen lige nu, den nyeste fra i går.** Konsekvensen er, at ingen
-  forbedring af artikelskabelonen nogensinde rammer mere end den nyeste uge,
-  og at hver ny nat skal skrive endnu et engangsscript. Nattens rettelser
-  lukkede symptomerne (tomme sider bygges ikke, billeder slettes ikke under
-  siderne), men ikke årsagen. Mindste rettelse: bevar artikler, der har en
-  side, indtil de 30 dage faktisk er gået. **Venter på en beslutning:** forsiden
-  ville vise mærkbart flere artikler, og de 35 genoplivede ville blive
-  kandidater til omskrivning og billeder, altså koste penge. Byg ikke, før
-  det er afklaret. *Punkt 4 og 10.*
-  **Vægten er målt 26.07 kl. 16:45 og hører med i prisen:** forsiden henter
-  hele `articles.json` i én blok, og den koster **781 bytes pr. artikel på
-  tråden** (81 artikler = 62 kB gzippet). De sidste to hele døgn tog **24 og
-  19** nye artikler ind, så et rigtigt 30-dages-arkiv bliver **~570–600
-  artikler = 435–460 kB, cirka 7× mere end i dag** — hentet i én blok, før der
-  står noget som helst på skærmen. Skal arkivet vokse så meget, bør forsiden
-  formentlig hente en let liste og først resten på klik. Det er en større
-  ombygning end arkivet selv, og den bør regnes med i beslutningen.
-
 - **Er det tid at flytte gamle billeder ud af git?**
   *Spørgsmålet: mappen vokser nu med 25–30 MB om måneden og kan ikke rydde op
   længere. Skal sider ældre end X måneder pege på `assets/og.png` i stedet — og
@@ -318,6 +338,57 @@ grundlaget har ændret sig, og så skal målingen med.
 
 Loggen fortæller kun, hvad der blev lavet. Uden den her liste kommer den samme
 afviste idé igen om en måned og koster den samme udredning forfra.
+
+- **"De 168 artikelsider har ingen vej til lære-indholdet"** — fravalgt
+  28.07.2026, af mig selv, samme dag jeg skrev det, og af samme grund som
+  punktet nedenfor. Overskriften modsagde punktets egen måling: der stod sort på
+  hvidt, at hver artikelside linker til `/laer.html` — og `laer.html` linker til
+  11 af de 13 lære-sider. Vejen findes. Den går bare gennem ét link, og det er
+  ikke det samme som ingen vej.
+
+  **To falske fund på én formiddag, begge skrevet af mig, begge slået ihjel af
+  min egen måling en time senere.** Fælles årsag: fase 2 leder efter fejl, og
+  når man leder efter fejl, kan man altid finde en formulering, der lyder som
+  en. Begge punkter talte noget nemt (links på én sidetype) og konkluderede om
+  noget andet (om læseren kan komme frem). Prøven, der ville have fanget dem
+  begge, er at spørge: *kan en læser faktisk ikke gøre det her?* — og så prøve
+  det, i stedet for at tælle.
+
+- **"Forsiden linker kun til én af syv lære-sider"** — fravalgt 28.07.2026, af
+  mig selv, samme dag jeg skrev det. Punktet talte døre på forsiden og
+  konkluderede, at lære-indholdet var utilgængeligt. Målingen en time senere
+  siger noget andet: **`laer.html` linker til 11 af de 13 lære-sider** —
+  kørekortet, erhverv, prompts, prompt-arkivet, ordbogen, quizzen,
+  værktøjslisten, alle tre guider og FAQ'en. Forsiden linker til `laer.html`,
+  og `laer.html` linker til resten. Strukturen er altså ikke i stykker; den er
+  et nav med én indgang.
+
+  Tallene bekræfter det: `laer.html` 88 visninger/7 dage, `koerekort.html` 26,
+  `prompts.html` 14, `faq.html` 9. Folk kommer igennem. Og de tre sider med nul
+  besøg — prompt-arkivet, quizzen og værktøjslisten — **er linket fra
+  `laer.html`**, så manglende links kan ikke være forklaringen på deres nul.
+  Det er stadig bare, at der ikke er nogen endnu.
+
+  Lærestykket er ubehageligt og hører til her: jeg målte det, der var nemt at
+  tælle (links på én side), og skrev en konklusion om noget andet
+  (tilgængelighed på tværs af siden). Redaktionen sagde desuden samme dag, at
+  forsiden skal være nyheder. De to eneste sider, `laer.html` IKKE linker til,
+  er `undervisning.html` og `koerekort-tjek.html` — den første har sit eget
+  punkt, den anden nås fra selve kørekortet, hvor den hører hjemme.
+
+- **"Send Dagens overblik som daglig mail"** — fravalgt 28.07.2026 af
+  redaktionen. Undersøgelsen fra 25.07 (`undersoegelse-daglig-mail.md`) holder
+  teknisk: Buttondowns gratis plan tillader udtrykkeligt én daglig mail, og
+  maskineriet findes. Men **abonnenterne har sagt ja til én mail om ugen**, og
+  at begynde at sende dagligt er en anden aftale end den, de indgik. At lade dem
+  vælge selv koster $9/md, og det er ikke pengene værd nu. Genåbnes kun, hvis
+  abonnenterne bliver spurgt.
+
+- **"Kørekort-indgang på forsiden"** — fravalgt 28.07.2026 af redaktionen.
+  Forslaget fra 25.07 ligger stadig i `_redaktion/forslag-koerekort-indgang.html`
+  og bliver ikke bygget: **forsiden er nyheder.** Vejen til kørekortet går
+  gennem `laer.html`, og de 26 visninger på syv dage viser, at den vej virker.
+  Sessionen skal ikke foreslå det igen — heller ikke i en anden indpakning.
 
 - **"Få eller nul besøg er i sig selv et problem"** — fravalgt 28.07.2026 af
   redaktionen, og det er en regel, ikke en enkelt afvisning.
