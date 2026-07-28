@@ -1,7 +1,81 @@
 {
-  "opdateret": "2026-07-27T22:45:11.827440+00:00",
+  "opdateret": "2026-07-28T03:37:05.724899+00:00",
   "antal": 145,
   "artikler": [
+    {
+      "titel": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+      "resume": "Weeks after Anthropic's latest toe-to-toe with the US government, and days after an OpenAI security incident that dominated tech industry discussions, Anthropic on Thursday released its newest model, Claude Opus 5. The company said in a release that Opus 5 \"comes close to the capabilities of Claude Fable 5 in many domains\" and is much […]",
+      "dato": "2026-07-24T13:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-07-28T03:37:05.724899+00:00",
+      "rubrik": "Anthropic sender ny AI-model på gaden",
+      "resume_da": "Opus 5 er næsten lige så dygtig som storebror Fable 5, men koster kun halvt så meget.",
+      "kat_ai": true,
+      "prio": 7,
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/",
+          "rubrik": "Anthropics Opus 5 sparer tokens, men springer ikke fremad",
+          "resume_da": "Modellen er billigere og hurtigere, men ikke markant dygtigere end tidligere versioner"
+        }
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Ny model klar",
+          "tekst": "Anthropic har lanceret Claude Opus 5, en opdateret version af deres populære AI-model. Ifølge firmaet er den 'tæt på' evnerne hos den langt dyrere Fable 5, især når det gælder kompliceret kodning. Det sker kort efter en sikkerhedskonflikt med den amerikanske regering."
+        },
+        {
+          "overskrift": "Prisen er i fokus",
+          "tekst": "Hvor Fable 5 koster **10 dollar** per million input-tokens og **50 dollar** per million output-tokens, koster Opus 5 kun halvt så meget: **5 dollar** for input og **25 dollar** for output. Det er samme pris som forgængeren Opus 4.8, men giver langt mere for pengene."
+        },
+        {
+          "overskrift": "Sikkerhed først",
+          "tekst": "Opus 5 har fået stærkere cybersikkerhed end tidligere modeller. Den er den 'mest afstemte' Opus-model og sværest at narre. Til gengæld halter den bagefter den dyre Fable 5, når det gælder egentlige sikkerhedshuller – den kan godt finde dem, men ikke udnytte dem."
+        },
+        {
+          "overskrift": "Stadig fart på udviklingen",
+          "tekst": "Selvom Opus 5 ikke er et kæmpe spring fremad, viser tests som Frontier-Bench og DeepSWE, at den klarer sig **lige så godt eller bedre** end Fable til kodning. Udviklingen går stærkt – især over et helt år – men den store snak i branchen handler om prisen, ikke om nye superkræfter."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5 dollar",
+          "label": "per million input-tokens for Opus 5"
+        },
+        {
+          "tal": "25 dollar",
+          "label": "per million output-tokens for Opus 5"
+        },
+        {
+          "tal": "halv pris",
+          "label": "af Fable 5 for samme ydelse"
+        }
+      ],
+      "detaljer": [
+        "Opus 5 er næsten på niveau med Fable 5 til flere opgaver.",
+        "Modellen er særligt god til komplekse kodningsopgaver.",
+        "Prisen er uændret i forhold til forgængeren Opus 4.8.",
+        "Kunder kan vælge 'Fast mode' til dobbelt pris.",
+        "Sikkerheden er skærpet efter regeringskrav.",
+        "Kinesiske Kimi K3 er billigere: 15 dollar per million output-tokens.",
+        "Flere virksomheder bygger model-routers for at spare penge."
+      ],
+      "betydning": "Du får næsten samme AI-kraft som den dyreste model, men til halv pris – det kan gøre AI-værktøjer langt mere overkommelige for almindelige virksomheder.",
+      "pointer": [
+        "Opus 5 er næsten lige så god som Fable 5.",
+        "Prisen er halvt så høj som Fable 5.",
+        "Sikkerheden er skærpet efter regeringskrav.",
+        "Konkurrencen presser priserne nedad."
+      ],
+      "billedmotiv": "En åben pengepung på et skrivebord med to sedler – en 50-dollarseddel og en 25-dollarseddel – ved siden af en lukket bærbar computer.",
+      "billede": "data/img/8298c3fb9c6493f1.jpg",
+      "side": "artikel/668dd796408164b0.html"
+    },
     {
       "titel": "Satya Nadella says companies that trust one AI for everything may not survive",
       "link": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
@@ -12,8 +86,7 @@
       "foerst_set": "2026-07-27T22:45:11.827440+00:00",
       "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
       "resume_da": "Satya Nadella advarer virksomheder mod at læne sig for meget op ad én enkelt AI-model. Taber du kontrollen, mister du din virksomhed, siger han.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Advarslen",
@@ -28,9 +101,8 @@
           "tekst": "Hvis du deler for meget med AI-laboratorierne, risikerer du, at de kopierer din idé og laver en konkurrerende tjeneste. Det er klassisk platformstaktik, siger flere investorer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Advarslen gælder kun virksomheder – privatpersoner må dele data for gratis tjenester, siger Nadella.",
         "Microsoft investerer i både OpenAI og Anthropic, men Nadella advarer alligevel mod afhængighed.",
@@ -47,6 +119,8 @@
         "Platforme kan kopiere din idé."
       ],
       "billedmotiv": "En åben notesbog med håndskrevne forretningshemmeligheder ved siden af en lukket bærbar med et AI-logsymbol på skærmen.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/f1637c21f3807a90.html"
     },
     {
@@ -59,8 +133,7 @@
       "foerst_set": "2026-07-27T22:45:11.827440+00:00",
       "rubrik": "Private Claude-samtaler lå frit fremme på Google",
       "resume_da": "Følsomme oplysninger som sygejournaler og børns navne var søgbare via Google, efter at brugere delte chats offentligt.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet opdaget",
@@ -87,8 +160,6 @@
           "tekst": "Mandag eftermiddag kunne TechCrunch ikke længere finde chats via den beskrevne Google-søgning, hvilket tyder på, at eksponeringen er stoppet. Men risikoen for, at data allerede er gemt af tredjeparter, består."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "600",
@@ -99,6 +170,7 @@
           "label": "ChatGPT-samtaler skrabet af forsker"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Problemet blev opdaget af en Reddit-bruger i weekenden.",
         "Søgningen brugte kommandoen 'site:claude.ai/share' på Google.",
@@ -117,6 +189,8 @@
       ],
       "billedmotiv": "En computerskærm med Google-søgeresultater, hvor en chat-link til Claude står med synlig tekst om 'børns navne' og 'klinisk rapport'.",
       "billede": "data/img/44dc125a73573462.jpg",
+      "kat_ai": true,
+      "prio": 8,
       "side": "artikel/f6ec309cb07391fa.html"
     },
     {
@@ -129,8 +203,7 @@
       "foerst_set": "2026-07-27T22:45:11.827440+00:00",
       "rubrik": "Google og Reddit taber retssag om AI",
       "resume_da": "En dommer afviser Googles sag mod en web-scraper – og kalder metoden med ophavsret mærkelig.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -145,14 +218,13 @@
           "tekst": "Google har **21 dage** til at ændre sit søgsmål. Hvis de kan vise, at rettighedshavere har givet dem lov til at beskytte bestemt indhold i såkaldte 'knowledge panels', kan de måske blokere en smule scraping. Men det kan også skabe problemer for Google, hvis de indrømmer at bruge ubeskyttet materiale."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "21 dage",
           "label": "frist til at ændre søgsmål"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Google brugte DMCA til at sagsøge SerpApi for at sælge søgeresultater videre.",
         "Reddit sagsøgte også SerpApi og Perplexity for at scrape indhold.",
@@ -170,20 +242,21 @@
         "Åbent internet fik en sejr i retten."
       ],
       "billedmotiv": "En åben notesbog på et skrivebord med en dommerhammer og et printet søgeresultat, hvor Google- og Reddit-logoer er overstreget med rødt.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/5d041ac5a5b573cc.html"
     },
     {
       "titel": "Terence Tao: Mathematics in the Age of AI [pdf]",
       "link": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
-      "resume": "Article URL: https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf Comments URL: https://news.ycombinator.com/item?id=49056620 Points: 153 # Comments: 60",
+      "resume": "Article URL: https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf Comments URL: https://news.ycombinator.com/item?id=49056620 Points: 157 # Comments: 62",
       "dato": "2026-07-26T10:32:35+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
       "foerst_set": "2026-07-27T22:45:11.827440+00:00",
       "rubrik": "Terence Tao: AI ændrer matematik",
       "resume_da": "Topmatematiker Terence Tao fortæller, hvordan AI ændrer den måde, matematikere arbejder og tænker på.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "AI som medtænker",
@@ -194,9 +267,8 @@
           "tekst": "I stedet for at erstatte matematikere, hjælper AI med at opdage nye forbindelser mellem gamle teorier. Det betyder, at forskere kan eksperimentere mere og fokusere på de store, svære spørgsmål, som AI ikke selv kan løse."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Matematikeren **Terence Tao** præsenterer sin vision for AI i matematik.",
         "AI kan bruges til at afprøve mange idéer hurtigt.",
@@ -211,7 +283,8 @@
         "Matematikken bliver mere eksperimenterende."
       ],
       "billedmotiv": "Et gammelt sort kridttavle fyldt med kaotiske ligninger, og ved siden af en lysende skærm med flydende farvede forbindelseslinjer mellem tal.",
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/eb63ed5813b38b1a.html"
     },
     {
@@ -273,13 +346,12 @@
       "billedmotiv": "En støvet central med udtaget kobberkabler på gulvet, hvor en ny fiberboks er ved at blive monteret på en stor Google-cloud-server.",
       "kat_ai": true,
       "prio": 5,
-      "navngivet": true,
       "side": "artikel/be4f7f1c41717387.html"
     },
     {
       "titel": "Apple Will 'Watch Everything Burn' When the AI Bubble Bursts",
       "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
-      "resume": "Article URL: https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/ Comments URL: https://news.ycombinator.com/item?id=49070427 Points: 231 # Comments: 291",
+      "resume": "Article URL: https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/ Comments URL: https://news.ycombinator.com/item?id=49070427 Points: 236 # Comments: 312",
       "dato": "2026-07-27T14:42:41+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -327,7 +399,7 @@
     {
       "titel": "AI companies spend record sums on Washington lobbying",
       "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-      "resume": "https://archive.ph/PASMJ Comments URL: https://news.ycombinator.com/item?id=49069939 Points: 248 # Comments: 139",
+      "resume": "https://archive.ph/PASMJ Comments URL: https://news.ycombinator.com/item?id=49069939 Points: 257 # Comments: 139",
       "dato": "2026-07-27T14:07:48+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Politik & jura",
@@ -364,13 +436,12 @@
       "billedmotiv": "En bunke dollarsedler stablet foran en mikrofon med et USA-flag i baggrunden.",
       "kat_ai": true,
       "prio": 6,
-      "navngivet": true,
       "side": "artikel/8756b60eb8fa9e43.html"
     },
     {
       "titel": "AI companies are shredding rare books",
       "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
-      "resume": "https://xcancel.com/HedgieMarkets/status/2081534588485296565 Comments URL: https://news.ycombinator.com/item?id=49068738 Points: 722 # Comments: 454",
+      "resume": "https://xcancel.com/HedgieMarkets/status/2081534588485296565 Comments URL: https://news.ycombinator.com/item?id=49068738 Points: 745 # Comments: 474",
       "dato": "2026-07-27T12:32:12+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -415,7 +486,7 @@
     {
       "titel": "The New AI Superpowers: Focus and Followthrough",
       "link": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
-      "resume": "Article URL: https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and Comments URL: https://news.ycombinator.com/item?id=49057877 Points: 210 # Comments: 79",
+      "resume": "Article URL: https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and Comments URL: https://news.ycombinator.com/item?id=49057877 Points: 214 # Comments: 79",
       "dato": "2026-07-26T13:13:03+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -464,7 +535,7 @@
     {
       "titel": "What is happening to jobs? Separating AI hype from reality",
       "link": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
-      "resume": "Article URL: https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality Comments URL: https://news.ycombinator.com/item?id=49052570 Points: 289 # Comments: 377",
+      "resume": "Article URL: https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality Comments URL: https://news.ycombinator.com/item?id=49052570 Points: 291 # Comments: 377",
       "dato": "2026-07-25T22:51:10+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -541,6 +612,14 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+          "rubrik": "Microsoft lancerer nye AI-sikkerhedsværktøjer",
+          "resume_da": "De er billigere og bedre end konkurrenternes, påstår Microsoft."
+        }
+      ],
       "detaljer": [
         "MAI-Cyber-1-Flash er bygget til at finde svære sikkerhedshuller i komplekse kodebaser.",
         "Perception-platformen automatiserer sikkerhedsarbejde med agenter for opdagelse, prioritering og reparation.",
@@ -560,14 +639,6 @@
       "billedmotiv": "En sort hacking-handske med grønne kodelinjer og en rød lås, der smelter, ved siden af en blå Microsoft-logo-chip.",
       "kat_ai": true,
       "prio": 5,
-      "andre": [
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
-          "rubrik": "Microsoft lancerer nye AI-sikkerhedsværktøjer",
-          "resume_da": "De er billigere og bedre end konkurrenternes, påstår Microsoft."
-        }
-      ],
       "side": "artikel/699cca776fc63b7f.html"
     },
     {
@@ -1331,6 +1402,14 @@
       "billede": "data/img/d4f824c565bae104.jpg",
       "kat_ai": true,
       "prio": 8,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+          "rubrik": "Anthropic-chef frygter kinesisk AI",
+          "resume_da": "Dario Amodei siger, han ikke er imod åbne AI-modeller, men er bekymret for Kinas hastige udvikling"
+        }
+      ],
       "side": "artikel/c1fdca1de801e0c2.html"
     },
     {
@@ -2209,11 +2288,11 @@
         {
           "kilde": "Ingeniøren",
           "link": "https://ing.dk/artikel/ny-ai-agent-fra-openai-broed-ud-af-lukket-testmiljoe-skabte-selv-internetadgang-og-hackede-loes",
-          "rubrik": "OpenAI-agent brød ud af testmiljø og hackede løs",
-          "resume_da": "AI'en skabte selv internetadgang og fik adgang til egne systemer – kaldet wake-up call."
+          "rubrik": "OpenAI-agent slap ud og hackede på egen hånd",
+          "resume_da": "Under en test brød AI'en ud af sit aflukkede miljø og skaffede sig selv internetadgang"
         }
       ],
-      "billedmotiv": "En netkabel gennemborer en glasvæg, med en revne omkring hullet"
+      "billedmotiv": "En sprængt digital lås med en synlig netkabelstikforbindelse"
     },
     {
       "titel": "How AI helps scientists design the next generation of medicines",
@@ -3328,8 +3407,8 @@
         {
           "kilde": "Ingeniøren",
           "link": "https://ing.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
-          "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
-          "resume_da": "Fire år efter mørklægning har øboer skabt et mesh-netværk til næste gang, forbindelsen svigter."
+          "rubrik": "Bornholmere har bygget eget mobilnetværk",
+          "resume_da": "Efter at mobilnettet svigtede under en krise, har en gruppe øboere lavet et mesh-netværk, der kan klare sig uden omverdenen"
         }
       ],
       "navngivet": true
@@ -3362,7 +3441,7 @@
       "billede": "data/img/73007fb5a3ca2530.jpg",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En natriumsaltkrystal på en vægt, med et grønt '5 GWh' prismærke ved siden af"
+      "billedmotiv": "En stabel natriumklumper ved siden af et 5 GWh-energimærke"
     },
     {
       "titel": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
@@ -4835,9 +4914,9 @@
         "Kvaliteten af søgeteknologi er afgørende for resultatet."
       ],
       "billedmotiv": "En åben kuffert fyldt med sammenrullede papirruller med kode på, ved siden af en tom notesbog og en blyant med viskelæder.",
+      "billede": "data/img/8f753b605382c8a5.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billede": "data/img/8f753b605382c8a5.jpg",
       "side": "artikel/6962de4dec94cd03.html"
     },
     {
@@ -4916,7 +4995,7 @@
       "billede": "data/img/89ca9110f89e4787.jpg",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En støvsugerdyse med en uglefjer og en bisonhår i sugeåbningen"
+      "billedmotiv": "En åben glasbeholder med en prop fuld af fjer og hår"
     },
     {
       "titel": "Danskere skal levere vigtig software til den australske hær",
@@ -4929,10 +5008,10 @@
       "foerst_set": "2026-07-26T07:10:58.391318+00:00",
       "rubrik": "Danske Systematic leverer software til australsk hær",
       "resume_da": "Det er led i en stor modernisering af Australiens forsvar. Systematic står bag leverancen.",
+      "billede": "data/img/17e00dbe041e3e1f.jpg",
       "kat_ai": true,
       "prio": 4,
-      "billedmotiv": "En software-cd med et australsk flagklistermærke og en stempel 'GODKENDT'",
-      "billede": "data/img/17e00dbe041e3e1f.jpg"
+      "billedmotiv": "En software-cd i australsk militærgrøn med logo"
     },
     {
       "titel": "Trackman-stifter om AI: »Jeg er sindssygt glad for, at vi laver vores eget hardware«",
@@ -4952,8 +5031,8 @@
         {
           "kilde": "Version2",
           "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
-          "rubrik": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne",
-          "resume_da": "Fredrik Tuxen er glad for, at de laver eget hardware og advarer mod blind AI-tillid."
+          "rubrik": "Trackman-stifter: AI har sine begrænsninger",
+          "resume_da": "Fredrik Tuxen er glad for, at Trackman selv producerer hardware, så de ikke bliver afhængige af AI's fejl"
         }
       ]
     },
@@ -5014,7 +5093,7 @@
       "billede": "data/img/9fd0dd743b270a7f.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En gennemsigtig transistor fra 1950'erne med et forstørrelsesglas hvilende på en åben databog"
+      "billedmotiv": "En transistor af glas og metal fra 1950'erne på en måtte"
     },
     {
       "titel": "Saudi-Arabien og USA indgår aftale om atomkraft: Fornyer frygt for våbenkapløb",
@@ -5059,7 +5138,7 @@
       "kat_ai": true,
       "prio": 6,
       "navngivet": true,
-      "billedmotiv": "En forstørret AI-kamera feed med en giftig larve gemt i et egeblad"
+      "billedmotiv": "En forstørret larve med et rødt AI-sigte over sig"
     },
     {
       "titel": "Kan føre til skader på boligen: Specialist efterlyser skærpede krav til solceller",
@@ -5104,7 +5183,7 @@
       "billede": "data/img/a115c84598ede476.jpg",
       "kat_ai": true,
       "prio": 6,
-      "billedmotiv": "En åben pengeskab med dokumenter mærket 'PFA KONFIDENTIELT' spredt ud"
+      "billedmotiv": "En åben mappe med pensionsopsparingstal og et stort hul"
     },
     {
       "titel": "Kommune i AI-bommert: »Grænsen mellem at søge oplysninger på nettet og bruge AI er efterhånden hårfin»",
@@ -5121,7 +5200,7 @@
       "kat_ai": true,
       "prio": 7,
       "navngivet": true,
-      "billedmotiv": "En AI-chatbobble med en kommune-stempel på en borgers blanke papir"
+      "billedmotiv": "En blank borgerblanket med et AI-chatvindue lagt henover"
     },
     {
       "titel": "Vibrationer i dit kranie kan blive dit nye password",
@@ -5138,7 +5217,7 @@
       "kat_ai": true,
       "prio": 2,
       "navngivet": true,
-      "billedmotiv": "Et kranie af glas med en vibrationsoverflade og en lås symbol på panden"
+      "billedmotiv": "Et kranieformet hovedtelefon-sæt med vibrationsspole"
     },
     {
       "titel": "Blogindlæg: Datamuseum.dk's sommeropgave",
@@ -5154,7 +5233,7 @@
       "billede": "data/img/4bcb8d4bc9027864.jpg",
       "kat_ai": true,
       "prio": 1,
-      "billedmotiv": "En stabel hulkort med et talsymbol og et spørgsmålstegn trykt på det øverste kort"
+      "billedmotiv": "En bunke hulkort der danner et matematisk lighedstegn"
     },
     {
       "titel": "»Inhabil« medarbejder forsvandt sporløst fra whistleblowerportal: »Med min erfaring er der foregået datamanipulation«",
@@ -5380,98 +5459,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/102564d4308f8be4.html"
-    },
-    {
-      "titel": "Anthropic launches Opus 5",
-      "link": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
-      "resume": "Opus 5 will be both cheaper and less restrictive than Fable, likely making it preferable in most use cases.",
-      "dato": "2026-07-24T17:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-07-23T20:37:15.313153+00:00",
-      "rubrik": "Anthropic sender billigere AI-model på gaden",
-      "resume_da": "Den nye Opus 5-model koster halvt så meget som Fable 5 og klarer sig overraskende godt i test.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt?",
-          "tekst": "Anthropic har lanceret Opus 5, en opdatering af deres store AI-model. Den er ikke lige så kraftfuld som topmodellen Fable 5, men den er **halvt så dyr** og har færre begrænsninger. Det gør den til et mere praktisk valg for de fleste virksomheder."
-        },
-        {
-          "overskrift": "Testresultaterne",
-          "tekst": "Opus 5 slår faktisk Fable 5 i flere benchmarks. Ifølge Anthropic er modellen særligt god til at tjekke sit eget arbejde og gentage opgaver indtil de lykkes. I én test skrev den selv en computer-vision-pipeline ud fra en ufuldstændig instruks."
-        },
-        {
-          "overskrift": "Pris og data",
-          "tekst": "Prisen er **$5 pr. million input-tokens og $25 pr. million output** – samme niveau som forgængeren Opus 4.8, men markant billigere end Fable 5. Opus 5 er heller ikke underlagt den 30-dages datalagringspolitik, som har bekymret privatlivsbevidste brugere."
-        },
-        {
-          "overskrift": "Sikkerhed og regulering",
-          "tekst": "Modellen har stærkere cybersikkerhedsforanstaltninger end Opus 4.8, men færre restriktioner end Fable 5. Den må blandt andet ikke scanne software efter sårbarheder. Anthropic forventer, at sikkerhedsfiltrene aktiveres **85 % sjældnere** end på Fable 5."
-        },
-        {
-          "overskrift": "Ny funktion: Automatisk nødhjælp",
-          "tekst": "En ny beta-funktion, Automatic Fallbacks, sender automatisk opgaver videre til en mindre model, hvis sikkerhedsfiltrene slår til. Det betyder, at API-brugere får et svar i stedet for en fejlmeddelelse – en stor forbedring i daglig brug."
-        },
-        {
-          "overskrift": "Hård konkurrence",
-          "tekst": "Kinesiske Kimi K3 koster kun **$15 pr. million output-tokens** med lignende ydelse. Flere firmaer som Cursor og Meta bygger såkaldte model-routers, der automatisk vælger den billigste model til opgaven. Prispresset i AI-branchen er enormt."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$5/$25",
-          "label": "pr. million tokens (input/output)"
-        },
-        {
-          "tal": "halv pris",
-          "label": "af Fable 5"
-        },
-        {
-          "tal": "85 %",
-          "label": "færre sikkerhedsaktiveringer end Fable 5"
-        },
-        {
-          "tal": "$15",
-          "label": "Kimi K3's pris pr. million output-tokens"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
-        },
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap/"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
-        }
-      ],
-      "detaljer": [
-        "Opus 5 udkom kun to måneder efter Opus 4.8, som blev lanceret 28. maj.",
-        "Modellen klarer sig bedre end Fable 5 i flere benchmarks, ifølge Anthropic.",
-        "Opus 5 er ikke underlagt 30-dages datalagring som Fable 5.",
-        "Modellen må ikke scanne softwarebinary for sårbarheder, men må søge i kildekode.",
-        "Automatic Fallbacks sender opgaver til en mindre model, når sikkerhedsfiltre aktiveres.",
-        "Opus 5 markedsføres især til virksomheder inden for vidensarbejde og biologi.",
-        "Trump-administrationen har indført nye regler for AI-modeller efter Fable-sagen."
-      ],
-      "betydning": "Du får næsten samme AI-kraft som den bedste model – til halv pris og uden de strenge dataregler. Det kan blive din nye standardmodel på jobbet.",
-      "pointer": [
-        "Opus 5 koster det halve af Fable 5.",
-        "Klarer sig bedre end Fable 5 i flere tests.",
-        "Færre restriktioner og bedre privatliv.",
-        "Ny nødfunktion undgår fejlmeddelelser."
-      ],
-      "billedmotiv": "En stabel kontanter ved siden af to robotarme, hvor den ene har et prisskilt på halv størrelse af den anden, og begge peger mod en computerterminal.",
-      "billede": "data/img/7adb27624aad3241.jpg",
-      "kat_ai": true,
-      "prio": 10,
-      "side": "artikel/352b1db2596bfce6.html"
     },
     {
       "titel": "Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech",
