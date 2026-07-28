@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-28T19:08:30.403288+00:00",
+ "opdateret": "2026-07-28T19:21:10.579013+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -66,7 +66,7 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     2,
+     1,
      4,
      26
     ]
@@ -171,7 +171,7 @@ window.LAESERTAL = {
      6,
      4,
      3,
-     0,
+     1,
      4,
      1
     ]
@@ -249,54 +249,189 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 260,
- "sidevisninger_i_alt": 780,
+ "besoeg_i_alt": 278,
+ "sidevisninger_i_alt": 783,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 240,
+   "besoeg": 261,
    "visninger": 480
   },
   {
+   "sti": "/tak.html",
+   "besoeg": 3,
+   "visninger": 5
+  },
+  {
    "sti": "/youtube.html",
-   "besoeg": 20,
-   "visninger": 40
+   "besoeg": 3,
+   "visninger": 25
+  },
+  {
+   "sti": "/laer.html",
+   "besoeg": 2,
+   "visninger": 92
+  },
+  {
+   "sti": "/velkommen.html",
+   "besoeg": 2,
+   "visninger": 3
+  },
+  {
+   "sti": "/artikel/7460a49d0a9df98b.html",
+   "besoeg": 2,
+   "visninger": 2
+  },
+  {
+   "sti": "/about",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/om.html",
+   "besoeg": 1,
+   "visninger": 8
+  },
+  {
+   "sti": "/erhverv.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/uge.html",
+   "besoeg": 1,
+   "visninger": 74
+  },
+  {
+   "sti": "/koerekort.html",
+   "besoeg": 1,
+   "visninger": 26
+  },
+  {
+   "sti": "/artikel/c1fdca1de801e0c2.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/f1637c21f3807a90.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 3
   },
   {
-   "sti": "/laer.html",
+   "sti": "/faq.html",
    "besoeg": 0,
-   "visninger": 100
+   "visninger": 9
+  },
+  {
+   "sti": "/koerekort-1.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/koerekort-6.html",
+   "besoeg": 0,
+   "visninger": 2
   },
   {
    "sti": "/artikel/655cdfa99e06ad45.html",
    "besoeg": 0,
-   "visninger": 30
+   "visninger": 3
   },
   {
    "sti": "/prompts.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 14
   },
   {
-   "sti": "/koerekort.html",
+   "sti": "/artikel/6dd5f2d4f0064ecb.html",
    "besoeg": 0,
-   "visninger": 30
+   "visninger": 1
   },
   {
-   "sti": "/uge.html",
+   "sti": "/artikel/f7a651ced6714ba3.html",
    "besoeg": 0,
-   "visninger": 70
+   "visninger": 1
+  },
+  {
+   "sti": "/guide-igang.html",
+   "besoeg": 0,
+   "visninger": 3
+  },
+  {
+   "sti": "/prompt-arkiv.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/koerekort-2.html",
+   "besoeg": 0,
+   "visninger": 2
+  },
+  {
+   "sti": "/artikel/856fa25c6c2097c8.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/5d041ac5a5b573cc.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/1de8660326e5e2b6.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/guide-prompts.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 8
+  },
+  {
+   "sti": "/koerekort-7.html",
+   "besoeg": 0,
+   "visninger": 2
+  },
+  {
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/7280fe4d8d9af175.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/719e63d03733035f.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/guide-sikkerhed.html",
+   "besoeg": 0,
+   "visninger": 3
+  },
+  {
+   "sti": "/artikel/c13d67073208cf10.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/ordbog.html",
+   "besoeg": 0,
+   "visninger": 3
+  },
+  {
+   "sti": "/artikel/999e3252e27a4f99.html",
+   "besoeg": 0,
+   "visninger": 1
   }
  ],
  "henvisere": [
@@ -359,6 +494,18 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
+  "/tak.html": [
+   {
+    "fra": "buttondown.com",
+    "besoeg": 3,
+    "visninger": 3
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
   "/youtube.html": [
    {
     "fra": "herfra selv",
@@ -368,13 +515,6 @@ window.LAESERTAL = {
    {
     "fra": "direkte",
     "besoeg": 3,
-    "visninger": 3
-   }
-  ],
-  "/artikel/f1637c21f3807a90.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
     "visninger": 3
    }
   ],
@@ -390,26 +530,50 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/655cdfa99e06ad45.html": [
+  "/velkommen.html": [
    {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 14
-   }
-  ],
-  "/koerekort.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 25
+    "fra": "direkte",
+    "besoeg": 2,
+    "visninger": 2
    },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/7460a49d0a9df98b.html": [
+   {
+    "fra": "m.facebook.com",
+    "besoeg": 1,
+    "visninger": 1
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/about": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/om.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 7
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/erhverv.html": [
    {
     "fra": "direkte",
     "besoeg": 1,
@@ -428,24 +592,197 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/koerekort.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 25
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/c1fdca1de801e0c2.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/f1637c21f3807a90.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/faq.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 9
+   }
+  ],
+  "/koerekort-1.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/koerekort-6.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/artikel/655cdfa99e06ad45.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/prompts.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 14
+   }
+  ],
+  "/artikel/6dd5f2d4f0064ecb.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/f7a651ced6714ba3.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/guide-igang.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/prompt-arkiv.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/8756b60eb8fa9e43.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/koerekort-2.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/artikel/856fa25c6c2097c8.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/5d041ac5a5b573cc.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/1de8660326e5e2b6.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/guide-prompts.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 8
    }
+  ],
+  "/koerekort-7.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/artikel/51f6b5a29ea2e2af.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/7280fe4d8d9af175.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/719e63d03733035f.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/guide-sikkerhed.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/artikel/c13d67073208cf10.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/ordbog.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/artikel/999e3252e27a4f99.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
   ]
  },
  "faste_uden_besoeg": [
-  "/erhverv.html",
-  "/prompt-arkiv.html",
-  "/ordbog.html",
   "/quiz.html",
-  "/vaerktoejer.html",
-  "/faq.html",
-  "/om.html",
-  "/guide-igang.html",
-  "/guide-sikkerhed.html"
+  "/vaerktoejer.html"
  ],
  "serie": [
   {
@@ -601,9 +938,24 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
+   "sti": "/artikel/f1637c21f3807a90.html",
+   "besoeg": 0,
+   "visninger": 3,
+   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 3
+    }
+   ]
+  },
+  {
    "sti": "/artikel/655cdfa99e06ad45.html",
    "besoeg": 0,
-   "visninger": 30,
+   "visninger": 3,
    "rubrik": "Patreon fyrer 20 procent af medarbejderne",
    "kategori": "Penge & marked",
    "dato": "2026-07-23",
@@ -616,17 +968,202 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/f1637c21f3807a90.html",
+   "sti": "/artikel/7460a49d0a9df98b.html",
+   "besoeg": 2,
+   "visninger": 2,
+   "rubrik": "OpenAI-agent brød ud af testboks og hackede Hugging Face",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-22",
+   "henvisere": [
+    {
+     "fra": "m.facebook.com",
+     "besoeg": 1,
+     "visninger": 1
+    },
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/c1fdca1de801e0c2.html",
    "besoeg": 0,
-   "visninger": 10,
-   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+   "visninger": 1,
+   "rubrik": "Kinas AI-gave skaber panik i Silicon Valley",
    "kategori": "Penge & marked",
    "dato": "2026-07-27",
    "henvisere": [
     {
      "fra": "herfra selv",
      "besoeg": 0,
-     "visninger": 3
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/6dd5f2d4f0064ecb.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI-firmaet Midjourney køber astrologi-app",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-24",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/f7a651ced6714ba3.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Nu kan du tale med Claude på flere sprog",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-23",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI-selskaber bruger rekordbeløb på lobbyisme i Washington",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/856fa25c6c2097c8.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Google lancerer tre nye AI-modeller",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-21",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/5d041ac5a5b573cc.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Google og Reddit taber retssag om AI",
+   "kategori": "Politik & jura",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/1de8660326e5e2b6.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI og DeepMind satser på amerikansk forskning",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-22",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Rick Manelius: AI fik mig til at arbejde endnu mere",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-26",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/7280fe4d8d9af175.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Runway lancerer ny smart model-router",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-23",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/719e63d03733035f.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI tager ikke dit job – endnu",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-25",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/c13d67073208cf10.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Cloudflare lader kunder styre AI-trafik",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-25",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/999e3252e27a4f99.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI-model brød ud under test og skabte panik",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
     }
    ]
   }
@@ -634,7 +1171,19 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Penge & marked",
-   "visninger": 40
+   "visninger": 9
+  },
+  {
+   "navn": "Samfund & etik",
+   "visninger": 5
+  },
+  {
+   "navn": "Lanceringer",
+   "visninger": 5
+  },
+  {
+   "navn": "Politik & jura",
+   "visninger": 1
   }
  ]
 };
