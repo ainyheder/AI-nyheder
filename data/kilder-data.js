@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-28T16:12:43.541950+00:00",
- "artikler_i_alt": 143,
+ "opdateret": "2026-07-28T17:49:21.447982+00:00",
+ "artikler_i_alt": 144,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -9,9 +9,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 20,
    "i_listen": 17,
    "som_ekstra": 3,
    "seneste": [
@@ -41,6 +41,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "PJM slukker for datacentre for at undgå strømsvigt",
+     "dato": "2026-07-28T15:42:26",
+     "foerst_set": "2026-07-28T16:19:44",
+     "link": "https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/",
+     "side": "artikel/57b9aa43e3381b70.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Fish Audio henter 52 mio. dollars til AI-stemmer",
@@ -140,15 +149,6 @@ window.KILDER_STATUS = {
      "side": "artikel/255e648232d1e6e3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Robot-styring skal være lige så let som lydstyrke",
-     "dato": "2026-07-27T13:00:00",
-     "foerst_set": "2026-07-27T17:18:43",
-     "link": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/",
-     "side": "artikel/82e3b731569ecf2e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -169,9 +169,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 10,
    "i_listen": 10,
    "som_ekstra": 1,
    "seneste": [
@@ -293,9 +293,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 7,
    "i_listen": 0,
    "som_ekstra": 0,
    "seneste": [],
@@ -308,9 +308,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 20,
    "i_listen": 19,
    "som_ekstra": 1,
    "seneste": [
@@ -450,9 +450,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 10,
    "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
@@ -561,9 +561,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 25,
    "i_listen": 24,
    "som_ekstra": 0,
    "seneste": [
@@ -575,6 +575,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer nyt program til små virksomheder"
+    },
+    {
+     "rubrik": "OpenAI-rapport: Forskere bruger AI-kodeagenter til opdagelser",
+     "dato": "2026-07-28T17:00:00",
+     "foerst_set": "2026-07-28T17:24:15",
+     "link": "https://openai.com/index/scientific-computing-agentic-ai",
+     "side": "artikel/8cc1ba4abc2977bf.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAIs nye system lader AI rette egne fejl",
@@ -674,15 +683,6 @@ window.KILDER_STATUS = {
      "side": "artikel/10666aebf14a4743.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI deler erfaringer om langsigtede AI-modeller",
-     "dato": "2026-07-20T10:00:00",
-     "foerst_set": "2026-07-20T10:00:00",
-     "link": "https://openai.com/index/safety-alignment-long-horizon-models",
-     "side": "artikel/960e35dd4f7dc710.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -699,9 +699,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 25,
    "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
@@ -778,9 +778,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": null,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 25,
    "i_listen": 25,
    "som_ekstra": 0,
    "seneste": [
@@ -902,9 +902,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 6,
    "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
@@ -927,7 +927,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+     "rubrik": "AI-selskaber bruger rekordbeløb på lobbyarbejde i Washington",
      "dato": "2026-07-27T14:07:48",
      "foerst_set": "2026-07-27T17:34:46",
      "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
@@ -936,7 +936,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-selskaber makulerer sjældne bøger",
+     "rubrik": "HedgieMarkets: AI-selskaber makulerer sjældne bøger",
      "dato": "2026-07-27T12:32:12",
      "foerst_set": "2026-07-27T17:34:46",
      "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
@@ -954,7 +954,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI kan gøre dig 100 gange hurtigere – og give dig stress",
+     "rubrik": "Rick Manelius: AI gør dig 100 gange hurtigere og stresset",
      "dato": "2026-07-26T13:13:03",
      "foerst_set": "2026-07-27T06:56:48",
      "link": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
@@ -972,23 +972,14 @@ window.KILDER_STATUS = {
    "kun_aktuel": true,
    "max": 15,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
+   "hentet": 15,
    "i_listen": 13,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "Politikere kræver indgreb mod AI-våbenopskrifter",
-     "dato": "",
-     "foerst_set": "2026-07-28T15:23:09",
-     "link": "https://www.version2.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI og Google lokkes til at give våbenopskrifter"
-    },
-    {
-     "rubrik": "Trackman-stifter: AI har begrænsninger",
+     "rubrik": "Trackman-stifter: AI er et fantastisk værktøj",
      "dato": "",
      "foerst_set": "2026-07-28T15:23:09",
      "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
@@ -997,10 +988,28 @@ window.KILDER_STATUS = {
      "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
     },
     {
-     "rubrik": "OpenAI bliver overhalet af Kina i AI-kapløbet",
+     "rubrik": "Bornholmere byggede eget mobilnetværk efter krise",
+     "dato": "",
+     "foerst_set": "2026-07-27T08:55:57",
+     "link": "https://www.version2.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
+     "side": "",
+     "hvor": "under",
+     "under": "Bornholmere bygger eget mobilnetværk efter krisen i 2022"
+    },
+    {
+     "rubrik": "OpenAI hænger i bremsen, mens Kina rykker",
      "dato": "2026-07-28T12:45:00",
      "foerst_set": "2026-07-28T10:15:21",
      "link": "https://www.version2.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Politikere: ChatGPT og andre AI-chatbots kan give våbenopskrifter",
+     "dato": "2026-07-28T06:00:00",
+     "foerst_set": "2026-07-28T04:46:26",
+     "link": "https://www.version2.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -1010,15 +1019,6 @@ window.KILDER_STATUS = {
      "dato": "2026-07-27T10:58:00",
      "foerst_set": "2026-07-27T09:15:05",
      "link": "https://www.version2.dk/holdning/indtaegtsdaekket-spionage",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
-     "dato": "2026-07-27T10:50:00",
-     "foerst_set": "2026-07-27T08:55:57",
-     "link": "https://www.version2.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -1119,38 +1119,29 @@ window.KILDER_STATUS = {
    "kun_aktuel": true,
    "max": 15,
    "aktiv": true,
-   "status": "ukendt",
+   "status": "ok",
    "fejl": "",
-   "hentet": 0,
-   "i_listen": 12,
+   "hentet": 15,
+   "i_listen": 13,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI på hælene, Kina nærmer sig",
+     "rubrik": "OpenAI halter, mens Kina rykker tættere på i AI-kapløbet",
      "dato": "",
-     "foerst_set": "2026-07-28T15:23:09",
+     "foerst_set": "2026-07-28T10:15:21",
      "link": "https://ing.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI bliver overhalet af Kina i AI-kapløbet"
+     "under": "OpenAI hænger i bremsen, mens Kina rykker"
     },
     {
-     "rubrik": "Bornholmere bygger eget mobilnetværk efter krise",
+     "rubrik": "Politikere vil stoppe AI-opskrifter på biovåben",
      "dato": "",
-     "foerst_set": "2026-07-28T15:23:09",
-     "link": "https://ing.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
+     "foerst_set": "2026-07-28T04:55:43",
+     "link": "https://ing.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
      "side": "",
      "hvor": "under",
-     "under": "Bornholmere bygger eget mobilnetværk efter krise"
-    },
-    {
-     "rubrik": "Fredrik Tuxen: Fra garage til milliardforretning med Trackman",
-     "dato": "",
-     "foerst_set": "2026-07-25T17:49:55.436275+00:00",
-     "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
-     "side": "",
-     "hvor": "under",
-     "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
+     "under": "Politikere: ChatGPT og andre AI-chatbots kan give våbenopskrifter"
     },
     {
      "rubrik": "Energinet udelukker Energidrift",
@@ -1180,15 +1171,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI og Google lokkes til at give våbenopskrifter",
-     "dato": "2026-07-28T06:00:00",
-     "foerst_set": "2026-07-28T04:46:26",
-     "link": "https://ing.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Henrik Stiesdal forklarer takker på vindmøllevinger",
      "dato": "2026-07-27T15:55:00",
      "foerst_set": "2026-07-27T17:18:43",
@@ -1202,6 +1184,15 @@ window.KILDER_STATUS = {
      "dato": "2026-07-27T14:00:00",
      "foerst_set": "2026-07-27T12:44:06",
      "link": "https://ing.dk/artikel/traengsel-paa-cykelstierne-vil-sende-de-hurtigste-cyklister-ud-blandt-bilerne",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bornholmere bygger eget mobilnetværk efter krisen i 2022",
+     "dato": "2026-07-27T12:00:00",
+     "foerst_set": "2026-07-27T08:55:57",
+     "link": "https://ing.dk/artikel/naar-krisen-rammer-oeboere-har-bygget-eget-mobilnetvaerk",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -1243,19 +1234,19 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ingeniøren: Sådan virker de nye transistorer",
-     "dato": "2026-07-25T10:00:00",
+     "rubrik": "Fra garage til milliarder: Trackmans rejse med golfteknologi",
+     "dato": "2026-07-25T12:00:00",
      "foerst_set": "2026-07-25T17:49:55",
-     "link": "https://ing.dk/artikel/1950-saadan-fungerer-de-nye-transistorer",
+     "link": "https://ing.dk/artikel/fredrik-tuxen-kvittede-sit-gode-job-og-tog-chancen-i-dag-staar-han-bag-en-milliardforretning-med",
      "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "USA og Saudi-Arabien indgår atomkraftaftale",
-     "dato": "2026-07-24T15:50:00",
+     "rubrik": "Ingeniøren: Sådan virker de nye transistorer",
+     "dato": "2026-07-25T10:00:00",
      "foerst_set": "2026-07-25T17:49:55",
-     "link": "https://ing.dk/artikel/saudi-arabien-og-usa-indgaar-aftale-om-atomkraft-fornyer-frygt-vaabenkaploeb",
+     "link": "https://ing.dk/artikel/1950-saadan-fungerer-de-nye-transistorer",
      "side": "",
      "hvor": "forside",
      "under": ""

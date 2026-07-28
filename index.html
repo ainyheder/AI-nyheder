@@ -2497,6 +2497,16 @@ function overblikMestHtml(liste) {
   </aside>`;
 }
 
+/* Skiftetiderne kommer fra brief.json, ikke fra en tekst her. Skrives de af
+   i forsiden, og crawlerens tider ændres, står der et løfte på siden, som
+   ikke bliver holdt - og ingen opdager det, fordi teksten ser rigtig ud. */
+function skiftTekst(d) {
+  const s = Array.isArray(d.skift) ? d.skift.filter(t => Number.isInteger(t)) : [];
+  if (!s.length) return d.opdateret ? " — opdateret flere gange om dagen" : " — samlet til dig";
+  const kl = s.map(t => t + "").join(", ").replace(/, ([^,]*)$/, " og $1");
+  return " — nyt kl. " + kl;
+}
+
 function visDagensBrief() {
   // "Har du kun ét minut?" - AI-skrevet 5-punkts overblik over døgnet
   if (!window.fetch) return;
@@ -2504,19 +2514,34 @@ function visDagensBrief() {
     .then(r => r.json())
     .then(d => {
       if (!d || !d.punkter || d.punkter.length < 3) return;
-      if (d.dato !== dagNoegle(new Date().toISOString())) return;   // kun dagens
+      // Blokken skifter kl. 6, 11, 16 og 20. Aftenens skal derfor blive
+      // stående efter midnat - næste skift er først om morgenen, og med den
+      // gamle "kun dagens dato"-regel stod forsidens største blok tom fra
+      // midnat til klokken 6. Filer uden `gyldig_fra` er fra før det her og
+      // falder tilbage på dagsreglen.
+      const MAKS_ALDER_TIMER = 14;
+      if (d.gyldig_fra) {
+        const alder = (Date.now() - new Date(d.gyldig_fra).getTime()) / 3600000;
+        if (alder < -1 || alder > MAKS_ALDER_TIMER) return;
+      } else if (d.dato !== dagNoegle(new Date().toISOString())) {
+        return;
+      }
       const boks = document.getElementById("dagensBrief");
+      // Tidspunktet skal med, når det er der: overblikket skrives fire gange
+      // i døgnet, og uden klokkeslættet ligner det stadig et, der står fast
+      // fra morgenstunden - og så er der ingen grund til at kigge igen.
       const datoTekst = new Date(d.dato + "T12:00:00").toLocaleDateString("da-DK",
-        { weekday: "long", day: "numeric", month: "long" });
+        { weekday: "long", day: "numeric", month: "long" })
+        + (d.opdateret ? " · " + d.opdateret : "");
       const [foerste, ...resten] = d.punkter;
       const mestHtml = overblikMestHtml(mestOmtalte(5));
       boks.innerHTML = `
         <div class="ov-top">
           <div>
             <div class="ov-kicker">Kurateret af AI-nyheder</div>
-            <h2 class="ov-titel">Dagens overblik</h2>
-            <p class="ov-under">De ${d.punkter.length} vigtigste nyheder om AI,
-              teknologi og samfund — samlet til dig.</p>
+            <h2 class="ov-titel">Det må du ikke misse</h2>
+            <p class="ov-under">${d.punkter.length} historier om AI, teknologi og
+              samfund${skiftTekst(d)}.</p>
           </div>
           <div class="ov-dato"><span>☀️</span>${esc(datoTekst)}</div>
         </div>
