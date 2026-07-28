@@ -181,6 +181,69 @@ andet er ligegyldigt, mens siden er i stykker.
 verificér, at rettelsen holder. Vi har set flere gange, at en rettelse løste
 symptomet og efterlod årsagen — eller flyttede fejlen et andet sted hen.
 
+**4b. Efterprøv ét ældre punkt.** Sidste kørsels arbejde er stadig varmt —
+det er de gamle rettelser, ingen kigger på igen. Kør:
+
+```
+python3 _redaktion/efterproev.py
+```
+
+Den vælger selv ét punkt fra `## Klaret` i køen: det ældste, der er mindst to
+døgn gammelt og ikke er i karens efter en tidligere efterprøvning. Vælger den
+intet, siger den det, og så springer du punktet over. Du vælger ikke selv — så
+kan du ikke komme til at vælge det, der er nemmest at give ret.
+
+Så gør du dette, og kun dette:
+
+**a. Find punktets hovedpåstand og citér den ordret.** Det er den påstand,
+titlen handler om — ikke det tal, der er nemmest at måle igen. Står der flere
+tal, er hovedpåstanden den, der ville gøre punktet forkert, hvis den var
+usand. Skriv den ordret i mærket, i anførselstegn. Kan du ikke citere den, har
+du ikke fundet den.
+
+**b. Mål den samme påstand igen i dag.** Ikke læse koden og skønne — måle.
+
+**c. Skriv ét af disse tre udfald** som en linje for sig til sidst i punktet.
+De udelukker hinanden. Vælg det, der passer på **hovedpåstanden** — ikke det,
+der passer på den del, du tilfældigvis kunne måle:
+
+- `**Efterprøvet DD.MM.ÅÅÅÅ: holder.** <tallet, du målte i dag>`
+- `**Efterprøvet DD.MM.ÅÅÅÅ: gik i stykker igen.** <hvad du målte, og hvad der
+  er anderledes>`
+- `**Efterprøvet DD.MM.ÅÅÅÅ: kan ikke måles herfra.** <hvorfor>`
+
+**Kan hovedpåstanden ikke måles, er svaret det tredje — også selvom alt det
+andet i punktet holdt.** Skriv gerne bagefter, hvad der så kunne måles, men
+etiketten skal passe på det, punktet lovede. Ellers er efterprøvningen
+markedsføring, og så bryder den punkt 5 i målestokken.
+
+Gik det i stykker, skriver du punktet ind i `## Kø` igen med dagens måling som
+grundlag — ikke den gamle tekst. En rettelse, der ikke holdt, er et nyt problem,
+ikke en gentagelse af det gamle.
+
+**Tidsloftet er 15 minutter.** Kan påstanden ikke måles på et kvarter — fordi
+den kræver tal fra Google, fra en læser eller fra noget, kun Torben kan se — så
+skriv det tredje udfald og gå videre. Et ærligt "ved det ikke" er bedre end en
+efterprøvning, der bare gentager, hvad der stod i forvejen.
+
+**Et mærke er ikke en fritagelse på livstid.** Punktet er kandidat igen efter
+karensen: 21 døgn for "holder", 7 for de to andre. Et punkt, der ikke kunne
+måles i dag, skal prøves igen — ellers ville den billigste udvej også være den
+endelige.
+
+**Råber scriptet op om efterslæb**, så skriv tallet i loggen. Det betyder, at
+klarede punkter hober sig op hurtigere, end én efterprøvning pr. kørsel kan
+indhente — det kan du ikke rette i dag, men det skal stå et sted, hvor det kan
+ses vokse.
+
+Rører du selv `efterproev.py`, så kør `python3 _redaktion/efterproev-proeve.py`
+bagefter. Den prøver valget, karensen, datoerne og de skæve køer mod opdigtede
+data — 45 prøver, og den rigtige kø bliver ikke rørt.
+
+Hvorfor det her overhovedet står her: loggen og køen har hele tiden kunnet
+fortælle, hvad der blev *gjort*. Det her er det eneste sted, systemet får at
+vide, om det havde **ret**.
+
 **5. Afgør, hvad køen skal.** Nu — og først nu — holder du `oensker.md` og køen
 op mod dine egne tal. **Ønskelisten vejer tungere end dine egne fund**;
 de ser noget, ingen måling fanger. Derefter:

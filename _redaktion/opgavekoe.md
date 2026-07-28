@@ -152,6 +152,21 @@ den skal bare stå her og ikke i køen.
 Måler en session en mistanke efter, flytter den enten op i `## Kø` med sit tal
 eller ud herfra med en note om, at der ikke var noget.
 
+- **13 artikelsider er faldet ud af sitemappet, men ligger der stadig og siger,
+  de er originalen.** Målt 27.07 kl. 21:05 af den første efterprøvning: der er
+  161 sider i `artikel/`, 135 af dem peger på sig selv med canonical, men kun
+  122 står i `sitemap-artikler.xml`. De 13, der mangler, er alle fra 26.07 —
+  de er ikke i `data/articles.json` længere, og de er ikke `andre` under en
+  anden artikel. De er bare rullet ud af feed-vinduet, mens siden blev
+  liggende. Eksempler: «Oracle fyrer 21.000 ansatte efter AI-satsning»,
+  «Googles nye ATLAS viser, hvordan vi bruger AI», «OpenAI udlover dusør for
+  biologi-fejl». Det ser ud til at ske hver dag: en side er i sitemappet ét
+  døgn og derefter aldrig igen. Rammer punkt 10 — men **hvor meget det koster,
+  er ikke målt**: `data/laesertal.json` har `artikler: []`, altså nul målte
+  visninger på artikelsider overhovedet, og om Google beholder en side, den
+  har set én gang, ved vi ikke. Skal måles i Search Console, før det bliver
+  til en opgave.
+
 - **To sammenlægninger ser forkerte ud, men er ikke frigivet.** Noteret 27.07:
   «Er åben AI virkelig farligt?» ligger under «Nvidia og Mistral advarer mod at
   forbyde kinesisk AI», og «Claude taler nu ud med tre stærke hjerner» ligger
@@ -307,6 +322,33 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **Loopet efterprøver aldrig sit eget arbejde — 36 klarede punkter, 0
+      efterprøvninger.** *(27.07.2026, ekstra kørsel kl. 21:00-21:15 — chat med
+      Torben)* Bedt om af Torben direkte.
+
+      **Fundet:** loggen og køen kan fortælle, hvad der blev *gjort*. Intet sted
+      står der, om det var *rigtigt*. Fase 0 tjekkede kun sidste kørsels arbejde,
+      som stadig er varmt — de gamle rettelser så ingen på igen.
+
+      **Gjort:** nyt punkt 4b i fase 0. `_redaktion/efterproev.py` vælger
+      deterministisk ét modent punkt fra `## Klaret`; sessionen citerer punktets
+      hovedpåstand ordret, måler den igen og skriver ét af tre udfald ind:
+      *holder* / *gik i stykker igen* / *kan ikke måles herfra*. Karens 21 døgn
+      for det første, 7 for de to andre — et mærke er ikke en fritagelse på
+      livstid.
+
+      **Resultat:** 36 punkter i `## Klaret`, hvoraf 2 var modne (mindst 2 døgn
+      gamle). Den første efterprøvning kørte og fandt 13 artikelsider, der er
+      faldet ud af `sitemap-artikler.xml` — se `## Mistanker`.
+
+      **Prøven:** `_redaktion/efterproev-proeve.py`, 45 prøver, 0 røde. Den fandt
+      selv en fejl, der ville have gjort hvert mærke evigt. Den uafhængige
+      gennemgang fandt syv ting, herunder at det første mærke var selvros —
+      rettet.
+
+      **Målingen modsagde planen:** jeg havde lovet "et punkt fra for en uge
+      siden". 0 af 36 punkter var en uge gamle. Grænsen blev to døgn.
 
 - [x] **En fejlsammenlægning kan ikke fortrydes — 16 artikler var låst under en
       historie, de ikke handler om.** *(27.07.2026, ekstra kørsel kl. 20:20-20:45
@@ -780,6 +822,18 @@ afviste idé igen om en måned og koster den samme udredning forfra.
       alle 102 artikelsider manglede NewsArticle-schema (videosiderne havde det),
       at alle 129 billeder havde tom alt-tekst, og at en rubrik med `</script>`
       kunne ødelægge den strukturerede data. Alt tre rettet og testet.
+
+      **Efterprøvet 27.07.2026: kan ikke måles herfra.** Punktets egen påstand
+      er «Google har indekseret 0 artikelsider og 0 videosider». Det tal står
+      kun i Search Console, og sessionen kan ikke se det — så udfaldet er ikke
+      "holder", uanset hvor meget andet der kunne måles. Torben indsendte
+      sitemappene 27.07; om Google har set dem, ved vi tidligst om nogle dage.
+      Det, der KUNNE måles i dag, holdt: 161 artikelsider på disken, 0 uden
+      NewsArticle-schema (var 102 af 102 uden), 81 billeder, 0 med tom
+      alt-tekst, og vagten mod `</script>` står stadig i crawler.py — også på
+      de 59 sider, der er bygget siden.
+      **Men målingen fandt noget nyt:** 13 af de 135 kanoniske artikelsider er
+      ikke længere i `sitemap-artikler.xml`. Se `## Mistanker`.
 
 ---
 

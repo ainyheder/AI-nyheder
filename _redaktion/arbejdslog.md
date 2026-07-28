@@ -53,6 +53,67 @@ alle. Det er værd at kigge på, før nogen bygger.
 
 **Ekstra kørsel 20:45 (chat):** klarede 1 punkt mere — en fejlsammenlægning kan nu fortrydes. To artikler er sluppet løs igen. Se nedenfor.
 
+**Ekstra kørsel 21:15 (chat):** klarede 1 punkt mere — loopet kan nu efterprøve sit eget arbejde. Første efterprøvning fandt 13 artikelsider, der er faldet ud af sitemappet. Se nedenfor.
+
+---
+
+## 2026-07-27 (ekstra kørsel kl. 21:15, chat) · Loopet fik at vide, om det havde ret
+
+**Fandt:** Torben spurgte, hvordan vi får det ud af loopet, hvor sessionen
+forbedrer sig selv. Svaret var ikke en ny funktion, men en manglende kant:
+loopet retter, logger, prioriterer og går videre — men **ingen kommer nogensinde
+tilbage og måler, om rettelsen holdt.** `## Klaret` havde 36 punkter og 0
+efterprøvninger. Loggen kunne fortælle, hvad der blev *gjort*. Intet sted stod
+der, om det var *rigtigt*.
+
+**Gjorde:** Byggede efterprøvningen som et nyt punkt 4b i fase 0.
+`_redaktion/efterproev.py` vælger deterministisk ét punkt fra `## Klaret` — det
+ældste, der er modent og ikke i karens — og sessionen skal citere punktets
+hovedpåstand ordret, måle den igen og skrive ét af tre udfald ind i punktet:
+*holder*, *gik i stykker igen*, eller *kan ikke måles herfra*. Valget er ikke et
+skøn med vilje: kunne sessionen selv vælge, ville den vælge det, der var nemmest
+at give ret, og efterprøvningen ville blive til selvros.
+
+**Målingen ændrede designet undervejs.** Jeg havde lovet Torben "ét punkt, der
+blev klaret for en uge siden". Så målte jeg: **0 af 36 punkter var en uge gamle**
+— hele listen var under tre døgn. En uge-regel ville ikke have udløst noget som
+helst før om fem dage. Grænsen blev to døgn, og begrundelsen står i filen.
+
+**Testede:** `_redaktion/efterproev-proeve.py`, **45 prøver, 0 røde**. Den kører
+mod opdigtede køer i hukommelsen — den rigtige kø bliver ikke rørt. Prøven fandt
+en rigtig fejl: datoen i mærket blev aldrig læst, fordi et dovent regulært udtryk
+sprang det valgfrie led over. Uden den fejlrettelse ville **hvert eneste mærke
+have været en fritagelse på livstid**.
+
+**Den uafhængige gennemgang fandt syv ting, og den havde ret i det værste:** mit
+allerførste mærke var selvros. Punktet hed «Ingen ved, om Google har set de 83
+artikelsider», jeg skrev *holder*, og i samme åndedrag at netop dét ikke kunne
+måles herfra — jeg havde målt noget andet og lettere. Det er præcis punkt 5 i
+målestokken. Mærket er rettet til *kan ikke måles herfra*, og instruksen siger nu
+udtrykkeligt: **udfaldet skal passe på hovedpåstanden, ikke på den del, du
+tilfældigvis kunne måle.** Gennemgangen fandt også, at et mærke var evigt (nu er
+der karens: 21 døgn for *holder*, 7 for de to andre), at to punkter var usynlige,
+fordi de skrev datoen som `26.07` uden årstal (læses nu), og at efterslæbet kunne
+vokse i stilhed (scriptet råber op ved mere end 10 modne, uefterprøvede punkter).
+
+**Den første rigtige efterprøvning fandt noget nyt:** der ligger **161
+artikelsider** på disken, **135** af dem siger med canonical, at de er
+originalen — men kun **122** står i `sitemap-artikler.xml`. De 13, der mangler,
+er alle fra 26.07: de er rullet ud af feed-vinduet, mens siden blev liggende. Det
+ser ud til at ske hver dag. Det er skrevet i `## Mistanker`, ikke i køen, fordi
+**omkostningen ikke er målt** — `laesertal.json` har `artikler: []`, altså nul
+målte visninger på artikelsider overhovedet, og om Google beholder en side, den
+har set én gang, kan kun ses i Search Console.
+
+**Til redaktionen:** efterprøvningen er selv et punkt, der skal efterprøves. Om
+21 døgn vender den tilbage, og spørgsmålet bliver: har den fanget noget, eller er
+den blevet et rituelt grønt flueben? Bliver den til det sidste, skal den væk
+igen.
+
+**Bemærk:** `.koerer` blev taget af denne chat-session kl. 20:59 og er sluppet
+igen ved at skrive vagtdatoen `2000-01-01T00:00:00+00:00` tilbage — chatten kan
+ikke slette filer på Torbens maskine, kun skrive i dem.
+
 ---
 
 ## 2026-07-27 (ekstra kørsel kl. 20:45, chat) · En sammenlægning kunne ikke fortrydes
