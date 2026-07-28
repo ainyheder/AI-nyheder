@@ -3921,7 +3921,8 @@ def navngiv_rubrikker(artikler: list[dict], portion: int = 25) -> None:
 
 BRIEF_FIL = ROOT / "data" / "brief.json"
 
-SYSTEM_BRIEF = """Du skriver "Dagens overblik" til ainyheder.com - fem punkter, der giver en travl dansker hele AI-døgnet på 60 sekunder.
+SYSTEM_BRIEF = """Du skriver "Det må du ikke misse" til ainyheder.com - fem punkter, en travl dansker vil ærgre sig over ikke at have set.
+Overskriften lover noget. Vælg kun historier, hvor det er sandt - hellere en tør, vigtig historie end en, der lyder stor og ikke er det. Skru ALDRIG op for sproget for at leve op til titlen.
 Du får en nummereret liste over døgnets vigtigste historier (rubrik + resumé).
 Svar KUN med et JSON-array med PRÆCIS 5 objekter: [{"nr": <historiens nummer>, "tekst": "..."}]
 Krav til tekst: én sætning på letlæst dansk (maks 25 ord), konkret, med tal hvor de findes.
@@ -3929,30 +3930,81 @@ Ingen indledninger som "I dag" i hvert punkt - lige på sagen.
 Vælg de 5 vigtigste og mest FORSKELLIGE historier - aldrig to punkter om samme begivenhed."""
 
 
+BRIEF_SKIFT = (6, 11, 16, 20)   # dansk tid: morgen, formiddag, eftermiddag, aften
+
+
+def _brief_blok(nu):
+    """Hvilket skift sidder vi i lige nu - og hvilken dag hører det til?
+
+    Tiderne er skæve med vilje (6, 11, 16, 20), så de rammer, når folk rent
+    faktisk kigger. Det betyder, at et døgn ikke kan deles med et fast antal
+    timer, og at der er ti timer mellem aftenens skift og næste morgens.
+
+    Mellem midnat og klokken 6 hører man derfor stadig til GÅRSDAGENS
+    aftenskift. Uden det ville datoen skifte ved midnat, hvor der ikke er
+    noget skift, og forsidens største blok stod tom fra midnat til morgen.
+    """
+    for nr in range(len(BRIEF_SKIFT) - 1, -1, -1):
+        if nu.hour >= BRIEF_SKIFT[nr]:
+            return nu.date().isoformat(), nr
+    return (nu - timedelta(days=1)).date().isoformat(), len(BRIEF_SKIFT) - 1
+
+
 def lav_dagens_brief(artikler: list[dict]) -> None:
-    """Ét nyt 5-punkts overblik pr. dag (dansk tid) til forsiden.
+    """Fire 5-punkts overblik i døgnet (dansk tid) til forsiden.
+
+    Det var ÉT pr. døgn indtil 28.07. Overblikket fylder hele den første
+    skærm på forsiden, så en læser, der kiggede ind tre gange på en dag, fik
+    nøjagtig det samme at se hver gang - uanset at crawleren havde hentet nyt
+    nitten gange i mellemtiden. Der var intet at komme tilbage efter.
+
+    Det afgørende er `brugte`: uden den liste får modellen det samme stof at
+    vælge imellem klokken 12 som klokken 06, og den vælger de samme fem
+    historier igen. Så ville fire kald i døgnet koste fire gange så meget og
+    give præcis samme forside.
+
     Fejler stille - briefet må aldrig vælte crawlet."""
     if not API_KEY:
         return
     try:
         try:
             from zoneinfo import ZoneInfo
-            dag = datetime.now(ZoneInfo("Europe/Copenhagen")).date().isoformat()
+            nu = datetime.now(ZoneInfo("Europe/Copenhagen"))
         except Exception:
-            dag = datetime.now(timezone.utc).date().isoformat()
+            nu = datetime.now(timezone.utc)
+        dag, blok = _brief_blok(nu)
+        # Tidspunktet for det skift, vi sidder i. Forsiden bruger det til at
+        # afgøre, om blokken stadig er gyldig - ikke datoen, for aftenens
+        # overblik skal blive stående efter midnat.
+        gyldig_fra = nu.replace(hour=BRIEF_SKIFT[blok], minute=0,
+                                second=0, microsecond=0)
+        if dag != nu.date().isoformat():
+            gyldig_fra -= timedelta(days=1)
+
+        gammel = {}
         if BRIEF_FIL.exists():
             try:
-                if json.loads(BRIEF_FIL.read_text(encoding="utf-8")).get("dato") == dag:
-                    return   # dagens brief findes allerede
+                gammel = json.loads(BRIEF_FIL.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
-                pass
+                gammel = {}
+        if gammel.get("dato") == dag and gammel.get("blok") == blok:
+            return   # blokkens brief findes allerede
+
+        # Historier, dagens tidligere overblik allerede har brugt. Ved
+        # dagskifte starter listen forfra - "brugt i går" er ikke brugt.
+        brugte = set(gammel.get("brugte") or []) if gammel.get("dato") == dag else set()
 
         graense = (datetime.now(timezone.utc) - timedelta(hours=26)).isoformat()
-        kandidater = [a for a in artikler
-                      if a.get("rubrik")
-                      and (a.get("foerst_set") or a.get("dato") or "") >= graense]
-        kandidater.sort(key=lambda a: a.get("prio") or 5, reverse=True)
-        kandidater = kandidater[:12]
+        friske = [a for a in artikler
+                  if a.get("rubrik")
+                  and (a.get("foerst_set") or a.get("dato") or "") >= graense]
+        friske.sort(key=lambda a: a.get("prio") or 5, reverse=True)
+        kandidater = [a for a in friske if a.get("link") not in brugte][:12]
+        # På en stille dag kan der ikke være 5 ubrugte historier tilbage om
+        # aftenen. Så er et gentaget overblik bedre end intet: uden det her
+        # ville blokken forsvinde fra forsiden resten af dagen.
+        if len(kandidater) < 5:
+            kandidater = friske[:12]
         if len(kandidater) < 5:
             return   # for stille et døgn til et overblik
 
@@ -3973,10 +4025,20 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
         if len(punkter) < 5:
             print("☀️ Dagens brief: svaret var for tyndt - prøver igen næste kørsel")
             return
+        valgte = punkter[:5]
         BRIEF_FIL.write_text(json.dumps(
-            {"dato": dag, "punkter": punkter[:5]}, ensure_ascii=False, indent=1),
-            encoding="utf-8")
-        print(f"☀️ Dagens overblik skrevet ({dag})")
+            {"dato": dag, "blok": blok, "opdateret": nu.strftime("%H:%M"),
+             "gyldig_fra": gyldig_fra.isoformat(),
+             # Skiftetiderne følger med ud, så forsiden kan skrive dem til
+             # læseren uden at gætte. Ændres de her, ændres teksten med.
+             "skift": list(BRIEF_SKIFT),
+             "punkter": valgte,
+             # Alt hvad dagens overblik har vist indtil nu. Næste blok springer
+             # dem over, så de fire overblik ikke bliver det samme fire gange.
+             "brugte": sorted(brugte | {p["link"] for p in valgte if p.get("link")})},
+            ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"☀️ «Det må du ikke misse» skrevet ({dag} skift {BRIEF_SKIFT[blok]}, "
+              f"kl. {nu.strftime('%H:%M')})")
     except Exception as e:
         print(f"☀️ Dagens brief sprang over ({e})")
 
