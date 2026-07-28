@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-28T16:20:47.004516+00:00",
+ "opdateret": "2026-07-28T17:25:03.863180+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      0,
      2,
      4,
-     25
+     26
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 274,
- "sidevisninger_i_alt": 779,
+ "besoeg_i_alt": 277,
+ "sidevisninger_i_alt": 782,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 257,
-   "visninger": 476
+   "besoeg": 260,
+   "visninger": 479
   },
   {
    "sti": "/tak.html",
@@ -437,7 +437,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 247
+   "besoeg": 250
   },
   {
    "fra": "l.facebook.com",
@@ -465,8 +465,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 234,
-    "visninger": 234
+    "besoeg": 237,
+    "visninger": 237
    },
    {
     "fra": "herfra selv",
@@ -932,8 +932,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-07-28",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 20,
+   "visninger": 30
   }
  ],
  "artikler": [
@@ -1036,7 +1036,7 @@ window.LAESERTAL = {
    "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+   "rubrik": "AI-selskaber bruger rekordbeløb på lobbyarbejde i Washington",
    "kategori": "Penge & marked",
    "dato": "2026-07-27",
    "henvisere": [

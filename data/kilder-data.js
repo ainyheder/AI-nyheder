@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-28T16:19:44.954697+00:00",
+ "opdateret": "2026-07-28T17:24:15.701283+00:00",
  "artikler_i_alt": 144,
  "kilder": [
   {
@@ -577,6 +577,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer nyt program til små virksomheder"
     },
     {
+     "rubrik": "OpenAI-rapport: Forskere bruger AI-kodeagenter til opdagelser",
+     "dato": "2026-07-28T17:00:00",
+     "foerst_set": "2026-07-28T17:24:15",
+     "link": "https://openai.com/index/scientific-computing-agentic-ai",
+     "side": "artikel/8cc1ba4abc2977bf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAIs nye system lader AI rette egne fejl",
      "dato": "2026-07-15T10:00:00",
      "foerst_set": "2026-07-28T10:15:21",
@@ -672,15 +681,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-21T00:00:00",
      "link": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
      "side": "artikel/10666aebf14a4743.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI deler erfaringer om langsigtede AI-modeller",
-     "dato": "2026-07-20T10:00:00",
-     "foerst_set": "2026-07-20T10:00:00",
-     "link": "https://openai.com/index/safety-alignment-long-horizon-models",
-     "side": "artikel/960e35dd4f7dc710.html",
      "hvor": "forside",
      "under": ""
     }
@@ -927,7 +927,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+     "rubrik": "AI-selskaber bruger rekordbeløb på lobbyarbejde i Washington",
      "dato": "2026-07-27T14:07:48",
      "foerst_set": "2026-07-27T17:34:46",
      "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
@@ -979,7 +979,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Trackman-stifter: Vi laver selv hardware for at styre AI",
+     "rubrik": "Trackman-ejer advarer mod AI's begrænsninger",
      "dato": "",
      "foerst_set": "2026-07-28T15:23:09",
      "link": "https://www.version2.dk/artikel/trackman-stifter-om-ai-jeg-er-sindssygt-glad-vi-laver-vores-eget-hardware",
@@ -988,9 +988,9 @@ window.KILDER_STATUS = {
      "under": "Trackman-stifter: AI er fantastisk, men pas på begrænsningerne"
     },
     {
-     "rubrik": "OpenAI bliver overhalet af Kina i AI-kapløbet",
+     "rubrik": "OpenAI halter bagefter i AI-kapløbet med Kina",
      "dato": "",
-     "foerst_set": "2026-07-28T10:15:21",
+     "foerst_set": "2026-07-28T11:48:17",
      "link": "https://www.version2.dk/artikel/openai-er-paa-haelene-og-kina-naermer-sig-de-stoerste-trumfkort-i-ai-raeset",
      "side": "",
      "hvor": "under",
@@ -1135,9 +1135,9 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "OpenAI og Google lokkes til at give våbenopskrifter",
+     "rubrik": "AI-chatbots giver opskrifter på biologiske våben",
      "dato": "",
-     "foerst_set": "2026-07-28T04:46:26",
+     "foerst_set": "2026-07-28T04:55:43",
      "link": "https://ing.dk/artikel/kraever-indgreb-ai-chatbots-bliver-narret-til-give-opskrifter-paa-biologiske-vaaben",
      "side": "",
      "hvor": "under",
