@@ -1244,6 +1244,177 @@ def _skal_frigives(vinder: dict, kilde: dict, pr_link: dict) -> bool:
     return True
 
 
+def _rul_arven_tilbage(vinder: dict, beholdt: list, frigivne: list) -> None:
+    """Giv vinderen sit eget tidspunkt og sit eget billede tilbage.
+
+    Frigivelsen fjernede taberen fra `andre` og standsede dér. Men en
+    sammenlægning giver også vinderen det TIDLIGSTE `foerst_set` blandt
+    medlemmerne og lader den arve taberens billede, hvis den selv mangler et —
+    og de to ting blev stående. Målt 28.07: begge de to artikler, der blev
+    frigivet 27.07, står stadig med et `foerst_set`, der er næsten to døgn
+    tidligere end deres egen udgivelsestid, fordi tiden kom fra den historie,
+    de ikke længere er samlet med. Forsiden grupperer efter `foerst_set`, så
+    de ligger under 23. juli, selvom de udkom 25.
+
+    Bliver der kilder tilbage, er svaret ikke vinderens eget tidspunkt, men det
+    tidligste af vinderens eget og de tilbageværendes — sammenlægningen gælder
+    jo stadig for dem.
+
+    Kan tiden ikke gives tilbage, sker der INGENTING. `eget_foerst_set`
+    skrives først fra i dag, så sammenlægninger fra før i dag har den ikke, og
+    et gæt ville flytte en historie på forsiden uden dækning. De to artikler i
+    docstringen ovenfor er derfor IKKE rettet af den her funktion — de blev
+    frigivet i går, og deres eget tidspunkt findes ikke længere nogen steder.
+    De ruller ud af feedet af sig selv. Se arbejdsloggen 28.07.
+    """
+    eget = vinder.get("eget_foerst_set")
+    if eget:
+        tider = [eget] + [str(k.get("foerst_set") or "")
+                          for k in beholdt if isinstance(k, dict)]
+        # `eget_foerst_set` bliver stående, også når den sidste kilde er væk.
+        # Det er ikke et arbejdsfelt, men en permanent oplysning om artiklen:
+        # hvornår vi så den. Ryddes den op, står historien uden dækning næste
+        # gang den bliver sammenlagt, og så kan tiden aldrig gives tilbage igen.
+        vinder["foerst_set"] = min(t for t in tider if t)
+
+    laant = vinder.get("laant_billede")
+    if not isinstance(laant, dict):
+        return
+    if not any(isinstance(k, dict) and k.get("link") == laant.get("fra")
+               for k in frigivne):
+        return
+
+    # Billedet blev tegnet til taberens historie. Bliver det stående,
+    # illustrerer vinderen sig selv med en anden nyhed — punkt 5. Filen
+    # slettes ikke: taberens frosne side i `artikel/` peger stadig på den,
+    # og `_BILLED_I_HTML` holder oprydningen fra den. Vinderen får sit eget
+    # billede ved næste kørsel (~$0,03 under loftet i `lav_billeder`).
+    #
+    # Kun hvis værdien stadig ER den lånte. Står der noget andet, har
+    # oprydningen eller `lav_billeder` allerede givet vinderen sit eget, og
+    # dét må en frigivelse ikke rive af. Samme prøve på motivet for sig:
+    # `udfyld_billedmotiver` kan have skrevet et nyt motiv til det gamle
+    # billede, og de to felter kan derfor godt være ude af trit.
+    if vinder.get("billede") == laant.get("billede"):
+        vinder.pop("billede", None)
+    if laant.get("motiv") and vinder.get("billedmotiv") == laant["motiv"]:
+        vinder.pop("billedmotiv", None)
+    vinder.pop("laant_billede", None)
+
+
+def _saet_foerst_set(artikler: list[dict], kendte: dict, nu: datetime,
+                     eget_kendt: dict | None = None) -> None:
+    """Sæt "hvornår så vi den" — og gem én gang for alle, at tiden er dens egen.
+
+    `eget_foerst_set` sættes PRÆCIS her og kun her, i det øjeblik artiklen ses
+    for første gang. Det er det eneste sted i hele kørslen, hvor tiden med
+    sikkerhed er artiklens egen: ingen sammenlægning har rørt den endnu.
+
+    Feltet er hele grundlaget for, at en frigivelse kan give tiden tilbage (se
+    `_rul_arven_tilbage`). Det blev først forsøgt sat inde i `_slaa_sammen`, og
+    det holdt ikke: dér er `foerst_set` allerede lånt, hvis historien var
+    sammenlagt i forvejen, og de vagter, man kan opfinde imod det ("har den
+    `andre`?"), falder alle sammen — trin 0 tømmer selv `andre` få linjer før,
+    og `omskriv_nye` genskaber kun `andre` bag sektioner-porten. Ved fødslen
+    kan spørgsmålet ikke stilles forkert.
+
+    `eget_kendt` bærer feltet videre fra sidste fil. Den læses samme sted som
+    `kendte` og med samme port — ikke gennem `cache`, som kræver en `rubrik`.
+    Ellers ville én kørsel uden AI-nøgle slette feltet permanent for alt, der
+    blev født den dag.
+
+    Prisen er ét felt pr. artikel i `articles.json` — målt 28.07: 145 artikler
+    × ~45 tegn ≈ 6,5 kB rå af en fil på 419 kB, altså 1,6 %.
+    """
+    eget_kendt = eget_kendt or {}
+    for a in artikler:
+        kendt = kendte.get(a["link"])
+        a["foerst_set"] = kendt or nu.isoformat()
+        if not kendt:
+            a["eget_foerst_set"] = a["foerst_set"]
+        elif eget_kendt.get(a["link"]):
+            a["eget_foerst_set"] = eget_kendt[a["link"]]
+
+
+# Hvor langt FØR sin egen udgivelsestid en artikel må være set, før tallet
+# ikke længere kan være sandt. Målt 28.07 på 163 udgaver af `articles.json`
+# (hele historikken): kun FIRE artikler uden `andre` har nogensinde haft
+# `foerst_set` før `dato`. To er lovlige og ligger på 5,54 t og 0,55 t — et
+# feed, der serverer en artikel lidt før udgivelsestidspunktet. De to andre er
+# de kendte fejl på 40,5 t og 47,0 t. Grænsen er sat midt i det hul, med over
+# fire gange luft til begge sider.
+LAANT_TID_GRAENSE_TIMER = 24
+
+
+def _gulv_paa_laante_tider(artikler: list[dict]) -> int:
+    """Ret et lånt tidsstempel, som ingen frigivelse kan give tilbage.
+
+    `_rul_arven_tilbage` kan kun hjælpe de historier, der har et
+    `eget_foerst_set`. To artikler blev frigivet 27.07, FØR det felt fandtes,
+    og står derfor med et tidspunkt, de arvede af en historie, de ikke længere
+    hører sammen med. Målt i git 28.07 — det er ikke et skøn:
+
+      «Strømsvigt i Washington» havde selv 2026-07-25T16:26:44 (commit
+      05ce75b) og bærer i dag 2026-07-23T20:37:15.313153, som er PRÆCIS
+      `foerst_set` på «Eks-googlere bag AegisAI» (commit c137a3d), den kilde,
+      den var sammenlagt med. Samme mønster for «Biblioteker afholder
+      'Avoiding AI'-workshops».
+
+    Forsiden dag-grupperer efter `foerst_set` (`index.html` linje 1517-1522),
+    så begge ligger under 23. juli, selvom de udkom 25. `dato` rammer den
+    rigtige dag for dem begge.
+
+    Vagterne er der, fordi rettelsen ikke må blive et gæt: kun artikler UDEN
+    kilder (så `_rul_arven_tilbage` ikke er det rigtige svar), UDEN
+    `eget_foerst_set` (så vi ikke har sandheden i forvejen) og med et
+    forspring over grænsen. Kaldes EFTER frigivelses-løkken, ikke før: en
+    gammel historie, hvis sidste kilde slippes fri i dag, har hverken `andre`
+    eller `eget_foerst_set`, og skal rettes i samme kørsel.
+
+    Selvoprydende, men ikke i dag: hver artikel, der fødes fra 28.07, får et
+    `eget_foerst_set` og er dermed uden for funktionens rækkevidde for altid.
+    Tilbage står den bestand, der lå i `articles.json` før den dato — den
+    ruller ud af feedet i løbet af dage. Så længe den findes, er der ét kendt
+    hul: retter en udgiver sin `pubDate` mere end et døgn frem for en af de
+    gamle artikler, flytter gulvet dens `foerst_set` med op én gang. De 25
+    arXiv-artikler er de mest udsatte, fordi de er undtaget fra AI-dubletfasen
+    og derfor aldrig har `andre`. Prisen er, at én historie kan hoppe én dag
+    på forsiden; det er mindre end de to, der ligger forkert i dag.
+    """
+    graense = timedelta(hours=LAANT_TID_GRAENSE_TIMER)
+    rettet = 0
+    for a in artikler:
+        if a.get("andre") or a.get("eget_foerst_set"):
+            continue
+        fs, da = a.get("foerst_set"), a.get("dato")
+        if not fs or not da:
+            continue
+        try:
+            set_tid = datetime.fromisoformat(str(fs).replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            continue
+        ud_tid = da if isinstance(da, datetime) else None
+        if ud_tid is None:
+            try:
+                ud_tid = datetime.fromisoformat(str(da).replace("Z", "+00:00"))
+            except (TypeError, ValueError):
+                continue
+        if set_tid.tzinfo is None:
+            set_tid = set_tid.replace(tzinfo=timezone.utc)
+        if ud_tid.tzinfo is None:
+            ud_tid = ud_tid.replace(tzinfo=timezone.utc)
+        if ud_tid - set_tid <= graense:
+            continue
+        a["foerst_set"] = ud_tid.isoformat()
+        rettet += 1
+        print(f"  🕒 «{(a.get('rubrik') or a.get('titel') or '')[:52]}» blev sat til"
+              f" {str(a['foerst_set'])[:10]} — tidspunktet var lånt af en"
+              f" sammenlægning, der er fortrudt")
+    if rettet:
+        print(f"🕒 {rettet} artikler fik en dato, forsiden kan gruppere rigtigt efter")
+    return rettet
+
+
 def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
     """Finder nyheder som flere medier dækker, beholder den bedste udgave og
     gemmer de øvrige som ekstra kilder på historien ("andre")."""
@@ -1285,8 +1456,11 @@ def saml_dublet_historier(artikler: list[dict]) -> list[dict]:
             a["andre"] = beholdt
         else:
             a.pop("andre", None)
+        _rul_arven_tilbage(a, beholdt, [k for k in kilder if k not in beholdt])
     if frigivet:
         print(f"↩️  {frigivet} artikler var samlet under en historie, de ikke handler om")
+
+    _gulv_paa_laante_tider(artikler)
 
     kendte_dubletter = {k["link"] for a in artikler for k in a.get("andre", [])}
     artikler = [a for a in artikler if a["link"] not in kendte_dubletter]
@@ -1438,23 +1612,48 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
         if not andre:
             return set()
 
+    # Kun de medlemmer, der faktisk BLIVER i historien, må aflevere noget til
+    # den. `medlemmer` er hele gruppen, som AI'en foreslog den — også dem,
+    # vagten lige har afvist ovenfor. Bruges den liste, forærer en afvist
+    # artikel både sit tidspunkt og sit billede væk til en historie, den
+    # hverken hører til eller står opført under, og ingen kan siden se hvorfra.
+    # Kommentaren over vagten lovede allerede det her; koden gjorde det ikke.
+    bidragydere = [primaer] + andre
+
     # En historie bliver ikke NY igen, bare fordi et nyt medie skriver om den
     # i dag. Arv det TIDLIGSTE tidspunkt, nogen af udgaverne blev set - ellers
     # hopper gårsdagens historie op på forsiden med et NY-mærke, og læseren
     # bliver præsenteret for det samme to dage i træk.
-    tider = [m.get("foerst_set") for m in medlemmer if m.get("foerst_set")]
+    #
+    # Men gem vinderens EGET tidspunkt først. Frigivelsen i trin 0 fjerner
+    # taberen fra `andre` og standser dér: uden det her bliver vinderen stående
+    # med en fortid, der stammer fra en historie, den ikke længere er samlet
+    # med. Forsiden sorterer og dag-grupperer efter `foerst_set`, så en
+    # historie fra i går kan ligge under forgårs dato uden NY-mærke.
+    # Vinderens eget tidspunkt gemmes IKKE her — det gøres ved fødslen i
+    # `main()`, hvor tiden med sikkerhed er artiklens egen. Se kommentaren dér.
+    tider = [m.get("foerst_set") for m in bidragydere if m.get("foerst_set")]
     if tider:
         primaer["foerst_set"] = min(tider)
 
     # Arv billedet, hvis vi allerede har betalt for et. Uden det her laves der
     # et nyt billede, hver gang en historie får en ekstra kilde - og det gamle
     # slettes bagefter som forældreløst. Dobbelt spild.
+    #
+    # `laant_billede` husker både HVEM der lånte ud og HVAD der blev lånt.
+    # Kilden alene er ikke nok: billedfilen kan nå at blive skiftet ud, før en
+    # frigivelse kommer — oprydningen nulstiller `billede`, når filen er væk,
+    # og `lav_billeder` tegner så vinderens eget. Uden den gemte værdi ville
+    # frigivelsen rive dét nye, betalte billede af igen.
     if not primaer.get("billede"):
-        for m in medlemmer:
+        for m in andre:
             if m.get("billede"):
                 primaer["billede"] = m["billede"]
+                laant = {"fra": m.get("link") or "", "billede": m["billede"]}
                 if not primaer.get("billedmotiv") and m.get("billedmotiv"):
                     primaer["billedmotiv"] = m["billedmotiv"]
+                    laant["motiv"] = m["billedmotiv"]
+                primaer["laant_billede"] = laant
                 break
 
     primaer.setdefault("andre", [])
@@ -1463,9 +1662,12 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
     # sammenlægning aldrig fortrydes: `articles.json` bygges forfra af feedsene
     # hver kørsel, mens `andre` arves videre, så taberen er væk om få dage — og
     # frigivelsen i trin 0 kræver to tekster at måle på. Se `_taberens_udgave`.
+    # `foerst_set` gemmes med af samme grund: frigives én af tre kilder, skal
+    # tiden regnes om af dem, der bliver — ikke sættes tilbage til nul.
     primaer["andre"] += [{"kilde": m["kilde"], "link": m["link"],
                           "rubrik": str(m.get("rubrik") or m.get("titel") or "")[:_GEMT_TEKST_MAX],
-                          "resume_da": str(m.get("resume_da") or "")[:_GEMT_TEKST_MAX]}
+                          "resume_da": str(m.get("resume_da") or "")[:_GEMT_TEKST_MAX],
+                          "foerst_set": str(m.get("foerst_set") or "")}
                          for m in andre if m["link"] not in har]
     return {m["link"] for m in andre}
 
@@ -1775,6 +1977,12 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
                 a["billedmotiv"] = gammel.get("billedmotiv", "")
             if gammel.get("billede"):
                 a["billede"] = gammel["billede"]
+                # `laant_billede` følger billedet og kun billedet: forsvinder
+                # filen en nat, nulstiller oprydningen `billede`, og så er
+                # lånemærket heller ikke sandt længere. Feltet fortæller altså
+                # noget om det billede, der ligger der NU — ikke om historien.
+                if isinstance(gammel.get("laant_billede"), dict):
+                    a["laant_billede"] = gammel["laant_billede"]
             if gammel.get("kat_ai") and gammel.get("kategori"):
                 a["kategori"] = gammel["kategori"]
                 a["kat_ai"] = True
@@ -4746,11 +4954,19 @@ def main() -> None:
     # Cache af tidligere omskrivninger (nøgle = link)
     cache: dict = {}
     foerst_set_gammel: dict = {}
+    # `eget_foerst_set` hentes HER og ikke gennem `cache`. Cachen kræver en
+    # `rubrik`, og den port er en anden end den, `foerst_set` går igennem: én
+    # kørsel uden AI-nøgle giver artikler uden rubrik, og så ville feltet
+    # forsvinde permanent for alt, der blev født den dag — uden at nogen kunne
+    # se det. De to tal hører sammen og skal læses samme sted.
+    eget_gammel: dict = {}
     if OUTPUT_FIL.exists():
         try:
             for a in json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))["artikler"]:
                 if a.get("foerst_set") or a.get("dato"):
                     foerst_set_gammel[a["link"]] = a.get("foerst_set") or a.get("dato")
+                if a.get("eget_foerst_set"):
+                    eget_gammel[a["link"]] = a["eget_foerst_set"]
                 if a.get("rubrik"):
                     cache[a["link"]] = {"rubrik": a["rubrik"],
                                         "resume_da": a.get("resume_da", ""),
@@ -4764,6 +4980,11 @@ def main() -> None:
                                         "pointer": a.get("pointer", []),
                                         "billedmotiv": a.get("billedmotiv", ""),
                                         "billede": a.get("billede", ""),
+                                        # Uden de to her overlever "hvad var
+                                        # vinderens eget" ikke natten: cachen
+                                        # er en hvidliste, og alt udenfor
+                                        # findes ikke i morgen.
+                                        "laant_billede": a.get("laant_billede"),
                                         "kategori": a.get("kategori", ""),
                                         "kat_ai": a.get("kat_ai", False),
                                         "navngivet": a.get("navngivet", False),
@@ -4774,8 +4995,8 @@ def main() -> None:
     # "Først set": hvornår crawleren så artiklen første gang. Der sorteres efter
     # dette i stedet for kildens udgivelsestid, så nyopdagede artikler altid
     # lander øverst - i stedet for at flette sig ind langt nede i listen.
-    for a in unikke:
-        a["foerst_set"] = foerst_set_gammel.get(a["link"]) or nu.isoformat()
+    # Se `_saet_foerst_set` for hvorfor `eget_foerst_set` sættes netop her.
+    _saet_foerst_set(unikke, foerst_set_gammel, nu, eget_gammel)
     unikke.sort(key=lambda a: (a["foerst_set"],
                                a["dato"].isoformat() if a["dato"] else ""),
                 reverse=True)

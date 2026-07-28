@@ -4,6 +4,171 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+### Sessionens regnskab · 2026-07-28
+Klaret: 1 punkt. Nye i køen: 1.
+Gennemgik: **rækkevidde** — hvor mange døre ind i siden en Google-læser har,
+når han lander på en artikelside. Målt på alle 168 sider i `artikel/`.
+Læsere i dag: 261 besøg / 738 visninger på 7 dage. Udefra: **19 fra Facebook,
+4 fra Google, 3 fra Buttondown** — 235 af besøgene er direkte. Uændret siden i går.
+Øverst i køen nu: *Tre faste sider fik nul besøg på syv dage* —
+456 visninger/7 dage (forsiden) — fordi køens gamle nummer ét er klaret, og
+fordi målingen i dag gav punktet dets manglende tal: **0 links på den tegnede
+forside fører til nogen af de tre.**
+
+**Overtog låsefilen kl. 05:42.** `_redaktion/.koerer` var skrevet 05:40:41,
+altså halvandet minut før. Torben sad med i chatten og svarede, at der ikke kørte
+nogen anden session, så jeg overtog låsen med hans ord.
+
+**Uafhentet arbejde: nej — men den lokale mappe er BAGUD.** `git status` var ren
+ved start. Til gengæld svarer `data/articles.json` på nettet med `opdateret`
+2026-07-28T03:37, mens filen på disken står på 2026-07-27T22:45 — begge med 145
+artikler. GitHub Actions har altså kørt og pushet, uden at mappen er hentet ned.
+**Træk ned i GitHub Desktop, før du committer**, ellers kommer flettekonflikten i
+netop den fil, der har taget siden ned før.
+
+**Låsefilen kunne ikke slettes — den er flyttet i stedet.** En cloud-kørsel må
+skrive og ændre i mappen, men ikke slette: `rm _redaktion/.koerer` svarer
+*"Operation not permitted"*. Filen ligger nu i `_to_delete/koerer-slettet-28-07`,
+og `git status` viser `D _redaktion/.koerer`, som den skal. Låsen er altså væk —
+den er bare ikke fordampet. Kører sessionen på din egen maskine i stedet, gælder
+begrænsningen ikke.
+
+**Efterslæb i efterprøvningen: 27.** Scriptet råber op: 37 punkter i `## Klaret`,
+27 af dem er modne og aldrig efterprøvet (grænsen er 10). Klarede punkter hober
+sig op hurtigere, end én efterprøvning pr. kørsel kan indhente. Det kan ikke
+rettes i dag, men det skal kunne ses vokse.
+
+---
+
+## 2026-07-28 · Efterprøvning: «Kørekortet er gemt bag nyhederne» (25.07)
+
+**Hovedpåstanden, ordret:** *"Målt: 2 af 56 links på forsiden fører til
+lære-indhold, 0 direkte til kørekortet, og ordet "kørekort" står ikke ét sted."*
+
+**Målt igen 28.07 i jsdom mod den rigtige `index.html` og de rigtige datafiler:**
+den tegnede forside har i dag **93 links**, hvoraf 16 er interne. **2 af dem
+fører til lære-indhold — begge til `laer.html`.** 0 til `koerekort.html`, 0 til
+`prompts.html`, 0 til `ordbog.html`, 0 til `prompt-arkiv.html`, 0 til
+`quiz.html`, 0 til `vaerktoejer.html`. Ordet "kørekort" står **0 gange** i den
+tegnede tekst.
+
+**Efterprøvet 28.07.2026: holder.** 2 links til lære-indhold, 0 til kørekortet,
+ordet står ikke ét sted. Nævneren er en anden end i juli — 93 links mod 56, fordi
+siden er vokset — men påstanden handler om tælleren, og den er uændret.
+
+**Til redaktionen:** kørekortet får trods alt **26 sidevisninger på 7 dage**, og
+`sidehenvisere` siger "herfra selv" på dem alle. Vejen går altså gennem
+`laer.html` (88 visninger), som er den mest læste side efter forsiden. Det er
+ikke ingenting — det er bare ikke en dør på forsiden.
+
+---
+
+## 2026-07-28 · Frigivelsen gav kun `andre` tilbage — vinderen beholdt tidspunktet
+
+**Fandt:** køens tal var døde, men fejlen var større end beskrevet, og der lå to
+mere ved siden af.
+
+Køen sagde *"4 af de 12 artikler med `andre` har `foerst_set` mere end en time før
+deres egen `dato`, mod 1 af 126 uden"*. Målt i dag: **1 af 8 med `andre`, 3 af 137
+uden**. Men målingen var vendt om: en frigivet vinder har jo ikke længere `andre`,
+så skaden ligger i den anden gruppe. **2 af de 3** er præcis de to vindere, hvis
+tabere blev frigivet i går:
+
+- «Strømsvigt i Washington afslører AI-datacentrene» — udkom **25.07 kl. 13:05**,
+  ligger på forsiden under **23. juli**.
+- «Biblioteker afholder populære 'Avoiding AI'-workshops» — udkom **25.07 kl.
+  16:00**, ligger under **23. juli**.
+
+Den tredje («Encord og Zander Labs», 5 t 32 m) er lovlig: feedet serverede den før
+udgivelsestidspunktet.
+
+**Beviset står i git, det er ikke et skøn.** «Strømsvigt» havde selv
+`foerst_set` 2026-07-25T16:26:44 (commit `05ce75b`) og bærer i dag
+2026-07-23T20:37:15.313153 — **præcis** `foerst_set` på «Eks-googlere bag
+AegisAI» (commit `c137a3d`), den kilde, den var sammenlagt med. Samme mønster på
+den anden.
+
+**To fejl ved siden af, samme rod, samme filer, samme prøve:**
+
+1. `_slaa_sammen` lod et medlem, **vagten lige havde afvist**, aflevere både sit
+   tidspunkt og sit billede til hovedhistorien. Kommentaren lige over vagten
+   lovede det modsatte — koden brugte `medlemmer` og ikke de beholdte.
+2. Billedarven blev aldrig registreret nogen steder, så en frigivelse kunne
+   hverken give billedet tilbage eller lade være.
+
+**Gjorde:** kun `crawler.py` (+226 linjer, −5).
+
+- Nyt `_saet_foerst_set()` sætter `eget_foerst_set` **ved artiklens fødsel** —
+  det ene sted i kørslen, hvor tiden med sikkerhed er artiklens egen. Feltet
+  bæres videre uden om cachen, som kræver en `rubrik`; ellers ville én kørsel
+  uden AI-nøgle slette det permanent for alt født den dag.
+- Nyt `_rul_arven_tilbage()` giver tiden tilbage ved en frigivelse — det
+  tidligste af vinderens eget og de **tilbageværende** kilders, ikke en
+  nulstilling. Det lånte billede og det lånte motiv fjernes, men **kun hvis
+  værdien stadig er den lånte**: har oprydningen givet vinderen sit eget billede
+  i mellemtiden, må frigivelsen ikke rive det af.
+- Nyt `laant_billede = {fra, billede, motiv}` husker både hvem og hvad.
+- `_slaa_sammen` bruger nu `[primaer] + andre` i stedet for `medlemmer`, så en
+  afvist artikel ikke forærer noget væk. `andre`-posterne bærer taberens
+  `foerst_set` med, så en delvis frigivelse kan regne om.
+- Nyt `_gulv_paa_laante_tider()` retter de to gamle, som ingen frigivelse kan
+  hjælpe: en artikel **uden kilder, uden `eget_foerst_set`** og med et
+  `foerst_set` mere end **24 timer** før sin `dato` får sin udgivelsestid.
+  Grænsen er målt, ikke valgt: på tværs af **163 udgaver af `articles.json`**
+  (hele historikken) findes kun fire artikler uden `andre`, der nogensinde har
+  haft `foerst_set` før `dato` — 5,54 t og 0,55 t (lovlige) og 40,5 t og 47,0 t
+  (de to fejl). Over fire gange luft til begge sider. Funktionen er
+  selvoprydende: alt født fra i dag har `eget_foerst_set` og er uden for
+  rækkevidde for altid.
+
+**Testede:**
+
+- `_redaktion/proeve-arv.py`: **65 påstande grønne, 0 røde.** Kørt mod `HEAD`
+  også: **29 grønne, 36 røde før**.
+- **15 mutationer** — hver eneste ændring i koden slettet eller vendt om på
+  skift, og hver gang går præcis de rigtige påstande røde. Det var ikke pynt:
+  den uafhængige gennemgang fandt fire steder, hvor en mutation **overlevede**
+  prøven, altså fire ting jeg troede var dækket og ikke var.
+- Mod de rigtige data ændrer hele ændringen **præcis to felter**: de to
+  `foerst_set` går fra 23. juli til deres egen udgivelsesdag. 145 artikler før,
+  145 efter, ingen andre felter rørt.
+- Samlet prøve: `ast.parse` grøn, **0 dobbeltdefinerede konstanter**, forsiden i
+  jsdom mod de rigtige datafiler **8 grønne, 0 røde** (ingen JS-fejl, kortene
+  tegnes, dagens overblik vises, et klik åbner en artikel).
+
+**Den uafhængige gennemgang fandt 19 ting fordelt på tre runder**, og det er
+langt det vigtigste, der skete i dag:
+
+- *Runde 1 (7 fund):* frigivelsen poppede `billedmotiv` ubetinget og ville have
+  revet vinderens egen alt-tekst af; kaldet i `saml_dublet_historier` var slet
+  ikke dækket af prøven; cache-tjekket var en tekstsøgning, der var sand uanset
+  hvad; og en "L2"-sektion i prøven prøvede ingenting, men så ud som en bestået
+  regressionsprøve.
+- *Runde 2 (6 fund):* min første vagt — *gem kun, hvis historien ikke har
+  kilder i forvejen* — var hullet — trin 0 tømmer selv `andre` få linjer før. Fire
+  mutationer overlevede prøven.
+- *Runde 3 (6 fund):* `eget_foerst_set` kunne forsvinde permanent, hvis en
+  kørsel manglede AI-nøgle, fordi cachen kræver en rubrik. Gulvets output-format
+  og selve 24-timers-grænsen var ikke fastholdt af nogen påstand.
+
+Alt er rettet. Ét fund er bevidst **ikke** fulgt: gennemgangen foreslog at lade
+gulvet skrive `eget_foerst_set`, når det retter. Det ville registrere en
+**udledt** værdi som "artiklens egen" og bryde punkt 5.
+
+**Til redaktionen:**
+
+1. **Træk ned i GitHub Desktop først.** Mappen er bagud i forhold til nettet.
+2. Ændringen er inaktiv, indtil crawleren kører: de to forkerte datoer rettes
+   ved næste kørsel efter push, ikke af selve pushet.
+3. `articles.json` vokser med ét felt pr. artikel — målt **~6,5 kB rå af 419 kB,
+   altså 1,6 %**. Det er prisen for, at en fejlsammenlægning kan fortrydes helt.
+4. Ét kendt hul, mens de gamle artikler ruller ud: retter en udgiver sin
+   udgivelsesdato mere end et døgn frem for en artikel fra før i dag, flytter
+   gulvet dens dato med op én gang. De 25 arXiv-artikler er de mest udsatte,
+   fordi de aldrig har `andre`. Det står i funktionens egen dokumentation.
+
+---
+
 ### Nattens regnskab · 2026-07-27
 
 **Klaret: 4 punkter** — 2 bygget og testet, 2 lukket ved at måle dem.

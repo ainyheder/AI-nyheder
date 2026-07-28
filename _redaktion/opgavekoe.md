@@ -33,13 +33,14 @@ er dét, køen bedømmes op imod. Kan et fund ikke skrives som "gør X, og mål 
 bagefter", er det enten en mistanke eller et mål, og så skal det ikke i køen.
 
 **Dét, hele køen måles op imod — og som ikke selv er en opgave:** siden skal nå
-nogen. Målt 27.07 kl. 19:46, syv dage: **257 besøg**, hvoraf **229 er direkte
-trafik til forsiden** — altså redaktionen selv, bogmærker og appen. Udefra kom
-**19 besøg fra Facebook, 4 fra Google og 3 fra Buttondown**, og de tal har ikke
-rørt sig siden formiddagen. Fire artikelsider har nu 1–3 visninger hver, men
-`sidehenvisere` siger "herfra selv" på dem alle. Ethvert punkt i køen forbedrer
-altså noget, som under 30 mennesker udefra ser om ugen. Det tal er baggrunden for
-rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
+nogen. Målt 28.07 kl. 05:45, syv dage: **261 besøg / 738 visninger**, hvoraf
+**235 er direkte** — altså redaktionen selv, bogmærker og appen. Udefra kom
+**19 besøg fra Facebook, 4 fra Google og 3 fra Buttondown**. De tre tal har
+ikke rørt sig i to døgn, heller ikke efter at sitemappene blev indsendt 27.07.
+Fem artikelsider har 1–3 visninger hver, men `sidehenvisere` siger "herfra selv"
+på dem alle. Ethvert punkt i køen forbedrer altså noget, som **26 mennesker
+udefra** ser om ugen. Det tal er baggrunden for rækkefølgen — det er ikke noget,
+der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
 ---
 
@@ -51,31 +52,7 @@ rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`
 
 ### 1 — I stykker for læseren lige nu
 
-- [ ] **Frigivelsen ruller kun `andre` tilbage — vinderen beholder taberens
-      tidspunkt og billede.** Målt 27.07 kl. 20:40 på `data/articles.json` af en
-      uafhængig gennemlæsning af dagens ændring.
-
-      `_slaa_sammen` giver vinderen det **tidligste** `foerst_set` af alle
-      medlemmer og arver taberens billede, hvis vinderen mangler et. Frigivelsen
-      i trin 0 fjerner taberen fra `andre` — men rører hverken tidsstemplet
-      eller billedet. Vinderen bliver altså stående med en fortid, der stammer
-      fra en historie, den ikke længere er sammenlagt med.
-
-      **Målt:** **4 af de 12** artikler med `andre` har `foerst_set` mere end en
-      time før deres egen `dato`, mod **1 af 126** uden `andre`. Eksempel:
-      «Strømsvigt i Washington afslører AI-datacentrene» har `dato`
-      2026-07-25T13:05, men `foerst_set` 2026-07-23T20:37 — næsten to døgn før.
-
-      **Hvad en læser ser:** `index.html` bruger `foerst_set` til rækkefølgen
-      (linje 1460), til at gruppere efter dag (1517-1522), til NY-mærket (1890)
-      og til "seneste døgn" (1944). En historie, der er skrevet i går, kan derfor
-      ligge under forgårs dato uden NY-mærke — og læseren, der vil holde styr på
-      hvad han har set, får en forkert dag at gå efter.
-
-      **Mindste rettelse:** gem vinderens eget `foerst_set` (og om billedet er
-      arvet), før det overskrives, og læg det tilbage, når en kilde frigives.
-      **Rammer: 450 visninger/7 dage (forsiden).**
-      *Punkt 6.*
+*Ingen kendte lige nu.*
 
 ### 2 — Bryder målestokken synligt
 
@@ -83,20 +60,34 @@ rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Tre faste sider fik nul besøg på syv dage.** Målt 27.07 kl. 19:46 i
-      `data/laesertal.json`: `prompt-arkiv.html`, `quiz.html` og
-      `vaerktoejer.html` står på **nul besøg og nul visninger** — ikke få, nul.
-      Tallet var ni om formiddagen; de seks, der er kommet på tavlen siden, har
-      alle "herfra selv" som eneste henviser, altså redaktionens egne klik. Det
-      er lære-indholdet, som målestokkens punkt 7 siger, læseren skal komme
-      tilbage til, og ingen udefra har set det.
-      **Mindste rettelse:** mål først, hvor mange links på forsiden der faktisk
-      fører til hver af de tre — samme metode som "Kørekortet er gemt bag
-      nyhederne", der fandt 2 af 56 — og ret så det billigste sted. Ingen ny
-      side, ingen ombygning.
-      **Rammer: 450 visninger/7 dage (forsiden)** — det er det eneste sted, en
+- [ ] **Tre faste sider fik nul besøg på syv dage — og forsiden linker ikke til
+      nogen af dem.** Målt 27.07 kl. 19:46 i `data/laesertal.json`:
+      `prompt-arkiv.html`, `quiz.html` og `vaerktoejer.html` står på **nul besøg
+      og nul visninger** — ikke få, nul. Tallet holder 28.07 kl. 05:45. Det er
+      lære-indholdet, som målestokkens punkt 7 siger, læseren skal komme tilbage
+      til, og ingen udefra har set det.
+
+      **Målingen, punktet bad om, er nu lavet.** Den tegnede forside i jsdom
+      (28.07, mod de rigtige datafiler) har **93 links, hvoraf 16 er interne**.
+      **0 af dem fører til `prompt-arkiv.html`, 0 til `quiz.html`, 0 til
+      `vaerktoejer.html`** — og 0 til `koerekort.html`, `prompts.html` og
+      `ordbog.html`. De eneste to links til lære-indhold går begge til
+      `laer.html`. Der er altså ikke tale om en svær vej ind; der er ingen.
+
+      **Til sammenligning:** `laer.html` får **88 visninger/7 dage** og
+      `koerekort.html` **26** — begge udelukkende "herfra selv". Vejen findes,
+      den går bare gennem ét link.
+      **Mindste rettelse: ikke afgjort — det er en redaktionel beslutning, hvor
+      dørene skal stå.** Målingen er der nu; rettelsen kræver et valg.
+      **Rammer: 456 visninger/7 dage (forsiden)** — det er det eneste sted, en
       vej ind kan bygges.
       *Punkt 7 og 10.*
+
+- [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
+      efter alle de seneste dages ændringer.
+      **Rammer: 456 visninger/7 dage (forsiden)** — en stor del af den direkte
+      trafik kommer sandsynligvis fra appen, så et brud ville ramme netop dem.
+      *Punkt 4.*
 
 - [ ] **39 dubletsider modsiger sig selv over for Google.** Målt 27.07:
       `_peg_dubletsider_mod_hovedhistorien` retter kun `<link rel="canonical">`.
@@ -111,19 +102,20 @@ rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`
       **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen).**
       *Punkt 5 og 10.*
 
-- [ ] **Gennemgå crawlerens fejlbeskeder.** Er der steder, hvor noget fejler
-      stille uden at sige hvorfor? Det var netop dét, der skjulte tre fejl —
-      og i nat en fjerde: **8 canonical-kæder stod i et døgn**, uden at nogen
-      kørsel sagde et ord, selvom `lav_artikelsider` skriver et tal ud hver gang.
-      **Rammer: intet direkte — det er en måling, ikke en side.** Kan derfor
-      aldrig stå højere end trin 3.
-      *Punkt 6.*
+- [ ] **De 168 artikelsider har to døre ind i siden, og ingen af dem fører til
+      lære-indholdet.** Målt 28.07 over alle filer i `artikel/`:
+      **168 af 168 sider har præcis fire interne links** — to til forsiden, ét
+      til `/om.html` og ét til `/laer.html`. **0 til kørekortet, 0 til
+      prompts, 0 til ordbogen, 0 til quizzen, 0 til prompt-arkivet, 0 til
+      værktøjslisten.** Det er de sider, en Google-læser lander på.
 
-- [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
-      efter alle de seneste dages ændringer.
-      **Rammer: 440 visninger/7 dage (forsiden)** — en stor del af den direkte
-      trafik kommer sandsynligvis fra appen, så et brud ville ramme netop dem.
-      *Punkt 4.*
+      **Vejen derfra til en læser er ikke hypotetisk:** `sitemap-artikler.xml`
+      blev indsendt i Search Console 27.07 og gik straks til **Succes / 91
+      sider**. Det er præcis de sider, Google nu er inviteret til at sende folk
+      til — og lige nu ender de et sted med to udgange.
+      **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen)** — tallet er lavt,
+      fordi indekseringen først er begyndt, ikke fordi siderne er ligegyldige.
+      *Punkt 7 og 10.*
 
 - [ ] **En dubletside kan pege canonical mod en side, der aldrig bygges.**
       `_peg_dubletsider_mod_hovedhistorien` kaldes **før** `_har_noget_at_vise`-
@@ -133,6 +125,14 @@ rækkefølgen — det er ikke noget, der kan klares. *Se `redaktionens-oejne.md`
       selve pegningen. Mindste rettelse: samme vagt i vinder-tjekket.
       **Rammer: 0 målte tilfælde og 2 visninger/7 dage på artikelsiderne.**
       *Punkt 4 og 10.*
+
+- [ ] **Gennemgå crawlerens fejlbeskeder.** Er der steder, hvor noget fejler
+      stille uden at sige hvorfor? Det var netop dét, der skjulte tre fejl —
+      og 27.07 en fjerde: **8 canonical-kæder stod i et døgn**, uden at nogen
+      kørsel sagde et ord, selvom `lav_artikelsider` skriver et tal ud hver gang.
+      **Rammer: intet direkte — det er en måling, ikke en side.** Kan derfor
+      aldrig stå højere end trin 3.
+      *Punkt 6.*
 
 - [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
       workflow-filer. Er der noget, der skal gemmes, før den ryger?
@@ -322,6 +322,48 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **Frigivelsen ruller kun `andre` tilbage — vinderen beholder taberens
+      tidspunkt og billede.** *(28.07.2026, hovedkørsel kl. 05:45-07:1x — chat
+      med Torben)* Rettet i `crawler.py` alene, +226 linjer / −5.
+
+      **Målingen vendte punktet om.** Køen talte artikler **med** `andre`; men en
+      frigivet vinder har jo ikke længere `andre`, så skaden ligger i den anden
+      gruppe. Målt 28.07: **3 af 137 artikler uden `andre`** har `foerst_set`
+      mere end en time før deres `dato` — og **2 af de 3 er præcis de to
+      vindere, hvis tabere blev frigivet 27.07**. «Strømsvigt i Washington»
+      (udkom 25.07 kl. 13:05) og «Biblioteker afholder 'Avoiding AI'-workshops»
+      (udkom 25.07 kl. 16:00) lå begge på forsiden under **23. juli**.
+
+      **Beviset står i git, ikke i et skøn:** «Strømsvigt» havde selv
+      `foerst_set` 2026-07-25T16:26:44 (commit `05ce75b`) og bar
+      2026-07-23T20:37:15.313153 — **præcis** `foerst_set` på «Eks-googlere bag
+      AegisAI» (commit `c137a3d`), den kilde, den var sammenlagt med.
+
+      **To fejl mere med samme rod, rettet i samme omgang:** et medlem, vagten
+      lige havde **afvist**, kunne aflevere både tid og billede til
+      hovedhistorien (koden brugte `medlemmer`, ikke de beholdte), og billedarven
+      blev aldrig registreret, så en frigivelse hverken kunne give billedet
+      tilbage eller lade være.
+
+      **Gjort:** `_saet_foerst_set()` gemmer `eget_foerst_set` ved artiklens
+      fødsel — det eneste sted, tiden med sikkerhed er dens egen.
+      `_rul_arven_tilbage()` giver tid og billede tilbage ved en frigivelse, men
+      kun hvis værdien stadig ER den lånte. `laant_billede = {fra, billede,
+      motiv}` husker både hvem og hvad. `_gulv_paa_laante_tider()` retter de to
+      gamle, som ingen frigivelse kan hjælpe, med en grænse på **24 timer**, der
+      er målt over **163 udgaver af `articles.json`**: kun fire artikler uden
+      `andre` har nogensinde haft `foerst_set` før `dato` — 5,54 t og 0,55 t
+      (lovlige) mod 40,5 t og 47,0 t (fejlene).
+
+      **Prøven:** `_redaktion/proeve-arv.py`, **65 grønne, 0 røde** — kørt mod
+      `HEAD` også: 29 grønne, 36 røde før. **15 mutationer** kørt, hver eneste
+      fanges. Mod de rigtige data ændrer hele rettelsen **præcis to felter**.
+      Den uafhængige gennemgang læste arbejdet **tre gange og fandt 19 ting**,
+      heriblandt fire mutationer, der overlevede prøven. Alt rettet på ét nær,
+      som er bevidst fravalgt: at lade gulvet skrive `eget_foerst_set` ville
+      registrere en udledt værdi som artiklens egen og bryde punkt 5.
+      *Punkt 4, 5 og 6.*
 
 - [x] **Loopet efterprøver aldrig sit eget arbejde — 36 klarede punkter, 0
       efterprøvninger.** *(27.07.2026, ekstra kørsel kl. 21:00-21:15 — chat med
@@ -813,6 +855,18 @@ afviste idé igen om en måned og koster den samme udredning forfra.
       filterrækken, der ligner et filter. Forslag ligger i
       `_redaktion/forslag-koerekort-indgang.html` — en fodlinje i Dagens
       overblik, til at se på og sige ja eller nej til. Forsiden er ikke rørt.
+
+      **Efterprøvet 28.07.2026: holder.** Hovedpåstanden er «2 af 56 links på
+      forsiden fører til lære-indhold, 0 direkte til kørekortet, og ordet
+      "kørekort" står ikke ét sted». Målt igen i jsdom mod den rigtige
+      `index.html` og de rigtige datafiler: den tegnede forside har i dag **93
+      links, 16 interne**, og **2 af dem fører til lære-indhold — begge til
+      `laer.html`**. 0 til `koerekort.html`, 0 til `prompts.html`, 0 til
+      `ordbog.html`, 0 til `prompt-arkiv.html`, 0 til `quiz.html`, 0 til
+      `vaerktoejer.html`. Ordet "kørekort" står **0 gange** i den tegnede tekst.
+      Nævneren er vokset fra 56 til 93, fordi siden er blevet større; tælleren
+      er den samme. Bemærk dog: kørekortet får trods alt **26 visninger/7 dage**
+      — vejen går gennem `laer.html`, som har 88.
 
 - [x] **Ingen ved, om Google har set de 83 artikelsider.** *(25.07.2026)*
       Sitemappene svarer korrekt live — 102 + 40 URL'er, alle sider 200, 404
