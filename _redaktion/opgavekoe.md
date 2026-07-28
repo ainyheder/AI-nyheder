@@ -66,6 +66,15 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
 
 ### 3 — Gør siden mærkbart bedre
 
+- [ ] **`data/foerst_set.json` skal med i det næste push, ellers virker
+      tidsrettelsen ikke.** Ny fil fra 28.07. `.github/workflows/crawl.yml`
+      linje 84 kører `git add data`, så Actions tager den med af sig selv —
+      men den FØRSTE udgave skal med i redaktionens eget push. Kommer den
+      ikke med, læser crawleren en tom hukommelse, og `foerst_set` begynder
+      forfra med at rykke frem.
+      **Rammer: 456 visninger/7 dage (forsiden).** Kan hakkes af, når filen
+      står i `origin/main`. *Punkt 6.*
+
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
       efter alle de seneste dages ændringer.
       **Rammer: 456 visninger/7 dage (forsiden)** — en stor del af den direkte

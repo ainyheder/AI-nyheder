@@ -1344,16 +1344,29 @@ function kildeNavn(k) {
   // bare se mediet: TechCrunch, Hacker News.
   return String(k || "").replace(/\s*[:·-]?\s*\bAI\b\s*$/i, "").trim() || String(k || "");
 }
+// Hvor længe der må gå mellem udgivelse og fund, før vi siger begge dele.
+const FUND_GRAENSE_MS = 36 * 3600 * 1000;
+
 function tidsTekst(a) {
-  // Vis hvornår historien kom PÅ SIDEN (foerst_set) - så tiden passer med den
-  // dag, kortet står under. Er originalen væsentligt ældre, siger vi det ærligt.
+  // Vis artiklens EGEN alder først. Det er dét, læseren spørger om — hvor
+  // gammel er nyheden — ikke hvornår vores crawler faldt over den.
+  //
+  // Sådan var det ikke før 28.07. Da stod der "for 21 timer siden" (hvornår VI
+  // så den) med "· udgivet 22. jul" hængt bagpå, og de to tal så ud som en
+  // selvmodsigelse: samme kort sagde på én gang "et døgn gammel" og "en uge
+  // gammel". Redaktionen fangede det på forsiden. Ingen af tallene var
+  // forkerte; de var bare stillet op, så det første læste som nyhedens alder.
+  //
+  // Nu siger kortet "for 6 dage siden" om selve nyheden, og først hvis der er
+  // mere end 36 timer imellem, tilføjes "· fundet i går". Så er begge tal der,
+  // og det, der står først, er det, ordene lover.
   const set = a.foerst_set ? new Date(a.foerst_set).getTime() : null;
   const pub = a.dato ? new Date(a.dato).getTime() : null;
-  const vis = set || pub;
-  if (!vis) return "";
-  let t = relativTid(new Date(vis).toISOString());
-  if (set && pub && set - pub > 36 * 3600 * 1000) {
-    t += " · udgivet " + new Date(pub).toLocaleDateString("da-DK", { day: "numeric", month: "short" });
+  if (!pub && !set) return "";
+  if (!pub) return relativTid(new Date(set).toISOString());
+  let t = relativTid(new Date(pub).toISOString());
+  if (set && set - pub > FUND_GRAENSE_MS) {
+    t += " · fundet " + relativTid(new Date(set).toISOString());
   }
   return t;
 }

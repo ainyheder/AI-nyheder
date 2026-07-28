@@ -266,7 +266,25 @@ print(f"     tider flyttet: {len(flyttede)} · billeder fjernet: {len(mistede)}"
 for l, (f, n) in flyttede.items():
     rub = next((a.get("rubrik") for a in resultat if a["link"] == l), "")
     print(f"       «{(rub or '')[:44]}»  {str(f)[:16]} -> {str(n)[:16]}")
-ok("L2 præcis de to kendte fejl blev rettet, ikke flere", len(flyttede) == 2, sorted(flyttede))
+# Antallet må IKKE stå fast i prøven: de to kendte fejl er rullet ud af data
+# igen, og en prøve, der kræver netop 2, ville gå rød af sig selv om et døgn.
+# Regn i stedet forventningen ud af gulvets egne betingelser.
+_g = getattr(c, "LAANT_TID_GRAENSE_TIMER", 24)
+def _tid(x):
+    if isinstance(x, _dt.datetime): return x if x.tzinfo else x.replace(tzinfo=UTC)
+    try:
+        v = _dt.datetime.fromisoformat(str(x).replace("Z", "+00:00"))
+        return v if v.tzinfo else v.replace(tzinfo=UTC)
+    except Exception: return None
+_ventet = set()
+for _a in arts:
+    if _a.get("andre") or _a.get("eget_foerst_set"): continue
+    _f, _d = _tid(_a.get("foerst_set")), _tid(_a.get("dato"))
+    if _f and _d and (_d - _f).total_seconds() > _g * 3600:
+        _ventet.add(_a["link"])
+print(f"     gulvets egne betingelser peger på {len(_ventet)} artikler i dagens data")
+ok("L2 præcis de artikler, gulvets betingelser peger på — hverken flere eller færre",
+   set(flyttede) == _ventet, (sorted(set(flyttede) - _ventet), sorted(_ventet - set(flyttede))))
 ok("L3 begge landede på deres egen udgivelsesdag",
    all(str(n)[:10] == str(next(a["dato"] for a in resultat if a["link"] == l))[:10]
        for l, (f, n) in flyttede.items()), list(flyttede.values()))

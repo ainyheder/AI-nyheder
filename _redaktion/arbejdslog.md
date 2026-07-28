@@ -185,6 +185,95 @@ igennem, og skru på dem, hvis jeg har sat barren forkert.
 
 ---
 
+## 2026-07-28 (kl. 15:0x-17:0x, chat) · "For 1 dag siden · udgivet 21. jul"
+
+**Redaktionen så det på forsiden:** et kort, hvor de to tal modsagde hinanden.
+Det var ikke en pynt-fejl, og det havde været oppe før.
+
+**Fandt — og målingen var værre end symptomet.** `foerst_set` betyder ikke
+"første gang vi så den". **Den rykker frem.** Målt over 250 udgaver af
+`data/articles.json` i git: **95 af 314 links har fået deres `foerst_set`
+nulstillet, 237 gange i alt** — én artikel 14 gange. I dagens fil bar **48 af
+147** et tidspunkt, der lå senere end det, vi selv havde registreret før. Af de
+**36 artikler, der stod som nye på forsiden, men var udgivet dage før, skyldtes
+34 nulstilling** — ikke et langsomt feed. Kun 2 var ægte sent fangede.
+
+**Årsagen:** `foerst_set_gammel` bygges kun af artiklerne i FORRIGE
+`articles.json`. Falder en artikel ud én kørsel — feedet serverede den ikke lige
+den time, eller den blev slugt som taber i en dubletsammenlægning — så findes
+den ikke dér, og den kommer tilbage som splinterny. Det er samme rod som fejlen
+i morges: `articles.json` er ikke et arkiv, men resten af koden tror det.
+
+**Og: 6 af de 10 `eget_foerst_set`, jeg selv skrev i morges, var allerede
+forkerte.** Mit felt hentede fra samme sted og havde samme hul. Rettelsen i
+morges var rigtig; fundamentet var ikke målt.
+
+**Gjort:**
+
+- Ny fil **`data/foerst_set.json`** (305 links, 36 kB): link → hvornår vi så
+  den, gemt uden for `articles.json`, så den overlever, at artiklen forlader
+  listen. Sået fra git med den tidligste værdi observeret i kørsler, hvor
+  artiklen IKKE var sammenlagt — og derefter gulvet ved artiklens egen
+  udgivelsestid, så to lånte tidspunkter blev luget ud.
+- `_laes_foerst_set_butik` / `_skriv_foerst_set_butik` (glemmer links over 90
+  dage). Alt normaliseres til **UTC** på vej ind: koden sammenligner
+  tidspunkter som tekst, og 33 af 314 links bar `-04:00` fra arXiv.
+- `_saet_foerst_set` tager nu det tidligste, vi kender. **De to felter henter
+  fra hver sine kilder, og det er hele forskellen:** `foerst_set` må gerne
+  blive for tidlig, den skal bare aldrig rykke frem. `eget_foerst_set` må
+  ALDRIG blive for tidlig — den er beviset, en frigivelse giver tiden tilbage
+  efter — så den henter kun fra butikken, aldrig fra gårsdagens rå fil, som kan
+  være lånt af en sammenlægning.
+- `tidsTekst()` i `index.html` viser nu **artiklens egen alder først** ("for 6
+  dage siden") og hænger kun "· fundet for 21 timer siden" på, hvis der er mere
+  end 36 timer imellem. Redaktionens valg af de fire, jeg lagde frem.
+
+**Målt efter:** artikler, der ser nye ud, men er dage gamle: **36 → 3**.
+Tidspunkter, der er rykket frem: **48 → 0**. Kort, hvis dag-gruppe ligger mere
+end ét døgn før deres egen udgivelse: **0**.
+
+**Testede:** `_redaktion/proeve-tid.py` **36 grønne / 0 røde**,
+`_redaktion/proeve-tid.js` (jsdom) **15 / 0**, den gamle
+`_redaktion/proeve-arv.py` stadig **65 / 0**, forsiden i jsdom **8 / 0**, og
+`ast.parse` + 0 dobbeltdefinerede konstanter. Mod `HEAD`: **15 røde og 6 røde
+før**. **9 mutationer** kørt, alle fanget.
+
+**Den uafhængige gennemgang fandt 8 ting — og de to vigtigste var mine egne
+rettelser, der var forkerte:**
+
+1. Den første såning af butikken indeholdt **stadig lånte tidspunkter**. Mit
+   filter ("kun kørsler uden `andre`") ramte ikke det tilfælde, hvor `andre`
+   allerede var tømt af en frigivelse, mens det lånte tal blev stående.
+   «Strømsvigt», «Biblioteker» og «Monday.com» bar alle AegisAI-artiklens
+   tidsstempel. Sået om med gulvet på, og de to tilbage er væk.
+2. **Butikken var ikke ren UTC.** 33 arXiv-links bar `-04:00`, og koden
+   sammenligner som tekst. Normaliseret på vej ind, og prøvet.
+3. `_gulv_paa_laante_tider` er nu uden virkning på de rigtige data, fordi alle
+   har et `eget_foerst_set`. Det er meningen — butikken er den rigtige
+   hukommelse, gulvet var broen — men det stod ingen steder. Nu måler prøven
+   det og siger tallet højt.
+4. To mutationer overlevede prøven: `butik.setdefault` i stedet for `butik[...]`
+   (så butikken aldrig kunne hele sig selv) og en flytning af hele
+   dag-grupperingen. Begge dækket nu.
+5. Gennemgangen kunne ikke selv se `.github/`, så den spurgte, om filen
+   overhovedet bliver committet. **Tjekket: `crawl.yml` linje 84 kører
+   `git add data`, og `.gitignore` undtager den ikke.** Den kommer med.
+
+**Til redaktionen:**
+
+1. **`data/foerst_set.json` SKAL med i pushet.** Kommer den ikke med, læser
+   crawleren en tom hukommelse, og fejlen begynder forfra. Der ligger et punkt
+   om det øverst i køen, som kan hakkes af, når filen står i `origin/main`.
+2. Rettelsen virker først, når crawleren har kørt efter pushet. De 48 forkerte
+   tidspunkter rettes af den kørsel, ikke af pushet.
+3. Der er ét kendt hjørne tilbage: **26 arXiv-artikler ligger i dag-gruppen
+   dagen før deres udgivelsesdato**, fordi arXiv annoncerer dagen efter. Kortet
+   siger nu det rigtige; det er kun overskriften over det, der er en dag
+   forskudt. Målt og accepteret — prøven holder øje med, at det aldrig bliver
+   mere end ét døgn.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
 Klaret: 1 punkt. Nye i køen: 1 — begge trukket tilbage igen senere samme dag,
 se posten om loopet nedenfor. Køen står på 5, `## Nyt` på 2.

@@ -33,6 +33,8 @@ ROOT = Path(__file__).parent
 OPSAETNING = ROOT / "opsaetning"      # det, DU redigerer. data/ er maskinens
 FEEDS_FIL = OPSAETNING / "feeds.json"
 OUTPUT_FIL = ROOT / "data" / "articles.json"
+# Hukommelsen om, hvornår vi så en artikel første gang. Se `_laes_foerst_set_butik`.
+FOERST_SET_FIL = ROOT / "data" / "foerst_set.json"
 MAX_PER_FEED = 25            # max artikler pr. feed
 MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
 TIMEOUT_SEK = 20
@@ -1302,8 +1304,93 @@ def _rul_arven_tilbage(vinder: dict, beholdt: list, frigivne: list) -> None:
     vinder.pop("laant_billede", None)
 
 
+def _laes_foerst_set_butik() -> dict:
+    """Hukommelsen om, hvornår vi så hver artikel første gang.
+
+    Ligger i `data/foerst_set.json` og ikke i `articles.json`, fordi den skal
+    overleve, at artiklen forlader listen. Det er hele grunden til, at den
+    findes — se `_saet_foerst_set`.
+
+    Filen blev sået 28.07.2026 med den tidligste værdi, der kunne findes for
+    hvert link i 250 udgaver af `articles.json` i git — kun fra kørsler, hvor
+    artiklen IKKE var sammenlagt, og derefter gulvet ved artiklens egen
+    udgivelsestid. Det er en måling, ikke et skøn, og den kan laves om igen med
+    samme metode.
+
+    **Alt normaliseres til UTC på vej ind.** Resten af koden sammenligner de
+    her tidspunkter som TEKST (`min`), og det er kun sikkert, hvis de har samme
+    offset. Målt 28.07: 33 af 314 links i den første udgave af filen bar
+    `-04:00` fra arXiv, og `2026-07-23T00:00:00-04:00` sorterer som klokken 00
+    i stedet for klokken 04 UTC. I dagens data gav det samme svar, men det er
+    præcis den slags, der lader `foerst_set` rykke frem igen om en måned.
+    """
+    try:
+        raa = json.loads(FOERST_SET_FIL.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    tider = raa.get("tider") if isinstance(raa, dict) else None
+    if not isinstance(tider, dict):
+        return {}
+    ud = {}
+    for k, v in tider.items():
+        if not isinstance(k, str) or not isinstance(v, str) or not v:
+            continue
+        t = _som_utc(v)
+        if t:
+            ud[k] = t
+    return ud
+
+
+def _som_utc(tekst: str) -> str:
+    """Ét tidspunkt som ISO i UTC — eller "" hvis det ikke kan læses.
+
+    Findes, fordi `min()` på tidspunkter i den her kode er en
+    TEKST-sammenligning. To rigtige tidspunkter med hvert sit offset
+    sammenlignes så forkert, og fejlen er usynlig indtil den dag, den ikke er.
+    """
+    try:
+        t = datetime.fromisoformat(str(tekst).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return ""
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return t.astimezone(timezone.utc).isoformat()
+
+
+def _skriv_foerst_set_butik(butik: dict, nu: datetime) -> None:
+    """Gem hukommelsen igen — og hold den fra at vokse i det uendelige.
+
+    Loftet rydder op efter FØRSTE-set, ikke sidst-set: et link, vi så første
+    gang for over 90 dage siden, ryger ud. Det er ikke det samme som "ikke set
+    i 90 dage", og forskellen betyder noget, hvis nogen hæver
+    `MAX_DAGE_GAMMEL`. Med de nuværende 30 dage kan en artikel alligevel ikke
+    blive i listen længere end det, så et link, der er 90 dage gammelt, er for
+    længst ude. Kommer det tilbage efter dét, er "nyt for os" et ærligt svar.
+    Uden loftet ville filen vokse med ~25 links i døgnet for evigt.
+    """
+    graense = _som_utc((nu - timedelta(days=90)).isoformat())
+    beholdt = {k: v for k, v in ((k, _som_utc(v)) for k, v in butik.items())
+               if v and v >= graense}
+    try:
+        FOERST_SET_FIL.write_text(json.dumps({
+            "forklaring": "link -> foerst_set. Hukommelse om hvornaar vi saa en "
+                          "artikel foerste gang. Overlever at artiklen forlader "
+                          "articles.json. Se _saet_foerst_set i crawler.py.",
+            "opdateret": nu.isoformat(),
+            "antal": len(beholdt),
+            "tider": dict(sorted(beholdt.items())),
+        }, ensure_ascii=False, indent=1), encoding="utf-8")
+    except OSError as e:
+        print(f"  ⚠️  kunne ikke gemme data/foerst_set.json: {e}")
+        return
+    glemt = len(butik) - len(beholdt)
+    if glemt:
+        print(f"🕒 {glemt} links over 90 dage gamle glemt fra tids-hukommelsen")
+
+
 def _saet_foerst_set(artikler: list[dict], kendte: dict, nu: datetime,
-                     eget_kendt: dict | None = None) -> None:
+                     eget_kendt: dict | None = None,
+                     butik: dict | None = None) -> None:
     """Sæt "hvornår så vi den" — og gem én gang for alle, at tiden er dens egen.
 
     `eget_foerst_set` sættes PRÆCIS her og kun her, i det øjeblik artiklen ses
@@ -1323,17 +1410,61 @@ def _saet_foerst_set(artikler: list[dict], kendte: dict, nu: datetime,
     Ellers ville én kørsel uden AI-nøgle slette feltet permanent for alt, der
     blev født den dag.
 
-    Prisen er ét felt pr. artikel i `articles.json` — målt 28.07: 145 artikler
-    × ~45 tegn ≈ 6,5 kB rå af en fil på 419 kB, altså 1,6 %.
+    **`butik` er den egentlige hukommelse, og den er hele pointen.** `kendte` og
+    `eget_kendt` bygges af artiklerne i SIDSTE fil — og en artikel, der falder ud
+    af listen bare én kørsel, findes ikke dér. Så kommer den tilbage som
+    splinterny. Målt 28.07 over 250 udgaver af `articles.json`: **95 af 314 links
+    har fået deres `foerst_set` nulstillet, 237 gange i alt**, én artikel 14
+    gange. I filen den dag bar **50 af 147** artikler et tidspunkt, der lå senere
+    end det, vi selv havde registreret før — og af de 36 artikler, der stod som
+    nye på forsiden, men var udgivet dage før, skyldtes **34 nulstilling**, ikke
+    et langsomt feed. En artikel falder ud, fordi kildens feed ikke serverede den
+    lige den time, eller fordi den blev slugt som taber i en sammenlægning.
+
+    Derfor: **`foerst_set` må aldrig rykke FREM.** Butikken huskes på tværs af
+    kørsler i `data/foerst_set.json`, uafhængigt af om artiklen står i listen.
+    Vi tager altid det tidligste, vi kender. At ligge lidt for tidligt er den
+    sikre fejl; at ligge for sent er præcis den, der får en uge gammel historie
+    til at stå under "I går".
+
+    Prisen er ét felt pr. artikel i `articles.json` og en fil på ~37 kB til 314
+    links — målt 28.07.
     """
     eget_kendt = eget_kendt or {}
+    butik = butik if isinstance(butik, dict) else {}
     for a in artikler:
-        kendt = kendte.get(a["link"])
-        a["foerst_set"] = kendt or nu.isoformat()
-        if not kendt:
-            a["eget_foerst_set"] = a["foerst_set"]
-        elif eget_kendt.get(a["link"]):
-            a["eget_foerst_set"] = eget_kendt[a["link"]]
+        link = a["link"]
+        # De to felter må IKKE hente fra de samme kilder, og det er hele
+        # forskellen mellem en rettelse og en ny fejl:
+        #
+        #   `foerst_set`      må gerne blive for tidlig. Den skal bare aldrig
+        #                     rykke frem, så en uge gammel historie ikke lander
+        #                     under "I går".
+        #   `eget_foerst_set` må ALDRIG blive for tidlig. Den er beviset, en
+        #                     frigivelse giver tiden tilbage efter, og et lånt
+        #                     tidspunkt gemt som "eget" ville føre historien
+        #                     tilbage til den forkerte dag for altid.
+        #
+        # `kendte` er rå `foerst_set` fra sidste fil, og for en sammenlagt
+        # historie er den netop lånt. Derfor må den sætte `foerst_set`, men
+        # aldrig `eget_foerst_set`. Butikken er renset for lånte værdier: den
+        # blev sået af det tidligste tidspunkt, artiklen bar i en kørsel, hvor
+        # den IKKE var sammenlagt — 15 links fik luget et lån væk den vej.
+        #
+        # `min` på tekst er sikkert: alle tidspunkter skrives med `isoformat()`
+        # i UTC. Se prøve O i `proeve-arv.py`, der måler det på de rigtige data.
+        egne = [t for t in (butik.get(link), eget_kendt.get(link)) if t]
+        eget = min(egne) if egne else None
+        if eget is None and not kendte.get(link):
+            eget = nu.isoformat()        # helt ny for os — nu ER dens egen tid
+        alle = [t for t in (eget, kendte.get(link)) if t]
+        a["foerst_set"] = min(alle) if alle else nu.isoformat()
+        if eget:
+            a["eget_foerst_set"] = eget
+            butik[link] = eget
+        # Kendt, men uden noget eget tidspunkt nogen steder: så skriver vi
+        # ingenting. Et gæt her er værre end et manglende felt — se
+        # `_gulv_paa_laante_tider`, som er den, der rydder op efter dem.
 
 
 # Hvor langt FØR sin egen udgivelsestid en artikel må være set, før tallet
@@ -4996,7 +5127,9 @@ def main() -> None:
     # dette i stedet for kildens udgivelsestid, så nyopdagede artikler altid
     # lander øverst - i stedet for at flette sig ind langt nede i listen.
     # Se `_saet_foerst_set` for hvorfor `eget_foerst_set` sættes netop her.
-    _saet_foerst_set(unikke, foerst_set_gammel, nu, eget_gammel)
+    _foerst_set_butik = _laes_foerst_set_butik()
+    _saet_foerst_set(unikke, foerst_set_gammel, nu, eget_gammel, _foerst_set_butik)
+    _skriv_foerst_set_butik(_foerst_set_butik, nu)
     unikke.sort(key=lambda a: (a["foerst_set"],
                                a["dato"].isoformat() if a["dato"] else ""),
                 reverse=True)
