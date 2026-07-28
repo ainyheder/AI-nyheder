@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-28T11:49:30.632328+00:00",
+ "opdateret": "2026-07-28T15:20:23.942431+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      1,
      9,
-     2
+     4
     ]
    },
    {
@@ -168,12 +168,12 @@ window.LAESERTAL = {
      1,
      3,
      1,
-     5,
+     6,
      4,
      3,
      0,
      4,
-     0
+     1
     ]
    },
    {
@@ -203,12 +203,12 @@ window.LAESERTAL = {
      0,
      1,
      2,
-     5,
+     4,
      3,
      0,
      0,
      1,
-     0
+     1
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 268,
- "sidevisninger_i_alt": 758,
+ "besoeg_i_alt": 271,
+ "sidevisninger_i_alt": 772,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 251,
-   "visninger": 465
+   "besoeg": 254,
+   "visninger": 471
   },
   {
    "sti": "/tak.html",
@@ -266,12 +266,12 @@ window.LAESERTAL = {
   {
    "sti": "/youtube.html",
    "besoeg": 3,
-   "visninger": 24
+   "visninger": 25
   },
   {
    "sti": "/laer.html",
    "besoeg": 2,
-   "visninger": 90
+   "visninger": 92
   },
   {
    "sti": "/velkommen.html",
@@ -309,17 +309,12 @@ window.LAESERTAL = {
    "visninger": 26
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/c1fdca1de801e0c2.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/koerekort-1.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/c13d67073208cf10.html",
+   "sti": "/artikel/f1637c21f3807a90.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -329,9 +324,29 @@ window.LAESERTAL = {
    "visninger": 9
   },
   {
+   "sti": "/koerekort-1.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/koerekort-6.html",
+   "besoeg": 0,
+   "visninger": 2
+  },
+  {
    "sti": "/artikel/655cdfa99e06ad45.html",
    "besoeg": 0,
    "visninger": 3
+  },
+  {
+   "sti": "/prompts.html",
+   "besoeg": 0,
+   "visninger": 14
+  },
+  {
+   "sti": "/artikel/6dd5f2d4f0064ecb.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/f7a651ced6714ba3.html",
@@ -349,14 +364,19 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/koerekort-6.html",
+   "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 1
   },
   {
    "sti": "/koerekort-2.html",
    "besoeg": 0,
    "visninger": 2
+  },
+  {
+   "sti": "/artikel/856fa25c6c2097c8.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/5d041ac5a5b573cc.html",
@@ -379,6 +399,11 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/7280fe4d8d9af175.html",
    "besoeg": 0,
    "visninger": 1
@@ -394,9 +419,9 @@ window.LAESERTAL = {
    "visninger": 3
   },
   {
-   "sti": "/prompts.html",
+   "sti": "/artikel/c13d67073208cf10.html",
    "besoeg": 0,
-   "visninger": 14
+   "visninger": 1
   },
   {
    "sti": "/ordbog.html",
@@ -404,7 +429,7 @@ window.LAESERTAL = {
    "visninger": 3
   },
   {
-   "sti": "/artikel/f1637c21f3807a90.html",
+   "sti": "/artikel/999e3252e27a4f99.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -412,7 +437,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 241
+   "besoeg": 244
   },
   {
    "fra": "l.facebook.com",
@@ -440,13 +465,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 228,
-    "visninger": 228
+    "besoeg": 231,
+    "visninger": 231
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 214
+    "visninger": 217
    },
    {
     "fra": "l.facebook.com",
@@ -485,7 +510,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 21
+    "visninger": 22
    },
    {
     "fra": "direkte",
@@ -497,7 +522,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 88
+    "visninger": 90
    },
    {
     "fra": "direkte",
@@ -579,21 +604,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/8756b60eb8fa9e43.html": [
+  "/artikel/c1fdca1de801e0c2.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/koerekort-1.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/c13d67073208cf10.html": [
+  "/artikel/f1637c21f3807a90.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -607,11 +625,39 @@ window.LAESERTAL = {
     "visninger": 9
    }
   ],
+  "/koerekort-1.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/koerekort-6.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
   "/artikel/655cdfa99e06ad45.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 3
+   }
+  ],
+  "/prompts.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 14
+   }
+  ],
+  "/artikel/6dd5f2d4f0064ecb.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/f7a651ced6714ba3.html": [
@@ -635,11 +681,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/koerekort-6.html": [
+  "/artikel/8756b60eb8fa9e43.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 1
    }
   ],
   "/koerekort-2.html": [
@@ -647,6 +693,13 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
+   }
+  ],
+  "/artikel/856fa25c6c2097c8.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/5d041ac5a5b573cc.html": [
@@ -677,6 +730,13 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
+  "/artikel/51f6b5a29ea2e2af.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/7280fe4d8d9af175.html": [
    {
     "fra": "herfra selv",
@@ -698,11 +758,11 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
-  "/prompts.html": [
+  "/artikel/c13d67073208cf10.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 14
+    "visninger": 1
    }
   ],
   "/ordbog.html": [
@@ -712,7 +772,7 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
-  "/artikel/f1637c21f3807a90.html": [
+  "/artikel/999e3252e27a4f99.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -913,10 +973,10 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/c1fdca1de801e0c2.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+   "rubrik": "Kinas AI-gave skaber panik i Silicon Valley",
    "kategori": "Penge & marked",
    "dato": "2026-07-27",
    "henvisere": [
@@ -928,12 +988,27 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/c13d67073208cf10.html",
+   "sti": "/artikel/f1637c21f3807a90.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Cloudflare lader kunder styre AI-trafik",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-25",
+   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/6dd5f2d4f0064ecb.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI-firmaet Midjourney køber astrologi-app",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-24",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -949,6 +1024,36 @@ window.LAESERTAL = {
    "rubrik": "Nu kan du tale med Claude på flere sprog",
    "kategori": "Lanceringer",
    "dato": "2026-07-23",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI-giganter bruger rekordbeløb på lobbyarbejde",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/856fa25c6c2097c8.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Google lancerer tre nye AI-modeller",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-21",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -988,6 +1093,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI kan gøre dig 100 gange hurtigere – og give dig stress",
+   "kategori": "Forskning",
+   "dato": "2026-07-26",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/7280fe4d8d9af175.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1018,11 +1138,26 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/f1637c21f3807a90.html",
+   "sti": "/artikel/c13d67073208cf10.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Microsoft-chef: Stop med at give AI-firmaet dine hemmeligheder",
-   "kategori": "Penge & marked",
+   "rubrik": "Cloudflare lader kunder styre AI-trafik",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-25",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/999e3252e27a4f99.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI-model brød ud under test og skabte panik",
+   "kategori": "Samfund & etik",
    "dato": "2026-07-27",
    "henvisere": [
     {
@@ -1036,18 +1171,22 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Penge & marked",
-   "visninger": 5
+   "visninger": 7
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 4
+   "visninger": 5
   },
   {
    "navn": "Lanceringer",
-   "visninger": 3
+   "visninger": 4
   },
   {
    "navn": "Politik & jura",
+   "visninger": 1
+  },
+  {
+   "navn": "Forskning",
    "visninger": 1
   }
  ]
