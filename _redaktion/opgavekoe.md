@@ -42,6 +42,11 @@ på dem alle. Ethvert punkt i køen forbedrer altså noget, som **26 mennesker
 udefra** ser om ugen. Det tal er baggrunden for rækkefølgen — det er ikke noget,
 der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
+**Og det er ikke en fejl.** Siden er under opbygning, og trafikken er de to, der
+bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
+øverst i `## Fravalgt`, før du skriver et punkt, der hviler på et tal fra
+`data/laesertal.json`.
+
 ---
 
 ## Kø
@@ -60,28 +65,25 @@ der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
 
 ### 3 — Gør siden mærkbart bedre
 
-- [ ] **Tre faste sider fik nul besøg på syv dage — og forsiden linker ikke til
-      nogen af dem.** Målt 27.07 kl. 19:46 i `data/laesertal.json`:
-      `prompt-arkiv.html`, `quiz.html` og `vaerktoejer.html` står på **nul besøg
-      og nul visninger** — ikke få, nul. Tallet holder 28.07 kl. 05:45. Det er
-      lære-indholdet, som målestokkens punkt 7 siger, læseren skal komme tilbage
-      til, og ingen udefra har set det.
+- [ ] **Forsiden linker kun til én af syv lære-sider.** Målt 28.07 i jsdom mod
+      den rigtige `index.html` og de rigtige datafiler: den tegnede forside har
+      **93 links, hvoraf 16 er interne**, og **2 af dem fører til lære-indhold —
+      begge til `laer.html`**. Der er **0 links til `koerekort.html`,
+      `erhverv.html`, `prompts.html`, `prompt-arkiv.html`, `ordbog.html`,
+      `quiz.html` og `vaerktoejer.html`**, og ordet "kørekort" står **0 gange**
+      i den tegnede tekst.
 
-      **Målingen, punktet bad om, er nu lavet.** Den tegnede forside i jsdom
-      (28.07, mod de rigtige datafiler) har **93 links, hvoraf 16 er interne**.
-      **0 af dem fører til `prompt-arkiv.html`, 0 til `quiz.html`, 0 til
-      `vaerktoejer.html`** — og 0 til `koerekort.html`, `prompts.html` og
-      `ordbog.html`. De eneste to links til lære-indhold går begge til
-      `laer.html`. Der er altså ikke tale om en svær vej ind; der er ingen.
+      **Det her hviler ikke på besøgstal — se `## Fravalgt`.** Det er en
+      struktur, der kan måles og rettes, uanset hvor mange der bruger siden:
+      lære-indholdet er halvdelen af det, siden er, og forsiden har én dør ind
+      til det.
 
-      **Til sammenligning:** `laer.html` får **88 visninger/7 dage** og
-      `koerekort.html` **26** — begge udelukkende "herfra selv". Vejen findes,
-      den går bare gennem ét link.
-      **Mindste rettelse: ikke afgjort — det er en redaktionel beslutning, hvor
-      dørene skal stå.** Målingen er der nu; rettelsen kræver et valg.
+      **Mindste rettelse er ikke afgjort** — hvor dørene skal stå, er
+      redaktionens valg. `_redaktion/forslag-koerekort-indgang.html` fra 25.07
+      ligger stadig som et ubesvaret forslag på præcis det spørgsmål.
       **Rammer: 456 visninger/7 dage (forsiden)** — det er det eneste sted, en
       vej ind kan bygges.
-      *Punkt 7 og 10.*
+      *Punkt 7.*
 
 - [ ] **Tjek at PWA'en stadig virker.** Service worker, manifest, ikoner —
       efter alle de seneste dages ændringer.
@@ -102,8 +104,8 @@ der kan klares. *Se `redaktionens-oejne.md`, punkt 10.*
       **Rammer: 2 visninger/7 dage (artikelsiderne tilsammen).**
       *Punkt 5 og 10.*
 
-- [ ] **De 168 artikelsider har to døre ind i siden, og ingen af dem fører til
-      lære-indholdet.** Målt 28.07 over alle filer i `artikel/`:
+- [ ] **De 168 artikelsider har ingen vej til lære-indholdet.** Målt 28.07
+      over alle filer i `artikel/`:
       **168 af 168 sider har præcis fire interne links** — to til forsiden, ét
       til `/om.html` og ét til `/laer.html`. **0 til kørekortet, 0 til
       prompts, 0 til ordbogen, 0 til quizzen, 0 til prompt-arkivet, 0 til
@@ -317,7 +319,32 @@ grundlaget har ændret sig, og så skal målingen med.
 Loggen fortæller kun, hvad der blev lavet. Uden den her liste kommer den samme
 afviste idé igen om en måned og koster den samme udredning forfra.
 
-*(Ingen endnu. Skriv dem som `- **<idéen>** — fravalgt <dato>: <hvorfor>.`)*
+- **"Få eller nul besøg er i sig selv et problem"** — fravalgt 28.07.2026 af
+  redaktionen, og det er en regel, ikke en enkelt afvisning.
+
+  Siden er under opbygning, og den trafik, der er, er de to, der bygger den. Et
+  besøgstal på nul måler derfor ikke, om en side er god, eller om den kan
+  findes. Det måler, at siden endnu ikke har et publikum — og dét kan ingen
+  session lave om på. Et punkt, der bygger på tallet, kan aldrig hakkes af, så
+  det bliver stående og fylder, mens det siger det samme hver dag.
+
+  **Regel herfra: ingen session må skrive et punkt i `## Kø`, hvis dets eneste
+  begrundelse er få eller nul besøg eller visninger.** Det gælder alle sider —
+  faste sider, artikelsider og videosider. Tallene skal stadig måles, stadig
+  stå som `Rammer:` og stadig bruges til at sortere rækkefølgen af det, der ER
+  målt i stykker. De kan bare ikke selv gøre noget til et fund.
+
+  Et fund, der handler om en side med lav trafik, skal altså kunne stå på egne
+  ben uden tallet: *"forsiden linker ikke til den"* holder, *"ingen har besøgt
+  den"* gør ikke. Reglen falder bort, når siden har rigtige læsere udefra, og
+  det er redaktionens afgørelse, hvornår det er.
+
+- **"Tre faste sider fik nul besøg på syv dage"** — fravalgt 28.07.2026 efter
+  reglen ovenfor. `prompt-arkiv.html`, `quiz.html` og `vaerktoejer.html` stod på
+  nul besøg og nul visninger både 27. og 28.07, og det er stadig sandt. Det er
+  bare ikke et fund. Den halvdel af punktet, der kan måles uafhængigt af
+  trafik — at forsiden ikke linker til dem — står nu som eget punkt i `## Kø`
+  under overskriften *"Forsiden linker kun til én af syv lære-sider"*.
 
 ---
 

@@ -4,6 +4,57 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-07-28 (kl. 07:0x, chat) · Nul besøg er ikke et fund, mens siden bygges
+
+**Torben stoppede mig i noget, jeg selv havde skrevet ind.** Punktet *"Tre faste
+sider fik nul besøg på syv dage"* stod som nummer ét i køen. Hans indvending:
+siden er under opbygning, den eneste trafik er ham og hans makker, og de går
+ikke ind på hver enkelt side. At `prompt-arkiv.html` har nul besøg måler derfor
+ikke, om siden er god eller kan findes — det måler, at der endnu ikke er noget
+publikum. Og det kan ingen kørsel hakke af, så punktet blev bare stående og sagde
+det samme hver dag.
+
+**Han har ret, og fejlen er systematisk, ikke i den ene linje.** Køens egen regel
+siger allerede, at *"et punkt skal kunne blive færdigt"*, og at et mål ikke er et
+punkt. Jeg havde skrevet et mål og kaldt det en opgave, fordi der stod et tal ved
+siden af. Et tal gør ikke en påstand til en opgave.
+
+**Gjort:**
+
+1. Ny regel øverst i `## Fravalgt`, hvor hver kørsel skal læse den, før den
+   skriver nye punkter: **ingen session må skrive et punkt i `## Kø`, hvis dets
+   eneste begrundelse er få eller nul besøg eller visninger.** Gælder faste
+   sider, artikelsider og videosider. Tallene måles stadig, står stadig som
+   `Rammer:` og bruges stadig til at sortere rækkefølgen af det, der ER målt i
+   stykker — de kan bare ikke selv gøre noget til et fund. Prøven er, om fundet
+   kan stå uden tallet: *"forsiden linker ikke til den"* holder, *"ingen har
+   besøgt den"* gør ikke.
+2. Punktet er flyttet til `## Fravalgt` med begrundelsen.
+3. Den halvdel, der IKKE hviler på trafik, står nu som eget punkt: **"Forsiden
+   linker kun til én af syv lære-sider"** — 93 links på den tegnede forside, 16
+   interne, 2 til lære-indhold, begge til `laer.html`. 0 til kørekortet,
+   erhverv, prompts, prompt-arkivet, ordbogen, quizzen og værktøjslisten.
+   Det tal ændrer sig ikke, uanset hvor mange der besøger siden.
+4. To overskrifter er skrevet kortere, fordi kontrolpanelet kun viser den første
+   linje af en fed titel og klippede dem midt i sætningen.
+5. En sætning i køens indledning siger nu rent ud, at siden er under opbygning,
+   og at et lavt besøgstal derfor er baggrund og ikke et fund.
+
+**Til redaktionen:** `redaktionens-oejne.md` punkt 10 siger stadig, at en side,
+ingen ser, ikke opfylder sit formål, og den fil rører jeg ikke — den er jeres.
+Reglen i `## Fravalgt` ændrer kun, hvordan punkt 10 må omsættes til opgaver, ikke
+at det gælder. Vil I have det skrevet ind i selve målestokken, er det jer, der
+skal gøre det.
+
+**Én ting mere, værd at kende:** `device_stage_files` gav mig en **forældet
+kopi** af `opgavekoe.md`, da jeg hentede den anden gang — den samme fil, jeg
+selv havde skrevet en time før. Jeg opdagede det kun, fordi bytetallet ikke
+passede. Havde jeg redigeret videre på den kopi, ville jeg have rullet dagens
+arbejde tilbage uden at opdage det. Fra nu af læser jeg filer direkte på
+maskinen, når jeg selv lige har ændret dem.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
 Klaret: 1 punkt. Nye i køen: 1.
 Gennemgik: **rækkevidde** — hvor mange døre ind i siden en Google-læser har,
