@@ -274,6 +274,32 @@ rettelser, der var forkerte:**
 
 ---
 
+## 2026-07-28 (kl. 19:xx, chat) · Panelet siger nu selv, hvor filen skal hen
+
+Redaktionen spurgte, hvor `feeds.json` skulle gemmes, og bad om at få det skrevet
+ind i panelet i stedet for at skulle huske det.
+
+**Gjort:** ny `feedsSti()` regner stien ud af panelets EGEN adresse — `location
+.pathname` op til `/_redaktion/` plus `/opsaetning/feeds.json` — i stedet for at
+have den skrevet fast. Så passer den også, hvis mappen flyttes, eller hvis
+panelet åbnes fra en anden maskine. `decodeURIComponent` er nødvendig: mappen
+hedder "AI NEWS" med mellemrum, og uden den ville der stå `AI%20NEWS`, som ikke
+er en sti, man kan navigere efter.
+
+Teksten står nu under Gem-knappen og siger fire ting: den fulde sti, at browseren
+selv foreslår navnet, at HELE filen overskrives (ikke et tillæg), og hvad man gør
+i Safari, som ikke kan vise en gem-dialog — dér hentes filen til Overførsler, og
+så skal den flyttes selv. Kvitteringerne efter et gem nævner også stien.
+
+**Prøven:** `proeve-kilder.js` **77 grønne / 0 røde** — heraf seks nye, der åbner
+panelet fra en rigtig `file://`-adresse og tjekker, at stien er den forventede,
+at mellemrummet ikke står som `%20`, og at der falder noget brugbart tilbage,
+hvis panelet ikke åbnes fra en fil. Tre mutationer prøvet: fjern hele afsnittet
+(3 røde), skriv stien fast i stedet for at regne den ud (1 rød), drop
+`decodeURIComponent` (2 røde).
+
+---
+
 ## 2026-07-28 (kl. 18:xx, chat) · Hvad sker der egentlig, når en kilde slettes?
 
 Redaktionen spurgte, om en slettet kilde med sikkerhed aldrig crawles igen.

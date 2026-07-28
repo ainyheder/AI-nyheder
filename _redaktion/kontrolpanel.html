@@ -330,6 +330,10 @@ table.kilder td.tal b { font-size:17px; }
 .km-tom { background:#fff2d6; color:#7a5300; }
 .km-ny { background:#e6f0ff; color:#1c4e8a; }
 .kilde-slet-forklar:empty { display:none; }
+.kilde-sti { margin-top:12px; font-size:13px; color:var(--svag); max-width:80ch;
+  line-height:1.65; }
+.kilde-sti code { font-size:12.5px; background:var(--flade,#f4f6f8); padding:2px 6px;
+  border-radius:5px; word-break:break-all; }
 .kilde-advarsel { margin-top:18px; padding:12px 14px; border-radius:10px;
   background:#fff8e6; border:1px solid #f0dfae; font-size:13.5px; max-width:80ch; }
 .kilde-ny { margin-top:30px; padding-top:22px; border-top:1px solid var(--kant); }
@@ -1230,12 +1234,35 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       (feedsRoert
         ? "Ændringer er ikke gemt endnu"
         : "Intet at gemme endnu") + "</span></div>" +
+      '<div class="kilde-sti">Gem den oven i den fil, der ligger her:<br>' +
+      "<code>" + esc(feedsSti()) + "</code><br>" +
+      "Browseren foreslår selv navnet <code>feeds.json</code> — naviger ind i " +
+      "<code>opsaetning</code> og bekræft, at den må overskrives. Panelet skriver " +
+      "HELE filen, ikke et tillæg. Kan din browser ikke vise en gem-dialog " +
+      "(Safari kan ikke), hentes filen i stedet ned i <b>Overførsler</b>, og så " +
+      "skal du selv flytte den ind på stien ovenfor.</div>" +
       '<div class="kilde-advarsel kilde-alder">Listen her er, som <code>feeds.json' +
       "</code> så ud, da crawleren sidst kørte" +
       (K.opdateret ? " — " + esc(String(K.opdateret).slice(0, 16).replace("T", " kl. ")) : "") +
       ". Gemmer du, skrives HELE filen. Har nogen rettet i den siden — i hånden " +
       "eller fra en anden maskine — bliver den rettelse skrevet over. Hent ned " +
       "fra GitHub først, hvis du er i tvivl.</div>";
+  }
+
+  /* Hvor filen skal hen. Panelet ligger i `_redaktion/` inde i projektmappen,
+     så stien kan regnes ud af dets egen adresse i stedet for at stå fast — så
+     passer den også, hvis mappen flyttes eller ligger et andet sted på en anden
+     maskine. Åbnes panelet ikke fra en fil (fx i en prøve), falder vi tilbage
+     til den relative sti, som stadig er til at forstå. */
+  function feedsSti() {
+    try {
+      var sti = decodeURIComponent(location.pathname || "");
+      var i = sti.lastIndexOf("/_redaktion/");
+      if (location.protocol === "file:" && i > -1) {
+        return sti.slice(0, i) + "/opsaetning/feeds.json";
+      }
+    } catch (e) { /* falder igennem */ }
+    return "opsaetning/feeds.json";
   }
 
   function kilderHent() {
@@ -1257,7 +1284,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       return;
     }
     var tekst = JSON.stringify(fil, null, 2) + "\n";
-    if (!window.showSaveFilePicker) { kilderHent(); sig("Hentet i stedet ↓ — læg den i opsaetning/"); return; }
+    if (!window.showSaveFilePicker) { kilderHent(); sig("Hentet ned ↓ — flyt den til " + feedsSti()); return; }
     try {
       var h = await window.showSaveFilePicker({
         suggestedName: "feeds.json",
@@ -1267,11 +1294,11 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       await w.write(tekst);
       await w.close();
       feedsRoert = false;
-      sig("Gemt ✓ — push, og ændringen gælder fra næste kørsel");
+      sig("Gemt ✓ — commit og push, så gælder den fra næste kørsel");
       tegnSide();
     } catch (fejl) {
       if (fejl && fejl.name === "AbortError") return;
-      kilderHent(); sig("Kunne ikke gemme — hentet ↓");
+      kilderHent(); sig("Kunne ikke gemme — hentet ned ↓. Flyt den til " + feedsSti());
     }
   }
 

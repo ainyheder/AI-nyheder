@@ -43,11 +43,11 @@ html = html.replace('<script src="../data/hjerne-data.js" onerror="window.HJERNE
 html = html.replace('<script src="../data/kilder-data.js" onerror="window.KILDER_MANGLER=true"></script>',
   "<script>window.KILDER_STATUS_HER</script>");
 
-function lavPanel(kilderTekst) {
+function lavPanel(kilderTekst, adresse) {
   var h = html.replace("<script>window.KILDER_STATUS_HER</script>",
     "<script>" + kilderTekst.split("</script>").join("<\\/script>") + "</script>");
-  var dm = new JSDOM(h, { url: "https://ainyheder.local/", runScripts: "dangerously",
-    pretendToBeVisual: true, virtualConsole: vc });
+  var dm = new JSDOM(h, { url: adresse || "https://ainyheder.local/",
+    runScripts: "dangerously", pretendToBeVisual: true, virtualConsole: vc });
   return dm.window;
 }
 const w = lavPanel(kilderJs), d = w.document;
@@ -283,6 +283,31 @@ const raekke = (navn) => raekker().find(r => {
       .dispatchEvent(new w4.MouseEvent("click", { bubbles: true }));
     ok("T5 og låses op, når noget er ændret",
        !d4.getElementById("kGem").hasAttribute("disabled"));
+  }
+
+  console.log("== panelet siger, HVOR filen skal gemmes ==");
+  {
+    // Som Torben åbner den: fra selve projektmappen.
+    const w5 = lavPanel(kilderJs,
+      "file:///Users/torben/Claude/Projects/AI%20NEWS/_redaktion/kontrolpanel.html");
+    const d5 = w5.document;
+    [...d5.querySelectorAll(".side-punkt")].find(b => /Kilder/.test(b.textContent))
+      .dispatchEvent(new w5.MouseEvent("click", { bubbles: true }));
+    const sti = d5.querySelector(".kilde-sti");
+    ok("S1 stien står i ruden", !!sti);
+    ok("S2 og det er den rigtige, regnet ud af panelets egen placering",
+       sti && sti.textContent.includes("/Users/torben/Claude/Projects/AI NEWS/opsaetning/feeds.json"),
+       sti && sti.querySelector("code").textContent);
+    ok("S3 mellemrummet i mappenavnet er ikke %20",
+       sti && !sti.textContent.includes("%20"), sti && sti.querySelector("code").textContent);
+    ok("S4 den siger, at hele filen overskrives", /HELE filen/.test(sti.textContent));
+    ok("S5 og hvad man gør, hvis browseren ikke kan vise en gem-dialog",
+       /Overførsler/.test(sti.textContent));
+    // Åbnes panelet ikke fra en fil, må der stadig stå noget brugbart
+    const sti2 = d.querySelector(".kilde-sti");
+    ok("S6 uden filadresse falder den tilbage til den relative sti",
+       sti2 && sti2.querySelector("code").textContent === "opsaetning/feeds.json",
+       sti2 && sti2.querySelector("code").textContent);
   }
 
   console.log("== det, der ville blive gemt ==");
