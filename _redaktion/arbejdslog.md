@@ -274,6 +274,44 @@ rettelser, der var forkerte:**
 
 ---
 
+## 2026-07-28 (kl. 18:xx, chat) · Hvad sker der egentlig, når en kilde slettes?
+
+Redaktionen spurgte, om en slettet kilde med sikkerhed aldrig crawles igen.
+Svaret er ja til hentningen og nej til sporene, og begge dele er målt:
+
+**Ja:** crawleren læser `opsaetning/feeds.json` forfra ved hver kørsel, så en
+slettet linje hentes aldrig igen — men først når filen er i `origin/main`.
+Panelet skriver den lokale fil; indtil der er pushet, kører Actions videre på den
+gamle liste, én gang i timen.
+
+**Nej, tre spor bliver liggende:**
+
+1. **`andre`-posterne bæres videre i cachen pr. link**, uafhængigt af hvilke
+   feeds der hentes. Lige nu står Ingeniøren som ekstra kilde 3 gange, Version2
+   2, TechCrunch 3. Forsiden bliver altså ved med at linke til en slettet kilde,
+   indtil vinder-artiklen selv ruller ud.
+2. **De frosne artikelsider bliver liggende og bliver i sitemappet.** 178 sider
+   i `artikel/`, 138 URL'er i sitemappet. Fordelt på kildedomæne: TechCrunch 38,
+   OpenAI 26, arXiv 25, Ars Technica 25, MIT Tech Review 15, The Verge 14,
+   DeepMind 8. Bemærk: **Version2 og Ingeniøren har 0**, fordi de er
+   `kun_aktuel` — for dem bygges der aldrig en permanent side.
+3. `data/foerst_set.json` husker linket i 90 dage. Harmløst — ren hukommelse.
+
+**Gjort:** slet-knappen i panelet siger det nu, og med tal for netop den kilde:
+hvor mange artikler der forsvinder fra forsiden, hvor mange andre historier den
+stadig linkes fra, at siderne bliver liggende, og at det kræver et push. Kun
+tekst — opførslen er uændret, fordi redaktionen ikke havde en præference, og de
+to større indgreb har konsekvenser, ingen har bedt om.
+
+**De to indgreb ligger nu i `## Nyt` med målingen**, så de kan vælges senere:
+rydde en slettet kilde ud af `andre`, og tage dens sider ud af sitemappet uden
+at slette filerne (så Google ikke får 404 på noget, den allerede har indekseret).
+
+**Prøven:** `proeve-kilder.js` **71 grønne / 0 røde**, `proeve-kilder.py` 40/0.
+Mutationsprøve: fjernes forklaringen, går 5 påstande røde.
+
+---
+
 ## 2026-07-28 (kl. 16:0x-18:0x, chat) · Kilderne kan nu ses og styres i panelet
 
 **Bedt om af redaktionen direkte:** man skal kunne se hvilke sider vi henter fra,

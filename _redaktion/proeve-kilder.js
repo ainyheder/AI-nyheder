@@ -230,6 +230,20 @@ const raekke = (navn) => raekker().find(r => {
   ok("17 første tryk sletter ikke",
      d.querySelectorAll("tr.kilde-r").length === nu.length, d.querySelectorAll("tr.kilde-r").length);
   ok("18 men spørger med navnet", /Slet Wired AI\?/.test(sletKnap.textContent), sletKnap.textContent);
+  const forkl = d.getElementById("kSletForklar");
+  ok("18b og forklarer hvad der sker", /aldrig igen/.test(forkl.textContent), forkl.textContent.slice(0, 90));
+  ok("18c inklusive at det kræver et push", /pushet/.test(forkl.textContent));
+  // en kilde MED artikler skal også få tallene med
+  const v2r = raekke("Version2");
+  const v2s = v2r.querySelector("[data-kilde-slet]");
+  v2s.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+  const f2 = d.getElementById("kSletForklar").textContent;
+  const kv2 = KILDER.kilder.find(k => k.navn === "Version2");
+  ok("18d og siger hvor mange artikler der forsvinder fra forsiden",
+     f2.indexOf(String(kv2.i_listen)) > -1, f2.slice(0, 140));
+  ok("18e og at kilden stadig linkes til som ekstra kilde",
+     /ekstra kilde under/.test(f2), f2.slice(0, 160));
+  ok("18f og at de permanente sider bliver liggende", /bliver liggende/.test(f2));
   sletKnap.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
   ok("19 andet tryk sletter", d.querySelectorAll("tr.kilde-r").length === nu.length - 1,
      d.querySelectorAll("tr.kilde-r").length);

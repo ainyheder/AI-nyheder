@@ -157,6 +157,37 @@ steder. Resultatet var en maskine, der kunne gøre siden fejlfri og aldrig stør
   skal bygges om ugen**. Er listen tom, er det ikke et godt tegn her — det
   betyder, at ingen har spurgt, hvad siden mangler.
 
+- [ ] **En slettet kilde bliver ved med at blive linket til fra forsiden.**
+      Målt 28.07: `andre`-posterne bæres videre i cachen pr. link, helt
+      uafhængigt af hvilke feeds der hentes — `omskriv_nye` genskaber feltet fra
+      `cache`. Lige nu står **Ingeniøren som ekstra kilde 3 gange, Version2 2,
+      TechCrunch 3**. Sletter man en kilde, viser forsiden altså stadig
+      "+1 kilder" med et klikbart link til den, indtil selve vinder-artiklen
+      ruller ud af listen — dage.
+      **Hvad læseren får:** at "fjern kilde" betyder fjern, også for de links,
+      der allerede står. Panelet siger i dag ærligt, at det ikke sker; det er
+      bedre end at lyve, men det er ikke det, knappen hedder.
+      **Mindste ting, der kan bygges og ses virke:** når et link ikke længere
+      hører til nogen kilde i `feeds.json`, fjernes det fra `andre` ved næste
+      kørsel. Ingen ny datastruktur.
+      *Punkt 4.*
+
+- [ ] **En slettet kildes artikelsider bliver i sitemappet for altid.** Målt
+      28.07 på de 178 sider i `artikel/`, talt på det udgående kildelink:
+      TechCrunch 38, OpenAI 26, arXiv 25, Ars Technica 25, MIT Tech Review 15,
+      The Verge 14, DeepMind 8. **Version2 og Ingeniøren har 0** — de er
+      `kun_aktuel`, så der bygges aldrig en permanent side for dem.
+      Sletter man fx Ars Technica, bliver de 25 sider liggende, står stadig
+      blandt sitemappets 138 URL'er, og Google bliver ved med at blive inviteret
+      ind på dem.
+      **Det er ikke sikkert, det er forkert** — siderne er skrevet, de virker,
+      og at slette dem ville give 404 på noget, Google allerede har indekseret.
+      Spørgsmålet er, om en kilde, vi har sagt fra til, stadig skal have 25
+      sider stående. **Det er en redaktionel beslutning, ikke en fejl.**
+      **Mindste ting, der kan bygges:** tag siderne ud af sitemappet, men lad
+      filerne ligge — så holder invitationen op, uden at noget går i stykker.
+      *Punkt 4 og 10.*
+
 - [ ] **`undervisning.html` findes, men ingen kan komme derhen.** Målt 28.07:
       siden er bygget og testet 26.07 og står i `sitemap.xml`, men **0 af de 33
       rodsider linker til den**. `laer.html` linker til 11 af 13 lære-sider —

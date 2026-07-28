@@ -329,6 +329,7 @@ table.kilder td.tal b { font-size:17px; }
 .km-fejl { background:#fde8e4; color:#8a2b16; }
 .km-tom { background:#fff2d6; color:#7a5300; }
 .km-ny { background:#e6f0ff; color:#1c4e8a; }
+.kilde-slet-forklar:empty { display:none; }
 .kilde-advarsel { margin-top:18px; padding:12px 14px; border-radius:10px;
   background:#fff8e6; border:1px solid #f0dfae; font-size:13.5px; max-width:80ch; }
 .kilde-ny { margin-top:30px; padding-top:22px; border-top:1px solid var(--kant); }
@@ -1222,6 +1223,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       "</div>" +
       '<div class="raekke"><button class="k fyldt" id="knTilfoej">Tilføj kilde</button>' +
       '<span class="kilde-kvit" id="knKvit"></span></div></div>' +
+      '<div class="kilde-advarsel kilde-slet-forklar" id="kSletForklar"></div>' +
       '<div class="raekke kilde-gem"><button class="k fyldt" id="kGem"' +
       (feedsRoert ? "" : " disabled") + ">Gem feeds.json</button>" +
       '<span class="kilde-kvit" id="kGemKvit">' +
@@ -1447,9 +1449,31 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       if (slet.dataset.sikker !== "1") {
         slet.dataset.sikker = "1";
         slet.textContent = "Slet " + f2.navn + "?";
+        var t2 = kildeTal(f2.navn);
+        var f = document.getElementById("kSletForklar");
+        if (f) {
+          // Sig hvad der FAKTISK sker. Målt 28.07: crawleren læser feeds.json
+          // forfra hver kørsel, så adressen hentes aldrig igen — men `andre`
+          // bæres videre i cachen pr. link, og de frosne sider i `artikel/`
+          // bliver liggende og står stadig i sitemappet.
+          f.innerHTML = "<b>" + esc(f2.navn) + " slettes.</b> Adressen hentes " +
+            "aldrig igen, når filen er gemt <i>og pushet</i> — indtil da kører " +
+            "sky-crawleren videre på den gamle liste. " +
+            (t2.i_listen ? "De <b>" + t2.i_listen + "</b> artikler forsvinder fra " +
+              "forsiden ved næste kørsel; deres permanente sider bliver liggende " +
+              "og står stadig i sitemappet. " : "") +
+            (t2.som_ekstra ? "Kilden står desuden som ekstra kilde under <b>" +
+              t2.som_ekstra + "</b> andre historier, og forsiden bliver ved med at " +
+              "linke til den dér, indtil de historier selv ruller ud. " : "") +
+            "Tryk igen for at slette.";
+        }
         setTimeout(function () {
-          if (slet.isConnected) { slet.dataset.sikker = ""; slet.textContent = "Slet"; }
-        }, 4000);
+          if (slet.isConnected) {
+            slet.dataset.sikker = ""; slet.textContent = "Slet";
+            var f3 = document.getElementById("kSletForklar");
+            if (f3) f3.innerHTML = "";
+          }
+        }, 8000);
         return;
       }
       liste.splice(i, 1); feedsRoert = true; tegn();
