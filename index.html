@@ -70,6 +70,7 @@
   --accent: #5b4bf0;
   --accent-svag: #ecebfd;
   --yt-roed: #c62828;       /* bruges kun til YouTube-indhold. Mørknet 26.07: #cc2b2b gav 4,38:1 for "Se alle videoer" på det beige bånd, under AA's 4,5 */
+  --breaking: #b3261e;      /* kun til breaking-bjælken. Egen tone, så den ikke forveksles med YouTube-rød */
   --radius: 18px;
   --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -194,6 +195,45 @@ a.pill { text-decoration: none; display: inline-block; }
   color: var(--blaek-svag); text-align: left;
 }
 .emne-alle:hover { color: var(--accent); }
+
+/* ---------- Breaking-bjælken ----------
+   Kun til noget, der faktisk er stort og nyt. Bliver den stående med det
+   samme hele dagen, holder folk op med at se den - derfor skifter emnet
+   efter klokken, ikke efter hvornår man opdaterer siden. */
+.breaking {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  background: var(--bg-kort); border: 1px solid var(--linje);
+  border-left: 4px solid var(--breaking);
+  border-radius: var(--radius); padding: 13px 20px; margin-bottom: 18px;
+  text-decoration: none; color: inherit;
+  transition: transform .2s, box-shadow .2s;
+  animation: ind .5s ease both;
+}
+.breaking:hover { transform: translateY(-2px); box-shadow: var(--skygge); }
+.breaking-mrk {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 800;
+  letter-spacing: .1em; text-transform: uppercase; color: #fff;
+  background: var(--breaking); border-radius: 6px; padding: 4px 9px; flex: none;
+}
+.breaking-tekst {
+  font-family: var(--font-display); font-weight: 800; font-size: 18px;
+  line-height: 1.3; flex: 1; min-width: 220px;
+}
+.breaking:hover .breaking-tekst { color: var(--breaking); }
+.breaking-tid { font-size: 12.5px; color: var(--blaek-svag); flex: none; }
+/* På en telefon er der ikke plads til mærke + rubrik + tidspunkt på én linje;
+   tidspunktet blev skubbet ud over kanten. Mærke og tid deler den første
+   linje, rubrikken får sin egen. */
+@media (max-width: 640px) {
+  .breaking { padding: 12px 15px; gap: 7px 10px; }
+  .breaking-mrk { order: 1; }
+  .breaking-tid { order: 2; margin-left: auto; }
+  .breaking-tekst { order: 3; flex-basis: 100%; font-size: 16px; min-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .breaking { animation: none; transition: none; }
+  .breaking:hover { transform: none; }
+}
 
 /* ---------- Hero ---------- */
 .wrap { margin: 0 auto; padding: 14px 28px 70px; }
@@ -1126,6 +1166,10 @@ footer a { color: var(--accent); }
 
 <main class="wrap" id="hovedindhold" tabindex="-1">
   <div class="vaek-besked" id="vaekBesked" role="status" hidden></div>
+  <!-- Bjælken ligger FØR Dagens overblik med vilje: den er kun til noget
+       stort og nyt, og en bjælke, man først møder efter at have rullet forbi
+       en skærmfuld, kan lige så godt være et kort nede i bunken. -->
+  <div id="breakingBaelke"></div>
   <div id="dagensBrief" hidden></div>
   <div id="indhold"><div class="tom">Henter nyheder …</div></div>
 </main>
@@ -1206,6 +1250,74 @@ function markerLaesteIDom() {
   indhold.querySelectorAll("[data-link]").forEach(el => {
     if (laeste[el.dataset.link]) el.classList.add("laest");
   });
+}
+
+/* ---------- Rotation: hvad har DENNE læser allerede set? ----------
+   Forsiden var ellers den samme hele dagen for en, der kigger ind flere
+   gange. Crawleren henter nyt hver time, men rækkefølgen er ren vigtighed,
+   så de samme fem historier bliver liggende øverst, til noget større kommer
+   ind. Der er intet at komme tilbage efter.
+
+   Her tælles, hvor mange BESØG hver historie har været synlig i. Ikke hvor
+   mange gange den er tegnet: forsiden tegnes om ved hvert filterklik og ved
+   "Vis flere", og så ville tre klik gøre en historie "set tre gange".
+   Tallet ligger kun i browseren, ligesom `laeste` - se cookies.html.
+
+   Kun de FREMTRÆDENDE pladser tælles: hero og de store kort. Mikro-linjerne
+   længere nede er arkivhale - tælles de med, har en læser "set" 60 historier
+   efter ét besøg, og så er hele arkivet brugt op efter to. Målt 28.07: 8
+   store kort mod 56 mikrolinjer i én tegning. */
+const VIS_GRAENSE = 2;           // set så mange gange på en fremtrædende plads = ude
+const MINDST_PAA_FORSIDEN = 18;  // ... medmindre der så ikke er en forside tilbage
+
+let visninger = {};
+try { visninger = JSON.parse(localStorage.getItem("visninger") || "{}"); } catch (e) {}
+
+/* Bjælken har sit EGET regnskab. Delte den tælling med forsiden, blev hele
+   kandidatfeltet brugt op af hero og de store kort: målt 28.07 var alle seks
+   breaking-kandidater oppe på to visninger allerede efter andet besøg, og så
+   faldt bjælken tilbage på den samme historie resten af dagen. En bjælke og
+   et kort er to forskellige måder at møde en historie på. */
+let baandVist = {};
+try { baandVist = JSON.parse(localStorage.getItem("baandVist") || "{}"); } catch (e) {}
+
+function setBaand(a) {
+  return (visninger[a.link] || 0) >= VIS_GRAENSE ? 1 : 0;
+}
+function setIBaelke(a) {
+  return (baandVist[a.link] || 0) >= VIS_GRAENSE;
+}
+
+let visningerTalt = false;
+function taelVisninger(vist, iBaelken) {
+  if (visningerTalt) return;      // én gang pr. sidevisning, ikke pr. tegning
+  visningerTalt = true;
+  vist.forEach(a => { if (a) visninger[a.link] = (visninger[a.link] || 0) + 1; });
+  if (iBaelken) baandVist[iBaelken.link] = (baandVist[iBaelken.link] || 0) + 1;
+  // Ryd op efter artikler, der ikke længere findes. Det holder listerne korte
+  // uden at skulle gemme et tidsstempel pr. historie: falder en artikel ud
+  // af articles.json, er dens tal alligevel ligegyldigt.
+  const gyldige = new Set(artikler.map(a => a.link));
+  [visninger, baandVist].forEach(o => {
+    Object.keys(o).forEach(k => { if (!gyldige.has(k)) delete o[k]; });
+  });
+  try {
+    localStorage.setItem("visninger", JSON.stringify(visninger));
+    localStorage.setItem("baandVist", JSON.stringify(baandVist));
+  } catch (e) {}
+}
+
+/* Tager de gennemsete historier af forsiden - men kun så længe der er en
+   forside tilbage bagefter. En tynd forside er værre end en genkendt
+   historie, og på en stille dag kan der ikke være nyt nok til alle. */
+function begraensSete(liste) {
+  const beholdt = liste.filter(a => setBaand(a) === 0);
+  if (beholdt.length >= MINDST_PAA_FORSIDEN) return beholdt;
+  const med = new Set(beholdt);
+  liste.filter(a => setBaand(a) > 0)
+       .slice(0, MINDST_PAA_FORSIDEN - beholdt.length)
+       .forEach(a => med.add(a));
+  return liste.filter(a => med.has(a));   // bevar rækkefølgen, så dag-grupperne holder
 }
 
 /* ---------- Generativ kunst ----------
@@ -1514,14 +1626,93 @@ function filtrerede() {
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
+    // Søger man efter noget, vil man have det bedste svar - ikke variation.
+    // Derfor roterer vi kun på den forside, man kommer ind på uden at spørge
+    // om noget bestemt.
+    const roter = !q;
     // Grupperer pr. dag efter hvornår VI så artiklen (foerst_set) - så en
     // nyopdaget artikel ikke gemmer sig nede mellem gårsdagens læste.
+    // Båndet ligger EFTER dagen og FØR vigtigheden: en historie, læseren har
+    // set to gange, falder ned i sin egen dag i stedet for at hoppe en dag
+    // frem eller tilbage i tiden.
     liste.sort((x, y) =>
       dagNoegle(y.foerst_set || y.dato).localeCompare(dagNoegle(x.foerst_set || x.dato)) ||
+      (roter ? setBaand(x) - setBaand(y) : 0) ||
       prioAf(y) - prioAf(x) ||
       new Date(y.foerst_set || y.dato || 0) - new Date(x.foerst_set || x.dato || 0));
+    if (roter) return begraensSete(liste);
   }
   return liste;
+}
+
+/* ---------- Breaking ----------
+   Bjælken er kun til noget, der både er stort OG nyt. Sænkes en af de to
+   grænser, bliver den til en overskriftslinje, folk holder op med at se.
+   Emnet skiftes efter klokken og ikke ved hver sideopdatering: så ser alle
+   det samme på samme tid, og bjælken skifter et fast antal gange i døgnet
+   i stedet for at blinke, hver gang nogen trykker F5. */
+const BREAKING_BLOK_TIMER = 3;     // nyt emne hver 3. time = 8 skift i døgnet
+const BREAKING_MINDST_ANTAL = 4;   // færre end så mange, og bjælken kan ikke skifte nok
+
+/* Grænserne er MÅLT, ikke gættet. Den første udgave krævede prioAf >= 9 inden
+   for 18 timer. Målt på articles.json 28.07: 147 artikler, hvoraf 6 havde
+   prioAf >= 9 - og NUL af dem inden for 18 timer. Bjælken kunne aldrig komme
+   frem. prioAf >= 8 inden for et døgn giver 6 kandidater, altså de øverste
+   ca. 10 %, og nok til at skifte otte gange.
+
+   Rækkefølgen her er en trappe: vi vil helst have det store og friske, men
+   hellere en lidt ældre bjælke end en, der står med det samme emne hele
+   dagen - for så holder folk op med at se den. */
+function breakingKandidater() {
+  const passer = (timer, minPrio) => {
+    const graense = Date.now() - timer * 3600 * 1000;
+    return artikler
+      .filter(a => a.rubrik && !erLaest(a) && prioAf(a) >= minPrio &&
+                   new Date(a.foerst_set || a.dato || 0).getTime() >= graense)
+      .sort((x, y) => prioAf(y) - prioAf(x) ||
+                      new Date(y.foerst_set || y.dato || 0) - new Date(x.foerst_set || x.dato || 0));
+  };
+  let k = passer(24, 8);
+  if (k.length < BREAKING_MINDST_ANTAL) k = passer(48, 8);
+  if (k.length < BREAKING_MINDST_ANTAL) k = passer(48, 7);
+  return k.slice(0, 8);
+}
+
+/* Hvilken kandidat der står i bjælken lige nu. Trækkes ud for sig, så hero
+   kan springe den over: står den samme historie begge steder, har forsiden
+   sagt det samme to gange, før læseren har rullet en centimeter. */
+function breakingValg() {
+  const alle = breakingKandidater();
+  if (!alle.length) return null;
+  // Klokken sørger for de otte skift i døgnet. Men en, der kigger ind tre
+  // gange på en formiddag, er inden for SAMME blok og ville se den samme
+  // bjælke hver gang - derfor springes de over, læseren allerede har haft
+  // to gange på en fremtrædende plads. Er de alle brugt, viser vi den
+  // bedste alligevel: en tom bjælke er ikke bedre end en genkendt.
+  const friske = alle.filter(a => !setIBaelke(a));
+  const valg = friske.length ? friske : alle;
+  const blok = Math.floor((Date.now() - new Date().setHours(0, 0, 0, 0)) /
+                          (BREAKING_BLOK_TIMER * 3600 * 1000));
+  return valg[((blok % valg.length) + valg.length) % valg.length];
+}
+
+/* Etiketten er ikke fast. Siden får ikke otte store historier i døgnet, så
+   skal bjælken skifte otte gange, kommer der før eller siden noget på et halvt
+   døgn i den - og "Breaking" på noget fra i går er en løgn, læseren opdager
+   med det samme. Samme greb som heroens "Dagens historie" / "Største historie
+   lige nu", der allerede findes længere nede. */
+const BREAKING_FRISK_TIMER = 6;
+
+function breakingHtml(a) {
+  if (!a) return "";
+  const alder = (Date.now() - new Date(a.foerst_set || a.dato || 0).getTime()) / 3600000;
+  const mrk = alder <= BREAKING_FRISK_TIMER ? "Breaking" : "Størst nu";
+  return `
+  <a class="breaking" href="${esc(a.link)}" data-link="${esc(a.link)}">
+    <span class="breaking-mrk">${mrk}</span>
+    <span class="breaking-tekst">${overskrift(a)}</span>
+    <span class="breaking-tid">${tidsTekst(a)}</span>
+  </a>`;
 }
 
 /* ---------- Læsevisning ---------- */
@@ -1865,6 +2056,20 @@ indhold.addEventListener("click", e => {
   if (a) aabnLaeser(a);
 });
 
+/* Bjælken bor uden for #indhold, så den kan ligge over Dagens overblik.
+   Derfor har den sin egen tegning og sit eget klik - ellers ville den være
+   det ene sted på forsiden, hvor et klik forlod sitet i stedet for at åbne
+   læseruden. */
+const baelkeEl = document.getElementById("breakingBaelke");
+function tegnBaelke(a) { baelkeEl.innerHTML = breakingHtml(a); }
+baelkeEl.addEventListener("click", e => {
+  const b = e.target.closest(".breaking");
+  if (!b) return;
+  e.preventDefault();
+  const a = artikler.find(x => x.link === b.dataset.link);
+  if (a) aabnLaeser(a);
+});
+
 function kortHtml(a, id, stor = false) {
   return `
   <a class="kort ${stor ? "stor" : ""}" href="${esc(a.link)}" data-link="${esc(a.link)}" style="animation-delay:${Math.min(id * 30, 500)}ms">
@@ -1937,14 +2142,21 @@ function tegn() {
   const note = paaDansk === 0 ? `<div class="note">🔑 AI-omskrivningen er ikke aktiveret endnu — historierne vises på engelsk.
       Tilføj en <code>DEEPSEEK_API_KEY</code>- eller <code>GEMINI_API_KEY</code>-secret i GitHub, så oversætter siden sig selv ved næste opdatering.</div>` : "";
 
+  // Den historie, breaking-bjælken har taget. Den holdes ude af hero og
+  // kortene: to pladser til samme historie er ikke to historier.
+  const breakingA = breakingValg();
+  const uden = breakingA ? liste.filter(a => a !== breakingA) : liste;
+
   // Hero = dagens vigtigste historie. Er der intet fra det seneste døgn,
   // siger etiketten det ærligt i stedet for at kalde en gammel historie "dagens".
   const doegn = Date.now() - 24 * 3600 * 1000;
-  const friske = liste.filter(a => a.rubrik &&
+  const friske = uden.filter(a => a.rubrik &&
     new Date(a.foerst_set || a.dato || 0).getTime() >= doegn);
-  const heroArtikel = friske[0] || liste.find(a => a.rubrik) || liste[0];
+  // Sidste led er ikke pynt: er der kun ÉN historie tilbage, og bjælken har
+  // taget den, er `uden` tom - og uden faldet stod der en tom hero.
+  const heroArtikel = friske[0] || uden.find(a => a.rubrik) || uden[0] || liste[0];
   const heroEtiket = friske.length ? "Dagens historie" : "Største historie lige nu";
-  const rest = liste.filter(a => a !== heroArtikel);
+  const rest = uden.filter(a => a !== heroArtikel);
 
   if (visning === "kompakt") {
     // ---- OVERBLIK: kategori-kolonner med mikrobilleder + tekst ved siden af ----
@@ -1963,6 +2175,10 @@ function tegn() {
         ${grupper.get(k).map(a => mikroHtml(a, id++)).join("")}
       </section>`).join("") + `</div>` + `<div style="margin-top:34px">${ytBaandHtml()}</div>`;
     markerLaesteIDom();
+    tegnBaelke(breakingA);
+    // Overblikket har ingen fremtrædende pladser - alt er mikrolinjer i en
+    // kategorikolonne. Kun bjælken tæller her.
+    taelVisninger([], breakingA);
     return;
   }
 
@@ -1978,6 +2194,11 @@ function tegn() {
     </div>
   </a>`;
 
+  // De fremtrædende pladser i denne omgang - hero og de store kort. Kun de
+  // her tælles som en forsidevisning. Mikrolinjerne og alt bag "Vis flere"
+  // holdes udenfor, ellers er hele arkivet "set" efter to besøg. Bjælken
+  // tælles for sig, se `baandVist`.
+  const vistNu = [heroArtikel];
   let magKrop;
   if (sortering === "vigtigst") {
     const dage = [];
@@ -1993,6 +2214,7 @@ function tegn() {
     // YouTube-båndet lægges ind EFTER dagens første blok: dagens nyheder
     // kommer først, men videoerne skal stadig kunne ses uden at rulle langt.
     const vises = dage.slice(0, synligeDage);
+    vises.forEach(d => d.artikler.slice(0, 4).forEach(a => vistNu.push(a)));
     const resterende = dage.slice(synligeDage).reduce((n, d) => n + d.artikler.length, 0);
     magKrop = vises.map((d, nr) => {
       const store = d.artikler.slice(0, 4);
@@ -2005,12 +2227,15 @@ function tegn() {
     if (resterende) magKrop += `<button class="vis-flere" id="visFlere">Vis flere historier <span>${resterende} tilbage</span></button>`;
   } else {
     const vises = rest.slice(0, synligeFlade);
+    vises.forEach(a => vistNu.push(a));
     magKrop = `<div class="sektion-titel">Seneste historier</div><div class="grid">${vises.map((a, i) => kortHtml(a, i, !!(a.andre && a.andre.length))).join("")}</div>`
             + (rest.length > vises.length
                 ? `<button class="vis-flere" id="visFlere">Vis flere historier <span>${rest.length - vises.length} tilbage</span></button>` : "")
             + ytBaandHtml();
   }
   indhold.innerHTML = note + hero + magKrop;
+  tegnBaelke(breakingA);
+  taelVisninger(vistNu, breakingA);
   const flereKnap = document.getElementById("visFlere");
   if (flereKnap) flereKnap.addEventListener("click", e => {
     e.preventDefault();

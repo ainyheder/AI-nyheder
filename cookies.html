@@ -129,6 +129,18 @@ din egen enhed, og vi har ingen mulighed for at se det. Her er alt, hvad vi læg
       <td>Indtil du sletter. De 800 nyeste beholdes, ældre ryddes selv</td>
     </tr>
     <tr>
+      <td><code>visninger</code></td>
+      <td>Et tal pr. artikel: hvor mange gange den har stået på en fremtrædende plads på forsiden, mens du kiggede</td>
+      <td>Så forsiden roterer og du ikke møder de samme historier øverst besøg efter besøg</td>
+      <td>Indtil du sletter. Rydder selv op, når en artikel falder ud af forsiden</td>
+    </tr>
+    <tr>
+      <td><code>baandVist</code></td>
+      <td>Et tal pr. artikel: hvor mange gange den har stået i den røde breaking-bjælke, mens du kiggede</td>
+      <td>Så bjælken skifter emne for dig, også når du kigger ind flere gange inden for samme time</td>
+      <td>Indtil du sletter. Rydder selv op sammen med <code>visninger</code></td>
+    </tr>
+    <tr>
       <td><code>visning</code></td>
       <td>Om du foretrækker <em>Magasin</em> eller <em>Overblik</em></td>
       <td>Så du ikke skal vælge din visning forfra ved hvert besøg</td>
@@ -246,7 +258,7 @@ til Datatilsynet, hvis du mener, vi behandler oplysninger forkert.</p>
 <script>
 (function () {
   // Alt hvad sitet kan have lagt i local storage. Vi rører intet andet.
-  var FASTE = ["laeste", "visning", "sortering", "sidsteBesoeg"];
+  var FASTE = ["laeste", "visninger", "baandVist", "visning", "sortering", "sidsteBesoeg"];
   var PRAEFIX = ["aikort", "aike"];
 
   function voresNoegler() {
