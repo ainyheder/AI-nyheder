@@ -19,3 +19,11 @@ package-lock.json
 
 # Natsessionens låsefil - kun til at holde de to natlige kørsler fra hinanden
 _redaktion/.nat-koerer
+
+# Andre git-repoer, der er havnet inde i denne mappe. De hører ikke til siden,
+# og de må ALDRIG committes med: `AI-nyheder/` er en klon af præcis dette repo
+# (68 MB, 459 filer) og `WIDU-OS/` er et selvstændigt projekt. Uden de her linjer
+# kan GitHub Desktop tilbyde at committe dem, og så ligger repoet inde i sig selv.
+# Linjerne er en sele, ikke en løsning — begge mapper hører til uden for AI NEWS.
+AI-nyheder/
+WIDU-OS/
