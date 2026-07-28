@@ -171,6 +171,20 @@ h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:20px; marg
 .kgrund:focus { outline:none; border-color:var(--roed); }
 .kgrund.mangler { border-color:var(--roed); background:#fff5f4; }
 
+/* Historik: samme kort som køen, men hele rækken er en knap. Klassen ligger
+   oven på .kpunkt, så listen ikke driver fra køen, når køens look ændres. */
+.hpost { cursor:pointer; width:100%; text-align:left; font:inherit; color:inherit; }
+.hpost:hover { border-color:var(--accent); }
+.hpost .ktitel, .hpost .kdetalje { display:block; }
+.hpost.regnskab { background:var(--accent-svag); border-color:#cfcafb; }
+.hpost.regnskab .knr { background:#fff; color:#4438c9; }
+.hpost.sprang { background:var(--bg); }
+.hpost.sprang .ktitel { font-weight:500; color:var(--svag); }
+.htid { font-family:"JetBrains Mono",monospace; font-size:10.5px; color:var(--svag);
+  flex:none; margin-top:3px; white-space:nowrap; }
+.hslut { color:var(--svag); font-size:13px; margin-top:24px; padding-top:13px;
+  border-top:1px solid var(--linje); }
+
 /* ---- Ønsker: en formular, ikke en tekstfil ---- */
 .oe-top { display:flex; align-items:center; gap:14px; margin-bottom:18px; flex-wrap:wrap; }
 .oe-ny { display:inline-flex; align-items:center; gap:9px; font:inherit; font-size:15px;
@@ -996,7 +1010,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         under: Object.keys(S.hjerner).length + " AI-trin i " + ETAPER.length +
               " etaper · kører hver time", etaper: crawler },
       { id: "S-loop", ikon: "◆", navn: "Arbejdsloopet",
-        under: "Sådan bliver siden bedre — 4 etaper", etaper: loop }
+        under: "Sådan bliver siden bedre — 4 etaper", etaper: loop },
+      { id: "S-historik", ikon: "◷", navn: "Historik",
+        under: historikUnder(), egen: historikHtml }
     ];
   }
 
@@ -1068,6 +1084,12 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         '<div class="net">' + dokHtml(s.enkeltdok) + "</div>";
       return;
     }
+    if (s.egen) {
+      rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
+        '<p class="manchet">Hvad sessionerne har lavet, nyeste først. Én linje pr. ' +
+        "post — klik på den for at læse hele posten.</p>" + s.egen();
+      return;
+    }
     if (s.etaper[0] && s.etaper[0].laesertal) {
       rude.innerHTML = "<h1>" + esc(s.navn) + "</h1>" +
         '<div class="laesfaner" id="laesfaner">' + s.etaper.map(function (e, i) {
@@ -1116,6 +1138,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     if (t) { aabn(t.dataset.n); return; }
     var a = ev.target.closest(".art");
     if (a) { aabnArtikel(Number(a.dataset.art)); return; }
+    var h2 = ev.target.closest(".hpost");
+    if (h2) { aabnHistorik(Number(h2.dataset.h)); return; }
     var d = ev.target.closest(".dok");
     if (d) aabnDok(d.dataset.dok);
   });
@@ -1310,6 +1334,140 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         mdBlok(krop) + "</article>";
     });
     return ud;
+  }
+
+  // ---- Historikken: loggen skimmet i stedet for læst ----
+  // Arbejdsloggen er over 200 KB og skrevet til at blive læst grundigt. Vil man
+  // bare vide, hvad der er sket på det seneste, er den forkert form: man skal
+  // igennem hele posten for at finde ud af, om den overhovedet angår én.
+  // Her står kun dato, rubrik og én linje om, hvad der blev gjort. Klik åbner
+  // hele posten - de samme data, bare ikke alle på én gang.
+  var MDR_HIST = ["januar", "februar", "marts", "april", "maj", "juni",
+                  "juli", "august", "september", "oktober", "november", "december"];
+  var historikCache = null;
+
+  // Trækker ét felt ud af en log-post ("**Gjorde:** ..."). Feltet slutter ved en
+  // tom linje eller ved næste felt - IKKE ved næste linje, for de fleste af dem
+  // er ombrudt over flere, og så ville resuméet stoppe midt i en sætning.
+  function logFelt(krop, navne) {
+    var l = krop.split("\n");
+    for (var i = 0; i < l.length; i++) {
+      var m = l[i].match(/^\*\*([^*:]+):?\*\*\s*(.*)$/);
+      if (!m || navne.indexOf(m[1].trim()) < 0) continue;
+      var buf = [m[2]];
+      for (var j = i + 1; j < l.length && l[j].trim() && !/^\*\*/.test(l[j]); j++) {
+        buf.push(l[j].trim());
+      }
+      return buf.join(" ").replace(/[*`]/g, "").replace(/\s+/g, " ").trim();
+    }
+    return "";
+  }
+
+  function historikPoster() {
+    if (historikCache) return historikCache;
+    var raa = [], nu = null;
+    String(dokTekst("log") || "").replace(/\r/g, "").split("\n").forEach(function (r) {
+      var h = r.match(/^(#{2,3})\s+(.*\S)\s*$/);
+      if (h) { nu = { titel: h[2], krop: [] }; raa.push(nu); return; }
+      if (/^#\s+/.test(r)) return;                       // filens egen H1
+      if (nu) nu.krop.push(r);
+    });
+    historikCache = raa.map(function (p) {
+      // Datoen står forrest i en almindelig post og bagest i et regnskab.
+      // Find den, hvor den end står, og lad resten være rubrikken.
+      var titel = p.titel, iso = "", dato = "", tid = "";
+      var dm = titel.match(/(\d{4})-(\d{2})-(\d{2})/);
+      if (dm) {
+        iso = dm[0];
+        dato = parseInt(dm[3], 10) + ". " + MDR_HIST[parseInt(dm[2], 10) - 1] + " " + dm[1];
+        titel = titel.replace(dm[0], "");
+      }
+      // "(kl. 07:2x, chat)" og "(ekstra kørsel kl. 21:15)" hører til linjens
+      // margen, ikke til rubrikken - de fylder ellers halvdelen af den.
+      // MEN kun dem, der faktisk siger noget om kørslen: en efterprøvning
+      // hedder «Kørekortet er gemt bag nyhederne» (25.07), og dén parentes er
+      // punktets egen dato. Flyttes den ud, ligner den et klokkeslæt.
+      var tm = titel.match(/\(([^)]*)\)/);
+      if (tm && /kl\.|kørsel|kørslen|chat|formiddag|eftermiddag/i.test(tm[1])) {
+        tid = tm[1].replace(/,\s*chat\s*$/, "").trim();
+        titel = titel.replace(tm[0], "");
+      }
+      titel = titel.replace(/\s*·\s*/g, " ").replace(/\s{2,}/g, " ").trim();
+      var krop = p.krop.join("\n").replace(/^\s*-{3,}\s*$/gm, "").trim();
+      // "Gjorde" først: det er dét, spørgsmålet "hvad er der ændret?" handler
+      // om. "Fandt" er begrundelsen og kommer kun frem, når der ikke blev
+      // ændret noget - fx i en efterprøvning.
+      return { iso: iso, dato: dato, tid: tid, krop: krop,
+               titel: titel || "Uden rubrik",
+               regnskab: /regnskab/i.test(p.titel),
+               sprang: /^sprang over/i.test(titel),
+               resume: logFelt(krop, ["Gjorde"]) ||
+                       logFelt(krop, ["Fandt", "Fandt ikke"]) ||
+                       krop.split(/\n\s*\n/)[0].replace(/[*`#>]/g, "")
+                           .replace(/\s+/g, " ").trim() };
+    });
+    return historikCache;
+  }
+
+  // Til menupunktet i siden. Regnskaber og oversprungne kørsler tælles ikke
+  // med: de er ikke ændringer, og tallet skal kunne læses som "så meget er der
+  // sket med siden".
+  function historikUnder() {
+    var p = historikPoster();
+    if (!p.length) return "Ingen poster endnu";
+    var n = p.filter(function (x) { return !x.regnskab && !x.sprang; }).length;
+    var f = p.filter(function (x) { return x.dato; })[0];
+    return n + (n === 1 ? " ændring" : " ændringer") + (f ? " · seneste " + f.dato : "");
+  }
+
+  function historikHtml() {
+    var p = historikPoster();
+    if (!p.length) {
+      return '<div class="ktom">Der står ikke noget i arbejdsloggen endnu. ' +
+             "Den fyldes af sessionerne, efterhånden som de laver noget.</div>";
+    }
+    // Grupperes på dato og ikke på "skiftede datoen?": samme dag kan stå to
+    // steder i filen med et regnskab imellem, og så ville dagen få to
+    // overskrifter med samme tal i.
+    var raek = [], hvor = {};
+    p.forEach(function (x, i) {
+      var n = x.iso || "ukendt";
+      if (hvor[n] === undefined) { hvor[n] = raek.length; raek.push({ dato: x.dato, poster: [] }); }
+      raek[hvor[n]].poster.push({ x: x, i: i });
+    });
+    return raek.map(function (g) {
+      var antal = g.poster.filter(function (o) { return !o.x.regnskab; }).length;
+      return '<div class="kgruppe">' + esc(g.dato || "Uden dato") +
+        (antal ? " — " + antal + (antal === 1 ? " post" : " poster") : "") + "</div>" +
+        g.poster.map(function (o) {
+          var x = o.x;
+          return '<button class="kpunkt hpost' + (x.regnskab ? " regnskab" : "") +
+            (x.sprang ? " sprang" : "") + '" data-h="' + o.i + '">' +
+            '<span class="knr">' + (x.regnskab ? "∑" : x.sprang ? "–" : "✓") + "</span>" +
+            '<span class="ktekst"><span class="ktitel">' + mdTekst(x.titel) + "</span>" +
+            (x.resume ? '<span class="kdetalje">' + esc(x.resume.slice(0, 190)) +
+                        (x.resume.length > 190 ? "…" : "") + "</span>" : "") + "</span>" +
+            (x.tid ? '<span class="htid">' + esc(x.tid) + "</span>" : "") + "</button>";
+        }).join("");
+    }).join("") +
+      '<div class="hslut">Kun de nyeste poster står her — panelet får et klippet ' +
+      "øjebliksbillede, ikke hele filen. Hele historikken ligger i " +
+      "<code>_redaktion/arbejdslog.md</code>.</div>";
+  }
+
+  function aabnHistorik(i) {
+    var x = historikPoster()[i];
+    if (!x) return;
+    modal.innerHTML =
+      '<button class="luk" id="mLuk">✕</button>' +
+      "<h3>" + mdTekst(x.titel) + "</h3>" +
+      '<div class="b">' + esc([x.dato, x.tid].filter(Boolean).join(" · ")) +
+      " · <code>_redaktion/arbejdslog.md</code></div>" +
+      '<div class="laesevis">' + mdBlok(x.krop) + "</div>";
+    modal.classList.remove("bred");   // én post læses bedst i én spalte
+    bag.classList.add("aaben");
+    document.body.style.overflow = "hidden";
+    document.getElementById("mLuk").addEventListener("click", luk);
   }
 
   function dokHtml(k) {
