@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-28T17:25:03.863180+00:00",
+ "opdateret": "2026-07-28T17:49:50.021223+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -1096,7 +1096,7 @@ window.LAESERTAL = {
    "sti": "/artikel/51f6b5a29ea2e2af.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI kan gøre dig 100 gange hurtigere – og give dig stress",
+   "rubrik": "Rick Manelius: AI gør dig 100 gange hurtigere og stresset",
    "kategori": "Forskning",
    "dato": "2026-07-26",
    "henvisere": [
