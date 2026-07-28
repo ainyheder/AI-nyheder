@@ -55,6 +55,53 @@ maskinen, når jeg selv lige har ændret dem.
 
 ---
 
+## 2026-07-28 (kl. 07:2x, chat) · Tre regler skrevet ind i arbejdsinstruksen
+
+Torben spurgte, om der var flere regler at skrive ind, nu hvor det er slået fast,
+at siden ikke har et publikum endnu. Jeg foreslog otte; han valgte tre. De fem
+fravalgte er **ikke** noteret som afvist — de blev ikke drøftet, kun ikke valgt,
+og de står her, så de kan tages op igen: indhent efterprøvnings-efterslæbet,
+pres redaktionens ubesvarede spørgsmål frem i hvert regnskab, byt
+rækkevidderunden ud med "hvad går galt for den første rigtige læser?", sortér på
+pris frem for rammer-tal, og skriv "siden er under opbygning" fast i
+`retning.md`.
+
+**1. Uafhængig gennemgang ved AL kode, ikke kun ved to filer eller flere.**
+Grænsen stod ved "mere end én fil". Dagens ændring lå i **én** fil, var testet
+med 59 grønne påstande, og behøvede efter den gamle regel ingen gennemgang
+overhovedet. Gennemgangen fandt **19 ting fordelt på tre runder** (7, 6 og 6).
+Reglen siger nu også: **bliv ved, indtil en runde ikke finder noget.** Var jeg
+stoppet efter første runde, som reglen lagde op til, var elleve fejl gået med.
+
+**2. Mutationsprøve er nu et krav, ikke en god idé.** Har du skrevet en prøve,
+skal du slette eller vende hver enkelt ændring på skift i en kopi og vise, at
+netop de rigtige påstande går røde. Antallet skrives i loggen. Baggrunden er
+ubehagelig: prøven stod på 59 grønne, 0 røde — og man kunne slette selve
+rettelsen, tømme cache-hvidlisten eller vende en vagt om, **uden at én eneste
+påstand rørte sig**. Fire huller i en prøve, jeg selv mente var grundig. Efter:
+15 mutationer, alle fanget. Reglen kræver også, at prøven køres mod
+`git show HEAD:<fil>` og er rød før, grøn efter.
+
+**3. Læsertallene er ikke længere fase 0's punkt 1.** Live-tjekket er rykket op i
+stedet — det er dét, der fanger en død side, og det er to opslag. Læsertallene
+er nu **én linje** i analysen med et udtrykkeligt forbud mod at bruge tid på at
+lede efter mønstre i dem. Den gamle tekst kaldte dem "den eneste måling, der
+siger noget om, hvorvidt arbejdet rammer nogen"; det holder ikke, når trafikken
+er de to, der bygger siden. Skabelonen i punkt 6 er byttet om, så Live står
+først.
+
+**Rørt:** `_redaktion/arbejdsinstruks.md` (+2.086 tegn), `_redaktion/opgavekoe.md`,
+`_redaktion/arbejdslog.md`. Ingen kode. Nummereringen i fase 0 (1, 2, 3, 4, 4b,
+5, 6) er uændret, og henvisningen "fase 0, punkt 5" i læserækkefølgen peger
+stadig rigtigt — tjekket efter.
+
+**Til redaktionen:** instruksen er din fil, og du redigerer den gennem panelet.
+Læs de tre steder igennem og ret dem, hvis jeg har skrevet dem for hårdt op.
+Særligt mutationskravet koster tid på hver eneste kodeændring — det er det værd
+efter i dag, men det er dig, der betaler for det.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
 Klaret: 1 punkt. Nye i køen: 1.
 Gennemgik: **rækkevidde** — hvor mange døre ind i siden en Google-læser har,

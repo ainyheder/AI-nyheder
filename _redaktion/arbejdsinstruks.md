@@ -145,19 +145,30 @@ om **disken** stadig gyldige, og så springer du punkt 2 over og måler kun det,
 der kan have flyttet sig: hvad crawleren har lavet i mellemtiden, og hvad forrige
 session rørte. Skriv det som `**Siden <klokkeslæt>:** <hvad der har ændret sig>`.
 
-**Punkt 1 og 3 skal du altid igennem, også på den korte tur.** Læsertallene
-skifter, og live-tjekket er hele grunden til, at nogen opdager en død side — det
-er to opslag og tager under et minut.
+**Punkt 1 og 3 skal du altid igennem, også på den korte tur.** Live-tjekket er
+hele grunden til, at nogen opdager en død side — det er to opslag og tager under
+et minut.
 
-**1. Se læsertallene FØRST.** `data/laesertal.json` — før koden, før køen. Hvor
-mange besøg kom der, hvorfra, og **hvilke sider blev faktisk åbnet**? Det er den
-eneste måling, der siger noget om, hvorvidt arbejdet rammer nogen.
+**1. Tjek FØRST, at siden overhovedet svarer.** Hent **`https://ainyheder.com/`
+over nettet**, før du rører noget andet. Repoet er ikke siden: der ligger et push
+og en GitHub Action imellem, og siden har været nede i timevis uden at nogen
+opdagede det, fordi en flettekonflikt kom med i `data/articles.json`. Tjek som
+minimum, at forsiden svarer, at `data/articles.json` på nettet er gyldig JSON, og
+at antallet af artikler ligner det, du tæller på disken i punkt 2. Er der
+forskel, er dét dagens første opgave — alt andet er ligegyldigt, mens siden er i
+stykker.
 
-Grunden til at den står først: loopet kan kun tælle filer, så det finder kun
-filproblemer. Målt 27.07 fik **141 artikelsider tilsammen 2 sidevisninger på syv
-dage** — begge fra nogen, der klikkede fra forsiden, ingen fra Google — mens
-ugens arbejde gik på canonical-tags, dubletter og struktureret data på præcis de
-sider. Der var intet galt med arbejdet. Det ramte bare ingen.
+Kig samtidig i `data/laesertal.json` og skriv **én linje** i analysen: besøg,
+hvorfra, og hvad der blev åbnet. **Ikke mere end én linje, og brug ikke tid på
+at lede efter mønstre i tallene.** Siden er under opbygning, og trafikken er
+redaktionen selv. Tallene er baggrund, ikke et fund — se reglen øverst i
+`## Fravalgt` i opgavekøen, før du skriver et punkt, der hviler på dem.
+
+Det stod anderledes før 28.07: læsertallene var punkt 1 og blev kaldt "den eneste
+måling, der siger noget om, hvorvidt arbejdet rammer nogen". Det holder ikke, når
+der ikke er noget publikum endnu. Målingen kan ikke skelne mellem *en side, ingen
+gider* og *en side på et website, ingen kender* — og hver kørsel brugte tid på at
+læse det samme tal og drage den samme konklusion.
 
 **2. Mål tilstanden selv.** Skriv et lille engangsscript og kør det. Tæl i
 `data/articles.json`, `data/youtube.json`, `artikel/`, `video/` og filerne i
@@ -169,13 +180,8 @@ Hent forsiden og en tilfældig artikelside ind fra **disken** og læs dem. Tal
 fortæller, om noget mangler — ikke om det er godt. Hold det op mod de ti punkter
 i målestokken.
 
-Hent derefter **`https://ainyheder.com/` over nettet** og sammenlign. Repoet er
-ikke siden: der ligger et push og en GitHub Action imellem, og siden har været
-nede i timevis uden at nogen opdagede det, fordi en flettekonflikt kom med i
-`data/articles.json`. Tjek som minimum, at forsiden svarer, at
-`data/articles.json` på nettet er gyldig JSON, og at antallet af artikler ligner
-det, du lige talte på disken. Er der forskel, er dét dagens første opgave — alt
-andet er ligegyldigt, mens siden er i stykker.
+Sammenlign med det, du hentede over nettet i punkt 1. Ser forsiden på disken
+anderledes ud end den, verden får, er dét dagens første opgave.
 
 **4. Tjek sidste kørsels arbejde.** Læs den øverste post i `arbejdslog.md` og
 verificér, at rettelsen holder. Vi har set flere gange, at en rettelse løste
@@ -260,8 +266,8 @@ ikke en rapport:
 
 ```
 # Analyse · <dato og klokkeslæt>
-**Læsere:** <besøg, hvorfra, og hvilke sider der blev åbnet>
 **Live:** <svarer ainyheder.com det samme som repoet?>
+**Læsere:** <én linje: besøg, hvorfra. Ikke en analyse — se punkt 1>
 **Målt:** <de tal, du faktisk kiggede på>
 **Set som læser:** <hvad du lagde mærke til på forsiden og artikelsiden>
 **Sidste kørsels arbejde:** <holder det, eller er der noget efterladt?>
@@ -308,6 +314,24 @@ erstattet af en falsk funktion — test et gyldigt svar, et svar pakket i et arr
 og noget vrøvl. Frontend: jsdom + node med `fetch` mod de rigtige datafiler,
 `timeout 30 node` og `process.exit(0)`. Test både at det virker, og at det fejler pænt.
 
+**Og prøv så prøven. Slet din egen rettelse på skift og se, at den går rød.**
+Tag hver enkelt ting, du har ændret — hver ny linje, hver vagt, hvert felt du
+lagde i en hvidliste — fjern den eller vend den om i en KOPI af filen, kør
+prøven, og skriv ned, hvor mange påstande der blev røde. Bliver ingen røde,
+prøver din prøve ikke den ting. Så er den ikke en prøve, den er en dekoration.
+
+Det er ikke en teoretisk risiko. 28.07 stod prøven på **59 grønne, 0 røde** — og
+man kunne slette selve rettelsen, tømme cache-hvidlisten eller vende en vagt om,
+uden at én eneste påstand rørte sig. **Fire huller**, alle i en prøve, jeg selv
+mente var grundig. Efter mutationsprøven: 15 ændringer prøvet på skift, hver
+eneste fanget af netop de rigtige påstande.
+
+Skriv resultatet i loggen som et tal: *"15 mutationer, alle fanget."* Er der
+mutationer, du bevidst ikke dækker, så skriv hvilke og hvorfor.
+
+Kør også prøven mod `git show HEAD:<fil>` — den skal være **rød før og grøn
+efter**. En prøve, der er grøn mod den gamle kode, prøver ikke rettelsen.
+
 **Rør ikke andet end nødvendigt.** Ingen omskrivning af ting, der virker.
 
 **Kan et punkt ikke lade sig gøre** — manglende adgang, forkert antagelse — så
@@ -350,15 +374,26 @@ Skriv resultatet af den samlede prøve i loggen, også når alt er grønt.
 
 ### Og lad en anden læse det
 
-**Har du rørt mere end én fil, skal en uafhængig gennemgang læse dit arbejde,
-før du logger.** Ikke en ekstra runde af dig selv — en, der ikke har set, hvad du
-tænkte undervejs, og som får ændringerne og målestokken og intet andet.
+**Har du rørt kode overhovedet, skal en uafhængig gennemgang læse dit arbejde,
+før du logger.** Én fil er nok. Én linje er nok. Ikke en ekstra runde af dig selv
+— en, der ikke har set, hvad du tænkte undervejs, og som får ændringerne og
+målestokken og intet andet.
 
-Det her er ikke en formalitet. Det er blevet gjort to gange, frivilligt, og
-**begge gange fandt gennemgangen fem ting, sessionen havde overset** — den ene
-gang fem fejl i koden, den anden gang fem fejl i selve loggen, altså i
-beskrivelsen af arbejde, der ellers var korrekt. Ingen anden enkeltting i loopet
-har den træfsikkerhed.
+Det her er ikke en formalitet, og grænsen stod før ved "mere end én fil". Den
+blev flyttet 28.07 af en grund: den dags ændring lå i **én fil**, den var testet
+med 59 grønne påstande, og efter den gamle regel behøvede den slet ingen
+gennemgang. Gennemgangen fandt **19 ting fordelt på tre runder** — heriblandt at
+selve rettelsen kunne slettes, uden at én eneste påstand blev rød. Tidligere er
+den brugt to gange frivilligt og fandt **fem ting hver gang**: første gang fem
+fejl i koden, anden gang fem fejl i selve loggen, altså i beskrivelsen af
+arbejde, der ellers var korrekt. Ingen anden enkeltting i loopet har den
+træfsikkerhed, og antallet af filer siger intet om, hvor galt det står til.
+
+**Bliv ved, indtil en runde ikke finder noget.** De tre runder 28.07 fandt 7, 6
+og 6 ting. Var jeg stoppet efter den første — som var den, reglen lagde op til —
+var elleve fejl gået med i køleskabet, heriblandt to, der ville have revet
+vinderens egen alt-tekst af og gemt et lånt tidsstempel som en permanent
+sandhed.
 
 Giv den ændringerne (`git diff`), `redaktionens-oejne.md`, og ét spørgsmål:
 *hvad er der galt med det her, som den, der skrev det, ikke kan se?* Ret det,
