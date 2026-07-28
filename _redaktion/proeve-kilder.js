@@ -61,7 +61,7 @@ ondKilder.feeds_fil = JSON.parse(JSON.stringify(KILDER.feeds_fil));
 ondKilder.feeds_fil.feeds[0].navn = 'Wired "AI"';
 const w2 = lavPanel("window.KILDER_STATUS = " + JSON.stringify(ondKilder) + ";");
 
-setTimeout(() => {
+setTimeout(async () => {
   ok("1 ingen JS-fejl i panelet", jsFejl.length === 0, jsFejl.slice(0, 2).join(" | "));
 
   const knap = [...d.querySelectorAll(".side-punkt")].find(b => /Kilder/.test(b.textContent));
@@ -283,6 +283,106 @@ const raekke = (navn) => raekker().find(r => {
       .dispatchEvent(new w4.MouseEvent("click", { bubbles: true }));
     ok("T5 og låses op, når noget er ændret",
        !d4.getElementById("kGem").hasAttribute("disabled"));
+  }
+
+  console.log("== vagten: der skrives aldrig oven i en fil af en anden slags ==");
+  // 28.07 blev feeds.json overskrevet med hjerne-indstillingerne, og crawleren
+  // gik ned. Vagten læser filen, FØR der skrives.
+  {
+    const w6 = lavPanel(kilderJs);
+    const d6 = w6.document;
+    [...d6.querySelectorAll(".side-punkt")].find(b => /Kilder/.test(b.textContent))
+      .dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+    // rør noget, så gem-knappen låses op
+    d6.querySelectorAll("[data-kilde-til]")[0]
+      .dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+
+    function falskHandle(navn, indhold) {
+      let skrevet = null;
+      return {
+        h: {
+          getFile: async () => ({ name: navn, text: async () => indhold }),
+          createWritable: async () => ({
+            write: async (t) => { skrevet = t; },
+            close: async () => {},
+          }),
+        },
+        skrevet: () => skrevet,
+      };
+    }
+
+    // 1) peger på hjerner.json — MÅ IKKE skrives
+    let fh = falskHandle("hjerner.json", JSON.stringify({ kommentar: "x", hjerner: {} }));
+    w6.showSaveFilePicker = async () => fh.h;
+    d6.getElementById("kGem").dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 60));
+    ok("V1 der blev IKKE skrevet i en fil uden 'feeds'", fh.skrevet() === null, String(fh.skrevet()).slice(0, 60));
+    ok("V2 og panelet siger hvorfor, med filnavnet",
+       /hjerner\.json/.test(d6.getElementById("kGemKvit").textContent),
+       d6.getElementById("kGemKvit").textContent);
+    ok("V3 og nævner, hvad filen så indeholder",
+       /kommentar|hjerner/.test(d6.getElementById("kGemKvit").textContent));
+
+    // 2) peger på den rigtige feeds.json — SKAL skrives
+    fh = falskHandle("feeds.json", JSON.stringify({ kommentar: "y", feeds: [{ navn: "A" }] }));
+    w6.showSaveFilePicker = async () => fh.h;
+    d6.getElementById("kGem").dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 60));
+    ok("V4 en rigtig feeds.json bliver skrevet", fh.skrevet() !== null);
+    ok("V5 og indholdet er den redigerede liste",
+       fh.skrevet() && JSON.parse(fh.skrevet()).feeds.length === KILDER.feeds_fil.feeds.length,
+       fh.skrevet() && JSON.parse(fh.skrevet()).feeds.length);
+
+    // 3) en helt tom/ny fil må gerne skrives
+    d6.querySelectorAll("[data-kilde-til]")[1]
+      .dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+    fh = falskHandle("ny.json", "");
+    w6.showSaveFilePicker = async () => fh.h;
+    d6.getElementById("kGem").dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 60));
+    ok("V6 en tom fil må gerne skrives — der er intet at ødelægge", fh.skrevet() !== null);
+  }
+
+  console.log('== "Gem i mappen" (hjerner) — knappen der gjorde skaden ==');
+  {
+    const w7 = lavPanel(kilderJs);
+    const d7 = w7.document;
+    function falsk(navn, indhold) {
+      let skrevet = null, aabnet = 0;
+      return { h: { getFile: async () => ({ name: navn, text: async () => indhold }),
+                    createWritable: async () => ({ write: async t => { skrevet = t; },
+                                                   close: async () => {} }) },
+               skrevet: () => skrevet, aabnet: () => aabnet };
+    }
+    // Ændr noget, så der er noget at gemme
+    const n0 = Object.keys(KILDER ? {} : {});
+    let spurgt = 0;
+    let fh = falsk("feeds.json", JSON.stringify({ kommentar: "x", feeds: [{ navn: "TechCrunch AI" }] }));
+    w7.showSaveFilePicker = async () => { spurgt++; return fh.h; };
+    const gem = d7.getElementById("gem");
+    ok("H1 knappen 'Gem i mappen' findes", !!gem);
+    gem.dispatchEvent(new w7.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 80));
+    ok("H2 hjerne-indstillinger blev IKKE skrevet i feeds.json",
+       fh.skrevet() === null, String(fh.skrevet()).slice(0, 70));
+    ok("H3 knappen siger, at det var den forkerte fil",
+       /Forkert fil/.test(gem.textContent), gem.textContent);
+    ok("H4 og beskeden nævner filnavnet og hvad der stod i den",
+       /feeds\.json/.test(d7.getElementById("bundtekst").textContent) &&
+       /feeds/.test(d7.getElementById("bundtekst").textContent),
+       d7.getElementById("bundtekst").textContent.slice(0, 110));
+
+    // Den huskede fil SKAL være glemt, ellers rammer næste klik samme sted
+    const fh2 = falsk("hjerner.json", JSON.stringify({ kommentar: "y", hjerner: {} }));
+    fh = fh2;
+    w7.showSaveFilePicker = async () => { spurgt++; return fh2.h; };
+    gem.dispatchEvent(new w7.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 80));
+    ok("H5 næste klik spørger igen i stedet for at ramme samme fil", spurgt === 2, spurgt);
+    ok("H6 og en rigtig hjerner.json bliver skrevet", fh2.skrevet() !== null);
+    ok("H7 med hjerne-indholdet",
+       fh2.skrevet() && "hjerner" in JSON.parse(fh2.skrevet()),
+       fh2.skrevet() && Object.keys(JSON.parse(fh2.skrevet())).join(","));
   }
 
   console.log("== panelet siger, HVOR filen skal gemmes ==");

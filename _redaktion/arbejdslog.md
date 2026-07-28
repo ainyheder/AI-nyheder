@@ -417,6 +417,62 @@ nu 0, og der er 0 kort, hvis dag-gruppe ligger mere end ét døgn før udgivelse
 
 ---
 
+## 2026-07-28 (kl. 21:20, chat) · Panelet overskrev feeds.json — crawleren gik ned
+
+**Det her tog siden ned, og det var min fejl.** Kl. 21:13 blev
+`opsaetning/feeds.json` overskrevet med hjerne-indstillingerne, og kørslen kl.
+21:14 døde med `KeyError: 'feeds'` på linje 5317. Ingen nyheder blev hentet,
+før filen var genskabt.
+
+**Fandt:** filen indeholdt `{"kommentar": …, "hjerner": {}}` — altså indholdet
+fra knappen **"Gem i mappen"**, der gemmer hjerne-indstillingerne.
+
+Sådan kunne det ske: fil-vælgeren åbner i den mappe, man sidst gemte i. Efter et
+gem af `feeds.json` fra den nye Kilder-rude stod den i `opsaetning/` — og
+`hjerner.json` findes ikke der, så **den eneste JSON-fil, der var at vælge, var
+`feeds.json`**. Ét klik, og indholdet var byttet om. Værre: hjerne-knappen
+HUSKER filen i `filhandle`, så det ville være sket igen ved hvert eneste klik
+derefter, uden at spørge.
+
+**Fælden fandtes før i dag** — der var bare kun én JSON-knap i panelet, så
+vælgeren stod aldrig det forkerte sted. Jeg lagde den anden ind uden at tænke
+på, at de to deler den samme mappe-hukommelse i browseren.
+
+**Gjort:**
+
+- `opsaetning/feeds.json` genskabt fra `c38881c` (11 kilder). Crawlerens egen
+  indlæsning verificeret: 11 feeds, 11 tændt, 0 slukket.
+- Ny `skrivTrygt(handle, tekst, noegle)` i panelet: **læser filen, FØR der
+  skrives.** Er indholdet gyldig JSON uden den nøgle, vi er ved at skrive
+  (`feeds` henholdsvis `hjerner`), sker der ingenting, og der står hvad filen
+  faktisk indeholder. Et navnetjek alene ville ikke være nok — filen kan hedde
+  hvad som helst, og det er indholdet, der afgør, om den bliver ødelagt.
+- Bruges nu af **begge** JSON-knapper. Bliver hjerne-knappen afvist, **glemmes
+  den huskede fil**, så næste klik spørger igen i stedet for at ramme det samme
+  sted. Beskeden står i bundlinjen, ikke i en `alert()` — panelet kører fra
+  `file://`, hvor en modal dialog blokerer alt andet.
+- En tom eller ulæselig fil må stadig skrives; der er intet at ødelægge.
+
+**Testede:** `proeve-kilder.js` **90 grønne / 0 røde** (var 77). Fem mutationer:
+fjern vagten i kilde-gem (3 røde), gør vagten til et rent navnetjek (3), fjern
+vagten i hjerne-gem (6), og lad den huskede fil blive stående efter en afvisning
+(3). **Den fjerde af dem overlevede den første udgave af prøven** — netop
+hjerne-knappen, der gjorde skaden, var utestet, indtil mutationsprøven sagde
+det.
+
+**Til redaktionen:**
+
+1. **`opsaetning/feeds.json` skal commites og pushes nu.** Den ligger rettet på
+   disken, men Actions kører stadig på den ødelagte udgave i `origin/main`,
+   og hver kørsel fejler indtil pushet.
+2. Kig efter, om der er andre filer, du gemte i det tidsrum. Vagten fanger det
+   fremover, men den var der ikke kl. 21:13.
+3. Der findes ingen `opsaetning/hjerner.json` i repoet. Har du gemt
+   hjerne-indstillinger, ligger de ikke, hvor panelet forventer — det er værd at
+   kigge på ved lejlighed, men det har ikke noget med nedbruddet at gøre.
+
+---
+
 ### Sessionens regnskab · 2026-07-28
 Klaret: 1 punkt. Nye i køen: 1 — begge trukket tilbage igen senere samme dag,
 se posten om loopet nedenfor. Køen står på 5, `## Nyt` på 2.

@@ -329,6 +329,7 @@ table.kilder td.tal b { font-size:17px; }
 .km-fejl { background:#fde8e4; color:#8a2b16; }
 .km-tom { background:#fff2d6; color:#7a5300; }
 .km-ny { background:#e6f0ff; color:#1c4e8a; }
+#bundtekst.advar { color:#8a2b16; font-weight:700; }
 .kilde-slet-forklar:empty { display:none; }
 .kilde-sti { margin-top:12px; font-size:13px; color:var(--svag); max-width:80ch;
   line-height:1.65; }
@@ -1265,6 +1266,44 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     return "opsaetning/feeds.json";
   }
 
+  /* Skriv ALDRIG oven i en fil af en anden slags.
+
+     Det her er ikke en teoretisk risiko. 28.07 kl. 21:13 blev
+     `opsaetning/feeds.json` overskrevet med hjerne-indstillingerne, og
+     crawleren gik ned med `KeyError: 'feeds'` — siden holdt op med at hente
+     nyheder, indtil filen blev genskabt fra git.
+
+     Sådan skete det: fil-vælgeren åbner i den mappe, man sidst gemte i. Efter
+     et gem af `feeds.json` stod den i `opsaetning/`, hvor `hjerner.json` ikke
+     findes — så den eneste JSON-fil, der var at vælge, var `feeds.json`.
+     Ét klik, og indholdet var byttet om. Og fordi hjerne-knappen HUSKER filen,
+     ville det være sket igen ved hvert klik derefter, uden at spørge.
+
+     Derfor: læs, hvad der står i filen, FØR der skrives. Er det gyldig JSON
+     uden den nøgle, vi er ved at skrive, er det en anden fil, og så sker der
+     ingenting. Et navnetjek alene er ikke nok — filen kan hedde hvad som
+     helst, og det er indholdet, der afgør, om den bliver ødelagt. */
+  async function skrivTrygt(handle, tekst, noegle) {
+    try {
+      var f = await handle.getFile();
+      var gammel = await f.text();
+      if (gammel && gammel.trim()) {
+        var o = null;
+        try { o = JSON.parse(gammel); } catch (e) { o = null; }
+        if (o && typeof o === "object" && !Array.isArray(o) &&
+            !Object.prototype.hasOwnProperty.call(o, noegle)) {
+          return "Stop: " + f.name + " indeholder ikke \u201c" + noegle +
+            "\u201d, men \u201c" + Object.keys(o).join(", ") + "\u201d. " +
+            "Det er en anden fil — jeg skriver ikke oven i den.";
+        }
+      }
+    } catch (e) { /* kan ikke læses — så er der intet at ødelægge */ }
+    var w = await handle.createWritable();
+    await w.write(tekst);
+    await w.close();
+    return "";
+  }
+
   function kilderHent() {
     var b = new Blob([JSON.stringify(feedsFil(), null, 2) + "\n"],
                      { type: "application/json" });
@@ -1290,9 +1329,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         suggestedName: "feeds.json",
         types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
       });
-      var w = await h.createWritable();
-      await w.write(tekst);
-      await w.close();
+      var klage = await skrivTrygt(h, tekst, "feeds");
+      if (klage) { sig(klage); return; }
       feedsRoert = false;
       sig("Gemt ✓ — commit og push, så gælder den fra næste kørsel");
       tegnSide();
@@ -2405,9 +2443,23 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
           types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
         });
       }
-      var w = await filhandle.createWritable();
-      await w.write(tekst);
-      await w.close();
+      var klage = await skrivTrygt(filhandle, tekst, "hjerner");
+      if (klage) {
+        // Den huskede fil er den forkerte. Glem den, så næste klik spørger igen
+        // i stedet for at ramme det samme sted.
+        filhandle = null;
+        k.textContent = "Forkert fil — prøv igen";
+        setTimeout(function () { k.textContent = "Gem i mappen"; }, 8000);
+        // IKKE alert(): panelet kører fra file://, og en modal dialog dér
+        // blokerer alt andet. Beskeden skal stå, hvor man kigger i forvejen.
+        var b = document.getElementById("bundtekst");
+        if (b) {
+          b.textContent = klage;
+          b.classList.add("advar");
+          setTimeout(function () { b.classList.remove("advar"); tegn(); }, 12000);
+        }
+        return;
+      }
       kvitter("Gemt ✓ — push nu");
     } catch (fejl) {
       if (fejl && fejl.name === "AbortError") return;   // du fortrød
