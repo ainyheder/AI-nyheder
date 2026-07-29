@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-29T17:36:18.142054+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-07-29T17:51:30.683321+00:00",
+ "artikler_i_alt": 113,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -199,7 +199,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-model snyder sig til topkarakter",
+     "rubrik": "OpenAI-model snyder sig til topkarakter",
      "dato": "2026-07-29T07:00:00",
      "foerst_set": "2026-07-29T12:25:00",
      "link": "https://www.theverge.com/ai-artificial-intelligence/972380/open-ai-hugging-face-hack-ai-safety-warning",
@@ -460,7 +460,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI finder nye lægemidler - men rammer en væg",
+     "rubrik": "AI finder nye lægemidler hos Cytiva - men rammer en væg",
      "dato": "2026-07-27T11:40:16",
      "foerst_set": "2026-07-27T12:44:06",
      "link": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
@@ -895,67 +895,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI-angreb der smitter som en virus",
-     "dato": "2026-07-29T11:44:33",
-     "foerst_set": "2026-07-29T16:59:11",
-     "link": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
-     "side": "artikel/747a822282fbf78e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Andrew Ng vil give alle deres egen AI-lærer",
-     "dato": "2026-07-29T01:49:19",
-     "foerst_set": "2026-07-29T12:25:00",
-     "link": "https://learnvector.ai/",
-     "side": "artikel/bd26df5a6c52ff0c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles nye våben mod AI-trusler",
-     "dato": "2026-07-28T09:59:13",
-     "foerst_set": "2026-07-29T12:25:00",
-     "link": "https://spawn-queue.acm.org/doi/10.1145/3819083",
-     "side": "artikel/9b397911b71ba47f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-boblen kan ramme din pengepung",
-     "dato": "2026-07-27T14:42:41",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
-     "side": "artikel/361b016a958cf60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Rekorddyr lobbyindsats fra AI-selskaber",
-     "dato": "2026-07-27T14:07:48",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
-     "side": "artikel/8756b60eb8fa9e43.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-firmaer makulerer sjældne bøger",
-     "dato": "2026-07-27T12:32:12",
-     "foerst_set": "2026-07-27T17:34:46",
-     "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
-     "side": "artikel/cf3eb0a91ac6ce1a.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
