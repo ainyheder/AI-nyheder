@@ -347,6 +347,7 @@ table.kilder td.tal b { font-size:17px; }
 .kilde-felter label.afkryds { grid-column:1/-1; display:flex; gap:8px;
   align-items:flex-start; font-weight:500; color:inherit; font-size:13.5px; }
 .kilde-kvit { font-size:13px; color:var(--svag); }
+.kilde-hent { margin-top:20px; }
 .kilde-gem { margin-top:26px; padding-top:20px; border-top:1px solid var(--kant); }
 .kilde-overlap { font-size:12.5px; margin-top:4px; color:#7a5300; }
 button.fold { border:0; background:none; cursor:pointer; font:inherit; font-size:13px;
@@ -1098,14 +1099,55 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
      fandtes. */
   var K = window.KILDER_STATUS || null;
   var feedsArb = null, feedsRoert = false;
+  /* `feedsGrundlag` er den udgave, arbejdskopien blev født af. Uden den kan
+     panelet ikke se, at filen på disken er ændret siden — og så skriver et gem
+     den gamle liste tilbage oven i en nyere. Målt 29.07: panelet viste 11
+     kilder, mens `feeds.json` havde 8, fordi crawleren sidst havde kørt to
+     timer før ændringen. Et gem dér ville have genoplivet tre slettede kilder
+     uden et ord. */
+  var feedsGrundlag = null;
 
   function feedsFil() {
     if (!feedsArb) {
       var raa = (K && K.feeds_fil) ? K.feeds_fil : { feeds: [] };
       feedsArb = JSON.parse(JSON.stringify(raa));
       if (!Array.isArray(feedsArb.feeds)) feedsArb.feeds = [];
+      feedsGrundlag = JSON.stringify(feedsArb.feeds);
     }
     return feedsArb;
+  }
+
+  /* Læs den RIGTIGE fil ind. Panelet kan ikke selv hente den — `fetch` mod en
+     lokal fil er blokeret — så det kræver, at du peger på den. Til gengæld er
+     det den eneste måde at være sikker på, at listen her er den, der ligger på
+     disken lige nu. */
+  async function kilderHentFil() {
+    var kvit = document.getElementById("kHentKvit");
+    function sig(t) { if (kvit) kvit.textContent = t; }
+    if (!window.showOpenFilePicker) {
+      sig("Din browser kan ikke åbne filer. Brug Chrome eller Edge.");
+      return;
+    }
+    try {
+      var valgt = await window.showOpenFilePicker({
+        types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
+      });
+      var f = await valgt[0].getFile();
+      var o = JSON.parse(await f.text());
+      if (!o || !Array.isArray(o.feeds)) {
+        sig("Den fil har ingen \u201cfeeds\u201d — er det den rigtige?");
+        return;
+      }
+      feedsArb = o;
+      feedsGrundlag = JSON.stringify(o.feeds);
+      feedsRoert = false;
+      tegn();
+      var k2 = document.getElementById("kHentKvit");
+      if (k2) k2.textContent = "Hentet ind: " + o.feeds.length + " kilder fra " + f.name;
+    } catch (fejl) {
+      if (fejl && fejl.name === "AbortError") return;
+      sig("Kunne ikke læse filen: " + (fejl && fejl.message ? fejl.message : fejl));
+    }
   }
   function kilderUnder() {
     if (!K) return "Kør et crawl, så tallene kommer";
@@ -1230,6 +1272,10 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       '<div class="raekke"><button class="k fyldt" id="knTilfoej">Tilføj kilde</button>' +
       '<span class="kilde-kvit" id="knKvit"></span></div></div>' +
       '<div class="kilde-advarsel kilde-slet-forklar" id="kSletForklar"></div>' +
+      '<div class="raekke kilde-hent"><button class="k" id="kHent">Hent nuværende feeds.json</button>' +
+      '<span class="kilde-kvit" id="kHentKvit">' +
+      "Listen her er crawlerens seneste øjebliksbillede. Har du rettet filen " +
+      "siden, så hent den ind først.</span></div>" +
       '<div class="raekke kilde-gem"><button class="k fyldt" id="kGem"' +
       (feedsRoert ? "" : " disabled") + ">Gem feeds.json</button>" +
       '<span class="kilde-kvit" id="kGemKvit">' +
@@ -1287,7 +1333,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
      uden den nøgle, vi er ved at skrive, er det en anden fil, og så sker der
      ingenting. Et navnetjek alene er ikke nok — filen kan hedde hvad som
      helst, og det er indholdet, der afgør, om den bliver ødelagt. */
-  async function skrivTrygt(handle, tekst, noegle) {
+  async function skrivTrygt(handle, tekst, noegle, grundlag) {
     try {
       var f = await handle.getFile();
       var gammel = await f.text();
@@ -1299,6 +1345,17 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
           return "Stop: " + f.name + " indeholder ikke \u201c" + noegle +
             "\u201d, men \u201c" + Object.keys(o).join(", ") + "\u201d. " +
             "Det er en anden fil — jeg skriver ikke oven i den.";
+        }
+        /* Filen på disken skal være den, listen her blev bygget af. Er den
+           ændret siden — i hånden, fra en anden maskine, eller af dig selv for
+           to timer siden — ville et gem skrive den ældre liste tilbage og
+           slette rettelsen uden et ord. */
+        if (grundlag && o && Array.isArray(o[noegle]) &&
+            JSON.stringify(o[noegle]) !== grundlag) {
+          return "Stop: " + f.name + " er ændret, siden listen her blev hentet " +
+            "(" + o[noegle].length + " i filen mod " + JSON.parse(grundlag).length +
+            " her). Gemmer jeg nu, forsvinder den ændring. Tryk " +
+            "\u201cHent nuv\u00e6rende feeds.json\u201d f\u00f8rst.";
         }
       }
     } catch (e) { /* kan ikke læses — så er der intet at ødelægge */ }
@@ -1333,8 +1390,9 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         suggestedName: "feeds.json",
         types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
       });
-      var klage = await skrivTrygt(h, tekst, "feeds");
+      var klage = await skrivTrygt(h, tekst, "feeds", feedsGrundlag);
       if (klage) { sig(klage); return; }
+      feedsGrundlag = JSON.stringify(fil.feeds);
       feedsRoert = false;
       sig("Gemt ✓ — commit og push, så gælder den fra næste kørsel");
       tegnSide();
@@ -1369,6 +1427,8 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     });
     var g = document.getElementById("kGem");
     if (g) g.addEventListener("click", kilderGem);
+    var hk = document.getElementById("kHent");
+    if (hk) hk.addEventListener("click", kilderHentFil);
   }
 
   function etapeAendret(e) {

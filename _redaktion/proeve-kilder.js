@@ -323,8 +323,10 @@ const raekke = (navn) => raekker().find(r => {
     ok("V3 og nævner, hvad filen så indeholder",
        /kommentar|hjerner/.test(d6.getElementById("kGemKvit").textContent));
 
-    // 2) peger på den rigtige feeds.json — SKAL skrives
-    fh = falskHandle("feeds.json", JSON.stringify({ kommentar: "y", feeds: [{ navn: "A" }] }));
+    // 2) peger på den rigtige feeds.json — SKAL skrives.
+    // Indholdet skal være DET, panelets liste blev bygget af; ellers slår
+    // grundlags-vagten til, og det er en anden prøve (se afsnit N).
+    fh = falskHandle("feeds.json", JSON.stringify({ kommentar: "y", feeds: KILDER.feeds_fil.feeds }));
     w6.showSaveFilePicker = async () => fh.h;
     d6.getElementById("kGem").dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
     await new Promise(r => setTimeout(r, 60));
@@ -333,7 +335,7 @@ const raekke = (navn) => raekker().find(r => {
        fh.skrevet() && JSON.parse(fh.skrevet()).feeds.length === KILDER.feeds_fil.feeds.length,
        fh.skrevet() && JSON.parse(fh.skrevet()).feeds.length);
 
-    // 3) en helt tom/ny fil må gerne skrives
+    // 3) en helt tom/ny fil må gerne skrives — der er intet grundlag at bryde
     d6.querySelectorAll("[data-kilde-til]")[1]
       .dispatchEvent(new w6.MouseEvent("click", { bubbles: true }));
     fh = falskHandle("ny.json", "");
@@ -383,6 +385,46 @@ const raekke = (navn) => raekker().find(r => {
     ok("H7 med hjerne-indholdet",
        fh2.skrevet() && "hjerner" in JSON.parse(fh2.skrevet()),
        fh2.skrevet() && Object.keys(JSON.parse(fh2.skrevet())).join(","));
+  }
+
+  console.log("== filen paa disken er nyere end listen: gem skal NAEGTE ==");
+  {
+    const w9 = lavPanel(kilderJs);
+    const d9 = w9.document;
+    [...d9.querySelectorAll(".side-punkt")].find(b => /Kilder/.test(b.textContent))
+      .dispatchEvent(new w9.MouseEvent("click", { bubbles: true }));
+    ok("N1 der er en knap til at hente den rigtige fil ind", !!d9.getElementById("kHent"));
+    // rør noget, så gem er muligt
+    d9.querySelectorAll("[data-kilde-til]")[0]
+      .dispatchEvent(new w9.MouseEvent("click", { bubbles: true }));
+
+    // Filen på disken har FÆRRE kilder end panelets øjebliksbillede — præcis
+    // situationen 29.07: 8 i filen, 11 i panelet.
+    let skrevet = null;
+    const paaDisken = { kommentar: "x", feeds: KILDER.feeds_fil.feeds.slice(0, 8) };
+    w9.showSaveFilePicker = async () => ({
+      getFile: async () => ({ name: "feeds.json", text: async () => JSON.stringify(paaDisken) }),
+      createWritable: async () => ({ write: async t => { skrevet = t; }, close: async () => {} }),
+    });
+    d9.getElementById("kGem").dispatchEvent(new w9.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 60));
+    ok("N2 der blev IKKE skrevet oven i en nyere fil", skrevet === null, String(skrevet).slice(0, 50));
+    const kv = d9.getElementById("kGemKvit").textContent;
+    ok("N3 og panelet siger, at filen er ændret siden", /ændret, siden/.test(kv), kv.slice(0, 110));
+    ok("N4 med begge tal, så man kan se forskellen",
+       /8 i filen/.test(kv) && new RegExp(KILDER.feeds_fil.feeds.length + " her").test(kv), kv);
+    ok("N5 og henviser til knappen, der løser det", /Hent nuværende/.test(kv), kv.slice(-60));
+
+    // Er filen den samme som grundlaget, skal det gå igennem
+    const same = { kommentar: "x", feeds: KILDER.feeds_fil.feeds };
+    skrevet = null;
+    w9.showSaveFilePicker = async () => ({
+      getFile: async () => ({ name: "feeds.json", text: async () => JSON.stringify(same) }),
+      createWritable: async () => ({ write: async t => { skrevet = t; }, close: async () => {} }),
+    });
+    d9.getElementById("kGem").dispatchEvent(new w9.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 60));
+    ok("N6 en uændret fil bliver skrevet som normalt", skrevet !== null);
   }
 
   console.log("== de to gem-knapper kan ikke forveksles ==");
