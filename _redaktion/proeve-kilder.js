@@ -385,6 +385,36 @@ const raekke = (navn) => raekker().find(r => {
        fh2.skrevet() && Object.keys(JSON.parse(fh2.skrevet())).join(","));
   }
 
+  console.log("== de to gem-knapper kan ikke forveksles ==");
+  {
+    const w8 = lavPanel(kilderJs);
+    const d8 = w8.document;
+    const bund = d8.querySelector(".bund");
+    const gemH = d8.getElementById("gem");
+    ok("B1 hjerne-knappen siger, hvad den gemmer",
+       /hjerner\.json/.test(gemH.textContent), gemH.textContent);
+    ok("B2 den hedder ikke længere bare 'Gem i mappen'",
+       !/^Gem i mappen$/.test(gemH.textContent.trim()), gemH.textContent);
+    // På en anden rude skal bjælken være fremme
+    [...d8.querySelectorAll(".side-punkt")].find(b => /Crawleren/.test(b.textContent))
+      .dispatchEvent(new w8.MouseEvent("click", { bubbles: true }));
+    ok("B3 bundbjælken er fremme på de andre ruder", !bund.hidden);
+    // På Kilder skal den være væk
+    [...d8.querySelectorAll(".side-punkt")].find(b => /Kilder/.test(b.textContent))
+      .dispatchEvent(new w8.MouseEvent("click", { bubbles: true }));
+    ok("B4 bundbjælken er SKJULT i Kilder-ruden", bund.hidden === true, bund.hidden);
+    ok("B5 og Kilder-ruden har sin egen gem-knap", !!d8.getElementById("kGem"));
+    const sti = d8.querySelector(".kilde-sti");
+    ok("B6 teksten peger på den rigtige knap ved navn",
+       /Gem feeds\.json/.test(sti.textContent), sti.textContent.slice(0, 80));
+    ok("B7 og advarer mod knapperne i bunden",
+       /ikke knapperne i bunden/.test(sti.textContent));
+    // og tilbage igen
+    [...d8.querySelectorAll(".side-punkt")].find(b => /Crawleren/.test(b.textContent))
+      .dispatchEvent(new w8.MouseEvent("click", { bubbles: true }));
+    ok("B8 bjælken kommer igen, når man forlader Kilder", !bund.hidden);
+  }
+
   console.log("== panelet siger, HVOR filen skal gemmes ==");
   {
     // Som Torben åbner den: fra selve projektmappen.
@@ -397,17 +427,18 @@ const raekke = (navn) => raekker().find(r => {
     ok("S1 stien står i ruden", !!sti);
     ok("S2 og det er den rigtige, regnet ud af panelets egen placering",
        sti && sti.textContent.includes("/Users/torben/Claude/Projects/AI NEWS/opsaetning/feeds.json"),
-       sti && sti.querySelector("code").textContent);
+       sti && [...sti.querySelectorAll("code")].map(c => c.textContent).join(" | "));
     ok("S3 mellemrummet i mappenavnet er ikke %20",
-       sti && !sti.textContent.includes("%20"), sti && sti.querySelector("code").textContent);
+       sti && !sti.textContent.includes("%20"), sti && sti.textContent.slice(0, 120));
     ok("S4 den siger, at hele filen overskrives", /HELE filen/.test(sti.textContent));
     ok("S5 og hvad man gør, hvis browseren ikke kan vise en gem-dialog",
        /Overførsler/.test(sti.textContent));
     // Åbnes panelet ikke fra en fil, må der stadig stå noget brugbart
     const sti2 = d.querySelector(".kilde-sti");
+    // Find den <code>, der ER stien — der står nu flere i afsnittet.
+    const koder = sti2 ? [...sti2.querySelectorAll("code")].map(c => c.textContent) : [];
     ok("S6 uden filadresse falder den tilbage til den relative sti",
-       sti2 && sti2.querySelector("code").textContent === "opsaetning/feeds.json",
-       sti2 && sti2.querySelector("code").textContent);
+       koder.indexOf("opsaetning/feeds.json") > -1, koder.join(" | "));
   }
 
   console.log("== det, der ville blive gemt ==");

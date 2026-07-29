@@ -369,6 +369,7 @@ button.k, a.k { font:inherit; font-size:14px; font-weight:700; border-radius:999
 button.k:hover, a.k:hover { border-color:var(--accent); color:var(--accent); }
 button.k.fyldt { background:var(--accent); color:#fff; border-color:var(--accent); }
 button.k.fyldt:hover { opacity:.9; color:#fff; }
+.bund[hidden] { display:none; }
 .bund { position:fixed; left:0; right:0; bottom:0; background:#fff; border-top:1px solid var(--linje);
   padding:14px 28px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; box-shadow:0 -4px 20px rgba(25,23,20,.06); }
 .bund .tekst { font-size:13.5px; color:var(--svag); margin-right:auto; }
@@ -467,7 +468,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   <button class="k" id="nulstilAlt">Nulstil alle</button>
   <button class="k" id="kopier">Kopiér JSON</button>
   <button class="k" id="hent">Hent fil</button>
-  <button class="k fyldt" id="gem">Gem i mappen</button>
+  <button class="k fyldt" id="gem">Gem hjerner.json</button>
 </div>
 
 <div class="bag" id="bag"><div class="modal" id="modal"></div></div>
@@ -1235,7 +1236,10 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       (feedsRoert
         ? "Ændringer er ikke gemt endnu"
         : "Intet at gemme endnu") + "</span></div>" +
-      '<div class="kilde-sti">Gem den oven i den fil, der ligger her:<br>' +
+      '<div class="kilde-sti"><b>Brug knappen «Gem feeds.json» her på siden</b> — ' +
+      "ikke knapperne i bunden. Dem har jeg skjult, mens du står her, fordi de " +
+      "gemmer noget helt andet (<code>hjerner.json</code>).<br><br>" +
+      "Filen skal ligge her:<br>" +
       "<code>" + esc(feedsSti()) + "</code><br>" +
       "Browseren foreslår selv navnet <code>feeds.json</code> — naviger ind i " +
       "<code>opsaetning</code> og bekræft, at den må overskrives. Panelet skriver " +
@@ -1477,6 +1481,14 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function tegn() {
     if (!valgt) valgt = "S-crawler";
     tegnSide(); tegnRude();
+    /* Bundbjælken hører til HJERNE-indstillingerne og gemmer `hjerner.json`.
+       Står man i Kilder-ruden, har den intet at gøre dér — og den er farlig:
+       28.07 blev `feeds.json` overskrevet med hjerne-indholdet, fordi den
+       fyldte knap nederst hed "Gem i mappen" og stod lige under en tekst om,
+       hvor `feeds.json` skulle hen. Nu hedder den, hvad den gemmer, og den er
+       helt væk, når det ikke er den, man skal bruge. */
+    var bund = document.querySelector(".bund");
+    if (bund) bund.hidden = (valgt === "S-kilder");
     var n = Object.keys(S.hjerner).filter(erAendret).length +
             Object.keys(dokAendret).filter(dokErAendret).length;
     document.getElementById("bundtekst").textContent = n === 0
@@ -2429,7 +2441,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     var k = this, tekst = json();
     function kvitter(besked) {
       k.textContent = besked;
-      setTimeout(function () { k.textContent = "Gem i mappen"; }, 2200);
+      setTimeout(function () { k.textContent = "Gem hjerner.json"; }, 2200);
     }
     if (!window.showSaveFilePicker) {
       hentFil();
@@ -2449,7 +2461,7 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
         // i stedet for at ramme det samme sted.
         filhandle = null;
         k.textContent = "Forkert fil — prøv igen";
-        setTimeout(function () { k.textContent = "Gem i mappen"; }, 8000);
+        setTimeout(function () { k.textContent = "Gem hjerner.json"; }, 8000);
         // IKKE alert(): panelet kører fra file://, og en modal dialog dér
         // blokerer alt andet. Beskeden skal stå, hvor man kigger i forvejen.
         var b = document.getElementById("bundtekst");
