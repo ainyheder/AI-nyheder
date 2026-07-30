@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · TraceCoder viser, hvor koden kommer fra</title>
+<meta name="description" content="Forskere har udviklet TraceCoder, en AI der forklarer hver linje kode og gemmer dens oprindelse.">
+<link rel="canonical" href="https://ainyheder.com/artikel/90d1763a87d1e1d7.html">
+<meta name="theme-color" content="#f4f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="TraceCoder viser, hvor koden kommer fra">
+<meta property="og:description" content="Forskere har udviklet TraceCoder, en AI der forklarer hver linje kode og gemmer dens oprindelse.">
+<meta property="og:url" content="https://ainyheder.com/artikel/90d1763a87d1e1d7.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "TraceCoder viser, hvor koden kommer fra", "description": "Forskere har udviklet TraceCoder, en AI der forklarer hver linje kode og gemmer dens oprindelse.", "url": "https://ainyheder.com/artikel/90d1763a87d1e1d7.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/90d1763a87d1e1d7.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-07-30T00:00:00-04:00", "articleSection": "Forskning", "isBasedOn": "https://arxiv.org/abs/2607.26307"}</script>
+<style>
+:root { --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
+  --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<main>
+<div class="kicker">Forskning · arXiv cs.AI · 2026-07-30</div>
+<h1>TraceCoder viser, hvor koden kommer fra</h1>
+<p class="manchet">Forskere har udviklet TraceCoder, en AI der forklarer hver linje kode og gemmer dens oprindelse.</p>
+
+<h2>Problem: Sorte bokse</h2>
+<p>Når du beder en AI om at skrive kode, ved du ofte ikke, hvor den har ideerne fra. Det kan føre til fejl eller problemer med ophavsret. Det er som at få et svævende svar uden at kunne tjekke kilden.</p>
+<h2>Løsningen: Sporbar kode</h2>
+<p>Det nye system hedder <strong>TraceCoder</strong>. Det gemmer små bidder af kode med en slags positionsnøgle. Hvis koden giver problemer, kan du se præcis, hvilken del der er brugt. Det gør det lettere at rette fejl og forstå, hvad AI&#x27;en har lavet.</p>
+<h2>Sådan virker det</h2>
+<p>TraceCoder minder om versionsstyring, som programmører bruger i forvejen, men kører automatisk i baggrunden. Hver ændring af koden bliver logget, så du kan spole tilbage og se, hvad der skete. Det gør AI&#x27;en til en gennemsigtig medarbejder.</p>
+
+<div class="boks"><strong>Detaljerne</strong><ul><li>TraceCoder gør det muligt at se, hvilke kodebidder der er genbrugt.</li><li>Systemet bruger versionsstyring med positionsnøgler til at holde styr på ændringer.</li><li>Målet er at gøre AI-genereret kode mere troværdig og brugervenlig.</li><li>Forskningen adresserer problemet med at AI-kode ofte mangler gennemsigtighed.</li><li>Teknologien kan gøre det lettere at opdage og rette fejl i koden.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan stole mere på den kode, AI&#x27;en skriver, fordi du kan se, hvor hver del kommer fra. Det sparer dig for tid og hovedbrud med at løse mystiske fejl.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://arxiv.org/abs/2607.26307" rel="noopener">arXiv cs.AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
