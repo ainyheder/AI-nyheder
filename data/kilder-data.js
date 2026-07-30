@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-29T20:36:36.542450+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-07-30T00:08:52.158521+00:00",
+ "artikler_i_alt": 118,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 2,
+   "i_listen": 18,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Zuckerberg: Personlige AI-agenter om fem år",
+     "dato": "",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+     "side": "",
+     "hvor": "under",
+     "under": "Zuckerberg satser på personlige AI-assistenter"
+    },
+    {
+     "rubrik": "AI-agent brød ind hos Hugging Face",
+     "dato": "",
+     "foerst_set": "2026-07-29T20:36:36",
+     "link": "https://techcrunch.com/2026/07/29/the-hugging-face-ai-break-in-as-told-through-an-increasingly-committed-bear-metaphor/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-model snyder sig til topkarakter"
+    },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
      "dato": "",
@@ -34,11 +52,38 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
-     "rubrik": "AI-agent brød ind hos Hugging Face",
-     "dato": "2026-07-29T19:44:49",
-     "foerst_set": "2026-07-29T20:36:36",
-     "link": "https://techcrunch.com/2026/07/29/the-hugging-face-ai-break-in-as-told-through-an-increasingly-committed-bear-metaphor/",
-     "side": "artikel/101b78fb3cd4957b.html",
+     "rubrik": "Microsoft tjener milliarder på AI-investeringer",
+     "dato": "2026-07-29T22:46:03",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+     "side": "artikel/feca2ec539e2a7da.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta satser stort på AI til virksomheder",
+     "dato": "2026-07-29T22:23:12",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
+     "side": "artikel/c9945336eb04156b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TechCrunch Disrupt 2026 sætter fokus på AI",
+     "dato": "2026-07-29T21:16:39",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/discover-whats-next-for-ai-from-the-saas-reckoning-to-the-agent-security-gap-at-techcrunch-disrupt-2026/",
+     "side": "artikel/0e31e3499c48aed6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Topchef forlader startup – og skifter til OpenAI",
+     "dato": "2026-07-29T21:07:48",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/thinking-machines-co-founder-lilian-weng-left-the-company-citing-health-reasons-then-joined-openai/",
+     "side": "artikel/7802d42c54c42673.html",
      "hvor": "forside",
      "under": ""
     },
@@ -113,36 +158,13 @@ window.KILDER_STATUS = {
      "side": "artikel/cbe29efd99bf8829.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "PJM slukker for datacentre for at undgå strømsvigt",
-     "dato": "2026-07-28T15:42:26",
-     "foerst_set": "2026-07-28T16:19:44",
-     "link": "https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/",
-     "side": "artikel/57b9aa43e3381b70.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fish Audio henter 52 mio. dollars til AI-stemmer",
-     "dato": "2026-07-28T14:00:00",
-     "foerst_set": "2026-07-28T15:18:54",
-     "link": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
-     "side": "artikel/72e62aa28e258fe4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-firma bruger næsten hele kassen på Amazon-skyen",
-     "dato": "2026-07-28T13:19:17",
-     "foerst_set": "2026-07-28T15:18:54",
-     "link": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/",
-     "side": "artikel/4fac336183884ac9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
+    [
+     "The Verge AI",
+     2
+    ],
     [
      "MIT Tech Review AI",
      2
@@ -159,9 +181,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 3,
+   "i_listen": 8,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "xAI sagsøger Minnesota over nudification-app-lov",
+     "dato": "",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
+     "side": "",
+     "hvor": "under",
+     "under": "Musk sagsøger sig vej ud af Grok-krise"
+    },
     {
      "rubrik": "OpenAI afslører: Løbsk AI-agent hackede flere tjenester",
      "dato": "",
@@ -188,6 +219,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "Microsoft samler alle AI-værktøjer i én app",
+     "dato": "2026-07-29T18:17:38",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
+     "side": "artikel/2aaefae5d079feec.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Zuckerberg satser på personlige AI-assistenter",
+     "dato": "2026-07-29T17:48:07",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
+     "side": "artikel/169a6f9c3953f19a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI laver en hel familie af enheder",
@@ -242,39 +291,16 @@ window.KILDER_STATUS = {
      "side": "artikel/39519f6ad210fea5.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Sandbars ring Stream dikterer noter",
-     "dato": "2026-07-28T08:00:00",
-     "foerst_set": "2026-07-28T15:18:54",
-     "link": "https://www.theverge.com/gadgets/971744/smart-ring-ai-gadget-stream-index",
-     "side": "artikel/6c105a22f96046ce.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hugging Face brugt til at klæde folk af",
-     "dato": "2026-07-28T05:07:14",
-     "foerst_set": "2026-07-28T10:15:21",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
-     "side": "artikel/2cb97ade90fb06df.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kinas AI-gave skaber panik i Silicon Valley",
-     "dato": "2026-07-27T12:51:50",
-     "foerst_set": "2026-07-27T17:18:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-impact-us-companies",
-     "side": "artikel/c1fdca1de801e0c2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
+     "TechCrunch AI",
+     2
+    ],
+    [
      "Ars Technica AI",
-     1
+     2
     ],
     [
      "OpenAI Blog",
@@ -307,6 +333,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Anthropics Mythos knækker HAWK-kvantekode",
+     "dato": "2026-07-29T22:07:06",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
+     "side": "artikel/87eb876878a24dff.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "USA forbyder udenlandske robotter: Hvem rammer det?",
@@ -406,21 +441,12 @@ window.KILDER_STATUS = {
      "side": "artikel/77fbfc3bf5b78fea.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "USA vil tvinge AI-firmaer til at installere nødstop",
-     "dato": "2026-07-23T19:08:01",
-     "foerst_set": "2026-07-26T08:47:41",
-     "link": "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/",
-     "side": "artikel/668efd44031df10e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -570,6 +596,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer nyt program til små virksomheder"
     },
     {
+     "rubrik": "To knapper fik GPT-5.6 til at tredoble sin score",
+     "dato": "2026-07-29T15:00:00",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+     "side": "artikel/232de1e55cde77a5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ny GPT-5.6 gør AI både klogere og billigere",
      "dato": "2026-07-29T00:00:00",
      "foerst_set": "2026-07-29T20:36:36",
@@ -665,15 +700,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-22T12:00:00",
      "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
      "side": "artikel/1de8660326e5e2b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "NTT DATA bruger Codex til fejlsøgning på 30 min",
-     "dato": "2026-07-22T00:00:00",
-     "foerst_set": "2026-07-22T00:00:00",
-     "link": "https://openai.com/index/ntt-data",
-     "side": "artikel/0723f553c0b85844.html",
      "hvor": "forside",
      "under": ""
     }
@@ -904,12 +930,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Ny orm spreder sig selv via Word",
+     "dato": "2026-07-29T11:44:33",
+     "foerst_set": "2026-07-29T16:59:11",
+     "link": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+     "side": "artikel/747a822282fbf78e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Andrew Ng starter nyt AI-læringsfirma",
+     "dato": "2026-07-29T01:49:19",
+     "foerst_set": "2026-07-29T12:25:00",
+     "link": "https://learnvector.ai/",
+     "side": "artikel/bd26df5a6c52ff0c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Googles nye våben mod hackerangreb",
+     "dato": "2026-07-28T09:59:13",
+     "foerst_set": "2026-07-29T12:25:00",
+     "link": "https://spawn-queue.acm.org/doi/10.1145/3819083",
+     "side": "artikel/9b397911b71ba47f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "MacRumors: Apple ser AI-boblen briste",
+     "dato": "2026-07-27T14:42:41",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://www.macrumors.com/2026/07/27/ed-zitron-apple-watch-it-burn-ai-bubble-bursts/",
+     "side": "artikel/361b016a958cf60a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-virksomheder bruger rekordstore summer på lobbyarbejde",
+     "dato": "2026-07-27T14:07:48",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://www.ft.com/content/d8a5f95e-3b6d-463a-a848-c9ef8e2394db",
+     "side": "artikel/8756b60eb8fa9e43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-firmaer makulerer sjældne bøger",
+     "dato": "2026-07-27T12:32:12",
+     "foerst_set": "2026-07-27T17:34:46",
+     "link": "https://twitter.com/HedgieMarkets/status/2081534588485296565",
+     "side": "artikel/cf3eb0a91ac6ce1a.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
