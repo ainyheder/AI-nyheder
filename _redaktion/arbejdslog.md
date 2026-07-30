@@ -3878,3 +3878,12 @@ skyen (jsdom mangler lokalt).
 arbejdskopi manglede maskinens "fire overblik"-arbejde fra 28.07. Flettet
 region for region; intet gik tabt. TJEK ALTID friskhed begge veje før
 overskrivning.
+
+**Tilføjelse 30.07 aften:** Torben vil have humor i billederne. Løst UDEN kode:
+ny motiv-instruks ("glimtet i øjet" — højst én lun detalje, aldrig ved
+svindel/ofre/fyringer/misbrug, tvivl falder til alvor) er lagt direkte i
+`_redaktion/hjerner.json` (filen er NY — kun motiv-trinnet er overstyret).
+Evalueringspunkt ligger i `## Nyt`: ti før/efter-billeder om en uge. Ser en
+senere session et humor-motiv i data: det er med vilje, og reglen står i
+hjerner.json — ikke i crawler.py. Fortrydes i panelet med "Tilbage til
+standard" eller ved at slette filen.
