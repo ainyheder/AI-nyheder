@@ -285,7 +285,7 @@ Står navnet ikke i materialet, opfinder du det ALDRIG - så beskriver du i sted
 konkret hvem (fx "Kinesisk techgigant ..." eller "EU-Kommissionen ...").
 
 For hver artikel laver du:
-- "rubrik": fængende dansk overskrift på MAX 9 ord, med navn (se ovenfor).
+- "rubrik": fængende dansk overskrift på MAX 8 ord, med navn (se ovenfor).
   Ingen jargon udover selve navnene. Ingen punktum til sidst.
 - "resume": 1-2 KORTE sætninger på hverdagsdansk. Max 30 ord i alt.
   Resuméet må ALDRIG bare gentage rubrikken med andre ord. Rubrikken siger
@@ -1061,7 +1061,12 @@ Er der ingen meningsfulde tal, SKAL listen være tom.
 
 Svar KUN med ét JSON-objekt:
 {
- "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon. Den skal
+ "rubrik":    fængende dansk overskrift, max 8 ord, ingen jargon. Rubrikken
+              SKAL nævne, hvem historien handler om, ved rigtigt navn
+              (Google, OpenAI, ChatGPT, EU ...) - "kæmpe gigant", "et stort
+              firma" og "en kendt tjeneste" er FORBUDT, når kilden nævner
+              navnet. Står navnet ikke i kilden, så brug det mest konkrete,
+              der ER der ("EU-Kommissionen", "Kinesisk techgigant"). Den skal
               vække ægte nysgerrighed - lov læseren en indsigt, de ikke kan
               regne ud selv - men ALDRIG clickbait, der oversælger,
  "resume":    1-2 korte sætninger (max 30 ord) til oversigten,
@@ -1091,13 +1096,7 @@ Svar KUN med ét JSON-objekt:
  "figurer":   Fra listen KANDIDAT-BILLEDER udvælger du 0-3, der viser
               benchmarks, grafer, tabeller eller andre data - IKKE almindelige
               pressefotos. Returnér dem med en kort dansk billedtekst:
-              [{"url": "...", "tekst": "..."}]. Tom liste hvis ingen er relevante,
- "billedmotiv": Du er også art director: Beskriv i max 25 ord ÉN konkret scene
-              med 1-3 genkendelige genstande, som fortæller PRÆCIS denne
-              histories pointe - så en læser der ser billedet, kan gætte
-              historien. Ingen mennesker, ingen tekst i billedet. Vær specifik
-              ("en flyttekasse fuld af robotarme med prisskilt"), aldrig
-              generisk ("abstrakte former der symboliserer AI").
+              [{"url": "...", "tekst": "..."}]. Tom liste hvis ingen er relevante
 }"""
 
 
@@ -1148,7 +1147,14 @@ det må udgives. Du tjekker KUN disse regler:
 3. NØGLETAL: kun tal med forside-værdi (scores, priser, beløb, hastigheder).
    Årstal, antal forfattere, spilletid og lignende trivia er FORBUDT som
    nøgletal. En tom liste er helt fint.
-4. BETYDNING: står under overskriften "Hvad betyder det for DIG?", så den skal
+4. NAVNE: rubrikken skal nævne, hvem historien handler om, ved rigtigt navn.
+   Afvis "gigant"-omskrivninger ("kæmpe gigant", "et stort selskab", "en kendt
+   tjeneste"), hvis briefets egne sektioner nævner navnet. Nævner heller ikke
+   sektionerne noget navn, er det fint - der var intet at bruge.
+5. TAL: vage sammenligninger som "markant bedre", "betydeligt hurtigere" og
+   "langt billigere" er FORBUDT, hvis briefet ikke ét eneste sted sætter tal
+   på. Står der tal i nøgletal, detaljer eller sektioner, er alt fint.
+6. BETYDNING: står under overskriften "Hvad betyder det for DIG?", så den skal
    svare læseren direkte. Afvis hvis den (a) ikke tiltaler læseren med
    "du/dig/din", (b) er længere end 35 ord, eller (c) taler OM en tredje part
    i stedet for TIL læseren - "For almindelige mennesker betyder det …", "For
@@ -1167,6 +1173,12 @@ def redaktoer_tjek(a: dict) -> dict | None:
     try:
         udkast = {"rubrik": a.get("rubrik"), "resume": a.get("resume_da"),
                   "sektioner": a.get("sektioner"), "noegletal": a.get("noegletal"),
+                  # Regel 5 siger "står der tal i nøgletal, detaljer eller
+                  # sektioner, er alt fint" - så redaktøren SKAL kunne se
+                  # detaljerne. Uden dem ville et brief med tallet i detaljer
+                  # og tom nøgletal-liste blive afvist for et regelbrud, det
+                  # ikke har begået - og omskrivningen koster penge.
+                  "detaljer": a.get("detaljer"),
                   "betydning": a.get("betydning"), "kategori": a.get("kategori")}
         r = parse_json_objekt(hjerne_kald("redaktoer", SYSTEM_REDAKTOER, json.dumps(udkast, ensure_ascii=False), 400))
         if isinstance(r, dict) and "godkendt" in r:
@@ -1380,7 +1392,16 @@ def _anvend_brief(a: dict, r: dict, billeder: list[dict]) -> None:
             a["detaljer"] = [t for t in (_som_tekst(d) for d in r.get("detaljer", [])) if t][:7]
             a["betydning"] = str(r.get("betydning", "")).strip()
             a["pointer"] = [t for t in (_som_tekst(p) for p in r.get("pointer", [])) if t][:4]
-            a["billedmotiv"] = str(r.get("billedmotiv", "")).strip()
+            # Briefet skriver IKKE billedmotiver længere (30.07, redaktionens
+            # beslutning). Der var to art directors: briefets indbyggede felt
+            # og motiv-hjernen - og de drev fra hinanden (briefets udgave
+            # manglede baggrunds-reglen og ville aldrig få humor-instruksen
+            # fra hjerner.json). Nu er motiv-hjernen den eneste: den kører
+            # EFTER briefs i main() og udfylder alle billedkandidater uden
+            # motiv. Feltet ignoreres derfor helt her - også hvis en gammel
+            # prompt-overstyring stadig leverer det. Den gamle linje var oveni
+            # farlig: `a["billedmotiv"] = r.get(...)` TØMTE et eksisterende
+            # motiv, hvis modellen udelod feltet.
 
 
 # ----- Indholdskategorier (AI vælger kategori ud fra indholdet) ----------------
@@ -2544,7 +2565,13 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
                 a["detaljer"] = gammel.get("detaljer", [])
                 a["betydning"] = gammel.get("betydning", "")
                 a["pointer"] = gammel.get("pointer", [])
-                a["billedmotiv"] = gammel.get("billedmotiv", "")
+            # Motivet UDEN for brief-vagten: et kort-egnet `kun_aktuel`-opslag
+            # har aldrig brief/sektioner, men det HAR et motiv og et billede.
+            # Lå motivet kun bag vagten, blev det aldrig læst tilbage - så
+            # opfandt motiv-hjernen et nyt hver kørsel, og forsidens alt-tekst
+            # beskrev en scene, billedet ikke viser.
+            if gammel.get("billedmotiv"):
+                a["billedmotiv"] = gammel["billedmotiv"]
             if gammel.get("billede"):
                 a["billede"] = gammel["billede"]
                 # `laant_billede` følger billedet og kun billedet: forsvinder
@@ -2696,7 +2723,8 @@ SYSTEM_UGE = """Du skriver 'Ugens AI-overblik' for et dansk nyhedssite for
 almindelige mennesker. Du får ugens vigtigste artikler og koger dem ned til
 ét overblik, man kan læse på fem minutter og føle sig HELT opdateret af.
 Skriv levende, letlæst hverdagsdansk. Skriv ALTID "AI" - aldrig "kunstig
-intelligens". Ingen clickbait, ingen floskler.
+intelligens". Nævn virksomheder og produkter ved navn. Ingen clickbait,
+ingen floskler.
 
 Svar KUN med ét JSON-objekt:
 {
@@ -3714,6 +3742,7 @@ Krav:
 - kategori: præcis én af: Hverdag, Job, Økonomi, Skole, Tekst, Kreativt, Sundhed & livet.
 - tekst: selve prompten på dansk (2-6 sætninger) med [firkantede felter] til brugerens egne oplysninger.
 - hvorfor: én kort sætning om, hvad der gør prompten smart.
+- Skriv ALTID "AI" - aldrig "kunstig intelligens".
 - VIGTIGT: Lav noget nyt - undgå emner og vinkler fra titellisten, du får. Aldrig medicinsk/juridisk rådgivning som facit (kun forberedelse til fagfolk).
 
 TÆNK PÅ HVEM DER SKAL BRUGE DEN. En dansker der aldrig har brugt AI før, skal
@@ -3796,6 +3825,7 @@ Du får en nummereret liste af tekster, der er for lange.
 Skriv hver enkelt om til 1-2 sætninger (maks 35 ord): den ENE konsekvens, der
 rammer læserens hverdag, penge eller fremtid. Direkte "du"-sprog. Start aldrig
 med "Det betyder" eller "Denne nyhed". Bevar fakta og tal - opdigt intet.
+Skriv ALTID "AI" - aldrig "kunstig intelligens".
 
 FØR: "Denne udvikling betyder, at der i fremtiden potentielt kan opstå
       situationer, hvor forbrugere oplever ændrede vilkår for de digitale
@@ -4028,7 +4058,7 @@ Skriv rubrik og resumé om, så virksomheden, produktet eller modellen nævnes
 ved rigtigt navn - og BEVAR ellers det enkle, folkelige sprog.
 
 Krav:
-- "rubrik": max 9 ord, navnet med, intet punktum til sidst.
+- "rubrik": max 8 ord, navnet med, intet punktum til sidst.
 - "resume": 1-2 sætninger, max 30 ord, hverdagsdansk, navnet med.
 - Skriv "AI", aldrig "kunstig intelligens".
 - Opdigt ALDRIG navne eller tal. Står navnet ikke i materialet, så find det
@@ -4165,8 +4195,12 @@ BRIEF_FIL = ROOT / "data" / "brief.json"
 SYSTEM_BRIEF = """Du skriver "Det må du ikke misse" til ainyheder.com - fem punkter, en travl dansker vil ærgre sig over ikke at have set.
 Overskriften lover noget. Vælg kun historier, hvor det er sandt - hellere en tør, vigtig historie end en, der lyder stor og ikke er det. Skru ALDRIG op for sproget for at leve op til titlen.
 Du får en nummereret liste over døgnets vigtigste historier (rubrik + resumé).
-Svar KUN med et JSON-array med PRÆCIS 5 objekter: [{"nr": <historiens nummer>, "tekst": "..."}]
+Svar KUN med et JSON-array med op til 5 objekter: [{"nr": <historiens nummer>, "tekst": "..."}]
+Sigt efter 5. Er der færre end 5 reelt FORSKELLIGE historier i materialet, så
+returnér 3 eller 4 - hellere få ægte punkter end 5, hvor to er gentagelser i
+nye ord. Under 3 er der ikke stof til et overblik.
 Krav til tekst: én sætning på letlæst dansk (maks 25 ord), konkret, med tal hvor de findes.
+Skriv ALTID "AI" - aldrig "kunstig intelligens". Nævn virksomheder ved navn.
 Ingen indledninger som "I dag" i hvert punkt - lige på sagen.
 Vælg de 5 vigtigste og mest FORSKELLIGE historier - aldrig to punkter om samme begivenhed."""
 
@@ -4263,7 +4297,11 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
                 link = ""
             if len(tekst) >= 20:
                 punkter.append({"tekst": tekst, "link": link})
-        if len(punkter) < 5:
+        # Prompten tillader FÆRRE end 5 på en stille dag (hellere 3 ægte
+        # punkter end 5 med gentagelser). Koden skal tillade det samme -
+        # ellers kasseres et ærligt 3-punkts svar, blokken skrives aldrig,
+        # og det samme forgæves AI-kald gentages hele skiftet.
+        if len(punkter) < 3:
             print("☀️ Dagens brief: svaret var for tyndt - prøver igen næste kørsel")
             return
         valgte = punkter[:5]
@@ -4296,6 +4334,9 @@ Krav:
 - fork: én sætning, der forklarer det rigtige svar.
 - Byg KUN på det materiale, du får - opdigt aldrig tal eller navne.
 - Spred spørgsmålene over forskellige historier.
+- Skriv ALTID "AI" - aldrig "kunstig intelligens".
+- Spørgsmålet må ALDRIG selv indeholde svaret ("Hvor mange fyrede Oracle?"
+  afslører firmaet, hvis svaret ER Oracle - så spørg om noget andet).
 
 FORRÅD IKKE SVARET. En quiz er ligegyldig, hvis man kan gætte uden at have
 læst med. Derfor:
@@ -4573,8 +4614,8 @@ REGLER FOR HØJDEPUNKTER (det vigtigste)
 
 Svar KUN med ét JSON-objekt:
 {{
- "rubrik":   dansk overskrift til videoen, max 9 ord, ingen clickbait.
-             Sig hvad videoen HANDLER om, ikke hvad kanalen heder,
+ "rubrik":   dansk overskrift til videoen, max 8 ord, ingen clickbait.
+             Sig hvad videoen HANDLER om, ikke hvad kanalen hedder,
  "resume":   2-3 sætninger (max 45 ord): hvad handler videoen om, og hvorfor
              er den værd at bruge tid på,
  "hoejdepunkter": 3-6 punkter, i tidsrækkefølge:
@@ -5305,6 +5346,7 @@ end historien holder.
 
 Krav til alle varianter:
 - Dansk, letlæst, konkret. Nævn virksomheden eller produktet ved navn.
+- Skriv ALTID "AI" - aldrig "kunstig intelligens".
 - Ingen hashtag-tæpper, ingen "🚀 Wow!", ingen "Du vil ikke tro ...".
 - Skriv aldrig at læseren SKAL noget. Fortæl hvad der er sket, og hvorfor det rager dem.
 - Linket sættes på automatisk bagefter - skriv det ikke selv.
@@ -5312,8 +5354,8 @@ Krav til alle varianter:
 Svar KUN med JSON:
 {"kort": "...", "facebook": "...", "linkedin": "..."}
 - "kort": max 240 tegn (Bluesky). Én pointe, skarpt sat.
-- "facebook": 2-4 linjer i hverdagssprog. Må slutte med et ægte spørgsmål.
-- "linkedin": 3-5 linjer, saglig og fagligt nysgerrig tone, til folk der møder AI på jobbet."""
+- "facebook": 2-4 sætninger, max 350 tegn, i hverdagssprog. Må slutte med et ægte spørgsmål.
+- "linkedin": 3-5 sætninger, max 600 tegn, saglig og fagligt nysgerrig tone, til folk der møder AI på jobbet."""
 
 
 def _opslag_log() -> dict:

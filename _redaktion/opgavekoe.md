@@ -41,6 +41,9 @@ Filen har syv lister, og de skal ikke blandes sammen:
 | `## Fravalgt` | Idéer der er sagt nej til, med begrundelse | Nej — og læses før nye skrives |
 | `## Klaret` | Historik | Nej — genåbnes kun med en måling |
 
+- **[KLARET 30.07] Prompterne harmoniseret** — se arbejdsloggen 30.07 aften.
+
+
 Hvert punkt siger, hvilket af de ti punkter i `redaktionens-oejne.md` det handler
 om — og **hvem det rammer**, målt i sidevisninger de sidste syv dage. Uden det tal
 er "det, der rammer flest læsere, kommer først" et gæt, og gættet har været

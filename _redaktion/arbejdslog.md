@@ -3887,3 +3887,33 @@ Evalueringspunkt ligger i `## Nyt`: ti før/efter-billeder om en uge. Ser en
 senere session et humor-motiv i data: det er med vilje, og reglen står i
 hjerner.json — ikke i crawler.py. Fortrydes i panelet med "Tilbage til
 standard" eller ved at slette filen.
+
+---
+
+## 30.07.2026 (aften) · Prompterne læst igennem — tre slags drift rettet
+
+Torben bad om en gennemgang af alle 14 hjerners instrukser. Fundet og rettet
+(to gennemgangsrunder, 5 fund i første, 0 i anden):
+
+- **To art directors → én.** Briefets indbyggede `billedmotiv`-felt var drevet
+  fra motiv-hjernen (manglede baggrunds-reglen, ville aldrig få humor-
+  instruksen fra hjerner.json). Feltet er UDE af brief-prompten, og koden
+  ignorerer det — motiv-hjernen tager nu ALLE motiver. Torbens beslutning.
+- **Rubrik-grænsen er ét tal: 8 ord** (var 9 i omskriv, navngiv og youtube).
+- **Navne-reglen** ("aldrig kæmpe gigant") står nu også i brief, og redaktøren
+  håndhæver den som regel 4. Ny regel 5: vage sammenligninger ("markant
+  bedre") er forbudt, hvis briefet ingen tal har — og redaktøren FÅR nu
+  `detaljer` med i payloaden, så den kan se tallene dér.
+- **"Skriv AI"-reglen** ind i stram, dagens_overblik, quiz, kartotek, opslag.
+- **Dagens overblik må levere 3-4 punkter** på en stille dag — koden kasserede
+  før alt under 5, så et ærligt 3-punkts svar blev smidt væk og kaldet
+  gentaget hele skiftet. Forsiden håndterer det (guard er length < 3).
+- **Cache-hul lukket:** billedmotivet blev kun læst tilbage for brief-artikler;
+  kort-egnede kun_aktuel-opslag fik nyt motiv hver kørsel, og alt-teksten
+  drev fra billedet. Nu læses motivet tilbage uanset.
+- Småting: opslag har målbare længder (240/350/600 tegn), quiz må ikke afsløre
+  svaret i spørgsmålet, "heder"→"hedder".
+
+**Ny prøve:** `proeve-prompter.py` (45 grønne) låser konsistensen: ét rubrik-tal,
+AI-reglen med RETNING i alle læservendte hjerner, én art director, målbare
+længder. 17 mutationer, alle fanget. Gennemgangen skal aldrig gentages i hånden.
