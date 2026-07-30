@@ -4,7 +4,10 @@ const fs = require("fs");
 const path = require("path");
 const { JSDOM, VirtualConsole } = require("jsdom");
 
-const REPO = process.env.PROEVE_REPO || path.join(__dirname, "repo");
+const REPO = process.env.PROEVE_REPO
+  || (fs.existsSync(path.join(__dirname, "repo", "crawler.py"))
+      ? path.join(__dirname, "repo")
+      : path.join(__dirname, ".."));
 let groen = 0, roed = 0;
 const fejl = [];
 function ok(navn, betingelse, ekstra = "") {

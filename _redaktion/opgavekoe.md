@@ -14,6 +14,15 @@ Filen har syv lister, og de skal ikke blandes sammen:
 |---|---|---|
 | `## Kø` | Målte problemer. Hvert punkt har et tal og en dato. | Ja, oppefra og ned |
 | `## Nyt` | Ting siden BØR kunne, men ikke kan. Ikke fejl. | Ja — mindst én om ugen |
+
+- **`hjerner.json` mangler drift-værn ved Gem.** Er filen ændret siden panelet
+  hentede sine tal (anden maskine, håndretning), skriver et gem ændringen ud af
+  verden uden et ord. Et værn blev bygget og trukket tilbage 29.07: det afviste
+  panelets eget andet gem (grundlaget blev ikke genopfrisket) og låste ved en
+  afsluttende linjeskift i en prompt. Rettes det: genopfrisk grundlaget efter
+  hver skrivning, og sammenlign uafhængigt af nøglerækkefølge. Rammer: kun
+  redaktionen (2 personer), men tabet er tavst. Målt: hullet er reelt,
+  fejlscenariet kræver to redigeringssteder.
 | `## Mistanker` | Noget nogen har set, men ikke målt | Først når det er målt |
 | `## Fast gennemgang` | Spørgsmål uden ende, på skift | Når der er plads |
 | `## Venter på redaktionen` | Målt, men kræver en beslutning | Når du har svaret |

@@ -48,7 +48,9 @@ TIMEOUT_SEK = 20
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
-GEMINI_FALLBACK = "gemini-3.5-flash"       # bruges automatisk hvis Lite ikke svarer
+GEMINI_FALLBACK = "gemini-3.6-flash"       # bruges automatisk hvis Lite ikke svarer
+# Var gemini-3.5-flash indtil 29.07. Den er forældet og taget ud af panelets
+# liste - og et sikkerhedsnet, redaktionen får at vide er udgået, er ikke et net.
 DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
@@ -342,7 +344,10 @@ def _hjerner() -> dict:
                 d = json.loads(HJERNER_FIL.read_text(encoding="utf-8"))
                 if isinstance(d.get("hjerner"), dict):
                     _hjerner_cache = d["hjerner"]
-            except (json.JSONDecodeError, OSError) as fejl:
+            except Exception as fejl:
+                # Bredt med vilje: en latin-1-apostrof i filen giver
+                # UnicodeDecodeError, som hverken er JSONDecodeError eller
+                # OSError. Et panel-felt må ikke kunne stoppe avisen.
                 print(f"🧠 ⚠️ hjerner.json kunne ikke læses ({fejl}) "
                       "- kører videre på de indbyggede prompts")
     return _hjerner_cache
@@ -355,23 +360,114 @@ def hjerne_prompt(navn: str, standard: str) -> str:
 
 
 def hjerne_model(navn: str) -> str | None:
-    """Gemini-model for et trin, hvis panelet har valgt en bestemt."""
+    """Modelnavn for et trin, hvis panelet har valgt en bestemt."""
     mo = (_hjerner().get(navn) or {}).get("model")
     return mo.strip() if isinstance(mo, str) and mo.strip() else None
 
 
+# Hvem ejer hvilke modelnavne. Rækkefølgen betyder intet - præfikserne
+# overlapper ikke.
+MODEL_PRAEFIKS = (("deepseek", "deepseek"), ("gemini", "gemini"))
+
+
+def model_udbyder(model: str) -> str:
+    """Hvilken udbyder ejer det modelnavn? Tom streng hvis vi ikke ved det.
+
+    Panelet gemmer et NAVN, ikke en udbyder, så navnet er det eneste, vi har at
+    gå efter. Indtil denne funktion fandtes, sendte `hjerne_kald` ethvert valgt
+    navn til Google: et DeepSeek-navn blev afvist, `except` slugte fejlen, og
+    trinnet kørte videre på den daglige model. Panelet viste altså et valg, der
+    ikke skete - og et valg af en Gemini-model flyttede i praksis trinnet FRA
+    DeepSeek TIL Google uden at sige det.
+
+    Et ukendt navn giver "" og må aldrig gætte sig til en udbyder. Sender vi et
+    navn til den forkerte adresse, får vi en HTTP-fejl, vi selv har lavet."""
+    m = (model or "").strip().lower()
+    for praefiks, udbyder in MODEL_PRAEFIKS:
+        if m.startswith(praefiks):
+            return udbyder
+    return ""
+
+
+def _udbyder_noegle(udbyder: str) -> str:
+    """Nøglen der hører til en udbyder. Tom streng hvis den ikke er sat."""
+    return {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY}.get(udbyder, "")
+
+
+# Modeller, der har svigtet i DENNE kørsel, og hvor mange gange.
+#
+# `brief`-trinnet kaldes én gang pr. artikel og en gang mere, når redaktøren
+# kræver omskrivning - med 250 artikler bliver det op mod 500 forgæves kald og
+# 500 ens advarsler, hvis vi bliver ved med at prøve en model, der ikke svarer.
+# Advarslen skulle gøre faldet tilbage synligt; 500 kopier gør det modsatte.
+#
+# Men vi opgiver IKKE ved første fejl. En timeout eller en 429 er forbigående,
+# og at kassere redaktionens modelvalg for resten af kørslen på grund af ét
+# hikke er for hårdt. Kun de svar, der betyder "den model findes ikke for dig"
+# (400/401/403/404), er endelige - præcis samme skel som `kald_ai` bruger, når
+# den skifter fra Lite til fallback.
+_doede_modeller: set[str] = set()
+_model_fejl: dict[str, int] = {}
+MODEL_FEJL_GRAENSE = 3           # forbigående fejl i træk, før vi opgiver
+_ENDELIGE_KODER = (400, 401, 403, 404)
+
+
+def _er_endelig_fejl(fejl: Exception) -> bool:
+    """Betyder svaret "den model findes ikke for dig" - eller bare "ikke nu"?"""
+    kode = getattr(fejl, "code", None)
+    return isinstance(kode, int) and kode in _ENDELIGE_KODER
+
+
 def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                 max_tokens: int, standard_model: str | None = None) -> str:
-    """Kalder AI'en for ét arbejdstrin. Er der valgt en bestemt Gemini-model
-    til trinnet, bruges den - ellers den daglige udbyder."""
+    """Kalder AI'en for ét arbejdstrin. Er der valgt en bestemt model til
+    trinnet, sendes den til DEN udbyder, der ejer navnet - ellers kører trinnet
+    på den daglige udbyder.
+
+    Hver gang vi falder tilbage til den daglige model, skal det stå i loggen.
+    Et tavst fald er værre end en fejl: panelet bliver ved med at vise valget,
+    og ingen opdager, at det ikke bliver brugt."""
     system = hjerne_prompt(navn, standard_prompt)
     model = hjerne_model(navn) or standard_model
-    if model and GEMINI_KEY:
-        try:
-            return kald_gemini_model(system, bruger, max_tokens, model)
-        except Exception as fejl:
-            print(f"🧠 ⚠️ {navn}: {model} svarede ikke "
-                  f"({type(fejl).__name__}) - bruger den daglige model")
+    if model:
+        udbyder = model_udbyder(model)
+        if model in _doede_modeller:
+            pass                      # sagt én gang, det er rigeligt
+        elif not udbyder:
+            print(f"🧠 ⚠️ {navn}: kender ikke udbyderen bag \"{model}\" "
+                  f"- bruger den daglige model")
+            _doede_modeller.add(model)
+        elif not _udbyder_noegle(udbyder):
+            print(f"🧠 ⚠️ {navn}: {model} kræver en {udbyder.upper()}-nøgle, "
+                  f"og den er ikke sat - bruger den daglige model")
+            _doede_modeller.add(model)
+        else:
+            try:
+                svar = (kald_deepseek_model(system, bruger, max_tokens, model)
+                        if udbyder == "deepseek"
+                        else kald_gemini_model(system, bruger, max_tokens, model))
+                _model_fejl.pop(model, None)     # rækken er brudt
+                return svar
+            except Exception as fejl:
+                # Fejl i TRÆK. Tælles der sammen hen over hele kørslen, ville tre
+                # spredte timeouts blandt 500 lykkede kald kaste redaktionens valg
+                # væk - og loggen ville påstå "fejlede 3 gange i træk", hvilket
+                # ikke er sandt.
+                _model_fejl[model] = _model_fejl.get(model, 0) + 1
+                antal = _model_fejl[model]
+                endelig = _er_endelig_fejl(fejl)
+                if endelig or antal >= MODEL_FEJL_GRAENSE:
+                    _doede_modeller.add(model)
+                    hvorfor = ("afviste os" if endelig
+                               else f"fejlede {antal} gange i træk")
+                    print(f"🧠 ⚠️ {navn}: {model} {hvorfor} "
+                          f"({type(fejl).__name__}) - RESTEN AF KØRSLEN "
+                          f"bruger den daglige model")
+                else:
+                    print(f"🧠 ⚠️ {navn}: {model} svarede ikke "
+                          f"({type(fejl).__name__}, {antal}/"
+                          f"{MODEL_FEJL_GRAENSE}) - dette trin bruger "
+                          f"den daglige model")
     return kald_ai(system, bruger, max_tokens)
 
 
@@ -397,7 +493,8 @@ ARBEJDS_DOKUMENTER = [
 ]
 
 
-def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
+def _klip_ved_sektion(tekst: str, maks: int = 30000,
+                      fil: str = "arbejdslog.md") -> str:
     """Klipper en lang log, uden at efterlade en halv indgang.
 
     Nat-loggen vokser med en nat om dagen og er allerede over 50 KB. Panelet
@@ -428,23 +525,60 @@ def _klip_ved_sektion(tekst: str, maks: int = 30000) -> str:
     graense = skaaret.rfind("\n---\n")
     if graense > slut // 3:
         skaaret = skaaret[:graense]
+    # Navngiv den RIGTIGE fil. Teksten stod før fast på arbejdslog.md, men
+    # funktionen klipper også analyse-seneste.md - og en henvisning til den
+    # forkerte fil sender redaktionen ud at lede det forkerte sted.
     return (skaaret.rstrip() + "\n\n---\n\n*Ældre indgange er klippet fra her. "
-            "Hele historikken står i `_redaktion/arbejdslog.md`.*\n")
+            f"Hele historikken står i `_redaktion/{fil}`.*\n")
 
 
 def _arbejdsloop_status() -> list:
     ud = []
     for noegle, fil, navn, besk, kan_rettes in ARBEJDS_DOKUMENTER:
+        # Dokumentets EGEN art, før en fremføring evt. låser det. Klippet
+        # nedenfor følger arten, ikke låsen: et fremført, redigerbart dokument
+        # er den eneste udgave, systemet har, mens filen er ulæselig -
+        # klippede vi den, ville alt over grænsen være væk for altid, hvis
+        # filen viser sig at være rigtigt tabt.
+        egen_art = kan_rettes
         sti = ROOT / "_redaktion" / fil
         try:
             indhold = sti.read_text(encoding="utf-8")
-        except OSError:
+        except Exception as fejl:
+            # IKKE kun OSError. En enkelt Windows-1252-apostrof i et af de her
+            # dokumenter giver UnicodeDecodeError, og den er en ValueError. Så
+            # længe funktionen kun kørte lokalt, var det en irritation; nu kører
+            # den som noget af det første i hver kørsel på GitHubs servere, og
+            # dér ville den have væltet hele avisen for et panel-felt.
+            print(f"🧠 ⚠️ kunne ikke læse {fil}: {type(fejl).__name__}")
             indhold = ""
+            laest = False
+        else:
+            laest = True
+            if not indhold:
+                print(f"🧠 ⚠️ {fil} findes, men er tom")
+        # Kunne dokumentet ikke læses, men stod der tekst i den forrige status,
+        # så bær den frem. Panelet er eneste sted, teksten kan redigeres, og et
+        # tryk på Gem oven på et tomt felt skriver det tomme ned på disken.
+        # Det er derfor bedre at vise gammel tekst end ingen.
+        if not laest:
+            gammel = _gammel_arbejdsloop().get(noegle) or ""
+            if gammel:
+                print(f"🧠 ⚠️ bruger den forrige udgave af {fil} "
+                      f"({len(gammel)} tegn) i panelet")
+                indhold = gammel
+                # Og LÅS den. Vi kunne ikke læse filen på disken, så vi ved ikke,
+                # hvad der står i den nu. Kunne redaktionen redigere den fremførte
+                # tekst og trykke Gem, ville panelet skrive en gammel udgave oven
+                # i en fil, der måske bare var midlertidigt utilgængelig.
+                kan_rettes = False
+                besk = (besk + " KAN IKKE RETTES NU: filen kunne ikke læses ved "
+                        "denne kørsel, så det her er den forrige udgave.")
         ud.append({"noegle": noegle, "fil": fil, "navn": navn,
                    "beskrivelse": besk, "kan_rettes": kan_rettes,
                    "findes": bool(indhold),
                    # loggen kan blive lang - panelet skal kun vise de nyeste
-                   "indhold": indhold if kan_rettes else _klip_ved_sektion(indhold)})
+                   "indhold": indhold if egen_art else _klip_ved_sektion(indhold, fil=fil)})
     return ud
 
 
@@ -467,24 +601,63 @@ def skriv_hjerne_status() -> None:
     og arbejdsloopets dokumenter. Skrives både som JSON og som en JS-fil, så
     panelet kan åbnes direkte fra mappen uden en webserver.
 
-    KUN LOKALT. På GitHubs servere springes det over med vilje: filerne
-    genskrives ved hver kørsel, og skriver både robotten og os i dem, giver
-    det en merge-konflikt hver gang. Én skribent, ingen konflikter. Indholdet
-    ændrer sig alligevel kun, når VI ændrer en prompt eller en model."""
-    if os.environ.get("GITHUB_ACTIONS"):
-        return
+    SKRIVES PÅ HVER KØRSEL, også på GitHubs servere. Det stod før kun lokalt,
+    af frygt for merge-konflikter - men crawleren er ENESTE skribent af de her
+    to filer (panelet skriver `_redaktion/hjerner.json`, en anden fil), så der
+    er ingen at støde sammen med. Samme begrundelse som `kilder.json`.
+
+    Spærringen kostede dyrt: nøglerne findes kun på GitHubs servere, så filen
+    på siden var altid fra sidste LOKALE kørsel - typisk uden nøgler. Så stod
+    der `udbyder: ingen` og et Gemini-navn på alle 14 kort, mens produktionen
+    kørte hvert eneste trin på DeepSeek. Panelet viste ikke gamle tal; det
+    viste tal fra en maskine, der ikke laver avisen.
+
+    MÅ ALDRIG VÆLTE ET CRAWL. Funktionen er noget af det første, `main()` gør,
+    og den skriver kun felter til et panel. Går den i stykker, skal avisen
+    udkomme alligevel."""
+    try:
+        _skriv_hjerne_status()
+    except Exception as fejl:
+        print(f"🧠 ⚠️ kunne ikke skrive hjerne-status: "
+              f"{type(fejl).__name__}: {fejl}")
+
+
+def _skriv_hjerne_status() -> None:
     daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else GEMINI_MODEL
     std = _standard_prompts()
+
+    def trin_udbyder(navn: str) -> str:
+        """Hvem trinnet reelt kalder. Har trinnet en egen model, afgør NAVNET
+        det. Ellers er det den daglige udbyder - og er der ingen nøgler, er der
+        ingen udbyder. Stod der `model_udbyder(daglig)` her, ville en kørsel
+        uden nøgler skrive "gemini" på alle 14 trin, fordi `daglig` falder
+        tilbage til Gemini-navnet. Det er præcis den løgn, filen skulle rydde
+        op i."""
+        egen = hjerne_model(navn)
+        if egen:
+            u = model_udbyder(egen)
+            # Kun hvis valget faktisk KAN bruges. Mangler nøglen til den
+            # udbyder, springes valget over, og kaldet går til den daglige -
+            # og så skal feltet sige det, ikke navnet på et valg, der aldrig
+            # bliver brugt.
+            if u and _udbyder_noegle(u):
+                return u
+        return UDBYDER or ""
+
     status = {
         "opdateret": datetime.now(timezone.utc).isoformat(),
         "daglig_model": daglig,
         "udbyder": UDBYDER or "ingen",
         "billedmodel": BILLED_MODEL if GEMINI_KEY else "ingen",
         "gemini_tilgaengelig": bool(GEMINI_KEY),
+        "deepseek_tilgaengelig": bool(DEEPSEEK_KEY),
         "hjerner": {
             navn: {
                 "beskrivelse": besk,
                 "model": hjerne_model(navn) or daglig,
+                # Hvem kaldet faktisk går til. Uden det felt kan panelet ikke
+                # vise, at et trin er flyttet til en anden udbyder end resten.
+                "udbyder": trin_udbyder(navn),
                 "egen_model": bool(hjerne_model(navn)),
                 "egen_prompt": bool((_hjerner().get(navn) or {}).get("prompt")),
                 "standard_prompt": std.get(navn, ""),
@@ -493,6 +666,17 @@ def skriv_hjerne_status() -> None:
         },
         "arbejdsloop": _arbejdsloop_status(),
     }
+    # Sidste værn. `_arbejdsloop_status` bærer hvert enkelt dokument frem fra
+    # den forrige status, hvis det ikke kunne læses - men kan vi hverken læse
+    # dokumenterne NU eller finde dem i den forrige status, mens den forrige
+    # status havde tekst, er noget galt nok til at lade filen være.
+    gammel = _gammel_arbejdsloop()
+    if (not any(d["findes"] for d in status["arbejdsloop"])
+            and any(gammel.values())):
+        print("🧠 ⚠️ ingen af arbejdsloopets dokumenter kunne læses "
+              "- beholder den forrige hjerne-status")
+        return
+
     HJERNER_STATUS.parent.mkdir(exist_ok=True)
     HJERNER_STATUS.write_text(json.dumps(status, ensure_ascii=False, indent=2),
                               encoding="utf-8")
@@ -502,6 +686,33 @@ def skriv_hjerne_status() -> None:
         "window.HJERNE_STATUS = "
         + json.dumps(status, ensure_ascii=False, indent=1) + ";\n",
         encoding="utf-8")
+
+
+_gammel_loop_cache: dict | None = None
+
+
+def _gammel_arbejdsloop() -> dict:
+    """Arbejdsloopets tekst fra den FORRIGE status. noegle -> indhold.
+
+    Læses fra `hjerne-data.js`, IKKE fra `hjerner-status.json`. JSON-udgaven
+    ligger ikke i git - den blev heller aldrig skrevet på GitHubs servere, før
+    spærringen blev fjernet - så på et frisk checkout findes den ikke. JS-filen
+    er den, workflow'en committer, og den, panelet læser. Læste vi den forkerte,
+    ville værnet aldrig gå i gang der, hvor det skal."""
+    global _gammel_loop_cache
+    if _gammel_loop_cache is not None:
+        return _gammel_loop_cache
+    _gammel_loop_cache = {}
+    js = HJERNER_STATUS.parent / "hjerne-data.js"
+    try:
+        tekst = js.read_text(encoding="utf-8")
+        raa = tekst.split("=", 1)[1].strip().rstrip(";").strip()
+        for d in json.loads(raa).get("arbejdsloop") or []:
+            if isinstance(d, dict) and d.get("noegle") and d.get("indhold"):
+                _gammel_loop_cache[d["noegle"]] = d["indhold"]
+    except Exception:
+        pass                       # ingen forrige status - helt normalt i et nyt repo
+    return _gammel_loop_cache
 
 
 def _aktive_feeds(alle: list) -> tuple[list, list]:
@@ -709,11 +920,41 @@ def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
         "contents": [{"role": "user", "parts": [{"text": bruger_tekst}]}],
         "generationConfig": {"maxOutputTokens": max_tokens},
     }).encode()
+    # Samme fartgrænse-værn som `kald_ai`. Uden den kunne et trin med en egen
+    # Gemini-model banke op mod 500 kald igennem pr. kørsel uden pause, og den
+    # første 429 ville kaste redaktionens valg væk for resten af kørslen.
+    time.sleep(GEMINI_PAUSE_SEK)
     svar = hent_url(
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         data=body, headers={"x-goog-api-key": GEMINI_KEY,
                             "content-type": "application/json"})
     return json.loads(svar)["candidates"][0]["content"]["parts"][0]["text"]
+
+
+def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
+                        model: str) -> str:
+    """Kalder en BESTEMT DeepSeek-model. Samme krop som det daglige kald, men
+    modelnavnet kommer udefra, så panelet kan løfte ét enkelt trin op i klasse
+    uden at flytte hele siden. Ingen fallback: virker modellen ikke, skal vi
+    vide det.
+
+    Bemærk `DEEPSEEK_KEY` og ikke `API_KEY`: kører siden til daglig på Gemini,
+    er `API_KEY` Googles nøgle, og så ville vi sende den til DeepSeek."""
+    if not DEEPSEEK_KEY:
+        raise RuntimeError("DEEPSEEK_API_KEY mangler")
+    body = json.dumps({
+        "model": model,
+        "messages": [{"role": "system", "content": system},
+                     {"role": "user", "content": bruger_tekst}],
+        "max_tokens": max_tokens,
+        "thinking": {"type": "disabled"},
+        "stream": False,
+    }).encode()
+    svar = hent_url(DEEPSEEK_URL, data=body, headers={
+        "Authorization": f"Bearer {DEEPSEEK_KEY}",
+        "content-type": "application/json",
+    })
+    return json.loads(svar)["choices"][0]["message"]["content"]
 
 
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:

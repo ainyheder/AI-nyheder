@@ -3833,3 +3833,48 @@ Fordelingen, så du ved, hvad du pusher: 102 sider i `artikel/`, plus `crawler.p
 `opsaetning/opgrader-gamle-artikelsider.py`.
 
 `data/`, `video/` og `.github/workflows/` er urørt.
+
+---
+
+## 30.07.2026 · DeepSeek-modelvalg og et sandfærdigt panel
+
+**Udgangspunkt:** Torben spurgte, om DeepSeek ikke var i projektet — panelet
+viste Gemini på alle 14 kort. Kørsel #164 beviste: produktionen kører
+`deepseek-v4-flash` på ALT tekstarbejde. Panelet løj, fordi hjerne-status kun
+blev skrevet lokalt (uden nøgler), aldrig på Actions (med nøgler).
+
+**Lavet (fem gennemgangsrunder, 16 fund undervejs, alle rettet eller trukket tilbage):**
+- `hjerne_kald` fordeler nu efter modelNAVN: DeepSeek-navne til DeepSeek
+  (`kald_deepseek_model`, egen nøgle, tænkning slået fra), Gemini-navne til
+  Google. Ukendt navn/manglende nøgle siges højt — aldrig et tavst fald.
+- Forbigående fejl: 3 forsøg i træk før modellen opgives for kørslen;
+  400/401/403/404 opgives straks. Rækken nulstilles ved succes.
+- `skriv_hjerne_status` skrives nu på HVER kørsel, også Actions, og kan aldrig
+  vælte et crawl. Nye felter: `deepseek_tilgaengelig`, `udbyder` pr. trin.
+- Ulæselige arbejdsloop-dokumenter bæres frem fra forrige status, LÅSES i
+  panelet (også ad ønske-/kø-bagvejene) og klippes ikke.
+- Panelets modelliste: `deepseek-v4-flash` + `deepseek-v4-pro` ind;
+  `gemini-3.5-flash` og `gemini-3.1-flash-lite` UD (forældede, Torbens
+  beslutning). `GEMINI_FALLBACK` fulgte med op til 3.6. Et gemt, udgået navn
+  vises som "udgået" i stedet for at blive slettet ved næste gem.
+- Note under vælgeren siger, hvad valget reelt betyder (flytter udbyder /
+  springes over / ingen daglig model tilbage).
+
+**Priser målt på vores egne tal:** tekst koster ~$0,49/md på V4 Flash. V4 Pro
+ville koste ~$1,51 — 8 AA-point op for ca. en dollar. Billederne (~$21/md,
+Gemini) er 98 % af regningen; DeepSeek har intet billed-API, så den del kan
+ikke flyttes dertil.
+
+**Kendt hul (bevidst åbent):** `hjerner.json` har ingen drift-kontrol ved Gem —
+et værn blev bygget og trukket tilbage igen, fordi det afviste panelets eget
+andet gem. Står som kommentar i koden ved gem-knappen.
+
+**Prøver:** proeve-modelvalg.py (74) + proeve-modelvalg.js (57) nye; 52+
+mutationer, alle fanget. proeve-kilder.py gjort datauafhængig efter IndexError
+(hårdkodede kildenavne). Alle Python-prøver grønne på maskinen; JS grønne i
+skyen (jsdom mangler lokalt).
+
+**Værd at vide:** `device_stage_files` gav igen en forældet kopi — og min
+arbejdskopi manglede maskinens "fire overblik"-arbejde fra 28.07. Flettet
+region for region; intet gik tabt. TJEK ALTID friskhed begge veje før
+overskrivning.

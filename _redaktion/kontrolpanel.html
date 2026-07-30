@@ -501,19 +501,74 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     "Målt " + new Date(S.opdateret).toLocaleString("da-DK") +
     " · daglig model: " + S.daglig_model;
 
-  if (!S.gemini_tilgaengelig) {
+  // Hvilke nøgler findes. Ældre datafiler har ikke feltet for DeepSeek — dér
+  // ved vi det ikke, og så er det bedre at tie end at advare i blinde.
+  var HAR = { gemini: !!S.gemini_tilgaengelig, deepseek: !!S.deepseek_tilgaengelig };
+  var VED_DEEPSEEK = ("deepseek_tilgaengelig" in S);
+  var mangler = [];
+  if (!HAR.gemini) mangler.push(["Google", "Gemini"]);
+  if (VED_DEEPSEEK && !HAR.deepseek) mangler.push(["DeepSeek", "DeepSeek"]);
+  if (mangler.length) {
     adv.hidden = false;
-    adv.innerHTML = "<strong>Ingen Google-nøgle sat.</strong> Vælger du en Gemini-model " +
-      "til et trin, bliver den ignoreret, og trinnet kører videre på den daglige model.";
+    adv.innerHTML = mangler.map(function (m) {
+      var daglig_ude = daglig_er_ude();
+      return "<strong>Ingen " + m[0] + "-nøgle sat.</strong> Vælger du en " +
+        m[1] + "-model til et trin, bliver den ignoreret, og trinnet " +
+        (daglig_ude
+          ? "bliver sprunget over — der er ingen daglig model at falde tilbage på."
+          : "kører videre på den daglige model, " + esc(S.daglig_model) + ".");
+    }).join("<br><br>");
   }
 
+  // Kun modeller, der er i drift. 3.5 Flash og 3.1 Flash Lite er taget ud:
+  // forældede, og en rulleliste med udgåede navne inviterer til at vælge dem.
+  // Prisen står på hver linje, fordi valget her flytter penge — et Gemini-valg
+  // på en side, der kører DeepSeek, er en opgradering i pris, ikke bare i model.
   var MODELLER = [
     ["", "Brug den daglige model (" + S.daglig_model + ")"],
-    ["gemini-3.6-flash", "Gemini 3.6 Flash — klogest, dyrest"],
-    ["gemini-3.5-flash", "Gemini 3.5 Flash — midt imellem"],
-    ["gemini-3.5-flash-lite", "Gemini 3.5 Flash Lite — billigst, hurtigst"],
-    ["gemini-3.1-flash-lite", "Gemini 3.1 Flash Lite — forrige generation"]
+    ["deepseek-v4-flash", "DeepSeek V4 Flash — billigst ($0,14/$0,28)"],
+    ["deepseek-v4-pro", "DeepSeek V4 Pro — klogere, stadig billig ($0,44/$0,87)"],
+    ["gemini-3.6-flash", "Gemini 3.6 Flash — Googles klogeste, dyrest"],
+    ["gemini-3.5-flash-lite", "Gemini 3.5 Flash Lite — Googles billigste ($0,30/$2,50)"]
   ];
+  // Ved vi, at der IKKE er nogen nøgle til en udbyder? Mangler feltet i en
+  // gammel datafil, ved vi det ikke — og "ved det ikke" må ikke blive "nej".
+  // Første udgave af det her tjek læste et manglende felt som en manglende
+  // nøgle, og så påstod panelet, at hele siden var sat ud, mens den kørte fint.
+  function noegle_mangler_sikkert(u) {
+    // `udbyder: "ingen"` skriver crawleren kun, når UDBYDER er tom — og det
+    // sker kun, hvis HVERKEN Gemini- eller DeepSeek-nøglen er sat. Så ved vi
+    // det for begge, også når det nyere felt mangler i en gammel datafil.
+    if (S.udbyder === "ingen") return true;
+    if (u === "gemini") return !HAR.gemini;
+    if (u === "deepseek") return VED_DEEPSEEK && !HAR.deepseek;
+    return false;
+  }
+  // Er der ingen daglig model at falde tilbage på? `udbyder: "ingen"` skriver
+  // crawleren selv, når der slet ikke er nøgler, og det felt har altid været i
+  // filen — derfor er det det, vi stoler mest på.
+  function daglig_er_ude() {
+    return S.udbyder === "ingen" || noegle_mangler_sikkert(modelUdbyder(S.daglig_model));
+  }
+  // Samme regel som crawlerens `model_udbyder`: navnet afgør, hvem der kaldes.
+  function modelUdbyder(m) {
+    m = String(m || "").trim().toLowerCase();
+    if (m.indexOf("deepseek") === 0) return "deepseek";
+    if (m.indexOf("gemini") === 0) return "gemini";
+    return "";
+  }
+
+  // Listen for ÉT trin. Står der allerede en model, som ikke længere er i
+  // MODELLER — fx en udgået `gemini-3.5-flash` fra dengang den var med — skal
+  // den med alligevel. Ellers ville rullelisten stå på "Brug den daglige
+  // model", og et tryk på Gem ville slette redaktionens valg uden at spørge.
+  function valgmuligheder(navn) {
+    var nuvaerende = (aendret[navn] && aendret[navn].model || "").trim();
+    if (!nuvaerende) return MODELLER;
+    var kendt = MODELLER.some(function (m) { return m[0] === nuvaerende; });
+    if (kendt) return MODELLER;
+    return MODELLER.concat([[nuvaerende, nuvaerende + " — udgået, vælg en anden"]]);
+  }
 
   // Ændringer i denne session. navn -> {model?, prompt?}
   var aendret = {};
@@ -523,6 +578,15 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
     if (h.egen_prompt) e.prompt = h.aktiv_prompt;
     if (e.model || e.prompt) aendret[n] = e;
   });
+  // BEMÆRK: `hjerner.json` har ikke det drift-værn, `feeds.json` har. Er filen
+  // ændret siden panelet hentede sine tal — fra en anden maskine, eller i hånden
+  // — skriver et gem den ændring ud af verden uden et ord. Et forsøg på et værn
+  // her 29.07 gjorde det værre: fordi grundlaget ikke blev genopfrisket efter en
+  // skrivning, blev panelets EGET gem læst som fremmed drift, og det andet klik
+  // i en session blev afvist med en besked, der ikke var sand. Værnet er taget
+  // ud igen, og hullet står i opgavekøen. Retter man det, skal grundlaget
+  // genopfriskes efter hver skrivning, og sammenligningen være uafhængig af
+  // nøglernes rækkefølge — det var de to fejl.
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
   /* esc() dækker & < >, men IKKE anførselstegn — den blev skrevet til tekst
@@ -1641,10 +1705,15 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       "<h3>" + esc(n.replace(/_/g, " ")) + "</h3>" +
       '<div class="b">' + esc(h.beskrivelse) + "</div>" +
       "<label>Model</label>" +
-      '<select id="mModel">' + MODELLER.map(function (m) {
-        var valgt = (aendret[n] && aendret[n].model || "") === m[0];
-        return '<option value="' + m[0] + '"' + (valgt ? " selected" : "") + ">" + esc(m[1]) + "</option>";
+      '<select id="mModel">' + valgmuligheder(n).map(function (m) {
+        // .trim() på BEGGE sider. `valgmuligheder` trimmer navnet, når den
+        // lægger en udgået model ind; gjorde vi det ikke her, ville et navn med
+        // mellemrum omkring ikke matche nogen linje, rullelisten falde til
+        // første linje, og et tryk på Gem slette valget i tavshed.
+        var valgt = String(aendret[n] && aendret[n].model || "").trim() === m[0];
+        return '<option value="' + escA(m[0]) + '"' + (valgt ? " selected" : "") + ">" + esc(m[1]) + "</option>";
       }).join("") + "</select>" +
+      '<div class="b" id="mModelNote"></div>' +
       "<label>Instruks til modellen</label>" +
       '<textarea id="mPrompt" spellcheck="false">' + esc(aktivPrompt(n)) + "</textarea>" +
       '<div class="raekke">' +
@@ -1653,6 +1722,54 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
       "</div>";
     bag.classList.add("aaben");
     document.body.style.overflow = "hidden";
+    // Sig med ord, hvad valget betyder — mens det stadig kan ændres. Et valg,
+    // der falder tilbage til den daglige model, må ikke se ud som et valg,
+    // der virker.
+    var vaelger = document.getElementById("mModel");
+    var note = document.getElementById("mModelNote");
+    // Hvad der sker, hvis valget IKKE bliver brugt. Vi må ikke skrive "så
+    // kører trinnet på gemini-3.5-flash-lite", hvis der slet ikke er nogen
+    // Google-nøgle — så ville sætningen modsige sig selv, og redaktionen ville
+    // tro, at rørene virkede.
+    var DAGLIG_UDE = daglig_er_ude();
+    var TILBAGEFALD = DAGLIG_UDE
+      ? "og så er der ingen model tilbage — trinnet bliver sprunget over"
+      : "og trinnet kører på " + S.daglig_model;
+    function opdaterNote() {
+      var m = vaelger.value.trim();
+      if (!m) {
+        note.textContent = DAGLIG_UDE
+          ? "Trinnet følger den daglige model, men der er ingen nøgle til den, " +
+            "så trinnet bliver sprunget over."
+          : "Trinnet følger den daglige model: " + S.daglig_model + ".";
+        return;
+      }
+      var u = modelUdbyder(m);
+      if (!u) {
+        note.textContent = DAGLIG_UDE
+          ? "Ukendt modelnavn — og der er ingen daglig model at falde tilbage på, " +
+            "så trinnet bliver sprunget over."
+          : "Ukendt modelnavn, " + TILBAGEFALD + ".";
+      } else if (noegle_mangler_sikkert(u)) {
+        note.textContent = "Der er ingen " + (u === "gemini" ? "Google" : "DeepSeek") +
+          "-nøgle sat, så dette valg bliver sprunget over — " +
+          (DAGLIG_UDE
+            ? "og der er ingen daglig model tilbage, så trinnet falder helt ud."
+            : "trinnet kører på " + S.daglig_model + ".");
+      } else if (DAGLIG_UDE) {
+        note.textContent = "Dette trin kører på " +
+          (u === "gemini" ? "Google" : "DeepSeek") +
+          " — resten af siden har ingen model, fordi nøglen til den daglige mangler.";
+      } else if (u !== modelUdbyder(S.daglig_model)) {
+        note.textContent = "Dette flytter trinnet til " +
+          (u === "gemini" ? "Google" : "DeepSeek") + " — resten af siden kører på " +
+          S.daglig_model + ".";
+      } else {
+        note.textContent = "Samme udbyder som resten af siden.";
+      }
+    }
+    vaelger.addEventListener("change", opdaterNote);
+    opdaterNote();
     document.getElementById("mLuk").addEventListener("click", luk);
     document.getElementById("mStd").addEventListener("click", function () {
       delete aendret[n]; tegn(); luk();
@@ -2346,6 +2463,22 @@ code { font-family:"JetBrains Mono",monospace; font-size:12.5px; background:var(
   function aabnDok(k) {
     var d = DOK[k];
     var kan = d.kan_rettes;
+    // Låsen skal gælde ALLE veje ind. Ønske- og kø-grenene nedenfor har deres
+    // egne redigeringsvinduer med egne gem-knapper, og de returnerer, før den
+    // generelle grens `if (!kan)` overhovedet nås. Uden dette tjek kunne en
+    // fremført (muligvis forældet) udgave af opgavekøen redigeres og gemmes
+    // oven i den rigtige fil — præcis det, låsen findes for at forhindre.
+    if (!kan && (k === "oensker" || k === "opgavekoe")) {
+      modal.innerHTML =
+        '<button class="luk" id="mLuk">✕</button>' +
+        "<h3>" + esc(d.navn) + "</h3>" +
+        '<div class="advarsel">' + esc(d.beskrivelse) + "</div>" +
+        '<textarea spellcheck="false" readonly>' + esc(dokTekst(k)) + "</textarea>";
+      bag.classList.add("aaben");
+      document.body.style.overflow = "hidden";
+      document.getElementById("mLuk").addEventListener("click", luk);
+      return;
+    }
     if (k === "oensker") {
       oe = parseOensker(dokTekst(k)); oeForm = false; oeRedigerer = -1;
       modal.innerHTML =
