@@ -15,6 +15,18 @@ Filen har syv lister, og de skal ikke blandes sammen:
 | `## Kø` | Målte problemer. Hvert punkt har et tal og en dato. | Ja, oppefra og ned |
 | `## Nyt` | Ting siden BØR kunne, men ikke kan. Ikke fejl. | Ja — mindst én om ugen |
 
+- **Vurdér humor-motiverne efter en uge (fra 30.07).** Torben har fået et
+  udkast til en ny motiv-instruks med "glimtet i øjet": højst én lun detalje
+  pr. scene, aldrig ved svindel/ofre/fyringer/misbrug, tvivl falder til alvor.
+  Når den har kørt ~en uge: tag de første ti billeder lavet med den nye
+  instruks, hold dem op mod ti fra før (side om side, som FLUX-prøven), og
+  tjek tre ting: (1) er der PRÆCIS én lun detalje, ikke to; (2) er alvorlige
+  historier friholdt — gennemgå alle motiver for perioden, ikke kun de ti;
+  (3) er glimtet til at FÅ ØJE PÅ, eller forsvandt det i renderingen. Beslut
+  derefter med Torben: behold, justér eller rul tilbage ("Tilbage til
+  standard" i panelet). Instruksen ligger kun i hjerner.json — ingen kode er
+  ændret.
+
 - **`hjerner.json` mangler drift-værn ved Gem.** Er filen ændret siden panelet
   hentede sine tal (anden maskine, håndretning), skriver et gem ændringen ud af
   verden uden et ord. Et værn blev bygget og trukket tilbage 29.07: det afviste
