@@ -2781,7 +2781,7 @@ def _uge_side_html(d: dict) -> str:
 <title>AI-nyheder.com · Ugens overblik uge {d.get("uge_nr", "")}</title>
 <meta name="description" content="{html.escape(d.get("indledning", ""))[:150]}">
 <link rel="canonical" href="{SITE_URL}/uge.html">
-<meta name="theme-color" content="#191714">
+<meta name="theme-color" content="#15171c">
 <meta property="og:title" content="Ugens AI-overblik: {html.escape(d.get("rubrik", ""))}">
 <meta property="og:description" content="{html.escape(d.get("indledning", ""))[:150]}">
 <meta property="og:image" content="{SITE_URL}/{html.escape(forside_billede)}">
@@ -2790,18 +2790,18 @@ def _uge_side_html(d: dict) -> str:
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
 <style>
-:root {{ --bg:#f4f2ec; --bg-kort:#fff; --blaek:#191714; --blaek-svag:#6d675d; --linje:#e2ddd2;
+:root {{ --bg:#f6f7f9; --bg-kort:#fff; --blaek:#15171c; --blaek-svag:#5f6672; --linje:#e4e7ec;
 --accent:#5b4bf0; --accent-svag:#ecebfd; --radius:20px;
---skygge:0 2px 4px rgba(25,23,20,.05), 0 16px 44px rgba(25,23,20,.10);
+--skygge:0 2px 4px rgba(21,23,28,.05), 0 16px 44px rgba(21,23,28,.10);
 --font-ui:"Inter",sans-serif; --font-display:"Fraunces",Georgia,serif; }}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{font-family:var(--font-ui);background:var(--bg);color:var(--blaek);line-height:1.6}}
 a{{color:inherit;text-decoration:none}}
 
 /* ---- Magasinforsiden ---- */
-.omslag{{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#191714}}
+.omslag{{position:relative;min-height:72vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#15171c}}
 .omslag img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}}
-.omslag::after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,23,20,.25) 0%,rgba(25,23,20,.05) 35%,rgba(25,23,20,.88) 100%)}}
+.omslag::after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,23,28,.25) 0%,rgba(21,23,28,.05) 35%,rgba(21,23,28,.88) 100%)}}
 .omslag-top{{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;gap:14px;padding:18px 28px}}
 .o-brand{{font-family:var(--font-display);font-weight:900;font-size:22px;letter-spacing:-.03em;color:#fff}}
 .o-brand em{{font-style:normal;color:#b3aaff}}
@@ -3173,7 +3173,7 @@ def _artikel_side_html(a: dict) -> str:
 <title>AI-nyheder.com · {rubrik}</title>
 <meta name="description" content="{resume}">
 <link rel="canonical" href="{url}">
-<meta name="theme-color" content="#f4f2ec">
+<meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
 <meta property="og:title" content="{rubrik}">
@@ -3187,8 +3187,8 @@ def _artikel_side_html(a: dict) -> str:
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
 <script type="application/ld+json">{jsonld}</script>
 <style>
-:root {{ --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
-  --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; }}
+:root {{ --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
 .topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
@@ -3632,7 +3632,7 @@ def _video_side_html(v: dict) -> str:
 <title>AI-nyheder.com · {rubrik}</title>
 <meta name="description" content="{resume}">
 <link rel="canonical" href="{url}">
-<meta name="theme-color" content="#f4f2ec">
+<meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="video.other">
 <meta property="og:site_name" content="AI-nyheder">
 <meta property="og:title" content="{rubrik}">
@@ -3646,8 +3646,8 @@ def _video_side_html(v: dict) -> str:
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
 <script type="application/ld+json">{jsonld}</script>
 <style>
-:root {{ --bg:#f4f2ec; --bg-kort:#ffffff; --blaek:#191714; --blaek-svag:#6d675d;
-  --linje:#e2ddd2; --accent:#5b4bf0; --accent-svag:#ecebfd; --yt:#cc2b2b; }}
+:root {{ --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; --yt:#cc2b2b; }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
 .topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);

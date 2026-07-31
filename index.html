@@ -6,7 +6,7 @@
 <title>AI-nyheder.com</title>
 <meta name="description" content="Dagens AI-nyheder omskrevet til kort, letlæst dansk — så alle kan følge med i udviklingen.">
 <link rel="canonical" href="https://ainyheder.com/">
-<meta name="theme-color" content="#f4f2ec">
+<meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI-nyheder">
 <meta property="og:title" content="AI-nyheder · Dagens AI på letlæst dansk">
@@ -62,17 +62,21 @@
    Farver, skrifter og afstande styres af variablerne i :root.
    ================================================================ */
 :root {
-  --bg: #f4f2ec;            /* varm papirfarve */
+  /* Kølig, teknisk palette (31.07, Torbens beslutning). Den varme
+     papirfarve #f4f2ec lignede en avis - sitet skal ligne tech. Kortene er
+     stadig hvide, så de AI-genererede billeder (tonet i varme pasteller)
+     står på hvidt og påvirkes ikke af skiftet. */
+  --bg: #f6f7f9;            /* kølig, næsten hvid */
   --bg-kort: #ffffff;
-  --blaek: #191714;
-  --blaek-svag: #6d675d;
-  --linje: #e2ddd2;
+  --blaek: #15171c;
+  --blaek-svag: #5f6672;
+  --linje: #e4e7ec;
   --accent: #5b4bf0;
   --accent-svag: #ecebfd;
-  --yt-roed: #c62828;       /* bruges kun til YouTube-indhold. Mørknet 26.07: #cc2b2b gav 4,38:1 for "Se alle videoer" på det beige bånd, under AA's 4,5 */
+  --yt-roed: #c62828;       /* bruges kun til YouTube-indhold. Mørknet 26.07: #cc2b2b gav 4,38:1 for "Se alle videoer" på det grå bånd, under AA's 4,5 */
   --breaking: #b3261e;      /* kun til breaking-bjælken. Egen tone, så den ikke forveksles med YouTube-rød */
   --radius: 18px;
-  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
+  --skygge: 0 1px 3px rgba(21,23,28,.05), 0 12px 32px rgba(21,23,28,.07);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: "Fraunces", Georgia, serif;
 }
@@ -96,8 +100,8 @@ a { color: inherit; }
   border-bottom: 1px solid var(--linje);
 }
 .topbar-inner {
-  margin: 0 auto; padding: 14px 28px;
-  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  margin: 0 auto; padding: 10px 28px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
 }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
 .brand-navn {
@@ -324,7 +328,7 @@ a.pill { text-decoration: none; display: inline-block; }
 
 .tid-pille {
   position: absolute; right: 8px; bottom: 8px; z-index: 2;
-  background: rgba(255,255,255,.94); color: #191714;
+  background: rgba(255,255,255,.94); color: #15171c;
   font-size: 10.5px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
   box-shadow: 0 1px 4px rgba(0,0,0,.18);
 }
@@ -332,7 +336,7 @@ a.pill { text-decoration: none; display: inline-block; }
 .art-chips span { margin-left: 0 !important; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
 .vigtig-chip {
   font-size: 9.5px; font-weight: 800; letter-spacing: .04em;
-  background: #f4b400; color: #191714;
+  background: #f4b400; color: #15171c;
   border-radius: 5px; padding: 2px 7px; margin-left: 6px; white-space: nowrap;
 }
 .ny-chip {
@@ -348,11 +352,11 @@ a.pill { text-decoration: none; display: inline-block; }
   --ov-lilla: #a99ff7;                 /* accenten er for mørk på sort baggrund */
   --ov-flade: rgba(255,255,255,.045);  /* de indre korts "papir" */
   --ov-kant: rgba(255,255,255,.09);
-  --ov-tekst-svag: #a8a29a;
+  --ov-tekst-svag: #a3a8b1;
   background: var(--blaek); color: var(--bg);
   border-radius: 26px; padding: 25px 30px 19px; margin: 0 0 20px;
   position: relative; overflow: hidden;
-  box-shadow: 0 2px 4px rgba(25,23,20,.08), 0 18px 46px rgba(25,23,20,.18);
+  box-shadow: 0 2px 4px rgba(21,23,28,.08), 0 18px 46px rgba(21,23,28,.18);
 }
 /* Svagt lilla lysskær i toppen - giver kortet dybde uden at koste et billede */
 #dagensBrief::before {
@@ -380,7 +384,7 @@ a.pill { text-decoration: none; display: inline-block; }
 .ov-dato {
   margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 10px;
   background: var(--ov-flade); border: 1px solid var(--ov-kant); border-radius: 13px;
-  padding: 10px 16px; font-size: 13px; font-weight: 600; color: #e8e4da;
+  padding: 10px 16px; font-size: 13px; font-weight: 600; color: #e6e8ec;
   text-transform: capitalize; white-space: nowrap;
 }
 .ov-dato span { font-size: 19px; line-height: 1; }
@@ -425,7 +429,7 @@ a.pill { text-decoration: none; display: inline-block; }
   background: var(--accent); color: #fff;
   font-family: var(--font-display); font-size: 16px; font-weight: 900;
   display: grid; place-items: center;
-  box-shadow: 0 3px 12px rgba(25,23,20,.45);
+  box-shadow: 0 3px 12px rgba(21,23,28,.45);
 }
 
 /* --- Det store kort --- */
@@ -438,10 +442,10 @@ a.pill { text-decoration: none; display: inline-block; }
 .ov-hero[data-link]:hover .ov-hero-art img, .ov-hero[data-link]:hover .ov-hero-art svg { transform: scale(1.035); }
 .ov-kat-chip {
   position: absolute; left: 54px; top: 14px; z-index: 2;
-  background: rgba(25,23,20,.62); backdrop-filter: blur(6px);
+  background: rgba(21,23,28,.62); backdrop-filter: blur(6px);
   border: 1px solid rgba(255,255,255,.16); border-radius: 8px;
   padding: 6px 11px; font-size: 10px; font-weight: 800;
-  letter-spacing: .1em; text-transform: uppercase; color: #f0eee8;
+  letter-spacing: .1em; text-transform: uppercase; color: #eef0f3;
 }
 .ov-hero-tekst { padding: 17px 21px 16px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
 .ov-hero-tekst h3 {
@@ -483,7 +487,7 @@ a.pill { text-decoration: none; display: inline-block; }
 .ov-rk .ov-nr { left: 11px; top: 11px; min-width: 26px; height: 26px; font-size: 14px; border-radius: 8px; }
 .ov-rk-tekst { padding: 10px 0; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
 .ov-rk-kat { font-size: 10px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: var(--ov-lilla); }
-.ov-rk-tekst h3 { font-size: 15.5px; font-weight: 700; line-height: 1.28; letter-spacing: -.01em; color: #f0eee8; }
+.ov-rk-tekst h3 { font-size: 15.5px; font-weight: 700; line-height: 1.28; letter-spacing: -.01em; color: #eef0f3; }
 .ov-pil { flex: none; font-size: 19px; color: var(--ov-lilla); transition: transform .18s; }
 .ov-rk[data-link]:hover .ov-pil { transform: translateX(4px); }
 
@@ -517,7 +521,7 @@ a.pill { text-decoration: none; display: inline-block; }
   font-family: var(--font-display); font-size: 13px; font-weight: 900;
   color: var(--ov-lilla); opacity: .75; font-variant-numeric: tabular-nums;
 }
-.ov-mest-rubrik { font-size: 13.5px; font-weight: 600; line-height: 1.35; color: #e8e4da; }
+.ov-mest-rubrik { font-size: 13.5px; font-weight: 600; line-height: 1.35; color: #e6e8ec; }
 .ov-mest-et:hover .ov-mest-rubrik, .ov-mest-liste a:hover .ov-mest-rubrik { color: #fff; }
 /* Billede, kategori og læsetid hører kun til den brede tilstand */
 .ov-mest-art, .ov-mest-kat, .ov-mest .ov-meta { display: none; }
@@ -1137,7 +1141,7 @@ footer a { color: var(--accent); }
     <a class="top-ikon top-ikon-yt" href="youtube.html" aria-label="AI på YouTube" title="AI på YouTube">
       <svg viewBox="0 0 24 17" aria-hidden="true"><path fill="currentColor" stroke="none" d="M23.5 2.7A3 3 0 0 0 21.4.6C19.5 0 12 0 12 0S4.5 0 2.6.6A3 3 0 0 0 .5 2.7C0 4.6 0 8.5 0 8.5s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 12.1V4.9l6.3 3.6-6.3 3.6z"/></svg>
     </a>
-    <button class="top-ikon" id="valgKnap" aria-label="Søg, sortering og genveje" aria-expanded="false">
+    <button class="top-ikon" id="valgKnap" aria-label="Søg og genveje" aria-expanded="false">
       <svg viewBox="0 0 24 24"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line><circle cx="10" cy="8" r="2.6"></circle><circle cx="16" cy="16" r="2.6"></circle></svg>
     </button>
     <div class="top-valg" id="topValg">
@@ -1145,20 +1149,10 @@ footer a { color: var(--accent); }
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
         <input id="sogefelt" type="search" placeholder="Søg i nyhederne …">
       </div>
-      <div>
-        <span class="valg-titel">Sortér efter</span>
-        <div class="visning-skift" id="sortSkift" title="Sortering">
-          <button data-sort="vigtigst" class="aktiv">★ Vigtigst</button>
-          <button data-sort="nyeste">Nyeste</button>
-        </div>
-      </div>
-      <div>
-        <span class="valg-titel">Visning</span>
-        <div class="visning-skift" id="visningSkift" title="Skift visning">
-          <button data-visning="magasin" class="aktiv">▦ Magasin</button>
-          <button data-visning="kompakt">☰ Overblik</button>
-        </div>
-      </div>
+      <!-- Sorterings- og visningsknapperne blev fjernet 31.07 (Torbens
+           beslutning): forsiden står altid i magasin-visning, nyeste først.
+           Selve kodestierne findes stadig - se konstanterne VISNING og
+           SORTERING i scriptet. Vigtigst-stjernen på artiklerne er uberørt. -->
       <div class="valg-links" id="valgLinks"></div>
     </div>
   </div>
@@ -1213,20 +1207,24 @@ let aktivKategori = "Nyheder";   // "Nyheder" (med emne-flueben) eller "Forsknin
 let emneValg = null;             // Set af tilvalgte kategorier (null = alle)
 let emneMenuAaben = false;
 let sogeTekst = "";
-/* Brugerens egne valg gemmes i browseren, så en tilbagevendende læser ikke
-   skal sætte sin foretrukne visning hver gang. Ligger kun lokalt - se
-   cookies.html for den fulde oversigt over, hvad vi gemmer. */
-function husk(noegle, vaerdi) { try { localStorage.setItem(noegle, vaerdi); } catch (e) {} }
-function husket(noegle, gyldige, standard) {
-  try {
-    const v = localStorage.getItem(noegle);
-    if (gyldige.includes(v)) return v;
-  } catch (e) {}
-  return standard;
-}
+/* husk()/husket() til visning og sortering røg ud 31.07 sammen med
+   knapperne: uden valg er der intet at huske, og en gammel gemt værdi må
+   ikke give én læser en anden forside end alle andre. Læsertallene og
+   "læst"-markeringerne bruger stadig localStorage direkte - se cookies.html
+   for oversigten over, hvad vi gemmer. */
 
-let visning = husket("visning", ["magasin", "kompakt"], "magasin");
-let sortering = husket("sortering", ["vigtigst", "nyeste"], "vigtigst");
+/* Redaktionens faste valg (31.07): magasin-visning, nyeste først. Knapperne
+   er ude af topbaren, men kodestierne lever - vil redaktionen en dag skifte
+   tilbage, er det ét ord her. Gamle localStorage-værdier ignoreres med vilje:
+   en læser, der engang valgte "kompakt", skal også se den nye forside. */
+const VISNING = "magasin";
+const SORTERING = "nyeste";
+let visning = VISNING;
+let sortering = SORTERING;
+// De gamle valg-nøgler læses aldrig igen - fjern dem, så de ikke ligger som
+// dødvægt i læsernes browsere for evigt. (De ØVRIGE nøgler - visninger,
+// baandVist, læst-markeringer - er stadig i brug og røres ikke.)
+try { localStorage.removeItem("visning"); localStorage.removeItem("sortering"); } catch (e) {}
 let synligeDage = 2;         // forsiden starter med 2 dage - resten hentes med "Vis flere"
 let synligeFlade = 24;       // samme greb i "Nyeste"-visningen, hvor der ikke er dage
 
@@ -1555,10 +1553,10 @@ function tegnFiltre() {
    én række og nyhederne når op i første skærm. */
 function tegnVaerktoejer() {
   document.getElementById("valgLinks").innerHTML = `
-    <a class="pill" href="uge.html">🗞️ Ugens overblik</a>
-    <a class="pill" href="laer.html">🎓 Lær AI</a>
+    <a class="pill" href="uge.html">Ugens overblik</a>
+    <a class="pill" href="laer.html">Lær AI</a>
     <a class="pill" href="https://artificialanalysis.ai/" target="_blank" rel="noopener"
-       title="Eksternt site med AI-benchmarks">▤ Benchmarks ↗</a>`;
+       title="Eksternt site med AI-benchmarks">Benchmarks ↗</a>`;
 }
 
 /* ---------- YouTube-båndet ----------
@@ -1639,6 +1637,11 @@ function filtrerede() {
     (!q || (a.titel + " " + (a.rubrik || "") + " " + (a.resume_da || a.resume) + " " +
             (a.brief || "") + " " + a.kilde).toLowerCase().includes(q)));
   if (sortering === "vigtigst") {
+    // BEMÆRK (31.07): sortering er nu fast "nyeste", så hele denne gren -
+    // inklusive rotationen fra 30.07 - er i dvale. Den vågner, hvis
+    // SORTERING sættes tilbage til "vigtigst". `taelVisninger` bliver ved
+    // med at tælle, netop så rotationen har tal at arbejde med fra dag ét,
+    // hvis den slås til igen.
     // Søger man efter noget, vil man have det bedste svar - ikke variation.
     // Derfor roterer vi kun på den forside, man kommer ind på uden at spørge
     // om noget bestemt.
@@ -2147,7 +2150,10 @@ function raekkeHtml(a, id) {
 
 function tegn() {
   document.querySelector(".filtre").style.display = "";
-  document.getElementById("sortSkift").style.display = "";
+  // sortSkift-linjen, der stod her, røg med knapperne 31.07. Den var ikke
+  // pynt: getElementById på et element, der ikke findes, giver null, og
+  // `.style` på null vælter HELE tegningen - forsiden stod med fejlbeskeden
+  // "Kunne ikke hente nyhederne", selvom data var hentet fint.
   const liste = filtrerede();
   if (!liste.length) { indhold.innerHTML = `<div class="tom">Ingen historier matcher 🤷</div>`; return; }
 
@@ -2167,7 +2173,19 @@ function tegn() {
     new Date(a.foerst_set || a.dato || 0).getTime() >= doegn);
   // Sidste led er ikke pynt: er der kun ÉN historie tilbage, og bjælken har
   // taget den, er `uden` tom - og uden faldet stod der en tom hero.
-  const heroArtikel = friske[0] || uden.find(a => a.rubrik) || uden[0] || liste[0];
+  // Heroen er døgnets VIGTIGSTE, ikke det senest sete (31.07): med "nyeste"
+  // som fast sortering ville friske[0] bare være sidste indløb - og så kunne
+  // en prio-3-notits skubbe dagens store historie ned under folden. Ved
+  // prio-lighed vinder den nyeste, fordi `friske` allerede står nyeste først.
+  const vaelgStoerste = (kandidater) => (kandidater.length
+      ? kandidater.reduce((bedst, a) => ((a.prio ?? 0) > (bedst.prio ?? 0) ? a : bedst))
+      : null);
+  // Fallbacken skal vælge på prio LIGESOM døgn-grenen. Ellers står der på en
+  // stille dag (ingen artikler < 24 t) en prio-5-notits under etiketten
+  // "Største historie lige nu", mens prio-9-historierne ligger nede i nettet.
+  const heroArtikel = vaelgStoerste(friske)
+      || vaelgStoerste(uden.filter(a => a.rubrik))
+      || uden[0] || liste[0];
   const heroEtiket = friske.length ? "Dagens historie" : "Største historie lige nu";
   const rest = uden.filter(a => a !== heroArtikel);
 
@@ -2311,25 +2329,9 @@ document.addEventListener("click", e => {
 });
 document.getElementById("sogefelt").addEventListener("input", e => { sogeTekst = e.target.value; nulstilVisning(); tegn(); });
 
-document.getElementById("sortSkift").addEventListener("click", e => {
-  const knap = e.target.closest("button");
-  if (!knap) return;
-  sortering = knap.dataset.sort;
-  husk("sortering", sortering);
-  nulstilVisning();
-  document.querySelectorAll("#sortSkift button").forEach(b => b.classList.toggle("aktiv", b === knap));
-  tegn();
-});
-
-document.getElementById("visningSkift").addEventListener("click", e => {
-  const knap = e.target.closest("button");
-  if (!knap) return;
-  visning = knap.dataset.visning;
-  husk("visning", visning);
-  document.querySelectorAll("#visningSkift button").forEach(b =>
-    b.classList.toggle("aktiv", b === knap));
-  tegn();
-});
+/* Lytterne på sortSkift/visningSkift er fjernet sammen med knapperne
+   (31.07). Stod de her stadig, ville getElementById(null) kaste ved load,
+   og HELE scriptet ville dø - så det er ikke oprydning, det er nødvendigt. */
 
 /* ---------- Topbarens menuer (kun synlige på mobil) ---------- */
 

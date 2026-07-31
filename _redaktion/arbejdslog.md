@@ -3917,3 +3917,31 @@ Torben bad om en gennemgang af alle 14 hjerners instrukser. Fundet og rettet
 **Ny prøve:** `proeve-prompter.py` (45 grønne) låser konsistensen: ét rubrik-tal,
 AI-reglen med RETNING i alle læservendte hjerner, én art director, målbare
 længder. 17 mutationer, alle fanget. Gennemgangen skal aldrig gentages i hånden.
+
+---
+
+## 31.07.2026 · Forsiden: én visning, nyeste først, kølig palette
+
+Torbens beslutning: topbaren skulle være "premium og sleek". Lavet:
+- Vigtigst/Nyeste- og Magasin/Overblik-knapperne er UDE. Forsiden står fast i
+  magasin-visning, nyeste først. Kodestierne lever som konstanterne VISNING/
+  SORTERING i index.html — ét ord at skifte tilbage. Gamle localStorage-valg
+  ryddes op hos læserne og ignoreres.
+- ★-chippen på artikler med prio ≥ 8 er uberørt (Torbens krav) — og heroen
+  vælger nu døgnets VIGTIGSTE, ikke det senest indløbne. Gælder også
+  fallbacken uden friske artikler (fanget i gennemgang: en prio-5-notits
+  kunne stå under "Største historie lige nu").
+- Paletten er skiftet fra varmt avispapir (#f4f2ec) til kølig tech (#f6f7f9)
+  i index.html OG crawlerens tre skabeloner (artikel/uge/video), inkl.
+  skygger, theme-color og den mørke overbliksboks. Kortene er stadig hvide,
+  så AI-billederne påvirkes ikke. Kontrast målt: alle AA.
+- Emojis ud af genvejs-pillerne, topbar slanket, cookies.html opdateret
+  (visning/sortering udgået, men står i "Slet alt"-listen).
+- VIGTIGT AT VIDE: forsideROTATIONEN fra 30.07 er i dvale — den hører til
+  vigtigst-grenen. taelVisninger tæller videre, så rotationen har tal fra
+  dag ét, hvis SORTERING sættes tilbage.
+- En fjernet knap væltede næsten det hele: tegn() rørte sortSkift.style, og
+  null-fejlen efterlod forsiden med "Kunne ikke hente nyhederne". Fanget af
+  prøven, rettet, og proeve-forside.js er udvidet til 21 grønne — inkl.
+  podede fixtures for hero-valget (breaking-bjælken støvsuger prio ≥ 8, så
+  fixtures skal ligge UNDER dens grænser for at prøve heroen).
