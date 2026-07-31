@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-30T21:46:46.880236+00:00",
- "artikler_i_alt": 107,
+ "opdateret": "2026-07-31T07:28:03.241789+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
-   "som_ekstra": 3,
+   "i_listen": 15,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Anthropic AI brød ind hos tre firmaer",
+     "dato": "",
+     "foerst_set": "2026-07-31T07:28:03.241789+00:00",
+     "link": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAIs AI hacker – støjende, men ikke ustoppelig"
+    },
     {
      "rubrik": "TechCrunch Disrupt 2026 sætter fokus på AI",
      "dato": "",
@@ -43,6 +52,15 @@ window.KILDER_STATUS = {
      "under": "Meta satser på personlige AI-assistenter"
     },
     {
+     "rubrik": "Meta satser stort på AI til virksomheder",
+     "dato": "",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta satser på personlige AI-assistenter"
+    },
+    {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
      "dato": "",
      "foerst_set": "2026-07-27T17:34:46",
@@ -61,11 +79,38 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
-     "rubrik": "Dommer afviser Trumps mærkning af Anthropic",
+     "rubrik": "Aschenbrenners AI-fond mister milliarder efter aktiekrak",
+     "dato": "2026-07-30T23:25:58",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/",
+     "side": "artikel/fb6c910e2e05da45.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Reddit tjener kassen, men AI skræmmer investorerne",
+     "dato": "2026-07-30T23:08:58",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/",
+     "side": "artikel/93cb0df58a6ec7c8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon bruger 220 milliarder på AI - og investorer elsker det",
+     "dato": "2026-07-30T22:41:41",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host/",
+     "side": "artikel/01023a47e3394a26.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Dommer: Trump mangler beviser mod Anthropic",
      "dato": "2026-07-30T20:26:38",
      "foerst_set": "2026-07-30T21:46:46",
      "link": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/",
-     "side": "",
+     "side": "artikel/358552aaff9aa3c4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -140,39 +185,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f58ecf105df039b9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AI hjælper byggeprojekter med reglerne",
-     "dato": "2026-07-30T13:00:00",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom/",
-     "side": "artikel/559d474d4ae0773e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TechCrunch Disrupt samler chefer fra Amazon, Replit og Tether",
-     "dato": "2026-07-30T14:00:00",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://techcrunch.com/2026/07/30/techcrunch-disrupt-2026s-biggest-stage-features-leaders-from-amazon-replit-tether-with-much-more-to-come/",
-     "side": "artikel/72983700e666ecfa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsofts CEO siger: Stop med at stole på OpenAI",
-     "dato": "2026-07-30T00:21:06",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
-     "side": "artikel/750af35496d7b51a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -190,7 +208,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -237,6 +255,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "Apple vil lade dig betale for mere AI",
+     "dato": "2026-07-30T18:29:45",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
+     "side": "artikel/93e1eb3c7f134c96.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Leopold Aschenbrenners hedgefond tabte 35 mia",
@@ -305,7 +332,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -649,6 +676,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer nyt program til små virksomheder"
     },
     {
+     "rubrik": "avatarin giver Yamada Denki-kunder AI-hjælp døgnet rundt",
+     "dato": "2026-07-30T00:00:00",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://openai.com/index/avatarin",
+     "side": "artikel/4ff655ca49b9095f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ny GPT-5.6 gør AI både klogere og billigere",
      "dato": "2026-07-29T00:00:00",
      "foerst_set": "2026-07-29T20:36:36",
@@ -744,15 +780,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-22T12:00:00",
      "link": "https://openai.com/index/advancing-the-next-era-of-national-science",
      "side": "artikel/1de8660326e5e2b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "NTT DATA bruger Codex til fejlsøgning på 30 min",
-     "dato": "2026-07-22T00:00:00",
-     "foerst_set": "2026-07-22T00:00:00",
-     "link": "https://openai.com/index/ntt-data",
-     "side": "artikel/0723f553c0b85844.html",
      "hvor": "forside",
      "under": ""
     }
@@ -894,7 +921,7 @@ window.KILDER_STATUS = {
    "seneste": [
     {
      "rubrik": "AI lærer at tænke – ikke bare gætte",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26119",
      "side": "artikel/365a1c7fd3d59934.html",
@@ -903,7 +930,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI-agenter lærer at lyve for at vinde",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26120",
      "side": "artikel/c585214980e5ae83.html",
@@ -912,7 +939,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "ClinLens bliver klinisk forskningsassistent",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26155",
      "side": "artikel/ebe532dafcd5749e.html",
@@ -921,7 +948,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI-tests lover meget, men holder ikke",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26159",
      "side": "artikel/78ece1f9bdf32138.html",
@@ -930,7 +957,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "GuideSkill hjælper læger med bedre diagnoser",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26160",
      "side": "artikel/29c86bee9873ba92.html",
@@ -939,7 +966,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "GoGoTB tester computerchips hurtigere end ingeniører",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26181",
      "side": "artikel/810febb3c0a0c994.html",
@@ -948,7 +975,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI-testresultater er forældede på ét år",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26191",
      "side": "artikel/4ad8ba5f8c1b5093.html",
@@ -957,7 +984,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "TraceCoder viser, hvor koden kommer fra",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26307",
      "side": "artikel/90d1763a87d1e1d7.html",
@@ -966,7 +993,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI opdager mønstre i fysik-knuder",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26367",
      "side": "artikel/5c776948b0a5cc3c.html",
@@ -975,7 +1002,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "CaM-Wolf lærer at lyve og fange løgnere",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26393",
      "side": "artikel/885ff69b53690cd8.html",
@@ -984,7 +1011,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere bygger CG-World-database til AI",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26452",
      "side": "artikel/b1dca736b70e08b9.html",
@@ -993,7 +1020,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "MultivationBench tester, om AI forstår dine motiver",
-     "dato": "2026-07-30T00:00:00",
+     "dato": "2026-07-31T00:00:00",
      "foerst_set": "2026-07-30T10:01:19",
      "link": "https://arxiv.org/abs/2607.26465",
      "side": "artikel/85862261783306dd.html",
@@ -1010,12 +1037,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "AI-æstetikken: Derfor ligner Claude, Codex og Cursor hinanden",
+     "dato": "2026-07-30T23:22:16",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+     "side": "artikel/6e221999d79ccadc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Open source-projektet GCC dropper AI-kode",
+     "dato": "2026-07-30T11:45:44",
+     "foerst_set": "2026-07-30T17:07:47",
+     "link": "https://lwn.net/Articles/1086041/",
+     "side": "artikel/44706ce26e17d28b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Anthropic skjuler deres AI-forskning",
+     "dato": "2026-07-29T21:25:40",
+     "foerst_set": "2026-07-30T11:32:44",
+     "link": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
+     "side": "artikel/1bb6a0f5101fa13b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sikkerhedsforsker Stolfo finder AI-orm i Microsoft Word",
+     "dato": "2026-07-29T11:44:33",
+     "foerst_set": "2026-07-29T16:59:11",
+     "link": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+     "side": "artikel/747a822282fbf78e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Andrew Ng's AI-læringsprojekt skal give alle en personlig underviser",
+     "dato": "2026-07-29T01:49:19",
+     "foerst_set": "2026-07-29T12:25:00",
+     "link": "https://learnvector.ai/",
+     "side": "artikel/bd26df5a6c52ff0c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer Beyond Zero til virksomheder",
+     "dato": "2026-07-28T09:59:13",
+     "foerst_set": "2026-07-29T12:25:00",
+     "link": "https://spawn-queue.acm.org/doi/10.1145/3819083",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
