@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-07-31T12:20:32.133499+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-07-31T18:08:22.003470+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,17 +12,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 18,
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Anthropic AI brød ind hos tre firmaer",
+     "rubrik": "Apple vil måske tage penge for avanceret Siri AI",
      "dato": "",
-     "foerst_set": "2026-07-31T07:28:03.241789+00:00",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/2026/07/31/siri-ai-could-come-with-a-paywall-for-power-users/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple vil lade dig betale for mere AI"
+    },
+    {
+     "rubrik": "Anthropic opdagede tre uautoriserede indbrud fra egne AI-modeller",
+     "dato": "",
+     "foerst_set": "2026-07-31T07:28:03",
      "link": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/",
      "side": "",
      "hvor": "under",
-     "under": "OpenAIs AI hacker – støjende, men ikke ustoppelig"
+     "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
     },
     {
      "rubrik": "TechCrunch Disrupt 2026 sætter fokus på AI",
@@ -32,24 +41,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "TechCrunch Disrupt samler chefer fra Amazon, Replit og Tether"
-    },
-    {
-     "rubrik": "Zuckerberg: Personlige AI-agenter om fem år",
-     "dato": "",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta satser på personlige AI-assistenter"
-    },
-    {
-     "rubrik": "Meta satser stort på AI til virksomheder",
-     "dato": "",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://techcrunch.com/2026/07/29/zuckerberg-says-metas-enterprise-ai-opportunity-extends-beyond-agents/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta satser på personlige AI-assistenter"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -70,6 +61,60 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "OpenAI-chef vil sænke farten på AI-udvikling",
+     "dato": "2026-07-31T17:26:32",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
+     "side": "artikel/734a51283c78b111.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Snapchat dropper belønning til AI-videoer",
+     "dato": "2026-07-31T16:49:08",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
+     "side": "artikel/1539977fb1063640.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "SpaceX beholder xAIs ulovlige turbiner til 2027",
+     "dato": "2026-07-31T15:16:17",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/",
+     "side": "artikel/d6b9a6d8c12d77f5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Smallest.ai får 13 mio. dollars til menneskelignende stemme",
+     "dato": "2026-07-31T14:47:11",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/",
+     "side": "artikel/eccb7dbefe541daf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Anthropic vil sænke farten, mens Amazon og SpaceX fortsætter",
+     "dato": "2026-07-31T14:00:00",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/podcast/ai-labs-want-to-pump-the-brakes-but-amazon-and-spacex-are-still-blasting-off/",
+     "side": "artikel/9fb139bb8c5f3fce.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Aschenbrenners AI-fond mister milliarder efter aktiekrak",
+     "dato": "2026-07-30T23:25:58",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/",
+     "side": "artikel/fb6c910e2e05da45.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Reddit tjener kassen, men AI skræmmer investorerne",
      "dato": "2026-07-30T23:08:58",
      "foerst_set": "2026-07-31T07:28:03",
@@ -84,15 +129,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-31T07:28:03",
      "link": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host/",
      "side": "artikel/01023a47e3394a26.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Aschenbrenners AI-fond mister milliarder efter aktiekrak",
-     "dato": "2026-07-30T23:25:58",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/",
-     "side": "artikel/fb6c910e2e05da45.html",
      "hvor": "forside",
      "under": ""
     },
@@ -129,51 +165,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-30T18:48:04",
      "link": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/",
      "side": "artikel/dc18fde4e6bc6553.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Okta betaler 1,4 milliarder for Permiso",
-     "dato": "2026-07-30T16:09:42",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
-     "side": "artikel/9327b8297589ff6a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta skyder nye apps afsted med AI-hjælp",
-     "dato": "2026-07-30T15:41:16",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/",
-     "side": "artikel/30e234bd3fe16558.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nscale køber Anyscale for 1,65 milliarder dollar",
-     "dato": "2026-07-30T15:19:15",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
-     "side": "artikel/f98297874b887d46.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Anthropic jagter sjældne FDE-ingeniører",
-     "dato": "2026-07-30T15:00:00",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
-     "side": "artikel/2a5e5f8fdade95b0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAIs AI hacker – støjende, men ikke ustoppelig",
-     "dato": "2026-07-30T14:48:32",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/",
-     "side": "artikel/f58ecf105df039b9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -252,6 +243,42 @@ window.KILDER_STATUS = {
      "under": "ChatGPT får adgang til din medicin"
     },
     {
+     "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
+     "dato": "2026-07-31T13:05:46",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
+     "side": "artikel/69dd96f680d9a356.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Universal, Sony og Warner vil holde AI-sange ude",
+     "dato": "2026-07-31T12:36:48",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
+     "side": "artikel/a32f3d3705a3fdcb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAIs AI-agent hackede sig ud af sin sandkasse",
+     "dato": "2026-07-31T10:03:04",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+     "side": "artikel/c898bed1eb8166b6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
+     "dato": "2026-07-31T09:41:17",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
+     "side": "artikel/fa6e1e31c112dba8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Apple vil lade dig betale for mere AI",
      "dato": "2026-07-30T18:29:45",
      "foerst_set": "2026-07-31T07:28:03",
@@ -286,42 +313,6 @@ window.KILDER_STATUS = {
      "side": "artikel/2aaefae5d079feec.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta satser på personlige AI-assistenter",
-     "dato": "2026-07-29T17:48:07",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
-     "side": "artikel/169a6f9c3953f19a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "xAI sagsøger Minnesota for at undgå lov",
-     "dato": "2026-07-29T17:06:52",
-     "foerst_set": "2026-07-29T20:36:36",
-     "link": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
-     "side": "artikel/89095267772b9aed.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI laver en hel familie af enheder",
-     "dato": "2026-07-29T14:15:02",
-     "foerst_set": "2026-07-29T20:36:36",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
-     "side": "artikel/68c8dce4daf83e4f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kunstnere vinder retssager mod Stability, Google, Meta og Anthropic",
-     "dato": "2026-07-29T08:00:00",
-     "foerst_set": "2026-07-29T12:25:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/971059/ai-artists-lawsuit-google-meta-anthropic",
-     "side": "artikel/731f01c1c0e3d8ce.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -330,11 +321,11 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "Ars Technica AI",
-     2
+     "Google DeepMind",
+     1
     ],
     [
-     "Google DeepMind",
+     "Ars Technica AI",
      1
     ],
     [
@@ -357,18 +348,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 2,
+   "i_listen": 19,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "Musk sagsøger sig vej ud af Grok-krise",
-     "dato": "",
-     "foerst_set": "2026-07-29T20:36:36",
-     "link": "https://arstechnica.com/tech-policy/2026/07/elon-musks-xai-is-trying-to-sue-its-way-out-of-a-grok-reckoning/",
-     "side": "",
-     "hvor": "under",
-     "under": "xAI sagsøger Minnesota for at undgå lov"
-    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -377,6 +359,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Claude er bedre end mennesker til at snyde dig",
+     "dato": "2026-07-31T14:01:40",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/",
+     "side": "artikel/07e66403365804d9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Yale-studerende sagsøger universitet efter AI-beskyldning",
@@ -433,6 +424,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Musk sagsøger Minnesota for at redde Grok",
+     "dato": "2026-07-29T17:58:24",
+     "foerst_set": "2026-07-29T20:36:36",
+     "link": "https://arstechnica.com/tech-policy/2026/07/elon-musks-xai-is-trying-to-sue-its-way-out-of-a-grok-reckoning/",
+     "side": "artikel/f3cd7e695150c652.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI finder fejl hurtigere end Microsoft kan rette",
      "dato": "2026-07-29T15:52:48",
      "foerst_set": "2026-07-29T16:59:11",
@@ -467,30 +467,12 @@ window.KILDER_STATUS = {
      "side": "artikel/ff789618a2209a7f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google og Reddit taber retssag om AI",
-     "dato": "2026-07-27T20:12:42",
-     "foerst_set": "2026-07-27T22:45:11",
-     "link": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss/",
-     "side": "artikel/5d041ac5a5b573cc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Verizon satser milliarder på Google-aftale",
-     "dato": "2026-07-27T18:48:41",
-     "foerst_set": "2026-07-27T19:02:56",
-     "link": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google/",
-     "side": "artikel/be4f7f1c41717387.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     1
     ],
     [
      "MIT Tech Review AI",
@@ -649,6 +631,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer nyt program til små virksomheder"
     },
     {
+     "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
+     "dato": "2026-08-04T00:00:00",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+     "side": "artikel/e2b8f86303a263b6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI vil gøre AI tilgængelig for langt flere",
+     "dato": "2026-07-31T15:00:00",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://openai.com/index/building-abundant-intelligence",
+     "side": "artikel/ef7e135bdd5acf00.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lover sikker AI i Europa",
      "dato": "2026-07-31T15:00:00",
      "foerst_set": "2026-07-31T10:21:42",
@@ -712,15 +712,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAIs nye system lader AI rette egne fejl",
-     "dato": "2026-07-15T10:00:00",
-     "foerst_set": "2026-07-28T10:15:21",
-     "link": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-     "side": "artikel/5ea0a6358ff1dfeb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI: Chatbrugere tager opgaver på tværs af roller",
      "dato": "2026-07-27T03:30:00",
      "foerst_set": "2026-07-27T10:35:33",
@@ -746,15 +737,6 @@ window.KILDER_STATUS = {
      "side": "artikel/07a59789a1f95f86.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Sådan bruger designere Codex som kreativ makker",
-     "dato": "2026-07-16T07:00:00",
-     "foerst_set": "2026-07-24T06:42:29",
-     "link": "https://openai.com/index/codex-collaborator-creative-team",
-     "side": "artikel/41170cb100dac73a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -774,7 +756,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -855,15 +837,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-03T14:25:43",
      "link": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
      "side": "artikel/19d1bfd8b691b57f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lancerer to nye hurtige medieværktøjer",
-     "dato": "2026-06-30T16:02:40",
-     "foerst_set": "2026-06-30T16:02:40",
-     "link": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
-     "side": "artikel/d866a21bc3340953.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1006,10 +979,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1020,51 +993,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "AI fandt flere Chrome-fejl på én måned end på to år"
-    },
-    {
-     "rubrik": "Claude og Cursor former AI-æstetikken",
-     "dato": "2026-07-30T23:22:16",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
-     "side": "artikel/6e221999d79ccadc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GCC forbyder AI-kode i bidrag",
-     "dato": "2026-07-30T11:45:44",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://lwn.net/Articles/1086041/",
-     "side": "artikel/44706ce26e17d28b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Google skjuler deres AI-forskning",
-     "dato": "2026-07-29T21:25:40",
-     "foerst_set": "2026-07-30T11:32:44",
-     "link": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
-     "side": "artikel/1bb6a0f5101fa13b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-orme kan sprede sig via Microsoft Word",
-     "dato": "2026-07-29T11:44:33",
-     "foerst_set": "2026-07-29T16:59:11",
-     "link": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Andrew Ng vil give alle deres egen AI-tutor",
-     "dato": "2026-07-29T01:49:19",
-     "foerst_set": "2026-07-29T12:25:00",
-     "link": "https://learnvector.ai/",
-     "side": "artikel/bd26df5a6c52ff0c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
