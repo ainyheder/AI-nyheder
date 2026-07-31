@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-07-31T18:13:32.341112+00:00",
+ "opdateret": "2026-07-31T22:17:57.112801+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      3,
      5,
      5,
-     8
+     11
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      3,
      10,
      10,
-     3
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      6,
      7,
      7,
-     0
+     1
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      4,
      4,
      2,
-     3
+     4
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 148,
- "sidevisninger_i_alt": 295,
+ "besoeg_i_alt": 145,
+ "sidevisninger_i_alt": 292,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 142,
-   "visninger": 199
+   "besoeg": 139,
+   "visninger": 196
   },
   {
    "sti": "/youtube.html",
@@ -304,12 +304,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/232de1e55cde77a5.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/232de1e55cde77a5.html",
+   "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -329,6 +329,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/e2b8f86303a263b6.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/c037c1f2be4b8b92.html",
    "besoeg": 0,
    "visninger": 2
@@ -344,12 +349,12 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/c9945336eb04156b.html",
+   "sti": "/artikel/2cb97ade90fb06df.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/2cb97ade90fb06df.html",
+   "sti": "/artikel/c9945336eb04156b.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -386,7 +391,7 @@ window.LAESERTAL = {
   {
    "sti": "/laer.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 9
   },
   {
    "sti": "/artikel/856fa25c6c2097c8.html",
@@ -467,7 +472,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 147
+   "besoeg": 144
   },
   {
    "fra": "m.facebook.com",
@@ -479,8 +484,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 142,
-    "visninger": 142
+    "besoeg": 139,
+    "visninger": 139
    },
    {
     "fra": "herfra selv",
@@ -561,14 +566,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/8756b60eb8fa9e43.html": [
+  "/artikel/232de1e55cde77a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/232de1e55cde77a5.html": [
+  "/artikel/8756b60eb8fa9e43.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -596,6 +601,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/e2b8f86303a263b6.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/c037c1f2be4b8b92.html": [
    {
     "fra": "herfra selv",
@@ -617,14 +629,14 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/c9945336eb04156b.html": [
+  "/artikel/2cb97ade90fb06df.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/2cb97ade90fb06df.html": [
+  "/artikel/c9945336eb04156b.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -677,7 +689,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 9
    }
   ],
   "/artikel/856fa25c6c2097c8.html": [
@@ -1135,12 +1147,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/232de1e55cde77a5.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-firmaer slår lobbyrekord i Washington",
-   "kategori": "Politik & jura",
-   "dato": "2026-07-27",
+   "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-29",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1150,12 +1162,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/232de1e55cde77a5.html",
+   "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-29",
+   "rubrik": "AI-firmaer slår lobbyrekord i Washington",
+   "kategori": "Politik & jura",
+   "dato": "2026-07-27",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1180,6 +1192,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/e2b8f86303a263b6.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-31",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/28f36991d0d0d08b.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1195,12 +1222,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/c9945336eb04156b.html",
+   "sti": "/artikel/2cb97ade90fb06df.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta satser stort på AI til virksomheder",
-   "kategori": "Penge & marked",
-   "dato": "2026-07-29",
+   "rubrik": "Hugging Face brugt til at klæde folk af",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-28",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1210,12 +1237,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/2cb97ade90fb06df.html",
+   "sti": "/artikel/c9945336eb04156b.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Hugging Face brugt til at klæde folk af",
-   "kategori": "Samfund & etik",
-   "dato": "2026-07-28",
+   "rubrik": "Meta satser stort på AI til virksomheder",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-29",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1461,7 +1488,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 8
+   "visninger": 9
   },
   {
    "navn": "Politik & jura",
