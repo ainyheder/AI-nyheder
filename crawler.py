@@ -2395,6 +2395,27 @@ def _for_lille(sti: Path) -> bool:
         return False
 
 
+def _billed_fejltekst(f: Exception) -> str:
+    """Gør en billedfejl læsbar i loggen.
+
+    Stod der før kun `type(f).__name__`, blev enhver Gemini-afvisning til ordet
+    "HTTPError" - samme streng, uanset om nøglen var udløbet, betalingen slået
+    fra, kvoten brugt op eller modelnavnet forkert. Fire vidt forskellige
+    problemer med hver sin løsning, og loggen kunne ikke skelne dem. Google
+    skriver den præcise grund i svarets krop, så den skal med.
+
+    Nøglen sidder i en header, ikke i URL'en eller kroppen, så der lækker intet
+    hemmeligt ud i en offentlig actions-log.
+    """
+    if isinstance(f, urllib.error.HTTPError):
+        try:
+            krop = f.read().decode("utf-8", "replace")[:300]
+        except Exception:
+            krop = ""                      # kroppen er læst eller lukket
+        return f"HTTP {f.code} {f.reason} {krop}".strip()
+    return f"{type(f).__name__}: {f}"[:300]
+
+
 def lav_billeder(artikler: list[dict]) -> None:
     """Genererer ét AI-billede pr. tophistorie. Billedet laves kun én gang
     (filnavn = hash af linket) og bruges for altid. Kræver GEMINI_API_KEY,
@@ -2498,10 +2519,21 @@ def lav_billeder(artikler: list[dict]) -> None:
             time.sleep(GEMINI_PAUSE_SEK)
         except Exception as f:
             fejl_i_traek += 1
-            print(f"  ⚠️  Billede fejlede ({a['kilde']}): {type(f).__name__} "
-                  f"{'- er betaling slået til på Google-kontoen?' if fejl_i_traek >= 2 else ''}")
+            print(f"  ⚠️  Billede fejlede ({a['kilde']}): {_billed_fejltekst(f)}")
     if lavet:
         print(f"🎨 Genererede {lavet} nye artikelbilleder")
+
+    # Tavshed er den farligste udgang. Kørslen ender "success", selv når ikke ét
+    # billede blev lavet - så et dødt Gemini-kald ligner en helt normal nat, og
+    # forsiden taber et kort ad gangen, uden at nogen får besked. Det skete
+    # 30.07-01.08: 16 kort nåede at stå uden billede, før det blev opdaget i
+    # hånden. Derfor råber vi op, når der VAR noget at lave og intet blev lavet.
+    mangler = sum(1 for a in top
+                  if a["link"] in kandidater and not a.get("billede"))
+    if mangler and not lavet:
+        print(f"🚨 INGEN billeder lavet, men {mangler} kort mangler et. "
+              f"Model: {_billed_model}. Tjek fejlen ovenfor - typisk en "
+              f"udløbet GEMINI_API_KEY, betaling slået fra, eller opbrugt kvote.")
 
     # ryd op: slet billeder for artikler, der er røget ud af listen - men kun
     # dem, ingen side på disken stadig peger på.
