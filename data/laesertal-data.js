@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-01T09:00:40.143715+00:00",
+ "opdateret": "2026-08-01T10:24:36.202664+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,19 +249,19 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 135,
- "sidevisninger_i_alt": 281,
+ "besoeg_i_alt": 134,
+ "sidevisninger_i_alt": 278,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 129,
-   "visninger": 186
+   "besoeg": 128,
+   "visninger": 184
   },
   {
    "sti": "/youtube.html",
    "besoeg": 3,
-   "visninger": 28
+   "visninger": 26
   },
   {
    "sti": "/artikel/7460a49d0a9df98b.html",
@@ -279,9 +279,9 @@ window.LAESERTAL = {
    "visninger": 3
   },
   {
-   "sti": "/artikel/6953a8d0ca71f9ba.html",
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 1
   },
   {
    "sti": "/artikel/6dd5f2d4f0064ecb.html",
@@ -424,12 +424,12 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/2c718aeef1929d2d.html",
+   "sti": "/artikel/6953a8d0ca71f9ba.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 2
   },
   {
-   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "sti": "/artikel/2c718aeef1929d2d.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -459,6 +459,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/fa6e1e31c112dba8.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/68c8dce4daf83e4f.html",
    "besoeg": 0,
    "visninger": 2
@@ -472,7 +477,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 134
+   "besoeg": 133
   },
   {
    "fra": "m.facebook.com",
@@ -484,20 +489,20 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 129,
-    "visninger": 129
+    "besoeg": 128,
+    "visninger": 128
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 57
+    "visninger": 56
    }
   ],
   "/youtube.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 25
+    "visninger": 23
    },
    {
     "fra": "direkte",
@@ -531,11 +536,11 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
-  "/artikel/6953a8d0ca71f9ba.html": [
+  "/artikel/51f6b5a29ea2e2af.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 1
    }
   ],
   "/artikel/6dd5f2d4f0064ecb.html": [
@@ -734,14 +739,14 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/2c718aeef1929d2d.html": [
+  "/artikel/6953a8d0ca71f9ba.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 2
    }
   ],
-  "/artikel/51f6b5a29ea2e2af.html": [
+  "/artikel/2c718aeef1929d2d.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -777,6 +782,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/750af35496d7b51a.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/fa6e1e31c112dba8.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -1027,21 +1039,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/6953a8d0ca71f9ba.html",
-   "besoeg": 0,
-   "visninger": 2,
-   "rubrik": "Googles nye model styrer robotter som en hjernesmart chef",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-30",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
-  },
-  {
    "sti": "/artikel/c037c1f2be4b8b92.html",
    "besoeg": 0,
    "visninger": 2,
@@ -1063,6 +1060,21 @@ window.LAESERTAL = {
    "rubrik": "Microsoft tjener kassen på OpenAI-investering",
    "kategori": "Penge & marked",
    "dato": "2026-07-29",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 2
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/6953a8d0ca71f9ba.html",
+   "besoeg": 0,
+   "visninger": 2,
+   "rubrik": "Googles nye model styrer robotter som en hjernesmart chef",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-30",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1097,6 +1109,21 @@ window.LAESERTAL = {
     {
      "fra": "direkte",
      "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/51f6b5a29ea2e2af.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "AI gør dig mere effektiv – og mere presset",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-26",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
      "visninger": 1
     }
    ]
@@ -1372,21 +1399,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/51f6b5a29ea2e2af.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "AI gør dig mere effektiv – og mere presset",
-   "kategori": "Samfund & etik",
-   "dato": "2026-07-26",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/7280fe4d8d9af175.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1462,6 +1474,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/fa6e1e31c112dba8.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-31",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/999e3252e27a4f99.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1488,7 +1515,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 9
+   "visninger": 10
   },
   {
    "navn": "Politik & jura",

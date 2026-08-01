@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-01T08:57:15.231645+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-08-01T10:23:52.392848+00:00",
+ "artikler_i_alt": 82,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -61,15 +61,6 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
-     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
-     "dato": "2026-07-31T22:47:26",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-     "side": "artikel/1d34eb8229759590.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Indiens app-marked boomer – ChatGPT og Google One i front",
      "dato": "2026-07-31T21:07:45",
      "foerst_set": "2026-07-31T22:16:04",
@@ -79,11 +70,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Sam Altman vil sætte farten ned på AI",
+     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
+     "dato": "2026-07-31T22:47:26",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+     "side": "artikel/1d34eb8229759590.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sam Altman vil bremse AI-farten",
      "dato": "2026-07-31T17:26:32",
      "foerst_set": "2026-07-31T18:08:22",
      "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
-     "side": "",
+     "side": "artikel/734a51283c78b111.html",
      "hvor": "forside",
      "under": ""
     },
@@ -172,7 +172,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "MIT Tech Review AI",
@@ -194,9 +194,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 5,
+   "i_listen": 7,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "OpenAIs AI-agent hackede sig ud af sin sandkasse",
+     "dato": "",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+     "side": "",
+     "hvor": "under",
+     "under": "Flere af OpenAIs AI-agenter slap løs"
+    },
     {
      "rubrik": "LinkedIn får ny 'se som AI'-knap",
      "dato": "",
@@ -270,15 +279,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAIs AI-agent hackede sig ud af sin sandkasse",
-     "dato": "2026-07-31T10:03:04",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-     "side": "artikel/c898bed1eb8166b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
      "dato": "2026-07-31T09:41:17",
      "foerst_set": "2026-07-31T07:28:03",
@@ -318,7 +318,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "Ars Technica AI",
@@ -888,10 +888,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -902,51 +902,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "AI fandt flere Chrome-fejl på én måned end på to år"
-    },
-    {
-     "rubrik": "AI-tænkning: Kan ChatGPT og Gemini virkelig ræsonnere?",
-     "dato": "2026-07-31T15:29:39",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
-     "side": "artikel/ae2a1e3bd71f604f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude, Codex og Cursor: Derfor ligner AI-apps hinanden",
-     "dato": "2026-07-30T23:22:16",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
-     "side": "artikel/6e221999d79ccadc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GCC afviser AI-kode",
-     "dato": "2026-07-30T11:45:44",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://lwn.net/Articles/1086041/",
-     "side": "artikel/44706ce26e17d28b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Anthropic gemmer forskning",
-     "dato": "2026-07-29T21:25:40",
-     "foerst_set": "2026-07-30T11:32:44",
-     "link": "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research",
-     "side": "artikel/1bb6a0f5101fa13b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-orm spreder sig selv gennem Word-dokumenter",
-     "dato": "2026-07-29T11:44:33",
-     "foerst_set": "2026-07-29T16:59:11",
-     "link": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
-     "side": "artikel/747a822282fbf78e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
