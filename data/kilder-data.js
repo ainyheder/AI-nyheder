@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-01T14:47:54.976596+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-08-01T18:47:30.532524+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,8 +13,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 16,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Google fjerner AI-funktion i Earth efter kun én dag",
+     "dato": "",
+     "foerst_set": "2026-07-31T22:16:04",
+     "link": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
+    },
     {
      "rubrik": "Sam Altman vil bremse AI-farten",
      "dato": "",
@@ -59,6 +68,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Sam Altman: Lad ChatGPT lave podcast til ungerne",
+     "dato": "2026-08-01T17:07:34",
+     "foerst_set": "2026-08-01T18:47:30",
+     "link": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+     "side": "artikel/46b49e93011a8617.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Autonomous Key låser dine apps med en fysisk nøgle",
+     "dato": "2026-08-01T15:58:17",
+     "foerst_set": "2026-08-01T18:47:30",
+     "link": "https://techcrunch.com/2026/08/01/this-9-key-physically-locks-your-most-addictive-apps/",
+     "side": "artikel/cafcb1a9de8cfedb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Indiens app-marked boomer – ChatGPT og Google One i front",
@@ -149,24 +176,6 @@ window.KILDER_STATUS = {
      "side": "artikel/358552aaff9aa3c4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Avi Schiffmanns AI-ven bliver dyrere og får stemme",
-     "dato": "2026-07-30T19:44:16",
-     "foerst_set": "2026-07-30T20:00:46",
-     "link": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/",
-     "side": "artikel/b02910e8741963d2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI fandt flere Chrome-fejl på én måned end på to år",
-     "dato": "2026-07-30T18:57:58",
-     "foerst_set": "2026-07-30T19:33:16",
-     "link": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
-     "side": "artikel/f41c7307b77762a6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -177,6 +186,10 @@ window.KILDER_STATUS = {
     [
      "MIT Tech Review AI",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
     ],
     [
      "Hacker News: AI",
@@ -194,7 +207,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -205,15 +218,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
-    },
-    {
-     "rubrik": "OpenAIs AI hackede andre firmaer – hvem stopper det?",
-     "dato": "",
-     "foerst_set": "2026-07-31T18:08:22.003470+00:00",
-     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
     },
     {
      "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
@@ -270,11 +274,29 @@ window.KILDER_STATUS = {
      "under": "ChatGPT får adgang til din medicin"
     },
     {
+     "rubrik": "Shoreline Mafia-rapper beskyldes for AI-sang på Billboard",
+     "dato": "2026-08-01T14:20:00",
+     "foerst_set": "2026-08-01T18:47:30",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+     "side": "artikel/5bd2ff2f2cf8b07a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Universal, Sony og Warner vil holde AI-sange ude",
      "dato": "2026-07-31T12:36:48",
      "foerst_set": "2026-07-31T18:08:22",
      "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
      "side": "artikel/a32f3d3705a3fdcb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's agent hackede andre firmaer",
+     "dato": "2026-07-31T10:03:04",
+     "foerst_set": "2026-07-31T18:08:22",
+     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+     "side": "artikel/c898bed1eb8166b6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -302,15 +324,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-30T21:46:46",
      "link": "https://www.theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
      "side": "artikel/6d58fc6439c45980.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Avi Schiffmanns upopulære AI-ven bliver dyrere",
-     "dato": "2026-07-30T12:33:32",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://www.theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price",
-     "side": "artikel/db87833c97941615.html",
      "hvor": "forside",
      "under": ""
     }
@@ -482,6 +495,10 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      4
+    ],
+    [
+     "TechCrunch AI",
+     1
     ],
     [
      "MIT Tech Review AI",
