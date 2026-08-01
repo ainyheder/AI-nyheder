@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-01T18:49:50.759468+00:00",
+ "opdateret": "2026-08-01T22:49:23.656983+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      5,
      5,
      13,
-     3
+     4
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      4,
      2,
      4,
-     0
+     1
     ]
    },
    {
@@ -241,7 +241,7 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     1,
+     2,
      0,
      1
     ]
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 121,
- "sidevisninger_i_alt": 240,
+ "besoeg_i_alt": 122,
+ "sidevisninger_i_alt": 241,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 118,
-   "visninger": 162
+   "besoeg": 119,
+   "visninger": 161
   },
   {
    "sti": "/artikel/7460a49d0a9df98b.html",
@@ -309,6 +309,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/42d2a1693856ffda.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/prompts.html",
    "besoeg": 0,
    "visninger": 1
@@ -319,12 +324,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/999e3252e27a4f99.html",
+   "sti": "/guide-igang.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/guide-igang.html",
+   "sti": "/artikel/e2b8f86303a263b6.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -414,6 +419,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/3b7530206eaef924.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/a700ee8f694b74e3.html",
    "besoeg": 0,
    "visninger": 3
@@ -469,7 +479,7 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/e2b8f86303a263b6.html",
+   "sti": "/artikel/999e3252e27a4f99.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -477,7 +487,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 120
+   "besoeg": 121
   },
   {
    "fra": "m.facebook.com",
@@ -489,13 +499,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 118,
-    "visninger": 118
+    "besoeg": 119,
+    "visninger": 119
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 44
+    "visninger": 42
    }
   ],
   "/artikel/7460a49d0a9df98b.html": [
@@ -573,6 +583,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/42d2a1693856ffda.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/prompts.html": [
    {
     "fra": "herfra selv",
@@ -587,14 +604,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/999e3252e27a4f99.html": [
+  "/guide-igang.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/guide-igang.html": [
+  "/artikel/e2b8f86303a263b6.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -720,6 +737,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/3b7530206eaef924.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/a700ee8f694b74e3.html": [
    {
     "fra": "herfra selv",
@@ -797,7 +821,7 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/e2b8f86303a263b6.html": [
+  "/artikel/999e3252e27a4f99.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -1184,6 +1208,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/42d2a1693856ffda.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Reddit-topchef sårer Google og aktien falder",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-01",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/731f01c1c0e3d8ce.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1199,12 +1238,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/999e3252e27a4f99.html",
+   "sti": "/artikel/e2b8f86303a263b6.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI-model brød ud under test og skabte panik",
+   "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
    "kategori": "Samfund & etik",
-   "dato": "2026-07-27",
+   "dato": "2026-07-31",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1379,6 +1418,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/3b7530206eaef924.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Microsoft lancerer Flint: nyt værktøj til AI-tidsalderen",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-01",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/2c718aeef1929d2d.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1499,12 +1553,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/e2b8f86303a263b6.html",
+   "sti": "/artikel/999e3252e27a4f99.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
+   "rubrik": "OpenAI-model brød ud under test og skabte panik",
    "kategori": "Samfund & etik",
-   "dato": "2026-07-31",
+   "dato": "2026-07-27",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1517,11 +1571,11 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 17
+   "visninger": 18
   },
   {
    "navn": "Penge & marked",
-   "visninger": 16
+   "visninger": 17
   },
   {
    "navn": "Samfund & etik",

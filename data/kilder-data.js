@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-01T18:47:30.532524+00:00",
+ "opdateret": "2026-08-01T22:47:30.530708+00:00",
  "artikler_i_alt": 87,
  "kilder": [
   {
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 16,
-   "som_ekstra": 5,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "Google fjerner AI-funktion i Earth efter kun én dag",
@@ -23,15 +23,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
-    },
-    {
-     "rubrik": "Sam Altman vil bremse AI-farten",
-     "dato": "",
-     "foerst_set": "2026-07-31T18:08:22.003470+00:00",
-     "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
-     "side": "",
-     "hvor": "under",
-     "under": "Flere af OpenAIs AI-agenter slap løs"
     },
     {
      "rubrik": "Apple vil måske tage penge for avanceret Siri AI",
@@ -52,6 +43,15 @@ window.KILDER_STATUS = {
      "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
     },
     {
+     "rubrik": "AI fandt flere Chrome-fejl på én måned end på to år",
+     "dato": "",
+     "foerst_set": "2026-07-30T19:33:16",
+     "link": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google vil fikse Chrome uden genstart"
+    },
+    {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
      "dato": "",
      "foerst_set": "2026-07-27T17:34:46",
@@ -68,6 +68,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
+     "dato": "2026-08-01T20:26:04",
+     "foerst_set": "2026-08-01T22:47:30",
+     "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+     "side": "artikel/88ab0b7f770b58a2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hank Green undskylder: AI har taget overhånd",
+     "dato": "2026-08-01T19:45:45",
+     "foerst_set": "2026-08-01T22:47:30",
+     "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+     "side": "artikel/c3a681b5291466f9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sam Altman: Lad ChatGPT lave podcast til ungerne",
@@ -88,6 +106,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
+     "dato": "2026-07-31T22:47:26",
+     "foerst_set": "2026-08-01T08:57:15",
+     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+     "side": "artikel/1d34eb8229759590.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Indiens app-marked boomer – ChatGPT og Google One i front",
      "dato": "2026-07-31T21:07:45",
      "foerst_set": "2026-07-31T22:16:04",
@@ -97,11 +124,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
-     "dato": "2026-07-31T22:47:26",
+     "rubrik": "Sam Altman vil bremse AI-udviklingen",
+     "dato": "2026-07-31T17:26:32",
      "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-     "side": "artikel/1d34eb8229759590.html",
+     "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
+     "side": "artikel/734a51283c78b111.html",
      "hvor": "forside",
      "under": ""
     },
@@ -149,51 +176,20 @@ window.KILDER_STATUS = {
      "side": "artikel/fb6c910e2e05da45.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Reddit tjener kassen, men AI skræmmer investorerne",
-     "dato": "2026-07-30T23:08:58",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/",
-     "side": "artikel/93cb0df58a6ec7c8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon bruger 220 milliarder på AI - og investorer elsker det",
-     "dato": "2026-07-30T22:41:41",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host/",
-     "side": "artikel/01023a47e3394a26.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dommer: Trump mangler beviser mod Anthropic",
-     "dato": "2026-07-30T20:26:38",
-     "foerst_set": "2026-07-30T21:46:46",
-     "link": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/",
-     "side": "artikel/358552aaff9aa3c4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
+     "Ars Technica AI",
+     2
+    ],
+    [
      "The Verge AI",
-     3
+     2
     ],
     [
      "MIT Tech Review AI",
      2
-    ],
-    [
-     "Ars Technica AI",
-     1
-    ],
-    [
-     "Hacker News: AI",
-     1
     ]
    ]
   },
@@ -208,7 +204,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 6,
-   "som_ekstra": 7,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "Google trækker AI-værktøj tilbage efter én dag",
@@ -220,6 +216,15 @@ window.KILDER_STATUS = {
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
     },
     {
+     "rubrik": "OpenAI's agent hackede andre firmaer",
+     "dato": "",
+     "foerst_set": "2026-07-31T18:08:22.003470+00:00",
+     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
+    },
+    {
      "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
      "dato": "",
      "foerst_set": "2026-07-31T18:08:22",
@@ -227,15 +232,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
-    },
-    {
-     "rubrik": "LinkedIn får ny 'se som AI'-knap",
-     "dato": "",
-     "foerst_set": "2026-07-30T18:48:04",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
-     "side": "",
-     "hvor": "under",
-     "under": "LinkedIn får knap til at melde AI-sludder"
     },
     {
      "rubrik": "Google DeepMind styrer hele robotter med AI",
@@ -292,15 +288,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI's agent hackede andre firmaer",
-     "dato": "2026-07-31T10:03:04",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-     "side": "artikel/c898bed1eb8166b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
      "dato": "2026-07-31T09:41:17",
      "foerst_set": "2026-07-31T07:28:03",
@@ -326,6 +313,15 @@ window.KILDER_STATUS = {
      "side": "artikel/6d58fc6439c45980.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "LinkedIn får nu en 'AI-sludder'-knap",
+     "dato": "2026-07-30T14:43:26",
+     "foerst_set": "2026-07-30T18:48:04",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
+     "side": "artikel/0d730ddf13850ea0.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -335,7 +331,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     3
+     2
     ],
     [
      "Google DeepMind",
@@ -498,7 +494,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     1
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -891,17 +887,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 6,
    "i_listen": 5,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google rettede flere Chrome-fejl med AI i juni",
-     "dato": "",
-     "foerst_set": "2026-07-31T12:20:32",
-     "link": "https://blog.google/security/chrome-stronger-with-every-update/",
-     "side": "",
-     "hvor": "under",
-     "under": "AI fandt flere Chrome-fejl på én måned end på to år"
-    },
     {
      "rubrik": "Google AI-kode er kun en prototype – dit job er resten",
      "dato": "2026-08-01T07:52:10",
@@ -948,12 +935,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   }
  ],
  "feeds_fil": {
