@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-01T22:47:30.530708+00:00",
- "artikler_i_alt": 87,
+ "opdateret": "2026-08-02T05:45:23.460611+00:00",
+ "artikler_i_alt": 79,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 15,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
+    },
+    {
+     "rubrik": "Sam Altman vil bremse AI-udviklingen",
+     "dato": "",
+     "foerst_set": "2026-07-31T18:08:22.003470+00:00",
+     "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Anthropic vil sænke farten, mens Amazon og SpaceX fortsætter"
     },
     {
      "rubrik": "Apple vil måske tage penge for avanceret Siri AI",
@@ -106,15 +115,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
-     "dato": "2026-07-31T22:47:26",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-     "side": "artikel/1d34eb8229759590.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Indiens app-marked boomer – ChatGPT og Google One i front",
      "dato": "2026-07-31T21:07:45",
      "foerst_set": "2026-07-31T22:16:04",
@@ -124,11 +124,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Sam Altman vil bremse AI-udviklingen",
-     "dato": "2026-07-31T17:26:32",
+     "rubrik": "Flere af OpenAIs AI-agenter slap løs",
+     "dato": "2026-07-31T22:47:26",
      "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
-     "side": "artikel/734a51283c78b111.html",
+     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
+     "side": "artikel/1d34eb8229759590.html",
      "hvor": "forside",
      "under": ""
     },
@@ -176,15 +176,24 @@ window.KILDER_STATUS = {
      "side": "artikel/fb6c910e2e05da45.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Reddit tjener kassen, men AI skræmmer investorerne",
+     "dato": "2026-07-30T23:08:58",
+     "foerst_set": "2026-07-31T07:28:03",
+     "link": "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/",
+     "side": "artikel/93cb0df58a6ec7c8.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     2
+     "The Verge AI",
+     3
     ],
     [
-     "The Verge AI",
+     "Ars Technica AI",
      2
     ],
     [
@@ -216,13 +225,13 @@ window.KILDER_STATUS = {
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
     },
     {
-     "rubrik": "OpenAI's agent hackede andre firmaer",
+     "rubrik": "OpenAI hackede Hugging Face – nu er det tid til panik",
      "dato": "",
-     "foerst_set": "2026-07-31T18:08:22.003470+00:00",
+     "foerst_set": "2026-07-31T18:08:22",
      "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
      "side": "",
      "hvor": "under",
-     "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
+     "under": "Flere af OpenAIs AI-agenter slap løs"
     },
     {
      "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
@@ -232,15 +241,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
-    },
-    {
-     "rubrik": "Google DeepMind styrer hele robotter med AI",
-     "dato": "",
-     "foerst_set": "2026-07-30T18:48:04",
-     "link": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles nye model styrer robotter som en hjernesmart chef"
     },
     {
      "rubrik": "OpenAI afslører: Løbsk AI-agent hackede flere tjenester",
@@ -288,15 +288,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
-     "dato": "2026-07-31T09:41:17",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
-     "side": "artikel/fa6e1e31c112dba8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Apple vil lade dig betale for mere AI",
      "dato": "2026-07-30T18:29:45",
      "foerst_set": "2026-07-31T07:28:03",
@@ -322,20 +313,25 @@ window.KILDER_STATUS = {
      "side": "artikel/0d730ddf13850ea0.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
+     "dato": "2026-07-31T09:41:17",
+     "foerst_set": "2026-07-29T16:59:11",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
+     "side": "artikel/fa6e1e31c112dba8.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Ars Technica AI",
-     4
+     5
     ],
     [
      "TechCrunch AI",
-     2
-    ],
-    [
-     "Google DeepMind",
-     1
+     3
     ],
     [
      "OpenAI Blog",
@@ -357,14 +353,23 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 2,
+   "i_listen": 17,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Claude angreb tre virksomheder",
      "dato": "",
      "foerst_set": "2026-07-31T22:16:04",
      "link": "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
+    },
+    {
+     "rubrik": "AI finder fejl hurtigere end Microsoft kan rette",
+     "dato": "",
+     "foerst_set": "2026-07-29T16:59:11",
+     "link": "https://arstechnica.com/security/2026/07/anthropic-is-finding-bugs-faster-than-microsoft-can-fix-them/",
      "side": "",
      "hvor": "under",
      "under": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl"
@@ -453,7 +458,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Google lader robotter se og lære med Gemini Robotics 2",
      "dato": "2026-07-30T17:58:02",
-     "foerst_set": "2026-07-30T18:48:04",
+     "foerst_set": "2026-07-30T17:07:47",
      "link": "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety/",
      "side": "artikel/aa73778d736e7df1.html",
      "hvor": "forside",
@@ -490,11 +495,15 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "TechCrunch AI",
      2
+    ],
+    [
+     "Google DeepMind",
+     1
     ],
     [
      "MIT Tech Review AI",
@@ -769,26 +778,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 8,
-   "som_ekstra": 0,
+   "i_listen": 7,
+   "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "Googles Gemini Robotics 2 giver robotter helkropsintelligens",
-     "dato": "",
-     "foerst_set": "2026-07-30T17:07:47.291479+00:00",
-     "link": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles nye model styrer robotter som en hjernesmart chef"
-    },
-    {
      "rubrik": "Googles nye model styrer robotter som en hjernesmart chef",
-     "dato": "2026-07-30T15:00:59",
+     "dato": "",
      "foerst_set": "2026-07-30T17:07:47",
      "link": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
-     "side": "artikel/6953a8d0ca71f9ba.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Google lader robotter se og lære med Gemini Robotics 2"
     },
     {
      "rubrik": "Googles nye AI laver sange du selv styrer",
@@ -856,7 +856,7 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -883,58 +883,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Google AI-kode er kun en prototype – dit job er resten",
-     "dato": "2026-08-01T07:52:10",
-     "foerst_set": "2026-08-01T14:47:54",
-     "link": "https://weeraman.com/the-prototype-isnt-the-product/",
-     "side": "artikel/ce918226f1e29975.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft lancerer Flint: nyt værktøj til AI-tidsalderen",
-     "dato": "2026-08-01T02:45:09",
-     "foerst_set": "2026-08-01T14:47:54",
-     "link": "https://microsoft.github.io/flint-chart/",
-     "side": "artikel/3b7530206eaef924.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Situational Awareness-aktien styrtet 67 % i juli",
-     "dato": "2026-07-31T13:37:36",
-     "foerst_set": "2026-08-01T14:47:54",
-     "link": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
-     "side": "artikel/6742ab11a78d1301.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og DeepMind kan tænke – men hvordan?",
-     "dato": "2026-07-31T15:29:39",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
-     "side": "artikel/ae2a1e3bd71f604f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-æstetik: Derfor ligner Claude og Codex hinanden",
-     "dato": "2026-07-30T23:22:16",
-     "foerst_set": "2026-07-31T07:28:03",
-     "link": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
-     "side": "artikel/6e221999d79ccadc.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
