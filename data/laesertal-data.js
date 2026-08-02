@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-02T10:21:51.352555+00:00",
+ "opdateret": "2026-08-02T14:50:08.374053+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      5,
      13,
      3,
-     0
+     1
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 122,
- "sidevisninger_i_alt": 233,
+ "besoeg_i_alt": 116,
+ "sidevisninger_i_alt": 213,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 119,
-   "visninger": 154
+   "besoeg": 113,
+   "visninger": 135
   },
   {
    "sti": "/artikel/7460a49d0a9df98b.html",
@@ -299,12 +299,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/232de1e55cde77a5.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/232de1e55cde77a5.html",
+   "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -349,19 +349,19 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/c9945336eb04156b.html",
+   "sti": "/artikel/2cb97ade90fb06df.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/2cb97ade90fb06df.html",
+   "sti": "/artikel/c9945336eb04156b.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
    "sti": "/laer.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 9
   },
   {
    "sti": "/artikel/9b605bcc833a13f4.html",
@@ -492,11 +492,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 121
-  },
-  {
-   "fra": "m.facebook.com",
-   "besoeg": 1
+   "besoeg": 100
   }
  ],
  "ai_chats": [],
@@ -504,13 +500,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 119,
-    "visninger": 119
+    "besoeg": 113,
+    "visninger": 113
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 35
+    "visninger": 22
    }
   ],
   "/artikel/7460a49d0a9df98b.html": [
@@ -574,14 +570,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/8756b60eb8fa9e43.html": [
+  "/artikel/232de1e55cde77a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/232de1e55cde77a5.html": [
+  "/artikel/8756b60eb8fa9e43.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -644,14 +640,14 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/c9945336eb04156b.html": [
+  "/artikel/2cb97ade90fb06df.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/2cb97ade90fb06df.html": [
+  "/artikel/c9945336eb04156b.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -662,7 +658,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 9
    }
   ],
   "/artikel/9b605bcc833a13f4.html": [
@@ -1205,12 +1201,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/8756b60eb8fa9e43.html",
+   "sti": "/artikel/232de1e55cde77a5.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-firmaer slår lobbyrekord i Washington",
-   "kategori": "Politik & jura",
-   "dato": "2026-07-27",
+   "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-29",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1220,12 +1216,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/232de1e55cde77a5.html",
+   "sti": "/artikel/8756b60eb8fa9e43.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-29",
+   "rubrik": "AI-firmaer slår lobbyrekord i Washington",
+   "kategori": "Politik & jura",
+   "dato": "2026-07-27",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1295,12 +1291,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/c9945336eb04156b.html",
+   "sti": "/artikel/2cb97ade90fb06df.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta satser stort på AI til virksomheder",
-   "kategori": "Penge & marked",
-   "dato": "2026-07-29",
+   "rubrik": "Hugging Face brugt til at klæde folk af",
+   "kategori": "Samfund & etik",
+   "dato": "2026-07-28",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1310,12 +1306,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/2cb97ade90fb06df.html",
+   "sti": "/artikel/c9945336eb04156b.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Hugging Face brugt til at klæde folk af",
-   "kategori": "Samfund & etik",
-   "dato": "2026-07-28",
+   "rubrik": "Meta satser stort på AI til virksomheder",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-29",
    "henvisere": [
     {
      "fra": "herfra selv",
