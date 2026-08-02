@@ -104,6 +104,12 @@ a { color: inherit; }
   display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
 }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+/* Logoet erstattede pulsprikken 02.08. Det er en PNG på 128px, som vises i
+   34px - så holder mærket skarpt helt op til 4x skærme. */
+.brand-logo {
+  width: 34px; height: 34px; align-self: center;
+  display: block; flex: none;
+}
 .brand-navn {
   font-family: var(--font-display); font-weight: 900; font-size: 26px;
   letter-spacing: -.03em;
@@ -114,15 +120,6 @@ a { color: inherit; }
   text-transform: capitalize; display: none;
 }
 @media (min-width: 720px) { .brand-dato { display: inline; } }
-.puls {
-  width: 9px; height: 9px; border-radius: 50%; background: var(--accent);
-  align-self: center; box-shadow: 0 0 0 4px var(--accent-svag);
-  animation: puls 2.4s infinite;
-}
-@keyframes puls {
-  0%,100% { box-shadow: 0 0 0 3px var(--accent-svag); }
-  50%     { box-shadow: 0 0 0 8px var(--accent-svag); }
-}
 .sog { flex: 1; min-width: 150px; max-width: 320px; margin-left: auto; position: relative; }
 .sog input {
   width: 100%; padding: 9px 16px 9px 38px;
@@ -864,7 +861,7 @@ a.pill { text-decoration: none; display: inline-block; }
   .topbar-inner { padding: 10px 14px; gap: 7px; flex-wrap: nowrap; }
   .brand { flex: none; white-space: nowrap; }
   .brand-navn { font-size: 19px; }
-  .puls { display: none; }
+  .brand-logo { width: 26px; height: 26px; }
   /* Filterrækken må krympe og rulle vandret, så intet støder sammen */
   .filtre { flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; gap: 5px;
     overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
@@ -1133,7 +1130,7 @@ footer a { color: var(--accent); }
 <div class="topbar">
   <div class="topbar-inner">
     <a class="brand" href="#">
-      <span class="puls"></span>
+      <img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">
       <span class="brand-navn">AI<em>-nyheder</em></span>
       <span class="brand-dato" id="datoIdag"></span>
     </a>

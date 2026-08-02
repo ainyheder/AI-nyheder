@@ -26,7 +26,8 @@
 body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
 .topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
-.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
 .brand em { font-style:normal; color:var(--accent); }
 main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
 .kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
@@ -50,7 +51,7 @@ footer a { color:var(--accent); }
 </style>
 </head>
 <body>
-<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">Hverdags-AI · OpenAI Blog · 2026-07-16</div>
 <h1>Sådan vil OpenAI beskytte unge mennesker</h1>

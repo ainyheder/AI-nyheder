@@ -45,6 +45,9 @@ a { color: inherit; }
 .topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center;
   gap: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+/* Logoet i topbjaelken. PNG'en er 128px og vises i 30px, saa maerket
+   holder sig skarpt paa skaerme med hoej oploesning. */
+.brand-logo { width: 30px; height: 30px; align-self: center; display: block; flex: none; }
 .brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.03em; }
 .brand-navn em { font-style: normal; color: var(--accent); }
 
@@ -248,7 +251,7 @@ footer a { color: var(--accent); }
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="brand" href="./"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async"><span class="brand-navn">AI<em>-nyheder</em></span></a>
     <nav class="hovedmenu">
       <a class="menu-led" href="./">📄 Artikler</a>
       <span class="menu-skel"></span>

@@ -2835,7 +2835,10 @@ a{{color:inherit;text-decoration:none}}
 .omslag img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}}
 .omslag::after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,23,28,.25) 0%,rgba(21,23,28,.05) 35%,rgba(21,23,28,.88) 100%)}}
 .omslag-top{{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;gap:14px;padding:18px 28px}}
-.o-brand{{font-family:var(--font-display);font-weight:900;font-size:22px;letter-spacing:-.03em;color:#fff}}
+.o-brand{{font-family:var(--font-display);font-weight:900;font-size:22px;letter-spacing:-.03em;color:#fff;display:inline-flex;align-items:center}}
+/* position/opacity nulstilles, fordi .omslag img ovenfor goer alle billeder i
+   omslaget til baggrundsbilleder - og det gaelder ogsaa logoet */
+.o-brand .o-logo{{position:static;width:28px;height:28px;margin-right:9px;opacity:1;display:block;flex:none}}
 .o-brand em{{font-style:normal;color:#b3aaff}}
 .o-tilbage{{margin-left:auto;font-size:13px;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.4);padding:8px 16px;border-radius:999px;backdrop-filter:blur(6px)}}
 .o-tilbage:hover{{background:rgba(255,255,255,.15)}}
@@ -2886,7 +2889,7 @@ footer a{{color:var(--accent)}}
 <header class="omslag">
 <img src="{html.escape(forside_billede)}" alt="" onerror="this.remove()">
 <div class="omslag-top">
-<a class="o-brand" href="./">AI<em>-nyheder</em></a>
+<a class="o-brand" href="./"><img class="o-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a>
 <a class="o-tilbage" href="./">← Dagens nyheder</a>
 </div>
 <div class="omslag-indhold">
@@ -3225,7 +3228,8 @@ def _artikel_side_html(a: dict) -> str:
 body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
 .topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }}
-.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }}
+.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }}
+.brand-logo {{ width:28px; height:28px; margin-right:9px; display:block; flex:none; }}
 .brand em {{ font-style:normal; color:var(--accent); }}
 main {{ max-width:720px; margin:0 auto; padding:44px 24px 80px; }}
 .kicker {{ font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }}
@@ -3249,7 +3253,7 @@ footer a {{ color:var(--accent); }}
 </style>
 </head>
 <body>
-<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">{html.escape(a.get("kategori") or "AI-nyt")} · {html.escape(a.get("kilde", ""))} · {dato_vis}</div>
 <h1>{rubrik}</h1>
@@ -3684,7 +3688,8 @@ def _video_side_html(v: dict) -> str:
 body {{ font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }}
 .topbar {{ position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }}
-.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; }}
+.brand {{ font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }}
+.brand-logo {{ width:28px; height:28px; margin-right:9px; display:block; flex:none; }}
 .brand em {{ font-style:normal; color:var(--accent); }}
 main {{ max-width:720px; margin:0 auto; padding:44px 24px 80px; }}
 .kicker {{ font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--yt); margin-bottom:12px; }}
@@ -3713,7 +3718,7 @@ footer a {{ color:var(--accent); }}
 </style>
 </head>
 <body>
-<div class="topbar"><a class="brand" href="/">AI<em>-nyheder</em></a></div>
+<div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">AI på YouTube · {html.escape(v.get("kanal", ""))} · {dato_vis}</div>
 <h1>{rubrik}</h1>

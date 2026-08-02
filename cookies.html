@@ -30,6 +30,9 @@ a { color: inherit; }
   backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
 .topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
+/* Logoet i topbjaelken. PNG'en er 128px og vises i 30px, saa maerket
+   holder sig skarpt paa skaerme med hoej oploesning. */
+.brand-logo { width: 30px; height: 30px; align-self: center; display: block; flex: none; }
 .brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
 .brand-navn em { font-style: normal; color: var(--accent); }
 .top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
@@ -86,7 +89,7 @@ footer a { color: var(--accent); }
 <body>
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="./"><span class="brand-navn">AI<em>-nyheder</em></span></a>
+    <a class="brand" href="./"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async"><span class="brand-navn">AI<em>-nyheder</em></span></a>
     <a class="top-led" href="om.html">Om os</a>
     <a class="top-led" href="faq.html">FAQ</a>
     <a class="tilbage" href="./">← Nyhederne</a>
