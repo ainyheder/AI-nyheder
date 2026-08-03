@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-03T12:43:55.228266+00:00",
- "artikler_i_alt": 105,
+ "opdateret": "2026-08-03T13:58:46.290408+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -969,7 +969,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI fejler i klinikken",
+     "rubrik": "OpenAI og Google: AI fejler i klinikken",
      "dato": "2026-08-03T00:00:00",
      "foerst_set": "2026-08-03T12:43:55",
      "link": "https://arxiv.org/abs/2607.28677",
@@ -1014,10 +1014,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1028,6 +1028,60 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google vil fikse Chrome uden genstart"
+    },
+    {
+     "rubrik": "OpenAIs milliarder finansierer fake nyhedsside",
+     "dato": "2026-08-03T02:30:30",
+     "foerst_set": "2026-08-03T13:58:46",
+     "link": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+     "side": "artikel/07978a3549fbca97.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "MIT: AI rådgiver om penge overraskende godt",
+     "dato": "2026-08-01T22:25:12",
+     "foerst_set": "2026-08-02T06:08:08",
+     "link": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+     "side": "artikel/2af7715e9dc023ef.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Prototypen er nem med AI - men dit arbejde starter først bagefter",
+     "dato": "2026-08-01T07:52:10",
+     "foerst_set": "2026-08-01T14:47:54",
+     "link": "https://weeraman.com/the-prototype-isnt-the-product/",
+     "side": "artikel/ce918226f1e29975.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft Flint: Nyt AI-værktøj skal gøre data synligt",
+     "dato": "2026-08-01T02:45:09",
+     "foerst_set": "2026-08-01T14:47:54",
+     "link": "https://microsoft.github.io/flint-chart/",
+     "side": "artikel/3b7530206eaef924.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-aktier styrtdykker - Situation Awareness mister 67%",
+     "dato": "2026-07-31T13:37:36",
+     "foerst_set": "2026-08-01T14:47:54",
+     "link": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI kan tænke – men ikke altid på den måde, vi tror",
+     "dato": "2026-07-31T15:29:39",
+     "foerst_set": "2026-08-01T08:57:15",
+     "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+     "side": "artikel/ae2a1e3bd71f604f.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [

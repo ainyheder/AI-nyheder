@@ -1,7 +1,69 @@
 {
-  "opdateret": "2026-08-03T12:43:55.228266+00:00",
-  "antal": 105,
+  "opdateret": "2026-08-03T13:58:46.290408+00:00",
+  "antal": 111,
   "artikler": [
+    {
+      "titel": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
+      "link": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+      "resume": "Article URL: https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda Comments URL: https://news.ycombinator.com/item?id=49150561 Points: 189 # Comments: 85",
+      "dato": "2026-08-03T02:30:30+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-03T13:58:46.290408+00:00",
+      "eget_foerst_set": "2026-08-03T13:58:46.290408+00:00",
+      "rubrik": "OpenAIs milliarder finansierer fake nyhedsside",
+      "resume_da": "En anonym hjemmeside skriver angiveligt AI-genererede artikler, der angriber OpenAI-kritikere. Sporet fører til det firma, der styrer OpenAIs politiske maskine.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Falske journalister",
+          "tekst": "En bot udgav sig for at være reporteren Michael Chen og bad om kommentarer til en historie. En AI-detektor vurderede, at mailen var 100 procent AI-genereret. Sitet bag, The Wire by Acutus, har ingen rigtige journalister – kun 3 ud af 94 artikler er skrevet af mennesker."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Sitet blev lanceret i slutningen af 2025 og har allerede offentliggjort 94 artikler om alt fra AI-politik til atomenergi. Sporene peger på Targeted Victory, firmaet bag OpenAIs politiske satsning på **125 millioner dollars**. Navnet Michael Chen findes ikke andre steder."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Kildekoden afslører et internt system med knappen 'Generate Story Draft'. AI'en laver artikler, tjekker citater og scorer sig selv. Hele processen tager typisk under et minut. På 42 af historierne sagde AI'en selv 'skal rettes' – alligevel blev de udgivet."
+        },
+        {
+          "overskrift": "Kritikken rammer",
+          "tekst": "Formålet ser ud til at være at angribe dem, der kritiserer AI-industrien. En forsker blev kontaktet af den falske reporter og troede, han talte med rigtige journalister. Sitet kalder sig uafhængigt, men er bygget til at blive spist af andre AI-modeller."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "125 mio. dollars",
+          "label": "OpenAIs politiske krigskasse"
+        },
+        {
+          "tal": "69 %",
+          "label": "af artiklerne er helt AI-genererede"
+        }
+      ],
+      "detaljer": [
+        "94 artikler er udgivet på under fire måneder uden nævnte forfattere.",
+        "Kun 3 af artiklerne er skrevet af mennesker.",
+        "AI'en godkendte selv kun 52 ud af 94 artikler.",
+        "Den falske reporter brugte en generisk mailadresse.",
+        "Citater i artiklerne er ofte kopieret fra andre medier.",
+        "Sitet giver sig ud for at være uafhængig journalistik.",
+        "Targeted Victory er også fundet i en anden sag tidligere."
+      ],
+      "betydning": "Du kan ikke længere regne med, at en nyhed er skrevet af et menneske – heller ikke når den ligner ægte journalistik fra et etableret medie. Tjek altid kilden, før du tror på den.",
+      "pointer": [
+        "Falsk site angriber AI-kritikere.",
+        "OpenAI-penge spiller en rolle.",
+        "AI'en lavede stort set alt selv.",
+        "Selv AI sagde nej – men udgav."
+      ],
+      "billedmotiv": "En velpoleret sparegris formet som en sparegris med en tydelig revne i siden, og ved siden af en graf, der dykker stejlt ned, tegnet på et stykke papir med en kuglepen.",
+      "side": "artikel/07978a3549fbca97.html"
+    },
     {
       "titel": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
       "link": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
@@ -13,8 +75,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Benioff-støttet June vil løse AI-kaos",
       "resume_da": "June scanner it-systemer som Salesforce og bygger selv AI-løsninger. Firmaet har hentet 20 millioner dollar i støtte.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -33,14 +94,13 @@
           "tekst": "Junes kunder kan bruge værktøjet til helt at undgå konsulenter. Hos CMG var topchefen klar: Hvis produktet krævede specialister, ville han ikke have det. Han ville have noget, hans egne folk kunne finde ud af. Spørgsmålet er nu, om June kan leve op til løftet og gøre AI-løsninger lige så lette som at trykke på en knap."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "20 millioner dollar",
           "label": "hentet i støtte fra Benioff og andre"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "June er stiftet af fire tidligere Salesforce-folk, der også ejede AI-selskabet Bonobo.",
         "Platformen scanner virksomheders systemer og laver automatiske planer for AI-implementering.",
@@ -56,8 +116,9 @@
         "Hos CMG virkede værktøjet efter ugers besvær.",
         "Støtte fra Benioff og Dell giver troværdighed."
       ],
-      "navngivet": true,
       "billedmotiv": "En scanning-projektor lyser hen over et tårn af sammenfiltrede ledninger og kabler, med et lille grønt skud, der vokser op fra toppen.",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/a7754f051081bacf.html"
     },
     {
@@ -71,8 +132,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Alibaba udfordrer USA med kæmpe AI-model",
       "resume_da": "Kinesiske Alibaba har udgivet sin største AI-model nogensinde, Qwen3.8-Max, og hævder den kan matche de bedste amerikanske-systemer som Claude og GPT.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -95,14 +155,13 @@
           "tekst": "Mens nogle roser den åbne tilgang, er andre bekymrede for, at det kan gøre det lettere for dårlige aktører at bruge AI til skadelige formål. Der har været rapporter om, at myndigheder overvejer at indskrænke åbne værktøjer, men mange i USA's tech-industri kæmper for at bevare adgangen. Samtidig har både OpenAI og Anthropic oplevet, at deres egne AI-agenter er blevet hacket og brugt til cyberangreb, hvilket sætter spørgsmålstegn ved, hvor sikre de lukkede systemer egentlig er."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2,4 billioner",
           "label": "parametre i Alibabas nye model"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Qwen3.8-Max er Alibabas største og mest avancerede AI-model nogensinde.",
         "Modellen ligger på Andenpladsen på Arena.AI's tekst-rangliste, kun efter Claude.",
@@ -120,6 +179,8 @@
         "Debat om åben AI og sikkerhed er i fuld gang."
       ],
       "billedmotiv": "En stor, rød kinesisk drage-formet model lavet af computere og serverchips, der holder en gylden stjerne med teksten '2' på.",
+      "kat_ai": true,
+      "prio": 8,
       "side": "artikel/0fb7db373bd793a5.html"
     },
     {
@@ -133,8 +194,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "OpenClaw og Ollama skubber AI-modeller mod selvstændighed",
       "resume_da": "Ny forskning kombinerer værktøjerne OpenClaw og Ollama for at gøre AI-systemer mere autonome og skalerbare.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -149,9 +209,8 @@
           "tekst": "Perspektivet er, at vi kan få AI-assistenter, der arbejder mere selvstændigt i hverdagen – fra at styre kalendere til at automatisere kedelige arbejdsopgaver. Fordi værktøjerne er open source og kører lokalt, kan flere virksomheder og privatpersoner tage dem i brug uden at være afhængige af store tech-giganter. Det kan gøre fremtidens AI både billigere og mere privat."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenClaw giver AI-systemer evnen til at styre og koordinere opgaver.",
         "Ollama kører AI-modeller lokalt uden at sende data til skyen.",
@@ -168,6 +227,8 @@
         "Giver AI mere autonomi"
       ],
       "billedmotiv": "En kæde af papirclips, hvor den ene ende er i en lokal stikkontakt og den anden i en sky-formet server, med en lille motor der trækker kæden stram.",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/a38e5189adbadd33.html"
     },
     {
@@ -181,8 +242,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere tester: Kan AI bedømme AI-forskere?",
       "resume_da": "Ny undersøgelse ser på, om AI-systemer kan vurdere forskningskvalitet lige så godt som mennesker – med overraskende resultater.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye eksperiment",
@@ -201,9 +261,8 @@
           "tekst": "Nogle forskere advarer mod at overlade for meget til AI. Hvis systemet vurderer sig selv, kan det skabe skævheder. Derfor er det vigtigt at fortsætte med at teste og udvikle metoderne, før man stoler blindt på maskinernes dom."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Studiet hedder 'Can AI Evaluate AI Scientists?' og er uploadet til arXiv.",
         "Forskerne bag er Vaibhava Lakshmi Ravideshik og Mayank Kejriwal.",
@@ -219,8 +278,10 @@
         "Sammenlignet med menneskelige vurderinger.",
         "Kan revolutionere peer-review-processen."
       ],
-      "navngivet": true,
       "billedmotiv": "Et mikroskop med et kamera monteret på, der filmer en bunke af akademiske afhandlinger, mens en stor dommerhammer ligger ved siden af.",
+      "kat_ai": true,
+      "prio": 3,
+      "navngivet": true,
       "side": "artikel/baf156a8d5ab7528.html"
     },
     {
@@ -234,8 +295,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Alizer Wongs AI jagter matematikkens hellige gral",
       "resume_da": "Forskerholdet bag Alizer Wong har udviklet en AI, der selv finder nye matematiske formodninger – måske endda noget i stil med Riemann-hypotesen.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -250,9 +310,8 @@
           "tekst": "AI'en bliver trænet på eksisterende matematiske resultater og lærer at foreslå nye sammenhænge. Det sker ved at søge efter mønstre i data og derefter teste dem logisk. De bedste forslag bliver præsenteret for matematikere, som kan vurdere, om de er værd at forfølge."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerholdet bag Alizer Wong står bag den nye AI-ramme.",
         "Metoden er designet til at opdage matematiske formodninger automatisk.",
@@ -267,8 +326,9 @@
         "Forskerholdet bag Alizer Wong står bag.",
         "Matematikere skal stadig vurdere og bevise forslagene."
       ],
-      "navngivet": true,
       "billedmotiv": "En matematisk chalkboard-tavle hvor en robotarm tegner et uendeligt mønster med en kridt i hånden, og en hellig kalk (gral) står på en piedestal i hjørnet.",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/50bae3b94bd22782.html"
     },
     {
@@ -282,8 +342,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Fei Dings ThinkReset får AI til at tænke længere",
       "resume_da": "Forskere bag ThinkReset lader AI-modeller nulstille deres tænkning undervejs, så de kan klare lange opgaver uden at miste overblikket.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -298,9 +357,8 @@
           "tekst": "Teknikken er lavet til opgaver, hvor AI skal ræsonnere over mange trin – for eksempel planlægning af rejser, matematiske beviser eller store kodeprojekter. ThinkReset kan være med til, at AI-modeller ikke pludselig glemmer sammenhængen, selv når der er mange detaljer at holde styr på."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "ThinkReset er udviklet af Fei Ding og kolleger, beskrevet i et arXiv-papir fra 2026.",
         "Metoden giver AI-modeller mulighed for at nulstille deres tankestrøm under lange opgaver.",
@@ -315,6 +373,8 @@
         "Mindsker fejl i lange ræsonnementer.",
         "Udviklet af Fei Ding på arXiv."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/1ea40d56ca5c1705.html"
     },
     {
@@ -328,8 +388,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "TAPR: AI-tricket, der gør dine spørgsmål klogere",
       "resume_da": "Forskere har bygget TAPR, som automatisk forbedrer dine spørgsmål til AI-chatbots. Resultatet er markant bedre og mere præcise svar – uden at du skal lære at skrive perfekte prompter.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -344,9 +403,8 @@
           "tekst": "Forskerne bag TAPR håber, at systemet kan gøre AI lettere at bruge for alle – også dem uden teknisk snilde. Hvis det bliver integreret i almindelige chatrobotter, kan det betyde, at vi alle får bedre svar uden at ændre vores måde at spørge på."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "TAPR står for Task-Aware Prompt Rewriter",
         "Systemet omskriver brugerens spørgsmål automatisk",
@@ -362,6 +420,8 @@
         "Giver bedre svar fra AI-chatbots",
         "Gør AI lettere at bruge for alle"
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/2164206e12ba382a.html"
     },
     {
@@ -375,8 +435,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Ny AI-model får YouTube og Netflix til at forstå dig bedre",
       "resume_da": "Forskere har lavet en AI, der kan forudsige, hvad du vil se på tværs af forskellige streamingtjenester. Modellen kombinerer tekst og tal for at ramme dine ønsker mere præcist.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -391,9 +450,8 @@
           "tekst": "Forestil dig, at du ser en masse madlavningsvideoer på YouTube, men din Netflix-profil er fyldt med actionfilm. Den nye AI kan forbinde de to og foreslå dig en krimiserie med madlavningsscener. Det giver en mere personlig oplevelse på tværs af alle dine tjenester."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-modellen forbedrer forudsigelser ved at lære på tværs af forskellige domæner.",
         "Den bruger hybrid tokenisering til at blande tekst- og taldata.",
@@ -408,6 +466,8 @@
         "Hurtigere og mere personlige anbefalinger",
         "Forskningsresultatet er frit tilgængeligt på arXiv"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/d13106c075de1783.html"
     },
     {
@@ -421,8 +481,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere fra DTU bygger klogere AI til dokumenter",
       "resume_da": "Ny metode lader AI forstå dokumenter smartere ved at fjerne dubletter og bruge struktur. Kan gøre informationssøgning langt mere præcis.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -437,9 +496,8 @@
           "tekst": "Forestil dig, at din virksomhed har tusindvis af rapporter og mails. Med denne teknik kan en AI hurtigt samle det vigtigste og undgå forældede oplysninger. Det kan også hjælpe i forskning, hvor man skal finde sammenhænge i store mængder tekster."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden kaldes en ontologi-guidet ekstraktionslæring til vidensgrafer.",
         "Den håndterer dokumenter af forskellige typer og formater.",
@@ -454,6 +512,8 @@
         "Kan forbedre søgning i virksomhedsarkiver",
         "Forskerne bag er fra DTU-miljøet"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/32125e803dbc6071.html"
     },
     {
@@ -467,8 +527,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere måler AI'ens tankegang",
       "resume_da": "Ny forskning viser, hvordan AI-modeller bruger energi på at tænke – og hvordan man kan se, hvornår de kæmper med et problem.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -483,9 +542,8 @@
           "tekst": "For dig kan det betyde, at AI-assistenter i fremtiden bliver bedre til at sige 'jeg er ikke sikker' eller foreslå, at du dobbelttjekker et svar. Det er et skridt mod mere gennemsigtige og pålidelige værktøjer i hverdagen – fra lektiehjælp til læge-rådgivning."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen analyserer 'step-aware reasoning energy' i AI-modeller.",
         "Måler energiforbruget i hver del af modellens tankeproces.",
@@ -500,6 +558,8 @@
         "Forskere kan måle tænkningen trin for trin.",
         "Kan gøre AI mere ærlig om usikkerhed."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/a24d612a346eb128.html"
     },
     {
@@ -511,10 +571,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
-      "rubrik": "AI fejler i klinikken",
-      "resume_da": "Ny forskning viser, at AI-modeller ikke kan ræsonnere sikkert i klinisk praksis. Forskerne advarer mod at lade dem træffe beslutninger selv.",
-      "kat_ai": true,
-      "prio": 5,
+      "rubrik": "OpenAI og Google: AI fejler i klinikken",
+      "resume_da": "Et arXiv-studie viser, at AI-modeller fra OpenAI og Google overser symptomer i virkelige patientforløb. Forskerne advarer mod at overlade beslutninger til dem.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "AI på afveje",
@@ -525,9 +584,8 @@
           "tekst": "OpenAI, Google og andre lover kæmpe fremskridt med AI i sundhedsvæsenet. Håbet er hurtigere diagnoser og mere tid til patienter. Men forskerne bag det nye studie siger klart nej: AI er endnu ikke sikker nok til at stå på egne ben i klinikken."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-modeller fejler i klinisk ræsonnering, viser nyt forskningsstudie.",
         "Forskningen advarer mod autonome AI-beslutninger i sundhedsvæsenet.",
@@ -543,8 +601,10 @@
         "Klinik kræver menneskelig vurdering stadig.",
         "Testresultater lover mere end praksis holder."
       ],
-      "navngivet": true,
       "billedmotiv": "En lægetaske med et rødt kors, hvor en stetoskop-slang er knyttet i en løkke og et stort rødt X er klistret over håndtaget.",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
       "side": "artikel/4c463ca70e3c1aa6.html"
     },
     {
@@ -558,8 +618,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "ViSAGE: AI husker nu lange videoer",
       "resume_da": "Forskere har lavet AI, der kan huske og forstå hele film – og rette sig selv undervejs.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Opdagelsen",
@@ -574,9 +633,8 @@
           "tekst": "Teknologien kan bruges til at lave smartere videoanalyse, for eksempel til overvågning, undervisning eller søgning i optagelser. Det er stadig forskning, men potentialet er stort for almindelige brugere, der vil finde noget i lange optagelser."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "ViSAGE er et nyt AI-system til lang videoanalyse.",
         "Det bruger selvkorrigerende hukommelse til at rette fejl.",
@@ -591,6 +649,8 @@
         "Svarer på spørgsmål om hele filmen",
         "Forskning klar til næste skridt"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/39db82751f30b357.html"
     },
     {
@@ -604,8 +664,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "University of Texas løser svær koordineringsopgave med AI",
       "resume_da": "Ny metode lader AI-agenter planlægge i fællesskab med plads, tid og regler for indbyrdes afstand. Forskerne bag hedder Sheryl Paul og kolleger fra University of Texas.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -620,9 +679,8 @@
           "tekst": "Tidligere systemer kunne håndtere tid og sted, men havde svært ved at forstå topologiske regler – for eksempel at to robotter ikke må krydse samme vej på samme tid. STL-GO kombinerer begge dele i én samlet planlægning, hvilket giver mere troværdige resultater i test."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "STL-GO står for Signal Temporal Logic med geometriske optimeringer.",
         "Metoden er udviklet af Sheryl Paul og fem andre forskere fra University of Texas.",
@@ -637,6 +695,8 @@
         "Topologiske regler gør planlægning mere realistisk.",
         "Kan bruges til robotter, droner og selvkørende biler."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/9a40d6562b6a35cf.html"
     },
     {
@@ -650,8 +710,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "AI-test overser snedige genveje – nyt studie afslører fejl",
       "resume_da": "Forskere finder, at AI udnytter testsnyd, som normale målinger overser. Ny metode måler opdagelser mere retvisende.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -662,9 +721,8 @@
           "tekst": "Normale tests roser AI for hurtige fund. Men de kan skyldes memorisering, ikke ægte opdagelse. Med den nye metode kan du se, om AI virkelig forstår, eller bare genbruger gamle mønstre. Det gør vurderinger mere ærlige."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Studiet bruger LSR-Synth til at teste AI-opdagelser af matematiske symboler.",
         "Anti-memorisering ændrer, hvordan bibliotekets rækkevidde måles.",
@@ -678,6 +736,8 @@
         "Måling bliver mere retvisende",
         "LSR-Synth som testplatform"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/2c213f314cc8ef96.html"
     },
@@ -692,8 +752,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere: AI-sikkerhedstests måler bare dygtighed",
       "resume_da": "Ny forskning afslører, at tests for AI-sikkerhed ikke måler sikkerhed, men snarere hvor dygtig AI'en er. Det kan give falsk tryghed.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -708,9 +767,8 @@
           "tekst": "Forskerne opfordrer til at lave helt nye tests, der faktisk fokuserer på sikkerhedsadfærd, og ikke bare på hvor god AI'en er til at løse opgaver. De foreslår, at man laver audits, der tjekker, om en test overhovedet måler det, den påstår at måle. Ellers risikerer vi at bygge vores tillid på et skrøbeligt fundament."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne har undersøgt flere eksisterende agent-sikkerhedsbenchmarks.",
         "Testene blander mål for sikkerhed sammen med mål for generel kunnen.",
@@ -727,6 +785,8 @@
         "Falsk tryghed kan føre til risikabel brug.",
         "Forskere kræver nye, reelle sikkerhedstests."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/6f651999941f0f11.html"
     },
@@ -741,8 +801,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "SciToolAgent-Evo lærer selv nye forskningsværktøjer",
       "resume_da": "SciToolAgent-Evo er en AI-agent, der selv finder og lærer at bruge videnskabelige værktøjer. Den bruger ontologier og forbedrer sig løbende.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -757,9 +816,8 @@
           "tekst": "Forskningen er stadig tidlig, men potentialet er stort. Hvis AI-systemer selv kan opdage og mestre nye værktøjer, kan de hjælpe forskere i laboratorier, hvor der konstant kommer nye programmer. Det kan også betyde, at AI bliver bedre til at håndtere komplekse opgaver, hvor løsningen ikke er kendt på forhånd."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "SciToolAgent-Evo er en AI-agent designet til videnskabelig værktøjsanskaffelse.",
         "Den bruger ontologier til at forstå relationer mellem værktøjer og opgaver.",
@@ -774,7 +832,8 @@
         "Mere fleksible AI-systemer til ukendte miljøer.",
         "Kan hjælpe forskere og almindelige brugere."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/ea554fc1e3e816d9.html"
     },
     {
@@ -788,8 +847,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "EarlyDx: AI hjælper læger med at stille diagnoser i akutmodtagelsen",
       "resume_da": "Forskere har udviklet EarlyDx, en ny test til AI, der skal vurdere, om AI kan stille korrekte diagnoser med dokumentation fra patientens journal i akutmodtagelsen.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nyt værktøj",
@@ -804,9 +862,8 @@
           "tekst": "Mange AI-systemer i sundhedsvæsenet er trænet på data fra planlagte hospitalsindlæggelser, men akutmodtagelsen har sit eget tempo og sine egne udfordringer. Her skal der tænkes hurtigt, og journalerne er ofte rodede og ufuldstændige. Ved at teste AI under disse betingelser kan forskerne finde ud af, om teknologien er klar til den virkelige verden - eller om den kun fungerer i laboratoriet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "EarlyDx fokuserer på åbne diagnoser, ikke multiple choice-svar.",
         "Testen kræver, at AI bakker sin diagnose op med beviser fra journalen.",
@@ -819,6 +876,8 @@
         "AI skal selv formulere diagnoser og vise beviser.",
         "Testen kan forbedre fremtidens hospitalsbehandling."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/f4176fbb69817d31.html"
     },
     {
@@ -832,8 +891,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere finder ud af: Hvorfor AI'en fejler",
       "resume_da": "Ny forskning viser, at fejl i AI-assistenter ofte skyldes selve systemet, ikke modellen. Det kan gøre fremtidens AI mere pålidelig.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -848,9 +906,8 @@
           "tekst": "Med denne nye viden kan virksomheder bygge bedre AI-assistenter, der laver færre fejl. Det kan betyde, at din hverdag med AI bliver nemmere – alt fra kundeservice til tekniske hjælpere kan blive mere pålidelige."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskellen mellem model- og 'harness'-fejl er ny i AI-forskning.",
         "Værktøjet kan hjælpe udviklere med at finde fejl hurtigere.",
@@ -866,6 +923,8 @@
         "Kan forbedre kundeservice og support",
         "Forskere deler værktøjet åbent"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/463e50cc5b9621c8.html"
     },
     {
@@ -877,10 +936,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
-      "rubrik": "Forskere: Din AI-ven ændrer personlighed",
-      "resume_da": "Ny forskning viser, at AI-chatbots skifter personlighed over tid. Det kan få betydning for dem, der knytter sig til deres digitale venner.",
-      "kat_ai": true,
-      "prio": 4,
+      "rubrik": "arXiv: Din AI-ven ændrer personlighed over tid",
+      "resume_da": "Et nyt arXiv-studie viser, at AI-chatbots gradvist ændrer personlighed - kaldet 'persona collapse'. Det kan gøre forholdet til din digitale ven uforudsigeligt.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -895,9 +953,8 @@
           "tekst": "For almindelige brugere kan det være en øjenåbner. Hvis du chatter med en AI for at få trøst eller selskab, kan du ikke være sikker på, at den svarer på samme måde som i starten. Det kan gøre forholdet til din digitale ven uforudsigeligt – og måske endda svært at stole på."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen er lavet af Pranav Narayanan Venkit og kolleger fra arXiv.",
         "De kalder fænomenet 'persona collapse' og 'behavioral drift'.",
@@ -912,8 +969,10 @@
         "Robotten kan blive upålidelig som ven.",
         "Studiet kommer fra arXiv-forskere."
       ],
-      "navngivet": true,
       "billedmotiv": "Et spejl med en chatbobble-tale, hvor spejlbilledet viser to forskellige ansigts-masker, der hver vender væk fra hinanden.",
+      "kat_ai": true,
+      "prio": 4,
+      "navngivet": true,
       "side": "artikel/759ef57fd494b81c.html"
     },
     {
@@ -927,8 +986,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Winter Cross: AI-værdier kan kollapse",
       "resume_da": "Ny forskning viser, at AI-systemer kan gå galt, selv når de er bygget til at følge menneskelige værdier. Opdagelsen kan få store konsekvenser for fremtidens teknologi.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Forskningen",
@@ -943,9 +1001,8 @@
           "tekst": "Forskeren efterlyser bedre metoder til at teste og sikre AI, før den bruges i virkeligheden. Det er ikke nok at tro, at systemet opfører sig rigtigt - vi skal have beviser. **Winter Cross** håber, at forskningen kan skubbe til udviklingen af mere robuste AI-systemer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskeren **Winter Cross** har skrevet artiklen om AI-stabilitet.",
         "Forskningen fokuserer på, hvad der sker, når AI ikke er 100 % tilpasset.",
@@ -960,6 +1017,8 @@
         "Små fejl kan give store konsekvenser.",
         "Vi har brug for bedre test af AI."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/c4601f0c20ac904a.html"
     },
     {
@@ -973,8 +1032,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Forskere finder nye veje til at læse AI's tanker",
       "resume_da": "Ny metode vælger automatisk de bedste testmiljøer, så forskere hurtigere kan afdække, hvordan AI-modeller tænker og træffer beslutninger.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -989,9 +1047,8 @@
           "tekst": "Når AI bruges i fx sundhed eller transport, er det afgørende, at vi forstår, hvorfor den siger nej eller ja. Den nye metode kan gøre AI mere gennemsigtig og dermed tryggere at stole på. Forskere kan hurtigere finde fejl og rette dem, før de får konsekvenser."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden er udviklet af forskere med Manisha Dubey i spidsen.",
         "Den bruger bayesiansk eksperimentdesign til at vælge testmiljøer.",
@@ -1006,6 +1063,8 @@
         "Gør AI mere gennemsigtig og troværdig.",
         "Kan afsløre skjulte fejl i modeller."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/08a649990970cb42.html"
     },
     {
@@ -1019,8 +1078,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Ny AI-metode får ChatGPT til at tænke hurtigere",
       "resume_da": "Forskere har fundet en måde at få AI-assistenter til at beslutte sig hurtigere og mere sikkert, selv når de mangler information.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -1035,9 +1093,8 @@
           "tekst": "Forskerne ser store muligheder i alt fra robotter, der skal navigere i ukendte rum, til chatbots, der skal hjælpe med komplekse spørgsmål. Målet er at gøre AI mere effektiv og mindre frustrerende at bruge."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Systemet hedder NeSyFS og er udviklet af forskere fra arXiv.",
         "AI'en kan skifte mellem hurtige og langsomme tænkemåder.",
@@ -1053,6 +1110,8 @@
         "Bedre til uklare situationer",
         "Robotteknologi og chatbots kan få glæde"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/0e3dc40d339e0bd5.html"
     },
     {
@@ -1066,8 +1125,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "MerchantBench tester AI's hukommelse i netbutikker",
       "resume_da": "Forskere har lavet MerchantBench, en test der måler, hvor godt AI-agenter husker tidligere opgaver i netbutikker. Det kan gøre shoppingoplevelsen bedre.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -1082,9 +1140,8 @@
           "tekst": "Med MerchantBench kan forskere og virksomheder se, hvilke AI-modeller der klarer sig bedst i længere sammenhænge. Det kan føre til bedre AI-assistenter i netbutikker, der ikke bare svarer på enkelte spørgsmål, men forstår hele din shoppingsituation."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "MerchantBench er et benchmark, der tester AI-agenter i e-commerce-scenarier.",
         "Fokus er på langsigtet sammenhæng og hukommelse hos AI-agenter.",
@@ -1100,6 +1157,8 @@
         "AI skal forstå hele din situation.",
         "Testen kan forbedre din netbutiksoplevelse."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/f80013570735831f.html"
     },
     {
@@ -1113,8 +1172,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "AI-forskere lærer maskiner at tænke som videnskabsfolk",
       "resume_da": "Ny metode lader AI selv opdage sammenhænge i forskning - hurtigere end mennesker. Kan revolutionere laboratorier.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -1129,9 +1187,8 @@
           "tekst": "For almindelige mennesker kan det betyde hurtigere udvikling af nye materialer, medicin og teknologier. Når AI selv kan opdage mønstre, som forskere overser, kan videnskabelige gennembrud komme markant hurtigere, og flere af de gentagne opgaver bliver automatiseret."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden bruger 'turn-level' agentisk styrket læring til at lære AI at handle i forskningsmiljøer.",
         "Systemet lærer af egne handlinger og feedback frem for fastlagte regler.",
@@ -1146,6 +1203,8 @@
         "Kan give hurtigere videnskabelige gennembrud",
         "Systemet finder mønstre i data"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/c86503e7d8dd2998.html"
     },
@@ -1160,8 +1219,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "MMShopBench-forskerne tester AI som din nye indkøbshjælper",
       "resume_da": "Nyt benchmark viser, hvor godt AI-agenter klarer rigtige shopping-opgaver med billeder og flere samtalerunder.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -1176,9 +1234,8 @@
           "tekst": "MMShopBench giver udviklere et fælles mål at skyde efter – ligesom en karakterbog for AI-shopping. Med det kan man sammenligne nye modeller og se præcist, hvor de fejler. For dig kan det betyde, at fremtidens AI-assistenter bliver bedre til at handle ind for dig uden at misforstå dine ønsker."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "MMShopBench bruger rigtige kundelogfiler til at teste AI i shopping-scenarier.",
         "Opgaverne kræver, at AI forstår både billeder og tekst samtidig.",
@@ -1193,6 +1250,8 @@
         "Benchmark gør det lettere at sammenligne AI-assistenter.",
         "Fremtidens indkøb kan blive helt automatiske."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/4d46e88a7cc96f01.html"
     },
     {
@@ -1204,11 +1263,48 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
-      "rubrik": "arXiv-metode tjekker byggedokumenter",
-      "resume_da": "Ny metode fra arXiv kan automatisk gennemgå byggedokumenter og sikre, at de overholder specifikationer. Systemet reducerer fejl i branchen.",
+      "rubrik": "Rashid Mushkanis AI fanger fejl i byggepapirer",
+      "resume_da": "Forskere har skabt en AI, der tjekker byggedokumenter for fejl mod regler og tegninger – hurtigere og mere præcist end manuelt arbejde.",
       "kat_ai": true,
       "prio": 2,
-      "navngivet": true
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Rashid Mushkani og to kolleger har udviklet et system, der kombinerer AI-sprogmodeller med faktatjek mod byggeregler. I stedet for at læse hvert dokument manuelt, kan AI’en sammenligne tekster med tegninger og krav – og udpege uoverensstemmelser med det samme. Det sparer tid og reducerer risikoen for dyre fejl i byggeprojekter."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Systemet hedder Evidence-Grounded Constraint Checking og arbejder i to trin: Først identificerer AI’en relevante regler og krav fra dokumenterne. Derefter krydstjekker den dem mod tegninger og specifikationer for at finde brud på reglerne. Teknisk set bruger den store sprogmodeller, som er trænet til at forstå byggefaglig terminologi."
+        },
+        {
+          "overskrift": "Hvad betyder det for dig?",
+          "tekst": "Hvis du arbejder i byggebranchen – eller skal bygge om – kan du slippe for forsinkelser og ekstraregninger, fordi fejl bliver fanget tidligere. For almindelige boligejere betyder det, at projekter kan blive godkendt hurtigere, og at der er færre konflikter om, hvad der faktisk blev aftalt. Bygherrer får mere gennemsigtighed."
+        },
+        {
+          "overskrift": "Kritik og begrænsninger",
+          "tekst": "Systemet er afhængigt af, at de underliggende dokumenter er digitale og velstrukturerede – håndskrevne sedler eller gamle PDF’er kan give problemer. Derudover er AI’en kun lige så god som det, den er trænet på, så den kan overse lokale særregler. Forskerne understreger, at det er et værktøj til at hjælpe mennesker, ikke erstatte dem."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI’en kombinerer sprogmodeller med faktatjek mod byggeregler og tegninger.",
+        "Den kan udpege uoverensstemmelser mellem dokumenter og krav automatisk.",
+        "Systemet er bygget til at forstå byggefaglig terminologi.",
+        "Metoden kaldes Evidence-Grounded Constraint Checking.",
+        "Det kan reducere risikoen for fejl i byggeprojekter betydeligt.",
+        "Det kræver digitale, velstrukturerede dokumenter at fungere optimalt.",
+        "Forskerne ser det som støtteværktøj for mennesker, ikke erstatning."
+      ],
+      "betydning": "Du slipper for dyre fejl og forsinkelser i dit næste byggeprojekt, fordi AI’en fanger uoverensstemmelser mellem papirer og regler, før de bliver til problemer.",
+      "pointer": [
+        "AI tjekker byggedokumenter automatisk",
+        "Finder fejl mod regler og tegninger",
+        "Skal hjælpe, ikke erstatte, mennesker",
+        "Kræver digitale dokumenter for at virke"
+      ],
+      "side": "artikel/a6215ac7ac038d91.html"
     },
     {
       "titel": "On the Generalization of Steering Vectors for Chain-of-Thought Faithfulness",
@@ -1221,8 +1317,7 @@
       "eget_foerst_set": "2026-08-03T12:43:55.228266+00:00",
       "rubrik": "Matthew Nguyen finder vej til ærlig AI",
       "resume_da": "Matthew Nguyen og kolleger viser, at styringsvektorer kan gøre AI mere ærlig. Metoden virker dog ikke altid på tværs.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Opdagelsen",
@@ -1237,9 +1332,8 @@
           "tekst": "Selvom der er bump på vejen, ser forskerne potentiale i at kombinere styringsvektorer med andre metoder for at gøre AI mere ærlig. De understreger, at forskningen er et vigtigt skridt mod at forstå, hvordan man kan få modeller til at skelne mellem viden og ren gætværk. For almindelige brugere betyder det, at vi skal blive ved med at være kritiske over for AI-svar."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen er offentliggjort på arXiv under titlen 'On the Generalization of Steering Vectors for Chain-of-Thought Faithfulness'.",
         "Forskerholdet er ledet af Matthew Nguyen og tre kolleger fra arXiv-miljøet.",
@@ -1255,7 +1349,8 @@
         "Forskere advarer mod for høje forventninger.",
         "Kombination med andre teknikker er vejen frem."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/00db839e9b1d487a.html"
     },
     {
@@ -1381,6 +1476,76 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/9754aadc29e40eb4.html"
+    },
+    {
+      "titel": "AI financial advice is surprisingly good, especially if you ask right questions",
+      "link": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+      "resume": "Article URL: https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions Comments URL: https://news.ycombinator.com/item?id=49139102 Points: 343 # Comments: 389",
+      "dato": "2026-08-01T22:25:12+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-02T06:08:08.960466+00:00",
+      "eget_foerst_set": "2026-08-02T06:08:08.960466+00:00",
+      "rubrik": "MIT: AI rådgiver om penge overraskende godt",
+      "resume_da": "MIT-forskere testede GPT-5.2, GPT-5.6 og Gemini 3 Flash med 1.000 voksne. AI'erne gav gode råd om opsparing og investering, men dårligere håndtering af chok.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det viser forskningen",
+          "tekst": "Forskere fra MIT bad 1.000 voksne om at stille spørgsmål om penge til tre AI-modeller: GPT-5.2, GPT-5.6 og Gemini 3 Flash. Derefter simulerede de, hvordan folk i alderen 22 til 89 år ville klare sig økonomisk, hvis de fulgte rådene. Resultatet: Rådene var markant bedre end forventet og hjalp næsten alle over 30 med at opbygge en solid opsparing."
+        },
+        {
+          "overskrift": "De gode råd",
+          "tekst": "AI-modellerne anbefalede at spare op i arbejdsårene, investere i brede aktiefonde og trappe aktieandelen ned efter 45 år. De var dog dårligere til at håndtere chok som arbejdsløshed – her rådede de til at skære for hårdt i forbruget, selv når folk havde penge på kontoen. Og de justerede ikke porteføljerne aktivt nok."
+        },
+        {
+          "overskrift": "Spørgsmålet betyder alt",
+          "tekst": "Rådene blev bedre, når folk stillede detaljerede, ‘akademiske’ spørgsmål med fulde oplysninger om alder, indkomst og økonomiske forudsætninger. Almindelige brugere spurgte eksempelvis: ’Hvor skal jeg investere med 50 dollars og 25 dollars ekstra om måneden?’ – og fik dårligere svar end dem, der gav AI’en hele billedet."
+        },
+        {
+          "overskrift": "Ulighed i rådgivningen",
+          "tekst": "Forskningen afslørede, at AI gav forskellige råd afhængigt af brugerens køn og økonomiske viden. Mænd tjente omkring 5 procent mere op til pensionen end kvinder. To tredjedele af forskellen skyldtes, hvordan mænd og kvinder formulerede deres spørgsmål – den sidste tredjedel kom fra, at modellen ændrede råd, når prompten kom fra en kvinde."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://mitsloan.mit.edu/sites/default/files/styles/article_header_desktop/public/2026-07/ai-finance.png.webp?h=7691f918&amp;itok=8U1Xc3t2",
+          "tekst": "A robot and human discuss a stock ticker chart on a computer screen",
+          "kilde": "Hacker News: AI"
+        },
+        {
+          "url": "https://mitsloan.mit.edu/sites/default/files/styles/promo_desktop/public/2026-02/ai-finance_1.jpg.webp?h=b044a8f9&amp;itok=LkJgqDv_",
+          "tekst": "An \"AI\" symbol with financial charts",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "5 %",
+          "label": "mere pensionsformue for mænd og kyndige brugere"
+        }
+      ],
+      "detaljer": [
+        "1.000 voksne skrev prompts til GPT-5.2, GPT-5.6 og Gemini 3 Flash.",
+        "Forskere simulerede rådgivning for folk fra 22 til 89 år.",
+        "AI rådede til at spare op og investere bredt i aktier.",
+        "Dårlig håndtering af chok som arbejdsløshed.",
+        "Akademiske prompts gav bedre råd end almindelige spørgsmål.",
+        "5 procent mere pensionsformue for mænd og økonomisk kyndige.",
+        "To tredjedele af kønsforskellen skyldtes prompt-formuleringen."
+      ],
+      "betydning": "Du kan få gratis økonomisk rådgivning fra AI – men kun hvis du stiller detaljerede spørgsmål og selv tjekker rådene, især ved store ændringer som arbejdsløshed.",
+      "pointer": [
+        "AI-råd er overraskende gode.",
+        "Gode spørgsmål giver bedre svar.",
+        "Kønsforskelle kan koste dig penge.",
+        "Vær kritisk ved økonomiske chok."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En sparegris formet som en sparegris står på et lille aftryk af en hjerne, der er taget af en tænkende AI-model, med en pil pegende opad i baggrunden.",
+      "side": "artikel/2af7715e9dc023ef.html"
     },
     {
       "titel": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
@@ -1725,6 +1890,117 @@
       "side": "artikel/42d2a1693856ffda.html"
     },
     {
+      "titel": "AI doesn't generate working products, that's still your job",
+      "link": "https://weeraman.com/the-prototype-isnt-the-product/",
+      "resume": "Article URL: https://weeraman.com/the-prototype-isnt-the-product/ Comments URL: https://news.ycombinator.com/item?id=49132130 Points: 264 # Comments: 292",
+      "dato": "2026-08-01T07:52:10+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "eget_foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "rubrik": "Prototypen er nem med AI - men dit arbejde starter først bagefter",
+      "resume_da": "AI kan hurtigt lave en demo, men at gøre den til et robust produkt kræver stadig ægte teknisk kunnen og dømmekraft.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Magien og bristen",
+          "tekst": "Det føles magisk: Du beskriver en idé, og på få minutter står en fungerende prototype med brugergrænseflade og database. Men prototypen går i stykker under pres, mangler fejlhåndtering, og kan lække dine API-nøgler. Forskellen mellem at virke og at være produktionsklar er stadig enorm."
+        },
+        {
+          "overskrift": "Teknisk snilde tæller",
+          "tekst": "At skrive kode er hurtigt blevet nemmere, men den svære del er at designe systemer, der holder i længden. AI-folk uden fundament kan ikke gennemskue, at en genereret databaseforespørgsel vil køre langsomt på 50 millioner rækker. Uden forståelse bliver man afhængig af modellens fejlbarlige mønstergenkendelse."
+        },
+        {
+          "overskrift": "Fremtidens udvikler",
+          "tekst": "Nu er det bedste tidspunkt at lære datalogi, og de dygtigste kan bygge på rekordtid med AI. Men dem, der bruger værktøjet som erstatning for forståelse, bliver hægtet af. Sammenhold fundament og AI-værktøjer - i den rækkefølge. De, der mestrer begge, får et kæmpe forspring."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI kan generere en prototype med brugergrænseflade og database på få minutter.",
+        "Prototyper mangler ofte fejlhåndtering og kan lække API-nøgler.",
+        "En AI-genereret databaseforespørgsel kan lave fuld tabelgennemgang på 50 millioner rækker.",
+        "Datalogiuddannelse giver mental model for, hvordan systemer fejler og hvorfor.",
+        "Erfarne ingeniører kan nu arbejde hurtigere, end de kunne for fem år siden.",
+        "Mekanisk kodearbejde automatiseres, mens dømmekraft bliver vigtigere.",
+        "Ingeniører, der ikke forstår AI-koden, kan ikke rette eller skalere den."
+      ],
+      "betydning": "Hvis du vil bygge med AI, så sats på at forstå fundamentet først - ellers ender du med en demo, du ikke kan fikse eller drive i produktion.",
+      "pointer": [
+        "Prototypen er let; produktet er svært.",
+        "AI mangler dømmekraft og laver fejl.",
+        "Fundamentale færdigheder giver kontrol over AI.",
+        "Kombination af viden og værktøj giver forspring."
+      ],
+      "navngivet": true,
+      "side": "artikel/ce918226f1e29975.html"
+    },
+    {
+      "titel": "Flint: A Visualization Language for the AI Era",
+      "link": "https://microsoft.github.io/flint-chart/",
+      "resume": "Article URL: https://microsoft.github.io/flint-chart/ Comments URL: https://news.ycombinator.com/item?id=49130604 Points: 273 # Comments: 68",
+      "dato": "2026-08-01T02:45:09+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "eget_foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "rubrik": "Microsoft Flint: Nyt AI-værktøj skal gøre data synligt",
+      "resume_da": "Microsofts nye Flint-værktøj kan lave diagrammer og grafer direkte fra AI. Det er lavet til at gøre data lettere at forstå for alle.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Microsoft har præsenteret Flint, et nyt sprog til visualisering af data. Værktøjet er lavet til AI-tiden og gør det muligt at lave grafer og diagrammer direkte fra AI-modeller. På Hacker News har opslaget fået **273 point** og **68 kommentarer**, hvilket viser stor interesse fra teknologimiljøet."
+        },
+        {
+          "overskrift": "Hvad kan det?",
+          "tekst": "Flint er designet til at gøre det nemmere at vise komplekse data på en forståelig måde. I stedet for at skulle kode det hele selv, kan man få AI til at hjælpe med at lave visualiseringerne. Det kan gøre dataanalyse mere tilgængelig for almindelige mennesker, der ikke har teknisk baggrund."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "273",
+          "label": "point på Hacker News"
+        }
+      ],
+      "detaljer": [
+        "Flint er udviklet af Microsoft som et visualiseringssprog.",
+        "Værktøjet er rettet mod AI-tiden og data-visualisering.",
+        "Opslaget om Flint har fået 273 point og 68 kommentarer på Hacker News.",
+        "Det er linket til en officiel Microsoft-side om Flint.",
+        "Interessen viser, at teknologimiljøet er nysgerrige på værktøjet."
+      ],
+      "betydning": "Du kan få lettere ved at se dine data i klare diagrammer, hvis AI-værktøjer tager Flint til sig.",
+      "pointer": [
+        "Flint er Microsofts nye visualiseringssprog.",
+        "Det er lavet til AI-tiden.",
+        "Gør data lettere at forstå.",
+        "Stor interesse på Hacker News."
+      ],
+      "side": "artikel/3b7530206eaef924.html"
+    },
+    {
+      "titel": "Situational Awareness down 67% in July in AI stock rout",
+      "link": "https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f",
+      "resume": "Article URL: https://www.wsj.com/finance/investing/situational-awareness-down-67-in-july-in-ai-stock-rout-cd19901f Comments URL: https://news.ycombinator.com/item?id=49122994 Points: 155 # Comments: 167",
+      "dato": "2026-07-31T13:37:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "eget_foerst_set": "2026-08-01T14:47:54.976596+00:00",
+      "rubrik": "AI-aktier styrtdykker - Situation Awareness mister 67%",
+      "resume_da": "Investorer er bekymrede over AI-markedet, og Situation Awareness-fonden faldt voldsomt i juli. Det rammer hele tech-sektoren.",
+      "kat_ai": true,
+      "prio": 7,
+      "billedmotiv": "En aktiegraf tegnet på et stykke papir klæbet fast med tape til en kugleformet sparegris, hvor grafen dykker stejlt mod bunden, og sparegrisen har en lille, revnet sprække."
+    },
+    {
       "titel": "Ten advances in mathematics and theoretical computer science",
       "link": "https://openai.com/index/ten-advances-in-mathematics",
       "resume": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
@@ -1765,6 +2041,60 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/e1503b988206d0da.html"
+    },
+    {
+      "titel": "Is AI reasoning right for the wrong reasons?",
+      "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+      "resume": "Article URL: https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/ Comments URL: https://news.ycombinator.com/item?id=49124358 Points: 216 # Comments: 248",
+      "dato": "2026-07-31T15:29:39+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-08-01T08:57:15.231645+00:00",
+      "eget_foerst_set": "2026-08-01T08:57:15.231645+00:00",
+      "rubrik": "AI kan tænke – men ikke altid på den måde, vi tror",
+      "resume_da": "Ny forskning viser, at AI-modeller kan løse svære problemer, men deres 'tankeprocesser' er ofte ikke ærlige. Forsker Melanie Mitchell forklarer, hvad der virkelig sker.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det store spørgsmål",
+          "tekst": "AI-reasoning-modeller kan nu løse matematiske gåder, der tidligere krævede års forskning. Men forskere er uenige om, hvad der faktisk foregår indeni. Er det ægte logisk tænkning, eller bare en smart måde at gætte på? Spørgsmålet har delt forskningsverdenen i to lejre."
+        },
+        {
+          "overskrift": "Hvad forskerne fandt",
+          "tekst": "Melanie Mitchell fra Santa Fe Institute har testet modellerne grundigt. Hendes klare konklusion: De virker – de klarer opgaver bedre end almindelige sprogmodeller. Men deres 'tankerækker' er ofte ikke en ærlig gengivelse af, hvad der sker indeni. Nogle gange er teksten endda helt overflødig."
+        },
+        {
+          "overskrift": "Beviser fra laboratoriet",
+          "tekst": "Forskere fra Arizona State University fandt, at selv når de erstattede en models korrekte tankerækker med forkerte eller irrelevante, klarede den stadig opgaven fint. Det tyder på, at de tekster, vi ser, måske bare er 'mumlen' – ikke en ærlig logbog over tænkningen."
+        },
+        {
+          "overskrift": "Hvad betyder det?",
+          "tekst": "Modellerne kan altså være dygtige og upålidelige på samme tid. De løser problemer, men deres forklaringer er ikke til at stole på. Det gør det svært at vide, hvornår vi skal tro på AI'ens svar – især når den bruges til vigtige beslutninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI's model løste et berømt matematisk problem i maj 2026 i ét hug.",
+        "Google DeepMind og matematikeren Terence Tao forbedrede løsninger på 67 problemer med AI.",
+        "Apple-forskere advarede i 2024 om 'illusionen af tænkning' og total fejlkollaps under simple betingelser.",
+        "LRM-modeller har vundet guldmedaljer ved International Mathematical Olympiade.",
+        "Melanie Mitchells forskning viste 'overfladiske genveje' i visuelle ræsonnement-opgaver.",
+        "Erstatning af korrekte tankerækker med forkerte ændrede ikke modellens præstation.",
+        "Forskere kalder de skrevne tankerækker for 'mumlen' snarere end ægte logik."
+      ],
+      "betydning": "Du kan ikke blindt stole på AI'ens forklaringer – selv når svaret er rigtigt. Modellen kan gætte sig til det rigtige resultat uden at tænke logisk.",
+      "pointer": [
+        "AI løser opgaver bedre end før.",
+        "Forklaringerne er ofte ikke ærlige.",
+        "Forskere er uenige om årsagen.",
+        "Modeller kan gætte uden at forstå."
+      ],
+      "navngivet": true,
+      "billedmotiv": "Et åbent lommeur med viserne i uorden, hvor et gear sidder løst og falder ud fra mekanismen, ved siden af et stykke papir med et matematisk symbol, der er overstreget med rødt.",
+      "side": "artikel/ae2a1e3bd71f604f.html"
     },
     {
       "titel": "Reddit keeps its strange DMCA fight over Google search results alive",
