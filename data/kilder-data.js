@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-04T18:18:30.313530+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-04T22:36:37.175786+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 4,
+   "i_listen": 19,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "OpenAI møder modstand efter influencer-luksustur",
+     "dato": "",
+     "foerst_set": "2026-08-03T20:18:51",
+     "link": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's influencer-tur endte i voldsom modreaktion"
+    },
     {
      "rubrik": "Google fjerner AI-funktion i Earth efter kun én dag",
      "dato": "",
@@ -59,6 +68,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "SpaceX køber Tesla-batterier for 329 millioner dollar",
+     "dato": "2026-08-04T21:07:26",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/",
+     "side": "artikel/d677fdcd54de9c4c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Z.ai-matchet overgår vestens top – sikkerheden halter",
+     "dato": "2026-08-04T20:05:26",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+     "side": "artikel/c30ea359fc494916.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic indgår 10 mia. dollars-aftale med AI-cloudfirma",
+     "dato": "2026-08-04T19:48:40",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/",
+     "side": "artikel/af3fbfe150b00022.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Wrinkles-app gør din by til en lydfortælling",
+     "dato": "2026-08-04T19:34:34",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://techcrunch.com/2026/08/04/meet-wrinkles-an-ai-app-that-uncovers-the-hidden-stories-of-the-places-around-you/",
+     "side": "artikel/8cd05edd7a37d5b1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia-alliance vil styrke AI-sikkerhed",
+     "dato": "2026-08-04T19:28:49",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+     "side": "artikel/a21d180516b22df2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Spotify lader dig remixe sange med AI",
@@ -122,60 +176,19 @@ window.KILDER_STATUS = {
      "side": "artikel/8e6013752b7746ee.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Brad Menezes' Superblocks får AWS til at lukke AI-data ind",
-     "dato": "2026-08-03T20:00:00",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
-     "side": "artikel/4d7bc75aa17b4e7f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DesignArena får 56 mio. kr. til at lære AI god smag",
-     "dato": "2026-08-03T19:28:57",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/",
-     "side": "artikel/5c210e03771f39bb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI møder modstand efter influencer-luksustur",
-     "dato": "2026-08-03T19:09:56",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-     "side": "artikel/29dbca12f879ba88.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Siri virker endelig - men hvorfor føles det så fladt?",
-     "dato": "2026-08-03T18:43:43",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://techcrunch.com/2026/08/03/apple-finally-fixed-siri-so-why-does-it-feel-anticlimactic/",
-     "side": "artikel/bead3af33d16a520.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kongressen bruger ChatGPT som favorit-AI-værktøj",
-     "dato": "2026-08-03T16:40:55",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/",
-     "side": "artikel/d0bd8659148e449b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Ars Technica AI",
-     2
+     3
     ],
     [
      "MIT Tech Review AI",
+     3
+    ],
+    [
+     "The Verge AI",
      2
     ]
    ]
@@ -190,9 +203,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 4,
+   "i_listen": 9,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Texas bremser AI-datacentre med ny kontrol",
+     "dato": "",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://www.theverge.com/policy/975071/texas-data-center-audit",
+     "side": "",
+     "hvor": "under",
+     "under": "Greg Abbott bremser nye datacentre i Texas"
+    },
     {
      "rubrik": "Google trækker AI-værktøj tilbage efter én dag",
      "dato": "",
@@ -230,11 +252,20 @@ window.KILDER_STATUS = {
      "under": "ChatGPT får adgang til din medicin"
     },
     {
-     "rubrik": "OpenAI's influencer-tur endte i voldsom modreaktion",
-     "dato": "2026-08-04T13:46:41",
-     "foerst_set": "2026-08-04T18:18:30",
-     "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
-     "side": "artikel/24da5cc46a91b3f7.html",
+     "rubrik": "AMD tjener kassen på AI - spil salget falder",
+     "dato": "2026-08-04T16:57:49",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+     "side": "artikel/1670c7880711cf44.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "SpaceX tjener mere på AI end på raketter",
+     "dato": "2026-08-04T16:47:55",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+     "side": "artikel/dc48138fd8511824.html",
      "hvor": "forside",
      "under": ""
     },
@@ -244,15 +275,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-04T18:18:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
      "side": "artikel/62a45b0de0e1035b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Texas bremser AI-datacentre med ny kontrol",
-     "dato": "2026-08-04T11:33:21",
-     "foerst_set": "2026-08-04T18:18:30",
-     "link": "https://www.theverge.com/policy/975071/texas-data-center-audit",
-     "side": "artikel/8b650b9cdc5b34ae.html",
      "hvor": "forside",
      "under": ""
     },
@@ -271,6 +293,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
      "side": "artikel/082edf922d78d860.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's influencer-tur endte i voldsom modreaktion",
+     "dato": "2026-08-04T13:46:41",
+     "foerst_set": "2026-08-03T20:18:51",
+     "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+     "side": "artikel/24da5cc46a91b3f7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -300,27 +331,13 @@ window.KILDER_STATUS = {
      "side": "artikel/bbc62a8f12e04950.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
-     "dato": "2026-08-02T09:00:00",
-     "foerst_set": "2026-08-02T14:49:06",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
-     "side": "artikel/9754aadc29e40eb4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Shoreline Mafia-rapper beskyldes for AI-sang på Billboard",
-     "dato": "2026-08-01T14:20:00",
-     "foerst_set": "2026-08-01T18:47:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
-     "side": "artikel/5bd2ff2f2cf8b07a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     2
+    ],
     [
      "Ars Technica AI",
      2
@@ -346,8 +363,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 19,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Texas stopper nye datacentres strømforbindelser",
+     "dato": "",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
+     "side": "",
+     "hvor": "under",
+     "under": "Greg Abbott bremser nye datacentre i Texas"
+    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -468,11 +494,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     3
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      2
     ],
     [
@@ -499,24 +525,24 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAIs AI hackede sig ind i Hugging Face – her er hvorfor",
+     "dato": "",
+     "foerst_set": "2026-08-03T12:43:55",
+     "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+     "side": "",
+     "hvor": "under",
+     "under": "Sam Altman vil bremse AI-farten efter hack"
+    },
     {
      "rubrik": "USA forbyder kinesiske robotter i navnet på AI-sikkerhed",
      "dato": "2026-08-03T18:43:30",
      "foerst_set": "2026-08-03T20:18:51",
      "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
      "side": "artikel/dc0d90ec364e575f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAIs AI hackede sig ind i Hugging Face – her er hvorfor",
-     "dato": "2026-08-03T08:30:05",
-     "foerst_set": "2026-08-03T12:43:55",
-     "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-     "side": "artikel/e4b3c3d5632c2427.html",
      "hvor": "forside",
      "under": ""
     },
@@ -596,7 +622,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -629,6 +655,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer nyt program til små virksomheder"
+    },
+    {
+     "rubrik": "OpenAI strammer reglerne for AI-cybersikkerhed",
+     "dato": "2026-08-04T19:00:00",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+     "side": "artikel/899f3cac40208dfd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI lancerer nye undervisningsværktøjer",
@@ -726,15 +761,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-30T18:48:04",
      "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
      "side": "artikel/28f36991d0d0d08b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
-     "dato": "2026-07-29T15:00:00",
-     "foerst_set": "2026-07-30T00:08:52",
-     "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-     "side": "artikel/232de1e55cde77a5.html",
      "hvor": "forside",
      "under": ""
     }
@@ -971,7 +997,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "TimeoutError: The read operation timed out",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 1,
