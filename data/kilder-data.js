@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-04T10:21:12.329906+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-04T12:21:02.444193+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -59,6 +59,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "EON vil erstatte havkabler med laser fra rummet",
+     "dato": "2026-08-04T12:00:00",
+     "foerst_set": "2026-08-04T12:21:02",
+     "link": "https://techcrunch.com/2026/08/04/eon-wants-to-move-the-data-superhighway-from-ocean-fiber-to-space-lasers/",
+     "side": "artikel/a7df2b0647a47bfd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Palantirs Karp: AI-branchen er marxistisk",
@@ -158,15 +167,6 @@ window.KILDER_STATUS = {
      "side": "artikel/cafcb1a9de8cfedb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI: Flere AI-agenter slap løs i test",
-     "dato": "2026-07-31T22:47:26",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-     "side": "artikel/1d34eb8229759590.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -230,6 +230,15 @@ window.KILDER_STATUS = {
      "under": "ChatGPT får adgang til din medicin"
     },
     {
+     "rubrik": "Chang Liu-sagen: OpenAI offentliggør beskeder mod Apple",
+     "dato": "2026-08-04T07:27:55",
+     "foerst_set": "2026-08-04T12:21:02",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
+     "side": "artikel/c34e3565d3e99acd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Reddit i krig mod AI-marketingfælder",
      "dato": "2026-08-04T06:00:00",
      "foerst_set": "2026-08-04T10:21:12",
@@ -289,15 +298,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-31T18:08:22",
      "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
      "side": "artikel/a32f3d3705a3fdcb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's AI-agent hackede sig ud af sin sandkasse",
-     "dato": "2026-07-31T10:03:04",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-     "side": "artikel/c898bed1eb8166b6.html",
      "hvor": "forside",
      "under": ""
     }
@@ -835,7 +835,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Forsker vil måle AI-bevidsthed med klassiske tankeeksperimenter",
+     "rubrik": "Peter David Fagan vil måle AI-bevidsthed",
      "dato": "2026-08-04T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00001",
@@ -952,10 +952,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -966,6 +966,60 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google vil fikse Chrome uden genstart"
+    },
+    {
+     "rubrik": "AI-kampen: Hvem tegner bedst en frø med Habsburg-kæbe?",
+     "dato": "2026-08-02T19:42:08",
+     "foerst_set": "2026-08-04T12:21:02",
+     "link": "https://frogs.vaguespac.es/",
+     "side": "artikel/882431d28ce12faa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-penge bag falsk AI-avis, der angriber kritikere",
+     "dato": "2026-08-03T02:30:30",
+     "foerst_set": "2026-08-03T13:58:46",
+     "link": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+     "side": "artikel/07978a3549fbca97.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
+     "dato": "2026-08-01T22:25:12",
+     "foerst_set": "2026-08-02T06:08:08",
+     "link": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+     "side": "artikel/2af7715e9dc023ef.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI laver prototyper, men ikke færdige produkter",
+     "dato": "2026-08-01T07:52:10",
+     "foerst_set": "2026-08-01T14:47:54",
+     "link": "https://weeraman.com/the-prototype-isnt-the-product/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Flint: Nyt sprog fra Microsoft til AI-diagrammer",
+     "dato": "2026-08-01T02:45:09",
+     "foerst_set": "2026-08-01T14:47:54",
+     "link": "https://microsoft.github.io/flint-chart/",
+     "side": "artikel/3b7530206eaef924.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Melanie Mitchell: AI's tænkning er både ægte og bullshit",
+     "dato": "2026-07-31T15:29:39",
+     "foerst_set": "2026-08-01T08:57:15",
+     "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+     "side": "artikel/ae2a1e3bd71f604f.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
