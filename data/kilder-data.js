@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-04T12:21:02.444193+00:00",
- "artikler_i_alt": 116,
+ "opdateret": "2026-08-04T18:18:30.313530+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
+   "i_listen": 20,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -59,6 +59,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Spotify lader dig remixe sange med AI",
+     "dato": "2026-08-04T15:50:06",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
+     "side": "artikel/d239bf7b26606f61.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Greg Abbott bremser nye datacentre i Texas",
+     "dato": "2026-08-04T15:42:35",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
+     "side": "artikel/f373e2402edb434d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Elon Musk bruger halvdelen af tiden på robotter",
+     "dato": "2026-08-04T15:20:06",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://techcrunch.com/2026/08/04/elon-musk-spends-half-his-time-talking-robots-and-ai-on-tesla-earnings-calls/",
+     "side": "artikel/80e106fe7e730816.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple vil stoppe OpenAI med retssag om hemmeligheder",
+     "dato": "2026-08-04T14:03:01",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+     "side": "artikel/54ed8f1ef07ccd3e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Runware lancerer flytbar AI-datacentermodul i containerformat",
+     "dato": "2026-08-04T13:00:00",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/",
+     "side": "artikel/b79c480364b48edd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "EON vil erstatte havkabler med laser fra rummet",
@@ -122,51 +167,6 @@ window.KILDER_STATUS = {
      "side": "artikel/d0bd8659148e449b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Benioff-støttet June vil løse AI-kaos",
-     "dato": "2026-08-03T10:00:00",
-     "foerst_set": "2026-08-03T12:43:55",
-     "link": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
-     "side": "artikel/a7754f051081bacf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
-     "dato": "2026-08-01T20:26:04",
-     "foerst_set": "2026-08-01T22:47:30",
-     "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
-     "side": "artikel/88ab0b7f770b58a2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hank Green undskylder: AI har taget overhånd",
-     "dato": "2026-08-01T19:45:45",
-     "foerst_set": "2026-08-01T22:47:30",
-     "link": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
-     "side": "artikel/c3a681b5291466f9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sam Altman: Lad ChatGPT lave podcast til ungerne",
-     "dato": "2026-08-01T17:07:34",
-     "foerst_set": "2026-08-01T18:47:30",
-     "link": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
-     "side": "artikel/46b49e93011a8617.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Autonomous Key låser dine apps med en fysisk nøgle",
-     "dato": "2026-08-01T15:58:17",
-     "foerst_set": "2026-08-01T18:47:30",
-     "link": "https://techcrunch.com/2026/08/01/this-9-key-physically-locks-your-most-addictive-apps/",
-     "side": "artikel/cafcb1a9de8cfedb.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -190,7 +190,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 10,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -228,6 +228,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "OpenAI's influencer-tur endte i voldsom modreaktion",
+     "dato": "2026-08-04T13:46:41",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+     "side": "artikel/24da5cc46a91b3f7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "YouTuber Hank Green trækker sig efter AI-kritik",
+     "dato": "2026-08-04T13:33:46",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
+     "side": "artikel/62a45b0de0e1035b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Texas bremser AI-datacentre med ny kontrol",
+     "dato": "2026-08-04T11:33:21",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://www.theverge.com/policy/975071/texas-data-center-audit",
+     "side": "artikel/8b650b9cdc5b34ae.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Chang Liu-sagen: OpenAI offentliggør beskeder mod Apple",
@@ -289,15 +316,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-01T18:47:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
      "side": "artikel/5bd2ff2f2cf8b07a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Universal, Sony og Warner vil holde AI-sange ude",
-     "dato": "2026-07-31T12:36:48",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
-     "side": "artikel/a32f3d3705a3fdcb.html",
      "hvor": "forside",
      "under": ""
     }
@@ -613,6 +631,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer nyt program til små virksomheder"
     },
     {
+     "rubrik": "OpenAI lancerer nye undervisningsværktøjer",
+     "dato": "2026-08-04T00:00:00",
+     "foerst_set": "2026-08-04T18:18:30",
+     "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+     "side": "artikel/26f5b739d7f89d3c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI svarer igen på Apples søgsmål",
      "dato": "2026-08-03T22:00:00",
      "foerst_set": "2026-08-04T10:21:12",
@@ -708,15 +735,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-30T00:08:52",
      "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
      "side": "artikel/232de1e55cde77a5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI: GPT-5.6 skal give mere AI per krone",
-     "dato": "2026-07-29T00:00:00",
-     "foerst_set": "2026-07-29T20:36:36",
-     "link": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-     "side": "artikel/2c718aeef1929d2d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -952,10 +970,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -966,60 +984,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google vil fikse Chrome uden genstart"
-    },
-    {
-     "rubrik": "AI-kampen: Hvem tegner bedst en frø med Habsburg-kæbe?",
-     "dato": "2026-08-02T19:42:08",
-     "foerst_set": "2026-08-04T12:21:02",
-     "link": "https://frogs.vaguespac.es/",
-     "side": "artikel/882431d28ce12faa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-penge bag falsk AI-avis, der angriber kritikere",
-     "dato": "2026-08-03T02:30:30",
-     "foerst_set": "2026-08-03T13:58:46",
-     "link": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
-     "side": "artikel/07978a3549fbca97.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
-     "dato": "2026-08-01T22:25:12",
-     "foerst_set": "2026-08-02T06:08:08",
-     "link": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
-     "side": "artikel/2af7715e9dc023ef.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI laver prototyper, men ikke færdige produkter",
-     "dato": "2026-08-01T07:52:10",
-     "foerst_set": "2026-08-01T14:47:54",
-     "link": "https://weeraman.com/the-prototype-isnt-the-product/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Flint: Nyt sprog fra Microsoft til AI-diagrammer",
-     "dato": "2026-08-01T02:45:09",
-     "foerst_set": "2026-08-01T14:47:54",
-     "link": "https://microsoft.github.io/flint-chart/",
-     "side": "artikel/3b7530206eaef924.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Melanie Mitchell: AI's tænkning er både ægte og bullshit",
-     "dato": "2026-07-31T15:29:39",
-     "foerst_set": "2026-08-01T08:57:15",
-     "link": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
-     "side": "artikel/ae2a1e3bd71f604f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
