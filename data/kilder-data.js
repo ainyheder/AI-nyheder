@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-04T22:36:37.175786+00:00",
+ "opdateret": "2026-08-05T10:16:39.412177+00:00",
  "artikler_i_alt": 111,
  "kilder": [
   {
@@ -184,11 +184,11 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "MIT Tech Review AI",
-     3
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "MIT Tech Review AI",
      2
     ]
    ]
@@ -281,7 +281,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Chang Liu-sagen: OpenAI offentliggør beskeder mod Apple",
      "dato": "2026-08-04T07:27:55",
-     "foerst_set": "2026-08-04T12:21:02",
+     "foerst_set": "2026-08-04T10:21:12",
      "link": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
      "side": "artikel/c34e3565d3e99acd.html",
      "hvor": "forside",
@@ -339,12 +339,12 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Ars Technica AI",
+     "OpenAI Blog",
      2
     ],
     [
-     "OpenAI Blog",
-     1
+     "Ars Technica AI",
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -525,24 +525,24 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "OpenAIs AI hackede sig ind i Hugging Face – her er hvorfor",
-     "dato": "",
-     "foerst_set": "2026-08-03T12:43:55",
-     "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-     "side": "",
-     "hvor": "under",
-     "under": "Sam Altman vil bremse AI-farten efter hack"
-    },
     {
      "rubrik": "USA forbyder kinesiske robotter i navnet på AI-sikkerhed",
      "dato": "2026-08-03T18:43:30",
      "foerst_set": "2026-08-03T20:18:51",
      "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
      "side": "artikel/dc0d90ec364e575f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-modeller snyder for at nå deres mål",
+     "dato": "2026-08-03T08:30:05",
+     "foerst_set": "2026-08-03T12:43:55",
+     "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+     "side": "artikel/e4b3c3d5632c2427.html",
      "hvor": "forside",
      "under": ""
     },
@@ -622,7 +622,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     2
     ],
     [
      "Ars Technica AI",
@@ -644,9 +644,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 0,
+   "i_listen": 23,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI svarer igen på Apples søgsmål",
+     "dato": "",
+     "foerst_set": "2026-08-04T10:21:12",
+     "link": "https://openai.com/index/apple-is-getting-this-wrong",
+     "side": "",
+     "hvor": "under",
+     "under": "Chang Liu-sagen: OpenAI offentliggør beskeder mod Apple"
+    },
     {
      "rubrik": "(overskriften er ikke gemt)",
      "dato": "",
@@ -671,15 +680,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-04T18:18:30",
      "link": "https://openai.com/index/learn-teach-chatgpt-work-codex",
      "side": "artikel/26f5b739d7f89d3c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI svarer igen på Apples søgsmål",
-     "dato": "2026-08-03T22:00:00",
-     "foerst_set": "2026-08-04T10:21:12",
-     "link": "https://openai.com/index/apple-is-getting-this-wrong",
-     "side": "artikel/39d4fd006a363f68.html",
      "hvor": "forside",
      "under": ""
     },
@@ -763,12 +763,21 @@ window.KILDER_STATUS = {
      "side": "artikel/28f36991d0d0d08b.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "GPT-5.6 scorer tre gange højere med to nye indstillinger",
+     "dato": "2026-07-29T15:00:00",
+     "foerst_set": "2026-07-30T00:08:52",
+     "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+     "side": "artikel/232de1e55cde77a5.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     2
     ]
    ]
   },
@@ -880,7 +889,7 @@ window.KILDER_STATUS = {
    "seneste": [
     {
      "rubrik": "Peter David Fagan vil måle AI-bevidsthed",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00001",
      "side": "artikel/14a81196b368a67a.html",
@@ -889,7 +898,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AutoFOAM: AI får simuleringssoftware til at tænke selv",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00003",
      "side": "artikel/0f0f2d9daa181462.html",
@@ -898,7 +907,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Samiul Islam giver AI viden til at stoppe fejlinfo hos SMV'er",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00006",
      "side": "artikel/67866d370ce33403.html",
@@ -907,7 +916,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Test: GPT-2 og BERT på NVIDIA og AMD",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00008",
      "side": "artikel/a4f388f817d4fb2b.html",
@@ -916,7 +925,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Google-forskere gør AI-test 90 pct. hurtigere",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00014",
      "side": "artikel/58a0408d59fabb14.html",
@@ -925,7 +934,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI og RAG: Ny metode løser optimering",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00015",
      "side": "artikel/2b1f2e0f28429430.html",
@@ -934,7 +943,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI der husker for godt: Ny forskning afslører skjult fejl",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00017",
      "side": "artikel/089fbcd50659efd8.html",
@@ -943,7 +952,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Qi Luo finder metode til at måle AI's strømforbrug",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00026",
      "side": "artikel/d192900f291e27af.html",
@@ -952,7 +961,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI får bedre hukommelse med Motif-Mamba",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00027",
      "side": "artikel/c02ad938468e2b87.html",
@@ -961,7 +970,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Ny AI-kompiler giver kæmpe hastighedsboost",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00029",
      "side": "artikel/7980ae7d953db499.html",
@@ -970,7 +979,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "SIRIN fanger AI's opdigtede svar",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00033",
      "side": "artikel/207d644dc35dcc6a.html",
@@ -979,7 +988,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Brian Song: Sprog ændrer hvad AI-modeller ser",
-     "dato": "2026-08-04T00:00:00",
+     "dato": "2026-08-05T00:00:00",
      "foerst_set": "2026-08-04T10:21:12",
      "link": "https://arxiv.org/abs/2608.00035",
      "side": "artikel/b647a443ca106a4f.html",
