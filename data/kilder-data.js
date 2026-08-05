@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-05T18:09:19.555739+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-08-05T22:34:32.063236+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 5,
+   "i_listen": 19,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Jeff Dean og forskere forlader Google for AI-startup",
+     "dato": "",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google ryster AI-tronen: Hassabis får ny topstilling"
+    },
     {
      "rubrik": "OpenAI møder modstand efter influencer-luksustur",
      "dato": "",
@@ -61,6 +70,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "Meta udfordrer med Muse Code til store kodebaser",
+     "dato": "2026-08-05T21:21:28",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
+     "side": "artikel/f4b59bdfc21bfca7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Klaviyo køber Elias Torres' AI-startup",
+     "dato": "2026-08-05T20:05:00",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/",
+     "side": "artikel/1619858f8bfb01ba.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Shopify: AI øger salget, ikke kun Google-søgning",
      "dato": "2026-08-05T15:56:14",
      "foerst_set": "2026-08-05T18:09:19",
@@ -79,11 +106,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "TechCrunch Disrupt 2026 viser robotter og fabrikker",
+     "rubrik": "TechCrunch Disrupt får scene om uddøde dyr og robotter",
      "dato": "2026-08-05T15:05:00",
      "foerst_set": "2026-08-05T18:09:19",
      "link": "https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/",
-     "side": "",
+     "side": "artikel/d22824990e8601df.html",
      "hvor": "forside",
      "under": ""
     },
@@ -149,34 +176,16 @@ window.KILDER_STATUS = {
      "side": "artikel/8cd05edd7a37d5b1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia-alliance vil styrke AI-sikkerhed",
-     "dato": "2026-08-04T19:28:49",
-     "foerst_set": "2026-08-04T22:36:37",
-     "link": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
-     "side": "artikel/a21d180516b22df2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Spotify lader dig remixe sange med AI",
-     "dato": "2026-08-04T15:50:06",
-     "foerst_set": "2026-08-04T18:18:30",
-     "link": "https://techcrunch.com/2026/08/04/spotify-adds-merlin-to-its-ai-music-remix-and-covers-effort/",
-     "side": "artikel/d239bf7b26606f61.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
+     "The Verge AI",
      3
     ],
     [
-     "The Verge AI",
-     2
+     "Ars Technica AI",
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -194,9 +203,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
+   "i_listen": 9,
    "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "SpaceX tjener mere på AI end på raketter",
+     "dato": "",
+     "foerst_set": "2026-08-04T22:36:37.175786+00:00",
+     "link": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+     "side": "",
+     "hvor": "under",
+     "under": "SpaceX' skjulte pengemaskine er ikke raketterne"
+    },
     {
      "rubrik": "Texas bremser AI-datacentre med ny kontrol",
      "dato": "",
@@ -261,15 +279,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "SpaceX' skjulte pengemaskine er ikke raketterne",
-     "dato": "2026-08-05T12:35:56",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
-     "side": "artikel/6142b8b93a9ed278.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Reddit lader AI styre modereringen",
      "dato": "2026-08-05T12:00:00",
      "foerst_set": "2026-08-05T18:09:19",
@@ -306,20 +315,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "SpaceX' skjulte pengemaskine er ikke raketterne",
+     "dato": "2026-08-05T12:35:56",
+     "foerst_set": "2026-08-04T22:36:37",
+     "link": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
+     "side": "artikel/6142b8b93a9ed278.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AMD tjener kassen på AI - spil salget falder",
      "dato": "2026-08-04T16:57:49",
      "foerst_set": "2026-08-04T22:36:37",
      "link": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
      "side": "artikel/1670c7880711cf44.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "SpaceX tjener mere på AI end på raketter",
-     "dato": "2026-08-04T16:47:55",
-     "foerst_set": "2026-08-04T22:36:37",
-     "link": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
-     "side": "artikel/dc48138fd8511824.html",
      "hvor": "forside",
      "under": ""
     },
@@ -336,11 +345,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Ars Technica AI",
-     3
+     4
     ],
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "OpenAI Blog",
@@ -362,9 +371,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 3,
+   "i_listen": 17,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Anthropics AI udgav sig for falske identiteter mod GitHub",
+     "dato": "",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI- og Anthropic-agenter hackede rigtige mennesker"
+    },
     {
      "rubrik": "Google dropper Assistant til fordel for Gemini",
      "dato": "",
@@ -393,6 +411,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "Reddit varsler store ændringer for Old Reddit",
+     "dato": "2026-08-05T20:01:32",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://arstechnica.com/gadgets/2026/08/reddit-signals-ominous-upcoming-changes-for-old-reddit-com/",
+     "side": "artikel/8d97d517ecf77da3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hank Green beklager: AI har taget overhånd",
+     "dato": "2026-08-05T19:51:40",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://arstechnica.com/ai/2026/08/hank-green-found-the-ai-problem-that-youtube-labels-cant-catch/",
+     "side": "artikel/89dc1c4799e71c11.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "SpaceX skræmmer investorer med AI-udgifter",
      "dato": "2026-08-05T13:59:17",
      "foerst_set": "2026-08-05T18:09:19",
@@ -402,7 +438,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ukrainske droner får AI til selv at finde mål",
+     "rubrik": "Ukrainske droner får Auterion-AI til selv at finde mål",
      "dato": "2026-08-03T22:11:39",
      "foerst_set": "2026-08-04T00:15:55",
      "link": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
@@ -481,30 +517,12 @@ window.KILDER_STATUS = {
      "side": "artikel/07e66403365804d9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Thierry Rignol sagsøger Yale efter AI-beskyldning",
-     "dato": "2026-07-31T11:00:52",
-     "foerst_set": "2026-07-31T12:20:32",
-     "link": "https://arstechnica.com/tech-policy/2026/07/how-a-yale-ai-cheating-dispute-became-a-13-count-federal-lawsuit/",
-     "side": "artikel/263851407b163742.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google vil fikse Chrome uden genstart",
-     "dato": "2026-07-30T19:26:56",
-     "foerst_set": "2026-07-30T19:33:16",
-     "link": "https://arstechnica.com/ai/2026/07/chrome-may-get-faster-updates-with-no-restart-required/",
-     "side": "artikel/f366591dcea5c36a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "TechCrunch AI",
@@ -1005,10 +1023,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1019,60 +1037,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google vil fikse Chrome uden genstart"
-    },
-    {
-     "rubrik": "TIME serverer AI-bots en anden hjemmeside med reklamer",
-     "dato": "2026-08-05T12:41:47",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/",
-     "side": "artikel/aa6c1f0cba27e49d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI står bag over halvdelen af cyberkriminalitet i Afrika",
-     "dato": "2026-08-04T22:01:41",
-     "foerst_set": "2026-08-05T12:18:35",
-     "link": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
-     "side": "artikel/8097b6823a4f24ab.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Læsere på Hacker News hader AI-billeder i blogs",
-     "dato": "2026-08-04T11:30:17",
-     "foerst_set": "2026-08-05T12:18:35",
-     "link": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
-     "side": "artikel/93f7ffb3992f52f3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI'ernes store svaghed: Kan de tegne en frø med Habsburg-kæbe?",
-     "dato": "2026-08-02T19:42:08",
-     "foerst_set": "2026-08-04T12:21:02",
-     "link": "https://frogs.vaguespac.es/",
-     "side": "artikel/882431d28ce12faa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-støttet netavis afsløret som AI-fup",
-     "dato": "2026-08-03T02:30:30",
-     "foerst_set": "2026-08-03T13:58:46",
-     "link": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
-     "side": "artikel/07978a3549fbca97.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
-     "dato": "2026-08-01T22:25:12",
-     "foerst_set": "2026-08-02T06:08:08",
-     "link": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
-     "side": "artikel/2af7715e9dc023ef.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
