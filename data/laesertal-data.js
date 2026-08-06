@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-06T10:30:28.642453+00:00",
+ "opdateret": "2026-08-06T12:23:30.270097+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      26,
      0,
      25,
-     24
+     25
     ]
    },
    {
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      2,
      3,
      8,
-     4,
-     0
+     5,
+     1
     ]
    },
    {
@@ -745,53 +745,53 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-07-22",
-   "besoeg": 0,
-   "visninger": 100
+   "besoeg": 20,
+   "visninger": 160
   },
   {
    "dato": "2026-07-23",
-   "besoeg": 0,
-   "visninger": 200
+   "besoeg": 50,
+   "visninger": 280
   },
   {
    "dato": "2026-07-24",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 70,
+   "visninger": 90
   },
   {
    "dato": "2026-07-25",
-   "besoeg": 200,
-   "visninger": 200
+   "besoeg": 60,
+   "visninger": 90
   },
   {
    "dato": "2026-07-26",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 60
   },
   {
    "dato": "2026-07-27",
-   "besoeg": 0,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 70
   },
   {
    "dato": "2026-07-28",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 40
   },
   {
    "dato": "2026-07-29",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 30
   },
   {
    "dato": "2026-07-30",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 30
   },
   {
    "dato": "2026-07-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-08-01",
@@ -800,13 +800,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-02",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-03",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-04",
@@ -815,8 +815,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-05",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-06",

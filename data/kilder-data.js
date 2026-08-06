@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-06T10:18:28.414464+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-08-06T12:21:58.621866+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -171,12 +171,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Ars Technica AI",
+     "The Verge AI",
      3
     ],
     [
-     "The Verge AI",
-     2
+     "Ars Technica AI",
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -194,9 +194,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 5,
+   "i_listen": 9,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "OpenAI kalder Apples sagsanlæg for råddent",
+     "dato": "",
+     "foerst_set": "2026-08-06T10:18:28",
+     "link": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple vil stoppe OpenAI med retssag om hemmeligheder"
+    },
     {
      "rubrik": "SpaceX tjener mere på AI end på raketter",
      "dato": "",
@@ -250,15 +259,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
-    },
-    {
-     "rubrik": "OpenAI kalder Apples sagsanlæg for råddent",
-     "dato": "2026-08-06T05:33:11",
-     "foerst_set": "2026-08-06T10:18:28",
-     "link": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
-     "side": "artikel/7d73240009814acb.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Musks leksikon Grokipedia ligger stille",
@@ -349,7 +349,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "OpenAI Blog",
@@ -409,6 +409,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Reddits AI-moderering sletter årti gamle historieindlæg",
+     "dato": "2026-08-06T11:00:44",
+     "foerst_set": "2026-08-06T12:21:58",
+     "link": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/",
+     "side": "artikel/2528674bdf5f50e2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Reddit varsler store ændringer for Old Reddit",
@@ -506,15 +515,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-31T18:08:22",
      "link": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images/",
      "side": "artikel/3d2b4219ea10353b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude er bedre end mennesker til at snyde dig",
-     "dato": "2026-07-31T14:01:40",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/",
-     "side": "artikel/07e66403365804d9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -996,11 +996,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "SafeCommit stopper AI i at handle for tidligt",
+     "rubrik": "AI-assistenter får sikkerhedscertifikat med SafeCommit",
      "dato": "2026-08-06T00:00:00",
      "foerst_set": "2026-08-06T10:18:28",
      "link": "https://arxiv.org/abs/2608.04289",
-     "side": "",
+     "side": "artikel/aaaf1cb6014c35cc.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1039,11 +1039,11 @@ window.KILDER_STATUS = {
      "under": "Google vil fikse Chrome uden genstart"
     },
     {
-     "rubrik": "Meta kørte annoncer med AI-børnemisbrug",
+     "rubrik": "Metas annoncer viste misbrugsbilleder af børn",
      "dato": "2026-08-05T19:47:26",
      "foerst_set": "2026-08-06T10:18:28",
      "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-     "side": "",
+     "side": "artikel/c75b1a332f5f7c38.html",
      "hvor": "forside",
      "under": ""
     },
