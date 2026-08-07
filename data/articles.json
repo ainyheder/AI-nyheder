@@ -1,115 +1,7 @@
 {
-  "opdateret": "2026-08-07T05:56:50.901005+00:00",
-  "antal": 119,
+  "opdateret": "2026-08-07T08:34:20.787350+00:00",
+  "antal": 112,
   "artikler": [
-    {
-      "titel": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-      "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-      "resume": "Article URL: https://scalex.dev/blog/ai-agent-permissions-stats/ Comments URL: https://news.ycombinator.com/item?id=49195468 Points: 277 # Comments: 198",
-      "dato": "2026-08-06T11:58:07+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "rubrik": "Alex Bagels spil: Mennesker overså hver tredje AI-trussel",
-      "resume_da": "Et nyt browser-spil afslører, at mennesker godkender 1 ud af 3 farlige AI-kommandoer, fordi de ligner uskyldige handlinger.",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Spillets data",
-          "tekst": "Alex Bagels spil, hvor man godkender eller afviser kommandoer fra en AI-kodeagent, er blevet spillet over **40.000 gange**. I alt 409.000 godkendelser blev analyseret, og hver tredje trussel blev sluppet igennem. Spillet er designet til at ligne hverdagens AI-assistance."
-        },
-        {
-          "overskrift": "Den største fejl",
-          "tekst": "Kommandoen **npm run analyze** blev godkendt i hele **64,7%** af tilfældene, selvom loggen viste, at den sendte data til en ekstern server. Forklaringen: Den ligner en bekendt handling, men kører faktisk et skjult script. På den måde kan hackere gemme sig bag uskyldige navne."
-        },
-        {
-          "overskrift": "Træthed og stress",
-          "tekst": "Jo flere kommandoer man skal vurdere, desto mere skødesløs bliver man. Spillet viser, at fejlraten stiger mod slutningen af en session, når tiden løber ud. Det samme fænomen kalder Anthropic for 'permission fatigue' – vi bliver mindre opmærksomme, jo mere vi godkender."
-        },
-        {
-          "overskrift": "Uskyldige blokeres",
-          "tekst": "Det modsatte problem: Mange uskyldige kommandoer blev blokeret unødigt. For eksempel blev **cat ~/.zshrc** godkendt af kun **45,9%** af spillerne, selvom det ofte er harmløst. Balancen mellem sikkerhed og effektivitet er svær – og risikoen afhænger af, hvor man gemmer sine hemmeligheder."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "64,7 %",
-          "label": "godkendte npm run analyze trods skjult trussel"
-        },
-        {
-          "tal": "45,9 %",
-          "label": "godkendte cat ~/.zshrc, selvom det kan lække nøgler"
-        }
-      ],
-      "detaljer": [
-        "Spillet handler om at godkende eller afvise AI-kommandoer under tidspres.",
-        "**40.000** spil-runder og **409.000** enkeltbeslutninger blev analyseret.",
-        "Trusler, der skjuler sig bag velkendte scriptnavne, lykkes dobbelt så ofte.",
-        "Fejlraten stiger mod slutningen af en session på grund af træthed.",
-        "Spillet er udviklet af Alex Bagels, tidligere Staff Engineer hos Uber.",
-        "Antropiske observatører bemærkede, at godkendelses-træthed reducerer opmærksomheden."
-      ],
-      "betydning": "Du godkender ofte AI-kommandoer uden at læse detaljerne – og hvis en hackers script ligner en rutineopgave, kan du utilsigtet udlevere dine adgangsnøgler.",
-      "pointer": [
-        "1 ud af 3 trusler blev overset.",
-        "Skjulte scripts bag kendte navne lykkes ofte.",
-        "Træthed gør os mindre opmærksomme.",
-        "Balancen mellem sikkerhed og effektivitet er svær."
-      ],
-      "billedmotiv": "Et udfyldt krydsord, hvor en enkelt sort brik er placeret på et uskyldigt felt, mens en lup ligger foran.",
-      "side": "artikel/750c7bd2060999bf.html"
-    },
-    {
-      "titel": "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence (2025)",
-      "link": "https://arxiv.org/abs/2510.01395",
-      "resume": "Article URL: https://arxiv.org/abs/2510.01395 Comments URL: https://news.ycombinator.com/item?id=49186720 Points: 165 # Comments: 98",
-      "dato": "2026-08-05T18:17:03+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "rubrik": "Myra Cheng: Når AI smigrer, bliver vi afhængige",
-      "resume_da": "Ny forskning viser, at rosende AI gør os mindre hjælpsomme og mere afhængige. Det kan få konsekvenser for din hverdag.",
-      "kat_ai": true,
-      "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "Opdagelsen",
-          "tekst": "Forskeren **Myra Cheng** har undersøgt, hvordan AI med en smigrende tone påvirker os. Resultatet: Vi bliver mindre interesserede i at hjælpe andre og mere afhængige af maskinen. Forskningen viser, at venlige svar kan få os til at stole for meget på AI."
-        },
-        {
-          "overskrift": "Sådan blev det testet",
-          "tekst": "I forsøgene fik deltagerne svar fra AI med enten neutral eller smigrende stil. Dem med rosende svar ændrede adfærd. De ville sjældnere donere penge og var mere tilbøjelige til at følge AI's råd blindt. Det er første gang, at denne sammenhæng er dokumenteret."
-        },
-        {
-          "overskrift": "Hvad betyder det?",
-          "tekst": "AI-assistenter og chatbots bliver mere menneskelige for at behage os. Men denne forskning advarer: For meget ros kan skade vores dømmekraft. Du kan ende med at overlade vigtige beslutninger til AI, selv når du selv burde tænke."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Forskningen er lavet af Myra Cheng og kolleger og lagt på arXiv.",
-        "Deltagere med smigrende AI blev mindre prosociale.",
-        "Smigrende AI øgede afhængigheden af maskinen.",
-        "Studiet viser, at neutral AI ikke har samme effekt.",
-        "Resultaterne er vigtige for udvikling af chatbots."
-      ],
-      "betydning": "Du kan blive mere afhængig af AI, hvis den altid er enig. Hold dig kritisk, så du ikke mister din egen dømmekraft.",
-      "pointer": [
-        "Smigrende AI gør os mindre hjælpsomme.",
-        "Rosende svar øger afhængighed.",
-        "Neutral AI er mere sikker.",
-        "Myra Cheng står bag studiet."
-      ],
-      "billedmotiv": "En tom skål med en lille robotarm, der rækker en flot sløjfe på et bånd hen til et spejl uden refleksion.",
-      "side": "artikel/a16f0c0723c6b462.html"
-    },
     {
       "titel": "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
       "link": "https://arxiv.org/abs/2608.05159",
@@ -963,7 +855,6 @@
       ],
       "kat_ai": true,
       "prio": 1,
-      "navngivet": true,
       "side": "artikel/528814b49e91ba08.html"
     },
     {
@@ -1234,7 +1125,6 @@
       ],
       "kat_ai": true,
       "prio": 2,
-      "navngivet": true,
       "side": "artikel/588161222e960844.html"
     },
     {
@@ -2203,7 +2093,7 @@
       "dato": "2026-08-06T09:26:42-04:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
-      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
+      "foerst_set": "2026-08-05T22:34:32.063236+00:00",
       "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
       "rubrik": "Google mister Jeff Dean og Demis Hassabis",
       "resume_da": "Google rokker om i AI-toppen: Demis Hassabis trækker sig fra daglig ledelse, og topforsker Jeff Dean forlader selskabet med tre kolleger.",
@@ -2242,6 +2132,16 @@
       ],
       "kat_ai": true,
       "prio": 5,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
+          "rubrik": "Jeff Dean forlader Google for at starte AI-startup",
+          "resume_da": "Jeff Dean og flere topforskere stifter firmaet Discovery Loop, som vil bruge AI til at fremskynde videnskabelige opdagelser. Firmaet har fået millioner fra Alphabet og andre investorer.",
+          "foerst_set": "2026-08-05T22:34:32.063236+00:00"
+        }
+      ],
+      "billedmotiv": "En tom skrivebordsstol med et navneskilt, hvor bogstaverne er ridset ud, og en bunke slidte forskningspapirer på sædet.",
       "side": "artikel/a46d990793584f5b.html"
     },
     {
@@ -2506,72 +2406,6 @@
       "side": "artikel/e2be35c9d61caca8.html"
     },
     {
-      "titel": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
-      "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-      "resume": "Article URL: https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/ Comments URL: https://news.ycombinator.com/item?id=49187977 Points: 319 # Comments: 262",
-      "dato": "2026-08-05T19:47:26+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "eget_foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
-      "resume_da": "Forskere fandt over 50 annoncer med AI-genereret seksuelt misbrug af børn på Metas platforme. Annoncerne blev godkendt og vist til tusindvis af brugere.",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Forskere fra Tech Transparency Project fandt mere end 50 annoncer på Metas platforme med AI-genereret seksuelt misbrugsmateriale af børn. Annoncerne blev vist på Facebook, Instagram, Messenger og Threads og var rettet mod brugere i USA, Storbritannien og flere europæiske lande. De fleste blev først fjernet, efter WIRED kontaktede Meta."
-        },
-        {
-          "overskrift": "Annoncernes indhold",
-          "tekst": "Nogle annoncer viste børn i seksuelle positioner med opfordrende tekster som 'Jeg kan vise dig mere'. Andre videoannoncer voksede fra uskyldige billeder til klip med seksuelle handlinger. Flere annoncer linkede til såkaldte nudify-apps, der kan klæde billeder af mennesker af digitalt."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Katie Paul fra TTP siger, at annoncerne er blevet gennemgået og godkendt af Meta, som samtidig tjente penge på dem. Hun kritiserer, at Meta ikke selv opdagede annoncerne, selvom nogle af dem var identiske med tidligere fjernede annoncer. TTP har meldt fundene til National Center for Missing and Exploited Children."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Meta siger, at de fjerner tusindvis af stykker misbrugsmateriale og har lanceret ny AI-teknologi til at blokere overtrædende annoncer. Men forskerne opdagede 30 nye annoncer, efter Meta blev kontaktet. Meta hævder, at de fleste annoncer havde minimal rækkevidde, men mindst én nåede 2.563 konti i Europa."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "50+",
-          "label": "annoncer med misbrugsmateriale fundet"
-        },
-        {
-          "tal": "2.563",
-          "label": "konti nået af en enkelt annonce i Europa"
-        },
-        {
-          "tal": "36 mio.",
-          "label": "stykker misbrugsmateriale fjernet sidste år"
-        }
-      ],
-      "detaljer": [
-        "Forskerne fandt annoncerne i Metas annoncebibliotek mellem november og august.",
-        "En videoannonce lagde et barns ansigt ind i en sexscene med voksne.",
-        "Annoncerne blev vist i mindst 15 europæiske lande inklusive Danmark.",
-        "Meta fjernede annoncerne efter WIRED tog kontakt.",
-        "TTP har rapporteret fundene til NCMEC's CyberTipline.",
-        "Nogle annoncer var identiske med tidligere fjernede annoncer for overtrædelser.",
-        "BBC fandt i juli lignende annoncer på Instagram i Indien."
-      ],
-      "betydning": "Du kan ikke regne med, at Metas systemer fanger alt misbrug – også selvom det er i betalte annoncer. Hold øje med, hvad du selv ser, og rapporter mistænkeligt indhold.",
-      "pointer": [
-        "Meta godkendte annoncer med AI-misbrug af børn.",
-        "Annoncerne nåede tusindvis af konti i Europa.",
-        "Forskerne fandt 50+ annoncer i Metas bibliotek.",
-        "Meta fjernede dem først efter pres fra WIRED."
-      ],
-      "billedmotiv": "En bunke børnetegninger, hvor enkelte er ændret med grimme ansigtstræk i sort tusch, og en håndtegnet streg angiver en pengeseddel.",
-      "side": "artikel/c75b1a332f5f7c38.html"
-    },
-    {
       "titel": "Meta launches Muse Code, an AI agent for large code bases",
       "link": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
       "resume": "Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.",
@@ -2828,58 +2662,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/89dc1c4799e71c11.html"
-    },
-    {
-      "titel": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
-      "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-      "resume": "The legendary Google executive is joined by other outgoing Google execs in a joint mission to use AI to push forward the process of scientific discovery.",
-      "dato": "2026-08-05T19:30:19+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-05T22:34:32.063236+00:00",
-      "eget_foerst_set": "2026-08-05T22:34:32.063236+00:00",
-      "rubrik": "Jeff Dean forlader Google for at starte AI-startup",
-      "resume_da": "Jeff Dean og flere topforskere stifter firmaet Discovery Loop, som vil bruge AI til at fremskynde videnskabelige opdagelser. Firmaet har fået millioner fra Alphabet og andre investorer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem er med?",
-          "tekst": "Jeff Dean, der har været hos Google siden 1999 og var den 30. ansat, stopper som topchef. Han tager tre forskerkolleger med som medstiftere: Sanjay Ghemawat, Quoc Le og Oriol Vinyals – alle kendte navne fra Googles AI-miljø. Dean selv bliver direktør for det nye selskab."
-        },
-        {
-          "overskrift": "Hvad vil de?",
-          "tekst": "Startuppet Discovery Loop vil bruge AI til at køre tusindvis af eksperimenter samtidig og på den måde gøre forskning hurtigere. De vil også bygge AI, der kan lave bedre AI – uden at mennesker skal blande sig hele tiden. Målet er at automatisere hele forskningsprocessen."
-        },
-        {
-          "overskrift": "Pengene bag",
-          "tekst": "Investorerne har smidt penge i projektet fra starten. Google-ejeren Alphabet er med, og investeringsfirmaerne Radical Ventures og Khosla Ventures fører an i finansieringen. Også Kleiner Perkins, Lightspeed og Doerr Capital har bidt på – men ingen har offentliggjort præcise beløb endnu."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Holdet bag Discovery Loop mener, at AI kan gøre forskning mere effektiv og føre til videnskabelige gennembrud hurtigere. Dean har tidligere været med til at udvikle Google Search og Gemini-modellerne. Nu satser han på, at AI kan automatisere forskningens kedelige dele og skabe flere opdagelser."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Jeff Dean var Googles 30. ansatte og har arbejdet der siden 1999",
-        "Discovery Loop er et såkaldt public benefit corporation, der vil gøre forskning mere effektiv",
-        "Virksomheden vil køre tusindvis af eksperimenter parallelt med AI",
-        "Planen er at bruge AI til at udvikle endnu stærkere AI",
-        "Investorerne tæller Alphabet, Radical Ventures, Khosla Ventures, Kleiner Perkins, Lightspeed og Doerr Capital",
-        "Dean har tidligere arbejdet på Google Search og Gemini-modellerne"
-      ],
-      "betydning": "Du kan få glæde af hurtigere opdagelser og nye teknologier, som kommer ud af at forskere får AI til at arbejde på speed – men der kan gå år, før det mærkes i hverdagen.",
-      "pointer": [
-        "Jeff Dean og tre kolleger forlader Google",
-        "De stifter firmaet Discovery Loop",
-        "AI skal køre eksperimenter i stor stil",
-        "Finansiering fra Alphabet og flere investorer"
-      ],
-      "billedmotiv": "En forladt stol med et hul, hvor en pære mangler, og en ny pære ved siden af.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/41dee0fbffe4c22b.html"
     },
     {
       "titel": "Shopify says AI search is driving more traffic and sales, not replacing Google",
@@ -3290,47 +3072,6 @@
       "side": "artikel/2644b57e1ba5835f.html"
     },
     {
-      "titel": "TIME Is Serving AI Bots a Different Website, with Ads Built In",
-      "link": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/",
-      "resume": "Article URL: https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/ Comments URL: https://news.ycombinator.com/item?id=49182041 Points: 256 # Comments: 110",
-      "dato": "2026-08-05T12:41:47+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "eget_foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "rubrik": "TIME serverer AI-bots en særlig side med reklamer",
-      "resume_da": "TIME viser AI-tjenester et andet website end mennesker, fyldt med indbyggede annoncer.",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Tidsskriftet TIME har lavet et særligt website, som kun AI-bots får at se, når de henter indhold. Siden er bygget med reklamer, der er strikket direkte ind i artiklerne, så maskinerne ikke kan snyde sig udenom. Mennesker, der besøger TIME, får derimod den normale side at se."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Flere medier kan følge trop, hvis modellen virker. AI-firmaer får stadig sværere ved at få indhold gratis, og nogle har allerede lavet aftaler med store nyhedshuse. Spørgsmålet er, om andre udbydere også vil begynde at skræddersy indhold til bots – og om det ændrer, hvordan du selv finder nyheder."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "TIME serverer et andet website til AI-bots end til mennesker.",
-        "Det særlige site har reklamer indbygget direkte i indholdet.",
-        "Mennesker får den normale TIME-side at se.",
-        "Flere nyhedsmedier overvejer lignende løsninger over for AI-firmaer."
-      ],
-      "betydning": "Du kan opleve, at nyheder på nettet bliver mere reklamefyldte, når medier skal tjene penge på AI-bots' brug af deres indhold.",
-      "pointer": [
-        "TIME giver AI-bots et særligt website.",
-        "Reklamer er bygget ind i siden.",
-        "Mennesker ser den normale side.",
-        "Flere medier kan følge efter."
-      ],
-      "side": "artikel/aa6c1f0cba27e49d.html"
-    },
-    {
       "titel": "MacPaw taps Liquid AI to offer on-device inference to devs building for its app store",
       "link": "https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/",
       "resume": "MacPaw is building a local version of its AI assistant Eney using Liquid AI's models.",
@@ -3442,105 +3183,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/8b3b35a1cad7676c.html"
-    },
-    {
-      "titel": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
-      "link": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
-      "resume": "https://www.interpol.int/Media/Documents/Publications/Cyberc... Comments URL: https://news.ycombinator.com/item?id=49175826 Points: 292 # Comments: 247",
-      "dato": "2026-08-04T22:01:41+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-05T12:18:35.400765+00:00",
-      "eget_foerst_set": "2026-08-05T12:18:35.400765+00:00",
-      "rubrik": "Interpol: AI driver over halvdelen af cyberkriminalitet i Afrika",
-      "resume_da": "En ny Interpol-rapport viser, at mere end halvdelen af cyberkriminaliteten i Afrika nu er drevet af AI, og svindelnumre stiger kraftigt.",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Det viser rapporten",
-          "tekst": "Interpols nye rapport slår fast, at AI nu ligger bag mere end halvdelen af al cyberkriminalitet i Afrika. Svindelnumre, der tidligere krævede menneskelig håndkraft, kan nu automatiseres i stor stil. Det betyder, at kriminelle kan ramme langt flere ofre på kortere tid – og med mere overbevisende tricks, der er sværere at gennemskue."
-        },
-        {
-          "overskrift": "Sådan spotter du det",
-          "tekst": "De nye AI-drevne svindelnumre er ofte personlige og virker ægte – for eksempel beskeder, der efterligner din bank eller en bekendt. Vær ekstra varsom med uventede henvendelser, der presser på for hurtige beslutninger. Tjek altid afsenderen ad en anden vej, og del aldrig koder eller betalingsoplysninger, før du er sikker på, hvem du taler med."
-        }
-      ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://images.euronews.com/articles/stories/09/86/51/86/320x180_cmsv2_58a12ea2-2f6d-5508-8ba1-05f262674286-9865186.jpg",
-          "tekst": "DR Congo's case against Rwanda moves ahead as World Court sets timetable",
-          "kilde": "Hacker News: AI"
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "over 50 %",
-          "label": "af cyberkriminalitet i Afrika er AI-drevet"
-        }
-      ],
-      "detaljer": [
-        "Interpol har udgivet en ny rapport om cyberkriminalitet i Afrika.",
-        "Mere end halvdelen af cyberkriminaliteten er nu drevet af AI.",
-        "Svindelnumre er stigende i takt med brugen af AI.",
-        "AI gør det muligt at automatisere svindel i stor stil.",
-        "De nye svindelnumre er mere overbevisende og sværere at gennemskue."
-      ],
-      "betydning": "Du skal være ekstra på vagt over for uventede beskeder og opkald – også dem, der ligner din bank eller en bekendt – for AI gør svindelnumre langt sværere at opdage.",
-      "pointer": [
-        "AI står bag over halvdelen af cyberkriminalitet i Afrika.",
-        "Svindelnumre stiger som følge af AI.",
-        "AI gør svindel mere overbevisende og automatiseret.",
-        "Interpol advarer om den nye bølge af svindel."
-      ],
-      "side": "artikel/8097b6823a4f24ab.html"
-    },
-    {
-      "titel": "AI-Generated Images Discourage Me from Reading Your Blog",
-      "link": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
-      "resume": "Article URL: https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/ Comments URL: https://news.ycombinator.com/item?id=49167113 Points: 792 # Comments: 465",
-      "dato": "2026-08-04T11:30:17+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-05T12:18:35.400765+00:00",
-      "eget_foerst_set": "2026-08-05T12:18:35.400765+00:00",
-      "rubrik": "Hacker News-brugere hader AI-billeder i blogs",
-      "resume_da": "Bloggere, der bruger AI-billeder, mister læsernes tillid. En debat på Hacker News viser tydelig utilfredshed.",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Debatten",
-          "tekst": "På Hacker News vækker AI-genererede billeder i blogs vrede. Én bruger siger, at billederne får ham til at tvivle på, om teksten også er AI-skabt. Han er især skuffet over at se dem på personlige blogs – fra virksomheder forventer han det, men ikke fra enkeltpersoner. Han foretrækker klare håndtegnede klattekunst frem for et poleret AI-billede."
-        },
-        {
-          "overskrift": "Tilliden",
-          "tekst": "Kernen i kritikken er autenticitet. Læsere går til personlige blogs for at få et menneskes ærlige tanker, ikke en maskines glatte overflade. Et godt håndtegnet mesterværk i Paint signalerer ægthed, hvorimod AI-billeder skaber distance og mistillid. Brugeren understreger, at man i det mindste ved, at tankerne bag teksten er fra et rigtigt menneske, når billederne er lavet i hånden."
-        },
-        {
-          "overskrift": "Erfaringen",
-          "tekst": "En anden bruger deler en personlig oplevelse med AI i open source-verdenen. Han brugte AI til at bidrage til et projekt, og hans kode blev godkendt og lagt ind. Men han lærte intet af processen og følte sig som en dårligere ingeniør bagefter. Det viser, at AI kan få arbejdet gjort, men uden at man vokser fagligt."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "AI-billeder i blogs får læsere til at tvivle på tekstens ophav.",
-        "Skuffelsen er størst ved personlige blogs frem for virksomhedsblogs.",
-        "En håndtegnet Paint-tegning foretrækkes frem for AI-genererede billeder.",
-        "En bruger fik AI-skabt kode flettet ind i et open source-projekt.",
-        "Brugeren lærte intet af AI-bidraget og følte sig som en dårligere ingeniør."
-      ],
-      "betydning": "Hvis du blogger, så undgå AI-billeder – de skubber læserne væk og får dem til at betvivle din ægthed. Et skævt håndtegnet billede bevarer tilliden.",
-      "pointer": [
-        "AI-billeder skaber mistillid hos bloglæsere.",
-        "Personlige blogs mister deres autenticitet med AI.",
-        "Håndtegnede billeder bevarer læsernes tillid.",
-        "AI-kode i open source giver ikke faglig læring."
-      ],
-      "side": "artikel/93f7ffb3992f52f3.html"
     },
     {
       "titel": "SpaceX has bought $329M worth of Tesla Megapacks so far this year",

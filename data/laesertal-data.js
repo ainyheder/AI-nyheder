@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-07T05:59:26.404695+00:00",
+ "opdateret": "2026-08-07T08:34:44.951013+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 51,
- "sidevisninger_i_alt": 91,
+ "besoeg_i_alt": 48,
+ "sidevisninger_i_alt": 82,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 50,
-   "visninger": 54
+   "besoeg": 47,
+   "visninger": 48
   },
   {
    "sti": "/koerekort.html",
@@ -266,17 +266,17 @@ window.LAESERTAL = {
   {
    "sti": "/laer.html",
    "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/artikel/6742ab11a78d1301.html",
-   "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/0fb7db373bd793a5.html",
+   "sti": "/prompts.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 2
+  },
+  {
+   "sti": "/artikel/42d2a1693856ffda.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
@@ -299,9 +299,9 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/prompts.html",
+   "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 3
   },
   {
    "sti": "/artikel/e911d06afa88ad64.html",
@@ -334,7 +334,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/youtube.html",
+   "sti": "/artikel/c68d5f1c469c21b3.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -344,12 +344,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
+   "sti": "/artikel/9754aadc29e40eb4.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
+   "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -359,9 +359,9 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/fa6e1e31c112dba8.html",
+   "sti": "/artikel/6742ab11a78d1301.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 1
   },
   {
    "sti": "/artikel/c3a681b5291466f9.html",
@@ -379,20 +379,15 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/750af35496d7b51a.html",
+   "sti": "/artikel/fa6e1e31c112dba8.html",
    "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/42d2a1693856ffda.html",
-   "besoeg": 0,
-   "visninger": 1
+   "visninger": 2
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 49
+   "besoeg": 46
   },
   {
    "fra": "www.google.com",
@@ -404,17 +399,17 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 49,
-    "visninger": 49
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 4
+    "besoeg": 46,
+    "visninger": 46
    },
    {
     "fra": "www.google.com",
     "besoeg": 1,
+    "visninger": 1
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -429,21 +424,21 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 1
    }
   ],
-  "/artikel/6742ab11a78d1301.html": [
+  "/prompts.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/artikel/42d2a1693856ffda.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
-   }
-  ],
-  "/artikel/0fb7db373bd793a5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
    }
   ],
   "/artikel/e2b8f86303a263b6.html": [
@@ -474,11 +469,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/prompts.html": [
+  "/artikel/0fb7db373bd793a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 3
    }
   ],
   "/artikel/e911d06afa88ad64.html": [
@@ -523,7 +518,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/youtube.html": [
+  "/artikel/c68d5f1c469c21b3.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -537,14 +532,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9be5bdf1245f9d9a.html": [
+  "/artikel/9754aadc29e40eb4.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/9754aadc29e40eb4.html": [
+  "/artikel/9be5bdf1245f9d9a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -558,11 +553,11 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/fa6e1e31c112dba8.html": [
+  "/artikel/6742ab11a78d1301.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 1
    }
   ],
   "/artikel/c3a681b5291466f9.html": [
@@ -586,18 +581,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/750af35496d7b51a.html": [
+  "/artikel/fa6e1e31c112dba8.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/42d2a1693856ffda.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
+    "visninger": 2
    }
   ]
  },
@@ -607,6 +595,7 @@ window.LAESERTAL = {
   "/ordbog.html",
   "/quiz.html",
   "/uge.html",
+  "/youtube.html",
   "/vaerktoejer.html",
   "/faq.html",
   "/om.html",
@@ -761,8 +750,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-07",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -812,12 +801,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/6742ab11a78d1301.html",
+   "sti": "/artikel/42d2a1693856ffda.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-aktien Situational Awareness styrtdykker 67 pct.",
+   "rubrik": "Reddit-topchef sårer Google og aktien falder",
    "kategori": "Penge & marked",
-   "dato": "2026-07-31",
+   "dato": "2026-08-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -962,12 +951,42 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/c68d5f1c469c21b3.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-06",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/3b7530206eaef924.html",
    "besoeg": 0,
    "visninger": 1,
    "rubrik": "Flint: Nyt sprog fra Microsoft til AI-diagrammer",
    "kategori": "Lanceringer",
    "dato": "2026-08-01",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/9754aadc29e40eb4.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-02",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -992,12 +1011,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
+   "sti": "/artikel/6742ab11a78d1301.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-02",
+   "rubrik": "AI-aktien Situational Awareness styrtdykker 67 pct.",
+   "kategori": "Penge & marked",
+   "dato": "2026-07-31",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1050,36 +1069,6 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
-  },
-  {
-   "sti": "/artikel/750af35496d7b51a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Microsofts CEO siger: Stop med at stole på OpenAI",
-   "kategori": "Penge & marked",
-   "dato": "2026-07-30",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/42d2a1693856ffda.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Reddit-topchef sårer Google og aktien falder",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-01",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
   }
  ],
  "laeste_temaer": [
@@ -1089,11 +1078,11 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
-   "visninger": 6
+   "visninger": 7
   },
   {
    "navn": "Penge & marked",
-   "visninger": 5
+   "visninger": 4
   },
   {
    "navn": "Politik & jura",
