@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-07T20:24:29.188862+00:00",
- "artikler_i_alt": 120,
+ "opdateret": "2026-08-07T22:19:23.686818+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -77,6 +77,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Rippling byggede værktøj efter AI-regning løb løbsk",
+     "dato": "2026-08-07T21:30:11",
+     "foerst_set": "2026-08-07T22:19:23",
+     "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
+     "side": "artikel/c534158d528e5b56.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Cloudflare lancerer Kitesurf: Browser til AI-agenter",
@@ -176,15 +185,6 @@ window.KILDER_STATUS = {
      "side": "artikel/54d5c5142886f6ab.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta udfordrer med Muse Code til store kodebaser",
-     "dato": "2026-08-05T21:21:28",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
-     "side": "artikel/f4b59bdfc21bfca7.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -216,9 +216,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
+   "i_listen": 9,
    "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Jeff Dean forlader Google: AI-chok",
+     "dato": "",
+     "foerst_set": "2026-08-07T18:07:29.170070+00:00",
+     "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+     "side": "",
+     "hvor": "under",
+     "under": "Google mister Jeff Dean og Demis Hassabis"
+    },
     {
      "rubrik": "Google trækker AI-værktøj tilbage efter én dag",
      "dato": "",
@@ -283,15 +292,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Jeff Dean forlader Google: AI-chok",
-     "dato": "2026-08-07T12:45:14",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-     "side": "artikel/764f9d70a7a9afd9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars",
      "dato": "2026-08-06T16:55:39",
      "foerst_set": "2026-08-07T04:14:51",
@@ -352,11 +352,11 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "OpenAI Blog",
-     2
+     "Ars Technica AI",
+     3
     ],
     [
-     "Ars Technica AI",
+     "OpenAI Blog",
      2
     ],
     [
@@ -375,9 +375,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 1,
+   "i_listen": 19,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI vil sælge AI-højttaler til over 300 dollars",
+     "dato": "",
+     "foerst_set": "2026-08-07T18:07:29",
+     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+     "side": "",
+     "hvor": "under",
+     "under": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars"
+    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -386,15 +395,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
-    },
-    {
-     "rubrik": "OpenAI vil sælge AI-højttaler til over 300 dollars",
-     "dato": "2026-08-07T17:36:22",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-     "side": "artikel/c1b05c5ed4232d18.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Kan ChatGPT reddes efter at have svigtet folk i krise?",
@@ -494,12 +494,21 @@ window.KILDER_STATUS = {
      "side": "artikel/e7e536e0d45d7564.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "SpaceX skræmmer investorer med AI-udgifter",
+     "dato": "2026-08-05T13:59:17",
+     "foerst_set": "2026-08-05T18:09:19",
+     "link": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
+     "side": "artikel/c554b9adf0bdf667.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "TechCrunch AI",
@@ -1000,67 +1009,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Oracle forbyder AI-kode i Java-projekt",
-     "dato": "2026-08-07T17:36:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-     "side": "artikel/99c5fc173e86b393.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fast Company: AI-paranoia er ledelsens nye blinde vinkel",
-     "dato": "2026-08-07T13:27:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-     "side": "artikel/9e2435033b8b0446.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-kode: Som at stege en bøf – du skal selv lære teknikken",
-     "dato": "2026-08-06T15:30:48",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-     "side": "artikel/54ba55bd1f9707ae.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic-advarsel: AI-spil viser farlige godkendelser",
-     "dato": "2026-08-06T11:58:07",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-     "side": "artikel/750c7bd2060999bf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-smiger får dig til at opgive at hjælpe andre",
-     "dato": "2026-08-05T18:17:03",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://arxiv.org/abs/2510.01395",
-     "side": "artikel/a16f0c0723c6b462.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta kørte annoncer med misbrugsbilleder af børn",
-     "dato": "2026-08-05T19:47:26",
-     "foerst_set": "2026-08-06T10:18:28",
-     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-     "side": "artikel/c75b1a332f5f7c38.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],

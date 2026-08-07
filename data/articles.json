@@ -1,66 +1,75 @@
 {
-  "opdateret": "2026-08-07T20:24:29.188862+00:00",
-  "antal": 120,
+  "opdateret": "2026-08-07T22:19:23.686818+00:00",
+  "antal": 112,
   "artikler": [
     {
-      "titel": "Oracle bans AI-generated code from OpenJDK",
-      "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-      "resume": "Article URL: https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code Comments URL: https://news.ycombinator.com/item?id=49213754 Points: 247 # Comments: 170",
-      "dato": "2026-08-07T17:36:30+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "rubrik": "Oracle forbyder AI-kode i Java-projekt",
-      "resume_da": "Oracle vil ikke længere modtage AI-genereret kode til OpenJDK, selvom topcheferne selv roser AI til skyerne.",
+      "titel": "After Rippling blew millions on AI in months, it built an employee ROI tool",
+      "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
+      "resume": "After its own AI usage wake-up call, Rippling this week unveiled AI Spend Console, a product that tracks individual and team employee AI spending.",
+      "dato": "2026-08-07T21:30:11+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-07T22:19:23.686818+00:00",
+      "eget_foerst_set": "2026-08-07T22:19:23.686818+00:00",
+      "rubrik": "Rippling byggede værktøj efter AI-regning løb løbsk",
+      "resume_da": "HR-firmaet Rippling opdagede, at AI-udgifterne eksploderede, og har bygget et værktøj, der styrer forbruget og måler produktiviteten.",
       "kat_ai": true,
-      "prio": 4,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Det er sket",
-          "tekst": "Oracle har forbudt AI-genereret kode i OpenJDK, som er fundamentet for Java-programmering. Udviklere må stadig bruge AI til at debugge og gennemgå kode privat, men de må ikke sende AI-skabt materiale ind til projekterne. Det sker af hensyn til sikkerhed og intellektuel ejendom."
+          "overskrift": "Det skete",
+          "tekst": "Rippling, der laver HR-software, begyndte at bruge AI massivt i starten af året. Men i marts fik ledelsen et chok, da økonomidirektøren viste, at firmaet var på vej til at bruge **40 %** af sin forsknings- og udviklingsenheds budget på AI-tokens. Forbruget voksede med **80 %** hver måned."
         },
         {
-          "overskrift": "Dobbeltmorale",
-          "tekst": "Forbuddet står i skarp kontrast til Oracles egen praksis. Medstifter Larry Ellison har sagt, at AI-modeller nu skriver virksomhedens kode. Samtidig roser med-CEO Mike Sicilia AI-værktøjer for at gøre ingeniørteamene hurtigere og mindre. Kritikere peger på, at reglerne åbenbart kun gælder for andre."
+          "overskrift": "Pengene bag",
+          "tekst": "Undersøgelser viste, at **10-15 %** af medarbejderne stod for **60 %** af AI-forbruget, og én ingeniør alene brugte **50.000 dollars** om måneden. Rippling forhandlede loft med udbyderne Cursor, OpenAI og Anthropic og byggede en gateway, der vælger billigere modeller til simple opgaver, som GLM 5.2, der er **85 %** billigere."
         },
         {
-          "overskrift": "Penge og rating",
-          "tekst": "Oracle bruger **70 milliarder dollar** i år på at udvide datacentre. Det store forbrug fik kreditvurderingsbureauet S&P til at sænke Oracles rating til **BBB-**, et enkelt trin over junk-status. Begrundelsen er usikkerhed om, hvorvidt investeringerne nogensinde tjener sig ind igen."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "For Java-udviklere betyder beslutningen, at de skal være ekstra omhyggelige med at dokumentere, at deres kode er menneskeskrevet. Samtidig sender sagen et signal til resten af tech-branchen: Selv firmaer, der elsker AI, kan finde på at forbyde den, når det handler om åbne projekter."
+          "overskrift": "Resultaterne",
+          "tekst": "Værktøjet fik AI-udgifterne ned fra 40 % til **15 %** af personalebudgettet. Selvom medarbejderne bruger lige så mange tokens som før, koster juli måned kun **37 %** af april. Rippling udpegede også særlige AI-eksperter, der skal hjælpe kollegerne med at bruge teknologien effektivt."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "70 mia. dollar",
-          "label": "investerer Oracle i datacentre i år"
+          "tal": "40 %",
+          "label": "af R&D-budgettet gik til AI-tokens"
         },
         {
-          "tal": "BBB-",
-          "label": "Oracles kreditrating efter nedjustering"
+          "tal": "80 %",
+          "label": "månedlig vækst i AI-forbruget"
+        },
+        {
+          "tal": "50.000 dollars",
+          "label": "brugt af én ingeniør på AI om måneden"
+        },
+        {
+          "tal": "85 %",
+          "label": "billigere end frontier-modeller"
+        },
+        {
+          "tal": "15 %",
+          "label": "af budgettet efter oprydning"
         }
       ],
       "detaljer": [
-        "Oracle forbyder AI-genereret kode i OpenJDK-bidrag.",
-        "Udviklere må bruge AI til privat debugging og review.",
-        "Larry Ellison: AI skriver Oracles egen kode.",
-        "Co-CEO Mike Sicilia: AI gør teams hurtigere.",
-        "S&P nedjusterede Oracle til BBB-, et hak over junk.",
-        "Forbuddet skyldes sikkerhed, sikkerhed og IP-risici."
+        "Rippling lancerede AI Spend Console til at spore AI-udgifter",
+        "Værktøjet viser AI-forbrug per medarbejder, team og rolle",
+        "Firmaet opdagede at få medarbejdere stod for det meste forbrug",
+        "Rippling byggede en AI-gateway til at vælge billigste model",
+        "Værktøjet findes for HR-kunder og som selvstændigt produkt",
+        "Indeholder dashboards med produktivitets-scoringer"
       ],
-      "betydning": "Hvis du bidrager til Java- eller OpenJDK-projekter, skal du nu selv skrive og verificere al kode – eller risikere at få dine bidrag afvist.",
+      "betydning": "Du får fremover flere værktøjer, der styrer AI-udgifter og måler, om teknologien faktisk gør dig mere produktiv – ellers kan adgangen blive begrænset for medarbejdere.",
       "pointer": [
-        "AI-kode forbudt i OpenJDK.",
-        "Topchefer roser AI internt.",
-        "70 milliarder dollars investeret.",
-        "S&P sænker kreditratingen."
+        "AI-udgifter kan hurtigt løbe løbsk i virksomheder",
+        "Billigere modeller kan klare mange opgaver næsten lige så godt",
+        "Virksomheder kræver målbart udbytte af AI-investeringer",
+        "Rippling viser, at kontrol er muligt uden at stoppe brugen"
       ],
-      "side": "artikel/99c5fc173e86b393.html"
+      "navngivet": true,
+      "side": "artikel/c534158d528e5b56.html"
     },
     {
       "titel": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
@@ -73,8 +82,7 @@
       "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
       "rubrik": "Fenix Flexin indrømmer AI i hit-sang",
       "resume_da": "Den amerikanske rapper Fenix Flexin erkender nu at have brugt AI til sin sang 'Rubberz', efter uger med benægtelser.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Indrømmelsen",
@@ -89,9 +97,8 @@
           "tekst": "Producenten **Medasin** har lagt videoer op, der hævder, at AI-værktøjet Treblo - tidligere kendt som Sonauto - blev brugt. Treblo selv har udgivet en AI-detektor, der identificerer 'Rubberz' som skabt med netop deres værktøj. Det er samme type kontrovers, som Tyga mødte med sit album."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Fenix Flexin indrømmer AI-brug i Instagram-kommentar.",
         "AI-værktøjet Treblo er tidligere kendt som Sonauto.",
@@ -107,6 +114,8 @@
         "Medasin lagde dokumentation frem offentligt.",
         "Kontroversen ligner Tyga-sagen."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/78db5548d2742eb5.html"
     },
     {
@@ -120,8 +129,7 @@
       "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
       "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
       "resume_da": "Roku har lagt Fairground AI Creator TV i sit gratis streamingunivers. Kanalen sender 24/7 AI-genererede videoer uden fast tema.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -140,9 +148,8 @@
           "tekst": "Rokus beslutning om at give Fairground en platform er et stort skridt for den lille startup, som nu får adgang til et kæmpe publikum. Om det faktisk er noget, folk gider se, er dog en helt anden sag. Anmelderen mener ikke, det er noget, nogen ville vælge at se frivilligt, og kalder det deprimerende, at Roku overhovedet vil vise det. Det vidner om, at streaminggiganten er villig til at eksperimentere – også med indhold, der langt fra lever op til traditionelle standarder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Roku lancerer fire nye kanaler, hvoraf én er Fairground AI Creator TV.",
         "Fairground AI Creator TV sender 24/7 AI-genererede videoer uden fast tema.",
@@ -159,7 +166,8 @@
         "Anmelderen kalder indholdet 'slop' af lav kvalitet.",
         "Fairground betaler skabere via reklameindtægter."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/73ddfbd0f80f8136.html"
     },
     {
@@ -173,8 +181,7 @@
       "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
       "rubrik": "OpenAI sætter hackermodel Astra på pause",
       "resume_da": "OpenAI stopper arbejdet med sin nye model Astra, fordi den kan hacke kritiske systemer. Sikkerheden er ikke klar endnu.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -189,9 +196,8 @@
           "tekst": "OpenAI indfører strengere sikkerhedsforanstaltninger for modeller med høj kapacitet. For Astra betyder det overvågning af alle handlinger i agentiske applikationer – altså programmer, der selv kan handle – for at fange risikable aktiviteter tidligt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI har sat Astra på pause på grund af sikkerhedsbekymringer.",
         "Astra viste store fremskridt i agentisk kodning og cybersikkerhed.",
@@ -208,106 +214,14 @@
         "Hugging Face hack ikke Astras værk"
       ],
       "billedmotiv": "En lås med en synlig sprække, hvor en digital nøgle stikker halvt ud, og en advarselsskal vendt på hovedet i baggrunden.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/65308bcbb462c737.html"
-    },
-    {
-      "titel": "AI psychosis is the new leadership blind spot",
-      "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-      "resume": "Article URL: https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots Comments URL: https://news.ycombinator.com/item?id=49210077 Points: 155 # Comments: 98",
-      "dato": "2026-08-07T13:27:30+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "rubrik": "Fast Company: AI-paranoia er ledelsens nye blinde vinkel",
-      "resume_da": "Ledelser risikerer at overse reelle farer ved overfokus på AI-hypen. Fast Company advarer mod et nyt ledelsesfænomen.",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Fænomenet",
-          "tekst": "Fast Company beskriver et nyt problem i ledelseslagene: AI-paranoia, hvor beslutningstagere bliver så optaget af teknologiens muligheder og trusler, at de mister blikket for de faktiske risici. Det er ikke længere blot et teknisk anliggende, men en ledelsesmæssig blind vinkel, der kan få alvorlige konsekvenser for virksomheder."
-        },
-        {
-          "overskrift": "Konsekvensen",
-          "tekst": "Når ledelsen handler i panik eller overbegejstring, risikerer de at træffe beslutninger uden solidt grundlag. Fænomenet kan føre til, at man overser kritiske fejl i AI-systemer eller investerer i løsninger, der ikke matcher virksomhedens behov. Eksperter peger på, at en mere nuanceret tilgang er nødvendig for at undgå dyre fejlskud."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Fast Company har publiceret artiklen om AI-paranoia i ledelser.",
-        "Artiklen blev delt på Hacker News og fik 155 point.",
-        "Debatten på Hacker News har 98 kommentarer.",
-        "Fænomenet beskrives som en ny form for ledelsesmæssig blind vinkel."
-      ],
-      "betydning": "Du bør holde øje med, at din ledelse ikke bliver offer for AI-paranoia - og stille kritiske spørgsmål til beslutningerne, der træffes i teknologiens navn.",
-      "pointer": [
-        "AI-paranoia er en ledelsesmæssig blind vinkel.",
-        "Ledelser mister blikket for reelle risici.",
-        "Panik kan føre til dyre fejlinvesteringer.",
-        "Nuancerede tilgange er nødvendige."
-      ],
-      "side": "artikel/9e2435033b8b0446.html"
-    },
-    {
-      "titel": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
-      "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-      "resume": "Gurman report claims OpenAI confirmed the speaker is not an Apple ripoff.",
-      "dato": "2026-08-07T17:36:22+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-07T18:07:29.170070+00:00",
-      "eget_foerst_set": "2026-08-07T18:07:29.170070+00:00",
-      "rubrik": "OpenAI vil sælge AI-højttaler til over 300 dollars",
-      "resume_da": "OpenAI arbejder på en dyr smart-højttaler med bevægelige dele, der skal føles levende. Prisen kan blive mellem 300 og 400 dollars.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI er i gang med at udvikle en smart-højttaler, der ifølge Bloombergs Mark Gurman kan komme til at koste mellem **300 og 400 dollars**. Den skal ligne en doughnut på størrelse med en hockey-puck og være lavet af høj kvalitetsmetal. Højttaleren skal kunne styre smarte hjemmeenheder og fungere som en slags ChatGPT-assistent, der er mere avanceret end mobilappen."
-        },
-        {
-          "overskrift": "Hvorfor bevæger den sig?",
-          "tekst": "For at få højttaleren til at føles mere levende, har OpenAI givet den dele, der bevæger sig uafhængigt, når den svarer. Derudover har den lys, der viser, når den lytter. Designet er lavet sammen med Jony Ives firma LoveFrom. Apple har sagsøgt OpenAI for at stjæle forretningshemmeligheder, men en intern undersøgelse viste angiveligt, at højttaleren ikke bruger Apples teknologi."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Hvis højttaleren kommer til at koste over 300 dollars, bliver den markant dyrere end de fleste konkurrenter. Til sammenligning koster Amazons Echo Show 15 med Alexa+ **300 dollars**. OpenAI satser på, at folk vil betale for dedikeret hardware til ChatGPT, selvom de også skal betale abonnement for de bedste funktioner. Bloomberg forventer, at højttaleren bliver afsløret i år og udgivet i 2027, hvis Apple-sagen ikke spolerer planerne."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "300-400 dollars",
-          "label": "forventet pris på OpenAIs højttaler"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI's højttaler koster sandsynligvis mellem 300 og 400 dollars ifølge Bloomberg.",
-        "Den har bevægelige dele og lys for at virke mere levende.",
-        "Designet er lavet med Jony Ives firma LoveFrom.",
-        "Højttaleren skal kunne styre smarte hjemmeenheder.",
-        "Apple har sagsøgt OpenAI for tyveri af forretningshemmeligheder.",
-        "OpenAI's anden gadget, Codex Micro-keyboard, koster 230 dollars.",
-        "Bloomberg forventer udgivelse i 2027, hvis Apple-sagen ikke stopper det."
-      ],
-      "betydning": "Du kan snart skulle betale over 300 dollars for en højttaler, der primært er en ChatGPT-assistent. Det er en dyr investering, hvor du også skal betale abonnement for de bedste funktioner.",
-      "pointer": [
-        "OpenAI planlægger dyr smart-højttaler til over 300 dollars.",
-        "Højttaleren har bevægelige dele for at virke levende.",
-        "Apple sagsøger OpenAI og hævder tyveri af hemmeligheder.",
-        "Bliver dyrere end konkurrenter som Amazons Echo Show 15."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/c1b05c5ed4232d18.html"
     },
     {
       "titel": "Cloudflare launches Kitesurf, a browser built for AI agents",
       "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
-      "resume": "Cloudflare has introduced Kitesurf, a cloud-hosted browser designed for AI agents instead of people. The company says the browser uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
+      "resume": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
       "dato": "2026-08-07T16:16:09+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Lanceringer",
@@ -443,53 +357,6 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/681d3ebb6321805c.html"
-    },
-    {
-      "titel": "What’s behind the Google AI shake-up",
-      "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-      "resume": "Some of the biggest names on Google's AI team got new jobs this week. In some cases, including for legendary Googler Jeff Dean, those jobs are no longer at Google. Given that Google's models seem to be behind the best of what's coming out of anthropic and OpenAI, is this a sign of Google in […]",
-      "dato": "2026-08-07T12:45:14-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-07T18:07:29.170070+00:00",
-      "eget_foerst_set": "2026-08-07T18:07:29.170070+00:00",
-      "rubrik": "Jeff Dean forlader Google: AI-chok",
-      "resume_da": "Googles AI-top vender ryggen til virksomheden. Hvad betyder det for fremtiden?",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er sket?",
-          "tekst": "Store navne på Googles AI-hold har fået nye roller. Legendariske **Jeff Dean** har fået job et helt andet sted. Det får mange til at spekulere: Er Google i krise? Eller vil chefen for AI, Demis Hassabis, bare lave noget mere spændende end virtuelle assistenter?"
-        },
-        {
-          "overskrift": "Hvad betyder det?",
-          "tekst": "Googles AI-modeller halter bagefter konkurrenter som OpenAI og Anthropic. Samtidig er Google og Reddit blevet afhængige af hinanden på en måde, der kan blive et problem. På The Vergecast diskuterer eksperter, om Google kan følge med i kapløbet."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Spørgsmålet er, om Google kan finde en vej frem. Med store talenter på vej ud, og konkurrenter der løber stærkt, presser presset på. Lyt med i podcasten for at høre hele analysen af, hvad der sker i tech-verdenen."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Jeff Dean fik nye opgaver, der ikke længere er hos Google.",
-        "Googles AI-modeller er bagud i forhold til OpenAI og Anthropic.",
-        "Demis Hassabis vil måske arbejde med noget andet end assistenter.",
-        "Google og Reddit er blevet afhængige af hinanden.",
-        "Podcasten diskuterer også Disney Plus, BMW-reklamer og ytringsfrihed."
-      ],
-      "betydning": "Du kan mærke konsekvenserne, hvis Google taber AI-kapløbet: Dine søgninger, assistenter og apps bliver dummere, mens konkurrenterne løber fra dem.",
-      "pointer": [
-        "Jeff Dean forlod Google.",
-        "Google halter efter OpenAI.",
-        "AI-chefer får nye roller.",
-        "Reddit-skæbne knyttet til Google."
-      ],
-      "billedmotiv": "En tom Google-søgefelt-skål med en opsagt ID-brik i bunden, og et lille forladt skilt med ordet 'fremtid' lænet op ad siden.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/764f9d70a7a9afd9.html"
     },
     {
       "titel": "Airbnb says AI is helping it ship features faster as it tests a new search function",
@@ -686,7 +553,7 @@
     {
       "titel": "New Mexico court orders Meta to pay additional $567M in child safety case",
       "link": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/",
-      "resume": "Meta's total fine has raked up to $942 million in this case.",
+      "resume": "Meta's total fine has racked up to $942 million in this case.",
       "dato": "2026-08-07T11:40:37+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Politik & jura",
@@ -791,172 +658,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/04dbcdd1e1d91c0f.html"
-    },
-    {
-      "titel": "Software development with AI is starting to feel like cooking steak",
-      "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-      "resume": "Article URL: https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/ Comments URL: https://news.ycombinator.com/item?id=49198069 Points: 393 # Comments: 412",
-      "dato": "2026-08-06T15:30:48+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-08-07T11:29:56.888720+00:00",
-      "eget_foerst_set": "2026-08-07T11:29:56.888720+00:00",
-      "rubrik": "AI-kode: Som at stege en bøf – du skal selv lære teknikken",
-      "resume_da": "AI kan gøre kodning hurtigere, men ikke erstatte din dømmekraft. Ligesom med madlavning skal du selv forstå håndværket.",
-      "kat_ai": true,
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Hurtigere, men ikke bedre",
-          "tekst": "AI-værktøjer gør os i stand til at programmere næsten hele tiden – også i toget eller i sengen. Men resultatet er ikke altid godt. Nogle gange får vi genialt output, andre gange noget, der ligner en forkullet bøf med timian og kalder sig medium-rare. Det lyder måske sjovt, men problemet er reelt: AI'en ved ikke, hvad du egentlig vil have."
-        },
-        {
-          "overskrift": "Når råd er dyre",
-          "tekst": "Vi køber dyre AI-abonnementer, hyrer bureauer og hopper på nye frameworks – fordi vi håber, andre har løst problemet for os. Nogle gange har de det, men ofte ikke. Du ender med at stå i køkkenet med en dyr restaurantregning og en skuffet mave. Løsningen? Selv lære at lave maden – altså selv forstå koden."
-        },
-        {
-          "overskrift": "Dømmekraft er nøglen",
-          "tekst": "AI kan følge en opskrift, holde øje med temperaturen og vende bøffen på det rigtige tidspunkt. Men den kan ikke se billedet i dit hoved. Du skal oversætte dine behov til krav, eksempler og tests. Selv med finjustering ender den med at være begrænset af sit eget repertoire. Du kan stå og rette den hvert 30. sekund – det hjælper, men gør den ikke til en stjernekok."
-        },
-        {
-          "overskrift": "Lær selv at lave maden",
-          "tekst": "Til sidst vender du hjem skuffet og tager kogebogen frem. Du lærer, hvad varme gør, hvorfor panden betyder noget, og hvorfor et minutur ikke er nok. Du ødelægger nogle middage, prøver igen og igen. Sådan bliver du god – ved at fejle og lære. AI'en kan automatisere det kedelige, give dig et udgangspunkt og forklare kode. Men den kan ikke erstatte din dømmekraft."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "AI kan følge instruktioner og gentage processer hurtigt og i stor skala.",
-        "Men AI kender ikke dine ønsker uden oversættelse til krav og tests.",
-        "Mange køber dyre AI-produkter og håber, andre har løst problemet.",
-        "Resultatet er ofte 'forkullet' kode, der ligner noget, men er forkert.",
-        "Du kan rette AI'en manuelt, men det gør den ikke bedre i længden.",
-        "For at få god software med AI skal du selv forstå kodning."
-      ],
-      "betydning": "Du kan ikke bare overlade kodningen til AI og forvente perfekte resultater. Lær selv grundteknikkerne, så du kan vurdere og rette, hvad maskinen leverer.",
-      "pointer": [
-        "AI fremskynder kodning, men kræver din dømmekraft.",
-        "Dyrt udstyr løser ikke grundlæggende mangler.",
-        "Lær selv at kode for at få kvalitet.",
-        "Fejl er vejen til ægte kunnen."
-      ],
-      "navngivet": true,
-      "side": "artikel/54ba55bd1f9707ae.html"
-    },
-    {
-      "titel": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-      "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-      "resume": "Article URL: https://scalex.dev/blog/ai-agent-permissions-stats/ Comments URL: https://news.ycombinator.com/item?id=49195468 Points: 327 # Comments: 243",
-      "dato": "2026-08-06T11:58:07+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "rubrik": "Anthropic-advarsel: AI-spil viser farlige godkendelser",
-      "resume_da": "I spillet afslørede deltagere, at 1 ud af 3 trusler blev overset. Kommandoen 'npm run analyze' blev godkendt af 64,7 %.",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Spillet afslører",
-          "tekst": "I et nyt spil skulle deltagere godkende eller afvise kommandoer fra en AI-kodeagent. Ud af 40.000 spilrunder og 409.000 beslutninger blev **1 ud af 3** trusler overset. Især kommandoer, der lignede rutineopgaver, blev godkendt alt for ofte."
-        },
-        {
-          "overskrift": "Farlig forkærlighed",
-          "tekst": "Kommandoen 'npm run analyze' blev godkendt af **64,7 %** af spillerne, selvom den sendte data til en ekstern server. Tre skjulte trusler bag kendte navne blev misset dobbelt så ofte som andre angreb, hvilket viser, at genkendelige kommandoer sløver dømmekraften."
-        },
-        {
-          "overskrift": "Træthed og støj",
-          "tekst": "Spillet viser også, at jo flere kommandoer man skal godkende, jo mere sløv bliver man – miss-raten stiger mod slutningen. Samtidig bliver uskyldige kommandoer som 'cat ~/.zshrc' ofte blokeret, hvilket skaber irritation og kan få udviklere til at slække på sikkerheden."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Udvikleren bag spillet mener, at vi ikke kan stole på menneskelig godkendelse som eneste sikkerhed. Han foreslår bedre værktøjer som sandboxing og streng kontekstisolering, så AI-agenter kun får brede rettigheder, når der er ordentlige beskyttelser på plads."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "1 ud af 3",
-          "label": "trusler blev overset af spillerne"
-        },
-        {
-          "tal": "64,7 %",
-          "label": "godkendte den skjulte 'npm run analyze'-kommando"
-        },
-        {
-          "tal": "52,5 %",
-          "label": "missede de tre skjulte trusler bag kendte navne"
-        }
-      ],
-      "detaljer": [
-        "Spillet havde 40.000 runder og 409.000 enkeltbeslutninger.",
-        "Tre skjulte trusler bag kendte kommandoer blev misset 52,5 % af tiden.",
-        "Kommandoen 'npm run analyze' blev godkendt af 64,7 % af spillerne.",
-        "Uskyldige kommandoer som 'cat ~/.zshrc' blev ofte blokeret.",
-        "Miss-raten steg mod slutningen af spillet.",
-        "Anthropic advarer om, at jo flere godkendelser, jo mindre opmærksomhed."
-      ],
-      "betydning": "Du kan ikke altid stole på dine egne øjne, når du godkender kommandoer fra AI-værktøjer – og det kan koste dig dine adgangskoder eller data.",
-      "pointer": [
-        "Mennesker overser hver tredje trussel.",
-        "Kendte kommandoer skjuler ofte snyd.",
-        "Træthed gør dig mindre opmærksom.",
-        "Godkendelse er ikke nok som sikkerhed."
-      ],
-      "navngivet": true,
-      "billedmotiv": "Et skakbræt med en bonde foran en brik, hvor en markør peger på et kryds, og en grøn knap med et flueben ligger ved siden af.",
-      "side": "artikel/750c7bd2060999bf.html"
-    },
-    {
-      "titel": "Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence (2025)",
-      "link": "https://arxiv.org/abs/2510.01395",
-      "resume": "Article URL: https://arxiv.org/abs/2510.01395 Comments URL: https://news.ycombinator.com/item?id=49186720 Points: 171 # Comments: 104",
-      "dato": "2026-08-05T18:17:03+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "rubrik": "AI-smiger får dig til at opgive at hjælpe andre",
-      "resume_da": "Ny forskning viser, at når AI altid er enig med dig, bliver du mindre hjælpsom og mere afhængig af teknologien.",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Det viser forskningen",
-          "tekst": "Forskere har undersøgt, hvordan en AI-chatbot, der altid siger, du har ret, påvirker din adfærd. Resultatet er klart: Folk, der får smiger fra AI, bliver mindre tilbøjelige til at hjælpe andre og mere afhængige af den digitale assistent. Når AI konstant roser dig, kan det altså ændre din måde at tænke og handle på – uden at du selv lægger mærke til det."
-        },
-        {
-          "overskrift": "Hvorfor sker det?",
-          "tekst": "Når en AI altid er enig, kan det få dig til at stole mindre på dine egne vurderinger og mere på teknologien. Du begynder at forvente, at AI bekræfter dig, i stedet for at udfordre dig. Det kan gøre dig dårligere til at træffe selvstændige beslutninger og mindre motiveret til at hjælpe andre, fordi du ikke længere føler, at dit eget bidrag gør en forskel."
-        },
-        {
-          "overskrift": "Hvad kan du gøre?",
-          "tekst": "Du kan være opmærksom på, at din AI-assistent ikke altid har ret, bare fordi den er sød ved dig. Prøv at stille kritiske spørgsmål og søg modspil, når du bruger AI i din hverdag. På den måde kan du bevare din selvstændighed og din lyst til at engagere dig i verden omkring dig – også når teknologien forsøger at gøre dig tilpas."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Forskningen viser, at smigrende AI reducerer lysten til at hjælpe andre.",
-        "Brugere bliver mere afhængige af AI, når den konstant roser dem.",
-        "Forskerne bag studiet kommer fra Stanford University.",
-        "Undersøgelsen bygger på eksperimenter med deltagere og AI-chatbots.",
-        "Effekten opstår, når AI altid er enig, uden at give modspil."
-      ],
-      "betydning": "Når din chatbot altid siger, du har ret, kan du blive mindre hjælpsom og mere afhængig. Vær kritisk over for AI'ens ros, så du bevarer din selvstændighed og dit engagement i andre mennesker.",
-      "pointer": [
-        "Smigrende AI mindsker prosocial adfærd.",
-        "Forskere fra Stanford står bag studiet.",
-        "Brugere bliver mere afhængige af teknologien.",
-        "Kritisk brug af AI kan beskytte dig."
-      ],
-      "navngivet": true,
-      "billedmotiv": "Et spejl, der reflekterer et tommelfinger-op-tegn, mens en hjælpende hånd er blevet lagt fra sig på en hylde foran.",
-      "side": "artikel/a16f0c0723c6b462.html"
     },
     {
       "titel": "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
@@ -1287,7 +988,6 @@
       ],
       "kat_ai": true,
       "prio": 2,
-      "navngivet": true,
       "side": "artikel/70cec61673f052ec.html"
     },
     {
@@ -2399,6 +2099,13 @@
           "rubrik": "OpenAI's højttaler koster op til 400 dollars",
           "resume_da": "Den nye AI-enhed fra OpenAI bliver en dyr smart-højttaler med avancerede funktioner. Prisen ligger mellem 300 og 400 dollars, ifølge rygter.",
           "foerst_set": "2026-08-07T04:14:51.357339+00:00"
+        },
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+          "rubrik": "OpenAI vil sælge AI-højttaler til over 300 dollars",
+          "resume_da": "OpenAI arbejder på en dyr smart-højttaler med bevægelige dele, der skal føles levende. Prisen kan blive mellem 300 og 400 dollars.",
+          "foerst_set": "2026-08-07T18:07:29.170070+00:00"
         }
       ],
       "detaljer": [
@@ -2480,7 +2187,6 @@
       "billedmotiv": "En hammer og en pensel, der står op ad en mur af byggeklodser med et 'K' på den øverste klods.",
       "kat_ai": true,
       "prio": 6,
-      "navngivet": true,
       "side": "artikel/14f964707cdfca29.html"
     },
     {
@@ -3232,64 +2938,6 @@
       "side": "artikel/2528674bdf5f50e2.html"
     },
     {
-      "titel": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
-      "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-      "resume": "Article URL: https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/ Comments URL: https://news.ycombinator.com/item?id=49187977 Points: 321 # Comments: 265",
-      "dato": "2026-08-05T19:47:26+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "eget_foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "rubrik": "Meta kørte annoncer med misbrugsbilleder af børn",
-      "resume_da": "Forskere fandt over 50 Meta-annoncer med AI-genereret børnemisbrug. Annoncerne var betalte og godkendt af Meta selv.",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Forskere fra Tech Transparency Project fandt over **50** billed- og videoannoncer med eksplicit AI-genereret børnemisbrug i Metas eget annoncebibliotek. Annoncerne kørte på Facebook, Instagram og Messenger og var målrettet brugere i USA, Storbritannien og en række europæiske lande. Flere annoncer linkede til såkaldte nudify-apps, der kan klæde billeder af mennesker af digitalt."
-        },
-        {
-          "overskrift": "Det har Meta gjort",
-          "tekst": "Meta fjernede annoncerne, efter WIRED spurgte til dem, og siger, at seksuel udnyttelse er forfærdeligt. Meta påpeger, at de fleste annoncer havde minimal rækkevidde, og at mange blev fjernet, før WIRED kontaktede dem. Sidste år fjernede Meta over **36 millioner** stykker indhold med seksuel udnyttelse af børn. Forskerne siger dog, at Meta selv godkendte annoncerne og tjente penge på dem."
-        },
-        {
-          "overskrift": "Forskernes kritik",
-          "tekst": "Forsker Katie Paul siger, at annoncerne ikke skjulte, hvad de var. Nogle annoncer var identiske med dem, Meta allerede havde fjernet, hvilket ifølge hende rejser spørgsmål om, hvor seriøst Meta tager børnemisbrug. TTP anmeldte fundet til National Center for Missing and Exploited Children, der modtager indberetninger om børnemisbrug."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "50+",
-          "label": "annoncer med børnemisbrug fundet i Metas bibliotek"
-        },
-        {
-          "tal": "36 mio.",
-          "label": "stykker indhold med børnemisbrug fjernet af Meta sidste år"
-        }
-      ],
-      "detaljer": [
-        "Annoncerne blev vist i over ni måneder, fra november til august.",
-        "Mindst én annonce nåede 2.563 konti i Europa.",
-        "Forskerne fandt omkring 24 annoncer først, og 30 mere timer før offentliggørelse.",
-        "En annonce viste et barn med teksten 'I can show you more'.",
-        "Tidligere fandt BBC lignende annoncer på Instagram i Indien.",
-        "Meta fjernede annoncerne efter WIRED's henvendelse.",
-        "Flere annoncer var målrettet mænd og kørte kun få dage."
-      ],
-      "betydning": "Du kan ikke regne med, at Metas automatiske kontrol fanger alt misbrug - selv betalte, godkendte annoncer kan slippe igennem på de platforme, du bruger dagligt.",
-      "pointer": [
-        "Meta godkendte annoncer med børnemisbrug.",
-        "Over 50 annoncer fundet, flere nåede tusindvis af brugere.",
-        "Meta tjente penge på annoncerne, inden de blev fjernet.",
-        "Forskerne mener, Meta svigter sit ansvar."
-      ],
-      "billedmotiv": "En ramme med et uskarpt barneansigt, hvor en mønt og et kryds ligger foran, og en godkendelsesstempel er væltet om på siden.",
-      "side": "artikel/c75b1a332f5f7c38.html"
-    },
-    {
       "titel": "The messy politics behind Google’s big AI shakeup",
       "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
       "resume": "In the AI industry, Google prides itself on seeming like the adult in the room: quiet, stable, time-tested. On Wednesday, even as the company announced its largest AI org shakeup yet, Google and its leaders presented a unified front, keeping their messaging focused on how the changes tee up future success. But the reality is […]",
@@ -3324,6 +2972,13 @@
           "rubrik": "Jeff Dean forlader Google for at starte AI-startup",
           "resume_da": "Jeff Dean og flere topforskere stifter firmaet Discovery Loop, som vil bruge AI til at fremskynde videnskabelige opdagelser. Firmaet har fået millioner fra Alphabet og andre investorer.",
           "foerst_set": "2026-08-05T22:34:32.063236+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+          "rubrik": "Jeff Dean forlader Google: AI-chok",
+          "resume_da": "Googles AI-top vender ryggen til virksomheden. Hvad betyder det for fremtiden?",
+          "foerst_set": "2026-08-07T18:07:29.170070+00:00"
         }
       ],
       "detaljer": [
@@ -3774,63 +3429,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/e7e536e0d45d7564.html"
-    },
-    {
-      "titel": "TechCrunch Disrupt 2026’s Real World AI Stage features robots, automated factories, and extinct animals",
-      "link": "https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/",
-      "resume": "On our new Real World AI stage, we’ll be focusing on the intersection between the digital and physical, and all the ways we’ll continue to see a blending of the two.",
-      "dato": "2026-08-05T15:05:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "eget_foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "rubrik": "TechCrunch Disrupt får scene om uddøde dyr og robotter",
-      "resume_da": "Ny AI-scene på TechCrunch Disrupt 2026 fokuserer på robotter, fabrikker – og genoplivning af uddøde arter. Ben Lamm fra Colossal Biosciences er hovednavn.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Scenen er ny",
-          "tekst": "TechCrunch Disrupt 2026 i San Francisco får for første gang to AI-scener. Den nye \"Real World AI Stage\" handler om, når AI flytter fra skærmen ud i den fysiske verden: robotter, automatiske fabrikker og forsvarsteknologi. Arrangementet løber 13.-15. oktober i Moscone West, og der ventes over **10.000** deltagere fra tech- og investormiljøet."
-        },
-        {
-          "overskrift": "Uddøde dyr",
-          "tekst": "Ben Lamm, direktør for Colossal Biosciences, holder hovedoplæg. Hans firma vil genoplive uddøde arter og har bygget en milliardforretning på drømmen. Han skal tale om, hvordan AI hjælper med moderne biologi, og om diskussionen: Er det bevaring eller spild af penge, når man manipulerer med naturen?"
-        },
-        {
-          "overskrift": "Sikkerhed og fejl",
-          "tekst": "Flere sessioner handler om, hvad der sker, når AI fejler i virkeligheden – fx fly eller kampvogne. Ledere fra firmaer som Shield AI, FieldAI og Foxglove diskuterer, hvordan man ved, om et system er sikkert nok. De ser også på, hvordan startups overlever springet fra prototype til rigtig produktion med millionomkostninger."
-        },
-        {
-          "overskrift": "Billet og bonus",
-          "tekst": "Hvis du melder dig til inden 7. august kl. 23:59, får du **100 dollars** i rabat på billetten. TechCrunch lover tre dage med netværk, Startup Battlefield og adgang til alle scener. Flere talere offentliggøres løbende."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "100 dollars",
-          "label": "rabat på billet til Disrupt 2026"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "TechCrunch Disrupt 2026 afholdes 13.-15. oktober i San Francisco.",
-        "Den nye Real World AI Stage fokuserer på AI i fysisk verden.",
-        "Ben Lamm er direktør for Colossal Biosciences, der vil genoplive uddøde arter.",
-        "Talere kommer fra Shield AI, FieldAI, Foxglove, Medra og Bedrock Robotics.",
-        "Diskussioner handler om AI-sikkerhed og fejl i luftfart og forsvar.",
-        "Tidlig billetkøb giver 100 dollars i rabat inden 7. august.",
-        "Over 10.000 deltagere forventes ved konferencen."
-      ],
-      "betydning": "Hvis du arbejder med robotter, forsvar eller biotech, kan du få direkte viden om, hvordan AI bruges i praksis – og møde dem, der bestemmer fremtidens standarder.",
-      "pointer": [
-        "AI-scene udvides til to på Disrupt 2026.",
-        "Robotter og fabrikker er hovedtema.",
-        "Uddøde dyr kan blive genoplivet med AI.",
-        "Sikkerhed er det store spørgsmål."
-      ],
-      "kat_ai": true,
-      "prio": 2,
-      "side": "artikel/d22824990e8601df.html"
     },
     {
       "titel": "SpaceX spooks investors with debut earnings report",
