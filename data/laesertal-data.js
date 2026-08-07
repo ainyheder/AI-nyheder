@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-07T18:10:32.857366+00:00",
+ "opdateret": "2026-08-07T20:27:54.270242+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      3,
      9,
      7,
-     9,
-     3
+     8,
+     6
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      4,
      7,
      4,
-     3
+     4
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      4,
      1,
      5,
-     1
+     2
     ]
    },
    {
@@ -242,21 +242,21 @@ window.LAESERTAL = {
      1,
      1,
      1,
-     0,
+     1,
      2
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 53,
- "sidevisninger_i_alt": 90,
+ "besoeg_i_alt": 59,
+ "sidevisninger_i_alt": 94,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 52,
-   "visninger": 53
+   "besoeg": 58,
+   "visninger": 58
   },
   {
    "sti": "/koerekort.html",
@@ -286,7 +286,7 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
    "besoeg": 0,
-   "visninger": 5
+   "visninger": 4
   },
   {
    "sti": "/artikel/3b4804541f2c2bfe.html",
@@ -402,7 +402,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 51
+   "besoeg": 57
   },
   {
    "fra": "www.google.com",
@@ -414,17 +414,12 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 51,
-    "visninger": 51
+    "besoeg": 57,
+    "visninger": 57
    },
    {
     "fra": "www.google.com",
     "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -467,7 +462,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 5
+    "visninger": 4
    }
   ],
   "/artikel/3b4804541f2c2bfe.html": [
@@ -794,7 +789,7 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
    "besoeg": 0,
-   "visninger": 5,
+   "visninger": 4,
    "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
    "kategori": "Samfund & etik",
    "dato": "2026-07-31",
@@ -802,7 +797,7 @@ window.LAESERTAL = {
     {
      "fra": "herfra selv",
      "besoeg": 0,
-     "visninger": 5
+     "visninger": 4
     }
    ]
   },
@@ -1125,7 +1120,7 @@ window.LAESERTAL = {
    "sti": "/artikel/14f964707cdfca29.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Cloudflare frigiver AI-værktøj til ikke-kodere",
+   "rubrik": "Cloudflare OS er nu open source",
    "kategori": "Lanceringer",
    "dato": "2026-08-06",
    "henvisere": [
@@ -1155,7 +1150,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Samfund & etik",
-   "visninger": 14
+   "visninger": 13
   },
   {
    "navn": "Lanceringer",
