@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-07T04:14:51.357339+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-08-07T05:56:50.901005+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -1000,12 +1000,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Alex Bagels spil: Mennesker overså hver tredje AI-trussel",
+     "dato": "2026-08-06T11:58:07",
+     "foerst_set": "2026-08-07T05:56:50",
+     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+     "side": "artikel/750c7bd2060999bf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Myra Cheng: Når AI smigrer, bliver vi afhængige",
+     "dato": "2026-08-05T18:17:03",
+     "foerst_set": "2026-08-07T05:56:50",
+     "link": "https://arxiv.org/abs/2510.01395",
+     "side": "artikel/a16f0c0723c6b462.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
+     "dato": "2026-08-05T19:47:26",
+     "foerst_set": "2026-08-06T10:18:28",
+     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+     "side": "artikel/c75b1a332f5f7c38.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TIME serverer AI-bots en særlig side med reklamer",
+     "dato": "2026-08-05T12:41:47",
+     "foerst_set": "2026-08-05T18:09:19",
+     "link": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/",
+     "side": "artikel/aa6c1f0cba27e49d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Interpol: AI driver over halvdelen af cyberkriminalitet i Afrika",
+     "dato": "2026-08-04T22:01:41",
+     "foerst_set": "2026-08-05T12:18:35",
+     "link": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+     "side": "artikel/8097b6823a4f24ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacker News-brugere hader AI-billeder i blogs",
+     "dato": "2026-08-04T11:30:17",
+     "foerst_set": "2026-08-05T12:18:35",
+     "link": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+     "side": "artikel/93f7ffb3992f52f3.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
