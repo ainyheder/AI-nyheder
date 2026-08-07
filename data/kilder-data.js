@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-07T11:29:56.888720+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-08-07T14:41:32.819072+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -77,6 +77,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Airbnb: AI skriver 60% af vores kode og skærer tid",
+     "dato": "2026-08-07T14:22:49",
+     "foerst_set": "2026-08-07T14:41:32",
+     "link": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/",
+     "side": "artikel/5f5222e53a442def.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta idømt bøde på 942 millioner dollars for at skade børn",
+     "dato": "2026-08-07T11:40:37",
+     "foerst_set": "2026-08-07T14:41:32",
+     "link": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/",
+     "side": "artikel/141bf02357552abb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Naïve rejser 200 mio. kr. til at automatisere firma-drift",
@@ -165,24 +183,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-05T18:09:19",
      "link": "https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/",
      "side": "artikel/0108300124fb9281.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hark Handoff: AI-ordrer blomster og booker borde",
-     "dato": "2026-08-05T15:46:27",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://techcrunch.com/2026/08/05/hark-previews-its-browser-use-agent-for-completing-tasks/",
-     "side": "artikel/844e872cde08ee5e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TechCrunch Disrupt får scene om uddøde dyr og robotter",
-     "dato": "2026-08-05T15:05:00",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/",
-     "side": "artikel/d22824990e8601df.html",
      "hvor": "forside",
      "under": ""
     }
@@ -397,6 +397,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "AI-chatbots svigter mennesker i krise",
+     "dato": "2026-08-07T13:49:37",
+     "foerst_set": "2026-08-07T14:41:32",
+     "link": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TikTok-ejer træner kæmpe AI-model mod Anthropic",
+     "dato": "2026-08-07T13:29:22",
+     "foerst_set": "2026-08-07T14:41:32",
+     "link": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
+     "side": "artikel/13e2539b3313d15a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Suno vandmærker al sin AI-musik",
      "dato": "2026-08-06T20:17:36",
      "foerst_set": "2026-08-07T04:14:51",
@@ -483,24 +501,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-04T22:36:37",
      "link": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
      "side": "artikel/6176f29427c292b9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ukrainske droner får Auterion-AI til selv at finde mål",
-     "dato": "2026-08-03T22:11:39",
-     "foerst_set": "2026-08-04T00:15:55",
-     "link": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
-     "side": "artikel/232348c1da06db8a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "UNAM dropper AI-eksamen efter massiv snyd",
-     "dato": "2026-08-03T19:00:50",
-     "foerst_set": "2026-08-03T20:18:51",
-     "link": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
-     "side": "artikel/3b4804541f2c2bfe.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1009,67 +1009,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI-kodning er som at stege en bøf",
-     "dato": "2026-08-06T15:30:48",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-     "side": "artikel/54ba55bd1f9707ae.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-agenter snød mennesker i 1 ud af 3 farlige kommandoer",
-     "dato": "2026-08-06T11:58:07",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-     "side": "artikel/750c7bd2060999bf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forskere: Smigrende AI gør dig mere afhængig",
-     "dato": "2026-08-05T18:17:03",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://arxiv.org/abs/2510.01395",
-     "side": "artikel/a16f0c0723c6b462.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta kørte AI-genererede børnemisbrugs-annoncer",
-     "dato": "2026-08-05T19:47:26",
-     "foerst_set": "2026-08-06T10:18:28",
-     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-     "side": "artikel/c75b1a332f5f7c38.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TIME serverer AI-bots en helt anden hjemmeside",
-     "dato": "2026-08-05T12:41:47",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/",
-     "side": "artikel/aa6c1f0cba27e49d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Interpol: AI driver over halvdelen af cyberkriminalitet i Afrika",
-     "dato": "2026-08-04T22:01:41",
-     "foerst_set": "2026-08-05T12:18:35",
-     "link": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
-     "side": "artikel/8097b6823a4f24ab.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
