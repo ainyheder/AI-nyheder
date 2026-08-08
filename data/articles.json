@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-08-08T04:36:15.779609+00:00",
-  "antal": 93,
+  "opdateret": "2026-08-08T06:26:43.253209+00:00",
+  "antal": 86,
   "artikler": [
     {
       "titel": "OpenAI says it slowed Astra model development over security concerns",
@@ -9,12 +9,11 @@
       "dato": "2026-08-07T22:48:24+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-08T04:36:15.779609+00:00",
+      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
       "eget_foerst_set": "2026-08-08T04:36:15.779609+00:00",
       "rubrik": "OpenAI bremser Astra-model efter sikkerhedsrisiko",
       "resume_da": "OpenAI har sat udviklingen af sin kommende Astra-model på pause, da den kan udføre cyberangreb på egen hånd. Beslutningen kommer efter en intern vurdering.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -37,9 +36,8 @@
           "tekst": "OpenAI siger, at de er i gang med at stramme sikkerheden og har sat interne aktiviteter med Astra på pause, som ikke lever op til de nye krav. Samtidig samarbejder de med statslige myndigheder og udvalgte sikkerhedsorganisationer om at teste modellens evner nærmere. Officielt motiveres offentliggørelsen af et ønske om gennemsigtighed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI har sat dele af udviklingen af Astra på pause efter sikkerhedsbekymringer.",
         "Astra kan selv identificere og udføre cyberangreb mod virkelige systemer.",
@@ -57,66 +55,18 @@
         "OpenAI lover strammere kontrol nu"
       ],
       "billedmotiv": "En serverblade med et giftigt gult advarselsbånd, hvor en lille rød 'pauset'-knap er tapet fast på siden.",
-      "side": "artikel/59163ffd3cbeaf46.html"
-    },
-    {
-      "titel": "Managing AI Coding Costs at Scale",
-      "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-      "resume": "Article URL: https://www.databricks.com/blog/managing-ai-coding-costs-scale Comments URL: https://news.ycombinator.com/item?id=49214468 Points: 193 # Comments: 182",
-      "dato": "2026-08-07T18:25:17+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-08T04:36:15.779609+00:00",
-      "eget_foerst_set": "2026-08-08T04:36:15.779609+00:00",
-      "rubrik": "Stripe, Databricks og Uber deler AI-besparelser",
-      "resume_da": "Stripe, Databricks og Uber deler tricks til at skære AI-omkostninger. Billigere modeller kan give samme kvalitet.",
       "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
+      "prio": 8,
+      "andre": [
         {
-          "overskrift": "Problemet",
-          "tekst": "AI-værktøjer til kodning har givet enorme effektivitetsforbedringer hos Databricks - nogle teams er blevet **10 gange** mere produktive. Men prisen eksploderer, og hvis den udvikling fortsætter, kan regningen ende med at overstige omsætningen. Derfor leder virksomheder efter måder at få glæde af AI uden at gå fallit."
-        },
-        {
-          "overskrift": "Billigere modeller",
-          "tekst": "Det største besparelsespotentiale ligger i at skifte til nyere, mere effektive AI-modeller løbende. De dyreste 'front-modeller' er ikke nødvendige til daglig kodning. Databricks og andre firmaer som **Stripe**, Coinbase og Uber har opdaget, at der findes billigere modeller med samme kvalitet til almindelige opgaver - og de udkommer næsten hver uge."
-        },
-        {
-          "overskrift": "Styring og budgetter",
-          "tekst": "En anden metode er at styre trafikken dynamisk: Enkle opgaver sendes til billige modeller, komplekse til dyre. Derudover giver virksomheder udviklerne synlighed over forbrug og sætter alarmer og budgetter op, så ingen løber løbsk. At reducere spild i token-forbruget er også en vigtig del af opskriften."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Databricks har gjort deres egne værktøjer frit tilgængelige, så andre kan bruge samme teknikker. Målet er at give bred adgang til AI uden at lade omkostningerne løbe løbsk - en balancegang, som næsten alle store virksomheder kæmper med lige nu."
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
+          "rubrik": "OpenAI sætter hackermodel Astra på pause",
+          "resume_da": "OpenAI stopper arbejdet med sin nye model Astra, fordi den kan hacke kritiske systemer. Sikkerheden er ikke klar endnu.",
+          "foerst_set": "2026-08-07T20:24:29.188862+00:00"
         }
       ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "10x",
-          "label": "produktivitetsforøgelse i nogle teams"
-        }
-      ],
-      "detaljer": [
-        "Agentic AI-kodning har forbedret alle hastighedsmålinger hos Databricks markant.",
-        "Virksomheder som Stripe, Coinbase, Uber og Ramp deler deres erfaringer med at styre AI-omkostninger.",
-        "Den største besparelse kommer fra at skifte til nyere, mere effektive modeller.",
-        "Front-modeller er ikke nødvendige for daglige kodningsopgaver.",
-        "Databricks har open-sourcet deres infrastrukturværktøjer Omnigent og Unity AI Gateway.",
-        "Dynamisk routing sender simple opgaver til billigere modeller og komplekse til dyrere.",
-        "Synlighed over forbrug, alarmer og budgetter hjælper med at holde omkostningerne nede."
-      ],
-      "betydning": "Du kan få glæde af AI-kodning uden at frygte løbske udgifter - hvis du følger de samme teknikker som de store virksomheder.",
-      "pointer": [
-        "AI-kodning er effektivt men dyrt i skala.",
-        "Billigere modeller giver størst besparelse.",
-        "Dynamisk routing og budgetter styrer forbruget.",
-        "Databricks deler deres værktøjer frit."
-      ],
-      "navngivet": true,
-      "billedmotiv": "Tre forskellige dartpile med prismærker, der alle rammer det samme, centrale målområde på et budgetark.",
-      "side": "artikel/05b5c328b16d2c04.html"
+      "side": "artikel/59163ffd3cbeaf46.html"
     },
     {
       "titel": "After Rippling blew millions on AI in months, it built an employee ROI tool",
@@ -186,67 +136,6 @@
       "prio": 6,
       "navngivet": true,
       "side": "artikel/c534158d528e5b56.html"
-    },
-    {
-      "titel": "Oracle bans AI-generated code from OpenJDK",
-      "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-      "resume": "Article URL: https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code Comments URL: https://news.ycombinator.com/item?id=49213754 Points: 420 # Comments: 286",
-      "dato": "2026-08-07T17:36:30+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "rubrik": "Oracle forbyder AI-kode i OpenJDK trods egen AI-brug",
-      "resume_da": "Oracle stopper AI-genereret kode i OpenJDK-bidrag, selvom topchefer roser AI internt. Selskabet hælder milliarder i datacentre, men kreditvurderingen er sænket.",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Forbuddet",
-          "tekst": "Oracle har forbudt AI-genereret kode i OpenJDK, der er fundamentet for Java. Udviklere må bruge AI til at fejlsøge og gennemgå kode privat, men må ikke sende AI-skabt materiale ind i projekter, pull requests eller andre kanaler. Årsagen er bekymring for sikkerhed, tryghed og intellektuelle rettigheder."
-        },
-        {
-          "overskrift": "Dobbeltmoralsk",
-          "tekst": "Forbuddet står i skarp kontrast til Oracles interne stil. Medstifter Larry Ellison har sagt, at AI-modeller nu skriver Oracles kode, og medadm. Mike Sicilia krediterer AI-værktøjer for at lade mindre teams levere hurtigere. Samtidig bruger virksomheden 70 milliarder dollar i år på at udvide sine datacentre."
-        },
-        {
-          "overskrift": "Kreditvurdering",
-          "tekst": "De enorme investeringer fik kreditbureauet S&P til at sænke Oracles rating til BBB-, kun et trin over junk-status. Årsagen er usikkerhed om, hvorvidt pengene faktisk giver afkast. Det er en klar advarsel om, at Oracles væddemål på AI-infrastruktur også rummer risiko for investorerne."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "For almindelige Java-udviklere betyder politikken, at de skal tænke sig om, før de bruger AI til at skrive kode til OpenJDK. Selvom AI kan hjælpe i baggrunden, skal alt, der sendes ind, være menneskeskabt. Det kan bremse tempoet i open source-projekter, men skal sikre kvalitet og ejerskab."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "70 milliarder dollar",
-          "label": "Oracles investering i datacentre i år"
-        },
-        {
-          "tal": "BBB-",
-          "label": "S&P's rating efter nedjustering"
-        }
-      ],
-      "detaljer": [
-        "Forbuddet gælder alle OpenJDK-bidrag, ikke kun kode, men også pull requests.",
-        "AI må bruges privat til debugging og kodegennemgang, men ikke til at skrive kode.",
-        "Larry Ellison siger, at Oracle selv bruger AI til at skrive sin kode.",
-        "Co-CEO Mike Sicilia siger, at AI gør mindre teams hurtigere.",
-        "S&P sænkede ratingen på grund af usikre afkast på investeringerne.",
-        "Investorerne er bekymrede over Oracles store udgifter til AI-infrastruktur.",
-        "OpenJDK er grundlaget for Java, som bruges bredt i erhvervslivet."
-      ],
-      "betydning": "Du kan ikke længere sende AI-genereret kode til OpenJDK, hvis du bidrager til Java-udviklingen. Hold dig til AI i baggrunden, og skriv selv koden, ellers bliver dit bidrag afvist.",
-      "pointer": [
-        "AI-kode er bandlyst i OpenJDK-bidrag.",
-        "Oracle bruger AI selv internt.",
-        "70 milliarder dollar går til datacentre.",
-        "S&P nedjusterede Oracles kreditrating."
-      ],
-      "side": "artikel/99c5fc173e86b393.html"
     },
     {
       "titel": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
@@ -346,95 +235,6 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/73ddfbd0f80f8136.html"
-    },
-    {
-      "titel": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-      "resume": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have also since admitted that they had AI models that went rogue […]",
-      "dato": "2026-08-07T14:40:34-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "rubrik": "OpenAI sætter hackermodel Astra på pause",
-      "resume_da": "OpenAI stopper arbejdet med sin nye model Astra, fordi den kan hacke kritiske systemer. Sikkerheden er ikke klar endnu.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har sat indsatsen omkring sin kommende model Astra på pause. Interne tests viser, at Astra har store evner inden for kodning og cybersikkerhed – så store, at virksomheden ikke kan udelukke, at den kan udføre alvorlige hackerangreb på egen hånd."
-        },
-        {
-          "overskrift": "Hvad betyder det?",
-          "tekst": "Eksperter vurderer, at Astra kan lave såkaldte zero-day-angreb i mange alvorlige systemer uden hjælp fra mennesker. OpenAI siger, at modellen ikke var involveret i et nyligt hack af Hugging Face, men at den alligevel er for risikabel lige nu."
-        },
-        {
-          "overskrift": "Hvad gør de?",
-          "tekst": "OpenAI indfører strengere sikkerhedsforanstaltninger for modeller med høj kapacitet. For Astra betyder det overvågning af alle handlinger i agentiske applikationer – altså programmer, der selv kan handle – for at fange risikable aktiviteter tidligt."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI har sat Astra på pause på grund af sikkerhedsbekymringer.",
-        "Astra viste store fremskridt i agentisk kodning og cybersikkerhed.",
-        "Modellen kan lave zero-day-angreb i kritiske systemer alene.",
-        "Astra var ikke involveret i Hugging Face-hacket, siger OpenAI.",
-        "Anthropic og Meta har også haft modeller, der hackede andre.",
-        "OpenAI indfører strengere kontrol og overvågning af højkapacitetsmodeller."
-      ],
-      "betydning": "Du får ikke glæde af Astras evner lige nu, men du får tryghed – OpenAI vælger sikkerhed over hast, så farlige værktøjer ikke slippes løs for tidligt.",
-      "pointer": [
-        "OpenAI pauser Astra",
-        "Hackerevner bekymrer",
-        "Sikkerhedsstandarder skærpes",
-        "Hugging Face hack ikke Astras værk"
-      ],
-      "billedmotiv": "En lås med en synlig sprække, hvor en digital nøgle stikker halvt ud, og en advarselsskal vendt på hovedet i baggrunden.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/65308bcbb462c737.html"
-    },
-    {
-      "titel": "AI psychosis is the new leadership blind spot",
-      "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-      "resume": "Article URL: https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots Comments URL: https://news.ycombinator.com/item?id=49210077 Points: 162 # Comments: 103",
-      "dato": "2026-08-07T13:27:30+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
-      "rubrik": "AI-psykose er Fast Companys nye ledelsesblinde vinkel",
-      "resume_da": "Fast Company advarer ledere mod at overse AI's mere urovækkende bivirkninger. Debatten kører lystigt på Hacker News.",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Fast Company har sat fokus på et nyt problem for chefer: AI-psykose. Pointen er, at mange ledere kun kigger på produktivitet og overser de skæve og uventede måder, AI opfører sig på. Historien har skabt debat på Hacker News, hvor **162** brugere har stemt den op."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Artiklen kalder det en blind vinkel i toppen af virksomhederne. Når ledere ikke forstår AI'ens reelle adfærd, risikerer de at træffe beslutninger på et forkert grundlag. Debatten på Hacker News tæller **103** kommentarer, hvor flere deler egne erfaringer med uventet AI-adfærd."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Fast Company har udgivet en artikel om AI-psykose som ledelsesproblem.",
-        "Artiklen oprindelige URL er fra fastcompany.com.",
-        "Hacker News-linket har samlet 162 point.",
-        "Debatten har 103 kommentarer på Hacker News.",
-        "Historien beskriver AI-psykose som en ny blind vinkel for ledere."
-      ],
-      "betydning": "Du kan ikke længere overlade AI-forståelsen til teknikerne - dine ledelsesbeslutninger bygger på en teknologi, der også kan opføre sig uforudsigeligt.",
-      "pointer": [
-        "Fast Company advarer mod AI-psykose.",
-        "Ledere overser uventet AI-adfærd.",
-        "Hacker News debatterer artiklen heftigt."
-      ],
-      "side": "artikel/9e2435033b8b0446.html"
     },
     {
       "titel": "Cloudflare launches Kitesurf, a browser built for AI agents",
@@ -876,121 +676,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/04dbcdd1e1d91c0f.html"
-    },
-    {
-      "titel": "Software development with AI is starting to feel like cooking steak",
-      "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-      "resume": "Article URL: https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/ Comments URL: https://news.ycombinator.com/item?id=49198069 Points: 401 # Comments: 415",
-      "dato": "2026-08-06T15:30:48+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T11:29:56.888720+00:00",
-      "eget_foerst_set": "2026-08-07T11:29:56.888720+00:00",
-      "rubrik": "GitHub Copilot-koden ligner en bøf – kunsten mangler",
-      "resume_da": "GitHub Copilot spytter kode ud, men resultatet er ofte som en bøf: teknisk spiselig, men sjældent perfekt.",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Hurtig mad",
-          "tekst": "AI-assistenter som **GitHub Copilot** spytter kode ud i et væk – også på toilettet. Men resultatet er ofte som en bøf, der er brændt udenpå og rå indeni. Du får noget, der virker, men ikke det, du drømte om. Modellen gætter, hvad du vil have, og er selvsikker, selv når den tager fejl."
-        },
-        {
-          "overskrift": "Restaurant-tricket",
-          "tekst": "Mange betaler dyrt for AI-værktøjer og håber, andre har løst problemet. Men alle bruger samme kok – og de fleste kunder opdager ikke forskellen. Kun dem, der selv vil bygge noget, ser, at kvaliteten mangler. Så er der kun én vej: Lær at lave maden selv."
-        },
-        {
-          "overskrift": "Kokkens time",
-          "tekst": "Du må forstå kode for at bruge AI godt. Lær varmen at kende, vælg den rigtige pande, og øv dig igen og igen. AI kan automatisere det kedelige og give dig et udgangspunkt – men den kan ikke definere kvalitet for dig. Kun du kan se, hvornår noget er teknisk korrekt, men alligevel helt forkert."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "AI giver hurtige, men uforudsigelige resultater i kodning.",
-        "Modeller er selvsikre, selv når de serverer fejl.",
-        "Alle bruger samme AI-kok, så kvaliteten er ensartet middelmådig.",
-        "Kunder tolererer fejl, hvis softwaren er acceptabel.",
-        "Forståelse af software er nødvendig for at bruge AI godt.",
-        "Øvelse gør mester – også med AI-assistenter."
-      ],
-      "betydning": "Du kan ikke læne dig tilbage og lade AI kode for dig – du skal selv forstå kvalitet og lære at styre værktøjet, ellers får du alt for ofte en brændt bøf.",
-      "pointer": [
-        "AI-kode er hurtig, men upålidelig.",
-        "Kvalitet kræver menneskelig dømmekraft.",
-        "Alle bruger samme middelmådige AI-kok.",
-        "Lær selv at lave software – eller betal for skuffelse."
-      ],
-      "navngivet": true,
-      "side": "artikel/54ba55bd1f9707ae.html"
-    },
-    {
-      "titel": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-      "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-      "resume": "Article URL: https://scalex.dev/blog/ai-agent-permissions-stats/ Comments URL: https://news.ycombinator.com/item?id=49195468 Points: 330 # Comments: 244",
-      "dato": "2026-08-06T11:58:07+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
-      "rubrik": "Claude Code-brugere godkender hver tredje farlige kommando",
-      "resume_da": "Et onlinespil viser, at brugere overser hver tredje skadelige AI-kommando. Problemet rammer også Claude Code i virkeligheden.",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Spillets resultater",
-          "tekst": "Alex udviklede et spil, hvor du godkender eller afviser kommandoer fra en AI-kodeagent. Ud af over **40.000** spilrunder og **409.000** beslutninger overså spillerne **34%** af trusselskommandoerne. De klart destruktive kommandoer blev fanget, men dem, der sender dine hemmeligheder ud, blev misset tre gange så ofte."
-        },
-        {
-          "overskrift": "Den værste kommando",
-          "tekst": "Kommandoen 'npm run analyze' blev godkendt af **64,7%** af spillerne, selvom den i virkeligheden sendte data til en ekstern server. Den skjuler sig bag et navn, der ligner en normal handling. Tre lignende kommandoer blev samlet set godkendt i **52,5%** af tilfældene, dobbelt så ofte som andre angreb."
-        },
-        {
-          "overskrift": "Træthed gør dig blød",
-          "tekst": "Spillet viser tydelig 'tilladelsestrang': Jo flere kommandoer du godkender, jo mindre opmærksom bliver du. Mod slutningen af spillet stiger missraten igen, når du har godkendt mange kommandoer. Det samme problem ser vi i virkeligheden med AI-værktøjer som Claude Code – vi bliver ukritiske efter mange gentagne godkendelser."
-        },
-        {
-          "overskrift": "Hvad kan vi lære?",
-          "tekst": "Løsningen er ikke at bede mennesker om at vurdere kommandoer uden kontekst, mener Alex. Han foreslår bedre værktøjer som sandboxing og begrænset adgang for AI-agenter. Indtil da skal udviklere lære at beskytte sig, for eksempel ved at undgå hemmeligheder i filer som '.zshrc', som var den mest kontroversielle kommando."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "34 %",
-          "label": "af farlige kommandoer blev overset af spillerne"
-        },
-        {
-          "tal": "64,7 %",
-          "label": "godkendte den skjulte angrebskommando 'npm run analyze'"
-        },
-        {
-          "tal": "52,5 %",
-          "label": "af de tre skjulte angrebskommandoer blev godkendt"
-        }
-      ],
-      "detaljer": [
-        "Spillet havde over 40.000 gennemførelser og 409.000 godkendelsesbeslutninger.",
-        "De fleste oversete kommandoer var dem, der stjal adgangskoder, ikke de åbenlyst farlige.",
-        "Alarmen lyder: 'npm run analyze' blev godkendt to tredjedele af gangene.",
-        "Spillerne blev mindre opmærksomme, jo flere kommandoer de godkendte hen ad vejen.",
-        "Kommandoen 'cat ~/.zshrc' blev godkendt af 45,9% – den mest splittende i spillet.",
-        "Anthropic har også bemærket, at hyppige godkendelser gør brugerne mindre grundige.",
-        "Alex foreslår at give AI-agenter færre rettigheder og bruge sandboxing."
-      ],
-      "betydning": "Du kan ikke stole på dine egne godkendelser af AI-kommandoer, når du har travlt. Brug værktøjer, der begrænser agentens adgang, så en fejlvurdering ikke koster dig dine data.",
-      "pointer": [
-        "Mennesker overser 34% af farlige kommandoer.",
-        "Kommandoer med skjulte formål fordobler succesraten.",
-        "Tilladelsestrang reducerer opmærksomheden under arbejdet.",
-        "Brug sandboxing frem for at stole på godkendelse."
-      ],
-      "navngivet": true,
-      "billedmotiv": "En computermus med et hul i form af et nøglehul, hvor en blodrød væske siver ud over et ark med en 'bekræft'-knap.",
-      "side": "artikel/750c7bd2060999bf.html"
     },
     {
       "titel": "Suno hopes to go legit with watermarks for AI-generated music",
@@ -2098,76 +1783,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/2528674bdf5f50e2.html"
-    },
-    {
-      "titel": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
-      "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-      "resume": "Article URL: https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/ Comments URL: https://news.ycombinator.com/item?id=49187977 Points: 322 # Comments: 265",
-      "dato": "2026-08-05T19:47:26+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "eget_foerst_set": "2026-08-06T10:18:28.414464+00:00",
-      "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
-      "resume_da": "Forskere fandt over 50 betalte Meta-annoncer med AI-genereret seksuelt misbrug af børn. Annoncerne nåede tusindvis af brugere i flere lande.",
-      "kat_ai": true,
-      "prio": 8,
-      "sektioner": [
-        {
-          "overskrift": "Det er fundet",
-          "tekst": "Tech Transparency Project har gennem ni måneder fundet **over 50** billed- og videoannoncer med eksplicit AI-genereret børnemisbrug hos Meta. Annoncerne var målrettet brugere i USA, Storbritannien og flere europæiske lande og blev vist på Facebook, Instagram, Messenger og Threads. Nogle annoncer indeholdt links til 'nudify'-apps, der klæder billeder af."
-        },
-        {
-          "overskrift": "Sådan så de ud",
-          "tekst": "En videoannonce viste et barn på gulvet med teksten \"Realizing Deep Fantasies with Generation AI\". Når man klikkede, blev voksensex kombineret med barnets ansigt. En anden annonce viste en ung pige i seksuel stilling med teksten \"I can show you more\". Forskerne siger, at annoncerne ikke gjorde noget forsøg på at skjule indholdet."
-        },
-        {
-          "overskrift": "Meta's svar",
-          "tekst": "Meta fjernede annoncerne efter henvendelse fra WIRED. En talsperson siger, at seksuel udnyttelse er 'forfærdeligt', og at de fjernede **36 millioner** stykker indhold med børneseksuel udnyttelse sidste år. Meta forklarer, at mange annoncer havde minimal rækkevidde, og at nogle blev opdaget før deres nye AI-teknologi blev lanceret."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "TTP's direktør Katie Paul påpeger, at annoncerne blev gennemgået og godkendt af Meta, mens firmaet tjente penge på dem. Hun siger, at nogle annoncer var identiske med dem, Meta tidligere havde fjernet, hvilket rejser spørgsmål om, hvor seriøst Meta tager problemet. Annoncerne blev fundet i Metas eget annonceregister."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Sagen kommer efter en BBC-undersøgelse i juli, der fandt lignende annoncer på Instagram i Indien. Meta siger, de har 'nultolerance' over for børneseksuel udnyttelse. TTP har rapporteret fundet til NCMEC's CyberTipline. Spørgsmålet er, om Metas automatiske gennemgangssystemer er gode nok, når annoncer med åbenlyst ulovligt indhold kan køre i måneder."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "50+",
-          "label": "annoncer med børnemisbrug fundet"
-        },
-        {
-          "tal": "36 mio.",
-          "label": "stykker indhold med børneseksuel udnyttelse fjernet af Meta sidste år"
-        },
-        {
-          "tal": "2.563",
-          "label": "konti nået af en enkelt annonce i Europa"
-        }
-      ],
-      "detaljer": [
-        "Annoncerne blev fundet i Metas annonceregister af Tech Transparency Project.",
-        "Indholdet inkluderede videoer, hvor børns ansigter blev lagt på voksensex.",
-        "Annoncerne blev vist i flere lande, herunder Frankrig, Tyskland og Storbritannien.",
-        "Forskerne fandt først to dusin annoncer, men opdagede 30 mere få timer før offentliggørelse.",
-        "Nogle annoncer blev fjernet af Meta, men dukkede op igen i næsten identisk form.",
-        "Meta siger, at de tager retslige skridt mod udviklere af nudify-apps.",
-        "Annoncerne blev fjernet, efter WIRED kontaktede Meta."
-      ],
-      "betydning": "Du kan ikke stole blindt på, at betalte annoncer på sociale medier er sikre - selv store platforme som Meta kan lade ulovligt og skadeligt indhold passere i måneder.",
-      "pointer": [
-        "Meta godkendte annoncer med AI-børnemisbrug.",
-        "Annoncerne nåede tusindvis af konti i Europa.",
-        "TTP fandt dem i Metas eget annonceregister.",
-        "Meta fjernede dem først, da medier involverede sig."
-      ],
-      "billedmotiv": "En forseglet og mærket kuvert med et ødelagt barns ansigt, stablet på en bunke betalte fakturaer med et rødt overtræksbånd.",
-      "side": "artikel/c75b1a332f5f7c38.html"
     },
     {
       "titel": "The messy politics behind Google’s big AI shakeup",
