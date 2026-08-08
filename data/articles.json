@@ -1,7 +1,68 @@
 {
-  "opdateret": "2026-08-08T10:05:44.171842+00:00",
-  "antal": 85,
+  "opdateret": "2026-08-08T11:52:04.550154+00:00",
+  "antal": 86,
   "artikler": [
+    {
+      "titel": "DeepMind’s hurricane breakthrough has surprised weather scientists",
+      "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
+      "resume": "Open source WeatherNext model can make accurate predictions with lower-resolution weather data.",
+      "dato": "2026-08-08T11:05:50+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-08-08T11:52:04.550154+00:00",
+      "eget_foerst_set": "2026-08-08T11:52:04.550154+00:00",
+      "rubrik": "Googles AI overrasker: Ramte orkanen fem dage før",
+      "resume_da": "Googles AI-model WeatherNext forudsagde orkanen Melissa tidligere og mere præcist end hidtil. Forskere er overraskede over, at den virker så godt med lav opløsning.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det skete",
+          "tekst": "I oktober 2025 ramte orkanen Melissa Jamaica som kategori 5. Googles AI-model WeatherNext gav fem dage før landgang 80 procents sikkerhed for, at den ville ramme som en voldsom orkan. Det gav lokalsamfundene ekstra tid til at evakuere og forberede sig, inden katastrofen ramte med oversvømmelser og jordskred."
+        },
+        {
+          "overskrift": "Hvorfor virker den?",
+          "tekst": "Forskerne bag modellen er overraskede. Den bruger nemlig langt grovere vejrdata end traditionelle modeller og forstår de ikke helt, hvordan den finder signalet. De tror, at AI'en opdager mønstre i cyclondannelse, som fysikerne ikke kender til endnu. Modellen laver også op til 1000 scenarier per storm, så forskerne kan se flere mulige udfald."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "Eksperter advarer mod at stole blindt på én model. En orkan er ikke kun et spor og en styrke – menneskelige eksperter er stadig nødvendige for at oversætte dataene til konkrete farer som oversvømmelser. AI-modellen er ét værktøj blandt mange, og den kan lige så godt tabe til andre modeller næste gang."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Google gør WeatherNext open source, så andre forskere kan bygge videre på modellen. Det kan hjælpe med at forstå, hvordan orkaner opstår, og forbedre forudsigelserne endnu mere. Målet er at give folk længere varsel og dermed redde liv, når en katastrofal storm er på vej mod land."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "80 %",
+          "label": "sikkerhed for kategori 5 fem dage før landgang"
+        },
+        {
+          "tal": "1 dag",
+          "label": "længere varsel end eksisterende modeller"
+        }
+      ],
+      "detaljer": [
+        "WeatherNext forudsagde orkanen Melissa fem dage før landgang med 80 procents sikkerhed.",
+        "AI-modellen giver i gennemsnit en dag ekstra forberedelsestid sammenlignet med gamle modeller.",
+        "Den bruger meget grovere atmosfæriske data end traditionelle modeller kræver.",
+        "Modellen genererer nu 1000 mulige scenarier per storm mod 50 sidste år.",
+        "Det er første gang, National Hurricane Centre forudsiger en kategori 5-storm, mens den kun var kategori 1.",
+        "Google gør modellen open source, så forskere kan forbedre den."
+      ],
+      "betydning": "Du får mere tid til at evakuere, hvis en voldsom orkan rammer, fordi AI'en opdager den tidligere. Det kan redde liv, når truslen eskalerer hurtigt.",
+      "pointer": [
+        "Googles AI forudsiger orkaner en dag tidligere",
+        "Modellen ramte Melissa fem dage før med 80 % sikkerhed",
+        "Forskere forstår ikke helt hvorfor den virker",
+        "Den er nu åben for alle forskere"
+      ],
+      "billedmotiv": "En vejrmølle med en mængde vindmåler-sensorer og en gammel håndholdt vejrstation med et kighul til en stor skærm, hvor én enkelt orkan-sirene er monteret foran.",
+      "side": "artikel/529c4767029a6e49.html"
+    },
     {
       "titel": "After Rippling blew millions on AI in months, it built an employee ROI tool",
       "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
@@ -287,57 +348,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/62678037a7feb1b2.html"
-    },
-    {
-      "titel": "Responding to the next frontier of critical cyber capabilities",
-      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "resume": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
-      "dato": "2026-08-07T15:20:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-04T22:36:37.175786+00:00",
-      "eget_foerst_set": "2026-08-07T18:07:29.170070+00:00",
-      "rubrik": "OpenAI tester Astra mod cybertrusler",
-      "resume_da": "OpenAI deler foreløbige evalueringer af Astra på cybersikkerhed og styrker sine egne forsvarsmekanismer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har offentliggjort foreløbige resultater fra tests af deres nye AI-model Astra. Testene ser på, hvor godt modellen står imod forsøg på at blive misbrugt til ondsindede formål, og hvor robust dens beskyttelse er mod cyberangreb."
-        },
-        {
-          "overskrift": "Sikkerheden",
-          "tekst": "Virksomheden fortæller samtidig, at de styrker deres eksisterende sikkerhedsforanstaltninger og systemer til kontrol. Det skal gøre Astra sværere at udnytte, når modellen efterhånden bliver rullet bredere ud til brugere verden over."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI deler foreløbige cybersikkerhedsevalueringer for AI-modellen Astra.",
-        "Evalueringerne omfatter modstand mod misbrug og eksterne angreb.",
-        "OpenAI styrker sine egne sikkerhedskontroller som opfølgning.",
-        "Tests er et skridt mod bredere udrulning af Astra."
-      ],
-      "betydning": "Du får en AI-model med tydeligere fokus på sikkerhed, men du skal stadig være opmærksom på, at ingen model er 100 procent ufejlbarlig over for cybertrusler.",
-      "pointer": [
-        "OpenAI tester Astra mod cyberangreb.",
-        "Resultaterne er foreløbige og delvist offentliggjorte.",
-        "Sikkerhedskontrollerne bliver skærpet i samme ombæring.",
-        "Tests skal bane vejen for bredere brug."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-          "rubrik": "OpenAI strammer reglerne for AI-cybersikkerhed",
-          "resume_da": "OpenAI har haft uheld med tredjeparts cybersikkerhedsevalueringer og indfører nu nye sikkerhedsforanstaltninger for at styrke test af AI-modeller.",
-          "foerst_set": "2026-08-04T22:36:37.175786+00:00"
-        }
-      ],
-      "billedmotiv": "En åben lås med en mikrochip i stedet for nøglehul, omgivet af tre knækkede pile, hvoraf én er bøjet og har en lille skjoldformet spids.",
-      "side": "artikel/93f793ec8172b713.html"
     },
     {
       "titel": "Jill Lepore on the ‘Artificial State’ and why Silicon Valley’s leaders are bad sci-fi readers",
@@ -1801,7 +1811,7 @@
       "dato": "2026-08-06T09:26:42-04:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
-      "foerst_set": "2026-08-05T22:34:32.063236+00:00",
+      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
       "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
       "rubrik": "Google mister Jeff Dean og Demis Hassabis",
       "resume_da": "Google rokker om i AI-toppen: Demis Hassabis trækker sig fra daglig ledelse, og topforsker Jeff Dean forlader selskabet med tre kolleger.",
@@ -1823,13 +1833,6 @@
       "noegletal": [],
       "figurer": [],
       "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-          "rubrik": "Jeff Dean forlader Google for at starte AI-startup",
-          "resume_da": "Jeff Dean og flere topforskere stifter firmaet Discovery Loop, som vil bruge AI til at fremskynde videnskabelige opdagelser. Firmaet har fået millioner fra Alphabet og andre investorer.",
-          "foerst_set": "2026-08-05T22:34:32.063236+00:00"
-        },
         {
           "kilde": "The Verge AI",
           "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
@@ -2119,6 +2122,58 @@
       "side": "artikel/89dc1c4799e71c11.html"
     },
     {
+      "titel": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
+      "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
+      "resume": "The legendary Google executive is joined by other outgoing Google execs in a joint mission to use AI to push forward the process of scientific discovery.",
+      "dato": "2026-08-05T19:30:19+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-05T22:34:32.063236+00:00",
+      "eget_foerst_set": "2026-08-05T22:34:32.063236+00:00",
+      "rubrik": "Jeff Dean forlader Google for at starte AI-firma",
+      "resume_da": "Topforskeren Jeff Dean og tre kolleger forlader Google for at grundlægge Discovery Loop, der vil bruge AI til at fremskynde videnskabelige opdagelser.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Hvem er med?",
+          "tekst": "Jeff Dean har været hos Google siden 1999 og er en af selskabets mest indflydelsesrige forskere. Med sig tager han tre andre topfolk: Sanjay Ghemawat, Quoc Le og Oriol Vinyals. Dean bliver direktør for det nye selskab, der hedder Discovery Loop."
+        },
+        {
+          "overskrift": "Hvad vil de lave?",
+          "tekst": "Discovery Loop vil bruge kraftige algoritmer til at køre tusindvis af eksperimenter samtidig. Målet er at automatisere store dele af forskningsprocessen, så opdagelser går hurtigere. De vil også undersøge, hvordan AI kan hjælpe med at udvikle endnu stærkere AI."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Alphabets ventureselskab har givet penge til startuppet, og den første investeringsrunde ledes af Radical Ventures og Khosla Ventures. Også Kleiner Perkins, Lightspeed og Doerr Capital er med. Det viser, at investorer tror på idéen om, at AI kan revolutionere forskning."
+        },
+        {
+          "overskrift": "Hvad betyder det?",
+          "tekst": "Dean har haft stor betydning for Googles søgemaskine og for AI-modeller som Gemini. Hans afgang er et tegn på, at flere af de dygtigste forskere vil arbejde med at bruge AI til videnskab i stedet for kun at lave chatbots og søgeværktøjer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Jeff Dean har arbejdet hos Google siden 1999 og var medarbejder nummer 30.",
+        "Discovery Loop er et såkaldt public benefit corporation.",
+        "Startuppet vil køre tusindvis af eksperimenter samtidig med AI.",
+        "De vil undersøge recursive self-improvement, hvor AI forbedrer sig selv.",
+        "Investeringsrunden ledes af Radical Ventures og Khosla Ventures.",
+        "Dean har bidraget til Googles søgeinfrastruktur og Gemini-modellerne."
+      ],
+      "betydning": "Du kan forvente hurtigere videnskabelige gennembrud, når AI overtager dele af forskningsarbejdet - det kan give dig nye lægemidler og teknologier langt tidligere.",
+      "pointer": [
+        "Jeff Dean og tre kolleger forlader Google.",
+        "De starter AI-selskabet Discovery Loop.",
+        "Målet er at automatisere videnskabelige eksperimenter.",
+        "Alphabet har støttet projektet økonomisk."
+      ],
+      "billedmotiv": "En forladt jakke på en krog, med et støvet navneskilt, mens en nøgen pære dingler over et tomt skrivebord med en forladt kaffekop.",
+      "side": "artikel/41dee0fbffe4c22b.html"
+    },
+    {
       "titel": "Shopify says AI search is driving more traffic and sales, not replacing Google",
       "link": "https://techcrunch.com/2026/08/05/shopify-says-ai-search-is-driving-more-traffic-and-sales-not-replacing-google/",
       "resume": "Shopify says AI isn’t cannibalizing search traffic the way it has for publishers. Instead, AI-driven traffic and orders to Shopify stores tripled year over year in Q2.",
@@ -2300,6 +2355,57 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/c554b9adf0bdf667.html"
+    },
+    {
+      "titel": "Responding to the next frontier of critical cyber capabilities",
+      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "resume": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+      "dato": "2026-08-07T15:20:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-04T22:36:37.175786+00:00",
+      "eget_foerst_set": "2026-08-07T18:07:29.170070+00:00",
+      "rubrik": "OpenAI tester Astra mod cybertrusler",
+      "resume_da": "OpenAI deler foreløbige evalueringer af Astra på cybersikkerhed og styrker sine egne forsvarsmekanismer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har offentliggjort foreløbige resultater fra tests af deres nye AI-model Astra. Testene ser på, hvor godt modellen står imod forsøg på at blive misbrugt til ondsindede formål, og hvor robust dens beskyttelse er mod cyberangreb."
+        },
+        {
+          "overskrift": "Sikkerheden",
+          "tekst": "Virksomheden fortæller samtidig, at de styrker deres eksisterende sikkerhedsforanstaltninger og systemer til kontrol. Det skal gøre Astra sværere at udnytte, når modellen efterhånden bliver rullet bredere ud til brugere verden over."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+          "rubrik": "OpenAI strammer reglerne for AI-cybersikkerhed",
+          "resume_da": "OpenAI har haft uheld med tredjeparts cybersikkerhedsevalueringer og indfører nu nye sikkerhedsforanstaltninger for at styrke test af AI-modeller.",
+          "foerst_set": "2026-08-04T22:36:37.175786+00:00"
+        }
+      ],
+      "detaljer": [
+        "OpenAI deler foreløbige cybersikkerhedsevalueringer for AI-modellen Astra.",
+        "Evalueringerne omfatter modstand mod misbrug og eksterne angreb.",
+        "OpenAI styrker sine egne sikkerhedskontroller som opfølgning.",
+        "Tests er et skridt mod bredere udrulning af Astra."
+      ],
+      "betydning": "Du får en AI-model med tydeligere fokus på sikkerhed, men du skal stadig være opmærksom på, at ingen model er 100 procent ufejlbarlig over for cybertrusler.",
+      "pointer": [
+        "OpenAI tester Astra mod cyberangreb.",
+        "Resultaterne er foreløbige og delvist offentliggjorte.",
+        "Sikkerhedskontrollerne bliver skærpet i samme ombæring.",
+        "Tests skal bane vejen for bredere brug."
+      ],
+      "billedmotiv": "En åben lås med en mikrochip i stedet for nøglehul, omgivet af tre knækkede pile, hvoraf én er bøjet og har en lille skjoldformet spids.",
+      "kat_ai": true,
+      "prio": 4,
+      "side": "artikel/93f793ec8172b713.html"
     },
     {
       "titel": "Texas halts data center connections to power grid amid overwhelming demand",
@@ -3031,81 +3137,6 @@
       "side": "artikel/82e3dc5b42774375.html"
     },
     {
-      "titel": "Google Earth risked ruin with retracted AI tool for making fake satellite pics",
-      "link": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images/",
-      "resume": "“What on earth is Google doing?” Misinformation fears spur walk-back of AI tool.",
-      "dato": "2026-07-31T20:21:05+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-31T18:08:22.003470+00:00",
-      "eget_foerst_set": "2026-07-31T22:16:04.391920+00:00",
-      "rubrik": "Google fjerner AI-værktøj efter misbrug af satellitbilleder",
-      "resume_da": "Google lod kortvarigt brugere ændre satellitbilleder med AI, men trak funktionen tilbage efter kritik af misinformation.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad skete der?",
-          "tekst": "Google lavede et AI-værktøj, der gjorde det muligt at ændre Google Earths satellitbilleder og skabe falske scener. Funktionen blev lanceret i slutningen af juli, men efter kun få dage trak Google den tilbage. Folk havde blandt andet lavet et billede af en stor Donald Trump-statue ved Det Hvide Hus."
-        },
-        {
-          "overskrift": "Kritikken haglede ned",
-          "tekst": "Forskere og efterforskere var stærkt utilfredse. Efterforskeren Henk van Ess viste på en blog, hvordan han kunne placere flygtninge ved den mexicanske grænse og et atomkraftværk i Iran på få sekunder. Han kaldte det for \"hvad laver Google egentlig?\" og påpegede, at værktøjet tidligere krævede seks trin, men nu tog få sekunder."
-        },
-        {
-          "overskrift": "Googles forsvar",
-          "tekst": "Google forsvarede funktionen med et digitalt vandmærke kaldet SynthID, som skal gøre det muligt at se, om billeder er AI-genererede. Men test viste, at vandmærket ikke altid virker - for eksempel hvis man tager et foto af skærmen med en telefon. Google begrænsede også antallet af tjek til cirka 10 om dagen, og vandmærket kunne fjernes ved redigering."
-        },
-        {
-          "overskrift": "Hvad betyder det nu?",
-          "tekst": "Eksperter frygter, at værktøjet kunne have undermineret tilliden til Google Earth som pålidelig kilde til ægte billeder. Det kunne også have gjort det sværere for journalister at verificere nyheder. Google siger nu, at de tager misinformation alvorligt, men udelukker ikke, at funktionen vender tilbage i en anden form senere."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
-          "rubrik": "Google trækker AI-værktøj tilbage efter én dag",
-          "resume_da": "Google Earths nye AI-funktion, der lod brugere ændre satellitbilleder med tekst, blev lukket efter kun et døgn på grund af misbrug.",
-          "foerst_set": "2026-07-31T22:16:04.391920+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
-          "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
-          "resume_da": "Googles nye AI-billedgenerator i Google Earth gør det nemt at skabe realistiske, men falske flyvebilleder – eksperter advarer mod misbrug.",
-          "foerst_set": "2026-07-31T18:08:22.003470+00:00"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
-          "rubrik": "Google fjerner AI-funktion i Earth efter kun én dag",
-          "resume_da": "Funktionen tillod at lægge falske billeder ind over ægte satellitkort. Eksperter advarede om, at det kunne sprede misinformation, så Google trak i nødbremsen.",
-          "foerst_set": "2026-07-31T22:16:04.391920+00:00"
-        }
-      ],
-      "detaljer": [
-        "Google fjernede AI-funktionen efter mindre end et døgns kritik.",
-        "Efterforskeren Eliot Higgins lavede et AI-billede af Trump-statue ved Det Hvide Hus.",
-        "Henk van Ess skabte falske scenarier som flygtninge og atomkraftværk på få sekunder.",
-        "Google brugte SynthID-vandmærker til at markere AI-genererede billeder.",
-        "SynthID virkede ikke på billeder taget direkte af skærmen.",
-        "Tidligere krævede det seks trin at lave misinformation med Google Earth, nu tog det kun sekunder."
-      ],
-      "betydning": "Du bør være ekstra kritisk, når du ser satellitbilleder på nettet - nu er det nemt at forfalske dem, selvom Google hurtigt fjernede værktøjet. Check altid kilden, før du deler billeder.",
-      "pointer": [
-        "Google fjernede AI-værktøj efter kritik.",
-        "Falske billeder kan skade troværdigheden.",
-        "SynthID-vandmærker virkede ikke altid.",
-        "Funktionen kan vende tilbage senere."
-      ],
-      "billedmotiv": "Et forstørrelsesglas over et kort, hvor en bygning er overstreget med rød tusch, og en viskelæder ligger ved siden af.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/3d2b4219ea10353b.html"
-    },
-    {
       "titel": "Building abundant intelligence",
       "link": "https://openai.com/index/building-abundant-intelligence",
       "resume": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.",
@@ -3145,6 +3176,7 @@
       ],
       "kat_ai": true,
       "prio": 4,
+      "billedmotiv": "En sparegris med en mikrochip-indgang og et stort, åbent låg, hvor flere små, farverige bøger står stablet og blevet forvandlet til et hus.",
       "side": "artikel/ef7e135bdd5acf00.html"
     },
     {

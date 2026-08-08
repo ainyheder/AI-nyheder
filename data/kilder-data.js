@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-08T10:05:44.171842+00:00",
- "artikler_i_alt": 85,
+ "opdateret": "2026-08-08T11:52:04.550154+00:00",
+ "artikler_i_alt": 86,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
-   "som_ekstra": 7,
+   "i_listen": 17,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI's højttaler koster op til 400 dollars",
@@ -41,24 +41,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI svarer igen på Apples ubegrundede søgsmål"
-    },
-    {
-     "rubrik": "Jeff Dean forlader Google for at starte AI-startup",
-     "dato": "",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google mister Jeff Dean og Demis Hassabis"
-    },
-    {
-     "rubrik": "Google fjerner AI-funktion i Earth efter kun én dag",
-     "dato": "",
-     "foerst_set": "2026-07-31T22:16:04",
-     "link": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -190,7 +172,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -198,10 +180,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -217,7 +195,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 5,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI sætter hackermodel Astra på pause",
@@ -236,24 +214,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google mister Jeff Dean og Demis Hassabis"
-    },
-    {
-     "rubrik": "Google trækker AI-værktøj tilbage efter én dag",
-     "dato": "",
-     "foerst_set": "2026-07-31T22:16:04",
-     "link": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
-     "side": "",
-     "hvor": "under",
-     "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
-    },
-    {
-     "rubrik": "Googles Nano Banana 2 kan skabe vildledende billeder",
-     "dato": "",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
-     "side": "",
-     "hvor": "under",
-     "under": "Google fjerner AI-værktøj efter misbrug af satellitbilleder"
     },
     {
      "rubrik": "OpenAI afslører: Løbsk AI-agent hackede flere tjenester",
@@ -339,7 +299,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Google mister Jeff Dean og Demis Hassabis",
      "dato": "2026-08-06T09:26:42",
-     "foerst_set": "2026-08-05T22:34:32",
+     "foerst_set": "2026-08-07T04:14:51",
      "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
      "side": "artikel/a46d990793584f5b.html",
      "hvor": "forside",
@@ -349,15 +309,15 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
-    ],
-    [
-     "Ars Technica AI",
      3
     ],
     [
      "OpenAI Blog",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
     ],
     [
      "MIT Tech Review AI",
@@ -395,6 +355,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Googles AI overrasker: Ramte orkanen fem dage før",
+     "dato": "2026-08-08T11:05:50",
+     "foerst_set": "2026-08-08T11:52:04",
+     "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
+     "side": "artikel/529c4767029a6e49.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Kan ChatGPT reddes efter at have svigtet folk i krise?",
@@ -494,24 +463,11 @@ window.KILDER_STATUS = {
      "side": "artikel/e7e536e0d45d7564.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "SpaceX skræmmer investorer med AI-udgifter",
-     "dato": "2026-08-05T13:59:17",
-     "foerst_set": "2026-08-05T18:09:19",
-     "link": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
-     "side": "artikel/c554b9adf0bdf667.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
-    ],
-    [
-     "TechCrunch AI",
      1
     ],
     [
