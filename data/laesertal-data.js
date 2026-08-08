@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-08T19:51:19.235807+00:00",
+ "opdateret": "2026-08-08T21:59:43.833539+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -101,9 +101,9 @@ window.LAESERTAL = {
      3,
      9,
      7,
-     9,
+     8,
      7,
-     1
+     2
     ]
    },
    {
@@ -137,7 +137,7 @@ window.LAESERTAL = {
      5,
      8,
      5,
-     3,
+     2,
      1
     ]
    },
@@ -241,22 +241,22 @@ window.LAESERTAL = {
      1,
      1,
      1,
-     0,
-     2,
+     1,
+     3,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 61,
- "sidevisninger_i_alt": 98,
+ "besoeg_i_alt": 59,
+ "sidevisninger_i_alt": 94,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 60,
-   "visninger": 60
+   "besoeg": 58,
+   "visninger": 58
   },
   {
    "sti": "/koerekort.html",
@@ -274,19 +274,14 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/42d2a1693856ffda.html",
+   "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 3
   },
   {
    "sti": "/prompts.html",
    "besoeg": 0,
    "visninger": 2
-  },
-  {
-   "sti": "/artikel/0fb7db373bd793a5.html",
-   "besoeg": 0,
-   "visninger": 3
   },
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
@@ -299,12 +294,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
+   "sti": "/artikel/88ab0b7f770b58a2.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/2af7715e9dc023ef.html",
+   "sti": "/artikel/9e2435033b8b0446.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -340,11 +335,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/c68d5f1c469c21b3.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/3b7530206eaef924.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -399,7 +389,7 @@ window.LAESERTAL = {
    "visninger": 3
   },
   {
-   "sti": "/artikel/88ab0b7f770b58a2.html",
+   "sti": "/artikel/2af7715e9dc023ef.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -407,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 58
+   "besoeg": 56
   },
   {
    "fra": "www.google.com",
@@ -419,8 +409,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 58,
-    "visninger": 58
+    "besoeg": 56,
+    "visninger": 56
    },
    {
     "fra": "www.google.com",
@@ -449,11 +439,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/42d2a1693856ffda.html": [
+  "/artikel/0fb7db373bd793a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 3
    }
   ],
   "/prompts.html": [
@@ -461,13 +451,6 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
-   }
-  ],
-  "/artikel/0fb7db373bd793a5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
    }
   ],
   "/artikel/e2b8f86303a263b6.html": [
@@ -484,14 +467,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9e2435033b8b0446.html": [
+  "/artikel/88ab0b7f770b58a2.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/2af7715e9dc023ef.html": [
+  "/artikel/9e2435033b8b0446.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -541,13 +524,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/c68d5f1c469c21b3.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/3b7530206eaef924.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -624,7 +600,7 @@ window.LAESERTAL = {
     "visninger": 3
    }
   ],
-  "/artikel/88ab0b7f770b58a2.html": [
+  "/artikel/2af7715e9dc023ef.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -875,21 +851,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/42d2a1693856ffda.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Reddit-topchef sårer Google og aktien falder",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-01",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/3b4804541f2c2bfe.html",
    "besoeg": 0,
    "visninger": 1,
@@ -905,12 +866,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
+   "sti": "/artikel/88ab0b7f770b58a2.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Fast Company: AI psykose er ledelsens nye blinde vinkel",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
+   "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
+   "kategori": "Politik & jura",
+   "dato": "2026-08-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -920,12 +881,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/2af7715e9dc023ef.html",
+   "sti": "/artikel/9e2435033b8b0446.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
-   "kategori": "Hverdags-AI",
-   "dato": "2026-08-01",
+   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-07",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1031,21 +992,6 @@ window.LAESERTAL = {
    "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
    "kategori": "Lanceringer",
    "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/3b7530206eaef924.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Flint: Nyt sprog fra Microsoft til AI-diagrammer",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1163,8 +1109,8 @@ window.LAESERTAL = {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Databricks: Sådan tæmmes de eksploderende AI-regninger",
-   "kategori": "Penge & marked",
+   "rubrik": "Databricks: Sådan holder du AI-regningen nede",
+   "kategori": "Hverdags-AI",
    "dato": "2026-08-07",
    "henvisere": [
     {
@@ -1175,11 +1121,11 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/88ab0b7f770b58a2.html",
+   "sti": "/artikel/2af7715e9dc023ef.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
-   "kategori": "Politik & jura",
+   "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
+   "kategori": "Hverdags-AI",
    "dato": "2026-08-01",
    "henvisere": [
     {
@@ -1197,15 +1143,15 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
-   "visninger": 10
+   "visninger": 9
   },
   {
    "navn": "Penge & marked",
-   "visninger": 5
+   "visninger": 3
   },
   {
    "navn": "Hverdags-AI",
-   "visninger": 2
+   "visninger": 3
   },
   {
    "navn": "Politik & jura",

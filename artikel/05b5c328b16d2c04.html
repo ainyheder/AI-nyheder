@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Databricks: Sådan tæmmes de eksploderende AI-regninger</title>
-<meta name="description" content="AI-kodning giver enorme gevinster, men prisen kan løbe løbsk. Databricks deler nu deres bedste tricks til at holde udgifterne nede.">
+<title>AI-nyheder.com · Databricks: Sådan holder du AI-regningen nede</title>
+<meta name="description" content="Databricks deler fem konkrete teknikker til at styre de eksploderende omkostninger ved AI-kodningsværktøjer – og virksomheder som Stripe og Uber er allerede i gang.">
 <link rel="canonical" href="https://ainyheder.com/artikel/05b5c328b16d2c04.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Databricks: Sådan tæmmes de eksploderende AI-regninger">
-<meta property="og:description" content="AI-kodning giver enorme gevinster, men prisen kan løbe løbsk. Databricks deler nu deres bedste tricks til at holde udgifterne nede.">
+<meta property="og:title" content="Databricks: Sådan holder du AI-regningen nede">
+<meta property="og:description" content="Databricks deler fem konkrete teknikker til at styre de eksploderende omkostninger ved AI-kodningsværktøjer – og virksomheder som Stripe og Uber er allerede i gang.">
 <meta property="og:url" content="https://ainyheder.com/artikel/05b5c328b16d2c04.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Databricks: Sådan tæmmes de eksploderende AI-regninger", "description": "AI-kodning giver enorme gevinster, men prisen kan løbe løbsk. Databricks deler nu deres bedste tricks til at holde udgifterne nede.", "url": "https://ainyheder.com/artikel/05b5c328b16d2c04.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/05b5c328b16d2c04.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-07T18:25:17+00:00", "articleSection": "Penge \u0026 marked", "isBasedOn": "https://www.databricks.com/blog/managing-ai-coding-costs-scale"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Databricks: Sådan holder du AI-regningen nede", "description": "Databricks deler fem konkrete teknikker til at styre de eksploderende omkostninger ved AI-kodningsværktøjer – og virksomheder som Stripe og Uber er allerede i gang.", "url": "https://ainyheder.com/artikel/05b5c328b16d2c04.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/05b5c328b16d2c04.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-07T18:25:17+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://www.databricks.com/blog/managing-ai-coding-costs-scale"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -53,19 +53,21 @@ footer a { color:var(--accent); }
 <body>
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
-<div class="kicker">Penge &amp; marked · Hacker News: AI · 2026-08-07</div>
-<h1>Databricks: Sådan tæmmes de eksploderende AI-regninger</h1>
-<p class="manchet">AI-kodning giver enorme gevinster, men prisen kan løbe løbsk. Databricks deler nu deres bedste tricks til at holde udgifterne nede.</p>
+<div class="kicker">Hverdags-AI · Hacker News: AI · 2026-08-07</div>
+<h1>Databricks: Sådan holder du AI-regningen nede</h1>
+<p class="manchet">Databricks deler fem konkrete teknikker til at styre de eksploderende omkostninger ved AI-kodningsværktøjer – og virksomheder som Stripe og Uber er allerede i gang.</p>
 
-<h2>Problemet</h2>
-<p>AI-kodningsværktøjer har løftet produktiviteten voldsomt hos Databricks - nogle teams leverer op til ti gange mere output. Men prisen følger med: Udgifterne vokser eksponentielt og truer med at æde hele gevinsten. Virksomheder står i et paradoks: De vil give alle medarbejdere adgang til AI, men kan ikke få regningen til at løbe løbsk.</p>
-<h2>Løsningen</h2>
-<p>Flere store virksomheder, herunder Stripe, Coinbase, Uber og Ramp, er nået frem til samme metode: De bruger billigere open source-modeller til simpelt kodearbejde og sparer de dyre topmodeller til svære opgaver. Og så ruter de opgaverne dynamisk til det bedste og billigste alternativ i øjeblikket - i stedet for altid at bruge den dyreste model.</p>
-<h2>Hvad nu?</h2>
-<p>Databricks har selv bygget værktøjerne og gjort dem frit tilgængelige, så andre kan bruge dem med det samme. holdet bag AI Gateway og Omnigent deler deres erfaringer åbent. Pointen er, at den største besparelse kommer fra at skifte til nyere og mere effektive modeller, så snart de lanceres - næsten hver uge kommer der en, der giver mere intelligens for færre penge.</p>
+<h2>Det store problem</h2>
+<p>AI-kodningsværktøjer har givet enorme produktivitetsgevinster hos Databricks – nogle teams er helt oppe på <strong>10 gange</strong> mere output. Men prisen følger med: Udgifterne vokser eksponentielt og kan hurtigt overhale omsætningen, hvis ikke man griber ind. Virksomheder står i et paradoks: De vil give medarbejderne de bedste værktøjer, men samtidig holde budgettet nede på et fornuftigt niveau.</p>
+<h2>Hemmeligheden: Effektivitetsfronten</h2>
+<p>De dyreste og mest intelligente AI-modeller er ikke altid de rigtige. Databricks taler om en &#x27;effektivitetsfront&#x27; – modeller, der giver mest intelligens for pengene. Typisk kodearbejde kræver ikke matematiske beviser eller banebrydende sikkerhedsforskning. <strong>Billigere, nyere modeller</strong> udkommer næsten ugentligt og giver langt mere værdi per krone end de gamle frontløbere.</p>
+<h2>Fem sparegreb</h2>
+<p>Databricks har sammen med <strong>Stripe</strong>, Coinbase, Uber og Ramp samlet fem teknikker: Skift til open source-modeller, send opgaver videre til billigere modeller, giv udviklerne synlige forbrugsgrænser, reducer unødvendig dataoverførsel og byg en central AI-gateway. De første erfaringer viser store besparelser – men tallene er foreløbig kun retningsgivende, baseret på uformelle interviews.</p>
+<h2>Værktøjerne er gratis</h2>
+<p>Databricks har valgt at dele deres egne værktøjer med omverdenen. Både <strong>Omnigent</strong>, som styrer brugerens AI-assistent, og Unity AI Gateway, der fordeler trafikken mellem modeller, er gjort frit tilgængelige. Det betyder, at andre virksomheder kan tage de samme teknikker i brug uden at skulle bygge alting fra bunden.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>Nogle Databricks-teams har opnået 10 gange mere output med AI-kodning.</li><li>AI-udgifterne vokser eksponentielt og kan overhale omsætningen, hvis de ikke styres.</li><li>Stripe, Coinbase, Uber og Ramp bruger samme teknikker som Databricks.</li><li>Frontier-modeller er de dyreste, men sjældent nødvendige til daglig kodning.</li><li>Den vigtigste besparelse kommer fra at skifte til billigere modeller løbende.</li><li>Databricks har frigivet deres AI Gateway og Omnigent-værktøjer frit tilgængelige.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan få glæde af AI-kodning uden at sprænge budgettet - hvis du vælger modeller med omhu og skifter dem ud løbende. Ellers risikerer regningen at æde hele gevinsten.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Agentic coding har forbedret alle hastighedsmålinger hos Databricks markant.</li><li>Udgifterne til AI-værktøjer vokser eksponentielt og kan true omsætningen.</li><li>Effektivitetsfronten beskriver modeller med bedst intelligens per pris.</li><li>Nye mere effektive modeller udkommer næsten ugentligt.</li><li>Stripe, Coinbase, Uber og Ramp har bidraget med erfaringer.</li><li>Omnigent og Unity AI Gateway er open source og frit tilgængelige.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan undgå at sprænge budgettet med AI-værktøjer, hvis du kender de rigtige teknikker – og flere af dem kan du tage i brug med software, du allerede har.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://www.databricks.com/blog/managing-ai-coding-costs-scale" rel="noopener">Hacker News: AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
