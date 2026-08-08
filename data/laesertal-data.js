@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-08T14:21:18.800246+00:00",
+ "opdateret": "2026-08-08T15:57:04.150975+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 58,
- "sidevisninger_i_alt": 93,
+ "besoeg_i_alt": 56,
+ "sidevisninger_i_alt": 89,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 57,
-   "visninger": 57
+   "besoeg": 55,
+   "visninger": 55
   },
   {
    "sti": "/koerekort.html",
@@ -274,19 +274,14 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/42d2a1693856ffda.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/prompts.html",
    "besoeg": 0,
    "visninger": 2
   },
   {
-   "sti": "/artikel/0fb7db373bd793a5.html",
+   "sti": "/artikel/42d2a1693856ffda.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 1
   },
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
@@ -299,12 +294,17 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
+   "sti": "/artikel/88ab0b7f770b58a2.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/2af7715e9dc023ef.html",
+   "sti": "/artikel/0fb7db373bd793a5.html",
+   "besoeg": 0,
+   "visninger": 3
+  },
+  {
+   "sti": "/artikel/61e5f938cd4c3ca5.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -314,17 +314,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/laer.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/07e66403365804d9.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/93e1eb3c7f134c96.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -354,12 +344,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
+   "sti": "/artikel/9754aadc29e40eb4.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
+   "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -399,7 +389,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/88ab0b7f770b58a2.html",
+   "sti": "/artikel/2af7715e9dc023ef.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -407,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 56
+   "besoeg": 54
   },
   {
    "fra": "www.google.com",
@@ -419,8 +409,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 56,
-    "visninger": 56
+    "besoeg": 54,
+    "visninger": 54
    },
    {
     "fra": "www.google.com",
@@ -449,13 +439,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/42d2a1693856ffda.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/prompts.html": [
    {
     "fra": "herfra selv",
@@ -463,11 +446,11 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/0fb7db373bd793a5.html": [
+  "/artikel/42d2a1693856ffda.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 1
    }
   ],
   "/artikel/e2b8f86303a263b6.html": [
@@ -484,14 +467,21 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/61e5f938cd4c3ca5.html": [
+  "/artikel/88ab0b7f770b58a2.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/2af7715e9dc023ef.html": [
+  "/artikel/0fb7db373bd793a5.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 3
+   }
+  ],
+  "/artikel/61e5f938cd4c3ca5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -505,21 +495,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/laer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/07e66403365804d9.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/93e1eb3c7f134c96.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -561,14 +537,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9be5bdf1245f9d9a.html": [
+  "/artikel/9754aadc29e40eb4.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/9754aadc29e40eb4.html": [
+  "/artikel/9be5bdf1245f9d9a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -624,7 +600,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/88ab0b7f770b58a2.html": [
+  "/artikel/2af7715e9dc023ef.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -633,6 +609,7 @@ window.LAESERTAL = {
   ]
  },
  "faste_uden_besoeg": [
+  "/laer.html",
   "/erhverv.html",
   "/prompt-arkiv.html",
   "/ordbog.html",
@@ -889,12 +866,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
+   "sti": "/artikel/88ab0b7f770b58a2.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-06",
+   "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
+   "kategori": "Politik & jura",
+   "dato": "2026-08-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -904,12 +881,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/2af7715e9dc023ef.html",
+   "sti": "/artikel/61e5f938cd4c3ca5.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
-   "kategori": "Hverdags-AI",
-   "dato": "2026-08-01",
+   "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-06",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -940,21 +917,6 @@ window.LAESERTAL = {
    "rubrik": "Claude er bedre end mennesker til at snyde dig",
    "kategori": "Samfund & etik",
    "dato": "2026-07-31",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/93e1eb3c7f134c96.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Apple vil lade dig betale for mere AI",
-   "kategori": "Lanceringer",
-   "dato": "2026-07-30",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1039,12 +1001,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
+   "sti": "/artikel/9754aadc29e40eb4.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI bygger stemme-AI, der svarer uden ventetid",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
+   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-02",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1054,12 +1016,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
+   "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-02",
+   "rubrik": "OpenAI bygger stemme-AI, der svarer uden ventetid",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-03",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1132,7 +1094,7 @@ window.LAESERTAL = {
    "sti": "/artikel/39d4fd006a363f68.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI svarer igen på Apples ubegrundede søgsmål",
+   "rubrik": "OpenAI svarer igen på Apples søgsmål",
    "kategori": "Politik & jura",
    "dato": "2026-08-03",
    "henvisere": [
@@ -1159,11 +1121,11 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/88ab0b7f770b58a2.html",
+   "sti": "/artikel/2af7715e9dc023ef.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "xAI taber sag: Minnesota- forbud kan gennemføres",
-   "kategori": "Politik & jura",
+   "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
+   "kategori": "Hverdags-AI",
    "dato": "2026-08-01",
    "henvisere": [
     {
@@ -1181,18 +1143,18 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
-   "visninger": 9
+   "visninger": 8
   },
   {
    "navn": "Penge & marked",
    "visninger": 4
   },
   {
-   "navn": "Hverdags-AI",
+   "navn": "Politik & jura",
    "visninger": 2
   },
   {
-   "navn": "Politik & jura",
+   "navn": "Hverdags-AI",
    "visninger": 2
   }
  ]
