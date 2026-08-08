@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-08T15:56:42.327230+00:00",
- "artikler_i_alt": 85,
+ "opdateret": "2026-08-08T17:59:49.741723+00:00",
+ "artikler_i_alt": 91,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -163,7 +163,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "MIT Tech Review AI",
@@ -186,7 +186,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "OpenAI sætter hackermodel Astra på pause",
@@ -198,13 +198,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI bremser Astra-model efter sikkerhedsrisiko"
     },
     {
-     "rubrik": "Jeff Dean forlader Google: AI-chok",
+     "rubrik": "Google rokering: AI-topfolk forlader selskabet",
      "dato": "",
-     "foerst_set": "2026-08-07T18:07:29.170070+00:00",
+     "foerst_set": "2026-08-07T18:07:29",
      "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
      "side": "",
      "hvor": "under",
-     "under": "Google mister Jeff Dean og Demis Hassabis"
+     "under": "Jeff Dean forlader Google for at starte AI-firma"
     },
     {
      "rubrik": "OpenAI afslører: Løbsk AI-agent hackede flere tjenester",
@@ -223,6 +223,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
+     "dato": "2026-08-08T13:53:34",
+     "foerst_set": "2026-08-08T17:59:49",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+     "side": "artikel/7a2536fc12ba4896.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Fenix Flexin indrømmer AI i hit-sang",
@@ -286,21 +295,12 @@ window.KILDER_STATUS = {
      "side": "artikel/03c0d1f5236799eb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google mister Jeff Dean og Demis Hassabis",
-     "dato": "2026-08-06T09:26:42",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
-     "side": "artikel/a46d990793584f5b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "OpenAI Blog",
@@ -874,12 +874,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Databricks: Sådan tæmmes de eksploderende AI-regninger",
+     "dato": "2026-08-07T18:25:17",
+     "foerst_set": "2026-08-08T04:36:15",
+     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+     "side": "artikel/05b5c328b16d2c04.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Oracle forbyder AI-kode i Java-projekt",
+     "dato": "2026-08-07T17:36:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "side": "artikel/99c5fc173e86b393.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Fast Company: AI psykose er ledelsens nye blinde vinkel",
+     "dato": "2026-08-07T13:27:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+     "side": "artikel/9e2435033b8b0446.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-udvikling føles som at stege en bøf",
+     "dato": "2026-08-06T15:30:48",
+     "foerst_set": "2026-08-07T11:29:56",
+     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+     "side": "artikel/54ba55bd1f9707ae.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Alex' AI-spil: Vi overser hver tredje trussel",
+     "dato": "2026-08-06T11:58:07",
+     "foerst_set": "2026-08-07T05:56:50",
+     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+     "side": "artikel/750c7bd2060999bf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
+     "dato": "2026-08-05T19:47:26",
+     "foerst_set": "2026-08-06T10:18:28",
+     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+     "side": "artikel/c75b1a332f5f7c38.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
