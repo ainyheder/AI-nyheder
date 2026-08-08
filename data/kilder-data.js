@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-08T17:59:49.741723+00:00",
- "artikler_i_alt": 91,
+ "opdateret": "2026-08-08T19:50:47.290995+00:00",
+ "artikler_i_alt": 85,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -50,6 +50,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "OpenAI køber startup, der laver præsentationer",
+     "dato": "2026-08-08T19:41:13",
+     "foerst_set": "2026-08-08T19:50:47",
+     "link": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+     "side": "artikel/61f42ecb8f77cb35.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Rippling byggede værktøj efter AI-regning løb løbsk",
@@ -147,15 +156,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T04:14:51",
      "link": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/",
      "side": "artikel/574a05ceaccbf2e2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Maps kan nu bestille mad og booke hotel",
-     "dato": "2026-08-06T12:30:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/",
-     "side": "artikel/03225603b6ebcb46.html",
      "hvor": "forside",
      "under": ""
     }
@@ -874,67 +874,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Databricks: Sådan tæmmes de eksploderende AI-regninger",
-     "dato": "2026-08-07T18:25:17",
-     "foerst_set": "2026-08-08T04:36:15",
-     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-     "side": "artikel/05b5c328b16d2c04.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Oracle forbyder AI-kode i Java-projekt",
-     "dato": "2026-08-07T17:36:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-     "side": "artikel/99c5fc173e86b393.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fast Company: AI psykose er ledelsens nye blinde vinkel",
-     "dato": "2026-08-07T13:27:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-     "side": "artikel/9e2435033b8b0446.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-udvikling føles som at stege en bøf",
-     "dato": "2026-08-06T15:30:48",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-     "side": "artikel/54ba55bd1f9707ae.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Alex' AI-spil: Vi overser hver tredje trussel",
-     "dato": "2026-08-06T11:58:07",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-     "side": "artikel/750c7bd2060999bf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
-     "dato": "2026-08-05T19:47:26",
-     "foerst_set": "2026-08-06T10:18:28",
-     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
-     "side": "artikel/c75b1a332f5f7c38.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
