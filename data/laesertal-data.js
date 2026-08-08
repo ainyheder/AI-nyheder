@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-08T08:25:30.486922+00:00",
+ "opdateret": "2026-08-08T10:06:11.242065+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 61,
- "sidevisninger_i_alt": 97,
+ "besoeg_i_alt": 60,
+ "sidevisninger_i_alt": 95,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 60,
-   "visninger": 60
+   "besoeg": 59,
+   "visninger": 59
   },
   {
    "sti": "/koerekort.html",
@@ -274,9 +274,9 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/0fb7db373bd793a5.html",
+   "sti": "/artikel/42d2a1693856ffda.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 1
   },
   {
    "sti": "/prompts.html",
@@ -284,9 +284,9 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/42d2a1693856ffda.html",
+   "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 3
   },
   {
    "sti": "/artikel/e2b8f86303a263b6.html",
@@ -354,12 +354,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
+   "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
+   "sti": "/artikel/9754aadc29e40eb4.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -376,7 +376,7 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/fa6e1e31c112dba8.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 1
   },
   {
    "sti": "/artikel/2b5e0acf6593ac5a.html",
@@ -407,7 +407,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 59
+   "besoeg": 58
   },
   {
    "fra": "www.google.com",
@@ -419,8 +419,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 59,
-    "visninger": 59
+    "besoeg": 58,
+    "visninger": 58
    },
    {
     "fra": "www.google.com",
@@ -449,11 +449,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/0fb7db373bd793a5.html": [
+  "/artikel/42d2a1693856ffda.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 1
    }
   ],
   "/prompts.html": [
@@ -463,11 +463,11 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/42d2a1693856ffda.html": [
+  "/artikel/0fb7db373bd793a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 3
    }
   ],
   "/artikel/e2b8f86303a263b6.html": [
@@ -561,14 +561,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9754aadc29e40eb4.html": [
+  "/artikel/9be5bdf1245f9d9a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/9be5bdf1245f9d9a.html": [
+  "/artikel/9754aadc29e40eb4.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -593,7 +593,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 1
    }
   ],
   "/artikel/2b5e0acf6593ac5a.html": [
@@ -829,21 +829,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/fa6e1e31c112dba8.html",
-   "besoeg": 0,
-   "visninger": 2,
-   "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
-   "kategori": "Samfund & etik",
-   "dato": "2026-07-31",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
-  },
-  {
    "sti": "/artikel/73ddfbd0f80f8136.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1054,21 +1039,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9754aadc29e40eb4.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-02",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1084,11 +1054,41 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/9754aadc29e40eb4.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "ByteDances Seedance 2.5 skal ind i Pippa",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-02",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/6742ab11a78d1301.html",
    "besoeg": 0,
    "visninger": 1,
    "rubrik": "AI-aktien Situational Awareness styrtdykker 67 pct.",
    "kategori": "Penge & marked",
+   "dato": "2026-07-31",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/fa6e1e31c112dba8.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Anthropics Claude-modeller hackede rigtige firmaer ved en fejl",
+   "kategori": "Samfund & etik",
    "dato": "2026-07-31",
    "henvisere": [
     {
@@ -1177,7 +1177,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Samfund & etik",
-   "visninger": 14
+   "visninger": 13
   },
   {
    "navn": "Lanceringer",
