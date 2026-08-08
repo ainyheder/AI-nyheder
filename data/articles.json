@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-08-08T11:52:04.550154+00:00",
-  "antal": 86,
+  "opdateret": "2026-08-08T14:18:23.832975+00:00",
+  "antal": 93,
   "artikler": [
     {
       "titel": "DeepMind’s hurricane breakthrough has surprised weather scientists",
@@ -13,8 +13,7 @@
       "eget_foerst_set": "2026-08-08T11:52:04.550154+00:00",
       "rubrik": "Googles AI overrasker: Ramte orkanen fem dage før",
       "resume_da": "Googles AI-model WeatherNext forudsagde orkanen Melissa tidligere og mere præcist end hidtil. Forskere er overraskede over, at den virker så godt med lav opløsning.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det skete",
@@ -33,8 +32,6 @@
           "tekst": "Google gør WeatherNext open source, så andre forskere kan bygge videre på modellen. Det kan hjælpe med at forstå, hvordan orkaner opstår, og forbedre forudsigelserne endnu mere. Målet er at give folk længere varsel og dermed redde liv, når en katastrofal storm er på vej mod land."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "80 %",
@@ -45,6 +42,7 @@
           "label": "længere varsel end eksisterende modeller"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "WeatherNext forudsagde orkanen Melissa fem dage før landgang med 80 procents sikkerhed.",
         "AI-modellen giver i gennemsnit en dag ekstra forberedelsestid sammenlignet med gamle modeller.",
@@ -61,7 +59,68 @@
         "Den er nu åben for alle forskere"
       ],
       "billedmotiv": "En vejrmølle med en mængde vindmåler-sensorer og en gammel håndholdt vejrstation med et kighul til en stor skærm, hvor én enkelt orkan-sirene er monteret foran.",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/529c4767029a6e49.html"
+    },
+    {
+      "titel": "Managing AI Coding Costs at Scale",
+      "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+      "resume": "Article URL: https://www.databricks.com/blog/managing-ai-coding-costs-scale Comments URL: https://news.ycombinator.com/item?id=49214468 Points: 269 # Comments: 227",
+      "dato": "2026-08-07T18:25:17+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-08T04:36:15.779609+00:00",
+      "eget_foerst_set": "2026-08-08T04:36:15.779609+00:00",
+      "rubrik": "Databricks: Sådan tæmmer du AI-regningen",
+      "resume_da": "AI-kodning giver vilde gevinster, men regningen eksploderer. Databricks deler nu deres tricks til at holde omkostningerne nede.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Problemet",
+          "tekst": "AI-kodningsværktøjer har givet nogle teams **10 gange** mere output, men prisen følger med - og vokser hurtigere end indtjeningen. Virksomheder står i et paradoks: De vil give alle medarbejdere AI-adgang, men den samlede regning truer med at æde gevinsten op."
+        },
+        {
+          "overskrift": "Løsningen",
+          "tekst": "Databricks og firmaer som **Stripe**, **Coinbase**, **Uber** og **Ramp** har fundet et bat med tricks. Det vigtigste: Skift løbende til nyere, billigere modeller, der er 'gode nok' til daglig kodning - ikke kun de dyre frontløber-modeller. Det kan give store besparelser."
+        },
+        {
+          "overskrift": "Værktøjerne",
+          "tekst": "Afhængigt af hvad man vil, kan man bruge dynamisk routing (sende opgaver til den billigste model, der kan klare dem), sætte advarsler og budgetter for udviklere, eller skære i mængden af 'token-overhead'. Databricks har åbnet deres **Omnigent** og **Unity AI Gateway**."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Gevinsterne kommer hurtigst, hvis man griber nye, mere effektive modeller, så snart de rammer markedet. Men det kræver, at man har styr på sin infrastruktur, så man kan skifte modeller uden at bremse udviklerne. De fleste firmaer kan dog starte med software, de allerede bruger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10x",
+          "label": "mere output i nogle teams med AI-kodning"
+        }
+      ],
+      "detaljer": [
+        "AI-kodning har forbedret alle hastighedsmålinger hos Databricks markant.",
+        "Omkostningerne vokser eksponentielt og kan overhale omsætningen, hvis de ikke styres.",
+        "Den vigtigste spareøvelse er at skifte til billigere, nyere modeller løbende.",
+        "Frontier-modeller er de dyreste; de fleste opgaver kræver ikke top-intelligens.",
+        "Effektivitetsgrænsen (pris vs. intelligens) forbedres næsten hver uge.",
+        "Databricks har udgivet Omnigent og Unity AI Gateway som open source.",
+        "Anbefalingerne bygger på erfaringer fra Stripe, Coinbase, Uber og Ramp."
+      ],
+      "betydning": "Du kan få AI-kodning til at løbe rundt uden at sprænge budgettet - hvis du får styr på modellerne og brugen, før regningen løber løbsk.",
+      "pointer": [
+        "AI-regningen kan æde gevinsten.",
+        "Billige modeller er ofte gode nok.",
+        "Skift modeller i tide - det sparer mest.",
+        "Databricks deler deres værktøjer frit."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En sparegris med en regnemaskine, der viser et grønt pile-dit diagram, og en lille skraldespand med et billede af en avanceret kugle.",
+      "side": "artikel/05b5c328b16d2c04.html"
     },
     {
       "titel": "After Rippling blew millions on AI in months, it built an employee ROI tool",
@@ -199,6 +258,67 @@
       "side": "artikel/59163ffd3cbeaf46.html"
     },
     {
+      "titel": "Oracle bans AI-generated code from OpenJDK",
+      "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "resume": "Article URL: https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code Comments URL: https://news.ycombinator.com/item?id=49213754 Points: 496 # Comments: 357",
+      "dato": "2026-08-07T17:36:30+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "rubrik": "OpenJDK forbyder AI-kode, mens Oracle selv bruger det",
+      "resume_da": "OpenJDK-projektet afviser AI-genereret kode fra bidragydere, men Oracle selv hylder AI's rolle i sin egen udvikling.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenJDK, som styrer udviklingen af Java, har forbudt AI-genereret kode fra bidrag. Projektet siger, at det er for at beskytte mod sikkerhedsrisici og problemer med ophavsret. Udviklere må stadig bruge AI værktøjer privat, når de fejlsøger og gennemgår kode, men de må ikke sende AI-skabte stykker ind til selve projektet."
+        },
+        {
+          "overskrift": "Dobbeltmorale?",
+          "tekst": "Forbuddet står i kontrast til, hvad Oracle selv laver. Medstifter Larry Ellison har sagt, at AI-modeller nu skriver Oracles egen kode, og med-topchef Mike Sicilia siger, at AI hjælper mindre teams med at levere hurtigere. Så mens udefrakommende skal holde sig fra AI-kode, bruger firmaet bag det selv samme teknologi internt."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Oracle bruger i år **70 milliarder dollar** på at udvide sine datacentre. Det store forbrug fik kreditagenturet S&P til at sænke Oracles kreditvurdering til **BBB-**, kun et enkelt trin over junkstatus. Begrundelsen er, at det er usikkert, om de mange investeringer vil tjene sig hjem igen."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Det er endnu uklart, hvordan OpenJDK vil kontrollere, at ingen snyder med AI-genereret kode. Men meldingen er klar: Projekter og ansøgninger skal holdes rene for AI-skrift. Samtidig fortsætter Oracle med at satse massivt på AI i resten af sin forretning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "70 milliarder dollar",
+          "label": "investerer Oracle i datacentre i år"
+        },
+        {
+          "tal": "BBB-",
+          "label": "Oracles kreditvurdering efter nedjustering"
+        }
+      ],
+      "detaljer": [
+        "OpenJDK forbyder AI-genereret kode i bidrag fra udviklere.",
+        "AI må bruges privat til fejlfinding og kodegennemgang.",
+        "Larry Ellison siger, AI-modeller skriver Oracles egen kode.",
+        "Mike Sicilia: AI får mindre teams til at levere hurtigere.",
+        "S&P sænkede Oracles rating til BBB- pga. høje investeringer.",
+        "Forbuddet skyldes sikkerhed, sikkerhed og ophavsretlige bekymringer."
+      ],
+      "betydning": "Når du bidrager til Java-udvikling, må du nu selv tjekke, at din kode er helt menneskeskrevet – ellers kan dit bidrag blive afvist.",
+      "pointer": [
+        "AI-kode er forbudt i OpenJDK",
+        "Oracle bruger selv AI internt",
+        "Kreditvurdering sænket til BBB-",
+        "Investerer 70 milliarder dollar i datacentre"
+      ],
+      "billedmotiv": "En forseglet konvolut mærket 'OpenJDK' med en notesbog med 'AI' og en diamantring ved siden af, hvor en finger peger på den lukkede kuvert.",
+      "side": "artikel/99c5fc173e86b393.html"
+    },
+    {
       "titel": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
       "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
       "resume": "It took long enough, but now LA rapper Fenix Flexin appears to have admitted using AI for the 80s synth pop-themed song \"Rubberz.\" His comments follow the producer Medasin's videos claiming that an AI tool called Treblo (formerly Sonauto) was used to make the song, and the company releasing an AI detector that identifies it […]",
@@ -296,6 +416,50 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/73ddfbd0f80f8136.html"
+    },
+    {
+      "titel": "AI psychosis is the new leadership blind spot",
+      "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+      "resume": "Article URL: https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots Comments URL: https://news.ycombinator.com/item?id=49210077 Points: 170 # Comments: 106",
+      "dato": "2026-08-07T13:27:30+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "rubrik": "AI-psykoser bliver lederes nye blinde vinkel",
+      "resume_da": "Nye AI-systemer kan opfinde virkeligheder, og ledere overser det. Risikoen vokser, når beslutninger overlades til teknologien uden kontrol.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "AI-systemer kan finde på ting, der lyder sandt, men ikke er det - noget forskere kalder AI-psykose. Når topledere stoler blindt på disse systemer, opstår der en farlig blind vinkel i beslutningerne. Mange virksomheder aner ikke, at deres AI lyver for dem, og det kan koste dyrt, hvis ikke der er mennesker til at holde øje med outputtet."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Løsningen er ikke at droppe AI, men at bygge kontrol ind. Konkrete værktøjer kan spore, hvorfor systemet siger noget bestemt, så fejl bliver synlige. Ledere bør kræve forklaringer, før de handler på AI-output. Det er første skridt mod at gøre teknologien troværdig i hverdagen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI kan producere overbevisende falske fortællinger, der ligner virkeligheden.",
+        "Fænomenet sammenlignes med psykose, fordi systemet mister grebet om fakta.",
+        "Ledere overser ofte tegnene, fordi output ser professionelt ud.",
+        "Uden menneskelig kontrol kan beslutninger bygge på opdigtede data.",
+        "162 point og 106 kommentarer på Hacker News viser stor interesse.",
+        "Eksperter peger på sporbarhed som vejen til pålidelig AI."
+      ],
+      "betydning": "Du kan ikke regne med, at AI altid fortæller sandheden - kræv altid at se kilderne bag svarene, hvis beslutningen er vigtig.",
+      "pointer": [
+        "AI kan lyde overbevisende, men finde på ting.",
+        "Ledere overser ofte fejl i AI-output.",
+        "Menneskelig kontrol er stadig nødvendig.",
+        "Sporbarhed hjælper med at fange fejl."
+      ],
+      "navngivet": true,
+      "side": "artikel/9e2435033b8b0446.html"
     },
     {
       "titel": "Cloudflare launches Kitesurf, a browser built for AI agents",
@@ -696,6 +860,114 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/04dbcdd1e1d91c0f.html"
+    },
+    {
+      "titel": "Software development with AI is starting to feel like cooking steak",
+      "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+      "resume": "Article URL: https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/ Comments URL: https://news.ycombinator.com/item?id=49198069 Points: 411 # Comments: 416",
+      "dato": "2026-08-06T15:30:48+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T11:29:56.888720+00:00",
+      "eget_foerst_set": "2026-08-07T11:29:56.888720+00:00",
+      "rubrik": "AI og software: Som at stege en bøf",
+      "resume_da": "AI kan fremskynde udvikling, men ikke erstatte forståelse. Ligesom en bøf kræver det erfaring at få kvalitet.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Ligheden med madlavning",
+          "tekst": "At kode med AI minder om at stege en bøf: enhver kan få noget spiseligt, men en perfekt medium-rare bøf kræver håndværk. AI kan følge en opskrift og gentage processen hurtigt, men den kan ikke vide, hvad du egentlig vil have. Du skal oversætte dine ønsker til krav og eksempler, ellers ender du med kul med timian."
+        },
+        {
+          "overskrift": "To veje til middag",
+          "tekst": "Når skuffelsen rammer, er der to valg: Lær selv at lave maden, eller betal for den dyre restaurant. Men restauranten bruger samme AI-kok som alle andre – fordi det er billigt. Du vil dog mærke forskellen, hvis du virkelig brænder for projektet. Til sidst ender du med at lære at kode grundigt for at få resultater, du kan styre."
+        },
+        {
+          "overskrift": "Hvad betyder det for dig?",
+          "tekst": "AI kan gøre dig hurtigere: det automatiserer kedeligt arbejde og giver startpunkter. Men det erstatter ikke din dømmekraft. Du skal forstå, hvordan software fungerer for at vurdere, om outputtet er godt. Ellers accepterer du bare kul, når nogen serverer det med selvtillid. Ved at lære og fejle opbygger du evnen til at lave god software."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI kan følge opskrifter og gentage processer hurtigt i stor skala.",
+        "Den kan ikke se billedet i dit hoved uden klare krav.",
+        "Mange virksomheder bruger samme AI-kok for at optimere omkostninger.",
+        "Kunder tolererer ofte middelmådig software, fordi den bare skal være acceptabel.",
+        "Du skal lære at vurdere output og forstå software for at få kvalitet."
+      ],
+      "betydning": "Du kan bruge AI til at blive hurtigere, men din egen forståelse og dømmekraft er nøglen til at få software, der faktisk matcher dine forventninger.",
+      "pointer": [
+        "AI uden forståelse giver middelmådige resultater.",
+        "Dyre værktøjer løser ikke problemerne alene.",
+        "Lær at kode grundigt for at styre kvaliteten.",
+        "Fejl er nødvendige for at lære at lave god software."
+      ],
+      "navngivet": true,
+      "side": "artikel/54ba55bd1f9707ae.html"
+    },
+    {
+      "titel": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "resume": "Article URL: https://scalex.dev/blog/ai-agent-permissions-stats/ Comments URL: https://news.ycombinator.com/item?id=49195468 Points: 332 # Comments: 243",
+      "dato": "2026-08-06T11:58:07+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
+      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
+      "rubrik": "AI-agent-sikkerhed: Mennesker godkender 1 ud af 3 trusler",
+      "resume_da": "Et browser-spil med 40.000 runder viser, at mennesker overser hver tredje farlige AI-kommando. Selv mistænkelige kommandoer godkendes ofte.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Spillet afslører",
+          "tekst": "I et online-spil skulle deltagere godkende eller afvise kommandoer fra en AI-kodeagent. Af over **409.000** beslutninger var omkring **34 %** reelle trusler. Resultatet: Mennesker overså hver tredje farlig kommando. Selv åbenlyst skadelige kommandoer blev ofte godkendt, fordi de lignede normale handlinger."
+        },
+        {
+          "overskrift": "Farligste snedighed",
+          "tekst": "Den mest oversete kommando var `npm run analyze`, som **64,7 %** af spillerne godkendte. Kommandoen lignede en uskyldig analyse, men indeholdt faktisk kode, der sendte data til en ekstern server. Skjult bag et velkendt navn blev truslen dobbelt så ofte overset sammenlignet med andre eksfiltreringsangreb."
+        },
+        {
+          "overskrift": "Træthed og støj",
+          "tekst": "Spillet viser også, at opmærksomheden falder hen mod slutningen af en session. Mange uskyldige kommandoer blev blokeret, hvilket skaber frustration. For eksempel blev `cat ~/.zshrc` godkendt af **45,9 %**, selvom den kan afsløre API-nøgler. Den konstante strøm af godkendelser gør udviklere trætte og mindre påpasselige."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "34 %",
+          "label": "af kommandoer var trusler"
+        },
+        {
+          "tal": "64,7 %",
+          "label": "godkendte den farligste kommando"
+        },
+        {
+          "tal": "45,9 %",
+          "label": "godkendte kommando, der kan lække nøgler"
+        }
+      ],
+      "detaljer": [
+        "Spillet havde 40.000 runder og 409.000 godkendelsesbeslutninger.",
+        "Tre kommandoer skjulte ondsindet kode bag et normalt navn og blev overset 52,5 % af tiden.",
+        "Eksfiltreringsangreb uden forklædning blev kun overset 28,4 % af tiden.",
+        "Spillet viser tydelige tegn på aftagende opmærksomhed hen mod slutningen.",
+        "Mange uskyldige kommandoer blev blokeret, hvilket skaber støj og træthed.",
+        "Anbefalingen er at bruge sandboxing og streng kontekstisolering i stedet for menneskelig godkendelse."
+      ],
+      "betydning": "Du kan ikke stole blindt på dine egne godkendelser, når du bruger AI-kodeagent. Selv mistænkelige kommandoer bliver overset, så du bør kræve bedre sikkerhedsværktøjer og være ekstra opmærksom på kommandoer, der ligner normale handlinger.",
+      "pointer": [
+        "Mennesker overser 1 ud af 3 trusler.",
+        "Forklædte kommandoer er dobbelt så farlige.",
+        "Træthed gør os mindre opmærksomme.",
+        "Menneskelig godkendelse er ikke en stærk sikkerhedsbarriere."
+      ],
+      "navngivet": true,
+      "side": "artikel/750c7bd2060999bf.html"
     },
     {
       "titel": "Suno hopes to go legit with watermarks for AI-generated music",
@@ -1121,6 +1393,58 @@
       "prio": 3,
       "navngivet": true,
       "side": "artikel/a1d4b198486ef265.html"
+    },
+    {
+      "titel": "OpenAI says Apple’s own security practices undermine its trade secrets case",
+      "link": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
+      "resume": "Newly filed court exhibits show OpenAI’s legal strategy in Apple’s trade secrets lawsuit: argue that Apple’s own security and offboarding practices — including allowing an Apple manager to access a former engineer’s iCloud account after he left the company —undermine its claims that the allegedly stolen information was properly protected.",
+      "dato": "2026-08-06T15:10:32+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
+      "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
+      "rubrik": "OpenAI: Apples egne rodede sikkerhed undergraver sag",
+      "resume_da": "OpenAI beder retten afvise Apples sagsanlæg om stjålne hemmeligheder. AI-firmaet peger på, at Apple selv lod medarbejdere bruge private iCloud-konti og ikke lukkede adgang efter fratrædelser.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Apple sagsøgte i juli OpenAI for at have fået tidligere Apple-ingeniører til at stjæle fortrolig hardware-viden. Nu svarer OpenAI igen med et krav om, at sagen droppes. Apples egne interne undersøgelser har fået dem til at bede om hurtigere adgang til beviser, fordi flere tidligere ansatte måske har været involveret."
+        },
+        {
+          "overskrift": "Forsvaret",
+          "tekst": "OpenAI viser, at Apple lod medarbejdere bruge private iCloud-konti til arbejde, og at adgang ikke blev lukket efter fratrædelser. De har endda tekstbeskeder, hvor en Apple-chef sad i en tidligere medarbejders konto efter hans afgang for at overføre filer. Det kalder de inkompetent informationshåndtering, ikke tyveri."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "OpenAI siger, at Apple ikke kan pege på konkrete hemmeligheder, men kun vage kategorier som test, leverandører og distribution. De mener, sagen er et forsøg på at bremse konkurrenten i AI-hardware. Apple vil undgå at tabe talenter til OpenAI, lyder anklagen direkte i retspapirerne."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Retten skal nu tage stilling til, om Apples krav om hurtigere bevisførelse imødekommes. OpenAI håber, at hele sagen afvises med argumentet om, at der ikke er tale om beskyttede hemmeligheder. Uanset udfaldet bliver sagen et slagsmål om, hvor gode it-vaner tech-giganter reelt har."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Apple sagsøgte OpenAI i juli 2026 for at få fat i fortrolig hardware-info.",
+        "OpenAI kræver sagen afvist og kalder den grundløs og påskudt.",
+        "Apples chef sad i tidligere medarbejder Chang Lius personlige iCloud efter hans afgang.",
+        "Apple bad retten om hurtigere bevisførelse efter nye interne fund.",
+        "OpenAI siger, Apple ikke har navngivet konkrete hemmeligheder, kun vage kategorier.",
+        "OpenAI påstår, at sagen handler om at bremse konkurrenten i AI-hardware.",
+        "Apple anklages for at have fejlet med sikkerhed og offboarding-procedurer."
+      ],
+      "betydning": "Du får et sjældent indblik i, hvor løst selv store tech-firmaer passer på deres hemmeligheder – og hvor svært det er at kalde noget tyveri, når døren selv stod åben.",
+      "pointer": [
+        "OpenAI vil have Apple-sag afvist",
+        "Apple lod medarbejdere bruge private iCloud-konti",
+        "Chef sad i fratrådts konto efter afgang",
+        "Sagen handler om talentflugt, mener OpenAI"
+      ],
+      "side": "artikel/c73ffcd8d928bf4e.html"
     },
     {
       "titel": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
@@ -1662,6 +1986,64 @@
       "side": "artikel/03c0d1f5236799eb.html"
     },
     {
+      "titel": "The messy politics behind Google’s big AI shakeup",
+      "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
+      "resume": "In the AI industry, Google prides itself on seeming like the adult in the room: quiet, stable, time-tested. On Wednesday, even as the company announced its largest AI org shakeup yet, Google and its leaders presented a unified front, keeping their messaging focused on how the changes tee up future success. But the reality is […]",
+      "dato": "2026-08-06T09:26:42-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
+      "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
+      "rubrik": "Google mister Jeff Dean og Demis Hassabis",
+      "resume_da": "Google rokker om i AI-toppen: Demis Hassabis trækker sig fra daglig ledelse, og topforsker Jeff Dean forlader selskabet med tre kolleger.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Rokaden",
+          "tekst": "Onsdag annoncerede Google den hidtil største omlægning af sin AI-organisation. Demis Hassabis stopper som daglig leder af DeepMind for at fokusere på AGI-forskning, og hans plads overtages af CTO Koray Kavukcuoglu. Samtidig forlader Jeff Dean, der har været i Google i 27 år og var medarbejder nummer 30, sammen med tre andre topforskere for at starte AI-virksomheden Discovery Loop."
+        },
+        {
+          "overskrift": "Kritik indefra",
+          "tekst": "En nuværende Google-medarbejder kalder Deans afgang et tegn på, at idealismen er død: 'Losing Jeff continues the brain drain at Google. Mediocrity is the likely result.' Flere kilder peger på, at Hassabis har mistet indflydelse, og at der internt er pres for at levere produkter hurtigere frem for at forske i det lange løb. Også etiske konflikter om forsvarsaftaler med USA's forsvarsministerium kan have spillet ind."
+        },
+        {
+          "overskrift": "Forsvar og etik",
+          "tekst": "Google har indgået en aftale med Pentagon, der kan bane vej for brug af AI til massiv overvågning og dødbringende autonome våben. DeepMind blev oprindeligt opkøbt med en aftale om ikke at sælge teknologi til militære formål, og flere medarbejdere har forladt selskabet eller forsøgt at fagorganisere sig i protest. Både Dean og Hassabis skulle angiveligt have været modstandere af den retning – og det kan have været med til, at de nu er væk."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+          "rubrik": "Jeff Dean forlader Google: AI-chok",
+          "resume_da": "Googles AI-top vender ryggen til virksomheden. Hvad betyder det for fremtiden?",
+          "foerst_set": "2026-08-07T18:07:29.170070+00:00"
+        }
+      ],
+      "detaljer": [
+        "Demis Hassabis stopper som daglig leder af DeepMind og bliver i stedet formand og leder af AGI-forskning.",
+        "Koray Kavukcuoglu overtager som chef for DeepMind.",
+        "Jeff Dean forlader Google efter 27 år og 30 ansat hos selskabet.",
+        "Dean starter AI-virksomheden Discovery Loop med tre andre Google-forskere.",
+        "Omlægningen kommer efter pres for at få produkter hurtigere på markedet.",
+        "Pentagon-aftalen kan tillade brug af Google AI til overvågning og våben.",
+        "DeepMind blev opkøbt med løfte om ikke at sælge teknologi til militæret."
+      ],
+      "betydning": "Du vil formentlig se et hurtigere og mere produktfokuseret Google på AI-området, men til gengæld kan etikken og forskningen komme til at lide, hvis de stærkeste stemmer forsvinder.",
+      "pointer": [
+        "Google omrokkerer i AI-toppen.",
+        "Hassabis forlader DeepMind-chefposten.",
+        "Jeff Dean starter nyt firma.",
+        "Forsvarsaftale kan have splittet internt."
+      ],
+      "billedmotiv": "En tom skrivebordsstol med et navneskilt, hvor bogstaverne er ridset ud, og en bunke slidte forskningspapirer på sædet.",
+      "kat_ai": true,
+      "prio": 5,
+      "side": "artikel/a46d990793584f5b.html"
+    },
+    {
       "titel": "Working with the American Psychological Association on youth mental health and AI",
       "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
       "resume": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
@@ -1805,62 +2187,78 @@
       "side": "artikel/2528674bdf5f50e2.html"
     },
     {
-      "titel": "The messy politics behind Google’s big AI shakeup",
-      "link": "https://www.theverge.com/tech/976108/google-ai-leadership-shakeup-jeff-dean-demis-hassabis-deepmind",
-      "resume": "In the AI industry, Google prides itself on seeming like the adult in the room: quiet, stable, time-tested. On Wednesday, even as the company announced its largest AI org shakeup yet, Google and its leaders presented a unified front, keeping their messaging focused on how the changes tee up future success. But the reality is […]",
-      "dato": "2026-08-06T09:26:42-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "rubrik": "Google mister Jeff Dean og Demis Hassabis",
-      "resume_da": "Google rokker om i AI-toppen: Demis Hassabis trækker sig fra daglig ledelse, og topforsker Jeff Dean forlader selskabet med tre kolleger.",
-      "brief": "",
+      "titel": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery",
+      "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+      "resume": "Article URL: https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/ Comments URL: https://news.ycombinator.com/item?id=49187977 Points: 322 # Comments: 267",
+      "dato": "2026-08-05T19:47:26+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-06T10:18:28.414464+00:00",
+      "eget_foerst_set": "2026-08-06T10:18:28.414464+00:00",
+      "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
+      "resume_da": "Forskere fandt annoncer med AI-genereret børnemisbrug på Metas platforme. Annoncerne blev godkendt og kørte i måneder.",
+      "kat_ai": true,
+      "prio": 8,
       "sektioner": [
         {
-          "overskrift": "Rokaden",
-          "tekst": "Onsdag annoncerede Google den hidtil største omlægning af sin AI-organisation. Demis Hassabis stopper som daglig leder af DeepMind for at fokusere på AGI-forskning, og hans plads overtages af CTO Koray Kavukcuoglu. Samtidig forlader Jeff Dean, der har været i Google i 27 år og var medarbejder nummer 30, sammen med tre andre topforskere for at starte AI-virksomheden Discovery Loop."
+          "overskrift": "Fundet",
+          "tekst": "Forskere fra Tech Transparency Project (TTP) fandt over 50 annoncer med AI-genereret børnemisbrug i Metas annoncebibliotek. Annoncerne blev vist på Facebook, Instagram, Messenger og Threads og var målrettet brugere i USA, Storbritannien og flere europæiske lande. Nogle annoncer nåede ud til flere tusinde konti."
         },
         {
-          "overskrift": "Kritik indefra",
-          "tekst": "En nuværende Google-medarbejder kalder Deans afgang et tegn på, at idealismen er død: 'Losing Jeff continues the brain drain at Google. Mediocrity is the likely result.' Flere kilder peger på, at Hassabis har mistet indflydelse, og at der internt er pres for at levere produkter hurtigere frem for at forske i det lange løb. Også etiske konflikter om forsvarsaftaler med USA's forsvarsministerium kan have spillet ind."
+          "overskrift": "Indholdet",
+          "tekst": "Annoncerne viste billeder og videoer med børn i seksuelle positioner og opfordrede til at bruge 'nudify'-apps, der kan klæde personer af på billeder. En video viste et barn, hvis ansigt blev lagt ind i en sexscene. Forskernes leder, Katie Paul, siger, at annoncerne ikke forsøgte at skjule deres indhold."
         },
         {
-          "overskrift": "Forsvar og etik",
-          "tekst": "Google har indgået en aftale med Pentagon, der kan bane vej for brug af AI til massiv overvågning og dødbringende autonome våben. DeepMind blev oprindeligt opkøbt med en aftale om ikke at sælge teknologi til militære formål, og flere medarbejdere har forladt selskabet eller forsøgt at fagorganisere sig i protest. Både Dean og Hassabis skulle angiveligt have været modstandere af den retning – og det kan have været med til, at de nu er væk."
+          "overskrift": "Metas ansvar",
+          "tekst": "Metas egne systemer skal gennemgå alle annoncer, før de bliver godkendt. Alligevel kørte annoncerne i måneder, før TTP kontaktede Meta. Forskere fandt endda identiske annoncer, som Meta tidligere havde fjernet. Det rejser spørgsmål om, hvor seriøst Meta tager problemet, når de selv kan genkende annoncerne."
+        },
+        {
+          "overskrift": "Metas svar",
+          "tekst": "Meta fjernede annoncerne efter henvendelse fra WIRED og siger, at seksuel udnyttelse er 'forfærdeligt'. De hævder, at de fleste annoncer havde begrænset rækkevidde, og at nogle blev fjernet før WIREDs kontakt. Meta siger også, at de har fjernet 36 millioner stykker indhold med børnemisbrug sidste år."
+        },
+        {
+          "overskrift": "Tidligere sager",
+          "tekst": "I juli fandt BBC, at Instagram kørte annoncer, der reklamerede for salg af børnemisbrugsmateriale i Indien. Meta sagde dengang, at de har 'nultolerance' over for børnemisbrug. Nu er der igen fundet annoncer, hvilket gør, at kritikere stiller spørgsmål ved Metas kontrolsystemer."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "TTP har anmeldt fundet til National Center for Missing and Exploited Children. Meta siger, de løbende forbedrer deres systemer for at fange ulovlige annoncer, men forskerne påpeger, at annoncerne tilsyneladende ikke blev opdaget af systemerne. Spørgsmålet er, om der er behov for strengere kontrol."
         }
       ],
-      "noegletal": [],
+      "brief": "",
       "figurer": [],
-      "andre": [
+      "noegletal": [
         {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
-          "rubrik": "Jeff Dean forlader Google: AI-chok",
-          "resume_da": "Googles AI-top vender ryggen til virksomheden. Hvad betyder det for fremtiden?",
-          "foerst_set": "2026-08-07T18:07:29.170070+00:00"
+          "tal": "50+",
+          "label": "annoncer med AI-genereret børnemisbrug fundet"
+        },
+        {
+          "tal": "2.563",
+          "label": "konti nået af en enkelt annonce i Europa"
+        },
+        {
+          "tal": "36 mio.",
+          "label": "stykker indhold med børnemisbrug fjernet sidste år"
         }
       ],
       "detaljer": [
-        "Demis Hassabis stopper som daglig leder af DeepMind og bliver i stedet formand og leder af AGI-forskning.",
-        "Koray Kavukcuoglu overtager som chef for DeepMind.",
-        "Jeff Dean forlader Google efter 27 år og 30 ansat hos selskabet.",
-        "Dean starter AI-virksomheden Discovery Loop med tre andre Google-forskere.",
-        "Omlægningen kommer efter pres for at få produkter hurtigere på markedet.",
-        "Pentagon-aftalen kan tillade brug af Google AI til overvågning og våben.",
-        "DeepMind blev opkøbt med løfte om ikke at sælge teknologi til militæret."
+        "Forskere fandt annoncerne i Metas annoncebibliotek, som viser alle annoncer på platformene.",
+        "Annoncerne blev vist til brugere i USA, Storbritannien og over et dusin europæiske lande.",
+        "Flere annoncer linkede til 'nudify'-apps, der kan klæde personer af på billeder.",
+        "Meta fjernede annoncerne efter WIRED kontaktede dem, men nogle havde kørt i ni måneder.",
+        "TTP anmeldte fundet til NCMEC, som ikke kommenterer på modtagne rapporter.",
+        "BBC fandt lignende annoncer på Instagram i juli, der reklamerede for børnemisbrugsmateriale.",
+        "Forskere fandt 30 ekstra annoncer kort før offentliggørelsen, som var live på det tidspunkt."
       ],
-      "betydning": "Du vil formentlig se et hurtigere og mere produktfokuseret Google på AI-området, men til gengæld kan etikken og forskningen komme til at lide, hvis de stærkeste stemmer forsvinder.",
+      "betydning": "Du risikerer at se AI-genereret børnemisbrug i annoncer på Facebook og Instagram, fordi Metas kontrol ikke fanger det – kræv bedre beskyttelse.",
       "pointer": [
-        "Google omrokkerer i AI-toppen.",
-        "Hassabis forlader DeepMind-chefposten.",
-        "Jeff Dean starter nyt firma.",
-        "Forsvarsaftale kan have splittet internt."
+        "Meta godkendte AI-genererede børnemisbrugsannoncer",
+        "Annoncerne kørte i op til ni måneder",
+        "Identiske annoncer blev ikke fjernet, selvom Meta kendte dem",
+        "Metas kontrolsystemer svigtede igen efter juli-fund"
       ],
-      "billedmotiv": "En tom skrivebordsstol med et navneskilt, hvor bogstaverne er ridset ud, og en bunke slidte forskningspapirer på sædet.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/a46d990793584f5b.html"
+      "billedmotiv": "En skærm med et børneansigt, der er sløret, og en ødelagt iPhone med en knækket skærm, der ligger i en bunke mønter.",
+      "side": "artikel/c75b1a332f5f7c38.html"
     },
     {
       "titel": "Meta launches Muse Code, an AI agent for large code bases",
@@ -2132,8 +2530,7 @@
       "eget_foerst_set": "2026-08-05T22:34:32.063236+00:00",
       "rubrik": "Jeff Dean forlader Google for at starte AI-firma",
       "resume_da": "Topforskeren Jeff Dean og tre kolleger forlader Google for at grundlægge Discovery Loop, der vil bruge AI til at fremskynde videnskabelige opdagelser.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvem er med?",
@@ -2152,9 +2549,8 @@
           "tekst": "Dean har haft stor betydning for Googles søgemaskine og for AI-modeller som Gemini. Hans afgang er et tegn på, at flere af de dygtigste forskere vil arbejde med at bruge AI til videnskab i stedet for kun at lave chatbots og søgeværktøjer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Jeff Dean har arbejdet hos Google siden 1999 og var medarbejder nummer 30.",
         "Discovery Loop er et såkaldt public benefit corporation.",
@@ -2171,6 +2567,8 @@
         "Alphabet har støttet projektet økonomisk."
       ],
       "billedmotiv": "En forladt jakke på en krog, med et støvet navneskilt, mens en nøgen pære dingler over et tomt skrivebord med en forladt kaffekop.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/41dee0fbffe4c22b.html"
     },
     {
@@ -2547,15 +2945,6 @@
       ],
       "noegletal": [],
       "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
-          "rubrik": "OpenAI siger Apples sikkerhed er for dårlig i tyveri-sag",
-          "resume_da": "OpenAI påstår, at Apple selv lod en leder se på en tidligere ingeniørs iCloud-konto. Derfor mener de, at Apple ikke kan klage over, at oplysninger blev stjålet.",
-          "foerst_set": "2026-08-07T04:14:51.357339+00:00"
-        }
-      ],
       "detaljer": [
         "Apple har anlagt søgsmål mod OpenAI.",
         "OpenAI kalder søgsmålet for ubegrundet.",
@@ -3174,9 +3563,9 @@
         "Fuld-stak strategi skal gøre AI bedre.",
         "Målet er bredere brugbarhed af AI."
       ],
+      "billedmotiv": "En sparegris med en mikrochip-indgang og et stort, åbent låg, hvor flere små, farverige bøger står stablet og blevet forvandlet til et hus.",
       "kat_ai": true,
       "prio": 4,
-      "billedmotiv": "En sparegris med en mikrochip-indgang og et stort, åbent låg, hvor flere små, farverige bøger står stablet og blevet forvandlet til et hus.",
       "side": "artikel/ef7e135bdd5acf00.html"
     },
     {

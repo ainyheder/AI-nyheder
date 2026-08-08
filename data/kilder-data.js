@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-08T11:52:04.550154+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-08-08T14:18:23.832975+00:00",
+ "artikler_i_alt": 93,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
-   "som_ekstra": 5,
+   "i_listen": 18,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "OpenAI's højttaler koster op til 400 dollars",
@@ -32,15 +32,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT fjerner chat-loftet for gratis-brugere"
-    },
-    {
-     "rubrik": "OpenAI siger Apples sikkerhed er for dårlig i tyveri-sag",
-     "dato": "",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI svarer igen på Apples ubegrundede søgsmål"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -133,6 +124,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI: Apples egne rodede sikkerhed undergraver sag",
+     "dato": "2026-08-06T15:10:32",
+     "foerst_set": "2026-08-07T04:14:51",
+     "link": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
+     "side": "artikel/c73ffcd8d928bf4e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Suno vandmærker nu alle AI-sange efter søgsmål",
      "dato": "2026-08-06T13:31:57",
      "foerst_set": "2026-08-07T04:14:51",
@@ -158,15 +158,6 @@ window.KILDER_STATUS = {
      "side": "artikel/574a05ceaccbf2e2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google Maps kan nu bestille mad og booke hotel",
-     "dato": "2026-08-06T12:30:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/",
-     "side": "artikel/03225603b6ebcb46.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -177,10 +168,6 @@ window.KILDER_STATUS = {
     [
      "MIT Tech Review AI",
      2
-    ],
-    [
-     "OpenAI Blog",
-     1
     ]
    ]
   },
@@ -739,10 +726,6 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      2
-    ],
-    [
-     "TechCrunch AI",
-     1
     ]
    ]
   },
@@ -865,12 +848,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Databricks: Sådan tæmmer du AI-regningen",
+     "dato": "2026-08-07T18:25:17",
+     "foerst_set": "2026-08-08T04:36:15",
+     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+     "side": "artikel/05b5c328b16d2c04.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenJDK forbyder AI-kode, mens Oracle selv bruger det",
+     "dato": "2026-08-07T17:36:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "side": "artikel/99c5fc173e86b393.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-psykoser bliver lederes nye blinde vinkel",
+     "dato": "2026-08-07T13:27:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+     "side": "artikel/9e2435033b8b0446.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI og software: Som at stege en bøf",
+     "dato": "2026-08-06T15:30:48",
+     "foerst_set": "2026-08-07T11:29:56",
+     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+     "side": "artikel/54ba55bd1f9707ae.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-agent-sikkerhed: Mennesker godkender 1 ud af 3 trusler",
+     "dato": "2026-08-06T11:58:07",
+     "foerst_set": "2026-08-07T05:56:50",
+     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+     "side": "artikel/750c7bd2060999bf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta kørte annoncer med AI-genereret børnemisbrug",
+     "dato": "2026-08-05T19:47:26",
+     "foerst_set": "2026-08-06T10:18:28",
+     "link": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/",
+     "side": "artikel/c75b1a332f5f7c38.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
