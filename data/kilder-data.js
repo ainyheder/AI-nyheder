@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-09T10:07:42.214910+00:00",
+ "opdateret": "2026-08-09T11:56:13.045223+00:00",
  "artikler_i_alt": 86,
  "kilder": [
   {
