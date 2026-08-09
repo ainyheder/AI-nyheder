@@ -1,7 +1,109 @@
 {
-  "opdateret": "2026-08-09T11:56:13.045223+00:00",
-  "antal": 86,
+  "opdateret": "2026-08-09T14:20:27.997713+00:00",
+  "antal": 92,
   "artikler": [
+    {
+      "titel": "AI detectors are creating a new era of distrust",
+      "link": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
+      "resume": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more news about how AI is changing our daily lives, follow Emma Roth. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started Long before ChatGPT became a thing, […]",
+      "dato": "2026-08-09T08:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-09T14:20:27.997713+00:00",
+      "eget_foerst_set": "2026-08-09T14:20:27.997713+00:00",
+      "rubrik": "OpenAI lukkede egen AI-detektor: nu er mistilliden total",
+      "resume_da": "OpenAI lukkede sin egen AI-detektor i 2023, fordi den var upålidelig. Alligevel bruges værktøjerne flittigt og rammer især fremmedsprogede og studerende.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Værktøjerne",
+          "tekst": "Lærere og forlag bruger i stigende grad AI-detektorer som GPTZero, Turnitin og Pangram. De gætter på, om tekst er skrevet af et menneske ved at analysere sprogmønstre. Men metoden er usikker, og selv firmaerne advarer mod at stole blindt på resultaterne. En undersøgelse viser, at **43 procent** af amerikanske lærere i 6. til 12. klasse bruger dem fast."
+        },
+        {
+          "overskrift": "Kendte sager",
+          "tekst": "Flere er blevet ramt. Minotaur droppede en bogaftale på **2 millioner dollar**, fordi forfatteren Jerry Falade blev beskyldt for at bruge AI. En fransk studerende sagsøgte Yale efter en dårlig karakter. Og Jack Osbourne beskudte en journalist med en AI-detektor som bevis – uden at trække beskyldningen tilbage."
+        },
+        {
+          "overskrift": "Fejlene rammer",
+          "tekst": "En Stanford-undersøgelse fra 2023 viste, at AI-detektorer oftere fejlagtigt udpeger tekster skrevet af folk med engelsk som andetsprog. Også neurodivergente forfattere er udsat. Selv OpenAI lukkede sit eget værktøj i 2023 på grund af lav præcision. Alligevel spreder anklager sig hurtigt på nettet – med store konsekvenser for uskyldige."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "43 %",
+          "label": "af amerikanske lærere bruger AI-detektorer"
+        },
+        {
+          "tal": "2 mio. dollar",
+          "label": "bogaftale droppet efter AI-anklage"
+        }
+      ],
+      "detaljer": [
+        "AI-detektorer analyserer sprogmønstre og tekststruktur for at gætte oprindelse.",
+        "Turnitin hævder en falsk-positiv-rate på under 1 procent.",
+        "Pangram siger, at kun 1 ud af 10.000 menneskeskrevne tekster fejlvurderes.",
+        "GPTZero blev brugt af en professor mod en studerende ved Yale.",
+        "Adelphi University-studerende vandt sag efter falsk AI-anklage.",
+        "OpenAI lukkede sin egen AI-detektor i 2023 grundet upålidelighed.",
+        "Jack Osbourne brugte AI-detektoren Getsolved i en offentlig beskyldning."
+      ],
+      "betydning": "Du kan blive beskyldt for at bruge AI, selvom du har skrevet alt selv – og værktøjerne er ikke til at stole på.",
+      "pointer": [
+        "AI-detektorer er upålidelige og ofte forkerte",
+        "Lærere og forlag bruger dem alligevel",
+        "Fremmedsprogede og studerende rammes hårdest",
+        "OpenAI droppede selv sin detektor"
+      ],
+      "navngivet": true,
+      "billedmotiv": "En tom skrivebordsplads med et dokument, hvor synlige tekststribe-mønstre er overstreget med rød markør, og en lille skraldespand med etiketten 'AI-detektor' vender på hovedet.",
+      "side": "artikel/acf86426dbc37c6e.html"
+    },
+    {
+      "titel": "Gentoo bugzilla closed due AI bot scraper overload",
+      "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
+      "resume": "Article URL: https://social.treehouse.systems/@mgorny/117058483039362779 Comments URL: https://news.ycombinator.com/item?id=49221864 Points: 166 # Comments: 111",
+      "dato": "2026-08-08T13:55:42+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-09T14:20:27.997713+00:00",
+      "eget_foerst_set": "2026-08-09T14:20:27.997713+00:00",
+      "rubrik": "Gentoo lukker bug-database: AI-botter vælter systemet",
+      "resume_da": "Gentoo har lukket sin fejlsporingsside, fordi AI-botter overbelaster serveren. Det skaber problemer for udviklernes arbejde.",
+      "kat_ai": true,
+      "prio": 1,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Udviklerne bag Linux-distributionen Gentoo har været nødsaget til at lukke deres bugzilla – systemet, hvor fejl og problemer rapporteres. Årsagen er en massiv strøm af trafik fra AI-botter, der skraber data fra siden. Overbelastningen gjorde det umuligt at holde systemet kørende."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Gentoo er kendt for at bruge deres fejlbase flittigt, og en lukning kan forsinke arbejdet med at rette fejl. Det er endnu uvist, hvornår siden åbner igen, og om der skal indføres tiltag mod botterne. Hændelsen viser, hvor sårbare selv tekniske fællesskaber er over for AI-trafik."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI-botter har forårsaget overbelastning af Gentoo's bugzilla-side.",
+        "Systemet er lukket for at stoppe den massive trafik.",
+        "Hændelsen blev beskrevet på sociale medier af en udvikler.",
+        "Diskussionen på Hacker News har 166 point og 111 kommentarer."
+      ],
+      "betydning": "Du kan opleve, at open source-projekter bliver langsommere eller utilgængelige, når AI-botter overvælder deres servere – hvilket forsinker opdateringer og fejlrettelser, du venter på.",
+      "pointer": [
+        "AI-botter overbelaster Gentoo's bugzilla",
+        "Systemet er midlertidigt lukket",
+        "Uvist hvornår det er oppe igen",
+        "Åbent spørgsmål om botforebyggelse"
+      ],
+      "navngivet": true,
+      "billedmotiv": "Et bug-billede med en hård disk og et netværkskabel, hvor en robot-arm med en lille paraply sidder ovenpå og blokerer for adgang.",
+      "side": "artikel/a8577abe401ab7b4.html"
+    },
     {
       "titel": "OpenAI acquires presentation startup NextSlide",
       "link": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
@@ -124,6 +226,61 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/7a2536fc12ba4896.html"
+    },
+    {
+      "titel": "Managing AI Coding Costs at Scale",
+      "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+      "resume": "Article URL: https://www.databricks.com/blog/managing-ai-coding-costs-scale Comments URL: https://news.ycombinator.com/item?id=49214468 Points: 305 # Comments: 263",
+      "dato": "2026-08-07T18:25:17+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-08T04:36:15.779609+00:00",
+      "eget_foerst_set": "2026-08-08T04:36:15.779609+00:00",
+      "rubrik": "Databricks: Sådan tæmmes de vilde AI-regninger",
+      "resume_da": "AI-kodning giver store gevinster, men regningerne vokser eksplosivt. Databricks deler nu de tricks, der holder omkostningerne nede.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Problemet",
+          "tekst": "AI-kodningsværktøjer har hos Databricks forbedret alle hastighedsmål og i nogle teams givet **10 gange** større output. Men prisen er steget eksponentielt og truer med at æde gevinsten op. Virksomheder står i et paradoks: De vil give medarbejderne de stærke værktøjer, men budgettet kan ikke følge med."
+        },
+        {
+          "overskrift": "Løsningen",
+          "tekst": "Databricks har sammen med **Stripe**, Coinbase, Uber og Ramp fundet opskriften: at flytte opgaver til billigere, nyere modeller. Den såkaldte effektivitetsfront rykker sig hurtigere end intelligensfronten, så man får næsten samme kvalitet for langt færre penge. Flere værktøjer er frigivet som open source."
+        },
+        {
+          "overskrift": "Værktøjerne",
+          "tekst": "Virksomheden har udviklet et meta-harness kaldet **Omnigent** og en AI Gateway ved navn Unity AI Gateway. De giver udviklere indsigt i omkostninger og kan dirigere forespørgsler dynamisk til de billigste modeller. Dermed kan man give bred adgang uden at sprænge budgettet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10x",
+          "label": "større output i nogle teams med AI-kodning"
+        }
+      ],
+      "detaljer": [
+        "AI-kodning har forbedret alle hastighedsmål hos Databricks markant.",
+        "Flere virksomheder oplever eksponentielt voksende omkostninger ved AI i stor skala.",
+        "De billigere modeller udkommer næsten ugentligt og giver mere intelligens per krone.",
+        "Databricks har åbnet kildekoden til Omnigent og Unity AI Gateway.",
+        "Stripe, Coinbase, Uber og Ramp indgår i undersøgelsen af omkostningsstyring.",
+        "Den største besparelse kommer fra hurtigt at skifte til mere effektive modeller.",
+        "De fleste kodningsopgaver kræver ikke topmodellernes ekstreme intelligens."
+      ],
+      "betydning": "Når din virksomhed skal bruge AI til kodning, behøver du ikke vælge mellem kvalitet og pris. Med de rigtige værktøjer kan du få bred adgang uden at sprænge budgettet.",
+      "pointer": [
+        "AI-regninger vokser eksponentielt og truer overskuddet.",
+        "Billigere modeller er den største kilde til besparelser.",
+        "Åbne værktøjer hjælper med at styre omkostningerne.",
+        "Flere kendte techfirmaer deler samme opskrift på kontrol."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En regnemaskine med en papirolle, hvor en grøn pil peger nedad på 'omkostning', og en sparegris med et lille hængelås står ved siden af.",
+      "side": "artikel/05b5c328b16d2c04.html"
     },
     {
       "titel": "After Rippling blew millions on AI in months, it built an employee ROI tool",
@@ -261,6 +418,62 @@
       "side": "artikel/59163ffd3cbeaf46.html"
     },
     {
+      "titel": "Oracle bans AI-generated code from OpenJDK",
+      "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "resume": "Article URL: https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code Comments URL: https://news.ycombinator.com/item?id=49213754 Points: 530 # Comments: 374",
+      "dato": "2026-08-07T17:36:30+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "rubrik": "Oracle forbyder AI-kode i OpenJDK",
+      "resume_da": "Oracle forbyder AI-genereret kode i Java-projektet OpenJDK, selvom topcheferne selv hylder AI. Selskabet bruger milliarder på datacentre.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Oracle har forbudt AI-genereret kode i bidrag til OpenJDK, der er fundamentet bag Java. Udviklere må stadig bruge AI til at fejlsøge og gennemgå kode privat, men ikke sende AI-materiale til projekter, pull requests eller andre fælles kanaler. Årsagen er bekymringer om sikkerhed og intellektuel ejendomsret."
+        },
+        {
+          "overskrift": "Dobbeltmorale",
+          "tekst": "Forbuddet står i kontrast til, hvad Oracle selv siger og gør. Medstifter Larry Ellison har erklæret, at AI-modeller nu skriver firmaets kode, og co-CEO Mike Sicilia siger, at AI gør det muligt for mindre teams at levere hurtigere. Kritikere peger på, at reglerne kun gælder for frivillige i open-source, mens firmaet selv kører på AI."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Oracle bruger i år **70 milliarder dollar** på at udvide sine datacentre. Den enorme investering fik kreditvurderingsselskabet S&P til at sænke Oracles rating til **BBB-**, kun ét niveau over junkstatus. Årsagen er usikkerhed om, hvorvidt investeringerne nogensinde tjener sig hjem igen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "70 mia. dollar",
+          "label": "investeres i datacentre i år"
+        },
+        {
+          "tal": "BBB-",
+          "label": "Oracles kreditrating, tæt på junk"
+        }
+      ],
+      "detaljer": [
+        "Oracle forbyder AI-kode i OpenJDK-bidrag på grund af sikkerhed og IP.",
+        "Udviklere må bruge AI privat til fejlsøgning og review.",
+        "Larry Ellison siger, at AI skriver Oracles egen kode.",
+        "Co-CEO Mike Sicilia roser AI for hurtigere leverancer.",
+        "Oracle investerer 70 milliarder dollar i datacentre.",
+        "S&P nedgraderede Oracle til BBB-."
+      ],
+      "betydning": "Du kan ikke længere sende AI-skrevet kode til Java-projektet, hvis du bidrager. Oracle selv er dog afhængige af AI – så reglerne rammer ulige.",
+      "pointer": [
+        "AI-kode er forbudt i OpenJDK.",
+        "Oracle bruger selv AI internt.",
+        "Kreditratingen er tæt på junk.",
+        "Milliardinvesteringer skaber bekymring."
+      ],
+      "side": "artikel/99c5fc173e86b393.html"
+    },
+    {
       "titel": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore",
       "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
       "resume": "It took long enough, but now LA rapper Fenix Flexin appears to have admitted using AI for the 80s synth pop-themed song \"Rubberz.\" His comments follow the producer Medasin's videos claiming that an AI tool called Treblo (formerly Sonauto) was used to make the song, and the company releasing an AI detector that identifies it […]",
@@ -358,6 +571,57 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/73ddfbd0f80f8136.html"
+    },
+    {
+      "titel": "AI psychosis is the new leadership blind spot",
+      "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+      "resume": "Article URL: https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots Comments URL: https://news.ycombinator.com/item?id=49210077 Points: 174 # Comments: 106",
+      "dato": "2026-08-07T13:27:30+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "eget_foerst_set": "2026-08-07T20:24:29.188862+00:00",
+      "rubrik": "AI-vrangforestillinger er lederes nye blinde vinkel på Hacker News",
+      "resume_da": "En debat på Hacker News advarer mod, at ledere overtolker AI's svar som virkelighed – og taber fodfæstet.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "På det teknologitungt forum Hacker News er der gang i en heftig diskussion om et nyt begreb: AI-psykose. Artiklen fra Fast Company, som har fået **174 point** og **106 kommentarer**, beskriver, hvordan topledere i stigende grad stoler blindt på AI-værktøjernes output – også når det er direkte forkert eller misvisende."
+        },
+        {
+          "overskrift": "Hvorfor det rammer",
+          "tekst": "Problemet er ikke kun tekniske fejl, men at ledere begynder at handle på AI's 'vrangforestillinger' som om de var fakta. Debatten peger på, at det skaber en ny form for blind vinkel i beslutningsprocesser – hvor ingen længere stiller spørgsmål ved, hvad maskinen siger, fordi den lyder så overbevisende."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "174",
+          "label": "point på Hacker News"
+        },
+        {
+          "tal": "106",
+          "label": "kommentarer i debatten"
+        }
+      ],
+      "detaljer": [
+        "Begrebet 'AI-psykose' dækker over, at ledere overtolker AI-output som virkelighed.",
+        "Artiklen kommer fra mediet Fast Company.",
+        "Diskussionen udfolder sig på Hacker News tråden med 174 point og 106 kommentarer.",
+        "Ledere antager, at AI's svar er korrekte, selv når de er misvisende.",
+        "Den nye blinde vinkel handler om manglende kritisk stilling til AI."
+      ],
+      "betydning": "Du kan ikke længere tage for givet, at dine lederes beslutninger bygger på fakta – hvis de blindt stoler på AI, kan fejlene blive dyre for dig som kunde eller medarbejder.",
+      "pointer": [
+        "Ledere stoler for meget på AI-svar",
+        "AI-psykose er den nye blinde vinkel",
+        "Debat på Hacker News med 174 point",
+        "Kritisk tænkning forsvinder i toppen"
+      ],
+      "side": "artikel/9e2435033b8b0446.html"
     },
     {
       "titel": "Cloudflare launches Kitesurf, a browser built for AI agents",
@@ -843,6 +1107,125 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/04dbcdd1e1d91c0f.html"
+    },
+    {
+      "titel": "Software development with AI is starting to feel like cooking steak",
+      "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+      "resume": "Article URL: https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/ Comments URL: https://news.ycombinator.com/item?id=49198069 Points: 416 # Comments: 418",
+      "dato": "2026-08-06T15:30:48+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T11:29:56.888720+00:00",
+      "eget_foerst_set": "2026-08-07T11:29:56.888720+00:00",
+      "rubrik": "AI-kodning minder om at stege en bøf",
+      "resume_da": "AI kan gøre kodning hurtigere, men uden din dømmekraft bliver resultatet sjældent godt. Lær at mestre håndværket selv.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det sker",
+          "tekst": "AI-assisteret softwareudvikling føles som at stege en bøf: hurtigt, men sjældent perfekt. Modellen følger opskrifter og giver ofte noget spiseligt, men den ved ikke, hvad du egentlig vil have. Resultatet bliver for ofte 'kul med timian' – teknisk korrekt, men alligevel helt forkert."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Folk betaler for premium AI-produkter, hyrer bureauer og abonnerer på kodningsassistenter i håb om, at andre har løst problemet. Nogle gange har de det, men ofte skuffer det. Restauranterne – læs: virksomhederne – bruger samme AI-kok for at spare penge, og de fleste kunder opdager det ikke, før de selv brænder inde med et dårligt resultat."
+        },
+        {
+          "overskrift": "Løsningen",
+          "tekst": "Du har kun ét reelt valg: lær at lave mad selv. Forstå, hvad varmen gør, hvorfor tykkelse og hviletid betyder noget, og hvorfor et ur alene aldrig redder dig. Du ødelægger nogle middage, men til sidst stopper du med at stole på held. AI gør dig hurtigere, men den erstatter ikke din dømmekraft."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Hold op med at håbe, at maskinen serverer dit drømmeresultat. Bliv ved med at lære, byg og fejle, indtil du kan producere det, du vil have, i stedet for at snuble over det. Så kan du hyre et par AI-kokke – de fleste vil stadig ikke se forskel."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AI kan følge en opskrift og gentage processen hurtigt i stor skala.",
+        "Maskinen kan ikke se billedet i dit hoved uden krav, eksempler og tests.",
+        "AI er begrænset af kontekstvindue og kvaliteten af det omkringliggende system.",
+        "De fleste brugere accepterer software, der bare er 'god nok', ikke perfekt.",
+        "For at bygge god software med AI skal du stadig forstå software.",
+        "Du lærer at lave mad ved at ødelægge nogle middage og prøve igen."
+      ],
+      "betydning": "Du kan spare tid med AI, men uden at lære håndværket ender du med dårlig software. Invester i din egen forståelse, ellers betaler du for dyre skuffelser.",
+      "pointer": [
+        "AI følger opskrifter, men forstår ikke din vision.",
+        "Premium AI-løsninger skuffer ofte, fordi andre ikke løste dit problem.",
+        "Dømmekraft er afgørende – AI kan ikke erstatte den.",
+        "Lær selv at kode grundigt, så bliver AI din hjælper."
+      ],
+      "navngivet": true,
+      "side": "artikel/54ba55bd1f9707ae.html"
+    },
+    {
+      "titel": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "resume": "Article URL: https://scalex.dev/blog/ai-agent-permissions-stats/ Comments URL: https://news.ycombinator.com/item?id=49195468 Points: 336 # Comments: 244",
+      "dato": "2026-08-06T11:58:07+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-07T05:56:50.901005+00:00",
+      "eget_foerst_set": "2026-08-07T05:56:50.901005+00:00",
+      "rubrik": "AI-spil: Mennesker overså hver tredje trussel",
+      "resume_da": "Et nyt browser-spil afslører, at mennesker godkender farlige AI-kommandoer i 1 ud af 3 tilfælde.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Spillet",
+          "tekst": "Alex, tidligere staff engineer hos Uber, byggede et lille spil, hvor du godkender eller afviser kommandoer fra en AI-kodeagent under tidspres. Over **40.000** spilrunder og **409.000** beslutninger blev analyseret. Resultatet: Mennesker overså trusler i **34 %** af tilfældene – altså hver tredje gang."
+        },
+        {
+          "overskrift": "De farligste kommandoer",
+          "tekst": "Kommandoen `npm run analyze` blev godkendt **64,7 %** af tiden, selvom historikken viste, at den sendte data til en ekstern server. Denne type skjult angreb, hvor ondsindet kode gemmer sig bag et uskyldigt navn, havde dobbelt så stor succes som åbenlyse angreb – **52,5 %** mod **28,4 %**."
+        },
+        {
+          "overskrift": "Træthed",
+          "tekst": "Spillet viser tydeligt, at jo flere kommandoer du godkender, jo mindre opmærksom bliver du. Missraten stiger mod slutningen af hver runde. Anthropic, firmaet bag Claude, har også advaret om, at godkendelsestræthed gør brugerne mindre påpasselige med tiden."
+        },
+        {
+          "overskrift": "De uskyldige",
+          "tekst": "Omvendt blev uskyldige kommandoer som `cat ~/.zshrc` ofte blokeret – **45,9 %** godkendte den dog. Problemet: Kommandoen kan være harmløs eller afsløre dine API-nøgler, alt efter hvordan din opsætning ser ud. Uden kontekst er det umuligt at vurdere risikoen."
+        },
+        {
+          "overskrift": "Fremtiden",
+          "tekst": "Alex mener, at vi ikke kan stole på menneskelig godkendelse som eneste sikkerhed. Løsningen er bedre værktøjer som sandboxing og streng adskillelse af data. Indtil da bør udviklere være opmærksomme på risiciene og kun give AI-agenter brede tilladelser, når sikkerheden er på plads."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "34 %",
+          "label": "af trusler blev overset"
+        },
+        {
+          "tal": "64,7 %",
+          "label": "godkendte npm run analyze"
+        }
+      ],
+      "detaljer": [
+        "40.000 spilrunder analyseret med 409.000 individuelle godkendelser.",
+        "Trusler blev overset i 34 % af tilfældene.",
+        "npm run analyze var den mest oversete kommando – godkendt 64,7 % af tiden.",
+        "Skjulte angreb bag uskyldige navne havde dobbelt succesrate.",
+        "Uskyldige kommandoer blokeres ofte, hvilket skaber støj og træthed.",
+        "Anthropic advarer om godkendelsestræthed i Claude Code.",
+        "Spillet er udviklet af Alex, tidligere Staff Engineer hos Uber."
+      ],
+      "betydning": "Når du bruger AI-kodeværktøjer, kan din hurtige godkendelse være den svageste sikkerhed – lær at genkende skjulte trusler bag uskyldige kommandoer.",
+      "pointer": [
+        "Mennesker overser 1 ud af 3 trusler.",
+        "npm run analyze er den farligste kommando.",
+        "Godkendelsestræthed gør dig mindre opmærksom.",
+        "Uskyldige kommandoer skaber støj og forvirring."
+      ],
+      "navngivet": true,
+      "billedmotiv": "Et ark med en kodelinje, hvor en stor rød cirkel omkranser 'npm run analyze', og en lille robot-hånd med en usynlig kappe står ved siden af.",
+      "side": "artikel/750c7bd2060999bf.html"
     },
     {
       "titel": "DeepMind’s hurricane breakthrough has surprised weather scientists",
@@ -1813,55 +2196,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/f661aa2dcfcee9ce.html"
-    },
-    {
-      "titel": "The left and right agree on one thing: no data centers",
-      "link": "https://www.theverge.com/podcast/971855/ai-data-center-backlash-protests-florida-bipartisan",
-      "resume": "Today, I’m talking with Gaby Del Valle, a policy reporter here at The Verge, about the growing backlash against AI data centers. Gaby recently reported a fantastic piece about Hernando County, Florida, where last month the county commission unanimously approved a yearlong moratorium on data center construction. She attended a protest there organized by a […]",
-      "dato": "2026-08-06T10:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "rubrik": "Hernando County siger nej til datacentre",
-      "resume_da": "I Florida har borgerbevægelsen Humans First fået lokalpolitikerne til at fryse byggeriet af AI-datacentre i et år - og modstanden breder sig på tværs af partier.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Et år uden byggeri",
-          "tekst": "I Hernando County i Florida stemte lokalpolitikerne for et årlangt stop for nye datacentre. Det skete efter et borgerprotese, hvor beboere fra både højre og venstre stod sammen. Bevægelsen hedder **Humans First**, og den er startet af en kvinde, der tidligere var aktiv i Tea Party-bevægelsen. Hun har nu kun fokus på at organisere konservative mod AI-datacentre."
-        },
-        {
-          "overskrift": "Frygten i lokalsamfundet",
-          "tekst": "Beboerne er utilfredse af forskellige grunde: I Florida bekymrer de sig om fugt og grundvand, mens folk i Arizona er imod byggeri i ørkenen. Der er også historier om dødfødte kalve og chatbot-venner, der gør folk bange. Én påstand om en enkelt landmand i Texas er blevet delt vildt på sociale medier. Modstanden er et billede på en folkelig skepsis mod AI-teknologi."
-        },
-        {
-          "overskrift": "Politik på tværs",
-          "tekst": "Datacentre bliver et emne i valgkampen op til midtvejsvalget i USA. De skaber nye alliancer: Trump-vælgere demonstrerer side om side med venstreorienterede mod forurening. Samtidig er både højre- og venstrefløjen uenige med eliten, der er positiv over for AI. Spørgsmålet er, om det bliver et af de store valgtemaer i de kommende år."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Hernando County i Florida har vedtaget et moratorium på datacentre i et år.",
-        "Bevægelsen Humans First organiserer konservative mod AI-datacentre.",
-        "Grundvand, PFAS og fugt er nogle af bekymringerne i Florida.",
-        "I Arizona er bekymringen i stedet, at datacentre ikke passer i ørkenen.",
-        "En historie om dødfødte kalve stammer fra én landmand i Texas.",
-        "En kvinde fortalte, at ChatGPT fik en ven til at afslutte venskabet.",
-        "Modstanden ses som en kamp mellem befolkning og teknologielite."
-      ],
-      "betydning": "Du kan opleve, at lokale politikere i Danmark også får pres fra borgere, der er bekymrede over datacentres påvirkning på miljø og nærmiljø - og det kan forsinke kommende AI-byggerier.",
-      "pointer": [
-        "Borgerprotester stopper datacentre i Florida.",
-        "Både højre og venstre er imod byggerier.",
-        "Humans First organiserer konservative mod AI.",
-        "Datacentre bliver et emne ved midtvejsvalget."
-      ],
-      "billedmotiv": "To stikkontakter, hvor den ene er tapet over med en seddel, der siger 'Lukket'.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/03c0d1f5236799eb.html"
     },
     {
       "titel": "Working with the American Psychological Association on youth mental health and AI",
