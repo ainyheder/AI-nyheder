@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-09T16:07:18.768249+00:00",
+ "opdateret": "2026-08-09T18:02:18.744165+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 53,
- "sidevisninger_i_alt": 86,
+ "besoeg_i_alt": 54,
+ "sidevisninger_i_alt": 87,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 52,
-   "visninger": 52
+   "besoeg": 53,
+   "visninger": 53
   },
   {
    "sti": "/koerekort.html",
@@ -387,7 +387,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 50
+   "besoeg": 51
   },
   {
    "fra": "www.google.com",
@@ -399,8 +399,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 50,
-    "visninger": 50
+    "besoeg": 51,
+    "visninger": 51
    },
    {
     "fra": "www.google.com",
@@ -746,8 +746,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-09",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
