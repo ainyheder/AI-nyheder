@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-08T21:56:32.570864+00:00",
- "artikler_i_alt": 92,
+ "opdateret": "2026-08-09T04:49:53.102547+00:00",
+ "artikler_i_alt": 86,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -874,67 +874,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Undervisningsministeriet kræver mundtligt forsvar mod AI",
-     "dato": "2026-08-08T18:09:31",
-     "foerst_set": "2026-08-08T21:56:32",
-     "link": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
-     "side": "artikel/482fdf4e3a0eb7bf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Databricks: Sådan holder du AI-regningen nede",
-     "dato": "2026-08-07T18:25:17",
-     "foerst_set": "2026-08-08T04:36:15",
-     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-     "side": "artikel/05b5c328b16d2c04.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Oracle forbyder AI-kode i Java-projekt",
-     "dato": "2026-08-07T17:36:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-     "side": "artikel/99c5fc173e86b393.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
-     "dato": "2026-08-07T13:27:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
-     "side": "artikel/9e2435033b8b0446.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-kodning bliver som at stege bøf",
-     "dato": "2026-08-06T15:30:48",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
-     "side": "artikel/54ba55bd1f9707ae.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-agenter snyder mennesker i 1 ud af 3 tilfælde",
-     "dato": "2026-08-06T11:58:07",
-     "foerst_set": "2026-08-07T05:56:50",
-     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-     "side": "artikel/750c7bd2060999bf.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
