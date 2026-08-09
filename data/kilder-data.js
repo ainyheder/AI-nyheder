@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-09T20:00:32.746358+00:00",
+ "opdateret": "2026-08-09T22:00:23.941908+00:00",
  "artikler_i_alt": 86,
  "kilder": [
   {
@@ -59,6 +59,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Situational Awareness satser 400 mio. dollars på chip-startup",
+     "dato": "2026-08-09T20:35:17",
+     "foerst_set": "2026-08-09T22:00:23",
+     "link": "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/",
+     "side": "artikel/f893fb1dc932c6c8.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic lader AI-kodeværktøj køre helt uden godkendelser",
@@ -156,15 +165,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T04:14:51",
      "link": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/",
      "side": "artikel/c442c2fff9afe967.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ditto dropper swiping: AI finder din date",
-     "dato": "2026-08-06T15:53:03",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/gen-z-dating-apps-like-ditto-ditch-swiping-in-favor-of-ai-matchmaking/",
-     "side": "artikel/a1d4b198486ef265.html",
      "hvor": "forside",
      "under": ""
     }
@@ -875,7 +875,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "TimeoutError: The read operation timed out",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 0,
