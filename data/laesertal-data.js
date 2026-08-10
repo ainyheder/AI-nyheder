@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-09T22:01:21.220175+00:00",
+ "opdateret": "2026-08-10T06:08:42.641796+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-07-11",
    "2026-07-12",
    "2026-07-13",
    "2026-07-14",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-08-06",
    "2026-08-07",
    "2026-08-08",
-   "2026-08-09"
+   "2026-08-09",
+   "2026-08-10"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     0,
      0,
      1,
      0,
@@ -65,16 +64,16 @@ window.LAESERTAL = {
      26,
      0,
      26,
-     26,
+     27,
      25,
      1,
-     0
+     0,
+     25
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     0,
      0,
      0,
      0,
@@ -100,16 +99,16 @@ window.LAESERTAL = {
      3,
      9,
      7,
-     9,
+     8,
      7,
      3,
-     3
+     3,
+     0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     0,
      0,
      0,
      1,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      5,
      3,
      1,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     0,
      0,
      1,
      0,
@@ -173,7 +172,8 @@ window.LAESERTAL = {
      4,
      4,
      0,
-     1
+     1,
+     0
     ]
    },
    {
@@ -182,7 +182,6 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0,
      1,
      2,
      1,
@@ -207,6 +206,7 @@ window.LAESERTAL = {
      1,
      6,
      2,
+     0,
      0,
      0
     ]
@@ -216,7 +216,6 @@ window.LAESERTAL = {
     "tal": [
      0,
      0,
-     0,
      2,
      0,
      3,
@@ -243,20 +242,21 @@ window.LAESERTAL = {
      0,
      2,
      0,
+     0,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 53,
- "sidevisninger_i_alt": 78,
+ "besoeg_i_alt": 50,
+ "sidevisninger_i_alt": 74,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 52,
-   "visninger": 52
+   "besoeg": 49,
+   "visninger": 49
   },
   {
    "sti": "/koerekort.html",
@@ -295,11 +295,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/3b4804541f2c2bfe.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/2af7715e9dc023ef.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -362,7 +357,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 51
+   "besoeg": 48
   },
   {
    "fra": "www.google.com",
@@ -374,8 +369,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 51,
-    "visninger": 51
+    "besoeg": 48,
+    "visninger": 48
    },
    {
     "fra": "www.google.com",
@@ -433,13 +428,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/3b4804541f2c2bfe.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/2af7715e9dc023ef.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -539,11 +527,6 @@ window.LAESERTAL = {
   "/guide-sikkerhed.html"
  ],
  "serie": [
-  {
-   "dato": "2026-07-11",
-   "besoeg": 0,
-   "visninger": 0
-  },
   {
    "dato": "2026-07-12",
    "besoeg": 0,
@@ -688,6 +671,11 @@ window.LAESERTAL = {
    "dato": "2026-08-09",
    "besoeg": 10,
    "visninger": 10
+  },
+  {
+   "dato": "2026-08-10",
+   "besoeg": 0,
+   "visninger": 0
   }
  ],
  "artikler": [
@@ -770,7 +758,7 @@ window.LAESERTAL = {
    "sti": "/artikel/9e2435033b8b0446.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI-vrangforestillinger er lederes nye blinde vinkel på Hacker News",
+   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
    "kategori": "Samfund & etik",
    "dato": "2026-08-07",
    "henvisere": [
@@ -788,21 +776,6 @@ window.LAESERTAL = {
    "rubrik": "UNAM dropper AI-eksamen efter massiv snyd",
    "kategori": "Samfund & etik",
    "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/2af7715e9dc023ef.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "MIT-forskere: AI-råd kan styrke din økonomi",
-   "kategori": "Hverdags-AI",
-   "dato": "2026-08-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -935,7 +908,7 @@ window.LAESERTAL = {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Databricks: Sådan tæmmes de vilde AI-regninger",
+   "rubrik": "Databricks' Ali Ghodsi: Sådan tæmmes AI-regningen",
    "kategori": "Penge & marked",
    "dato": "2026-08-07",
    "henvisere": [
@@ -959,10 +932,6 @@ window.LAESERTAL = {
   {
    "navn": "Penge & marked",
    "visninger": 4
-  },
-  {
-   "navn": "Hverdags-AI",
-   "visninger": 1
   },
   {
    "navn": "Politik & jura",

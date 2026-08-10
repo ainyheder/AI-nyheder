@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-09T22:00:23.941908+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-08-10T05:57:44.363100+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -861,10 +861,119 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 0,
-   "i_listen": 0,
+   "hentet": 25,
+   "i_listen": 25,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Dongxiao He lærer AI at forstå sociale netværk",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06394",
+     "side": "artikel/500c3e9a2c439352.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EntropyMoE giver AI-hjernen hurtigere tænkning",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06398",
+     "side": "artikel/ccfa490560177210.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Yifan Wang åbner AI'ernes sorte boks",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06400",
+     "side": "artikel/9b7cede74ade553f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "DTU-forskeres AI afslører skjulte fællesskaber",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06402",
+     "side": "artikel/97fe9ed4dfdae21b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ADIAS: AI bygger sine egne medarbejdere",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06410",
+     "side": "artikel/a06d179db31af417.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Yuyao Sun finder ny metode til at gøre AI billedtolkning hurtigere",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06411",
+     "side": "artikel/918c96dec5153789.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "WebGrader lærer AI at bygge hjemmesider",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06474",
+     "side": "artikel/7454d6fbb40126ce.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "C4-testen måler AI's kreative spring",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06501",
+     "side": "artikel/a02ca27d6676125d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "KNOWPLAN lægger din studievej",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06530",
+     "side": "artikel/c1a8e91540afc6dd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forsker SM Mazharul Islam lærer AI at fokusere",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06544",
+     "side": "artikel/f38f206f451dea72.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ali Jalal-Kamali afslører AI's skjulte dobbeltliv",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06578",
+     "side": "artikel/1e676f980f4b8504.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere lærer AI at forudsige dommedag for dine ansøgninger",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-10T05:57:44",
+     "link": "https://arxiv.org/abs/2608.06609",
+     "side": "artikel/c0bc614d7de0c4cc.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -874,12 +983,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "AI-botter lukker Gentoo's platform",
+     "dato": "2026-08-08T13:55:42",
+     "foerst_set": "2026-08-09T14:20:27",
+     "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
+     "side": "artikel/a8577abe401ab7b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Databricks' Ali Ghodsi: Sådan tæmmes AI-regningen",
+     "dato": "2026-08-07T18:25:17",
+     "foerst_set": "2026-08-08T04:36:15",
+     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+     "side": "artikel/05b5c328b16d2c04.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Oracle forbyder AI-kode i OpenJDK – de styrer selv",
+     "dato": "2026-08-07T17:36:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "side": "artikel/99c5fc173e86b393.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
+     "dato": "2026-08-07T13:27:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+     "side": "artikel/9e2435033b8b0446.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-koden smager af kul – ikke medium-rare",
+     "dato": "2026-08-06T15:30:48",
+     "foerst_set": "2026-08-07T11:29:56",
+     "link": "https://blog.sydorets.com/en/posts/almost-no-skill-required-to-cook-a-steak/",
+     "side": "artikel/54ba55bd1f9707ae.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic: Spillerne overså hver tredje AI-trussel",
+     "dato": "2026-08-06T11:58:07",
+     "foerst_set": "2026-08-07T05:56:50",
+     "link": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+     "side": "artikel/750c7bd2060999bf.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
