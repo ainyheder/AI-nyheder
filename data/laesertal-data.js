@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-10T15:46:24.800690+00:00",
+ "opdateret": "2026-08-10T19:48:10.470927+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      7,
      3,
      3,
-     2
+     3
     ]
    },
    {
@@ -126,7 +126,7 @@ window.LAESERTAL = {
      0,
      4,
      3,
-     9,
+     10,
      9,
      6,
      1,
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      4,
      0,
      1,
-     3
+     7
     ]
    },
    {
@@ -161,7 +161,7 @@ window.LAESERTAL = {
      1,
      8,
      6,
-     7,
+     6,
      8,
      2,
      1,
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      3,
      1,
      1,
-     1
+     2
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      2,
      0,
      0,
-     1
+     2
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 50,
- "sidevisninger_i_alt": 73,
+ "besoeg_i_alt": 51,
+ "sidevisninger_i_alt": 74,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 49,
-   "visninger": 49
+   "besoeg": 50,
+   "visninger": 50
   },
   {
    "sti": "/koerekort.html",
@@ -352,7 +352,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 48
+   "besoeg": 49
   },
   {
    "fra": "www.google.com",
@@ -364,8 +364,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 48,
-    "visninger": 48
+    "besoeg": 49,
+    "visninger": 49
    },
    {
     "fra": "www.google.com",
@@ -881,7 +881,7 @@ window.LAESERTAL = {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Databricks' Ali Ghodsi: Sådan tæmmes AI-regningen",
+   "rubrik": "Databricks: Sådan undgår du at AI-udgifterne løber løbsk",
    "kategori": "Penge & marked",
    "dato": "2026-08-07",
    "henvisere": [
