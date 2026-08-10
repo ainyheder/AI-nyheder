@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-10T09:02:57.791068+00:00",
+ "opdateret": "2026-08-10T12:06:01.457818+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      25,
      1,
      0,
-     25
+     27
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      4,
      0,
      1,
-     1
+     2
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      3,
      1,
      1,
-     0
+     1
     ]
    },
    {
@@ -243,121 +243,31 @@ window.LAESERTAL = {
      2,
      0,
      0,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 49,
- "sidevisninger_i_alt": 73,
+ "besoeg_i_alt": 40,
+ "sidevisninger_i_alt": 50,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 48,
-   "visninger": 48
-  },
-  {
-   "sti": "/koerekort.html",
-   "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/e911d06afa88ad64.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/9e2435033b8b0446.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/0fb7db373bd793a5.html",
-   "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/prompts.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/artikel/3b4804541f2c2bfe.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/c30ea359fc494916.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/af3fbfe150b00022.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/c68d5f1c469c21b3.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/guide-prompts.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/artikel/6742ab11a78d1301.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/2b5e0acf6593ac5a.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/13e2539b3313d15a.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/39d4fd006a363f68.html",
-   "besoeg": 0,
-   "visninger": 1
+   "besoeg": 40,
+   "visninger": 40
   },
   {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/14f964707cdfca29.html",
-   "besoeg": 0,
-   "visninger": 3
+   "visninger": 10
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 47
+   "besoeg": 48
   },
   {
    "fra": "www.google.com",
@@ -369,131 +279,12 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 47,
-    "visninger": 47
+    "besoeg": 48,
+    "visninger": 48
    },
    {
     "fra": "www.google.com",
     "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/koerekort.html": [
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/73ddfbd0f80f8136.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/e911d06afa88ad64.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/61e5f938cd4c3ca5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9e2435033b8b0446.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/0fb7db373bd793a5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/3b4804541f2c2bfe.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/c30ea359fc494916.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/af3fbfe150b00022.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/c68d5f1c469c21b3.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9be5bdf1245f9d9a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/guide-prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/6742ab11a78d1301.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/2b5e0acf6593ac5a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/13e2539b3313d15a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/39d4fd006a363f68.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -503,18 +294,13 @@ window.LAESERTAL = {
     "besoeg": 0,
     "visninger": 1
    }
-  ],
-  "/artikel/14f964707cdfca29.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
   ]
  },
  "faste_uden_besoeg": [
   "/laer.html",
+  "/koerekort.html",
   "/erhverv.html",
+  "/prompts.html",
   "/prompt-arkiv.html",
   "/ordbog.html",
   "/quiz.html",
@@ -524,6 +310,7 @@ window.LAESERTAL = {
   "/faq.html",
   "/om.html",
   "/guide-igang.html",
+  "/guide-prompts.html",
   "/guide-sikkerhed.html"
  ],
  "serie": [
@@ -579,53 +366,53 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-07-22",
-   "besoeg": 20,
-   "visninger": 160
+   "besoeg": 0,
+   "visninger": 100
   },
   {
    "dato": "2026-07-23",
-   "besoeg": 50,
-   "visninger": 280
+   "besoeg": 0,
+   "visninger": 200
   },
   {
    "dato": "2026-07-24",
-   "besoeg": 70,
-   "visninger": 90
+   "besoeg": 100,
+   "visninger": 100
   },
   {
    "dato": "2026-07-25",
-   "besoeg": 60,
-   "visninger": 90
+   "besoeg": 200,
+   "visninger": 200
   },
   {
    "dato": "2026-07-26",
-   "besoeg": 30,
-   "visninger": 60
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-07-27",
-   "besoeg": 10,
-   "visninger": 70
+   "besoeg": 0,
+   "visninger": 100
   },
   {
    "dato": "2026-07-28",
-   "besoeg": 30,
-   "visninger": 40
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-07-29",
-   "besoeg": 30,
-   "visninger": 30
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-07-30",
-   "besoeg": 10,
-   "visninger": 30
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-07-31",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-01",
@@ -634,13 +421,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-02",
-   "besoeg": 20,
-   "visninger": 20
+   "besoeg": 100,
+   "visninger": 100
   },
   {
    "dato": "2026-08-03",
-   "besoeg": 20,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-04",
@@ -649,8 +436,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-05",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-06",
@@ -659,18 +446,18 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-07",
-   "besoeg": 20,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-08",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-08-09",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-10",
@@ -680,234 +467,9 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
-   "sti": "/artikel/0fb7db373bd793a5.html",
-   "besoeg": 0,
-   "visninger": 3,
-   "rubrik": "Alibaba udfordrer USA med kæmpe AI-model",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 3
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/14f964707cdfca29.html",
-   "besoeg": 0,
-   "visninger": 3,
-   "rubrik": "Cloudflare OS er nu open source",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 3
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/e911d06afa88ad64.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Anthropic laver egne AI-chips",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-05",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/9e2435033b8b0446.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/3b4804541f2c2bfe.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "UNAM dropper AI-eksamen efter massiv snyd",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/c30ea359fc494916.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Z.ai-matchet overgår vestens top – sikkerheden halter",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-04",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/af3fbfe150b00022.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Anthropic indgår 10 mia. dollars-aftale med AI-cloudfirma",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-04",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/c68d5f1c469c21b3.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI bygger stemme-AI, der svarer uden ventetid",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/6742ab11a78d1301.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "AI-aktien Situational Awareness styrtdykker 67 pct.",
-   "kategori": "Penge & marked",
-   "dato": "2026-07-31",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/2b5e0acf6593ac5a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI- og Anthropic-agenter hackede rigtige mennesker",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-05",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/13e2539b3313d15a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "TikTok-ejer træner kæmpe AI-model mod Anthropic",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/39d4fd006a363f68.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI svarer igen på Apples søgsmål",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
-   "visninger": 1,
+   "visninger": 10,
    "rubrik": "Databricks' Ali Ghodsi: Sådan tæmmes AI-regningen",
    "kategori": "Penge & marked",
    "dato": "2026-08-07",
@@ -922,20 +484,8 @@ window.LAESERTAL = {
  ],
  "laeste_temaer": [
   {
-   "navn": "Lanceringer",
-   "visninger": 9
-  },
-  {
-   "navn": "Samfund & etik",
-   "visninger": 6
-  },
-  {
    "navn": "Penge & marked",
-   "visninger": 4
-  },
-  {
-   "navn": "Politik & jura",
-   "visninger": 1
+   "visninger": 10
   }
  ]
 };
