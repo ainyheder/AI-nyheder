@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-10T19:44:23.966320+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-08-10T22:21:05.749981+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 4,
+   "i_listen": 19,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Amazons datacenter kan blive USA's største forurener",
@@ -23,15 +23,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazons nye gasværk kan blive USA's største CO2-udleder"
-    },
-    {
-     "rubrik": "OpenAI's højttaler koster op til 400 dollars",
-     "dato": "",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/",
-     "side": "",
-     "hvor": "under",
-     "under": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -50,6 +41,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Zuckerbergs AI-vision vækker mistillid",
+     "dato": "2026-08-10T20:53:02",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/",
+     "side": "artikel/559fae1965599d6d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Andrew Birds AI-agent hackede sig ind i fitnesscenteret",
+     "dato": "2026-08-10T20:04:24",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/",
+     "side": "artikel/9f4258eff4d02539.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
@@ -140,38 +149,16 @@ window.KILDER_STATUS = {
      "side": "artikel/62678037a7feb1b2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Jill Lepore: Tech-ledere sælger en gammel fantasy som AI",
-     "dato": "2026-08-07T14:00:00",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/",
-     "side": "artikel/681d3ebb6321805c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Airbnb: AI skriver 60% af vores kode og skærer tid",
-     "dato": "2026-08-07T14:22:49",
-     "foerst_set": "2026-08-07T14:41:32",
-     "link": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/",
-     "side": "artikel/5f5222e53a442def.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "MIT Tech Review AI",
      2
-    ],
-    [
-     "OpenAI Blog",
-     1
     ]
    ]
   },
@@ -205,6 +192,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Zuckerberg forstår ikke at leve",
+     "dato": "2026-08-10T18:00:00",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Zuckerberg vil give AI til alle – gratis",
@@ -277,25 +273,12 @@ window.KILDER_STATUS = {
      "side": "artikel/764f9d70a7a9afd9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars",
-     "dato": "2026-08-06T16:55:39",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/976431/openai-chatgpt-battery-smart-speaker-rumor",
-     "side": "artikel/94e895c27149afa2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
-    ],
-    [
-     "Ars Technica AI",
-     1
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -313,18 +296,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 2,
+   "i_listen": 20,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI vil sælge AI-højttaler til over 300 dollars",
-     "dato": "",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-     "side": "",
-     "hvor": "under",
-     "under": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars"
-    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -335,11 +309,38 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "Meta satser på åbne AI-modeller mod OpenAI",
+     "dato": "2026-08-10T22:13:03",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/",
+     "side": "artikel/203504a117757f2a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon bygger gasværk til AI trods klimamål",
+     "dato": "2026-08-10T20:45:52",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
+     "side": "artikel/bd6197a1b1b66042.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Forsker Jason Semprini: Peer review er ved at knække",
      "dato": "2026-08-10T11:00:47",
      "foerst_set": "2026-08-10T12:03:40",
      "link": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era/",
      "side": "artikel/55e0cdb0c0d68bb5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's nye højttaler får bevægelige dele",
+     "dato": "2026-08-07T17:36:22",
+     "foerst_set": "2026-08-07T18:07:29",
+     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+     "side": "artikel/c1b05c5ed4232d18.html",
      "hvor": "forside",
      "under": ""
     },
@@ -414,42 +415,11 @@ window.KILDER_STATUS = {
      "side": "artikel/2528674bdf5f50e2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropics AI lavede falske profiler og malware-angreb",
-     "dato": "2026-08-05T20:47:11",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
-     "side": "artikel/2d08e589a5852a97.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Reddit varsler store ændringer for Old Reddit",
-     "dato": "2026-08-05T20:01:32",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://arstechnica.com/gadgets/2026/08/reddit-signals-ominous-upcoming-changes-for-old-reddit-com/",
-     "side": "artikel/8d97d517ecf77da3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hank Green beklager: AI har taget overhånd",
-     "dato": "2026-08-05T19:51:40",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://arstechnica.com/ai/2026/08/hank-green-found-the-ai-problem-that-youtube-labels-cant-catch/",
-     "side": "artikel/89dc1c4799e71c11.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google DeepMind",
-     1
-    ],
-    [
-     "The Verge AI",
      1
     ],
     [
@@ -471,6 +441,15 @@ window.KILDER_STATUS = {
    "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "AI-professorer tilpasser sig ny forskningsvirkelighed",
+     "dato": "2026-08-10T20:00:00",
+     "foerst_set": "2026-08-10T22:21:05",
+     "link": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Google AI-agent løser årtiers forskning på dage",
      "dato": "2026-08-10T09:00:00",
@@ -544,15 +523,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI finder nye lægemidler hos Cytiva - men rammer en væg",
-     "dato": "2026-07-27T11:40:16",
-     "foerst_set": "2026-07-27T12:44:06",
-     "link": "https://www.technologyreview.com/2026/07/27/1139667/closing-the-data-loop-in-ai-driven-drug-discovery/",
-     "side": "artikel/31a791e8e2a86ffc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI-model hackede sig vej ud af bur",
      "dato": "2026-07-27T18:00:00",
      "foerst_set": "2026-07-26T18:46:35",
@@ -587,18 +557,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 1,
+   "i_listen": 25,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "OpenAI svarer igen på Apples ubegrundede søgsmål",
-     "dato": "",
-     "foerst_set": "2026-08-04T10:21:12",
-     "link": "https://openai.com/index/apple-is-getting-this-wrong",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI: Apples egne rodede sikkerhed undergraver sag"
-    },
     {
      "rubrik": "Sarah Friar: Sådan bygger du en AI-drevet økonomiafdeling",
      "dato": "2026-08-10T17:00:00",
@@ -708,12 +669,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "Google DeepMind",
@@ -948,67 +904,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Zuckerberg angriber lukkede AI-rivaler",
-     "dato": "2026-08-10T14:06:22",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
-     "side": "artikel/49d99e09b3af488a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-mordgåde: Afhør mistænkte med din stemme",
-     "dato": "2026-08-10T03:18:40",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://www.whodunnitai.com/",
-     "side": "artikel/2a66c41bb53b0e14.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Docker giver AI-agenter et sikkert miljø",
-     "dato": "2026-08-10T06:02:38",
-     "foerst_set": "2026-08-10T09:02:21",
-     "link": "https://www.docker.com/products/docker-sandboxes/",
-     "side": "artikel/51e3d9e70ee95a79.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gentoo lukker fejlside efter AI-bot-angreb",
-     "dato": "2026-08-08T13:55:42",
-     "foerst_set": "2026-08-09T14:20:27",
-     "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
-     "side": "artikel/a8577abe401ab7b4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Databricks: Sådan undgår du at AI-udgifterne løber løbsk",
-     "dato": "2026-08-07T18:25:17",
-     "foerst_set": "2026-08-08T04:36:15",
-     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-     "side": "artikel/05b5c328b16d2c04.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Oracle forbyder AI-kode i OpenJDK",
-     "dato": "2026-08-07T17:36:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-     "side": "artikel/99c5fc173e86b393.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
