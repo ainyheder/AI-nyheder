@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-10T12:03:40.645644+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-10T15:44:24.010759+00:00",
+ "artikler_i_alt": 113,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
-   "som_ekstra": 5,
+   "i_listen": 18,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Amazons datacenter kan blive USA's største forurener",
@@ -32,15 +32,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Jony Ive og OpenAI lancerer AI-højttaler til over 300 dollars"
-    },
-    {
-     "rubrik": "ChatGPT giver fri adgang til ubegrænset tekstchat",
-     "dato": "",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/",
-     "side": "",
-     "hvor": "under",
-     "under": "ChatGPT fjerner chat-loftet for gratis-brugere"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -172,7 +163,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -223,6 +214,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "ChatGPT får adgang til din medicin"
+    },
+    {
+     "rubrik": "Zuckerberg vil give AI til alle – gratis",
+     "dato": "2026-08-10T11:19:05",
+     "foerst_set": "2026-08-10T15:44:24",
+     "link": "https://www.theverge.com/tech/977395/meta-mark-zuckerberg-superintelligent-ai-ramble",
+     "side": "artikel/8146f3b7fccd003a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bose-chef satser på andres produkter i ny strategi",
+     "dato": "2026-08-10T10:00:00",
+     "foerst_set": "2026-08-10T15:44:24",
+     "link": "https://www.theverge.com/podcast/975732/bose-ceo-lila-snyder-ai-wearables-licensing-headphones-audio",
+     "side": "artikel/c6e4a85273e06933.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Ford får Gemini-AI i appen",
@@ -286,37 +295,19 @@ window.KILDER_STATUS = {
      "side": "artikel/94e895c27149afa2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Suno vil stoppe spam-AI-musik med vandmærker",
-     "dato": "2026-08-06T13:39:43",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/976289/suno-ai-music-spam-watermark",
-     "side": "artikel/1c162fd11a266088.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
-     "dato": "2026-08-06T13:00:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/976239/openai-chatgpt-free-go-text-chats",
-     "side": "artikel/c68d5f1c469c21b3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
-    ],
-    [
-     "OpenAI Blog",
-     2
+     3
     ],
     [
      "Ars Technica AI",
+     1
+    ],
+    [
+     "OpenAI Blog",
      1
     ],
     [
@@ -609,18 +600,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 2,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI opgraderer ChatGPT med GPT-5.6 Sol og Luna",
-     "dato": "",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-     "side": "",
-     "hvor": "under",
-     "under": "ChatGPT fjerner chat-loftet for gratis-brugere"
-    },
     {
      "rubrik": "OpenAI svarer igen på Apples ubegrundede søgsmål",
      "dato": "",
@@ -629,6 +611,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI: Apples egne rodede sikkerhed undergraver sag"
+    },
+    {
+     "rubrik": "OpenAI erklærer ansvarlig AI-infrastruktur over for Greg Abbott",
+     "dato": "2026-08-10T14:00:00",
+     "foerst_set": "2026-08-10T15:44:24",
+     "link": "https://openai.com/index/responsible-ai-infrastructure-texas",
+     "side": "artikel/56292896a5d56a9c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Model ML får AI til finansarbejde med GPT-5.6 Sol",
+     "dato": "2026-08-10T12:00:00",
+     "foerst_set": "2026-08-10T15:44:24",
+     "link": "https://openai.com/index/model-ml",
+     "side": "artikel/52b9c6e06b63d502.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI tester Astra mod cybertrusler",
@@ -645,6 +645,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T11:29:56",
      "link": "https://openai.com/index/hsp-gruppe",
      "side": "artikel/04dbcdd1e1d91c0f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI opgraderer GPT-5.6 Sol og giver Luna til alle",
+     "dato": "2026-08-06T10:00:00",
+     "foerst_set": "2026-08-07T04:14:51",
+     "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+     "side": "artikel/e1775d8d2e173fdf.html",
      "hvor": "forside",
      "under": ""
     },
@@ -710,42 +719,15 @@ window.KILDER_STATUS = {
      "side": "artikel/e1503b988206d0da.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI vil gøre AI tilgængelig for langt flere",
-     "dato": "2026-07-31T15:00:00",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://openai.com/index/building-abundant-intelligence",
-     "side": "artikel/ef7e135bdd5acf00.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lukker svindelnetværk i Cambodja",
-     "dato": "2026-07-31T00:00:00",
-     "foerst_set": "2026-07-31T18:08:22",
-     "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-     "side": "artikel/e2b8f86303a263b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lover sikker AI i Europa",
-     "dato": "2026-07-31T15:00:00",
-     "foerst_set": "2026-07-31T10:21:42",
-     "link": "https://openai.com/index/advancing-responsible-ai-across-europe",
-     "side": "artikel/5b3393f6cb74888d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     1
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      1
     ]
    ]
