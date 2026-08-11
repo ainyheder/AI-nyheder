@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-11T05:06:46.715198+00:00",
+ "opdateret": "2026-08-11T08:16:27.780613+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      1,
      1,
      3,
-     0
+     1
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 51,
- "sidevisninger_i_alt": 75,
+ "besoeg_i_alt": 49,
+ "sidevisninger_i_alt": 69,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 50,
-   "visninger": 50
+   "besoeg": 48,
+   "visninger": 48
   },
   {
    "sti": "/koerekort.html",
@@ -291,17 +291,12 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 1
   },
   {
    "sti": "/prompts.html",
    "besoeg": 0,
    "visninger": 2
-  },
-  {
-   "sti": "/artikel/3b4804541f2c2bfe.html",
-   "besoeg": 0,
-   "visninger": 1
   },
   {
    "sti": "/artikel/c30ea359fc494916.html",
@@ -315,11 +310,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/c68d5f1c469c21b3.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -357,7 +347,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 49
+   "besoeg": 47
   },
   {
    "fra": "www.google.com",
@@ -369,8 +359,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 49,
-    "visninger": 49
+    "besoeg": 47,
+    "visninger": 47
    },
    {
     "fra": "www.google.com",
@@ -424,7 +414,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 1
    }
   ],
   "/prompts.html": [
@@ -432,13 +422,6 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
-   }
-  ],
-  "/artikel/3b4804541f2c2bfe.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
    }
   ],
   "/artikel/c30ea359fc494916.html": [
@@ -456,13 +439,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/c68d5f1c469c21b3.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9be5bdf1245f9d9a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -680,21 +656,6 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
-   "sti": "/artikel/0fb7db373bd793a5.html",
-   "besoeg": 0,
-   "visninger": 3,
-   "rubrik": "Alibaba udfordrer USA med kæmpe AI-model",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 3
-    }
-   ]
-  },
-  {
    "sti": "/artikel/14f964707cdfca29.html",
    "besoeg": 0,
    "visninger": 3,
@@ -785,11 +746,11 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/3b4804541f2c2bfe.html",
+   "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "UNAM dropper AI-eksamen efter massiv snyd",
-   "kategori": "Samfund & etik",
+   "rubrik": "Alibaba udfordrer USA med kæmpe AI-model",
+   "kategori": "Lanceringer",
    "dato": "2026-08-03",
    "henvisere": [
     {
@@ -836,21 +797,6 @@ window.LAESERTAL = {
    "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
    "kategori": "Lanceringer",
    "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/9be5bdf1245f9d9a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI bygger stemme-AI, der svarer uden ventetid",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -923,11 +869,11 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 10
+   "visninger": 7
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 7
+   "visninger": 6
   },
   {
    "navn": "Penge & marked",

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-11T04:53:48.481756+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-08-11T08:15:40.821746+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 17,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer cybermodel til forsvar mod AI-angreb",
@@ -34,6 +34,15 @@ window.KILDER_STATUS = {
      "under": "Zuckerberg vil give AI til alle – gratis"
     },
     {
+     "rubrik": "Amazons datacenter kan blive USAs største forurener",
+     "dato": "",
+     "foerst_set": "2026-08-08T21:56:32",
+     "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
      "dato": "",
      "foerst_set": "2026-07-27T17:34:46",
@@ -52,11 +61,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
-     "rubrik": "OpenAI gennemfører aktiesalg for 7 milliarder dollar",
+     "rubrik": "OpenAI køber aktier for 7 milliarder dollars",
      "dato": "2026-08-11T00:03:18",
      "foerst_set": "2026-08-11T04:53:48",
      "link": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
-     "side": "",
+     "side": "artikel/b5e0104f574c505d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -163,6 +172,10 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
+     2
+    ],
+    [
+     "Ars Technica AI",
      2
     ],
     [
@@ -313,9 +326,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 1,
+   "i_listen": 19,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI's nye højttaler får bevægelige dele",
+     "dato": "",
+     "foerst_set": "2026-08-07T18:07:29",
+     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer donut-højttaler til 3.000 kroner"
+    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -349,15 +371,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-08T17:59:49",
      "link": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
      "side": "artikel/bd6197a1b1b66042.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's nye højttaler får bevægelige dele",
-     "dato": "2026-08-07T17:36:22",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-     "side": "artikel/c1b05c5ed4232d18.html",
      "hvor": "forside",
      "under": ""
     },
@@ -432,9 +445,22 @@ window.KILDER_STATUS = {
      "side": "artikel/2528674bdf5f50e2.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Anthropics AI lavede falske profiler og malware-angreb",
+     "dato": "2026-08-05T20:47:11",
+     "foerst_set": "2026-08-05T22:34:32",
+     "link": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
+     "side": "artikel/2d08e589a5852a97.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     2
+    ],
     [
      "Hacker News: AI",
      1
@@ -907,7 +933,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "MIT-forskere: AI kan forhandle bedre end mennesker",
+     "rubrik": "MIT: AI kan forhandle bedre end ventet",
      "dato": "2026-08-11T00:00:00",
      "foerst_set": "2026-08-11T04:53:48",
      "link": "https://arxiv.org/abs/2608.07538",
@@ -943,10 +969,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -957,51 +983,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta satser på åbne AI-modeller mod OpenAI"
-    },
-    {
-     "rubrik": "WhoDunnitAI: Afhør mistænkte med din stemme",
-     "dato": "2026-08-10T03:18:40",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://www.whodunnitai.com/",
-     "side": "artikel/2a66c41bb53b0e14.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Docker giver AI-agenter frit spil i sikre sandkasser",
-     "dato": "2026-08-10T06:02:38",
-     "foerst_set": "2026-08-10T09:02:21",
-     "link": "https://www.docker.com/products/docker-sandboxes/",
-     "side": "artikel/51e3d9e70ee95a79.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gentoo lukker fejlportal efter AI-bot-angreb",
-     "dato": "2026-08-08T13:55:42",
-     "foerst_set": "2026-08-09T14:20:27",
-     "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
-     "side": "artikel/a8577abe401ab7b4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Databricks: Sådan tæmmes de voksende AI-regninger",
-     "dato": "2026-08-07T18:25:17",
-     "foerst_set": "2026-08-08T04:36:15",
-     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
-     "side": "artikel/05b5c328b16d2c04.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Oracle forbyder AI-kode i OpenJDK",
-     "dato": "2026-08-07T17:36:30",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
-     "side": "artikel/99c5fc173e86b393.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
