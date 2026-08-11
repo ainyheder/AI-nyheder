@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-11T18:41:14.115591+00:00",
+ "opdateret": "2026-08-11T22:11:11.305166+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      0,
      1,
      9,
-     1
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      1,
      1,
      3,
-     5
+     6
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 49,
- "sidevisninger_i_alt": 70,
+ "besoeg_i_alt": 50,
+ "sidevisninger_i_alt": 72,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 48,
-   "visninger": 48
+   "besoeg": 49,
+   "visninger": 49
   },
   {
    "sti": "/koerekort.html",
@@ -265,6 +265,11 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/f3ec5949a23f5e05.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -352,7 +357,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 47
+   "besoeg": 48
   },
   {
    "fra": "www.google.com",
@@ -364,8 +369,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 47,
-    "visninger": 47
+    "besoeg": 48,
+    "visninger": 48
    },
    {
     "fra": "www.google.com",
@@ -381,6 +386,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/4662a98c4da9d5a3.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/f3ec5949a23f5e05.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -698,6 +710,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/f3ec5949a23f5e05.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Google Pixel 11: Trevor Noah er vært",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-11",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/73ddfbd0f80f8136.html",
    "besoeg": 0,
    "visninger": 1,
@@ -896,7 +923,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 7
+   "visninger": 8
   },
   {
    "navn": "Samfund & etik",
