@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-11T11:13:03.525164+00:00",
+ "opdateret": "2026-08-11T14:47:12.489521+00:00",
  "artikler_i_alt": 117,
  "kilder": [
   {
@@ -16,13 +16,13 @@ window.KILDER_STATUS = {
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
+     "rubrik": "Anthropic vandmærker tekst fra Claude AI",
      "dato": "",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
      "side": "",
      "hvor": "under",
-     "under": "Zuckerberg vil give AI til alle – gratis"
+     "under": "Anthropic mærker al Claude-tekst med usynlig vandmærke"
     },
     {
      "rubrik": "Amazons datacenter kan blive USAs største forurener",
@@ -50,6 +50,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Spotify mærker AI-personaer og fjerner deres musik fra anbefalinger",
+     "dato": "2026-08-11T13:00:00",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/",
+     "side": "artikel/636a0618aace15d2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI køber aktier for 7 milliarder dollars",
@@ -84,6 +93,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-10T22:21:05",
      "link": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/",
      "side": "artikel/9f4258eff4d02539.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Metas Glimmer: AI-assistenten der kører på din egen computer",
+     "dato": "2026-08-10T16:20:13",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+     "side": "artikel/4662a98c4da9d5a3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -140,24 +158,6 @@ window.KILDER_STATUS = {
      "side": "artikel/61f42ecb8f77cb35.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Rippling byggede værktøj efter AI-regning løb løbsk",
-     "dato": "2026-08-07T21:30:11",
-     "foerst_set": "2026-08-07T22:19:23",
-     "link": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/",
-     "side": "artikel/c534158d528e5b56.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI bremser Astra-model efter sikkerhedsrisiko",
-     "dato": "2026-08-07T22:48:24",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
-     "side": "artikel/59163ffd3cbeaf46.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -166,12 +166,16 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Ars Technica AI",
+     "MIT Tech Review AI",
      2
     ],
     [
-     "MIT Tech Review AI",
-     2
+     "Hacker News: AI",
+     1
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
@@ -185,9 +189,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 3,
+   "i_listen": 7,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Spotify dropper AI-musik fra anbefalinger",
+     "dato": "",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
+     "side": "",
+     "hvor": "under",
+     "under": "Spotify mærker AI-personaer og fjerner deres musik fra anbefalinger"
+    },
+    {
+     "rubrik": "Anthropic giver Claude usynlige vandmærker",
+     "dato": "",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic mærker al Claude-tekst med usynlig vandmærke"
+    },
     {
      "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
      "dato": "",
@@ -214,6 +236,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "Amazon skjuler ordrer – men hvorfor?",
+     "dato": "2026-08-11T09:27:20",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
+     "side": "artikel/aca3d33a076870f1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI's nye model knækker matematikkens hårdeste nødder",
@@ -268,30 +299,16 @@ window.KILDER_STATUS = {
      "side": "artikel/acf86426dbc37c6e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Fenix Flexin indrømmer AI i hit-sang",
-     "dato": "2026-08-07T16:01:51",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-     "side": "artikel/78db5548d2742eb5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
-     "dato": "2026-08-07T14:59:46",
-     "foerst_set": "2026-08-07T20:24:29",
-     "link": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
-     "side": "artikel/73ddfbd0f80f8136.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
      2
+    ],
+    [
+     "Hacker News: AI",
+     1
     ],
     [
      "Ars Technica AI",
@@ -313,18 +330,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 2,
+   "i_listen": 20,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI's nye højttaler får bevægelige dele",
-     "dato": "",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer donut-højttaler til 3.000 kroner"
-    },
     {
      "rubrik": "OpenAI's AI brød ind hos Hugging Face",
      "dato": "",
@@ -358,6 +366,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-08T17:59:49",
      "link": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
      "side": "artikel/bd6197a1b1b66042.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's højttaler kan få en pris på over 300 dollars",
+     "dato": "2026-08-07T17:36:22",
+     "foerst_set": "2026-08-07T18:07:29",
+     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+     "side": "artikel/c1b05c5ed4232d18.html",
      "hvor": "forside",
      "under": ""
     },
@@ -432,28 +449,19 @@ window.KILDER_STATUS = {
      "side": "artikel/2528674bdf5f50e2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropics AI lavede falske profiler og malware-angreb",
-     "dato": "2026-08-05T20:47:11",
-     "foerst_set": "2026-08-05T22:34:32",
-     "link": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
-     "side": "artikel/2d08e589a5852a97.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
-    [
-     "TechCrunch AI",
-     2
-    ],
     [
      "Hacker News: AI",
      1
     ],
     [
      "The Verge AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
      1
     ],
     [
@@ -967,6 +975,15 @@ window.KILDER_STATUS = {
      "under": "Meta satser på åbne AI-modeller mod OpenAI"
     },
     {
+     "rubrik": "Kinney Drugs dropper AI-assistent efter kundeklager",
+     "dato": "2026-08-10T14:56:32",
+     "foerst_set": "2026-08-11T14:47:12",
+     "link": "https://www.wcax.com/2026/08/07/kinney-drugs-pulls-back-ai-phone-assistant-after-hundreds-customer-complaints/",
+     "side": "artikel/ef57418ee05fb308.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google æder nettet – og vores fælles hukommelse forsvinder",
      "dato": "2026-08-10T22:36:30",
      "foerst_set": "2026-08-11T11:13:03",
@@ -1001,18 +1018,17 @@ window.KILDER_STATUS = {
      "side": "artikel/51e3d9e70ee95a79.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AI-botter lukker Gentoos fejlside",
-     "dato": "2026-08-08T13:55:42",
-     "foerst_set": "2026-08-09T14:20:27",
-     "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
-     "side": "artikel/a8577abe401ab7b4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
     [
      "Ars Technica AI",
      1

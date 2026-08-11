@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-11T11:15:13.328287+00:00",
+ "opdateret": "2026-08-11T14:49:14.339675+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      0,
      0,
      2,
-     0
+     1
     ]
    },
    {
@@ -242,15 +242,15 @@ window.LAESERTAL = {
      2,
      0,
      0,
-     4,
-     0
+     5,
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
  "besoeg_i_alt": 48,
- "sidevisninger_i_alt": 68,
+ "sidevisninger_i_alt": 69,
  "ai_chat_besoeg": 0,
  "sider": [
   {
@@ -264,12 +264,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
+   "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/4662a98c4da9d5a3.html",
+   "sti": "/artikel/73ddfbd0f80f8136.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -285,11 +285,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/9e2435033b8b0446.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/0fb7db373bd793a5.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -324,12 +319,22 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/203504a117757f2a.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/13e2539b3313d15a.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
    "sti": "/artikel/39d4fd006a363f68.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/8a7d5b391d35ec23.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -375,14 +380,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/73ddfbd0f80f8136.html": [
+  "/artikel/4662a98c4da9d5a3.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/4662a98c4da9d5a3.html": [
+  "/artikel/73ddfbd0f80f8136.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -404,13 +409,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/9e2435033b8b0446.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/0fb7db373bd793a5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -459,6 +457,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/203504a117757f2a.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/13e2539b3313d15a.html": [
    {
     "fra": "herfra selv",
@@ -467,6 +472,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/39d4fd006a363f68.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/8a7d5b391d35ec23.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -650,8 +662,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-11",
-   "besoeg": 0,
-   "visninger": 10
+   "besoeg": 10,
+   "visninger": 20
   }
  ],
  "artikler": [
@@ -671,12 +683,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
+   "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
+   "rubrik": "Metas Glimmer: AI-assistenten der kører på din egen computer",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-10",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -686,12 +698,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/4662a98c4da9d5a3.html",
+   "sti": "/artikel/73ddfbd0f80f8136.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-10",
+   "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-07",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -737,21 +749,6 @@ window.LAESERTAL = {
    "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
    "kategori": "Samfund & etik",
    "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/0fb7db373bd793a5.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Alibaba udfordrer USA med kæmpe AI-model",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-03",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -821,6 +818,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/203504a117757f2a.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Meta satser på åbne AI-modeller mod OpenAI",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-10",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/13e2539b3313d15a.html",
    "besoeg": 0,
    "visninger": 1,
@@ -842,6 +854,21 @@ window.LAESERTAL = {
    "rubrik": "OpenAI slår tilbage mod Apples sagsanlæg",
    "kategori": "Politik & jura",
    "dato": "2026-08-03",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/8a7d5b391d35ec23.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI's nye model knækker matematikkens hårdeste nødder",
+   "kategori": "Forskning",
+   "dato": "2026-08-11",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -881,6 +908,10 @@ window.LAESERTAL = {
   },
   {
    "navn": "Politik & jura",
+   "visninger": 1
+  },
+  {
+   "navn": "Forskning",
    "visninger": 1
   }
  ]
