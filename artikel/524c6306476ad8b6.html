@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere</title>
-<meta name="description" content="OpenAI udvider Daybreak-programmet med en ny cybermodel. Den er kun for godkendte forskere, der tester og finder sårbarheder.">
-<link rel="canonical" href="https://ainyheder.com/artikel/dd3ed843f2799c9f.html">
+<title>AI-nyheder.com · AI fejler oftere, end den selv tror</title>
+<meta name="description" content="Forskere finder hul mellem hvad AI-modeller ved og siger. Kan gøre dem mere pålidelige.">
+<link rel="canonical" href="https://ainyheder.com/artikel/524c6306476ad8b6.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere">
-<meta property="og:description" content="OpenAI udvider Daybreak-programmet med en ny cybermodel. Den er kun for godkendte forskere, der tester og finder sårbarheder.">
-<meta property="og:url" content="https://ainyheder.com/artikel/d570d2706121db35.html">
+<meta property="og:title" content="AI fejler oftere, end den selv tror">
+<meta property="og:description" content="Forskere finder hul mellem hvad AI-modeller ved og siger. Kan gøre dem mere pålidelige.">
+<meta property="og:url" content="https://ainyheder.com/artikel/524c6306476ad8b6.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere", "description": "OpenAI udvider Daybreak-programmet med en ny cybermodel. Den er kun for godkendte forskere, der tester og finder sårbarheder.", "url": "https://ainyheder.com/artikel/d570d2706121db35.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/d570d2706121db35.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-10T10:00:00+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "AI fejler oftere, end den selv tror", "description": "Forskere finder hul mellem hvad AI-modeller ved og siger. Kan gøre dem mere pålidelige.", "url": "https://ainyheder.com/artikel/524c6306476ad8b6.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/524c6306476ad8b6.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-11T00:00:00-04:00", "articleSection": "Forskning", "isBasedOn": "https://arxiv.org/abs/2608.07528"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -53,18 +53,20 @@ footer a { color:var(--accent); }
 <body>
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
-<div class="kicker">Lanceringer · OpenAI Blog · 2026-08-10</div>
-<h1>OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere</h1>
-<p class="manchet">OpenAI udvider Daybreak-programmet med en ny cybermodel. Den er kun for godkendte forskere, der tester og finder sårbarheder.</p>
+<div class="kicker">Forskning · arXiv cs.AI · 2026-08-11</div>
+<h1>AI fejler oftere, end den selv tror</h1>
+<p class="manchet">Forskere finder hul mellem hvad AI-modeller ved og siger. Kan gøre dem mere pålidelige.</p>
 
-<h2>Ny model</h2>
-<p>OpenAI har præsenteret GPT-5.6-Cyber, en AI-model bygget specifikt til cybersikkerhed. Modellen er en del af Daybreak Red, et program for autoriserede forskere. Den skal bruges til at finde fejl og teste, hvor godt systemer er beskyttet.</p>
-<h2>Hvem må bruge den?</h2>
-<p>Adgangen er begrænset til godkendte forskere. De skal arbejde med sårbarhedsanalyse, teste forsvarsmekanismer eller validere sikkerhedshuller. Formålet er at lukke huller, før ondsindede aktører udnytter dem.</p>
+<h2>Opdagelsen</h2>
+<p>Forskere har fundet et mønster i AI-modeller: De kan &#x27;vide&#x27; at et svar er forkert, men alligevel sige det med høj selvtillid. Ved at kigge ind i modellens indre lag, kan de se fejl, som den normale usikkerheds-måling overser. Det kalder de &#x27;knowing-saying gap&#x27; - kløften mellem at vide og at sige.</p>
+<h2>Hvordan det virker</h2>
+<p>AI-modeller som ChatGPT ligner sorte bokse, men forskerne brugte &#x27;probes&#x27; - små sensorer der læser aktiviteten i modellen. De fandt at modellen ofte har en korrekt fornemmelse af, om et svar er godt eller skidt, men at den ydre selvtillid ikke afspejler det. Hullet er størst ved svære spørgsmål.</p>
+<h2>Hvad det betyder</h2>
+<p>Det kan betyde, at vi får AI der bedre kan sige &#x27;jeg ved det ikke&#x27; - i stedet for at svare sikkert og tage fejl. Det er vigtigt i alt fra patientrådgivning til finansielle anbefalinger, hvor et fejlsvar kan få store konsekvenser. Teknikken kan også bruges i fremtidens AI-udvikling.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>GPT-5.6-Cyber er en specialiseret AI-model til cybersikkerhed.</li><li>Den er en del af OpenAI&#x27;s Daybreak Red-program.</li><li>Kun autoriserede forskere får adgang til modellen.</li><li>Modellen kan bruges til sårbarhedsforskning og exploit-validering.</li><li>Den understøtter også sikkerhedstest af systemer.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du får ikke direkte glæde af modellen, men den kan gøre software mere sikkert, fordi forskere finder og lukker huller hurtigere.</div>
-<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows" rel="noopener">OpenAI Blog →</a></p>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Forskere kortlagde forskellen mellem AI-modellers indre viden og ydre selvtillid.</li><li>Kløften kaldes &#x27;knowing-saying gap&#x27; og er størst ved komplekse opgaver.</li><li>Probes aflæser modellens indre tilstande og kan spotte fejl tidligere.</li><li>Traditionel selvtillids-måling overser mange fejl, viser undersøgelsen.</li><li>Metoden kan gøre AI mere ærlig om egne begrænsninger.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du får færre sikre, men forkerte svar fra AI-chatbots - og dermed et mere ærligt redskab, du kan stole på.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://arxiv.org/abs/2608.07528" rel="noopener">arXiv cs.AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
 </main>

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-10T22:21:05.749981+00:00",
- "artikler_i_alt": 116,
+ "opdateret": "2026-08-11T04:53:48.481756+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,17 +12,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 3,
+   "i_listen": 17,
+   "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Amazons datacenter kan blive USA's største forurener",
+     "rubrik": "OpenAI lancerer cybermodel til forsvar mod AI-angreb",
      "dato": "",
-     "foerst_set": "2026-08-08T21:56:32",
-     "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
      "side": "",
      "hvor": "under",
-     "under": "Amazons nye gasværk kan blive USA's største CO2-udleder"
+     "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
+    },
+    {
+     "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
+     "dato": "",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
+     "side": "",
+     "hvor": "under",
+     "under": "Zuckerberg vil give AI til alle – gratis"
     },
     {
      "rubrik": "OpenAI-model brød ud under test og skabte panik",
@@ -43,6 +52,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "OpenAI gennemfører aktiesalg for 7 milliarder dollar",
+     "dato": "2026-08-11T00:03:18",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Zuckerbergs AI-vision vækker mistillid",
      "dato": "2026-08-10T20:53:02",
      "foerst_set": "2026-08-10T22:21:05",
@@ -57,15 +75,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-10T22:21:05",
      "link": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/",
      "side": "artikel/9f4258eff4d02539.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
-     "dato": "2026-08-10T16:20:13",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/",
-     "side": "artikel/4662a98c4da9d5a3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -159,6 +168,10 @@ window.KILDER_STATUS = {
     [
      "MIT Tech Review AI",
      2
+    ],
+    [
+     "OpenAI Blog",
+     1
     ]
    ]
   },
@@ -172,9 +185,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 2,
+   "i_listen": 8,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
+     "dato": "",
+     "foerst_set": "2026-08-08T17:59:49",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
     {
      "rubrik": "OpenAI sætter hackermodel Astra på pause",
      "dato": "",
@@ -194,11 +216,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
-     "rubrik": "Zuckerberg forstår ikke at leve",
+     "rubrik": "Zuckerbergs AI-fremtid glemmer det vigtigste",
      "dato": "2026-08-10T18:00:00",
      "foerst_set": "2026-08-10T22:21:05",
      "link": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
-     "side": "",
+     "side": "artikel/b6a795d1e48ad3aa.html",
      "hvor": "forside",
      "under": ""
     },
@@ -239,15 +261,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
-     "dato": "2026-08-08T13:53:34",
-     "foerst_set": "2026-08-08T17:59:49",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-     "side": "artikel/7a2536fc12ba4896.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Fenix Flexin indrømmer AI i hit-sang",
      "dato": "2026-08-07T16:01:51",
      "foerst_set": "2026-08-07T20:24:29",
@@ -281,6 +294,10 @@ window.KILDER_STATUS = {
      2
     ],
     [
+     "Ars Technica AI",
+     1
+    ],
+    [
      "MIT Tech Review AI",
      1
     ]
@@ -311,18 +328,9 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Meta satser på åbne AI-modeller mod OpenAI",
      "dato": "2026-08-10T22:13:03",
-     "foerst_set": "2026-08-10T22:21:05",
+     "foerst_set": "2026-08-10T19:44:23",
      "link": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/",
      "side": "artikel/203504a117757f2a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon bygger gasværk til AI trods klimamål",
-     "dato": "2026-08-10T20:45:52",
-     "foerst_set": "2026-08-10T22:21:05",
-     "link": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
-     "side": "artikel/bd6197a1b1b66042.html",
      "hvor": "forside",
      "under": ""
     },
@@ -332,6 +340,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-10T12:03:40",
      "link": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era/",
      "side": "artikel/55e0cdb0c0d68bb5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon bygger gasværk til AI trods klimamål",
+     "dato": "2026-08-10T20:45:52",
+     "foerst_set": "2026-08-08T17:59:49",
+     "link": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
+     "side": "artikel/bd6197a1b1b66042.html",
      "hvor": "forside",
      "under": ""
     },
@@ -419,6 +436,14 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Hacker News: AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
+    [
      "Google DeepMind",
      1
     ],
@@ -442,11 +467,11 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "AI-professorer tilpasser sig ny forskningsvirkelighed",
+     "rubrik": "AI-forskere presses af OpenAI og Google",
      "dato": "2026-08-10T20:00:00",
      "foerst_set": "2026-08-10T22:21:05",
      "link": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research/",
-     "side": "",
+     "side": "artikel/1281650c995b3747.html",
      "hvor": "forside",
      "under": ""
     },
@@ -557,24 +582,42 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 25,
+   "i_listen": 24,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere",
+     "dato": "",
+     "foerst_set": "2026-08-10T19:44:23.966320+00:00",
+     "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
+    },
+    {
+     "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://openai.com/index/zapier",
+     "side": "artikel/2400bb772f760734.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Virgin Atlantic bruger AI til at skærpe kunderejser",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+     "side": "artikel/f7be8d43b299d944.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Sarah Friar: Sådan bygger du en AI-drevet økonomiafdeling",
      "dato": "2026-08-10T17:00:00",
      "foerst_set": "2026-08-10T19:44:23",
      "link": "https://openai.com/index/building-an-ai-native-finance-function",
      "side": "artikel/1b4a121cfec6e61f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere",
-     "dato": "2026-08-10T10:00:00",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-     "side": "artikel/d570d2706121db35.html",
      "hvor": "forside",
      "under": ""
     },
@@ -658,18 +701,14 @@ window.KILDER_STATUS = {
      "side": "artikel/a55486a7c34480b0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI styrker sikkerheden omkring AI-test",
-     "dato": "2026-08-04T19:00:00",
-     "foerst_set": "2026-08-04T22:36:37",
-     "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-     "side": "artikel/899f3cac40208dfd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Google DeepMind",
@@ -787,110 +826,110 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Dongxiao He lærer AI at forstå sociale netværk",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06394",
-     "side": "artikel/500c3e9a2c439352.html",
+     "rubrik": "Xiang Yin vil gøre AI bedre til at vurdere mennesker",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07473",
+     "side": "artikel/560cde019cec013f.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "EntropyMoE giver AI-hjernen hurtigere tænkning",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06398",
-     "side": "artikel/ccfa490560177210.html",
+     "rubrik": "Hiroki Naitos metode stopper AI-fejl tidligere",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07474",
+     "side": "artikel/a29b08691efa84cf.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Yifan Wang åbner AI'ernes sorte boks",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06400",
-     "side": "artikel/9b7cede74ade553f.html",
+     "rubrik": "Hai Hai Fu's AI-teori kan gøre systemer mere pålidelige",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07476",
+     "side": "artikel/f389fd5f7e68234b.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "DTU-forskeres AI afslører skjulte fællesskaber",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06402",
-     "side": "artikel/97fe9ed4dfdae21b.html",
+     "rubrik": "Julian Schumanns AI lærer at køre bil med følelser",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07480",
+     "side": "artikel/f3adcee6449dd0f0.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "ADIAS: AI bygger sine egne medarbejdere",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06410",
-     "side": "artikel/a06d179db31af417.html",
+     "rubrik": "Ny metode fra arXiv træner AI på lange sekvenser hurtigere",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07524",
+     "side": "artikel/b93103c512206b05.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Yuyao Sun finder ny metode til at gøre AI billedtolkning hurtigere",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06411",
-     "side": "artikel/918c96dec5153789.html",
+     "rubrik": "AI fejler oftere, end den selv tror",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07528",
+     "side": "artikel/524c6306476ad8b6.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "WebGrader lærer AI at bygge hjemmesider",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06474",
-     "side": "artikel/7454d6fbb40126ce.html",
+     "rubrik": "Ny AI-test: Kan ChatGPT forstå dine datakrav?",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07530",
+     "side": "artikel/960390c0d3052771.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "C4-testen måler AI's kreative spring",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06501",
-     "side": "artikel/a02ca27d6676125d.html",
+     "rubrik": "Forskere lader AI-agenter danne hold og forhandle",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07532",
+     "side": "artikel/e72fe34092877000.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "KNOWPLAN lægger din studievej",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06530",
-     "side": "artikel/c1a8e91540afc6dd.html",
+     "rubrik": "MetaSpace: Nyt værktøj afslører AI's rumforståelse",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07533",
+     "side": "artikel/d1f163045bba0990.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forsker SM Mazharul Islam lærer AI at fokusere",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06544",
-     "side": "artikel/f38f206f451dea72.html",
+     "rubrik": "MIT-forskere: AI kan forhandle bedre end mennesker",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07538",
+     "side": "artikel/82ac42df3e033d2f.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ali Jalal-Kamali afslører AI's skjulte dobbeltliv",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06578",
-     "side": "artikel/1e676f980f4b8504.html",
+     "rubrik": "Ny TREAT-test afslører AI's matematikforståelse",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07540",
+     "side": "artikel/23adacac146feec0.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Hotaka Maeda lærer AI at forudsige afslag",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-10T05:57:44",
-     "link": "https://arxiv.org/abs/2608.06609",
-     "side": "artikel/c0bc614d7de0c4cc.html",
+     "rubrik": "Forskere bygger AI-forsker, der ikke kører af sporet",
+     "dato": "2026-08-11T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://arxiv.org/abs/2608.07542",
+     "side": "artikel/491c0601b675233b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -904,13 +943,73 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
-   "som_ekstra": 0,
-   "seneste": [],
-   "overlap": []
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
+   "som_ekstra": 1,
+   "seneste": [
+    {
+     "rubrik": "Mark Zuckerberg kritiserer lukkede AI-modeller",
+     "dato": "",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta satser på åbne AI-modeller mod OpenAI"
+    },
+    {
+     "rubrik": "WhoDunnitAI: Afhør mistænkte med din stemme",
+     "dato": "2026-08-10T03:18:40",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://www.whodunnitai.com/",
+     "side": "artikel/2a66c41bb53b0e14.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Docker giver AI-agenter frit spil i sikre sandkasser",
+     "dato": "2026-08-10T06:02:38",
+     "foerst_set": "2026-08-10T09:02:21",
+     "link": "https://www.docker.com/products/docker-sandboxes/",
+     "side": "artikel/51e3d9e70ee95a79.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gentoo lukker fejlportal efter AI-bot-angreb",
+     "dato": "2026-08-08T13:55:42",
+     "foerst_set": "2026-08-09T14:20:27",
+     "link": "https://social.treehouse.systems/@mgorny/117058483039362779",
+     "side": "artikel/a8577abe401ab7b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Databricks: Sådan tæmmes de voksende AI-regninger",
+     "dato": "2026-08-07T18:25:17",
+     "foerst_set": "2026-08-08T04:36:15",
+     "link": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+     "side": "artikel/05b5c328b16d2c04.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Oracle forbyder AI-kode i OpenJDK",
+     "dato": "2026-08-07T17:36:30",
+     "foerst_set": "2026-08-07T20:24:29",
+     "link": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+     "side": "artikel/99c5fc173e86b393.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
+   "overlap": [
+    [
+     "Ars Technica AI",
+     1
+    ]
+   ]
   }
  ],
  "feeds_fil": {

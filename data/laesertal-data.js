@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-10T22:24:36.112782+00:00",
+ "opdateret": "2026-08-11T05:06:46.715198+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-07-12",
    "2026-07-13",
    "2026-07-14",
    "2026-07-15",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-08-07",
    "2026-08-08",
    "2026-08-09",
-   "2026-08-10"
+   "2026-08-10",
+   "2026-08-11"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     0,
      1,
      0,
      1,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      25,
      1,
      0,
-     28
+     28,
+     25
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     0,
      0,
      0,
      0,
@@ -100,16 +99,16 @@ window.LAESERTAL = {
      9,
      7,
      8,
-     7,
+     8,
+     2,
      3,
-     3,
-     4
+     6,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     0,
      1,
      0,
      1,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      4,
      0,
      1,
-     8
+     8,
+     0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     0,
      0,
      1,
      0,
@@ -170,16 +169,16 @@ window.LAESERTAL = {
      5,
      8,
      5,
+     2,
+     1,
+     1,
      3,
-     1,
-     1,
-     3
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     0,
      0,
      0,
      1,
@@ -206,15 +205,15 @@ window.LAESERTAL = {
      1,
      6,
      2,
+     1,
      0,
-     0,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     0,
      0,
      2,
      0,
@@ -243,14 +242,15 @@ window.LAESERTAL = {
      2,
      0,
      0,
-     2
+     4,
+     0
     ]
    }
   ]
  },
  "maaling": "ok",
  "besoeg_i_alt": 51,
- "sidevisninger_i_alt": 74,
+ "sidevisninger_i_alt": 75,
  "ai_chat_besoeg": 0,
  "sider": [
   {
@@ -261,6 +261,11 @@ window.LAESERTAL = {
   {
    "sti": "/koerekort.html",
    "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/4662a98c4da9d5a3.html",
+   "besoeg": 0,
    "visninger": 1
   },
   {
@@ -377,6 +382,13 @@ window.LAESERTAL = {
    {
     "fra": "www.google.com",
     "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/4662a98c4da9d5a3.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -516,11 +528,6 @@ window.LAESERTAL = {
  ],
  "serie": [
   {
-   "dato": "2026-07-12",
-   "besoeg": 0,
-   "visninger": 0
-  },
-  {
    "dato": "2026-07-13",
    "besoeg": 0,
    "visninger": 0
@@ -567,53 +574,53 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-07-22",
-   "besoeg": 0,
-   "visninger": 100
+   "besoeg": 20,
+   "visninger": 160
   },
   {
    "dato": "2026-07-23",
-   "besoeg": 0,
-   "visninger": 200
+   "besoeg": 50,
+   "visninger": 280
   },
   {
    "dato": "2026-07-24",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 70,
+   "visninger": 90
   },
   {
    "dato": "2026-07-25",
-   "besoeg": 200,
-   "visninger": 200
+   "besoeg": 60,
+   "visninger": 90
   },
   {
    "dato": "2026-07-26",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 60
   },
   {
    "dato": "2026-07-27",
-   "besoeg": 0,
-   "visninger": 100
+   "besoeg": 10,
+   "visninger": 70
   },
   {
    "dato": "2026-07-28",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 40
   },
   {
    "dato": "2026-07-29",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 30
   },
   {
    "dato": "2026-07-30",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 30
   },
   {
    "dato": "2026-07-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-08-01",
@@ -622,13 +629,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-02",
-   "besoeg": 100,
-   "visninger": 100
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-03",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-04",
@@ -637,8 +644,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-05",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-06",
@@ -647,23 +654,28 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-07",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-08",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-08-09",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-10",
    "besoeg": 0,
    "visninger": 0
+  },
+  {
+   "dato": "2026-08-11",
+   "besoeg": 0,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -694,6 +706,21 @@ window.LAESERTAL = {
      "fra": "herfra selv",
      "besoeg": 0,
      "visninger": 3
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/4662a98c4da9d5a3.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-10",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
     }
    ]
   },
@@ -881,8 +908,8 @@ window.LAESERTAL = {
    "sti": "/artikel/05b5c328b16d2c04.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Databricks: Sådan undgår du at AI-udgifterne løber løbsk",
-   "kategori": "Penge & marked",
+   "rubrik": "Databricks: Sådan tæmmes de voksende AI-regninger",
+   "kategori": "Samfund & etik",
    "dato": "2026-08-07",
    "henvisere": [
     {
@@ -896,15 +923,15 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 9
+   "visninger": 10
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 6
+   "visninger": 7
   },
   {
    "navn": "Penge & marked",
-   "visninger": 3
+   "visninger": 2
   },
   {
    "navn": "Politik & jura",
