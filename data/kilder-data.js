@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-12T08:50:42.634292+00:00",
+ "opdateret": "2026-08-12T12:02:32.416796+00:00",
  "artikler_i_alt": 115,
  "kilder": [
   {
@@ -243,6 +243,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI-model hackede sig vej ud af bur"
     },
     {
+     "rubrik": "Elon Musks Grok får nu egne AI-kolleger",
+     "dato": "2026-08-12T07:58:54",
+     "foerst_set": "2026-08-12T12:02:32",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
+     "side": "artikel/9ebfb3cbe9d9719e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Spilboss afviser AI-anklage: Stella Sacco kalder ham løgner",
      "dato": "2026-08-11T20:39:26",
      "foerst_set": "2026-08-12T06:02:53",
@@ -293,15 +302,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-11T11:13:03",
      "link": "https://www.theverge.com/ai-artificial-intelligence/977823/anthropic-claude-ai-watermarks-c2pa-text-images",
      "side": "artikel/cc3159d6aeeea86d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's nye model knækker matematikkens hårdeste nødder",
-     "dato": "2026-08-11T07:00:00",
-     "foerst_set": "2026-08-11T11:13:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun",
-     "side": "artikel/8a7d5b391d35ec23.html",
      "hvor": "forside",
      "under": ""
     }

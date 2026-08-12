@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-12T08:51:39.858490+00:00",
+ "opdateret": "2026-08-12T12:03:15.530380+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      9,
      4,
-     0
+     1
     ]
    },
    {
@@ -264,17 +264,17 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
    "visninger": 2
   },
   {
    "sti": "/artikel/f3ec5949a23f5e05.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/73ddfbd0f80f8136.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -369,148 +369,41 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 48,
-    "visninger": 48
-   },
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
+    "besoeg": 60,
+    "visninger": 60
    }
   ],
-  "/koerekort.html": [
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/73ddfbd0f80f8136.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
+  "/koerekort.html": [],
   "/artikel/4662a98c4da9d5a3.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 10
    }
   ],
-  "/artikel/f3ec5949a23f5e05.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/e911d06afa88ad64.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/61e5f938cd4c3ca5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9e2435033b8b0446.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/fa830ce9c845d543.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/c68d5f1c469c21b3.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/youtube.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/a3990db1706fbc22.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/guide-prompts.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/2b5e0acf6593ac5a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/203504a117757f2a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/13e2539b3313d15a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/8a7d5b391d35ec23.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
+  "/artikel/f3ec5949a23f5e05.html": [],
+  "/artikel/73ddfbd0f80f8136.html": [],
+  "/artikel/e911d06afa88ad64.html": [],
+  "/artikel/61e5f938cd4c3ca5.html": [],
+  "/artikel/9e2435033b8b0446.html": [],
+  "/prompts.html": [],
+  "/artikel/fa830ce9c845d543.html": [],
+  "/artikel/c68d5f1c469c21b3.html": [],
+  "/youtube.html": [],
+  "/artikel/a3990db1706fbc22.html": [],
+  "/guide-prompts.html": [],
+  "/artikel/2b5e0acf6593ac5a.html": [],
+  "/artikel/203504a117757f2a.html": [],
+  "/artikel/13e2539b3313d15a.html": [],
+  "/artikel/8a7d5b391d35ec23.html": [],
   "/artikel/05b5c328b16d2c04.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 10
    }
   ],
-  "/artikel/14f964707cdfca29.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ]
+  "/artikel/14f964707cdfca29.html": []
  },
  "faste_uden_besoeg": [
   "/laer.html",
@@ -685,13 +578,7 @@ window.LAESERTAL = {
    "rubrik": "Cloudflare OS er nu open source",
    "kategori": "Lanceringer",
    "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 3
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
@@ -704,22 +591,7 @@ window.LAESERTAL = {
     {
      "fra": "herfra selv",
      "besoeg": 0,
-     "visninger": 2
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/73ddfbd0f80f8136.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
+     "visninger": 10
     }
    ]
   },
@@ -730,13 +602,16 @@ window.LAESERTAL = {
    "rubrik": "Google Pixel 11: Trevor Noah er vært",
    "kategori": "Lanceringer",
    "dato": "2026-08-11",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
+  },
+  {
+   "sti": "/artikel/73ddfbd0f80f8136.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Roku og Fairground lancerer AI-kanal med 24/7-slop",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-07",
+   "henvisere": []
   },
   {
    "sti": "/artikel/e911d06afa88ad64.html",
@@ -745,13 +620,7 @@ window.LAESERTAL = {
    "rubrik": "Anthropic laver egne AI-chips",
    "kategori": "Penge & marked",
    "dato": "2026-08-05",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/61e5f938cd4c3ca5.html",
@@ -760,13 +629,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
    "kategori": "Samfund & etik",
    "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/9e2435033b8b0446.html",
@@ -775,13 +638,7 @@ window.LAESERTAL = {
    "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
    "kategori": "Samfund & etik",
    "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/fa830ce9c845d543.html",
@@ -790,13 +647,7 @@ window.LAESERTAL = {
    "rubrik": "AI fandt alvorligt Zoom-hul på én dag",
    "kategori": "Samfund & etik",
    "dato": "2026-08-11",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/c68d5f1c469c21b3.html",
@@ -805,13 +656,7 @@ window.LAESERTAL = {
    "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
    "kategori": "Lanceringer",
    "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/a3990db1706fbc22.html",
@@ -820,13 +665,7 @@ window.LAESERTAL = {
    "rubrik": "Anthropic-model gør fremskridt på 150 år gammelt matematisk problem",
    "kategori": "Forskning",
    "dato": "2026-08-11",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/2b5e0acf6593ac5a.html",
@@ -835,13 +674,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI- og Anthropic-agenter hackede rigtige mennesker",
    "kategori": "Samfund & etik",
    "dato": "2026-08-05",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/203504a117757f2a.html",
@@ -850,13 +683,7 @@ window.LAESERTAL = {
    "rubrik": "Meta satser på åbne AI-modeller mod OpenAI",
    "kategori": "Lanceringer",
    "dato": "2026-08-10",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/13e2539b3313d15a.html",
@@ -865,13 +692,7 @@ window.LAESERTAL = {
    "rubrik": "TikTok-ejer træner kæmpe AI-model mod Anthropic",
    "kategori": "Lanceringer",
    "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/8a7d5b391d35ec23.html",
@@ -880,13 +701,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI's nye model knækker matematikkens hårdeste nødder",
    "kategori": "Forskning",
    "dato": "2026-08-11",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/05b5c328b16d2c04.html",
@@ -899,7 +714,7 @@ window.LAESERTAL = {
     {
      "fra": "herfra selv",
      "besoeg": 0,
-     "visninger": 1
+     "visninger": 10
     }
    ]
   }
