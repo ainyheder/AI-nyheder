@@ -1,7 +1,171 @@
 {
-  "opdateret": "2026-08-12T20:03:12.478372+00:00",
-  "antal": 118,
+  "opdateret": "2026-08-12T22:26:02.586959+00:00",
+  "antal": 112,
   "artikler": [
+    {
+      "titel": "The web’s newest weapon against AI scrapers is a font",
+      "link": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
+      "resume": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
+      "dato": "2026-08-12T22:02:25+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "eget_foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "rubrik": "ShieldFont: Ny font skal blokere AI-træning",
+      "resume_da": "Fonten gør tekster ulæselige for AI-programmer, men ikke for mennesker. Sitet håber at beskytte indhold mod dataindsamling.",
+      "kat_ai": true,
+      "prio": 4
+    },
+    {
+      "titel": "Terabytes of credentials leaked in massive supply-chain attack",
+      "link": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+      "resume": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
+      "dato": "2026-08-12T21:43:21+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "eget_foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "rubrik": "Kæmpe læk: LiteLLM afslørede tusinders hemmeligheder",
+      "resume_da": "Et hackerangreb på AI-værktøjet LiteLLM har lækket adgangskoder fra tusindvis af organisationer, herunder Microsoft, Amazon og Cisco.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er sket?",
+          "tekst": "Sikkerhedsfirmaerne CloudSEK og Hudson Rock afslørede, at hackere fik adgang til enorme mængder adgangskoder og nøgler fra mindst **2.500** organisationer via et angreb på det populære AI-værktøj LiteLLM i marts. Angrebet varede kun **40 minutter**, men nåede at stjæle data fra nogle af verdens største virksomheder, herunder Microsoft, Amazon, Cisco, Samsung og Salesforce."
+        },
+        {
+          "overskrift": "Hvordan gik det til?",
+          "tekst": "Angrebet startede med en kompromitteret version af sikkerhedsværktøjet Trivy, som spredte sig til andre populære programmer, herunder LiteLLM. Hackergruppen TeamPCP, bestående af teenagere, indbyggede skadelig kode, der tømte ofrenes computerhukommelse. Udviklere, der downloadede de inficerede versioner fra PyPI, fik dermed hele deres pipelines eksponeret, og data blev sendt til hackernes egen server."
+        },
+        {
+          "overskrift": "Tallet der chokerer",
+          "tekst": "De to sikkerhedsfirmaer estimerer, at hele **434.000** CI/CD-pipelines fik lækket adgangskoder. Mange af dem er stadig aktive, fordi organisationerne slet ikke ved, at de er ramt. Flere virksomheder har reageret sløvt: En af dem forsikrede, at de havde roteret alle koder, men en sikkerhedsforsker testede dem og fandt, at næsten alle stadig virkede."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Alle med version 1.82.7 eller 1.82.8 af LiteLLM opfordres til straks at skifte alle adgangskoder, nøgler og tokens. Sikkerhedsfirmaerne advarer om, at dette kun er starten på en ny bølge af angreb, hvor ét enkelt kompromitteret open source-værktøj kan ramme tusindvis af virksomheder på én gang."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2.500",
+          "label": "organisationer fik lækket adgangskoder"
+        },
+        {
+          "tal": "434.000",
+          "label": "softwaresystemer fik eksponeret adgangsdata"
+        }
+      ],
+      "detaljer": [
+        "Microsoft, Amazon, Cisco, Samsung og Salesforce er blandt de ramte.",
+        "Angrebet varede kun 40 minutter i marts.",
+        "TeamPCP, en gruppe teenagere, tog æren for angrebet.",
+        "Op til 195TB data blev analyseret af sikkerhedsforskerne.",
+        "LiteLLM-versionerne 1.82.7 og 1.82.8 var kompromitteret.",
+        "Sikkerhedsværktøjet Trivy blev brugt som indgang til angrebet.",
+        "Mange organisationer ved ikke, at deres data er lækket."
+      ],
+      "betydning": "Hvis du arbejder med softwareudvikling, kan dine adgangskoder allerede være på nettet - skift dem med det samme, hvis dit firma brugte LiteLLM.",
+      "pointer": [
+        "LiteLLM-leak ramte 2.500 firmakonti",
+        "40 minutter var nok til massivt tyveri",
+        "Microsoft og Amazon blandt ofrene",
+        "Mange koder er stadig aktive i dag"
+      ],
+      "billedmotiv": "En bunke nøgler låst inde i en åben transparent boks med et gigantisk hængelås, der har et synligt hul i siden.",
+      "side": "artikel/04a3c04ecceac20c.html"
+    },
+    {
+      "titel": "Twitch content has trained Amazon AI for years, but users can opt out now",
+      "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+      "resume": "Streaming platform says user-generated content \"may be used for future Gen AI model improvements.\"",
+      "dato": "2026-08-12T21:00:30+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "eget_foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "rubrik": "Twitch giver dig nu valget: Vil du træne Amazons AI?",
+      "resume_da": "Twitch-streamere har i årevis automatisk trænet Amazons AI med deres indhold. Nu kan du selv vælge fra.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Twitch meddelte i dag, at brugere nu kan fravælge, at deres streams, klip og chat-beskeder bliver brugt til at træne Amazons AI-modeller. Det sker mere end to år efter, at en direktør i 2024 bekræftede, at Amazon brugte Twitch-indhold til AI. Fravælger du ikke selv, fortsætter dit indhold med at blive brugt."
+        },
+        {
+          "overskrift": "Sådan gør du",
+          "tekst": "For at sige nej skal du gå ind på www.twitch.tv/settings/security og ændre indstillingen. Twitch forklarer, at dit indhold blandt andet kan hjælpe med at forbedre tale-til-tekst-funktioner, som både gavner Twitch og resten af Amazon. Fravælger du, behøver dit indhold ikke længere at indgå i fremtidige AI-forbedringer."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "Mange brugere har været uvidende om, at deres indhold blev brugt til AI-træning. Nogle er utilfredse, fordi de ikke får økonomisk kompensation, andre frygter, at AI overtager deres arbejde, og nogle vil bare ikke støtte Amazon. Twitch har ikke oplyst, hvor længe Amazon har brugt indholdet, men købte platformen tilbage i 2014."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Twitch-brugere er automatisk tilmeldt AI-træning, og har været det i flere år.",
+        "Fravælgelse sker via Twitch' sikkerhedsindstillinger på twitch.tv/settings/security.",
+        "Indholdet kan bruges til at træne modeller, der laver tale-til-tekst, billeder, lyd og video.",
+        "Twitch-direktøren Mike Minton bekræftede i 2024, at Amazon brugte Twitch til AI.",
+        "Amazon købte Twitch i 2014, men har ikke oplyst, hvor længe indholdet er blevet brugt.",
+        "Brugere har været kritiske over manglende gennemsigtighed og manglende betaling."
+      ],
+      "betydning": "Hvis du streamer på Twitch, skal du selv gå ind og slå fra i indstillingerne, ellers kan dit indhold fortsat blive brugt til at træne Amazons AI. Det tager under et minut.",
+      "pointer": [
+        "Opt-out er nu muligt på Twitch.",
+        "Automatisk tilmeldt i årevis.",
+        "Amazon brugte indhold til AI-træning.",
+        "Kritik for manglende gennemsigtighed."
+      ],
+      "side": "artikel/c37950ec573d6143.html"
+    },
+    {
+      "titel": "How RingCentral builds AI-native work from engineering to ops",
+      "link": "https://openai.com/index/ringcentral",
+      "resume": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+      "dato": "2026-08-12T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "eget_foerst_set": "2026-08-12T22:26:02.586959+00:00",
+      "rubrik": "RingCentral bruger ChatGPT til at bygge AI hurtigere",
+      "resume_da": "RingCentral bruger ChatGPT og Codex til at lave produkter og samle viden på tværs af teams. Alt går hurtigere med AI.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "AI i praksis",
+          "tekst": "RingCentral bruger ChatGPT og Codex i både udvikling og drift. Værktøjerne hjælper med at lave nye AI-funktioner og få fælles overblik på tværs af ingeniør- og driftsafdelinger. Det gør arbejdet mere smidigt."
+        },
+        {
+          "overskrift": "Koden og viden",
+          "tekst": "Med Codex kan udviklerne få hjælp til at skrive kode, og med ChatGPT samler de viden fra hele organisationen ét sted. Så slipper de for at lede længe efter svar og kan lægge energien i det vigtige arbejde."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "RingCentral bruger ChatGPT Work og Codex i arbejdet.",
+        "AI hjælper med at accelerere udviklingen af AI-produkter.",
+        "Værktøjerne samler intelligens på tværs af engineering og operations.",
+        "ChatGPT Work bruges til at centralisere operationel viden."
+      ],
+      "betydning": "Du får hurtigere og mere effektiv softwareudvikling, når virksomheder som RingCentral bruger AI til at strømline deres processer.",
+      "pointer": [
+        "RingCentral bruger ChatGPT Work og Codex.",
+        "AI fremskynder produktudvikling internt.",
+        "Centraliseret viden hjælper teams.",
+        "Ingeniør- og driftsafdelinger arbejder tættere."
+      ],
+      "side": "artikel/dc35058bee54bda2.html"
+    },
     {
       "titel": "AI coding startup Cognition reportedly already in talks to raise at $40B valuation",
       "link": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
@@ -13,8 +177,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Cognition i snak om kæmpe værdispring",
       "resume_da": "AI-firmaet Cognition, der står bag Devin, forhandler en ny investeringsrunde, som kan hæve værdien til 40 milliarder dollars.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -29,8 +192,6 @@
           "tekst": "Devin er ikke tænkt som erstatning for mennesker, forklarer Wu. Agenten overtager kedeligt programmeringsarbejde, som mange udviklere hader: at opdatere gammel software eller flytte apps mellem platforme. Det er netop den slags opgaver, der gør Devin populær i store virksomheder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "40 mia. dollars",
@@ -49,6 +210,7 @@
           "label": "månedlig vækst i virksomheders brug af Devin"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Cognition hævede 1 milliard dollars i maj til en værdi af 26 milliarder dollars.",
         "Ny runde kan værdisætte firmaet til mindst 40 milliarder dollars.",
@@ -64,14 +226,16 @@
         "Indtægterne vokser voldsomt – 50 procent om måneden.",
         "Kunder inkluderer Mercedes-Benz, NASA og Goldman Sachs."
       ],
-      "navngivet": true,
       "billedmotiv": "En flyttekasse mærket '$40 mia.' står ved siden af en robotarm med et prisskilt, der viser '$492 mio.'",
+      "kat_ai": true,
+      "prio": 7,
+      "navngivet": true,
       "side": "artikel/fedb51cc07b1d84a.html"
     },
     {
       "titel": "As AI safety concerns mount, three pioneers make the case for staying open",
       "link": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
-      "resume": "At Ai4, three of the world's most respected AI experts—Geoffrey Hinton, Fei-Fei Li, and Andrew Ng—debated regulation, open-source access, and how America can compete as China advances in Asia.",
+      "resume": "At Ai4, three of the world's most respected AI experts — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — debated regulation, open source access, and how America can compete as China advances in Asia.",
       "dato": "2026-08-12T17:51:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Samfund & etik",
@@ -79,8 +243,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Hinton, Li og Ng: Hold AI åben",
       "resume_da": "Tre AI-pionerer argumenterer for åbne modeller trods sikkerhedsbekymringer. De er uenige om vejen, men enige om at undgå monopoler.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Debatten",
@@ -99,9 +262,8 @@
           "tekst": "Hinton mener, at AI vil øge produktivitet og forbedre uddannelse og sundhed. Han advarer mod at overlade beslutningerne til Elon Musk og Mark Zuckerberg. Ng håber, at USA vil fremme åben AI for at bevare blød magt. Spørgsmålet er, om åbenhed kan kombineres med sikkerhed – og hvem der får mest indflydelse på den fremtidige teknologi."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Geoffrey Hinton modtog Nobelprisen og er en af verdens førende AI-forskere.",
         "Fei-Fei Li er CEO og medstifter af World Labs.",
@@ -119,6 +281,8 @@
         "Li ønsker nuancering i åbenhedsdebatten."
       ],
       "billedmotiv": "Tre nøgler hænger på separate kroge, men en fælles kæde binder dem sammen, hvor en åben hængelås ligger løst ved siden af.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/b77f0ff8e5502479.html"
     },
     {
@@ -132,8 +296,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Thrive rejser 2 milliarder med OpenAI i ryggen",
       "resume_da": "Thrive Holdings får nye penge til at købe firmaer og indføre AI. OpenAI er medejer og sender medarbejdere i praktik.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Pengene bag",
@@ -152,8 +315,6 @@
           "tekst": "En del af de nye penge går til en tredje platform: hjælp til godkendelse og drift af fysiske byggerier som datacentre og hospitaler. AI skal lette papirarbejde, ikke erstatte feltfolk eller underskrifter. Målet er hurtigere og billigere infrastruktur."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2 milliarder dollars",
@@ -176,6 +337,7 @@
           "label": "hurtigere support-sager"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Thrive Holdings er en spinout af Thrive Capital, en stor OpenAI-investor.",
         "OpenAI fik ejerandel i Thrive Holdings i december 2025.",
@@ -193,6 +355,8 @@
         "Ny satsning på fysisk infrastruktur med AI."
       ],
       "billedmotiv": "Et rør med '$2 mia.'-mærkat, hvorfra to små robotter kigger ud, mens en åben lommebog ligger ved siden af.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/2fd40c918be85521.html"
     },
     {
@@ -206,8 +370,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Automattic's Mesh CRM klar til Android",
       "resume_da": "Automattic's personlige CRM-app Mesh er nu tilgængelig på Android med split-screen og widgets. Appen hjælper dig med at holde styr på dine kontakter.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -226,8 +389,6 @@
           "tekst": "Mesh er gratis op til **1.000 kontakter**, og betalte lag giver ubegrænset adgang. Automattic overvejer en samlet abonnement med Beeper, men intet er meldt ud endnu. Dine data bruges ikke til reklamer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "70%",
@@ -238,6 +399,7 @@
           "label": "kontakter er gratis"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Mesh er nu tilgængelig på Android via Google Play til telefoner, tablets og foldables.",
         "Support for split-screen, pop-up-visninger og tastaturgenveje på Android.",
@@ -253,6 +415,8 @@
         "AI-funktioner er på vej til at hjælpe med relationer.",
         "Abonnement giver ubegrænset adgang."
       ],
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/667e84b17d073839.html"
     },
     {
@@ -266,8 +430,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Data-nølere bremser AI-agenter hos virksomhederne",
       "resume_da": "Ny undersøgelse viser, at AI kun får adgang til under halvdelen af virksomhedsdata. Data-ledere klarer sig markant bedre.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Så lidt data",
@@ -282,8 +445,6 @@
           "tekst": "Inden for to år regner **100 %** af virksomhederne med at bruge AI-agenter, og **69 %** forventer at bruge dem i stor stil. Ifølge analysefirmaet Gartner vil AI-agenter stå for halvdelen af alle forretningsbeslutninger i 2027. Derfor haster det med at få ryddet op i de gamle datasystemer, lyder konklusionen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "45 %",
@@ -294,6 +455,7 @@
           "label": "af data-ledere stoler på deres AI-agenters beslutninger"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "AI har i gennemsnit kun adgang til 45 % af virksomhedernes data.",
         "Hos data-nølere falder adgangen til 30 % eller mindre.",
@@ -310,6 +472,8 @@
         "Gamle systemer bremser agenter",
         "Fremtiden kræver mere dataadgang"
       ],
+      "kat_ai": true,
+      "prio": 4,
       "navngivet": true,
       "side": "artikel/afc23a12a580d45a.html"
     },
@@ -322,10 +486,9 @@
       "kategori": "Lanceringer",
       "foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
-      "rubrik": "Sandbar-chef: Fremtiden er stemmen i din ring",
-      "resume_da": "Startup'en Sandbar bag Stream-ringen har rejst 36 millioner dollars og satser på, at stemmen er nøglen til AI-enheder, du selv styrer.",
-      "kat_ai": true,
-      "prio": 5,
+      "rubrik": "Sandbars Mina Fahmi: Stemmen er fremtiden",
+      "resume_da": "Mina Fahmi og Sandbar har rejst 36 millioner dollars til stemme-ringen Stream og satser på, at stemmen er nøglen til AI-bærbare enheder.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ringenes indtog",
@@ -340,8 +503,6 @@
           "tekst": "Fahmi tror på, at stemmen er fremtiden for AI-bærbare enheder, fordi den er naturlig og hurtig. Hvis flere firmaer følger efter, kan vi se en hel bølge af stemme-baserede ringe og smykker i de kommende år. Men spørgsmålet er, om forbrugerne vil give deres fortrolige tanker til endnu en enhed, der lytter med."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "36 mio. dollars",
@@ -352,6 +513,7 @@
           "label": "i serie A-runde fra Adjacent og Kindred"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Sandbar laver stemme-ringen Stream, der optager og opsummerer tanker.",
         "Mina Fahmi er medstifter og CEO for startup'en.",
@@ -367,6 +529,17 @@
         "Ringen skal skille sig ud fra fejlslagne stemme-enheder fra fortiden.",
         "Investorerne Adjacent og Kindred Ventures tror på startup'ens fremtid."
       ],
+      "kat_ai": true,
+      "prio": 5,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
+          "rubrik": "Sandbar satser på, at stemmeringen Stream kan overleve",
+          "resume_da": "Startup'en Sandbar har rejst 36 millioner dollars til sin stemme-ring Stream. Nu forklarer CEO'en, hvorfor den kan klare sig, hvor andre AI-enheder fejlede.",
+          "foerst_set": "2026-08-12T20:03:12.478372+00:00"
+        }
+      ],
       "navngivet": true,
       "side": "artikel/d4e662e0ffa5f326.html"
     },
@@ -381,8 +554,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Lovable henter 400 millioner dollars og er nu 13,3 milliarder værd",
       "resume_da": "Den svenske AI-virksomhed Lovable har netop fået en kæmpe pose penge hjem og er nu vurderet til 13,3 milliarder dollars. Firmaet bygger software, der selv kan kode hjemmesider og apps.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kæmpe milliardrunde",
@@ -397,8 +569,6 @@
           "tekst": "Lovable investerer også i andre europæiske startups, blandt andet den danske virksomhed Atech, som arbejder på AI-software til at designe hardware. Det viser, at Lovable ikke kun tænker på sig selv, men vil være med til at bygge et helt økosystem i Europa."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "400 mio. dollars",
@@ -413,6 +583,7 @@
           "label": "månedlige besøgende på platformen"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Lovable blev grundlagt i Sverige og er en af Europas største AI-succeser.",
         "Firmaet laver 'vibe-coding'-software, hvor man beskriver, hvad man vil have, og AI'en bygger det.",
@@ -429,8 +600,10 @@
         "Firmaet har 900 millioner månedlige besøgende.",
         "Lovable investerer i danske Atech."
       ],
-      "navngivet": true,
       "billedmotiv": "En sparegris med et svensk flag, der er stablet højt med mønter, og en bærbar computer med et hjerte på skærmen.",
+      "kat_ai": true,
+      "prio": 7,
+      "navngivet": true,
       "side": "artikel/a8dd77df5184aa34.html"
     },
     {
@@ -444,8 +617,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "VideoVerse-opkøb ender i svindelanklager",
       "resume_da": "Et opkøb til en kvart milliard dollar er kollapset, og stifteren er nu anklaget for dokumentfalsk og svindel i flere retssager.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -464,8 +636,6 @@
           "tekst": "Shrivastav er ikke længere direktør, og flere fonde kæmper nu i domstolen i Delaware om at få deres penge. Han har ikke svaret på henvendelser fra TechCrunch. Hans seneste registrerede adresse er på øen Palm Jumeirah i Dubai. Sagen viser, hvor meget opkøb stadig bygger på tillid."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "250 mio. dollar",
@@ -480,6 +650,7 @@
           "label": "krav fra kreditor på et lån taget efter opkøbet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Minute Media annoncerede opkøbet i september 2025 og trak sig i maj 2026.",
         "VideoVerse laver AI-værktøjet Magnifi, der automatisk klipper sportsøjeblikke.",
@@ -496,120 +667,9 @@
         "Långiver fik forfalskede underskrifter og bankudskrifter.",
         "Der mangler titusindvis af millioner dollar."
       ],
-      "side": "artikel/4aad839266449a12.html"
-    },
-    {
-      "titel": "Why Sandbar thinks it’s voice-enabled ring can avoid the AI hardware graveyard",
-      "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
-      "resume": "AI notetaking hardware has taken off over the past couple of years, with credit-card-sized devices, pendants, pins, and even transcribing earbuds all promising to capture your meetings and turn them into summaries and action items. Now, a whole wave of wearables — rings especially — are betting people want to capture stray thoughts and ideas the same way. One of […]",
-      "dato": "2026-08-12T14:22:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-12T20:03:12.478372+00:00",
-      "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
-      "rubrik": "Sandbar satser på, at stemmeringen Stream kan overleve",
-      "resume_da": "Startup'en Sandbar har rejst 36 millioner dollars til sin stemme-ring Stream. Nu forklarer CEO'en, hvorfor den kan klare sig, hvor andre AI-enheder fejlede.",
       "kat_ai": true,
       "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "AI-diktafoner findes i mange former: kort-store enheder, vedhæng, pins og ørepropper, der alle lover at fange møder og lave referater. Nu satser flere på ringe, og Sandbar er blandt dem med Stream, en privat stemme-ring. Virksomheden har hentet **36 millioner dollars** i alt, senest en **23 millioner dollars** serie A-runde fra Adjacent og Kindred Ventures."
-        },
-        {
-          "overskrift": "Hvorfor nu?",
-          "tekst": "Mange tidligere stemme-enheder er døde, fordi de tog kontrollen fra brugeren, siger CEO Mina Fahmi. Sandbars bud er, at folk vil have en enhed, hvor mennesket bestemmer, og hvor privatlivet er i højsædet. Fahmi tror, at lydoptagelse kan blive lige så naturligt som at tage noter, hvis teknologien er diskret og nem at styre."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Spørgsmålet er, om ringen kan undgå at ende på tech-gravpladsen, hvor mange lignende produkter ligger. Sandbar skal bevise, at folk vil bruge en ring til at fange tanker i hverdagen – ikke kun på møder. Med pengene i ryggen og en klar strategi er de klar til at udfordre både etablerede og nye aktører på markedet."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "$36M",
-          "label": "samlet investoreret i Sandbar"
-        },
-        {
-          "tal": "$23M",
-          "label": "i serie A-runde fra Adjacent og Kindred Ventures"
-        }
-      ],
-      "detaljer": [
-        "Sandbar har rejst 36 millioner dollars til sin stemme-ring Stream.",
-        "Serie A-runde på 23 millioner dollars blev ledet af Adjacent og Kindred Ventures.",
-        "Mina Fahmi er medstifter og CEO hos Sandbar.",
-        "Stream er en privat stemme-ring, der skal fange tanker og ideer.",
-        "Tidligere AI-hardware fejlede ifølge Fahmi, fordi brugeren mistede kontrollen.",
-        "Artiklen er fra TechCrunchs Equity-podcast med Rebecca Bellan."
-      ],
-      "betydning": "Du får snart en diskret ring, der husker dine ideer, men du skal stole på, at den respekterer dit privatliv, før du lægger dine tanker i den.",
-      "pointer": [
-        "Sandbar har fået 36 mio. dollars til stemmeringen Stream.",
-        "Fahmi mener, kontrol er nøglen til succes.",
-        "Stream skal fange tanker, ikke kun møder.",
-        "Ringen skal undgå AI-hardware-gravpladsen."
-      ],
-      "side": "artikel/d1915a50c5cc392a.html"
-    },
-    {
-      "titel": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-      "link": "https://knownagents.com/insights",
-      "resume": "Article URL: https://knownagents.com/insights Comments URL: https://news.ycombinator.com/item?id=49272569 Points: 169 # Comments: 108",
-      "dato": "2026-08-12T14:02:46+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-12T20:03:12.478372+00:00",
-      "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
-      "rubrik": "Bots udgiver sig for AI – og angriber din hjemmeside",
-      "resume_da": "Ny rapport viser, at ukendte aktører masseudfører sårbarhedsscanninger på nettet, mens de udgiver sig for at være kendte AI-bots som ClaudeBot. Det kan ramme både virksomheder og private hjemmesider.",
-      "kat_ai": true,
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Det sker",
-          "tekst": "En ny opgørelse fra mere end **5.000** hjemmesider viser, at nogen systematisk scanner nettet for svagheder – og forklæder sig som AI-bots som ClaudeBot. Det betyder, at trafikken ikke altid er, hvad den udgiver sig for at være. Spoofing, som det kaldes, kan ramme alle, der har en hjemmeside."
-        },
-        {
-          "overskrift": "Hvem står bag?",
-          "tekst": "Det er uvist, hvem der står bag de falske AI-bots. Rapporten kan kun konstatere, at trafikken hævder at være en kendt agent, men fejler godkendelsen – fx IP-verifikation. De rigtige AI-firmaer som OpenAI og Google har offentliggjort, hvordan deres bots kan genkendes, så hjemmesider kan beskytte sig."
-        },
-        {
-          "overskrift": "Sådan beskytter du dig",
-          "tekst": "Hjemmesider kan blokere uønskede bots med en robots.txt-fil, men effekten varierer. Rapporten måler, hvor meget trafik en agent mister, når den bliver blokeret – fra **0 %** (ingen effekt) til **100 %** (helt væk). Det kan være en god idé at tjekke sine serverlogs for mistænkelig trafik, der ligner AI-bots."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Rapporten opdateres dagligt og dækker både bot-trafik, sikkerhed og henvisninger fra AI-chat som ChatGPT og Perplexity. Den peger på en klar tendens: Internettet bliver i stigende grad et sted, hvor maskiner – ikke mennesker – er de største brugere. Det kræver nye måder at tænke sikkerhed på."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "5.000",
-          "label": "hjemmesider overvåget i rapporten"
-        }
-      ],
-      "detaljer": [
-        "Nogen kører massesårbarhedsscanninger og udgiver sig for at være AI-bots som ClaudeBot.",
-        "Spoofing opdages, når trafik ikke kan bevise sin identitet via IP eller signatur.",
-        "AI-bots bruges både til at træne modeller, hente data til assistenter og vise svar i søgemaskiner.",
-        "Robots.txt kan blokere bots, men effekten måles fra 0 til 100 procent.",
-        "Rapporten bygger på data fra 5.000+ hjemmesider og opdateres dagligt.",
-        "Kun agenter med offentliggjort godkendelsesmetode kan måles for spoofing."
-      ],
-      "betydning": "Hvis du har en hjemmeside, kan falske AI-bots bruge din server til ondsindede formål – eller spilde dine ressourcer. Tjek dine logs og bloker mistænkelig trafik, før det bliver et problem.",
-      "pointer": [
-        "Falske AI-bots scanner nettet for svagheder.",
-        "ClaudeBot bliver brugt som dække.",
-        "Over 5.000 hjemmesider overvåges.",
-        "Robots.txt kan hjælpe, men ikke altid."
-      ],
-      "navngivet": true,
-      "side": "artikel/0f1dc2521dd594b1.html"
+      "side": "artikel/4aad839266449a12.html"
     },
     {
       "titel": "Twitch streamers can now opt out from training Amazon’s AI",
@@ -622,8 +682,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Twitch-streamere kan nu takke nej til Amazons AI-træning",
       "resume_da": "Twitch har lanceret en ny indstilling, så streamere kan forbyde Amazon at bruge deres indhold til AI-træning.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -638,9 +697,8 @@
           "tekst": "Twitch understreger, at fravalget kun gælder AI-modeller, der genererer tekst, lyd, billeder eller video. Platformen kan stadig bruge dit indhold til andre formål som anbefalinger og automatisk moderering. Streamere, der vil beskytte deres indhold, bør selv finde indstillingen og slå den fra."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Ny indstilling kaldes 'Training for Generative AI' i Twitch-indstillinger.",
         "Fravælgelse dækker streams, VODs, klip, chat og kanaltekster.",
@@ -655,6 +713,18 @@
         "Chat på andre kanaler følger deres valg.",
         "Andre AI-funktioner fortsætter uændret."
       ],
+      "kat_ai": true,
+      "prio": 6,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+          "rubrik": "Twitch-chef: Ingen ville selv vælge AI-træning til",
+          "resume_da": "Mike Minton siger åbent, at platformen gør det automatisk, fordi ingen ville takke ja. Brugerne skal selv aktivt sige nej.",
+          "foerst_set": "2026-08-12T22:26:02.586959+00:00"
+        }
+      ],
+      "billedmotiv": "En mikrofon med et stort rødt overkrydset øje symbol malet på, liggende på et lille podium med en afbryderknap i midten.",
       "side": "artikel/dd46bfe4c4e4d6d4.html"
     },
     {
@@ -668,8 +738,7 @@
       "eget_foerst_set": "2026-08-12T20:03:12.478372+00:00",
       "rubrik": "Guitarfirmaet D’Addario indrømmer AI i reklamevideo",
       "resume_da": "Efter uger med benægtelser indrømmer D’Addario, at Suno-genereret musik blev brugt i en reklame for nye strenge. Firmaet undskylder over for kunderne.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -684,9 +753,8 @@
           "tekst": "Firmaet siger, at de ikke støtter AI-genereret musik, og at de fremover vil kræve, at medarbejdere og kreative partnere oplyser, hvis de bruger generativ AI. De lover også at gennemgå alt indhold mere grundigt. Sagen minder om Fender-CEO’ens kontroversielle udtalelse, hvor han sammenlignede bandmedlemmer med analog AI."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "D’Addario indrømmer brug af Suno Studio til at regenerere et nummer.",
         "Firmaet benægtede i 10 dage, før de rettede deres Instagram-opslag.",
@@ -702,6 +770,8 @@
         "Beviser kom fra Rhett Shull.",
         "Undskyldning nu på Instagram."
       ],
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/0268aeed91a739ed.html"
     },
     {
@@ -823,64 +893,6 @@
       "side": "artikel/618d4dfa5f6ed997.html"
     },
     {
-      "titel": "AI is removing the middle class of software engineering",
-      "link": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-      "resume": "Article URL: https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html Comments URL: https://news.ycombinator.com/item?id=49271994 Points: 539 # Comments: 452",
-      "dato": "2026-08-12T13:20:05+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-12T15:43:22.194634+00:00",
-      "eget_foerst_set": "2026-08-12T15:43:22.194634+00:00",
-      "rubrik": "AI fjerner softwareingeniørens midterklasse",
-      "resume_da": "AI gør dygtige kodere hurtigere og uduelige næsten umulige at ansætte. Kampen om at forstå koden bliver vigtigere end at skrive den.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Koden vokser uhæmmet",
-          "tekst": "I 2026 vågner du op til 7 PR'er, hvoraf den første har +24506 -3938 linjer. Dit team har lavet flere ændringer på en weekend, end de før lavede på flere uger. Folk prompter AI-agenten og åbner en PR uden at forstå, hvad koden gør. Projektet bliver hurtigt så komplekst, at ingen ved længere, hvad der foregår."
-        },
-        {
-          "overskrift": "Gælden kommer bagefter",
-          "tekst": "Teknisk gæld er ikke altid dårlig, men AI gør det nemt at tage genveje. At tilføje databasetabeller tager 10 minutter - at rydde op bagefter kræver planlægning, migration og overvejelser om, hvad der sker, hvis det går galt. Mens du reparerer én dårlig beslutning, er fem nye blevet flettet ind."
-        },
-        {
-          "overskrift": "Lønningerne deler vandene",
-          "tekst": "Gode ingeniører bliver mere værd, fordi AI lader dem arbejde hurtigere med færre folk omkring sig. Dårlige ingeniører bliver dyrere at ansætte, fordi de kan producere enorme mængder kode, som ingen kan overskue. De, der mangler dømmekraft til at vurdere AI'ens forslag, bliver erstattet eller får markant lavere løn."
-        },
-        {
-          "overskrift": "Gælder hele vidensarbejdet",
-          "tekst": "Det samme sker sandsynligvis i andre vidensfag. AI gør de bedste langt mere produktive og de dårlige næsten umulige at ansætte. Tidligere kunne nogen fange en dårlig beslutning, før den gik for vidt. Nu ændrer folk ting hurtigere, end nogen kan følge med til."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "+24506 linjer",
-          "label": "i én PR på en mandag morgen"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "+24506 -3938 linjer i en enkelt PR.",
-        "AI kan generere 20.000 linjer kode på en eftermiddag.",
-        "Ingeniører i London og San Francisco får sekscifrede lønninger.",
-        "Teknisk gæld har eksisteret i årtier, men AI accelererer tempoet.",
-        "Vibe codere risikerer at blive erstattet.",
-        "AI skubber lønninger fra hinanden."
-      ],
-      "betydning": "Hvis du er softwareingeniør, bliver din evne til at forstå og vurdere kode vigtigere end at skrive den. Uden det bliver du hurtigt uerstattelig - eller erstattet.",
-      "pointer": [
-        "AI øger uligheden mellem dygtige og uduelige kodere",
-        "Kompleks kode vokser hurtigere end nogen kan følge med",
-        "At forstå kode bliver vigtigere end at skrive den",
-        "Teknisk gæld er let at skabe, svær at rydde op"
-      ],
-      "billedmotiv": "En udhulet bog rejser sig over en stak visne blade, hvoraf nogle er blevet til gyldne chips med kodelinjer på.",
-      "kat_ai": true,
-      "prio": 7,
-      "navngivet": true,
-      "side": "artikel/e4813eb4076db514.html"
-    },
-    {
       "titel": "AI code-testing startup Blacksmith’s valuation jumps almost 10x in less than a year",
       "link": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/",
       "resume": "Blacksmith says revenue has grown more than tenfold over the past year.",
@@ -891,8 +903,7 @@
       "eget_foerst_set": "2026-08-12T15:43:22.194634+00:00",
       "rubrik": "Blacksmiths værdi eksploderer på under et år",
       "resume_da": "AI-testfirmaet Blacksmith har hentet 45 millioner dollars og er nu vurderet til 550 millioner – næsten ti gange mere end for mindre end et år siden.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Eventyret",
@@ -911,8 +922,6 @@
           "tekst": "Blacksmith er dog ikke alene på markedet. De kæmper mod store spillere som GitHub Actions og cloud-giganterne Amazon, Microsoft og Google. Direktøren siger, at de vil vinde på både hurtighed og pris – og de planlægger allerede at udvide med flere værktøjer til udviklere."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "550 mio. dollars",
@@ -927,6 +936,7 @@
           "label": "kunder på under et år"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Blacksmith blev grundlagt i 2024 og tester software, før det sendes i produktion.",
         "Værdien sprang fra 60 til 550 millioner dollars på mindre end et år.",
@@ -943,89 +953,10 @@
         "Kundetallet firedobledes til over 5.000 virksomheder.",
         "Konkurrerer med giganter som Google og Microsoft."
       ],
-      "navngivet": true,
-      "side": "artikel/618c36a0317edf70.html"
-    },
-    {
-      "titel": "Google’s Pixel Watch 5 dives deeper into AI and health",
-      "link": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
-      "resume": "The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel […]",
-      "dato": "2026-08-12T10:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-11T18:38:03.659308+00:00",
-      "eget_foerst_set": "2026-08-12T15:43:22.194634+00:00",
-      "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
-      "resume_da": "Googles nye Pixel Watch 5 får AI-funktioner, sundhedsovervågning og en prisstigning på 50 dollar.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Google har præsenteret Pixel Watch 5 til **399 dollar**. Uret har fået en hurtigere processor og lidt større batteri, men de store nyheder er software. Prisen er steget med **50 dollar** fra sidste år, og der er også en særlig Steph Curry-udgave."
-        },
-        {
-          "overskrift": "AI på håndleddet",
-          "tekst": "Gemini kan nu bruges offline til simple opgaver som timere og apps, men den er langsommere uden forbindelse. Uret kommer også med et ikon, der viser information som Uber-ETA og træningsdata direkte på skiven. Derudover kan du generere dit eget urdesign med AI."
-        },
-        {
-          "overskrift": "Sundhedsnyheder",
-          "tekst": "Den mest markante funktion er Breathing Emergency Detection, som ringer til alarmcentralen, hvis iltmætningen falder til omkring **83 procent**. Funktionen skal dog godkendes i USA. Der kommer også trends for blodtryk og insulinresistens, men de udkommer først i september og er ikke diagnostiske."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "De nye sundhedsfunktioner kræver mindst en uges data og kommer til både Pixel Watch 5 og ældre modeller. Google siger, at insulinresistens-funktionen er testet mod blodprøver og offentliggjort i tidsskriftet Nature."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "399 dollar",
-          "label": "pris for Pixel Watch 5"
-        },
-        {
-          "tal": "50 dollar",
-          "label": "prisstigning fra sidste år"
-        },
-        {
-          "tal": "83 procent",
-          "label": "iltmætning der udløser alarmopkald"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Pixel Watch 5 har en hurtigere Qualcomm-processor og større batteri.",
-        "Gemini kan bruges offline til at starte timere og apps.",
-        "Uret kan generere AI-skræddersyede urskiver, fx med fede katte.",
-        "Breathing Emergency Detection ringer til alarmcentralen ved iltmangler.",
-        "Funktionen er ikke for folk med kroniske lungesygdomme.",
-        "Blodtryk og insulinresistens-trends kommer i september.",
-        "Insulinresistens-funktionen er valideret i en undersøgelse i Nature."
-      ],
-      "betydning": "Du får et ur, der kan overvåge dit helbred på nye måder, men husk: Funktionerne er trends, ikke diagnostiske værktøjer – og det koster 50 dollar mere end sidste år.",
-      "pointer": [
-        "Pixel Watch 5 satser på software, ikke hardware.",
-        "AI kan nu bruges offline på uret.",
-        "Nyt nødkald ved iltsvigt.",
-        "Sundhedstrends for blodtryk og insulinresistens."
-      ],
       "kat_ai": true,
       "prio": 5,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
-          "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
-          "resume_da": "Google præsenterede onsdag nye Pixel-telefoner, et ur, en AirTag-konkurrent og en stribe AI-funktioner. Blandt nyhederne er tegnsprogs-oversættelse og højere priser.",
-          "foerst_set": "2026-08-12T15:43:22.194634+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-          "rubrik": "Google Pixel 11: Trevor Noah er vært",
-          "resume_da": "Googles event den 12. august byder på Pixel 11, Pixel Fold og Pixel Watch 5 med Trevor Noah som vært.",
-          "foerst_set": "2026-08-11T18:38:03.659308+00:00"
-        }
-      ],
-      "side": "artikel/8da3243e4c605139.html"
+      "navngivet": true,
+      "side": "artikel/618c36a0317edf70.html"
     },
     {
       "titel": "Of course the ChatGPT dog cancer vaccine spawned a startup",
@@ -1174,63 +1105,6 @@
       "side": "artikel/9ebfb3cbe9d9719e.html"
     },
     {
-      "titel": "Company Offering '100% Human-Written, Never AI' Medical Research Is 100% AI",
-      "link": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
-      "resume": "Article URL: https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/ Comments URL: https://news.ycombinator.com/item?id=49267057 Points: 190 # Comments: 45",
-      "dato": "2026-08-12T02:05:42+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-12T08:50:42.634292+00:00",
-      "eget_foerst_set": "2026-08-12T08:50:42.634292+00:00",
-      "rubrik": "Research Gold lover ægte mennesker - men er selv AI",
-      "resume_da": "Research Gold markedsfører sig som 100% menneskeskrevet, men er afsløret som fuldkommen AI-drevet med opdigtede forskere.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Falske eksperter",
-          "tekst": "Research Gold påstår at have otte PhD-metodologer, men flere er opfundet med AI-genererede billeder. Andre eksisterer, men som rigtige forskere, der aldrig har hørt om firmaet."
-        },
-        {
-          "overskrift": "AI-agenten bag",
-          "tekst": "Da journalisten ringede, svarede en AI ved navn Sarah, som nægtede at være AI og insisterede på, at alt var menneskeligt. E-mails var også AI-genererede."
-        },
-        {
-          "overskrift": "Pris og praksis",
-          "tekst": "For en systematisk gennemgang fik journalisten et tilbud på **1.900 dollars** fra en 'PhD-metodolog', som var AI. Firmaet fjernede siden de rigtige navne fra siden."
-        },
-        {
-          "overskrift": "Ond cirkel",
-          "tekst": "Forskeren Sebastian Rowan, der fandt siden, advarer om AI's tendens til at hallucinere - et problem, der gør sådanne tjenester upålidelige, selvom de lyder professionelle."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1.900 dollars",
-          "label": "pris for en systematisk gennemgang fra Research Gold"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Research Gold markedsfører sig som '100% human-written, never AI'.",
-        "De fleste af 'The Team' på siden er opfundne med AI-profilbilleder.",
-        "Rigtige forskere som Jenny Berrio er brugt uden tilladelse.",
-        "AI-assistenten Sarah nægtede at være AI under opkald.",
-        "Firmaet fjernede siden med rigtige navne efter henvendelse.",
-        "Pris for et review: 1.900 dollars for fuld service."
-      ],
-      "betydning": "Du risikerer at betale for forskning udført af AI, der kan levere forkerte resultater med opdigtede kilder - pas på, når du vælger forskningstjenester.",
-      "pointer": [
-        "Research Gold er afsløret som AI-drevet.",
-        "Falske PhD-metodologer opfundet med AI.",
-        "Rigtige forskere bruges uden samtykke.",
-        "Prisen er 1.900 dollars for et review."
-      ],
-      "billedmotiv": "En stak tykke, indbundne bøger med falske rygtitler og et bærbart tastatur, hvor tasterne har små, hvide puslespilsbrikker med et 'AI'-logo i stedet for bogstaver.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/fd0a75ee6e35096e.html"
-    },
-    {
       "titel": "Saber denies replacing Rideshare Stimulator’s writers with ChatGPT",
       "link": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
       "resume": "After a former lead writer claimed Saber \"replaced me with ChatGPT,\" CEO Matthew Karch now claims, \"Neither Saber nor Unigine have replaced any writers with AI,\" for the Rideshare \"Stimulator\" game announced last month, developed by Unigine. The writer, Stella Sacco, says differently, however, posting on Bluesky that \"I was lead writer on this one! […]",
@@ -1283,54 +1157,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/7700ad67b4c00a7e.html"
-    },
-    {
-      "titel": "Go is an ideal language for AI-assisted software engineering",
-      "link": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
-      "resume": "Article URL: https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/ Comments URL: https://news.ycombinator.com/item?id=49261133 Points: 417 # Comments: 491",
-      "dato": "2026-08-11T16:57:09+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-12T06:02:53.653952+00:00",
-      "eget_foerst_set": "2026-08-12T06:02:53.653952+00:00",
-      "rubrik": "Rob Pike: Go er skabt til AI-tiden",
-      "resume_da": "Go-sprogets skaber forklarer, hvorfor det er perfekt til AI-assisteret kodning.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skiftet",
-          "tekst": "Før skrev mennesker koden selv; nu genererer AI det meste. Opgaven er blevet at læse og rette AI'ens kode, ikke at skrive den. Det ændrer, hvad der gør et sprog godt: fra hurtig skrivning til let forståelse."
-        },
-        {
-          "overskrift": "Go's styrker",
-          "tekst": "Go blev designet af Rob Pike og kolleger til teamwork. Det har indbygget formatering, testværktøjer og sikkerhed. Alt er standardiseret, så kode ser ens ud, uanset hvem eller hvad der skrev den. Det gør det nemmere for både mennesker og AI."
-        },
-        {
-          "overskrift": "AI-fordel",
-          "tekst": "AI-modeller laver fejl, når de ændrer kode flere gange. Med Go's klare struktur og værktøjer kan AI arbejde hurtigere og mere præcist. Standardiseringen giver også bedre træningsdata til AI, så den genererer bedre Go-kode."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Go blev skabt for over 20 år siden hos Google af Rob Pike, Robert Griesemer og Ken Thompson.",
-        "Go prioriterer læsbarhed frem for hurtig skrivning af kode.",
-        "Go har indbygget formatering, test og sikkerhedsværktøjer i standardværktøjskæden.",
-        "Standardiseringen gør, at al Go-kode ser ens ud – også den AI har skrevet.",
-        "Ensartet kode gør det lettere at spotte fejl og sikkerhedshuller hurtigt.",
-        "Go's standardbibliotek mindsker behovet for eksterne rammer og giver sammenhæng."
-      ],
-      "betydning": "Du får hurtigere og mere pålidelig AI-hjælp til kodning, hvis du bruger Go – det sparer dig for besvær med at fange og rette AI's fejl.",
-      "pointer": [
-        "AI ændrer koden, men Go er klar.",
-        "Go fokuserer på læsning, ikke skrivning.",
-        "Standardisering gavner både mennesker og AI.",
-        "Rob Pike designede Go til teamwork."
-      ],
-      "billedmotiv": "En kaffekop og et tastatur, hvor hver tast er præcist ens, og en notesbog med ensartede linjer, der gentager samme mønster.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/1b2b7dc6d29e8e51.html"
     },
     {
       "titel": "Accel closes oversubscribed $550M India fund within weeks, 19 months after its last",
@@ -1555,6 +1381,80 @@
       "side": "artikel/ca8161387cd4c9c9.html"
     },
     {
+      "titel": "Google’s Pixel Watch 5 dives deeper into AI and health",
+      "link": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
+      "resume": "The $399 Google Pixel Watch 5 isn't about the hardware. Sure, there's a new satin pyrite case finish, a few new strap colors, and a Steph Curry Special Edition. Under the hood, there's a slightly faster Qualcomm processor and an itty-bitty battery bump. There's a $50 price hike from last year, too, because the Pixel […]",
+      "dato": "2026-08-12T10:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-12T15:43:22.194634+00:00",
+      "eget_foerst_set": "2026-08-12T15:43:22.194634+00:00",
+      "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
+      "resume_da": "Googles nye Pixel Watch 5 får AI-funktioner, sundhedsovervågning og en prisstigning på 50 dollar.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Google har præsenteret Pixel Watch 5 til **399 dollar**. Uret har fået en hurtigere processor og lidt større batteri, men de store nyheder er software. Prisen er steget med **50 dollar** fra sidste år, og der er også en særlig Steph Curry-udgave."
+        },
+        {
+          "overskrift": "AI på håndleddet",
+          "tekst": "Gemini kan nu bruges offline til simple opgaver som timere og apps, men den er langsommere uden forbindelse. Uret kommer også med et ikon, der viser information som Uber-ETA og træningsdata direkte på skiven. Derudover kan du generere dit eget urdesign med AI."
+        },
+        {
+          "overskrift": "Sundhedsnyheder",
+          "tekst": "Den mest markante funktion er Breathing Emergency Detection, som ringer til alarmcentralen, hvis iltmætningen falder til omkring **83 procent**. Funktionen skal dog godkendes i USA. Der kommer også trends for blodtryk og insulinresistens, men de udkommer først i september og er ikke diagnostiske."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "De nye sundhedsfunktioner kræver mindst en uges data og kommer til både Pixel Watch 5 og ældre modeller. Google siger, at insulinresistens-funktionen er testet mod blodprøver og offentliggjort i tidsskriftet Nature."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "399 dollar",
+          "label": "pris for Pixel Watch 5"
+        },
+        {
+          "tal": "50 dollar",
+          "label": "prisstigning fra sidste år"
+        },
+        {
+          "tal": "83 procent",
+          "label": "iltmætning der udløser alarmopkald"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
+          "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
+          "resume_da": "Google præsenterede onsdag nye Pixel-telefoner, et ur, en AirTag-konkurrent og en stribe AI-funktioner. Blandt nyhederne er tegnsprogs-oversættelse og højere priser.",
+          "foerst_set": "2026-08-12T15:43:22.194634+00:00"
+        }
+      ],
+      "detaljer": [
+        "Pixel Watch 5 har en hurtigere Qualcomm-processor og større batteri.",
+        "Gemini kan bruges offline til at starte timere og apps.",
+        "Uret kan generere AI-skræddersyede urskiver, fx med fede katte.",
+        "Breathing Emergency Detection ringer til alarmcentralen ved iltmangler.",
+        "Funktionen er ikke for folk med kroniske lungesygdomme.",
+        "Blodtryk og insulinresistens-trends kommer i september.",
+        "Insulinresistens-funktionen er valideret i en undersøgelse i Nature."
+      ],
+      "betydning": "Du får et ur, der kan overvåge dit helbred på nye måder, men husk: Funktionerne er trends, ikke diagnostiske værktøjer – og det koster 50 dollar mere end sidste år.",
+      "pointer": [
+        "Pixel Watch 5 satser på software, ikke hardware.",
+        "AI kan nu bruges offline på uret.",
+        "Nyt nødkald ved iltsvigt.",
+        "Sundhedstrends for blodtryk og insulinresistens."
+      ],
+      "kat_ai": true,
+      "prio": 5,
+      "side": "artikel/8da3243e4c605139.html"
+    },
+    {
       "titel": "Brad Lightcap, OpenAI’s longtime COO, is leaving to ‘start something new’",
       "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
       "resume": "One of OpenAI's longest-serving executives is headed out the door, although the longtime COO told staff that he was \"excited to help you all advance the mission from a different vantage point.\"",
@@ -1736,6 +1636,68 @@
       "side": "artikel/a3990db1706fbc22.html"
     },
     {
+      "titel": "Made by Google 2026: all the Pixel news and announcements",
+      "link": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+      "resume": "Google has revealed a bunch of new Pixel devices ahead of its Made by Google event. The colorful Pixel 11 lineup comes with upgraded cameras and performance, with the Pro models offering a built-in LED ring that lights up for Google’s Gemini AI and other features. Google also showed off its next-gen Pixel Fold featuring […]",
+      "dato": "2026-08-11T13:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-11T18:38:03.659308+00:00",
+      "eget_foerst_set": "2026-08-11T18:38:03.659308+00:00",
+      "rubrik": "Google løfter sløret for Pixel 11: Det får du",
+      "resume_da": "Google har meldt en hel stribe nye Pixel-enheder ud, herunder fire telefoner og et ur, inden Made by Google-showet i august.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "De nye telefoner",
+          "tekst": "Google har nu officielt præsenteret Pixel 11, Pixel 11 Pro, Pixel 11 Pro XL og Pixel 11 Pro Fold. Alle fire modeller får forbedrede kameraer, den nye Tensor G6-chip og nye software-tricks som Magic Capture og bedre AI-funktioner. De kommer i butikkerne den 20. august, og Pixel 11 kan forudbestilles allerede nu."
+        },
+        {
+          "overskrift": "Priserne",
+          "tekst": "Den helt almindelige Pixel 11 koster fra **899 dollars** (cirka 6.200 kroner), mens Pro-modellen løber op i 1.099 dollars og Pro XL i 1.299 dollars. Den store foldbare model, Pro Fold, er dyrest med en pris på 1.899 dollars. Pixel Watch 5 fås i to størrelser: 41 mm til 399 dollars og 45 mm til 429 dollars."
+        },
+        {
+          "overskrift": "Show og gæster",
+          "tekst": "Google holder sit store Made by Google-arrangement den 12. august, hvor komikeren Trevor Noah er vært. Han får selskab af kendte navne som basketballstjernen Stephen Curry og podcasteren Alex Cooper. I år lægger Google ekstra vægt på skabere med en ny Creator Suite, der giver værktøjer som teleprompter og mikrofonindstillinger direkte i kamera-appen."
+        },
+        {
+          "overskrift": "Andet nyt",
+          "tekst": "Ud over telefonerne præsenterede Google også Pixel Watch 5 med bedre GPS og en helt ny Pixel Tag, der skal hjælpe dig med at finde dine ting. Den kommer mere end to år efter, Google lancerede sit eget netværk til at spore enheder. Pro-modellerne får også en indbygget LED-ring, der lyser op for AI-funktioner."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "899 dollars",
+          "label": "for basis Pixel 11"
+        },
+        {
+          "tal": "1.899 dollars",
+          "label": "for foldable Pixel 11 Pro Fold"
+        }
+      ],
+      "detaljer": [
+        "Fire nye Pixel-telefoner blev annonceret: 11, 11 Pro, 11 Pro XL og Pro Fold.",
+        "Alle modeller får Tensor G6-chip og forbedrede kameraer.",
+        "Pixel 11 Pro-modellerne har LED-ring til AI-funktioner.",
+        "Pixel Watch 5 fås i 41 mm til 399 dollars og 45 mm til 429 dollars.",
+        "Pixel Tag er en ny tracker-enhed fra Google.",
+        "Maker-arrangementet finder sted 12. august med Trevor Noah som vært.",
+        "Telefonerne sender 20. august, forudbestilling er åben nu."
+      ],
+      "betydning": "Du kan nu vælge mellem fire nye Pixel-telefoner, der alle er en anelse dyrere end sidste år, men til gengæld byder på hurtigere chip og bedre kamera.",
+      "pointer": [
+        "Pixel 11-serien er officiel med fire nye telefoner.",
+        "De koster fra 899 dollars og sender 20. august.",
+        "Trevor Noah er vært på Google-arrangementet i august.",
+        "Pixel Watch 5 og Pixel Tag præsenteres også i år."
+      ],
+      "billedmotiv": "En stak telefoner stablet med et lille ur ovenpå, alle med glødende ringe omkring kameralinserne, og et prisskilt hængende fra urets rem.",
+      "side": "artikel/f3ec5949a23f5e05.html"
+    },
+    {
       "titel": "Apple could help you prove your iPhone photos aren’t deepfakes",
       "link": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
       "resume": "Apple is seemingly developing an iOS feature that can verify when a photograph was taken using an iPhone camera. 9to5Mac reports that the iOS 27 beta 5 includes code references for an \"Apple Reference Image\" system that can embed provenance metadata into iPhone photographs at the point of capture - enabling users to prove where […]",
@@ -1902,122 +1864,55 @@
       "side": "artikel/636a0618aace15d2.html"
     },
     {
-      "titel": "As AI eats the web, the internet’s collective memory is disappearing",
-      "link": "https://thewalrus.ca/google-search-is-dying/",
-      "resume": "Article URL: https://thewalrus.ca/google-search-is-dying/ Comments URL: https://news.ycombinator.com/item?id=49250836 Points: 919 # Comments: 962",
-      "dato": "2026-08-10T22:36:30+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-11T11:13:03.525164+00:00",
-      "eget_foerst_set": "2026-08-11T11:13:03.525164+00:00",
-      "rubrik": "Google æder nettet – nu forsvinder internettets hukommelse",
-      "resume_da": "AI ændrer måden, vi søger på nettet, og får internettets samlede hukommelse til at forsvinde. Eksperter advarer om konsekvenserne.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "The Walrus og Google er midt i en bekymrende udvikling: AI æder sig gennem nettet og gør det sværere at finde originale kilder. Debatten raser på Hacker News, hvor indlægget har fået **886 point** og **897 kommentarer** – tydeligt tegn på, at mange er bekymrede for, hvad der sker med internettets fælles hukommelse, når AI overtager søgningen."
-        },
-        {
-          "overskrift": "Hvad betyder det for dig?",
-          "tekst": "Når AI i stigende grad leverer svar direkte, risikerer du at miste adgangen til de originale artikler, debatter og sider, der udgør nettes historie. **Google** og andre tjenester prioriterer AI-genereret indhold, hvilket kan gøre det sværere for dig at finde pålidelige kilder og selv vurdere informationen. Det handler om, hvordan du fremover søger og stoler på det, du læser online."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "886",
-          "label": "point på Hacker News-tråden"
-        },
-        {
-          "tal": "897",
-          "label": "kommentarer på Hacker News-tråden"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "AI æder sig gennem nettet og gør originale kilder sværere at finde.",
-        "Google er nævnt som central aktør i udviklingen.",
-        "The Walrus har skrevet artiklen om søgningens død.",
-        "Debatten på Hacker News viser stor bekymring.",
-        "Internettets kollektive hukommelse er truet af AI-genereret indhold."
-      ],
-      "betydning": "Du risikerer at miste adgangen til originale kilder og debatter, når AI overtager søgningen – så bliv kritisk over for det, du finder online.",
-      "pointer": [
-        "AI æder nettet og truer originalt indhold.",
-        "Google er midt i udviklingen mod AI-søgning.",
-        "Mange på Hacker News er bekymrede.",
-        "Internettets kollektive hukommelse er i fare."
-      ],
-      "billedmotiv": "Et gammelt, støvet leksikon med en hånd, der flår siderne ud, og en tom skærm der kun viser en forstørrelsesglas-ikon.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/a0494395c336fd6c.html"
-    },
-    {
-      "titel": "How Claude marks AI-generated content",
-      "link": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
-      "resume": "Article URL: https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content Comments URL: https://news.ycombinator.com/item?id=49250109 Points: 441 # Comments: 404",
-      "dato": "2026-08-10T21:36:56+00:00",
-      "kilde": "Hacker News: AI",
+      "titel": "Anthropic says it will watermark text generated by its AI models",
+      "link": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
+      "resume": "Anthropic will extend support for watermarking AI generations for older models as well.",
+      "dato": "2026-08-11T12:13:47+00:00",
+      "kilde": "TechCrunch AI",
       "kategori": "Politik & jura",
-      "foerst_set": "2026-08-11T11:13:03.525164+00:00",
-      "eget_foerst_set": "2026-08-11T11:13:03.525164+00:00",
-      "rubrik": "Claude får usynlige vandmærker i tekster",
-      "resume_da": "AI-virksomheden Anthropic markerer fremover alt indhold fra Claude med usynlige vandmærker og digitale signaturer – for at leve op til nye EU-krav.",
-      "brief": "",
+      "foerst_set": "2026-08-11T14:47:12.489521+00:00",
+      "eget_foerst_set": "2026-08-11T14:47:12.489521+00:00",
+      "rubrik": "Anthropic vandmærker al tekst fra Claude",
+      "resume_da": "Anthropic indbygger usynlige vandmærker i AI-tekst fra Claude for at opfylde EU-regler. Vandmærket følger med, når du kopierer og indsætter.",
+      "kat_ai": true,
+      "prio": 5,
       "sektioner": [
         {
           "overskrift": "Det er sket",
-          "tekst": "Anthropic har skrevet under på EU's adfærdskodeks for gennemsigtighed om AI-genereret indhold. Fra **2. august 2026** skal alle nye Claude-modeller kunne markere deres output med det samme. Det gælder både tekst, billeder og andre filtyper, og ordningen dækker hele verden – ikke kun EU."
+          "tekst": "Anthropic meddeler, at alle modeller frigivet efter **2. august** automatisk får indbygget teknologi, der vandmærker både tekst og filer. Vandmærket lægges på modelniveau, så det er der, uanset om du bruger Claude via app, API eller andre produkter som Claude Code og Claude Tag."
+        },
+        {
+          "overskrift": "Reglen bag",
+          "tekst": "Baggrunden er EU's AI-forordning, hvis regler trådte i kraft i starten af august. Den kræver, at AI-virksomheder markerer indhold, så andre systemer kan genkende det. For filer bruger Anthropic standarden **C2PA**. Også Google, OpenAI, Meta og Microsoft har lovet at følge koden."
         },
         {
           "overskrift": "Sådan virker det",
-          "tekst": "Claude lægger et usynligt vandmærke ind i al tekst, som ikke kan ses med det blotte øje og ikke ændrer kvaliteten. Filer som .png og .jpg får en digital signatur efter C2PA-standarden. Vandmærket følger med teksten, når den kopieres, og kan overleve en del redigering."
+          "tekst": "Vandmærket er en del af selve teksten og følger med, når du kopierer og indsætter. Det kan overleve nogle former for redigering. Men hvor meget skal man ændre for at fjerne det? Det har TechCrunch spurgt Anthropic om, men de har ikke svaret endnu."
         },
         {
-          "overskrift": "Begrænsningerne",
-          "tekst": "Et vandmærke er ikke et bevis. Mangler et mærke, kan indholdet sagtens være AI-genereret – for eksempel hvis teksten er stærkt omskrevet, meget kort eller lavet af en ældre model. Det kan heller ikke dokumentere, hvem der oprindeligt skrev teksten, hvis Claude kun har rettet eller oversat."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Anthropic arbejder på at gøre mærkerne lette at opdage for alle – både brugere og tredjeparter – og lover at offentliggøre teknisk dokumentation. Ældre modeller får også mærkning i en overgangsperiode. Virksomheden råder virksomheder til selv at vurdere, hvad EU-reglerne kræver af deres egne produkter."
+          "overskrift": "Presset øges",
+          "tekst": "Flere platforme skynder sig at vandmærke AI-indhold efter brugerklager og juridiske problemer. For eksempel markerede musikplatformen **Suno** i sidste uge sine numre, og nyhedsbrevtjenesten Substack samarbejder med Pangram for at flagge AI-genereret indhold."
         }
       ],
-      "noegletal": [
-        {
-          "tal": "2. august 2026",
-          "label": "dato, hvor nye Claude-modeller skal have mærkning"
-        }
-      ],
+      "brief": "",
       "figurer": [],
+      "noegletal": [],
       "detaljer": [
-        "Vandmærker indlejres i tekst og kan følge med ved kopiering.",
-        "Filer får en signeret metadata efter C2PA-standarden.",
-        "Mærkning gælder på tværs af Claude, API, Claude Code og andre platforme.",
-        "Cloud-partnere som AWS og Google Cloud er også omfattet.",
-        "Manglende mærke betyder ikke, at indholdet ikke er AI-genereret.",
-        "Tunge redigeringer og oversættelser kan fjerne eller svække mærket."
+        "Alle Anthropic-modeller frigivet efter 2. august får vandmærker.",
+        "Vandmærket følger med tekst, der kopieres og indsættes andre steder.",
+        "For filer bruger Anthropic C2PA-standardens åbne teknologi.",
+        "Vandmærkerne gælder produkter som Claude, Claude Code og Claude Cowork.",
+        "EU's AI-forordning kræver markering af AI-genereret indhold.",
+        "Suno, Substack, Google og OpenAI arbejder også med vandmærker."
       ],
-      "betydning": "Du kan fremover tjekke, om en tekst eller fil er lavet med Claude – men du kan ikke regne med, at alt uden mærke er menneskeskabt.",
+      "betydning": "Når du læser tekst fra Claude andre steder, kan du nu få svært ved at vide, om et menneske skrev den – vandmærket er der, men usynligt for dig.",
       "pointer": [
-        "Claude mærker alt AI-indhold fra 2026.",
-        "Skjulte vandmærker i tekst er usynlige.",
-        "Mærker er ikke 100 % pålidelige.",
-        "Anthropic vil offentliggøre opdagelsesværktøjer senere."
+        "EU-regler tvinger AI-virksomheder til at vandmærke indhold.",
+        "Anthropic indbygger vandmærker i alle nye modeller.",
+        "Vandmærket følger med ved kopiering og indsættelse.",
+        "Suno og Substack gør det samme efter pres."
       ],
-      "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
-          "rubrik": "Anthropic vandmærker AI-tekst efter EU-regler",
-          "resume_da": "Anthropic indfører usynlige vandmærker i tekst fra Claude for at leve op til EUs AI-lov. Vandmærket følger med, når du kopierer teksten.",
-          "foerst_set": "2026-08-11T14:47:12.489521+00:00"
-        }
-      ],
-      "billedmotiv": "En usynlig blækpen, der skriver på papir, hvor bogstaverne kun kan ses under et forstørrelsesglas, og en frimærke med digital signatur.",
-      "side": "artikel/60f27f5199bfbe03.html"
+      "side": "artikel/387a273ab49a595d.html"
     },
     {
       "titel": "Towards an Argumentative Foundation for Evaluative AI",
@@ -3256,54 +3151,6 @@
       "side": "artikel/b5e0104f574c505d.html"
     },
     {
-      "titel": "As AI-led attacks multiply, OpenAI launches a new cyber model",
-      "link": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
-      "resume": "OpenAI is expanding its AI cybersecurity defense program Daybreak, and rolling out a new cyber-trained AI model with it.",
-      "dato": "2026-08-10T23:56:15+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-11T04:53:48.481756+00:00",
-      "eget_foerst_set": "2026-08-11T04:53:48.481756+00:00",
-      "rubrik": "OpenAI udvider cyberforsvar med nyt AI-værktøj",
-      "resume_da": "OpenAI lancerer ny AI-model til cyberforsvar i to niveauer. Den skal hjælpe virksomheder mod AI-drevne angreb.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har opgraderet sin cyberforsvarstjeneste Daybreak med en helt ny AI-model, GPT-5.6-Cyber. Tjenesten har nu to niveauer: Blue og Red. Blue er det mere grundlæggende og giver adgang til blandt andet malware-analyse og håndtering af sikkerhedshændelser. Red er det avancerede niveau med værktøjer til sikkerhedstest og sårbarhedsforskning."
-        },
-        {
-          "overskrift": "Kun for udvalgte",
-          "tekst": "Den nye model er kun tilgængelig for en lille gruppe betroede kunder, herunder Accenture, IBM, Crowdstrike og Cloudflare. Det sker efter kritik af, at AI-modeller kan misbruges. Tidligere har OpenAI haft stramme begrænsninger på sine mest avancerede modeller, men nu åbner de altså langsomt op for særligt udvalgte partnere."
-        },
-        {
-          "overskrift": "Kritik og muligheder",
-          "tekst": "AI-drevne angreb bliver stadig mere almindelige, og OpenAI bruger det som argument for, at forsvarssiden har et snævert vindue at forberede sig i. Kritikere peger dog på, at truslerne også fungerer som en god marketingmulighed for AI-laboratorierne. Virksomheder vil alligevel hellere købe beskyttelse hos dem, der kender risiciene indefra."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI lancerer GPT-5.6-Cyber, bygget på GPT-5.6 Sol og kun i Red-niveauet.",
-        "Daybreak har nu to niveauer: Blue for de fleste og Red for specialiserede.",
-        "Red-niveauet giver adgang til værktøjer til sikkerhedstest og sårbarhedsforskning.",
-        "De første partnere er Accenture, IBM, Crowdstrike og Cloudflare.",
-        "AI-modeller har været involveret i flere hackinger, herunder af Hugging Face.",
-        "Anthropic har også lanceret en cyberfokuseret model kaldet Mythos."
-      ],
-      "betydning": "Du kan snart få hjælp fra AI til at beskytte din virksomhed mod hackere, men du skal være blandt de få udvalgte for at få adgang til de stærkeste værktøjer.",
-      "pointer": [
-        "OpenAI lancerer ny AI-model til cyberforsvar.",
-        "Tjenesten Daybreak har nu to niveauer: Blue og Red.",
-        "GPT-5.6-Cyber er kun for udvalgte kunder.",
-        "AI-modeller bruges stadig mere til angreb."
-      ],
-      "billedmotiv": "En telefonbog med en udtrækkelig skjold, hvor et gittermønster af blade er indlejret, og en nøgle stikker op af siden, pegende fremad.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/48cf888df4048017.html"
-    },
-    {
       "titel": "How Zapier transformed core marketing processes with ChatGPT Work",
       "link": "https://openai.com/index/zapier",
       "resume": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
@@ -3400,8 +3247,7 @@
       "eget_foerst_set": "2026-08-10T22:21:05.749981+00:00",
       "rubrik": "Meta satser på åbne AI-modeller for at hamle op",
       "resume_da": "Meta frigiver den åbne model Muse Glimmer og lover åbne vægte i Muse Spark 1.2. Zuckerberg vil udfordre OpenAI og Anthropic.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nye modeller",
@@ -3420,14 +3266,13 @@
           "tekst": "Meta satser på, at åbenhed og lokale modeller bliver fremtiden, og at kunderne vælger dem fra for at spare penge og bevare kontrol. Men det er endnu uvist, om det kan rette op på Metas tabte terræn. De næste måneder vil vise, om udviklerne tager godt imod de åbne vægte."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "30 mia.",
           "label": "parametre i Musse Glimmer"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Muse Glimmer har 128.000 tokens kontekstvindue som standard.",
         "Muse Spark blev lanceret i april som lukket model.",
@@ -3443,6 +3288,8 @@
         "Kinesiske modeller presser på"
       ],
       "billedmotiv": "To åbne bøger, hvor den ene har lås på og den anden er tom, står på en vægt, der tipper mod den åbne.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/203504a117757f2a.html"
     },
     {
@@ -4863,202 +4710,6 @@
       "side": "artikel/89dc1c4799e71c11.html"
     },
     {
-      "titel": "Google plans to kill Assistant on your phone on September 4",
-      "link": "https://arstechnica.com/ai/2026/08/google-plans-to-kill-assistant-on-your-phone-on-september-4/",
-      "resume": "Assistant will disappear, leaving only Gemini for voice control in the coming weeks.",
-      "dato": "2026-08-05T15:30:02+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "eget_foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "rubrik": "Google slukker Assistant på din telefon i september",
-      "resume_da": "Google dropper Assistant til fordel for AI-chatboten Gemini på Android-telefoner fra 4. september. Gamle enheder og visse lande kan få en pause.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Google har sat en dato på: Den 4. september begynder firmaet at lukke ned for Assistant på Android-telefoner. Processen kan tage flere uger, så nogle brugere kan nå at bruge Assistant lidt endnu. Vi vidste, det kom, men det gør det ikke mindre trist for dem, der holder af den gamle hjælper."
-        },
-        {
-          "overskrift": "Hvad rammer det?",
-          "tekst": "Det er ikke kun selve telefonen. Smarture, høretelefoner og biler med Android Auto bliver også tvunget over på Gemini. Google har allerede flyttet de fleste smart-home-enheder. Men TV og biler med Googles eget system er ikke nævnt i mailen – de får først Gemini senere, uden fast dato."
-        },
-        {
-          "overskrift": "Hvem slipper?",
-          "tekst": "Ældre telefoner, der ikke lever op til Geminis krav, kan få lov at beholde Assistant. Det samme gælder brugere i områder, hvor Gemini ikke understøttes. Men for de fleste betyder det, at man skal vænne sig til den nye chatbot eller helt slukke for stemmestyring inden for de næste par måneder."
-        },
-        {
-          "overskrift": "Forskellen mærkes",
-          "tekst": "Assistant var kedelig, men forudsigelig. Gemini er smartere, men kan pludselig køre af sporet eller glemme, at den har adgang til værktøjer. Hurtige kommandoer som 'Hey Google' kan blive mere besværlige. Det er en omvæltning – men det er sådan, fremtiden ser ud."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Assistant lukker på Android-telefoner fra 4. september, men processen kan tage flere uger.",
-        "Smarture, høretelefoner og Android Auto-biler mister også Assistant.",
-        "TV og biler med Google built-in er ikke på listen og får Gemini senere.",
-        "Ældre enheder uden Geminis minimumskrav kan beholde Assistant.",
-        "Brugere i områder uden Gemini-understøttelse kan også få en pause.",
-        "Google har tidligere udskudt lukningen fra slutningen af 2025 til nu."
-      ],
-      "betydning": "Du skal snart vænne dig til at tale med Gemini i stedet for Assistant – eller slukke for stemmestyring helt. Det kan ændre dine daglige rutiner med telefonen og smartenhederne.",
-      "pointer": [
-        "Assistant lukker på telefoner i september.",
-        "Google skifter alle til Gemini.",
-        "Ældre enheder kan få dispensation.",
-        "TV og biler venter på AI."
-      ],
-      "billedmotiv": "En gammel båndoptager med telefonrøret lagt på, og en ny smartphone står klar ved siden af med et støvfnug på skærmen.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/e7e536e0d45d7564.html"
-    },
-    {
-      "titel": "SpaceX spooks investors with debut earnings report",
-      "link": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
-      "resume": "Shares slide in pre-market trading even as group says its quarterly revenues nearly doubled.",
-      "dato": "2026-08-05T13:59:17+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "eget_foerst_set": "2026-08-05T18:09:19.555739+00:00",
-      "rubrik": "SpaceX skræmmer investorer med AI-udgifter",
-      "resume_da": "SpaceX' førsteregnskab skuffede med milliardstore AI-udgifter, og aktien faldt 10 procent. Omsætningen steg dog 92 procent.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Aktien styrtdykker",
-          "tekst": "SpaceX' aktie faldt 10 procent i tidlig handel efter debutregnskabet. Selvom omsætningen nåede **7,8 milliarder dollar** - mod ventede 6,82 milliarder - skræmte kapitaludgifter på næsten **16 milliarder dollar** til AI. Det er dobbelt så meget som kvartalet før, og udgifterne fortsætter mindst to kvartaler endnu."
-        },
-        {
-          "overskrift": "Musk satser stort",
-          "tekst": "Elon Musk vil øge computerkapaciteten fra 2 gigawatt til tæt på 10 gigawatt inden 2027. Hver gigawatt koster titusindvis af milliarder kroner, mest til chips fra Nvidia. Musk lover, at SpaceX' datacentre til sidst vil bruge lige så meget strøm som New York City om sommeren."
-        },
-        {
-          "overskrift": "Lejeaftaler giver penge",
-          "tekst": "SpaceX' AI-indtægter blev mere end tredoblet til **2,56 milliarder dollar** på et kvartal. Det meste kommer fra at leje datacenterkapacitet ud til konkurrenter som Anthropic og Google. Men analytikere advarer om, at det begrænser SpaceX' egne AI-modeller og kan presse marginerne på sigt."
-        },
-        {
-          "overskrift": "Fremtiden usikker",
-          "tekst": "SpaceX lover over **100 milliarder dollar** i årlig omsætning inden årets udgang, og Musk taler om 1 billion dollar i 2030. Men med aktien halveret fra top til 112 dollar, kortede investorer ned. Goldman Sachs forventer dog, at AI-indtægterne vokser 100 gange inden 2030."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "7,8 mia. dollar",
-          "label": "kvartalsomsætning - over forventning"
-        },
-        {
-          "tal": "16 mia. dollar",
-          "label": "AI-kapitaludgifter på ét kvartal"
-        },
-        {
-          "tal": "2,56 mia. dollar",
-          "label": "AI-indtægter - mere end tredoblet"
-        },
-        {
-          "tal": "112 dollar",
-          "label": "aktiekurs efter fald på 10 procent"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Netto-tab var 541 millioner dollar - bedre end ventet 2,12 milliarder.",
-        "Rejste 86 milliarder dollar i børsnotering i juni.",
-        "Aktien er faldet fra top på 225 dollar til 112 dollar.",
-        "Musk vil kun bruge Nvidia-hardware i fremtidige datacentre.",
-        "Starlink-enheden bliver ifølge Musk undervurderet.",
-        "Kortinteressen svarer til 34 procent af de frit handlede aktier.",
-        "Musk overvejer at fusionere SpaceX med Tesla efter 'passende proces'."
-      ],
-      "betydning": "Hvis SpaceX' milliardstore AI-satsning fejler, kan aktien falde yderligere - og det rammer din pensionsopsparing, hvis du har investeret i tech - men også prisen på internettet, hvis Starlink bliver en del af fremtiden.",
-      "pointer": [
-        "SpaceX' AI-udgifter skræmmer investorerne.",
-        "Omsætningen steg 92 procent til 7,8 mia. dollar.",
-        "Aktien faldt 10 procent i tidlig handel.",
-        "Musk lover 10 GW kapacitet inden 2027."
-      ],
-      "billedmotiv": "En sparegris med en brandert og en rumraket, hvor en bærbar computer med et grafiktårn står ved siden af.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/c554b9adf0bdf667.html"
-    },
-    {
-      "titel": "Texas halts data center connections to power grid amid overwhelming demand",
-      "link": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
-      "resume": "Governor who touted Texas as AI “epicenter” pauses data center grid connections.",
-      "dato": "2026-08-04T20:34:28+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-04T22:36:37.175786+00:00",
-      "eget_foerst_set": "2026-08-04T22:36:37.175786+00:00",
-      "rubrik": "Texas sætter datacentre på pause efter AI-boomet",
-      "resume_da": "Texas stopper nye datacentres strømtilslutning efter eksplosiv vækst. Guvernøren kræver nu grundig kontrol, før flere projekter godkendes.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Boomet der blev for meget",
-          "tekst": "Texas har lokket datacentre til med billig jord og skattelettelser, men nu siger guvernør Greg Abbott stop. Han har indført et midlertidigt forbud mod nye strømtilslutninger, indtil alle projekter er gennemgået. Over **1.800** projekter venter på at komme på elnettet – tilsammen svarer de til fem gange Texans rekordstore elforbrug."
-        },
-        {
-          "overskrift": "Elnettet kan ikke følge med",
-          "tekst": "De mange ansøgninger truer stabiliteten i elnettet, siger Abbott. Knap **90 procent** af alle strømansøgninger kommer fra datacentre, og elforbruget kan blive fordoblet inden 2032. Selvom mange projekter aldrig bliver til noget, vil myndighederne nu sikre sig, at kun seriøse aktører får adgang til strøm."
-        },
-        {
-          "overskrift": "Skattelettelser og vand",
-          "tekst": "Datacentrene koster også staten dyrt. Skattelettelser, der skulle være midlertidige, koster nu over **en milliard dollar** om året – og kan koste **3,2 milliarder dollar** i tabt omsætningsskat over to år. Samtidig advarer lokalsamfund om vandmangel, da kraftværkerne bag datacentrene bruger enorme mængder vand."
-        },
-        {
-          "overskrift": "Hullerne i kontrollen",
-          "tekst": "Forbuddet gælder ikke datacentre, der bygger deres egne strømforsyninger på stedet – typisk gas-turbiner. Den slags projekter undgår miljøkontrol og fællesskabets mulighed for at protestere. Flere tech-giganter som Meta, Microsoft og OpenAI bruger denne metode, og Texas fører an med **40 gigawatt** planlagt strøm uden for nettet."
-        },
-        {
-          "overskrift": "Hvad sker der nu?",
-          "tekst": "ERCOT, der driver elnettet, har udskudt processen med at godkende de første datacentre i gruppen kaldet 'Batch Zero'. Det betyder, at mange projekter venter i uvished. Guvernøren vil have klarhed over alt fra strømforbrug til vand og støj, før nye datacentre får grønt lys."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1.800",
-          "label": "datacenterprojekter venter på strøm"
-        },
-        {
-          "tal": "90 %",
-          "label": "af strømansøgninger kommer fra datacentre"
-        },
-        {
-          "tal": "3,2 mia. dollar",
-          "label": "tabt skatteindtægt over to år"
-        },
-        {
-          "tal": "40 GW",
-          "label": "planlagt strøm uden for elnettet"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Texas har erklæret sig som AI-udviklingens epicenter af guvernør Greg Abbott.",
-        "ERCOT-interessentlisten omfatter over 474 gigawatt i strømforbindelsesansøgninger.",
-        "Elforbruget kan fordoble sig frem mod 2032 ifølge prognoser fra ERCOT.",
-        "Data center-skattelettelser koster nu over 1 milliard dollar årligt.",
-        "Naturgasværker brugte 56 milliarder gallon vand i 2024 – datacentre 8 milliarder.",
-        "Forbuddet rammer ikke datacentre med egen gas-strømforsyning.",
-        "Batch Zero-processen hos ERCOT er udskudt på ubestemt tid."
-      ],
-      "betydning": "For dig betyder det, at nye datacentre i Texas ikke får strøm lige foreløbig – og at lokalsamfund kan ånde lettet op, indtil reglerne bliver strammet.",
-      "pointer": [
-        "Texas pauser nye datacentres strømtilslutning.",
-        "1.800 projekter venter på godkendelse.",
-        "Skattelettelser koster milliarder.",
-        "Hullet: egne gasværker går fri."
-      ],
-      "billedmotiv": "En stikkontakt med en prop, der er halvt trukket ud, og en skruenøgle ved siden af.",
-      "kat_ai": true,
-      "prio": 8,
-      "side": "artikel/6176f29427c292b9.html"
-    },
-    {
       "titel": "Third-party cyber evaluations involving OpenAI models",
       "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
       "resume": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
@@ -5530,47 +5181,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/5b3393f6cb74888d.html"
-    },
-    {
-      "titel": "Univé builds an AI-ready workforce",
-      "link": "https://openai.com/index/unive",
-      "resume": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
-      "dato": "2026-07-31T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-07-31T10:21:42.455356+00:00",
-      "eget_foerst_set": "2026-07-31T10:21:42.455356+00:00",
-      "rubrik": "Univé klæder medarbejdere på til AI med ChatGPT",
-      "resume_da": "Det hollandske forsikringsselskab Univé bruger ChatGPT Enterprise til at klæde hele organisationen på til AI – gennem ledelse, ansvarlig styring og medarbejderdreven innovation.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kombinerer ledelse og innovation",
-          "tekst": "Univé har bygget en AI-parat arbejdsstyrke med ChatGPT Enterprise. Virksomheden kombinerer tre ting: ledelsesengagement, ansvarlig styring og idéer fra medarbejderne selv. Det skal sikre, at AI bliver brugt på tværs af hele organisationen og ikke kun i enkelte afdelinger."
-        },
-        {
-          "overskrift": "Medarbejdere driver forandringen",
-          "tekst": "Univé har valgt at lade medarbejderne selv tage ejerskab over de nye værktøjer. Når folk på gulvet foreslår og tester løsninger, bliver forandringen mere konkret. Og med en ansvarlig tilgang til data og governance sikrer man, at udrulningen sker trygt og kontrolleret."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Univé bruger ChatGPT Enterprise til at transformere arbejdet i stor skala.",
-        "Selskabet kombinerer ledelse, governance og medarbejderdrevne initiativer.",
-        "Ansvarlig styring skal sikre tryg og kontrolleret AI-anvendelse."
-      ],
-      "betydning": "Du kan lære af Univés opskrift: Kombiner ledelsesopbakning, klare regler og medarbejderidéer – så bliver AI til en reel arbejdsstyrke, ikke bare et værktøj.",
-      "pointer": [
-        "Univé satser på AI-parat arbejdsstyrke",
-        "Forsikringsselskab bruger ChatGPT Enterprise",
-        "Ledelse og governance i fokus",
-        "Medarbejdere driver innovationen"
-      ],
-      "billedmotiv": "En fil af papirer med en slikhat og en sikkerhedsnål, der stikker op fra toppen, og en lille grøn clips, der holder et par sider sammen.",
-      "kat_ai": true,
-      "prio": 3,
-      "side": "artikel/dc984bc272936378.html"
     },
     {
       "titel": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",

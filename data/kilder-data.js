@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-12T20:03:12.478372+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-08-12T22:26:02.586959+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
+   "i_listen": 16,
    "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Twitch-chef: Ingen ville selv vælge AI-træning til",
+     "dato": "",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+     "side": "",
+     "hvor": "under",
+     "under": "Twitch-streamere kan nu takke nej til Amazons AI-træning"
+    },
+    {
+     "rubrik": "Sandbar satser på, at stemmeringen Stream kan overleve",
+     "dato": "",
+     "foerst_set": "2026-08-12T20:03:12.478372+00:00",
+     "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
+     "side": "",
+     "hvor": "under",
+     "under": "Sandbars Mina Fahmi: Stemmen er fremtiden"
+    },
     {
      "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
      "dato": "",
@@ -32,15 +50,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles Gemini rundede 1 milliard brugere"
-    },
-    {
-     "rubrik": "Anthropic vandmærker AI-tekst efter EU-regler",
-     "dato": "",
-     "foerst_set": "2026-08-11T14:47:12",
-     "link": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får usynlige vandmærker i tekster"
     },
     {
      "rubrik": "Amazons datacenter kan blive USAs største forurener",
@@ -106,7 +115,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Sandbar-chef: Fremtiden er stemmen i din ring",
+     "rubrik": "Sandbars Mina Fahmi: Stemmen er fremtiden",
      "dato": "2026-08-12T16:46:02",
      "foerst_set": "2026-08-12T20:03:12",
      "link": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
@@ -129,15 +138,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-12T20:03:12",
      "link": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures/",
      "side": "artikel/4aad839266449a12.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sandbar satser på, at stemmeringen Stream kan overleve",
-     "dato": "2026-08-12T14:22:00",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
-     "side": "artikel/d1915a50c5cc392a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -176,12 +176,21 @@ window.KILDER_STATUS = {
      "side": "artikel/b8d07c245c74a0b3.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Igor Babuschkin henter 1,1 milliarder dollars til AI-drøm",
+     "dato": "2026-08-11T17:41:22",
+     "foerst_set": "2026-08-11T18:38:03",
+     "link": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+     "side": "artikel/3571ff97a4b1f223.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "Ars Technica AI",
@@ -190,10 +199,6 @@ window.KILDER_STATUS = {
     [
      "MIT Tech Review AI",
      2
-    ],
-    [
-     "Hacker News: AI",
-     1
     ]
    ]
   },
@@ -207,7 +212,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -218,15 +223,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles Gemini rundede 1 milliard brugere"
-    },
-    {
-     "rubrik": "Google Pixel 11: Trevor Noah er vært",
-     "dato": "",
-     "foerst_set": "2026-08-11T18:38:03.659308+00:00",
-     "link": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Pixel Watch 5 satser på AI og helbred"
     },
     {
      "rubrik": "OpenAI mister endnu en topchef",
@@ -292,6 +288,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
+     "dato": "2026-08-12T10:00:00",
+     "foerst_set": "2026-08-12T15:43:22",
+     "link": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
+     "side": "artikel/8da3243e4c605139.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Elon Musks Grok får nu egne AI-kolleger",
      "dato": "2026-08-12T07:58:54",
      "foerst_set": "2026-08-12T12:02:32",
@@ -310,11 +315,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
-     "dato": "2026-08-12T10:00:00",
+     "rubrik": "Google løfter sløret for Pixel 11: Det får du",
+     "dato": "2026-08-11T13:00:00",
      "foerst_set": "2026-08-11T18:38:03",
-     "link": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
-     "side": "artikel/8da3243e4c605139.html",
+     "link": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
+     "side": "artikel/f3ec5949a23f5e05.html",
      "hvor": "forside",
      "under": ""
     },
@@ -331,7 +336,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "Ars Technica AI",
@@ -364,6 +369,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-model hackede sig vej ud af bur"
+    },
+    {
+     "rubrik": "ShieldFont: Ny font skal blokere AI-træning",
+     "dato": "2026-08-12T22:02:25",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kæmpe læk: LiteLLM afslørede tusinders hemmeligheder",
+     "dato": "2026-08-12T21:43:21",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+     "side": "artikel/04a3c04ecceac20c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Twitch giver dig nu valget: Vil du træne Amazons AI?",
+     "dato": "2026-08-12T21:00:30",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+     "side": "artikel/c37950ec573d6143.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic makulerer sjældne bøger – forfattere raser",
@@ -443,33 +475,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T04:14:51",
      "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
      "side": "artikel/529c4767029a6e49.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Suno vandmærker al sin AI-musik",
-     "dato": "2026-08-06T20:17:36",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/",
-     "side": "artikel/dd5c8e3984926826.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic bygger egne chips til Claude",
-     "dato": "2026-08-06T20:03:44",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/",
-     "side": "artikel/24c3982503426d01.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Evo 1 og Evo 2 kan designe nye bakterievira",
-     "dato": "2026-08-06T19:04:57",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses/",
-     "side": "artikel/66cbdc765445c982.html",
      "hvor": "forside",
      "under": ""
     }
@@ -635,6 +640,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
     },
     {
+     "rubrik": "RingCentral bruger ChatGPT til at bygge AI hurtigere",
+     "dato": "2026-08-12T00:00:00",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://openai.com/index/ringcentral",
+     "side": "artikel/dc35058bee54bda2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Sam Altman: Virksomheder sætter AI på arbejde",
      "dato": "2026-08-12T06:00:00",
      "foerst_set": "2026-08-12T15:43:22",
@@ -730,15 +744,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T18:07:29",
      "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
      "side": "artikel/93f793ec8172b713.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "HSP GRUPPE bruger ChatGPT til rådgivning",
-     "dato": "2026-08-07T09:00:00",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://openai.com/index/hsp-gruppe",
-     "side": "artikel/04dbcdd1e1d91c0f.html",
      "hvor": "forside",
      "under": ""
     }
@@ -987,73 +992,13 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Bots udgiver sig for AI – og angriber din hjemmeside",
-     "dato": "2026-08-12T14:02:46",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://knownagents.com/insights",
-     "side": "artikel/0f1dc2521dd594b1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI fjerner softwareingeniørens midterklasse",
-     "dato": "2026-08-12T13:20:05",
-     "foerst_set": "2026-08-12T15:43:22",
-     "link": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-     "side": "artikel/e4813eb4076db514.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Research Gold lover ægte mennesker - men er selv AI",
-     "dato": "2026-08-12T02:05:42",
-     "foerst_set": "2026-08-12T08:50:42",
-     "link": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
-     "side": "artikel/fd0a75ee6e35096e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Rob Pike: Go er skabt til AI-tiden",
-     "dato": "2026-08-11T16:57:09",
-     "foerst_set": "2026-08-12T06:02:53",
-     "link": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
-     "side": "artikel/1b2b7dc6d29e8e51.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google æder nettet – nu forsvinder internettets hukommelse",
-     "dato": "2026-08-10T22:36:30",
-     "foerst_set": "2026-08-11T11:13:03",
-     "link": "https://thewalrus.ca/google-search-is-dying/",
-     "side": "artikel/a0494395c336fd6c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude får usynlige vandmærker i tekster",
-     "dato": "2026-08-10T21:36:56",
-     "foerst_set": "2026-08-11T11:13:03",
-     "link": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
-     "side": "artikel/60f27f5199bfbe03.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "seneste": [],
+   "overlap": []
   }
  ],
  "feeds_fil": {
