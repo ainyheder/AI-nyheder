@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-12T15:47:25.808418+00:00",
+ "opdateret": "2026-08-12T20:08:41.959676+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      3,
      8,
      2,
-     3
+     8
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      9,
      4,
-     4
+     6
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      1,
      3,
      6,
-     2
+     7
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      0,
      4,
      2,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 50,
- "sidevisninger_i_alt": 73,
+ "besoeg_i_alt": 47,
+ "sidevisninger_i_alt": 70,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 49,
-   "visninger": 49
+   "besoeg": 46,
+   "visninger": 46
   },
   {
    "sti": "/koerekort.html",
@@ -357,7 +357,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 48
+   "besoeg": 45
   },
   {
    "fra": "www.google.com",
@@ -369,8 +369,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 48,
-    "visninger": 48
+    "besoeg": 45,
+    "visninger": 45
    },
    {
     "fra": "www.google.com",
@@ -697,7 +697,7 @@ window.LAESERTAL = {
    "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
    "visninger": 2,
-   "rubrik": "Metas Glimmer: AI-assistenten der kører på din egen computer",
+   "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
    "kategori": "Lanceringer",
    "dato": "2026-08-10",
    "henvisere": [
@@ -847,7 +847,7 @@ window.LAESERTAL = {
    "sti": "/artikel/203504a117757f2a.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta satser på åbne AI-modeller mod OpenAI",
+   "rubrik": "Meta satser på åbne AI-modeller for at hamle op",
    "kategori": "Lanceringer",
    "dato": "2026-08-10",
    "henvisere": [
