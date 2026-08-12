@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-12T06:02:53.653952+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-12T08:50:42.634292+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -972,7 +972,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -983,6 +983,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic vil mærke al Claude-tekst med vandmærke"
+    },
+    {
+     "rubrik": "Research Gold lover ægte mennesker - men er selv AI",
+     "dato": "2026-08-12T02:05:42",
+     "foerst_set": "2026-08-12T08:50:42",
+     "link": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
+     "side": "artikel/fd0a75ee6e35096e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Rob Pike: Go er skabt til AI-tiden",
@@ -1012,11 +1021,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Docker lancerer sikre sandkasser til AI-agenter",
-     "dato": "2026-08-10T06:02:38",
-     "foerst_set": "2026-08-10T09:02:21",
-     "link": "https://www.docker.com/products/docker-sandboxes/",
-     "side": "artikel/51e3d9e70ee95a79.html",
+     "rubrik": "Zuckerberg angriber lukkede AI-rivaler med nye åbne modeller",
+     "dato": "2026-08-10T14:06:22",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
+     "side": "artikel/49d99e09b3af488a.html",
      "hvor": "forside",
      "under": ""
     }
