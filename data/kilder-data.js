@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-13T15:43:10.806258+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-13T19:48:07.600721+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 3,
+   "i_listen": 17,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
+     "dato": "",
+     "foerst_set": "2026-08-13T06:03:04",
+     "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude får usynligt vandmærke på alt indhold"
+    },
+    {
+     "rubrik": "Amazon træner AI på Twitch-streams uden samtykke",
+     "dato": "",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+     "side": "",
+     "hvor": "under",
+     "under": "Twitch giver dig nu valget: Vil du træne Amazons AI?"
+    },
     {
      "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
      "dato": "",
@@ -41,6 +59,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere",
+     "dato": "2026-08-13T19:22:40",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+     "side": "artikel/459413c052960c03.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "IBM og OpenAI indgår partnerskab om virksomheds-AI",
+     "dato": "2026-08-13T19:19:49",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
+     "side": "artikel/b377fa89f3ad152d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics agenter gik i krig mod hinanden",
+     "dato": "2026-08-13T18:28:14",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
+     "side": "artikel/4f7a500cee9438e1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI skifter salgschef efter kun ni måneder",
+     "dato": "2026-08-13T17:07:13",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+     "side": "artikel/9a1de941a4f8ef98.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Microsoft skrotter Copilot-funktioner og lægger apps sammen",
@@ -70,25 +124,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
-     "dato": "2026-08-12T22:26:37",
-     "foerst_set": "2026-08-13T06:03:04",
-     "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-     "side": "artikel/79ba0d5b9ddaf8f2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon træner AI på Twitch-streams uden samtykke",
-     "dato": "2026-08-12T20:10:40",
-     "foerst_set": "2026-08-12T22:26:02",
-     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
-     "side": "artikel/0e1a976108c71a3d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cognition i snak om kæmpe værdispring",
+     "rubrik": "Cognition i snak om kæmpe værdispring og Devin-vækst",
      "dato": "2026-08-12T18:19:12",
      "foerst_set": "2026-08-12T20:03:12",
      "link": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
@@ -131,34 +167,20 @@ window.KILDER_STATUS = {
      "side": "artikel/d4e662e0ffa5f326.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Lovable henter 400 millioner dollars og er nu 13,3 milliarder værd",
-     "dato": "2026-08-12T16:04:27",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/",
-     "side": "artikel/a8dd77df5184aa34.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "VideoVerse-opkøb ender i svindelanklager",
-     "dato": "2026-08-12T15:44:56",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures/",
-     "side": "artikel/4aad839266449a12.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "Ars Technica AI",
+     4
     ],
     [
-     "Ars Technica AI",
-     2
+     "OpenAI Blog",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },
@@ -172,8 +194,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 4,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Twitch-streamere kan nu takke nej til Amazons AI-træning",
@@ -194,15 +216,6 @@ window.KILDER_STATUS = {
      "under": "Googles Gemini rundede 1 milliard brugere"
     },
     {
-     "rubrik": "OpenAI mister endnu en topchef",
-     "dato": "",
-     "foerst_set": "2026-08-11T18:38:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAIs mangeårige direktør Brad Lightcap stopper"
-    },
-    {
      "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
      "dato": "",
      "foerst_set": "2026-08-08T17:59:49",
@@ -210,6 +223,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "OpenAI mister endnu en topleder",
+     "dato": "2026-08-13T15:28:39",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
+     "side": "artikel/45947aa8ee002490.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Suno Studio 2.0 vil ligne et rigtigt musikprogram",
+     "dato": "2026-08-13T12:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
+     "side": "artikel/10399f170c3bdbb0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Higgsfield viser AI-film med menneskeligt hjerte",
@@ -230,11 +261,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Microsoft samler Copilot-apps i én superapp",
+     "rubrik": "Microsoft samler AI-apps i én superapp",
      "dato": "2026-08-13T09:30:00",
      "foerst_set": "2026-08-13T15:43:10",
      "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-     "side": "",
+     "side": "artikel/ed2d0e440f58f260.html",
      "hvor": "forside",
      "under": ""
     },
@@ -273,15 +304,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9ebfb3cbe9d9719e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spilboss afviser AI-anklage: Stella Sacco kalder ham løgner",
-     "dato": "2026-08-11T20:39:26",
-     "foerst_set": "2026-08-12T06:02:53",
-     "link": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
-     "side": "artikel/7700ad67b4c00a7e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -291,7 +313,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -309,6 +331,24 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Instagram: Nye logo ligner AI-sjusk",
+     "dato": "2026-08-13T17:32:10",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
+     "side": "artikel/5f281a8601314c93.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Gemini: 3.7 Flash og halv pris",
+     "dato": "2026-08-13T17:00:13",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/",
+     "side": "artikel/3978ae9331b5204e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Anthropic kan blive vurderet til 2 billioner dollar ved børsnotering",
      "dato": "2026-08-13T13:58:56",
      "foerst_set": "2026-08-13T15:43:10",
@@ -320,7 +360,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Claude får usynligt vandmærke på alt indhold",
      "dato": "2026-08-13T11:10:18",
-     "foerst_set": "2026-08-13T12:03:33",
+     "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
      "side": "artikel/b456e74a549d0d83.html",
      "hvor": "forside",
@@ -397,38 +437,20 @@ window.KILDER_STATUS = {
      "side": "artikel/bd6197a1b1b66042.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's højttaler kan få en pris på over 300 dollars",
-     "dato": "2026-08-07T17:36:22",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
-     "side": "artikel/c1b05c5ed4232d18.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kan ChatGPT reddes efter at have svigtet folk i krise?",
-     "dato": "2026-08-07T13:49:37",
-     "foerst_set": "2026-08-07T14:41:32",
-     "link": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
-     "side": "artikel/67386e3e7d1c98a6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     4
+    ],
     [
      "The Verge AI",
      3
     ],
     [
-     "TechCrunch AI",
-     2
-    ],
-    [
      "Google DeepMind",
-     1
+     2
     ]
    ]
   },
@@ -548,9 +570,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 21,
-   "som_ekstra": 0,
+   "i_listen": 20,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI lancerer ultrafart: GPT-5.6 Sol 14 gange hurtigere",
+     "dato": "",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/previewing-ultrafast",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
+    },
     {
      "rubrik": "RingCentral bruger ChatGPT til at bygge AI hurtigere",
      "dato": "",
@@ -586,6 +617,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
+    },
+    {
+     "rubrik": "OpenAI's GPT-5.6 gør AI billigere og hurtigere",
+     "dato": "2026-08-13T11:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+     "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI henter ny salgschef til at tjene penge på AI",
+     "dato": "2026-08-13T09:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+     "side": "artikel/36609b9396fd20f8.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI lancerer Daybreak på AWS",
@@ -676,27 +725,14 @@ window.KILDER_STATUS = {
      "side": "artikel/04dbcdd1e1d91c0f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI opgraderer GPT-5.6 Sol og giver Luna til alle",
-     "dato": "2026-08-06T10:00:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-     "side": "artikel/e1775d8d2e173fdf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
-     "dato": "2026-08-06T06:00:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-     "side": "artikel/61e5f938cd4c3ca5.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Google DeepMind",
@@ -709,8 +745,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 8,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Google lancerer Gemini 3.7 Flash",
+     "dato": "",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Gemini: 3.7 Flash og halv pris"
+    },
     {
      "rubrik": "Google DeepMinds WeatherNext forudser cykloner bedre end før",
      "dato": "",
@@ -796,7 +841,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Ars Technica AI",
-     1
+     2
     ]
    ]
   },
@@ -931,12 +976,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "GPT-5.6 Sol bedst til at finde nye chip-materialer",
+     "dato": "2026-08-12T07:51:20",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://discoveredmaterials.com/research/",
+     "side": "artikel/da73e93036f713fc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ClaudeBot-spoofing rammer tusindvis af hjemmesider",
+     "dato": "2026-08-12T14:02:46",
+     "foerst_set": "2026-08-12T20:03:12",
+     "link": "https://knownagents.com/insights",
+     "side": "artikel/0f1dc2521dd594b1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI gør mellemledere i kodning til fortid",
+     "dato": "2026-08-12T13:20:05",
+     "foerst_set": "2026-08-12T15:43:22",
+     "link": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+     "side": "artikel/e4813eb4076db514.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Research Gold lover ægte forskning – men er selv AI",
+     "dato": "2026-08-12T02:05:42",
+     "foerst_set": "2026-08-12T08:50:42",
+     "link": "https://www.404media.co/company-offering-100-human-written-never-ai-peer-review-is-entirely-ai/",
+     "side": "artikel/fd0a75ee6e35096e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Go-sproget vinder på AI-tidsalderen",
+     "dato": "2026-08-11T16:57:09",
+     "foerst_set": "2026-08-12T06:02:53",
+     "link": "https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/",
+     "side": "artikel/1b2b7dc6d29e8e51.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Search dør, mens AI æder internettet",
+     "dato": "2026-08-10T22:36:30",
+     "foerst_set": "2026-08-11T11:13:03",
+     "link": "https://thewalrus.ca/google-search-is-dying/",
+     "side": "artikel/a0494395c336fd6c.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
