@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-13T12:03:33.273745+00:00",
- "artikler_i_alt": 107,
+ "opdateret": "2026-08-13T15:43:10.806258+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 18,
    "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Claude-brugere raser over ny vandmærkning",
-     "dato": "",
-     "foerst_set": "2026-08-13T06:03:04.928234+00:00",
-     "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic vandmærker al tekst fra Claude"
-    },
     {
      "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
      "dato": "",
@@ -50,6 +41,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Microsoft skrotter Copilot-funktioner og lægger apps sammen",
+     "dato": "2026-08-13T15:30:52",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
+     "side": "artikel/ae02d5bda82cc078.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidias 500 milliarder-plan: Brugte GPU'er får nyt liv",
+     "dato": "2026-08-13T15:08:00",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+     "side": "artikel/7e37825fb53ff2ee.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple vil betale medier for at gøre Siri klogere",
+     "dato": "2026-08-13T14:34:43",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/",
+     "side": "artikel/f31b1a5b40ca366d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
+     "dato": "2026-08-12T22:26:37",
+     "foerst_set": "2026-08-13T06:03:04",
+     "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
+     "side": "artikel/79ba0d5b9ddaf8f2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon træner AI på Twitch-streams uden samtykke",
+     "dato": "2026-08-12T20:10:40",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+     "side": "artikel/0e1a976108c71a3d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Cognition i snak om kæmpe værdispring",
@@ -113,61 +149,16 @@ window.KILDER_STATUS = {
      "side": "artikel/4aad839266449a12.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Sandbar vil redde AI-ringen fra hardware-kirkegården",
-     "dato": "2026-08-12T14:22:00",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
-     "side": "artikel/d1915a50c5cc392a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Blacksmiths værdi eksploderer på under et år",
-     "dato": "2026-08-12T11:00:00",
-     "foerst_set": "2026-08-12T15:43:22",
-     "link": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/",
-     "side": "artikel/618c36a0317edf70.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Accel lukker Indien-fond på få uger",
-     "dato": "2026-08-11T21:39:11",
-     "foerst_set": "2026-08-11T22:09:30",
-     "link": "https://techcrunch.com/2026/08/11/accel-closes-oversubscribed-550m-india-fund-within-weeks-19-months-after-its-last/",
-     "side": "artikel/2deee44b21d97eea.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI bringer ChatGPT til Linux-brugere",
-     "dato": "2026-08-11T19:15:35",
-     "foerst_set": "2026-08-11T22:09:30",
-     "link": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
-     "side": "artikel/c836abb2e3928846.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAIs mangeårige direktør Brad Lightcap stopper",
-     "dato": "2026-08-11T17:41:34",
-     "foerst_set": "2026-08-11T18:38:03",
-     "link": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
-     "side": "artikel/b8d07c245c74a0b3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "Ars Technica AI",
-     3
+     2
     ]
    ]
   },
@@ -181,8 +172,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
-   "som_ekstra": 5,
+   "i_listen": 8,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Twitch-streamere kan nu takke nej til Amazons AI-træning",
@@ -212,15 +203,6 @@ window.KILDER_STATUS = {
      "under": "OpenAIs mangeårige direktør Brad Lightcap stopper"
     },
     {
-     "rubrik": "Spotify dropper AI-musik fra anbefalinger",
-     "dato": "",
-     "foerst_set": "2026-08-11T14:47:12",
-     "link": "https://www.theverge.com/entertainment/977815/spotify-ai-persona-label-recommendations",
-     "side": "",
-     "hvor": "under",
-     "under": "Spotify mærker AI-personaer og fjerner deres musik fra anbefalinger"
-    },
-    {
      "rubrik": "Amazons nye gasværk kan blive USA's største CO2-udleder",
      "dato": "",
      "foerst_set": "2026-08-08T17:59:49",
@@ -228,6 +210,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Higgsfield viser AI-film med menneskeligt hjerte",
+     "dato": "2026-08-13T11:30:00",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
+     "side": "artikel/70410d3b984c1443.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google vakler i AI-kapløbet",
+     "dato": "2026-08-13T10:10:31",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
+     "side": "artikel/a4fd1976a564452b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft samler Copilot-apps i én superapp",
+     "dato": "2026-08-13T09:30:00",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Guitarfirmaet D’Addario indrømmer AI i reklamevideo",
@@ -273,24 +282,6 @@ window.KILDER_STATUS = {
      "side": "artikel/7700ad67b4c00a7e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google løfter sløret for Pixel 11: Det får du",
-     "dato": "2026-08-11T13:00:00",
-     "foerst_set": "2026-08-11T18:38:03",
-     "link": "https://www.theverge.com/tech/977561/made-by-google-2026-pixel-11-news",
-     "side": "artikel/f3ec5949a23f5e05.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple bygger værktøj til at afsløre AI-fotos",
-     "dato": "2026-08-11T12:19:15",
-     "foerst_set": "2026-08-11T18:38:03",
-     "link": "https://www.theverge.com/tech/977921/apple-reference-image-iphone-metadata",
-     "side": "artikel/0e36626fb2c2115f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -300,7 +291,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     3
+     2
     ]
    ]
   },
@@ -314,17 +305,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 1,
+   "i_listen": 20,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Claude mærker nu alt AI-skabt indhold",
-     "dato": "",
+     "rubrik": "Anthropic kan blive vurderet til 2 billioner dollar ved børsnotering",
+     "dato": "2026-08-13T13:58:56",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+     "side": "artikel/e2666f986d634466.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude får usynligt vandmærke på alt indhold",
+     "dato": "2026-08-13T11:10:18",
      "foerst_set": "2026-08-13T12:03:33",
      "link": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic vandmærker al tekst fra Claude"
+     "side": "artikel/b456e74a549d0d83.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "ShieldFont: AI-fælden gemt i skriften",
@@ -415,24 +415,6 @@ window.KILDER_STATUS = {
      "side": "artikel/67386e3e7d1c98a6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "TikTok-ejer træner kæmpe AI-model mod Anthropic",
-     "dato": "2026-08-07T13:29:22",
-     "foerst_set": "2026-08-07T14:41:32",
-     "link": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
-     "side": "artikel/13e2539b3313d15a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles AI overrasker: Ramte orkanen fem dage før",
-     "dato": "2026-08-08T11:05:50",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-     "side": "artikel/529c4767029a6e49.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -442,7 +424,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     3
+     2
     ],
     [
      "Google DeepMind",
@@ -463,6 +445,15 @@ window.KILDER_STATUS = {
    "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Flock strammer regler efter politi-misbrug af nummerplade-kameraer",
+     "dato": "2026-08-13T13:41:10",
+     "foerst_set": "2026-08-13T15:43:10",
+     "link": "https://www.technologyreview.com/2026/08/13/1141904/flock-is-tightening-its-rules-in-response-to-a-growing-surveillance-backlash/",
+     "side": "artikel/c22abf289983f306.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Studerende byggede Next Voters til AI-formål",
      "dato": "2026-08-13T09:00:00",
@@ -541,15 +532,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-29T10:20:57",
      "link": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai/",
      "side": "artikel/b4d3a90f63791469.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Medarbejdere flygter fra Samsung til rival",
-     "dato": "2026-07-28T09:18:57",
-     "foerst_set": "2026-07-28T10:15:21",
-     "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
-     "side": "artikel/e9c7d242f0b7db07.html",
      "hvor": "forside",
      "under": ""
     }
@@ -726,7 +708,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -807,15 +789,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-16T09:30:42",
      "link": "https://deepmind.google/blog/our-approach-to-bioresilience/",
      "side": "artikel/39191aed0f2bd8fd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google og AIM lancerer ATL Saathi til indiske lærere",
-     "dato": "2026-07-13T12:37:28",
-     "foerst_set": "2026-07-13T12:37:28",
-     "link": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-     "side": "artikel/228200827ba929ba.html",
      "hvor": "forside",
      "under": ""
     }
