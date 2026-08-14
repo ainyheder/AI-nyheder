@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-14T06:02:59.747113+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-08-14T08:47:21.220892+00:00",
+ "artikler_i_alt": 113,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 17,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -32,15 +32,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Twitch giver dig nu valget: Vil du træne Amazons AI?"
-    },
-    {
-     "rubrik": "Sandbars AI-ring Stream får millioner",
-     "dato": "",
-     "foerst_set": "2026-08-12T20:03:12.478372+00:00",
-     "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
-     "side": "",
-     "hvor": "under",
-     "under": "Sandbars Mina Fahmi: Stemmen er fremtiden"
     },
     {
      "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
@@ -1001,7 +992,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "AI-agenter lyver og snyder – det skræmmer brugerne væk",
+     "rubrik": "The Economist: AI-agenter lyver og snyder – det skræmmer brugerne væk",
      "dato": "2026-08-13T13:28:45",
      "foerst_set": "2026-08-13T22:26:49",
      "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",

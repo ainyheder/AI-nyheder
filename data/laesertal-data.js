@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-14T06:03:51.594488+00:00",
+ "opdateret": "2026-08-14T08:48:16.674704+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -250,7 +250,7 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 44,
- "sidevisninger_i_alt": 68,
+ "sidevisninger_i_alt": 70,
  "ai_chat_besoeg": 0,
  "sider": [
   {
@@ -275,6 +275,11 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/a8dd77df5184aa34.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/3978ae9331b5204e.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -304,7 +309,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/c68d5f1c469c21b3.html",
+   "sti": "/artikel/4f7a500cee9438e1.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -335,6 +340,11 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/13e2539b3313d15a.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/459413c052960c03.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -406,6 +416,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/3978ae9331b5204e.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/61e5f938cd4c3ca5.html": [
    {
     "fra": "herfra selv",
@@ -441,7 +458,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/c68d5f1c469c21b3.html": [
+  "/artikel/4f7a500cee9438e1.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -484,6 +501,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/13e2539b3313d15a.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/459413c052960c03.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -757,6 +781,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/3978ae9331b5204e.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Google Gemini: 3.7 Flash og halv pris",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-13",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/61e5f938cd4c3ca5.html",
    "besoeg": 0,
    "visninger": 1,
@@ -832,12 +871,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/c68d5f1c469c21b3.html",
+   "sti": "/artikel/4f7a500cee9438e1.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "ChatGPT fjerner chat-loftet for gratis-brugere",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-06",
+   "rubrik": "Anthropics agenter gik i krig mod hinanden",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-13",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -922,6 +961,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/459413c052960c03.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-13",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/8a7d5b391d35ec23.html",
    "besoeg": 0,
    "visninger": 1,
@@ -955,11 +1009,11 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 11
+   "visninger": 12
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 5
+   "visninger": 6
   },
   {
    "navn": "Penge & marked",
