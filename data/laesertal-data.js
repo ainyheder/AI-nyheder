@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-14T08:48:16.674704+00:00",
+ "opdateret": "2026-08-14T12:00:39.240075+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      3,
      1,
      0,
-     0
+     1
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 44,
- "sidevisninger_i_alt": 70,
+ "besoeg_i_alt": 42,
+ "sidevisninger_i_alt": 67,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 44,
-   "visninger": 44
+   "besoeg": 42,
+   "visninger": 42
   },
   {
    "sti": "/artikel/73ddfbd0f80f8136.html",
@@ -284,12 +284,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
+   "sti": "/artikel/9e2435033b8b0446.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
+   "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -361,13 +361,13 @@ window.LAESERTAL = {
   {
    "sti": "/artikel/14f964707cdfca29.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 2
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 43
+   "besoeg": 41
   },
   {
    "fra": "www.google.com",
@@ -379,8 +379,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 43,
-    "visninger": 43
+    "besoeg": 41,
+    "visninger": 41
    },
    {
     "fra": "www.google.com",
@@ -423,14 +423,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/61e5f938cd4c3ca5.html": [
+  "/artikel/9e2435033b8b0446.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/9e2435033b8b0446.html": [
+  "/artikel/ed2d0e440f58f260.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -532,7 +532,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 2
    }
   ]
  },
@@ -701,25 +701,10 @@ window.LAESERTAL = {
   {
    "dato": "2026-08-14",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   }
  ],
  "artikler": [
-  {
-   "sti": "/artikel/14f964707cdfca29.html",
-   "besoeg": 0,
-   "visninger": 3,
-   "rubrik": "Cloudflare OS er nu open source",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-06",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 3
-    }
-   ]
-  },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
@@ -727,6 +712,21 @@ window.LAESERTAL = {
    "rubrik": "Meta laver AI til din pc – Mark Zuckerbergs personlige plan",
    "kategori": "Lanceringer",
    "dato": "2026-08-10",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 2
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/14f964707cdfca29.html",
+   "besoeg": 0,
+   "visninger": 2,
+   "rubrik": "Cloudflare OS er nu open source",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-06",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -796,12 +796,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/61e5f938cd4c3ca5.html",
+   "sti": "/artikel/9e2435033b8b0446.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
+   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
    "kategori": "Samfund & etik",
-   "dato": "2026-08-06",
+   "dato": "2026-08-07",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -811,12 +811,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
+   "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
+   "rubrik": "Microsoft samler AI-apps i én superapp",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-13",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1013,7 +1013,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 6
+   "visninger": 5
   },
   {
    "navn": "Penge & marked",
