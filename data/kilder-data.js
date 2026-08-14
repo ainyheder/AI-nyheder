@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-13T22:26:49.558365+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-08-14T06:02:59.747113+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
+   "i_listen": 16,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -32,6 +32,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Twitch giver dig nu valget: Vil du træne Amazons AI?"
+    },
+    {
+     "rubrik": "Sandbars AI-ring Stream får millioner",
+     "dato": "",
+     "foerst_set": "2026-08-12T20:03:12.478372+00:00",
+     "link": "https://techcrunch.com/podcast/why-sandbar-thinks-its-voice-enabled-ring-can-avoid-the-ai-hardware-graveyard/",
+     "side": "",
+     "hvor": "under",
+     "under": "Sandbars Mina Fahmi: Stemmen er fremtiden"
     },
     {
      "rubrik": "Google løfter sløret for Pixel 11, Watch 5 og ny tracker",
@@ -869,7 +878,7 @@ window.KILDER_STATUS = {
    "seneste": [
     {
      "rubrik": "Forskere finder måde at få flere AI'er til at samarbejde",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11207",
      "side": "artikel/c8e20057c58ac8ca.html",
@@ -878,7 +887,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Distribird: AI der selv finder de rigtige tal",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11210",
      "side": "artikel/d2cadd9aa1e6b270.html",
@@ -887,7 +896,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Aalok Thakkar nærmer sig 99-graf-gåden med nye regler",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11211",
      "side": "artikel/92378a861f36a704.html",
@@ -896,7 +905,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere finder skjult skade i AI-modeller",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11212",
      "side": "artikel/1c0d9a88fbc4cecd.html",
@@ -905,7 +914,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Igor Itkin simulerer AI-samfund på bærbar",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11215",
      "side": "artikel/ae411ce6429e2af3.html",
@@ -914,7 +923,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AutoWorldModel-Bench sætter ny standard for AI-testning",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11216",
      "side": "artikel/50e1b8a11b505046.html",
@@ -923,7 +932,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "MaSRead lader AI huske og genfinde viden hurtigere",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11218",
      "side": "artikel/452572afde626171.html",
@@ -932,7 +941,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere udvikler SAPO til at optimere AI-instruktioner",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11219",
      "side": "artikel/a1040ae7ad18ed38.html",
@@ -941,7 +950,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI tegner industriens blåprint for forskere",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11220",
      "side": "artikel/36d65bacd7ced442.html",
@@ -950,7 +959,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere lærer AI at forstå simuleringer",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11221",
      "side": "artikel/6bbf220425e160ea.html",
@@ -959,7 +968,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Siyu Liu bygger AI med langtidshukommelse",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11224",
      "side": "artikel/63324e94c3d3811d.html",
@@ -968,7 +977,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Luc Émile Brunet vil skabe AI-kloner af din personlighed",
-     "dato": "2026-08-13T00:00:00",
+     "dato": "2026-08-14T00:00:00",
      "foerst_set": "2026-08-13T06:03:04",
      "link": "https://arxiv.org/abs/2608.11225",
      "side": "artikel/7523c7cedd4cb7e4.html",
