@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-14T20:07:47.337312+00:00",
+ "opdateret": "2026-08-14T21:47:49.507942+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      3,
      25,
      0,
-     26
+     27
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      4,
      8,
      10,
-     3
+     4
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 37,
- "sidevisninger_i_alt": 63,
+ "besoeg_i_alt": 35,
+ "sidevisninger_i_alt": 61,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 37,
-   "visninger": 37
+   "besoeg": 35,
+   "visninger": 35
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
@@ -372,7 +372,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 34
   },
   {
    "fra": "www.google.com",
@@ -384,8 +384,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 36,
-    "visninger": 36
+    "besoeg": 34,
+    "visninger": 34
    },
    {
     "fra": "www.google.com",
@@ -945,7 +945,7 @@ window.LAESERTAL = {
    "sti": "/artikel/e4813eb4076db514.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "AI splitter softwarebranchen i to tydelige lejre",
+   "rubrik": "AI splitter softwarebranchen: Gode bliver bedre, dårlige ryger",
    "kategori": "Samfund & etik",
    "dato": "2026-08-12",
    "henvisere": [
