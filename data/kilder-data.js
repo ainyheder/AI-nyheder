@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-14T18:30:52.991064+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-14T20:07:06.875555+00:00",
+ "artikler_i_alt": 105,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -579,7 +579,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 18,
+   "i_listen": 19,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -614,15 +614,6 @@ window.KILDER_STATUS = {
      "dato": "",
      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
      "link": "https://openai.com/index/ringcentral",
-     "side": "",
-     "hvor": "under",
-     "under": "Sam Altman: Virksomheder sætter AI på arbejde"
-    },
-    {
-     "rubrik": "Virgin Atlantic bruger AI til at skærpe kunderejser",
-     "dato": "",
-     "foerst_set": "2026-08-11T04:53:48.481756+00:00",
-     "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
      "side": "",
      "hvor": "under",
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
@@ -669,6 +660,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-11T04:53:48",
      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
      "side": "artikel/143a56c3831ed960.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Virgin Atlantic får hjælp af OpenAI's ChatGPT Work",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+     "side": "artikel/f7be8d43b299d944.html",
      "hvor": "forside",
      "under": ""
     },
@@ -741,15 +741,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T04:14:51",
      "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
      "side": "artikel/e1775d8d2e173fdf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
-     "dato": "2026-08-06T06:00:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-     "side": "artikel/61e5f938cd4c3ca5.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1003,67 +994,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "OpenAI-stjerne sprængte milliardfond i luften",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hacker News: AI-agenter lyver og stjæler",
-     "dato": "2026-08-13T13:28:45",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
-     "side": "artikel/209484ebf2d7cb72.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Netlify tester 11 AI-modeller: Prisen svinger vildt",
-     "dato": "2026-08-13T13:05:29",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-     "side": "artikel/06aafebcd045c8e3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-modeller dumper i jagten på nye chip-materialer",
-     "dato": "2026-08-12T07:51:20",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://discoveredmaterials.com/research/",
-     "side": "artikel/da73e93036f713fc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hackere efterligner ClaudeBot i massivt angreb",
-     "dato": "2026-08-12T14:02:46",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://knownagents.com/insights",
-     "side": "artikel/0f1dc2521dd594b1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI splitter softwarebranchen i to tydelige lejre",
-     "dato": "2026-08-12T13:20:05",
-     "foerst_set": "2026-08-12T15:43:22",
-     "link": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-     "side": "artikel/e4813eb4076db514.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
