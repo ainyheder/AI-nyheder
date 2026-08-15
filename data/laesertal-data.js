@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-15T15:02:37.294930+00:00",
+ "opdateret": "2026-08-15T16:03:42.497428+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,7 +67,7 @@ window.LAESERTAL = {
      3,
      25,
      0,
-     28,
+     27,
      25
     ]
    },
@@ -137,7 +137,7 @@ window.LAESERTAL = {
      4,
      8,
      10,
-     4,
+     5,
      0
     ]
    },
@@ -249,19 +249,24 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 36,
- "sidevisninger_i_alt": 63,
+ "besoeg_i_alt": 33,
+ "sidevisninger_i_alt": 56,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 36,
-   "visninger": 36
+   "besoeg": 33,
+   "visninger": 33
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
    "besoeg": 0,
    "visninger": 2
+  },
+  {
+   "sti": "/artikel/f3ec5949a23f5e05.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/a8dd77df5184aa34.html",
@@ -274,22 +279,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
    "sti": "/artikel/8da3243e4c605139.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/f3ec5949a23f5e05.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -362,26 +357,12 @@ window.LAESERTAL = {
    "sti": "/artikel/8a7d5b391d35ec23.html",
    "besoeg": 0,
    "visninger": 1
-  },
-  {
-   "sti": "/artikel/05b5c328b16d2c04.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/14f964707cdfca29.html",
-   "besoeg": 0,
-   "visninger": 2
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 35
-  },
-  {
-   "fra": "www.google.com",
-   "besoeg": 1
+   "besoeg": 33
   }
  ],
  "ai_chats": [],
@@ -389,13 +370,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 35,
-    "visninger": 35
-   },
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
+    "besoeg": 33,
+    "visninger": 33
    }
   ],
   "/artikel/4662a98c4da9d5a3.html": [
@@ -403,6 +379,13 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
+   }
+  ],
+  "/artikel/f3ec5949a23f5e05.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/a8dd77df5184aa34.html": [
@@ -419,13 +402,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9e2435033b8b0446.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/ed2d0e440f58f260.html": [
    {
     "fra": "herfra selv",
@@ -434,13 +410,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/8da3243e4c605139.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/f3ec5949a23f5e05.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -543,20 +512,6 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
-   }
-  ],
-  "/artikel/05b5c328b16d2c04.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/14f964707cdfca29.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
    }
   ]
  },
@@ -744,17 +699,17 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/14f964707cdfca29.html",
+   "sti": "/artikel/f3ec5949a23f5e05.html",
    "besoeg": 0,
-   "visninger": 2,
-   "rubrik": "Cloudflare OS er nu open source",
+   "visninger": 1,
+   "rubrik": "Google Pixel 11: Trevor Noah er vært",
    "kategori": "Lanceringer",
-   "dato": "2026-08-06",
+   "dato": "2026-08-11",
    "henvisere": [
     {
      "fra": "herfra selv",
      "besoeg": 0,
-     "visninger": 2
+     "visninger": 1
     }
    ]
   },
@@ -789,21 +744,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9e2435033b8b0446.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Fast Company: AI-psykose er lederes nye blinde vinkel",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1,
@@ -825,21 +765,6 @@ window.LAESERTAL = {
    "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
    "kategori": "Lanceringer",
    "dato": "2026-08-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/f3ec5949a23f5e05.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Google Pixel 11: Trevor Noah er vært",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-11",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1027,31 +952,16 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
-  },
-  {
-   "sti": "/artikel/05b5c328b16d2c04.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Databricks: Sådan tæmmes de voksende AI-regninger",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-07",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
   }
  ],
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 11
+   "visninger": 9
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 6
+   "visninger": 4
   },
   {
    "navn": "Penge & marked",
