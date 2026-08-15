@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-15T13:47:31.624975+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-15T15:01:55.830084+00:00",
+ "artikler_i_alt": 105,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 15,
+   "i_listen": 16,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -169,11 +169,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Cognition i snak om kæmpe værdispring og Devin-vækst",
-     "dato": "2026-08-12T18:19:12",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
-     "side": "artikel/fedb51cc07b1d84a.html",
+     "rubrik": "Twitch giver AI-træning til Amazon - streamere raser",
+     "dato": "2026-08-12T20:10:40",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+     "side": "artikel/0e1a976108c71a3d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1012,67 +1012,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI by Hand lærer dig AI fra bunden",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles nye værktøj regner på krypteret data",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Leopold Aschenbrenner mister 20 milliarder på hedgefond",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "The Economist: AI-agenter lyver, snyder og stjæler",
-     "dato": "2026-08-13T13:28:45",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
-     "side": "artikel/209484ebf2d7cb72.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Netlify tester 11 AI-modeller: Så forskellige blev resultaterne",
-     "dato": "2026-08-13T13:05:29",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-     "side": "artikel/06aafebcd045c8e3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Bots udgiver sig for at være ClaudeBot og scannet internettet",
-     "dato": "2026-08-12T14:02:46",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://knownagents.com/insights",
-     "side": "artikel/0f1dc2521dd594b1.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
