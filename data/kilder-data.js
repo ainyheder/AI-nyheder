@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-14T21:44:39.854231+00:00",
+ "opdateret": "2026-08-15T03:12:38.667040+00:00",
  "artikler_i_alt": 112,
  "kilder": [
   {
@@ -1001,6 +1001,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "AI by Hand: Lær AI at kende uden skærm",
+     "dato": "2026-08-14T15:58:59",
+     "foerst_set": "2026-08-15T03:12:38",
+     "link": "https://www.byhand.ai/",
+     "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google gør krypteret AI til virkelighed",
      "dato": "2026-08-14T15:43:10",
      "foerst_set": "2026-08-14T21:44:39",
@@ -1042,15 +1051,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-12T20:03:12",
      "link": "https://knownagents.com/insights",
      "side": "artikel/0f1dc2521dd594b1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI splitter softwarebranchen: Gode bliver bedre, dårlige ryger",
-     "dato": "2026-08-12T13:20:05",
-     "foerst_set": "2026-08-12T15:43:22",
-     "link": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
-     "side": "artikel/e4813eb4076db514.html",
      "hvor": "forside",
      "under": ""
     }
