@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-15T09:45:26.755135+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-15T11:01:10.393537+00:00",
+ "artikler_i_alt": 105,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -1012,67 +1012,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI by Hand: AI forklaret uden skærm",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google åbner for AI, der kan regne på krypterede data",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Aschenbrenners hedgefond taber 20 milliarder dollars",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-agenter lyver og stjæler - The Economist skræmmer brugerne",
-     "dato": "2026-08-13T13:28:45",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
-     "side": "artikel/209484ebf2d7cb72.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Netlify tester 11 AI-modeller: Se hvem der er pengene værd",
-     "dato": "2026-08-13T13:05:29",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-     "side": "artikel/06aafebcd045c8e3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Falske AI-bots scanner hele internettet for huller",
-     "dato": "2026-08-12T14:02:46",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://knownagents.com/insights",
-     "side": "artikel/0f1dc2521dd594b1.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
