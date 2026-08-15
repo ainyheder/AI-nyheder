@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-15T05:46:18.549967+00:00",
- "artikler_i_alt": 105,
+ "opdateret": "2026-08-15T07:48:57.493366+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 15,
    "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Meta udgiver åben AI-model Glimmer",
+     "dato": "",
+     "foerst_set": "2026-08-14T18:30:52.991064+00:00",
+     "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+     "side": "",
+     "hvor": "under",
+     "under": "Zuckerbergs AI-løfte til alle: Meta udgiver Glimmer"
+    },
     {
      "rubrik": "Google fjerner synligt vandmærke fra AI-genereret indhold",
      "dato": "",
@@ -75,15 +84,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-14T18:30:52",
      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
      "side": "artikel/d0a06ebad8a62813.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta udgiver åben AI-model Glimmer",
-     "dato": "2026-08-14T14:00:00",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
-     "side": "artikel/81e5cc10e8e1ab97.html",
      "hvor": "forside",
      "under": ""
     },
@@ -176,6 +176,15 @@ window.KILDER_STATUS = {
      "side": "artikel/f31b1a5b40ca366d.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Cognition i snak om kæmpe værdispring og Devin-vækst",
+     "dato": "2026-08-12T18:19:12",
+     "foerst_set": "2026-08-12T20:03:12",
+     "link": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/",
+     "side": "artikel/fedb51cc07b1d84a.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -203,8 +212,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 4,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI mister endnu en topleder",
@@ -214,15 +223,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI skifter salgschef efter kun ni måneder"
-    },
-    {
-     "rubrik": "Twitch-streamere kan nu takke nej til Amazons AI-træning",
-     "dato": "",
-     "foerst_set": "2026-08-12T20:03:12",
-     "link": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
-     "side": "",
-     "hvor": "under",
-     "under": "Twitch giver dig nu valget: Vil du træne Amazons AI?"
     },
     {
      "rubrik": "ChatGPT and Gemini both just passed 1 billion users",
@@ -313,15 +313,24 @@ window.KILDER_STATUS = {
      "side": "artikel/ed2d0e440f58f260.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Twitch streamere kan nu sige nej til Amazons AI-træning",
+     "dato": "2026-08-12T13:29:10",
+     "foerst_set": "2026-08-12T20:03:12",
+     "link": "https://www.theverge.com/tech/979112/twitch-streamers-can-now-opt-out-from-training-amazons-ai",
+     "side": "artikel/dd46bfe4c4e4d6d4.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     4
+     "TechCrunch AI",
+     3
     ],
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
      3
     ]
    ]
@@ -414,7 +423,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Twitch giver dig nu valget: Vil du træne Amazons AI?",
      "dato": "2026-08-12T21:00:30",
-     "foerst_set": "2026-08-12T20:03:12",
+     "foerst_set": "2026-08-12T22:26:02",
      "link": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
      "side": "artikel/c37950ec573d6143.html",
      "hvor": "forside",
@@ -459,12 +468,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "TechCrunch AI",
      4
     ],
     [
-     "TechCrunch AI",
-     4
+     "The Verge AI",
+     3
     ],
     [
      "Google DeepMind",
@@ -1003,12 +1012,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "AI by Hand: AI forklaret uden skærm",
+     "dato": "2026-08-14T15:58:59",
+     "foerst_set": "2026-08-15T03:12:38",
+     "link": "https://www.byhand.ai/",
+     "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google åbner for AI, der kan regne på krypterede data",
+     "dato": "2026-08-14T15:43:10",
+     "foerst_set": "2026-08-14T21:44:39",
+     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "side": "artikel/87274b2d7ed5d37a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Aschenbrenners hedgefond taber 20 milliarder dollars",
+     "dato": "2026-08-14T14:34:49",
+     "foerst_set": "2026-08-14T18:30:52",
+     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+     "side": "artikel/b936b51418779788.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-agenter lyver og stjæler - The Economist skræmmer brugerne",
+     "dato": "2026-08-13T13:28:45",
+     "foerst_set": "2026-08-13T22:26:49",
+     "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
+     "side": "artikel/209484ebf2d7cb72.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Netlify tester 11 AI-modeller: Se hvem der er pengene værd",
+     "dato": "2026-08-13T13:05:29",
+     "foerst_set": "2026-08-13T22:26:49",
+     "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+     "side": "artikel/06aafebcd045c8e3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Falske AI-bots scanner hele internettet for huller",
+     "dato": "2026-08-12T14:02:46",
+     "foerst_set": "2026-08-12T20:03:12",
+     "link": "https://knownagents.com/insights",
+     "side": "artikel/0f1dc2521dd594b1.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
