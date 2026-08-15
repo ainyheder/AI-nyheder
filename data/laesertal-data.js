@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-15T21:02:45.794483+00:00",
+ "opdateret": "2026-08-15T22:00:13.648903+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -100,10 +100,10 @@ window.LAESERTAL = {
      3,
      8,
      2,
-     10,
+     11,
      6,
      3,
-     1
+     2
     ]
    },
    {
@@ -205,7 +205,7 @@ window.LAESERTAL = {
      0,
      2,
      3,
-     2,
+     1,
      0,
      1,
      0
@@ -243,7 +243,7 @@ window.LAESERTAL = {
      2,
      1,
      0,
-     0
+     1
     ]
    }
   ]
@@ -864,8 +864,8 @@ window.LAESERTAL = {
    "sti": "/artikel/c37950ec573d6143.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Twitch giver dig nu valget: Vil du træne Amazons AI?",
-   "kategori": "Politik & jura",
+   "rubrik": "Twitch-brugere kan nu sige nej til Amazons AI-træning",
+   "kategori": "Samfund & etik",
    "dato": "2026-08-12",
    "henvisere": [
     {
@@ -988,7 +988,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 4
+   "visninger": 5
   },
   {
    "navn": "Penge & marked",
@@ -997,10 +997,6 @@ window.LAESERTAL = {
   {
    "navn": "Forskning",
    "visninger": 3
-  },
-  {
-   "navn": "Politik & jura",
-   "visninger": 1
   }
  ]
 };
