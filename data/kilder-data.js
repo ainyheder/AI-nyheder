@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-15T17:59:12.985496+00:00",
+ "opdateret": "2026-08-15T19:33:11.419481+00:00",
  "artikler_i_alt": 110,
  "kilder": [
   {
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 15,
-   "som_ekstra": 6,
+   "i_listen": 14,
+   "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "Anthropic afslører detaljer om vandmærker i Claude",
+     "dato": "",
+     "foerst_set": "2026-08-15T19:33:11",
+     "link": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude får usynligt vandmærke på alt indhold"
+    },
     {
      "rubrik": "Meta udgiver åben AI-model Glimmer",
      "dato": "",
@@ -193,12 +202,12 @@ window.KILDER_STATUS = {
      4
     ],
     [
-     "OpenAI Blog",
-     3
+     "Ars Technica AI",
+     4
     ],
     [
-     "Ars Technica AI",
-     3
+     "OpenAI Blog",
+     2
     ]
    ]
   },
@@ -482,7 +491,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "Google DeepMind",
@@ -606,23 +615,14 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 19,
-   "som_ekstra": 3,
+   "i_listen": 20,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ultrafart: GPT-5.6 Sol 14 gange hurtigere",
      "dato": "",
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/previewing-ultrafast",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
-    },
-    {
-     "rubrik": "OpenAI's GPT-5.6 gør AI billigere og hurtigere",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
      "side": "",
      "hvor": "under",
      "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
@@ -662,6 +662,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
+    },
+    {
+     "rubrik": "OpenAI: Byg hurtigere med GPT‑5.6",
+     "dato": "2026-08-13T11:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+     "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI lancerer Daybreak på AWS",
@@ -761,21 +770,12 @@ window.KILDER_STATUS = {
      "side": "artikel/04dbcdd1e1d91c0f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI opgraderer GPT-5.6 Sol og giver Luna til alle",
-     "dato": "2026-08-06T10:00:00",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-     "side": "artikel/e1775d8d2e173fdf.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     2
     ]
    ]
   },
@@ -1028,6 +1028,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "AI's hemmelige våben: en hukommelse som Einsteins",
+     "dato": "2026-08-15T18:13:02",
+     "foerst_set": "2026-08-15T19:33:11",
+     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+     "side": "artikel/61f60a667ad40217.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI-kodning føles nu som ledelse – ikke programmering",
      "dato": "2026-08-15T10:39:41",
      "foerst_set": "2026-08-15T17:59:12",
@@ -1069,15 +1078,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T22:26:49",
      "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
      "side": "artikel/209484ebf2d7cb72.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Netlify tester 11 AI-modeller: Opus koster 4x mere",
-     "dato": "2026-08-13T13:05:29",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
-     "side": "artikel/06aafebcd045c8e3.html",
      "hvor": "forside",
      "under": ""
     }
