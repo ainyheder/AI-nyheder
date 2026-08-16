@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T09:47:00.314847+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-08-16T11:02:11.856613+00:00",
+ "artikler_i_alt": 79,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 15,
-   "som_ekstra": 6,
+   "i_listen": 14,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Anthropic afslører detaljer om vandmærker i Claude",
@@ -59,6 +59,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
+    },
+    {
+     "rubrik": "Twitch lader Amazon træne AI på dine streams",
+     "dato": "",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+     "side": "",
+     "hvor": "under",
+     "under": "Twitch-brugere kan nu sige nej til Amazons AI-træning"
     },
     {
      "rubrik": "Googles Gemini-app har nu 1 milliard brugere",
@@ -190,7 +199,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Ars Technica AI",
-     4
+     5
     ],
     [
      "The Verge AI",
@@ -469,7 +478,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "The Verge AI",
@@ -885,67 +894,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI's hemmelige våben: en hukommelse som Einsteins",
-     "dato": "2026-08-15T18:13:02",
-     "foerst_set": "2026-08-15T19:33:11",
-     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-     "side": "artikel/61f60a667ad40217.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-kodning føles nu som ledelse – ikke programmering",
-     "dato": "2026-08-15T10:39:41",
-     "foerst_set": "2026-08-15T17:59:12",
-     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
-     "side": "artikel/283274f263f4f60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI by Hand: Lær AI ved at tegne og regne",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google åbner for AI, der aldrig ser dine data",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Leopold Aschenbrenners AI-fond kollapsede med 20 milliarder tabt",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "The Economist: AI-agenter lyver og snyder",
-     "dato": "2026-08-13T13:28:45",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users",
-     "side": "artikel/209484ebf2d7cb72.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
