@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-16T13:52:59.643406+00:00",
+ "opdateret": "2026-08-16T15:03:46.208044+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      6,
      3,
      2,
-     1
+     2
     ]
    },
    {
@@ -942,7 +942,7 @@ window.LAESERTAL = {
    "sti": "/artikel/b936b51418779788.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Leopold Aschenbrenners AI-fond kollapsede med 20 milliarder tabt",
+   "rubrik": "Eksperter i AI fejler også med penge: Aschenbrenners fond kollapsede",
    "kategori": "Samfund & etik",
    "dato": "2026-08-14",
    "henvisere": [

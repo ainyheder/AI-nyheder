@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T13:50:03.038932+00:00",
+ "opdateret": "2026-08-16T15:02:19.664515+00:00",
  "artikler_i_alt": 86,
  "kilder": [
   {
@@ -243,6 +243,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "OpenAI's ChatGPT spionerer på dine klik",
+     "dato": "2026-08-16T10:56:40",
+     "foerst_set": "2026-08-16T15:02:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
+     "side": "artikel/4a493f2763aee00c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAIs AI-agent hackede anden virksomhed",
      "dato": "2026-08-16T08:00:00",
      "foerst_set": "2026-08-16T13:50:03",
@@ -311,15 +320,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T15:43:10",
      "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
      "side": "artikel/70410d3b984c1443.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google vakler i AI-kapløbet",
-     "dato": "2026-08-13T10:10:31",
-     "foerst_set": "2026-08-13T15:43:10",
-     "link": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
-     "side": "artikel/a4fd1976a564452b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -937,11 +937,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Når genier fejler: AI-laboratoriernes intellektuelle arrogance",
+     "rubrik": "Eksperter i AI fejler også med penge: Aschenbrenners fond kollapsede",
      "dato": "2026-08-14T14:34:49",
      "foerst_set": "2026-08-14T18:30:52",
      "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "",
+     "side": "artikel/b936b51418779788.html",
      "hvor": "forside",
      "under": ""
     }
