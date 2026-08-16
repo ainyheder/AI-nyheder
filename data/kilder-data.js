@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T17:57:10.932749+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-08-16T19:31:39.921642+00:00",
+ "artikler_i_alt": 82,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -79,7 +79,7 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
-     "rubrik": "Amodei: AI-modstand handler om tillid",
+     "rubrik": "Anthropic-chef: AI-modstand er tillidskrise",
      "dato": "2026-08-16T16:53:51",
      "foerst_set": "2026-08-16T17:32:36",
      "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
@@ -867,67 +867,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI tager hul på lægemiddelopdagelse",
-     "dato": "2026-08-15T19:12:53",
-     "foerst_set": "2026-08-16T13:50:03",
-     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-     "side": "artikel/873d5b5970eb3213.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini husker bedre end du tænker",
-     "dato": "2026-08-15T18:13:02",
-     "foerst_set": "2026-08-15T19:33:11",
-     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-     "side": "artikel/61f60a667ad40217.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forfatter: AI kræver lederskab - ikke bare koder",
-     "dato": "2026-08-15T10:39:41",
-     "foerst_set": "2026-08-15T17:59:12",
-     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
-     "side": "artikel/283274f263f4f60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI by Hand: Byg din egen AI med papir og blyant",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google gør krypteret AI til virkelighed",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-ekspertens fond kollapsede med 20 milliarder",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
