@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T11:59:35.573909+00:00",
- "artikler_i_alt": 79,
+ "opdateret": "2026-08-16T13:50:03.038932+00:00",
+ "artikler_i_alt": 86,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 14,
-   "som_ekstra": 7,
+   "i_listen": 15,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "Anthropic afslører detaljer om vandmærker i Claude",
@@ -41,15 +41,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lader dig fjerne vandmærker fra AI-billeder"
-    },
-    {
-     "rubrik": "Microsoft skrotter Copilot-funktioner og lægger apps sammen",
-     "dato": "",
-     "foerst_set": "2026-08-13T15:43:10",
-     "link": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
-     "side": "",
-     "hvor": "under",
-     "under": "Microsoft samler AI-apps i én superapp"
     },
     {
      "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
@@ -187,11 +178,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nvidias 500 milliarder-plan: Brugte GPU'er får nyt liv",
-     "dato": "2026-08-13T15:08:00",
+     "rubrik": "Microsoft dropper AI-funktioner og lægger Copilot sammen",
+     "dato": "2026-08-13T15:30:52",
      "foerst_set": "2026-08-13T15:43:10",
-     "link": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
-     "side": "artikel/7e37825fb53ff2ee.html",
+     "link": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
+     "side": "artikel/ae02d5bda82cc078.html",
      "hvor": "forside",
      "under": ""
     }
@@ -203,7 +194,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "OpenAI Blog",
@@ -250,6 +241,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "OpenAIs AI-agent hackede anden virksomhed",
+     "dato": "2026-08-16T08:00:00",
+     "foerst_set": "2026-08-16T13:50:03",
+     "link": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
+     "side": "artikel/1fc865a6bfa5a80d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Your AI Slop Bores Me: Leg som chatbot",
@@ -322,25 +322,16 @@ window.KILDER_STATUS = {
      "side": "artikel/a4fd1976a564452b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Microsoft samler AI-apps i én superapp",
-     "dato": "2026-08-13T09:30:00",
-     "foerst_set": "2026-08-13T15:43:10",
-     "link": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-     "side": "artikel/ed2d0e440f58f260.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
      3
     ],
     [
-     "Ars Technica AI",
-     3
+     "TechCrunch AI",
+     2
     ]
    ]
   },
@@ -894,12 +885,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "AI i medicin: Nature ser vejen frem",
+     "dato": "2026-08-15T19:12:53",
+     "foerst_set": "2026-08-16T13:50:03",
+     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+     "side": "artikel/873d5b5970eb3213.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI's kæmpe hukommelse udkonkurrerer hjernen",
+     "dato": "2026-08-15T18:13:02",
+     "foerst_set": "2026-08-15T19:33:11",
+     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+     "side": "artikel/61f60a667ad40217.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI kræver lederevner frem for kodning",
+     "dato": "2026-08-15T10:39:41",
+     "foerst_set": "2026-08-15T17:59:12",
+     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+     "side": "artikel/283274f263f4f60a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI by Hand lærer dig AI uden computer",
+     "dato": "2026-08-14T15:58:59",
+     "foerst_set": "2026-08-15T03:12:38",
+     "link": "https://www.byhand.ai/",
+     "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google åbner for hemmelig AI med ny teknologi",
+     "dato": "2026-08-14T15:43:10",
+     "foerst_set": "2026-08-14T21:44:39",
+     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "side": "artikel/87274b2d7ed5d37a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Når genier fejler: AI-laboratoriernes intellektuelle arrogance",
+     "dato": "2026-08-14T14:34:49",
+     "foerst_set": "2026-08-14T18:30:52",
+     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
