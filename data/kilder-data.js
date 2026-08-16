@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T03:32:35.951310+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-08-16T05:51:53.838454+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -881,119 +881,10 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 25,
-   "i_listen": 25,
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Rachel Lawrence: Ræsonnering er en regel, AI kan lære",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12325",
-     "side": "artikel/3695b874da5777af.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Diagnostic Foundation tester AI-forskeres ærlighed",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12345",
-     "side": "artikel/bdea41f6ff148408.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sarah Ball og Phil Hackemann advarer om censurværktøj",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12346",
-     "side": "artikel/a5cfea95d9ea8e93.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI's moral ligner din – men er helt anderledes",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12368",
-     "side": "artikel/12a63dcfeade83d1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Lajili og Brahmi lader AI fordele opgaver hurtigere",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12371",
-     "side": "artikel/fe5eabcf53bae2ac.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Vijay Keswani: AI skal lære at tænke som os",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12372",
-     "side": "artikel/bd0ca28b20baf8f5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forskere: AI er farligere på andre sprog",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12373",
-     "side": "artikel/9310e8ef319eca1a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dual-Flow Transformers: Ny metode deler arbejdet i to spor",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12385",
-     "side": "artikel/466290140d790e43.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta-LoRA lærer dine præferencer på tværs af domæner",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12389",
-     "side": "artikel/b4615808c02e6558.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AstraZeneca bygger AI-forsker til medicin",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12395",
-     "side": "artikel/f52cdc3cbc97fd9f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI kan følge ordrer – men kun nogle få ad gangen",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12426",
-     "side": "artikel/b2c570d99d4389ff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "MindMemOS giver AI en hukommelse, der selv vokser",
-     "dato": "2026-08-15T00:00:00",
-     "foerst_set": "2026-08-15T05:46:18",
-     "link": "https://arxiv.org/abs/2608.12428",
-     "side": "artikel/5fe283aea7bad32d.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   },
   {
