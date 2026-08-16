@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T21:01:30.922646+00:00",
- "artikler_i_alt": 82,
+ "opdateret": "2026-08-16T21:57:50.031484+00:00",
+ "artikler_i_alt": 89,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -198,7 +198,7 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     3
+     2
     ]
    ]
   },
@@ -250,6 +250,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "OpenAI lukker sikkerhedsteam før børsnotering",
+     "dato": "2026-08-16T17:32:56",
+     "foerst_set": "2026-08-16T21:57:50",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
+     "side": "artikel/eb794a2fd02e4759.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI's ChatGPT spionerer på dine klik",
@@ -311,15 +320,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects",
      "side": "artikel/10399f170c3bdbb0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Higgsfield viser AI-film med menneskeligt hjerte",
-     "dato": "2026-08-13T11:30:00",
-     "foerst_set": "2026-08-13T15:43:10",
-     "link": "https://www.theverge.com/entertainment/977994/higgsfield-ai-cully-hill-boys-black-list",
-     "side": "artikel/70410d3b984c1443.html",
      "hvor": "forside",
      "under": ""
     }
@@ -597,23 +597,14 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 21,
-   "som_ekstra": 3,
+   "i_listen": 22,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ultrafart: GPT-5.6 Sol 14 gange hurtigere",
      "dato": "",
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/previewing-ultrafast",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
-    },
-    {
-     "rubrik": "OpenAI: Byg hurtigere med GPT‑5.6",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
      "side": "",
      "hvor": "under",
      "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
@@ -635,6 +626,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
+    },
+    {
+     "rubrik": "OpenAI's GPT-5.6 guide: Byg AI-agenten hurtigere",
+     "dato": "2026-08-13T11:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+     "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "RingCentral satser på AI i hele virksomheden",
@@ -734,21 +734,12 @@ window.KILDER_STATUS = {
      "side": "artikel/52b9c6e06b63d502.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI tester Astra mod cybertrusler",
-     "dato": "2026-08-07T15:20:00",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-     "side": "artikel/93f793ec8172b713.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     2
     ]
    ]
   },
@@ -876,12 +867,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Handel med Anthropic-kreditter bliver en grå markedsplads",
+     "dato": "2026-08-16T14:44:55",
+     "foerst_set": "2026-08-16T19:55:23",
+     "link": "https://vectoral.com/blog/who-are-the-token-brokers",
+     "side": "artikel/41f2fc1010ceb37a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nature ser på AI's vej mod nye lægemidler",
+     "dato": "2026-08-15T19:12:53",
+     "foerst_set": "2026-08-16T13:50:03",
+     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+     "side": "artikel/873d5b5970eb3213.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI husker bare bedre end os",
+     "dato": "2026-08-15T18:13:02",
+     "foerst_set": "2026-08-15T19:33:11",
+     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+     "side": "artikel/61f60a667ad40217.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-udvikling ligner ledelse mere end kodning",
+     "dato": "2026-08-15T10:39:41",
+     "foerst_set": "2026-08-15T17:59:12",
+     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+     "side": "artikel/283274f263f4f60a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI by Hand lærer dig AI bygge selv",
+     "dato": "2026-08-14T15:58:59",
+     "foerst_set": "2026-08-15T03:12:38",
+     "link": "https://www.byhand.ai/",
+     "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "HEIR: Googles nye værktøj holder AI-data hemmelige",
+     "dato": "2026-08-14T15:43:10",
+     "foerst_set": "2026-08-14T21:44:39",
+     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "side": "artikel/87274b2d7ed5d37a.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
