@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-16T15:02:19.664515+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-08-16T15:59:57.968239+00:00",
+ "artikler_i_alt": 82,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -597,7 +597,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 20,
+   "i_listen": 22,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -619,15 +619,6 @@ window.KILDER_STATUS = {
      "under": "OpenAI skifter salgschef efter kun ni måneder"
     },
     {
-     "rubrik": "RingCentral bruger ChatGPT til at bygge AI hurtigere",
-     "dato": "",
-     "foerst_set": "2026-08-12T22:26:02.586959+00:00",
-     "link": "https://openai.com/index/ringcentral",
-     "side": "",
-     "hvor": "under",
-     "under": "Sam Altman: Virksomheder sætter AI på arbejde"
-    },
-    {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
      "foerst_set": "2026-08-11T04:53:48.481756+00:00",
@@ -637,20 +628,20 @@ window.KILDER_STATUS = {
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
     },
     {
-     "rubrik": "OpenAI lancerer GPT-5.6-Cyber til sikkerhedsforskere",
-     "dato": "",
-     "foerst_set": "2026-08-10T19:44:23.966320+00:00",
-     "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI åbner cyberværktøjer for udvalgte partnere"
-    },
-    {
      "rubrik": "OpenAI: Byg hurtigere med GPT‑5.6",
      "dato": "2026-08-13T11:00:00",
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
      "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "RingCentral satser på AI i hele virksomheden",
+     "dato": "2026-08-12T00:00:00",
+     "foerst_set": "2026-08-12T22:26:02",
+     "link": "https://openai.com/index/ringcentral",
+     "side": "artikel/dc35058bee54bda2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -709,6 +700,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI lancerer GPT-5.6-Cyber til cyberforsvar",
+     "dato": "2026-08-10T10:00:00",
+     "foerst_set": "2026-08-10T19:44:23",
+     "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+     "side": "artikel/d570d2706121db35.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lancerer premium-pladser til virksomheder",
      "dato": "2026-08-10T00:00:00",
      "foerst_set": "2026-08-10T19:44:23",
@@ -732,24 +732,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-10T15:44:24",
      "link": "https://openai.com/index/model-ml",
      "side": "artikel/52b9c6e06b63d502.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI tester Astra mod cybertrusler",
-     "dato": "2026-08-07T15:20:00",
-     "foerst_set": "2026-08-07T18:07:29",
-     "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-     "side": "artikel/93f793ec8172b713.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "HSP GRUPPE bruger ChatGPT til rådgivning",
-     "dato": "2026-08-07T09:00:00",
-     "foerst_set": "2026-08-07T11:29:56",
-     "link": "https://openai.com/index/hsp-gruppe",
-     "side": "artikel/04dbcdd1e1d91c0f.html",
      "hvor": "forside",
      "under": ""
     }
@@ -885,67 +867,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI i medicin: Nature ser vejen frem",
-     "dato": "2026-08-15T19:12:53",
-     "foerst_set": "2026-08-16T13:50:03",
-     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-     "side": "artikel/873d5b5970eb3213.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI's kæmpe hukommelse udkonkurrerer hjernen",
-     "dato": "2026-08-15T18:13:02",
-     "foerst_set": "2026-08-15T19:33:11",
-     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-     "side": "artikel/61f60a667ad40217.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI kræver lederevner frem for kodning",
-     "dato": "2026-08-15T10:39:41",
-     "foerst_set": "2026-08-15T17:59:12",
-     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
-     "side": "artikel/283274f263f4f60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI by Hand lærer dig AI uden computer",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google åbner for hemmelig AI med ny teknologi",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Eksperter i AI fejler også med penge: Aschenbrenners fond kollapsede",
-     "dato": "2026-08-14T14:34:49",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://weightythoughts.com/p/when-genius-failsthe-intellectual",
-     "side": "artikel/b936b51418779788.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
