@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T15:44:49.867615+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-17T17:56:42.651515+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -68,6 +68,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+     "dato": "2026-08-17T16:38:44",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/",
+     "side": "artikel/897dfbe77af7f13c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Groq henter milliarder til ny Nvidia-sky",
+     "dato": "2026-08-17T16:15:12",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+     "side": "artikel/47e2b984551931a2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sådan opdager du, om din ChatGPT-konto er hacket",
+     "dato": "2026-08-15T16:10:00",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://techcrunch.com/2026/08/15/how-to-tell-if-your-ai-platforms-accounts-have-been-hacked/",
+     "side": "artikel/0dccda6e63b06f1e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia skyder 1,5 milliarder dollars i OpenAI-datacenter",
@@ -149,33 +176,6 @@ window.KILDER_STATUS = {
      "side": "artikel/81e5cc10e8e1ab97.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Kog vil gøre dine eksisterende GPU'er 30 gange hurtigere",
-     "dato": "2026-08-14T14:50:11",
-     "foerst_set": "2026-08-14T15:25:55",
-     "link": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-     "side": "artikel/042796346f67c266.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta, Microsoft, Google og Amazon kan fortryde gas-eventyr",
-     "dato": "2026-08-14T14:05:00",
-     "foerst_set": "2026-08-14T15:25:55",
-     "link": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-     "side": "artikel/0fccedf8ea195bfb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Writers Palmyra X6 skærer AI-regningen",
-     "dato": "2026-08-13T21:13:24",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
-     "side": "artikel/539d991b17b150c9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -185,11 +185,11 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     2
+     1
     ],
     [
      "OpenAI Blog",
-     2
+     1
     ]
    ]
   },
@@ -203,18 +203,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 3,
+   "i_listen": 10,
+   "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "OpenAI mister endnu en topleder",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI skifter salgschef efter kun ni måneder"
-    },
     {
      "rubrik": "ChatGPT and Gemini both just passed 1 billion users",
      "dato": "",
@@ -313,6 +304,15 @@ window.KILDER_STATUS = {
      "side": "artikel/fcca288b1b061596.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI mister salgschef Denise Dresser",
+     "dato": "2026-08-13T15:28:39",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
+     "side": "artikel/45947aa8ee002490.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -322,7 +322,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -588,8 +588,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 22,
-   "som_ekstra": 2,
+   "i_listen": 23,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ultrafart: GPT-5.6 Sol 14 gange hurtigere",
@@ -599,15 +599,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
-    },
-    {
-     "rubrik": "OpenAI henter ny salgschef til at tjene penge på AI",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI skifter salgschef efter kun ni måneder"
     },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
@@ -651,6 +642,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
      "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI henter ny chef til salg",
+     "dato": "2026-08-13T09:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+     "side": "artikel/36609b9396fd20f8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -716,21 +716,12 @@ window.KILDER_STATUS = {
      "side": "artikel/dd3ed843f2799c9f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer GPT-5.6-Cyber til cyberforsvar",
-     "dato": "2026-08-10T10:00:00",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-     "side": "artikel/d570d2706121db35.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -965,6 +956,24 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Wiz AI-forsker fandt hul i Snowflake via GitHub",
+     "dato": "2026-08-17T14:18:38",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+     "side": "artikel/64d3338b4aed0757.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-chef vil ændre AI-regler og budskab",
+     "dato": "2026-08-17T01:59:56",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+     "side": "artikel/cb747b4c60b59b55.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Handler med AI-kreditter bliver en ny industri",
      "dato": "2026-08-16T14:44:55",
      "foerst_set": "2026-08-16T19:55:23",
@@ -997,24 +1006,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-15T17:59:12",
      "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
      "side": "artikel/283274f263f4f60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI by Hand: Lær AI ved at bygge den selv",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google gør krypteret AI praktisk med HEIR",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
      "hvor": "forside",
      "under": ""
     }
