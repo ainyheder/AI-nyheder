@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T14:03:47.238133+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-17T15:44:49.867615+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -68,6 +68,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Nvidia skyder 1,5 milliarder dollars i OpenAI-datacenter",
+     "dato": "2026-08-17T15:16:24",
+     "foerst_set": "2026-08-17T15:44:49",
+     "link": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
+     "side": "artikel/40a9816ea4807c41.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Wispr får 2,8 milliarder til stemme-AI og møder",
@@ -165,15 +174,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T22:26:49",
      "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
      "side": "artikel/539d991b17b150c9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Databricks endte med at rejse 5 milliarder dollar",
-     "dato": "2026-08-13T20:14:39",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-     "side": "artikel/7261e6583d8e84ce.html",
      "hvor": "forside",
      "under": ""
     }
@@ -744,7 +744,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -816,15 +816,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-22T13:38:54",
      "link": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
      "side": "artikel/860743384445f2e5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lancerer ny AI til it-sikkerhed",
-     "dato": "2026-07-17T15:00:11",
-     "foerst_set": "2026-07-17T15:00:11",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-     "side": "artikel/d6d19d126db7227d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -967,12 +958,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Handler med AI-kreditter bliver en ny industri",
+     "dato": "2026-08-16T14:44:55",
+     "foerst_set": "2026-08-16T19:55:23",
+     "link": "https://vectoral.com/blog/who-are-the-token-brokers",
+     "side": "artikel/41f2fc1010ceb37a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nature: AI kan fremskynde opdagelsen af nye lægemidler",
+     "dato": "2026-08-15T19:12:53",
+     "foerst_set": "2026-08-16T13:50:03",
+     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+     "side": "artikel/873d5b5970eb3213.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere: AI husker bare bedre end os",
+     "dato": "2026-08-15T18:13:02",
+     "foerst_set": "2026-08-15T19:33:11",
+     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+     "side": "artikel/61f60a667ad40217.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI kræver lederskab, ikke kodning",
+     "dato": "2026-08-15T10:39:41",
+     "foerst_set": "2026-08-15T17:59:12",
+     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+     "side": "artikel/283274f263f4f60a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI by Hand: Lær AI ved at bygge den selv",
+     "dato": "2026-08-14T15:58:59",
+     "foerst_set": "2026-08-15T03:12:38",
+     "link": "https://www.byhand.ai/",
+     "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google gør krypteret AI praktisk med HEIR",
+     "dato": "2026-08-14T15:43:10",
+     "foerst_set": "2026-08-14T21:44:39",
+     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "side": "artikel/87274b2d7ed5d37a.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
