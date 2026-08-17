@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T03:33:28.174976+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-08-17T06:03:10.610570+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
+   "i_listen": 18,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -23,15 +23,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
-    },
-    {
-     "rubrik": "Meta udgiver åben AI-model Glimmer",
-     "dato": "",
-     "foerst_set": "2026-08-14T18:30:52.991064+00:00",
-     "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
-     "side": "",
-     "hvor": "under",
-     "under": "Zuckerbergs AI-løfte til alle: Meta udgiver Glimmer"
     },
     {
      "rubrik": "Google fjerner synligt vandmærke fra AI-genereret indhold",
@@ -133,6 +124,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Metas Glimmer-model er åben, men ikke helt",
+     "dato": "2026-08-14T14:00:00",
+     "foerst_set": "2026-08-14T18:30:52",
+     "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+     "side": "artikel/81e5cc10e8e1ab97.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Kog vil gøre dine eksisterende GPU'er 30 gange hurtigere",
      "dato": "2026-08-14T14:50:11",
      "foerst_set": "2026-08-14T15:25:55",
@@ -176,15 +176,6 @@ window.KILDER_STATUS = {
      "side": "artikel/459413c052960c03.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "IBM og OpenAI indgår partnerskab om virksomheds-AI",
-     "dato": "2026-08-13T19:19:49",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
-     "side": "artikel/b377fa89f3ad152d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -194,7 +185,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "OpenAI Blog",
@@ -212,9 +203,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 3,
+   "i_listen": 8,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Microsoft dropper Copilots gule figur Mico",
+     "dato": "",
+     "foerst_set": "2026-08-13T22:26:49",
+     "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsoft dropper AI-funktioner og lægger Copilot sammen"
+    },
     {
      "rubrik": "OpenAI mister endnu en topleder",
      "dato": "",
@@ -297,15 +297,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Microsoft dropper Copilots gule figur Mico",
-     "dato": "2026-08-13T17:42:38",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
-     "side": "artikel/a202a998008fb063.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Zuckerbergs AI-manifest og Instagrams nye logo",
      "dato": "2026-08-14T12:54:16",
      "foerst_set": "2026-08-13T19:48:07",
@@ -326,12 +317,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Ars Technica AI",
+     "TechCrunch AI",
      3
     ],
     [
-     "TechCrunch AI",
-     2
+     "Ars Technica AI",
+     3
     ]
    ]
   },
@@ -854,10 +845,119 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 0,
-   "i_listen": 0,
+   "hentet": 25,
+   "i_listen": 25,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Forskere finder måde at stoppe AI's selvfedhed",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13564",
+     "side": "artikel/aa69ef98e036c33c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ny metode kan gøre AI hurtigere og billigere",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13565",
+     "side": "artikel/9fdf15539889150e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-modeller gemmer på hjerne-lignende opbygning",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13567",
+     "side": "artikel/229ffdbf01ac1b96.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Års data viser: Sådan bruges sprogmodeller",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13573",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Agentao giver AI-agenter styr på egne værktøjer",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13574",
+     "side": "artikel/dcdc64592a0efc03.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Jan Kulveit: AI-test skal tænke på mennesker",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13577",
+     "side": "artikel/222cccc14985c963.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-modeller er sikre på svar – også når de tager fejl",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13591",
+     "side": "artikel/5574c532b8b665b3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere afslører: AI er uforudsigelig på tværs af opgaver",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13598",
+     "side": "artikel/b7f573ee168a0d7d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Babak Abbaschian kortlægger, hvorfor AI misforstår os",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13604",
+     "side": "artikel/de256d5c4d179743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Yiwei Liu lærer robotter at spørge, før de gætter",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13605",
+     "side": "artikel/64b7cbf5c596cd43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "MobileMem: AI lærer af dit år på mobilen",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13606",
+     "side": "artikel/444410fb526e85cf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "arXiv-forskere: AI-opdateringer kan forringe svar",
+     "dato": "2026-08-17T00:00:00",
+     "foerst_set": "2026-08-17T06:03:10",
+     "link": "https://arxiv.org/abs/2608.13607",
+     "side": "artikel/945b435261bb23ab.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -873,15 +973,6 @@ window.KILDER_STATUS = {
    "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Stripe køber AI-firmaet OpenRouter for over 7 milliarder",
-     "dato": "2026-08-16T20:31:16",
-     "foerst_set": "2026-08-17T03:33:28",
-     "link": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-     "side": "artikel/a47910953a2b8b7d.html",
-     "hvor": "forside",
-     "under": ""
-    },
     {
      "rubrik": "Handel med Anthropic-kreditter bliver en grå markedsplads",
      "dato": "2026-08-16T14:44:55",
@@ -924,6 +1015,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-15T03:12:38",
      "link": "https://www.byhand.ai/",
      "side": "artikel/7e91629f659a11e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google gør AI privat med krypterede data",
+     "dato": "2026-08-14T15:43:10",
+     "foerst_set": "2026-08-14T21:44:39",
+     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+     "side": "artikel/87274b2d7ed5d37a.html",
      "hvor": "forside",
      "under": ""
     }
