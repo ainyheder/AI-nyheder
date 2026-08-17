@@ -1,5 +1,5 @@
 window.HJERNE_STATUS = {
- "opdateret": "2026-08-17T10:07:57.734933+00:00",
+ "opdateret": "2026-08-17T11:45:19.345210+00:00",
  "daglig_model": "deepseek-v4-flash",
  "udbyder": "deepseek",
  "billedmodel": "gemini-3.1-flash-lite-image",
