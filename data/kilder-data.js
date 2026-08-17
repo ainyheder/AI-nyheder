@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T06:03:10.610570+00:00",
+ "opdateret": "2026-08-17T08:26:47.460094+00:00",
  "artikler_i_alt": 115,
  "kilder": [
   {
@@ -877,11 +877,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Års data viser: Sådan bruges sprogmodeller",
+     "rubrik": "Forskere: AI-svar kan blive 3 gange hurtigere",
      "dato": "2026-08-17T00:00:00",
      "foerst_set": "2026-08-17T06:03:10",
      "link": "https://arxiv.org/abs/2608.13573",
-     "side": "",
+     "side": "artikel/a6cb9d5a081fb99a.html",
      "hvor": "forside",
      "under": ""
     },
