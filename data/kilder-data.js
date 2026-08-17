@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T08:26:47.460094+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-17T10:08:19.125775+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -185,7 +185,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "OpenAI Blog",
@@ -203,18 +203,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 4,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Microsoft dropper Copilots gule figur Mico",
-     "dato": "",
-     "foerst_set": "2026-08-13T22:26:49",
-     "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
-     "side": "",
-     "hvor": "under",
-     "under": "Microsoft dropper AI-funktioner og lægger Copilot sammen"
-    },
     {
      "rubrik": "OpenAI mister endnu en topleder",
      "dato": "",
@@ -297,6 +288,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Microsoft dropper Mico: Copilot mister sin gule ansigt",
+     "dato": "2026-08-13T17:42:38",
+     "foerst_set": "2026-08-13T22:26:49",
+     "link": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+     "side": "artikel/a202a998008fb063.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Zuckerbergs AI-manifest og Instagrams nye logo",
      "dato": "2026-08-14T12:54:16",
      "foerst_set": "2026-08-13T19:48:07",
@@ -317,12 +317,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
      3
     ],
     [
-     "Ars Technica AI",
-     3
+     "TechCrunch AI",
+     2
     ]
    ]
   },
@@ -486,6 +486,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Når robotvennen Moxie dør",
+     "dato": "2026-08-17T09:00:00",
+     "foerst_set": "2026-08-17T10:08:19",
+     "link": "https://www.technologyreview.com/2026/08/17/1141568/moxie-when-kids-robot-best-friend-dies/",
+     "side": "artikel/0c3e7b3f060b78fb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Flock strammer regler for politiets kameraer",
      "dato": "2026-08-13T13:41:10",
      "foerst_set": "2026-08-13T15:43:10",
@@ -563,15 +572,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-30T11:32:44",
      "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
      "side": "artikel/d3ef4a34cd19d374.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok, Meta og Sydkorea: AI-hypen rundt",
-     "dato": "2026-07-29T08:42:57",
-     "foerst_set": "2026-07-29T10:20:57",
-     "link": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai/",
-     "side": "artikel/b4d3a90f63791469.html",
      "hvor": "forside",
      "under": ""
     }
@@ -967,67 +967,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "TimeoutError: The read operation timed out",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Handel med Anthropic-kreditter bliver en grå markedsplads",
-     "dato": "2026-08-16T14:44:55",
-     "foerst_set": "2026-08-16T19:55:23",
-     "link": "https://vectoral.com/blog/who-are-the-token-brokers",
-     "side": "artikel/41f2fc1010ceb37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nature ser på AI's vej mod nye lægemidler",
-     "dato": "2026-08-15T19:12:53",
-     "foerst_set": "2026-08-16T13:50:03",
-     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-     "side": "artikel/873d5b5970eb3213.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI husker bare bedre end os",
-     "dato": "2026-08-15T18:13:02",
-     "foerst_set": "2026-08-15T19:33:11",
-     "link": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-     "side": "artikel/61f60a667ad40217.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-udvikling ligner ledelse mere end kodning",
-     "dato": "2026-08-15T10:39:41",
-     "foerst_set": "2026-08-15T17:59:12",
-     "link": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
-     "side": "artikel/283274f263f4f60a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI by Hand lærer dig AI bygge selv",
-     "dato": "2026-08-14T15:58:59",
-     "foerst_set": "2026-08-15T03:12:38",
-     "link": "https://www.byhand.ai/",
-     "side": "artikel/7e91629f659a11e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google gør AI privat med krypterede data",
-     "dato": "2026-08-14T15:43:10",
-     "foerst_set": "2026-08-14T21:44:39",
-     "link": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-     "side": "artikel/87274b2d7ed5d37a.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
