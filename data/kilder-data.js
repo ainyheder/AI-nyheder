@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-18T15:59:05.457016+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-18T17:51:49.363559+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
-   "som_ekstra": 7,
+   "i_listen": 16,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Apples kamera-AirPods undgår måske privatlivsfælden",
+     "dato": "",
+     "foerst_set": "2026-08-18T17:51:49",
+     "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple's nye AirPods med kamera dukker op i lækket video"
+    },
     {
      "rubrik": "OpenAI laver ChatGPT til teenagere",
      "dato": "",
@@ -77,6 +86,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Jane Street' investering sender Etched til 21 milliarder dollar",
+     "dato": "2026-08-18T17:21:58",
+     "foerst_set": "2026-08-18T17:51:49",
+     "link": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
+     "side": "artikel/506ef6f4e04268f7.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Warp Factories gør AI-kodning nemt for små virksomheder",
@@ -176,15 +194,6 @@ window.KILDER_STATUS = {
      "side": "artikel/30514dd888ea36f4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic-chef: AI-modstand er tillidskrise",
-     "dato": "2026-08-16T16:53:51",
-     "foerst_set": "2026-08-16T17:32:36",
-     "link": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
-     "side": "artikel/9eeacf6b78b6dd62.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -194,7 +203,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "Hacker News: AI",
@@ -327,7 +336,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -623,6 +632,15 @@ window.KILDER_STATUS = {
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
     },
     {
+     "rubrik": "Asana brugte OpenAIs Codex til 5 års arbejde på 2 uger",
+     "dato": "2026-08-18T07:00:00",
+     "foerst_set": "2026-08-18T17:51:49",
+     "link": "https://openai.com/index/asana",
+     "side": "artikel/eaf7eab1e8f78770.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI og CodeAI lærer elever at tænke kritisk om AI",
      "dato": "2026-08-18T11:00:00",
      "foerst_set": "2026-08-18T11:46:13",
@@ -718,15 +736,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-11T04:53:48",
      "link": "https://openai.com/index/how-enterprises-put-ai-to-work",
      "side": "artikel/143a56c3831ed960.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Virgin Atlantic får hjælp af OpenAI's ChatGPT Work",
-     "dato": "2026-08-10T00:00:00",
-     "foerst_set": "2026-08-11T04:53:48",
-     "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-     "side": "artikel/f7be8d43b299d944.html",
      "hvor": "forside",
      "under": ""
     }
