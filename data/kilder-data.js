@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-17T21:45:37.562585+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-18T03:25:41.404267+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
+   "i_listen": 18,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -23,15 +23,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
-    },
-    {
-     "rubrik": "Zuckerbergs AI-løfte til alle: Meta udgiver Glimmer",
-     "dato": "",
-     "foerst_set": "2026-08-14T18:30:52.991064+00:00",
-     "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-     "side": "",
-     "hvor": "under",
-     "under": "Metas Glimmer-model er åben, men ikke helt"
     },
     {
      "rubrik": "Google fjerner synligt vandmærke fra AI-genereret indhold",
@@ -77,6 +68,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Anthropic runder 65 mia. dollars i årlig omsætning",
+     "dato": "2026-08-17T23:56:26",
+     "foerst_set": "2026-08-18T03:25:41",
+     "link": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+     "side": "artikel/de8e9b90f0043d51.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Jacob Bank lukker AI-startup og rykker til Google Chrome",
@@ -176,15 +176,6 @@ window.KILDER_STATUS = {
      "side": "artikel/e68ddcb8301126ef.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Metas Glimmer-model er åben, men ikke helt",
-     "dato": "2026-08-14T14:00:00",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
-     "side": "artikel/81e5cc10e8e1ab97.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -198,10 +189,6 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     1
-    ],
-    [
-     "OpenAI Blog",
      1
     ]
    ]
@@ -236,6 +223,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Whiskers dyre kattebakke med AI kan ikke kende katte fra hinanden",
+     "dato": "2026-08-17T07:00:00",
+     "foerst_set": "2026-08-18T03:25:41",
+     "link": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
+     "side": "artikel/46539d6c8f0bc5f6.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude får usynlige vandmærker for at opfylde EU-regler",
@@ -315,15 +311,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
      "side": "artikel/fcca288b1b061596.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI mister salgschef Denise Dresser",
-     "dato": "2026-08-13T15:28:39",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
-     "side": "artikel/45947aa8ee002490.html",
      "hvor": "forside",
      "under": ""
     }
@@ -610,18 +597,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 1,
+   "i_listen": 24,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "OpenAI lancerer ultrafart: GPT-5.6 Sol 14 gange hurtigere",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://openai.com/index/previewing-ultrafast",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere"
-    },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
@@ -664,6 +642,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
      "side": "artikel/3e500ccae6c75743.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+     "dato": "2026-08-13T10:00:00",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://openai.com/index/previewing-ultrafast",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -729,23 +716,9 @@ window.KILDER_STATUS = {
      "side": "artikel/1b4a121cfec6e61f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI åbner cyberværktøjer for udvalgte partnere",
-     "dato": "2026-08-10T10:00:00",
-     "foerst_set": "2026-08-10T19:44:23",
-     "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-     "side": "artikel/dd3ed843f2799c9f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "Google DeepMind",
@@ -971,10 +944,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -985,51 +958,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-chef: AI-modstand er tillidskrise"
-    },
-    {
-     "rubrik": "AI;DR skaber ramaskrig mod AI-tekster",
-     "dato": "2026-08-17T19:47:15",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
-     "side": "artikel/ad020c91f6cb954c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google, Apple og Amazon: Sådan slår du AI fra",
-     "dato": "2026-08-17T14:07:56",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.librarian.net/notoai/",
-     "side": "artikel/8893a476984436dc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Wiz fandt sikkerhedshul i Snowflakes Jira",
-     "dato": "2026-08-17T14:18:38",
-     "foerst_set": "2026-08-17T17:56:42",
-     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-     "side": "artikel/64d3338b4aed0757.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI Credits: Handel med ubrugte AI-kreditter boomer",
-     "dato": "2026-08-16T14:44:55",
-     "foerst_set": "2026-08-16T19:55:23",
-     "link": "https://vectoral.com/blog/who-are-the-token-brokers",
-     "side": "artikel/41f2fc1010ceb37a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nature-gennemgang: AI fremskynder jagten på ny medicin",
-     "dato": "2026-08-15T19:12:53",
-     "foerst_set": "2026-08-16T13:50:03",
-     "link": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-     "side": "artikel/873d5b5970eb3213.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
