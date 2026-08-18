@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-18T05:54:49.512347+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-18T08:05:45.158726+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
+   "i_listen": 17,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
+    },
+    {
+     "rubrik": "Meta udgiver Glimmer: Er Zuckerbergs AI for alle?",
+     "dato": "",
+     "foerst_set": "2026-08-14T18:30:52.991064+00:00",
+     "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+     "side": "",
+     "hvor": "under",
+     "under": "Metas Glimmer-model er åben, men ikke helt"
     },
     {
      "rubrik": "Google fjerner synligt vandmærke fra AI-genereret indhold",
@@ -899,7 +908,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere: AI-love er ikke nok – vi skal bruge fælles protokoller",
+     "rubrik": "Forskere: AI-styring kræver ISO-lignende protokoller",
      "dato": "2026-08-18T00:00:00",
      "foerst_set": "2026-08-18T05:54:49",
      "link": "https://arxiv.org/abs/2608.14568",
