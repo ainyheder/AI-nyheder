@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-18T11:46:13.954101+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-18T14:17:16.418414+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,8 +13,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 17,
-   "som_ekstra": 6,
+   "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "OpenAI laver ChatGPT til teenagere",
+     "dato": "",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer ChatGPT-tilstand for teenagere"
+    },
     {
      "rubrik": "Anthropic afslører detaljer om vandmærker i Claude",
      "dato": "",
@@ -23,15 +32,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
-    },
-    {
-     "rubrik": "Meta udgiver Glimmer: Er Zuckerbergs AI for alle?",
-     "dato": "",
-     "foerst_set": "2026-08-14T18:30:52.991064+00:00",
-     "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-     "side": "",
-     "hvor": "under",
-     "under": "Metas Glimmer-model er åben, men ikke helt"
     },
     {
      "rubrik": "Google tillader fjernelse af vandmærker på AI-billeder",
@@ -77,6 +77,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Warp Factories gør AI-kodning nemt for små virksomheder",
+     "dato": "2026-08-18T14:00:00",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
+     "side": "artikel/0da80d9d513f763f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Perplexity fik 56 millioner downloads i Indien",
+     "dato": "2026-08-18T13:45:40",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+     "side": "artikel/e9529c23366c75df.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic runder 65 mia. dollars i årlig omsætning",
@@ -167,24 +185,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9eeacf6b78b6dd62.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "xAI sagsøgt: Grok brugt til misbrugsbilleder",
-     "dato": "2026-08-15T21:29:19",
-     "foerst_set": "2026-08-15T21:58:48",
-     "link": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
-     "side": "artikel/a17d0cbb65ba7f31.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "SpaceX lukker købet af AI-værktøjet Cursor",
-     "dato": "2026-08-15T16:30:00",
-     "foerst_set": "2026-08-15T17:34:37",
-     "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-     "side": "artikel/e68ddcb8301126ef.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -194,11 +194,11 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     1
+     2
     ],
     [
      "Hacker News: AI",
-     1
+     2
     ]
    ]
   },
@@ -232,6 +232,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Firefox' Smart Window henter aktuel info via Exa",
+     "dato": "2026-08-18T09:00:00",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
+     "side": "artikel/c99c4fc90930e655.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google AI kan ikke kende Boones katte fra hinanden",
+     "dato": "2026-08-18T08:01:29",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
+     "side": "artikel/ec7cbb3ceccb6b00.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Musk og Thiel overtager flyveledelsen – hvem betaler?",
@@ -297,15 +315,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Your AI Slop Bores Me: Leg som chatbot",
-     "dato": "2026-08-15T16:45:00",
-     "foerst_set": "2026-08-15T21:58:48",
-     "link": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
-     "side": "artikel/96fdcc1df6bbeb2c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Claude får usynlige vandmærker for at opfylde EU-regler",
      "dato": "2026-08-17T06:57:13",
      "foerst_set": "2026-08-14T18:30:52",
@@ -313,24 +322,19 @@ window.KILDER_STATUS = {
      "side": "artikel/dd02c006bef423b4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Zuckerbergs AI-manifest og Instagrams nye logo",
-     "dato": "2026-08-14T12:54:16",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
-     "side": "artikel/fcca288b1b061596.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     3
+     "TechCrunch AI",
+     2
     ],
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
+     2
+    ],
+    [
+     "OpenAI Blog",
      1
     ]
    ]
@@ -345,8 +349,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 2,
+   "i_listen": 19,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Amazon ødelægger sjældne bøger til AI",
@@ -358,13 +362,13 @@ window.KILDER_STATUS = {
      "under": "Amazon skærer i sjældne bøger for at træne AI"
     },
     {
-     "rubrik": "Instagram: Nye logo ligner AI-sjusk",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
-     "side": "",
-     "hvor": "under",
-     "under": "Zuckerbergs AI-manifest og Instagrams nye logo"
+     "rubrik": "Copilot afslørede selv sin egen sårbarhed",
+     "dato": "2026-08-18T13:00:04",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/",
+     "side": "artikel/5e6ff0a5049539ca.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "1872: SpaceX-ingeniører bygger robotfabrik til stål",
@@ -390,6 +394,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-14T15:25:55",
      "link": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
      "side": "artikel/30442beeaf4c72d6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Instagram nye logo ligner AI-slop",
+     "dato": "2026-08-13T17:32:10",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
+     "side": "artikel/5f281a8601314c93.html",
      "hvor": "forside",
      "under": ""
     },
@@ -455,24 +468,6 @@ window.KILDER_STATUS = {
      "side": "artikel/6b0cc768728a5d21.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Googles Gemini rundede 1 milliard brugere",
-     "dato": "2026-08-11T19:48:12",
-     "foerst_set": "2026-08-11T22:09:30",
-     "link": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/",
-     "side": "artikel/1497475e01bd4efb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta satser på åbne AI-modeller for at hamle op",
-     "dato": "2026-08-10T22:13:03",
-     "foerst_set": "2026-08-10T22:21:05",
-     "link": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/",
-     "side": "artikel/203504a117757f2a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -481,11 +476,11 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "The Verge AI",
-     3
+     "Google DeepMind",
+     2
     ],
     [
-     "Google DeepMind",
+     "The Verge AI",
      2
     ]
    ]
@@ -606,9 +601,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 0,
+   "i_listen": 23,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI lancerer ChatGPT til teenagere",
+     "dato": "",
+     "foerst_set": "2026-08-18T11:46:13",
+     "link": "https://openai.com/index/chatgpt-for-teens",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer ChatGPT-tilstand for teenagere"
+    },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
@@ -624,15 +628,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T11:46:13",
      "link": "https://openai.com/index/partnering-with-codeai",
      "side": "artikel/f7788bfa76bccfc8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer ChatGPT til teenagere",
-     "dato": "2026-08-18T11:00:00",
-     "foerst_set": "2026-08-18T11:46:13",
-     "link": "https://openai.com/index/chatgpt-for-teens",
-     "side": "artikel/48f9d5cfe56c266b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -725,9 +720,23 @@ window.KILDER_STATUS = {
      "side": "artikel/143a56c3831ed960.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Virgin Atlantic får hjælp af OpenAI's ChatGPT Work",
+     "dato": "2026-08-10T00:00:00",
+     "foerst_set": "2026-08-11T04:53:48",
+     "link": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+     "side": "artikel/f7be8d43b299d944.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "The Verge AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Google DeepMind",
@@ -935,7 +944,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI spår unges misbrug før det sker",
+     "rubrik": "AI spår unges misbrug via ABCD-studiet",
      "dato": "2026-08-18T00:00:00",
      "foerst_set": "2026-08-18T05:54:49",
      "link": "https://arxiv.org/abs/2608.14578",
@@ -953,12 +962,21 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
-   "som_ekstra": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Sjældne bøger endte hos Amazons AI-træning",
+     "dato": "",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon skærer i sjældne bøger for at træne AI"
+    },
     {
      "rubrik": "Debat: Hvordan skal vi regulere AI?",
      "dato": "",
@@ -967,12 +985,57 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-chef: AI-modstand er tillidskrise"
+    },
+    {
+     "rubrik": "Google køber krakket flyselskabs data til AI",
+     "dato": "2026-08-18T10:13:28",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+     "side": "artikel/ca719eb7dad32c9b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Israel lokker AI med falsk tænketank",
+     "dato": "2026-08-17T20:46:10",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+     "side": "artikel/26bfd15ddd20a353.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI;DR: Nyt fænomen skal afsløre robot-skrift",
+     "dato": "2026-08-17T19:47:15",
+     "foerst_set": "2026-08-17T21:45:37",
+     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+     "side": "artikel/ad020c91f6cb954c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "NoToAI.org: Sådan slukker du AI overalt",
+     "dato": "2026-08-17T14:07:56",
+     "foerst_set": "2026-08-17T21:45:37",
+     "link": "https://www.librarian.net/notoai/",
+     "side": "artikel/8893a476984436dc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-fejl åbnede Snowflakes Jira for hackere",
+     "dato": "2026-08-17T14:18:38",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+     "side": "artikel/64d3338b4aed0757.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     1
+     2
     ]
    ]
   }

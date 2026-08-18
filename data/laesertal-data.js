@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-18T11:48:40.148184+00:00",
+ "opdateret": "2026-08-18T14:21:31.521221+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      27,
      0,
      25,
-     27
+     28
     ]
    },
    {
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      3,
      2,
      4,
-     6,
-     1
+     7,
+     3
     ]
    },
    {
@@ -134,11 +134,11 @@ window.LAESERTAL = {
      4,
      7,
      11,
-     5,
+     4,
      0,
      0,
-     1,
-     3
+     2,
+     4
     ]
    },
    {
@@ -169,11 +169,11 @@ window.LAESERTAL = {
      6,
      7,
      8,
-     1,
+     2,
      1,
      3,
      6,
-     0
+     2
     ]
    },
    {
@@ -242,21 +242,21 @@ window.LAESERTAL = {
      0,
      2,
      0,
-     2,
+     1,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 33,
- "sidevisninger_i_alt": 64,
+ "besoeg_i_alt": 31,
+ "sidevisninger_i_alt": 60,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 33,
-   "visninger": 33
+   "besoeg": 31,
+   "visninger": 31
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
@@ -264,7 +264,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/0dccda6e63b06f1e.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -294,12 +294,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/a17d0cbb65ba7f31.html",
+   "sti": "/artikel/a8dd77df5184aa34.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/a8dd77df5184aa34.html",
+   "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -364,12 +364,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/459413c052960c03.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/8a7d5b391d35ec23.html",
+   "sti": "/artikel/0dccda6e63b06f1e.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -389,17 +389,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/203504a117757f2a.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/459413c052960c03.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/ed2d0e440f58f260.html",
+   "sti": "/artikel/a17d0cbb65ba7f31.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -407,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 33
+   "besoeg": 31
   }
  ],
  "ai_chats": [],
@@ -415,8 +405,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 33,
-    "visninger": 33
+    "besoeg": 31,
+    "visninger": 31
    }
   ],
   "/artikel/4662a98c4da9d5a3.html": [
@@ -426,7 +416,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/0dccda6e63b06f1e.html": [
+  "/artikel/897dfbe77af7f13c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -468,14 +458,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/a17d0cbb65ba7f31.html": [
+  "/artikel/a8dd77df5184aa34.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/a8dd77df5184aa34.html": [
+  "/artikel/ed2d0e440f58f260.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -566,14 +556,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/897dfbe77af7f13c.html": [
+  "/artikel/459413c052960c03.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/8a7d5b391d35ec23.html": [
+  "/artikel/0dccda6e63b06f1e.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -601,21 +591,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/203504a117757f2a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/459413c052960c03.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/ed2d0e440f58f260.html": [
+  "/artikel/a17d0cbb65ba7f31.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -807,12 +783,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/0dccda6e63b06f1e.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Sådan opdager du, om din ChatGPT-konto er hacket",
-   "kategori": "Hverdags-AI",
-   "dato": "2026-08-15",
+   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-17",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -897,12 +873,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/a17d0cbb65ba7f31.html",
+   "sti": "/artikel/a8dd77df5184aa34.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "xAI sagsøgt: Grok brugt til misbrugsbilleder",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-15",
+   "rubrik": "Lovable henter 400 millioner dollars og er nu 13,3 milliarder værd",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-12",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -912,12 +888,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/a8dd77df5184aa34.html",
+   "sti": "/artikel/ed2d0e440f58f260.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Lovable henter 400 millioner dollars og er nu 13,3 milliarder værd",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-12",
+   "rubrik": "Microsoft samler AI-apps i én superapp",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-13",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1077,12 +1053,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/459413c052960c03.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-17",
+   "rubrik": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-13",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1092,12 +1068,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/8a7d5b391d35ec23.html",
+   "sti": "/artikel/0dccda6e63b06f1e.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI's nye model knækker matematikkens hårdeste nødder",
-   "kategori": "Forskning",
-   "dato": "2026-08-11",
+   "rubrik": "Sådan opdager du, om din ChatGPT-konto er hacket",
+   "kategori": "Hverdags-AI",
+   "dato": "2026-08-15",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1152,42 +1128,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/203504a117757f2a.html",
+   "sti": "/artikel/a17d0cbb65ba7f31.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta satser på åbne AI-modeller for at hamle op",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-10",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/459413c052960c03.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI's GPT 5.6 Sol får turbo: 14x hurtigere",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-13",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/ed2d0e440f58f260.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Microsoft samler AI-apps i én superapp",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-13",
+   "rubrik": "xAI sagsøgt: Grok brugt til misbrugsbilleder",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-15",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1200,7 +1146,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 9
+   "visninger": 8
   },
   {
    "navn": "Samfund & etik",
@@ -1212,7 +1158,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Forskning",
-   "visninger": 3
+   "visninger": 2
   },
   {
    "navn": "Hverdags-AI",
