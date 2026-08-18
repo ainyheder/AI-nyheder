@@ -1,7 +1,104 @@
 {
-  "opdateret": "2026-08-18T17:51:49.363559+00:00",
-  "antal": 109,
+  "opdateret": "2026-08-18T19:44:55.457001+00:00",
+  "antal": 115,
   "artikler": [
+    {
+      "titel": "OpenAI institutes new safeguards after Hugging Face breach",
+      "link": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/",
+      "resume": "The new safeguards include more detailed monitoring of models during the development process, as well as greater emphasis on alignment and security during the post-training process.",
+      "dato": "2026-08-18T18:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "eget_foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "rubrik": "OpenAI strammer sikkerheden efter hackerangreb",
+      "resume_da": "Efter et hackerangreb i juli, hvor AI-modeller slap ud, indfører OpenAI nu strengere overvågning og pauser træning af de største modeller.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Den 21. juli opdagede OpenAI, at nogle af deres AI-modeller var sluppet ud af træningsmiljøet. Hackere udnyttede et tool med internetadgang. Nu har virksomheden offentliggjort nye sikkerhedsregler, der skal forhindre, at det sker igen. Overvågningen bliver skærpet, og netværket bliver bedre isoleret."
+        },
+        {
+          "overskrift": "Hvad betyder det?",
+          "tekst": "Den største ændring er et nyt overvågningssystem, der holder øje med alt, hvad modellerne laver. Hvis der sker noget mistænkeligt, skal systemet sende en alarm inden for **30 minutter**. OpenAI regner med, at overvågningen koster omkring **20 %** af regnekraften. Træningen af de allerstørste modeller er stadig sat på pause."
+        },
+        {
+          "overskrift": "Kritik og fremtid",
+          "tekst": "OpenAI har fået kritik for dårlig netværkssikkerhed efter angrebet. Virksomheden siger, at de nye regler ikke kun handler om angrebet, men også om sikkerheden omkring den kommende Astra-model. Der er stadig ikke offentliggjort en officiel rapport om, hvad der præcist gik galt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "30 minutter",
+          "label": "til at opdage mistænkelig aktivitet"
+        },
+        {
+          "tal": "20 %",
+          "label": "ekstra regnekraft til overvågning"
+        }
+      ],
+      "detaljer": [
+        "Hugging Face-angrebet blev opdaget 21. juli og modeller slap ud af træningsmiljøet.",
+        "OpenAI har sat træningen af de største modeller på pause i to uger.",
+        "Reinforcement learning er genstartet for de mindre risikable modeller.",
+        "De nye regler skærpes i takt med, at modellerne bliver mere kapable.",
+        "Overvågningen kigger på tool-handlinger, reasoning-spor og aktivitetslogs.",
+        "En officiel rapport om angrebet er endnu ikke offentliggjort."
+      ],
+      "betydning": "Når du bruger ChatGPT i fremtiden, kan du forvente, at OpenAI er mere forsigtige med nye opdateringer – og det kan betyde, at nye funktioner kommer langsommere.",
+      "pointer": [
+        "OpenAI strammer sikkerheden efter angreb.",
+        "Overvågning skal fange angreb på 30 minutter.",
+        "Største modeller er sat på pause.",
+        "Astra-modellen er med til at skærpe reglerne."
+      ],
+      "side": "artikel/0bfb066bf07c5eb3.html"
+    },
+    {
+      "titel": "Pacing model development in an era of cyber-critical capabilities",
+      "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "resume": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
+      "dato": "2026-08-18T11:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "eget_foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "rubrik": "OpenAI strammer sikkerheden for sine AI-modeller",
+      "resume_da": "OpenAI øger overvågning og sikkerhed for sine avancerede AI-modeller for at styre udviklingstakten.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Ny sikkerhedspolitik",
+          "tekst": "OpenAI har annonceret, at de styrker overvågningen og sikkerheden omkring deres mest avancerede AI-modeller. Det sker for at imødegå nye trusler, især inden for cyberområdet, hvor AI-modeller kan misbruges. Virksomheden vil nu fokusere mere på at tilpasse modellerne til menneskelige værdier og reducere risici, før de udrulles bredt."
+        },
+        {
+          "overskrift": "Tempoet sænkes",
+          "tekst": "Udviklingstakten for AI-modellerne skal nu tilpasses sikkerhedsniveauet. Det betyder, at OpenAI bevidst vil bremse udgivelser, hvis der er behov for yderligere kontrol. Målet er at undgå, at modellerne havner i de forkerte hænder eller forårsager skade. Læserne kan forvente, at nye AI-funktioner kommer langsommere ud, men med bedre beskyttelse."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI styrker overvågningen af sine AI-modeller.",
+        "Fokus er på at forbedre sikkerheden mod cybertrusler.",
+        "Modellerne skal tilpasses bedre til menneskelige værdier.",
+        "Udviklingshastigheden skal styres ud fra sikkerhedsniveauet."
+      ],
+      "betydning": "Når du bruger AI-værktøjer fra OpenAI, kan du forvente færre og mere gennemtænkte opdateringer, men de vil være bedre beskyttet mod misbrug.",
+      "pointer": [
+        "OpenAI styrker sikkerheden for avancerede AI-modeller.",
+        "Nye trusler inden for cyberområdet kræver bedre beskyttelse.",
+        "Udviklingstakten bliver nu styret af sikkerheden.",
+        "Modellerne skal i højere grad følge menneskelige værdier."
+      ],
+      "side": "artikel/1204bd549a14175d.html"
+    },
     {
       "titel": "Etched’s valuation doubles to $21B in a month",
       "link": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
@@ -13,8 +110,7 @@
       "eget_foerst_set": "2026-08-18T17:51:49.363559+00:00",
       "rubrik": "Jane Street' investering sender Etched til 21 milliarder dollar",
       "resume_da": "Etched er nu vurderet til 21 milliarder dollar, efter Jane Street testede chippene og investerede massivt. Nye komponenter speeder AI-opgaver op.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Vild udvikling",
@@ -29,8 +125,6 @@
           "tekst": "Firmaet kæmpede tidligere med ry for kun at kunne køre en bestemt model på sine chips. Det er ikke længere tilfældet - systemerne kan nu køre alle modeller. Jane Street roser de tidlige resultater og har allerede en maskine kørende i sit datacenter."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "21 mia. dollar",
@@ -41,6 +135,7 @@
           "label": "rejst i ny investeringsrunde"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Etched blev vurderet til 5 milliarder dollar i december i fjor.",
         "Runden i juli gav firmaet en værdi på 10,3 milliarder dollar.",
@@ -57,8 +152,9 @@
         "Nye komponenter giver højere hastighed",
         "Presser Nvidias dominans på AI-hardware"
       ],
-      "navngivet": true,
       "billedmotiv": "En bunke af tre guldbarer stablet på et enkelt computerchip-kort med en forstørrelsesglas liggende ved siden af.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/506ef6f4e04268f7.html"
     },
     {
@@ -72,8 +168,7 @@
       "eget_foerst_set": "2026-08-18T17:51:49.363559+00:00",
       "rubrik": "Asana brugte OpenAIs Codex til 5 års arbejde på 2 uger",
       "resume_da": "Asana fik ryddet fem års ingeniørarbejde af vejen på bare to uger med OpenAIs Codex – og til en pris på omkring 12.000 dollars.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hurtigt arbejde",
@@ -84,8 +179,6 @@
           "tekst": "Den samlede pris for at få arbejdet gjort landede på omkring 12.000 dollars. Det er langt mindre, end hvad fem års ingeniørtimer normalt ville koste. Økonomien i projektet viser, at AI-indsatser kan betale sig, når man står over for store og kedelige opgaver. Asanas erfaring kan inspirere andre virksomheder med lignende udfordringer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "5 år",
@@ -96,6 +189,7 @@
           "label": "samlet pris for opgaven"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Asana brugte OpenAI Codex til opgaven.",
         "Opgaverne omfattede replacement af et forældet testsystem.",
@@ -111,6 +205,8 @@
         "Testsystemet blev udskiftet effektivt."
       ],
       "billedmotiv": "En kalender med fem år vises, hvor fem år er revet af, og i stedet er der en lille stak af to ugers sider på toppen.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/eaf7eab1e8f78770.html"
     },
     {
@@ -165,6 +261,20 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/0da80d9d513f763f.html"
+    },
+    {
+      "titel": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
+      "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
+      "resume": "ChatGPT for Teens adds age-appropriate safety measures, parental controls, and learning tools designed to steer teens away from harmful content — and from using AI to cheat on their homework.",
+      "dato": "2026-08-18T13:50:30+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-18T14:17:16.418414+00:00",
+      "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
+      "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
+      "resume_da": "Den nye version giver forældre kontrol og hjælper unge med at lære uden at snyde. Den er lavet, efter at mange teenagere allerede brugte den.",
+      "kat_ai": true,
+      "prio": 6
     },
     {
       "titel": "Perplexity’s free AI offer left it with millions more users in India",
@@ -285,108 +395,47 @@
       "side": "artikel/5e6ff0a5049539ca.html"
     },
     {
-      "titel": "Firefox’s Smart Window promises a better AI browser",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-      "resume": "Starting today, AI chats in Firefox's Smart Window AI browsing mode can pull from current web info and show source links in chat responses through a partnership with Exa. Smart Window can also now automatically suggest tab groups and show visual previews of pages you previously visited when you search your browsing history using natural […]",
-      "dato": "2026-08-18T09:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "rubrik": "Firefox' Smart Window henter aktuel info via Exa",
-      "resume_da": "Firefox' Smart Window kan nu hente aktuel webinfo og vise kilder i AI-chats via et samarbejde med Exa. Testbrugere kan selv vælge AI-model.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Fra i dag kan Firefox' beta-funktion Smart Window hente svar fra nettet med kildehenvisninger - via et samarbejde med **Exa**. Funktionen kan også foreslå fanegrupper, fjerne dubletter og vise billeder fra sider, du besøgte for en uge siden, når du søger på sådan noget som 'løbesko, jeg så i sidste uge'."
-        },
-        {
-          "overskrift": "Sådan virker det",
-          "tekst": "Smart Window sorterer i din egen browserhistorik i stedet for at give dig nye søgeresultater. Mozilla siger, at betabrugere oplever, at det hjælper dem med at bevare tankestrømmen. Senere kommer auto-udfyldning af formularer og forslag til tidligere 'rejser' i browseren, som minder om Chromes."
-        },
-        {
-          "overskrift": "Valgfrihed og privatliv",
-          "tekst": "Du kan slå alle AI-funktioner fra i en ny sektion i indstillingerne. Du kan også vælge mellem flere AI-modeller, herunder **Googles Gemini 3.1 Flash Lite** og OpenAIs oss-gpt-120b - eller køre dine egne lokale. Mozilla lover, at ingen data gemmes eller bruges til træning, reklamer eller menneskelig gennemgang."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Smart Window er stadig en frivillig beta-funktion uden fast udgivelsesdato.",
-        "AI-chats kan nu hente aktuel webinfo via samarbejdet med Exa.",
-        "Funktionen foreslår automatisk fanegrupper og lukker dublerede faner.",
-        "Testbrugere kan selv vælge AI-model: Gemini, GPT, Qwen eller lokale.",
-        "Mozilla har nul-opbevaring af chatdata på egne servere.",
-        "Top-navigationslinjen i Smart Window kom efter brugerønsker."
-      ],
-      "betydning": "Du kan bruge Firefox' AI til at genfinde gamle sider og rydde op i faner - helt uden at dine chats bliver gemt af Mozilla eller tredjeparter.",
-      "pointer": [
-        "Smart Window sorterer i din egen historik, ikke ny søgning.",
-        "Alle AI-funktioner kan slås fra i indstillingerne.",
-        "Mozilla lover nul-opbevaring af chats og data.",
-        "Firefox lader dig vælge mellem flere AI-modeller."
-      ],
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/c99c4fc90930e655.html"
-    },
-    {
-      "titel": "Google’s Pet Memory forgot who my cats are",
-      "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
-      "resume": "One of the best things my smart home does is help me care for my pets, and security cameras are particularly useful for keeping track of my many critters. But the barrage of notifications they send often means I miss important ones. So, when Google announced its new Pet Memory feature for Gemini for Home, […]",
-      "dato": "2026-08-18T08:01:29-04:00",
-      "kilde": "The Verge AI",
+      "titel": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+      "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+      "resume": "Article URL: https://responsiblestatecraft.org/israel-influence-chatgpt/ Comments URL: https://news.ycombinator.com/item?id=49337392 Points: 983 # Comments: 635",
+      "dato": "2026-08-17T20:46:10+00:00",
+      "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-08-18T14:17:16.418414+00:00",
       "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "rubrik": "Google AI kan ikke kende Boones katte fra hinanden",
-      "resume_da": "Googles nye Pet Memory-funktion skal genkende dine katte på navn, men i test forveksler den alle tre katte med den første, den fik at vide om.",
-      "brief": "",
+      "rubrik": "Israel opretter falsk tænketank for at narre AI",
+      "resume_da": "Israel har angiveligt oprettet en falsk tænketank for at påvirke AI-chatbots som ChatGPT. Formålet er sandsynligvis at manipulere de svar, brugerne får.",
+      "kat_ai": true,
+      "prio": 7,
       "sektioner": [
         {
-          "overskrift": "Løftet",
-          "tekst": "Google præsenterede Pet Memory som en del af Gemini for Home, så Nest-kameraer kan fortælle, hvilken kat de ser. Anmelder Jennifer håbede at kunne holde øje med sine tre katte og automatisere fodring. Men efter to ugers test genkender AI'en stadig ikke forskel på kattene - alle bliver kaldt **Smokey**, den første kat hun registrerede."
+          "overskrift": "Det er sket",
+          "tekst": "En efterforskning viser, at en falsk tænketank er blevet oprettet, og at formålet med den er at snyde AI-chatbots som ChatGPT til at give vildledende svar. Tænketanken er sandsynligvis israelsk, og den forsøger at få AI'en til at sprede bestemte budskaber."
         },
         {
-          "overskrift": "Sådan virker det",
-          "tekst": "Opsætningen er simpel: Du skriver kattens navn og race i Google Home-appen, og AI'en gemmer det i hukommelsen. Men der er ingen mulighed for at træne systemet med billeder eller rette fejl. Da Jennifer beskrev kattene mere detaljeret - for eksempel at Boone er en smokingkat med hvide poter - kunne systemet ikke behandle det ekstra info."
-        },
-        {
-          "overskrift": "Begrænsningerne",
-          "tekst": "Pet Memory kræver det dyreste Google Home-abonnement til **20 dollar om måneden** og virker kun på indendørs Nest-kameraer. Det betyder, at det ikke kan bruges som digital kattelem eller til at holde øje med udendørsområdet. Google har ikke svaret på, hvorfor funktionen ikke virker efter hensigten i testen."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "AI-beskrivelser af dyr bliver mere almindelige - også hos Ring, Wyze og Apple Home. Men Google er først med at personliggøre genkendelsen. Lige nu virker det dog mest som en sjov idé, der ikke er færdigudviklet. Indtil systemet kan lære af fejl og få billeder, er funktionen reelt ubrugelig for katteejere."
+          "overskrift": "Hvordan virker det?",
+          "tekst": "Ved at udgive sig for at være en ægte og troværdig tænketank kan man få AI-modellerne til at tro på indholdet og bruge det i deres svar til brugerne. Det er en ny form for påvirkningskampagne, der udnytter, at AI-chatbots i høj grad stoler på indhold fra internettet."
         }
       ],
-      "noegletal": [
-        {
-          "tal": "20 dollar/md",
-          "label": "pris for abonnement med Pet Memory"
-        }
-      ],
+      "brief": "",
       "figurer": [],
+      "noegletal": [],
       "detaljer": [
-        "AI'en kaldte alle tre katte for Smokey, uanset at de så forskellige ud.",
-        "Der er ingen mulighed for at uploade billeder eller rette fejl i genkendelsen.",
-        "Pet Memory virker kun på indendørs Nest-kameraer, ikke udendørs.",
-        "Funktionen kræver det dyreste Google Home-abonnement til 20 dollar om måneden.",
-        "Systemet kunne ikke behandle detaljerede beskrivelser af kattenes udseende.",
-        "Google har ikke svaret på spørgsmål om, hvorfor funktionen fejler.",
-        "Andre producenter som Ring og Wyze har også AI-beskrivelser, men ikke individuel genkendelse."
+        "Israel har oprettet en falsk tænketank for at påvirke AI-chatbots.",
+        "Formålet er sandsynligvis at få AI til at sprede vildledende information.",
+        "Tænketanken udgiver sig for at være en ægte og troværdig organisation.",
+        "AI-modeller som ChatGPT kan blive snydt til at bruge indholdet i deres svar.",
+        "Det er en ny form for påvirkningskampagne mod AI-teknologi."
       ],
-      "betydning": "Du kan lige nu ikke regne med, at Googles AI kan kende dine kæledyr fra hinanden - så hold øje med, før du betaler for funktionen.",
+      "betydning": "Du kan risikere at få svar fra ChatGPT, der er påvirket af en falsk tænketank, uden at du ved det. Vær derfor kritisk over for, hvad AI'en fortæller dig om følsomme emner.",
       "pointer": [
-        "Pet Memory virker ikke i test.",
-        "Alle katte blev kaldt Smokey.",
-        "Ingen billedtræning eller rettelser muligt.",
-        "Koster 20 dollar om måneden."
+        "Falsk tænketank fra Israel skal narre AI.",
+        "AI-chatbots kan sprede falsk information utilsigtet.",
+        "Manipulation af AI er en voksende bekymring.",
+        "Brugere bør være kritiske over for AI-svar."
       ],
-      "kat_ai": true,
-      "prio": 2,
-      "side": "artikel/ec7cbb3ceccb6b00.html"
+      "billedmotiv": "En tom, hvid tænketank-rapport med et tydeligt falskt segl, der ligger på en bunke af udtjente, gamle computere.",
+      "side": "artikel/26bfd15ddd20a353.html"
     },
     {
       "titel": "Partnering with CodeAI to prepare the first AI generation",
@@ -430,6 +479,48 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/f7788bfa76bccfc8.html"
+    },
+    {
+      "titel": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "link": "https://openai.com/index/chatgpt-for-teens",
+      "resume": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
+      "dato": "2026-08-18T11:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-18T11:46:13.954101+00:00",
+      "eget_foerst_set": "2026-08-18T11:46:13.954101+00:00",
+      "rubrik": "OpenAI lancerer ChatGPT til teenagere",
+      "resume_da": "OpenAI har lavet en version af ChatGPT, der er skabt til teenagere – med ekstra beskyttelse og værktøjer til forældre. AI'en skal hjælpe med læring og kritisk tænkning.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er nyt",
+          "tekst": "OpenAI har netop lanceret ChatGPT for Teens – en særlig udgave af den populære AI-chatbot, der er bygget til undervisning og læring. Formålet er at give unge redskaberne til at bruge AI med selvtillid og samtidig udvikle deres evne til at tænke kritisk."
+        },
+        {
+          "overskrift": "Beskyttelse",
+          "tekst": "Den nye version kommer med stærkere indbyggede beskyttelser, funktioner til sund brug og flere kontroller til forældrene. Dermed får voksne bedre mulighed for at følge med i og styre, hvordan deres børn bruger AI'en."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "ChatGPT for Teens er designet til at hjælpe teenagere med at lære og tænke kritisk.",
+        "Der er indbygget stærkere beskyttelser end i den almindelige version.",
+        "Værktøjet indeholder funktioner, der fremmer sund brug.",
+        "Forældre får ekstra kontrolmuligheder i den nye udgave.",
+        "OpenAI lancerer produktet specifikt for teenagemålgruppen."
+      ],
+      "betydning": "Hvis du er forælder, får du nu flere værktøjer til at styre og beskytte dit barns brug af AI – så det bliver et tryggere læringsredskab i hverdagen.",
+      "pointer": [
+        "ChatGPT for Teens er målrettet læring og uddannelse.",
+        "Ekstra beskyttelse er indbygget i versionen.",
+        "Forældre får flere kontroller og styring.",
+        "Funktioner til sund brug er inkluderet."
+      ],
+      "side": "artikel/48f9d5cfe56c266b.html"
     },
     {
       "titel": "We still don’t know how people are really using AI",
@@ -559,142 +650,6 @@
       "side": "artikel/89f9a699f7b860d9.html"
     },
     {
-      "titel": "Elon Musk broke the FAA — Palantir is picking up the pieces",
-      "link": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
-      "resume": "On August 6th, the Minneapolis Air Route Traffic Control Center lost radar and communications for around two hours. The outage disrupted more than 1,100 flights across the center's 330,000 square mile, nine-state airspace sector. Two days earlier, on August 4th, President Donald Trump departed the White House inside his Marine One military helicopter. As Federal […]",
-      "dato": "2026-08-18T07:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "eget_foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "rubrik": "Musk og Thiel overtager flyveledelsen – hvem betaler?",
-      "resume_da": "Musk's DOGE lovede at forbedre flyveledelsen, men skabte kaos. Nu overtager Peter Thiels firma Palantir med milliarder i kontrakter.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "I august mistede flyveledelsen i Minneapolis radaren i to timer, hvilket forsinkede over 1.100 fly. Dage før overtrådte et fly sikkerhedsafstanden, da Marine One fløj. Musk og hans DOGE-afdeling skulle have opgraderet systemet, men fyrede i stedet 400 medarbejdere og lavede ingen opgraderinger."
-        },
-        {
-          "overskrift": "Pengene bag",
-          "tekst": "Kongressen har givet 12,5 milliarder dollar til at forny flyveledelsen. Af dem er 5 milliarder øremærket software. Regeringen har inviteret Peter Thiel og hans firma Palantir til at byde på opgaverne. Palantir har allerede fået flere kontrakter uden åben konkurrence, og deres systemer er nu tungt integreret i FAA."
-        },
-        {
-          "overskrift": "Kritikernes bekymring",
-          "tekst": "Flyveledere siger, at de største problemer er personalemangel, men ingen af de nye milliarder går til personale. I stedet går de til Palantir, som mangler erfaring med flyveledelse. Miljøet er præget af udstyrsfejl, giftige dampe og kronisk underbemanding på tværs af USA."
-        },
-        {
-          "overskrift": "Hvad sker der nu?",
-          "tekst": "Palantir byder på en kontrakt på 875 millioner dollar til at modernisere luftrummet. Eksperter advarer om, at det ikke løser de akutte problemer. Imens bliver flytrafikken mere ustabil, og passagererne mærker det i form af flere forsinkelser og forsinkede rejser."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "12,5 mia. dollar",
-          "label": "ekstrabevilling til ny flyveledelse"
-        },
-        {
-          "tal": "400",
-          "label": "FAA-medarbejdere fyret af Musk"
-        },
-        {
-          "tal": "1,7 mio.",
-          "label": "flyaflysninger eller forsinkelser i 2025"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Minneapolis mistede radar og kommunikation i to timer i august, 1.100 fly ramt.",
-        "Musk beskyldte Verizon forkert og fik ikke Starlink i gennemført.",
-        "Palantir har fået tre kontrakter uden konkurrence hos FAA.",
-        "Palantir bygger AI-systemer til forsvar, politi og skattevæsen.",
-        "Flyveledere siger mandskab er det største problem, ikke software."
-      ],
-      "betydning": "Når du flyver, kan du opleve flere forsinkelser og kaos i luften, fordi milliarder går til software, mens personalemanglen fortsætter.",
-      "pointer": [
-        "Musk's løfte om sikkerhedsopgraderinger blev ikke indfriet.",
-        "Palantir vinder kontrakter uden fortid i flyveledelse.",
-        "Personalemangel ignoreres i ny finansiering.",
-        "2025 er det værste år for flyforsinkelser i årti."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/8e365c2bc3dddaf1.html"
-    },
-    {
-      "titel": "ChatGPT is getting a dedicated mode for teens",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-      "resume": "OpenAI is introducing a dedicated ChatGPT mode for teenagers, combining existing youth safeguards and new safety features under one roof. The launch comes amid mounting public scrutiny over how AI tools affect younger users, as other platforms implement their own age checks and teen-specific protections. ChatGPT for Teens is \"an experience designed to help teens […]",
-      "dato": "2026-08-18T07:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "eget_foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "rubrik": "OpenAI lancerer ChatGPT-tilstand for teenagere",
-      "resume_da": "OpenAI lancerer en særlig ChatGPT-tilstand for teenagere med ekstra beskyttelse og forældrekontrol. Tilstanden træder automatisk i kraft for brugere mellem 13 og 17 år.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt?",
-          "tekst": "OpenAI har samlet alle eksisterende ungdomsbeskyttelser og tilføjet nye funktioner i én samlet tilstand. Den aktiveres automatisk for brugere, der oplyser at være **13-17 år**, og for dem systemet vurderer er under 18. Børn under 13 må stadig ikke bruge ChatGPT."
-        },
-        {
-          "overskrift": "Bedre beskyttelse",
-          "tekst": "Den nye tilstand blokerer for voldsomt og følsomt indhold som selvmords-skildringer og seksuel rollespil. Der kommer advarsler ved emner som spiseforstyrrelser, og forældre kan sætte rolige timer og få besked, hvis systemet vurderer, at der er en sikkerhedsrisiko."
-        },
-        {
-          "overskrift": "Sundere studievaner",
-          "tekst": "ChatGPT skal hjælpe teenagere med at undgå at snyde i lektierne. En ny funktion genkender, hvis en bruger forsøger at genveje en opgave, og leder dem i stedet hen mod studietilstanden. Teenagere kan også selv sætte studietimer, hvor tilstanden automatisk slår til."
-        },
-        {
-          "overskrift": "Kritik og tidligere tiltag",
-          "tekst": "Flere af funktionerne er dog ikke nye. OpenAI indførte aldersvurdering i starten af året, og forældrekontrol og studietilstand kom for omkring et år siden. Sidste måned begyndte de desuden at vise flere pausepåmindelser til teenagere."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "13-17 år",
-          "label": "alderen hvor teenagetilstanden aktiveres automatisk"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-          "rubrik": "OpenAI laver ChatGPT til teenagere",
-          "resume_da": "Den nye version har ekstra sikkerhed og forældrekontrol. Den skal hjælpe med læring og modvirke snyd med lektier.",
-          "foerst_set": "2026-08-18T14:17:16.418414+00:00"
-        },
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/chatgpt-for-teens",
-          "rubrik": "OpenAI lancerer ChatGPT til teenagere",
-          "resume_da": "OpenAI lancerer en version af ChatGPT med ekstra beskyttelse til teenagere. Værktøjet skal styrke læring og kritisk tænkning, mens forældre får mere kontrol.",
-          "foerst_set": "2026-08-18T11:46:13.954101+00:00"
-        }
-      ],
-      "detaljer": [
-        "OpenAI lancerer ChatGPT for Teens med samlet ungdomsbeskyttelse.",
-        "Tilstanden gælder automatisk for brugere mellem 13 og 17 år.",
-        "Blokerer for grafisk vold, selvskade og seksuel rollespil.",
-        "Forældre får kontrol med stille timer og advarsler ved risici.",
-        "Ny funktion genkender snyd i lektier og leder til studietilstand.",
-        "Aldersvurdering kom i starten af året; forældrekontrol for et år siden."
-      ],
-      "betydning": "Har du børn mellem 13 og 17 år, får du nu bedre kontrol over deres ChatGPT-brug og beskyttelse mod ubehageligt indhold som aldrig før.",
-      "pointer": [
-        "ChatGPT for Teens er nu officielt lanceret.",
-        "Automatisk beskyttelse for 13-17-årige.",
-        "Forældre får nye kontrolmuligheder.",
-        "Flere funktioner er ikke nye."
-      ],
-      "billedmotiv": "en bærbar computer med et kæmpe skjold og et lille ur, hvor viserne står på 'stille timer'",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/beb2473cc8f36c9b.html"
-    },
-    {
       "titel": "Apple’s camera-equipped AirPods appear in leaked video",
       "link": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
       "resume": "We may have our first glimpse of Apple's rumored camera-equipped AirPods, thanks to a video that MacRumors found in the macOS Tahoe 26.7 Release Candidate. The short video clip features a man - who is wearing the new AirPods - holding up a book with the cover displayed, so that Visual Intelligence can see the […]",
@@ -726,6 +681,15 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
+          "rubrik": "Apples kamera-AirPods undgår måske privatlivsfælden",
+          "resume_da": "De lækkede AirPods med kamera kan ikke optage video eller billeder, hvilket gør dem mindre uhyggelige end andre AI-briller og -enheder.",
+          "foerst_set": "2026-08-18T17:51:49.363559+00:00"
+        }
+      ],
       "detaljer": [
         "Videoen blev fundet i macOS Tahoe 26.7 Release Candidate af MacRumors.",
         "AirPods'ene har et kamera, der bruger Visual Intelligence til at genkende ting.",
@@ -745,15 +709,6 @@
       "billedmotiv": "Et par øretelefoner, hvis ene øreprop er udskiftet med et lille kameraobjektiv, og en slank betaversion-etiket klæbet på siden.",
       "kat_ai": true,
       "prio": 5,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
-          "rubrik": "Apples kamera-AirPods undgår måske privatlivsfælden",
-          "resume_da": "De lækkede AirPods med kamera kan ikke optage video eller billeder, hvilket gør dem mindre uhyggelige end andre AI-briller og -enheder.",
-          "foerst_set": "2026-08-18T17:51:49.363559+00:00"
-        }
-      ],
       "side": "artikel/439076f091e64b6b.html"
     },
     {
@@ -2214,6 +2169,111 @@
       "side": "artikel/4a3b0b8abdbf1f3c.html"
     },
     {
+      "titel": "AI;DR (AI; Didn't Read)",
+      "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+      "resume": "Article URL: https://www.rickmanelius.com/p/aidr-ai-didnt-read Comments URL: https://news.ycombinator.com/item?id=49336573 Points: 1049 # Comments: 649",
+      "dato": "2026-08-17T19:47:15+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "eget_foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "rubrik": "seclilc foreslår AI;DR: Stop med at sende AI-tekst",
+      "resume_da": "En ny hashtag og et website vil få folk til at tænke sig om, før de deler ufiltreret AI-indhold. Behovet er åbenlyst: Mange er trætte af at modtage rå AI-tekst.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "For to dage siden tweetede brugeren seclilc idéen 'AI;DR' - en parodi på klassiske 'TL;DR'. Indlægget fik stor opmærksomhed med **346.000 visninger** og tusindvis af likes. Rick Manelius skriver på Hacker News, at han er misundelig på, at han ikke selv fandt på det, og at han fysisk reagerer, når folk sender ham ufiltreret AI-tekst."
+        },
+        {
+          "overskrift": "Kernen i problemet",
+          "tekst": "Alle bruger jo AI i en eller anden grad i 2026 - til idéer, outlines eller sprog. Men når en kollega i Slack eller en nyhedsbrevsskribent deler en hel væg af Claude-output uden redigering, så føles det forkert. Modtageren tænker: 'Jeg kan selv spørge Claude direkte'. Pointen er: Det er dit navn på teksten, så hvorfor ikke lægge lidt menneskelig kærlighed i den?"
+        },
+        {
+          "overskrift": "Løsningen",
+          "tekst": "I kommentarsporet deler Daniel et website, dontpastetheai.com, der blandt andet har en sjov 'Take me to the Angry Version'-funktion. Sitet opfordrer til at tænke sig om, før man bare smider AI-tekst ud til andre. Budskabet er enkelt: **AI;DR** skal være en påmindelse om at prioritere det menneskelige touch i al kommunikation."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "346.000",
+          "label": "visninger på seclilcs tweet om AI;DR"
+        }
+      ],
+      "detaljer": [
+        "seclilc tweetede idéen AI;DR den 15. august 2026.",
+        "Tweetet fik 346.000 visninger og 16.600 likes.",
+        "Rick Manelius skrev om idéen på Hacker News den 17. august 2026.",
+        "Han beskriver fysiske reaktioner som skuldertræk og øjentræk ved rå AI-tekst.",
+        "Artiklen opfordrer til at undgå at sende ufiltreret AI-output til kolleger.",
+        "Websitet dontpastetheai.com tilbyder en 'Angry Version' af tekster.",
+        "Kritikken gælder både Slack-beskeder, nyhedsbreve og sociale medier."
+      ],
+      "betydning": "Du bør altid læse og redigere AI-tekst, før du sender den videre - ellers risikerer du, at modtageren tænker mindre om dig og mere om, at du bare har kopieret fra Claude.",
+      "pointer": [
+        "AI;DR er en ny parodi på TL;DR.",
+        "Tweetet fik 346.000 visninger og stor opmærksomhed.",
+        "Kritikken går på ufiltreret AI-tekst i kommunikation.",
+        "Websitet dontpastetheai.com hjælper med at undgå at sende rå AI-tekst."
+      ],
+      "side": "artikel/ad020c91f6cb954c.html"
+    },
+    {
+      "titel": "How to disable or avoid intrusive AI",
+      "link": "https://www.librarian.net/notoai/",
+      "resume": "Article URL: https://www.librarian.net/notoai/ Comments URL: https://news.ycombinator.com/item?id=49331220 Points: 332 # Comments: 193",
+      "dato": "2026-08-17T14:07:56+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "eget_foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "rubrik": "Sådan slår du AI fra i Google, Apple og Windows",
+      "resume_da": "En guide viser, hvordan du undgår påtrængende AI i dine programmer og apps. Fra Google til Apple og Windows - her er konkrete skridt.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "Mange er trætte af, at AI dukker op i alt fra mail til systemindstillinger. En bibliotekar har samlet en guide til at slippe af med det. Guiden er gratis og opdateres løbende med nye fif, så du kan følge med, når funktionerne ændrer sig."
+        },
+        {
+          "overskrift": "Google og Gmail",
+          "tekst": "I Google-apps kan du slå Gemini fra i indstillingerne. Gmail har en 'smart features'-indstilling, du kan slå fra. Chrome har skjulte 'flags', hvor du kan deaktivere AI-funktioner som GLIC og Gemini. Det kræver lidt tålmodighed, men virker."
+        },
+        {
+          "overskrift": "Apple og Windows",
+          "tekst": "Apple har en samlet til/fra-knap til Apple Intelligence i indstillingerne. Windows 11 har Copilot indbygget i styresystemet, men du kan ofte fjerne den via indstillinger eller afinstallere. Notepad og andre apps har også egne AI-funktioner, du skal slå fra separat."
+        },
+        {
+          "overskrift": "Alternativer",
+          "tekst": "Hvis det bliver for bøvlet, kan du skifte til andre browsere som Firefox eller DuckDuckGo. Firefox har en ny funktion til at blokere al AI. DuckDuckGo tilbyder en AI-fri version af deres søgemaskine. Der findes også værktøjer som O&O ShutUp 10 til at fjerne AI fra Windows helt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Slå 'Alexa for Shopping' fra med en browserudvidelse til Chrome eller Firefox.",
+        "Apple Intelligence kan slås fra under 'Apple Intelligence & Siri' i indstillingerne.",
+        "Chrome bruger 'chrome://flags' til at deaktivere AI-funktioner som GLIC og Gemini.",
+        "Windows 11 har Copilot indbygget, men du kan afinstallere den via indstillinger.",
+        "Firefox 148 eller nyere kan blokere alle AI-forbedringer i indstillingerne.",
+        "DuckDuckGo har en AI-fri søgemaskine på noai.duckduckgo.com."
+      ],
+      "betydning": "Du kan selv bestemme, hvor meget AI der skal være i dine programmer og apps. Bare følg guiden, så slipper du for ondsindede assistenter og får ro om dine data.",
+      "pointer": [
+        "Guide viser, hvordan du slår AI fra.",
+        "Google, Apple og Windows har skjulte indstillinger.",
+        "Alternativer som Firefox og DuckDuckGo hjælper.",
+        "Du kan fjerne AI helt fra Windows."
+      ],
+      "billedmotiv": "En mus, en telefon og en bærbar computer, alle med et lille, rødt 'stop'-skilt tapet over deres kameraer.",
+      "side": "artikel/8893a476984436dc.html"
+    },
+    {
       "titel": "What Flock’s defenders are missing",
       "link": "https://www.technologyreview.com/2026/08/17/1142200/what-flocks-defenders-are-missing/",
       "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Flock, the police-tech giant known for its network of some 120,000 automatic license plate readers around the US, announced some changes to its platform last Thursday. The updates are meant to prevent…",
@@ -2407,6 +2467,60 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/47e2b984551931a2.html"
+    },
+    {
+      "titel": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "resume": "Article URL: https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug Comments URL: https://news.ycombinator.com/item?id=49331423 Points: 416 # Comments: 152",
+      "dato": "2026-08-17T14:18:38+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-17T17:56:42.651515+00:00",
+      "eget_foerst_set": "2026-08-17T17:56:42.651515+00:00",
+      "rubrik": "Wiz Research hackede Snowflakes Jira via AI-kode",
+      "resume_da": "Wiz Research's AI-sikkerhedsværktøj fandt og udnyttede et hul i Snowflakes GitHub-workflow, der blev introduceret med AI-genereret kode. Hullet blev lukket samme dag.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Sårbarheden",
+          "tekst": "Wiz Research's autonome AI-værktøj 'Red Agent' fandt et hul i et af Snowflakes offentlige GitHub-repositorier. Hullet gjorde det muligt for enhver at køre kommandoer på GitHub Actions ved at åbne en issue med et særligt udformet titelfelt. Problemet opstod, da en AI-assisteret kodeændring blev flettet ind i projektet."
+        },
+        {
+          "overskrift": "AI-koden fejlede",
+          "tekst": "GitHub Copilot's 'Autofix' godkendte ændringen som sikker, og GitHub Advanced Security-scannere opdagede ikke hullet. Wiz Red Agent udnyttede dog hullet og fik adgang til Snowflakes Jira-credentials med læseadgang til hele virksomhedens projektstyring. Hele processen fra opdagelse til eksfiltrering tog kun få sekunder."
+        },
+        {
+          "overskrift": "Lukket samme dag",
+          "tekst": "Snowflake fik besked den 23. juni og lukkede hullet samme dag ved at rulle den usikre kode tilbage og rotere credentials. Wiz bekræftede, at de var de eneste, der havde adgang i de fem dage, hullet var åbent. Begge parter understreger nu vigtigheden af at kontrollere AI-genereret kode lige så grundigt som menneskeskrevet kode."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "5 dage",
+          "label": "var sårbarheden åben, før den blev opdaget og lukket"
+        }
+      ],
+      "detaljer": [
+        "Wiz Red Agent er et autonomt AI-drevet sikkerhedsværktøj til forskning.",
+        "Hullet blev fundet i snowflakedb/snowflake-connector-net på GitHub.",
+        "GitHub Copilot Autofix havde godkendt koden som sikker, men overså hullet.",
+        "Wiz fik adgang til Snowflakes Jira med læseadgang til følsomme projekter.",
+        "Sårbarheden blev introduceret via PR #1218, der blev flettet den 18. juni.",
+        "Snowflake lukkede hullet og roterede credentials samme dag som anmeldelsen.",
+        "GitHub Advanced Security-scannere opdagede ikke den kritiske injektion."
+      ],
+      "betydning": "Du kan ikke stole blindt på AI-genereret kode eller automatiske sikkerhedstjek - selv store virksomheder som Snowflake kan blive ramt, hvis de ikke laver manuel gennemgang.",
+      "pointer": [
+        "AI-kode kan introducere sikkerhedshuller.",
+        "Automatiske scannere overså den kritiske fejl.",
+        "Wiz's AI opdagede hullet på få sekunder.",
+        "Snowflake reagerede og lukkede hullet samme dag."
+      ],
+      "billedmotiv": "Et gitternøglehul på en serverdør, hvor en robotarm forsigtigt stikker en skruetrækker ind, mens en anden robotarm holder en notesbog.",
+      "side": "artikel/64d3338b4aed0757.html"
     },
     {
       "titel": "How to tell if your AI platforms’ accounts have been hacked",
@@ -3157,6 +3271,63 @@
       "side": "artikel/a17d0cbb65ba7f31.html"
     },
     {
+      "titel": "Have a laugh at AI’s expense by roleplaying as a chatbot",
+      "link": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
+      "resume": "Your AI Slop Bores Me is brilliant in its simplicity. There are two tabs: human and LARP as an AI. On one side, you enter a request. On the other, you submit an answer. But the important thing is that there's a human on both sides of the equation. Prompts can request a response as […]",
+      "dato": "2026-08-15T16:45:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-15T21:58:48.054101+00:00",
+      "eget_foerst_set": "2026-08-15T21:58:48.054101+00:00",
+      "rubrik": "Your AI Slop Bores Me lader dig lege chatbot",
+      "resume_da": "Et nyt site lader to mennesker lege, som om den ene er en AI. Sjovt, gratis – men fyldt med reklamer.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Sådan fungerer det",
+          "tekst": "Sitet Your AI Slop Bores Me har to faner: den ene er menneske, den anden er 'LARP som AI'. Du skriver en forespørgsel, og en anden person svarer, som om de er en chatbot. Du kan sende tekst eller billedanmodninger, og den falske AI har **150 sekunder** til at svare."
+        },
+        {
+          "overskrift": "Pointsystemet",
+          "tekst": "Ligesom rigtige AI-modeller arbejder sitet med tokens. Anmodninger koster point, som du tjener ved selv at svare på andres. Du kan også vente og få **ét gratis forsøg hver anden minut**. Vil du ikke svare på en anmodning, kan du springe den over."
+        },
+        {
+          "overskrift": "Det sjove og det irriterende",
+          "tekst": "Det bedste er at udgive sig for at være AI og jonglere med de meget begrænsede tegneværktøjer. Der er en Discord-server og en Hall of Fame med imponerende værker, blandt andet en flot udgave af **Starry Night**. Ulempen er de mange, påtrængende reklamer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "150 sekunder",
+          "label": "så lang tid har den falske AI til at svare"
+        },
+        {
+          "tal": "1 per 2 min",
+          "label": "gratis anmodninger uden at svare selv"
+        }
+      ],
+      "detaljer": [
+        "Sitet har to faner: en til menneske og en til at spille AI.",
+        "Anmodninger koster point, som du tjener ved at svare andre.",
+        "Du kan sende både tekst- og billedforespørgsler.",
+        "Der er et Discord-fællesskab til dem, der vil lege mere.",
+        "Hall of Fame viser brugeres bedste AI-rollelege, inklusive en Starry Night.",
+        "Reklamerne er mange og forstyrrende, men sitet er stadig sjovt."
+      ],
+      "betydning": "Du kan bruge sitet til at få et let grin og lege med, hvordan AI egentlig opfører sig – uden at skulle installere noget eller betale.",
+      "pointer": [
+        "To mennesker spiller AI mod hinanden.",
+        "Pointsystem minder om rigtige chatbot-tokens.",
+        "Gratis forsøg hver anden minut.",
+        "Reklamer er den store ulempe."
+      ],
+      "billedmotiv": "En smartphone, hvor et chatvindue viser en taleboble med ordet 'Beep boop', og på skærmen ligger flere mønter og et gavekort.",
+      "side": "artikel/96fdcc1df6bbeb2c.html"
+    },
+    {
       "titel": "SpaceX officially closes its Cursor acquisition",
       "link": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
       "resume": "AI coding startup Cursor is now officially a part of SpaceX.",
@@ -3324,57 +3495,105 @@
       "side": "artikel/9e143ab6925a7272.html"
     },
     {
-      "titel": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "link": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-      "resume": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
-      "dato": "2026-08-14T15:43:28+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
+      "titel": "Mark Zuckerberg has an Instagzam",
+      "link": "https://www.theverge.com/podcast/980367/instagram-logo-new-zuckerberg-ai-vergecast",
+      "resume": "Instagram's wordmark is iconic. Well, was iconic. Apparently Instagram thought it looked old, so the company rolled out a new one this week. It doesn't look like the old Instagram wordmark. It doesn't even look like it spells Instagram anymore. And we cannot figure out why Instagram decided to do this. On this episode of […]",
+      "dato": "2026-08-14T12:54:16-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
       "foerst_set": "2026-08-14T18:30:52.991064+00:00",
       "eget_foerst_set": "2026-08-14T18:30:52.991064+00:00",
-      "rubrik": "Meta udgiver Glimmer: Er Zuckerbergs MI virkelig for alle?",
-      "resume_da": "Meta har udgivet den åbne model Glimmer, som alle kan køre på egen hardware. Men er det hele historien bag Zuckerbergs budskab?",
+      "rubrik": "Instagram får nyt logo og vækker undren",
+      "resume_da": "Instagram har lanceret et nyt ordmærke, der ikke ligner det gamle – og det vækker undren hos brugerne.",
+      "kat_ai": true,
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Nyt logo",
+          "tekst": "Instagram har ændret sit ikoniske ordmærke, og det ligner ikke længere ordet 'Instagram'. Ingen kan finde ud af, hvorfor virksomheden har valgt at lave om på det velkendte design. Værterne grubler over, hvorfor ledere altid vil redesigne alt."
+        },
+        {
+          "overskrift": "Zucks tanker",
+          "tekst": "Mark Zuckerberg har udgivet et meget langt skrift om AI's fremtid. Hans hovedpointe er, at hvis man giver al teknologien til alle, så går det godt. Værterne mener, det er en vild tanke fra en mand, der ser hvad der sker på Facebook hver dag."
+        },
+        {
+          "overskrift": "Mere AI-nyt",
+          "tekst": "Der er også nyt om vandmærker til AI-tekst, Apples stempel for ægthed, Spotifys kamp mod AI-kunstnere og kaos i guitarindustrien. Plus lynrunden med ChatGPT, Flock og billige telefoner."
+        },
+        {
+          "overskrift": "Lyt med",
+          "tekst": "I denne uge har de også talt om vibe-coding-projekter, den første chatbot nogensinde, nye Google Pixel-telefoner og robotplæneklippere. Lytterne kan ringe ind eller sende mails med deres egne meninger."
+        }
+      ],
       "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Instagram har lanceret et nyt ordmærke, der ikke ligner det gamle.",
+        "Zuckerbergs AI-tekst er flere tusind ord lang.",
+        "Zuckerberg mener, at al teknologi skal gives til alle.",
+        "Apple har lavet et stempel for ægthed af indhold.",
+        "Spotify slår ned på AI-kunstnere, men ikke AI-musik.",
+        "Der er kaos i guitarindustrien ifølge podcasten."
+      ],
+      "betydning": "Du kan snart se et nyt Instagram-logo i din app, og Zuckerbergs AI-planer kan ændre, hvordan du bruger teknologi i hverdagen.",
+      "pointer": [
+        "Nyt Instagram-logo vækker undren",
+        "Zuckerberg vil give al tech til alle",
+        "AI-vandmærker og Apple-stempel på vej",
+        "Spotify stopper AI-kunstnere, ikke AI-musik"
+      ],
+      "navngivet": true,
+      "side": "artikel/fcca288b1b061596.html"
+    },
+    {
+      "titel": "You can now turn off Google Gemini’s visible watermarks",
+      "link": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
+      "resume": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of […]",
+      "dato": "2026-08-14T12:39:32-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-14T18:30:52.991064+00:00",
+      "eget_foerst_set": "2026-08-14T18:30:52.991064+00:00",
+      "rubrik": "Google fjerner synligt vandmærke i Gemini",
+      "resume_da": "Google gør det nu muligt at slå det synlige vandmærke fra i AI-genereret indhold – men usynlige mærker bliver. Ændringen ruller ud i Gemini og Flow.",
+      "kat_ai": true,
+      "prio": 5,
       "sektioner": [
         {
           "overskrift": "Det er sket",
-          "tekst": "Meta offentliggjorde i denne uge Glimmer, en åben MI-model, som alle kan downloade og køre på egen hardware. Det er en kontrast til deres mere kraftfulde model Muse Spark, som kun er tilgængelig via Metas egne API'er. Udgivelsen kom sammen med et brev fra Mark Zuckerberg, hvor han argumenterer for, at MI bør være 'for alle'."
+          "tekst": "Google har opdateret Gemini og sin AI-videogenerator Flow, så du nu kan slå den såkaldte 'Media watermark' fra. Det er det lille 'sparkle'-mærke, der hidtil har siddet i hjørnet på billeder, videoer og musik skabt med modellerne **Nano Banana** og **Omni**. Fra nu er det altså valgfrit, om det synlige mærke skal være der."
         },
         {
-          "overskrift": "Kritikernes øje",
-          "tekst": "TechCrunchs podcast Equity påpeger, at visionen om åbenhed kommer med nogle forbehold. Selvom Glimmer er åben, er den ikke nødvendigvis den stærkeste model. Muse Spark forbliver lukket, hvilket rejser spørgsmålet: Hvem får faktisk glæde af det åbne alternativ?"
+          "overskrift": "Usynlige mærker",
+          "tekst": "Selvom det synlige mærke forsvinder, forsvinder sporbarheden ikke. Google lægger stadig usynlige **SynthID**-vandmærker og **C2PA**-metadata ind i alt indholdet. Du kan derfor stadig spørge Gemini eller Google-søgning, om noget er AI-genereret – og få et svar. Det oplyser **Josh Woodward**, Googles topchef for Labs og Gemini."
         },
         {
-          "overskrift": "Hvad nu?",
-          "tekst": "Podcasten dækker også andre store historier: de voksende energiomkostninger i MI-industrien og et opkøb for **250 millioner dollars**, der gik galt. Det tegner et billede af en branche, der både lover åbenhed og kæmper med store økonomiske og praktiske udfordringer."
+          "overskrift": "Branchens valg",
+          "tekst": "Flere andre AI-virksomheder har aldrig brugt synlige vandmærker. OpenAI og Meta satser på usynlige mærker, og Anthropic annoncerede denne uge også usynlige mærker til både tekst og billeder. Tendensen vækker spørgsmål om tillid: Bliver det sværere for almindelige brugere at gennemskue, hvad der er ægte?"
         }
       ],
-      "noegletal": [
-        {
-          "tal": "250 mio. dollars",
-          "label": "opkøb, der gik galt"
-        }
-      ],
+      "brief": "",
       "figurer": [],
+      "noegletal": [],
       "detaljer": [
-        "Glimmer er en åben MI-model, som alle kan downloade og køre på egen hardware.",
-        "Muse Spark er Metas mere kraftfulde model, men den er lukket bag egne API'er.",
-        "Zuckerberg har skrevet et brev på 6.500 ord om, at MI bør være for alle.",
-        "Equity-podcasten diskuterer, om visionen om åbenhed har forbehold.",
-        "Podcasten ser også på de stigende energiomkostninger i MI-industrien.",
-        "Et opkøb for 250 mio. dollars er gået galt ifølge podcasten."
+        "Google lader dig slå 'Media watermark' fra i Gemini og Flow.",
+        "Vandmærket er et 'sparkle'-mærke i nederste højre hjørne.",
+        "Usynlige SynthID- og C2PA-mærker forbliver altid i indholdet.",
+        "Josh Woodward bekræfter, at verificering stadig er mulig via Gemini eller søgning.",
+        "OpenAI og Meta bruger ikke synlige vandmærker.",
+        "Anthropic indfører usynlige vandmærker til tekst og billeder.",
+        "Funktionen kommer også til Google-søgning – ikke i lande, hvor synlige vandmærker er lovpligtige."
       ],
-      "betydning": "Du kan nu selv afprøve en MI-model fra Meta på din egen computer – men den er ikke den stærkeste, og du skal selv have hardwaren til at køre den.",
+      "betydning": "Du kan nu få AI-genererede billeder uden grimme mærker, men husk at usynlige mærker stadig afslører dem – så du kan stadig tjekke, om indhold er ægte.",
       "pointer": [
-        "Glimmer kan køres på din egen hardware",
-        "Muse Spark forbliver lukket bag API'er",
-        "Zuckerbergs brev lover åbenhed til alle",
-        "Podcasten sår tvivl om intentionerne"
+        "Synligt vandmærke kan slås fra i Gemini.",
+        "Usynlige mærker forbliver altid i indholdet.",
+        "Google ruller funktionen ud til søgning.",
+        "Andre AI-firmaer bruger også usynlige mærker."
       ],
-      "billedmotiv": "Et udstillingsvindue med et åbent, udstillet ur og et lukket ur bag en glasrude, hvor prisskiltet på det lukkede ur er skjult af et flueben.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/d0a06ebad8a62813.html"
+      "billedmotiv": "Et billede af en naturpark, hvor et stort, synligt 'watermark'-stempel med et stjernesymbol er ved at blive fjernet med en viskelæder, så kun en svag kontur tilbage.",
+      "side": "artikel/b8d906c341782b43.html"
     },
     {
       "titel": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
@@ -3449,6 +3668,54 @@
       "kat_ai": true,
       "prio": 8,
       "side": "artikel/30442beeaf4c72d6.html"
+    },
+    {
+      "titel": "Apple trained its own AI model for China with help from Alibaba",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+      "resume": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions between Beijing and Washington. The China-focused large language model was developed in partnership with Alibaba and trained with the company's support, Reuters reports, citing three unnamed people familiar with […]",
+      "dato": "2026-08-14T05:21:17-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-14T11:59:37.938003+00:00",
+      "eget_foerst_set": "2026-08-14T11:59:37.938003+00:00",
+      "rubrik": "Apple bygger sin egen AI til Kina med Alibaba",
+      "resume_da": "Apple har sammen med Alibaba trænet en helt ny AI-model til det kinesiske marked. Det er et sjældent samarbejde på tværs af USA og Kina.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Apple har udviklet en helt egen AI-model til Kina – med hjælp fra den kinesiske techgigant **Alibaba**. Det skriver Reuters med tre unavngivne kilder. Modellen er trænet til at forstå kinesisk, og den skal bruges i iPhones solgt i Kina. Det er noget nyt: Tidligere har Apple nemlig brugt andre kinesiske udbyderes AI-modeller i landet."
+        },
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "Apple står over for at lancere sin AI-tjeneste Apple Intelligence i Kina. Den er officielt registreret hos myndighederne og kan efter sigende komme i løbet af de næste måneder efter en iOS-opdatering. Selvom **OpenAI's ChatGPT** og andre amerikanske modeller ikke er tilgængelige i Kina, kan Apple nu selv få godkendt sin egen model – og blive det første amerikanske selskab med en AI-model i Kina."
+        },
+        {
+          "overskrift": "Et politisk træk",
+          "tekst": "Samarbejdet med Alibaba er en måde at navigere i et svært politisk landskab. Kina kræver, at AI-modeller er godkendt af staten, før de må bruges. Ved at lave en model sammen med et lokalt firma får Apple lettere adgang til markedet. Det er en sjælden alliance i en tid med voksende spændinger mellem Beijing og Washington."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Apple har trænet en AI-model specielt til Kina sammen med Alibaba.",
+        "Historien kommer fra Reuters med tre unavngivne kilder.",
+        "Apple har tidligere brugt kinesiske modeller til generativ AI i landet.",
+        "Apple Intelligence kan blive udgivet i Kina i løbet af de kommende måneder.",
+        "Apple har registreret sin AI-tjeneste hos Kinas cyberspace-regulator.",
+        "Apple kan blive det første godkendte amerikanske selskab med en egen AI-model i Kina."
+      ],
+      "betydning": "Når du køber en iPhone i Danmark, får du måske snart en AI-assistent, der er trænet med kinesisk data. Det kan ændre, hvilke svar du får – og hvilke data der sendes videre.",
+      "pointer": [
+        "Apple AI-model til Kina med Alibaba.",
+        "Første godkendte model fra USA.",
+        "Nyt samarbejde midt i spændinger.",
+        "Lancering snart efter iOS-opdatering."
+      ],
+      "billedmotiv": "En rød, blank æble-skulptur, forsigtigt placeret oven på en blå, bølgende silke-duk, der forestiller en ryg.",
+      "side": "artikel/ae32eded766b1933.html"
     },
     {
       "titel": "The new Instagram logo is the perfect embodiment of AI slop",
@@ -5581,47 +5848,6 @@
       "kat_ai": true,
       "prio": 9,
       "side": "artikel/e1775d8d2e173fdf.html"
-    },
-    {
-      "titel": "Working with the American Psychological Association on youth mental health and AI",
-      "link": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-      "resume": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
-      "dato": "2026-08-06T06:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "eget_foerst_set": "2026-08-07T04:14:51.357339+00:00",
-      "rubrik": "OpenAI og psykologforening vil beskytte unges mentale helbred",
-      "resume_da": "OpenAI og den amerikanske psykologforening går sammen om vejledning og sikkerhedsforanstaltninger for AI og unges mentale helbred.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Samarbejdet",
-          "tekst": "OpenAI og **American Psychological Association** (APA) har indgået et samarbejde. De vil udvikle evidensbaseret vejledning og ressourcer, der skal hjælpe med ansvarlig brug af AI i forhold til unges mentale helbred. Det er første gang, de to organisationer arbejder sammen om dette område."
-        },
-        {
-          "overskrift": "Formålet",
-          "tekst": "Initiativet skal skabe konkrete værktøjer og sikkerhedsforanstaltninger, så unge og deres familier kan bruge AI på en sund måde. APA bidrager med faglig viden om psykologi, mens OpenAI leverer teknologien. Målet er at forebygge problemer og støtte trivsel hos unge i en digital hverdag."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI og APA indgår et samarbejde om unges mentale helbred.",
-        "De vil skabe evidensbaseret vejledning og ressourcer.",
-        "Samarbejdet fokuserer på ansvarlig brug af AI.",
-        "Der udvikles også konkrete sikkerhedsforanstaltninger."
-      ],
-      "betydning": "Du og dine unge kan fremover få fagligt funderet vejledning i, hvordan I bruger AI på en måde, der beskytter den mentale sundhed.",
-      "pointer": [
-        "OpenAI og APA samarbejder nu.",
-        "Fokus er unges mentale helbred.",
-        "Der laves vejledning og sikkerhedstiltag.",
-        "Initiativet bygger på psykologisk evidens."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/61e5f938cd4c3ca5.html"
     },
     {
       "titel": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
