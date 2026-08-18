@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-18T19:49:06.299000+00:00",
+ "opdateret": "2026-08-18T21:44:03.517829+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      4,
      6,
-     5
+     6
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      2,
      0,
      3,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 31,
- "sidevisninger_i_alt": 63,
+ "besoeg_i_alt": 32,
+ "sidevisninger_i_alt": 64,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 31,
-   "visninger": 32
+   "besoeg": 32,
+   "visninger": 33
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
@@ -309,7 +309,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/f3ec5949a23f5e05.html",
+   "sti": "/artikel/eaf7eab1e8f78770.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -397,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 31
+   "besoeg": 32
   }
  ],
  "ai_chats": [],
@@ -405,8 +405,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 31,
-    "visninger": 31
+    "besoeg": 32,
+    "visninger": 32
    },
    {
     "fra": "herfra selv",
@@ -484,7 +484,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/f3ec5949a23f5e05.html": [
+  "/artikel/eaf7eab1e8f78770.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -923,12 +923,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/f3ec5949a23f5e05.html",
+   "sti": "/artikel/eaf7eab1e8f78770.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Google Pixel 11: Trevor Noah er vært",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-11",
+   "rubrik": "Asana brugte OpenAIs Codex til 5 års arbejde på 2 uger",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-18",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1150,16 +1150,16 @@ window.LAESERTAL = {
  ],
  "laeste_temaer": [
   {
-   "navn": "Lanceringer",
-   "visninger": 8
-  },
-  {
    "navn": "Samfund & etik",
    "visninger": 8
   },
   {
+   "navn": "Lanceringer",
+   "visninger": 7
+  },
+  {
    "navn": "Penge & marked",
-   "visninger": 6
+   "visninger": 7
   },
   {
    "navn": "Forskning",
