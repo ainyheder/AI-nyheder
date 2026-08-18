@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · GLM-5.2: PPO vender tilbage</title>
-<meta name="description" content="Videoen gennemgår GLM-5.2&#x27;s blog og fokuserer på det overraskende skift fra GRPO til PPO i træningen. Værd at se for indsigt i, hvorfor DeepSeek&#x27;s tilgang måske var forkert.">
+<title>AI-nyheder.com · GLM-5.2: DeepSeeks fejl om RL</title>
+<meta name="description" content="Videoen dykker ned i GLM-5.2&#x27;s tekniske blog og afslører, at de droppede GRPO til fordel for PPO – en vigtig detalje, de fleste overser. Perfekt til dig, der vil forstå, hvad der rører sig bag om AI-modeller.">
 <link rel="canonical" href="https://ainyheder.com/video/3KwpmSpEplY.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="video.other">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="GLM-5.2: PPO vender tilbage">
-<meta property="og:description" content="Videoen gennemgår GLM-5.2&#x27;s blog og fokuserer på det overraskende skift fra GRPO til PPO i træningen. Værd at se for indsigt i, hvorfor DeepSeek&#x27;s tilgang måske var forkert.">
+<meta property="og:title" content="GLM-5.2: DeepSeeks fejl om RL">
+<meta property="og:description" content="Videoen dykker ned i GLM-5.2&#x27;s tekniske blog og afslører, at de droppede GRPO til fordel for PPO – en vigtig detalje, de fleste overser. Perfekt til dig, der vil forstå, hvad der rører sig bag om AI-modeller.">
 <meta property="og:url" content="https://ainyheder.com/video/3KwpmSpEplY.html">
 <meta property="og:image" content="https://i4.ytimg.com/vi/3KwpmSpEplY/hqdefault.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "GLM-5.2: PPO vender tilbage", "description": "Videoen gennemgår GLM-5.2's blog og fokuserer på det overraskende skift fra GRPO til PPO i træningen. Værd at se for indsigt i, hvorfor DeepSeek's tilgang måske var forkert.", "thumbnailUrl": "https://i4.ytimg.com/vi/3KwpmSpEplY/hqdefault.jpg", "uploadDate": "2026-07-23T21:22:04+00:00", "duration": null, "embedUrl": "https://www.youtube.com/embed/3KwpmSpEplY", "url": "https://ainyheder.com/video/3KwpmSpEplY.html", "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "GLM-5.2: DeepSeeks fejl om RL", "description": "Videoen dykker ned i GLM-5.2's tekniske blog og afslører, at de droppede GRPO til fordel for PPO – en vigtig detalje, de fleste overser. Perfekt til dig, der vil forstå, hvad der rører sig bag om AI-modeller.", "thumbnailUrl": "https://i4.ytimg.com/vi/3KwpmSpEplY/hqdefault.jpg", "uploadDate": "2026-07-23T21:22:04+00:00", "duration": null, "embedUrl": "https://www.youtube.com/embed/3KwpmSpEplY", "url": "https://ainyheder.com/video/3KwpmSpEplY.html", "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; --yt:#cc2b2b; }
@@ -59,13 +59,13 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">AI på YouTube · bycloud · 2026-07-23</div>
-<h1>GLM-5.2: PPO vender tilbage</h1>
-<p class="manchet">Videoen gennemgår GLM-5.2&#x27;s blog og fokuserer på det overraskende skift fra GRPO til PPO i træningen. Værd at se for indsigt i, hvorfor DeepSeek&#x27;s tilgang måske var forkert.</p>
+<h1>GLM-5.2: DeepSeeks fejl om RL</h1>
+<p class="manchet">Videoen dykker ned i GLM-5.2&#x27;s tekniske blog og afslører, at de droppede GRPO til fordel for PPO – en vigtig detalje, de fleste overser. Perfekt til dig, der vil forstå, hvad der rører sig bag om AI-modeller.</p>
 <a class="afspil" href="https://www.youtube.com/watch?v=3KwpmSpEplY" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/3KwpmSpEplY/hqdefault.jpg" alt="Se videoen på YouTube: GLM-5.2: PPO vender tilbage" loading="lazy"><span><b>▶</b></span></a>
-<div class="boks"><strong>Kort fortalt</strong><ul><li>GLM-5.2 bruger PPO i stedet for GRPO.</li><li>DeepSeek&#x27;s RL-tilgang var forkert.</li><li>Bloggen rummer flere indsigter end selve modellen.</li><li>Skiftet kan ændre fremtidens RL-træning.</li></ul></div>
+  <img src="https://i4.ytimg.com/vi/3KwpmSpEplY/hqdefault.jpg" alt="Se videoen på YouTube: GLM-5.2: DeepSeeks fejl om RL" loading="lazy"><span><b>▶</b></span></a>
+<div class="boks"><strong>Kort fortalt</strong><ul><li>GLM-5.2 skiftede fra GRPO til PPO.</li><li>Bloggen rummer flere indsigter end selve modellen.</li><li>DeepSeek tog angiveligt fejl om RL-tilgangen.</li></ul></div>
 
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du får indsigt i, hvorfor en af de nyeste sprogmodeller droppede en populær metode - og hvad det betyder for fremtidens AI-træning. Hold øje med, om andre følger trop.</div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du får et unikt indblik i, hvordan AI-forskere tænker om træningsmetoder – og hvorfor valget af algoritme kan betyde mere end selve modellen.</div>
 <p style="margin-top:24px"><strong>Se videoen:</strong><br>
   <a class="kilde" href="https://www.youtube.com/watch?v=3KwpmSpEplY" rel="noopener">Åbn på YouTube →</a>
   <a class="kilde" href="https://www.youtube.com/@bycloudAI" rel="noopener">bycloud →</a></p>
