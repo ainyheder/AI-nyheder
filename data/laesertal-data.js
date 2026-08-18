@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-18T14:21:31.521221+00:00",
+ "opdateret": "2026-08-18T15:59:27.660829+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 31,
- "sidevisninger_i_alt": 60,
+ "besoeg_i_alt": 32,
+ "sidevisninger_i_alt": 64,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 31,
-   "visninger": 31
+   "besoeg": 32,
+   "visninger": 33
   },
   {
    "sti": "/artikel/4662a98c4da9d5a3.html",
@@ -341,12 +341,12 @@ window.LAESERTAL = {
   {
    "sti": "/uge.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 2
   },
   {
    "sti": "/youtube.html",
    "besoeg": 0,
-   "visninger": 3
+   "visninger": 4
   },
   {
    "sti": "/artikel/c37950ec573d6143.html",
@@ -397,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 31
+   "besoeg": 32
   }
  ],
  "ai_chats": [],
@@ -405,8 +405,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 31,
-    "visninger": 31
+    "besoeg": 32,
+    "visninger": 32
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/4662a98c4da9d5a3.html": [
@@ -525,14 +530,14 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 2
    }
   ],
   "/youtube.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
+    "visninger": 4
    }
   ],
   "/artikel/c37950ec573d6143.html": [
@@ -763,7 +768,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-08-18",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   }
  ],
  "artikler": [

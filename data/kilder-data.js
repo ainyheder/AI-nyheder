@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-18T14:17:16.418414+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-18T15:59:05.457016+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -962,10 +962,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -985,51 +985,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-chef: AI-modstand er tillidskrise"
-    },
-    {
-     "rubrik": "Google køber krakket flyselskabs data til AI",
-     "dato": "2026-08-18T10:13:28",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
-     "side": "artikel/ca719eb7dad32c9b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Israel lokker AI med falsk tænketank",
-     "dato": "2026-08-17T20:46:10",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-     "side": "artikel/26bfd15ddd20a353.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI;DR: Nyt fænomen skal afsløre robot-skrift",
-     "dato": "2026-08-17T19:47:15",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
-     "side": "artikel/ad020c91f6cb954c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "NoToAI.org: Sådan slukker du AI overalt",
-     "dato": "2026-08-17T14:07:56",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.librarian.net/notoai/",
-     "side": "artikel/8893a476984436dc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-fejl åbnede Snowflakes Jira for hackere",
-     "dato": "2026-08-17T14:18:38",
-     "foerst_set": "2026-08-17T17:56:42",
-     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-     "side": "artikel/64d3338b4aed0757.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
