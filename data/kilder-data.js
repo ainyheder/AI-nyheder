@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-18T21:42:05.574935+00:00",
- "artikler_i_alt": 107,
+ "opdateret": "2026-08-19T03:27:49.840228+00:00",
+ "artikler_i_alt": 113,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 16,
+   "i_listen": 17,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -86,6 +86,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Cursor udfordrer GitHub med ny platform",
+     "dato": "2026-08-18T22:14:25",
+     "foerst_set": "2026-08-19T03:27:49",
+     "link": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+     "side": "artikel/38269b8f7f4f3795.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI strammer sikkerheden efter hackerangreb",
@@ -178,20 +187,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Wispr får 2,8 milliarder til stemme-AI og møder",
+     "rubrik": "Wispr får 2,8 milliarder og ny AI-model Canto",
      "dato": "2026-08-17T13:10:05",
      "foerst_set": "2026-08-17T14:03:47",
      "link": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
      "side": "artikel/73672096953e8bf8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Stripe køber AI-formidleren OpenRouter for 7 mia. dollar",
-     "dato": "2026-08-16T20:57:04",
-     "foerst_set": "2026-08-16T21:01:30",
-     "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-     "side": "artikel/7430ad56634d75f9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -274,11 +274,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Firefox' Smart Window får bedre AI-chat",
+     "rubrik": "Firefox lader dig chatte med din browserhistorie",
      "dato": "2026-08-18T09:00:00",
      "foerst_set": "2026-08-18T14:17:16",
      "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-     "side": "",
+     "side": "artikel/c99c4fc90930e655.html",
      "hvor": "forside",
      "under": ""
     },
@@ -636,6 +636,15 @@ window.KILDER_STATUS = {
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
     },
     {
+     "rubrik": "Sådan skalerer NVIDIA ekspertise med ChatGPT Work",
+     "dato": "2026-08-18T00:00:00",
+     "foerst_set": "2026-08-19T03:27:49",
+     "link": "https://openai.com/index/nvidia/chatgpt-work",
+     "side": "artikel/b308f27228d706b8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI hjælper regeringer med tilsyn med AI",
      "dato": "2026-08-18T19:00:00",
      "foerst_set": "2026-08-18T21:42:05",
@@ -731,15 +740,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-12T22:26:02",
      "link": "https://openai.com/index/ringcentral",
      "side": "artikel/dc35058bee54bda2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer Daybreak på AWS",
-     "dato": "2026-08-11T10:00:00",
-     "foerst_set": "2026-08-11T22:09:30",
-     "link": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-     "side": "artikel/ca8161387cd4c9c9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -880,7 +880,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere afslører: AI dumper ny test",
+     "rubrik": "Forskere afslører: AI dumper Unwritten Benchmark",
      "dato": "2026-08-18T00:00:00",
      "foerst_set": "2026-08-18T05:54:49",
      "link": "https://arxiv.org/abs/2608.14558",
@@ -979,10 +979,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1002,6 +1002,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-chef: AI-modstand er tillidskrise"
+    },
+    {
+     "rubrik": "Anthropic beskyldes for at kvæle open source-teknologi",
+     "dato": "2026-08-17T15:24:34",
+     "foerst_set": "2026-08-19T03:27:49",
+     "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
+     "side": "artikel/12fa0ec462e72cf4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Israel opretter falsk tænketank for at narre AI",
+     "dato": "2026-08-17T20:46:10",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+     "side": "artikel/26bfd15ddd20a353.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI; DR markerer ægte mennesketekst",
+     "dato": "2026-08-17T19:47:15",
+     "foerst_set": "2026-08-17T21:45:37",
+     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+     "side": "artikel/ad020c91f6cb954c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Slip af med AI: Deaktiver Gemini, Copilot og Apple",
+     "dato": "2026-08-17T14:07:56",
+     "foerst_set": "2026-08-17T21:45:37",
+     "link": "https://www.librarian.net/notoai/",
+     "side": "artikel/8893a476984436dc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Wiz AI-agent fandt alvorlig fejl i Snowflakes kode",
+     "dato": "2026-08-17T14:18:38",
+     "foerst_set": "2026-08-17T17:56:42",
+     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+     "side": "artikel/64d3338b4aed0757.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
