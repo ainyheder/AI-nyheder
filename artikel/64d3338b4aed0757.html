@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Wiz AI-agent fandt alvorlig fejl i Snowflakes kode</title>
-<meta name="description" content="Et AI-sikkerhedsværktøj fra Wiz opdagede en kritisk sårbarhed i Snowflakes GitHub-repo, der kunne give adgang til Jira-data. Fejlen blev rettet samme dag.">
+<title>AI-nyheder.com · Wiz AI-finder sårbarhed i Snowflakes GitHub</title>
+<meta name="description" content="Wiz Research&#x27;s autonome AI-agent fandt en alvorlig sårbarhed i Snowflakes GitHub-workflow, som kunne have givet uvedkommende adgang til Jira-data. Snowflake rettede fejlen samme dag.">
 <link rel="canonical" href="https://ainyheder.com/artikel/64d3338b4aed0757.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Wiz AI-agent fandt alvorlig fejl i Snowflakes kode">
-<meta property="og:description" content="Et AI-sikkerhedsværktøj fra Wiz opdagede en kritisk sårbarhed i Snowflakes GitHub-repo, der kunne give adgang til Jira-data. Fejlen blev rettet samme dag.">
+<meta property="og:title" content="Wiz AI-finder sårbarhed i Snowflakes GitHub">
+<meta property="og:description" content="Wiz Research&#x27;s autonome AI-agent fandt en alvorlig sårbarhed i Snowflakes GitHub-workflow, som kunne have givet uvedkommende adgang til Jira-data. Snowflake rettede fejlen samme dag.">
 <meta property="og:url" content="https://ainyheder.com/artikel/64d3338b4aed0757.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Wiz AI-agent fandt alvorlig fejl i Snowflakes kode", "description": "Et AI-sikkerhedsværktøj fra Wiz opdagede en kritisk sårbarhed i Snowflakes GitHub-repo, der kunne give adgang til Jira-data. Fejlen blev rettet samme dag.", "url": "https://ainyheder.com/artikel/64d3338b4aed0757.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/64d3338b4aed0757.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-17T14:18:38+00:00", "articleSection": "Samfund \u0026 etik", "isBasedOn": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Wiz AI-finder sårbarhed i Snowflakes GitHub", "description": "Wiz Research's autonome AI-agent fandt en alvorlig sårbarhed i Snowflakes GitHub-workflow, som kunne have givet uvedkommende adgang til Jira-data. Snowflake rettede fejlen samme dag.", "url": "https://ainyheder.com/artikel/64d3338b4aed0757.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/64d3338b4aed0757.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-17T14:18:38+00:00", "articleSection": "Samfund \u0026 etik", "isBasedOn": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -54,20 +54,20 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">Samfund &amp; etik · Hacker News: AI · 2026-08-17</div>
-<h1>Wiz AI-agent fandt alvorlig fejl i Snowflakes kode</h1>
-<p class="manchet">Et AI-sikkerhedsværktøj fra Wiz opdagede en kritisk sårbarhed i Snowflakes GitHub-repo, der kunne give adgang til Jira-data. Fejlen blev rettet samme dag.</p>
+<h1>Wiz AI-finder sårbarhed i Snowflakes GitHub</h1>
+<p class="manchet">Wiz Research&#x27;s autonome AI-agent fandt en alvorlig sårbarhed i Snowflakes GitHub-workflow, som kunne have givet uvedkommende adgang til Jira-data. Snowflake rettede fejlen samme dag.</p>
 
-<h2>Sårbarheden</h2>
-<p>Wiz&#x27;s AI-agent &#x27;Red Agent&#x27; fandt en fejl i en GitHub Actions-workflow i Snowflakes offentlige repository. Angribere kunne udnytte en script-injektion ved at oprette et GitHub-issue med et manipuleret navn. Det gjorde det muligt at køre kommandoer på GitHub&#x27;s servere og stjæle Jira-legitimationsoplysninger.</p>
-<h2>Angrebet</h2>
-<p>Fejlen blev aktiv den <strong>18. juni 2026</strong>, men Red Agent opdagede den kun fem dage senere. Agenten justerede automatisk sin udnyttelseskode, da første forsøg fejlede, og fangede Jira-tokenet og e-mailen via en ekstern server. GitHub Advanced Security&#x27;s scan overså tilsyneladende den kritiske injektion.</p>
-<h2>Rettelsen</h2>
-<p>Snowflake fik besked den <strong>23. juni 2026</strong> og rettede fejlen samme dag. De roterede det kompromitterede Jira-token og bekræftede via loggen, at kun Wiz havde haft adgang i perioden. Wiz slettede alle data fra bevisførslen.</p>
-<h2>Læren</h2>
-<p>Sikkerhedseksperter påpeger, at AI-genereret kode kan genindføre usikre mønstre. Værktøjet Copilot Autofix godkendte ændringen, men det er uklart, om selve koden var AI-genereret. Det understreger behovet for strenge sikkerhedstjek af AI-skabte ændringer.</p>
+<h2>Fundet</h2>
+<p>Wiz Research&#x27;s &#x27;Red Agent&#x27; – en selvkørende AI-sikkerhedsagent – opdagede en script-injection-sårbarhed i et af Snowflakes offentlige GitHub-repositorier. Sårbarheden opstod, da en pull-request blev flettet den <strong>18. juni 2026</strong>. Enhver kunne udløse den ved at oprette en GitHub-issue med en særligt formuleret titel, hvilket gav mulighed for at køre vilkårlige kommandoer i en GitHub Actions-runner.</p>
+<h2>Alvoren</h2>
+<p>Red Agent formåede at udnytte sårbarheden til at stjæle Jira-legitimationsoplysninger, herunder en token for &#x27;qa@snowflake.net&#x27;. Det gav læseadgang til Snowflakes engineering-, security- og bug bounty-projekter. Wiz understregede, at Copilot Autofix var medforfatter på PR&#x27;en, men at det er uklart, om selve kodeændringen var AI-genereret.</p>
+<h2>Retelsen</h2>
+<p>Wiz rapporterede sårbarheden den <strong>23. juni 2026</strong>, og Snowflake rettede den samme dag. De roterede den kompromitterede token og verificerede via logfiler, at kun Wiz havde haft adgang. GitHub Advanced Security-scannere havde ikke opdaget problemet. Wiz opfordrer nu til strengere kontrol af AI-genererede pull-requests.</p>
+<h2>Din sikkerhed</h2>
+<p>Denne hændelse viser, at AI-genereret kode kan introducere kritiske fejl, som eksisterende værktøjer overser. For dig som bruger betyder det, at selv store virksomheder kan have sårbarheder. Vær ekstra opmærksom på sikkerhedsopdateringer og skift adgangskoder, hvis en tjeneste du bruger, har været ramt.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>Red Agent er et AI-drevet sikkerhedsværktøj fra Wiz Research.</li><li>Sårbarheden lå i snowflakedb/snowflake-connector-net på GitHub.</li><li>Angriberen kunne køre kommandoer via et GitHub-issue med specielt navn.</li><li>GitHub Advanced Security scan overså injektionen i workflow-filen.</li><li>Jira-tokenet gav læseadgang til Snowflakes projekter som sikkerhed og compliance.</li><li>Wiz rapporterede fejlen den 23. juni 2026 via HackerOne.</li><li>Snowflake rettede fejlen samme dag og roterede tokenet.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan ikke stole blindt på AI-genereret kode eller automatiske sikkerhedsscanninger. Fejl kan glide igennem, og derfor skal du selv tjekke ændringer grundigt, før de implementeres.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Sårbarheden blev introduceret den 18. juni 2026 via PR #1218 i snowflakedb/snowflake-connector-net.</li><li>Wiz Red Agent udnyttede fejlen til at eksfiltrere Jira-token og -email base64-kodet via en out-of-band callback.</li><li>GitHub Advanced Security-scannere analyserede arbejdsgangen, men opdagede ikke script-injection-fejlen.</li><li>Snowflake patchworkflowet samme dag, roterede legitimationsoplysningerne og bekræftede via logs, at kun Wiz havde adgang.</li><li>Sårbarheden blev rapporteret via HackerOne-programmet, rapport #3819931.</li><li>Wiz understreger, at AI-genererede pull-requests skal gennemgå samme sikkerhedskontrol som menneskelig kode.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du bør holde øje med sikkerhedsopdateringer fra Snowflake og lignende tjenester, da AI-genereret kode kan skjule fejl – skift adgangskoder, hvis du er bekymret.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug" rel="noopener">Hacker News: AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
