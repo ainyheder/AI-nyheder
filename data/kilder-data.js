@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-19T03:27:49.840228+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-08-19T05:56:39.153810+00:00",
+ "artikler_i_alt": 108,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -636,6 +636,15 @@ window.KILDER_STATUS = {
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
     },
     {
+     "rubrik": "OpenAI udvider ChatGPT Ads i Europa",
+     "dato": "2026-08-18T22:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+     "side": "artikel/40e57b678ada787c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Sådan skalerer NVIDIA ekspertise med ChatGPT Work",
      "dato": "2026-08-18T00:00:00",
      "foerst_set": "2026-08-19T03:27:49",
@@ -731,15 +740,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
      "side": "artikel/36609b9396fd20f8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "RingCentral satser på AI i hele virksomheden",
-     "dato": "2026-08-12T00:00:00",
-     "foerst_set": "2026-08-12T22:26:02",
-     "link": "https://openai.com/index/ringcentral",
-     "side": "artikel/dc35058bee54bda2.html",
      "hvor": "forside",
      "under": ""
     }
@@ -862,110 +862,110 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Barba Roque og Cruz: AI-måling er misvisende",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14550",
-     "side": "artikel/8e91d5306db20557.html",
+     "rubrik": "GxP-Agent: AI hjælper med kliniske forsøg",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.16890",
+     "side": "artikel/39fef01ea8b9eaf9.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ahmad Nazzals AI kan mærke, når den tager fejl",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14552",
-     "side": "artikel/76cf8dbe307fdf73.html",
+     "rubrik": "Forskere vil styre AI med usynlige grænser",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.16891",
+     "side": "artikel/bc90461816ea95ce.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forskere afslører: AI dumper Unwritten Benchmark",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14558",
-     "side": "artikel/49277d7addb9df71.html",
+     "rubrik": "Yeabin Moon: AI-svar kan blive dyrere end lovet",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.16956",
+     "side": "artikel/506cd9a2909c78df.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Teoman Kamans AI-forskning lærer robotter at tale sammen",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14559",
-     "side": "artikel/e5498bb9dc54588b.html",
+     "rubrik": "FedPref læser røntgenrapporter hurtigere og sikrere",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.16971",
+     "side": "artikel/08cf9bfe26a0d47a.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "EU's AI Act kan blive global standard",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14562",
-     "side": "artikel/8047103b515856c8.html",
+     "rubrik": "Zeyu Zheng: AI kan finde nye matematiske opdagelser",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.16977",
+     "side": "artikel/b0d91f37c1190a1c.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Jaeho Kim advarer om AI-låsning",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14565",
-     "side": "artikel/7e51d45af61b30f9.html",
+     "rubrik": "SkillEffect giver AI bedre hukommelse",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17007",
+     "side": "artikel/8f77a204da35eb81.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Aidan Kierans: AI's moral testes for ensidigt",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14566",
-     "side": "artikel/eb19b3f62cdfb2f9.html",
+     "rubrik": "Yashar Talebirad: AI-hukommelse er også kommunikation",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17053",
+     "side": "artikel/de1f44650ae212c3.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Jon Doyle lagde fundamentet for AI's hukommelse",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14567",
-     "side": "artikel/498481a422eed0b9.html",
+     "rubrik": "DiSCO finder nyt forsvar mod AI-billedsvindel",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17067",
+     "side": "artikel/a627fdaa3f38814c.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forskere: AI-styring kræver ISO-lignende protokoller",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14568",
-     "side": "artikel/e2af78b8a1858bb2.html",
+     "rubrik": "KernelArc: AI optimerer GPU-koden hurtigere",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17071",
+     "side": "artikel/4eeaa055e5b37ae6.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forskere: AI skal lære symbolsk logik for at blive pålidelig",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14569",
-     "side": "artikel/bcd298ef31548f63.html",
+     "rubrik": "Zhixiang Wang finder klogere måde at få svar fra AI",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17124",
+     "side": "artikel/0b425b94beb39feb.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forsker: Stop med at tigge om ML-anmeldelser - indfør kreditsystem",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14571",
-     "side": "artikel/f260612d5318d4e9.html",
+     "rubrik": "AI-læring tager springet ind i den virkelige verden",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17128",
+     "side": "artikel/7c3611a9bfd68ea5.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "AI spår unges misbrug via ABCD-studiet",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-18T05:54:49",
-     "link": "https://arxiv.org/abs/2608.14578",
-     "side": "artikel/52927d5129310329.html",
+     "rubrik": "KnowSim: Nyt værktøj afslører, når AI lyver for dig",
+     "dato": "2026-08-19T00:00:00",
+     "foerst_set": "2026-08-19T05:56:39",
+     "link": "https://arxiv.org/abs/2608.17150",
+     "side": "artikel/25930affcbcb9d14.html",
      "hvor": "forside",
      "under": ""
     }
@@ -979,10 +979,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1002,51 +1002,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-chef: AI-modstand er tillidskrise"
-    },
-    {
-     "rubrik": "Anthropic beskyldes for at kvæle open source-teknologi",
-     "dato": "2026-08-17T15:24:34",
-     "foerst_set": "2026-08-19T03:27:49",
-     "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
-     "side": "artikel/12fa0ec462e72cf4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Israel opretter falsk tænketank for at narre AI",
-     "dato": "2026-08-17T20:46:10",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-     "side": "artikel/26bfd15ddd20a353.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI; DR markerer ægte mennesketekst",
-     "dato": "2026-08-17T19:47:15",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
-     "side": "artikel/ad020c91f6cb954c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Slip af med AI: Deaktiver Gemini, Copilot og Apple",
-     "dato": "2026-08-17T14:07:56",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.librarian.net/notoai/",
-     "side": "artikel/8893a476984436dc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Wiz AI-agent fandt alvorlig fejl i Snowflakes kode",
-     "dato": "2026-08-17T14:18:38",
-     "foerst_set": "2026-08-17T17:56:42",
-     "link": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-     "side": "artikel/64d3338b4aed0757.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
