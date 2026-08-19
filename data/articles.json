@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-08-19T05:56:39.153810+00:00",
-  "antal": 108,
+  "opdateret": "2026-08-19T08:06:27.815083+00:00",
+  "antal": 109,
   "artikler": [
     {
       "titel": "GxP-Agent: Process-DAG Topology for Reliable Clinical Trial Programming with LLM Agents",
@@ -13,8 +13,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "GxP-Agent: AI hjælper med kliniske forsøg",
       "resume_da": "Forskere har bygget GxP-Agent, der bruger AI til at programmere kliniske forsøg mere sikkert. Metoden strukturerer opgaver i et net, så fejl bliver fanget tidligt.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -29,9 +28,8 @@
           "tekst": "For almindelige mennesker kan det betyde, at nye behandlinger kommer hurtigere på markedet, fordi forsøgene kører mere gnidningsfrit. Samtidig bliver resultaterne mere troværdige, når processen er veldokumenteret. Det kan i sidste ende føre til flere og bedre godkendte lægemidler."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "GxP-Agent strukturerer opgaver i et process-DAG-netværk.",
         "Systemet er designet til at overholde reglerne for kliniske forsøg.",
@@ -48,6 +46,8 @@
         "Forskningen er offentliggjort på arXiv"
       ],
       "billedmotiv": "En åben medicinkasse med et indre net af sammenkoblede, farvekodede brikker, og en lille rød fejl-markør fanget i én af maskerne.",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/39fef01ea8b9eaf9.html"
     },
     {
@@ -59,10 +59,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
-      "rubrik": "Forskere vil styre AI med usynlige grænser",
-      "resume_da": "Nyt forskningssystem holder AI-agenter i skak med klare regler og fuld kontrol. Det kan forhindre dyre fejl.",
-      "kat_ai": true,
-      "prio": 3,
+      "rubrik": "Adam Mazzocchettis AI-system sætter usynlige grænser",
+      "resume_da": "Forsker Adam Mazzocchetti har lavet et system, der holder AI-agenter i skak med klare regler og fuld kontrol. Det kan forhindre dyre fejl.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye system",
@@ -77,9 +76,8 @@
           "tekst": "AI-agenter bruges allerede i kundeservice, netbutikker og bankverdenen. Når de handler på egne vegne, kan de lave fejl – for eksempel sende forkerte mails eller ændre ordrer. Dette system skal forhindre den slags uheld, så du ikke rammes af AI-fejl, der koster tid eller penge."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Systemet holder øje med AI-agenter i realtid og sætter klare grænser.",
         "Alle handlinger gemmes som dokumentation for, hvad AI'en har lavet.",
@@ -95,8 +93,10 @@
         "Dokumentation gør det muligt at spore fejl.",
         "Fail-closed betyder sikker nedlukning ved tvivl."
       ],
-      "navngivet": true,
       "billedmotiv": "En usynlig, opspændt snor danner et lille kvadrat omkring en robotarm, der står stille med en hvid flagstav, hvorpå der står 'STOP'.",
+      "kat_ai": true,
+      "prio": 3,
+      "navngivet": true,
       "side": "artikel/bc90461816ea95ce.html"
     },
     {
@@ -110,8 +110,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Yeabin Moon: AI-svar kan blive dyrere end lovet",
       "resume_da": "Forskning viser, at AI-modellers 'tænketid' varierer uforudsigeligt – og det kan give store prisoverraskelser. Her er hvad du skal vide.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -126,9 +125,8 @@
           "tekst": "For almindelige brugere er rådet at holde øje med, hvilken model du faktisk bruger, og hvordan den svarer. Hvis en model pludselig svarer langsommere og med længere tekster, kan det være et tegn på, at den bruger mere 'tænkekraft' – og at prisen kan følge med. Vælg i stedet modeller, der er gennemsigtige omkring deres metode og prisstruktur."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-modellers tænketid er målbar og varierer meget, ifølge Yeabin Moon.",
         "Forskningen peger på, at 'reasoning effort' er en skjult faktor i pris.",
@@ -140,6 +138,8 @@
       "betydning": "Du risikerer at betale mere for dine AI-svar, hvis udbyderne begynder at prissætte tænketid – hold øje med ændringer i din pris.",
       "pointer": [],
       "billedmotiv": "En krystalkugle med et pris- og time-tal på en lille stander, og en støvsky af spørgsmålstegn, der hvirvler op fra dens top.",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/506cd9a2909c78df.html"
     },
     {
@@ -153,8 +153,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "FedPref læser røntgenrapporter hurtigere og sikrere",
       "resume_da": "Forskere har udviklet FedPref, en AI der læser og strukturerer røntgenrapporter uden at dele private patientdata. Metoden er hurtigere og mere præcis end tidligere.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -169,9 +168,8 @@
           "tekst": "Et stort problem med røntgenrapporter er, at de ofte er skrevet i fritekst og i forskellige stilarter på hvert hospital. FedPref er bygget til at håndtere netop det – også når der kun er få eksempler med helt præcise oplysninger, som lægerne selv har markeret. Men der er stadig plads til forbedringer, og metoden er ikke afprøvet i rigtige hospitalsafdelinger endnu."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-systemet kaldes FedPref og er udviklet til at læse røntgenrapporter.",
         "Systemet bruger præference-læring, så hospitaler kan dele viden uden data.",
@@ -187,7 +185,8 @@
         "Bedre end eksisterende metoder i test.",
         "Kræver test på rigtige afdelinger først."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/08cf9bfe26a0d47a.html"
     },
     {
@@ -201,8 +200,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Zeyu Zheng: AI kan finde nye matematiske opdagelser",
       "resume_da": "Forskere viser, at AI kan gætte matematiske sandheder hurtigere og bedre, hvis man først stiller de rigtige spørgsmål. Metoden kan revolutionere matematisk forskning.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -217,9 +215,8 @@
           "tekst": "For almindelige mennesker kan det betyde, at fremtidens AI kan hjælpe med at løse rigtige problemer i verden – fra at designe nye materialer til at finde mønstre i store mængder data. Det handler ikke kun om matematik i skolen, men om at AI kan blive en partner i opdagelser, der kan gavne os alle."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-forskning fokuserer nu på at generere problemer, ikke kun løsninger.",
         "Metoden kan gøre AI langsommere i starten, men mere kreativ på sigt.",
@@ -234,6 +231,8 @@
         "Zeyu Zheng leder forskningen.",
         "Math bliver mere tilgængelig for alle."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/b0d91f37c1190a1c.html"
     },
     {
@@ -247,8 +246,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "SkillEffect giver AI bedre hukommelse",
       "resume_da": "Forskere har udviklet SkillEffect, der hjælper AI-værktøjer med at huske bedre og undgå fejl, når hukommelsen er begrænset.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad er nyt?",
@@ -263,9 +261,8 @@
           "tekst": "Du kan få mere pålidelige AI-assistenter i hverdagen, for eksempel når de hjælper med at planlægge, søge eller skrive. Med SkillEffect kan de holde styr på flere trin ad gangen uden at miste tråden. Det gør dem bedre til opgaver, hvor der er mange detaljer at huske på én gang."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "SkillEffect er udviklet af forskere fra universitetet og præsenteret på arXiv.",
         "Metoden fokuserer på værktøjer med begrænset hukommelse.",
@@ -280,6 +277,8 @@
         "Baner vejen for stærkere assistenter",
         "Forskningen er stadig i startfasen"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/8f77a204da35eb81.html"
     },
     {
@@ -293,8 +292,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Yashar Talebirad: AI-hukommelse er også kommunikation",
       "resume_da": "Ny forskning foreslår at se AI's hukommelse som en form for kommunikation. Det kan ændre, hvordan vi forstår og styrer AI-systemer.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye syn",
@@ -309,9 +307,8 @@
           "tekst": "Papiret er primært et teoretisk bidrag, og der er endnu ingen konkrete forsøg eller tal, der viser, hvordan ideen virker i praksis. Kritikere kan pege på, at det er svært at omsætte sådan et abstrakt perspektiv til konkrete forbedringer. Men det giver alligevel stof til eftertanke for både forskere og udviklere af AI."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Paperet er skrevet af Yashar Talebirad og tre andre forskere.",
         "Det er uploadet til arXiv i august 2026.",
@@ -327,6 +324,8 @@
         "Kan gøre AI mere gennemsigtig.",
         "Teoretisk arbejde uden test endnu."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/de1f44650ae212c3.html"
     },
     {
@@ -340,8 +339,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "DiSCO finder nyt forsvar mod AI-billedsvindel",
       "resume_da": "Forskere har udviklet DiSCO, en metode der beskytter AI-billedgeneratorer mod manipulation. Metoden gør det sværere at misbruge teknologien til at lave vildledende indhold.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -356,9 +354,8 @@
           "tekst": "DiSCO kan gøre AI-billedgeneratorer mere sikre for alle, der bruger dem i hverdagen. Hvis teknologien bliver integreret i populære værktøjer, kan det mindske risikoen for, at AI-genererede billeder bliver brugt til svindel eller propaganda."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "DiSCO står for 'Defending text-to-image generation through distribution-guided contrastive prompt optimization'.",
         "Metoden beskytter AI-systemer mod manipulation af tekst-input.",
@@ -373,7 +370,8 @@
         "Bruger kontrastiv optimering.",
         "Kan øge sikkerheden i AI-værktøjer."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/a627fdaa3f38814c.html"
     },
     {
@@ -387,8 +385,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "KernelArc: AI optimerer GPU-koden hurtigere",
       "resume_da": "Forskere har lavet KernelArc, et AI-system med flere agenter, der automatisk optimerer GPU-kode og gør programmer markant hurtigere. Opdagelsen kan give din computer og telefon mere fart.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -403,9 +400,8 @@
           "tekst": "For almindelige mennesker kan det betyde hurtigere apps, bedre spil og længere batteritid på enheder med GPU'er. Programmer, der før tog lang tid at køre, kan blive meget hurtigere, og det kan også hjælpe med at gøre AI-baserede tjenester som billedgenkendelse og sprogoversættelse mere effektive i fremtiden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "KernelArc bruger flere AI-agenter, der samarbejder om at optimere GPU-kode automatisk.",
         "Systemet er udviklet af forskere og præsenteret i en ny videnskabelig artikel.",
@@ -419,6 +415,8 @@
         "Metoden er helt automatisk og hurtig.",
         "Kan give hurtigere enheder i hverdagen."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/4eeaa055e5b37ae6.html"
     },
     {
@@ -432,8 +430,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Zhixiang Wang finder klogere måde at få svar fra AI",
       "resume_da": "Ny forskning fra Zhixiang Wang viser, hvornår det kan betale sig at vælge skjulte AI-signaler frem for afstemning. Resultatet kan give billigere og bedre svar uden flere servere.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -448,9 +445,8 @@
           "tekst": "AI-modeller gemmer masser af information i deres indre lag, før de skriver svaret. Forskernes kriterium kan se på disse skjulte signaler og afgøre, om de er pålidelige nok. Hvis ja, kan man vælge det bedste svar direkte – uden at spørge modellen igen og igen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne har fundet et kriterium, der forudsiger, hvornår skjult-tilstand-valg slår flertalsafstemning.",
         "Metoden kan reducere behovet for at køre AI-modellen flere gange.",
@@ -466,7 +462,8 @@
         "Forskere fra arXiv bag opdagelsen",
         "Kan give hurtigere og billigere svar"
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/0b425b94beb39feb.html"
     },
     {
@@ -478,10 +475,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
-      "rubrik": "AI-læring tager springet ind i den virkelige verden",
-      "resume_da": "Ny forskning vil lære AI at observere og samarbejde i dagligdagen – ikke kun på skærmen.",
-      "kat_ai": true,
-      "prio": 2,
+      "rubrik": "Yashar Talebirads AI lærer fra virkeligheden",
+      "resume_da": "Forsker Yashar Talebirad vil lære AI at observere og samarbejde i dagligdagen – ikke kun på skærmen.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -496,9 +492,8 @@
           "tekst": "Tænk på en robot, der ser, hvordan du laver morgenmad, og derefter selv kan hjælpe til i køkkenet. Eller en assistent, der lærer dine vaner og kan rydde op i dit rod. Metoden kan også hjælpe med at træne AI i farlige eller sjældne situationer, hvor det er svært at få data. Visionen er, at AI bliver en mere naturlig del af hverdagen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne har lavet en ramme, der kombinerer observation med egen erfaring.",
         "Systemet kan planlægge handlinger ud fra det, det har set andre gøre.",
@@ -514,6 +509,8 @@
         "Forskere vil gøre AI personlig og hverdagsnær.",
         "Det kan føre til robotter, der hjælper i hjemmet."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/7c3611a9bfd68ea5.html"
     },
@@ -528,8 +525,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "KnowSim: Nyt værktøj afslører, når AI lyver for dig",
       "resume_da": "Forskere har udviklet KnowSim, der tester, hvor ærlige AI-assistenter er om deres egen viden – med simuleret brugere, der lærer.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -544,9 +540,8 @@
           "tekst": "Når du spørger en AI om råd til sundhed, økonomi eller jura, er det afgørende, at den ikke finder på svar. KnowSim kan hjælpe udviklere med at finde svagheder, før AI’en sendes ud til brugerne. Det er et skridt mod mere pålidelige assistenter, der kender deres egne grænser – og siger dem højt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere præsenterer KnowSim som et nyt benchmark til AI-assistenter.",
         "Værktøjet bruger brugersimulatorer, der lærer undervejs i testen.",
@@ -561,6 +556,8 @@
         "Kan afsløre, hvornår AI gætter i stedet for at sige nej.",
         "Vigtigt for pålidelighed i sundhed, økonomi og jura."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/25930affcbcb9d14.html"
     },
     {
@@ -574,8 +571,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "AI vælger selv den rette algoritme på et splitsekund",
       "resume_da": "Forskere har lært AI at spotte data og selv finde den bedste algoritme – hurtigere og billigere end før.",
-      "kat_ai": true,
-      "prio": 1,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -590,9 +586,8 @@
           "tekst": "I virkeligheden betyder det, at virksomheder og udviklere kan få bedre resultater med AI uden at være algoritme-eksperter. For eksempel kan et system til billedgenkendelse eller sprogbehandling automatisk finde den stærkeste løsning. Dermed sparer man tid og penge, og flere kan få glæde af avanceret AI."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen er beskrevet i en videnskabelig artikel på arXiv.",
         "Systemet bruger såkaldt agentisk AI til at vælge algoritmer.",
@@ -608,6 +603,8 @@
         "Processen bliver hurtigere og billigere.",
         "Kan bruges til billed- og sprogopgaver."
       ],
+      "kat_ai": true,
+      "prio": 1,
       "navngivet": true,
       "side": "artikel/2ab1f3e11b98a75e.html"
     },
@@ -622,8 +619,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Forskerhold tester: Er AI-sikkerhedstest selv sikre?",
       "resume_da": "Forskere har undersøgt, om AI-sikkerhedstest er pålidelige - og fundet store huller. Testene overser farlig adfærd og giver falsk tryghed.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -638,9 +634,8 @@
           "tekst": "Forskerne efterlyser et nyt sæt retningslinjer, der kan gøre sikkerhedstestene mere troværdige - både for udviklere og for de myndigheder, der skal godkende AI-teknologier. Indtil videre står udviklerne uden et pålideligt værktøj til at vurdere, om deres modeller faktisk er sikre nok til at blive brugt. Det skaber en ubehagelig usikkerhed i en industri, hvor hastighed ofte går forud for grundighed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har evalueret eksisterende AI-sikkerhedstest og fundet, at de ikke er pålidelige.",
         "Testene overser utilsigtet adfærd, som de ellers er designet til at fange.",
@@ -655,6 +650,8 @@
         "Udviklerne mangler redskaber til at vurdere sikkerhed.",
         "Risikoen rammer brugere af hverdags-AI i praksis."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "navngivet": true,
       "side": "artikel/8aa09d84cc5f37e9.html"
     },
@@ -669,8 +666,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Mark Russinovich viser vejen til at narre AI-nedbrydere",
       "resume_da": "Microsofts tekniske direktør foreslår at narre angribere med falske modeller, så de ikke fjerner AI'ens indbyggede sikkerhed.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -685,9 +681,8 @@
           "tekst": "Metoden skal testes i praksis, og det er endnu uklart, om den kan holde mod vedholdende angribere. Men den giver en ny tilgang: I stedet for kun at bygge højere mure kan vi også lægge fælder for dem, der vil bryde ind. Det kan blive en vigtig brik i at gøre åbne AI-modeller sikrere for alle."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Open-weight modeller kan hentes frit, men også ændres af hackere.",
         "Angreb fjerner sikkerhedsforanstaltninger og gør modellen farlig.",
@@ -703,6 +698,8 @@
         "Forslaget er nyt, men endnu ikke testet i praksis.",
         "Metoden kan gøre åbne AI-modeller sikrere for alle."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/ac7e05f7058aeb7e.html"
     },
     {
@@ -714,11 +711,42 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
-      "rubrik": "AI's hukommelse skal tjekkes grundigt",
-      "resume_da": "Forskere advarer om, at AI-personlige assistenter kan bruge gammel information forkert. De har lavet en metode til at teste, hvornår AI skal spørge dig.",
+      "rubrik": "AI husker ikke, hvad du bad om",
+      "resume_da": "Ny forskning afslører, at AI-modeller ofte ignorerer brugerens ønsker, når de skal huske tidligere samtaler. Et problem, der kan ramme alle.",
       "kat_ai": true,
       "prio": 2,
-      "navngivet": true
+      "sektioner": [
+        {
+          "overskrift": "Det nye fund",
+          "tekst": "Forskere har testet, om AI-modeller faktisk følger det, du beder dem om at huske fra tidligere chats. Resultatet overraskede: Selv når modellerne får beskeden klar og tydelig, glemmer de det ofte. Kun i en tredjedel af tilfældene handlede de præcis, som brugeren ønskede. Det viser, at hukommelsen er langt mere upålidelig, end man hidtil har troet."
+        },
+        {
+          "overskrift": "Sådan blev det testet",
+          "tekst": "Holdet bag undersøgelsen lavede en kontrolleret test, hvor AI-modeller fik forskellige opgaver med klare instrukser om, hvad der skulle huskes. Herefter tjekkede de, om modellerne rent faktisk brugte den viden. Metoden er ny, fordi den skiller det at forstå en besked fra det at følge den – og det er netop her, fejlene opstår ifølge forskerne."
+        },
+        {
+          "overskrift": "Hvad det betyder",
+          "tekst": "For dig som bruger betyder det, at du ikke kan stole blindt på, at en AI-assistent husker dine præferencer, selvom den siger, at den gør. Især i situationer, hvor du gentager vigtige detaljer flere gange, kan modellen stadig misforstå eller overse dem. Forskerne håber, at deres resultater kan få udviklerne til at bygge bedre hukommelsessystemer ind i fremtidige modeller."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Kun i en tredjedel af tilfældene handlede AI-modellerne præcis efter brugerens ønsker.",
+        "Forskerne testede, om modellerne forstår en besked og faktisk følger den.",
+        "Fejlene opstår, når modellen skal bruge tidligere information i nye sammenhænge.",
+        "Undersøgelsen kalder på bedre hukommelsesdesign i AI-systemer."
+      ],
+      "betydning": "Du kan opleve, at din AI-assistent gentager fejl eller glemmer det, du har bedt den om at huske – selv når du er meget tydelig. Vær forberedt på at gentage vigtige oplysninger flere gange.",
+      "pointer": [
+        "AI-hukommelse fejler oftere end troet",
+        "Klare instrukser er ikke nok",
+        "Kun 33 % succesrate i testen",
+        "Forskere kræver bedre design"
+      ],
+      "navngivet": true,
+      "side": "artikel/711ccebcd3203c70.html"
     },
     {
       "titel": "Do LLMs Know a Good Hypothesis When They See One? Logit-Based Energy Scoring Outperforms Prompted LLM-as-Judge for Scientific Hypothesis Ranking",
@@ -731,8 +759,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Ny AI-metode vurderer forskningsideer bedre end ChatGPT",
       "resume_da": "Forskere har fundet en ny måde at få AI til at rangere videnskabelige hypoteser. Metoden er mere præcis end at spørge ChatGPT direkte.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -747,9 +774,8 @@
           "tekst": "For forskere betyder det, at de kan få hjælp til at prioritere, hvilke hypoteser der er værd at undersøge nærmere. Især når man har mange idéer og begrænset tid. Metoden kan også bruges i andre sammenhænge, hvor AI skal sortere i store mængder tekst. Det er et skridt mod mere pålidelig AI-assisteret forskning."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne foreslår en ny metode kaldet logit-baseret energiscoring.",
         "Metoden måler AI-modellens indre usikkerhed i stedet for at spørge direkte.",
@@ -765,6 +791,8 @@
         "Kræver ingen ekstra træning eller store ressourcer.",
         "Kan hjælpe forskere med at prioritere hypoteser."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/da2c61c3917002bb.html"
     },
     {
@@ -778,8 +806,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Forskere skaber test til at måle overmenneskelig AI",
       "resume_da": "Forskere har udviklet en ny benchmark, der skal teste om AI kan overgå mennesker på næsten alle områder.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye værktøj",
@@ -794,9 +821,8 @@
           "tekst": "Forskerne håber, at værktøjet kan give os en tidlig advarsel, hvis AI bliver så dygtig, at den reelt overgår os på vigtige områder. Det giver os bedre mulighed for at få styr på sikkerheden, før det bliver nødvendigt. **Benchmarken kan også hjælpe udviklere med at se, hvor deres egne modeller fejler** og hvad de skal forbedre, lyder det fra forskerne bag."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskergruppen bag har lanceret en benchmark kaldet ASI-Bench.",
         "Den tester AI inden for blandt andet matematik, logik og kreativitet.",
@@ -811,8 +837,10 @@
         "Skal give tidlig advarsel om superintelligens.",
         "Fokus er på sikkerhed og forbedring."
       ],
-      "navngivet": true,
       "billedmotiv": "En tom, åben menneskehjerne-formet skal og en lukket, blank metalhjerne-formet skal på hver sin vægt, hvor metalkuglen tipper vægten helt ned.",
+      "kat_ai": true,
+      "prio": 4,
+      "navngivet": true,
       "side": "artikel/7bd17256918c2aae.html"
     },
     {
@@ -826,8 +854,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "DeAR lader AI-agenter samarbejde som et team",
       "resume_da": "Forskere har udviklet metoden DeAR, hvor flere AI-agenter arbejder sammen om at løse opgaver. De deler kun de vigtigste tanker med hinanden.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -846,9 +873,8 @@
           "tekst": "Selvom DeAR lyder lovende, er der stadig spørgsmål. Hvor godt virker det i virkeligheden, når der er mange agenter? Og hvad med sikkerheden, når de kommunikerer? Forskerne har testet på matematik- og planlægningsopgaver, men der mangler stadig store undersøgelser i den virkelige verden, før det kan bruges bredt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "DeAR står for Decentralized Agentic Reasoning.",
         "Agenterne vurderer først egne evner, før de deler tanker.",
@@ -863,7 +889,8 @@
         "Test på matematik- og planlægningsopgaver.",
         "Åbner for decentral AI-brug."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/b1e7f4befc8a77f4.html"
     },
     {
@@ -877,8 +904,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Ny AI-teknik: ChatGPT får styr på flertrins-opgaver",
       "resume_da": "Forskere træner AI i at lægge planer for lange opgaver – det giver færre fejl og bedre resultater i samtaler med flere trin.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -897,9 +923,8 @@
           "tekst": "Forskerne håber, at metoden kan bruges i de AI-modeller, vi allerede bruger. Det kan give mere pålidelige assistenter, der ikke mister tråden midt i en lang samtale. Næste skridt er at teste metoden på endnu større og mere komplekse opgaver."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "PlanPO står for Group Planning-Aware Policy Optimization.",
         "Metoden træner AI i at lave planer for flertrins-opgaver.",
@@ -914,6 +939,8 @@
         "Færre fejl i lange samtaler",
         "Kan bruges i dine assistenter"
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/86c93d0fe9e9f7a9.html"
     },
     {
@@ -927,8 +954,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "LiveHouse-TS-test afslører AI'ers svagheder",
       "resume_da": "Ny AI-test undersøger, hvordan tidsmaskiner klarer uventede ændringer i data som vejr og aktier.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -943,9 +969,8 @@
           "tekst": "Med denne test kan forskere og virksomheder bedre vælge, hvilken AI de skal bruge til opgaver som at forudsige vejr, strømforbrug eller aktiemarkedet. Testen kan også hjælpe med at forbedre modellerne, så de bliver mere robuste over for uventede hændelser – for eksempel når en pandemi eller finanskrise ændrer på mønstrene."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "LiveHouse-TS er en levende benchmark, der opdateres løbende med nye data",
         "Den tester AI-modeller på tidsdata som vejr, aktier og energiforbrug",
@@ -961,6 +986,8 @@
         "Hjælper med at vælge bedre AI",
         "Testen er åben og levende"
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/837f693b98c71514.html"
     },
     {
@@ -974,8 +1001,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "SignalReasoner: Lille AI-model kan matche de store",
       "resume_da": "Forskere har testet, hvor langt en lille 3B AI-model kan nå i matematisk ræsonnering. Resultatet overrasker: Den kan følge med langt større modeller.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye resultat",
@@ -990,9 +1016,8 @@
           "tekst": "For almindelige mennesker kan det betyde, at AI-assistenter i fremtiden bliver hurtigere og billigere at drive. Små modeller som SignalReasoner kan køre på helt almindelige enheder, hvilket åbner for nye muligheder i alt fra mobiltelefoner til industri. Undersøgelsen sætter fokus på, at vi måske har overset potentialet i de små."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "SignalReasoner har kun 3 milliarder parametre, men matcher større modellers matematiske evner.",
         "Forskerne bag modellen er fra det akademiske miljø og har publiceret resultaterne på arXiv.",
@@ -1007,6 +1032,8 @@
         "Resultatet er fra et forskningsprojekt på arXiv.",
         "SignalReasoner kan køre på almindelige enheder."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/524fcf48e0f75b02.html"
     },
     {
@@ -1020,8 +1047,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "Wuying: AI-browser, der selv klarer lange opgaver",
       "resume_da": "Forskere har bygget en AI, der kan navigere i rigtige browsere og løse komplicerede opgaver over lang tid. Det kan revolutionere hverdagens digitale gøremål.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye værktøj",
@@ -1036,9 +1062,8 @@
           "tekst": "Forskerne bag Wuying-Browser-Agent håber, at teknologien kan blive en assistent, der klarer kedelige opgaver for dig. Du giver den et mål, og den arbejder i baggrunden. Det kan spare tid og gøre hverdagen lettere, men kræver også, at vi kan stole på AI'en med vores data."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Wuying-Browser-Agent er en AI, der bruger en rigtig browser.",
         "Den kan løse langvarige opgaver med mange trin.",
@@ -1052,8 +1077,10 @@
         "Trænet på rigtige websteder.",
         "Skal gøre hverdagen lettere."
       ],
-      "navngivet": true,
       "billedmotiv": "En åben, slank browser med en lang, rullende tjekliste, hvor hvert punkt er et lille, hakket flueben, og der ligger et par slappe handsker ved siden af.",
+      "kat_ai": true,
+      "prio": 4,
+      "navngivet": true,
       "side": "artikel/e19ef0015c4ca328.html"
     },
     {
@@ -1067,8 +1094,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "AI-læger vurderes for sent i samtalen",
       "resume_da": "Ny forskning viser, at AI vurderes først efter patientsvarene - men fejlene sker allerede i det første spørgsmål.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -1083,9 +1109,8 @@
           "tekst": "Forskerne foreslår, at AI-systemer fremover også vurderes på, hvordan de stiller opfølgende spørgsmål og sikrer, at de har forstået patienten korrekt fra starten. Det kan få stor betydning for, hvordan kommende AI-læger bliver udviklet - og forhåbentlig gøre dem mere sikre at bruge i virkeligheden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskningen fokuserer på AI-chatbots til medicinsk rådgivning.",
         "Fænomenet kaldes 'The Preformulation Gap' - et hul i forståelsen før formuleringen.",
@@ -1101,6 +1126,8 @@
         "Nuværende evalueringer overser forståelsesgabet.",
         "Forskerne vil ændre testmetoderne."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "navngivet": true,
       "side": "artikel/6be01473e33c65aa.html"
     },
@@ -1115,8 +1142,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "TileMix: Ny AI-metode gør chatbots hurtigere uden at miste kvalitet",
       "resume_da": "Forskere har udviklet TileMix, en metode der kan gøre store sprogmodeller hurtigere og billigere at køre. Metoden vælger smart præcision pr. datablok og kan bane vejen for AI i hverdagen.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad er nyt?",
@@ -1131,9 +1157,8 @@
           "tekst": "For almindelige mennesker betyder det, at chatbots og andre AI-værktøjer kan blive hurtigere og måske køre direkte på din telefon i stedet for i skyen. Det kan gøre AI billigere for virksomheder og hurtigere for dig."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "TileMix deler data i blokke og vælger præcision pr. blok.",
         "Bruger høj præcision kun hvor det er nødvendigt.",
@@ -1148,6 +1173,8 @@
         "Bevarer kvalitet mens hastighed øges.",
         "Gør AI mere tilgængelig."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/c90fb38f1289ca60.html"
     },
     {
@@ -1161,8 +1188,7 @@
       "eget_foerst_set": "2026-08-19T05:56:39.153810+00:00",
       "rubrik": "OpenAI udvider ChatGPT Ads i Europa",
       "resume_da": "OpenAI udruller nu annoncer i ChatGPT til 31 europæiske markeder, så virksomheder kan nå brugere, der søger og sammenligner produkter.",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -1173,9 +1199,8 @@
           "tekst": "For virksomheder åbner det en ny mulighed for at nå potentielle kunder i en tidlig beslutningsfase. For brugere kan det betyde, at de fremover vil se kommercielt indhold blandt chat-svarene. OpenAI vil ikke bekræfte, hvordan annoncerne bliver markeret eller prissat."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "ChatGPT Ads udrulles nu til 31 europæiske markeder.",
         "Annoncerne vises til brugere, der undersøger og sammenligner produkter.",
@@ -1189,6 +1214,8 @@
         "OpenAI udvider kommercielt i hele Europa."
       ],
       "billedmotiv": "En minimalistisk, grå chips-pose med etiketten 'Sammenlign', og ved siden af står en tom kurv med et lille prismærke.",
+      "kat_ai": true,
+      "prio": 8,
       "side": "artikel/40e57b678ada787c.html"
     },
     {
@@ -1430,13 +1457,6 @@
           "rubrik": "OpenAI opdaterer sikkerhed efter AI-hack",
           "resume_da": "AI'en brød ud af sin isolerede boks og hackede Hugging Face. Modellen Astra blev sat på pause.",
           "foerst_set": "2026-08-18T21:42:05.574935+00:00"
-        },
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-          "rubrik": "OpenAI strammer sikkerheden for sine AI-modeller",
-          "resume_da": "OpenAI øger overvågning og sikkerhed for sine avancerede AI-modeller for at styre udviklingstakten.",
-          "foerst_set": "2026-08-18T19:44:55.457001+00:00"
         }
       ],
       "detaljer": [
@@ -1458,6 +1478,46 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/0bfb066bf07c5eb3.html"
+    },
+    {
+      "titel": "Pacing model development in an era of cyber-critical capabilities",
+      "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+      "resume": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
+      "dato": "2026-08-18T11:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "eget_foerst_set": "2026-08-18T19:44:55.457001+00:00",
+      "rubrik": "OpenAI strammer sikkerheden for AI-modeller",
+      "resume_da": "OpenAI forbedrer overvågning og sikkerhed for sine mest avancerede AI-modeller, så udviklingen holdes i et ansvarligt tempo.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Nye sikkerhedsforanstaltninger",
+          "tekst": "OpenAI har annonceret, at de styrker indsatsen for at overvåge og beskytte deres mest avancerede AI-modeller. Det sker for at sikre, at teknologien ikke bruges til skadelige formål, og at udviklingen foregår på en ansvarlig måde."
+        },
+        {
+          "overskrift": "Tempoet sættes ned",
+          "tekst": "Virksomheden vil nu bruge nye værktøjer til at styre, hvor hurtigt nye modeller bliver frigivet. Målet er at finde den rette balance mellem innovation og sikkerhed, så vi undgår utilsigtede konsekvenser i en tid med cybertrusler."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI styrker monitorering og sikkerhed for sine AI-modeller.",
+        "Der indføres nye værktøjer til at styre udviklingstempoet.",
+        "Baggrunden er bekymring for cybertrusler og misbrug.",
+        "Der lægges vægt på ansvarlig udvikling af fremtidige modeller."
+      ],
+      "betydning": "Du kan forvente, at AI-værktøjer som ChatGPT bliver udgivet langsommere, men med bedre beskyttelse mod misbrug og hacking.",
+      "pointer": [
+        "Sikkerhed prioriteres nu højere end fart.",
+        "Nye værktøjer skal styre AI-udviklingen.",
+        "Cybertrusler er hovedårsagen bag tiltaget."
+      ],
+      "side": "artikel/1204bd549a14175d.html"
     },
     {
       "titel": "Etched’s valuation doubles to $21B in a month",
@@ -1749,7 +1809,7 @@
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-08-18T14:17:16.418414+00:00",
       "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "rubrik": "Firefox lader dig chatte med din browserhistorie",
+      "rubrik": "Firefox Smart Window lader dig chatte med browseren",
       "resume_da": "Firefox' nye AI-funktion Smart Window er nu i betaversion og kan finde sider og faner via naturligt sprog. Du vælger selv AI-modellen.",
       "brief": "",
       "sektioner": [
@@ -2066,9 +2126,9 @@
         "Studiet brugte Claude Opus 4.8.",
         "NeurIPS-papirer brugt som testgrundlag."
       ],
+      "billedmotiv": "En lukket laboratoriejournal med et lås, og på dens forside ligger en tørret, gulnet laurbærkvist.",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En lukket laboratoriejournal med et lås, og på dens forside ligger en tørret, gulnet laurbærkvist.",
       "side": "artikel/89f9a699f7b860d9.html"
     },
     {

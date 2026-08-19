@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-19T05:56:39.153810+00:00",
- "artikler_i_alt": 108,
+ "opdateret": "2026-08-19T08:06:27.815083+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -206,12 +206,12 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "OpenAI Blog",
+     "Hacker News: AI",
      2
     ],
     [
-     "Hacker News: AI",
-     2
+     "OpenAI Blog",
+     1
     ]
    ]
   },
@@ -274,7 +274,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Firefox lader dig chatte med din browserhistorie",
+     "rubrik": "Firefox Smart Window lader dig chatte med browseren",
      "dato": "2026-08-18T09:00:00",
      "foerst_set": "2026-08-18T14:17:16",
      "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
@@ -614,18 +614,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 1,
+   "i_listen": 24,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "OpenAI strammer sikkerheden for sine AI-modeller",
-     "dato": "",
-     "foerst_set": "2026-08-18T19:44:55",
-     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI strammer sikkerheden efter hackerangreb"
-    },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
@@ -659,6 +650,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T21:42:05",
      "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
      "side": "artikel/da3edf87cdb76098.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI strammer sikkerheden for AI-modeller",
+     "dato": "2026-08-18T11:00:00",
+     "foerst_set": "2026-08-18T19:44:55",
+     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+     "side": "artikel/1204bd549a14175d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -733,21 +733,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b66fa57c04f1c3a8.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI henter ny chef til salg",
-     "dato": "2026-08-13T09:00:00",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
-     "side": "artikel/36609b9396fd20f8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     1
     ],
     [
      "The Verge AI",
@@ -871,7 +862,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere vil styre AI med usynlige grænser",
+     "rubrik": "Adam Mazzocchettis AI-system sætter usynlige grænser",
      "dato": "2026-08-19T00:00:00",
      "foerst_set": "2026-08-19T05:56:39",
      "link": "https://arxiv.org/abs/2608.16891",
@@ -952,7 +943,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-læring tager springet ind i den virkelige verden",
+     "rubrik": "Yashar Talebirads AI lærer fra virkeligheden",
      "dato": "2026-08-19T00:00:00",
      "foerst_set": "2026-08-19T05:56:39",
      "link": "https://arxiv.org/abs/2608.17128",
