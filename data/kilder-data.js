@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-19T17:45:38.642413+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-19T19:44:43.076313+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 7,
+   "i_listen": 19,
+   "som_ekstra": 6,
    "seneste": [
-    {
-     "rubrik": "Apples kamera-AirPods undgår måske privatlivsfælden",
-     "dato": "",
-     "foerst_set": "2026-08-18T17:51:49",
-     "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apple's nye AirPods med kamera dukker op i lækket video"
-    },
     {
      "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
      "dato": "",
@@ -77,6 +68,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Dario Amodei: Amerikanerne er blevet mere bekymrede for AI",
+     "dato": "2026-08-19T19:11:40",
+     "foerst_set": "2026-08-19T19:44:43",
+     "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+     "side": "artikel/88cde3112e540acb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google vil gøre AI til din nye studiekammerat",
+     "dato": "2026-08-19T19:00:00",
+     "foerst_set": "2026-08-19T19:44:43",
+     "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+     "side": "artikel/8656b8f78d55f67d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI fejl fjernede adgang for sikkerhedsforskere",
+     "dato": "2026-08-19T18:46:14",
+     "foerst_set": "2026-08-19T19:44:43",
+     "link": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/",
+     "side": "artikel/5276b3d7b6156aa1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Silicon Data vil sætte pris på AI-computere",
@@ -158,33 +176,6 @@ window.KILDER_STATUS = {
      "side": "artikel/506ef6f4e04268f7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Warp Factories gør AI-kodning nemt for små virksomheder",
-     "dato": "2026-08-18T14:00:00",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-     "side": "artikel/0da80d9d513f763f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Perplexity fik 56 millioner downloads i Indien",
-     "dato": "2026-08-18T13:45:40",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
-     "side": "artikel/e9529c23366c75df.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic runder 65 mia. dollars i årlig omsætning",
-     "dato": "2026-08-17T23:56:26",
-     "foerst_set": "2026-08-18T03:25:41",
-     "link": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
-     "side": "artikel/de8e9b90f0043d51.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -193,12 +184,12 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "The Verge AI",
-     3
-    ],
-    [
      "OpenAI Blog",
      2
+    ],
+    [
+     "The Verge AI",
+     1
     ],
     [
      "Hacker News: AI",
@@ -216,18 +207,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
-   "som_ekstra": 5,
+   "i_listen": 8,
+   "som_ekstra": 4,
    "seneste": [
-    {
-     "rubrik": "OpenAI bremser udviklingen efter sikkerhedsbekymringer",
-     "dato": "",
-     "foerst_set": "2026-08-19T17:45:38",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI strammer sikkerheden efter hackerangreb"
-    },
     {
      "rubrik": "OpenAI opdaterer sikkerhed efter AI-hack",
      "dato": "",
@@ -263,6 +245,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Google laver AI-hub til studerende",
+     "dato": "2026-08-19T15:00:00",
+     "foerst_set": "2026-08-19T19:44:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+     "side": "artikel/dc3d81799698c80d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI bremser AI-udvikling trods pres",
+     "dato": "2026-08-19T13:10:09",
+     "foerst_set": "2026-08-19T17:45:38",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta AI får Mac-app: Kan se din skærm",
@@ -317,25 +317,16 @@ window.KILDER_STATUS = {
      "side": "artikel/8e365c2bc3dddaf1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apple's nye AirPods med kamera dukker op i lækket video",
-     "dato": "2026-08-18T05:00:01",
-     "foerst_set": "2026-08-18T10:00:34",
-     "link": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
-     "side": "artikel/439076f091e64b6b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     3
-    ],
-    [
      "Ars Technica AI",
      2
+    ],
+    [
+     "TechCrunch AI",
+     1
     ],
     [
      "OpenAI Blog",
