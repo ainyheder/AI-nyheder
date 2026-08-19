@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-19T15:59:20.770389+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-08-19T17:45:38.642413+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 18,
-   "som_ekstra": 8,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Apples kamera-AirPods undgår måske privatlivsfælden",
@@ -41,15 +41,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
-    },
-    {
-     "rubrik": "Google tillader fjernelse af vandmærker på AI-billeder",
-     "dato": "",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får usynlige vandmærker for at opfylde EU-regler"
     },
     {
      "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
@@ -86,6 +77,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Silicon Data vil sætte pris på AI-computere",
+     "dato": "2026-08-19T17:26:48",
+     "foerst_set": "2026-08-19T17:45:38",
+     "link": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/",
+     "side": "artikel/da3d698d8f481d1c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Bill Gates' atomkraft firma vil drive AI",
@@ -185,15 +185,6 @@ window.KILDER_STATUS = {
      "side": "artikel/de8e9b90f0043d51.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Jacob Bank lukker AI-startup og rykker til Google Chrome",
-     "dato": "2026-08-17T21:27:05",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
-     "side": "artikel/5b8dbc23aeee0601.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -207,7 +198,7 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     1
+     2
     ],
     [
      "Hacker News: AI",
@@ -225,9 +216,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 4,
+   "i_listen": 7,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "OpenAI bremser udviklingen efter sikkerhedsbekymringer",
+     "dato": "",
+     "foerst_set": "2026-08-19T17:45:38",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI strammer sikkerheden efter hackerangreb"
+    },
     {
      "rubrik": "OpenAI opdaterer sikkerhed efter AI-hack",
      "dato": "",
@@ -263,6 +263,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Meta AI får Mac-app: Kan se din skærm",
+     "dato": "2026-08-19T13:00:00",
+     "foerst_set": "2026-08-19T17:45:38",
+     "link": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+     "side": "artikel/6edc2343165488ff.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia vil låne penge ud med AI-chips som pant",
@@ -315,24 +324,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T10:00:34",
      "link": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
      "side": "artikel/439076f091e64b6b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Whiskers Litter-Robot klarer ikke at kende katte",
-     "dato": "2026-08-17T07:00:00",
-     "foerst_set": "2026-08-18T03:25:41",
-     "link": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
-     "side": "artikel/46539d6c8f0bc5f6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude får usynlige vandmærker for at opfylde EU-regler",
-     "dato": "2026-08-17T06:57:13",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
-     "side": "artikel/dd02c006bef423b4.html",
      "hvor": "forside",
      "under": ""
     }
@@ -614,9 +605,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 25,
-   "som_ekstra": 0,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI strammer sikkerheden om sine modeller",
+     "dato": "",
+     "foerst_set": "2026-08-18T19:44:55",
+     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI strammer sikkerheden efter hackerangreb"
+    },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
@@ -625,6 +625,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
+    },
+    {
+     "rubrik": "OpenAI lover nul dataopbevaring for kunder",
+     "dato": "2026-08-19T19:00:00",
+     "foerst_set": "2026-08-19T17:45:38",
+     "link": "https://openai.com/index/our-commitment-to-zero-data-retention",
+     "side": "artikel/b75ccb58158969be.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Replit gør app-bygning gratis med GPT-5.6 Luna",
@@ -659,15 +668,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T21:42:05",
      "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
      "side": "artikel/da3edf87cdb76098.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI strammer sikkerheden om sine modeller",
-     "dato": "2026-08-18T11:00:00",
-     "foerst_set": "2026-08-18T19:44:55",
-     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-     "side": "artikel/1204bd549a14175d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -738,7 +738,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     1
+     2
     ],
     [
      "The Verge AI",
