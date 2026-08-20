@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-20T03:28:49.167539+00:00",
+ "opdateret": "2026-08-20T06:08:50.726580+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      25,
      28,
      26,
-     0
+     25
     ]
    },
    {
@@ -250,7 +250,7 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 37,
- "sidevisninger_i_alt": 76,
+ "sidevisninger_i_alt": 69,
  "ai_chat_besoeg": 0,
  "sider": [
   {
@@ -267,11 +267,6 @@ window.LAESERTAL = {
    "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1
-  },
-  {
-   "sti": "/artikel/655769ab72fd01b5.html",
-   "besoeg": 0,
-   "visninger": 2
   },
   {
    "sti": "/artikel/e68ddcb8301126ef.html",
@@ -299,9 +294,9 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/3978ae9331b5204e.html",
+   "sti": "/artikel/655769ab72fd01b5.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 2
   },
   {
    "sti": "/artikel/7e1debc1bd0a37c4.html",
@@ -319,17 +314,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/8da3243e4c605139.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/a8dd77df5184aa34.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/9ebfb3cbe9d9719e.html",
+   "sti": "/artikel/3978ae9331b5204e.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -356,11 +341,6 @@ window.LAESERTAL = {
   {
    "sti": "/youtube.html",
    "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/artikel/c37950ec573d6143.html",
-   "besoeg": 0,
    "visninger": 1
   },
   {
@@ -385,11 +365,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/30442beeaf4c72d6.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/fedb51cc07b1d84a.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -443,13 +418,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/655769ab72fd01b5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
   "/artikel/e68ddcb8301126ef.html": [
    {
     "fra": "herfra selv",
@@ -485,11 +453,11 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/3978ae9331b5204e.html": [
+  "/artikel/655769ab72fd01b5.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 2
    }
   ],
   "/artikel/7e1debc1bd0a37c4.html": [
@@ -513,21 +481,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/8da3243e4c605139.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/a8dd77df5184aa34.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9ebfb3cbe9d9719e.html": [
+  "/artikel/3978ae9331b5204e.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -566,13 +520,6 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/artikel/c37950ec573d6143.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -605,13 +552,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/30442beeaf4c72d6.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/fedb51cc07b1d84a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -944,21 +884,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/3978ae9331b5204e.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Google Gemini: 3.7 Flash og halv pris",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-13",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/38269b8f7f4f3795.html",
    "besoeg": 0,
    "visninger": 1,
@@ -989,42 +914,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/8da3243e4c605139.html",
+   "sti": "/artikel/3978ae9331b5204e.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Google Pixel Watch 5 satser på AI og helbred",
+   "rubrik": "Google Gemini: 3.7 Flash og halv pris",
    "kategori": "Lanceringer",
-   "dato": "2026-08-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/a8dd77df5184aa34.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Lovable henter 400 millioner dollars og er nu 13,3 milliarder værd",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/9ebfb3cbe9d9719e.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Elon Musks Grok får nu egne AI-kolleger",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-12",
+   "dato": "2026-08-13",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1070,21 +965,6 @@ window.LAESERTAL = {
    "rubrik": "AI-ekspertens fond kollapsede med 20 milliarder",
    "kategori": "Samfund & etik",
    "dato": "2026-08-14",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/c37950ec573d6143.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Twitch-brugere kan nu sige nej til Amazons AI-træning",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-12",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1169,21 +1049,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/fedb51cc07b1d84a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Cognition i snak om kæmpe værdispring og Devin-vækst",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/e4813eb4076db514.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1232,15 +1097,15 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 15
+   "visninger": 13
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 8
+   "visninger": 7
   },
   {
    "navn": "Penge & marked",
-   "visninger": 7
+   "visninger": 5
   },
   {
    "navn": "Forskning",

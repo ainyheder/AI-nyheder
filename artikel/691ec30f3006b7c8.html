@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Sungwon Chae: AI-kort på dansk skal vise mere</title>
+<meta name="description" content="Forskeren Sungwon Chae viser, at de nuværende AI-kort ikke fortæller nok om risiko, når open-weight-modeller bruges af andre.">
+<link rel="canonical" href="https://ainyheder.com/artikel/691ec30f3006b7c8.html">
+<meta name="theme-color" content="#f6f7f9">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Sungwon Chae: AI-kort på dansk skal vise mere">
+<meta property="og:description" content="Forskeren Sungwon Chae viser, at de nuværende AI-kort ikke fortæller nok om risiko, når open-weight-modeller bruges af andre.">
+<meta property="og:url" content="https://ainyheder.com/artikel/691ec30f3006b7c8.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Sungwon Chae: AI-kort på dansk skal vise mere", "description": "Forskeren Sungwon Chae viser, at de nuværende AI-kort ikke fortæller nok om risiko, når open-weight-modeller bruges af andre.", "url": "https://ainyheder.com/artikel/691ec30f3006b7c8.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/691ec30f3006b7c8.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-20T00:00:00-04:00", "articleSection": "Forskning", "isBasedOn": "https://arxiv.org/abs/2608.18086"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
+<main>
+<div class="kicker">Forskning · arXiv cs.AI · 2026-08-20</div>
+<h1>Sungwon Chae: AI-kort på dansk skal vise mere</h1>
+<p class="manchet">Forskeren Sungwon Chae viser, at de nuværende AI-kort ikke fortæller nok om risiko, når open-weight-modeller bruges af andre.</p>
+
+<h2>Problemet</h2>
+<p>Når en AI-model som eksempelvis Llama bliver frigivet med åbne vægte, kan hvem som helst downloade og bygge videre på den. Men det lille datakort, der følger med - kaldet en model card - beskriver mest, hvordan modellen blev trænet, ikke hvad den kan bruges til i virkeligheden. Det gør det svært for virksomheder og myndigheder at vide, hvornår en model er farlig. Sungwon Chae peger på, at kortene skal indeholde konkrete eksempler på uheld og begrænsninger, så risikoen bliver synlig.</p>
+<h2>Hvad kan bruges?</h2>
+<p>Chae foreslår, at model cards skal laves om, så de passer til den verden, hvor open-weight-modeller bliver brugt af mange forskellige parter - fra startups til offentlige institutioner. I stedet for kun at beskrive træningsdata skal kortene vise, hvordan modellen opfører sig i praksis, fx i chatbots eller i kodegenerering. Det vil gøre det lettere for en udvikler at vælge den rigtige model og undgå uventede fejl. Kortene skal opdateres løbende, ikke kun udgives én gang.</p>
+<h2>Kritikken</h2>
+<p>Nogle vil mene, at model cards allerede er gode nok, fordi de indeholder mange tekniske detaljer. Men Chae viser, at de tekniske oplysninger ofte er for komplekse for folk uden AI-ekspertise. Samtidig mangler der standarder for, hvordan man måler risici, så man kan sammenligne modeller fra forskellige udviklere. Uden fælles regler bliver det næsten umuligt for tilsynsmyndighederne at håndhæve regler som EU&#x27;s AI-lov.</p>
+<h2>Hvad nu?</h2>
+<p>Forskeren opfordrer til, at AI-udviklere, forskere og politikere sammen laver nye retningslinjer for model cards. Han mener, at der skal være krav om, at kortene indeholder letforståelige risikobeskrivelser og eksempler på, hvad der kan gå galt. Hvis det sker, vil open-weight-modeller kunne bruges mere sikkert i samfundet, og brugerne vil få større tillid til teknologien.</p>
+
+<div class="boks"><strong>Detaljerne</strong><ul><li>Model cards beskriver træningsdata, men ikke de reelle risici ved open-weight-modeller.</li><li>Chae foreslår, at kortene opdateres løbende og viser praksis, ikke kun statiske fakta.</li><li>Manglende standarder gør det svært at sammenligne risici mellem forskellige AI-modeller.</li><li>EU&#x27;s AI-lov kræver, at udviklere dokumenterer risiko, men de nuværende kort leverer ikke nok.</li><li>Open-weight-modeller kan downloades af alle, hvilket øger behovet for klare advarsler.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du får mere sikker AI, når udviklere skal vise konkrete risici på en forståelig måde - og du kan bedre vurdere, om en AI-tjeneste er værd at stole på.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://arxiv.org/abs/2608.18086" rel="noopener">arXiv cs.AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
