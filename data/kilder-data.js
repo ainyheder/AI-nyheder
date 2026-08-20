@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-20T16:02:07.208739+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-20T17:57:44.726549+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 15,
+   "i_listen": 17,
    "som_ekstra": 10,
    "seneste": [
     {
@@ -106,6 +106,51 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Grok taler volapyk til brugere",
+     "dato": "2026-08-20T17:32:16",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/",
+     "side": "artikel/90eae5e4b71e5ca6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pew Research: Hver tredje nye webside er skrevet af AI",
+     "dato": "2026-08-20T17:18:58",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+     "side": "artikel/072ab33f0182f137.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ramp lancerer Router: Vælg selv AI-modellen",
+     "dato": "2026-08-20T16:46:00",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+     "side": "artikel/28cd1afbb67e577e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lancerer Pocket: Lav spil med AI-prompts",
+     "dato": "2026-08-20T16:07:26",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/",
+     "side": "artikel/a73f5aa32c52d997.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Fusionsfirmaet Inertia sætter farten op på brændstof",
+     "dato": "2026-08-20T16:00:00",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/inertia-enterprises-finds-a-way-to-make-its-fusion-fuel-fast/",
+     "side": "artikel/78b8e28299133e43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Binance lader ChatGPT og Claude handle med dine penge",
      "dato": "2026-08-20T09:30:00",
      "foerst_set": "2026-08-20T10:02:56",
@@ -165,51 +210,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-19T15:59:20",
      "link": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
      "side": "artikel/b7d34b8d601da5d5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon giver Alexa+ gratis til alle Fire TV-ejere",
-     "dato": "2026-08-19T15:00:00",
-     "foerst_set": "2026-08-19T15:59:20",
-     "link": "https://techcrunch.com/2026/08/19/amazon-makes-its-ai-powered-alexa-free-on-fire-tv-no-prime-required/",
-     "side": "artikel/655769ab72fd01b5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Calendly lancerer AI-assistenten Callie",
-     "dato": "2026-08-19T14:09:39",
-     "foerst_set": "2026-08-19T14:17:56",
-     "link": "https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/",
-     "side": "artikel/759443956e5c1c65.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Vivodyne: AI kan ikke kurere kræft uden data",
-     "dato": "2026-08-19T12:00:00",
-     "foerst_set": "2026-08-19T14:17:56",
-     "link": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take/",
-     "side": "artikel/fe46527ac0309003.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Relativity Networks får 22 millioner til hurtigere fiber",
-     "dato": "2026-08-19T10:00:00",
-     "foerst_set": "2026-08-19T14:17:56",
-     "link": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/",
-     "side": "artikel/d205738f828cf73a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cursor udfordrer GitHub med ny platform",
-     "dato": "2026-08-18T22:14:25",
-     "foerst_set": "2026-08-19T03:27:49",
-     "link": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
-     "side": "artikel/38269b8f7f4f3795.html",
      "hvor": "forside",
      "under": ""
     }
@@ -993,12 +993,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Hold op med at sende AI-svar videre",
+     "dato": "2026-08-20T08:20:44",
+     "foerst_set": "2026-08-20T10:02:56",
+     "link": "https://dontpastetheai.com/",
+     "side": "artikel/146e1884e75bb95d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Terence Tao får AI til at gøre matematik forståelig",
+     "dato": "2026-08-19T15:14:25",
+     "foerst_set": "2026-08-20T08:18:26",
+     "link": "https://arxiv.org/abs/2608.16753",
+     "side": "artikel/ab25077d91f74ce5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Linear: AI skriver snart halvdelen af alle opgaver",
+     "dato": "2026-08-18T22:08:07",
+     "foerst_set": "2026-08-19T11:44:51",
+     "link": "https://linear.app/data",
+     "side": "artikel/3b95f2f527213936.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic beskyldes for at hindre konkurrenter",
+     "dato": "2026-08-17T15:24:34",
+     "foerst_set": "2026-08-19T03:27:49",
+     "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
+     "side": "artikel/12fa0ec462e72cf4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Israel opretter falsk tænketank for at narre AI",
+     "dato": "2026-08-17T20:46:10",
+     "foerst_set": "2026-08-18T14:17:16",
+     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+     "side": "artikel/26bfd15ddd20a353.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI;DR-bevægelsen vil have menneskelig tekst tilbage",
+     "dato": "2026-08-17T19:47:15",
+     "foerst_set": "2026-08-17T21:45:37",
+     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+     "side": "artikel/ad020c91f6cb954c.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],

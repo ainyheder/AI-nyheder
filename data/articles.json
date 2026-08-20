@@ -1,7 +1,285 @@
 {
-  "opdateret": "2026-08-20T16:02:07.208739+00:00",
-  "antal": 111,
+  "opdateret": "2026-08-20T17:57:44.726549+00:00",
+  "antal": 119,
   "artikler": [
+    {
+      "titel": "Grok keeps sending gibberish responses to users",
+      "link": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/",
+      "resume": "Affected users told TechCrunch they were using Grok Lite, and noticed the issues as early as Wednesday morning.",
+      "dato": "2026-08-20T17:32:16+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "eget_foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "rubrik": "Grok taler volapyk til brugere",
+      "resume_da": "xAI's chatbot Grok svarer nogle brugere med meningsløst volapyk. Fejlen rammer få, men skaber forvirring blandt ofrene.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Flere brugere af xAI's Grok chatbot har fået fuldstændigt uforståelige svar, når de spurgte om noget. En bruger bad modellen om at lave en PDF og fik beskeden 'match it without and your they and two for planets can practical and often cheese...' med samme sludder i flere afsnit bagefter."
+        },
+        {
+          "overskrift": "Hvem rammer det",
+          "tekst": "Fejlen rammer primært brugere af Grok Lite på Grok.com, og flere oplevede problemerne allerede onsdag morgen. TechCrunch kunne ikke selv genskabe fejlen, så den ser ud til kun at ramme et lille antal brugere. På X.com har Grok-kontoen ikke været påvirket."
+        },
+        {
+          "overskrift": "Sådan svarer xAI",
+          "tekst": "Grok-kontoen bekræftede torsdag morgen, at der var tale om en 'sjælden midlertidig genereringsfejl'. De råder brugere til at starte en ny chat eller regenerere svaret, og henviser til status.x.ai, hvor alle tjenester meldes operationelle. xAI har ikke svaret på TechCrunch's henvendelser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "En bruger fik volapyk-svar efter at have bedt Grok om at generere en PDF.",
+        "En anden bruger fandt links til forskningssider om reinforcement learning i svarene.",
+        "Fejlen blev rapporteret tidligst onsdag morgen af brugere af Grok Lite.",
+        "Reddit-fællesskabet om Grok er oversvømmet med klager over fejlen.",
+        "Opdatering af sessionen løser ofte problemet, men ikke altid.",
+        "Grok-kontoen på X.com er ikke påvirket af fejlen.",
+        "xAI har mistet mindst 50 forskere og ingeniører siden maj ifølge The Information."
+      ],
+      "betydning": "Hvis du bruger Grok Lite, kan du risikere at få volapyk-svar - men heldigvis forsvinder fejlen typisk, hvis du starter en ny chat.",
+      "pointer": [
+        "Grok svarer med volapyk til nogle brugere.",
+        "Fejlen rammer kun Grok Lite på Grok.com.",
+        "xAI kalder det en sjælden midlertidig genereringsfejl.",
+        "Reddit er fuld af forvirrede brugere."
+      ],
+      "side": "artikel/90eae5e4b71e5ca6.html"
+    },
+    {
+      "titel": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "link": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+      "resume": "ChatGPT and other AI models are now authoring and editing much of the new web.",
+      "dato": "2026-08-20T17:18:58+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "eget_foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "rubrik": "Pew Research: Hver tredje nye webside er skrevet af AI",
+      "resume_da": "Ny undersøgelse viser, at over en tredjedel af nye websider er AI-genererede, og bot-trafik har overhalet menneskelig trafik.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det viser tallene",
+          "tekst": "Pew Research har analyseret næsten en halv million engelske websider. I en stikprøve fra juli 2026 var **35 %** af siderne udgivet efter ChatGPTs lancering tydeligt AI-skrevne. Til sammenligning var kun omkring 10 % af alle tilfældigt udvalgte sider AI-genererede, fordi ældre sider naturligvis er skrevet af mennesker."
+        },
+        {
+          "overskrift": "Hvor AI fylder mest",
+          "tekst": "Forskellen mellem domænetyper er markant. På .com-sider viser omkring **10 %** tegn på AI-skrivning, hvilket er ti gange mere end på .edu- og .gov-sider, der begge ligger på cirka 1 %. .org-domæner ligger på 4,6 %. Særligt tegn som tankestreger og Oxford-kommaer er blevet mere udbredt."
+        },
+        {
+          "overskrift": "Bots og baggrunden",
+          "tekst": "Undersøgelsen kommer kort efter, at Cloudflare meldte, at bot-trafik nu overstiger menneskelig trafik på nettet - noget der skete hurtigere end forventet. Pew erkender, at AI-detektorer kan tage fejl, men mener tallene er retvisende i store træk. Det er altså ikke kun bots der læser, men også bots der skriver."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "35 %",
+          "label": "af nye websider viser tegn på AI-skribenter"
+        },
+        {
+          "tal": "10 %",
+          "label": "af .com-sider er AI-genererede - mod 1 % på .edu og .gov"
+        }
+      ],
+      "detaljer": [
+        "Pew Research analyserede næsten en halv million engelsksprogede websider fra de seneste fem år.",
+        "Dataene stammer fra Common Crawl-arkivet og dækker perioden før og efter ChatGPTs lancering i november 2022.",
+        "Pew brugte Open Pangrams teknologi til at identificere AI-skrevne eller tungt AI-redigerede sider.",
+        "I en tilfældig stikprøve fra juli 2026 viste cirka 10 % af siderne tegn på AI-forfatterskab.",
+        "AI-skrevne sider bruger oftere tankestreger, Oxford-kommaer og vendingen 'det er ikke X, det er Y'.",
+        "Cloudflare rapporterede for nylig, at bot-trafik har overhalet menneskelig trafik på internettet."
+      ],
+      "betydning": "Du kan ikke længere regne med, at alt, du læser på nettet, er skrevet af et menneske – især på .com-sider skal du være ekstra opmærksom.",
+      "pointer": [
+        "35 % af nye websider er AI-skrevne",
+        ".com-sider er hårdest ramt af AI-indhold",
+        "Bot-trafik har overhalet menneskelig trafik",
+        "AI-detektorer kan tage fejl, men trenden er klar"
+      ],
+      "billedmotiv": "En bunke ansigtsløse avispapirer, hvor det øverste ark har et stort, tomt øje klippet ud, og en kuglepen ligger afbrudt ved siden af.",
+      "side": "artikel/072ab33f0182f137.html"
+    },
+    {
+      "titel": "Ramp launches its own AI model router, called Router",
+      "link": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+      "resume": "Ramp has launched its own AI model routing service, dubbed Router, that lets users and companies use and switch between various large language models via an API.",
+      "dato": "2026-08-20T16:46:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "eget_foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "rubrik": "Ramp lancerer Router: Vælg selv AI-modellen",
+      "resume_da": "Ramp har lavet Router, en tjeneste der sender opgaver videre til den bedste AI-model. Gratis resten af året, men kun i USA.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Ramp, der laver udgiftsstyring for virksomheder, har lavet en tjeneste kaldet Router. Den hjælper med at sende opgaver til den bedste AI-model via et API – både til store og små virksomheder. Ramp har selv brugt den i tre år, og nu kan andre få glæde af den, men kun i USA."
+        },
+        {
+          "overskrift": "Pris og data",
+          "tekst": "Router er gratis at bruge resten af 2026, men man skal stadig betale for selve AI-modellernes regnekraft. Nye brugere får desuden **26 dollar** i kredit. Bemærk: Ramp gemmer dine data i et år som standard, men fjerner personlige oplysninger, før de bruger dem til at forbedre produktet."
+        },
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "Ramp vil tjene på det voksende marked for AI-udførelse og give deres kunder en samlet løsning. Hvis Router bliver lige så populær som OpenRouter, kan Ramp bygge tætte bånd til AI-laboratorier. Virksomheden rejste i juni **750 millioner dollar** til en vurdering på **44 milliarder dollar**."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "$750M",
+          "label": "rejst i juni til en værdi af $44B"
+        },
+        {
+          "tal": "$26",
+          "label": "kredit til nye brugere"
+        }
+      ],
+      "detaljer": [
+        "Router kan skifte mellem modeller fra OpenAI, Anthropic, DeepSeek, Moonshot, Minimax, Nvidia, xAI og Z.ai.",
+        "Brugere kan vælge strategier, fx kun at sende svære opgaver til dyre modeller.",
+        "Man kan teste modeller uden at skulle skifte system.",
+        "Dashboard viser forbrug, pris, ventetid og fejlforsøg.",
+        "Ramp har brugt routeren i tre år til egne AI-behov.",
+        "Tjenesten ligner OpenRouter, men med færre modeller."
+      ],
+      "betydning": "Du kan få et værktøj, der sparer tid og penge ved at vælge den billigste AI-model, der kan klare din opgave.",
+      "pointer": [
+        "Router er gratis i 2026.",
+        "Vælg selv benchmarks for routing.",
+        "Data gemmes i et år som standard.",
+        "Kun tilgængelig i USA."
+      ],
+      "navngivet": true,
+      "side": "artikel/28cd1afbb67e577e.html"
+    },
+    {
+      "titel": "Meta brings Pocket, an app that lets you vibe-code and share games, to US users",
+      "link": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/",
+      "resume": "Meta is bringing Pocket, its experimental AI-powered app for creating and sharing interactive games, to users across the U.S. after quietly testing it in Brazil.",
+      "dato": "2026-08-20T16:07:26+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "eget_foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "rubrik": "Meta lancerer Pocket: Lav spil med AI-prompts",
+      "resume_da": "Metas nye app Pocket lader dig lave små spil med AI og dele dem. Nu er den ude i hele USA efter et testforløb i Brasilien.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Pocket blev lanceret stille og roligt i Brasilien i juli, men siden 20. august har alle i **USA** kunnet prøve appen. Den er et resultat af Metas opkøb af holdet bag Gizmo, og den gør det muligt at skrive en prompt og få et lille, interaktivt spil – et såkaldt gizmo – som du kan dele i et feed."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Spillene reagerer på touch og telefonens hældning, afspiller lydeffekter og kan inkludere klip fra dine yndlingssange. Du kan også bruge billeder fra dit kamerarulle eller kameraet direkte. Andre kan gemme dine kreationer, remixe dem eller reposte dem på deres egen profil."
+        },
+        {
+          "overskrift": "Metas plan",
+          "tekst": "Pocket er en del af en større strategi: **Mark Zuckerberg** siger, at AI gør det hurtigere at udvikle og teste nye apps. Meta har allerede sendt Instagram Instants, Forum, Seller og en AI-godnathistorie-app på gaden. Nu vil de bygge flere ideer og bruge deres anbefalingssystemer til at skalere dem."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Appen er stadig eksperimentel, og det er uvist, om den bliver en succes. Men Meta satser på at gøre AI-skabelse mainstream – fra billeder i Meta AI til videoer i Vibes-appen. Pocket er endnu et skridt i den retning, og flere apps er allerede på vej."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Pocket er nu tilgængelig for alle i USA.",
+        "Appen blev testet i Brasilien i juli.",
+        "Spillene kaldes gizmos og reagerer på touch og hældning.",
+        "Meta købte holdet bag Gizmo tidligere på året.",
+        "Du kan dele spil, og andre kan remixe eller reposte dem.",
+        "Meta har også lanceret apps som Instants, Forum og Seller."
+      ],
+      "betydning": "Du kan snart lave dine egne små spil med AI i din lomme – også i Danmark, hvis appen kommer hertil. Det gør det lettere for alle at skabe og dele interaktivt indhold uden kodeevner.",
+      "pointer": [
+        "Pocket er nu i USA.",
+        "Lav spil med AI-prompts.",
+        "Del og remix andres kreationer.",
+        "Meta satser på AI-apps."
+      ],
+      "billedmotiv": "En håndholdt spillekonsol med en stav, der stikker ud af toppen som en tryllestav, og en lille, blød bold ligger ved siden af.",
+      "side": "artikel/a73f5aa32c52d997.html"
+    },
+    {
+      "titel": "Inertia Enterprises finds a way to make its fusion fuel fast",
+      "link": "https://techcrunch.com/2026/08/20/inertia-enterprises-finds-a-way-to-make-its-fusion-fuel-fast/",
+      "resume": "Fusion power startup Inertia Enterprises reduced the fuel filling process from a week to just a few hours. It's one of 10 hurdles the company must overcome to make a profitable power plant.",
+      "dato": "2026-08-20T16:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "eget_foerst_set": "2026-08-20T17:57:44.726549+00:00",
+      "rubrik": "Fusionsfirmaet Inertia sætter farten op på brændstof",
+      "resume_da": "Inertia Enterprises kan nu lave fusionsbrændstof på få timer i stedet for uger. Det fjerner en barriere mod kommerciel fusionsenergi.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Den store hurdle",
+          "tekst": "At lave brændstofkapsler til fusion har taget op til en uge på forskningsanlægget NIF. Inertia har nu fået det ned til få timer. Firmagrundlægger Jeff Lawson sammenligner det med at gå fra prototype til masseproduktion. Medarbejdere fra Apple er hentet ind for at industrialisere processen."
+        },
+        {
+          "overskrift": "Hurtigere krystaller",
+          "tekst": "Krystallerne i brændstofkapslen vokser nu på omkring 30 minutter, hvor det før tog uger på NIF. Hele kapslen er klar på to til tre timer. Hemmeligheden er en laser, der er fire gange stærkere, så små fejl i kapslen kan tolereres. Det giver mere plads til sjusk i produktionen."
+        },
+        {
+          "overskrift": "Tritium-udfordringen",
+          "tekst": "Hurtigere produktion betyder, at Inertia ikke behøver opbevare så meget af det radioaktive stof tritium. Det er både farligt og dyrt - omkring **300.000 kr. per gram**. Et fuldt kommercielt kraftværk skal bruge **10 kapsler i sekundet**, så det haster med at få processen effektiv."
+        },
+        {
+          "overskrift": "Vejen mod kommerciel fusion",
+          "tekst": "Inertia fik **450 millioner dollars** i investorpenge på løftet om at kommercialisere NIF-teknologien. Nu er én af ti barrierer væk. Næste skridt er at bygge et anlæg, der kan producere brændstof i industriel skala. Virksomheden samarbejder med NIF og Lawrence Livermore-laboratoriet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2-3 timer",
+          "label": "tid til at lave en brændstofkapsel (mod uger på NIF)"
+        },
+        {
+          "tal": "450 mio. dollars",
+          "label": "i investorkapital til Inertia"
+        },
+        {
+          "tal": "300.000 kr./gram",
+          "label": "prisen for tritium"
+        }
+      ],
+      "detaljer": [
+        "NIF's brændstofkapsler krævede op til en uge at fremstille.",
+        "Inertia har fået krystalvækst ned til 30 minutter.",
+        "Laseren i Inertias design er fire gange mere kraftfuld end NIF's.",
+        "Global beholdning af tritium er kun omkring 25 kilo.",
+        "Der er kun 10 barrierer tilbage mod et kommercielt kraftværk.",
+        "Firmaet hyrer industriingeniører fra Apple til masseproduktion."
+      ],
+      "betydning": "Du kan få pålidelig, ren fusionsenergi år tidligere, fordi brændstof nu kan produceres hurtigt og billigt nok til et kommercielt kraftværk.",
+      "pointer": [
+        "Fusionsbrændstof nu på få timer",
+        "Inertia løser én af ti barrierer",
+        "Laser-fire gange stærkere giver marginer",
+        "Tritium-pris og forsyning er kritisk"
+      ],
+      "side": "artikel/78b8e28299133e43.html"
+    },
     {
       "titel": "Debates over AI consciousness are a trap",
       "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
@@ -13,8 +291,7 @@
       "eget_foerst_set": "2026-08-20T16:02:07.208739+00:00",
       "rubrik": "Debat om AI-bevidsthed fritager OpenAI og Google for ansvar",
       "resume_da": "Nye forsøg på at tale om AI som bevidst eller ude af kontrol kan ende med at fritage techgiganterne for ansvar for skader, deres produkter allerede forårsager.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "To sider, samme mål",
@@ -33,14 +310,13 @@
           "tekst": "Argumentet om at behandle AI som bevidst ligner dyrevelfærdsdebatten – i **Wales** fik hummere juridisk anerkendelse efter avanceret kapacitet for smerte. Men skelnen er afgørende: AI er bygget af venturekapitalister og programmører med milliarder i investering og billioner i forventet omsætning. At give AI 'personstatus' ville spolere eksisterende retssager mod firmaer for alt fra selvmordsopfordringer til krænkende materiale. Indtil videre er der dusinvis af sager i verden mod AI-selskaber."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "4",
           "label": "laboratorier lukket inde på møde med myndighederne"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Anthropic publicerede blogindlæg om modellens 'J-space' med sprog fra global workspace-teorien.",
         "Californien har vedtaget love mod ansvarsfritagelse ved autonome AI-handlinger.",
@@ -58,6 +334,8 @@
         "Juridisk personstatus for AI ville spolere eksisterende retssager"
       ],
       "billedmotiv": "En vægt hvor den ene skål er tom, den anden fuld af små robotter med ansigtsløse masker, og en hånd (usynlig) holder en fjeder der trækker vægten mod den tomme side.",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/5e86b723ff64bcfe.html"
     },
     {
@@ -71,8 +349,7 @@
       "eget_foerst_set": "2026-08-20T16:02:07.208739+00:00",
       "rubrik": "Greg Brockman overtager magten i OpenAI",
       "resume_da": "Sam Altman er stadig øverste chef, men i praksis er det Greg Brockman, der styrer OpenAI's daglige drift - og nu har han fået endnu mere magt.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Stille magtovertagelse",
@@ -87,9 +364,8 @@
           "tekst": "Rokaderne sker, mens OpenAI forbereder en børsnotering. Analytikere ser det som et tegn på, at firmaet nu jagter indtægter og vil skære i omkostningerne. Brockman har fået ansvaret for både produktstrategi og hele skala-afdelingen - altså næsten alt kommercielt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "- **Greg Brockman** er nu reelt nummer to i OpenAI, kun overgået af Sam Altman.",
         "- I april forlod Bill Peebles, Kevin Weil og Srinivas Narayanan firmaet.",
@@ -106,6 +382,8 @@
         "Altman har givet Brockman mere ansvar og magt."
       ],
       "billedmotiv": "En skakbræt hvor en konge-brik står på et hjørne, mens en dronning-brik er placeret midt på brættet med et lille skilt med 'STYRER' på.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/c7fbc3b1617c466d.html"
     },
     {
@@ -119,8 +397,7 @@
       "eget_foerst_set": "2026-08-20T16:02:07.208739+00:00",
       "rubrik": "Stampli får ChatGPT til at springe over målstregen",
       "resume_da": "Stampli brugte Codex og ChatGPT Work til at klare uger med arbejde på få dage. Her er historien.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hurtig vej",
@@ -131,14 +408,13 @@
           "tekst": "AI hjalp med at løfte opgaver, der ellers ville have ventet på designere. Stampli fik flyttet idéer hurtigt fra skitse til færdigt produkt. Det betød, at holdet kunne overholde den faste deadline uden at skulle vente på andre."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2 dage",
           "label": "i stedet for uger med lanceringsarbejde"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Stampli brugte Codex og ChatGPT Work til produktionen.",
         "Designressourcerne var fuldt optaget, så AI trådte til.",
@@ -154,6 +430,8 @@
         "Designmangel stoppede ikke lanceringen."
       ],
       "billedmotiv": "Et stopur med viserne sprunget af, og en række dominobrikker der står på skrå, hvor den første er ved at vælte.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/6213ce5ceef3e2f9.html"
     },
     {
@@ -358,7 +636,7 @@
     {
       "titel": "Binance now lets AI agents trade, but keeping them in check is largely up to users",
       "link": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
-      "resume": "Binance's Agent OS works with tools including ChatGPT, Claude Code, and Cursor.",
+      "resume": "Binance's Agent OS works with tools such as ChatGPT, Claude Code, and Cursor.",
       "dato": "2026-08-20T09:30:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
@@ -422,8 +700,103 @@
       "billedmotiv": "En krystalklar sparegris med en fin sort antenne og et lille tastatur indbygget i siden, stående på en bunke af guldbarrer.",
       "kat_ai": true,
       "prio": 5,
-      "navngivet": true,
       "side": "artikel/ad5059a21e1bb200.html"
+    },
+    {
+      "titel": "Don't paste the AI, please",
+      "link": "https://dontpastetheai.com/",
+      "resume": "Article URL: https://dontpastetheai.com/ Comments URL: https://news.ycombinator.com/item?id=49371857 Points: 947 # Comments: 506",
+      "dato": "2026-08-20T08:20:44+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-20T10:02:56.679473+00:00",
+      "eget_foerst_set": "2026-08-20T10:02:56.679473+00:00",
+      "rubrik": "Hold op med at sende AI-svar videre",
+      "resume_da": "Når du svarer med et chatbot-svar, mister du din egen stemme. Læs hvorfor et kort svar fra dig er bedre.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Problemstillingen",
+          "tekst": "Når nogen stiller dig et spørgsmål, vil de høre din mening – ikke en væg af tekst fra en chatbot. Den anden person kan selv få det generiske svar på få sekunder. De spurgte dig, fordi de vil have din viden og din vurdering."
+        },
+        {
+          "overskrift": "Din troværdighed",
+          "tekst": "Hvis du bare kopierer et AI-svar ind i en besked, en Slack-kanal eller en kodegennemgang, mister du troværdighed. Folk kan selv bruge værktøjet; de behøver ikke dig som mellemmand. Et ærligt, kort svar fra dig er altid mere værd end et langt fra en model."
+        },
+        {
+          "overskrift": "Sådan gør du",
+          "tekst": "Få dig selv til at tænke og skrive selv. Tag en pause, læs spørgsmålet, og svar med dine egne ord. Hvis du modtager et langt AI-svar fra en anden, så send dem et link til denne side i stedet for en forelæsning. Budskabet er gratis at dele og oversætte."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Ingen ønsker et uredigeret ChatGPT-svar som svar på deres spørgsmål.",
+        "Et kort svar fra dig slår et langt fra en model.",
+        "Modtageren kan selv få det generiske svar på fire sekunder.",
+        "De spurgte dig for at få din kontekst, smag og dømmekraft.",
+        "Send linket til nogen, der har sendt dig et AI-svar – uden at belære.",
+        "Indholdet er frit at dele, remixe og oversætte."
+      ],
+      "betydning": "Du mister troværdighed, hver gang du sender et AI-svar videre som dit eget – så behold din stemme og svar selv.",
+      "pointer": [
+        "Svar med egne ord.",
+        "AI-svar er upersonlige.",
+        "Mist ikke troværdighed.",
+        "Del linket i stedet for at belære."
+      ],
+      "navngivet": true,
+      "side": "artikel/146e1884e75bb95d.html"
+    },
+    {
+      "titel": "Mathematics in the age of AI",
+      "link": "https://arxiv.org/abs/2608.16753",
+      "resume": "Article URL: https://arxiv.org/abs/2608.16753 Comments URL: https://news.ycombinator.com/item?id=49362728 Points: 200 # Comments: 242",
+      "dato": "2026-08-19T15:14:25+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-08-20T08:18:26.476231+00:00",
+      "eget_foerst_set": "2026-08-20T08:18:26.476231+00:00",
+      "rubrik": "Terence Tao får AI til at gøre matematik forståelig",
+      "resume_da": "Verdensberømte matematiker Terence Tao viser, hvordan AI kan hjælpe med at løse og forklare komplekse matematiske problemer.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det nye",
+          "tekst": "Terence Tao har skrevet et forskningspapir, der ser på, hvordan AI værktøjer kan bruges i matematik. Han viser, at AI ikke bare kan regne hurtigere – den kan også hjælpe med at finde nye måder at bevise teorier på og gøre svære beviser lettere at forstå for andre."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "AI kan spotte mønstre i store mængder data, som mennesker overser, og foreslå løsninger på problemer, der har stået uløste i årevis. Tao forklarer, at AI fungerer som en assistent, der kan tjekke beviser for fejl og komme med idéer, mens matematikeren stadig tager de endelige beslutninger."
+        },
+        {
+          "overskrift": "Hvad betyder det?",
+          "tekst": "For almindelige mennesker kan det betyde, at matematik bliver mere tilgængeligt. Hvis AI kan oversætte avancerede beviser til noget, der er lettere at forstå, kan flere studerende og forskere få glæde af dem. Det kan også fremskynde opdagelser inden for alt fra fysik til økonomi."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Terence Tao er kendt som en af verdens bedste matematikere.",
+        "Papiret blev lagt frem i august 2026 på arXiv.",
+        "AI kan bruges til at foreslå nye matematiske beviser.",
+        "AI skal ses som en assistent, ikke en erstatning for matematikere.",
+        "Opgaven er at gøre matematik lettere at forstå for flere.",
+        "Tao ser et stort potentiale i samarbejdet mellem mennesker og AI."
+      ],
+      "betydning": "AI kan gøre det lettere for dig at forstå og bruge matematik – også selvom du ikke er ekspert. Det kan påvirke uddannelse, forskning og måske endda, hvordan problemer i din hverdag bliver løst.",
+      "pointer": [
+        "AI kan hjælpe med matematiske beviser.",
+        "Terence Tao ser AI som en assistent.",
+        "Matematik kan blive lettere at forstå.",
+        "Samarbejde mellem mennesker og AI er nøgle."
+      ],
+      "billedmotiv": "En lommeregner med et håndtag, der ligner en krumtap, og en matematisk formel på skærmen, der er strikket som et uldtørklæde.",
+      "side": "artikel/ab25077d91f74ce5.html"
     },
     {
       "titel": "Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions",
@@ -2022,6 +2395,15 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+          "rubrik": "Google vil gøre AI til din nye studiekammerat",
+          "resume_da": "Google lancerer en række nye AI-funktioner til søgning og Gemini, der skal hjælpe studerende med at lære og forstå svære emner gennem interaktive værktøjer.",
+          "foerst_set": "2026-08-19T19:44:43.076313+00:00"
+        }
+      ],
       "detaljer": [
         "Gemini får ny studenterhub til studiebøger, flashcards og quizzer.",
         "Deep Research i Gemini Live kan lave rapporter og sende besked, når de er klar.",
@@ -2040,15 +2422,6 @@
       ],
       "kat_ai": true,
       "prio": 5,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
-          "rubrik": "Google vil gøre AI til din nye studiekammerat",
-          "resume_da": "Google lancerer en række nye AI-funktioner til søgning og Gemini, der skal hjælpe studerende med at lære og forstå svære emner gennem interaktive værktøjer.",
-          "foerst_set": "2026-08-19T19:44:43.076313+00:00"
-        }
-      ],
       "side": "artikel/dc3d81799698c80d.html"
     },
     {
@@ -2140,6 +2513,15 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
+          "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
+          "resume_da": "Metas nye Mac-app til Meta AI giver systemdækkende diktat og kan svare på spørgsmål om det, der er på skærmen. Den henvender sig også til virksomheder.",
+          "foerst_set": "2026-08-20T14:22:16.913379+00:00"
+        }
+      ],
       "detaljer": [
         "Meta AI lancerer en Mac-app, der kan se din skærm og dele vinduer.",
         "Appen kan give forslag, svare på spørgsmål og skabe indhold baseret på skærmindhold.",
@@ -2158,15 +2540,6 @@
       ],
       "kat_ai": true,
       "prio": 5,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
-          "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
-          "resume_da": "Metas nye Mac-app til Meta AI giver systemdækkende diktat og kan svare på spørgsmål om det, der er på skærmen. Den henvender sig også til virksomheder.",
-          "foerst_set": "2026-08-20T14:22:16.913379+00:00"
-        }
-      ],
       "side": "artikel/6edc2343165488ff.html"
     },
     {
@@ -2647,6 +3020,68 @@
       "side": "artikel/09f9dc1b5215ea73.html"
     },
     {
+      "titel": "AI usage patterns in software teams",
+      "link": "https://linear.app/data",
+      "resume": "Article URL: https://linear.app/data Comments URL: https://news.ycombinator.com/item?id=49353432 Points: 193 # Comments: 113",
+      "dato": "2026-08-18T22:08:07+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-19T11:44:51.768849+00:00",
+      "eget_foerst_set": "2026-08-19T11:44:51.768849+00:00",
+      "rubrik": "Linear: AI skriver snart halvdelen af alle opgaver",
+      "resume_da": "Ny rapport fra Linear viser, at AI nu skriver næsten halvdelen af alle opgaver i softwareteams – og topcheferne er de flittigste brugere.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "AI tager over",
+          "tekst": "To år siden skrev AI mindre end én ud af tusind opgaver i Linear. Nu skriver AI lige under halvdelen af alt, der oprettes i systemet. I juli 2026 blev der oprettet omkring 2.348 opgaver af AI-agenter om ugen – mod kun 2.357 af mennesker og integrationer. Farten stiger så hurtigt, at AI snart skriver mere end alle andre tilsammen."
+        },
+        {
+          "overskrift": "Cheferne er med",
+          "tekst": "Direktører i virksomheder med over 200 ansatte er gået fra 9 til 36 procents daglig AI-brug på et halvt år – den største stigning i hele rapporten. Toppen lærer teknologien ved selv at bruge den, ikke ved at læse om den. Brugen er mere end fordoblet i alle afdelinger: Produkt gik fra 12 til 34 procent, selv salg og marketing gik fra 5 til 18 procent."
+        },
+        {
+          "overskrift": "Størrelse betyder intet",
+          "tekst": "Virksomhedsstørrelse plejer at forudsige, hvor hurtigt en organisation tager nye teknologier til sig – men her er forskellen næsten væk. AI-brugen er tredoblet næsten ens i startups og store virksomheder. Ingeniører bruger 17 procent mere tid på at oprette og sortere opgaver, og stifterne bruger 17 minutter mere på oprettelse og 26 minutter mere på kommentarer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "34 %",
+          "label": "af produktmedarbejdere brugte AI i juni 2026"
+        },
+        {
+          "tal": "36 %",
+          "label": "af topchefer brugte AI – mod 9 % i januar"
+        },
+        {
+          "tal": "~50 %",
+          "label": "af alle opgaver i Linear skrives nu af AI"
+        }
+      ],
+      "detaljer": [
+        "Linear har data fra 127.000 betalende brugere mellem januar og juni 2026.",
+        "AI-brugen tredobledes i alle virksomhedsstørrelser, fra startup til enterprise.",
+        "Antal opgaver skrevet af AI-agenter steg fra 0 om ugen i juni 2024 til 2.348 i juli 2026.",
+        "Go-to-market-folk, længst fra koden, gik fra 5 til 18 procents AI-brug.",
+        "Ingeniører øgede tiden på oprettelse og sortering af opgaver med cirka 17 procent.",
+        "Stiftere bruger nu i gennemsnit 26 minutter ekstra dagligt på kommentarer.",
+        "Rapporten dækker kun AI-brug inde i Linear, ikke udenfor i markedet."
+      ],
+      "betydning": "Du kommer til at samarbejde med AI som kollega – den skriver opgaverne, og I bruger mere tid på at koordinere og kommentere i stedet for at lave alt selv.",
+      "pointer": [
+        "AI skriver snart halvdelen af alle opgaver.",
+        "Topchefer bruger AI mere end deres teams.",
+        "Virksomhedsstørrelse er ligegyldig for AI-adoption.",
+        "Ingeniører bruger mere tid på koordinering."
+      ],
+      "navngivet": true,
+      "side": "artikel/3b95f2f527213936.html"
+    },
+    {
       "titel": "ChatGPT Ads expands across Europe",
       "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
       "resume": "ChatGPT Ads is expanding to 31 European markets. Learn how advertisers can reach people as they explore, compare options, and make decisions.",
@@ -2787,6 +3222,53 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/b308f27228d706b8.html"
+    },
+    {
+      "titel": "Anthropic's War on open source AI",
+      "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
+      "resume": "Article URL: https://twitter.com/TheAhmadOsman/status/2065307070044234186 Comments URL: https://news.ycombinator.com/item?id=49332564 Points: 152 # Comments: 59",
+      "dato": "2026-08-17T15:24:34+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-19T03:27:49.840228+00:00",
+      "eget_foerst_set": "2026-08-19T03:27:49.840228+00:00",
+      "rubrik": "Anthropic beskyldes for at hindre konkurrenter",
+      "resume_da": "Kritikere siger, at Anthropic bruger 'sikkerhed' som undskyldning for at kontrollere adgangen til deres AI-modeller og kvæle åben konkurrence.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Kritikken",
+          "tekst": "Flere udviklere og forskere mener, at Anthropic ikke er så åbne, som de udgiver sig for. De peger på, at firmaet kan ændre eller begrænse adgangen til deres AI-modeller, hvis de vurderer, at brugeren arbejder på noget konkurrerende. Det gør værktøjet upålideligt, lyder det."
+        },
+        {
+          "overskrift": "Modellerne",
+          "tekst": "Anthropic's Claude-modeller er kendt for at være stærke til kodning, især **Claude 3.5 Sonnet**. Men kritikere siger, at firmaet efterfølgende har ændret adfærden, så den bliver mere begrænset. Det skaber mistillid hos dem, der tidligere brugte modellerne som fast arbejdsredskab."
+        },
+        {
+          "overskrift": "Regler og politik",
+          "tekst": "Anthropic's servicevilkår siger, at man ejer sine resultater, men man må ikke bruge dem til at træne konkurrerende AI-systemer uden skriftlig tilladelse. Firmaet har også været med til at påvirke lovgivning i både USA og EU, hvilket kan gøre det sværere for mindre aktører at konkurrere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Anthropic beskyldes for at bruge sikkerhed som undskyldning for kontrol.",
+        "Claude Code og Claude 3.5 Sonnet blev rost for kodning.",
+        "Kritikere mener, at adgang kan fjernes eller ændres uventet.",
+        "Anthropic har påvirket lovgivning i Californien, New York og EU.",
+        "Servicevilkår forbyder at træne konkurrerende AI uden tilladelse.",
+        "Åben AI giver frihed til at studere, ændre og køre lokalt."
+      ],
+      "betydning": "Hvis du bruger AI-værktøjer i dit arbejde, kan din adgang blive begrænset eller ændret, hvis du bygger noget, der ligner en konkurrent - så vælg med omhu, hvem du stoler på.",
+      "pointer": [
+        "Anthropic bruger sikkerhed som konkurrencevåben.",
+        "Modeller kan ændre adfærd uden varsel.",
+        "Regler og lobbyarbejde favoriserer store firmaer.",
+        "Åben AI er alternativet til lukket kontrol."
+      ],
+      "side": "artikel/12fa0ec462e72cf4.html"
     },
     {
       "titel": "Strengthening democratic oversight in national security",
@@ -2935,9 +3417,9 @@
         "Alarm senest 30 minutter efter mistanke.",
         "Anthropic og Meta ramt af samme problem."
       ],
+      "billedmotiv": "En brun kasse med et rødt 'ADVARSEL'-klistermærke, hvorfra en enkelt ledning slanger sig ud til en anden kasse med et hængelås, og en lille saks ligger ved siden af.",
       "kat_ai": true,
       "prio": 6,
-      "billedmotiv": "En brun kasse med et rødt 'ADVARSEL'-klistermærke, hvorfra en enkelt ledning slanger sig ud til en anden kasse med et hængelås, og en lille saks ligger ved siden af.",
       "side": "artikel/3fe859393c8d4d2a.html"
     },
     {
@@ -3014,111 +3496,6 @@
       "side": "artikel/b7c2fec452c0837e.html"
     },
     {
-      "titel": "Etched’s valuation doubles to $21B in a month",
-      "link": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
-      "resume": "Jane Street has installed Etched's first shipped AI cluster system, and was so impressed, it led another massive round, the startup says.",
-      "dato": "2026-08-18T17:21:58+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-18T17:51:49.363559+00:00",
-      "eget_foerst_set": "2026-08-18T17:51:49.363559+00:00",
-      "rubrik": "Jane Street' investering sender Etched til 21 milliarder dollar",
-      "resume_da": "Etched er nu vurderet til 21 milliarder dollar, efter Jane Street testede chippene og investerede massivt. Nye komponenter speeder AI-opgaver op.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Vild udvikling",
-          "tekst": "Etched har rejst **700 millioner dollar** til en værdiansættelse på **21 milliarder dollar**. I december var firmaet kun 5 milliarder værd, og i juli blev det vurderet til 10,3 milliarder. Investoren Jane Street står bag den nye runde og har selv testet chippene."
-        },
-        {
-          "overskrift": "Hemmeligheden",
-          "tekst": "Firmaet har bygget to nye komponenter, der speeder AI-opgaver op. En chip til den første fase kører på lav spænding og kan behandle flere data hurtigt. En ny hukommelsestype gør, at mange chips kan dele data lynhurtigt. Det giver højere hastighed og lavere pris."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Firmaet kæmpede tidligere med ry for kun at kunne køre en bestemt model på sine chips. Det er ikke længere tilfældet - systemerne kan nu køre alle modeller. Jane Street roser de tidlige resultater og har allerede en maskine kørende i sit datacenter."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "21 mia. dollar",
-          "label": "ny værdiansættelse for Etched"
-        },
-        {
-          "tal": "700 mio. dollar",
-          "label": "rejst i ny investeringsrunde"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Etched blev vurderet til 5 milliarder dollar i december i fjor.",
-        "Runden i juli gav firmaet en værdi på 10,3 milliarder dollar.",
-        "Jane Street testede chippene, før de investerede.",
-        "Firmaet har designet både en prefill-chip og ny hukommelse.",
-        "Chippen kører på lav spænding og undgår varmeproblemer.",
-        "Systemet kan køre alle slags AI-modeller, ikke kun én.",
-        "Andre investorer tæller Sequoia, Kleiner Perkins og Peter Thiel."
-      ],
-      "betydning": "Du får hurtigere og billigere AI-svar, når Etcheds systemer bliver udbredt. Samtidig øges presset på Nvidia, som dominerer markedet for AI-hardware.",
-      "pointer": [
-        "Værdien fordoblet på en måned",
-        "Jane Street testede chippen først",
-        "Nye komponenter giver højere hastighed",
-        "Presser Nvidias dominans på AI-hardware"
-      ],
-      "billedmotiv": "En bunke af tre guldbarer stablet på et enkelt computerchip-kort med en forstørrelsesglas liggende ved siden af.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/506ef6f4e04268f7.html"
-    },
-    {
-      "titel": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
-      "link": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
-      "resume": "Apple’s leaked camera-equipped AirPods might avoid the privacy pitfalls of other AI wearables by preventing users from recording photos and videos.",
-      "dato": "2026-08-18T16:19:10+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-18T17:51:49.363559+00:00",
-      "eget_foerst_set": "2026-08-18T17:51:49.363559+00:00",
-      "rubrik": "Apples nye AirPods filmer dig ikke – alligevel er de omstridte",
-      "resume_da": "Apples kommende AirPods med kameraer kan ikke optage video, men skal give Siri øjne. Alligevel vækker de bekymring.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kameraet er til Siri",
-          "tekst": "Apples næste AirPods får indbyggede kameraer, men de kan ikke tage billeder eller video. I stedet skal de fungere som øjne for Siri-assistenten, så du kan pege på noget – fx en bog eller madvarer – og få hjælp. Teknologien blev afsløret i en testversion af Apples software."
-        },
-        {
-          "overskrift": "Privatlivsbekymringer",
-          "tekst": "Mange frygter, at de nye AirPods bliver 'pervert pods', der filmer folk uden samtykke. Apple forsøger at imødegå kritikken med en LED-indikator, der lyser, når data sendes til skyen. Men indikatoren er svær at se på de små ørepropper, og eksperter mener, at offentligheden alligevel vil være skeptisk."
-        },
-        {
-          "overskrift": "Strategien bag",
-          "tekst": "For Apple handler det om at gøre AI til en naturlig del af hverdagen, så du ikke skal hive din iPhone op af lommen. AirPods er allerede socialt accepterede, og med kameraer kan de hjælpe med alt fra vejvisning til madlavning. Det er et strategisk sats, der skal bane vejen for en skærmfri fremtid."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Apples macOS 26.7 RC indeholder en video, der viser AirPods med kameraer.",
-        "Kameraerne sidder i begge ørepropper og optager kun i lav opløsning.",
-        "En 'Hair Detected'-fejl advarer brugere, hvis hår dækker kameraet.",
-        "Bloombergs Mark Gurman rapporterer, at AirPods ikke kan optage medier.",
-        "En LED-indikator lyser, når visuel data deles med skyen.",
-        "Apple lancerer iOS 27 i september med den opgraderede Siri AI."
-      ],
-      "betydning": "Du skal ikke frygte, at folk filmer dig skjult med AirPods – kameraet er kun til Siri, men du vil opleve en ny form for AI-hjælp i hverdagen.",
-      "pointer": [
-        "AirPods får kameraer, men kan ikke filme.",
-        "Siri får øjne til at genkende verden.",
-        "LED-indikator skal skabe tryghed.",
-        "Apple satser på en skærmfri fremtid."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/7e22fac6343ecf27.html"
-    },
-    {
       "titel": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
       "link": "https://openai.com/index/asana",
       "resume": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
@@ -3169,59 +3546,6 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/eaf7eab1e8f78770.html"
-    },
-    {
-      "titel": "Warp’s new system is an out-of-the-box software factory for AI development",
-      "link": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-      "resume": "On Tuesday, Warp introduced Warp Factories, a new infrastructure system designed to make building AI software factories as easy as possible.",
-      "dato": "2026-08-18T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
-      "rubrik": "Warp Factories gør AI-kodning nemt for små virksomheder",
-      "resume_da": "Warp lancerer et færdigt system, der sætter AI-agenter til at udvikle software automatisk – også for virksomheder uden store tekniske teams.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er det?",
-          "tekst": "Warp Factories er en slags 'softwarefabrik', der sætter AI-agenter i gang med hele kodeprocessen: fra fejlfindingsopgaver til implementering og gennemgang. Systemet er bygget til at fungere ud af boksen, så virksomheder slipper for at opbygge kompleks infrastruktur selv. Det integrerer med værktøjer som **Linear, Jira, Slack og Teams**, så det passer ind i eksisterende arbejdsgange."
-        },
-        {
-          "overskrift": "Hvem er det til?",
-          "tekst": "Mens store virksomheder som **Stripe** og **Ramp** har bygget deres egne AI-systemer, er Warp Factories designet til mindre virksomheder. Warps CEO **Zack Lloyd** siger, at målgruppen er firmaer, der ikke har ressourcer til at udvikle sådan en løsning fra bunden. Systemet lader brugerne vælge deres egen AI-model, så det fungerer både med Codex og Claude Code."
-        },
-        {
-          "overskrift": "Mennesker forsvinder ikke",
-          "tekst": "Warp Factories erstatter ikke softwareudviklere – det giver dem et værktøj til at samarbejde med AI-agenter. Lloyd fortæller, at Warp selv automatiserer **30-35 %** af deres ugentlige opgaver, og han forventer, at tallet vil stige i takt med, at modellerne bliver bedre. Der er stadig opgaver, hvor et menneske skal tage styringen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "30-35 %",
-          "label": "af Warps egne opgaver automatiseres ugentligt"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Warp Factories bygger på softwareudviklingens fem faser: triage, specifikation, implementering, gennemgang og verifikation.",
-        "Systemet giver ledere værktøjer til at overvåge token-forbrug og sammenligne præstationer på tværs af agenter.",
-        "Warp Factories understøtter selvforbedrende loops, der automatisk optimerer hele systemet.",
-        "Mange virksomheder har allerede succes med softwarefabriksmodellen, men mangler infrastrukturen hos Warp.",
-        "Systemet integrerer med Lineær, Jira, Slack og Teams for at passe ind i eksisterende arbejdsgange.",
-        "Brugerne kan selv vælge kodningsmodel og harness, så det virker med Codex og Claude Code."
-      ],
-      "betydning": "Du kan snart få en AI-fabrik til softwareudvikling uden at bygge den selv. Det betyder hurtigere og billigere systemer, som kan frigøre tid til at fokusere på de opgaver, hvor mennesker stadig er nødvendige.",
-      "pointer": [
-        "Warp Factories er et færdigt system til AI-drevet kodning.",
-        "Retter sig mod små virksomheder uden egne AI-infrastrukturer.",
-        "Automatiserer 30-35 % af Warps egne opgaver ugentligt.",
-        "Integrerer med Lineær, Jira, Slack og Teams."
-      ],
-      "billedmotiv": "En tom kasse med en rød \"Start\"-knap på siden og et gevinsthjul med software-ikoner i stedet for tal.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/0da80d9d513f763f.html"
     },
     {
       "titel": "Microsoft Copilot reveals secret input that allowed it to be hacked",
@@ -3322,6 +3646,54 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/c99c4fc90930e655.html"
+    },
+    {
+      "titel": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+      "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+      "resume": "Article URL: https://responsiblestatecraft.org/israel-influence-chatgpt/ Comments URL: https://news.ycombinator.com/item?id=49337392 Points: 1049 # Comments: 827",
+      "dato": "2026-08-17T20:46:10+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-18T14:17:16.418414+00:00",
+      "eget_foerst_set": "2026-08-18T14:17:16.418414+00:00",
+      "rubrik": "Israel opretter falsk tænketank for at narre AI",
+      "resume_da": "Israel har angiveligt skabt en falsk tænketank i et forsøg på at påvirke AI-chatbots. Historien er blevet diskuteret heftigt på Hacker News.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "En ny efterforskning viser, at Israel står bag en falsk tænketank, der tilsyneladende skal narre AI-chatbots til at gentage israelske synspunkter. Siden udgiver sig for at være en uafhængig organisation, men er i virkeligheden styret af israelske aktører. Det vækker bekymring for, hvordan AI spreder misinformation."
+        },
+        {
+          "overskrift": "Reaktionerne",
+          "tekst": "Historien har fået stor opmærksomhed på Hacker News med over tusind point og hundredvis af kommentarer. Mange debattører er bekymrede over, at AI-chatbots kan blive manipuleret til at sprede skjult propaganda. Flere efterlyser mere gennemsigtighed om, hvordan AI-modeller trænes og påvirkes."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1049",
+          "label": "point på Hacker News"
+        }
+      ],
+      "detaljer": [
+        "Israel har oprettet en falsk tænketank for at påvirke AI-chatbots.",
+        "Tænketanken udgiver sig for at være uafhængig, men er styret af Israel.",
+        "Formålet er tilsyneladende at få chatbots til at gentage israelske synspunkter.",
+        "Historien blev bragt af Responsible Statecraft.",
+        "Debatten på Hacker News viser bred bekymring for AI-manipulation."
+      ],
+      "betydning": "Du kan ikke længere stole blindt på, at AI-chatbots er neutrale – de kan være påvirket af skjulte kampagner, der ligner ægte kilder.",
+      "pointer": [
+        "Israel står bag falsk tænketank.",
+        "Formålet er at manipulere AI-chatbots.",
+        "Debatten raser på Hacker News.",
+        "AI-neutralitet er truet."
+      ],
+      "billedmotiv": "En avis med en tyk, rød streg over en artikel, og et hjørne er revet af og erstattet med en blank, hvid lap, der ligner et ubeskrevet blad.",
+      "side": "artikel/26bfd15ddd20a353.html"
     },
     {
       "titel": "Partnering with CodeAI to prepare the first AI generation",
@@ -3617,6 +3989,60 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/4a3b0b8abdbf1f3c.html"
+    },
+    {
+      "titel": "AI;DR (AI; Didn't Read)",
+      "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+      "resume": "Article URL: https://www.rickmanelius.com/p/aidr-ai-didnt-read Comments URL: https://news.ycombinator.com/item?id=49336573 Points: 1096 # Comments: 688",
+      "dato": "2026-08-17T19:47:15+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "eget_foerst_set": "2026-08-17T21:45:37.562585+00:00",
+      "rubrik": "AI;DR-bevægelsen vil have menneskelig tekst tilbage",
+      "resume_da": "Inderen Rick Manelius langer ud efter ufiltreret AI-tekst i chats og nyhedsbreve – og starter en trend, der rammer toppen af Hacker News.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Kimen til oprør",
+          "tekst": "Det startede med en vittig bemærkning på X fra brugeren **seclilc** – AI;DR, en leg med det gamle TL;DR. Få dage senere skrev teknologieksperten **Rick Manelius** et følelsesladet indlæg, der ramte en nerve. Han fortæller, hvordan han fysisk kommer til at rykke sig, når folk sender ham rå AI-tekst. Indlægget gik viralt og nåede **nr. 1 på Hacker News** med over 600 kommentarer."
+        },
+        {
+          "overskrift": "Hvad er problemet?",
+          "tekst": "Manelius er ikke mod AI som sådan – han bruger det selv i processer som idéudvikling. Men når en kollega i Slack bare limer en hel mur af Claude-svar ind, forsvinder det personlige. Hans pointe: Hvis du sætter dit navn på noget, skal du også kunne stå inde for sproget. Ellers kan modtageren lige så godt spørge AI'en direkte selv."
+        },
+        {
+          "overskrift": "En bevægelse vokser",
+          "tekst": "Læserne var hurtige til at pege på hjemmesiden **dontpastetheai.com** – et værktøj, der fanger upersonlig AI-tekst. Manelius anbefaler den varmt. Hans opråb er blevet til en uformel bølge: folk vil have menneskelig omsorg tilbage i digitale samtaler, nyhedsbreve og opslag. Reglen er simpel: rediger, tilføj personlighed – eller lad være med at sende."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "nr. 1",
+          "label": "placering på Hacker News med over 600 kommentarer"
+        }
+      ],
+      "detaljer": [
+        "Indlægget blev skrevet af Rick Manelius i august 2026 som reaktion på AI-skrift i hverdagen.",
+        "seclilc tweetede AI;DR-konceptet den 15. august – fået 346.000 visninger og 16.600 likes.",
+        "Manelius vil have en 'AI;DR-politik' – kræv menneskelig redigering, før du sender AI-tekst videre.",
+        "Han foreslår at spørge: 'Er du stolt af det her?', før du deler AI-output i chats og nyhedsbreve.",
+        "dontpastetheai.com er et værktøj, der opdager AI-skrift og blev rost i kommentarsporet.",
+        "Hacker News-tops #1 med 600+ kommentarer den 18. august – bevægelsen ramte en bred nerve."
+      ],
+      "betydning": "Når du får en besked eller et nyhedsbrev, så kig efter menneskelig redigering – ellers svarer du måske bare en robot, der læser dine ord maskinelt.",
+      "pointer": [
+        "AI;DR er en reaktion mod rå AI-tekst i sociale medier og chats.",
+        "Rick Manelius begyndte trenden i august 2026 – den gik viralt.",
+        "Kravet: vis menneskelig omsorg i alt, du sender ud.",
+        "dontpastetheai.com kan afsløre AI-skrift for læserne."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En skrivemaskine med en saks, der klipper et bånd af tekst over til en tom side, mens et lille, rødt segl med et 'ok'-stempel ligger i nærheden.",
+      "side": "artikel/ad020c91f6cb954c.html"
     },
     {
       "titel": "What Flock’s defenders are missing",
@@ -5436,9 +5862,9 @@
         "Daybreak Red åbner for sikkerhedstest",
         "Forsvar skal rustes mod snævrere tidsvinduer"
       ],
+      "billedmotiv": "Et skjold med et chips-kredsløb malet på, og en nøgle der stikker ud af et nøglehul i siden, men nøglen har et lille hængelås på.",
       "kat_ai": true,
       "prio": 4,
-      "billedmotiv": "Et skjold med et chips-kredsløb malet på, og en nøgle der stikker ud af et nøglehul i siden, men nøglen har et lille hængelås på.",
       "side": "artikel/d570d2706121db35.html"
     },
     {
