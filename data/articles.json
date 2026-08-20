@@ -1,7 +1,116 @@
 {
-  "opdateret": "2026-08-20T19:56:22.572774+00:00",
+  "opdateret": "2026-08-20T21:51:07.583250+00:00",
   "antal": 119,
   "artikler": [
+    {
+      "titel": "Ok, can we actually cool data centers with our pee?",
+      "link": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
+      "resume": "Jason Kelce joked that people should cool data centers with their pee, rather than potable water -- his suggestion is not completely ludicrous.",
+      "dato": "2026-08-20T20:53:13+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-20T21:51:07.583250+00:00",
+      "eget_foerst_set": "2026-08-20T21:51:07.583250+00:00",
+      "rubrik": "Jason Kelce vil køle servere med tis – det virker faktisk",
+      "resume_da": "En sjov reklame med Jason Kelce foreslår at køle AI-servere med urin. Overraskende nok er genbrugsvand en ægte metode, der allerede bruges.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Vittigheden",
+          "tekst": "Drikkevarefirmaet Liquid Death og Jason Kelce laver reklame, hvor de opfordrer folk til at tisse på computere for at redde klimaet. Det er satire – men ifølge eksperter er der faktisk noget om snakken. Genbrugsvand, som blandt andet kommer fra toiletvand, bruges allerede til at køle datacentre ned."
+        },
+        {
+          "overskrift": "Virkeligheden",
+          "tekst": "Råt tis ville ødelægge køleanlæg med salte og bakterier. Derfor renser man spildevand på anlæg med membraner og UV-lys, så det kan bruges til industrikøling. Flere steder er genbrugsvand blevet standard, men datacentre skal ligge tæt på store renseanlæg – det gør de sjældent på landet."
+        },
+        {
+          "overskrift": "Tallene bag",
+          "tekst": "I Loudoun County, Virginia, hvor der ligger over 250 datacentre, dækker genbrugsvand kun 43 procent af det daglige vandforbrug. Resten, 57 procent, tages fra drikkevandet. Meta investerer mindst 270 millioner dollar i spildevandsinfrastruktur, og politisk foreslås en skattefradrag på 30 procent for at udbrede teknologien."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Eksperter håber, at AI-industrien kan blive trækplaster for at bygge mere genbrugsvand-infrastruktur. Men det kræver tid og penge. En meningsmåling viser, at syv ud af ti amerikanere er imod datacentre i deres lokalområde – så presset for grønnere løsninger vokser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "270 mio. dollar",
+          "label": "investerer Meta i spildevandsanlæg ved datacentre"
+        },
+        {
+          "tal": "43 %",
+          "label": "af datacentres vandforbrug i Loudoun kommer fra genbrug"
+        }
+      ],
+      "detaljer": [
+        "Liquid Death og Jason Kelce laver satire-reklame om at køle servere med tis.",
+        "Råt urin indeholder salte og bakterier, der ville ødelægge kølesystemer.",
+        "Genbrugsvand renses med membraner, omvendt osmose og UV-lys.",
+        "Loudoun County har over 250 datacentre og planer om flere.",
+        "57 procent af datacentrenes daglige vandforbrug kommer fra drikkevand.",
+        "Forslag om 30 procents skattefradrag for genbrugsvand-infrastruktur.",
+        "Syv ud af ti amerikanere er imod nye datacentre i deres område."
+      ],
+      "betydning": "Når AI udvides, stiger presset på drikkevandet. Du kan komme til at opleve højere vandpriser eller flere genbrugsvandsprojekter i din region.",
+      "pointer": [
+        "Satire-reklame rammer plet: tis kan køle servere.",
+        "Genbrugsvand er ægte metode, ikke kun joke.",
+        "Loudoun mangler genbrug: 57 procent drikkevand.",
+        "Meta og politikere vil skalere genbrugsvand-teknologi."
+      ],
+      "side": "artikel/0e5fabfe4834a67b.html"
+    },
+    {
+      "titel": "Show HN: Huzzah – a novel approach to coding with AI",
+      "link": "https://www.danielvaughn.dev/posts/huzzah/",
+      "resume": "Hello everyone. I've been working on this experimental editor called Huzzah. I've been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They're great, but I'm finding it more and more tedious to write full sentences for every change I want. Not only that, but it seems there's a complexity limit for…",
+      "dato": "2026-08-20T19:05:36+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-20T21:51:07.583250+00:00",
+      "eget_foerst_set": "2026-08-20T21:51:07.583250+00:00",
+      "rubrik": "Udvikleren bag Huzzah vil redde dig fra AI-træthed",
+      "resume_da": "En træt programmør bygger en ny AI-editor, der bruger pseudokode i stedet for lange beskeder.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Et nyt værktøj",
+          "tekst": "Udvikleren bag Huzzah er træt af at skrive lange engelske beskeder for at få AI'en til at ændre kode. Han vil heller ikke skrive al koden manuelt igen. Derfor har han bygget en eksperimentel editor, hvor du i stedet skriver kort pseudokode, som AI'en oversætter til rigtig kode."
+        },
+        {
+          "overskrift": "Sådan fungerer det",
+          "tekst": "I Huzzah gemmer du en fil med pseudokode, f.eks. 'loop 100 modulo 3 ? fizz'. Når du gemmer, sammenligner værktøjet den gamle og nye fil og bruger forskellen til at bede AI'en om at opdatere den underliggende kode. Det giver dig større kontrol og overblik over ændringerne."
+        },
+        {
+          "overskrift": "Fordelene",
+          "tekst": "Pseudokoden er kort, læsbar og bliver gemt, så du altid kan se, hvad du har besluttet. Modsat chats, hvor beskeder forsvinder, er ændringerne i Huzzah vedvarende. Udvikleren håber, at det giver både effektivitet og ro i sindet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Huzzah erstatter lange chatbeskeder med kort pseudokode.",
+        "Pseudokoden er deklarativ og gemt på disk.",
+        "Værktøjet sammenligner ændringer ved hver lagring.",
+        "Udvikleren er bygget af en softwareingeniør.",
+        "Det er stadig et eksperimentelt projekt.",
+        "Koden er open source og tilgængelig online."
+      ],
+      "betydning": "Du kan fremover spare timer på at formulere lange AI-beskeder og få mere kontrol over din kode med et værktøj som Huzzah.",
+      "pointer": [
+        "Huzzah bruger pseudokode i stedet for chat.",
+        "Ændringer er gemt og genbrugt.",
+        "Kortere prompts sparer tid.",
+        "Projektet er stadig i beta."
+      ],
+      "billedmotiv": "En kaffekop med et lille kodeblok-ikon i stedet for damp, ved siden af en stak viskestykker foldet som beskedbobler.",
+      "side": "artikel/2a3f3d0326e9b4e8.html"
+    },
     {
       "titel": "Google gives publishers a new way to fight AI-driven traffic losses",
       "link": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
@@ -13,8 +122,7 @@
       "eget_foerst_set": "2026-08-20T19:56:22.572774+00:00",
       "rubrik": "Google giver ny redning til pressede medier",
       "resume_da": "Google lancerer en ny knap, som læsere kan bruge til at vælge deres foretrukne nyhedskilder og få dem vist oftere.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sådan virker det",
@@ -29,8 +137,6 @@
           "tekst": "Ud over knappen arbejder Google også på at lade brugerne tilpasse deres Discover-feed med naturligt sprog. Ved at trykke på en menu kan man bede Google om at vise flere eller færre emner. Android-brugere får desuden mulighed for at personliggøre deres daglige lydbriefinger i Google News-appen. Det ligner en tendens, hvor flere sociale medier også lader brugerne styre algoritmerne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "345.000",
@@ -41,6 +147,7 @@
           "label": "større klikrate for favoritkilder"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Den nye knap kan indsættes direkte på mediernes egne hjemmesider.",
         "Funktionen er tidligere rullet ud til AI Mode, AI Overviews og Top Stories.",
@@ -57,6 +164,8 @@
         "Discover-feedet kan snart styres med egne ord."
       ],
       "billedmotiv": "En gammeldags avisrulle med et lille, rødt 'Godkendt'-stempel ved siden af en smartphone-skærm, der viser en tommel op-ikon.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/b359671ae1bfb83e.html"
     },
     {
@@ -70,8 +179,7 @@
       "eget_foerst_set": "2026-08-20T19:56:22.572774+00:00",
       "rubrik": "Runlayer og Rippling dropper sager efter tre uger",
       "resume_da": "De to firmaer opgav deres sager mod hinanden uden forlig. Men sagen viser, hvordan en kunde pludselig kan blive en konkurrent.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Sagen kort",
@@ -86,14 +194,13 @@
           "tekst": "Historien er en advarsel til andre stifter: I AI-tiden kan en kommende kunde hurtigt blive en konkurrent. Rippling, der traditionelt laver løn- og personalestyring, er nu på markedet for AI-gateways. De konkurrerer med store spillere som Stripe, Ramp, Docker og Amazon Bedrock, og deres produkt kan styre, hvad medarbejdere må se – og hvad AI'en koster."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "$42 mio.",
           "label": "investeret i Runlayer fra blandt andre Khosla Ventures"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Rippling testede Runlayers MCP-gateway i over et år uden at blive kunde.",
         "En Rippling-medarbejder skrev til Berman, at de byggede en klon.",
@@ -110,6 +217,8 @@
         "AI-markedet ændrer sig ekstremt hurtigt.",
         "En kunde kan blive din værste konkurrent."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/dc3d7ed90c79c15d.html"
     },
     {
@@ -123,8 +232,7 @@
       "eget_foerst_set": "2026-08-20T19:56:22.572774+00:00",
       "rubrik": "Linkdaze samler hele familiens planer på én skærm",
       "resume_da": "Linkdaze er en smart kalenderskærm, der synkroniserer alle familiemedlemmers aftaler og endda laver madplaner ud fra billeder af opskrifter.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Alt på ét sted",
@@ -139,8 +247,6 @@
           "tekst": "Linkdaze kræver ikke månedligt abonnement - modsat konkurrenten Skylight, som tager **79 dollar** om måneden for ekstra funktioner. 10,1-tommer-modellen koster **119,99 dollar**, mens Skylights tilsvarende skærm løber op i **159,99 dollar**."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "79 dollar/md.",
@@ -155,6 +261,7 @@
           "label": "prisen for Skylights 10-tommer"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Linkdaze kan trække kalendere fra Google, iCloud, Outlook, Yahoo og Cozi.",
         "Enheden findes i 15,6 og 10,1 tommer.",
@@ -170,6 +277,8 @@
         "Ingen månedlig betaling - modsat konkurrenten Skylight.",
         "Billigere end Skylight, fra 119,99 dollar."
       ],
+      "kat_ai": true,
+      "prio": 4,
       "navngivet": true,
       "side": "artikel/501a92a0a8133cd8.html"
     },
@@ -184,8 +293,7 @@
       "eget_foerst_set": "2026-08-20T19:56:22.572774+00:00",
       "rubrik": "OpenAI's nye blog om AI's fremtid",
       "resume_da": "OpenAI lancerer en ny blog, der undersøger, hvordan AI kan ændre magt, økonomi og frihed. Bliv klogere på fremtiden her.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad er det",
@@ -196,9 +304,8 @@
           "tekst": "Bloggen kommer fra OpenAI selv, som er en af de største aktører bag udviklingen af AI i verden. Når de lægger deres egne perspektiver frem, kan det give et indblik i, hvordan de ser teknologien forme vores samfund – og hvad der venter os i fremtiden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI har lanceret en ny blog ved navn AI Futures.",
         "Bloggen handler om AI's indflydelse på magt og styreformer.",
@@ -213,6 +320,8 @@
         "Hold øje med nye analyser og perspektiver."
       ],
       "billedmotiv": "En åben, tom pengeskab med en enkelt guldmønt, der ligger på en stak bøger, hvoraf den øverste har titlen 'Fremtiden' i blindskrift.",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/2e8bfa2782e5fd18.html"
     },
     {
@@ -553,7 +662,7 @@
     {
       "titel": "It’s Greg Brockman’s OpenAI now",
       "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-      "resume": "OpenAI has had a hell of a year. The company spent months battling former co-founder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a steady string of executives […]",
+      "resume": "OpenAI has had a hell of a year. The company spent months battling former cofounder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a steady string of executives […]",
       "dato": "2026-08-20T11:45:55-04:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
@@ -599,7 +708,7 @@
       "side": "artikel/c7fbc3b1617c466d.html"
     },
     {
-      "titel": "How ChatGPT Work helps Stampli move ideas to market",
+      "titel": "Stampli cuts launch hours by 68% using ChatGPT Work",
       "link": "https://openai.com/index/stampli",
       "resume": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
       "dato": "2026-08-20T00:00:00+00:00",
@@ -917,7 +1026,7 @@
     {
       "titel": "Don't paste the AI, please",
       "link": "https://dontpastetheai.com/",
-      "resume": "Article URL: https://dontpastetheai.com/ Comments URL: https://news.ycombinator.com/item?id=49371857 Points: 967 # Comments: 521",
+      "resume": "Article URL: https://dontpastetheai.com/ Comments URL: https://news.ycombinator.com/item?id=49371857 Points: 979 # Comments: 529",
       "dato": "2026-08-20T08:20:44+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -965,7 +1074,7 @@
     {
       "titel": "Mathematics in the age of AI",
       "link": "https://arxiv.org/abs/2608.16753",
-      "resume": "Article URL: https://arxiv.org/abs/2608.16753 Comments URL: https://news.ycombinator.com/item?id=49362728 Points: 201 # Comments: 244",
+      "resume": "Article URL: https://arxiv.org/abs/2608.16753 Comments URL: https://news.ycombinator.com/item?id=49362728 Points: 204 # Comments: 246",
       "dato": "2026-08-19T15:14:25+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
@@ -1301,8 +1410,8 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-20T05:58:51.404338+00:00",
       "eget_foerst_set": "2026-08-20T05:58:51.404338+00:00",
-      "rubrik": "AI-eksperter vil gøre flere robotsystemer til en kø-kaos-udfordring",
-      "resume_da": "Forskere foreslår at bygge AI-systemer, der kan styre flere samtidige opgaver uden at gå i kage – som trafiklys for robotter.",
+      "rubrik": "Xin Yang: Flere AI-roboter skal styres som trafiklys",
+      "resume_da": "Forskere med Xin Yang i spidsen vil bruge trafiklys-metoder, så flere AI-assistenter kan arbejde sammen uden at gå i kage.",
       "brief": "",
       "sektioner": [
         {
@@ -1504,8 +1613,8 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-20T05:58:51.404338+00:00",
       "eget_foerst_set": "2026-08-20T05:58:51.404338+00:00",
-      "rubrik": "AI fejler i geometri: Kan ikke tegne sig til svaret",
-      "resume_da": "Ny test viser, at AI-modeller klarer sig dårligere, når de selv skal tegne figurer i olympiade-geometri – ikke kun regne.",
+      "rubrik": "GPT og Claude fejler i geometri: Kan ikke tegne",
+      "resume_da": "Ny test viser, at GPT og Claude klarer sig dårligere, når de selv skal tegne figurer i olympiade-geometri - ikke kun regne.",
       "brief": "",
       "sektioner": [
         {
@@ -2632,9 +2741,9 @@
         "Gratis AI Pro til studerende i USA.",
         "AI Plus med mindre lager uden for USA."
       ],
+      "billedmotiv": "Et stablet tårn af store, farverige flashcard-kort med et forstørrelsesglas og en lille, grøn planteskud, der prikker op fra toppen.",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "Et stablet tårn af store, farverige flashcard-kort med et forstørrelsesglas og en lille, grøn planteskud, der prikker op fra toppen.",
       "side": "artikel/dc3d81799698c80d.html"
     },
     {
@@ -2953,59 +3062,6 @@
       "side": "artikel/655769ab72fd01b5.html"
     },
     {
-      "titel": "Calendly throws its hat into meeting note-taker circus",
-      "link": "https://techcrunch.com/2026/08/19/calendly-throws-its-hat-into-meeting-note-taker-circus/",
-      "resume": "Calendly is also releasing a meeting scheduling assistant called Callie.",
-      "dato": "2026-08-19T14:09:39+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-19T14:17:56.396546+00:00",
-      "eget_foerst_set": "2026-08-19T14:17:56.396546+00:00",
-      "rubrik": "Calendly lancerer AI-assistenten Callie",
-      "resume_da": "Calendly lancerer AI-assistenten Callie til mødebooking. Den skal hjælpe sælgere og marketingfolk med at planlægge møder og hente kontekst fra tidligere samtaler.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Calendly, kendt for booking og mødeplanlægning, har nu fået sit eget AI-mødenotat-værktøj. Det deltager i møder, optager lyd og video, transskriberer og laver automatisk resuméer, handlingselementer og kladder til opfølgningsmails. Virksomheden tester også en funktion, der bruger systemlyden til transskription, ligesom Granola."
-        },
-        {
-          "overskrift": "Callie kommer",
-          "tekst": "Næste skridt er AI-assistenten Callie, der skal bruge Calendlys eksisterende booking- og kalenderdata til at planlægge møder, tjekke folks tilgængelighed og hente kontekst fra tidligere møder. Det minder om, hvad Read AI allerede har lavet. Ifølge CEO Tope Awotona er målet at hjælpe folk i salg og marketing, der bruger hele dagen i møder."
-        },
-        {
-          "overskrift": "Benhård konkurrence",
-          "tekst": "Markedet er fyldt med notat-apps som Granola, Fireflies, Read AI, Otter og Fathom. Også store produktivitetsfirmaer som Notion, ClickUp og Wispr har kastet sig over mødenotater. Awotona ser stadig muligheder i at automatisere arbejdet efter mødet, ikke kun selve optagelsen. Han mener, at mange notattagere er gode til at optage, men der mangler effektivitet bagefter."
-        },
-        {
-          "overskrift": "Privatliv i fokus",
-          "tekst": "Efter sager om privatlivskrænkelser hos Otter og Granola har Calendly lovet, at dens notattager tydeligt informerer om optagelse via en chat-besked. Deltagere kan bede appen om at forlade mødet, og takket være integrationen med booking-systemet kan folk blive varslet allerede før mødet, at samtalen bliver optaget."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Calendly lancerer AI-notattager til møder med transskription og resumé.",
-        "Assistenten 'Callie' skal automatisere booking og mødeplanlægning.",
-        "Tope Awotona er CEO og ønsker målrettet hjælp til salg og marketing.",
-        "Funktion med systemlyd til transskription testes, inspireret af Granola.",
-        "Calendly varsler om optagelse via chat og inden mødet via booking.",
-        "Konkurrenter: Granola, Fireflies, Read AI, Otter, Fathom, Notion m.fl.",
-        "Otter og Granola har fået kritik for privatlivsbrud."
-      ],
-      "betydning": "Du får nu en notattager, der automatisk planlægger dine møder og rydder op efter dem – både før og efter – så du kan fokusere på samtalen i stedet for skrivearbejdet. Husk, at møder bliver optaget og transskriberet.",
-      "pointer": [
-        "Calendly lancerer AI-notattager til møder.",
-        "Assistenten 'Callie' håndterer kalender og opfølgning.",
-        "Konkurrencen er hård fra Otter, Granola og Notion.",
-        "Privatliv er prioriteret med varsling om optagelse."
-      ],
-      "billedmotiv": "En tom kalender med et enkelt møde markeret, hvor en blyant ligger på tværs og skriver et referat på et lille stykke papir ud for mødet.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/759443956e5c1c65.html"
-    },
-    {
       "titel": "Nvidia’s new financial strategy does not compute",
       "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
       "resume": "April - 1805 Napoleon is master of Europe Only the British fleet stands before him Compute is now an asset class I see it is once again time to talk financial innovation. Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR are all working with Nvidia to put together $500 billion in financing to turn compute […]",
@@ -3111,7 +3167,7 @@
     {
       "titel": "AI usage patterns in software teams",
       "link": "https://linear.app/data",
-      "resume": "Article URL: https://linear.app/data Comments URL: https://news.ycombinator.com/item?id=49353432 Points: 193 # Comments: 113",
+      "resume": "Article URL: https://linear.app/data Comments URL: https://news.ycombinator.com/item?id=49353432 Points: 195 # Comments: 114",
       "dato": "2026-08-18T22:08:07+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -3253,53 +3309,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/b308f27228d706b8.html"
-    },
-    {
-      "titel": "Anthropic's War on open source AI",
-      "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
-      "resume": "Article URL: https://twitter.com/TheAhmadOsman/status/2065307070044234186 Comments URL: https://news.ycombinator.com/item?id=49332564 Points: 152 # Comments: 59",
-      "dato": "2026-08-17T15:24:34+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-19T03:27:49.840228+00:00",
-      "eget_foerst_set": "2026-08-19T03:27:49.840228+00:00",
-      "rubrik": "Anthropic beskyldes for at hindre konkurrenter",
-      "resume_da": "Kritikere siger, at Anthropic bruger 'sikkerhed' som undskyldning for at kontrollere adgangen til deres AI-modeller og kvæle åben konkurrence.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kritikken",
-          "tekst": "Flere udviklere og forskere mener, at Anthropic ikke er så åbne, som de udgiver sig for. De peger på, at firmaet kan ændre eller begrænse adgangen til deres AI-modeller, hvis de vurderer, at brugeren arbejder på noget konkurrerende. Det gør værktøjet upålideligt, lyder det."
-        },
-        {
-          "overskrift": "Modellerne",
-          "tekst": "Anthropic's Claude-modeller er kendt for at være stærke til kodning, især **Claude 3.5 Sonnet**. Men kritikere siger, at firmaet efterfølgende har ændret adfærden, så den bliver mere begrænset. Det skaber mistillid hos dem, der tidligere brugte modellerne som fast arbejdsredskab."
-        },
-        {
-          "overskrift": "Regler og politik",
-          "tekst": "Anthropic's servicevilkår siger, at man ejer sine resultater, men man må ikke bruge dem til at træne konkurrerende AI-systemer uden skriftlig tilladelse. Firmaet har også været med til at påvirke lovgivning i både USA og EU, hvilket kan gøre det sværere for mindre aktører at konkurrere."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Anthropic beskyldes for at bruge sikkerhed som undskyldning for kontrol.",
-        "Claude Code og Claude 3.5 Sonnet blev rost for kodning.",
-        "Kritikere mener, at adgang kan fjernes eller ændres uventet.",
-        "Anthropic har påvirket lovgivning i Californien, New York og EU.",
-        "Servicevilkår forbyder at træne konkurrerende AI uden tilladelse.",
-        "Åben AI giver frihed til at studere, ændre og køre lokalt."
-      ],
-      "betydning": "Hvis du bruger AI-værktøjer i dit arbejde, kan din adgang blive begrænset eller ændret, hvis du bygger noget, der ligner en konkurrent - så vælg med omhu, hvem du stoler på.",
-      "pointer": [
-        "Anthropic bruger sikkerhed som konkurrencevåben.",
-        "Modeller kan ændre adfærd uden varsel.",
-        "Regler og lobbyarbejde favoriserer store firmaer.",
-        "Åben AI er alternativet til lukket kontrol."
-      ],
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/12fa0ec462e72cf4.html"
     },
     {
       "titel": "Strengthening democratic oversight in national security",
@@ -3681,7 +3690,7 @@
     {
       "titel": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
       "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-      "resume": "Article URL: https://responsiblestatecraft.org/israel-influence-chatgpt/ Comments URL: https://news.ycombinator.com/item?id=49337392 Points: 1051 # Comments: 831",
+      "resume": "Article URL: https://responsiblestatecraft.org/israel-influence-chatgpt/ Comments URL: https://news.ycombinator.com/item?id=49337392 Points: 1051 # Comments: 832",
       "dato": "2026-08-17T20:46:10+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -4030,8 +4039,8 @@
       "kategori": "Samfund & etik",
       "foerst_set": "2026-08-17T21:45:37.562585+00:00",
       "eget_foerst_set": "2026-08-17T21:45:37.562585+00:00",
-      "rubrik": "AI;DR-bevægelsen vil have menneskelig tekst tilbage",
-      "resume_da": "Inderen Rick Manelius langer ud efter ufiltreret AI-tekst i chats og nyhedsbreve – og starter en trend, der rammer toppen af Hacker News.",
+      "rubrik": "Rick Manelius: AI;DR-bevægelsen vil have menneskelig tekst tilbage",
+      "resume_da": "Teknologieksperten Rick Manelius langer ud efter ufiltreret AI-tekst i chats og nyhedsbreve. Indlægget ramte en nerve på Hacker News.",
       "brief": "",
       "sektioner": [
         {
@@ -5762,9 +5771,9 @@
         "Der er frygt for, at AI overtager matematikken på universiteterne.",
         "Forskerne ser stadig et håb i effektivitet og nye idéer."
       ],
+      "billedmotiv": "En slidt, gammel universitetskappe og -hue, der hænger på en knage, mens en tom lomme er vendt ud og dingler.",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En slidt, gammel universitetskappe og -hue, der hænger på en knage, mens en tom lomme er vendt ud og dingler.",
       "side": "artikel/1281650c995b3747.html"
     },
     {

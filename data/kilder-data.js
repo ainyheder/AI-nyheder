@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-20T19:56:22.572774+00:00",
+ "opdateret": "2026-08-20T21:51:07.583250+00:00",
  "artikler_i_alt": 119,
  "kilder": [
   {
@@ -106,6 +106,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Jason Kelce vil køle servere med tis – det virker faktisk",
+     "dato": "2026-08-20T20:53:13",
+     "foerst_set": "2026-08-20T21:51:07",
+     "link": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
+     "side": "artikel/0e5fabfe4834a67b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google giver ny redning til pressede medier",
      "dato": "2026-08-20T19:18:21",
      "foerst_set": "2026-08-20T19:56:22",
@@ -201,15 +210,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-20T03:27:07",
      "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
      "side": "artikel/6aba2536a5ec84cd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dario Amodei: Amerikanerne er blevet mere bekymrede for AI",
-     "dato": "2026-08-19T19:11:40",
-     "foerst_set": "2026-08-19T19:44:43",
-     "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
-     "side": "artikel/88cde3112e540acb.html",
      "hvor": "forside",
      "under": ""
     }
@@ -930,7 +930,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-eksperter vil gøre flere robotsystemer til en kø-kaos-udfordring",
+     "rubrik": "Xin Yang: Flere AI-roboter skal styres som trafiklys",
      "dato": "2026-08-20T00:00:00",
      "foerst_set": "2026-08-20T05:58:51",
      "link": "https://arxiv.org/abs/2608.18092",
@@ -966,7 +966,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI fejler i geometri: Kan ikke tegne sig til svaret",
+     "rubrik": "GPT og Claude fejler i geometri: Kan ikke tegne",
      "dato": "2026-08-20T00:00:00",
      "foerst_set": "2026-08-20T05:58:51",
      "link": "https://arxiv.org/abs/2608.18111",
@@ -1000,6 +1000,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Udvikleren bag Huzzah vil redde dig fra AI-træthed",
+     "dato": "2026-08-20T19:05:36",
+     "foerst_set": "2026-08-20T21:51:07",
+     "link": "https://www.danielvaughn.dev/posts/huzzah/",
+     "side": "artikel/2a3f3d0326e9b4e8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Hold op med at sende AI-svar videre",
      "dato": "2026-08-20T08:20:44",
      "foerst_set": "2026-08-20T10:02:56",
@@ -1027,15 +1036,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic beskyldes for at hindre konkurrenter",
-     "dato": "2026-08-17T15:24:34",
-     "foerst_set": "2026-08-19T03:27:49",
-     "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
-     "side": "artikel/12fa0ec462e72cf4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Israel opretter falsk tænketank for at narre AI",
      "dato": "2026-08-17T20:46:10",
      "foerst_set": "2026-08-18T14:17:16",
@@ -1045,7 +1045,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI;DR-bevægelsen vil have menneskelig tekst tilbage",
+     "rubrik": "Rick Manelius: AI;DR-bevægelsen vil have menneskelig tekst tilbage",
      "dato": "2026-08-17T19:47:15",
      "foerst_set": "2026-08-17T21:45:37",
      "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
