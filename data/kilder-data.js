@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-20T14:22:16.913379+00:00",
- "artikler_i_alt": 120,
+ "opdateret": "2026-08-20T16:02:07.208739+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
-   "som_ekstra": 8,
+   "i_listen": 15,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
+     "dato": "",
+     "foerst_set": "2026-08-20T14:22:16",
+     "link": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta AI får Mac-app: Kan se din skærm"
+    },
     {
      "rubrik": "OpenAI styrker privatliv for kunder",
      "dato": "",
@@ -23,6 +32,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lover: Dine data bliver slettet"
+    },
+    {
+     "rubrik": "Google vil gøre AI til din nye studiekammerat",
+     "dato": "",
+     "foerst_set": "2026-08-19T19:44:43",
+     "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google lancerer AI-studerende-hub i Gemini"
     },
     {
      "rubrik": "OpenAI strammer sikkerheden efter hackerangreb",
@@ -88,16 +106,7 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
-     "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
-     "dato": "2026-08-20T12:11:57",
-     "foerst_set": "2026-08-20T14:22:16",
-     "link": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
-     "side": "artikel/aca5b20236936ca4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Binance lader AI-agenter handle med dine penge",
+     "rubrik": "Binance lader ChatGPT og Claude handle med dine penge",
      "dato": "2026-08-20T09:30:00",
      "foerst_set": "2026-08-20T10:02:56",
      "link": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
@@ -129,15 +138,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-19T19:44:43",
      "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
      "side": "artikel/88cde3112e540acb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google vil gøre AI til din nye studiekammerat",
-     "dato": "2026-08-19T19:00:00",
-     "foerst_set": "2026-08-19T19:44:43",
-     "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
-     "side": "artikel/8656b8f78d55f67d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -194,6 +194,24 @@ window.KILDER_STATUS = {
      "side": "artikel/fe46527ac0309003.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Relativity Networks får 22 millioner til hurtigere fiber",
+     "dato": "2026-08-19T10:00:00",
+     "foerst_set": "2026-08-19T14:17:56",
+     "link": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/",
+     "side": "artikel/d205738f828cf73a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cursor udfordrer GitHub med ny platform",
+     "dato": "2026-08-18T22:14:25",
+     "foerst_set": "2026-08-19T03:27:49",
+     "link": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
+     "side": "artikel/38269b8f7f4f3795.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -202,12 +220,12 @@ window.KILDER_STATUS = {
      5
     ],
     [
-     "OpenAI Blog",
-     2
+     "The Verge AI",
+     3
     ],
     [
-     "The Verge AI",
-     1
+     "OpenAI Blog",
+     2
     ]
    ]
   },
@@ -250,6 +268,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Greg Brockman overtager magten i OpenAI",
+     "dato": "2026-08-20T11:45:55",
+     "foerst_set": "2026-08-20T16:02:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+     "side": "artikel/c7fbc3b1617c466d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI's matematik-resultater chokerer verdens førende matematikere",
@@ -331,29 +358,20 @@ window.KILDER_STATUS = {
      "side": "artikel/c99c4fc90930e655.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Googles AI kan ikke kende dine katte fra hinanden",
-     "dato": "2026-08-18T08:01:29",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
-     "side": "artikel/ec7cbb3ceccb6b00.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     2
-    ],
-    [
      "TechCrunch AI",
-     1
+     3
     ],
     [
      "OpenAI Blog",
-     1
+     2
+    ],
+    [
+     "Ars Technica AI",
+     2
     ]
    ]
   },
@@ -508,6 +526,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Debat om AI-bevidsthed fritager OpenAI og Google for ansvar",
+     "dato": "2026-08-20T15:42:39",
+     "foerst_set": "2026-08-20T16:02:07",
+     "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+     "side": "artikel/5e86b723ff64bcfe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Virgin Atlantic bruger AI til at sætte flypriser",
      "dato": "2026-08-20T09:47:22",
      "foerst_set": "2026-08-20T11:48:00",
@@ -587,15 +614,6 @@ window.KILDER_STATUS = {
      "side": "artikel/1281650c995b3747.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google AI-agent løser årtiers forskning på dage",
-     "dato": "2026-08-10T09:00:00",
-     "foerst_set": "2026-08-10T12:03:40",
-     "link": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
-     "side": "artikel/20c95f3fe530637a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -610,9 +628,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 25,
-   "som_ekstra": 0,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI strammer sikkerheden for nye AI-modeller",
+     "dato": "",
+     "foerst_set": "2026-08-18T19:44:55",
+     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI bremser nye AI-modeller – er det nok?"
+    },
     {
      "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
      "dato": "",
@@ -621,6 +648,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
+    },
+    {
+     "rubrik": "Stampli får ChatGPT til at springe over målstregen",
+     "dato": "2026-08-20T00:00:00",
+     "foerst_set": "2026-08-20T16:02:07",
+     "link": "https://openai.com/index/stampli",
+     "side": "artikel/6213ce5ceef3e2f9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI lover: Dine data bliver slettet",
@@ -664,15 +700,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T21:42:05",
      "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
      "side": "artikel/da3edf87cdb76098.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI strammer sikkerheden for nye AI-modeller",
-     "dato": "2026-08-18T11:00:00",
-     "foerst_set": "2026-08-18T19:44:55",
-     "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-     "side": "artikel/1204bd549a14175d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -738,7 +765,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     1
+     2
     ]
    ]
   },
@@ -966,67 +993,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Stop med at sende ChatGPT-svar som dine egne",
-     "dato": "2026-08-20T08:20:44",
-     "foerst_set": "2026-08-20T10:02:56",
-     "link": "https://dontpastetheai.com/",
-     "side": "artikel/146e1884e75bb95d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Terence Tao: AI ændrer matematikkens fremtid",
-     "dato": "2026-08-19T15:14:25",
-     "foerst_set": "2026-08-20T08:18:26",
-     "link": "https://arxiv.org/abs/2608.16753",
-     "side": "artikel/ab25077d91f74ce5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sådan har AI ændret softwareudvikling på seks måneder",
-     "dato": "2026-08-18T22:08:07",
-     "foerst_set": "2026-08-19T11:44:51",
-     "link": "https://linear.app/data",
-     "side": "artikel/3b95f2f527213936.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic beskyldes for at bremse åben AI",
-     "dato": "2026-08-17T15:24:34",
-     "foerst_set": "2026-08-19T03:27:49",
-     "link": "https://twitter.com/TheAhmadOsman/status/2065307070044234186",
-     "side": "artikel/12fa0ec462e72cf4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Israel opretter falsk tænketank for at narre AI",
-     "dato": "2026-08-17T20:46:10",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-     "side": "artikel/26bfd15ddd20a353.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nu kommer AI;DR: En ny internetregel mod AI-tekst",
-     "dato": "2026-08-17T19:47:15",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
-     "side": "artikel/ad020c91f6cb954c.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
