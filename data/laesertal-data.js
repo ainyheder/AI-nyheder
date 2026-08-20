@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-20T11:49:28.148548+00:00",
+ "opdateret": "2026-08-20T14:24:07.776146+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      25,
      28,
      27,
-     25
+     26
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      7,
      8,
      3,
-     1
+     2
     ]
    },
    {
@@ -137,8 +137,8 @@ window.LAESERTAL = {
      0,
      1,
      5,
-     7,
-     0
+     6,
+     2
     ]
    },
    {
@@ -242,7 +242,7 @@ window.LAESERTAL = {
      0,
      3,
      3,
-     0,
+     1,
      0
     ]
    }
@@ -755,8 +755,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-20",
-   "besoeg": 0,
-   "visninger": 20
+   "besoeg": 10,
+   "visninger": 30
   }
  ],
  "artikler": [
