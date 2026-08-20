@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-20T05:58:51.404338+00:00",
+ "opdateret": "2026-08-20T08:18:26.476231+00:00",
  "artikler_i_alt": 117,
  "kilder": [
   {
@@ -964,6 +964,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Terence Tao: AI ændrer matematikkens fremtid",
+     "dato": "2026-08-19T15:14:25",
+     "foerst_set": "2026-08-20T08:18:26",
+     "link": "https://arxiv.org/abs/2608.16753",
+     "side": "artikel/ab25077d91f74ce5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Sådan har AI ændret softwareudvikling på seks måneder",
      "dato": "2026-08-18T22:08:07",
      "foerst_set": "2026-08-19T11:44:51",
@@ -996,15 +1005,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-17T21:45:37",
      "link": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
      "side": "artikel/ad020c91f6cb954c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Undgå AI: Guide til at slukke Gemini, Copilot & Co.",
-     "dato": "2026-08-17T14:07:56",
-     "foerst_set": "2026-08-17T21:45:37",
-     "link": "https://www.librarian.net/notoai/",
-     "side": "artikel/8893a476984436dc.html",
      "hvor": "forside",
      "under": ""
     },
