@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-20T10:03:53.293496+00:00",
+ "opdateret": "2026-08-20T11:49:28.148548+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -101,7 +101,7 @@ window.LAESERTAL = {
      2,
      4,
      7,
-     7,
+     8,
      3,
      1
     ]
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      6,
      5,
      6,
-     1
+     2
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 38,
- "sidevisninger_i_alt": 70,
+ "besoeg_i_alt": 40,
+ "sidevisninger_i_alt": 74,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 38,
-   "visninger": 39
+   "besoeg": 40,
+   "visninger": 41
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -295,6 +295,11 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/655769ab72fd01b5.html",
+   "besoeg": 0,
+   "visninger": 2
+  },
+  {
+   "sti": "/artikel/650284a2db94c14e.html",
    "besoeg": 0,
    "visninger": 2
   },
@@ -379,7 +384,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/650284a2db94c14e.html",
+   "sti": "/artikel/b7c2fec452c0837e.html",
    "besoeg": 0,
    "visninger": 1
   }
@@ -387,7 +392,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 38
+   "besoeg": 40
   }
  ],
  "ai_chats": [],
@@ -395,8 +400,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 38,
-    "visninger": 38
+    "besoeg": 40,
+    "visninger": 40
    },
    {
     "fra": "herfra selv",
@@ -454,6 +459,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/655769ab72fd01b5.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
+  "/artikel/650284a2db94c14e.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -572,7 +584,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/650284a2db94c14e.html": [
+  "/artikel/b7c2fec452c0837e.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -769,6 +781,21 @@ window.LAESERTAL = {
    "visninger": 2,
    "rubrik": "Amazon giver Alexa+ gratis til alle Fire TV-ejere",
    "kategori": "Lanceringer",
+   "dato": "2026-08-19",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 2
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/650284a2db94c14e.html",
+   "besoeg": 0,
+   "visninger": 2,
+   "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
+   "kategori": "Samfund & etik",
    "dato": "2026-08-19",
    "henvisere": [
     {
@@ -1079,11 +1106,11 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/650284a2db94c14e.html",
+   "sti": "/artikel/b7c2fec452c0837e.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
-   "kategori": "Samfund & etik",
+   "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
+   "kategori": "Penge & marked",
    "dato": "2026-08-19",
    "henvisere": [
     {
@@ -1101,11 +1128,11 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 7
+   "visninger": 8
   },
   {
    "navn": "Penge & marked",
-   "visninger": 5
+   "visninger": 6
   },
   {
    "navn": "Forskning",
