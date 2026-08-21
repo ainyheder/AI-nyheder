@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T19:49:31.535817+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-21T20:52:41.418688+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -993,12 +993,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "AI-firmaer ødelægger fysiske bøger",
+     "dato": "",
+     "foerst_set": "2026-08-21T08:20:29.082213+00:00",
+     "link": "https://annas-archive.gl/blog/physical-destruction.html",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic køber og destruerer bøger for at træne AI"
+    },
+    {
+     "rubrik": "Rafal Cymerys: AI-gjort arbejde gør mig blind",
+     "dato": "2026-08-21T11:48:05",
+     "foerst_set": "2026-08-21T20:52:41",
+     "link": "https://cymerys.com/w/im-becoming-ai-blind",
+     "side": "artikel/98d9ccb86d82b1ff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Doubao og DeepSeek får karakterer til at styrte",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic køber og destruerer bøger for at træne AI",
+     "dato": "2026-08-21T10:05:46",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://annas-archive.pk/blog/physical-destruction.html",
+     "side": "artikel/8d09b2a84e640528.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EU: AI-indhold er ikke beskyttet af ophavsret",
+     "dato": "2026-08-21T00:15:12",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
+     "side": "artikel/88cf9b2eb5ae530f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Huzzah: kode med AI uden at skrive lange beskeder",
+     "dato": "2026-08-20T19:05:36",
+     "foerst_set": "2026-08-20T21:51:07",
+     "link": "https://www.danielvaughn.dev/posts/huzzah/",
+     "side": "artikel/2a3f3d0326e9b4e8.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
