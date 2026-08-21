@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-21T15:05:38.196901+00:00",
+ "opdateret": "2026-08-21T16:04:29.015067+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      8,
      3,
      7,
-     3
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      5,
      7,
      4,
-     2
+     3
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 44,
- "sidevisninger_i_alt": 79,
+ "besoeg_i_alt": 45,
+ "sidevisninger_i_alt": 81,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 44,
-   "visninger": 45
+   "besoeg": 45,
+   "visninger": 46
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -312,6 +312,11 @@ window.LAESERTAL = {
    "sti": "/artikel/655769ab72fd01b5.html",
    "besoeg": 0,
    "visninger": 2
+  },
+  {
+   "sti": "/artikel/63a1c4c6a261a00f.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/4bff02fd15740f78.html",
@@ -392,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 44
+   "besoeg": 45
   }
  ],
  "ai_chats": [],
@@ -400,8 +405,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 44,
-    "visninger": 44
+    "besoeg": 45,
+    "visninger": 45
    },
    {
     "fra": "herfra selv",
@@ -484,6 +489,13 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
+   }
+  ],
+  "/artikel/63a1c4c6a261a00f.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/4bff02fd15740f78.html": [
@@ -956,6 +968,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/63a1c4c6a261a00f.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "OpenAI's matematik-resultater chokerer verdens førende matematikere",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-20",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/4bff02fd15740f78.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1132,7 +1159,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 6
+   "visninger": 7
   },
   {
    "navn": "Hverdags-AI",
