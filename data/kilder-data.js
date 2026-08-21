@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T16:00:32.367758+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-08-21T17:02:59.194545+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -993,67 +993,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI-firmaer ødelægger fysiske bøger – Anna's Archive slår alarm",
-     "dato": "",
-     "foerst_set": "2026-08-21T08:20:29.082213+00:00",
-     "link": "https://annas-archive.gl/blog/physical-destruction.html",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic destruerer bøger – skyggebibliotek slår alarm"
-    },
-    {
-     "rubrik": "Anthropic destruerer bøger – skyggebibliotek slår alarm",
-     "dato": "2026-08-21T10:05:46",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://annas-archive.pk/blog/physical-destruction.html",
-     "side": "artikel/8d09b2a84e640528.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EU: Ophavsret beskytter ikke AI-genereret indhold",
-     "dato": "2026-08-21T00:15:12",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anti-AI-skrifttyper er nyttesløse og skadelige",
-     "dato": "2026-08-20T15:06:53",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
-     "side": "artikel/e547fa3181c08c87.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Huzzah: skriv pseudokode, og AI'en laver koden",
-     "dato": "2026-08-20T19:05:36",
-     "foerst_set": "2026-08-20T21:51:07",
-     "link": "https://www.danielvaughn.dev/posts/huzzah/",
-     "side": "artikel/2a3f3d0326e9b4e8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ny satire-side: Lad være med at paste ChatGPT-svar",
-     "dato": "2026-08-20T08:20:44",
-     "foerst_set": "2026-08-20T10:02:56",
-     "link": "https://dontpastetheai.com/",
-     "side": "artikel/146e1884e75bb95d.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
