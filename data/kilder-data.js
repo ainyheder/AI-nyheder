@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T20:52:41.418688+00:00",
+ "opdateret": "2026-08-21T21:51:30.351834+00:00",
  "artikler_i_alt": 119,
  "kilder": [
   {
@@ -261,6 +261,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "LinkedIn: Over en million har klikket på AI-knap",
+     "dato": "2026-08-21T17:25:50",
+     "foerst_set": "2026-08-21T21:51:30",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+     "side": "artikel/1cd4198d78c973ad.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "YouTubere får hug for skjult AI-reklame",
      "dato": "2026-08-21T09:37:52",
      "foerst_set": "2026-08-21T14:08:13",
@@ -329,15 +338,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-19T14:17:56",
      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
      "side": "artikel/c9300d6f9773535f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
-     "dato": "2026-08-18T15:48:26",
-     "foerst_set": "2026-08-18T21:42:05",
-     "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
-     "side": "artikel/024315d82a76560f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1000,7 +1000,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "AI-firmaer ødelægger fysiske bøger",
+     "rubrik": "Anna's Archive advarer: AI-firmaer ødelægger fysiske bøger",
      "dato": "",
      "foerst_set": "2026-08-21T08:20:29.082213+00:00",
      "link": "https://annas-archive.gl/blog/physical-destruction.html",
