@@ -1,10 +1,9 @@
 {
-  "opdateret": "2026-08-20T21:52:18.117746+00:00",
+  "opdateret": "2026-08-21T03:38:40.935340+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
     "datoer": [
-      "2026-07-22",
       "2026-07-23",
       "2026-07-24",
       "2026-07-25",
@@ -33,13 +32,13 @@
       "2026-08-17",
       "2026-08-18",
       "2026-08-19",
-      "2026-08-20"
+      "2026-08-20",
+      "2026-08-21"
     ],
     "serier": [
       {
         "navn": "Forskning",
         "tal": [
-          2,
           1,
           1,
           0,
@@ -68,13 +67,13 @@
           25,
           28,
           27,
-          27
+          27,
+          0
         ]
       },
       {
         "navn": "Samfund & etik",
         "tal": [
-          6,
           5,
           2,
           3,
@@ -103,13 +102,13 @@
           8,
           8,
           3,
-          6
+          6,
+          0
         ]
       },
       {
         "navn": "Lanceringer",
         "tal": [
-          1,
           6,
           4,
           3,
@@ -138,13 +137,13 @@
           1,
           5,
           6,
-          7
+          7,
+          0
         ]
       },
       {
         "navn": "Penge & marked",
         "tal": [
-          1,
           9,
           5,
           1,
@@ -173,13 +172,13 @@
           6,
           5,
           6,
-          3
+          4,
+          1
         ]
       },
       {
         "navn": "Politik & jura",
         "tal": [
-          0,
           4,
           5,
           0,
@@ -208,13 +207,13 @@
           4,
           1,
           3,
-          1
+          1,
+          0
         ]
       },
       {
         "navn": "Hverdags-AI",
         "tal": [
-          2,
           4,
           3,
           0,
@@ -243,20 +242,21 @@
           2,
           3,
           1,
-          2
+          4,
+          0
         ]
       }
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 40,
-  "sidevisninger_i_alt": 75,
+  "besoeg_i_alt": 41,
+  "sidevisninger_i_alt": 77,
   "ai_chat_besoeg": 0,
   "sider": [
     {
       "sti": "/",
-      "besoeg": 40,
-      "visninger": 41
+      "besoeg": 41,
+      "visninger": 42
     },
     {
       "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -391,13 +391,13 @@
     {
       "sti": "/artikel/b7c2fec452c0837e.html",
       "besoeg": 0,
-      "visninger": 1
+      "visninger": 2
     }
   ],
   "henvisere": [
     {
       "fra": "direkte",
-      "besoeg": 40
+      "besoeg": 41
     }
   ],
   "ai_chats": [],
@@ -405,8 +405,8 @@
     "/": [
       {
         "fra": "direkte",
-        "besoeg": 40,
-        "visninger": 40
+        "besoeg": 41,
+        "visninger": 41
       },
       {
         "fra": "herfra selv",
@@ -600,7 +600,7 @@
       {
         "fra": "herfra selv",
         "besoeg": 0,
-        "visninger": 1
+        "visninger": 2
       }
     ]
   },
@@ -620,11 +620,6 @@
     "/guide-sikkerhed.html"
   ],
   "serie": [
-    {
-      "dato": "2026-07-22",
-      "besoeg": 20,
-      "visninger": 160
-    },
     {
       "dato": "2026-07-23",
       "besoeg": 50,
@@ -767,8 +762,13 @@
     },
     {
       "dato": "2026-08-20",
-      "besoeg": 10,
-      "visninger": 30
+      "besoeg": 20,
+      "visninger": 50
+    },
+    {
+      "dato": "2026-08-21",
+      "besoeg": 0,
+      "visninger": 0
     }
   ],
   "artikler": [
@@ -808,6 +808,21 @@
       "visninger": 2,
       "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
       "kategori": "Samfund & etik",
+      "dato": "2026-08-19",
+      "henvisere": [
+        {
+          "fra": "herfra selv",
+          "besoeg": 0,
+          "visninger": 2
+        }
+      ]
+    },
+    {
+      "sti": "/artikel/b7c2fec452c0837e.html",
+      "besoeg": 0,
+      "visninger": 2,
+      "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
+      "kategori": "Penge & marked",
       "dato": "2026-08-19",
       "henvisere": [
         {
@@ -1131,21 +1146,6 @@
           "visninger": 1
         }
       ]
-    },
-    {
-      "sti": "/artikel/b7c2fec452c0837e.html",
-      "besoeg": 0,
-      "visninger": 1,
-      "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
-      "kategori": "Penge & marked",
-      "dato": "2026-08-19",
-      "henvisere": [
-        {
-          "fra": "herfra selv",
-          "besoeg": 0,
-          "visninger": 1
-        }
-      ]
     }
   ],
   "laeste_temaer": [
@@ -1159,7 +1159,7 @@
     },
     {
       "navn": "Penge & marked",
-      "visninger": 6
+      "visninger": 7
     },
     {
       "navn": "Hverdags-AI",

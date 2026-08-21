@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-20T21:51:07.583250+00:00",
+ "opdateret": "2026-08-21T03:36:52.713588+00:00",
  "artikler_i_alt": 119,
  "kilder": [
   {
@@ -106,6 +106,33 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Ali Ansaris Micro1 tjener en halv milliard på AI-data",
+     "dato": "2026-08-21T00:13:44",
+     "foerst_set": "2026-08-21T03:36:52",
+     "link": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+     "side": "artikel/715aa7b8d8cb52f0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI erobrer terræn i kampen mod Anthropic",
+     "dato": "2026-08-20T22:36:37",
+     "foerst_set": "2026-08-21T03:36:52",
+     "link": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+     "side": "artikel/08dddb48c1bd24f5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
+     "dato": "2026-08-20T22:09:51",
+     "foerst_set": "2026-08-21T03:36:52",
+     "link": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+     "side": "artikel/fc53f9f20e6ec49b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Jason Kelce vil køle servere med tis – det virker faktisk",
      "dato": "2026-08-20T20:53:13",
      "foerst_set": "2026-08-20T21:51:07",
@@ -185,33 +212,6 @@ window.KILDER_STATUS = {
      "side": "artikel/78b8e28299133e43.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Binance lader ChatGPT og Claude handle med dine penge",
-     "dato": "2026-08-20T09:30:00",
-     "foerst_set": "2026-08-20T10:02:56",
-     "link": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
-     "side": "artikel/ad5059a21e1bb200.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Stripe køber OpenRouter for 7,5 milliarder dollar",
-     "dato": "2026-08-19T23:32:00",
-     "foerst_set": "2026-08-20T03:27:07",
-     "link": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
-     "side": "artikel/42bbaa081fc3b432.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cognition-chef afviser SpaceX-opkøb",
-     "dato": "2026-08-19T21:51:23",
-     "foerst_set": "2026-08-20T03:27:07",
-     "link": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
-     "side": "artikel/6aba2536a5ec84cd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -268,6 +268,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Google lader dig styre nyheder med AI-chat",
+     "dato": "2026-08-20T17:50:22",
+     "foerst_set": "2026-08-21T03:36:52",
+     "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+     "side": "artikel/60d44502cd811ab0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Greg Brockman overtager magten i OpenAI",
@@ -347,15 +356,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T19:44:55",
      "link": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
      "side": "artikel/b7c2fec452c0837e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Firefox Smart Window lader dig chatte med browseren",
-     "dato": "2026-08-18T09:00:00",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-     "side": "artikel/c99c4fc90930e655.html",
      "hvor": "forside",
      "under": ""
     }
