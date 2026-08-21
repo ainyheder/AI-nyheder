@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Huzzah: skriv pseudokode, og AI&#x27;en laver koden</title>
-<meta name="description" content="En træt udvikler har bygget editoren Huzzah, der lader dig styre AI med pseudokode i stedet for lange chatbeskeder.">
+<title>AI-nyheder.com · Huzzah: Ny editor giver dig kodekontrol tilbage</title>
+<meta name="description" content="En udmattet programmør har bygget Huzzah, en editor hvor du styrer AI med pseudokode i stedet for lange chatbeskeder.">
 <link rel="canonical" href="https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Huzzah: skriv pseudokode, og AI&#x27;en laver koden">
-<meta property="og:description" content="En træt udvikler har bygget editoren Huzzah, der lader dig styre AI med pseudokode i stedet for lange chatbeskeder.">
+<meta property="og:title" content="Huzzah: Ny editor giver dig kodekontrol tilbage">
+<meta property="og:description" content="En udmattet programmør har bygget Huzzah, en editor hvor du styrer AI med pseudokode i stedet for lange chatbeskeder.">
 <meta property="og:url" content="https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Huzzah: skriv pseudokode, og AI'en laver koden", "description": "En træt udvikler har bygget editoren Huzzah, der lader dig styre AI med pseudokode i stedet for lange chatbeskeder.", "url": "https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-20T19:05:36+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://www.danielvaughn.dev/posts/huzzah/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Huzzah: Ny editor giver dig kodekontrol tilbage", "description": "En udmattet programmør har bygget Huzzah, en editor hvor du styrer AI med pseudokode i stedet for lange chatbeskeder.", "url": "https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/2a3f3d0326e9b4e8.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-20T19:05:36+00:00", "articleSection": "Lanceringer", "isBasedOn": "https://www.danielvaughn.dev/posts/huzzah/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -54,20 +54,18 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">Lanceringer · Hacker News: AI · 2026-08-20</div>
-<h1>Huzzah: skriv pseudokode, og AI&#x27;en laver koden</h1>
-<p class="manchet">En træt udvikler har bygget editoren Huzzah, der lader dig styre AI med pseudokode i stedet for lange chatbeskeder.</p>
+<h1>Huzzah: Ny editor giver dig kodekontrol tilbage</h1>
+<p class="manchet">En udmattet programmør har bygget Huzzah, en editor hvor du styrer AI med pseudokode i stedet for lange chatbeskeder.</p>
 
-<h2>Problemet med AI-chat</h2>
-<p>Efter flere måneder med kodningsagenter er udvikleren bag Huzzah ganske enkelt træt af at skrive lange engelske beskeder for at forklare hver ændring. Det giver ikke længere samme glæde, og han savner at have bedre kontrol over, hvad koden faktisk laver. Han vil ikke tilbage til at skrive al kode manuelt, men vil have mere indsigt.</p>
+<h2>Problemet med AI-kode</h2>
+<p>Efter måneders begejstring er udvikleren bag Huzzah ved at brække sig over at skulle skrive lange engelske beskrivelser til AI&#x27;en for hver lille ændring. Samtidig nægter han at vende tilbage til at kode alt i hånden. Han savner kontrol og overblik over den kode, AI&#x27;en producerer, og føler sig ikke helt professionel, når han bare accepterer alt fra chatten.</p>
 <h2>Sådan virker det</h2>
-<p>I stedet for chat skriver du i en .hz-fil et pseudokode-uddrag, der beskriver funktionen, fx &#x27;fizz_buzz() loop 100&#x27;. Huzzah gemmer filen og genererer automatisk ægte kode via en AI-model. Hver gang du ændrer pseudokoden, fanger editoren forskellen og bruger den som prompt, så kun de berørte dele bliver skrevet om.</p>
-<h2>Eksempler i praksis</h2>
-<p>Ud over fizz buzz viser skaberen også eksempler med en indkøbskurv og en todo-liste. Her skriver du blot handlinger som &#x27;add_item(id)&#x27; og &#x27;checkout()&#x27;, og AI&#x27;en oversætter det til fungerende kode. Pseudokoden er kort, læsbar og forbliver i filen – i modsætning til chatbeskeder, der forsvinder.</p>
-<h2>Hvad nu?</h2>
-<p>Huzzah er stadig eksperimentelt og under aktiv udvikling. Kildekoden ligger frit tilgængelig, så interesserede kan afprøve det og give feedback. Skaberen håber, at tilgangen kan give udviklere både AI-hjælp og et bedre overblik over koden – uden den kedelige lange kommunikation.</p>
+<p>I stedet for at skrive instruktioner i chat skriver du i Huzzah et pseudokode-ønske i en fil, for eksempel &#x27;fizz_buzz(n) loop n modulo 3 ? fizz&#x27;. Når du gemmer, laver programmet selv koden og bruger ændringen som ny besked til sprogmodellen. Du kan dermed se præcis, hvad du bad om – og resultatet bliver gemt, ikke væk som i en chat.</p>
+<h2>Koden bliver din igen</h2>
+<p>Pseudokoden er kort, let at læse og bliver liggende i projektet, så du altid kan se, hvad koden skal kunne. Du kan ændre i den og gemme – så opdateres den rigtige kode automatisk. Det giver dig både AI&#x27;ens hastighed og menneskets overblik, håber skaberen, som kalder projektet eksperimentelt og lægger koden frit frem.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>Huzzah er en eksperimentel editor bygget af en udvikler, der er træt af lange AI-prompts.</li><li>Pseudokoden er kortfattet og deklarativ, mens chat-prompts er lange og forsvinder.</li><li>Editoren genererer automatisk kode ud fra en .hz-fil.</li><li>Ændringer i pseudokoden bruges som diff til at regenerere kun de berørte dele.</li><li>Eksempler inkluderer fizz buzz, indkøbskurv og todo-liste.</li><li>Kildekoden er åben og kan findes online med opsætningsvejledning.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan snart styre AI-kodning med korte pseudokode-filer i stedet for lange chats – det giver dig mere kontrol og mindre besvær i din daglige udvikling.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Huzzah er en eksperimentel editor bygget af en udmattet softwareudvikler</li><li>Her bruger du pseudokode i stedet for lange chatbeskeder</li><li>Hver gang du gemmer, laver Huzzah et diff, der bruges som prompt</li><li>Fx kan du skrive &#x27;fizz_buzz(n) loop n modulo 3 ? fizz&#x27;</li><li>Pseudokoden er vedvarende og ligger i filen, ikke i chatten</li><li>Projektet er åbent og kan findes på GitHub</li><li>Udvikleren vil undgå manuel kode med AI-hastighed og kontrol</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Med Huzzah styrer du AI-koden med kortfattet pseudokode, så du slipper for lange chatbeskeder og får bedre kontrol over, hvad der ender i dit program.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://www.danielvaughn.dev/posts/huzzah/" rel="noopener">Hacker News: AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
