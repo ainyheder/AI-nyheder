@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-21T08:22:33.615572+00:00",
+ "opdateret": "2026-08-21T10:03:47.085419+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 42,
- "sidevisninger_i_alt": 76,
+ "besoeg_i_alt": 47,
+ "sidevisninger_i_alt": 85,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 42,
-   "visninger": 43
+   "besoeg": 47,
+   "visninger": 48
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -264,7 +264,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/fc53f9f20e6ec49b.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -334,6 +334,11 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
+   "sti": "/artikel/09f9dc1b5215ea73.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/youtube.html",
    "besoeg": 0,
    "visninger": 1
@@ -344,12 +349,22 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/715aa7b8d8cb52f0.html",
+   "besoeg": 0,
+   "visninger": 2
+  },
+  {
    "sti": "/artikel/759443956e5c1c65.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
    "sti": "/artikel/9e143ab6925a7272.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -387,7 +402,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 42
+   "besoeg": 47
   }
  ],
  "ai_chats": [],
@@ -395,8 +410,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 42,
-    "visninger": 42
+    "besoeg": 47,
+    "visninger": 47
    },
    {
     "fra": "herfra selv",
@@ -411,7 +426,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/897dfbe77af7f13c.html": [
+  "/artikel/fc53f9f20e6ec49b.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -509,6 +524,13 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
+  "/artikel/09f9dc1b5215ea73.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/youtube.html": [
    {
     "fra": "herfra selv",
@@ -523,6 +545,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/artikel/715aa7b8d8cb52f0.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
+  ],
   "/artikel/759443956e5c1c65.html": [
    {
     "fra": "herfra selv",
@@ -531,6 +560,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/9e143ab6925a7272.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/897dfbe77af7f13c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -794,6 +830,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/715aa7b8d8cb52f0.html",
+   "besoeg": 0,
+   "visninger": 2,
+   "rubrik": "Ali Ansaris Micro1 tjener en halv milliard på AI-data",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-21",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 2
+    }
+   ]
+  },
+  {
    "sti": "/artikel/650284a2db94c14e.html",
    "besoeg": 0,
    "visninger": 2,
@@ -824,12 +875,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/fc53f9f20e6ec49b.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-17",
+   "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
+   "kategori": "Hverdags-AI",
+   "dato": "2026-08-20",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -974,6 +1025,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/09f9dc1b5215ea73.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Replit gør app-bygning gratis med GPT-5.6 Luna",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-19",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/dc3d81799698c80d.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1010,6 +1076,21 @@ window.LAESERTAL = {
    "rubrik": "Matthew Elliott gemte AI-beskeder i retsdokumenter",
    "kategori": "Samfund & etik",
    "dato": "2026-08-14",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/897dfbe77af7f13c.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-17",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1097,11 +1178,11 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 11
+   "visninger": 12
   },
   {
    "navn": "Penge & marked",
-   "visninger": 8
+   "visninger": 10
   },
   {
    "navn": "Samfund & etik",
@@ -1109,7 +1190,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Hverdags-AI",
-   "visninger": 2
+   "visninger": 3
   },
   {
    "navn": "Forskning",
