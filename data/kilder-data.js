@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T13:27:51.261603+00:00",
+ "opdateret": "2026-08-21T14:08:13.928313+00:00",
  "artikler_i_alt": 120,
  "kilder": [
   {
@@ -95,6 +95,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "Starcloud og Nvidia sender AI i rummet",
+     "dato": "2026-08-21T14:00:00",
+     "foerst_set": "2026-08-21T14:08:13",
+     "link": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+     "side": "artikel/f30a4a32fb60e7f4.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Ali Ansaris Micro1 tjener en halv milliard på AI-data",
@@ -194,15 +203,6 @@ window.KILDER_STATUS = {
      "side": "artikel/a73f5aa32c52d997.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Fusionsfirmaet Inertia sætter farten op på brændstof",
-     "dato": "2026-08-20T16:00:00",
-     "foerst_set": "2026-08-20T17:57:44",
-     "link": "https://techcrunch.com/2026/08/20/inertia-enterprises-finds-a-way-to-make-its-fusion-fuel-fast/",
-     "side": "artikel/78b8e28299133e43.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -259,6 +259,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "YouTubere får hug for skjult AI-reklame",
+     "dato": "2026-08-21T09:37:52",
+     "foerst_set": "2026-08-21T14:08:13",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
+     "side": "artikel/9cbe86a700782f00.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google lader dig styre nyheder med AI-chat",
@@ -329,15 +338,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T21:42:05",
      "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
      "side": "artikel/024315d82a76560f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI strammer sikkerheden efter hackeruheld",
-     "dato": "2026-08-18T15:28:30",
-     "foerst_set": "2026-08-18T21:42:05",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
-     "side": "artikel/3fe859393c8d4d2a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1000,7 +1000,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "AI-firmaer ødelægger bøger – scan sjældne bøger nu",
+     "rubrik": "AI-virksomheder makulerer bøger – scan de sjældne før det er for sent",
      "dato": "",
      "foerst_set": "2026-08-21T13:27:51.261603+00:00",
      "link": "https://annas-archive.pk/blog/physical-destruction.html",
