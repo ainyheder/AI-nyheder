@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-21T14:08:59.645297+00:00",
+ "opdateret": "2026-08-21T15:05:38.196901+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 46,
- "sidevisninger_i_alt": 83,
+ "besoeg_i_alt": 44,
+ "sidevisninger_i_alt": 79,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 46,
-   "visninger": 47
+   "besoeg": 44,
+   "visninger": 45
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -264,7 +264,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/fc53f9f20e6ec49b.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -326,7 +326,7 @@ window.LAESERTAL = {
   {
    "sti": "/uge.html",
    "besoeg": 0,
-   "visninger": 2
+   "visninger": 1
   },
   {
    "sti": "/artikel/09f9dc1b5215ea73.html",
@@ -359,12 +359,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/80622eb8d24dc65a.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/80622eb8d24dc65a.html",
+   "sti": "/artikel/fc53f9f20e6ec49b.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -384,11 +384,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/e4813eb4076db514.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/650284a2db94c14e.html",
    "besoeg": 0,
    "visninger": 2
@@ -397,7 +392,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 46
+   "besoeg": 44
   }
  ],
  "ai_chats": [],
@@ -405,8 +400,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 46,
-    "visninger": 46
+    "besoeg": 44,
+    "visninger": 44
    },
    {
     "fra": "herfra selv",
@@ -421,7 +416,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/fc53f9f20e6ec49b.html": [
+  "/artikel/897dfbe77af7f13c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -509,7 +504,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 1
    }
   ],
   "/artikel/09f9dc1b5215ea73.html": [
@@ -554,14 +549,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/897dfbe77af7f13c.html": [
+  "/artikel/80622eb8d24dc65a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/80622eb8d24dc65a.html": [
+  "/artikel/fc53f9f20e6ec49b.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -583,13 +578,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/08dddb48c1bd24f5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/e4813eb4076db514.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -863,12 +851,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/fc53f9f20e6ec49b.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
-   "kategori": "Hverdags-AI",
-   "dato": "2026-08-20",
+   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-17",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1058,12 +1046,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/80622eb8d24dc65a.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-17",
+   "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
+   "kategori": "Politik & jura",
+   "dato": "2026-08-19",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1073,12 +1061,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/80622eb8d24dc65a.html",
+   "sti": "/artikel/fc53f9f20e6ec49b.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-19",
+   "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
+   "kategori": "Hverdags-AI",
+   "dato": "2026-08-20",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1131,21 +1119,6 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
-  },
-  {
-   "sti": "/artikel/e4813eb4076db514.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "AI splitter softwarebranchen: Gode bliver bedre, dårlige ryger",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
   }
  ],
  "laeste_temaer": [
@@ -1159,7 +1132,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 7
+   "visninger": 6
   },
   {
    "navn": "Hverdags-AI",
