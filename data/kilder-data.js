@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T10:59:55.084813+00:00",
+ "opdateret": "2026-08-21T11:54:48.407580+00:00",
  "artikler_i_alt": 120,
  "kilder": [
   {
@@ -380,6 +380,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Meta-briller filmer dig måske uden lyset",
+     "dato": "2026-08-21T11:00:53",
+     "foerst_set": "2026-08-21T11:54:48",
+     "link": "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect/",
+     "side": "artikel/ecf9b83da752b305.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Grok lækker dine chats via skjult kode",
      "dato": "2026-08-20T13:00:35",
      "foerst_set": "2026-08-20T14:22:16",
@@ -475,15 +484,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T15:43:10",
      "link": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
      "side": "artikel/e2666f986d634466.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude får usynligt vandmærke på alt indhold",
-     "dato": "2026-08-13T11:10:18",
-     "foerst_set": "2026-08-13T06:03:04",
-     "link": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
-     "side": "artikel/b456e74a549d0d83.html",
      "hvor": "forside",
      "under": ""
     }
