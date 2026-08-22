@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-21T21:51:30.351834+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-08-22T03:22:38.087601+00:00",
+ "artikler_i_alt": 120,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -97,6 +97,24 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Anthropic's Opus 4.6 slipper nemt uden om egne regler",
+     "dato": "2026-08-21T23:07:25",
+     "foerst_set": "2026-08-22T03:22:38",
+     "link": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
+     "side": "artikel/d7e3e6a3a485bc65.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia køber sig ind i data-center-firmaet Cloverleaf",
+     "dato": "2026-08-21T22:37:38",
+     "foerst_set": "2026-08-22T03:22:38",
+     "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+     "side": "artikel/5a379d4f9d7fe8cb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia: Sneglen, ikke hjernen, er vigtigst for AI",
      "dato": "2026-08-21T19:43:39",
      "foerst_set": "2026-08-21T19:49:31",
@@ -185,24 +203,6 @@ window.KILDER_STATUS = {
      "side": "artikel/501a92a0a8133cd8.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Grok taler volapyk til brugere",
-     "dato": "2026-08-20T17:32:16",
-     "foerst_set": "2026-08-20T17:57:44",
-     "link": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users/",
-     "side": "artikel/90eae5e4b71e5ca6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pew Research: Hver tredje nye webside er skrevet af AI",
-     "dato": "2026-08-20T17:18:58",
-     "foerst_set": "2026-08-20T17:57:44",
-     "link": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
-     "side": "artikel/072ab33f0182f137.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -216,7 +216,7 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     2
+     1
     ]
    ]
   },
@@ -259,15 +259,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
-    },
-    {
-     "rubrik": "LinkedIn: Over en million har klikket på AI-knap",
-     "dato": "2026-08-21T17:25:50",
-     "foerst_set": "2026-08-21T21:51:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
-     "side": "artikel/1cd4198d78c973ad.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "YouTubere får hug for skjult AI-reklame",
@@ -338,6 +329,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-19T14:17:56",
      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
      "side": "artikel/c9300d6f9773535f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
+     "dato": "2026-08-18T15:48:26",
+     "foerst_set": "2026-08-18T21:42:05",
+     "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+     "side": "artikel/024315d82a76560f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -619,18 +619,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 2,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI lover: Dine data bliver slettet",
-     "dato": "",
-     "foerst_set": "2026-08-19T21:45:30",
-     "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI svarer igen på Anhtropic med ny privatlivsbeskyttelse"
-    },
     {
      "rubrik": "OpenAI strammer sikkerheden for nye AI-modeller",
      "dato": "",
@@ -664,6 +655,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-20T16:02:07",
      "link": "https://openai.com/index/stampli",
      "side": "artikel/6213ce5ceef3e2f9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lover: dine data bliver ikke gemt",
+     "dato": "2026-08-19T19:00:00",
+     "foerst_set": "2026-08-19T21:45:30",
+     "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+     "side": "artikel/7e1debc1bd0a37c4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -747,25 +747,16 @@ window.KILDER_STATUS = {
      "side": "artikel/a7860c437a7c7d1d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI støtter 14 uafhængige AI-politikprojekter",
-     "dato": "2026-08-17T03:15:00",
-     "foerst_set": "2026-08-17T11:45:39",
-     "link": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-     "side": "artikel/e5221d6f877fb7da.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "The Verge AI",
      2
     ],
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     1
     ]
    ]
   },
@@ -1000,7 +991,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Anna's Archive advarer: AI-firmaer ødelægger fysiske bøger",
+     "rubrik": "AI-virksomheder ødelægger sjældne bøger",
      "dato": "",
      "foerst_set": "2026-08-21T08:20:29.082213+00:00",
      "link": "https://annas-archive.gl/blog/physical-destruction.html",

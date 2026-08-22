@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-21T21:52:02.659471+00:00",
+ "opdateret": "2026-08-22T03:24:11.571159+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-07-23",
    "2026-07-24",
    "2026-07-25",
    "2026-07-26",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-08-18",
    "2026-08-19",
    "2026-08-20",
-   "2026-08-21"
+   "2026-08-21",
+   "2026-08-22"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     1,
      1,
      0,
      1,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      28,
      27,
      2,
-     27
+     27,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     5,
      2,
      3,
      3,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      8,
      3,
      7,
-     6
+     7,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     6,
      4,
      3,
      0,
@@ -136,15 +135,15 @@ window.LAESERTAL = {
      0,
      1,
      5,
-     6,
+     5,
      7,
+     0,
      0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     9,
      5,
      1,
      1,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      5,
      7,
      4,
-     3
+     4,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     4,
      5,
      0,
      0,
@@ -206,15 +205,15 @@ window.LAESERTAL = {
      1,
      4,
      1,
-     3,
+     4,
      1,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     4,
      3,
      0,
      0,
@@ -243,20 +242,21 @@ window.LAESERTAL = {
      3,
      1,
      4,
-     1
+     1,
+     0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 45,
- "sidevisninger_i_alt": 81,
+ "besoeg_i_alt": 44,
+ "sidevisninger_i_alt": 80,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 45,
-   "visninger": 46
+   "besoeg": 44,
+   "visninger": 45
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -397,7 +397,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 45
+   "besoeg": 44
   }
  ],
  "ai_chats": [],
@@ -405,8 +405,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 45,
-    "visninger": 45
+    "besoeg": 44,
+    "visninger": 44
    },
    {
     "fra": "herfra selv",
@@ -621,11 +621,6 @@ window.LAESERTAL = {
  ],
  "serie": [
   {
-   "dato": "2026-07-23",
-   "besoeg": 50,
-   "visninger": 280
-  },
-  {
    "dato": "2026-07-24",
    "besoeg": 70,
    "visninger": 90
@@ -769,6 +764,11 @@ window.LAESERTAL = {
    "dato": "2026-08-21",
    "besoeg": 0,
    "visninger": 10
+  },
+  {
+   "dato": "2026-08-22",
+   "besoeg": 0,
+   "visninger": 0
   }
  ],
  "artikler": [
@@ -776,8 +776,8 @@ window.LAESERTAL = {
    "sti": "/artikel/7e1debc1bd0a37c4.html",
    "besoeg": 0,
    "visninger": 5,
-   "rubrik": "OpenAI lover: Dine data bliver slettet",
-   "kategori": "Lanceringer",
+   "rubrik": "OpenAI lover: dine data bliver ikke gemt",
+   "kategori": "Politik & jura",
    "dato": "2026-08-19",
    "henvisere": [
     {
@@ -1150,10 +1150,6 @@ window.LAESERTAL = {
  ],
  "laeste_temaer": [
   {
-   "navn": "Lanceringer",
-   "visninger": 11
-  },
-  {
    "navn": "Penge & marked",
    "visninger": 10
   },
@@ -1162,15 +1158,19 @@ window.LAESERTAL = {
    "visninger": 7
   },
   {
+   "navn": "Politik & jura",
+   "visninger": 6
+  },
+  {
+   "navn": "Lanceringer",
+   "visninger": 6
+  },
+  {
    "navn": "Hverdags-AI",
    "visninger": 3
   },
   {
    "navn": "Forskning",
-   "visninger": 1
-  },
-  {
-   "navn": "Politik & jura",
    "visninger": 1
   }
  ]
