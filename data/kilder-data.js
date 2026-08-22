@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T19:48:15.171228+00:00",
- "artikler_i_alt": 95,
+ "opdateret": "2026-08-22T20:51:23.178881+00:00",
+ "artikler_i_alt": 90,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 10,
+   "i_listen": 20,
+   "som_ekstra": 9,
    "seneste": [
-    {
-     "rubrik": "OpenAI støtter nu Californiens AI-sikkerhedslov",
-     "dato": "",
-     "foerst_set": "2026-08-22T16:52:35",
-     "link": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI bremser nye AI-modeller – er det nok?"
-    },
     {
      "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
      "dato": "",
@@ -111,6 +102,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-22T19:48:15",
      "link": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
      "side": "artikel/f264c057671cd86d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI vil have skrappere AI-regler i Californien",
+     "dato": "2026-08-22T16:30:34",
+     "foerst_set": "2026-08-22T16:52:35",
+     "link": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+     "side": "artikel/39119bad22dbbf0e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -203,15 +203,6 @@ window.KILDER_STATUS = {
      "side": "artikel/0e5fabfe4834a67b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google giver ny redning til pressede medier",
-     "dato": "2026-08-20T19:18:21",
-     "foerst_set": "2026-08-20T19:56:22",
-     "link": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
-     "side": "artikel/b359671ae1bfb83e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -221,7 +212,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     4
+     3
     ],
     [
      "OpenAI Blog",
@@ -363,7 +354,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     3
     ],
     [
      "OpenAI Blog",
@@ -875,67 +866,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Rafal Cymerys: Jeg er ved at blive blind for AI-tekster",
-     "dato": "2026-08-21T11:48:05",
-     "foerst_set": "2026-08-21T20:52:41",
-     "link": "https://cymerys.com/w/im-becoming-ai-blind",
-     "side": "artikel/98d9ccb86d82b1ff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DeepSeek fik kinesiske elever til at dumpe",
-     "dato": "2026-08-21T15:25:42",
-     "foerst_set": "2026-08-21T17:58:53",
-     "link": "https://canews24.online/?p=71",
-     "side": "artikel/8f7654c8ba1f118b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-firmaer makulerer bøger – nu går Anna's Archive til modangreb",
-     "dato": "2026-08-21T02:37:47",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://annas-archive.gl/blog/physical-destruction.html",
-     "side": "artikel/6be7b0dbd3424ac4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EU: AI-genereret indhold er ikke beskyttet af ophavsret",
-     "dato": "2026-08-21T00:15:12",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
-     "side": "artikel/88cf9b2eb5ae530f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anti-AI-skrifter er ubrugelige og skadelige, mener udvikler",
-     "dato": "2026-08-20T15:06:53",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
-     "side": "artikel/e547fa3181c08c87.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Huzzah: AI-kodning uden lange forklaringer",
-     "dato": "2026-08-20T19:05:36",
-     "foerst_set": "2026-08-20T21:51:07",
-     "link": "https://www.danielvaughn.dev/posts/huzzah/",
-     "side": "artikel/2a3f3d0326e9b4e8.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
