@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-22T08:58:44.911098+00:00",
+ "opdateret": "2026-08-22T09:52:51.016948+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -767,8 +767,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-22",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [

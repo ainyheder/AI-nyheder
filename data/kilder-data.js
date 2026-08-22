@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T08:58:35.829417+00:00",
+ "opdateret": "2026-08-22T09:52:36.076467+00:00",
  "artikler_i_alt": 95,
  "kilder": [
   {
@@ -882,7 +882,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "AI-træning ødelægger fysiske bøger",
+     "rubrik": "AI-firmaer ødelægger fysiske bøger",
      "dato": "",
      "foerst_set": "2026-08-21T13:27:51.261603+00:00",
      "link": "https://annas-archive.pk/blog/physical-destruction.html",
