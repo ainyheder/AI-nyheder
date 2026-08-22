@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-22T17:50:08.185942+00:00",
+ "opdateret": "2026-08-22T19:00:03.717177+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -387,186 +387,31 @@ window.LAESERTAL = {
  ],
  "ai_chats": [],
  "sidehenvisere": {
-  "/": [
-   {
-    "fra": "direkte",
-    "besoeg": 44,
-    "visninger": 44
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/eaf7eab1e8f78770.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/e68ddcb8301126ef.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/7430ad56634d75f9.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/40a9816ea4807c41.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/539d991b17b150c9.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/a17d0cbb65ba7f31.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/b7c2fec452c0837e.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/650284a2db94c14e.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/7e1debc1bd0a37c4.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 5
-   }
-  ],
-  "/artikel/38269b8f7f4f3795.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/655769ab72fd01b5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/63a1c4c6a261a00f.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/uge.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/09f9dc1b5215ea73.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/youtube.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/dc3d81799698c80d.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/715aa7b8d8cb52f0.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/759443956e5c1c65.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9e143ab6925a7272.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/897dfbe77af7f13c.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/fc53f9f20e6ec49b.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/0dccda6e63b06f1e.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/08dddb48c1bd24f5.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/80622eb8d24dc65a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ]
+  "/": [],
+  "/artikel/eaf7eab1e8f78770.html": [],
+  "/artikel/e68ddcb8301126ef.html": [],
+  "/artikel/7430ad56634d75f9.html": [],
+  "/artikel/40a9816ea4807c41.html": [],
+  "/artikel/539d991b17b150c9.html": [],
+  "/artikel/a17d0cbb65ba7f31.html": [],
+  "/artikel/b7c2fec452c0837e.html": [],
+  "/artikel/650284a2db94c14e.html": [],
+  "/artikel/7e1debc1bd0a37c4.html": [],
+  "/artikel/38269b8f7f4f3795.html": [],
+  "/artikel/655769ab72fd01b5.html": [],
+  "/artikel/63a1c4c6a261a00f.html": [],
+  "/uge.html": [],
+  "/artikel/09f9dc1b5215ea73.html": [],
+  "/youtube.html": [],
+  "/artikel/dc3d81799698c80d.html": [],
+  "/artikel/715aa7b8d8cb52f0.html": [],
+  "/artikel/759443956e5c1c65.html": [],
+  "/artikel/9e143ab6925a7272.html": [],
+  "/artikel/897dfbe77af7f13c.html": [],
+  "/artikel/fc53f9f20e6ec49b.html": [],
+  "/artikel/0dccda6e63b06f1e.html": [],
+  "/artikel/08dddb48c1bd24f5.html": [],
+  "/artikel/80622eb8d24dc65a.html": []
  },
  "faste_uden_besoeg": [
   "/laer.html",
@@ -743,13 +588,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI lover: dine data bliver ikke gemt",
    "kategori": "Politik & jura",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 5
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/b7c2fec452c0837e.html",
@@ -758,13 +597,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
    "kategori": "Penge & marked",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/650284a2db94c14e.html",
@@ -773,13 +606,7 @@ window.LAESERTAL = {
    "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
    "kategori": "Samfund & etik",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/655769ab72fd01b5.html",
@@ -788,13 +615,7 @@ window.LAESERTAL = {
    "rubrik": "Amazon giver Alexa+ gratis til alle Fire TV-ejere",
    "kategori": "Lanceringer",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/715aa7b8d8cb52f0.html",
@@ -803,13 +624,7 @@ window.LAESERTAL = {
    "rubrik": "Ali Ansaris Micro1 tjener en halv milliard på AI-data",
    "kategori": "Penge & marked",
    "dato": "2026-08-21",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -818,13 +633,7 @@ window.LAESERTAL = {
    "rubrik": "Asana brugte OpenAIs Codex til 5 års arbejde på 2 uger",
    "kategori": "Penge & marked",
    "dato": "2026-08-18",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/e68ddcb8301126ef.html",
@@ -833,13 +642,7 @@ window.LAESERTAL = {
    "rubrik": "SpaceX lukker købet af AI-værktøjet Cursor",
    "kategori": "Penge & marked",
    "dato": "2026-08-15",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/7430ad56634d75f9.html",
@@ -848,13 +651,7 @@ window.LAESERTAL = {
    "rubrik": "Stripe køber AI-formidleren OpenRouter for 7 mia. dollar",
    "kategori": "Penge & marked",
    "dato": "2026-08-16",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/40a9816ea4807c41.html",
@@ -863,13 +660,7 @@ window.LAESERTAL = {
    "rubrik": "Nvidia skyder 1,5 milliarder dollars i OpenAI-datacenter",
    "kategori": "Penge & marked",
    "dato": "2026-08-17",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/539d991b17b150c9.html",
@@ -878,13 +669,7 @@ window.LAESERTAL = {
    "rubrik": "Writers Palmyra X6 skærer AI-regningen",
    "kategori": "Lanceringer",
    "dato": "2026-08-13",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/a17d0cbb65ba7f31.html",
@@ -893,13 +678,7 @@ window.LAESERTAL = {
    "rubrik": "xAI sagsøgt: Grok brugt til misbrugsbilleder",
    "kategori": "Samfund & etik",
    "dato": "2026-08-15",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/38269b8f7f4f3795.html",
@@ -908,13 +687,7 @@ window.LAESERTAL = {
    "rubrik": "Cursor udfordrer GitHub med ny platform",
    "kategori": "Lanceringer",
    "dato": "2026-08-18",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/63a1c4c6a261a00f.html",
@@ -923,13 +696,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI's matematik-resultater chokerer verdens førende matematikere",
    "kategori": "Samfund & etik",
    "dato": "2026-08-20",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/09f9dc1b5215ea73.html",
@@ -938,13 +705,7 @@ window.LAESERTAL = {
    "rubrik": "Replit gør app-bygning gratis med GPT-5.6 Luna",
    "kategori": "Lanceringer",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/dc3d81799698c80d.html",
@@ -953,13 +714,7 @@ window.LAESERTAL = {
    "rubrik": "Google lancerer AI-studerende-hub i Gemini",
    "kategori": "Hverdags-AI",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/759443956e5c1c65.html",
@@ -968,13 +723,7 @@ window.LAESERTAL = {
    "rubrik": "Calendly lancerer AI-assistenten Callie",
    "kategori": "Lanceringer",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/9e143ab6925a7272.html",
@@ -983,13 +732,7 @@ window.LAESERTAL = {
    "rubrik": "Matthew Elliott gemte AI-beskeder i retsdokumenter",
    "kategori": "Samfund & etik",
    "dato": "2026-08-14",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/897dfbe77af7f13c.html",
@@ -998,13 +741,7 @@ window.LAESERTAL = {
    "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
    "kategori": "Samfund & etik",
    "dato": "2026-08-17",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/fc53f9f20e6ec49b.html",
@@ -1013,13 +750,7 @@ window.LAESERTAL = {
    "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
    "kategori": "Hverdags-AI",
    "dato": "2026-08-20",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/0dccda6e63b06f1e.html",
@@ -1028,13 +759,7 @@ window.LAESERTAL = {
    "rubrik": "Sådan opdager du, om din ChatGPT-konto er hacket",
    "kategori": "Hverdags-AI",
    "dato": "2026-08-15",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/08dddb48c1bd24f5.html",
@@ -1043,13 +768,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI erobrer terræn i kampen mod Anthropic",
    "kategori": "Penge & marked",
    "dato": "2026-08-20",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/80622eb8d24dc65a.html",
@@ -1058,13 +777,7 @@ window.LAESERTAL = {
    "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
    "kategori": "Politik & jura",
    "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   }
  ],
  "laeste_temaer": [
