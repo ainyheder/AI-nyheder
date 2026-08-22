@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-22T09:52:51.016948+00:00",
+ "opdateret": "2026-08-22T10:51:58.710197+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -250,7 +250,7 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 45,
- "sidevisninger_i_alt": 81,
+ "sidevisninger_i_alt": 79,
  "ai_chat_besoeg": 0,
  "sider": [
   {
@@ -264,7 +264,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/9e143ab6925a7272.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -324,11 +324,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/b936b51418779788.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/uge.html",
    "besoeg": 0,
    "visninger": 1
@@ -359,12 +354,12 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/9e143ab6925a7272.html",
+   "sti": "/artikel/80622eb8d24dc65a.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/80622eb8d24dc65a.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -375,11 +370,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/0dccda6e63b06f1e.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/30442beeaf4c72d6.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -421,7 +411,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/897dfbe77af7f13c.html": [
+  "/artikel/9e143ab6925a7272.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -505,13 +495,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/b936b51418779788.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/uge.html": [
    {
     "fra": "herfra selv",
@@ -554,14 +537,14 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/9e143ab6925a7272.html": [
+  "/artikel/80622eb8d24dc65a.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/80622eb8d24dc65a.html": [
+  "/artikel/897dfbe77af7f13c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -576,13 +559,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/0dccda6e63b06f1e.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/30442beeaf4c72d6.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -863,12 +839,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/897dfbe77af7f13c.html",
+   "sti": "/artikel/9e143ab6925a7272.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+   "rubrik": "Matthew Elliott gemte AI-beskeder i retsdokumenter",
    "kategori": "Samfund & etik",
-   "dato": "2026-08-17",
+   "dato": "2026-08-14",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -998,21 +974,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/b936b51418779788.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "AI-ekspertens fond kollapsede med 20 milliarder",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-14",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/09f9dc1b5215ea73.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1058,12 +1019,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/9e143ab6925a7272.html",
+   "sti": "/artikel/80622eb8d24dc65a.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Matthew Elliott gemte AI-beskeder i retsdokumenter",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-14",
+   "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
+   "kategori": "Politik & jura",
+   "dato": "2026-08-19",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1073,12 +1034,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/80622eb8d24dc65a.html",
+   "sti": "/artikel/897dfbe77af7f13c.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-19",
+   "rubrik": "Amazon skærer i sjældne bøger for at træne AI",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-17",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1118,21 +1079,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/30442beeaf4c72d6.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI sænker prisen voldsomt",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-14",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/08dddb48c1bd24f5.html",
    "besoeg": 0,
    "visninger": 1,
@@ -1151,11 +1097,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Penge & marked",
-   "visninger": 10
-  },
-  {
-   "navn": "Samfund & etik",
-   "visninger": 7
+   "visninger": 9
   },
   {
    "navn": "Politik & jura",
@@ -1163,6 +1105,10 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
+   "visninger": 6
+  },
+  {
+   "navn": "Samfund & etik",
    "visninger": 6
   },
   {
