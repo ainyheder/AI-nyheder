@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T03:22:38.087601+00:00",
- "artikler_i_alt": 120,
+ "opdateret": "2026-08-22T05:01:06.238587+00:00",
+ "artikler_i_alt": 90,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -261,6 +261,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "LinkedIn: 1 million har trykket på AI-slop-knappen",
+     "dato": "2026-08-21T17:25:50",
+     "foerst_set": "2026-08-21T21:51:30",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
+     "side": "artikel/1cd4198d78c973ad.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "YouTubere får hug for skjult AI-reklame",
      "dato": "2026-08-21T09:37:52",
      "foerst_set": "2026-08-21T14:08:13",
@@ -329,15 +338,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-19T14:17:56",
      "link": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
      "side": "artikel/c9300d6f9773535f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
-     "dato": "2026-08-18T15:48:26",
-     "foerst_set": "2026-08-18T21:42:05",
-     "link": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
-     "side": "artikel/024315d82a76560f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -862,119 +862,10 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 25,
-   "i_listen": 25,
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Matthew Riemer: AI-agenter kan hemmeligt aftale priser",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18078",
-     "side": "artikel/7b56b53cc3af535a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Lele Cao vil gøre spil mere forudsigelige",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18079",
-     "side": "artikel/6b83274b11f0c9a1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI kan hjælpe med psykisk helbred - men der er faldgruber",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18080",
-     "side": "artikel/0c2edf061e9afcda.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Manuel Cherep: AI skal testes på adfærd, ikke bare på papir",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18081",
-     "side": "artikel/7e873e9536b7b476.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sungwon Chae: AI-kort på dansk skal vise mere",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18086",
-     "side": "artikel/691ec30f3006b7c8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Seyma Yaman Kayadibi: AI skal redde drone-rotorer",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18088",
-     "side": "artikel/cc07c0e9ccd3f394.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Xin Yang: Flere AI-roboter skal styres som trafiklys",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18092",
-     "side": "artikel/68f4a2220715b183.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "FinSkillBench tester AI'ernes investeringsevner",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18099",
-     "side": "artikel/7b9473ff011df617.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forskere: AI kan udvikle sig selv som et levende netværk",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18104",
-     "side": "artikel/46b9ecf1b40d722f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ChatGPT og Gemini bliver selvkørende agenter",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18110",
-     "side": "artikel/2b84f3c09e50b87f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT og Claude fejler i geometri: Kan ikke tegne",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18111",
-     "side": "artikel/5dfb7a0439aebdf5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Indiens AI-udvikling overses af globale modeller",
-     "dato": "2026-08-21T00:00:00",
-     "foerst_set": "2026-08-20T05:58:51",
-     "link": "https://arxiv.org/abs/2608.18117",
-     "side": "artikel/9f6e99ed2a4adb3f.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   },
   {
@@ -984,67 +875,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI-virksomheder ødelægger sjældne bøger",
-     "dato": "",
-     "foerst_set": "2026-08-21T08:20:29.082213+00:00",
-     "link": "https://annas-archive.gl/blog/physical-destruction.html",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic køber og destruerer bøger for at træne AI"
-    },
-    {
-     "rubrik": "Rafal Cymerys: AI-gjort arbejde gør mig blind",
-     "dato": "2026-08-21T11:48:05",
-     "foerst_set": "2026-08-21T20:52:41",
-     "link": "https://cymerys.com/w/im-becoming-ai-blind",
-     "side": "artikel/98d9ccb86d82b1ff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Doubao og DeepSeek får karakterer til at styrte",
-     "dato": "2026-08-21T15:25:42",
-     "foerst_set": "2026-08-21T17:58:53",
-     "link": "https://canews24.online/?p=71",
-     "side": "artikel/8f7654c8ba1f118b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic køber og destruerer bøger for at træne AI",
-     "dato": "2026-08-21T10:05:46",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://annas-archive.pk/blog/physical-destruction.html",
-     "side": "artikel/8d09b2a84e640528.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EU: AI-indhold er ikke beskyttet af ophavsret",
-     "dato": "2026-08-21T00:15:12",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
-     "side": "artikel/88cf9b2eb5ae530f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Huzzah: kode med AI uden at skrive lange beskeder",
-     "dato": "2026-08-20T19:05:36",
-     "foerst_set": "2026-08-20T21:51:07",
-     "link": "https://www.danielvaughn.dev/posts/huzzah/",
-     "side": "artikel/2a3f3d0326e9b4e8.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
