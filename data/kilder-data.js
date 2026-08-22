@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T13:10:51.899276+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-08-22T13:54:09.684189+00:00",
+ "artikler_i_alt": 89,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -196,7 +196,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Linkdaze samler hele familiens planer på én skærm",
+     "rubrik": "Linkdaze-kalenderskærm er billigere end Skylight",
      "dato": "2026-08-20T18:20:35",
      "foerst_set": "2026-08-20T19:56:22",
      "link": "https://techcrunch.com/2026/08/20/linkdazes-smart-calendar-is-built-to-run-a-household-not-just-track-a-schedule/",
@@ -770,7 +770,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -833,15 +833,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-07-29T16:59:11",
      "link": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
      "side": "artikel/a700ee8f694b74e3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google hælder millioner i lynhurtig forskning",
-     "dato": "2026-07-22T13:38:54",
-     "foerst_set": "2026-07-22T13:38:54",
-     "link": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
-     "side": "artikel/860743384445f2e5.html",
      "hvor": "forside",
      "under": ""
     }
