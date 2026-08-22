@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T20:51:23.178881+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-08-22T21:49:38.544293+00:00",
+ "artikler_i_alt": 88,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 9,
+   "i_listen": 18,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Nvidia køber sig ind i data-center-firmaet Cloverleaf",
+     "dato": "",
+     "foerst_set": "2026-08-22T03:22:38.087601+00:00",
+     "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+     "side": "",
+     "hvor": "under",
+     "under": "Starcloud og Nvidia sender AI i rummet"
+    },
+    {
+     "rubrik": "Meta lancerer Pocket: Lav spil med AI-prompts",
+     "dato": "",
+     "foerst_set": "2026-08-20T17:57:44",
+     "link": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta AI får Mac-app: Kan se din skærm"
+    },
     {
      "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
      "dato": "",
@@ -97,6 +115,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Harvard bruger HeyGen-avatarer til iværksætterkursus",
+     "dato": "2026-08-22T21:46:56",
+     "foerst_set": "2026-08-22T21:49:38",
+     "link": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/",
+     "side": "artikel/480d7ab40672be77.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "DeepMind-folk imponerer med AI der selv laver forskning",
      "dato": "2026-08-22T19:00:00",
      "foerst_set": "2026-08-22T19:48:15",
@@ -129,15 +156,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-22T03:22:38",
      "link": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
      "side": "artikel/d7e3e6a3a485bc65.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia køber sig ind i data-center-firmaet Cloverleaf",
-     "dato": "2026-08-21T22:37:38",
-     "foerst_set": "2026-08-22T03:22:38",
-     "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
-     "side": "artikel/5a379d4f9d7fe8cb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -212,7 +230,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "OpenAI Blog",
@@ -354,7 +372,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "OpenAI Blog",
@@ -867,7 +885,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "fejl": "TimeoutError: The read operation timed out",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 0,
