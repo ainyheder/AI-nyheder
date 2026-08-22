@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T18:59:51.387859+00:00",
- "artikler_i_alt": 94,
+ "opdateret": "2026-08-22T19:48:15.171228+00:00",
+ "artikler_i_alt": 95,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
+   "i_listen": 19,
    "som_ekstra": 10,
    "seneste": [
     {
@@ -104,6 +104,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon bygger gasværk til AI trods klimamål"
+    },
+    {
+     "rubrik": "DeepMind-folk imponerer med AI der selv laver forskning",
+     "dato": "2026-08-22T19:00:00",
+     "foerst_set": "2026-08-22T19:48:15",
+     "link": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+     "side": "artikel/f264c057671cd86d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI topper ny test: Kan du styre en løbsk AI?",
@@ -201,15 +210,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-20T19:56:22",
      "link": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
      "side": "artikel/b359671ae1bfb83e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Runlayer og Rippling dropper sager efter tre uger",
-     "dato": "2026-08-20T19:15:05",
-     "foerst_set": "2026-08-20T19:56:22",
-     "link": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/",
-     "side": "artikel/dc3d7ed90c79c15d.html",
      "hvor": "forside",
      "under": ""
     }
