@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-23T13:11:39.515183+00:00",
+ "opdateret": "2026-08-23T13:56:07.505672+00:00",
  "artikler_i_alt": 89,
  "kilder": [
   {
@@ -876,7 +876,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "fejl": "TimeoutError: The read operation timed out",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 0,
