@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-23T07:11:38.049074+00:00",
- "artikler_i_alt": 89,
+ "opdateret": "2026-08-23T07:58:03.194083+00:00",
+ "artikler_i_alt": 95,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -875,12 +875,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Texas-studerende afslører AI-hackerforsøg",
+     "dato": "2026-08-21T13:43:33",
+     "foerst_set": "2026-08-23T07:58:03",
+     "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+     "side": "artikel/c6c3d5497f8c6505.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Rafal Cymerys: AI-træthed rammer på jobbet",
+     "dato": "2026-08-21T11:48:05",
+     "foerst_set": "2026-08-21T20:52:41",
+     "link": "https://cymerys.com/w/im-becoming-ai-blind",
+     "side": "artikel/98d9ccb86d82b1ff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Doubao og DeepSeek hjalp lektier, men skadede eksamener",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-firmaer ødelægger bøger – Anna's Archive slår alarm",
+     "dato": "2026-08-21T02:37:47",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://annas-archive.gl/blog/physical-destruction.html",
+     "side": "artikel/6be7b0dbd3424ac4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EU: Ophavsret dækker ikke AI-indhold",
+     "dato": "2026-08-21T00:15:12",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
+     "side": "artikel/88cf9b2eb5ae530f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Huzzah: Nyt AI-editor vil gøre kodning sjovere",
+     "dato": "2026-08-20T19:05:36",
+     "foerst_set": "2026-08-20T21:51:07",
+     "link": "https://www.danielvaughn.dev/posts/huzzah/",
+     "side": "artikel/2a3f3d0326e9b4e8.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
