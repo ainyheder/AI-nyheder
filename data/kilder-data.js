@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-22T21:49:38.544293+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-08-23T02:11:50.436190+00:00",
+ "artikler_i_alt": 94,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -884,12 +884,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "TimeoutError: The read operation timed out",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Rafal Cymerys: Jeg er ved at blive AI-blind",
+     "dato": "2026-08-21T11:48:05",
+     "foerst_set": "2026-08-21T20:52:41",
+     "link": "https://cymerys.com/w/im-becoming-ai-blind",
+     "side": "artikel/98d9ccb86d82b1ff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Doubao og DeepSeek gav højere lektieresultater – men lavere eksamenskarakterer",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic destruerer bøger for at træne AI – skyggelib rykker ud",
+     "dato": "2026-08-21T02:37:47",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://annas-archive.gl/blog/physical-destruction.html",
+     "side": "artikel/6be7b0dbd3424ac4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EU: AI-indhold er ikke beskyttet af ophavsret",
+     "dato": "2026-08-21T00:15:12",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://mathstodon.xyz/@maxpool/117128107757895678",
+     "side": "artikel/88cf9b2eb5ae530f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anti-AI-skrifter er nyttesløse og skader handicappede",
+     "dato": "2026-08-20T15:06:53",
+     "foerst_set": "2026-08-21T08:20:29",
+     "link": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
+     "side": "artikel/e547fa3181c08c87.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Huzzah: Ny måde at kode med AI på",
+     "dato": "2026-08-20T19:05:36",
+     "foerst_set": "2026-08-20T21:51:07",
+     "link": "https://www.danielvaughn.dev/posts/huzzah/",
+     "side": "artikel/2a3f3d0326e9b4e8.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
