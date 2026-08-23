@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-23T15:49:52.200564+00:00",
+ "opdateret": "2026-08-23T16:54:19.184034+00:00",
  "artikler_i_alt": 95,
  "kilder": [
   {
@@ -106,6 +106,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Flock-chef beder om kompromis efter massiv kritik",
+     "dato": "2026-08-23T15:30:00",
+     "foerst_set": "2026-08-23T16:54:19",
+     "link": "https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/",
+     "side": "artikel/d26899ffdb40f754.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Anthropic dømt til at betale 1,5 mia. dollars",
      "dato": "2026-08-23T15:00:00",
      "foerst_set": "2026-08-23T15:49:52",
@@ -201,15 +210,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-21T03:36:52",
      "link": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
      "side": "artikel/08dddb48c1bd24f5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ChatGPT kan nu skrive og sende dine SMS'er",
-     "dato": "2026-08-20T22:09:51",
-     "foerst_set": "2026-08-21T03:36:52",
-     "link": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
-     "side": "artikel/fc53f9f20e6ec49b.html",
      "hvor": "forside",
      "under": ""
     }
