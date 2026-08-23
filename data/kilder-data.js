@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-23T14:52:29.688378+00:00",
+ "opdateret": "2026-08-23T15:49:52.200564+00:00",
  "artikler_i_alt": 95,
  "kilder": [
   {
@@ -106,6 +106,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Anthropic dømt til at betale 1,5 mia. dollars",
+     "dato": "2026-08-23T15:00:00",
+     "foerst_set": "2026-08-23T15:49:52",
+     "link": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
+     "side": "artikel/c058daa1dd11bb41.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Harvard bruger HeyGen-avatarer til iværksætterkursus",
      "dato": "2026-08-22T21:46:56",
      "foerst_set": "2026-08-22T21:49:38",
@@ -201,15 +210,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-21T03:36:52",
      "link": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
      "side": "artikel/fc53f9f20e6ec49b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Jason Kelce vil køle servere med tis – det virker faktisk",
-     "dato": "2026-08-20T20:53:13",
-     "foerst_set": "2026-08-20T21:51:07",
-     "link": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
-     "side": "artikel/0e5fabfe4834a67b.html",
      "hvor": "forside",
      "under": ""
     }
