@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T10:18:53.028462+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-24T11:03:36.575890+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 10,
+   "i_listen": 20,
+   "som_ekstra": 9,
    "seneste": [
-    {
-     "rubrik": "Nvidia investerer i data-center-firmaet Cloverleaf",
-     "dato": "",
-     "foerst_set": "2026-08-22T03:22:38",
-     "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia vil låne penge ud med AI-chips som pant"
-    },
     {
      "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
      "dato": "",
@@ -178,6 +169,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Nvidia investerer i Cloverleafs datacenter-byggeri",
+     "dato": "2026-08-21T22:37:38",
+     "foerst_set": "2026-08-22T03:22:38",
+     "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+     "side": "artikel/5a379d4f9d7fe8cb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia: Sneglen, ikke hjernen, er vigtigst for AI",
      "dato": "2026-08-21T19:43:39",
      "foerst_set": "2026-08-21T19:49:31",
@@ -203,15 +203,6 @@ window.KILDER_STATUS = {
      "side": "artikel/f30a4a32fb60e7f4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic dømt til at betale 1,5 mia. dollars",
-     "dato": "2026-08-23T15:00:00",
-     "foerst_set": "2026-08-21T08:20:29",
-     "link": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
-     "side": "artikel/c058daa1dd11bb41.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -221,7 +212,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     4
+     3
     ],
     [
      "Hacker News: AI",
@@ -367,7 +358,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     3
     ],
     [
      "OpenAI Blog",
