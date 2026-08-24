@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T13:32:04.475287+00:00",
+ "opdateret": "2026-08-24T14:20:09.351414+00:00",
  "artikler_i_alt": 115,
  "kilder": [
   {
@@ -97,6 +97,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "Hugging Face solgt for 13 milliarder dollar?",
+     "dato": "2026-08-24T13:47:26",
+     "foerst_set": "2026-08-24T14:20:09",
+     "link": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+     "side": "artikel/aa2dd08ad7dad188.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gådefulde Ox Alpha får Stripe-bossen til at juble",
      "dato": "2026-08-23T20:01:36",
      "foerst_set": "2026-08-23T20:51:41",
@@ -192,15 +201,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-21T16:00:32",
      "link": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
      "side": "artikel/2128e60ca793bc6c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Starcloud og Nvidia sender AI i rummet",
-     "dato": "2026-08-21T14:00:00",
-     "foerst_set": "2026-08-21T14:08:13",
-     "link": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
-     "side": "artikel/f30a4a32fb60e7f4.html",
      "hvor": "forside",
      "under": ""
     }
