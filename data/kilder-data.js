@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T19:11:20.353810+00:00",
- "artikler_i_alt": 121,
+ "opdateret": "2026-08-24T19:56:33.413532+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -86,6 +86,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles Gemini rundede 1 milliard brugere"
+    },
+    {
+     "rubrik": "Amjad Masad taler om AI-tidens kodning på Disrupt",
+     "dato": "2026-08-24T19:54:19",
+     "foerst_set": "2026-08-24T19:56:33",
+     "link": "https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/",
+     "side": "artikel/7e3bc60a8a1a8cb9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Spear Street Technologys AI-assistent bekymrer med din data",
@@ -183,15 +192,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-22T19:48:15",
      "link": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
      "side": "artikel/f264c057671cd86d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI vil have skrappere AI-regler i Californien",
-     "dato": "2026-08-22T16:30:34",
-     "foerst_set": "2026-08-22T16:52:35",
-     "link": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
-     "side": "artikel/39119bad22dbbf0e.html",
      "hvor": "forside",
      "under": ""
     }
@@ -957,67 +957,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "AI koder for dig – men du lærer aldrig at kode",
-     "dato": "2026-08-24T15:52:33",
-     "foerst_set": "2026-08-24T19:11:20",
-     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-     "side": "artikel/e57c577525febf0a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Udvikler byggede AI-hund, der spiller Skyrim med ham",
-     "dato": "2026-08-23T23:18:17",
-     "foerst_set": "2026-08-24T19:11:20",
-     "link": "https://pantel.is/projects/ai-gaming-companion/",
-     "side": "artikel/a025a03650ffadbc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropics AI halter bagud for billigere konkurrenter",
-     "dato": "2026-08-23T18:16:37",
-     "foerst_set": "2026-08-24T19:11:20",
-     "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-     "side": "artikel/15d6d8e1489e0151.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GLM-5.3 giver manden fuld kontrol over sin egen tablet",
-     "dato": "2026-08-23T14:23:09",
-     "foerst_set": "2026-08-24T19:11:20",
-     "link": "https://ericpardee.github.io/fire-hd-ownership/",
-     "side": "artikel/a125f971489fac2b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Texas-studerende afslørede AI-hackforsøg",
-     "dato": "2026-08-21T13:43:33",
-     "foerst_set": "2026-08-23T07:58:03",
-     "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
-     "side": "artikel/c6c3d5497f8c6505.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI fik lektierne op, men eksamen gik galt",
-     "dato": "2026-08-21T15:25:42",
-     "foerst_set": "2026-08-21T17:58:53",
-     "link": "https://canews24.online/?p=71",
-     "side": "artikel/8f7654c8ba1f118b.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
