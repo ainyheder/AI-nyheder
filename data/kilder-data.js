@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T21:00:46.539884+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-24T21:55:41.409632+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -86,6 +86,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles Gemini rundede 1 milliard brugere"
+    },
+    {
+     "rubrik": "Trump købte SpaceX-aktier efter børsdebut",
+     "dato": "2026-08-24T21:24:17",
+     "foerst_set": "2026-08-24T21:55:41",
+     "link": "https://techcrunch.com/2026/08/24/trump-bought-spacex-shares-two-weeks-after-blockbuster-ipo/",
+     "side": "artikel/894769239e7b4f26.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Amjad Masad taler om AI-tidens kodning på Disrupt",
@@ -183,15 +192,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-22T21:49:38",
      "link": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/",
      "side": "artikel/480d7ab40672be77.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DeepMind-folk imponerer med AI der selv laver forskning",
-     "dato": "2026-08-22T19:00:00",
-     "foerst_set": "2026-08-22T19:48:15",
-     "link": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
-     "side": "artikel/f264c057671cd86d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -362,6 +362,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Stanford: AI rammer unges første job hårdest",
+     "dato": "2026-08-24T21:45:53",
+     "foerst_set": "2026-08-24T21:55:41",
+     "link": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+     "side": "artikel/a92e5141fd26827c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia-medarbejder tiltalt i Supermicro-skandale om Kina",
      "dato": "2026-08-24T16:41:45",
      "foerst_set": "2026-08-24T17:07:17",
@@ -457,15 +466,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
      "side": "artikel/5f281a8601314c93.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Gemini: 3.7 Flash og halv pris",
-     "dato": "2026-08-13T17:00:13",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/",
-     "side": "artikel/3978ae9331b5204e.html",
      "hvor": "forside",
      "under": ""
     }
@@ -957,12 +957,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Copilot gør kodere dårligere – selv tror de det modsatte",
+     "dato": "2026-08-24T15:52:33",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "side": "artikel/e57c577525febf0a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Byggede en AI-ven, der spiller Skyrim med dig",
+     "dato": "2026-08-23T23:18:17",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://pantel.is/projects/ai-gaming-companion/",
+     "side": "artikel/a025a03650ffadbc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude kæmper, mens billigere AI hitter",
+     "dato": "2026-08-23T18:16:37",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+     "side": "artikel/15d6d8e1489e0151.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-hackere overtager Amazons tablet på én dag",
+     "dato": "2026-08-23T14:23:09",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://ericpardee.github.io/fire-hd-ownership/",
+     "side": "artikel/a125f971489fac2b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Texas-studerende afslørede AI-hack",
+     "dato": "2026-08-21T13:43:33",
+     "foerst_set": "2026-08-23T07:58:03",
+     "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+     "side": "artikel/c6c3d5497f8c6505.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI gav kinesiske elever højere karakterer – men færre point til eksamen",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
