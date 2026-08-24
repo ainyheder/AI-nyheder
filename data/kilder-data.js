@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T15:11:40.371546+00:00",
+ "opdateret": "2026-08-24T16:05:41.196330+00:00",
  "artikler_i_alt": 115,
  "kilder": [
   {
@@ -97,6 +97,15 @@ window.KILDER_STATUS = {
      "under": "Amazon bygger gasværk til AI trods klimamål"
     },
     {
+     "rubrik": "General Intuition henter milliarder til robotter",
+     "dato": "2026-08-24T15:24:18",
+     "foerst_set": "2026-08-24T16:05:41",
+     "link": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+     "side": "artikel/0565e9e7b1546245.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI satser på AI-agenter til alle kontorfolk",
      "dato": "2026-08-24T15:00:00",
      "foerst_set": "2026-08-24T15:11:40",
@@ -192,15 +201,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-22T03:22:38",
      "link": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
      "side": "artikel/5a379d4f9d7fe8cb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia: Sneglen, ikke hjernen, er vigtigst for AI",
-     "dato": "2026-08-21T19:43:39",
-     "foerst_set": "2026-08-21T19:49:31",
-     "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-     "side": "artikel/4af5149f16f931f4.html",
      "hvor": "forside",
      "under": ""
     }
