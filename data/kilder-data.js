@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-24T02:09:49.907849+00:00",
- "artikler_i_alt": 95,
+ "opdateret": "2026-08-24T05:20:27.341203+00:00",
+ "artikler_i_alt": 120,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -862,10 +862,119 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 0,
-   "i_listen": 0,
+   "hentet": 25,
+   "i_listen": 25,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Forskere lærer AI at planlægge kode med SDAD",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20341",
+     "side": "artikel/772cb01edc45038b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Myron Kochs system lader din AI huske og hjælpe dig",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20342",
+     "side": "artikel/289fa208da7670e0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere afslører ChatGPTs skjulte løgne",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20378",
+     "side": "artikel/694221b1d2bb25a3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere kortlægger AI-agenter, der ser og handler",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20379",
+     "side": "artikel/7aa1fca3aebeeea7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere gør AI-genkendelse nemmere at forstå",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20384",
+     "side": "artikel/10ecf34215281c27.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kevin Dela Rosas AI-huskeliste: Sådan finder den det rigtige",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20389",
+     "side": "artikel/7561c83f0b73d467.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Arslans Nexus får chatbots til at huske længere",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20397",
+     "side": "artikel/f6cac870d600f684.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forsker Vanessa Utz: AI skal tænke langsommere for klimaet",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20398",
+     "side": "artikel/2eda099aec7bccd4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Minkyu Song afslører: AI glemmer vigtig viden",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20400",
+     "side": "artikel/764792427c081c27.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere giver AI en intern model af verden",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20401",
+     "side": "artikel/7a26da760b6d5409.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "StateSight tester AI-modellers rumlige forståelse",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20414",
+     "side": "artikel/0b6a5663a6b712ee.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kan AI have bevidsthed? Sådan finder vi ud af det",
+     "dato": "2026-08-24T00:00:00",
+     "foerst_set": "2026-08-24T05:20:27",
+     "link": "https://arxiv.org/abs/2608.20420",
+     "side": "artikel/f44fa44a114b807d.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
