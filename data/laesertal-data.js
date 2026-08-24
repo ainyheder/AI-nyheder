@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-24T11:56:41.740386+00:00",
+ "opdateret": "2026-08-24T13:32:13.415387+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 55,
- "sidevisninger_i_alt": 90,
+ "besoeg_i_alt": 57,
+ "sidevisninger_i_alt": 92,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 55,
-   "visninger": 60
+   "besoeg": 57,
+   "visninger": 62
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -269,12 +269,12 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/artikel/40a9816ea4807c41.html",
+   "sti": "/artikel/b781f4c498aeab9d.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/b781f4c498aeab9d.html",
+   "sti": "/artikel/40a9816ea4807c41.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -367,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 55
+   "besoeg": 57
   }
  ],
  "ai_chats": [],
@@ -375,8 +375,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 55,
-    "visninger": 55
+    "besoeg": 57,
+    "visninger": 57
    },
    {
     "fra": "herfra selv",
@@ -398,14 +398,14 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/artikel/40a9816ea4807c41.html": [
+  "/artikel/b781f4c498aeab9d.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
    }
   ],
-  "/artikel/b781f4c498aeab9d.html": [
+  "/artikel/40a9816ea4807c41.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -695,8 +695,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-24",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -806,12 +806,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/40a9816ea4807c41.html",
+   "sti": "/artikel/b781f4c498aeab9d.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Nvidia skyder 1,5 milliarder dollars i OpenAI-datacenter",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-17",
+   "rubrik": "Børn overgår Claude i sprog – og vi ved ikke hvorfor",
+   "kategori": "Forskning",
+   "dato": "2026-08-24",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -821,12 +821,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/b781f4c498aeab9d.html",
+   "sti": "/artikel/40a9816ea4807c41.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Børn overgår Claude i sprog – og vi ved ikke hvorfor",
-   "kategori": "Forskning",
-   "dato": "2026-08-24",
+   "rubrik": "Nvidia skyder 1,5 milliarder dollars i OpenAI-datacenter",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-17",
    "henvisere": [
     {
      "fra": "herfra selv",
