@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T17:59:22.542525+00:00",
+ "opdateret": "2026-08-25T19:10:17.315159+00:00",
  "artikler_i_alt": 119,
  "kilder": [
   {
@@ -68,6 +68,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Twitch-brugere kan nu sige nej til Amazons AI-træning"
+    },
+    {
+     "rubrik": "Stability AI henter 76 millioner dollars hos pladegiganterne",
+     "dato": "2026-08-25T19:03:47",
+     "foerst_set": "2026-08-25T19:10:17",
+     "link": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+     "side": "artikel/5d321e71ab652c82.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic opdaterer Claude med fælles hukommelse",
@@ -165,15 +174,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-24T15:11:40",
      "link": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
      "side": "artikel/e0099f0b8b4510a5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hugging Face solgt for 13 milliarder dollar?",
-     "dato": "2026-08-24T13:47:26",
-     "foerst_set": "2026-08-24T14:20:09",
-     "link": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
-     "side": "artikel/aa2dd08ad7dad188.html",
      "hvor": "forside",
      "under": ""
     }
