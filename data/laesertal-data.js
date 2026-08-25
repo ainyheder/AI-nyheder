@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-25T14:23:26.248630+00:00",
+ "opdateret": "2026-08-25T15:26:10.759469+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      1,
      4,
-     1
+     2
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      0,
      1,
      3,
-     2
+     3
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 55,
- "sidevisninger_i_alt": 87,
+ "besoeg_i_alt": 54,
+ "sidevisninger_i_alt": 83,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 55,
-   "visninger": 60
+   "besoeg": 54,
+   "visninger": 58
   },
   {
    "sti": "/artikel/eaf7eab1e8f78770.html",
@@ -299,17 +299,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/uge.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/09f9dc1b5215ea73.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/youtube.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -352,7 +342,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 55
+   "besoeg": 54
   }
  ],
  "ai_chats": [],
@@ -360,13 +350,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 55,
-    "visninger": 55
+    "besoeg": 54,
+    "visninger": 54
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 5
+    "visninger": 4
    }
   ],
   "/artikel/eaf7eab1e8f78770.html": [
@@ -425,21 +415,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/uge.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/09f9dc1b5215ea73.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/youtube.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -504,6 +480,8 @@ window.LAESERTAL = {
   "/prompt-arkiv.html",
   "/ordbog.html",
   "/quiz.html",
+  "/uge.html",
+  "/youtube.html",
   "/vaerktoejer.html",
   "/faq.html",
   "/om.html",
