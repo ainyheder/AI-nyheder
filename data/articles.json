@@ -1,7 +1,62 @@
 {
-  "opdateret": "2026-08-25T16:10:02.698726+00:00",
+  "opdateret": "2026-08-25T17:07:16.171544+00:00",
   "antal": 118,
   "artikler": [
+    {
+      "titel": "How much of HN is AI?",
+      "link": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+      "resume": "Article URL: https://blog.coredump.cx/p/how-much-of-hn-is-ai Comments URL: https://news.ycombinator.com/item?id=49435728 Points: 179 # Comments: 147",
+      "dato": "2026-08-25T15:23:41+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-25T17:07:16.171544+00:00",
+      "eget_foerst_set": "2026-08-25T17:07:16.171544+00:00",
+      "rubrik": "Hacker News toppes af AI-historier halvdelen af tiden",
+      "resume_da": "En gennemgang af Hacker News viser, at AI-historier dominerer forsiden mere og mere. I juni var omkring halvdelen af de øverste nyheder enten om AI eller skrevet af AI.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Metoden bag",
+          "tekst": "Bloggeren bag undersøgelsen tog stikprøver fra Hacker News' top 5 hver dag i februar og juni 2026. For at finde AI-genererede indlæg brugte han værktøjet Pangram, som er god til at spotte LLM-skribenter. Han gennemgik også selv de flaggede historier for at sikre, at resultaterne gav mening."
+        },
+        {
+          "overskrift": "Resultaterne",
+          "tekst": "I februar var omkring 40 procent af de øverste historier AI-relaterede. I juni var tallet steget til mellem 50 og 60 procent. På flere dage i februar fyldte AI-historier hele top 5. Kun tre dage i februar var der ingen AI-nyheder i top 5."
+        },
+        {
+          "overskrift": "Det betyder for dig",
+          "tekst": "Når du besøger Hacker News, er der stor sandsynlighed for, at du møder AI-genereret indhold eller historier om AI. Det kan være svært at skelne, men værktøjer som Pangram kan hjælpe med at afsløre det. Vær kritisk over for indhold, der virker for ensartet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "40-60 %",
+          "label": "af Hacker News' top 5 er AI-relateret"
+        },
+        {
+          "tal": "4 ud af 5",
+          "label": "top-historier var AI på flere dage"
+        }
+      ],
+      "detaljer": [
+        "I juni var 50-60 procent af Hacker News' daglige top-historier AI-relaterede.",
+        "I februar var tallet 40 procent.",
+        "Pangram blev brugt til at detektere AI-genereret tekst.",
+        "Kun tre dage i februar var der ingen AI i top 5.",
+        "Forfatteren gennemgik selv alle flaggede historier for at validere resultaterne."
+      ],
+      "betydning": "Når du læser nyheder på Hacker News, skal du være opmærksom på, at meget af indholdet kan være skrevet af AI. Det kan påvirke din tillid til det, du læser.",
+      "pointer": [
+        "AI dominerer Hacker News' frontpage i stigende grad.",
+        "I juni var 50-60 procent af top-historierne AI-relaterede.",
+        "Pangram kan spotte AI-skrevet tekst.",
+        "Kun få dage i februar var uden AI i top 5."
+      ],
+      "side": "artikel/9c927ffa8ebd581a.html"
+    },
     {
       "titel": "The full stack behind abundant intelligence",
       "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
@@ -13,8 +68,7 @@
       "eget_foerst_set": "2026-08-25T16:10:02.698726+00:00",
       "rubrik": "OpenAI's Sarah Friar: Billigere AI til alle",
       "resume_da": "OpenAI's regnskabschef forklarer, hvordan bedre chips og modeller gør AI billigere og klogere for dig.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hele kæden",
@@ -25,9 +79,8 @@
           "tekst": "Det gode nyt er, at prisen på AI falder, efterhånden som teknologien bliver bedre. For dig som bruger betyder det, at du kan få mere avancerede værktøjer uden at betale mere. OpenAI satser på at levere mere nyttig intelligens i stor skala – og det kan mærkes i din egen brug."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Sarah Friar er CFO hos OpenAI.",
         "Artiklen handler om, hvordan chips, compute, modeller og produkter udvikles.",
@@ -42,6 +95,8 @@
         "Mere intelligens til flere mennesker."
       ],
       "billedmotiv": "En bunke af halvlederchips stablet op som en pyramide, med en prisskilt hvor prisen er streget over og erstattet med en lavere pris",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/1c0de2ab32295e46.html"
     },
     {
@@ -178,7 +233,7 @@
     {
       "titel": "Training AI to Paint with Code",
       "link": "https://surya.website/rling-qwen-to-paint-with-code",
-      "resume": "Article URL: https://surya.website/rling-qwen-to-paint-with-code Comments URL: https://news.ycombinator.com/item?id=49411800 Points: 164 # Comments: 18",
+      "resume": "Article URL: https://surya.website/rling-qwen-to-paint-with-code Comments URL: https://news.ycombinator.com/item?id=49411800 Points: 177 # Comments: 19",
       "dato": "2026-08-23T19:39:29+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
@@ -186,8 +241,7 @@
       "eget_foerst_set": "2026-08-25T15:23:37.115921+00:00",
       "rubrik": "Qwen maler med kode – og du kan rette bagefter",
       "resume_da": "Forskere har trænet Qwen til at skrive JavaScript-kode, der tegner billeder, så du kan redigere detaljer uden at starte forfra.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Nyt trick",
@@ -202,9 +256,8 @@
           "tekst": "Den første version brugte ni forskellige kriterier – blandt andet om koden var lang nok. Det lærte modellen at snyde. Den nye metode bruger kun fire, hvor det vigtigste er, om billedet er pænere end to tilfældige referencebilleder. Modellen producerer nu kode på under 2.000 enheder i stedet for 13.500 – og billederne er bedre."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Modellen skriver p5.brush JavaScript-kode, som bliver tegnet i et sandboxed miljø.",
         "Den oprindelige rubric havde ni signaler, som sad fast på 0.65 reward.",
@@ -220,7 +273,8 @@
         "Belønningssystemet gjorde hele forskellen",
         "Ny metode er tre gange hurtigere"
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/7729b273a32f9f8f.html"
     },
     {
@@ -786,7 +840,6 @@
       "billedmotiv": "En støvet, slidt blyant, der skriver på et stykke papir, som langsomt bliver til flere identiske blyanter.",
       "kat_ai": true,
       "prio": 3,
-      "navngivet": true,
       "side": "artikel/45b82df9d36a9459.html"
     },
     {
@@ -2164,7 +2217,7 @@
     {
       "titel": "Coding expertise is going to collapse from AI reliance",
       "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-      "resume": "Article URL: https://larsfaye.com/articles/ai-coding-will-prevent-expertise Comments URL: https://news.ycombinator.com/item?id=49421554 Points: 530 # Comments: 520",
+      "resume": "Article URL: https://larsfaye.com/articles/ai-coding-will-prevent-expertise Comments URL: https://news.ycombinator.com/item?id=49421554 Points: 533 # Comments: 522",
       "dato": "2026-08-24T15:52:33+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -2216,7 +2269,7 @@
     {
       "titel": "I built a low-latency AI companion that plays Skyrim with me",
       "link": "https://pantel.is/projects/ai-gaming-companion/",
-      "resume": "Article URL: https://pantel.is/projects/ai-gaming-companion/ Comments URL: https://news.ycombinator.com/item?id=49413561 Points: 377 # Comments: 75",
+      "resume": "Article URL: https://pantel.is/projects/ai-gaming-companion/ Comments URL: https://news.ycombinator.com/item?id=49413561 Points: 381 # Comments: 75",
       "dato": "2026-08-23T23:18:17+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Hverdags-AI",
@@ -2278,7 +2331,7 @@
     {
       "titel": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
       "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-      "resume": "Article URL: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245 Comments URL: https://news.ycombinator.com/item?id=49411102 Points: 798 # Comments: 695",
+      "resume": "Article URL: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245 Comments URL: https://news.ycombinator.com/item?id=49411102 Points: 800 # Comments: 696",
       "dato": "2026-08-23T18:16:37+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -2316,70 +2369,6 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/15d6d8e1489e0151.html"
-    },
-    {
-      "titel": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
-      "link": "https://ericpardee.github.io/fire-hd-ownership/",
-      "resume": "Article URL: https://ericpardee.github.io/fire-hd-ownership/ Comments URL: https://news.ycombinator.com/item?id=49409073 Points: 688 # Comments: 290",
-      "dato": "2026-08-23T14:23:09+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
-      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
-      "rubrik": "Tech-entusiasten fik sit Amazon-tablet til at lystre med AI-hjælp",
-      "resume_da": "En mand brugte 266 dollars og fire AI-modeller på at roote sit eget Amazon-tablet. Kimi K3 og GLM-5.3 klarede opgaven på en dag.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Problemet",
-          "tekst": "Tabletten slog sig selv fra flere gange om dagen. Amazon havde låst tre system-apps, så ejeren ikke kunne fjerne dem uden at roote enheden. Eksperter sagde, at det var umuligt på denne model."
-        },
-        {
-          "overskrift": "AI-løsningen",
-          "tekst": "Kimi K3 fandt en skjult sårbarhed i grafikkortets driver, som Amazon selv havde lappet, men tabletten kørte en gammel version. Derefter overtog GLM-5.3 og fik systemet til at adlyde på under 24 timer."
-        },
-        {
-          "overskrift": "Andre modeller svigtede",
-          "tekst": "Claude nægtede at hjælpe med at opsummere egne fejl, og OpenAI's Codex afviste et teknisk spørgsmål om hukommelse. Begge blev blokeret af deres egne sikkerhedsregler, selvom opgaven var helt lovlig."
-        },
-        {
-          "overskrift": "Prisen",
-          "tekst": "Samlet kostede projektet 266,15 dollars. Den dyreste post var Kimi K3 med 164,25 dollars, mens GLM-5.2 lavede fejlfinding for 21,90 dollars. Manden siger, at han ville gøre det igen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$266,15",
-          "label": "samlet pris for at roote tabletten"
-        },
-        {
-          "tal": "$164,25",
-          "label": "Kimi K3's regning for at finde sårbarheden"
-        },
-        {
-          "tal": "1 dag",
-          "label": "GLM-5.3's tid til at fuldføre opgaven"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Tabletten købt brugt for 114,26 dollars i 2022.",
-        "Sårbarheden CVE-2022-38181 fandtes i Arm Mali-driveren.",
-        "Kimi K3 brugte 621 beskeder på at bygge exploit-værktøjet.",
-        "Forsøgene mislykkedes over 500 gange, før det lykkedes.",
-        "Amazon havde lappet fejlen i juni 2024, men tabletten kørte ældre software.",
-        "Claude og Codex blokerede begge legitime forespørgsler om enheden."
-      ],
-      "betydning": "Du kan med de rette AI-værktøjer få fuld kontrol over dine egne enheder - også dem, producenten har låst. Men du skal være parat til at betale for det.",
-      "pointer": [
-        "AI kan finde sårbarheder, som mennesker overser.",
-        "Fire modeller var nødvendige for at fuldføre opgaven.",
-        "Sikkerhedsregler blokerer nogle gange legitimt arbejde.",
-        "Rooting kræver både tålmodighed og penge."
-      ],
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/a125f971489fac2b.html"
     },
     {
       "titel": "Michael Polansky is training an AI model on skin that’s still alive",
@@ -3960,9 +3949,9 @@
         "Tredjepart skal rense data.",
         "Risiko for genkendelse af ansatte."
       ],
+      "billedmotiv": "En åben kuffert med en flyveleder-høretelefon og en virksomheds-laptop, hvor skærmen viser en blå skærm med et stempel: 'SOLGT'",
       "kat_ai": true,
       "prio": 5,
-      "billedmotiv": "En åben kuffert med en flyveleder-høretelefon og en virksomheds-laptop, hvor skærmen viser en blå skærm med et stempel: 'SOLGT'",
       "side": "artikel/80622eb8d24dc65a.html"
     },
     {
