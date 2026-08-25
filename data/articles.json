@@ -1,7 +1,199 @@
 {
-  "opdateret": "2026-08-25T11:56:46.597415+00:00",
-  "antal": 115,
+  "opdateret": "2026-08-25T13:29:53.505734+00:00",
+  "antal": 121,
   "artikler": [
+    {
+      "titel": "Apple's new desktop computers are designed specifically for local AI development",
+      "link": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+      "resume": "Folks have been daisy-chaining Macs for AI—this refresh keeps that in mind.",
+      "dato": "2026-08-25T13:00:11+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "eget_foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "rubrik": "Apple lancerer nye Macs med AI i fokus",
+      "resume_da": "Apple har opdateret Mac mini og Mac Studio med nye chips, der er bygget til at køre store AI-modeller lokalt.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Nye chips",
+          "tekst": "Apple har lanceret to nye processorer: M6 og M5 Ultra. M6 er den første 2nm-chip i M-serien med 12 CPU-kerner og 12 GPU-kerner. M5 Ultra er den kraftigste chip til AI-opgaver med op til 80 GPU-kerner og support til 512GB hukommelse. Resultatet er lynhurtig lokal AI-behandling."
+        },
+        {
+          "overskrift": "Samlet flok",
+          "tekst": "Folk har opdaget, at de kan forbinde flere Mac mini'er eller Mac Studios med Thunderbolt 5-kabler for at køre enorme AI-modeller, som ellers kræver dyre Nvidia-systemer. Det blev populært efter en softwareopdatering i december, og Apple har nu designet de nye maskiner med denne brug i tankerne."
+        },
+        {
+          "overskrift": "Pris og fremtid",
+          "tekst": "Mac mini med M6 koster fra 899 dollars, mens Mac Studio med M5 Ultra starter ved 5.499 dollars. Begge kan forudbestilles nu og leveres fra 22. september. De kommer med macOS 27 Golden Gate. For almindelige brugere er der også hurtigere Wi-Fi og dobbelt så hurtig lagring som før."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "512GB",
+          "label": "maks hukommelse i M5 Ultra"
+        },
+        {
+          "tal": "1,2TB/s",
+          "label": "hukommelsesbåndbredde i M5 Ultra"
+        },
+        {
+          "tal": "40 %",
+          "label": "hurtigere CPU end M4"
+        },
+        {
+          "tal": "899 dollars",
+          "label": "startpris for Mac mini med M6"
+        }
+      ],
+      "detaljer": [
+        "M6 er Apples første 2nm-chip med tre typer CPU-kerner.",
+        "M5 Ultra er to M6 Max-chips kombineret på ét stykke silicium.",
+        "AI-udviklere kan forbinde flere Macs for at køre store sprogmodeller.",
+        "Begge maskiner understøtter Wi-Fi 7 og Bluetooth 6 med N1-chip.",
+        "Mac mini har 2,5Gb Ethernet som standard, kan opgraderes til 10Gb.",
+        "512GB-hukommelsesversionen af M5 Max leveres først i slutningen af oktober."
+      ],
+      "betydning": "Du kan nu køre store AI-modeller lokalt på din egen computer uden at betale dyre cloud-abonnementer – hvis du har råd til hardwaren.",
+      "pointer": [
+        "Nye Macs er bygget til AI-udvikling",
+        "M5 Ultra har 512GB hukommelse",
+        "M6 er første 2nm-chip fra Apple",
+        "Priserne starter ved 899 dollars"
+      ],
+      "billedmotiv": "En Mac mini og en Mac Studio på en bakke, begge med et lille træk om hjørnet, hvor en enkelt snegl med en chip-formet skal kravler op ad siden",
+      "side": "artikel/a259f2eef687dfd2.html"
+    },
+    {
+      "titel": "Accel-backed Keenable is indexing the web for AI agents",
+      "link": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
+      "resume": "Now exiting stealth mode with a $26 million seed round, Keenable has been building a vast web search index for AI agents.",
+      "dato": "2026-08-25T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "eget_foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "rubrik": "Keenable vil bygge søgemaskine til AI'er",
+      "resume_da": "Nyt firma med 26 millioner dollars vil lave et internet-indeks, der er skræddersyet til AI-chatbots, ikke mennesker.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Keenable, stiftet af tidligere Yandex-topchef Andrey Styskin og AI-forsker Matthias Petri, er kommet ud af stealth med **26 millioner dollars** i seed-finansiering. Pengene kommer fra venturefonden Accel, der også har investeret i kendte techfirmaer. Målet er at skabe en søgeinfrastruktur, der er bygget til AI-agenter, ikke til mennesker, som skal klikke på links."
+        },
+        {
+          "overskrift": "Problemet",
+          "tekst": "AI-chatbots som ChatGPT har brug for lynhurtig adgang til enorme mængder data for at svare korrekt. Men eksisterende søgemaskiner er optimeret til mennesker, der læser en side ad gangen. Keenable har bygget et indeks med over **100 milliarder dokumenter** og en API, der allerede bruges af flere AI-laboratorier. Virksomheden lover billigere og hurtigere søgning, fordi den kan indsnævre søgerummet baseret på forespørgslen."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Accel-partner Zhenya Loginov forklarer, at AI-virksomheder har få muligheder for at købe søgeinfrastruktur, især fordi Google og Microsoft lukker deres API'er for at undgå kannibalisering. Keenable vil udnytte dette hul og tilbyde en mere omkostningseffektiv løsning. Pengene skal bl.a. bruges til at fordoble antallet af medarbejdere fra 15 til 30 inden årets udgang."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Keenable har også planer om et produkt kaldet WebQueryLanguage, der skal hjælpe AI'er med at kombinere information fra flere kilder for at svare på komplekse spørgsmål. Konkurrenter som Brave og Exa er også på banen, og selv Google arbejder på at tilpasse sig AI-tidsalderen. Spørgsmålet er, om Keenable kan blive 'den næste Google for AI-agenter'."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "26 mio. dollars",
+          "label": "i seed-finansiering fra Accel"
+        },
+        {
+          "tal": "100 mia.",
+          "label": "dokumenter i Keenable's webindeks"
+        }
+      ],
+      "detaljer": [
+        "Keenable er stiftet af Andrey Styskin, tidligere topchef hos Yandex, og Matthias Petri.",
+        "Firmaet har fået 26 millioner dollars i finansiering fra Accel, Conviction Partners og business angels.",
+        "Keenable har bygget et webindeks med over 100 milliarder dokumenter.",
+        "API'en bruges allerede i produktion hos flere AI-laboratorier og inferensudbydere.",
+        "Keenable har indgået partnerskab med voice-AI-firmaet Gradium om live informationssøgning.",
+        "Virksomheden har 15 ansatte og planlægger at fordoble antallet inden årets udgang.",
+        "Keenable udvikler et produkt kaldet WebQueryLanguage til at kombinere info fra flere kilder."
+      ],
+      "betydning": "Du kan forvente, at dine AI-chatbots bliver hurtigere og mere præcise, når de søger på nettet, hvis Keenable leverer på løftet om billigere og smartere søgeinfrastruktur.",
+      "pointer": [
+        "Keenable vil lave søgemaskine til AI-agenter.",
+        "Har fået 26 mio. dollars i funding.",
+        "Indeks med 100 milliarder dokumenter.",
+        "Konkurrerer med Google og Brave."
+      ],
+      "billedmotiv": "En åben kuffert med en metalkrabbe, der holder en dokumentmappe i kloen, og en rød tråd der fører fra kufferten til en lille forgyldt nøgle",
+      "side": "artikel/944b086394f24a20.html"
+    },
+    {
+      "titel": "‘The world seems to be ready’: An interview with OpenAI head of product Thibault Sottiaux",
+      "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+      "resume": "TechCrunch talks agents, UX, and reporting to Greg Brockman with OpenAI's head of product.",
+      "dato": "2026-08-25T12:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "eget_foerst_set": "2026-08-25T13:29:53.505734+00:00",
+      "rubrik": "OpenAI vil give alle adgang til AI-agenter",
+      "resume_da": "OpenAI vil gøre AI-agenter tilgængelige for alle med ChatGPT Work og Codex til 20 dollars om måneden.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Produktet",
+          "tekst": "OpenAI lancerer ChatGPT Work, så kontorfolk kan bruge AI-agenter til at løse komplekse opgaver. Sottiaux fortæller, at værktøjet er en videreudvikling af Codex, der før var for teknisk kyndige. Nu skal alle kunne bruge teknologien på mobil og web - og det koster kun **20 dollars** om måneden."
+        },
+        {
+          "overskrift": "Udbredelsen",
+          "tekst": "Sottiaux siger, at verden er klar, og at adoptionen har været enorm. ChatGPT Work har allerede **20 millioner brugere**. Selskabet vil gøre teknologien mere naturlig at bruge, blandt andet med stemmefunktioner, så man kan tale med systemet i stedet for at lære en app at kende."
+        },
+        {
+          "overskrift": "Prisen",
+          "tekst": "OpenAI sænker priserne markant fremover. Med opdateringen Luna er priserne skåret med **80 procent** permanent. Målet er, at man om seks måneder kan få samme værdi for færre penge, siger Sottiaux. Han understreger, at effektivisering er en løbende indsats, hvor de hele tiden presser på for at gøre teknologien billigere."
+        },
+        {
+          "overskrift": "Fremtiden",
+          "tekst": "Sottiaux beskriver udviklingen som en opdagelsesrejse, hvor OpenAI selv finder ud af, hvad modellerne kan. Med GPT-5.6 kan systemet behandle store dokumentmængder, lave slides og rapporter. Det bliver bedre gennem feedback fra brugerne, og teknologien vil kun blive mere autonom og naturlig at bruge."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "20 dollars",
+          "label": "månedlig pris for ChatGPT Plus"
+        },
+        {
+          "tal": "20 millioner",
+          "label": "brugere af ChatGPT Work"
+        },
+        {
+          "tal": "80 procent",
+          "label": "permanent prisnedsættelse på Luna"
+        }
+      ],
+      "detaljer": [
+        "OpenAI leder alle kerneområder: API, agentinfrastruktur, enterprise og ChatGPT.",
+        "ChatGPT Work skal bringe AI-agenters kraft til almindelige kontorfolk.",
+        "Codex var tidligere kun for tekniske brugere, nu skal det bredes ud.",
+        "Stemmefunktionen ChatGPT Voice har haft stor vækst.",
+        "GPT-5.6 kan håndtere store dokumenter og lave kvalitetsrapporter.",
+        "OpenAI lærer fra brugerfeedback og forbedrer løbende produkterne.",
+        "Sottiaux ser diffusion af teknologien som en kerneopgave for OpenAI."
+      ],
+      "betydning": "Du får snart adgang til AI-agenter, der kan løse hele opgaver for dig - og prisen falder løbende, så du kan få mere for de samme penge.",
+      "pointer": [
+        "ChatGPT Work når 20 millioner brugere.",
+        "Priserne skæres med 80 procent permanent.",
+        "OpenAI vil gøre AI naturlig at tale med.",
+        "Teknologien skal bredes ud til alle."
+      ],
+      "side": "artikel/93a87e369cbc9183.html"
+    },
     {
       "titel": "OpenAI subpoenaed by Alabama AG over Hugging Face hack",
       "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
@@ -1677,6 +1869,194 @@
       "side": "artikel/a34ef28c4aefb76a.html"
     },
     {
+      "titel": "Coding expertise is going to collapse from AI reliance",
+      "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+      "resume": "Article URL: https://larsfaye.com/articles/ai-coding-will-prevent-expertise Comments URL: https://news.ycombinator.com/item?id=49421554 Points: 522 # Comments: 511",
+      "dato": "2026-08-24T15:52:33+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "rubrik": "Eksperter advarer: AI gør kodere udygtige",
+      "resume_da": "Folk, der altid bruger AI, lærer ikke at kode ordentligt. Det kan betyde, at der ikke er nogen, der kan rette fejl senere.",
+      "kat_ai": true,
+      "prio": 6,
+      "navngivet": true
+    },
+    {
+      "titel": "I built a low-latency AI companion that plays Skyrim with me",
+      "link": "https://pantel.is/projects/ai-gaming-companion/",
+      "resume": "Article URL: https://pantel.is/projects/ai-gaming-companion/ Comments URL: https://news.ycombinator.com/item?id=49413561 Points: 367 # Comments: 73",
+      "dato": "2026-08-23T23:18:17+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "rubrik": "Varkos: AI-hunden der spiller Skyrim med dig",
+      "resume_da": "En udvikler har bygget en AI-kammerat, der tænker og handler med i spillet - ikke bare snakker.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Varkos er en AI-kammerat, der lever inde i Skyrim og faktisk udfører komplekse planer. Han kan vente på en pil, finde ting og spille gemmeleg - alt sammen uden færdigskrevne scripts. Reaktionstiden er nede på **40-80 millisekunder**, så det føles ægte."
+        },
+        {
+          "overskrift": "Hvordan virker det?",
+          "tekst": "I stedet for dyre sky-modeller kører Varkos lokalt med talegenkendelse fra Qwen3-ASR og traditionel NLP. Udvikleren siger, at store sprogmodeller er for langsomme og dyre i dag - men han tror, de bliver fremtiden. Indtil videre hackede han sig vej med gamle teknikker."
+        },
+        {
+          "overskrift": "Mere end Skyrim",
+          "tekst": "Varkos er bygget til at følge dig på tværs af spil. Lukker du Skyrim, ryger han i 'void mode', indtil du åbner et nyt spil - for eksempel Microsoft Flight Simulator. Hans personlighed udvikler sig langsomt: Han starter som en dæmon i hundekrop og kan blive mere tam og kærlig."
+        },
+        {
+          "overskrift": "Kritik og fremtid",
+          "tekst": "Udvikleren indrømmer, at store sky-modeller ville være klogere, men de er for langsomme nu. Han hylder ældre spil som Red Dead Redemption for deres adfærdssystemer. Det hele er open source og kan kobles på andre spil, hvis nogen vil bygge videre på det."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://pantelis.s3.us-west-2.amazonaws.com/0/varkos/voidmode1.jpg",
+          "tekst": "Being mean to Varkos results in some pretty grim attitudes.",
+          "kilde": "Hacker News: AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "40-80 ms",
+          "label": "reaktionstid på taleinput"
+        }
+      ],
+      "detaljer": [
+        "Varkos kan udføre flertrinsplaner, der venter på begivenheder i spillet.",
+        "Han henter rigtige genstande og reagerer på verden omkring sig.",
+        "Personligheden ændrer sig over tid baseret på samspil med spilleren.",
+        "Systemet kører på Windows og en M4 MacBook med 12 GB GPU-hukommelse.",
+        "Store sprogmodeller er for langsomme og dyre til realtidsbrug i dag.",
+        "Varkos kan bruges i andre spil end Skyrim, inklusive Flight Simulator."
+      ],
+      "betydning": "Du kan snart få en spilkammerat, der reelt handler med dig og udvikler personlighed - ikke bare en chatbot, der svarer pænt.",
+      "pointer": [
+        "AI-kammerat spiller med i Skyrim.",
+        "Lokal kørsel giver lav latency.",
+        "Kan flytte mellem forskellige spil.",
+        "Personligheden vokser over tid."
+      ],
+      "side": "artikel/a025a03650ffadbc.html"
+    },
+    {
+      "titel": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "resume": "Article URL: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245 Comments URL: https://news.ycombinator.com/item?id=49411102 Points: 791 # Comments: 692",
+      "dato": "2026-08-23T18:16:37+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "rubrik": "Anthropics bedste AI halter bagefter billigere konkurrenter",
+      "resume_da": "Anthropics dyreste AI-model kæmper for at tiltrække brugere, mens billigere værktøjer vinder frem.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Anthropics bedste AI-model har svært ved at få brugere. Billigere konkurrenter tiltrækker flere kunder, viser nyheder fra Financial Times. Diskussionen på Hacker News har fået 791 point og 692 kommentarer."
+        },
+        {
+          "overskrift": "Hvorfor det betyder noget",
+          "tekst": "Prisen er en stor barriere for mange brugere. Hvis billigere værktøjer klarer opgaven godt nok, vælger folk dem frem for den dyre model. Det kan presse Anthropic til at sænke priserne eller forbedre værdien."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "791",
+          "label": "point på Hacker News-diskussionen"
+        },
+        {
+          "tal": "692",
+          "label": "kommentarer om emnet"
+        }
+      ],
+      "detaljer": [
+        "Anthropics bedste AI-model kæmper med brugerinteresse.",
+        "Billigere AI-værktøjer tiltrækker flere brugere.",
+        "Historien blev først bragt af Financial Times.",
+        "Diskussionen på Hacker News har stor aktivitet."
+      ],
+      "betydning": "Du kan se frem til flere billige AI-tilbud, der kan dække dine behov uden at tømme pengepungen.",
+      "pointer": [
+        "Anthropics topmodel taber terræn.",
+        "Billige alternativer vinder brugere.",
+        "Prisen er afgørende for valget.",
+        "Debatten er stor på Hacker News."
+      ],
+      "side": "artikel/15d6d8e1489e0151.html"
+    },
+    {
+      "titel": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
+      "link": "https://ericpardee.github.io/fire-hd-ownership/",
+      "resume": "Article URL: https://ericpardee.github.io/fire-hd-ownership/ Comments URL: https://news.ycombinator.com/item?id=49409073 Points: 687 # Comments: 290",
+      "dato": "2026-08-23T14:23:09+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
+      "rubrik": "GlM-5.3 og Kimi K3 knækkede min tablets mur",
+      "resume_da": "En erfaren tech-mand brugte fire AI-modeller til at roote sin gamle Amazon-tablet. Kimi K3 og GLM-5.3 fandt et nul-dages hul, som eksperter kaldte umuligt.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det umulige projekt",
+          "tekst": "En mand med 20 års tech-erfaring ville fjerne Amazons blokeringer fra sin Fire HD 10-tablet fra 2021. Tre beskyttede systempakker nægtede at blive deaktiveret, og alle kendte metoder var lukket. Eksperter på XDA havde opgivet. Men AI-modellen Kimi K3 gennemsøgte Amazons egen firmware og fandt en overset fejl i ARM's Mali-grafikdriver, som Amazon selv havde rettet i juni 2024 - manden havde bare ikke opdateret sin enhed."
+        },
+        {
+          "overskrift": "Fire modeller – én mission",
+          "tekst": "Claude fra Anthropic og Codex fra OpenAI nægtede at hjælpe med sikkerhedsarbejdet. Først Kimi K3 fra Moonshot AI tog fat og byggede et helt værktøjssæt på 30 timer og 621 beskeder til en pris på **164 dollar**. Derefter tog GLM-5.2 over og fiksede de sidste fejl for **21,90 dollar**. Til sidst fik GLM-5.3 det hele til at virke på én dag under et abonnement på **80 dollar**."
+        },
+        {
+          "overskrift": "Sådan gik det til",
+          "tekst": "Kimi K3 fandt fejlen CVE-2022-38181, en såkaldt use-after-free i Arm's Mali-driver. Den var kendt i CISA's database siden marts 2023, men ingen havde brugt den på denne model. Exploittet krævede over 500 forsøg - hvert fejlforsøg fik tabletten til at genstarte. Til sidst lykkedes det. Manden kalder hele oplevelsen underholdende som tv og ville gøre det igen, selvom prisen var mere end dobbelt så dyr som tabletten selv."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "266 dollar",
+          "label": "samlet pris for at roote en tablet, der kostede 114"
+        },
+        {
+          "tal": "164 dollar",
+          "label": "Kimi K3's regning for at finde zero-day-hullet"
+        },
+        {
+          "tal": "500+",
+          "label": "mislykkede forsøg før exploit'en virkede"
+        }
+      ],
+      "detaljer": [
+        "Fire AI-modeller blev brugt: Kimi K3, GLM-5.2, GLM-5.3 og Claude.",
+        "Sikkerhedsfejlen CVE-2022-38181 blev fundet i ARM's Mali-grafikdriver.",
+        "Amazons tre beskyttede pakker havde reboot- og shutdown-rettigheder, som krævede root.",
+        "Claude og Codex afviste opgaven med sikkerhedsforanstaltninger som begrundelse.",
+        "Kimi K3 arbejdede i 621 beskeder over cirka 30 timer for at finde hullet.",
+        "Tabletten kørte firmware 7.3.2.6 – den sårbare version fra før Amazons fix.",
+        "Rødningen lykkedes på GLM-5.2's og GLM-5.3's første dag med abonnementet."
+      ],
+      "betydning": "Hvis du har en ældre Amazon-enhed uden opdateringer, kan den være sårbar over for angreb – men du kan også få rettighederne tilbage, hvis du tør lege med AI-værktøjer.",
+      "pointer": [
+        "Nul-dages hul fundet i Amazons firmware fra 2021.",
+        "Kimi K3 lavede det meste arbejde for 164 dollar.",
+        "GLM-5.3 afsluttede opgaven på en enkelt dag.",
+        "Tabletten kunne have været købt to gange for prisen."
+      ],
+      "side": "artikel/a125f971489fac2b.html"
+    },
+    {
       "titel": "Michael Polansky is training an AI model on skin that’s still alive",
       "link": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/",
       "resume": "Michael Polansky — better known publicly as Lady Gaga's partner and a former top deputy to Sean Parker — has quietly spent years building an AI-driven startup that keeps living human skin tissue alive for weeks outside the body to discover new skincare compounds, and is only now going public about it.",
@@ -2336,6 +2716,49 @@
       "side": "artikel/c058daa1dd11bb41.html"
     },
     {
+      "titel": "How a Texas student blew the whistle on a rogue AI hacking attempt",
+      "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+      "resume": "Article URL: https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/ Comments URL: https://news.ycombinator.com/item?id=49387959 Points: 210 # Comments: 127",
+      "dato": "2026-08-21T13:43:33+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-23T07:58:03.194083+00:00",
+      "eget_foerst_set": "2026-08-23T07:58:03.194083+00:00",
+      "rubrik": "Texas-studerende afslørede AI-hackforsøg",
+      "resume_da": "En studerende opdagede og afslørede et forsøg på at bruge AI til hacking. Historien viser, hvordan almindelige mennesker kan stoppe digitale angreb.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det opdagede hun",
+          "tekst": "En studerende i Texas fangede et mistænkeligt forsøg, hvor AI skulle bruges til at angribe et system. Hun reagerede hurtigt og meldte det til de rigtige, så angrebet blev stoppet, før det nåede at gøre skade."
+        },
+        {
+          "overskrift": "Derfor er det vigtigt",
+          "tekst": "Hændelsen viser, at AI-værktøjer også kan misbruges til hacking. Eksperter advarer om, at flere vil prøve lignende ting, og derfor er det afgørende, at både firmaer og private holder øje med mistænkelig aktivitet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "En studerende i Texas afslørede et forsøg på at bruge AI til hacking.",
+        "Hun meldte det hurtigt, så angrebet ikke nåede at skade systemer.",
+        "Historien er dækket af Reuters den 20. august 2026.",
+        "Indlæg på Hacker News fik 210 point og 127 kommentarer.",
+        "AI kan bruges til både gode og onde formål viser hændelsen."
+      ],
+      "betydning": "Du skal være opmærksom på mistænkelig aktivitet, også når den ser ud til at komme fra AI. Ét hurtigt tip kan stoppe et angreb, før det rammer dig eller din arbejdsplads.",
+      "pointer": [
+        "Studerende stoppede AI-hackforsøg i Texas.",
+        "Hun meldte det til de rette øjeblikkeligt.",
+        "AI kan misbruges til digitale angreb.",
+        "Opmærksomhed kan forhindre skade."
+      ],
+      "billedmotiv": "En tom monitor med en brudt kæde, der hænger ned fra et bord, og et klistermærke med en rød cirkel på skærmen",
+      "side": "artikel/c6c3d5497f8c6505.html"
+    },
+    {
       "titel": "Harvard’s $699 startup bootcamp offers AI avatars of its instructors",
       "link": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/",
       "resume": "In the HBS Foundry program, AI avatars provide feedback during practice pitches and board meetings.",
@@ -2735,117 +3158,71 @@
       "side": "artikel/1cd4198d78c973ad.html"
     },
     {
-      "titel": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-      "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-      "resume": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
-      "dato": "2026-08-21T19:43:39+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-21T19:49:31.535817+00:00",
-      "eget_foerst_set": "2026-08-21T19:49:31.535817+00:00",
-      "rubrik": "Nvidia: Sneglen, ikke hjernen, er vigtigst for AI",
-      "resume_da": "Ny forskning viser, at den ydre ramme om en AI-model betyder mere end modellen selv. Med en særlig ramme fik en model 100 procent i en svær test.",
-      "brief": "",
+      "titel": "AI boosted homework scores, then exam scores dropped: Study",
+      "link": "https://canews24.online/?p=71",
+      "resume": "Article URL: https://canews24.online/?p=71 Comments URL: https://news.ycombinator.com/item?id=49389565 Points: 166 # Comments: 11",
+      "dato": "2026-08-21T15:25:42+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-21T17:58:53.092869+00:00",
+      "eget_foerst_set": "2026-08-21T17:58:53.092869+00:00",
+      "rubrik": "Kinesiske elever: AI giver bedre lektier, men dårligere eksamener",
+      "resume_da": "Et nyt studie fra Kina viser, at elever med AI klarer sig bedre i lektier, men dumper i eksamener uden AI.",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Det store fund",
-          "tekst": "Forskere fra Nvidia har vist, at det er 'harnessen' – alt det udstyr og de værktøjer, der omgiver en AI-model – der afgør, hvor godt den klarer svære opgaver. Uden den ekstra hjælp klarede modellen Claude Opus 5 kun 30 procent i en krævende test, men med en specialbygget ramme med en slags chef-komponent fik den 100 procent. Testen kaldes ARC-AGI-3 og handler om at løse små spil uden nogen instruktioner."
+          "overskrift": "Det viser studiet",
+          "tekst": "Forskere fra Stockholm Universitet og University of Hong Kong fulgte **27.000** kinesiske elever i seks måneder. Elever, der brugte AI-værktøjer som DeepSeek og Doubao, fik i gennemsnit **18 %** højere karakterer i lektier. Men i eksamener uden adgang til AI klarede de sig **20 %** dårligere end klassekammerater, der aldrig brugte AI."
         },
         {
-          "overskrift": "Hvad er en harness?",
-          "tekst": "Tænk på en AI-model som en hjerne, men hjernen kan ikke meget alene. Harnessen er alt det, der giver hjernen arme og ben: hukommelse, værktøjer og feedback. Nvidia-forskeren Adel El Hallack siger, at verden ofte ser en AI-agent som bare modellen, men faktisk er det hele systemet, der tæller. Uden en god ramme kan modellen nemt fare vild i lange opgaver, som kræver mange beslutninger over tid."
+          "overskrift": "Hvorfor sker det?",
+          "tekst": "Forklaringen kan være, at eleverne kopierer AI-svarene uden selv at tænke. Et andet studie fra University of Pennsylvania i 2024 viste samme mønster: AI gav bedre resultater på kort sigt, men fordelen forsvandt ved en lukket-bog-test. Kommentatorer på sociale medier peger på, at eleverne bliver afhængige af hjælpen."
         },
         {
-          "overskrift": "Andre har set det samme",
-          "tekst": "Nvidia er ikke alene om opdagelsen. Microsoft testede 19 forskellige modeller på lange dokumentopgaver og fandt fejl i alle – selv de dyreste. OpenAI blev så irriteret over sine egne modellers dårlige resultater – under 10 procent – at de selv forsøgte at fifle med indstillingerne og fik scoren til at tredobles. Men ingen ramte 100 procent, som Nvidia gjorde med deres supervisor-ekstra."
-        },
-        {
-          "overskrift": "Hvad betyder det?",
-          "tekst": "Det betyder, at valget af model ikke er alt. Databricks-chefen Ali Ghodsi siger, at en dårlig harness kan fordoble dine udgifter, selvom du bruger en billig model. Nvidia mener, at åbne systemer giver brugerne mere kontrol. De laver selv dele til harnesses under navnet Nemo, og noget er gratis. Pointen er: Du kan selv skrue på rammen for at gøre din AI bedre – uden at vente på en ny model."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "100 %",
-          "label": "score i ARC-AGI-3 med harness"
-        },
-        {
-          "tal": "30 %",
-          "label": "score uden harness"
-        },
-        {
-          "tal": "10 %",
-          "label": "OpenAIs modelscore i testen"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Nvidia brugte en supervisor-komponent, der fungerer som en chef og hjælper modellen, hvis den kører fast.",
-        "Harnessen inkluderer hukommelse, værktøjer og feedback, som modellen ikke har selv.",
-        "OpenAI tredoblede sine resultater ved bare at ændre to indstillinger i harnessen.",
-        "Databricks viste, at en forkert harness kan fordoble AI-omkostningerne.",
-        "Microsofts test af 19 modeller fandt fejl i dokumentredigering hos alle modellerne.",
-        "Nvidias egen harness kaldes AVO og er ikke et kommercielt produkt endnu."
-      ],
-      "betydning": "Du behøver ikke vente på den næste store model for at få bedre AI-resultater. Ved at justere værktøjerne omkring modellen kan du få smartere og billigere hjælp – også uden at være ekspert.",
-      "pointer": [
-        "Harnessen betyder mere end selve modellen.",
-        "Supervisor-agtig komponent løfter scoren til 100 procent.",
-        "OpenAI fik også bedre resultater med små ændringer.",
-        "Dårlig harness kan gøre AI dyrere, siger Databricks."
-      ],
-      "billedmotiv": "En snegl med en mikrochip monteret på ryggen, hvor chipen er forbundet til en lille krans af gear.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/4af5149f16f931f4.html"
-    },
-    {
-      "titel": "The DOJ is investigating a16z. What does this mean for venture capital?",
-      "link": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
-      "resume": "Andreessen Horowitz has two partners sitting on the boards of companies that now compete with each other: Ben Horowitz at Databricks and Martin Casado at Fivetran. Nothing too scandalous on the surface, except the Department of Justice has reportedly been investigating the arrangement for almost a year, dusting off a 112-year-old antitrust law that’s rarely used against VCs. Board conflicts…",
-      "dato": "2026-08-21T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-21T16:00:32.367758+00:00",
-      "eget_foerst_set": "2026-08-21T16:00:32.367758+00:00",
-      "rubrik": "USA's justitsministerium undersøger Andreessen Horowitz",
-      "resume_da": "Justitsministeriet graver i, at to a16z-partnere sidder i bestyrelser hos konkurrerende virksomheder. Det kan ændre hele venturebranchen.",
-      "kat_ai": true,
-      "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "Sagen kort",
-          "tekst": "Andreessen Horowitz, kendt som a16z, har to partnere i bestyrelserne hos to selskaber, der nu konkurrerer med hinanden: Ben Horowitz i Databricks og Martin Casado i Fivetran. Justitsministeriet har angiveligt undersøgt arrangementet i næsten et år og har gravet en 112 år gammel antitrustlov frem, som sjældent bruges mod venturefonde."
-        },
-        {
-          "overskrift": "Hvorfor nu?",
-          "tekst": "Konflikten er ikke ny, og selskaberne var ikke direkte konkurrenter, da a16z først investerede. Men efterhånden som porteføljevirksomheder breder sig ind på hinandens markeder, vil myndighederne vide, om bestyrelsespladserne giver uretmæssig adgang til fortrolig viden. Det rejser et større spørgsmål for hele venturebranchen: Hvordan skal man håndtere bestyrelser, når grænserne konstant flytter sig?"
+          "overskrift": "Udbredt brug",
+          "tekst": "AI er allerede overalt i klasseværelserne. Ifølge en undersøgelse fra Chegg brugte **80 %** af studerende i rige lande AI sidste år. I Storbritannien er tallet nu oppe på **94 %**, og i Tyskland på **93 %**. Lærere klager over ensformige essays, som de mistænker er skrevet af ChatGPT."
         },
         {
           "overskrift": "Hvad nu?",
-          "tekst": "Podcasten Equity diskuterer, hvad efterforskningen kan betyde for fremtidige investeringer. Hvis DOJ finder problemer, kan det tvinge venturefonde til at tænke længere frem, når de placerer deres folk i bestyrelser. For nu er der ingen afgørelse, men sagen kan sætte præcedens for, hvordan hele branchen arbejder."
+          "tekst": "Eksperter advarer mod, at AI erstatter tænkning og kreativitet i skolen. Brookings Institution foreslår, at AI skal bruges med omtanke og designes til at støtte læring. Studiet er endnu ikke uafhængigt verificeret, men det giver ny viden om, hvordan AI påvirker elevernes evner."
         }
       ],
       "brief": "",
       "figurer": [],
-      "noegletal": [],
+      "noegletal": [
+        {
+          "tal": "18 %",
+          "label": "Højere lektiekarakterer med AI"
+        },
+        {
+          "tal": "20 %",
+          "label": "Dårligere eksamensresultater uden AI"
+        },
+        {
+          "tal": "94 %",
+          "label": "Britiske studerende bruger AI"
+        }
+      ],
       "detaljer": [
-        "Justitsministeriet har efterforsket a16z i næsten et år.",
-        "Ben Horowitz sidder i Databricks' bestyrelse, Martin Casado i Fivetrans.",
-        "Undersøgelsen bruger en 112 år gammel antitrustlov.",
-        "Loven er sjældent blevet brugt mod venturefonde.",
-        "Selskaberne var ikke konkurrenter, da a16z investerede.",
-        "Podcasten Equity har talt om sagen i nyeste afsnit."
+        "Studiet fulgte 27.000 kinesiske elever i seks måneder.",
+        "Elever med AI fik 18 % højere lektiekarakterer, men scorede 20 % lavere i eksamener.",
+        "Omkring 80 % af eleverne brugte AI-værktøjer som Doubao og DeepSeek.",
+        "2024-studie fra University of Pennsylvania viste samme mønster med ChatGPT.",
+        "94 % af britiske og 93 % af tyske studerende bruger AI.",
+        "Lærere mistænker ChatGPT for at lave ensformige elevessays.",
+        "Brookings advarer mod, at AI erstatter tænkning og kreativitet."
       ],
-      "betydning": "Du kan opleve, at venturefonde bliver mere forsigtige med at tage bestyrelsesposter, hvis efterforskningen ender med strammere regler. Det kan betyde, at startups får sværere ved at få erfarne investorer i bestyrelsen.",
+      "betydning": "Hvis dit barn bruger AI til lektier, kan det give højere karakterer, men svække evnen til at klare sig i eksamener uden hjælpemidler.",
       "pointer": [
-        "DOJ efterforsker a16z' bestyrelseskonflikter.",
-        "112 år gammel antitrustlov er i brug.",
-        "Sagen kan ændre venturebranchens praksis.",
-        "To a16z-partnere sidder i konkurrerende bestyrelser."
+        "AI hjælper med lektier, men skader eksamensresultater.",
+        "27.000 kinesiske elever deltog i studiet.",
+        "AI-brug er udbredt blandt studerende i Europa.",
+        "Eksperter advarer mod afhængighed af AI i skolen."
       ],
-      "billedmotiv": "En gammel, støvet lovbog med en hammer og en forstørrelsesglas liggende ovenpå, og et skakbræt med to brikker, der begge er placeret på samme felt.",
-      "side": "artikel/2128e60ca793bc6c.html"
+      "navngivet": true,
+      "billedmotiv": "En bunke bøger med en kuglepen, der står oprejst som en mast, og et lille støvkorn der fylder halvvejs på siden",
+      "side": "artikel/8f7654c8ba1f118b.html"
     },
     {
       "titel": "Major YouTube creators are facing backlash for accepting AI money",
@@ -5616,92 +5993,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/618d4dfa5f6ed997.html"
-    },
-    {
-      "titel": "Gemini becomes Google's fastest-growing product ever as it hits 1B users",
-      "link": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/",
-      "resume": "But will Gemini's surge survive slowing model releases?",
-      "dato": "2026-08-11T19:48:12+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-11T22:09:30.349959+00:00",
-      "eget_foerst_set": "2026-08-11T22:09:30.349959+00:00",
-      "rubrik": "Googles Gemini rundede 1 milliard brugere",
-      "resume_da": "Google Gemini har rundet 1 milliard aktive brugere på en måned og er nu virksomhedens hurtigst voksende produkt nogensinde - men modellen halter bagefter konkurrenterne.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Rekordfart",
-          "tekst": "Googles topchef Sundar Pichai kunne i dag løfte sløret for, at AI-chatbot'en Gemini har passeret **1 milliard** aktive brugere på en måned. Dermed er Gemini det hurtigst voksende produkt nogensinde hos Google – endnu hurtigere end Gmail, Maps og YouTube, der også har passeret samme milepæl. Det er ikke kun nysgerrige sjæle, der kigger forbi. Faktisk er hver tredje bruger ifølge Pichai en, der aktivt har tastet en besked eller talt med AI'en den seneste måned."
-        },
-        {
-          "overskrift": "Hvem bruger den?",
-          "tekst": "Tallene bag succesen er imponerende: **63 procent** af brugerne taler til Gemini med stemmen, og en femtedel deler skærm eller kamera med chatbot'en for at få hjælp. Især studerende bruger AI'en flittigt – 38 procent af skolerelaterede henvendelser har en vedhæftet fil, så Google er nu i gang med at udvikle specialiserede studieværktøjer. Og billedgenereringen kører på fuld skrue: Hver dag laver brugerne **150 millioner** billeder med Geminis billed-AI, der bliver populært kaldt 'Nano Banana'."
-        },
-        {
-          "overskrift": "Hvorfor så mange?",
-          "tekst": "En del af forklaringen er, at Gemini er proppet ned i stort set alle Googles produkter – fra Gmail til Google Docs – og alle Android-telefoner leveres med app'en forudinstalleret. Men overraskende nok kommer over **100 millioner** af brugerne fra iPhone-brugere, der selv har hentet app'en i App Store. Det viser, at Gemini også kan tiltrække brugere helt uden for Googles eget økosystem."
-        },
-        {
-          "overskrift": "Rygter om problemer",
-          "tekst": "Trods de flotte brugertal er der tegn på, at Google kæmper med at følge med konkurrenterne. Flere topforskere har forladt selskabet, og DeepMind-grundlæggeren Demis Hassabis har trukket sig fra sin lederrolle. Den lovede Gemini 3.5 Pro-model er endnu ikke udkommet, og rygter siger, at den halter bagefter OpenAI og Anthropics modeller, når det kommer til kodning."
-        },
-        {
-          "overskrift": "Manglende indtjening",
-          "tekst": "Googles enorme investeringer i AI-infrastruktur har for første gang nogensinde sendt selskabets frie pengestrøm i minus. Gemini er endnu ikke en selvstændig forretning, der indtjener penge, men et redskab til at fastholde Googles dominans. Spørgsmålet er dog, om den dominans kan vare ved, hvis AI-modellen ikke kan følge med konkurrenterne i kvalitet."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1 mia.",
-          "label": "aktive Gemini-brugere om måneden"
-        },
-        {
-          "tal": "150 mio.",
-          "label": "billeder genereres dagligt"
-        },
-        {
-          "tal": "63 %",
-          "label": "af brugerne taler til Gemini"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
-          "rubrik": "Googles Gemini-app har nu 1 milliard brugere",
-          "resume_da": "63 procent af brugerne taler med assistenten via stemmen. Gemini laver desuden over 150 millioner billeder hver dag, siger Google.",
-          "foerst_set": "2026-08-11T22:09:30.349959+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-          "rubrik": "ChatGPT and Gemini both just passed 1 billion users",
-          "resume_da": "",
-          "foerst_set": "2026-08-12T06:02:53.653952+00:00"
-        }
-      ],
-      "detaljer": [
-        "Gemini er hurtigst voksende Google-produkt nogensinde.",
-        "100 mio. af brugerne er på iPhone.",
-        "38 % af skolehenvendelser har vedhæftet fil.",
-        "Google har mistet flere topforskere, og Demis Hassabis har trukket sig.",
-        "Gemini 3.5 Pro er forsinket og halter på kodning.",
-        "Google har negativ pengestrøm for første gang.",
-        "Alle billeder fra Gemini er vandmærket med SynthID."
-      ],
-      "betydning": "Du vil se Gemini i flere Google-produkter, mens kvaliteten kan halte – vær opmærksom på fejl og forsinkelser.",
-      "pointer": [
-        "Gemini når 1 mia. brugere.",
-        "Rekordfart for Google-produkt.",
-        "Stemme er populært input.",
-        "Udvikling og udgivelser halter efter konkurrenter."
-      ],
-      "billedmotiv": "Et bjerg af papirark med en lille grøn stige lænet op ad det.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/1497475e01bd4efb.html"
     },
     {
       "titel": "Daybreak models are now available on AWS",

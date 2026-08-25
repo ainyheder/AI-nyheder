@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T11:56:46.597415+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-25T13:29:53.505734+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 20,
-   "som_ekstra": 8,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Meta lancerer AI-app til Mac, der kan se din skærm",
@@ -79,13 +79,22 @@ window.KILDER_STATUS = {
      "under": "Twitch-brugere kan nu sige nej til Amazons AI-træning"
     },
     {
-     "rubrik": "Googles Gemini-app har nu 1 milliard brugere",
-     "dato": "",
-     "foerst_set": "2026-08-11T22:09:30",
-     "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles Gemini rundede 1 milliard brugere"
+     "rubrik": "Keenable vil bygge søgemaskine til AI'er",
+     "dato": "2026-08-25T13:00:00",
+     "foerst_set": "2026-08-25T13:29:53",
+     "link": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
+     "side": "artikel/944b086394f24a20.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI vil give alle adgang til AI-agenter",
+     "dato": "2026-08-25T12:00:00",
+     "foerst_set": "2026-08-25T13:29:53",
+     "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+     "side": "artikel/93a87e369cbc9183.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "AI-fonden Situational Awareness granskes af SEC",
@@ -176,33 +185,15 @@ window.KILDER_STATUS = {
      "side": "artikel/fc3e349b3942bd1b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Flock Safety-chef undskylder efter skandale med politi",
-     "dato": "2026-08-23T15:30:00",
-     "foerst_set": "2026-08-23T16:54:19",
-     "link": "https://techcrunch.com/2026/08/23/flock-ceo-calls-for-compromise-as-surveillance-company-faces-growing-backlash/",
-     "side": "artikel/d26899ffdb40f754.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic dømt til at betale 1,5 mia. dollars",
-     "dato": "2026-08-23T15:00:00",
-     "foerst_set": "2026-08-23T15:49:52",
-     "link": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
-     "side": "artikel/c058daa1dd11bb41.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     4
+     "The Verge AI",
+     3
     ],
     [
-     "The Verge AI",
+     "Ars Technica AI",
      3
     ],
     [
@@ -222,7 +213,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 10,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "ChatGPT får særlig tilstand til teenagere",
@@ -232,15 +223,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
-    },
-    {
-     "rubrik": "ChatGPT and Gemini both just passed 1 billion users",
-     "dato": "",
-     "foerst_set": "2026-08-12T06:02:53",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles Gemini rundede 1 milliard brugere"
     },
     {
      "rubrik": "OpenAI under lup efter hacker-robot slap løs",
@@ -341,10 +323,6 @@ window.KILDER_STATUS = {
     [
      "OpenAI Blog",
      2
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
@@ -361,6 +339,15 @@ window.KILDER_STATUS = {
    "i_listen": 20,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Apple lancerer nye Macs med AI i fokus",
+     "dato": "2026-08-25T13:00:11",
+     "foerst_set": "2026-08-25T13:29:53",
+     "link": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+     "side": "artikel/a259f2eef687dfd2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Stanford: AI rammer unges første job hårdest",
      "dato": "2026-08-24T21:45:53",
@@ -459,28 +446,15 @@ window.KILDER_STATUS = {
      "side": "artikel/30442beeaf4c72d6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instagram nye logo ligner AI-slop",
-     "dato": "2026-08-13T17:32:10",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
-     "side": "artikel/5f281a8601314c93.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     3
     ],
     [
      "Google DeepMind",
-     1
-    ],
-    [
-     "The Verge AI",
      1
     ]
    ]
@@ -957,12 +931,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Eksperter advarer: AI gør kodere udygtige",
+     "dato": "2026-08-24T15:52:33",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Varkos: AI-hunden der spiller Skyrim med dig",
+     "dato": "2026-08-23T23:18:17",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://pantel.is/projects/ai-gaming-companion/",
+     "side": "artikel/a025a03650ffadbc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics bedste AI halter bagefter billigere konkurrenter",
+     "dato": "2026-08-23T18:16:37",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+     "side": "artikel/15d6d8e1489e0151.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GlM-5.3 og Kimi K3 knækkede min tablets mur",
+     "dato": "2026-08-23T14:23:09",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://ericpardee.github.io/fire-hd-ownership/",
+     "side": "artikel/a125f971489fac2b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Texas-studerende afslørede AI-hackforsøg",
+     "dato": "2026-08-21T13:43:33",
+     "foerst_set": "2026-08-23T07:58:03",
+     "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+     "side": "artikel/c6c3d5497f8c6505.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kinesiske elever: AI giver bedre lektier, men dårligere eksamener",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
