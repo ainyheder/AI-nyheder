@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T07:26:46.895240+00:00",
- "artikler_i_alt": 115,
+ "opdateret": "2026-08-25T08:10:15.532364+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -849,7 +849,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Abaks protokol skal gøre AI-beslutninger synlige",
+     "rubrik": "Ali Toygar Abak: protokol gør AI-beslutninger synlige",
      "dato": "2026-08-25T00:00:00",
      "foerst_set": "2026-08-25T05:07:25",
      "link": "https://arxiv.org/abs/2608.21363",
@@ -939,7 +939,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere får robotter til at lære af søgninger",
+     "rubrik": "Model Context Protocol får robotter til at lære af søgninger",
      "dato": "2026-08-25T00:00:00",
      "foerst_set": "2026-08-25T05:07:25",
      "link": "https://arxiv.org/abs/2608.21417",
@@ -957,12 +957,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "JetBrains-studie: AI gør novice-udviklere dårligere",
+     "dato": "2026-08-24T15:52:33",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "side": "artikel/e57c577525febf0a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Varkos: AI-hunden der spiller Skyrim med dig",
+     "dato": "2026-08-23T23:18:17",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://pantel.is/projects/ai-gaming-companion/",
+     "side": "artikel/a025a03650ffadbc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics topmodel taber til billigere AI-værktøjer",
+     "dato": "2026-08-23T18:16:37",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+     "side": "artikel/15d6d8e1489e0151.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kimi K3 hjalp med at hacke egen tablet",
+     "dato": "2026-08-23T14:23:09",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://ericpardee.github.io/fire-hd-ownership/",
+     "side": "artikel/a125f971489fac2b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Texas-student afslørede AI-hackforsøg",
+     "dato": "2026-08-21T13:43:33",
+     "foerst_set": "2026-08-23T07:58:03",
+     "link": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/",
+     "side": "artikel/c6c3d5497f8c6505.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI gav bedre lektier, men dårligere eksamener",
+     "dato": "2026-08-21T15:25:42",
+     "foerst_set": "2026-08-21T17:58:53",
+     "link": "https://canews24.online/?p=71",
+     "side": "artikel/8f7654c8ba1f118b.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
