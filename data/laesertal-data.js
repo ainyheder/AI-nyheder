@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-25T05:15:49.847212+00:00",
+ "opdateret": "2026-08-25T06:01:21.078162+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      1,
      0,
      26,
-     24
+     25
     ]
    },
    {

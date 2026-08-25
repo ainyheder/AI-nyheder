@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-08-25T05:07:25.865694+00:00",
+  "opdateret": "2026-08-25T06:00:21.342090+00:00",
   "antal": 115,
   "artikler": [
     {
@@ -11,10 +11,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Srihari Unnikrishnan: KVBoost gør AI hurtigere",
       "resume_da": "Forsker Srihari Unnikrishnan har udviklet KVBoost, der lader AI-chatbots genbruge tidligere beregninger og kun genberegne ved afvigelser. Det gør AI hurtigere og billigere.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -29,9 +28,8 @@
           "tekst": "KVBoost er stadig på forskningsstadiet, men ideen kan blive vigtig for virksomheder, der kører AI i stor skala. Færre genberegninger betyder lavere strømforbrug og hurtigere svar til brugeren. Det kan også gøre det muligt at køre avancerede AI-modeller på mindre kraftfuld hardware – noget, der i dag er en stor barriere for mange små virksomheder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "KVBoost gemmer beregninger i key-value caches og genbruger dem i bidder.",
         "Systemet sammenligner nye input med gemte bidder og kun genberegner ved store afvigelser.",
@@ -46,7 +44,8 @@
         "Gør chatbots hurtigere og billigere.",
         "Forskeren bag er Srihari Unnikrishnan."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/975b40e027e86e38.html"
     },
     {
@@ -58,8 +57,48 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
+      "rubrik": "Abaks protokol skal gøre AI-beslutninger synlige",
+      "resume_da": "Ny protokol fra Ali Toygar Abak giver dokumentation for hver AI-beslutning, så systemer kan overvåges løbende.",
       "kat_ai": true,
-      "prio": 2
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Det nye",
+          "tekst": "Forsker Ali Toygar Abak har udviklet AIREP, en protokol der kræver, at AI-systemer leverer bevis for hver enkelt beslutning, de træffer. I stedet for kun at se på slutresultatet kan man nu følge med i, hvordan AI'en kom frem til sit svar – og dermed opdage fejl eller skævheder med det samme."
+        },
+        {
+          "overskrift": "Hvorfor det er vigtigt",
+          "tekst": "AI bruges i stigende grad til alt fra jobansøgninger til sundhedsråd, men ofte er det umuligt at se, hvorfor systemet traf et bestemt valg. AIREP giver virksomheder og myndigheder et værktøj til at holde AI ansvarlig i praksis – ikke bare på papiret, men i øjeblikket hvor beslutningen falder."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Protokollen fungerer som en slags kvittering for hver AI-beslutning: Den gemmer de relevante data og begrundelser, så de kan tjekkes bagefter. Det betyder, at man kan gå tilbage og se præcis, hvad der skete, hvis nogen stiller spørgsmålstegn ved en beslutning – noget der i dag ofte er en stor udfordring."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Forskningsartiklen er stadig på preprint-stadiet, men ideen kan få stor betydning for, hvordan AI reguleres i fremtiden. Hvis protokollen bliver taget i brug, kan den blive standard for, hvordan AI-systemer dokumenterer deres valg – og skabe større tillid blandt os, der bliver påvirket af dem."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AIREP er en protokol udviklet af Ali Toygar Abak fra arXiv cs.AI.",
+        "Protokollen giver bevis for hver enkelt AI-beslutning.",
+        "Den gør det muligt at overvåge AI-systemer i realtid.",
+        "Artiklen er en forskningspræprint, ikke en officiel standard.",
+        "Værktøjet kan bruges til at opdage fejl og skævheder i AI.",
+        "AIREP adresserer manglen på gennemsigtighed i AI-beslutninger."
+      ],
+      "betydning": "Du kan få lettere ved at stole på AI-systemer, når de skal dokumentere deres valg – og du kan lettere klage, hvis en beslutning går ud over dig.",
+      "pointer": [
+        "AIREP kræver bevis for hver AI-beslutning.",
+        "Protokollen giver løbende overvågning af AI-systemer.",
+        "Den kan opdage fejl og skævheder med det samme.",
+        "Skrevet af forsker Ali Toygar Abak."
+      ],
+      "navngivet": true,
+      "side": "artikel/b621fab07e5031a5.html"
     },
     {
       "titel": "Reviewing Model Collapse and Countermeasures",
@@ -70,10 +109,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "AI-modeller kan blive dummere af egne data",
       "resume_da": "Ny forskning viser, at AI-modeller kan forringes, når de trænes på egne output. Forskerne foreslår måder at undgå det på.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemets kerne",
@@ -88,9 +126,8 @@
           "tekst": "For almindelige brugere betyder det, at AI-chatbots kan blive mindre pålidelige over tid, hvis ikke firmaerne handler. Det er vigtigt, at udviklere løbende opdaterer med menneskelig feedback, så kvaliteten forbliver høj."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Modelfald sker, når AI trænes på egne output.",
         "Forskere foreslår at bruge friske, menneskeskabte data.",
@@ -105,8 +142,10 @@
         "Der findes modforanstaltninger.",
         "Brugere bør være opmærksomme."
       ],
-      "navngivet": true,
       "billedmotiv": "En støvet, slidt blyant, der skriver på et stykke papir, som langsomt bliver til flere identiske blyanter.",
+      "kat_ai": true,
+      "prio": 3,
+      "navngivet": true,
       "side": "artikel/45b82df9d36a9459.html"
     },
     {
@@ -118,10 +157,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "Christo Mathew lærer AI at forstå skjulte spilleregler",
       "resume_da": "Forskere har udviklet en AI, der kan lære uskrevne regler i spil og overføre dem til nye situationer. Det kan revolutionere, hvordan robotter og assistenter tilpasser sig menneskelige vaner.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -136,9 +174,8 @@
           "tekst": "Forskerne håber, at metoden kan bruges i virkeligheden – for eksempel til robotter, der skal navigere i hjem, eller software, der skal forstå brugeres uudtalte ønsker. I stedet for at programmere alle regler manuelt, kan vi lade AI'en lære dem selv. Det gør systemerne mere fleksible og nemmere at tilpasse."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI'en lærer skjulte regler gennem trial-and-error i spil.",
         "Den kan overføre læring til nye spil med andre regler.",
@@ -153,6 +190,8 @@
         "Christo Mathew står bag opdagelsen.",
         "Kan bruges i robotter og assistenter."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/4f649a9c1e666fa8.html"
     },
     {
@@ -164,10 +203,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "LitReview Arena: AI-agenter dyster om forskning",
       "resume_da": "Forskere har bygget LitReview Arena, hvor AI-agenter dyster om at lave de bedste litteraturgennemgange. Dommerne er andre AI'er og forskere.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye værktøj",
@@ -182,9 +220,8 @@
           "tekst": "Litteraturgennemgange er fundamentet i al forskning – fra medicin til klima. Bliver de bedre og hurtigere, kan forskere finde vigtig viden meget hurtigere. For almindelige mennesker betyder det i sidste ende hurtigere udvikling af nye behandlinger og løsninger på samfundets problemer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Platformen evaluerer AI-agenter gennem direkte sammenligninger i 'kampe'.",
         "Bedømmelser kommer fra både menneskelige forskere og andre AI-modeller.",
@@ -199,8 +236,9 @@
         "Målet er bedre og hurtigere forskningsgennemgange.",
         "Kan gøre AI-baseret forskning mere troværdig."
       ],
-      "navngivet": true,
       "billedmotiv": "To identiske robotarme, der armbryder om en stak bøger, med et bæger ris på toppen.",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/0b0f7bda54df48b5.html"
     },
     {
@@ -212,10 +250,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "Yong Eun Cho: SchemaRouter svarer hurtigere",
       "resume_da": "Forsker Yong Eun Cho har udviklet SchemaRouter, der hjælper AI-chatbots med at finde svarene langt hurtigere – og bruger færre ressourcer. Det kan gøre hverdagens digitale assistenter smartere.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet med AI'er",
@@ -230,9 +267,8 @@
           "tekst": "Testene viser, at systemet **er hurtigere** end tidligere metoder og samtidig bruger mindre computerkraft. I en sammenligning klarede det sig markant bedre end andre tilgange, når det gjaldt både hastighed og korrekthed. Det betyder, at AI-assistenter kan blive mere effektive i fremtiden."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Systemet kaldes SchemaRouter og er designet til at forbedre AI-chatbots.",
         "Det bruger 'field-aware' routing, der forstår spørgsmålets struktur.",
@@ -247,8 +283,9 @@
         "Kan forbedre alle fremtidige AI-chatbots.",
         "Forskningen er ny og kan ændre AI-ydelse."
       ],
-      "navngivet": true,
       "billedmotiv": "Et postkort med et lyn på, der stikker ud af en konvolut med en ruteviser-pil.",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/36960dec84b1e62a.html"
     },
     {
@@ -260,10 +297,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 3,
       "rubrik": "RIACT: AI-system opdager studerende før udbrændthed",
       "resume_da": "Forskere har bygget RIACT, et AI-system der sporer studievaner og advarer mod stress og udbrændthed, før det går galt.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye system",
@@ -282,9 +318,8 @@
           "tekst": "Systemet er stadig på forskningsstadiet, men potentialet er stort. Hvis det virker efter hensigten, kan universiteter få et værktøj, der fanger problemer tidligere end i dag. Næste skridt er at teste det i praksis med rigtige studerende for at se, om det lever op til løfterne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "RIACT sporer studievaner for at opdage tidlige tegn på udbrændthed.",
         "Systemet bruger data om læsetid og arbejdsmønstre.",
@@ -299,7 +334,8 @@
         "Forskere håber at forebygge udbrændthed blandt studerende.",
         "Test med studerende er næste skridt."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/3852a34f3f5214ea.html"
     },
     {
@@ -311,10 +347,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 5,
       "rubrik": "Parupudi: AI-ranglister afslører konfigurations-skjulte fejl",
       "resume_da": "Forsker V.S. Raghu Parupudi viser, at AI-benchmarks er skrøbelige over for opsætning, hvilket kan snyde ranglister.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -329,9 +364,8 @@
           "tekst": "Undersøgelsen er en advarsel til både udviklere og brugere om ikke at stole blindt på benchmark-tal. Parupudi opfordrer til, at man undersøger hver enkelt testopgave grundigt, før man drager konklusioner. For almindelige mennesker betyder det, at AI-værktøjer, der ser ud til at være bedst på papiret, måske ikke er det i praksis."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "V.S. Raghu Parupudi står bag den nye forskning om AI-testpålidelighed.",
         "Ranglister over AI-modeller kan ændres dramatisk ved små opsætningsændringer.",
@@ -347,8 +381,10 @@
         "Små ændringer kan ændre resultater",
         "Stol ikke blindt på benchmarks"
       ],
-      "navngivet": true,
       "billedmotiv": "En kuvert med et skrøbeligt segl, hvor der drysser sand ud på et skrätstillet podium.",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
       "side": "artikel/5d0aa87479c944b2.html"
     },
     {
@@ -360,10 +396,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 4,
       "rubrik": "IBM's nye chip giver AI på LinuxONE et boost",
       "resume_da": "IBM præsenterer en ny arkitektur, der bruger Spyre-chips til at gøre AI hurtigere og mere sikker på LinuxONE-servere til virksomheder.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye system",
@@ -378,9 +413,8 @@
           "tekst": "For almindelige brugere betyder det, at de tjenester, de bruger – fra banker til sundhedsapps – kan blive smartere uden at gå på kompromis med privatlivet. Teknologien er stadig ny, men den viser vejen frem for, hvordan store virksomheder kan få glæde af AI uden at risikere datasikkerheden. Det er et skridt mod mere ansvarlig brug af AI i erhvervslivet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "IBM's Spyre-accelerator er bygget specielt til AI-arbejdsopgaver på LinuxONE-servere.",
         "RAG-teknologien lader AI-modeller hente information fra virksomhedens egne databaser.",
@@ -397,6 +431,8 @@
         "Virksomheder kan bruge AI sikkert og skalerbart."
       ],
       "billedmotiv": "Et skjold med et kreditkort i midten, monteret på en kæmpe mikrochip.",
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/3933aab49062da04.html"
     },
     {
@@ -408,10 +444,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
-      "kat_ai": true,
-      "prio": 2,
       "rubrik": "AI skal finde hadefulde beskeder på romansk urdu",
       "resume_da": "Forskere har testet, hvordan AI bedst genkender hadtale på romansk urdu – et sprog, som mange taler, men som AI ofte overser.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -426,9 +461,8 @@
           "tekst": "Forskningen er begrænset til ét sprog og én type opgave, så det er uvist, om metoderne virker lige så godt på andre sprog med samme udfordringer. Desuden kræver det stadig en vis teknisk kunnen at implementere løsningerne i praksis. Men det er et skridt mod at gøre online-platforme mere trygge for sproglige minoriteter."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Studiet fokuserer på romansk urdu, som skrives med latinske bogstaver.",
         "To metoder sammenlignes: parameter-effektiv finjustering og prompt-engineering.",
@@ -444,6 +478,8 @@
         "Billigere træning gør det mere tilgængeligt.",
         "Minoritetssprog får bedre online-beskyttelse."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/39edd9c1f62fa595.html"
     },
@@ -458,8 +494,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Google-forskere finder ny vej til at finde netværksfejl",
       "resume_da": "Forskere har udviklet en ny metode kaldet Abstention Protocol, som kan finde fejl i komplekse computernetværk hurtigere.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -474,9 +509,8 @@
           "tekst": "Forskerne bag arbejder hos Google, men metoden er blevet præsenteret åbent, så andre også kan bruge den og bygge videre på den. Det er endnu uvist, hvornår den bliver en fast del af de netværk, der driver internettet, men den er et skridt mod hurtigere og mere pålidelige systemer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden hedder Abstention Protocol og er udviklet af forskere hos Google.",
         "Den er lavet til at finde årsagen til fejl i Clos-fabrikker, som er netværksstrukturen i mange datacentre.",
@@ -491,6 +525,8 @@
         "Kan give kortere nedetid.",
         "Præsenteret på it-konference i Seattle."
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/28439a98b72aac72.html"
     },
     {
@@ -504,8 +540,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Forskere får robotter til at lære af søgninger",
       "resume_da": "Ny metode lader AI-genererede robotprogrammer rette sig selv via simulation og internetsøgninger. Det gør robotter smartere og mere pålidelige i praksis.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Metoden",
@@ -520,9 +555,8 @@
           "tekst": "Metoden er et skridt mod mere selvstændige robotter, der kan løse opgaver, de ikke er trænet til. Næste skridt er at afprøve i fysiske robotter og udvide til mere komplekse opgaver. Forskerne håber, at teknikken kan gøre robotter til standardsynet i både virksomheder og private hjem."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI henter viden fra internettet via Model Context Protocol for at forstå opgaven.",
         "Programmet genereres automatisk og testes i en simuleret verden.",
@@ -538,6 +572,8 @@
         "Metoden kan få robotter til at klare nye udfordringer.",
         "Forskning baner vej for mere selvstændige robotter."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "navngivet": true,
       "side": "artikel/07ba63084d4cd7bc.html"
     },
@@ -552,8 +588,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Grama Chethan giver fabrikker tillid til AI",
       "resume_da": "Ny forskning lader fabrikker spore hver AI-beslutning tilbage til kilden – og tjekke den over tid.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -568,9 +603,8 @@
           "tekst": "Fabrikker bliver mere og mere digitale og bruger AI til at styre produktion, lager og kvalitet. Men hvis AI tager fejl, kan det koste dyrt. Uden sporbarhed er det umuligt at finde fejlen. Det her system giver både overblik og tillid – noget mange virksomheder har efterspurgt i årevis."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Systemet samler data fra mange forskellige fabrikssystemer i én samlet videnbase.",
         "Det kan spore, hvor hvert datapunkt oprindeligt kom fra – såkaldt proveniens.",
@@ -585,6 +619,8 @@
         "Tjekker om beslutninger holder over tid",
         "Samler data fra mange systemer ét sted"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/1670a2d79a482110.html"
     },
     {
@@ -598,8 +634,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Berkeley-forskere tester AI's filmforståelse",
       "resume_da": "Forskere fra Berkeley har undersøgt, hvor godt AI-systemer forstår Hollywood-film - og resultaterne viser både styrker og store huller.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -614,9 +649,8 @@
           "tekst": "Selvom det lyder som ren forskning, har det praktiske konsekvenser. Hvis AI skal kunne hjælpe med at lave videooversigter, besvare spørgsmål om indhold eller endda skrive manuskripter, skal den forstå narrativer bedre. Testen fra Berkeley kan blive en ny standard for, hvordan vi måler AI's evne til at forstå komplekse, visuelle fortællinger - og den viser, at der stadig er lang vej igen."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne bag er fra University of California, Berkeley.",
         "Testen bruger populære Hollywood-film som grundlag.",
@@ -632,6 +666,8 @@
         "Stærk til scener, svag til motiver",
         "Ny test kan blive standard for måling"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/857feaf8fef15de6.html"
     },
     {
@@ -645,8 +681,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "AI skal gøre drone-sværme sikre i luften",
       "resume_da": "Forskere ser på, hvordan AI kan styre flere droner sikkert. De peger på både muligheder og risici.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -661,9 +696,8 @@
           "tekst": "Potentialet er stort – for eksempel til søgning efter forulykkede eller overvågning af store områder. Men forskerne understreger, at teknologien ikke er moden endnu, og at mennesker skal kunne gribe ind, når det gælder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Artiklen gennemgår udfordringer ved at bruge AI i sikkerhedskritiske multi-drone-systemer.",
         "Den dækker både muligheder, som selvstændig undvigelse, og risici, som hacking.",
@@ -679,6 +713,8 @@
         "Mennesker skal kunne overtage styringen når som helst.",
         "Strenge test er nødvendige før praktisk brug."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "navngivet": true,
       "side": "artikel/9ed07f400d6b6d8b.html"
     },
@@ -693,8 +729,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Forskere gør AI-gennemsyn til en leg",
       "resume_da": "Ny forskning kortlægger værktøjer, der forklarer AI-beslutninger i tidsserier – så du kan stole på teknologien.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye",
@@ -709,9 +744,8 @@
           "tekst": "For dig betyder det, at næste gang en AI bruges til at vurdere noget vigtigt – som dit helbred eller din økonomi – kan den komme med en forklaring, du kan forstå. Det gør det lettere at stole på teknologien og nemmere at opdage fejl og skævheder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne gennemgik et stort antal værktøjer til forklarlig AI i tidsserieanalyse.",
         "Tidsserier er data, der ændrer sig over tid, som aktiekurser eller vejrdata.",
@@ -726,6 +760,8 @@
         "Du kan stole mere på teknologi",
         "Forskningen giver et praktisk overblik"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/ce448499a33e7239.html"
     },
@@ -740,8 +776,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Ny AI-model kan forudsige smog med QHAdamW",
       "resume_da": "Forskere har udviklet en ny AI-model, der bedre kan forudsige luftforurening. Modellen bruger en forbedret træningsmetode og kan hjælpe byer med at advare beboere.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Opdagelsen",
@@ -756,9 +791,8 @@
           "tekst": "Forskerne bag understreger, at modellen stadig er på forsøgsstadiet. Den skal testes i flere forskellige byer med andre klimaer, før den kan bruges i praksis. Hvis den virker, kan den dog blive et billigt værktøj for kommuner, der ikke har råd til dyre måleudstyr."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "QHAdamW kombinerer to optimeringsmetoder for hurtigere læring.",
         "Modellen er testet på data fra en by i Filippinerne.",
@@ -773,6 +807,8 @@
         "Kan give byer præcise smog-advarsler",
         "Modellen er stadig på forsøgsstadiet"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/385c59509b9977f0.html"
     },
     {
@@ -786,8 +822,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Qifan Shi: Ny metode får AI til at lære hurtigere",
       "resume_da": "Forskere, bl.a. Qifan Shi, har fundet en smartere måde at lære AI op på, som kan gøre modellerne skarpere uden at bruge mere strøm. Metoden er testet med succes.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -802,9 +837,8 @@
           "tekst": "Forskerne bag artiklen, bl.a. Qifan Shi, har allerede fået det til at virke i test med store sprogmodeller. Det kan betyde, at de AI-systemer, vi bruger hver dag, bliver både billigere at udvikle og bedre til at svare. Næste skridt er at få metoden ud til alle tech-firmaerne, der bygger de store modeller."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden kaldes Architecture-Aware Credit Transport.",
         "AI lærer hurtigere ved at spore data gennem systemet.",
@@ -820,7 +854,8 @@
         "Metoden er testet med succes.",
         "Kan give skarpere svar i hverdagen."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 2,
       "side": "artikel/dbe73c2da0d77b35.html"
     },
     {
@@ -834,8 +869,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Forskere: AI-modeller fejler, når de flytter by",
       "resume_da": "Ny forskning afslører, at AI-modeller, der forudsiger, hvor folk rejser hen, ikke kan overføres fra én by til en anden. Geografiske forskelle er hovedproblemet.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet opdaget",
@@ -850,9 +884,8 @@
           "tekst": "Forskerne håber, at deres værktøj kan hjælpe byplanlæggere og transportfirmaer med at bruge AI-modeller mere sikkert. I stedet for at antage, at én løsning virker alle steder, kan de nu tjekke, om modellen er til at stole på – eller skal trænes om med lokale data."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskere har opdaget, at AI-modeller for menneskers bevægelser ikke kan overføres mellem byer.",
         "Geografisk forskydning beskriver forskelle i bystruktur, kultur og trafikmønstre.",
@@ -868,6 +901,8 @@
         "Nyt værktøj måler fejl",
         "Fremtidige modeller kan blive mere pålidelige"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/310bf57380db524e.html"
     },
@@ -882,8 +917,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Edson Rodrigues: AI-sikkerhed hurtig og billig",
       "resume_da": "Forskere ledet af Edson Rodrigues da Cruz Filho og Gustavo Voltani Von Atzingen har fundet en metode til at lave AI-sikkerhedskontrol, der kan køre på helt almindelige computere - uden at det koster en formue.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -898,9 +932,8 @@
           "tekst": "Forskerne lægger vægt på, at deres opskrift er nem at kopiere og følger reglerne for brug af data. Det betyder, at andre hold kan bygge videre på deres arbejde. Hvis teknikken vinder frem, kan vi få AI-sikkerhed, der er både bedre og meget mere tilgængelig - også for dem, der ikke har råd til de vildeste servere."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Forskerne har udviklet en metode til at træne små AI-modeller til sikkerhedskontrol.",
         "Modellerne kan køre på almindelige CPU'er i stedet for dyre servere.",
@@ -915,7 +948,8 @@
         "Gør AI-sikkerhed billig nok for små virksomheder",
         "Bygger på eksisterende modeller fra eksempelvis OpenAI"
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/d6b07a27dfaf05e7.html"
     },
     {
@@ -929,8 +963,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Forskere: AI opdager mundkræft tidligere",
       "resume_da": "AI-modeller kan spotte mundkræft på billeder med høj præcision – måske redder det liv.",
-      "kat_ai": true,
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye fund",
@@ -945,14 +978,13 @@
           "tekst": "Du kan få en hurtig vurdering hos tandlægen – eller måske selv tage et billede med mobilen og få et svar med det samme. Tidlig opdagelse er afgørende for behandling af mundkræft, og den her teknologi kan hjælpe med at fange sygdommen, før den spreder sig."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "92 %",
           "label": "nøjagtighed på kræftgenkendelse"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Letvægts-AI-modeller kan køre på almindelige computere og mobiler.",
         "Modellerne analyserer billeder af mundslimhinden for kræfttegn.",
@@ -967,6 +999,8 @@
         "Kan bruges i lande uden specialister",
         "Tidlig opdagelse redder liv"
       ],
+      "kat_ai": true,
+      "prio": 2,
       "navngivet": true,
       "side": "artikel/622ce8aa0a70cbbd.html"
     },
@@ -981,8 +1015,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Emmanuel Lujan: AI vælger selv den rette app",
       "resume_da": "Forskere har lært AI at vælge den bedste algoritme til hver opgave. Det kan gøre apps hurtigere og billigere.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -997,9 +1030,8 @@
           "tekst": "Forskerne ser for sig, at teknologien kan bruges i alt fra sundhedsdata til trafikstyring. I stedet for at programmører skal gætte, hvad der virker bedst, kan AI lære af tidligere resultater og forbedre sig selv. Det er stadig tidligt, men potentialet er stort."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "AI-modellen vælger dynamisk mellem forskellige algoritmer baseret på inputdata.",
         "Metoden kan forbedre ydeevne i applikationer med varierende data.",
@@ -1013,6 +1045,8 @@
         "Lujan står bag forskningen.",
         "Teknologien er stadig tidlig."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/3f92295515046157.html"
     },
     {
@@ -1026,8 +1060,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Forskere lancerer K-Bench til AI-agent-test",
       "resume_da": "Nyt værktøj K-Bench måler, hvor godt AI'er klarer ægte forskningsopgaver – så du kan stole mere på dem.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye værktøj",
@@ -1042,9 +1075,8 @@
           "tekst": "K-Bench kan blive standarden for, hvordan vi tester AI i forskning og industri. Hvis virksomheder og universiteter tager det i brug, bliver det nemmere at sammenligne modeller og vælge den rigtige til opgaven. Og når AI'en klarer en opgave godt, kan vi have større tillid til resultaterne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "K-Bench er et nyt benchmark til at teste AI-modeller.",
         "Testene bruger virkelige videnskabelige opgaver og ikke kunstige spørgsmål.",
@@ -1059,6 +1091,8 @@
         "Forskerne vil øge pålideligheden af AI.",
         "Værktøjet er frit tilgængeligt for alle."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/54cfd6d3f73bc7e8.html"
     },
     {
@@ -1072,8 +1106,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Nijesh Upreti: Ny metode får AI til at ramme plet",
       "resume_da": "Forsker Nijesh Upreti har fundet en smartere måde at få AI-genererede billeder til at overholde regler, så de ikke bryder rammerne.",
-      "kat_ai": true,
-      "prio": 1,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kernen i opdagelsen",
@@ -1088,9 +1121,8 @@
           "tekst": "Forskerne bag studiet har lavet en metode, der kan bruges i mange forskellige AI-systemer. For almindelige brugere kan det betyde, at billeder, som AI laver, bliver mere præcise og realistiske. Men der er endnu behov for mere forskning, før det bliver en standard i alle AI-værktøjer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden kaldes function-symbol grounding.",
         "Den hjælper AI-modeller med at overholde hårde begrænsninger.",
@@ -1105,7 +1137,8 @@
         "Metoden kan reducere fejl i AI-modeller.",
         "Studiet er lavet af Nijesh Upreti."
       ],
-      "navngivet": true,
+      "kat_ai": true,
+      "prio": 1,
       "side": "artikel/b0ed8b2df50eaea0.html"
     },
     {
@@ -1119,8 +1152,7 @@
       "eget_foerst_set": "2026-08-25T05:07:25.865694+00:00",
       "rubrik": "Junaid Farooq lærer AI at huske som et træ",
       "resume_da": "Ny metode gemmer viden i træstruktur, så søgninger bliver hurtigere og mere præcise på tværs af detaljeniveauer.",
-      "kat_ai": true,
-      "prio": 3,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det nye trick",
@@ -1135,9 +1167,8 @@
           "tekst": "Tænk på AI-assistenter, der skal svare hurtigt og præcist, eller søgemaskiner, der skal finde nålen i høstakken. Teknikken kan også hjælpe i sundheds- og finansverdenen, hvor mange data skal gennemsøges på et splitsekund."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Metoden bygger på hierarkiske semantiske residualer – forskelle mellem niveauer.",
         "AI'en kan både svare overordnet og i dyb detalje fra samme træstruktur.",
@@ -1152,6 +1183,8 @@
         "Svar på flere detaljeniveauer fra samme struktur.",
         "Åben forskning: kode er offentligt tilgængelig."
       ],
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/381962a46c330587.html"
     },
     {
@@ -2612,56 +2645,75 @@
       "side": "artikel/4af5149f16f931f4.html"
     },
     {
-      "titel": "The DOJ is investigating a16z. What does this mean for venture capital?",
-      "link": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/",
-      "resume": "Andreessen Horowitz has two partners sitting on the boards of companies that now compete with each other: Ben Horowitz at Databricks and Martin Casado at Fivetran. Nothing too scandalous on the surface, except the Department of Justice has reportedly been investigating the arrangement for almost a year, dusting off a 112-year-old antitrust law that’s rarely used against VCs. Board conflicts…",
+      "titel": "Starcloud raises $250 million for orbital data centers as launch options dry up",
+      "link": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+      "resume": "There's about to be a big fight to secure access to space.",
       "dato": "2026-08-21T14:00:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
-      "foerst_set": "2026-08-21T16:00:32.367758+00:00",
-      "eget_foerst_set": "2026-08-21T16:00:32.367758+00:00",
-      "rubrik": "USA's justitsministerium gransker a16z' bestyrelsesposter",
-      "resume_da": "Justitsministeriet undersøger, om a16z' bestyrelsesposter i konkurrerende firmaer bryder en 112 år gammel antitrustlov. Det kan få store konsekvenser for hele venturebranchen.",
+      "foerst_set": "2026-08-21T14:08:13.928313+00:00",
+      "eget_foerst_set": "2026-08-21T14:08:13.928313+00:00",
+      "rubrik": "Starcloud får 250 millioner til AI-satellitter i rummet",
+      "resume_da": "Starcloud har hentet 250 millioner dollars ekstra til at bygge AI-datacentre i kredsløb. Pengene skal sikre plads på SpaceX's Starship, før raketterne bliver for dyre.",
       "kat_ai": true,
       "prio": 5,
       "sektioner": [
         {
-          "overskrift": "Det er sket",
-          "tekst": "Det amerikanske justitsministerium har angiveligt i næsten et år efterforsket venturefirmaet **Andreessen Horowitz (a16z)**. Ministeriet har gravet en **112 år gammel antitrustlov** frem, som sjældent bruges mod venturekapitalfonde. Loven skal forhindre, at folk sidder i bestyrelser for virksomheder, der konkurrerer mod hinanden."
+          "overskrift": "Pengene",
+          "tekst": "Starcloud har udvidet sin investeringsrunde med **250 millioner dollars**, så den samlede serie A nu er på **420 millioner dollars**. Værdiansættelsen er steget til **2,3 milliarder dollars**. Nvidia har selv smidt **25 millioner dollars** i kanden, hvilket ses som et stærkt signal til resten af markedet."
         },
         {
-          "overskrift": "Sagen kort",
-          "tekst": "To af a16z' partnere sidder i bestyrelser for virksomheder, der nu konkurrerer: **Ben Horowitz** hos Databricks og **Martin Casado** hos Fivetran. Da a16z investerede, var de ikke direkte konkurrenter, men i takt med at porteføljevirksomhederne udvider deres markeder, er grænserne blevet udvisket. Det er kernen i efterforskningen."
+          "overskrift": "Raket-problemet",
+          "tekst": "SpaceX stopper med Falcon 9 i **2028**, og Starship er ikke klar endnu. Det gør det svært for satellit-firmaer at planlægge. Starcloud vil sikre sig plads på Starship, så de kan sende deres store datacentre op. Hvis ikke de kan få raketplads i 2029, bliver det en kæmpe udfordring."
         },
         {
-          "overskrift": "Større spørgsmål",
-          "tekst": "Sagen rejser et stort spørgsmål for hele venturebranchen: Hvordan skal venturefonde håndtere bestyrelsesposter, når grænserne mellem deres porteføljevirksomheder konstant flytter sig? Det er ikke kun et problem for a16z, men for alle, der investerer i startups, som vokser ind på hinandens markeder."
+          "overskrift": "Nvidias rolle",
+          "tekst": "Starcloud er det eneste firma, der kører en Nvidia H100-GPU i kredsløb, og de har trænet en AI-model deroppe. Nvidia bruger deres data til at udvikle en ny rum-chip, Vera Rubin Space-1, som skal flyve i 2028. Starcloud deler viden om varme og stråling med Nvidia."
         },
         {
-          "overskrift": "Hvad nu?",
-          "tekst": "TechCrunch's Equity-podcast har dykket ned i sagen med værterne **Kirsten Korosec**, **Anthony Ha** og **Sean O'Kane**. De diskuterer, hvad efterforskningen kan betyde for venturekapitalfonde fremover. Spørgsmålet er, om myndighederne vil skærpe tilsynet med, hvordan investorer placerer deres folk i bestyrelser."
+          "overskrift": "Fremtiden",
+          "tekst": "I 2027 sender Starcloud to mindre satellitter med andre folks raketter, så de kan lave AI-opgaver for amerikanske myndigheder. Selskabet har 25 ansatte og bygger en stor fabrik i Washington. De har søgt om lov til at drive 88.000 rumfartøjer."
         }
       ],
       "brief": "",
       "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Justitsministeriet har efterforsket a16z i næsten et år.",
-        "Efterforskningen bruger en 112 år gammel antitrustlov, sjældent brugt mod venturefonde.",
-        "Ben Horowitz sidder i Databricks' bestyrelse, Martin Casado i Fivetrans.",
-        "Databricks og Fivetran er nu konkurrenter, selvom de ikke var det ved investeringen.",
-        "Sagen blev behandlet i TechCrunch's Equity-podcast med tre værter."
+      "noegletal": [
+        {
+          "tal": "250 mio. dollars",
+          "label": "ny investering i Starcloud"
+        },
+        {
+          "tal": "2,3 mia. dollars",
+          "label": "værdiansættelse efter runden"
+        },
+        {
+          "tal": "88.000",
+          "label": "rumfartøjer søgt godkendt"
+        },
+        {
+          "tal": "25 mio. dollars",
+          "label": "Nvidias bidrag"
+        }
       ],
-      "betydning": "Du kan opleve, at venturefonde bliver mere forsigtige med at tage bestyrelsesposter i flere konkurrerende startups - det kan gøre det sværere for nye virksomheder at få både kapital og tæt sparring fra investorer.",
+      "detaljer": [
+        "Runden blev ledt af Manhattan West Ventures med deltagelse af Nvidia og Cisco.",
+        "Starcloud-3 er det største orbital-datacenter og skal flyve ombord på Starship.",
+        "Falcon 9 udfases i 2028, hvilket presser opsendelsesmarkedet.",
+        "Firmaet har 25 ansatte og vokser ved Woodinville i Washington.",
+        "Nvidia udvikler sin første rum-chip, Vera Rubin Space-1, klar til 2028.",
+        "Starcloud overvejer at købe en hel Falcon 9-opsendelse for at få flere satellitter op.",
+        "Konkurrenter som Blue Origin og ULA flyver stadig ikke regelmæssigt."
+      ],
+      "betydning": "Du får billigere og hurtigere AI-behandling fra rummet, hvis Starcloud lykkes. Men hele planen hænger på, at SpaceX får Starship til at virke – ellers bliver der ingen datacentre i kredsløb foreløbig.",
       "pointer": [
-        "DOJ efterforsker a16z for bestyrelsesposter i konkurrerende firmaer.",
-        "112 år gammel lov er sjældent brugt mod venturefonde.",
-        "Sagen kan ændre venturebranchens håndtering af interessekonflikter.",
-        "Podcast behandler sagen med tre TechCrunch-værter."
+        "Starcloud sikrer milliarder til rum-AI.",
+        "Nvidia støtter med 25 millioner.",
+        "Raketmangel truer hele branchen.",
+        "Starship er nøglen til fremtiden."
       ],
       "navngivet": true,
-      "billedmotiv": "En arkivboks med et rødvinsglas og en guldmønt, begge stablet på et skrøbeligt tårn af dominobrikker.",
-      "side": "artikel/2128e60ca793bc6c.html"
+      "billedmotiv": "En lille satellitmodel af papmaché med en pengeseddel stukket ind som solpanel, hvor en tom raketmodel står med et udsolgt-skilt om halsen.",
+      "side": "artikel/f30a4a32fb60e7f4.html"
     },
     {
       "titel": "Major YouTube creators are facing backlash for accepting AI money",
