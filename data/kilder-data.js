@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T08:10:15.532364+00:00",
+ "opdateret": "2026-08-25T09:10:13.906135+00:00",
  "artikler_i_alt": 121,
  "kilder": [
   {
@@ -623,6 +623,15 @@ window.KILDER_STATUS = {
      "under": "Sam Altman: Virksomheder sætter AI på arbejde"
     },
     {
+     "rubrik": "OpenAI lukker russisk AI-påvirkningskampagne",
+     "dato": "2026-08-25T00:00:00",
+     "foerst_set": "2026-08-25T09:10:13",
+     "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+     "side": "artikel/5bd6315049a12924.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI: GPT‑5.6 i Kiro giver udviklere mere for pengene",
      "dato": "2026-08-24T12:00:00",
      "foerst_set": "2026-08-24T21:00:46",
@@ -718,15 +727,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-18T11:46:13",
      "link": "https://openai.com/index/chatgpt-for-teens",
      "side": "artikel/48f9d5cfe56c266b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI: AI ændrer it-sikkerhed for både gode og onde",
-     "dato": "2026-08-17T05:30:00",
-     "foerst_set": "2026-08-17T14:03:47",
-     "link": "https://openai.com/index/the-defenders-window",
-     "side": "artikel/699d10e1c74c5175.html",
      "hvor": "forside",
      "under": ""
     }

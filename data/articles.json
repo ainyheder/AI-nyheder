@@ -1,7 +1,50 @@
 {
-  "opdateret": "2026-08-25T08:10:15.532364+00:00",
+  "opdateret": "2026-08-25T09:10:13.906135+00:00",
   "antal": 121,
   "artikler": [
+    {
+      "titel": "Disrupting a new covert influence campaign from Russia",
+      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "resume": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
+      "dato": "2026-08-25T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-25T09:10:13.906135+00:00",
+      "eget_foerst_set": "2026-08-25T09:10:13.906135+00:00",
+      "rubrik": "OpenAI lukker russisk AI-påvirkningskampagne",
+      "resume_da": "OpenAI har forbudt russiske konti, der brugte AI til at sprede propaganda om et falsk israelsk tænketank og et såkaldt suverænitetsindeks.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har opdaget og lukket ned for en række konti med oprindelse i Rusland. Kontiene brugte AI til at promovere et falsk israelsk tænketank og et 'suverænitetsindeks', der roser Rusland og kritiserer Vesten. Det er et forsøg på at påvirke den offentlige mening i skjul."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "De russiske konti er nu forbudt, men kampagnen viser, hvordan AI kan misbruges til propaganda. OpenAI holder øje med lignende forsøg og arbejder på at stoppe dem, før de når ud til for mange. Det er et katt-og-mus-spil, der nok ikke slutter her."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI forbød russiske konti, der brugte AI til propaganda.",
+        "Kampagnen promoverede et falsk israelsk tænketank.",
+        "Der blev også lavet et 'suverænitetsindeks', der roser Rusland.",
+        "Indekset kritiserede Vesten som led i påvirkningskampagnen.",
+        "Formålet var at påvirke den offentlige mening i skjul."
+      ],
+      "betydning": "Du kan møde AI-skabt propaganda, der ligner ægte nyheder, men som er designet til at påvirke dig. Vær kritisk over for kilder og tænk dig om, før du deler.",
+      "pointer": [
+        "Russiske konti brugte AI til propaganda.",
+        "Falsk israelsk tænketank blev promoveret.",
+        "Suverænitetsindekset roste Rusland.",
+        "OpenAI bannede kontiene efter opdagelsen."
+      ],
+      "billedmotiv": "En lukket notesbog med et israelsk flag på omslaget, men med et nyt, umalet russisk flag under det øverste lag, og en lille, tom præsentationsramme ved siden af.",
+      "side": "artikel/5bd6315049a12924.html"
+    },
     {
       "titel": "KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference",
       "link": "https://arxiv.org/abs/2608.21362",
@@ -97,7 +140,6 @@
       ],
       "kat_ai": true,
       "prio": 2,
-      "navngivet": true,
       "side": "artikel/b621fab07e5031a5.html"
     },
     {
@@ -574,7 +616,6 @@
       ],
       "kat_ai": true,
       "prio": 3,
-      "navngivet": true,
       "side": "artikel/07ba63084d4cd7bc.html"
     },
     {
@@ -1524,7 +1565,7 @@
     {
       "titel": "Coding expertise is going to collapse from AI reliance",
       "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-      "resume": "Article URL: https://larsfaye.com/articles/ai-coding-will-prevent-expertise Comments URL: https://news.ycombinator.com/item?id=49421554 Points: 510 # Comments: 500",
+      "resume": "Article URL: https://larsfaye.com/articles/ai-coding-will-prevent-expertise Comments URL: https://news.ycombinator.com/item?id=49421554 Points: 513 # Comments: 502",
       "dato": "2026-08-24T15:52:33+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -1532,8 +1573,7 @@
       "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
       "rubrik": "JetBrains-studie: AI gør novice-udviklere dårligere",
       "resume_da": "Et nyt studie viser, at AI-assistance kan skade nybegynderes kodningsevner og læring, selvom det føles som en hjælp.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Paradokset",
@@ -1548,9 +1588,8 @@
           "tekst": "Jo mere erfaring du har, desto bedre kan du styre AI-output og undgå fejl. Nybegyndere har derimod ikke viden til at spotte, hvornår modellen tager fejl. Det skaber en ond cirkel, hvor AI lover hurtige resultater, men i virkeligheden forhindrer opbygningen af essentiel kodningsintuition."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Studiet 'The Widening Gap' blev udført af JetBrains og testede novicers læring med AI-assistance.",
         "Deltagerne troede, de brugte AI som tutor, men sprang kritiske planlægningsskridt over.",
@@ -1567,12 +1606,14 @@
         "Lav AI-brug gav bedst resultater i test.",
         "Fingerspitzengefühl kræver tid og fejl."
       ],
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/e57c577525febf0a.html"
     },
     {
       "titel": "I built a low-latency AI companion that plays Skyrim with me",
       "link": "https://pantel.is/projects/ai-gaming-companion/",
-      "resume": "Article URL: https://pantel.is/projects/ai-gaming-companion/ Comments URL: https://news.ycombinator.com/item?id=49413561 Points: 354 # Comments: 70",
+      "resume": "Article URL: https://pantel.is/projects/ai-gaming-companion/ Comments URL: https://news.ycombinator.com/item?id=49413561 Points: 357 # Comments: 71",
       "dato": "2026-08-23T23:18:17+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Hverdags-AI",
@@ -1580,8 +1621,7 @@
       "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
       "rubrik": "Varkos: AI-hunden der spiller Skyrim med dig",
       "resume_da": "En udvikler har bygget en AI-kammerat, der kan spille Skyrim med dig – og han flytter med mellem spil.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad er Varkos?",
@@ -1596,18 +1636,17 @@
           "tekst": "Varkos er bygget til at kunne flytte med mellem spil. Han starter i Skyrim, men kan i fremtiden også hoppe ind i andre spil. Udvikleren vil gerne gøre ham til en fast følgesvend, der kan spille flere forskellige spil med dig – og han bliver ved med at udvikle sig, jo mere I er sammen."
         }
       ],
-      "brief": "",
+      "noegletal": [
+        {
+          "tal": "40-80 ms",
+          "label": "så hurtigt reagerer stemmegenkendelsen"
+        }
+      ],
       "figurer": [
         {
           "url": "https://pantelis.s3.us-west-2.amazonaws.com/0/varkos/voidmode1.jpg",
           "tekst": "Being mean to Varkos results in some pretty grim attitudes.",
           "kilde": "Hacker News: AI"
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "40-80 ms",
-          "label": "så hurtigt reagerer stemmegenkendelsen"
         }
       ],
       "detaljer": [
@@ -1625,12 +1664,14 @@
         "Personligheden udvikler sig over tid",
         "Han kan flytte mellem flere spil"
       ],
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/a025a03650ffadbc.html"
     },
     {
       "titel": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
       "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-      "resume": "Article URL: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245 Comments URL: https://news.ycombinator.com/item?id=49411102 Points: 780 # Comments: 685",
+      "resume": "Article URL: https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245 Comments URL: https://news.ycombinator.com/item?id=49411102 Points: 782 # Comments: 686",
       "dato": "2026-08-23T18:16:37+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -1638,8 +1679,7 @@
       "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
       "rubrik": "Anthropics topmodel taber til billigere AI-værktøjer",
       "resume_da": "Anthropics dyreste AI-model kæmper for at tiltrække brugere, mens billigere alternativer vinder frem. Brugerne vælger pris frem for topydelse.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -1650,9 +1690,8 @@
           "tekst": "Når selv en topmodel ikke kan trække brugere nok, sender det et signal om, at prisen betyder mere end ydelsen for de fleste. For almindelige brugere kan det betyde, at de får nok i de billigere udgaver – og at de dyre modeller kun bliver for de få, der virkelig har brug for det."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Anthropics bedste AI-model er teknisk avanceret, men har svært ved at tiltrække brugere.",
         "Billigere AI-værktøjer tiltrækker i stedet mange af de brugere, som vælger pris frem for ydelse.",
@@ -1666,6 +1705,8 @@
         "Pris slår ydelse for de fleste.",
         "Topmodeller er kun for de få."
       ],
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/15d6d8e1489e0151.html"
     },
     {
@@ -1679,8 +1720,7 @@
       "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
       "rubrik": "Kimi K3 hjalp med at hacke egen tablet",
       "resume_da": "En teknisk kyndig person brugte fire AI-modeller og 266 dollars til at få fuld kontrol over sin egen Amazon-tablet.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problemet",
@@ -1699,8 +1739,6 @@
           "tekst": "Undervejs nægtede Claude at opsummere sine egne tidligere analyser af enheden, og OpenAI's Codex afviste et teknisk spørgsmål om CPU-cache. Sikkerhedsforanstaltningerne er bevidst brede, men de blokerede helt legitime opgaver på brugerens egen enhed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "266 dollars",
@@ -1711,6 +1749,7 @@
           "label": "Kimi K3's andel af regningen"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Tabletten købt på eBay i november 2022 for 114 dollars.",
         "Kimi K3 fandt sårbarheden CVE-2022-38181 i Arm's Mali-driver.",
@@ -1727,6 +1766,8 @@
         "Claude og Codex blokerede legitime opgaver.",
         "Projektet kostede 266 dollars i alt."
       ],
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/a125f971489fac2b.html"
     },
     {
@@ -2399,17 +2440,15 @@
       "eget_foerst_set": "2026-08-23T07:58:03.194083+00:00",
       "rubrik": "Texas-student afslørede AI-hackforsøg",
       "resume_da": "En studerende i Texas opdagede og stoppede et AI-drevet hackerangreb. Historien viser, hvordan almindelige mennesker kan gøre en forskel.",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det skete",
           "tekst": "En studerende i Texas fangede et forsøg på et såkaldt rogue AI-hackingangreb og slog alarm. Vedkommende opdagede noget mistænkeligt og handlede hurtigt for at advare andre. Hacker News-brugerne roser personen for modet og snilde."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "En student fra Texas afslørede et rogue AI-hackingforsøg.",
         "Sagen blev delt på Hacker News og fik 210 points.",
@@ -2425,6 +2464,8 @@
         "Lær at genkende tegn"
       ],
       "billedmotiv": "En kasse med en håndsvejvende robotarm, der er forbundet til en laptop med et advarselsklistermærke, og en lille hængelås, der er sprængt.",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/c6c3d5497f8c6505.html"
     },
     {
@@ -2902,8 +2943,7 @@
       "eget_foerst_set": "2026-08-21T17:58:53.092869+00:00",
       "rubrik": "AI gav bedre lektier, men dårligere eksamener",
       "resume_da": "Ny undersøgelse med 27.000 kinesiske elever viser, at AI hjalp på lektiescore, men gav markant dårligere karakterer til eksamen uden hjælp.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det viser studiet",
@@ -2922,8 +2962,6 @@
           "tekst": "Nogle forskere siger, at elever kopierer AI-svar uden at tænke selv. Brookings Institution advarer mod at lade AI erstatte tænkning og kreativitet. Studiet er dog ikke uafhængigt verificeret endnu, så vi skal tage tallene med et gran salt."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "18 %",
@@ -2938,6 +2976,7 @@
           "label": "af britiske studerende bruger AI"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Studiet fulgte 27.000 kinesiske elever i seks måneder fra 2024-2025.",
         "80 % af eleverne brugte AI-modeller som Doubao og DeepSeek.",
@@ -2953,8 +2992,10 @@
         "AI-brugere scorede 20 % lavere til eksamen.",
         "Forskere advarer mod overfladisk læring."
       ],
-      "navngivet": true,
       "billedmotiv": "En bunke bøger med et A+ klistermærke, der er stablet op mod en eksamensopgave med et stort rødt F.",
+      "kat_ai": true,
+      "prio": 4,
+      "navngivet": true,
       "side": "artikel/8f7654c8ba1f118b.html"
     },
     {
@@ -6148,50 +6189,6 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/143a56c3831ed960.html"
-    },
-    {
-      "titel": "What building an AI-native finance function taught me",
-      "link": "https://openai.com/index/building-an-ai-native-finance-function",
-      "resume": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.",
-      "dato": "2026-08-10T17:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-10T19:44:23.966320+00:00",
-      "eget_foerst_set": "2026-08-10T19:44:23.966320+00:00",
-      "rubrik": "Sarah Friar: Sådan bygger du en AI-drevet økonomiafdeling",
-      "resume_da": "OpenAI's finansdirektør deler fem konkrete erfaringer med at bruge AI i økonomiafdelingen – fra automatiseret prognoser til stærkere kontrol.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hun har prøvet det",
-          "tekst": "**Sarah Friar**, finansdirektør hos OpenAI, har stået i spidsen for at gøre økonomiafdelingen AI-drevet. Hun deler nu fem lektioner fra processen – blandt andet om, hvordan man automatiserer prognoser og får bedre styr på økonomiske kontroller. Det er ikke teorien, men de konkrete erfaringer fra et af verdens mest teknologitunge firmaer, der er i fokus."
-        },
-        {
-          "overskrift": "Lær af hendes fem pointer",
-          "tekst": "De fem lektioner handler blandt andet om, at AI kan løfte både hastigheden og kvaliteten i økonomiafdelingen. Men det kræver, at man tænker hele processen om, ikke bare smider AI oven på gamle arbejdsgange. Fridar understreger også, at stærkere kontrol og klare rammer er nødvendige, hvis AI skal give værdi – og at man skal måle afkastet af AI-investeringerne."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI's finansdirektør **Sarah Friar** har bygget en AI-native økonomiafdeling.",
-        "Hun deler fem lektioner om AI i økonomistyring.",
-        "Automatiseret forecasting er et af de konkrete resultater.",
-        "Stærkere økonomiske kontroller nævnes som en vigtig gevinst.",
-        "Artiklen fremhæver, at man skal måle afkastet af AI-investeringer.",
-        "Budskabet er, at AI kræver nytænkning af hele processen."
-      ],
-      "betydning": "Når din arbejdsplads overvejer AI i økonomiafdelingen, viser Sarah Friars erfaringer, at det kan give bedre prognoser og kontrol – men du skal være klar til at gentænke processerne, ikke bare automatisere de gamle.",
-      "pointer": [
-        "AI kan automatisere økonomiske prognoser.",
-        "Kontrol bliver stærkere med AI.",
-        "Mål afkastet af AI-investeringer.",
-        "Fem lektioner fra OpenAI's finansdirektør."
-      ],
-      "billedmotiv": "En spillende terning med procenttegn på hver side, flankeret af et lille lommerregnelommeur.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/1b4a121cfec6e61f.html"
     },
     {
       "titel": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
