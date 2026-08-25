@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T20:57:26.396180+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-08-25T21:55:09.305213+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 6,
+   "i_listen": 19,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "OpenAI vil give alle adgang til AI-agenter",
+     "dato": "",
+     "foerst_set": "2026-08-25T13:29:53.505734+00:00",
+     "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI satser på AI-agenter til alle kontorfolk"
+    },
     {
      "rubrik": "Google vil gøre AI til din nye studiekammerat",
      "dato": "",
@@ -61,15 +70,6 @@ window.KILDER_STATUS = {
      "under": "Claude får usynligt vandmærke på alt indhold"
     },
     {
-     "rubrik": "Twitch lader Amazon træne AI på dine streams",
-     "dato": "",
-     "foerst_set": "2026-08-12T22:26:02",
-     "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
-     "side": "",
-     "hvor": "under",
-     "under": "Twitch-brugere kan nu sige nej til Amazons AI-træning"
-    },
-    {
      "rubrik": "Stability AI henter 76 millioner dollars hos pladegiganterne",
      "dato": "2026-08-25T19:03:47",
      "foerst_set": "2026-08-25T19:10:17",
@@ -111,15 +111,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-25T13:29:53",
      "link": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/",
      "side": "artikel/944b086394f24a20.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI vil give alle adgang til AI-agenter",
-     "dato": "2026-08-25T12:00:00",
-     "foerst_set": "2026-08-25T13:29:53",
-     "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
-     "side": "artikel/93a87e369cbc9183.html",
      "hvor": "forside",
      "under": ""
     },
@@ -176,6 +167,15 @@ window.KILDER_STATUS = {
      "side": "artikel/e0099f0b8b4510a5.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Hugging Face solgt for 13 milliarder dollar?",
+     "dato": "2026-08-24T13:47:26",
+     "foerst_set": "2026-08-24T14:20:09",
+     "link": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+     "side": "artikel/aa2dd08ad7dad188.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -184,11 +184,11 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "Ars Technica AI",
-     3
+     "OpenAI Blog",
+     2
     ],
     [
-     "OpenAI Blog",
+     "Ars Technica AI",
      2
     ]
    ]
@@ -331,6 +331,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Robotløb i Beijing: Rekorder og robotter i flammer",
+     "dato": "2026-08-25T20:59:03",
+     "foerst_set": "2026-08-25T21:55:09",
+     "link": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
+     "side": "artikel/d791ad9bc7774bbe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI ændrer radiologers job – men afløser dem ikke",
      "dato": "2026-08-25T15:10:03",
      "foerst_set": "2026-08-25T15:23:37",
@@ -428,21 +437,12 @@ window.KILDER_STATUS = {
      "side": "artikel/3755ef99592d6e02.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Matthew Elliott gemte AI-beskeder i retsdokumenter",
-     "dato": "2026-08-14T17:26:53",
-     "foerst_set": "2026-08-14T18:30:52",
-     "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
-     "side": "artikel/9e143ab6925a7272.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     2
     ],
     [
      "Hacker News: AI",
@@ -936,7 +936,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "fejl": "URLError: <urlopen error timed out>",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 1,
