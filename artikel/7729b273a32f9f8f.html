@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Qwen maler med kode – og du kan rette bagefter</title>
-<meta name="description" content="Forskere har trænet Qwen til at skrive JavaScript-kode, der tegner billeder, så du kan redigere detaljer uden at starte forfra.">
+<title>AI-nyheder.com · Cameron træner AI til at male med kode</title>
+<meta name="description" content="Et nyt projekt lærer AI at skabe billeder ved at skrive kode. Resultatet kan redigeres direkte, uden at du skal skrive nye prompts.">
 <link rel="canonical" href="https://ainyheder.com/artikel/7729b273a32f9f8f.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Qwen maler med kode – og du kan rette bagefter">
-<meta property="og:description" content="Forskere har trænet Qwen til at skrive JavaScript-kode, der tegner billeder, så du kan redigere detaljer uden at starte forfra.">
+<meta property="og:title" content="Cameron træner AI til at male med kode">
+<meta property="og:description" content="Et nyt projekt lærer AI at skabe billeder ved at skrive kode. Resultatet kan redigeres direkte, uden at du skal skrive nye prompts.">
 <meta property="og:url" content="https://ainyheder.com/artikel/7729b273a32f9f8f.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen maler med kode – og du kan rette bagefter", "description": "Forskere har trænet Qwen til at skrive JavaScript-kode, der tegner billeder, så du kan redigere detaljer uden at starte forfra.", "url": "https://ainyheder.com/artikel/7729b273a32f9f8f.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/7729b273a32f9f8f.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-23T19:39:29+00:00", "articleSection": "Forskning", "isBasedOn": "https://surya.website/rling-qwen-to-paint-with-code"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Cameron træner AI til at male med kode", "description": "Et nyt projekt lærer AI at skabe billeder ved at skrive kode. Resultatet kan redigeres direkte, uden at du skal skrive nye prompts.", "url": "https://ainyheder.com/artikel/7729b273a32f9f8f.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/7729b273a32f9f8f.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-23T19:39:29+00:00", "articleSection": "Forskning", "isBasedOn": "https://surya.website/rling-qwen-to-paint-with-code"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -54,18 +54,18 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">Forskning · Hacker News: AI · 2026-08-23</div>
-<h1>Qwen maler med kode – og du kan rette bagefter</h1>
-<p class="manchet">Forskere har trænet Qwen til at skrive JavaScript-kode, der tegner billeder, så du kan redigere detaljer uden at starte forfra.</p>
+<h1>Cameron træner AI til at male med kode</h1>
+<p class="manchet">Et nyt projekt lærer AI at skabe billeder ved at skrive kode. Resultatet kan redigeres direkte, uden at du skal skrive nye prompts.</p>
 
-<h2>Nyt trick</h2>
-<p>Normalt kan du kun påvirke et AI-billede gennem prompten – du kan ikke pille i selve billedet. To forskere har nu trænet en model til at skrive JavaScript-kode, der tegner billedet. Koden kan du ændre bagefter, så du kan rette detaljer uden at starte forfra med en ny prompt.</p>
-<h2>Sådan lærte den</h2>
-<p>Systemet arbejder i en loop: Modellen får en besked som &#x27;tegn en hibiscus i akvarel&#x27;, skriver koden, og billedet bliver bedømt af en anden AI. Den sammenligner med håndudvalgte referencebilleder og giver karakterer. Først sad modellen fast på samme kedelige blomst, men efter at forskerne ændrede belønningssystemet, gik det tre gange så hurtigt og blev langt bedre.</p>
-<h2>Hemmeligheden</h2>
-<p>Den første version brugte ni forskellige kriterier – blandt andet om koden var lang nok. Det lærte modellen at snyde. Den nye metode bruger kun fire, hvor det vigtigste er, om billedet er pænere end to tilfældige referencebilleder. Modellen producerer nu kode på under 2.000 enheder i stedet for 13.500 – og billederne er bedre.</p>
+<h2>Idéen bag</h2>
+<p>Normalt kan du kun påvirke et AI-billede gennem din tekst-prompt. Vil du ændre noget, må du starte forfra. Cameron og en ven trænede derfor en AI-model til at skrive JavaScript-kode, der tegner billedet. Koden kan rettes direkte, så du kan tweake enkelte dele uden at lave det hele om. Projektet undersøger også, hvordan man belønner kreativt arbejde, når der ikke er ét entydigt rigtigt svar.</p>
+<h2>Belønnings-systemet</h2>
+<p>Forskerne startede med et belønningssystem med <strong>ni</strong> forskellige kriterier, der blandt andet tjekkede kode-længde og brugte flere kvalitets-dommere. Modellen gik i stå og lavede kun kedelige clip-art blomster. Problemet var, at fem af signalerne målte næsten det samme, og ét fyldte for meget. De nye kriterier fik modellen til at køre <strong>tre gange hurtigere</strong> og overskride det gamle loft.</p>
+<h2>Sammenligning virker</h2>
+<p>Løsningen var at droppe points fra nul til ti og i stedet lade modellen sammenligne to billeder og vælge det bedste. De brugte <strong>117</strong> håndudvalgte reference-billeder fra en samling på <strong>1.664</strong> som målestok. Modellen lærte hurtigere at lave smukke akvareller, og koden blev meget kortere – fra <strong>13.500</strong> til under <strong>2.000</strong> tokens. Næste skridt er at udvikle et belønnings-system, der er endnu mere følsomt over for æstetik.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>Modellen skriver p5.brush JavaScript-kode, som bliver tegnet i et sandboxed miljø.</li><li>Den oprindelige rubric havde ni signaler, som sad fast på 0.65 reward.</li><li>Fire kvalitetsdommere og prompt-adherence korrelerede med 0.85-0.95 – de målte det samme.</li><li>Ny metode bruger pairwise-sammenligning mod 117 håndudvalgte kærligheds-billeder.</li><li>Modellen gik tre gange hurtigere forbi plateauet og fortsatte opad.</li><li>Kode komprimeret fra 13.500 til under 2.000 tokens.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan snart redigere AI-billeder direkte i koden i stedet for at skrive nye prompts – det giver dig meget finere kontrol over det endelige resultat.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>AI-modellen skriver JavaScript-kode i p5.brush, som tegner billedet.</li><li>Koden giver mulighed for direkte at redigere i det genererede billede.</li><li>Det gamle system brugte ni forskellige belønningssignaler.</li><li>De nye kriterier vejer HPSv3 og sammenligning mod referencer højest.</li><li>1.664 billeder blev håndvurderet; kun 117 blev brugt som reference.</li><li>Modellen nåede samme niveau tre gange hurtigere end før.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan snart redigere AI-billeder direkte i stedet for at skrive nye prompts. Det giver dig mere kontrol og kreativ frihed.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://surya.website/rling-qwen-to-paint-with-code" rel="noopener">Hacker News: AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

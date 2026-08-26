@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-25T21:55:09.305213+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-08-26T02:11:56.931392+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
+   "i_listen": 20,
    "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "OpenAI vil give alle adgang til AI-agenter",
-     "dato": "",
-     "foerst_set": "2026-08-25T13:29:53.505734+00:00",
-     "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI satser på AI-agenter til alle kontorfolk"
-    },
     {
      "rubrik": "Google vil gøre AI til din nye studiekammerat",
      "dato": "",
@@ -68,6 +59,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får usynligt vandmærke på alt indhold"
+    },
+    {
+     "rubrik": "Generalist rammer 3 milliarder dollars i værdi",
+     "dato": "2026-08-26T00:40:59",
+     "foerst_set": "2026-08-26T02:11:56",
+     "link": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
+     "side": "artikel/032f5fcc6f778b71.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI mister topchef for datacentre – Chris Malone er væk",
+     "dato": "2026-08-26T00:06:20",
+     "foerst_set": "2026-08-26T02:11:56",
+     "link": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
+     "side": "artikel/8c02d9ad51cf3f91.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Stability AI henter 76 millioner dollars hos pladegiganterne",
@@ -115,6 +124,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI: AI-agenter til alle – og prisen falder 80 procent",
+     "dato": "2026-08-25T12:00:00",
+     "foerst_set": "2026-08-25T13:29:53",
+     "link": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/",
+     "side": "artikel/93a87e369cbc9183.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI-fonden Situational Awareness granskes af SEC",
      "dato": "2026-08-25T00:23:12",
      "foerst_set": "2026-08-25T02:06:26",
@@ -147,33 +165,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-24T19:11:20",
      "link": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
      "side": "artikel/a34ef28c4aefb76a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "General Intuition henter milliarder til robotter",
-     "dato": "2026-08-24T15:24:18",
-     "foerst_set": "2026-08-24T16:05:41",
-     "link": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
-     "side": "artikel/0565e9e7b1546245.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI satser på AI-agenter til alle kontorfolk",
-     "dato": "2026-08-24T15:00:00",
-     "foerst_set": "2026-08-24T15:11:40",
-     "link": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
-     "side": "artikel/e0099f0b8b4510a5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hugging Face solgt for 13 milliarder dollar?",
-     "dato": "2026-08-24T13:47:26",
-     "foerst_set": "2026-08-24T14:20:09",
-     "link": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
-     "side": "artikel/aa2dd08ad7dad188.html",
      "hvor": "forside",
      "under": ""
     }
@@ -935,10 +926,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "URLError: <urlopen error timed out>",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -949,6 +940,60 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "Pangram-analyse: AI dominerer Hacker News",
+     "dato": "2026-08-25T15:23:41",
+     "foerst_set": "2026-08-25T17:07:16",
+     "link": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+     "side": "artikel/9c927ffa8ebd581a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cameron træner AI til at male med kode",
+     "dato": "2026-08-23T19:39:29",
+     "foerst_set": "2026-08-25T15:23:37",
+     "link": "https://surya.website/rling-qwen-to-paint-with-code",
+     "side": "artikel/7729b273a32f9f8f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Lars Faye: AI gør nye kodere dårligere",
+     "dato": "2026-08-24T15:52:33",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "side": "artikel/e57c577525febf0a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Han byggede AI'en Varkos til at spille Skyrim med sig",
+     "dato": "2026-08-23T23:18:17",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://pantel.is/projects/ai-gaming-companion/",
+     "side": "artikel/a025a03650ffadbc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropics topmodel taber til billigere AI",
+     "dato": "2026-08-23T18:16:37",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+     "side": "artikel/15d6d8e1489e0151.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kimi K3 og GLM-5.3 hacker Amazons tablet på en dag",
+     "dato": "2026-08-23T14:23:09",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://ericpardee.github.io/fire-hd-ownership/",
+     "side": "artikel/a125f971489fac2b.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
