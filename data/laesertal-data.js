@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-26T13:38:22.836618+00:00",
+ "opdateret": "2026-08-26T14:22:42.559501+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      1,
      26,
      25,
-     26
+     27
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      3,
      5,
-     3
+     4
     ]
    },
    {
@@ -342,7 +342,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 60
+   "besoeg": 54
   }
  ],
  "ai_chats": [],
