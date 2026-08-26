@@ -1,7 +1,182 @@
 {
-  "opdateret": "2026-08-26T14:21:48.773209+00:00",
+  "opdateret": "2026-08-26T16:02:09.433727+00:00",
   "antal": 114,
   "artikler": [
+    {
+      "titel": "Radar makes podcasts searchable — and usable by AI agents",
+      "link": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/",
+      "resume": "Particle’s new podcast intelligence platform transcribes and analyzes more than 130,000 podcasts, making their conversations searchable on the web and accessible to AI agents through an API and MCP.",
+      "dato": "2026-08-26T15:47:28+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "eget_foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "rubrik": "Particle lancerer Radar: Søg i 130.000 podcasts",
+      "resume_da": "Particle fra tidligere Twitter-folk lancerer Radar, en søgemaskine, der transskriberer og forstår podcasts - så AI-agenten kan bruge dem.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Particle, startup'en bag AI-nyhedsappen, lancerer nu Radar - en podcast-søgemaskine, der ikke bare transskriberer lyd, men også forstår indholdet. Den kan finde citater, højdepunkter og vigtige emner. Mere end **130.000 podcasts** er allerede indekseret, og der kommer **20.000 nye afsnit** til dagligt."
+        },
+        {
+          "overskrift": "Kunderne",
+          "tekst": "Hedgefonde er de største kunder, fortæller CEO Sara Beykpour. De bruger API'en til at få data, deres AI-agenter ellers ikke kan se. Også AI-søgeplatforme og dataforhandlere betaler godt for adgangen - blandt andet søge-API-udbyderen Exa er partner."
+        },
+        {
+          "overskrift": "Pris og planer",
+          "tekst": "Radar koster **29 dollars** om måneden per bruger, og virksomheder kan få en plan med 20 brugere for **399 dollars** om måneden. API-adgang prissættes individuelt. Fremover vil Particle udvide til andre lydformer som YouTube-videoer og nyhedsklip."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "130.000",
+          "label": "podcasts er indekseret i Radar"
+        },
+        {
+          "tal": "20.000",
+          "label": "nye afsnit tilføjes dagligt"
+        },
+        {
+          "tal": "29 dollars",
+          "label": "pr. måned for en bruger"
+        },
+        {
+          "tal": "399 dollars",
+          "label": "pr. måned for 20 brugere"
+        }
+      ],
+      "detaljer": [
+        "Radar forstår hvem og hvad der diskuteres i podcasts - personer, firmaer og produkter.",
+        "Alerts kan sendes på e-mail, Slack eller webhook, når bestemte emner eller gæster nævnes.",
+        "Værktøjet kan finde selvstændige klip med tidsstempler, så man kan lytte og læse med.",
+        "Der er en dedikeret søgemaskine til podcast-reklamer, så man kan se hvilke firmaer der annoncerer.",
+        "Radar tilbyder også politisk bias-analyse, hitlister og overslag over publikumsstørrelse.",
+        "API'en og MCP gør det muligt for AI-agenter at bruge al lydintelligensen programmatisk."
+      ],
+      "betydning": "Du kan snart få AI-assistenter, der lytter med i podcasts for dig og finder det vigtigste - så du sparer timevis af lyttetid.",
+      "pointer": [
+        "Radar gør podcasts søgbare og forståelige for AI.",
+        "Hedgefonde er de største betalende kunder.",
+        "130.000 podcasts er allerede indekseret.",
+        "Tjenesten koster 29 dollars om måneden."
+      ],
+      "side": "artikel/cbe393ca06449a5b.html"
+    },
+    {
+      "titel": "Ex-Meta scientists want to bring visual AI to the factory floor",
+      "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
+      "resume": "Perceptron offers an AI model that it says can help machines navigate the world while also providing in-depth visual intelligence.",
+      "dato": "2026-08-26T15:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "eget_foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "rubrik": "Ex-Meta-forskere vil give robotter syn på fabriksgulvet",
+      "resume_da": "To tidligere Meta-forskere har skabt AI'en Isaac 0.5, der skal hjælpe robotter med at forstå og navigere i lagre og fabrikker. Modellen er open-weight og har fået 21 millioner dollars i støtte.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Perceptron, stiftet i november 2024 af to forskere fra Metas AI-afdeling FAIR, har lanceret deres nyeste model, Isaac 0.5. Modellen giver robotter evnen til at 'opfatte, ræsonnere og handle' i industrielle miljøer som lagre og fabriksgulve. Den kan også udtrække visuel intelligens fra videoer, robotterne selv optager. Isaac 0.5 er open-weight, så alle kan inspicere dens parametre og træningsdata."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Perceptron har rejst **21 millioner dollars** i en fundingrunde ledet af Bessemer Venture Partners. Grundlæggerne Armen Aghajanyan og Akshat Shrivastava ser deres software som fremtiden for industriel automatisering. De mener, at deres model er unik, fordi den er general-purpose og fleksibel, i modsætning til eksisterende modeller, der enten er specialiserede til én opgave eller kræver flere dyre cloud-GPU'er."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Modellen trænes på en million timers generel video samt 'ego-video' fra kameraer båret af mennesker i færd med fysiske opgaver. Perceptron har internt bygget petabyte-store datasæt, der spænder over billeder, tekst, video og robotbevægelser. Softwaren skal hjælpe robotter med at læse labels, lave rumlig analyse og planlægge i hvilken rækkefølge, de skal samle pakker op – alt sammen fleksibelt."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Virksomheden satser på at sælge sit 'intelligenslag' til industrier som produktion, logistik, sikkerhed og mobilitet. Grundlæggerne er overbevist om, at intet lignende findes på markedet i dag. Hvis det lykkes, kan det betyde, at robotter bliver langt mere selvkørende på fabriksgulve og i lagre verden over."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "21 mio. dollars",
+          "label": "rejst i fundingrunde"
+        },
+        {
+          "tal": "1 mio. timer",
+          "label": "video brugt til træning af modellen"
+        }
+      ],
+      "detaljer": [
+        "Isaac 0.5 er en visuel AI-model til industrirobotter.",
+        "Modellen er udgivet som open-weight, så alle kan tjekke den.",
+        "Grundlæggerne arbejdede tidligere i Metas FAIR-afdeling.",
+        "Perceptron blev stiftet i november 2024.",
+        "Modellen er general-purpose og kan tilpasses forskellige miljøer.",
+        "Træningsdata omfatter ego-video og petabyte-store datasæt.",
+        "Virksomheden henvender sig til logistik, produktion og sikkerhed."
+      ],
+      "betydning": "Du kan forvente mere effektive robotter på fabrikker og i lagre – det kan betyde hurtigere leveringer og lavere priser på varer.",
+      "pointer": [
+        "To ex-Meta-forskere står bag Perceptron.",
+        "Isaac 0.5 hjælper robotter med at navigere i lagre og fabrikker.",
+        "Modellen er open-weight og har fået 21 mio. dollars i støtte.",
+        "Perceptron målretter sig logistik, produktion og sikkerhed."
+      ],
+      "navngivet": true,
+      "side": "artikel/11d87780114395c6.html"
+    },
+    {
+      "titel": "Bill Gates wants to see a robot tax and ‘Human Reserved’ jobs to mitigate harms from AI",
+      "link": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
+      "resume": "Gates is mostly in the Responsible AI camp, but there are a few ideas in here we hadn't heard before.",
+      "dato": "2026-08-26T14:37:01+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "eget_foerst_set": "2026-08-26T16:02:09.433727+00:00",
+      "rubrik": "Bill Gates: Beskat robotter og reserver job til mennesker",
+      "resume_da": "Microsofts medstifter foreslår en robot-skat og særlige menneske-reserverede job for at bremse AI's skader på arbejdsmarkedet.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Det nye forslag",
+          "tekst": "Bill Gates vil have en skat på robotter, der erstatter menneskelig arbejdskraft. I dag kan virksomheder trække udgiften til en robot fra med det samme, mens ansatte koster løbende skatter. En robot-skat skulle bremse udskiftningen og finansiere omskoling og socialt sikkerhedsnet."
+        },
+        {
+          "overskrift": "Job med mennesker kun",
+          "tekst": "Han foreslår også at reservere bestemte job til mennesker. For eksempel skal en robot ikke fortælle dig, at du har en uhelbredelig sygdom. Ældre bygningsarbejdere skal ikke tvinges over i plejesektoren. Ordningen skulle udvides gradvist over år eller årtier."
+        },
+        {
+          "overskrift": "Kritik og spørgsmål",
+          "tekst": "Begge idéer vil kunne skære i de store AI-laboratoriers overskud, hvilket måske forklarer, hvorfor de ikke er bredt debatteret. Der mangler svar på, hvem der skal fastsætte reglerne, og hvad de præcist skal indeholde. Gates støtter også et åbent brev om at sænke AI-udviklingen, men tvivler på, at det kan holde."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Gates skrev essayet på sin blog Gates Notes.",
+        "Han bakker op om åbent brev for AI-nedbremsning, men er skeptisk over for holdbarheden.",
+        "Robot-skat skal modvirke skattefordele ved at erstatte ansatte med maskiner.",
+        "Virkeligheden: robot-skat finansierer omskoling og styrket sikkerhedsnet.",
+        "Menneske-reserverede job skal beskytte dem, der ikke let kan skifte branche.",
+        "Eksempel: robotter bør ikke formidle dårlige diagnoser til patienter.",
+        "Idéerne vil reducere overskuddet hos store AI-laboratorier."
+      ],
+      "betydning": "Du kan få sværere ved at få erstatninger, hvis din branche bliver menneske-reserveret – og din virksomhed kan komme til at betale mere for at automatisere.",
+      "pointer": [
+        "Gates foreslår skat på robotarbejde.",
+        "Visse job skal kun varetages af mennesker.",
+        "Støtter AI-nedbremsning, men tvivler på holdbarhed.",
+        "Store AI-laboratorier kan miste overskud."
+      ],
+      "billedmotiv": "En sparegris af glas med en robotarm, der forsøger at stikke en mønt ned i sprækken, mens en lille seddel med ordet 'SKAT' er tapet på siden.",
+      "side": "artikel/a09ccde75b1bdbb6.html"
+    },
     {
       "titel": "Surprise: Z.ai is the AI lab behind the mysterious Ox Alpha model",
       "link": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
@@ -13,8 +188,7 @@
       "eget_foerst_set": "2026-08-26T14:21:48.773209+00:00",
       "rubrik": "Z.ai afsløret som skaberen af mystiske Ox Alpha",
       "resume_da": "Det kinesiske AI-laboratorium Z.ai står bag den anonyme model Ox Alpha, der imponerer på benchmarks. Vægtene frigives onsdag.",
-      "kat_ai": true,
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Mysteriet løst",
@@ -29,9 +203,8 @@
           "tekst": "Ox Alpha er endnu et eksempel på billige, dygtige kinesiske modeller, der kan true dyre frontløbere som OpenAI og Anthropic. Tidligere på måneden udgav Z.ai **GLM-5.3**, som på visse benchmarks matcher Anthropics Fable 5. Hugging Face brugte også GLM til at forsvare sig mod OpenAI-agenter."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Ox Alpha blev lanceret anonymt på OpenRouter og toppede benchmarks mod de bedste modeller.",
         "Z.ai bekræftede over for Bloomberg, at Ox Alpha er en del af GLM-serien.",
@@ -48,6 +221,8 @@
         "Kinesiske modeller presser de dyre."
       ],
       "billedmotiv": "Et nøgent kredsløbskort i sort glas med en sløret gul mærkat, hvorpå der står 'Ox' håndskrevet med sprittusch.",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/f3d6254f8558d729.html"
     },
     {
@@ -59,10 +234,9 @@
       "kategori": "Forskning",
       "foerst_set": "2026-08-26T14:21:48.773209+00:00",
       "eget_foerst_set": "2026-08-26T14:21:48.773209+00:00",
-      "kat_ai": true,
-      "prio": 5,
       "rubrik": "Unitree-aktien styrtdykker: Robotterne mangler hjerne",
       "resume_da": "Kinesiske Unitree har mistet halvdelen af værdien efter børsdebuten. Eksperter siger, at robotternes fysik er fin, men hjernen halter bagefter.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Børskollaps",
@@ -81,9 +255,8 @@
           "tekst": "Hvornår kommer robotternes store gennembrud? Wayve-chefen drømmer om 'eyes-off autonomy' i biler for under **$1000** i hardware. Andre håber på en robot, der bare virker – du taler til den, og den rydder bordet. Men måske bliver der aldrig ét stort øjeblik, spår Foxglove-chefen – det bliver en mere gradvis udvikling."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Unitree mistede næsten halvdelen af sin værdi efter børsnoteringen.",
         "Antal deltagere på Actuate-konferencen er tredoblet siden 2023.",
@@ -100,8 +273,10 @@
         "Specialiserede robotter rykker ud i marken først.",
         "Et stort ChatGPT-øjeblik er ikke sikkert."
       ],
-      "navngivet": true,
       "billedmotiv": "En håndlignende metalarm uden overdel, fastgjort til en sokkel med løse skruer, holdt op af en åben bog med matematiske formler.",
+      "kat_ai": true,
+      "prio": 5,
+      "navngivet": true,
       "side": "artikel/9744030eca879303.html"
     },
     {
@@ -281,7 +456,7 @@
     {
       "titel": "Runable hits $21M to bet AI agents can go from building businesses to growing them",
       "link": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
-      "resume": "Runable says 60%–70% of its 1 trillion-plus token usage in the last 90 days came from paying customers.",
+      "resume": "Runable says 60% to 70% of its 1 trillion-plus token usage in the last 90 days came from paying customers.",
       "dato": "2026-08-26T11:00:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
@@ -3031,118 +3206,6 @@
       "side": "artikel/b4f331f2e15ca85e.html"
     },
     {
-      "titel": "Amjad Masad, CEO and co-founder of Replit, joins the Disrupt Stage at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/",
-      "resume": "At TechCrunch Disrupt 2026, Replit CEO Amjad Masad will share his perspective on the future of programming and Replit's role in developing it.",
-      "dato": "2026-08-24T19:54:19+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-24T19:56:33.413532+00:00",
-      "eget_foerst_set": "2026-08-24T19:56:33.413532+00:00",
-      "rubrik": "Amjad Masad taler om AI-tidens kodning på Disrupt",
-      "resume_da": "Replit-stifteren fortæller om fremtidens programmering, da AI gør kode til noget alle kan lave. Også på scenen: milliardvækst og nye værktøjer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvem er han?",
-          "tekst": "Amjad Masad er topchef og medstifter af Replit, en platform hvor både begyndere og professionelle kan skrive og køre kode i browseren. Han har været med i ti år, men de seneste halvandet år er eksploderet. Til TechCrunch Disrupt 2026 fortæller han, hvordan AI gør det muligt for helt almindelige mennesker at bygge software - noget der før krævede mange års erfaring."
-        },
-        {
-          "overskrift": "Pengene bag",
-          "tekst": "Replits omsætning gik fra **2,8 millioner dollars** i 2024 til at sigte mod **en milliard dollars** årligt nu. Investorer har kvitteret med en markedsværdi på **9 milliarder dollars** i starten af året - kun et halvt år efter en værdiansættelse på 3 milliarder. Det viser, hvor vildt markedet tror på, at AI kan gøre alle til udviklere."
-        },
-        {
-          "overskrift": "Hvad sker der?",
-          "tekst": "Masad skal diskutere, om Replit kun hjælper folk med at lave prototyper - eller om platformen også kan føre et godt første udkast hele vejen til et færdigt produkt. Samtalen finder sted i San Francisco den **13.-15. oktober** sammen med tusindvis af stiftere, investorer og teknikfolk. Der er også fokus på, hvordan man bygger en bæredygtig virksomhed i AI-æraen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1 mia. dollars",
-          "label": "årlig omsætning, Replit sigter mod nu"
-        },
-        {
-          "tal": "9 mia. dollars",
-          "label": "markedsværdi, efter at investorerne sagde god for væksten"
-        },
-        {
-          "tal": "2,8 mio. dollars",
-          "label": "omsætning i 2024 - før AI-boomet for alvor tog fat"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Replit blev grundlagt for ti år siden af Amjad Masad.",
-        "De seneste 18 måneder har været de største for virksomheden.",
-        "Masad taler på TechCrunch Disrupt 2026 i Moscone West, San Francisco.",
-        "Billetter koster op til 300 dollars mindre ved køb før 25. august.",
-        "Over 10.000 stiftere, investorer og tech-folk forventes til konferencen."
-      ],
-      "betydning": "Du kan snart bruge AI til at kode uden at være ekspert, og Replit viser, at markedet vokser voldsomt. Det kan ændre, hvordan software skabes i din hverdag.",
-      "pointer": [
-        "Replit-ceo taler på Disrupt om AI-kodning.",
-        "Omsætning vokser fra 2,8 mio. til 1 mia. dollars.",
-        "Værdiansættelse sprang fra 3 til 9 mia. dollars.",
-        "Konferencen er 13.-15. oktober i San Francisco."
-      ],
-      "kat_ai": true,
-      "prio": 3,
-      "side": "artikel/7e3bc60a8a1a8cb9.html"
-    },
-    {
-      "titel": "Instinct’s powerful AI assistant is raising privacy and security concerns",
-      "link": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
-      "resume": "Early testers are raving about what Instinct can do, but some say the AI assistant’s sweeping access, broad terms and ability to act on users’ behalf come with uncomfortable trade-offs.",
-      "dato": "2026-08-24T18:03:55+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-24T19:11:20.353810+00:00",
-      "eget_foerst_set": "2026-08-24T19:11:20.353810+00:00",
-      "rubrik": "Spear Street Technologys AI-assistent bekymrer med din data",
-      "resume_da": "Den populære AI-assistent Instinct fra Spear Street Technology giver sig selv ret til at gemme og bruge dine data for evigt. Testpersoner advarer om manglende sikkerhed.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad kan den?",
-          "tekst": "Instinct er en personlig AI-assistent, der kan booke borde, købe billetter, rydde op i din indbakke og meget mere. Den kobler sig på din mail, kalender, skærm og mikrofon – og du kan styre den via SMS eller WhatsApp. Testpersoner kalder den magisk, men der er en bagside."
-        },
-        {
-          "overskrift": "Bekymrende vilkår",
-          "tekst": "Instincts servicevilkår giver virksomheden en evig ret til at bruge, gemme og dele alt, du lægger ind i den – også til træning af deres AI-modeller. Den må endda indgå aftaler på dine vegne. Det har fået flere til at dele skærmbilleder og advare om, at man giver nøglerne væk."
-        },
-        {
-          "overskrift": "Kritik fra brugere",
-          "tekst": "En tidlig bruger, Peter Yang, opdagede, at Instinct ikke ville slette hans mails. En anden, Claire Vo, fik stadig opsummeringer, selvom hun havde afbrudt adgangen – mails lå i klartekst. En tredje fandt ud af, at boten let kan narres til at udføre skadelige opgaver. Flere har slettet deres konto."
-        },
-        {
-          "overskrift": "Stor interesse",
-          "tekst": "Trods kritikken er interessen enorm, og investorer som Kleiner Perkins har angiveligt skudt penge i selskabet bag. Mange ser Instinct som fremtiden for personlige assistenter, men spørgsmålet er, om du er villig til at handle dit privatliv væk for bekvemmelighed."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Instinct er stadig i privat beta, så problemerne er ikke ramt alle endnu.",
-        "Virksomheden bag hedder Spear Street Technology og er fra San Francisco.",
-        "Vilkårene giver Instinct en evig licens til at bruge og ændre dine data.",
-        "Peter Yang fandt, at Instinct ikke slettede hans Gmail-data – men det er rettet.",
-        "Claire Vo fik mail-opsummeringer, selv efter hun havde afbrudt adgangen.",
-        "En tester fik Instinct til at booke bord via en bekræftelseskode fra indbakken.",
-        "Instinct har ikke svaret offentligt på kritikken på sociale medier."
-      ],
-      "betydning": "Når du bruger sådan en assistent, giver du nøglerne til dit digitale liv – og der er ingen garanti for, at dine data bliver slettet. Tænk dig om, før du giver adgang.",
-      "pointer": [
-        "Instinct giver sig selv evig ret til dine data.",
-        "Kritikere advarer om manglende sletningsmuligheder.",
-        "Flere har slettet kontoen efter sikkerhedsproblemer.",
-        "Investorer satser alligevel stort på tjenesten."
-      ],
-      "billedmotiv": "En fyldt papirkurv med en robotarm løftet i vejret, klar til at kaste en farverig brik med hjertesymbol på tallerkenen ved siden af et ensomt krus.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/a34ef28c4aefb76a.html"
-    },
-    {
       "titel": "Nvidia senior manager tied to ex-Supermicro staff's AI smuggling scheme",
       "link": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/",
       "resume": "Nvidia worker indicted after Jensen Huang scolded Supermicro for AI server smuggling.",
@@ -3207,68 +3270,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/b6331696a2eab7d9.html"
-    },
-    {
-      "titel": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
-      "link": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
-      "resume": "General Intuition, the startup building a foundation model that trains generalized AI agents how to move through space and time, is in talks to raise at a $6 billion pre-money valuation from new investors including Valor Ventures, Point72 Ventures, and Seven Seven Six.",
-      "dato": "2026-08-24T15:24:18+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-24T16:05:41.196330+00:00",
-      "eget_foerst_set": "2026-08-24T16:05:41.196330+00:00",
-      "rubrik": "General Intuition henter milliarder til robotter",
-      "resume_da": "AI-startup'en General Intuition er på vej til at rejse penge til en værdi af 60 milliarder kroner og vil bygge robotter, der lærer af computerspil.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kæmpe hop i værdi",
-          "tekst": "General Intuition, der laver AI-modeller, som skal give robotter og andre maskiner en form for intuition, er ifølge kilder tæt på at rejse penge til en vurdering på **60 milliarder kroner**. Det er et kæmpehop fra de **23 milliarder kroner**, som selskabet blev vurderet til for bare få uger siden, hvor det hentede **3,2 milliarder kroner**."
-        },
-        {
-          "overskrift": "Lærer af spil",
-          "tekst": "Firmaet blev stiftet i oktober af **Pim de Witte**, der tidligere lavede spilplatformen Medal. Modellen er trænet på hundredvis af millioner timers gameplay, hvor man har optaget præcis, hvilke knapper spillerne trykkede på. Den viden skal lære maskiner at handle i den virkelige verden."
-        },
-        {
-          "overskrift": "Pengene bag",
-          "tekst": "Investorer som **Valor Equity Partners**, der også har støttet SpaceX, og **Point72 Ventures** er blandt dem, der vil skyde penge i projektet. Flere eksisterende investorer er også med. Rundens popularitet gør, at flere vil være med, end der er plads til, og pengene skal gå til mere computerkraft og flere ansatte."
-        },
-        {
-          "overskrift": "Vejen til robotter",
-          "tekst": "Pengene skal især gå til at gøre modellen bedre til at styre fysiske robotter. Firmaet samarbejder med cloududbyderen CoreWeave om at få nok computerkraft. Målet er at skabe en model, der kan løse opgaver, den aldrig er blevet trænet til – lidt ligesom menneskelig intuition."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "60 milliarder kr.",
-          "label": "vurdering i ny fundingrunde"
-        },
-        {
-          "tal": "3,2 milliarder kr.",
-          "label": "rejst for få uger siden"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "General Intuition er en AI-startup fra New York, der vil bygge robotter med intuition.",
-        "Selskabet er stiftet af Pim de Witte, som tidligere skabte spilplatformen Medal.",
-        "Modellen trænes på hundredvis af millioner timers gameplay fra Medal.",
-        "Runden er overtegnet, siger en kilde tæt på forhandlingerne.",
-        "Investorer som Valor Equity Partners og Point72 Ventures er med i runden.",
-        "Pengene skal gå til computerinfrastruktur og flere ansatte til robotarbejde.",
-        "Firmaet samarbejder med CoreWeave om computerkraft."
-      ],
-      "betydning": "Du får snart robotter, der bedre kan navigere i den virkelige verden, fordi de har lært af computerspil – og investorerne satser milliarder på, at det virker.",
-      "pointer": [
-        "Værdispring fra 23 til 60 milliarder kroner på få uger.",
-        "Modellen lærer af spillernes knaptryk i computerspil.",
-        "Robotter skal kunne løse opgaver, de aldrig har set før.",
-        "SpaceX-investor bakker op om AI-projektet."
-      ],
-      "billedmotiv": "En tom spillekonsol-controller med en lille robotarm, der holder et prisskilt med tallet 60 milliarder.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/0565e9e7b1546245.html"
     },
     {
       "titel": "How to encourage smarter AI use in the classroom",
