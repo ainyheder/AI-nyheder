@@ -1,7 +1,61 @@
 {
-  "opdateret": "2026-08-26T11:03:51.335685+00:00",
+  "opdateret": "2026-08-26T11:58:43.011107+00:00",
   "antal": 113,
   "artikler": [
+    {
+      "titel": "IBM's new Granite 4.2 models ride the wave of interest in local LLMs",
+      "link": "https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms/",
+      "resume": "The focus is on agentic capability and predictable enterprise deployment.",
+      "dato": "2026-08-26T11:10:49+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-26T11:58:43.011107+00:00",
+      "eget_foerst_set": "2026-08-26T11:58:43.011107+00:00",
+      "rubrik": "IBM lancerer Granite 4.2: AI der kan tænke lokalt",
+      "resume_da": "IBM har udgivet nye AI-modeller, der kan downloades og køre på din egen computer. De er trænet til at løse opgaver og er et billigere alternativ til cloud-tjenester.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "IBM har rullet tre nye AI-modeller ud under navnet Granite 4.2 i størrelserne **3B**, **8B** og **30B** parametre. Modellerne kan downloades og køre lokalt på egen hardware, hvilket gør dem attraktive for virksomheder, der vil undgå store cloud-regninger. De to største er ekstra trænet til at bruge værktøjer som at søge på nettet eller styre programmer."
+        },
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "Interessen for lokale AI-modeller er eksploderet, fordi cloud-tjenester fra OpenAI og Anthropic er blevet dyre. Med Granite 4.2 kan udviklere og firmaer køre AI'en på egne maskiner uden at betale per forespørgsel. IBM lægger vægt på stabile og forudsigelige resultater frem for at være hurtigst på markedet."
+        },
+        {
+          "overskrift": "Hvad betyder det?",
+          "tekst": "De nye modeller kan håndtere tekstsvare på op til **128.000** tegn ad gangen og er designet til at tænke i flere trin, så svarene bliver mere præcise. Til gengæld kræver de mere computerkraft og kan svare langsommere end enkle modeller. IBM kalder selv serien for sin 'ræsonnerende' udgave af Granite-familien."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "128.000",
+          "label": "tegn i kontekstvinduet på én gang"
+        }
+      ],
+      "detaljer": [
+        "Tre størrelser: 3B, 8B og 30B parametre.",
+        "De to største er trænet til at bruge terminal, web og eksterne værktøjer.",
+        "3B-modellen understøtter også værktøjer, men uden samme specialtræning.",
+        "Modellerne kan downloades og køres på egen hardware.",
+        "IBM fokuserer på stabile, forudsigelige udrulninger i virksomheder.",
+        "Lokale modeller er populære som billigere alternativ til cloud-AI.",
+        "Model-routing bliver mere udbredt for at balancere pris og hastighed."
+      ],
+      "betydning": "Du kan fremover få AI-hjælp på din egen maskine uden abonnement eller per-brug-betaling – perfekt til opgaver, der kræver diskretion eller lavere omkostninger.",
+      "pointer": [
+        "Granite 4.2 kører lokalt på egen hardware.",
+        "Tre størrelser: 3B, 8B og 30B parametre.",
+        "De største er trænet til at bruge værktøjer.",
+        "Svar kan være langsommere men mere præcise."
+      ],
+      "billedmotiv": "En åben, lille æske med tre udtagelige, farvekodede chipmoduler, hvor det mindste har et håndtag.",
+      "side": "artikel/c0735f59ecd6f405.html"
+    },
     {
       "titel": "Raised on AI",
       "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
@@ -1745,8 +1799,7 @@
       "eget_foerst_set": "2026-08-25T17:59:22.542525+00:00",
       "rubrik": "OpenAI lancerer admin-plugin til ChatGPT Work",
       "resume_da": "OpenAI har udgivet et admin-plugin til ChatGPT Work og Codex, så virksomheder kan få styr på brug, medlemmer og tilladelser på én central plads.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Overblik på én skærm",
@@ -1757,9 +1810,8 @@
           "tekst": "Ud over overblikket kan du handle direkte i pluginet. Du kan tilføje eller fjerne medlemmer, justere deres tilladelser og sætte grænser for, hvor meget de må bruge. Desuden kan du behandle admin-anmodninger, som dukker op, og dermed håndtere de daglige forespørgsler fra brugerne uden at skulle skifte mellem flere værktøjer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Admin-pluginet er til ChatGPT Work og Codex",
         "Det giver analyse af workspace-aktivitet og brug",
@@ -1774,6 +1826,8 @@
         "Medlemmer og tilladelser kan styres direkte",
         "Plugin rettet mod ChatGPT Work og Codex"
       ],
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/bbe7f12da309c369.html"
     },
     {
@@ -2158,8 +2212,7 @@
       "eget_foerst_set": "2026-08-25T13:29:53.505734+00:00",
       "rubrik": "OpenAI: ChatGPT Work skal klare dine kedelige opgaver",
       "resume_da": "OpenAI vil gøre AI-agenter til alles kollega med ChatGPT Work. Produktchefen afslører, hvordan de vil lokke skeptikere til.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
@@ -2174,8 +2227,6 @@
           "tekst": "OpenAI vil gøre det naturligt at tale med sin computer, ikke bare skrive til den. Næste skridt er, at modellen selv finder ud af, hvad du har brug for, så du ikke skal lære at betjene et program. Sottiaux understreger, at sikkerheden får store investeringer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "80 %",
@@ -2186,6 +2237,7 @@
           "label": "brugere af ChatGPT Work"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "ChatGPT Work er en platform til kontorarbejdere, der bruger AI-agenter til at løse opgaver.",
         "Produktchef Thibault Sottiaux leder alle OpenAIs kerne-produkter inklusiv ChatGPT og Codex.",
@@ -2201,6 +2253,8 @@
         "Produktchefen lover mere værdi for pengene over tid.",
         "AI-modellen får adgang til e-mail og iMessage."
       ],
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/93a87e369cbc9183.html"
     },
     {
@@ -5612,68 +5666,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/bfba153feb2e03a7.html"
-    },
-    {
-      "titel": "Terabytes of credentials leaked in massive supply-chain attack",
-      "link": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
-      "resume": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
-      "dato": "2026-08-12T21:43:21+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-12T22:26:02.586959+00:00",
-      "eget_foerst_set": "2026-08-12T22:26:02.586959+00:00",
-      "rubrik": "Kæmpe læk: LiteLLM afslørede tusinders hemmeligheder",
-      "resume_da": "Et hackerangreb på AI-værktøjet LiteLLM har lækket adgangskoder fra tusindvis af organisationer, herunder Microsoft, Amazon og Cisco.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er sket?",
-          "tekst": "Sikkerhedsfirmaerne CloudSEK og Hudson Rock afslørede, at hackere fik adgang til enorme mængder adgangskoder og nøgler fra mindst **2.500** organisationer via et angreb på det populære AI-værktøj LiteLLM i marts. Angrebet varede kun **40 minutter**, men nåede at stjæle data fra nogle af verdens største virksomheder, herunder Microsoft, Amazon, Cisco, Samsung og Salesforce."
-        },
-        {
-          "overskrift": "Hvordan gik det til?",
-          "tekst": "Angrebet startede med en kompromitteret version af sikkerhedsværktøjet Trivy, som spredte sig til andre populære programmer, herunder LiteLLM. Hackergruppen TeamPCP, bestående af teenagere, indbyggede skadelig kode, der tømte ofrenes computerhukommelse. Udviklere, der downloadede de inficerede versioner fra PyPI, fik dermed hele deres pipelines eksponeret, og data blev sendt til hackernes egen server."
-        },
-        {
-          "overskrift": "Tallet der chokerer",
-          "tekst": "De to sikkerhedsfirmaer estimerer, at hele **434.000** CI/CD-pipelines fik lækket adgangskoder. Mange af dem er stadig aktive, fordi organisationerne slet ikke ved, at de er ramt. Flere virksomheder har reageret sløvt: En af dem forsikrede, at de havde roteret alle koder, men en sikkerhedsforsker testede dem og fandt, at næsten alle stadig virkede."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Alle med version 1.82.7 eller 1.82.8 af LiteLLM opfordres til straks at skifte alle adgangskoder, nøgler og tokens. Sikkerhedsfirmaerne advarer om, at dette kun er starten på en ny bølge af angreb, hvor ét enkelt kompromitteret open source-værktøj kan ramme tusindvis af virksomheder på én gang."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "2.500",
-          "label": "organisationer fik lækket adgangskoder"
-        },
-        {
-          "tal": "434.000",
-          "label": "softwaresystemer fik eksponeret adgangsdata"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Microsoft, Amazon, Cisco, Samsung og Salesforce er blandt de ramte.",
-        "Angrebet varede kun 40 minutter i marts.",
-        "TeamPCP, en gruppe teenagere, tog æren for angrebet.",
-        "Op til 195TB data blev analyseret af sikkerhedsforskerne.",
-        "LiteLLM-versionerne 1.82.7 og 1.82.8 var kompromitteret.",
-        "Sikkerhedsværktøjet Trivy blev brugt som indgang til angrebet.",
-        "Mange organisationer ved ikke, at deres data er lækket."
-      ],
-      "betydning": "Hvis du arbejder med softwareudvikling, kan dine adgangskoder allerede være på nettet - skift dem med det samme, hvis dit firma brugte LiteLLM.",
-      "pointer": [
-        "LiteLLM-leak ramte 2.500 firmakonti",
-        "40 minutter var nok til massivt tyveri",
-        "Microsoft og Amazon blandt ofrene",
-        "Mange koder er stadig aktive i dag"
-      ],
-      "billedmotiv": "En bunke nøgler låst inde i en åben transparent boks med et gigantisk hængelås, der har et synligt hul i siden.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/04a3c04ecceac20c.html"
     },
     {
       "titel": "How RingCentral builds AI-native work from engineering to ops",

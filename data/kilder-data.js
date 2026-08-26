@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-26T11:03:51.335685+00:00",
+ "opdateret": "2026-08-26T11:58:43.011107+00:00",
  "artikler_i_alt": 113,
  "kilder": [
   {
@@ -322,6 +322,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "IBM lancerer Granite 4.2: AI der kan tænke lokalt",
+     "dato": "2026-08-26T11:10:49",
+     "foerst_set": "2026-08-26T11:58:43",
+     "link": "https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms/",
+     "side": "artikel/c0735f59ecd6f405.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Robotløb i Beijing: Rekorder og robotter i flammer",
      "dato": "2026-08-25T20:59:03",
      "foerst_set": "2026-08-25T21:55:09",
@@ -417,15 +426,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-17T21:45:37",
      "link": "https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts/",
      "side": "artikel/4a3b0b8abdbf1f3c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Airtag afslører: Amazon makulerer sjældne bøger",
-     "dato": "2026-08-17T18:13:47",
-     "foerst_set": "2026-08-17T19:46:44",
-     "link": "https://arstechnica.com/tech-policy/2026/08/hidden-airtag-reveals-amazon-is-trashing-rare-books-to-train-ai/",
-     "side": "artikel/3755ef99592d6e02.html",
      "hvor": "forside",
      "under": ""
     }
