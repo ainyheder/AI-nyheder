@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-26T16:02:09.433727+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-26T18:18:44.689701+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,17 +13,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 20,
-   "som_ekstra": 4,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Google vil gøre AI til din nye studiekammerat",
-     "dato": "",
-     "foerst_set": "2026-08-19T19:44:43",
-     "link": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google lancerer AI-studerende-hub i Gemini"
-    },
     {
      "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
      "dato": "",
@@ -166,12 +157,16 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "The Verge AI",
+     "Ars Technica AI",
      2
     ],
     [
-     "Ars Technica AI",
-     2
+     "Hacker News: AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },
@@ -205,6 +200,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Googles nye AI renser dine 'øh' og 'um' væk",
+     "dato": "2026-08-26T13:00:00",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+     "side": "artikel/442be4968139a7af.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Bill Gates advarer: AI kan blive en kæmpe katastrofe",
@@ -277,21 +281,16 @@ window.KILDER_STATUS = {
      "side": "artikel/58939a4222a77cc2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google lancerer AI-studerende-hub i Gemini",
-     "dato": "2026-08-19T15:00:00",
-     "foerst_set": "2026-08-19T19:44:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
-     "side": "artikel/dc3d81799698c80d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
+     "Google DeepMind",
+     1
+    ],
+    [
      "TechCrunch AI",
-     2
+     1
     ],
     [
      "OpenAI Blog",
@@ -565,13 +564,22 @@ window.KILDER_STATUS = {
      "under": "OpenAI-chip slår Nvidia med hurtigere svar"
     },
     {
-     "rubrik": "Zapier effektiviserer marketing med ChatGPT Work",
-     "dato": "",
-     "foerst_set": "2026-08-11T04:53:48.481756+00:00",
-     "link": "https://openai.com/index/zapier",
-     "side": "",
-     "hvor": "under",
-     "under": "Sam Altman: Virksomheder sætter AI på arbejde"
+     "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
+     "dato": "2026-08-26T10:00:00",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+     "side": "artikel/7e008cb73ab32457.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-rapport: ChatGPT gør læring til en livslang vane",
+     "dato": "2026-08-26T10:00:00",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://openai.com/index/learning-never-stops",
+     "side": "artikel/6d0a59326d05a420.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "loveholidays lader alle medarbejdere bygge med Codex",
@@ -662,24 +670,6 @@ window.KILDER_STATUS = {
      "side": "artikel/40e57b678ada787c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Sådan skalerer NVIDIA ekspertise med ChatGPT Work",
-     "dato": "2026-08-18T00:00:00",
-     "foerst_set": "2026-08-19T03:27:49",
-     "link": "https://openai.com/index/nvidia/chatgpt-work",
-     "side": "artikel/b308f27228d706b8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI hjælper regeringer med tilsyn med AI",
-     "dato": "2026-08-18T19:00:00",
-     "foerst_set": "2026-08-18T21:42:05",
-     "link": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-     "side": "artikel/da3edf87cdb76098.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -704,8 +694,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 6,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Gemini 3.5 Transcribe oversætter tale til tekst",
+     "dato": "",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+     "side": "",
+     "hvor": "under",
+     "under": "Googles nye AI renser dine 'øh' og 'um' væk"
+    },
     {
      "rubrik": "Google lancerer Gemini 3.7 Flash",
      "dato": "",
@@ -771,6 +770,10 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
+    [
+     "The Verge AI",
+     1
+    ],
     [
      "Ars Technica AI",
      1
@@ -908,12 +911,21 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
-   "som_ekstra": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Z.ai's Ox Alpha udfordrer DeepSeek",
+     "dato": "",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+     "side": "",
+     "hvor": "under",
+     "under": "Z.ai afsløret som skaberen af mystiske Ox Alpha"
+    },
     {
      "rubrik": "Apple lancerer M6 og M5 Ultra",
      "dato": "",
@@ -922,9 +934,58 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "Israel byggede falsk tænketank: Sådan narrer de AI",
+     "dato": "2026-08-26T12:11:19",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+     "side": "artikel/c0ed485bdd052492.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacker News er ved at blive oversvømmet af AI",
+     "dato": "2026-08-25T15:23:41",
+     "foerst_set": "2026-08-25T17:07:16",
+     "link": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+     "side": "artikel/9c927ffa8ebd581a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Qwen 3.5 kan male billeder med JavaScript-kode",
+     "dato": "2026-08-23T19:39:29",
+     "foerst_set": "2026-08-25T15:23:37",
+     "link": "https://surya.website/rling-qwen-to-paint-with-code",
+     "side": "artikel/7729b273a32f9f8f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI får programmørers viden til at forsvinde",
+     "dato": "2026-08-24T15:52:33",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Han byggede en AI-kammerat, der spiller Skyrim med dig",
+     "dato": "2026-08-23T23:18:17",
+     "foerst_set": "2026-08-24T19:11:20",
+     "link": "https://pantel.is/projects/ai-gaming-companion/",
+     "side": "artikel/a025a03650ffadbc.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ],
     [
      "Ars Technica AI",
      1

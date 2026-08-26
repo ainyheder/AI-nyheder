@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Qwen 3.5 maler med kode i stedet for prompter</title>
-<meta name="description" content="Udviklerne Cameron og hans ven har lært Qwen 3.5 at skrive JavaScript-kode, der tegner akvareller. Koden kan redigeres brik for brik.">
+<title>AI-nyheder.com · Qwen 3.5 kan male billeder med JavaScript-kode</title>
+<meta name="description" content="En forsker har lært AI-modellen Qwen 3.5 at male ved at skrive JavaScript-kode. Koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.">
 <link rel="canonical" href="https://ainyheder.com/artikel/7729b273a32f9f8f.html">
 <meta name="theme-color" content="#f6f7f9">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Qwen 3.5 maler med kode i stedet for prompter">
-<meta property="og:description" content="Udviklerne Cameron og hans ven har lært Qwen 3.5 at skrive JavaScript-kode, der tegner akvareller. Koden kan redigeres brik for brik.">
+<meta property="og:title" content="Qwen 3.5 kan male billeder med JavaScript-kode">
+<meta property="og:description" content="En forsker har lært AI-modellen Qwen 3.5 at male ved at skrive JavaScript-kode. Koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.">
 <meta property="og:url" content="https://ainyheder.com/artikel/7729b273a32f9f8f.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen 3.5 maler med kode i stedet for prompter", "description": "Udviklerne Cameron og hans ven har lært Qwen 3.5 at skrive JavaScript-kode, der tegner akvareller. Koden kan redigeres brik for brik.", "url": "https://ainyheder.com/artikel/7729b273a32f9f8f.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/7729b273a32f9f8f.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-23T19:39:29+00:00", "articleSection": "Forskning", "isBasedOn": "https://surya.website/rling-qwen-to-paint-with-code"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Qwen 3.5 kan male billeder med JavaScript-kode", "description": "En forsker har lært AI-modellen Qwen 3.5 at male ved at skrive JavaScript-kode. Koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.", "url": "https://ainyheder.com/artikel/7729b273a32f9f8f.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/7729b273a32f9f8f.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-08-23T19:39:29+00:00", "articleSection": "Forskning", "isBasedOn": "https://surya.website/rling-qwen-to-paint-with-code"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -54,20 +54,20 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
 <main>
 <div class="kicker">Forskning · Hacker News: AI · 2026-08-23</div>
-<h1>Qwen 3.5 maler med kode i stedet for prompter</h1>
-<p class="manchet">Udviklerne Cameron og hans ven har lært Qwen 3.5 at skrive JavaScript-kode, der tegner akvareller. Koden kan redigeres brik for brik.</p>
+<h1>Qwen 3.5 kan male billeder med JavaScript-kode</h1>
+<p class="manchet">En forsker har lært AI-modellen Qwen 3.5 at male ved at skrive JavaScript-kode. Koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.</p>
 
 <h2>Det nye trick</h2>
-<p>Normalt kan du kun styre et AI-billede med din prompt. Hvis du vil ændre noget, skal du starte forfra. Cameron og hans ven har løst det ved at få modellen til at skrive JavaScript-kode, der tegner billedet. Koden er selve kunstværket, og den kan du redigere brik for brik. Det giver en helt ny måde at arbejde med AI-genereret kunst på.</p>
-<h2>Hvordan det virker</h2>
-<p>Modellen, Qwen 3.5, får en prompt som &#x27;tegn en lyserød hibiscus i akvarel&#x27;. Den skriver et p5.brush-skript, som renderes til et billede i en sandbox. Et dommermodel sammenligner så resultatet med to håndudvalgte referencebilleder fra en pulje på <strong>117</strong> kærlighedsbedømte værker. Belønningen bruges til at træne modellen videre. Næsten <strong>1.664</strong> billeder blev bedømt manuelt for at bygge puljen.</p>
-<h2>Fejlene undervejs</h2>
-<p>Første forsøg brugte ni forskellige kvalitetsmål, men de målte alle det samme. Modellen kørte fast og tegnede de samme kedelige blomster igen og igen. Løsningen var at skære det ned til fire klare kriterier og lade dommeren sammenligne billeder parvis i stedet for at give point fra 0 til 10. Så åbnede variationen sig, og modellen lærte hurtigere.</p>
-<h2>Det store resultat</h2>
-<p>Med det nye system nåede modellen det gamle toppunkt <strong>tre gange hurtigere</strong> og fortsatte opad. Koden blev samtidig langt mere effektiv: fra <strong>13.500</strong> tokens ned til under <strong>2.000</strong>. Modellen fandt ud af, at et godt resultat ikke kræver en lang kode. Næste skridt, som ikke blev nået, er at træne en belønningsmodel direkte på de manuelle bedømmelser.</p>
+<p>En forsker og hans ven Cameron har bygget et system, hvor AI-modellen Qwen 3.5 35B laver billeder ved at skrive p5.brush JavaScript-kode. Koden køres i en sandbox og bliver til et PNG-billede. Det særlige er, at koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.</p>
+<h2>Problemet med belønning</h2>
+<p>Normalt bruger man belønning til at træne AI-modeller, men æstetik er svær at måle. Første forsøg med ni forskellige kriterier gav alle de samme resultater - modellen lavede bare klip-urt-blomster. Forskernes diagnose: De målte det samme fem gange, og ét kriterium fyldte en tredjedel uden at lære modellen noget.</p>
+<h2>Løsningen</h2>
+<p>De ændrede til sammenligningsdomme: I stedet for at score fra 0 til 10, skulle en dommer vælge mellem to billeder. De byggede også en pool med 117 håndudvalgte eksempler. Det nye system nåede tre gange hurtigere til samme niveau og derefter videre, og koden blev kortere og mere effektiv.</p>
+<h2>Hvad nu?</h2>
+<p>Næste skridt er at træne en lille belønningsmodel direkte på de håndbedømte billeder, rigtig RLHF. Så kan modellen selv vurdere kvalitet uden at sammenligne med poolen. Projektet åbner for at bruge samme metode på andre kreative opgaver, hvor der ikke findes et entydigt rigtigt svar.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>AI-modellen Qwen 3.5 skriver JavaScript-kode, der genererer akvarelmalerier.</li><li>Koden er det færdige produkt og kan redigeres direkte i stedet for at skulle genpromptes.</li><li>Et dommermodel sammenligner hvert nyt billede med to referencebilleder fra en håndbedømt pulje.</li><li>Den oprindelige rubrik med ni mål fik modellen til at køre fast på samme blomstetype.</li><li>Korrelationen mellem de fem kvalitetsmål lå på 0,85 til 0,95 - de målte det samme.</li><li>Det nye system bruger fire mål, hvor parvis sammenligning vægter 0,60 og HPSv3 vægter 0,30.</li><li>Udviklerne nåede ikke at træne en egentlig belønningsmodel (RLHF) på de manuelle ratings.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan snart få AI til at lave billeder, som du kan redigere helt konkret - ændre en blomst eller farven - i stedet for at skulle overtale modellen med en ny prompt.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Systemet træner med fire-trins loop: prompt, kode, rendering, dom.</li><li>Første rubric havde ni signaler, men de målte det samme fem gange.</li><li>Sammenligningsdomme gav større variation end absolut scoring.</li><li>117 håndudvalgte eksempler blev brugt som referencepool.</li><li>HPSv3 fik vægt 0,30, og parvis dommer fik 0,60 i ny rubric.</li><li>Koden blev komprimeret fra 13.500 til under 2.000 tokens.</li><li>Model-læring plateauede ved 0,65 reward med gammel rubric.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Du kan snart redigere AI-billeder direkte i koden i stedet for at skrive nye prompts - og få hurtigere træning, der giver mere detaljerede resultater.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://surya.website/rling-qwen-to-paint-with-code" rel="noopener">Hacker News: AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
