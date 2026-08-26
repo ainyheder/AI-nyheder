@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-26T05:07:28.123490+00:00",
+ "opdateret": "2026-08-26T06:02:27.070336+00:00",
  "artikler_i_alt": 113,
  "kilder": [
   {
@@ -827,11 +827,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "LLM-agenter laver kontrollerede eksperimenter",
+     "rubrik": "AI kan selv køre videnskabelige forsøg",
      "dato": "2026-08-26T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23622",
-     "side": "",
+     "side": "artikel/ab1d2ceedc6853a5.html",
      "hvor": "forside",
      "under": ""
     },
@@ -863,7 +863,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI opfinder minder om dit liv – det har forskere nu målt",
+     "rubrik": "ChatGPT opfinder scener i din livshistorie",
      "dato": "2026-08-26T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23640",
@@ -927,7 +927,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "URLError: <urlopen error [Errno 104] Connection reset by peer>",
+   "fejl": "URLError: <urlopen error timed out>",
    "hentet": 0,
    "i_listen": 0,
    "som_ekstra": 1,
