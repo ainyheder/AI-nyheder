@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-27T01:00:18.359312+00:00",
+ "opdateret": "2026-08-27T10:27:50.354724+00:00",
  "artikler_i_alt": 114,
  "kilder": [
   {
@@ -32,6 +32,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder",
+     "dato": "2026-08-27T06:32:51",
+     "foerst_set": "2026-08-27T10:27:50",
+     "link": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
+     "side": "artikel/7a131e105527fce8.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "23-årige Noah Shinn henter 2,5 milliarder til AI-assistent",
@@ -131,15 +140,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9831f37a70b7fd13.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Arga Labs vil gøre AI-agenter til kontor-slugere",
-     "dato": "2026-08-26T12:55:28",
-     "foerst_set": "2026-08-26T13:36:29",
-     "link": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/",
-     "side": "artikel/26bfb8eb611d8fcb.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -167,18 +167,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "OpenAIs rogue AI-model opførte sig værre end ventet",
-     "dato": "",
-     "foerst_set": "2026-08-27T01:00:18.359312+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI under lup efter hacker-robot slap løs"
-    },
     {
      "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
      "dato": "",
@@ -203,6 +194,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-27T01:00:18",
      "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
      "side": "artikel/b7930e814c4df12a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
+     "dato": "2026-08-26T17:36:06",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "side": "artikel/3a0e75f056969468.html",
      "hvor": "forside",
      "under": ""
     },
@@ -813,7 +813,7 @@ window.KILDER_STATUS = {
    "seneste": [
     {
      "rubrik": "RENDER: Ny metode afslører AI'ens hukommelse",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23568",
      "side": "artikel/8dfde0436265c06e.html",
@@ -822,7 +822,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Sanjay Kumar Mishra bygger test til enterprise-databaser",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23569",
      "side": "artikel/fcf2c01d9ec2a2bc.html",
@@ -831,7 +831,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI kan selv køre videnskabelige forsøg",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23622",
      "side": "artikel/ab1d2ceedc6853a5.html",
@@ -840,7 +840,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Ihor Kendiukhov: AI lader sig narre af teleskopets indstillinger",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23626",
      "side": "artikel/824fbe8052259a30.html",
@@ -849,7 +849,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "TRACE: AI finder nye materialer hurtigere",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23631",
      "side": "artikel/584c73097c1213f0.html",
@@ -858,7 +858,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Idris Nechnechs AI-trick: Kode bliver bedre med køretest",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23632",
      "side": "artikel/399dc7f3e9c64c43.html",
@@ -867,7 +867,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "ChatGPT opfinder scener i din livshistorie",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23640",
      "side": "artikel/6fe85545b6d17d17.html",
@@ -876,7 +876,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Jason Hung: Måler vi AI-modellen eller måleredskabet?",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23641",
      "side": "artikel/cc5afc5180992580.html",
@@ -885,7 +885,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Margaret Mitchell advarer: AI presser mennesker ud",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23642",
      "side": "artikel/59af4edda9ececfd.html",
@@ -894,7 +894,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Forskere bag FLARE: AI i sundhedsvæsenet skal tjekkes",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23643",
      "side": "artikel/1d7067221e04f5d9.html",
@@ -903,7 +903,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Kalin Stoyanovs guide: Sådan bruger du chatbotter uden at snyde",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23644",
      "side": "artikel/d84a80d478bcf93e.html",
@@ -912,7 +912,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "MolEmb: AI lærer molekyler at forstå sig selv",
-     "dato": "2026-08-26T00:00:00",
+     "dato": "2026-08-27T00:00:00",
      "foerst_set": "2026-08-26T05:07:28",
      "link": "https://arxiv.org/abs/2608.23646",
      "side": "artikel/2865fb682a075151.html",
@@ -932,9 +932,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Bill Gates: AI-æraen bliver turbulent",
+     "dato": "",
+     "foerst_set": "2026-08-27T01:00:18.359312+00:00",
+     "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+     "side": "",
+     "hvor": "under",
+     "under": "Bill Gates: AI-tiden bliver turbulent"
+    },
     {
      "rubrik": "Z.ai's Ox Alpha udfordrer DeepSeek",
      "dato": "",
@@ -952,6 +961,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "SenteLabs' AI direktør: Fyret chef får nu AI-boss",
+     "dato": "2026-08-27T01:46:22",
+     "foerst_set": "2026-08-27T10:27:50",
+     "link": "https://github.com/SenteLabsAI/OpenExecutive",
+     "side": "artikel/9d5c9917dcdbe981.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Bill Gates: AI-tiden bliver turbulent",
@@ -972,29 +990,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Bill Gates: AI-æraen bliver turbulent",
-     "dato": "2026-08-26T12:47:47",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
-     "side": "artikel/5489ec6a1fff6e5e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Israel byggede falsk tænketank for at styre AI-chatbots",
      "dato": "2026-08-26T12:11:19",
      "foerst_set": "2026-08-26T18:18:44",
      "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
      "side": "artikel/c0ed485bdd052492.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hacker News drukner i AI",
-     "dato": "2026-08-25T15:23:41",
-     "foerst_set": "2026-08-25T17:07:16",
-     "link": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
-     "side": "artikel/9c927ffa8ebd581a.html",
      "hvor": "forside",
      "under": ""
     }
