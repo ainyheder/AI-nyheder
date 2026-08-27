@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-27T10:29:32.379069+00:00",
+ "opdateret": "2026-08-27T15:30:23.745615+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      26,
      25,
      2,
-     25
+     26
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      4,
      3,
      12,
-     1
+     6
     ]
    },
    {
@@ -124,7 +124,7 @@ window.LAESERTAL = {
      9,
      4,
      8,
-     11,
+     12,
      6,
      0,
      0,
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      3,
      7,
      9,
-     0
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      3,
      5,
      9,
-     2
+     4
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 50,
- "sidevisninger_i_alt": 89,
+ "besoeg_i_alt": 47,
+ "sidevisninger_i_alt": 84,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 50,
-   "visninger": 63
+   "besoeg": 47,
+   "visninger": 60
   },
   {
    "sti": "/artikel/e8aad19178f24e34.html",
@@ -285,11 +285,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/b7c2fec452c0837e.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
-   "sti": "/artikel/650284a2db94c14e.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -357,7 +352,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 50
+   "besoeg": 47
   }
  ],
  "ai_chats": [],
@@ -365,8 +360,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 50,
-    "visninger": 50
+    "besoeg": 47,
+    "visninger": 47
    },
    {
     "fra": "herfra selv",
@@ -410,13 +405,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/b7c2fec452c0837e.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
-  "/artikel/650284a2db94c14e.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -678,21 +666,6 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
-   "sti": "/artikel/b7c2fec452c0837e.html",
-   "besoeg": 0,
-   "visninger": 2,
-   "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
-   "kategori": "Penge & marked",
-   "dato": "2026-08-19",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 2
-    }
-   ]
-  },
-  {
    "sti": "/artikel/442be4968139a7af.html",
    "besoeg": 0,
    "visninger": 2,
@@ -813,11 +786,11 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/650284a2db94c14e.html",
+   "sti": "/artikel/b7c2fec452c0837e.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
-   "kategori": "Samfund & etik",
+   "rubrik": "OpenAI bremser nye AI-modeller – er det nok?",
+   "kategori": "Penge & marked",
    "dato": "2026-08-19",
    "henvisere": [
     {
@@ -955,11 +928,11 @@ window.LAESERTAL = {
   },
   {
    "navn": "Penge & marked",
-   "visninger": 7
+   "visninger": 6
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 3
+   "visninger": 2
   },
   {
    "navn": "Hverdags-AI",

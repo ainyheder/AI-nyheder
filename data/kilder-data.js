@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-27T10:27:50.354724+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-08-27T15:25:36.198133+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,17 +12,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
+   "i_listen": 18,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI offentliggør rapport om Hugging Face-hack",
+     "rubrik": "Hugging Face sælger robot-ælling for 399 dollars",
      "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI under lup efter hacker-robot slap løs"
+     "under": "Hugging Face lancerer sød robot-and på hjul"
     },
     {
      "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
@@ -32,6 +32,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Google strammer reglerne for Android-apps",
+     "dato": "2026-08-27T14:27:04",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/ais-memory-crunch-is-coming-for-android-apps/",
+     "side": "artikel/6df4843f350acfff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Anthropics AI'er hacker andre virksomheder",
+     "dato": "2026-08-27T14:01:42",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
+     "side": "artikel/d0a5ac6877d13080.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Plaud lancerer AI-øretelefoner med eSIM-etui",
+     "dato": "2026-08-27T13:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/plauds-new-earphones-come-with-an-esim-enabled-case-for-talking-to-ai-agents/",
+     "side": "artikel/faa1a03b9722b982.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI viser reklamer i ChatGPT i Indien",
+     "dato": "2026-08-27T11:35:59",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/openai-to-start-showing-ads-on-chatgpts-free-and-go-tiers-in-india/",
+     "side": "artikel/9f21c491f2511145.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder",
@@ -97,58 +133,22 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ex-Meta-forskere vil give robotter syn på fabriksgulvet",
+     "rubrik": "Perceptrons Isaac 0.5 giver robotter syn på fabrikker",
      "dato": "2026-08-26T15:00:00",
      "foerst_set": "2026-08-26T16:02:09",
      "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
      "side": "artikel/11d87780114395c6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Bill Gates: Beskat robotter og reserver job til mennesker",
-     "dato": "2026-08-26T14:37:01",
-     "foerst_set": "2026-08-26T16:02:09",
-     "link": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
-     "side": "artikel/a09ccde75b1bdbb6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Z.ai afsløret som skaberen af mystiske Ox Alpha",
-     "dato": "2026-08-26T14:19:29",
-     "foerst_set": "2026-08-26T14:21:48",
-     "link": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
-     "side": "artikel/f3d6254f8558d729.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Unitree-aktien styrtdykker: Robotterne mangler hjerne",
-     "dato": "2026-08-26T13:30:00",
-     "foerst_set": "2026-08-26T14:21:48",
-     "link": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
-     "side": "artikel/9744030eca879303.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "QueryStory vil gøre AI-svar troværdige for store firmaer",
-     "dato": "2026-08-26T13:00:00",
-     "foerst_set": "2026-08-26T13:36:29",
-     "link": "https://techcrunch.com/2026/08/26/querystory-wants-you-to-believe-what-ai-is-telling-you/",
-     "side": "artikel/9831f37a70b7fd13.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Hacker News: AI",
+     "The Verge AI",
      1
     ],
     [
-     "The Verge AI",
+     "Hacker News: AI",
      1
     ],
     [
@@ -167,7 +167,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -180,6 +180,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
     },
     {
+     "rubrik": "OpenAI under lup efter hacker-robot slap løs",
+     "dato": "",
+     "foerst_set": "2026-08-25T11:01:26.604280+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAIs HPIM hackede sig om på 12 dage"
+    },
+    {
      "rubrik": "ChatGPT får særlig tilstand til teenagere",
      "dato": "",
      "foerst_set": "2026-08-18T11:46:13",
@@ -189,20 +198,47 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til teenagere"
     },
     {
+     "rubrik": "Greg Brockman vinder magtkampen i OpenAI",
+     "dato": "2026-08-27T10:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
+     "side": "artikel/94057effd7fad1fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hugging Face lancerer sød robot-and på hjul",
+     "dato": "2026-08-27T09:44:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
+     "side": "artikel/c3e8fc99833d44f6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Plaud One-ører optager og opsummerer møder",
+     "dato": "2026-08-27T09:11:23",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
+     "side": "artikel/61451b02ed4bd97a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Adobe giver Photoshop AI-værktøjer i ny menu",
+     "dato": "2026-08-27T09:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
+     "side": "artikel/d0062e3b6e560ed5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia runder 96 milliarder dollars på et kvartal",
      "dato": "2026-08-26T17:40:53",
      "foerst_set": "2026-08-27T01:00:18",
      "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
      "side": "artikel/b7930e814c4df12a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
-     "dato": "2026-08-26T17:36:06",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-     "side": "artikel/3a0e75f056969468.html",
      "hvor": "forside",
      "under": ""
     },
@@ -225,70 +261,30 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI under lup efter hacker-robot slap løs",
-     "dato": "2026-08-25T05:15:03",
+     "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
+     "dato": "2026-08-26T17:36:06",
      "foerst_set": "2026-08-25T11:01:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack",
-     "side": "artikel/3a86bbd7f634b963.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "LinkedIn: 1 million har trykket på AI-slop-knappen",
-     "dato": "2026-08-21T17:25:50",
-     "foerst_set": "2026-08-21T21:51:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message",
-     "side": "artikel/1cd4198d78c973ad.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "YouTubere får hug for skjult AI-reklame",
-     "dato": "2026-08-21T09:37:52",
-     "foerst_set": "2026-08-21T14:08:13",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
-     "side": "artikel/9cbe86a700782f00.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lader dig styre nyheder med AI-chat",
-     "dato": "2026-08-20T17:50:22",
-     "foerst_set": "2026-08-21T03:36:52",
-     "link": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
-     "side": "artikel/60d44502cd811ab0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Greg Brockman overtager magten i OpenAI",
-     "dato": "2026-08-20T11:45:55",
-     "foerst_set": "2026-08-20T16:02:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-     "side": "artikel/c7fbc3b1617c466d.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "side": "artikel/3a0e75f056969468.html",
      "hvor": "forside",
      "under": ""
     }
    ],
    "overlap": [
     [
-     "OpenAI Blog",
-     3
-    ],
-    [
-     "Google DeepMind",
-     1
-    ],
-    [
      "Ars Technica AI",
-     1
+     2
+    ],
+    [
+     "OpenAI Blog",
+     2
     ],
     [
      "TechCrunch AI",
      1
     ],
     [
-     "MIT Tech Review AI",
+     "Google DeepMind",
      1
     ]
    ]
@@ -303,9 +299,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 1,
+   "i_listen": 18,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI-agenter snød test og hærgede Hugging Face",
+     "dato": "",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAIs HPIM hackede sig om på 12 dage"
+    },
     {
      "rubrik": "Googles nye AI renser dit sludder op",
      "dato": "",
@@ -314,6 +319,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles nye AI renser dine 'øh' og 'um' væk"
+    },
+    {
+     "rubrik": "Claude og Codex installerede skadelig kode hos Fortune 500",
+     "dato": "2026-08-27T14:00:13",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+     "side": "artikel/89693ce42c5cd79e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini og Nvidia kæmper mod datacentres vandforbrug",
+     "dato": "2026-08-27T13:57:08",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://arstechnica.com/ai/2026/08/how-much-of-a-problem-is-ais-water-use/",
+     "side": "artikel/8554bbe0a8296256.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta opgiver plan om at erstatte medarbejdere med AI",
@@ -404,37 +427,15 @@ window.KILDER_STATUS = {
      "side": "artikel/80622eb8d24dc65a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Meta kørte reklamer for AI-porno-appen Kromix",
-     "dato": "2026-08-19T15:45:29",
-     "foerst_set": "2026-08-19T15:59:20",
-     "link": "https://arstechnica.com/ai/2026/08/meta-ran-ads-for-an-app-promising-to-nudify-female-politicians/",
-     "side": "artikel/650284a2db94c14e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Copilot afslørede selv sin egen sårbarhed",
-     "dato": "2026-08-18T13:00:04",
-     "foerst_set": "2026-08-18T14:17:16",
-     "link": "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/",
-     "side": "artikel/5e6ff0a5049539ca.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     2
     ],
     [
      "Hacker News: AI",
-     1
-    ],
-    [
-     "Google DeepMind",
      1
     ]
    ]
@@ -450,19 +451,10 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 9,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "OpenAI-agenter hackede Hugging Face",
-     "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI under lup efter hacker-robot slap løs"
-    },
-    {
-     "rubrik": "Børn vokser op med AI: Sådan klarer de sig",
+     "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
      "dato": "2026-08-26T09:00:00",
      "foerst_set": "2026-08-26T10:07:57",
      "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
@@ -543,12 +535,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "The Verge AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
@@ -561,7 +548,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 23,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ny blog om AI's fremtid",
@@ -573,13 +560,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye blog om AI's fremtid"
     },
     {
-     "rubrik": "OpenAI lærer af Hugging Face-hacket",
-     "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI under lup efter hacker-robot slap løs"
+     "rubrik": "OpenAI satser på Brasilien",
+     "dato": "2026-08-27T03:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://openai.com/index/expanding-our-presence-in-brazil",
+     "side": "artikel/250ea25ba377eba7.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
@@ -679,21 +666,12 @@ window.KILDER_STATUS = {
      "side": "artikel/7e1debc1bd0a37c4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Replit gør app-bygning gratis med GPT-5.6 Luna",
-     "dato": "2026-08-19T07:00:00",
-     "foerst_set": "2026-08-19T14:17:56",
-     "link": "https://openai.com/index/replit",
-     "side": "artikel/09f9dc1b5215ea73.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "TechCrunch AI",
@@ -711,8 +689,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 6,
-   "som_ekstra": 2,
+   "i_listen": 8,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Gemini 3.5 Transcribe oversætter tale til tekst",
@@ -724,13 +702,13 @@ window.KILDER_STATUS = {
      "under": "Googles nye AI renser dine 'øh' og 'um' væk"
     },
     {
-     "rubrik": "Google lancerer Gemini 3.7 Flash",
-     "dato": "",
-     "foerst_set": "2026-08-13T19:48:07",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Gemini: 3.7 Flash og halv pris"
+     "rubrik": "Google lancerer hemmelig AI-test for at undgå snyd",
+     "dato": "2026-08-27T12:59:16",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+     "side": "artikel/a08e7f8cba318b80.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google DeepMind går fra Atari til EVE Online",
@@ -738,6 +716,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-21T13:27:51",
      "link": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
      "side": "artikel/a624350654a28be1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer Gemini 3.7 Flash til halv pris",
+     "dato": "2026-08-13T17:04:18",
+     "foerst_set": "2026-08-13T19:48:07",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+     "side": "artikel/4cdd6362e5e2164e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -790,10 +777,6 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -929,21 +912,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 4,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "Bill Gates: AI-æraen bliver turbulent",
-     "dato": "",
-     "foerst_set": "2026-08-27T01:00:18.359312+00:00",
-     "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
-     "side": "",
-     "hvor": "under",
-     "under": "Bill Gates: AI-tiden bliver turbulent"
-    },
     {
      "rubrik": "Z.ai's Ox Alpha udfordrer DeepSeek",
      "dato": "",
@@ -961,42 +935,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
-    },
-    {
-     "rubrik": "SenteLabs' AI direktør: Fyret chef får nu AI-boss",
-     "dato": "2026-08-27T01:46:22",
-     "foerst_set": "2026-08-27T10:27:50",
-     "link": "https://github.com/SenteLabsAI/OpenExecutive",
-     "side": "artikel/9d5c9917dcdbe981.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Bill Gates: AI-tiden bliver turbulent",
-     "dato": "2026-08-26T15:55:15",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
-     "side": "artikel/91e0a905dde5399f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Obsidian-chef: AI-noter kvæler dine egne idéer",
-     "dato": "2026-08-26T15:30:05",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
-     "side": "artikel/1e614ba43d749d43.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Israel byggede falsk tænketank for at styre AI-chatbots",
-     "dato": "2026-08-26T12:11:19",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
-     "side": "artikel/c0ed485bdd052492.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
