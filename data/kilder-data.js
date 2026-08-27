@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-26T21:00:41.495302+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-27T01:00:18.359312+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 19,
-   "som_ekstra": 4,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "OpenAI offentliggør rapport om Hugging Face-hack",
@@ -34,29 +34,38 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til teenagere"
     },
     {
-     "rubrik": "Anthropic afslører detaljer om vandmærker i Claude",
-     "dato": "",
-     "foerst_set": "2026-08-15T19:33:11",
-     "link": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får usynligt vandmærke på alt indhold"
+     "rubrik": "23-årige Noah Shinn henter 2,5 milliarder til AI-assistent",
+     "dato": "2026-08-27T00:24:57",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+     "side": "artikel/dff9dc0737a40c9b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
-     "rubrik": "Anthropic vandmærker al AI-tekst – brugere raser",
-     "dato": "",
-     "foerst_set": "2026-08-13T06:03:04",
-     "link": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får usynligt vandmærke på alt indhold"
+     "rubrik": "Amazon tredobler Nvidia-chipsordre efter kæmpe efterspørgsel",
+     "dato": "2026-08-26T23:47:18",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/",
+     "side": "artikel/18acc42de8d17184.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
-     "rubrik": "Google kæmper med Gemini-branding",
+     "rubrik": "Anthropic lejer regnekraft for 45 milliarder dollar",
+     "dato": "2026-08-26T21:37:39",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
+     "side": "artikel/e8aad19178f24e34.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini-appen er blevet så rodet, at de færreste kan finde ud af den",
      "dato": "2026-08-26T19:37:34",
      "foerst_set": "2026-08-26T21:00:41",
      "link": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
-     "side": "",
+     "side": "artikel/838ca76e929f0688.html",
      "hvor": "forside",
      "under": ""
     },
@@ -131,50 +140,19 @@ window.KILDER_STATUS = {
      "side": "artikel/26bfb8eb611d8fcb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Legato Frames skal gøre hørebriller almindelige",
-     "dato": "2026-08-26T12:00:00",
-     "foerst_set": "2026-08-26T13:36:29",
-     "link": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses/",
-     "side": "artikel/c7519cb8e61684b6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Runable henter 21 mio. dollars til at få AI til at skaffe kunder",
-     "dato": "2026-08-26T11:00:00",
-     "foerst_set": "2026-08-26T13:36:29",
-     "link": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
-     "side": "artikel/d56bb99852c0c142.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Indisk AI-startup Ringg får 10 millioner dollars fra Peak XV",
-     "dato": "2026-08-26T03:30:00",
-     "foerst_set": "2026-08-26T05:07:28",
-     "link": "https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-it-pushes-voice-ai-past-the-phone-call/",
-     "side": "artikel/3171b8e205ace109.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "OpenAI Blog",
-     2
+     "Hacker News: AI",
+     1
     ],
     [
      "The Verge AI",
-     2
+     1
     ],
     [
-     "Ars Technica AI",
-     2
-    ],
-    [
-     "Hacker News: AI",
+     "OpenAI Blog",
      1
     ]
    ]
@@ -189,17 +167,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI lancerer Jalapeño-chip med hurtigere AI",
+     "rubrik": "OpenAIs rogue AI-model opførte sig værre end ventet",
+     "dato": "",
+     "foerst_set": "2026-08-27T01:00:18.359312+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI under lup efter hacker-robot slap løs"
+    },
+    {
+     "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
      "dato": "",
      "foerst_set": "2026-08-25T16:10:02",
      "link": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI-chip slår Nvidia med hurtigere svar"
+     "under": "OpenAI's nye chip slår Nvidia i vigtig test"
     },
     {
      "rubrik": "ChatGPT får særlig tilstand til teenagere",
@@ -209,6 +196,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Nvidia runder 96 milliarder dollars på et kvartal",
+     "dato": "2026-08-26T17:40:53",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
+     "side": "artikel/b7930e814c4df12a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Googles nye AI renser dine 'øh' og 'um' væk",
@@ -272,37 +268,23 @@ window.KILDER_STATUS = {
      "side": "artikel/c7fbc3b1617c466d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's matematik-resultater chokerer verdens førende matematikere",
-     "dato": "2026-08-20T10:00:00",
-     "foerst_set": "2026-08-20T14:22:16",
-     "link": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
-     "side": "artikel/63a1c4c6a261a00f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Slack lader hold kode sammen med AI",
-     "dato": "2026-08-20T08:00:00",
-     "foerst_set": "2026-08-20T14:22:16",
-     "link": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
-     "side": "artikel/58939a4222a77cc2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     2
-    ],
-    [
      "OpenAI Blog",
-     2
+     3
     ],
     [
      "Google DeepMind",
+     1
+    ],
+    [
+     "Ars Technica AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
      1
     ],
     [
@@ -321,15 +303,24 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 0,
+   "i_listen": 19,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Googles nye AI renser dit sludder op",
-     "dato": "2026-08-26T19:19:22",
+     "dato": "",
      "foerst_set": "2026-08-26T21:00:41",
      "link": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text/",
-     "side": "artikel/3400e8c67cbf0179.html",
+     "side": "",
+     "hvor": "under",
+     "under": "Googles nye AI renser dine 'øh' og 'um' væk"
+    },
+    {
+     "rubrik": "Meta opgiver plan om at erstatte medarbejdere med AI",
+     "dato": "2026-08-26T21:25:27",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
+     "side": "artikel/7e1703c40fda632b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -435,8 +426,8 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     2
+     "The Verge AI",
+     1
     ],
     [
      "Hacker News: AI",
@@ -570,8 +561,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 23,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI lancerer ny blog om AI's fremtid",
+     "dato": "",
+     "foerst_set": "2026-08-27T01:00:18.359312+00:00",
+     "link": "https://openai.com/index/introducing-intelligence-age",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's nye blog om AI's fremtid"
+    },
     {
      "rubrik": "OpenAI lærer af Hugging Face-hacket",
      "dato": "",
@@ -580,15 +580,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI under lup efter hacker-robot slap løs"
-    },
-    {
-     "rubrik": "OpenAIs Jalapeño chip er hurtigst",
-     "dato": "",
-     "foerst_set": "2026-08-25T15:23:37",
-     "link": "https://openai.com/index/jalapeno-first-results",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-chip slår Nvidia med hurtigere svar"
     },
     {
      "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
@@ -632,6 +623,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-25T16:10:02",
      "link": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
      "side": "artikel/1c0de2ab32295e46.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's nye chip slår Nvidia i vigtig test",
+     "dato": "2026-08-25T07:00:00",
+     "foerst_set": "2026-08-25T15:23:37",
+     "link": "https://openai.com/index/jalapeno-first-results",
+     "side": "artikel/31f9b254385b9128.html",
      "hvor": "forside",
      "under": ""
     },
@@ -688,25 +688,16 @@ window.KILDER_STATUS = {
      "side": "artikel/09f9dc1b5215ea73.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI udvider ChatGPT Ads i Europa",
-     "dato": "2026-08-18T22:00:00",
-     "foerst_set": "2026-08-19T05:56:39",
-     "link": "https://openai.com/index/chatgpt-ads-expands-across-europe",
-     "side": "artikel/40e57b678ada787c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     2
+     "The Verge AI",
+     3
     ],
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     1
     ]
    ]
   },
@@ -938,10 +929,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "TimeoutError: The read operation timed out",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 5,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -961,6 +952,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "Bill Gates: AI-tiden bliver turbulent",
+     "dato": "2026-08-26T15:55:15",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+     "side": "artikel/91e0a905dde5399f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Obsidian-chef: AI-noter kvæler dine egne idéer",
+     "dato": "2026-08-26T15:30:05",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+     "side": "artikel/1e614ba43d749d43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bill Gates: AI-æraen bliver turbulent",
+     "dato": "2026-08-26T12:47:47",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+     "side": "artikel/5489ec6a1fff6e5e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Israel byggede falsk tænketank for at styre AI-chatbots",
+     "dato": "2026-08-26T12:11:19",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+     "side": "artikel/c0ed485bdd052492.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacker News drukner i AI",
+     "dato": "2026-08-25T15:23:41",
+     "foerst_set": "2026-08-25T17:07:16",
+     "link": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+     "side": "artikel/9c927ffa8ebd581a.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
