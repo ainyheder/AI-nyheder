@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-27T15:25:36.198133+00:00",
- "artikler_i_alt": 109,
+ "opdateret": "2026-08-28T00:33:43.239930+00:00",
+ "artikler_i_alt": 121,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
+   "i_listen": 19,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -32,6 +32,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Anthropic og OpenAI gæster tech-festival",
+     "dato": "2026-08-27T23:16:45",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
+     "side": "artikel/3c75e284d8292817.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-fyring endte med topjob hos Google",
+     "dato": "2026-08-27T19:52:52",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
+     "side": "artikel/360e66b5f8076c66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Google advarer: Rogue AI kan ramme os alle",
+     "dato": "2026-08-27T17:43:24",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
+     "side": "artikel/be41cf18f6e9b42a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lader AI overvåge flypriser og booke hotel",
+     "dato": "2026-08-27T16:00:00",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/",
+     "side": "artikel/a88aee5f66748cd2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google strammer reglerne for Android-apps",
@@ -104,42 +140,6 @@ window.KILDER_STATUS = {
      "side": "artikel/e8aad19178f24e34.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini-appen er blevet så rodet, at de færreste kan finde ud af den",
-     "dato": "2026-08-26T19:37:34",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
-     "side": "artikel/838ca76e929f0688.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI mister topfolk: Hvad sker der?",
-     "dato": "2026-08-26T19:34:04",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://techcrunch.com/2026/08/26/how-do-we-explain-openais-executive-exodus/",
-     "side": "artikel/a65015085aa13963.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Particle lancerer Radar: Søg i 130.000 podcasts",
-     "dato": "2026-08-26T15:47:28",
-     "foerst_set": "2026-08-26T16:02:09",
-     "link": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/",
-     "side": "artikel/cbe393ca06449a5b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Perceptrons Isaac 0.5 giver robotter syn på fabrikker",
-     "dato": "2026-08-26T15:00:00",
-     "foerst_set": "2026-08-26T16:02:09",
-     "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
-     "side": "artikel/11d87780114395c6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -167,7 +167,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 10,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -196,6 +196,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Google lader AI-appen Gemini Notebook læse dine bøger",
+     "dato": "2026-08-27T15:30:00",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
+     "side": "artikel/17d05cd483439088.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia-chef erklærer AGI for opnået – og kalder det meningsløst",
+     "dato": "2026-08-27T12:15:52",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
+     "side": "artikel/a2ddac958ba469b0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Greg Brockman vinder magtkampen i OpenAI",
@@ -321,6 +339,42 @@ window.KILDER_STATUS = {
      "under": "Googles nye AI renser dine 'øh' og 'um' væk"
     },
     {
+     "rubrik": "Anthropic lader AI styre fysiske maskiner",
+     "dato": "2026-08-27T22:15:43",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
+     "side": "artikel/553e5cf0447cc7c6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "xAI anklaget: Grok trænet på børnemishandling",
+     "dato": "2026-08-27T20:52:31",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/",
+     "side": "artikel/52c8edc1868ded3c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder dollars",
+     "dato": "2026-08-27T19:55:22",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
+     "side": "artikel/41bcb0eef42f12bd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trumps chiptold kan udløse kaos i tech-branchen",
+     "dato": "2026-08-27T18:57:08",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://arstechnica.com/tech-policy/2026/08/ai-industry-says-trump-plans-to-tax-chips-in-the-single-dumbest-way-imaginable/",
+     "side": "artikel/30884a4496ce80d5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Claude og Codex installerede skadelig kode hos Fortune 500",
      "dato": "2026-08-27T14:00:13",
      "foerst_set": "2026-08-27T15:25:36",
@@ -391,42 +445,6 @@ window.KILDER_STATUS = {
      "side": "artikel/a92e5141fd26827c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia-medarbejder tiltalt i Supermicro-skandale om Kina",
-     "dato": "2026-08-24T16:41:45",
-     "foerst_set": "2026-08-24T17:07:17",
-     "link": "https://arstechnica.com/tech-policy/2026/08/nvidia-senior-manager-linked-to-supermicro-scheme-smuggling-ai-servers-to-china/",
-     "side": "artikel/b6331696a2eab7d9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta-briller filmer dig måske uden lyset",
-     "dato": "2026-08-21T11:00:53",
-     "foerst_set": "2026-08-21T11:54:48",
-     "link": "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect/",
-     "side": "artikel/ecf9b83da752b305.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok lækker dine chats via skjult kode",
-     "dato": "2026-08-20T13:00:35",
-     "foerst_set": "2026-08-20T14:22:16",
-     "link": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
-     "side": "artikel/2816275d64dd78f3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google køber Spirit-data: Flyansatte i oprør",
-     "dato": "2026-08-19T20:04:41",
-     "foerst_set": "2026-08-19T21:45:30",
-     "link": "https://arstechnica.com/tech-policy/2026/08/flight-attendants-freaked-out-that-google-to-buy-tons-of-spirit-employee-data/",
-     "side": "artikel/80622eb8d24dc65a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -450,9 +468,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
+     "dato": "2026-08-26T19:00:00",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+     "side": "artikel/db5b8f4203cbf5b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
      "dato": "2026-08-26T09:00:00",
@@ -547,7 +574,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
+   "i_listen": 24,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -560,11 +587,29 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye blog om AI's fremtid"
     },
     {
+     "rubrik": "OpenAI: ChatGPT træner kritisk tænkning",
+     "dato": "2026-08-27T09:00:00",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+     "side": "artikel/5250e71c3d45fa8a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI satser på Brasilien",
      "dato": "2026-08-27T03:00:00",
      "foerst_set": "2026-08-27T15:25:36",
      "link": "https://openai.com/index/expanding-our-presence-in-brazil",
      "side": "artikel/250ea25ba377eba7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI om Hugging Face-hændelsen og vejen frem",
+     "dato": "2026-08-26T00:00:00",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+     "side": "artikel/1c454c14ad6cf1d3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -648,24 +693,6 @@ window.KILDER_STATUS = {
      "side": "artikel/2e8bfa2782e5fd18.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Stampli får ChatGPT til at springe over målstregen",
-     "dato": "2026-08-20T00:00:00",
-     "foerst_set": "2026-08-20T16:02:07",
-     "link": "https://openai.com/index/stampli",
-     "side": "artikel/6213ce5ceef3e2f9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lover: dine data bliver ikke gemt",
-     "dato": "2026-08-19T19:00:00",
-     "foerst_set": "2026-08-19T21:45:30",
-     "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-     "side": "artikel/7e1debc1bd0a37c4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -689,7 +716,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -700,6 +727,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles nye AI renser dine 'øh' og 'um' væk"
+    },
+    {
+     "rubrik": "Googles nye AI-værktøj skaber 4K-videoer med præcis styring",
+     "dato": "2026-08-27T16:11:32",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+     "side": "artikel/d06021b7ade0362f.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google lancerer hemmelig AI-test for at undgå snyd",
@@ -912,10 +948,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -935,6 +971,60 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "Cloudflare hjælper AI med at læse din hjemmeside",
+     "dato": "2026-08-26T19:45:59",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://acceptmarkdown.com/",
+     "side": "artikel/fd0d2f813b7c0018.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Open Executive: Gratis AI-chef med otte specialister",
+     "dato": "2026-08-27T01:46:22",
+     "foerst_set": "2026-08-27T10:27:50",
+     "link": "https://github.com/SenteLabsAI/OpenExecutive",
+     "side": "artikel/9d5c9917dcdbe981.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bill Gates: AI skaber turbulent æra",
+     "dato": "2026-08-26T15:55:15",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+     "side": "artikel/91e0a905dde5399f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Udvikler: Stop med at lade AI skrive dine noter",
+     "dato": "2026-08-26T15:30:05",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+     "side": "artikel/1e614ba43d749d43.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bill Gates: AI-tiden er turbulent",
+     "dato": "2026-08-26T12:47:47",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+     "side": "artikel/5489ec6a1fff6e5e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hanover Institute skal manipulere chatbots",
+     "dato": "2026-08-26T12:11:19",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+     "side": "artikel/c0ed485bdd052492.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
