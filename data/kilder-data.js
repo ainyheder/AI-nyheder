@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-29T15:44:39.659146+00:00",
- "artikler_i_alt": 91,
+ "opdateret": "2026-08-29T19:28:47.450435+00:00",
+ "artikler_i_alt": 90,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -41,6 +41,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Sony og Warner sagsøger Anthropic for massivt tyveri",
+     "dato": "2026-08-29T18:41:59",
+     "foerst_set": "2026-08-29T19:28:47",
+     "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+     "side": "artikel/0d18d5472b0375ae.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Vijay Pande: Fra 4 milliarder til få, fokuserede satsninger",
+     "dato": "2026-08-29T17:36:47",
+     "foerst_set": "2026-08-29T19:28:47",
+     "link": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
+     "side": "artikel/619cf37e65ee5679.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia satser på nye chips ud over GPU'en",
@@ -131,30 +149,12 @@ window.KILDER_STATUS = {
      "side": "artikel/6df4843f350acfff.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Anthropics AI'er hacker andre virksomheder",
-     "dato": "2026-08-27T14:01:42",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
-     "side": "artikel/d0a5ac6877d13080.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Plaud lancerer AI-øretelefoner med eSIM-etui",
-     "dato": "2026-08-27T13:00:00",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://techcrunch.com/2026/08/27/plauds-new-earphones-come-with-an-esim-enabled-case-for-talking-to-ai-agents/",
-     "side": "artikel/faa1a03b9722b982.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -177,8 +177,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 9,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Sony Music og Warner kræver milliarder fra Anthropic",
+     "dato": "",
+     "foerst_set": "2026-08-29T19:28:47",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+     "side": "",
+     "hvor": "under",
+     "under": "Sony og Warner sagsøger Anthropic for massivt tyveri"
+    },
     {
      "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
      "dato": "",
@@ -205,6 +214,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "H4RRIS jagter AI-snyd med videoopkald",
+     "dato": "2026-08-29T08:00:00",
+     "foerst_set": "2026-08-29T19:28:47",
+     "link": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
+     "side": "artikel/248d3859500de4a4.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "xAI's Colossus 1: EPA vil skjule forurening",
@@ -277,21 +295,12 @@ window.KILDER_STATUS = {
      "side": "artikel/d0062e3b6e560ed5.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia runder 96 milliarder dollars på et kvartal",
-     "dato": "2026-08-26T17:40:53",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
-     "side": "artikel/b7930e814c4df12a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -729,7 +738,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -803,15 +812,6 @@ window.KILDER_STATUS = {
      "side": "artikel/6953a8d0ca71f9ba.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Googles nye AI laver sange du selv styrer",
-     "dato": "2026-07-29T16:02:10",
-     "foerst_set": "2026-07-29T16:59:11",
-     "link": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
-     "side": "artikel/a700ee8f694b74e3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -877,11 +877,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Luanti fjernet fra Google Play efter fejlagtig AI-klage",
+     "rubrik": "Google fjerner Luanti-spillet efter Microsoft-klage",
      "dato": "2026-08-28T06:33:57",
      "foerst_set": "2026-08-29T15:44:39",
      "link": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-     "side": "",
+     "side": "artikel/978592205c0f86dc.html",
      "hvor": "forside",
      "under": ""
     },
