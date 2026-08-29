@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-29T19:28:47.450435+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-08-29T21:54:36.120325+00:00",
+ "artikler_i_alt": 88,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 17,
+   "i_listen": 16,
    "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
+     "dato": "",
+     "foerst_set": "2026-08-29T01:07:22.337971+00:00",
+     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia køber Hugging Face for 12,9 milliarder"
+    },
     {
      "rubrik": "Anthropic vinder første retssag mod Pentagon-mærkat",
      "dato": "",
@@ -88,15 +97,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
-     "dato": "2026-08-28T18:19:40",
-     "foerst_set": "2026-08-29T01:07:22",
-     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-     "side": "artikel/f019f50bce19d8e1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Sandhya Devanathan skifter til OpenAI midt i Indien-pres",
      "dato": "2026-08-28T12:21:06",
      "foerst_set": "2026-08-28T16:52:17",
@@ -147,6 +147,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-27T15:25:36",
      "link": "https://techcrunch.com/2026/08/27/ais-memory-crunch-is-coming-for-android-apps/",
      "side": "artikel/6df4843f350acfff.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI og Anthropics AI'er hacker andre virksomheder",
+     "dato": "2026-08-27T14:01:42",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
+     "side": "artikel/d0a5ac6877d13080.html",
      "hvor": "forside",
      "under": ""
     }
@@ -466,6 +475,10 @@ window.KILDER_STATUS = {
      1
     ],
     [
+     "OpenAI Blog",
+     1
+    ],
+    [
      "Google DeepMind",
      1
     ],
@@ -596,8 +609,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 0,
+   "i_listen": 23,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ny blog om AI's fremtid",
@@ -607,6 +620,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's nye blog om AI's fremtid"
+    },
+    {
+     "rubrik": "OpenAI om Hugging Face-hændelsen og vejen frem",
+     "dato": "",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
     },
     {
      "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
@@ -641,15 +663,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-27T15:25:36",
      "link": "https://openai.com/index/expanding-our-presence-in-brazil",
      "side": "artikel/250ea25ba377eba7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI om Hugging Face-hændelsen og vejen frem",
-     "dato": "2026-08-26T00:00:00",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-     "side": "artikel/1c454c14ad6cf1d3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -715,12 +728,25 @@ window.KILDER_STATUS = {
      "side": "artikel/5bd6315049a12924.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI: GPT‑5.6 i Kiro giver udviklere mere for pengene",
+     "dato": "2026-08-24T12:00:00",
+     "foerst_set": "2026-08-24T21:00:46",
+     "link": "https://openai.com/index/gpt-5-6-in-kiro",
+     "side": "artikel/b4f331f2e15ca85e.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
     ],
     [
      "TechCrunch AI",
@@ -859,7 +885,16 @@ window.KILDER_STATUS = {
      "under": "Apple lancerer nye Macs med AI i fokus"
     },
     {
-     "rubrik": "Debian tillader AI-hjælp - med ansvar",
+     "rubrik": "Gregor Ojstersek: Kultur slår AI som produktivitets-hack",
+     "dato": "2026-08-29T17:19:47",
+     "foerst_set": "2026-08-29T21:54:36",
+     "link": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+     "side": "artikel/e39047844cf43b12.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Debian tillader ansvarlig brug af genAI",
      "dato": "2026-08-29T14:02:10",
      "foerst_set": "2026-08-29T15:44:39",
      "link": "https://lwn.net/Articles/1091231/",
@@ -891,15 +926,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-28T12:09:31",
      "link": "https://neilalexander.dev/2026/06/30/flooding-contributions",
      "side": "artikel/0e9dfa1765d265b4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Serve dit website som Markdown til AI-agenter",
-     "dato": "2026-08-26T19:45:59",
-     "foerst_set": "2026-08-28T00:33:43",
-     "link": "https://acceptmarkdown.com/",
-     "side": "artikel/fd0d2f813b7c0018.html",
      "hvor": "forside",
      "under": ""
     },
