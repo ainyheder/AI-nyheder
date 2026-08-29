@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-29T01:09:55.895793+00:00",
+ "opdateret": "2026-08-29T07:20:25.260619+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      2,
      2,
      4,
-     1,
+     2,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 46,
- "sidevisninger_i_alt": 85,
+ "besoeg_i_alt": 45,
+ "sidevisninger_i_alt": 84,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 46,
-   "visninger": 64
+   "besoeg": 45,
+   "visninger": 63
   },
   {
    "sti": "/artikel/e8aad19178f24e34.html",
@@ -337,7 +337,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 46
+   "besoeg": 45
   }
  ],
  "ai_chats": [],
@@ -345,8 +345,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 46,
-    "visninger": 46
+    "besoeg": 45,
+    "visninger": 45
    },
    {
     "fra": "herfra selv",
@@ -798,7 +798,7 @@ window.LAESERTAL = {
    "sti": "/artikel/3a0e75f056969468.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
+   "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
    "kategori": "Samfund & etik",
    "dato": "2026-08-26",
    "henvisere": [

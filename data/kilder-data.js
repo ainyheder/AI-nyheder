@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-29T01:07:22.337971+00:00",
- "artikler_i_alt": 111,
+ "opdateret": "2026-08-29T07:19:46.037352+00:00",
+ "artikler_i_alt": 82,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 17,
-   "som_ekstra": 4,
+   "i_listen": 15,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
+     "dato": "",
+     "foerst_set": "2026-08-29T01:07:22.337971+00:00",
+     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia køber Hugging Face for 12,9 milliarder"
+    },
+    {
+     "rubrik": "Lambda låner 1 mia. dollars til Nvidia-chips",
+     "dato": "",
+     "foerst_set": "2026-08-29T01:07:22.337971+00:00",
+     "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon tredobler Nvidia-chipsordre efter kæmpe efterspørgsel"
+    },
     {
      "rubrik": "Anthropic vinder første retssag mod Pentagon-mærkat",
      "dato": "",
@@ -34,15 +52,6 @@ window.KILDER_STATUS = {
      "under": "Hugging Face lancerer sød robot-and på hjul"
     },
     {
-     "rubrik": "OpenAI offentliggør rapport om Hugging Face-hacket",
-     "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden"
-    },
-    {
      "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
      "dato": "",
      "foerst_set": "2026-08-18T14:17:16",
@@ -52,29 +61,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til teenagere"
     },
     {
-     "rubrik": "Lambda låner 1 mia. dollars til Nvidia-chips",
-     "dato": "2026-08-28T20:24:11",
-     "foerst_set": "2026-08-29T01:07:22",
-     "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-     "side": "artikel/f88a0fcca7604658.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Chen Yueh-Han viser vejen til selvforbedrende AI",
      "dato": "2026-08-28T19:30:38",
      "foerst_set": "2026-08-29T01:07:22",
      "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
      "side": "artikel/24c26e96ef009735.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
-     "dato": "2026-08-28T18:19:40",
-     "foerst_set": "2026-08-29T01:07:22",
-     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-     "side": "artikel/f019f50bce19d8e1.html",
      "hvor": "forside",
      "under": ""
     },
@@ -158,6 +149,24 @@ window.KILDER_STATUS = {
      "side": "artikel/9f21c491f2511145.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder",
+     "dato": "2026-08-27T06:32:51",
+     "foerst_set": "2026-08-27T10:27:50",
+     "link": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
+     "side": "artikel/7a131e105527fce8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "23-årige Noah Shinn henter 2,5 milliarder til AI-assistent",
+     "dato": "2026-08-27T00:24:57",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+     "side": "artikel/dff9dc0737a40c9b.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -167,10 +176,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     1
-    ],
-    [
-     "MIT Tech Review AI",
      1
     ],
     [
@@ -189,9 +194,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 2,
+   "i_listen": 9,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
+     "dato": "",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
+    },
     {
      "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
      "dato": "",
@@ -290,15 +304,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b7930e814c4df12a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
-     "dato": "2026-08-26T17:36:06",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-     "side": "artikel/3a0e75f056969468.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -307,12 +312,12 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "OpenAI Blog",
+     "Ars Technica AI",
      2
     ],
     [
-     "Ars Technica AI",
-     1
+     "OpenAI Blog",
+     2
     ]
    ]
   },
@@ -402,20 +407,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI's AI-agenter snød test og hackede Hugging Face",
-     "dato": "2026-08-27T12:58:59",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face/",
-     "side": "artikel/6ebcc7edcc4c3498.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Meta opgiver plan om at erstatte medarbejdere med AI",
      "dato": "2026-08-26T21:25:27",
      "foerst_set": "2026-08-27T01:00:18",
      "link": "https://arstechnica.com/ai/2026/08/metas-scrapped-plans-to-go-ai-native-included-slashing-teams-by-60-percent/",
      "side": "artikel/7e1703c40fda632b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's AI-agenter snød test og hackede Hugging Face",
+     "dato": "2026-08-27T12:58:59",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face/",
+     "side": "artikel/6ebcc7edcc4c3498.html",
      "hvor": "forside",
      "under": ""
     },
@@ -459,6 +464,10 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
+     2
+    ],
+    [
+     "MIT Tech Review AI",
      1
     ],
     [
@@ -485,17 +494,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
-     "dato": "2026-08-26T19:00:00",
+     "dato": "",
      "foerst_set": "2026-08-26T21:00:41",
      "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-     "side": "artikel/db5b8f4203cbf5b4.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
     },
     {
      "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
@@ -581,11 +590,7 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     1
-    ],
-    [
-     "OpenAI Blog",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -601,7 +606,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 23,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ny blog om AI's fremtid",
@@ -613,13 +618,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye blog om AI's fremtid"
     },
     {
-     "rubrik": "OpenAI om Hugging Face-hændelsen og vejen frem",
-     "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden"
+     "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
+     "dato": "2026-08-28T06:00:00",
+     "foerst_set": "2026-08-29T07:19:46",
+     "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+     "side": "artikel/57a3b900535e942d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI hjælper thailandske iværksættere i gang",
@@ -719,25 +724,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b4f331f2e15ca85e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's nye blog om AI's fremtid",
-     "dato": "2026-08-20T07:00:00",
-     "foerst_set": "2026-08-20T19:56:22",
-     "link": "https://openai.com/index/introducing-ai-futures",
-     "side": "artikel/2e8bfa2782e5fd18.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
      2
-    ],
-    [
-     "MIT Tech Review AI",
-     1
     ],
     [
      "TechCrunch AI",
@@ -856,119 +848,10 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 25,
-   "i_listen": 25,
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "EduRiskX: AI spotter studerende i fare",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26107",
-     "side": "artikel/a91b8dea84a4e7ec.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "eICU-data: AI forklarer dødsfald på intensiv",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26109",
-     "side": "artikel/cb16546612ea428e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Jiale Liu: AI skal forudsige batteriets levetid",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26111",
-     "side": "artikel/0aeb29af4017fbde.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "PICasso: AI designer lynhurtige lys-chips",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26113",
-     "side": "artikel/abf9de3d7c966c79.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "CIFQA: AI svarer på finansspørgsmål med tal fra kilden",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26114",
-     "side": "artikel/1cc0c3ac7f294640.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Marko Cvjetkos AI opdager naturens egne mønstre",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26116",
-     "side": "artikel/9d8019459429dee1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Forskere finder skjult energispild i AI-enheder",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26134",
-     "side": "artikel/7cdf8d38221925f8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI kan skrive hele litteraturoversigter på få sekunder",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26145",
-     "side": "artikel/0b698d3fee4f8c34.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Edouard Lansiaux: Ny metode skal hjælpe AI med kaos-data",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26149",
-     "side": "artikel/ccae0e6737478ccf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT-4o og Claude-3.5-Sonnet læser forskning",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26150",
-     "side": "artikel/7ff511ed08265ce8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sandeep Gaddamwar: AI skal forudsige, hvornår du skifter teleselskab",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26151",
-     "side": "artikel/5fde2fe48fb4f446.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI kan nu læse hjernebølger og skrive lægejournal",
-     "dato": "2026-08-28T00:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://arxiv.org/abs/2608.26153",
-     "side": "artikel/e8e992ab21e5f02e.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   },
   {
