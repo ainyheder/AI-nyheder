@@ -1,7 +1,194 @@
 {
-  "opdateret": "2026-08-29T11:19:13.761098+00:00",
-  "antal": 84,
+  "opdateret": "2026-08-29T15:44:39.659146+00:00",
+  "antal": 91,
   "artikler": [
+    {
+      "titel": "Debian votes to allow \"responsible use of generative AI\"",
+      "link": "https://lwn.net/Articles/1091231/",
+      "resume": "Article URL: https://lwn.net/Articles/1091231/ Comments URL: https://news.ycombinator.com/item?id=49489982 Points: 189 # Comments: 129",
+      "dato": "2026-08-29T14:02:10+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "Debian tillader AI-hjælp - med ansvar",
+      "resume_da": "Debian har stemt for at tillade AI-værktøjer i udviklingen, men kræver samme kvalitet og ansvar som alt andet arbejde.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Beslutningen",
+          "tekst": "Efter en afstemning blandt Debian-udviklerne er det nu officielt: AI-værktøjer må bruges til at skrive kode, dokumentation og pakker i projektet. Valget faldt på et kompromis, der hverken forbyder eller direkte opfordrer til AI-brug. Holdningen er, at AI kan gøre frivillige mere effektive, så de kan bruge tiden på det, der kræver teknisk snilde og dømmekraft."
+        },
+        {
+          "overskrift": "Reglerne",
+          "tekst": "Selvom AI nu er tilladt, er der klare krav: Alt arbejde skal stadig leve op til Debians standarder for kvalitet og lovlighed. Den, der indsender et bidrag, er fuldt ansvarlig - også selvom det er lavet med AI. Man skal forstå, gennemgå, teste og rette i AI-outputtet, før det ryger ind i systemet. Det handler altså ikke om at snyde, men om at bruge værktøjet fornuftigt."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "Ikke alle er glade for udfaldet. Nogle mener, at projektet er for stort til at håndhæve et forbud, så reglerne er ligegyldige. Andre håber på, at åbne lokale AI-modeller kan erstatte de store lukkede tjenester. Der er også bekymring for, at unge udvikleres evner forringes, hvis de bliver for afhængige af AI-hjælp. En debattør påpeger, at AI kun bruger omkring 0,2 procent af verdens energi."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "0,2 %",
+          "label": "af verdens energiforbrug bruges på AI"
+        }
+      ],
+      "detaljer": [
+        "Debian-udviklerne valgte kompromiset: AI må bruges til kode, dokumentation og medier.",
+        "Alt AI-genereret arbejde skal leve op til samme kvalitets- og legalitetsstandarder som andet.",
+        "Bidragydere er fuldt ansvarlige for AI-assisteret output og skal teste det grundigt.",
+        "Flere debattører mener, at et forbud alligevel ville være umuligt at håndhæve i praksis.",
+        "Nogle håber på åbne lokale AI-modeller som alternativ til de store lukkede tjenester.",
+        "Der er bekymring for, at unge udvikleres tekniske evner kan blive dårligere med AI."
+      ],
+      "betydning": "Som bruger af Debian kan du regne med, at AI-hjulpet kode stadig gennemgår samme kontrol - men måske kommer opdateringerne hurtigere, når frivillige sparer tid.",
+      "pointer": [
+        "Debian tillader AI-værktøjer til udvikling og dokumentation.",
+        "Kvalitet og ansvar forbliver de samme, uanset værktøj.",
+        "Kritikere frygter for unge udvikleres evner.",
+        "Afstemningen var et kompromis mellem forbud og fri brug."
+      ],
+      "navngivet": true,
+      "side": "artikel/9b3181b6e6f317d4.html"
+    },
+    {
+      "titel": "Nvidia’s AI advantage is moving beyond the GPU",
+      "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "resume": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+      "dato": "2026-08-29T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "Nvidia satser på nye chips ud over GPU'en",
+      "resume_da": "Nvidia udvider sin AI-satsning med nye systemer, der styrer data. Konkurrencen rykker nu væk fra GPU'erne.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Historien indtil nu",
+          "tekst": "I årevis var Nvidia næsten eneleverandør af GPU'er til AI. Men nu bygger Amazon og Google deres egne chips, og Nvidias aktie har kun vokset beskedent det seneste år. Nu viser nye resultater, at Nvidias fordel ligger i at få hele systemet til at arbejde sammen."
+        },
+        {
+          "overskrift": "Det nye system",
+          "tekst": "Nvidia lancerer Vera Rubin-arkitekturen, der kombinerer Rubin GPU'en med en Vera CPU og Groq 3 LPX. Vera CPU'en styrer data, så GPU'en ikke venter. Nvidia siger, at det giver op til 3x hurtigere drift og bedre brug af flash-lagring."
+        },
+        {
+          "overskrift": "Andres løsning",
+          "tekst": "OpenAI har lavet sin egen chip, Jalapeño, som flytter data mindre. Den holder hele arbejdsbyrden i ét system for at undgå forsinkelser. Strategien er anderledes, men målet er det samme: smartere styring i stedet for flere processorer."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Ingen har endnu vundet kampen om data-styring. Nvidia møder konkurrence fra chipfabrikanter og cloud-giganter. Men indtil videre har Nvidia et stort forspring, og investorerne begynder at se værdien i hele systemet, ikke kun GPU'en."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "3x hurtigere",
+          "label": "drift med Vera CPU"
+        }
+      ],
+      "detaljer": [
+        "Nvidia voksede 10x i markedsværdi fra starten af 2023 til midten af 2025.",
+        "Aktien er kun steget beskedent det seneste år på grund af GPU-konkurrence.",
+        "Vera Rubin-arkitekturen kombinerer Rubin GPU, Vera CPU og Groq 3 LPX.",
+        "Vera CPU'en styrer data og mindsker flaskehalse i systemet.",
+        "OpenAI designede Jalapeño-chippen for at minimere dataflytning.",
+        "Data-styring bliver nøgleområdet for AI-infrastruktur fremover."
+      ],
+      "betydning": "Du kan forvente hurtigere og billigere AI-løsninger, fordi Nvidia og andre nu fokuserer på at få hele systemet til at køre smartere – ikke kun GPU'en.",
+      "pointer": [
+        "Nvidia udvider ud over GPU'er med nye systemer.",
+        "Vera CPU giver op til 3x hurtigere drift.",
+        "OpenAI laver egen chip for at undgå dataflytning.",
+        "Konkurrencen rykker til data-styring."
+      ],
+      "billedmotiv": "En bunke computermus stablet med en enkelt CPU-processor øverst, mens en streg af printerblæk løber imellem dem.",
+      "side": "artikel/e277e4a4618df516.html"
+    },
+    {
+      "titel": "StemDeck, a free, open-source and local AI stem separator",
+      "link": "https://github.com/stemdeckapp/stemdeck",
+      "resume": "Article URL: https://github.com/stemdeckapp/stemdeck Comments URL: https://news.ycombinator.com/item?id=49486081 Points: 162 # Comments: 45",
+      "dato": "2026-08-29T01:24:13+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "StemDeck splitter sange i seks spor – helt lokalt",
+      "resume_da": "Det gratis open source-værktøj StemDeck adskiller vokal, trommer og bas i din musik. Alt kører på din egen computer.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "En udvikler har udgivet StemDeck, et gratis og åbent program, der kan dele et musiknummer op i seks separate spor: sang, trommer, bas, guitar, klaver og andet. Du trækker bare en MP3- eller WAV-fil ind, eller indsætter et YouTube-link, og så klarer programmet resten – helt uden at uploade noget til skyen."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "StemDeck bruger Meta AI's Demucs-model, som er trænet til at genkende de forskellige instrumenter i et nummer. Derefter kan du redigere i et mixerpanel: skrue op og ned, slå spor fra eller kun lytte til vokalen. Du kan også eksportere de enkelte spor eller din egen blanding som en WAV-fil – alt sammen lokalt på din maskine."
+        },
+        {
+          "overskrift": "Hvem er det til?",
+          "tekst": "Værktøjet er et alternativ til betalte tjenester som Moises og LALAL.AI, som kræver konto og upload. StemDeck er målrettet dig, der vil øve guitar til din yndlingssang eller analysere et nummer – uden at dine filer forlader din computer. Appen findes til både Windows og Mac, og første opstart henter den nødvendige model på cirka 170 MB."
+        },
+        {
+          "overskrift": "Begrænsninger",
+          "tekst": "StemDeck er bevidst ikke et fuldt studie-værktøj. Skal du have hurtigere behandling, bedre lydkvalitet eller app til mobil, er de kommercielle produkter et bedre valg. Også kunstnerisk ekstraudstyr som avancerede effekter mangler. Men til personlig øvelse og læring er StemDeck mere end nok – og det er 100 procent gratis."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "6",
+          "label": "spor kan hvert nummer deles i"
+        },
+        {
+          "tal": "170 MB",
+          "label": "model, der hentes ved første start"
+        }
+      ],
+      "detaljer": [
+        "StemDeck er helt gratis og open source uden konto, kvote eller abonnement.",
+        "Værktøjet kan håndtere MP3, WAV, FLAC, OGG, MP4 og M4A samt YouTube-links.",
+        "Ud over adskillelse viser programmet BPM, toneart og lydstyrke-niveauer.",
+        "Du kan vælge kun at eksportere udvalgte spor eller en selvvalgt blanding.",
+        "Appen henter automatisk den bedste chip-ydelse på din computer.",
+        "Bygget med Python, FastAPI, Tauri-vinduer og Demucs fra Meta AI.",
+        "Windows-versionen er selvkørende og kan flyttes rundt på maskinen."
+      ],
+      "betydning": "Du kan nu adskille sange i enkelte instrumenter helt gratis og uden at dine filer ryger på internettet – perfekt til at øve eller remixe derhjemme.",
+      "pointer": [
+        "Gratis og lokalt alternativ til Moises og LALAL.AI",
+        "Deler musik i op til seks spor",
+        "Kræver ingen konto eller upload",
+        "Bruger Meta AI's open source-model Demucs"
+      ],
+      "billedmotiv": "En musikinstrument-kasse, der er åbnet, med en højttaler og en mikrofon adskilt i seks små kuverter på et bord.",
+      "side": "artikel/3b2887a66a01672f.html"
+    },
+    {
+      "titel": "Luanti removed from Google Play due to baseless AI copyright notice",
+      "link": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+      "resume": "Article URL: https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/ Comments URL: https://news.ycombinator.com/item?id=49475079 Points: 496 # Comments: 150",
+      "dato": "2026-08-28T06:33:57+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "Luanti fjernet fra Google Play efter fejlagtig AI-klage",
+      "resume_da": "Spillet Luanti blev taget ned på grund af en ubegrundet ophavsretsklage fra en AI. Google har nu fjernet spillet, men det er stadig utilgængeligt.",
+      "kat_ai": true,
+      "prio": 6,
+      "billedmotiv": "Et brætspil med en robotarm, der peger på et kryds over en brik, med en blyant der ligger brudt ved siden af."
+    },
     {
       "titel": "Our decision on Cursor following its acquisition by SpaceX",
       "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
@@ -44,6 +231,75 @@
       "kat_ai": true,
       "prio": 8,
       "side": "artikel/57a3b900535e942d.html"
+    },
+    {
+      "titel": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "resume": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
+      "dato": "2026-08-28T20:24:11+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-29T01:07:22.337971+00:00",
+      "eget_foerst_set": "2026-08-29T01:07:22.337971+00:00",
+      "rubrik": "Lambda låner en milliard til Nvidia-chips",
+      "resume_da": "AI-udlejningsfirmaet Lambda har rejst en milliard dollar i gæld til at købe Nvidia-chips, som de blandt andet udlejer til Microsoft.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Aftalen",
+          "tekst": "Lambda har fået et lån på **1 milliard dollar** gennem JP Morgan Chase. Pengene skal bruges til at købe Nvidia-chips, som firmaet blandt andet lejer ud til Microsoft. Lånet er kortfristet, hvilket betyder, at Lambda regner med hurtigt at få penge ind på at leje chip-kapaciteten ud."
+        },
+        {
+          "overskrift": "Lånerækken",
+          "tekst": "Det er ikke første gang, Lambda låner penge til chip-indkøb. I maj fik firmaet et lån på en milliard dollar, og denne uge lukkede de endnu et lån på **926 millioner dollar**. Det skal finansiere Nvidias nyeste GB300-chips, som de efter kontrakt skal levere til Nvidia selv."
+        },
+        {
+          "overskrift": "Børsplaner",
+          "tekst": "Gælden kommer, mens Lambda angiveligt er i forhandlinger om en investeringsrunde på **3 milliarder dollar** før en børsnotering. Sidste november fik de 1,5 milliarder dollar i venturekapital til en værdi af 5,43 milliarder dollar."
+        },
+        {
+          "overskrift": "Branchen generelt",
+          "tekst": "Lambda er ikke alene om at finansiere AI-boomet med lån. Ifølge Bloomberg har banker og teknologiselskaber globalt rejst over **400 milliarder dollar** i AI-relateret gæld i 2026. Det viser, at hele sektoren satser på, at chipsene hurtigt kan omsættes til indtjening."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1 mia. dollar",
+          "label": "lån til Nvidia-chips"
+        },
+        {
+          "tal": "926 mio. dollar",
+          "label": "ekstra lån til GB300-chips"
+        },
+        {
+          "tal": "3 mia. dollar",
+          "label": "i forhandlinger før børsnotering"
+        },
+        {
+          "tal": "400 mia. dollar",
+          "label": "AI-gæld globalt i 2026"
+        }
+      ],
+      "detaljer": [
+        "Lånet blev arrangeret af JP Morgan Chase, ifølge Bloomberg.",
+        "Lambda lejer chipsene ud til Microsoft.",
+        "I maj fik Lambda et sikret kreditlån på 1 milliard dollar.",
+        "GB300 er en af Nvidias nyeste chip-modeller.",
+        "Sidste november fik Lambda 1,5 milliarder dollar i venturekapital.",
+        "Værdiansættelsen var dengang 5,43 milliarder dollar."
+      ],
+      "betydning": "Du kan forvente, at AI-tjenester bliver billigere og hurtigere at få, når firmaer som Lambda kan skaffe kapital til at bygge mere chip-kapacitet ud.",
+      "pointer": [
+        "Lambda låner en milliard dollar til chips.",
+        "Pengene går blandt andet til Microsoft-udlejning.",
+        "Firmaet forhandler om 3 milliarder dollar inden børsnotering.",
+        "Hele AI-branchen finansieres med over 400 milliarder i gæld."
+      ],
+      "billedmotiv": "Et tårn af guldmønter, der er stablet op mod en mikrochip, med en nøgle, der er stukket i møntbunken.",
+      "side": "artikel/f88a0fcca7604658.html"
     },
     {
       "titel": "An Anthropic researcher just gave us a peek at self-improving AI",
@@ -117,8 +373,7 @@
       "eget_foerst_set": "2026-08-29T01:07:22.337971+00:00",
       "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
       "resume_da": "Techgiganter kaster milliarder efter virksomheder med åbne AI-modeller. Nvidia er tættest på et kæmpekøb.",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Kæmpe handler",
@@ -137,8 +392,6 @@
           "tekst": "Fireworks, der styrer åbne modeller for virksomheder, behandler **40 billioner tokens** om dagen – mere end både Gemini og OpenAI. Chef Lin Qiao tror, at alle virksomheder snart får deres egen specialiserede model. Hun råder alle app-firmaer til at ansætte deres egen forsker til at bygge modeller på deres egne data."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "13 mia. dollars",
@@ -161,6 +414,7 @@
           "label": "af virksomhederne bruger åbne AI-modeller"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Nvidia er tæt på at købe Hugging Face for 13 milliarder dollars.",
         "Hugging Face er en platform for åbne AI-modeller, ofte kaldet AI-tidens GitHub.",
@@ -177,6 +431,8 @@
         "Kun få virksomheder bruger åbne modeller nu.",
         "Fremtiden er specialiserede modeller til hver virksomhed."
       ],
+      "kat_ai": true,
+      "prio": 4,
       "side": "artikel/f019f50bce19d8e1.html"
     },
     {
@@ -330,6 +586,54 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/354d791d28ecaaab.html"
+    },
+    {
+      "titel": "Please stop flooding our projects with AI slop to furnish your CV",
+      "link": "https://neilalexander.dev/2026/06/30/flooding-contributions",
+      "resume": "Article URL: https://neilalexander.dev/2026/06/30/flooding-contributions Comments URL: https://news.ycombinator.com/item?id=49474143 Points: 212 # Comments: 141",
+      "dato": "2026-08-28T03:49:33+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-28T12:09:31.701345+00:00",
+      "eget_foerst_set": "2026-08-28T12:09:31.701345+00:00",
+      "rubrik": "Claude-bidrag oversvømmer open source-projekter",
+      "resume_da": "Open source-vedligeholdere oplever en bølge af Claude-genererede rettelser og sikkerhedsrapporter, som ofte handler om CV'et snarere end projektet.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Open source-vedligeholdere mærker en markant ændring i, hvordan eksterne bidrag ser ud. Tidligere kom der typisk fejlrapporter, men nu modtager de fleste pull requests, hvor en AI som **Claude** har rettet ting. Mange af bidragene kommer fra folk, der aldrig har bidraget før, og som lige pludselig laver flere rettelser på én gang. Det vækker mistanke om, at formålet er at pynte på profilen snarere end at hjælpe projektet."
+        },
+        {
+          "overskrift": "Tvivlsomme bidrag",
+          "tekst": "En bidragyder med næsten ingen aktivitet siden **2018** sendte pludselig tre rettelser til stavefejl i kommentarer. Rettelserne var harmløse og korrekte, men vedligeholderen undrede sig: Hvorfor lige det, og hvorfor nu? Det virker som om, folk bruger AI til at skabe en illusion af, at de har lavet noget meningsfuldt. Vedligeholderen vil ikke acceptere den slags busywork, fordi det ikke forbedrer projektet reelt og belønner folk, der bare spørger en robot om at rette stavefejl."
+        },
+        {
+          "overskrift": "Sikkerhed med AI",
+          "tekst": "Samme mønster ses med sikkerhedsrapporter. Der kommer markant flere rapporter, men mange er tydeligt AI-genererede. Vedligeholderen er begyndt at være meget mere selektiv med at udstede **CVE**-notifikationer, fordi koordineringen af rettelser og offentliggørelse kræver en stor indsats. Tanken er, at det handler om at få æren for at have fundet et problem, ikke om at gøre projektet sikkert. Det slider på tilliden, som hele open source bygger på."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "En bidragyder lavede tre PR'er til stavefejl, som Claude havde rettet.",
+        "Bidragyderen havde ingen GitHub-aktivitet siden 2018 før nu.",
+        "Pull requests er blevet mere almindelige end issues i open source.",
+        "AI-genererede sikkerhedsrapporter indeholder ofte forslag til rettelser.",
+        "Vedligeholdere er blevet mere selektive med at udstede CVE-notifikationer.",
+        "Open source bygger på tillid, ikke på antallet af AI-lavede bidrag."
+      ],
+      "betydning": "Du risikerer at spilde din tid og dit projekts ressourcer på AI-genererede bidrag, der ikke forbedrer noget. Det er sværere at finde reelle bidragydere, når profiler er fyldt med AI-slop.",
+      "pointer": [
+        "Open source folk får flere AI-genererede PRs",
+        "Bidrag kommer ofte fra nye brugere med lav aktivitet",
+        "Sikkerhedsrapporter er ofte AI-skabt og derfor upålidelige",
+        "Tillid er vigtigere end antal bidrag"
+      ],
+      "navngivet": true,
+      "side": "artikel/0e9dfa1765d265b4.html"
     },
     {
       "titel": "Supporting Thailand’s next generation of AI startups",
@@ -1082,6 +1386,57 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/5250e71c3d45fa8a.html"
+    },
+    {
+      "titel": "Serve Markdown to AI Agents with Accept Headers",
+      "link": "https://acceptmarkdown.com/",
+      "resume": "Article URL: https://acceptmarkdown.com/ Comments URL: https://news.ycombinator.com/item?id=49454764 Points: 175 # Comments: 108",
+      "dato": "2026-08-26T19:45:59+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "eget_foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "rubrik": "Serve dit website som Markdown til AI-agenter",
+      "resume_da": "Lær at servere ren tekst til AI-læseagenter fra samme URL som din HTML-side – hurtigere og bedre for både bots og brugere.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "En guide forklarer, hvordan webshops og blogs kan servere Markdown-versioner af deres indhold til AI-agenter. Ideen er enkel: Når en AI læser din side, drop alt det visuelle – menuer, scripts, reklamer – og giv den bare teksten. Det sparer både tid og tokens."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Ved at sende en såkaldt Accept-header med anmodningen om `text/markdown`, kan serveren vælge at svare med ren Markdown i stedet for HTML. Guiden har konkrete opskrifter til populære platforme som WordPress, Laravel og Next.js, så du kan komme i gang uden at være teknisk ekspert."
+        },
+        {
+          "overskrift": "Hvorfor nu det?",
+          "tekst": "AI-agenter som browse- og fetch-værktøjer har begrænset hukommelse. Jo mere kode, jo mindre plads til det vigtige indhold. Ved at fjerne alt støj, får AI'en mere relevant kontekst at arbejde med – og dine sider bliver hurtigere at læse for alle."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Du behøver ikke ændre din eksisterende opsætning for at prøve det. Guiden viser, hvordan du kan teste, om dit site allerede understøtter Markdown – og hvis ikke, hvordan du tilføjer det med få linjers kode. Fremtiden for webindhold kan sagtens være dobbelt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Markdown fjerner menus, scripts og layout fra dine sider, så AI-agenter får ren tekst.",
+        "Du kan servere samme URL til både browsere og AI-agenter med forskellige Accept-headere.",
+        "Guiden har kopi-klare konfigurationer til Nginx, Caddy, WordPress og Discourse.",
+        "Den viser også opskrifter til populære frameworks som Rails, Express og Django.",
+        "Status-sektionen oversigt over hvilke AI-agenter der sender `Accept: text/markdown`.",
+        "Værdien er mindre data at hente og mindre at fylde i AI'ens kontekstvindue."
+      ],
+      "betydning": "Du kan let gøre dine egne sider mere AI-venlige og spare både båndbredde og token-plads – så dine indhold bliver læst bedre af assistenter.",
+      "pointer": [
+        "Server Markdown til AI-agenter fra samme URL.",
+        "Mindre støj betyder bedre kontekst for modellen.",
+        "Få kopi-klare opskrifter til mange platforme.",
+        "Test nemt om dit site allerede understøtter det."
+      ],
+      "side": "artikel/fd0d2f813b7c0018.html"
     },
     {
       "titel": "AI’s memory crunch is coming for Android apps",
@@ -1866,6 +2221,57 @@
       "side": "artikel/7a131e105527fce8.html"
     },
     {
+      "titel": "CEO fired developers to make room for AI. Developers create open source AI CEO",
+      "link": "https://github.com/SenteLabsAI/OpenExecutive",
+      "resume": "Article URL: https://github.com/SenteLabsAI/OpenExecutive Comments URL: https://news.ycombinator.com/item?id=49458418 Points: 1012 # Comments: 707",
+      "dato": "2026-08-27T01:46:22+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-27T10:27:50.354724+00:00",
+      "eget_foerst_set": "2026-08-27T10:27:50.354724+00:00",
+      "rubrik": "Open Executive: Gratis AI-ledelse for din virksomhed",
+      "resume_da": "Open Executive er et gratis open source AI-system, der fungerer som en virtuel direktør med otte specialiserede rådgivere – tilpasset din virksomheds dokumenter og beslutninger.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Udvikleren SenteLabs har udgivet Open Executive – et gratis AI-system, der optræder som din virksomheds ledelsesteam. Systemet giver ét samlet svar fra en administrerende direktør med 'Harvard MBA-niveau', baseret på otte specialiserede agenter, der hver dækker områder som økonomi, personale og jura."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Når du stiller et spørgsmål, koordinerer systemet agenterne bag kulisserne – uden at du ser dem. Det bruger AI-modeller fra Anthropic til at generere svar, og det husker tidligere beslutninger fra møde til møde. Du uploader bare dine egne dokumenter, som systemet kombinerer med indbygget ledelsesviden."
+        },
+        {
+          "overskrift": "Hvad kan det bruges til?",
+          "tekst": "Systemet kan snakke med dig via web, Slack, e-mail, Telegram, Google Chat og Discord. Det kan også planlægge opgaver og minde dig om tidsfølsomme handlinger. Alt er åbent og gratis at downloade via GitHub, så du kan tilpasse det eller hoste det selv."
+        },
+        {
+          "overskrift": "Kritik og begrænsninger",
+          "tekst": "Selvom det lyder imponerende, er der udfordringer. Systemet kræver en API-nøgle fra Anthropic, som koster penge at bruge. Det skal også køre på en enkelt server for at planlægningsfunktionen virker korrekt. Og som med alt AI kan der være fejl i rådene – så brug sund fornuft."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Open Executive er gratis og open source under Apache 2.0-licens.",
+        "Systemet har otte specialiserede agenter: CSO, CFO, CHRO, GC, COO, CMO, CPO og Board.",
+        "Det bruger Anthropic-modellerne Claude Sonnet og Claude Opus til henholdsvis standard- og dybere svar.",
+        "Systemet husker tidligere beslutninger i en database, så det kan referere til tidligere råd.",
+        "Det integrerer med Slack, e-mail, Telegram, Google Chat og Discord.",
+        "Første opstart tager et par minutter, da det downloader en sprogmodel på omkring 90 MB."
+      ],
+      "betydning": "Du kan nu gratis downloade et system, der giver din virksomhed en AI-ledelsesrådgiver med ekspertviden – men du skal selv betale for API-brug og vurdere rådene kritisk.",
+      "pointer": [
+        "Open Executive er gratis at downloade.",
+        "Otte AI-agenter fungerer som ledelsesteam.",
+        "Husker dine tidligere beslutninger.",
+        "Kræver Anthropic API-nøgle."
+      ],
+      "side": "artikel/9d5c9917dcdbe981.html"
+    },
+    {
       "titel": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
       "link": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
       "resume": "The startup is only a year old but it has already generated a massive amount of hype (and money) while also spurring privacy concerns.",
@@ -1973,15 +2379,6 @@
         }
       ],
       "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-          "rubrik": "Lambda låner 1 mia. dollars til Nvidia-chips",
-          "resume_da": "AI-cloudselskabet Lambda låner en milliard dollars til at købe Nvidia-chips, som Microsoft skal leje. Lånet er endnu et tegn på AI-boomet.",
-          "foerst_set": "2026-08-29T01:07:22.337971+00:00"
-        }
-      ],
       "detaljer": [
         "Aftalen omfatter Nvidia Blackwell Ultra, Rubin og Rubin Ultra GPU'er.",
         "Chipsene leveres til AWS' datacentre i 2027 og 2028.",
@@ -2263,58 +2660,6 @@
       "side": "artikel/6ebcc7edcc4c3498.html"
     },
     {
-      "titel": "Google’s Gemini has a branding problem, and so does the rest of AI",
-      "link": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
-      "resume": "Consumer AI apps need to stop making users learn their product architecture.",
-      "dato": "2026-08-26T19:37:34+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-26T21:00:41.495302+00:00",
-      "eget_foerst_set": "2026-08-26T21:00:41.495302+00:00",
-      "rubrik": "Gemini-appen er blevet så rodet, at de færreste kan finde ud af den",
-      "resume_da": "Googles Gemini-app har fået så mange markenavne for hver funktion, at brugerne ikke kan finde rundt. Også ChatGPT og Claude har samme problem.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Rodet design",
-          "tekst": "I Gemini-appen kan du skifte mellem chat, Spark og Daily Brief – tre funktioner med hver sin ikon og plads i menuen. Google siger selv, at man ikke skal gætte, hvilken funktion man skal bruge, men branding gør det netop svært. Det skaber forvirring hos helt almindelige brugere."
-        },
-        {
-          "overskrift": "Krybberi og unødige navne",
-          "tekst": "Daily Brief giver dig foreslåede opgaver baseret på dine Google-søgninger – det føles ikke nyttigt, men uhyggeligt. Spark er derimod en god assistent, men behøver ikke sit eget brand. Brugeren skal ikke tænke på, hvilken 'side' af appen, de skal bruge."
-        },
-        {
-          "overskrift": "Hele branchen fejler",
-          "tekst": "ChatGPT kræver, at du vælger mellem 'Chat' og 'Work', og Claude har 'Chat' og 'Cowork'. Det er ingeniør-tænkning, der gør AI unaturligt at bruge. Apple derimod gør Siri og eksisterende apps klogere uden at kræve nye vaner – det kan blive vinderstrategien."
-        },
-        {
-          "overskrift": "SMS-løsningen",
-          "tekst": "Flere nye tjenester som Poke, Ollie og Lindy lader dig skrive til en AI som til en ven via sms. Eksperter siger, at folk ikke vil åbne apps – de vil skrive en besked og få hjælp med det samme. Det er enkelt og kræver ingen tillæring."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Gemini-appen har tre adskilte funktioner: chat, Spark og Daily Brief.",
-        "Daily Brief trækker data fra Gmail og Google Kalender for at foreslå opgaver.",
-        "Den kan minde dig om tidligere Google-søgninger, hvilket føles overvågende.",
-        "Spark er en assistent, der kan handle for dig, men har eget brand.",
-        "Claude og ChatGPT kræver også, at man vælger mellem chat- og arbejdstilstand.",
-        "Apple gør eksisterende apps smartere i stedet for at indføre nye navne.",
-        "Sms-baserede AI-tjenester vinder frem fordi de er simple."
-      ],
-      "betydning": "Du skal ikke lære en bunke mærkenavne for at bruge AI – forvent rodet design, indtil firmaerne lærer at gemme teknikken væk.",
-      "pointer": [
-        "Gemini-appens branding skaber forvirring.",
-        "Daily Brief føles uhyggelig med søgehistorik.",
-        "ChatGPT og Claude har samme problem.",
-        "Apple og sms-AI viser en enklere vej."
-      ],
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/838ca76e929f0688.html"
-    },
-    {
       "titel": "The Hugging Face incident and the road ahead",
       "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
       "resume": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
@@ -2325,8 +2670,7 @@
       "eget_foerst_set": "2026-08-26T21:00:41.495302+00:00",
       "rubrik": "OpenAI om Hugging Face-hændelsen og vejen frem",
       "resume_da": "OpenAI offentliggør nu sine erfaringer efter et sikkerhedsbrud på Hugging Face og lover bedre beskyttelse af AI-modeller.",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad skete der",
@@ -2337,9 +2681,8 @@
           "tekst": "Som svar på hændelsen løfter OpenAI nu arbejdet med tre områder: stærkere sikkerhed omkring modellerne, bedre overvågning af dem i brug og mere kontrol med, at AI'en opfører sig som tilsigtet. Målet er at lukke huller, før de bliver udnyttet."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "OpenAI har offentliggjort en gennemgang af en sikkerhedshændelse på Hugging Face.",
         "Hændelsen drejer sig om AI-model sikkerhed og adgangskontrol.",
@@ -2353,6 +2696,9 @@
         "Tre fokusområder: sikkerhed, overvågning, alignment.",
         "Mål: lukke huller før udnyttelse."
       ],
+      "kat_ai": true,
+      "prio": 5,
+      "billedmotiv": "En åben hængelås med en nøgle, der er smidt i en papirkurv, og en robotgribeklo, der holder en kopi.",
       "side": "artikel/1c454c14ad6cf1d3.html"
     },
     {
