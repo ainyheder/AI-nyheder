@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-28T16:52:17.257677+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-08-29T01:07:22.337971+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -11,7 +11,7 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 20,
+   "hentet": 19,
    "i_listen": 17,
    "som_ekstra": 4,
    "seneste": [
@@ -50,6 +50,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Lambda låner 1 mia. dollars til Nvidia-chips",
+     "dato": "2026-08-28T20:24:11",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+     "side": "artikel/f88a0fcca7604658.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Chen Yueh-Han viser vejen til selvforbedrende AI",
+     "dato": "2026-08-28T19:30:38",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+     "side": "artikel/24c26e96ef009735.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
+     "dato": "2026-08-28T18:19:40",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "side": "artikel/f019f50bce19d8e1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sandhya Devanathan skifter til OpenAI midt i Indien-pres",
@@ -131,39 +158,12 @@ window.KILDER_STATUS = {
      "side": "artikel/9f21c491f2511145.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder",
-     "dato": "2026-08-27T06:32:51",
-     "foerst_set": "2026-08-27T10:27:50",
-     "link": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
-     "side": "artikel/7a131e105527fce8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "23-årige Noah Shinn henter 2,5 milliarder til AI-assistent",
-     "dato": "2026-08-27T00:24:57",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
-     "side": "artikel/dff9dc0737a40c9b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon tredobler Nvidia-chipsordre efter kæmpe efterspørgsel",
-     "dato": "2026-08-26T23:47:18",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/",
-     "side": "artikel/18acc42de8d17184.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "Ars Technica AI",
@@ -189,18 +189,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 4,
+   "i_listen": 10,
+   "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "Greg Brockman vinder magtkampen i OpenAI",
-     "dato": "",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI mister topfolk: Hvad sker der?"
-    },
     {
      "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
      "dato": "",
@@ -209,15 +200,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
-    },
-    {
-     "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
-     "dato": "",
-     "foerst_set": "2026-08-25T11:01:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden"
     },
     {
      "rubrik": "ChatGPT får særlig tilstand til teenagere",
@@ -229,11 +211,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til teenagere"
     },
     {
-     "rubrik": "EPA skjuler datacentres forurening for naboer",
+     "rubrik": "xAI's Colossus 1: EPA vil skjule forurening",
      "dato": "2026-08-28T12:28:40",
      "foerst_set": "2026-08-28T16:52:17",
      "link": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
-     "side": "",
+     "side": "artikel/2180dceb28797ed4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -261,6 +243,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-28T00:33:43",
      "link": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
      "side": "artikel/a2ddac958ba469b0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Greg Brockman vinder magten hos OpenAI",
+     "dato": "2026-08-27T10:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
+     "side": "artikel/94057effd7fad1fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -299,19 +290,28 @@ window.KILDER_STATUS = {
      "side": "artikel/b7930e814c4df12a.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
+     "dato": "2026-08-26T17:36:06",
+     "foerst_set": "2026-08-27T01:00:18",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "side": "artikel/3a0e75f056969468.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     2
     ],
     [
      "OpenAI Blog",
      2
     ],
     [
-     "MIT Tech Review AI",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -327,8 +327,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 20,
    "i_listen": 18,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Dommer: Trumps sortlistning af Anthropic er ulovlig",
+     "dato": "",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic vinder retssag mod Pentagon-blacklist"
+    },
     {
      "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder dollars",
      "dato": "",
@@ -393,6 +402,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI's AI-agenter snød test og hackede Hugging Face",
+     "dato": "2026-08-27T12:58:59",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face/",
+     "side": "artikel/6ebcc7edcc4c3498.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta opgiver plan om at erstatte medarbejdere med AI",
      "dato": "2026-08-26T21:25:27",
      "foerst_set": "2026-08-27T01:00:18",
@@ -404,7 +422,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Google lancerer ny AI, der lytter og retter din tale",
      "dato": "2026-08-26T19:19:22",
-     "foerst_set": "2026-08-26T21:00:41",
+     "foerst_set": "2026-08-26T18:18:44",
      "link": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text/",
      "side": "artikel/3400e8c67cbf0179.html",
      "hvor": "forside",
@@ -436,20 +454,19 @@ window.KILDER_STATUS = {
      "side": "artikel/fd38b0be8423af2d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apple lancerer nye Macs med AI i fokus",
-     "dato": "2026-08-25T13:00:11",
-     "foerst_set": "2026-08-25T13:29:53",
-     "link": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
-     "side": "artikel/a259f2eef687dfd2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
+     "The Verge AI",
+     1
+    ],
+    [
      "TechCrunch AI",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ],
     [
@@ -471,6 +488,15 @@ window.KILDER_STATUS = {
    "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
+     "dato": "2026-08-26T19:00:00",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+     "side": "artikel/db5b8f4203cbf5b4.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
      "dato": "2026-08-26T09:00:00",
@@ -495,15 +521,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-26T07:28:07",
      "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
      "side": "artikel/a1de5e17b3b144fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
-     "dato": "2026-08-26T19:00:00",
-     "foerst_set": "2026-08-25T11:01:26",
-     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-     "side": "artikel/db5b8f4203cbf5b4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -570,10 +587,6 @@ window.KILDER_STATUS = {
     [
      "OpenAI Blog",
      1
-    ],
-    [
-     "The Verge AI",
-     1
     ]
    ]
   },
@@ -636,20 +649,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
-     "dato": "2026-08-26T10:00:00",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-     "side": "artikel/7e008cb73ab32457.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI-rapport: ChatGPT gør læring til en livslang vane",
      "dato": "2026-08-26T10:00:00",
      "foerst_set": "2026-08-26T18:18:44",
      "link": "https://openai.com/index/learning-never-stops",
      "side": "artikel/6d0a59326d05a420.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
+     "dato": "2026-08-26T10:00:00",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+     "side": "artikel/7e008cb73ab32457.html",
      "hvor": "forside",
      "under": ""
     },
@@ -742,9 +755,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 9,
-   "som_ekstra": 0,
+   "i_listen": 8,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Gemini 3.5 Transcribe skriver dine ord ned med AI",
+     "dato": "",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google lancerer ny AI, der lytter og retter din tale"
+    },
     {
      "rubrik": "Googles nye AI-værktøj skaber 4K-videoer med præcis styring",
      "dato": "2026-08-27T16:11:32",
@@ -760,15 +782,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-27T15:25:36",
      "link": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
      "side": "artikel/a08e7f8cba318b80.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.5 Transcribe skriver dine ord ned med AI",
-     "dato": "2026-08-26T17:01:00",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
-     "side": "artikel/2609610f53c76f5e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -827,7 +840,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Ars Technica AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "arXiv cs.AI",
