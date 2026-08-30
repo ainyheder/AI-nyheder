@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-29T21:54:36.120325+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-08-30T05:45:31.562127+00:00",
+ "artikler_i_alt": 83,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 16,
+   "i_listen": 17,
    "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
-     "dato": "",
-     "foerst_set": "2026-08-29T01:07:22.337971+00:00",
-     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia køber Hugging Face for 12,9 milliarder"
-    },
     {
      "rubrik": "Anthropic vinder første retssag mod Pentagon-mærkat",
      "dato": "",
@@ -97,6 +88,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
+     "dato": "2026-08-28T18:19:40",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "side": "artikel/f019f50bce19d8e1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Sandhya Devanathan skifter til OpenAI midt i Indien-pres",
      "dato": "2026-08-28T12:21:06",
      "foerst_set": "2026-08-28T16:52:17",
@@ -147,15 +147,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-27T15:25:36",
      "link": "https://techcrunch.com/2026/08/27/ais-memory-crunch-is-coming-for-android-apps/",
      "side": "artikel/6df4843f350acfff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Anthropics AI'er hacker andre virksomheder",
-     "dato": "2026-08-27T14:01:42",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
-     "side": "artikel/d0a5ac6877d13080.html",
      "hvor": "forside",
      "under": ""
     }
@@ -869,10 +860,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -883,60 +874,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
-    },
-    {
-     "rubrik": "Gregor Ojstersek: Kultur slår AI som produktivitets-hack",
-     "dato": "2026-08-29T17:19:47",
-     "foerst_set": "2026-08-29T21:54:36",
-     "link": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-     "side": "artikel/e39047844cf43b12.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Debian tillader ansvarlig brug af genAI",
-     "dato": "2026-08-29T14:02:10",
-     "foerst_set": "2026-08-29T15:44:39",
-     "link": "https://lwn.net/Articles/1091231/",
-     "side": "artikel/9b3181b6e6f317d4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "StemDeck splitter sange i seks spor – helt lokalt",
-     "dato": "2026-08-29T01:24:13",
-     "foerst_set": "2026-08-29T15:44:39",
-     "link": "https://github.com/stemdeckapp/stemdeck",
-     "side": "artikel/3b2887a66a01672f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google fjerner Luanti-spillet efter Microsoft-klage",
-     "dato": "2026-08-28T06:33:57",
-     "foerst_set": "2026-08-29T15:44:39",
-     "link": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-     "side": "artikel/978592205c0f86dc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude-bidrag oversvømmer open source-projekter",
-     "dato": "2026-08-28T03:49:33",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://neilalexander.dev/2026/06/30/flooding-contributions",
-     "side": "artikel/0e9dfa1765d265b4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Open Executive: Gratis AI-ledelse for din virksomhed",
-     "dato": "2026-08-27T01:46:22",
-     "foerst_set": "2026-08-27T10:27:50",
-     "link": "https://github.com/SenteLabsAI/OpenExecutive",
-     "side": "artikel/9d5c9917dcdbe981.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
