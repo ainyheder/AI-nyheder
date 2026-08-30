@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-30T14:56:13.486752+00:00",
- "artikler_i_alt": 83,
+ "opdateret": "2026-08-30T18:45:20.577574+00:00",
+ "artikler_i_alt": 84,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,18 +12,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 16,
+   "i_listen": 17,
    "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Nvidia vil købe Hugging Face for 13 milliarder",
-     "dato": "",
-     "foerst_set": "2026-08-29T01:07:22.337971+00:00",
-     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia køber Hugging Face for 12,9 milliarder"
-    },
     {
      "rubrik": "Anthropic vinder første retssag mod Pentagon-mærkat",
      "dato": "",
@@ -50,6 +41,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Musks SpaceX støber turbinedele trods forurening",
+     "dato": "2026-08-30T16:54:25",
+     "foerst_set": "2026-08-30T18:45:20",
+     "link": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+     "side": "artikel/d5dafdd78fb614c5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Caterpillar ruller AI ud fra minelære",
+     "dato": "2026-08-30T15:00:00",
+     "foerst_set": "2026-08-30T18:45:20",
+     "link": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+     "side": "artikel/e4de3653e651c874.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sony og Warner sagsøger Anthropic for massivt tyveri",
@@ -97,6 +106,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Nvidia køber Hugging Face for 13 mia.",
+     "dato": "2026-08-28T18:19:40",
+     "foerst_set": "2026-08-29T01:07:22",
+     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+     "side": "artikel/f019f50bce19d8e1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Sandhya Devanathan skifter til OpenAI midt i Indien-pres",
      "dato": "2026-08-28T12:21:06",
      "foerst_set": "2026-08-28T16:52:17",
@@ -131,43 +149,12 @@ window.KILDER_STATUS = {
      "side": "artikel/be41cf18f6e9b42a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google lader AI overvåge flypriser og booke hotel",
-     "dato": "2026-08-27T16:00:00",
-     "foerst_set": "2026-08-28T00:33:43",
-     "link": "https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/",
-     "side": "artikel/a88aee5f66748cd2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google strammer reglerne for Android-apps",
-     "dato": "2026-08-27T14:27:04",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://techcrunch.com/2026/08/27/ais-memory-crunch-is-coming-for-android-apps/",
-     "side": "artikel/6df4843f350acfff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og Anthropics AI'er hacker andre virksomheder",
-     "dato": "2026-08-27T14:01:42",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
-     "side": "artikel/d0a5ac6877d13080.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
      3
-    ],
-    [
-     "Ars Technica AI",
-     1
     ],
     [
      "OpenAI Blog",
@@ -223,6 +210,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer ChatGPT til teenagere"
+    },
+    {
+     "rubrik": "Texas stopper penge til Flock-overvågning",
+     "dato": "2026-08-30T11:35:10",
+     "foerst_set": "2026-08-30T18:45:20",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+     "side": "artikel/45cb6f1654d7aa7c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "H4RRIS jagter AI-snyd med videoopkald",
@@ -295,15 +291,6 @@ window.KILDER_STATUS = {
      "side": "artikel/61451b02ed4bd97a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Adobe giver Photoshop AI-værktøjer i ny menu",
-     "dato": "2026-08-27T09:00:00",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
-     "side": "artikel/d0062e3b6e560ed5.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -331,8 +318,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 2,
+   "i_listen": 19,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Dommer: Trumps sortlistning af Anthropic er ulovlig",
@@ -342,15 +329,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic vinder retssag mod Pentagon-blacklist"
-    },
-    {
-     "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder dollars",
-     "dato": "",
-     "foerst_set": "2026-08-28T00:33:43",
-     "link": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia køber Hugging Face for 12,9 milliarder"
     },
     {
      "rubrik": "Zuckerbergs Meta tester robotter i datacentre",
@@ -385,6 +363,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-28T00:33:43",
      "link": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/",
      "side": "artikel/52c8edc1868ded3c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
+     "dato": "2026-08-27T19:55:22",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/",
+     "side": "artikel/41bcb0eef42f12bd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -450,25 +437,12 @@ window.KILDER_STATUS = {
      "side": "artikel/c0735f59ecd6f405.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Robotløb i Beijing: Rekorder og robotter i flammer",
-     "dato": "2026-08-25T20:59:03",
-     "foerst_set": "2026-08-25T21:55:09",
-     "link": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
-     "side": "artikel/d791ad9bc7774bbe.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
      2
-    ],
-    [
-     "TechCrunch AI",
-     1
     ],
     [
      "MIT Tech Review AI",
@@ -747,7 +721,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -810,15 +784,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-07T04:14:51",
      "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles nye robot-hjerne kan se, tænke og samarbejde",
-     "dato": "2026-07-30T15:00:59",
-     "foerst_set": "2026-07-30T17:07:47",
-     "link": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
-     "side": "artikel/6953a8d0ca71f9ba.html",
      "hvor": "forside",
      "under": ""
     }
