@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-08-30T10:07:08.475193+00:00",
+  "opdateret": "2026-08-30T14:57:09.783257+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
@@ -138,7 +138,7 @@
           7,
           1,
           1,
-          0
+          1
         ]
       },
       {
@@ -249,14 +249,14 @@
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 42,
-  "sidevisninger_i_alt": 84,
+  "besoeg_i_alt": 43,
+  "sidevisninger_i_alt": 85,
   "ai_chat_besoeg": 0,
   "sider": [
     {
       "sti": "/",
-      "besoeg": 42,
-      "visninger": 61
+      "besoeg": 43,
+      "visninger": 62
     },
     {
       "sti": "/artikel/e8aad19178f24e34.html",
@@ -290,6 +290,16 @@
     },
     {
       "sti": "/artikel/3a080f6682cdcad3.html",
+      "besoeg": 0,
+      "visninger": 1
+    },
+    {
+      "sti": "/artikel/978592205c0f86dc.html",
+      "besoeg": 0,
+      "visninger": 1
+    },
+    {
+      "sti": "/artikel/e39047844cf43b12.html",
       "besoeg": 0,
       "visninger": 1
     },
@@ -337,17 +347,12 @@
       "sti": "/artikel/c0735f59ecd6f405.html",
       "besoeg": 0,
       "visninger": 1
-    },
-    {
-      "sti": "/artikel/f264c057671cd86d.html",
-      "besoeg": 0,
-      "visninger": 2
     }
   ],
   "henvisere": [
     {
       "fra": "direkte",
-      "besoeg": 42
+      "besoeg": 43
     }
   ],
   "ai_chats": [],
@@ -355,8 +360,8 @@
     "/": [
       {
         "fra": "direkte",
-        "besoeg": 42,
-        "visninger": 42
+        "besoeg": 43,
+        "visninger": 43
       },
       {
         "fra": "herfra selv",
@@ -407,6 +412,20 @@
       }
     ],
     "/artikel/3a080f6682cdcad3.html": [
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 1
+      }
+    ],
+    "/artikel/978592205c0f86dc.html": [
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 1
+      }
+    ],
+    "/artikel/e39047844cf43b12.html": [
       {
         "fra": "herfra selv",
         "besoeg": 0,
@@ -474,13 +493,6 @@
         "fra": "herfra selv",
         "besoeg": 0,
         "visninger": 1
-      }
-    ],
-    "/artikel/f264c057671cd86d.html": [
-      {
-        "fra": "herfra selv",
-        "besoeg": 0,
-        "visninger": 2
       }
     ]
   },
@@ -684,21 +696,6 @@
       ]
     },
     {
-      "sti": "/artikel/f264c057671cd86d.html",
-      "besoeg": 0,
-      "visninger": 2,
-      "rubrik": "DeepMind-folk imponerer med AI der selv laver forskning",
-      "kategori": "Lanceringer",
-      "dato": "2026-08-22",
-      "henvisere": [
-        {
-          "fra": "herfra selv",
-          "besoeg": 0,
-          "visninger": 2
-        }
-      ]
-    },
-    {
       "sti": "/artikel/e8aad19178f24e34.html",
       "besoeg": 0,
       "visninger": 1,
@@ -804,6 +801,36 @@
       ]
     },
     {
+      "sti": "/artikel/978592205c0f86dc.html",
+      "besoeg": 0,
+      "visninger": 1,
+      "rubrik": "Luanti fjernet fra Google Play efter Microsoft-krav",
+      "kategori": "Politik & jura",
+      "dato": "2026-08-28",
+      "henvisere": [
+        {
+          "fra": "herfra selv",
+          "besoeg": 0,
+          "visninger": 1
+        }
+      ]
+    },
+    {
+      "sti": "/artikel/e39047844cf43b12.html",
+      "besoeg": 0,
+      "visninger": 1,
+      "rubrik": "Gregor Ojstersek: Kultur slår AI som produktivitetshack",
+      "kategori": "Samfund & etik",
+      "dato": "2026-08-29",
+      "henvisere": [
+        {
+          "fra": "herfra selv",
+          "besoeg": 0,
+          "visninger": 1
+        }
+      ]
+    },
+    {
       "sti": "/artikel/6017c27dc638b35a.html",
       "besoeg": 0,
       "visninger": 1,
@@ -897,19 +924,19 @@
   "laeste_temaer": [
     {
       "navn": "Lanceringer",
-      "visninger": 10
+      "visninger": 8
+    },
+    {
+      "navn": "Samfund & etik",
+      "visninger": 4
     },
     {
       "navn": "Penge & marked",
       "visninger": 3
     },
     {
-      "navn": "Samfund & etik",
-      "visninger": 3
-    },
-    {
       "navn": "Politik & jura",
-      "visninger": 2
+      "visninger": 3
     },
     {
       "navn": "Forskning",
