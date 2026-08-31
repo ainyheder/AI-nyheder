@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-08-31T06:03:47.616818+00:00",
- "artikler_i_alt": 108,
+ "opdateret": "2026-08-31T11:05:06.684577+00:00",
+ "artikler_i_alt": 107,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 17,
+   "i_listen": 16,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic vinder retssag mod Pentagon-blacklist"
+    },
+    {
+     "rubrik": "OpenAI og Google advarer: Rogue AI kan ramme os alle",
+     "dato": "",
+     "foerst_set": "2026-08-28T00:33:43.239930+00:00",
+     "link": "https://techcrunch.com/2026/08/27/openai-anthropic-google-and-100-other-companies-call-for-action-to-defend-against-rogue-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Anthropics AI'er hacker andre virksomheder"
     },
     {
      "rubrik": "Hugging Face sælger robot-ælling for 399 dollars",
@@ -344,6 +353,15 @@ window.KILDER_STATUS = {
      "under": "Nvidia køber Hugging Face for 13 mia."
     },
     {
+     "rubrik": "Metas Pocket gør spil til virkelighed på et minut",
+     "dato": "2026-08-31T10:00:34",
+     "foerst_set": "2026-08-31T11:05:06",
+     "link": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results/",
+     "side": "artikel/f2f42b720951186c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Zuckerbergs Meta tester robotter i datacentre",
      "dato": "2026-08-30T11:03:47",
      "foerst_set": "2026-08-30T14:56:13",
@@ -439,15 +457,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-26T11:58:43",
      "link": "https://arstechnica.com/ai/2026/08/ibms-new-granite-4-2-models-ride-the-wave-of-interest-in-local-llms/",
      "side": "artikel/c0735f59ecd6f405.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Robotløb i Beijing: Rekorder og robotter i flammer",
-     "dato": "2026-08-25T20:59:03",
-     "foerst_set": "2026-08-25T21:55:09",
-     "link": "https://arstechnica.com/ai/2026/08/world-humanoid-robot-games-show-runners-breaking-records-bursting-into-flames/",
-     "side": "artikel/d791ad9bc7774bbe.html",
      "hvor": "forside",
      "under": ""
     }
@@ -835,11 +844,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere vil rette på karakterer fra ChatGPT-modeller",
+     "rubrik": "Forskere finder skjult fejl i AI-evalueringer",
      "dato": "2026-08-31T00:00:00",
      "foerst_set": "2026-08-31T06:03:47",
      "link": "https://arxiv.org/abs/2608.27463",
-     "side": "",
+     "side": "artikel/340d6d2a8b4b541e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -898,7 +907,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere afslører te-skadedyr med AI og sensorer",
+     "rubrik": "Sri Lankas forskere afslører te-skadedyr med AI",
      "dato": "2026-08-31T00:00:00",
      "foerst_set": "2026-08-31T06:03:47",
      "link": "https://arxiv.org/abs/2608.27480",

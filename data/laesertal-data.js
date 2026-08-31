@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-31T06:13:21.160712+00:00",
+ "opdateret": "2026-08-31T11:05:53.147629+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      26,
      0,
      0,
-     24
+     25
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      1,
      2,
-     0
+     1
     ]
    },
    {
@@ -250,13 +250,23 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 39,
- "sidevisninger_i_alt": 80,
+ "sidevisninger_i_alt": 78,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 39,
-   "visninger": 57
+   "besoeg": 37,
+   "visninger": 54
+  },
+  {
+   "sti": "/uge.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/youtube.html",
+   "besoeg": 1,
+   "visninger": 5
   },
   {
    "sti": "/artikel/e8aad19178f24e34.html",
@@ -280,11 +290,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/57a3b900535e942d.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/b781f4c498aeab9d.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -324,11 +329,6 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
-   "sti": "/youtube.html",
-   "besoeg": 0,
-   "visninger": 4
-  },
-  {
    "sti": "/artikel/c3e8fc99833d44f6.html",
    "besoeg": 0,
    "visninger": 2
@@ -352,7 +352,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 39
+   "besoeg": 30
   }
  ],
  "ai_chats": [],
@@ -360,13 +360,32 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 39,
-    "visninger": 39
+    "besoeg": 37,
+    "visninger": 37
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 18
+    "visninger": 17
+   }
+  ],
+  "/uge.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/youtube.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 4
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
    }
   ],
   "/artikel/e8aad19178f24e34.html": [
@@ -398,13 +417,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/57a3b900535e942d.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/b781f4c498aeab9d.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -460,13 +472,6 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
-  "/youtube.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 4
-   }
-  ],
   "/artikel/c3e8fc99833d44f6.html": [
    {
     "fra": "herfra selv",
@@ -504,7 +509,6 @@ window.LAESERTAL = {
   "/prompt-arkiv.html",
   "/ordbog.html",
   "/quiz.html",
-  "/uge.html",
   "/vaerktoejer.html",
   "/faq.html",
   "/om.html",
@@ -660,8 +664,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -762,21 +766,6 @@ window.LAESERTAL = {
    "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
    "kategori": "Politik & jura",
    "dato": "2026-08-28",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/b781f4c498aeab9d.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Børn overgår Claude i sprog – og vi ved ikke hvorfor",
-   "kategori": "Forskning",
-   "dato": "2026-08-24",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -937,10 +926,6 @@ window.LAESERTAL = {
   {
    "navn": "Politik & jura",
    "visninger": 3
-  },
-  {
-   "navn": "Forskning",
-   "visninger": 1
   }
  ]
 };
