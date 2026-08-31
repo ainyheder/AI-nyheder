@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-31T11:05:53.147629+00:00",
+ "opdateret": "2026-08-31T18:09:43.458140+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -99,11 +99,11 @@ window.LAESERTAL = {
      4,
      3,
      14,
-     7,
+     8,
      1,
-     2,
+     3,
      1,
-     0
+     2
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      1,
      1,
      2,
-     1
+     2
     ]
    },
    {
@@ -169,11 +169,11 @@ window.LAESERTAL = {
      3,
      5,
      9,
-     7,
+     6,
      4,
      1,
      0,
-     0
+     3
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      3,
      2,
      1,
-     1
+     3
     ]
    },
    {
@@ -249,13 +249,13 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 39,
- "sidevisninger_i_alt": 78,
+ "besoeg_i_alt": 36,
+ "sidevisninger_i_alt": 81,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 37,
+   "besoeg": 34,
    "visninger": 54
   },
   {
@@ -334,6 +334,16 @@ window.LAESERTAL = {
    "visninger": 2
   },
   {
+   "sti": "/artikel/e277e4a4618df516.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/d5dafdd78fb614c5.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/3a0e75f056969468.html",
    "besoeg": 0,
    "visninger": 1
@@ -347,12 +357,17 @@ window.LAESERTAL = {
    "sti": "/artikel/c0735f59ecd6f405.html",
    "besoeg": 0,
    "visninger": 1
+  },
+  {
+   "sti": "/artikel/f019f50bce19d8e1.html",
+   "besoeg": 0,
+   "visninger": 1
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 30
+   "besoeg": 36
   }
  ],
  "ai_chats": [],
@@ -360,13 +375,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 37,
-    "visninger": 37
+    "besoeg": 34,
+    "visninger": 34
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 17
+    "visninger": 20
    }
   ],
   "/uge.html": [
@@ -479,6 +494,20 @@ window.LAESERTAL = {
     "visninger": 2
    }
   ],
+  "/artikel/e277e4a4618df516.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/d5dafdd78fb614c5.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/3a0e75f056969468.html": [
    {
     "fra": "herfra selv",
@@ -494,6 +523,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/c0735f59ecd6f405.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/f019f50bce19d8e1.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -665,7 +701,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-08-31",
    "besoeg": 10,
-   "visninger": 10
+   "visninger": 20
   }
  ],
  "artikler": [
@@ -865,6 +901,36 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/e277e4a4618df516.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Nvidia satser på nye chips ud over GPU'en",
+   "kategori": "Lanceringer",
+   "dato": "2026-08-29",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/d5dafdd78fb614c5.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Musks SpaceX støber turbinedele trods forurening",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-30",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/3a0e75f056969468.html",
    "besoeg": 0,
    "visninger": 1,
@@ -908,20 +974,35 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
+  },
+  {
+   "sti": "/artikel/f019f50bce19d8e1.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Nvidia køber Hugging Face for 13 mia.",
+   "kategori": "Penge & marked",
+   "dato": "2026-08-28",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
   }
  ],
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 8
+   "visninger": 9
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 4
+   "visninger": 5
   },
   {
    "navn": "Penge & marked",
-   "visninger": 3
+   "visninger": 4
   },
   {
    "navn": "Politik & jura",
