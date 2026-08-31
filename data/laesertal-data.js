@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-08-31T18:09:43.458140+00:00",
+ "opdateret": "2026-08-31T23:03:23.788116+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -92,7 +92,7 @@ window.LAESERTAL = {
      8,
      7,
      3,
-     7,
+     8,
      10,
      2,
      1,
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      8,
      1,
      3,
-     1,
-     2
+     2,
+     3
     ]
    },
    {
@@ -136,9 +136,9 @@ window.LAESERTAL = {
      10,
      7,
      1,
-     1,
      2,
-     2
+     2,
+     3
     ]
    },
    {
@@ -206,7 +206,7 @@ window.LAESERTAL = {
      2,
      4,
      3,
-     2,
+     3,
      1,
      3
     ]
@@ -241,7 +241,7 @@ window.LAESERTAL = {
      1,
      2,
      0,
-     1,
+     0,
      0,
      0
     ]
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 36,
- "sidevisninger_i_alt": 81,
+ "besoeg_i_alt": 37,
+ "sidevisninger_i_alt": 82,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 34,
-   "visninger": 54
+   "besoeg": 35,
+   "visninger": 55
   },
   {
    "sti": "/uge.html",
@@ -367,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 37
   }
  ],
  "ai_chats": [],
@@ -375,8 +375,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 34,
-    "visninger": 34
+    "besoeg": 35,
+    "visninger": 35
    },
    {
     "fra": "herfra selv",
@@ -829,7 +829,7 @@ window.LAESERTAL = {
    "sti": "/artikel/978592205c0f86dc.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Luanti fjernet fra Google Play efter Microsoft-krav",
+   "rubrik": "Google Play fjerner Luanti efter falsk Minecraft-klage",
    "kategori": "Politik & jura",
    "dato": "2026-08-28",
    "henvisere": [
@@ -844,7 +844,7 @@ window.LAESERTAL = {
    "sti": "/artikel/e39047844cf43b12.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Gregor Ojstersek: Kultur slår AI som produktivitetshack",
+   "rubrik": "Gregor Ojstersek: God kultur slår AI som produktivitetsværktøj",
    "kategori": "Samfund & etik",
    "dato": "2026-08-29",
    "henvisere": [
@@ -979,7 +979,7 @@ window.LAESERTAL = {
    "sti": "/artikel/f019f50bce19d8e1.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Nvidia køber Hugging Face for 13 mia.",
+   "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
    "kategori": "Penge & marked",
    "dato": "2026-08-28",
    "henvisere": [
