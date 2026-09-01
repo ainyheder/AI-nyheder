@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-01T05:45:54.796289+00:00",
+ "opdateret": "2026-09-01T09:35:06.203583+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -98,11 +98,11 @@ window.LAESERTAL = {
      4,
      3,
      14,
-     7,
+     8,
      1,
      3,
      2,
-     4,
+     3,
      0
     ]
    },
@@ -168,7 +168,7 @@ window.LAESERTAL = {
      3,
      5,
      9,
-     7,
+     6,
      4,
      1,
      0,
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      3,
      3,
      1,
-     6,
+     7,
      1
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 36,
- "sidevisninger_i_alt": 81,
+ "besoeg_i_alt": 37,
+ "sidevisninger_i_alt": 84,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 34,
-   "visninger": 54
+   "besoeg": 35,
+   "visninger": 56
   },
   {
    "sti": "/uge.html",
@@ -305,6 +305,11 @@ window.LAESERTAL = {
   },
   {
    "sti": "/artikel/e39047844cf43b12.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/698656d72c29beda.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -367,7 +372,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 37
   }
  ],
  "ai_chats": [],
@@ -375,13 +380,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 34,
-    "visninger": 34
+    "besoeg": 35,
+    "visninger": 35
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 21
    }
   ],
   "/uge.html": [
@@ -453,6 +458,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/e39047844cf43b12.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/698656d72c29beda.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -856,6 +868,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/698656d72c29beda.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "TechBBQ: Europa vil bestemme over AI selv",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-29",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/6017c27dc638b35a.html",
    "besoeg": 0,
    "visninger": 1,
@@ -998,7 +1025,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 5
+   "visninger": 6
   },
   {
    "navn": "Penge & marked",

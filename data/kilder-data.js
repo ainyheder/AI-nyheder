@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-01T05:36:32.738482+00:00",
+ "opdateret": "2026-09-01T09:33:36.178570+00:00",
  "artikler_i_alt": 111,
  "kilder": [
   {
@@ -203,6 +203,42 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til teenagere"
     },
     {
+     "rubrik": "Debian siger ja til AI-kode i Linux",
+     "dato": "2026-08-31T11:34:58",
+     "foerst_set": "2026-08-31T18:06:02",
+     "link": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+     "side": "artikel/6eb0d063d6c9c5e2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kathy Hochul vil tøjle AI med nye love",
+     "dato": "2026-08-31T10:00:00",
+     "foerst_set": "2026-08-31T18:06:02",
+     "link": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
+     "side": "artikel/e4a9103f7f0e901d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EU skærper reglerne for ChatGPT",
+     "dato": "2026-08-31T09:27:36",
+     "foerst_set": "2026-08-31T18:06:02",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+     "side": "artikel/8178888de70f4644.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Instagram slår ned på AI-profiler, der lader som mennesker",
+     "dato": "2026-08-31T09:00:00",
+     "foerst_set": "2026-08-31T18:06:02",
+     "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+     "side": "artikel/1a9866cea520710f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Texas stopper penge til Flock-overvågning",
      "dato": "2026-08-30T11:35:10",
      "foerst_set": "2026-08-30T18:45:20",
@@ -253,42 +289,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-28T00:33:43",
      "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
      "side": "artikel/17d05cd483439088.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia-chef siger AGI er nået – igen – men ligegyldigt",
-     "dato": "2026-08-27T12:15:52",
-     "foerst_set": "2026-08-28T00:33:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985597/jensen-huang-says-nvidia-achieved-senseless-agi",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Greg Brockman vinder magtkampen hos OpenAI",
-     "dato": "2026-08-27T10:00:00",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://www.theverge.com/podcast/985332/openai-greg-brockman-sam-altman-leader-executive-exodus",
-     "side": "artikel/94057effd7fad1fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hugging Face lancerer sød rulleskøjte-and-robot",
-     "dato": "2026-08-27T09:44:00",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
-     "side": "artikel/c3e8fc99833d44f6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Plaud lancerer ørepropper med AI",
-     "dato": "2026-08-27T09:11:23",
-     "foerst_set": "2026-08-27T15:25:36",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
-     "side": "artikel/61451b02ed4bd97a.html",
      "hvor": "forside",
      "under": ""
     }
