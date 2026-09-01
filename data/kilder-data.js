@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-01T21:15:41.848394+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-09-01T23:31:17.670668+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 17,
+   "i_listen": 18,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -50,6 +50,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "AI-firmaet AfterQuery slår rekord: 10 mia. kr. værd",
+     "dato": "2026-09-01T22:08:24",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
+     "side": "artikel/a6c4d5f8283c92ff.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google lancerer AI-funktioner mod køresyge og synshandicap",
@@ -149,21 +158,12 @@ window.KILDER_STATUS = {
      "side": "artikel/72b2e2fa10252d2f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Clipto bruger AI til at finde i dine videoer",
-     "dato": "2026-08-31T16:00:00",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
-     "side": "artikel/773b325bd3a66ba6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "Ars Technica AI",
@@ -185,9 +185,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
-   "som_ekstra": 5,
+   "i_listen": 8,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Anthropic sænker prisen på Claude Fable 5.1",
+     "dato": "",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic sænker prisen og lemper brugervilkår med Fable"
+    },
     {
      "rubrik": "Apple beskylder OpenAI for at ødelægge beviser",
      "dato": "",
@@ -234,20 +243,20 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
     },
     {
+     "rubrik": "Google lokker Hollywood med milliarder for at få adgang til filmklassikere",
+     "dato": "2026-09-01T18:50:29",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://www.theverge.com/tech/987429/google-needs-hollywood-more-than-the-studios-need-ai",
+     "side": "artikel/07189f8e1b731616.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
      "dato": "2026-09-01T16:45:49",
      "foerst_set": "2026-09-01T21:15:41",
      "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
      "side": "artikel/efa072877e6bd118.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
-     "dato": "2026-09-01T15:02:54",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
-     "side": "artikel/35aa4d6d86be6a65.html",
      "hvor": "forside",
      "under": ""
     },
@@ -279,6 +288,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
+     "dato": "2026-09-01T15:02:54",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+     "side": "artikel/35aa4d6d86be6a65.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Debian siger ja til AI-kode i Linux",
      "dato": "2026-08-31T11:34:58",
      "foerst_set": "2026-08-31T18:06:02",
@@ -300,7 +318,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "OpenAI Blog",
@@ -309,6 +327,10 @@ window.KILDER_STATUS = {
     [
      "Ars Technica AI",
      2
+    ],
+    [
+     "MIT Tech Review AI",
+     1
     ]
    ]
   },
@@ -436,11 +458,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "The Verge AI",
      2
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      2
     ],
     [
@@ -467,9 +489,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 8,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI's sikkerhedsrapport skjuler alvorlige kulturproblemer",
+     "dato": "",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face"
+    },
     {
      "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
      "dato": "",
@@ -478,15 +509,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
-    },
-    {
-     "rubrik": "OpenAI's sikkerhedsrapport skjuler alvorlige kulturproblemer",
-     "dato": "2026-08-31T18:00:00",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
-     "side": "artikel/e985a8c11fb3f337.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
@@ -562,6 +584,10 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
+    [
+     "The Verge AI",
+     1
+    ],
     [
      "Ars Technica AI",
      1
@@ -943,10 +969,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -957,60 +983,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
-    },
-    {
-     "rubrik": "Ed Zitrons AI-spådomme: Hvor ramte han plet?",
-     "dato": "2026-09-01T18:35:15",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://danluu.com/zitron/",
-     "side": "artikel/b0db8e0cc259cc08.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Tarn Adams: Spilbranchen er i ruiner over AI",
-     "dato": "2026-09-01T15:53:42",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
-     "side": "artikel/e458865bc943b863.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Electronic Frontier Foundation advarer mod copyright-panik om AI",
-     "dato": "2026-09-01T12:53:51",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
-     "side": "artikel/82ba728e340f5401.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI opdager skjulte kameraer med telefonens LED",
-     "dato": "2026-08-30T06:52:04",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
-     "side": "artikel/b8007ee381d1610f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple overrasket: Ford og Disney stormer efter Mac-mini",
-     "dato": "2026-08-31T12:41:22",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-     "side": "artikel/c53175c7d69c7ff8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google-lækket viser AI-søgning koster 10 gange mere",
-     "dato": "2026-08-30T12:31:05",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://noaifridays.com/",
-     "side": "artikel/842efcb27339e000.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [

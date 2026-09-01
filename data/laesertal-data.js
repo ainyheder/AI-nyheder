@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-01T21:19:23.386222+00:00",
+ "opdateret": "2026-09-01T23:32:37.090334+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      1,
      0,
      5,
-     3
+     4
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      3,
      1,
      7,
-     3
+     4
     ]
    },
    {
@@ -249,13 +249,13 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 37,
- "sidevisninger_i_alt": 84,
+ "besoeg_i_alt": 38,
+ "sidevisninger_i_alt": 83,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 35,
+   "besoeg": 36,
    "visninger": 56
   },
   {
@@ -314,16 +314,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/6017c27dc638b35a.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/c315b9a7b90f275c.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/7a131e105527fce8.html",
    "besoeg": 0,
    "visninger": 1
@@ -332,6 +322,11 @@ window.LAESERTAL = {
    "sti": "/artikel/442be4968139a7af.html",
    "besoeg": 0,
    "visninger": 2
+  },
+  {
+   "sti": "/artikel/39b8780becce037f.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/c3e8fc99833d44f6.html",
@@ -372,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 37
+   "besoeg": 38
   }
  ],
  "ai_chats": [],
@@ -380,13 +375,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 35,
-    "visninger": 35
+    "besoeg": 36,
+    "visninger": 36
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 21
+    "visninger": 20
    }
   ],
   "/uge.html": [
@@ -471,20 +466,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/6017c27dc638b35a.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/c315b9a7b90f275c.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/7a131e105527fce8.html": [
    {
     "fra": "herfra selv",
@@ -497,6 +478,13 @@ window.LAESERTAL = {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
+   }
+  ],
+  "/artikel/39b8780becce037f.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/c3e8fc99833d44f6.html": [
@@ -883,42 +871,27 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/6017c27dc638b35a.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI-chip slår Nvidia med hurtigere svar",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-25",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/c315b9a7b90f275c.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Anthropic opdaterer Claude med fælles hukommelse",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-25",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/7a131e105527fce8.html",
    "besoeg": 0,
    "visninger": 1,
    "rubrik": "Nvidia køber Hugging Face for 12,9 milliarder",
    "kategori": "Penge & marked",
    "dato": "2026-08-27",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/39b8780becce037f.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Nvidia udgiver DLSS 5 - kun til ét spil",
+   "kategori": "Lanceringer",
+   "dato": "2026-09-01",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -1021,7 +994,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 9
+   "visninger": 8
   },
   {
    "navn": "Samfund & etik",
