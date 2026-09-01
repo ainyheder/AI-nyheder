@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-01T17:55:30.030967+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-09-01T21:15:41.848394+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 3,
+   "i_listen": 17,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "OpenAI's nye Astra-model bryder ind i systemer",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+    },
     {
      "rubrik": "Google Pics udfordrer Canva med AI-design",
      "dato": "",
@@ -25,13 +34,13 @@ window.KILDER_STATUS = {
      "under": "Google lancerer AI-designværktøj til arbejdspladsen"
     },
     {
-     "rubrik": "Sony og Warner sagsøger AI-firmaet Anthropic",
+     "rubrik": "Sony og Warner sagsøger Anthropic for tyveri",
      "dato": "",
      "foerst_set": "2026-08-29T19:28:47",
      "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
      "side": "",
      "hvor": "under",
-     "under": "Sony og Warner sagsøger AI-firmaet Anthropic for massivt tyveri"
+     "under": "Anthropic anklages for piratkopiering i ny musik-søgsmål"
     },
     {
      "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
@@ -41,6 +50,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "Google lancerer AI-funktioner mod køresyge og synshandicap",
+     "dato": "2026-09-01T20:53:05",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/",
+     "side": "artikel/62b6270ed2a9e933.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic sænker prisen og lemper brugervilkår med Fable",
+     "dato": "2026-09-01T19:39:22",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+     "side": "artikel/0b975c1752d07680.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI lader læger trække patientdata ind i ChatGPT",
@@ -117,7 +144,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Instagram begrænser AI-profiler uden mærkning",
      "dato": "2026-08-31T19:16:59",
-     "foerst_set": "2026-09-01T05:36:32",
+     "foerst_set": "2026-08-31T18:06:02",
      "link": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
      "side": "artikel/72b2e2fa10252d2f.html",
      "hvor": "forside",
@@ -131,37 +158,19 @@ window.KILDER_STATUS = {
      "side": "artikel/773b325bd3a66ba6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nvidia satser 3,5 milliarder på MediaTek",
-     "dato": "2026-08-31T15:15:25",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
-     "side": "artikel/70a6777661763c79.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Circleback giver gratis adgang for at lokke flere brugere til",
-     "dato": "2026-08-31T12:56:46",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/",
-     "side": "artikel/2b7c320d3fa09039.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
+     4
+    ],
+    [
+     "Ars Technica AI",
      2
     ],
     [
      "OpenAI Blog",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -176,9 +185,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 3,
+   "i_listen": 7,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Apple beskylder OpenAI for at ødelægge beviser",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple afslører beviser mod tidligere medarbejder hos OpenAI"
+    },
+    {
+     "rubrik": "Instagram straffer falske AI-profiler",
+     "dato": "",
+     "foerst_set": "2026-08-31T18:06:02",
+     "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+     "side": "",
+     "hvor": "under",
+     "under": "Instagram begrænser AI-profiler uden mærkning"
+    },
     {
      "rubrik": "EU skærper reglerne for ChatGPT",
      "dato": "",
@@ -207,11 +234,29 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
     },
     {
-     "rubrik": "John Deere tester AI-chatbot til landmænd",
+     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
+     "dato": "2026-09-01T16:45:49",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+     "side": "artikel/efa072877e6bd118.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
+     "dato": "2026-09-01T15:02:54",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+     "side": "artikel/35aa4d6d86be6a65.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "John Deere lancerer AI-assistent til landmænd",
      "dato": "2026-09-01T12:00:52",
      "foerst_set": "2026-09-01T17:55:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
-     "side": "",
+     "side": "artikel/91bace9854c6d540.html",
      "hvor": "forside",
      "under": ""
     },
@@ -250,56 +295,20 @@ window.KILDER_STATUS = {
      "side": "artikel/e4a9103f7f0e901d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instagram straffer falske AI-profiler",
-     "dato": "2026-08-31T09:00:00",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
-     "side": "artikel/1a9866cea520710f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Texas stopper penge til Flock-overvågning",
-     "dato": "2026-08-30T11:35:10",
-     "foerst_set": "2026-08-30T18:45:20",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
-     "side": "artikel/45cb6f1654d7aa7c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sony og Warner sagsøger AI-firmaet Anthropic for massivt tyveri",
-     "dato": "2026-08-29T14:19:53",
-     "foerst_set": "2026-08-29T19:28:47",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-     "side": "artikel/3f6bab34d6769e3c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "H4RRIS jagter AI-snyd med videoopkald",
-     "dato": "2026-08-29T08:00:00",
-     "foerst_set": "2026-08-29T19:28:47",
-     "link": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
-     "side": "artikel/248d3859500de4a4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
+     4
+    ],
+    [
+     "OpenAI Blog",
      2
     ],
     [
      "Ars Technica AI",
      2
-    ],
-    [
-     "OpenAI Blog",
-     1
     ]
    ]
   },
@@ -316,15 +325,6 @@ window.KILDER_STATUS = {
    "i_listen": 20,
    "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Anthropic anklages for piratkopiering i ny musik-søgsmål",
-     "dato": "2026-08-31T18:10:45",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
-     "side": "artikel/fa120468559fdd2a.html",
-     "hvor": "forside",
-     "under": ""
-    },
     {
      "rubrik": "EU skærper kontrollen med ChatGPT, Reddit og Roblox",
      "dato": "2026-08-31T13:41:40",
@@ -349,6 +349,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-30T14:56:13",
      "link": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
      "side": "artikel/ae6b0e68082cd55e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic anklages for piratkopiering i ny musik-søgsmål",
+     "dato": "2026-08-31T18:10:45",
+     "foerst_set": "2026-08-29T19:28:47",
+     "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+     "side": "artikel/fa120468559fdd2a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -427,12 +436,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "TechCrunch AI",
      2
     ],
     [
-     "TechCrunch AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -569,9 +578,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 1,
+   "i_listen": 23,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI's Astra er første model med kritisk risiko",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://openai.com/index/path-to-astra",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+    },
     {
      "rubrik": "OpenAI lader ChatGPT læse patientjournaler",
      "dato": "",
@@ -692,11 +710,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ]
    ]
@@ -941,6 +959,33 @@ window.KILDER_STATUS = {
      "under": "Apple lancerer nye Macs med AI i fokus"
     },
     {
+     "rubrik": "Ed Zitrons AI-spådomme: Hvor ramte han plet?",
+     "dato": "2026-09-01T18:35:15",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://danluu.com/zitron/",
+     "side": "artikel/b0db8e0cc259cc08.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Tarn Adams: Spilbranchen er i ruiner over AI",
+     "dato": "2026-09-01T15:53:42",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
+     "side": "artikel/e458865bc943b863.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Electronic Frontier Foundation advarer mod copyright-panik om AI",
+     "dato": "2026-09-01T12:53:51",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
+     "side": "artikel/82ba728e340f5401.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI opdager skjulte kameraer med telefonens LED",
      "dato": "2026-08-30T06:52:04",
      "foerst_set": "2026-09-01T17:55:30",
@@ -950,11 +995,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Apple løber tør for Mac Mini og Mac Studio",
+     "rubrik": "Apple overrasket: Ford og Disney stormer efter Mac-mini",
      "dato": "2026-08-31T12:41:22",
      "foerst_set": "2026-08-31T22:59:30",
      "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-     "side": "",
+     "side": "artikel/c53175c7d69c7ff8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -964,33 +1009,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-31T22:59:30",
      "link": "https://noaifridays.com/",
      "side": "artikel/842efcb27339e000.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ojstersek: Kultur slår AI som produktivitets-boost",
-     "dato": "2026-08-29T17:19:47",
-     "foerst_set": "2026-08-29T21:54:36",
-     "link": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-     "side": "artikel/e39047844cf43b12.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Debian siger ja til ansvarlig AI-brug",
-     "dato": "2026-08-29T14:02:10",
-     "foerst_set": "2026-08-29T15:44:39",
-     "link": "https://lwn.net/Articles/1091231/",
-     "side": "artikel/9b3181b6e6f317d4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "StemDeck skiller din musik ad – helt gratis og lokalt",
-     "dato": "2026-08-29T01:24:13",
-     "foerst_set": "2026-08-29T15:44:39",
-     "link": "https://github.com/stemdeckapp/stemdeck",
-     "side": "artikel/3b2887a66a01672f.html",
      "hvor": "forside",
      "under": ""
     }
