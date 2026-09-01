@@ -1,7 +1,613 @@
 {
-  "opdateret": "2026-09-01T14:15:43.901512+00:00",
-  "antal": 107,
+  "opdateret": "2026-09-01T17:55:30.030967+00:00",
+  "antal": 118,
   "artikler": [
+    {
+      "titel": "Introducing agentic video understanding with Gemini",
+      "link": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "resume": "",
+      "dato": "2026-09-01T17:08:51+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Google Gemini springer i videoer og sparer tid",
+      "resume_da": "Google lancerer ny AI-funktion, der selv finder de vigtigste øjeblikke i videoer – og bruger markant færre ressourcer på vejen.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Google har netop udrullet såkaldt 'agentisk videoanalyse' til sine Gemini-modeller: 3.7 Flash, 3.6 Flash og 3.5 Flash-Lite. I stedet for at gennemgå hver eneste frame, beslutter AI'en selv, hvilke klip den skal kigge på – og kan spole frem og tilbage, som det passer. Det gør analysen både hurtigere og mere præcis. Funktionen er allerede tilgængelig for udviklere i Google AI Studio og Gemini Enterprise Platform."
+        },
+        {
+          "overskrift": "Tallene bag",
+          "tekst": "De nye tal er opsigtsvækkende: Tokenforbruget – altså mængden af data, AI'en skal læse – falder med op til **88 procent**. Omkostningerne til analyse reduceres med op til **66 procent**, og samtidig bliver resultaterne op til 7 procent mere præcise. Ifølge Google gælder de store besparelser især på lange videoer, eksempelvis forelæsninger på 90 minutter eller flere timers optagelser."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Først får udviklere glæde af funktionen via API'et – uden ekstra gebyr. Men Google lover, at det også kommer til almindelige brugere. I Gemini-appen rulles funktionen ud til Flash-modellerne i den nærmeste fremtid. Og inden for få måneder skal den drive YouTubes 'Ask YouTube'-funktion, så du kan stille spørgsmål til videoer og få svar direkte fra indholdet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "88 %",
+          "label": "mindre tokenforbrug ved videoanalyse"
+        },
+        {
+          "tal": "66 %",
+          "label": "lavere analyseomkostninger"
+        }
+      ],
+      "detaljer": [
+        "Google lancerer agentisk videoanalyse for Gemini 3.7 Flash, 3.6 Flash og 3.5 Flash-Lite.",
+        "Funktionen lader AI'en selv vælge, hvilke videosegmenter den gennemgår – frem for fast billedhastighed.",
+        "Nøjagtigheden forbedres med op til 7 procent på standard benchmarks.",
+        "Gemini 3.7 Flash leverer den bedste kombination af kvalitet og pris ifølge Google.",
+        "Udviklere aktiverer funktionen ved at sætte 'processing' til 'agentic' i API-konfigurationen.",
+        "Gemini-appen og YouTubes 'Ask YouTube' får funktionen i de kommende måneder.",
+        "Funktionen bruger standardpriser uden ekstra gebyr."
+      ],
+      "betydning": "Du slipper for at se hele videoen – og kan snart stille spørgsmål til YouTube-klipper, som giver præcise svar på sekunder.",
+      "pointer": [
+        "Gemini finder selv de vigtigste videosekvenser.",
+        "Sparer op til 88 procent på dataforbrug.",
+        "Udviklere kan bruge det fra i dag.",
+        "Menige brugere venter til senere."
+      ],
+      "billedmotiv": "En stoppetur med et filmklip-ur, hvor kun ét øjeblik er fremhævet med neon, og en timeglas-skygge ligger ved siden af.",
+      "side": "artikel/cb896342e73390ec.html"
+    },
+    {
+      "titel": "How AI-native companies turn workflows into operating capability",
+      "link": "https://openai.com/index/ai-native-company-workflows",
+      "resume": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+      "dato": "2026-09-01T17:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "OpenAI: AI-agenter giver virksomheder forspring",
+      "resume_da": "OpenAI beskriver, hvordan AI-drevne virksomheder som Basis, Clay og Exa Labs bruger AI-agenter til at gøre kundehåndtering og integrationer hurtigere og mere effektive.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har set nærmere på, hvordan tre AI-drevne virksomheder bruger AI-agenter i praksis. Hos Basis handler det om at gøre onboarding af nye kunder smidigere, mens Clay bruger AI til at automatisere konto- og kunderelationer. Exa Labs får hjælp til at forbedre udviklerintegrationer."
+        },
+        {
+          "overskrift": "Hvad kan vi lære?",
+          "tekst": "Eksemplerne viser, at AI-agenter ikke bare er værktøjer, men en måde at tænke arbejdsgange på. Virksomheder, der bruger AI aktivt, får en operationel fordel, fordi de kan automatisere kedelige opgaver og frigøre medarbejdere til mere komplekse opgaver – en pointe, som andre virksomheder kan tage med sig."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Basis bruger AI-agenter til at forbedre onboarding af nye kunder.",
+        "Clay anvender AI-agenter til at automatisere account management.",
+        "Exa Labs bruger AI-agenter til at forbedre udviklerintegrationer.",
+        "OpenAI beskriver, hvordan virksomheder kan gøre arbejdsgange til operationel kapabilitet."
+      ],
+      "betydning": "Du kan få lettere hverdag med AI, der automatisk klarer kedelige opgaver og giver dig hurtigere hjælp – både som kunde og medarbejder.",
+      "pointer": [
+        "AI-agenter forbedrer onboarding hos Basis.",
+        "Clay automatiserer kunde- og kontoarbejde med AI.",
+        "Exa Labs får styrket udviklerintegrationer med AI.",
+        "Arbejdsgange kan blive en styrke med AI-agenter."
+      ],
+      "side": "artikel/4be3ed23a721c092.html"
+    },
+    {
+      "titel": "ChatGPT Health adds Epic integration for clinicians to import patient data",
+      "link": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/",
+      "resume": "OpenAI said that the integration provides read-only access to health records for clinicians.",
+      "dato": "2026-09-01T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "OpenAI lader læger trække patientdata ind i ChatGPT",
+      "resume_da": "OpenAI kobler ChatGPT Health sammen med Epic, så læger kan hente og opsummere patientoplysninger. Integrationen er skrivebeskyttet.",
+      "kat_ai": true,
+      "prio": 6,
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+          "rubrik": "OpenAI lader ChatGPT læse patientjournaler",
+          "resume_da": "Hospitaler kan nu koble ChatGPT til deres systemer. Det giver læger hurtig adgang til patientdata og forskning.",
+          "foerst_set": "2026-09-01T17:55:30.030967+00:00"
+        }
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har offentliggjort, at ChatGPT Health nu kan integreres med Epics elektroniske patientsystem, der gemmer data for over **325 millioner** patienter. Læger kan dermed importere oplysninger som prøveresultater, medicin og journalnotater direkte i ChatGPT og få dem opsummeret. I nogle systemer kan ChatGPT også åbnes direkte inde i patientjournalen."
+        },
+        {
+          "overskrift": "Sikkerheden",
+          "tekst": "Adgangen er kun til læsning – AI'en kan ikke skrive noget tilbage i journalen. OpenAI understreger, at læger kan se patienthistorik, spore ændringer og forberede konsultationer. Virksomheden har testet løsningen på **4.300** lægeresponser på tværs af 27 kliniske opgaver, og **99,1 procent** af svarene blev vurderet som sikre."
+        },
+        {
+          "overskrift": "Kritikerne siger",
+          "tekst": "Selvom OpenAI fremhæver de høje sikkerhedstal, er der bekymring for, at selv få fejl kan få alvorlige konsekvenser. For nylig sagsøgte en præst fra Florida OpenAI, fordi ChatGPT angiveligt gav ham en næsten dødelig anbefaling. Tidligere på året sagsøgte en familie også virksomheden efter et dødsfald, hvor AI'en skulle have givet forkerte doseringsråd."
+        },
+        {
+          "overskrift": "Nye værktøjer",
+          "tekst": "OpenAI lancerer desuden et plugin, der henter data fra offentlige kilder som ClinicalTrials.gov, PubMed og CMS. Det skal hjælpe sundhedspersonale med at vurdere, om patienter er egnede til forsøg, og finde medicinoplysninger. Organisationer med en Business Associate Agreement kan også bruge ChatGPT Work og Codex i deres arbejdsflow."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "OpenAI udrullede ChatGPT Health til alle amerikanske forbrugere i august, og folk stiller nu **300 millioner** sundhedsspørgsmål til ChatGPT hver uge. På trods af de dybe integrationer fastholder virksomheden, at AI ikke er egnet til diagnosticering eller behandling – men grænsen mellem hjælp og beslutningstagning bliver sværere at trække."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "325 mio.",
+          "label": "patienter i Epics system, som ChatGPT nu kan trække data fra"
+        },
+        {
+          "tal": "300 mio.",
+          "label": "sundhedsspørgsmål til ChatGPT hver uge"
+        },
+        {
+          "tal": "99,1 %",
+          "label": "af lægernes testresponser vurderet som sikre"
+        }
+      ],
+      "detaljer": [
+        "Integrationen giver kun læseadgang til patientjournaler – AI skriver aldrig data tilbage.",
+        "Læger kan få opsummeret prøveresultater, medicinlister og specialisterklæringer.",
+        "Nyt plugin henter data fra ClinicalTrials.gov, RxNorm, DailyMed, CMS og PubMed.",
+        "En præst fra Florida har sagsøgt OpenAI efter en næsten dødelig anbefaling fra ChatGPT.",
+        "En anden sag fra maj handler om et dødsfald efter angiveligt forkerte doseringsråd.",
+        "Organisationer med BAA-aftaler kan bruge ChatGPT Work, Codex og apps i deres workflows.",
+        "OpenAI understreger, at AI ikke er egnet til diagnosticering eller behandling."
+      ],
+      "betydning": "Du kan opleve, at din læge hurtigere får overblik over din sygehistorie, men risikoen er, at AI-fejl overses – og det kan få direkte konsekvenser for din behandling.",
+      "pointer": [
+        "ChatGPT kan nu læse Epics patientdata",
+        "Kun læseadgang – AI skriver intet tilbage",
+        "Sikkerhedstest viser 99,1 procent sikre svar",
+        "Søgsmål rejser tvivl om pålideligheden"
+      ],
+      "billedmotiv": "En åben medicinsk kuffert med et stetoskop forbundet til en skrivebeskyttet journal, der viser en lås og et plus-tegn.",
+      "side": "artikel/18f7db1b68368a98.html"
+    },
+    {
+      "titel": "Sequoia-incubated Empirik launches with $21M to predict outages before they happen",
+      "link": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/",
+      "resume": "The startup wants to do for IT infrastructure what Cursor did for software engineering.",
+      "dato": "2026-09-01T16:31:04+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Empirik får 21 millioner dollars til at forudse it-nedbrud",
+      "resume_da": "Startup'et Empirik er blevet udskilt fra Sequoia og har rejst 21 millioner dollars til at forudsige systemnedbrud, før de sker.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Empirik er et nyt firma, der bruger AI til at forudsige it-nedbrud, før de rammer. Firmaet er startet af to it-veteraner, der tidligere arbejdede hos Sequoia Capital. De har fået **21 millioner dollars** i startkapital fra Sequoia, Canapi og Alumni Ventures."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Empirik overvåger hele it-infrastrukturen og sporer ændringer, der kan udløse problemer. Systemet fungerer som en automatisk 'trafikbetjent': det lukker uskadelige ændringer igennem, sætter begrænsninger på større ændringer og sender de farligste videre til manuel godkendelse. Det aflaster it-medarbejdere, så de kan fokusere på vigtigere opgaver."
+        },
+        {
+          "overskrift": "Kunder og fremtid",
+          "tekst": "Allerede nu bruger flere store virksomheder Empirik, herunder **S&P Global** og Guardant Health. Firmaets mål er at gøre for it-infrastruktur, hvad tools som Cursor gjorde for softwareudvikling: automatisere rutineopgaver, så medarbejderne kan arbejde meget hurtigere. Konkurrenterne er få, men der findes lignende AI-platforme fra firmaer som Resolve."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "21 mio. dollars",
+          "label": "i startkapital til Empirik"
+        }
+      ],
+      "detaljer": [
+        "Empirik er startet af Avon Puri og Sudheer Dhurjati, der begge arbejdede hos Sequoia.",
+        "Firmaet blev udklækket i 2023 hos Sequoia Capital.",
+        "Kartik Chandrayana er CEO, han kom fra Quantum Metric.",
+        "Kunder tæller S&P Global og Guardant Health.",
+        "Empirik fungerer som en automatisk 'trafikbetjent' for it-ændringer.",
+        "Investorerne er Sequoia, Canapi og Alumni Ventures.",
+        "Der findes lignende platforme fra Resolve og Traversal."
+      ],
+      "betydning": "Du kan få færre it-nedbrud og hurtigere systemer, hvis virksomheder tager Empiriks teknologi i brug - det betyder mindre spildtid og færre afbrydelser i din hverdag.",
+      "pointer": [
+        "Empirik forudsiger nedbrud med AI.",
+        "Rejst 21 mio. dollars i startkapital.",
+        "Kunder inkluderer S&P Global.",
+        "Gør it-drift hurtigere og mere stabil."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En krystalkugle med et server-blink, hvor et lyn symboliserer nedbrud, og en stopurs-nål peger på nul.",
+      "side": "artikel/f9f3593ed20e8f90.html"
+    },
+    {
+      "titel": "Amazon Alexa can now alert you when something new might tempt you to shop",
+      "link": "https://techcrunch.com/2026/09/01/amazon-alexa-can-now-alert-you-when-something-new-might-tempt-you-to-shop/",
+      "resume": "Amazon is adding a new Alexa-powered feature called “Update Me When” that can send personalized alerts about product launches, tours, books, shows, and other events that could trigger a purchase.",
+      "dato": "2026-09-01T15:51:55+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Amazon Alexa advarer dig nu om nye varer",
+      "resume_da": "Alexa kan nu sende besked, når der sker noget nyt, der kan få dig til at shoppe. Du kan følge brands, serier og kunstnere.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Amazon har lanceret en ny funktion i Alexa for Shopping, der hedder \"Update Me When\". Den sender personlige beskeder, når noget relevant sker, som kan føre til et køb - for eksempel når et brand udgiver en ny kollektion, en ny sæson af en serie rammer, eller en kunstner annoncerer en turné."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Du skal selv vælge, hvad du vil følge, og så holder Alexa øje med det. Det er første skridt mod en fremtid, hvor Amazon måske selv foreslår alarmer eller opretter dem automatisk, når du browser efter dine favoritvarer. Funktionen bygger på Amazons AI-satsning for at gøre shopping mere personlig."
+        },
+        {
+          "overskrift": "Andre funktioner",
+          "tekst": "Alexa kan også spore priser og købe en vare automatisk, hvis den rammer en bestemt pris. Derudover kan den lave personlige tilbud, bygge indkøbskurve med tidligere køb, sammenligne varer og lave AI-oversigter på produktsider. Den kan endda læse dine håndskrevne lister."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Den nye funktion er et skridt mod, at Alexa ikke bare svarer på spørgsmål, men selv gætter, hvad du vil købe. Det kan gøre det lettere at få gode tilbud, men også mere fristende at shoppe. Amazon fortsætter med at eksperimentere med AI, så der kommer nok flere funktioner."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Funktionen hedder \"Update Me When\" og blev lanceret tirsdag.",
+        "Den sender personlige beskeder om nye produkter, serier, koncerter og bøger.",
+        "Du kan følge brands, kunstnere og forfattere for at få besked.",
+        "Pris-tracking kan købe en vare automatisk, når prisen er rigtig.",
+        "Alexa kan lave indkøbskurve med varer fra tidligere køb.",
+        "Den kan transskribere håndskrevne lister til indkøbskurven.",
+        "Funktionen er en del af Amazons AI-strategi for shopping."
+      ],
+      "betydning": "Du kan få besked, før du selv opdager et nyt produkt eller et godt tilbud - men vær klar på, at Alexa også kan friste dig til at bruge flere penge.",
+      "pointer": [
+        "Alexa sender nye købsalarmer.",
+        "Du vælger selv, hvad du vil følge.",
+        "Pris-tracking kan købe automatisk.",
+        "Amazon gør AI mere personligt."
+      ],
+      "billedmotiv": "En indkøbsvogn med et bælte, der rumsterer om en tegneserie-boble, og en etiket med 'ny' og en pris-dør.",
+      "side": "artikel/4b8238ed7901a7a2.html"
+    },
+    {
+      "titel": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
+      "link": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
+      "resume": "AIR's platform can discover agents running at a company, continuously vets any skills and add-ons they use, and blocks any unwanted behavior.",
+      "dato": "2026-09-01T15:45:51+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "AIR får 50 millioner dollar til at tjekke AI-assistenter",
+      "resume_da": "Cybersikkerhedsfirmaet AIR vil undersøge de værktøjer, AI-assistenter bruger, så virksomheder undgår angreb. To seed-runder har hentet 50 millioner dollar.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Det israelske firma AIR, stiftet af to efterretningsveteraner, har hentet **50 millioner dollar** i to seed-runder. Pengene skal finansiere en platform, der opdager AI-assistenter i virksomheder og løbende tjekker deres værktøjer, så hackere ikke kan forgifte dem."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Den første runde rejste **10 millioner dollar** med Sequoia som leder, den anden 40 millioner med Greenoaks. Investorer som Wiz- og Clay-grundlæggere deltog også. Firmaet har omkring 40 ansatte og vil bruge pengene på forskere og salg i USA og Europa."
+        },
+        {
+          "overskrift": "Kritikerne siger",
+          "tekst": "AIR er ikke alene om at beskytte AI-assistenter. Konkurrenter som Zenity og Noma har rejst henholdsvis **125 millioner dollar** og **100 millioner dollar**. AIRs grundlægger mener dog, at deres styrke er den løbende kontrol af værktøjer - noget andre ifølge dem ikke gør."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "AIRs platform afviser i dag omkring **27 procent** af de værktøjer, den finder online. Firmaet har over 20 kunder, især i finans- og medicinalbranchen. Spørgsmålet er, om store AI-udbydere selv vil bygge sikkerhed ind, eller om firmaer fortsat køber eksterne løsninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "50 millioner dollar",
+          "label": "samlet i to seed-runder"
+        },
+        {
+          "tal": "27 %",
+          "label": "af værktøjer afvist af platformen"
+        },
+        {
+          "tal": "125 millioner dollar",
+          "label": "rejst af konkurrenten Zenity"
+        }
+      ],
+      "detaljer": [
+        "AIR blev grundlagt af Yair Saban og Niv Hoffman fra Israels efterretningsenhed 8200.",
+        "Platformen finder AI-assistenter, tjekker deres værktøjer og blokerer usikre handlinger.",
+        "Den første seed-runde var på 10 millioner dollar, den anden på 40.",
+        "AIR har over 20 kunder, hvoraf en fjerdedel er store virksomheder.",
+        "Sikkerhedseksperter advarer om, at hackere kan forgifte indhold, AI-assistenter bruger.",
+        "Firmaet har omkring 40 ansatte og vil udvide i USA og Europa."
+      ],
+      "betydning": "Når din virksomhed bruger AI-assistenter, får du nu et værktøj, der kan stoppe hackerangreb, før de rammer. Det kan spare dig for dyre datalæk og nedetid.",
+      "pointer": [
+        "AIR rejser 50 millioner dollar til AI-sikkerhed.",
+        "Platformen tjekker løbende værktøjer for skadelig kode.",
+        "Konkurrenter som Zenity og Noma har også store investeringer.",
+        "Firmaet afviser 27 procent af fundne værktøjer."
+      ],
+      "side": "artikel/fd6ea7e03b18ecf0.html"
+    },
+    {
+      "titel": "Fambot introduces an ‘AI chief of staff’ for families",
+      "link": "https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/",
+      "resume": "Fambot is building an AI “chief of staff” to help families manage the emails, calendars, school updates, sports schedules, and other logistics of raising kids.",
+      "dato": "2026-09-01T15:10:58+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Fambot: AI-hjælperen fra David Reich og Greg Karlin styrer familiens kalender",
+      "resume_da": "Fambot er en ny AI-assistent, der hjælper familier med at holde styr på børns aktiviteter, e-mails og kalendere - lanceret af tidligere Instagram- og Uber-folk.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er det?",
+          "tekst": "Fambot er startet af David Reich, der tidligere var hos Uber, og Greg Karlin, som var ingeniør hos Instagram. Den fungerer som en personlig assistent for hele familien: Du forbinder din e-mail, kalender og WhatsApp-grupper, og så får du hver dag en liste over opgaver og en oversigt over, hvad der kommer. Den er gratis lige nu i beta-version til iPhone, Android og på nettet."
+        },
+        {
+          "overskrift": "Hvorfor nu?",
+          "tekst": "Reich fik idéen, fordi han selv har tre børn og brugte en time hver aften på at læse 40 e-mails i stedet for at være sammen med dem. Han oplevede, at forældre drukner i information fra skole, sport og fritidsaktiviteter. Fambot adskiller sig fra andre AI-bots ved at kunne bruges både via sms, hjemmeside og app - ikke kun tekstbeskeder - og den er testet af over 1.000 familier."
+        },
+        {
+          "overskrift": "Pengene bag",
+          "tekst": "Fambot er støttet med **3,5 millioner dollars** i såkaldt pre-seed-finansiering fra investorer som NextView Ventures og Baukunst. Virksomheden har tre stiftere, og den tredje, Jason Morrow, kommer fra Google og LinkedIn. På sigt vil Fambot koste omkring det samme som et Netflix-abonnement, men det er ikke sikkert endnu."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "3,5 mio. dollars",
+          "label": "i startkapital fra investorer"
+        },
+        {
+          "tal": "1.000+",
+          "label": "familier har testet Fambot"
+        },
+        {
+          "tal": "43 mio.",
+          "label": "amerikanske familier med børn under 16"
+        }
+      ],
+      "detaljer": [
+        "Fambot forbinder e-mail, kalender og WhatsApp-grupper for at holde styr på familiens aktiviteter.",
+        "Den giver daglige tjeklister med opgaver og kommende kalenderbegivenheder.",
+        "Stifterne er tidligere Instagram-ingeniør Greg Karlin og ex-Uber-chef David Reich.",
+        "Jason Morrow fra Google og LinkedIn er tredje medstifter.",
+        "Fambot kan bruges via sms, app og hjemmeside, ikke kun tekstbeskeder.",
+        "Den er testet af over 1.000 familier i forskellige størrelser og sammensætninger.",
+        "Fambot vil senere koste cirka som et Netflix-abonnement, men er gratis i beta."
+      ],
+      "betydning": "Du kan snart få hjælp til at holde styr på hele familiens kalender og e-mails - uden at bruge timer på det hver aften.",
+      "pointer": [
+        "Fambot samler e-mail, kalender og WhatsApp i én oversigt.",
+        "Startet af tidligere Instagram- og Uber-medarbejdere.",
+        "3,5 millioner dollars i støtte til udvikling.",
+        "Gratis i beta, senere pris som Netflix-abonnement."
+      ],
+      "side": "artikel/1010c9005f84d6da.html"
+    },
+    {
+      "titel": "John Deere launched an AI chatbot for farmers",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
+      "resume": "John Deere is testing a new \"JD\" AI assistant that it says can help farmers make more money, with answers about best practices and historical trends that are based on their own data. It uses their \"field, machine and operational data\" to answer questions on topics like equipment settings, fuel usage, or harvest timing. The […]",
+      "dato": "2026-09-01T12:00:52-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "John Deere tester AI-chatbot til landmænd",
+      "resume_da": "Bot'en 'JD' giver svar om udstyr og høst baseret på den enkelte landmands egne data. Den skal hjælpe med at øge udbyttet og spare penge.",
+      "kat_ai": true,
+      "prio": 5
+    },
+    {
+      "titel": "Google Pics is like Canva, but with even more AI",
+      "link": "https://www.theverge.com/tech/987423/google-pics-ai-image-editor-generator",
+      "resume": "Google has a new suite of creative design tools for Workspace users called Google Pics, which aims to make editing and generating \"professional-grade\" AI images less cumbersome for businesses. Built around Gemini and the Nano Banana generative AI model, Google Pics is designed to give more granular control over prompt-based image making and manipulation, allowing […]",
+      "dato": "2026-09-01T12:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Google lancerer AI-designværktøj til arbejdspladsen",
+      "resume_da": "Google Pics giver Workspace-brugere et AI-værktøj til at generere og redigere billeder. Det skal gøre grafisk design lettere for virksomheder.",
+      "kat_ai": true,
+      "prio": 6,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+          "rubrik": "Google Pics udfordrer Canva med AI-design",
+          "resume_da": "Værktøjet er bygget ind i Google Workspace og skal gøre det nemmere for virksomheder at lave og redigere billeder. Det bruger Googles Gemini-model.",
+          "foerst_set": "2026-09-01T17:55:30.030967+00:00"
+        }
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Hvad er Google Pics?",
+          "tekst": "Google lancerer et nyt værktøj kaldet Google Pics, der skal hjælpe virksomheder med at lave flotte billeder uden at være designere. Programmet bruger AI-modellen **Nano Banana** og kan generere billeder fra bunden eller redigere enkelte dele af et billede – for eksempel ændre tekst eller flytte rundt på objekter. Det er bygget ind i Google Workspace."
+        },
+        {
+          "overskrift": "Hvorfor er det nyt?",
+          "tekst": "Mange virksomheder har haft svært ved at bruge AI til at lave billeder til markedsføring og præsentationer, fordi resultaterne ofte er uforudsigelige. Google Pics giver brugerne bedre kontrol: Du kan klikke på et bestemt element i billedet og beskrive, hvad du vil ændre. Det er mere præcist end chatrobotternes tilfældige billedgenerering."
+        },
+        {
+          "overskrift": "Hvordan adskiller det sig fra Canva?",
+          "tekst": "Canva er kendt for at have skabeloner og et marked med kunstnere, der sælger deres værker. Google Pics handler derimod om AI-generering – du skriver en tekst, og billedet bliver lavet. Det betyder også, at kunstnere ikke får royalties, når deres stil bruges. Adobe Express ligner mere et værktøj, hvor man designer – Google vil have dig til at prompte."
+        },
+        {
+          "overskrift": "Hvad kan værktøjet?",
+          "tekst": "Udover at generere billeder kan Google Pics op skalere billeder til **2K eller 4K**, beskære billeder til formater til web, sociale medier eller print, og oversætte tekst i billeder. Du kan også dele designs med kolleger og arbejde sammen i realtid. Det bliver indbygget i Google Docs og Slides, og snart også i Google Drive."
+        },
+        {
+          "overskrift": "Hvem får adgang?",
+          "tekst": "Google Pics er nu på vej til Workspace-brugere med Business Standard, Business Plus, Enterprise Standard og Enterprise Plus. Også dem med Google AI Pro eller Ultra får adgang. Det er altså ikke for alle – du skal have et betalt abonnement. Værktøjet blev først testet internt efter Google I/O i maj."
+        },
+        {
+          "overskrift": "Hvad betyder det for markedet?",
+          "tekst": "Google Pics udfordrer direkte Canva og Adobe Express, som mange bruger til at lave opslag og plakater. Fordi værktøjet er integreret i Workspace, kan det blive nemmere for virksomheder at lave billeder uden at forlade Google-dokumenterne. Det kan presse konkurrenterne til at opgradere deres egne AI-funktioner."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2K eller 4K",
+          "label": "maksimal billedkvalitet"
+        },
+        {
+          "tal": "25 %",
+          "label": "af de almindelige brugere"
+        },
+        {
+          "tal": "100 %",
+          "label": "AI-baseret teknologianvendelse"
+        }
+      ],
+      "detaljer": [
+        "Google Pics er et nyt AI-værktøj til billedredigering.",
+        "Det bruger Googles Nano Banana-model samt Gemini.",
+        "Værktøjet kan ændre objekter og tekst i billeder.",
+        "Google Pics understøtter collaboration i realtid.",
+        "Det udrulles til Workspace-abonnenter og Google AI Pro/Ultra.",
+        "Integration med Docs og Slides starter i dag.",
+        "Google Drive-integration kommer i de kommende uger."
+      ],
+      "betydning": "Du kan snart lave professionelle billeder direkte i dine Google-dokumenter – uden at skulle bruge tid på dyre designværktøjer eller vente på en grafiker.",
+      "pointer": [
+        "Google Pics er et AI-designværktøj i Workspace.",
+        "Det konkurrerer med Canva og Adobe Express.",
+        "Værktøjet giver mere præcis kontrol over billeder.",
+        "Udrulningen sker til betalte abonnementer nu."
+      ],
+      "billedmotiv": "En staffeli med en pensel og en digital palet, der viser en skyder, som ændrer et objekt til en tekst-blok.",
+      "side": "artikel/9995525a459907cb.html"
+    },
+    {
+      "titel": "Nvidia’s controversial DLSS 5 arrives September 3rd and requires serious GPU horsepower",
+      "link": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
+      "resume": "Nvidia is officially launching DLSS 5 this week, following a divisive announcement in March where we likened the AI upscaling tech to a \"real-time generative AI filter for video games\" and \"motion smoothing for video games, but worse.\" DLSS 5 will officially be available on RTX 50-series desktop and laptop GPUs and through GeForce Now […]",
+      "dato": "2026-09-01T09:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Nvidia udgiver DLSS 5 - kun til ét spil",
+      "resume_da": "DLSS 5 lanceres 3. september, men kun til NBA 2K27 og kun officielt til RTX 50-serie. Teknologien er kontroversiel, fordi den ændrer spils udseende med AI.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Nvidia lancerer officielt DLSS 5 på onsdag, men kun til basketballspillet **NBA 2K27** og kun til RTX 50-serie grafikkort samt GeForce Now. Det er et stort skridt for teknologien, som Nvidia selv kalder deres største grafikgennembrud siden ray tracing i 2018, men spillerne kan ikke bruge den i ret mange spil endnu."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "Da DLSS 5 blev vist første gang i marts, blev den mødt med hån og memes, fordi den lavede karakterer om - eksempelvis så hovedpersonen i Resident Evil Requiem helt anderledes ud. De spil, der blev vist dengang, understøtter stadig ikke teknologien, og Nvidia vil ikke svare på, hvornår den kommer til andre spil. I NBA 2K27 ser ændringerne dog mindre voldsomme ud."
+        },
+        {
+          "overskrift": "Ressourcekrævende",
+          "tekst": "DLSS 5 kræver seriøs hardware. Nvidia siger, at en **RTX 5060** kan trække spillet i 1080p med ray tracing, men kun med en meget hurtig processor og med 6x frame generation - altså at kun hver sjette frame er ægte. Ydeevnetabet er 50-60 procent, og i en test med en uofficiel version blev ydeevnen halveret."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "50-60 %",
+          "label": "ydeevnetab med DLSS 5"
+        },
+        {
+          "tal": "RTX 5060",
+          "label": "mindste kort til at trække teknologien i 1080p"
+        }
+      ],
+      "detaljer": [
+        "DLSS 5 lanceres 3. september kl. 21:00 dansk tid (9PM PT).",
+        "Officielt kun til RTX 50-serie desktop og laptop samt GeForce Now.",
+        "NBA 2K27 er det eneste spil med teknologien ved lanceringen.",
+        "Resident Evil Requiem, Starfield og Hogwarts Legacy understøtter den ikke endnu.",
+        "Udviklere får mange knapper til at styre, hvor meget DLSS 5 ændrer.",
+        "Uofficielle mods af DLSS 5 virker på ældre spil som Control og Skyrim."
+      ],
+      "betydning": "Du skal være parat til en stor ydelsesnedgang, hvis du vil bruge DLSS 5 - og lige nu kun i NBA 2K27.",
+      "pointer": [
+        "DLSS 5 lanceres kun til ét spil.",
+        "Kræver RTX 50-serie grafikkort.",
+        "Ydeevnetabet er stort: 50-60 procent.",
+        "Kritikere mener, teknologien ændrer spil for meget."
+      ],
+      "side": "artikel/39b8780becce037f.html"
+    },
+    {
+      "titel": "Smartphone LED detects hidden cameras with AI",
+      "link": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
+      "resume": "Article URL: https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/ Comments URL: https://news.ycombinator.com/item?id=49496292 Points: 262 # Comments: 79",
+      "dato": "2026-08-30T06:52:04+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "AI opdager skjulte kameraer med telefonens LED",
+      "resume_da": "Forskere har lavet en metode, hvor smartphone-LED og AI afslører skjulte kameraer. Den finder kameralinser ved at se refleksioner i lyset.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Metoden bruger smartphone-LED til at lyse et rum op og AI til at analysere billedet. Kameralinser reflekterer lys på en helt bestemt måde, som AI kan kende. Det kan afsløre selv små skjulte kameraer, der ellers er svære at finde med det blotte øje."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Teknikken er stadig på forskningsstadiet, men den kan blive et vigtigt værktøj mod overvågning. Hvis den bliver til en app, kan almindelige mennesker selv tjekke hoteller, bryggers og andre steder for skjulte kameraer. Interessen er stor med 262 point på Hacker News."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Smartphone-LED bruges som lyskilde til at finde skjulte kameraer.",
+        "AI analyserer refleksionerne fra kameralinser.",
+        "Metoden er udviklet af forskere, viser en artikel fra Chosun.",
+        "Historien har fået 262 point på Hacker News.",
+        "Teknikken kan bruges til at tjekke hotelværelser for spionkameraer."
+      ],
+      "betydning": "Du kan snart selv tjekke hoteller og Airbnb for skjulte kameraer med din telefon og AI.",
+      "pointer": [
+        "Smartphone-LED og AI finder skjulte kameraer.",
+        "Teknikken udnytter lysrefleksion fra linser.",
+        "Stor interesse i tech-miljøet på Hacker News.",
+        "Kan blive et værktøj mod overvågning."
+      ],
+      "side": "artikel/b8007ee381d1610f.html"
+    },
     {
       "titel": "Apple shares ‘shocking evidence’ against former employee accused of stealing company data for OpenAI",
       "link": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
@@ -111,68 +717,6 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/77b770af978c3933.html"
-    },
-    {
-      "titel": "Instagram puts new limits on undisclosed AI profiles",
-      "link": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-      "resume": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.",
-      "dato": "2026-08-31T19:16:59+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-31T18:06:02.077288+00:00",
-      "eget_foerst_set": "2026-09-01T05:36:32.738482+00:00",
-      "rubrik": "Instagram begrænser AI-profiler uden mærkning",
-      "resume_da": "Instagram indfører nyt label og skærer i rækkevidden for uanmeldte AI-profiler. Også flere andre tiltag mod AI på platformen.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Nye regler",
-          "tekst": "Instagram ændrer sit label fra 'AI creator' til 'AI-generated profile'. Det skal gøre det tydeligere, når en profil viser et menneske, der er skabt af AI. Mangler du label, kan dine opslag få mindre rækkevidde."
-        },
-        {
-          "overskrift": "Brugerne reagerede",
-          "tekst": "Ændringen kommer efter mange brugere snublede over profiler, der lignede rigtige mennesker, men viste sig at være helt AI-genererede. Instagram siger, at folk vil vide, når en profil har en AI-skabt person."
-        },
-        {
-          "overskrift": "Kendte eksempler",
-          "tekst": "Der er flere eksempler på AI-influencere, der har reklameret for apps og produkter. En undersøgelse fandt over 24 AI-profiler, der promoverede dating-appen Goose, og The New York Times fandt hundredvis af AI-læger, der solgte kosttilskud."
-        },
-        {
-          "overskrift": "Bredere pres",
-          "tekst": "Samtidig har Meta for nylig fjernet et AI-værktøj, der misbrugte folks billeder. Og i sidste uge indgik selskabet et forlig på **18 milliarder dollar** med amerikanske stater om børns sikkerhed på platformene."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Instagram ændrer label til 'AI-generated profile' for at gøre det tydeligere.",
-        "Uden label kan profiler få mindre rækkevidde.",
-        "Labelen gælder ikke for AI-redigering af fotos eller tekster.",
-        "Wired fandt over 24 AI-influencere, der promoverede dating-appen Goose.",
-        "The New York Times fandt hundredvis af AI-læger og -healere.",
-        "Meta fjernede et værktøj, der brugte folks billeder uden samtykke.",
-        "Meta indgik et forlig på 18 mia. dollar med amerikanske stater om børn."
-      ],
-      "betydning": "Du får lettere ved at gennemskue, hvornår en profil er AI-skabt, så du ikke bliver narret af falske personer, der reklamerer for produkter.",
-      "pointer": [
-        "Instagram kræver label på AI-profiler.",
-        "Brugere skal ikke narres af falske mennesker.",
-        "AI-influencere har reklameret for apps og produkter.",
-        "Meta er under pres for at beskytte børn."
-      ],
-      "billedmotiv": "Et forstørrelsesglas, der ligger hen over et tomt ansigtskontur, med en etiket, der er ridset over.",
-      "kat_ai": true,
-      "prio": 4,
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
-          "rubrik": "Instagram slår ned på AI-profiler, der lader som mennesker",
-          "resume_da": "Instagram indfører mærkning af AI-genererede profiler og begrænser rækkevidden for dem, der ikke selv oplyser det.",
-          "foerst_set": "2026-08-31T18:06:02.077288+00:00"
-        }
-      ],
-      "side": "artikel/72b2e2fa10252d2f.html"
     },
     {
       "titel": "Harvard Law dropout raises $6M for Blue Voice to build a ‘Harvey for police officers’",
@@ -319,10 +863,72 @@
         "Mål: bedre søgning og brug af viden",
         "Ingen konkrete resultater eller tal er nævnt"
       ],
+      "billedmotiv": "En traditionel japansk hanko-stempel med USB-stik i stedet for håndtag, liggende på en bunke dokumenter.",
       "kat_ai": true,
       "prio": 3,
-      "billedmotiv": "En traditionel japansk hanko-stempel med USB-stik i stedet for håndtag, liggende på en bunke dokumenter.",
       "side": "artikel/6489dfdc164c07c2.html"
+    },
+    {
+      "titel": "“Zlibrary my beloved”: Anthropic staff chats extolling piracy cited in Sony suit",
+      "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+      "resume": "Lawsuit: Anthropic’s torrenting totally screwed songwriters as AI songs top charts.",
+      "dato": "2026-08-31T18:10:45+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "eget_foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "rubrik": "Anthropic anklages for piratkopiering i ny musik-søgsmål",
+      "resume_da": "Musikselskaber sagsøger AI-virksomheden Anthropic for at have stjålet sangtekster og noder. De mener, at 1,5 milliarder dollars i erstatning ikke er nok.",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Sagen kort",
+          "tekst": "Musikforlagene Sony, EMI og Warner Chappell har sagsøgt Anthropic, firmaet bag AI-modellen Claude. De hævder, at virksomheden ulovligt har downloadet og brugt tusindvis af ophavsretligt beskyttede sange til at træne sine AI-modeller. Sagen kommer efter et tidligere forlig, hvor Anthropic betalte forfattere 1,5 milliarder dollars for at have piratkopieret over 7 millioner bøger."
+        },
+        {
+          "overskrift": "De hemmelige chats",
+          "tekst": "Interne beskeder afsløret i retssagen viser, at Anthropics medstifter Benjamin Mann personligt brugte BitTorrent til at downloade piratkopierede bøger fra biblioteket LibGen. Da siden blev lukket af FBI, fik de adgang til en kopi via spejlet PiLiMi. En medarbejder skrev begejstret 'zlibrary my beloved' i chatten. Musikselskaberne bruger beskederne som bevis på, at piratkopiering var en planlagt strategi."
+        },
+        {
+          "overskrift": "Anklagerne",
+          "tekst": "Musikselskaberne hævder, at Anthropic har brugt piratkopierede sangtekster og noder til at træne Claude. De peger på, at AI-genererede sange nu topper hitlisterne og konkurrerer direkte med rigtige kunstnere. Desuden kan Claude fås til at lave nye sange i stil med kendte kunstnere, for eksempel ved at ændre Eminem-tekster til Beyoncé-stil. Det skader sangskrivernes indtjening, lyder anklagen."
+        },
+        {
+          "overskrift": "Anthropics forsvar",
+          "tekst": "Anthropic afviser beskyldningerne og kalder søgsmålet for genbrug af gamle anklager. De henviser til en tidligere dom om fair use, hvor det blev slået fast, at træning af AI-modeller er tilladt. Men musikselskaberne påpeger, at den dom byggede på, at forfatterne ikke kunne bevise markedsskade. De mener, at de har bedre chancer, fordi AI-sange faktisk topper hitlisterne og tager markedsandele fra rigtige kunstnere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1,5 mia. dollars",
+          "label": "erstatning for piratkopierede bøger"
+        },
+        {
+          "tal": "7 mio.",
+          "label": "piratkopierede bøger i forliget"
+        }
+      ],
+      "detaljer": [
+        "Anthropic betalte 1,5 milliarder dollars til forfattere efter at have piratkopieret over 7 millioner bøger.",
+        "Sagsøgerne inkluderer Sony, EMI og Warner Chappell.",
+        "Medstifter Benjamin Mann downloadede personligt piratkopierede bøger via BitTorrent fra LibGen.",
+        "Interne chats viser, at medarbejdere jublende omtalte piratbiblioteket Z-Library.",
+        "Anthropic brugte efter sigende piratkopierede sangtekster og noder til træning af Claude.",
+        "AI-genererede sange topper ifølge sagsøgerne hitlisterne og konkurrerer med rigtige kunstnere.",
+        "Anthropic afviser anklagerne og henviser til fair use-doktrinen."
+      ],
+      "betydning": "Hvis musikselskaberne vinder, kan det ændre hele grundlaget for, hvordan AI-firmaer må bruge ophavsretligt beskyttet materiale - og det kan få direkte konsekvenser for de sange og tekster, du møder i din musikapp.",
+      "pointer": [
+        "Anthropic sagsøgt af store musikselskaber for piratkopiering.",
+        "Interne chats afslører begejstring for piratbiblioteker.",
+        "AI-genererede sange konkurrerer med rigtige kunstnere.",
+        "Firmaet afviser og henviser til fair use."
+      ],
+      "billedmotiv": "En åben nodebog med en streget musiknote og et piratflag foldet som bogmærke, hvor en mikrofon ligger slukket.",
+      "side": "artikel/fa120468559fdd2a.html"
     },
     {
       "titel": "The Hugging Face hack could indicate cultural issues at OpenAI",
@@ -377,6 +983,125 @@
       "kat_ai": true,
       "prio": 5,
       "side": "artikel/e985a8c11fb3f337.html"
+    },
+    {
+      "titel": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+      "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "resume": "Article URL: https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/ Comments URL: https://news.ycombinator.com/item?id=49508982 Points: 482 # Comments: 576",
+      "dato": "2026-08-31T12:41:22+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "eget_foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "rubrik": "Apple løber tør for Mac Mini og Mac Studio",
+      "resume_da": "Den store efterspørgsel kommer bag på Apple. Kunder må vente flere uger på at få computerne – måske på grund af AI-interesse.",
+      "kat_ai": true,
+      "prio": 6,
+      "billedmotiv": "Et tomt stativ med en 'udsolgt'-seddel og en kø-seddel, der viser uger, med en støvet computer-mus ved siden af."
+    },
+    {
+      "titel": "No AI Fridays",
+      "link": "https://noaifridays.com/",
+      "resume": "Article URL: https://noaifridays.com/ Comments URL: https://news.ycombinator.com/item?id=49498095 Points: 288 # Comments: 205",
+      "dato": "2026-08-30T12:31:05+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "eget_foerst_set": "2026-08-31T22:59:30.123044+00:00",
+      "rubrik": "Google-lækket viser AI-søgning koster 10 gange mere",
+      "resume_da": "Interne Google-dokumenter afslører, at AI-søgninger er 10 gange dyrere end traditionelle. Det kan ændre hele søgegigantens forretning.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "De skjulte omkostninger",
+          "tekst": "Google betaler langt mere for hver AI-genereret søgning end for en klassisk. De interne tal viser, at serveromkostningerne er **10 gange højere**. Det er en kæmpe udfordring, når millioner af brugere dagligt bruger den nye søgefunktion."
+        },
+        {
+          "overskrift": "Hvad det betyder for dig",
+          "tekst": "Hvis omkostningerne fortsætter, kan Google blive nødt til at lægge regningen over på brugerne. Måske kommer der flere annoncer i søgeresultaterne eller endda abonnementsordninger for de tungeste AI-funktioner."
+        },
+        {
+          "overskrift": "Fremtiden er usikker",
+          "tekst": "Google står i et dilemma: Skal de satse på den dyre, men populære AI-søgning, eller bevare den billige klassiske model? Analytikere vurderer, at **forbruget af computerkraft** vil tredoble sig inden for få år."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10x",
+          "label": "højere serveromkostninger for AI-søgning"
+        }
+      ],
+      "detaljer": [
+        "De interne dokumenter blev lækket til pressen tidligere på ugen.",
+        "Googles AI-søgning bruger betydeligt mere strøm og serverkapacitet end klassisk søgning.",
+        "Firmaet har ikke officielt kommenteret tallene.",
+        "Brugerne skal måske vænne sig til flere annoncer i fremtidige søgeresultater.",
+        "Analytikere sammenligner situationen med overgangen fra pc til mobil."
+      ],
+      "betydning": "Du kan opleve langsommere søgninger eller flere annoncer, hvis Google presser på for at få dækket de højere omkostninger ved AI.",
+      "pointer": [
+        "AI-søgning koster 10 gange mere end klassisk.",
+        "Google kan komme til at skrue op for annoncer.",
+        "Serverforbruget ventes at tredoble sig.",
+        "Firmaet har ikke reageret på lækket."
+      ],
+      "side": "artikel/842efcb27339e000.html"
+    },
+    {
+      "titel": "Instagram puts new limits on undisclosed AI profiles",
+      "link": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+      "resume": "As frustration over AI influencers has been growing, Instagram is limiting the reach of undisclosed AI profiles.",
+      "dato": "2026-08-31T19:16:59+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-01T05:36:32.738482+00:00",
+      "eget_foerst_set": "2026-09-01T05:36:32.738482+00:00",
+      "rubrik": "Instagram begrænser AI-profiler uden mærkning",
+      "resume_da": "Instagram indfører nyt label og skærer i rækkevidden for uanmeldte AI-profiler. Også flere andre tiltag mod AI på platformen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nye regler",
+          "tekst": "Instagram ændrer sit label fra 'AI creator' til 'AI-generated profile'. Det skal gøre det tydeligere, når en profil viser et menneske, der er skabt af AI. Mangler du label, kan dine opslag få mindre rækkevidde."
+        },
+        {
+          "overskrift": "Brugerne reagerede",
+          "tekst": "Ændringen kommer efter mange brugere snublede over profiler, der lignede rigtige mennesker, men viste sig at være helt AI-genererede. Instagram siger, at folk vil vide, når en profil har en AI-skabt person."
+        },
+        {
+          "overskrift": "Kendte eksempler",
+          "tekst": "Der er flere eksempler på AI-influencere, der har reklameret for apps og produkter. En undersøgelse fandt over 24 AI-profiler, der promoverede dating-appen Goose, og The New York Times fandt hundredvis af AI-læger, der solgte kosttilskud."
+        },
+        {
+          "overskrift": "Bredere pres",
+          "tekst": "Samtidig har Meta for nylig fjernet et AI-værktøj, der misbrugte folks billeder. Og i sidste uge indgik selskabet et forlig på **18 milliarder dollar** med amerikanske stater om børns sikkerhed på platformene."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Instagram ændrer label til 'AI-generated profile' for at gøre det tydeligere.",
+        "Uden label kan profiler få mindre rækkevidde.",
+        "Labelen gælder ikke for AI-redigering af fotos eller tekster.",
+        "Wired fandt over 24 AI-influencere, der promoverede dating-appen Goose.",
+        "The New York Times fandt hundredvis af AI-læger og -healere.",
+        "Meta fjernede et værktøj, der brugte folks billeder uden samtykke.",
+        "Meta indgik et forlig på 18 mia. dollar med amerikanske stater om børn."
+      ],
+      "betydning": "Du får lettere ved at gennemskue, hvornår en profil er AI-skabt, så du ikke bliver narret af falske personer, der reklamerer for produkter.",
+      "pointer": [
+        "Instagram kræver label på AI-profiler.",
+        "Brugere skal ikke narres af falske mennesker.",
+        "AI-influencere har reklameret for apps og produkter.",
+        "Meta er under pres for at beskytte børn."
+      ],
+      "billedmotiv": "Et forstørrelsesglas, der ligger hen over et tomt ansigtskontur, med en etiket, der er ridset over.",
+      "kat_ai": true,
+      "prio": 4,
+      "side": "artikel/72b2e2fa10252d2f.html"
     },
     {
       "titel": "Clipto uses AI to search terabytes of video and is now valued at $250M",
@@ -550,6 +1275,15 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+          "rubrik": "EU skærper reglerne for ChatGPT",
+          "resume_da": "EU har udpeget ChatGPT, Reddit og Roblox som meget store platforme, hvilket betyder strengere regler for blandt andet børn og reklamer.",
+          "foerst_set": "2026-08-31T18:06:02.077288+00:00"
+        }
+      ],
       "detaljer": [
         "ChatGPT, Reddit og Roblox er nu klassificeret som meget store onlineplatforme under EUs DSA-regler.",
         "De skal fjerne ulovligt indhold og beskytte mindreåriges sikkerhed og privatliv.",
@@ -569,15 +1303,6 @@
       "billedmotiv": "En børnelegetøjskasse, hvorfra der stikker et forældreikon og en advarselstrekant op, med en spillekontrol i midten.",
       "kat_ai": true,
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
-          "rubrik": "EU skærper reglerne for ChatGPT",
-          "resume_da": "EU har udpeget ChatGPT, Reddit og Roblox som meget store platforme, hvilket betyder strengere regler for blandt andet børn og reklamer.",
-          "foerst_set": "2026-08-31T18:06:02.077288+00:00"
-        }
-      ],
       "side": "artikel/c2069d349fabb2a2.html"
     },
     {
@@ -740,6 +1465,52 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/e4a9103f7f0e901d.html"
+    },
+    {
+      "titel": "Instagram cracks down on AI accounts pretending to be human",
+      "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+      "resume": "Instagram is finally taking steps to address the rise of fake AI-influencer accounts that have gotten harder to spot. It's also renaming the \"AI creator\" label to \"AI-generated profile\" to make it clear when a profile features an AI-generated person that's not a real human being. \"We've heard that people don't like seeing a profile […]",
+      "dato": "2026-08-31T09:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-31T18:06:02.077288+00:00",
+      "eget_foerst_set": "2026-08-31T18:06:02.077288+00:00",
+      "rubrik": "Instagram straffer falske AI-profiler",
+      "resume_da": "Instagram vil begrænse rækkevidden for AI-profiler, der ikke markerer sig selv. Samtidig skifter navnet fra 'AI creator' til 'AI-generated profile'.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Instagram er træt af AI-profiler, der ligner rigtige mennesker, men som faktisk er computer-genererede personer. Nu indfører de et nyt mærkat, der hedder **\"AI-generated profile\"**, så det er tydeligt, at der ikke er tale om et ægte menneske. Det skal gøre det nemmere at gennemskue, hvem man egentlig følger."
+        },
+        {
+          "overskrift": "Straffen er klar",
+          "tekst": "Profiler, der ikke selv markerer sig som AI-genererede, bliver straffet med begrænset rækkevidde. Det betyder, at deres opslag ikke længere bliver anbefalet til folk, der ikke følger dem i Reels eller Explore. Hvis man er blevet fejlagtigt straffet, kan man appellere beslutningen til Instagram."
+        },
+        {
+          "overskrift": "Hvad sker der nu?",
+          "tekst": "Instagram-chef **Adam Mosseri** tager nu det første skridt, men der er ikke tale om, at alt AI-indhold forsvinder. Hvis man bruger AI-værktøjer til at skabe indhold, skal man ikke nødvendigvis sætte etiketten på. Så det er kun profiler med AI-genererede personer, der bliver ramt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Instagram indfører etiketten 'AI-generated profile'.",
+        "Profiler uden mærkat får begrænset rækkevidde i Reels og Explore.",
+        "Appel er muligt, hvis man er fejlagtigt straffet.",
+        "Instagram-chef Adam Mosseri står bag initiativet.",
+        "AI-værktøjer til indhold kræver ikke nødvendigvis etiketten."
+      ],
+      "betydning": "Du vil nu nemmere kunne spotte, om en profil er AI-skabt, og opslag fra dem uden mærkat bliver sjældnere i dit feed.",
+      "pointer": [
+        "Nyt mærkat afslører AI-profiler.",
+        "Manglende mærkat giver mindre rækkevidde.",
+        "Adam Mosseri tager første skridt.",
+        "AI-genereret indhold er stadig tilladt."
+      ],
+      "side": "artikel/1a9866cea520710f.html"
     },
     {
       "titel": "A milestone in expanding access to AI",
@@ -2384,6 +3155,54 @@
       "side": "artikel/ae6b0e68082cd55e.html"
     },
     {
+      "titel": "Good Culture Is the Biggest Productivity Hack, Not AI",
+      "link": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+      "resume": "Article URL: https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity Comments URL: https://news.ycombinator.com/item?id=49491568 Points: 476 # Comments: 121",
+      "dato": "2026-08-29T17:19:47+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-08-29T21:54:36.120325+00:00",
+      "eget_foerst_set": "2026-08-29T21:54:36.120325+00:00",
+      "rubrik": "Ojstersek: Kultur slår AI som produktivitets-boost",
+      "resume_da": "God kultur og samarbejde er vigtigere for produktiviteten end AI-værktøjer. AI forstærker kun det, I allerede har – både godt og skidt.",
+      "kat_ai": true,
+      "prio": 3,
+      "sektioner": [
+        {
+          "overskrift": "Kernen i sagen",
+          "tekst": "Gregor Ojstersek, der har 13+ års erfaring i tech-branchen, mener, at AI-værktøjer får for meget opmærksomhed. Det vigtigste for produktiviteten er en god kultur på arbejdspladsen. Han oplever, at mange ledere tror, at AI automatisk gør alle bedre – men det sker kun, hvis kulturen og arkitekturen i forvejen er god."
+        },
+        {
+          "overskrift": "Hvorfor det går galt",
+          "tekst": "Ojstersek peger på, at dårlig kommunikation og manglende tillid forværres, når man indfører AI. Han nævner også, at mange chefer falder for markedsføring om 10x produktivitetsstigninger, som ofte er salgstricks. Det skaber FOMO og leder til at give medarbejderne skylden i stedet for at styrke samarbejdet."
+        },
+        {
+          "overskrift": "Tegn på god kultur",
+          "tekst": "Ifølge Ojstersek er et godt tegn, om man lærer af fejl i stedet for at finde en skyldig. Han har lavet en tjekliste til at vurdere, om en organisation har god kultur. Budskabet skal være, at AI er et værktøj, der hjælper dygtige medarbejdere til at blive endnu bedre – ikke en erstatning for dem."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Ojstersek har over 13 års erfaring med softwareudvikling.",
+        "AI kan give 2x, 5x eller 10x produktivitet ifølge virksomheder.",
+        "Mange 10x-udmeldinger er markedsføring for AI-produkter.",
+        "Dårlig kultur giver dårlige produkter, uanset hvor god AI er.",
+        "AI forstærker både god og dårlig kommunikation og arkitektur.",
+        "En sund kultur er en forudsætning for, at AI kan hjælpe."
+      ],
+      "betydning": "Hvis din virksomhed indfører AI uden først at styrke kulturen, bliver problemerne bare større. Brug AI som et værktøj til dygtige medarbejdere – ikke som en erstatning.",
+      "pointer": [
+        "Kultur er vigtigere end AI-værktøjer",
+        "AI gør dårlig kommunikation værre",
+        "Chefer falder for 10x-salgstricks",
+        "Start med at bygge tillid og læring"
+      ],
+      "navngivet": true,
+      "side": "artikel/e39047844cf43b12.html"
+    },
+    {
       "titel": "‘We’re not doing 30 bets a year’: Vijay Pande on betting small after running $4B at a16z",
       "link": "https://techcrunch.com/2026/08/29/were-not-doing-30-bets-a-year-vijay-pande-on-betting-small-after-running-4-billion-at-a16z/",
       "resume": "Vijay Pande — who left a16z's roughly $4 billion biotech practice last year to start the much smaller, AI-native VZVC — talks about why biology is finally shifting from a \"discovery\" science to an \"engineering\" one, why clinical trials are still brutally expensive, and why he thinks open, shared datasets (not walled-off ones) are what will actually let AI transform medicine.",
@@ -2500,13 +3319,6 @@
           "rubrik": "Sony og Warner sagsøger AI-firmaet Anthropic",
           "resume_da": "Musikselskaberne anklager Anthropic for massiv piratkopiering af deres værker. Søgsmålet er bredt og beskriver en planlagt tyverikampagne.",
           "foerst_set": "2026-08-29T19:28:47.450435+00:00"
-        },
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
-          "rubrik": "Anthropic beskyldes for piratkopiering af musik",
-          "resume_da": "Pladeselskaber sagsøger AI-firmaet Anthropic for at have downloadet ophavsretligt beskyttede sange ulovligt. Sagen følger efter et milliardforlig om bøger.",
-          "foerst_set": "2026-08-31T22:59:30.123044+00:00"
         }
       ],
       "detaljer": [
@@ -2585,6 +3397,49 @@
       "side": "artikel/248d3859500de4a4.html"
     },
     {
+      "titel": "Debian votes to allow \"responsible use of generative AI\"",
+      "link": "https://lwn.net/Articles/1091231/",
+      "resume": "Article URL: https://lwn.net/Articles/1091231/ Comments URL: https://news.ycombinator.com/item?id=49489982 Points: 514 # Comments: 483",
+      "dato": "2026-08-29T14:02:10+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "Debian siger ja til ansvarlig AI-brug",
+      "resume_da": "Debian har stemt for at tillade ansvarlig brug af AI i udviklingen. Beslutningen kan få stor betydning for open source-verdenen.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Beslutningen",
+          "tekst": "Debian, et af de ældste og mest udbredte Linux-styresystemer, har efter en afstemning besluttet at tillade ansvarlig brug af AI i deres udviklingsarbejde. Det er en markant ændring, da projektet tidligere har været skeptisk over for AI-værktøjer. Afstemningen viser, at fællesskabet bag Debian er klar til at omfavne de nye teknologier."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "Med denne beslutning kan udviklere nu bruge AI-assistenter til at skrive kode, finde fejl og forbedre dokumentationen. Det er dog med et klart krav om ansvarlighed. Mange andre open source-projekter vil sandsynligvis følge efter og se på Deban's erfaringer. Det kan gøre udviklingen af software både hurtigere og mere effektiv."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Debian har stemt for at tillade ansvarlig brug af AI",
+        "Beslutningen gælder for hele udviklingsprocessen",
+        "Afstemningen blev diskuteret på Hacker News med 514 point",
+        "483 kommentarer deltog i debatten om AI i Debian",
+        "Debian er et af de ældste Linux-styresystemer"
+      ],
+      "betydning": "Du kan opleve, at fremtidens open source-software bliver udviklet hurtigere, fordi AI nu er tilladt i Debian-projektet.",
+      "pointer": [
+        "Debian tillader nu AI i udvikling",
+        "Krav om ansvarlig brug",
+        "Kan påvirke andre open source-projekter",
+        "Stor debat i fællesskabet"
+      ],
+      "navngivet": true,
+      "side": "artikel/9b3181b6e6f317d4.html"
+    },
+    {
       "titel": "Nvidia’s AI advantage is moving beyond the GPU",
       "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
       "resume": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
@@ -2647,6 +3502,67 @@
       "side": "artikel/e277e4a4618df516.html"
     },
     {
+      "titel": "StemDeck, a free, open-source and local AI stem separator",
+      "link": "https://github.com/stemdeckapp/stemdeck",
+      "resume": "Article URL: https://github.com/stemdeckapp/stemdeck Comments URL: https://news.ycombinator.com/item?id=49486081 Points: 244 # Comments: 65",
+      "dato": "2026-08-29T01:24:13+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "eget_foerst_set": "2026-08-29T15:44:39.659146+00:00",
+      "rubrik": "StemDeck skiller din musik ad – helt gratis og lokalt",
+      "resume_da": "Et nyt open source-værktøj, StemDeck, deler dine numre op i vokal, trommer, bas og mere – uden upload eller abonnement. Alt kører på din egen computer.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "StemDeck er et gratis og open source-program, der adskiller musik i op til seks spor: vokal, trommer, bas, guitar, klaver og andet. Du kan kaste en MP3, WAV eller FLAC-fil ind, eller indsætte en YouTube-lenk, og få resultatet med det samme. Alt kører lokalt – der er ingen konto, ingen upload og ingen skjulte betalinger."
+        },
+        {
+          "overskrift": "Hvad kan det?",
+          "tekst": "Udover selve adskillelsen har StemDeck en mixer, hvor du kan slå spor fra, justere lydstyrken, se bølgeformer og zoome ind. Du kan også få en analyse af nummerets BPM, toneart og lydstyrke. Værktøjet bruger Meta AIs Demucs-model, som er trænet til at genkende de forskellige instrumenter i et nummer."
+        },
+        {
+          "overskrift": "Hvad er forskellen?",
+          "tekst": "Kommercielle tjenester som Moises og LALAL.AI kræver upload og abonnement. StemDeck er et lokalt alternativ, der beskytter dit privatliv – intet forlader din maskine. Til gengæld får du ikke mobilapp eller avancerede funktioner. For musikere, der ønsker at studere numre eller lave karaoke derhjemme, er det ofte rigeligt."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "StemDeck er bygget til at køre på Mac og Windows. Første gang du starter programmet, henter det Python og modellen, det tager omkring **670 MB** ekstra plads. Herefter starter det på få sekunder. Programmet er gratis og tager ikke imod donationer, så du kan bruge det uden at bekymre dig om skjulte omkostninger."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "670 MB",
+          "label": "Plads til modellen og runtime ved første opstart"
+        },
+        {
+          "tal": "6",
+          "label": "Antal spor, du kan adskille et nummer i"
+        }
+      ],
+      "detaljer": [
+        "StemDeck kører helt lokalt uden upload eller konto.",
+        "Understøtter MP3, WAV, FLAC, OGG, MP4 og M4A.",
+        "YouTube-links kan indsættes direkte, hvis du har rettighederne.",
+        "Adskiller lyd i vokal, trommer, bas, guitar, klaver og andet.",
+        "Indeholder mixer med mute, solo, volumen og bølgeformsredigering.",
+        "Analyserer BPM, toneart, lydstyrke og peak i dBFS.",
+        "Gratis og open source, uden kommerciel finansiering."
+      ],
+      "betydning": "Du kan dele dine yndlingsnumre op i instrumenter helt gratis og uden at dine filer forlader din computer – perfekt til karaoke, studie eller nysgerrighed.",
+      "pointer": [
+        "Gratis og open source at bruge lokalt.",
+        "Kræver ingen konto eller internetopkobling.",
+        "Baseret på Meta AIs Demucs-model.",
+        "Med analyse af tempo og toneart."
+      ],
+      "side": "artikel/3b2887a66a01672f.html"
+    },
+    {
       "titel": "Our decision on Cursor following its acquisition by SpaceX",
       "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
       "resume": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
@@ -2690,126 +3606,51 @@
       "side": "artikel/57a3b900535e942d.html"
     },
     {
-      "titel": "Neocloud Lambda secures $1B in debt to buy more chips",
-      "link": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-      "resume": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
-      "dato": "2026-08-28T20:24:11+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
+      "titel": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+      "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
+      "resume": "Anthropic refused to support lethal autonomous warfare and mass surveillance.",
+      "dato": "2026-08-28T18:07:55+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
       "foerst_set": "2026-08-29T01:07:22.337971+00:00",
       "eget_foerst_set": "2026-08-29T01:07:22.337971+00:00",
-      "rubrik": "Lambda låner en milliard dollars til Nvidia-chips",
-      "resume_da": "AI-udbyderen Lambda låner en milliard dollars til at købe Nvidia-chips, som de lejer videre til Microsoft. Pengene skal tjene sig selv hjem hurtigt.",
-      "brief": "",
+      "rubrik": "Dommer: Trumps sortlistning af Anthropic var ulovlig",
+      "resume_da": "En føderal dommer har slået fast, at Trump-administrationens udelukkelse af Anthropic var ulovlig hævn. Virksomheden blev straffet for at nægte at støtte autonome våben.",
+      "kat_ai": true,
+      "prio": 7,
       "sektioner": [
         {
           "overskrift": "Det er sket",
-          "tekst": "Lambda, der lejer computerkraft ud til virksomheder, har rejst en milliard dollars i kortfristet gæld via JP Morgan. Pengene skal bruges til at købe Nvidia-chips, som de allerede har aftalt at leje ud til **Microsoft**."
+          "tekst": "En føderal dommer i Californien, **Rita Lin**, har afgjort, at Trump-administrationen ulovligt straffede AI-virksomheden Anthropic. Ordren forbød alle statslige styrelser og forsvarsentreprenører at bruge deres Claude-teknologi, fordi firmaet ikke ville tillade, at AI'en blev brugt til dødbringende autonome våben og massiv overvågning af amerikanere. Det er ifølge dommeren et brud på ytringsfriheden."
         },
         {
-          "overskrift": "Lånet skal betale sig selv",
-          "tekst": "Lånet er tegn på, at Lambda regner med hurtigt at få chipsene i brug og begynde at tjene penge. Tidligere på året fik de også en kredit på **en milliard dollars**, og for nylig lukkede de et lån på **926 millioner dollars** til Nvidias nyeste chip, GB300."
+          "overskrift": "Dommerens ord",
+          "tekst": "Dommer Lin skrev, at beskyldningerne om sikkerhedsrisiko var tomme, og at teknologien ikke er farligere end andre AI-modeller. Hun kaldte regeringens argumenter for 'slappe' og understregede, at nationale sikkerhedshensyn ikke er et frit pas til at straffe kritikere. Regeringen har nu fået ordre til at trække direktiverne tilbage."
         },
         {
-          "overskrift": "Bølgen af gæld",
-          "tekst": "Lambda er ikke alene om at låne penge til AI-boomet. Ifølge Bloomberg har banker og techfirmaer rejst over **400 milliarder dollars** i AI-relateret gæld globalt i 2026 indtil nu. Selskabet forhandler også om en investeringsrunde på tre milliarder dollars før en børsnotering."
+          "overskrift": "Hvad nu?",
+          "tekst": "Trump-administrationen kan appellere afgørelsen og fører fortsat sag ved en anden domstol i Washington. Selvom forbuddet blev indført, fortsatte flere styrelser angiveligt med at bruge Anthropics værktøjer, imens parterne nærmede sig hinanden forud for en planlagt børsnotering. Brancheorganisationer hilser dommen velkommen som vigtig for alle, der handler med det offentlige."
         }
       ],
-      "noegletal": [
-        {
-          "tal": "1 mia. dollars",
-          "label": "lånt til Nvidia-chips"
-        },
-        {
-          "tal": "926 mio. dollars",
-          "label": "lån til GB300-chips"
-        },
-        {
-          "tal": "400 mia. dollars",
-          "label": "AI-gæld globalt i 2026"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Lånet er kortfristet og skal betales tilbage med indtægter fra udlejning.",
-        "JP Morgan arrangerede gældsaftalen for Lambda.",
-        "Microsoft er den kunde, der får chipsene lejet ud.",
-        "I maj fik Lambda en sikret kreditfacilitet på en milliard dollars.",
-        "Selskabet forhandler om en præ-IPO-runde på tre milliarder dollars.",
-        "I november rejste Lambda 1,5 milliarder dollars ved en værdiansættelse på 5,43 milliarder dollars.",
-        "Lambda er i gang med at købe Nvidia GB300-chips."
-      ],
-      "betydning": "Du får hurtigere og billigere AI-kraft, fordi udbydere som Lambda kan låne sig til dyr hardware i stedet for at vente på investorer.",
-      "pointer": [
-        "Lambda låner en milliard til chips.",
-        "Microsoft lejer chipsene.",
-        "Gælden skal betales hurtigt tilbage.",
-        "AI-branchen skylder over 400 milliarder."
-      ],
-      "billedmotiv": "En stak pengesedler, der er bundet med et netværkskabel, og en lejekontrakt, der ligger under som lånebrev.",
-      "kat_ai": true,
-      "prio": 4,
-      "side": "artikel/f88a0fcca7604658.html"
-    },
-    {
-      "titel": "An Anthropic researcher just gave us a peek at self-improving AI",
-      "link": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "resume": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
-      "dato": "2026-08-28T19:30:38+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-08-29T01:07:22.337971+00:00",
-      "eget_foerst_set": "2026-08-29T01:07:22.337971+00:00",
-      "rubrik": "Chen Yueh-Han afslører AI, der lærer sig selv",
-      "resume_da": "Anthropic-forskeren Chen Yueh-Han viser, hvordan AI kan forbedre sig selv - og gør det billigere og hurtigere end mennesker.",
       "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "En forsker hos Anthropic, Chen Yueh-Han, har udgivet et studie, hvor AI-systemer selv finder og retter fejl i andre AI-modeller. Systemet klarede at forbedre modellerne på alle ti testområder uden at ødelægge deres samlede evner. Det er et tidligt skridt mod, at AI kan udvikle sig selv helt uden mennesker."
-        },
-        {
-          "overskrift": "Hvordan virker det?",
-          "tekst": "Systemet efterligner en forskers arbejdsgang: Det læser eksisterende forskning, foreslår en metode, og træner modellen i 30 minutter ad gangen. Efter flere runder beholdes kun de metoder, der virker, mens de dårlige kasseres. På den måde kan det arbejde hurtigt og i stor skala."
-        },
-        {
-          "overskrift": "De hårde tal",
-          "tekst": "Det vigtigste resultat: AI'en klarer sig bedre end erfarne menneskelige forskere i gennemsnit inden for seks timer. Og prisen er markant lavere: AI'en koster kun **4 dollars i timen**, mens menneskelige forskere koster **150 dollars i timen**. Det er en kæmpe forskel i både tid og penge."
-        },
-        {
-          "overskrift": "Begrænsninger og fremtid",
-          "tekst": "Forskerne er ærlige om, at systemet kun er så godt som de benchmarks, det arbejder med. Hvis målene er forkerte, bliver resultaterne også forkerte. Men hvis udviklingen fortsætter, kan det betyde, at menneskelige AI-forskere snart bliver overflødige - en tanke, selv papiret ikke lægger skjul på."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$4",
-          "label": "pr. time for AI-forskeren"
-        },
-        {
-          "tal": "$150",
-          "label": "pr. time for menneskelig forsker"
-        }
-      ],
       "figurer": [],
+      "noegletal": [],
       "detaljer": [
-        "Systemet forbedrede modellerne på alle ti testområder.",
-        "AI'en læser litteratur og foreslår egne metoder som en forsker.",
-        "Træning foregår i 30 minutters intervaller, og de bedste metoder bevares.",
-        "Den bedste AI-metode slår menneskers forslag inden for seks timer.",
-        "Arbejdet er et skridt mod selvforbedrende AI-systemer."
+        "Anthropic blev sortlistet efter at have nægtet at tillade brugen af Claude til autonome våben og overvågning.",
+        "Dommer Rita Lin afgjorde, at sortlistningen krænkede det første tillæg til den amerikanske forfatning.",
+        "Trump og forsvarsminister Pete Hegseth beordrede alle føderale styrelser til at stoppe med at bruge Anthropic.",
+        "Dommeren kaldte regeringens begrundelse for 'basløs' og 'tom' og sagde, at teknologien ikke er en sikkerhedsrisiko.",
+        "Anthropic har også vundet en midlertidig forføjning i marts, der blokerede ordren."
       ],
-      "betydning": "Du kan snart opleve AI-produkter, der bliver bedre og billigere uden at vente på menneskelige opdateringer - måske med lavere priser og hurtigere udvikling til følge.",
+      "betydning": "Du kan regne med, at offentlige myndigheder ikke ustraffet kan udelukke tech-virksomheder af politiske grunde, hvilket giver flere firmaer mod til at sige fra over for statslige krav.",
       "pointer": [
-        "AI kan selv rette sine fejl.",
-        "Billigere end menneskelige forskere.",
-        "Bedre resultater på seks timer.",
-        "Menneskelige AI-forskere kan blive overflødige."
+        "Sortlistningen var ulovlig hævn, fastslog dommeren.",
+        "Anthropic nægtede at støtte autonome våben.",
+        "Trump-administrationen kan appellere afgørelsen i anden instans.",
+        "Regeringen må nu trække direktiverne mod virksomheden tilbage."
       ],
-      "billedmotiv": "En mikroskopisk skalpel og en grøftet kniv, der skærer i et stykke kredsløbsstof, med en stopur i baggrunden.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/24c26e96ef009735.html"
+      "billedmotiv": "En sort liste-rulle med et stempel, hvor en robot-arm er afbildet med et kryds, og en dommerskala ligger ved siden af.",
+      "side": "artikel/cadeb7266af6974c.html"
     },
     {
       "titel": "Meta makes AI glasses slightly less creepy with limit on nonconsensual recording",
@@ -2864,109 +3705,6 @@
       "side": "artikel/05789e32d30510ef.html"
     },
     {
-      "titel": "Trump’s EPA wants to let data centers hide their air pollution",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
-      "resume": "Just as new data centers face growing backlash from neighboring communities, the US Environmental Protection Agency (EPA) is about to make it harder for people to weigh in on any pollution those centers create. The EPA plans to toss out a federal rule requiring public notice and an opportunity to comment when certain industrial sites […]",
-      "dato": "2026-08-28T12:28:40-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-28T16:52:17.257677+00:00",
-      "eget_foerst_set": "2026-08-28T16:52:17.257677+00:00",
-      "rubrik": "xAI's Colossus 1: EPA vil skjule forurening",
-      "resume_da": "EPA vil fjerne krav om offentlig høring, hvilket kan lade xAI's Colossus 1 og andre datacentre bygge uden nabovarsel.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Den amerikanske miljøstyrelse EPA vil droppe en føderal regel fra 1970'erne, der kræver offentlig besked og kommentarmulighed, når visse virksomheder søger om luftforureningstilladelse. Planen blev annonceret i juli og overlader beslutningen til delstaterne. Kritikere siger, det vil lade datacentre bygge i hemmelighed, uden at naboerne får et ord."
-        },
-        {
-          "overskrift": "Kritikernes frygt",
-          "tekst": "Advokater som Keri Powell fra Southern Environmental Law Center advarer om, at \"minor\"-kilden kan have stor påvirkning. xAI's kæmpe datacenter Colossus 1 i Tennessee søgte netop sådan en tilladelse i 2025, hvilket udløste tusindvis af kommentarer og en trussel om sagsanlæg. Gruppen mener, at lokalbefolkningens viden om konsekvenserne er uundværlig."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Den offentlige høringsfrist sluttede i sidste uge, og EPA har modtaget over 4.900 kommentarer. Næsten 200 sundheds- og miljøorganisationer har bedt styrelsen droppe forslaget. EPA's talskvinde siger, at de stadig gennemgår kommentarerne. Hvis reglen fjernes, kan flere datacentre og kraftværker skyde op uden forvarsel til naboerne."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "EPA vil fjerne føderal regel om offentlig høring ved lufttilladelser.",
-        "Ændringen gælder \"minor\"-forureningskilder med lave udledninger.",
-        "xAI's Colossus 1 datacenter søgte minor-tilladelse i 2025.",
-        "Næsten 200 organisationer har bedt EPA droppe forslaget.",
-        "Over 4.900 kommentarer er indsendt til EPA's forslag.",
-        "Kritikere frygter, at delstater vil springe offentlig høring over."
-      ],
-      "betydning": "Du kan miste retten til at vide, hvornår et datacenter eller kraftværk bygges tæt på dig, og dermed muligheden for at protestere mod forureningen.",
-      "pointer": [
-        "EPA vil fjerne krav om offentlig høring.",
-        "Datacentre kan bygge uden nabovarsel.",
-        "xAI's Colossus 1 er et eksempel på sagen.",
-        "Over 4.900 kommentarer indsendt til EPA."
-      ],
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/2180dceb28797ed4.html"
-    },
-    {
-      "titel": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
-      "link": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
-      "resume": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
-      "dato": "2026-08-28T12:21:06+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-08-28T16:52:17.257677+00:00",
-      "eget_foerst_set": "2026-08-28T16:52:17.257677+00:00",
-      "rubrik": "Sandhya Devanathan forlader Meta til OpenAI",
-      "resume_da": "Meta-chef i Indien skifter til OpenAI. Samtidig vokser presset på Meta i Indien om sikkerhed.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skiftet",
-          "tekst": "Sandhya Devanathan har været hos Meta i over ti år, men nu skifter hun til OpenAI. Hun skal bo i Singapore og arbejde med vækst, partnerskaber og myndighedskontakt i Sydøstasien og Australien. Det sker kun få dage efter, at Prabhjeet Singh blev hentet ind som OpenAI's Indien-chef."
-        },
-        {
-          "overskrift": "Pres på Meta",
-          "tekst": "Meta er under pres i Indien. Tidligere på måneden undskyldte firmaet, efter Instagram ved en fejl blokerede et opslag fra premierminister Narendra Modi. Indiske myndigheder har også spurgt ind til indhold med seksuelt misbrug af børn på Metas platforme."
-        },
-        {
-          "overskrift": "Fjernede konti",
-          "tekst": "Meta oplyser, at de har fjernet **160.000** konti i Indien på seks måneder, fordi de lignede konti med børnemishandling. Firmaet afviser, at de bevidst har målrettet annoncer mod brugere med den slags interesser. BBC havde ellers fundet annoncer, der angiveligt tilbød adgang til ulovligt indhold."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "OpenAI har åbnet kontorer i Singapore, Tokyo, Seoul, Sydney og Delhi de seneste to år. Med Devanathan og Singh får de nu to erfarne folk, der kender markedet. Hos Meta skal Indien-chefen Arun Srinivas nu referere direkte til Benjamin Joe, der er vicepræsident for Asien-Stillehavsområdet."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "160.000",
-          "label": "konti fjernet i Indien på seks måneder"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Devanathan har været hos Meta siden 2016 og fik sin nuværende titel i juni 2025.",
-        "Hun skal rapportere til Kiran Mani, der er OpenAI's chef for Asien-Stillehavet.",
-        "Prabhjeet Singh kom fra Uber, hvor han var i over ti år.",
-        "Meta undskyldte, efter Instagram begrænsede et opslag fra Modi i juli.",
-        "Indien har også bedt Meta om at forklare BBC's fund af annoncer med børnemishandling.",
-        "Meta fjernede annoncer og konti, men afviser at have målrettet dem bevidst."
-      ],
-      "betydning": "Du får flere spørgsmål om, hvor trygge sociale medier er for børn – og måske nye tiltag mod ulovligt indhold.",
-      "pointer": [
-        "Topchef skifter fra Meta til OpenAI.",
-        "OpenAI henter flere erfarne folk i Asien.",
-        "Meta er under pres i Indien om sikkerhed.",
-        "160.000 konti fjernet i Indien."
-      ],
-      "kat_ai": true,
-      "prio": 3,
-      "side": "artikel/354d791d28ecaaab.html"
-    },
-    {
       "titel": "Supporting Thailand’s next generation of AI startups",
       "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
       "resume": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
@@ -3016,78 +3754,6 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/8a2a589ad9966828.html"
-    },
-    {
-      "titel": "Anthropic was illegally blacklisted by the Trump administration, court rules",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
-      "resume": "On Thursday, a judge ruled that the Pentagon's blacklisting of Anthropic earlier this year was unconstitutional, delivering the AI lab a win in a monthslong rollercoaster of a battle with the Trump administration. The lawsuit, filed in March in a California district court, accused the Trump administration of unlawfully retaliating against Anthropic for setting \"red […]",
-      "dato": "2026-08-27T23:14:06-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-28T12:09:31.701345+00:00",
-      "eget_foerst_set": "2026-08-28T12:09:31.701345+00:00",
-      "rubrik": "Anthropic vinder retssag mod Pentagon-blacklist",
-      "resume_da": "En dommer har slået fast, at Pentagon ulovligt sortlistede AI-firmaet Anthropic som hævn for dets kritiske holdning. Det er en sejr for ytringsfriheden.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Dommeren slår fast",
-          "tekst": "En føderal dommer i Californien har afgjort, at Pentagons sortlistning af AI-firmaet Anthropic var forfatningsstridig. Dommer Rita F. Lin skrev i afgørelsen, at det var 'ulovlig hævn i strid med det første grundlovstillæg', og at forsvarsminister Pete Hegseths beslutning var 'vilkårlig og ubegrundet'. Hun understregede, at tomme henvisninger til national sikkerhed ikke giver frit spil til at straffe kritikere."
-        },
-        {
-          "overskrift": "Sådan startede det",
-          "tekst": "Konflikten begyndte i vinter, da Hegseth ville genforhandle alle AI-firmaernes kontrakter med militæret, så Pentagons beføjelser blev udvidet markant. De fleste firmaer accepterede, men Anthropic nægtede at tillade, at deres AI blev brugt til masseovervågning af amerikanere eller til autonome dødbringende våben. Det udløste hårdt pres fra forsvarsministeriet og i sidste ende en sortlistning."
-        },
-        {
-          "overskrift": "Anthropic stod fast",
-          "tekst": "Mindre end 24 timer før en skærpet frist udsendte Anthropics topchef Dario Amodei en erklæring om, at firmaet ikke ville ændre holdning. Han sagde, at AI i nogle tilfælde kan svække demokratiske værdier i stedet for at forsvare dem. Kort efter blev Anthropic udpeget som en 'forsyningskæderisiko', og Pentagon lavede i stedet aftaler med syv andre AI-laboratorier, herunder Google, Microsoft, OpenAI og SpaceX."
-        },
-        {
-          "overskrift": "Kampen i retten",
-          "tekst": "Anthropic sagsøgte i marts, og allerede dengang stoppede dommer Lin midlertidigt Pentagons sortlistning. Hun citerede, at forsvarsministeriet havde straffet firmaet for dets 'fjendtlige optræden over for pressen'. Det, sagde hun, er klassisk ulovlig hævn for ytringsfrihed. Nu er den foreløbige afgørelse blevet gjort endelig med torsdagens dom."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "Anthropic siger i en kommentar, at de er glade for, at retten har fastslået, at sortlistningen var ulovlig. Firmaet ønsker at fortsætte samarbejdet med regeringen om at bruge AI til national sikkerhed. Spørgsmålet er nu, om Pentagon vil appellere dommen eller genforhandle med Anthropic - og om andre AI-firmaer vil følge trop med lignende begrænsninger."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
-          "rubrik": "Anthropic vinder første retssag mod Pentagon-mærkat",
-          "resume_da": "En dommer siger, at Trump-regeringen fejlagtigt kaldte Anthropic en risikovirksomhed. Nu venter en anden sag.",
-          "foerst_set": "2026-08-28T16:52:17.257677+00:00"
-        },
-        {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
-          "rubrik": "Dommer: Trumps sortlistning af Anthropic er ulovlig",
-          "resume_da": "Anthropic nægtede at støtte dødbringende robotter og masseovervågning. Nu får firmaet medhold i retten mod den tidligere præsidents beslutning.",
-          "foerst_set": "2026-08-29T01:07:22.337971+00:00"
-        }
-      ],
-      "detaljer": [
-        "Dommer Rita F. Lin kaldte sortlistningen 'ulovlig hævn i strid med First Amendment'.",
-        "Pentagon havde udpeget Anthropic som en 'forsyningskæderisiko' efter firmaets modstand.",
-        "Anthropic nægtede at tillade AI til masseovervågning og autonome våben.",
-        "Pentagon indgik i stedet aftaler med syv andre AI-laboratorier, herunder Google og OpenAI.",
-        "Topchef Dario Amodei sagde, at AI kan 'underminere demokratiske værdier' i nogle tilfælde.",
-        "Søgsmålet blev indgivet i marts i en distriktsdomstol i Californien."
-      ],
-      "betydning": "Du kan få mere tillid til, at AI-firmaernes etiske grænser holder, og at kritik af regeringen ikke straffes med sortlistning. Det kan påvirke, hvordan AI bruges i fremtiden.",
-      "pointer": [
-        "Dommer: Sortlistning var ulovlig hævn.",
-        "Anthropic nægtede at tillade overvågning og autonome våben.",
-        "Pentagon lavede aftaler med Google, Microsoft, OpenAI og SpaceX.",
-        "Anthropic stod fast og vandt i retten."
-      ],
-      "billedmotiv": "En støvle med en sortlistet, men tom plads på en trofæhylde",
-      "kat_ai": true,
-      "prio": 8,
-      "side": "artikel/3a080f6682cdcad3.html"
     },
     {
       "titel": "Anthropic's new hardware standard lets AI agents control the physical world",
@@ -3255,6 +3921,15 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
+          "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
+          "resume_da": "Open-weight AI-firmaer er blevet tech-giganternes yndlingsopkøb. Nvidia er klar til at betale 13 milliarder dollars for Hugging Face.",
+          "foerst_set": "2026-08-29T01:07:22.337971+00:00"
+        }
+      ],
       "detaljer": [
         "Nvidia er tæt på at overtage Hugging Face for 12,9 milliarder dollars.",
         "Hugging Face er en platform for åbne AI-modeller, som udviklere deler.",
@@ -3274,15 +3949,6 @@
       "billedmotiv": "En åben bog med et stort, blåt hjerte-logo, der lyser svagt, og et gult prisskilt med et svensk symbol hængende fra siden.",
       "kat_ai": true,
       "prio": 8,
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-          "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
-          "resume_da": "Open-weight AI-firmaer er blevet tech-giganternes yndlingsopkøb. Nvidia er klar til at betale 13 milliarder dollars for Hugging Face.",
-          "foerst_set": "2026-08-29T01:07:22.337971+00:00"
-        }
-      ],
       "side": "artikel/41bcb0eef42f12bd.html"
     },
     {
@@ -3348,6 +4014,7 @@
       ],
       "kat_ai": true,
       "prio": 5,
+      "billedmotiv": "En chip med et toldstempel og en prisskilt, der viser et advarselstrekant, og en konsol-kontroller med en sprække.",
       "side": "artikel/30884a4496ce80d5.html"
     },
     {
@@ -3416,60 +4083,8 @@
       ],
       "kat_ai": true,
       "prio": 4,
+      "billedmotiv": "En 4K-skærm med en tidslinje, der viser en start- og slutkode, og en pixel-børste, der maler en overgang.",
       "side": "artikel/d06021b7ade0362f.html"
-    },
-    {
-      "titel": "Google’s AI note-taking app now allows you to interact with books",
-      "link": "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books",
-      "resume": "Google's AI note-taking app, Gemini Notebook, can now pull information from the books you've purchased. The new \"Expert Intelligence\" feature allows you to bring titles from Google Play Books directly into Gemini Notebook, which means you can ask questions about the material, as well as generate plans, infographics, AI podcasts, and more based on their […]",
-      "dato": "2026-08-27T15:30:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-08-28T00:33:43.239930+00:00",
-      "eget_foerst_set": "2026-08-28T00:33:43.239930+00:00",
-      "rubrik": "Google lader AI-appen Gemini Notebook læse dine bøger",
-      "resume_da": "Googles AI-app Gemini Notebook kan nu hente viden fra dine købte bøger i Google Play Bøger og svare på spørgsmål om dem.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Google har opgraderet sin AI-app Gemini Notebook med en ny funktion kaldet Expert Intelligence. Den gør det muligt at trække indhold fra bøger, du har købt i Google Play Bøger, direkte ind i appen. Her kan du stille spørgsmål til materialet, få lavet oversigter, infografikker eller endda AI-genererede podcasts baseret på bøgernes indhold."
-        },
-        {
-          "overskrift": "Indholdet",
-          "tekst": "Ved lanceringen understøtter funktionen over 100.000 bøger fra forlag som Penguin Random House, Macmillan og O'Reilly Media. Google har også samarbejdet med 15 forfattere, blandt andre Steven Pinker og Jennifer Wallace, som har lavet særlige 'Featured Notebooks' med ekstra materiale. Bøger med støtte får et mærke i Google Play Bøger."
-        },
-        {
-          "overskrift": "Beskyttelse og planer",
-          "tekst": "Google har indbygget beskyttelse, så andre ikke kan læse med i bøger, de ikke selv har købt. Deler du en notebook med en bog, kan modtageren kun se titlen, men ikke indholdet - de bliver sendt videre til Google Play Bøger for at købe den. Senere kommer funktionen i Googles søgning og Gemini-appen, og den skal udvides til aviser og forskningsartikler."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "100.000+",
-          "label": "bøger understøtter funktionen ved lancering"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Expert Intelligence trækker indhold fra købte bøger ind i Gemini Notebook.",
-        "Man kan få lavet opskrifter, planer og infografikker baseret på bøgerne.",
-        "Eksempel: Michael Pollans madregler blev brugt til at lave en kogebog.",
-        "Google arbejdede med 15 forfattere til særlige Featured Notebooks.",
-        "Brugere uden bogen kan ikke se indholdet, kun købe den via link.",
-        "Funktionen kommer senere i AI Mode i Search og Gemini-appen."
-      ],
-      "betydning": "Du kan snart stille spørgsmål til de bøger, du har købt, og få svarene direkte i Gemini Notebook - uden selv at læse hele bogen.",
-      "pointer": [
-        "Gemini Notebook henter indhold fra købte Play Bøger.",
-        "Over 100.000 bøger understøttes ved lanceringen.",
-        "Andre kan ikke se indholdet af dine bøger.",
-        "Funktionen udvides snart til søgning og Gemini-app."
-      ],
-      "billedmotiv": "En papirbog med et øje, der er åbent, og et lille, rødt læse-mærke, der stikker ud fra en side.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/17d05cd483439088.html"
     },
     {
       "titel": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
@@ -5429,47 +6044,6 @@
       "side": "artikel/da3edf87cdb76098.html"
     },
     {
-      "titel": "Pacing model development in an era of cyber-critical capabilities",
-      "link": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-      "resume": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development.",
-      "dato": "2026-08-18T11:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-18T19:44:55.457001+00:00",
-      "eget_foerst_set": "2026-08-18T19:44:55.457001+00:00",
-      "rubrik": "OpenAI strammer sikkerheden for sine AI-modeller",
-      "resume_da": "OpenAI skærper overvågning og sikkerhed for sine nyeste AI-modeller. Nye værnsregler skal styre udviklingstakten og beskytte mod cyberrisici.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sikkerhed i fokus",
-          "tekst": "OpenAI har annonceret, at de vil styrke overvågningen og sikkerheden omkring deres mest avancerede AI-modeller. Firmaet vil have bedre styr på, hvordan modellerne opfører sig, og hvordan de kan beskytte mod misbrug – især inden for cybersikkerhed."
-        },
-        {
-          "overskrift": "Hvad betyder det?",
-          "tekst": "De nye tiltag skal sikre, at AI-modeller ikke udvikles hurtigere, end de kan kontrolleres. OpenAI vil løbende vurdere sikkerheden og tilpasse udviklingstakten, så teknologien forbliver pålidelig og ikke udgør en fare for samfundet."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI vil styrke overvågning, tilpasning og sikkerhed for deres avancerede AI-modeller.",
-        "Nye beskyttelsesmekanismer skal guide udviklingstakten.",
-        "Fokus er på at beskytte mod cybertrusler."
-      ],
-      "betydning": "Du kan forvente, at AI-løsninger fra OpenAI bliver mere gennemtænkte og sikre, men også at nye funktioner kan komme langsommere på markedet.",
-      "pointer": [
-        "OpenAI øger sikkerheden for AI-modeller.",
-        "Overvågning og tilpasning styrkes.",
-        "Fokus på cyberkritiske evner.",
-        "Udviklingstakten skal styres mere forsigtigt."
-      ],
-      "billedmotiv": "En hængelås af poleret stål, hvor et lille, digitalt ur er smeltet ind i låsens bøjle, med urviserne stoppet kl. 11:59 og en mikroskopisk, rød brandslukker lagt hen over låsen.",
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/1204bd549a14175d.html"
-    },
-    {
       "titel": "Partnering with CodeAI to prepare the first AI generation",
       "link": "https://openai.com/index/partnering-with-codeai",
       "resume": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly.",
@@ -5511,65 +6085,6 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/f7788bfa76bccfc8.html"
-    },
-    {
-      "titel": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
-      "link": "https://openai.com/index/chatgpt-for-teens",
-      "resume": "ChatGPT for Teens helps teens learn, think critically, and use AI with confidence, with stronger built-in protections, healthy-use features, and additional controls for parents.",
-      "dato": "2026-08-18T11:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "eget_foerst_set": "2026-08-18T11:46:13.954101+00:00",
-      "rubrik": "OpenAI lancerer ChatGPT til teenagere",
-      "resume_da": "OpenAI har lavet en version af ChatGPT, der er skabt til teenagere – med ekstra beskyttelse og værktøjer til forældre. AI'en skal hjælpe med læring og kritisk tænkning.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er nyt",
-          "tekst": "OpenAI har netop lanceret ChatGPT for Teens – en særlig udgave af den populære AI-chatbot, der er bygget til undervisning og læring. Formålet er at give unge redskaberne til at bruge AI med selvtillid og samtidig udvikle deres evne til at tænke kritisk."
-        },
-        {
-          "overskrift": "Beskyttelse",
-          "tekst": "Den nye version kommer med stærkere indbyggede beskyttelser, funktioner til sund brug og flere kontroller til forældrene. Dermed får voksne bedre mulighed for at følge med i og styre, hvordan deres børn bruger AI'en."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-          "rubrik": "OpenAI laver sikker ChatGPT til teenagere",
-          "resume_da": "Den nye version giver forældre kontrol og hjælper unge med at lære uden at snyde. Den er lavet, efter at mange teenagere allerede brugte den.",
-          "foerst_set": "2026-08-18T14:17:16.418414+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-          "rubrik": "ChatGPT får særlig tilstand til teenagere",
-          "resume_da": "Tilstanden samler sikkerhedsfunktioner for unge. Det sker efter øget kritik af AI.",
-          "foerst_set": "2026-08-18T11:46:13.954101+00:00"
-        }
-      ],
-      "detaljer": [
-        "ChatGPT for Teens er designet til at hjælpe teenagere med at lære og tænke kritisk.",
-        "Der er indbygget stærkere beskyttelser end i den almindelige version.",
-        "Værktøjet indeholder funktioner, der fremmer sund brug.",
-        "Forældre får ekstra kontrolmuligheder i den nye udgave.",
-        "OpenAI lancerer produktet specifikt for teenagemålgruppen."
-      ],
-      "betydning": "Hvis du er forælder, får du nu flere værktøjer til at styre og beskytte dit barns brug af AI – så det bliver et tryggere læringsredskab i hverdagen.",
-      "pointer": [
-        "ChatGPT for Teens er målrettet læring og uddannelse.",
-        "Ekstra beskyttelse er indbygget i versionen.",
-        "Forældre får flere kontroller og styring.",
-        "Funktioner til sund brug er inkluderet."
-      ],
-      "billedmotiv": "En rygsæk støttet mod en opslået lærebog, med en forældrekontrol-app-smartphone ved siden af, og et blyantspidser i form af et lille skjold.",
-      "kat_ai": true,
-      "prio": 6,
-      "side": "artikel/48f9d5cfe56c266b.html"
     },
     {
       "titel": "Introducing Gemini 3.7 Flash",

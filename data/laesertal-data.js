@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-01T14:16:08.180530+00:00",
+ "opdateret": "2026-09-01T18:01:30.109726+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -89,7 +89,7 @@ window.LAESERTAL = {
      2,
      4,
      8,
-     7,
+     8,
      3,
      8,
      10,
@@ -135,10 +135,10 @@ window.LAESERTAL = {
      10,
      7,
      1,
-     2,
+     1,
      2,
      5,
-     0
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      1,
      0,
      4,
-     0
+     3
     ]
    },
    {
@@ -194,7 +194,7 @@ window.LAESERTAL = {
      0,
      1,
      4,
-     2,
+     1,
      4,
      1,
      2,
@@ -204,7 +204,7 @@ window.LAESERTAL = {
      2,
      2,
      4,
-     3,
+     4,
      3,
      1,
      7,
@@ -240,23 +240,23 @@ window.LAESERTAL = {
      1,
      2,
      0,
+     1,
+     1,
      0,
-     0,
-     0,
-     0
+     2
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 38,
- "sidevisninger_i_alt": 85,
+ "besoeg_i_alt": 36,
+ "sidevisninger_i_alt": 83,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 36,
-   "visninger": 57
+   "besoeg": 34,
+   "visninger": 55
   },
   {
    "sti": "/uge.html",
@@ -372,7 +372,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 38
+   "besoeg": 36
   }
  ],
  "ai_chats": [],
@@ -380,8 +380,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 36,
-    "visninger": 36
+    "besoeg": 34,
+    "visninger": 34
    },
    {
     "fra": "herfra selv",
@@ -856,7 +856,7 @@ window.LAESERTAL = {
    "sti": "/artikel/e39047844cf43b12.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Gregor Ojstersek: God kultur slår AI som produktivitetsværktøj",
+   "rubrik": "Ojstersek: Kultur slår AI som produktivitets-boost",
    "kategori": "Samfund & etik",
    "dato": "2026-08-29",
    "henvisere": [
