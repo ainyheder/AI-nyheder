@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-02T21:13:01.878289+00:00",
- "artikler_i_alt": 114,
+ "opdateret": "2026-09-02T23:31:19.396538+00:00",
+ "artikler_i_alt": 108,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -41,6 +41,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "TechCrunch Disrupt 2026: Sådan skalerer du din startup",
+     "dato": "2026-09-02T23:01:00",
+     "foerst_set": "2026-09-02T23:31:19",
+     "link": "https://techcrunch.com/2026/09/02/the-builders-stage-brings-practical-strategies-for-scaling-startups-to-techcrunch-disrupt-2026/",
+     "side": "artikel/7bd6a782670d6303.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Palo Alto betaler 500 mio. dollars for Console",
+     "dato": "2026-09-02T22:44:56",
+     "foerst_set": "2026-09-02T23:31:19",
+     "link": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
+     "side": "artikel/ef03c3a5f159b7ba.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia og robotter på ny AI-scene til Disrupt 2026",
+     "dato": "2026-09-02T22:24:09",
+     "foerst_set": "2026-09-02T23:31:19",
+     "link": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+     "side": "artikel/7ae55826cb10819a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI's nye teknik skræmmer sikkerhedseksperter",
@@ -120,33 +147,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T17:59:53",
      "link": "https://techcrunch.com/2026/09/02/adobe-acquires-indian-market-intelligence-startup-rilo/",
      "side": "artikel/6093921c4fb3b12e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "30 nye søgsmål rammer OpenAI efter masseskyderi",
-     "dato": "2026-09-02T12:09:42",
-     "foerst_set": "2026-09-02T13:48:22",
-     "link": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
-     "side": "artikel/4799c2fe4d23fd74.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-firmaet AfterQuery slår rekord: 10 mia. kr. værd",
-     "dato": "2026-09-01T22:08:24",
-     "foerst_set": "2026-09-01T23:31:17",
-     "link": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
-     "side": "artikel/a6c4d5f8283c92ff.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lancerer AI-funktioner mod køresyge og synshandicap",
-     "dato": "2026-09-01T20:53:05",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/",
-     "side": "artikel/62b6270ed2a9e933.html",
      "hvor": "forside",
      "under": ""
     }
@@ -604,6 +604,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lader læger trække patientdata ind i ChatGPT"
     },
     {
+     "rubrik": "ATV Big Air Tour skærer tre dages arbejde ned til tre timer",
+     "dato": "2026-09-02T12:00:00",
+     "foerst_set": "2026-09-02T23:31:19",
+     "link": "https://openai.com/index/atv-big-air-tour",
+     "side": "artikel/21f8b896917eb3e7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Advokatfirma Gilbert + Tobin sætter ChatGPT i system",
      "dato": "2026-09-01T01:00:00",
      "foerst_set": "2026-09-02T05:01:06",
@@ -699,15 +708,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-26T21:00:41",
      "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
      "side": "artikel/1c454c14ad6cf1d3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-rapport: ChatGPT gør læring til en livslang vane",
-     "dato": "2026-08-26T10:00:00",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://openai.com/index/learning-never-stops",
-     "side": "artikel/6d0a59326d05a420.html",
      "hvor": "forside",
      "under": ""
     }
@@ -965,67 +965,12 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 0,
-   "seneste": [
-    {
-     "rubrik": "Spansk AI-model Quasar udfordrer de store",
-     "dato": "2026-09-02T10:02:41",
-     "foerst_set": "2026-09-02T21:13:01",
-     "link": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
-     "side": "artikel/3bfecfdd536840eb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Perplexity henter svar fra ukendte AI-sider",
-     "dato": "2026-09-02T13:59:59",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
-     "side": "artikel/ff151594d7a955d9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ny Safari-udvidelse skjuler YouTubes AI-videoer",
-     "dato": "2026-09-01T22:06:57",
-     "foerst_set": "2026-09-02T13:48:22",
-     "link": "https://masteranza.github.io/weedout/",
-     "side": "artikel/92726ead6c3a3bb9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ed Zitrons dommedag: Har han ret om AI?",
-     "dato": "2026-09-01T18:35:15",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://danluu.com/zitron/",
-     "side": "artikel/b0db8e0cc259cc08.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dwarf Fortress-skaber: AI får spilbranchen til at kollapse",
-     "dato": "2026-09-01T15:53:42",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
-     "side": "artikel/e458865bc943b863.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EFF: Lad være med at ændre ophavsret for AI",
-     "dato": "2026-09-01T12:53:51",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
-     "side": "artikel/82ba728e340f5401.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
+   "seneste": [],
    "overlap": []
   }
  ],
