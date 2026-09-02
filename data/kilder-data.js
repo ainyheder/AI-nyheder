@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-02T08:58:14.732130+00:00",
- "artikler_i_alt": 116,
+ "opdateret": "2026-09-02T13:48:22.371493+00:00",
+ "artikler_i_alt": 117,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -50,6 +50,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "30 nye søgsmål rammer OpenAI efter masseskyderi",
+     "dato": "2026-09-02T12:09:42",
+     "foerst_set": "2026-09-02T13:48:22",
+     "link": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
+     "side": "artikel/4799c2fe4d23fd74.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "AI-firmaet AfterQuery slår rekord: 10 mia. kr. værd",
@@ -149,21 +158,12 @@ window.KILDER_STATUS = {
      "side": "artikel/c24cafe651857fc1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instagram begrænser AI-profiler uden mærkning",
-     "dato": "2026-08-31T19:16:59",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-     "side": "artikel/72b2e2fa10252d2f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "Ars Technica AI",
@@ -186,8 +186,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 5,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Anthropic lancerer Fable 5.1 - 45 procent billigere",
+     "dato": "",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic sænker prisen og lemper brugervilkår med Fable"
+    },
     {
      "rubrik": "Apple beskylder OpenAI for at ødelægge beviser",
      "dato": "",
@@ -196,15 +205,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple afslører beviser mod tidligere medarbejder hos OpenAI"
-    },
-    {
-     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
-     "dato": "",
-     "foerst_set": "2026-08-31T22:59:30.123044+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
     },
     {
      "rubrik": "Instagram straffer falske AI-profiler",
@@ -252,11 +252,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic lancerer Fable 5.1 - 45 procent billigere",
-     "dato": "2026-09-01T18:01:36",
-     "foerst_set": "2026-09-01T23:31:17",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-     "side": "artikel/92c14364577987a7.html",
+     "rubrik": "Dwarkesh Patels blogudspil udløser AI-sprogdebat",
+     "dato": "2026-09-01T15:02:54",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+     "side": "artikel/35aa4d6d86be6a65.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
+     "dato": "2026-09-01T16:45:49",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+     "side": "artikel/efa072877e6bd118.html",
      "hvor": "forside",
      "under": ""
     },
@@ -288,15 +297,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
-     "dato": "2026-09-01T16:45:49",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
-     "side": "artikel/efa072877e6bd118.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Debian siger ja til AI-kode i Linux",
      "dato": "2026-08-31T11:34:58",
      "foerst_set": "2026-08-31T18:06:02",
@@ -318,15 +318,15 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
-    ],
-    [
-     "OpenAI Blog",
-     2
+     5
     ],
     [
      "Ars Technica AI",
      2
+    ],
+    [
+     "OpenAI Blog",
+     1
     ]
    ]
   },
@@ -596,18 +596,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 2,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI's Astra er første model med kritisk risiko",
-     "dato": "",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/path-to-astra",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
-    },
     {
      "rubrik": "OpenAI lader ChatGPT læse patientjournaler",
      "dato": "",
@@ -623,6 +614,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://openai.com/index/gilbert-tobin",
      "side": "artikel/8e955ff5c0050eaa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's Astra AI-model klar med stærkere sikkerhed",
+     "dato": "2026-09-01T13:00:00",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://openai.com/index/path-to-astra",
+     "side": "artikel/c931d0b3b7dbf27f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -715,24 +715,15 @@ window.KILDER_STATUS = {
      "side": "artikel/1c454c14ad6cf1d3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI-rapport: ChatGPT gør læring til en livslang vane",
-     "dato": "2026-08-26T10:00:00",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://openai.com/index/learning-never-stops",
-     "side": "artikel/6d0a59326d05a420.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     1
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      1
     ]
    ]
@@ -862,7 +853,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ny AI-metode løser fabrikkernes lager-gåde",
+     "rubrik": "Ny model fra Lea Bayati løser lager-gåde",
      "dato": "2026-09-02T00:00:00",
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://arxiv.org/abs/2609.00004",
@@ -871,7 +862,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI skal afsløre svindel mod ældre",
+     "rubrik": "Parviz Ghafariasl: AI afslører svindel mod ældre",
      "dato": "2026-09-02T00:00:00",
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://arxiv.org/abs/2609.00005",
@@ -898,7 +889,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere lærer AI at læse diagrammer",
+     "rubrik": "SCAFFOLD lærer AI at læse diagrammer",
      "dato": "2026-09-02T00:00:00",
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://arxiv.org/abs/2609.00018",
@@ -977,6 +968,15 @@ window.KILDER_STATUS = {
      "under": "Apple lancerer nye Macs med AI i fokus"
     },
     {
+     "rubrik": "Ny Safari-udvidelse skjuler YouTubes AI-videoer",
+     "dato": "2026-09-01T22:06:57",
+     "foerst_set": "2026-09-02T13:48:22",
+     "link": "https://masteranza.github.io/weedout/",
+     "side": "artikel/92726ead6c3a3bb9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "DeepSeek fik erfarne udvikler til at opgive AI-koden",
      "dato": "2026-09-01T05:32:56",
      "foerst_set": "2026-09-02T08:58:14",
@@ -1004,11 +1004,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "EFF advarer domstole mod at ændre ophavsret for AI",
+     "rubrik": "EFF: Lad være med at ændre ophavsret for AI",
      "dato": "2026-09-01T12:53:51",
      "foerst_set": "2026-09-01T21:15:41",
      "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
-     "side": "",
+     "side": "artikel/82ba728e340f5401.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1018,15 +1018,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-31T22:59:30",
      "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
      "side": "artikel/c53175c7d69c7ff8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Tag en dag fri fra AI: Ny bevægelse vil have dig til at droppe ChatGPT",
-     "dato": "2026-08-30T12:31:05",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://noaifridays.com/",
-     "side": "artikel/842efcb27339e000.html",
      "hvor": "forside",
      "under": ""
     }

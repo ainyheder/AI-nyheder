@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-02T09:00:57.548564+00:00",
+ "opdateret": "2026-09-02T13:50:14.503704+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -137,7 +137,7 @@ window.LAESERTAL = {
      1,
      2,
      4,
-     7,
+     8,
      0
     ]
    },
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      7,
      4,
-     0
+     1
     ]
    },
    {
@@ -242,21 +242,21 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     3,
+     4,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 37,
- "sidevisninger_i_alt": 82,
+ "besoeg_i_alt": 38,
+ "sidevisninger_i_alt": 83,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 35,
-   "visninger": 55
+   "besoeg": 36,
+   "visninger": 56
   },
   {
    "sti": "/uge.html",
@@ -367,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 37
+   "besoeg": 1000
   }
  ],
  "ai_chats": [],
@@ -375,8 +375,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 35,
-    "visninger": 35
+    "besoeg": 36,
+    "visninger": 36
    },
    {
     "fra": "herfra selv",
@@ -560,8 +560,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-05",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-06",
@@ -570,18 +570,18 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-07",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-08",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-08-09",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-10",
@@ -590,8 +590,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-11",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 30,
+   "visninger": 40
   },
   {
    "dato": "2026-08-12",
@@ -600,18 +600,18 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-13",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-14",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-08-15",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-16",
@@ -626,42 +626,42 @@ window.LAESERTAL = {
   {
    "dato": "2026-08-18",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-08-19",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-20",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 50
   },
   {
    "dato": "2026-08-21",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-08-22",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 20,
+   "visninger": 20
   },
   {
    "dato": "2026-08-23",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 20
   },
   {
    "dato": "2026-08-24",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   },
   {
    "dato": "2026-08-25",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   },
   {
    "dato": "2026-08-26",
@@ -670,13 +670,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-27",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-08-28",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 20
   },
   {
    "dato": "2026-08-29",
@@ -690,8 +690,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-31",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 20
   },
   {
    "dato": "2026-09-01",
@@ -700,8 +700,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-02",
-   "besoeg": 0,
-   "visninger": 0
+   "besoeg": 10,
+   "visninger": 10
   }
  ],
  "artikler": [
@@ -919,7 +919,7 @@ window.LAESERTAL = {
    "sti": "/artikel/d5dafdd78fb614c5.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Musk satser på gasturbiner trods forureningskritik",
+   "rubrik": "Musk støber selv turbineblade hos SpaceX",
    "kategori": "Samfund & etik",
    "dato": "2026-08-30",
    "henvisere": [
