@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-01T23:31:17.670668+00:00",
+ "opdateret": "2026-09-02T05:01:06.935895+00:00",
  "artikler_i_alt": 109,
  "kilder": [
   {
@@ -163,7 +163,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     5
+     4
     ],
     [
      "Ars Technica AI",
@@ -186,17 +186,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 6,
+   "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "Anthropic sænker prisen på Claude Fable 5.1",
-     "dato": "",
-     "foerst_set": "2026-09-01T23:31:17",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sænker prisen og lemper brugervilkår med Fable"
-    },
     {
      "rubrik": "Apple beskylder OpenAI for at ødelægge beviser",
      "dato": "",
@@ -205,6 +196,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple afslører beviser mod tidligere medarbejder hos OpenAI"
+    },
+    {
+     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
+     "dato": "",
+     "foerst_set": "2026-08-31T22:59:30.123044+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
     },
     {
      "rubrik": "Instagram straffer falske AI-profiler",
@@ -252,11 +252,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
-     "dato": "2026-09-01T16:45:49",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
-     "side": "artikel/efa072877e6bd118.html",
+     "rubrik": "Anthropic lancerer Fable 5.1 - 45 procent billigere",
+     "dato": "2026-09-01T18:01:36",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+     "side": "artikel/92c14364577987a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -288,11 +288,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face",
-     "dato": "2026-09-01T15:02:54",
+     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
+     "dato": "2026-09-01T16:45:49",
      "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
-     "side": "artikel/35aa4d6d86be6a65.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+     "side": "artikel/efa072877e6bd118.html",
      "hvor": "forside",
      "under": ""
     },
@@ -318,7 +318,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     4
     ],
     [
      "OpenAI Blog",
@@ -327,10 +327,6 @@ window.KILDER_STATUS = {
     [
      "Ars Technica AI",
      2
-    ],
-    [
-     "MIT Tech Review AI",
-     1
     ]
    ]
   },
@@ -490,17 +486,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 8,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI's sikkerhedsrapport skjuler alvorlige kulturproblemer",
-     "dato": "",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-agenter lavede hemmelig beskedtavle og hackede Hugging Face"
-    },
     {
      "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
      "dato": "",
@@ -585,10 +572,6 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     1
-    ],
-    [
      "Ars Technica AI",
      1
     ]
@@ -624,6 +607,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lader læger trække patientdata ind i ChatGPT"
+    },
+    {
+     "rubrik": "Advokatfirma Gilbert + Tobin sætter ChatGPT i system",
+     "dato": "2026-09-01T01:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://openai.com/index/gilbert-tobin",
+     "side": "artikel/8e955ff5c0050eaa.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI: AI-agenter giver virksomheder forspring",
@@ -712,15 +704,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-26T21:00:41",
      "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
      "side": "artikel/1c454c14ad6cf1d3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI sender ChatGPT til 55 skoledistrikter",
-     "dato": "2026-08-26T10:00:00",
-     "foerst_set": "2026-08-26T18:18:44",
-     "link": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-     "side": "artikel/7e008cb73ab32457.html",
      "hvor": "forside",
      "under": ""
     },
@@ -852,110 +835,110 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "David Noever gemmer 41 års Jeopardy! i én gratis AI",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27459",
-     "side": "artikel/7a2290160795fb91.html",
+     "rubrik": "HyperWorld: AI forstår spilverdenen bedre med ny metode",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00002",
+     "side": "artikel/855a8993a88d5977.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Pratik Sachdeva og Nathan Boudol finder fejl i AI-evaluering",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27463",
-     "side": "artikel/340d6d2a8b4b541e.html",
+     "rubrik": "Nyt I-CARE-system skal få AI-generatorer til at glemme",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00003",
+     "side": "artikel/efb8f6d897d5d7bc.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "AI-forklaringer skal spørges frem, ikke bare gives",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27464",
-     "side": "artikel/a93007c9b53bd814.html",
+     "rubrik": "Ny AI-metode løser fabrikkernes lager-gåde",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00004",
+     "side": "artikel/8c2c3be5e23a7f28.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "AI afslører manipulation i politiske debatter",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27471",
-     "side": "artikel/5d348df81712d4bd.html",
+     "rubrik": "AI skal afsløre svindel mod ældre",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00005",
+     "side": "artikel/78cd4078cd9cc42a.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "arXiv-studie: AI finder årsager bag data",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27472",
-     "side": "artikel/13c7a0059a9689eb.html",
+     "rubrik": "Forskere tester AI's grænser med MD5-udfordring",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00012",
+     "side": "artikel/735cc27867af4fcb.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Kinesiske forskere giver AI nøglen til fysikkens gåder",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27475",
-     "side": "artikel/0462202f718a3a5c.html",
+     "rubrik": "OpenAgentFlow bygger sikkerhedsnet til AI-flåder",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00015",
+     "side": "artikel/055ca9e7aa58eee3.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forskerholdet bag Flying Block Puzzle løser det hurtigere",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27476",
-     "side": "artikel/ea288b94886f08d4.html",
+     "rubrik": "Forskere lærer AI at læse diagrammer",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00018",
+     "side": "artikel/90685f5c7f4fe2a4.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Yiqi Zhu tester AI-assistenter i hverdagens mareridt",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27477",
-     "side": "artikel/6f625b2137bf523f.html",
+     "rubrik": "Venus Team's nye AI kan styre din computer",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00028",
+     "side": "artikel/d8b70253def96a03.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Sri Lankas forskere afslører te-skadedyr med AI",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27480",
-     "side": "artikel/38abac219d37161e.html",
+     "rubrik": "EULER får AI til at opdage ny matematik",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00032",
+     "side": "artikel/2f9ffa28b8ef4ed5.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ondrej Hutník og Natália Puškárová gør databaser præcise",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27482",
-     "side": "artikel/dd78cec2c189e7ed.html",
+     "rubrik": "Cong Cao fra MIT: Lav fejlrate kan skjule fejlagtige årsager",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00071",
+     "side": "artikel/6f73a8124e7b55d0.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "CareGraph: AI, der holder styr på din sundhedshistorik",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27484",
-     "side": "artikel/29e93f496eadb126.html",
+     "rubrik": "Forskere gør AI skarp til malaria-genkendelse",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00073",
+     "side": "artikel/e675d60145a747f4.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Thomas Nolasque: AI-tænkning koster tokens",
-     "dato": "2026-09-01T00:00:00",
-     "foerst_set": "2026-08-31T06:03:47",
-     "link": "https://arxiv.org/abs/2608.27506",
-     "side": "artikel/46f57baba36dd6dd.html",
+     "rubrik": "Paulius Mui vil efterforske AI-fejl som flyulykker",
+     "dato": "2026-09-02T00:00:00",
+     "foerst_set": "2026-09-02T05:01:06",
+     "link": "https://arxiv.org/abs/2609.00076",
+     "side": "artikel/18bdb0203078c497.html",
      "hvor": "forside",
      "under": ""
     }
