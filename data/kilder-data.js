@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-02T13:48:22.371493+00:00",
- "artikler_i_alt": 117,
+ "opdateret": "2026-09-02T17:59:53.964081+00:00",
+ "artikler_i_alt": 114,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 4,
+   "i_listen": 19,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI's nye Astra-model bryder ind i systemer",
@@ -23,15 +23,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
-    },
-    {
-     "rubrik": "Google Pics udfordrer Canva med AI-design",
-     "dato": "",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google lancerer AI-designværktøj til arbejdspladsen"
     },
     {
      "rubrik": "Sony og Warner sagsøger Anthropic for tyveri",
@@ -50,6 +41,78 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "Pangram får 9 mio. dollars til at spotte AI",
+     "dato": "2026-09-02T17:18:13",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/video/pangrams-max-spero-on-why-ai-detection-is-harder-than-real-or-fake/",
+     "side": "artikel/b567a13a823425ae.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Max Spero: Vi er farligt tæt på internettets død",
+     "dato": "2026-09-02T17:09:57",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/podcast/were-dangerously-close-to-dead-internet-theory-says-pangrams-ceo/",
+     "side": "artikel/eb7ca637d5cdd4e6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "USA støtter OpenAI i sag mod New York Times",
+     "dato": "2026-09-02T17:09:06",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+     "side": "artikel/241155a602d30de0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Wonderful tredobler værdi til 5 milliarder dollars",
+     "dato": "2026-09-02T16:04:10",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/",
+     "side": "artikel/6a8c3da4a5c8b6fd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Indiens rigeste mand vil forvandle gamle pc'er til AI-maskiner",
+     "dato": "2026-09-02T16:01:48",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/",
+     "side": "artikel/bf628eb62ed990bd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "HiddenLayer rejser 100 millioner dollars til AI-sikkerhed",
+     "dato": "2026-09-02T15:01:23",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
+     "side": "artikel/b655f59646656726.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon lader nu AI afsløre svindelbeskeder",
+     "dato": "2026-09-02T14:56:34",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/",
+     "side": "artikel/45920ada7bdc4dc1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Adobe køber indisk AI-startup Rilo",
+     "dato": "2026-09-02T14:03:57",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://techcrunch.com/2026/09/02/adobe-acquires-indian-market-intelligence-startup-rilo/",
+     "side": "artikel/6093921c4fb3b12e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "30 nye søgsmål rammer OpenAI efter masseskyderi",
@@ -86,84 +149,12 @@ window.KILDER_STATUS = {
      "side": "artikel/0b975c1752d07680.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI lader læger trække patientdata ind i ChatGPT",
-     "dato": "2026-09-01T17:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/",
-     "side": "artikel/18f7db1b68368a98.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Empirik får 21 millioner dollars til at forudse it-nedbrud",
-     "dato": "2026-09-01T16:31:04",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/",
-     "side": "artikel/f9f3593ed20e8f90.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon Alexa advarer dig nu om nye varer",
-     "dato": "2026-09-01T15:51:55",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/amazon-alexa-can-now-alert-you-when-something-new-might-tempt-you-to-shop/",
-     "side": "artikel/4b8238ed7901a7a2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AIR får 50 millioner dollar til at tjekke AI-assistenter",
-     "dato": "2026-09-01T15:45:51",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
-     "side": "artikel/fd6ea7e03b18ecf0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Fambot: AI-hjælperen fra David Reich og Greg Karlin styrer familiens kalender",
-     "dato": "2026-09-01T15:10:58",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://techcrunch.com/2026/09/01/fambot-introduces-an-ai-chief-of-staff-for-families/",
-     "side": "artikel/1010c9005f84d6da.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple afslører beviser mod tidligere medarbejder hos OpenAI",
-     "dato": "2026-09-01T00:13:00",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
-     "side": "artikel/00adf4a54ce8a9f4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pentagon får egne ChatGPT- og Grok-udgaver til 3 millioner ansatte",
-     "dato": "2026-08-31T20:13:45",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
-     "side": "artikel/77b770af978c3933.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Blue Voice får 6 mio. dollars til politi-AI",
-     "dato": "2026-08-31T18:35:11",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/",
-     "side": "artikel/c24cafe651857fc1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "Ars Technica AI",
@@ -185,9 +176,45 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 6,
+   "i_listen": 5,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Forskere advarer om sikkerhedsrisiko ved OpenAIs Astra",
+     "dato": "",
+     "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+    },
+    {
+     "rubrik": "Trump-støtte til OpenAI i sag mod The New York Times",
+     "dato": "",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
+     "side": "",
+     "hvor": "under",
+     "under": "USA støtter OpenAI i sag mod New York Times"
+    },
+    {
+     "rubrik": "Amazons Alexa Spot kan afsløre falske mails",
+     "dato": "",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon lader nu AI afsløre svindelbeskeder"
+    },
+    {
+     "rubrik": "OpenAI beskyldt for at hjælpe skolegerningsmand med vold",
+     "dato": "",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/988261/openai-tumbler-ridge-shooting-lawsuit-aiding-abetting",
+     "side": "",
+     "hvor": "under",
+     "under": "30 nye søgsmål rammer OpenAI efter masseskyderi"
+    },
     {
      "rubrik": "Anthropic lancerer Fable 5.1 - 45 procent billigere",
      "dato": "",
@@ -205,15 +232,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple afslører beviser mod tidligere medarbejder hos OpenAI"
-    },
-    {
-     "rubrik": "Instagram straffer falske AI-profiler",
-     "dato": "",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
-     "side": "",
-     "hvor": "under",
-     "under": "Instagram begrænser AI-profiler uden mærkning"
     },
     {
      "rubrik": "EU skærper reglerne for ChatGPT",
@@ -243,6 +261,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
     },
     {
+     "rubrik": "MrBeast får AI med i vildmarken: Google-alliance afsløret",
+     "dato": "2026-09-02T11:47:03",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/tech/988355/mrbeast-google-partnership-gemini-fitbit",
+     "side": "artikel/86623607f60abf7c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "New Yorks borgmester forbyder AI i skolerne",
+     "dato": "2026-09-02T10:30:00",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/policy/988228/nyc-ai-restrictions-in-schools-chatbot-ban",
+     "side": "artikel/24ecf9915c34c403.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google lokker Hollywood med milliarder for at få adgang til filmklassikere",
      "dato": "2026-09-01T18:50:29",
      "foerst_set": "2026-09-01T23:31:17",
@@ -263,54 +299,9 @@ window.KILDER_STATUS = {
     {
      "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
      "dato": "2026-09-01T16:45:49",
-     "foerst_set": "2026-09-01T21:15:41",
+     "foerst_set": "2026-08-31T22:59:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
      "side": "artikel/efa072877e6bd118.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "John Deere lancerer AI-assistent til landmænd",
-     "dato": "2026-09-01T12:00:52",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987486/john-deere-jd-ai-chatbot",
-     "side": "artikel/91bace9854c6d540.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lancerer AI-designværktøj til arbejdspladsen",
-     "dato": "2026-09-01T12:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://www.theverge.com/tech/987423/google-pics-ai-image-editor-generator",
-     "side": "artikel/9995525a459907cb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia udgiver DLSS 5 - kun til ét spil",
-     "dato": "2026-09-01T09:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://www.theverge.com/tech/986378/nvidia-dlss-5-launch-nba-2k27",
-     "side": "artikel/39b8780becce037f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Debian siger ja til AI-kode i Linux",
-     "dato": "2026-08-31T11:34:58",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
-     "side": "artikel/6eb0d063d6c9c5e2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Kathy Hochul vil tøjle AI med nye love",
-     "dato": "2026-08-31T10:00:00",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://www.theverge.com/podcast/986661/ny-gov-kathy-hochul-ai-data-centers-ban-3d-printed-guns-flock-cameras",
-     "side": "artikel/e4a9103f7f0e901d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -318,14 +309,18 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     6
+    ],
+    [
+     "OpenAI Blog",
+     2
     ],
     [
      "Ars Technica AI",
      2
     ],
     [
-     "OpenAI Blog",
+     "MIT Tech Review AI",
      1
     ]
    ]
@@ -485,9 +480,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 8,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI's sikkerhedskultur under anklage efter hack",
+     "dato": "",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+    },
     {
      "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
      "dato": "",
@@ -498,11 +502,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
     },
     {
-     "rubrik": "OpenAI's sikkerhedskultur under anklage efter hack",
-     "dato": "2026-08-31T18:00:00",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
-     "side": "artikel/e985a8c11fb3f337.html",
+     "rubrik": "Jabil rydder op i tech og bruger SAP",
+     "dato": "2026-09-02T14:00:00",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
+     "side": "artikel/c0e30f013c2a0c77.html",
      "hvor": "forside",
      "under": ""
     },
@@ -568,18 +572,13 @@ window.KILDER_STATUS = {
      "side": "artikel/5e86b723ff64bcfe.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Virgin Atlantic bruger AI til at sætte flypriser",
-     "dato": "2026-08-20T09:47:22",
-     "foerst_set": "2026-08-20T11:48:00",
-     "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
-     "side": "artikel/546c18a8a2cdd3a0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
+    [
+     "The Verge AI",
+     1
+    ],
     [
      "Ars Technica AI",
      1
@@ -596,9 +595,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 1,
+   "i_listen": 23,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI's Astra AI-model klar med stærkere sikkerhed",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://openai.com/index/path-to-astra",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+    },
     {
      "rubrik": "OpenAI lader ChatGPT læse patientjournaler",
      "dato": "",
@@ -614,15 +622,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://openai.com/index/gilbert-tobin",
      "side": "artikel/8e955ff5c0050eaa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's Astra AI-model klar med stærkere sikkerhed",
-     "dato": "2026-09-01T13:00:00",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/path-to-astra",
-     "side": "artikel/c931d0b3b7dbf27f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -715,15 +714,24 @@ window.KILDER_STATUS = {
      "side": "artikel/1c454c14ad6cf1d3.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI-rapport: ChatGPT gør læring til en livslang vane",
+     "dato": "2026-08-26T10:00:00",
+     "foerst_set": "2026-08-26T18:18:44",
+     "link": "https://openai.com/index/learning-never-stops",
+     "side": "artikel/6d0a59326d05a420.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ]
    ]
@@ -738,9 +746,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 7,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
+     "dato": "",
+     "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Gemini springer i videoer og sparer tid"
+    },
     {
      "rubrik": "Gemini 3.5 Transcribe skriver dine ord ned med AI",
      "dato": "",
@@ -749,6 +766,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lancerer ny AI, der lytter og retter din tale"
+    },
+    {
+     "rubrik": "Google DeepMind giver udvalgte forsvarere AI-våben mod cyberangreb",
+     "dato": "2026-09-02T16:24:24",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+     "side": "artikel/e2a8d26765125d66.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google Gemini springer i videoer og sparer tid",
@@ -968,6 +994,15 @@ window.KILDER_STATUS = {
      "under": "Apple lancerer nye Macs med AI i fokus"
     },
     {
+     "rubrik": "Perplexity henter svar fra ukendte AI-sider",
+     "dato": "2026-09-02T13:59:59",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+     "side": "artikel/ff151594d7a955d9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ny Safari-udvidelse skjuler YouTubes AI-videoer",
      "dato": "2026-09-01T22:06:57",
      "foerst_set": "2026-09-02T13:48:22",
@@ -1009,15 +1044,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-01T21:15:41",
      "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
      "side": "artikel/82ba728e340f5401.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple overrasket over AI-efterspørgsel på Mac mini og Studio",
-     "dato": "2026-08-31T12:41:22",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-     "side": "artikel/c53175c7d69c7ff8.html",
      "hvor": "forside",
      "under": ""
     }

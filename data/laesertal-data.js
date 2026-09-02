@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-02T13:50:14.503704+00:00",
+ "opdateret": "2026-09-02T18:04:42.487169+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      2,
      3,
      4,
-     0
+     3
     ]
    },
    {
@@ -137,8 +137,8 @@ window.LAESERTAL = {
      1,
      2,
      4,
-     8,
-     0
+     9,
+     4
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      0,
      5,
      5,
-     0
+     3
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      7,
      4,
-     1
+     3
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      1,
      0,
      4,
-     0
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 38,
- "sidevisninger_i_alt": 83,
+ "besoeg_i_alt": 39,
+ "sidevisninger_i_alt": 84,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 36,
-   "visninger": 56
+   "besoeg": 37,
+   "visninger": 57
   },
   {
    "sti": "/uge.html",
@@ -319,14 +319,14 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/442be4968139a7af.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
    "sti": "/artikel/39b8780becce037f.html",
    "besoeg": 0,
    "visninger": 1
+  },
+  {
+   "sti": "/artikel/442be4968139a7af.html",
+   "besoeg": 0,
+   "visninger": 2
   },
   {
    "sti": "/artikel/c3e8fc99833d44f6.html",
@@ -367,7 +367,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 1000
+   "besoeg": 39
   }
  ],
  "ai_chats": [],
@@ -375,8 +375,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 36,
-    "visninger": 36
+    "besoeg": 37,
+    "visninger": 37
    },
    {
     "fra": "herfra selv",
@@ -473,18 +473,18 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/442be4968139a7af.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
   "/artikel/39b8780becce037f.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 1
+   }
+  ],
+  "/artikel/442be4968139a7af.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
    }
   ],
   "/artikel/c3e8fc99833d44f6.html": [
