@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-02T05:01:06.935895+00:00",
- "artikler_i_alt": 109,
+ "opdateret": "2026-09-02T08:58:14.732130+00:00",
+ "artikler_i_alt": 116,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -485,7 +485,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -496,6 +496,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
+    },
+    {
+     "rubrik": "OpenAI's sikkerhedskultur under anklage efter hack",
+     "dato": "2026-08-31T18:00:00",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
+     "side": "artikel/e985a8c11fb3f337.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Børn vokser op med AI: Australien forbyder sociale medier",
@@ -925,7 +934,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere gør AI skarp til malaria-genkendelse",
+     "rubrik": "MiNER-værktøj finder malaria i patientjournaler",
      "dato": "2026-09-02T00:00:00",
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://arxiv.org/abs/2609.00073",
@@ -952,10 +961,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -966,6 +975,60 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Apple lancerer nye Macs med AI i fokus"
+    },
+    {
+     "rubrik": "DeepSeek fik erfarne udvikler til at opgive AI-koden",
+     "dato": "2026-09-01T05:32:56",
+     "foerst_set": "2026-09-02T08:58:14",
+     "link": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
+     "side": "artikel/5f246684a73ca229.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ed Zitrons dommedag: Har han ret om AI?",
+     "dato": "2026-09-01T18:35:15",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://danluu.com/zitron/",
+     "side": "artikel/b0db8e0cc259cc08.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Dwarf Fortress-skaber: AI får spilbranchen til at kollapse",
+     "dato": "2026-09-01T15:53:42",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
+     "side": "artikel/e458865bc943b863.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "EFF advarer domstole mod at ændre ophavsret for AI",
+     "dato": "2026-09-01T12:53:51",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple overrasket over AI-efterspørgsel på Mac mini og Studio",
+     "dato": "2026-08-31T12:41:22",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+     "side": "artikel/c53175c7d69c7ff8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Tag en dag fri fra AI: Ny bevægelse vil have dig til at droppe ChatGPT",
+     "dato": "2026-08-30T12:31:05",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://noaifridays.com/",
+     "side": "artikel/842efcb27339e000.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [

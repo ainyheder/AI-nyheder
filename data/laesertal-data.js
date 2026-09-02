@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-02T05:10:48.948487+00:00",
+ "opdateret": "2026-09-02T09:00:57.548564+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      0,
      0,
      25,
-     24
+     25
     ]
    },
    {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      3,
      2,
      3,
-     3,
+     4,
      0
     ]
    },
@@ -319,14 +319,14 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/39b8780becce037f.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/442be4968139a7af.html",
    "besoeg": 0,
    "visninger": 2
+  },
+  {
+   "sti": "/artikel/39b8780becce037f.html",
+   "besoeg": 0,
+   "visninger": 1
   },
   {
    "sti": "/artikel/c3e8fc99833d44f6.html",
@@ -473,18 +473,18 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/39b8780becce037f.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/442be4968139a7af.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
     "visninger": 2
+   }
+  ],
+  "/artikel/39b8780becce037f.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ],
   "/artikel/c3e8fc99833d44f6.html": [
@@ -560,8 +560,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-05",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-06",
@@ -570,18 +570,18 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-07",
-   "besoeg": 20,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-08",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-08-09",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-10",
@@ -590,8 +590,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-11",
-   "besoeg": 30,
-   "visninger": 40
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-12",
@@ -600,18 +600,18 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-13",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-14",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-15",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-16",
@@ -626,42 +626,42 @@ window.LAESERTAL = {
   {
    "dato": "2026-08-18",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-08-19",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-20",
-   "besoeg": 20,
-   "visninger": 50
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-21",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-08-22",
-   "besoeg": 20,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-23",
    "besoeg": 0,
-   "visninger": 20
+   "visninger": 0
   },
   {
    "dato": "2026-08-24",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-25",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-08-26",
@@ -670,13 +670,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-27",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-08-28",
    "besoeg": 0,
-   "visninger": 20
+   "visninger": 0
   },
   {
    "dato": "2026-08-29",
@@ -690,8 +690,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-08-31",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-09-01",
