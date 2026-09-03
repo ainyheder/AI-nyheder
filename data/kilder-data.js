@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-03T09:07:40.831452+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-09-03T13:49:00.674108+00:00",
+ "artikler_i_alt": 108,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,17 +12,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
+   "i_listen": 18,
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "OpenAI's nye Astra-model bryder ind i systemer",
+     "rubrik": "Nvidia bekræfter køb af Hugging Face for 12,9 milliarder",
      "dato": "",
-     "foerst_set": "2026-09-01T21:15:41",
+     "foerst_set": "2026-09-03T13:49:00",
+     "link": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia køber Hugging Face for 13 milliarder"
+    },
+    {
+     "rubrik": "OpenAI's Astra kan bryde ind i computersystemer",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41.848394+00:00",
      "link": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+     "under": "OpenAI's nye teknik skræmmer sikkerhedseksperter"
     },
     {
      "rubrik": "Sony og Warner sagsøger Anthropic for tyveri",
@@ -66,15 +75,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T23:31:19",
      "link": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
      "side": "artikel/7ae55826cb10819a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's nye teknik skræmmer sikkerhedseksperter",
-     "dato": "2026-09-02T20:19:14",
-     "foerst_set": "2026-09-02T21:13:01",
-     "link": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-     "side": "artikel/373be5400612a4c5.html",
      "hvor": "forside",
      "under": ""
     },
@@ -149,6 +149,15 @@ window.KILDER_STATUS = {
      "side": "artikel/6093921c4fb3b12e.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "30 nye søgsmål rammer OpenAI efter masseskyderi",
+     "dato": "2026-09-02T12:09:42",
+     "foerst_set": "2026-09-02T13:48:22",
+     "link": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
+     "side": "artikel/4799c2fe4d23fd74.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -176,7 +185,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -189,13 +198,13 @@ window.KILDER_STATUS = {
      "under": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger"
     },
     {
-     "rubrik": "Forskere advarer om sikkerhedsrisiko ved OpenAIs Astra",
+     "rubrik": "Forskere advarer om farer ved OpenAIs nye Astra-model",
      "dato": "",
-     "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+     "foerst_set": "2026-09-02T17:59:53",
      "link": "https://www.theverge.com/ai-artificial-intelligence/988334/openai-astra-ai-monitoring-safety",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
+     "under": "OpenAI's nye teknik skræmmer sikkerhedseksperter"
     },
     {
      "rubrik": "Trump-støtte til OpenAI i sag mod The New York Times",
@@ -225,15 +234,6 @@ window.KILDER_STATUS = {
      "under": "30 nye søgsmål rammer OpenAI efter masseskyderi"
     },
     {
-     "rubrik": "Anthropic sænker prisen på Claude Fable 5.1",
-     "dato": "",
-     "foerst_set": "2026-09-01T23:31:17",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic sænker prisen og lemper brugervilkår med Fable"
-    },
-    {
      "rubrik": "EU skærper reglerne for ChatGPT",
      "dato": "",
      "foerst_set": "2026-08-31T18:06:02",
@@ -259,6 +259,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's nye chip slår Nvidia i vigtig test"
+    },
+    {
+     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
+     "dato": "2026-09-03T08:12:06",
+     "foerst_set": "2026-09-03T13:49:00",
+     "link": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
+     "side": "artikel/b41aba728bc08dbe.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "MrBeast får AI med i vildmarken: Google-alliance afsløret",
@@ -288,11 +297,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI udsætter ny model efter sikkerhedsbrist",
-     "dato": "2026-09-01T16:45:49",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
-     "side": "artikel/efa072877e6bd118.html",
+     "rubrik": "Anthropic sænker prisen på Claude Fable 5.1",
+     "dato": "2026-09-01T18:01:36",
+     "foerst_set": "2026-09-01T23:31:17",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+     "side": "artikel/92c14364577987a7.html",
      "hvor": "forside",
      "under": ""
     }
@@ -304,18 +313,14 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     3
-    ],
-    [
-     "OpenAI Blog",
-     2
+     4
     ],
     [
      "Hacker News: AI",
      1
     ],
     [
-     "MIT Tech Review AI",
+     "OpenAI Blog",
      1
     ]
    ]
@@ -330,9 +335,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
-   "som_ekstra": 0,
+   "i_listen": 19,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Nvidia køber Hugging Face for 13 milliarder dollar",
+     "dato": "",
+     "foerst_set": "2026-09-03T13:49:00",
+     "link": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia køber Hugging Face for 13 milliarder"
+    },
     {
      "rubrik": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger",
      "dato": "2026-09-02T18:13:54",
@@ -445,7 +459,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     4
     ],
     [
      "TechCrunch AI",
@@ -471,18 +485,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 2,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI's sikkerhedskultur under anklage efter hack",
-     "dato": "",
-     "foerst_set": "2026-08-31T22:59:30",
-     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
-    },
     {
      "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
      "dato": "",
@@ -498,6 +503,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T17:59:53",
      "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
      "side": "artikel/c0e30f013c2a0c77.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's egen test afslørede alvorlig sikkerhedsbrist",
+     "dato": "2026-08-31T18:00:00",
+     "foerst_set": "2026-08-31T22:59:30",
+     "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
+     "side": "artikel/e985a8c11fb3f337.html",
      "hvor": "forside",
      "under": ""
     },
@@ -567,10 +581,6 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     1
-    ],
-    [
      "Ars Technica AI",
      1
     ]
@@ -586,18 +596,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 2,
+   "i_listen": 24,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI's Astra AI-model klar med stærkere sikkerhed",
-     "dato": "",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/path-to-astra",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI udsætter ny model efter sikkerhedsbrist"
-    },
     {
      "rubrik": "OpenAI lader ChatGPT læse patientjournaler",
      "dato": "",
@@ -622,6 +623,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://openai.com/index/gilbert-tobin",
      "side": "artikel/8e955ff5c0050eaa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's Astra når kritisk grænse og udløser nye sikkerhedsregler",
+     "dato": "2026-09-01T13:00:00",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://openai.com/index/path-to-astra",
+     "side": "artikel/c931d0b3b7dbf27f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -705,24 +715,15 @@ window.KILDER_STATUS = {
      "side": "artikel/dce66a3115a93c80.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI om hackerangreb: Sådan vil de styrke AI-sikkerhed",
-     "dato": "2026-08-26T00:00:00",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-     "side": "artikel/1c454c14ad6cf1d3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "TechCrunch AI",
+     1
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      1
     ]
    ]
@@ -915,7 +916,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI med hukommelse glemmer sikkerheden",
+     "rubrik": "Jundong Hu: AI med hukommelse kan lyve",
      "dato": "2026-09-03T00:00:00",
      "foerst_set": "2026-09-03T05:00:00",
      "link": "https://arxiv.org/abs/2609.01852",
@@ -924,7 +925,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ny AI-metode får maskiner til at lære af egne fejl",
+     "rubrik": "Yuhan Chens nye metode: AI lærer af fejl",
      "dato": "2026-09-03T00:00:00",
      "foerst_set": "2026-09-03T05:00:00",
      "link": "https://arxiv.org/abs/2609.01861",
@@ -969,10 +970,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 5,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 0,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -983,51 +984,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "New Yorks borgmester forbyder AI i skolerne"
-    },
-    {
-     "rubrik": "Spansk AI-model Quasar 438B overgår Europas øvrige",
-     "dato": "2026-09-02T10:02:41",
-     "foerst_set": "2026-09-02T21:13:01",
-     "link": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
-     "side": "artikel/3bfecfdd536840eb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Perplexity anbefaler ofte sider bygget til AI – ikke mennesker",
-     "dato": "2026-09-02T13:59:59",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
-     "side": "artikel/ff151594d7a955d9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Weedout skjuler YouTubes AI-mærkede videoer",
-     "dato": "2026-09-01T22:06:57",
-     "foerst_set": "2026-09-02T13:48:22",
-     "link": "https://masteranza.github.io/weedout/",
-     "side": "artikel/92726ead6c3a3bb9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ed Zitrons AI-spådomme: Er de ramt ved siden af?",
-     "dato": "2026-09-01T18:35:15",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://danluu.com/zitron/",
-     "side": "artikel/b0db8e0cc259cc08.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dwarf Fortress-skaber fyrer op mod AI-mode",
-     "dato": "2026-09-01T15:53:42",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
-     "side": "artikel/e458865bc943b863.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
