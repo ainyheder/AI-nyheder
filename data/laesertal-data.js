@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-03T21:18:40.077484+00:00",
+ "opdateret": "2026-09-03T23:31:07.865998+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      0,
      25,
      25,
-     25
+     26
     ]
    },
    {
@@ -136,7 +136,7 @@ window.LAESERTAL = {
      1,
      2,
      4,
-     10,
+     11,
      8,
      9
     ]
@@ -241,7 +241,7 @@ window.LAESERTAL = {
      1,
      1,
      0,
-     4,
+     3,
      2,
      2
     ]
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 36,
+ "besoeg_i_alt": 35,
  "sidevisninger_i_alt": 62,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 34,
-   "visninger": 47
+   "besoeg": 33,
+   "visninger": 46
   },
   {
    "sti": "/uge.html",
@@ -314,6 +314,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/artikel/939cb98685e5e469.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/3a0e75f056969468.html",
    "besoeg": 0,
    "visninger": 1
@@ -337,7 +342,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 35
   }
  ],
  "ai_chats": [],
@@ -345,8 +350,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 34,
-    "visninger": 34
+    "besoeg": 33,
+    "visninger": 33
    },
    {
     "fra": "herfra selv",
@@ -425,6 +430,13 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/d5dafdd78fb614c5.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/939cb98685e5e469.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -764,6 +776,21 @@ window.LAESERTAL = {
    ]
   },
   {
+   "sti": "/artikel/939cb98685e5e469.html",
+   "besoeg": 0,
+   "visninger": 1,
+   "rubrik": "Meta betaler dig for at aflevere dine data",
+   "kategori": "Lanceringer",
+   "dato": "2026-09-03",
+   "henvisere": [
+    {
+     "fra": "herfra selv",
+     "besoeg": 0,
+     "visninger": 1
+    }
+   ]
+  },
+  {
    "sti": "/artikel/3a0e75f056969468.html",
    "besoeg": 0,
    "visninger": 1,
@@ -835,7 +862,7 @@ window.LAESERTAL = {
   },
   {
    "navn": "Lanceringer",
-   "visninger": 3
+   "visninger": 4
   },
   {
    "navn": "Penge & marked",
