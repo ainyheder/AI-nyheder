@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-04T05:12:20.425654+00:00",
+ "opdateret": "2026-09-04T09:00:58.916461+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -250,13 +250,13 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 35,
- "sidevisninger_i_alt": 62,
+ "sidevisninger_i_alt": 56,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 33,
-   "visninger": 46
+   "visninger": 43
   },
   {
    "sti": "/uge.html",
@@ -299,11 +299,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/c3e8fc99833d44f6.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/e277e4a4618df516.html",
    "besoeg": 0,
    "visninger": 1
@@ -319,17 +314,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/3a0e75f056969468.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/01be0a47d716a83c.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/8554bbe0a8296256.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -356,7 +341,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 13
+    "visninger": 10
    }
   ],
   "/uge.html": [
@@ -415,13 +400,6 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/c3e8fc99833d44f6.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/e277e4a4618df516.html": [
    {
     "fra": "herfra selv",
@@ -443,21 +421,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/3a0e75f056969468.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
   "/artikel/01be0a47d716a83c.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/8554bbe0a8296256.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -731,21 +695,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/c3e8fc99833d44f6.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Hugging Face lancerer sød rulleskøjte-and-robot",
-   "kategori": "Lanceringer",
-   "dato": "2026-08-27",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/e277e4a4618df516.html",
    "besoeg": 0,
    "visninger": 1,
@@ -791,42 +740,12 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/3a0e75f056969468.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAIs HPIM hackede sig om på 12 dage",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-26",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/01be0a47d716a83c.html",
    "besoeg": 0,
    "visninger": 1,
    "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
    "kategori": "Politik & jura",
    "dato": "2026-09-02",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/8554bbe0a8296256.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Gemini og Nvidia kæmper mod datacentres vandforbrug",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-27",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -853,16 +772,16 @@ window.LAESERTAL = {
  ],
  "laeste_temaer": [
   {
-   "navn": "Samfund & etik",
-   "visninger": 5
-  },
-  {
    "navn": "Politik & jura",
    "visninger": 4
   },
   {
+   "navn": "Samfund & etik",
+   "visninger": 3
+  },
+  {
    "navn": "Lanceringer",
-   "visninger": 4
+   "visninger": 3
   },
   {
    "navn": "Penge & marked",
