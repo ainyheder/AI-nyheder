@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-03T23:29:06.000468+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-09-04T05:02:47.555372+00:00",
+ "artikler_i_alt": 113,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -59,6 +59,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "AI-madmenuer får maden til at ligne uhyggelige aliens",
+     "dato": "2026-09-04T04:21:03",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
+     "side": "artikel/3e1ba23902a529ca.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Crusoe henter 30 milliarder dollar til AI-datacentre",
+     "dato": "2026-09-04T00:48:42",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
+     "side": "artikel/5737d6df236a9321.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Mira Muratis firma kan blive vurderet til 300 milliarder",
@@ -149,30 +167,12 @@ window.KILDER_STATUS = {
      "side": "artikel/eb7ca637d5cdd4e6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "USA støtter OpenAI i sag mod New York Times",
-     "dato": "2026-09-02T17:09:06",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
-     "side": "artikel/241155a602d30de0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Wonderful tredobler værdi til 5 milliarder dollars",
-     "dato": "2026-09-02T16:04:10",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/",
-     "side": "artikel/6a8c3da4a5c8b6fd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     5
     ],
     [
      "Ars Technica AI",
@@ -194,8 +194,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
-   "som_ekstra": 9,
+   "i_listen": 5,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "ChatGPT, Grok og Claude ramt af samtidig nedbrud",
@@ -232,15 +232,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "USA støtter OpenAI i sag mod New York Times"
-    },
-    {
-     "rubrik": "Amazons Alexa Spot kan afsløre falske mails",
-     "dato": "",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
-     "side": "",
-     "hvor": "under",
-     "under": "Amazon lader nu AI afsløre svindelbeskeder"
     },
     {
      "rubrik": "Forskere advarer om farer ved OpenAIs nye Astra-model",
@@ -313,12 +304,21 @@ window.KILDER_STATUS = {
      "side": "artikel/b41aba728bc08dbe.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Amazon Alexa skal afsløre falske mails",
+     "dato": "2026-09-02T13:52:56",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
+     "side": "artikel/dda9391027329964.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     5
     ],
     [
      "Ars Technica AI",
@@ -867,110 +867,110 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "EvalDetectBench afslører AI’s snedige testadfærd",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01611",
-     "side": "artikel/d572611aa3019b54.html",
+     "rubrik": "Ya Wangs AI-bog gør engelskundervisning praktisk",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.02981",
+     "side": "artikel/ce45dff6944fa29d.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Shang Lu stiller nye etiske spørgsmål til AI",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01685",
-     "side": "artikel/8843dc819e4d4ded.html",
+     "rubrik": "MasterControl AI lover perfekt kontrol – hver gang",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03209",
+     "side": "artikel/0b564610b46fd1be.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Surya Saka: Hvornår kan AI stole på lovtekster?",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01741",
-     "side": "artikel/392c6af480266b4c.html",
+     "rubrik": "Nyt trick får AI til at bruge værktøjer hurtigere",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03236",
+     "side": "artikel/1f4bc90a91cbbf05.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "AI-forskere finder vejen til bedre deling",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01814",
-     "side": "artikel/b0bb92000cb30aa6.html",
+     "rubrik": "AI-assistenter glemmer og laver fejl – forskere har fundet en løsning",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03340",
+     "side": "artikel/591ed7b3a79888a2.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "NYT AI-værktøj fra MIT-forsker Wasu Top Piriyakulkij kan tænke i både sprog og kode",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01815",
-     "side": "artikel/c3fb522a06f8bc88.html",
+     "rubrik": "AI-lærer tilpasser sig hver elev i realtid",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03402",
+     "side": "artikel/525065a609342c98.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Joseph Axisa løser AI'ens hukommelsesproblem",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01834",
-     "side": "artikel/1cd882710d316bcf.html",
+     "rubrik": "GPT-4 fanger dig i historie-fælde",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03407",
+     "side": "artikel/fd5289cbd498b7de.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "SSAKG 2.0: Gratis AI-hukommelse til chatbots",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01849",
-     "side": "artikel/c0e43e8b4cc0426a.html",
+     "rubrik": "Dude afslører forskere, der snyder med koden",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03416",
+     "side": "artikel/7f17222f018b83c4.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Jundong Hu: AI med hukommelse kan lyve",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01852",
-     "side": "artikel/40fb83546b2140c3.html",
+     "rubrik": "DuplexSpeechBench-IFEval tester stemme-AI i telefonen",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03423",
+     "side": "artikel/136b9d188c88cc94.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Yuhan Chens nye metode: AI lærer af fejl",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01861",
-     "side": "artikel/f18639947e523e1c.html",
+     "rubrik": "UI-TARS lærer at sige stop",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03438",
+     "side": "artikel/776244ff72431c48.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "AI-chatbots kan nu bakke hinanden op med ægte viden",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01873",
-     "side": "artikel/c33aed49432ea356.html",
+     "rubrik": "Forskere: Skjul ikke AI-sporet – vis det i billedet",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03460",
+     "side": "artikel/b42f99c0f6bb7839.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ny AI-undersøgelse afslører skjulte fejl i sygehusenes prognoser",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01909",
-     "side": "artikel/25347c8fcaa67b34.html",
+     "rubrik": "Ján Pastorek lader AI opdage ny matematik",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03478",
+     "side": "artikel/573df8a52dff4b4c.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ny forskning: AI med gentagne lag tænker bedre",
-     "dato": "2026-09-03T00:00:00",
-     "foerst_set": "2026-09-03T05:00:00",
-     "link": "https://arxiv.org/abs/2609.01924",
-     "side": "artikel/5c125dc3f50b50df.html",
+     "rubrik": "Forskere lærer AI at bruge værktøjer rigtigt",
+     "dato": "2026-09-04T00:00:00",
+     "foerst_set": "2026-09-04T05:02:47",
+     "link": "https://arxiv.org/abs/2609.03493",
+     "side": "artikel/e84978d406582d8b.html",
      "hvor": "forside",
      "under": ""
     }
