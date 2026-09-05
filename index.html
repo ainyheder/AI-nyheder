@@ -57,7 +57,7 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css">
 <link rel="stylesheet" href="assets/nyheder.css">
-<script src="assets/nyheder.js" defer></script>
+<script src="assets/nyheder.js?v=3" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#hovedindhold">Spring til nyhederne</a>
@@ -74,7 +74,7 @@
 </header>
 <main class="wrap" id="hovedindhold" tabindex="-1">
   <div class="edition"><span id="datoIdag"></span><span id="opdateret" role="status">Henter seneste udgave …</span></div>
-  <div class="page-heading"><div><p class="eyebrow">Dit overblik</p><h1>Det vigtigste i AI<span class="brand-dot">.</span></h1></div><p>De store nyheder. De nye muligheder.<br>Forklaret, så du kan bruge det.</p></div>
+  <div class="page-heading"><div><p class="eyebrow">Dit overblik</p><h1>Det vigtigste i AI<span class="brand-dot">.</span></h1></div><p>De nye AI-modeller. Hvad de kan.<br>Og hvorfor det er værd at følge med.</p></div>
   <p class="notice" id="dataBesked" role="status" hidden></p>
   <section id="udvalgte" aria-label="Udvalgte historier" aria-busy="true"><div class="loading-state">Vi henter nyhederne …</div></section>
   <div class="news-layout">
@@ -85,14 +85,14 @@
         <label class="sort-field"><span class="sr-only">Sortér nyheder</span><select id="sortering"><option value="anbefalet">Vigtigst først</option><option value="nyeste">Nyeste først</option></select></label>
       </div>
       <div class="category-list" id="kategorier" aria-label="Filtrér efter emne"></div>
-      <div class="filter-status"><span id="filterBeskrivelse">Udvalgt efter nyhedsværdi og aktualitet</span><button id="nulstil" hidden>Nulstil filtre</button></div>
+      <div class="filter-status"><span id="filterBeskrivelse">Modellanceringer prioriteres først</span><button id="nulstil" hidden>Nulstil filtre</button></div>
       <div id="nyhedsliste" aria-busy="true"><div class="loading-state">Et øjeblik …</div></div>
       <button class="load-more" id="visFlere" hidden>Vis flere nyheder <span aria-hidden="true">↓</span></button>
     </section>
     <aside class="sidebar" aria-label="Mere fra AI-nyheder">
       <section class="learn-card"><p class="eyebrow">Fra nyhed til hverdag</p><h2>Bliv bedre<br>til at bruge AI.</h2><p>Tag det gratis AI-kørekort. Syv moduler med konkrete øvelser, i dit eget tempo.</p><a href="koerekort.html">Start her <span aria-hidden="true">↗</span></a><div class="course-progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="small-text">Gratis · På dansk · For alle</span></section>
       <section class="sidebar-section" id="videoSektion" hidden><div class="section-heading"><h2>Se og forstå</h2><a href="youtube.html" aria-label="Alle AI-videoer">Alle <span aria-hidden="true">↗</span></a></div><div id="videoer"></div></section>
-      <section class="sidebar-section editorial-note"><p class="eyebrow">Bag udvælgelsen</p><h2>Hvad er værd at læse?</h2><p>Vi prioriterer det nye, det væsentlige og det brugbare. Kildegrundlaget tæller med, og der skal være plads til forskellige emner.</p><p>Artiklerne er bearbejdet af AI. Originalkilderne følger altid med.</p><details><summary>Sådan vælges historierne</summary><p>AI vurderer nyhedsværdi, betydning, brugbarhed, dokumentation og dansk relevans. Aktualitet og variation afgør derefter rækkefølgen. Reklameprægede opslag og svagt underbyggede rygter får ingen hovedplads.</p><p>Flere omtaler er ikke automatisk flere uafhængige beviser. En illustration eller et kendt firmanavn giver ingen bonus.</p></details></section>
+      <section class="sidebar-section editorial-note"><p class="eyebrow">Bag udvælgelsen</p><h2>Hvad er værd at læse?</h2><p>Nye AI-modeller kommer først: Hvad er lanceret, hvad kan det, og hvem kan bruge det? Derefter følger andre væsentlige AI-nyheder.</p><p>Artiklerne er bearbejdet af AI. Originalkilderne følger altid med.</p><details><summary>Sådan vælges historierne</summary><p>AI vurderer nyhedsværdi, betydning, brugbarhed, dokumentation og dansk relevans. Modellanceringer får ekstra prioritet og bevarer deres aktualitet gennem den første uge. Kildegrundlag og variation tæller stadig med. Reklameprægede opslag og svagt underbyggede rygter får ingen hovedplads.</p><p>Flere omtaler er ikke automatisk flere uafhængige beviser. En illustration eller et kendt firmanavn giver ingen bonus.</p></details></section>
     </aside>
   </div>
   <section class="newsletter" id="nyhedsbrev" aria-labelledby="newsletterTitel"><div><p class="eyebrow">Én mail. Hver fredag.</p><h2 id="newsletterTitel">Ugens AI, samlet til dig.</h2><p>Få ugens vigtigste historier i din indbakke. Gratis.</p></div><form action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank"><label for="email">Din e-mailadresse</label><div class="subscribe-fields"><input id="email" type="email" name="email" autocomplete="email" placeholder="dig@eksempel.dk" required><button type="submit">Tilmeld mig <span aria-hidden="true">↗</span></button></div><p>Du kan altid afmelde dig. Tilmeldingen åbner i en ny fane.</p></form></section>

@@ -20,15 +20,17 @@ Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/ar
 | Dokumentation | 20 % | Hvor godt understøtter det tilgængelige materiale påstanden? |
 | Dansk relevans | 10 % | Er der dokumenteret relevans for Danmark, EU eller danske brugere? |
 
+**Modellanceringer er førsteprioritet.** Bekræftede nye AI-modeller og modelversioner får 36 ekstra prioritetspoint og beholder deres nyhedsværdi gennem den første uge. Forskellige modellanceringer straffes mindre for at dele kategori. Almindelige produktfunktioner, plugins, kundecases, tests og rygter tæller ikke som modellanceringer. Det nye filter **Modellanceringer** viser denne forskel.
+
 AI giver hvert kriterium 0–5 og skriver en kort begrundelse samt eventuelle forbehold. Vurderingen bygger på det medsendte kildemateriale; den er ikke en selvstændig faktakontrol. Manglende oplysninger må ikke opfindes. Resultater matches med artikel-id og valideres, før de caches.
 
-Udvælgelsen tager derefter højde for kildens **udgivelsesdato**, og gentagelser af samme kilde, kategori eller hovedaktør får et fradrag. Flere omtaler giver ikke i sig selv flere point. En vigtig forskningshistorie kan få en hovedplads. Reklameprægede opslag, perifert AI-stof, svagt dokumenterede historier og rygter får ingen hovedplads. På stille dage vises færre udvalgte historier.
+Udvælgelsen tager derefter højde for kildens **udgivelsesdato**, og gentagelser af samme kilde, kategori eller hovedaktør får et fradrag. Flere omtaler giver ikke i sig selv flere point. En vigtig forskningshistorie kan fortsat få en hovedplads. Reklameprægede opslag, perifert AI-stof, svagt dokumenterede historier og rygter får ingen hovedplads. På stille dage vises færre udvalgte historier.
 
 En artikel kan blive i overblikket i op til syv døgn efter udgivelsen, selv om den falder ud af kildens RSS-feed. Kilder, der er slået fra, eller har `kun_aktuel`, genindlæses ikke fra arkivet. Hvis samtlige aktive kilder fejler, stoppes kørslen, så den eksisterende udgave bevares.
 
 ### Overgang fra gamle vurderinger
 
-Vurderinger gemmes i artiklens `redaktion`-felt med versionsnummer. Ved næste kørsel med en fungerende AI-nøgle får op til 120 artikler den nye vurdering, i portioner på 12. Resten fortsætter ved næste kørsel. Indtil da bruges den eksisterende `prio` med den nye aktualitets- og variationslogik. Der skal ikke slettes data eller indstilles nye secrets.
+Vurderinger gemmes i artiklens `redaktion`-felt med versionsnummer. Version 3 tilføjer et eksplicit `model_lancering`-felt. Version 2-vurderinger og deres forbehold bevares, indtil de kan opdateres. En konservativ tekstanalyse prioriterer eksisterende modellanceringer med det samme. Ved næste kørsel med en fungerende AI-nøgle får op til 120 artikler den nye vurdering, i portioner på 12. Resten fortsætter ved næste kørsel. Artikler helt uden delvurderinger bruger den eksisterende `prio` med den nye modelprioritet og aktualitetslogik. Der skal ikke slettes data eller indstilles nye secrets.
 
 Normalt prioriteres de 40 vigtigste artikler til dyb behandling, og billedbudgettet går til seks udvalgte historier. Et manglende billede giver et almindeligt tekstlayout og påvirker ikke historiens placering.
 

@@ -23,7 +23,7 @@ def artikel(navn="Ny model", prio=7, timer=2, kilde="a.example", kategori="Lance
 
 
 def vurdering(**extra):
-    return {"version":2,"metode":"ai","nyhed":4,"betydning":4,"brugbarhed":4,
+    return {"version":r.VERSION,"model_lancering":False,"metode":"ai","nyhed":4,"betydning":4,"brugbarhed":4,
             "dokumentation":4,"dansk":2,"type":"lancering","ai_relevant":True,
             "begrundelse":"En konkret nyhed med praktisk betydning.","forbehold":"","emne":"",**extra}
 
@@ -141,6 +141,49 @@ class RedaktionTests(unittest.TestCase):
         self.assertEqual(r.behold_aktuelle([], [artikel(kun_aktuel=True)], feeds, NU), [])
         self.assertEqual(r.behold_aktuelle([], [artikel(timer=169)], feeds, NU), [])
         self.assertEqual(len(r.behold_aktuelle([a], [a,a], feeds, NU)),1)
+
+    def test_astra_med_live_v2_vurdering_slaar_branchenyhed(self):
+        # Vurderingen fra den udgave, hvor Astra blev skubbet ned:
+        # nyhed=5, betydning=4, brugbarhed=1, dokumentation=2, dansk=0.
+        astra=artikel("OpenAI lancerer GPT-6 Astra",timer=48,redaktion=vurdering(
+            version=2,nyhed=5,betydning=4,brugbarhed=1,dokumentation=2,dansk=0))
+        finance=artikel("Firma henter penge",timer=1,kategori="Penge & marked",
+                        redaktion=vurdering(type="forretning"))
+        self.assertTrue(r.model_lancering(astra))
+        self.assertEqual(r.udvaelg([finance,astra],nu=NU)[0],astra)
+        self.assertEqual(r.prioriter([finance,astra],NU)[0],astra)
+
+    def test_modelprioritet_er_generel_og_begraenset_til_en_uge(self):
+        new=artikel("Introducing Acme One",resume_da="Acme udgiver en ny sprogmodel.",prio=6)
+        self.assertTrue(r.model_lancering(new))
+        old={**new,"dato":(NU-timedelta(hours=169)).isoformat()}
+        self.assertNotIn(old,r.udvaelg([old],nu=NU))
+        self.assertGreater(r.score(new,NU),r.score(old,NU))
+
+    def test_navn_eller_produktkategori_er_ikke_en_modellancering(self):
+        for title in ["Microsoft lancerer Windows med GPT-6", "OpenAI lancerer plugin til GPT-6",
+                      "Google Gemini sender vandrere på vildspor", "Four AI models suffer downtime",
+                      "Rumors: OpenAI launches GPT-7", "OpenAI might launch GPT-7"]:
+            self.assertFalse(r.model_lancering(artikel(title)),title)
+        self.assertFalse(r.model_lancering(artikel("OpenAI lancerer GPT-6",redaktion=vurdering(model_lancering=False))))
+
+    def test_model_flag_skal_vaere_gyldigt_og_rygter_beskyttes(self):
+        valid={**vurdering(model_lancering=True),"kategori":"Lanceringer"}
+        self.assertIsNotNone(r.valider(valid,c.KATEGORIER))
+        for value in ["true",None,1]:
+            self.assertIsNone(r.valider({**valid,"model_lancering":value},c.KATEGORIER))
+        self.assertIsNone(r.valider({**valid,"type":"rygte"},c.KATEGORIER))
+        a=artikel("OpenAI lancerer GPT-6",redaktion=vurdering(version=2,type="rygte"))
+        self.assertFalse(r.model_lancering(a))
+        self.assertEqual(r.udvaelg([a],nu=NU),[])
+
+    def test_v2_bevares_indtil_ny_ai_vurdering_er_klar(self):
+        a=artikel(redaktion=vurdering(version=2,type="rygte"))
+        with patch.object(c,"API_KEY","test"),patch.object(c,"hjerne_kald",return_value="[]") as call:
+            c.klassificer([a])
+        call.assert_called_once()
+        self.assertEqual(a["redaktion"]["version"],2)
+        self.assertEqual(r.udvaelg([a],nu=NU),[])
 
     def test_template_bevarer_kilder_og_sikker_jsonld(self):
         a=artikel('<script>alert("x")</script>',sektioner=[{"overskrift":"Fakta","tekst":"Et dokumenteret forhold."}])

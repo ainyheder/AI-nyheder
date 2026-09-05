@@ -72,6 +72,18 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false}={}){
   d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='true','Mobilmenu åbnes');
   d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='false','Mobilmenu lukkes');
   ok(!test.errors.length,'Ingen fejl efter interaktioner');test.close();
+  const launchArticle={...real.artikler[0],titel:"OpenAI releases GPT-6 Astra",rubrik:"OpenAI lancerer GPT-6 Astra",link:"https://example.com/astra-launch",dato:new Date(Date.now()-48*3600000).toISOString(),kategori:"Lanceringer",redaktion:{version:2,nyhed:5,betydning:4,brugbarhed:1,dokumentation:2,dansk:0,type:"lancering",ai_relevant:true}};
+  const financeArticle={...real.artikler[0],titel:"Firma henter penge",rubrik:"Firma henter penge",link:"https://example.org/finance",dato:new Date(Date.now()-3600000).toISOString(),kategori:"Penge & marked",redaktion:{version:3,model_lancering:false,nyhed:4,betydning:4,brugbarhed:4,dokumentation:4,dansk:2,type:"forretning",ai_relevant:true}};
+  // Et gyldigt, men forældet udvalg må ikke skjule Astra efter en dataopdatering.
+  const modelTest=await mount({artikler:[financeArticle,launchArticle],opdateret:new Date().toISOString(),forside:{version:3,beregnet:new Date().toISOString(),udvalgte:[financeArticle.link],raekkefoelge:[financeArticle.link]}});
+  const md=modelTest.w.document;
+  ok(md.querySelector('.lead-story h2').textContent.includes('Astra'),'Astra med den gamle AI-vurdering er hovedhistorie');
+  ok(md.querySelector('.news-row h3 a').dataset.article===launchArticle.link,'Modellancering kommer først i nyhedslisten');
+  ok(md.querySelector('.pick-label').textContent==='Ny AI-model','Modellancering fremhæves tydeligt');
+  md.querySelector('[data-category="Modeller"]').click();
+  ok(md.querySelectorAll('.news-row').length===1,'Modelfilter viser kun modellanceringer');
+  ok(md.querySelector('.news-row h3').textContent.includes('Astra'),'Astra findes under modellanceringer');
+  ok(!modelTest.errors.length,'Ny modelprioritet uden scriptfejl');modelTest.close();
   const direct=await mount(real,{hash:'#a='+encodeURIComponent(real.artikler[0].link),blockedStorage:true});
   ok(direct.w.document.getElementById('laeser').open,'Gammelt direkte delelink og blokeret lagring');ok(!direct.errors.length,'Blokeret localStorage vælter ikke siden');direct.close();
   const gone=await mount(real,{hash:'#a='+encodeURIComponent('https://example.com/old-story')});

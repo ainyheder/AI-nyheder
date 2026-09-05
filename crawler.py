@@ -1421,7 +1421,8 @@ SYSTEM_KATEGORI = redaktion.PROMPT
 
 def klassificer(artikler: list[dict]) -> None:
     """Versionerede delvurderinger med stabile id'er og validering før caching."""
-    mangler = [a for a in artikler if redaktion.vurdering(a) is None]
+    mangler = [a for a in artikler if redaktion.vurdering(a) is None
+               or redaktion.vurdering(a).get("version") != redaktion.VERSION]
     if not API_KEY or not mangler:
         return
     # Migration af gamle vurderinger er begrænset og fortsætter næste kørsel.

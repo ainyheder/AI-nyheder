@@ -4,11 +4,13 @@
 (function (root) {
   "use strict";
   const WEIGHTS = {nyhed:5, betydning:5, brugbarhed:4, dokumentation:4, dansk:2};
+  const VERSION = 3;
+  const MODEL_BONUS = 36;
   const HOUR = 3600000;
   const number = x => typeof x === "number" && Number.isFinite(x);
   function assessment(a) {
     const v = a.redaktion;
-    return v && v.version === 2 && Object.keys(WEIGHTS).every(k => Number.isInteger(v[k]) && v[k] >= 0 && v[k] <= 5) ? v : null;
+    return v && [2, VERSION].includes(v.version) && Object.keys(WEIGHTS).every(k => Number.isInteger(v[k]) && v[k] >= 0 && v[k] <= 5) ? v : null;
   }
   function timestamp(a) {
     for (const value of [a.dato, a.eget_foerst_set, a.foerst_set]) {
@@ -23,6 +25,18 @@
   function promotional(a) {
     const v = assessment(a);
     return !!(v && (v.type === "reklame" || v.ai_relevant === false)) || /\b(last chance|last call|early.bird|promo code|side.events|ticket sale|save \$\d+|sidste frist for sideevents)\b/i.test((a.titel || "") + " " + (a.rubrik || ""));
+  }
+  function modelLaunch(a) {
+    const v = assessment(a);
+    if (promotional(a) || (v && (v.type !== "lancering" || v.dokumentation <= 1))) return false;
+    if (v && v.version === VERSION && typeof v.model_lancering === "boolean") return v.model_lancering;
+    const headline = ((a.titel || "") + " " + (a.rubrik || "")).toLowerCase();
+    const text = headline + " " + (a.resume_da || a.resume || "").toLowerCase();
+    if (/\b(rumou?rs?|rygte\w*|might|may launch|could launch|expected to|reportedly|planlægger|overvejer|forventes|ifølge rygter)\b/.test(headline)) return false;
+    if (/\b(plugin|windows|nas|smart.home|case study|kundecase|nedbrud|downtime)\b/.test(headline)) return false;
+    const action = /\b(introduc\w*|releas\w*|launch\w*|unveil\w*|announc\w*|lancer\w*|udgiv\w*|udsend\w*|præsenter\w*|tilgængelig)\b/.test(headline);
+    const model = /\b(models?|modeller|sprogmodel\w*|language model\w*|gpt[- ]?\d|(?:claude|gemini|llama|qwen|deepseek|grok|mistral|phi)[- ](?:\d|opus|sonnet|haiku))/.test(text);
+    return action && model;
   }
   function baseScore(a) {
     if (promotional(a)) return 0;
@@ -42,8 +56,10 @@
     const hours = (now-date)/HOUR;
     if (hours < -2) return 0;
     let freshness = 0.65 + 0.35 * (2 ** (-Math.max(0,hours)/48));
-    if (hours > 72) freshness *= 2 ** (-(hours-72)/96);
-    return Math.round(baseScore(a)*freshness*100)/100;
+    const launch = modelLaunch(a), threshold = launch ? 168 : 72;
+    if (hours > threshold) freshness *= 2 ** (-(hours-threshold)/96);
+    const bonus = launch && hours <= 168 && baseScore(a) >= 32 ? MODEL_BONUS : 0;
+    return Math.round((baseScore(a)+bonus)*freshness*100)/100;
   }
   function source(a) { try { return new URL(a.link).hostname.replace(/^www\./,""); } catch { return a.kilde || ""; } }
   function topic(a) {
@@ -65,7 +81,7 @@
     const countOf = (m,k) => m.get(k)||0;
     const add = (m,k) => m.set(k,countOf(m,k)+1);
     while (pool.length && chosen.length<count) {
-      const weight = a => score(a,now)-countOf(sources,source(a))*12-countOf(categories,a.kategori)*7-(topic(a)?countOf(topics,topic(a))*14:0);
+      const weight = a => score(a,now)-countOf(sources,source(a))*12-countOf(categories,a.kategori)*(modelLaunch(a)?2:7)-(topic(a)?countOf(topics,topic(a))*14:0);
       let best=0;
       for(let i=1;i<pool.length;i++) if(weight(pool[i])>weight(pool[best])) best=i;
       const [a]=pool.splice(best,1);
@@ -81,13 +97,13 @@
   }
   function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]); }
   function bold(value) { return escapeHtml(value).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"); }
-  const api={assessment,timestamp,promotional,baseScore,score,rank,select,safeUrl,escapeHtml};
+  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,safeUrl,escapeHtml};
   if(typeof module!=="undefined" && module.exports) module.exports=api;
   root.AINews=api;
   if(typeof document==="undefined") return;
 
   const $=id=>document.getElementById(id);
-  const categoryNames={"Alle":"Alle emner","Lanceringer":"Nye modeller","Hverdags-AI":"I hverdagen","Samfund & etik":"Samfund","Penge & marked":"Forretning","Politik & jura":"Politik","Forskning":"Forskning"};
+  const categoryNames={"Alle":"Alle emner","Modeller":"Modellanceringer","Lanceringer":"Produkter","Hverdags-AI":"I hverdagen","Samfund & etik":"Samfund","Penge & marked":"Forretning","Politik & jura":"Politik","Forskning":"Forskning"};
   let articles=[], selected=[], category="Alle", query="", order="anbefalet", visible=12;
   let lastFocus=null, readerArticle=null, ownHistory=false, toastTimer, searchTimer;
   let read={};
@@ -128,7 +144,7 @@
     const [lead,...rest]=selected;
     const reason=assessment(lead)?.begrundelse || lead.betydning || "";
     const brief=rest.slice(0,4);
-    box.innerHTML=`<div class="lead-grid"><article class="lead-story"><div class="story-topline"><span class="pick-label">Udvalgt</span><span class="category">${escapeHtml(lead.kategori||"AI-nyt")}</span></div>${image(lead,"lead-image",false)}<h2><a class="story-link" ${linkAttrs(lead)}>${escapeHtml(title(lead))}</a></h2><p class="lead-summary">${escapeHtml(summary(lead))}</p>${reason?`<div class="why-read"><strong>Derfor er historien værd at læse</strong>${bold(reason)}</div>`:""}${meta(lead)}<a class="read-link" ${linkAttrs(lead)}>Læs historien <span aria-hidden="true">↗</span></a></article>${brief.length?`<section class="quick-brief" aria-labelledby="kortTitel"><div class="quick-heading"><h2 id="kortTitel">Kort fortalt</h2><span>60 sekunder</span></div><ol>${brief.map((a,i)=>`<li class="quick-item"><a ${linkAttrs(a)}><span class="quick-number" aria-hidden="true">0${i+1}</span><div><h3>${escapeHtml(summary(a)||title(a))}</h3><div class="story-meta"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><span>${escapeHtml(dateText(a))}</span></div></div></a></li>`).join("")}</ol></section>`:""}</div><div class="secondary-grid">${rest.slice(0,3).map(a=>`<article class="secondary-story"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3>${meta(a)}</article>`).join("")}</div>`;
+    box.innerHTML=`<div class="lead-grid"><article class="lead-story"><div class="story-topline"><span class="pick-label">${modelLaunch(lead)?"Ny AI-model":"Udvalgt"}</span><span class="category">${escapeHtml(lead.kategori||"AI-nyt")}</span></div>${image(lead,"lead-image",false)}<h2><a class="story-link" ${linkAttrs(lead)}>${escapeHtml(title(lead))}</a></h2><p class="lead-summary">${escapeHtml(summary(lead))}</p>${reason?`<div class="why-read"><strong>Derfor er historien værd at læse</strong>${bold(reason)}</div>`:""}${meta(lead)}<a class="read-link" ${linkAttrs(lead)}>Læs historien <span aria-hidden="true">↗</span></a></article>${brief.length?`<section class="quick-brief" aria-labelledby="kortTitel"><div class="quick-heading"><h2 id="kortTitel">Kort fortalt</h2><span>60 sekunder</span></div><ol>${brief.map((a,i)=>`<li class="quick-item"><a ${linkAttrs(a)}><span class="quick-number" aria-hidden="true">0${i+1}</span><div><h3>${escapeHtml(summary(a)||title(a))}</h3><div class="story-meta"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><span>${escapeHtml(dateText(a))}</span></div></div></a></li>`).join("")}</ol></section>`:""}</div><div class="secondary-grid">${rest.slice(0,3).map(a=>`<article class="secondary-story"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3>${meta(a)}</article>`).join("")}</div>`;
   }
   function renderCategories() {
     $("kategorier").innerHTML=Object.entries(categoryNames).map(([key,label])=>`<button type="button" data-category="${escapeHtml(key)}" aria-pressed="${key===category}">${label}</button>`).join("");
@@ -136,7 +152,7 @@
   function normalize(value) { return String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("da"); }
   function filtered() {
     const words=normalize(query).trim().split(/\s+/).filter(Boolean);
-    let list=articles.filter(a=>!promotional(a) && (category==="Alle" || a.kategori===category));
+    let list=articles.filter(a=>!promotional(a) && (category==="Alle" || (category==="Modeller" ? modelLaunch(a) : a.kategori===category)));
     if(words.length) list=list.filter(a=>{const text=normalize([title(a),summary(a),a.kilde,a.kategori,a.betydning,...(a.sektioner||[]).map(s=>s.tekst)].join(" "));return words.every(w=>text.includes(w));});
     if(order==="nyeste") list=[...list].sort((a,b)=>(timestamp(b)||0)-(timestamp(a)||0));
     return list;
@@ -144,7 +160,7 @@
   function renderList() {
     const list=filtered();$("nyhedsliste").setAttribute("aria-busy","false");
     $("antalNyheder").textContent=`${list.length} ${list.length===1?"historie":"historier"}`;
-    $("filterBeskrivelse").textContent=query?`Søger efter “${query}”`:(order==="nyeste"?"Sorteret efter kildens udgivelsesdato":"Udvalgt efter nyhedsværdi og aktualitet");
+    $("filterBeskrivelse").textContent=query?`Søger efter “${query}”`:(order==="nyeste"?"Sorteret efter kildens udgivelsesdato":"Modellanceringer prioriteres først");
     $("nulstil").hidden=category==="Alle"&&!query&&order==="anbefalet";
     $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><p>${escapeHtml(summary(a))}</p>${meta(a)}</div>${image(a,"news-row-image")}<a class="row-arrow" ${linkAttrs(a)} aria-label="${escapeHtml('Læs '+title(a))}">↗</a></article>`).join(""):`<div class="empty-state"><h3>Ingen historier matcher</h3><p>Prøv et andet søgeord, eller vælg alle emner.</p><button data-reset>Vis alle nyheder</button></div>`;
     $("visFlere").hidden=list.length<=visible;
@@ -213,16 +229,10 @@
         if(a.kategori==="Benchmarks")a.kategori="Lanceringer";
         unique.set(a.link,a);
       });
-      const all=[...unique.values()],front=data.forside;
-      // Genberegn kun når den gemte rangering er for gammel/mangler. En
-      // gyldig crawlerudgave giver præcis samme valg hos alle læsere.
-      const recent=front?.version===2&&Math.abs(Date.now()-Date.parse(front.beregnet))<8*HOUR;
-      if(recent&&Array.isArray(front.raekkefoelge)&&Array.isArray(front.udvalgte)){
-        const positions=new Map(front.raekkefoelge.map((url,i)=>[url,i]));
-        articles=rank(all).sort((a,b)=>(positions.get(a.link)??Infinity)-(positions.get(b.link)??Infinity));
-        const eligible=new Set(select(all,all.length).map(a=>a.link));
-        selected=[...new Set(front.udvalgte)].map(url=>unique.get(url)).filter(a=>a&&eligible.has(a.link)).slice(0,6);
-      }else{articles=rank(all);selected=select(all);}
+      const all=[...unique.values()];
+      // Delvurderingerne kommer fra crawleren. Beregn udvalget på ALLE
+      // aktuelle artikler, så gammel forside-metadata ikke skjuler nye modeller.
+      articles=rank(all);selected=select(all);
       const updated=Date.parse(data.opdateret);
       if(Number.isFinite(updated)){
         $("opdateret").textContent=`Opdateret ${formatDate(updated,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`;
