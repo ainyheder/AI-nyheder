@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-05T22:37:15.598172+00:00",
+ "opdateret": "2026-09-05T23:17:32.373536+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -57,9 +57,9 @@ window.LAESERTAL = {
      1,
      1,
      26,
-     25,
+     26,
      2,
-     27,
+     28,
      26,
      0,
      0,
@@ -92,18 +92,53 @@ window.LAESERTAL = {
      2,
      1,
      4,
-     2,
-     14,
+     3,
+     13,
      8,
      1,
      3,
      2,
-     4,
-     4,
+     3,
+     5,
      4,
      2,
-     9,
+     5,
      2
+    ]
+   },
+   {
+    "navn": "Penge & marked",
+    "tal": [
+     2,
+     1,
+     1,
+     3,
+     6,
+     7,
+     8,
+     1,
+     1,
+     3,
+     6,
+     5,
+     7,
+     4,
+     2,
+     0,
+     1,
+     3,
+     5,
+     9,
+     6,
+     5,
+     1,
+     1,
+     6,
+     5,
+     7,
+     4,
+     9,
+     0
     ]
    },
    {
@@ -129,50 +164,15 @@ window.LAESERTAL = {
      3,
      6,
      8,
-     7,
-     1,
-     1,
-     1,
-     4,
-     9,
-     7,
-     8,
-     4,
-     0
-    ]
-   },
-   {
-    "navn": "Penge & marked",
-    "tal": [
-     2,
-     1,
-     1,
-     3,
      6,
-     7,
-     8,
-     1,
-     1,
-     3,
-     6,
-     5,
-     7,
-     4,
-     2,
      0,
      1,
-     3,
-     5,
-     10,
-     6,
-     4,
      1,
-     0,
-     5,
-     3,
-     5,
+     2,
+     8,
+     7,
+     7,
      4,
-     9,
      0
     ]
    },
@@ -198,17 +198,17 @@ window.LAESERTAL = {
      1,
      1,
      2,
-     2,
+     4,
      4,
      3,
      3,
      1,
-     6,
+     7,
      4,
      5,
      0,
-     1,
-     0
+     2,
+     1
     ]
    },
    {
@@ -232,31 +232,31 @@ window.LAESERTAL = {
      0,
      2,
      0,
-     2,
-     2,
-     2,
-     1,
-     1,
-     2,
      0,
-     6,
+     2,
+     2,
+     1,
+     1,
+     1,
+     1,
      4,
      2,
-     0,
+     3,
+     3,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 34,
- "sidevisninger_i_alt": 56,
+ "besoeg_i_alt": 35,
+ "sidevisninger_i_alt": 57,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 32,
-   "visninger": 43
+   "besoeg": 33,
+   "visninger": 44
   },
   {
    "sti": "/uge.html",
@@ -327,7 +327,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 34
+   "besoeg": 35
   }
  ],
  "ai_chats": [],
@@ -335,8 +335,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 32,
-    "visninger": 32
+    "besoeg": 33,
+    "visninger": 33
    },
    {
     "fra": "herfra selv",
