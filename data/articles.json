@@ -1,7 +1,126 @@
 {
-  "opdateret": "2026-09-05T11:59:11.858891+00:00",
-  "antal": 105,
+  "opdateret": "2026-09-05T15:29:01.908393+00:00",
+  "antal": 109,
   "artikler": [
+    {
+      "titel": "AI handles incidents, engineers lose touch with their systems",
+      "link": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+      "resume": "Article URL: https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems Comments URL: https://news.ycombinator.com/item?id=49574167 Points: 263 # Comments: 232",
+      "dato": "2026-09-05T07:52:50+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-05T15:29:01.908393+00:00",
+      "eget_foerst_set": "2026-09-05T15:29:01.908393+00:00",
+      "rubrik": "LinkedIn-ingeniør advarer: AI fjerner os fra it-systemerne",
+      "resume_da": "En tidligere LinkedIn-SRE frygter, at AI-baserede systemer gør ingeniører for rustne til at håndtere komplekse fejl, når automatikken svigter.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "AI løser fejl",
+          "tekst": "Da **Tal** var SRE hos LinkedIn i 2012, designede han et system, der selv kunne lære af fejl - men AI var for umoden dengang. I dag er virkeligheden blevet en anden: Moderne AI-værktøjer inspicerer alarmer, opstiller hypoteser, undersøger data og kan endda selv implementere rettelsen. Problemet er, at jo bedre AI bliver til rutineopgaver, jo mindre øvelse får de menneskelige ingeniører."
+        },
+        {
+          "overskrift": "Paradokset",
+          "tekst": "Forskeren **Lisanne Bainbridge** beskrev allerede i 1983 'automatiseringens ironi': Automatisering fjerner operatørernes mulighed for at øve rutinearbejde, men efterlader dem med ansvaret for nye og unormale situationer. Derfor skal operatører faktisk have mere træning, ikke mindre. Når en kompleks fejl opstår, som AI ikke kan løse, vil ingeniører have mindre erfaring at trække på."
+        },
+        {
+          "overskrift": "Læring fra luftfart",
+          "tekst": "Piloter har samme udfordring: Fly styrer selv, men piloter skal håndtere sjældne nødsituationer. Moderne motorer fejler sjældnere end én gang per 100.000 flyvetimer, men når det sker, skal piloter reagere hurtigt. Eksempel: **TransAsia Airways Flight 235** styrtede ned 117 sekunder efter første advarsel, fordi besætningen fejlidentificerede problemet. Derfor træner piloter i simulatorer - regelmæssigt."
+        },
+        {
+          "overskrift": "Træning i praksis",
+          "tekst": "Hos **Rootly**, hvor han arbejder, har de sammen med **Uptime Labs** bygget realistiske simulationer: Ingeniører sidder som hændelsesledere under en større e-handelsnedbrud, mens de koordinerer med AI-drevne interessenter i Slack. Øvelsen giver mulighed for at praktisere færdigheder som at navigere i ufuldstændig information, kommunikere klart og koordinere folk. AIs forklaringer og observationer kan ikke erstatte egentlig praksis, understreger han."
+        },
+        {
+          "overskrift": "Gæld i forståelse",
+          "tekst": "Når AI overtager mere arbejde, risikerer ingeniørhold at akkumulere 'forståelsesgæld': et voksende hul mellem hvordan systemerne faktisk fungerer, og hvor godt folk forstår dem. Han anbefaler, at ingeniører regelmæssigt interagerer med deres systemer, håndterer ukendte fejl og øver sig under pres. Tabletop-øvelser og kaosteknik er ikke nye, men er blevet vigtigere i AI-æraen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "117 sekunder",
+          "label": "fra første advarsel til flystyrt"
+        },
+        {
+          "tal": "1 per 100.000",
+          "label": "flyvetimer uden motorfejl"
+        }
+      ],
+      "detaljer": [
+        "Forfatteren designede selvhelende system som prototype hos LinkedIn i 2012.",
+        "AI-værktøjer kan inspicere alarmer, danne hypoteser og selv implementere rettelser.",
+        "Rutinefejl er den vigtigste måde, hvorpå ingeniører opbygger intuition om systemer.",
+        "Bainbridge's ironi fra 1983: Automatisering øger behovet for menneskelig træning.",
+        "Piloter skal træne i simulator hver sjette måned under FAA-regler.",
+        "Rootly og Uptime Labs laver realistiske hændelsessimulationer med AI-stakeholders.",
+        "Forfatteren har tidligere skabt projektbaseret softwareingeniørskole."
+      ],
+      "betydning": "Din it-afdeling risikerer at miste evnen til at håndtere komplekse nedbrud, fordi AI løser rutineopgaver - og du kan opleve længere nedetid, når det uventede sker.",
+      "pointer": [
+        "AI-løste rutinefejl reducerer ingeniørers øvelse.",
+        "Komplekse hændelser kan tage længere tid at løse.",
+        "Piloter træner i simulator - IT bør også.",
+        "Simulationer som Rootlys kan bevare færdigheder."
+      ],
+      "billedmotiv": "En støvet krusedulle erstattet af en selvlysende sparepære med en synlig rusten kontakt, der er ved at koble fra et simpelt kredsløb",
+      "side": "artikel/c8deeb70bc1a3f73.html"
+    },
+    {
+      "titel": "Can AI design circuit boards yet?",
+      "link": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+      "resume": "Article URL: https://eebench.org/blog/can-ai-design-circuit-boards-yet/ Comments URL: https://news.ycombinator.com/item?id=49569366 Points: 303 # Comments: 181",
+      "dato": "2026-09-04T19:48:29+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-05T15:29:01.908393+00:00",
+      "eget_foerst_set": "2026-09-05T15:29:01.908393+00:00",
+      "rubrik": "Claude Opus 5 topper design-test",
+      "resume_da": "Testen EEBench V1 måler AI-modellers evne til at designe elektronik. Claude Opus 5 klarer sig bedst med 61,6 procent.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI viste for nylig GPT-6 Astra arbejde i et kredsløbsprogram, men hvor gode er AI-modeller egentlig til elektronik? Et nyt benchmark kaldet EEBench sætter dem på prøve. I stedet for at tegne i grafiske værktøjer skal modellerne løse opgaver i kode, hvilket minder mere om rigtigt ingeniørarbejde."
+        },
+        {
+          "overskrift": "Resultaterne",
+          "tekst": "Testen viser, at Claude Opus 5 scorer **61,6 %** over 13 opgaver. Grok 4.6 kommer tæt efter med **57,1 %**, og Claude Fable 5.1 opnår 56,4 %. GPT-5.5 klarer sig noget dårligere med 42,3 %. Ifølge skaberne ville de ikke have troet, at modellerne ville klare sig så godt for få måneder siden."
+        },
+        {
+          "overskrift": "Hvad måler testen?",
+          "tekst": "EEBench tester ikke kun, om modellen kan finde de rigtige komponenter. Den simulerer også strømsvigt og måler, om kredsløbet holder sig inden for grænserne. Eksempelvis skal en elforsyning holde processoren kørende i 20 millisekunder, hvis strømmen forsvinder. Kun designs der overholder specifikationerne og er økonomiske, får point."
+        },
+        {
+          "overskrift": "Hvad nu?",
+          "tekst": "OpenAI's GPT-6 Astra er endnu ikke testet, men forskerne er nysgerrige efter at se, hvordan den klarer sig. Testen kan også bruges til at træne AI-modeller bedre, da fejl i designs kan bruges som læringssignal. Det kan gøre fremtidige modeller bedre til elektronikdesign."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Claude Opus 5 scorer 61,6 % i EEBench V1 over 13 opgaver.",
+        "Grok 4.6 opnår 57,1 % og er nummer to på ranglisten.",
+        "GPT-5.5 og GPT-5.6 Sol klarer sig dårligere med henholdsvis 42,3 % og 39,4 %.",
+        "EEBench tester kredsløb i simuleret strømsvigt og måler spændingsniveauer.",
+        "Modellerne skal vælge ægte komponenter fra leverandører med datablade.",
+        "Testen er offentlig tilgængelig, og resultaterne kan udforskes online."
+      ],
+      "betydning": "Du kan snart få AI til at designe elektronik, der faktisk virker i virkeligheden - med de rette komponenter og strømforbrug. Det kan gøre udvikling af alt fra hjemmeelektronik til elbiler hurtigere og billigere.",
+      "pointer": [
+        "AI kan i stigende grad designe fungerende kredsløb.",
+        "Claude Opus 5 topper med 61,6 % i testen.",
+        "OpenAI's nyeste model er endnu ikke testet.",
+        "Testen bruges også til at træne bedre AI."
+      ],
+      "navngivet": true,
+      "billedmotiv": "Et lille printkort med mikrochip, der holder en usynlig krone af loddetråd, mens et krus med en gul blyant står ved siden af",
+      "side": "artikel/98f52d5492702a4c.html"
+    },
     {
       "titel": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
       "link": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
@@ -64,67 +183,6 @@
       "side": "artikel/f48898262d8e66ea.html"
     },
     {
-      "titel": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
-      "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-      "resume": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
-      "dato": "2026-09-04T21:12:11+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-04T23:13:06.725591+00:00",
-      "eget_foerst_set": "2026-09-04T23:13:06.725591+00:00",
-      "rubrik": "Nscale og Anthropic i milliardaftale før børsnotering",
-      "resume_da": "Nscale søger 3,5 milliarder dollar før en mulig børsnotering. Nvidia bidrager med 2 milliarder, og en kæmpeaftale med Anthropic på 45 milliarder ligger bag.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Milliarderne på bordet",
-          "tekst": "Nscale vil rejse **3,5 milliarder dollar** før en mulig børsnotering. Pengene kommer fra obligationer til investorer for 1,5 milliarder og yderligere 2 milliarder fra Nvidia, der allerede har støttet virksomheden flere gange."
-        },
-        {
-          "overskrift": "Kometagtig vækst",
-          "tekst": "På bare to år er Nscale gået fra en serie A på **155 millioner dollar** til en serie B på 1,1 milliarder - den største i Europas historie. Nu fortæller de investorer, at de forventer en omsætning på omkring 103 milliarder dollar fra kundelejekontrakter."
-        },
-        {
-          "overskrift": "Kæmpe aftale med Anthropic",
-          "tekst": "Nscale har underskrevet en aftale med AI-firmaet Anthropic til en værdi af cirka **45 milliarder dollar**. Det er denne kontrakt, der ligger bag de store omsætningsforventninger - selvom tallet ikke repræsenterer faktiske salg endnu."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "3,5 mia. dollar",
-          "label": "søges i ny finansiering før børsnotering"
-        },
-        {
-          "tal": "45 mia. dollar",
-          "label": "værdien af aftalen med Anthropic"
-        },
-        {
-          "tal": "103 mia. dollar",
-          "label": "forventet omsætning fra kontrakter"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Nscale blev grundlagt for to år siden i Storbritannien.",
-        "Firmaet undersøger at gå på børsen allerede senere denne måned.",
-        "De søger 1,5 milliarder dollar i konvertible obligationer fra investorer.",
-        "Nvidia forventes at bidrage med 2 milliarder dollar i ekstra finansiering.",
-        "Serie B-runden i marts rejste 1,1 milliarder dollar med Aker i spidsen.",
-        "Anthropic-aftalen er Nscales største enkeltkontrakt."
-      ],
-      "betydning": "Når AI-firmaer som Nscale vokser så hurtigt, kan det presse priserne på computerkraft op - og det mærker du i sidste ende på abonnementer til AI-værktøjer.",
-      "pointer": [
-        "Nscale rejser 3,5 milliarder dollar før børsnotering.",
-        "Nvidia deltager med 2 milliarder dollar.",
-        "Anthropic har underskrevet en 45 milliarder dollar aftale.",
-        "Forventet omsætning er 103 milliarder dollar."
-      ],
-      "billedmotiv": "En sparegris i form af en raket, hvor møntindkastet er proppet med navneskilte, og en regnemaskine med en seddel foran.",
-      "kat_ai": true,
-      "prio": 7,
-      "side": "artikel/e160d21430aee3fa.html"
-    },
-    {
       "titel": "Architecting memory and storage in the AI era",
       "link": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
       "resume": "The era of AI inference has arrived. Imagine a healthcare system analyzing millions of data points in real time to accelerate life-saving medical research, or an intelligent assistant instantly resolving thousands of complex customer needs at once. These real-world breakthroughs rely on advanced infrastructure acting as the engine of continuous intelligence, powering real-time services while…",
@@ -176,6 +234,50 @@
       "kat_ai": true,
       "prio": 7,
       "side": "artikel/c540530472dc5bd8.html"
+    },
+    {
+      "titel": "Corporate America is getting hooked on open-source AI",
+      "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+      "resume": "https://archive.is/kmOqm Comments URL: https://news.ycombinator.com/item?id=49566137 Points: 308 # Comments: 285",
+      "dato": "2026-09-04T15:33:45+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-04T20:58:21.726923+00:00",
+      "eget_foerst_set": "2026-09-04T20:58:21.726923+00:00",
+      "rubrik": "Åben AI vinder i Corporate America",
+      "resume_da": "Amerikanske virksomheder dropper i stigende grad lukkede systemer til fordel for open-source AI. De vil have kontrol og fleksibilitet uden leverandørlåsning.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Trenden",
+          "tekst": "Corporate America er ved at blive glade for open-source AI. Virksomheder vælger i stigende grad åbne modeller frem for lukkede, kommercielle systemer. Det giver dem mulighed for selv at tilpasse og styre teknologien."
+        },
+        {
+          "overskrift": "Motivationen",
+          "tekst": "Virksomhederne ønsker ikke at være låst fast til én leverandør eller afhænge af eksterne tjenester. Med open-source AI kan de selv hoste, ændre og tilpasse løsningerne. Fleksibilitet og uafhængighed er hovedårsagerne til skiftet."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Corporate America er ved at tage open-source AI til sig.",
+        "Virksomheder vælger åbne modeller frem for lukkede systemer.",
+        "De ønsker kontrol over teknologien.",
+        "Fleksibilitet er en vigtig grund til skiftet.",
+        "Flere vil undgå at være afhængige af en enkelt udbyder."
+      ],
+      "betydning": "Du vil se flere produkter og tjenester bygget på åben AI, hvilket kan give dig større valgfrihed og lavere priser på sigt.",
+      "pointer": [
+        "Open-source AI vinder frem i erhvervslivet.",
+        "Virksomheder vil undgå leverandørlåsning.",
+        "Kontrol og fleksibilitet driver skiftet.",
+        "Lukkede systemer taber terræn i Corporate America."
+      ],
+      "navngivet": true,
+      "billedmotiv": "En åben kasse uden låg, men med en nøgle, der passer i flere forskellige hængelåse på et bord",
+      "side": "artikel/84764afd93b992c9.html"
     },
     {
       "titel": "Roland is getting into generative AI music with Melody Flip",
@@ -409,6 +511,15 @@
       "billedmotiv": "Et tomt formandssæde med en lille, uafhængig vægtstang ved siden af, mens en sparegris står på stolen.",
       "kat_ai": true,
       "prio": 8,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+          "rubrik": "Nscale og Anthropic i milliardaftale før børsnotering",
+          "resume_da": "Nscale søger 3,5 milliarder dollar før en mulig børsnotering. Nvidia bidrager med 2 milliarder, og en kæmpeaftale med Anthropic på 45 milliarder ligger bag.",
+          "foerst_set": "2026-09-04T23:13:06.725591+00:00"
+        }
+      ],
       "side": "artikel/3055f9c8a822a4b8.html"
     },
     {
@@ -580,6 +691,66 @@
       "kat_ai": true,
       "prio": 4,
       "side": "artikel/38b7d6c16f55ac4d.html"
+    },
+    {
+      "titel": "Google AI Mode shows same products 21.6% more expensive than traditional search",
+      "link": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+      "resume": "Article URL: https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products Comments URL: https://news.ycombinator.com/item?id=49563386 Points: 392 # Comments: 74",
+      "dato": "2026-09-04T11:59:15+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-04T17:44:14.727629+00:00",
+      "eget_foerst_set": "2026-09-04T17:44:14.727629+00:00",
+      "rubrik": "Googles AI Mode viser dyrere varer end normal søgning",
+      "resume_da": "En ny undersøgelse viser, at Googles AI Mode i gennemsnit viser samme produkter 21,6 procent dyrere end traditionel søgning. Forbrugerne får altså ikke de billigste tilbud.",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Det viser målingen",
+          "tekst": "I august i år sammenlignede forskere over to millioner produktannoncer fra både Googles AI Mode og den klassiske søgemaskine. Når præcis samme vare dukkede op begge steder, var prisen i AI Mode i gennemsnit **21,6 procent** højere. I to ud af tre tilfælde var AI Mode den dyreste af de to."
+        },
+        {
+          "overskrift": "Flere skjulte forskelle",
+          "tekst": "Kigger man på alle varer, ikke kun dem der matcher, er forskellen endnu større. Medianprisen i AI Mode lå på **149 dollar**, mod 100 dollar ved almindelig søgning - altså 49 procent mere. AI Mode viste også markant færre varer: kun **3,9 produkter** i snit mod 27,8 ved traditionel søgning."
+        },
+        {
+          "overskrift": "Kun få produkter går igen",
+          "tekst": "Kun **1,28 procent** af varerne fra den normale søgning dukkede også op i AI Mode samme dag. Når priserne var forskellige, var AI Mode dyrere i 68,4 procent af tilfældene. Forskere peger på, at AI'en tilsyneladende ikke vægter pris højt nok, og at den oftere linker direkte til producenten frem for billige markedspladser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "21,6 %",
+          "label": "dyrere i AI Mode for samme produkt"
+        },
+        {
+          "tal": "149 $",
+          "label": "medianpris i AI Mode mod 100 $ i søgning"
+        },
+        {
+          "tal": "68,4 %",
+          "label": "af gangene er AI Mode dyrest ved uenighed"
+        }
+      ],
+      "detaljer": [
+        "To millioner produktannoncer sporet over 23 dage i august 2026.",
+        "Kun 1,28 procent af produkterne gik igen i begge søgetyper.",
+        "AI Mode viste i snit 3,9 produkter mod 27,8 i almindelig søgning.",
+        "Medianprisen i AI Mode var 149 dollar mod 100 dollar.",
+        "Når priserne afveg, var forskellen i median 22,2 procent.",
+        "AI Mode linker oftere til producentens egen side end til markedspladser."
+      ],
+      "betydning": "Du risikerer at betale mere for de samme varer, når du bruger Googles AI Mode. Tjek prisen hos andre forhandler, før du handler.",
+      "pointer": [
+        "AI Mode viser samme varer dyrere.",
+        "Få produkter går igen i begge søgninger.",
+        "AI Mode viser færre, men dyrere varer.",
+        "Forhandlere kan drage fordel af højere priser."
+      ],
+      "side": "artikel/afa4fa3d4fb9279e.html"
     },
     {
       "titel": "Another swarm of OpenAI agents reached the open internet without the frontier lab’s knowledge",
@@ -2268,6 +2439,50 @@
       "side": "artikel/5737d6df236a9321.html"
     },
     {
+      "titel": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
+      "link": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+      "resume": "Article URL: https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007 Comments URL: https://news.ycombinator.com/item?id=49544762 Points: 460 # Comments: 185",
+      "dato": "2026-09-03T01:11:22+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-03T23:29:06.000468+00:00",
+      "eget_foerst_set": "2026-09-03T23:29:06.000468+00:00",
+      "rubrik": "Shin Jin-seo udfordrer AI'en KataGo i Go",
+      "resume_da": "Verdens bedste Go-spiller møder AI'en KataGo i en tæt tvekamp, der kan ændre synet på menneske mod maskine.",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Mødet",
+          "tekst": "Shin Jin-seo, verdens øverst rangerede Go-spiller, møder AI'en KataGo i en serie på tre kampe, der begynder fredag. Det er et af de mest ventede opgør mellem menneske og AI i årevis. De to resterende kampe spilles den 19. og 21. juli."
+        },
+        {
+          "overskrift": "Det særlige",
+          "tekst": "KataGo har tidligere vist sig overlegen mod mennesker, men Shin får et forspring på to sten i handicap. Det giver ham en unik chance for at vise, at strategisk tænkning stadig kan udfordre maskinernes beregningskraft. Resultatet kan få betydning for, hvordan vi ser på AI's grænser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Shin Jin-seo er verdens bedste Go-spiller.",
+        "KataGo er en AI designet til at spille Go.",
+        "Serien består af tre kampe.",
+        "Kampene spilles den 17., 19. og 21. juli.",
+        "Shin får et handicap på to sten.",
+        "Kampene er blandt de mest ventede på det seneste."
+      ],
+      "betydning": "Får Shin succes mod KataGo, kan det give dig ny tillid til, at menneskelig intuition stadig kan slå AI i komplekse spil.",
+      "pointer": [
+        "Verdens bedste Go-spiller møder AI.",
+        "Shin får to sten i handicap.",
+        "Tre kampe i juli.",
+        "KataGo er en stærk AI-modstander."
+      ],
+      "billedmotiv": "Et skakbræt i træ med en enkelt sort sten, der er lidt skubbet frem, og en hvid sten, der ligger omkuld uden for feltet",
+      "side": "artikel/f082815bef24dec5.html"
+    },
+    {
       "titel": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
       "link": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
       "resume": "The high-profile startup's annual revenue run rate stands at over $100 million.",
@@ -2445,7 +2660,7 @@
       "dato": "2026-09-03T14:00:00-04:00",
       "kilde": "The Verge AI",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "foerst_set": "2026-09-01T21:15:41.848394+00:00",
       "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
       "rubrik": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?",
       "resume_da": "OpenAI har udgivet GPT-6 Astra, som de kalder deres hidtil stærkeste model. Virksomheden mener selv, at vi nu er i en ny æra for AI.",
@@ -2503,6 +2718,27 @@
           "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
           "resume_da": "OpenAI præsenterer GPT-6 Astra som sin hidtil dygtigste AI-model med topkarakterer inden for flere tekniske områder.",
           "foerst_set": "2026-09-05T04:54:19.519926+00:00"
+        },
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+          "rubrik": "Playco skærer fejl i spil med OpenAI-model",
+          "resume_da": "Spilfirmaet Playco brugte OpenAIs nye GPT-6 Astra til at lave tre spilprototyper og fik 50 procent færre manuelle rettelser.",
+          "foerst_set": "2026-09-03T21:16:06.186478+00:00"
+        },
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+          "rubrik": "OpenAI's GPT-6 Astra finder fejl i 41 dokumenter",
+          "resume_da": "Legora fik GPT-6 Astra til at gennemgå 41 dokumenter på få minutter. AI'en fandt alle fire fejl og øgede effektiviteten med 40 procent.",
+          "foerst_set": "2026-09-03T21:16:06.186478+00:00"
+        },
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/path-to-astra",
+          "rubrik": "OpenAI's Astra: Første model med kritisk cybersikkerhedsevne",
+          "resume_da": "Den kan klare svære digitale opgaver, men OpenAI har strammet sikkerheden. Modellen har særlige beskyttelser før udgivelse.",
+          "foerst_set": "2026-09-01T21:15:41.848394+00:00"
         }
       ],
       "detaljer": [
@@ -2525,165 +2761,6 @@
       "kat_ai": true,
       "prio": 10,
       "side": "artikel/a94dc4fdbbc2a78c.html"
-    },
-    {
-      "titel": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-      "dato": "2026-09-03T13:15:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-01T21:15:41.848394+00:00",
-      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "rubrik": "OpenAI investerer en milliard i cyberforsvar",
-      "resume_da": "OpenAI lancerer Daybreak for Frontline Defenders med en milliard dollar til at beskytte samfundsvigtige tjenester mod cyberangreb.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har annonceret et nyt initiativ kaldet Daybreak for Frontline Defenders. Formålet er at give adgang til avanceret cyber-AI, træning og support til organisationer, der driver vitale samfundsfunktioner. Satsningen kommer med en samlet forpligtelse på **1 milliard dollar**."
-        },
-        {
-          "overskrift": "Hvad får vi ud af det?",
-          "tekst": "Initiativet retter sig mod dem, der beskytter elnet, vandforsyning og sygehuse mod digitale angreb. Med AI-værktøjer kan forsvaret blive hurtigere og stærkere. For almindelige borgere betyder det potentielt mere stabile og sikre systemer i hverdagen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1 mia. dollar",
-          "label": "OpenAI's samlede forpligtelse til cyberforsvar"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Initiativet hedder Daybreak for Frontline Defenders.",
-        "OpenAI forpligter sig til 1 milliard dollar i støtte.",
-        "Målet er at beskytte essentielle tjenester mod cyberangreb.",
-        "Der gives adgang til avanceret cyber-AI og træning.",
-        "Initiativet inkluderer støtte til forsvarsorganisationer.",
-        "Fokus er på samfundskritiske funktioner som energi og sundhed."
-      ],
-      "betydning": "Når dine el-, vand- og sundhedssystemer bliver bedre beskyttet af AI, oplever du færre og kortere udfald i hverdagen.",
-      "pointer": [
-        "OpenAI satser 1 milliard dollar på cyberforsvar.",
-        "Daybreak skal beskytte samfundsvigtige tjenester.",
-        "AI-træning og support til frontlinjeforsvarere.",
-        "Sikrer mere stabile systemer for borgere."
-      ],
-      "billedmotiv": "En åben, tom skal af en skaldyr, med en usynlig, men solid hjelm, der ligger ned foran den.",
-      "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/path-to-astra",
-          "rubrik": "OpenAI lancerer Astra med skærpede sikkerhedsregler",
-          "resume_da": "OpenAI kalder Astra sin første model, der møder krav til kritisk cybersikkerhed. Modellen får stærkere beskyttelse, før den lukkes ud.",
-          "foerst_set": "2026-09-01T21:15:41.848394+00:00"
-        }
-      ],
-      "side": "artikel/30eec5aa5b07636a.html"
-    },
-    {
-      "titel": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
-      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "resume": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
-      "dato": "2026-09-03T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "rubrik": "Playco skærer fejl i spil med OpenAI-model",
-      "resume_da": "Spilfirmaet Playco brugte OpenAIs nye GPT-6 Astra til at lave tre spilprototyper og fik 50 procent færre manuelle rettelser.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sådan gjorde de",
-          "tekst": "Playco tog en simpel spilbase og byggede tre forskellige spilprototyper oven på den med hjælp fra GPT-6 Astra. Resultatet var **50 %** færre manuelle rettelser, end da de brugte den tidligere model. Det sparer tid og kræfter i udviklingen."
-        },
-        {
-          "overskrift": "Hvad det viser",
-          "tekst": "Historien viser, at AI-modeller kan klare mere af det kedelige arbejde i spiludvikling. Hvis andre firmaer får samme resultat, kan det betyde hurtigere udvikling og billigere spil i fremtiden."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "50 %",
-          "label": "færre manuelle rettelser i spilprototyper"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Playco byggede tre spilprototyper med GPT-6 Astra.",
-        "Prototyperne kom fra samme grå spilbase.",
-        "GPT-6 Astra er en ny OpenAI-model.",
-        "50 % færre manuelle rettelser end med tidligere model."
-      ],
-      "betydning": "Hvis du spiller spil, kan de komme hurtigere på markedet og med færre fejl, fordi udviklere bruger AI til at rette ting automatisk.",
-      "pointer": [
-        "Playco brugte GPT-6 Astra til tre spil",
-        "Halvt så mange manuelle rettelser",
-        "AI letter spiludvikling markant",
-        "Åbner for hurtigere udvikling"
-      ],
-      "kat_ai": true,
-      "prio": 6,
-      "billedmotiv": "En bunke af tre identiske grå spillekonsoller, hvor den øverste har et lille plaster på en revne i skallen.",
-      "side": "artikel/9a8f1e3af0e06d97.html"
-    },
-    {
-      "titel": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "resume": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-      "dato": "2026-09-03T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "rubrik": "OpenAI's GPT-6 Astra finder fejl i 41 dokumenter",
-      "resume_da": "Legora fik GPT-6 Astra til at gennemgå 41 dokumenter på få minutter. AI'en fandt alle fire fejl og øgede effektiviteten med 40 procent.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hurtig gennemgang",
-          "tekst": "Den finansielle gennemgangsproces er ofte langsommelig. Legora brugte GPT-6 Astra fra OpenAI til at gennemgå **41 dokumenter** på blot få minutter – en opgave, der normalt ville tage langt længere tid."
-        },
-        {
-          "overskrift": "Fejl og forbedring",
-          "tekst": "Under gennemgangen fandt AI'en **alle fire bevidst plantede fejl**. Samtidig forbedrede systemet den samlede ydeevne i arbejdsgangen med **næsten 40 procent**, hvilket viser en markant effektivitetsgevinst."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "41",
-          "label": "dokumenter gennemgået på få minutter"
-        },
-        {
-          "tal": "4",
-          "label": "fejl fundet af AI'en"
-        },
-        {
-          "tal": "40 %",
-          "label": "forbedring af ydeevnen"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Legora brugte GPT-6 Astra fra OpenAI i arbejdsgangen",
-        "AI'en gennemgik 41 dokumenter på minutter",
-        "Alle fire plantede fejl blev fundet",
-        "Ydeevnen blev forbedret med næsten 40 procent",
-        "Det var en finansiel gennemgangsproces"
-      ],
-      "betydning": "Du kan snart få AI til at gennemgå store dokumentmængder på få minutter og fange fejl, der ellers ville tage timer – det ændrer din arbejdsgang.",
-      "pointer": [
-        "GPT-6 Astra gennemgår 41 dokumenter på minutter",
-        "Fandt alle fire fejl",
-        "Forbedrede performance med 40 procent"
-      ],
-      "kat_ai": true,
-      "prio": 5,
-      "side": "artikel/d54e7a3a2a7435ba.html"
     },
     {
       "titel": "Four major AI models suffer rare overlapping downtime",
@@ -2976,6 +3053,49 @@
       "side": "artikel/e205570bf462cb32.html"
     },
     {
+      "titel": "Mamdani bans AI in NYC schools",
+      "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+      "resume": "Article URL: https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html Comments URL: https://news.ycombinator.com/item?id=49542443 Points: 219 # Comments: 180",
+      "dato": "2026-09-02T20:57:04+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-03T09:07:40.831452+00:00",
+      "eget_foerst_set": "2026-09-03T09:07:40.831452+00:00",
+      "rubrik": "New York forbyder AI i skolerne",
+      "resume_da": "New York forbyder AI i skolerne. Beslutningen vækker debat blandt forældre, lærere og teknologifolk.",
+      "kat_ai": true,
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Forbuddet",
+          "tekst": "New York har officielt forbudt AI i byens skoler. Det sker efter bekymring for elevernes privatliv, læring og sikkerhed. Beslutningen blev annonceret af byens ledelse og har straks skabt store reaktioner."
+        },
+        {
+          "overskrift": "Reaktionerne",
+          "tekst": "Mange forældre og lærere er splittede. Nogle mener, at AI kan hjælpe eleverne med at lære hurtigere. Andre er bange for, at teknologien overvåger børnene eller gør dem dovne. På Hacker News debatterer teknikere, om forbuddet er for strengt – eller nødvendigt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "New York forbyder AI i byens offentlige skoler.",
+        "Debatten på Hacker News har 219 point og 180 kommentarer.",
+        "Beslutningen kommer efter bekymringer om elevernes privatliv og sikkerhed.",
+        "Nogle forældre og lærere er uenige om forbuddet.",
+        "Teknologifolk diskuterer, om forbuddet er for strengt."
+      ],
+      "betydning": "Hvis du bor i New York med børn i skole, kan du ikke længere bruge AI-hjælpemidler til undervisning eller lektier – og dit barns skole må ikke tilbyde dem.",
+      "pointer": [
+        "New York forbyder AI i skoler.",
+        "Forældre og lærere er splittede.",
+        "Privatliv og sikkerhed er hovedbekymringerne.",
+        "Teknikere debatterer forbuddets strenghed."
+      ],
+      "billedmotiv": "En lille rygsæk med et hængelås, der er mærket \"skole\", mens en kridtstreg er tegnet omkring den på en glat overflade",
+      "side": "artikel/1fa5e007a9948bbd.html"
+    },
+    {
       "titel": "The Builders Stage brings practical strategies for scaling startups to TechCrunch Disrupt 2026",
       "link": "https://techcrunch.com/2026/09/02/the-builders-stage-brings-practical-strategies-for-scaling-startups-to-techcrunch-disrupt-2026/",
       "resume": "The Builders Stage is returning to TechCrunch Disrupt, bringing together founders, startup operators, and investors for practical conversations on what it takes to build and scale.",
@@ -3217,7 +3337,7 @@
       "dato": "2026-09-02T18:13:54+00:00",
       "kilde": "Ars Technica AI",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "foerst_set": "2026-09-02T21:13:01.878289+00:00",
       "eget_foerst_set": "2026-09-02T21:13:01.878289+00:00",
       "rubrik": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger",
       "resume_da": "Google har udgivet Gemini 3.8 Flash, der er bedre til kodning og håndtering af komplekse opgaver. Cyber-udgaven finder sikkerhedshuller hurtigere.",
@@ -3273,13 +3393,6 @@
           "rubrik": "Google lancerer ny AI-model: Mere krudt, samme pris",
           "resume_da": "Googles nye Gemini 3.8 Flash yder bedre ved komplekse opgaver, men kan alligevel blive dyrere i brug. Modellen er målrettet udviklere og agenter.",
           "foerst_set": "2026-09-02T21:13:01.878289+00:00"
-        },
-        {
-          "kilde": "Google DeepMind",
-          "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
-          "rubrik": "Google åbner lukket AI-program mod cyberangreb",
-          "resume_da": "Google DeepMind lancerer Fairwind-programmet, der giver regeringer og virksomheder adgang til avancerede AI-modeller, som selv finder og reparerer sikkerhedshuller.",
-          "foerst_set": "2026-09-02T17:59:53.964081+00:00"
         }
       ],
       "detaljer": [
@@ -3302,6 +3415,71 @@
       "kat_ai": true,
       "prio": 6,
       "side": "artikel/5e8d637be2874ca8.html"
+    },
+    {
+      "titel": "Proactive cyber defense for governments and enterprises",
+      "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "resume": "",
+      "dato": "2026-09-02T16:24:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "rubrik": "Google giver elitesikkerhed til udvalgte forsvarere",
+      "resume_da": "Google lancerer Fairwind-programmet, der giver offentlige myndigheder og virksomheder adgang til AI-modellen Gemini 3.8 Flash Cyber til automatisk at finde og rette sikkerhedshuller.",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Nyt program",
+          "tekst": "Google har åbnet Fairwind-programmet, som kun er for udvalgte regeringer og betroede partnere. Formålet er at give forsvarere adgang til selskabets stærkeste cyberværktøjer, så de kan opdage og udbedre sårbarheder, før kriminelle når at udnytte dem. Adgangen gives i første omgang til offentlige myndigheder og virksomheder, der beskytter kritisk infrastruktur og nationale interesser."
+        },
+        {
+          "overskrift": "Sådan virker det",
+          "tekst": "Værktøjet kombinerer AI-modellen Gemini 3.8 Flash Cyber med et system kaldet CodeMender. Det kan selv skrive og validere programrettelser, så opgaver, der før tog uger, nu kan klares på få minutter. Virksomheder kan bruge det i deres egen sikre cloud-zone, og deltagerne skal følge strenge regler for adgang og bruge flertrinsgodkendelse for at undgå misbrug."
+        },
+        {
+          "overskrift": "Hvem er med",
+          "tekst": "Over 650 partnere verden over er allerede med i programmet, herunder førende virksomheder og brancheaktører. Google vil løbende udvide adgangen og samarbejde med både industri og open-source-miljøer for at balancere åbenhed med sikkerhed. For andre Google Cloud-kunder er der også mulighed for at bruge lignende AI-værktøjer med offentligt tilgængelige modeller."
+        },
+        {
+          "overskrift": "Milliarder til cybersikkerhed",
+          "tekst": "Google har via sin fond Google.org øget den samlede støtte til cybersikkerhed til over 100 millioner dollars. Hidtil er 36 millioner dollars gået til 35 cyberklinikker, der gratis har hjulpet over 1.250 hospitaler, skoledistrikter og kommunale forsyninger i USA. Initiativet skal styrke både store og små aktørers forsvar mod digitale angreb."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "100 mio. dollars",
+          "label": "samlet cybersikkerhedsstøtte fra Google.org"
+        },
+        {
+          "tal": "36 mio. dollars",
+          "label": "til 35 cyberklinikker i USA"
+        },
+        {
+          "tal": "650+",
+          "label": "partnere i Fairwind-programmet"
+        }
+      ],
+      "detaljer": [
+        "Fairwind-programmet giver adgang til Gemini 3.8 Flash Cyber og CodeMender.",
+        "AI'en kan autonomt finde og rette sårbarheder i sikre cloud-miljøer.",
+        "Manuelle rettelser, der tog uger, kan nu laves på få minutter.",
+        "Deltagere skal begrænse adgang til interne sikkerhedsteams og bruge flertrinsgodkendelse.",
+        "Google prioriterer partnere, der beskytter kritisk infrastruktur og offentlige tjenester.",
+        "Andre Google Cloud-kunder kan bruge AI-værktøjer med offentlige modeller via CodeMender.",
+        "Programmet skal give forsvarere et forspring, før it-kriminelle udnytter nye muligheder."
+      ],
+      "betydning": "Med Fairwind kan din virksomhed eller offentlige institution fremover få automatiske sikkerhedsopdateringer, der lukker huller på få minutter i stedet for uger – uden at du selv skal kode.",
+      "pointer": [
+        "Fairwind giver udvalgte partnere adgang til avanceret cyber-AI.",
+        "Gemini 3.8 Flash Cyber laver autonome sårbarhedsrettelser.",
+        "CodeMender skærer reparationstiden fra uger til minutter.",
+        "Google støtter cybersikkerhed med over 100 mio. dollars."
+      ],
+      "side": "artikel/e2a8d26765125d66.html"
     },
     {
       "titel": "Facilitating AI integration with simplicity at scale",
@@ -3406,6 +3584,55 @@
       "kat_ai": true,
       "prio": 3,
       "side": "artikel/8e955ff5c0050eaa.html"
+    },
+    {
+      "titel": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "dato": "2026-09-03T13:15:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "rubrik": "OpenAI investerer en milliard i cyberforsvar",
+      "resume_da": "OpenAI lancerer Daybreak for Frontline Defenders med en milliard dollar til at beskytte samfundsvigtige tjenester mod cyberangreb.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har annonceret et nyt initiativ kaldet Daybreak for Frontline Defenders. Formålet er at give adgang til avanceret cyber-AI, træning og support til organisationer, der driver vitale samfundsfunktioner. Satsningen kommer med en samlet forpligtelse på **1 milliard dollar**."
+        },
+        {
+          "overskrift": "Hvad får vi ud af det?",
+          "tekst": "Initiativet retter sig mod dem, der beskytter elnet, vandforsyning og sygehuse mod digitale angreb. Med AI-værktøjer kan forsvaret blive hurtigere og stærkere. For almindelige borgere betyder det potentielt mere stabile og sikre systemer i hverdagen."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "1 mia. dollar",
+          "label": "OpenAI's samlede forpligtelse til cyberforsvar"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Initiativet hedder Daybreak for Frontline Defenders.",
+        "OpenAI forpligter sig til 1 milliard dollar i støtte.",
+        "Målet er at beskytte essentielle tjenester mod cyberangreb.",
+        "Der gives adgang til avanceret cyber-AI og træning.",
+        "Initiativet inkluderer støtte til forsvarsorganisationer.",
+        "Fokus er på samfundskritiske funktioner som energi og sundhed."
+      ],
+      "betydning": "Når dine el-, vand- og sundhedssystemer bliver bedre beskyttet af AI, oplever du færre og kortere udfald i hverdagen.",
+      "pointer": [
+        "OpenAI satser 1 milliard dollar på cyberforsvar.",
+        "Daybreak skal beskytte samfundsvigtige tjenester.",
+        "AI-træning og support til frontlinjeforsvarere.",
+        "Sikrer mere stabile systemer for borgere."
+      ],
+      "billedmotiv": "En åben, tom skal af en skaldyr, med en usynlig, men solid hjelm, der ligger ned foran den.",
+      "kat_ai": true,
+      "prio": 6,
+      "side": "artikel/30eec5aa5b07636a.html"
     },
     {
       "titel": "Introducing agentic video understanding with Gemini",

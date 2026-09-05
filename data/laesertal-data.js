@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-05T11:59:40.951516+00:00",
+ "opdateret": "2026-09-05T15:31:47.609452+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,7 +67,7 @@ window.LAESERTAL = {
      25,
      25,
      26,
-     0,
+     1,
      25
     ]
    },
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      4,
      3,
      9,
-     0
+     1
     ]
    },
    {
@@ -135,7 +135,7 @@ window.LAESERTAL = {
      2,
      4,
      10,
-     8,
+     7,
      10,
      4,
      0
@@ -170,9 +170,9 @@ window.LAESERTAL = {
      0,
      5,
      5,
-     5,
+     6,
      3,
-     7,
+     6,
      0
     ]
    },
@@ -242,21 +242,21 @@ window.LAESERTAL = {
      4,
      3,
      2,
-     1,
+     2,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 34,
- "sidevisninger_i_alt": 55,
+ "besoeg_i_alt": 35,
+ "sidevisninger_i_alt": 57,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 32,
-   "visninger": 42
+   "besoeg": 33,
+   "visninger": 44
   },
   {
    "sti": "/uge.html",
@@ -269,7 +269,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/3a080f6682cdcad3.html",
+   "sti": "/artikel/9ebf8f5d0ca3e1b2.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -327,7 +327,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 34
+   "besoeg": 35
   }
  ],
  "ai_chats": [],
@@ -335,13 +335,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 32,
-    "visninger": 32
+    "besoeg": 33,
+    "visninger": 33
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 11
    }
   ],
   "/uge.html": [
@@ -358,7 +358,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/3a080f6682cdcad3.html": [
+  "/artikel/9ebf8f5d0ca3e1b2.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -600,17 +600,17 @@ window.LAESERTAL = {
   {
    "dato": "2026-09-05",
    "besoeg": 10,
-   "visninger": 10
+   "visninger": 20
   }
  ],
  "artikler": [
   {
-   "sti": "/artikel/3a080f6682cdcad3.html",
+   "sti": "/artikel/9ebf8f5d0ca3e1b2.html",
    "besoeg": 0,
    "visninger": 1,
-   "rubrik": "Anthropic vinder retssag mod Pentagon-blacklist",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-27",
+   "rubrik": "Google AI vejrmodel rammer plet med 5 km-opløsning",
+   "kategori": "Lanceringer",
+   "dato": "2026-09-03",
    "henvisere": [
     {
      "fra": "herfra selv",
@@ -773,15 +773,15 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 4
-  },
-  {
-   "navn": "Politik & jura",
-   "visninger": 3
+   "visninger": 5
   },
   {
    "navn": "Samfund & etik",
    "visninger": 3
+  },
+  {
+   "navn": "Politik & jura",
+   "visninger": 2
   },
   {
    "navn": "Penge & marked",

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-05T11:59:11.858891+00:00",
- "artikler_i_alt": 105,
+ "opdateret": "2026-09-05T15:29:01.908393+00:00",
+ "artikler_i_alt": 109,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,8 +12,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 15,
-   "som_ekstra": 4,
+   "i_listen": 14,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI's egne AI-agenter slipper løs og hacker videre",
@@ -23,6 +23,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
+    },
+    {
+     "rubrik": "Nscale og Anthropic i milliardaftale før børsnotering",
+     "dato": "",
+     "foerst_set": "2026-09-04T23:13:06",
+     "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-børsnotering stiller skarpt på magtfulde vagthunde"
     },
     {
      "rubrik": "Ternus-tiden hos Apple og Nvidias AI-satsning",
@@ -84,15 +93,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-05T04:54:19",
      "link": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
      "side": "artikel/f48898262d8e66ea.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nscale og Anthropic i milliardaftale før børsnotering",
-     "dato": "2026-09-04T21:12:11",
-     "foerst_set": "2026-09-04T23:13:06",
-     "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-     "side": "artikel/e160d21430aee3fa.html",
      "hvor": "forside",
      "under": ""
     },
@@ -185,15 +185,24 @@ window.KILDER_STATUS = {
      "side": "artikel/4d0be1d61b00620c.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Google AI vejrmodel rammer plet med 5 km-opløsning",
+     "dato": "2026-09-03T15:00:00",
+     "foerst_set": "2026-09-03T17:59:19",
+     "link": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
+     "side": "artikel/9ebf8f5d0ca3e1b2.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     4
+     "Ars Technica AI",
+     5
     ],
     [
-     "Ars Technica AI",
+     "The Verge AI",
      4
     ],
     [
@@ -353,7 +362,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?",
      "dato": "2026-09-03T14:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
+     "foerst_set": "2026-09-01T21:15:41",
      "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
      "side": "artikel/a94dc4fdbbc2a78c.html",
      "hvor": "forside",
@@ -362,16 +371,16 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "OpenAI Blog",
+     6
+    ],
+    [
      "TechCrunch AI",
      4
     ],
     [
      "Ars Technica AI",
      4
-    ],
-    [
-     "OpenAI Blog",
-     3
     ]
    ]
   },
@@ -445,7 +454,7 @@ window.KILDER_STATUS = {
     {
      "rubrik": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger",
      "dato": "2026-09-02T18:13:54",
-     "foerst_set": "2026-09-02T17:59:53",
+     "foerst_set": "2026-09-02T21:13:01",
      "link": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
      "side": "artikel/5e8d637be2874ca8.html",
      "hvor": "forside",
@@ -509,15 +518,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "The Verge AI",
      4
-    ],
-    [
-     "Google DeepMind",
-     1
     ],
     [
      "MIT Tech Review AI",
@@ -646,8 +651,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 22,
-   "som_ekstra": 2,
+   "i_listen": 20,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
@@ -668,29 +673,38 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
-     "rubrik": "OpenAI lancerer Astra med skærpede sikkerhedsregler",
-     "dato": "",
-     "foerst_set": "2026-09-01T21:15:41.848394+00:00",
-     "link": "https://openai.com/index/path-to-astra",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI investerer en milliard i cyberforsvar"
-    },
-    {
      "rubrik": "Playco skærer fejl i spil med OpenAI-model",
-     "dato": "2026-09-03T12:00:00",
+     "dato": "",
      "foerst_set": "2026-09-03T21:16:06",
      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-     "side": "artikel/9a8f1e3af0e06d97.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
      "rubrik": "OpenAI's GPT-6 Astra finder fejl i 41 dokumenter",
-     "dato": "2026-09-03T12:00:00",
+     "dato": "",
      "foerst_set": "2026-09-03T21:16:06",
      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
-     "side": "artikel/d54e7a3a2a7435ba.html",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+    },
+    {
+     "rubrik": "OpenAI's Astra: Første model med kritisk cybersikkerhedsevne",
+     "dato": "",
+     "foerst_set": "2026-09-01T21:15:41",
+     "link": "https://openai.com/index/path-to-astra",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+    },
+    {
+     "rubrik": "OpenAI investerer en milliard i cyberforsvar",
+     "dato": "2026-09-03T13:15:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+     "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -709,15 +723,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T05:01:06",
      "link": "https://openai.com/index/gilbert-tobin",
      "side": "artikel/8e955ff5c0050eaa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI investerer en milliard i cyberforsvar",
-     "dato": "2026-09-03T13:15:00",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/daybreak-for-frontline-defenders",
-     "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
     },
@@ -783,12 +788,30 @@ window.KILDER_STATUS = {
      "side": "artikel/8a2a589ad9966828.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI: ChatGPT træner kritisk tænkning",
+     "dato": "2026-08-27T09:00:00",
+     "foerst_set": "2026-08-28T00:33:43",
+     "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+     "side": "artikel/5250e71c3d45fa8a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI satser på Brasilien",
+     "dato": "2026-08-27T03:00:00",
+     "foerst_set": "2026-08-27T15:25:36",
+     "link": "https://openai.com/index/expanding-our-presence-in-brazil",
+     "side": "artikel/250ea25ba377eba7.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     6
     ]
    ]
   },
@@ -802,8 +825,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 8,
-   "som_ekstra": 2,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Googles nye vejrmodel ser fem gange skarpere",
@@ -824,13 +847,13 @@ window.KILDER_STATUS = {
      "under": "Google Gemini springer i videoer og sparer tid"
     },
     {
-     "rubrik": "Google åbner lukket AI-program mod cyberangreb",
-     "dato": "",
+     "rubrik": "Google giver elitesikkerhed til udvalgte forsvarere",
+     "dato": "2026-09-02T16:24:24",
      "foerst_set": "2026-09-02T17:59:53",
      "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger"
+     "side": "artikel/e2a8d26765125d66.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google Gemini springer i videoer og sparer tid",
@@ -908,10 +931,6 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -1047,12 +1066,67 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
+   "i_listen": 6,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "LinkedIn-ingeniør advarer: AI fjerner os fra it-systemerne",
+     "dato": "2026-09-05T07:52:50",
+     "foerst_set": "2026-09-05T15:29:01",
+     "link": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+     "side": "artikel/c8deeb70bc1a3f73.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Opus 5 topper design-test",
+     "dato": "2026-09-04T19:48:29",
+     "foerst_set": "2026-09-05T15:29:01",
+     "link": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+     "side": "artikel/98f52d5492702a4c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Åben AI vinder i Corporate America",
+     "dato": "2026-09-04T15:33:45",
+     "foerst_set": "2026-09-04T20:58:21",
+     "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+     "side": "artikel/84764afd93b992c9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Googles AI Mode viser dyrere varer end normal søgning",
+     "dato": "2026-09-04T11:59:15",
+     "foerst_set": "2026-09-04T17:44:14",
+     "link": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+     "side": "artikel/afa4fa3d4fb9279e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Shin Jin-seo udfordrer AI'en KataGo i Go",
+     "dato": "2026-09-03T01:11:22",
+     "foerst_set": "2026-09-03T23:29:06",
+     "link": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+     "side": "artikel/f082815bef24dec5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "New York forbyder AI i skolerne",
+     "dato": "2026-09-02T20:57:04",
+     "foerst_set": "2026-09-03T09:07:40",
+     "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+     "side": "artikel/1fa5e007a9948bbd.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   }
  ],
