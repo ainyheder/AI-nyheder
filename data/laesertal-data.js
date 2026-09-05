@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-05T08:32:33.553702+00:00",
+ "opdateret": "2026-09-05T11:59:40.951516+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -99,7 +99,7 @@ window.LAESERTAL = {
      3,
      2,
      3,
-     5,
+     4,
      4,
      3,
      9,
@@ -134,7 +134,7 @@ window.LAESERTAL = {
      1,
      2,
      4,
-     9,
+     10,
      8,
      10,
      4,
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 35,
- "sidevisninger_i_alt": 58,
+ "besoeg_i_alt": 34,
+ "sidevisninger_i_alt": 55,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 33,
-   "visninger": 44
+   "besoeg": 32,
+   "visninger": 42
   },
   {
    "sti": "/uge.html",
@@ -266,11 +266,6 @@ window.LAESERTAL = {
   {
    "sti": "/youtube.html",
    "besoeg": 1,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/57a3b900535e942d.html",
-   "besoeg": 0,
    "visninger": 1
   },
   {
@@ -332,7 +327,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 35
+   "besoeg": 34
   }
  ],
  "ai_chats": [],
@@ -340,13 +335,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 33,
-    "visninger": 33
+    "besoeg": 32,
+    "visninger": 32
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 11
+    "visninger": 10
    }
   ],
   "/uge.html": [
@@ -360,13 +355,6 @@ window.LAESERTAL = {
    {
     "fra": "direkte",
     "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/57a3b900535e942d.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
     "visninger": 1
    }
   ],
@@ -617,21 +605,6 @@ window.LAESERTAL = {
  ],
  "artikler": [
   {
-   "sti": "/artikel/57a3b900535e942d.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-28",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/3a080f6682cdcad3.html",
    "besoeg": 0,
    "visninger": 1,
@@ -799,12 +772,12 @@ window.LAESERTAL = {
  ],
  "laeste_temaer": [
   {
-   "navn": "Politik & jura",
+   "navn": "Lanceringer",
    "visninger": 4
   },
   {
-   "navn": "Lanceringer",
-   "visninger": 4
+   "navn": "Politik & jura",
+   "visninger": 3
   },
   {
    "navn": "Samfund & etik",
