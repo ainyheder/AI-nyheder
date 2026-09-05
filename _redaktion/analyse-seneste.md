@@ -1,3 +1,44 @@
+# Analyse · 2026-08-14 kl. 03:22 (hovedkørsel)
+
+**Live:** ainyheder.com svarer. `data/articles.json` over nettet er gyldig JSON
+med **113 artikler**, `opdateret` 2026-08-13T22:26 UTC. Disken siger **112** og
+`opdateret` **2026-07-31T07:28**. Det er ikke en afrundingsfejl — det er
+fjorten døgn.
+**Den lokale mappe er 86 commits bagud `origin/main`.** Sidste lokale commit er
+`cdc32d7` fra 31.07 kl. 09:41; remote står på `e5c39ff` fra 13.08 kl. 22:29.
+Arbejdstræet er rent (`git status --short` = tomt), så der er intet uafhentet
+arbejde — problemet er det modsatte: der er 86 commits **uhentet** arbejde.
+Ud over data er `crawler.py` (+53 linjer), `index.html`, `uge.html` og 33
+rodsider ændret på remote. `_redaktion/` er **identisk** — redaktionsfilerne er
+det eneste, der ikke er drevet fra hinanden.
+**Læsere:** 45 besøg / 73 visninger på 7 dage (målt live 13.08 kl. 22:29); 43 af
+besøgene er direkte, 2 fra google.com.
+**Målt** — alt mod `origin/main` udpakket til et arbejdsområde, fordi disken
+ikke længere beskriver den side, verden ser: 113 artikler i listen, **738 sider
+i `artikel/`**, 89 i `video/`, 44 videoer i `youtube.json`.
+**Set som læser:** ikke gennemgået på disken denne gang, og det er med vilje —
+forsiden på disken er ikke den forside, verden får, så en læsergennemgang af den
+ville beskrive en side, der ikke findes. Forsiden over nettet svarer og har
+titel, beskrivelse, og:image og alle otte fodlinks på plads.
+**Sidste kørsels arbejde:** loggens øverste post er fra **28.07**. Der er ingen
+log-poster i de 17 døgn, der er gået. Til gengæld står der i remotes `crawler.py`
+en kommentar om, at *"det skete 30.07-01.08: 16 kort nåede at stå uden billede,
+før det blev opdaget i hånden"* — arbejdet er altså lavet, men uden for loopet
+og uden at blive skrevet ned. Låsefilen `.koerer` var fra 13.08 kl. 23:40, altså
+3 t 41 min gammel: en afbrudt session, ikke en kørende. Overtaget efter reglen.
+**Efterprøvet:** «Ingen ved, om Google har set de 83 artikelsider.» (25.07) —
+**kan ikke måles herfra**, se log-posten. **Efterslæb: 37 modne punkter aldrig
+efterprøvet** (grænsen er 10), mod 27 den 28.07.
+**Køen:** hvert eneste punkt i `## Kø` er målt 26.–28.07 mod kode og data, der
+nu er 86 commits gamle. Jeg har målt dem alle om mod `origin/main`: ét er klaret
+af sig selv, to har fået nye og større tal, tre holder. Se log-posten.
+**Jeg går i gang med:** ikke et køpunkt. Så længe mappen er fjorten døgn bagud,
+lander enhver kodeændring, jeg laver, oven i en flettekonflikt hos redaktionen —
+så jeg rører ikke kode. Jeg bygger i stedet den vagt i fase 0, der skulle have
+fanget det her for to uger siden, og som ikke findes.
+
+---
+
 # Analyse · 2026-07-28 kl. 05:45 (hovedkørsel, chat med Torben)
 **Læsere:** 261 besøg / 738 visninger på 7 dage (målt 22:47 UTC i går). Forsiden
 246 besøg / 456 visninger. Udefra **uændret på tredje døgn**: 19 Facebook, 4
@@ -67,27 +108,3 @@ billigere AI-model» og «Meta vælger dyster sang…» under «Biblioteker afho
 **Jeg går i gang med:** at gøre en fejlsammenlægning mulig at fortryde —
 `_slaa_sammen` gemmer taberens rubrik og resumé, og trin 0 må bruge den gemte
 tekst eller den frosne side som bevis, når taberen ikke er i dagens feed.
-
----
-
-# Analyse · 2026-07-27 kl. 19:45 (ekstra kørsel, chat-session med Torben)
-**Læsere:** 240 besøg/690 visninger på 7 dage (målt 13:47). Forsiden 220 besøg;
-udefra kun 19 Facebook, 4 Google, 3 Buttondown. Artikelsiderne optræder slet
-ikke i sidelisten. Dagskurven falder: 70→60→30→10 besøg (24.–27.07).
-**Live:** ainyheder.com svarer 200, articles.json gyldig og identisk med disken
-(110 = 110). Alle tre sitemaps svarer 200.
-**Målt:** 110 artikler i articles.json (15 vindere med `andre`, 46 slugte),
-149 sider i artikel/, 41 i video/. 0 canonical-kæder. Sitemaps på disk:
-30 + 91 + 41 URL'er.
-**Set som læser:** ikke gennemgået denne gang — kørslen var kort og brugte
-tiden på GSC (se nedenfor).
-**Sidste kørsels arbejde:** holder. `_bryd_canonical_kaeder` = 0 kæder på disk,
-git status ren (alt er hentet og pushet).
-**Køen:** øverste punkts formodning er nu MÅLT i selve Search Console:
-sitemap.xml VAR indsendt (22.07, Succes, 30 sider), men sitemap-artikler.xml og
-sitemap-videoer.xml var ALDRIG indsendt — Google fik aldrig besked om de 132
-artikel-/videosider. Begge er nu indsendt (se loggen). Punktet står stadig
-øverst: effekten skal ses i læsertallene, og GSC's "Sider"-rapport skal tjekkes
-om nogle dage.
-**Jeg går i gang med:** stopper her — ekstra kørsel i chat med begrænset tid.
-Næste punkt for næste kørsel: dubletfangeren (uændret næst-øverst).

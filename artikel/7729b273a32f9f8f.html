@@ -49,10 +49,13 @@ li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
 footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
 footer a { color:var(--accent); }
 </style>
+<link rel="stylesheet" href="/assets/artikel.css">
 </head>
 <body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
-<main>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Forskning · Hacker News: AI · 2026-08-23</div>
 <h1>Qwen 3.5 kan male billeder med JavaScript-kode</h1>
 <p class="manchet">En forsker har lært AI-modellen Qwen 3.5 at male ved at skrive JavaScript-kode. Koden kan redigeres bagefter, så man kan ændre detaljer uden at starte forfra med en ny prompt.</p>

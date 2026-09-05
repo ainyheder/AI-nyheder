@@ -128,6 +128,53 @@ kørsler, er de ikke hentet endnu. Skriv det ØVERST i arbejdsloggen med det sam
 — der bygges videre på noget, verden ikke har set, og de filer, crawleren selv
 skriver, vil begynde at give merge-konflikter.
 
+**Og tjek den anden retning — den er værre.** Kør, før du rører noget:
+
+```
+python3 _redaktion/er-repoet-friskt.py
+```
+
+`git status` kan kun se det arbejde, mappen selv har lavet. Den kan per
+definition ikke se det arbejde, der ligger på GitHub og aldrig er trukket ned:
+arbejdstræet er spejlblankt i begge tilfælde. **14.08.2026 var mappen 86 commits
+bagud, sidste commit fra 31.07, og ingen kørsel havde opdaget det i fjorten
+døgn** — alle målinger i fase 0 beskrev en side, der ikke fandtes længere.
+
+Scriptet svarer med en udgangskode:
+
+- **0** — arbejd løs. Står der en advarsel, skal den med i loggen.
+- **1** — **STOP.** Skriv én linje i `arbejdslog.md` om, at du sprang over, og
+  hvad scriptet sagde. Slet din låsefil og slut. Der er to veje hertil, og
+  scriptet siger selv hvilken:
+  - *Kodefiler er bagud.* Retter du noget, afleverer du en flettekonflikt i
+    netop de filer, redaktionen skal committe i hånden — og den nemmeste vej
+    ud af den konflikt i GitHub Desktop ruller det uhentede arbejde tilbage.
+  - *Kun crawlerens egne filer er bagud, men for mange commits.* Her er der
+    ingen kodekonflikt. Grunden er, at `data/` er for gammel til at måle på,
+    og fase 0 ville beskrive en side, der ikke findes længere. Skriv dét i
+    loggen — ikke en flettekonflikt, scriptet netop har afvist.
+- **2** — kunne ikke afgøres. Skriv det i loggen, og **lad kode være**. Det er
+  ikke en høflig måde at sige 0 på: kunne scriptet ikke hente fra origin, ser
+  et repo, der er fjorten døgn bagud, nøjagtig ud som et rent repo. Tvivl er
+  ikke grønt lys.
+
+Kun redaktionen kan rette det: hun eller han trækker ned i GitHub Desktop.
+**Du må ikke selv pulle, merge eller rebase** — det er samme grænse som commit
+og push, og af samme grund.
+
+Scriptet finder selv projektmappen ud fra sin egen placering, så det er
+ligegyldigt, hvilken mappe du står i, når du kører det. Det henter fra den
+remote, branchens upstream ligger på, før det dømmer. `git fetch` rører ikke dine
+filer, men skriver i `.git` — vil du undgå det, så kør med `--kun-cache`. Så
+svarer det til gengæld 2 og ikke 0, når alt ser rent ud, fordi en cachet ref
+ikke kan skelne *"der er intet nyt"* fra *"jeg har ikke set efter"*.
+
+Rører du selv `er-repoet-friskt.py`, så kør `python3 _redaktion/proeve-friskhed.py`
+bagefter. Den prøver vurderingen mod opdigtede tal og bygger små rigtige
+git-repoer i `/tmp` med en lokal remote — ingen netværk. I selve projektmappen
+læser den kun; det eneste, den lægger, er en `__pycache__` ved siden af sig
+selv, som `.gitignore` allerede dækker.
+
 `--no-optional-locks` er ikke pynt. Et almindeligt `git status` skriver
 `.git/index.lock`, og efterlades den, kan redaktionen ikke committe i GitHub
 Desktop — *"Unable to create index.lock"*. Det har generet fire gange, og en

@@ -15,7 +15,9 @@ aldrig igen (nøglen er artiklens link). Det holder prisen på få øre.
 """
 
 import json
+import redaktion
 import os
+import sys
 import time
 import re
 import html
@@ -66,7 +68,7 @@ MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
 GEMINI_PAUSE_SEK = 2             # pause mellem Gemini-kald (værn mod fartgrænsen)
 
 # --- Dybe briefs (hele artiklen hentes og genfortælles) ---
-DYBDE_ANTAL = 250                # ALLE artikler får komplet brief (loft som sikkerhed)
+DYBDE_ANTAL = 40                 # de højest prioriterede historier får dybde først
 BILLED_ANTAL = 250               # ALLE artikler får AI-billede (bagkatalog indhentes
                                  # gradvist pga. MAX_BILLEDER_PR_KOERSEL)
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
@@ -317,7 +319,7 @@ HJERNER_STATUS = ROOT / "data" / "hjerner-status.json"
 # navn -> hvad trinnet laver (vises i kontrolpanelet)
 HJERNE_BESKRIVELSE = {
     "omskriv": "Skriver rubrik og resumé på dansk for hver ny artikel",
-    "kategori": "Sætter kategori og prioritet 1-10 på hver artikel",
+    "kategori": "Vurderer nyhedsværdi, betydning, brugbarhed, dokumentation og dansk relevans",
     "dublet": "Finder artikler fra flere medier om samme begivenhed",
     "brief": "Skriver den fulde danske genfortælling af en artikel",
     "redaktoer": "Læser genfortællingen igennem og kræver omskrivning ved fejl",
@@ -1089,7 +1091,11 @@ Svar KUN med ét JSON-objekt:
  "detaljer":  4-7 punkter med de vigtigste fakta, tal og detaljer fra artiklen
               (hvert punkt én sætning, max 20 ord),
  "betydning": 1-2 sætninger (maks 35 ord): den ENE konsekvens, der rammer
-              læserens hverdag, penge eller fremtid. Skriv direkte til "du",
+              læserens hverdag, penge eller fremtid. Bevar ord som "kan",
+              "planlægger" og "ifølge" når kilden er usikker. Opfind aldrig
+              priser, dansk tilgængelighed eller en personlig konsekvens.
+              Er der ingen konkret følge i kilden, så returnér tom streng.
+              Skriv direkte til "du" når materialet begrunder det,
               start aldrig med "Det betyder" eller "Denne nyhed" - lige på
               pointen. Skarp og konkret slår lang og forsigtig,
  "pointer":   3-4 ultrakorte hovedpointer (hver max 12 ord),
@@ -1238,7 +1244,7 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
     """Laver et komplet dansk brief ud fra artiklens fulde tekst."""
     try:
         er_forskning = "arxiv" in a.get("kilde", "").lower() or a.get("kategori") == "Forskning"
-        er_vigtig = (a.get("prio") or 0) >= 8 or bool(a.get("andre"))
+        er_vigtig = redaktion.grundscore(a) >= 64
         sys_prompt = SYSTEM_BRIEF_ARTIKEL \
             + (SYSTEM_BRIEF_FORSKNING if er_forskning else "") \
             + (SYSTEM_BRIEF_LANG if er_vigtig and not er_forskning else "")
@@ -1255,23 +1261,24 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
 
 
 def dybe_briefs(artikler: list[dict]) -> None:
-    """Giver de DYBDE_ANTAL nyeste artikler et komplet dansk brief:
+    """Giver de DYBDE_ANTAL højest prioriterede artikler et komplet dansk brief:
     henter artikelsiden, udtrækker brødteksten og lader Claude genfortælle."""
+    graense = 250 if GENKOER_ALT or GENKOER_FILTER else DYBDE_ANTAL
     if GENKOER_FILTER == "betydning":
         # Målrettet genkørsel: kun de artikler, hvis "Hvad betyder det for dig?"
         # bryder de målbare krav. Strammes kravene til feltet, koster det så
         # nogle få kald i stedet for at genskrive hele arkivet.
-        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+        kandidater = [a for a in artikler[:graense]
                       if not a.get("kun_aktuel")
                       and _betydning_problemer(a.get("betydning", ""))]
         print(f'📰 Genkører {len(kandidater)} artikler med en svag "betydning"')
     elif GENKOER_FILTER:
-        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+        kandidater = [a for a in artikler[:graense]
                       if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]
                                             + " " + a["kilde"]).lower()]
         print(f"📰 Genkører {len(kandidater)} artikler der matcher '{GENKOER_FILTER}'")
     else:
-        kandidater = [a for a in artikler[:DYBDE_ANTAL]
+        kandidater = [a for a in artikler[:graense]
                       if (GENKOER_ALT or not a.get("sektioner"))
                       and not a.get("kun_aktuel")]   # ingen fuld genfortælling
                                                      # af kilder med arkivforbud
@@ -1409,66 +1416,53 @@ def _anvend_brief(a: dict, r: dict, billeder: list[dict]) -> None:
 KATEGORIER = ["Lanceringer", "Hverdags-AI", "Penge & marked",
               "Politik & jura", "Samfund & etik", "Forskning"]
 
-SYSTEM_KATEGORI = f"""Du analyserer AI-nyheder for en almindelig dansker, der vil
-opdage muligheder for at tjene penge og være forberedt på fremtiden.
-
-For hver artikel giver du:
-
-1) "kategori" - PRÆCIS ÉN fra denne liste (skriv navnet nøjagtigt):
-- Lanceringer: nye modeller, produkter og funktioner - inkl. tests,
-  benchmarks og sammenligninger af modellers ydeevne
-- Hverdags-AI: værktøjer og funktioner almindelige mennesker selv kan bruge
-- Penge & marked: investeringer, opkøb, økonomi, aktier, forretning
-- Politik & jura: lovgivning, retssager, ophavsret, sanktioner, regulering
-- Samfund & etik: jobs, deepfakes, sikkerhed, strømforbrug, AI's påvirkning af samfundet
-- Forskning: videnskabelige artikler, metoder og gennembrud
-
-2) "prio" - vigtighed 1-10 for læseren:
-- 9-10: store modellanceringer, ægte gennembrud, nye muligheder man selv kan
-  udnytte NU, store markedsskift der påvirker almindelige menneskers økonomi
-- 6-8: væsentlige produktnyheder, vigtige benchmarks, betydelig regulering,
-  tendenser der er værd at forberede sig på
-- 3-5: almindelige branchenyheder, mindre opdateringer
-- 1-2: inkrementel/niche-forskning, akademiske detaljer, smalle tekniske emner
-
-VÆR NÆRIG MED DE HØJE TAL. Prioriteten styrer, hvad der kommer øverst på
-forsiden, og hvad der bliver delt - så inflation ødelægger den. Retningslinje
-for en normal dag: de FLESTE artikler ligger på 3-6. Kun ganske få når 7-8.
-9-10 er en historie, en dansk avis ville skrive om - typisk én om ugen, ikke
-én om dagen. Er du i tvivl mellem to tal, så vælg det laveste.
-
-Svar KUN med et JSON-array i samme rækkefølge som input:
-[{{"kategori": "Lanceringer", "prio": 9}}, ...]"""
+SYSTEM_KATEGORI = redaktion.PROMPT
 
 
 def klassificer(artikler: list[dict]) -> None:
-    """Giver hver artikel indholdskategori + vigtighedsscore via AI (én gang pr. artikel)."""
-    mangler = [a for a in artikler if not a.get("kat_ai") or "prio" not in a]
-    if not mangler:
+    """Versionerede delvurderinger med stabile id'er og validering før caching."""
+    mangler = [a for a in artikler if redaktion.vurdering(a) is None]
+    if not API_KEY or not mangler:
         return
-    if not API_KEY:
-        print("🏷️  Ingen AI-nøgle - beholder kilde-kategorierne")
-        return
-    print(f"🏷️  Kategoriserer og prioriterer {len(mangler)} artikler …")
-    for i in range(0, len(mangler), 30):
-        batch = mangler[i:i + 30]
-        liste = [{"nr": j + 1, "titel": a["titel"], "tekst": a["resume"][:200]}
-                 for j, a in enumerate(batch)]
+    # Migration af gamle vurderinger er begrænset og fortsætter næste kørsel.
+    mangler.sort(key=lambda a: redaktion.dato(a) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    for i in range(0, min(len(mangler), 120), 12):
+        batch = mangler[i:i + 12]
+        opslag = {_artikel_slug(a["link"]): a for a in batch}
+        liste = [{"id": ident, "titel": a.get("titel", ""),
+                  "kilde": a.get("kilde", ""), "link": a["link"],
+                  "dato": str(a.get("dato") or ""),
+                  "tekst": a.get("resume", "")[:1400],
+                  "dansk_resume": a.get("resume_da", "")[:500]}
+                 for ident, a in opslag.items()]
         try:
             svar = parse_json_svar(hjerne_kald("kategori", SYSTEM_KATEGORI,
-                                           json.dumps(liste, ensure_ascii=False), 2500))
-            if isinstance(svar, list) and len(svar) == len(batch):
-                for a, r in zip(batch, svar):
-                    k = str(r.get("kategori", "")).strip()
-                    if k in KATEGORIER:
-                        a["kategori"] = k
-                        a["kat_ai"] = True
-                    try:
-                        a["prio"] = max(1, min(10, int(r.get("prio", 5))))
-                    except (ValueError, TypeError):
-                        a["prio"] = 5
+                                             json.dumps(liste, ensure_ascii=False), 5000))
+            if not isinstance(svar, list):
+                continue
+            # Et gentaget id er tvetydigt: afvis begge i stedet for at lade
+            # det sidste svar overskrive det første.
+            ids = [r.get("id") for r in svar if isinstance(r, dict) and isinstance(r.get("id"), str)]
+            accepteret = 0
+            for r in svar:
+                if not isinstance(r, dict) or not isinstance(r.get("id"), str):
+                    continue
+                ident = r["id"]
+                if ident not in opslag or ids.count(ident) != 1:
+                    continue
+                v = redaktion.valider(r, KATEGORIER)
+                if v is None:
+                    continue
+                a = opslag[ident]
+                a["redaktion"] = v
+                a["kategori"] = r["kategori"]
+                a["kat_ai"] = True
+                # Kompatibilitet med quiz, kontrolpanel og eksisterende arkiv.
+                a["prio"] = max(1, min(10, round(redaktion.grundscore(a) / 10)))
+                accepteret += 1
+            print(f"🗞️  Redaktion: {accepteret}/{len(batch)} vurderinger godkendt")
         except Exception as fejl:
-            print(f"  ⚠️  Kategorisering fejlede: {type(fejl).__name__}")
+            print(f"  ⚠️  Redaktionel vurdering fejlede: {type(fejl).__name__}")
 
 
 # ----- Dublet-historier (samme nyhed fra flere medier) -------------------------
@@ -2313,51 +2307,13 @@ Svar KUN med et JSON-array i samme rækkefølge som input:
 [{"motiv": "..."}, ...]"""
 
 
-KORT_PR_DAG = 5     # hero + 4 store kort - skal følge index.html
-
-
-def _kort_vaegt(a: dict) -> int:
-    """Samme vægt som forsidens prioAf() i index.html. Afviger den, vælger
-    crawleren ét sæt kort og forsiden et andet - og forskellen bliver til
-    kort med tomt billedfelt."""
-    return (a.get("prio") if a.get("prio") is not None else 5) + (1 if a.get("andre") else 0)
+def _kort_vaegt(a: dict) -> float:
+    return redaktion.score(a)
 
 
 def _kort_artikler(artikler: list[dict]) -> set:
-    """Links på de artikler, der vises som BILLEDKORT på forsiden: de 5
-    vigtigste pr. opdagelsesdag PR. FANE (hero + 4 kort). Resten vises som
-    tekstlinjer og bruger sitets genererede kunst - dem koster vi ikke
-    AI-billeder på.
-
-    Funktionen er en spejling af index.html. Hver gang de to er uenige om,
-    hvad der er et kort, står der et stort kort på forsiden med et tomt
-    billedfelt. Tre ting holder dem sammen:
-
-    1. **Fanerne deler ikke artikler.** "Nyheder" viser alt UNDTAGEN Forskning,
-       "Forskning" viser kun Forskning, og hver fane tegner sine egne 5 kort.
-       Blandede vi dem her, ville en forskningsartikel bruge en billedplads,
-       ingen ser på nyhedsfanen, mens kortet, der faktisk tog pladsen dér,
-       stod uden billede.
-    2. **Vægten er den samme** som forsidens - inkl. flerkilde-bonussen.
-    3. **`kun_aktuel` udelades IKKE.** Arkivforbuddet gælder udgiverens tekst:
-       vi gemmer ikke artiklen og bygger ingen artikelside. Men billedet er
-       vores eget, og rubrik/resume_da er vores egen omskrivning, så et kort
-       med arkivforbud må gerne illustreres. Forsiden viser dem som helt
-       almindelige kort - udelod vi dem, stod prio 7-historier med tomt
-       billedfelt (målt 26.07: to gjorde).
-    """
-    dage: dict = {}
-    for a in artikler:
-        if not a.get("rubrik"):
-            continue
-        dag = str(a.get("foerst_set") or a.get("dato") or "")[:10]
-        fane = "forskning" if a.get("kategori") == "Forskning" else "nyheder"
-        dage.setdefault((dag, fane), []).append(a)
-    valgte: set = set()
-    for gruppe in dage.values():
-        gruppe = sorted(gruppe, key=_kort_vaegt, reverse=True)
-        valgte.update(a["link"] for a in gruppe[:KORT_PR_DAG])
-    return valgte
+    """Billedbudget går til de udvalgte historier, ikke fem kort pr. dag."""
+    return {a["link"] for a in redaktion.udvaelg(artikler, antal=6)}
 
 
 def udfyld_billedmotiver(artikler: list[dict]) -> None:
@@ -2615,6 +2571,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             if gammel.get("kat_ai") and gammel.get("kategori"):
                 a["kategori"] = gammel["kategori"]
                 a["kat_ai"] = True
+            if isinstance(gammel.get("redaktion"), dict):
+                a["redaktion"] = gammel["redaktion"]
             if gammel.get("prio") is not None:
                 a["prio"] = gammel["prio"]
 
@@ -2998,9 +2956,9 @@ def lav_ugens_overblik(artikler: list[dict]) -> None:
             alder = (nu - datetime.fromisoformat(a["dato"])).days
         except (TypeError, ValueError):
             continue
-        if alder <= 7 and a.get("rubrik") and a.get("kategori") != "Forskning":
+        if 0 <= alder <= 7 and a.get("rubrik"):
             friske.append(a)
-    friske.sort(key=lambda a: ((a.get("prio") or 5) + (1 if a.get("andre") else 0)), reverse=True)
+    friske = redaktion.udvaelg(friske, antal=18, nu=nu)
 
     if gammel.get("uge") == noegle:
         # Indholdet er allerede skrevet i denne uge. Men siden GEN-RENDERES
@@ -3251,10 +3209,13 @@ li {{ font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }}
 footer {{ border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }}
 footer a {{ color:var(--accent); }}
 </style>
+<link rel="stylesheet" href="/assets/artikel.css">
 </head>
 <body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
 <div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
-<main>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">{html.escape(a.get("kategori") or "AI-nyt")} · {html.escape(a.get("kilde", ""))} · {dato_vis}</div>
 <h1>{rubrik}</h1>
 <p class="manchet">{resume}</p>
@@ -4263,19 +4224,7 @@ def _brief_blok(nu):
 
 
 def lav_dagens_brief(artikler: list[dict]) -> None:
-    """Fire 5-punkts overblik i døgnet (dansk tid) til forsiden.
-
-    Det var ÉT pr. døgn indtil 28.07. Overblikket fylder hele den første
-    skærm på forsiden, så en læser, der kiggede ind tre gange på en dag, fik
-    nøjagtig det samme at se hver gang - uanset at crawleren havde hentet nyt
-    nitten gange i mellemtiden. Der var intet at komme tilbage efter.
-
-    Det afgørende er `brugte`: uden den liste får modellen det samme stof at
-    vælge imellem klokken 12 som klokken 06, og den vælger de samme fem
-    historier igen. Så ville fire kald i døgnet koste fire gange så meget og
-    give præcis samme forside.
-
-    Fejler stille - briefet må aldrig vælte crawlet."""
+    """Kort overblik fra samme redaktionelle udvalg som forsiden, fire gange dagligt."""
     if not API_KEY:
         return
     try:
@@ -4299,26 +4248,16 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
                 gammel = json.loads(BRIEF_FIL.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
                 gammel = {}
-        if gammel.get("dato") == dag and gammel.get("blok") == blok:
+        if (gammel.get("dato") == dag and gammel.get("blok") == blok
+                and gammel.get("redaktion_version") == redaktion.VERSION):
             return   # blokkens brief findes allerede
 
-        # Historier, dagens tidligere overblik allerede har brugt. Ved
-        # dagskifte starter listen forfra - "brugt i går" er ikke brugt.
+        # Feltet beholdes for gamle klienter, men styrer ikke udvælgelsen.
         brugte = set(gammel.get("brugte") or []) if gammel.get("dato") == dag else set()
 
-        graense = (datetime.now(timezone.utc) - timedelta(hours=26)).isoformat()
-        friske = [a for a in artikler
-                  if a.get("rubrik")
-                  and (a.get("foerst_set") or a.get("dato") or "") >= graense]
-        friske.sort(key=lambda a: a.get("prio") or 5, reverse=True)
-        kandidater = [a for a in friske if a.get("link") not in brugte][:12]
-        # På en stille dag kan der ikke være 5 ubrugte historier tilbage om
-        # aftenen. Så er et gentaget overblik bedre end intet: uden det her
-        # ville blokken forsvinde fra forsiden resten af dagen.
-        if len(kandidater) < 5:
-            kandidater = friske[:12]
-        if len(kandidater) < 5:
-            return   # for stille et døgn til et overblik
+        kandidater = redaktion.udvaelg(artikler, antal=8, nu=nu, max_timer=72)
+        if len(kandidater) < 3:
+            return
 
         stof = [{"nr": i + 1, "rubrik": a["rubrik"],
                  "resume": (a.get("resume_da") or "")[:200]}
@@ -4327,12 +4266,15 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
 
         punkter = []
         for p in r if isinstance(r, list) else []:
+            if not isinstance(p, dict):
+                continue
             tekst = str(p.get("tekst", "")).strip()
             try:
-                link = kandidater[int(p.get("nr", 0)) - 1]["link"]
+                nr = int(p.get("nr", 0))
+                link = kandidater[nr - 1]["link"] if 1 <= nr <= len(kandidater) else ""
             except (ValueError, TypeError, IndexError):
                 link = ""
-            if len(tekst) >= 20:
+            if link and len(tekst) >= 20 and not any(p["link"] == link for p in punkter):
                 punkter.append({"tekst": tekst, "link": link})
         # Prompten tillader FÆRRE end 5 på en stille dag (hellere 3 ægte
         # punkter end 5 med gentagelser). Koden skal tillade det samme -
@@ -4344,13 +4286,13 @@ def lav_dagens_brief(artikler: list[dict]) -> None:
         valgte = punkter[:5]
         BRIEF_FIL.write_text(json.dumps(
             {"dato": dag, "blok": blok, "opdateret": nu.strftime("%H:%M"),
+             "redaktion_version": redaktion.VERSION,
              "gyldig_fra": gyldig_fra.isoformat(),
              # Skiftetiderne følger med ud, så forsiden kan skrive dem til
              # læseren uden at gætte. Ændres de her, ændres teksten med.
              "skift": list(BRIEF_SKIFT),
              "punkter": valgte,
-             # Alt hvad dagens overblik har vist indtil nu. Næste blok springer
-             # dem over, så de fire overblik ikke bliver det samme fire gange.
+             # Historik til ældre klienter; genbrug er ikke et fravalgskriterium.
              "brugte": sorted(brugte | {p["link"] for p in valgte if p.get("link")})},
             ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"☀️ «Det må du ikke misse» skrevet ({dag} skift {BRIEF_SKIFT[blok]}, "
@@ -4410,7 +4352,7 @@ def lav_ugens_quiz(artikler: list[dict]) -> None:
         graense = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
         kandidater = [a for a in artikler
                       if a.get("rubrik") and (a.get("dato") or "") >= graense]
-        kandidater.sort(key=lambda a: a.get("prio") or 5, reverse=True)
+        kandidater = redaktion.udvaelg(kandidater, antal=10)
         stof = [{"rubrik": a["rubrik"], "resume": a.get("resume_da", ""),
                  "detaljer": (a.get("detaljer") or [])[:3]} for a in kandidater[:10]]
         if len(stof) < 5:
@@ -5676,6 +5618,7 @@ def main() -> None:
 
     # Cache af tidligere omskrivninger (nøgle = link)
     cache: dict = {}
+    gemte_artikler: list[dict] = []
     foerst_set_gammel: dict = {}
     # `eget_foerst_set` hentes HER og ikke gennem `cache`. Cachen kræver en
     # `rubrik`, og den port er en anden end den, `foerst_set` går igennem: én
@@ -5685,7 +5628,8 @@ def main() -> None:
     eget_gammel: dict = {}
     if OUTPUT_FIL.exists():
         try:
-            for a in json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))["artikler"]:
+            gemte_artikler = json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))["artikler"]
+            for a in gemte_artikler:
                 if a.get("foerst_set") or a.get("dato"):
                     foerst_set_gammel[a["link"]] = a.get("foerst_set") or a.get("dato")
                 if a.get("eget_foerst_set"):
@@ -5711,14 +5655,19 @@ def main() -> None:
                                         "kategori": a.get("kategori", ""),
                                         "kat_ai": a.get("kat_ai", False),
                                         "navngivet": a.get("navngivet", False),
+                                        "redaktion": a.get("redaktion"),
                                         "prio": a.get("prio")}
         except (json.JSONDecodeError, KeyError):
             pass
 
-    # "Først set": hvornår crawleren så artiklen første gang. Der sorteres efter
-    # dette i stedet for kildens udgivelsestid, så nyopdagede artikler altid
-    # lander øverst - i stedet for at flette sig ind langt nede i listen.
-    # Se `_saet_foerst_set` for hvorfor `eget_foerst_set` sættes netop her.
+    # En vigtig historie må ikke forsvinde, fordi en kilde har et kort RSS-feed.
+    # Behold op til syv døgn fra aktiverede kilder med tilladt arkiv.
+    # Kilder med kun_aktuel må aldrig læses tilbage fra cache.
+    if feeds and not any(v.get("status") == "ok" for v in kilde_resultat.values()):
+        raise RuntimeError("Alle nyhedskilder fejlede; den eksisterende udgave bevares")
+    unikke = redaktion.behold_aktuelle(unikke, gemte_artikler, feeds, nu)
+
+    # Først-set bevares som historik. Prioritet bruger kildens udgivelsesdato.
     _foerst_set_butik = _laes_foerst_set_butik()
     _saet_foerst_set(unikke, foerst_set_gammel, nu, eget_gammel, _foerst_set_butik)
     _skriv_foerst_set_butik(_foerst_set_butik, nu)
@@ -5741,7 +5690,8 @@ def main() -> None:
         if "arxiv" in a.get("kilde", "").lower():
             a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke)
-    dybe_briefs(unikke)
+    unikke = redaktion.prioriter(unikke, nu)
+    dybe_briefs([a for a in unikke if not redaktion.reklame(a)])
     navngiv_rubrikker(unikke)   # sætter navn på gamle, anonyme overskrifter i klumper
     stram_betydninger(unikke)   # skriver gamle, for lange betydninger om i klumper
     udfyld_billedmotiver(unikke)
@@ -5794,6 +5744,7 @@ def main() -> None:
         "opdateret": nu.isoformat(),
         "antal": len(unikke),
         "artikler": unikke,
+        "forside": redaktion.forside(unikke, nu),
     }
     OUTPUT_FIL.parent.mkdir(exist_ok=True)
     OUTPUT_FIL.write_text(json.dumps(resultat, ensure_ascii=False, indent=2),
@@ -5804,12 +5755,12 @@ def main() -> None:
     # Først HER er tallene sande: en kilde kan have hentet 20 artikler og stå
     # med 12 i listen, fordi de øvrige var dubletter eller for gamle.
     skriv_kilde_status(alle_feeds, kilde_resultat, unikke, nu)
-    lav_rss(unikke)
+    lav_rss([a for a in unikke if not redaktion.reklame(a)])
     lav_ugens_overblik(unikke)
     lav_dagens_prompt()
     lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke)
-    del_paa_platforme(unikke)  # tørkørsel indtil OPSLAG_LIVE=ja
+    del_paa_platforme(redaktion.udvaelg(unikke, antal=6))  # tørkørsel indtil OPSLAG_LIVE=ja
     hent_laesertal()           # så gennemgangen kan se, hvad folk faktisk læser
     try:
         lav_youtube()          # må aldrig vælte nyhedscrawlet
@@ -5818,5 +5769,16 @@ def main() -> None:
     tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
 
 
+def opdater_forside_lokalt() -> None:
+    """Genberegn kun udvalg på eksisterende data, uden AI-, netværks- eller udsendelseskald."""
+    data = json.loads(OUTPUT_FIL.read_text(encoding="utf-8"))
+    data["forside"] = redaktion.forside(data["artikler"])
+    OUTPUT_FIL.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Forside opdateret: {len(data['forside']['udvalgte'])} historier. Artikelindhold og opdateringsdato bevaret.")
+
+
 if __name__ == "__main__":
-    main()
+    if "--opdater-forside" in sys.argv:
+        opdater_forside_lokalt()
+    else:
+        main()

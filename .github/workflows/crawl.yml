@@ -51,6 +51,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Kontrollér redaktionel udvælgelse
+        run: python3 _redaktion/proeve-redaktion.py
+
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

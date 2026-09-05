@@ -264,27 +264,25 @@ _legacy = [{"link": "https://a.dk/legacy", "kilde": "K", "titel": "T", "rubrik":
 ok("E2 men det virker stadig for en artikel uden hukommelse",
    kald("_gulv_paa_laante_tider", _legacy) == 1, _legacy)
 
-print("== F. dag-gruppen på forsiden må ikke ligge langt før udgivelsen ==")
-# Forsiden grupperer efter foerst_set; kortet viser dato. De to må ikke skride
-# fra hinanden. Før rettelsen sad tre kort under en overskrift 2-3 dage FØR den
-# dato, kortets egen tekst nævnte.
+print("== F. den nye forside bruger udgivelsesdatoen — først-set er kun historik ==")
+# Først-set er crawlerens historik og kan ligge før en korrigeret
+# udgivelsesdato. Forsiden grupperer ikke længere efter den historik.
+# Kontroller den faktiske dato-funktion frem for en nedlagt dag-gruppering.
 _skred = []
 for a in kopi:
-    _f = _dt.datetime.fromisoformat(str(a["foerst_set"]).replace("Z", "+00:00"))
     _d = a.get("dato")
-    _d = _d if isinstance(_d, _dt.datetime) else None
-    if _d is None:
-        try: _d = _dt.datetime.fromisoformat(str(a.get("dato")).replace("Z", "+00:00"))
-        except Exception: continue
-    if _f.tzinfo is None: _f = _f.replace(tzinfo=UTC)
+    try:
+        _d = _d if isinstance(_d, _dt.datetime) else _dt.datetime.fromisoformat(str(_d).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        continue
     if _d.tzinfo is None: _d = _d.replace(tzinfo=UTC)
-    if (_d.date() - _f.date()).days > 1:
-        _skred.append((a.get("rubrik") or a["titel"], _f.date(), _d.date()))
-print(f"     kort hvis dag-gruppe ligger mere end ét døgn før udgivelsen: {len(_skred)}")
-for r, f_, d_ in _skred[:5]:
-    print(f"       gruppe {f_}  udgivet {d_}  «{r[:42]}»")
-ok("F1 ingen kort sidder mere end ét døgn før sin egen udgivelsesdag",
+    if c.redaktion.dato(a) != _d.astimezone(UTC):
+        _skred.append(a.get("link"))
+ok("F1 forsiden bruger altid en gyldig udgivelsesdato før først-set",
    len(_skred) == 0, _skred[:3])
+_fixture = {"dato":"2026-09-03T12:00:00+02:00", "foerst_set":"2026-09-01T10:00:00Z"}
+ok("F2 et tidligt først-set flytter ikke den viste udgivelsesdag",
+   c.redaktion.dato(_fixture) == _dt.datetime(2026, 9, 3, 10, tzinfo=UTC))
 
 print()
 print(f"GROENNE {groen} · ROEDE {roed}")

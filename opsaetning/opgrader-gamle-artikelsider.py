@@ -26,7 +26,8 @@ dekorativt billede SKAL have tomt alt efter WCAG, så en blind udfyldning af
 alle alt="" ville være forkert, hvis skabelonen senere får et logo eller en
 pynteillustration.
 
-Rører ikke sider, der allerede har JSON-LD. Kan køres igen uden skade.
+Bevarer eksisterende JSON-LD. Tilføjer fælles læsedesign og navigation til
+alle ældre artikelsider. Kan køres igen uden at ændre allerede opgraderede sider.
 
     python3 opsaetning/opgrader-gamle-artikelsider.py --toerloeb   # vis kun
     python3 opsaetning/opgrader-gamle-artikelsider.py              # skriv
@@ -171,6 +172,14 @@ def opgrader(h: str) -> tuple[str, list[str]]:
         if n:
             h = ny
             aendret.append(f"alt-tekst x{n}")
+
+    if '/assets/artikel.css' not in h:
+        h = h.replace('</head>', '<link rel="stylesheet" href="/assets/artikel.css">\n</head>', 1)
+        aendret.append("fælles læsedesign")
+    if 'id="artikeltekst"' not in h:
+        h = h.replace('<body>', '<body>\n<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>', 1)
+        h = h.replace('<main>', '<main id="artikeltekst" tabindex="-1">\n<a class="article-back" href="/">← Tilbage til nyhederne</a>', 1)
+        aendret.append("navigation og tastaturadgang")
 
     return h, aendret
 

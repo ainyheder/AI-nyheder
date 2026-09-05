@@ -1,172 +1,107 @@
-# 🛰️ AI-nyheder
+# AI-nyheder
 
-Et lille AI-nyhedsmagasin: samler automatisk AI-nyheder fra gode kilder, **omskriver dem til ultrakort, letlæst dansk med Claude**, og viser dem på en magasin-forside med unik genereret kunst til hver historie.
+Danske AI-nyheder med en læsevenlig forside, korte overblik og permanente artikelsider. Siden bruger almindelig HTML, CSS og JavaScript og fungerer direkte på den eksisterende GitHub Pages-opsætning. Der er intet byggetrin.
 
-**Sådan hænger det sammen:**
+## Ombygningen, september 2026
 
-```
-opsaetning/  ──►  crawler.py  ──────────────►  data/articles.json  ──►  index.html
-(kilderne)      (henter nyt + omskriver          (alle artiklerne)       (magasinet +
-                 til dansk med Claude API)                                genereret kunst)
-```
+Forsiden har en hovedhistorie, et kort overblik, synlig søgning, emnefiltre og valg mellem **Vigtigst først** og **Nyeste først**. Artikelvisningen har større tekst og en begrænset linjebredde. Mobilmenu, tastaturbetjening, delelinks og browserens tilbage/frem understøttes. Læste artikler markeres lokalt; besøgstal ændrer ikke længere udvælgelsen.
 
-## 🔑 AI-omskrivningen (kræver én ting af jer)
+Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/artikel.css`. Deres artikler, kilder, permanente adresser og canonical-links er bevaret. Det store antal ændrede arkivfiler skyldes tilføjelsen af fælles CSS, en tilbagegenvej og tastaturadgang.
 
-Crawleren omskriver hver ny artikel til letlæst dansk og skriver komplette briefs af de 30 nyeste. Den kan bruge **DeepSeek eller Gemini** — den bruger automatisk den nøgle, der er sat op:
+## Sådan udvælges nyhederne
 
-| | DeepSeek V4-Flash | Gemini 3.5 Flash-Lite |
-|---|---|---|
-| Nøgle laves på | [platform.deepseek.com](https://platform.deepseek.com/api_keys) | [aistudio.google.com](https://aistudio.google.com) |
-| Secret-navn i GitHub | `DEEPSEEK_API_KEY` | `GEMINI_API_KEY` |
-| Pris pr. mio. tokens | $0.14 ind / $0.28 ud | $0.30 ind / $2.50 ud |
-| Bemærk | Dobbelt pris i peak: 01-04 og 06-10 UTC | Laver også artikelbillederne |
+`crawler.py` henter kilderne og får AI til at vurdere hver historie. `redaktion.py` validerer vurderingerne og beregner rækkefølgen. Den samme logik bruges til forsiden, brief-kandidater, ugens quiz og billedprioritering.
 
-Sæt nøglen ind i repo'et: **Settings → Secrets and variables → Actions → New repository secret**. Er begge nøgler sat, vælger crawleren DeepSeek — skift ved at oprette en *repository variable* `AI_UDBYDER` med værdien `gemini` (eller `deepseek`).
+| Kriterium | Vægt | Spørgsmål |
+|---|---:|---|
+| Nyhedsværdi | 25 % | Hvad er faktisk nyt? |
+| Betydning | 25 % | Hvilke konkrete følger har det for mennesker? |
+| Brugbarhed | 20 % | Kan læseren bruge indsigten eller træffe et bedre valg? |
+| Dokumentation | 20 % | Hvor godt understøtter det tilgængelige materiale påstanden? |
+| Dansk relevans | 10 % | Er der dokumenteret relevans for Danmark, EU eller danske brugere? |
 
-`GEMINI_API_KEY` skal være der uanset hvad: artikelbillederne laves altid af Googles billedmodel.
+AI giver hvert kriterium 0–5 og skriver en kort begrundelse samt eventuelle forbehold. Vurderingen bygger på det medsendte kildemateriale; den er ikke en selvstændig faktakontrol. Manglende oplysninger må ikke opfindes. Resultater matches med artikel-id og valideres, før de caches.
 
-Uden nøgle kører alt stadig — historierne vises bare på engelsk. Omskrivninger **caches** (nøgle = artiklens link), så hver artikel kun betales én gang. Typisk pris: 1-2 kr. første kørsel, derefter få øre pr. opdatering — eller 0 kr. med Geminis gratis-niveau.
+Udvælgelsen tager derefter højde for kildens **udgivelsesdato**, og gentagelser af samme kilde, kategori eller hovedaktør får et fradrag. Flere omtaler giver ikke i sig selv flere point. En vigtig forskningshistorie kan få en hovedplads. Reklameprægede opslag, perifert AI-stof, svagt dokumenterede historier og rygter får ingen hovedplads. På stille dage vises færre udvalgte historier.
 
-GitHub Actions kører crawleren automatisk hver 6. time, og GitHub Pages hoster siden gratis. Når først det er sat op, passer det sig selv.
+En artikel kan blive i overblikket i op til syv døgn efter udgivelsen, selv om den falder ud af kildens RSS-feed. Kilder, der er slået fra, eller har `kun_aktuel`, genindlæses ikke fra arkivet. Hvis samtlige aktive kilder fejler, stoppes kørslen, så den eksisterende udgave bevares.
 
----
+### Overgang fra gamle vurderinger
 
-## 🚀 Kom i gang (gøres af ÉN af jer)
+Vurderinger gemmes i artiklens `redaktion`-felt med versionsnummer. Ved næste kørsel med en fungerende AI-nøgle får op til 120 artikler den nye vurdering, i portioner på 12. Resten fortsætter ved næste kørsel. Indtil da bruges den eksisterende `prio` med den nye aktualitets- og variationslogik. Der skal ikke slettes data eller indstilles nye secrets.
 
-### 1. Læg projektet på GitHub
+Normalt prioriteres de 40 vigtigste artikler til dyb behandling, og billedbudgettet går til seks udvalgte historier. Et manglende billede giver et almindeligt tekstlayout og påvirker ikke historiens placering.
 
-1. Opret en konto på [github.com](https://github.com), hvis du ikke har en
-2. Klik **New repository**, kald det f.eks. `AI-nyheder`, vælg **Public** (kræves for gratis GitHub Pages)
-3. Åbn en terminal i denne mappe og kør:
+## Se siden lokalt
+
+Fra projektmappen:
 
 ```bash
-git init
-git add .
-git commit -m "Første version af AI-nyheder"
-git branch -M main
-git remote add origin https://github.com/DIT-BRUGERNAVN/AI-nyheder.git
-git push -u origin main
+python3 -m http.server 8000
 ```
 
-### 2. Tænd for GitHub Pages (gratis hosting)
+Åbn `http://localhost:8000`. Brug en webserver; dobbeltklik på HTML-filen kan ikke hente JSON-data.
 
-1. Gå til dit repo på GitHub → **Settings** → **Pages**
-2. Under *Build and deployment* → *Source*: vælg **Deploy from a branch**
-3. Vælg branch **main** og mappen **/ (root)** → **Save**
-4. Efter et minut ligger siden på `https://DIT-BRUGERNAVN.github.io/AI-nyheder/` 🎉
-
-### 3. Tjek at automatikken kører
-
-Gå til fanen **Actions** i dit repo. Workflowen "Crawl AI-nyheder" kører automatisk hver 6. time — og du kan altid starte den manuelt med **Run workflow**. Den henter nyheder og committer dem selv, hvorefter siden opdateres.
-
-### 4. Invitér din makker
-
-**Settings** → **Collaborators** → **Add people** → skriv makkerens GitHub-brugernavn. Når invitationen er accepteret, kan I begge pushe til projektet.
-
----
-
-## 👯 Sådan koder I to samtidig (uden at ødelægge noget for hinanden)
-
-Kernen er **Git + GitHub**: I har hver jeres lokale kopi og arbejder på hver jeres *branch*. Man kan aldrig komme til at overskrive hinandens arbejde ved et uheld.
-
-### Første gang (gøres af jer begge)
+Genberegn forsiden på eksisterende artikler, uden netværk, AI-kald eller udsendelser:
 
 ```bash
-git clone https://github.com/BRUGERNAVN/AI-nyheder.git
-cd AI-nyheder
+python3 crawler.py --opdater-forside
 ```
 
-### Den daglige arbejdsgang
+Kommandoen opdaterer kun `forside`-metadata i `data/articles.json`. Artikeltekster og deres opdateringsdato ændres ikke.
 
-```bash
-# 1. Hent altid det nyeste, før du går i gang
-git checkout main
-git pull
+Et fuldt crawl startes med `python3 crawler.py`. Det bruger de konfigurerede API-nøgler og den eksisterende automatisering, herunder eventuelle aktiverede nyhedsbreve og sociale opslag. Til almindelig lokal designkontrol er et fuldt crawl unødvendigt.
 
-# 2. Lav en branch til det, du vil bygge
-git checkout -b torben/moerkere-tema        # brug jeres eget navn/opgave
+## GitHub og automatisk opdatering
 
-# 3. Kod løs, og gem undervejs
-git add .
-git commit -m "Gjorde det mørke tema mørkere"
+Den eksisterende `.github/workflows/crawl.yml` bruges fortsat. Den kører ved push til `main`, manuelt og efter sin tidsplan. Den kører først test af udvælgelsen og derefter crawleren. GitHub Pages serverer filerne fra repoet som hidtil; `CNAME` er bevaret.
 
-# 4. Skub din branch op til GitHub
-git push -u origin torben/moerkere-tema
-```
+Secrets: `DEEPSEEK_API_KEY` eller `GEMINI_API_KEY` til teksten. Billeder kræver `GEMINI_API_KEY`. Eksisterende udbydervalg via `AI_UDBYDER` og individuelle instrukser i `_redaktion/hjerner.json` er bevaret. Ingen API-nøgler må lægges i kildekoden.
 
-Gå derefter ind på GitHub — den foreslår selv **"Compare & pull request"**. Opret pull requesten, lad makkeren kigge den igennem (eller merge selv, hvis det er småting), og klik **Merge**. Nu er din ændring en del af `main`, og makkeren får den med næste `git pull`.
+Ved upload skal de nye filer også med: især **`redaktion.py`, `assets/nyheder.css`, `assets/nyheder.js` og `assets/artikel.css`**. Ombygningen er lavet i det eksisterende projekt; den kræver hverken ny hosting eller et nyt repository.
 
-### De tre gyldne regler
+## Filer
 
-1. **Kod aldrig direkte på `main`** — lav altid en branch
-2. **Start altid med `git pull`** — så bygger du oven på det nyeste
-3. **Små, hyppige pull requests** er lettere at overskue end én kæmpestor
-
-> 💡 **Konflikt?** Hvis I har ændret i *præcis samme linjer*, siger Git til ved merge. Filen får markeringer som `<<<<<<<` — vælg hvilken version der skal gælde, slet markeringerne, commit igen. Det sker sjældent, når I arbejder i hver jeres branches og laver små PR's.
-
-> 💡 **Vil I kode live i samme fil samtidig** (som i Google Docs)? Installér extensionen **Live Share** i VS Code — så deler den ene sin editor, og den anden koder med i realtid. Godt til parprogrammering; Git-flowet ovenfor er stadig det, der gemmer arbejdet.
-
----
-
-## 💻 Kør projektet lokalt
-
-```bash
-# Hent friske nyheder (kræver kun Python 3 - ingen pip install!)
-python3 crawler.py
-
-# Start en lille lokal webserver
-python3 -m http.server
-
-# Åbn http://localhost:8000 i browseren
-```
-
-> ⚠️ Åbn ikke `index.html` ved at dobbeltklikke på den — browseren blokerer så indlæsningen af JSON-filen. Brug altid `python3 -m http.server`.
-
----
-
-## 🧩 Typiske ting at bygge videre på
-
-| Idé | Hvor kigger du? |
+| Fil | Ansvar |
 |---|---|
-| Tilføj/fjern nyhedskilder | `opsaetning/feeds.json` — tilføj bare en linje |
-| Ændr farver og udseende | `index.html` — CSS-variablerne øverst i `:root` |
-| Ændr hvor tit der crawles | `.github/workflows/crawl.yml` — cron-linjen |
-| Flere kategorier | Sæt `kategori` i `opsaetning/feeds.json`; filterknapperne dannes automatisk |
-| Nyt filter (f.eks. pr. kilde) | `index.html` — funktionen `filtrerede()` |
-| Ældre/nyere artikler med | `crawler.py` — `MAX_DAGE_GAMMEL` og `MAX_PER_FEED` |
+| `index.html` | Forsidens struktur og navigation |
+| `assets/nyheder.css` | Forside og læsevisning på mobil og pc |
+| `assets/nyheder.js` | Data, filtre, søgning, artikelvisning og fallback-sortering |
+| `assets/artikel.css` | Læsedesign for permanente artikelsider |
+| `crawler.py` | Kilder, AI-kald, cache, artikler og øvrig automatisering |
+| `redaktion.py` | Vurderingsprompt, validering, aktualitet og udvælgelse |
+| `opsaetning/feeds.json` | Nyhedskilder og deres indstillinger |
+| `data/articles.json` | Genererede artikler og fælles forsidevalg |
+| `opsaetning/opgrader-gamle-artikelsider.py` | Opgraderer gamle artikelsider uden at omskrive teksterne |
 
----
+## Kontroller
 
-## 📁 Filerne i projektet
+Udvælgelse, cache, id-matching, datoer, kilderegler og offline-opdatering:
 
-| Fil | Hvad den gør |
-|---|---|
-| `crawler.py` | Henter alle feeds, renser teksten, fjerner dubletter, gemmer JSON |
-| `opsaetning/feeds.json` | Listen over nyhedskilder — projektets "indstillinger" |
-| `data/articles.json` | Selve artiklerne (genereres automatisk — ret den aldrig i hånden) |
-| `index.html` | Hele hjemmesiden: HTML + CSS + JavaScript i én fil |
-| `opsaetning/youtube-kanaler.json` | Listen over YouTube-kanaler vi følger — inddelt i grupper |
-| `youtube.html` | Undersiden med AI-videoer fra YouTube |
-| `data/youtube.json` | Videoerne med danske resuméer (genereres automatisk) |
-| `.github/workflows/crawl.yml` | Automatikken: crawl hver 6. time + commit |
+```bash
+python3 _redaktion/proeve-redaktion.py
+```
 
-## 📺 YouTube-delen
+Forsidens DOM-adfærd testes med JSdom. Afhængigheden kan installeres uden for projektet:
 
-Samme kørsel henter også de nyeste videoer fra de kanaler, der står i
-`opsaetning/youtube-kanaler.json`. For hver video henter crawleren **underteksterne med tidskoder**
-og lader AI'en skrive et dansk resumé plus 3-6 **højdepunkter med tidsstempel** —
-så man kan klikke og springe direkte til det interessante sted i videoen.
+```bash
+npm install --prefix /tmp/ai-news-checks --no-audit --no-fund jsdom@26.1.0
+NODE_PATH=/tmp/ai-news-checks/node_modules node _redaktion/proeve-forside.js
+```
 
-Tidsstemplerne kontrolleres altid mod de rigtige undertekster (eller kanalens
-egne kapitler). Passer et tidsstempel ikke på noget, der faktisk bliver sagt,
-bliver punktet smidt væk — der kommer aldrig et link, som fører et forkert sted hen.
+Prøven kontrollerer rigtige artikler, Python/JavaScript-enighed, filtre, søgning, pagination, læser, fokus, historik, gamle links, blokeret lokal lagring og fejltilstande. Den tester DOM-adfærd, ikke pixel-layout i en rigtig browser.
 
-| Vil du … | Gør sådan |
-|---|---|
-| Følge en ny kanal | Tilføj en linje i `opsaetning/youtube-kanaler.json`. Kanal-ID'et (`UC…`) finder du i kanalsidens kildekode under `<link rel="canonical">` |
-| Ændre hvor langt tilbage vi kigger | `YT_MAX_DAGE` i `crawler.py` |
-| Skrue op/ned for AI-forbruget | `YT_MAX_AI_PR_KOERSEL` i `crawler.py` |
-| Filtrere Shorts og korte klip væk | `YT_MIN_LAENGDE` i `crawler.py` (sekunder) |
+Eksisterende crawlerregressioner:
 
-God fornøjelse! 🚀
+```bash
+PYTHONPATH=. python3 _redaktion/proeve-arv.py
+PYTHONPATH=. python3 _redaktion/proeve-tid.py
+PYTHONPATH=. python3 _redaktion/proeve-modelvalg.py
+PYTHONPATH=. python3 _redaktion/proeve-kilder.py
+```
 
+Opgradering af ældre artikelsider kan kontrolleres uden at skrive:
+
+```bash
+python3 opsaetning/opgrader-gamle-artikelsider.py --toerloeb
+```

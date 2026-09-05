@@ -1,196 +1,87 @@
-// Samlet prøve på forsiden: jsdom + de RIGTIGE datafiler.
-// Kører uden net: fetch læses fra disk.
-const fs = require("fs");
-const path = require("path");
-const { JSDOM, VirtualConsole } = require("jsdom");
-
-const REPO = process.env.PROEVE_REPO
-  || (fs.existsSync(path.join(__dirname, "repo", "crawler.py"))
-      ? path.join(__dirname, "repo")
-      : path.join(__dirname, ".."));
-let groen = 0, roed = 0;
-const fejl = [];
-function ok(navn, betingelse, ekstra = "") {
-  if (betingelse) { groen++; }
-  else { roed++; fejl.push(navn + " " + ekstra); console.log("  ROED  " + navn + " " + ekstra); }
+// DOM- og adfærdsprøve. Ingen browser eller netværksadgang kræves.
+// JSdom findes via NODE_PATH (se README). Rigtige data, fejl og gamle links.
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const {execFileSync}=require('node:child_process');
+const {JSDOM,VirtualConsole}=require('jsdom');
+const repo=path.resolve(__dirname,'..');
+const api=require(path.join(repo,'assets/nyheder.js'));
+const html=fs.readFileSync(path.join(repo,'index.html'),'utf8');
+const script=fs.readFileSync(path.join(repo,'assets/nyheder.js'),'utf8');
+const real=JSON.parse(fs.readFileSync(path.join(repo,'data/articles.json'),'utf8'));
+let checks=0;
+function ok(value,message){assert.ok(value,message);checks++;}
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function mount(data=real,{hash='',blockedStorage=false,fail=false}={}){
+  const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
+  const dom=new JSDOM(html,{url:'https://ainyheder.com/'+hash,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
+  const w=dom.window;
+  w.HTMLElement.prototype.scrollIntoView=function(){};
+  w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
+  w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+  w.fetch=async url=>({ok:!fail,status:fail?503:200,json:async()=>String(url).includes('youtube')?JSON.parse(fs.readFileSync(path.join(repo,'data/youtube.json'),'utf8')):JSON.parse(JSON.stringify(data))});
+  Object.defineProperty(w.navigator,'clipboard',{value:{writeText:async()=>{}}});
+  if(blockedStorage)Object.defineProperty(w,'localStorage',{get(){throw new Error('Storage blocked');}});
+  else{w.localStorage.setItem('visninger',JSON.stringify(Object.fromEntries(real.artikler.map(a=>[a.link,20]))));w.localStorage.setItem('laeste','null');}
+  w.eval(script);await pause(25);return {dom,w,errors,close:()=>dom.window.close()};
 }
-
-const jsFejl = [];
-const vc = new VirtualConsole();
-vc.on("jsdomError", e => jsFejl.push(String(e && e.message || e)));
-vc.on("error", (...a) => jsFejl.push("console.error: " + a.join(" ")));
-
-const html = fs.readFileSync(path.join(REPO, "index.html"), "utf-8");
-function monterFetch(w) {
-  w.fetch = (u) => {
-  const rel = String(u).replace(/^https?:\/\/[^/]+\//, "").split("?")[0];
-  const p = path.join(REPO, rel);
-  if (!fs.existsSync(p)) {
-    return Promise.resolve({ ok: false, status: 404, json: () => Promise.reject(new Error("404")), text: () => Promise.resolve("") });
-  }
-    const txt = fs.readFileSync(p, "utf-8");
-    return Promise.resolve({ ok: true, status: 200, json: () => Promise.resolve(JSON.parse(txt)), text: () => Promise.resolve(txt) });
-  };
-  w.matchMedia = w.matchMedia || (q => ({ matches: false, media: q, addListener() {}, removeListener() {}, addEventListener() {}, removeEventListener() {} }));
-  if (!w.navigator.serviceWorker) Object.defineProperty(w.navigator, "serviceWorker", { value: { register: () => Promise.resolve() }, configurable: true });
-}
-
-const dom = new JSDOM(html, {
-  url: "https://ainyheder.com/",
-  runScripts: "dangerously",
-  pretendToBeVisual: true,
-  virtualConsole: vc,
-  beforeParse: monterFetch,
-});
-const w = dom.window;
-
-// Andet vindue med en GAMMEL læsers gemte valg — podes FØR scriptet kører.
-// Aflæses i samme callback som resten, når begge har haft 3 sekunder.
-const domGammelVane = new JSDOM(html, {
-  url: "https://ainyheder.com/", runScripts: "dangerously",
-  pretendToBeVisual: true, virtualConsole: vc,
-  beforeParse: (w2) => {
-    monterFetch(w2);
-    try {
-      w2.localStorage.setItem("visning", "kompakt");
-      w2.localStorage.setItem("sortering", "vigtigst");
-    } catch (e) {}
-  },
-});
-
-// == Hero vælger på prio — prøvet med PODEDE data, begge grene ==
-const nu = Date.now();
-const lavFixture = (arts) => new JSDOM(html, {
-    url: "https://ainyheder.com/", runScripts: "dangerously",
-    pretendToBeVisual: true, virtualConsole: vc,
-    beforeParse: (w3) => {
-      monterFetch(w3);
-    const rigtig = w3.fetch;
-      w3.fetch = (u) => String(u).includes("articles.json")
-        ? Promise.resolve({ ok: true, status: 200,
-            json: () => Promise.resolve({ artikler: arts }),
-            text: () => Promise.resolve(JSON.stringify({ artikler: arts })) })
-        : rigtig(u);
-    },
-  });
-const art = (rubrik, prio, timerSiden) => ({
-    titel: rubrik, rubrik, resume: "r", resume_da: "Resumé.", prio,
-    kategori: "Lanceringer", kilde: "Test", link: "https://t.dk/" + rubrik,
-    foerst_set: new Date(nu - timerSiden * 3600e3).toISOString(),
-    dato: new Date(nu - timerSiden * 3600e3).toISOString(),
-  });
-// VIGTIGT om prio-valget i fixturene: breaking-bjælken støvsuger alt med
-// prio ≥ 8 inden for 48 timer (og prio 7, når der er færre end 4
-// kandidater) og ROTERER mellem dem hen over døgnet. Lå "den store" på
-// prio 9, var det bjælken - ikke heroen - der fik den, og hvilken artikel
-// bjælken tager, afhænger af klokkeslættet. Derfor: den store er prio 6
-// (under alle bjælkens grænser), notitsen prio 3, og fylden prio 4. Så er
-// bjælken tom, og påstandene prøver DET, de siger, de prøver: heroen.
-// Gren 1: friske findes — nyeste er prio 3, en ældre (men frisk) er prio 6
-const fxFrisk = lavFixture([art("Nyeste notits", 3, 1), art("Dagens store", 6, 8),
-                              art("Fyld A", 4, 12), art("Fyld B", 4, 14), art("Fyld C", 4, 16)]);
-// Gren 2: INGEN friske — nyeste er prio 2, den største er prio 6 og tre dage gammel
-const fxGammel = lavFixture([art("Gammel notits", 2, 30), art("Ugens store", 6, 72),
-                               art("Fyld D", 4, 80), art("Fyld E", 4, 90), art("Fyld F", 4, 100)]);
-
-setTimeout(() => {
-  const d = w.document;
-  ok("1 ingen JS-fejl", jsFejl.length === 0, jsFejl.slice(0, 3).join(" | "));
-
-  console.log("== forsiden efter 31.07: én visning, nyeste først, kølig palette ==");
-  // Knapperne er FJERNET - står de der igen, er beslutningen rullet tilbage
-  // ved et uheld. Og tegn() må ikke røre dem: en tidligere udgave kaldte
-  // getElementById("sortSkift").style på et element, der ikke findes - null-
-  // fejlen væltede HELE tegningen, og forsiden viste "Kunne ikke hente".
-  ok("N1 ingen sorterings-knapper i topbaren", !d.getElementById("sortSkift"));
-  ok("N2 ingen visnings-knapper i topbaren", !d.getElementById("visningSkift"));
-  ok("N3 forsiden står i nyeste-tilstand: 'Seneste historier' som sektionstitel",
-     /Seneste historier/.test(d.body.textContent));
-  ok("N4 og IKKE i dag-grupperet vigtigst-tilstand",
-     !/I går|I dag/.test([...d.querySelectorAll(".sektion-titel")].map(x => x.textContent).join("|")));
-  const rod = w.getComputedStyle(d.documentElement).getPropertyValue("--bg").trim();
-  ok("N5 baggrunden er den kølige tone, ikke avispapir",
-     rod === "#f6f7f9", rod);
-  ok("N6 theme-color følger med",
-     (d.querySelector('meta[name=theme-color]') || {}).content === "#f6f7f9");
-  // En gammel gemt indstilling må ikke give én læser en anden forside.
-  // Prøves i sit EGET vindue med localStorage podet FØR scriptet kører -
-  // ellers prøver påstanden ingenting, for et frisk vindue har ingen gemt værdi.
-  const d2 = domGammelVane.window.document;
-  ok("N7 en gammel gemt 'kompakt'-indstilling ignoreres",
-     !d2.querySelector(".kat-kolonner"), "kompakt-visningen blev tegnet");
-  ok("N7b og gemt 'vigtigst' giver stadig nyeste-forsiden",
-     /Seneste historier/.test(d2.body.textContent));
-  // Stjernen skal stadig sidde på de vigtige artikler
-  const stjerner = d.querySelectorAll(".vigtig-chip, .mikro-stjerne");
-  ok("N8 vigtigst-stjernen findes stadig på artiklerne", stjerner.length > 0,
-     "ingen ★ på forsiden - er prio-chippen røget med i faldet?");
-  // Klikker en læser fra forsiden ind på en artikel, må farveuniverset ikke
-  // skifte. Crawleren bærer sin egen kopi af paletten i tre skabeloner - de
-  // SKAL følge forsidens. Før 31.07 var alle fire varme; nu skal alle være kølige.
-  const kravlerKilde = fs.readFileSync(path.join(REPO, "crawler.py"), "utf-8");
-  ok("N10 artikelsidernes palette følger forsidens",
-     (kravlerKilde.match(/--bg:#f6f7f9/g) || []).length >= 3
-     && !/f4f2ec|e2ddd2|6d675d/.test(kravlerKilde),
-     "crawler.py har stadig den varme palette et sted");
-  ok("N9 heroen har en rubrik", (() => {
-       const heroT = (d.querySelector(".hero h1, .hero h2") || {}).textContent || "";
-       return heroT.trim().length > 0;
-     })(), "ingen hero-rubrik");
-  const kort = d.querySelectorAll(".kort, .mikro-kort, article");
-  ok("2 kort tegnes", kort.length > 5, "antal=" + kort.length);
-
-  const tekst = d.body.textContent || "";
-  ok("3 dagens overblik vises", /overblik|Dagens historie|Største historie/i.test(tekst));
-
-  const hero = d.querySelector(".kicker");
-  ok("4 hero har en etiket", !!hero && hero.textContent.trim().length > 3, hero && hero.textContent.slice(0, 40));
-
-  // Klik på et kort skal åbne læseren
-  const klikbar = d.querySelector("[onclick], .kort, .mikro-kort");
-  let aabnet = false;
-  if (klikbar) {
-    klikbar.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
-    const dlg = d.querySelector('[role="dialog"], .laeser, #laeser');
-    // Klassen "aaben" er det, der faktisk viser læseren. aria-hidden sættes
-    // aldrig, så det gamle tjek kunne ikke fejle - en mutation, der fjernede
-    // classList.add("aaben"), gik igennem med alt grønt.
-    aabnet = !!dlg && dlg.classList.contains("aaben");
-  }
-  ok("5 et klik åbner en artikel", aabnet, "dialog=" + !!d.querySelector('[role="dialog"], .laeser, #laeser'));
-
-  ok("6 spring-over-link findes", !!d.querySelector('a[href="#hovedindhold"]'));
-  ok("7 canonical peger på forsiden",
-     (d.querySelector('link[rel="canonical"]') || {}).href === "https://ainyheder.com/",
-     (d.querySelector('link[rel="canonical"]') || {}).href);
-
-  // Måling: hvilken dag bliver de to frigivne artikler grupperet under?
-  const arts = JSON.parse(fs.readFileSync(path.join(REPO, "data", "articles.json"), "utf-8")).artikler;
-  const maal = arts.filter(a => /Strømsvigt i Washington|Avoiding AI/.test(a.rubrik || ""));
-  maal.forEach(a => {
-    console.log("     MÅLT  «" + (a.rubrik || "").slice(0, 46) + "» udkom " +
-      String(a.dato).slice(0, 10) + ", grupperes under " + String(a.foerst_set).slice(0, 10));
-  });
-  // Påstanden er vendt om 28.07: efter rettelsen SKAL de ligge på deres egen
-  // udgivelsesdag. Prøven dokumenterer nu virkningen i stedet for fejlen.
-  ok("8 de to tidligere frigivne ligger nu på deres egen udgivelsesdag",
-     maal.every(a => String(a.foerst_set).slice(0, 10) === String(a.dato).slice(0, 10)),
-     "fundet=" + maal.length);
-  // Parse datoerne — strengsammenligning duer ikke, når nogle datoer har
-  // +02:00 og andre +00:00, og længderne er forskellige.
-  const alle = arts.filter(a => a.foerst_set && a.dato);
-  const foran = alle.filter(a => new Date(a.foerst_set).getTime() < new Date(a.dato).getTime());
-  console.log("     MÅLT  " + foran.length + " af " + alle.length + " artikler er set før deres egen udgivelse");
-
-  const heroFrisk = (fxFrisk.window.document.querySelector(".hero h1, .hero h2") || {}).textContent || "";
-  ok("N11 blandt friske vinder den vigtigste, ikke den nyeste",
-     /Dagens store/.test(heroFrisk), heroFrisk.slice(0, 50));
-  const heroGammel = (fxGammel.window.document.querySelector(".hero h1, .hero h2") || {}).textContent || "";
-  ok("N12 uden friske vinder stadig den vigtigste — ikke sidste indløb",
-     /Ugens store/.test(heroGammel), heroGammel.slice(0, 50));
-
-  console.log("");
-  console.log("GROENNE " + groen + " · ROEDE " + roed);
-  fejl.forEach(f => console.log("  - " + f));
-  process.exit(roed ? 1 : 0);
-}, 3000);
+(async()=>{
+  // Samme rækkefølge i Python og JS, for alle de rigtige artikler.
+  const now='2026-09-05T16:00:00+00:00';
+  const py=JSON.parse(execFileSync('python3',['-c',`import json,redaktion;from datetime import datetime;a=json.load(open('data/articles.json'))['artikler'];n=datetime.fromisoformat('${now}');print(json.dumps({'selected':[x['link'] for x in redaktion.udvaelg(a,nu=n)],'scores':[redaktion.score(x,n) for x in a]}))`],{cwd:repo,encoding:'utf8'}));
+  assert.deepEqual(api.select(real.artikler,6,Date.parse(now)).map(a=>a.link),py.selected);checks++;
+  assert.deepEqual(real.artikler.map(a=>api.score(a,Date.parse(now))),py.scores);checks++;
+  for(const url of ['javascript:alert(1)','data:text/html,test','//evil.example','http://[',''])ok(api.safeUrl(url)==='','Usikkert link afvises: '+url);
+  for(const url of ['../secrets','/other.html','data/img/../../secret','https://evil.example/x.jpg'])ok(api.safeUrl(url,true)==='','Ugyldig lokal sti afvises');
+  ok(api.escapeHtml('<img onerror="x">').includes('&lt;'),'HTML escapes');
+  const test=await mount();const {w}=test,d=w.document;
+  ok(d.querySelectorAll('.lead-story').length===1,'Én hovedhistorie');
+  ok(d.querySelectorAll('.quick-item').length===4,'Kort overblik');
+  ok(d.querySelectorAll('.news-row').length===12,'Første side er begrænset');
+  ok(!test.errors.length,'Ingen scriptfejl: '+test.errors.join(', '));
+  ok(w.localStorage.getItem('visninger')===null,'Gammel skjult rotation ryddes');
+  ok(d.querySelectorAll('#videoer a').length===3,'Eksisterende videoer kan åbnes');
+  ok([...d.querySelectorAll('a[data-article]')].every(a=>api.safeUrl(a.getAttribute('href'),true)||api.safeUrl(a.getAttribute('href'))),'Nyhedslinks virker uden klikhandler');
+  d.getElementById('visFlere').click();ok(d.querySelectorAll('.news-row').length===24,'Vis flere');
+  d.querySelector('[data-category="Forskning"]').click();
+  ok([...d.querySelectorAll('.news-row .category')].every(n=>n.textContent==='Forskning'),'Emnefilter');
+  ok(d.activeElement.dataset.category==='Forskning','Tastaturfokus bevares ved emnevalg');
+  d.getElementById('nulstil').click();
+  const input=d.getElementById('soeg');input.value='gpt-6 astra';input.dispatchEvent(new w.Event('input'));await pause(150);
+  ok(d.querySelectorAll('.news-row').length>0,'Søgning uden forskel på store/små bogstaver');
+  input.value='xyz-findes-slet-ikke';input.dispatchEvent(new w.Event('input'));await pause(150);
+  ok(d.querySelector('.empty-state h3').textContent==='Ingen historier matcher','Tomt søgeresultat');
+  d.querySelector('[data-reset]').click();ok(d.querySelectorAll('.news-row').length===12,'Nulstilling');
+  d.getElementById('sortering').value='nyeste';d.getElementById('sortering').dispatchEvent(new w.Event('change'));
+  const latest=[...real.artikler].filter(a=>!api.promotional(a)).sort((a,b)=>api.timestamp(b)-api.timestamp(a))[0];
+  ok(d.querySelector('.news-row h3 a').dataset.article===latest.link,'Nyeste er kildens udgivelsesdato');
+  const first=d.querySelector('.lead-story h2 a');const target=first.dataset.article;first.click();
+  ok(d.getElementById('laeser').open,'Artiklen åbnes');
+  ok(d.getElementById('laeserTitel').textContent===real.artikler.find(a=>a.link===target).rubrik,'Rigtig artikel');
+  ok(d.activeElement.id==='laeserTitel','Læserens fokus flyttes ind');
+  ok(w.location.hash.startsWith('#a='),'Delelink og historik');
+  ok(d.querySelector('.source-links a'),'Originalkilde er synlig');
+  d.getElementById('delArtikel').click();await pause(5);ok(d.getElementById('delStatus').textContent==='Linket er kopieret','Kopiér artikel-link');
+  d.getElementById('lukLaeser').click();await pause(40);
+  ok(!d.getElementById('laeser').open&&!d.body.classList.contains('reader-open'),'Luk og browser-tilbage');
+  ok(d.activeElement.dataset.article===target,'Fokus vender tilbage til historien');
+  ok(JSON.parse(w.localStorage.getItem('laeste'))[target]>0,'Læst-markering gemmes');
+  w.history.forward();await pause(40);ok(d.getElementById('laeser').open,'Browser-frem genåbner artiklen');
+  d.getElementById('laeser').dispatchEvent(new w.Event('cancel',{cancelable:true}));await pause(40);ok(!d.getElementById('laeser').open,'Escape lukker');
+  d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='true','Mobilmenu åbnes');
+  d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='false','Mobilmenu lukkes');
+  ok(!test.errors.length,'Ingen fejl efter interaktioner');test.close();
+  const direct=await mount(real,{hash:'#a='+encodeURIComponent(real.artikler[0].link),blockedStorage:true});
+  ok(direct.w.document.getElementById('laeser').open,'Gammelt direkte delelink og blokeret lagring');ok(!direct.errors.length,'Blokeret localStorage vælter ikke siden');direct.close();
+  const gone=await mount(real,{hash:'#a='+encodeURIComponent('https://example.com/old-story')});
+  ok(!gone.w.document.getElementById('dataBesked').hidden,'Gammel artikel giver en vedvarende forklaring');ok(gone.w.document.querySelector('#dataBesked a').href==='https://example.com/old-story','Gammelt link beholder originalkilden');gone.close();
+  const broken=await mount(real,{hash:'#a='+encodeURIComponent('javascript:alert(1)')});ok(!broken.w.document.querySelector('#dataBesked a'),'Usikkert delt link bliver aldrig aktivt');broken.close();
+  const fail=await mount(real,{fail:true});ok(fail.w.document.getElementById('proevIgen'),'Netværksfejl har prøv-igen-knap');ok(!fail.errors.length,'Netværksfejl håndteres');fail.close();
+  const empty=await mount({artikler:[]});ok(empty.w.document.querySelector('.empty-state'),'Tomt feed håndteres');ok(!empty.errors.length,'Tomt feed uden fejl');empty.close();
+  const stale=await mount({...real,opdateret:'2020-01-01T12:00:00Z',forside:null});ok(!stale.w.document.getElementById('dataBesked').hidden,'Gamle data kaldes ikke aktuelle');stale.close();
+  const hostileArticle={...real.artikler[0],rubrik:'<img src=x onerror=alert(1)>',dato:new Date().toISOString(),billede:'javascript:alert(1)',sektioner:[{overskrift:'<script>x</script>',tekst:'<img onerror=x>'}],andre:[null],figurer:[null]};
+  const hostile=await mount({artikler:[hostileArticle],opdateret:new Date().toISOString()});hostile.w.document.querySelector('a[data-article]').click();
+  ok(!hostile.w.document.querySelector('#artikelIndhold img'),'Artikelfelter indsætter ikke HTML');ok(!hostile.errors.length,'Ufuldstændige felter håndteres');hostile.close();
+  console.log(`OK: ${checks} kontroller. Rigtige data, sortering, filtre, læser, historik, lagring, fejl og sikre links.`);
+})().catch(e=>{console.error(e);process.exitCode=1;});

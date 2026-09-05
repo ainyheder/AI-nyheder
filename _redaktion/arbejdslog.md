@@ -4,6 +4,231 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-09-01 kl. 04:03 · Sprang over — mappen er 289 commits bagud
+
+**UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** de samme seks filer ligger
+stadig ucommittet — `_redaktion/analyse-seneste.md`,
+`_redaktion/arbejdsinstruks.md`, `_redaktion/arbejdslog.md`,
+`_redaktion/opgavekoe.md` (ændrede) samt `_redaktion/er-repoet-friskt.py` og
+`_redaktion/proeve-friskhed.py` (nye). De har nu ligget siden **14.08 — atten
+døgn** uden at være hentet.
+
+**Sprang over.** `python3 _redaktion/er-repoet-friskt.py` svarede **1**:
+*"Mappen er 289 commits bagud i forhold til origin/main, og 32 af de
+bagudliggende filer er KODE"* — bl.a. `crawler.py`, `cookies.html`,
+`erhverv-1.html`, `erhverv-2.html`, `assets/Logo.png`. Det er **kodefiler
+bagud**, ikke kun crawlerens data, så jeg rørte ikke kode og sprang fase 0–3
+over. Ingen filer var rørt af et menneske inden for 30 minutter.
+
+**Låsen fra i går lå der stadig** (`2026-08-31T04:39:02`, godt et døgn gammel).
+Den er efterladt af den afbrudte kørsel, ikke aktiv, så jeg overskrev den efter
+reglen og sletter den nu.
+
+**Efterslæbet vokser fortsat.** Lokal HEAD er `cdc32d7` fra **31.07**;
+origin/main står på `aee1518` fra **31.08**. Målt over tid: 86 (14.08) → 93
+(15.08) → 152 (19.08) → 155 (20.08) → 285 (31.08) → **289 nu**. Mappen er nu
+**en måned og en dag bagud**.
+
+**Live-tjekket: siden lever.** Forsiden på ainyheder.com svarer normalt med
+logo, nyhedssektion, uge-, YouTube-, lær- og om-links. Origin/mains
+`data/articles.json` er stemplet **2026-08-31T22:59** med **98 artikler** —
+disken står på **2026-07-31T07:28** med 112. Verden er altså en måned foran
+mappen, og alt, hvad jeg kunne måle på disken, ville beskrive en side, der ikke
+findes længere.
+
+**Til redaktionen:** det her er tolvte kørsel i træk uden arbejde. Åbn GitHub
+Desktop, **commit de seks ventende `_redaktion/`-filer først**, og træk så ned
+(Pull origin). Indtil da kan ingen session lave noget som helst — hverken køen,
+efterprøvningen eller fase 2. Siden selv fejler intet; det er kun den her mappe,
+der står stille.
+
+## 2026-08-31 kl. 04:39 · Sprang over — mappen er 285 commits bagud
+
+**UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** de samme seks filer ligger
+stadig ucommittet — `_redaktion/analyse-seneste.md`,
+`_redaktion/arbejdsinstruks.md`, `_redaktion/arbejdslog.md`,
+`_redaktion/opgavekoe.md` (ændrede) samt `_redaktion/er-repoet-friskt.py` og
+`_redaktion/proeve-friskhed.py` (nye). De har nu ligget siden **14.08 — sytten
+døgn** og er stadig ikke hentet af nogen.
+
+**Sprang over.** `python3 _redaktion/er-repoet-friskt.py` svarede **1**:
+*"Mappen er 285 commits bagud i forhold til origin/main, og 32 af de
+bagudliggende filer er KODE"* — bl.a. `crawler.py`, `cookies.html`,
+`erhverv-1.html`, `erhverv-2.html` og `assets/Logo.png`. Det er **kodefiler
+bagud**, ikke kun crawlerens data, så jeg rørte ikke kode og sprang fase 0–3
+over. Ingen filer var rørt af et menneske inden for 30 minutter.
+
+**Efterslæbet vokser stadig.** Lokal HEAD er `cdc32d7` fra **31.07**;
+origin/main står på `4119a8e` fra **30.08**. Målt over tid: 86 (14.08) → 93
+(15.08) → 152 (19.08) → 155 (20.08) → **285 nu**. Der er kommet 67 commits på
+origin de sidste syv døgn, så crawleren kører fint på GitHub — det er kun den
+her mappe, der står stille. **Mappen er nu en måned bagud.**
+
+**Live-tjekket lykkedes denne gang — og siden lever.** Forsiden svarer,
+`uge.html` viser **uge 35, dateret 28.08.2026**, og origin/mains
+`data/articles.json` er stemplet `2026-08-30T22:00`. Til sammenligning står
+disken på `2026-07-31T07:28`. Konkret afstand mellem disk og verden:
+
+| | disk | origin/main |
+|---|---|---|
+| artikler i `articles.json` | 112 | 83 |
+| filer i `artikel/` | 295 | 1231 |
+| filer i `video/` | 56 | 141 |
+
+`data/articles.json` kunne ikke hentes direkte over nettet (URL uden for det
+tilladte sæt), så antallet på nettet er læst fra origin/main i stedet.
+
+**Ét fund, der skal måles efter, når mappen er hentet ned:** `feed.xml` hentet
+live fra `https://ainyheder.com/feed.xml` indeholder 40 poster, hvor den nyeste
+er dateret **13.08.2026**. Den samme fil i origin/main har nyeste post
+**30.08.2026**. Live-RSS'en er altså tilsyneladende **18 døgn bagud**, mens
+`uge.html` på samme domæne er frisk. Jeg kan **ikke** afgøre herfra, om det er
+en rigtig fejl eller bare en cachet kopi (Cloudflare eller hentelaget), og jeg
+måtte ikke skrive i køen i dag. **Det hører til i `## Mistanker`, ikke i `## Kø`
+— det er set, ikke målt.** Værd at tjekke først, for en RSS, der står stille i
+atten døgn, er usynlig for enhver, der abonnerer.
+
+**Læsere (7 døgn, fra origin/mains `laesertal.json` af 30.08):** 40 besøg, 81
+sidevisninger, alle 40 fra "direkte" — 0 fra Google, 0 fra Facebook.
+
+**Efterladt låsefil igen.** `_redaktion/.koerer` stod med
+`2026-08-20T10:17:17+02:00`, altså **11 døgn** gammel — langt over de tre timer.
+Efter instruksen er den efterladt af en afbrudt session, så jeg overskrev den og
+sletter den, før jeg slutter. At den har ligget urørt i elleve døgn passer med,
+at ingen kørsel har kunnet arbejde i mellemtiden.
+
+**Til redaktionen:** loopet har nu stået stille i **sytten døgn** (kørsler
+14.08, 15.08, 19.08, 20.08 og i nat er alle sprunget over af samme grund).
+Det eneste, der frigør det, er ét klik: **træk ned i GitHub Desktop.** De seks
+ucommittede filer i `_redaktion/` bør committes eller kasseres først, ellers
+kommer de med i flettekonflikten. Så snart det er gjort, kan næste kørsel tage
+hele turen igen.
+
+---
+
+## 2026-08-20 kl. 10:17 · Sprang over — mappen er 155 commits bagud
+
+**UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** de samme seks filer ligger
+stadig ucommittet — `_redaktion/analyse-seneste.md`,
+`_redaktion/arbejdsinstruks.md`, `_redaktion/arbejdslog.md`,
+`_redaktion/opgavekoe.md` (ændrede) samt `_redaktion/er-repoet-friskt.py` og
+`_redaktion/proeve-friskhed.py` (nye). De har ligget siden 14.08 og er stadig
+ikke hentet af nogen.
+
+**Sprang over.** `python3 _redaktion/er-repoet-friskt.py` svarede **1**:
+*"Mappen er 155 commits bagud i forhold til origin/main, og 32 af de
+bagudliggende filer er KODE"* — bl.a. `crawler.py`, `cookies.html`,
+`erhverv-1.html`, `erhverv-2.html`, `assets/Logo.png` og resten af rodsiderne.
+Det er **kodefiler bagud**, ikke kun crawlerens data, så jeg rørte ikke kode og
+sprang fase 0–3 over.
+
+**Mappen er nu 20 døgn bagud.** Lokal HEAD er `cdc32d7` fra **31.07**;
+origin/main står på `cda56af` fra **i dag, 20.08**. Efterslæbet målt over tid:
+86 commits (14.08) → 93 (15.08) → 152 (19.08) → **155 nu**. Kun tre commits på
+det seneste døgn, hvilket passer med, at crawleren kører videre på GitHub, mens
+den her mappe står stille.
+
+**Live-tjekket kunne ikke gennemføres.** Netværksadgangen i denne session
+tillod ikke at hente `https://ainyheder.com/data/articles.json` (URL uden for
+det tilladte sæt). Jeg forsøgte ikke andre veje. Jeg ved altså **ikke**, om
+siden svarer i dag — det er værd at bemærke, fordi det ellers er fase 0's første
+og vigtigste måling.
+
+**Efterladt låsefil igen.** `_redaktion/.koerer` stod med
+`2026-08-19T23:06:40+02:00`, altså 11 timer gammel og langt over de tre timer.
+Efter instruksen er den efterladt af en afbrudt session, så jeg overskrev den og
+sletter den, før jeg slutter.
+
+**Til redaktionen:** loopet har nu stået stille i **seks døgn** (kørsler 14.08,
+15.08, 19.08 og i dag er alle stoppet på samme sten) og kan ikke selv komme
+videre — det må hverken pulle, merge eller committe. **Træk ned i GitHub
+Desktop.** De seks ucommittede filer rører kun `_redaktion/`; commit dem gerne
+først, så arbejdet ikke går tabt i merget. Indtil det sker, er hver kørsel
+spildt.
+
+**Jeg opdaterede ikke kontrolpanelet.** Det ville skrive i `data/hjerne-data.js`,
+som selv ligger bagud — altså præcis den flettekonflikt, scriptet advarer imod.
+Panelet viser derfor stadig loggen fra sidst; denne post kan kun læses i
+`arbejdslog.md`, indtil der er trukket ned.
+
+---
+
+## 2026-08-19 kl. 23:06 · Sprang over — mappen er 152 commits bagud
+
+**UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** der ligger stadig
+ucommittet arbejde i mappen — `_redaktion/analyse-seneste.md`,
+`_redaktion/arbejdsinstruks.md`, `_redaktion/arbejdslog.md`,
+`_redaktion/opgavekoe.md` (ændrede) samt de to nye filer
+`_redaktion/er-repoet-friskt.py` og `_redaktion/proeve-friskhed.py`. Det er
+fortsat ikke hentet af nogen — det har ligget siden 14.08.
+
+**Sprang over.** `python3 _redaktion/er-repoet-friskt.py` svarede **1**:
+*"Mappen er 152 commits bagud i forhold til origin/main, og 32 af de
+bagudliggende filer er KODE"* — bl.a. `crawler.py`, `cookies.html`,
+`erhverv-1.html`, `erhverv-2.html`, `assets/Logo.png` og resten af rodsiderne.
+Det er **kodefiler bagud**, ikke kun crawlerens data: retter jeg noget i dag,
+afleverer jeg en flettekonflikt i netop de filer, redaktionen skal committe i
+hånden. Derfor rørte jeg ikke kode, sprang fase 0–3 over og sluttede.
+
+**Efterslæbet vokser stadig:** 86 commits bagud 14.08, 93 den 15.08, **152 nu**
+den 19.08 — knap 60 commits mere på fire døgn. Mappen er nu **nitten døgn**
+bagud, og hver kørsel siden 14.08 er stoppet på den samme sten.
+
+**Jeg fandt også en efterladt låsefil.** `_redaktion/.koerer` stod med
+`2026-08-15T03:49:10+02:00`, altså fire døgn gammel — langt over de tre timer.
+Instruksen siger, at den så er efterladt af en afbrudt session, så jeg overskrev
+den og sletter den, som jeg skal, før jeg slutter. Det bekræfter blot, at 15.08
+var seneste kørsel: der har ikke kørt noget i fire døgn.
+
+**Til redaktionen:** loopet har nu stået stille i fem døgn og kan ikke selv komme
+videre — det må hverken pulle, merge eller committe. **Træk ned i GitHub
+Desktop.** De seks ucommittede filer ovenfor rører kun `_redaktion/`; commit dem
+gerne først, så det arbejde ikke går tabt i en merge. Indtil det sker, er hver
+natkørsel spildt, og `data/` bliver ældre, end fase 0 kan måle på.
+
+**Jeg opdaterede ikke kontrolpanelet.** Det ville skrive i `data/hjerne-data.js`,
+som er en af de filer, der ligger bagud — altså præcis den flettekonflikt,
+scriptet advarer imod. Panelet viser derfor loggen, som den så ud sidst; denne
+post kan kun læses i `arbejdslog.md`, indtil der er trukket ned.
+
+---
+
+## 2026-08-15 kl. 03:49 · Sprang over — mappen er 93 commits bagud
+
+**UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** der ligger ucommittet
+arbejde fra 14.08 i mappen — `_redaktion/analyse-seneste.md`,
+`_redaktion/arbejdsinstruks.md`, `_redaktion/opgavekoe.md` (ændrede) samt de to
+nye filer `_redaktion/er-repoet-friskt.py` og `_redaktion/proeve-friskhed.py`.
+Det er ikke hentet af nogen endnu.
+
+**Sprang over.** `python3 _redaktion/er-repoet-friskt.py` svarede **1**:
+*"Mappen er 93 commits bagud i forhold til origin/main, og 32 af de
+bagudliggende filer er KODE"* — bl.a. `crawler.py`, `index.html`, `uge.html`,
+`cookies.html` og 30 rodsider. Det er **kodefiler bagud**, ikke kun crawlerens
+data: retter jeg noget i dag, afleverer jeg en flettekonflikt i netop de filer,
+redaktionen skal committe i hånden. Derfor rørte jeg ikke kode, sprang fase 0–3
+over og sluttede.
+
+**Det bliver værre, ikke bedre:** 86 commits bagud 14.08 kl. 03:22, 93 nu — syv
+commits mere på et døgn. Lokal HEAD er stadig `cdc32d7` fra 31.07 kl. 09:41;
+`origin/main` står på `a1c1cc0` fra 14.08 kl. 23:47. Mappen er nu **femten døgn**
+bagud.
+
+**Én ting mere, der ikke var opdaget:** 14.08-sessionens analyse henviser flere
+gange til "log-posten", men **den findes ikke** — hverken lokalt eller på
+origin/main er `arbejdslog.md` rørt siden 28.07. Den kørsel målte hele køen om
+og skrev det kun i `analyse-seneste.md`. Loggen mangler altså et døgns arbejde,
+og næste kørsels fase 0 punkt 4 ("tjek sidste kørsels arbejde") har intet at
+læse. Det kan ikke rettes uden at gætte, så det står her i stedet.
+
+**Til redaktionen:** vi er stoppet på samme sten to døgn i træk, og loopet kan
+ikke selv komme videre — det må ikke pulle. **Træk ned i GitHub Desktop.** De
+fem ucommittede filer ovenfor rører kun `_redaktion/`, som er identisk med
+remote, så de giver ingen konflikt; commit dem gerne først, så det arbejde ikke
+går tabt i en merge.
+
+---
+
 ## 2026-07-28 (kl. 07:0x, chat) · Nul besøg er ikke et fund, mens siden bygges
 
 **Torben stoppede mig i noget, jeg selv havde skrevet ind.** Punktet *"Tre faste

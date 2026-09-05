@@ -82,7 +82,28 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
 
 ### 1 — I stykker for læseren lige nu
 
-*Ingen kendte lige nu.*
+- [ ] **Den lokale mappe er 86 commits bagud, og loopet har arbejdet på en
+      frossen kopi i fjorten døgn.** Målt 14.08 kl. 03:22:
+      `git rev-list --count HEAD..origin/main` = **86**. Sidste lokale commit
+      er `cdc32d7` fra **31.07 kl. 09:41**; remote står på `e5c39ff` fra
+      **13.08 kl. 22:29**. `data/articles.json` på disken siger 112 artikler og
+      `opdateret` 31.07; den samme fil over nettet siger **113** og 13.08.
+      **Hvad det koster:** hver eneste måling i køen nedenfor er lavet mod kode
+      og data, ingen har set siden 31. juli. Ud over data er `crawler.py`
+      (+53 linjer), `index.html`, `uge.html` og 33 rodsider ændret på remote —
+      så en session, der retter en af dem, afleverer en flettekonflikt i netop
+      de filer, redaktionen skal committe i hånden.
+      **Ikke i stykker for en læser:** siden bygges af GitHub Actions fra
+      remote og fejler ikke. Punktet står her alligevel, fordi det er i stykker
+      for *arbejdet* — og fordi trin 1 også dækker "forkerte tal".
+      **Rammer: 456 visninger/7 dage (forsiden)** — alt, hvad loopet kunne have
+      rettet i fjorten døgn, ligger stille.
+      **Kun redaktionen kan lukke det:** træk ned i GitHub Desktop. Se
+      `## Ting kun et menneske kan gøre`.
+      **Årsagen er lukket 14.08:** `_redaktion/er-repoet-friskt.py` stopper nu
+      en session, før den arbejder på en forældet kopi. Punktet her handler om
+      selve hentningen, som ingen maskine må lave.
+      *Punkt 4 og 6.*
 
 ### 2 — Bryder målestokken synligt
 
@@ -101,8 +122,11 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
       **Målt 26.07 kl. 15 og bekræftet 28.07:** `main()` bygger listen forfra af
       det, feedene serverer *nu*, og bruger kun den gamle fil som cache pr. link.
       En artikel lever derfor præcis så længe, kildens RSS nævner den — **dage på
-      et travlt feed**, ikke de 30 døgn, konstanten lover. I dag ligger der
-      **168 sider i `artikel/` mod 145 i listen**.
+      et travlt feed**, ikke de 30 døgn, konstanten lover.
+      **Målt om 14.08 mod `origin/main`: 738 sider i `artikel/` mod 113 i
+      listen.** Var 168 mod 145 den 28.07. Forholdet er gået fra 1,2 til 6,5 —
+      der ligger nu seks gange så mange skrevne artikelsider, som forsiden
+      viser. `MAX_DAGE_GAMMEL = 30` står uændret i remotes crawler.py.
       **Hvad en læser mister:** forsiden viser færre artikler, end den skulle, og
       enhver forbedring af artikelskabelonen rammer aldrig mere end den nyeste
       uge.
@@ -121,7 +145,12 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
       **Rammer: 456 visninger/7 dage (forsiden).**
       *Punkt 4 og 6.*
 
-- [ ] **39 dubletsider modsiger sig selv over for Google.** Målt 27.07:
+- [ ] **71 dubletsider modsiger sig selv over for Google.** *(Var 39. Målt om
+      14.08 mod `origin/main` — altså den kode og de filer, verden faktisk
+      kører, og ikke den frosne kopi på disken: **738 sider i `artikel/`, 71
+      med en canonical der peger væk, og alle 71 har både et `og:url` og et
+      JSON-LD-`@id`, der peger på dem selv.** Problemet er altså ikke løst i de
+      86 commits — det er vokset med 82 %.)* Oprindelig måling 27.07:
       `_peg_dubletsider_mod_hovedhistorien` retter kun `<link rel="canonical">`.
       **Alle 39** har stadig et `og:url` og et JSON-LD-`url`/`@id`, der peger på
       dem selv — så siden siger på én gang "den rigtige udgave er derovre" og
@@ -151,10 +180,9 @@ bygger den. Et lavt besøgstal er derfor baggrund, ikke et fund — se reglen
       aldrig stå højere end trin 3.
       *Punkt 6.*
 
-- [ ] **Ryd op i `_to_delete/`.** Mappen ligger stadig i repoet med gamle
-      workflow-filer. Er der noget, der skal gemmes, før den ryger?
-      **Rammer: ingen læsere** — det er husholdning, ikke en fejl. Står i trin 3,
-      fordi det er billigt, ikke fordi det haster. *Punkt 4.*
+*(«Ryd op i `_to_delete/`» er flyttet til `## Klaret` — mappen findes ikke
+længere på `origin/main`. Den blev fjernet i et af de 86 uhentede commits, og
+ingen kørsel opdagede det, fordi ingen kørsel kunne se dem.)*
 
 ---
 
@@ -475,6 +503,22 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 ---
 
 ## Klaret
+
+- [x] **Fase 0 kan nu opdage, at mappen er bagud.** *(14.08.2026)*
+      `git status` kan kun se *uafhentet* arbejde — det, mappen selv har lavet.
+      Den kan per definition ikke se *uhentet* arbejde: 86 commits, der ligger
+      på GitHub og aldrig er trukket ned. Arbejdstræet er spejlblankt i begge
+      tilfælde, og derfor gik der fjorten døgn, uden at nogen opdagede det.
+      Nyt: `_redaktion/er-repoet-friskt.py` (exit 0/1/2) plus
+      `_redaktion/proeve-friskhed.py` (260 påstande) og et afsnit i
+      arbejdsinstruksen. Stopper, hvis kodefiler er bagud; advarer, hvis kun
+      crawlerens output er bagud; svarer 2, hvis noget ikke kunne måles.
+      Fem uafhængige gennemgange fandt 10, 8, 10, 5 og 5 ting — se loggen.
+
+- [x] **Ryd op i `_to_delete/`.** *(14.08.2026 — klaret af sig selv)* Mappen
+      findes ikke på `origin/main`. Den blev fjernet i et af de 86 uhentede
+      commits. Ingen kørsel opdagede det, fordi ingen kørsel kunne se dem.
+      Målt: `git ls-tree origin/main _to_delete` er tom.
 
 - [x] **Kontrolpanelet kan nu vise og redigere nyhedskilderne.** *(28.07.2026,
       chat — bedt om af redaktionen direkte)* Ny sektion "Kilder" i panelet, og
@@ -1094,6 +1138,12 @@ afviste idé igen om en måned og koster den samme udredning forfra.
 
 Disse venter på ham — sessionen skal ikke forsøge dem:
 
+- **⚠️ TRÆK NED I GITHUB DESKTOP — mappen er 86 commits bagud.** Sidste lokale
+  commit er fra **31.07**; remote står på **13.08**. Indtil det er gjort,
+  stopper enhver arbejdssession med det samme (`er-repoet-friskt.py` svarer 1),
+  og intet i køen kan laves. Arbejdstræet var rent ved målingen, så det burde
+  være et rent fast-forward. *Sessionen må ikke selv pulle, merge eller rebase
+  — samme grænse som commit og push.* **Skrevet 14.08.**
 - Læg `DEEPSEEK_API_KEY` i GitHub secrets, hvis DeepSeek skal overtage teksterne
 - Send besked til community@version2.dk om brug af deres RSS-feed
 - Opret Bluesky-konto og læg `BLUESKY_BRUGER` + `BLUESKY_KODE` ind

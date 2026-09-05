@@ -1,0 +1,260 @@
+/* AI-nyheder: almindelig HTML, små datafiler og ingen byggetrin.
+   Redaktionens rækkefølge kommer fra crawleren. Reserven herunder holder
+   gamle data læsbare og er dækket af de samme fixtures som Python. */
+(function (root) {
+  "use strict";
+  const WEIGHTS = {nyhed:5, betydning:5, brugbarhed:4, dokumentation:4, dansk:2};
+  const HOUR = 3600000;
+  const number = x => typeof x === "number" && Number.isFinite(x);
+  function assessment(a) {
+    const v = a.redaktion;
+    return v && v.version === 2 && Object.keys(WEIGHTS).every(k => Number.isInteger(v[k]) && v[k] >= 0 && v[k] <= 5) ? v : null;
+  }
+  function timestamp(a) {
+    for (const value of [a.dato, a.eget_foerst_set, a.foerst_set]) {
+      if (!value) continue;
+      if(typeof value!=="string" || !/^\d{4}-\d{2}-\d{2}(?:T|$)/.test(value))continue;
+      const iso=value.includes("T")&&!/(Z|[+-]\d{2}:?\d{2})$/i.test(value)?value+"Z":value;
+      const n = Date.parse(iso);
+      if (Number.isFinite(n)) return n;
+    }
+    return null;
+  }
+  function promotional(a) {
+    const v = assessment(a);
+    return !!(v && (v.type === "reklame" || v.ai_relevant === false)) || /\b(last chance|last call|early.bird|promo code|side.events|ticket sale|save \$\d+|sidste frist for sideevents)\b/i.test((a.titel || "") + " " + (a.rubrik || ""));
+  }
+  function baseScore(a) {
+    if (promotional(a)) return 0;
+    const v = assessment(a);
+    if (v) {
+      let n = Object.entries(WEIGHTS).reduce((sum,[k,w]) => sum + v[k]*w, 0);
+      if (v.dokumentation <= 1) n = Math.min(n,35);
+      if (v.type === "rygte") n = Math.min(n,38);
+      return n;
+    }
+    const p = a.prio == null ? NaN : Number(a.prio);
+    return Number.isFinite(p) ? Math.max(1,Math.min(10,p))*8 : 40;
+  }
+  function score(a, now = Date.now()) {
+    const date = timestamp(a);
+    if (date === null) return Math.round(baseScore(a)*0.45*100)/100;
+    const hours = (now-date)/HOUR;
+    if (hours < -2) return 0;
+    let freshness = 0.65 + 0.35 * (2 ** (-Math.max(0,hours)/48));
+    if (hours > 72) freshness *= 2 ** (-(hours-72)/96);
+    return Math.round(baseScore(a)*freshness*100)/100;
+  }
+  function source(a) { try { return new URL(a.link).hostname.replace(/^www\./,""); } catch { return a.kilde || ""; } }
+  function topic(a) {
+    const v = assessment(a);
+    if (v && v.emne) return v.emne;
+    const m = (a.titel || "").match(/\b(openai|chatgpt|anthropic|claude|google|gemini|nvidia|microsoft|apple|meta|xai)\b/i);
+    const k = m ? m[1].toLowerCase() : "";
+    return ({chatgpt:"openai",claude:"anthropic",gemini:"google"})[k] || k;
+  }
+  function rank(articles, now = Date.now()) {
+    return [...articles].sort((a,b) => score(b,now)-score(a,now) || (timestamp(b)||0)-(timestamp(a)||0) || String(a.link).localeCompare(String(b.link)));
+  }
+  function select(articles, count = 6, now = Date.now()) {
+    const pool = rank(articles,now).filter(a => {
+      const d = timestamp(a), v = assessment(a);
+      return a.rubrik && !promotional(a) && baseScore(a)>=32 && d !== null && (now-d)/HOUR>=-2 && (now-d)/HOUR<=168 && !(v && (v.dokumentation<=1 || v.type === "rygte"));
+    });
+    const chosen = [], sources = new Map(), categories = new Map(), topics = new Map(), links = new Set();
+    const countOf = (m,k) => m.get(k)||0;
+    const add = (m,k) => m.set(k,countOf(m,k)+1);
+    while (pool.length && chosen.length<count) {
+      const weight = a => score(a,now)-countOf(sources,source(a))*12-countOf(categories,a.kategori)*7-(topic(a)?countOf(topics,topic(a))*14:0);
+      let best=0;
+      for(let i=1;i<pool.length;i++) if(weight(pool[i])>weight(pool[best])) best=i;
+      const [a]=pool.splice(best,1);
+      if(links.has(a.link)) continue;
+      links.add(a.link);chosen.push(a);add(sources,source(a));add(categories,a.kategori);add(topics,topic(a));
+    }
+    return chosen;
+  }
+  function safeUrl(value, local = false) {
+    if (typeof value !== "string" || !value.trim()) return "";
+    if (local) return /^(?:\/?(?:artikel|video)\/[a-zA-Z0-9_-]+\.html|\/?data\/img\/[a-zA-Z0-9_.-]+)$/.test(value) ? value : "";
+    try { const url = new URL(value); return /^(https?:)$/.test(url.protocol) ? url.href : ""; } catch { return ""; }
+  }
+  function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]); }
+  function bold(value) { return escapeHtml(value).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"); }
+  const api={assessment,timestamp,promotional,baseScore,score,rank,select,safeUrl,escapeHtml};
+  if(typeof module!=="undefined" && module.exports) module.exports=api;
+  root.AINews=api;
+  if(typeof document==="undefined") return;
+
+  const $=id=>document.getElementById(id);
+  const categoryNames={"Alle":"Alle emner","Lanceringer":"Nye modeller","Hverdags-AI":"I hverdagen","Samfund & etik":"Samfund","Penge & marked":"Forretning","Politik & jura":"Politik","Forskning":"Forskning"};
+  let articles=[], selected=[], category="Alle", query="", order="anbefalet", visible=12;
+  let lastFocus=null, readerArticle=null, ownHistory=false, toastTimer, searchTimer;
+  let read={};
+  try { const stored=JSON.parse(localStorage.getItem("laeste")||"{}"); if(stored && !Array.isArray(stored) && typeof stored==="object") read=stored; } catch {}
+  try { ["visninger","baandVist","visning","sortering"].forEach(k=>localStorage.removeItem(k)); } catch {}
+  const formatDate=(date,options)=>new Intl.DateTimeFormat("da-DK",{timeZone:"Europe/Copenhagen",...options}).format(date);
+  function dateText(a) {
+    const ts=timestamp(a); if(ts===null) return "Dato ukendt";
+    const hours=(Date.now()-ts)/HOUR;
+    if(hours < -2) return formatDate(ts,{day:"numeric",month:"short",year:"numeric"});
+    if(hours<1) return "Under en time siden";
+    if(hours<24) return `${Math.floor(hours)} timer siden`;
+    return formatDate(ts,{day:"numeric",month:"short",...(new Date(ts).getFullYear()!==new Date().getFullYear()?{year:"numeric"}:{})});
+  }
+  function readingTime(a) {
+    const text=[a.resume_da||a.resume||"",a.brief||"",...(a.sektioner||[]).map(s=>s.tekst||""),...(a.detaljer||[])].join(" ");
+    return `${Math.max(1,Math.ceil(text.split(/\s+/).length/210))} min. læsning`;
+  }
+  function title(a) { return a.rubrik||a.titel||"AI-nyhed"; }
+  function summary(a) { return a.resume_da||a.resume||""; }
+  function articleUrl(a) { return (!a.kun_aktuel && safeUrl(a.side,true)) || safeUrl(a.link) || "#nyhedsliste"; }
+  function linkAttrs(a) { return `href="${escapeHtml(articleUrl(a))}" data-article="${escapeHtml(a.link)}"`; }
+  function sources(a) {
+    const items=[{link:a.link,kilde:a.kilde},...(Array.isArray(a.andre)?a.andre:[])];
+    return items.filter((s,i)=>s&&safeUrl(s.link)&&items.findIndex(x=>x&&x.link===s.link)===i);
+  }
+  function meta(a) {
+    const count=new Set(sources(a).map(source)).size;
+    return `<div class="story-meta"><span>${escapeHtml(a.kilde||"Originalkilde")}</span><span>${escapeHtml(dateText(a))}</span><span>${readingTime(a)}</span>${count>1?`<span>${count} kilder</span>`:""}${read[a.link]?'<span class="read-label">Læst</span>':""}${!a.rubrik?'<span>På engelsk</span>':""}</div>`;
+  }
+  function image(a,cls,lazy=true) {
+    const src=safeUrl(a.billede,true);
+    return src?`<img class="${cls}" src="${escapeHtml(src)}" alt="${escapeHtml(a.billedmotiv||'AI-genereret illustration')}" ${lazy?'loading="lazy"':'fetchpriority="high"'} decoding="async">`:"";
+  }
+  function renderFeatured() {
+    const box=$("udvalgte");box.setAttribute("aria-busy","false");
+    if(!selected.length) { box.innerHTML="";return; }
+    const [lead,...rest]=selected;
+    const reason=assessment(lead)?.begrundelse || lead.betydning || "";
+    const brief=rest.slice(0,4);
+    box.innerHTML=`<div class="lead-grid"><article class="lead-story"><div class="story-topline"><span class="pick-label">Udvalgt</span><span class="category">${escapeHtml(lead.kategori||"AI-nyt")}</span></div>${image(lead,"lead-image",false)}<h2><a class="story-link" ${linkAttrs(lead)}>${escapeHtml(title(lead))}</a></h2><p class="lead-summary">${escapeHtml(summary(lead))}</p>${reason?`<div class="why-read"><strong>Derfor er historien værd at læse</strong>${bold(reason)}</div>`:""}${meta(lead)}<a class="read-link" ${linkAttrs(lead)}>Læs historien <span aria-hidden="true">↗</span></a></article>${brief.length?`<section class="quick-brief" aria-labelledby="kortTitel"><div class="quick-heading"><h2 id="kortTitel">Kort fortalt</h2><span>60 sekunder</span></div><ol>${brief.map((a,i)=>`<li class="quick-item"><a ${linkAttrs(a)}><span class="quick-number" aria-hidden="true">0${i+1}</span><div><h3>${escapeHtml(summary(a)||title(a))}</h3><div class="story-meta"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><span>${escapeHtml(dateText(a))}</span></div></div></a></li>`).join("")}</ol></section>`:""}</div><div class="secondary-grid">${rest.slice(0,3).map(a=>`<article class="secondary-story"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3>${meta(a)}</article>`).join("")}</div>`;
+  }
+  function renderCategories() {
+    $("kategorier").innerHTML=Object.entries(categoryNames).map(([key,label])=>`<button type="button" data-category="${escapeHtml(key)}" aria-pressed="${key===category}">${label}</button>`).join("");
+  }
+  function normalize(value) { return String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("da"); }
+  function filtered() {
+    const words=normalize(query).trim().split(/\s+/).filter(Boolean);
+    let list=articles.filter(a=>!promotional(a) && (category==="Alle" || a.kategori===category));
+    if(words.length) list=list.filter(a=>{const text=normalize([title(a),summary(a),a.kilde,a.kategori,a.betydning,...(a.sektioner||[]).map(s=>s.tekst)].join(" "));return words.every(w=>text.includes(w));});
+    if(order==="nyeste") list=[...list].sort((a,b)=>(timestamp(b)||0)-(timestamp(a)||0));
+    return list;
+  }
+  function renderList() {
+    const list=filtered();$("nyhedsliste").setAttribute("aria-busy","false");
+    $("antalNyheder").textContent=`${list.length} ${list.length===1?"historie":"historier"}`;
+    $("filterBeskrivelse").textContent=query?`Søger efter “${query}”`:(order==="nyeste"?"Sorteret efter kildens udgivelsesdato":"Udvalgt efter nyhedsværdi og aktualitet");
+    $("nulstil").hidden=category==="Alle"&&!query&&order==="anbefalet";
+    $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><p>${escapeHtml(summary(a))}</p>${meta(a)}</div>${image(a,"news-row-image")}<a class="row-arrow" ${linkAttrs(a)} aria-label="${escapeHtml('Læs '+title(a))}">↗</a></article>`).join(""):`<div class="empty-state"><h3>Ingen historier matcher</h3><p>Prøv et andet søgeord, eller vælg alle emner.</p><button data-reset>Vis alle nyheder</button></div>`;
+    $("visFlere").hidden=list.length<=visible;
+    $("visFlere").innerHTML=`Vis flere nyheder <span class="section-note">${Math.min(visible,list.length)} af ${list.length}</span><span aria-hidden="true">↓</span>`;
+  }
+  function resetFilters(){category="Alle";query="";order="anbefalet";visible=12;$("soeg").value="";$("sortering").value=order;renderCategories();renderList();}
+  function markRead(a) {
+    read[a.link]=Date.now();
+    Object.keys(read).sort((a,b)=>read[b]-read[a]).slice(800).forEach(k=>delete read[k]);
+    try{localStorage.setItem("laeste",JSON.stringify(read));}catch{}
+  }
+  function showToast(message) {
+    $("besked").textContent=message;$("besked").hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{$("besked").hidden=true;},3500);
+  }
+  function openArticle(a,fromHistory=false,trigger=null) {
+    if(a.kun_aktuel){location.assign(safeUrl(a.link));return;}
+    if(!$("laeser").showModal){location.assign(articleUrl(a));return;}
+    if(!$("laeser").open) lastFocus=trigger||document.activeElement;
+    readerArticle=a;markRead(a);
+    const sections=Array.isArray(a.sektioner)?a.sektioner:[];
+    const body=sections.length?sections.map(s=>`<section><h2>${escapeHtml(s.overskrift||"")}</h2>${String(s.tekst||"").split(/\n\n+/).map(p=>`<p>${bold(p)}</p>`).join("")}</section>`).join(""):(a.brief?String(a.brief).split(/\n\n+/).map(p=>`<p>${bold(p)}</p>`).join(""):'<p>Vi har foreløbig kun et kort resumé. Læs mere hos originalkilden nedenfor.</p>');
+    const local=safeUrl(a.side,true),sourceItems=sources(a),v=assessment(a);
+    $("artikelIndhold").innerHTML=`<div class="category">${escapeHtml(a.kategori||"AI-nyt")}</div><h1 id="laeserTitel" tabindex="-1">${escapeHtml(title(a))}</h1>${meta(a)}<p class="reader-deck">${escapeHtml(summary(a))}</p><div class="reader-actions">${local?`<a class="permalink" href="${escapeHtml(local)}">Åbn artikelsiden ↗</a>`:""}<button class="share-button" id="delArtikel">Kopiér link ↗</button><span id="delStatus" role="status" class="reader-note"></span></div>${a.billede?`<figure class="reader-figure">${image(a,"reader-image")}<figcaption>AI-genereret illustration</figcaption></figure>`:""}<div class="reader-body">${a.betydning?`<aside class="reader-callout"><h2>Hvad betyder det for dig?</h2><p>${bold(a.betydning)}</p></aside>`:""}${body}${(a.figurer||[]).filter(f=>safeUrl(f.url)).map(f=>`<figure class="reader-figure"><img src="${escapeHtml(safeUrl(f.url))}" alt="${escapeHtml(f.tekst||"")}" loading="lazy"><figcaption>${escapeHtml(f.tekst||"")} · ${escapeHtml(f.kilde||a.kilde||"")}</figcaption></figure>`).join("")}${a.detaljer?.length?`<details class="reader-callout"><summary>Flere detaljer</summary><ul>${a.detaljer.map(d=>`<li>${bold(d)}</li>`).join("")}</ul></details>`:""}${v?.forbehold?`<aside class="reader-callout"><h2>Det ved vi endnu ikke</h2><p>${escapeHtml(v.forbehold)}</p></aside>`:""}</div><section class="reader-source"><h2 class="category">Læs originalkilderne</h2><div class="source-links">${sourceItems.map(s=>`<a href="${escapeHtml(safeUrl(s.link))}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.kilde||source(s))} ↗</a>`).join("")}</div><p class="reader-note">Bearbejdet af AI med udgangspunkt i de viste kilder. Flere omtaler er ikke nødvendigvis uafhængige bekræftelser.</p></section>`;
+    if(!fromHistory){history.pushState({aiArticle:a.link},"",`#a=${encodeURIComponent(a.link)}`);ownHistory=true;}
+    document.title=`${title(a)} · AI-nyheder`;
+    document.body.classList.add("reader-open");
+    if(!$("laeser").open)$("laeser").showModal();
+    $("laeser").scrollTop=0;$("laeserTitel").focus({preventScroll:true});
+    $("delArtikel").addEventListener("click",async()=>{
+      const url=local?new URL(local,location.href).href:`${location.origin}${location.pathname}#a=${encodeURIComponent(a.link)}`;
+      try{await navigator.clipboard.writeText(url);$("delStatus").textContent="Linket er kopieret";}catch{$("delStatus").textContent=url;}
+    });
+  }
+  function hideArticle(){const focusLink=lastFocus?.dataset?.article;if($("laeser").open)$("laeser").close();document.body.classList.remove("reader-open");readerArticle=null;document.title="AI-nyheder · Det vigtigste i AI, forklaret på dansk";renderFeatured();renderList();if(lastFocus?.isConnected)lastFocus.focus({preventScroll:true});else if(focusLink){const link=[...document.querySelectorAll("h2 a[data-article],h3 a[data-article]")].find(a=>a.dataset.article===focusLink);link?.focus({preventScroll:true});}}
+  function closeArticle(){if(ownHistory){ownHistory=false;history.back();}else{history.replaceState(null,"",location.pathname+location.search);hideArticle();}}
+  function resolveHash(){
+    const match=location.hash.match(/^#a=(.*)$/);if(!match){if(readerArticle)hideArticle();return;}
+    let value;try{value=decodeURIComponent(match[1]);}catch{showToast("Artikellinket kunne ikke læses.");return;}
+    const a=articles.find(a=>a.link===value||sources(a).some(s=>s.link===value));
+    if(a){ownHistory=history.state?.aiArticle===a.link;openArticle(a,true);return;}
+    // Ældre delte links kan pege på en permanent side, der er røget ud af feedet.
+    if(safeUrl(value,true)){location.assign(value);return;}
+    if(safeUrl(value)){
+      const candidate=new URL(value);
+      if(candidate.origin===location.origin && safeUrl(candidate.pathname,true)){location.assign(candidate.pathname);return;}
+    }
+    const sourceLink=safeUrl(value);
+    $("dataBesked").innerHTML='Historien er ikke længere i nyhedsoverblikket.'+(sourceLink?` Du kan stadig <a href="${escapeHtml(sourceLink)}" target="_blank" rel="noopener noreferrer">læse originalkilden ↗</a>.`:"");
+    $("dataBesked").hidden=false;
+    history.replaceState(null,"",location.pathname+location.search);
+  }
+  async function getJSON(url){const r=await fetch(url,{cache:"no-cache"});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}
+  async function loadVideos(){
+    try{
+      const d=await getJSON("data/youtube.json");const list=(d.videoer||[]).filter(v=>v.rubrik&&safeUrl(v.side,true)).slice(0,3);
+      if(!list.length)return;
+      $("videoer").innerHTML=list.map(v=>`<a class="video-link" href="${escapeHtml(v.side)}"><span class="play-icon" aria-hidden="true">▷</span><div><h3>${escapeHtml(v.rubrik)}</h3><p>${escapeHtml(v.kanal||"YouTube")}${number(v.varighed)?` · ${Math.round(v.varighed/60)} min.`:""}</p></div></a>`).join("");$("videoSektion").hidden=false;
+    }catch{/* Nyhederne fungerer også, når videofeedet er utilgængeligt. */}
+  }
+  async function load(){
+    try{
+      const data=await getJSON("data/articles.json");if(!Array.isArray(data.artikler))throw new Error("Ugyldigt nyhedsformat");
+      const unique=new Map();
+      data.artikler.filter(a=>a&&typeof a==="object"&&safeUrl(a.link)).forEach(a=>{
+        a={...a,sektioner:Array.isArray(a.sektioner)?a.sektioner.filter(s=>s&&typeof s==="object"):[],detaljer:Array.isArray(a.detaljer)?a.detaljer:[],figurer:Array.isArray(a.figurer)?a.figurer.filter(f=>f&&typeof f==="object"):[]};
+        if(a.kategori==="Benchmarks")a.kategori="Lanceringer";
+        unique.set(a.link,a);
+      });
+      const all=[...unique.values()],front=data.forside;
+      // Genberegn kun når den gemte rangering er for gammel/mangler. En
+      // gyldig crawlerudgave giver præcis samme valg hos alle læsere.
+      const recent=front?.version===2&&Math.abs(Date.now()-Date.parse(front.beregnet))<8*HOUR;
+      if(recent&&Array.isArray(front.raekkefoelge)&&Array.isArray(front.udvalgte)){
+        const positions=new Map(front.raekkefoelge.map((url,i)=>[url,i]));
+        articles=rank(all).sort((a,b)=>(positions.get(a.link)??Infinity)-(positions.get(b.link)??Infinity));
+        const eligible=new Set(select(all,all.length).map(a=>a.link));
+        selected=[...new Set(front.udvalgte)].map(url=>unique.get(url)).filter(a=>a&&eligible.has(a.link)).slice(0,6);
+      }else{articles=rank(all);selected=select(all);}
+      const updated=Date.parse(data.opdateret);
+      if(Number.isFinite(updated)){
+        $("opdateret").textContent=`Opdateret ${formatDate(updated,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`;
+        if(Date.now()-updated>36*HOUR){$("dataBesked").textContent="Nyhederne er ikke opdateret for nylig. Du læser den senest tilgængelige udgave; udgivelsesdatoen står ved hver historie.";$("dataBesked").hidden=false;}
+      }else $("opdateret").textContent="Seneste tilgængelige udgave";
+      if(!all.length){$("dataBesked").textContent="Der er ingen nyheder i den seneste udgave. Prøv igen lidt senere.";$("dataBesked").hidden=false;}
+      renderCategories();renderFeatured();renderList();resolveHash();loadVideos();
+    }catch{
+      $("udvalgte").innerHTML="";$("udvalgte").setAttribute("aria-busy","false");$("nyhedsliste").setAttribute("aria-busy","false");$("opdateret").textContent="Nyhederne kunne ikke hentes";
+      $("nyhedsliste").innerHTML='<div class="empty-state"><h3>Vi kunne ikke hente nyhederne</h3><p>Tjek forbindelsen, og prøv igen om lidt.</p><button id="proevIgen">Prøv igen</button></div>';
+      $("proevIgen").addEventListener("click",load);
+    }
+  }
+  $("datoIdag").textContent=formatDate(new Date(),{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  $("menuKnap").addEventListener("click",()=>{const open=$("menuKnap").getAttribute("aria-expanded")!=="true";$("menuKnap").setAttribute("aria-expanded",String(open));$("navigation").classList.toggle("is-open",open);});
+  $("kategorier").addEventListener("click",event=>{const button=event.target.closest("[data-category]");if(!button)return;category=button.dataset.category;visible=12;renderCategories();renderList();$("kategorier").querySelector(`[data-category="${category}"]`)?.focus({preventScroll:true});});
+  $("sortering").addEventListener("change",event=>{order=event.target.value;visible=12;renderList();});
+  $("soeg").addEventListener("input",event=>{query=event.target.value;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{visible=12;renderList();},120);});
+  $("nulstil").addEventListener("click",resetFilters);
+  $("visFlere").addEventListener("click",()=>{const previous=visible;visible+=12;renderList();const first=$("nyhedsliste").querySelectorAll(".news-row h3 a")[previous];first?.focus({preventScroll:true});});
+  document.addEventListener("click",event=>{
+    const reset=event.target.closest("[data-reset]");if(reset){resetFilters();return;}
+    const link=event.target.closest("a[data-article]");if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const a=articles.find(a=>a.link===link.dataset.article);if(!a||a.kun_aktuel)return;
+    event.preventDefault();openArticle(a,false,link);
+  });
+  document.addEventListener("error",event=>{if(event.target instanceof HTMLImageElement){const figure=event.target.closest("figure");if(figure)figure.remove();else event.target.remove();}},true);
+  $("lukLaeser").addEventListener("click",closeArticle);
+  $("laeser").addEventListener("cancel",event=>{event.preventDefault();closeArticle();});
+  $("laeser").addEventListener("click",event=>{if(event.target===$("laeser")){const rect=$("laeser").getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeArticle();}});
+  window.addEventListener("popstate",resolveHash);
+  window.addEventListener("hashchange",resolveHash);
+  if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+  load();
+})(typeof globalThis!=="undefined"?globalThis:this);
