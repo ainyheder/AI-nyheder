@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-06T13:04:46.137992+00:00",
+ "opdateret": "2026-09-06T16:25:14.805678+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -65,10 +65,10 @@ window.LAESERTAL = {
      0,
      26,
      25,
-     28,
+     26,
      1,
      25,
-     0
+     1
     ]
    },
    {
@@ -170,7 +170,7 @@ window.LAESERTAL = {
      2,
      8,
      7,
-     7,
+     9,
      4,
      0,
      0
@@ -250,13 +250,13 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 36,
- "sidevisninger_i_alt": 58,
+ "sidevisninger_i_alt": 56,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 34,
-   "visninger": 45
+   "visninger": 43
   },
   {
    "sti": "/uge.html",
@@ -269,17 +269,17 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/laer.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/artikel/9ebf8f5d0ca3e1b2.html",
    "besoeg": 0,
    "visninger": 1
   },
   {
-   "sti": "/artikel/978592205c0f86dc.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/e39047844cf43b12.html",
+   "sti": "/koerekort.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -341,7 +341,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 11
+    "visninger": 9
    }
   ],
   "/uge.html": [
@@ -358,6 +358,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/laer.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/artikel/9ebf8f5d0ca3e1b2.html": [
    {
     "fra": "herfra selv",
@@ -365,14 +372,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/artikel/978592205c0f86dc.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/e39047844cf43b12.html": [
+  "/koerekort.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -437,8 +437,6 @@ window.LAESERTAL = {
   ]
  },
  "faste_uden_besoeg": [
-  "/laer.html",
-  "/koerekort.html",
   "/erhverv.html",
   "/prompts.html",
   "/prompt-arkiv.html",
@@ -620,36 +618,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/978592205c0f86dc.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Google Play fjerner Luanti efter falsk Minecraft-klage",
-   "kategori": "Politik & jura",
-   "dato": "2026-08-28",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
-   "sti": "/artikel/e39047844cf43b12.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Ojstersek: Kultur slår AI som produktivitets-boost",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-29",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/698656d72c29beda.html",
    "besoeg": 0,
    "visninger": 1,
@@ -777,11 +745,11 @@ window.LAESERTAL = {
   },
   {
    "navn": "Samfund & etik",
-   "visninger": 3
+   "visninger": 2
   },
   {
    "navn": "Politik & jura",
-   "visninger": 2
+   "visninger": 1
   },
   {
    "navn": "Penge & marked",
