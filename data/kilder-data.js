@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-06T18:34:33.060392+00:00",
- "artikler_i_alt": 110,
+ "opdateret": "2026-09-06T20:45:19.858046+00:00",
+ "artikler_i_alt": 111,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 14,
+   "i_listen": 15,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -86,6 +86,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
+    },
+    {
+     "rubrik": "Uber-stifter Kalanick satser på robot-taxaer",
+     "dato": "2026-09-06T16:45:00",
+     "foerst_set": "2026-09-06T20:45:19",
+     "link": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google Gemini sendte tre vandrere galt i mørket",
@@ -183,15 +192,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-03T21:16:06",
      "link": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
      "side": "artikel/f1f94c405560ff17.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mira Muratis firma kan blive vurderet til 300 milliarder",
-     "dato": "2026-09-03T19:36:29",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
-     "side": "artikel/28be3fafd1e3c2c9.html",
      "hvor": "forside",
      "under": ""
     }
