@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-06T05:03:06.574550+00:00",
- "artikler_i_alt": 113,
+ "opdateret": "2026-09-06T08:49:30.867473+00:00",
+ "artikler_i_alt": 112,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 15,
-   "som_ekstra": 5,
+   "i_listen": 14,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "To store aviser sagsøger OpenAI og Microsoft",
+     "dato": "",
+     "foerst_set": "2026-09-05T23:14:26",
+     "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
+     "side": "",
+     "hvor": "under",
+     "under": "Microsoft: Copilot gentager næsten aldrig New York Times-tekster"
+    },
     {
      "rubrik": "OpenAI bekræfter kaos på tysk wiki",
      "dato": "",
@@ -77,15 +86,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
-    },
-    {
-     "rubrik": "To store aviser sagsøger OpenAI og Microsoft",
-     "dato": "2026-09-05T22:49:55",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
-     "side": "artikel/8a7e0f31a98365d1.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Google Gemini sendte tre vandrere galt i mørket",
@@ -185,16 +185,25 @@ window.KILDER_STATUS = {
      "side": "artikel/f1f94c405560ff17.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Mira Muratis firma kan blive vurderet til 300 milliarder",
+     "dato": "2026-09-03T19:36:29",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+     "side": "artikel/28be3fafd1e3c2c9.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
+     "The Verge AI",
      5
     ],
     [
-     "The Verge AI",
-     4
+     "Ars Technica AI",
+     5
     ],
     [
      "Google DeepMind",
@@ -363,7 +372,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     5
     ],
     [
      "Ars Technica AI",
@@ -1030,9 +1039,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
    "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
