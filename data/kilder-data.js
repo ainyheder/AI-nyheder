@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-05T23:14:26.852972+00:00",
+ "opdateret": "2026-09-06T05:03:06.574550+00:00",
  "artikler_i_alt": 113,
  "kilder": [
   {
@@ -908,13 +908,13 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 25,
+   "hentet": 0,
    "i_listen": 25,
    "som_ekstra": 0,
    "seneste": [
     {
      "rubrik": "Dalek får AI til at ske selv",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03546",
      "side": "artikel/52cbfbf046c8141d.html",
@@ -923,7 +923,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "NeoRed: AI hjælper læger med nyfødtes vejrtrækning",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03527",
      "side": "artikel/a4b6e06c9e5b59ce.html",
@@ -932,7 +932,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "DuplexSpeechBench-IFEval tester stemme-AI i telefonen",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03423",
      "side": "artikel/136b9d188c88cc94.html",
@@ -941,7 +941,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "UI-TARS lærer at sige stop",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03438",
      "side": "artikel/776244ff72431c48.html",
@@ -950,7 +950,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "CulturalMenuBench afslører AI's madkulturelle blinde vinkler",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03526",
      "side": "artikel/33df6adf25b72930.html",
@@ -959,7 +959,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Xiaobo Li giver AI adgang til laboratorier",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03621",
      "side": "artikel/1315956336774774.html",
@@ -968,7 +968,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "GPT-4 fanger dig i historie-fælde",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03407",
      "side": "artikel/fd5289cbd498b7de.html",
@@ -977,7 +977,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Dude afslører forskere, der snyder med koden",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03416",
      "side": "artikel/7f17222f018b83c4.html",
@@ -986,7 +986,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Qing Zhang: Vis AI-sporet tydeligt i billeder",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03460",
      "side": "artikel/b42f99c0f6bb7839.html",
@@ -995,7 +995,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "GrowPage gør AI-modeller hurtigere",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03494",
      "side": "artikel/cd68e0118b3e4cc2.html",
@@ -1004,7 +1004,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Tzu-Ling Lin fanger AI-fantasi i forskningsanmeldelser",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03580",
      "side": "artikel/fba10b48eefd994a.html",
@@ -1013,7 +1013,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Yaxing Lyu fanger AI-assistenter i modsigelser",
-     "dato": "2026-09-05T00:00:00",
+     "dato": "2026-09-05T04:00:00",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://arxiv.org/abs/2609.03588",
      "side": "artikel/bfef51eb14108596.html",
@@ -1030,9 +1030,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
    "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
