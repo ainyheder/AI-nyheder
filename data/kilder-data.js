@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-06T16:24:21.067450+00:00",
- "artikler_i_alt": 109,
+ "opdateret": "2026-09-06T18:34:33.060392+00:00",
+ "artikler_i_alt": 110,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -376,7 +376,7 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     5
+     4
     ],
     [
      "Ars Technica AI",
@@ -651,8 +651,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 21,
-   "som_ekstra": 4,
+   "i_listen": 22,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
@@ -682,13 +682,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
-     "rubrik": "OpenAI's GPT-6 Astra klarer 41 dokumenter på få minutter",
-     "dato": "",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+     "rubrik": "OpenAI-forsker vil stramme AI-sikkerheden",
+     "dato": "2026-09-06T09:00:00",
+     "foerst_set": "2026-09-06T18:34:33",
+     "link": "https://openai.com/index/an-alien-mind",
      "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI afslører: AI-agenter sætter forskning i overdrive",
@@ -705,6 +705,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-03T21:16:06",
      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
      "side": "artikel/30eec5aa5b07636a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GPT-6 Astra finder fejl i 41 dokumenter på minutter",
+     "dato": "2026-09-03T12:00:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -779,30 +788,12 @@ window.KILDER_STATUS = {
      "side": "artikel/7aa1f68e6fa52f19.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
-     "dato": "2026-08-28T06:00:00",
-     "foerst_set": "2026-08-29T07:19:46",
-     "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-     "side": "artikel/57a3b900535e942d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI hjælper thailandske iværksættere i gang",
-     "dato": "2026-08-28T02:00:00",
-     "foerst_set": "2026-08-28T12:09:31",
-     "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-     "side": "artikel/8a2a589ad9966828.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     4
     ]
    ]
   },
@@ -1048,9 +1039,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
    "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [

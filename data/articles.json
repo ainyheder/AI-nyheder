@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-09-06T16:24:21.067450+00:00",
-  "antal": 109,
+  "opdateret": "2026-09-06T18:34:33.060392+00:00",
+  "antal": 110,
   "artikler": [
     {
       "titel": "OpenAI’s next big AI model has ‘entered the AGI era’",
@@ -73,13 +73,6 @@
           "link": "https://openai.com/index/playco-game-prototyping-with-astra",
           "rubrik": "Playco fik 50 % færre rettelser med GPT-6 Astra",
           "resume_da": "Spiludvikleren Playco byggede tre prototyper med OpenAIs GPT-6 Astra og brugte halvt så lang tid på at rette fejl manuelt.",
-          "foerst_set": "2026-09-03T21:16:06.186478+00:00"
-        },
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
-          "rubrik": "OpenAI's GPT-6 Astra klarer 41 dokumenter på få minutter",
-          "resume_da": "OpenAI viser GPT-6 Astra frem, der lynhurtigt gennemgår store dokumentmængder og finder fejl.",
           "foerst_set": "2026-09-03T21:16:06.186478+00:00"
         }
       ],
@@ -1060,6 +1053,68 @@
       "side": "artikel/52cbfbf046c8141d.html"
     },
     {
+      "titel": "NeoRed: A Knowledge-Logic-Alignment Multimodal Large Language Model for Neonatal Respiratory Disease Diagnosis",
+      "link": "https://arxiv.org/abs/2609.03527",
+      "resume": "Neonatal respiratory diseases are a major cause of neonatal morbidity and mortality, posing substantial challenges in clinical practice. Despite recent advances, existing Multimodal Large Language Models (MLLMs) face two key limitations in neonatal diagnosis: (1) domain gap arising from predominantly adult training data; (2) insufficient integration of multidimensional clinical context for…",
+      "dato": "2026-09-05T04:00:00+00:00",
+      "kilde": "arXiv cs.AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-04T05:02:47.555372+00:00",
+      "eget_foerst_set": "2026-09-04T05:02:47.555372+00:00",
+      "rubrik": "NeoRed: AI hjælper læger med nyfødtes vejrtrækning",
+      "resume_da": "Forskere har udviklet NeoRed, en AI-model, der diagnosticerer åndedrætssygdomme hos nyfødte ved at analysere både symptomer og scanninger.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det nye værktøj",
+          "tekst": "Et forskerhold har bygget **NeoRed**, et AI-system, der kombinerer viden om nyfødtes lungesygdomme med logisk tænkning. Modellen kigger på både tekstbeskrivelser og røntgenbilleder af brystkassen. Målet er hurtigere og mere præcise diagnoser af åndedrætsproblemer hos de mindste patienter."
+        },
+        {
+          "overskrift": "Hvordan virker det?",
+          "tekst": "NeoRed er trænet med medicinsk viden og eksempler fra virkelige patienter. Den forbinder symptomer, billeder og laboratoriedata på en måde, der minder om, hvordan en læge ræsonnerer. Det betyder, at den ikke bare ser på billedet, men også vurderer, om tegnene passer sammen. Det giver færre fejldiagnoser."
+        },
+        {
+          "overskrift": "Fremtiden for diagnoser",
+          "tekst": "Forskerne håber, at NeoRed kan blive et støtteværktøj for læger på neonatalafdelinger - især på små hospitaler uden specialister døgnet rundt. Systemet kan give et kvalificeret bud, som lægen så selv vurderer. Næste skridt er at teste det i virkelige klinikker for at se, om det lever op til løfterne."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "NeoRed er et multimodalt AI-system, der kombinerer sprog og billeder.",
+        "Det er specialiseret i at diagnosticere åndedrætssygdomme hos nyfødte.",
+        "Modellen bruger viden-logik-justering til at forbedre nøjagtigheden.",
+        "Den analyserer tekstinformation og røntgenbilleder af thorax.",
+        "Forskningen er præsenteret på arXiv under kategorien AI (cs.AI).",
+        "Systemet er udviklet til at understøtte læger i diagnosticering."
+      ],
+      "betydning": "Du kan få hurtigere og mere præcise diagnoser, hvis dit barn bliver født med åndedrætsproblemer - især hvis hospitalet ikke har en speciallæge til stede.",
+      "pointer": [
+        "Nyt AI-system til nyfødte",
+        "Diagnosticerer via tekst og billeder",
+        "Reducerer risiko for fejldiagnoser",
+        "Kan hjælpe mindre hospitaler"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny medicinsk AI-model til diagnosticering af åndedrætssygdomme hos nyfødte kan have stor klinisk betydning.",
+        "forbehold": "Resuméet er et forstudie, og modellen er ikke klinisk valideret.",
+        "emne": "medicinsk-ai"
+      },
+      "prio": 5,
+      "side": "artikel/a4b6e06c9e5b59ce.html"
+    },
+    {
       "titel": "Google’s latest AI weather model gives you no excuse to forget your umbrella",
       "link": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
       "resume": "WeatherNext 3 is the latest wave of a sea change in meteorology brought out by deep learning techniques. Google says it will start feeding into weather information users see in search, Google Maps, and Gemini.",
@@ -1162,71 +1217,9 @@
       "side": "artikel/9ebf8f5d0ca3e1b2.html"
     },
     {
-      "titel": "NeoRed: A Knowledge-Logic-Alignment Multimodal Large Language Model for Neonatal Respiratory Disease Diagnosis",
-      "link": "https://arxiv.org/abs/2609.03527",
-      "resume": "Neonatal respiratory diseases are a major cause of neonatal morbidity and mortality, posing substantial challenges in clinical practice. Despite recent advances, existing Multimodal Large Language Models (MLLMs) face two key limitations in neonatal diagnosis: (1) domain gap arising from predominantly adult training data; (2) insufficient integration of multidimensional clinical context for…",
-      "dato": "2026-09-05T04:00:00+00:00",
-      "kilde": "arXiv cs.AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-04T05:02:47.555372+00:00",
-      "eget_foerst_set": "2026-09-04T05:02:47.555372+00:00",
-      "rubrik": "NeoRed: AI hjælper læger med nyfødtes vejrtrækning",
-      "resume_da": "Forskere har udviklet NeoRed, en AI-model, der diagnosticerer åndedrætssygdomme hos nyfødte ved at analysere både symptomer og scanninger.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det nye værktøj",
-          "tekst": "Et forskerhold har bygget **NeoRed**, et AI-system, der kombinerer viden om nyfødtes lungesygdomme med logisk tænkning. Modellen kigger på både tekstbeskrivelser og røntgenbilleder af brystkassen. Målet er hurtigere og mere præcise diagnoser af åndedrætsproblemer hos de mindste patienter."
-        },
-        {
-          "overskrift": "Hvordan virker det?",
-          "tekst": "NeoRed er trænet med medicinsk viden og eksempler fra virkelige patienter. Den forbinder symptomer, billeder og laboratoriedata på en måde, der minder om, hvordan en læge ræsonnerer. Det betyder, at den ikke bare ser på billedet, men også vurderer, om tegnene passer sammen. Det giver færre fejldiagnoser."
-        },
-        {
-          "overskrift": "Fremtiden for diagnoser",
-          "tekst": "Forskerne håber, at NeoRed kan blive et støtteværktøj for læger på neonatalafdelinger - især på små hospitaler uden specialister døgnet rundt. Systemet kan give et kvalificeret bud, som lægen så selv vurderer. Næste skridt er at teste det i virkelige klinikker for at se, om det lever op til løfterne."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "NeoRed er et multimodalt AI-system, der kombinerer sprog og billeder.",
-        "Det er specialiseret i at diagnosticere åndedrætssygdomme hos nyfødte.",
-        "Modellen bruger viden-logik-justering til at forbedre nøjagtigheden.",
-        "Den analyserer tekstinformation og røntgenbilleder af thorax.",
-        "Forskningen er præsenteret på arXiv under kategorien AI (cs.AI).",
-        "Systemet er udviklet til at understøtte læger i diagnosticering."
-      ],
-      "betydning": "Du kan få hurtigere og mere præcise diagnoser, hvis dit barn bliver født med åndedrætsproblemer - især hvis hospitalet ikke har en speciallæge til stede.",
-      "pointer": [
-        "Nyt AI-system til nyfødte",
-        "Diagnosticerer via tekst og billeder",
-        "Reducerer risiko for fejldiagnoser",
-        "Kan hjælpe mindre hospitaler"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ny medicinsk AI-model til diagnosticering af åndedrætssygdomme hos nyfødte kan have stor klinisk betydning.",
-        "forbehold": "Resuméet er et forstudie, og modellen er ikke klinisk valideret.",
-        "emne": "medicinsk-ai"
-      },
-      "prio": 5,
-      "side": "artikel/a4b6e06c9e5b59ce.html"
-    },
-    {
       "titel": "Google AI Mode shows same products 21.6% more expensive than traditional search",
       "link": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-      "resume": "Article URL: https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products Comments URL: https://news.ycombinator.com/item?id=49563386 Points: 394 # Comments: 74",
+      "resume": "Article URL: https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products Comments URL: https://news.ycombinator.com/item?id=49563386 Points: 396 # Comments: 74",
       "dato": "2026-09-04T11:59:15+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -1628,63 +1621,6 @@
       "side": "artikel/3055f9c8a822a4b8.html"
     },
     {
-      "titel": "Mamdani bans AI in NYC schools",
-      "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
-      "resume": "Article URL: https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html Comments URL: https://news.ycombinator.com/item?id=49542443 Points: 220 # Comments: 180",
-      "dato": "2026-09-02T20:57:04+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-03T09:07:40.831452+00:00",
-      "eget_foerst_set": "2026-09-03T09:07:40.831452+00:00",
-      "rubrik": "New Yorks skoler forbyder AI",
-      "resume_da": "New York forbyder AI i skolerne. Beslutningen vækker debat blandt forældre og lærere.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Forbuddet",
-          "tekst": "New Yorks skolemyndigheder har besluttet at forbyde AI i byens skoler. Det sker efter bekymring for snyd og påvirkning af elevernes læring. Forbuddet gælder fra skoleårets start og rammer både undervisning og elevopgaver."
-        },
-        {
-          "overskrift": "Reaktionerne",
-          "tekst": "Mange lærere og forældre er delte i synet på forbuddet. Nogle mener, at AI kan hjælpe elever med at lære hurtigere, mens andre frygter, at det gør eleverne afhængige af teknologi. Debatten fortsætter på sociale medier og i lokale medier."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "New York har forbudt AI i skolerne.",
-        "Forbuddet gælder fra starten af skoleåret.",
-        "Bekymringen handler om snyd og læring.",
-        "Debatten om AI i skolerne er ophedet."
-      ],
-      "betydning": "",
-      "pointer": [
-        "AI er nu forbudt i New Yorks skoler.",
-        "Forældre og lærere er uenige om forbuddet.",
-        "Forbuddet gælder fra næste skoleår.",
-        "Debatten om AI i undervisningen fortsætter."
-      ],
-      "billedmotiv": "En støvet lærebog med en hængelås på, mens en tablet med en pære-formet ikon står lukket ved siden af.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "NYC-skoleforbud mod AI er en konkret politisk beslutning med mulige afsmittende effekter på andre skolesystemer.",
-        "forbehold": "Kilden er et resumé uden detaljer om forbuddets omfang eller begrundelse.",
-        "emne": "nyc-skoler"
-      },
-      "prio": 5,
-      "side": "artikel/1fa5e007a9948bbd.html"
-    },
-    {
       "titel": "Abliteration.ai is making a business out of removing AI guardrails",
       "link": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
       "resume": "Abliteration.AI is making powerful AI models without guardrails easier to access, arguing that giving defenders the same tools as bad actors could ultimately improve cybersecurity.",
@@ -1750,6 +1686,63 @@
       },
       "prio": 4,
       "side": "artikel/f1f94c405560ff17.html"
+    },
+    {
+      "titel": "Mamdani bans AI in NYC schools",
+      "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+      "resume": "Article URL: https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html Comments URL: https://news.ycombinator.com/item?id=49542443 Points: 220 # Comments: 180",
+      "dato": "2026-09-02T20:57:04+00:00",
+      "kilde": "Hacker News: AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-03T09:07:40.831452+00:00",
+      "eget_foerst_set": "2026-09-03T09:07:40.831452+00:00",
+      "rubrik": "New Yorks skoler forbyder AI",
+      "resume_da": "New York forbyder AI i skolerne. Beslutningen vækker debat blandt forældre og lærere.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Forbuddet",
+          "tekst": "New Yorks skolemyndigheder har besluttet at forbyde AI i byens skoler. Det sker efter bekymring for snyd og påvirkning af elevernes læring. Forbuddet gælder fra skoleårets start og rammer både undervisning og elevopgaver."
+        },
+        {
+          "overskrift": "Reaktionerne",
+          "tekst": "Mange lærere og forældre er delte i synet på forbuddet. Nogle mener, at AI kan hjælpe elever med at lære hurtigere, mens andre frygter, at det gør eleverne afhængige af teknologi. Debatten fortsætter på sociale medier og i lokale medier."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "New York har forbudt AI i skolerne.",
+        "Forbuddet gælder fra starten af skoleåret.",
+        "Bekymringen handler om snyd og læring.",
+        "Debatten om AI i skolerne er ophedet."
+      ],
+      "betydning": "",
+      "pointer": [
+        "AI er nu forbudt i New Yorks skoler.",
+        "Forældre og lærere er uenige om forbuddet.",
+        "Forbuddet gælder fra næste skoleår.",
+        "Debatten om AI i undervisningen fortsætter."
+      ],
+      "billedmotiv": "En støvet lærebog med en hængelås på, mens en tablet med en pære-formet ikon står lukket ved siden af.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "NYC-skoleforbud mod AI er en konkret politisk beslutning med mulige afsmittende effekter på andre skolesystemer.",
+        "forbehold": "Kilden er et resumé uden detaljer om forbuddets omfang eller begrundelse.",
+        "emne": "nyc-skoler"
+      },
+      "prio": 5,
+      "side": "artikel/1fa5e007a9948bbd.html"
     },
     {
       "titel": "Caught in the Story: Narrative Captivity in Multi-turn LLMs Conversation",
@@ -2007,73 +2000,9 @@
       "side": "artikel/cd68e0118b3e4cc2.html"
     },
     {
-      "titel": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
-      "dato": "2026-09-03T13:15:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
-      "rubrik": "OpenAI investerer en milliard i cyberforsvar",
-      "resume_da": "OpenAI lancerer Daybreak for Frontline Defenders med en milliard dollar til at beskytte samfundsvigtige tjenester mod cyberangreb.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har annonceret et nyt initiativ kaldet Daybreak for Frontline Defenders. Formålet er at give adgang til avanceret cyber-AI, træning og support til organisationer, der driver vitale samfundsfunktioner. Satsningen kommer med en samlet forpligtelse på **1 milliard dollar**."
-        },
-        {
-          "overskrift": "Hvad får vi ud af det?",
-          "tekst": "Initiativet retter sig mod dem, der beskytter elnet, vandforsyning og sygehuse mod digitale angreb. Med AI-værktøjer kan forsvaret blive hurtigere og stærkere. For almindelige borgere betyder det potentielt mere stabile og sikre systemer i hverdagen."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1 mia. dollar",
-          "label": "OpenAI's samlede forpligtelse til cyberforsvar"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Initiativet hedder Daybreak for Frontline Defenders.",
-        "OpenAI forpligter sig til 1 milliard dollar i støtte.",
-        "Målet er at beskytte essentielle tjenester mod cyberangreb.",
-        "Der gives adgang til avanceret cyber-AI og træning.",
-        "Initiativet inkluderer støtte til forsvarsorganisationer.",
-        "Fokus er på samfundskritiske funktioner som energi og sundhed."
-      ],
-      "betydning": "Når dine el-, vand- og sundhedssystemer bliver bedre beskyttet af AI, oplever du færre og kortere udfald i hverdagen.",
-      "pointer": [
-        "OpenAI satser 1 milliard dollar på cyberforsvar.",
-        "Daybreak skal beskytte samfundsvigtige tjenester.",
-        "AI-træning og support til frontlinjeforsvarere.",
-        "Sikrer mere stabile systemer for borgere."
-      ],
-      "billedmotiv": "En åben, tom skal af en skaldyr, med en usynlig, men solid hjelm, der ligger ned foran den.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI's milliardindsats for at styrke cybersikkerheden i samfundsvigtige tjenester kan være et vigtigt skridt, men uden konkrete detaljer er det svært at vurde",
-        "forbehold": "Ingen oplysninger om, hvordan midlerne fordeles, eller hvordan danske tjenester kan få adgang.",
-        "emne": "openai"
-      },
-      "prio": 4,
-      "side": "artikel/30eec5aa5b07636a.html"
-    },
-    {
       "titel": "AI handles incidents, engineers lose touch with their systems",
       "link": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
-      "resume": "Article URL: https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems Comments URL: https://news.ycombinator.com/item?id=49574167 Points: 380 # Comments: 333",
+      "resume": "Article URL: https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems Comments URL: https://news.ycombinator.com/item?id=49574167 Points: 397 # Comments: 338",
       "dato": "2026-09-05T07:52:50+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Samfund & etik",
@@ -2136,6 +2065,70 @@
       },
       "prio": 4,
       "side": "artikel/c8deeb70bc1a3f73.html"
+    },
+    {
+      "titel": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "dato": "2026-09-03T13:15:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "rubrik": "OpenAI investerer en milliard i cyberforsvar",
+      "resume_da": "OpenAI lancerer Daybreak for Frontline Defenders med en milliard dollar til at beskytte samfundsvigtige tjenester mod cyberangreb.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har annonceret et nyt initiativ kaldet Daybreak for Frontline Defenders. Formålet er at give adgang til avanceret cyber-AI, træning og support til organisationer, der driver vitale samfundsfunktioner. Satsningen kommer med en samlet forpligtelse på **1 milliard dollar**."
+        },
+        {
+          "overskrift": "Hvad får vi ud af det?",
+          "tekst": "Initiativet retter sig mod dem, der beskytter elnet, vandforsyning og sygehuse mod digitale angreb. Med AI-værktøjer kan forsvaret blive hurtigere og stærkere. For almindelige borgere betyder det potentielt mere stabile og sikre systemer i hverdagen."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "1 mia. dollar",
+          "label": "OpenAI's samlede forpligtelse til cyberforsvar"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Initiativet hedder Daybreak for Frontline Defenders.",
+        "OpenAI forpligter sig til 1 milliard dollar i støtte.",
+        "Målet er at beskytte essentielle tjenester mod cyberangreb.",
+        "Der gives adgang til avanceret cyber-AI og træning.",
+        "Initiativet inkluderer støtte til forsvarsorganisationer.",
+        "Fokus er på samfundskritiske funktioner som energi og sundhed."
+      ],
+      "betydning": "Når dine el-, vand- og sundhedssystemer bliver bedre beskyttet af AI, oplever du færre og kortere udfald i hverdagen.",
+      "pointer": [
+        "OpenAI satser 1 milliard dollar på cyberforsvar.",
+        "Daybreak skal beskytte samfundsvigtige tjenester.",
+        "AI-træning og support til frontlinjeforsvarere.",
+        "Sikrer mere stabile systemer for borgere."
+      ],
+      "billedmotiv": "En åben, tom skal af en skaldyr, med en usynlig, men solid hjelm, der ligger ned foran den.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI's milliardindsats for at styrke cybersikkerheden i samfundsvigtige tjenester kan være et vigtigt skridt, men uden konkrete detaljer er det svært at vurde",
+        "forbehold": "Ingen oplysninger om, hvordan midlerne fordeles, eller hvordan danske tjenester kan få adgang.",
+        "emne": "openai"
+      },
+      "prio": 4,
+      "side": "artikel/30eec5aa5b07636a.html"
     },
     {
       "titel": "HalluPeer: A Taxonomy-driven Benchmark for Detecting Hallucinations in Scientific Peer Reviews",
@@ -2270,6 +2263,34 @@
       "eget_foerst_set": "2026-09-06T16:24:21.067450+00:00",
       "rubrik": "OpenAI afslører: AI-agenter sætter forskning i overdrive",
       "resume_da": "OpenAI viser tidlige data for, hvordan kodning-agenter bruges i forskning. Agenterne giver flere forsøg, mere komplekse opgaver og hurtigere fremdrift hos OpenAI.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "OpenAI har kigget ind i sin egen forskningsafdeling og delt tidlige data. Her bruger forskerne AI-drevne kodningsagenter til at skrive og afvikle eksperimenter. Det er første gang, OpenAI giver et indblik i, hvordan virksomheden selv bruger værktøjerne inden for forskning."
+        },
+        {
+          "overskrift": "Hvad det viser",
+          "tekst": "Tallene viser, at agenterne ikke bare sparer tid. De gør det muligt at køre flere eksperimenter samtidig, tage mere komplekse opgaver op og accelerere hele forskningsprocessen. For udenforstående er det et signal om, at AI-agenter allerede nu ændrer måden, forskning bliver lavet på."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "OpenAI deler tidlige data om agentbrug i egen forskning.",
+        "Coding agents bruges til at accelerere AI-forskning internt.",
+        "Agenterne bidrager til hurtigere eksperimenthastighed.",
+        "Opgavekompleksiteten for forskningsopgaver er øget.",
+        "Forskningen bliver accelereret med hjælp fra agenter."
+      ],
+      "betydning": "",
+      "pointer": [
+        "OpenAI bruger selv kodningsagenter i forskning.",
+        "Data viser øget eksperimenthastighed.",
+        "Agenter håndterer mere komplekse opgaver.",
+        "Indblikket er tidlige data fra virksomheden."
+      ],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -2285,41 +2306,13 @@
         "forbehold": "Kun få indledende data, ikke et systematisk studie.",
         "emne": "openai"
       },
-      "kat_ai": true,
       "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har kigget ind i sin egen forskningsafdeling og delt tidlige data. Her bruger forskerne AI-drevne kodningsagenter til at skrive og afvikle eksperimenter. Det er første gang, OpenAI giver et indblik i, hvordan virksomheden selv bruger værktøjerne inden for forskning."
-        },
-        {
-          "overskrift": "Hvad det viser",
-          "tekst": "Tallene viser, at agenterne ikke bare sparer tid. De gør det muligt at køre flere eksperimenter samtidig, tage mere komplekse opgaver op og accelerere hele forskningsprocessen. For udenforstående er det et signal om, at AI-agenter allerede nu ændrer måden, forskning bliver lavet på."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "OpenAI deler tidlige data om agentbrug i egen forskning.",
-        "Coding agents bruges til at accelerere AI-forskning internt.",
-        "Agenterne bidrager til hurtigere eksperimenthastighed.",
-        "Opgavekompleksiteten for forskningsopgaver er øget.",
-        "Forskningen bliver accelereret med hjælp fra agenter."
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI bruger selv kodningsagenter i forskning.",
-        "Data viser øget eksperimenthastighed.",
-        "Agenter håndterer mere komplekse opgaver.",
-        "Indblikket er tidlige data fra virksomheden."
-      ],
       "side": "artikel/2b36e6dbb8e700eb.html"
     },
     {
       "titel": "Corporate America is getting hooked on open-source AI",
       "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-      "resume": "https://archive.is/kmOqm Comments URL: https://news.ycombinator.com/item?id=49566137 Points: 325 # Comments: 299",
+      "resume": "https://archive.is/kmOqm Comments URL: https://news.ycombinator.com/item?id=49566137 Points: 329 # Comments: 303",
       "dato": "2026-09-04T15:33:45+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Penge & marked",
@@ -2456,69 +2449,6 @@
       "side": "artikel/16db96c97099d0bc.html"
     },
     {
-      "titel": "Trump may be forced to reveal secret rules feds use for AI safety testing",
-      "link": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
-      "resume": "Trump’s secret reviews of frontier AI models may hide corruption, lawsuit says.",
-      "dato": "2026-09-02T17:58:33+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-02T21:13:01.878289+00:00",
-      "eget_foerst_set": "2026-09-02T21:13:01.878289+00:00",
-      "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-      "resume_da": "Fire føderale agenturer sagsøges for at skjule de hemmelige regler bag Trumps sikkerhedstests af AI-modeller. Gruppen bag søgsmålet kræver fuld åbenhed om, hvem der deltager, og hvordan modeller godkendes.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Sagen kort",
-          "tekst": "Den uafhængige organisation **Protect Democracy** har lagt sag an mod fire føderale myndigheder. De kræver, at Trump-administrationen offentliggør hele rammen for, hvordan AI-modeller screenes for sikkerhed, før de sendes ud. Ifølge organisationen er næsten intet blevet delt med offentligheden eller Kongressen – hverken hvilke virksomheder der er med, eller hvilken lovhjemmel Trump bruger."
-        },
-        {
-          "overskrift": "Hemmelige aftaler",
-          "tekst": "Særligt bekymrende er det, at **OpenAI** angiveligt har lavet en privat aftale med den føderale regering om kun at give udvalgte partnere adgang til deres nyeste modeller. Protect Democracy frygter, at reglerne kan være korrupte, og at agenturerne favoriserer AI-firmaer, som Trump kan lide. De peger på, at Trump tidligere har forsøgt at sortliste AI-firmaet **Anthropic** – noget en dommer har kendt ulovligt."
-        },
-        {
-          "overskrift": "Krav om svar",
-          "tekst": "Gruppen vil have alt frem inden **30. september**: hele rammeteksten, deltagerlisten og kriterierne for, hvem der får adgang til de farligste modeller. De vil også have et påbud mod at tilbageholde dokumenter, der ikke er klassificerede. Politisk pres kommer fra Demokraterne, og Californien overvejer en alternativ model med offentlige standarder."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Fire føderale agenturer er sagsøgt af Protect Democracy.",
-        "OpenAI har angiveligt en privat aftale om begrænset distribution af deres nyeste AI-modeller.",
-        "Søgsmålet kræver svar inden 30. september.",
-        "Trump-administrationen har lanceret programmet GOLD EAGLE for cybersikkerhed med hemmelige deltagere.",
-        "En dommer har kendt Trumps sortlistning af Anthropic ulovlig.",
-        "Californien overvejer lovforslaget SB 813 med fuld åbenhed om AI-sikkerhedsstandarder."
-      ],
-      "betydning": "Du får aldrig at vide, om de AI-værktøjer, du bruger, reelt er blevet tjekket for farer, hvis ikke reglerne offentliggøres. Det kan ende med, at usikre modeller slippes uden din viden.",
-      "pointer": [
-        "Hemmelige AI-regler under Trump giver ingen indsigt i sikkerheden.",
-        "OpenAI har indgået privat aftale med den føderale regering.",
-        "Protect Democracy sagsøger fire agenturer for fuld offentlighed.",
-        "Californien arbejder på alternativ lovgivning med åbne standarder."
-      ],
-      "billedmotiv": "Et sort sæl med en guldørn, der holder et dokument under vingen, mens et rødt segl og en stak lukkede mapper ligger foran.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Søgsmål mod føderale agenturer kan tvinge hemmelige AI-sikkerhedsregler frem i lyset og påvirke reguleringens gennemsigtighed.",
-        "forbehold": "Baseret på resumé af en verserende retssag; udfaldet er uvist.",
-        "emne": "ai-sikkerhedsregulering"
-      },
-      "prio": 5,
-      "side": "artikel/01be0a47d716a83c.html"
-    },
-    {
       "titel": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
       "link": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
       "resume": "Microsoft is giving its developer-optimized Windows experience a name: Project Zenith. While the software maker originally announced a similar developer-optimized Windows effort at Build earlier this year, Project Zenith is designed for new developer-focused devices with 64GB or more of unified memory. \"Project Zenith devices come with a preconfigured Windows setup for development and a […]",
@@ -2590,6 +2520,69 @@
       },
       "prio": 4,
       "side": "artikel/9a19ccf0dc0812cf.html"
+    },
+    {
+      "titel": "Trump may be forced to reveal secret rules feds use for AI safety testing",
+      "link": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
+      "resume": "Trump’s secret reviews of frontier AI models may hide corruption, lawsuit says.",
+      "dato": "2026-09-02T17:58:33+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-02T21:13:01.878289+00:00",
+      "eget_foerst_set": "2026-09-02T21:13:01.878289+00:00",
+      "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
+      "resume_da": "Fire føderale agenturer sagsøges for at skjule de hemmelige regler bag Trumps sikkerhedstests af AI-modeller. Gruppen bag søgsmålet kræver fuld åbenhed om, hvem der deltager, og hvordan modeller godkendes.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Sagen kort",
+          "tekst": "Den uafhængige organisation **Protect Democracy** har lagt sag an mod fire føderale myndigheder. De kræver, at Trump-administrationen offentliggør hele rammen for, hvordan AI-modeller screenes for sikkerhed, før de sendes ud. Ifølge organisationen er næsten intet blevet delt med offentligheden eller Kongressen – hverken hvilke virksomheder der er med, eller hvilken lovhjemmel Trump bruger."
+        },
+        {
+          "overskrift": "Hemmelige aftaler",
+          "tekst": "Særligt bekymrende er det, at **OpenAI** angiveligt har lavet en privat aftale med den føderale regering om kun at give udvalgte partnere adgang til deres nyeste modeller. Protect Democracy frygter, at reglerne kan være korrupte, og at agenturerne favoriserer AI-firmaer, som Trump kan lide. De peger på, at Trump tidligere har forsøgt at sortliste AI-firmaet **Anthropic** – noget en dommer har kendt ulovligt."
+        },
+        {
+          "overskrift": "Krav om svar",
+          "tekst": "Gruppen vil have alt frem inden **30. september**: hele rammeteksten, deltagerlisten og kriterierne for, hvem der får adgang til de farligste modeller. De vil også have et påbud mod at tilbageholde dokumenter, der ikke er klassificerede. Politisk pres kommer fra Demokraterne, og Californien overvejer en alternativ model med offentlige standarder."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Fire føderale agenturer er sagsøgt af Protect Democracy.",
+        "OpenAI har angiveligt en privat aftale om begrænset distribution af deres nyeste AI-modeller.",
+        "Søgsmålet kræver svar inden 30. september.",
+        "Trump-administrationen har lanceret programmet GOLD EAGLE for cybersikkerhed med hemmelige deltagere.",
+        "En dommer har kendt Trumps sortlistning af Anthropic ulovlig.",
+        "Californien overvejer lovforslaget SB 813 med fuld åbenhed om AI-sikkerhedsstandarder."
+      ],
+      "betydning": "Du får aldrig at vide, om de AI-værktøjer, du bruger, reelt er blevet tjekket for farer, hvis ikke reglerne offentliggøres. Det kan ende med, at usikre modeller slippes uden din viden.",
+      "pointer": [
+        "Hemmelige AI-regler under Trump giver ingen indsigt i sikkerheden.",
+        "OpenAI har indgået privat aftale med den føderale regering.",
+        "Protect Democracy sagsøger fire agenturer for fuld offentlighed.",
+        "Californien arbejder på alternativ lovgivning med åbne standarder."
+      ],
+      "billedmotiv": "Et sort sæl med en guldørn, der holder et dokument under vingen, mens et rødt segl og en stak lukkede mapper ligger foran.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Søgsmål mod føderale agenturer kan tvinge hemmelige AI-sikkerhedsregler frem i lyset og påvirke reguleringens gennemsigtighed.",
+        "forbehold": "Baseret på resumé af en verserende retssag; udfaldet er uvist.",
+        "emne": "ai-sikkerhedsregulering"
+      },
+      "prio": 5,
+      "side": "artikel/01be0a47d716a83c.html"
     },
     {
       "titel": "Four major AI models suffer rare overlapping downtime",
@@ -2672,169 +2665,6 @@
       },
       "prio": 4,
       "side": "artikel/b93b47d678dafa7c.html"
-    },
-    {
-      "titel": "Ollie is betting its focus on privacy can help it win the AI assistant race",
-      "link": "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/",
-      "resume": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
-      "dato": "2026-09-03T16:09:01+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-03T17:59:19.388061+00:00",
-      "eget_foerst_set": "2026-09-03T17:59:19.388061+00:00",
-      "rubrik": "Ollie vil vinde AI-assistenter med fokus på privatliv",
-      "resume_da": "Den nye assistent Ollie vil hjælpe familier med alt fra kalender til regninger - uden at dele dine data. Det skal lokke brugerne væk fra konkurrenterne.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Privatliv som våben",
-          "tekst": "Ollie er en af de første familievenlige AI-assistenter, der har fået godkendelsen SOC 2, som beviser, at firmaet passer godt på dine data. Chefen Bill Lennon understreger, at forretningen er baseret på abonnement - ikke på at sælge dine oplysninger videre. Det skal skille Ollie ud fra feltet af chat-assistenter som Instinct og Poke, der ellers dominerer markedet."
-        },
-        {
-          "overskrift": "Sådan beskytter den dig",
-          "tekst": "Ollie logger sig ikke ind på dine vegne med dine adgangskoder. I stedet bruger den sin egen sky-browser og sender dig et link til en fjernsession, når den skal betale regninger eller booke aftaler. Det er sikkert, men besværligt, fordi du altid selv skal logge ind. Lennon lover dog, at teknologien med tiden bliver nemmere - uden at gå på kompromis med sikkerheden."
-        },
-        {
-          "overskrift": "Et presset marked",
-          "tekst": "Selvom Ollie kun har rejst beskedne **7,5 millioner dollars** fra Khosla Ventures, er konkurrencen benhård. Instinct fik for nylig **350 millioner dollars** til en værdi af 2,5 milliarder - før assistenten overhovedet var lanceret. Men Ollie satser på, at brugernes bekymring for datasikkerhed kan vælte de store drenge, især efter Instinct fik kritik for alt for brede vilkår om brug af dine data."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "7,5 mio. dollars",
-          "label": "rejst i seed-finansiering til Ollie"
-        },
-        {
-          "tal": "350 mio. dollars",
-          "label": "fik konkurrenten Instinct i finansiering"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Ollie er en familieassistent, der styrer kalendere, e-mail, madplaner og indkøb via chat.",
-        "Den er en af de første mainstream-assistenter med SOC 2-compliance for datasikkerhed.",
-        "Ollie deler ikke data med tredjeparter, og forretningen er baseret på abonnement.",
-        "Konkurrenter inkluderer Poke, Fambot, Ohai, Folk, Saner.ai og Tomo.",
-        "Assistenten logger ind via en sky-browser med links, så den aldrig får dine adgangskoder.",
-        "Grundlægger Bill Lennon har tidligere solgt fintech-startuppen Groundwork.",
-        "Ollies abonnementstal matcher ifølge Lennon de største AI-assistenter."
-      ],
-      "betydning": "Du kan snart få en AI-hjælper til familien, der styrer alt fra regninger til madplaner - uden at skulle bekymre dig om, at dine private data bliver solgt eller brugt til træning af modeller.",
-      "pointer": [
-        "Ollie satser på privatliv som konkurrencefordel.",
-        "Fået SOC 2-godkendelse til at beskytte data.",
-        "Kun rejst 7,5 mio. dollars mod konkurrenternes kæmpe summer.",
-        "Brugere skal selv logge ind via sikre links."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ollie er en ny AI-assistent med fokus på privatliv, hvilket er et interessant alternativ for brugere, der er bekymrede for datasikkerhed.",
-        "forbehold": "Det er uklart, om der er tale om en egentlig ny model eller blot en ny applikation.",
-        "emne": "ollie"
-      },
-      "prio": 4,
-      "navngivet": true,
-      "side": "artikel/4d0be1d61b00620c.html"
-    },
-    {
-      "titel": "ChatGPT and Reddit now face EU's toughest online safety rules",
-      "link": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
-      "resume": "Explosive growth comes with a new regulatory burden in the European Union.",
-      "dato": "2026-08-31T13:41:40+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-08-31T18:06:02.077288+00:00",
-      "eget_foerst_set": "2026-08-31T18:06:02.077288+00:00",
-      "rubrik": "EU skærper kontrollen med ChatGPT, Reddit og Roblox",
-      "resume_da": "EU kræver nu, at ChatGPT, Reddit og Roblox fjerner ulovligt indhold og beskytter børn, eller de får store bøder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er sket",
-          "tekst": "EU-Kommissionen har udpeget ChatGPT, Reddit og Roblox som meget store onlineplatforme. Det betyder, at de skal overholde de skrappeste regler i EUs digitale lovgivning, kaldet DSA. De skal blandt andet fjerne ulovligt indhold og beskytte mindreåriges privatliv og sikkerhed."
-        },
-        {
-          "overskrift": "Bøderne",
-          "tekst": "Hvis de tre tjenester ikke overholder reglerne, kan de få bøder på op til **6 procent** af deres globale omsætning. Det kan blive en dyr affære for især ChatGPT og Reddit, der har mange brugere over hele verden. De har frist til udgangen af december til at leve op til de nye krav."
-        },
-        {
-          "overskrift": "Hvorfor nu",
-          "tekst": "De tre tjenester har alle over **45 millioner** månedlige brugere i EU, hvilket er grænsen for ekstra kontrol. EUs tech-chef Henna Virkkunen siger, at de nu bliver holdt til en højere standard. Samtidig er EUs nye AI-lov også begyndt at blive håndhævet, og der er også åbnet en konkurrencesag mod Google om AI-søgeresultater."
-        },
-        {
-          "overskrift": "Kritikken",
-          "tekst": "USA er utilfredse og mener, at EU uretfærdigt rammer amerikanske virksomheder og krænker ytringsfriheden. Men EU svarer, at reglerne gælder alle, uanset hvor de er baseret. Tidligere har EU eksempelvis givet den kinesiske platform AliExpress en bøde på **550 millioner euro** for ikke at fjerne ulovlige produkter."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "6 %",
-          "label": "af global omsætning i potentielle bøder"
-        },
-        {
-          "tal": "45 mio.",
-          "label": "månedlige brugere i EU (grænsen for skærpet kontrol)"
-        },
-        {
-          "tal": "550 mio. euro",
-          "label": "bøde til AliExpress for ulovligt indhold"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
-          "rubrik": "EU skærper reglerne for ChatGPT",
-          "resume_da": "EU har udpeget ChatGPT, Reddit og Roblox som meget store platforme, hvilket betyder strengere regler for blandt andet børn og reklamer.",
-          "foerst_set": "2026-08-31T18:06:02.077288+00:00"
-        }
-      ],
-      "detaljer": [
-        "ChatGPT, Reddit og Roblox er nu klassificeret som meget store onlineplatforme under EUs DSA-regler.",
-        "De skal fjerne ulovligt indhold og beskytte mindreåriges sikkerhed og privatliv.",
-        "Frist for at efterleve kravene er udgangen af december.",
-        "X' chatbot Grok er allerede under efterforskning i henhold til DSA.",
-        "EU er også begyndt at håndhæve sin AI-lov, verdens første regler for AI-udvikling.",
-        "OpenAI siger, at de forbereder sig på at opfylde de nye krav.",
-        "Roblox er stolte over at være den første spilplatform, der når grænsen i EU."
-      ],
-      "betydning": "Du kan fremover forvente, at ChatGPT, Reddit og Roblox fjerner ulovligt indhold hurtigere og beskytter børn bedre, når du bruger dem i EU. Ellers risikerer de store bøder.",
-      "pointer": [
-        "EU skærper kontrol med tre store tjenester.",
-        "Bøder på op til 6 procent af omsætning.",
-        "Grænse på 45 millioner brugere i EU udløser krav.",
-        "USA kritiserer EU's regulering af tech-giganter."
-      ],
-      "billedmotiv": "En børnelegetøjskasse, hvorfra der stikker et forældreikon og en advarselstrekant op, med en spillekontrol i midten.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 4,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "EU-regulering får direkte konsekvenser for danske brugere af ChatGPT.",
-        "forbehold": "",
-        "emne": "eu"
-      },
-      "prio": 7,
-      "side": "artikel/c2069d349fabb2a2.html"
     },
     {
       "titel": "Structure and Implementation of New Practical English Textbooks Driven by Artificial Intelligence",
@@ -3331,6 +3161,169 @@
       "side": "artikel/b92be881b0b959e0.html"
     },
     {
+      "titel": "Ollie is betting its focus on privacy can help it win the AI assistant race",
+      "link": "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/",
+      "resume": "The family-focused AI assistant wants access to the details of your everyday life, but says it won’t use that data to train AI models or share it with others.",
+      "dato": "2026-09-03T16:09:01+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "eget_foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "rubrik": "Ollie vil vinde AI-assistenter med fokus på privatliv",
+      "resume_da": "Den nye assistent Ollie vil hjælpe familier med alt fra kalender til regninger - uden at dele dine data. Det skal lokke brugerne væk fra konkurrenterne.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Privatliv som våben",
+          "tekst": "Ollie er en af de første familievenlige AI-assistenter, der har fået godkendelsen SOC 2, som beviser, at firmaet passer godt på dine data. Chefen Bill Lennon understreger, at forretningen er baseret på abonnement - ikke på at sælge dine oplysninger videre. Det skal skille Ollie ud fra feltet af chat-assistenter som Instinct og Poke, der ellers dominerer markedet."
+        },
+        {
+          "overskrift": "Sådan beskytter den dig",
+          "tekst": "Ollie logger sig ikke ind på dine vegne med dine adgangskoder. I stedet bruger den sin egen sky-browser og sender dig et link til en fjernsession, når den skal betale regninger eller booke aftaler. Det er sikkert, men besværligt, fordi du altid selv skal logge ind. Lennon lover dog, at teknologien med tiden bliver nemmere - uden at gå på kompromis med sikkerheden."
+        },
+        {
+          "overskrift": "Et presset marked",
+          "tekst": "Selvom Ollie kun har rejst beskedne **7,5 millioner dollars** fra Khosla Ventures, er konkurrencen benhård. Instinct fik for nylig **350 millioner dollars** til en værdi af 2,5 milliarder - før assistenten overhovedet var lanceret. Men Ollie satser på, at brugernes bekymring for datasikkerhed kan vælte de store drenge, især efter Instinct fik kritik for alt for brede vilkår om brug af dine data."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "7,5 mio. dollars",
+          "label": "rejst i seed-finansiering til Ollie"
+        },
+        {
+          "tal": "350 mio. dollars",
+          "label": "fik konkurrenten Instinct i finansiering"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Ollie er en familieassistent, der styrer kalendere, e-mail, madplaner og indkøb via chat.",
+        "Den er en af de første mainstream-assistenter med SOC 2-compliance for datasikkerhed.",
+        "Ollie deler ikke data med tredjeparter, og forretningen er baseret på abonnement.",
+        "Konkurrenter inkluderer Poke, Fambot, Ohai, Folk, Saner.ai og Tomo.",
+        "Assistenten logger ind via en sky-browser med links, så den aldrig får dine adgangskoder.",
+        "Grundlægger Bill Lennon har tidligere solgt fintech-startuppen Groundwork.",
+        "Ollies abonnementstal matcher ifølge Lennon de største AI-assistenter."
+      ],
+      "betydning": "Du kan snart få en AI-hjælper til familien, der styrer alt fra regninger til madplaner - uden at skulle bekymre dig om, at dine private data bliver solgt eller brugt til træning af modeller.",
+      "pointer": [
+        "Ollie satser på privatliv som konkurrencefordel.",
+        "Fået SOC 2-godkendelse til at beskytte data.",
+        "Kun rejst 7,5 mio. dollars mod konkurrenternes kæmpe summer.",
+        "Brugere skal selv logge ind via sikre links."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ollie er en ny AI-assistent med fokus på privatliv, hvilket er et interessant alternativ for brugere, der er bekymrede for datasikkerhed.",
+        "forbehold": "Det er uklart, om der er tale om en egentlig ny model eller blot en ny applikation.",
+        "emne": "ollie"
+      },
+      "prio": 4,
+      "navngivet": true,
+      "side": "artikel/4d0be1d61b00620c.html"
+    },
+    {
+      "titel": "ChatGPT and Reddit now face EU's toughest online safety rules",
+      "link": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
+      "resume": "Explosive growth comes with a new regulatory burden in the European Union.",
+      "dato": "2026-08-31T13:41:40+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-08-31T18:06:02.077288+00:00",
+      "eget_foerst_set": "2026-08-31T18:06:02.077288+00:00",
+      "rubrik": "EU skærper kontrollen med ChatGPT, Reddit og Roblox",
+      "resume_da": "EU kræver nu, at ChatGPT, Reddit og Roblox fjerner ulovligt indhold og beskytter børn, eller de får store bøder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hvad er sket",
+          "tekst": "EU-Kommissionen har udpeget ChatGPT, Reddit og Roblox som meget store onlineplatforme. Det betyder, at de skal overholde de skrappeste regler i EUs digitale lovgivning, kaldet DSA. De skal blandt andet fjerne ulovligt indhold og beskytte mindreåriges privatliv og sikkerhed."
+        },
+        {
+          "overskrift": "Bøderne",
+          "tekst": "Hvis de tre tjenester ikke overholder reglerne, kan de få bøder på op til **6 procent** af deres globale omsætning. Det kan blive en dyr affære for især ChatGPT og Reddit, der har mange brugere over hele verden. De har frist til udgangen af december til at leve op til de nye krav."
+        },
+        {
+          "overskrift": "Hvorfor nu",
+          "tekst": "De tre tjenester har alle over **45 millioner** månedlige brugere i EU, hvilket er grænsen for ekstra kontrol. EUs tech-chef Henna Virkkunen siger, at de nu bliver holdt til en højere standard. Samtidig er EUs nye AI-lov også begyndt at blive håndhævet, og der er også åbnet en konkurrencesag mod Google om AI-søgeresultater."
+        },
+        {
+          "overskrift": "Kritikken",
+          "tekst": "USA er utilfredse og mener, at EU uretfærdigt rammer amerikanske virksomheder og krænker ytringsfriheden. Men EU svarer, at reglerne gælder alle, uanset hvor de er baseret. Tidligere har EU eksempelvis givet den kinesiske platform AliExpress en bøde på **550 millioner euro** for ikke at fjerne ulovlige produkter."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "6 %",
+          "label": "af global omsætning i potentielle bøder"
+        },
+        {
+          "tal": "45 mio.",
+          "label": "månedlige brugere i EU (grænsen for skærpet kontrol)"
+        },
+        {
+          "tal": "550 mio. euro",
+          "label": "bøde til AliExpress for ulovligt indhold"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+          "rubrik": "EU skærper reglerne for ChatGPT",
+          "resume_da": "EU har udpeget ChatGPT, Reddit og Roblox som meget store platforme, hvilket betyder strengere regler for blandt andet børn og reklamer.",
+          "foerst_set": "2026-08-31T18:06:02.077288+00:00"
+        }
+      ],
+      "detaljer": [
+        "ChatGPT, Reddit og Roblox er nu klassificeret som meget store onlineplatforme under EUs DSA-regler.",
+        "De skal fjerne ulovligt indhold og beskytte mindreåriges sikkerhed og privatliv.",
+        "Frist for at efterleve kravene er udgangen af december.",
+        "X' chatbot Grok er allerede under efterforskning i henhold til DSA.",
+        "EU er også begyndt at håndhæve sin AI-lov, verdens første regler for AI-udvikling.",
+        "OpenAI siger, at de forbereder sig på at opfylde de nye krav.",
+        "Roblox er stolte over at være den første spilplatform, der når grænsen i EU."
+      ],
+      "betydning": "Du kan fremover forvente, at ChatGPT, Reddit og Roblox fjerner ulovligt indhold hurtigere og beskytter børn bedre, når du bruger dem i EU. Ellers risikerer de store bøder.",
+      "pointer": [
+        "EU skærper kontrol med tre store tjenester.",
+        "Bøder på op til 6 procent af omsætning.",
+        "Grænse på 45 millioner brugere i EU udløser krav.",
+        "USA kritiserer EU's regulering af tech-giganter."
+      ],
+      "billedmotiv": "En børnelegetøjskasse, hvorfra der stikker et forældreikon og en advarselstrekant op, med en spillekontrol i midten.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 4,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "EU-regulering får direkte konsekvenser for danske brugere af ChatGPT.",
+        "forbehold": "",
+        "emne": "eu"
+      },
+      "prio": 7,
+      "side": "artikel/c2069d349fabb2a2.html"
+    },
+    {
       "titel": "Path to Astra: critical capabilities and frontier safeguards",
       "link": "https://openai.com/index/path-to-astra",
       "resume": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
@@ -3389,7 +3382,7 @@
     {
       "titel": "Can AI design circuit boards yet?",
       "link": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-      "resume": "Article URL: https://eebench.org/blog/can-ai-design-circuit-boards-yet/ Comments URL: https://news.ycombinator.com/item?id=49569366 Points: 408 # Comments: 219",
+      "resume": "Article URL: https://eebench.org/blog/can-ai-design-circuit-boards-yet/ Comments URL: https://news.ycombinator.com/item?id=49569366 Points: 414 # Comments: 227",
       "dato": "2026-09-04T19:48:29+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
@@ -3493,7 +3486,7 @@
     {
       "titel": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
       "link": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
-      "resume": "Article URL: https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007 Comments URL: https://news.ycombinator.com/item?id=49544762 Points: 466 # Comments: 186",
+      "resume": "Article URL: https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007 Comments URL: https://news.ycombinator.com/item?id=49544762 Points: 467 # Comments: 186",
       "dato": "2026-09-03T01:11:22+00:00",
       "kilde": "Hacker News: AI",
       "kategori": "Forskning",
@@ -3823,62 +3816,6 @@
       "side": "artikel/c540530472dc5bd8.html"
     },
     {
-      "titel": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
-      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-      "resume": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
-      "dato": "2026-09-01T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
-      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
-      "rubrik": "OpenAI lader hospitaler koble sundhedsdata på ChatGPT",
-      "resume_da": "OpenAI åbner nu for, at sundhedsorganisationer kan tilslutte patientjournaler og medicinsk forskning direkte til ChatGPT.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI meddeler, at ChatGPT nu kan kobles til pålidelige sundhedsdata. Det betyder, at hospitaler og andre behandlingssteder kan lade klinikere få adgang til patientoplysninger og medicinsk forskning direkte i chatten – i et sikkert miljø."
-        },
-        {
-          "overskrift": "Hvad det bruges til",
-          "tekst": "Tanken er at give læger et hurtigere overblik. Når ChatGPT trækker på patientens egen journal og den nyeste forskning, kan den hjælpe med at sammenholde oplysninger under en konsultation – uden at personalet selv skal grave i flere systemer."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI har annonceret, at ChatGPT kan forbindes til elektroniske patientjournaler (EHR).",
-        "Sundhedsorganisationer kan nu også tilslutte anden relevant data fra sundhedsbranchen.",
-        "Adgangen er målrettet klinikere, som skal kunne finde patientkontekst og medicinsk forskning.",
-        "OpenAI understreger, at dataforbindelsen sker sikkert og betroet."
-      ],
-      "betydning": "Hvis din læge bruger ChatGPT, kan hun hurtigere få samlet din sygehistorie og den nyeste viden om din behandling – uden at vente på manuelt opslagsarbejde.",
-      "pointer": [
-        "Hospitaler kan koble journaler til ChatGPT.",
-        "Læger får adgang til patientdata i chatten.",
-        "OpenAI lover sikker og pålidelig datadeling."
-      ],
-      "billedmotiv": "En hospitalsjournal-lignende mappe med et EKG-spor, der fører ind i en telefon med et korssymbol på skærmen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "ChatGPT's integration med sundhedsdata er en ny funktion, der kan ændre klinikeres adgang til patientkontekst, men ikke en ny model.",
-        "forbehold": "Sikkerheds- og privatlivsaspekter er ikke beskrevet i resuméet.",
-        "emne": "openai"
-      },
-      "prio": 5,
-      "side": "artikel/56641fe0291483b6.html"
-    },
-    {
       "titel": "Crusoe reportedly raises $3B at a $30B valuation",
       "link": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
       "resume": "The round came together after the data center developer reportedly secured a $13 billion contract with Jane Street.",
@@ -3960,81 +3897,89 @@
       "side": "artikel/5737d6df236a9321.html"
     },
     {
-      "titel": "This NAS company wants to run your local smart home",
-      "link": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
-      "resume": "Ugreen, known for its phone power banks, chargers, and NAS storage solutions, is moving into the smart home - in a big way. This week at the IFA tech show, the company launched its HomeAgent smart home platform that combines security camera storage, on-device AI, and smart home control in one system, managed by a […]",
-      "dato": "2026-09-04T05:41:44-04:00",
-      "kilde": "The Verge AI",
+      "titel": "An Alien Mind",
+      "link": "https://openai.com/index/an-alien-mind",
+      "resume": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+      "dato": "2026-09-06T09:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-06T18:34:33.060392+00:00",
+      "eget_foerst_set": "2026-09-06T18:34:33.060392+00:00",
+      "rubrik": "OpenAI-forsker vil stramme AI-sikkerheden",
+      "resume_da": "Jakub Pachocki siger, at AI bliver så dygtig, at vi risikerer at miste kontrollen. Han foreslår internationale regler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI-leder efterlyser stærkere sikkerhedsforanstaltninger og international koordinering, men artiklen indeholder ingen konkrete nye tiltag.",
+        "forbehold": "",
+        "emne": "sikkerhed"
+      },
+      "kat_ai": true,
+      "prio": 2
+    },
+    {
+      "titel": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "resume": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
+      "dato": "2026-09-01T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-04T13:42:33.956586+00:00",
-      "eget_foerst_set": "2026-09-04T13:42:33.956586+00:00",
-      "rubrik": "Ugreen lancerer HomeAgent til hele smarthjemmet",
-      "resume_da": "Ugreen har præsenteret HomeAgent, en boks med lokal AI, videoopbevaring og stemmestyring. Modellerne koster fra 899 til 9.999 dollar.",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "OpenAI lader hospitaler koble sundhedsdata på ChatGPT",
+      "resume_da": "OpenAI åbner nu for, at sundhedsorganisationer kan tilslutte patientjournaler og medicinsk forskning direkte til ChatGPT.",
       "brief": "",
       "sektioner": [
         {
           "overskrift": "Det er sket",
-          "tekst": "Ugreen, kendt for opladere og NAS-lagring, viste på IFA-messen en ny hub kaldet HomeAgent. Den kombinerer opbevaring af video fra overvågningskameraer, en lokal AI og stemmeassistenten Uliya, så alt kan køre hjemme hos dig selv. Ifølge Ugreen skal data aldrig forlade dit hjem, hvilket både handler om privatliv og om at undgå månedlige abonnementer."
+          "tekst": "OpenAI meddeler, at ChatGPT nu kan kobles til pålidelige sundhedsdata. Det betyder, at hospitaler og andre behandlingssteder kan lade klinikere få adgang til patientoplysninger og medicinsk forskning direkte i chatten – i et sikkert miljø."
         },
         {
-          "overskrift": "Pris og modeller",
-          "tekst": "Der kommer tre udgaver. Billigste model HA100 koster 899 dollar, HA100 Pro koster 2.999 dollar, og topmodellen MasterAgent MA100 med en Nvidia-chip koster hele 9.999 dollar. Ugreen starter crowdfunding i oktober, og derefter kan priserne cirka blive dobbelt så høje. Alle modeller gemmer data lokalt og kræver ikke abonnement for at se video."
-        },
-        {
-          "overskrift": "Hvad kan den?",
-          "tekst": "Systemet kan følge med i, hvad der sker på tværs af kameraer, og give besked, når der er mennesker, biler, kæledyr eller pakker. Du kan spørge med stemmen, for eksempel hvor dit kæledyr er lige nu. Den kan også styre lamper og gardiner fra forskellige mærker via Matter-standarden, ligesom den kan gemme dine fotos og film, så de ikke ligger i skyen."
-        },
-        {
-          "overskrift": "Kritik og udfordringer",
-          "tekst": "De billigste udgaver kan kun klare simple kommandoer og regelstyringer, mens avancerede funktioner kræver de dyrere modeller. Skal du have besked på telefonen eller se kameraet hjemmefra, kræver det internet. Og Ugreen har endnu ikke en lang liste over enheder, der er testet til at virke – lige nu er det mest Aqara, SwitchBot og Eve, der er godkendt."
+          "overskrift": "Hvad det bruges til",
+          "tekst": "Tanken er at give læger et hurtigere overblik. Når ChatGPT trækker på patientens egen journal og den nyeste forskning, kan den hjælpe med at sammenholde oplysninger under en konsultation – uden at personalet selv skal grave i flere systemer."
         }
       ],
-      "noegletal": [
-        {
-          "tal": "9.999 dollar",
-          "label": "pris for topmodellen med Nvidia-chip"
-        },
-        {
-          "tal": "899 dollar",
-          "label": "startpris for billigste udgave"
-        }
-      ],
+      "noegletal": [],
       "figurer": [],
       "detaljer": [
-        "HomeAgent kombinerer NAS-lagring, kameraoptagelse og lokal AI i én enhed.",
-        "Stemmeassistenten hedder Uliya og kan blandt andet finde dit kæledyr.",
-        "Ugreen har tre modeller: HA100, HA100 Pro og MasterAgent MA100.",
-        "Kickstarter-kampagnen starter i oktober, hvorefter priserne kan fordobles.",
-        "Uliya findes også i en separat smart højttaler, og der kommer nye kameraer.",
-        "Systemet understøtter Matter, Zigbee, Thread, Bluetooth, Wi-Fi og PoE.",
-        "Anker viste på samme messe et lignende produkt kaldet Eufy MindBase."
+        "OpenAI har annonceret, at ChatGPT kan forbindes til elektroniske patientjournaler (EHR).",
+        "Sundhedsorganisationer kan nu også tilslutte anden relevant data fra sundhedsbranchen.",
+        "Adgangen er målrettet klinikere, som skal kunne finde patientkontekst og medicinsk forskning.",
+        "OpenAI understreger, at dataforbindelsen sker sikkert og betroet."
       ],
-      "betydning": "Du kan få en smarthub, der passer på dine data og sparer dig for abonnementer. Men vil du have den nyeste og mest avancerede model, skal du punge ud med flere titusinde kroner.",
+      "betydning": "Hvis din læge bruger ChatGPT, kan hun hurtigere få samlet din sygehistorie og den nyeste viden om din behandling – uden at vente på manuelt opslagsarbejde.",
       "pointer": [
-        "HomeAgent er en boks til dit hjem.",
-        "Den lover privatliv uden skyen.",
-        "Priserne er høje, især topmodellen.",
-        "Kompatibilitet med andre enheder er begrænset ved start."
+        "Hospitaler kan koble journaler til ChatGPT.",
+        "Læger får adgang til patientdata i chatten.",
+        "OpenAI lover sikker og pålidelig datadeling."
       ],
-      "billedmotiv": "En NAS-enhed med en kattelem og en indbygget højttaler, flankeret af et prisskilt med 9.999 dollar og en lille kattefigur",
+      "billedmotiv": "En hospitalsjournal-lignende mappe med et EKG-spor, der fører ind i en telefon med et korssymbol på skærmen.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
         "dokumentation": 2,
         "dansk": 0,
         "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Ugreen præsenterer en lokal AI-smarthub, men det er et produkt uden nærmere dansk relevans.",
-        "forbehold": "",
-        "emne": "ugreen"
+        "begrundelse": "ChatGPT's integration med sundhedsdata er en ny funktion, der kan ændre klinikeres adgang til patientkontekst, men ikke en ny model.",
+        "forbehold": "Sikkerheds- og privatlivsaspekter er ikke beskrevet i resuméet.",
+        "emne": "openai"
       },
-      "prio": 3,
-      "side": "artikel/c372c8e22aeada46.html"
+      "prio": 5,
+      "side": "artikel/56641fe0291483b6.html"
     },
     {
       "titel": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
@@ -4116,6 +4061,83 @@
       },
       "prio": 3,
       "side": "artikel/28be3fafd1e3c2c9.html"
+    },
+    {
+      "titel": "This NAS company wants to run your local smart home",
+      "link": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
+      "resume": "Ugreen, known for its phone power banks, chargers, and NAS storage solutions, is moving into the smart home - in a big way. This week at the IFA tech show, the company launched its HomeAgent smart home platform that combines security camera storage, on-device AI, and smart home control in one system, managed by a […]",
+      "dato": "2026-09-04T05:41:44-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-04T13:42:33.956586+00:00",
+      "eget_foerst_set": "2026-09-04T13:42:33.956586+00:00",
+      "rubrik": "Ugreen lancerer HomeAgent til hele smarthjemmet",
+      "resume_da": "Ugreen har præsenteret HomeAgent, en boks med lokal AI, videoopbevaring og stemmestyring. Modellerne koster fra 899 til 9.999 dollar.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Ugreen, kendt for opladere og NAS-lagring, viste på IFA-messen en ny hub kaldet HomeAgent. Den kombinerer opbevaring af video fra overvågningskameraer, en lokal AI og stemmeassistenten Uliya, så alt kan køre hjemme hos dig selv. Ifølge Ugreen skal data aldrig forlade dit hjem, hvilket både handler om privatliv og om at undgå månedlige abonnementer."
+        },
+        {
+          "overskrift": "Pris og modeller",
+          "tekst": "Der kommer tre udgaver. Billigste model HA100 koster 899 dollar, HA100 Pro koster 2.999 dollar, og topmodellen MasterAgent MA100 med en Nvidia-chip koster hele 9.999 dollar. Ugreen starter crowdfunding i oktober, og derefter kan priserne cirka blive dobbelt så høje. Alle modeller gemmer data lokalt og kræver ikke abonnement for at se video."
+        },
+        {
+          "overskrift": "Hvad kan den?",
+          "tekst": "Systemet kan følge med i, hvad der sker på tværs af kameraer, og give besked, når der er mennesker, biler, kæledyr eller pakker. Du kan spørge med stemmen, for eksempel hvor dit kæledyr er lige nu. Den kan også styre lamper og gardiner fra forskellige mærker via Matter-standarden, ligesom den kan gemme dine fotos og film, så de ikke ligger i skyen."
+        },
+        {
+          "overskrift": "Kritik og udfordringer",
+          "tekst": "De billigste udgaver kan kun klare simple kommandoer og regelstyringer, mens avancerede funktioner kræver de dyrere modeller. Skal du have besked på telefonen eller se kameraet hjemmefra, kræver det internet. Og Ugreen har endnu ikke en lang liste over enheder, der er testet til at virke – lige nu er det mest Aqara, SwitchBot og Eve, der er godkendt."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "9.999 dollar",
+          "label": "pris for topmodellen med Nvidia-chip"
+        },
+        {
+          "tal": "899 dollar",
+          "label": "startpris for billigste udgave"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "HomeAgent kombinerer NAS-lagring, kameraoptagelse og lokal AI i én enhed.",
+        "Stemmeassistenten hedder Uliya og kan blandt andet finde dit kæledyr.",
+        "Ugreen har tre modeller: HA100, HA100 Pro og MasterAgent MA100.",
+        "Kickstarter-kampagnen starter i oktober, hvorefter priserne kan fordobles.",
+        "Uliya findes også i en separat smart højttaler, og der kommer nye kameraer.",
+        "Systemet understøtter Matter, Zigbee, Thread, Bluetooth, Wi-Fi og PoE.",
+        "Anker viste på samme messe et lignende produkt kaldet Eufy MindBase."
+      ],
+      "betydning": "Du kan få en smarthub, der passer på dine data og sparer dig for abonnementer. Men vil du have den nyeste og mest avancerede model, skal du punge ud med flere titusinde kroner.",
+      "pointer": [
+        "HomeAgent er en boks til dit hjem.",
+        "Den lover privatliv uden skyen.",
+        "Priserne er høje, især topmodellen.",
+        "Kompatibilitet med andre enheder er begrænset ved start."
+      ],
+      "billedmotiv": "En NAS-enhed med en kattelem og en indbygget højttaler, flankeret af et prisskilt med 9.999 dollar og en lille kattefigur",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ugreen præsenterer en lokal AI-smarthub, men det er et produkt uden nærmere dansk relevans.",
+        "forbehold": "",
+        "emne": "ugreen"
+      },
+      "prio": 3,
+      "side": "artikel/c372c8e22aeada46.html"
     },
     {
       "titel": "Introducing agentic video understanding with Gemini",
@@ -4634,6 +4656,35 @@
       "side": "artikel/2609610f53c76f5e.html"
     },
     {
+      "titel": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "resume": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+      "dato": "2026-09-03T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "eget_foerst_set": "2026-09-03T21:16:06.186478+00:00",
+      "rubrik": "GPT-6 Astra finder fejl i 41 dokumenter på minutter",
+      "resume_da": "Finansfirmaet Legora så næsten 40 procent bedre resultater. Modellen fangede alle fire fejl, som var lagt ind med vilje.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver en kundecase, hvor GPT-6 Astra forbedrer finansiel dokumentgennemgang. Ingen ny model eller metode.",
+        "forbehold": "",
+        "emne": "openai"
+      },
+      "kat_ai": true,
+      "prio": 2
+    },
+    {
       "titel": "The Hugging Face hack could indicate cultural issues at OpenAI",
       "link": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
       "resume": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. By now you’ve probably heard about last month’s major AI security incident, in which OpenAI agents escaped their sandbox and hacked into the AI platform Hugging Face while trying to cheat on…",
@@ -5062,64 +5113,6 @@
       "side": "artikel/ae6b0e68082cd55e.html"
     },
     {
-      "titel": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-      "link": "https://openai.com/index/atv-big-air-tour",
-      "resume": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-      "dato": "2026-09-02T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-02T23:31:19.396538+00:00",
-      "eget_foerst_set": "2026-09-02T23:31:19.396538+00:00",
-      "rubrik": "ATV Big Air Tour skærer tre dages arbejde ned til tre timer",
-      "resume_da": "Ved at bruge ChatGPT til marketing og webshops sparer ATV Big Air Tour tid og kræfter.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hurtigere arbejde",
-          "tekst": "ATV Big Air Tour har taget ChatGPT i brug til at effektivisere deres markedsføring og salg af merchandise. Det betyder, at opgaver, der før tog tre arbejdsdage, nu kan klares på kun tre timer. Virksomheden oplever altså en markant tidsbesparelse i hverdagen."
-        },
-        {
-          "overskrift": "Foto bliver til website",
-          "tekst": "Et konkret eksempel er, at de har brugt ChatGPT til at forvandle produktbilleder af deres merchandise til en hel webshop med lagerstatus. Det hele tog angiveligt kun 15 minutter at få op at stå. På den måde kan de hurtigt få nye produkter ud til kunderne."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "ATV Big Air Tour bruger ChatGPT Work.",
-        "Tre dages arbejde blev til tre timer.",
-        "Marketing og merchandising er blandt opgaverne.",
-        "Merchandise-fotos blev til en lager-website.",
-        "Webshoppen blev bygget på 15 minutter."
-      ],
-      "betydning": "Du kan med AI-lignende værktøjer selv automatisere kedelige opgaver og frigøre tid til det, der virkelig betyder noget.",
-      "pointer": [
-        "Arbejde blev 24 gange hurtigere.",
-        "AI klarer marketing-opgaver.",
-        "Foto bliver automatisk til webshop.",
-        "Stor tidsgevinst for virksomheden."
-      ],
-      "billedmotiv": "En ATV's sæde med en bærbar computer, hvorpå en webshop side vises, og ved siden af står en timeglas-ur, hvor al sandet er i bunden.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "En konkret virksomheds erfaring med ChatGPT Work er et eksempel, men bidrager ikke med ny generel viden eller modelkapabilitet.",
-        "forbehold": "",
-        "emne": "openai"
-      },
-      "prio": 2,
-      "side": "artikel/21f8b896917eb3e7.html"
-    },
-    {
       "titel": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
       "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
       "resume": "Anthropic refused to support lethal autonomous warfare and mass surveillance.",
@@ -5180,6 +5173,64 @@
       },
       "prio": 6,
       "side": "artikel/cadeb7266af6974c.html"
+    },
+    {
+      "titel": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+      "link": "https://openai.com/index/atv-big-air-tour",
+      "resume": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+      "dato": "2026-09-02T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-02T23:31:19.396538+00:00",
+      "eget_foerst_set": "2026-09-02T23:31:19.396538+00:00",
+      "rubrik": "ATV Big Air Tour skærer tre dages arbejde ned til tre timer",
+      "resume_da": "Ved at bruge ChatGPT til marketing og webshops sparer ATV Big Air Tour tid og kræfter.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hurtigere arbejde",
+          "tekst": "ATV Big Air Tour har taget ChatGPT i brug til at effektivisere deres markedsføring og salg af merchandise. Det betyder, at opgaver, der før tog tre arbejdsdage, nu kan klares på kun tre timer. Virksomheden oplever altså en markant tidsbesparelse i hverdagen."
+        },
+        {
+          "overskrift": "Foto bliver til website",
+          "tekst": "Et konkret eksempel er, at de har brugt ChatGPT til at forvandle produktbilleder af deres merchandise til en hel webshop med lagerstatus. Det hele tog angiveligt kun 15 minutter at få op at stå. På den måde kan de hurtigt få nye produkter ud til kunderne."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "ATV Big Air Tour bruger ChatGPT Work.",
+        "Tre dages arbejde blev til tre timer.",
+        "Marketing og merchandising er blandt opgaverne.",
+        "Merchandise-fotos blev til en lager-website.",
+        "Webshoppen blev bygget på 15 minutter."
+      ],
+      "betydning": "Du kan med AI-lignende værktøjer selv automatisere kedelige opgaver og frigøre tid til det, der virkelig betyder noget.",
+      "pointer": [
+        "Arbejde blev 24 gange hurtigere.",
+        "AI klarer marketing-opgaver.",
+        "Foto bliver automatisk til webshop.",
+        "Stor tidsgevinst for virksomheden."
+      ],
+      "billedmotiv": "En ATV's sæde med en bærbar computer, hvorpå en webshop side vises, og ved siden af står en timeglas-ur, hvor al sandet er i bunden.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "En konkret virksomheds erfaring med ChatGPT Work er et eksempel, men bidrager ikke med ny generel viden eller modelkapabilitet.",
+        "forbehold": "",
+        "emne": "openai"
+      },
+      "prio": 2,
+      "side": "artikel/21f8b896917eb3e7.html"
     },
     {
       "titel": "Polimill builds Japan's next-generation public AI infrastructure",
@@ -6910,64 +6961,6 @@
       "side": "artikel/31f9b254385b9128.html"
     },
     {
-      "titel": "Disrupting a new covert influence campaign from Russia",
-      "link": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-      "resume": "OpenAI banned Russia-origin accounts using AI to promote a fake Israel-based think tank and a “sovereignty” index praising Russia and criticizing the West.",
-      "dato": "2026-08-25T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-08-25T09:10:13.906135+00:00",
-      "eget_foerst_set": "2026-08-25T09:10:13.906135+00:00",
-      "rubrik": "OpenAI lukker russisk AI-påvirkningskampagne",
-      "resume_da": "OpenAI har forbudt russiske konti, der brugte AI til at sprede propaganda om et falsk israelsk tænketank og et såkaldt suverænitetsindeks.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "OpenAI har opdaget og lukket ned for en række konti med oprindelse i Rusland. Kontiene brugte AI til at promovere et falsk israelsk tænketank og et 'suverænitetsindeks', der roser Rusland og kritiserer Vesten. Det er et forsøg på at påvirke den offentlige mening i skjul."
-        },
-        {
-          "overskrift": "Hvad nu?",
-          "tekst": "De russiske konti er nu forbudt, men kampagnen viser, hvordan AI kan misbruges til propaganda. OpenAI holder øje med lignende forsøg og arbejder på at stoppe dem, før de når ud til for mange. Det er et katt-og-mus-spil, der nok ikke slutter her."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI forbød russiske konti, der brugte AI til propaganda.",
-        "Kampagnen promoverede et falsk israelsk tænketank.",
-        "Der blev også lavet et 'suverænitetsindeks', der roser Rusland.",
-        "Indekset kritiserede Vesten som led i påvirkningskampagnen.",
-        "Formålet var at påvirke den offentlige mening i skjul."
-      ],
-      "betydning": "Du kan møde AI-skabt propaganda, der ligner ægte nyheder, men som er designet til at påvirke dig. Vær kritisk over for kilder og tænk dig om, før du deler.",
-      "pointer": [
-        "Russiske konti brugte AI til propaganda.",
-        "Falsk israelsk tænketank blev promoveret.",
-        "Suverænitetsindekset roste Rusland.",
-        "OpenAI bannede kontiene efter opdagelsen."
-      ],
-      "billedmotiv": "En lukket notesbog med et israelsk flag på omslaget, men med et nyt, umalet russisk flag under det øverste lag, og en lille, tom præsentationsramme ved siden af.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Konkret eksempel på AI i desinformation, men en enkelt hændelse uden bred nyhedsværdi for danske brugere.",
-        "forbehold": "",
-        "emne": "openai"
-      },
-      "prio": 3,
-      "side": "artikel/5bd6315049a12924.html"
-    },
-    {
       "titel": "How loveholidays is making everyone a builder with Codex",
       "link": "https://openai.com/index/loveholidays",
       "resume": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
@@ -7506,7 +7499,7 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-06T16:24:21.067450+00:00",
+    "beregnet": "2026-09-06T18:34:33.060392+00:00",
     "udvalgte": [
       "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
       "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
@@ -7529,32 +7522,30 @@
       "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
       "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
       "https://arxiv.org/abs/2609.03546",
-      "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
       "https://arxiv.org/abs/2609.03527",
+      "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/",
       "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
       "https://arxiv.org/abs/2609.03423",
       "https://arxiv.org/abs/2609.03438",
       "https://arxiv.org/abs/2609.03526",
       "https://arxiv.org/abs/2609.03621",
       "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
-      "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
       "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
+      "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
       "https://arxiv.org/abs/2609.03407",
       "https://arxiv.org/abs/2609.03416",
       "https://arxiv.org/abs/2609.03460",
       "https://arxiv.org/abs/2609.03494",
-      "https://openai.com/index/daybreak-for-frontline-defenders",
       "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+      "https://openai.com/index/daybreak-for-frontline-defenders",
       "https://arxiv.org/abs/2609.03580",
       "https://arxiv.org/abs/2609.03588",
       "https://openai.com/index/research-acceleration-view-inside-openai",
       "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
       "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
-      "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
       "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
+      "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
       "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
-      "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/",
-      "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
       "https://arxiv.org/abs/2609.02981",
       "https://arxiv.org/abs/2609.03236",
       "https://arxiv.org/abs/2609.03340",
@@ -7563,6 +7554,8 @@
       "https://arxiv.org/abs/2609.03493",
       "https://arxiv.org/abs/2609.03515",
       "https://arxiv.org/abs/2609.03535",
+      "https://techcrunch.com/2026/09/03/ollie-is-betting-privacy-can-win-the-ai-assistant-race/",
+      "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
       "https://openai.com/index/path-to-astra",
       "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
       "https://arxiv.org/abs/2609.03553",
@@ -7572,10 +7565,11 @@
       "https://arxiv.org/abs/2609.03635",
       "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/",
       "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
-      "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
       "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
-      "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
+      "https://openai.com/index/an-alien-mind",
+      "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
       "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+      "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
       "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
       "https://arxiv.org/abs/2609.03586",
       "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
@@ -7583,14 +7577,15 @@
       "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
       "https://arxiv.org/abs/2609.03209",
       "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "https://openai.com/index/legora-financial-statement-review-with-astra",
       "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
       "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that",
       "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
       "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
       "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results/",
       "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
-      "https://openai.com/index/atv-big-air-tour",
       "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
+      "https://openai.com/index/atv-big-air-tour",
       "https://openai.com/index/polimill",
       "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
       "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
@@ -7616,7 +7611,6 @@
       "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
       "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
       "https://openai.com/index/jalapeno-first-results",
-      "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
       "https://openai.com/index/loveholidays",
       "https://openai.com/index/expanding-our-presence-in-brazil",
       "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
@@ -7624,6 +7618,6 @@
       "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
       "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
     ],
-    "ai_vurderet": 109
+    "ai_vurderet": 110
   }
 }
