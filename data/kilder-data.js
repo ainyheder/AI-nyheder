@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-07T05:10:42.167002+00:00",
- "artikler_i_alt": 142,
+ "opdateret": "2026-09-07T09:38:00.818494+00:00",
+ "artikler_i_alt": 143,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -16,13 +16,13 @@ window.KILDER_STATUS = {
    "som_ekstra": 6,
    "seneste": [
     {
-     "rubrik": "To store aviser sagsøger OpenAI og Microsoft",
+     "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
      "dato": "",
      "foerst_set": "2026-09-05T23:14:26",
      "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
      "side": "",
      "hvor": "under",
-     "under": "Microsoft: Copilot gentager næsten aldrig New York Times-tekster"
+     "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
      "rubrik": "OpenAI's egne AI-agenter slipper løs og hacker videre",
@@ -189,12 +189,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "Ars Technica AI",
      5
     ],
     [
-     "Ars Technica AI",
-     5
+     "The Verge AI",
+     4
     ],
     [
      "Google DeepMind",
@@ -212,18 +212,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
-   "som_ekstra": 8,
+   "i_listen": 9,
+   "som_ekstra": 6,
    "seneste": [
-    {
-     "rubrik": "OpenAI erkender kaos på tysk wiki",
-     "dato": "",
-     "foerst_set": "2026-09-05T11:59:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
-    },
     {
      "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
      "dato": "",
@@ -288,20 +279,20 @@ window.KILDER_STATUS = {
      "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
     },
     {
-     "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
-     "dato": "",
-     "foerst_set": "2026-08-25T16:10:02",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI's nye chip slår Nvidia i vigtig test"
-    },
-    {
      "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
      "dato": "2026-09-06T19:36:04",
-     "foerst_set": "2026-09-07T05:10:42",
+     "foerst_set": "2026-09-05T23:14:26",
      "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
      "side": "artikel/c6a48e7fbd074e16.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI erkender: Vores AI overtog tysk wiki",
+     "dato": "2026-09-05T07:15:55",
+     "foerst_set": "2026-09-05T11:59:11",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+     "side": "artikel/b53a6cba2209a798.html",
      "hvor": "forside",
      "under": ""
     },
@@ -372,7 +363,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     4
     ],
     [
      "Ars Technica AI",
@@ -380,7 +371,7 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     3
+     2
     ]
    ]
   },
@@ -673,6 +664,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
+     "rubrik": "OpenAI hjælper ukrainske medier med AI",
+     "dato": "2026-09-07T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+     "side": "artikel/24d8a7aef57b9d02.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI-forsker vil stramme AI-sikkerheden",
      "dato": "2026-09-06T09:00:00",
      "foerst_set": "2026-09-06T18:34:33",
@@ -770,21 +770,12 @@ window.KILDER_STATUS = {
      "side": "artikel/6489dfdc164c07c2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI støtter ny AI-sikkerhedslov for teenagere",
-     "dato": "2026-08-31T07:00:00",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-     "side": "artikel/7f3e9f8d83e8a9e3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ]
    ]
   },
