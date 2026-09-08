@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-07T22:58:26.668922+00:00",
+ "opdateret": "2026-09-08T05:10:40.640588+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-08-09",
    "2026-08-10",
    "2026-08-11",
    "2026-08-12",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-09-04",
    "2026-09-05",
    "2026-09-06",
-   "2026-09-07"
+   "2026-09-07",
+   "2026-09-08"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     0,
      28,
      3,
      25,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      1,
      25,
      1,
-     20
+     20,
+     0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     3,
      8,
      2,
      10,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      5,
      4,
      1,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     1,
      9,
      4,
      8,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      4,
      0,
      0,
+     0,
      0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     1,
      3,
      6,
      7,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      9,
      0,
      0,
+     0,
      0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     0,
      2,
      3,
      2,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      2,
      1,
      1,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     0,
      4,
      2,
      2,
@@ -241,6 +240,7 @@ window.LAESERTAL = {
      2,
      3,
      3,
+     0,
      0,
      0,
      0
@@ -416,11 +416,6 @@ window.LAESERTAL = {
  ],
  "serie": [
   {
-   "dato": "2026-08-09",
-   "besoeg": 10,
-   "visninger": 10
-  },
-  {
    "dato": "2026-08-10",
    "besoeg": 0,
    "visninger": 0
@@ -564,6 +559,11 @@ window.LAESERTAL = {
    "dato": "2026-09-07",
    "besoeg": 10,
    "visninger": 10
+  },
+  {
+   "dato": "2026-09-08",
+   "besoeg": 0,
+   "visninger": 0
   }
  ],
  "artikler": [
