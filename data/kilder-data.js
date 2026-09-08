@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-08T13:48:27.898743+00:00",
- "artikler_i_alt": 148,
+ "opdateret": "2026-09-08T18:02:43.998469+00:00",
+ "artikler_i_alt": 155,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 20,
+   "i_listen": 24,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -61,6 +61,42 @@ window.KILDER_STATUS = {
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
     },
     {
+     "rubrik": "Google opdaterer Chrome hver anden uge",
+     "dato": "2026-09-08T15:04:09",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+     "side": "artikel/95a190e6d2c58c48.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Mistral rejser rekordstore tre milliarder euro",
+     "dato": "2026-09-08T14:17:48",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+     "side": "artikel/f37bc5517ee731ca.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI beskyldes for snyd i millionkonkurrence",
+     "dato": "2026-09-08T17:32:15",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Cloud indgår AI-aftale med Accenture",
+     "dato": "2026-09-08T16:20:31",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "TechCrunch-ordbog: Forstå AI-slangen",
      "dato": "2026-09-07T19:24:00",
      "foerst_set": "2026-09-07T20:06:42",
@@ -106,11 +142,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI's AI-agent slap uden opsyn igen",
+     "rubrik": "OpenAI's løbske agenter udløser krav om uvildig undersøgelse",
      "dato": "2026-09-04T23:15:11",
      "foerst_set": "2026-09-05T04:54:19",
      "link": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
-     "side": "",
+     "side": "artikel/2180a1fa6f136ca7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -129,42 +165,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-04T23:13:06",
      "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini Spark rydder op i dine Google Fotobilleder",
-     "dato": "2026-09-04T14:47:11",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
-     "side": "artikel/8455d4164fcecab9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple's Ternus overtager, Nvidia satser på AI",
-     "dato": "2026-09-04T16:04:08",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "John Ternus overtager Apple efter Tim Cook",
-     "dato": "2026-09-04T17:18:00",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/",
-     "side": "artikel/eb999a1a327aa4ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TechCrunch Disrupt: Sidste frist for sideevents i nat",
-     "dato": "2026-09-04T14:00:00",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/",
-     "side": "artikel/c21a7a0108f1a46a.html",
      "hvor": "forside",
      "under": ""
     }
@@ -194,7 +194,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 11,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -261,6 +261,24 @@ window.KILDER_STATUS = {
      "under": "EU skærper kontrollen med ChatGPT, Reddit og Roblox"
     },
     {
+     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
+     "dato": "2026-09-08T10:00:00",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "side": "artikel/96b2ae8646c8100a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic sagsøgt for vildledende abonnementsvilkår",
+     "dato": "2026-09-08T13:27:31",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+     "side": "artikel/b60588e37b2e4b86.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Adobe gør AI-video nemt i Premiere",
      "dato": "2026-09-08T09:00:00",
      "foerst_set": "2026-09-08T13:48:27",
@@ -307,7 +325,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsofts Project Zenith rydder op i Windows",
-     "dato": "2026-09-04T06:44:15",
+     "dato": "2026-09-04T10:44:15",
      "foerst_set": "2026-09-04T13:42:33",
      "link": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
      "side": "artikel/9a19ccf0dc0812cf.html",
@@ -628,6 +646,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
+     "rubrik": "OpenAI støtter teenagere-forskning med 35 mio. kr.",
+     "dato": "2026-09-08T09:00:00",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://openai.com/index/teen-development-research-grants",
+     "side": "artikel/c34d7a764f86c6e9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI: Billigere AI kan klare mere",
      "dato": "2026-09-08T13:00:00",
      "foerst_set": "2026-09-08T13:48:27",
@@ -716,24 +752,6 @@ window.KILDER_STATUS = {
      "side": "artikel/8e955ff5c0050eaa.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's Astra-model møder kritiske sikkerhedskrav",
-     "dato": "2026-09-01T13:00:00",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/path-to-astra",
-     "side": "artikel/c931d0b3b7dbf27f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lader hospitaler koble sundhedsdata på ChatGPT",
-     "dato": "2026-09-01T12:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-     "side": "artikel/56641fe0291483b6.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -753,7 +771,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -773,6 +791,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
+    },
+    {
+     "rubrik": "Googles AI kortlægger alle DNA-forandringer",
+     "dato": "2026-09-08T14:00:15",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "artikel/8aaadec7c05e0c22.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google giver elitesikkerhed til udvalgte forsvarere",
@@ -986,7 +1013,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "fejl": "TimeoutError: The read operation timed out",
    "hentet": 0,
    "i_listen": 8,
    "som_ekstra": 0,
