@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-08T18:05:37.346299+00:00",
+ "opdateret": "2026-09-08T21:25:02.937646+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      25,
      1,
      20,
-     3
+     7
     ]
    },
    {
@@ -103,42 +103,7 @@ window.LAESERTAL = {
      4,
      1,
      1,
-     1
-    ]
-   },
-   {
-    "navn": "Penge & marked",
-    "tal": [
-     3,
-     6,
-     7,
-     8,
-     1,
-     1,
-     3,
-     6,
-     5,
-     7,
-     4,
-     2,
-     0,
-     1,
-     3,
-     5,
-     9,
-     6,
-     5,
-     1,
-     1,
-     6,
-     5,
-     7,
-     4,
-     9,
-     0,
-     0,
-     0,
-     1
+     3
     ]
    },
    {
@@ -173,7 +138,42 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     3
+    ]
+   },
+   {
+    "navn": "Penge & marked",
+    "tal": [
+     3,
+     6,
+     7,
+     8,
+     1,
+     1,
+     3,
+     6,
+     5,
+     7,
+     4,
+     2,
+     0,
+     1,
+     3,
+     5,
+     9,
+     6,
+     5,
+     1,
+     1,
+     6,
+     5,
+     7,
+     4,
+     9,
+     0,
+     0,
+     0,
+     2
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      1,
      1,
-     2
+     3
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 29,
- "sidevisninger_i_alt": 43,
+ "besoeg_i_alt": 28,
+ "sidevisninger_i_alt": 42,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 29,
-   "visninger": 34
+   "besoeg": 28,
+   "visninger": 33
   },
   {
    "sti": "/laer.html",
@@ -307,7 +307,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 29
+   "besoeg": 28
   }
  ],
  "ai_chats": [],
@@ -315,8 +315,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 29,
-    "visninger": 29
+    "besoeg": 28,
+    "visninger": 28
    },
    {
     "fra": "herfra selv",
