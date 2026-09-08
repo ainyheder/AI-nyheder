@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-08T05:10:40.640588+00:00",
+ "opdateret": "2026-09-08T09:01:45.021282+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 30,
- "sidevisninger_i_alt": 46,
+ "besoeg_i_alt": 29,
+ "sidevisninger_i_alt": 43,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 30,
-   "visninger": 36
+   "besoeg": 29,
+   "visninger": 34
   },
   {
    "sti": "/laer.html",
@@ -275,11 +275,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/koerekort.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/698656d72c29beda.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -312,7 +307,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 30
+   "besoeg": 29
   }
  ],
  "ai_chats": [],
@@ -320,13 +315,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 30,
-    "visninger": 30
+    "besoeg": 29,
+    "visninger": 29
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 6
+    "visninger": 5
    }
   ],
   "/laer.html": [
@@ -351,13 +346,6 @@ window.LAESERTAL = {
    }
   ],
   "/koerekort.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/698656d72c29beda.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -583,21 +571,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/698656d72c29beda.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "TechBBQ: Europa vil bestemme over AI selv",
-   "kategori": "Samfund & etik",
-   "dato": "2026-08-29",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/39b8780becce037f.html",
    "besoeg": 0,
    "visninger": 1,
@@ -662,10 +635,6 @@ window.LAESERTAL = {
   {
    "navn": "Lanceringer",
    "visninger": 4
-  },
-  {
-   "navn": "Samfund & etik",
-   "visninger": 1
   },
   {
    "navn": "Politik & jura",

@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-08T05:10:05.941516+00:00",
+ "opdateret": "2026-09-08T09:01:11.529983+00:00",
  "artikler_i_alt": 145,
  "kilder": [
   {
@@ -178,7 +178,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Crusoe henter 30 milliarder dollar til AI-datacentre",
+     "rubrik": "Crusoe og Jane Street i milliardaftale",
      "dato": "2026-09-04T00:48:42",
      "foerst_set": "2026-09-04T05:02:47",
      "link": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
@@ -994,9 +994,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
    "i_listen": 8,
    "som_ekstra": 0,
    "seneste": [
