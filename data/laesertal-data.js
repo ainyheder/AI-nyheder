@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-08T21:25:02.937646+00:00",
+ "opdateret": "2026-09-08T23:36:48.077705+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 28,
- "sidevisninger_i_alt": 42,
+ "besoeg_i_alt": 26,
+ "sidevisninger_i_alt": 38,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 28,
-   "visninger": 33
+   "besoeg": 26,
+   "visninger": 30
   },
   {
    "sti": "/laer.html",
@@ -275,11 +275,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/koerekort.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/39b8780becce037f.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -307,7 +302,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 28
+   "besoeg": 26
   }
  ],
  "ai_chats": [],
@@ -315,13 +310,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 28,
-    "visninger": 28
+    "besoeg": 26,
+    "visninger": 26
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 5
+    "visninger": 4
    }
   ],
   "/laer.html": [
@@ -346,13 +341,6 @@ window.LAESERTAL = {
    }
   ],
   "/koerekort.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/39b8780becce037f.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -571,21 +559,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/39b8780becce037f.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Nvidia udgiver DLSS 5 - kun til ét spil",
-   "kategori": "Lanceringer",
-   "dato": "2026-09-01",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/939cb98685e5e469.html",
    "besoeg": 0,
    "visninger": 1,
@@ -634,7 +607,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 4
+   "visninger": 3
   },
   {
    "navn": "Politik & jura",

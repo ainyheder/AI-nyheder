@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-08T21:21:14.645089+00:00",
- "artikler_i_alt": 160,
+ "opdateret": "2026-09-08T23:36:25.344771+00:00",
+ "artikler_i_alt": 152,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -11,10 +11,28 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 20,
-   "i_listen": 27,
-   "som_ekstra": 5,
+   "hentet": 19,
+   "i_listen": 23,
+   "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "OpenAI beskyldes for snyd i millionkonkurrence",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og 90 år gammel gåde: Uenighed om løsning"
+    },
     {
      "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
      "dato": "",
@@ -23,6 +41,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Seattle Times og Newsday sagsøger OpenAI"
+    },
+    {
+     "rubrik": "OpenAI erkender: Vores AI over tog tysk forum",
+     "dato": "",
+     "foerst_set": "2026-09-05T11:59:11.858891+00:00",
+     "link": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
+    },
+    {
+     "rubrik": "OpenAI's løbske agenter udløser krav om uvildig undersøgelse",
+     "dato": "",
+     "foerst_set": "2026-09-05T04:54:19.519926+00:00",
+     "link": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
     },
     {
      "rubrik": "OpenAI lancerer den kontroversielle AI-model Astra",
@@ -61,29 +97,20 @@ window.KILDER_STATUS = {
      "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
     },
     {
-     "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
-     "dato": "2026-09-08T21:10:27",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-     "side": "artikel/baf4c2ebabc9d923.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
-     "dato": "2026-09-08T19:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-     "side": "artikel/20d984cb02ebaee3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "AI-kodetjenesten Cognition rammer 48 milliarder dollars",
      "dato": "2026-09-08T21:04:06",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
      "side": "artikel/ba0725adef5efc9d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
+     "dato": "2026-09-08T21:10:27",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+     "side": "artikel/baf4c2ebabc9d923.html",
      "hvor": "forside",
      "under": ""
     },
@@ -102,15 +129,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
      "side": "artikel/f37bc5517ee731ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI beskyldes for snyd i millionkonkurrence",
-     "dato": "2026-09-08T17:32:15",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
-     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -160,11 +178,29 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI erkender: Vores AI over tog tysk forum",
-     "dato": "2026-09-05T18:05:27",
-     "foerst_set": "2026-09-05T11:59:11",
-     "link": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
-     "side": "artikel/669fdcb55695ab82.html",
+     "rubrik": "XDOF på vej mod ny milliardinvestering",
+     "dato": "2026-09-04T23:36:14",
+     "foerst_set": "2026-09-05T04:54:19",
+     "link": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
+     "side": "artikel/f48898262d8e66ea.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nscale vil rejse 3,5 milliarder dollars",
+     "dato": "2026-09-04T21:12:11",
+     "foerst_set": "2026-09-04T23:13:06",
+     "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini Spark rydder op i dine Google Fotobilleder",
+     "dato": "2026-09-04T14:47:11",
+     "foerst_set": "2026-09-04T17:44:14",
+     "link": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
+     "side": "artikel/8455d4164fcecab9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -172,7 +208,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     5
+     7
     ],
     [
      "Ars Technica AI",
@@ -194,17 +230,26 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 14,
+   "i_listen": 12,
    "som_ekstra": 6,
    "seneste": [
     {
-     "rubrik": "OpenAI erkender: Vores AI overtog tysk wiki",
+     "rubrik": "Anthropic sagsøgt for vildledende abonnementsvilkår",
      "dato": "",
-     "foerst_set": "2026-09-05T11:59:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI erkender: Vores AI over tog tysk forum"
+     "under": "Hackere tømmer Claude-konti for dyre tokens"
+    },
+    {
+     "rubrik": "Microsoft: Copilot gentager næsten aldrig New York Times-tekster",
+     "dato": "",
+     "foerst_set": "2026-09-04T17:44:14.727629+00:00",
+     "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
+     "side": "",
+     "hvor": "under",
+     "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
      "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
@@ -270,15 +315,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI og 90 år gammel gåde: Uenighed om løsning",
-     "dato": "2026-09-08T16:53:52",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
-     "side": "artikel/adeeaa4614930ae2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
      "dato": "2026-09-08T15:00:00",
      "foerst_set": "2026-09-08T21:21:14",
@@ -297,11 +333,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic sagsøgt for vildledende abonnementsvilkår",
-     "dato": "2026-09-08T13:27:31",
+     "rubrik": "OpenAI og 90 år gammel gåde: Uenighed om løsning",
+     "dato": "2026-09-08T16:53:52",
      "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-     "side": "artikel/b60588e37b2e4b86.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "side": "artikel/adeeaa4614930ae2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -315,15 +351,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
-     "dato": "2026-09-06T19:36:04",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
-     "side": "artikel/c6a48e7fbd074e16.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Roland Melody Flip: AI-hjælp til musikere",
      "dato": "2026-09-04T13:51:35",
      "foerst_set": "2026-09-04T20:58:21",
@@ -333,11 +360,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Microsoft: Copilot gentager næsten aldrig New York Times-tekster",
-     "dato": "2026-09-04T12:05:57",
+     "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
+     "dato": "2026-09-06T19:36:04",
      "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
-     "side": "artikel/38b7d6c16f55ac4d.html",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+     "side": "artikel/c6a48e7fbd074e16.html",
      "hvor": "forside",
      "under": ""
     },
@@ -367,20 +394,38 @@ window.KILDER_STATUS = {
      "side": "artikel/c372c8e22aeada46.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Derfor ligner AI-mad et mareridt",
+     "dato": "2026-09-04T11:00:00",
+     "foerst_set": "2026-09-04T13:42:33",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that",
+     "side": "artikel/a1f8e8245fb76b0e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?",
+     "dato": "2026-09-03T18:00:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+     "side": "artikel/a94dc4fdbbc2a78c.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     7
+    ],
+    [
+     "OpenAI Blog",
+     3
     ],
     [
      "Ars Technica AI",
      3
-    ],
-    [
-     "OpenAI Blog",
-     1
     ],
     [
      "Google DeepMind",
@@ -646,9 +691,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 24,
-   "som_ekstra": 1,
+   "i_listen": 22,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lader dig tegne dine egne AI-billeder"
+    },
+    {
+     "rubrik": "OpenAI løser million-dollar-gåde med AI",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/navier-stokes-solution",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og 90 år gammel gåde: Uenighed om løsning"
+    },
     {
      "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
      "dato": "",
@@ -659,29 +722,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
-     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
-     "dato": "2026-09-08T11:30:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI's GPT-5.6 Sol styrer kvantecomputer-forsøg",
      "dato": "2026-09-08T17:00:00",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://openai.com/index/codex-quantum-computing-experiments",
      "side": "artikel/48232c1c3bd81287.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI løser million-dollar-gåde med AI",
-     "dato": "2026-09-08T10:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/navier-stokes-solution",
-     "side": "artikel/4b61789c249a93a6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -765,12 +810,30 @@ window.KILDER_STATUS = {
      "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Spilfirmaet Playco sparer tid med GPT-6 Astra",
+     "dato": "2026-09-03T12:00:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GPT-6 Astra finder fejl i 41 dokumenter på minutter",
+     "dato": "2026-09-03T12:00:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     3
     ]
    ]
   },
@@ -1030,7 +1093,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "fejl": "TimeoutError: The read operation timed out",
    "hentet": 0,
    "i_listen": 8,
    "som_ekstra": 0,
