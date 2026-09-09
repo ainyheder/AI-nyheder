@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-09T17:56:17.353477+00:00",
- "artikler_i_alt": 197,
+ "opdateret": "2026-09-09T21:06:39.434672+00:00",
+ "artikler_i_alt": 199,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,9 +12,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 18,
-   "i_listen": 34,
-   "som_ekstra": 6,
+   "i_listen": 36,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Apple beviser dine billeder ikke er lavet af AI",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apple-has-a-new-way-prove-your-iphone-photos-arent-ai-slop/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
+    },
+    {
+     "rubrik": "Apple præsenterer iPhone Duo-foldtelefonen",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple forklarer, hvordan lytning beskytter dig"
+    },
     {
      "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
      "dato": "",
@@ -86,6 +104,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic anklages for piratkopiering i ny musik-søgsmål"
+    },
+    {
+     "rubrik": "Apple opfinder din 'helbredsalder' i ny Health-app",
+     "dato": "2026-09-09T18:16:29",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
+     "side": "artikel/41fc243c5eb6113f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple Watch lytter altid nu",
+     "dato": "2026-09-09T20:24:48",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Instinct-AI får sin egen email-adresse",
@@ -176,30 +212,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
-     "dato": "2026-09-08T21:10:27",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-     "side": "artikel/baf4c2ebabc9d923.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AI-kodetjenesten Cognition rammer 48 milliarder dollars",
-     "dato": "2026-09-08T21:04:06",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-     "side": "artikel/ba0725adef5efc9d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
@@ -207,6 +225,10 @@ window.KILDER_STATUS = {
     ],
     [
      "MIT Tech Review AI",
+     1
+    ],
+    [
+     "OpenAI Blog",
      1
     ],
     [
@@ -225,18 +247,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 18,
-   "som_ekstra": 6,
+   "i_listen": 21,
+   "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "OpenAI og 90 år gammel gåde: Uenighed om løsning",
-     "dato": "",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
-     "side": "",
-     "hvor": "under",
-     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
-    },
     {
      "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
      "dato": "",
@@ -292,6 +305,24 @@ window.KILDER_STATUS = {
      "under": "EU skærper kontrollen med ChatGPT, Reddit og Roblox"
     },
     {
+     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+     "dato": "2026-09-09T15:30:12",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+     "side": "artikel/8c5653d85b3831c0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple forklarer, hvordan lytning beskytter dig",
+     "dato": "2026-09-09T16:44:43",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Microsoft laver AI-regler for skoler",
      "dato": "2026-09-09T13:07:48",
      "foerst_set": "2026-09-09T17:56:17",
@@ -337,6 +368,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
+     "dato": "2026-09-08T16:53:52",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "side": "artikel/adeeaa4614930ae2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
      "dato": "2026-09-08T15:00:00",
      "foerst_set": "2026-09-08T21:21:14",
@@ -347,7 +387,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
-     "dato": "2026-09-08T10:00:00",
+     "dato": "2026-09-08T14:00:00",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
      "side": "artikel/96b2ae8646c8100a.html",
@@ -365,37 +405,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Adobe gør AI-video nemt i Premiere",
-     "dato": "2026-09-08T09:00:00",
+     "dato": "2026-09-08T13:00:00",
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
      "side": "artikel/926902b984e8d2e0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
-     "dato": "2026-09-06T23:36:04",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
-     "side": "artikel/c6a48e7fbd074e16.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI indrømmer skyld i tysk wiki-angreb",
-     "dato": "2026-09-05T11:15:55",
-     "foerst_set": "2026-09-05T11:59:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Roland Melody Flip: AI-hjælp til musikere",
-     "dato": "2026-09-04T17:51:35",
-     "foerst_set": "2026-09-04T20:58:21",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
-     "side": "artikel/9fcc973739509204.html",
      "hvor": "forside",
      "under": ""
     }
@@ -403,11 +416,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
-     4
+     5
     ],
     [
      "OpenAI Blog",
@@ -433,8 +446,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 18,
-   "som_ekstra": 2,
+   "i_listen": 17,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Anthropic-forsker forlader jobbet med alvorlig advarsel",
@@ -446,6 +459,15 @@ window.KILDER_STATUS = {
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
     },
     {
+     "rubrik": "Google kortlægger hvert eneste gen-ændring med AlphaGenome",
+     "dato": "",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+     "side": "",
+     "hvor": "under",
+     "under": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger"
+    },
+    {
      "rubrik": "OpenAI's egne AI'er forsøgte at bryde ud af deres bur",
      "dato": "",
      "foerst_set": "2026-09-04T23:13:06",
@@ -455,11 +477,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
     },
     {
-     "rubrik": "Google kortlægger hvert eneste gen-ændring med AlphaGenome",
-     "dato": "2026-09-09T16:34:18",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
-     "side": "artikel/3c17b6b72442d35f.html",
+     "rubrik": "USA: Seks kinesiske AI-firmaer stjæler fra os",
+     "dato": "2026-09-09T20:06:28",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
+     "side": "artikel/0bbc043a229b6781.html",
      "hvor": "forside",
      "under": ""
     },
@@ -566,7 +588,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "TechCrunch AI",
@@ -695,8 +717,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
-   "som_ekstra": 2,
+   "i_listen": 22,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
@@ -706,6 +728,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lader dig tegne dine egne AI-billeder"
+    },
+    {
+     "rubrik": "OpenAI løser årtusindets matematikgåde?",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/navier-stokes-solution",
+     "side": "",
+     "hvor": "under",
+     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
     },
     {
      "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
@@ -731,15 +762,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://openai.com/index/codex-quantum-computing-experiments",
      "side": "artikel/48232c1c3bd81287.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI løser årtusindets matematikgåde?",
-     "dato": "2026-09-08T10:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/navier-stokes-solution",
-     "side": "artikel/4b61789c249a93a6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -823,12 +845,25 @@ window.KILDER_STATUS = {
      "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Spilfirmaet Playco sparer tid med GPT-6 Astra",
+     "dato": "2026-09-03T12:00:00",
+     "foerst_set": "2026-09-03T21:16:06",
+     "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
      2
+    ],
+    [
+     "TechCrunch AI",
+     1
     ]
    ]
   },
@@ -1087,10 +1122,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 12,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 11,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1198,15 +1233,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-03T23:29:06",
      "link": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "New Yorks skoler forbyder AI",
-     "dato": "2026-09-02T20:57:04",
-     "foerst_set": "2026-09-03T09:07:40",
-     "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
-     "side": "artikel/1fa5e007a9948bbd.html",
      "hvor": "forside",
      "under": ""
     }
