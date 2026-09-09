@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-09T21:06:39.434672+00:00",
+ "opdateret": "2026-09-09T23:28:16.094724+00:00",
  "artikler_i_alt": 199,
  "kilder": [
   {
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 18,
-   "i_listen": 36,
-   "som_ekstra": 8,
+   "i_listen": 35,
+   "som_ekstra": 12,
    "seneste": [
+    {
+     "rubrik": "OpenAI får AI-forsker med i bestyrelsen",
+     "dato": "",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+     "side": "",
+     "hvor": "under",
+     "under": "Paul Christiano indtræder i OpenAIs sikkerhedsråd"
+    },
     {
      "rubrik": "Apple beviser dine billeder ikke er lavet af AI",
      "dato": "",
@@ -25,13 +34,40 @@ window.KILDER_STATUS = {
      "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
-     "rubrik": "Apple præsenterer iPhone Duo-foldtelefonen",
+     "rubrik": "Apples foldbare iPhone bygget med AI",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
+    },
+    {
+     "rubrik": "Apple Watch lytter altid nu",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple forklarer, hvordan lytning beskytter dig"
+    },
+    {
+     "rubrik": "Apple viser iPhone Duo og nyt ur",
      "dato": "",
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
      "side": "",
      "hvor": "under",
      "under": "Apple forklarer, hvordan lytning beskytter dig"
+    },
+    {
+     "rubrik": "Apple: iPhone er stadig den bedste AI-enhed",
+     "dato": "",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
      "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
@@ -88,22 +124,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
-     "rubrik": "Nvidia bekræfter køb af Hugging Face for 12,9 milliarder",
-     "dato": "",
-     "foerst_set": "2026-09-03T13:49:00",
-     "link": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
+     "rubrik": "Massachusetts begrænser datacentre",
+     "dato": "2026-09-09T21:43:34",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
      "side": "",
-     "hvor": "under",
-     "under": "Nvidia køber Hugging Face for 13 milliarder dollar"
-    },
-    {
-     "rubrik": "Sony og Warner sagsøger Anthropic for tyveri",
-     "dato": "",
-     "foerst_set": "2026-08-29T19:28:47",
-     "link": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic anklages for piratkopiering i ny musik-søgsmål"
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Apple opfinder din 'helbredsalder' i ny Health-app",
@@ -111,15 +138,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
      "side": "artikel/41fc243c5eb6113f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple Watch lytter altid nu",
-     "dato": "2026-09-09T20:24:48",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -155,15 +173,6 @@ window.KILDER_STATUS = {
      "dato": "2026-09-09T14:51:45",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple: iPhone er stadig den bedste AI-enhed",
-     "dato": "2026-09-09T17:36:05",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -212,23 +221,32 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
+     "dato": "2026-09-08T21:10:27",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+     "side": "artikel/baf4c2ebabc9d923.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     12
     ],
     [
      "Ars Technica AI",
      3
     ],
     [
-     "MIT Tech Review AI",
-     1
+     "OpenAI Blog",
+     2
     ],
     [
-     "OpenAI Blog",
+     "MIT Tech Review AI",
      1
     ],
     [
@@ -247,9 +265,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
-   "som_ekstra": 5,
+   "i_listen": 22,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "side": "",
+     "hvor": "under",
+     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+    },
     {
      "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
      "dato": "",
@@ -305,11 +332,20 @@ window.KILDER_STATUS = {
      "under": "EU skærper kontrollen med ChatGPT, Reddit og Roblox"
     },
     {
-     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
-     "dato": "2026-09-09T15:30:12",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-     "side": "artikel/8c5653d85b3831c0.html",
+     "rubrik": "Suno lancerer AI-musikmodel bygget med hjælp fra Warner",
+     "dato": "2026-09-09T17:42:19",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+     "side": "artikel/65f77bd4eb92a797.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's matematiske gennembrud volder hovedbrud",
+     "dato": "2026-09-09T17:16:34",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+     "side": "artikel/2ce844f1d2cad0d3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -319,6 +355,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
      "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+     "dato": "2026-09-09T15:30:12",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+     "side": "artikel/8c5653d85b3831c0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -368,17 +413,8 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
-     "dato": "2026-09-08T16:53:52",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
-     "side": "artikel/adeeaa4614930ae2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
-     "dato": "2026-09-08T15:00:00",
+     "dato": "2026-09-08T19:00:00",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
      "side": "artikel/f903c700664042a3.html",
@@ -396,19 +432,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic sagsøgt af utilfredse AI-brugere",
-     "dato": "2026-09-08T13:27:31",
+     "dato": "2026-09-08T17:27:31",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Adobe gør AI-video nemt i Premiere",
-     "dato": "2026-09-08T13:00:00",
-     "foerst_set": "2026-09-08T13:48:27",
-     "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
-     "side": "artikel/926902b984e8d2e0.html",
      "hvor": "forside",
      "under": ""
     }
@@ -416,7 +443,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     12
     ],
     [
      "Ars Technica AI",
@@ -748,6 +775,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
+     "rubrik": "OpenAI lancerer GPT-6 Astra til erhvervslivet",
+     "dato": "2026-09-09T11:00:00",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+     "side": "artikel/dc8c3baa32f27c68.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Paul Christiano indtræder i OpenAIs sikkerhedsråd",
      "dato": "2026-09-09T17:00:00",
      "foerst_set": "2026-09-09T17:56:17",
@@ -845,15 +881,6 @@ window.KILDER_STATUS = {
      "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spilfirmaet Playco sparer tid med GPT-6 Astra",
-     "dato": "2026-09-03T12:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -863,7 +890,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     1
+     2
     ]
    ]
   },
@@ -1050,7 +1077,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Smirnov: Dybe AI-net er nu matematisk præcise",
+     "rubrik": "Gleb Smirnov: Dybe AI-net er matematisk præcise",
      "dato": "2026-09-09T00:00:00",
      "foerst_set": "2026-09-09T05:10:35",
      "link": "https://arxiv.org/abs/2609.05572",
@@ -1077,7 +1104,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "AI-handelsrobotter afsløret i stor undersøgelse",
+     "rubrik": "DX Terminal Pro: AI-robotter afsløret i stor undersøgelse",
      "dato": "2026-09-09T00:00:00",
      "foerst_set": "2026-09-09T05:10:35",
      "link": "https://arxiv.org/abs/2609.05663",
@@ -1122,9 +1149,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
-   "hentet": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 6,
    "i_listen": 11,
    "som_ekstra": 1,
    "seneste": [
