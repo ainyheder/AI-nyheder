@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-10T05:16:23.124747+00:00",
+ "opdateret": "2026-09-10T09:06:25.504287+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 25,
- "sidevisninger_i_alt": 41,
+ "besoeg_i_alt": 22,
+ "sidevisninger_i_alt": 36,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 25,
-   "visninger": 33
+   "besoeg": 22,
+   "visninger": 29
   },
   {
    "sti": "/laer.html",
@@ -289,11 +289,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/01be0a47d716a83c.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/a94dc4fdbbc2a78c.html",
    "besoeg": 0,
    "visninger": 1
@@ -302,7 +297,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 25
+   "besoeg": 22
   }
  ],
  "ai_chats": [],
@@ -310,13 +305,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 25,
-    "visninger": 25
+    "besoeg": 22,
+    "visninger": 22
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 8
+    "visninger": 7
    }
   ],
   "/laer.html": [
@@ -355,13 +350,6 @@ window.LAESERTAL = {
    }
   ],
   "/artikel/939cb98685e5e469.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/01be0a47d716a83c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -574,21 +562,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/01be0a47d716a83c.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-   "kategori": "Politik & jura",
-   "dato": "2026-09-02",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/a94dc4fdbbc2a78c.html",
    "besoeg": 0,
    "visninger": 1,
@@ -608,10 +581,6 @@ window.LAESERTAL = {
   {
    "navn": "Lanceringer",
    "visninger": 3
-  },
-  {
-   "navn": "Politik & jura",
-   "visninger": 1
   }
  ]
 };

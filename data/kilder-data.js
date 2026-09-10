@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-10T05:12:15.577694+00:00",
- "artikler_i_alt": 224,
+ "opdateret": "2026-09-10T09:05:33.774078+00:00",
+ "artikler_i_alt": 226,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 38,
+   "i_listen": 39,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -34,22 +34,13 @@ window.KILDER_STATUS = {
      "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
-     "rubrik": "Apple viser foldbare iPhone Duo frem",
+     "rubrik": "Apple viser foldbar iPhone Duo og ny Apple Watch",
      "dato": "",
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
      "side": "",
      "hvor": "under",
      "under": "Apple forklarer, hvordan lytning beskytter dig"
-    },
-    {
-     "rubrik": "Debat: Skal vi overhovedet tillade super-AI?",
-     "dato": "",
-     "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-     "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
-     "side": "",
-     "hvor": "under",
-     "under": "ControlAI: Super-AI er en modstander, ikke et våben"
     },
     {
      "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
@@ -187,6 +178,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Skal vi lade superintelligens komme? Techcrunch spørger",
+     "dato": "2026-09-09T16:05:35",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Shipt får AI-hjælp til dine indkøb",
      "dato": "2026-09-09T14:51:45",
      "foerst_set": "2026-09-09T17:56:17",
@@ -221,15 +221,6 @@ window.KILDER_STATUS = {
      "side": "artikel/04755a5637fde299.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instacart lancerer AI-assistenten Clementine",
-     "dato": "2026-09-09T13:00:00",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
-     "side": "artikel/489fd9472b6bee4b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -243,10 +234,6 @@ window.KILDER_STATUS = {
     ],
     [
      "OpenAI Blog",
-     2
-    ],
-    [
-     "MIT Tech Review AI",
      1
     ],
     [
@@ -265,8 +252,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
-   "som_ekstra": 7,
+   "i_listen": 20,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "OpenAI's matematiske gennembrud volder hovedbrud",
@@ -285,6 +272,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+    },
+    {
+     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
     },
     {
      "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
@@ -422,15 +418,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
-     "dato": "2026-09-08T14:00:00",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
-     "side": "artikel/96b2ae8646c8100a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Anthropic sagsøgt af utilfredse AI-brugere",
      "dato": "2026-09-08T17:27:31",
      "foerst_set": "2026-09-08T18:02:43",
@@ -447,6 +434,15 @@ window.KILDER_STATUS = {
      "side": "artikel/926902b984e8d2e0.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
+     "dato": "2026-09-06T23:36:04",
+     "foerst_set": "2026-09-05T23:14:26",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+     "side": "artikel/c6a48e7fbd074e16.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -456,7 +452,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     4
+     5
     ],
     [
      "OpenAI Blog",
@@ -465,10 +461,6 @@ window.KILDER_STATUS = {
     [
      "Hacker News: AI",
      2
-    ],
-    [
-     "Google DeepMind",
-     1
     ]
    ]
   },
@@ -513,15 +505,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google AI forudsiger alle dna-ændringer",
-     "dato": "2026-09-09T16:34:18",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
-     "side": "artikel/3c17b6b72442d35f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "ChatGPT fik ham til at tro, han var Jesus",
      "dato": "2026-09-09T11:00:10",
      "foerst_set": "2026-09-09T13:51:27",
@@ -554,6 +537,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
      "side": "artikel/399f3bafb46e080b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google AI forudsiger alle dna-ændringer",
+     "dato": "2026-09-09T16:34:18",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+     "side": "artikel/3c17b6b72442d35f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -615,7 +607,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
+     5
     ],
     [
      "TechCrunch AI",
@@ -633,17 +625,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "OpenAI's matematik-løsning skaber debat",
-     "dato": "",
+     "rubrik": "OpenAI-sagen viser strid om matematikkens fremtid",
+     "dato": "2026-09-09T03:10:08",
      "foerst_set": "2026-09-09T05:10:35",
      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
      "side": "",
-     "hvor": "under",
-     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Danijar Hafner vil lære robotter at klare det uventede",
@@ -727,12 +719,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
@@ -744,11 +731,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 20,
-   "som_ekstra": 4,
+   "i_listen": 21,
+   "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Paul Christiano indtræder i OpenAIs sikkerhedsråd",
+     "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -764,15 +751,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lader dig tegne dine egne AI-billeder"
-    },
-    {
-     "rubrik": "OpenAI løser årtusindets matematikgåde?",
-     "dato": "",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/navier-stokes-solution",
-     "side": "",
-     "hvor": "under",
-     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
     },
     {
      "rubrik": "OpenAI hjælper ukrainske medier med AI",
@@ -816,6 +794,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://openai.com/index/codex-quantum-computing-experiments",
      "side": "artikel/48232c1c3bd81287.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
+     "dato": "2026-09-08T10:00:00",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/navier-stokes-solution",
+     "side": "artikel/4b61789c249a93a6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -890,15 +877,6 @@ window.KILDER_STATUS = {
      "side": "artikel/30eec5aa5b07636a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spilfirmaet Playco sparer tid med GPT-6 Astra",
-     "dato": "2026-09-03T12:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -908,7 +886,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -923,17 +901,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 8,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "Googles AI kortlægger alle DNA-forandringer",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger"
-    },
     {
      "rubrik": "Googles nye vejrmodel ser fem gange skarpere",
      "dato": "",
@@ -1026,10 +995,6 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
-    [
-     "The Verge AI",
-     1
-    ],
     [
      "TechCrunch AI",
      1
