@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-10T21:08:22.971459+00:00",
+ "opdateret": "2026-09-10T23:22:35.570622+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      1,
      3,
      1,
-     0
+     1
     ]
    },
    {
@@ -243,20 +243,20 @@ window.LAESERTAL = {
      0,
      3,
      2,
-     1
+     2
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 24,
- "sidevisninger_i_alt": 38,
+ "besoeg_i_alt": 23,
+ "sidevisninger_i_alt": 35,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 24,
-   "visninger": 31
+   "besoeg": 23,
+   "visninger": 29
   },
   {
    "sti": "/laer.html",
@@ -284,11 +284,6 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/artikel/939cb98685e5e469.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/artikel/a94dc4fdbbc2a78c.html",
    "besoeg": 0,
    "visninger": 1
@@ -297,7 +292,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 24
+   "besoeg": 23
   }
  ],
  "ai_chats": [],
@@ -305,13 +300,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 24,
-    "visninger": 24
+    "besoeg": 23,
+    "visninger": 23
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 7
+    "visninger": 6
    }
   ],
   "/laer.html": [
@@ -343,13 +338,6 @@ window.LAESERTAL = {
    }
   ],
   "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/939cb98685e5e469.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -547,21 +535,6 @@ window.LAESERTAL = {
    ]
   },
   {
-   "sti": "/artikel/939cb98685e5e469.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Meta betaler dig for at aflevere dine data",
-   "kategori": "Lanceringer",
-   "dato": "2026-09-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  },
-  {
    "sti": "/artikel/a94dc4fdbbc2a78c.html",
    "besoeg": 0,
    "visninger": 1,
@@ -580,7 +553,7 @@ window.LAESERTAL = {
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 3
+   "visninger": 2
   }
  ]
 };
