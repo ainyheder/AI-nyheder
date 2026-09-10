@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-10T09:05:33.774078+00:00",
- "artikler_i_alt": 226,
+ "opdateret": "2026-09-10T13:45:53.815708+00:00",
+ "artikler_i_alt": 227,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -34,7 +34,7 @@ window.KILDER_STATUS = {
      "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
-     "rubrik": "Apple viser foldbar iPhone Duo og ny Apple Watch",
+     "rubrik": "Apple viser foldbare iPhone Duo og ny Watch",
      "dato": "",
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
@@ -178,7 +178,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Skal vi lade superintelligens komme? Techcrunch spørger",
+     "rubrik": "OpenAI-hul viser risiko ved superintelligens",
      "dato": "2026-09-09T16:05:35",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
@@ -252,7 +252,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -337,6 +337,15 @@ window.KILDER_STATUS = {
      "under": "EU skærper kontrollen med ChatGPT, Reddit og Roblox"
     },
     {
+     "rubrik": "Matematiker kræver svar fra OpenAI",
+     "dato": "2026-09-10T07:00:57",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+     "side": "artikel/3aead6fbd8135d1e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Suno lancerer AI-musikmodel bygget med hjælp fra Warner",
      "dato": "2026-09-09T17:42:19",
      "foerst_set": "2026-09-09T23:28:16",
@@ -401,7 +410,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI lader dig tegne dine egne AI-billeder",
-     "dato": "2026-09-08T16:16:09",
+     "dato": "2026-09-08T20:16:09",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
      "side": "artikel/41a7f2063622334b.html",
@@ -432,15 +441,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
      "side": "artikel/926902b984e8d2e0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Seattle Times og Newsday sagsøger OpenAI",
-     "dato": "2026-09-06T23:36:04",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
-     "side": "artikel/c6a48e7fbd074e16.html",
      "hvor": "forside",
      "under": ""
     }
@@ -612,6 +612,10 @@ window.KILDER_STATUS = {
     [
      "TechCrunch AI",
      3
+    ],
+    [
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -628,6 +632,15 @@ window.KILDER_STATUS = {
    "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Ashburn-strømafbrydelse rammer AI-datacentre",
+     "dato": "2026-09-10T11:00:00",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "OpenAI-sagen viser strid om matematikkens fremtid",
      "dato": "2026-09-09T03:10:08",
@@ -708,15 +721,6 @@ window.KILDER_STATUS = {
      "side": "artikel/606181c5d71a0cc7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Bill Gates: Vi har passeret AI's fare-grænse",
-     "dato": "2026-08-26T07:01:00",
-     "foerst_set": "2026-08-26T07:28:07",
-     "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
-     "side": "artikel/a1de5e17b3b144fe.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -735,7 +739,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
+     "rubrik": "Paul Christiano kommer med i OpenAI Foundations bestyrelse",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -901,8 +905,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 8,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Google DeepMind kortlægger hele menneskets DNA",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
+    },
     {
      "rubrik": "Googles nye vejrmodel ser fem gange skarpere",
      "dato": "",
@@ -995,6 +1008,10 @@ window.KILDER_STATUS = {
     }
    ],
    "overlap": [
+    [
+     "Ars Technica AI",
+     1
+    ],
     [
      "TechCrunch AI",
      1
@@ -1132,9 +1149,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
    "i_listen": 10,
    "som_ekstra": 2,
    "seneste": [
