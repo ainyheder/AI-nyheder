@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-11T14:48:09.614761+00:00",
+  "opdateret": "2026-09-11T17:51:30.603573+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,7 +7,7 @@
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "ce6d01fa66e654d4",
+  "input_fingerprint": "0af00345efb33c40",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
   "modelkald": 7,
   "kildehentninger": 8,
@@ -21,7 +21,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -53,42 +57,42 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
+      "vaerktoej": "laes_kilde",
+      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
     }
   ],
   "kildegrundlag": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://openai.com/index/introducing-the-agents-api",
       "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/put-data-to-work",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "grundlag": "kildetekst"
     },
     {
       "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
