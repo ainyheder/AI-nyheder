@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-10T23:21:33.190760+00:00",
- "artikler_i_alt": 230,
+ "opdateret": "2026-09-11T05:11:02.605906+00:00",
+ "artikler_i_alt": 229,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 42,
+   "i_listen": 40,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -745,18 +745,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "OpenAI lancerer GPT-6 Astra til erhvervslivet",
-     "dato": "",
-     "foerst_set": "2026-09-09T23:28:16.094724+00:00",
-     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Agents API til cloud-agenter"
-    },
     {
      "rubrik": "Paul Christiano får plads i OpenAI Foundation",
      "dato": "",
@@ -765,6 +756,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI henter forsker Paul Christiano i bestyrelsen"
+    },
+    {
+     "rubrik": "OpenAI's GPT-5.6 Sol styrer kvantecomputer-forsøg",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+     "link": "https://openai.com/index/codex-quantum-computing-experiments",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI åbner GPT-Live-1 for stemmesamtaler"
     },
     {
      "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
@@ -785,11 +785,20 @@ window.KILDER_STATUS = {
      "under": "OpenAI styrker støtten til journalister og studerende"
     },
     {
-     "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
+     "rubrik": "OpenAI lancerer ChatGPT til finansverden",
+     "dato": "2026-09-10T07:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+     "side": "artikel/3f77446f0e44a8a2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
      "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-     "side": "artikel/031421652db5e34f.html",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -830,20 +839,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
-     "dato": "2026-09-10T00:00:00",
+     "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
+     "dato": "2026-09-09T11:00:00",
      "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
+     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+     "side": "artikel/dc8c3baa32f27c68.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI's GPT-5.6 Sol styrer kvantecomputer-forsøg",
-     "dato": "2026-09-08T17:00:00",
+     "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
+     "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/codex-quantum-computing-experiments",
-     "side": "artikel/48232c1c3bd81287.html",
+     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "side": "artikel/031421652db5e34f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -880,15 +889,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://openai.com/index/the-work-now-within-reach",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI styrker støtten til journalister og studerende",
-     "dato": "2026-09-08T00:00:00",
-     "foerst_set": "2026-09-07T09:38:00",
-     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-     "side": "artikel/8c676d139375cae9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1043,7 +1043,7 @@ window.KILDER_STATUS = {
    "seneste": [
     {
      "rubrik": "Forskerne bag arXiv-artikel: AI-agenter kan kende egen succes",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09448",
      "side": "artikel/8bdd50b7e730ec6f.html",
@@ -1052,7 +1052,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "ContractEval: AI tjekker om regler bliver fulgt",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09458",
      "side": "artikel/6c08ec4d3b30c6d0.html",
@@ -1061,7 +1061,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Ny AI-forskning: Sådan genbruger agenter viden",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09233",
      "side": "artikel/e4ae4bd5e40455c7.html",
@@ -1070,7 +1070,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Bo Yan: AI-agenter får ny værktøjsmenu",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09395",
      "side": "artikel/202af3e2d777c735.html",
@@ -1079,7 +1079,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Ny AI bygger spilbaner helt af sig selv",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09418",
      "side": "artikel/821525f46178eba7.html",
@@ -1088,7 +1088,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "XAI-Arena: LLM'er bedømmer AI-forklaringer",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09428",
      "side": "artikel/0cb64dd413f2bae9.html",
@@ -1097,7 +1097,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "PRAGMA: AI der husker dig over tid",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09664",
      "side": "artikel/0c848189b2ba6d08.html",
@@ -1106,7 +1106,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "University of Memphis: AI siger stop i diagnostik",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09678",
      "side": "artikel/f98c4b565a763616.html",
@@ -1115,7 +1115,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Yujin Zhou tester AI-hallucinationer i jura",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09754",
      "side": "artikel/dc2202acb4039f13.html",
@@ -1124,7 +1124,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI skal navigere Arktis uden is-problemer",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09374",
      "side": "artikel/ca13c729a285e2b2.html",
@@ -1133,7 +1133,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Pacific Northwest National Laboratory vil finde kritiske metaller med AI",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09413",
      "side": "artikel/537ed5a6506f2b91.html",
@@ -1142,7 +1142,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "RESCUE-BENCH tester AI i gruppesamtaler",
-     "dato": "2026-09-10T00:00:00",
+     "dato": "2026-09-11T00:00:00",
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://arxiv.org/abs/2609.09657",
      "side": "",
