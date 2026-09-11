@@ -1,0 +1,31 @@
+/* Fælles typografi og mærke, også på arkivets allerede genererede sider. */
+html:root {
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+  --radius: 12px;
+}
+html body :is(h1,h2,h3,.brand,.brand-navn,.o-brand,.n-titel,.ned-titel) {
+  font-family: "Inter", system-ui, sans-serif;
+}
+html body :is(.brand,.brand-navn,.o-brand) {
+  font-weight: 600;
+  letter-spacing: -.055em;
+}
+html body :is(.brand-logo,.o-logo) { content: url("ai-mark.svg"); }
+html body .topbar {
+  background: #0c0e12;
+  color: #f2f3f5;
+  border-top: 0;
+  border-bottom: 1px solid #2c313b;
+}
+html body :is(.topbar,.omslag-top) :is(.brand em,.brand-navn em,.o-brand em) {
+  color: inherit;
+  font-weight: 500;
+}
+html body .topbar :is(.top-led,.tilbage) { color: #c5ccd6; }
+html body .topbar .tilbage { background: #171a21; border-color: #3b424e; border-radius: 8px; }
+html body .topbar a:hover { color: #d5ff5f; }
+/* De eksisterende guides beholder lyse læseflader med en kølig base. */
+html:not(:has(.site-header)):not(:has(link[href*="artikel.css"])):root { --bg: #f3f5f8; }
+html body .v-net { grid-template-columns: repeat(auto-fill, minmax(min(100%,320px),1fr)); }
+@media(max-width:420px) { html body .topbar-inner { padding-inline:16px; gap:10px; } }

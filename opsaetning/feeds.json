@@ -1,46 +1,94 @@
 {
-  "kommentar": "Tilføj eller fjern kilder her - crawleren læser denne fil. 'kategori' er reserve-kategori. 'max' begrænser antal artikler pr. kørsel fra den kilde (ellers 25). 'kun_aktuel': true bruges til udgivere, der IKKE tillader et arkiv af deres overskrifter - de får ingen artikelside, ingen genfortælling og ingen plads i sitemap, og forsvinder når de ryger ud af udgiverens eget feed.",
+  "kommentar": "Internationale AI-nyheder på dansk. Prioritér direkte modellanceringer og kritiske internationale gennemgange. 'max' er antal kandidater pr. kilde (ellers 25), ikke en kvote på forsiden. 'aktiv': false pauser en kilde. 'format': 'nyhedsoversigt' læser daterede HTML-nyheder; ellers bruges RSS/Atom. 'kategori' er reserve-kategori. 'kun_aktuel': true forhindrer arkivering, genfortælling og artikelsider for udgivere, som kun tillader visning af deres aktuelle feed. Se kildegennemgang.md for kontrol og begrundelser.",
   "feeds": [
+    {
+      "navn": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "kategori": "Labs",
+      "format": "nyhedsoversigt",
+      "max": 15
+    },
+    {
+      "navn": "Mistral AI",
+      "url": "https://mistral.ai/news/rss",
+      "kategori": "Labs",
+      "max": 15
+    },
+    {
+      "navn": "Google Gemini",
+      "url": "https://blog.google/products-and-platforms/products/gemini/rss/",
+      "kategori": "Labs",
+      "max": 12
+    },
+    {
+      "navn": "xAI News",
+      "url": "https://x.ai/news",
+      "kategori": "Labs",
+      "format": "nyhedsoversigt",
+      "max": 15
+    },
+    {
+      "navn": "Hugging Face",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "kategori": "Labs",
+      "max": 12
+    },
+    {
+      "navn": "Simon Willison AI",
+      "url": "https://simonwillison.net/tags/ai.atom",
+      "kategori": "Dybde",
+      "max": 10
+    },
     {
       "navn": "TechCrunch AI",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "kategori": "Nyheder"
+      "kategori": "Nyheder",
+      "max": 10
     },
     {
       "navn": "The Verge AI",
       "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "kategori": "Nyheder"
+      "kategori": "Nyheder",
+      "max": 10
     },
     {
       "navn": "Ars Technica AI",
       "url": "https://arstechnica.com/ai/feed/",
-      "kategori": "Nyheder"
+      "kategori": "Nyheder",
+      "max": 12
     },
     {
       "navn": "MIT Tech Review AI",
       "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
-      "kategori": "Dybde"
+      "kategori": "Dybde",
+      "max": 6
     },
     {
       "navn": "OpenAI Blog",
       "url": "https://openai.com/news/rss.xml",
-      "kategori": "Labs"
+      "kategori": "Labs",
+      "max": 25
     },
     {
       "navn": "Google DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
-      "kategori": "Labs"
+      "kategori": "Labs",
+      "max": 15
     },
     {
       "navn": "arXiv cs.AI",
       "url": "https://rss.arxiv.org/rss/cs.AI",
-      "kategori": "Forskning"
+      "kategori": "Forskning",
+      "aktiv": false,
+      "note": "Den brede forskningsstrøm fyldte uforholdsmæssigt meget. Store forskningsnyheder dækkes via labs og medier."
     },
     {
       "navn": "Hacker News: AI",
       "url": "https://hnrss.org/newest?q=AI&points=150",
       "kategori": "Community",
-      "max": 6
+      "max": 6,
+      "aktiv": false,
+      "note": "Den brede AI-søgning giver debat og genomtaler. Erstattet af direkte kilder og Simon Willisons AI-gennemgange."
     }
   ]
 }

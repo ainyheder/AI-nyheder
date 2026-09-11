@@ -1,6 +1,6 @@
 # AI-nyheder
 
-Danske AI-nyheder med en læsevenlig forside, korte overblik og permanente artikelsider. Siden bruger almindelig HTML, CSS og JavaScript og fungerer direkte på den eksisterende GitHub Pages-opsætning. Der er intet byggetrin.
+Internationale AI-nyheder på dansk med en læsevenlig forside, korte overblik og permanente artikelsider. Siden bruger almindelig HTML, CSS og JavaScript og fungerer direkte på den eksisterende GitHub Pages-opsætning. Der er intet byggetrin.
 
 ## Ombygningen, september 2026
 
@@ -19,6 +19,8 @@ Officielt modelnavn: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
 ## Sådan udvælges nyhederne
 
 `crawler.py` henter kilderne og får AI til at vurdere hver historie. Derefter holder **redaktøragenten** et redaktionsmøde med DeepSeek V4.1 Flash. Den kan vælge hovedhistorier anderledes end den gamle pointliste. Den godkendte plan styrer forsiden; `redaktion.py` er reserve og bruges fortsat til den øvrige prioritering, quiz og billedbudget.
+
+Kildelisten har **12 aktive internationale kilder**: direkte modelnyheder, åbne modeller, praktiske tests og internationale medier. Den brede arXiv-strøm og Hacker News-søgningen er pauset. Dansk er formidlingssproget; Danmark eller EU giver ingen bonus i udvælgelsen. Se [kildegennemgangen](opsaetning/kildegennemgang.md) for adresser, begrundelser og adgangsbegrænsninger. `python3 opsaetning/proev-kilder.py` kontrollerer kilderne uden AI-kald, filændringer eller udsendelser. Husk også den nye `nyhedskilder.py` ved upload; den læser Anthropic og xAI direkte fra deres nyhedsoversigter.
 
 ### Redaktøragenten
 
@@ -49,11 +51,11 @@ Brug `--data /sti/til/articles.json` til en anden nyhedsdag. Rapporten angiver e
 
 | Kriterium | Vægt | Spørgsmål |
 |---|---:|---|
-| Nyhedsværdi | 25 % | Hvad er faktisk nyt? |
+| Nyhedsværdi | 30 % | Hvad er faktisk nyt? |
 | Betydning | 25 % | Hvilke konkrete følger har det for mennesker? |
-| Brugbarhed | 20 % | Kan læseren bruge indsigten eller træffe et bedre valg? |
+| Brugbarhed | 25 % | Kan læseren bruge indsigten eller træffe et bedre valg? |
 | Dokumentation | 20 % | Hvor godt understøtter det tilgængelige materiale påstanden? |
-| Dansk relevans | 10 % | Er der dokumenteret relevans for Danmark, EU eller danske brugere? |
+| Geografisk bonus | 0 % | Internationale nyheder vurderes uden bonus for Danmark eller EU. |
 
 **Modellanceringer er førsteprioritet.** Bekræftede nye AI-modeller og modelversioner får 36 ekstra prioritetspoint de første 48 timer. Derefter halveres bonussen for hver yderligere 48 timer og bortfalder efter en uge. Alle historier får desuden et stærkere aktualitetsfradrag efter tre døgn. Det giver friske historier plads uden tilfældig rotation. Forskellige modellanceringer straffes mindre for at dele kategori. Almindelige produktfunktioner, plugins, kundecases, tests og rygter tæller ikke som modellanceringer. Et smalt produktfilter afviser også åbenlyse fejlvurderinger, fx ChatGPT til en bestemt branche, selv når AI har sat modelflaget forkert.
 

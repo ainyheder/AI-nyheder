@@ -29,6 +29,13 @@ def vurdering(**extra):
 
 
 class RedaktionTests(unittest.TestCase):
+    def test_geografi_giver_ingen_bonus_heller_ikke_i_gamle_vurderinger(self):
+        for version in (2, r.VERSION):
+            international = artikel(redaktion=vurdering(version=version, dansk=0))
+            lokal = artikel(redaktion=vurdering(version=version, dansk=5))
+            self.assertEqual(r.grundscore(international), r.grundscore(lokal))
+            self.assertEqual(r.score(international, NU), r.score(lokal, NU))
+
     def test_stor_historie_slaar_lille_ny_opdatering(self):
         stor=artikel("Vigtig lancering",9,36);lille=artikel("Mindre rettelse",3,0)
         self.assertEqual(r.udvaelg([lille,stor],nu=NU)[0],stor)

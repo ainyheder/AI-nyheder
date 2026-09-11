@@ -3,7 +3,7 @@
    gamle data læsbare og er dækket af de samme fixtures som Python. */
 (function (root) {
   "use strict";
-  const WEIGHTS = {nyhed:5, betydning:5, brugbarhed:4, dokumentation:4, dansk:2};
+  const WEIGHTS = {nyhed:6, betydning:5, brugbarhed:5, dokumentation:4, dansk:0};
   const VERSION = 3;
   const MODEL_BONUS = 36;
   const HOUR = 3600000;

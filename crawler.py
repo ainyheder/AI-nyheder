@@ -2,7 +2,7 @@
 """
 AI-nyheder - crawler + AI-omskrivning
 ===================================
-1. Henter AI-nyheder fra RSS/Atom-feeds (opsaetning/feeds.json)
+1. Henter internationale AI-nyheder fra feeds og nyhedsoversigter (opsaetning/feeds.json)
 2. Omskriver hver artikel til ULTRAKORT, letlæst dansk med DeepSeek eller Gemini
    (springes over hvis ingen API-nøgle er sat - så vises originalen)
 3. Gemmer alt i data/articles.json, som hjemmesiden læser
@@ -17,6 +17,7 @@ aldrig igen (nøglen er artiklens link). Det holder prisen på få øre.
 import json
 import redaktion
 import redaktoer_agent
+from nyhedskilder import parse_nyhedsoversigt
 import copy
 import os
 import sys
@@ -41,8 +42,8 @@ OUTPUT_FIL = ROOT / "data" / "articles.json"
 FOERST_SET_FIL = ROOT / "data" / "foerst_set.json"
 # Hvad hver kilde leverede — til kontrolpanelet. Se `skriv_kilde_status`.
 KILDER_FIL = ROOT / "data" / "kilder.json"
-# Hvor mange rubrikker pr. kilde der lægges i panelets fil. arXiv alene har 25
-# artikler i listen, og filen hentes i én blok, så der skal være et loft.
+# Hvor mange rubrikker pr. kilde der lægges i panelets fil. Filen hentes
+# i én blok, så der skal være et loft.
 _SENESTE_PR_KILDE = 12
 MAX_PER_FEED = 25            # max artikler pr. feed
 MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
@@ -169,12 +170,23 @@ def parse_atom(rod: ET.Element) -> list[dict]:
 def crawl_feed(feed: dict) -> tuple[dict, list[dict], str | None]:
     try:
         data = hent_url(feed["url"])
-        rod = ET.fromstring(data)
-    except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError) as fejl:
+        format = feed.get("format", "feed")
+        if format == "nyhedsoversigt":
+            artikler = parse_nyhedsoversigt(data, feed["url"])
+        elif format == "feed":
+            rod = ET.fromstring(data)
+            if rod.tag == "rss" or rod.find("channel") is not None:
+                artikler = parse_rss(rod)
+            elif rod.tag == "{http://www.w3.org/2005/Atom}feed":
+                artikler = parse_atom(rod)
+            else:
+                raise ValueError("Kilden returnerede hverken RSS eller Atom")
+        else:
+            raise ValueError(f"Ukendt kildeformat: {format}")
+        if not artikler:
+            raise ValueError("Kilden gav ingen læsbare artikler; kontrollér adresse og sideformat")
+    except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as fejl:
         return feed, [], f"{type(fejl).__name__}: {fejl}"
-
-    artikler = parse_rss(rod) if (rod.tag == "rss" or rod.find("channel") is not None) \
-        else parse_atom(rod)
 
     rensede = []
     for a in artikler[:feed.get("max", MAX_PER_FEED)]:
@@ -188,6 +200,8 @@ def crawl_feed(feed: dict) -> tuple[dict, list[dict], str | None]:
         if feed.get("kun_aktuel"):
             a["kun_aktuel"] = True
         rensede.append(a)
+    if not rensede:
+        return feed, [], "Kilden gav ingen artikler med både titel og link"
     return feed, rensede, None
 
 
@@ -321,7 +335,7 @@ HJERNER_STATUS = ROOT / "data" / "hjerner-status.json"
 # navn -> hvad trinnet laver (vises i kontrolpanelet)
 HJERNE_BESKRIVELSE = {
     "omskriv": "Skriver rubrik og resumé på dansk for hver ny artikel",
-    "kategori": "Vurderer nyhedsværdi, betydning, brugbarhed, dokumentation og dansk relevans",
+    "kategori": "Vurderer international nyhedsværdi, betydning, brugbarhed og dokumentation",
     "dublet": "Finder artikler fra flere medier om samme begivenhed",
     "brief": "Skriver den fulde danske genfortælling af en artikel",
     "redaktoer": "Læser genfortællingen igennem og kræver omskrivning ved fejl",
@@ -2803,7 +2817,7 @@ def _uge_side_html(d: dict) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
 <style>
 :root {{ --bg:#f6f7f9; --bg-kort:#fff; --blaek:#15171c; --blaek-svag:#5f6672; --linje:#e4e7ec;
 --accent:#5b4bf0; --accent-svag:#ecebfd; --radius:20px;
@@ -3197,7 +3211,7 @@ def _artikel_side_html(a: dict) -> str:
 <title>AI-nyheder.com · {rubrik}</title>
 <meta name="description" content="{resume}">
 <link rel="canonical" href="{url}">
-<meta name="theme-color" content="#f6f7f9">
+<meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
 <meta property="og:title" content="{rubrik}">
@@ -3208,7 +3222,7 @@ def _artikel_side_html(a: dict) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
 <script type="application/ld+json">{jsonld}</script>
 <style>
 :root {{ --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
@@ -3660,7 +3674,7 @@ def _video_side_html(v: dict) -> str:
 <title>AI-nyheder.com · {rubrik}</title>
 <meta name="description" content="{resume}">
 <link rel="canonical" href="{url}">
-<meta name="theme-color" content="#f6f7f9">
+<meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="video.other">
 <meta property="og:site_name" content="AI-nyheder">
 <meta property="og:title" content="{rubrik}">
@@ -3671,7 +3685,7 @@ def _video_side_html(v: dict) -> str:
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/fonts/skrifter.css">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
 <script type="application/ld+json">{jsonld}</script>
 <style>
 :root {{ --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;

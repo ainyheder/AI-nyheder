@@ -1,13 +1,15 @@
+@import url("identitet.css?v=1");
+
 /* Fælles læseoplevelse for nye og eksisterende permanente artikelsider. */
 :root {
-  --bg:#fff;
-  --bg-kort:#fff;
-  --blaek:#182131;
-  --blaek-svag:#596578;
-  --linje:#dce1e9;
-  --accent:#254bdc;
-  --accent-svag:#eef2ff;
-  color-scheme:light
+  --bg:#0c0e12;
+  --bg-kort:#171a21;
+  --blaek:#f2f3f5;
+  --blaek-svag:#a6adb9;
+  --linje:#2c313b;
+  --accent:#d5ff5f;
+  --accent-svag:#222b1a;
+  color-scheme:dark
 }
 
 html {
@@ -32,8 +34,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 
 .topbar {
   z-index:10;
-  background:#fff;
-  border-top:4px solid var(--accent);
+  background:var(--bg);
   padding:18px max(24px,calc((100vw - 1120px)/2));
   backdrop-filter:none
 }
@@ -103,7 +104,7 @@ li {
 
 .boks {
   padding:22px 26px;
-  border-radius:0;
+  border-radius:10px;
   font-size:1rem;
   line-height:1.85;
   margin:30px 0;
@@ -125,7 +126,8 @@ li {
 }
 
 .cta {
-  border-radius:4px;
+  border-radius:8px;
+  color:#12170b;
   font-size:.9375rem;
   padding:14px 22px;
   line-height:1.6
@@ -138,7 +140,7 @@ li {
 }
 
 img.top {
-  border-radius:4px;
+  border-radius:12px;
   max-height:450px;
   object-fit:cover;
   margin:12px 0 28px

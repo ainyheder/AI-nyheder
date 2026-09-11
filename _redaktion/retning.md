@@ -104,17 +104,19 @@ skrevet af AI'en hver morgen, som kun står på forsiden. Nyhedsbrevet udkommer
 kun fredag. Et dagligt overblik på mail er en vane — en ugentlig opsamling er
 en påmindelse.
 
-**Der er stadig ingen danske kilder.** Version2 og Ingeniøren er lagt ind under
-"kun aktuelle", men mailen til Teknologiens Mediehus er ikke sendt. Uden dansk
-stof bliver "Hvad betyder det for dig" ved med at være generisk, fordi
-nyhederne er amerikanske.
+**Nyhedsdækningen er international, på dansk.** Torben har 11. september 2026
+valgt internationale AI-nyheder frem for danske lokalhistorier. Nye modeller
+fra hele verden er førsteprioritet. Der skal ikke opsøges danske medier eller
+opfindes en dansk vinkel. Kildevalg og kontrol er beskrevet i
+`opsaetning/kildegennemgang.md`; agentens instruktion er `opsaetning/redaktoer.md`.
 
 ---
 
 ## Hvad jeg ville lade ligge
 
 - **Flere funktioner.** Der er rigeligt indhold. Problemet er ikke mangel.
-- **Flere nyhedskilder.** Elleve er nok. Flere giver mere at sortere, ikke bedre stof.
+- **Flere kilder alene for antallets skyld.** Tilføj kilder, der lukker et konkret
+  hul i modeldækningen eller bidrager med dokumenterede tests. Fjern støjende strømme.
 - **Sociale medier lige nu.** Opslagsmotoren er bygget og venter, men et opslag
   til nul følgere er spildt. Google først.
 - **Betaling, login og persondata.** Det bryder punkt 9, og det ville ændre,

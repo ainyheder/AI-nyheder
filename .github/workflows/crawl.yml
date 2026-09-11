@@ -55,6 +55,7 @@ jobs:
         run: |
           python3 _redaktion/proeve-redaktion.py
           python3 _redaktion/proeve-redaktoer-agent.py
+          python3 _redaktion/proeve-nyhedskilder.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:

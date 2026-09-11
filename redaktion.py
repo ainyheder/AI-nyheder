@@ -11,12 +11,15 @@ from urllib.parse import parse_qsl, urlencode, urlsplit
 
 VERSION = 3
 MODEL_BONUS = 36
-VAEGTE = {"nyhed": 5, "betydning": 5, "brugbarhed": 4, "dokumentation": 4, "dansk": 2}
+# Behold dansk-feltet for eksisterende vurderinger, men giv ingen geografisk bonus.
+VAEGTE = {"nyhed": 6, "betydning": 5, "brugbarhed": 5, "dokumentation": 4, "dansk": 0}
 TYPER = {"lancering", "guide", "gennembrud", "analyse", "politik", "sikkerhed",
          "forretning", "forskning", "rygte", "reklame", "andet"}
-PROMPT = """Du er nyhedsredaktør for et dansk AI-medie. Læseren vil forstå de
+PROMPT = """Du er nyhedsredaktør for internationale AI-nyheder fortalt på dansk. Læseren vil forstå de
 vigtigste forandringer og opdage interessante, brugbare muligheder. Vurder
 indholdets konkrete nyhedsværdi, ikke kendte firmanavne eller store beløb.
+Vælg udvikling fra hele verden. Dansk sprog er formidlingen, ikke et geografisk
+nyhedskriterium. Giv ingen bonus for Danmark eller EU, og kræv ikke dansk adgang.
 
 REDAKTIONENS FØRSTEPRIORITET ER NYE AI-MODELLER. Store og små faktiske
 modellanceringer er mere interessante for vores læsere end finansiering,
@@ -45,8 +48,8 @@ Giv hver artikel fem heltal 0-5 (0=ingen, 3=væsentlig, 5=usædvanlig):
   Rygter=0-1; løs udtalelse/tyndt resumé=1-2; konkret kilde med begrundelse=3;
   tydelig metode, resultater og begrænsninger=4-5. En pressemeddelelse kan
   dokumentere en udgivelse, men ikke bevise alle leverandørens effektpåstande.
-- dansk: Eksplicit relevans for Danmark/EU eller adgang for danske brugere.
-  Gæt ikke. 0 er helt normalt for internationale branchenyheder.
+- dansk: Sæt altid 0. Feltet bevares kun for kompatibilitet med gamle data
+  og påvirker ikke udvælgelsen.
 
 De fleste vurderinger ligger på 1-3. Giv aldrig topkarakter blot fordi der
 står OpenAI, Anthropic eller Google. En virkelig vigtig forskningsnyhed må
