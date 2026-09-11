@@ -1,13 +1,13 @@
 {
-  "opdateret": "2026-09-11T14:00:25.517913+00:00",
+  "opdateret": "2026-09-11T14:38:09.387448+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/"
+    "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "6f921efc00dacd14",
+  "input_fingerprint": "392fe595dda61a3f",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
   "modelkald": 7,
   "kildehentninger": 8,
@@ -61,21 +61,17 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "vaerktoej": "laes_kilde",
+      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
@@ -83,25 +79,33 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/put-data-to-work",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/introducing-the-agents-api",
-      "grundlag": "rss_resume"
+      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+      "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/"
+    "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ]
 }
