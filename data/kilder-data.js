@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T13:45:19.657064+00:00",
- "artikler_i_alt": 226,
+ "opdateret": "2026-09-11T14:00:25.517913+00:00",
+ "artikler_i_alt": 224,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -13,7 +13,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 19,
    "i_listen": 39,
-   "som_ekstra": 9,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
@@ -32,24 +32,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
-    },
-    {
-     "rubrik": "Apple viser foldbare iPhone Duo og ny Watch",
-     "dato": "",
-     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
-     "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apples foldbare telefon er bygget med AI"
-    },
-    {
-     "rubrik": "Apple beviser dine billeder ikke er lavet af AI",
-     "dato": "",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://techcrunch.com/2026/09/09/apple-has-a-new-way-prove-your-iphone-photos-arent-ai-slop/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
      "rubrik": "Apple Watch lytter med – og det vænner vi os til",
@@ -205,6 +187,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Apple viser foldbare iPhone Duo og lyttende ur",
+     "dato": "2026-09-09T20:03:43",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Apple opfinder din 'helbredsalder' i ny Health-app",
      "dato": "2026-09-09T18:16:29",
      "foerst_set": "2026-09-09T21:06:39",
@@ -221,21 +212,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instinct-AI får sin egen email-adresse",
-     "dato": "2026-09-09T15:13:12",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     8
     ],
     [
      "Ars Technica AI",
@@ -257,7 +239,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 19,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -277,6 +259,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+    },
+    {
+     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
+     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple: Din lyd forlader aldrig uret"
     },
     {
      "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
@@ -378,24 +369,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
-     "dato": "2026-09-09T17:16:34",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-     "side": "artikel/2ce844f1d2cad0d3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
-     "dato": "2026-09-09T15:30:12",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-     "side": "artikel/8c5653d85b3831c0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Apple: Din lyd forlader aldrig uret",
      "dato": "2026-09-09T16:44:43",
      "foerst_set": "2026-09-09T21:06:39",
@@ -439,24 +412,42 @@ window.KILDER_STATUS = {
      "side": "artikel/4c31ccfb47a0b4ea.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI lader dig tegne dine egne AI-billeder",
+     "dato": "2026-09-08T20:16:09",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+     "side": "artikel/41a7f2063622334b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
+     "dato": "2026-09-09T17:16:34",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+     "side": "artikel/2ce844f1d2cad0d3.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     8
     ],
     [
      "Ars Technica AI",
      5
     ],
     [
-     "Hacker News: AI",
+     "OpenAI Blog",
      2
     ],
     [
-     "OpenAI Blog",
-     1
+     "Hacker News: AI",
+     2
     ]
    ]
   },
@@ -630,17 +621,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 9,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "OpenAI-sagen viser strid om matematikkens fremtid",
-     "dato": "",
-     "foerst_set": "2026-09-09T05:10:35",
-     "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI offentliggør AI-bevis for Navier-Stokes"
-    },
     {
      "rubrik": "Ashburn-strømafbrydelse rammer AI-datacentre",
      "dato": "2026-09-10T11:00:00",
@@ -723,12 +705,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "OpenAI Blog",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
@@ -740,8 +717,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 21,
-   "som_ekstra": 2,
+   "i_listen": 20,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
@@ -753,7 +730,7 @@ window.KILDER_STATUS = {
      "under": "OpenAI lancerer ChatGPT til finansverden"
     },
     {
-     "rubrik": "Paul Christiano kommer med i OpenAI Foundations bestyrelse",
+     "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -769,6 +746,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lader dig tegne dine egne AI-billeder"
+    },
+    {
+     "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/navier-stokes-solution",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI løser 90-årigt matematikproblem – og skaber røre"
     },
     {
      "rubrik": "OpenAI hjælper ukrainske medier med AI",
@@ -843,15 +829,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
-     "dato": "2026-09-08T10:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/navier-stokes-solution",
-     "side": "artikel/4b61789c249a93a6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Sådan bruger MIT-forsker GPT-5.6 Sol til kvantecomputere",
      "dato": "2026-09-08T17:00:00",
      "foerst_set": "2026-09-08T21:21:14",
@@ -886,16 +863,21 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
-    ],
-    [
-     "MIT Tech Review AI",
-     1
+     2
     ],
     [
      "TechCrunch AI",
@@ -1155,7 +1137,7 @@ window.KILDER_STATUS = {
    "max": 6,
    "aktiv": true,
    "status": "fejl",
-   "fejl": "TimeoutError: The read operation timed out",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
    "hentet": 0,
    "i_listen": 10,
    "som_ekstra": 3,
@@ -1188,11 +1170,11 @@ window.KILDER_STATUS = {
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
     },
     {
-     "rubrik": "Waymo-effekten: AI gør forskere mindre samarbejdsvillige",
+     "rubrik": "Waymo-effekten: AI gør forskning mindre samarbejdende",
      "dato": "2026-09-11T11:17:50",
      "foerst_set": "2026-09-11T13:30:47",
      "link": "https://www.researchagenda.news/articles/the-waymo-effect.html",
-     "side": "",
+     "side": "artikel/44171de0459fd6c5.html",
      "hvor": "forside",
      "under": ""
     },
