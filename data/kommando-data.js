@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-11T23:35:48.485445+00:00",
+ "genereret": "2026-09-11T23:40:41.596641+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -120,30 +120,30 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nVælg internationale AI-nyheder, og fortæl dem på dansk. Dæk udviklingen i hele\nverden, også åbne modeller og udgivelser fra Asien og Europa. Dansk sprog er\nformidlingen, ikke et geografisk nyhedskriterium. Prioritér ikke danske\nlokalhistorier, og giv ingen bonus for Danmark eller EU. En vigtig international\nnyhed kræver ikke dansk adgang eller en konstrueret dansk vinkel.\n\nSkriv for nysgerrige læsere, der vil opdage, hvad AI nu kan.\nNye AI-modeller og modelversioner er førsteprioritet. Forklar konkret, hvad\nder er nyt, hvem der kan bruge det, og hvad der endnu ikke er dokumenteret.\nAdgang, pris, demonstrationer og relevante sammenligninger er nyttige, når\nkilderne faktisk oplyser dem. Gæt aldrig for at få en historie til at se færdig ud.\nBrug modeludviklernes egne udmeldinger til at dokumentere lanceringer. Deres\nbenchmarks og kvalitetsløfter er påstande, indtil uafhængige tests underbygger dem.\nKombinér dem med internationale mediers og fagfolks kritiske gennemgange.\n\nVælg også overraskende udvikling og brugbare muligheder. Store investeringer,\nkendte firmanavne og snævre forskningsartikler er ikke automatisk interessante.\nSkriv med navne og konkrete konsekvenser. Undgå fyld, reklamesprog og clickbait.\n\nSe forsiden som en samlet udgave. Én begivenhed skal kun optage én plads,\nselv om flere medier skriver om den. Forskellige modelvarianter, nye priser,\nkritik og senere væsentlige opdateringer kan være selvstændige historier.\n\nBrug hukommelsen: Hvad har læseren allerede set? Behold en vigtig historie,\nhvis den stadig fortjener pladsen. Udskift ikke tilfældigt. Når noget gentages,\nforklar hvorfor eller hvad der er kommet til siden sidst. Prioritér en frisk,\nvæsentlig historie over en gammel lancering, der ikke længere har noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-11T23:11:34.251144+00:00",
-  "antal": 158,
-  "med_billede": 0,
-  "paa_dansk": 158,
+  "opdateret": "2026-09-11T23:36:30.204566+00:00",
+  "antal": 155,
+  "med_billede": 6,
+  "paa_dansk": 155,
   "kategorier": {
    "Lanceringer": 36,
-   "Forskning": 28,
+   "Forskning": 27,
    "Politik \u0026 jura": 18,
-   "Samfund \u0026 etik": 28,
+   "Samfund \u0026 etik": 27,
    "Hverdags-AI": 23,
-   "Penge \u0026 marked": 24,
+   "Penge \u0026 marked": 23,
    "Nyheder": 1
   },
   "kilder": {
    "The Verge AI": 19,
    "OpenAI Blog": 20,
-   "TechCrunch AI": 38,
+   "TechCrunch AI": 36,
    "Simon Willison AI": 12,
    "Hugging Face": 12,
    "Ars Technica AI": 11,
-   "Google DeepMind": 10,
    "Google Gemini": 8,
    "MIT Tech Review AI": 5,
    "Mistral AI": 4,
+   "Google DeepMind": 9,
    "xAI News": 12,
    "Anthropic News": 7
   },
@@ -156,7 +156,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Lanceringer",
     "kilde": "The Verge AI",
     "dato": "2026-09-09T17:42:19-04:00",
-    "billede": ""
+    "billede": "data/img/23052fd526a4703f.jpg"
    },
    {
     "titel": "Build more natural voice experiences with GPT‑Live‑1 in the API",
@@ -166,7 +166,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Lanceringer",
     "kilde": "OpenAI Blog",
     "dato": "2026-09-10T00:00:00+00:00",
-    "billede": ""
+    "billede": "data/img/bb7921ba88d52959.jpg"
    },
    {
     "titel": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
@@ -175,7 +175,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Forskning",
     "kilde": "Hugging Face",
     "dato": "2026-09-09T15:36:24+00:00",
-    "billede": ""
+    "billede": "data/img/c31be3cdc4142e6e.jpg"
    },
    {
     "titel": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
@@ -185,7 +185,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "Ars Technica AI",
     "dato": "2026-09-11T19:34:09+00:00",
-    "billede": ""
+    "billede": "data/img/81de3599343958c5.jpg"
    },
    {
     "titel": "Datasette 1.0a39 and 0.65.4 security releases",
@@ -195,7 +195,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-11T03:27:16+00:00",
-    "billede": ""
+    "billede": "data/img/10c584e0244f3391.jpg"
    },
    {
     "titel": "Hackers are stealing Claude tokens from subscribers",
@@ -205,7 +205,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-08T21:10:27+00:00",
-    "billede": ""
+    "billede": "data/img/01bb0641d1cbb5f8.jpg"
    }
   ],
   "seneste": [
@@ -245,17 +245,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "Ars Technica AI",
     "dato": "2026-09-11T19:34:09+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "OpenAI’s feud with mathematicians is only escalating",
-    "rubrik": "Matematikere i fejde med OpenAI",
-    "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-    "side": "artikel/d4514d27691b0738.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T20:57:36+00:00",
-    "billede": ""
+    "billede": "data/img/81de3599343958c5.jpg"
    },
    {
     "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
@@ -320,11 +310,20 @@ window.KOMMANDO_DATA = {
     "kilde": "OpenAI Blog",
     "dato": "2026-09-11T10:00:00+00:00",
     "billede": ""
+   },
+   {
+    "titel": "Quoting Boris Cherny",
+    "rubrik": "Anthropic stiller højere krav til Claude-kode",
+    "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+    "kategori": "Forskning",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-11T17:47:11+00:00",
+    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-11T23:11:34.251144+00:00",
+  "opdateret": "2026-09-11T23:36:30.204566+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
@@ -342,38 +341,6 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
     "vaerktoej": "find_kilder",
     "fejl": null
    },
@@ -382,12 +349,44 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -396,8 +395,16 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "grundlag": "rss_resume"
+    "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://suno.com/blog/introducing-v6",
+    "grundlag": "kildetekst"
    },
    {
     "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
@@ -416,28 +423,21 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://openai.com/index/put-data-to-work",
-    "grundlag": "rss_resume"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+    "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-11T23:11:33.612919+00:00",
+  "opdateret": "2026-09-11T23:36:29.581885+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
-  "billedmodel": "gemini-3.1-flash-lite-image",
+  "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
   "billed_standard": "gemini-3.1-flash-lite-image",
   "forside_standard": "deepseek-flash",
   "gemini_tilgaengelig": true,
   "deepseek_tilgaengelig": true,
+  "cloudflare_tilgaengelig": true,
   "hjerner": {
    "omskriv": {
     "beskrivelse": "Skriver rubrik og resumé på dansk for hver ny artikel",
@@ -616,8 +616,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-11T23:11:34.251144+00:00",
-  "artikler_i_alt": 158,
+  "opdateret": "2026-09-11T23:36:30.204566+00:00",
+  "artikler_i_alt": 155,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1259,8 +1259,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 38,
-    "som_ekstra": 8,
+    "i_listen": 36,
+    "som_ekstra": 9,
     "seneste": [
      {
       "rubrik": "Anthropic-forsker advarer om superintelligens",
@@ -1270,6 +1270,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+     },
+     {
+      "rubrik": "Matematikere i fejde med OpenAI",
+      "dato": "",
+      "foerst_set": "2026-09-11T21:11:45",
+      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI løser milliongåde – men snød de?"
      },
      {
       "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
@@ -1358,15 +1367,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-11T23:11:34",
       "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Matematikere i fejde med OpenAI",
-      "dato": "2026-09-11T20:57:36",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-      "side": "artikel/d4514d27691b0738.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1820,9 +1820,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 10,
-    "som_ekstra": 0,
+    "i_listen": 9,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Google DeepMind kortlægger 9 milliarder DNA-ændringer",
+      "dato": "",
+      "foerst_set": "2026-09-08T18:02:43",
+      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google AI forudsiger alle dna-ændringer"
+     },
      {
       "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
       "dato": "",
@@ -1831,15 +1840,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google Gemini springer i videoer og sparer tid"
-     },
-     {
-      "rubrik": "Google DeepMind kortlægger 9 milliarder DNA-ændringer",
-      "dato": "2026-09-08T14:00:15",
-      "foerst_set": "2026-09-08T18:02:43",
-      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "side": "artikel/8aaadec7c05e0c22.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1983,7 +1983,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-11T23:13:16.134917+00:00",
+  "opdateret": "2026-09-11T23:40:35.414555+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
