@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T05:11:02.605906+00:00",
- "artikler_i_alt": 229,
+ "opdateret": "2026-09-11T09:04:00.367999+00:00",
+ "artikler_i_alt": 231,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -248,18 +248,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
+   "i_listen": 23,
    "som_ekstra": 8,
    "seneste": [
-    {
-     "rubrik": "Meta lancerer AI-assistenten Muse",
-     "dato": "",
-     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
-    },
     {
      "rubrik": "Matematiker kræver svar fra OpenAI",
      "dato": "",
@@ -360,6 +351,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
+     "dato": "2026-09-10T11:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+     "side": "artikel/bdd2b8a250a419ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Universal Music laver AI-musik med ElevenLabs",
      "dato": "2026-09-10T11:38:19",
      "foerst_set": "2026-09-10T17:49:16",
@@ -437,15 +437,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
      "side": "artikel/41a7f2063622334b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
-     "dato": "2026-09-08T19:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-     "side": "artikel/f903c700664042a3.html",
      "hvor": "forside",
      "under": ""
     }
@@ -745,26 +736,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 21,
+   "i_listen": 22,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "Paul Christiano får plads i OpenAI Foundation",
+     "rubrik": "Paul Christiano kommer i OpenAI Foundations bestyrelse",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
      "side": "",
      "hvor": "under",
      "under": "OpenAI henter forsker Paul Christiano i bestyrelsen"
-    },
-    {
-     "rubrik": "OpenAI's GPT-5.6 Sol styrer kvantecomputer-forsøg",
-     "dato": "",
-     "foerst_set": "2026-09-08T21:21:14.645089+00:00",
-     "link": "https://openai.com/index/codex-quantum-computing-experiments",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI åbner GPT-Live-1 for stemmesamtaler"
     },
     {
      "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
@@ -799,6 +781,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T21:07:39",
      "link": "https://openai.com/index/introducing-the-agents-api",
      "side": "artikel/96db0e24a08a20fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "side": "artikel/031421652db5e34f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -848,20 +839,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-     "side": "artikel/031421652db5e34f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
      "dato": "2026-09-08T10:00:00",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://openai.com/index/navier-stokes-solution",
      "side": "artikel/4b61789c249a93a6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sådan bruger MIT-forsker GPT-5.6 Sol til kvantecomputere",
+     "dato": "2026-09-08T17:00:00",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/codex-quantum-computing-experiments",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -880,15 +871,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://openai.com/index/teen-development-research-grants",
      "side": "artikel/c34d7a764f86c6e9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI: Billigere AI kan klare mere",
-     "dato": "2026-09-08T13:00:00",
-     "foerst_set": "2026-09-08T13:48:27",
-     "link": "https://openai.com/index/the-work-now-within-reach",
-     "side": "",
      "hvor": "forside",
      "under": ""
     }
@@ -1159,9 +1141,9 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
    "i_listen": 10,
    "som_ekstra": 2,
    "seneste": [
