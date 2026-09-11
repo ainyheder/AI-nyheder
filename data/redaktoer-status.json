@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-11T14:38:09.387448+00:00",
+  "opdateret": "2026-09-11T14:48:09.614761+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,7 +7,7 @@
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "392fe595dda61a3f",
+  "input_fingerprint": "ce6d01fa66e654d4",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
   "modelkald": 7,
   "kildehentninger": 8,
@@ -21,14 +21,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -61,17 +53,21 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "link": "https://openai.com/index/introducing-the-agents-api",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
       "grundlag": "kildetekst"
     },
     {
@@ -79,15 +75,15 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+      "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/put-data-to-work",
+      "grundlag": "rss_resume"
     },
     {
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
       "grundlag": "kildetekst"
     },
     {
@@ -95,12 +91,8 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+      "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [

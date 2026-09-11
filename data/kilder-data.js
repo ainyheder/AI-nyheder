@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T14:38:09.387448+00:00",
- "artikler_i_alt": 158,
+ "opdateret": "2026-09-11T14:48:09.614761+00:00",
+ "artikler_i_alt": 152,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -91,17 +91,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
-   "som_ekstra": 0,
+   "i_listen": 4,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Mistral rejser 22 milliarder kroner",
-     "dato": "2026-09-08T12:00:22",
+     "dato": "",
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
      "side": "",
-     "hvor": "forside",
-     "under": ""
+     "hvor": "under",
+     "under": "Mistral rejser rekordstore tre milliarder euro"
     },
     {
      "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
@@ -140,7 +140,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Google Gemini",
@@ -533,7 +538,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "OpenAI jagter AI der forbedrer sig selv",
+     "rubrik": "OpenAI satser på AI der forbedrer sig selv",
      "dato": "",
      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
      "link": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
@@ -565,15 +570,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
      "side": "artikel/3b42aec52f1320a9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI løser milliongåde – men snød de?",
-     "dato": "2026-09-08T23:55:12",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-     "side": "artikel/9538509fba3fdf85.html",
      "hvor": "forside",
      "under": ""
     },
@@ -621,9 +617,31 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI løser milliongåde – men snød de?",
+     "dato": "2026-09-08T23:55:12",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+     "side": "artikel/9538509fba3fdf85.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "MIT Tech Review AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "TechCrunch AI",
@@ -635,8 +653,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 39,
-   "som_ekstra": 6,
+   "i_listen": 36,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
@@ -655,6 +673,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "Apples foldbare telefon er bygget med AI",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
+     "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple klar med første foldbare iPhone Duo"
     },
     {
      "rubrik": "Apple Watch lytter med – og det vænner vi os til",
@@ -682,6 +709,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI løser milliongåde – men snød de?"
     },
     {
      "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
@@ -810,10 +846,10 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Apples foldbare telefon er bygget med AI",
-     "dato": "2026-09-09T19:21:48",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+     "rubrik": "Instinct-AI får sin egen email-adresse",
+     "dato": "2026-09-09T15:13:12",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -822,14 +858,22 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     8
+     6
     ],
     [
      "Ars Technica AI",
      2
     ],
     [
+     "Simon Willison AI",
+     1
+    ],
+    [
      "OpenAI Blog",
+     1
+    ],
+    [
+     "Mistral AI",
      1
     ]
    ]
@@ -844,8 +888,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
-   "som_ekstra": 4,
+   "i_listen": 19,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
@@ -857,15 +901,6 @@ window.KILDER_STATUS = {
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
     },
     {
-     "rubrik": "Matematiker kræver svar fra OpenAI",
-     "dato": "",
-     "foerst_set": "2026-09-10T13:45:53",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-     "side": "",
-     "hvor": "under",
-     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
-    },
-    {
      "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
      "dato": "",
      "foerst_set": "2026-09-09T21:06:39.434672+00:00",
@@ -875,13 +910,13 @@ window.KILDER_STATUS = {
      "under": "Apple: Din lyd forlader aldrig uret"
     },
     {
-     "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
+     "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
      "dato": "",
      "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
      "side": "",
      "hvor": "under",
-     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+     "under": "OpenAI løser milliongåde – men snød de?"
     },
     {
      "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
@@ -1013,11 +1048,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     8
-    ],
-    [
-     "OpenAI Blog",
-     2
+     6
     ],
     [
      "Ars Technica AI",
@@ -1026,6 +1057,14 @@ window.KILDER_STATUS = {
     [
      "Hacker News: AI",
      2
+    ],
+    [
+     "OpenAI Blog",
+     1
+    ],
+    [
+     "Simon Willison AI",
+     1
     ]
    ]
   },
@@ -1189,23 +1228,23 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
-   "som_ekstra": 0,
+   "i_listen": 5,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI løser matematikpris - og møder kritik",
+     "dato": "",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI løser milliongåde – men snød de?"
+    },
     {
      "rubrik": "Ashburn-strømsvigt rammer AI-datacentre i Virginia",
      "dato": "2026-09-10T11:00:00",
      "foerst_set": "2026-09-10T13:45:53",
      "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI løser matematikpris - og møder kritik",
-     "dato": "2026-09-09T03:10:08",
-     "foerst_set": "2026-09-09T05:10:35",
-     "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -1247,7 +1286,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Simon Willison AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "OpenAI Blog",
@@ -1260,7 +1304,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 20,
-   "som_ekstra": 3,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
@@ -1288,15 +1332,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI lader dig tegne dine egne AI-billeder"
-    },
-    {
-     "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
-     "dato": "",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/navier-stokes-solution",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI løser 90-årigt matematikproblem – og skaber røre"
     },
     {
      "rubrik": "OpenAI hjælper ukrainske medier med AI",
@@ -1419,7 +1454,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     2
+     1
     ],
     [
      "TechCrunch AI",
