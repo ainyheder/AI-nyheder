@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-11T21:11:45.274854+00:00",
+  "opdateret": "2026-09-11T22:37:10.109000+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,33 +7,13 @@
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "f545e1d44d13c7ab",
+  "input_fingerprint": "8773747c13c42eaf",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
   "modelkald": 7,
-  "kildehentninger": 7,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -66,20 +46,32 @@
     },
     {
       "vaerktoej": "laes_kilde",
-      "fejl": null
+      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/introducing-the-agents-api",
-      "grundlag": "rss_resume"
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "grundlag": "kildetekst"
     },
     {
@@ -87,15 +79,19 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "grundlag": "rss_resume"
     },
     {
       "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
       "grundlag": "kildetekst"
     }
   ],

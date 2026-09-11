@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T21:11:45.274854+00:00",
+ "opdateret": "2026-09-11T22:37:10.109000+00:00",
  "artikler_i_alt": 155,
  "kilder": [
   {
@@ -534,9 +534,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 11,
+   "i_listen": 12,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Simon Willison om AI-krisen blandt udviklere",
+     "dato": "2026-09-11T17:28:37",
+     "foerst_set": "2026-09-11T22:37:10",
+     "link": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Anthropic stiller højere krav til Claude-kode",
      "dato": "2026-09-11T17:47:11",
@@ -666,11 +675,20 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 38,
-   "som_ekstra": 8,
+   "i_listen": 36,
+   "som_ekstra": 9,
    "seneste": [
     {
-     "rubrik": "OpenAI i konflikt med 25 matematikere",
+     "rubrik": "Anthropic-forsker advarer om superintelligens",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+    },
+    {
+     "rubrik": "25 matematikere i åbent brev mod AI-laboratorier",
      "dato": "",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
@@ -778,15 +796,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic-forsker advarer om superintelligens",
-     "dato": "2026-09-11T18:41:49",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
      "dato": "2026-09-11T20:33:18",
      "foerst_set": "2026-09-11T21:11:45",
@@ -866,12 +875,21 @@ window.KILDER_STATUS = {
      "side": "artikel/9ee5bacda2ce8165.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Maven Robotics rejser 100 mio dollars til robotudrulning",
+     "dato": "2026-09-10T14:17:37",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -1061,7 +1079,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -1307,18 +1325,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 19,
+   "i_listen": 20,
    "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "OpenAI giver alle data-agent i ChatGPT",
-     "dato": "",
-     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-     "link": "https://openai.com/index/put-data-to-work",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Agents API til cloud-agenter"
-    },
     {
      "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
      "dato": "",
@@ -1374,6 +1383,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
      "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
@@ -1392,11 +1410,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
-     "dato": "2026-09-10T00:00:00",
+     "rubrik": "OpenAI giver ChatGPT adgang til dine data",
+     "dato": "2026-09-10T15:00:00",
      "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
+     "link": "https://openai.com/index/put-data-to-work",
+     "side": "artikel/d86fa96aa31ae332.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1460,15 +1478,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://openai.com/index/the-work-now-within-reach",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI styrker støtten til journalister og studerende",
-     "dato": "2026-09-08T00:00:00",
-     "foerst_set": "2026-09-07T09:38:00",
-     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-     "side": "artikel/8c676d139375cae9.html",
      "hvor": "forside",
      "under": ""
     }

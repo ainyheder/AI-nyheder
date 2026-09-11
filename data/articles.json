@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-11T21:11:45.274854+00:00",
+  "opdateret": "2026-09-11T22:37:10.109000+00:00",
   "antal": 155,
   "artikler": [
     {
@@ -396,32 +396,7 @@
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
       "resume_da": "New Mexico-advokat Stephen Aarons brugte ChatGPT i et appelindlæg og citerede opdigtede vidner. Nu er han i foragt for retten og skal betale.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Advokat straffet for at bruge ChatGPTs opdigtede vidneudsagn; han siger, han ikke vidste AI kan hallucinere.",
-        "forbehold": "",
-        "emne": "jura"
-      },
-      "kat_ai": true,
-      "prio": 6,
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-          "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
-          "resume_da": "Stephen Aarons brugte opdigtede vidner og falsk politividneudsagn i en appelsag om drab. Retten gav ham en bøde og en dom for foragt for retten.",
-          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
-        }
-      ],
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Dommerens hårde ord",
@@ -444,12 +419,20 @@
           "tekst": "Sagen er ikke enestående. Advokater over hele USA er blevet taget i at citere falske eller opdigtede retsafgørelser og vidneudsagn, som AI har genereret. Justitsministeriet og domstolene har gentagne gange understreget, at advokater altid skal kontrollere og verificere alt, uanset om kilden er en AI, en jurastuderende eller en kollega."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "5.000 dollar",
           "label": "bøde til klientbeskyttelsesfond"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+          "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
+          "resume_da": "Stephen Aarons brugte opdigtede vidner og falsk politividneudsagn i en appelsag om drab. Retten gav ham en bøde og en dom for foragt for retten.",
+          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
         }
       ],
       "detaljer": [
@@ -468,6 +451,23 @@
         "Sagen kan føre til yderligere disciplinære sanktioner."
       ],
       "billedmotiv": "En stak dompapirer med et prisskilt på 5.000 dollar og et forseglet advokatarmbånd",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Advokat straffet for at bruge ChatGPTs opdigtede vidneudsagn; han siger, han ikke vidste AI kan hallucinere.",
+        "forbehold": "",
+        "emne": "jura"
+      },
+      "prio": 6,
       "side": "artikel/9622d1970698da66.html"
     },
     {
@@ -670,91 +670,6 @@
       "side": "artikel/3b42aec52f1320a9.html"
     },
     {
-      "titel": "Hackers are stealing Claude tokens from subscribers",
-      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-      "resume": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
-      "dato": "2026-09-08T21:10:27+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
-      "resume_da": "En britisk konsulent opdagede, at ubudne gæster brugte hans Claude Max-abonnement. Andre brugere fortæller samme historie: Regningen løber, uden de selv er aktive.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Mysteriet",
-          "tekst": "Den 4. august lagde Grant de Swardt fra Storbritannien mærke til, at hans Claude Max 20x-konto brugte tokens, selvom han ikke arbejdede. Selv da han slukkede alt, fortsatte forbruget med at stige fra 45 til 55 procent i et kontrolleret tidsrum. Han anede ikke, hvad der tømte hans kvote, og kontaktede derfor firmaet bag, Anthropic."
-        },
-        {
-          "overskrift": "Sådan opdagede han det",
-          "tekst": "Anthropic kunne ikke give en specificeret oversigt, men erkendte, at noget var galt. De suspenderede hans konto, ugyldiggjorde hans sessioner og gav ham en delvis refusion på **£44,49** for den resterende tid på hans **200 dollar dyre månedsabonnement**. Undersøgelsen viste, at en stjålet session-nøgle var brugt til at lave uautoriserede adgangstokens."
-        },
-        {
-          "overskrift": "Flere er ramt",
-          "tekst": "Da de Swardt delte sin oplevelse på Reddit, strømmede det ind med svar fra andre. Én fortalte, at kontoen automatisk blev opgraderet, og kortet trukket, uden at personen selv rørte noget. En anden så forbruget gå fra 0 til **49 procent på 12 minutter** efter blot få prompter og en websøgning. Flere postede skræmmende eksempler på GitHub."
-        },
-        {
-          "overskrift": "Anthropics svar",
-          "tekst": "Anthropic sendte advarselsmails til nogle berørte brugere, hvor de forklarede, at en 'bad actor' brugte infostealer-malware til at stjæle login-sessioner fra computere. Den slags malware kan hentes fra inficerede downloads eller annoncer. Firmaet slog dog fast, at malwaren ikke kom fra selve Claude-programmet, og afviste at uddybe, hvordan brugere kan opdage misbrug."
-        },
-        {
-          "overskrift": "Konsekvensen",
-          "tekst": "De Swardt fik sin konto tilbage efter to uger, men oplevelsen fik ham til at opsige abonnementet. Han er nu skiftet til Cursor, som kan bruge flere forskellige AI-modeller, inklusive billigere open source-alternativer. 'Det er ikke meget anderledes eller bedre,' siger han om rivalerne. Han mener, at Anthropic stadig mangler værktøjer, så brugerne selv kan se, hvad der æder deres tokens."
-        },
-        {
-          "overskrift": "Uden beskyttelse",
-          "tekst": "Problemet er, at Anthropics support kun sporer totalt forbrug og ikke giver en specificeret liste. Derfor kan tyveriet fortsætte i måneder, før det opdages. De Swardt er bekymret for, at brugerne ikke kan beskytte sig selv. 'Jeg tror ikke, der er nogen måde, de her mennesker kan beskytte sig på,' siger han til TechCrunch."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$200",
-          "label": "pr. måned for Claude Max-abonnementet"
-        },
-        {
-          "tal": "£44,49",
-          "label": "i delvis refusion fra Anthropic"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "En hacker brugte en stjålet session-nøgle til at lave uautoriserede adgangstokens på offerets konto.",
-        "Offeret, Grant de Swardt, er selvstændig AI-konsulent og hjalp andre med at opbygge automatiserede agenter.",
-        "Anthropic opdagede ikke selv problemet og kunne ikke give en specificeret forbrugsliste.",
-        "En bruger så sit tokenforbrug stige til 49 procent på 12 minutter uden aktiv brug.",
-        "En anden brugers konto blev automatisk opgraderet, og kreditkortet trukket uden samtykke.",
-        "Anthropic advarede nogle ofre via mail om infostealer-malware, der stjæler login-sessioner.",
-        "De Swardt skiftede til Cursor, som understøtter flere forskellige AI-modeller."
-      ],
-      "betydning": "Hvis du betaler for et Claude-abonnement, kan en hacker i hemmelighed tømme din kvote i månedsvis, fordi firmaet ikke tilbyder en specificeret oversigt over dit forbrug.",
-      "pointer": [
-        "Hackere stjæler login-sessioner og bruger andres Claude-tokens.",
-        "Anthropic opdagede først problemet, da offeret selv klagede.",
-        "Firmaet kan ikke se, hvem der bruger tokens på en konto.",
-        "Flere brugere har oplevet uforklarligt højt forbrug på deres konti."
-      ],
-      "billedmotiv": "En åben tegnebog, der er blevet visuelt tømt, dens indhold er afløst af et enkelt, uundgåeligt digitalt forbrugsmålerdesign, mens en enkelt kuglepen ligger udstrakt derpå.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 1,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Konkrete tegn på, at Claude-konti bliver kapret og tokens misbrugt - vigtigt for danske brugere at sikre deres konti.",
-        "forbehold": "Omfanget af angrebene er ikke specificeret.",
-        "emne": "anthropic"
-      },
-      "prio": 6,
-      "side": "artikel/baf4c2ebabc9d923.html"
-    },
-    {
       "titel": "Slack can now vibe-code interactive charts and reports inside chats",
       "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "resume": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you need, and it will use AI to gather information from relevant conversations and connected apps, like Google Drive or Salesforce, to […]",
@@ -897,6 +812,91 @@
       },
       "prio": 5,
       "side": "artikel/e4ed798161e112b3.html"
+    },
+    {
+      "titel": "Hackers are stealing Claude tokens from subscribers",
+      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "resume": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
+      "dato": "2026-09-08T21:10:27+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "rubrik": "Hackere tømmer Claude-konti for dyre tokens",
+      "resume_da": "En britisk konsulent opdagede, at ubudne gæster brugte hans Claude Max-abonnement. Andre brugere fortæller samme historie: Regningen løber, uden de selv er aktive.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Mysteriet",
+          "tekst": "Den 4. august lagde Grant de Swardt fra Storbritannien mærke til, at hans Claude Max 20x-konto brugte tokens, selvom han ikke arbejdede. Selv da han slukkede alt, fortsatte forbruget med at stige fra 45 til 55 procent i et kontrolleret tidsrum. Han anede ikke, hvad der tømte hans kvote, og kontaktede derfor firmaet bag, Anthropic."
+        },
+        {
+          "overskrift": "Sådan opdagede han det",
+          "tekst": "Anthropic kunne ikke give en specificeret oversigt, men erkendte, at noget var galt. De suspenderede hans konto, ugyldiggjorde hans sessioner og gav ham en delvis refusion på **£44,49** for den resterende tid på hans **200 dollar dyre månedsabonnement**. Undersøgelsen viste, at en stjålet session-nøgle var brugt til at lave uautoriserede adgangstokens."
+        },
+        {
+          "overskrift": "Flere er ramt",
+          "tekst": "Da de Swardt delte sin oplevelse på Reddit, strømmede det ind med svar fra andre. Én fortalte, at kontoen automatisk blev opgraderet, og kortet trukket, uden at personen selv rørte noget. En anden så forbruget gå fra 0 til **49 procent på 12 minutter** efter blot få prompter og en websøgning. Flere postede skræmmende eksempler på GitHub."
+        },
+        {
+          "overskrift": "Anthropics svar",
+          "tekst": "Anthropic sendte advarselsmails til nogle berørte brugere, hvor de forklarede, at en 'bad actor' brugte infostealer-malware til at stjæle login-sessioner fra computere. Den slags malware kan hentes fra inficerede downloads eller annoncer. Firmaet slog dog fast, at malwaren ikke kom fra selve Claude-programmet, og afviste at uddybe, hvordan brugere kan opdage misbrug."
+        },
+        {
+          "overskrift": "Konsekvensen",
+          "tekst": "De Swardt fik sin konto tilbage efter to uger, men oplevelsen fik ham til at opsige abonnementet. Han er nu skiftet til Cursor, som kan bruge flere forskellige AI-modeller, inklusive billigere open source-alternativer. 'Det er ikke meget anderledes eller bedre,' siger han om rivalerne. Han mener, at Anthropic stadig mangler værktøjer, så brugerne selv kan se, hvad der æder deres tokens."
+        },
+        {
+          "overskrift": "Uden beskyttelse",
+          "tekst": "Problemet er, at Anthropics support kun sporer totalt forbrug og ikke giver en specificeret liste. Derfor kan tyveriet fortsætte i måneder, før det opdages. De Swardt er bekymret for, at brugerne ikke kan beskytte sig selv. 'Jeg tror ikke, der er nogen måde, de her mennesker kan beskytte sig på,' siger han til TechCrunch."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "$200",
+          "label": "pr. måned for Claude Max-abonnementet"
+        },
+        {
+          "tal": "£44,49",
+          "label": "i delvis refusion fra Anthropic"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "En hacker brugte en stjålet session-nøgle til at lave uautoriserede adgangstokens på offerets konto.",
+        "Offeret, Grant de Swardt, er selvstændig AI-konsulent og hjalp andre med at opbygge automatiserede agenter.",
+        "Anthropic opdagede ikke selv problemet og kunne ikke give en specificeret forbrugsliste.",
+        "En bruger så sit tokenforbrug stige til 49 procent på 12 minutter uden aktiv brug.",
+        "En anden brugers konto blev automatisk opgraderet, og kreditkortet trukket uden samtykke.",
+        "Anthropic advarede nogle ofre via mail om infostealer-malware, der stjæler login-sessioner.",
+        "De Swardt skiftede til Cursor, som understøtter flere forskellige AI-modeller."
+      ],
+      "betydning": "Hvis du betaler for et Claude-abonnement, kan en hacker i hemmelighed tømme din kvote i månedsvis, fordi firmaet ikke tilbyder en specificeret oversigt over dit forbrug.",
+      "pointer": [
+        "Hackere stjæler login-sessioner og bruger andres Claude-tokens.",
+        "Anthropic opdagede først problemet, da offeret selv klagede.",
+        "Firmaet kan ikke se, hvem der bruger tokens på en konto.",
+        "Flere brugere har oplevet uforklarligt højt forbrug på deres konti."
+      ],
+      "billedmotiv": "En åben tegnebog, der er blevet visuelt tømt, dens indhold er afløst af et enkelt, uundgåeligt digitalt forbrugsmålerdesign, mens en enkelt kuglepen ligger udstrakt derpå.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 1,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Konkrete tegn på, at Claude-konti bliver kapret og tokens misbrugt - vigtigt for danske brugere at sikre deres konti.",
+        "forbehold": "Omfanget af angrebene er ikke specificeret.",
+        "emne": "anthropic"
+      },
+      "prio": 6,
+      "side": "artikel/baf4c2ebabc9d923.html"
     },
     {
       "titel": "Introducing ChatGPT for Financial Services",
@@ -1204,7 +1204,7 @@
       "dato": "2026-09-10T00:00:00+00:00",
       "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
       "eget_foerst_set": "2026-09-10T21:07:39.020467+00:00",
       "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
       "resume_da": "OpenAI præsenterer en ny API, der gør det muligt at bygge og køre AI-agenter i skyen med langvarige sessioner og værktøjsbrug.",
@@ -1252,16 +1252,85 @@
         "emne": "openai"
       },
       "prio": 5,
-      "andre": [
+      "side": "artikel/96db0e24a08a20fe.html"
+    },
+    {
+      "titel": "Read the Apple document explaining how new listening features still protect your privacy",
+      "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+      "resume": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new […]",
+      "dato": "2026-09-09T20:44:43+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-09T21:06:39.434672+00:00",
+      "eget_foerst_set": "2026-09-09T21:06:39.434672+00:00",
+      "rubrik": "Apple: Din lyd forlader aldrig uret",
+      "resume_da": "Apple løfter sløret for nye AI-lydfunktioner, hvor rå lyd aldrig gemmes eller deles – heller ikke med Apple selv.",
+      "brief": "",
+      "sektioner": [
         {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/put-data-to-work",
-          "rubrik": "OpenAI giver alle data-agent i ChatGPT",
-          "resume_da": "OpenAI har lanceret en data-agent i ChatGPT Work, så alle kan forbinde data og bygge dashboards med AI på almindeligt sprog.",
-          "foerst_set": "2026-09-10T17:49:16.718389+00:00"
+          "overskrift": "Det nye ved Siri",
+          "tekst": "På onsdagens iPhone Duo-event præsenterede Apple en række nye AI-funktioner til Siri: Siri Recap, Live Rewind, Sound Recognition og Music Recognition. Fælles for dem er, at de lytter med i baggrunden – såkaldt ambient listening. Men Apple understreger, at lyden ikke ender som en fil, og at hverken systemet, apps eller Apple selv kan få adgang til den rå lyd. Det sker ifølge et nyt dokument, som Apple offentliggjorde i forbindelse med eventen."
+        },
+        {
+          "overskrift": "Sådan beskyttes lyden",
+          "tekst": "Lyden fra mikrofonen ryger direkte ind i Secure Exclave, et hardware-isoleret rum i **S11**-chippen, som sidder i **Apple Watch Series 12** og **Apple Watch Ultra 4**. Her analyseres den for tale, lyde eller musik uden at blive transskriberet eller gemt. Bufferen overskrives konstant og eksisterer kun i det beskyttede hardware – der laves aldrig en lydoptagelse. Hvis data skal overføres til iPhone, sker det krypteret via begge enheders Secure Exclaves."
+        },
+        {
+          "overskrift": "Du bestemmer",
+          "tekst": "Apple lægger vægt på, at brugeren styrer, hvornår funktionerne er aktive. For eksempel kræver Live Rewind, at du dobbelttapper på Digital Crown, hver gang du vil aktivere den. Du vælger også selv, hvilken tekst fra Siri Recap og Live Rewind der skal gemmes. Teksten synkroniseres med end-to-end-kryptering, hvis du har en adgangskode på enheden og bruger iClouds to-faktor-godkendelse. Dermed er det ikke kun lyden, men også teksten, der beskyttes."
         }
       ],
-      "side": "artikel/96db0e24a08a20fe.html"
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
+          "rubrik": "Apple Watch lytter med – og det vænner vi os til",
+          "resume_da": "De nye ure kan skrive, hvad der lige blev sagt, og opsummere samtaler omkring dig. Apple gemmer ikke lyden, men spørgsmålet om samtykke står åbent.",
+          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+          "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+          "resume_da": "Apples nye Reference Image-funktion i iPhone 18 Pro signerer billeder, så du kan se, om de er ægte eller manipuleret med AI.",
+          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
+        }
+      ],
+      "detaljer": [
+        "Apple annoncerede nye Siri AI Audio Intelligence-funktioner ved iPhone Duo-eventen.",
+        "Rå lyd behandles i Secure Exclave i S11-chippen og gemmes ikke som fil.",
+        "Secure Exclave er et hardware-isoleret rum, som watchOS, apps og Apple ikke kan tilgå.",
+        "Live Rewind aktiveres ved at dobbelttappe på Digital Crown.",
+        "Tekst fra Siri Recap og Live Rewind kan synkroniseres med end-to-end-kryptering.",
+        "Apple offentliggjorde et dokument, der forklarer balancen mellem AI-lytning og privatliv."
+      ],
+      "betydning": "Dine personlige samtaler kan blive analyseret af AI uden at optages – men hvis du vil være sikker, bør du sætte dig ind i, hvordan du slår funktionerne til og fra.",
+      "pointer": [
+        "Apple lover: rå lyd forlader ikke uret",
+        "S11-chip isolerer lyden i Secure Exclave",
+        "Live Rewind kræver manuel aktivering",
+        "Tekst synkroniseres med end-to-end-kryptering"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Apple har offentliggjort et dokument om, hvordan nye Siri-lytrefunktioner håndterer lyd og privatliv, og lover ikke at gemme rå lyd.",
+        "forbehold": "Dokumentet er Apples egen redegørelse, ikke en uafhængig revision.",
+        "emne": "apple"
+      },
+      "prio": 5,
+      "side": "artikel/0a721c2e70b7f85e.html"
     },
     {
       "titel": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
@@ -1345,82 +1414,62 @@
       "side": "artikel/8221c7cdd090e3aa.html"
     },
     {
-      "titel": "Read the Apple document explaining how new listening features still protect your privacy",
-      "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
-      "resume": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new […]",
-      "dato": "2026-09-09T20:44:43+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-09T21:06:39.434672+00:00",
-      "eget_foerst_set": "2026-09-09T21:06:39.434672+00:00",
-      "rubrik": "Apple: Din lyd forlader aldrig uret",
-      "resume_da": "Apple løfter sløret for nye AI-lydfunktioner, hvor rå lyd aldrig gemmes eller deles – heller ikke med Apple selv.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det nye ved Siri",
-          "tekst": "På onsdagens iPhone Duo-event præsenterede Apple en række nye AI-funktioner til Siri: Siri Recap, Live Rewind, Sound Recognition og Music Recognition. Fælles for dem er, at de lytter med i baggrunden – såkaldt ambient listening. Men Apple understreger, at lyden ikke ender som en fil, og at hverken systemet, apps eller Apple selv kan få adgang til den rå lyd. Det sker ifølge et nyt dokument, som Apple offentliggjorde i forbindelse med eventen."
-        },
-        {
-          "overskrift": "Sådan beskyttes lyden",
-          "tekst": "Lyden fra mikrofonen ryger direkte ind i Secure Exclave, et hardware-isoleret rum i **S11**-chippen, som sidder i **Apple Watch Series 12** og **Apple Watch Ultra 4**. Her analyseres den for tale, lyde eller musik uden at blive transskriberet eller gemt. Bufferen overskrives konstant og eksisterer kun i det beskyttede hardware – der laves aldrig en lydoptagelse. Hvis data skal overføres til iPhone, sker det krypteret via begge enheders Secure Exclaves."
-        },
-        {
-          "overskrift": "Du bestemmer",
-          "tekst": "Apple lægger vægt på, at brugeren styrer, hvornår funktionerne er aktive. For eksempel kræver Live Rewind, at du dobbelttapper på Digital Crown, hver gang du vil aktivere den. Du vælger også selv, hvilken tekst fra Siri Recap og Live Rewind der skal gemmes. Teksten synkroniseres med end-to-end-kryptering, hvis du har en adgangskode på enheden og bruger iClouds to-faktor-godkendelse. Dermed er det ikke kun lyden, men også teksten, der beskyttes."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-          "rubrik": "Apple Watch lytter med – og det vænner vi os til",
-          "resume_da": "De nye ure kan skrive, hvad der lige blev sagt, og opsummere samtaler omkring dig. Apple gemmer ikke lyden, men spørgsmålet om samtykke står åbent.",
-          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-          "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
-          "resume_da": "Apples nye Reference Image-funktion i iPhone 18 Pro signerer billeder, så du kan se, om de er ægte eller manipuleret med AI.",
-          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
-        }
-      ],
-      "detaljer": [
-        "Apple annoncerede nye Siri AI Audio Intelligence-funktioner ved iPhone Duo-eventen.",
-        "Rå lyd behandles i Secure Exclave i S11-chippen og gemmes ikke som fil.",
-        "Secure Exclave er et hardware-isoleret rum, som watchOS, apps og Apple ikke kan tilgå.",
-        "Live Rewind aktiveres ved at dobbelttappe på Digital Crown.",
-        "Tekst fra Siri Recap og Live Rewind kan synkroniseres med end-to-end-kryptering.",
-        "Apple offentliggjorde et dokument, der forklarer balancen mellem AI-lytning og privatliv."
-      ],
-      "betydning": "Dine personlige samtaler kan blive analyseret af AI uden at optages – men hvis du vil være sikker, bør du sætte dig ind i, hvordan du slår funktionerne til og fra.",
-      "pointer": [
-        "Apple lover: rå lyd forlader ikke uret",
-        "S11-chip isolerer lyden i Secure Exclave",
-        "Live Rewind kræver manuel aktivering",
-        "Tekst synkroniseres med end-to-end-kryptering"
-      ],
-      "kat_ai": true,
+      "titel": "Now everyone can put data to work",
+      "link": "https://openai.com/index/put-data-to-work",
+      "resume": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+      "dato": "2026-09-10T15:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+      "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
+      "rubrik": "OpenAI giver ChatGPT adgang til dine data",
+      "resume_da": "OpenAI lancerer en ny dataagent i ChatGPT Work, der med almindeligt sprog kan trække svar ud af virksomheders egne data og bygge dashboards.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
         "betydning": 3,
         "brugbarhed": 3,
-        "dokumentation": 3,
+        "dokumentation": 2,
         "dansk": 0,
         "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Apple har offentliggjort et dokument om, hvordan nye Siri-lytrefunktioner håndterer lyd og privatliv, og lover ikke at gemme rå lyd.",
-        "forbehold": "Dokumentet er Apples egen redegørelse, ikke en uafhængig revision.",
-        "emne": "apple"
+        "begrundelse": "OpenAI lancerer Data agent i ChatGPT Work, hvor medarbejdere forbinder virksomhedsdata og bygger oversigter med almindeligt sprog.",
+        "forbehold": "Kun leverandørens egen korte meddelelse; ingen uafhængig test af kvalitet eller datagrænser.",
+        "emne": "openai"
       },
-      "prio": 5,
-      "side": "artikel/0a721c2e70b7f85e.html"
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Dataagenten i ChatGPT",
+          "tekst": "OpenAI har løftet sløret for en ny funktion kaldet Data agent, som bor inde i ChatGPT Work. Den skal gøre det muligt for almindelige ansatte at stille spørgsmål til virksomhedens egne data på helt almindeligt dansk. I stedet for at vente på en teknisk afdeling kan man bede AI'en finde tal, mønstre og svar direkte i de systemer, man allerede bruger. Målet er ifølge OpenAI at gøre data tilgængelige for alle – ikke kun specialister."
+        },
+        {
+          "overskrift": "Dashboards uden kode",
+          "tekst": "Ud over at svare på spørgsmål kan agenten også bygge interaktive dashboards med AI. Man beskriver med naturligt sprog, hvad man gerne vil se, og AI'en sammensætter visninger, der kan klikkes rundt i. Det betyder, at man ikke længere skal kunne kode eller mestre avancerede værktøjer for at få overblik. OpenAI beskriver det som et spring i, hvor nemt det bliver at omsætte rå data til indsigt i hverdagen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "OpenAI har præsenteret en ny funktion kaldet Data agent.",
+        "Funktionen ligger i ChatGPT Work.",
+        "Man kan forbinde virksomhedens data til agenten.",
+        "Almindeligt sprog bruges til at stille spørgsmål til data.",
+        "Agenten kan finde indsigt i data på egen hånd.",
+        "Den kan bygge interaktive dashboards ud fra en beskrivelse."
+      ],
+      "betydning": "Hvis du arbejder med tal i en virksomhed, kan du snart hente indsigt og lave dashboards selv – uden at vente på tekniske kolleger.",
+      "pointer": [
+        "OpenAI lancerer Data agent i ChatGPT Work",
+        "Stil spørgsmål til data på almindeligt sprog",
+        "Byg interaktive dashboards uden at kode",
+        "Gør data tilgængelige for alle ansatte"
+      ],
+      "side": "artikel/d86fa96aa31ae332.html"
     },
     {
       "titel": "Schools are catching on to Big Tech’s playbook",
@@ -1669,6 +1718,13 @@
           "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
           "resume_da": "Han siger, at AI der kan forbedre sig selv, er som at spille hasard med vores liv. Coxon opfordrer tech-virksomheder til at lave fælles aftaler for at bremse udviklingen.",
           "foerst_set": "2026-09-09T17:56:17.353477+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+          "rubrik": "Anthropic-forsker advarer om superintelligens",
+          "resume_da": "Forskeren siger i et opslag på X, at Anthropic \"ræser mod selvforbedrende superintelligens og spiller med vores liv\". Firmaets egen ansvarlige for AI-sikkerhed bakkede op i stedet for at tage afstand.",
+          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
         }
       ],
       "detaljer": [
@@ -3006,6 +3062,7 @@
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
       "resume_da": "Han mener, at de store AI-modeller er trænet på offentlig viden, og derfor bør alle have adgang til dem.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3021,8 +3078,37 @@
         "forbehold": "Kun en holdning fra én investor, ingen beslutning eller konkret ændring.",
         "emne": "open-weight"
       },
-      "kat_ai": true,
       "prio": 4
+    },
+    {
+      "titel": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "resume": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
+      "dato": "2026-09-11T19:35:54+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "rubrik": "Moonshot AI vil tjene 2 milliarder om året",
+      "resume_da": "Firmaet bag Kimi-modellerne sigter højt, selv om brugen af K3 er faldet lidt. K3-modellerne genererer stadig omkring 300 milliarder orddele om dagen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Moonshot AI sigter mod 2 mia. dollars i årlig omsætning; K3 bruges stadig meget ifølge OpenRouter-data.",
+        "forbehold": "Omsætningsmålet er en ambition, og data kommer fra tredjepart.",
+        "emne": "moonshot"
+      },
+      "prio": 4,
+      "navngivet": true
     },
     {
       "titel": "Meta bets on AI agent Muse to catch up in AI race",
@@ -3127,65 +3213,6 @@
       },
       "prio": 4,
       "side": "artikel/f903c700664042a3.html"
-    },
-    {
-      "titel": "Kimi-maker Moonshot AI targets $2B in annual revenue",
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-      "resume": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system.",
-      "dato": "2026-09-11T19:35:54+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Moonshot AI vil tjene 2 milliarder om året",
-      "resume_da": "Firmaet bag Kimi-modellerne sigter højt, selv om brugen af K3 er faldet lidt. K3-modellerne genererer stadig omkring 300 milliarder orddele om dagen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Moonshot AI sigter mod 2 mia. dollars i årlig omsætning; K3 bruges stadig meget ifølge OpenRouter-data.",
-        "forbehold": "Omsætningsmålet er en ambition, og data kommer fra tredjepart.",
-        "emne": "moonshot"
-      },
-      "kat_ai": true,
-      "prio": 4,
-      "navngivet": true
-    },
-    {
-      "titel": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
-      "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-      "resume": "An Anthropic researcher resigned this week, warning in a post on X that the company is “racing straight to self-improving superintelligence and gambling with our lives”. The company’s own alignment lead even co-signed the message rather than walking it back. It’s the kind of doomer warning the AI industry has flirted with before, but the timing, with Anthropic reportedly preparing for an IPO,…",
-      "dato": "2026-09-11T18:41:49+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Anthropic-forsker advarer om superintelligens",
-      "resume_da": "Forskeren siger i et opslag på X, at Anthropic \"ræser mod selvforbedrende superintelligens og spiller med vores liv\". Firmaets egen ansvarlige for AI-sikkerhed bakkede op i stedet for at tage afstand.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic-forsker siger op og advarer om kapløb mod selvforbedrende superintelligens; sikkerhedschef bakker op.",
-        "forbehold": "Enkeltsignaler og påstået forestående IPO; ingen uafhængig bekræftelse.",
-        "emne": "anthropic"
-      },
-      "kat_ai": true,
-      "prio": 4
     },
     {
       "titel": "Powering AI is an architecture problem",
@@ -3627,8 +3654,8 @@
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-          "rubrik": "OpenAI i konflikt med 25 matematikere",
-          "resume_da": "Matematikerne skriver i et åbent brev, at AI-firmaerne truer deres arbejde og åndelige ejendom.",
+          "rubrik": "25 matematikere i åbent brev mod AI-laboratorier",
+          "resume_da": "De mener, at laboratorierne truer deres faglige arbejde. Brevet skærper en voksende strid om AI og matematik.",
           "foerst_set": "2026-09-11T21:11:45.274854+00:00"
         }
       ]
@@ -3690,6 +3717,73 @@
         "emne": "openai"
       },
       "prio": 6
+    },
+    {
+      "titel": "Feeling sad about AI",
+      "link": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+      "resume": "My comment on Feeling sad about AI — Hacker News. I'm not sure how useful it is to say this, but I think a lot of people (myself included, a few years ago now) have been through this moment of existential crisis and come out the other side. The initial reaction, when some coding agent does a piece of work that would have taken you a week in an hour and does it well , is to be very disheartened by…",
+      "dato": "2026-09-11T17:28:37+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-11T22:37:10.109000+00:00",
+      "eget_foerst_set": "2026-09-11T22:37:10.109000+00:00",
+      "rubrik": "Simon Willison om AI-krisen blandt udviklere",
+      "resume_da": "Han har selv prøvet panikken, når en AI-kodeagent løser en uges arbejde på en time. Mange kommer styrket ud på den anden side.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Personlig kommentar om eksistentiel krise, når kodeagenter overtager arbejde, men ingen nye fakta om AI-udviklingen.",
+        "forbehold": "Kun en kort blogkommentar uden data eller metode.",
+        "emne": "arbejde"
+      },
+      "kat_ai": true,
+      "prio": 3
+    },
+    {
+      "titel": "OpenAI adds a prominent AI doomer to its board of directors",
+      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
+      "dato": "2026-09-09T22:25:22+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "rubrik": "OpenAI henter forsker Paul Christiano i bestyrelsen",
+      "resume_da": "Christiano er kendt for at advare om AI-risici og arbejder med at få AI til at følge menneskelige værdier. Han skal sidde i OpenAI Foundations bestyrelse.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Alignment-forskeren Paul Christiano kommer i OpenAI Foundations bestyrelse, et signal om at sikkerhed får større vægt i organisationen.",
+        "forbehold": "Uklart hvor meget reel indflydelse bestyrelsesposten giver.",
+        "emne": "openai"
+      },
+      "prio": 3,
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
+          "resume_da": "Han har mange års erfaring med AI-sikkerhed og skal også sidde i udvalget for sikkerhed. Det skriver OpenAI selv.",
+          "foerst_set": "2026-09-09T17:56:17.353477+00:00"
+        }
+      ]
     },
     {
       "titel": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
@@ -3762,44 +3856,6 @@
       },
       "prio": 4,
       "side": "artikel/95a190e6d2c58c48.html"
-    },
-    {
-      "titel": "OpenAI adds a prominent AI doomer to its board of directors",
-      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-      "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
-      "dato": "2026-09-09T22:25:22+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
-      "rubrik": "OpenAI henter forsker Paul Christiano i bestyrelsen",
-      "resume_da": "Christiano er kendt for at advare om AI-risici og arbejder med at få AI til at følge menneskelige værdier. Han skal sidde i OpenAI Foundations bestyrelse.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Alignment-forskeren Paul Christiano kommer i OpenAI Foundations bestyrelse, et signal om at sikkerhed får større vægt i organisationen.",
-        "forbehold": "Uklart hvor meget reel indflydelse bestyrelsesposten giver.",
-        "emne": "openai"
-      },
-      "prio": 3,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-          "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
-          "resume_da": "Han har mange års erfaring med AI-sikkerhed og skal også sidde i udvalget for sikkerhed. Det skriver OpenAI selv.",
-          "foerst_set": "2026-09-09T17:56:17.353477+00:00"
-        }
-      ]
     },
     {
       "titel": "Microsoft has new AI privacy rules for schools",
@@ -4090,6 +4146,35 @@
       "side": "artikel/8c676d139375cae9.html"
     },
     {
+      "titel": "Superintelligence is coming. Should we let it?",
+      "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
+      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
+      "dato": "2026-09-09T16:05:35+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "OpenAI-hul viser risiko ved superintelligens",
+      "resume_da": "Sikkerhedshullet hos OpenAI og Hugging Face viser risikoen ved at udbrede AI-systemer, der er dygtigere end mennesker, skriver Techcrunch.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcast diskuterer superintelligens og kontrolltab med henvisning til angiveligt OpenAI-sikkerhedshul hos Hugging Face.",
+        "forbehold": "Debatindhold og løse henvisninger; sikkerhedshændelsen er ikke beskrevet eller bekræftet her.",
+        "emne": "sikkerhed"
+      },
+      "prio": 3
+    },
+    {
       "titel": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
       "link": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "resume": "",
@@ -4203,36 +4288,7 @@
       ]
     },
     {
-      "titel": "Superintelligence is coming. Should we let it?",
-      "link": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
-      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
-      "dato": "2026-09-09T16:05:35+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "OpenAI-hul viser risiko ved superintelligens",
-      "resume_da": "Sikkerhedshullet hos OpenAI og Hugging Face viser risikoen ved at udbrede AI-systemer, der er dygtigere end mennesker, skriver Techcrunch.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcast diskuterer superintelligens og kontrolltab med henvisning til angiveligt OpenAI-sikkerhedshul hos Hugging Face.",
-        "forbehold": "Debatindhold og løse henvisninger; sikkerhedshændelsen er ikke beskrevet eller bekræftet her.",
-        "emne": "sikkerhed"
-      },
-      "prio": 3
-    },
-    {
-      "titel": "Roundtables: Will AI really kill us all?",
+      "titel": "Roundtables: AI’s apocalypse crisis",
       "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
       "resume": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…",
       "dato": "2026-09-11T20:05:06+00:00",
@@ -4242,6 +4298,7 @@
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "MIT debatterer AI-truslen mod menneskeheden",
       "resume_da": "Ansatte på verdens førende AI-laboratorier siger, at avanceret AI kan udslette menneskeheden. MIT Technology Review samler eksperter til en samtale om truslen.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -4257,9 +4314,7 @@
         "forbehold": "Kun en eventannonce, ingen ny faktuel oplysning om truslen.",
         "emne": "eksistensrisiko"
       },
-      "kat_ai": true,
-      "prio": 2,
-      "navngivet": true
+      "prio": 2
     },
     {
       "titel": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
@@ -5355,6 +5410,35 @@
       "side": "artikel/16db96c97099d0bc.html"
     },
     {
+      "titel": "ControlAI’s Connor Leahy on why superintelligence is ‘not a weapon, it’s an adversary’",
+      "link": "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
+      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
+      "dato": "2026-09-09T15:50:13+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "ControlAI: Super-AI er en modstander, ikke et våben",
+      "resume_da": "Connor Leahy advarer i TechCrunchs podcast mod at behandle super-AI som noget, vi bare kan udnytte. Han mener, at AI der er klogere end os, kræver helt nye regler for kontrol.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcastudtalelse om superintelligens; ingen konkret nyhed eller ny indsigt.",
+        "forbehold": "Ingen detaljer om indholdet; kun teaser.",
+        "emne": "sikkerhed"
+      },
+      "prio": 1
+    },
+    {
       "titel": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
       "link": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "resume": "Our most advanced models for coding and knowledge work. Their research capabilities also offer an early glimpse of how AI models will contribute to scientific progress.",
@@ -5446,35 +5530,6 @@
       },
       "prio": 4,
       "side": "artikel/30eec5aa5b07636a.html"
-    },
-    {
-      "titel": "ControlAI’s Connor Leahy on why superintelligence is ‘not a weapon, it’s an adversary’",
-      "link": "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
-      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
-      "dato": "2026-09-09T15:50:13+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "ControlAI: Super-AI er en modstander, ikke et våben",
-      "resume_da": "Connor Leahy advarer i TechCrunchs podcast mod at behandle super-AI som noget, vi bare kan udnytte. Han mener, at AI der er klogere end os, kræver helt nye regler for kontrol.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcastudtalelse om superintelligens; ingen konkret nyhed eller ny indsigt.",
-        "forbehold": "Ingen detaljer om indholdet; kun teaser.",
-        "emne": "sikkerhed"
-      },
-      "prio": 1
     },
     {
       "titel": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
@@ -6177,36 +6232,6 @@
       "prio": 4
     },
     {
-      "titel": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
-      "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-      "resume": "Nscale, which recently struck a $45 billion deal with Anthropic, is in talks to raise additional funds in anticipation of an upcoming IPO.",
-      "dato": "2026-09-04T21:12:11+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-04T23:13:06.725591+00:00",
-      "eget_foerst_set": "2026-09-04T23:13:06.725591+00:00",
-      "rubrik": "Nscale vil rejse 3,5 milliarder dollars",
-      "resume_da": "AI-firmaet Nscale, der laver udstyr til AI, er i gang med at skaffe ekstra penge, inden de måske går på børsen. De har allerede en milliardaftale med Anthropic.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Finansieringsrunde og IPO-forberedelser er markedsstof uden umiddelbar konkret nyhedsværdi for læserne.",
-        "forbehold": "Beløb og forhandlinger er foreløbige.",
-        "emne": "nscale"
-      },
-      "prio": 2,
-      "navngivet": true
-    },
-    {
       "titel": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
       "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
       "resume": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
@@ -6688,6 +6713,7 @@
       "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
       "rubrik": "Google lader dig styre to-do-lister med stemmen i Gemini Live",
       "resume_da": "Gemini Live får en stor opdatering, så du kan give opgaver videre med stemmen. Du kan holde fokus på andet imens.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -6703,7 +6729,6 @@
         "forbehold": "Ukendt hvilke sprog, lande og kontotyper der får opdateringen, og hvor godt det virker.",
         "emne": "google"
       },
-      "kat_ai": true,
       "prio": 4
     },
     {
@@ -6978,6 +7003,7 @@
       "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
       "rubrik": "Grok Build kommer på web og mobil",
       "resume_da": "Værktøjet er nu tilgængeligt for alle betalende kunder. Før var det kun åbent for nogle få.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -6993,7 +7019,6 @@
         "forbehold": "Uklart hvad værktøjet kan, og hvilke abonnementer det omfatter.",
         "emne": "xai"
       },
-      "kat_ai": true,
       "prio": 3
     },
     {
@@ -7310,6 +7335,7 @@
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
       "resume_da": "Der er kun en uge tilbage at sikre sig en udstillingsstand. Der er et begrænset antal, og de kan blive udsolgt inden 18. september.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -7325,7 +7351,6 @@
         "forbehold": "",
         "emne": "event"
       },
-      "kat_ai": true,
       "prio": 1
     },
     {
@@ -7339,6 +7364,7 @@
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "Frist i nat for TechCrunch-arrangementer",
       "resume_da": "Klokken 23.59 i nat er den absolut sidste chance for at søge om at holde et officielt sidearrangement under TechCrunch Disrupt 2026.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -7354,7 +7380,6 @@
         "forbehold": "",
         "emne": "event"
       },
-      "kat_ai": true,
       "prio": 1
     },
     {
@@ -7447,7 +7472,7 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-11T21:11:45.274854+00:00",
+    "beregnet": "2026-09-11T22:37:10.109000+00:00",
     "udvalgte": [
       "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "https://openai.com/index/introducing-gpt-live-1-in-the-api",
@@ -7466,16 +7491,17 @@
       "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
       "https://simonwillison.net/2026/Sep/10/calif-research/",
       "https://simonwillison.net/2026/Sep/11/datasette-security/",
-      "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
       "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
       "https://openai.com/index/introducing-chatgpt-financial-services",
       "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
       "https://openai.com/index/expanding-ai-access-us-government",
       "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
       "https://openai.com/index/introducing-the-agents-api",
-      "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
       "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+      "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+      "https://openai.com/index/put-data-to-work",
       "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
       "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
       "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
@@ -7499,9 +7525,8 @@
       "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-      "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
       "https://openai.com/index/teen-development-research-grants",
       "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
@@ -7516,8 +7541,9 @@
       "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
       "https://mistral.ai/news/mistral-x-cloudera/",
       "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+      "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
       "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
       "https://simonwillison.net/2026/Sep/11/boris-cherny/",
       "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
@@ -7525,9 +7551,9 @@
       "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
       "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
       "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
       "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
       "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
       "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
       "https://simonwillison.net/2026/Sep/9/blender-viewer/",
@@ -7555,9 +7581,9 @@
       "https://x.ai/news/grok-bot-for-enterprise",
       "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
       "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
+      "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
       "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "https://openai.com/index/daybreak-for-frontline-defenders",
-      "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
       "https://openai.com/index/playco-game-prototyping-with-astra",
       "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
       "https://openai.com/index/an-alien-mind",
@@ -7575,7 +7601,6 @@
       "https://huggingface.co/blog/allenai/benchmirt",
       "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "https://x.ai/news/biosafety-at-the-frontier",
-      "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
       "https://openai.com/index/legora-financial-statement-review-with-astra",
       "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
       "https://www.anthropic.com/news/model-hardware-standard-research-preview",
