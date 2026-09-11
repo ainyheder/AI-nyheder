@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-11T09:04:50.569912+00:00",
+ "opdateret": "2026-09-11T13:28:06.022291+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -241,7 +241,7 @@ window.LAESERTAL = {
      0,
      0,
      3,
-     2,
+     3,
      3,
      0
     ]
@@ -250,13 +250,13 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 25,
- "sidevisninger_i_alt": 44,
+ "sidevisninger_i_alt": 42,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 25,
-   "visninger": 38
+   "visninger": 37
   },
   {
    "sti": "/laer.html",
@@ -282,11 +282,6 @@ window.LAESERTAL = {
    "sti": "/vaerktoejer.html",
    "besoeg": 0,
    "visninger": 1
-  },
-  {
-   "sti": "/artikel/a94dc4fdbbc2a78c.html",
-   "besoeg": 0,
-   "visninger": 1
   }
  ],
  "henvisere": [
@@ -306,7 +301,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 13
+    "visninger": 12
    }
   ],
   "/laer.html": [
@@ -338,13 +333,6 @@ window.LAESERTAL = {
    }
   ],
   "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/a94dc4fdbbc2a78c.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -533,27 +521,12 @@ window.LAESERTAL = {
      "visninger": 1
     }
    ]
-  },
-  {
-   "sti": "/artikel/a94dc4fdbbc2a78c.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?",
-   "kategori": "Lanceringer",
-   "dato": "2026-09-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
   }
  ],
  "laeste_temaer": [
   {
    "navn": "Lanceringer",
-   "visninger": 2
+   "visninger": 1
   }
  ]
 };
