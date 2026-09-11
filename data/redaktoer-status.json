@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-11T14:38:09.387448+00:00",
+  "opdateret": "2026-09-11T21:11:45.274854+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,10 +7,10 @@
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "392fe595dda61a3f",
+  "input_fingerprint": "f545e1d44d13c7ab",
   "forklaring": "Redaktionsmødet fejlede: ValueError",
   "modelkald": 7,
-  "kildehentninger": 8,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -29,7 +29,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -62,45 +66,37 @@
     },
     {
       "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
+    {
+      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-the-agents-api",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "grundlag": "kildetekst"
+    },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
