@@ -1,6 +1,41 @@
 {
  "prompts": [
   {
+   "dato": "2026-09-11",
+   "titel": "Skriv vendepunkt til jobsøgning",
+   "kategori": "Job",
+   "tekst": "Du er en erfaren HR-rådgiver, der skriver korte, motiverende beskeder til jobsøgende. Skriv en besked til mig, der skal motivere mig til at fortsætte min jobsøgning. Brug disse oplysninger: [hvad jeg søger], [hvad der gjorde mig træt], [én ting jeg er god til]. Beskeden skal være 3-4 sætninger, tale direkte til mig og slutte med ét konkret næste skridt, jeg kan tage i dag.",
+   "hvorfor": "Rollen, de faste oplysninger og det konkrete næste skridt gør, at du får en personlig og handlingsorienteret besked i første forsøg."
+  },
+  {
+   "dato": "2026-09-10",
+   "titel": "Afklar strømafbrydelse kompensation",
+   "kategori": "Hverdag",
+   "tekst": "Du er en hjælpsom rådgiver hos Energinets kundeservice. Jeg oplevede en strømafbrydelse den [dato] fra [starttid] til [sluttid] i mit område [postnummer/by]. Skriv et kort, høfligt brev til mit elselskab, hvor jeg beder om kompensation efter de danske regler for forsyningssikkerhed. Brevet skal indeholde: hvornår afbrydelsen skete, at jeg ønsker erstatning, og at jeg vedlægger dokumentation. Undgå juridiske fagudtryk og hold en venlig, men bestemt tone.",
+   "hvorfor": "Rollen som rådgiver giver brugeren et konkret brev, der kan sendes direkte, uden at skulle kende reglerne selv."
+  },
+  {
+   "dato": "2026-09-09",
+   "titel": "Lav din egen madplan",
+   "kategori": "Hverdag",
+   "tekst": "Du er en erfaren kostvejleder, der hjælper almindelige familier med at få en nem og varieret hverdag. Lav en madplan for [antal dage] dage til [antal personer] personer. Jeg har [budget pr. uge i kroner] til rådighed, og vi kan lide [nævn 3-5 retter, I godt kan lide], men ikke [nævn 2-3 retter, I ikke kan lide]. Planlæg med en indkøbsliste, der er sorteret efter butikkens afdelinger, og vælg retter, der tager under [max tid pr. måltid] minutter at lave. Skriv madplanen som en tabel med dage, ret, tid og en kort beskrivelse af forberedelsen.",
+   "hvorfor": "Den giver AI konkrete rammer som budget, tid og smag, så du får en færdig plan og indkøbsliste, du kan bruge med det samme."
+  },
+  {
+   "dato": "2026-09-08",
+   "titel": "Skriv en ryddelig dødsbooversigt",
+   "kategori": "Hverdag",
+   "tekst": "Du er en empatisk og struktureret bobestyrer, der hjælper almindelige mennesker med at komme igennem et dødsbo. Jeg har mistet [navn på afdøde] og skal have et overblik over boet. Hjælp mig med at lave en tjekliste med følgende punkter: 1) Hvilke papirer og dokumenter skal jeg finde frem (fx testamente, forsikringer, ejerbeviser)? 2) Hvem skal jeg kontakte først (fx bank, pension, begravelsesfirma)? 3) Hvad skal jeg være opmærksom på med hensyn til gæld og aktiver? Skriv i punktform med korte sætninger, og brug et roligt og beroligende sprog, som om du taler til en god ven i en svær tid.",
+   "hvorfor": "Den guider dig gennem en overvældende proces med faste trin, så du føler dig tryg og ved, hvad du skal gøre først."
+  },
+  {
+   "dato": "2026-09-07",
+   "titel": "Afklar uventet fradrag i løn",
+   "kategori": "Økonomi",
+   "tekst": "Du er en erfaren lønkonsulent, der forklarer lønsedler enkelt og klart. Her er mine oplysninger: Jeg arbejder i [branche/type arbejde] og min månedlige løn er normalt omkring [beløb] kr. Denne måned blev der trukket [beløb] kr. ekstra med teksten '[tekst fra lønsedlen]'. Forklar mig i tre korte punkter: 1) Hvad dette fradrag sandsynligvis dækker over, og om det ligner noget standard. 2) Hvilken lov eller regl, der typisk styrer den slags træk. 3) Hvad jeg konkret skal skrive til min arbejdsgiver eller lønafdeling for at få en forklaring. Skriv i et roligt og forstående tonefald.",
+   "hvorfor": "Den giver både en sandsynlig forklaring og en konkret, klar besked til arbejdsgiveren – så man ikke selv skal gætte eller starte fra bunden."
+  },
+  {
    "dato": "2026-09-06",
    "titel": "Forstå sygedagpengereglerne",
    "kategori": "Økonomi",

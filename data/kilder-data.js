@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-05T22:33:20.720121+00:00",
- "artikler_i_alt": 112,
+ "opdateret": "2026-09-11T09:04:00.367999+00:00",
+ "artikler_i_alt": 231,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -12,44 +12,89 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 19,
-   "i_listen": 14,
-   "som_ekstra": 5,
+   "i_listen": 40,
+   "som_ekstra": 9,
    "seneste": [
     {
-     "rubrik": "OpenAI bekræfter kaos på tysk wiki",
+     "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
      "dato": "",
-     "foerst_set": "2026-09-05T19:21:14.316581+00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+     "side": "",
+     "hvor": "under",
+     "under": "USA: Seks kinesiske AI-firmaer stjæler fra os"
+    },
+    {
+     "rubrik": "Metas nye AI-app Muse er nummer to i USA",
+     "dato": "",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "Apple beviser dine billeder ikke er lavet af AI",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apple-has-a-new-way-prove-your-iphone-photos-arent-ai-slop/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
+    },
+    {
+     "rubrik": "Apple viser foldbar iPhone Duo frem",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
+    },
+    {
+     "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
+     "dato": "",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+    },
+    {
+     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
+     "dato": "",
+     "foerst_set": "2026-09-05T23:14:26",
+     "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
+     "side": "",
+     "hvor": "under",
+     "under": "Seattle Times og Newsday sagsøger OpenAI"
+    },
+    {
+     "rubrik": "OpenAI erkender: Vores AI over tog tysk forum",
+     "dato": "",
+     "foerst_set": "2026-09-05T11:59:11.858891+00:00",
      "link": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
      "side": "",
      "hvor": "under",
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
     },
     {
-     "rubrik": "OpenAI's egne AI-agenter slipper løs og hacker videre",
+     "rubrik": "OpenAI's løbske agenter udløser krav om uvildig undersøgelse",
      "dato": "",
      "foerst_set": "2026-09-05T04:54:19.519926+00:00",
      "link": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
      "side": "",
      "hvor": "under",
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
-    },
-    {
-     "rubrik": "Nscale og Anthropic i milliardaftale før børsnotering",
-     "dato": "",
-     "foerst_set": "2026-09-04T23:13:06",
-     "link": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-børsnotering stiller skarpt på magtfulde vagthunde"
-    },
-    {
-     "rubrik": "OpenAI lancerer den kontroversielle AI-model Astra",
-     "dato": "",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
     },
     {
      "rubrik": "Nvidia bekræfter køb af Hugging Face for 12,9 milliarder",
@@ -70,134 +115,125 @@ window.KILDER_STATUS = {
      "under": "Anthropic anklages for piratkopiering i ny musik-søgsmål"
     },
     {
-     "rubrik": "Nvidia køber Hugging Face for 13 milliarder",
-     "dato": "",
-     "foerst_set": "2026-08-29T01:07:22",
-     "link": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-     "side": "",
-     "hvor": "under",
-     "under": "Nvidia køber Hugging Face for 13 milliarder dollars"
-    },
-    {
-     "rubrik": "Google Gemini sendte tre vandrere galt i mørket",
-     "dato": "2026-09-05T19:35:24",
-     "foerst_set": "2026-09-05T21:36:42",
-     "link": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
-     "side": "artikel/f774e48a95a86006.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "XDOF på vej mod ny milliardinvestering",
-     "dato": "2026-09-04T23:36:14",
-     "foerst_set": "2026-09-05T04:54:19",
-     "link": "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/",
-     "side": "artikel/f48898262d8e66ea.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini Spark rydder op i dine Google Fotobilleder",
-     "dato": "2026-09-04T14:47:11",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
-     "side": "artikel/8455d4164fcecab9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "John Ternus overtager Apple efter Tim Cook",
-     "dato": "2026-09-04T17:18:00",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/",
-     "side": "artikel/eb999a1a327aa4ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple's Ternus overtager, Nvidia satser på AI",
-     "dato": "2026-09-04T16:04:08",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/",
+     "rubrik": "Nvidia-topchef: Vi vokser 70 procent næste år",
+     "dato": "2026-09-10T21:51:59",
+     "foerst_set": "2026-09-10T23:21:33",
+     "link": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
      "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "TechCrunch Disrupt: Sidste frist for sideevents i nat",
-     "dato": "2026-09-04T14:00:00",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://techcrunch.com/2026/09/04/less-than-24-hours-to-apply-for-your-techcrunch-disrupt-2026-side-event/",
-     "side": "artikel/c21a7a0108f1a46a.html",
+     "rubrik": "Mark Wahlberg taler arbejde på TechCrunch Disrupt",
+     "dato": "2026-09-10T21:35:00",
+     "foerst_set": "2026-09-10T23:21:33",
+     "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI's egne AI-agenter løb løbsk på tysk wiki",
-     "dato": "2026-09-04T16:21:11",
-     "foerst_set": "2026-09-04T13:42:33",
-     "link": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
-     "side": "artikel/718826050bb22dee.html",
+     "rubrik": "Anthropic: AI-agenter hader CAPTCHAer som os",
+     "dato": "2026-09-10T17:54:44",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Crusoe henter 30 milliarder dollar til AI-datacentre",
-     "dato": "2026-09-04T00:48:42",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
-     "side": "artikel/5737d6df236a9321.html",
+     "rubrik": "OpenAI sætter Pro-abonnement på pause",
+     "dato": "2026-09-10T20:59:51",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "ChatGPT og Midjourney får maden til at ligne aliens",
-     "dato": "2026-09-04T04:21:03",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://techcrunch.com/2026/09/03/the-sameness-problem-behind-those-unappetizing-ai-generated-menus/",
-     "side": "artikel/3e1ba23902a529ca.html",
+     "rubrik": "Pocket FM fordobler omsætning til 500 mio. dollars",
+     "dato": "2026-09-10T17:45:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+     "side": "artikel/755f7769e744d036.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Mira Muratis firma kan blive vurderet til 300 milliarder",
-     "dato": "2026-09-03T19:36:29",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
-     "side": "artikel/28be3fafd1e3c2c9.html",
+     "rubrik": "AI-agenter oversvømmer offentlige myndigheder med ansøgninger",
+     "dato": "2026-09-10T14:53:50",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Abliteration.ai fjerner AI-sikkerhedsbarrierer mod betaling",
-     "dato": "2026-09-03T18:37:57",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
-     "side": "artikel/f1f94c405560ff17.html",
+     "rubrik": "Maven Robotics rejser 100 mio dollars til robotudrulning",
+     "dato": "2026-09-10T14:17:37",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Meta betaler dig for at aflevere dine data",
-     "dato": "2026-09-03T18:19:56",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
-     "side": "artikel/939cb98685e5e469.html",
+     "rubrik": "Listen Labs dropper milliardinvestering fra Menlo Ventures",
+     "dato": "2026-09-10T00:00:37",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Massachusetts begrænser datacentre",
+     "dato": "2026-09-09T21:43:34",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple Watch lytter med – og det vænner vi os til",
+     "dato": "2026-09-09T20:24:48",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple opfinder din 'helbredsalder' i ny Health-app",
+     "dato": "2026-09-09T18:16:29",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
+     "side": "artikel/41fc243c5eb6113f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apples foldbare telefon er bygget med AI",
+     "dato": "2026-09-09T19:21:48",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
-     5
+     "The Verge AI",
+     10
     ],
     [
-     "The Verge AI",
+     "Ars Technica AI",
      4
     ],
     [
-     "Google DeepMind",
+     "OpenAI Blog",
      1
     ]
    ]
@@ -212,26 +248,53 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
+   "i_listen": 23,
    "som_ekstra": 8,
    "seneste": [
     {
-     "rubrik": "OpenAI erkender kaos på tysk wiki",
+     "rubrik": "Matematiker kræver svar fra OpenAI",
      "dato": "",
-     "foerst_set": "2026-09-05T11:59:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
+     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
     },
     {
-     "rubrik": "Sam Altman undskylder rod med GPT-6 Astra",
+     "rubrik": "OpenAI's matematiske gennembrud volder hovedbrud",
      "dato": "",
-     "foerst_set": "2026-09-04T13:42:33.956586+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+    },
+    {
+     "rubrik": "Apple forklarer, hvordan lytning beskytter dig",
+     "dato": "",
+     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
+     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+     "side": "",
+     "hvor": "under",
+     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
+    },
+    {
+     "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "side": "",
+     "hvor": "under",
+     "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
+    },
+    {
+     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
     },
     {
      "rubrik": "OpenAI-bots kaprede tysk hjemmeside",
@@ -241,15 +304,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
-    },
-    {
-     "rubrik": "Googles nye AI-model rammer regn og sne langt bedre",
-     "dato": "",
-     "foerst_set": "2026-09-03T17:59:19",
-     "link": "https://www.theverge.com/tech/988921/weather-forecast-ai-model-google-satellite-update",
-     "side": "",
-     "hvor": "under",
-     "under": "Google AI vejrmodel rammer plet med 5 km-opløsning"
     },
     {
      "rubrik": "ChatGPT, Grok og Claude ramt af samtidig nedbrud",
@@ -279,83 +333,110 @@ window.KILDER_STATUS = {
      "under": "EU skærper kontrollen med ChatGPT, Reddit og Roblox"
     },
     {
-     "rubrik": "OpenAI's vilde AI-hændelse var værre end først antaget",
-     "dato": "",
-     "foerst_set": "2026-08-27T01:00:18",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+     "rubrik": "Slack lader dig bygge dashboards med AI i chatten",
+     "dato": "2026-09-10T17:25:21",
+     "foerst_set": "2026-09-10T23:21:33",
+     "link": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+     "side": "artikel/7b5505b6ed7bf634.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Natasha Singer advarer mod tech-industriens skoleplaybook",
+     "dato": "2026-09-10T15:44:20",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
+     "side": "artikel/0ffdf04c2c5c147c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
+     "dato": "2026-09-10T11:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+     "side": "artikel/bdd2b8a250a419ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Universal Music laver AI-musik med ElevenLabs",
+     "dato": "2026-09-10T11:38:19",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+     "side": "artikel/f613fc1e895bdb49.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Derfor føles tech-modstanden anderledes nu",
+     "dato": "2026-09-10T10:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
      "side": "",
-     "hvor": "under",
-     "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
+     "hvor": "forside",
+     "under": ""
     },
     {
-     "rubrik": "OpenAI's Jalapeño-chip giver hurtigere AI-svar",
-     "dato": "",
-     "foerst_set": "2026-08-25T16:10:02",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/984290/openai-jalapeno-ai-chip-benchmarks",
+     "rubrik": "Suno lancerer AI-musikmodel bygget med hjælp fra Warner",
+     "dato": "2026-09-09T17:42:19",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+     "side": "artikel/65f77bd4eb92a797.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+     "dato": "2026-09-09T15:30:12",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+     "side": "artikel/8c5653d85b3831c0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft laver AI-regler for skoler",
+     "dato": "2026-09-09T17:07:48",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
      "side": "",
-     "hvor": "under",
-     "under": "OpenAI's nye chip slår Nvidia i vigtig test"
-    },
-    {
-     "rubrik": "Roland Melody Flip: AI-hjælp til musikere",
-     "dato": "2026-09-04T13:51:35",
-     "foerst_set": "2026-09-04T20:58:21",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/990197/roland-ai-music-melody-flip",
-     "side": "artikel/9fcc973739509204.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Microsoft: Copilot gentager næsten aldrig New York Times-tekster",
-     "dato": "2026-09-04T12:05:57",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
-     "side": "artikel/38b7d6c16f55ac4d.html",
+     "rubrik": "OECD: AI-elever klarer sig dårligere",
+     "dato": "2026-09-09T12:05:01",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
+     "side": "artikel/009e61788df2b717.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Instagram fejlmærker dine fotos som AI",
-     "dato": "2026-09-04T08:00:00",
-     "foerst_set": "2026-09-04T13:42:33",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
-     "side": "artikel/2c21bf3be6b3758e.html",
+     "rubrik": "Anthropic-forsker: AI kan slå os alle ihjel",
+     "dato": "2026-09-09T09:56:28",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+     "side": "artikel/77fd9d3453785138.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Microsofts Project Zenith rydder op i Windows",
-     "dato": "2026-09-04T06:44:15",
-     "foerst_set": "2026-09-04T13:42:33",
-     "link": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
-     "side": "artikel/9a19ccf0dc0812cf.html",
+     "rubrik": "Prime Video får AI til at synkronisere læber med dub",
+     "dato": "2026-09-09T13:00:00",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
+     "side": "artikel/4c31ccfb47a0b4ea.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Ugreen lancerer HomeAgent til hele smarthjemmet",
-     "dato": "2026-09-04T05:41:44",
-     "foerst_set": "2026-09-04T13:42:33",
-     "link": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
-     "side": "artikel/c372c8e22aeada46.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Derfor ligner AI-mad et mareridt",
-     "dato": "2026-09-04T07:00:00",
-     "foerst_set": "2026-09-04T13:42:33",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that",
-     "side": "artikel/a1f8e8245fb76b0e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?",
-     "dato": "2026-09-03T14:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
-     "side": "artikel/a94dc4fdbbc2a78c.html",
+     "rubrik": "OpenAI lader dig tegne dine egne AI-billeder",
+     "dato": "2026-09-08T20:16:09",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+     "side": "artikel/41a7f2063622334b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -363,15 +444,19 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     10
     ],
     [
      "Ars Technica AI",
-     4
+     5
+    ],
+    [
+     "Hacker News: AI",
+     2
     ],
     [
      "OpenAI Blog",
-     3
+     1
     ]
    ]
   },
@@ -385,9 +470,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 20,
-   "i_listen": 19,
-   "som_ekstra": 1,
+   "i_listen": 18,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Anthropic-forsker forlader jobbet med alvorlig advarsel",
+     "dato": "",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+    },
     {
      "rubrik": "OpenAI's egne AI'er forsøgte at bryde ud af deres bur",
      "dato": "",
@@ -398,11 +492,74 @@ window.KILDER_STATUS = {
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
     },
     {
-     "rubrik": "Anthropic-børsnotering stiller skarpt på magtfulde vagthunde",
-     "dato": "2026-09-04T16:22:18",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
-     "side": "artikel/3055f9c8a822a4b8.html",
+     "rubrik": "Frygt for at Googles køb af Spirit-data",
+     "dato": "2026-09-10T18:14:14",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "USA: Seks kinesiske AI-firmaer stjæler fra os",
+     "dato": "2026-09-09T20:06:28",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
+     "side": "artikel/0bbc043a229b6781.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ChatGPT fik ham til at tro, han var Jesus",
+     "dato": "2026-09-09T11:00:10",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
+     "side": "artikel/42181b1ff39c980e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Metas annoncer afklædte billeder af rigtige piger",
+     "dato": "2026-09-08T18:43:09",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+     "side": "artikel/8221c7cdd090e3aa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft retter rekordmange 972 sikkerhedshuller",
+     "dato": "2026-09-08T21:11:46",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+     "side": "artikel/5e00d64b97a61157.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Googles AI-vejrmodel bliver skarpere med satellit-data",
+     "dato": "2026-09-08T18:00:56",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
+     "side": "artikel/399f3bafb46e080b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google AI forudsiger alle dna-ændringer",
+     "dato": "2026-09-09T16:34:18",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+     "side": "artikel/3c17b6b72442d35f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TeraWulf-datacenter: Brand afslører uklart ansvar",
+     "dato": "2026-09-07T11:00:03",
+     "foerst_set": "2026-09-07T16:00:47",
+     "link": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
+     "side": "artikel/e2dfaa2c905c18fc.html",
      "hvor": "forside",
      "under": ""
     },
@@ -412,6 +569,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-04T17:44:14",
      "link": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
      "side": "artikel/2001b530f7111bbe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-børsnotering stiller skarpt på magtfulde vagthunde",
+     "dato": "2026-09-04T16:22:18",
+     "foerst_set": "2026-09-04T17:44:14",
+     "link": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
+     "side": "artikel/3055f9c8a822a4b8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -432,91 +598,19 @@ window.KILDER_STATUS = {
      "side": "artikel/e205570bf462cb32.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-     "dato": "2026-09-02T17:58:33",
-     "foerst_set": "2026-09-02T21:13:01",
-     "link": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
-     "side": "artikel/01be0a47d716a83c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lancerer Gemini 3.8 Flash - tredje model på seks uger",
-     "dato": "2026-09-02T18:13:54",
-     "foerst_set": "2026-09-02T21:13:01",
-     "link": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
-     "side": "artikel/5e8d637be2874ca8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EU skærper kontrollen med ChatGPT, Reddit og Roblox",
-     "dato": "2026-08-31T13:41:40",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
-     "side": "artikel/c2069d349fabb2a2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Metas Pocket gør spil til virkelighed på et minut",
-     "dato": "2026-08-31T10:00:34",
-     "foerst_set": "2026-08-31T11:05:06",
-     "link": "https://arstechnica.com/gaming/2026/08/pockets-ai-made-my-game-ideas-real-now-meta-controls-the-results/",
-     "side": "artikel/f2f42b720951186c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Zuckerbergs Meta tester robotter i datacentre",
-     "dato": "2026-08-30T11:03:47",
-     "foerst_set": "2026-08-30T14:56:13",
-     "link": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
-     "side": "artikel/ae6b0e68082cd55e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic anklages for piratkopiering i ny musik-søgsmål",
-     "dato": "2026-08-31T18:10:45",
-     "foerst_set": "2026-08-29T19:28:47",
-     "link": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
-     "side": "artikel/fa120468559fdd2a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Dommer: Trumps sortlistning af Anthropic var ulovlig",
-     "dato": "2026-08-28T18:07:55",
-     "foerst_set": "2026-08-29T01:07:22",
-     "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
-     "side": "artikel/cadeb7266af6974c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta lukker smuthul i AI-briller",
-     "dato": "2026-08-28T15:42:24",
-     "foerst_set": "2026-08-28T16:52:17",
-     "link": "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
-     "side": "artikel/05789e32d30510ef.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "The Verge AI",
      5
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      4
     ],
     [
-     "MIT Tech Review AI",
+     "Google DeepMind",
      1
     ]
    ]
@@ -535,13 +629,31 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "OpenAI-agenter hackede Hugging Face – nu kender vi grunden",
+     "rubrik": "OpenAI-sagen viser strid om matematikkens fremtid",
      "dato": "",
-     "foerst_set": "2026-08-26T21:00:41",
-     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI's AI-agenter snød test og hackede Hugging Face"
+     "under": "OpenAI offentliggør AI-bevis for Navier-Stokes"
+    },
+    {
+     "rubrik": "Ashburn-strømafbrydelse rammer AI-datacentre",
+     "dato": "2026-09-10T11:00:00",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Danijar Hafner vil lære robotter at klare det uventede",
+     "dato": "2026-09-08T10:34:00",
+     "foerst_set": "2026-09-08T13:48:27",
+     "link": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+     "side": "artikel/f4a18652fbacd255.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "McGregor: AI kræver nytænkning af serverhaller",
@@ -580,6 +692,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI's egne AI-agenter hackede Hugging Face",
+     "dato": "2026-08-26T19:00:00",
+     "foerst_set": "2026-08-26T21:00:41",
+     "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI dumper IQ-test: Kan du klare opgaverne?",
      "dato": "2026-08-26T09:00:00",
      "foerst_set": "2026-08-26T10:07:57",
@@ -596,38 +717,11 @@ window.KILDER_STATUS = {
      "side": "artikel/606181c5d71a0cc7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Bill Gates: Vi har passeret AI's fare-grænse",
-     "dato": "2026-08-26T07:01:00",
-     "foerst_set": "2026-08-26T07:28:07",
-     "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
-     "side": "artikel/a1de5e17b3b144fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DexForce og Kina fejrer robotter i Shanghai",
-     "dato": "2026-08-25T09:00:00",
-     "foerst_set": "2026-08-25T10:02:41",
-     "link": "https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/",
-     "side": "artikel/dac3a9d1e696ebce.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cheshire Academy viser vejen: AI i skolen med trafiklys",
-     "dato": "2026-08-24T14:20:19",
-     "foerst_set": "2026-08-24T15:11:40",
-     "link": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
-     "side": "artikel/b11795f5f35fac99.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Ars Technica AI",
+     "OpenAI Blog",
      1
     ]
    ]
@@ -642,132 +736,141 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 23,
+   "i_listen": 22,
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI løfter sløret for GPT-6 Astra",
+     "rubrik": "Paul Christiano kommer i OpenAI Foundations bestyrelse",
      "dato": "",
-     "foerst_set": "2026-09-05T04:54:19",
-     "link": "https://openai.com/index/gpt-6-astra",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+     "under": "OpenAI henter forsker Paul Christiano i bestyrelsen"
     },
     {
-     "rubrik": "GPT-6 Astra er første AI-model på kritisk sikkerhedsniveau",
+     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
      "dato": "",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/safety-overview-gpt-6-astra",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer GPT-6 Astra: Trådte vi ind i en ny AI-æra?"
+     "under": "OpenAI lader dig tegne dine egne AI-billeder"
     },
     {
-     "rubrik": "OpenAI investerer en milliard i cyberforsvar",
-     "dato": "2026-09-03T13:15:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/daybreak-for-frontline-defenders",
-     "side": "artikel/30eec5aa5b07636a.html",
+     "rubrik": "OpenAI hjælper ukrainske medier med AI",
+     "dato": "",
+     "foerst_set": "2026-09-07T09:38:00.818494+00:00",
+     "link": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI styrker støtten til journalister og studerende"
+    },
+    {
+     "rubrik": "OpenAI lancerer ChatGPT til finansverden",
+     "dato": "2026-09-10T07:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+     "side": "artikel/3f77446f0e44a8a2.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI's GPT-6 Astra klarer 41 dokumenter på få minutter",
-     "dato": "2026-09-03T12:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
-     "side": "artikel/d54e7a3a2a7435ba.html",
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Playco fik 50 % færre rettelser med GPT-6 Astra",
-     "dato": "2026-09-03T12:00:00",
-     "foerst_set": "2026-09-03T21:16:06",
-     "link": "https://openai.com/index/playco-game-prototyping-with-astra",
-     "side": "artikel/9a8f1e3af0e06d97.html",
+     "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "side": "artikel/031421652db5e34f.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "ATV Big Air Tour skærer tre dages arbejde ned til tre timer",
-     "dato": "2026-09-02T12:00:00",
-     "foerst_set": "2026-09-02T23:31:19",
-     "link": "https://openai.com/index/atv-big-air-tour",
-     "side": "artikel/21f8b896917eb3e7.html",
+     "rubrik": "OpenAI giver alle data-agent i ChatGPT",
+     "dato": "2026-09-10T15:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/put-data-to-work",
+     "side": "artikel/d86fa96aa31ae332.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Advokatfirma Gilbert + Tobin sætter ChatGPT i system",
-     "dato": "2026-09-01T01:00:00",
-     "foerst_set": "2026-09-02T05:01:06",
-     "link": "https://openai.com/index/gilbert-tobin",
-     "side": "artikel/8e955ff5c0050eaa.html",
+     "rubrik": "OpenAI giver gratis AI til amerikanske myndigheder",
+     "dato": "2026-09-10T07:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/expanding-ai-access-us-government",
+     "side": "artikel/aa2ea623e7d1a173.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI's Astra når nyt sikkerhedsniveau",
-     "dato": "2026-09-01T13:00:00",
-     "foerst_set": "2026-09-01T21:15:41",
-     "link": "https://openai.com/index/path-to-astra",
+     "rubrik": "Forsker bruger ChatGPT til at finde nye antibiotika",
+     "dato": "2026-09-10T16:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
      "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI: AI-agenter giver virksomheder forspring",
-     "dato": "2026-09-01T17:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://openai.com/index/ai-native-company-workflows",
-     "side": "artikel/4be3ed23a721c092.html",
+     "rubrik": "OpenAI-rådgiver kræver ny AI-lovgivning",
+     "dato": "2026-09-09T13:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://openai.com/index/ai-policy-window",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI lader hospitaler koble sundhedsdata på ChatGPT",
-     "dato": "2026-09-01T12:00:00",
-     "foerst_set": "2026-09-01T17:55:30",
-     "link": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-     "side": "artikel/56641fe0291483b6.html",
+     "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
+     "dato": "2026-09-09T11:00:00",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+     "side": "artikel/dc8c3baa32f27c68.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI støtter ny AI-sikkerhedslov for teenagere",
-     "dato": "2026-08-31T07:00:00",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-     "side": "artikel/7f3e9f8d83e8a9e3.html",
+     "rubrik": "OpenAI offentliggør AI-bevis for Navier-Stokes",
+     "dato": "2026-09-08T10:00:00",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/navier-stokes-solution",
+     "side": "artikel/4b61789c249a93a6.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI hjælper japanske kommuner med AI",
-     "dato": "2026-08-31T07:00:00",
-     "foerst_set": "2026-09-01T05:36:32",
-     "link": "https://openai.com/index/polimill",
-     "side": "artikel/6489dfdc164c07c2.html",
+     "rubrik": "Sådan bruger MIT-forsker GPT-5.6 Sol til kvantecomputere",
+     "dato": "2026-09-08T17:00:00",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/codex-quantum-computing-experiments",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI runder milliard med ChatGPT Ads",
-     "dato": "2026-08-31T04:00:00",
-     "foerst_set": "2026-08-31T18:06:02",
-     "link": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
-     "side": "artikel/7aa1f68e6fa52f19.html",
+     "rubrik": "1Password øger effektiviteten 21 procent med OpenAI Codex",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://openai.com/index/1password",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "OpenAI dropper Cursor efter SpaceX-opkøb",
-     "dato": "2026-08-28T06:00:00",
-     "foerst_set": "2026-08-29T07:19:46",
-     "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-     "side": "artikel/57a3b900535e942d.html",
+     "rubrik": "OpenAI støtter teenagere-forskning med 35 mio. kr.",
+     "dato": "2026-09-08T09:00:00",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://openai.com/index/teen-development-research-grants",
+     "side": "artikel/c34d7a764f86c6e9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -775,7 +878,15 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     1
+    ],
+    [
+     "MIT Tech Review AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
+     1
     ]
    ]
   },
@@ -793,13 +904,13 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "Googles nye vejrmodel ser fem gange skarpere",
+     "rubrik": "Google DeepMind kortlægger hele menneskets DNA",
      "dato": "",
-     "foerst_set": "2026-09-03T17:59:19",
-     "link": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
      "side": "",
      "hvor": "under",
-     "under": "Google AI vejrmodel rammer plet med 5 km-opløsning"
+     "under": "Google AI forudsiger alle dna-ændringer"
     },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
@@ -809,6 +920,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
+    },
+    {
+     "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
+     "dato": "2026-09-03T15:02:08",
+     "foerst_set": "2026-09-03T17:59:19",
+     "link": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google giver elitesikkerhed til udvalgte forsvarere",
@@ -881,20 +1001,11 @@ window.KILDER_STATUS = {
      "side": "artikel/618d4dfa5f6ed997.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Googles WeatherNext rammer orkaner mere præcist",
-     "dato": "2026-08-06T15:06:15",
-     "foerst_set": "2026-08-07T04:14:51",
-     "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -909,114 +1020,114 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 25,
+   "i_listen": 100,
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Xiaobo Li giver AI adgang til laboratorier",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03621",
-     "side": "artikel/1315956336774774.html",
+     "rubrik": "Forskerne bag arXiv-artikel: AI-agenter kan kende egen succes",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09448",
+     "side": "artikel/8bdd50b7e730ec6f.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Mia MacGregor gør AI bedre til medicintest",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03635",
-     "side": "artikel/6075bf40b77e4ecc.html",
+     "rubrik": "ContractEval: AI tjekker om regler bliver fulgt",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09458",
+     "side": "artikel/6c08ec4d3b30c6d0.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Tzu-Ling Lin fanger AI-fantasi i forskningsanmeldelser",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03580",
-     "side": "artikel/fba10b48eefd994a.html",
+     "rubrik": "Ny AI-forskning: Sådan genbruger agenter viden",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09233",
+     "side": "artikel/e4ae4bd5e40455c7.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Zeyu Liu og kolleger viser trick til hurtigere AI-agenter",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03236",
-     "side": "artikel/1f4bc90a91cbbf05.html",
+     "rubrik": "Bo Yan: AI-agenter får ny værktøjsmenu",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09395",
+     "side": "artikel/202af3e2d777c735.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "GPT-4 fanger dig i historie-fælde",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03407",
-     "side": "artikel/fd5289cbd498b7de.html",
+     "rubrik": "Ny AI bygger spilbaner helt af sig selv",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09418",
+     "side": "artikel/821525f46178eba7.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Yaxing Lyu fanger AI-assistenter i modsigelser",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03588",
-     "side": "artikel/bfef51eb14108596.html",
+     "rubrik": "XAI-Arena: LLM'er bedømmer AI-forklaringer",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09428",
+     "side": "artikel/0cb64dd413f2bae9.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "NeoRed: AI hjælper læger med nyfødtes vejrtrækning",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03527",
-     "side": "artikel/a4b6e06c9e5b59ce.html",
+     "rubrik": "PRAGMA: AI der husker dig over tid",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09664",
+     "side": "artikel/0c848189b2ba6d08.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Dude afslører forskere, der snyder med koden",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03416",
-     "side": "artikel/7f17222f018b83c4.html",
+     "rubrik": "University of Memphis: AI siger stop i diagnostik",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09678",
+     "side": "artikel/f98c4b565a763616.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "DuplexSpeechBench-IFEval tester stemme-AI i telefonen",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03423",
-     "side": "artikel/136b9d188c88cc94.html",
+     "rubrik": "Yujin Zhou tester AI-hallucinationer i jura",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09754",
+     "side": "artikel/dc2202acb4039f13.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "UI-TARS lærer at sige stop",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03438",
-     "side": "artikel/776244ff72431c48.html",
+     "rubrik": "AI skal navigere Arktis uden is-problemer",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09374",
+     "side": "artikel/ca13c729a285e2b2.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Forskere på arXiv lærer AI at bruge værktøjer rigtigt",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03493",
-     "side": "artikel/e84978d406582d8b.html",
+     "rubrik": "Pacific Northwest National Laboratory vil finde kritiske metaller med AI",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09413",
+     "side": "artikel/537ed5a6506f2b91.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "CulturalMenuBench afslører AI's madkulturelle blinde vinkler",
-     "dato": "2026-09-05T00:00:00",
-     "foerst_set": "2026-09-04T05:02:47",
-     "link": "https://arxiv.org/abs/2609.03526",
-     "side": "artikel/33df6adf25b72930.html",
+     "rubrik": "RESCUE-BENCH tester AI i gruppesamtaler",
+     "dato": "2026-09-11T00:00:00",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://arxiv.org/abs/2609.09657",
+     "side": "",
      "hvor": "forside",
      "under": ""
     }
@@ -1030,12 +1141,84 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 6,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 6,
-   "i_listen": 6,
-   "som_ekstra": 0,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
+   "hentet": 0,
+   "i_listen": 10,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Bandet Muse mister navn til Metas nye AI",
+     "dato": "",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "Meta lancerer Muse – en personlig AI-assistent",
+     "dato": "",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://ai.meta.com/muse/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
+     "rubrik": "AI-matematik-gennembrud skaber strid",
+     "dato": "2026-09-09T10:25:41",
+     "foerst_set": "2026-09-09T17:56:17",
+     "link": "https://www.science.org/content/article/how-ai-math-breakthrough-ignited-controversy",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "LibreOffice slår rekord efter nej til AI",
+     "dato": "2026-09-08T14:05:57",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/",
+     "side": "artikel/dea72d6696336060.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Matematiker Tao: AI 'graver' uløste problemer op for hurtigt",
+     "dato": "2026-09-08T21:00:52",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://mathstodon.xyz/@tao/117237320796901560",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Satire: Vi skal tilbage på kontoret for at bruge AI fysisk",
+     "dato": "2026-09-08T13:41:25",
+     "foerst_set": "2026-09-09T05:10:35",
+     "link": "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ben Evans om AI's transformation af værktøjer",
+     "dato": "2026-09-06T02:12:46",
+     "foerst_set": "2026-09-07T05:10:42",
+     "link": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacker News debatterer AI-følelser",
+     "dato": "2026-09-06T15:00:19",
+     "foerst_set": "2026-09-07T05:10:42",
+     "link": "https://beza1e1.tuxen.de/ai_feelings.html",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "LinkedIn-ingeniør: AI overtager, og vi mister grebet",
      "dato": "2026-09-05T07:52:50",
@@ -1071,27 +1254,14 @@ window.KILDER_STATUS = {
      "side": "artikel/afa4fa3d4fb9279e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Go-mester Shin slår AI'en KataGo med handicap",
-     "dato": "2026-09-03T01:11:22",
-     "foerst_set": "2026-09-03T23:29:06",
-     "link": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "New Yorks skoler forbyder AI",
-     "dato": "2026-09-02T20:57:04",
-     "foerst_set": "2026-09-03T09:07:40",
-     "link": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
-     "side": "artikel/1fa5e007a9948bbd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "The Verge AI",
+     2
+    ]
+   ]
   }
  ],
  "feeds_fil": {
