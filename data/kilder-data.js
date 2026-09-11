@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T17:51:30.603573+00:00",
- "artikler_i_alt": 152,
+ "opdateret": "2026-09-11T21:11:45.274854+00:00",
+ "artikler_i_alt": 155,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -666,9 +666,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
-   "som_ekstra": 7,
+   "i_listen": 38,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "OpenAI i konflikt med 25 matematikere",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+     "side": "",
+     "hvor": "under",
+     "under": "Matematikere kræver svar fra OpenAI om træningsdata"
+    },
     {
      "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
      "dato": "",
@@ -751,6 +760,51 @@ window.KILDER_STATUS = {
      "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
+     "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
+     "dato": "2026-09-11T20:59:47",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Moonshot AI vil tjene 2 milliarder om året",
+     "dato": "2026-09-11T19:35:54",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-forsker advarer om superintelligens",
+     "dato": "2026-09-11T18:41:49",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
+     "dato": "2026-09-11T20:33:18",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Frist i nat for TechCrunch-arrangementer",
+     "dato": "2026-09-11T20:30:17",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI-topchef Fidji Simo til Nscale før børsnotering",
      "dato": "2026-09-11T16:46:25",
      "foerst_set": "2026-09-11T17:51:30",
@@ -812,57 +866,12 @@ window.KILDER_STATUS = {
      "side": "artikel/9ee5bacda2ce8165.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Maven Robotics rejser 100 mio dollars til robotudrulning",
-     "dato": "2026-09-10T14:17:37",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Listen Labs dropper milliardinvestering fra Menlo Ventures",
-     "dato": "2026-09-10T00:00:37",
-     "foerst_set": "2026-09-10T05:12:15",
-     "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Massachusetts tvinger datacentre til grøn strøm",
-     "dato": "2026-09-09T21:43:34",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
-     "side": "artikel/7540bc2c5d65debf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple opfinder din 'helbredsalder' i ny Health-app",
-     "dato": "2026-09-09T18:16:29",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
-     "side": "artikel/41fc243c5eb6113f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple klar med første foldbare iPhone Duo",
-     "dato": "2026-09-09T20:03:43",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
-     "side": "artikel/30c9efdd025bbbb8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "Ars Technica AI",
@@ -892,9 +901,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
-   "som_ekstra": 2,
+   "i_listen": 19,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+     "side": "",
+     "hvor": "under",
+     "under": "ChatGPT-sjusk koster advokat 5.000 dollar"
+    },
     {
      "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
      "dato": "",
@@ -1043,11 +1061,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     6
     ],
     [
      "Ars Technica AI",
-     2
+     3
     ],
     [
      "Hacker News: AI",
@@ -1084,6 +1102,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+    },
+    {
+     "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
+     "dato": "2026-09-11T19:34:09",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
+     "side": "artikel/9622d1970698da66.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic stopper forsøg på biovåben med Claude",
@@ -1174,21 +1201,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spammere gemmer tekst med usynlige Unicode-tegn",
-     "dato": "2026-09-04T17:18:12",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
-     "side": "artikel/2001b530f7111bbe.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "Hacker News: AI",
@@ -1227,6 +1245,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI løser milliongåde – men snød de?"
     },
     {
+     "rubrik": "MIT debatterer AI-truslen mod menneskeheden",
+     "dato": "2026-09-11T20:05:06",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ashburn-strømsvigt rammer AI-datacentre i Virginia",
      "dato": "2026-09-10T11:00:00",
      "foerst_set": "2026-09-10T13:45:53",
@@ -1261,15 +1288,6 @@ window.KILDER_STATUS = {
      "side": "artikel/16db96c97099d0bc.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Jabil rydder op i tech og bruger SAP",
-     "dato": "2026-09-02T14:00:00",
-     "foerst_set": "2026-09-02T17:59:53",
-     "link": "https://www.technologyreview.com/2026/09/02/1142879/facilitating-ai-integration-with-simplicity-at-scale/",
-     "side": "artikel/c0e30f013c2a0c77.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1289,9 +1307,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 20,
+   "i_listen": 19,
    "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "OpenAI giver alle data-agent i ChatGPT",
+     "dato": "",
+     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+     "link": "https://openai.com/index/put-data-to-work",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer Agents API til cloud-agenter"
+    },
     {
      "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
      "dato": "",
@@ -1347,15 +1374,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI åbner GPT-Live-1 for stemmesamtaler",
      "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
@@ -1365,20 +1383,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI giver alle data-agent i ChatGPT",
-     "dato": "2026-09-10T15:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/put-data-to-work",
-     "side": "artikel/d86fa96aa31ae332.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI giver gratis AI til amerikanske myndigheder",
      "dato": "2026-09-10T07:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://openai.com/index/expanding-ai-access-us-government",
      "side": "artikel/aa2ea623e7d1a173.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1442,6 +1460,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://openai.com/index/the-work-now-within-reach",
      "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
      "hvor": "forside",
      "under": ""
     }
