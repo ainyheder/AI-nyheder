@@ -4,7 +4,9 @@ Danske AI-nyheder med en læsevenlig forside, korte overblik og permanente artik
 
 ## Ombygningen, september 2026
 
-Forsiden har en hovedhistorie, et kort overblik, synlig søgning, emnefiltre og valg mellem **Vigtigst først** og **Nyeste først**. Artikelvisningen har større tekst og en begrænset linjebredde. Mobilmenu, tastaturbetjening, delelinks og browserens tilbage/frem understøttes. Læste artikler markeres lokalt; besøgstal ændrer ikke længere udvælgelsen.
+Forsiden har en tydelig hovedhistorie og to andre udvalgte historier. Under **Mere at opdage** fortsætter andre historier; de tre fra toppen gentages ikke. De tidligere blokke med “Kort fortalt” og de samme historier endnu en gang er fjernet. Topfeltet bliver til én kolonne på mobil og fungerer også uden illustrationer.
+
+Søgning, emnefiltre og **Nyeste først** viser én samlet liste og skjuler topfeltet. Her kan også de udvalgte historier findes. Nulstilling genskaber forsiden. Artikelvisningen har større tekst og en begrænset linjebredde. Mobilmenu, tastaturbetjening, delelinks og browserens tilbage/frem understøttes. Læste artikler markeres lokalt; besøgstal ændrer ikke udvælgelsen.
 
 Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/artikel.css`. Deres artikler, kilder, permanente adresser og canonical-links er bevaret. Det store antal ændrede arkivfiler skyldes tilføjelsen af fælles CSS, en tilbagegenvej og tastaturadgang.
 
@@ -20,11 +22,13 @@ Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/ar
 | Dokumentation | 20 % | Hvor godt understøtter det tilgængelige materiale påstanden? |
 | Dansk relevans | 10 % | Er der dokumenteret relevans for Danmark, EU eller danske brugere? |
 
-**Modellanceringer er førsteprioritet.** Bekræftede nye AI-modeller og modelversioner får 36 ekstra prioritetspoint og beholder deres nyhedsværdi gennem den første uge. Forskellige modellanceringer straffes mindre for at dele kategori. Almindelige produktfunktioner, plugins, kundecases, tests og rygter tæller ikke som modellanceringer. Det nye filter **Modellanceringer** viser denne forskel.
+**Modellanceringer er førsteprioritet.** Bekræftede nye AI-modeller og modelversioner får 36 ekstra prioritetspoint de første 48 timer. Derefter halveres bonussen for hver yderligere 48 timer og bortfalder efter en uge. Alle historier får desuden et stærkere aktualitetsfradrag efter tre døgn. Det giver friske historier plads uden tilfældig rotation. Forskellige modellanceringer straffes mindre for at dele kategori. Almindelige produktfunktioner, plugins, kundecases, tests og rygter tæller ikke som modellanceringer. Et smalt produktfilter afviser også åbenlyse fejlvurderinger, fx ChatGPT til en bestemt branche, selv når AI har sat modelflaget forkert.
 
 AI giver hvert kriterium 0–5 og skriver en kort begrundelse samt eventuelle forbehold. Vurderingen bygger på det medsendte kildemateriale; den er ikke en selvstændig faktakontrol. Manglende oplysninger må ikke opfindes. Resultater matches med artikel-id og valideres, før de caches.
 
 Udvælgelsen tager derefter højde for kildens **udgivelsesdato**, og gentagelser af samme kilde, kategori eller hovedaktør får et fradrag. Flere omtaler giver ikke i sig selv flere point. En vigtig forskningshistorie kan fortsat få en hovedplads. Reklameprægede opslag, perifert AI-stof, svagt dokumenterede historier og rygter får ingen hovedplads. På stille dage vises færre udvalgte historier.
+
+Omtaler af samme historie samles ved fælles kildelinks, ens fulde overskrifter eller en entydig navngiven modellancering inden for syv døgn, fx Suno v6. Kildelinks og originale delelinks bevares. URL-sporing ignoreres, men betydende parametre bevares. Fælles firmanavn er ikke nok. Modelvarianter, sammenligninger, API-adgang og regionsspecifikke udgivelser samles ikke på modelnavnet alene. Ukendte navnevarianter springes over frem for at gætte. Reglerne findes både i Python og JavaScript og ændrer ikke de gemte artikeltekster.
 
 En artikel kan blive i overblikket i op til syv døgn efter udgivelsen, selv om den falder ud af kildens RSS-feed. Kilder, der er slået fra, eller har `kun_aktuel`, genindlæses ikke fra arkivet. Hvis samtlige aktive kilder fejler, stoppes kørslen, så den eksisterende udgave bevares.
 
@@ -91,7 +95,7 @@ npm install --prefix /tmp/ai-news-checks --no-audit --no-fund jsdom@26.1.0
 NODE_PATH=/tmp/ai-news-checks/node_modules node _redaktion/proeve-forside.js
 ```
 
-Prøven kontrollerer rigtige artikler, Python/JavaScript-enighed, filtre, søgning, pagination, læser, fokus, historik, gamle links, blokeret lokal lagring og fejltilstande. Den tester DOM-adfærd, ikke pixel-layout i en rigtig browser.
+Prøven kontrollerer rigtige artikler, Python/JavaScript-enighed, unikke pladser på forsiden, samlede kilder, filtre, søgning, pagination, læser, fokus, historik, gamle links, blokeret lokal lagring og fejltilstande. Tiden er fastlåst til testdataenes udgave, så testen ikke fejler, blot fordi en artikel bliver gammel. En ekstra JSON-kopi kan kontrolleres med `AI_NEWS_DATA=/sti/til/articles.json` uden at ændre data i Git. Den tester DOM-adfærd, ikke pixel-layout i en rigtig browser.
 
 Eksisterende crawlerregressioner:
 

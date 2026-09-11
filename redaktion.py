@@ -5,8 +5,9 @@ beregner vægten og vælger en varieret forside. Gamle data virker også.
 """
 import math
 import re
+import unicodedata
 from datetime import datetime, timezone
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlencode, urlsplit
 
 VERSION = 3
 MODEL_BONUS = 36
@@ -122,21 +123,22 @@ def vurdering(a):
 def model_lancering(a):
     """Skeln mellem en modeludgivelse og den brede produktkategori.
 
-    AI's nye eksplicitte felt vinder. En konservativ tekstanalyse giver
+    AI's eksplicitte felt bruges efter et smalt produktfilter. Tekstanalyse giver
     eksisterende artikler den nye prioritering allerede før næste AI-kald.
     Ingen særregel for Astra eller en bestemt udgiver.
     """
     v = vurdering(a)
     if reklame(a) or (v and (v.get("type") != "lancering" or v["dokumentation"] <= 1)):
         return False
+    hoved = (a.get("titel", "") + " " + a.get("rubrik", "")).lower()
+    if re.search(r"\b(plugin|windows|nas|smart.home|case study|kundecase|nedbrud|downtime)\b|"
+                 r"\bchatgpt\s+(?:for|til)\b", hoved):
+        return False
     if v and v.get("version") == VERSION and type(v.get("model_lancering")) is bool:
         return v["model_lancering"]
-    hoved = (a.get("titel", "") + " " + a.get("rubrik", "")).lower()
     tekst = hoved + " " + (a.get("resume_da") or a.get("resume") or "").lower()
     if re.search(r"\b(rumou?rs?|rygte\w*|might|may launch|could launch|expected to|"
                  r"reportedly|planlægger|overvejer|forventes|ifølge rygter)\b", hoved):
-        return False
-    if re.search(r"\b(plugin|windows|nas|smart.home|case study|kundecase|nedbrud|downtime)\b", hoved):
         return False
     handling = re.search(r"\b(introduc\w*|releas\w*|launch\w*|unveil\w*|announc\w*|"
                          r"lancer\w*|udgiv\w*|udsend\w*|præsenter\w*|tilgængelig)\b", hoved)
@@ -185,11 +187,12 @@ def score(a, nu=None):
     # automatisk en vigtig historie fra i går.
     lancering = model_lancering(a)
     vaegt = 0.65 + 0.35 * (2 ** (-max(0, timer) / 48))
-    # Lanceringer har nyhedsværdi hele ugen. Senere falder også de ud af toppen.
-    graense = 168 if lancering else 72
+    # En stærk lancering får tid til at blive læst, men låser ikke toppen i en uge.
+    graense = 72
     if timer > graense:
         vaegt *= 2 ** (-(timer - graense) / 96)
-    bonus = MODEL_BONUS if lancering and timer <= 168 and grundscore(a) >= 32 else 0
+    bonus = (MODEL_BONUS * 2 ** (-max(0, timer - 48) / 48)
+             if lancering and timer <= 168 and grundscore(a) >= 32 else 0)
     return round((grundscore(a) + bonus) * vaegt, 2)
 
 
@@ -218,6 +221,101 @@ def prioriter(artikler, nu=None):
     return sorted(artikler, key=lambda a: (-score(a, nu), -(dato(a).timestamp() if dato(a) else 0), a.get("link", "")))
 
 
+def historie_noegler(a):
+    """Sammenfald i kilde-URL, komplet overskrift eller navngiven modellancering.
+
+    En fælles virksomhed eller model er ikke nok til at skjule en anden nyhed.
+    Bevar betydende query-parametre; fjern kun kendt kampagnesporing.
+    """
+    noegler = set()
+    andre = a.get("andre") if isinstance(a.get("andre"), list) else []
+    for kildeartikel in [a] + andre:
+        if not isinstance(kildeartikel, dict):
+            continue
+        try:
+            u = urlsplit(kildeartikel.get("link", ""))
+            if u.scheme not in ("http", "https") or not u.hostname:
+                continue
+            params = sorted((k, v) for k, v in parse_qsl(u.query, keep_blank_values=True)
+                            if not k.lower().startswith("utm_")
+                            and k.lower() not in ("fbclid", "gclid", "mc_cid", "mc_eid"))
+            noegler.add("url:" + u.netloc.lower().removeprefix("www.")
+                        + (u.path.rstrip("/") or "/") + "?" + urlencode(params))
+        except (ValueError, TypeError):
+            continue
+    for titel in (a.get("titel"), a.get("rubrik")):
+        if not isinstance(titel, str):
+            continue
+        normal = unicodedata.normalize("NFD", titel.lower())
+        normal = "".join(c for c in normal if not unicodedata.combining(c))
+        ordliste = re.findall(r"[a-z0-9æø]+", normal)
+        if len(ordliste) >= 4:
+            noegler.add("titel:" + " ".join(ordliste))
+    # Saml fx to omtaler af Suno v6, selv når overskrifterne er forskellige.
+    # Brug kun modelversioner i en bekræftet lancering, og ingen sammenligninger
+    # eller varianter som API-adgang, previews eller regionsspecifikke udgivelser.
+    tekst = " ".join(str(a.get(k) or "") for k in ("titel", "rubrik", "resume_da")).lower()
+    tekst = re.sub(r"[‐‑–—]", "-", tekst)
+    varianter = r"\b(vs|versus|preview|beta|api|financ\w*|finans\w*|enterprise|eu|europe|europa|kina|china|benchmark\w*|sammenlign\w*)\b"
+    if model_lancering(a) and not re.search(varianter, tekst):
+        moenster = (r"\b(?!(?:model|models|modellen|modeller|version|versionen|release|udgave)\b)"
+                    r"(?:[a-z][a-z0-9-]{2,} v\d+(?:\.\d+)*|"
+                    r"(?:gpt|gemini|claude|llama|qwen|deepseek|grok|mistral|phi|sora|veo|suno)"
+                    r"[- ](?:opus[- ]|sonnet[- ]|haiku[- ])?\d+(?:\.\d+)*)"
+                    r"(?:[- ](?:flash|pro|mini|nano|lite|ultra|opus|sonnet|haiku|astra|thinking|instruct|cyber|codex|transcribe|vision|audio|realtime|omni|\d+b))*\b")
+        modeller, ukendt_variant = set(), False
+        for felt in ("titel", "rubrik", "resume_da"):
+            original = re.sub(r"[‐‑–—]", "-", str(a.get(felt) or ""))
+            for m in re.finditer(moenster, original, re.I):
+                # En ukendt navnedel må ikke blive skåret af, så en ny variant
+                # fejlagtigt bliver samlet med grundmodellen.
+                if re.match(r"[- ]+[A-ZÆØÅ][a-zA-ZæøåÆØÅ-]+", original[m.end():]):
+                    ukendt_variant = True
+                modeller.add(re.sub(r"[- ]+", "-", m.group().lower()))
+        if len(modeller) == 1 and not ukendt_variant:
+            noegler.add("model:" + next(iter(modeller)))
+    return noegler
+
+
+def unikke_historier(artikler):
+    """Bevar første repræsentant i den valgte rækkefølge og saml dens kildelinks."""
+    grupper = []
+    for a in artikler:
+        noegler = historie_noegler(a)
+        def matcher(g):
+            faelles = noegler & g["noegler"]
+            if any(not k.startswith("model:") for k in faelles):
+                return True
+            return bool(faelles and dato(a) and any(
+                dato(b) and abs((dato(a) - dato(b)).total_seconds()) <= 7 * 86400
+                for b in g["artikler"]))
+        match = [g for g in grupper if matcher(g)]
+        if not match:
+            grupper.append({"artikler": [a], "noegler": noegler})
+            continue
+        gruppe = match[0]
+        gruppe["artikler"].append(a)
+        gruppe["noegler"].update(noegler)
+        for anden in match[1:]:
+            gruppe["artikler"].extend(anden["artikler"])
+            gruppe["noegler"].update(anden["noegler"])
+            grupper.remove(anden)
+    resultat = []
+    for g in grupper:
+        a = g["artikler"][0]
+        if len(g["artikler"]) == 1:
+            resultat.append(a)
+            continue
+        kilder = {}
+        for artikel in g["artikler"]:
+            andre = artikel.get("andre") if isinstance(artikel.get("andre"), list) else []
+            for k in [artikel] + andre:
+                if isinstance(k, dict) and k.get("link") and k["link"] != a.get("link"):
+                    kilder.setdefault(k["link"], {"link": k["link"], "kilde": k.get("kilde", "")})
+        resultat.append({**a, "andre": list(kilder.values())})
+    return resultat
+
+
 def udvaelg(artikler, antal=6, nu=None, max_timer=168):
     """Vælg reelt aktuelle, læsbare historier med plads til flere emner og kilder.
 
@@ -225,7 +323,7 @@ def udvaelg(artikler, antal=6, nu=None, max_timer=168):
     vigtig nyhed kan stadig slå igennem, når kilden allerede er repræsenteret.
     """
     nu = nu or datetime.now(timezone.utc)
-    kandidater = [a for a in prioriter(artikler, nu)
+    kandidater = [a for a in unikke_historier(prioriter(artikler, nu))
                   if a.get("rubrik") and not reklame(a) and grundscore(a) >= 32
                   and dato(a) and -2 <= (nu - dato(a)).total_seconds() / 3600 <= max_timer
                   and not (vurdering(a) and (vurdering(a)["dokumentation"] <= 1
@@ -252,7 +350,7 @@ def forside(artikler, nu=None):
     nu = nu or datetime.now(timezone.utc)
     return {"version": VERSION, "beregnet": nu.isoformat(),
             "udvalgte": [a["link"] for a in udvaelg(artikler, nu=nu)],
-            "raekkefoelge": [a["link"] for a in prioriter(artikler, nu) if not reklame(a)],
+            "raekkefoelge": [a["link"] for a in unikke_historier(prioriter(artikler, nu)) if not reklame(a)],
             "ai_vurderet": sum(vurdering(a) is not None for a in artikler)}
 
 

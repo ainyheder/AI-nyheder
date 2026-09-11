@@ -193,6 +193,54 @@ class RedaktionTests(unittest.TestCase):
         self.assertIn('&lt;script&gt;',rendered)
         self.assertNotIn('<script>alert(',rendered)
 
+    def test_lancering_giver_plads_til_nye_historier_efter_to_doegn(self):
+        lancering=artikel('Acme v3 bliver frigivet',timer=48,redaktion=vurdering(model_lancering=True))
+        gammel={**lancering,'dato':(NU-timedelta(hours=120)).isoformat()}
+        ny=artikel('Vigtig ny historie',timer=3,redaktion=vurdering(type='analyse'))
+        self.assertGreater(r.score(lancering,NU),r.score(ny,NU))
+        self.assertLess(r.score(gammel,NU),r.score(ny,NU))
+
+    def test_samme_url_med_sporing_samles_uden_at_miste_kilder(self):
+        a=artikel('En konkret historie om musik',link='https://example.com/story?utm_source=feed')
+        b=artikel('Ny overskrift hos samme kilde',link='https://www.example.com/story/#top')
+        c=artikel('En anden konkret nyhed om musik',link='https://other.example/story',andre=[{'link':b['link'],'kilde':'Original'}])
+        before=copy.deepcopy([a,b,c])
+        result=r.unikke_historier([a,b,c])
+        self.assertEqual(len(result),1)
+        self.assertEqual({x['link'] for x in result[0]['andre']},{b['link'],c['link']})
+        self.assertEqual([a,b,c],before)
+
+    def test_betydende_query_og_forskellige_nyheder_bevares(self):
+        a=artikel('En nyhed',link='https://example.com/?id=1')
+        b=artikel('Anden nyhed',link='https://example.com/?id=2')
+        self.assertEqual(len(r.unikke_historier([a,b])),2)
+        self.assertEqual(len(r.unikke_historier([artikel('OpenAI viser ny model'),artikel('OpenAI ændrer sine priser')])),2)
+
+    def test_samme_overskrift_paa_to_kilder_samles(self):
+        a=artikel('Google lancerer en ny sprogmodel',kilde='a.example')
+        b=artikel('GOOGLE lancerer en ny sprogmodel!',kilde='b.example')
+        self.assertEqual(len(r.udvaelg([a,b],nu=NU)),1)
+
+    def test_samme_modelversion_samles_men_varianter_og_api_bevares(self):
+        v=vurdering(model_lancering=True)
+        a=artikel('Suno lancerer ny musikmodel',resume_da='Suno v6 er trænet på licenseret musik.',redaktion=v)
+        b=artikel('Suno v6 skaber nye sange',redaktion=v,kilde='b.example')
+        c=artikel('Suno v6 Pro åbner for musikere',redaktion=v,kilde='c.example')
+        d=artikel('Suno v6 kommer i et API',redaktion=v,kilde='d.example')
+        self.assertEqual(len(r.unikke_historier([a,b,c,d])),3)
+        self.assertEqual(len(r.udvaelg([a,b,c,d],nu=NU)),3)
+        e=artikel('Suno v6 Zenith er lanceret',redaktion=v,kilde='e.example')
+        self.assertEqual(len(r.unikke_historier([a,e])),2)
+        senere={**b,'dato':(NU+timedelta(days=30)).isoformat()}
+        self.assertEqual(len(r.unikke_historier([a,senere])),2)
+        flash=artikel('Google lancerer Gemini 3.8 Flash',redaktion=v)
+        cyber=artikel('Google giver adgang til sikkerhedsmodel',resume_da='Gemini 3.8 Flash Cyber finder sikkerhedshuller.',redaktion=v)
+        self.assertEqual(len(r.unikke_historier([flash,cyber])),2)
+
+    def test_fejlagtigt_model_flag_goer_ikke_et_produkt_til_en_model(self):
+        for titel in ['Introducing ChatGPT for Financial Services','OpenAI lancerer et plugin til GPT-6']:
+            self.assertFalse(r.model_lancering(artikel(titel,redaktion=vurdering(model_lancering=True))))
+
 
 if __name__=="__main__":
     unittest.main(verbosity=2)
