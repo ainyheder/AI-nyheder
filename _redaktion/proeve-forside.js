@@ -96,7 +96,33 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   ok(md.querySelectorAll('.news-row').length===1,'Modelfilter viser kun modellanceringer');
   ok(md.querySelector('.news-row h3').textContent.includes('Astra'),'Astra findes under modellanceringer');
   ok(!modelTest.errors.length,'Ny modelprioritet uden scriptfejl');modelTest.close();
+  const editorTime=new Date(testNow).toISOString();
+  const editorPlan={metode:'agent',agent_version:1,kontrolleret:true,beregnet:editorTime,data_opdateret:editorTime,
+    udvalgte:[financeArticle.link],raekkefoelge:[financeArticle.link,launchArticle.link],samlede:{[financeArticle.link]:[]}};
+  const editorial=await mount({artikler:[launchArticle,financeArticle],opdateret:editorTime,forside:editorPlan});
+  ok(editorial.w.document.querySelector('.lead-story h2 a').dataset.article===financeArticle.link,'Godkendt redaktørvalg overtager pointlistens Astra-valg');
+  ok(editorial.w.document.querySelector('.news-row h3 a').dataset.article===launchArticle.link,'Øvrige historier er fortsat synlige');
+  editorial.w.document.querySelector('[data-category="Modeller"]').click();
+  ok(editorial.w.document.querySelector('.news-row h3 a').dataset.article===launchArticle.link,'Model-filteret virker med et agentudvalg');editorial.close();
+  for(const invalidPlan of [{...editorPlan,kontrolleret:false},{...editorPlan,data_opdateret:'andet'},
+    {...editorPlan,beregnet:new Date(testNow-25*3600000).toISOString()},
+    {...editorPlan,udvalgte:['https://unknown.example/story']},
+    {...editorPlan,samlede:{[financeArticle.link]:[launchArticle.link]}}]){
+    ok(api.editorEdition([launchArticle,financeArticle],invalidPlan,editorTime,testNow)===null,'Ugyldig, forældet eller blandet agentplan afvises');
+  }
+  const emptyEditorial=api.editorEdition([launchArticle,financeArticle],{...editorPlan,udvalgte:[],samlede:{},raekkefoelge:[launchArticle.link,financeArticle.link]},editorTime,testNow);
+  ok(emptyEditorial.selected.length===0,'En godkendt stille dag tvinger ingen hovedhistorie ind');
   const duplicate={...launchArticle,link:'https://second.example/astra',titel:'En ny udgave til alle',rubrik:'En ny udgave til alle',andre:[{link:launchArticle.link,kilde:'Originalkilden'}]};
+  const semanticDuplicate={...financeArticle,link:'https://second.example/music',titel:'En helt anden overskrift',rubrik:'En anden vinkel fra andet medie',andre:[]};
+  const semanticPlan={...editorPlan,samlede:{[financeArticle.link]:[semanticDuplicate.link]}};
+  const semantic=await mount({artikler:[launchArticle,financeArticle,semanticDuplicate],opdateret:editorTime,forside:semanticPlan});
+  ok(visibleHeadlines(semantic.w.document).length===2,'Agentens dokumenterede sammenlægning fjerner en anden vinkling fra listen');
+  semantic.w.document.querySelector('.lead-story h2 a').click();
+  ok(semantic.w.document.querySelectorAll('.source-links a').length===2,'Agentens sammenlægning bevarer begge kilder');
+  ok(!semantic.errors.length,'Agentudvalg uden scriptfejl');semantic.close();
+  const sourced=await mount({artikler:[{...launchArticle,redaktoer_kilder:[{link:'https://deepseek.com/news/release',kilde:'Officiel meddelelse'}]}],opdateret:editorTime});
+  sourced.w.document.querySelector('.lead-story h2 a').click();
+  ok([...sourced.w.document.querySelectorAll('.source-links a')].some(a=>a.href==='https://deepseek.com/news/release'),'Agentens ekstra officielle kilde følger med ind i læseren');sourced.close();
   const grouped=await mount({artikler:[launchArticle,duplicate,financeArticle],opdateret:new Date(testNow).toISOString()});
   ok(visibleHeadlines(grouped.w.document).length===2,'To omtaler af samme historie får én plads');
   grouped.w.document.querySelector('.lead-story h2 a').click();

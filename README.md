@@ -18,7 +18,34 @@ Officielt modelnavn: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
 
 ## Sådan udvælges nyhederne
 
-`crawler.py` henter kilderne og får AI til at vurdere hver historie. `redaktion.py` validerer vurderingerne og beregner rækkefølgen. Den samme logik bruges til forsiden, brief-kandidater, ugens quiz og billedprioritering.
+`crawler.py` henter kilderne og får AI til at vurdere hver historie. Derefter holder **redaktøragenten** et redaktionsmøde med DeepSeek V4.1 Flash. Den kan vælge hovedhistorier anderledes end den gamle pointliste. Den godkendte plan styrer forsiden; `redaktion.py` er reserve og bruges fortsat til den øvrige prioritering, quiz og billedbudget.
+
+### Redaktøragenten
+
+- **Redaktionens retning:** Redigér `opsaetning/redaktoer.md` på almindeligt dansk. Filen læses ved hvert møde. Her står allerede præferencen for nye modeller, konkrete muligheder og variation.
+- **Hukommelse:** Op til syv døgns tidligere forsider gemmes i `data/redaktoer-hukommelse.json`. Agenten får de seneste udgaver og en samlet oversigt over ugens tidligere omtaler. Mislykkede møder gemmes ikke som udgivne forsider.
+- **Kildeadgang:** Agenten bruger ægte API-værktøjskald til at finde i kandidatlisten, læse kendte kilder og følge officielle henvisninger fundet i materialet. Den har ikke en generel websøgning. Kildetekster behandles som data; manglende adgang markeres som et RSS-resumé eller utilgængelig kilde.
+- **Skriveopgaver:** Agenten vælger op til tre historier, bestiller en konkret vinkel og kan samle dokumenterede omtaler. Dens opgaver får plads før pointlisten i skrivebudgettet. Et ændret kildegrundlag eller en ændret opgave kan udløse omskrivning af en cached artikel.
+- **Kontrol:** Skribentens udkast og hele udgaven kontrolleres mod de læste kilder. Et afvist udkast erstatter ikke en gemt artikel. Afviser slutkontrollen udgaven, gendannes også de tidligere artikeltekster. Nye kildehenvisninger følger med både i læseren og på den permanente artikelside.
+- **Drift:** Højst syv modelrunder til mødet, otte kildehentninger og ét afsluttende udgavetjek. Skrive- og korrekturkald er derudover begrænset til de tre valgte historier og crawlerens eksisterende budget. Ved uændrede kandidater og instruktioner kan en kontrolleret plan genbruges i fire timer. Fejl bruger en stadig gyldig plan på højst 24 timer eller pointlisten.
+
+`data/redaktoer-status.json` viser status, begrundelser, skriveopgaver, modelkald, kildehentninger og både agentens og pointlistens udvalg. Rå kildetekster og API-nøgler gemmes ikke i status eller hukommelse. De nye datafiler kommer automatisk med i den eksisterende GitHub-workflow.
+
+Agenten aktiveres ved næste crawl efter upload med den eksisterende `DEEPSEEK_API_KEY`. Nøglen bliver på GitHub. En lokal kørsel uden nøgle bruger reserven. Der er ikke foretaget et betalt modelkald i udviklingstesten; testene dokumenterer funktion og integration, ikke et målt kvalitetsløft fra modellen.
+
+En separat sammenligning kan køres uden at udgive, omskrive artikeldata eller sende noget:
+
+```bash
+# Ingen model- eller kildekald: kontrol af datakopi og pointlistens udvalg.
+python3 opsaetning/proev-redaktoer.py --rapport /tmp/redaktoer-proeve.json
+
+# Med nøgle i miljøet: afgrænset redaktionsmøde og sammenligning på samme data.
+python3 opsaetning/proev-redaktoer.py --live --rapport /tmp/redaktoer-proeve.json
+```
+
+Brug `--data /sti/til/articles.json` til en anden nyhedsdag. Rapporten angiver eksplicit, om agenten faktisk blev kaldt. Den separate prøve godkender ikke en udgave til udgivelse; det gør crawlerens fulde arbejdsgang efter skrivning og kontrol.
+
+### Reserveudvælgelsen
 
 | Kriterium | Vægt | Spørgsmål |
 |---|---:|---|
@@ -42,7 +69,7 @@ En artikel kan blive i overblikket i op til syv døgn efter udgivelsen, selv om 
 
 Vurderinger gemmes i artiklens `redaktion`-felt med versionsnummer. Version 3 tilføjer et eksplicit `model_lancering`-felt. Version 2-vurderinger og deres forbehold bevares, indtil de kan opdateres. En konservativ tekstanalyse prioriterer eksisterende modellanceringer med det samme. Ved næste kørsel med en fungerende AI-nøgle får op til 120 artikler den nye vurdering, i portioner på 12. Resten fortsætter ved næste kørsel. Artikler helt uden delvurderinger bruger den eksisterende `prio` med den nye modelprioritet og aktualitetslogik. Der skal ikke slettes data eller indstilles nye secrets.
 
-Normalt prioriteres de 40 vigtigste artikler til dyb behandling, og billedbudgettet går til seks udvalgte historier. Et manglende billede giver et almindeligt tekstlayout og påvirker ikke historiens placering.
+Normalt prioriteres de 40 vigtigste artikler til dyb behandling med redaktørens opgaver forrest. Et manglende billede giver et almindeligt tekstlayout og påvirker ikke historiens placering.
 
 ## Se siden lokalt
 
@@ -92,6 +119,7 @@ Udvælgelse, cache, id-matching, datoer, kilderegler og offline-opdatering:
 
 ```bash
 python3 _redaktion/proeve-redaktion.py
+python3 _redaktion/proeve-redaktoer-agent.py
 ```
 
 Forsidens DOM-adfærd testes med JSdom. Afhængigheden kan installeres uden for projektet:

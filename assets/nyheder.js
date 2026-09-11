@@ -136,6 +136,33 @@
     }
     return chosen;
   }
+  function editorEdition(all, f, updated, now=Date.now()) {
+    // Kun en kontrolleret plan fra PRÆCIS denne datafil må overtage pointlisten.
+    if(!f||f.metode!=='agent'||f.agent_version!==1||f.kontrolleret!==true||f.data_opdateret!==updated)return null;
+    const time=Date.parse(f.beregnet),age=now-time;
+    if(!Number.isFinite(time)||age < -300000||age>24*HOUR)return null;
+    const known=new Map(all.map(a=>[a.link,a])),chosen=f.udvalgte,order=f.raekkefoelge,groups=f.samlede;
+    if(!Array.isArray(chosen)||chosen.length>3||new Set(chosen).size!==chosen.length)return null;
+    if(chosen.some(k=>{const a=known.get(k);if(!a)return true;const d=timestamp(a),v=assessment(a);return !a.rubrik||promotional(a)||d===null||now-d < -2*HOUR||now-d>168*HOUR||(v&&(v.dokumentation<=1||v.type==='rygte'));}))return null;
+    if(!Array.isArray(order)||new Set(order).size!==order.length||order.some(k=>!known.has(k))||chosen.some((k,i)=>order[i]!==k))return null;
+    if(!groups||Array.isArray(groups)||typeof groups!=='object'||Object.keys(groups).some(k=>!chosen.includes(k)))return null;
+    const excluded=new Set();
+    for(const values of Object.values(groups)){
+      if(!Array.isArray(values)||values.length>4)return null;
+      for(const k of values){if(!known.has(k)||chosen.includes(k)||order.includes(k)||excluded.has(k))return null;excluded.add(k);}
+    }
+    const merged=new Map(known);
+    for(const k of chosen){
+      const a=known.get(k),others=(groups[k]||[]).map(x=>known.get(x));
+      merged.set(k,{...a,andre:[...(Array.isArray(a.andre)?a.andre:[]),...others.flatMap(b=>[{link:b.link,kilde:b.kilde},...(Array.isArray(b.andre)?b.andre:[])])]});
+    }
+    const sequence=[...order,...rank(all,now).map(a=>a.link).filter(k=>!order.includes(k)&&!excluded.has(k))];
+    const list=uniqueStories(sequence.map(k=>merged.get(k)).filter(a=>!promotional(a)));
+    // Automatiske dubletregler må ikke erstatte chefens valgte repræsentant.
+    const selected=chosen.map(k=>list.find(a=>a.link===k));
+    if(selected.some(a=>!a))return null;
+    return {articles:list,selected};
+  }
   function safeUrl(value, local = false) {
     if (typeof value !== "string" || !value.trim()) return "";
     if (local) return /^(?:\/?(?:artikel|video)\/[a-zA-Z0-9_-]+\.html|\/?data\/img\/[a-zA-Z0-9_.-]+)$/.test(value) ? value : "";
@@ -143,7 +170,7 @@
   }
   function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]); }
   function bold(value) { return escapeHtml(value).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"); }
-  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,storyKeys,uniqueStories,safeUrl,escapeHtml};
+  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,storyKeys,uniqueStories,editorEdition,safeUrl,escapeHtml};
   if(typeof module!=="undefined" && module.exports) module.exports=api;
   root.AINews=api;
   if(typeof document==="undefined") return;
@@ -173,7 +200,7 @@
   function articleUrl(a) { return (!a.kun_aktuel && safeUrl(a.side,true)) || safeUrl(a.link) || "#nyhedsliste"; }
   function linkAttrs(a) { return `href="${escapeHtml(articleUrl(a))}" data-article="${escapeHtml(a.link)}"`; }
   function sources(a) {
-    const items=[{link:a.link,kilde:a.kilde},...(Array.isArray(a.andre)?a.andre:[])];
+    const items=[{link:a.link,kilde:a.kilde},...(Array.isArray(a.andre)?a.andre:[]),...(Array.isArray(a.redaktoer_kilder)?a.redaktoer_kilder:[])];
     return items.filter((s,i)=>s&&safeUrl(s.link)&&items.findIndex(x=>x&&x.link===s.link)===i);
   }
   function meta(a) {
@@ -284,9 +311,12 @@
         unique.set(a.link,a);
       });
       const all=[...unique.values()];
-      // Delvurderingerne kommer fra crawleren. Beregn udvalget på ALLE
-      // aktuelle artikler, så gammel forside-metadata ikke skjuler nye modeller.
-      catalog=all;articles=uniqueStories(rank(all));selected=select(articles,3);
+      // Følg den kontrollerede redaktionsplan; ved fejl beregnes reserven
+      // på alle aktuelle artikler, så gamle metadata ikke skjuler nye modeller.
+      catalog=all;
+      const edition=editorEdition(all,data.forside,data.opdateret);
+      articles=edition?edition.articles:uniqueStories(rank(all));
+      selected=edition?edition.selected:select(articles,3);
       const updated=Date.parse(data.opdateret);
       if(Number.isFinite(updated)){
         $("opdateret").textContent=`Opdateret ${formatDate(updated,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`;

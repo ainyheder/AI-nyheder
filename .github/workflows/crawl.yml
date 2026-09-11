@@ -52,7 +52,9 @@ jobs:
           python-version: "3.12"
 
       - name: Kontrollér redaktionel udvælgelse
-        run: python3 _redaktion/proeve-redaktion.py
+        run: |
+          python3 _redaktion/proeve-redaktion.py
+          python3 _redaktion/proeve-redaktoer-agent.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:
