@@ -1,0 +1,21 @@
+# Lokale redaktionsværktøjer skal ikke kopieres til den offentlige hjemmeside.
+# Gælder GitHub Pages med standard Jekyll-build; ændrer ikke repoets læserettigheder.
+exclude:
+  - Indstillinger.html
+  - opsaetning
+  - _redaktion
+  - assets/kommando.js
+  - assets/kommando.css
+  - data/kommando-data.js
+  - data/hjerne-data.js
+  - data/hjerner-status.json
+  - data/redaktoer-status.json
+  - data/laesertal-data.js
+  - data/laesertal.json
+  - data/kilder-data.js
+  - data/kilder.json
+  - data/kritik.json
+  - data/opslag.json
+  - README.md
+  - crawler.py
+  - kommandocentral.py

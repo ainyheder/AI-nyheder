@@ -378,6 +378,11 @@ def hjerne_prompt(navn: str, standard: str) -> str:
     return p.strip() if isinstance(p, str) and p.strip() else standard
 
 
+def special_model(navn, standard, prefix):
+    model = hjerne_model(navn)
+    return model if model and model.startswith(prefix) and (navn != "billedgenerator" or "image" in model) else standard
+
+
 def hjerne_model(navn: str) -> str | None:
     """Modelnavn for et trin, hvis panelet har valgt en bestemt."""
     mo = (_hjerner().get(navn) or {}).get("model")
@@ -667,7 +672,9 @@ def _skriv_hjerne_status() -> None:
         "opdateret": datetime.now(timezone.utc).isoformat(),
         "daglig_model": daglig,
         "udbyder": UDBYDER or "ingen",
-        "billedmodel": BILLED_MODEL if GEMINI_KEY else "ingen",
+        "billedmodel": special_model("billedgenerator", BILLED_MODEL, "gemini") if GEMINI_KEY else "ingen",
+        "billed_standard": BILLED_MODEL,
+        "forside_standard": DEEPSEEK_MODEL,
         "gemini_tilgaengelig": bool(GEMINI_KEY),
         "deepseek_tilgaengelig": bool(DEEPSEEK_KEY),
         "hjerner": {
@@ -2413,6 +2420,7 @@ def lav_billeder(artikler: list[dict]) -> None:
     (filnavn = hash af linket) og bruges for altid. Kræver GEMINI_API_KEY,
     og at betaling er slået til - ellers springes trinnet bare over."""
     global _billed_model
+    _billed_model = special_model("billedgenerator", BILLED_MODEL, "gemini")
     if not GEMINI_KEY:
         print("🎨 GEMINI_API_KEY ikke sat - springer AI-billeder over")
         return
@@ -5606,16 +5614,17 @@ def tjek_statisk_sitemap() -> list[str]:
 
 def forbered_redaktoer(artikler, tidligere_forside, nu):
     """Forbered redaktionsmødet. Fejl giver en synlig reserve, aldrig et stop."""
+    agent_model = special_model("forside_agent", DEEPSEEK_MODEL, "deepseek")
     baseline = redaktion.forside(artikler, nu)
     result = {"agent": None, "plan": None, "opgaver": {}, "tekster": {}, "originaler": {},
               "forside": baseline, "status": {"opdateret": nu.isoformat(), "status": "reserve",
-              "model": DEEPSEEK_MODEL, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
+              "model": agent_model, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
     old = redaktoer_agent.genbrug_forside(tidligere_forside, artikler, nu)
     if old:
         result["forside"] = old
     try:
         retning = (OPSAETNING / "redaktoer.md").read_text(encoding="utf-8")[:10000]
-        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": DEEPSEEK_MODEL,
+        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": agent_model,
             "agent_version": redaktoer_agent.VERSION, "system": redaktoer_agent.SYSTEM, "kontrol": redaktoer_agent.KONTROL,
             "artikler": sorted([{k: a.get(k) for k in ("link", "titel", "dato", "resume", "redaktion")}
                                for a in artikler if redaktoer_agent.aktuel(a, nu)], key=lambda a: a["link"])},
@@ -5635,7 +5644,7 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
             memory = {"udgaver": [{"tid": tidligere_forside.get("beregnet"), "historier": [
                 {"link": k, "rubrik": lookup[k]["rubrik"]} for k in tidligere_forside.get("udvalgte", [])[:3] if k in lookup]}]}
         agent = redaktoer_agent.Redaktion(artikler, memory, retning, nu,
-            lambda messages, tools: redaktoer_agent.deepseek_kald(DEEPSEEK_KEY, DEEPSEEK_MODEL, messages, tools))
+            lambda messages, tools: redaktoer_agent.deepseek_kald(DEEPSEEK_KEY, agent_model, messages, tools))
         result["agent"] = agent
         plan = agent.koer()
         result["plan"] = plan

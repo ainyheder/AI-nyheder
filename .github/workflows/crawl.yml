@@ -2,7 +2,7 @@
 # Automatisk crawl af AI-nyheder
 # ---------------------------------------------------------------------
 # Denne workflow kører på GitHubs servere (gratis) og:
-#   1. Kører crawler.py hver 6. time
+#   1. Kører crawler.py hver time hele døgnet
 #   2. Committer den nye data/articles.json til main
 #   3. GitHub Pages serverer derefter automatisk den nye version
 #
@@ -15,13 +15,8 @@ name: Crawl AI-nyheder
 
 on:
   schedule:
-    # Tiderne er UTC. Dansk sommertid = UTC+2.
-    # DeepSeek tager DOBBELT pris i peak: 01-04 og 06-10 UTC (03-06 og 08-12 dansk).
-    # Nat-peak springer vi over — der er alligevel ingen læsere kl. 3-6 om morgenen.
-    # Formiddags-peak beholder vi bevidst: det er dansk prime time, og de fire
-    # ekstra kørsler koster kun ca. 6 kr./md. ved dobbelt takst.
-    - cron: "37 4-21 * * *"  # hver time i dagtimerne (ca. 6-23 dansk tid) — skævt minuttal, så GitHub ikke dropper kørslen
-    - cron: "37 0 * * *"     # én natlig kørsel kl. 00:37 UTC (02:37 dansk) — uden for peak
+    # Hver time hele døgnet, 37 minutter over timen (UTC).
+    - cron: "37 * * * *"
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
@@ -57,6 +52,7 @@ jobs:
           python3 _redaktion/proeve-redaktoer-agent.py
           python3 _redaktion/proeve-nyhedskilder.py
           python3 _redaktion/proeve-kommandocentral.py
+          python3 _redaktion/proeve-modelkatalog.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:

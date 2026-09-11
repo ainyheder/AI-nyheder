@@ -327,6 +327,31 @@ async function run() {
     }, data);
   });
 
+  await check("Exact model selection, manual catalog and special roles", () => usingPanel(p => {
+    p.app.state.drafts.hjerner.hjerner.omskriv={model:"gemini-custom"};
+    p.app.navigate("models");
+    assert.match(p.d.querySelector('[data-edit-model="omskriv"]').textContent,/gemini-custom/);
+    assert.ok(p.d.querySelector('[data-edit-model="forside_agent"]'));
+    p.d.querySelector('[data-edit-model="omskriv"]').click();
+    const select=p.d.getElementById('step-model');
+    assert.equal(select.tagName,'SELECT');assert.equal(select.value,'gemini-custom');
+    select.value='manual';select.dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    p.d.getElementById('manual-model').value='gemini-new-test';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.equal(p.app.state.drafts.hjerner.hjerner.omskriv.model,'gemini-new-test');
+    assert.ok(p.app.state.drafts.hjerner.modeller.includes('gemini-new-test'));
+    p.d.querySelector('[data-edit-model="forside_agent"]').click();
+    assert.ok([...p.d.getElementById('step-model').options].every(o=>!o.value.startsWith('gemini')));
+  }));
+
+  await check("Automatic catalogs need no browser keys or API requests", () => usingPanel(p => {
+    p.app.navigate('models');
+    assert.equal(p.d.querySelectorAll('[data-update-provider], #provider-key').length,0);
+    assert.match(p.d.getElementById('view-content').textContent,/Automatisk opdatering hver dag/);
+    p.app.state.snapshot.modelkatalog={udbydere:{Gemini:{modeller:Array.from({length:40},(_,i)=>'gemini-model-'+i),opdateret:'2026-09-12T00:00:00Z'}}};
+    assert.equal(p.app.modelList('omskriv').filter(m=>m.startsWith('gemini-model-')).length,40);
+  }));
+
   console.log(`\nKOMMANDOCENTRAL: ${passed} passed · ${failed} failed`);
   process.exitCode = failed ? 1 : 0;
 }

@@ -11,7 +11,7 @@
   const safeUrl = value => { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : ''; } catch (_) { return ''; } };
   const PATHS = {feeds:'opsaetning/feeds.json', hjerner:'_redaktion/hjerner.json', retning:'opsaetning/redaktoer.md'};
   const NAMES = {feeds:'Nyhedskilder', hjerner:'Modeller og instruktioner', retning:'Redaktionens retning'};
-  const STEP_NAMES = {omskriv:'Rubrik og resumé',kategori:'Vurder nyhedsværdi',dublet:'Saml dubletter',brief:'Skriv hele artiklen',redaktoer:'Kontrollér artiklen',stram:'Stram teksten op',navngiv:'Forbedr gamle rubrikker',motiv:'Beskriv billedmotivet',kartotek:'Opdatér værktøjerne',quiz:'Lav quizzen',dagens_overblik:'Dagens overblik',ugens_overblik:'Ugens overblik',youtube:'Bearbejd videoer',opslag:'Skriv sociale opslag'};
+  const STEP_NAMES = {forside_agent:'Vælg forsiden · redaktøragent',billedgenerator:'Generér illustrationer',omskriv:'Rubrik og resumé',kategori:'Vurder nyhedsværdi',dublet:'Saml dubletter',brief:'Skriv hele artiklen',redaktoer:'Kontrollér artiklen',stram:'Stram teksten op',navngiv:'Forbedr gamle rubrikker',motiv:'Beskriv billedmotivet',kartotek:'Opdatér værktøjerne',quiz:'Lav quizzen',dagens_overblik:'Dagens overblik',ugens_overblik:'Ugens overblik',youtube:'Bearbejd videoer',opslag:'Skriv sociale opslag'};
   const VIEWS = {
     overview:['Overblik','REDAKTIONEN','Det vigtigste fra din seneste udgave.','grid'],
     editor:['AI-redaktør','DEN REDAKTIONELLE LINJE','Bestem, hvad der er værd at fortælle — og hvorfor.','spark'],
@@ -52,6 +52,8 @@
       }
       if(!value.feeds.some(f=>f.aktiv!==false)) throw new Error('Behold mindst én aktiv kilde. Hele automatiseringen kan pauses i GitHub Actions.');
     } else if(key==='hjerner') {
+      if(value.modeller!==undefined&&(!Array.isArray(value.modeller)||value.modeller.some(m=>typeof m!=='string'||!allowedModel('omskriv',m)))) throw new Error('Ugyldig modelliste.');
+      if(value.modelkatalog!==undefined&&(!plain(value.modelkatalog)||Object.entries(value.modelkatalog).some(([n,p])=>!['DeepSeek','Gemini'].includes(n)||!plain(p)||!Array.isArray(p.modeller)||p.modeller.some(m=>typeof m!=='string'||!allowedModel('omskriv',m))))) throw new Error('Ugyldigt API-modelkatalog.');
       if(!plain(value.hjerner)) throw new Error('Dette er ikke en hjerner.json-fil.');
       for(const [name, step] of Object.entries(value.hjerner)) {
         if(['__proto__','constructor','prototype'].includes(name) || !plain(step)) throw new Error('Ugyldigt arbejdstrin.');
@@ -85,7 +87,7 @@
   function editorLabel() { const s=editorStatus().status; return s==='godkendt'?'AI-redaktør':s==='reserve'?'Reserve aktiv':s==='genbrugt'?'Tidligere udvalg':s?String(s):'Ikke målt'; }
   function statusRows() {
     const ed=editorStatus(), hs=brainStatus(), errors=sourceStatus().filter(k=>k.status==='fejl');
-    const entries=[['AI-redaktør',editorLabel(),ed.status==='godkendt'?'ok':'warn'],['Nyhedskilder',sourceStatus().length?(errors.length?errors.length+' med fejl':'Seneste hentning gennemført'):'Ingen måling',sourceStatus().length&&!errors.length?'ok':'warn'],['Tekstmodel',hs.udbyder==='ingen'?'Ingen tekstnøgle målt':hs.daglig_model||'Ikke målt',hs.udbyder&&hs.udbyder!=='ingen'?'ok':'warn'],['Billedgenerator',hs.billedmodel&&hs.billedmodel!=='ingen'?hs.billedmodel:'Ingen aktiv model målt',hs.billedmodel&&hs.billedmodel!=='ingen'?'ok':'warn']];
+    const entries=[['AI-redaktør',editorLabel(),ed.status==='godkendt'?'ok':'warn'],['Nyhedskilder',sourceStatus().length?(errors.length?errors.length+' med fejl':'Seneste hentning gennemført'):'Ingen måling',sourceStatus().length&&!errors.length?'ok':'warn'],['Tekstmodel',hs.udbyder==='ingen'?'Ingen tekstnøgle målt':modelLabel(hs.daglig_model)||'Ikke målt',hs.udbyder&&hs.udbyder!=='ingen'?'ok':'warn'],['Billedgenerator',hs.billedmodel&&hs.billedmodel!=='ingen'?hs.billedmodel:'Ingen aktiv model målt',hs.billedmodel&&hs.billedmodel!=='ingen'?'ok':'warn']];
     return entries.map(([name,label,type])=>`<div class="status-row"><span class="dot dot-${type}" aria-hidden="true"></span><div><strong>${esc(name)}</strong><small>${esc(label)}</small></div></div>`).join('');
   }
   function stories(items) {
@@ -103,7 +105,7 @@
   function editor() {
     const e=editorStatus(), calls=e.vaerktoejer||[];
     return `<div class="settings-grid"><section class="panel">${panelHead('Din redaktionelle linje','Det er denne tekst, forside-redaktøren arbejder efter.',badge('KAN REDIGERES','green'))}<div class="panel-body"><div class="field"><label for="editor-direction">Hvad skal redaktøren prioritere?</label><textarea class="prompt-editor" id="editor-direction" data-field="direction" rows="20" maxlength="10000"${state.drafts.retning===null?' disabled':''}>${esc(state.drafts.retning||'')}</textarea><small class="help"><span id="direction-count">${(state.drafts.retning||'').length}</span> / 10.000 tegn · Gemmes i opsaetning/redaktoer.md</small></div><div class="notice">Vær konkret om nyheder, du vil se mere og mindre af. Agenten vurderer stadig kilderne og samler omtaler af samme begivenhed.</div></div></section>
-    <div><section class="panel">${panelHead('Seneste redaktionsmøde',when(e.opdateret),badge(editorLabel(),e.status==='godkendt'?'green':'amber'))}<div class="panel-body"><p>${esc(e.forklaring||'Der er ikke noget redaktionsmøde i de tilgængelige data.')}</p><div class="split-summary"><div><strong>${fmt(e.modelkald)}</strong><span>modelkald</span></div><div><strong>${fmt(e.kildehentninger)}</strong><span>kilder læst</span></div></div><div class="status-row"><span class="stat-icon">${icon('cpu')}</span><div><strong>Redaktørens model</strong><small>${esc(e.model||brainStatus().daglig_model||'Ikke målt')}</small></div></div><small class="help">Modelvalgene under “Modeller & instrukser” styrer artikelarbejdet. Forside-redaktøren følger crawlerens DeepSeek-model.</small></div></section>
+    <div><section class="panel">${panelHead('Seneste redaktionsmøde',when(e.opdateret),badge(editorLabel(),e.status==='godkendt'?'green':'amber'))}<div class="panel-body"><p>${esc(e.forklaring||'Der er ikke noget redaktionsmøde i de tilgængelige data.')}</p><div class="split-summary"><div><strong>${fmt(e.modelkald)}</strong><span>modelkald</span></div><div><strong>${fmt(e.kildehentninger)}</strong><span>kilder læst</span></div></div><div class="status-row"><span class="stat-icon">${icon('cpu')}</span><div><strong>Redaktørens model</strong><small>${esc(modelLabel(e.model||brainStatus().daglig_model)||'Ikke målt')}</small></div></div><small class="help">Du kan ændre agentens præcise model under Modeller & instrukser → Vælg forsiden.</small></div></section>
     <section class="panel">${panelHead('Fra mødet',calls.length?'De seneste værktøjskald':'Ingen værktøjskald registreret')}<div class="panel-body">${calls.slice(-5).map(c=>`<div class="activity-row"><span class="dot ${c.fejl?'dot-warn':'dot-ok'}"></span><div><strong>${esc(c.vaerktoej==='laes_kilde'?'Læs kilde':c.vaerktoej==='find_kilder'?'Find kilder':c.vaerktoej)}</strong><p>${esc(c.fejl||'Gennemført')}</p></div></div>`).join('')}</div></section></div></div>`;
   }
   function sources() {
@@ -116,9 +118,30 @@
     if(!filtered.length) return '<div class="empty-state">Ingen kilder matcher. Prøv en anden søgning.</div>';
     return filtered.map(({f,i})=>{ const s=sourceStatus().find(s=>s.navn===f.navn), paused=f.aktiv===false; return `<article class="source-card${paused?' is-paused':''}"><span class="source-logo" aria-hidden="true">${esc(f.navn.split(/\s+/).map(w=>w[0]).slice(0,2).join(''))}</span><div class="source-info"><h3>${esc(f.navn)} ${badge(paused?'Pauset':s?.status==='fejl'?'Hentning fejlede':'Aktiv',paused?'neutral':s?.status==='fejl'?'amber':'green')}</h3><p>${esc(hostname(f.url))} <span>· ${f.format==='nyhedsoversigt'?'Nyhedsoversigt':'RSS / Atom'} · Op til ${esc(f.max||25)} kandidater</span></p>${s?.status==='fejl'?`<small class="source-error">${esc(s.fejl||'Ukendt kildefejl')}</small>`:`<small>${s?`${fmt(s.hentet)} hentet · ${fmt(s.i_listen)} i udgaven ved seneste måling`:'Ingen måling for denne kilde endnu'}</small>`}</div><div class="source-controls"><label class="toggle-row"><span class="sr-only">Aktivér ${esc(f.navn)}</span><input type="checkbox" data-source-toggle="${i}" role="switch"${paused?'':' checked'}><span class="toggle-track" aria-hidden="true"></span></label><button class="btn btn-secondary" data-edit-source="${i}">Redigér</button></div></article>`; }).join('');
   }
+  // Versionsnavn fra projektets konfiguration (10.09.2026).
+  // API-aliaset beholdes synligt og sendes uændret til udbyderen.
+  const MODEL_NAMES = {'deepseek-flash':'DeepSeek V4.1 Flash'};
+  const modelLabel = id => MODEL_NAMES[id] ? MODEL_NAMES[id]+' · '+id : id;
+  function modelDefault(name) {
+    const h=brainStatus();
+    return name==='forside_agent' ? (h.forside_standard||'deepseek-flash') : name==='billedgenerator' ? (h.billed_standard||'gemini-3.1-flash-lite-image') : h.daglig_model||'';
+  }
+  function reportedModel(name) {
+    return name==='forside_agent'?editorStatus().model:name==='billedgenerator'?brainStatus().billedmodel:brainStatus().hjerner?.[name]?.model;
+  }
+  function allowedModel(name,m) {
+    return /^(deepseek|gemini)[a-z0-9._-]*$/i.test(m) && (name!=='forside_agent'||m.startsWith('deepseek')) && (name!=='billedgenerator'||m.startsWith('gemini')&&m.includes('image'));
+  }
+  function providerCatalog(name) {
+    const local=state.drafts.hjerner?.modelkatalog?.[name],remote=state.snapshot.modelkatalog?.udbydere?.[name];
+    return local&&(!remote||!(Date.parse(remote.opdateret)>Date.parse(local.opdateret)))?local:remote||{};
+  }
+  function modelList(name) {
+    return [...new Set([...(state.drafts.hjerner?.modeller||[]),...['DeepSeek','Gemini'].flatMap(n=>providerCatalog(n).modeller||[]),...Object.values(state.drafts.hjerner?.hjerner||{}).map(s=>s.model),...Object.keys(STEP_NAMES).flatMap(n=>[modelDefault(n),reportedModel(n)])])].filter(m=>typeof m==='string'&&allowedModel(name,m)).sort();
+  }
   function models() {
-    const h=brainStatus(), steps=h.hjerner||{};
-    return `<div class="notice"><strong>Standard: ${esc(h.daglig_model||'Ikke målt')}</strong><p>Hvert trin følger standarden, medmindre du vælger noget andet. Vælg et trin for at ændre model eller instruktion. Nøglestatus gælder seneste crawlerkørsel.</p></div><div class="model-grid">${Object.entries(STEP_NAMES).filter(([n])=>steps[n]).map(([n,title])=>{const own=state.drafts.hjerner?.hjerner?.[n],s=steps[n];return `<button class="model-card" data-edit-model="${n}"${!state.drafts.hjerner?' disabled':''}><div class="model-card-top"><span class="stat-icon">${icon(n==='motiv'?'image':'cpu')}</span>${badge(own?.model||own?.prompt?'Tilpasset':'Standard',own?.model||own?.prompt?'green':'neutral')}</div><h2>${title}</h2><p>${esc(s.beskrivelse||'')}</p><div class="model-card-foot"><code>${esc(own?.model||h.daglig_model||s.model||'Standard')}</code><span aria-hidden="true">↗</span></div></button>`;}).join('')}</div>`;
+    const h=brainStatus();
+    return `<section class="panel"><div class="panel-body"><div class="inline-actions"><span class="badge badge-green">Automatisk opdatering hver dag</span><button class="btn btn-secondary" data-action="model-list">Administrér modelliste</button><a class="btn btn-secondary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/modeller.yml" target="_blank" rel="noopener">Se automatisk opdatering ↗</a></div><p>GitHub henter hver dag modellisterne fra DeepSeek og Gemini med de eksisterende hemmelige nøgler. Hent projektets ændringer med Pull i GitHub Desktop og genindlæs centralen. Nye modeller bliver valgbare; dine modelvalg ændres ikke automatisk.</p><small class="help">${['DeepSeek','Gemini'].map(n=>{const p=providerCatalog(n);return esc(n)+': '+(p.modeller?.length||0)+' modeller · '+esc(p.status||'Ikke hentet')+' · '+esc(when(p.opdateret));}).join(' · ')||'Modellisterne er endnu ikke hentet fra udbyderne.'}</small></div></section><div class="notice">“Valgt til næste kørsel” er din indstilling. “Senest rapporteret” er crawlerens status, ikke en garanti for, at alle kald lykkedes. Ved API-fejl kan crawleren bruge sin reserve.</div><div class="model-grid">${Object.entries(STEP_NAMES).map(([n,title])=>{const own=state.drafts.hjerner?.hjerner?.[n],s=h.hjerner?.[n]||{},m=own?.model||modelDefault(n);return `<button class="model-card" data-edit-model="${n}"${!state.drafts.hjerner?' disabled':''}><div class="model-card-top">${badge(m.startsWith('deepseek')?'DeepSeek':'Gemini', 'green')}${badge(own?.model?'Eget valg':'Standard')}</div><h2>${title}</h2><p>${esc(s.beskrivelse||(n==='forside_agent'?'Vælger og prioriterer historier på tværs af kilder.':'Tegner billeder ud fra motivbeskrivelsen.'))}</p><small>Valgt til næste kørsel</small><div class="model-card-foot"><div>${MODEL_NAMES[m]?`<strong>${esc(MODEL_NAMES[m])}</strong><br>`:''}<code>${esc(m||'Standard ikke rapporteret')}</code></div><span>Skift ↗</span></div><small>Senest rapporteret: ${esc(modelLabel(reportedModel(n))||'Ikke målt')}</small>${(m.startsWith('deepseek')&&h.deepseek_tilgaengelig===false||m.startsWith('gemini')&&h.gemini_tilgaengelig===false)?'<p class="source-error">API-nøgle manglede ved seneste måling.</p>':''}</button>`;}).join('')}</div>`;
   }
   function images() {
     const h=brainStatus(),a=articleStatus(),p=state.drafts.hjerner?.hjerner?.motiv?.prompt || h.hjerner?.motiv?.standard_prompt || '';
@@ -134,7 +157,7 @@
   }
   function operations() {
     const e=editorStatus(),errors=sourceStatus().filter(k=>k.status==='fejl');
-    return `<div class="settings-grid"><section class="panel">${panelHead('Sådan bliver dine ændringer udgivet','Tre trin fra beslutning til ny udgave.')}<div class="panel-body"><div class="activity-row"><span class="story-number">01</span><div><strong>Gem i projektmappen</strong><p>Tilslut AI NEWS med knappen til venstre. Gem ændringerne direkte i de eksisterende indstillingsfiler.</p></div></div><div class="activity-row"><span class="story-number">02</span><div><strong>Push med GitHub Desktop</strong><p>Gennemse ændringerne, lav et commit og push. Centralen hverken committer eller sender noget automatisk.</p></div></div><div class="activity-row"><span class="story-number">03</span><div><strong>Følg opdateringen</strong><p>Push starter den eksisterende crawler. Den kan også startes manuelt i GitHub Actions.</p><a class="btn btn-primary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/crawl.yml" target="_blank" rel="noopener">Åbn GitHub Actions ↗</a></div></div></div></section><section class="panel">${panelHead('Seneste drift','Dette er et øjebliksbillede, ikke en liveforbindelse.')}<div class="panel-body">${statusRows()}<div class="notice ${e.status==='reserve'||errors.length?'notice-warn':''}">${esc(e.forklaring||'Der er ingen yderligere status fra redaktionsmødet.')}</div><p class="help">Automatisk kørsel kl. 00.37 og hver time kl. 04.37–21.37 UTC samt ved push. Den aktuelle kørsel og log findes i GitHub.</p></div></section></div><section class="panel">${panelHead('Det videre arbejde','Dine eksisterende redaktionsværktøjer er bevaret.')}<div class="quick-grid"><a class="quick-action" href="_redaktion/kontrolpanel.html" target="_blank" rel="noopener">${icon('layers')}<span><strong>Opgaver, ønsker & historik</strong><small>Åbn de avancerede redaktionsværktøjer.</small></span><b>↗</b></a><a class="quick-action" href="https://github.com/ainyheder/AI-nyheder/issues" target="_blank" rel="noopener">${icon('signal')}<span><strong>Forslag fra gennemgangen</strong><small>Se projektets issues på GitHub.</small></span><b>↗</b></a></div></section>`;
+    return `<div class="settings-grid"><section class="panel">${panelHead('Sådan bliver dine ændringer udgivet','Tre trin fra beslutning til ny udgave.')}<div class="panel-body"><div class="activity-row"><span class="story-number">01</span><div><strong>Gem i projektmappen</strong><p>Tilslut AI NEWS med knappen til venstre. Gem ændringerne direkte i de eksisterende indstillingsfiler.</p></div></div><div class="activity-row"><span class="story-number">02</span><div><strong>Push med GitHub Desktop</strong><p>Gennemse ændringerne, lav et commit og push. Centralen hverken committer eller sender noget automatisk.</p></div></div><div class="activity-row"><span class="story-number">03</span><div><strong>Følg opdateringen</strong><p>Push starter den eksisterende crawler. Den kan også startes manuelt i GitHub Actions.</p><a class="btn btn-primary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/crawl.yml" target="_blank" rel="noopener">Åbn GitHub Actions ↗</a></div></div></div></section><section class="panel">${panelHead('Seneste drift','Dette er et øjebliksbillede, ikke en liveforbindelse.')}<div class="panel-body">${statusRows()}<div class="notice ${e.status==='reserve'||errors.length?'notice-warn':''}">${esc(e.forklaring||'Der er ingen yderligere status fra redaktionsmødet.')}</div><p class="help">Automatisk kørsel hver time hele døgnet, 37 minutter over timen, samt ved push. Den aktuelle kørsel og log findes i GitHub.</p></div></section></div><section class="panel">${panelHead('Det videre arbejde','Dine eksisterende redaktionsværktøjer er bevaret.')}<div class="quick-grid"><a class="quick-action" href="_redaktion/kontrolpanel.html" target="_blank" rel="noopener">${icon('layers')}<span><strong>Opgaver, ønsker & historik</strong><small>Åbn de avancerede redaktionsværktøjer.</small></span><b>↗</b></a><a class="quick-action" href="https://github.com/ainyheder/AI-nyheder/issues" target="_blank" rel="noopener">${icon('signal')}<span><strong>Forslag fra gennemgangen</strong><small>Se projektets issues på GitHub.</small></span><b>↗</b></a></div></section>`;
   }
   const renderers={overview,editor,sources,models,images,readers,operations};
   function render() {
@@ -207,8 +230,8 @@
   }
   function editModel(name) {
     if(!STEP_NAMES[name]||!state.drafts.hjerner) return;
-    const h=brainStatus().hjerner?.[name]||{},own=state.drafts.hjerner.hjerner[name]||{};
-    openDialog(STEP_NAMES[name],`<form id="model-form" data-step="${name}"><div class="field"><label for="step-model">Model</label><input id="step-model" name="model" value="${esc(own.model||'')}" placeholder="Standard: ${esc(brainStatus().daglig_model||h.model||'daglig model')}" list="known-models"><datalist id="known-models">${[...new Set([brainStatus().daglig_model,...Object.values(brainStatus().hjerner||{}).map(x=>x.model)])].filter(Boolean).map(m=>`<option value="${esc(m)}"></option>`).join('')}</datalist><small class="help">Lad feltet stå tomt for standarden. Crawleren understøtter DeepSeek og Gemini. Et modelnavn kræver adgang hos den pågældende udbyder.</small></div><div class="field"><label for="step-prompt">Instruktion</label><textarea id="step-prompt" name="prompt" rows="16">${esc(own.prompt||h.standard_prompt||'')}</textarea><small class="help">${name==='redaktoer'?'Dette trin kontrollerer den enkelte artikel. Forside-redaktørens retning ændres under AI-redaktør.':'Din egen instruktion erstatter standardinstruktionen for dette trin.'}</small></div><p class="form-error" id="model-error" role="alert"></p><div class="inline-actions"><button class="btn btn-primary" type="submit">Brug ændringer</button><button class="btn btn-secondary" type="button" data-reset-model="${name}">Gendan standard</button></div></form>`);
+    const h=brainStatus().hjerner?.[name]||{},own=state.drafts.hjerner.hjerner[name]||{},special=['forside_agent','billedgenerator'].includes(name);
+    openDialog(STEP_NAMES[name],`<form id="model-form" data-step="${name}"><div class="field"><label for="step-model">Vælg præcis model</label><select id="step-model" name="model"><option value="">Standard · ${esc(modelLabel(modelDefault(name)))}</option>${modelList(name).map(m=>`<option value="${esc(m)}"${own.model===m?' selected':''}>${esc(modelLabel(m))}</option>`).join('')}<option value="manual">Skriv et nyt model-ID …</option></select></div><div class="field" id="manual-model-field" hidden><label for="manual-model">Nyt model-ID fra udbyderen</label><input id="manual-model" name="manualModel" placeholder="Præcist API-navn"></div><p class="help">${name==='forside_agent'?'Forsideagenten bruger DeepSeek med værktøjskald.':name==='billedgenerator'?'Vælg en Gemini-model med billedgenerering (image).':'DeepSeek og Gemini er understøttet.'} Listen er ikke en garanti for adgang eller kvote på din konto.</p>${special?'':`<div class="field"><label for="step-prompt">Instruktion</label><textarea id="step-prompt" name="prompt" rows="16">${esc(own.prompt||h.standard_prompt||'')}</textarea></div>`}<p class="form-error" id="model-error" role="alert"></p><div class="inline-actions"><button class="btn btn-primary" type="submit">Brug ændringer</button><button class="btn btn-secondary" type="button" data-reset-model="${name}">Gendan standard</button></div></form>`);
   }
   function setOverride(name,fields) {
     const all=state.drafts.hjerner.hjerner,old=copy(all[name]||{});
@@ -224,6 +247,7 @@
     const target=event.target.closest('[data-action]');if(!target)return;
     try {
       switch(target.dataset.action) {
+        case 'model-list': if(!state.drafts.hjerner) break;openDialog('Din modelliste', `<form id="catalog-form"><p>Tilføj præcise API-navne, ét pr. linje. Manuelle modeller er ikke adgangskontrolleret. Udbydernes modeller og eksisterende valg bliver fortsat vist.</p><div class="field"><label for="catalog-models">Manuelt tilføjede modeller</label><textarea id="catalog-models" rows="12">${esc((state.drafts.hjerner.modeller||[]).join('\n'))}</textarea></div><p id="catalog-error" class="form-error" role="alert"></p><button class="btn btn-primary">Brug modellisten</button></form>`);break;
         case 'connect': await connect();break;
         case 'save': await saveChanges();break;
         case 'close-dialog': $('edit-dialog').close();break;
@@ -243,19 +267,27 @@
     if(event.target.dataset.field==='image-prompt'&&state.drafts.hjerner) {const existing=state.drafts.hjerner.hjerner.motiv||{};setOverride('motiv',{model:existing.model,prompt:event.target.value===brainStatus().hjerner?.motiv?.standard_prompt?'':event.target.value});}
   });
   document.addEventListener('change',event=>{
+    if(event.target.id==='step-model') $('manual-model-field').hidden=event.target.value!=='manual';
     const index=event.target.dataset.sourceToggle;if(index!==undefined) {state.drafts.feeds.feeds[Number(index)].aktiv=event.target.checked;changed();renderNav();$('source-list').innerHTML=sourceRows();}
   });
-  document.addEventListener('submit',event=>{
+  document.addEventListener('submit',async event=>{
     if(event.target.id==='source-form') {
       event.preventDefault();const f=event.target,elements=f.elements,index=f.dataset.index,candidate=copy(state.drafts.feeds);
       const row=index==='new'?{}:candidate.feeds[Number(index)];Object.assign(row,{navn:elements.navn.value.trim(),url:elements.url.value.trim(),max:Number(elements.max.value),format:elements.format.value,kategori:elements.kategori.value.trim(),kun_aktuel:elements.kun_aktuel.checked});
       if(index==='new')candidate.feeds.push(row);
       try {validateConfig('feeds',candidate);state.drafts.feeds=candidate;changed();$('edit-dialog').close();render();}catch(error){$('source-error').textContent=error.message;}
     }
+    if(event.target.id==='catalog-form') {
+      event.preventDefault();const models=[...new Set($('catalog-models').value.split(/\s+/).filter(Boolean))];
+      if(models.some(m=>!allowedModel('omskriv',m))) {$('catalog-error').textContent='Brug præcise DeepSeek- eller Gemini-modelnavne.';return;}
+      state.drafts.hjerner.modeller=models;changed();$('edit-dialog').close();render();
+    }
     if(event.target.id==='model-form') {
-      event.preventDefault();const f=event.target,name=f.dataset.step,model=f.elements.model.value.trim(),prompt=f.elements.prompt.value;
+      event.preventDefault();const f=event.target,name=f.dataset.step,model=(f.elements.model.value==='manual'?f.elements.manualModel.value:f.elements.model.value).trim(),prompt=f.elements.prompt?.value||'';
       const original=state.drafts.hjerner.hjerner[name]?.model;
-      if(model&&model!==original&&!/^(deepseek|gemini)[a-z0-9._-]*$/i.test(model)) {$('model-error').textContent='Vælg et DeepSeek- eller Gemini-modelnavn, som din API-konto har adgang til.';return;}
+      if(model&&model!==original&&!allowedModel(name,model)) {$('model-error').textContent='Vælg et DeepSeek- eller Gemini-modelnavn, som din API-konto har adgang til.';return;}
+      if(f.elements.model.value==='manual'&&!model) {$('model-error').textContent='Skriv et model-ID.';return;}
+      if(model) state.drafts.hjerner.modeller=[...new Set([...(state.drafts.hjerner.modeller||[]),model])];
       setOverride(name,{model,prompt:prompt===brainStatus().hjerner?.[name]?.standard_prompt?'':prompt});$('edit-dialog').close();render();
     }
   });
@@ -274,5 +306,5 @@
   const hash=location.hash.slice(1);if(VIEWS[hash])state.view=hash;
   render();
   if(!window.KOMMANDO_DATA)notify('Statusfilen kunne ikke læses. Tilslut projektmappen for at redigere indstillinger, eller hent projektets seneste opdatering.','error');
-  window.Kommando={canonical,validateConfig,state,render,navigate,connectDirectory,saveChanges,dirtyKeys,setOverride};
+  window.Kommando={canonical,validateConfig,state,render,navigate,connectDirectory,saveChanges,dirtyKeys,setOverride,modelList};
 })();

@@ -83,7 +83,7 @@ def _artikelstatus(data, root):
 
 
 def _hjernerstatus(data):
-    status = _felter(data, ("opdateret", "daglig_model", "udbyder", "billedmodel",
+    status = _felter(data, ("opdateret", "daglig_model", "udbyder", "billedmodel", "billed_standard", "forside_standard",
                            "gemini_tilgaengelig", "deepseek_tilgaengelig"))
     hjerner = data.get("hjerner")
     status["hjerner"] = {
@@ -191,6 +191,7 @@ def skriv_kommando_data(root):
         "artikler": _artikelstatus(artikler, root),
         "redaktoer_status": _redaktoerstatus(redaktoer),
         "hjerner_status": _hjernerstatus(hjerne_status),
+        "modelkatalog": laes("modelkatalog", "data/modeller.json", {}),
         "kilder": _kildestatus(kilder),
         "laesertal": _laeserstatus(laesertal),
     })

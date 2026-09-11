@@ -184,3 +184,30 @@ Opgradering af ældre artikelsider kan kontrolleres uden at skrive:
 ```bash
 python3 opsaetning/opgrader-gamle-artikelsider.py --toerloeb
 ```
+
+### Modelvalg og modellister
+Under **Modeller & instrukser** viser hvert af de 16 trin sit præcise model-ID,
+valget til næste kørsel og den senest rapporterede model. Forsideagenten kan
+vælge DeepSeek; billedgeneratoren kan vælge Gemini-billedmodeller.
+Vælg i menuen eller skriv et nyt API-ID. Manuelle modeller gemmes i feltet
+`modeller` i `_redaktion/hjerner.json`; de er ikke adgangskontrolleret.
+
+Modellisterne opdateres automatisk hver dag kl. 02.17 UTC af workflowen
+**Opdatér modellister**, samt ved ændring af selve workflowen eller hentekoden.
+Den bruger de eksisterende GitHub Secrets, henter alle sider fra API'erne og
+bevarer sidste gode liste ved fejl. Den starter ingen artikelgenerering eller
+opslag. Pull i GitHub Desktop og genindlæs centralen for at se nye modeller.
+Dine modelvalg ændres aldrig af en katalogopdatering. Centralen beder ikke om
+API-nøgler og har ingen adgang til at skrive til GitHub.
+
+### Adgang til kommandocentralen
+`Indstillinger.html` er et lokalt værktøj. Det kan kun skrive til en mappe,
+som brugeren selv har givet browseren adgang til. Udgivelse kræver stadig
+commit og push med skriverettigheder til repository'et.
+
+`_config.yml` udelukker centralen, dens data, opsætning og interne statusfiler
+fra GitHub Pages' almindelige Jekyll-udgivelse. Det er ikke adgangskontrol for
+selve GitHub-repository'et: er repository'et offentligt, kan filerne og deres
+historik stadig læses dér. Fortrolige indstillinger kræver privat opbevaring.
+API-nøgler skal fortsat kun ligge i GitHub Secrets. Ved skift til en anden
+udgivelsesmetode skal den samme udelukkelse bevares i byggetrinnet.

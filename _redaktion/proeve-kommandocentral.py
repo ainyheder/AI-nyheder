@@ -33,7 +33,7 @@ class KommandoDataProeve(unittest.TestCase):
 
     def test_tom_mappe_viser_manglende_data_uden_falsk_succes(self):
         data, _ = self.pakke()
-        self.assertEqual(len(data["fejl"]), 8)
+        self.assertEqual(len(data["fejl"]), 9)
         self.assertFalse(any(data["tilgaengelige"].values()))
         self.assertEqual(data["feeds_fil"], {"feeds": []})
         self.assertEqual(data["hjerner_fil"], {"hjerner": {}})
