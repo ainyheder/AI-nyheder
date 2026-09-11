@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-09-11T13:30:47.021455+00:00",
-  "antal": 227,
+  "opdateret": "2026-09-11T13:45:19.657064+00:00",
+  "antal": 226,
   "artikler": [
     {
       "titel": "Suno releases its first AI music model made with record industry help",
@@ -447,23 +447,7 @@
       "eget_foerst_set": "2026-09-11T13:27:19.201602+00:00",
       "rubrik": "Anthropic stopper forsøg på biovåben med Claude",
       "resume_da": "Anthropic har blokeret flere forsøg på at misbruge deres AI Claude til forskning, der kan føre til biovåben.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Brugere har fundet veje uden om Claudes værn til biovåbenforskning, hvilket viser hvor svært det er at skille farlig og legitim biologi.",
-        "forbehold": "Artiklen er bag betalingsmur; kun resuméet er tilgængeligt, så omfang og metode kendes ikke.",
-        "emne": "sikkerhed"
-      },
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Hvad skete der?",
@@ -482,14 +466,13 @@
           "tekst": "Du kan komme til at mærke konsekvenserne, hvis AI i fremtiden bliver brugt til at skabe biologiske trusler. Selvom det stadig er svært at omsætte teoretiske biovåben til virkelighed på grund af praktiske forhindringer og ressourcekrav, er udviklingen med til at øge presset for at regulere AI. Anthropic håber, at offentliggørelsen af eksemplerne kan starte en samtale i AI-branchen og med regeringer om, hvordan man bedst bekæmper de nye biologiske risici. Myndigheder og virksomheder kan blive nødt til at stramme overvågningen af, hvordan AI-modeller bruges, især inden for følsomme områder som bioteknologi."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "7",
           "label": "kinesiske laboratorier forsøgte at kopiere Anthropics teknologi"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Anthropic har blokeret flere forsøg på at bruge Claude til potentielt farlig biologisk forskning.",
         "Fem eksempler på omgåelse af sikkerhedsforanstaltninger er offentliggjort.",
@@ -507,7 +490,113 @@
         "Eksperter frygter AI-skabte biovåben og kræver regulering."
       ],
       "billedmotiv": "En laboratoriepetriskål med et håndskrevet STOP-skilt tapet på låget, ved siden af en lille glasflaske med en sprængt gummiprop",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Brugere har fundet veje uden om Claudes værn til biovåbenforskning, hvilket viser hvor svært det er at skille farlig og legitim biologi.",
+        "forbehold": "Artiklen er bag betalingsmur; kun resuméet er tilgængeligt, så omfang og metode kendes ikke.",
+        "emne": "sikkerhed"
+      },
+      "prio": 5,
+      "andre": [
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+          "rubrik": "Anthropic jagter misbrug af AI i ny rapport",
+          "resume_da": "Rapporten ser på, hvordan nogen bruger AI-modeller i strid med reglerne. Anthropic vil både opdage og stoppe det.",
+          "foerst_set": "2026-09-11T13:30:47.021455+00:00"
+        }
+      ],
       "side": "artikel/e4ed798161e112b3.html"
+    },
+    {
+      "titel": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+      "resume": "OpenAI's announcement Tuesday that it has solved one of mathematics' legendary Millennium Prize problems should have been a moment of triumph. The result is both an undeniable achievement and a striking demonstration of just how rapidly AI is transforming mathematics. But before it was even formally announced, the breakthrough had been complicated by the unusual […]",
+      "dato": "2026-09-09T17:16:34-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
+      "resume_da": "OpenAI siger, at dets AI løste det legendariske Navier-Stokes-problem på 88 timer. Men metoden skaber vrede i forskningsverdenen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI siger, at selskabets AI har løst et af matematikkens Millenniumsproblemer, men resultatet er omgærdet af strid om metoden.",
+        "forbehold": "Andre forskere betvivler resultatet, og uafhængig verifikation mangler fortsat.",
+        "emne": "openai"
+      },
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Hvad problemet er",
+          "tekst": "Navier-Stokes handler om, hvordan væsker og gasser bevæger sig. Det er et af matematikkens mest berømte uløste problemer og har stået ubesvaret i næsten 90 år. Der er **1 million dollar** i pris til den, der finder løsningen. OpenAIs AI brugte kun **88 timer** på at finde et svar, men om svaret er korrekt, er endnu uvist."
+        },
+        {
+          "overskrift": "Sådan blev det løst",
+          "tekst": "OpenAI satte cirka **10.000 AI-agenter** i gang på samme tid. De kørte på en intern model, som endnu ikke er udgivet. Ifølge OpenAI var det en hurtig og meget dyr affære, der løb op i **millioner af dollars**. Alligevel siger firmaet, at det ikke vil kræve pengeprisen. Målet var kun at vise, hvor stærk modellen er."
+        },
+        {
+          "overskrift": "Beskyldninger om snyd",
+          "tekst": "Dagen før offentliggørelsen udgav en professor fra New York University et resultat om et beslægtet problem. Han undrede sig over, om OpenAI havde set hans arbejde. Ifølge ham svarede en OpenAI-forsker truende, da han ville gå offentligt med sagen. OpenAI nægter pure at have brugt hans data, men kan ikke udelukke en indirekte påvirkning."
+        },
+        {
+          "overskrift": "Frygt i faget",
+          "tekst": "Matematikere arbejder normalt åbent og deler idéer i tillid til, at ingen stjæler dem. Den slags konkurrence, OpenAI nu beskyldes for, hører sjældent til i faget. Flere forskere frygter, at det kan skade den tillid, hele matematikken bygger på. OpenAI har afvist flere af beskyldningerne, men har ikke svaret på dem alle."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "88 timer",
+          "label": "så lang tid tog AI'en ifølge OpenAI"
+        },
+        {
+          "tal": "10.000",
+          "label": "AI-agenter arbejdede samtidig"
+        },
+        {
+          "tal": "1 million dollar",
+          "label": "pris til den, der løser problemet"
+        }
+      ],
+      "detaljer": [
+        "Navier-Stokes er et matematisk problem om væskers bevægelse, uløst i næsten 90 år.",
+        "OpenAI brugte en endnu ikke udgivet model til at finde løsningen.",
+        "Indsatsen kostede millioner af dollars ifølge OpenAI selv.",
+        "Firmaet vil ikke kræve den milliondyre pris og siger, målet var at vise modellens styrke.",
+        "OpenAI begyndte først arbejdet, efter at have set rygter på Twitter om andres fremskridt.",
+        "En professor beskylder OpenAI for at have brugt hans data og for at svare truende.",
+        "OpenAI afviser at have brugt specifikke brugerdata, men kan ikke udelukke indirekte påvirkning."
+      ],
+      "betydning": "Du kan fremover se AI blive brugt til at løse selv de sværeste matematiske gåder, men du kan også opleve mere uro om, hvem der egentlig har retten til gennembruddet.",
+      "pointer": [
+        "OpenAI hævder at have løst 90-årigt matematikproblem.",
+        "AI'en brugte 88 timer og 10.000 agenter.",
+        "Beskyldninger om snyd og trusler i forskningsverdenen.",
+        "OpenAI nægter at have brugt andres data."
+      ],
+      "side": "artikel/2ce844f1d2cad0d3.html"
     },
     {
       "titel": "Slack can now vibe-code interactive charts and reports inside chats",
@@ -937,6 +1026,15 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+          "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
+          "resume_da": "OpenAI præsenterer GPT-6 Astra som sin mest avancerede AI-model til virksomheder med bedre ræsonnement, computerbrug og skrive- og designvurdering.",
+          "foerst_set": "2026-09-09T23:28:16.094724+00:00"
+        }
+      ],
       "detaljer": [
         "Produktet hedder ChatGPT for Financial Services.",
         "OpenAI står bag lanceringen.",
@@ -969,15 +1067,6 @@
         "emne": "openai"
       },
       "prio": 6,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-          "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
-          "resume_da": "OpenAI præsenterer GPT-6 Astra som sin mest avancerede AI-model til virksomheder med bedre ræsonnement, computerbrug og skrive- og designvurdering.",
-          "foerst_set": "2026-09-09T23:28:16.094724+00:00"
-        }
-      ],
       "side": "artikel/3f77446f0e44a8a2.html"
     },
     {
@@ -1549,13 +1638,6 @@
           "rubrik": "Apple beviser dine billeder ikke er lavet af AI",
           "resume_da": "Med den nye Reference Image-funktion kan du se, om et foto er redigeret eller skabt af AI. Det skulle give tryghed i en tid med falske billeder.",
           "foerst_set": "2026-09-09T21:06:39.434672+00:00"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
-          "rubrik": "Apple viser foldbar iPhone Duo frem",
-          "resume_da": "Det er Apples første foldbare telefon. Firmaet viste den frem på sit efterårsevent sammen med et nyt Apple Watch.",
-          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
         }
       ],
       "detaljer": [
@@ -1864,6 +1946,15 @@
         "emne": "apple"
       },
       "prio": 5,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
+          "rubrik": "Apple Watch lytter med – og det vænner vi os til",
+          "resume_da": "De nye ure kan skrive, hvad der lige blev sagt, og opsummere samtaler omkring dig. Apple gemmer ikke lyden, men spørgsmålet om samtykke står åbent.",
+          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
+        }
+      ],
       "side": "artikel/0a721c2e70b7f85e.html"
     },
     {
@@ -3294,35 +3385,6 @@
       "prio": 4
     },
     {
-      "titel": "Detecting and countering misuse of AI: September 2026",
-      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "resume": "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a... Comments URL: https://news.ycombinator.com/item?id=49647300 Points: 150 # Comments: 217",
-      "dato": "2026-09-10T17:23:42+00:00",
-      "kilde": "Hacker News: AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-11T13:30:47.021455+00:00",
-      "eget_foerst_set": "2026-09-11T13:30:47.021455+00:00",
-      "rubrik": "Anthropic jagter misbrug af AI i ny rapport",
-      "resume_da": "Rapporten ser på, hvordan nogen bruger AI-modeller i strid med reglerne. Anthropic vil både opdage og stoppe det.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropics rapport dokumenterer konkret, hvordan modeller misbruges i strid med reglerne, og hvordan firmaet vil opdage det.",
-        "forbehold": "Rapporten er udarbejdet af Anthropic selv om egne modeller.",
-        "emne": "sikkerhed"
-      },
-      "kat_ai": true,
-      "prio": 4
-    },
-    {
       "titel": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
       "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "resume": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
@@ -3527,13 +3589,6 @@
           "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
           "resume_da": "OpenAI hævder at have løst 90 år gammelt matematisk problem, men forsker beskylder dem for at bruge hans data.",
           "foerst_set": "2026-09-08T21:21:14.645089+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-          "rubrik": "OpenAI's matematiske gennembrud volder hovedbrud",
-          "resume_da": "OpenAI løser berømt matematikproblem på 88 timer, men anklages for at have snydt og chikaneret rivaler.",
-          "foerst_set": "2026-09-09T23:28:16.094724+00:00"
         },
         {
           "kilde": "The Verge AI",
@@ -3854,35 +3909,6 @@
       },
       "prio": 4,
       "navngivet": true
-    },
-    {
-      "titel": "Apple Watch’s new AI features are normalizing the idea that technology is always listening",
-      "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-      "resume": "Apple says its new watches won’t save raw audio, but features that can transcribe recent speech and summarize ambient conversations raise new questions about consent, privacy, and how people behave when they know they could always be recorded.",
-      "dato": "2026-09-09T20:24:48+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-09T21:06:39.434672+00:00",
-      "eget_foerst_set": "2026-09-09T21:06:39.434672+00:00",
-      "rubrik": "Apple Watch lytter med – og det vænner vi os til",
-      "resume_da": "De nye ure kan skrive, hvad der lige blev sagt, og opsummere samtaler omkring dig. Apple gemmer ikke lyden, men spørgsmålet om samtykke står åbent.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Apple Watch kan transskribere og opsummere samtaler omkring dig, hvilket rejser spørgsmål om samtykke, selv om Apple ikke gemmer rå lyd.",
-        "forbehold": "Apple har ikke svaret på de rejste privatlivsspørgsmål i materialet.",
-        "emne": "apple"
-      },
-      "prio": 4
     },
     {
       "titel": "Apple’s revamped Health app will calculate your ‘health age’ and readiness score",
@@ -4980,7 +5006,16 @@
         "forbehold": "Apple hævder brugen af AI i produktionen; ingen uafhængig dokumentation af effekten.",
         "emne": "apple"
       },
-      "prio": 4
+      "prio": 4,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
+          "rubrik": "Apple viser foldbare iPhone Duo og ny Watch",
+          "resume_da": "Den foldbare telefon var det store trækpunkt. Uret lytter nu hele tiden, oplyser Apple.",
+          "foerst_set": "2026-09-09T21:06:39.434672+00:00"
+        }
+      ]
     },
     {
       "titel": "From State Synchronization to Cognitive Self-Evolution: An Operational Architecture for Cognitive Digital Twins",
@@ -5507,8 +5542,8 @@
         {
           "kilde": "OpenAI Blog",
           "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-          "rubrik": "Paul Christiano skal sikre OpenAI's AI",
-          "resume_da": "Han har forsket i at få AI til at følge menneskelige værdier. Nu sidder han i OpenAI Foundations sikkerhedsudvalg.",
+          "rubrik": "Paul Christiano kommer med i OpenAI Foundations bestyrelse",
+          "resume_da": "Han skal også sidde i udvalget for sikkerhed. Han er kendt for arbejde med AI-sikkerhed.",
           "foerst_set": "2026-09-09T17:56:17.353477+00:00"
         }
       ]
@@ -7838,6 +7873,36 @@
       "side": "artikel/8455d4164fcecab9.html"
     },
     {
+      "titel": "Shipt becomes the latest delivery app with an AI shopping assistant",
+      "link": "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
+      "resume": "Users can ask the assistant to do things like \"Create a cart for my Saturday tailgate for 25 people and include some brunch items,\" or \"Build a cart for easy school lunches and after-school snacks,\" Shipt says.",
+      "dato": "2026-09-09T14:51:45+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "Shipt får AI-hjælp til dine indkøb",
+      "resume_da": "Nu kan du bede appen om at sammensætte en kurv til weekendens fest eller sunde skoleluncher. AI'en fylder selv indkøbslisten med præcis det, du mangler.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Shipt får AI-assistent til indkøbskurve; funktionel opdatering, men ikke nyskabende og kun relevant i USA.",
+        "forbehold": "Ingen oplysninger om kvalitet, kontrol eller dansk tilgængelighed.",
+        "emne": "shipt"
+      },
+      "prio": 2,
+      "navngivet": true
+    },
+    {
       "titel": "Corporate Language Model (CLM): Transforming Tacit and Fragmented Enterprise Knowledge into a Sovereign, Auditable, and Executable Corporate Intelligence Layer",
       "link": "https://arxiv.org/abs/2609.04377",
       "resume": "Enterprise AI deployments fail not from model inadequacy, but because organizations lack a structured substrate encoding how they decide, negotiate, and execute. Generic LLMs carry no firm-specific ontological priors; RAG remains brittle, with no path to executable action; static playbooks encode logic but cannot reason or adapt. This demands an architecture treating tacit-knowledge capture,…",
@@ -7952,36 +8017,6 @@
         "emne": "agentic-laboratorier"
       },
       "prio": 3
-    },
-    {
-      "titel": "Shipt becomes the latest delivery app with an AI shopping assistant",
-      "link": "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
-      "resume": "Users can ask the assistant to do things like \"Create a cart for my Saturday tailgate for 25 people and include some brunch items,\" or \"Build a cart for easy school lunches and after-school snacks,\" Shipt says.",
-      "dato": "2026-09-09T14:51:45+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "Shipt får AI-hjælp til dine indkøb",
-      "resume_da": "Nu kan du bede appen om at sammensætte en kurv til weekendens fest eller sunde skoleluncher. AI'en fylder selv indkøbslisten med præcis det, du mangler.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Shipt får AI-assistent til indkøbskurve; funktionel opdatering, men ikke nyskabende og kun relevant i USA.",
-        "forbehold": "Ingen oplysninger om kvalitet, kontrol eller dansk tilgængelighed.",
-        "emne": "shipt"
-      },
-      "prio": 2,
-      "navngivet": true
     },
     {
       "titel": "GPT-6 Astra: A new generation of intelligence",
@@ -12675,7 +12710,7 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-11T13:30:47.021455+00:00",
+    "beregnet": "2026-09-11T13:45:19.657064+00:00",
     "udvalgte": [
       "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "https://openai.com/index/introducing-gpt-live-1-in-the-api",
@@ -12691,6 +12726,7 @@
       "https://openai.com/index/navier-stokes-solution",
       "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
       "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
       "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
       "https://openai.com/index/put-data-to-work",
@@ -12738,7 +12774,6 @@
       "https://arxiv.org/abs/2609.09565",
       "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
       "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-      "https://www.anthropic.com/threat-intelligence-report-september-2026",
       "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "https://arxiv.org/abs/2609.05576",
       "https://arxiv.org/abs/2609.05663",
@@ -12749,7 +12784,6 @@
       "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
       "https://arxiv.org/abs/2609.09578",
       "https://arxiv.org/abs/2609.09589",
-      "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
       "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
       "https://openai.com/index/teen-development-research-grants",
       "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
@@ -12825,11 +12859,11 @@
       "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
       "https://openai.com/index/ai-policy-window",
       "https://techcrunch.com/2026/09/04/googles-gemini-spark-can-now-manage-your-google-photos-library/",
+      "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
       "https://arxiv.org/abs/2609.04377",
       "https://arxiv.org/abs/2609.04493",
       "https://arxiv.org/abs/2609.04523",
       "https://arxiv.org/abs/2609.04564",
-      "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
       "https://openai.com/index/gpt-6-astra",
       "https://arxiv.org/abs/2609.03546",
       "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
@@ -12907,6 +12941,6 @@
       "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
       "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/"
     ],
-    "ai_vurderet": 227
+    "ai_vurderet": 226
   }
 }
