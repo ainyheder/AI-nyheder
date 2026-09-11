@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T09:04:00.367999+00:00",
- "artikler_i_alt": 231,
+ "opdateret": "2026-09-11T13:27:19.201602+00:00",
+ "artikler_i_alt": 226,
  "kilder": [
   {
    "navn": "TechCrunch AI",
@@ -248,9 +248,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
+   "i_listen": 19,
    "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
+     "dato": "",
+     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
     {
      "rubrik": "Matematiker kræver svar fra OpenAI",
      "dato": "",
@@ -268,15 +277,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Matematiker beskylder OpenAI for at stjæle hans arbejde"
-    },
-    {
-     "rubrik": "Apple forklarer, hvordan lytning beskytter dig",
-     "dato": "",
-     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
-     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
-     "side": "",
-     "hvor": "under",
-     "under": "Apples iPhone 18 Pro skal modbevise AI-billeder"
     },
     {
      "rubrik": "OpenAI og matematikprofessor i strid om milliard-løsning",
@@ -351,15 +351,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
-     "dato": "2026-09-10T11:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-     "side": "artikel/bdd2b8a250a419ab.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Universal Music laver AI-musik med ElevenLabs",
      "dato": "2026-09-10T11:38:19",
      "foerst_set": "2026-09-10T17:49:16",
@@ -392,6 +383,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-09T21:06:39",
      "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
      "side": "artikel/8c5653d85b3831c0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple: Din lyd forlader aldrig uret",
+     "dato": "2026-09-09T16:44:43",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+     "side": "artikel/0a721c2e70b7f85e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -492,6 +492,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI's egne AI-agenter løb løbsk på tysk wiki"
     },
     {
+     "rubrik": "Claude brugere fandt vej udenom sikkerhed",
+     "dato": "2026-09-11T13:02:35",
+     "foerst_set": "2026-09-11T13:27:19",
+     "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Frygt for at Googles køb af Spirit-data",
      "dato": "2026-09-10T18:14:14",
      "foerst_set": "2026-09-10T21:07:39",
@@ -587,15 +596,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-03T17:59:19",
      "link": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
      "side": "artikel/b93b47d678dafa7c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia køber Hugging Face for 13 milliarder dollar",
-     "dato": "2026-09-03T13:34:13",
-     "foerst_set": "2026-09-03T13:49:00",
-     "link": "https://arstechnica.com/ai/2026/09/nvidia-buys-hugging-face-the-github-of-ai-for-13-billion/",
-     "side": "artikel/e205570bf462cb32.html",
      "hvor": "forside",
      "under": ""
     }
@@ -740,7 +740,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "Paul Christiano kommer i OpenAI Foundations bestyrelse",
+     "rubrik": "Paul Christiano får plads i OpenAI Fondens bestyrelse",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17",
      "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -1144,7 +1144,7 @@ window.KILDER_STATUS = {
    "status": "fejl",
    "fejl": "HTTPError: HTTP Error 502: Bad Gateway",
    "hentet": 0,
-   "i_listen": 10,
+   "i_listen": 9,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1243,15 +1243,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-04T20:58:21",
      "link": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
      "side": "artikel/84764afd93b992c9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles AI Mode finder dyrere varer end søgning",
-     "dato": "2026-09-04T11:59:15",
-     "foerst_set": "2026-09-04T17:44:14",
-     "link": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-     "side": "artikel/afa4fa3d4fb9279e.html",
      "hvor": "forside",
      "under": ""
     }
