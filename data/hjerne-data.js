@@ -1,6 +1,6 @@
 window.HJERNE_STATUS = {
- "opdateret": "2026-09-11T13:27:18.259937+00:00",
- "daglig_model": "deepseek-v4-flash",
+ "opdateret": "2026-09-11T13:30:43.375890+00:00",
+ "daglig_model": "deepseek-flash",
  "udbyder": "deepseek",
  "billedmodel": "gemini-3.1-flash-lite-image",
  "gemini_tilgaengelig": true,
@@ -8,7 +8,7 @@ window.HJERNE_STATUS = {
  "hjerner": {
   "omskriv": {
    "beskrivelse": "Skriver rubrik og resumé på dansk for hver ny artikel",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -17,7 +17,7 @@ window.HJERNE_STATUS = {
   },
   "kategori": {
    "beskrivelse": "Vurderer nyhedsværdi, betydning, brugbarhed, dokumentation og dansk relevans",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -26,7 +26,7 @@ window.HJERNE_STATUS = {
   },
   "dublet": {
    "beskrivelse": "Finder artikler fra flere medier om samme begivenhed",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -35,7 +35,7 @@ window.HJERNE_STATUS = {
   },
   "brief": {
    "beskrivelse": "Skriver den fulde danske genfortælling af en artikel",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -44,7 +44,7 @@ window.HJERNE_STATUS = {
   },
   "redaktoer": {
    "beskrivelse": "Læser genfortællingen igennem og kræver omskrivning ved fejl",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -53,7 +53,7 @@ window.HJERNE_STATUS = {
   },
   "stram": {
    "beskrivelse": "Strammer for lange 'Hvad betyder det for dig'-tekster",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -62,7 +62,7 @@ window.HJERNE_STATUS = {
   },
   "navngiv": {
    "beskrivelse": "Sætter navne på gamle, anonyme overskrifter",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -71,7 +71,7 @@ window.HJERNE_STATUS = {
   },
   "motiv": {
    "beskrivelse": "Finder billedmotivet til artikelillustrationerne",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": true,
@@ -80,7 +80,7 @@ window.HJERNE_STATUS = {
   },
   "kartotek": {
    "beskrivelse": "Skriver dagens prompt til prompt-kartoteket",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -89,7 +89,7 @@ window.HJERNE_STATUS = {
   },
   "quiz": {
    "beskrivelse": "Laver ugens nyhedsquiz",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -98,7 +98,7 @@ window.HJERNE_STATUS = {
   },
   "dagens_overblik": {
    "beskrivelse": "Skriver de fem punkter i Dagens overblik på forsiden",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -107,7 +107,7 @@ window.HJERNE_STATUS = {
   },
   "ugens_overblik": {
    "beskrivelse": "Skriver ugens digest og nyhedsbrevet",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -116,7 +116,7 @@ window.HJERNE_STATUS = {
   },
   "youtube": {
    "beskrivelse": "Opsummerer YouTube-videoer på dansk med tidsstempler",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
@@ -125,7 +125,7 @@ window.HJERNE_STATUS = {
   },
   "opslag": {
    "beskrivelse": "Skriver opslag til de sociale platforme",
-   "model": "deepseek-v4-flash",
+   "model": "deepseek-flash",
    "udbyder": "deepseek",
    "egen_model": false,
    "egen_prompt": false,
