@@ -53,6 +53,7 @@ jobs:
           python3 _redaktion/proeve-nyhedskilder.py
           python3 _redaktion/proeve-kommandocentral.py
           python3 _redaktion/proeve-modelkatalog.py
+          python3 _redaktion/proeve-flux.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:
@@ -69,6 +70,7 @@ jobs:
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
           LINKEDIN_TOKEN: ${{ secrets.LINKEDIN_TOKEN }}
           # Læsertal fra Cloudflare Web Analytics til den natlige gennemgang
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # Den natlige gennemgang åbner et issue med sine forslag

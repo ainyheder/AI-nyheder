@@ -79,6 +79,7 @@ MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 
 # --- AI-billeder til tophistorierne (kræver GEMINI_API_KEY + betaling slået til) ---
+FLUX_MODEL = "@cf/black-forest-labs/flux-2-klein-4b"
 BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
 BILLED_MAPPE = ROOT / "data" / "img"
@@ -380,6 +381,8 @@ def hjerne_prompt(navn: str, standard: str) -> str:
 
 def special_model(navn, standard, prefix):
     model = hjerne_model(navn)
+    if navn == "billedgenerator" and model == FLUX_MODEL:
+        return model
     return model if model and model.startswith(prefix) and (navn != "billedgenerator" or "image" in model) else standard
 
 
@@ -672,8 +675,9 @@ def _skriv_hjerne_status() -> None:
         "opdateret": datetime.now(timezone.utc).isoformat(),
         "daglig_model": daglig,
         "udbyder": UDBYDER or "ingen",
-        "billedmodel": special_model("billedgenerator", BILLED_MODEL, "gemini") if GEMINI_KEY else "ingen",
+        "billedmodel": special_model("billedgenerator", BILLED_MODEL, "gemini"),
         "billed_standard": BILLED_MODEL,
+        "cloudflare_tilgaengelig": all(cloudflare_billedadgang()),
         "forside_standard": DEEPSEEK_MODEL,
         "gemini_tilgaengelig": bool(GEMINI_KEY),
         "deepseek_tilgaengelig": bool(DEEPSEEK_KEY),
@@ -2415,14 +2419,42 @@ def _billed_fejltekst(f: Exception) -> str:
     return f"{type(f).__name__}: {f}"[:300]
 
 
+def cloudflare_billedadgang():
+    token = (os.environ.get("CLOUDFLARE_AI_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN", "")).strip()
+    konto = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    return token, konto
+
+
+def lav_flux_billede(prompt):
+    """Cloudflare Klein kræver multipart, også ved ren tekst-til-billede."""
+    import base64
+    import uuid
+    token, konto = cloudflare_billedadgang()
+    if not token or not re.fullmatch(r"[a-fA-F0-9]{32}", konto):
+        raise ValueError("Cloudflare AI-token eller konto-id mangler/er ugyldigt")
+    boundary = "ai-news-" + uuid.uuid4().hex
+    fields = {"prompt": prompt, "width": "1024", "height": "576"}
+    body = "".join(f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n' for k, v in fields.items()) + f"--{boundary}--\r\n"
+    response = json.loads(hent_url(
+        f"https://api.cloudflare.com/client/v4/accounts/{konto}/ai/run/{FLUX_MODEL}",
+        data=body.encode("utf-8"), headers={"Authorization": "Bearer " + token,
+        "Content-Type": "multipart/form-data; boundary=" + boundary}))
+    if response.get("success") is False:
+        raise ValueError("Cloudflare afviste billedkaldet; kontrollér Workers AI-adgang og kvote")
+    result = response.get("result", response)
+    if not isinstance(result, dict) or not result.get("image"):
+        raise ValueError("Cloudflare returnerede intet billede")
+    return base64.b64decode(result["image"], validate=True)
+
+
 def lav_billeder(artikler: list[dict]) -> None:
     """Genererer ét AI-billede pr. tophistorie. Billedet laves kun én gang
-    (filnavn = hash af linket) og bruges for altid. Kræver GEMINI_API_KEY,
-    og at betaling er slået til - ellers springes trinnet bare over."""
+    (filnavn = hash af linket) og genbruges. Kræver adgang til den valgte
+    billedudbyder; Cloudflare-fejl udløser ikke dyrere Gemini-kald."""
     global _billed_model
     _billed_model = special_model("billedgenerator", BILLED_MODEL, "gemini")
-    if not GEMINI_KEY:
-        print("🎨 GEMINI_API_KEY ikke sat - springer AI-billeder over")
+    if (_billed_model == FLUX_MODEL and not all(cloudflare_billedadgang())) or (_billed_model != FLUX_MODEL and not GEMINI_KEY):
+        print("🎨 Billedmodellens API-adgang mangler - springer AI-billeder over")
         return
     BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
 
@@ -2488,6 +2520,16 @@ def lav_billeder(artikler: list[dict]) -> None:
             "UNDGÅ ALTID: mennesker, ansigter, hænder, tekst, bogstaver, tal og logoer. "
             "Undgå klichéer som generiske robotter, kredsløb og lysende hjerner - "
             "MEDMINDRE historien konkret handler om dem.")
+        if _billed_model == FLUX_MODEL:
+            try:
+                _gem_billede(lav_flux_billede(prompt), sti)
+                a["billede"] = f"data/img/{navn}"
+                lavet += 1
+                fejl_i_traek = 0
+            except Exception as f:
+                fejl_i_traek += 1
+                print(f"  ⚠️ Cloudflare-billede fejlede: {type(f).__name__}. Kontrollér Workers AI-adgang og kvote.")
+            continue
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["IMAGE"],
@@ -2533,7 +2575,7 @@ def lav_billeder(artikler: list[dict]) -> None:
     if mangler and not lavet:
         print(f"🚨 INGEN billeder lavet, men {mangler} kort mangler et. "
               f"Model: {_billed_model}. Tjek fejlen ovenfor - typisk en "
-              f"udløbet GEMINI_API_KEY, betaling slået fra, eller opbrugt kvote.")
+              f"manglende API-adgang, betaling slået fra, eller opbrugt kvote.")
 
     # ryd op: slet billeder for artikler, der er røget ud af listen - men kun
     # dem, ingen side på disken stadig peger på.

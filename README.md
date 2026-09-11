@@ -211,3 +211,14 @@ selve GitHub-repository'et: er repository'et offentligt, kan filerne og deres
 historik stadig læses dér. Fortrolige indstillinger kræver privat opbevaring.
 API-nøgler skal fortsat kun ligge i GitHub Secrets. Ved skift til en anden
 udgivelsesmetode skal den samme udelukkelse bevares i byggetrinnet.
+
+### FLUX.2 Klein 4B
+Billedgeneratoren er valgt i `_redaktion/hjerner.json` som
+`@cf/black-forest-labs/flux-2-klein-4b`. Nye illustrationer genereres i 1024×576
+via Cloudflare Workers AI. Eksisterende billeder genbruges. Ved fejl bruges
+ikke automatisk den dyrere Gemini-model.
+
+GitHub Actions bruger `CLOUDFLARE_ACCOUNT_ID` og enten `CLOUDFLARE_AI_TOKEN`
+eller det eksisterende `CLOUDFLARE_API_TOKEN`. Tokenet skal have Workers AI
+Edit-adgang til kontoen; et token med kun analytics-adgang er utilstrækkeligt.
+Tokens gemmes kun som GitHub Secrets. Liveadgang er ikke verificeret lokalt.

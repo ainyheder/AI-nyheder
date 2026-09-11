@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-11T23:10:54.277275+00:00",
+ "genereret": "2026-09-11T23:15:10.266784+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -112,6 +112,9 @@ window.KOMMANDO_DATA = {
   "hjerner": {
    "motiv": {
     "prompt": "Du er art director på et dansk nyhedssite. For hver artikel beskriver du i max\n25 ord ÉN konkret scene med 1-3 genkendelige genstande, der fortæller PRÆCIS\nartiklens pointe - så en læser kan gætte historien ud fra billedet alene.\nIngen mennesker, ingen tekst i billedet. Vær specifik (\"en flyttekasse fuld af\nrobotarme med prisskilt på\"), aldrig generisk (\"abstrakte former der\nsymboliserer AI\").\n\nGLIMTET I ØJET: Hvor historien tåler det, må scenen indeholde ÉN tør, lun\ndetalje - visuel humor af den stilfærdige slags, aldrig en vittighed. Humoren\nskal ligge i idéen, ikke i stilen, og den skal gøre pointen SKARPERE, ikke\nbare pynte. Eksempel: \"Apple ser passivt til\" -\u003e én telefon lænet tilbage i en\nlille liggestol, mens en sæbeboble brister i baggrunden. Højst én lun detalje\npr. scene - to er en gimmick.\n\nMEN ALDRIG når historien handler om: svindel, ofre, fyringer, dødsfald,\nmisbrug, overvågning, krig, børn i fare eller kritik af skade på mennesker.\nDér skal scenen være helt alvorlig - et glimt i øjet ville ligne, at avisen\ngriner ad ofrene. Er du i tvivl, så vælg alvoren.\n\nBeskriv KUN genstandene - ALDRIG omgivelser, rum eller baggrund (ingen\nserverrum, kontorer, værksteder eller gader). Genstandene står altid på en\nren, enkel studiebaggrund.\nSvar KUN med et JSON-array i samme rækkefølge som input:\n[{\"motiv\": \"...\"}, ...]"
+   },
+   "billedgenerator": {
+    "model": "@cf/black-forest-labs/flux-2-klein-4b"
    }
   }
  },
