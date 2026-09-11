@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-11T23:13:21.593034+00:00",
+ "genereret": "2026-09-11T23:13:35.658299+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -565,7 +565,52 @@ window.KOMMANDO_DATA = {
   }
  },
  "modelkatalog": {
-  "udbydere": {}
+  "udbydere": {
+   "DeepSeek": {
+    "opdateret": "2026-09-11T23:13:34.102372+00:00",
+    "status": "Hentet",
+    "modeller": [
+     "deepseek-flash",
+     "deepseek-v4-pro"
+    ]
+   },
+   "Gemini": {
+    "opdateret": "2026-09-11T23:13:34.102372+00:00",
+    "status": "Hentet",
+    "modeller": [
+     "gemini-2.5-computer-use-preview-10-2025",
+     "gemini-2.5-flash",
+     "gemini-2.5-flash-image",
+     "gemini-2.5-flash-lite",
+     "gemini-2.5-flash-preview-tts",
+     "gemini-2.5-pro",
+     "gemini-2.5-pro-preview-tts",
+     "gemini-3-flash-preview",
+     "gemini-3-pro-image",
+     "gemini-3-pro-image-preview",
+     "gemini-3.1-flash-image",
+     "gemini-3.1-flash-image-preview",
+     "gemini-3.1-flash-lite",
+     "gemini-3.1-flash-lite-image",
+     "gemini-3.1-flash-lite-preview",
+     "gemini-3.1-flash-tts-preview",
+     "gemini-3.1-pro-preview",
+     "gemini-3.1-pro-preview-customtools",
+     "gemini-3.5-flash",
+     "gemini-3.5-flash-lite",
+     "gemini-3.5-transcribe",
+     "gemini-3.6-flash",
+     "gemini-3.7-flash",
+     "gemini-3.8-flash",
+     "gemini-flash-latest",
+     "gemini-flash-lite-latest",
+     "gemini-omni-1.1-flash",
+     "gemini-omni-flash-preview",
+     "gemini-pro-latest",
+     "gemini-robotics-er-2-preview"
+    ]
+   }
+  }
  },
  "kilder": {
   "opdateret": "2026-09-11T23:11:34.251144+00:00",
