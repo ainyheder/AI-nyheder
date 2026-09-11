@@ -17,6 +17,7 @@ aldrig igen (nøglen er artiklens link). Det holder prisen på få øre.
 import json
 import redaktion
 import redaktoer_agent
+from kommandocentral import skriv_kommando_data
 from nyhedskilder import parse_nyhedsoversigt
 import copy
 import os
@@ -5930,6 +5931,10 @@ def main() -> None:
     except Exception as fejl:
         print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
     tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
+    try:
+        skriv_kommando_data(ROOT)  # samlet status til Indstillinger.html, også fra Finder
+    except Exception as fejl:
+        print(f"🧭 Kommandocentralens status sprang over ({type(fejl).__name__})")
 
 
 def opdater_forside_lokalt() -> None:

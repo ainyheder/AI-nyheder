@@ -2,6 +2,43 @@
 
 Internationale AI-nyheder på dansk med en læsevenlig forside, korte overblik og permanente artikelsider. Siden bruger almindelig HTML, CSS og JavaScript og fungerer direkte på den eksisterende GitHub Pages-opsætning. Der er intet byggetrin.
 
+## Kommandocentralen
+
+Åbn **`Indstillinger.html`**. Her er udgavens overblik, AI-redaktørens retning,
+kilder, modeller og instruktioner, billedstil, læsertal og drift samlet.
+Fejl og reserveudvælgelse vises som de faktisk er rapporteret ved sidste kørsel.
+Centralen viser ingen påstået liveforbindelse og bruger ikke besøgstal, når
+målingen mangler eller fejler.
+
+Tryk **Tilslut projektmappe** i Chrome eller Edge og vælg denne projektmappe.
+Centralen læser de tre rigtige indstillingsfiler og kan gemme direkte i dem:
+`opsaetning/feeds.json`, `_redaktion/hjerner.json` og `opsaetning/redaktoer.md`.
+Ukendte felter bevares. Hvis filen er blevet ændret udefra, afvises overskrivning,
+og kladden beholdes. En lokal gemning efterfølges af commit og push i GitHub
+Desktop; centralen udgiver ikke selv. I browsere uden mappeadgang kan ændrede
+filer hentes enkeltvis og lægges på den viste placering.
+
+Indstillinger, status og begrænsede nøgletal leveres i `data/kommando-data.js`,
+så panelet også virker ved dobbeltklik uden en lokal server. Crawleren opdaterer
+pakken ved afslutningen af hver kørsel. Den kan også genopfriskes lokalt uden
+netværk, AI-kald eller udsendelser med `python3 kommandocentral.py`. Et nyt
+pakketidspunkt gør ikke gamle målinger aktuelle. Tilslut projektmappen for at
+læse indstillinger, der er ændret siden sidste pakke.
+
+Forside-redaktøren styres med den almindelige tekst under **AI-redaktør**.
+Trinnet **Kontrollér artiklen** under modeller er artikelkorrektur, ikke
+forside-redaktøren. Under **Billeder & stil** ændres instruktionen til motivet;
+den skifter ikke billedgenerator og genlaver ikke eksisterende billeder.
+Cloudflare-billedgenerering er endnu ikke tilsluttet. Ønsker, opgaver, historik
+og den fulde læseranalyse er bevaret i de avancerede værktøjer, som centralen
+linker til under **Drift & arbejdsrum**.
+
+Regressioner: `python3 _redaktion/proeve-kommandocentral.py` kontrollerer
+datapakken. `NODE_PATH=/sti/til/node_modules node _redaktion/proeve-kommando.js`
+bruger jsdom til at kontrollere visninger og filgem uden rigtige filændringer.
+Husk de nye `kommandocentral.py`, `assets/kommando.js`, `assets/kommando.css` og
+`data/kommando-data.js` sammen med indgangsfilen ved push.
+
 ## Ombygningen, september 2026
 
 Forsiden har en tydelig hovedhistorie og to andre udvalgte historier. Under **Mere at opdage** fortsætter andre historier; de tre fra toppen gentages ikke. De tidligere blokke med “Kort fortalt” og de samme historier endnu en gang er fjernet. Topfeltet bliver til én kolonne på mobil og fungerer også uden illustrationer.

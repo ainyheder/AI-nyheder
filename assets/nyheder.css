@@ -1378,7 +1378,7 @@ body.reader-open {
   }
 
   .masthead {
-    min-height:76px;
+    min-height:60px;
     gap:12px;
   }
 
@@ -1437,19 +1437,27 @@ body.reader-open {
   }
 
   .edition {
-    padding:18px 0 8px;
-    font-size:.75rem;
-    flex-wrap:wrap;
-    gap:3px;
+    display:none;
   }
 
   .edition>span:first-child {
     display:none;
   }
 
+  /* Bevar sidens h1 for skærmlæsere, uden en ekstra introduktion på mobil. */
   .page-heading {
-    margin:12px 0 24px;
-    gap:16px;
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip-path:inset(50%);
+    white-space:nowrap;
+  }
+
+  #udvalgte {
+    margin-top:12px;
   }
 
   .page-heading h1 {
@@ -1467,17 +1475,17 @@ body.reader-open {
 
   .lead-grid {
     grid-template-columns:minmax(0,1fr);
-    gap:14px;
-    margin-bottom:38px;
+    gap:10px;
+    margin-bottom:24px;
   }
 
   .lead-story {
-    padding:24px;
+    padding:18px;
     border-radius:14px;
   }
 
   .lead-story h2 {
-    font-size:1.95rem;
+    font-size:1.65rem;
     line-height:1.14;
   }
 
@@ -1486,12 +1494,13 @@ body.reader-open {
   }
 
   .story-topline {
-    margin-bottom:25px;
+    margin-bottom:12px;
   }
 
   .lead-summary {
     font-size:1rem;
-    margin:16px 0;
+    margin:12px 0;
+    line-height:1.5;
   }
 
   .lead-story .story-meta {
@@ -1499,7 +1508,8 @@ body.reader-open {
   }
 
   .lead-story .read-link {
-    margin-top:18px;
+    margin-top:10px;
+    padding-top:8px;
   }
 
   .feature-stack {
@@ -1507,24 +1517,26 @@ body.reader-open {
   }
 
   .feature-story {
-    padding:23px;
+    padding:16px;
     border-radius:14px;
   }
 
   .feature-story h3 {
-    font-size:1.4rem;
+    font-size:1.25rem;
     margin:10px 0;
   }
 
   .feature-story p {
     font-size:1rem;
-    display:block;
-    overflow:visible;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    overflow:hidden;
+    line-height:1.5;
   }
 
   .section-heading {
     gap:10px;
-    margin-bottom:20px;
+    margin-bottom:12px;
   }
 
   .section-heading h2 {
@@ -1571,20 +1583,24 @@ body.reader-open {
   }
 
   .news-row {
-    padding:23px;
+    padding:16px;
+  }
+
+  .news-row .story-meta,.feature-story .story-meta {
+    padding-top:10px;
   }
 
   .news-row h3 {
-    font-size:1.4rem;
+    font-size:1.25rem;
   }
 
   .news-row p {
     font-size:1rem;
   }
 
-  .news-row-image {
-    width:calc(100% + 46px);
-    margin:-23px -23px 22px;
+  /* Illustrationerne fylder i læseren; mobiloversigten prioriterer teksten. */
+  .news-row-image,.lead-image {
+    display:none;
   }
 
   .sidebar {
@@ -1641,7 +1657,7 @@ body.reader-open {
   }
 
   .reader-content {
-    padding:28px 22px 45px;
+    padding:20px 18px 36px;
   }
 
   .reader-content h1 {
