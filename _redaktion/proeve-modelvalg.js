@@ -43,11 +43,11 @@ function lavPanel(status) {
 function status(aendring) {
   const s = JSON.parse(JSON.stringify(GRUND));
   s.udbyder = "deepseek";
-  s.daglig_model = "deepseek-v4-flash";
+  s.daglig_model = "deepseek-flash";
   s.gemini_tilgaengelig = true;
   s.deepseek_tilgaengelig = true;
   Object.keys(s.hjerner).forEach(n => {
-    s.hjerner[n].model = "deepseek-v4-flash";
+    s.hjerner[n].model = "deepseek-flash";
     s.hjerner[n].udbyder = "deepseek";
     s.hjerner[n].egen_model = false;
   });
@@ -79,7 +79,7 @@ setTimeout(() => {
   const tekster = [...vaelger.options].map(o => o.textContent);
 
   console.log("== A. listen indeholder det rigtige ==");
-  ok("A1 deepseek-v4-flash kan vælges", vaerdier.includes("deepseek-v4-flash"), vaerdier.join("|"));
+  ok("A1 deepseek-flash kan vælges", vaerdier.includes("deepseek-flash"), vaerdier.join("|"));
   ok("A2 deepseek-v4-pro kan vælges", vaerdier.includes("deepseek-v4-pro"), vaerdier.join("|"));
   // De to udgåede. Står de i listen, inviterer panelet til at vælge dem.
   ok("A3 gemini-3.5-flash er væk", !vaerdier.includes("gemini-3.5-flash"), vaerdier.join("|"));
@@ -88,7 +88,7 @@ setTimeout(() => {
   ok("A6 gemini-3.5-flash-lite er stadig med", vaerdier.includes("gemini-3.5-flash-lite"), vaerdier.join("|"));
   ok("A7 den daglige model står øverst med tom værdi", vaerdier[0] === "", vaerdier[0]);
   ok("A8 og den nævner den model, der faktisk kører",
-     /deepseek-v4-flash/.test(tekster[0]), tekster[0]);
+     /deepseek-flash/.test(tekster[0]), tekster[0]);
   ok("A9 hver linje har en etiket", tekster.every(t => t.trim().length > 3), tekster.join("|"));
 
   console.log("== B. noten siger, hvad valget betyder ==");
@@ -96,7 +96,7 @@ setTimeout(() => {
   ok("B0 noten findes", !!note);
   if (note) {
     ok("B1 uden valg peger den på den daglige model",
-       /deepseek-v4-flash/.test(note.textContent), note.textContent);
+       /deepseek-flash/.test(note.textContent), note.textContent);
     vaelger.value = "gemini-3.6-flash";
     vaelger.dispatchEvent(new w.Event("change", { bubbles: true }));
     ok("B2 et Gemini-valg siger, at trinnet flytter til Google",
@@ -210,8 +210,11 @@ setTimeout(() => {
     ok("F4 og crawleren ville læse det uden ændring — ingen store bogstaver, " +
        "ingen understreger", h.omskriv && h.omskriv.model === h.omskriv.model.trim() &&
        /^deepseek-v4-pro$/.test(h.omskriv.model || ""), h.omskriv && h.omskriv.model);
-    ok("F5 de øvrige 13 trin står ikke i filen, når de ikke er ændret",
-       Object.keys(h).length === 1, Object.keys(h).join("|"));
+    const eksisterende = Object.entries(status().hjerner).filter(([n, v]) => n !== "omskriv" && v.egen_prompt);
+    const forventede = ["omskriv", ...eksisterende.map(([n]) => n)].sort();
+    ok("F5 kun ændrede trin gemmes, og eksisterende instrukser bevares",
+       JSON.stringify(Object.keys(h).sort()) === JSON.stringify(forventede) &&
+       eksisterende.every(([n, v]) => h[n] && h[n].prompt === v.aktiv_prompt), Object.keys(h).join("|"));
   }
   // Et udgået navn skal kunne GEMMES uændret, hvis redaktionen lader det stå —
   // ellers ville selve det at åbne vinduet ændre valget.

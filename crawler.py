@@ -53,7 +53,7 @@ GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
 GEMINI_FALLBACK = "gemini-3.6-flash"       # bruges automatisk hvis Lite ikke svarer
 # Var gemini-3.5-flash indtil 29.07. Den er forældet og taget ud af panelets
 # liste - og et sikkerhedsnet, redaktionen får at vide er udgået, er ikke et net.
-DEEPSEEK_MODEL = "deepseek-v4-flash"       # $0.14/$0.28 - billigst af alle
+DEEPSEEK_MODEL = "deepseek-flash"          # DeepSeek V4.1 Flash (officielt API-navn fra 10.09.2026)
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
 # Er begge nøgler sat, vinder AI_UDBYDER ("deepseek" eller "gemini").

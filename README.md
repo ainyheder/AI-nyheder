@@ -10,6 +10,12 @@ Søgning, emnefiltre og **Nyeste først** viser én samlet liste og skjuler topf
 
 Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/artikel.css`. Deres artikler, kilder, permanente adresser og canonical-links er bevaret. Det store antal ændrede arkivfiler skyldes tilføjelsen af fælles CSS, en tilbagegenvej og tastaturadgang.
 
+## AI-model
+
+Den daglige tekstmodel er **DeepSeek V4.1 Flash**, med API-navnet `deepseek-flash`. Alle arbejdstrin uden et særskilt modelvalg følger denne standard. Billedmodellen er uændret. Ændringen træder i kraft ved næste crawlerkørsel efter upload; tidligere artikeltekster omskrives ikke automatisk.
+
+Officielt modelnavn: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
+
 ## Sådan udvælges nyhederne
 
 `crawler.py` henter kilderne og får AI til at vurdere hver historie. `redaktion.py` validerer vurderingerne og beregner rækkefølgen. Den samme logik bruges til forsiden, brief-kandidater, ugens quiz og billedprioritering.

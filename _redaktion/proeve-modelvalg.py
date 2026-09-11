@@ -60,6 +60,8 @@ f = getattr(c, "model_udbyder", None)
 ok("A0 model_udbyder findes", f is not None, "funktionen mangler i denne udgave")
 if f:
     ok("A1 deepseek-v4-flash → deepseek", f("deepseek-v4-flash") == "deepseek", f("deepseek-v4-flash"))
+    ok("V4.1 Flash bruger officielt API-navn", c.DEEPSEEK_MODEL == "deepseek-flash", c.DEEPSEEK_MODEL)
+    ok("deepseek-flash → deepseek", f("deepseek-flash") == "deepseek", f("deepseek-flash"))
     ok("A2 deepseek-v4-pro → deepseek", f("deepseek-v4-pro") == "deepseek")
     ok("A3 gemini-3.6-flash → gemini", f("gemini-3.6-flash") == "gemini", f("gemini-3.6-flash"))
     ok("A4 gemini-3.5-flash-lite → gemini", f("gemini-3.5-flash-lite") == "gemini")
