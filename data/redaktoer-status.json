@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-12T06:37:41.330840+00:00",
+  "opdateret": "2026-09-12T06:53:48.023528+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,9 +7,9 @@
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "7e238717078dc7fb",
+  "input_fingerprint": "d1310a627e1dfc1d",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
+  "modelkald": 5,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
@@ -29,22 +29,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -78,7 +62,7 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "fejl": "Expecting value: line 1 column 4303 (char 4302)"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -87,36 +71,36 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "grundlag": "utilgaengelig"
-    },
-    {
-      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+      "link": "https://openai.com/index/introducing-the-agents-api",
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
