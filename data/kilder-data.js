@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T01:37:09.973526+00:00",
- "artikler_i_alt": 151,
+ "opdateret": "2026-09-12T06:37:41.330840+00:00",
+ "artikler_i_alt": 147,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -529,15 +529,6 @@ window.KILDER_STATUS = {
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "Rapport: OpenAI-agenter bag angreb på RubyGems",
-     "dato": "",
-     "foerst_set": "2026-09-12T00:50:07",
-     "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Agents API til cloud-agenter"
-    },
-    {
      "rubrik": "OpenAI-forsker: Vi skal bygge AI til forsvar",
      "dato": "",
      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
@@ -554,6 +545,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+    },
+    {
+     "rubrik": "Ny GPT-6 Astra laver Fabergé-æg i Blender",
+     "dato": "",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+    },
+    {
+     "rubrik": "OpenAI-agent mistænkes for RubyGems-angreb",
+     "dato": "2026-09-12T00:42:25",
+     "foerst_set": "2026-09-12T00:50:07",
+     "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenRouter-endpoint kan give forskellig modeladfærd",
@@ -637,15 +646,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Ny GPT-6 Astra laver Fabergé-æg i Blender",
-     "dato": "2026-09-09T23:58:32",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI løser milliongåde – men snød de?",
      "dato": "2026-09-08T23:55:12",
      "foerst_set": "2026-09-08T18:02:43",
@@ -658,11 +658,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     2
-    ],
-    [
-     "OpenAI Blog",
-     2
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -670,6 +666,10 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
+     1
+    ],
+    [
+     "OpenAI Blog",
      1
     ]
    ]
@@ -684,9 +684,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 34,
    "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Frist i nat for TechCrunch-arrangementer"
+    },
+    {
+     "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
+    },
     {
      "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
      "dato": "",
@@ -724,15 +742,6 @@ window.KILDER_STATUS = {
      "under": "Apple klar med første foldbare iPhone Duo"
     },
     {
-     "rubrik": "Apple Watch lytter med – og det vænner vi os til",
-     "dato": "",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apple annoncerer Audio Intelligence med privatlivsfokus"
-    },
-    {
      "rubrik": "Apple-chef: iPhone er stadig den bedste AI-enhed",
      "dato": "",
      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
@@ -751,13 +760,13 @@ window.KILDER_STATUS = {
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
     },
     {
-     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "rubrik": "Suno v6: egen model på licenseret musik",
      "dato": "",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
      "side": "",
      "hvor": "under",
-     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+     "under": "Suno lancerer v6 på licenseret musikdata"
     },
     {
      "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
@@ -769,6 +778,15 @@ window.KILDER_STATUS = {
      "under": "Anthropic stopper forsøg på biovåben med Claude"
     },
     {
+     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer Muse: AI-assistent til hverdagen"
+    },
+    {
      "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
      "dato": "",
      "foerst_set": "2026-09-08T18:02:43",
@@ -776,15 +794,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI løser milliongåde – men snød de?"
-    },
-    {
-     "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
-     "dato": "",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
-     "side": "",
-     "hvor": "under",
-     "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
      "rubrik": "Sequoia køber sig ind i Mecka AI",
@@ -796,11 +805,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Moonshot AI vil tjene 2 milliarder om året",
+     "rubrik": "Moonshot AI vil nå 2 mia. dollar med K3",
      "dato": "2026-09-11T19:35:54",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-     "side": "",
+     "side": "artikel/b3b5bc18a7beccd4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -809,15 +818,6 @@ window.KILDER_STATUS = {
      "dato": "2026-09-11T20:59:47",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
-     "dato": "2026-09-11T20:33:18",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -893,23 +893,32 @@ window.KILDER_STATUS = {
      "side": "artikel/755f7769e744d036.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
+     "dato": "2026-09-10T14:17:37",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+     "side": "artikel/d40cabdd4c17da18.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
      2
     ],
     [
-     "Simon Willison AI",
+     "Mistral AI",
      1
     ],
     [
-     "Mistral AI",
+     "Simon Willison AI",
      1
     ],
     [
@@ -928,8 +937,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 19,
-   "som_ekstra": 3,
+   "i_listen": 18,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
@@ -950,13 +959,13 @@ window.KILDER_STATUS = {
      "under": "Meta lancerer Muse: AI-assistent til hverdagen"
     },
     {
-     "rubrik": "Apples iPhone 18 Pro skal modbevise AI-billeder",
+     "rubrik": "Apple annoncerer Audio Intelligence med privatlivsfokus",
      "dato": "",
-     "foerst_set": "2026-09-09T21:06:39.434672+00:00",
-     "link": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+     "foerst_set": "2026-09-09T21:06:39",
+     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
      "side": "",
      "hvor": "under",
-     "under": "Apple annoncerer Audio Intelligence med privatlivsfokus"
+     "under": "Apple klar med første foldbare iPhone Duo"
     },
     {
      "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
@@ -1049,15 +1058,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Apple annoncerer Audio Intelligence med privatlivsfokus",
-     "dato": "2026-09-09T20:44:43",
-     "foerst_set": "2026-09-09T21:06:39",
-     "link": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
-     "side": "artikel/0a721c2e70b7f85e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Microsoft laver AI-regler for skoler",
      "dato": "2026-09-09T17:07:48",
      "foerst_set": "2026-09-09T17:56:17",
@@ -1083,12 +1083,21 @@ window.KILDER_STATUS = {
      "side": "artikel/4c31ccfb47a0b4ea.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Anthropic-forsker: AI kan slå os alle ihjel",
+     "dato": "2026-09-09T09:56:28",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+     "side": "artikel/77fd9d3453785138.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -1096,7 +1105,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     2
+     3
     ],
     [
      "Hacker News: AI",
@@ -1334,7 +1343,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 18,
+   "i_listen": 17,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1365,13 +1374,13 @@ window.KILDER_STATUS = {
      "under": "OpenAI henter forsker Paul Christiano i bestyrelsen"
     },
     {
-     "rubrik": "1Password øger effektiviteten 21 procent med OpenAI Codex",
+     "rubrik": "OpenAI: GPT-5.6 Sol styrer kvantecomputere",
      "dato": "",
      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
-     "link": "https://openai.com/index/1password",
+     "link": "https://openai.com/index/codex-quantum-computing-experiments",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI: GPT-5.6 Sol styrer kvantecomputere"
+     "under": "César de la Fuente jagter livsvigtige molekyler"
     },
     {
      "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
@@ -1455,15 +1464,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "César de la Fuente jagter livsvigtige molekyler",
-     "dato": "2026-09-10T16:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-     "side": "artikel/8e610a2233c8a93e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI efterlyser politisk handling om AI-sikkerhed",
      "dato": "2026-09-09T13:00:00",
      "foerst_set": "2026-09-10T05:12:15",
@@ -1482,11 +1482,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI: GPT-5.6 Sol styrer kvantecomputere",
-     "dato": "2026-09-08T17:00:00",
+     "rubrik": "César de la Fuente jagter livsvigtige molekyler",
+     "dato": "2026-09-10T16:00:00",
      "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://openai.com/index/codex-quantum-computing-experiments",
-     "side": "artikel/48232c1c3bd81287.html",
+     "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+     "side": "artikel/8e610a2233c8a93e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1507,15 +1507,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "Simon Willison AI",
-     2
+     "The Verge AI",
+     1
     ],
     [
-     "The Verge AI",
+     "Simon Willison AI",
      1
     ],
     [
@@ -1538,7 +1547,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "DeepMind kortlægger 9 milliarder DNA-varianters effekter",
+     "rubrik": "DeepMind kortlægger 9 milliarder DNA-varianter",
      "dato": "",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
