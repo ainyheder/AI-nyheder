@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T07:03:00.381936+00:00",
- "artikler_i_alt": 150,
+ "opdateret": "2026-09-12T07:32:40.327948+00:00",
+ "artikler_i_alt": 148,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -684,9 +684,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
-   "som_ekstra": 9,
+   "i_listen": 32,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Sidste uge til TechCrunch-udstillerbord",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
+    },
+    {
+     "rubrik": "Sidste frist for TechCrunch Disrupt-sideevents",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
+    },
     {
      "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
      "dato": "",
@@ -713,6 +731,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "USA: Seks kinesiske AI-firmaer stjæler fra os"
+    },
+    {
+     "rubrik": "25 matematikere protesterer mod AI-laboratorier",
+     "dato": "",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+     "side": "",
+     "hvor": "under",
+     "under": "Matematikere kræver OpenAI-dokumentation"
     },
     {
      "rubrik": "Apples foldbare telefon er bygget med AI",
@@ -769,24 +796,6 @@ window.KILDER_STATUS = {
      "under": "Anthropic stopper forsøg på biovåben med Claude"
     },
     {
-     "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI løser milliongåde – men snød de?"
-    },
-    {
-     "rubrik": "Seattle Times og Newsday sagsøger OpenAI og Microsoft",
-     "dato": "",
-     "foerst_set": "2026-09-05T23:14:26",
-     "link": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
-     "side": "",
-     "hvor": "under",
-     "under": "Seattle Times og Newsday sagsøger OpenAI"
-    },
-    {
      "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
      "dato": "2026-09-11T22:58:17",
      "foerst_set": "2026-09-11T23:11:34",
@@ -809,24 +818,6 @@ window.KILDER_STATUS = {
      "dato": "2026-09-11T20:59:47",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sidste uge til TechCrunch-udstillerbord",
-     "dato": "2026-09-11T20:33:18",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sidste frist for TechCrunch Disrupt-sideevents",
-     "dato": "2026-09-11T20:30:17",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -859,15 +850,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
-     "dato": "2026-09-10T20:59:51",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-     "side": "artikel/5a7a028d73b1f767.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Anthropic: AI-agent hadede CAPTCHA i 150 sider",
      "dato": "2026-09-10T17:54:44",
      "foerst_set": "2026-09-10T21:07:39",
@@ -893,15 +875,46 @@ window.KILDER_STATUS = {
      "side": "artikel/755f7769e744d036.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
+     "dato": "2026-09-10T14:17:37",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+     "side": "artikel/d40cabdd4c17da18.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Listen Labs dropper milliardinvestering fra Menlo Ventures",
+     "dato": "2026-09-10T00:00:37",
+     "foerst_set": "2026-09-10T05:12:15",
+     "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
+     "dato": "2026-09-10T20:59:51",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+     "side": "artikel/5a7a028d73b1f767.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
+     2
+    ],
+    [
+     "OpenAI Blog",
      2
     ],
     [
@@ -910,10 +923,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Mistral AI",
-     1
-    ],
-    [
-     "OpenAI Blog",
      1
     ]
    ]
@@ -1088,7 +1097,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
@@ -1242,10 +1251,6 @@ window.KILDER_STATUS = {
     [
      "Hacker News: AI",
      1
-    ],
-    [
-     "Google DeepMind",
-     1
     ]
    ]
   },
@@ -1335,7 +1340,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 25,
    "i_listen": 18,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
@@ -1347,22 +1352,13 @@ window.KILDER_STATUS = {
      "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
-     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
+     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
      "dato": "",
-     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-     "link": "https://openai.com/index/put-data-to-work",
+     "foerst_set": "2026-09-09T23:28:16",
+     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer Agents API til cloud-agenter"
-    },
-    {
-     "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
-     "dato": "",
-     "foerst_set": "2026-09-09T23:28:16.094724+00:00",
-     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer ChatGPT til finanssektoren"
+     "under": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel"
     },
     {
      "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
@@ -1419,6 +1415,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI fører GPT-Live-1 til API",
      "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
@@ -1437,11 +1442,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
-     "dato": "2026-09-10T00:00:00",
+     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
+     "dato": "2026-09-10T15:00:00",
      "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
+     "link": "https://openai.com/index/put-data-to-work",
+     "side": "artikel/d86fa96aa31ae332.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1460,15 +1465,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T05:12:15",
      "link": "https://openai.com/index/ai-policy-window",
      "side": "artikel/e50720e57461212f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
-     "dato": "2026-09-10T07:00:00",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-     "side": "artikel/3f77446f0e44a8a2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1511,15 +1507,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "TechCrunch AI",
+     2
+    ],
+    [
      "The Verge AI",
      1
     ],
     [
      "Simon Willison AI",
-     1
-    ],
-    [
-     "TechCrunch AI",
      1
     ]
    ]
@@ -1534,18 +1530,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "DeepMind kortlægger DNA-ændringer med AlphaGenome Atlas",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google AI forudsiger alle dna-ændringer"
-    },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
      "dato": "",
@@ -1554,6 +1541,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
+    },
+    {
+     "rubrik": "DeepMind: AlphaGenome Atlas kortlægger DNA-varianter",
+     "dato": "2026-09-08T14:00:15",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "artikel/8aaadec7c05e0c22.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1641,10 +1637,6 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
