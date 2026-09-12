@@ -1,16 +1,42 @@
 {
-  "opdateret": "2026-09-12T11:56:27.820325+00:00",
-  "status": "reserve",
+  "opdateret": "2026-09-12T12:07:48.516958+00:00",
+  "status": "godkendt",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
     "https://openai.com/index/cognition-devin-testing-with-astra",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "4f6aa8d530b56311",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "input_fingerprint": "2c4c751282eea243",
+  "redaktionsnote": "To udvalgte: Sunos v6 (testet modeludgivelse med licenseret data, klart ny vinkel siden sidste forside) og Googles Gemini-app til Windows (officiel, konkret ny desktop-adgang). Anbefalinger: Metas Muse-agent er en reel produktlancering med gratis adgang i USA, men beskrivelsen bygger på én mediekilde uden uafhængig test af agentens faktiske formåen. OpenAIs pause for Pro-abonnementer er en dokumenteret konsekvens af Astra-efterspørgslen, men samme Astra-begivenhed må ikke fylde flere pladser i udvalget. Verge-artiklen om matematikstriden er den mest substansielle uafhængige behandling af OpenAIs matematikpåstande med svar fra begge parter. GPT-Live-1 til API er en tidligere forsidehistorie, hvor der ikke er kommet nyt belæg i de læste kilder. Anthropic-sagerne om misbrug af Claude til biovåbenforskning og om modeller, der har hacket eksterne systemer, er relevante, men hver især beskrevet i ét medie. Uafklaret: uafhængige tests af Astra, Metas Muse og Sunos træningsdatas fuldstændige ophav.",
+  "beslutninger": [
+    {
+      "id": "cb6883475c7deaa3",
+      "begrundelse": "Suno v6 er en konkret ny modeludgivelse fra en af de største AI-musikudbydere, og det er første gang, selskabet bygger på licenseret data fra Warner Music Group, BMG og Believe. Kilden er et uafhængigt medie med hands-on-test af modellerne, så løfter og svagheder kan beskrives nuanceret.",
+      "nyt_siden_sidst": "Historien var med på den seneste forside, men nu foreligger The Verges testede gennemgang med detaljer om de tre variantmodeller (v6, v6-wild, v6-mini), chatbaseret redigering af enkelte elementer og udfasning af de gamle modeller. Det er væsentligt nyt i forhold til den korte lanceringsomtale.",
+      "skriveopgave": "Skriv en nyhed om, at Suno ruller v6 ud. Forklar hvad der er nyt: tre delmodeller, hvoraf v6-mini er gratis, træning på licenseret materiale fra Warner Music Group, BMG og Believe samt brugerdata, redigering af enkeltdele i chat, mashups fra egen musiksamling og prompts ud fra billede, video eller lyd. Medtag The Verges fund: modellen rammer genrer godt, men kan fortsat ikke levere 'naturlige ufuldkommenheder' som falsk eller ude af takt, og det er uklart, om træningsdata helt er fri for tvivlsomt materiale. Undgå at kalde aftalen en garanti for ophavsretlig renhed.",
+      "kilder": [
+        "cb6883475c7deaa3"
+      ],
+      "samme_historie": [],
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "rubrik": "Suno ruller v6 ud med tre modeller"
+    },
+    {
+      "id": "fcbdbdad0836d1cd",
+      "begrundelse": "Officiel Google-meddelelse om en ny desktop-adgang til Gemini globalt for Windows 10 og 11 med genvejen Alt + Space. Det er en konkret ændring i adgang og arbejdsgang for almindelige brugere, ikke bare en nyhed om et modelnavn.",
+      "nyt_siden_sidst": "Ny historie på forsiden: appen er netop frigivet, og hidtil har Gemini på Windows været tilgængelig via browser og web, ikke som selvstændig desktop-app.",
+      "skriveopgave": "Kort nyhed om at Gemini-appen nu kan hentes til Windows 10 og 11 globalt. Beskriv, at Alt + Space åbner assistenten over det aktive program, at appen giver adgang til Gemini Spark som personlig agent samt billed- og videogenerering, og at den kører i baggrunden. Nævn at Google kalder det begyndelsen på flere native desktop-funktioner. Forbehold: kilden er Googles egen meddelelse, og der er ingen uafhængig test af ydeevne eller ressourceforbrug.",
+      "kilder": [
+        "fcbdbdad0836d1cd"
+      ],
+      "samme_historie": [],
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+      "rubrik": "Gemini-app lander på Windows 10 og 11"
+    }
+  ],
   "modelkald": 7,
-  "kildehentninger": 6,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -21,7 +47,19 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -45,8 +83,16 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -59,7 +105,15 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
@@ -71,21 +125,20 @@
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
       "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://openai.com/index/cognition-devin-testing-with-astra",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/"
   ]
 }
