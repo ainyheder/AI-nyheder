@@ -13,7 +13,7 @@ assert.equal(d.querySelector('h2').textContent,'ChatGPT + Codex');
 assert.equal(d.querySelectorAll('details .example-task').length,5,'Alle valg har en konkret opgave');
 assert.equal(d.querySelectorAll('.tool-source').length,5,'Alle valg har en kilde');
 const mainNav = [...d.querySelectorAll('#navigation a')].map(x=>x.getAttribute('href'));
-assert.deepEqual(mainNav,['./','uge.html','vaerktoejer.html','om.html']);
+assert.deepEqual(mainNav,['./','uge.html','vaerktoejer.html','https://artificialanalysis.ai/','om.html']);
 w.eval(fs.readFileSync(path.join(root,'assets/vaerktoejer.js'),'utf8'));
 assert.equal(d.querySelector('.tool-filters').hidden,false);
 for(const [filter,ids] of Object.entries({byg:['chatgpt','claude'],design:['canva'],dokumenter:['chatgpt','claude','notebook'],research:['chatgpt','notebook','perplexity'],hverdag:['chatgpt','claude','perplexity']})) {

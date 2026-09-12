@@ -1,0 +1,43 @@
+.week-main{max-width:1000px;padding-top:30px}
+.week-heading{margin-bottom:25px}
+.week-edition{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:18px}
+.week-edition>span:last-child{font-size:.8rem;color:var(--muted)}
+.week-heading h1{max-width:850px;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.08;letter-spacing:-.05em;margin-bottom:16px}
+.week-heading>p{color:var(--muted);font-size:1.05rem;max-width:760px;line-height:1.6}
+.week-stories{display:grid;gap:16px}
+.week-story{padding:26px 30px;border:1px solid var(--line);border-radius:18px;background:var(--soft);position:relative}
+.week-lead{background:linear-gradient(110deg,#26321a,#171d19 65%);border-color:#687b39}
+.week-meta{display:flex;justify-content:space-between;gap:14px;color:var(--blue);font:500 .75rem/1.4 var(--mono);text-transform:uppercase;margin-bottom:12px}
+.week-number{color:var(--muted)}
+.week-story h2{font-size:clamp(1.35rem,2.5vw,1.9rem);letter-spacing:-.035em;line-height:1.2;margin-bottom:12px}
+.week-story h2 a{text-decoration:none}
+.week-story h2 a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.week-story:has(a:hover){border-color:#7b8e50}
+.week-story:has(a:focus-visible){outline:3px solid var(--blue);outline-offset:4px}
+.week-summary{display:flow-root;color:#c1c8d1;font-size:1rem;line-height:1.7}
+.week-image{float:right;width:160px;max-width:30%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin:2px 0 5px 12px}
+.week-image[src$=".webp"]{object-fit:contain}
+.week-outlook{margin-top:28px;padding:24px 0 26px;border-block:1px solid var(--line)}
+.week-outlook h2{font-size:1.5rem;letter-spacing:-.035em;margin:8px 0 12px}
+.week-outlook>p:last-child{max-width:800px;color:var(--muted)}
+.week-subscribe{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:var(--soft);padding:26px;border-radius:18px;margin-top:28px}
+.week-subscribe h2{font-size:1.5rem;line-height:1.2;letter-spacing:-.03em;margin:8px 0 12px}
+.week-subscribe p:not(.eyebrow){color:var(--muted);font-size:.88rem}
+.week-subscribe label{display:block;font-size:.8rem;margin-bottom:8px}
+.week-mail-fields{display:flex;gap:8px}
+.week-mail-fields input{width:100%;min-width:0;background:var(--paper);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:10px 12px}
+.week-mail-fields button{background:var(--blue);color:#11160a;font-weight:650;border-radius:8px;padding:10px 16px}
+.week-subscribe small{display:block;font-size:.72rem;color:var(--muted);margin-top:8px}
+.week-colophon{font-size:.75rem;color:var(--muted);margin:20px 0 36px;max-width:750px}
+@media(max-width:650px){
+ .week-main{padding-top:18px}.week-edition{display:block;margin-bottom:12px}.week-edition>span:last-child{display:block;font-size:.7rem;margin-top:3px}.week-edition .eyebrow{font-size:.7rem}
+ .week-heading{margin-bottom:18px}.week-heading h1{font-size:1.85rem;margin-bottom:10px}.week-heading>p{font-size:.95rem;line-height:1.5}
+ .week-stories{gap:12px}.week-story{padding:18px 16px;border-radius:14px}.week-meta{font-size:.68rem;margin-bottom:10px}.week-story h2{font-size:1.35rem;line-height:1.2}.week-summary{font-size:.95rem;line-height:1.6}
+ .week-image{width:124px;max-width:34%;margin-left:6px}.week-subscribe{grid-template-columns:1fr;gap:20px;padding:20px}.week-outlook{margin-top:22px}.week-outlook>p:last-child{font-size:.94rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.week-narrative{max-width:790px;font-size:1.1rem;line-height:1.8;color:#d2d7de;margin:26px 0 34px;padding-left:22px;border-left:2px solid #667937}
+.week-narrative p+p{margin-top:18px}
+.week-background-title{font-size:1.1rem;letter-spacing:-.02em;margin:0 0 16px}
+@media(max-width:650px){.week-narrative{font-size:1rem;line-height:1.7;margin:22px 0 28px;padding-left:14px}.week-background-title{font-size:1rem}}

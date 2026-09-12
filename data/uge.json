@@ -1,49 +1,162 @@
 {
- "uge": "2026-37",
- "uge_nr": 37,
- "dato": "2026-09-11T05:11:51.907038+00:00",
- "rubrik": "Musik med licens og hackere på spil",
- "indledning": "Ugen byder på store AI-lanceringer inden for musik og finans – men også historier om misbrug af børns billeder og stjålne Claude-abonnementer. AI rykker ind i hverdagen, og det stiller nye krav til, hvem vi stoler på.",
+ "rubrik": "Skitser, stemmer og agenter giver AI nye roller",
+ "indledning": "Periodens store produktnyheder giver nye måder at styre AI på. Samtidig viser Astra og Muse, at modellernes evner og din adgang til dem er to forskellige ting.",
  "historier": [
   {
-   "overskrift": "Suno laver AI-musik med pladeselskaber",
-   "tekst": "Suno har lanceret sin nye v6-model, som er trænet på licenseret musik fra anerkendte pladeselskaber – ifølge The Verge med hjælp fra Warner. Modellen kan skabe sange ud fra billeder og video, og du kan finjustere detaljer undervejs i stedet for at starte forfra. Det betyder, at betalende brugere nu kan lave AI-musik, som branchen har godkendt, selvom remixes stadig kræver kunstnernes accept.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-   "billede": "data/img/23052fd526a4703f.jpg",
-   "kategori": "Lanceringer"
+   "overskrift": "Suno v6: ny musikmodel med licensaftaler",
+   "tekst": "Suno har lanceret v6, trænet på materiale fra blandt andre Warner Music Group, BMG og Believe. Du kan redigere dele af en sang i chat og bruge billeder, video eller lyd som oplæg. The Verges test fandt bedre genrer, men stadig problemer med at følge visse instruktioner.",
+   "kategori": "Lanceringer",
+   "billede": "data/img/b253db15b0551ed9.webp",
+   "dato": "2026-09-09T17:42:19-04:00",
+   "andre": [
+    {
+     "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+     "kilde": "TechCrunch AI"
+    }
+   ],
+   "titel": "Suno releases its first AI music model made with record industry help",
+   "rubrik": "Suno lancerer v6 på licenseret musikdata",
+   "resume_da": "Suno har frigivet musimodellen v6, selskabets første model skabt med støtte fra pladeindustrien og trænet på licenseret data fra Warner Music Group, BMG og Believe.",
+   "artikel_signatur": "f5a78b298d14ad55017b4a7282af6d7249ae5c34a5f6554a6153dbb260d83d0c"
   },
   {
-   "overskrift": "OpenAI åbner for naturlige stemmer",
-   "tekst": "OpenAI har gjort GPT-Live-1 tilgængelig i sit API med naturlige, tovejs stemmesamtaler, tilpassede stemmer og endda support via telefon. Hvis du bygger apps eller tjenester med stemme, kan dine brugere nu få samtaler, der føles mere personlige og flydende. OpenAI har dog endnu ikke oplyst, hvad det kommer til at koste at bruge modellen i praksis.",
    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+   "overskrift": "GPT-Live-1 giver udviklere nye stemmefunktioner",
+   "tekst": "OpenAI har annonceret GPT-Live-1 i sit API. Ifølge selskabet understøtter modellen tale i begge retninger samtidig, brugerdefinerede stemmer og telefoni. Det giver udviklere flere muligheder for stemmebaserede tjenester. De konkrete telefontjenester og fremgangsmåden til at oprette stemmer fremgår ikke af materialet.",
+   "kategori": "Lanceringer",
    "billede": "data/img/bb7921ba88d52959.jpg",
-   "kategori": "Lanceringer"
+   "dato": "2026-09-10T00:00:00+00:00",
+   "andre": [],
+   "titel": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+   "rubrik": "OpenAI fører GPT-Live-1 til API",
+   "resume_da": "OpenAI tilføjer stemmemodellen GPT‑Live‑1 til sit API med fuld-duplex samtaler, bedre instruktionsfølge, brugerdefinerede stemmer og telefonistøtte.",
+   "artikel_signatur": "14696dad33e6833ea50479cd0d8e0cac610d84cf2934657e8fcdec6d657d7ad2"
   },
   {
-   "overskrift": "Suno v6 kun med licenseret musik",
-   "tekst": "Samme uge erstattede Suno sine gamle modeller med nye, der udelukkende er trænet på licenseret musik – det sker ifølge TechCrunch, mens søgsmål om ophavsret hobler sig op mod musik-AI'er. For dig som betalende bruger betyder det, at du nu bruger en model, som pladeselskaberne har godkendt. Men remixes kræver stadig kunstnernes accept, så du kan ikke frit bruge andres værker.",
-   "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-   "billede": "data/img/b253db15b0551ed9.jpg",
-   "kategori": "Lanceringer"
-  },
-  {
-   "overskrift": "Meta viste annoncer med misbrug af børn",
-   "tekst": "Meta fjernede ikke i tide annoncer med AI-genereret seksuelt misbrug af børn, skriver Ars Technica. Annoncerne viste rigtige piger, blandt andet fra Instagram, og dukkede op på Facebook og Instagram. Det betyder, at du som bruger kan risikere at møde annoncer, der misbruger rigtige børns billeder med AI – og at du er afhængig af, at Meta fjerner dem hurtigt nok.",
-   "link": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+   "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+   "overskrift": "Efterspørgslen på Astra bremser nye Pro-abonnementer",
+   "tekst": "OpenAI har ifølge TechCrunch sat nye Pro-tegninger på pause, fordi efterspørgslen på Astra presser infrastrukturen. Selskabet oplyser, at blandt andet API, Go og Plus fortsat er tilgængelige. Hvor længe pausen varer, og om eksisterende kunder påvirkes, er ikke oplyst.",
+   "kategori": "Penge & marked",
    "billede": "",
-   "kategori": "Samfund & etik"
+   "dato": "2026-09-10T20:59:51+00:00",
+   "andre": [],
+   "titel": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+   "rubrik": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
+   "resume_da": "OpenAI har midlertidigt stoppet nye tegninger af Pro-abonnementet til 200 dollar om måneden, fordi efterspørgslen efter modellen Astra belaster infrastrukturen.",
+   "artikel_signatur": "3767584edb559a54833f9b2f978019215cbab54e51fc7dd68a1b6d8f10da3d0f"
   },
   {
-   "overskrift": "Hackere tømmer Claude-abonnementer",
-   "tekst": "En britisk konsulent opdagede, at ubudne gæster brugte hans Claude Max-abonnement, og flere brugere fortæller ifølge TechCrunch samme historie: Regningen løber, uden de selv er aktive. Problemet er, at firmaet ikke tilbyder en specificeret oversigt over dit forbrug. Hvis du betaler for et Claude-abonnement, kan en hacker altså i hemmelighed tømme din kvote i månedsvis, før du opdager det.",
-   "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-   "billede": "data/img/01bb0641d1cbb5f8.jpg",
-   "kategori": "Samfund & etik"
+   "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+   "overskrift": "Tegn dit oplæg til ChatGPTs nye billeder",
+   "tekst": "ChatGPT Images 2.5 får funktionen Sketch: Du kan tegne et oplæg og lade AI arbejde videre med det. Kommentarer direkte på billedet gør det også muligt at udpege præcise ændringer. OpenAI lover hurtigere generering og bedre redigering; det er selskabets egne påstande.",
+   "kategori": "Lanceringer",
+   "billede": "",
+   "dato": "2026-09-08T20:16:09+00:00",
+   "andre": [
+    {
+     "kilde": "OpenAI Blog",
+     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
+     "resume_da": "Værktøjet gør dine skitser og fotos til flottere billeder. Det er en opgradering af billedgeneratoren i ChatGPT.",
+     "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+     "rubrik": "OpenAI klar med nye billedmodeller",
+     "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
+     "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+    }
+   ],
+   "titel": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+   "rubrik": "OpenAI opdaterer ChatGPT-billeder med Sketch",
+   "resume_da": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
+   "artikel_signatur": "69786ad8158ffe8c1633158e033bf626432a1c129e2134671c0a71990412a1d5"
+  },
+  {
+   "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+   "overskrift": "Meta præsenterer Muse til hverdagens opgaver",
+   "tekst": "Metas nye assistent Muse skal ifølge selskabet kunne hjælpe med indkøb, mails og rejseplanlægning. Den kan arbejde i en browser og fortsætte, når appen lukkes. Muse lanceres først i USA. Det centrale løfte er, at assistenten udfører opgaver frem for kun at foreslå næste skridt.",
+   "kategori": "Lanceringer",
+   "billede": "",
+   "dato": "2026-09-08T19:00:00+00:00",
+   "andre": [
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "resume_da": "Meta introducerer AI-assistenten Muse, der kan booke rejser og betale regninger. Spørgsmålet er, om brugerne vil stole på den.",
+     "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+    },
+    {
+     "kilde": "Hacker News: AI",
+     "link": "https://ai.meta.com/muse/",
+     "rubrik": "Meta lancerer Muse – en personlig AI-assistent",
+     "resume_da": "Muse er Metas nye AI-assistent, der skal hjælpe dig i hverdagen. Den er stadig i udvikling, men viser, at Meta satser på at gøre AI mere personlig.",
+     "foerst_set": "2026-09-09T05:10:35.081158+00:00"
+    },
+    {
+     "kilde": "Hacker News: AI",
+     "link": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
+     "rubrik": "Bandet Muse mister navn til Metas nye AI",
+     "resume_da": "Det britiske rockband Muse måtte afgive sine profiler på sociale medier til Metas AI-agent, der også hedder Muse. Bandet stod uden navn.",
+     "foerst_set": "2026-09-10T05:12:15.577694+00:00"
+    },
+    {
+     "kilde": "TechCrunch AI",
+     "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+     "rubrik": "Metas nye AI-app Muse er nummer to i USA",
+     "resume_da": "Muse er en AI-assistent, der hjælper med indkøb og mails. Den vokser langsommere end Metas andre apps.",
+     "foerst_set": "2026-09-10T21:07:39.020467+00:00"
+    },
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+     "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
+     "resume_da": "Metas nye AI-assistent Muse klarer praktiske opgaver, men samler overraskende personlige oplysninger om dig.",
+     "foerst_set": "2026-09-10T17:49:16.718389+00:00"
+    }
+   ],
+   "titel": "Meta bets on AI agent Muse to catch up in AI race",
+   "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
+   "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
+   "artikel_signatur": "1bc79b88a5b14199e3aa02edb8d33297f9f8234b85ea3019c40e91c0acdc88dc"
   }
  ],
+ "tendens": "",
+ "version": 3,
+ "dato": "2026-09-12T03:29:15.326194+00:00",
+ "periode_fra": "2026-09-04T22:00:00+00:00",
+ "periode_til": "2026-09-11T22:00:00+00:00",
+ "metode": "redaktionel",
+ "overblik": [
+  {
+   "tekst": "Mere af arbejdet med AI flytter hen til selve det, du vil ændre. I ChatGPT Images 2.5 kan en skitse være oplægget, og kommentarer på billedet kan udpege en konkret rettelse. Suno v6 tager samme idé ind i musikken: Du kan redigere en del af en sang i chat uden at starte hele nummeret forfra. Det fælles er mere direkte kontrol over resultatet. Men kontrollen er ikke fuld: The Verges Suno-test viste stadig problemer med at følge bestemte instruktioner.",
+   "links": [
+    "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help"
+   ]
+  },
+  {
+   "tekst": "Stemmer og agenter peger i en anden retning: AI skal kunne indgå i en samtale eller arbejde videre med en opgave. OpenAI beskriver GPT-Live-1 som en stemmemodel, hvor samtalen kan gå i begge retninger samtidig. Meta vil med Muse lade assistenten udføre opgaver i en browser, blandt andet indkøb og rejseplanlægning. GPT-Live-1 er en byggesten til udviklere; Muse præsenteres som en assistent til brugeren. De nye muligheder kommer altså ind ad forskellige døre.",
+   "links": [
+    "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race"
+   ]
+  },
+  {
+   "tekst": "Adgangen afgør dog, hvad du faktisk kan tage i brug. Muse starter i USA, mens efterspørgslen på Astra ifølge OpenAI har presset infrastrukturen så meget, at nye Pro-tegninger er sat på pause. Andre planer og API-adgang er ifølge selskabet fortsat åbne. Perioden viser derfor både nye måder at styre og bruge AI på og konkrete begrænsninger i udrulningen. Et stort produktløfte er ikke i sig selv en garanti for, at alle kan bruge det med det samme.",
+   "links": [
+    "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+    "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/"
+   ]
+  }
+ ],
+ "basis_signatur": "8c6b445100c2c4a3677afd39c172a83829e0f1859e73ae5403af9f9d9383bb18",
+ "opdateret": "2026-09-12T03:29:15.326194+00:00",
  "stats": {
-  "historier": 18,
-  "kilder": 7
- },
- "tendens": "Ugens røde tråd er, at AI for alvor rykker ind i musik, finans og telefonsamtaler – men også at tillid og sikkerhed halter bagefter. Suno vælger licenseret musik for at imødekomme kritikken, mens Meta og Claude viser, hvordan misbrug og tyveri rammer helt almindelige brugere. Hold øje med, om OpenAI offentliggør priser på GPT-Live-1, og om flere musik-AI'er følger Sunos licensspor."
+  "historier": 90,
+  "kilder": 9
+ }
 }

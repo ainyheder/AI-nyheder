@@ -146,7 +146,8 @@ class RedaktionTests(unittest.TestCase):
         self.assertEqual(r.behold_aktuelle([], [a], [], NU), [])
         self.assertEqual(r.behold_aktuelle([], [a], [{"navn":"a.example","kun_aktuel":True}], NU), [])
         self.assertEqual(r.behold_aktuelle([], [artikel(kun_aktuel=True)], feeds, NU), [])
-        self.assertEqual(r.behold_aktuelle([], [artikel(timer=169)], feeds, NU), [])
+        self.assertEqual(len(r.behold_aktuelle([], [artikel(timer=169)], feeds, NU)), 1)
+        self.assertEqual(r.behold_aktuelle([], [artikel(timer=193)], feeds, NU), [])
         self.assertEqual(len(r.behold_aktuelle([a], [a,a], feeds, NU)),1)
 
     def test_astra_med_live_v2_vurdering_slaar_branchenyhed(self):

@@ -6,7 +6,8 @@ beregner vægten og vælger en varieret forside. Gamle data virker også.
 import math
 import re
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 from urllib.parse import parse_qsl, urlencode, urlsplit
 
 VERSION = 3
@@ -370,9 +371,17 @@ def forside(artikler, nu=None):
             "ai_vurderet": sum(vurdering(a) is not None for a in artikler)}
 
 
+def ugeperiode(nu):
+    """De syv afsluttede kalenderdage før i dag, efter dansk tid."""
+    slut = nu.astimezone(ZoneInfo("Europe/Copenhagen")).replace(hour=0, minute=0, second=0, microsecond=0)
+    start = slut - timedelta(days=7)
+    return start.astimezone(timezone.utc), slut.astimezone(timezone.utc)
+
+
 def behold_aktuelle(artikler, arkiv, feeds, nu=None):
-    """Bevar syv døgn, når et kort feed ruller videre. Respektér kildevalg."""
+    """Bevar hele ugeperioden plus i dag, også når korte feeds ruller videre."""
     nu = nu or datetime.now(timezone.utc)
+    graense, _ = ugeperiode(nu)
     tilladte = {f["navn"] for f in feeds if not f.get("kun_aktuel")}
     links = {a["link"] for a in artikler}
     resultat = list(artikler)
@@ -380,7 +389,7 @@ def behold_aktuelle(artikler, arkiv, feeds, nu=None):
         d = dato(gammel)
         if (gammel.get("link") not in links and gammel.get("kilde") in tilladte
                 and not gammel.get("kun_aktuel") and d
-                and 0 <= (nu - d).total_seconds() <= 7 * 86400):
+                and graense <= d <= nu):
             resultat.append({**gammel, "dato": d})
             links.add(gammel["link"])
     return resultat
