@@ -90,8 +90,9 @@
       const pattern=/\b(?!(?:model|models|modellen|modeller|version|versionen|release|udgave)\b)(?:[a-z][a-z0-9-]{2,} v\d+(?:\.\d+)*|(?:gpt|gemini|claude|llama|qwen|deepseek|grok|mistral|phi|sora|veo|suno)[- ](?:opus[- ]|sonnet[- ]|haiku[- ])?\d+(?:\.\d+)*)(?:[- ](?:flash|pro|mini|nano|lite|ultra|opus|sonnet|haiku|astra|thinking|instruct|cyber|codex|transcribe|vision|audio|realtime|omni|\d+b))*\b/gi;
       const models=new Set();let unknownVariant=false;
       for(const field of [a.titel,a.rubrik,a.resume_da]){
-        const original=String(field||'').replace(/[‐‑–—]/g,'-');
+        const original=String(field||'').replace(/[‐‑–—]/g,'-').replace(/\b(gpt|gemini|claude|llama|qwen|deepseek|grok|mistral|phi|sora|veo|suno)\s+(?:(?:har|has|just|netop)\s+)?(?:lancerer|lanceret|udgiver|udgivet|frigiver|frigivet|releases?|released|launch(?:es|ed)?|introduces?|introduced)\s+(?:(?:sin|deres|its|the|a|new|ny|nye|nyeste)\s+)*(?=v?\d)/gi,'$1 ');
         for(const m of original.matchAll(pattern)){
+          if(/^[a-z0-9-]*model(?:s|len|ler|serien|serier|series)?$/.test(m[0].toLowerCase().split(' ')[0]))continue;
           if(/^[- ]+[A-ZÆØÅ][a-zA-ZæøåÆØÅ-]+/.test(original.slice(m.index+m[0].length)))unknownVariant=true;
           models.add(m[0].toLowerCase().replace(/[- ]+/g,'-'));
         }

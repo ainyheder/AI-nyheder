@@ -248,6 +248,20 @@ class RedaktionTests(unittest.TestCase):
         for titel in ['Introducing ChatGPT for Financial Services','OpenAI lancerer et plugin til GPT-6']:
             self.assertFalse(r.model_lancering(artikel(titel,redaktion=vurdering(model_lancering=True))))
 
+    def test_suno_med_forskellige_formuleringer_fra_den_rigtige_forside(self):
+        rows=json.loads((Path(__file__).parent/'fixtures/suno-v6.json').read_text())
+        before=copy.deepcopy(rows)
+        samlet=r.unikke_historier(rows)
+        self.assertEqual(len(samlet),1)
+        self.assertEqual(samlet[0]['andre'][0]['link'],rows[1]['link'])
+        self.assertEqual(rows,before)
+        self.assertTrue(c._samme_sag(*rows),'Navnelisten må ikke blokere en korrekt AI-sammenlægning')
+        for tekst in ['Suno har frigivet v6 på licenseret data','Suno releases its v6 music model']:
+            anden={**rows[0],'titel':tekst,'rubrik':tekst}
+            self.assertEqual(len(r.unikke_historier([anden,rows[1]])),1)
+        anden={**rows[1],'rubrik':'Suno v6 Pro er lanceret','titel':'Suno v6 Pro launches','resume_da':'Suno v6 Pro er en separat modelvariant.'}
+        self.assertEqual(len(r.unikke_historier([rows[0],anden])),2)
+
 
 if __name__=="__main__":
     unittest.main(verbosity=2)

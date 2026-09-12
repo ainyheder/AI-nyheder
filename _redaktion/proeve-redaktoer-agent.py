@@ -87,6 +87,43 @@ class AgentTests(unittest.TestCase):
         invalid = plan(self.a); invalid["udvalgte"][0]["kilder"] = [agent.ident(self.b["link"])]
         with self.assertRaises(ValueError): editor.valider(invalid)
 
+    def test_agenten_faar_praecis_fejl_og_kan_rette_afleveringen(self):
+        calls=[]
+        def svar(messages, tools):
+            calls.append(copy.deepcopy(messages))
+            p=plan(self.a)
+            if len(calls)==1: p['udvalgte'][0]['nyt_siden_sidst']='Ny'
+            return tool('aflever_udgave',p)
+        editor=self.lav(svar);editor.laes(agent.ident(self.a['link']))
+        self.assertEqual(editor.koer(),plan(self.a))
+        fejl=json.loads(next(m['content'] for m in reversed(calls[1]) if m['role']=='tool'))['fejl']
+        self.assertIn('nyt_siden_sidst',fejl)
+        self.assertIn('2 tegn',fejl)
+        self.assertIn(agent.ident(self.a['link']),fejl)
+        self.assertEqual(editor.antal_kald,2)
+
+    def test_samme_lancering_maa_ikke_vaelges_to_gange_med_forskellige_links(self):
+        rows=json.loads((Path(__file__).parent/'fixtures/suno-v6.json').read_text())
+        editor=agent.Redaktion(rows,{},'',NU,lambda *_: {},lambda _: {'tekst':KILDE,'henvisninger':[]})
+        for a in rows: editor.laes(agent.ident(a['link']))
+        p=plan(rows[0]);p['udvalgte'].append(valg(rows[1]))
+        with self.assertRaisesRegex(ValueError,'Samme begivenhed'): editor.valider(p)
+        f=editor.forside(p,rows)
+        self.assertFalse(agent.gyldig_forside(f,rows,NU))
+        p=plan(rows[0],[agent.ident(rows[1]['link'])])
+        self.assertEqual(len(editor.valider(p)['udvalgte']),1)
+
+    def test_semantisk_kontrol_ser_anbefalinger_og_gemmer_sin_konklusion(self):
+        messages=[]
+        editor=self.lav(lambda m,t: messages.extend(m) or tool('godkend_udgave',{'godkendt':False,'problemer':['To vinkler på samme lancering']}))
+        editor.laes(agent.ident(self.a['link']));editor.laes(agent.ident(self.b['link']))
+        p=plan(self.a);p['anbefalede']=[agent.ident(self.b['link'])]
+        self.assertFalse(editor.kontroller(p,[self.a,self.b]))
+        payload=json.loads(messages[1]['content'])
+        self.assertEqual(payload['anbefalede'][0]['kilder'][0]['tekst'],KILDE.strip())
+        self.assertEqual(len(payload['kandidatoversigt']),2)
+        self.assertEqual(editor.kontrolproblemer,['To vinkler på samme lancering'])
+
     def test_ukendt_vaerktoej_og_url_udfoeres_ikke(self):
         calls = []
         def svar(messages, tools):

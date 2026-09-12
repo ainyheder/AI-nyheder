@@ -269,7 +269,20 @@ def historie_noegler(a):
         modeller, ukendt_variant = set(), False
         for felt in ("titel", "rubrik", "resume_da"):
             original = re.sub(r"[‐‑–—]", "-", str(a.get(felt) or ""))
+            # Navn og version står ikke altid ved siden af hinanden: fx
+            # "Suno lancerer v6". Fjern kun entydige lanceringsord mellem dem.
+            original = re.sub(
+                r"\b(gpt|gemini|claude|llama|qwen|deepseek|grok|mistral|phi|sora|veo|suno)\s+"
+                r"(?:(?:har|has|just|netop)\s+)?"
+                r"(?:lancerer|lanceret|udgiver|udgivet|frigiver|frigivet|releases?|released|launch(?:es|ed)?|introduces?|introduced)\s+"
+                r"(?:(?:sin|deres|its|the|a|new|ny|nye|nyeste)\s+)*(?=v?\d)",
+                r"\1 ", original, flags=re.I)
             for m in re.finditer(moenster, original, re.I):
+                # "modelserien v6" og "musikmodellen v6" er beskrivelser,
+                # ikke ekstra modeller, der gør den rigtige version tvetydig.
+                familie = m.group().lower().split(" ")[0]
+                if re.fullmatch(r"[a-z0-9-]*model(?:s|len|ler|serien|serier|series)?", familie):
+                    continue
                 # En ukendt navnedel må ikke blive skåret af, så en ny variant
                 # fejlagtigt bliver samlet med grundmodellen.
                 if re.match(r"[- ]+[A-ZÆØÅ][a-zA-ZæøåÆØÅ-]+", original[m.end():]):

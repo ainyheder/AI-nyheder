@@ -36,6 +36,10 @@ def kontroller(root):
         valg = forside.get(felt)
         if not isinstance(valg, list) or any(not isinstance(k, str) or k not in links for k in valg) or len(set(valg)) != len(valg):
             raise ValueError(f"Forsidens {felt} har ukendte eller gentagne historier")
+    kendte = {a["link"]: a for a in artikler}
+    top = [kendte[k] for k in forside["udvalgte"]]
+    if len(redaktion.unikke_historier(top)) != len(top):
+        raise ValueError("Forsidens udvalg gentager samme begivenhed fra forskellige kilder")
     if forside.get("metode") == "agent" and (
             not redaktoer_agent.gyldig_forside(forside, artikler, nu)
             or forside.get("data_opdateret") != data["opdateret"]):

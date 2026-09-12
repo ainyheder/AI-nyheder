@@ -57,7 +57,7 @@ class WorkflowTests(unittest.TestCase):
         p = plan(self.a); p["udvalgte"][0]["skriveopgave"] = ""
         with patch.object(c, "DEEPSEEK_KEY", "test"), patch.object(agent, "deepseek_kald", return_value=tool("aflever_udgave", p)):
             context = c.forbered_redaktoer([self.a, self.b], None, NU)
-        self.assertIn("begrundelse og skriveopgave", context["status"]["forklaring"])
+        self.assertIn("skriveopgave har 0 tegn", context["status"]["forklaring"])
         self.assertEqual(context["status"]["status"], "reserve")
 
     def test_alle_afviste_og_ukontrollerede_briefs_rulles_tilbage(self):
@@ -147,6 +147,12 @@ class WorkflowTests(unittest.TestCase):
             data = {"artikler": [a], "antal": 1, "opdateret": NU.isoformat(), "forside": r.forside([a], NU)}
             def save(d): (root/"data/articles.json").write_text(json.dumps(d))
             save(data); self.assertEqual(kontroller(root), 1)
+            # Forskellige links og rubrikker må ikke omgå udgivelseskontrollen.
+            suno=json.loads((ROOT/'_redaktion/fixtures/suno-v6.json').read_text())
+            duplicated={'artikler':suno,'antal':2,'opdateret':NU.isoformat(),
+                        'forside':{'udvalgte':[s['link'] for s in suno],'raekkefoelge':[s['link'] for s in suno]}}
+            save(duplicated)
+            with self.assertRaisesRegex(ValueError,'samme begivenhed'): kontroller(root)
             for mutate in (
                 lambda d: d.update(antal=2),
                 lambda d: d.update(artikler=[], antal=0),

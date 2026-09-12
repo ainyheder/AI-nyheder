@@ -37,6 +37,15 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   for(const url of ['javascript:alert(1)','data:text/html,test','//evil.example','http://[',''])ok(api.safeUrl(url)==='','Usikkert link afvises: '+url);
   for(const url of ['../secrets','/other.html','data/img/../../secret','https://evil.example/x.jpg'])ok(api.safeUrl(url,true)==='','Ugyldig lokal sti afvises');
   ok(api.escapeHtml('<img onerror="x">').includes('&lt;'),'HTML escapes');
+  const sunoFixture=JSON.parse(fs.readFileSync(path.join(repo,'_redaktion/fixtures/suno-v6.json'),'utf8'));
+  const sunoTime=Date.parse('2026-09-11T12:00:00Z');
+  const oneSuno=api.uniqueStories(sunoFixture);
+  ok(oneSuno.length===1&&oneSuno[0].andre[0].link===sunoFixture[1].link,'De to faktiske Suno-overskrifter bliver én historie med begge kilder');
+  const sunoPlan={metode:'agent',agent_version:1,kontrolleret:true,data_opdateret:new Date(sunoTime).toISOString(),beregnet:new Date(sunoTime).toISOString(),udvalgte:sunoFixture.map(a=>a.link),raekkefoelge:sunoFixture.map(a=>a.link),samlede:{}};
+  ok(api.editorEdition(sunoFixture,sunoPlan,sunoPlan.data_opdateret,sunoTime)===null,'En ellers godkendt plan med to Suno-lanceringer bliver afvist');
+  const sunoPage=await mount({artikler:sunoFixture,opdateret:sunoPlan.data_opdateret,forside:sunoPlan},{now:sunoTime});
+  ok(sunoPage.w.document.querySelectorAll('.lead-story,.feature-story').length===1,'En fejlbehæftet agentplan kan ikke vise begge Suno-omtaler');
+  sunoPage.close();
   const test=await mount();const {w}=test,d=w.document;
   ok(d.querySelectorAll('.lead-story').length===1,'Én hovedhistorie');
   ok(d.querySelectorAll('.feature-story').length===2,'To andre udvalgte historier');

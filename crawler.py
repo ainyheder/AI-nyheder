@@ -1610,6 +1610,13 @@ def _samme_sag(primaer: dict, anden: dict) -> bool:
     er med vilje: den finder dubletter af sig selv, den her siger kun nej til de
     værste af AI'ens gæt. Bliver den strammere, taber vi ægte sammenlægninger.
     """
+    # En bekræftet, navngiven version i samme lanceringsvindue må ikke
+    # afvises, blot fordi firmaet mangler i den gamle navneliste.
+    modeller = {k for k in redaktion.historie_noegler(primaer) & redaktion.historie_noegler(anden)
+                if k.startswith("model:")}
+    d1, d2 = redaktion.dato(primaer), redaktion.dato(anden)
+    if modeller and d1 and d2 and abs((d1-d2).total_seconds()) <= 3*86400:
+        return True
     A, B = _dublet_ord(primaer), _dublet_ord(anden)
     if not A or not B:
         return False
@@ -5770,6 +5777,8 @@ def afslut_redaktoer(context, artikler, nu):
                                 "rubrik": agent.artikler[s["id"]]["rubrik"]} for s in plan["udvalgte"]]})
             else:
                 status.update({"status": "reserve", "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne"})
+                if agent.kontrolproblemer:
+                    status["kontrolproblemer"] = agent.kontrolproblemer
         except Exception as error:
             status.update({"status": "reserve", "forklaring": "Udgavekontrol fejlede: " + type(error).__name__})
     if status.get("status") != "godkendt":
