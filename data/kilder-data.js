@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-11T23:11:34.251144+00:00",
- "artikler_i_alt": 158,
+ "opdateret": "2026-09-11T23:36:30.204566+00:00",
+ "artikler_i_alt": 155,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -657,15 +657,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "TechCrunch AI",
+     2
+    ],
+    [
      "MIT Tech Review AI",
      1
     ],
     [
      "The Verge AI",
-     1
-    ],
-    [
-     "TechCrunch AI",
      1
     ],
     [
@@ -684,8 +684,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 38,
-   "som_ekstra": 8,
+   "i_listen": 36,
+   "som_ekstra": 9,
    "seneste": [
     {
      "rubrik": "Anthropic-forsker advarer om superintelligens",
@@ -695,6 +695,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
+    },
+    {
+     "rubrik": "Matematikere i fejde med OpenAI",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI løser milliongåde – men snød de?"
     },
     {
      "rubrik": "Anthropic anklager Alibaba og DeepSeek for at stjæle AI",
@@ -787,15 +796,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Matematikere i fejde med OpenAI",
-     "dato": "2026-09-11T20:57:36",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-     "side": "artikel/d4514d27691b0738.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
      "dato": "2026-09-11T20:59:47",
      "foerst_set": "2026-09-11T21:11:45",
@@ -884,6 +884,15 @@ window.KILDER_STATUS = {
      "side": "artikel/755f7769e744d036.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "AI-klager vælter CFPB og britisk ombudsmand",
+     "dato": "2026-09-10T14:53:50",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+     "side": "artikel/9ee5bacda2ce8165.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -892,11 +901,11 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Ars Technica AI",
-     1
+     "Simon Willison AI",
+     2
     ],
     [
-     "Simon Willison AI",
+     "Ars Technica AI",
      1
     ],
     [
@@ -1231,6 +1240,10 @@ window.KILDER_STATUS = {
      1
     ],
     [
+     "Google DeepMind",
+     1
+    ],
+    [
      "TechCrunch AI",
      1
     ]
@@ -1503,9 +1516,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google DeepMind kortlægger 9 milliarder DNA-ændringer",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
+    },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
      "dato": "",
@@ -1514,15 +1536,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
-    },
-    {
-     "rubrik": "Google DeepMind kortlægger 9 milliarder DNA-ændringer",
-     "dato": "2026-09-08T14:00:15",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "artikel/8aaadec7c05e0c22.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1610,6 +1623,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
