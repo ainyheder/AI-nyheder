@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T06:53:48.023528+00:00",
- "artikler_i_alt": 149,
+ "opdateret": "2026-09-12T07:03:00.381936+00:00",
+ "artikler_i_alt": 150,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -525,8 +525,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 11,
-   "som_ekstra": 2,
+   "i_listen": 12,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "OpenAI-forsker: Vi skal bygge AI til forsvar",
@@ -547,20 +547,11 @@ window.KILDER_STATUS = {
      "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
     },
     {
-     "rubrik": "Ny GPT-6 Astra laver Fabergé-æg i Blender",
-     "dato": "",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
-    },
-    {
-     "rubrik": "OpenAI-agent mistænkes for RubyGems-angreb",
+     "rubrik": "OpenAI-agenter bag angreb på RubyGems",
      "dato": "2026-09-12T00:42:25",
      "foerst_set": "2026-09-12T00:50:07",
      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-     "side": "",
+     "side": "artikel/5c41fc251a24d093.html",
      "hvor": "forside",
      "under": ""
     },
@@ -628,6 +619,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Simon Willison viser .blend-URL-fremviser",
+     "dato": "2026-09-09T23:58:32",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI vil lade AI forbedre sig selv",
      "dato": "2026-09-06T23:57:40",
      "foerst_set": "2026-09-11T14:38:09",
@@ -658,7 +658,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     2
     ],
     [
      "MIT Tech Review AI",
@@ -684,18 +684,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 35,
    "som_ekstra": 9,
    "seneste": [
-    {
-     "rubrik": "Frist i nat for TechCrunch-arrangementer",
-     "dato": "",
-     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-     "side": "",
-     "hvor": "under",
-     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
-    },
     {
      "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
      "dato": "",
@@ -796,11 +787,11 @@ window.KILDER_STATUS = {
      "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
-     "rubrik": "Sequoia køber sig ind i Mecka AI",
+     "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
      "dato": "2026-09-11T22:58:17",
      "foerst_set": "2026-09-11T23:11:34",
      "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-     "side": "",
+     "side": "artikel/c923ead07513500b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -827,6 +818,15 @@ window.KILDER_STATUS = {
      "dato": "2026-09-11T20:33:18",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sidste frist for TechCrunch Disrupt-sideevents",
+     "dato": "2026-09-11T20:30:17",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -891,15 +891,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
      "side": "artikel/755f7769e744d036.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
-     "dato": "2026-09-10T14:17:37",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-     "side": "artikel/d40cabdd4c17da18.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1100,12 +1091,12 @@ window.KILDER_STATUS = {
      7
     ],
     [
-     "Simon Willison AI",
+     "Ars Technica AI",
      3
     ],
     [
-     "Ars Technica AI",
-     3
+     "Simon Willison AI",
+     2
     ],
     [
      "Hacker News: AI",
@@ -1250,6 +1241,10 @@ window.KILDER_STATUS = {
     ],
     [
      "Hacker News: AI",
+     1
+    ],
+    [
+     "Google DeepMind",
      1
     ]
    ]
@@ -1539,9 +1534,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "DeepMind kortlægger DNA-ændringer med AlphaGenome Atlas",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
+    },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
      "dato": "",
@@ -1550,15 +1554,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
-    },
-    {
-     "rubrik": "DeepMind kortlægger DNA-ændringer med AlphaGenome Atlas",
-     "dato": "2026-09-08T14:00:15",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "artikel/8aaadec7c05e0c22.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1646,6 +1641,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
