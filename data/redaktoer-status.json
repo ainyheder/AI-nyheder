@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-12T07:03:00.381936+00:00",
+  "opdateret": "2026-09-12T07:32:40.327948+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,10 +7,10 @@
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "13557a5034b391b9",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Henvis kun til læste kilder med tilstrækkeligt materiale",
-  "modelkald": 7,
-  "kildehentninger": 6,
+  "input_fingerprint": "ecf9c2f774751e96",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -29,19 +29,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -66,7 +54,7 @@
     },
     {
       "vaerktoej": "laes_kilde",
-      "fejl": "Expecting ':' delimiter: line 1 column 32 (char 31)"
+      "fejl": null
     },
     {
       "vaerktoej": "laes_kilde",
@@ -74,40 +62,44 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "fejl": "Expecting value: line 1 column 3862 (char 3861)"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
       "grundlag": "kildetekst"
     }
   ],
