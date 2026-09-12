@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Simon Willison lukker Datasette-huller efter AI-fund</title>
-<meta name="description" content="To sikkerhedsopdateringer til Datasette efter et større audit, hvor AI-modeller fandt subtile fejl. Opdateringerne anbefales til alle med offentligt tilgængelige instanser.">
+<title>AI-nyheder.com · Datasette får sikkerhedsrettelser efter AI-audit</title>
+<meta name="description" content="Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.">
 <link rel="canonical" href="https://ainyheder.com/artikel/3b42aec52f1320a9.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="Simon Willison lukker Datasette-huller efter AI-fund">
-<meta property="og:description" content="To sikkerhedsopdateringer til Datasette efter et større audit, hvor AI-modeller fandt subtile fejl. Opdateringerne anbefales til alle med offentligt tilgængelige instanser.">
+<meta property="og:title" content="Datasette får sikkerhedsrettelser efter AI-audit">
+<meta property="og:description" content="Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.">
 <meta property="og:url" content="https://ainyheder.com/artikel/3b42aec52f1320a9.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/10c584e0244f3391.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Simon Willison lukker Datasette-huller efter AI-fund", "description": "To sikkerhedsopdateringer til Datasette efter et større audit, hvor AI-modeller fandt subtile fejl. Opdateringerne anbefales til alle med offentligt tilgængelige instanser.", "url": "https://ainyheder.com/artikel/3b42aec52f1320a9.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/3b42aec52f1320a9.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/10c584e0244f3391.jpg", "datePublished": "2026-09-11T03:27:16+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/datasette-security/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Datasette får sikkerhedsrettelser efter AI-audit", "description": "Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.", "url": "https://ainyheder.com/artikel/3b42aec52f1320a9.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/3b42aec52f1320a9.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/10c584e0244f3391.jpg", "datePublished": "2026-09-11T03:27:16+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/datasette-security/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -57,18 +57,18 @@ footer a { color:var(--accent); }
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Hverdags-AI · Simon Willison AI · 2026-09-11</div>
-<h1>Simon Willison lukker Datasette-huller efter AI-fund</h1>
-<p class="manchet">To sikkerhedsopdateringer til Datasette efter et større audit, hvor AI-modeller fandt subtile fejl. Opdateringerne anbefales til alle med offentligt tilgængelige instanser.</p>
+<h1>Datasette får sikkerhedsrettelser efter AI-audit</h1>
+<p class="manchet">Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.</p>
 <img class="top" src="/data/img/10c584e0244f3391.jpg" alt="To små, identiske hængelåse på en rustfri stålwire - den ene låst, den anden åben med nøglen siddende i.">
-<h2>Det er sket</h2>
-<p>Simon Willison har udgivet to sikkerhedsopdateringer til Datasette: <strong>1.0a39</strong> og <strong>0.65.4</strong>. Den ene er til den nuværende alpha-serie, den anden til den stabile 0.65.x-familie. Opdateringerne retter sikkerhedsfejl, som især bør installeres, hvis man kører en Datasette-instans på det offentlige internet – særligt hvis den blander offentlige og private tabeller.</p>
-<h2>AI fandt fejlene</h2>
-<p>Efter rapporter fra Sevban Dönmez gennemførte Willison og Alex Garcia en omfattende audit af Datasette ved hjælp af <strong>Claude Fable 5.1</strong>, <strong>GPT-5.6</strong> og <strong>GPT-6 Astra</strong>. Modellerne fandt meget subtile fejl. Willison skriver, at de fremover vil inddrage sikkerhedsaudits fra førende AI-modeller i alt deres udviklingsarbejde.</p>
-<h2>Sådan blev det løst</h2>
-<p>Arbejdet blev delt i et privat repository: én person skrev automatiske tests, der afslørede problemet, og en anden implementerede rettelsen. På den måde fik to mennesker øje på hver fejl – ud over de kodningsagenter, der kørte forskellige modeller. Hele processen tog næsten en uge med fælles gennemgang og rettelser.</p>
+<h2>To versioner udgivet</h2>
+<p>Simon Willison har udgivet <strong>Datasette 1.0a39</strong> og <strong>0.65.4</strong>. Den ene er til den aktuelle alpha-serie, den anden til den stabile 0.65.x-familie. Begge er sikkerhedsrettelser, som ifølge Willison bør installeres, hvis man kører en Datasette-instans offentligt på nettet – især hvis instansen blander både offentlige og private tabeller.</p>
+<h2>Audit med AI-modeller</h2>
+<p>Efter rapporter fra Sevban Dönmez gennemførte Alex Garcia og Simon Willison en omfattende audit af Datasette ved hjælp af <strong>Claude Fable 5.1</strong>, <strong>GPT-5.6</strong> og <strong>GPT-6 Astra</strong>. De brugte næsten en uge på at samarbejde om og gennemgå rettelserne. Ifølge Willison fandt modellerne meget subtile fejl, og sikkerhedsaudits med frontier-modeller skal fremover indgå i al udvikling.</p>
+<h2>To personer pr. fejl</h2>
+<p>Arbejdet blev delt i et privat repository. For de fleste fejl skrev den ene person automatiske tests, der fremhævede problemet, mens den anden implementerede rettelsen. På den måde havde to forskellige mennesker øje på hver sag – ud over de kodende agenter, som kørte forskellige modeller.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>To sikkerhedsopdateringer: 1.0a39 og 0.65.4.</li><li>Rettelserne er vigtigst for offentlige instanser med både offentlige og private tabeller.</li><li>Audit udført med Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.</li><li>Fejlene blev først rapporteret af Sevban Dönmez.</li><li>Alex Garcia og Simon Willison samarbejdede om rettelserne i næsten en uge.</li><li>Fremover vil AI-baserede sikkerhedsaudits indgå i al udvikling.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Kører du Datasette offentligt med blandede tabeller, bør du opdatere nu for at lukke sikkerhedshuller.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>Udgiver: Simon Willison.</li><li>Fejl rapporteret af Sevban Dönmez.</li><li>Audit og rettelser: Alex Garcia og Simon Willison.</li><li>Auditten brugte Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.</li><li>Rettelserne tog næsten en uge at samarbejde om og gennemgå.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Kører du en offentlig Datasette-instans med både offentlige og private tabeller, bør du opdatere til en af de to nye versioner.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Sep/11/datasette-security/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

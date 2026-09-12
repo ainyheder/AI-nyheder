@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-12T01:36:54.690087+00:00",
+ "genereret": "2026-09-12T01:44:32.763050+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,29 +160,31 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-12T01:26:28.675967+00:00",
-  "antal": 150,
+  "opdateret": "2026-09-12T01:37:09.973526+00:00",
+  "antal": 151,
   "med_billede": 8,
-  "paa_dansk": 150,
+  "paa_dansk": 151,
   "kategorier": {
-   "Lanceringer": 37,
+   "Lanceringer": 36,
    "Politik \u0026 jura": 18,
    "Samfund \u0026 etik": 24,
-   "Penge \u0026 marked": 20,
-   "Forskning": 25,
-   "Hverdags-AI": 26
+   "Penge \u0026 marked": 19,
+   "Forskning": 28,
+   "Hverdags-AI": 25,
+   "Labs": 1
   },
   "kilder": {
+   "OpenAI Blog": 18,
    "The Verge AI": 19,
-   "OpenAI Blog": 20,
-   "TechCrunch AI": 38,
+   "TechCrunch AI": 36,
    "Hugging Face": 12,
-   "Simon Willison AI": 13,
    "Ars Technica AI": 11,
+   "Simon Willison AI": 11,
    "Google Gemini": 8,
    "MIT Tech Review AI": 5,
    "Mistral AI": 4,
    "Google DeepMind": 9,
+   "Anthropic News": 7,
    "xAI News": 11
   },
   "udvalgte": [
@@ -198,13 +200,23 @@ window.KOMMANDO_DATA = {
    },
    {
     "titel": "Suno releases its first AI music model made with record industry help",
-    "rubrik": "Suno lancerer AI-musikmodel bygget med hjælp fra Warner",
+    "rubrik": "Suno lancerer v6 på licenseret musikdata",
     "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "side": "artikel/65f77bd4eb92a797.html",
     "kategori": "Lanceringer",
     "kilde": "The Verge AI",
     "dato": "2026-09-09T17:42:19-04:00",
     "billede": "data/img/4e4ab257aa1f2edb.jpg"
+   },
+   {
+    "titel": "Suno replaces its AI models with a new one trained on licensed music as copyright suits pile up",
+    "rubrik": "Suno v6: egen model på licenseret musik",
+    "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+    "side": "artikel/04755a5637fde299.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-09T12:05:34+00:00",
+    "billede": "data/img/b253db15b0551ed9.jpg"
    },
    {
     "titel": "Build more natural voice experiences with GPT‑Live‑1 in the API",
@@ -233,17 +245,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "Ars Technica AI",
     "dato": "2026-09-11T13:02:35+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "AI agents are flooding public services with new requests",
-    "rubrik": "AI-klager vælter CFPB og britisk ombudsmand",
-    "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
-    "side": "artikel/9ee5bacda2ce8165.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-10T14:53:50+00:00",
-    "billede": ""
+    "billede": "data/img/01bb0641d1cbb5f8.jpg"
    }
   ],
   "seneste": [
@@ -256,24 +258,6 @@ window.KOMMANDO_DATA = {
     "kilde": "OpenAI Blog",
     "dato": "2026-09-11T16:00:00+00:00",
     "billede": "data/img/70bf1f3046a8dc5b.jpg"
-   },
-   {
-    "titel": "OpenAI agents attacked RubyGems back in May",
-    "rubrik": "Rapport: OpenAI-agenter bag angreb på RubyGems",
-    "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-12T00:42:25+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-    "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
-    "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "kategori": "Lanceringer",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-09-14T00:00:00+00:00",
-    "billede": ""
    },
    {
     "titel": "So you want to use OpenRouter?",
@@ -332,15 +316,6 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
-    "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
-    "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T18:41:49+00:00",
-    "billede": ""
-   },
-   {
     "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
     "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
     "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
@@ -357,28 +332,64 @@ window.KOMMANDO_DATA = {
     "kilde": "MIT Tech Review AI",
     "dato": "2026-09-11T20:05:06+00:00",
     "billede": ""
+   },
+   {
+    "titel": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+    "rubrik": "Sidste chance for stand på TechCrunch Disrupt",
+    "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-11T20:33:18+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
+    "rubrik": "Frist i nat for TechCrunch-arrangementer",
+    "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-11T20:30:17+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic spent this week in hot water over cybersecurity",
+    "rubrik": "Anthropic: Fire AI-modeller hackede eksterne systemer",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+    "side": "artikel/3409c3c31dfa6b1f.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-11T12:09:14-04:00",
+    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-12T01:26:28.675967+00:00",
+  "opdateret": "2026-09-12T01:37:09.973526+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Mangler konkret redaktionel begrundelse og skriveopgave",
+  "modelkald": 7,
   "kildehentninger": 8,
   "regelbaseret_udvalg": [
    "https://openai.com/index/cognition-devin-testing-with-astra",
    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-   "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+   "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/"
   ],
   "udgivet_udvalg": [
    "https://openai.com/index/cognition-devin-testing-with-astra",
    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-   "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+   "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/"
   ],
   "vaerktoejer": [
    {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
@@ -424,7 +435,7 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": null
+    "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
    }
   ],
   "kildegrundlag": [
@@ -433,23 +444,19 @@ window.KOMMANDO_DATA = {
     "grundlag": "rss_resume"
    },
    {
-    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "grundlag": "rss_resume"
+    "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "grundlag": "utilgaengelig"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+    "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+    "link": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
     "grundlag": "kildetekst"
    },
    {
@@ -457,13 +464,17 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-12T01:26:18.410511+00:00",
+  "opdateret": "2026-09-12T01:37:09.307700+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -651,8 +662,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-12T01:26:28.675967+00:00",
-  "artikler_i_alt": 150,
+  "opdateret": "2026-09-12T01:37:09.973526+00:00",
+  "artikler_i_alt": 151,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -661,12 +672,76 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "HTTPError: HTTP Error 500: Internal Server Error",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 13,
+    "i_listen": 7,
     "som_ekstra": 0,
-    "seneste": []
+    "seneste": [
+     {
+      "rubrik": "Anthropic lancerer Claude Fable 5.1 og Claude Mythos 5.1",
+      "dato": "2026-09-01T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic gransker sikkerhedshændelser med Claude",
+      "dato": "2026-08-31T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic udvikler sikkerhedsgrænser til kunder",
+      "dato": "2026-09-01T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic viser Model Hardware Standard frem",
+      "dato": "2026-08-27T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic udvider støtte til forskere",
+      "dato": "2026-08-27T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic finansierer evalueringer af trivsel",
+      "dato": "2026-08-25T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic forklarer Claudes tekstvandmærke",
+      "dato": "2026-08-14T00:00:00",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://www.anthropic.com/news/claude-text-watermark",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     }
+    ]
    },
    {
     "navn": "Mistral AI",
@@ -1098,9 +1173,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 13,
-    "som_ekstra": 0,
+    "i_listen": 11,
+    "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "Rapport: OpenAI-agenter bag angreb på RubyGems",
+      "dato": "",
+      "foerst_set": "2026-09-12T00:50:07",
+      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI lancerer Agents API til cloud-agenter"
+     },
      {
       "rubrik": "OpenAI-forsker: Vi skal bygge AI til forsvar",
       "dato": "",
@@ -1111,13 +1195,13 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI vil lade AI forbedre sig selv"
      },
      {
-      "rubrik": "Rapport: OpenAI-agenter bag angreb på RubyGems",
-      "dato": "2026-09-12T00:42:25",
-      "foerst_set": "2026-09-12T00:50:07",
-      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+      "rubrik": "OpenAI klar med nye billedmodeller",
+      "dato": "",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
       "side": "",
-      "hvor": "forside",
-      "under": ""
+      "hvor": "under",
+      "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
      },
      {
       "rubrik": "OpenRouter-endpoint kan give forskellig modeladfærd",
@@ -1147,15 +1231,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI klar med nye billedmodeller",
-      "dato": "2026-09-08T22:46:33",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-      "side": "artikel/888f8e60fc3fef94.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
       "dato": "2026-09-10T00:56:41",
       "foerst_set": "2026-09-11T14:38:09",
@@ -1165,7 +1240,7 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Simon Willison lukker Datasette-huller efter AI-fund",
+      "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
       "dato": "2026-09-11T03:27:16",
       "foerst_set": "2026-09-11T14:38:09",
       "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
@@ -1221,9 +1296,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 38,
-    "som_ekstra": 7,
+    "i_listen": 36,
+    "som_ekstra": 9,
     "seneste": [
+     {
+      "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
+      "dato": "",
+      "foerst_set": "2026-09-11T21:11:45",
+      "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic: Fire AI-modeller hackede eksterne systemer"
+     },
      {
       "rubrik": "Metas nye AI-app Muse er nummer to i USA",
       "dato": "",
@@ -1288,6 +1372,15 @@ window.KOMMANDO_DATA = {
       "under": "Meta lancerer Muse: AI-assistent til hverdagen"
      },
      {
+      "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
+      "dato": "",
+      "foerst_set": "2026-09-08T21:21:14",
+      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic stopper forsøg på biovåben med Claude"
+     },
+     {
       "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
       "dato": "",
       "foerst_set": "2026-09-08T18:02:43",
@@ -1310,24 +1403,6 @@ window.KOMMANDO_DATA = {
       "dato": "2026-09-11T22:58:17",
       "foerst_set": "2026-09-11T23:11:34",
       "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Moonshot AI vil tjene 2 milliarder om året",
-      "dato": "2026-09-11T19:35:54",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-forsker siger op i dobbeltmoralsk opråb",
-      "dato": "2026-09-11T18:41:49",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -1489,15 +1564,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Anthropic stopper forsøg på biovåben med Claude",
-      "dato": "2026-09-11T13:02:35",
-      "foerst_set": "2026-09-11T13:27:19",
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
-      "side": "artikel/e4ed798161e112b3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Google køber Spirit-data i konkurs – nu protesterer startups",
       "dato": "2026-09-10T18:14:14",
       "foerst_set": "2026-09-10T21:07:39",
@@ -1521,6 +1587,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-09T13:51:27",
       "link": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
       "side": "artikel/42181b1ff39c980e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic stopper forsøg på biovåben med Claude",
+      "dato": "2026-09-11T13:02:35",
+      "foerst_set": "2026-09-08T21:21:14",
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "side": "artikel/e4ed798161e112b3.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1659,9 +1734,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 25,
-    "i_listen": 20,
+    "i_listen": 18,
     "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
+      "dato": "",
+      "foerst_set": "2026-09-12T00:50:07.984240+00:00",
+      "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "side": "",
+      "hvor": "under",
+      "under": "GPT-6 Astra forbedrer Devins egen test"
+     },
      {
       "rubrik": "OpenAI lancerer GPT-6 Astra til arbejdsbrug",
       "dato": "",
@@ -1679,6 +1763,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI henter forsker Paul Christiano i bestyrelsen"
+     },
+     {
+      "rubrik": "1Password øger effektiviteten 21 procent med OpenAI Codex",
+      "dato": "",
+      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "link": "https://openai.com/index/1password",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI: GPT-5.6 Sol styrer kvantecomputere"
      },
      {
       "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
@@ -1717,15 +1810,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
-      "dato": "2026-09-14T00:00:00",
-      "foerst_set": "2026-09-12T00:50:07",
-      "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "OpenAI bygger lager til 1 milliard ChatGPT-brugere",
       "dato": "2026-09-11T10:00:00",
       "foerst_set": "2026-09-11T17:51:30",
@@ -1758,15 +1842,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-10T17:49:16",
       "link": "https://openai.com/index/expanding-ai-access-us-government",
       "side": "artikel/aa2ea623e7d1a173.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
-      "dato": "2026-09-10T15:00:00",
-      "foerst_set": "2026-09-10T17:49:16",
-      "link": "https://openai.com/index/put-data-to-work",
-      "side": "artikel/d86fa96aa31ae332.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1945,7 +2020,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-12T01:36:50.599333+00:00",
+  "opdateret": "2026-09-12T01:44:29.730443+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
