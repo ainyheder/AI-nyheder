@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · OpenRouter giver uforudsigelige svar</title>
-<meta name="description" content="OpenRouter kan sende dine AI-kald til forskellige udbydere med samme model - og det giver svingende resultater.">
+<title>AI-nyheder.com · OpenRouter-endpoint kan give forskellig modeladfærd</title>
+<meta name="description" content="Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.">
 <link rel="canonical" href="https://ainyheder.com/artikel/156917f0352e1cf1.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="OpenRouter giver uforudsigelige svar">
-<meta property="og:description" content="OpenRouter kan sende dine AI-kald til forskellige udbydere med samme model - og det giver svingende resultater.">
+<meta property="og:title" content="OpenRouter-endpoint kan give forskellig modeladfærd">
+<meta property="og:description" content="Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.">
 <meta property="og:url" content="https://ainyheder.com/artikel/156917f0352e1cf1.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "OpenRouter giver uforudsigelige svar", "description": "OpenRouter kan sende dine AI-kald til forskellige udbydere med samme model - og det giver svingende resultater.", "url": "https://ainyheder.com/artikel/156917f0352e1cf1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/156917f0352e1cf1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-09-11T22:49:18+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "OpenRouter-endpoint kan give forskellig modeladfærd", "description": "Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.", "url": "https://ainyheder.com/artikel/156917f0352e1cf1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/156917f0352e1cf1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-09-11T22:49:18+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -57,18 +57,18 @@ footer a { color:var(--accent); }
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
 <div class="kicker">Hverdags-AI · Simon Willison AI · 2026-09-11</div>
-<h1>OpenRouter giver uforudsigelige svar</h1>
-<p class="manchet">OpenRouter kan sende dine AI-kald til forskellige udbydere med samme model - og det giver svingende resultater.</p>
+<h1>OpenRouter-endpoint kan give forskellig modeladfærd</h1>
+<p class="manchet">Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.</p>
 
-<h2>Det er problemet</h2>
-<p>OpenRouter tilbyder én indgang til mange AI-modeller. Men hvis du ikke styrer, hvor kaldet ender, kan du få vidt forskellige svar. Ifølge Mohamed Moustafa kører udbyderne med hver deres software og optimeringer. Det betyder, at den samme model kan opføre sig anderledes, alt efter hvem der svarer.</p>
-<h2>Det kan gå galt</h2>
-<p>Nogle udbydere mangler endda evnen til at håndtere billeder i modeller, der ellers kan se. Måden, hvorpå indstillinger som reasoning effort bliver behandlet, varierer også. For en bruger, der bare vil have et stabilt svar, kan det føre til uventede resultater. Derfor er det vigtigt at vide, hvem der står bag svaret.</p>
-<h2>Sådan fikser du det</h2>
-<p>Heldigvis kan du låse, hvilken udbyder OpenRouter bruger, med indstillingen provider.only. Du kan også hente en liste over mulige udbydere for et bestemt model-id via /endpoints-metoden. På den måde undgår du overraskelser og får ensartede svar fra den samme bagvedliggende tjeneste.</p>
+<h2>Routing bag kulissen</h2>
+<p>OpenRouter markedsfører ifølge Simon Willison, at tjenesten automatisk håndterer fallbacks og vælger den mest omkostningseffektive mulighed for hver forespørgsel. Derfor kan man kalde ét API-endpoint for en model og blive sendt videre til en udbyder, der kører modellen. Problemet er, at udbyderne ikke nødvendigvis kører modellen ens.</p>
+<h2>Forskelle mellem udbydere</h2>
+<p>Mohamed Moustafa peger på en række måder, hvor routing kan skabe problemer. Udbydere bruger forskelligt serveringssoftware med forskellige optimeringer og indstillinger, så samme endpoint kan give forespørgsler, der opfører sig forskelligt. Nogle udbydere mangler ifølge kilden endda synsevne til synsmodeller, og behandlingen af indstillingen for reasoning effort kan også variere.</p>
+<h2>Styr udbyderen selv</h2>
+<p>Man kan styre, hvilken udbyder der bruges, med indstillingen provider.only. Metoden /endpoints returnerer listen over tilgængelige udbydere for et bestemt model-ID, så man kan se, hvad der er til rådighed, før man vælger. Dermed kan man undgå de udbydere, hvis version af modellen ikke passer til ens behov.</p>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>OpenRouter tilbyder ét API-endpoint til mange AI-modeller.</li><li>Men kaldet kan havne hos forskellige udbydere med hver sin opsætning.</li><li>Det giver uforudsigelig adfærd og svingende svar.</li><li>Nogle udbydere mangler billedgenkendelse i vision-modeller.</li><li>Indstillingen reasoning effort behandles forskelligt.</li><li>Du kan tvinge en bestemt udbyder med provider.only.</li><li>Metoden /endpoints viser hvilke udbydere, der er tilgængelige.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Hvis du bruger OpenRouter uden at vælge udbyder, risikerer du svar, der ikke matcher det, du forventer. Vælg bevidst for at få ensartet kvalitet.</div>
+<div class="boks"><strong>Detaljerne</strong><ul><li>OpenRouter er ifølge kilden et samlet API-endpoint for flere modeludbydere.</li><li>provider.only begrænser hvilke udbydere der kan bruges til en forespørgsel.</li><li>/endpoints viser tilgængelige udbydere for et model-ID.</li><li>Forskelligt serveringssoftware kan give forskellig optimering og adfærd.</li><li>Reasoning effort kan behandles forskelligt afhængigt af udbyder.</li></ul></div>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Vælger man ikke udbyder bevidst, kan samme model-ID give uventet adfærd eller mangle funktioner som syn.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

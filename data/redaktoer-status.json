@@ -1,26 +1,18 @@
 {
-  "opdateret": "2026-09-11T23:36:30.204566+00:00",
+  "opdateret": "2026-09-12T00:50:07.984240+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ],
-  "input_fingerprint": "f053c0aa1b2997d8",
-  "forklaring": "Redaktionsmødet fejlede: ValueError",
-  "modelkald": 7,
+  "input_fingerprint": "f71cab690e2db788",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 3,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -51,31 +43,31 @@
     {
       "vaerktoej": "laes_kilde",
       "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": "Kildebudget opbrugt; aflever på det kendte grundlag"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Mangler konkret redaktionel begrundelse og skriveopgave"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://suno.com/blog/introducing-v6",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
@@ -83,25 +75,17 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series"
   ]
 }
