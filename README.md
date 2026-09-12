@@ -29,7 +29,7 @@ Forside-redaktøren styres med den almindelige tekst under **AI-redaktør**.
 Trinnet **Kontrollér artiklen** under modeller er artikelkorrektur, ikke
 forside-redaktøren. Under **Billeder & stil** ændres instruktionen til motivet;
 den skifter ikke billedgenerator og genlaver ikke eksisterende billeder.
-Cloudflare-billedgenerering er endnu ikke tilsluttet. Ønsker, opgaver, historik
+Cloudflare-billedgenerering er tilsluttet i koden; liveadgang er ikke verificeret lokalt. Ønsker, opgaver, historik
 og den fulde læseranalyse er bevaret i de avancerede værktøjer, som centralen
 linker til under **Drift & arbejdsrum**.
 
@@ -49,13 +49,13 @@ Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/ar
 
 ## AI-model
 
-Den daglige tekstmodel er **DeepSeek V4.1 Flash**, med API-navnet `deepseek-flash`. Alle arbejdstrin uden et særskilt modelvalg følger denne standard. Billedmodellen er uændret. Ændringen træder i kraft ved næste crawlerkørsel efter upload; tidligere artikeltekster omskrives ikke automatisk.
+Den daglige tekstmodel er **DeepSeek V4.1 Flash**, med API-navnet `deepseek-flash`. Alle arbejdstrin uden et særskilt modelvalg følger denne standard. Den valgte billedmodel er FLUX.2 Klein 4B via Cloudflare. Ændringer træder i kraft ved næste crawlerkørsel efter upload.
 
 Officielt modelnavn: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
 
 ## Sådan udvælges nyhederne
 
-`crawler.py` henter kilderne og får AI til at vurdere hver historie. Derefter holder **redaktøragenten** et redaktionsmøde med DeepSeek V4.1 Flash. Den kan vælge hovedhistorier anderledes end den gamle pointliste. Den godkendte plan styrer forsiden; `redaktion.py` er reserve og bruges fortsat til den øvrige prioritering, quiz og billedbudget.
+`crawler.py` henter kilderne og får AI til at vurdere hver historie. Derefter holder **redaktøragenten** et redaktionsmøde med DeepSeek V4.1 Flash. Den kan vælge hovedhistorier anderledes end den gamle pointliste. Den godkendte plan styrer forsiden, billedbudgettet, dagens overblik og kandidater til sociale opslag. `redaktion.py` er reserve og bruges fortsat til arkivets prioritering og ugens indhold.
 
 Kildelisten har **12 aktive internationale kilder**: direkte modelnyheder, åbne modeller, praktiske tests og internationale medier. Den brede arXiv-strøm og Hacker News-søgningen er pauset. Dansk er formidlingssproget; Danmark eller EU giver ingen bonus i udvælgelsen. Se [kildegennemgangen](opsaetning/kildegennemgang.md) for adresser, begrundelser og adgangsbegrænsninger. `python3 opsaetning/proev-kilder.py` kontrollerer kilderne uden AI-kald, filændringer eller udsendelser. Husk også den nye `nyhedskilder.py` ved upload; den læser Anthropic og xAI direkte fra deres nyhedsoversigter.
 
@@ -66,7 +66,7 @@ Kildelisten har **12 aktive internationale kilder**: direkte modelnyheder, åbne
 - **Kildeadgang:** Agenten bruger ægte API-værktøjskald til at finde i kandidatlisten, læse kendte kilder og følge officielle henvisninger fundet i materialet. Den har ikke en generel websøgning. Kildetekster behandles som data; manglende adgang markeres som et RSS-resumé eller utilgængelig kilde.
 - **Skriveopgaver:** Agenten vælger op til tre historier, bestiller en konkret vinkel og kan samle dokumenterede omtaler. Dens opgaver får plads før pointlisten i skrivebudgettet. Et ændret kildegrundlag eller en ændret opgave kan udløse omskrivning af en cached artikel.
 - **Kontrol:** Skribentens udkast og hele udgaven kontrolleres mod de læste kilder. Et afvist udkast erstatter ikke en gemt artikel. Afviser slutkontrollen udgaven, gendannes også de tidligere artikeltekster. Nye kildehenvisninger følger med både i læseren og på den permanente artikelside.
-- **Drift:** Højst syv modelrunder til mødet, otte kildehentninger og ét afsluttende udgavetjek. Skrive- og korrekturkald er derudover begrænset til de tre valgte historier og crawlerens eksisterende budget. Ved uændrede kandidater og instruktioner kan en kontrolleret plan genbruges i fire timer. Fejl bruger en stadig gyldig plan på højst 24 timer eller pointlisten.
+- **Drift:** Højst fire researchrunder, otte kildehentninger og derefter op til tre runder til aflevering og rettelser. Ét afsluttende udgavetjek kommer efter skrivningen. Skrive- og korrekturkald følger crawlerens eksisterende budget med de tre chefvalgte historier først. Ved uændrede kandidater og instruktioner kan en kontrolleret plan genbruges i fire timer. Fejl bruger en stadig gyldig plan på højst 24 timer eller pointlisten.
 
 `data/redaktoer-status.json` viser status, begrundelser, skriveopgaver, modelkald, kildehentninger og både agentens og pointlistens udvalg. Rå kildetekster og API-nøgler gemmes ikke i status eller hukommelse. De nye datafiler kommer automatisk med i den eksisterende GitHub-workflow.
 
@@ -132,9 +132,9 @@ Et fuldt crawl startes med `python3 crawler.py`. Det bruger de konfigurerede API
 
 ## GitHub og automatisk opdatering
 
-Den eksisterende `.github/workflows/crawl.yml` bruges fortsat. Den kører ved push til `main`, manuelt og efter sin tidsplan. Den kører først test af udvælgelsen og derefter crawleren. GitHub Pages serverer filerne fra repoet som hidtil; `CNAME` er bevaret.
+Den eksisterende `.github/workflows/crawl.yml` bruges fortsat. Den kører ved push til `main`, manuelt og hver time. Den kører først regressionstest, derefter crawleren og til sidst kontrol af de genererede filer før commit. Køen deles med modelkataloget; en igangværende kørsel bliver ikke længere afbrudt af nye pushes. En kørsel henter seneste `main`, når den starter. Tidsgrænsen er 50 minutter, eller tre timer ved manuel genkørsel. GitHub Pages serverer filerne fra repoet som hidtil; `CNAME` er bevaret.
 
-Secrets: `DEEPSEEK_API_KEY` eller `GEMINI_API_KEY` til teksten. Billeder kræver `GEMINI_API_KEY`. Eksisterende udbydervalg via `AI_UDBYDER` og individuelle instrukser i `_redaktion/hjerner.json` er bevaret. Ingen API-nøgler må lægges i kildekoden.
+Secrets: `DEEPSEEK_API_KEY` eller `GEMINI_API_KEY` til teksten. FLUX kræver `CLOUDFLARE_ACCOUNT_ID` og `CLOUDFLARE_AI_TOKEN` eller et egnet `CLOUDFLARE_API_TOKEN`; Gemini-billeder kræver `GEMINI_API_KEY`. Eksisterende udbydervalg via `AI_UDBYDER` og individuelle instrukser i `_redaktion/hjerner.json` er bevaret. Ingen API-nøgler må lægges i kildekoden.
 
 Ved upload skal de nye filer også med: især **`redaktion.py`, `assets/nyheder.css`, `assets/nyheder.js` og `assets/artikel.css`**. Ombygningen er lavet i det eksisterende projekt; den kræver hverken ny hosting eller et nyt repository.
 
@@ -222,3 +222,58 @@ GitHub Actions bruger `CLOUDFLARE_ACCOUNT_ID` og enten `CLOUDFLARE_AI_TOKEN`
 eller det eksisterende `CLOUDFLARE_API_TOKEN`. Tokenet skal have Workers AI
 Edit-adgang til kontoen; et token med kun analytics-adgang er utilstrækkeligt.
 Tokens gemmes kun som GitHub Secrets. Liveadgang er ikke verificeret lokalt.
+
+### Redaktionelle instruktioner (12.09.2026)
+De 14 aktive tekstprompts og billedgeneratorens stil er gennemgået og gemt
+i `_redaktion/hjerner.json`. Forsideagentens retning ligger fortsat i
+`opsaetning/redaktoer.md`. Begge redigeres gennem Indstillinger.html.
+“Gendan indbygget standard” fjerner den aktive overstyring for det valgte trin.
+
+Instrukserne prioriterer internationale modellanceringer, skelner mellem
+annoncering/adgang/testresultater, reducerer dubletter og tillader korte
+artikler uden fyld. Motivbeskrivelser skrives på engelsk til FLUX; læsertekster
+er danske. Manglende kildebelæg må ikke udfyldes med gæt.
+
+Særinstrukser for forskning, dybde, kildekontrol og manglende videotranskript
+bevares også med egne prompts. `proeve-redaktionsprompter.py` tester, at de
+aktive instrukser når API-transporten. Testene genererer ikke artikler eller
+billeder og dokumenterer derfor ikke modellernes faktiske outputkvalitet.
+Ændrede vurderingsinstrukser genvurderer op til 120 aktuelle artikler pr. kørsel.
+Ændrede skrive- eller kontrolinstrukser genbehandler de aktuelle topartikler
+inden for det normale loft på 40. Kun godkendte svar opdaterer cachen;
+et afvist eller manglende kontrolsvar bevarer den tidligere tekst. Ældre arkivsider
+og eksisterende billeder genproduceres ikke automatisk ved promptændringer.
+
+### Workflowgennemgang (12.09.2026)
+
+Den lokale status og den senest undersøgte status på GitHub viste begge en
+mislykket aflevering efter syv modelrunder. Agenten manglede en gyldig
+begrundelse eller skriveopgave, og havde ingen runde tilbage til at rette den.
+Den nye arbejdsgang reserverer tid til rettelser og viser den konkrete
+valideringsfejl i kommandocentralens eksisterende statusfelt.
+
+Forløbet er nu: **hent → vurder → saml dubletter → redaktionsmøde → skriv og
+kontrollér → godkend udgaven → illustrér → generér sider → kontrollér filer → commit**.
+Billeder laves først efter udgavekontrollen og kun til de tre fremhævede
+historier. Samlede dubletter kommer ikke tilbage i dagens overblik eller de
+sociale kandidater. Et ændret udvalg kan opdatere dagens overblik inden for
+samme tidsblok. En godkendt tom udgave bliver ikke fyldt op fra pointlisten.
+
+Alle nye artikeludkast kræver godkendelse, også når de ikke er bestilt af
+forsideagenten. De gamle separate AI-kald, som ændrede rubrik og betydning efter
+artikelkontrollen, er fjernet fra det automatiske forløb. Kvalitetsarbejdet sker
+nu i skrivning og kontrol med kildematerialet vedlagt.
+
+`python3 _redaktion/proeve-workflow.py` afprøver fejl, rettelser, cacheændringer,
+samlet udvælgelse og rækkefølgen i crawleren med isolerede testdata.
+`python3 _redaktion/kontroller-udgave.py` kontrollerer de faktiske lokale
+artikeldata, referencer, XML-filer og mergekonflikter uden at ændre noget.
+Kontrollen før commit gælder hjemmesidens filer; den er ikke en transaktion
+omkring eventuelle nyhedsbreve eller sociale udsendelser, som fortsat er
+selvstændige sideeffekter i crawleren. Et push, der kolliderer med en nyere
+ændring på GitHub, overskriver aldrig den nyere ændring med force-push.
+
+Der er ikke kørt et betalt redaktionsmøde eller sendt noget under gennemgangen.
+Testene dokumenterer arbejdsgangen; næste rigtige kørsel skal vise, om modellen
+afleverer korrekt og vælger bedre historier. Agenten har fortsat et afgrænset
+kildekatalog og kan ikke opdage lanceringer, som ingen af kilderne dækker.

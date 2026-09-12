@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(os.environ.get("PROEVE_REPO", Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(REPO))
 spec = importlib.util.spec_from_file_location("c", REPO / "crawler.py")
 c = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(c)
@@ -258,7 +259,12 @@ foer_billeder = {a["link"]: a.get("billede") for a in arts}
 c.ARTIKEL_MAPPE = Path("/tmp/findes-ikke-med-vilje")   # ingen frosne sider at læse
 c.API_KEY = ""                                          # ingen AI-fase, ingen penge
 resultat = c.saml_dublet_historier(rigtige_data())
-ok("L1 ingen artikler tabt", len(resultat) == len(arts), f"{len(resultat)} af {len(arts)}")
+# En korrekt sammenlægning reducerer antallet af kort. Hver oprindelig kilde
+# skal stadig være repræsenteret som hovedhistorie eller som en samlet omtale.
+repraesenteret = {a["link"] for a in resultat}
+repraesenteret.update(k["link"] for a in resultat for k in a.get("andre", []) if k.get("link"))
+mangler = {a["link"] for a in arts} - repraesenteret
+ok("L1 ingen kilder tabt ved sammenlægning", not mangler, sorted(mangler))
 flyttede = {a["link"]: (foer_tider[a["link"]], a.get("foerst_set")) for a in resultat
             if foer_tider.get(a["link"]) and a.get("foerst_set") != foer_tider[a["link"]]}
 mistede = [a["link"] for a in resultat if foer_billeder.get(a["link"]) and not a.get("billede")]

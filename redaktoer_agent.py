@@ -18,6 +18,7 @@ import redaktion
 
 VERSION = 1
 MAX_KALD = 7
+MAX_RESEARCH_RUNDER = 4  # Resten reserveres til aflevering og rettelser.
 MAX_KILDER = 8
 MAX_KANDIDATER = 180
 MAX_TEKST = 6500
@@ -36,13 +37,17 @@ Brug find_kilder til at finde officielle annonceringer og anden relevant omtale.
 Brug laes_kilde før du vælger en hovedhistorie. Læs primærkilden, når den findes.
 Værktøjerne henter kun kendte kilder og dokumenterede officielle henvisninger;
 du har ikke en generel søgemaskine. Angiv huller som uafklaret, opfind ikke links.
-Du har højst 8 kildehentninger og 7 modelrunder inklusive aflevering.
+Du har højst 8 kildehentninger og 4 researchrunder. Læs flere relevante kilder
+i samme runde. De sidste 3 modelrunder er reserveret til aflevering og rettelser.
 
 Aflever med aflever_udgave: 0-3 udvalgte historier i ønsket forsideorden og
 op til 6 andre anbefalinger. Ingen tvungen udfyldning. Hver udvalgt historie
 skal have en konkret begrundelse, nyt_siden_sidst, en skriveopgave og de læste
 kilde-id'er som underbygger den. Skriveopgaven angiver vinkel, relevante spørgsmål
 og nødvendige forbehold. Den skal kunne udføres på det foreliggende materiale.
+Hvert af de tre tekstfelter skal være 12-900 tegn. Hvis historien er ny, skal
+nyt_siden_sidst stadig forklare den konkrete nyhed. Ved en afvist aflevering:
+ret de angivne fejl og aflever igen. Udelad historier med utilstrækkeligt belæg.
 Markér kun samme_historie når samme konkrete begivenhed er dokumenteret i begge
 omtaler. Læs også dublettens kilde. Et firmanavn eller modelnavn er ikke nok.
 Henvisninger der blot handler om beslægtede emner må ikke blandes ind som fakta.
@@ -152,9 +157,10 @@ def funktion(navn, beskrivelse, properties, required=None):
 
 
 STR = {"type": "string"}
+BEGRUNDELSE = {"type": "string", "minLength": 12, "maxLength": 900}
 IDS = {"type": "array", "items": STR}
-VALG = {"type": "object", "properties": {"id": STR, "begrundelse": STR,
-        "nyt_siden_sidst": STR, "skriveopgave": STR, "kilder": IDS, "samme_historie": IDS},
+VALG = {"type": "object", "properties": {"id": STR, "begrundelse": BEGRUNDELSE,
+        "nyt_siden_sidst": BEGRUNDELSE, "skriveopgave": BEGRUNDELSE, "kilder": IDS, "samme_historie": IDS},
         "required": ["id", "begrundelse", "nyt_siden_sidst", "skriveopgave", "kilder", "samme_historie"],
         "additionalProperties": False}
 TOOLS = [funktion("find_kilder", "Find kandidater og kendte officielle henvisninger; returnerer kilde-id'er.", {"soegning": STR}),
@@ -163,6 +169,10 @@ TOOLS = [funktion("find_kilder", "Find kandidater og kendte officielle henvisnin
                   {"udvalgte": {"type": "array", "items": VALG}, "anbefalede": IDS, "redaktionsnote": STR})]
 KONTROL_TOOL = funktion("godkend_udgave", "Godkend eller afvis den kildekontrollerede udgave.",
                        {"godkendt": {"type": "boolean"}, "problemer": IDS})
+
+
+class UdgaveFejl(ValueError):
+    """En lokal, læsbar valideringsfejl uden råt API-svar eller kildetekst."""
 
 
 def laes_json(path, default):
@@ -215,6 +225,12 @@ def gyldig_forside(f, artikler, nu):
             if not isinstance(k, str) or k not in known or k in chosen or k in order or k in excluded:
                 return False
             excluded.add(k)
+    if "anbefalede" in f:
+        extra = f["anbefalede"]
+        if (not isinstance(extra, list) or len(extra) > 6
+                or any(not isinstance(k, str) or k not in known or k in chosen or k in excluded for k in extra)
+                or len(extra) != len(set(extra)) or order[len(chosen):len(chosen)+len(extra)] != extra):
+            return False
     return True
 
 
@@ -320,12 +336,20 @@ class Redaktion:
                    "tidligere_forsider": self.historik[-6:], "omtaler_seneste_uge": omtaler,
                    "kandidater": self.oversigt()}
         messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": json.dumps(context, ensure_ascii=False)}]
+        sidste_fejl = "Ingen gyldig aflevering"
         for round_ in range(MAX_KALD):
+            afleveringstid = round_ >= MAX_RESEARCH_RUNDER or len(self.laeste) >= MAX_KILDER
+            aktive_tools = [TOOLS[-1]] if afleveringstid else TOOLS
+            if afleveringstid:
+                messages.append({"role": "user", "content":
+                    f"Research er afsluttet. Du har {MAX_KALD-round_} forsøg tilbage. "
+                    "Aflever udgaven nu med aflever_udgave alene. Ret eventuelle fejl fra "
+                    "sidste svar. Vælg kun historier med læste kilder; færre historier er tilladt."})
             self.antal_kald += 1
-            reply = self.kald(messages, TOOLS if round_ < MAX_KALD-1 else [TOOLS[-1]])
+            reply = self.kald(messages, aktive_tools)
             calls = reply.get("tool_calls") if isinstance(reply, dict) else None
             if not isinstance(calls, list) or not 1 <= len(calls) <= 8:
-                raise ValueError("Agenten afleverede ikke gyldige værktøjskald")
+                raise UdgaveFejl("Agenten afleverede ikke gyldige værktøjskald")
             messages.append({"role": "assistant", "content": reply.get("content"), "tool_calls": calls})
             aflevering = None
             for call in calls:
@@ -334,6 +358,8 @@ class Redaktion:
                     args = json.loads(call["function"]["arguments"])
                     if not isinstance(args, dict):
                         raise ValueError("Argumenter skal være et objekt")
+                    if afleveringstid and name != "aflever_udgave":
+                        raise ValueError("Research er afsluttet; brug aflever_udgave")
                     if name == "laes_kilde":
                         result = self.laes(args.get("id", ""))
                     elif name == "find_kilder":
@@ -347,11 +373,12 @@ class Redaktion:
                         raise ValueError("Ukendt værktøj; aflever udgaven i et separat kald")
                 except (ValueError, TypeError, KeyError) as error:
                     result = {"fejl": str(error)[:180]}
+                    sidste_fejl = result["fejl"]
                 self.log.append({"vaerktoej": name, "fejl": result.get("fejl") if isinstance(result, dict) else None})
                 messages.append({"role": "tool", "tool_call_id": call["id"], "content": json.dumps(result, ensure_ascii=False)})
             if aflevering is not None:
                 return aflevering
-        raise ValueError("Redaktøren nåede ikke at aflevere inden for budgettet")
+        raise UdgaveFejl("Afleveringen kunne ikke godkendes inden for budgettet: " + sidste_fejl)
 
     def kontroller(self, plan, artikler):
         drafts = {ident(a["link"]): a for a in artikler}
@@ -377,6 +404,7 @@ class Redaktion:
         excluded = {link for group in grouped.values() for link in group}
         result.update({"metode": "agent", "agent_version": VERSION, "kontrolleret": True,
                        "data_opdateret": iso(self.nu), "udvalgte": chosen, "samlede": grouped,
+                       "anbefalede": extra,
                        "raekkefoelge": chosen + extra + [a["link"] for a in redaktion.prioriter(artikler, self.nu)
                                                         if a["link"] not in set(chosen + extra) | excluded and not redaktion.reklame(a)]})
         return result

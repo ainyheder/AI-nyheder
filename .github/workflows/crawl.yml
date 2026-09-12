@@ -32,14 +32,18 @@ permissions:
 
 concurrency:
   group: crawl
-  cancel-in-progress: true
+  # Deles med modelkataloget. Et push må ikke afbryde et igangværende crawl.
+  cancel-in-progress: false
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 50 }}
     steps:
       - name: Hent koden
         uses: actions/checkout@v4
+        with:
+          ref: main  # En kørsel, der har ventet i kø, skal hente nyeste data.
 
       - name: Installér Python
         uses: actions/setup-python@v5
@@ -54,6 +58,8 @@ jobs:
           python3 _redaktion/proeve-kommandocentral.py
           python3 _redaktion/proeve-modelkatalog.py
           python3 _redaktion/proeve-flux.py
+          python3 _redaktion/proeve-redaktionsprompter.py
+          python3 _redaktion/proeve-workflow.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:
@@ -81,6 +87,9 @@ jobs:
         run: |
           pip install pillow -q
           python3 crawler.py
+
+      - name: Kontrollér den færdige udgave før commit
+        run: python3 _redaktion/kontroller-udgave.py
 
       - name: Commit de nye artikler
         run: |

@@ -352,6 +352,29 @@ async function run() {
     assert.equal(p.app.modelList('omskriv').filter(m=>m.startsWith('gemini-model-')).length,40);
   }));
 
+  await check("All revised prompts render and image style edits preserve FLUX", async () => {
+    const data=fixture();
+    data.hjerner_fil=JSON.parse(fs.readFileSync(path.join(ROOT,'_redaktion/hjerner.json'),'utf8'));
+    data.hjerner_fil.hjerner.billedgenerator={model:'@cf/black-forest-labs/flux-2-klein-4b',prompt:'Test image style'};
+    data.hjerner_fil.hjerner.motiv ||= {prompt:'Test motif'};
+    return usingPanel(p => {
+      p.app.validateConfig('hjerner',p.app.state.drafts.hjerner);
+      p.app.navigate('models');
+      for(const [name,step] of Object.entries(data.hjerner_fil.hjerner).filter(([,s])=>s.prompt)) {
+        p.d.querySelector(`[data-edit-model="${name}"]`).click();
+        assert.equal(p.d.getElementById('step-prompt').value,step.prompt);
+        p.d.getElementById('edit-dialog').close();
+      }
+      p.d.querySelector('[data-edit-model="billedgenerator"]').click();
+      p.d.getElementById('step-prompt').value='Updated image style';
+      p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+      assert.equal(p.app.state.drafts.hjerner.hjerner.billedgenerator.prompt,'Updated image style');
+      assert.equal(p.app.state.drafts.hjerner.hjerner.billedgenerator.model,'@cf/black-forest-labs/flux-2-klein-4b');
+      assert.equal(p.app.dirtyKeys().join(','),'hjerner');
+      assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.prompt,data.hjerner_fil.hjerner.motiv.prompt);
+    },data);
+  });
+
   console.log(`\nKOMMANDOCENTRAL: ${passed} passed · ${failed} failed`);
   process.exitCode = failed ? 1 : 0;
 }
