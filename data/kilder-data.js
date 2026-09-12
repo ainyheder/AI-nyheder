@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T16:01:49.600123+00:00",
+ "opdateret": "2026-09-12T16:32:17.382448+00:00",
  "artikler_i_alt": 153,
  "kilder": [
   {
@@ -684,9 +684,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
-   "som_ekstra": 7,
+   "i_listen": 35,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
+     "dato": "",
+     "foerst_set": "2026-09-12T16:01:49",
+     "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin"
+    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -767,15 +776,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Seattle Times og Newsday sagsøger OpenAI"
-    },
-    {
-     "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
-     "dato": "2026-09-12T15:52:11",
-     "foerst_set": "2026-09-12T16:01:49",
-     "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
@@ -875,12 +875,21 @@ window.KILDER_STATUS = {
      "side": "artikel/9ee5bacda2ce8165.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
+     "dato": "2026-09-10T17:45:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+     "side": "artikel/755f7769e744d036.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "Ars Technica AI",
@@ -910,7 +919,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 19,
+   "i_listen": 20,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -966,6 +975,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
+    },
+    {
+     "rubrik": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin",
+     "dato": "2026-09-12T12:23:40",
+     "foerst_set": "2026-09-12T16:01:49",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+     "side": "artikel/423571cd7c5d29c6.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Tidligere EPA-folk: 30 tiltag lemper miljøkrav til datacentre",
@@ -1032,7 +1050,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Derfor føles tech-modstanden anderledes nu",
-     "dato": "2026-09-10T10:00:00",
+     "dato": "2026-09-10T14:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
      "side": "",
@@ -1065,25 +1083,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OECD: Elever med AI klarer sig dårligere",
-     "dato": "2026-09-09T12:05:01",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
-     "side": "artikel/009e61788df2b717.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
-    ],
-    [
-     "OpenAI Blog",
-     2
+     7
     ],
     [
      "Simon Willison AI",
@@ -1096,6 +1101,10 @@ window.KILDER_STATUS = {
     [
      "Ars Technica AI",
      2
+    ],
+    [
+     "OpenAI Blog",
+     1
     ]
    ]
   },
@@ -1242,6 +1251,10 @@ window.KILDER_STATUS = {
     [
      "Hacker News: AI",
      1
+    ],
+    [
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -1330,8 +1343,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 17,
-   "som_ekstra": 4,
+   "i_listen": 18,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
@@ -1341,15 +1354,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "GPT-6 Astra forbedrer Devins egen test"
-    },
-    {
-     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
-     "dato": "",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
     },
     {
      "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
@@ -1411,6 +1415,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T17:51:30",
      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
      "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren med GPT-6 Astra",
+     "dato": "2026-09-10T07:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+     "side": "artikel/3f77446f0e44a8a2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1503,21 +1516,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI styrker støtten til journalister og studerende",
-     "dato": "2026-09-08T00:00:00",
-     "foerst_set": "2026-09-07T09:38:00",
-     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-     "side": "artikel/8c676d139375cae9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     1
     ],
     [
      "Simon Willison AI",
@@ -1539,17 +1543,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "DeepMind lancerer AlphaGenome Atlas",
-     "dato": "2026-09-08T14:00:15",
+     "dato": "",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "artikel/8aaadec7c05e0c22.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1637,6 +1641,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
