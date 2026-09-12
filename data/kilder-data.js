@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T15:15:33.289402+00:00",
- "artikler_i_alt": 150,
+ "opdateret": "2026-09-12T16:01:49.600123+00:00",
+ "artikler_i_alt": 153,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -583,15 +583,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-     "dato": "2026-09-05T23:27:48",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
      "dato": "2026-09-10T00:56:41",
      "foerst_set": "2026-09-11T14:38:09",
@@ -606,6 +597,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
      "side": "artikel/3b42aec52f1320a9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+     "dato": "2026-09-05T23:27:48",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -684,27 +684,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 36,
    "som_ekstra": 7,
    "seneste": [
-    {
-     "rubrik": "TechCrunch Disrupt 2026: en uge til udstillingsborde",
-     "dato": "",
-     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-     "side": "",
-     "hvor": "under",
-     "under": "Sidste frist for Disrupt-sidebegivenheder i aften"
-    },
-    {
-     "rubrik": "Mark Wahlberg taler arbejde på TechCrunch Disrupt",
-     "dato": "",
-     "foerst_set": "2026-09-10T23:21:33.190760+00:00",
-     "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-     "side": "",
-     "hvor": "under",
-     "under": "Sidste frist for Disrupt-sidebegivenheder i aften"
-    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -787,6 +769,15 @@ window.KILDER_STATUS = {
      "under": "Seattle Times og Newsday sagsøger OpenAI"
     },
     {
+     "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
+     "dato": "2026-09-12T15:52:11",
+     "foerst_set": "2026-09-12T16:01:49",
+     "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
      "dato": "2026-09-11T22:58:17",
      "foerst_set": "2026-09-11T23:11:34",
@@ -796,11 +787,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Matematikere protesterer mod AI-laboratorier",
+     "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
      "dato": "2026-09-11T20:57:36",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-     "side": "",
+     "side": "artikel/d4514d27691b0738.html",
      "hvor": "forside",
      "under": ""
     },
@@ -818,6 +809,15 @@ window.KILDER_STATUS = {
      "dato": "2026-09-11T20:59:47",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TechCrunch Disrupt 2026 lukker for udstillerborde 18. september",
+     "dato": "2026-09-11T20:33:18",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -873,24 +873,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
      "side": "artikel/9ee5bacda2ce8165.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
-     "dato": "2026-09-10T17:45:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-     "side": "artikel/755f7769e744d036.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
-     "dato": "2026-09-10T14:17:37",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-     "side": "artikel/d40cabdd4c17da18.html",
      "hvor": "forside",
      "under": ""
     }
@@ -983,14 +965,14 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
      "side": "",
      "hvor": "under",
-     "under": "Google AI forudsiger alle dna-ændringer"
+     "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
     },
     {
-     "rubrik": "Trump lemper miljøkrav for AI-datacentre",
+     "rubrik": "Tidligere EPA-folk: 30 tiltag lemper miljøkrav til datacentre",
      "dato": "2026-09-12T10:41:27",
      "foerst_set": "2026-09-12T15:15:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-     "side": "",
+     "side": "artikel/bcfea4b7b1860b3b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1058,11 +1040,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Matematikere kræver OpenAI-dokumentation",
+     "rubrik": "Thom anklager OpenAI for uærlighed om træningsdata",
      "dato": "2026-09-10T11:00:57",
      "foerst_set": "2026-09-10T13:45:53",
      "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-     "side": "",
+     "side": "artikel/3aead6fbd8135d1e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1221,7 +1203,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google AI forudsiger alle dna-ændringer",
+     "rubrik": "Google offentliggør AlphaGenome Atlas for hele genomet",
      "dato": "2026-09-09T16:34:18",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
@@ -1557,18 +1539,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
-     "dato": "",
-     "foerst_set": "2026-09-02T17:59:53.964081+00:00",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Gemini springer i videoer og sparer tid"
-    },
     {
      "rubrik": "DeepMind lancerer AlphaGenome Atlas",
      "dato": "2026-09-08T14:00:15",
@@ -1593,6 +1566,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-02T17:59:53",
      "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
      "side": "artikel/e2a8d26765125d66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 Flash og 3.8 Flash Cyber annonceret",
+     "dato": "2026-09-02T16:18:31",
+     "foerst_set": "2026-09-02T17:59:53",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+     "side": "",
      "hvor": "forside",
      "under": ""
     },
