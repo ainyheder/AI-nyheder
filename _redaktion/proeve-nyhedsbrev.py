@@ -1,5 +1,8 @@
 """Ingen netværk, rigtig AI eller mail. Test udsendelsesgrænser og genoptagelse."""
 import copy
+import contextlib
+import io
+import http.client
 import json
 from pathlib import Path
 import subprocess
@@ -80,6 +83,43 @@ def ai(step, prompt, payload):
 
 
 class NewsletterTests(unittest.TestCase):
+    def test_deepseek_diagnostics_never_expose_reasoning_or_provider_text(self):
+        import crawler
+        reply = {'choices': [{'finish_reason': 'stop', 'message': {
+            'content': '{"ok": true}', 'reasoning_content': 'PRIVATE REASONING'}}],
+            'usage': {'prompt_tokens': 12, 'completion_tokens': 20,
+                      'completion_tokens_details': {'reasoning_tokens': 15}}}
+        log = io.StringIO()
+        with contextlib.redirect_stdout(log):
+            self.assertEqual(crawler.deepseek_json_svar(json.dumps(reply).encode()), '{"ok": true}')
+        self.assertIn('"reasoning_tokens": 15', log.getvalue())
+        self.assertNotIn('PRIVATE', log.getvalue())
+        for reason, content in [('length', '{"ok": true}'), ('stop', ''),
+                                ('stop', 'PRIVATE PROVIDER TEXT'), ('stop', '[]'),
+                                ('insufficient_system_resource', '')]:
+            bad = copy.deepcopy(reply)
+            bad['choices'][0].update(finish_reason=reason)
+            bad['choices'][0]['message']['content'] = content
+            with contextlib.redirect_stdout(log), self.assertRaises(crawler.DeepSeekSvarFejl) as failure:
+                crawler.deepseek_json_svar(json.dumps(bad).encode())
+            self.assertNotIn('PRIVATE', str(failure.exception))
+            self.assertNotIn('PRIVATE', log.getvalue())
+        for raw in (b'PRIVATE PROVIDER TEXT', b'{"error": "PRIVATE PROVIDER TEXT"}'):
+            with self.assertRaises(crawler.DeepSeekSvarFejl) as failure:
+                crawler.deepseek_json_svar(raw)
+            self.assertNotIn('PRIVATE', str(failure.exception))
+
+    def test_broken_max_reply_does_not_trigger_hidden_fallback_generation(self):
+        import crawler
+        with patch.object(crawler, 'hjerne_model', return_value='deepseek-flash'), \
+             patch.object(crawler, '_doede_modeller', set()), \
+             patch.object(crawler, '_udbyder_noegle', return_value=True), \
+             patch.object(crawler, 'kald_deepseek_model', side_effect=http.client.IncompleteRead(b'private')), \
+             patch.object(crawler, 'kald_ai') as fallback:
+            with self.assertRaisesRegex(crawler.DeepSeekSvarFejl, 'IncompleteRead'):
+                crawler.hjerne_kald('nyhedsbrev', 'JSON', 'data', 32768, reasoning_effort='max')
+            fallback.assert_not_called()
+
     def test_writer_and_reviewer_use_flash_with_max_from_settings(self):
         import crawler
         config = json.loads((n.ROOT / "opsaetning/nyhedsbrev.json").read_text())

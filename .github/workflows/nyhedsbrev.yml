@@ -18,6 +18,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PYTHONUNBUFFERED: '1'
+
 concurrency:
   # En separat statusgren undgår både ventetid på crawl og konflikter på main.
   group: nyhedsbrev

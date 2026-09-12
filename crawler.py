@@ -487,6 +487,12 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                 _model_fejl.pop(model, None)     # rækken er brudt
                 return svar
             except Exception as fejl:
+                if reasoning_effort:
+                    # Nyhedsbrevet tæller selv sine forsøg. Ingen skjult ny
+                    # betalt generation på den daglige model ved et brudt svar.
+                    if isinstance(fejl, DeepSeekSvarFejl):
+                        raise
+                    raise DeepSeekSvarFejl("DeepSeek-kald afbrudt: " + type(fejl).__name__) from fejl
                 # Fejl i TRÆK. Tælles der sammen hen over hele kørslen, ville tre
                 # spredte timeouts blandt 500 lykkede kald kaste redaktionens valg
                 # væk - og loggen ville påstå "fejlede 3 gange i træk", hvilket
@@ -980,6 +986,49 @@ def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
     return json.loads(svar)["candidates"][0]["content"]["parts"][0]["text"]
 
 
+class DeepSeekSvarFejl(RuntimeError):
+    """Kun sikre fejlbeskrivelser; aldrig API-nøgler eller intern tænkning."""
+
+
+def deepseek_json_svar(raw: bytes) -> str:
+    try:
+        payload = json.loads(raw)
+    except (ValueError, UnicodeError):
+        raise DeepSeekSvarFejl("DeepSeek returnerede ikke et læsbart API-svar") from None
+    choices = payload.get("choices") if isinstance(payload, dict) else None
+    if not isinstance(choices, list) or not choices or not isinstance(choices[0], dict):
+        raise DeepSeekSvarFejl("DeepSeek-svaret mangler choices")
+    choice = choices[0]
+    reason = choice.get("finish_reason")
+    if reason not in {"stop", "length", "content_filter", "tool_calls", "insufficient_system_resource"}:
+        reason = "ukendt"
+    message = choice.get("message") or {}
+    content = message.get("content") if isinstance(message, dict) else None
+    usage = payload.get("usage") or {}
+    metrics = {"afslutning": reason, "svartegn": len(content) if isinstance(content, str) else 0}
+    if isinstance(usage, dict):
+        for key in ("prompt_tokens", "completion_tokens", "total_tokens"):
+            if type(usage.get(key)) is int:
+                metrics[key] = usage[key]
+        details = usage.get("completion_tokens_details") or {}
+        if isinstance(details, dict) and type(details.get("reasoning_tokens")) is int:
+            metrics["reasoning_tokens"] = details["reasoning_tokens"]
+    # Udskriv kun tal og den dokumenterede slutårsag. Ingen reasoning_content.
+    summary = json.dumps(metrics, ensure_ascii=False)
+    print("DeepSeek-svar: " + summary, flush=True)
+    if reason != "stop":
+        raise DeepSeekSvarFejl("DeepSeek afsluttede ikke svaret normalt: " + summary)
+    if not isinstance(content, str) or not content.strip():
+        raise DeepSeekSvarFejl("DeepSeek returnerede tomt indhold: " + summary)
+    try:
+        parsed = json.loads(content)
+    except ValueError:
+        raise DeepSeekSvarFejl("DeepSeek returnerede ugyldig JSON: " + summary) from None
+    if not isinstance(parsed, dict):
+        raise DeepSeekSvarFejl("DeepSeek returnerede ikke et JSON-objekt: " + summary)
+    return content
+
+
 def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
                         model: str, *, reasoning_effort: str | None = None) -> str:
     """Kalder en BESTEMT DeepSeek-model. Samme krop som det daglige kald, men
@@ -998,13 +1047,14 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
         "max_tokens": max_tokens,
         "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
         **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+        **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
         "stream": False,
     }).encode()
     svar = hent_url(DEEPSEEK_URL, data=body, headers={
         "Authorization": f"Bearer {DEEPSEEK_KEY}",
         "content-type": "application/json",
     }, **({"timeout": 600} if reasoning_effort else {}))
-    return json.loads(svar)["choices"][0]["message"]["content"]
+    return deepseek_json_svar(svar) if reasoning_effort else json.loads(svar)["choices"][0]["message"]["content"]
 
 
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None) -> str:
@@ -1022,13 +1072,14 @@ def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort
             "max_tokens": max_tokens,
             "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
             **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+            **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
             "stream": False,
         }).encode()
         svar = hent_url(DEEPSEEK_URL, data=body, headers={
             "Authorization": f"Bearer {API_KEY}",
             "content-type": "application/json",
         }, **({"timeout": 600} if reasoning_effort else {}))
-        return json.loads(svar)["choices"][0]["message"]["content"]
+        return deepseek_json_svar(svar) if reasoning_effort else json.loads(svar)["choices"][0]["message"]["content"]
 
     # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises
     global _gemini_model

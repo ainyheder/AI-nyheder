@@ -159,7 +159,8 @@ def falsk_hent(url, data=None, headers=None, **kw):
     sendt["headers"] = headers or {}
     sendt["body"] = json.loads(data.decode()) if data else None
     sendt["timeout"] = kw.get("timeout")
-    return json.dumps({"choices": [{"message": {"content": "svar"}}]}).encode()
+    content = '{"ok": true}' if sendt["body"].get("reasoning_effort") else 'svar'
+    return json.dumps({"choices": [{"finish_reason": "stop", "message": {"content": content}}]}).encode()
 
 
 c.hent_url = falsk_hent
@@ -176,10 +177,12 @@ c.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, "deepseek-flash", reasoni
 ok("E4a nyhedsbrevet bevarer Flash og får maksimal tænkning",
    sendt["body"]["model"] == "deepseek-flash" and sendt["body"].get("thinking") == {"type": "enabled"}
    and sendt["body"].get("reasoning_effort") == "max" and sendt["body"]["max_tokens"] == 32768
+   and sendt["body"].get("response_format") == {"type": "json_object"}
    and sendt["timeout"] == 600)
 c.kald_deepseek_model("system", "bruger", 50, "deepseek-flash")
 ok("E4b almindelige kald beholder deres hidtidige budget og tilstand",
    sendt["body"].get("thinking") == {"type": "disabled"} and "reasoning_effort" not in sendt["body"]
+   and "response_format" not in sendt["body"]
    and sendt["timeout"] is None)
 c_fallback = indlaes(udbyder="deepseek")
 c_fallback.hent_url = falsk_hent

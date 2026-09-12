@@ -412,7 +412,7 @@ def ai_call(step, prompt, payload):
     model = crawler.hjerne_model(step) or config["model"]
     effort = config.get("reasoning_effort", "max")
     print("AI-trin " + step + ": valgt model " + model
-          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else ""))
+          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else ""), flush=True)
     # Samme Flash-model, med maksimal tænkning til den lange tekst/kildekontrol.
     # Tokenloftet omfatter også tænkning. Rå reasoning_content gemmes ikke.
     return crawler.parse_json_objekt(crawler.hjerne_kald(step, prompt, json.dumps(payload, ensure_ascii=False),

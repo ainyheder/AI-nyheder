@@ -282,6 +282,41 @@ konverteringen på en teknisk prøvefigur før betalte AI- og billedkald.
 Denne kontrol er bestået lokalt med den samme rembg-version, men skal stadig
 bestå på GitHub. Den tekniske figur indsættes aldrig i nyhedsbrevet.
 
+### Gmail-prøve 9: max reasoning og API-svar
+
+[Kørsel 34698190313](https://github.com/ainyheder/AI-nyheder/actions/runs/34698190313)
+på `dfcc308` tog 13m 14s i testjobbet. De tekniske tests og den fulde
+BiRefNet-prøve bestod, og seneste original blev hentet fra det levende feed.
+Begge redaktionelle roller blev kaldt med `deepseek-flash` og `max`.
+
+Forsøg 1 og 2 havde kun JSON-læsefejl. Loggen viste desuden et IncompleteRead
+og et ekstra, automatisk kald til den daglige model. Forsøg 3 gav et udkast,
+men kontrollens svar kunne ikke parses. Udkastet placerede et allerede
+markeret fremtidsbud i feltet uafklaret. Det havde også gentaget historisk
+stof og en tabel uden Markdown-separator. Det blev ikke godkendt, og der
+blev hverken købt illustrationer, oprettet Buttondown-kladde eller sendt mail.
+
+API-svarenes slutårsag og tokenforbrug blev ikke gemt i denne kørsel.
+Derfor ved vi ikke, om JSON-fejlene skyldtes tomt indhold, tokenloft eller
+andet. De beviser hverken god eller dårlig kvalitet af max reasoning.
+
+Næste rettelse aktiverer DeepSeeks dokumenterede JSON-format for de
+redaktionelle reasoning-kald. Den kræver normal afslutning, ikke-tomt indhold
+og et JSON-objekt; selv gyldig JSON afvises ved finish_reason=length.
+Kun slutårsag og numerisk token-/tegnstatistik logges, aldrig intern tænkning
+eller rå udbyderfejl. Transportfejl udløser ikke længere en skjult ekstra
+generation via daglig-model-fallback. De højst tre synlige forsøg gælder
+fortsat. Loggen vises løbende med PYTHONUNBUFFERED.
+
+Skriveprompten præciserer forskellen på markerede fremtidsbud og uløste
+kildeproblemer samt kræver Markdown-tabellers separatorrække. Valideringen
+af uafklaret og den separate kvalitetskontrol er uændret. Flash beholder max
+og tokenloftet 32.768; ingen ny budgetforøgelse på baggrund af en ukendt fejl.
+
+Lokalt bestod 32 nyhedsbrevstests, 6 Gmail-tests, 79 modelvalgskontroller samt
+actionlint. Ny live-test kræver push af rettelserne. Testresultatet fra
+GitHub er fortsat afvist; ingen prøve 9 er sendt til Gmail.
+
 RSS-læserens API: https://rss2json.com/docs
 
 Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication
