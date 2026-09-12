@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-12T09:11:15.629318+00:00",
+ "opdateret": "2026-09-12T10:53:38.124334+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      3,
      3,
      2,
-     3,
+     4,
      1
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 42,
- "sidevisninger_i_alt": 158,
+ "besoeg_i_alt": 44,
+ "sidevisninger_i_alt": 165,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 41,
-   "visninger": 134
+   "besoeg": 43,
+   "visninger": 136
   },
   {
    "sti": "/uge.html",
@@ -279,9 +279,14 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/faq.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
    "sti": "/om.html",
    "besoeg": 0,
-   "visninger": 5
+   "visninger": 7
   },
   {
    "sti": "/koerekort.html",
@@ -297,12 +302,17 @@ window.LAESERTAL = {
    "sti": "/vaerktoejer.html",
    "besoeg": 0,
    "visninger": 9
+  },
+  {
+   "sti": "/cookies.html",
+   "besoeg": 0,
+   "visninger": 2
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 42
+   "besoeg": 44
   }
  ],
  "ai_chats": [],
@@ -315,8 +325,8 @@ window.LAESERTAL = {
    },
    {
     "fra": "direkte",
-    "besoeg": 41,
-    "visninger": 41
+    "besoeg": 43,
+    "visninger": 43
    }
   ],
   "/uge.html": [
@@ -352,11 +362,18 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/faq.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
   "/om.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 5
+    "visninger": 7
    }
   ],
   "/koerekort.html": [
@@ -379,12 +396,16 @@ window.LAESERTAL = {
     "besoeg": 0,
     "visninger": 9
    }
+  ],
+  "/cookies.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 2
+   }
   ]
  },
- "faste_uden_besoeg": [
-  "/faq.html",
-  "/cookies.html"
- ],
+ "faste_uden_besoeg": [],
  "serie": [
   {
    "dato": "2026-08-14",
@@ -534,7 +555,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-09-12",
    "besoeg": 20,
-   "visninger": 70
+   "visninger": 80
   }
  ],
  "artikler": [

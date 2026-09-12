@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-12T09:04:56.158941+00:00",
+  "opdateret": "2026-09-12T10:47:40.442658+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,13 +7,41 @@
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "8eaa9491014a96ce",
+  "input_fingerprint": "1769379c4525ac08",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
+  "modelkald": 5,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -45,8 +73,8 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Mangler kort redaktionsnote"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -55,23 +83,23 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "grundlag": "rss_resume"
-    },
-    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "grundlag": "rss_resume"
     },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "link": "https://ai.meta.com/muse/",
       "grundlag": "utilgaengelig"
     },
     {
@@ -79,11 +107,11 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
       "grundlag": "kildetekst"
     }
   ],
