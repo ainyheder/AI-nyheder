@@ -96,3 +96,24 @@ max-width none samt ét afmeldingslink. Det virker derfor i denne forhåndsvisni
 uden ændring af kontoens betalte Custom CSS-indstilling. Den modtagne mail er
 stadig den endelige kontrol i Outlook. Testen blev kun sendt til Torben, og
 abonnentprofilen bekræftede Received. Se prøve 5's statusfil for mail-id.
+
+## Ny visuel skabelon og faktisk status
+
+Prøve 6 er modtaget i mail og gennemgået via Torbens PDF. Den viste den mørke
+baggrund og én afmelding, men lange ens tekstblokke og Buttondowns eget logo.
+Prøve 7 er en lokal layoutprøve med limefarvet titel, to talfelter, en fremhævet
+pointe og en kort liste. Den er ikke sendt og har ikke fået separat AI-kontrol.
+
+Den fælles renderer og begge prompts understøtter nu almindelige Markdown-
+tabeller med to kolonner, korte lister og egne pointer markeret med `> `.
+De visuelle felter skal erstatte tekst, ikke gentage den. Tal og forbehold skal
+stå samlet. Ren brødtekst fra eksisterende udkast kan stadig vises. Dobbelt-
+escaped linjeskift afvises før rendering, så hele brevet ikke bliver én overskrift.
+Layoutet bruger HTML-tabeller og inline-stile; medieregler tilpasser små skærme.
+Det er browserkontrolleret; den nye version skal også vurderes i modtagerens mail.
+
+Fuld automatisk drift er endnu ikke bekræftet: RSS-kilden gav HTTP 403 fra GitHub.
+Gmail-testen kunne køres med fuld kilde angivet manuelt. Både DeepSeek-skriver og
+kontrollant kørte, men tredje prøve blev afvist og krævede Codex-rettelser før den
+manuelle testafsendelse. Layoutændringen retter ikke RSS-adgangen eller beviser,
+at næste automatisk skrevne brev bliver godkendt.

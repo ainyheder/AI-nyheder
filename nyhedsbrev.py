@@ -108,6 +108,8 @@ def validate_draft(draft, source):
         if not isinstance(draft.get(field), str) or not draft[field].strip() or len(draft[field]) > limit:
             raise ValueError("Manglende eller for langt felt: " + field)
     body = draft["brev_markdown"]
+    if r"\n" in body or r"\r" in body:
+        raise ValueError("Brug rigtige linjeskift i brev_markdown, ikke dobbelt-escaped \\n eller \\r")
     words = len(body.split())
     if not 650 <= words <= 1600:
         raise ValueError("Brevet skal have substans uden at blive for langt (650–1600 ord)")
@@ -149,22 +151,69 @@ def inline(text):
     return re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", escaped)
 
 
+def comparison(block):
+    """En lille Markdown-tabel; rækkefølge og forbehold bevares ordret."""
+    lines = block.splitlines()
+    if len(lines) < 3 or not all(line.strip().startswith("|") and line.strip().endswith("|") for line in lines):
+        return None
+    rows = [[cell.strip() for cell in line.strip().strip("|").split("|")] for line in lines]
+    if any(len(row) != 2 for row in rows) or not all(re.fullmatch(r":?-{3,}:?", cell) for cell in rows[1]):
+        return None
+    cells = []
+    for col, color in enumerate(("#d5ff5f", "#87dcf0")):
+        content = []
+        for row in rows[2:]:
+            # Forfatteren fremhæver selv det centrale tal; ingen tal gættes ud fra brødteksten.
+            value = row[col]
+            emphasis = re.fullmatch(r"\*\*(.+?)\*\*", value)
+            if emphasis:
+                content.append('<p class="comparison-value" style="font-size:30px;line-height:1.1;font-weight:750;color:' + color + '!important;margin:0 0 12px">' + inline(emphasis[1]) + '</p>')
+            else:
+                content.append('<p style="font-size:15px;line-height:1.5;color:#d8dde6!important;margin:0 0 10px">' + inline(value) + '</p>')
+        cells.append('<td width="50%" valign="top" class="comparison-cell" style="width:50%;padding:18px 16px;background:#171d26;color:#f2f3f5!important;overflow-wrap:break-word;word-wrap:break-word;hyphens:auto">'
+                     '<p style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.7px;text-transform:uppercase;color:' + color + '!important;margin:0 0 16px">'
+                     + inline(rows[0][col]) + '</p>' + ''.join(content) + '</td>')
+    return ('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;margin:8px 0 18px;border:0;background:#171d26;border-radius:12px;overflow:hidden"><tr>'
+            + ''.join(cells) + '</tr></table>')
+
+
 def render(draft):
+    body = draft["brev_markdown"].strip()
+    if r"\n" in body or r"\r" in body:
+        raise ValueError("Brevets linjeskift er dobbelt-escaped; layoutet kan ikke bygges")
     blocks = []
-    for block in re.split(r"\n\s*\n", draft["brev_markdown"].strip()):
-        if block.startswith("# "):
-            blocks.append('<h1 class="title" style="font-size:34px;line-height:1.15;letter-spacing:-1px;color:#f2f3f5!important;margin:18px 0 26px">' + inline(block[2:]) + '</h1>')
-        elif block.startswith("## "):
-            blocks.append('<h2 style="font-size:23px;line-height:1.3;color:#d5ff5f!important;margin:30px 0 12px">' + inline(block[3:]) + '</h2>')
+    first_paragraph = True
+    for block in re.split(r"\n\s*\n", body):
+        lines = block.splitlines()
+        if block.startswith("# ") and len(lines) == 1:
+            blocks.append('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:20px 0 24px;background:#d5ff5f;border:0;border-radius:14px"><tr><td class="hero-pad" style="padding:26px 22px">'
+                          '<h1 class="title" style="font-size:38px;line-height:1.1;letter-spacing:-1.2px;font-weight:800;color:#101609!important;margin:0">' + inline(block[2:]) + '</h1></td></tr></table>')
+        elif block.startswith("## ") and len(lines) == 1:
+            blocks.append('<h2 style="font-size:24px;line-height:1.25;letter-spacing:-0.4px;color:#f2f3f5!important;margin:30px 0 16px">'
+                          '<span aria-hidden="true" style="color:#d5ff5f!important">/ </span>' + inline(block[3:]) + '</h2>')
+        elif (panel := comparison(block)) is not None:
+            blocks.append(panel)
+        elif all(line.startswith("> ") for line in lines):
+            # Egen redaktionel pointe, ikke et citat: ingen citationstegn eller blockquote-semantik.
+            text = " ".join(line[2:] for line in lines)
+            blocks.append('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:22px 0;background:#162b32;border:0;border-radius:12px"><tr><td class="callout-pad" style="padding:20px">'
+                          '<p style="font-size:19px;line-height:1.5;color:#c3f1fb!important;margin:0">' + inline(text) + '</p></td></tr></table>')
+        elif all(line.startswith("- ") for line in lines):
+            blocks.append('<ul style="margin:8px 0 22px;padding-left:23px;color:#d5ff5f!important">' + ''.join(
+                '<li style="font-size:17px;line-height:1.6;margin:0 0 12px;padding-left:4px"><span style="color:#e1e5ec!important">' + inline(line[2:]) + '</span></li>' for line in lines) + '</ul>')
         else:
-            blocks.append('<p style="font-size:17px;line-height:1.7;color:#f2f3f5!important;margin:0 0 19px">' + inline(block.replace("\n", " ")) + '</p>')
+            lead = first_paragraph and len(block.split()) <= 80
+            size = "20px" if lead else "17px"
+            color = "#f2f3f5" if lead else "#d8dde6"
+            blocks.append('<p style="font-size:' + size + ';line-height:1.65;color:' + color + '!important;margin:0 0 18px">' + inline(block.replace("\n", " ")) + '</p>')
+            first_paragraph = False
     css = (ROOT / "opsaetning/nyhedsbrev-design.css").read_text()
     # Buttondown leverer den eneste afmeldingsfooter.
     return ('<style>' + css + '</style><div style="display:none;max-height:0;overflow:hidden;mso-hide:all">'
             + html.escape(draft["preheader"]) + '</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0c0e12"><tr><td align="center" class="outer" style="padding:0">'
             '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:none;background:#0c0e12;border:0;font-family:Arial,sans-serif">'
-            '<tr><td class="pad" style="padding:20px 16px"><div style="font-size:22px;color:#f2f3f5!important"><b style="display:inline-block;padding:5px 7px;background:#d5ff5f;color:#0c0e12!important;border-radius:7px">AI</b> nyheder</div>'
-            + "".join(blocks) + '<p style="border-top:1px solid #343a46;padding-top:24px;margin-top:30px"><a href="https://ainyheder.com" style="color:#d5ff5f!important">Besøg AI-nyheder</a></p></td></tr></table></td></tr></table>')
+            '<tr><td class="pad" style="padding:20px 16px"><div style="font-size:22px;letter-spacing:-0.7px;color:#f2f3f5!important"><b style="display:inline-block;padding:5px 7px;background:#d5ff5f;color:#0c0e12!important;border-radius:7px">AI</b> nyheder</div>'
+            + "".join(blocks) + '<p style="padding-top:8px;margin:24px 0 8px"><a href="https://ainyheder.com" style="display:inline-block;padding:12px 16px;background:#202833;border-radius:8px;color:#d5ff5f!important;font-size:15px;font-weight:700;text-decoration:none">Besøg AI-nyheder</a></p></td></tr></table></td></tr></table>')
 
 
 class Buttondown:

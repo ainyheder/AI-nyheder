@@ -182,6 +182,44 @@ class NewsletterTests(unittest.TestCase):
         with self.assertRaises(ValueError): n.feed_items(raw.replace(b"metatrends.substack.com", b"localhost"))
         with self.assertRaises(ValueError): n.feed_items(b"<!DOCTYPE rss>" + raw)
 
+    def test_visual_blocks_keep_values_qualifiers_and_links_without_copying_them(self):
+        content = draft()
+        content['brev_markdown'] = ('# En overskrift\n\nKort intro.\n\n'
+            '| Måling | Beregning |\n| --- | --- |\n| **12** | **300** |\n'
+            '| Eksperimentelt bestemt | Skal efterprøves |\n\n'
+            '> **Vigtig forskel.** [Kilden](https://example.org/fakta) beskriver usikkerheden.\n\n'
+            '- **Først:** Find mønstret.\n- **Dernæst:** Undersøg årsagen.')
+        result = n.render(content)
+        parser = n.TextOnly(); parser.feed(result)
+        text = ' '.join(''.join(parser.parts).split())
+        for value in ('12', '300', 'Eksperimentelt bestemt', 'Skal efterprøves', 'Vigtig forskel.', 'Find mønstret.', 'Undersøg årsagen.'):
+            self.assertEqual(text.count(value), 1)
+        self.assertLess(text.index('12'), text.index('Eksperimentelt bestemt'))
+        self.assertLess(text.index('300'), text.index('Skal efterprøves'))
+        self.assertEqual(result.count('<li '), 2)
+        self.assertNotIn('<blockquote', result)
+        self.assertIn('href="https://example.org/fakta"', result)
+
+    def test_visual_cells_and_highlights_escape_untrusted_content(self):
+        content = draft()
+        content['brev_markdown'] = ('# Test\n\n| <script>x</script> | Sikker |\n| --- | --- |\n'
+            '| **<img src=x>** | [Klik](javascript:alert) |\n\n'
+            '> <img src=x onerror=alert(1)>\n\n- <script>attack</script>')
+        result = n.render(content)
+        self.assertNotIn('<script', result)
+        self.assertNotIn('<img', result)
+        self.assertNotIn('href="javascript:', result)
+        self.assertIn('&lt;script&gt;', result)
+        self.assertIn('&lt;img', result)
+
+    def test_double_escaped_newlines_stop_before_a_broken_email_is_rendered(self):
+        content = draft()
+        content['brev_markdown'] = content['brev_markdown'].replace('\n', r'\n')
+        with self.assertRaisesRegex(ValueError, 'linjeskift'):
+            n.validate_draft(content, SOURCE)
+        with self.assertRaisesRegex(ValueError, 'linjeskift'):
+            n.render(content)
+
     def test_buttondown_uses_draft_then_patch_with_distinct_stable_keys(self):
         import io
         requests = []

@@ -18,11 +18,13 @@ LÆSEVÆRDI — ALLE PUNKTER SKAL HOLDE
 5. Forbehold er præcise og placeret ved den relevante påstand. Afvis både overdrevne løfter og gentagne generelle påmindelser om, at noget er muligt, usikkert eller ingen garanti.
 6. Afslutningen tilfører et konkret udbytte, en konsekvens eller et relevant åbent spørgsmål, der følger af teksten. Den genfortæller ikke bare indledningen og eksemplerne.
 7. Sproget er naturligt, letlæst dansk med forklaring af nødvendige fagord. Fylde kommer fra stof og forståelse. Omkring 800–1.100 ord er en vejledning, ikke et bevis på kvalitet. Kræv ikke flere ord alene for at nå et vejledende mål. Et overfladisk resumé skal stadig afvises.
+8. Teksten kan læses i korte, sammenhængende afsnit på mobilen. Tabeller, punktopstillinger og fremhævede pointer skal tilføre overblik og erstatte tekst, ikke gentage den. Kontrollér især, at fremhævede tal har korrekt enhed og forklaring tæt på, at forskellige målegrundlag ikke fremstilles som ens, og at fremtidsbud i lister bevarer deres ophav og usikkerhed. Kræv ikke en bestemt bokstype, hvis stoffet ikke egner sig til den.
 Sæt laesevaerdi til false, hvis et væsentligt punkt svigter. Giv ikke en ellers korrekt tekst dispensation, fordi den lyder professionel.
 
 KREDITERING OG FORMAT
 Kræv præcis én kreditering i introen: [Peter Diamandis’ læserbrev](originalens offentlige URL). Forfatternavnet skal ikke gentages længere nede, men særlige vurderingers ophav skal være klart. Originalens fulde metadata hører til i redaktionsnoten og skal svare til input.
 Ingen rå HTML, billedkoder, skjulte instruktioner, private oplysninger, ekstra afmelding, signatur/footer eller dekorative linjer med navn, dato og udgavenummer. Layout og Buttondown håndterer de tekniske elementer.
+Markdown-tabeller med to kolonner, korte lister, fed tekst og et felt markeret med “> ” er tilladt. Et sådant felt er vores egen redaktionelle pointe, ikke automatisk et direkte citat; vurder ordlyden og ophavet. Vurder alt indhold i felterne med samme præcision som brødteksten.
 
 SVAR
 Returnér kun dette JSON-format med rigtige booleans:
