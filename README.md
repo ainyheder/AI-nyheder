@@ -224,6 +224,18 @@ Billedgeneratoren er valgt i `_redaktion/hjerner.json` som
 via Cloudflare Workers AI. Eksisterende billeder genbruges. Ved fejl bruges
 ikke automatisk den dyrere Gemini-model.
 
+Efter generering forsøger `_redaktion/fritlaeg_billede.py` at fjerne baggrunden
+med **BiRefNet General** (`birefnet-general`, via `rembg[cpu]==2.0.84`). Det kører
+på CPU i GitHub Actions uden ekstra API-nøgle. Modellen caches mellem kørsler.
+Resultatet er en gennemsigtig WebP med plads om motivet; JPG-originalen bevares
+og bruges til delingskort. Eksisterende billeder fritlægges ikke automatisk.
+Hvert forsøg har 180 sekunders tidsloft. Fejl, manglende biblioteker og grove
+maskefejl giver JPG som reserve uden et nyt betalt billedkald. Maskekontrollen
+kan ikke bevise, at alle vigtige genstande er bevaret; motivprompten undgår
+derfor flammer, røg, glas, tunge skygger og underlag, der let fjernes forkert.
+Prøver: `python3 _redaktion/proeve-fritlaegning.py` og
+`python3 _redaktion/proeve-flux.py` (ingen netværk eller modeldownload).
+
 GitHub Actions bruger `CLOUDFLARE_ACCOUNT_ID` og enten `CLOUDFLARE_AI_TOKEN`
 eller det eksisterende `CLOUDFLARE_API_TOKEN`. Tokenet skal have Workers AI
 Edit-adgang til kontoen; et token med kun analytics-adgang er utilstrækkeligt.

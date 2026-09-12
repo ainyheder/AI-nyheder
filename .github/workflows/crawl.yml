@@ -39,6 +39,9 @@ jobs:
   crawl:
     runs-on: ubuntu-latest
     timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 50 }}
+    env:
+      U2NET_HOME: ${{ runner.temp }}/ai-news-models
+      OMP_NUM_THREADS: '2'
     steps:
       - name: Hent koden
         uses: actions/checkout@v4
@@ -50,6 +53,19 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Installér billedbibliotek
+        run: pip install 'pillow>=12.1,<13' -q
+
+      - name: Genbrug BiRefNet-modellen
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.U2NET_HOME }}
+          key: birefnet-general-v1-${{ runner.os }}
+
+      - name: Installér baggrundsfjernelse
+        continue-on-error: true # Crawleren bruger originalen, hvis værktøjet mangler.
+        run: pip install -r _redaktion/requirements-billeder.txt -q
+
       - name: Kontrollér redaktionel udvælgelse
         run: |
           python3 _redaktion/proeve-redaktion.py
@@ -58,6 +74,7 @@ jobs:
           python3 _redaktion/proeve-kommandocentral.py
           python3 _redaktion/proeve-modelkatalog.py
           python3 _redaktion/proeve-flux.py
+          python3 _redaktion/proeve-fritlaegning.py
           python3 _redaktion/proeve-redaktionsprompter.py
           python3 _redaktion/proeve-workflow.py
 
@@ -85,7 +102,6 @@ jobs:
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
           GENKOER_ALT: ${{ inputs.genkoer_alt || vars.GENKOER_ALT }}
         run: |
-          pip install pillow -q
           python3 crawler.py
 
       - name: Kontrollér den færdige udgave før commit

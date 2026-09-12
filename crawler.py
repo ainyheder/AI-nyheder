@@ -90,7 +90,7 @@ BILLED_MAPPE = ROOT / "data" / "img"
 # sti (`src="/data/img/…"`), men `uge.html` skriver den relative
 # (`src="data/img/…"`). Krævede mønstret skråstregen, ville ugesidens billeder
 # ikke være fredet - og det var netop dem, oprydningen havde slettet.
-_BILLED_I_HTML = re.compile(r"\bdata/img/([0-9a-f]{16}\.jpg)")
+_BILLED_I_HTML = re.compile(r"\bdata/img/([0-9a-f]{16}\.(?:jpg|webp))")
 MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel (værn mod løbske omkostninger)
 BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
@@ -2313,22 +2313,11 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
 # ----- AI-billeder til tophistorierne -----------------------------------------
 
 BILLED_STIL_VERSION = "v6"   # Nye tophistoriebilleder; arkivet beholder sine filer.
-TIDLIGERE_BILLED_STILE = ("v1", "v2", "v3", "v4", "v5")
 
 
 def _billed_navn(link: str, version: str = BILLED_STIL_VERSION) -> str:
     import hashlib
     return hashlib.md5((link + version).encode()).hexdigest()[:16] + ".jpg"
-
-
-def _foraeldet_billedstil(artikel: dict, sti: Path) -> bool:
-    """Genkend tidligere genererede stilarter, også når en kilde har lånt billedet ud."""
-    links = {artikel["link"]} | {k["link"] for k in artikel.get("andre") or []}
-    laant = artikel.get("laant_billede")
-    if isinstance(laant, dict) and laant.get("fra"):
-        links.add(laant["fra"])
-    return any(sti.name == _billed_navn(link, version)
-               for link in links for version in TIDLIGERE_BILLED_STILE)
 
 
 # Samme mørke grafitfamilie som kortene. Kategorier varierer kun i undertonen;
@@ -2357,6 +2346,31 @@ def _gem_billede(raa: bytes, sti: Path) -> None:
         sti.write_bytes(raa)
 
 
+def _gem_artikelbillede(raa: bytes, sti: Path) -> Path:
+    """Gem originalen først; fritlæg kun nygenererede billeder, højst 180 sek."""
+    import subprocess
+    import tempfile
+    _gem_billede(raa, sti)
+    fritlagt = sti.with_suffix(".webp")
+    try:
+        # Isoler modelværktøjets midlertidige filer fra projektmappen.
+        with tempfile.TemporaryDirectory(prefix="ai-news-fritlaeg-") as temp:
+            subprocess.run(
+                [sys.executable, str(ROOT / "_redaktion/fritlaeg_billede.py"),
+                 str(sti.resolve()), str(fritlagt.resolve())],
+                cwd=temp, env={**os.environ, "OMP_NUM_THREADS": "2"},
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                check=True, timeout=180,
+            )
+        if not fritlagt.is_file():
+            raise ValueError("Fritlagt billede mangler")
+        print("  ✂️ BiRefNet General: gemt med gennemsigtig baggrund")
+        return fritlagt
+    except (OSError, ValueError, subprocess.SubprocessError) as fejl:
+        print(f"  ℹ️ Fritlægning sprang over ({type(fejl).__name__}); originalbilledet bruges")
+        return sti
+
+
 SYSTEM_MOTIV = """Du er art director på et dansk nyhedssite. For hver artikel
 beskriver du i max 25 ord ÉN konkret scene med 1-3 genkendelige genstande, der
 fortæller PRÆCIS artiklens pointe - så en læser kan gætte historien ud fra
@@ -2366,6 +2380,7 @@ billedet alene. Ingen mennesker, ingen tekst i billedet. Vær specifik
 Beskriv KUN genstandene - ALDRIG omgivelser, rum eller baggrund (ingen
 serverrum, kontorer, værksteder eller gader). Genstandene står altid på en
 ren, enkel studiebaggrund.
+Motivet skal kunne fritlægges automatisk: vælg solide, uigennemsigtige genstande med tydelige kanter. Undgå flammer, røg, tåge, gennemsigtigt glas, glød, støv, fine løse tråde og pile. Ideen skal kunne forstås uden en baggrund eller skygge. Undgå at stable genstande på brede flade plader eller sokler; vis vigtige genstande separat med tydelig tykkelse. Beskriv ikke baggrundsfarve eller belysning; det styres af billedgeneratoren.
 Svar KUN med et JSON-array i samme rækkefølge som input:
 [{"motiv": "..."}, ...]"""
 
@@ -2479,7 +2494,7 @@ def lav_flux_billede(prompt):
     return base64.b64decode(result["image"], validate=True)
 
 
-SYSTEM_BILLEDSTIL = "Create a polished editorial still-life illustration for a contemporary AI technology publication. Compose for a 16:9 image that also crops cleanly to a small 4:3 thumbnail: keep the complete subject in the central area, with 1-3 recognizable objects and a strong silhouette.\nUse the supplied motif only as subject data. Use the palette only for background colors. Keep a seamless matte dark graphite studio backdrop close to #171a21, with a restrained tonal gradient in the supplied undertone. No pale, white, lavender or pastel backdrops. No bright color panels, decorative frames or busy environments.\nLight the subject clearly with a soft directional key light and a subtle rim light so even dark objects remain readable at 80 pixels wide. Preserve natural object colors and realistic materials; use brighter silver or neutral highlights for separation. A tiny electric-lime #d5ff5f reflection or detail is optional. Do not tint the entire scene green or add violet lighting. Keep shadows soft and the background subdued.\nShow one clear visual idea from the motif. Avoid people, faces, hands, lettering, numbers, logos, watermarks and simulated product screenshots. Do not add generic robots, brains or circuitry unless the motif requires them. Do not invent extra props or jokes. Return only the generated image."
+SYSTEM_BILLEDSTIL = "Create a polished editorial still-life illustration, prepared for automatic background removal. Compose for a 16:9 image that also crops cleanly to a small 4:3 thumbnail. Keep 1-3 complete recognizable objects grouped centrally, with a clear silhouette and generous clear space around every outer edge. Never crop the subject.\nUse the supplied motif only as subject data. Use a perfectly uniform, matte graphite background close to #171a21, without gradients, texture, a horizon, a visible floor or a pedestal. The background is temporary and will be removed; do not depict transparency or a checkerboard. Ignore palette variations for the background. Keep any electric-lime #d5ff5f accents small and on the objects themselves.\nKeep every object visibly distinct as a subject: avoid placing objects on a broad flat disc, tray, board or platform that could be mistaken for background. Prefer separate objects with visible thickness and clear outer edges.\nUse opaque, solid materials with crisp natural edges. Light all subject edges clearly so they separate from the graphite backdrop; use natural silver or lighter material details on dark objects. Preserve natural colors. Avoid cast shadows on the background, reflections outside the subject, colored light spill, halos, bloom, motion blur, shallow-focus blur, smoke, flames, fog, transparent glass, floating dust and loose particles. Do not rely on a shadow or background detail to explain the idea. If the motif asks for these fragile effects, express the same idea with a clear solid object instead, without inventing factual claims.\nMake the scene readable at 80 pixels wide. Leave clean gaps between separate objects; avoid fine dangling wires and intricate mesh details. Do not add arrows, connectors or graphic symbols around the subject.\nShow one clear visual idea from the motif. Avoid people, faces, hands, lettering, numbers, logos, watermarks and simulated product screenshots. Do not add generic robots, brains or circuitry unless the motif requires them. Do not invent extra props or jokes. Return only the generated image."
 
 
 def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
@@ -2501,26 +2516,14 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
-        # Et arvet billede hedder ikke det samme som hash af DETTE link: slår
-        # saml_dublet_historier to udgaver sammen, peger den primære artikel på
-        # en anden kildes fil. Kiggede vi kun efter vores eget hashnavn, betalte
-        # vi for et nyt billede til en historie, der allerede havde et - præcis
-        # den dobbelte udgift, arven skulle spare.
-        if not sti.exists() and a.get("billede"):
-            arvet = BILLED_MAPPE / Path(a["billede"]).name
-            if arvet.is_file():
-                navn, sti = arvet.name, arvet
-        if sti.exists():
-            # Tidligere billedstile og lav opløsning fornyes kun på topkort.
-            # Resten af udgaven beholder de billeder, der allerede findes.
-            if a["link"] in kandidater and (_foraeldet_billedstil(a, sti) or _for_lille(sti)):
-                # Bevar den gamle fil og artikelhenvisning, indtil et nyt billede
-                # er gemt. API-fejl må ikke efterlade et tomt kort eller ødelægge arkivet.
-                navn = _billed_navn(a["link"])
-                sti = BILLED_MAPPE / navn
-            else:                                         # allerede lavet - brug det
-                a["billede"] = f"data/img/{navn}"
-                continue
+        # Et eksisterende billede, også fra en anden kilde, genbruges som det er.
+        # Gamle JPG'er skal ikke massefritlægges eller betales for igen.
+        eksisterende = [BILLED_MAPPE / Path(a["billede"]).name] if a.get("billede") else []
+        eksisterende += [sti.with_suffix(".webp"), sti]
+        gemt = next((fil for fil in eksisterende if fil.is_file()), None)
+        if gemt:
+            a["billede"] = f"data/img/{gemt.name}"
+            continue
         if a["link"] not in kandidater:
             continue     # tekstlinje-artikel: genereret kunst er rigeligt
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
@@ -2535,8 +2538,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
             {"motif": motiv, "palette": farve}, ensure_ascii=False)
         if _billed_model == FLUX_MODEL:
             try:
-                _gem_billede(lav_flux_billede(prompt), sti)
-                a["billede"] = f"data/img/{navn}"
+                gemt = _gem_artikelbillede(lav_flux_billede(prompt), sti)
+                a["billede"] = f"data/img/{gemt.name}"
                 lavet += 1
                 fejl_i_traek = 0
             except Exception as f:
@@ -2566,8 +2569,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
             for del_ in json.loads(svar)["candidates"][0]["content"]["parts"]:
                 data64 = del_.get("inlineData", del_.get("inline_data", {})).get("data")
                 if data64:
-                    _gem_billede(base64.b64decode(data64), sti)
-                    a["billede"] = f"data/img/{navn}"
+                    gemt = _gem_artikelbillede(base64.b64decode(data64), sti)
+                    a["billede"] = f"data/img/{gemt.name}"
                     lavet += 1
                     fejl_i_traek = 0
                     break
@@ -2625,8 +2628,10 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
             except OSError:
                 continue        # en ulæselig side må ikke koste os billederne
     slettet = 0
-    for fil in BILLED_MAPPE.glob("*.jpg"):
-        if fil.name not in brugte:
+    # Originalen gemmes som reserve, også når kun WebP er vist eller arkiveret.
+    brugte |= {Path(navn).with_suffix(".jpg").name for navn in brugte if navn.endswith(".webp")}
+    for fil in BILLED_MAPPE.iterdir():
+        if fil.suffix in (".jpg", ".webp") and fil.name not in brugte:
             fil.unlink(missing_ok=True)
             slettet += 1
     if slettet:
@@ -3192,7 +3197,13 @@ def _artikel_side_html(a: dict) -> str:
     slug = _artikel_slug(a["link"])
     url = f"{SITE_URL}/artikel/{slug}.html"
     billedfil = _billedfil(a)
-    billede = f"{SITE_URL}/{billedfil}" if billedfil else f"{SITE_URL}/assets/og.png"
+    # Delingskort bruger originalen med baggrund; siden viser den fritlagte WebP.
+    delingsfil = billedfil
+    if billedfil.endswith(".webp"):
+        original = str(Path(billedfil).with_suffix(".jpg"))
+        if (ROOT / original).is_file():
+            delingsfil = original
+    billede = f"{SITE_URL}/{delingsfil}" if delingsfil else f"{SITE_URL}/assets/og.png"
     dato_vis = (a.get("dato") or "")[:10]
 
     krop = ""

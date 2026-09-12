@@ -83,8 +83,8 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='true','Mobilmenu åbnes');
   d.getElementById('menuKnap').click();ok(d.getElementById('menuKnap').getAttribute('aria-expanded')==='false','Mobilmenu lukkes');
   ok(!test.errors.length,'Ingen fejl efter interaktioner');test.close();
-  const launchArticle={...real.artikler[0],titel:"OpenAI releases GPT-6 Astra",rubrik:"OpenAI lancerer GPT-6 Astra",resume_da:'En ny model.',link:"https://example.com/astra-launch",dato:new Date(testNow-48*3600000).toISOString(),kategori:"Lanceringer",redaktion:{version:2,nyhed:5,betydning:4,brugbarhed:1,dokumentation:2,dansk:0,type:"lancering",ai_relevant:true}};
-  const financeArticle={...real.artikler[0],titel:"Firma henter penge",rubrik:"Firma henter penge",link:"https://example.org/finance",dato:new Date(testNow-3600000).toISOString(),kategori:"Penge & marked",redaktion:{version:3,model_lancering:false,nyhed:4,betydning:4,brugbarhed:4,dokumentation:4,dansk:2,type:"forretning",ai_relevant:true}};
+  const launchArticle={...real.artikler[0],andre:[],titel:"OpenAI releases GPT-6 Astra",rubrik:"OpenAI lancerer GPT-6 Astra",resume_da:'En ny model.',link:"https://example.com/astra-launch",dato:new Date(testNow-48*3600000).toISOString(),kategori:"Lanceringer",redaktion:{version:2,nyhed:5,betydning:4,brugbarhed:1,dokumentation:2,dansk:0,type:"lancering",ai_relevant:true}};
+  const financeArticle={...real.artikler[0],andre:[],titel:"Firma henter penge",rubrik:"Firma henter penge",link:"https://example.org/finance",dato:new Date(testNow-3600000).toISOString(),kategori:"Penge & marked",redaktion:{version:3,model_lancering:false,nyhed:4,betydning:4,brugbarhed:4,dokumentation:4,dansk:2,type:"forretning",ai_relevant:true}};
   for(const version of [2,3]){
     const international={...financeArticle,redaktion:{...financeArticle.redaktion,version,dansk:0}};
     const local={...international,redaktion:{...international.redaktion,dansk:5}};
