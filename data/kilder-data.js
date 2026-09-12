@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T16:32:17.382448+00:00",
+ "opdateret": "2026-09-12T17:25:20.622063+00:00",
  "artikler_i_alt": 153,
  "kilder": [
   {
@@ -978,7 +978,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin",
-     "dato": "2026-09-12T12:23:40",
+     "dato": "2026-09-12T16:23:40",
      "foerst_set": "2026-09-12T16:01:49",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
      "side": "artikel/423571cd7c5d29c6.html",
@@ -1050,7 +1050,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Derfor føles tech-modstanden anderledes nu",
-     "dato": "2026-09-10T14:00:00",
+     "dato": "2026-09-10T10:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
      "side": "",
