@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-12T14:24:55.512371+00:00",
+ "opdateret": "2026-09-12T15:19:32.580410+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 47,
- "sidevisninger_i_alt": 174,
+ "besoeg_i_alt": 45,
+ "sidevisninger_i_alt": 170,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 46,
-   "visninger": 145
+   "besoeg": 44,
+   "visninger": 142
   },
   {
    "sti": "/uge.html",
@@ -270,11 +270,6 @@ window.LAESERTAL = {
   },
   {
    "sti": "/video/JZa-_VS1XoI.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/artikel/9ebf8f5d0ca3e1b2.html",
    "besoeg": 0,
    "visninger": 1
   },
@@ -312,7 +307,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 47
+   "besoeg": 45
   }
  ],
  "ai_chats": [],
@@ -321,12 +316,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 99
+    "visninger": 98
    },
    {
     "fra": "direkte",
-    "besoeg": 46,
-    "visninger": 46
+    "besoeg": 44,
+    "visninger": 44
    }
   ],
   "/uge.html": [
@@ -349,13 +344,6 @@ window.LAESERTAL = {
    }
   ],
   "/video/JZa-_VS1XoI.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/9ebf8f5d0ca3e1b2.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -558,27 +546,6 @@ window.LAESERTAL = {
    "visninger": 90
   }
  ],
- "artikler": [
-  {
-   "sti": "/artikel/9ebf8f5d0ca3e1b2.html",
-   "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "Google AI vejrmodel rammer plet med 5 km-opløsning",
-   "kategori": "Lanceringer",
-   "dato": "2026-09-03",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
-  }
- ],
- "laeste_temaer": [
-  {
-   "navn": "Lanceringer",
-   "visninger": 1
-  }
- ]
+ "artikler": [],
+ "laeste_temaer": []
 };
