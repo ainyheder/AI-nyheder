@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T11:56:27.820325+00:00",
- "artikler_i_alt": 154,
+ "opdateret": "2026-09-12T12:07:48.516958+00:00",
+ "artikler_i_alt": 153,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -197,7 +197,7 @@ window.KILDER_STATUS = {
      "under": "Google lancerer AI, der renser dit sludder op"
     },
     {
-     "rubrik": "Google frigiver Gemini-app til Windows",
+     "rubrik": "Gemini-app lander på Windows 10 og 11",
      "dato": "2026-09-10T16:00:00",
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
@@ -685,7 +685,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 36,
-   "som_ekstra": 8,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
@@ -724,22 +724,13 @@ window.KILDER_STATUS = {
      "under": "Apple klar med første foldbare iPhone Duo"
     },
     {
-     "rubrik": "Anthropic-forsker Jacob Coxon stopper af frygt for AI",
-     "dato": "",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-forsker: AI kan slå os alle ihjel"
-    },
-    {
      "rubrik": "Suno v6: egen model på licenseret musik",
      "dato": "",
      "foerst_set": "2026-09-09T13:51:27",
      "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
      "side": "",
      "hvor": "under",
-     "under": "Suno lancerer v6 på licenseret musikdata"
+     "under": "Suno ruller v6 ud med tre modeller"
     },
     {
      "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
@@ -801,15 +792,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
      "side": "artikel/b3b5bc18a7beccd4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic-forsker siger op i superintelligens-advarsel",
-     "dato": "2026-09-11T18:41:49",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-     "side": "artikel/1b44943176b0dfbb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -884,6 +866,15 @@ window.KILDER_STATUS = {
      "side": "artikel/9abc7cfd055aa948.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "AI-agenter oversvømmer offentlige klagesystemer",
+     "dato": "2026-09-10T14:53:50",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+     "side": "artikel/9ee5bacda2ce8165.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -919,8 +910,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 19,
-   "som_ekstra": 4,
+   "i_listen": 18,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
@@ -950,6 +941,15 @@ window.KILDER_STATUS = {
      "under": "Apple klar med første foldbare iPhone Duo"
     },
     {
+     "rubrik": "Anthropic-forsker: AI kan slå os alle ihjel",
+     "dato": "",
+     "foerst_set": "2026-09-09T13:51:27",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic-forsker siger op i superintelligens-advarsel"
+    },
+    {
      "rubrik": "OpenAI løser 90-årigt matematikproblem – og skaber røre",
      "dato": "",
      "foerst_set": "2026-09-08T21:21:14",
@@ -977,7 +977,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic: Fire AI-modeller hackede eksterne systemer",
+     "rubrik": "Anthropic-model hackede løs i fire sager",
      "dato": "2026-09-11T12:09:14",
      "foerst_set": "2026-09-11T17:51:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
@@ -1040,7 +1040,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Suno lancerer v6 på licenseret musikdata",
+     "rubrik": "Suno ruller v6 ud med tre modeller",
      "dato": "2026-09-09T21:42:19",
      "foerst_set": "2026-09-09T23:28:16",
      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
@@ -1082,15 +1082,15 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Ars Technica AI",
-     3
+     "Simon Willison AI",
+     2
     ],
     [
      "Hacker News: AI",
      2
     ],
     [
-     "Simon Willison AI",
+     "Ars Technica AI",
      2
     ],
     [
@@ -1110,17 +1110,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 12,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Anthropic-forsker forlader jobbet med alvorlig advarsel",
-     "dato": "",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-forsker: AI kan slå os alle ihjel"
-    },
     {
      "rubrik": "Unitree-robot hund koster 4.000 dollar",
      "dato": "2026-09-12T11:00:53",
@@ -1232,11 +1223,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     3
+     "TechCrunch AI",
+     2
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      2
     ],
     [
