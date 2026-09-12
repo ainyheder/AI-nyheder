@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-12T15:19:37.433695+00:00",
+ "genereret": "2026-09-12T16:23:19.279267+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -158,40 +158,81 @@ window.KOMMANDO_DATA = {
    }
   }
  },
- "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
+ "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-12T15:15:33.289402+00:00",
-  "antal": 150,
+  "opdateret": "2026-09-12T16:01:49.600123+00:00",
+  "antal": 153,
   "med_billede": 7,
-  "paa_dansk": 150,
+  "paa_dansk": 153,
   "kategorier": {
-   "Forskning": 30,
-   "Lanceringer": 32,
-   "Politik \u0026 jura": 18,
+   "Lanceringer": 33,
+   "Politik \u0026 jura": 19,
    "Samfund \u0026 etik": 26,
-   "Penge \u0026 marked": 19,
+   "Penge \u0026 marked": 20,
+   "Forskning": 30,
    "Hverdags-AI": 25
   },
   "kilder": {
-   "The Verge AI": 19,
-   "Simon Willison AI": 12,
    "OpenAI Blog": 17,
+   "The Verge AI": 19,
    "Hugging Face": 12,
-   "TechCrunch AI": 34,
+   "TechCrunch AI": 36,
    "Ars Technica AI": 12,
+   "Simon Willison AI": 12,
    "Google Gemini": 8,
-   "Google DeepMind": 9,
+   "Google DeepMind": 10,
    "MIT Tech Review AI": 5,
    "Mistral AI": 4,
    "Anthropic News": 7,
    "xAI News": 11
   },
-  "udvalgte": [],
+  "udvalgte": [
+   {
+    "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "rubrik": "GPT-6 Astra forbedrer Devins egen test",
+    "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "side": "artikel/bb3fa770c5976f2e.html",
+    "kategori": "Lanceringer",
+    "kilde": "OpenAI Blog",
+    "dato": "2026-09-11T16:00:00+00:00",
+    "billede": "data/img/70bf1f3046a8dc5b.webp"
+   },
+   {
+    "titel": "Anthropic spent this week in hot water over cybersecurity",
+    "rubrik": "Anthropic-model hackede løs i fire sager",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+    "side": "artikel/3409c3c31dfa6b1f.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-11T12:09:14-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "OpenAI’s feud with mathematicians is only escalating",
+    "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
+    "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+    "side": "artikel/d4514d27691b0738.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-11T20:57:36+00:00",
+    "billede": ""
+   }
+  ],
   "seneste": [
    {
+    "titel": "Anthropic CEO outlines plan to ‘pace the frontier’",
+    "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
+    "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-12T15:52:11+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Trump is giving data centers a pass to pollute",
-    "rubrik": "Trump lemper miljøkrav for AI-datacentre",
+    "rubrik": "Tidligere EPA-folk: 30 tiltag lemper miljøkrav til datacentre",
     "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
+    "side": "artikel/bcfea4b7b1860b3b.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T10:41:27-04:00",
@@ -267,8 +308,9 @@ window.KOMMANDO_DATA = {
    },
    {
     "titel": "OpenAI’s feud with mathematicians is only escalating",
-    "rubrik": "Matematikere protesterer mod AI-laboratorier",
+    "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+    "side": "artikel/d4514d27691b0738.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-11T20:57:36+00:00",
@@ -293,139 +335,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-11T19:34:09+00:00",
     "billede": "data/img/81de3599343958c5.jpg"
-   },
-   {
-    "titel": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
-    "rubrik": "Anthropic-forsker siger op i superintelligens-advarsel",
-    "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-    "side": "artikel/1b44943176b0dfbb.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T18:41:49+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-12T15:15:33.289402+00:00",
+  "opdateret": "2026-09-12T16:01:49.600123+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "forklaring": "Redaktionsmødet fejlede: HTTPError",
+  "modelkald": 1,
+  "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://openai.com/index/cognition-devin-testing-with-astra",
-   "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-   "https://openai.com/index/introducing-gpt-live-1-in-the-api"
+   "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+   "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/"
   ],
-  "udgivet_udvalg": [],
-  "vaerktoejer": [
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": null
-   }
+  "udgivet_udvalg": [
+   "https://openai.com/index/cognition-devin-testing-with-astra",
+   "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+   "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/"
   ],
-  "kildegrundlag": [
-   {
-    "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-    "grundlag": "rss_resume"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-    "grundlag": "rss_resume"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
-    "grundlag": "kildetekst"
-   }
-  ]
+  "vaerktoejer": [],
+  "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-12T15:15:32.852351+00:00",
+  "opdateret": "2026-09-12T16:01:48.448946+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -643,8 +577,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-12T15:15:33.289402+00:00",
-  "artikler_i_alt": 150,
+  "opdateret": "2026-09-12T16:01:49.600123+00:00",
+  "artikler_i_alt": 153,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1212,15 +1146,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-      "dato": "2026-09-05T23:27:48",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
       "dato": "2026-09-10T00:56:41",
       "foerst_set": "2026-09-11T14:38:09",
@@ -1235,6 +1160,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-11T14:38:09",
       "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
       "side": "artikel/3b42aec52f1320a9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+      "dato": "2026-09-05T23:27:48",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "side": "",
       "hvor": "forside",
       "under": ""
      },
@@ -1277,27 +1211,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 34,
+    "i_listen": 36,
     "som_ekstra": 7,
     "seneste": [
-     {
-      "rubrik": "TechCrunch Disrupt 2026: en uge til udstillingsborde",
-      "dato": "",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-      "side": "",
-      "hvor": "under",
-      "under": "Sidste frist for Disrupt-sidebegivenheder i aften"
-     },
-     {
-      "rubrik": "Mark Wahlberg taler arbejde på TechCrunch Disrupt",
-      "dato": "",
-      "foerst_set": "2026-09-10T23:21:33.190760+00:00",
-      "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-      "side": "",
-      "hvor": "under",
-      "under": "Sidste frist for Disrupt-sidebegivenheder i aften"
-     },
      {
       "rubrik": "Metas nye AI-app Muse er nummer to i USA",
       "dato": "",
@@ -1380,11 +1296,29 @@ window.KOMMANDO_DATA = {
       "under": "Seattle Times og Newsday sagsøger OpenAI"
      },
      {
+      "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
+      "dato": "2026-09-12T15:52:11",
+      "foerst_set": "2026-09-12T16:01:49",
+      "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
       "dato": "2026-09-11T22:58:17",
       "foerst_set": "2026-09-11T23:11:34",
       "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "side": "artikel/c923ead07513500b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
+      "dato": "2026-09-11T20:57:36",
+      "foerst_set": "2026-09-11T21:11:45",
+      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "side": "artikel/d4514d27691b0738.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1455,14 +1389,14 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
       "side": "",
       "hvor": "under",
-      "under": "Google AI forudsiger alle dna-ændringer"
+      "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
      },
      {
-      "rubrik": "Trump lemper miljøkrav for AI-datacentre",
+      "rubrik": "Tidligere EPA-folk: 30 tiltag lemper miljøkrav til datacentre",
       "dato": "2026-09-12T10:41:27",
       "foerst_set": "2026-09-12T15:15:33",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-      "side": "",
+      "side": "artikel/bcfea4b7b1860b3b.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1617,7 +1551,7 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Google AI forudsiger alle dna-ændringer",
+      "rubrik": "Google offentliggør AlphaGenome Atlas for hele genomet",
       "dato": "2026-09-09T16:34:18",
       "foerst_set": "2026-09-08T18:02:43",
       "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
@@ -1838,18 +1772,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
-      "dato": "",
-      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
-      "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google Gemini springer i videoer og sparer tid"
-     },
      {
       "rubrik": "DeepMind lancerer AlphaGenome Atlas",
       "dato": "2026-09-08T14:00:15",
@@ -1874,6 +1799,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-02T17:59:53",
       "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
       "side": "artikel/e2a8d26765125d66.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 Flash og 3.8 Flash Cyber annonceret",
+      "dato": "2026-09-02T16:18:31",
+      "foerst_set": "2026-09-02T17:59:53",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "side": "",
       "hvor": "forside",
       "under": ""
      },
@@ -1992,12 +1926,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-12T15:19:32.580410+00:00",
+  "opdateret": "2026-09-12T16:23:11.421806+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 45,
-  "sidevisninger_i_alt": 170,
+  "besoeg_i_alt": 47,
+  "sidevisninger_i_alt": 176,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2154,8 +2088,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 44,
-    "visninger": 142
+    "besoeg": 46,
+    "visninger": 148
    },
    {
     "sti": "/uge.html",
@@ -2207,7 +2141,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 45
+    "besoeg": 47
    }
   ],
   "laeste_temaer": []
