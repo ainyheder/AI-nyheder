@@ -10,6 +10,21 @@ import nyhedsbrev as n
 RECIPIENT = "soemandtorben@gmail.com"
 
 
+def source_for_test(config, raw=""):
+    if not raw.strip():
+        return max(n.fetch_feed(config["feed"]), key=lambda item: n.instant(item["dato"]))
+    if len(raw) > 60000:
+        raise ValueError("Testkilden er for stor")
+    source = json.loads(raw)
+    for field in ("url", "titel", "dato", "forfatter", "tekst"):
+        if not isinstance(source.get(field), str) or not source[field].strip():
+            raise ValueError("Testkilden mangler " + field)
+    if n.public_url(source["url"]) != source["url"] or not source["url"].startswith("https://metatrends.substack.com/p/"):
+        raise ValueError("Testkilden skal være et offentligt Metatrends-brev")
+    n.instant(source["dato"])
+    return source
+
+
 def generate(source, config, folder, ai=n.ai_call):
     if len(source["tekst"].split()) < 450 or "diamandis" not in source["forfatter"].lower():
         raise ValueError("Seneste brev mangler fuld kilde eller korrekt forfatter")
@@ -71,7 +86,7 @@ def main():
     folder = Path("newsletter-test-output")
     folder.mkdir(exist_ok=False)
     config = json.loads((n.ROOT / "opsaetning/nyhedsbrev.json").read_text())
-    source = max(n.fetch_feed(config["feed"]), key=lambda item: n.instant(item["dato"]))
+    source = source_for_test(config, os.getenv("NEWSLETTER_TEST_SOURCE_JSON", ""))
     print("Seneste original: " + source["titel"] + " — " + source["dato"])
     draft = generate(source, config, folder)
     send_test(n.Buttondown(os.getenv("BUTTONDOWN_API_KEY", "")), draft, source,

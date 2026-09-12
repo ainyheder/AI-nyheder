@@ -11,6 +11,13 @@ t = runpy.run_path(str(ROOT / '_redaktion/send-nyhedsbrev-test.py'))
 f = runpy.run_path(str(ROOT / '_redaktion/proeve-nyhedsbrev.py'))
 
 class TestMail(unittest.TestCase):
+    def test_supplied_full_source_avoids_remote_feed(self):
+        from unittest.mock import patch
+        with patch.object(t['n'], 'fetch_feed', side_effect=AssertionError('Må ikke genhente')):
+            self.assertEqual(t['source_for_test']({}, json.dumps(f['SOURCE'])), f['SOURCE'])
+        with self.assertRaises(ValueError):
+            t['source_for_test']({}, json.dumps({**f['SOURCE'], 'url': 'https://example.com/fake'}))
+
     def test_only_explicit_recipient_and_draft_endpoint(self):
         draft = f['draft']()
         body = t['n'].render(draft)

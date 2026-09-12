@@ -10,6 +10,10 @@ on:
         description: 'Lav seneste brev på ny og send KUN en test til Torbens Gmail'
         type: boolean
         default: false
+      test_source_json:
+        description: 'Valgfri fuld original til Gmail-test, hvis GitHub ikke kan hente RSS. Tom = hent seneste RSS.'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -41,6 +45,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
+          NEWSLETTER_TEST_SOURCE_JSON: ${{ inputs.test_source_json }}
         run: python3 _redaktion/send-nyhedsbrev-test.py
       - name: Gem prøvebrev og redaktørkontrol
         if: always()
