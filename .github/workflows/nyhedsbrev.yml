@@ -10,10 +10,10 @@ on:
         description: 'Lav seneste brev på ny og send KUN en test til Torbens Gmail'
         type: boolean
         default: false
-      test_source_json:
-        description: 'Valgfri fuld original til Gmail-test, hvis GitHub ikke kan hente RSS. Tom = hent seneste RSS.'
-        type: string
-        default: ''
+      check_feed:
+        description: 'Kontrollér KUN det levende feed fra GitHub. Ingen AI, billeder eller mails.'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,8 +24,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  kontroller-feed:
+    if: github.event_name == 'workflow_dispatch' && inputs.check_feed
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kontrollér feed-hentningen
+        run: python3 _redaktion/proeve-nyhedsbrev-feed.py
+      - name: Hent Peters seneste brev direkte fra RSS
+        run: python3 nyhedsbrev.py --check
   test-gmail:
-    if: github.event_name == 'workflow_dispatch' && inputs.test_gmail
+    if: github.event_name == 'workflow_dispatch' && inputs.test_gmail && !inputs.check_feed
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -47,6 +64,7 @@ jobs:
           key: birefnet-general-newsletter-v1
       - name: Kontrollér testudsendelsen
         run: |
+          python3 _redaktion/proeve-nyhedsbrev-feed.py
           python3 _redaktion/proeve-nyhedsbrev.py
           python3 _redaktion/proeve-nyhedsbrev-test.py
       - name: Skriv, kontrollér og send prøve til Gmail
@@ -58,7 +76,6 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
-          NEWSLETTER_TEST_SOURCE_JSON: ${{ inputs.test_source_json }}
         run: python3 _redaktion/send-nyhedsbrev-test.py
       - name: Gem prøvebrev og redaktørkontrol
         if: always()
@@ -68,7 +85,7 @@ jobs:
           path: newsletter-test-output/
           retention-days: 14
   rediger-og-send:
-    if: github.event_name != 'workflow_dispatch' || !inputs.test_gmail
+    if: github.event_name != 'workflow_dispatch' || (!inputs.test_gmail && !inputs.check_feed)
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -90,7 +107,9 @@ jobs:
           key: birefnet-general-newsletter-v1
       - name: Kontrollér kvalitet og beskyttelse mod dobbelt udsendelse
         working-directory: app
-        run: python3 _redaktion/proeve-nyhedsbrev.py
+        run: |
+          python3 _redaktion/proeve-nyhedsbrev-feed.py
+          python3 _redaktion/proeve-nyhedsbrev.py
       - name: Hent separat checkout til udsendelseshistorik
         uses: actions/checkout@v4
         with:

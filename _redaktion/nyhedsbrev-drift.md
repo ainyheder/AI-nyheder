@@ -72,6 +72,10 @@ i `opsaetning/nyhedsbrev.json` og push. Lad `nye_fra` blive stående; flytning
 bagud kan gøre historiske originaler til kandidater ved en ny installation.
 
 `python3 nyhedsbrev.py --check` læser kun RSS og viser aktuelle originaler.
+Kontrollen virker også, når udsendelsen er pauset. Den kontrollerer, at seneste
+original har tekst og forventet forfatter; ingen AI-kald eller mails startes.
+I Actions → Run workflow vælges **Kontrollér KUN det levende feed** for samme
+kontrol på GitHubs server. Den har forrang over Gmail-test, hvis begge vælges.
 `python3 _redaktion/proeve-nyhedsbrev.py` tester forløbet med falske AI- og
 mailtjenester. Ingen af kommandoerne sender mails eller bruger betalt AI.
 Layoutet ligger i `opsaetning/nyhedsbrev-design.css` og `render()` i
@@ -150,3 +154,32 @@ Cloudflare-nøglerne kun findes på GitHub. Originale prompts og billedfiler
 ligger i `nyhedsbrev-proever/illustrationer/`. Prøven er ikke sendt.
 Den nye FLUX → BiRefNet → Buttondown-kæde skal verificeres i en rigtig
 GitHub-test efter push. RSS-problemet beskrevet ovenfor er ikke ændret.
+
+## Feed-hentning: undersøgelse og ny transport
+
+GitHub-kørsel 34690746848 den 12. september bekræftede endnu en HTTP 403 fra
+den gamle urllib-hentning. Der blev ikke startet AI eller sendt en mail.
+Det officielle feed kunne samtidig hentes lokalt: 20 breve, seneste fra
+10. september med 1.790 ord. Årsagen til forskellen er endnu ikke fastslået.
+
+`_redaktion/nyhedsbrev_feed.py` bruger nu curl, som forhandler HTTP/2 og
+komprimering. Samme offentlige feed og tydelige AI-nyheder-identifikation
+bevares. Op til to genforsøg gælder kun curls midlertidige fejl (fx timeout,
+429 og 503), med tidsgrænse; 401/403 gentages ikke som en endeløs løkke.
+Adgangsafvisninger, HTML-fejlsider, omdirigeringer og ufuldstændige downloads
+stopper før redaktion. En eventuel Cloudflare-browserkontrol angives i fejlen.
+Ingen proxy, login-cookie, manuel kildetekst eller gammel cache bruges.
+
+Gmail-testen og den daglige udsendelse bruger den samme fetch_feed-funktion.
+Det tidligere test_source_json-input er fjernet, så en grøn test ikke kan
+skjule en defekt feed-hentning. `--check` viser HTTP-status, antal breve,
+seneste titler/datoer og antal ord; originaltekster og cookies logges ikke.
+
+Den nye transport er testet lokalt med det levende feed og med simulerede
+fejlsvar. **Adgang fra GitHub er ikke bekræftet med denne ændring endnu.**
+Efter push: start en ny workflow-kørsel med kun check_feed valgt. HTTP 200
+og metadata fra den fulde seneste original kræves, før feedadgangen kaldes
+løst. Fortsat 403 kræver yderligere afklaring af adgangen til kilden.
+
+Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication
+Curls genforsøg: https://curl.se/docs/manpage.html#--retry

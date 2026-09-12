@@ -3,7 +3,7 @@
 
 --check læser kun det offentlige feed. --run kræver GitHub Actions samt en
 separat git-checkout til varig status. Hvert checkpoint pushes FØR udsendelse.
-Ingen abonnentdata eller API-nøgler gemmes. Standardbiblioteket er nok.
+Ingen abonnentdata eller API-nøgler gemmes. RSS-hentningen bruger curl.
 """
 import argparse
 from datetime import datetime, timezone
@@ -22,6 +22,7 @@ from urllib.request import Request, urlopen
 import uuid
 import xml.etree.ElementTree as ET
 from _redaktion import nyhedsbrev_billeder
+from _redaktion.nyhedsbrev_feed import fetch_xml
 
 ROOT = Path(__file__).resolve().parent
 STATE_BRANCH = "codex/nyhedsbrev-status"
@@ -94,12 +95,7 @@ def feed_items(raw):
 
 
 def fetch_feed(url):
-    if url != "https://metatrends.substack.com/feed":
-        raise ValueError("Kun den verificerede Metatrends-kilde er tilladt")
-    with urlopen(Request(url, headers={"User-Agent": "AI-nyheder/1.0 (+https://ainyheder.com)"}), timeout=30) as response:
-        if urlsplit(response.url).hostname != "metatrends.substack.com":
-            raise ValueError("Feedet viderestiller til en ukendt vært")
-        return feed_items(response.read(8_000_001))
+    return feed_items(fetch_xml(url))
 
 
 def validate_draft(draft, source):
@@ -424,13 +420,17 @@ def main():
     parser.add_argument("--state-dir", type=Path)
     args = parser.parse_args()
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
-    if not config["aktiv"]:
+    if not config["aktiv"] and not args.check:
         print("Nyhedsbrevet er pauset i opsaetning/nyhedsbrev.json")
         return
     items = fetch_feed(config["feed"])
     if args.check:
+        latest = max(items, key=lambda s: instant(s["dato"]))
+        if len(latest["tekst"].split()) < 450 or "diamandis" not in latest["forfatter"].lower():
+            raise ValueError("Feedet blev hentet, men seneste brev mangler fuld tekst eller korrekt forfatter")
         eligible = [s for s in items if instant(s["dato"]) > instant(config["nye_fra"])]
         print(json.dumps({"breve_i_feed": len(items), "nye_efter_start": len(eligible),
+                          "ord_i_seneste_original": len(latest["tekst"].split()),
                           "nyeste": [{k: s[k] for k in ("titel", "dato", "url", "forfatter")} for s in items[-3:]]}, ensure_ascii=False, indent=2))
         return
     if os.environ.get("GITHUB_ACTIONS") != "true" or not args.state_dir:
