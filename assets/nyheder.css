@@ -164,8 +164,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
   padding-left:30px;
 }
 
-.header-newsletter {
+.header-actions {
   margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.header-newsletter {
   display:flex;
   gap:24px;
   align-items:center;
@@ -185,6 +191,71 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 
 .menu-button {
   display:none;
+}
+
+.search-toggle,.search-close {
+  display:grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  flex:none;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--soft);
+}
+
+.search-toggle {
+  position:relative;
+}
+
+.search-toggle svg {
+  width:21px;
+  height:21px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+}
+
+.search-toggle:hover,.search-toggle[aria-expanded="true"],.search-close:hover {
+  color:var(--blue);
+  border-color:var(--blue);
+}
+
+.search-toggle.has-filters::after {
+  content:"";
+  position:absolute;
+  top:5px;
+  right:5px;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--blue);
+}
+
+.search-panel {
+  padding-top:12px;
+  padding-bottom:8px;
+  border-top:1px solid var(--line);
+}
+
+.search-panel-heading {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:12px;
+}
+
+.search-panel-heading h2 {
+  margin:0;
+  font-size:1rem;
+}
+
+.search-close {
+  background:transparent;
+  border-color:transparent;
+  font-size:1.6rem;
 }
 
 .navigation {
@@ -574,6 +645,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 
 .search-field:focus-within {
   border-color:var(--blue);
+  box-shadow:0 0 0 1px var(--blue);
+}
+
+.search-field input:focus-visible {
+  outline:none;
 }
 
 input::placeholder {

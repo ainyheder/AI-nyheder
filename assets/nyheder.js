@@ -250,11 +250,22 @@
     $("antalNyheder").textContent=`${list.length} ${list.length===1?"historie":"historier"}`;
     $("filterBeskrivelse").textContent=query.trim()?`Søger efter “${query.trim()}”`:(order==="nyeste"?"Sorteret efter kildens udgivelsesdato":"Nye modeller og væsentlige nyheder først");
     $("nulstil").hidden=!browsing;
+    $("soegeKnap").classList.toggle("has-filters",browsing);
+    $("soegeKnap").setAttribute("aria-label",browsing?"Søg og filtrér nyheder — filtre er aktive":"Søg og filtrér nyheder");
     $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content">${cardTopline(a)}<h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><div class="story-excerpt">${image(a,"story-thumbnail")}<p>${escapeHtml(summary(a))}</p></div></div></article>`).join(""):`<div class="empty-state"><h3>${browsing?"Ingen historier matcher":"Du har set alle historierne"}</h3><p>${browsing?"Prøv et andet søgeord, eller vælg alle emner.":"Der er ikke flere historier i denne udgave."}</p>${browsing?'<button data-reset>Vis alle nyheder</button>':""}</div>`;
     $("visFlere").hidden=list.length<=visible;
     $("visFlere").innerHTML=`Vis flere nyheder <span class="section-note">${Math.min(visible,list.length)} af ${list.length}</span><span aria-hidden="true">↓</span>`;
   }
   function resetFilters(){category="Alle";query="";order="anbefalet";visible=12;$("soeg").value="";$("sortering").value=order;renderCategories();renderList();}
+  function setSearchOpen(open,returnFocus=false){
+    $("soegePanel").hidden=!open;
+    $("soegeKnap").setAttribute("aria-expanded",String(open));
+    if(open){
+      $("menuKnap").setAttribute("aria-expanded","false");
+      $("navigation").classList.remove("is-open");
+      $("soeg").focus({preventScroll:true});
+    }else if(returnFocus)$("soegeKnap").focus({preventScroll:true});
+  }
   function markRead(a) {
     read[a.link]=Date.now();
     Object.keys(read).sort((a,b)=>read[b]-read[a]).slice(800).forEach(k=>delete read[k]);
@@ -338,10 +349,20 @@
     }
   }
   $("datoIdag").textContent=formatDate(new Date(),{weekday:"long",day:"numeric",month:"long",year:"numeric"});
-  $("menuKnap").addEventListener("click",()=>{const open=$("menuKnap").getAttribute("aria-expanded")!=="true";$("menuKnap").setAttribute("aria-expanded",String(open));$("navigation").classList.toggle("is-open",open);});
+  $("menuKnap").addEventListener("click",()=>{const open=$("menuKnap").getAttribute("aria-expanded")!=="true";if(open)setSearchOpen(false);$("menuKnap").setAttribute("aria-expanded",String(open));$("navigation").classList.toggle("is-open",open);});
+  $("soegeKnap").addEventListener("click",()=>setSearchOpen($("soegePanel").hidden));
+  $("lukSoegning").addEventListener("click",()=>setSearchOpen(false,true));
+  document.addEventListener("keydown",event=>{
+    if(event.key==="Escape"&&!$("soegePanel").hidden&&!$("laeser").open){event.preventDefault();setSearchOpen(false,true);}
+  });
   $("kategorier").addEventListener("click",event=>{const button=event.target.closest("[data-category]");if(!button)return;category=button.dataset.category;visible=12;renderCategories();renderList();$("kategorier").querySelector(`[data-category="${category}"]`)?.focus({preventScroll:true});});
   $("sortering").addEventListener("change",event=>{order=event.target.value;visible=12;renderList();});
   $("soeg").addEventListener("input",event=>{query=event.target.value;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{visible=12;renderList();},120);});
+  $("soeg").addEventListener("keydown",event=>{
+    if(event.key!=="Enter"||event.isComposing)return;
+    event.preventDefault();clearTimeout(searchTimer);visible=12;renderList();setSearchOpen(false);
+    $("nyhederTitel").focus();
+  });
   $("nulstil").addEventListener("click",resetFilters);
   $("visFlere").addEventListener("click",()=>{const previous=visible;visible+=12;renderList();const first=$("nyhedsliste").querySelectorAll(".news-row h3 a")[previous];first?.focus({preventScroll:true});});
   document.addEventListener("click",event=>{
