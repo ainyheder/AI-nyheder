@@ -313,13 +313,6 @@
     history.replaceState(null,"",location.pathname+location.search);
   }
   async function getJSON(url){const r=await fetch(url,{cache:"no-cache"});if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json();}
-  async function loadVideos(){
-    try{
-      const d=await getJSON("data/youtube.json");const list=(d.videoer||[]).filter(v=>v.rubrik&&safeUrl(v.side,true)).slice(0,3);
-      if(!list.length)return;
-      $("videoer").innerHTML=list.map(v=>`<a class="video-link" href="${escapeHtml(v.side)}"><span class="play-icon" aria-hidden="true">▷</span><div><h3>${escapeHtml(v.rubrik)}</h3><p>${escapeHtml(v.kanal||"YouTube")}${number(v.varighed)?` · ${Math.round(v.varighed/60)} min.`:""}</p></div></a>`).join("");$("videoSektion").hidden=false;
-    }catch{/* Nyhederne fungerer også, når videofeedet er utilgængeligt. */}
-  }
   async function load(){
     try{
       const data=await getJSON("data/articles.json");if(!Array.isArray(data.artikler))throw new Error("Ugyldigt nyhedsformat");
@@ -342,7 +335,7 @@
         if(Date.now()-updated>36*HOUR){$("dataBesked").textContent="Nyhederne er ikke opdateret for nylig. Du læser den senest tilgængelige udgave; udgivelsesdatoen står ved hver historie.";$("dataBesked").hidden=false;}
       }else $("opdateret").textContent="Seneste tilgængelige udgave";
       if(!all.length){$("dataBesked").textContent="Der er ingen nyheder i den seneste udgave. Prøv igen lidt senere.";$("dataBesked").hidden=false;}
-      renderCategories();renderFeatured();renderList();resolveHash();loadVideos();
+      renderCategories();renderFeatured();renderList();resolveHash();
     }catch{
       $("udvalgte").innerHTML="";$("udvalgte").setAttribute("aria-busy","false");$("nyhedsliste").setAttribute("aria-busy","false");$("opdateret").textContent="Nyhederne kunne ikke hentes";
       $("nyhedsliste").innerHTML='<div class="empty-state"><h3>Vi kunne ikke hente nyhederne</h3><p>Tjek forbindelsen, og prøv igen om lidt.</p><button id="proevIgen">Prøv igen</button></div>';

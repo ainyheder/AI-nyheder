@@ -544,7 +544,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
   line-height:1.65;
   display:-webkit-box;
   -webkit-box-orient:vertical;
-  -webkit-line-clamp:2;
+  -webkit-line-clamp:3;
   overflow:hidden;
 }
 
@@ -559,9 +559,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .story-thumbnail {
   display:block;
   float:right;
-  margin:2px 0 6px 14px;
-  width:96px;
-  height:72px;
+  margin:2px 0 4px 6px;
+  width:128px;
+  max-width:34%;
+  height:auto;
+  aspect-ratio:4/3;
   object-fit:cover;
   border-radius:8px;
 }
@@ -1543,7 +1545,7 @@ body.reader-open {
   .feature-story p {
     font-size:1rem;
     display:-webkit-box;
-    -webkit-line-clamp:2;
+    -webkit-line-clamp:3;
     overflow:hidden;
     line-height:1.5;
   }
@@ -1609,9 +1611,7 @@ body.reader-open {
   }
 
   .story-thumbnail {
-    width:80px;
-    height:60px;
-    margin-left:12px;
+    width:112px;
   }
 
   .sidebar {
@@ -1752,3 +1752,9 @@ body.reader-open {
   }
 
 }
+
+/* En enkel indgang til den prioriterede værktøjsguide. */
+.tools-teaser{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:22px}
+.tools-teaser h2{font-size:1.5rem;line-height:1.2;letter-spacing:-.03em;margin:12px 0}
+.tools-teaser>p:not(.eyebrow){color:var(--muted);font-size:.88rem}
+.tools-teaser>a{display:inline-block;color:var(--blue);font-size:.85rem;font-weight:650;margin-top:18px;padding-block:6px}

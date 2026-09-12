@@ -22,7 +22,7 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   w.HTMLElement.prototype.scrollIntoView=function(){};
   w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
   w.HTMLDialogElement.prototype.close=function(){this.open=false;};
-  w.fetch=async url=>({ok:!fail,status:fail?503:200,json:async()=>String(url).includes('youtube')?JSON.parse(fs.readFileSync(path.join(repo,'data/youtube.json'),'utf8')):JSON.parse(JSON.stringify(data))});
+  w.fetch=async url=>({ok:!fail,status:fail?503:200,json:async()=>{assert(!String(url).includes('youtube'),'Forsiden må ikke hente videoer');return JSON.parse(JSON.stringify(data));}});
   Object.defineProperty(w.navigator,'clipboard',{value:{writeText:async()=>{}}});
   if(blockedStorage)Object.defineProperty(w,'localStorage',{get(){throw new Error('Storage blocked');}});
   else{w.localStorage.setItem('visninger',JSON.stringify(Object.fromEntries(real.artikler.map(a=>[a.link,20]))));w.localStorage.setItem('laeste','null');}
@@ -56,7 +56,8 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   ok(d.querySelectorAll('.news-row').length===12,'Første side er begrænset');
   ok(!test.errors.length,'Ingen scriptfejl: '+test.errors.join(', '));
   ok(w.localStorage.getItem('visninger')===null,'Gammel skjult rotation ryddes');
-  ok(d.querySelectorAll('#videoer a').length===3,'Eksisterende videoer kan åbnes');
+  ok(!d.querySelector('#videoSektion'),'Videoer er fjernet fra forsiden');
+  ok(d.querySelector('.tools-teaser a').getAttribute('href')==='vaerktoejer.html','Forsiden linker til den nye værktøjsguide');
   ok([...d.querySelectorAll('a[data-article]')].every(a=>api.safeUrl(a.getAttribute('href'),true)||api.safeUrl(a.getAttribute('href'))),'Nyhedslinks virker uden klikhandler');
   d.getElementById('visFlere').click();ok(d.querySelectorAll('.news-row').length===24,'Vis flere');
   ok(visibleHeadlines(d).length===new Set(visibleHeadlines(d)).size,'Vis flere gentager heller ikke toppen');

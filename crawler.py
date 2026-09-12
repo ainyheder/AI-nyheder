@@ -2992,7 +2992,7 @@ footer a{{color:var(--accent)}}
 <span class="mail-note">Én mail om ugen. Ingen spam. Afmeld med ét klik.</span>
 </div>
 </main>
-<footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="laer.html">Lær AI</a></footer>
+<footer>Opdateres hver fredag · © 2026 AI-nyheder · <a href="./">Forsiden</a> · <a href="vaerktoejer.html">Værktøjer</a></footer>
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}\'></script>
 </body>
@@ -3357,7 +3357,7 @@ footer a {{ color:var(--accent); }}
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">{note}</p>
 </main>
-<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}'></script>
 </body>
@@ -3825,7 +3825,7 @@ footer a {{ color:var(--accent); }}
 <a class="cta" href="/youtube.html">Flere AI-videoer opsummeret på dansk →</a>
 <p class="note">Resuméet er skrevet af AI-nyheder.com ud fra videoen · Vi ejer ikke videoen, og den ligger fortsat hos {html.escape(v.get("kanal", "kanalen"))} · Tjek altid originalen, hvis noget er vigtigt for dig.</p>
 </main>
-<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/laer.html">Lær AI</a></footer>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
 <!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "fda17dd7ade34a579f4ec6d615265fa6"}}'></script>
 </body>
@@ -5053,10 +5053,7 @@ AI_CHAT_KILDER = [
 # uge, er det den interessante oplysning - ikke at forsiden klarer sig fint.
 # Står her ét sted, fordi både gennemgangen og kontrolpanelet spørger om den.
 FASTE_SIDER = [
-    "/", "/laer.html", "/koerekort.html", "/erhverv.html", "/prompts.html",
-    "/prompt-arkiv.html", "/ordbog.html", "/quiz.html", "/uge.html",
-    "/youtube.html", "/vaerktoejer.html", "/faq.html", "/om.html",
-    "/guide-igang.html", "/guide-prompts.html", "/guide-sikkerhed.html",
+    "/", "/uge.html", "/vaerktoejer.html", "/faq.html", "/om.html", "/cookies.html",
 ]
 
 
@@ -5650,7 +5647,7 @@ def tjek_statisk_sitemap() -> list[str]:
     """Siger til, hvis sitemap.xml er faldet bagud for filerne i roden.
 
     sitemap.xml vedligeholdes i hånden (i modsætning til sitemap-artikler.xml
-    og sitemap-videoer.xml, som skrives her i filen). Derfor falder den bagud,
+    som skrives her i filen). Derfor falder den bagud,
     hver gang der kommer en ny side til - og ingen opdager det, fordi
     ingenting går i stykker. Det skete med undervisning.html: 6.232 tegn
     færdig side, som hverken var linket eller stod i sitemappet, altså
@@ -6024,15 +6021,10 @@ def main() -> None:
     skriv_kilde_status(alle_feeds, kilde_resultat, unikke, nu)
     lav_rss([a for a in unikke if not redaktion.reklame(a)])
     lav_ugens_overblik(unikke)
-    lav_dagens_prompt()
-    lav_ugens_quiz(unikke)
     lav_dagens_brief(unikke, valgt_forside)
     del_paa_platforme(udgavens_artikler(unikke, valgt_forside, nu=nu))  # tørkørsel indtil OPSLAG_LIVE=ja
     hent_laesertal()           # så gennemgangen kan se, hvad folk faktisk læser
-    try:
-        lav_youtube()          # må aldrig vælte nyhedscrawlet
-    except Exception as fejl:
-        print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
+    # Videoer, kurser og læserprompts er nedlagt; kun nyhedsudgaven produceres.
     tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
     try:
         skriv_kommando_data(ROOT, offentlig=os.environ.get("GITHUB_ACTIONS") == "true")

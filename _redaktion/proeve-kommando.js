@@ -378,7 +378,7 @@ async function run() {
     assert.equal(p.app.modelList('omskriv').filter(m=>m.startsWith('gemini-model-')).length,40);
   }));
 
-  await check("All revised prompts render and image style edits preserve FLUX", async () => {
+  await check("Active prompts render, retired steps stay hidden and image edits preserve FLUX", async () => {
     const data=fixture();
     data.hjerner_fil=JSON.parse(fs.readFileSync(path.join(ROOT,'_redaktion/hjerner.json'),'utf8'));
     data.hjerner_fil.hjerner.billedgenerator={model:'@cf/black-forest-labs/flux-2-klein-4b',prompt:'Test image style'};
@@ -386,7 +386,9 @@ async function run() {
     return usingPanel(p => {
       p.app.validateConfig('hjerner',p.app.state.drafts.hjerner);
       p.app.navigate('models');
-      for(const [name,step] of Object.entries(data.hjerner_fil.hjerner).filter(([,s])=>s.prompt)) {
+      const retired = new Set(['kartotek','quiz','youtube']);
+      for (const name of retired) assert.equal(p.d.querySelector(`[data-edit-model="${name}"]`),null);
+      for(const [name,step] of Object.entries(data.hjerner_fil.hjerner).filter(([name,s])=>s.prompt&&!retired.has(name))) {
         p.d.querySelector(`[data-edit-model="${name}"]`).click();
         assert.equal(p.d.getElementById('step-prompt').value,step.prompt);
         p.d.getElementById('edit-dialog').close();

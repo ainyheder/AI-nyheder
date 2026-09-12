@@ -208,9 +208,11 @@ class WorkflowTests(unittest.TestCase):
             for key, value in changes.items(): stack.enter_context(patch.object(c, key, value))
             for name in ("skriv_hjerne_status", "omskriv_nye", "klassificer", "_skriv_foerst_set_butik",
                          "gem_redaktoer_status", "skriv_kilde_status", "lav_rss", "lav_ugens_overblik",
-                         "lav_dagens_prompt", "lav_ugens_quiz", "hent_laesertal", "lav_youtube",
+                         "hent_laesertal",
                          "tjek_statisk_sitemap", "skriv_kommando_data"):
                 stack.enter_context(patch.object(c, name))
+            for name in ("lav_dagens_prompt", "lav_ugens_quiz", "lav_youtube"):
+                stack.enter_context(patch.object(c, name, side_effect=AssertionError("Nedlagte sektioner må ikke produceres")))
             stack.enter_context(patch.object(c, "_aktive_feeds", return_value=([feed], [])))
             stack.enter_context(patch.object(c, "crawl_feed", return_value=(feed, [a], None)))
             stack.enter_context(patch.object(c, "_laes_foerst_set_butik", return_value={}))

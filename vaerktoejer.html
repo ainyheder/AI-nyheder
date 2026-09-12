@@ -1,181 +1,70 @@
 <!DOCTYPE html>
-<html lang="da">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Værktøjsoversigten</title>
-<meta name="description" content="Hvilken AI skal du bruge til hvad? Redaktionens oversigt over de vigtigste AI-værktøjer — chatbots, billeder, research, oversættelse og lyd — med ærlige noter om, hvad de er gode til.">
+<html lang="da"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>De AI-værktøjer, vi ville starte med · AI-nyheder</title>
+<meta name="description" content="Fem AI-værktøjer i prioriteret rækkefølge. Forstå hvad ChatGPT, Codex, Claude og de andre kan hjælpe med, og prøv en konkret opgave.">
 <link rel="canonical" href="https://ainyheder.com/vaerktoejer.html">
-<meta name="theme-color" content="#f4f2ec">
-<meta property="og:image" content="https://ainyheder.com/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<style>
-:root {
-  --bg: #f4f2ec; --bg-kort: #ffffff; --blaek: #191714; --blaek-svag: #6d675d;
-  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd; --radius: 18px;
-  --groen: #2e9e5b; --rav: #c2711d;
-  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
-  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.6; }
-a { color: inherit; }
-.topbar { position: sticky; top: 0; z-index: 90; background: color-mix(in srgb, var(--bg) 86%, transparent);
-  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje); }
-.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
-/* Logoet i topbjaelken. PNG'en er 128px og vises i 30px, saa maerket
-   holder sig skarpt paa skaerme med hoej oploesning. */
-.brand-logo { width: 30px; height: 30px; align-self: center; display: block; flex: none; }
-.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 24px; letter-spacing: -.03em; }
-.brand-navn em { font-style: normal; color: var(--accent); }
-.top-led { font-size: 13px; font-weight: 600; color: var(--blaek-svag); text-decoration: none; }
-.top-led:hover { color: var(--accent); }
-.tilbage { margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
-  border: 1px solid var(--linje); background: var(--bg-kort); padding: 8px 16px; border-radius: 999px; }
-.tilbage:hover { border-color: var(--accent); color: var(--accent); }
-main { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-.kicker { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-  color: var(--accent); background: var(--accent-svag); padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; }
-h1 { font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
-  font-size: clamp(28px, 5vw, 42px); line-height: 1.1; margin-bottom: 14px; }
-.manchet { font-size: 17px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 26px; max-width: 64ch; }
-h2 { font-family: var(--font-display); font-weight: 800; font-size: 23px; margin: 40px 0 14px; letter-spacing: -.01em; }
-p { font-size: 15.5px; line-height: 1.75; margin-bottom: 13px; }
-strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
-.boks { background: var(--accent-svag); border-left: 3px solid var(--accent);
-  border-radius: 0 12px 12px 0; padding: 14px 18px; margin: 16px 0; font-size: 15px; }
-footer { border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center; font-size: 12px; color: var(--blaek-svag); }
-footer a { color: var(--accent); }
+<meta property="og:title" content="Hvilke AI-værktøjer skal du starte med?">
+<meta property="og:description" content="Fem tydelige valg. Hvad de gør, hvornår du har brug for dem, og hvordan du kommer i gang.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://ainyheder.com/vaerktoejer.html"><meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="theme-color" content="#0c0e12"><link rel="icon" href="assets/ai-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/skrifter.css?v=2"><link rel="stylesheet" href="assets/nyheder.css?v=13"><link rel="stylesheet" href="assets/vaerktoejer.css?v=1">
+<script src="assets/vaerktoejer.js?v=1" defer></script>
+<noscript><style>.tools-page .navigation{display:flex;flex-wrap:wrap}.tools-page .menu-button{display:none}</style></noscript>
+</head><body class="tools-page">
+<a class="skip-link" href="#hovedindhold">Gå til værktøjerne</a>
+<header class="site-header"><div class="masthead wrap"><a class="brand" href="./" aria-label="AI-nyheder, forsiden"><img src="assets/ai-mark.svg" alt="" width="40" height="40"><span>nyheder</span></a><span class="masthead-note">Et skridt foran.</span><button class="menu-button" id="menuKnap" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button></div><nav class="navigation wrap" id="navigation" aria-label="Hovednavigation"><a href="./">Nyheder</a><a href="uge.html">Ugens overblik</a><a href="vaerktoejer.html" aria-current="page">Værktøjer</a><a href="om.html" class="nav-about">Om AI-nyheder</a></nav></header>
+<main class="wrap tools-main" id="hovedindhold" tabindex="-1">
+<header class="tools-intro"><p class="eyebrow">Værktøjsguiden</p><h1>Start med én.<br><span>Få mere ud af AI.</span></h1><p>Her er de fem værktøjer, vi ville prøve først — i rækkefølge. Hvad de gør, hvem de er til, og en opgave, du kan starte med.</p></header>
+<div class="tool-filters" role="group" aria-label="Vis værktøjer til din opgave" hidden><span>Hvad vil du?</span><div><button type="button" data-filter="alle" aria-pressed="true">Se alle</button><button type="button" data-filter="hverdag" aria-pressed="false">Lettere hverdag</button><button type="button" data-filter="byg" aria-pressed="false">Byg noget</button><button type="button" data-filter="dokumenter" aria-pressed="false">Forstå dokumenter</button><button type="button" data-filter="research" aria-pressed="false">Research</button><button type="button" data-filter="design" aria-pressed="false">Design</button></div></div>
+<div class="guide-caption"><p id="tool-count" role="status" aria-live="polite">5 værktøjer · vores anbefalede rækkefølge</p><span>Tjekket <time datetime="2026-09-12">12. sep. 2026</time></span></div>
+<ol class="tool-list" aria-label="Værktøjer i anbefalet rækkefølge"><li class="tool-card tool-first" id="chatgpt" data-tasks="hverdag byg research dokumenter">
+  <div class="tool-number" aria-label="Prioritet 1">01</div>
+  <div class="tool-content">
+    <div class="tool-heading"><div><p class="tool-label">Start her</p><h2>ChatGPT + Codex</h2></div><span class="tool-fit">Til både hverdag og projekter</span></div>
+    <p class="tool-job">Din allround-hjælper. Og din makker til at bygge ting.</p><p class="tool-description">Brug ChatGPT til at forstå noget, arbejde med filer og få en opgave fra idé til et brugbart resultat. Brug Codex, når idéen skal blive til en hjemmeside, et lille program eller en ændring i et eksisterende projekt.</p>
 
-.v-net { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
-.v-kort { background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
-  border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--skygge); }
-.v-kort h3 { font-family: var(--font-display); font-weight: 800; font-size: 18px; margin-bottom: 2px; }
-.v-kort .fra { font-size: 12px; color: var(--blaek-svag); font-weight: 600; margin-bottom: 10px; }
-.v-kort p { font-size: 14px; margin-bottom: 10px; }
-.v-god { font-size: 13.5px; margin: 4px 0; padding-left: 24px; position: relative; }
-.v-god::before { content: "✓"; position: absolute; left: 2px; color: var(--groen); font-weight: 800; }
-.v-pas { font-size: 13.5px; margin: 4px 0; padding-left: 24px; position: relative; color: var(--blaek-svag); }
-.v-pas::before { content: "!"; position: absolute; left: 6px; color: var(--rav); font-weight: 800; }
-.naeste-net { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 34px; }
-.naeste { display: block; background: var(--bg-kort); border: 1px solid var(--linje); border-top: 4px solid var(--accent);
-  border-radius: var(--radius); padding: 20px 22px; text-decoration: none; box-shadow: var(--skygge);
-  transition: transform .15s, border-color .15s; }
-.naeste:hover { transform: translateY(-2px); border-color: var(--accent); }
-.naeste .n-titel { font-family: var(--font-display); font-weight: 800; font-size: 16px; margin-bottom: 4px; }
-.naeste p { font-size: 13px; color: var(--blaek-svag); margin: 0; }
-</style>
-</head>
-<body>
-<div class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="./"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async"><span class="brand-navn">AI<em>-nyheder</em></span></a>
-    <a class="top-led" href="laer.html">Lær AI</a>
-    <a class="top-led" href="ordbog.html">Ordbog</a>
-    <a class="top-led" href="prompts.html">Prompts</a>
-    <a class="top-led" href="faq.html">FAQ</a>
-    <a class="tilbage" href="laer.html">← Lær AI</a>
+    <div class="tool-actions"><a class="tool-open" href="https://chatgpt.com/" rel="noopener" target="_blank">Åbn ChatGPT<span class="sr-only"> (ny fane)</span></a></div>
+    <details class="tool-example" id="chatgpt-example"><summary>Hvorfor dette valg? Se et eksempel</summary><div><div class="tool-verdict"><strong>Derfor på listen</strong><p>Det dækker flest af de opgaver, vi ville starte med. Lær det godt at kende, før du tilføjer flere værktøjer.</p></div><p class="example-task">Giv ChatGPT en rodet tekst: “Lav den om til en kort plan med de tre vigtigste næste skridt. Spørg, hvis noget mangler.”</p><p>Vil du bygge noget? Åbn dit projekt i Codex og beskriv resultatet: “Lav en enkel side, hvor jeg kan sammenligne mine tilbud. Vis pris og forskelle tydeligt.” Codex kan arbejde i filerne og afprøve ændringerne. Gennemgå resultatet, før du bruger det.</p><p class="tool-note">ChatGPT hjælper dig med opgaven. Codex kan arbejde med selve koden og filerne.</p><a class="tool-source" href="https://learn.chatgpt.com/docs" rel="noopener" target="_blank">OpenAI: ChatGPT og Codex<span class="sr-only"> (ny fane)</span></a></div></details>
   </div>
-</div>
-<main>
-<span class="kicker">Redaktionens oversigt · opdateres løbende</span>
-<h1>Hvilken AI til hvad? 🧭</h1>
-<p class="manchet">Der udkommer et nyt "revolutionerende" AI-værktøj hver uge — men til hverdagsbrug rækker en håndfuld gennemprøvede langt. Her er dem, vi selv ville pege på, sorteret efter opgave. Alle har gratis udgaver eller prøveperioder.</p>
-<div class="boks"><strong>Ærligt forbehold:</strong> Priser, funktioner og modeller skifter hurtigere, end nogen oversigt kan følge med til. Brug siden her til at vælge <em>retning</em> — og tjek detaljerne hos udbyderen, før du lægger arbejde eller penge i et værktøj.</div>
+</li><li class="tool-card" id="claude" data-tasks="hverdag dokumenter byg">
+  <div class="tool-number" aria-label="Prioritet 2">02</div>
+  <div class="tool-content">
+    <div class="tool-heading"><div><p class="tool-label">Et alternativ</p><h2>Claude</h2></div><span class="tool-fit">Når du vil prøve en anden hovedassistent</span></div>
+    <p class="tool-job">Skriv, bearbejd og byg videre på et udkast.</p><p class="tool-description">En anden bred AI-assistent. Dens Artifacts viser dokumenter, diagrammer og små interaktive værktøjer ved siden af samtalen, så du kan rette dem videre sammen med AI’en.</p>
 
-<h2>💬 Skrive, tænke og få svar</h2>
-<div class="v-net">
-  <div class="v-kort"><h3>ChatGPT</h3><div class="fra">OpenAI · chatgpt.com</div>
-    <p>Den mest udbredte chatbot — og for de fleste det naturlige sted at starte.</p>
-    <div class="v-god">Alsidig: tekst, billeder, websøgning og stemme i ét</div>
-    <div class="v-god">Størst økosystem af vejledninger og hjælp på nettet</div>
-    <div class="v-pas">Så populær, at gratis-udgaven kan være presset i myldretiden</div></div>
-  <div class="v-kort"><h3>Gemini</h3><div class="fra">Google · gemini.google.com</div>
-    <p>Googles chatbot — vævet ind i Gmail, Docs, Android og søgningen.</p>
-    <div class="v-god">Stærk, hvis din hverdag i forvejen er Google</div>
-    <div class="v-god">God til at kombinere søgning og svar</div>
-    <div class="v-pas">Tjek indstillingerne for, hvad der deles med din Google-konto</div></div>
-  <div class="v-kort"><h3>Claude</h3><div class="fra">Anthropic · claude.ai</div>
-    <p>Kendt for gennemarbejdede, lange svar og god tekstforståelse.</p>
-    <div class="v-god">Stærk til lange dokumenter og grundige gennemskrivninger</div>
-    <div class="v-god">God, naturlig dansk tone</div>
-    <div class="v-pas">Færre indbyggede ekstrafunktioner end de to store</div></div>
-  <div class="v-kort"><h3>Microsoft Copilot</h3><div class="fra">Microsoft · copilot.microsoft.com</div>
-    <p>AI'en i Windows, Word, Outlook og Excel — dér hvor mange arbejder i forvejen.</p>
-    <div class="v-god">Arbejder direkte i dine dokumenter og mails</div>
-    <div class="v-god">Ofte det, arbejdspladsen allerede har licens til</div>
-    <div class="v-pas">Fuld styrke kræver typisk et Microsoft 365-abonnement</div></div>
-</div>
+    <div class="tool-actions"><a class="tool-open" href="https://claude.ai/" rel="noopener" target="_blank">Åbn Claude<span class="sr-only"> (ny fane)</span></a></div>
+    <details class="tool-example" id="claude-example"><summary>Hvorfor dette valg? Se et eksempel</summary><div><div class="tool-verdict"><strong>Derfor på listen</strong><p>Vores næste værktøj at afprøve, hvis arbejdet især handler om tekster og udkast. Vælg den assistent, der passer bedst til din måde at arbejde på.</p></div><p class="example-task">Indsæt et udkast: “Gør dette tilbud klart for en kunde uden fagviden. Bevar priser og forbehold. Vis den nye version som et dokument, vi kan rette videre i.”</p><p>Prøv samme opgave i ChatGPT og Claude. Vælg ud fra det resultat, du faktisk kan bruge. Du behøver ikke abonnement på begge.</p><p class="tool-note">Overlapper meget med ChatGPT. Et valg at sammenligne med — ikke et nødvendigt ekstra køb.</p><a class="tool-source" href="https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them" rel="noopener" target="_blank">Claude: Sådan virker Artifacts<span class="sr-only"> (ny fane)</span></a></div></details>
+  </div>
+</li><li class="tool-card" id="notebook" data-tasks="dokumenter research">
+  <div class="tool-number" aria-label="Prioritet 3">03</div>
+  <div class="tool-content">
+    <div class="tool-heading"><div><p class="tool-label">Dine kilder</p><h2>Gemini Notebook</h2></div><span class="tool-fit">Når svarene skal bygge på dit materiale</span></div>
+    <p class="tool-job">Få overblik over en bunke dokumenter.</p><p class="tool-description">Googles notesbog til research ud fra materiale, du samler. Tilføj for eksempel PDF’er, noter og websider. Stil spørgsmål, og følg henvisningerne tilbage til de steder, svaret bygger på.</p>
 
-<h2>🔎 Research og opslagsværk</h2>
-<div class="v-net">
-  <div class="v-kort"><h3>Perplexity</h3><div class="fra">Perplexity · perplexity.ai</div>
-    <p>En "svarmaskine": søger på nettet og svarer med kildehenvisninger.</p>
-    <div class="v-god">Kilder med i hvert svar — let at efterprøve</div>
-    <div class="v-god">God til dagsaktuelle spørgsmål</div>
-    <div class="v-pas">Kilderne skal stadig tjekkes — den kan fejllæse dem</div></div>
-  <div class="v-kort"><h3>NotebookLM</h3><div class="fra">Google · notebooklm.google.com</div>
-    <p>Upload dine egne dokumenter og stil spørgsmål til netop dem.</p>
-    <div class="v-god">Svarer KUN ud fra dine kilder — mindre digt</div>
-    <div class="v-god">Kan lave lyd-overblik af dine dokumenter</div>
-    <div class="v-pas">Kun så god som de dokumenter, du giver den</div></div>
-</div>
+    <div class="tool-actions"><a class="tool-open" href="https://notebooklm.google.com/" rel="noopener" target="_blank">Åbn Googles notesbog<span class="sr-only"> (ny fane)</span></a></div>
+    <details class="tool-example" id="notebook-example"><summary>Hvorfor dette valg? Se et eksempel</summary><div><div class="tool-verdict"><strong>Derfor på listen</strong><p>Relevant, når du har mange kilder og skal forstå sammenhængen. Du kan også få materialet samlet i et lydresumé.</p></div><p class="example-task">Tilføj tre produktbeskrivelser: “Sammenlign garantierne. Vis forskellene i en tabel med henvisning til hver kilde. Markér det, dokumenterne ikke oplyser.”</p><p>Start med få, gode kilder. Åbn henvisningerne og kontrollér de vigtige oplysninger. AI kan stadig misforstå en kilde.</p><p class="tool-note">Vælg dette til din samling af kilder. Til fri søgning på nettet kan du starte i din almindelige AI-chat.</p><a class="tool-source" href="https://support.google.com/gemininotebook/answer/16164461?hl=en" rel="noopener" target="_blank">Google: Gemini Notebook<span class="sr-only"> (ny fane)</span></a></div></details>
+  </div>
+</li><li class="tool-card" id="perplexity" data-tasks="research hverdag">
+  <div class="tool-number" aria-label="Prioritet 4">04</div>
+  <div class="tool-content">
+    <div class="tool-heading"><div><p class="tool-label">Research</p><h2>Perplexity</h2></div><span class="tool-fit">Når du ofte undersøger noget nyt</span></div>
+    <p class="tool-job">Undersøg et emne med kilder ved hånden.</p><p class="tool-description">Stil et spørgsmål, få et samlet svar, og brug kildelinkene til at undersøge det videre. Det er en let indgang til at sammenligne oplysninger fra nettet.</p>
 
-<h2>🎨 Billeder og design</h2>
-<div class="v-net">
-  <div class="v-kort"><h3>Billeder i chatbotten</h3><div class="fra">ChatGPT / Gemini</div>
-    <p>De store chatbots laver i dag billeder direkte i samtalen — nemmeste vej i gang.</p>
-    <div class="v-god">Ingen ny konto — bare beskriv billedet på dansk</div>
-    <div class="v-god">Nemt at bede om rettelser i samme samtale</div>
-    <div class="v-pas">Lav aldrig billeder af virkelige personer uden samtykke</div></div>
-  <div class="v-kort"><h3>Midjourney</h3><div class="fra">Midjourney · midjourney.com</div>
-    <p>Kunstnernes favorit — ofte de flotteste og mest stemningsfulde billeder.</p>
-    <div class="v-god">Meget høj billedkvalitet og stil</div>
-    <div class="v-pas">Betalingsværktøj og lidt stejlere at lære</div></div>
-  <div class="v-kort"><h3>Canva</h3><div class="fra">Canva · canva.com</div>
-    <p>Design-værktøjet til plakater, opslag og invitationer — nu med AI indbygget.</p>
-    <div class="v-god">Færdige skabeloner + AI-hjælp = hurtige, pæne resultater</div>
-    <div class="v-god">God gratis-udgave til privat brug</div>
-    <div class="v-pas">AI-funktionerne ligger delvist bag betalingsplanen</div></div>
-</div>
+    <div class="tool-actions"><a class="tool-open" href="https://www.perplexity.ai/" rel="noopener" target="_blank">Åbn Perplexity<span class="sr-only"> (ny fane)</span></a></div>
+    <details class="tool-example" id="perplexity-example"><summary>Hvorfor dette valg? Se et eksempel</summary><div><div class="tool-verdict"><strong>Derfor på listen</strong><p>Et nyttigt specialværktøj, hvis du ofte researcher. Prøv først, om websøgningen i din nuværende AI-assistent allerede løser opgaven.</p></div><p class="example-task">Spørg: “Hvilke ændringer er der kommet i dette produkt den seneste måned? Brug udbyderens egne meddelelser, angiv datoer og link til dem.”</p><p>Et kildelink gør ikke automatisk svaret korrekt. Se efter, om siden faktisk understøtter påstanden, og om oplysningen er ny.</p><p class="tool-note">Et supplement til research. Ikke endnu en chat, du skal have for enhver pris.</p><a class="tool-source" href="https://www.perplexity.ai/help-center/en/articles/10352155-what-is-perplexity" rel="noopener" target="_blank">Perplexity: Sådan fungerer tjenesten<span class="sr-only"> (ny fane)</span></a></div></details>
+  </div>
+</li><li class="tool-card" id="canva" data-tasks="design">
+  <div class="tool-number" aria-label="Prioritet 5">05</div>
+  <div class="tool-content">
+    <div class="tool-heading"><div><p class="tool-label">Design</p><h2>Canva</h2></div><span class="tool-fit">Når resultatet skal se færdigt ud</span></div>
+    <p class="tool-job">Gør indholdet klar til at vise andre.</p><p class="tool-description">Lav præsentationer, opslag og dokumenter med færdige skabeloner og AI-hjælp. Du kan beskrive det, du vil lave, og arbejde videre med tekst, billeder og layout.</p>
 
-<h2>🌍 Sprog, lyd og møder</h2>
-<div class="v-net">
-  <div class="v-kort"><h3>DeepL</h3><div class="fra">DeepL · deepl.com</div>
-    <p>Specialist i oversættelse — ofte mere naturlig end de generelle chatbots.</p>
-    <div class="v-god">Fremragende dansk-engelsk og omvendt</div>
-    <div class="v-god">Kan oversætte hele dokumenter med formatering</div>
-    <div class="v-pas">Vigtige tekster (kontrakter!) skal stadig læses efter</div></div>
-  <div class="v-kort"><h3>ElevenLabs</h3><div class="fra">ElevenLabs · elevenlabs.io</div>
-    <p>Naturlige AI-stemmer — oplæsning af tekst i høj kvalitet, også på dansk.</p>
-    <div class="v-god">Imponerende naturlige stemmer</div>
-    <div class="v-pas">Klon aldrig andres stemme uden tydeligt samtykke</div></div>
-  <div class="v-kort"><h3>Mødereferat-AI</h3><div class="fra">Indbygget i Teams, Meet & Zoom</div>
-    <p>Mødeværktøjerne kan i dag selv optage, transskribere og opsummere møder.</p>
-    <div class="v-god">Referatet skriver sig selv, mens du deltager</div>
-    <div class="v-pas">Sig altid højt, at der optages — og følg arbejdspladsens regler</div></div>
-</div>
-
-<div class="boks" style="margin-top:30px;"><strong>Tommelfingerreglen, når du vælger:</strong> Start med den chatbot, der ligger tættest på det, du bruger i forvejen (Google-menneske → Gemini, Microsoft-arbejdsplads → Copilot, ellers ChatGPT eller Claude). Specialværktøjerne henter du først, når du rammer chatbottens grænser.</div>
-
-<div class="naeste-net">
-  <a class="naeste" href="erhverv-1.html"><div class="n-titel">💼 Vælg værktøj som professionel</div><p>Erhvervsmodul 1 lærer dig at vælge med datavilkår og GDPR på plads — med prøve og bevis.</p></a>
-  <a class="naeste" href="guide-igang.html"><div class="n-titel">🚀 Helt ny? Start her</div><p>Fra nul til din første AI-samtale på ti minutter — gratis og ufarligt.</p></a>
-</div>
-</main>
-<footer>Opdateres løbende hele døgnet · © 2026 AI-nyheder · <a href="om.html">Om os</a> · <a href="cookies.html">Cookies</a> · <a href="laer.html">Lær AI</a></footer>
-
-<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
-<script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
-</script>
-</body>
-</html>
+    <div class="tool-actions"><a class="tool-open" href="https://www.canva.com/" rel="noopener" target="_blank">Åbn Canva<span class="sr-only"> (ny fane)</span></a></div>
+    <details class="tool-example" id="canva-example"><summary>Hvorfor dette valg? Se et eksempel</summary><div><div class="tool-verdict"><strong>Derfor på listen</strong><p>Vælg det, når du har indholdet, men mangler en flot og overskuelig indpakning. Især praktisk, når du selv vil kunne flytte rundt og rette til.</p></div><p class="example-task">Tag din færdige tekst med ind: “Lav en præsentation på fem sider om dette forslag. Ét hovedbudskab pr. side, stor skrift og få ord.” Ret bagefter fakta, billeder og layout til.</p><p>Vælg skabeloner og elementer, du har adgang til. Nogle funktioner og materialer kræver betaling; se det aktuelle abonnement hos Canva.</p><p class="tool-note">Til det visuelle slutresultat. Brug din hovedassistent til at få styr på indholdet først.</p><a class="tool-source" href="https://www.canva.com/help/use-magic-design/" rel="noopener" target="_blank">Canva: Design med AI<span class="sr-only"> (ny fane)</span></a></div></details>
+  </div>
+</li></ol>
+<section class="guide-method" aria-labelledby="valg"><div><p class="eyebrow">Sådan har vi valgt</p><h2 id="valg">Du behøver ikke dem alle.</h2></div><div><p>Rækkefølgen er vores redaktionelle anbefaling til en bredt interesseret læser: først en alsidig assistent, derefter alternativer og specialværktøjer. Det er ikke en måling af, hvilken AI der er klogest. Dit behov kan sagtens gøre nr. 5 til dit første valg.</p><p>Funktionerne er tjekket i udbydernes dokumentation. Guiden er redaktionelt vedligeholdt og følger ikke automatisk nyhedernes opdateringer. Adgang, grænser og priser kan ændre sig; kontrollér dem hos udbyderen, før du vælger abonnement.</p></div></section>
+</main><footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/ai-mark.svg" alt="AI" width="32" height="32"><span>nyheder</span></a><p>Et skridt foran. På dansk.</p><nav aria-label="Bundnavigation"><a href="om.html">Om os</a><a href="cookies.html">Privatliv og lagring</a><a href="faq.html">Spørgsmål og svar</a><a href="feed.xml">RSS</a></nav><span>© 2026 AI-nyheder</span></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body></html>

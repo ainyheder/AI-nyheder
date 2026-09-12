@@ -11,7 +11,7 @@
   const safeUrl = value => { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : ''; } catch (_) { return ''; } };
   const PATHS = {feeds:'opsaetning/feeds.json', hjerner:'_redaktion/hjerner.json', retning:'opsaetning/redaktoer.md'};
   const NAMES = {feeds:'Nyhedskilder', hjerner:'Modeller og instruktioner', retning:'Redaktionens retning'};
-  const STEP_NAMES = {forside_agent:'Vælg forsiden · redaktøragent',billedgenerator:'Generér illustrationer',omskriv:'Rubrik og resumé',kategori:'Vurder nyhedsværdi',dublet:'Saml dubletter',brief:'Skriv hele artiklen',redaktoer:'Kontrollér artiklen',stram:'Stram teksten op',navngiv:'Forbedr gamle rubrikker',motiv:'Beskriv billedmotivet',kartotek:'Skriv dagens læserprompt',quiz:'Lav quizzen',dagens_overblik:'Dagens overblik',ugens_overblik:'Ugens overblik',youtube:'Bearbejd videoer',opslag:'Skriv sociale opslag'};
+  const STEP_NAMES = {forside_agent:'Vælg forsiden · redaktøragent',billedgenerator:'Generér illustrationer',omskriv:'Rubrik og resumé',kategori:'Vurder nyhedsværdi',dublet:'Saml dubletter',brief:'Skriv hele artiklen',redaktoer:'Kontrollér artiklen',stram:'Stram teksten op',navngiv:'Forbedr gamle rubrikker',motiv:'Beskriv billedmotivet',dagens_overblik:'Dagens overblik',ugens_overblik:'Ugens overblik',opslag:'Skriv sociale opslag'};
   const VIEWS = {
     overview:['Overblik','REDAKTIONEN','Det vigtigste fra din seneste udgave.','grid'],
     editor:['AI-redaktør','DEN REDAKTIONELLE LINJE','Bestem, hvad der er værd at fortælle — og hvorfor.','spark'],
