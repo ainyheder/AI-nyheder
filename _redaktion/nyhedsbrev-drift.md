@@ -166,20 +166,45 @@ Det officielle feed kunne samtidig hentes lokalt: 20 breve, seneste fra
 komprimering. Samme offentlige feed og tydelige AI-nyheder-identifikation
 bevares. Op til to genforsøg gælder kun curls midlertidige fejl (fx timeout,
 429 og 503), med tidsgrænse; 401/403 gentages ikke som en endeløs løkke.
-Adgangsafvisninger, HTML-fejlsider, omdirigeringer og ufuldstændige downloads
-stopper før redaktion. En eventuel Cloudflare-browserkontrol angives i fejlen.
-Ingen proxy, login-cookie, manuel kildetekst eller gammel cache bruges.
+En eventuel Cloudflare-browserkontrol angives i fejlen. HTML-fejlsider,
+omdirigeringer og ufuldstændige downloads behandles aldrig som brevtekst.
+Ingen login-cookie eller manuel kildetekst bruges.
 
 Gmail-testen og den daglige udsendelse bruger den samme fetch_feed-funktion.
 Det tidligere test_source_json-input er fjernet, så en grøn test ikke kan
 skjule en defekt feed-hentning. `--check` viser HTTP-status, antal breve,
 seneste titler/datoer og antal ord; originaltekster og cookies logges ikke.
 
-Den nye transport er testet lokalt med det levende feed og med simulerede
-fejlsvar. **Adgang fra GitHub er ikke bekræftet med denne ændring endnu.**
-Efter push: start en ny workflow-kørsel med kun check_feed valgt. HTTP 200
-og metadata fra den fulde seneste original kræves, før feedadgangen kaldes
-løst. Fortsat 403 kræver yderligere afklaring af adgangen til kilden.
+Kørsel 34691400598 på GitHub bekræftede HTTP 403 med `cf-mitigated: challenge`
+også med curl/HTTP2. Den direkte adgang er derfor fortsat blokeret fra runneren.
+
+### Automatisk RSS-læser som reserve
+
+Når den direkte transport afvises eller er midlertidigt utilgængelig, bruges
+RSS2JSONs dokumenterede læse-API med præcis den samme Metatrends-feedadresse.
+Det kræver ikke en API-nøgle. Standardresponsen indeholder de ti nyeste breve.
+Den nye transport deler ikke credentials med tjenesten; kun den offentlige
+feedadresse. RSS2JSON er en ekstra ekstern afhængighed, og deres cache kan
+forsinke opdagelsen. Tjenesten har i den aktuelle respons cachetid på 30 min.;
+det er ikke en garanti for deres interne opdateringsinterval.
+
+Før integrationen blev alle ti brevtekster sammenlignet med RSS-originalen:
+de var identiske. Forfattere, links og datoer matchede også. Én ældre titel
+havde fået fjernet et afsluttende mellemrum; selve teksten var uændret.
+
+`reader_items` afviser forkert feed, manglende `content`, ukendte kildelinks,
+dubletter og ukendte datoformater. `description` bruges aldrig som erstatning.
+Originalens URL og hash-id bevares, så skift mellem direkte RSS og læseren ikke
+kan udløse en dobbelt udsendelse. Redaktøren og kontrollanten får fuld tekst;
+de eksisterende krav til forfatter, længde og kvalitet gælder stadig.
+Hvis begge læseveje fejler, stoppes udsendelsen tydeligt.
+
+RSS-læseren er testet lokalt med det levende feed. **Den samlede reservevej
+fra GitHub mangler stadig bekræftelse efter push.** Start en ny kørsel med kun
+check_feed valgt. Loggen skal vise RSS-læser HTTP 200, verificeret Metatrends-
+feed og fuld seneste original, før adgangen kaldes løst.
+
+RSS-læserens API: https://rss2json.com/docs
 
 Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication
 Curls genforsøg: https://curl.se/docs/manpage.html#--retry

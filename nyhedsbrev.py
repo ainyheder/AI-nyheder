@@ -22,7 +22,7 @@ from urllib.request import Request, urlopen
 import uuid
 import xml.etree.ElementTree as ET
 from _redaktion import nyhedsbrev_billeder
-from _redaktion.nyhedsbrev_feed import fetch_xml
+from _redaktion.nyhedsbrev_feed import FeedUnavailable, FEED_URL, fetch_xml, fetch_reader
 
 ROOT = Path(__file__).resolve().parent
 STATE_BRANCH = "codex/nyhedsbrev-status"
@@ -95,7 +95,43 @@ def feed_items(raw):
 
 
 def fetch_feed(url):
-    return feed_items(fetch_xml(url))
+    try:
+        raw = fetch_xml(url)
+    except FeedUnavailable as exc:
+        print(str(exc) + " Læser samme offentlige feed via RSS2JSON.", flush=True)
+        items = reader_items(fetch_reader(url))
+        print(f"Feedkilde: Metatrends via RSS2JSON · {len(items)} breve", flush=True)
+        return items
+    return feed_items(raw)
+
+
+def reader_items(data):
+    # RSS2JSON er en RSS-læser, ikke en alternativ redaktion. Kun det
+    # oprindelige feed, de oprindelige links og fuld content accepteres.
+    if (not isinstance(data, dict) or data.get("status") != "ok"
+            or not isinstance(data.get("feed"), dict) or data["feed"].get("url") != FEED_URL
+            or not isinstance(data.get("items"), list) or not data["items"]):
+        raise ValueError("RSS-læseren kunne ikke levere det verificerede Metatrends-feed")
+    items = {}
+    for item in data["items"]:
+        if not isinstance(item, dict) or any(not isinstance(item.get(k), str) or not item[k].strip()
+                for k in ("link", "title", "pubDate", "author", "content")):
+            raise ValueError("RSS-læserens original mangler indhold eller metadata")
+        url = public_url(item["link"])
+        # RSS2JSON normaliserer RSS-datoer til UTC uden suffiks. Format og
+        # klokkeslæt er sammenholdt med kildens ti aktuelle originaldatoer.
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}", item["pubDate"]):
+            raise ValueError("Ukendt datoformat fra RSS-læseren")
+        date = datetime.strptime(item["pubDate"], "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
+        parser = TextOnly()
+        parser.feed(item["content"])
+        body = "\n".join(s.strip() for s in "".join(parser.parts).splitlines() if s.strip())
+        key = hashlib.sha256(url.encode()).hexdigest()[:24]
+        if key in items:
+            raise ValueError("RSS-læseren returnerede det samme brev flere gange")
+        items[key] = {"id": key, "url": url, "titel": item["title"], "dato": date.isoformat(),
+                      "forfatter": item["author"], "tekst": body}
+    return sorted(items.values(), key=lambda p: p["dato"])
 
 
 def validate_draft(draft, source):
