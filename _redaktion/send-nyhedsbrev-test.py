@@ -64,8 +64,12 @@ def generate(source, config, folder, ai=n.ai_call):
     raise ValueError("Testbrevet blev ikke godkendt: " + errors)
 
 
-def send_test(api, draft, source, run_id, folder):
-    body = n.render(draft)
+def send_test(api, draft, source, run_id, folder, config=None):
+    entry = {'url': source['url'], 'draft': draft}
+    def save_images():
+        (folder / 'billeder-status.json').write_text(json.dumps(entry.get('billeder', {}), ensure_ascii=False, indent=2))
+    images = n.nyhedsbrev_billeder.prepare(entry, config or {}, api, save_images)
+    body = n.render(draft, images)
     (folder / "brev.html").write_text(body)
     (folder / "brev.md").write_text(draft["brev_markdown"])
     key = "newsletter-test-" + run_id
@@ -101,7 +105,7 @@ def main():
     print("Seneste original: " + source["titel"] + " — " + source["dato"])
     draft = generate(source, config, folder)
     send_test(n.Buttondown(os.getenv("BUTTONDOWN_API_KEY", "")), draft, source,
-              os.environ["GITHUB_RUN_ID"], folder)
+              os.environ["GITHUB_RUN_ID"], folder, config)
 
 
 if __name__ == "__main__":

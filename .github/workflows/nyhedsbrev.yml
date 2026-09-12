@@ -37,13 +37,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Forbered billedværktøjer
+        run: |
+          echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
+          pip install -r _redaktion/requirements-billeder.txt -q
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.U2NET_HOME }}
+          key: birefnet-general-newsletter-v1
       - name: Kontrollér testudsendelsen
-        run: python3 _redaktion/proeve-nyhedsbrev-test.py
+        run: |
+          python3 _redaktion/proeve-nyhedsbrev.py
+          python3 _redaktion/proeve-nyhedsbrev-test.py
       - name: Skriv, kontrollér og send prøve til Gmail
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
           NEWSLETTER_TEST_SOURCE_JSON: ${{ inputs.test_source_json }}
         run: python3 _redaktion/send-nyhedsbrev-test.py
@@ -66,6 +79,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Forbered billedværktøjer
+        working-directory: app
+        run: |
+          echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
+          pip install -r _redaktion/requirements-billeder.txt -q
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.U2NET_HOME }}
+          key: birefnet-general-newsletter-v1
       - name: Kontrollér kvalitet og beskyttelse mod dobbelt udsendelse
         working-directory: app
         run: python3 _redaktion/proeve-nyhedsbrev.py
@@ -95,6 +117,9 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          CLOUDFLARE_AI_TOKEN: ${{ secrets.CLOUDFLARE_AI_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
         run: python3 nyhedsbrev.py --run --state-dir ../newsletter-state
       - name: Vis status og vej til fejlretning

@@ -21,6 +21,7 @@ from urllib.parse import urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 import uuid
 import xml.etree.ElementTree as ET
+from _redaktion import nyhedsbrev_billeder
 
 ROOT = Path(__file__).resolve().parent
 STATE_BRANCH = "codex/nyhedsbrev-status"
@@ -129,6 +130,7 @@ def validate_draft(draft, source):
         raise ValueError("Kildens metadata er ændret")
     if not note.get("hovedide") or not note.get("bevarede_pointer") or not note.get("selvstaendige_greb"):
         raise ValueError("Redaktionsnoten mangler konkrete redaktionelle valg")
+    nyhedsbrev_billeder.validate_plan(draft)
     return draft
 
 
@@ -177,18 +179,31 @@ def comparison(block):
             + ''.join(cells) + '</tr></table>')
 
 
-def render(draft):
+def illustration(image, preview=False):
+    url = image['url']
+    if not (preview and re.fullmatch(r'illustrationer/[a-z0-9-]+\.png', url)):
+        nyhedsbrev_billeder.public_image_url(url)
+    # align giver en læsbar fallback i mailklienter uden moderne layout-CSS.
+    return ('<img class="editorial-image" align="right" width="180" src="' + html.escape(url, quote=True)
+            + '" alt="' + html.escape(image['alt'], quote=True)
+            + '" style="float:right;width:30%;max-width:180px;height:auto;margin:0 0 12px 18px;border:0;background:transparent">')
+
+
+def render(draft, images=None, *, preview=False):
     body = draft["brev_markdown"].strip()
     if r"\n" in body or r"\r" in body:
         raise ValueError("Brevets linjeskift er dobbelt-escaped; layoutet kan ikke bygges")
     blocks = []
     first_paragraph = True
+    images = {item['placering']: item for item in (images or [])[:2]}
+    pending_image = images.get('intro')
     for block in re.split(r"\n\s*\n", body):
         lines = block.splitlines()
         if block.startswith("# ") and len(lines) == 1:
             blocks.append('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:20px 0 24px;background:#d5ff5f;border:0;border-radius:14px"><tr><td class="hero-pad" style="padding:26px 22px">'
                           '<h1 class="title" style="font-size:38px;line-height:1.1;letter-spacing:-1.2px;font-weight:800;color:#101609!important;margin:0">' + inline(block[2:]) + '</h1></td></tr></table>')
         elif block.startswith("## ") and len(lines) == 1:
+            pending_image = images.get(block[3:])
             blocks.append('<h2 style="font-size:24px;line-height:1.25;letter-spacing:-0.4px;color:#f2f3f5!important;margin:30px 0 16px">'
                           '<span aria-hidden="true" style="color:#d5ff5f!important">/ </span>' + inline(block[3:]) + '</h2>')
         elif (panel := comparison(block)) is not None:
@@ -205,7 +220,9 @@ def render(draft):
             lead = first_paragraph and len(block.split()) <= 80
             size = "20px" if lead else "17px"
             color = "#f2f3f5" if lead else "#d8dde6"
-            blocks.append('<p style="font-size:' + size + ';line-height:1.65;color:' + color + '!important;margin:0 0 18px">' + inline(block.replace("\n", " ")) + '</p>')
+            picture = illustration(pending_image, preview) if pending_image else ''
+            pending_image = None
+            blocks.append('<p style="font-size:' + size + ';line-height:1.65;color:' + color + '!important;margin:0 0 18px">' + picture + inline(block.replace("\n", " ")) + '</p>')
             first_paragraph = False
     css = (ROOT / "opsaetning/nyhedsbrev-design.css").read_text()
     # Buttondown leverer den eneste afmeldingsfooter.
@@ -235,6 +252,20 @@ class Buttondown:
     def create(self, entry):
         return self.call("POST", "", {"subject": entry["draft"]["emne"], "body": entry["html"],
                                       "status": "draft", "metadata": {"source_url": entry["url"]}}, entry["url"] + "#draft-v1")
+
+    def upload_image(self, png, key):
+        # Dokumenteret /v1/images: multipart-feltet hedder image, svaret image.
+        if not png.startswith(b'\x89PNG\r\n\x1a\n') or len(png) > 3_000_000:
+            raise ValueError('Nyhedsbrevsbilledet skal være en PNG under 3 MB')
+        boundary = 'newsletter-' + uuid.uuid4().hex
+        body = (f'--{boundary}\r\nContent-Disposition: form-data; name="image"; filename="illustration.png"\r\n'
+                'Content-Type: image/png\r\n\r\n').encode() + png + f'\r\n--{boundary}--\r\n'.encode()
+        request = Request('https://api.buttondown.com/v1/images', data=body, method='POST', headers={
+            'Authorization': 'Token ' + self.token,
+            'Content-Type': 'multipart/form-data; boundary=' + boundary,
+            'X-Idempotency-Key': str(uuid.uuid5(uuid.NAMESPACE_URL, 'newsletter-image-' + key))})
+        with urlopen(request, timeout=60) as response:
+            return json.load(response)
 
     def get(self, email_id):
         if not re.fullmatch(r"[A-Za-z0-9_-]+", email_id):
@@ -340,13 +371,17 @@ def process(items, config, store, api, ai=ai_call):
                 # Gem kontrollens konkrete rettelser til næste skriveforsøg.
                 entry["kontrol"] = review
                 validate_review(review)
-                entry.update(draft=draft, html=render(draft), status="klar", fejl="")
+                entry.update(draft=draft, status="illustrerer", fejl="")
             except (ValueError, RuntimeError) as exc:
                 problems = entry.get("kontrol", {}).get("problemer", [])
                 entry["fejl"] = str(exc)[:500] + (": " + "; ".join(str(p) for p in problems)[:1500] if problems else "")
                 store.save()
                 attention.append(entry["titel"])
                 continue
+            store.save()
+        if entry['status'] == 'illustrerer':
+            images = nyhedsbrev_billeder.prepare(entry, config, api, store.save)
+            entry.update(html=render(entry['draft'], images), status='klar')
             store.save()
         if entry["status"] == "klar":
             entry.update(status="opretter", opdateret=now())

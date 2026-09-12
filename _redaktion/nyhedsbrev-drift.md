@@ -117,3 +117,36 @@ Gmail-testen kunne køres med fuld kilde angivet manuelt. Både DeepSeek-skriver
 kontrollant kørte, men tredje prøve blev afvist og krævede Codex-rettelser før den
 manuelle testafsendelse. Layoutændringen retter ikke RSS-adgangen eller beviser,
 at næste automatisk skrevne brev bliver godkendt.
+
+## Fritlagte illustrationer
+
+`opsaetning/nyhedsbrev.json` har `billeder.aktiv` og `billeder.maks_pr_brev`
+(0–2). Skriveren foreslår højst to motiver i `illustrationer`; kontrollanten
+vurderer relevans og misvisende billedidéer sammen med teksten. Billederne
+genereres først efter tekstens godkendelse. Kontrollanten ser motivplanen,
+ikke de færdige billeder. Maskekontrollen er teknisk, ikke en semantisk kontrol.
+
+Det nye trin `illustrerer` gemmes før billedarbejdet. Systemet bruger
+Cloudflares `@cf/black-forest-labs/flux-2-klein-4b`, derefter eksisterende
+`birefnet-general`. Den fælles motivstil ligger i
+`opsaetning/nyhedsbrev-billedprompt.md`. Resultatet bliver en RGBA-PNG på højst
+560×420 pixels. Originaler med baggrund bruges aldrig som fallback i mailen.
+Fejlede illustrationer udelades; det godkendte brev kan stadig sendes.
+
+Buttondowns dokumenterede `POST /v1/images` hoster PNG-filen, så mailen får
+en offentlig HTTPS-adresse og ikke afhænger af en lokal fil eller en senere
+publicering af hjemmesiden. API: https://docs.buttondown.com/api-images-create
+Nyhedsbrevets workflow får nu de samme Cloudflare-secrets som crawleren samt
+billedbiblioteket og modelcache. Det kræver ingen nye nøgler i HTML.
+
+Før hvert billedkald gemmes et checkpoint. Klar-billeder genbruges; et afbrudt
+eller fejlet motiv genereres ikke igen automatisk. Budgettet nulstilles ikke
+ved ændringer i prompt eller stil. Et afbrudt upload kan efterlade en ubrugt
+fil hos Buttondown, men udløser ikke automatisk et nyt billedkøb.
+
+Prøve 8 demonstrerer to gennemsigtige billeder ved intro og planetafsnit.
+De er genereret med Codex' image_gen-værktøj til lokal designkontrol, fordi
+Cloudflare-nøglerne kun findes på GitHub. Originale prompts og billedfiler
+ligger i `nyhedsbrev-proever/illustrationer/`. Prøven er ikke sendt.
+Den nye FLUX → BiRefNet → Buttondown-kæde skal verificeres i en rigtig
+GitHub-test efter push. RSS-problemet beskrevet ovenfor er ikke ændret.

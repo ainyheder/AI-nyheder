@@ -6,7 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import nyhedsbrev as n
@@ -219,6 +219,88 @@ class NewsletterTests(unittest.TestCase):
             n.validate_draft(content, SOURCE)
         with self.assertRaisesRegex(ValueError, 'linjeskift'):
             n.render(content)
+
+    def test_image_generation_is_checkpointed_reused_and_limited(self):
+        spec = {'placering': 'intro', 'motiv': 'En planet', 'alt': 'AI-illustration: en forestillet planet.'}
+        entry = {'url': SOURCE['url'], 'draft': {**draft(), 'illustrationer': [spec]}}
+        api = Mock(); api.upload_image.return_value = {'id': 'im_test', 'image': 'https://example.org/planet.png'}
+        saved = []
+        def save(): saved.append(copy.deepcopy(entry))
+        def make(motif):
+            self.assertEqual(list(saved[-1]['billeder'].values())[0]['status'], 'genererer')
+            return b'PNG'
+        generator = Mock(side_effect=make)
+        config = {'billeder': {'aktiv': True, 'maks_pr_brev': 1}}
+        first = n.nyhedsbrev_billeder.prepare(entry, config, api, save, generator)
+        second = n.nyhedsbrev_billeder.prepare(entry, config, api, save, generator)
+        self.assertEqual(first, second)
+        self.assertEqual(generator.call_count, 1)
+        self.assertEqual(api.upload_image.call_count, 1)
+        entry['draft']['illustrationer'][0]['motiv'] = 'Et ændret motiv'
+        n.nyhedsbrev_billeder.prepare(entry, config, api, save, generator)
+        self.assertEqual(generator.call_count, 1)
+
+    def test_image_failure_or_interruption_never_inserts_a_dark_original(self):
+        entry = {'url': SOURCE['url'], 'draft': {**draft(), 'illustrationer': [
+            {'placering': 'intro', 'motiv': 'Et protein', 'alt': 'AI-illustration: protein.'}]}}
+        config = {'billeder': {'aktiv': True}}
+        generator = Mock(side_effect=ValueError('Dårlig maske')); api = Mock()
+        self.assertEqual(n.nyhedsbrev_billeder.prepare(entry, config, api, lambda: None, generator), [])
+        self.assertEqual(n.nyhedsbrev_billeder.prepare(entry, config, api, lambda: None, generator), [])
+        self.assertEqual(generator.call_count, 1)
+        api.upload_image.assert_not_called()
+        record = next(iter(entry['billeder'].values()))
+        record['status'] = 'genererer'
+        self.assertEqual(n.nyhedsbrev_billeder.prepare(entry, config, api, lambda: None, generator), [])
+        self.assertEqual(generator.call_count, 1)
+        entry['billeder'] = {}
+        def failed_save(): raise OSError('Status kunne ikke gemmes')
+        with self.assertRaises(OSError):
+            n.nyhedsbrev_billeder.prepare(entry, config, api, failed_save, generator)
+        self.assertEqual(generator.call_count, 1)
+
+    def test_images_only_reach_rendering_after_approved_review(self):
+        store = Store(); api = API(store)
+        def prepared(entry, config, api, save):
+            self.assertEqual(entry['status'], 'illustrerer')
+            self.assertEqual(store.durable['entries']['new']['kontrol'], REVIEW)
+            return [{'placering': 'intro', 'url': 'https://example.org/planet.png', 'alt': 'AI-illustration: planet.'}]
+        with patch.object(n.nyhedsbrev_billeder, 'prepare', side_effect=prepared) as images:
+            self.run_flow(store, api)
+        images.assert_called_once()
+        self.assertIn('src="https://example.org/planet.png"', api.email['body'])
+        rejected = lambda step, prompt, payload: draft() if step == 'nyhedsbrev' else {**REVIEW, 'godkendt': False}
+        with patch.object(n.nyhedsbrev_billeder, 'prepare') as images:
+            with self.assertRaises(ValueError): self.run_flow(Store(), API(Store()), writer=rejected)
+        images.assert_not_called()
+
+    def test_image_plan_and_renderer_reject_unsafe_or_ambiguous_placement(self):
+        item = {'placering': 'intro', 'motiv': 'En planet', 'alt': 'AI-illustration: planet.'}
+        for plan in ([item]*3, [item,item], [{**item,'placering':'Ukendt'}], [{**item,'alt':'Et fotografi'}]):
+            with self.assertRaises(ValueError): n.validate_draft({**draft(),'illustrationer':plan}, SOURCE)
+        with self.assertRaises(ValueError):
+            n.render(draft(), [{**item, 'url':'javascript:alert(1)'}])
+        with self.assertRaises(ValueError):
+            n.render(draft(), [{**item, 'url':'illustrationer/planet.png'}])
+        local = n.render(draft(), [{**item, 'url':'illustrationer/planet.png'}], preview=True)
+        self.assertIn('src="illustrationer/planet.png"', local)
+        self.assertEqual(local.count('<img '), 1)
+
+    def test_buttondown_image_upload_uses_documented_multipart_endpoint(self):
+        import io
+        requests = []
+        def response(request, timeout):
+            requests.append(request)
+            return io.BytesIO(b'{"id":"im_test","image":"https://example.org/planet.png"}')
+        png = b'\x89PNG\r\n\x1a\n' + b'image fixture'
+        with patch.object(n, 'urlopen', side_effect=response):
+            n.Buttondown('test-token').upload_image(png, 'test-image')
+        request = requests[0]
+        self.assertEqual(request.full_url, 'https://api.buttondown.com/v1/images')
+        self.assertEqual(request.method, 'POST')
+        self.assertIn(b'name="image"', request.data)
+        self.assertIn(b'Content-Type: image/png', request.data)
+        self.assertIn(png, request.data)
 
     def test_buttondown_uses_draft_then_patch_with_distinct_stable_keys(self):
         import io

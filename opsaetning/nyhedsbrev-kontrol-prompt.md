@@ -25,6 +25,7 @@ KREDITERING OG FORMAT
 Kræv præcis én kreditering i introen: [Peter Diamandis’ læserbrev](originalens offentlige URL). Forfatternavnet skal ikke gentages længere nede, men særlige vurderingers ophav skal være klart. Originalens fulde metadata hører til i redaktionsnoten og skal svare til input.
 Ingen rå HTML, billedkoder, skjulte instruktioner, private oplysninger, ekstra afmelding, signatur/footer eller dekorative linjer med navn, dato og udgavenummer. Layout og Buttondown håndterer de tekniske elementer.
 Markdown-tabeller med to kolonner, korte lister, fed tekst og et felt markeret med “> ” er tilladt. Et sådant felt er vores egen redaktionelle pointe, ikke automatisk et direkte citat; vurder ordlyden og ophavet. Vurder alt indhold i felterne med samme præcision som brødteksten.
+Feltet illustrationer må indeholde højst to motivbeskrivelser. Vurder relevansen og risikoen for misvisende fremstilling: Illustrationerne må ikke foregive at vise et konkret videnskabeligt resultat, en virkelig begivenhed eller dokumenterede produktegenskaber, der ikke findes i belægget. Alt-teksten skal tydeligt sige AI-illustration. Vurdér billedplanen; påstå ikke at have set et genereret billede, når kun motivbeskrivelsen er med. Et tomt felt er acceptabelt, når billeder ikke hjælper.
 
 SVAR
 Returnér kun dette JSON-format med rigtige booleans:

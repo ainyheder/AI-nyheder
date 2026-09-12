@@ -53,6 +53,12 @@ Vælg 1–3 visuelle greb, når de konkret gør stoffet lettere at forstå:
 - En kort punktopstilling med “- ” kan gøre 2–4 forskellige alternativer eller fremtidsbud overskuelige. Brug **fed emnestart** og forklar hvert punkt. Sæt usikkerhed og ophav i direkte forbindelse med listen.
 Brug ikke alle formater mekanisk i hvert brev. Ingen standardboks med “Det lærer du”, intet ekstra resumé og ingen fyldetiketter. Visuelle felter erstatter relevant brødtekst; de lægges ikke oven i den samme forklaring. Brug højst én fremhævning med **fed** pr. almindeligt afsnit, når den hjælper læseren med at finde det centrale.
 
+FRITLAGTE ILLUSTRATIONER
+Vælg normalt ét eller to konkrete motiver i feltet illustrationer. Motiverne skal hjælpe læseren med at genkende brevets emner, og hvert motiv skal tilføre noget forskelligt. Sæt [] hvis illustreret stof ikke giver mening; opfind ikke et motiv for at fylde en kvote. Layoutet viser små fritlagte objekter ved teksten, så forklaringen skal kunne stå alene uden billedet.
+Hver illustration har præcis placering, motiv og alt. Placering er enten "intro" eller den nøjagtige tekst i én mellemoverskrift uden ##. Den valgte overskrift skal efterfølges af et almindeligt afsnit. Brug højst ét billede pr. placering.
+Motiv er højst 50 ord om én eller to genkendelige, solide genstande. Beskriv hele genstanden, ikke en scene med omgivelser. Vælg tydelige silhuetter, der er lette at fritlægge. Ingen mennesker, tekst, tal, logos, skærmbilleder, flammer, røg, glød eller gennemsigtigt glas. Angiv, når fx en planet eller molekyleform er en forestillet illustration, ikke en videnskabelig gengivelse eller et fotografi af det omtalte fund. Billedet må ikke opfinde beviser eller konkrete produktegenskaber.
+Alt er en kort dansk beskrivelse, der indleder med "AI-illustration:" og forklarer motivet uden at gentage en hel brødtekst. Farver, lys og fritlægning styres af billedsystemet. Indsæt ingen billed-URL eller Markdown-billedkode i brev_markdown.
+
 KREDITERING OG FORMAT
 Start brev_markdown med én titel på formen “# Titel”, efterfulgt af introen. Brug “##” til mellemoverskrifter, almindelige afsnit og de enkle Markdown-formater ovenfor. Sæt tomme linjer mellem blokkene. Inde i en tabel eller liste bruges enkelte linjeskift. JSON-strengen skal efter parsing indeholde rigtige linjeskift, ikke bogstavelige backslash-n-tegn. Ingen rå HTML, billeder, skabelonkode eller dekorative tekstlinjer med nyhedsbrevets navn, udgavenummer eller dato.
 Sæt præcis én kort, linket kreditering i introen: [Peter Diamandis’ læserbrev](originalens offentlige URL). Brug denne linktekst uden originaltitel, dato eller ekstra forklaring. Fortæl derefter direkte i vores egen stemme. Gentag ikke forfatternavnet ned gennem teksten; særlige vurderinger kan stadig knyttes til “originalbrevets fremtidsbud”, så ophavet er klart.
@@ -69,6 +75,7 @@ Returnér ét JSON-objekt uden kodehegn. Kopiér originalens forfatter, titel, d
   "emne": "En konkret emnelinje, der lover det, brevet leverer",
   "preheader": "Én kort sætning med et supplerende udbytte; gentag ikke emnelinjen",
   "brev_markdown": "# Historiens titel\n\nIntro med hovedidé og kreditering.\n\n## En præcis mellemoverskrift\n\nDen sammenhængende fortælling.",
+  "illustrationer": [{"placering": "intro", "motiv": "Én konkret, fritlægningsvenlig genstand fra netop dette emne", "alt": "AI-illustration: kort beskrivelse af motivet"}],
   "redaktionsnote": {
     "hovedide": "Originalens centrale argument og det overraskende ved det",
     "hvorfor_nu": "Dokumenteret anledning, eller at kilden ikke angiver en ny begivenhed",
