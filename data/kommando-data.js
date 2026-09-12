@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-12T17:36:25.424551+00:00",
+ "genereret": "2026-09-12T19:48:57.715703+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,14 +160,14 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-12T17:25:20.622063+00:00",
-  "antal": 153,
+  "opdateret": "2026-09-12T19:37:20.556843+00:00",
+  "antal": 154,
   "med_billede": 7,
-  "paa_dansk": 153,
+  "paa_dansk": 154,
   "kategorier": {
    "Lanceringer": 34,
    "Politik \u0026 jura": 19,
-   "Samfund \u0026 etik": 26,
+   "Samfund \u0026 etik": 27,
    "Penge \u0026 marked": 20,
    "Forskning": 29,
    "Hverdags-AI": 25
@@ -178,7 +178,7 @@ window.KOMMANDO_DATA = {
    "Hugging Face": 12,
    "TechCrunch AI": 35,
    "Ars Technica AI": 12,
-   "Simon Willison AI": 12,
+   "Simon Willison AI": 13,
    "Google Gemini": 8,
    "MIT Tech Review AI": 5,
    "Mistral AI": 4,
@@ -220,13 +220,22 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Quoting Paul Ford",
+    "rubrik": "Paul Ford: Avanceret software kræver stadig mennesker",
+    "link": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-12T18:00:21+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Anthropic CEO says it’s time to pump the brakes on AI",
     "rubrik": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin",
     "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
     "side": "artikel/423571cd7c5d29c6.html",
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-09-12T16:23:40+00:00",
+    "dato": "2026-09-12T12:23:40-04:00",
     "billede": ""
    },
    {
@@ -326,21 +335,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-11T19:35:54+00:00",
     "billede": ""
-   },
-   {
-    "titel": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
-    "rubrik": "New Mexico straffer advokat for ChatGPT-falsknerier",
-    "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
-    "side": "artikel/9622d1970698da66.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-11T19:34:09+00:00",
-    "billede": "data/img/81de3599343958c5.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-12T17:25:20.622063+00:00",
+  "opdateret": "2026-09-12T19:37:20.556843+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -360,7 +359,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-12T17:25:20.044455+00:00",
+  "opdateret": "2026-09-12T19:37:19.865186+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -578,8 +577,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-12T17:25:20.622063+00:00",
-  "artikler_i_alt": 153,
+  "opdateret": "2026-09-12T19:37:20.556843+00:00",
+  "artikler_i_alt": 154,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1089,7 +1088,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 12,
+    "i_listen": 13,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1109,6 +1108,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+     },
+     {
+      "rubrik": "Paul Ford: Avanceret software kræver stadig mennesker",
+      "dato": "2026-09-12T18:00:21",
+      "foerst_set": "2026-09-12T19:37:20",
+      "link": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "OpenAI-agenter bag angreb på RubyGems",
@@ -1190,15 +1198,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI vil lade AI forbedre sig selv",
-      "dato": "2026-09-06T23:57:40",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1270,15 +1269,6 @@ window.KOMMANDO_DATA = {
       "under": "Suno ruller v6 ud med tre modeller"
      },
      {
-      "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
-      "dato": "",
-      "foerst_set": "2026-09-08T21:21:14",
-      "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-      "side": "",
-      "hvor": "under",
-      "under": "Meta lancerer AI-agenten Muse i USA"
-     },
-     {
       "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
       "dato": "",
       "foerst_set": "2026-09-08T21:21:14",
@@ -1286,6 +1276,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
+     },
+     {
+      "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+      "dato": "",
+      "foerst_set": "2026-09-08T21:21:14",
+      "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+      "side": "",
+      "hvor": "under",
+      "under": "Meta lancerer AI-agenten Muse i USA"
      },
      {
       "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
@@ -1394,7 +1393,7 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin",
-      "dato": "2026-09-12T16:23:40",
+      "dato": "2026-09-12T12:23:40",
       "foerst_set": "2026-09-12T16:01:49",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
       "side": "artikel/423571cd7c5d29c6.html",
@@ -1927,7 +1926,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-12T17:36:22.007957+00:00",
+  "opdateret": "2026-09-12T19:48:54.052940+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

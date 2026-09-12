@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T17:25:20.622063+00:00",
- "artikler_i_alt": 153,
+ "opdateret": "2026-09-12T19:37:20.556843+00:00",
+ "artikler_i_alt": 154,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -525,7 +525,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 12,
+   "i_listen": 13,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -545,6 +545,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+    },
+    {
+     "rubrik": "Paul Ford: Avanceret software kræver stadig mennesker",
+     "dato": "2026-09-12T18:00:21",
+     "foerst_set": "2026-09-12T19:37:20",
+     "link": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI-agenter bag angreb på RubyGems",
@@ -644,15 +653,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI løser milliongåde – men snød de?",
-     "dato": "2026-09-08T23:55:12",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-     "side": "artikel/9538509fba3fdf85.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -742,15 +742,6 @@ window.KILDER_STATUS = {
      "under": "Suno ruller v6 ud med tre modeller"
     },
     {
-     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
-     "dato": "",
-     "foerst_set": "2026-09-08T21:21:14",
-     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta lancerer AI-agenten Muse i USA"
-    },
-    {
      "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
      "dato": "",
      "foerst_set": "2026-09-08T21:21:14",
@@ -758,6 +749,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
+    },
+    {
+     "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+     "dato": "",
+     "foerst_set": "2026-09-08T21:21:14",
+     "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer AI-agenten Muse i USA"
     },
     {
      "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
@@ -978,7 +978,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin",
-     "dato": "2026-09-12T16:23:40",
+     "dato": "2026-09-12T12:23:40",
      "foerst_set": "2026-09-12T16:01:49",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
      "side": "artikel/423571cd7c5d29c6.html",
@@ -1050,7 +1050,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Derfor føles tech-modstanden anderledes nu",
-     "dato": "2026-09-10T10:00:00",
+     "dato": "2026-09-10T14:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
      "side": "",
