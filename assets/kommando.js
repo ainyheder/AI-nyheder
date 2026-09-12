@@ -25,7 +25,10 @@
   const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${ICONS[name] || ICONS.grid}"/></svg>`;
   const fmt = value => typeof value === 'number' && Number.isFinite(value) ? new Intl.NumberFormat('da-DK').format(value) : '—';
   const when = value => { const date = new Date(value); return value && Number.isFinite(+date) ? date.toLocaleString('da-DK',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : 'Ingen måling'; };
-  const snapshot = window.KOMMANDO_DATA || {};
+  const lokal = window.KOMMANDO_LOKAL;
+  const lokalAdgang = location.protocol === 'file:' || ['localhost','127.0.0.1','[::1]'].includes(location.hostname);
+  const snapshot = lokalAdgang && lokal?.data && lokal.grundlag === (window.KOMMANDO_DATA?.genereret ?? null)
+    ? lokal.data : window.KOMMANDO_DATA || {};
   const initial = {feeds: snapshot.tilgaengelige?.feeds ? copy(snapshot.feeds_fil) : null, hjerner:snapshot.tilgaengelige?.hjerner ? copy(snapshot.hjerner_fil) : null, retning:snapshot.tilgaengelige?.redaktoer ? snapshot.redaktoer_instruks : null};
   const state = {snapshot, baseline:copy(initial), drafts:copy(initial), directory:null, view:'overview', query:'', sourceFilter:'all', busy:false, localSaved:false};
   const dirtyKeys = () => Object.keys(PATHS).filter(key => canonical(state.drafts[key]) !== canonical(state.baseline[key]));
@@ -307,6 +310,6 @@
   }catch(_){ /* En ødelagt lokal kladde må ikke forhindre adgang til projektet. */ }
   const hash=location.hash.slice(1);if(VIEWS[hash])state.view=hash;
   render();
-  if(!window.KOMMANDO_DATA)notify('Statusfilen kunne ikke læses. Tilslut projektmappen for at redigere indstillinger, eller hent projektets seneste opdatering.','error');
+  if(!snapshot.version)notify('Statusfilen kunne ikke læses. Tilslut projektmappen for at redigere indstillinger, eller hent projektets seneste opdatering.','error');
   window.Kommando={canonical,validateConfig,state,render,navigate,connectDirectory,saveChanges,dirtyKeys,setOverride,modelList};
 })();

@@ -20,8 +20,13 @@ filer hentes enkeltvis og lægges på den viste placering.
 
 Indstillinger, status og begrænsede nøgletal leveres i `data/kommando-data.js`,
 så panelet også virker ved dobbeltklik uden en lokal server. Crawleren opdaterer
-pakken ved afslutningen af hver kørsel. Den kan også genopfriskes lokalt uden
-netværk, AI-kald eller udsendelser med `python3 kommandocentral.py`. Et nyt
+pakken ved afslutningen af hver kørsel. Lokalt skriver
+`python3 kommandocentral.py` i stedet en Git-ignoreret `data/kommando-lokal.js`,
+uden netværk, AI-kald eller udsendelser. Browseren bruger denne forhåndsvisning
+ved åbning fra Finder eller localhost. Et pull med en ny delt statuspakke
+gør automatisk den gamle lokale cache ugyldig. Dermed ændrer lokal
+forhåndsvisning aldrig crawlerens Git-fil og skaber ikke konflikter med den.
+Kun udgivelse på GitHub bruger `--offentlig`. Et nyt
 pakketidspunkt gør ikke gamle målinger aktuelle. Tilslut projektmappen for at
 læse indstillinger, der er ændret siden sidste pakke.
 
@@ -37,7 +42,8 @@ Regressioner: `python3 _redaktion/proeve-kommandocentral.py` kontrollerer
 datapakken. `NODE_PATH=/sti/til/node_modules node _redaktion/proeve-kommando.js`
 bruger jsdom til at kontrollere visninger og filgem uden rigtige filændringer.
 Husk de nye `kommandocentral.py`, `assets/kommando.js`, `assets/kommando.css` og
-`data/kommando-data.js` sammen med indgangsfilen ved push.
+`assets/kommando-start.js` sammen med indgangsfilen ved push.
+`data/kommando-data.js` vedligeholdes af GitHub; genopfrisk den ikke lokalt.
 
 ## Ombygningen, september 2026
 

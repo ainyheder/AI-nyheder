@@ -6015,7 +6015,7 @@ def main() -> None:
         print(f"📺 YouTube-delen sprang over ({type(fejl).__name__}: {fejl})")
     tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml
     try:
-        skriv_kommando_data(ROOT)  # samlet status til Indstillinger.html, også fra Finder
+        skriv_kommando_data(ROOT, offentlig=os.environ.get("GITHUB_ACTIONS") == "true")
     except Exception as fejl:
         print(f"🧭 Kommandocentralens status sprang over ({type(fejl).__name__})")
 

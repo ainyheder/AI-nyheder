@@ -27,9 +27,22 @@ class KommandoDataProeve(unittest.TestCase):
         sti.write_text(data if isinstance(data, str) else json.dumps(data), encoding="utf-8")
 
     def pakke(self):
-        sti = skriv_kommando_data(self.root)
+        sti = skriv_kommando_data(self.root, offentlig=True)
         tekst = sti.read_text(encoding="utf-8")
         return json.loads(tekst.removeprefix("window.KOMMANDO_DATA = ").removesuffix(";\n")), tekst
+
+    def test_lokal_generering_aendrer_aldrig_den_delte_git_fil(self):
+        offentlig = skriv_kommando_data(self.root, offentlig=True)
+        foer = offentlig.read_bytes()
+        grundlag = json.loads(foer.decode().removeprefix("window.KOMMANDO_DATA = ").removesuffix(";\n"))
+        self.skriv("_redaktion/hjerner.json", {"hjerner": {"motiv": {"prompt": "Ny lokal stil"}}})
+        for _ in range(2):
+            lokal = skriv_kommando_data(self.root)
+            self.assertEqual(lokal.name, "kommando-lokal.js")
+            self.assertEqual(offentlig.read_bytes(), foer)
+            data = json.loads(lokal.read_text().removeprefix("window.KOMMANDO_LOKAL = ").removesuffix(";\n"))
+            self.assertEqual(data["grundlag"], grundlag["genereret"])
+            self.assertEqual(data["data"]["hjerner_fil"]["hjerner"]["motiv"]["prompt"], "Ny lokal stil")
 
     def test_tom_mappe_viser_manglende_data_uden_falsk_succes(self):
         data, _ = self.pakke()

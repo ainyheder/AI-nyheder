@@ -2,7 +2,8 @@
 
 Læser kun de udtrykkeligt nævnte konfigurations- og statusfiler. Importerer
 ikke crawleren, læser ikke miljøvariabler og foretager ingen netværkskald.
-Kør manuelt med: python3 kommandocentral.py
+Kør lokalt med: python3 kommandocentral.py (Git-ignoreret forhåndsvisning).
+GitHub skriver udgivelsens pakke med --offentlig.
 """
 
 from collections import Counter
@@ -144,7 +145,7 @@ def _laeserstatus(data):
     return status
 
 
-def skriv_kommando_data(root):
+def skriv_kommando_data(root, *, offentlig=False):
     """Skriv et snapshot af eksisterende filer; returnér stien til JS-filen.
 
     `genereret` er pakkens tidspunkt, ikke tidspunktet for seneste crawl.
@@ -197,17 +198,33 @@ def skriv_kommando_data(root):
     })
     # Beskyt både almindelig script src og en eventuel senere inlineudgave.
     # Tegnene bliver gendannet af JS/JSON-parseren, så redigering er tabsfri.
+    if offentlig:
+        variabel, filnavn = "KOMMANDO_DATA", "kommando-data.js"
+    else:
+        # Den lokale cache gælder kun oven på præcis den hentede statuspakke.
+        # Efter et pull med en ny pakke ignorerer browseren automatisk cachen.
+        try:
+            pakke = (root / "data/kommando-data.js").read_text(encoding="utf-8")
+            grundlag = json.loads(pakke.removeprefix("window.KOMMANDO_DATA = ").removesuffix(";\n"))["genereret"]
+        except (OSError, ValueError, KeyError, TypeError):
+            grundlag = None
+        data = {"grundlag": grundlag, "data": data}
+        variabel, filnavn = "KOMMANDO_LOKAL", "kommando-lokal.js"
     tekst = json.dumps(data, ensure_ascii=False, indent=1, allow_nan=False)
     for tegn, escape in (("&", "\\u0026"), ("<", "\\u003c"), (">", "\\u003e"),
                          ("\u2028", "\\u2028"), ("\u2029", "\\u2029")):
         tekst = tekst.replace(tegn, escape)
-    ud = root / "data" / "kommando-data.js"
+    ud = root / "data" / filnavn
     ud.parent.mkdir(parents=True, exist_ok=True)
     midl = ud.with_suffix(".js.tmp")
-    midl.write_text("window.KOMMANDO_DATA = " + tekst + ";\n", encoding="utf-8")
+    midl.write_text("window." + variabel + " = " + tekst + ";\n", encoding="utf-8")
     midl.replace(ud)
     return ud
 
 
 if __name__ == "__main__":
-    print(skriv_kommando_data(Path(__file__).resolve().parent))
+    import argparse
+    parser = argparse.ArgumentParser(description="Opdatér kommandocentralens status uden API-kald.")
+    parser.add_argument("--offentlig", action="store_true", help="Skriv GitHubs delte statuspakke (kun til udgivelse).")
+    args = parser.parse_args()
+    print(skriv_kommando_data(Path(__file__).resolve().parent, offentlig=args.offentlig))

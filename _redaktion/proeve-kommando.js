@@ -96,10 +96,11 @@ async function panel(data = fixture(), options = {}) {
   vc.on("jsdomError", e => failures.push(e.message));
   const markup = fs.readFileSync(path.join(ROOT, "Indstillinger.html"), "utf8")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
-  const dom = new JSDOM(markup, { url: "file:///Users/example/AI%20NEWS/Indstillinger.html",
+  const dom = new JSDOM(markup, { url: options.url || "file:///Users/example/AI%20NEWS/Indstillinger.html",
     runScripts: "outside-only", pretendToBeVisual: true, virtualConsole: vc });
   const w = dom.window;
   w.KOMMANDO_DATA = data;
+  w.KOMMANDO_LOKAL = options.local;
   const storage = new Map(Object.entries(options.storage || {}));
   Object.defineProperty(w, "localStorage", { value: {
     getItem: key => storage.get(key) ?? null,
@@ -138,6 +139,31 @@ function setToggle(p, index, checked) {
 }
 
 async function run() {
+  await check("Local preview is used only for its original published snapshot", async () => {
+    const published = fixture(), localData = fixture();
+    localData.hjerner_fil.hjerner.motiv = {prompt:'Local preview'};
+    const local = {grundlag:published.genereret, data:localData};
+    await usingPanel(p => assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.prompt,'Local preview'), published, {local});
+    const afterPull = clone(published);
+    afterPull.genereret = '2026-09-12T03:00:00Z';
+    await usingPanel(p => assert.notEqual(p.app.state.drafts.hjerner.hjerner.motiv?.prompt,'Local preview'), afterPull, {local});
+    await usingPanel(p => assert.notEqual(p.app.state.drafts.hjerner.hjerner.motiv?.prompt,'Local preview'), published, {local,url:'https://ainyheder.com/Indstillinger.html'});
+  });
+  await check("Startup works with and without a local cache; public site skips it", () => {
+    for(const protocol of ['file:','https:']) {
+      const dom = new JSDOM('<html><head></head><body></body></html>', {url:protocol==='file:'?'file:///project/Indstillinger.html':'https://ainyheder.com/Indstillinger.html',runScripts:'outside-only'});
+      const w = dom.window;
+      w.eval(fs.readFileSync(path.join(ROOT,'assets/kommando-start.js'),'utf8'));
+      const scripts = () => [...w.document.querySelectorAll('script')];
+      if(protocol==='file:') {
+        assert(scripts()[0].src.endsWith('data/kommando-lokal.js'));
+        scripts()[0].dispatchEvent(new w.Event('error'));
+      }
+      assert(scripts().at(-1).src.includes('assets/kommando.js?v='));
+      if(protocol==='https:') assert.equal(scripts().length,1);
+      w.close();
+    }
+  });
   await check("Every command-center view renders with actual data", () => usingPanel(p => {
     for (const view of ["overview", "editor", "sources", "models", "images", "readers", "operations"]) {
       p.app.navigate(view);

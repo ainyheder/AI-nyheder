@@ -30,7 +30,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python3 _redaktion/opdater-modeller.py
-          python3 kommandocentral.py
+          python3 kommandocentral.py --offentlig
       - name: Gem modellister
         run: |
           git config user.name "ai-news-bot"
