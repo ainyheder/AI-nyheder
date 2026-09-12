@@ -199,10 +199,18 @@ kan udløse en dobbelt udsendelse. Redaktøren og kontrollanten får fuld tekst;
 de eksisterende krav til forfatter, længde og kvalitet gælder stadig.
 Hvis begge læseveje fejler, stoppes udsendelsen tydeligt.
 
-RSS-læseren er testet lokalt med det levende feed. **Den samlede reservevej
-fra GitHub mangler stadig bekræftelse efter push.** Start en ny kørsel med kun
-check_feed valgt. Loggen skal vise RSS-læser HTTP 200, verificeret Metatrends-
-feed og fuld seneste original, før adgangen kaldes løst.
+**Reservevejen er bekræftet fra GitHub den 12. september 2026.** Kørsel
+[34692494507](https://github.com/ainyheder/AI-nyheder/actions/runs/34692494507)
+på commit `bc3a416` bestod. Loggen viste direkte RSS HTTP 403 med
+Cloudflare-browserkontrol, derefter RSS2JSON HTTP 200 og ti Metatrends-breve.
+Seneste original var “AI Is About to Break Settled Science”, dateret
+10. september kl. 16.54.27 UTC, med 1.790 ord og korrekt forfatter.
+
+Dette bekræfter den automatiske kildehentning. Ingen manuel tekst blev
+indsat. Både Gmail-test og abonnentudsendelse var sprunget over; der blev
+ikke sendt mail eller kaldt AI. Den samlede tekst-, billed- og mailkæde
+skal stadig kontrolleres i en ny Gmail-test. Den daglige plan bruger
+samme fetch_feed-funktion og den allerede publicerede rettelse.
 
 RSS-læserens API: https://rss2json.com/docs
 
