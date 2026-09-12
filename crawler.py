@@ -382,7 +382,7 @@ def hjerne_prompt(navn: str, standard: str) -> str:
         return standard
     # En egen grundinstruks må ikke fjerne kontekst fra netop dette kald:
     # fx manglende videotranskript eller ekstra kildekontrol.
-    base = _standard_prompts().get(navn, "")
+    base = _standard_prompts(navn).get(navn, "")
     supplement = standard[len(base):] if base and standard.startswith(base) else ""
     return p.strip() + supplement
 
@@ -617,10 +617,10 @@ def _arbejdsloop_status() -> list:
     return ud
 
 
-def _standard_prompts() -> dict:
+def _standard_prompts(*navne) -> dict:
     """De indbyggede prompts, så kontrolpanelet kan vise dem og lade redaktionen
     starte fra dem i stedet for fra et tomt felt."""
-    return {
+    prompts = {
         "omskriv": SYSTEM_PROMPT, "kategori": SYSTEM_KATEGORI,
         "dublet": SYSTEM_DUBLET, "brief": SYSTEM_BRIEF_ARTIKEL,
         "redaktoer": SYSTEM_REDAKTOER, "stram": SYSTEM_STRAM,
@@ -628,9 +628,14 @@ def _standard_prompts() -> dict:
         "kartotek": SYSTEM_KARTOTEK, "quiz": SYSTEM_QUIZ,
         "dagens_overblik": SYSTEM_BRIEF, "ugens_overblik": SYSTEM_UGE,
         "youtube": SYSTEM_YT, "opslag": SYSTEM_OPSLAG,
-        "nyhedsbrev": (ROOT / "opsaetning/nyhedsbrev-prompt.md").read_text(encoding="utf-8"),
-        "nyhedsbrev_kontrol": (ROOT / "opsaetning/nyhedsbrev-kontrol-prompt.md").read_text(encoding="utf-8"),
     }
+    # Artikelarbejdet må ikke afhænge af nyhedsbrevets filer. Uden et udvalg
+    # hentes alle prompts til kontrolpanelet; ellers kun det aktuelle trin.
+    for navn, fil in {"nyhedsbrev": "nyhedsbrev-prompt.md",
+                      "nyhedsbrev_kontrol": "nyhedsbrev-kontrol-prompt.md"}.items():
+        if not navne or navn in navne:
+            prompts[navn] = (ROOT / "opsaetning" / fil).read_text(encoding="utf-8")
+    return {navn: tekst for navn, tekst in prompts.items() if not navne or navn in navne}
 
 
 def skriv_hjerne_status() -> None:
@@ -1281,7 +1286,7 @@ def kald_ai_brief(a: dict, tekst: str, billeder: list[dict],
 
 def instruks_signatur(*navne) -> str:
     """Indholdet af instrukserne, så cache ikke skjuler redaktionelle ændringer."""
-    standarder = _standard_prompts()
+    standarder = _standard_prompts(*navne)
     data = {navn: hjerne_prompt(navn, standarder[navn]) for navn in navne}
     if "brief" in navne:
         data.update(dybde=SYSTEM_BRIEF_LANG, forskning=SYSTEM_BRIEF_FORSKNING,

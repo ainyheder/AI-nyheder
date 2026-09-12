@@ -3,6 +3,7 @@ Ingen eksterne kald eller artikeludgivelse. Kør fra projektets rod.
 """
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -52,6 +53,16 @@ class PromptFlow(unittest.TestCase):
         with patch.object(c,'_hjerner_cache',{}):
             value=c.SYSTEM_YT+c.SYSTEM_YT_UDEN_TRANSKRIPT
             self.assertEqual(c.hjerne_prompt('youtube',value),value)
+
+    def test_article_prompts_do_not_require_newsletter_files(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(c, 'ROOT', Path(tmp)):
+            signature = c.instruks_signatur('brief', 'redaktoer')
+            self.config['hjerner']['brief']['prompt'] = 'Ny skriveinstruks'
+            self.assertNotEqual(c.instruks_signatur('brief', 'redaktoer'), signature)
+            self.assertEqual(c.hjerne_prompt('brief', c.SYSTEM_BRIEF_ARTIKEL), 'Ny skriveinstruks')
+            # Nyhedsbrevet skal stadig melde fejl, hvis dets egen prompt mangler.
+            with self.assertRaises(FileNotFoundError):
+                c._standard_prompts('nyhedsbrev')
 
     def test_meaning_does_not_force_invented_personal_benefit(self):
         self.assertEqual(c._betydning_problemer(''),[])
