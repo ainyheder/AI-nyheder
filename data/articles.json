@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-09-12T12:47:54.116970+00:00",
-  "antal": 153,
+  "opdateret": "2026-09-12T14:21:32.813244+00:00",
+  "antal": 150,
   "artikler": [
     {
       "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
@@ -311,6 +311,13 @@
           "rubrik": "OpenAI klar med nye billedmodeller",
           "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
           "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+        },
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+          "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
+          "resume_da": "Værktøjet kombinerer indbyggede finansdata med modellen GPT-6 Astra til research, modellering og kundeklart materiale. OpenAI annoncerer det, men oplyser ikke pris eller adgang.",
+          "foerst_set": "2026-09-10T21:07:39.020467+00:00"
         }
       ],
       "detaljer": [
@@ -982,6 +989,49 @@
       "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
       "rubrik": "OpenAI løser Navier-Stokes med 10.000 agenter",
       "resume_da": "OpenAI hævder at have løst Navier-Stokes på 88 timer med 10.000 agenter. Matematikere reagerer med bekymring over rivalisering og manglende gennemsigtighed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "OpenAI's gennembrud",
+          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
+        },
+        {
+          "overskrift": "Konflikt med matematikere",
+          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
+        },
+        {
+          "overskrift": "OpenAI afviser beskyldninger",
+          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "88 timer",
+          "label": "tid til at finde en løsning ifølge OpenAI"
+        },
+        {
+          "tal": "10.000",
+          "label": "agenter brugt af OpenAI"
+        },
+        {
+          "tal": "1 mio. dollars",
+          "label": "dusør per Millennium Prize-problem"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
+        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
+        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
+        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
+        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
+      ],
+      "betydning": "",
+      "pointer": [
+        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
+        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
+        "Beskyldninger om data brugt uden klare svar fra OpenAI."
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -999,51 +1049,8 @@
         "emne": "openai matematikgennembrud"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "OpenAI's gennembrud",
-          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
-        },
-        {
-          "overskrift": "Konflikt med matematikere",
-          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
-        },
-        {
-          "overskrift": "OpenAI afviser beskyldninger",
-          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "88 timer",
-          "label": "tid til at finde en løsning ifølge OpenAI"
-        },
-        {
-          "tal": "10.000",
-          "label": "agenter brugt af OpenAI"
-        },
-        {
-          "tal": "1 mio. dollars",
-          "label": "dusør per Millennium Prize-problem"
-        }
-      ],
-      "detaljer": [
-        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
-        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
-        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
-        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
-        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
-        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
-        "Beskyldninger om data brugt uden klare svar fra OpenAI."
-      ],
       "brief_instruks": "748464c0b45c6acc",
+      "prio": 5,
       "side": "artikel/41bb568b2b6096a5.html"
     },
     {
@@ -1188,73 +1195,6 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 5,
       "side": "artikel/9622d1970698da66.html"
-    },
-    {
-      "titel": "Now everyone can put data to work",
-      "link": "https://openai.com/index/put-data-to-work",
-      "resume": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-      "dato": "2026-09-10T15:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
-      "resume_da": "OpenAI præsenterer en dataagent i ChatGPT Work, der via naturligt sprog kan forbinde virksomhedsdata og bygge interaktive dashboards.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Dataagent i ChatGPT Work",
-          "tekst": "OpenAI har annonceret en ny funktion kaldet Data agent i ChatGPT Work. Ifølge OpenAI kan den forbinde virksomhedsdata, finde indsigter og bygge interaktive dashboards ved hjælp af AI og naturligt sprog. Annoncen er formuleret som en bred tilgængelighed, men kilden dokumenterer ikke pris, adgang eller test."
-        },
-        {
-          "overskrift": "Naturligt sprog som grænseflade",
-          "tekst": "Det bærende element er, at brugeren skal kunne arbejde med data gennem almindeligt sprog i stedet for manuel opsætning. Ifølge OpenAI dækker funktionen både at koble data til, udlede indsigter og sammensætte interaktive dashboards. Der er ikke oplyst tekniske begrænsninger, integrationsomfang eller hvilke datakilder der understøttes."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-          "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
-          "resume_da": "Løsningen kombinerer indbyggede finansdata med GPT-6 Astra til research, modellering og klientklart materiale. Adgang og priser fremgår ikke af uddraget.",
-          "foerst_set": "2026-09-10T21:07:39.020467+00:00"
-        }
-      ],
-      "detaljer": [
-        "Produktnavn: ChatGPT Work",
-        "Funktionsnavn: Data agent",
-        "Kan forbinde virksomhedsdata ifølge OpenAI",
-        "Kan bygge interaktive dashboards ifølge OpenAI",
-        "Styres med naturligt sprog ifølge OpenAI"
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI annoncerer Data agent i ChatGPT Work",
-        "Skal forbinde data og bygge dashboards via naturligt sprog",
-        "Kilden oplyser ikke pris, adgang eller test"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI tilføjer Data-agent i ChatGPT Work, der kobler virksomhedsdata på og bygger dashboards via naturligt sprog.",
-        "forbehold": "Ingen uafhængig test af datakilder, sikkerhed eller nøjagtighed.",
-        "emne": "openai, chatgpt work, data-agent"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 6,
-      "side": "artikel/d86fa96aa31ae332.html"
     },
     {
       "titel": "Students who use AI generally score worse at school",
@@ -1464,7 +1404,7 @@
       "dato": "2026-09-10T00:00:00+00:00",
       "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
+      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
       "eget_foerst_set": "2026-09-10T21:07:39.020467+00:00",
       "rubrik": "OpenAI lancerer Agents API",
       "resume_da": "OpenAI præsenterer en administreret tjeneste til at bygge og lancere cloudagenter, baseret på Codex-harnesset.",
@@ -1481,6 +1421,15 @@
       ],
       "noegletal": [],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/put-data-to-work",
+          "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
+          "resume_da": "OpenAI præsenterer en dataagent i ChatGPT Work, der via naturligt sprog kan forbinde virksomhedsdata og bygge interaktive dashboards.",
+          "foerst_set": "2026-09-10T17:49:16.718389+00:00"
+        }
+      ],
       "detaljer": [
         "Navnet er Agents API",
         "Bygger på Codex-harnesset",
@@ -1657,128 +1606,6 @@
       "side": "artikel/5a7a028d73b1f767.html"
     },
     {
-      "titel": "The AI policy window is open. We need to act.",
-      "link": "https://openai.com/index/ai-policy-window",
-      "resume": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-10T05:12:15.577694+00:00",
-      "eget_foerst_set": "2026-09-10T05:12:15.577694+00:00",
-      "rubrik": "OpenAI efterlyser politisk handling om AI-sikkerhed",
-      "resume_da": "OpenAI-topchef Chris Lehane mener, at stærkere AI-modeller kræver stærkere sikkerhedsbevis og fælles standarder, mens det politiske vindue står åbent.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Politisk vindue står åbent",
-          "tekst": "I et blogindlæg argumenterer **Chris Lehane** fra OpenAI for, at der lige nu er en åbning for at få vedtaget politiske rammer for AI. Budskabet er, at muligheden skal bruges, mens den er der. Indlægget er OpenAIs eget, og der er tale om et partsindlæg i debatten om regulering."
-        },
-        {
-          "overskrift": "Sikkerhed skal dokumenteres",
-          "tekst": "Lehane kæder stærkere AI-evner sammen med krav om stærkere sikkerhedsbevis. Han peger på behovet for fælles standarder og holdbar politisk handling. Det er en position, ikke en vedtaget regel, og indlægget siger ikke, hvilke konkrete krav der bør gælde, eller hvornår de skal træde i kraft."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [
-        "OpenAI mener, at det politiske vindue for AI-regulering er åbent nu",
-        "Sikkerhedsbevis og fælles standarder skal følge stærkere AI-evner",
-        "Der opfordres til holdbar politisk handling, ikke kun ord"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI opfordrer til fælles sikkerhedsstandarder og politisk handling, mens vinduet er åbent.",
-        "forbehold": "Det er et holdningsindlæg fra OpenAI, ikke dokumentation for vedtagne regler.",
-        "emne": "openai, ai-politik"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 6,
-      "side": "artikel/e50720e57461212f.html"
-    },
-    {
-      "titel": "Amazon Prime Video’s new AI tech matches lips to dubbed audio",
-      "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
-      "resume": "Amazon's Prime Video is launching a new AI-powered feature that lines up an actor's mouth with \"human-dubbed\" audio. The feature is only available with the English dub of the German series Maxton Hall for now, but Prime Video plans to expand it to \"additional titles\" in the future. In its announcement, Prime Video says it […]",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "rubrik": "Prime Video tester AI-læbesynk på Maxton Hall",
-      "resume_da": "Prime Video tager AI-læbesynk i brug på den engelske dub af Maxton Hall. Funktionen udvides til flere titler senere.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Læber matcher engelsk dub",
-          "tekst": "Prime Video har lanceret en ny AI-funktion, der tilpasser skuespilleres læbebevægelser, så de passer til \"human-dubbed\" lyd. Ifølge Prime Video kombinerer teknologien AI og visuelle effekter for at få læberne til at matche den oversatte tale. Foreløbig findes funktionen kun på den engelske dub af den tyske serie **Maxton Hall**."
-        },
-        {
-          "overskrift": "Tilgængelig nu og til december",
-          "tekst": "Læbesynk-funktionen er ifølge Prime Video tilgængelig for abonnenter globalt på sæson 1 og 2 af **Maxton Hall**. Den kommer også med seriens tredje sæson, der har premiere **9. december**. Prime Video oplyser ikke navne på de \"additional titles\", som funktionen senere skal udvides til, eller en tidsplan herfor."
-        },
-        {
-          "overskrift": "Fra AI-dub til læbesynk",
-          "tekst": "Sidste år begyndte Prime Video at eksperimentere med \"AI-aided\" dubbing på engelsk og spansk til 12 film og tv-serier, heriblandt **El Cid: La Leyenda**, **Mi Mamá Lora** og **Long Lost**. Også Meta og YouTube har for nylig lanceret AI-baseret auto-dubbing til skabere med en \"lip sync\"-indstilling, så skabere ser ud til at tale brugerens foretrukne sprog."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "12",
-          "label": "film og tv-serier i Prime Videos tidligere AI-dub-forsøg"
-        },
-        {
-          "tal": "9. december",
-          "label": "premiere på Maxton Hall sæson 3"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Funktionen findes kun med engelsk dub af Maxton Hall indtil videre.",
-        "Prime Video planlægger at udvide funktionen til flere titler senere.",
-        "Læbesynk-funktionen er tilgængelig for abonnenter globalt på sæson 1 og 2.",
-        "Prime Video kombinerer AI og visuelle effekter til læbesynken."
-      ],
-      "betydning": "Hvis teknologien holder, kan flere udenlandske serier få engelsk tale uden skæv læbesynk. Det kræver dog, at Prime Video rent faktisk udruller funktionen til flere titler.",
-      "pointer": [
-        "AI-læbesynk er kun på engelsk Maxton Hall foreløbig",
-        "Sæson 3 får funktionen fra 9. december",
-        "Prime Video vil udvide til flere titler senere"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Prime Video lancerer AI, der matcher læber til dubbet lyd, foreløbig kun på Maxton Hall.",
-        "forbehold": "Funktionen er kun tilgængelig for én serie i første omgang ifølge meddelelsen.",
-        "emne": "amazon prime video, dubling"
-      },
-      "prio": 6,
-      "side": "artikel/4c31ccfb47a0b4ea.html",
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc"
-    },
-    {
       "titel": "Panic builds over bankrupt Spirit’s looming data sale to Google",
       "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
       "resume": "\"Bankruptcy cannot become the new land grab for AI.”",
@@ -1919,6 +1746,128 @@
       },
       "prio": 6,
       "side": "artikel/755f7769e744d036.html",
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc"
+    },
+    {
+      "titel": "The AI policy window is open. We need to act.",
+      "link": "https://openai.com/index/ai-policy-window",
+      "resume": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-10T05:12:15.577694+00:00",
+      "eget_foerst_set": "2026-09-10T05:12:15.577694+00:00",
+      "rubrik": "OpenAI efterlyser politisk handling om AI-sikkerhed",
+      "resume_da": "OpenAI-topchef Chris Lehane mener, at stærkere AI-modeller kræver stærkere sikkerhedsbevis og fælles standarder, mens det politiske vindue står åbent.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Politisk vindue står åbent",
+          "tekst": "I et blogindlæg argumenterer **Chris Lehane** fra OpenAI for, at der lige nu er en åbning for at få vedtaget politiske rammer for AI. Budskabet er, at muligheden skal bruges, mens den er der. Indlægget er OpenAIs eget, og der er tale om et partsindlæg i debatten om regulering."
+        },
+        {
+          "overskrift": "Sikkerhed skal dokumenteres",
+          "tekst": "Lehane kæder stærkere AI-evner sammen med krav om stærkere sikkerhedsbevis. Han peger på behovet for fælles standarder og holdbar politisk handling. Det er en position, ikke en vedtaget regel, og indlægget siger ikke, hvilke konkrete krav der bør gælde, eller hvornår de skal træde i kraft."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [
+        "OpenAI mener, at det politiske vindue for AI-regulering er åbent nu",
+        "Sikkerhedsbevis og fælles standarder skal følge stærkere AI-evner",
+        "Der opfordres til holdbar politisk handling, ikke kun ord"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI opfordrer til fælles sikkerhedsstandarder og politisk handling, mens vinduet er åbent.",
+        "forbehold": "Det er et holdningsindlæg fra OpenAI, ikke dokumentation for vedtagne regler.",
+        "emne": "openai, ai-politik"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc",
+      "prio": 6,
+      "side": "artikel/e50720e57461212f.html"
+    },
+    {
+      "titel": "Amazon Prime Video’s new AI tech matches lips to dubbed audio",
+      "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
+      "resume": "Amazon's Prime Video is launching a new AI-powered feature that lines up an actor's mouth with \"human-dubbed\" audio. The feature is only available with the English dub of the German series Maxton Hall for now, but Prime Video plans to expand it to \"additional titles\" in the future. In its announcement, Prime Video says it […]",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "rubrik": "Prime Video tester AI-læbesynk på Maxton Hall",
+      "resume_da": "Prime Video tager AI-læbesynk i brug på den engelske dub af Maxton Hall. Funktionen udvides til flere titler senere.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Læber matcher engelsk dub",
+          "tekst": "Prime Video har lanceret en ny AI-funktion, der tilpasser skuespilleres læbebevægelser, så de passer til \"human-dubbed\" lyd. Ifølge Prime Video kombinerer teknologien AI og visuelle effekter for at få læberne til at matche den oversatte tale. Foreløbig findes funktionen kun på den engelske dub af den tyske serie **Maxton Hall**."
+        },
+        {
+          "overskrift": "Tilgængelig nu og til december",
+          "tekst": "Læbesynk-funktionen er ifølge Prime Video tilgængelig for abonnenter globalt på sæson 1 og 2 af **Maxton Hall**. Den kommer også med seriens tredje sæson, der har premiere **9. december**. Prime Video oplyser ikke navne på de \"additional titles\", som funktionen senere skal udvides til, eller en tidsplan herfor."
+        },
+        {
+          "overskrift": "Fra AI-dub til læbesynk",
+          "tekst": "Sidste år begyndte Prime Video at eksperimentere med \"AI-aided\" dubbing på engelsk og spansk til 12 film og tv-serier, heriblandt **El Cid: La Leyenda**, **Mi Mamá Lora** og **Long Lost**. Også Meta og YouTube har for nylig lanceret AI-baseret auto-dubbing til skabere med en \"lip sync\"-indstilling, så skabere ser ud til at tale brugerens foretrukne sprog."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "12",
+          "label": "film og tv-serier i Prime Videos tidligere AI-dub-forsøg"
+        },
+        {
+          "tal": "9. december",
+          "label": "premiere på Maxton Hall sæson 3"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Funktionen findes kun med engelsk dub af Maxton Hall indtil videre.",
+        "Prime Video planlægger at udvide funktionen til flere titler senere.",
+        "Læbesynk-funktionen er tilgængelig for abonnenter globalt på sæson 1 og 2.",
+        "Prime Video kombinerer AI og visuelle effekter til læbesynken."
+      ],
+      "betydning": "Hvis teknologien holder, kan flere udenlandske serier få engelsk tale uden skæv læbesynk. Det kræver dog, at Prime Video rent faktisk udruller funktionen til flere titler.",
+      "pointer": [
+        "AI-læbesynk er kun på engelsk Maxton Hall foreløbig",
+        "Sæson 3 får funktionen fra 9. december",
+        "Prime Video vil udvide til flere titler senere"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Prime Video lancerer AI, der matcher læber til dubbet lyd, foreløbig kun på Maxton Hall.",
+        "forbehold": "Funktionen er kun tilgængelig for én serie i første omgang ifølge meddelelsen.",
+        "emne": "amazon prime video, dubling"
+      },
+      "prio": 6,
+      "side": "artikel/4c31ccfb47a0b4ea.html",
       "redaktion_instruks": "30b24f5dd9bb0019",
       "brief_instruks": "748464c0b45c6acc"
     },
@@ -2094,63 +2043,6 @@
       "prio": 6
     },
     {
-      "titel": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "resume": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-      "dato": "2026-09-08T14:00:15+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
-      "resume_da": "Google DeepMind præsenterer AlphaGenome Atlas, som kortlægger de molekylære effekter af 9 milliarder enkeltbogstavsvarianter i det menneskelige genom.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AlphaGenome Atlas kortlægger prædiktivt effekter af ni milliarder enkeltbogstavsvariantier i menneskegenomet.",
-        "forbehold": "Kortet er prædiktivt, ikke eksperimentelt bekræftet, ifølge materialet.",
-        "emne": "alphagenome atlas"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Ét bogstav, mange effekter",
-          "tekst": "Ifølge Google DeepMind kortlægger **AlphaGenome Atlas** de molekylære effekter af **9 milliarder** enkeltbogstavsvarianter – altså ændringer af ét enkelt DNA-bogstav ad gangen – i det menneskelige genom. Værktøjet er beskrevet som et forudsigende kort over, hvad hver af disse varianter kan betyde på molekylært niveau. Det er en forudsigelsesmodel, ikke en afprøvet klinisk test."
-        },
-        {
-          "overskrift": "Fra variant til forståelse",
-          "tekst": "Målet er at gøre det lettere at tolke varianter, hvis betydning i dag er uafklaret, ved at forudsige deres molekylære virkning direkte ud fra genomet. Kilden beskriver ikke, hvor præcist kortet er, hvilke celletyper eller væv der dækkes, eller hvordan resultaterne er valideret. Der er heller ikke oplyst adgang, pris eller hvornår data kan tages i brug."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "9 milliarder",
-          "label": "enkeltbogstavsvarianter kortlagt"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [
-        "Google DeepMind præsenterer AlphaGenome Atlas",
-        "Kortet dækker 9 milliarder enkeltbogstavsvarianter",
-        "Forudsiger molekylære effekter af DNA-ændringer"
-      ],
-      "brief_instruks": "748464c0b45c6acc",
-      "side": "artikel/8aaadec7c05e0c22.html"
-    },
-    {
       "titel": "Meta says it’s changing AI suggestions after posing invasive personal questions",
       "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
       "resume": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should […]",
@@ -2282,6 +2174,65 @@
       "redaktoer_kilder": [],
       "prio": 5,
       "side": "artikel/e494048740eb93fd.html"
+    },
+    {
+      "titel": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "resume": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+      "dato": "2026-09-08T14:00:15+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "rubrik": "DeepMind lancerer AlphaGenome Atlas",
+      "resume_da": "Google DeepMind annoncerer AlphaGenome Atlas: forudsagte molekylære effekter af 9 milliarder DNA-variantet hos mennesket.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DeepMind præsenterer prædiktivt kort over molekylære effekter af 9 mia. DNA-varianter i hele genomet.",
+        "forbehold": "Kortet er prædiktivt, ikke eksperimentelt bekræftet.",
+        "emne": "alphagenome atlas, genomvarianter"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Hvad er nyt",
+          "tekst": "Google DeepMind præsenterer AlphaGenome Atlas, et forudsigelseskort over det menneskelige genom. Ifølge DeepMind dækker kortet de molekylære effekter af **9 milliarder** enkeltbogstavs-DNA-varianter. Det er altså ikke en ny måling af én person, men et forsøg på at forudsige, hvad hver enkelt lille ændring i arvemassen kan gøre molekylært."
+        },
+        {
+          "overskrift": "Hvorfor det er interessant",
+          "tekst": "Målet er at gøre det muligt at slå op, hvad en given enkeltbogstavsændring forventes at betyde, uden at skulle teste hver variant i laboratoriet. Hvor langt det rækker i praksis, og hvor præcist kortet er, fremgår ikke af det medsendte materiale. Det er en forudsigelse fra DeepMind, ikke en uafhængigt afprøvet ressource."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "9 milliarder",
+          "label": "enkeltbogstavs-DNA-varianter"
+        }
+      ],
+      "detaljer": [
+        "AlphaGenome Atlas er et forudsigelseskort over det menneskelige genom.",
+        "Det dækker effekterne af enkeltbogstavsvarianter ifølge DeepMind."
+      ],
+      "betydning": "",
+      "pointer": [
+        "9 milliarder DNA-varianter kortlagt i forudsigelser",
+        "Kortet er en model fra Google DeepMind"
+      ],
+      "brief_instruks": "748464c0b45c6acc",
+      "side": "artikel/8aaadec7c05e0c22.html"
     },
     {
       "titel": "Massachusetts hits data centers with new clean power rules",
@@ -2480,71 +2431,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
-      "titel": "Instacart launches an AI grocery shopping assistant called Clementine",
-      "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
-      "resume": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "rubrik": "Instacart lancerer AI-indkøbsassistenten Clementine",
-      "resume_da": "Instacart har annonceret Clementine, en AI-assistent der omdanner samtaler, indkøbssedler og opskrifter til færdige indkøbskurve. Den skal også foreslå tilbud og billigere alternativer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fra samtale til kurv",
-          "tekst": "Instacart har offentliggjort en ny AI-assistent kaldet **Clementine**, som ifølge selskabet kan omsætte en samtale, en indkøbsseddel eller en opskrift til en klar indkøbskurv. Eksempler fra Instacart er forespørgsler som \"I need a week of budget-friendly kids' lunches\", \"high-protein, easy dinners for two\" eller \"order my usuals\". Instacart oplyser ikke præcise tilgængelighedsdetaljer i det medsendte materiale."
-        },
-        {
-          "overskrift": "Personlige opskrifter og tilbud",
-          "tekst": "Clementine kan ifølge Instacart generere personlige opskrifter eller hente dem fra udgivere, og tilpasse anbefalinger til husstandens præferencer som glutenfri, vegetarisk, nøddefri eller økologisk. Assistenten skal desuden vise relevante tilbud og foreslå billigere alternativer. Brugere kan angiveligt uploade et foto af en håndskrevet indkøbsseddel eller et skærmbillede af en digital seddel og få den lavet om til en kurv."
-        },
-        {
-          "overskrift": "Konkurrence om planlægningen",
-          "tekst": "Instacart er ikke alene: **Uber Eats** og **DoorDash** har ifølge TechCrunch allerede introduceret lignende AI-assistenter, der kan omdanne naturligt sprog og indkøbssedler til personlige kurve. Ifølge TechCrunch viser det en bevægelse, hvor leveringsapps ikke kun vil være steder, hvor man finder og køber varer, men også der, hvor beslutningen træffes. De konkurrerer dermed også om at blive husstandens faste planlægningsværktøj og holde brugerne væk fra chatbotter som ChatGPT."
-        },
-        {
-          "overskrift": "Instacarts begrundelse",
-          "tekst": "\"Every night, millions of families ask the same question: 'What's for dinner?' Not knowing the answer, let alone what to shop for, is one of the most universal human experiences, and a problem Instacart is built to solve,\" siger CEO **Chris Rogers** i en e-mailet pressemeddelelse gengivet af TechCrunch. Han tilføjer: \"We've spent nearly 15 years learning how families shop and eat, and Clementine puts that knowledge to work.\" Der er ikke oplyst lanceringsdato eller pris."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Clementine kan ifølge Instacart lave opskrifter og tilpasse anbefalinger til kostbehov.",
-        "Assistenten skal vise tilbud og foreslå billigere alternativer.",
-        "Brugere kan uploade foto eller skærmbillede af indkøbsseddel til kurv.",
-        "Instacart oplyser ikke pris, adgang eller tilgængelighed for Clementine."
-      ],
-      "betydning": "Leveringsapps forsøger at flytte indkøbsbeslutningen ind i deres egen app, før brugerne når til kurven, og dermed konkurrere med chatbotter som ChatGPT om planlægningen.",
-      "pointer": [
-        "Instacart annoncerer AI-assistenten Clementine.",
-        "Clementine omdanner samtaler og indkøbssedler til kurve.",
-        "Uber Eats og DoorDash har lignende assistenter."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Instacart lancerer Clementine, der laver indkøbslister om til kurve og hjælper med madplan og budget.",
-        "forbehold": "",
-        "emne": "instacart, clementine"
-      },
-      "prio": 6,
-      "side": "artikel/489fd9472b6bee4b.html",
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc"
-    },
-    {
       "titel": "Datasette 1.0a39 and 0.65.4 security releases",
       "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
       "resume": "Datasette 1.0a39 and 0.65.4 security releases Today we're releasing two new security patch versions of Datasette: 1.0a39 and 0.65.4 - one for the current alpha series and one for the stable 0.65.x family. These are security fixes which you should apply if you are running a Datasette instance on the public web - in particular if that instance mixes both public and private tables. Following issues…",
@@ -2688,6 +2574,71 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 5,
       "side": "artikel/1b44943176b0dfbb.html"
+    },
+    {
+      "titel": "Instacart launches an AI grocery shopping assistant called Clementine",
+      "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
+      "resume": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "rubrik": "Instacart lancerer AI-indkøbsassistenten Clementine",
+      "resume_da": "Instacart har annonceret Clementine, en AI-assistent der omdanner samtaler, indkøbssedler og opskrifter til færdige indkøbskurve. Den skal også foreslå tilbud og billigere alternativer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra samtale til kurv",
+          "tekst": "Instacart har offentliggjort en ny AI-assistent kaldet **Clementine**, som ifølge selskabet kan omsætte en samtale, en indkøbsseddel eller en opskrift til en klar indkøbskurv. Eksempler fra Instacart er forespørgsler som \"I need a week of budget-friendly kids' lunches\", \"high-protein, easy dinners for two\" eller \"order my usuals\". Instacart oplyser ikke præcise tilgængelighedsdetaljer i det medsendte materiale."
+        },
+        {
+          "overskrift": "Personlige opskrifter og tilbud",
+          "tekst": "Clementine kan ifølge Instacart generere personlige opskrifter eller hente dem fra udgivere, og tilpasse anbefalinger til husstandens præferencer som glutenfri, vegetarisk, nøddefri eller økologisk. Assistenten skal desuden vise relevante tilbud og foreslå billigere alternativer. Brugere kan angiveligt uploade et foto af en håndskrevet indkøbsseddel eller et skærmbillede af en digital seddel og få den lavet om til en kurv."
+        },
+        {
+          "overskrift": "Konkurrence om planlægningen",
+          "tekst": "Instacart er ikke alene: **Uber Eats** og **DoorDash** har ifølge TechCrunch allerede introduceret lignende AI-assistenter, der kan omdanne naturligt sprog og indkøbssedler til personlige kurve. Ifølge TechCrunch viser det en bevægelse, hvor leveringsapps ikke kun vil være steder, hvor man finder og køber varer, men også der, hvor beslutningen træffes. De konkurrerer dermed også om at blive husstandens faste planlægningsværktøj og holde brugerne væk fra chatbotter som ChatGPT."
+        },
+        {
+          "overskrift": "Instacarts begrundelse",
+          "tekst": "\"Every night, millions of families ask the same question: 'What's for dinner?' Not knowing the answer, let alone what to shop for, is one of the most universal human experiences, and a problem Instacart is built to solve,\" siger CEO **Chris Rogers** i en e-mailet pressemeddelelse gengivet af TechCrunch. Han tilføjer: \"We've spent nearly 15 years learning how families shop and eat, and Clementine puts that knowledge to work.\" Der er ikke oplyst lanceringsdato eller pris."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Clementine kan ifølge Instacart lave opskrifter og tilpasse anbefalinger til kostbehov.",
+        "Assistenten skal vise tilbud og foreslå billigere alternativer.",
+        "Brugere kan uploade foto eller skærmbillede af indkøbsseddel til kurv.",
+        "Instacart oplyser ikke pris, adgang eller tilgængelighed for Clementine."
+      ],
+      "betydning": "Leveringsapps forsøger at flytte indkøbsbeslutningen ind i deres egen app, før brugerne når til kurven, og dermed konkurrere med chatbotter som ChatGPT om planlægningen.",
+      "pointer": [
+        "Instacart annoncerer AI-assistenten Clementine.",
+        "Clementine omdanner samtaler og indkøbssedler til kurve.",
+        "Uber Eats og DoorDash har lignende assistenter."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Instacart lancerer Clementine, der laver indkøbslister om til kurve og hjælper med madplan og budget.",
+        "forbehold": "",
+        "emne": "instacart, clementine"
+      },
+      "prio": 6,
+      "side": "artikel/489fd9472b6bee4b.html",
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc"
     },
     {
       "titel": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
@@ -3368,6 +3319,36 @@
       "prio": 5
     },
     {
+      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+      "dato": "2026-09-11T20:59:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
+      "resume_da": "Han mener, at de store AI-modeller er trænet på offentlig viden, og derfor bør alle have adgang til dem.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Garry Tan opfordrer amerikanske open-weight-labs til at destillere frontmodeller",
+        "forbehold": "Udtalelse fra investor; ingen konkret model eller vedtaget politik",
+        "emne": "open-weight destillation"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Adobe is trying to make its AI generators idiot-proof in Premiere",
       "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "resume": "Adobe is overhauling how editors interact with AI in its Premiere professional video editing software. Its new Generative Media tool makes it easier to generate video, sound effects, music, and soundscapes without ever leaving the project timeline. The generators themselves aren't entirely new; the big change is how easily you can access them without breaking […]",
@@ -3425,36 +3406,6 @@
       "prio": 6,
       "side": "artikel/926902b984e8d2e0.html",
       "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-      "dato": "2026-09-11T20:59:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
-      "resume_da": "Han mener, at de store AI-modeller er trænet på offentlig viden, og derfor bør alle have adgang til dem.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Garry Tan opfordrer amerikanske open-weight-labs til at destillere frontmodeller",
-        "forbehold": "Udtalelse fra investor; ingen konkret model eller vedtaget politik",
-        "emne": "open-weight destillation"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "Roundtables: AI’s apocalypse crisis",
@@ -3812,6 +3763,36 @@
       "prio": 4
     },
     {
+      "titel": "Microsoft has new AI privacy rules for schools",
+      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "resume": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of […]",
+      "dato": "2026-09-09T17:07:48+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "Microsoft laver AI-regler for skoler",
+      "resume_da": "Aftalen kommer efter at to skolesystemer forbød elever at bruge AI. Lærernes fagforening AFT er med i aftalen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft indgår aftale med lærerfagforeningen AFT om sikkerheds- og privatlivsprincipper for AI i skoler.",
+        "forbehold": "Princippernes konkrete indhold og håndhævelse er ikke beskrevet.",
+        "emne": "microsoft ai skoler"
+      },
+      "prio": 4,
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
       "titel": "Mistral raises €3B as sovereign AI becomes big business",
       "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "resume": "The French AI lab has raised €3 billion at a €21 billion valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
@@ -3894,36 +3875,6 @@
           "foerst_set": "2026-09-11T14:38:09.387448+00:00"
         }
       ],
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Microsoft has new AI privacy rules for schools",
-      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
-      "resume": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of […]",
-      "dato": "2026-09-09T17:07:48+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "Microsoft laver AI-regler for skoler",
-      "resume_da": "Aftalen kommer efter at to skolesystemer forbød elever at bruge AI. Lærernes fagforening AFT er med i aftalen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsoft indgår aftale med lærerfagforeningen AFT om sikkerheds- og privatlivsprincipper for AI i skoler.",
-        "forbehold": "Princippernes konkrete indhold og håndhævelse er ikke beskrevet.",
-        "emne": "microsoft ai skoler"
-      },
-      "prio": 4,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -4015,70 +3966,6 @@
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 4
-    },
-    {
-      "titel": "Funding grants for new research into AI and teen development",
-      "link": "https://openai.com/index/teen-development-research-grants",
-      "resume": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
-      "dato": "2026-09-08T09:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "rubrik": "OpenAI støtter teenagere-forskning med 35 mio. kr.",
-      "resume_da": "OpenAI uddeler 35 millioner kroner til uafhængig forskning i AI's effekt på unges trivsel og sikkerhed.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det handler om",
-          "tekst": "OpenAI har afsat **35 millioner kroner** til forskningsprojekter, der skal undersøge, hvordan generativ AI påvirker teenagere. Pengene går til forskere, der arbejder selvstændigt og uafhængigt af OpenAI. Fokusområderne er unges udvikling, trivsel og sikkerhed i mødet med AI-værktøjer."
-        },
-        {
-          "overskrift": "Sådan søger du",
-          "tekst": "Forskningsinstitutioner og enkeltforskere kan søge om støtte gennem programmet. Formålet er at få solid viden om, hvordan AI påvirker teenagere – både i forhold til risiko og potentiale. Ansøgningsprocessen er åben, og OpenAI opfordrer flere til at byde ind med forskningsidéer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "$5 million",
-          "label": "i forskningsstøtte fra OpenAI"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "OpenAI lancerer et grant-program på 35 millioner kroner.",
-        "Forskningen skal være uafhængig og ikke styret af OpenAI.",
-        "Fokus er på teenagere og generativ AI.",
-        "Undersøgelsesområder: udvikling, trivsel og sikkerhed.",
-        "Ansøgere kan være både institutioner og individuelle forskere.",
-        "Programmet er åbent for ansøgninger nu."
-      ],
-      "betydning": "Du kan få tryggere AI-værktøjer, hvis forskningen afdækker, hvordan teknologien påvirker unge – men der er ingen garantier endnu.",
-      "pointer": [
-        "OpenAI uddeler 35 mio. kr. til forskning.",
-        "Forskningen skal være uafhængig.",
-        "Fokus på teenagere og AI.",
-        "Ansøgningsfristen er ikke oplyst."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI opslår et tilskudsprogram på 5 mio. dollar til uafhængig forskning i generativ AI's effekt på unges udvikling, trivsel og sikkerhed.",
-        "forbehold": "Åbent ansøgningsprogram; ingen tildelinger eller resultater endnu.",
-        "emne": "openai, ungeforskning"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 6,
-      "side": "artikel/c34d7a764f86c6e9.html"
     },
     {
       "titel": "Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
@@ -4186,6 +4073,70 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
+      "titel": "Funding grants for new research into AI and teen development",
+      "link": "https://openai.com/index/teen-development-research-grants",
+      "resume": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+      "dato": "2026-09-08T09:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "rubrik": "OpenAI støtter teenagere-forskning med 35 mio. kr.",
+      "resume_da": "OpenAI uddeler 35 millioner kroner til uafhængig forskning i AI's effekt på unges trivsel og sikkerhed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det handler om",
+          "tekst": "OpenAI har afsat **35 millioner kroner** til forskningsprojekter, der skal undersøge, hvordan generativ AI påvirker teenagere. Pengene går til forskere, der arbejder selvstændigt og uafhængigt af OpenAI. Fokusområderne er unges udvikling, trivsel og sikkerhed i mødet med AI-værktøjer."
+        },
+        {
+          "overskrift": "Sådan søger du",
+          "tekst": "Forskningsinstitutioner og enkeltforskere kan søge om støtte gennem programmet. Formålet er at få solid viden om, hvordan AI påvirker teenagere – både i forhold til risiko og potentiale. Ansøgningsprocessen er åben, og OpenAI opfordrer flere til at byde ind med forskningsidéer."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "$5 million",
+          "label": "i forskningsstøtte fra OpenAI"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "OpenAI lancerer et grant-program på 35 millioner kroner.",
+        "Forskningen skal være uafhængig og ikke styret af OpenAI.",
+        "Fokus er på teenagere og generativ AI.",
+        "Undersøgelsesområder: udvikling, trivsel og sikkerhed.",
+        "Ansøgere kan være både institutioner og individuelle forskere.",
+        "Programmet er åbent for ansøgninger nu."
+      ],
+      "betydning": "Du kan få tryggere AI-værktøjer, hvis forskningen afdækker, hvordan teknologien påvirker unge – men der er ingen garantier endnu.",
+      "pointer": [
+        "OpenAI uddeler 35 mio. kr. til forskning.",
+        "Forskningen skal være uafhængig.",
+        "Fokus på teenagere og AI.",
+        "Ansøgningsfristen er ikke oplyst."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI opslår et tilskudsprogram på 5 mio. dollar til uafhængig forskning i generativ AI's effekt på unges udvikling, trivsel og sikkerhed.",
+        "forbehold": "Åbent ansøgningsprogram; ingen tildelinger eller resultater endnu.",
+        "emne": "openai, ungeforskning"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 6,
+      "side": "artikel/c34d7a764f86c6e9.html"
+    },
+    {
       "titel": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
       "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
       "resume": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say.",
@@ -4213,36 +4164,6 @@
         "emne": "listen labs finansiering salesforce"
       },
       "prio": 4,
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
-      "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
-      "resume": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
-      "dato": "2026-09-08T16:20:31+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "rubrik": "Google Cloud indgår AI-aftale med Accenture",
-      "resume_da": "Aftalen skal hjælpe virksomheder med at bruge Google Cloud's AI. Google satser på teknisk personale tæt på kunderne for at løse problemer med at tage AI i brug.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google Cloud indgår aftale med Accenture og satser på udstationerede teknikere for at få virksomheder i gang med AI.",
-        "forbehold": "Aftalens økonomi og konkrete effekt på udbredelse er ikke oplyst.",
-        "emne": "google-cloud-accenture"
-      },
-      "prio": 5,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -4372,6 +4293,36 @@
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 3
+    },
+    {
+      "titel": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
+      "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
+      "resume": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
+      "dato": "2026-09-08T16:20:31+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "rubrik": "Google Cloud indgår AI-aftale med Accenture",
+      "resume_da": "Aftalen skal hjælpe virksomheder med at bruge Google Cloud's AI. Google satser på teknisk personale tæt på kunderne for at løse problemer med at tage AI i brug.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google Cloud indgår aftale med Accenture og satser på udstationerede teknikere for at få virksomheder i gang med AI.",
+        "forbehold": "Aftalens økonomi og konkrete effekt på udbredelse er ikke oplyst.",
+        "emne": "google-cloud-accenture"
+      },
+      "prio": 5,
+      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "Everything Apple announced at its fall iPhone event, from the foldable iPhone Duo to an always-listening Apple Watch",
@@ -4546,6 +4497,36 @@
       "prio": 4
     },
     {
+      "titel": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "link": "https://huggingface.co/blog/gradio-workflow-1111",
+      "resume": "",
+      "dato": "2026-09-10T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "AUTOMATIC1111 genopbygget med Gradio Workflow",
+      "resume_da": "Projektet genskaber det populære billedværktøj i en ny ramme. Kildekoden ligger åbent på Hugging Face.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Projekt genskaber AUTOMATIC1111 med Gradio Workflow; kode delt åbent på Hugging Face.",
+        "forbehold": "Kun kort beskrivelse uden tekstindhold; ingen uafhængig vurdering.",
+        "emne": "automatic1111 gradio workflow"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
       "link": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "resume": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
@@ -4619,34 +4600,34 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
-      "titel": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "link": "https://huggingface.co/blog/gradio-workflow-1111",
-      "resume": "",
-      "dato": "2026-09-10T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "AUTOMATIC1111 genopbygget med Gradio Workflow",
-      "resume_da": "Projektet genskaber det populære billedværktøj i en ny ramme. Kildekoden ligger åbent på Hugging Face.",
+      "titel": "ControlAI’s Connor Leahy on why superintelligence is ‘not a weapon, it’s an adversary’",
+      "link": "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
+      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
+      "dato": "2026-09-09T15:50:13+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "ControlAI: Super-AI er en modstander, ikke et våben",
+      "resume_da": "Connor Leahy advarer i TechCrunchs podcast mod at behandle super-AI som noget, vi bare kan udnytte. Han mener, at AI der er klogere end os, kræver helt nye regler for kontrol.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "guide",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Projekt genskaber AUTOMATIC1111 med Gradio Workflow; kode delt åbent på Hugging Face.",
-        "forbehold": "Kun kort beskrivelse uden tekstindhold; ingen uafhængig vurdering.",
-        "emne": "automatic1111 gradio workflow"
+        "begrundelse": "Connor Leahy advarer i podcast om at behandle super-AI som et værktøj frem for en modstander.",
+        "forbehold": "Materialet er kort og gentager samme podcastindhold som anden kandidat.",
+        "emne": "controlai, superintelligens"
       },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
+      "prio": 4,
+      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "Quoting Terence Tao",
@@ -4677,36 +4658,6 @@
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 4
-    },
-    {
-      "titel": "ControlAI’s Connor Leahy on why superintelligence is ‘not a weapon, it’s an adversary’",
-      "link": "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
-      "resume": "AI companies have been talking about superintelligent AI like it’s inevitable, but recent safety incidents like OpenAI’s Hugging Face breach are demonstrating the potential dangers of deploying AI systems that are more capable than humans. So what happens when we can’t reliably control what these systems do? On this episode of TechCrunch’s Equity podcast, Rebecca Bellan is joined by Connor Leahy,…",
-      "dato": "2026-09-09T15:50:13+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "ControlAI: Super-AI er en modstander, ikke et våben",
-      "resume_da": "Connor Leahy advarer i TechCrunchs podcast mod at behandle super-AI som noget, vi bare kan udnytte. Han mener, at AI der er klogere end os, kræver helt nye regler for kontrol.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Connor Leahy advarer i podcast om at behandle super-AI som et værktøj frem for en modstander.",
-        "forbehold": "Materialet er kort og gentager samme podcastindhold som anden kandidat.",
-        "emne": "controlai, superintelligens"
-      },
-      "prio": 4,
-      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "The complex corporate web behind a $3.2 billion AI data center",
@@ -4789,36 +4740,6 @@
       "side": "artikel/e2dfaa2c905c18fc.html"
     },
     {
-      "titel": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
-      "link": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
-      "resume": "Cymphony gives security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access.",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "rubrik": "Sequoia investerer i Cymphony til AI-sikkerhed",
-      "resume_da": "Cymphony får 25 millioner dollars i ny kapital. Pengene skal bruges til at beskytte virksomheder mod nye farer fra AI-agenter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Cymphony rejser 25 mio. dollar til sikkerhedsstyring af AI-agenter og ikke-menneskelige identiteter i virksomheder.",
-        "forbehold": "Ingen oplysninger om produktets modenhed eller kunder.",
-        "emne": "cymphony ai-agentsikkerhed"
-      },
-      "prio": 4,
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
       "titel": "OpenAI adds a prominent AI doomer to its board of directors",
       "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
       "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
@@ -4855,6 +4776,36 @@
           "foerst_set": "2026-09-09T17:56:17.353477+00:00"
         }
       ],
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
+      "titel": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
+      "link": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
+      "resume": "Cymphony gives security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access.",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "rubrik": "Sequoia investerer i Cymphony til AI-sikkerhed",
+      "resume_da": "Cymphony får 25 millioner dollars i ny kapital. Pengene skal bruges til at beskytte virksomheder mod nye farer fra AI-agenter.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Cymphony rejser 25 mio. dollar til sikkerhedsstyring af AI-agenter og ikke-menneskelige identiteter i virksomheder.",
+        "forbehold": "Ingen oplysninger om produktets modenhed eller kunder.",
+        "emne": "cymphony ai-agentsikkerhed"
+      },
+      "prio": 4,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -7442,80 +7393,6 @@
       "side": "artikel/4cdd6362e5e2164e.html"
     },
     {
-      "titel": "Putting sign language AI into users’ hands",
-      "link": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-      "resume": "Introducing sign-language-to-text (SL2T), our breakthrough model powering new sign language features for Deaf and hard of hearing users.",
-      "dato": "2026-08-12T14:01:59+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-08-12T15:43:22.194634+00:00",
-      "eget_foerst_set": "2026-08-12T15:43:22.194634+00:00",
-      "rubrik": "Google lader døve diktere med tegnsprog",
-      "resume_da": "Google har bygget en AI, der oversætter tegnsprog til tekst. Den er nu i Gboard og Live Transcribe på Pixel 11 – først med amerikansk tegnsprog.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Ny funktion",
-          "tekst": "Google har udviklet en AI-model kaldet SL2T, der kan oversætte tegnsprog direkte til tekst. Den bruges nu i Gboard og Live Transcribe på **Pixel 11**-telefoner, så døve kan diktere ved at tegne i luften i stedet for at taste. Funktionen starter med **amerikansk tegnsprog (ASL)** til engelsk, og flere sprog kommer senere."
-        },
-        {
-          "overskrift": "Stort hul",
-          "tekst": "AI har længe kunnet håndtere tale, men de mere end **200** tegnsprog verden over er blevet overset. Omkring 70 millioner døve og hørehæmmede bruger tegnsprog som deres primære sprog. Google vil nu lukke det hul og gøre tegnsprog til en mulighed i hverdagens digitale værktøjer – som at søge på nettet eller skrive beskeder."
-        },
-        {
-          "overskrift": "Svær teknik",
-          "tekst": "At oversætte tegnsprog kræver mere end at genkende bevægelser. Tegnsprog har egen grammatik og ordforråd, og tegn udføres samtidigt med hænder, arme, krop og ansigt. Modellen skal forstå hele bevægelsesmønstret, ikke bare oversætte tegn ét for ét. Ifølge Google er der også mange misforståelser om, hvordan tegnsprog faktisk fungerer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "70 millioner",
-          "label": "døve og hørehæmmede bruger tegnsprog"
-        },
-        {
-          "tal": "200",
-          "label": "forskellige tegnsprog findes i verden"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "SL2T er en AI-model fra Google, der oversætter tegn til tekst.",
-        "Funktionen findes i Gboard og Live Transcribe på Pixel 11.",
-        "Start-sprogene er ASL til engelsk; flere sprog følger senere.",
-        "Døve kan signere til søgning, beskeder og Gemini-opgaver.",
-        "Tegnsprog har egen grammatik og kræver maskinoversættelse.",
-        "Googles testere synes, at tegn er hurtigere end at taste på engelsk.",
-        "Modellen skal følge hænder, arme, krop og ansigt samtidig."
-      ],
-      "betydning": "Du kan snart signere i stedet for at taste på din telefon, hvis du er døv eller hørehæmmet – og få samme lethed som hørende med talediktering.",
-      "pointer": [
-        "Google lancerer tegnsprog-til-tekst på Pixel 11.",
-        "SL2T-modellen oversætter først ASL til engelsk.",
-        "70 millioner døve får ny adgang til AI.",
-        "Teknologien skal udvides til flere sprog."
-      ],
-      "billedmotiv": "En hånd lavet af gennemsigtig plast danner tegnsprog foran en telefon, der viser en tekstboble med ordet \"hej\" uden tal.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 4,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "DeepMind lancerer tegnsprog-til-tekst-modellen SL2T, i Gboard og Live Transcribe på Pixel 11.",
-        "forbehold": "Kun amerikansk tegnsprog understøttet i første version; begrænset enhedsadgang.",
-        "emne": "google deepmind tegnsprog sl2t"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 8,
-      "side": "artikel/618d4dfa5f6ed997.html"
-    },
-    {
       "titel": "Grok 4.6 in GitHub Copilot",
       "link": "https://x.ai/news/grok-4-6-github-copilot",
       "resume": "Grok 4.6, our latest coding model, is now available in GitHub Copilot.",
@@ -7576,36 +7453,6 @@
       "prio": 3
     },
     {
-      "titel": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-      "resume": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
-      "dato": "2026-09-11T20:33:18+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
-      "resume_da": "Der er en uge tilbage til at sikre sig et udstillerbord. Antallet er begrænset og kan blive udsolgt før fristen 18. september.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "TechCrunch-frist for udstillerborde; ingen AI-nyhed, kun eventpraktik og salgsfrist 18. september.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt udstilling"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
-    },
-    {
       "titel": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
       "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
       "resume": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
@@ -7614,9 +7461,8 @@
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
-      "resume_da": "Ansøgninger til officielle Side Events under TechCrunch Disrupt 2026 lukker 11. september kl. 23.59 PT. Arrangementet finder sted i 2026.",
-      "kat_ai": true,
+      "rubrik": "Sidste frist for Disrupt-sidebegivenheder i aften",
+      "resume_da": "Ansøgninger om at være vært for en officiel sidebegivenhed under TechCrunch Disrupt 2026 skal være inde senest 11. september kl. 23.59 PT.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -7628,12 +7474,22 @@
         "type": "reklame",
         "ai_relevant": false,
         "model_lancering": false,
-        "begrundelse": "Frist for at ansøge om sideevents ved TechCrunch Disrupt 2026; ingen AI-nyhed.",
+        "begrundelse": "Ansøgningsfrist for side-events ved TechCrunch Disrupt; ingen AI-nyhed.",
         "forbehold": "",
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
+      "kat_ai": true,
+      "prio": 1,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+          "rubrik": "TechCrunch Disrupt 2026 udstillerborde haster",
+          "resume_da": "Der er en uge tilbage til at sikre sig et udstillerbord. Bordene er begrænsede og kan blive udsolgt før fristen 18. september.",
+          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
+        }
+      ]
     },
     {
       "titel": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
@@ -7758,51 +7614,47 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-12T12:07:48.516958+00:00",
-    "udvalgte": [
-      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/"
-    ],
+    "beregnet": "2026-09-12T14:21:32.813244+00:00",
+    "udvalgte": [],
     "raekkefoelge": [
       "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
       "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "https://openai.com/index/cognition-devin-testing-with-astra",
+      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
       "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "https://openai.com/index/expanding-ai-access-us-government",
       "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
       "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-      "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
       "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
       "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
-      "https://openai.com/index/put-data-to-work",
       "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
       "https://simonwillison.net/2026/Sep/10/calif-research/",
       "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
       "https://openai.com/index/introducing-the-agents-api",
       "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/",
-      "https://openai.com/index/ai-policy-window",
-      "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
+      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
       "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+      "https://openai.com/index/ai-policy-window",
+      "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
       "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
       "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-      "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-      "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
       "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
       "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
-      "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "https://simonwillison.net/2026/Sep/11/datasette-security/",
       "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
       "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
@@ -7814,38 +7666,38 @@
       "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
       "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
       "https://mistral.ai/news/legacy-code-modernization/",
-      "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
       "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
       "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
       "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
-      "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
       "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
       "https://openai.com/index/scaling-storage-one-billion-users-part-one",
       "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
       "https://blog.google/products-and-platforms/products/gemini/ai-navigate-bureaucracy/",
       "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
-      "https://openai.com/index/teen-development-research-grants",
       "https://mistral.ai/news/mistral-x-cloudera/",
       "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+      "https://openai.com/index/teen-development-research-grants",
       "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-      "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
       "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
       "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
       "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
       "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
       "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
       "https://openai.com/index/codex-quantum-computing-experiments",
-      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "https://huggingface.co/blog/gradio-workflow-1111",
+      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
+      "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
       "https://simonwillison.net/2026/Sep/9/terence-tao/",
       "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
-      "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
-      "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
       "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
       "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "https://openai.com/index/the-work-now-within-reach",
       "https://simonwillison.net/2026/Sep/9/blender-viewer/",
@@ -7908,26 +7760,21 @@
       "https://x.ai/news/grok-build-for-everyone",
       "https://x.ai/news/grok-4-6-amazon-bedrock",
       "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
-      "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
       "https://x.ai/news/grok-4-6-github-copilot",
       "https://www.anthropic.com/news/claude-text-watermark"
     ],
-    "ai_vurderet": 153,
+    "ai_vurderet": 150,
     "metode": "agent",
     "agent_version": 1,
     "kontrolleret": true,
-    "data_opdateret": "2026-09-12T12:47:54.116970+00:00",
-    "samlede": {
-      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help": [],
-      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/": []
-    },
+    "data_opdateret": "2026-09-12T14:21:32.813244+00:00",
+    "samlede": {},
     "anbefalede": [
-      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/"
+      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+      "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+      "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity"
     ]
   }
 }

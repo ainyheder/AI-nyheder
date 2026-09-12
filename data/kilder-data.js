@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T12:47:54.116970+00:00",
- "artikler_i_alt": 153,
+ "opdateret": "2026-09-12T14:21:32.813244+00:00",
+ "artikler_i_alt": 150,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -684,9 +684,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 35,
    "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "TechCrunch Disrupt 2026 udstillerborde haster",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Sidste frist for Disrupt-sidebegivenheder i aften"
+    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -805,16 +814,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
-     "dato": "2026-09-11T20:33:18",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
+     "rubrik": "Sidste frist for Disrupt-sidebegivenheder i aften",
      "dato": "2026-09-11T20:30:17",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
@@ -873,6 +873,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
      "side": "artikel/9ee5bacda2ce8165.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
+     "dato": "2026-09-10T17:45:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+     "side": "artikel/755f7769e744d036.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1082,6 +1091,10 @@ window.KILDER_STATUS = {
      6
     ],
     [
+     "OpenAI Blog",
+     2
+    ],
+    [
      "Simon Willison AI",
      2
     ],
@@ -1092,10 +1105,6 @@ window.KILDER_STATUS = {
     [
      "Ars Technica AI",
      2
-    ],
-    [
-     "OpenAI Blog",
-     1
     ]
    ]
   },
@@ -1330,8 +1339,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 18,
-   "som_ekstra": 3,
+   "i_listen": 17,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
@@ -1345,11 +1354,20 @@ window.KILDER_STATUS = {
     {
      "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
      "dato": "",
-     "foerst_set": "2026-09-10T21:07:39.020467+00:00",
+     "foerst_set": "2026-09-10T21:07:39",
      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer Data agent i ChatGPT Work"
+     "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+    },
+    {
+     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
+     "dato": "",
+     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+     "link": "https://openai.com/index/put-data-to-work",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI lancerer Agents API"
     },
     {
      "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
@@ -1406,15 +1424,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI fører GPT-Live-1 til API",
      "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
@@ -1433,11 +1442,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
-     "dato": "2026-09-10T15:00:00",
+     "rubrik": "OpenAI lancerer Agents API",
+     "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/put-data-to-work",
-     "side": "artikel/d86fa96aa31ae332.html",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1503,12 +1512,21 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     2
     ],
     [
      "Simon Willison AI",
@@ -1530,7 +1548,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 10,
+   "i_listen": 9,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1543,7 +1561,7 @@ window.KILDER_STATUS = {
      "under": "Google Gemini springer i videoer og sparer tid"
     },
     {
-     "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
+     "rubrik": "DeepMind lancerer AlphaGenome Atlas",
      "dato": "2026-09-08T14:00:15",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
@@ -1620,15 +1638,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-08-13T19:48:07",
      "link": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
      "side": "artikel/4cdd6362e5e2164e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google lader døve diktere med tegnsprog",
-     "dato": "2026-08-12T14:01:59",
-     "foerst_set": "2026-08-12T15:43:22",
-     "link": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-     "side": "artikel/618d4dfa5f6ed997.html",
      "hvor": "forside",
      "under": ""
     }
