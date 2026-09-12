@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T12:47:54.116970+00:00",
- "artikler_i_alt": 153,
+ "opdateret": "2026-09-12T13:53:43.093929+00:00",
+ "artikler_i_alt": 149,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -684,9 +684,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 34,
    "som_ekstra": 7,
    "seneste": [
+    {
+     "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
+    },
+    {
+     "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
+     "dato": "",
+     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mark Wahlberg taler arbejde på TechCrunch Disrupt"
+    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -805,24 +823,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
-     "dato": "2026-09-11T20:33:18",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
-     "dato": "2026-09-11T20:30:17",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI-topchef Fidji Simo til Nscale før børsnotering",
      "dato": "2026-09-11T16:46:25",
      "foerst_set": "2026-09-11T17:51:30",
@@ -873,6 +873,24 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
      "side": "artikel/9ee5bacda2ce8165.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
+     "dato": "2026-09-10T17:45:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+     "side": "artikel/755f7769e744d036.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
+     "dato": "2026-09-10T14:17:37",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+     "side": "artikel/d40cabdd4c17da18.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1242,6 +1260,10 @@ window.KILDER_STATUS = {
     [
      "Hacker News: AI",
      1
+    ],
+    [
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -1330,7 +1352,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 18,
+   "i_listen": 17,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1343,13 +1365,13 @@ window.KILDER_STATUS = {
      "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
-     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
+     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
      "dato": "",
-     "foerst_set": "2026-09-10T21:07:39.020467+00:00",
-     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
+     "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+     "link": "https://openai.com/index/put-data-to-work",
      "side": "",
      "hvor": "under",
-     "under": "OpenAI lancerer Data agent i ChatGPT Work"
+     "under": "OpenAI lancerer Agents API"
     },
     {
      "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
@@ -1406,15 +1428,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI fører GPT-Live-1 til API",
      "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
@@ -1433,11 +1446,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
-     "dato": "2026-09-10T15:00:00",
+     "rubrik": "OpenAI lancerer Agents API",
+     "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/put-data-to-work",
-     "side": "artikel/d86fa96aa31ae332.html",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1503,6 +1516,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI styrker støtten til journalister og studerende",
+     "dato": "2026-09-08T00:00:00",
+     "foerst_set": "2026-09-07T09:38:00",
+     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+     "side": "artikel/8c676d139375cae9.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -1530,9 +1552,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 10,
-   "som_ekstra": 0,
+   "i_listen": 9,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
+     "dato": "",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google AI forudsiger alle dna-ændringer"
+    },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
      "dato": "",
@@ -1541,15 +1572,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
-    },
-    {
-     "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
-     "dato": "2026-09-08T14:00:15",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "artikel/8aaadec7c05e0c22.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1637,6 +1659,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },

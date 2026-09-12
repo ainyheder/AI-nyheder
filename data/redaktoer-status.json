@@ -1,16 +1,95 @@
 {
-  "opdateret": "2026-09-12T12:47:54.116970+00:00",
-  "status": "genbrugt",
+  "opdateret": "2026-09-12T13:53:43.093929+00:00",
+  "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
     "https://openai.com/index/cognition-devin-testing-with-astra",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "2c4c751282eea243",
-  "forklaring": "Uændrede kandidater og instruktioner; tidligere kontrolleret udvalg genbruges",
+  "input_fingerprint": "21d223d6a90175e8",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 4,
+  "kildehentninger": 8,
+  "vaerktoejer": [
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": null
+    }
+  ],
+  "kildegrundlag": [
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://suno.com/blog/introducing-v6",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://openai.com/index/introducing-the-agents-api",
+      "grundlag": "rss_resume"
+    }
+  ],
   "udgivet_udvalg": [
+    "https://openai.com/index/cognition-devin-testing-with-astra",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/"
+    "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ]
 }

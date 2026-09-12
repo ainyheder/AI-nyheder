@@ -1,7 +1,291 @@
 {
-  "opdateret": "2026-09-12T12:47:54.116970+00:00",
-  "antal": 153,
+  "opdateret": "2026-09-12T13:53:43.093929+00:00",
+  "antal": 149,
   "artikler": [
+    {
+      "titel": "Suno releases its first AI music model made with record industry help",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "resume": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed […]",
+      "dato": "2026-09-09T21:42:19+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "rubrik": "Suno ruller v6 ud med tre modeller",
+      "resume_da": "Suno lancerer AI-musikmodellen v6 i tre varianter, trænet med licenseret data fra Warner Music Group, BMG og Believe. The Verge finder bedre genreforståelse, men stadig ingen naturlige ufuldkommenheder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Tre modeller, én gratis",
+          "tekst": "Suno udgiver **v6** i tre varianter: v6, **v6-wild** og **v6-mini**. Mini er gratis for alle og er ifølge Suno rettet mod hurtig, ressourcelet skabelse. Ifølge The Verge giver mini simplere resultater med flere artefakter, der røber AI-oprindelsen. Wild skal være mere uforudsigelig og er ifølge Suno designet til “happy accidents and natural imperfections”, men The Verge kunne i begrænset test ikke skelne den tydeligt fra standardmodellen."
+        },
+        {
+          "overskrift": "Trænet med licenseret data",
+          "tekst": "Ifølge Sunos Jack Brody er v6 “trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on”. Datasættet omfatter licenseret indhold fra **Warner Music Group**, **BMG** og **Believe** samt “user data”. Det er uklart, om v6 dermed helt er fri for tvivlsomt materiale. Licensaftalerne bør ikke læses som bevis på ophavsretlig renhed for hele modellen."
+        },
+        {
+          "overskrift": "Redigering i chat",
+          "tekst": "v6 tilføjer funktioner, der ændrer arbejdsgangen. Brugere kan redigere dele af en sang med almindeligt sprog i en chat, og enkelte elementer som en guitarlinje eller en enkelt tekstlinje kan ændres uden at generere hele nummeret igen. v6 kan også kombinere elementer fra brugerens egen Suno-samling til nye kreationer. Prompts er ikke længere kun tekst: modellen kan skabe numre ud fra billeder, video eller anden lyd."
+        },
+        {
+          "overskrift": "Rammer genrer, ikke skævhed",
+          "tekst": "The Verge testede v6 med ældre prompts inden for “hyperpop” og “krautrock”, som tidligere modeller ramte ved siden af. v6 ramte ifølge anmeldelsen alle de overfladiske kendetegn ved genrerne. Til gengæld lykkedes det ikke at få ude-af-takt-, falsk- eller let dissonante resultater; modellen leverer ifølge The Verge fortsat harmonisk og rytmisk perfektion. Beskeder som “monotone vocals” og “no drums” blev ignoreret."
+        },
+        {
+          "overskrift": "Fortsat AI-artefakter",
+          "tekst": "Selv om v6 ikke leverer naturlige ufuldkommenheder, bærer den ifølge The Verge stadig AI-musikkens unaturlige artefakter. Vokaler synes at producere flere hårdkantede artefakter end v5. Suno siger, at tidligere modeller på sigt udfases. v6 begynder at rulle ud i dag."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "3",
+          "label": "modeller: v6, v6-wild og v6-mini"
+        },
+        {
+          "tal": "3",
+          "label": "licenspartnere: Warner Music Group, BMG og Believe"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+          "kilde": "TechCrunch AI",
+          "rubrik": "Suno v6: egen model på licenseret musik",
+          "resume_da": "Suno lancerer modelserien v6, som ifølge selskabet selv er trænet på licenseret data. Ældre modeller udfases, mens flere retssager fortsat verserer.",
+          "foerst_set": "2026-09-09T13:51:27.769975+00:00"
+        }
+      ],
+      "detaljer": [
+        "v6-mini er gratis og rettet mod hurtig, ressourcelet skabelse",
+        "The Verge kunne i begrænset test ikke skelne v6-wild klart fra v6",
+        "Prompts kan nu bygge på billede, video eller anden lyd",
+        "Enkelte elementer kan ændres uden at hele nummeret regenereres",
+        "Suno planlægger på sigt at udfase tidligere modeller"
+      ],
+      "betydning": "Suno får med licensaftalerne et mere dokumenterbart datagrundlag for v6, men det er uafklaret, om hele træningssættet er ryddet.",
+      "pointer": [
+        "v6 kommer i tre varianter, kun mini er gratis",
+        "Trænet på licenseret data og brugerdata",
+        "Rammer genrer bedre, men uden naturlige ufuldkommenheder"
+      ],
+      "billedmotiv": "En guitar og en mikrofon stablet oven på en bunke kontrakter, med et bånd fra en kassetteoptager snoet om halsen på guitarhalsen.",
+      "billede": "data/img/b253db15b0551ed9.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Suno v6 er første musikmodel trænet med licenseret pladeselskabsdata og kan skabe sange fra billeder og video.",
+        "forbehold": "Ingen uafhængige vurderinger af lydkvalitet; detaljer om licensaftaler mangler.",
+        "emne": "suno v6"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc",
+      "prio": 7,
+      "side": "artikel/65f77bd4eb92a797.html",
+      "redaktoer_opgave_id": "45dae1761f72eeb5",
+      "redaktoer_kilder": []
+    },
+    {
+      "titel": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "resume": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image […]",
+      "dato": "2026-09-08T20:16:09+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "rubrik": "OpenAI opdaterer ChatGPT-billeder med Sketch",
+      "resume_da": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Tegn selv prompten",
+          "tekst": "OpenAI har annonceret ChatGPT Images 2.5 og tilføjet funktionen **Sketch**. Ved at skrive @Sketch i chatfeltet åbner et lille tegnevindue, hvor du kan lave en skitse, som ChatGPT derefter bruger som del af prompten. Ifølge The Verges journalist, der testede funktionen kort, blev en dårlig musetegnet kat til et realistisk billede efter instruktioner."
+        },
+        {
+          "overskrift": "Kommenter på billedet",
+          "tekst": "En anden nyhed er, at du nu kan sætte kommentarer direkte på dele af et billede, du vil have ændret. The Verges journalist brugte det til at gøre kattens øjne grønne i stedet for blå. Det gør redigering mere målrettet end en løs tekstbeskrivelse af, hvad der skal justeres."
+        },
+        {
+          "overskrift": "Hurtigere og bedre lys",
+          "tekst": "OpenAI oplyser, at ChatGPT Images 2.5 giver billeder med “mere naturligt lys og rigere teksturer”, er bedre til at følge redigeringsinstruktioner “over flere ture”, og at latenstiden ved billedgenerering er reduceret med “op til 50% sammenlignet med Images 2.0”. Det er producentens egne påstande, ikke uafhængige målinger."
+        },
+        {
+          "overskrift": "Tilgængelig nu",
+          "tekst": "Ifølge OpenAI er ChatGPT Images 2.5 tilgængelig nu for brugere af ChatGPT, ChatGPT Work og Codex på desktop, mobil og web. The Verge har ikke oplyst priser eller eventuelle begrænsninger i adgangen ud over, at funktionerne er udrullet."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "op til 50%",
+          "label": "lavere latenstid ved billedgenerering end Images 2.0 ifølge OpenAI"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+          "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
+          "resume_da": "Værktøjet gør dine skitser og fotos til flottere billeder. Det er en opgradering af billedgeneratoren i ChatGPT.",
+          "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+        },
+        {
+          "kilde": "Simon Willison AI",
+          "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+          "rubrik": "OpenAI klar med nye billedmodeller",
+          "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
+          "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+        }
+      ],
+      "detaljer": [
+        "Sketch aktiveres ved at skrive @Sketch i chatfeltet",
+        "Funktionen lader dig tegne direkte i ChatGPT som del af prompten",
+        "Du kan kommentere på dele af et billede for at få dem ændret",
+        "OpenAI kalder selv påstandene om lys, tekstur og redigering for forbedringer"
+      ],
+      "betydning": "Hvis OpenAIs påstande holder, bliver det lettere at styre billedgenerering med en skitse og målrettede kommentarer i stedet for lange tekstprompter.",
+      "pointer": [
+        "Sketch lader dig tegne oplægget til et AI-billede",
+        "ChatGPT Images 2.5 er ude nu ifølge OpenAI",
+        "Du kan kommentere direkte på billeder for at ændre dem"
+      ],
+      "billedmotiv": "En farveblyanttegning af et harmløst hus, nøje udført på et stykke papir, forvandles langsomt til en fotorealistisk miniature-model af samme hus.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "OpenAI annoncerer ChatGPT Images 2.5 med Sketch: tegn en doodle og få et detaljeret AI-billede i ChatGPT.",
+        "forbehold": "Ingen uafhængige tests eller begrænsninger er dokumenteret i materialet.",
+        "emne": "chatgpt-images-2-5"
+      },
+      "prio": 7,
+      "side": "artikel/41a7f2063622334b.html",
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc"
+    },
+    {
+      "titel": "Meta bets on AI agent Muse to catch up in AI race",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "resume": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up […]",
+      "dato": "2026-09-08T19:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
+      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
+      "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Det er sket",
+          "tekst": "Meta har præsenteret Muse, en personlig AI-assistent, som skal hjælpe almindelige mennesker med hverdagsopgaver som at shoppe på nettet, skrive mails og planlægge rejser. Assistenten kan selv åbne en browser, udfylde formularer og endda forhandle på dine vegne – og fortsætter arbejdet, selv efter du lukker appen. Muse lanceres først i USA på iOS, Android og muse.ai, og AI-briller er på vej."
+        },
+        {
+          "overskrift": "Sådan skiller den sig ud",
+          "tekst": "Muse er gratis for de fleste, men Meta nævner, at der kan komme betalte abonnementer for dem, der vil have mere. Det store salgsargument er brugervenlighed: 'Ingen teknisk erfaring nødvendig, ingen læringskurve,' siger Meta. Du kan chatte med Muse via appen eller WhatsApp, og den husker detaljer, du kun nævner én gang, så den kan komme med uopfordrede forslag."
+        },
+        {
+          "overskrift": "Privatliv og sikkerhed",
+          "tekst": "Meta lover, at du kan fravælge, at dine samtaler med Muse bruges til at træne deres AI-modeller, og du kan bede den 'glemme' ting, den har lært om dig. Muse kører på en virtuel computer i skyen, hvor den ikke kan se dine adgangskoder eller betalingsoplysninger. En anden AI-agent, Sentinel, holder øje med, at intet når internettet uden godkendelse."
+        },
+        {
+          "overskrift": "Historien bag",
+          "tekst": "Muse er kernen i Metas nye AI-strategi efter at have brugt milliarder på en omlægning. Men Meta har haft problemer med tillid: en støtte-chatbot hjalp hackere med at overtage over 20.000 Instagram-konti, og en AI-genereret nyhedsstrøm brød virksomhedens egne regler. Konkurrenter som OpenAI og Google har lignende produkter, men Meta satser på, at Muse er nemmere at bruge."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+          "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
+          "resume_da": "Meta introducerer AI-assistenten Muse, der kan booke rejser og betale regninger. Spørgsmålet er, om brugerne vil stole på den.",
+          "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+        },
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://ai.meta.com/muse/",
+          "rubrik": "Meta lancerer Muse – en personlig AI-assistent",
+          "resume_da": "Muse er Metas nye AI-assistent, der skal hjælpe dig i hverdagen. Den er stadig i udvikling, men viser, at Meta satser på at gøre AI mere personlig.",
+          "foerst_set": "2026-09-09T05:10:35.081158+00:00"
+        },
+        {
+          "kilde": "Hacker News: AI",
+          "link": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
+          "rubrik": "Bandet Muse mister navn til Metas nye AI",
+          "resume_da": "Det britiske rockband Muse måtte afgive sine profiler på sociale medier til Metas AI-agent, der også hedder Muse. Bandet stod uden navn.",
+          "foerst_set": "2026-09-10T05:12:15.577694+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+          "rubrik": "Metas nye AI-app Muse er nummer to i USA",
+          "resume_da": "Muse er en AI-assistent, der hjælper med indkøb og mails. Den vokser langsommere end Metas andre apps.",
+          "foerst_set": "2026-09-10T21:07:39.020467+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+          "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
+          "resume_da": "Metas nye AI-assistent Muse klarer praktiske opgaver, men samler overraskende personlige oplysninger om dig.",
+          "foerst_set": "2026-09-10T17:49:16.718389+00:00"
+        }
+      ],
+      "detaljer": [
+        "Muse er gratis for de fleste brugere, med betalte abonnementer på vej for dem, der vil have mere.",
+        "Assistenten kan selv udfylde formularer, shoppe online, sende mails og planlægge ture.",
+        "Muse fortsætter med at arbejde i baggrunden, også når appen er lukket.",
+        "Den lanceres i USA på iOS, Android og hjemmesiden muse.ai.",
+        "En sikkerheds-AI-agent kaldet Sentinel overvåger Muse for at forhindre uautoriseret internetadgang.",
+        "Meta lover, at brugerne kan fravælge, at deres data bruges til træning af AI-modeller.",
+        "Konkurrenter som OpenAI, Anthropic og Google har lignende assistenter, men Meta fokuserer på brugervenlighed."
+      ],
+      "betydning": "Muse kan klare dine tidkrævende opgaver, men du skal stole på Meta med dine data.",
+      "pointer": [
+        "Meta lancerer gratis AI-assistent Muse i USA.",
+        "Muse kan shoppe, skrive mails og planlægge rejser.",
+        "Den minder om produkter fra OpenAI og Google.",
+        "Meta satser på brugervenlighed og privatliv for at vinde brugere."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Meta lancerer AI-assistenten Muse, der kan shoppe, skrive mails og planlægge rejser – gratis for de fleste, først i USA.",
+        "forbehold": "Kun annonceret til USA; kapacitet og adgang i andre lande er uafklaret.",
+        "emne": "meta-muse"
+      },
+      "prio": 7,
+      "side": "artikel/f903c700664042a3.html",
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
     {
       "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
       "link": "https://openai.com/index/cognition-devin-testing-with-astra",
@@ -137,98 +421,6 @@
       "side": "artikel/031421652db5e34f.html"
     },
     {
-      "titel": "Suno releases its first AI music model made with record industry help",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "resume": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed […]",
-      "dato": "2026-09-09T21:42:19+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-09T23:28:16.094724+00:00",
-      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
-      "rubrik": "Suno ruller v6 ud med tre modeller",
-      "resume_da": "Suno lancerer AI-musikmodellen v6 i tre varianter, trænet med licenseret data fra Warner Music Group, BMG og Believe. The Verge finder bedre genreforståelse, men stadig ingen naturlige ufuldkommenheder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Tre modeller, én gratis",
-          "tekst": "Suno udgiver **v6** i tre varianter: v6, **v6-wild** og **v6-mini**. Mini er gratis for alle og er ifølge Suno rettet mod hurtig, ressourcelet skabelse. Ifølge The Verge giver mini simplere resultater med flere artefakter, der røber AI-oprindelsen. Wild skal være mere uforudsigelig og er ifølge Suno designet til “happy accidents and natural imperfections”, men The Verge kunne i begrænset test ikke skelne den tydeligt fra standardmodellen."
-        },
-        {
-          "overskrift": "Trænet med licenseret data",
-          "tekst": "Ifølge Sunos Jack Brody er v6 “trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on”. Datasættet omfatter licenseret indhold fra **Warner Music Group**, **BMG** og **Believe** samt “user data”. Det er uklart, om v6 dermed helt er fri for tvivlsomt materiale. Licensaftalerne bør ikke læses som bevis på ophavsretlig renhed for hele modellen."
-        },
-        {
-          "overskrift": "Redigering i chat",
-          "tekst": "v6 tilføjer funktioner, der ændrer arbejdsgangen. Brugere kan redigere dele af en sang med almindeligt sprog i en chat, og enkelte elementer som en guitarlinje eller en enkelt tekstlinje kan ændres uden at generere hele nummeret igen. v6 kan også kombinere elementer fra brugerens egen Suno-samling til nye kreationer. Prompts er ikke længere kun tekst: modellen kan skabe numre ud fra billeder, video eller anden lyd."
-        },
-        {
-          "overskrift": "Rammer genrer, ikke skævhed",
-          "tekst": "The Verge testede v6 med ældre prompts inden for “hyperpop” og “krautrock”, som tidligere modeller ramte ved siden af. v6 ramte ifølge anmeldelsen alle de overfladiske kendetegn ved genrerne. Til gengæld lykkedes det ikke at få ude-af-takt-, falsk- eller let dissonante resultater; modellen leverer ifølge The Verge fortsat harmonisk og rytmisk perfektion. Beskeder som “monotone vocals” og “no drums” blev ignoreret."
-        },
-        {
-          "overskrift": "Fortsat AI-artefakter",
-          "tekst": "Selv om v6 ikke leverer naturlige ufuldkommenheder, bærer den ifølge The Verge stadig AI-musikkens unaturlige artefakter. Vokaler synes at producere flere hårdkantede artefakter end v5. Suno siger, at tidligere modeller på sigt udfases. v6 begynder at rulle ud i dag."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "3",
-          "label": "modeller: v6, v6-wild og v6-mini"
-        },
-        {
-          "tal": "3",
-          "label": "licenspartnere: Warner Music Group, BMG og Believe"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-          "kilde": "TechCrunch AI",
-          "rubrik": "Suno v6: egen model på licenseret musik",
-          "resume_da": "Suno lancerer modelserien v6, som ifølge selskabet selv er trænet på licenseret data. Ældre modeller udfases, mens flere retssager fortsat verserer.",
-          "foerst_set": "2026-09-09T13:51:27.769975+00:00"
-        }
-      ],
-      "detaljer": [
-        "v6-mini er gratis og rettet mod hurtig, ressourcelet skabelse",
-        "The Verge kunne i begrænset test ikke skelne v6-wild klart fra v6",
-        "Prompts kan nu bygge på billede, video eller anden lyd",
-        "Enkelte elementer kan ændres uden at hele nummeret regenereres",
-        "Suno planlægger på sigt at udfase tidligere modeller"
-      ],
-      "betydning": "Suno får med licensaftalerne et mere dokumenterbart datagrundlag for v6, men det er uafklaret, om hele træningssættet er ryddet.",
-      "pointer": [
-        "v6 kommer i tre varianter, kun mini er gratis",
-        "Trænet på licenseret data og brugerdata",
-        "Rammer genrer bedre, men uden naturlige ufuldkommenheder"
-      ],
-      "billedmotiv": "En guitar og en mikrofon stablet oven på en bunke kontrakter, med et bånd fra en kassetteoptager snoet om halsen på guitarhalsen.",
-      "billede": "data/img/b253db15b0551ed9.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Suno v6 er første musikmodel trænet med licenseret pladeselskabsdata og kan skabe sange fra billeder og video.",
-        "forbehold": "Ingen uafhængige vurderinger af lydkvalitet; detaljer om licensaftaler mangler.",
-        "emne": "suno v6"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 7,
-      "side": "artikel/65f77bd4eb92a797.html",
-      "redaktoer_opgave_id": "45dae1761f72eeb5",
-      "redaktoer_kilder": []
-    },
-    {
       "titel": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
       "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "resume": "",
@@ -259,93 +451,6 @@
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 6
-    },
-    {
-      "titel": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-      "resume": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image […]",
-      "dato": "2026-09-08T20:16:09+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "rubrik": "OpenAI opdaterer ChatGPT-billeder med Sketch",
-      "resume_da": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Tegn selv prompten",
-          "tekst": "OpenAI har annonceret ChatGPT Images 2.5 og tilføjet funktionen **Sketch**. Ved at skrive @Sketch i chatfeltet åbner et lille tegnevindue, hvor du kan lave en skitse, som ChatGPT derefter bruger som del af prompten. Ifølge The Verges journalist, der testede funktionen kort, blev en dårlig musetegnet kat til et realistisk billede efter instruktioner."
-        },
-        {
-          "overskrift": "Kommenter på billedet",
-          "tekst": "En anden nyhed er, at du nu kan sætte kommentarer direkte på dele af et billede, du vil have ændret. The Verges journalist brugte det til at gøre kattens øjne grønne i stedet for blå. Det gør redigering mere målrettet end en løs tekstbeskrivelse af, hvad der skal justeres."
-        },
-        {
-          "overskrift": "Hurtigere og bedre lys",
-          "tekst": "OpenAI oplyser, at ChatGPT Images 2.5 giver billeder med “mere naturligt lys og rigere teksturer”, er bedre til at følge redigeringsinstruktioner “over flere ture”, og at latenstiden ved billedgenerering er reduceret med “op til 50% sammenlignet med Images 2.0”. Det er producentens egne påstande, ikke uafhængige målinger."
-        },
-        {
-          "overskrift": "Tilgængelig nu",
-          "tekst": "Ifølge OpenAI er ChatGPT Images 2.5 tilgængelig nu for brugere af ChatGPT, ChatGPT Work og Codex på desktop, mobil og web. The Verge har ikke oplyst priser eller eventuelle begrænsninger i adgangen ud over, at funktionerne er udrullet."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "op til 50%",
-          "label": "lavere latenstid ved billedgenerering end Images 2.0 ifølge OpenAI"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
-          "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
-          "resume_da": "Værktøjet gør dine skitser og fotos til flottere billeder. Det er en opgradering af billedgeneratoren i ChatGPT.",
-          "foerst_set": "2026-09-08T21:21:14.645089+00:00"
-        },
-        {
-          "kilde": "Simon Willison AI",
-          "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-          "rubrik": "OpenAI klar med nye billedmodeller",
-          "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
-          "foerst_set": "2026-09-11T14:38:09.387448+00:00"
-        }
-      ],
-      "detaljer": [
-        "Sketch aktiveres ved at skrive @Sketch i chatfeltet",
-        "Funktionen lader dig tegne direkte i ChatGPT som del af prompten",
-        "Du kan kommentere på dele af et billede for at få dem ændret",
-        "OpenAI kalder selv påstandene om lys, tekstur og redigering for forbedringer"
-      ],
-      "betydning": "Hvis OpenAIs påstande holder, bliver det lettere at styre billedgenerering med en skitse og målrettede kommentarer i stedet for lange tekstprompter.",
-      "pointer": [
-        "Sketch lader dig tegne oplægget til et AI-billede",
-        "ChatGPT Images 2.5 er ude nu ifølge OpenAI",
-        "Du kan kommentere direkte på billeder for at ændre dem"
-      ],
-      "billedmotiv": "En farveblyanttegning af et harmløst hus, nøje udført på et stykke papir, forvandles langsomt til en fotorealistisk miniature-model af samme hus.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI annoncerer ChatGPT Images 2.5 med Sketch: tegn en doodle og få et detaljeret AI-billede i ChatGPT.",
-        "forbehold": "Ingen uafhængige tests eller begrænsninger er dokumenteret i materialet.",
-        "emne": "chatgpt-images-2-5"
-      },
-      "prio": 7,
-      "side": "artikel/41a7f2063622334b.html",
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc"
     },
     {
       "titel": "Anthropic spent this week in hot water over cybersecurity",
@@ -429,111 +534,6 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 6,
       "side": "artikel/3409c3c31dfa6b1f.html"
-    },
-    {
-      "titel": "Meta bets on AI agent Muse to catch up in AI race",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "resume": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up […]",
-      "dato": "2026-09-08T19:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
-      "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Det er sket",
-          "tekst": "Meta har præsenteret Muse, en personlig AI-assistent, som skal hjælpe almindelige mennesker med hverdagsopgaver som at shoppe på nettet, skrive mails og planlægge rejser. Assistenten kan selv åbne en browser, udfylde formularer og endda forhandle på dine vegne – og fortsætter arbejdet, selv efter du lukker appen. Muse lanceres først i USA på iOS, Android og muse.ai, og AI-briller er på vej."
-        },
-        {
-          "overskrift": "Sådan skiller den sig ud",
-          "tekst": "Muse er gratis for de fleste, men Meta nævner, at der kan komme betalte abonnementer for dem, der vil have mere. Det store salgsargument er brugervenlighed: 'Ingen teknisk erfaring nødvendig, ingen læringskurve,' siger Meta. Du kan chatte med Muse via appen eller WhatsApp, og den husker detaljer, du kun nævner én gang, så den kan komme med uopfordrede forslag."
-        },
-        {
-          "overskrift": "Privatliv og sikkerhed",
-          "tekst": "Meta lover, at du kan fravælge, at dine samtaler med Muse bruges til at træne deres AI-modeller, og du kan bede den 'glemme' ting, den har lært om dig. Muse kører på en virtuel computer i skyen, hvor den ikke kan se dine adgangskoder eller betalingsoplysninger. En anden AI-agent, Sentinel, holder øje med, at intet når internettet uden godkendelse."
-        },
-        {
-          "overskrift": "Historien bag",
-          "tekst": "Muse er kernen i Metas nye AI-strategi efter at have brugt milliarder på en omlægning. Men Meta har haft problemer med tillid: en støtte-chatbot hjalp hackere med at overtage over 20.000 Instagram-konti, og en AI-genereret nyhedsstrøm brød virksomhedens egne regler. Konkurrenter som OpenAI og Google har lignende produkter, men Meta satser på, at Muse er nemmere at bruge."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
-          "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
-          "resume_da": "Meta introducerer AI-assistenten Muse, der kan booke rejser og betale regninger. Spørgsmålet er, om brugerne vil stole på den.",
-          "foerst_set": "2026-09-08T21:21:14.645089+00:00"
-        },
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://ai.meta.com/muse/",
-          "rubrik": "Meta lancerer Muse – en personlig AI-assistent",
-          "resume_da": "Muse er Metas nye AI-assistent, der skal hjælpe dig i hverdagen. Den er stadig i udvikling, men viser, at Meta satser på at gøre AI mere personlig.",
-          "foerst_set": "2026-09-09T05:10:35.081158+00:00"
-        },
-        {
-          "kilde": "Hacker News: AI",
-          "link": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
-          "rubrik": "Bandet Muse mister navn til Metas nye AI",
-          "resume_da": "Det britiske rockband Muse måtte afgive sine profiler på sociale medier til Metas AI-agent, der også hedder Muse. Bandet stod uden navn.",
-          "foerst_set": "2026-09-10T05:12:15.577694+00:00"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-          "rubrik": "Metas nye AI-app Muse er nummer to i USA",
-          "resume_da": "Muse er en AI-assistent, der hjælper med indkøb og mails. Den vokser langsommere end Metas andre apps.",
-          "foerst_set": "2026-09-10T21:07:39.020467+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-          "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
-          "resume_da": "Metas nye AI-assistent Muse klarer praktiske opgaver, men samler overraskende personlige oplysninger om dig.",
-          "foerst_set": "2026-09-10T17:49:16.718389+00:00"
-        }
-      ],
-      "detaljer": [
-        "Muse er gratis for de fleste brugere, med betalte abonnementer på vej for dem, der vil have mere.",
-        "Assistenten kan selv udfylde formularer, shoppe online, sende mails og planlægge ture.",
-        "Muse fortsætter med at arbejde i baggrunden, også når appen er lukket.",
-        "Den lanceres i USA på iOS, Android og hjemmesiden muse.ai.",
-        "En sikkerheds-AI-agent kaldet Sentinel overvåger Muse for at forhindre uautoriseret internetadgang.",
-        "Meta lover, at brugerne kan fravælge, at deres data bruges til træning af AI-modeller.",
-        "Konkurrenter som OpenAI, Anthropic og Google har lignende assistenter, men Meta fokuserer på brugervenlighed."
-      ],
-      "betydning": "Muse kan klare dine tidkrævende opgaver, men du skal stole på Meta med dine data.",
-      "pointer": [
-        "Meta lancerer gratis AI-assistent Muse i USA.",
-        "Muse kan shoppe, skrive mails og planlægge rejser.",
-        "Den minder om produkter fra OpenAI og Google.",
-        "Meta satser på brugervenlighed og privatliv for at vinde brugere."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Meta lancerer AI-assistenten Muse, der kan shoppe, skrive mails og planlægge rejser – gratis for de fleste, først i USA.",
-        "forbehold": "Kun annonceret til USA; kapacitet og adgang i andre lande er uafklaret.",
-        "emne": "meta-muse"
-      },
-      "prio": 7,
-      "side": "artikel/f903c700664042a3.html",
-      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "AI agents are flooding public services with new requests",
@@ -982,6 +982,49 @@
       "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
       "rubrik": "OpenAI løser Navier-Stokes med 10.000 agenter",
       "resume_da": "OpenAI hævder at have løst Navier-Stokes på 88 timer med 10.000 agenter. Matematikere reagerer med bekymring over rivalisering og manglende gennemsigtighed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "OpenAI's gennembrud",
+          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
+        },
+        {
+          "overskrift": "Konflikt med matematikere",
+          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
+        },
+        {
+          "overskrift": "OpenAI afviser beskyldninger",
+          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "88 timer",
+          "label": "tid til at finde en løsning ifølge OpenAI"
+        },
+        {
+          "tal": "10.000",
+          "label": "agenter brugt af OpenAI"
+        },
+        {
+          "tal": "1 mio. dollars",
+          "label": "dusør per Millennium Prize-problem"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
+        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
+        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
+        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
+        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
+      ],
+      "betydning": "",
+      "pointer": [
+        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
+        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
+        "Beskyldninger om data brugt uden klare svar fra OpenAI."
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -999,51 +1042,8 @@
         "emne": "openai matematikgennembrud"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "OpenAI's gennembrud",
-          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
-        },
-        {
-          "overskrift": "Konflikt med matematikere",
-          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
-        },
-        {
-          "overskrift": "OpenAI afviser beskyldninger",
-          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "88 timer",
-          "label": "tid til at finde en løsning ifølge OpenAI"
-        },
-        {
-          "tal": "10.000",
-          "label": "agenter brugt af OpenAI"
-        },
-        {
-          "tal": "1 mio. dollars",
-          "label": "dusør per Millennium Prize-problem"
-        }
-      ],
-      "detaljer": [
-        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
-        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
-        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
-        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
-        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
-        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
-        "Beskyldninger om data brugt uden klare svar fra OpenAI."
-      ],
       "brief_instruks": "748464c0b45c6acc",
+      "prio": 5,
       "side": "artikel/41bb568b2b6096a5.html"
     },
     {
@@ -1188,73 +1188,6 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 5,
       "side": "artikel/9622d1970698da66.html"
-    },
-    {
-      "titel": "Now everyone can put data to work",
-      "link": "https://openai.com/index/put-data-to-work",
-      "resume": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-      "dato": "2026-09-10T15:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
-      "resume_da": "OpenAI præsenterer en dataagent i ChatGPT Work, der via naturligt sprog kan forbinde virksomhedsdata og bygge interaktive dashboards.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Dataagent i ChatGPT Work",
-          "tekst": "OpenAI har annonceret en ny funktion kaldet Data agent i ChatGPT Work. Ifølge OpenAI kan den forbinde virksomhedsdata, finde indsigter og bygge interaktive dashboards ved hjælp af AI og naturligt sprog. Annoncen er formuleret som en bred tilgængelighed, men kilden dokumenterer ikke pris, adgang eller test."
-        },
-        {
-          "overskrift": "Naturligt sprog som grænseflade",
-          "tekst": "Det bærende element er, at brugeren skal kunne arbejde med data gennem almindeligt sprog i stedet for manuel opsætning. Ifølge OpenAI dækker funktionen både at koble data til, udlede indsigter og sammensætte interaktive dashboards. Der er ikke oplyst tekniske begrænsninger, integrationsomfang eller hvilke datakilder der understøttes."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-          "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
-          "resume_da": "Løsningen kombinerer indbyggede finansdata med GPT-6 Astra til research, modellering og klientklart materiale. Adgang og priser fremgår ikke af uddraget.",
-          "foerst_set": "2026-09-10T21:07:39.020467+00:00"
-        }
-      ],
-      "detaljer": [
-        "Produktnavn: ChatGPT Work",
-        "Funktionsnavn: Data agent",
-        "Kan forbinde virksomhedsdata ifølge OpenAI",
-        "Kan bygge interaktive dashboards ifølge OpenAI",
-        "Styres med naturligt sprog ifølge OpenAI"
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI annoncerer Data agent i ChatGPT Work",
-        "Skal forbinde data og bygge dashboards via naturligt sprog",
-        "Kilden oplyser ikke pris, adgang eller test"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI tilføjer Data-agent i ChatGPT Work, der kobler virksomhedsdata på og bygger dashboards via naturligt sprog.",
-        "forbehold": "Ingen uafhængig test af datakilder, sikkerhed eller nøjagtighed.",
-        "emne": "openai, chatgpt work, data-agent"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 6,
-      "side": "artikel/d86fa96aa31ae332.html"
     },
     {
       "titel": "Students who use AI generally score worse at school",
@@ -1464,7 +1397,7 @@
       "dato": "2026-09-10T00:00:00+00:00",
       "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
+      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
       "eget_foerst_set": "2026-09-10T21:07:39.020467+00:00",
       "rubrik": "OpenAI lancerer Agents API",
       "resume_da": "OpenAI præsenterer en administreret tjeneste til at bygge og lancere cloudagenter, baseret på Codex-harnesset.",
@@ -1512,6 +1445,15 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "brief_instruks": "748464c0b45c6acc",
       "prio": 6,
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/put-data-to-work",
+          "rubrik": "OpenAI lancerer Data agent i ChatGPT Work",
+          "resume_da": "OpenAI præsenterer en dataagent i ChatGPT Work, der via naturligt sprog kan forbinde virksomhedsdata og bygge interaktive dashboards.",
+          "foerst_set": "2026-09-10T17:49:16.718389+00:00"
+        }
+      ],
       "side": "artikel/96db0e24a08a20fe.html"
     },
     {
@@ -2094,63 +2036,6 @@
       "prio": 6
     },
     {
-      "titel": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "resume": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-      "dato": "2026-09-08T14:00:15+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
-      "resume_da": "Google DeepMind præsenterer AlphaGenome Atlas, som kortlægger de molekylære effekter af 9 milliarder enkeltbogstavsvarianter i det menneskelige genom.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AlphaGenome Atlas kortlægger prædiktivt effekter af ni milliarder enkeltbogstavsvariantier i menneskegenomet.",
-        "forbehold": "Kortet er prædiktivt, ikke eksperimentelt bekræftet, ifølge materialet.",
-        "emne": "alphagenome atlas"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Ét bogstav, mange effekter",
-          "tekst": "Ifølge Google DeepMind kortlægger **AlphaGenome Atlas** de molekylære effekter af **9 milliarder** enkeltbogstavsvarianter – altså ændringer af ét enkelt DNA-bogstav ad gangen – i det menneskelige genom. Værktøjet er beskrevet som et forudsigende kort over, hvad hver af disse varianter kan betyde på molekylært niveau. Det er en forudsigelsesmodel, ikke en afprøvet klinisk test."
-        },
-        {
-          "overskrift": "Fra variant til forståelse",
-          "tekst": "Målet er at gøre det lettere at tolke varianter, hvis betydning i dag er uafklaret, ved at forudsige deres molekylære virkning direkte ud fra genomet. Kilden beskriver ikke, hvor præcist kortet er, hvilke celletyper eller væv der dækkes, eller hvordan resultaterne er valideret. Der er heller ikke oplyst adgang, pris eller hvornår data kan tages i brug."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "9 milliarder",
-          "label": "enkeltbogstavsvarianter kortlagt"
-        }
-      ],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [
-        "Google DeepMind præsenterer AlphaGenome Atlas",
-        "Kortet dækker 9 milliarder enkeltbogstavsvarianter",
-        "Forudsiger molekylære effekter af DNA-ændringer"
-      ],
-      "brief_instruks": "748464c0b45c6acc",
-      "side": "artikel/8aaadec7c05e0c22.html"
-    },
-    {
       "titel": "Meta says it’s changing AI suggestions after posing invasive personal questions",
       "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
       "resume": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should […]",
@@ -2411,6 +2296,13 @@
           "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
           "resume_da": "Google DeepMind har lavet et kæmpe AI-katalog, der forudsiger, hvordan ændringer i dit DNA påvirker kroppen – og kan hjælpe forskere med at finde sygdomsårsager.",
           "foerst_set": "2026-09-08T18:02:43.998469+00:00"
+        },
+        {
+          "kilde": "Google DeepMind",
+          "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+          "rubrik": "DeepMind: AlphaGenome Atlas kortlægger 9 milliarder DNA-varianter",
+          "resume_da": "Google DeepMind præsenterer AlphaGenome Atlas, som kortlægger de molekylære effekter af 9 milliarder enkeltbogstavsvarianter i det menneskelige genom.",
+          "foerst_set": "2026-09-08T18:02:43.998469+00:00"
         }
       ],
       "detaljer": [
@@ -2480,6 +2372,70 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
+      "titel": "Datasette 1.0a39 and 0.65.4 security releases",
+      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "resume": "Datasette 1.0a39 and 0.65.4 security releases Today we're releasing two new security patch versions of Datasette: 1.0a39 and 0.65.4 - one for the current alpha series and one for the stable 0.65.x family. These are security fixes which you should apply if you are running a Datasette instance on the public web - in particular if that instance mixes both public and private tables. Following issues…",
+      "dato": "2026-09-11T03:27:16+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
+      "resume_da": "Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "To versioner udgivet",
+          "tekst": "Simon Willison har udgivet **Datasette 1.0a39** og **0.65.4**. Den ene er til den aktuelle alpha-serie, den anden til den stabile 0.65.x-familie. Begge er sikkerhedsrettelser, som ifølge Willison bør installeres, hvis man kører en Datasette-instans offentligt på nettet – især hvis instansen blander både offentlige og private tabeller."
+        },
+        {
+          "overskrift": "Audit med AI-modeller",
+          "tekst": "Efter rapporter fra Sevban Dönmez gennemførte Alex Garcia og Simon Willison en omfattende audit af Datasette ved hjælp af **Claude Fable 5.1**, **GPT-5.6** og **GPT-6 Astra**. De brugte næsten en uge på at samarbejde om og gennemgå rettelserne. Ifølge Willison fandt modellerne meget subtile fejl, og sikkerhedsaudits med frontier-modeller skal fremover indgå i al udvikling."
+        },
+        {
+          "overskrift": "To personer pr. fejl",
+          "tekst": "Arbejdet blev delt i et privat repository. For de fleste fejl skrev den ene person automatiske tests, der fremhævede problemet, mens den anden implementerede rettelsen. På den måde havde to forskellige mennesker øje på hver sag – ud over de kodende agenter, som kørte forskellige modeller."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Udgiver: Simon Willison.",
+        "Fejl rapporteret af Sevban Dönmez.",
+        "Audit og rettelser: Alex Garcia og Simon Willison.",
+        "Auditten brugte Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.",
+        "Rettelserne tog næsten en uge at samarbejde om og gennemgå."
+      ],
+      "betydning": "Kører du en offentlig Datasette-instans med både offentlige og private tabeller, bør du opdatere til en af de to nye versioner.",
+      "pointer": [
+        "Datasette 1.0a39 og 0.65.4 er sikkerhedsrettelser.",
+        "Vigtige ved offentlige instanser med blandede tabeller.",
+        "Audit udført med flere frontier-AI-modeller."
+      ],
+      "billedmotiv": "To små, identiske hængelåse på en rustfri stålwire - den ene låst, den anden åben med nøglen siddende i.",
+      "billede": "data/img/10c584e0244f3391.jpg",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Sikkerhedsopdateringer til Datasette efter audit, hvor AI fandt subtile fejl.",
+        "forbehold": "Få detaljer om sårbarhedernes alvor og angrebsveje.",
+        "emne": "datasette sikkerhed"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc",
+      "prio": 5,
+      "side": "artikel/3b42aec52f1320a9.html"
+    },
+    {
       "titel": "Instacart launches an AI grocery shopping assistant called Clementine",
       "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "resume": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
@@ -2543,70 +2499,6 @@
       "side": "artikel/489fd9472b6bee4b.html",
       "redaktion_instruks": "30b24f5dd9bb0019",
       "brief_instruks": "748464c0b45c6acc"
-    },
-    {
-      "titel": "Datasette 1.0a39 and 0.65.4 security releases",
-      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
-      "resume": "Datasette 1.0a39 and 0.65.4 security releases Today we're releasing two new security patch versions of Datasette: 1.0a39 and 0.65.4 - one for the current alpha series and one for the stable 0.65.x family. These are security fixes which you should apply if you are running a Datasette instance on the public web - in particular if that instance mixes both public and private tables. Following issues…",
-      "dato": "2026-09-11T03:27:16+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
-      "resume_da": "Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "To versioner udgivet",
-          "tekst": "Simon Willison har udgivet **Datasette 1.0a39** og **0.65.4**. Den ene er til den aktuelle alpha-serie, den anden til den stabile 0.65.x-familie. Begge er sikkerhedsrettelser, som ifølge Willison bør installeres, hvis man kører en Datasette-instans offentligt på nettet – især hvis instansen blander både offentlige og private tabeller."
-        },
-        {
-          "overskrift": "Audit med AI-modeller",
-          "tekst": "Efter rapporter fra Sevban Dönmez gennemførte Alex Garcia og Simon Willison en omfattende audit af Datasette ved hjælp af **Claude Fable 5.1**, **GPT-5.6** og **GPT-6 Astra**. De brugte næsten en uge på at samarbejde om og gennemgå rettelserne. Ifølge Willison fandt modellerne meget subtile fejl, og sikkerhedsaudits med frontier-modeller skal fremover indgå i al udvikling."
-        },
-        {
-          "overskrift": "To personer pr. fejl",
-          "tekst": "Arbejdet blev delt i et privat repository. For de fleste fejl skrev den ene person automatiske tests, der fremhævede problemet, mens den anden implementerede rettelsen. På den måde havde to forskellige mennesker øje på hver sag – ud over de kodende agenter, som kørte forskellige modeller."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Udgiver: Simon Willison.",
-        "Fejl rapporteret af Sevban Dönmez.",
-        "Audit og rettelser: Alex Garcia og Simon Willison.",
-        "Auditten brugte Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.",
-        "Rettelserne tog næsten en uge at samarbejde om og gennemgå."
-      ],
-      "betydning": "Kører du en offentlig Datasette-instans med både offentlige og private tabeller, bør du opdatere til en af de to nye versioner.",
-      "pointer": [
-        "Datasette 1.0a39 og 0.65.4 er sikkerhedsrettelser.",
-        "Vigtige ved offentlige instanser med blandede tabeller.",
-        "Audit udført med flere frontier-AI-modeller."
-      ],
-      "billedmotiv": "To små, identiske hængelåse på en rustfri stålwire - den ene låst, den anden åben med nøglen siddende i.",
-      "billede": "data/img/10c584e0244f3391.jpg",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Sikkerhedsopdateringer til Datasette efter audit, hvor AI fandt subtile fejl.",
-        "forbehold": "Få detaljer om sårbarhedernes alvor og angrebsveje.",
-        "emne": "datasette sikkerhed"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 5,
-      "side": "artikel/3b42aec52f1320a9.html"
     },
     {
       "titel": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
@@ -3368,6 +3260,36 @@
       "prio": 5
     },
     {
+      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+      "dato": "2026-09-11T20:59:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
+      "resume_da": "Han mener, at de store AI-modeller er trænet på offentlig viden, og derfor bør alle have adgang til dem.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Garry Tan opfordrer amerikanske open-weight-labs til at destillere frontmodeller",
+        "forbehold": "Udtalelse fra investor; ingen konkret model eller vedtaget politik",
+        "emne": "open-weight destillation"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Adobe is trying to make its AI generators idiot-proof in Premiere",
       "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "resume": "Adobe is overhauling how editors interact with AI in its Premiere professional video editing software. Its new Generative Media tool makes it easier to generate video, sound effects, music, and soundscapes without ever leaving the project timeline. The generators themselves aren't entirely new; the big change is how easily you can access them without breaking […]",
@@ -3425,36 +3347,6 @@
       "prio": 6,
       "side": "artikel/926902b984e8d2e0.html",
       "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-      "dato": "2026-09-11T20:59:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Y Combinators Garry Tan vil dele AI-modeller frit",
-      "resume_da": "Han mener, at de store AI-modeller er trænet på offentlig viden, og derfor bør alle have adgang til dem.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Garry Tan opfordrer amerikanske open-weight-labs til at destillere frontmodeller",
-        "forbehold": "Udtalelse fra investor; ingen konkret model eller vedtaget politik",
-        "emne": "open-weight destillation"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "Roundtables: AI’s apocalypse crisis",
@@ -3812,6 +3704,36 @@
       "prio": 4
     },
     {
+      "titel": "Microsoft has new AI privacy rules for schools",
+      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "resume": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of […]",
+      "dato": "2026-09-09T17:07:48+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "rubrik": "Microsoft laver AI-regler for skoler",
+      "resume_da": "Aftalen kommer efter at to skolesystemer forbød elever at bruge AI. Lærernes fagforening AFT er med i aftalen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft indgår aftale med lærerfagforeningen AFT om sikkerheds- og privatlivsprincipper for AI i skoler.",
+        "forbehold": "Princippernes konkrete indhold og håndhævelse er ikke beskrevet.",
+        "emne": "microsoft ai skoler"
+      },
+      "prio": 4,
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
       "titel": "Mistral raises €3B as sovereign AI becomes big business",
       "link": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "resume": "The French AI lab has raised €3 billion at a €21 billion valuation in a Series D round led by Samsung, Scaleup Europe, and PSG Equity.",
@@ -3894,36 +3816,6 @@
           "foerst_set": "2026-09-11T14:38:09.387448+00:00"
         }
       ],
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Microsoft has new AI privacy rules for schools",
-      "link": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
-      "resume": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of […]",
-      "dato": "2026-09-09T17:07:48+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "rubrik": "Microsoft laver AI-regler for skoler",
-      "resume_da": "Aftalen kommer efter at to skolesystemer forbød elever at bruge AI. Lærernes fagforening AFT er med i aftalen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsoft indgår aftale med lærerfagforeningen AFT om sikkerheds- og privatlivsprincipper for AI i skoler.",
-        "forbehold": "Princippernes konkrete indhold og håndhævelse er ikke beskrevet.",
-        "emne": "microsoft ai skoler"
-      },
-      "prio": 4,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -4017,6 +3909,36 @@
       "prio": 4
     },
     {
+      "titel": "Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
+      "link": "https://mistral.ai/news/mistral-x-cloudera/",
+      "resume": "Cloudera and Mistral join forces to bring specialized, sovereign AI intelligence to enterprise data, helping regulated industries innovate on their own terms.",
+      "dato": "2026-09-10T10:42:55+00:00",
+      "kilde": "Mistral AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
+      "resume_da": "De to selskaber vil hjælpe banker og sundhed med AI, der kører på egne data. Målet er at slippe for udenlandsk kontrol.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Cloudera og Mistral indgår partnerskab om suveræn AI på virksomhedsdata til regulerede brancher.",
+        "forbehold": "Ingen oplysninger om hvilke modeller, priser eller tilgængelighed.",
+        "emne": "cloudera mistral partnerskab"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Funding grants for new research into AI and teen development",
       "link": "https://openai.com/index/teen-development-research-grants",
       "resume": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
@@ -4079,36 +4001,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 6,
       "side": "artikel/c34d7a764f86c6e9.html"
-    },
-    {
-      "titel": "Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
-      "link": "https://mistral.ai/news/mistral-x-cloudera/",
-      "resume": "Cloudera and Mistral join forces to bring specialized, sovereign AI intelligence to enterprise data, helping regulated industries innovate on their own terms.",
-      "dato": "2026-09-10T10:42:55+00:00",
-      "kilde": "Mistral AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
-      "resume_da": "De to selskaber vil hjælpe banker og sundhed med AI, der kører på egne data. Målet er at slippe for udenlandsk kontrol.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Cloudera og Mistral indgår partnerskab om suveræn AI på virksomhedsdata til regulerede brancher.",
-        "forbehold": "Ingen oplysninger om hvilke modeller, priser eller tilgængelighed.",
-        "emne": "cloudera mistral partnerskab"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "Anthropic reveals rogue AI agents hate CAPTCHAs, just like you",
@@ -4216,36 +4108,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
-      "titel": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
-      "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
-      "resume": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
-      "dato": "2026-09-08T16:20:31+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
-      "rubrik": "Google Cloud indgår AI-aftale med Accenture",
-      "resume_da": "Aftalen skal hjælpe virksomheder med at bruge Google Cloud's AI. Google satser på teknisk personale tæt på kunderne for at løse problemer med at tage AI i brug.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google Cloud indgår aftale med Accenture og satser på udstationerede teknikere for at få virksomheder i gang med AI.",
-        "forbehold": "Aftalens økonomi og konkrete effekt på udbredelse er ikke oplyst.",
-        "emne": "google-cloud-accenture"
-      },
-      "prio": 5,
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
       "titel": "Apple’s revamped Health app will calculate your ‘health age’ and readiness score",
       "link": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
       "resume": "The update uses Apple Intelligence to make better sense of your health data.",
@@ -4341,6 +4203,36 @@
         "emne": "superintelligens, ai-sikkerhed"
       },
       "prio": 4,
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
+      "titel": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
+      "link": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
+      "resume": "Google Cloud expands its enterprise AI push with Accenture, betting on forward-deployed engineers to drive adoption and overcome deployment bottlenecks.",
+      "dato": "2026-09-08T16:20:31+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
+      "rubrik": "Google Cloud indgår AI-aftale med Accenture",
+      "resume_da": "Aftalen skal hjælpe virksomheder med at bruge Google Cloud's AI. Google satser på teknisk personale tæt på kunderne for at løse problemer med at tage AI i brug.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google Cloud indgår aftale med Accenture og satser på udstationerede teknikere for at få virksomheder i gang med AI.",
+        "forbehold": "Aftalens økonomi og konkrete effekt på udbredelse er ikke oplyst.",
+        "emne": "google-cloud-accenture"
+      },
+      "prio": 5,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -4546,6 +4438,36 @@
       "prio": 4
     },
     {
+      "titel": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "link": "https://huggingface.co/blog/gradio-workflow-1111",
+      "resume": "",
+      "dato": "2026-09-10T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "AUTOMATIC1111 genopbygget med Gradio Workflow",
+      "resume_da": "Projektet genskaber det populære billedværktøj i en ny ramme. Kildekoden ligger åbent på Hugging Face.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Projekt genskaber AUTOMATIC1111 med Gradio Workflow; kode delt åbent på Hugging Face.",
+        "forbehold": "Kun kort beskrivelse uden tekstindhold; ingen uafhængig vurdering.",
+        "emne": "automatic1111 gradio workflow"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
       "link": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "resume": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
@@ -4617,36 +4539,6 @@
       "prio": 4,
       "side": "artikel/95a190e6d2c58c48.html",
       "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "link": "https://huggingface.co/blog/gradio-workflow-1111",
-      "resume": "",
-      "dato": "2026-09-10T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "AUTOMATIC1111 genopbygget med Gradio Workflow",
-      "resume_da": "Projektet genskaber det populære billedværktøj i en ny ramme. Kildekoden ligger åbent på Hugging Face.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Projekt genskaber AUTOMATIC1111 med Gradio Workflow; kode delt åbent på Hugging Face.",
-        "forbehold": "Kun kort beskrivelse uden tekstindhold; ingen uafhængig vurdering.",
-        "emne": "automatic1111 gradio workflow"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "Quoting Terence Tao",
@@ -4789,36 +4681,6 @@
       "side": "artikel/e2dfaa2c905c18fc.html"
     },
     {
-      "titel": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
-      "link": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
-      "resume": "Cymphony gives security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access.",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "rubrik": "Sequoia investerer i Cymphony til AI-sikkerhed",
-      "resume_da": "Cymphony får 25 millioner dollars i ny kapital. Pengene skal bruges til at beskytte virksomheder mod nye farer fra AI-agenter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Cymphony rejser 25 mio. dollar til sikkerhedsstyring af AI-agenter og ikke-menneskelige identiteter i virksomheder.",
-        "forbehold": "Ingen oplysninger om produktets modenhed eller kunder.",
-        "emne": "cymphony ai-agentsikkerhed"
-      },
-      "prio": 4,
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
       "titel": "OpenAI adds a prominent AI doomer to its board of directors",
       "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
       "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
@@ -4855,6 +4717,36 @@
           "foerst_set": "2026-09-09T17:56:17.353477+00:00"
         }
       ],
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
+      "titel": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
+      "link": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
+      "resume": "Cymphony gives security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access.",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "rubrik": "Sequoia investerer i Cymphony til AI-sikkerhed",
+      "resume_da": "Cymphony får 25 millioner dollars i ny kapital. Pengene skal bruges til at beskytte virksomheder mod nye farer fra AI-agenter.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Cymphony rejser 25 mio. dollar til sikkerhedsstyring af AI-agenter og ikke-menneskelige identiteter i virksomheder.",
+        "forbehold": "Ingen oplysninger om produktets modenhed eller kunder.",
+        "emne": "cymphony ai-agentsikkerhed"
+      },
+      "prio": 4,
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
@@ -7576,66 +7468,6 @@
       "prio": 3
     },
     {
-      "titel": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-      "resume": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline.",
-      "dato": "2026-09-11T20:33:18+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
-      "resume_da": "Der er en uge tilbage til at sikre sig et udstillerbord. Antallet er begrænset og kan blive udsolgt før fristen 18. september.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "TechCrunch-frist for udstillerborde; ingen AI-nyhed, kun eventpraktik og salgsfrist 18. september.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt udstilling"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
-    },
-    {
-      "titel": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
-      "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-      "resume": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT.",
-      "dato": "2026-09-11T20:30:17+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
-      "resume_da": "Ansøgninger til officielle Side Events under TechCrunch Disrupt 2026 lukker 11. september kl. 23.59 PT. Arrangementet finder sted i 2026.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Frist for at ansøge om sideevents ved TechCrunch Disrupt 2026; ingen AI-nyhed.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
-    },
-    {
       "titel": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
       "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
       "resume": "Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness, and building businesses.",
@@ -7663,7 +7495,23 @@
         "emne": "techcrunch disrupt, mark wahlberg"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
+      "prio": 1,
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+          "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
+          "resume_da": "Der er en uge tilbage til at sikre sig et udstillerbord. Antallet er begrænset og kan blive udsolgt før fristen 18. september.",
+          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+          "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
+          "resume_da": "Ansøgninger til officielle Side Events under TechCrunch Disrupt 2026 lukker 11. september kl. 23.59 PT. Arrangementet finder sted i 2026.",
+          "foerst_set": "2026-09-11T21:11:45.274854+00:00"
+        }
+      ]
     },
     {
       "titel": "Native is now the future of mobile at Shopify",
@@ -7758,36 +7606,38 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-12T12:07:48.516958+00:00",
+    "beregnet": "2026-09-12T13:53:43.093929+00:00",
     "udvalgte": [
+      "https://openai.com/index/cognition-devin-testing-with-astra",
       "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/"
+      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/"
     ],
     "raekkefoelge": [
-      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
-      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "https://openai.com/index/cognition-devin-testing-with-astra",
+      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
       "https://openai.com/index/expanding-ai-access-us-government",
       "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
       "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
       "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
       "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
-      "https://openai.com/index/put-data-to-work",
       "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
       "https://simonwillison.net/2026/Sep/10/calif-research/",
       "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
       "https://openai.com/index/introducing-the-agents-api",
       "https://techcrunch.com/2026/09/09/viral-ai-assistant-instinct-now-has-its-own-email-address/",
+      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "https://openai.com/index/ai-policy-window",
       "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
       "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
@@ -7795,13 +7645,13 @@
       "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
       "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
       "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-      "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
       "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
       "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
       "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
-      "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
       "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus/",
@@ -7814,38 +7664,38 @@
       "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
       "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
       "https://mistral.ai/news/legacy-code-modernization/",
-      "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
       "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
       "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
       "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
-      "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
       "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
       "https://openai.com/index/scaling-storage-one-billion-users-part-one",
       "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
       "https://blog.google/products-and-platforms/products/gemini/ai-navigate-bureaucracy/",
       "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
-      "https://openai.com/index/teen-development-research-grants",
       "https://mistral.ai/news/mistral-x-cloudera/",
+      "https://openai.com/index/teen-development-research-grants",
       "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
       "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-      "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
       "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
       "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
+      "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
       "https://simonwillison.net/2026/Sep/11/boris-cherny/",
       "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
       "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
       "https://openai.com/index/codex-quantum-computing-experiments",
-      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "https://huggingface.co/blog/gradio-workflow-1111",
+      "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
       "https://simonwillison.net/2026/Sep/9/terence-tao/",
-      "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
       "https://techcrunch.com/podcast/controlais-connor-leahy-on-why-superintelligence-is-not-a-weapon-its-an-adversary/",
-      "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
+      "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
       "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
       "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "https://openai.com/index/the-work-now-within-reach",
       "https://simonwillison.net/2026/Sep/9/blender-viewer/",
@@ -7860,7 +7710,6 @@
       "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
       "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
       "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
-      "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
       "https://openai.com/index/an-alien-mind",
       "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
       "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
@@ -7912,22 +7761,6 @@
       "https://x.ai/news/grok-4-6-github-copilot",
       "https://www.anthropic.com/news/claude-text-watermark"
     ],
-    "ai_vurderet": 153,
-    "metode": "agent",
-    "agent_version": 1,
-    "kontrolleret": true,
-    "data_opdateret": "2026-09-12T12:47:54.116970+00:00",
-    "samlede": {
-      "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help": [],
-      "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/": []
-    },
-    "anbefalede": [
-      "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-      "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/"
-    ]
+    "ai_vurderet": 149
   }
 }
