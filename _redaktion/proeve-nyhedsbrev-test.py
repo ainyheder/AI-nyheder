@@ -59,6 +59,34 @@ class TestMail(unittest.TestCase):
             t['generate'](f['SOURCE'], f['CONFIG'], Path(tmp), ai)
         self.assertEqual(ai.call_count, 6)
 
+    def test_review_retry_preserves_artifact_without_rewriting_letter(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            calls = []
+            def ai(step, prompt, payload):
+                calls.append(step)
+                if step == 'nyhedsbrev':
+                    return f['draft']()
+                attempt = len(calls) - 1
+                saved = json.loads((folder / f'forsog-{attempt}.json').read_text())
+                self.assertEqual(saved['udkast'], payload['udkast'])
+                self.assertEqual(saved['naeste_trin'], 'kontrol')
+                self.assertTrue(saved['fejl'])  # Ikke godkendt før kontrollens svar.
+                if attempt == 1:
+                    raise RuntimeError('Afslutning: length; intet kontrolsvar')
+                return f['REVIEW']
+            result = t['generate'](f['SOURCE'], f['CONFIG'], folder, ai)
+            self.assertEqual(result, f['draft']())
+            self.assertEqual(calls, ['nyhedsbrev', 'nyhedsbrev_kontrol', 'nyhedsbrev_kontrol'])
+            self.assertNotIn('fejl', json.loads((folder / 'forsog-2.json').read_text()))
+
+    def test_technical_control_failures_exhaust_test_budget_without_returning_letter(self):
+        ai = Mock(side_effect=[f['draft']()] + [RuntimeError('Tomt kontrolsvar')] * 3)
+        with tempfile.TemporaryDirectory() as tmp, self.assertRaises(ValueError):
+            t['generate'](f['SOURCE'], f['CONFIG'], Path(tmp), ai)
+        self.assertEqual([c.args[0] for c in ai.call_args_list],
+                         ['nyhedsbrev', 'nyhedsbrev_kontrol', 'nyhedsbrev_kontrol', 'nyhedsbrev_kontrol'])
+
     def test_ascii_apostrophe_is_valid_but_repeated_author_is_not(self):
         draft = f['draft']()
         draft['brev_markdown'] = draft['brev_markdown'].replace('Diamandis’', "Diamandis'")

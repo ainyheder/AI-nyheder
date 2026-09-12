@@ -22,11 +22,17 @@ def generate(source, config, folder, ai=n.ai_call):
     reviewer = (n.ROOT / "opsaetning/nyhedsbrev-kontrol-prompt.md").read_text()
     errors = ""
     previous = None
+    next_step = "skrivning"
     for attempt in range(1, min(config["maks_forsog"], 3) + 1):
-        evidence = {"forsog": attempt, **n.editorial_attempt(source, writer, reviewer, previous, errors, ai)}
+        def save_attempt(result):
+            (folder / f"forsog-{attempt}.json").write_text(json.dumps(
+                {"forsog": attempt, **result}, ensure_ascii=False, indent=2))
+        evidence = n.editorial_attempt(source, writer, reviewer, previous, errors, ai,
+                                       review_only=next_step == "kontrol", checkpoint=save_attempt)
         previous = evidence.get("udkast", previous)
         errors = evidence.get("fejl", "")
-        (folder / f"forsog-{attempt}.json").write_text(json.dumps(evidence, ensure_ascii=False, indent=2))
+        next_step = evidence.get("naeste_trin", "skrivning")
+        save_attempt(evidence)
         if not errors:
             return evidence["udkast"]
     raise ValueError("Testbrevet blev ikke godkendt: " + errors)

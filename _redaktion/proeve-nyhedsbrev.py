@@ -127,10 +127,10 @@ class NewsletterTests(unittest.TestCase):
         self.assertEqual(config["reasoning_effort"], "max")
         with patch.object(crawler, 'hjerne_model', return_value=None), \
              patch.object(crawler, 'hjerne_kald', return_value='{"ok": true}') as call:
-            for step in ('nyhedsbrev', 'nyhedsbrev_kontrol'):
+            for step, budget in (('nyhedsbrev', 32768), ('nyhedsbrev_kontrol', 65536)):
                 self.assertEqual(n.ai_call(step, 'Prompt', {'original': SOURCE}), {'ok': True})
                 self.assertEqual(call.call_args.args[0], step)
-                self.assertEqual(call.call_args.args[3:5], (32768, 'deepseek-flash'))
+                self.assertEqual(call.call_args.args[3:5], (budget, 'deepseek-flash'))
                 self.assertEqual(call.call_args.kwargs, {'reasoning_effort': 'max'})
 
     def run_flow(self, store, api, items=None, writer=ai):
@@ -205,13 +205,72 @@ class NewsletterTests(unittest.TestCase):
 
     def test_malformed_review_is_held_and_repair_keeps_last_draft(self):
         store = Store(); api = API(store)
-        writer = Mock(side_effect=[draft(), None, ValueError("Ugyldig AI-JSON"), draft(), REVIEW])
+        writer = Mock(side_effect=[draft(), None, ValueError("Ugyldig AI-JSON"), REVIEW])
         self.run_flow(store, api, writer=writer)
         revision = writer.call_args_list[3].args[2]
-        self.assertEqual(revision["tidligere_udkast"], draft())
-        self.assertIn("Ugyldig AI-JSON", revision["tidligere_fejl"])
+        self.assertEqual(revision["udkast"], draft())
+        self.assertEqual([c.args[0] for c in writer.call_args_list],
+                         ["nyhedsbrev", "nyhedsbrev_kontrol", "nyhedsbrev_kontrol", "nyhedsbrev_kontrol"])
         self.assertEqual(store.durable["entries"]["new"]["forsog"], 3)
         self.assertEqual(api.sent, 1)
+
+    def test_interrupted_review_resumes_saved_draft_in_fresh_job(self):
+        store = Store(); api = API(store)
+        writer = Mock(side_effect=[draft(), TimeoutError("Kontrollen afbrudt")])
+        with self.assertRaises(TimeoutError):
+            self.run_flow(store, api, writer=writer)
+        saved = store.durable["entries"]["new"]
+        self.assertEqual((saved["forsog"], saved["naeste_trin"]), (1, "kontrol"))
+        self.assertEqual(saved["tidligere_udkast"], draft())
+        self.assertEqual(api.created, 0)
+        fresh = Store(store.durable); api.store = fresh
+        reviewer = Mock(return_value=REVIEW)
+        self.run_flow(fresh, api, writer=reviewer)
+        self.assertEqual(reviewer.call_count, 1)
+        self.assertEqual(reviewer.call_args.args[0], "nyhedsbrev_kontrol")
+        self.assertEqual(reviewer.call_args.args[2]["udkast"], draft())
+        self.assertEqual(api.sent, 1)
+
+    def test_repeated_technical_review_failures_do_not_rewrite_or_reset_budget(self):
+        import crawler
+        store = Store(); api = API(store)
+        writer = Mock(side_effect=[draft()] + [crawler.DeepSeekSvarFejl("Afslutning: length")] * 3)
+        for _ in range(4):
+            with self.assertRaises(ValueError):
+                self.run_flow(store, api, writer=writer)
+        self.assertEqual([c.args[0] for c in writer.call_args_list],
+                         ["nyhedsbrev", "nyhedsbrev_kontrol", "nyhedsbrev_kontrol", "nyhedsbrev_kontrol"])
+        self.assertEqual(store.durable["entries"]["new"]["forsog"], 3)
+        self.assertEqual((api.created, api.sent), (0, 0))
+
+    def test_review_retry_still_rewrites_after_substantive_rejection(self):
+        store = Store(); api = API(store)
+        rejected = {**REVIEW, "godkendt": False, "problemer": ["Forkert tal i introen"]}
+        writer = Mock(side_effect=[draft(), RuntimeError("Tomt kontrolsvar"), rejected, draft(), REVIEW])
+        self.run_flow(store, api, writer=writer)
+        self.assertEqual([c.args[0] for c in writer.call_args_list],
+                         ["nyhedsbrev", "nyhedsbrev_kontrol", "nyhedsbrev_kontrol", "nyhedsbrev", "nyhedsbrev_kontrol"])
+        revision = writer.call_args_list[3].args[2]
+        self.assertEqual(revision["tidligere_udkast"], draft())
+        self.assertIn("Forkert tal", revision["tidligere_fejl"])
+        self.assertEqual(api.sent, 1)
+
+    def test_invalid_draft_cannot_skip_writing_after_review_failure(self):
+        store = Store(); api = API(store)
+        invalid = draft(); invalid["brev_markdown"] += "\n\nDiamandis igen."
+        writer = Mock(side_effect=[invalid, RuntimeError("Tomt kontrolsvar"), draft(), REVIEW])
+        self.run_flow(store, api, writer=writer)
+        self.assertEqual(writer.call_args_list[2].args[0], "nyhedsbrev")
+        self.assertIn("Kreditering", writer.call_args_list[2].args[2]["tidligere_fejl"])
+        self.assertEqual(api.sent, 1)
+
+    def test_review_resume_revalidates_source_metadata(self):
+        changed = {**SOURCE, "titel": "Ny kildetitel"}
+        writer = Mock(side_effect=[draft(changed), REVIEW])
+        result = n.editorial_attempt(changed, "Writer", "Reviewer", draft(), ai=writer, review_only=True)
+        self.assertEqual(writer.call_args_list[0].args[0], "nyhedsbrev")
+        self.assertIn("metadata", writer.call_args_list[0].args[2]["tidligere_fejl"])
+        self.assertNotIn("fejl", result)
 
     def test_checkpoint_failure_prevents_external_creation_or_send(self):
         for status, expected_creates in (("opretter", 0), ("sender", 1)):

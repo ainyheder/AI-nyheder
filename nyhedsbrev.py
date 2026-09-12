@@ -166,9 +166,19 @@ def validate_draft(draft, source):
     return draft
 
 
-def validate_review(review):
+def validate_review_format(review):
+    """Et manglende/ødelagt kontrolsvar er ikke en afvisning af teksten."""
     fields = ("godkendt", "fuld_kilde", "faktuel_troskab", "selvstaendig", "laesevaerdi")
-    if not isinstance(review, dict) or any(review.get(f) is not True for f in fields) or review.get("problemer") != []:
+    if (not isinstance(review, dict) or any(type(review.get(f)) is not bool for f in fields)
+            or not isinstance(review.get("problemer"), list)
+            or any(not isinstance(problem, str) for problem in review["problemer"])):
+        raise ValueError("Kvalitetskontrollen returnerede ikke et komplet kontrolsvar")
+
+
+def validate_review(review):
+    validate_review_format(review)
+    fields = ("godkendt", "fuld_kilde", "faktuel_troskab", "selvstaendig", "laesevaerdi")
+    if any(review[f] is not True for f in fields) or review["problemer"] != []:
         raise ValueError("Kvalitetskontrollen afviste brevet")
 
 
@@ -411,30 +421,56 @@ def ai_call(step, prompt, payload):
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
     model = crawler.hjerne_model(step) or config["model"]
     effort = crawler.DEEPSEEK_REASONING
+    # Den første liveprøve brugte alle 32K på kontrollens tænkning uden et svar.
+    # Giv kildekontrollen 64K; skriverens gennemførte svar brugte ca. 21K.
+    token_limit = 65536 if step == "nyhedsbrev_kontrol" else 32768
     print("AI-trin " + step + ": valgt model " + model
-          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else ""), flush=True)
+          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else "")
+          + " · tokenloft: " + str(token_limit), flush=True)
     # Samme Flash-model, med maksimal tænkning til den lange tekst/kildekontrol.
     # Tokenloftet omfatter også tænkning. Rå reasoning_content gemmes ikke.
     return crawler.parse_json_objekt(crawler.hjerne_kald(step, prompt, json.dumps(payload, ensure_ascii=False),
-                                                       32768, config["model"], reasoning_effort=effort))
+                                                       token_limit, config["model"], reasoning_effort=effort))
 
 
-def editorial_attempt(source, writer_prompt, review_prompt, previous=None, errors="", ai=ai_call):
+def editorial_attempt(source, writer_prompt, review_prompt, previous=None, errors="", ai=ai_call,
+                      *, review_only=False, checkpoint=None):
     """Ét skrive- og kontrolforsøg, fælles for Gmail-prøven og daglig drift."""
-    result = {}
+    result = {"naeste_trin": "skrivning"}
     failures = []
-    try:
-        draft = ai("nyhedsbrev", writer_prompt,
-                   {"original": source, "tidligere_udkast": previous, "tidligere_fejl": errors})
-        result["udkast"] = draft
+    if review_only:
         try:
-            validate_draft(draft, source)
+            validate_draft(previous, source)
         except ValueError as exc:
-            failures.append(str(exc))
+            # Fx en ændret kilde: et gammelt udkast må ikke springe validering over.
+            review_only = False
+            errors += "\n" + str(exc)
+    try:
+        if review_only:
+            print("Genoptager kvalitetskontrollen af det gemte udkast", flush=True)
+            draft = previous
+        else:
+            draft = ai("nyhedsbrev", writer_prompt,
+                       {"original": source, "tidligere_udkast": previous, "tidligere_fejl": errors})
+        result["udkast"] = draft
+    except (ValueError, RuntimeError) as exc:
+        return {**result, "fejl": str(exc)}
+    try:
+        validate_draft(draft, source)
+        result["naeste_trin"] = "kontrol"
+    except ValueError as exc:
+        failures.append(str(exc))
+    # Gem teksten FØR det lange kontrolkald, også ved timeout eller annullering.
+    if checkpoint:
+        checkpoint({**result, "fejl": "\n".join(failures) or "Kvalitetskontrollen er ikke afsluttet"})
+    try:
         # Indholdskritik må ikke skjules af fx en forkert kreditering.
         review = ai("nyhedsbrev_kontrol", review_prompt,
                     {"original": source, "skriveinstruks": writer_prompt, "udkast": draft})
+        validate_review_format(review)
         result["kontrol"] = review
+        # Et reelt kontrolsvar skal følges af rettelser, hvis teksten afvises.
+        result["naeste_trin"] = "skrivning"
         try:
             validate_review(review)
         except ValueError as exc:
@@ -446,6 +482,8 @@ def editorial_attempt(source, writer_prompt, review_prompt, previous=None, error
         failures.append(str(exc))
     if failures:
         result["fejl"] = "\n".join(failures)
+    else:
+        result.pop("naeste_trin", None)
     return result
 
 
@@ -493,22 +531,28 @@ def process(items, config, store, api, ai=ai_call):
             if len(source["tekst"].split()) < 450 or "diamandis" not in source["forfatter"].lower():
                 attention.append(entry["titel"])
                 continue
+            def save_attempt(result):
+                if "udkast" in result:
+                    entry["tidligere_udkast"] = result["udkast"]
+                if "kontrol" in result:
+                    entry["kontrol"] = result["kontrol"]
+                entry["fejl"] = result.get("fejl", "")
+                entry["naeste_trin"] = result.get("naeste_trin", "skrivning")
+                if not entry["fejl"]:
+                    entry.update(draft=result["udkast"], status="illustrerer")
+                    entry.pop("tidligere_udkast", None)
+                    entry.pop("naeste_trin", None)
+                store.save()
             while entry["forsog"] < limit and entry["status"] == "venter":
                 entry["forsog"] += 1
                 entry.pop("kontrol", None)
                 # Budget og tidligere tekst overlever også en afbrudt kørsel.
                 store.save()
                 result = editorial_attempt(source, writer_prompt, review_prompt,
-                                           entry.get("tidligere_udkast"), entry.get("fejl", ""), ai)
-                if "udkast" in result:
-                    entry["tidligere_udkast"] = result["udkast"]
-                if "kontrol" in result:
-                    entry["kontrol"] = result["kontrol"]
-                entry["fejl"] = result.get("fejl", "")
-                if not entry["fejl"]:
-                    entry.update(draft=result["udkast"], status="illustrerer")
-                    entry.pop("tidligere_udkast", None)
-                store.save()
+                                           entry.get("tidligere_udkast"), entry.get("fejl", ""), ai,
+                                           review_only=entry.get("naeste_trin") == "kontrol",
+                                           checkpoint=save_attempt)
+                save_attempt(result)
             if entry["status"] == "venter":
                 attention.append(entry["titel"])
                 continue

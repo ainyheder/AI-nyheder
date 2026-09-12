@@ -1,5 +1,29 @@
 # Nyhedsbrev — drift
 
+## Aktuel teststatus — prøve 10
+
+[Kørsel 34704214872](https://github.com/ainyheder/AI-nyheder/actions/runs/34704214872)
+på `7f17aa9` bestod de tekniske tests og den rigtige BiRefNet-prøve på GitHub.
+RSS2JSON leverede hele brevet “AI Is About to Break Settled Science” fra
+10. september. Skriveren brugte 20.618 outputtokens, heraf 17.058 til tænkning,
+og afleverede et JSON-udkast. Kontrollen brugte alle 32.768 på tænkning og
+stoppede med `finish_reason=length` og nul synlige tegn. Det var en teknisk
+fejl, ikke en redaktionel afvisning. Forsøget blev annulleret under den
+unødvendige genskrivning. Ingen illustrationer eller testmail blev sendt.
+
+Kontrollens loft er nu 65.536; Flash og max reasoning er bevaret. Et teknisk
+kontrolsvigt genprøver samme validerede udkast. En rigtig afvisning sender
+fortsat teksten og kritikken til skriveren. Højst tre redaktionsrunder i alt,
+og udkast, næste trin og forbrugt forsøgsbudget gemmes før det lange kontrolkald.
+37 nyhedsbrevstests, 8 Gmail-tests og 83 modelvalgskontroller bestod lokalt.
+En ny GitHub-kørsel skal fortsat bevise AI-kvalitet, illustrationer og udsendelse.
+
+Feedets aktualitet har en begrænsning: Det direkte feed viste allerede
+“What’s Your Moonshot?” fra 12. september kl. 15.01 UTC, mens RSS2JSON stadig
+viste brevet fra den 10. Direkte RSS blev afvist med 403 på GitHub. Reservens
+forsinkelse er observeret; dens opdateringsinterval er ikke bekræftet. En
+vellykket hentning beviser derfor ikke, at allerførste nye brev er tilgængeligt.
+
 Workflowet `.github/workflows/nyhedsbrev.yml` bliver aktivt efter push til main.
 Det kontrollerer det offentlige https://metatrends.substack.com/feed én gang
 dagligt kl. 18.13 UTC (20.13 dansk sommertid / 19.13 dansk vintertid).
@@ -15,7 +39,10 @@ originalens mail. Vi har ikke adgang til Diamandis’ afsendelsessystem.
 3. Redaktøren skriver med `opsaetning/nyhedsbrev-prompt.md`.
 4. En separat AI-kørsel læser original og udkast med
    `opsaetning/nyhedsbrev-kontrol-prompt.md`. Afviste breve får højst tre
-   skriveforsøg i samme kørsel med tidligere udkast og konkret kritik.
+   redaktionsrunder i samme kørsel med tidligere udkast og konkret kritik.
+   Ved et manglende eller ødelagt kontrolsvar genprøves kun kontrollen af
+   det gemte, formatvaliderede udkast. En indholdsmæssig afvisning giver
+   skriveren teksten og kritikken tilbage. Teksten gemmes før kontrolkaldet.
    Forsøgstælleren gemmes løbende og nulstilles ikke ved genoptagelse.
    Ufuldstændige kilder venter på fuld tekst.
 5. Kun godkendt indhold oprettes som Buttondown-kladde og overdrages til
@@ -24,11 +51,11 @@ originalens mail. Vi har ikke adgang til Diamandis’ afsendelsessystem.
 
 Modellen er som standard `deepseek-flash`. Begge trin kan få egen model og
 instruks i Indstillinger → Modeller & instrukser; valgene gemmes i
-`_redaktion/hjerner.json`. Den eksisterende provider-reserve fra crawleren
-bruges ved modelfejl, og fallback skrives i Actions-loggen. AI-kontrollen er
+`_redaktion/hjerner.json`. Fejl i nyhedsbrevets DeepSeek-kald stopper det
+pågældende trin uden et skjult ekstra kald til en anden model. AI-kontrollen er
 en redaktionel kontrol, ikke et bevis for fejlfrihed eller en juridisk godkendelse.
 
-GitHub-secrets: `DEEPSEEK_API_KEY` (evt. `GEMINI_API_KEY` som reserve) og
+GitHub-secrets: `DEEPSEEK_API_KEY` (evt. `GEMINI_API_KEY` ved et aktivt modelvalg) og
 `BUTTONDOWN_API_KEY`. Ingen nøgler skal i HTML eller git. Crawlerens workflow
 har ikke længere Buttondown-nøglen og udsender ikke fredagsbrevet. Ugesiden
 opdateres fortsat med de syv afsluttede dage.
@@ -256,7 +283,7 @@ at tekstkvaliteten er tilstrækkelig.
 Torben ønsker fortsat Flash og har valgt maksimal tænkning. Nyhedsbrevets
 DeepSeek-kald får `thinking: enabled`, `reasoning_effort: max` med samme
 valgte model. Niveauet står i `opsaetning/nyhedsbrev.json` og logges for begge
-roller. Loftet er 32.768 outputtokens pr. kald til både skriveren og kontrollen,
+roller. Loftet er 32.768 outputtokens til skriveren og 65.536 til kontrollen,
 inklusive tænkning. Tænkning afregnes som output; rå reasoning_content gemmes
 eller vises ikke. Alle crawlerens DeepSeek-kald bruger nu også max (se nedenfor).
 AI-kaldene tillader op til 600 sekunders netværksventetid; workflowet har
