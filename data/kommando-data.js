@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-12T10:53:42.623651+00:00",
+ "genereret": "2026-09-12T11:18:31.899207+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,24 +160,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-12T10:47:40.442658+00:00",
-  "antal": 152,
+  "opdateret": "2026-09-12T11:13:05.623181+00:00",
+  "antal": 153,
   "med_billede": 7,
-  "paa_dansk": 152,
+  "paa_dansk": 153,
   "kategorier": {
    "Lanceringer": 34,
-   "Samfund \u0026 etik": 27,
    "Politik \u0026 jura": 18,
+   "Samfund \u0026 etik": 27,
    "Penge \u0026 marked": 20,
    "Forskning": 29,
-   "Hverdags-AI": 24
+   "Hverdags-AI": 25
   },
   "kilder": {
    "The Verge AI": 18,
    "Simon Willison AI": 12,
    "OpenAI Blog": 18,
    "Hugging Face": 12,
-   "Ars Technica AI": 11,
+   "Ars Technica AI": 12,
    "TechCrunch AI": 36,
    "Google DeepMind": 10,
    "Google Gemini": 8,
@@ -238,7 +238,7 @@ window.KOMMANDO_DATA = {
    },
    {
     "titel": "AI agents are flooding public services with new requests",
-    "rubrik": "AI-klager vælter CFPB og britisk ombudsmand",
+    "rubrik": "AI-agenter oversvømmer offentlige klagesystemer",
     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
     "side": "artikel/9ee5bacda2ce8165.html",
     "kategori": "Samfund \u0026 etik",
@@ -249,13 +249,12 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
-    "titel": "OpenAI agents attacked RubyGems back in May",
-    "rubrik": "OpenAI-agenter bag angreb på RubyGems",
-    "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-    "side": "artikel/5c41fc251a24d093.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-12T00:42:25+00:00",
+    "titel": "I spent $4,000 on a robot dog from China",
+    "rubrik": "Unitree-robot hund koster 4.000 dollar",
+    "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+    "kategori": "Hverdags-AI",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-12T11:00:53+00:00",
     "billede": ""
    },
    {
@@ -267,6 +266,16 @@ window.KOMMANDO_DATA = {
     "kilde": "OpenAI Blog",
     "dato": "2026-09-11T16:00:00+00:00",
     "billede": "data/img/70bf1f3046a8dc5b.webp"
+   },
+   {
+    "titel": "OpenAI agents attacked RubyGems back in May",
+    "rubrik": "OpenAI-agenter bag angreb på RubyGems",
+    "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+    "side": "artikel/5c41fc251a24d093.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-12T00:42:25+00:00",
+    "billede": ""
    },
    {
     "titel": "So you want to use OpenRouter?",
@@ -318,7 +327,7 @@ window.KOMMANDO_DATA = {
    },
    {
     "titel": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
-    "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
+    "rubrik": "New Mexico straffer advokat for ChatGPT-falsknerier",
     "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
     "side": "artikel/9622d1970698da66.html",
     "kategori": "Politik \u0026 jura",
@@ -353,24 +362,15 @@ window.KOMMANDO_DATA = {
     "kilde": "MIT Tech Review AI",
     "dato": "2026-09-11T20:05:06+00:00",
     "billede": ""
-   },
-   {
-    "titel": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
-    "rubrik": "TechCrunch Disrupt udstillerborde udsolgte snart",
-    "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T20:33:18+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-12T10:47:40.442658+00:00",
+  "opdateret": "2026-09-12T11:13:05.623181+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "modelkald": 4,
   "kildehentninger": 8,
   "regelbaseret_udvalg": [
    "https://openai.com/index/cognition-devin-testing-with-astra",
@@ -383,22 +383,6 @@ window.KOMMANDO_DATA = {
    "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
   "vaerktoejer": [
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
    {
     "vaerktoej": "find_kilder",
     "fejl": null
@@ -454,41 +438,41 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "grundlag": "kildetekst"
-   },
-   {
     "link": "https://openai.com/index/cognition-devin-testing-with-astra",
     "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+    "grundlag": "kildetekst"
    },
    {
     "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://ai.meta.com/muse/",
-    "grundlag": "utilgaengelig"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+    "link": "https://suno.com/blog/introducing-v6",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+    "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+    "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
     "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-12T10:47:39.892658+00:00",
+  "opdateret": "2026-09-12T11:13:05.241937+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -705,8 +689,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-12T10:47:40.442658+00:00",
-  "artikler_i_alt": 152,
+  "opdateret": "2026-09-12T11:13:05.623181+00:00",
+  "artikler_i_alt": 153,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1274,6 +1258,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+      "dato": "2026-09-05T23:27:48",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
       "dato": "2026-09-10T00:56:41",
       "foerst_set": "2026-09-11T14:38:09",
@@ -1288,15 +1281,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-11T14:38:09",
       "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
       "side": "artikel/3b42aec52f1320a9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-      "dato": "2026-09-05T23:27:48",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "side": "",
       "hvor": "forside",
       "under": ""
      },
@@ -1472,7 +1456,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
       "side": "",
       "hvor": "under",
-      "under": "ChatGPT-sjusk koster advokat 5.000 dollar"
+      "under": "New Mexico straffer advokat for ChatGPT-falsknerier"
      },
      {
       "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
@@ -1585,7 +1569,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
+    "i_listen": 12,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1598,7 +1582,16 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic-forsker: AI kan slå os alle ihjel"
      },
      {
-      "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
+      "rubrik": "Unitree-robot hund koster 4.000 dollar",
+      "dato": "2026-09-12T11:00:53",
+      "foerst_set": "2026-09-12T11:13:05",
+      "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "New Mexico straffer advokat for ChatGPT-falsknerier",
       "dato": "2026-09-11T19:34:09",
       "foerst_set": "2026-09-11T21:11:45",
       "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
@@ -1684,15 +1677,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-07T16:00:47",
       "link": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
       "side": "artikel/e2dfaa2c905c18fc.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI-agenter diskuterede flugt på åben wiki",
-      "dato": "2026-09-04T22:17:36",
-      "foerst_set": "2026-09-04T23:13:06",
-      "link": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
-      "side": "",
       "hvor": "forside",
       "under": ""
      }
@@ -1790,13 +1774,13 @@ window.KOMMANDO_DATA = {
       "under": "GPT-6 Astra forbedrer Devins egen test"
      },
      {
-      "rubrik": "OpenAI annoncerer ChatGPT til finanssektoren",
+      "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
       "dato": "",
       "foerst_set": "2026-09-10T21:07:39.020467+00:00",
       "link": "https://openai.com/index/introducing-chatgpt-financial-services",
       "side": "",
       "hvor": "under",
-      "under": "GPT-6 Astra forbedrer Devins egen test"
+      "under": "OpenAI lancerer Data agent i ChatGPT Work"
      },
      {
       "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
@@ -2063,7 +2047,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-12T10:53:38.124334+00:00",
+  "opdateret": "2026-09-12T11:18:24.867116+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T10:47:40.442658+00:00",
- "artikler_i_alt": 152,
+ "opdateret": "2026-09-12T11:13:05.623181+00:00",
+ "artikler_i_alt": 153,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -583,6 +583,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+     "dato": "2026-09-05T23:27:48",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
      "dato": "2026-09-10T00:56:41",
      "foerst_set": "2026-09-11T14:38:09",
@@ -597,15 +606,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
      "side": "artikel/3b42aec52f1320a9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-     "dato": "2026-09-05T23:27:48",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -929,7 +929,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
      "side": "",
      "hvor": "under",
-     "under": "ChatGPT-sjusk koster advokat 5.000 dollar"
+     "under": "New Mexico straffer advokat for ChatGPT-falsknerier"
     },
     {
      "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
@@ -1109,7 +1109,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 12,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1122,7 +1122,16 @@ window.KILDER_STATUS = {
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
     },
     {
-     "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
+     "rubrik": "Unitree-robot hund koster 4.000 dollar",
+     "dato": "2026-09-12T11:00:53",
+     "foerst_set": "2026-09-12T11:13:05",
+     "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "New Mexico straffer advokat for ChatGPT-falsknerier",
      "dato": "2026-09-11T19:34:09",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
@@ -1334,13 +1343,13 @@ window.KILDER_STATUS = {
      "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
-     "rubrik": "OpenAI annoncerer ChatGPT til finanssektoren",
+     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
      "dato": "",
      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
      "side": "",
      "hvor": "under",
-     "under": "GPT-6 Astra forbedrer Devins egen test"
+     "under": "OpenAI lancerer Data agent i ChatGPT Work"
     },
     {
      "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
