@@ -1,86 +1,181 @@
 {
- "rubrik": "Skitser, stemmer og agenter giver AI nye roller",
- "indledning": "Periodens store produktnyheder giver nye måder at styre AI på. Samtidig viser Astra og Muse, at modellernes evner og din adgang til dem er to forskellige ting.",
+ "version": 3,
+ "metode": "reserve",
+ "rubrik": "De seneste syv dages AI-nyheder",
+ "indledning": "Det samlede overblik er på vej. Her er historier fra perioden.",
  "historier": [
   {
-   "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-   "overskrift": "Suno v6: ny musikmodel med licensaftaler",
-   "tekst": "Suno har lanceret v6, trænet på materiale fra blandt andre Warner Music Group, BMG og Believe. Du kan redigere dele af en sang i chat og bruge billeder, video eller lyd som oplæg. The Verges test fandt bedre genrer, men stadig problemer med at følge visse instruktioner.",
-   "kategori": "Lanceringer",
-   "billede": "data/img/b253db15b0551ed9.webp",
-   "dato": "2026-09-09T17:42:19-04:00",
-   "andre": [
-    {
-     "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-     "kilde": "TechCrunch AI"
-    }
-   ],
-   "titel": "Suno releases its first AI music model made with record industry help",
-   "rubrik": "Suno lancerer v6 på licenseret musikdata",
-   "resume_da": "Suno har frigivet musimodellen v6, selskabets første model skabt med støtte fra pladeindustrien og trænet på licenseret data fra Warner Music Group, BMG og Believe.",
-   "artikel_signatur": "f5a78b298d14ad55017b4a7282af6d7249ae5c34a5f6554a6153dbb260d83d0c"
-  },
-  {
-   "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-   "overskrift": "GPT-Live-1 giver udviklere nye stemmefunktioner",
-   "tekst": "OpenAI har annonceret GPT-Live-1 i sit API. Ifølge selskabet understøtter modellen tale i begge retninger samtidig, brugerdefinerede stemmer og telefoni. Det giver udviklere flere muligheder for stemmebaserede tjenester. De konkrete telefontjenester og fremgangsmåden til at oprette stemmer fremgår ikke af materialet.",
-   "kategori": "Lanceringer",
-   "billede": "data/img/bb7921ba88d52959.jpg",
-   "dato": "2026-09-10T00:00:00+00:00",
-   "andre": [],
    "titel": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+   "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+   "resume": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+   "dato": "2026-09-10T00:00:00+00:00",
+   "kilde": "OpenAI Blog",
+   "kategori": "Lanceringer",
+   "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+   "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
    "rubrik": "OpenAI fører GPT-Live-1 til API",
    "resume_da": "OpenAI tilføjer stemmemodellen GPT‑Live‑1 til sit API med fuld-duplex samtaler, bedre instruktionsfølge, brugerdefinerede stemmer og telefonistøtte.",
+   "brief": "",
+   "sektioner": [
+    {
+     "overskrift": "Stemme i API'et",
+     "tekst": "OpenAI har annonceret GPT‑Live‑1 i sit API. Modellen beskrives af OpenAI som et skridt mod mere naturlige stemmeoplevelser, fordi den understøtter **fuld-duplex** samtaler, altså tale i begge retninger samtidig. Det er en anden måde at bygge stemmeagenter på end de tidligere, mere tur-baserede løsninger. Ifølge OpenAI er modellen også bedre til at følge instruktioner."
+    },
+    {
+     "overskrift": "Stemmer og telefon",
+     "tekst": "OpenAI oplyser, at GPT‑Live‑1 understøtter **brugerdefinerede stemmer** og **telefoni**. Det betyder, at udviklere ifølge OpenAI kan bygge stemmeoplevelser, hvor brugeren ringer ind over det almindelige telefonnæt, og hvor stemmen kan tilpasses. Hvordan stemmerne oprettes og styres, og hvilke telefontjenester der konkret understøttes, fremgår ikke af det tilgængelige materiale."
+    }
+   ],
+   "noegletal": [],
+   "figurer": [],
+   "detaljer": [
+    "Ifølge OpenAI giver GPT‑Live‑1 fuld-duplex tale i begge retninger samtidigt",
+    "OpenAI oplyser, at modellen følger instruktioner bedre end tidligere",
+    "Brugerdefinerede stemmer fremhæves af OpenAI som en funktion",
+    "Telefonistøtte er nævnt af OpenAI, men uden nærmere detaljer"
+   ],
+   "betydning": "",
+   "pointer": [
+    "GPT‑Live‑1 er nu annonceret i OpenAIs API",
+    "Fuld-duplex tale og egne stemmer er kernepunkterne",
+    "Telefoni nævnes, men er ikke uddybet"
+   ],
+   "billedmotiv": "En telefon, der ligger på en ren baggrund, med en mikrofon og en højttaler, der er forbundet med en dobbeltpil.",
+   "billede": "data/img/bb7921ba88d52959.jpg",
+   "kat_ai": true,
+   "redaktion": {
+    "version": 3,
+    "metode": "ai",
+    "nyhed": 4,
+    "betydning": 3,
+    "brugbarhed": 4,
+    "dokumentation": 3,
+    "dansk": 0,
+    "type": "lancering",
+    "ai_relevant": true,
+    "model_lancering": true,
+    "begrundelse": "GPT-Live-1 i API'et giver naturlige tovejs stemmesamtaler, tilpassede stemmer og telefonisupport.",
+    "forbehold": "Kun producentens oplysninger; ingen uafhængige test eller priser.",
+    "emne": "openai gpt-live-1"
+   },
+   "redaktion_instruks": "30b24f5dd9bb0019",
+   "brief_instruks": "748464c0b45c6acc",
+   "prio": 7,
+   "side": "artikel/031421652db5e34f.html",
+   "overskrift": "OpenAI fører GPT-Live-1 til API",
+   "tekst": "OpenAI tilføjer stemmemodellen GPT‑Live‑1 til sit API med fuld-duplex samtaler, bedre instruktionsfølge, brugerdefinerede stemmer og telefonistøtte.",
    "artikel_signatur": "14696dad33e6833ea50479cd0d8e0cac610d84cf2934657e8fcdec6d657d7ad2"
   },
   {
-   "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-   "overskrift": "Efterspørgslen på Astra bremser nye Pro-abonnementer",
-   "tekst": "OpenAI har ifølge TechCrunch sat nye Pro-tegninger på pause, fordi efterspørgslen på Astra presser infrastrukturen. Selskabet oplyser, at blandt andet API, Go og Plus fortsat er tilgængelige. Hvor længe pausen varer, og om eksisterende kunder påvirkes, er ikke oplyst.",
-   "kategori": "Penge & marked",
-   "billede": "",
-   "dato": "2026-09-10T20:59:51+00:00",
-   "andre": [],
    "titel": "OpenAI puts Pro subscriptions on hold due to Astra demand",
+   "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+   "resume": "The company said Pro subscriptions put the most strain on its systems, so it's pausing sign-ups while adding more capacity.",
+   "dato": "2026-09-10T20:59:51+00:00",
+   "kilde": "TechCrunch AI",
+   "kategori": "Penge & marked",
+   "foerst_set": "2026-09-10T21:07:39.020467+00:00",
+   "eget_foerst_set": "2026-09-10T21:07:39.020467+00:00",
    "rubrik": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
    "resume_da": "OpenAI har midlertidigt stoppet nye tegninger af Pro-abonnementet til 200 dollar om måneden, fordi efterspørgslen efter modellen Astra belaster infrastrukturen.",
+   "kat_ai": true,
+   "redaktion": {
+    "version": 3,
+    "metode": "ai",
+    "nyhed": 3,
+    "betydning": 3,
+    "brugbarhed": 2,
+    "dokumentation": 3,
+    "dansk": 0,
+    "type": "forretning",
+    "ai_relevant": true,
+    "model_lancering": false,
+    "begrundelse": "OpenAI sætter nye Pro-abonnementer på pause på grund af efterspørgsel efter Astra og udvider kapaciteten i stedet.",
+    "forbehold": "Uklart hvad Astra er, og hvor længe pause og kapacitetsudvidelse varer.",
+    "emne": "openai abonnementer astra"
+   },
+   "prio": 6,
+   "redaktion_instruks": "30b24f5dd9bb0019",
+   "sektioner": [
+    {
+     "overskrift": "Pro-tegninger sat på pause",
+     "tekst": "Ifølge OpenAI-produktchef Thibault Sottiaux er det ikke længere muligt at tegne det **200 dollar dyre Pro-abonnement**. Årsagen er pres på infrastrukturen efter efterspørgslen på modellen **Astra**. Sottiaux skriver på X, at Pro-planen belaster systemerne mest, og at man har valgt det mindste indgreb for at kunne give flest mulig adgang. Han siger, at andre planer, herunder API samt Go og Plus, fortsat er tilgængelige."
+    },
+    {
+     "overskrift": "Astra udløste presset",
+     "tekst": "**Astra** blev lanceret 3. september 2026 og rulles ud til flere OpenAI-planer som Pro, Plus, Enterprise og Business. Modellen markedsføres af OpenAI som et stort spring inden for ræsonnement, kodning og computer use, og OpenAI har selv kaldt den begyndelsen på “AGI-æraen”. Ifølge selskabet var efterspørgslen ventet, og Sottiaux advarede allerede før pausen om, at nye Pro-tegninger kunne blive sat på hold."
+    },
+    {
+     "overskrift": "Uvist hvor længe",
+     "tekst": "OpenAI har ikke oplyst, hvor længe Pro-tegninger holdes lukket, eller hvor mange kunder der dagligt forsøger at tegne abonnementet. Selskabet hævede så sent som i sidste måned brugsgrænserne for Codex, hvilket ifølge TechCrunch peger på, at presset er et nyere fænomen. Om pausen får konsekvenser for eksisterende kunders service, er heller ikke oplyst."
+    }
+   ],
+   "brief": "",
+   "figurer": [],
+   "noegletal": [
+    {
+     "tal": "200 dollar om måneden",
+     "label": "Pris for Pro-abonnementet"
+    },
+    {
+     "tal": "3. september 2026",
+     "label": "Astra blev lanceret"
+    },
+    {
+     "tal": "4 planer",
+     "label": "Pro, Plus, Enterprise og Business omfattes af Astra-udrulningen"
+    }
+   ],
+   "detaljer": [
+    "Pro-tegninger er midlertidigt sat på pause ifølge OpenAI",
+    "Go, Plus og API er fortsat tilgængelige",
+    "Pausen blev annonceret på X af Thibault Sottiaux",
+    "OpenAI har ikke oplyst varigheden af pause",
+    "OpenAI advarede om muligheden få dage forinden"
+   ],
+   "betydning": "",
+   "pointer": [
+    "Pro-abonnementet til 200 dollar kan ikke tegnes midlertidigt",
+    "Astra-efterspørgslen belaster OpenAIs infrastruktur",
+    "Go, Plus og API er fortsat åbne for nye kunder"
+   ],
+   "brief_instruks": "748464c0b45c6acc",
+   "side": "artikel/5a7a028d73b1f767.html",
+   "overskrift": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
+   "tekst": "OpenAI har midlertidigt stoppet nye tegninger af Pro-abonnementet til 200 dollar om måneden, fordi efterspørgslen efter modellen Astra belaster infrastrukturen.",
    "artikel_signatur": "3767584edb559a54833f9b2f978019215cbab54e51fc7dd68a1b6d8f10da3d0f"
   },
   {
-   "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-   "overskrift": "Tegn dit oplæg til ChatGPTs nye billeder",
-   "tekst": "ChatGPT Images 2.5 får funktionen Sketch: Du kan tegne et oplæg og lade AI arbejde videre med det. Kommentarer direkte på billedet gør det også muligt at udpege præcise ændringer. OpenAI lover hurtigere generering og bedre redigering; det er selskabets egne påstande.",
+   "titel": "Meta bets on AI agent Muse to catch up in AI race",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+   "resume": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up […]",
+   "dato": "2026-09-08T19:00:00+00:00",
+   "kilde": "The Verge AI",
    "kategori": "Lanceringer",
-   "billede": "",
-   "dato": "2026-09-08T20:16:09+00:00",
-   "andre": [
+   "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+   "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
+   "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
+   "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
+   "brief": "",
+   "sektioner": [
     {
-     "kilde": "OpenAI Blog",
-     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
-     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
-     "resume_da": "Værktøjet gør dine skitser og fotos til flottere billeder. Det er en opgradering af billedgeneratoren i ChatGPT.",
-     "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+     "overskrift": "Det er sket",
+     "tekst": "Meta har præsenteret Muse, en personlig AI-assistent, som skal hjælpe almindelige mennesker med hverdagsopgaver som at shoppe på nettet, skrive mails og planlægge rejser. Assistenten kan selv åbne en browser, udfylde formularer og endda forhandle på dine vegne – og fortsætter arbejdet, selv efter du lukker appen. Muse lanceres først i USA på iOS, Android og muse.ai, og AI-briller er på vej."
     },
     {
-     "kilde": "Simon Willison AI",
-     "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
-     "rubrik": "OpenAI klar med nye billedmodeller",
-     "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
-     "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+     "overskrift": "Sådan skiller den sig ud",
+     "tekst": "Muse er gratis for de fleste, men Meta nævner, at der kan komme betalte abonnementer for dem, der vil have mere. Det store salgsargument er brugervenlighed: 'Ingen teknisk erfaring nødvendig, ingen læringskurve,' siger Meta. Du kan chatte med Muse via appen eller WhatsApp, og den husker detaljer, du kun nævner én gang, så den kan komme med uopfordrede forslag."
+    },
+    {
+     "overskrift": "Privatliv og sikkerhed",
+     "tekst": "Meta lover, at du kan fravælge, at dine samtaler med Muse bruges til at træne deres AI-modeller, og du kan bede den 'glemme' ting, den har lært om dig. Muse kører på en virtuel computer i skyen, hvor den ikke kan se dine adgangskoder eller betalingsoplysninger. En anden AI-agent, Sentinel, holder øje med, at intet når internettet uden godkendelse."
+    },
+    {
+     "overskrift": "Historien bag",
+     "tekst": "Muse er kernen i Metas nye AI-strategi efter at have brugt milliarder på en omlægning. Men Meta har haft problemer med tillid: en støtte-chatbot hjalp hackere med at overtage over 20.000 Instagram-konti, og en AI-genereret nyhedsstrøm brød virksomhedens egne regler. Konkurrenter som OpenAI og Google har lignende produkter, men Meta satser på, at Muse er nemmere at bruge."
     }
    ],
-   "titel": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-   "rubrik": "OpenAI opdaterer ChatGPT-billeder med Sketch",
-   "resume_da": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
-   "artikel_signatur": "69786ad8158ffe8c1633158e033bf626432a1c129e2134671c0a71990412a1d5"
-  },
-  {
-   "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-   "overskrift": "Meta præsenterer Muse til hverdagens opgaver",
-   "tekst": "Metas nye assistent Muse skal ifølge selskabet kunne hjælpe med indkøb, mails og rejseplanlægning. Den kan arbejde i en browser og fortsætte, når appen lukkes. Muse lanceres først i USA. Det centrale løfte er, at assistenten udfører opgaver frem for kun at foreslå næste skridt.",
-   "kategori": "Lanceringer",
-   "billede": "",
-   "dato": "2026-09-08T19:00:00+00:00",
+   "noegletal": [],
+   "figurer": [],
    "andre": [
     {
      "kilde": "TechCrunch AI",
@@ -118,45 +213,184 @@
      "foerst_set": "2026-09-10T17:49:16.718389+00:00"
     }
    ],
-   "titel": "Meta bets on AI agent Muse to catch up in AI race",
-   "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
-   "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
+   "detaljer": [
+    "Muse er gratis for de fleste brugere, med betalte abonnementer på vej for dem, der vil have mere.",
+    "Assistenten kan selv udfylde formularer, shoppe online, sende mails og planlægge ture.",
+    "Muse fortsætter med at arbejde i baggrunden, også når appen er lukket.",
+    "Den lanceres i USA på iOS, Android og hjemmesiden muse.ai.",
+    "En sikkerheds-AI-agent kaldet Sentinel overvåger Muse for at forhindre uautoriseret internetadgang.",
+    "Meta lover, at brugerne kan fravælge, at deres data bruges til træning af AI-modeller.",
+    "Konkurrenter som OpenAI, Anthropic og Google har lignende assistenter, men Meta fokuserer på brugervenlighed."
+   ],
+   "betydning": "Muse kan klare dine tidkrævende opgaver, men du skal stole på Meta med dine data.",
+   "pointer": [
+    "Meta lancerer gratis AI-assistent Muse i USA.",
+    "Muse kan shoppe, skrive mails og planlægge rejser.",
+    "Den minder om produkter fra OpenAI og Google.",
+    "Meta satser på brugervenlighed og privatliv for at vinde brugere."
+   ],
+   "kat_ai": true,
+   "redaktion": {
+    "version": 3,
+    "metode": "ai",
+    "nyhed": 4,
+    "betydning": 3,
+    "brugbarhed": 3,
+    "dokumentation": 3,
+    "dansk": 0,
+    "type": "lancering",
+    "ai_relevant": true,
+    "model_lancering": true,
+    "begrundelse": "Meta lancerer AI-assistenten Muse, der kan shoppe, skrive mails og planlægge rejser – gratis for de fleste, først i USA.",
+    "forbehold": "Kun annonceret til USA; kapacitet og adgang i andre lande er uafklaret.",
+    "emne": "meta-muse"
+   },
+   "prio": 7,
+   "side": "artikel/f903c700664042a3.html",
+   "redaktion_instruks": "30b24f5dd9bb0019",
+   "overskrift": "Meta lancerer Muse: AI-assistent til hverdagen",
+   "tekst": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
    "artikel_signatur": "1bc79b88a5b14199e3aa02edb8d33297f9f8234b85ea3019c40e91c0acdc88dc"
+  },
+  {
+   "titel": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+   "resume": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image […]",
+   "dato": "2026-09-08T20:16:09+00:00",
+   "kilde": "The Verge AI",
+   "kategori": "Lanceringer",
+   "foerst_set": "2026-09-08T21:21:14.645089+00:00",
+   "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
+   "rubrik": "OpenAI opdaterer ChatGPT-billeder med Sketch",
+   "resume_da": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
+   "brief": "",
+   "sektioner": [
+    {
+     "overskrift": "Tegn selv prompten",
+     "tekst": "OpenAI har annonceret ChatGPT Images 2.5 og tilføjet funktionen **Sketch**. Ved at skrive @Sketch i chatfeltet åbner et lille tegnevindue, hvor du kan lave en skitse, som ChatGPT derefter bruger som del af prompten. Ifølge The Verges journalist, der testede funktionen kort, blev en dårlig musetegnet kat til et realistisk billede efter instruktioner."
+    },
+    {
+     "overskrift": "Kommenter på billedet",
+     "tekst": "En anden nyhed er, at du nu kan sætte kommentarer direkte på dele af et billede, du vil have ændret. The Verges journalist brugte det til at gøre kattens øjne grønne i stedet for blå. Det gør redigering mere målrettet end en løs tekstbeskrivelse af, hvad der skal justeres."
+    },
+    {
+     "overskrift": "Hurtigere og bedre lys",
+     "tekst": "OpenAI oplyser, at ChatGPT Images 2.5 giver billeder med “mere naturligt lys og rigere teksturer”, er bedre til at følge redigeringsinstruktioner “over flere ture”, og at latenstiden ved billedgenerering er reduceret med “op til 50% sammenlignet med Images 2.0”. Det er producentens egne påstande, ikke uafhængige målinger."
+    },
+    {
+     "overskrift": "Tilgængelig nu",
+     "tekst": "Ifølge OpenAI er ChatGPT Images 2.5 tilgængelig nu for brugere af ChatGPT, ChatGPT Work og Codex på desktop, mobil og web. The Verge har ikke oplyst priser eller eventuelle begrænsninger i adgangen ud over, at funktionerne er udrullet."
+    }
+   ],
+   "noegletal": [
+    {
+     "tal": "op til 50%",
+     "label": "lavere latenstid ved billedgenerering end Images 2.0 ifølge OpenAI"
+    }
+   ],
+   "figurer": [],
+   "andre": [
+    {
+     "kilde": "OpenAI Blog",
+     "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+     "rubrik": "OpenAI lancerer ChatGPT Images 2.5",
+     "resume_da": "Værktøjet gør dine skitser og fotos til flottere billeder. Det er en opgradering af billedgeneratoren i ChatGPT.",
+     "foerst_set": "2026-09-08T21:21:14.645089+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+     "rubrik": "OpenAI klar med nye billedmodeller",
+     "resume_da": "OpenAI har opdateret sine billedmodeller i ChatGPT og API'en. De følger instruktioner bedre og bevarer motiver i referencefotos.",
+     "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+    },
+    {
+     "kilde": "Simon Willison AI",
+     "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+     "rubrik": "Ny GPT-6 Astra laver Fabergé-æg i Blender",
+     "resume_da": "En udvikler bad ChatGPT Images 2.5 lave popkultur-æg i 3D-programmet Blender. Resultatet kan ses via en ny viser til .blend-filer.",
+     "foerst_set": "2026-09-11T14:38:09.387448+00:00"
+    }
+   ],
+   "detaljer": [
+    "Sketch aktiveres ved at skrive @Sketch i chatfeltet",
+    "Funktionen lader dig tegne direkte i ChatGPT som del af prompten",
+    "Du kan kommentere på dele af et billede for at få dem ændret",
+    "OpenAI kalder selv påstandene om lys, tekstur og redigering for forbedringer"
+   ],
+   "betydning": "Hvis OpenAIs påstande holder, bliver det lettere at styre billedgenerering med en skitse og målrettede kommentarer i stedet for lange tekstprompter.",
+   "pointer": [
+    "Sketch lader dig tegne oplægget til et AI-billede",
+    "ChatGPT Images 2.5 er ude nu ifølge OpenAI",
+    "Du kan kommentere direkte på billeder for at ændre dem"
+   ],
+   "billedmotiv": "En farveblyanttegning af et harmløst hus, nøje udført på et stykke papir, forvandles langsomt til en fotorealistisk miniature-model af samme hus.",
+   "kat_ai": true,
+   "redaktion": {
+    "version": 3,
+    "metode": "ai",
+    "nyhed": 4,
+    "betydning": 3,
+    "brugbarhed": 4,
+    "dokumentation": 3,
+    "dansk": 0,
+    "type": "lancering",
+    "ai_relevant": true,
+    "model_lancering": true,
+    "begrundelse": "OpenAI annoncerer ChatGPT Images 2.5 med Sketch: tegn en doodle og få et detaljeret AI-billede i ChatGPT.",
+    "forbehold": "Ingen uafhængige tests eller begrænsninger er dokumenteret i materialet.",
+    "emne": "chatgpt-images-2-5"
+   },
+   "prio": 7,
+   "side": "artikel/41a7f2063622334b.html",
+   "redaktion_instruks": "30b24f5dd9bb0019",
+   "brief_instruks": "748464c0b45c6acc",
+   "overskrift": "OpenAI opdaterer ChatGPT-billeder med Sketch",
+   "tekst": "OpenAI har lanceret ChatGPT Images 2.5 og funktionen Sketch, hvor du kan tegne et oplæg og få det omdannet til et AI-billede.",
+   "artikel_signatur": "8b7bbf8ac65857f372107d09ef0b2713e90974c2935f4fd601c4adacfc7b6740"
+  },
+  {
+   "titel": "Introducing GPT-6 Astra for developers",
+   "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+   "resume": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredible renderings of gardens, shipyards, animals , cityscapes, even Dyson spheres.…",
+   "dato": "2026-09-05T23:27:48+00:00",
+   "kilde": "Simon Willison AI",
+   "kategori": "Lanceringer",
+   "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+   "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+   "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+   "resume_da": "Den nye model er mere detaljeret og forstår opgaver bedre. Ifølge OpenAI er den især stærk til at bygge 3D-modeller.",
+   "kat_ai": true,
+   "redaktion": {
+    "version": 3,
+    "metode": "ai",
+    "nyhed": 4,
+    "betydning": 4,
+    "brugbarhed": 3,
+    "dokumentation": 3,
+    "dansk": 0,
+    "type": "lancering",
+    "ai_relevant": true,
+    "model_lancering": true,
+    "begrundelse": "OpenAI præsenterer GPT-6 Astra for udviklere med bedre promptforståelse og især styrke til 3D-modeller.",
+    "forbehold": "Producentpåstande om evner; ingen uafhængige tests, priser eller tilgængelighed fremgår.",
+    "emne": "gpt-6 astra"
+   },
+   "prio": 7,
+   "redaktion_instruks": "30b24f5dd9bb0019",
+   "overskrift": "OpenAI klar med GPT-6 Astra til udviklere",
+   "tekst": "Den nye model er mere detaljeret og forstår opgaver bedre. Ifølge OpenAI er den især stærk til at bygge 3D-modeller.",
+   "artikel_signatur": "bf41e193437a01f16e96e751a9177193984b9f965ade7a6f7c5f3026e20d73ed"
   }
  ],
+ "overblik": [],
  "tendens": "",
- "version": 3,
- "dato": "2026-09-12T03:29:15.326194+00:00",
+ "dato": "2026-09-12T06:44:10.341645+00:00",
+ "opdateret": "2026-09-12T06:44:10.341645+00:00",
  "periode_fra": "2026-09-04T22:00:00+00:00",
  "periode_til": "2026-09-11T22:00:00+00:00",
- "metode": "redaktionel",
- "overblik": [
-  {
-   "tekst": "Mere af arbejdet med AI flytter hen til selve det, du vil ændre. I ChatGPT Images 2.5 kan en skitse være oplægget, og kommentarer på billedet kan udpege en konkret rettelse. Suno v6 tager samme idé ind i musikken: Du kan redigere en del af en sang i chat uden at starte hele nummeret forfra. Det fælles er mere direkte kontrol over resultatet. Men kontrollen er ikke fuld: The Verges Suno-test viste stadig problemer med at følge bestemte instruktioner.",
-   "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help"
-   ]
-  },
-  {
-   "tekst": "Stemmer og agenter peger i en anden retning: AI skal kunne indgå i en samtale eller arbejde videre med en opgave. OpenAI beskriver GPT-Live-1 som en stemmemodel, hvor samtalen kan gå i begge retninger samtidig. Meta vil med Muse lade assistenten udføre opgaver i en browser, blandt andet indkøb og rejseplanlægning. GPT-Live-1 er en byggesten til udviklere; Muse præsenteres som en assistent til brugeren. De nye muligheder kommer altså ind ad forskellige døre.",
-   "links": [
-    "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race"
-   ]
-  },
-  {
-   "tekst": "Adgangen afgør dog, hvad du faktisk kan tage i brug. Muse starter i USA, mens efterspørgslen på Astra ifølge OpenAI har presset infrastrukturen så meget, at nye Pro-tegninger er sat på pause. Andre planer og API-adgang er ifølge selskabet fortsat åbne. Perioden viser derfor både nye måder at styre og bruge AI på og konkrete begrænsninger i udrulningen. Et stort produktløfte er ikke i sig selv en garanti for, at alle kan bruge det med det samme.",
-   "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-    "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/"
-   ]
-  }
- ],
- "basis_signatur": "8c6b445100c2c4a3677afd39c172a83829e0f1859e73ae5403af9f9d9383bb18",
- "opdateret": "2026-09-12T03:29:15.326194+00:00",
  "stats": {
-  "historier": 90,
+  "historier": 88,
   "kilder": 9
  }
 }

@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-12T01:44:29.730443+00:00",
+ "opdateret": "2026-09-12T06:44:41.328369+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -171,8 +171,8 @@ window.LAESERTAL = {
      0,
      3,
      0,
-     2,
-     0,
+     3,
+     1,
      0
     ]
    },
@@ -249,14 +249,19 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 30,
- "sidevisninger_i_alt": 106,
+ "besoeg_i_alt": 40,
+ "sidevisninger_i_alt": 142,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 30,
-   "visninger": 100
+   "besoeg": 39,
+   "visninger": 120
+  },
+  {
+   "sti": "/uge.html",
+   "besoeg": 1,
+   "visninger": 5
   },
   {
    "sti": "/laer.html",
@@ -274,6 +279,11 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
+   "sti": "/om.html",
+   "besoeg": 0,
+   "visninger": 5
+  },
+  {
    "sti": "/koerekort.html",
    "besoeg": 0,
    "visninger": 1
@@ -286,13 +296,13 @@ window.LAESERTAL = {
   {
    "sti": "/vaerktoejer.html",
    "besoeg": 0,
-   "visninger": 1
+   "visninger": 7
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 30
+   "besoeg": 40
   }
  ],
  "ai_chats": [],
@@ -301,12 +311,24 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 70
+    "visninger": 81
    },
    {
     "fra": "direkte",
-    "besoeg": 30,
-    "visninger": 30
+    "besoeg": 39,
+    "visninger": 39
+   }
+  ],
+  "/uge.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 4
+   },
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
    }
   ],
   "/laer.html": [
@@ -330,6 +352,13 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
+  "/om.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 5
+   }
+  ],
   "/koerekort.html": [
    {
     "fra": "herfra selv",
@@ -348,22 +377,13 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 1
+    "visninger": 7
    }
   ]
  },
  "faste_uden_besoeg": [
-  "/erhverv.html",
-  "/prompts.html",
-  "/prompt-arkiv.html",
-  "/ordbog.html",
-  "/quiz.html",
-  "/uge.html",
   "/faq.html",
-  "/om.html",
-  "/guide-igang.html",
-  "/guide-prompts.html",
-  "/guide-sikkerhed.html"
+  "/cookies.html"
  ],
  "serie": [
   {
@@ -513,8 +533,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-12",
-   "besoeg": 10,
-   "visninger": 50
+   "besoeg": 20,
+   "visninger": 60
   }
  ],
  "artikler": [
