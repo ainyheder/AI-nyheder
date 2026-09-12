@@ -15,7 +15,9 @@ originalens mail. Vi har ikke adgang til Diamandis’ afsendelsessystem.
 3. Redaktøren skriver med `opsaetning/nyhedsbrev-prompt.md`.
 4. En separat AI-kørsel læser original og udkast med
    `opsaetning/nyhedsbrev-kontrol-prompt.md`. Afviste breve får højst tre
-   skriveforsøg fordelt på kørsler. Ufuldstændige kilder venter på fuld tekst.
+   skriveforsøg i samme kørsel med tidligere udkast og konkret kritik.
+   Forsøgstælleren gemmes løbende og nulstilles ikke ved genoptagelse.
+   Ufuldstændige kilder venter på fuld tekst.
 5. Kun godkendt indhold oprettes som Buttondown-kladde og overdrages til
    udsendelse til de aktive abonnenter. Buttondown styrer tilmeldinger,
    afmeldinger og den faktiske levering.
@@ -36,7 +38,8 @@ opdateres fortsat med de syv afsluttede dage.
 Workflowet vedligeholder `state.json` på den separate gren
 `codex/nyhedsbrev-status`. Den deler ikke genererede filer med main og kører
 derfor uden at blokere crawleren eller skabe de tidligere merge-konflikter.
-Der gemmes kildemetadata, godkendt dansk udkast, kontrolresultat og Buttondown-id;
+Der gemmes kildemetadata, seneste afviste eller godkendte danske udkast,
+kontrolresultat og Buttondown-id;
 ingen abonnentliste, API-nøgler eller originalbrevets fulde tekst.
 Hvis repoet er offentligt, er grenen også offentlig. Den er ikke en webside.
 
@@ -211,6 +214,36 @@ indsat. Både Gmail-test og abonnentudsendelse var sprunget over; der blev
 ikke sendt mail eller kaldt AI. Den samlede tekst-, billed- og mailkæde
 skal stadig kontrolleres i en ny Gmail-test. Den daglige plan bruger
 samme fetch_feed-funktion og den allerede publicerede rettelse.
+
+## Samlet Gmail-test efter feedrettelsen
+
+Kørsel [34693272666](https://github.com/ainyheder/AI-nyheder/actions/runs/34693272666)
+på commit `2e7256b` hentede den 10. september-original automatisk via RSS-læseren.
+Begge AI-trin kørte med `deepseek-flash`, men alle tre udkast blev afvist.
+Ingen billeder blev genereret, og ingen Buttondown-kladde eller mail blev oprettet.
+
+De tre gemte udkast og kontroller viste både reelle tekstproblemer og forkert
+kontrolkritik. Udkastene gentog deres konklusioner og ændrede blandt andet
+Rubin-observatoriets hyppighed fra hver få nætter til hver nat. Kontrollanten
+påstod også fejlagtigt, at udkastene fulgte originalens eksempelrækkefølge,
+og efterlyste dansk aktualitet, som materialet ikke indeholdt.
+
+Skriveprompten er nu forkortet og kræver en konkret disposition før teksten,
+forskelligt stof i afsnittene og præcise tal, tidsrum og hyppigheder.
+Kontrolprompten kræver belæg for hver væsentlig kritik, adskiller fakta fra
+stil og efterprøver påstande om kildens struktur. Den accepterer tydeligt
+markerede, forestillede emneillustrationer uden at kalde dem videnskabelige fund.
+Godkendelseskravene og grænsen på tre forsøg er bevaret.
+
+Gmail-test og daglig drift bruger nu samme `editorial_attempt()` til skrivning,
+formatkontrol og separat AI-kontrol. Formatfejl skjuler ikke indholdskritikken.
+Daglig drift gemmer det afviste udkast og retter i samme kørsel; tidligere ventede
+den til næste dag og gav kun fejlteksten til skriveren. Afbrudte forsøg tæller
+fortsat med i budgettet, og udsendelsens checkpoints er uændrede.
+
+De nye prompts skal efter push afprøves i en ny Gmail-test. Lokale tests med
+falske AI-svar kontrollerer rettelsesforløb og udsendelsesgrænser, ikke kvaliteten
+af næste rigtige brev. FLUX → BiRefNet → Buttondown er stadig ikke bekræftet.
 
 RSS-læserens API: https://rss2json.com/docs
 

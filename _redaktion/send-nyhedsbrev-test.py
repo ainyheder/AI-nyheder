@@ -23,34 +23,12 @@ def generate(source, config, folder, ai=n.ai_call):
     errors = ""
     previous = None
     for attempt in range(1, min(config["maks_forsog"], 3) + 1):
-        evidence = {"forsog": attempt}
-        try:
-            draft = ai("nyhedsbrev", writer, {"original": source, "tidligere_fejl": errors,
-                                               "tidligere_udkast": previous})
-            evidence["udkast"] = draft
-            previous = draft
-            # Indhent også kvalitetskritik, når en formatregel er brudt, så
-            # næste forsøg retter indholdet frem for kun én navneforekomst.
-            format_error = ""
-            try:
-                n.validate_draft(draft, source)
-            except ValueError as exc:
-                format_error = str(exc)
-            review = ai("nyhedsbrev_kontrol", reviewer,
-                        {"original": source, "skriveinstruks": writer, "udkast": draft})
-            evidence["kontrol"] = review
-            if format_error:
-                raise ValueError(format_error)
-            n.validate_review(review)
-        except (ValueError, RuntimeError) as exc:
-            problems = evidence.get("kontrol", {}).get("problemer", [])
-            errors = str(exc) + ": " + json.dumps(problems, ensure_ascii=False)
-            evidence["fejl"] = errors
-        else:
-            errors = ""
+        evidence = {"forsog": attempt, **n.editorial_attempt(source, writer, reviewer, previous, errors, ai)}
+        previous = evidence.get("udkast", previous)
+        errors = evidence.get("fejl", "")
         (folder / f"forsog-{attempt}.json").write_text(json.dumps(evidence, ensure_ascii=False, indent=2))
         if not errors:
-            return draft
+            return evidence["udkast"]
     raise ValueError("Testbrevet blev ikke godkendt: " + errors)
 
 

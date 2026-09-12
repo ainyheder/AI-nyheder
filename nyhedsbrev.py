@@ -349,6 +349,36 @@ def ai_call(step, prompt, payload):
                                                        6500 if step == "nyhedsbrev" else 2200, config["model"]))
 
 
+def editorial_attempt(source, writer_prompt, review_prompt, previous=None, errors="", ai=ai_call):
+    """Ét skrive- og kontrolforsøg, fælles for Gmail-prøven og daglig drift."""
+    result = {}
+    failures = []
+    try:
+        draft = ai("nyhedsbrev", writer_prompt,
+                   {"original": source, "tidligere_udkast": previous, "tidligere_fejl": errors})
+        result["udkast"] = draft
+        try:
+            validate_draft(draft, source)
+        except ValueError as exc:
+            failures.append(str(exc))
+        # Indholdskritik må ikke skjules af fx en forkert kreditering.
+        review = ai("nyhedsbrev_kontrol", review_prompt,
+                    {"original": source, "skriveinstruks": writer_prompt, "udkast": draft})
+        result["kontrol"] = review
+        try:
+            validate_review(review)
+        except ValueError as exc:
+            failures.append(str(exc))
+        problems = review.get("problemer", []) if isinstance(review, dict) else []
+        if problems:
+            failures.append(json.dumps(problems, ensure_ascii=False))
+    except (ValueError, RuntimeError) as exc:
+        failures.append(str(exc))
+    if failures:
+        result["fejl"] = "\n".join(failures)
+    return result
+
+
 def process(items, config, store, api, ai=ai_call):
     entries = store.state["entries"]
     start = instant(config["nye_fra"])
@@ -381,7 +411,8 @@ def process(items, config, store, api, ai=ai_call):
             attention.append(entry["titel"])
             continue
         if status == "venter":
-            if entry["forsog"] >= config["maks_forsog"]:
+            limit = min(config["maks_forsog"], 3)
+            if entry["forsog"] >= limit:
                 attention.append(entry["titel"])
                 continue
             source = sources.get(key)
@@ -392,25 +423,25 @@ def process(items, config, store, api, ai=ai_call):
             if len(source["tekst"].split()) < 450 or "diamandis" not in source["forfatter"].lower():
                 attention.append(entry["titel"])
                 continue
-            entry["forsog"] += 1
-            entry.pop("kontrol", None)
-            store.save()
-            try:
-                draft = validate_draft(ai("nyhedsbrev", writer_prompt,
-                    {"original": source, "tidligere_fejl": entry.get("fejl", "")}), source)
-                review = ai("nyhedsbrev_kontrol", review_prompt,
-                            {"original": source, "skriveinstruks": writer_prompt, "udkast": draft})
-                # Gem kontrollens konkrete rettelser til næste skriveforsøg.
-                entry["kontrol"] = review
-                validate_review(review)
-                entry.update(draft=draft, status="illustrerer", fejl="")
-            except (ValueError, RuntimeError) as exc:
-                problems = entry.get("kontrol", {}).get("problemer", [])
-                entry["fejl"] = str(exc)[:500] + (": " + "; ".join(str(p) for p in problems)[:1500] if problems else "")
+            while entry["forsog"] < limit and entry["status"] == "venter":
+                entry["forsog"] += 1
+                entry.pop("kontrol", None)
+                # Budget og tidligere tekst overlever også en afbrudt kørsel.
                 store.save()
+                result = editorial_attempt(source, writer_prompt, review_prompt,
+                                           entry.get("tidligere_udkast"), entry.get("fejl", ""), ai)
+                if "udkast" in result:
+                    entry["tidligere_udkast"] = result["udkast"]
+                if "kontrol" in result:
+                    entry["kontrol"] = result["kontrol"]
+                entry["fejl"] = result.get("fejl", "")
+                if not entry["fejl"]:
+                    entry.update(draft=result["udkast"], status="illustrerer")
+                    entry.pop("tidligere_udkast", None)
+                store.save()
+            if entry["status"] == "venter":
                 attention.append(entry["titel"])
                 continue
-            store.save()
         if entry['status'] == 'illustrerer':
             images = nyhedsbrev_billeder.prepare(entry, config, api, store.save)
             entry.update(html=render(entry['draft'], images), status='klar')
