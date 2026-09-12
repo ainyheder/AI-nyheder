@@ -2,177 +2,101 @@
 <html lang="da">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · Om os</title>
-<meta name="description" content="AI-nyheder gør udviklingen inden for AI letforståelig for alle. Læs hvordan siden bliver til, og hvordan vi arbejder med kilder og AI.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Om AI-nyheder · Hvad kan AI nu?</title>
+<meta name="description" content="Internationale AI-nyheder på klart dansk. Se hvad vi prioriterer, hvordan AI-redaktøren arbejder, og hvordan du finder kilderne bag historierne.">
 <link rel="canonical" href="https://ainyheder.com/om.html">
+<meta property="og:title" content="AI-nyheder · Hvad kan AI nu?">
+<meta property="og:description" content="Nye modeller. Nye muligheder. Et klart overblik på dansk — med åbenhed om AI og kilder.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ainyheder.com/om.html">
 <meta property="og:image" content="https://ainyheder.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0e12">
 <link rel="manifest" href="/manifest.json">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="icon" href="assets/ai-mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<style>
-:root {
-  --bg: #f4f2ec; --bg-kort: #ffffff;
-  --blaek: #191714; --blaek-svag: #6d675d;
-  --linje: #e2ddd2; --accent: #5b4bf0; --accent-svag: #ecebfd;
-  --radius: 18px;
-  --skygge: 0 2px 4px rgba(25,23,20,.05), 0 12px 32px rgba(25,23,20,.07);
-  --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: var(--font-ui); background: var(--bg); color: var(--blaek); line-height: 1.55; }
-a { color: inherit; }
-
-.topbar {
-  position: sticky; top: 0; z-index: 90;
-  background: color-mix(in srgb, var(--bg) 86%, transparent);
-  backdrop-filter: blur(14px); border-bottom: 1px solid var(--linje);
-}
-.topbar-inner { margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 18px; }
-.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
-/* Logoet i topbjaelken. PNG'en er 128px og vises i 30px, saa maerket
-   holder sig skarpt paa skaerme med hoej oploesning. */
-.brand-logo { width: 30px; height: 30px; align-self: center; display: block; flex: none; }
-.brand-navn { font-family: var(--font-display); font-weight: 900; font-size: 26px; letter-spacing: -.03em; }
-.brand-navn em { font-style: normal; color: var(--accent); }
-.tilbage {
-  margin-left: auto; font-size: 13px; font-weight: 700; text-decoration: none;
-  border: 1px solid var(--linje); background: var(--bg-kort);
-  padding: 8px 16px; border-radius: 999px; transition: all .15s;
-}
-.tilbage:hover { border-color: var(--accent); color: var(--accent); }
-
-main { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
-h1 {
-  font-family: var(--font-display); font-weight: 900; letter-spacing: -.02em;
-  font-size: clamp(30px, 5vw, 44px); line-height: 1.08; margin-bottom: 18px;
-}
-.manchet { font-size: 18px; line-height: 1.65; color: var(--blaek-svag); margin-bottom: 42px; }
-h2 {
-  font-family: var(--font-display); font-weight: 800; font-size: 21px;
-  letter-spacing: -.01em; margin: 38px 0 12px;
-}
-p { font-size: 15.5px; line-height: 1.75; margin-bottom: 14px; }
-strong { font-weight: 700; background: linear-gradient(transparent 62%, var(--accent-svag) 62%); }
-.kilde-raekke { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
-.kilde-tag {
-  font-size: 12.5px; font-weight: 600; color: var(--blaek-svag);
-  border: 1px solid var(--linje); background: var(--bg-kort);
-  border-radius: 999px; padding: 5px 13px;
-}
-.aerlig {
-  background: var(--accent-svag); border-left: 3px solid var(--accent);
-  border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 18px 0;
-  font-size: 15px; line-height: 1.65;
-}
-footer {
-  border-top: 1px solid var(--linje); padding: 30px 26px; text-align: center;
-  font-size: 12px; color: var(--blaek-svag);
-}
-</style>
+<link rel="stylesheet" href="assets/fonts/skrifter.css?v=2">
+<link rel="stylesheet" href="assets/nyheder.css?v=15">
+<link rel="stylesheet" href="assets/om.css?v=1">
+<script src="assets/uge.js?v=1" defer></script>
+<noscript><style>.about-page .navigation{display:flex;flex-wrap:wrap}.about-page .menu-button{display:none}</style></noscript>
+<link rel="stylesheet" href="/assets/nyhedsbrev.css?v=1">
 </head>
-<body>
+<body class="about-page">
+<a class="skip-link" href="#hovedindhold">Gå til indholdet</a>
+<header class="site-header"><div class="masthead wrap"><a class="brand" href="./" aria-label="AI-nyheder, forsiden"><img src="assets/ai-mark.svg" alt="" width="40" height="40"><span>nyheder</span></a><span class="masthead-note">Et skridt foran.</span><div class="header-actions"><a class="mobile-benchmarks" href="https://artificialanalysis.ai/" target="_blank" rel="noopener noreferrer" aria-label="Benchmarks hos Artificial Analysis (ny fane)">Benchmarks</a><button class="menu-button" id="menuKnap" aria-label="Menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Menu</span><span aria-hidden="true">☰</span></button></div></div><nav class="navigation wrap" id="navigation" aria-label="Hovednavigation"><a href="./">Nyheder</a><a href="uge.html">Ugens overblik</a><a href="vaerktoejer.html">Værktøjer</a><a class="nav-benchmarks" href="https://artificialanalysis.ai/" target="_blank" rel="noopener noreferrer" title="AI-benchmarks hos Artificial Analysis">Benchmarks<span class="sr-only"> (åbner i en ny fane)</span></a><a href="om.html" class="nav-about" aria-current="page">Om AI-nyheder</a></nav></header>
+<main class="wrap about-main" id="hovedindhold" tabindex="-1">
+  <header class="about-intro">
+    <div class="about-mission">
+      <p class="eyebrow">Om AI-nyheder</p>
+      <h1>Hvad kan AI <span>nu?</span></h1>
+      <p class="about-lead">Nye modeller. Nye muligheder. Fortalt, så du kan følge med.</p>
+      <p>Vi samler de vigtige internationale AI-historier og gør dem forståelige på dansk. Så du kan bruge mindre tid på at lede og mere tid på at opdage noget, der er værd at kende.</p>
+    </div>
+    <section class="about-priority" aria-labelledby="prioritet">
+      <p class="eyebrow">Det kigger vi efter</p>
+      <h2 id="prioritet">Noget, du ikke kunne i går.</h2>
+      <p>Nye AI-modeller kommer først. Derefter væsentlige fremskridt, brugbare værktøjer og ændringer i adgang, pris eller sikkerhed.</p>
+      <p class="priority-question">Hvad er nyt? Hvad kan det? Hvem kan bruge det?</p>
+    </section>
+  </header>
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="./"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async"><span class="brand-navn">AI<em>-nyheder</em></span></a>
-    <a class="tilbage" href="./">← Til forsiden</a>
+  <nav class="about-routes" aria-label="Find dit overblik">
+    <a href="./"><span class="route-label">Følg med</span><h2>Nyheder</h2><p>De vigtigste aktuelle historier. Indsamlingen er planlagt til at køre hver time.</p></a>
+    <a href="uge.html"><span class="route-label">Se sammenhængen</span><h2>Ugens overblik</h2><p>AI-redaktørens samlede fortælling om de største nyheder fra i går og seks dage længere tilbage.</p></a>
+    <a href="vaerktoejer.html"><span class="route-label">Kom i gang</span><h2>Værktøjsguiden</h2><p>Vores prioriterede valg, forklaret med konkrete opgaver. Guiden vedligeholdes særskilt.</p></a>
+  </nav>
+
+  <section class="about-section" aria-labelledby="redaktoeren">
+    <div class="about-section-heading"><p class="eyebrow">Fra kilde til forside</p><h2 id="redaktoeren">En AI-redaktør med en klar opgave.</h2><p>AI hjælper både med at vælge, skrive og kontrollere. Mennesket bag siden sætter retningen, vælger kilderne og justerer systemet.</p></div>
+    <ol class="about-process">
+      <li><span aria-hidden="true">01</span><h3>Find og læs</h3><p>Systemet indsamler fra udvalgte internationale kilder. AI-redaktøren kan hente kildetekster og undersøge historierne nærmere.</p></li>
+      <li><span aria-hidden="true">02</span><h3>Vælg det væsentlige</h3><p>Redaktøren vurderer, hvad der faktisk er nyt, sammenholder omtaler og bruger tidligere forsider til at undgå gentagelser.</p></li>
+      <li><span aria-hidden="true">03</span><h3>Fortæl på dansk</h3><p>AI skriver ud fra kilderne og en konkret vinkel. Præcise modelnavne, tilgængelighed og forbehold skal følge med.</p></li>
+      <li><span aria-hidden="true">04</span><h3>Kontrollér udgaven</h3><p>AI-kontrol og faste regler tjekker blandt andet kildegrundlag og dubletter, før udgaven kommer på forsiden.</p></li>
+    </ol>
+    <div class="about-caveat"><strong>Automatiseret, også i praksis.</strong><p>Artiklerne bliver ikke alle gennemlæst af et menneske før udgivelse. Kontrollerne kan overse fejl. Hvis AI-kontrollen afviser en udgave, kan siden bruge et nyligt godkendt udvalg eller systemets almindelige prioritering.</p></div>
+  </section>
+
+  <section class="about-section about-transparency" aria-labelledby="bag-historien">
+    <div class="about-section-heading"><p class="eyebrow">Åbent om metoden</p><h2 id="bag-historien">Du skal kunne se, hvad der ligger bag.</h2><p>En god historie gør det tydeligt, hvad der er dokumenteret, og hvad vi endnu ikke ved.</p></div>
+    <div class="about-details">
+      <details open><summary>Kilder og forbehold</summary><div><p>Kildelinkene ligger i artiklerne. De kan føre til producentens egen meddelelse, forskning eller et medies dækning. En producents løfte om højere ydeevne er ikke det samme som en uafhængig test.</p><p>Vi tilstræber at skelne mellem noget, der er annonceret, noget få kan afprøve, og noget du faktisk kan bruge. Siden dækker et udvalg af kilder og kan derfor overse en vigtig historie.</p></div></details>
+      <details><summary>Flere omtaler af samme nyhed</summary><div><p>Målet er én plads pr. begivenhed. Flere kilder skal give bedre belæg, frem for flere næsten ens artikler. En senere test eller en væsentlig ændring kan blive en ny historie, hvis den tilfører noget konkret.</p><p>Udvælgelsen er ikke fejlfri. Finder du to historier, der reelt siger det samme, må du gerne sende os begge links.</p></div></details>
+      <details><summary>Billederne er AI-illustrationer</summary><div><p>De genererede billeder gør historierne lettere at kende fra hinanden. De er illustrationer og skal ikke læses som fotos af virkelige begivenheder eller dokumentation for et produkts udseende.</p><p>En illustration kan blive genbrugt eller tilpasset. Billedet skal understøtte læsningen; det giver ikke historien en højere prioritet.</p></div></details>
+    </div>
+  </section>
+
+  <section class="about-contact" aria-labelledby="kontakt">
+    <div><p class="eyebrow">Gør siden bedre</p><h2 id="kontakt">Mangler vi noget vigtigt?</h2><p>Send en historie, en rettelse eller en idé. Ved fejl: vedlæg artiklens link og gerne den kilde, der viser, hvad der skal ændres.</p></div>
+    <a href="mailto:kontakt@ainyheder.com">kontakt@ainyheder.com</a>
+  </section>
+<section class="newsletter-pitch" id="nyhedsbrev" aria-labelledby="about-mail-title">
+  <div class="newsletter-story">
+    <p class="eyebrow">Nyhedsbrevet · Fremtiden, forklaret</p>
+    <h2 id="about-mail-title">Bliv klogere på det,<br>AI forandrer.</h2>
+    <p class="newsletter-lead">Én stor idé ad gangen. Foldet ud på let dansk med konkrete eksempler, så du forstår, hvad den kan betyde.</p>
+    <p class="newsletter-angle">Når Peter Diamandis udgiver et nyt brev, samler vi op på idéerne på dansk. Vi folder historierne ud, forklarer sammenhængene og ser på, hvad udviklingen kan betyde for os.</p>
+    <details class="newsletter-taste">
+      <summary>Smag på brevet <span aria-hidden="true">+</span></summary>
+      <div><p class="newsletter-sample-label">Fra en prøveudgave</p><h3>Når AI opdager noget nyt</h3><p>AlphaFold-databasen rummer over 200 millioner forudsigelser af proteiners form. Men en forudsigelse er ikke det samme som en måling i et laboratorium. Brevet forklarer, hvorfor begge dele er værdifulde — og hvad forskellen betyder, når nogen kalder AI et gennembrud.</p><a href="https://www.alphafold.ebi.ac.uk/" target="_blank" rel="noopener noreferrer">Se eksemplets kilde<span class="sr-only"> (åbner i en ny fane)</span></a></div>
+    </details>
   </div>
-</div>
-
-<main>
-  <h1>AI-nyheder, alle kan forstå</h1>
-  <p class="manchet">
-    Udviklingen inden for AI går hurtigere end nogen anden teknologi i vores levetid,
-    og den kommer til at påvirke dit arbejde, din økonomi og din hverdag.
-    AI-nyheder findes, fordi alle fortjener en fair chance for at følge med —
-    ikke kun dem, der taler flydende teknologisk.
-  </p>
-
-  <h2>Det gør vi</h2>
-  <p>
-    Vi følger de vigtigste internationale tech-medier og forskningskilder døgnet rundt
-    og genfortæller dagens væsentligste AI-historier på <strong>kort, letlæst dansk</strong> —
-    i vores egne ord, uden jargon og uden fyld. Hver artikel prioriteres efter,
-    hvor meget den betyder for almindelige mennesker: nye muligheder, penge,
-    og det man bør være forberedt på.
-  </p>
-  <p>
-    Når flere medier dækker samme historie, samler vi dem til én — så du slipper
-    for at læse den samme nyhed fem gange. Og under hver artikel finder du altid
-    <strong>"Hvad betyder det for dig?"</strong> — vores bud på, hvorfor historien
-    er værd at kende.
-  </p>
-
-  <h2>Vores kilder</h2>
-  <p>Historierne bygger på anerkendte internationale kilder, blandt andre:</p>
-  <div class="kilde-raekke">
-    <span class="kilde-tag">TechCrunch</span>
-    <span class="kilde-tag">The Verge</span>
-    <span class="kilde-tag">Ars Technica</span>
-    <span class="kilde-tag">MIT Technology Review</span>
-    <span class="kilde-tag">VentureBeat</span>
-    <span class="kilde-tag">OpenAI</span>
-    <span class="kilde-tag">Google DeepMind</span>
-    <span class="kilde-tag">arXiv</span>
+  <div class="newsletter-signup">
+    <p class="newsletter-invitation">Giv din nysgerrighed<br>noget at arbejde med.</p>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank" rel="noopener">
+      <label for="about-mail-email">Din e-mailadresse</label>
+      <input id="about-mail-email" type="email" name="email" autocomplete="email" inputmode="email" placeholder="dig@eksempel.dk" aria-describedby="about-mail-terms" required>
+      <button type="submit">Send mig brevet</button>
+      <p id="about-mail-terms" class="newsletter-terms">Gratis. Nye breve, når der er nyt at fortælle.<br>Afmeld når du vil.</p>
+      <p class="newsletter-form-note">Bekræft din tilmelding via mail. Tilmeldingen åbner i en ny fane. <a href="cookies.html">Om dine data</a></p>
+    </form>
   </div>
-  <p>
-    Hver eneste artikel linker til sin originalkilde, så du altid kan gå
-    direkte til førstehåndsmaterialet.
-  </p>
-
-  <h2>Sådan bruger vi AI — helt åbent</h2>
-  <p>
-    AI-nyheder er selv bygget med den teknologi, vi skriver om. Vores system
-    indsamler nyhederne, og en sprogmodel genfortæller dem på letlæst dansk og
-    fremhæver de vigtigste tal og fakta. Illustrationerne er AI-genererede og
-    skabt unikt til hver historie. Redaktionelle valg — hvilke kilder vi følger,
-    hvordan der prioriteres, og hvordan der skrives — er truffet af mennesker.
-  </p>
-  <div class="aerlig">
-    <strong>Ærlighed frem for alt:</strong> AI kan begå fejl, og en genfortælling
-    kan aldrig erstatte originalen. Opdager du en fejl, så skriv til os — og tjek
-    altid kildelinket, hvis en historie er vigtig for dine beslutninger.
-  </div>
-
-  <h2>Hvem står bag?</h2>
-  <p>
-    AI-nyheder er en <strong>uafhængig dansk redaktion</strong> — vi er ikke ejet af
-    et mediehus, en tech-virksomhed eller andre med aktier i, hvordan AI omtales.
-    Redaktionen arbejder efter tre faste principper: <strong>kildekrav</strong>
-    (hver historie linker til sit førstehåndsmateriale), <strong>åbenhed om AI</strong>
-    (vi fortæller præcis, hvad maskinen gør, og hvad mennesker gør — se ovenfor) og
-    <strong>rettevilje</strong> (fejl rettes hurtigst muligt, når vi opdager dem
-    eller får besked).
-  </p>
-  <p>I <a href="vaerktoejer.html" style="color:var(--accent)">værktøjsguiden</a> prioriterer vi de AI-værktøjer, vi ville starte med. Hvert valg forklares med en konkret opgave, så du kan se, hvad værktøjet kan bruges til.</p>
-
-  <h2>Rettelser</h2>
-  <p>
-    Finder du en faktuel fejl, retter vi den hurtigst muligt — og ved væsentlige fejl
-    markerer vi rettelsen i artiklen. Tjek altid kildelinket, før du handler på en historie.
-  </p>
-
-  <h2>Kontakt</h2>
-  <p>
-    Ris, ros, fejl eller tips til historier: skriv til
-    <a href="mailto:kontakt@ainyheder.com" style="color:var(--accent)">kontakt@ainyheder.com</a>.
-    Redaktionen læser alt.
-  </p>
+</section>
 </main>
-
-<footer>
-  Opdateres løbende hele døgnet · © 2026 AI-nyheder · ainyheder.com
-</footer>
-
-<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
-<script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
-</script>
+<footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/ai-mark.svg" alt="AI" width="32" height="32"><span>nyheder</span></a><p>Et skridt foran. På dansk.</p><nav aria-label="Bundnavigation"><a href="om.html">Om os</a><a href="cookies.html">Privatliv og lagring</a><a href="faq.html">Spørgsmål og svar</a><a href="feed.xml">RSS</a></nav><span>© 2026 AI-nyheder</span></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+<script>if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }</script>
 </body>
 </html>

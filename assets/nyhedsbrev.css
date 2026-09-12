@@ -1,0 +1,46 @@
+/* Fælles præsentation og tilmeldingsforløb for Fremtiden, forklaret. */
+.newsletter-pitch {
+  display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,1fr);gap:36px;
+  padding:30px;margin:36px 0 0;border:1px solid #404a32;border-radius:18px;
+  background:linear-gradient(120deg,#1d2418,var(--soft) 65%);scroll-margin-top:28px;
+}
+.newsletter-pitch h2 {font-size:clamp(1.8rem,3.1vw,2.6rem);font-weight:650;line-height:1.12;letter-spacing:-.05em;margin:12px 0 16px}
+.newsletter-lead {max-width:48ch;font-size:1.02rem;line-height:1.55;color:var(--ink);margin:0 0 12px}
+.newsletter-angle {max-width:54ch;color:var(--muted);font-size:.88rem;line-height:1.65;margin:0}
+.newsletter-taste {margin-top:18px;border-top:1px solid #3c4534}
+.newsletter-taste summary {display:flex;align-items:center;justify-content:space-between;gap:14px;list-style:none;min-height:44px;padding:10px 0;font-size:.87rem;color:var(--blue);font-weight:550}
+.newsletter-taste summary::-webkit-details-marker {display:none}
+.newsletter-taste summary span {font-size:1.35rem;line-height:1}
+.newsletter-taste[open] summary span {transform:rotate(45deg)}
+.newsletter-taste>div {padding:12px 0 0;font-size:.88rem;line-height:1.65;color:var(--muted)}
+.newsletter-taste h3 {color:var(--ink);font-size:1.08rem;line-height:1.3;margin:6px 0 10px}
+.newsletter-taste p {margin:0 0 12px}
+.newsletter-taste .newsletter-sample-label {font: .67rem var(--mono);letter-spacing:.05em;text-transform:uppercase;margin:0}
+.newsletter-taste a {font-size:.8rem}
+.newsletter-signup {align-self:center;border-left:1px solid #3c4534;padding-left:30px;min-width:0}
+.newsletter-invitation {font-size:1.2rem;font-weight:550;line-height:1.3;letter-spacing:-.03em;margin:0 0 20px}
+.newsletter-signup label {display:block;font-size:.8rem;margin-bottom:7px}
+.newsletter-signup input {display:block;width:100%;min-width:0;padding:12px;border:1px solid #515a46;border-radius:8px;background:var(--paper);color:var(--ink);font-size:16px}
+.newsletter-signup button {width:100%;min-height:46px;padding:12px 16px;margin-top:8px;background:var(--blue);color:#12170b;border-radius:8px;font-weight:650;font-size:.94rem}
+.newsletter-signup button:hover {background:#e1ff8b}
+.newsletter-signup .newsletter-terms {font-size:.8rem;line-height:1.55;color:var(--ink);margin:12px 0 0}
+.newsletter-signup .newsletter-form-note {font-size:.7rem;line-height:1.55;color:var(--muted);margin:10px 0 0}
+.newsletter-pitch :is(summary,input,button,a):focus-visible,.signup-page a:focus-visible {outline:2px solid var(--blue);outline-offset:4px}
+.signup-page {min-height:100svh;display:grid;place-items:center;padding:24px}
+.signup-confirmation {width:100%;max-width:600px;padding:clamp(22px,5vw,48px);border:1px solid #404a32;border-radius:20px;background:linear-gradient(145deg,#1d2418,var(--soft) 65%)}
+.signup-confirmation .brand {margin-bottom:40px;width:fit-content}
+.signup-confirmation h1 {font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.08;letter-spacing:-.055em;margin:14px 0 24px;font-weight:650}
+.signup-confirmation>p:not(.eyebrow) {color:var(--muted);font-size:1rem;margin:0 0 20px;line-height:1.65}
+.signup-confirmation strong {color:var(--ink);font-weight:550}
+.signup-confirmation .signup-help {font-size:.86rem!important}
+.signup-back {display:inline-block;margin-top:8px;background:var(--blue);color:#12170b;border-radius:8px;padding:12px 18px;text-decoration:none;font-weight:600;font-size:.9rem}
+@media(max-width:700px) {
+ .newsletter-pitch {grid-template-columns:minmax(0,1fr);gap:22px;padding:20px;margin-top:28px}
+ .newsletter-signup {border-left:0;border-top:1px solid #3c4534;padding:20px 0 0}
+ .newsletter-invitation {display:none}
+ .newsletter-pitch h2 {font-size:1.9rem}
+ .newsletter-lead {font-size:.95rem}
+ .newsletter-angle {font-size:.82rem}
+ .signup-page {padding:14px}
+}
+@media print {.newsletter-pitch{display:none}}

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="assets/fonts/skrifter.css?v=2"><link rel="stylesheet" href="assets/nyheder.css?v=15"><link rel="stylesheet" href="assets/uge.css?v=2">
 <script src="assets/uge.js?v=1" defer></script>
 <noscript><style>.week-page .navigation{display:flex;flex-wrap:wrap}.week-page .menu-button{display:none}</style></noscript>
+<link rel="stylesheet" href="/assets/nyhedsbrev.css?v=1">
 </head><body class="week-page"><a class="skip-link" href="#hovedindhold">Gå til ugens historier</a>
 <header class="site-header"><div class="masthead wrap"><a class="brand" href="./" aria-label="AI-nyheder, forsiden"><img src="assets/ai-mark.svg" alt="" width="40" height="40"><span>nyheder</span></a><span class="masthead-note">Et skridt foran.</span><div class="header-actions"><a class="mobile-benchmarks" href="https://artificialanalysis.ai/" target="_blank" rel="noopener noreferrer" aria-label="Benchmarks hos Artificial Analysis (ny fane)">Benchmarks</a><button class="menu-button" id="menuKnap" aria-label="Menu" aria-expanded="false" aria-controls="navigation"><span class="menu-label">Menu</span><span aria-hidden="true">☰</span></button></div></div><nav class="navigation wrap" id="navigation" aria-label="Hovednavigation"><a href="./">Nyheder</a><a href="uge.html" aria-current="page">Ugens overblik</a><a href="vaerktoejer.html">Værktøjer</a><a class="nav-benchmarks" href="https://artificialanalysis.ai/" target="_blank" rel="noopener noreferrer" title="AI-benchmarks hos Artificial Analysis">Benchmarks<span class="sr-only"> (åbner i en ny fane)</span></a><a href="om.html" class="nav-about">Om AI-nyheder</a></nav></header>
 <main class="wrap week-main" id="hovedindhold" tabindex="-1">
@@ -17,7 +18,28 @@ $fortaelling
 <h2 class="week-background-title">Historierne bag overblikket</h2>
 <section class="week-stories" aria-label="Historierne bag overblikket">$kort</section>
 $tendens
-<section class="week-subscribe" aria-labelledby="mailTitel"><div><p class="eyebrow">Hver fredag</p><h2 id="mailTitel">Ugen samlet i din indbakke.</h2><p>De vigtigste AI-historier. Gratis, og du kan altid afmelde dig.</p></div><form action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank"><label for="week-email">Din e-mailadresse</label><div class="week-mail-fields"><input id="week-email" type="email" name="email" autocomplete="email" placeholder="dig@eksempel.dk" required><button type="submit">Tilmeld</button></div><small>Tilmeldingen åbner i en ny fane.</small></form></section>
+<section class="newsletter-pitch" id="nyhedsbrev" aria-labelledby="week-mail-title">
+  <div class="newsletter-story">
+    <p class="eyebrow">Nyhedsbrevet · Fremtiden, forklaret</p>
+    <h2 id="week-mail-title">Bliv klogere på det,<br>AI forandrer.</h2>
+    <p class="newsletter-lead">Én stor idé ad gangen. Foldet ud på let dansk med konkrete eksempler, så du forstår, hvad den kan betyde.</p>
+    <p class="newsletter-angle">Når Peter Diamandis udgiver et nyt brev, samler vi op på idéerne på dansk. Vi folder historierne ud, forklarer sammenhængene og ser på, hvad udviklingen kan betyde for os.</p>
+    <details class="newsletter-taste">
+      <summary>Smag på brevet <span aria-hidden="true">+</span></summary>
+      <div><p class="newsletter-sample-label">Fra en prøveudgave</p><h3>Når AI opdager noget nyt</h3><p>AlphaFold-databasen rummer over 200 millioner forudsigelser af proteiners form. Men en forudsigelse er ikke det samme som en måling i et laboratorium. Brevet forklarer, hvorfor begge dele er værdifulde — og hvad forskellen betyder, når nogen kalder AI et gennembrud.</p><a href="https://www.alphafold.ebi.ac.uk/" target="_blank" rel="noopener noreferrer">Se eksemplets kilde<span class="sr-only"> (åbner i en ny fane)</span></a></div>
+    </details>
+  </div>
+  <div class="newsletter-signup">
+    <p class="newsletter-invitation">Giv din nysgerrighed<br>noget at arbejde med.</p>
+    <form action="https://buttondown.com/api/emails/embed-subscribe/AInyheder" method="post" target="_blank" rel="noopener">
+      <label for="week-mail-email">Din e-mailadresse</label>
+      <input id="week-mail-email" type="email" name="email" autocomplete="email" inputmode="email" placeholder="dig@eksempel.dk" aria-describedby="week-mail-terms" required>
+      <button type="submit">Send mig brevet</button>
+      <p id="week-mail-terms" class="newsletter-terms">Gratis. Nye breve, når der er nyt at fortælle.<br>Afmeld når du vil.</p>
+      <p class="newsletter-form-note">Bekræft din tilmelding via mail. Tilmeldingen åbner i en ny fane. <a href="cookies.html">Om dine data</a></p>
+    </form>
+  </div>
+</section>
 <p class="week-colophon">Opdateret <time datetime="$dato">$dato_vis</time> · Bearbejdet med AI; originalkilderne findes i artiklerne. <a href="./">Se de nyeste nyheder</a>.</p>
 </main>
 <footer class="site-footer wrap"><a class="brand" href="./"><img src="assets/ai-mark.svg" alt="AI" width="32" height="32"><span>nyheder</span></a><p>Et skridt foran. På dansk.</p><nav aria-label="Bundnavigation"><a href="om.html">Om os</a><a href="cookies.html">Privatliv og lagring</a><a href="faq.html">Spørgsmål og svar</a><a href="feed.xml">RSS</a></nav><span>© 2026 AI-nyheder</span></footer>

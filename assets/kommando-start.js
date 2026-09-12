@@ -2,7 +2,7 @@
 (function () {
   function start() {
     const script = document.createElement('script');
-    script.src = 'assets/kommando.js?v=11';
+    script.src = 'assets/kommando.js?v=13';
     document.head.appendChild(script);
   }
   if (location.protocol === 'file:' || ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {

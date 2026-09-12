@@ -1,0 +1,9 @@
+/* Design for denne udgave i Buttondowns almindelige Markdown-editor. */
+body.email-body { background-color:#0c0e12!important; color:#f2f3f5!important; padding:8px!important; }
+.newsletter-icon,.newsletter-masthead,.email-preamble { display:none!important; }
+.email-container { background-color:#0c0e12!important; border:0!important; border-spacing:0!important; width:100%!important; max-width:644px!important; }
+.email-container>tbody>tr>td { background-color:#0c0e12!important; padding:0!important; border:0!important; }
+.newsletter-body { margin:0!important; padding:0!important; }
+.email-actions--unsubscribe,.powered-by,.powered-by-container { color:#a6adb9!important; }
+.email-actions--unsubscribe a,.powered-by a { color:#d5ff5f!important; }
+@media(max-width:480px) { .outer{padding:8px!important;} .pad{padding:20px!important;} .title{font-size:30px!important;} }

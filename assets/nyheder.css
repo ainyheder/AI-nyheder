@@ -386,8 +386,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .lead-grid {
   display:grid;
   grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);
-  gap:18px;
-  margin-bottom:32px;
+  align-items:start;
+  gap:10px;
+  margin-bottom:16px;
 }
 
 .lead-grid.single-story {
@@ -395,7 +396,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 }
 
 .lead-story {
-  padding:32px 36px;
+  padding:12px;
   background:var(--blue);
   color:#12170b;
   border-radius:18px;
@@ -432,7 +433,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 }
 
 .lead-story .story-topline {
-  margin-bottom:18px;
+  margin-bottom:6px;
 }
 
 .story-date {
@@ -507,8 +508,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 
 .feature-stack {
   display:grid;
-  grid-template-rows:1fr 1fr;
-  gap:18px;
+  grid-template-rows:auto auto;
+  align-items:start;
+  gap:10px;
   min-width:0;
 }
 
@@ -516,7 +518,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
   border:1px solid var(--line);
   background:var(--soft);
   border-radius:18px;
-  padding:22px 26px;
+  padding:12px;
   min-width:0;
   position:relative;
   display:flex;
@@ -535,7 +537,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
   font-weight:600;
   line-height:1.25;
   letter-spacing:-.035em;
-  margin:12px 0;
+  margin:6px 0;
 }
 
 .feature-story p {
@@ -549,22 +551,31 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 }
 
 .story-excerpt {
-  display:flow-root;
+  --thumbnail-width:min(128px,34%);
+  position:relative;
+  min-width:0;
+}
+
+/* Teksten bestemmer højden. Billedet må aldrig skubbe kortets bund ned. */
+.story-excerpt:has(.story-thumbnail)>p {
+  margin-right:calc(var(--thumbnail-width) + 6px);
 }
 
 .lead-story .story-excerpt {
-  margin-top:18px;
+  margin-top:6px;
 }
 
 .story-thumbnail {
   display:block;
-  float:right;
-  margin:2px 0 4px 6px;
-  width:128px;
-  max-width:34%;
-  height:auto;
-  aspect-ratio:4/3;
-  object-fit:cover;
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+  width:var(--thumbnail-width);
+  height:100%;
+  max-height:96px;
+  object-fit:contain;
+  object-position:right top;
   border-radius:8px;
 }
 
@@ -723,7 +734,8 @@ input::placeholder {
 #nyhedsliste {
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:16px;
+  align-items:start;
+  gap:10px;
 }
 
 .news-row {
@@ -732,7 +744,7 @@ input::placeholder {
   position:relative;
   border:1px solid var(--line);
   border-radius:14px;
-  padding:24px;
+  padding:12px;
   background:#12151b;
   min-width:0;
   transition:background .18s,border-color .18s;
@@ -756,7 +768,7 @@ input::placeholder {
   font-size:1.25rem;
   letter-spacing:-.025em;
   line-height:1.35;
-  margin:11px 0;
+  margin:6px 0;
 }
 
 .news-row p {
@@ -1299,15 +1311,15 @@ body.reader-open {
   }
 
   .lead-story {
-    padding:28px;
+    padding:12px;
   }
 
   .feature-story {
-    padding:24px;
+    padding:12px;
   }
 
   .news-row {
-    padding:20px;
+    padding:12px;
   }
 
   .news-controls {
@@ -1496,12 +1508,12 @@ body.reader-open {
 
   .lead-grid {
     grid-template-columns:minmax(0,1fr);
-    gap:10px;
-    margin-bottom:24px;
+    gap:8px;
+    margin-bottom:12px;
   }
 
   .lead-story {
-    padding:18px;
+    padding:8px 10px;
     border-radius:14px;
   }
 
@@ -1515,7 +1527,7 @@ body.reader-open {
   }
 
   .lead-story .story-topline {
-    margin-bottom:12px;
+    margin-bottom:6px;
   }
 
   .lead-summary {
@@ -1525,21 +1537,21 @@ body.reader-open {
   }
 
   .lead-story .story-excerpt {
-    margin-top:12px;
+    margin-top:6px;
   }
 
   .feature-stack {
-    gap:12px;
+    gap:8px;
   }
 
   .feature-story {
-    padding:16px;
+    padding:8px 10px;
     border-radius:14px;
   }
 
   .feature-story h3 {
     font-size:1.25rem;
-    margin:10px 0;
+    margin:6px 0;
   }
 
   .feature-story p {
@@ -1595,11 +1607,11 @@ body.reader-open {
 
   #nyhedsliste {
     grid-template-columns:minmax(0,1fr);
-    gap:12px;
+    gap:8px;
   }
 
   .news-row {
-    padding:16px;
+    padding:8px 10px;
   }
 
   .news-row h3 {
@@ -1610,8 +1622,12 @@ body.reader-open {
     font-size:1rem;
   }
 
+  .story-excerpt {
+    --thumbnail-width:min(112px,34%);
+  }
+
   .story-thumbnail {
-    width:112px;
+    max-height:84px;
   }
 
   .sidebar {

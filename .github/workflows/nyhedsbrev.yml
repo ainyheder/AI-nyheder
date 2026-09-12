@@ -1,0 +1,66 @@
+name: Nyhedsbrev fra nye Metatrends-breve
+
+on:
+  schedule:
+    # Én daglig kildekontrol kl. 18.13 UTC. GitHub kan forsinke jobs.
+    - cron: "13 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # En separat statusgren undgår både ventetid på crawl og konflikter på main.
+  group: nyhedsbrev
+  cancel-in-progress: false
+
+jobs:
+  rediger-og-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: app
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kontrollér kvalitet og beskyttelse mod dobbelt udsendelse
+        working-directory: app
+        run: python3 _redaktion/proeve-nyhedsbrev.py
+      - name: Hent separat checkout til udsendelseshistorik
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: newsletter-state
+      - name: Åbn varig statusgren
+        working-directory: newsletter-state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "ai-news-bot"
+          git config user.email "actions@github.com"
+          # Netværksfejl må ikke forveksles med en manglende gren.
+          remote_ref=$(git ls-remote --heads origin refs/heads/codex/nyhedsbrev-status)
+          if [ -n "$remote_ref" ]; then
+            git fetch origin refs/heads/codex/nyhedsbrev-status
+            git checkout -B codex/nyhedsbrev-status FETCH_HEAD
+          else
+            git switch --orphan codex/nyhedsbrev-status
+          fi
+      - name: Find nye breve, bearbejd, kontrollér og send
+        working-directory: app
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          AI_UDBYDER: ${{ vars.AI_UDBYDER }}
+        run: python3 nyhedsbrev.py --run --state-dir ../newsletter-state
+      - name: Vis status og vej til fejlretning
+        if: always()
+        shell: bash
+        run: |
+          echo '### Nyhedsbrevet' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Nye offentlige Metatrends-breve sendes efter redaktion og kvalitetskontrol. Historik og tilbageholdte udkast ligger i state.json på codex/nyhedsbrev-status. Ingen abonnentdata gemmes.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Ved fejl: læs _redaktion/nyhedsbrev-drift.md. Et uklart afsendelsesforsøg gentages ikke automatisk.' >> "$GITHUB_STEP_SUMMARY"

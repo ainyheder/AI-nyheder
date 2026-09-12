@@ -179,6 +179,21 @@ def skriv_kommando_data(root, *, offentlig=False):
     artikler = laes("artikler", "data/articles.json", {}, "artikler", list)
     redaktoer = laes("redaktoer_status", "data/redaktoer-status.json", {})
     hjerne_status = laes("hjerner_status", "data/hjerner-status.json", {})
+    # Nye brevtrin skal kunne redigeres før næste crawl. Standardprompt er
+    # lokal konfiguration, ikke en påstand om en allerede gennemført AI-kørsel.
+    newsletter = {}
+    config_path = root / "opsaetning/nyhedsbrev.json"
+    if config_path.exists():
+        try:
+            newsletter = json.loads(config_path.read_text(encoding="utf-8"))
+            hjerne_status.setdefault("hjerner", {}).setdefault("ugens_overblik", {})["beskrivelse"] = (
+                "Skriver overblikket over de syv afsluttede dage på hjemmesiden")
+            for step, filename in (("nyhedsbrev", "nyhedsbrev-prompt.md"),
+                                   ("nyhedsbrev_kontrol", "nyhedsbrev-kontrol-prompt.md")):
+                prompt = (root / "opsaetning" / filename).read_text(encoding="utf-8")
+                hjerne_status.setdefault("hjerner", {}).setdefault(step, {})["standard_prompt"] = prompt
+        except (OSError, ValueError):
+            newsletter = {}
     kilder = laes("kilder", "data/kilder.json", {})
     laesertal = laes("laesertal", "data/laesertal.json", {})
     data = _offentligt({
@@ -192,6 +207,7 @@ def skriv_kommando_data(root, *, offentlig=False):
         "artikler": _artikelstatus(artikler, root),
         "redaktoer_status": _redaktoerstatus(redaktoer),
         "hjerner_status": _hjernerstatus(hjerne_status),
+        "nyhedsbrev": newsletter,
         "modelkatalog": laes("modelkatalog", "data/modeller.json", {}),
         "kilder": _kildestatus(kilder),
         "laesertal": _laeserstatus(laesertal),

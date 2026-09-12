@@ -347,7 +347,9 @@ HJERNE_BESKRIVELSE = {
     "kartotek": "Skriver dagens prompt til prompt-kartoteket",
     "quiz": "Laver ugens nyhedsquiz",
     "dagens_overblik": "Skriver de fem punkter i Dagens overblik på forsiden",
-    "ugens_overblik": "Skriver ugens digest og nyhedsbrevet",
+    "ugens_overblik": "Skriver overblikket over de syv afsluttede dage på hjemmesiden",
+    "nyhedsbrev": "Bearbejder nye Metatrends-breve til en fyldig dansk fortælling",
+    "nyhedsbrev_kontrol": "Kontrollerer original og brev før automatisk udsendelse",
     "youtube": "Opsummerer YouTube-videoer på dansk med tidsstempler",
     "opslag": "Skriver opslag til de sociale platforme",
 }
@@ -626,6 +628,8 @@ def _standard_prompts() -> dict:
         "kartotek": SYSTEM_KARTOTEK, "quiz": SYSTEM_QUIZ,
         "dagens_overblik": SYSTEM_BRIEF, "ugens_overblik": SYSTEM_UGE,
         "youtube": SYSTEM_YT, "opslag": SYSTEM_OPSLAG,
+        "nyhedsbrev": (ROOT / "opsaetning/nyhedsbrev-prompt.md").read_text(encoding="utf-8"),
+        "nyhedsbrev_kontrol": (ROOT / "opsaetning/nyhedsbrev-kontrol-prompt.md").read_text(encoding="utf-8"),
     }
 
 
@@ -2984,7 +2988,7 @@ def _udgiv_fredagsbrev(d: dict, nu: datetime) -> None:
     UGE_UDSENDELSE.write_text(json.dumps(status, indent=2), encoding="utf-8")
 
 
-def lav_ugens_overblik(artikler: list[dict], *, nu=None, brug_ai=True, send_brev=True) -> dict:
+def lav_ugens_overblik(artikler: list[dict], *, nu=None, brug_ai=True, send_brev=False) -> dict:
     """Vælg og fortæl om de syv afsluttede dage. I dag er altid udeladt."""
     import ugeoverblik
     nu = nu or datetime.now(timezone.utc)
@@ -3033,8 +3037,8 @@ def lav_ugens_overblik(artikler: list[dict], *, nu=None, brug_ai=True, send_brev
     data.pop("uge", None)
     data.pop("uge_nr", None)
     _skriv_uge(data)
-    if send_brev and godkendt:
-        _udgiv_fredagsbrev(data, nu)
+    # Nyhedsbreve håndteres udelukkende af nyhedsbrev.py. Det gamle argument
+    # accepteres for kompatibilitet, men må aldrig aktivere et fredagsbrev.
     return data
 
 

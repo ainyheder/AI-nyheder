@@ -78,13 +78,13 @@ jobs:
           python3 _redaktion/proeve-redaktionsprompter.py
           python3 _redaktion/proeve-workflow.py
           python3 _redaktion/proeve-uge.py
+          python3 _redaktion/proeve-nyhedsbrev.py
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
-          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           # Sociale opslag. Uden OPSLAG_LIVE=ja skrives der KUN udkast i loggen.
           OPSLAG_LIVE: ${{ vars.OPSLAG_LIVE }}
           BLUESKY_BRUGER: ${{ secrets.BLUESKY_BRUGER }}
