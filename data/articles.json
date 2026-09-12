@@ -1,7 +1,112 @@
 {
-  "opdateret": "2026-09-12T14:21:32.813244+00:00",
+  "opdateret": "2026-09-12T15:15:33.289402+00:00",
   "antal": 150,
   "artikler": [
+    {
+      "titel": "OpenAI just wants to win",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+      "resume": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]",
+      "dato": "2026-09-12T07:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-12T11:30:33.174560+00:00",
+      "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
+      "rubrik": "OpenAI løser Navier-Stokes med 10.000 agenter",
+      "resume_da": "OpenAI hævder at have løst Navier-Stokes på 88 timer med 10.000 agenter. Matematikere reagerer med bekymring over rivalisering og manglende gennemsigtighed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "OpenAI's gennembrud",
+          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
+        },
+        {
+          "overskrift": "Konflikt med matematikere",
+          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
+        },
+        {
+          "overskrift": "OpenAI afviser beskyldninger",
+          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "88 timer",
+          "label": "tid til at finde en løsning ifølge OpenAI"
+        },
+        {
+          "tal": "10.000",
+          "label": "agenter brugt af OpenAI"
+        },
+        {
+          "tal": "1 mio. dollars",
+          "label": "dusør per Millennium Prize-problem"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
+        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
+        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
+        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
+        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
+      ],
+      "betydning": "",
+      "pointer": [
+        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
+        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
+        "Beskyldninger om data brugt uden klare svar fra OpenAI."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI hævder at have løst et Millennium Prize-problem med AI-agenter, mens matematikere er skeptiske.",
+        "forbehold": "Kun resumé; uklart hvilket problem, og om løsningen holder faglig granskning.",
+        "emne": "openai matematikgennembrud"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc",
+      "prio": 5,
+      "side": "artikel/41bb568b2b6096a5.html"
+    },
+    {
+      "titel": "Introducing GPT-6 Astra for developers",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "resume": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredible renderings of gardens, shipyards, animals , cityscapes, even Dyson spheres.…",
+      "dato": "2026-09-05T23:27:48+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+      "resume_da": "Den nye model er mere detaljeret og forstår opgaver bedre. Ifølge OpenAI er den især stærk til at bygge 3D-modeller.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "OpenAI præsenterer GPT-6 Astra for udviklere med bedre promptforståelse og især styrke til 3D-modeller.",
+        "forbehold": "Producentpåstande om evner; ingen uafhængige tests, priser eller tilgængelighed fremgår.",
+        "emne": "gpt-6 astra"
+      },
+      "prio": 7,
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
     {
       "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
       "link": "https://openai.com/index/cognition-devin-testing-with-astra",
@@ -438,6 +543,36 @@
       "side": "artikel/3409c3c31dfa6b1f.html"
     },
     {
+      "titel": "Trump is giving data centers a pass to pollute",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
+      "resume": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
+      "dato": "2026-09-12T10:41:27-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-12T15:15:33.289402+00:00",
+      "eget_foerst_set": "2026-09-12T15:15:33.289402+00:00",
+      "rubrik": "Trump lemper miljøkrav for AI-datacentre",
+      "resume_da": "Tidligere EPA-folk advarer i ny rapport om øgede sundhedsrisici for amerikanere og opfordrer forgæves præsidenten til at indføre beskyttelse af datacenter-sundhed.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidligere EPA-folk rapporterer, at Trump lemper miljøkrav for at fremskynde AI-datacentre, med øgede sundhedsrisici til følge.",
+        "forbehold": "Rapporten er fra kritikere af politikken; konkrete regelændringer og effekter er ikke kvantificeret.",
+        "emne": "datacentre miljø trump"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "kat_ai": true,
+      "prio": 6
+    },
+    {
       "titel": "Meta bets on AI agent Muse to catch up in AI race",
       "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "resume": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up […]",
@@ -446,28 +581,49 @@
       "kategori": "Lanceringer",
       "foerst_set": "2026-09-08T21:21:14.645089+00:00",
       "eget_foerst_set": "2026-09-08T21:21:14.645089+00:00",
-      "rubrik": "Meta lancerer Muse: AI-assistent til hverdagen",
-      "resume_da": "Meta vil indhente konkurrenterne med Muse, en AI-assistent, der kan shoppe, skrive mails og planlægge rejser for dig. Den er gratis for de fleste og lanceres i USA.",
+      "rubrik": "Meta lancerer AI-agenten Muse i USA",
+      "resume_da": "Meta lancerer den personlige AI-agent Muse i USA på iOS, Android, web og WhatsApp. Muse kan handle på brugerens vegne på tværs af apps og tjenester.",
       "brief": "",
       "sektioner": [
         {
-          "overskrift": "Det er sket",
-          "tekst": "Meta har præsenteret Muse, en personlig AI-assistent, som skal hjælpe almindelige mennesker med hverdagsopgaver som at shoppe på nettet, skrive mails og planlægge rejser. Assistenten kan selv åbne en browser, udfylde formularer og endda forhandle på dine vegne – og fortsætter arbejdet, selv efter du lukker appen. Muse lanceres først i USA på iOS, Android og muse.ai, og AI-briller er på vej."
+          "overskrift": "Hvad er Muse",
+          "tekst": "Muse er en \"personlig AI-agent\", der ifølge Meta kan hjælpe med hverdagsopgaver som at handle online, sende e-mails og planlægge rejser. Når brugeren giver et mål, kan Muse ifølge Meta arbejde selvstændigt: åbne en browser, udfylde formularer og forhandle på brugerens vegne. Ved længere opgaver fortsætter Muse i baggrunden, selv efter brugeren lukker appen, og vender tilbage, hvis noget ændrer sig, eller hvis den har brug for godkendelse – for eksempel ved et køb."
         },
         {
-          "overskrift": "Sådan skiller den sig ud",
-          "tekst": "Muse er gratis for de fleste, men Meta nævner, at der kan komme betalte abonnementer for dem, der vil have mere. Det store salgsargument er brugervenlighed: 'Ingen teknisk erfaring nødvendig, ingen læringskurve,' siger Meta. Du kan chatte med Muse via appen eller WhatsApp, og den husker detaljer, du kun nævner én gang, så den kan komme med uopfordrede forslag."
+          "overskrift": "Adgang og priser",
+          "tekst": "Muse ruller ud i USA på iOS, Android og muse.ai, med AI-briller \"kommer snart\". Assistenten er gratis for de fleste brugere, men Meta oplyser, at der kommer betalte abonnementer \"for folk, der vil gøre mere\". TechCrunch skriver, at to betalte planer er tilgængelige ved lanceringen: Power til $20 om måneden og Maximum til $100 om måneden, og at abonnementerne træder i kraft, efterhånden som brugen stiger. Meta mener, at de fleste vil forblive på gratistrinet. Der er ikke oplyst nærmere om gratisbrugeres grænser."
+        },
+        {
+          "overskrift": "Nemhed og hukommelse",
+          "tekst": "Meta fremhæver nemhed som Muses fortrin: \"Enhver kan bruge det ud af boksen, ingen teknisk erfaring påkrævet,\" hævder selskabet og tilføjer, at \"der er ingen indlæringskurve\". Kommunikationen foregår gennem Muse-appen eller via WhatsApp. Muse husker ifølge Meta detaljer, brugeren deler – selv enkeltstående omtaler – hvilket muliggør bedre og uopfordrede forslag. Dette er Metas egne påstande; uafhængig afprøvning er ikke medsendt."
         },
         {
           "overskrift": "Privatliv og sikkerhed",
-          "tekst": "Meta lover, at du kan fravælge, at dine samtaler med Muse bruges til at træne deres AI-modeller, og du kan bede den 'glemme' ting, den har lært om dig. Muse kører på en virtuel computer i skyen, hvor den ikke kan se dine adgangskoder eller betalingsoplysninger. En anden AI-agent, Sentinel, holder øje med, at intet når internettet uden godkendelse."
+          "tekst": "Meta lægger vægt på privatliv og sikkerhed. Brugere kan fravælge, at deres interaktioner bruges til at træne Metas AI-modeller – det vides ikke, om dette er slået til eller fra som standard – og kan bede Muse om at \"glemme\" specifikke ting. Muse kører på en virtuel computer i skyen, adskilt fra andre brugeres agenter. Ifølge Meta har Muse ingen adgang til adgangskoder eller betalingsmetoder, og en anden AI-agent, Sentinel, overvåger den samme virtuelle maskine for at sikre, at Muse ikke kan nå internettet uden godkendelse."
         },
         {
-          "overskrift": "Historien bag",
-          "tekst": "Muse er kernen i Metas nye AI-strategi efter at have brugt milliarder på en omlægning. Men Meta har haft problemer med tillid: en støtte-chatbot hjalp hackere med at overtage over 20.000 Instagram-konti, og en AI-genereret nyhedsstrøm brød virksomhedens egne regler. Konkurrenter som OpenAI og Google har lignende produkter, men Meta satser på, at Muse er nemmere at bruge."
+          "overskrift": "Integrationer og model",
+          "tekst": "Muse drives af Metas interne model Muse Spark og leveres med indbyggede forbindelser til en række tjenester. Brugeren vælger selv, hvilke apps og tjenester der kobles til – én ad gangen – for at gøre tilvalget gennemsigtigt. Hvis en ønsket tjeneste ikke er understøttet, men har et offentligt API, kan Muse oprette en forbindelse med brugerens legitimationsoplysninger. Uden API kan Muse gå via browseren i stedet. Understøttelse af 1Password og Shop Pay er på vej, og Muse kan ifølge Meta allerede betale sikkert via Stripe Link."
+        },
+        {
+          "overskrift": "Bagage og tillid",
+          "tekst": "Meta er en kendt og udbredt aktør, men skal overvinde tillidsproblemer. TechCrunch skriver, at lanceringen kommer mindre end to uger efter, at Meta indgik et forlig på $18 milliarder i et søgsmål om sociale mediers skadevirkninger. Verge nævner tidligere fejltrin: en \"Discover\"-funktion, der viste andre brugeres prompts og samtaler, en support-chatbot der hjalp hackere med at overtage over 20.000 Instagram-konti, og et kortlivet AI-genereret clickbait-nyhedsfeed. Muse kræver tillid til mere personlig information end sociale medier hidtil har gjort."
         }
       ],
-      "noegletal": [],
+      "noegletal": [
+        {
+          "tal": "$20 om måneden",
+          "label": "Power-abonnement ved lancering"
+        },
+        {
+          "tal": "$100 om måneden",
+          "label": "Maximum-abonnement ved lancering"
+        },
+        {
+          "tal": "$18 milliarder",
+          "label": "Metas forlig om sociale mediers skadevirkninger"
+        }
+      ],
       "figurer": [],
       "andre": [
         {
@@ -507,20 +663,18 @@
         }
       ],
       "detaljer": [
-        "Muse er gratis for de fleste brugere, med betalte abonnementer på vej for dem, der vil have mere.",
-        "Assistenten kan selv udfylde formularer, shoppe online, sende mails og planlægge ture.",
-        "Muse fortsætter med at arbejde i baggrunden, også når appen er lukket.",
-        "Den lanceres i USA på iOS, Android og hjemmesiden muse.ai.",
-        "En sikkerheds-AI-agent kaldet Sentinel overvåger Muse for at forhindre uautoriseret internetadgang.",
-        "Meta lover, at brugerne kan fravælge, at deres data bruges til træning af AI-modeller.",
-        "Konkurrenter som OpenAI, Anthropic og Google har lignende assistenter, men Meta fokuserer på brugervenlighed."
+        "Muse kan sende e-mails, booke rejser, sænke regninger, udfylde formularer og lave indkøbslister",
+        "Brugere skal tilføje et betalingskort for at komme i gang med Muse",
+        "Muse kan vælge at gå via browseren, hvis en tjeneste ikke har et offentligt API",
+        "TechCrunch: Abonnementer træder i kraft, efterhånden som brugen stiger",
+        "Meta planlægger en krypteret \"confidential\" virtuel maskine senere i år"
       ],
-      "betydning": "Muse kan klare dine tidkrævende opgaver, men du skal stole på Meta med dine data.",
+      "betydning": "For at bruge Muse skal du dele flere personlige oplysninger med Meta end ved tidligere produkter – et tillidsvæddemål efter selskabets mange privatlivssager.",
       "pointer": [
-        "Meta lancerer gratis AI-assistent Muse i USA.",
-        "Muse kan shoppe, skrive mails og planlægge rejser.",
-        "Den minder om produkter fra OpenAI og Google.",
-        "Meta satser på brugervenlighed og privatliv for at vinde brugere."
+        "Muse er gratis, med abonnementer fra $20/md.",
+        "Agenten udfører opgaver selvstændigt på tværs af apps",
+        "Meta lover fravalg af træning og adgangskodebeskyttelse",
+        "Tillid er afgørende efter milliardforlig og fejltrin"
       ],
       "kat_ai": true,
       "redaktion": {
@@ -540,7 +694,8 @@
       },
       "prio": 7,
       "side": "artikel/f903c700664042a3.html",
-      "redaktion_instruks": "30b24f5dd9bb0019"
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc"
     },
     {
       "titel": "AI agents are flooding public services with new requests",
@@ -979,81 +1134,6 @@
       "side": "artikel/b3b5bc18a7beccd4.html"
     },
     {
-      "titel": "OpenAI just wants to win",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "resume": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]",
-      "dato": "2026-09-12T07:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-12T11:30:33.174560+00:00",
-      "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
-      "rubrik": "OpenAI løser Navier-Stokes med 10.000 agenter",
-      "resume_da": "OpenAI hævder at have løst Navier-Stokes på 88 timer med 10.000 agenter. Matematikere reagerer med bekymring over rivalisering og manglende gennemsigtighed.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "OpenAI's gennembrud",
-          "tekst": "OpenAI siger, at dets ikke-udgivne model løste Navier-Stokes-problemet på 88 timer ved hjælp af **10.000 agenter**. Virksomheden brugte **tens of millions of dollars** på beregningskraft. Resultatet er endnu ikke uafhængigt verificeret. Navier-Stokes er et af syv Millennium Prize-problemer med en dusør på **1 million dollars**."
-        },
-        {
-          "overskrift": "Konflikt med matematikere",
-          "tekst": "Sébastien Bubeck fra OpenAI tilbød Tristan Buckmaster næsten ubegrænset beregningskraft og eneforfatterskab på OpenAIs artikel, hvis han droppede sin samarbejdspartner Levent Alpöge, der er ansat hos Anthropic. Buckmaster afslog og kaldte tilbuddet en bestikkelse. Han stiller nu spørgsmål ved, om hans brug af Codex kan have bidraget til OpenAIs resultater."
-        },
-        {
-          "overskrift": "OpenAI afviser beskyldninger",
-          "tekst": "OpenAI nægter, at Buckmasters Codex-prompts har påvirket systemet. Talsperson Laurance Fauconnet siger, at det er umuligt, at de sidste to måneders prompts har haft indflydelse. Buckmaster er ikke overbevist og mener, at udtalelsen bør tages med stor skepsis. Bubeck har afvist Buckmasters karakteristik af samtalerne."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "88 timer",
-          "label": "tid til at finde en løsning ifølge OpenAI"
-        },
-        {
-          "tal": "10.000",
-          "label": "agenter brugt af OpenAI"
-        },
-        {
-          "tal": "1 mio. dollars",
-          "label": "dusør per Millennium Prize-problem"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Navier-Stokes er et af syv Millennium Prize-problemer fra 2000.",
-        "Levent Alpöge er ansat hos Anthropic, en rival til OpenAI.",
-        "Buckmaster og Alpöge arbejdede på beviset, men havde ikke afsluttet det.",
-        "OpenAI indrømmede tidligere, at man ikke kunne udelukke brug af data fra Buckmaster.",
-        "Bubeck har sagt, at OpenAI har lavet lignende aftaler med andre matematikere."
-      ],
-      "betydning": "",
-      "pointer": [
-        "OpenAI hævder at have løst Navier-Stokes med AI og store ressourcer.",
-        "Matematikere kritiserer OpenAIs metoder og rivalisering.",
-        "Beskyldninger om data brugt uden klare svar fra OpenAI."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI hævder at have løst et Millennium Prize-problem med AI-agenter, mens matematikere er skeptiske.",
-        "forbehold": "Kun resumé; uklart hvilket problem, og om løsningen holder faglig granskning.",
-        "emne": "openai matematikgennembrud"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 5,
-      "side": "artikel/41bb568b2b6096a5.html"
-    },
-    {
       "titel": "Universal Music is launching an AI music platform with ElevenLabs",
       "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
       "resume": "Universal Music Group is launching a new AI-powered platform that will allow users to draw from its catalog of licensed music to create song remixes, mashups, and new takes on tracks, according to an announcement on Thursday. The record label is developing the platform through a multiyear licensing agreement with ElevenLabs, a company that specializes […]",
@@ -1197,6 +1277,62 @@
       "side": "artikel/9622d1970698da66.html"
     },
     {
+      "titel": "Quoting Calif Research",
+      "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
+      "resume": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team found the bug and wrote the first remote code execution (RCE) exploit in about two…",
+      "dato": "2026-09-10T00:56:41+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
+      "resume_da": "Forskere bag den første zero-click-orm gennem WeChat-opkald demonstrerer, hvordan AI kan bruges til at finde fejl og skrive exploits på kort tid.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hvad er nyt",
+          "tekst": "Forskerne har frigivet en demo af WeWorm, som beskrives som den første zero-click-orm, der spreder sig gennem WeChat-opkald på både iOS og Android. Ifølge dem kræver ormen hverken, at offeret svarer på opkaldet eller interagerer med telefonen. Selve udnyttelsen finder sted, uanset om opkaldet besvares."
+        },
+        {
+          "overskrift": "AI som værktøj",
+          "tekst": "Teamet opdagede fejlen og skrev den første remote code execution-exploit på omkring to dage ved hjælp af AI. Selve ormen tog yderligere en uge at bygge. Forskerne fremhæver, at AI allerede kan udføre det meste af arbejdet, og at menneskene stod for at vælge mål og teste sikkert."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Udbreder sig gennem WeChat-opkald på iOS og Android",
+        "Offeret behøver ikke svare eller interagere",
+        "AI hjalp med at finde fejlen og skrive exploit på to dage"
+      ],
+      "betydning": "Forskerne viser, at AI kan gøre det lettere at udvikle avancerede cyberangreb, hvilket kan påvirke, hvordan ondsindede aktører arbejder.",
+      "pointer": [
+        "AI kan fremskynde udvikling af exploits betydeligt",
+        "Zero-click-orm spreder sig via WeChat-opkald",
+        "Demo frigivet af forskerne bag"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Forskere brugte AI til at finde fejl og skrive første RCE-orm via WeChat-opkald på ni dage.",
+        "forbehold": "Bygger på forskernes egen demo og citat; uafhængig verifikation mangler.",
+        "emne": "weworm wechat orm"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc",
+      "prio": 6,
+      "side": "artikel/180b6c6ca2d33492.html"
+    },
+    {
       "titel": "Students who use AI generally score worse at school",
       "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
       "resume": "Students who use AI to help them study tend to perform worse at school than those who don't, according to data from a global OECD educational report. The situation is more complex than it sounds though, with certain types of AI use giving learners a slight boost, especially among students taught to critically assess how […]",
@@ -1278,62 +1414,6 @@
       "side": "artikel/009e61788df2b717.html",
       "redaktion_instruks": "30b24f5dd9bb0019",
       "brief_instruks": "748464c0b45c6acc"
-    },
-    {
-      "titel": "Quoting Calif Research",
-      "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
-      "resume": "Today, we're releasing a demo of WeWorm, the first zero-click worm to spread through WeChat calls across iOS and Android. [...] The victim does not need to answer the call, or interact with their phone at all. Even if they do answer, they hear nothing, and the exploit still succeeds. [...] Working with AI, our team found the bug and wrote the first remote code execution (RCE) exploit in about two…",
-      "dato": "2026-09-10T00:56:41+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
-      "resume_da": "Forskere bag den første zero-click-orm gennem WeChat-opkald demonstrerer, hvordan AI kan bruges til at finde fejl og skrive exploits på kort tid.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt",
-          "tekst": "Forskerne har frigivet en demo af WeWorm, som beskrives som den første zero-click-orm, der spreder sig gennem WeChat-opkald på både iOS og Android. Ifølge dem kræver ormen hverken, at offeret svarer på opkaldet eller interagerer med telefonen. Selve udnyttelsen finder sted, uanset om opkaldet besvares."
-        },
-        {
-          "overskrift": "AI som værktøj",
-          "tekst": "Teamet opdagede fejlen og skrev den første remote code execution-exploit på omkring to dage ved hjælp af AI. Selve ormen tog yderligere en uge at bygge. Forskerne fremhæver, at AI allerede kan udføre det meste af arbejdet, og at menneskene stod for at vælge mål og teste sikkert."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Udbreder sig gennem WeChat-opkald på iOS og Android",
-        "Offeret behøver ikke svare eller interagere",
-        "AI hjalp med at finde fejlen og skrive exploit på to dage"
-      ],
-      "betydning": "Forskerne viser, at AI kan gøre det lettere at udvikle avancerede cyberangreb, hvilket kan påvirke, hvordan ondsindede aktører arbejder.",
-      "pointer": [
-        "AI kan fremskynde udvikling af exploits betydeligt",
-        "Zero-click-orm spreder sig via WeChat-opkald",
-        "Demo frigivet af forskerne bag"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "gennembrud",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Forskere brugte AI til at finde fejl og skrive første RCE-orm via WeChat-opkald på ni dage.",
-        "forbehold": "Bygger på forskernes egen demo og citat; uafhængig verifikation mangler.",
-        "emne": "weworm wechat orm"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc",
-      "prio": 6,
-      "side": "artikel/180b6c6ca2d33492.html"
     },
     {
       "titel": "OpenAI agents attacked RubyGems back in May",
@@ -2016,7 +2096,7 @@
       "titel": "Mathematicians want proof OpenAI didn’t use their work",
       "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
       "resume": "Another researcher is challenging OpenAI about the data driving its increasingly impressive array of mathematical discoveries. Just days after a bitter row erupted over whether the company's models benefited from unpublished work, a second mathematician has come forward accusing the AI giant of unethical and \"dishonest\" behavior and a lack of transparency about the origins […]",
-      "dato": "2026-09-10T07:00:57-04:00",
+      "dato": "2026-09-10T11:00:57+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-09-10T13:45:53.815708+00:00",
@@ -2186,6 +2266,34 @@
       "eget_foerst_set": "2026-09-08T18:02:43.998469+00:00",
       "rubrik": "DeepMind lancerer AlphaGenome Atlas",
       "resume_da": "Google DeepMind annoncerer AlphaGenome Atlas: forudsagte molekylære effekter af 9 milliarder DNA-variantet hos mennesket.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hvad er nyt",
+          "tekst": "Google DeepMind præsenterer AlphaGenome Atlas, et forudsigelseskort over det menneskelige genom. Ifølge DeepMind dækker kortet de molekylære effekter af **9 milliarder** enkeltbogstavs-DNA-varianter. Det er altså ikke en ny måling af én person, men et forsøg på at forudsige, hvad hver enkelt lille ændring i arvemassen kan gøre molekylært."
+        },
+        {
+          "overskrift": "Hvorfor det er interessant",
+          "tekst": "Målet er at gøre det muligt at slå op, hvad en given enkeltbogstavsændring forventes at betyde, uden at skulle teste hver variant i laboratoriet. Hvor langt det rækker i praksis, og hvor præcist kortet er, fremgår ikke af det medsendte materiale. Det er en forudsigelse fra DeepMind, ikke en uafhængigt afprøvet ressource."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "9 milliarder",
+          "label": "enkeltbogstavs-DNA-varianter"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "AlphaGenome Atlas er et forudsigelseskort over det menneskelige genom.",
+        "Det dækker effekterne af enkeltbogstavsvarianter ifølge DeepMind."
+      ],
+      "betydning": "",
+      "pointer": [
+        "9 milliarder DNA-varianter kortlagt i forudsigelser",
+        "Kortet er en model fra Google DeepMind"
+      ],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -2202,36 +2310,8 @@
         "emne": "alphagenome atlas, genomvarianter"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "kat_ai": true,
-      "prio": 7,
-      "sektioner": [
-        {
-          "overskrift": "Hvad er nyt",
-          "tekst": "Google DeepMind præsenterer AlphaGenome Atlas, et forudsigelseskort over det menneskelige genom. Ifølge DeepMind dækker kortet de molekylære effekter af **9 milliarder** enkeltbogstavs-DNA-varianter. Det er altså ikke en ny måling af én person, men et forsøg på at forudsige, hvad hver enkelt lille ændring i arvemassen kan gøre molekylært."
-        },
-        {
-          "overskrift": "Hvorfor det er interessant",
-          "tekst": "Målet er at gøre det muligt at slå op, hvad en given enkeltbogstavsændring forventes at betyde, uden at skulle teste hver variant i laboratoriet. Hvor langt det rækker i praksis, og hvor præcist kortet er, fremgår ikke af det medsendte materiale. Det er en forudsigelse fra DeepMind, ikke en uafhængigt afprøvet ressource."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "9 milliarder",
-          "label": "enkeltbogstavs-DNA-varianter"
-        }
-      ],
-      "detaljer": [
-        "AlphaGenome Atlas er et forudsigelseskort over det menneskelige genom.",
-        "Det dækker effekterne af enkeltbogstavsvarianter ifølge DeepMind."
-      ],
-      "betydning": "",
-      "pointer": [
-        "9 milliarder DNA-varianter kortlagt i forudsigelser",
-        "Kortet er en model fra Google DeepMind"
-      ],
       "brief_instruks": "748464c0b45c6acc",
+      "prio": 7,
       "side": "artikel/8aaadec7c05e0c22.html"
     },
     {
@@ -2576,71 +2656,6 @@
       "side": "artikel/1b44943176b0dfbb.html"
     },
     {
-      "titel": "Instacart launches an AI grocery shopping assistant called Clementine",
-      "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
-      "resume": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
-      "dato": "2026-09-09T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
-      "rubrik": "Instacart lancerer AI-indkøbsassistenten Clementine",
-      "resume_da": "Instacart har annonceret Clementine, en AI-assistent der omdanner samtaler, indkøbssedler og opskrifter til færdige indkøbskurve. Den skal også foreslå tilbud og billigere alternativer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fra samtale til kurv",
-          "tekst": "Instacart har offentliggjort en ny AI-assistent kaldet **Clementine**, som ifølge selskabet kan omsætte en samtale, en indkøbsseddel eller en opskrift til en klar indkøbskurv. Eksempler fra Instacart er forespørgsler som \"I need a week of budget-friendly kids' lunches\", \"high-protein, easy dinners for two\" eller \"order my usuals\". Instacart oplyser ikke præcise tilgængelighedsdetaljer i det medsendte materiale."
-        },
-        {
-          "overskrift": "Personlige opskrifter og tilbud",
-          "tekst": "Clementine kan ifølge Instacart generere personlige opskrifter eller hente dem fra udgivere, og tilpasse anbefalinger til husstandens præferencer som glutenfri, vegetarisk, nøddefri eller økologisk. Assistenten skal desuden vise relevante tilbud og foreslå billigere alternativer. Brugere kan angiveligt uploade et foto af en håndskrevet indkøbsseddel eller et skærmbillede af en digital seddel og få den lavet om til en kurv."
-        },
-        {
-          "overskrift": "Konkurrence om planlægningen",
-          "tekst": "Instacart er ikke alene: **Uber Eats** og **DoorDash** har ifølge TechCrunch allerede introduceret lignende AI-assistenter, der kan omdanne naturligt sprog og indkøbssedler til personlige kurve. Ifølge TechCrunch viser det en bevægelse, hvor leveringsapps ikke kun vil være steder, hvor man finder og køber varer, men også der, hvor beslutningen træffes. De konkurrerer dermed også om at blive husstandens faste planlægningsværktøj og holde brugerne væk fra chatbotter som ChatGPT."
-        },
-        {
-          "overskrift": "Instacarts begrundelse",
-          "tekst": "\"Every night, millions of families ask the same question: 'What's for dinner?' Not knowing the answer, let alone what to shop for, is one of the most universal human experiences, and a problem Instacart is built to solve,\" siger CEO **Chris Rogers** i en e-mailet pressemeddelelse gengivet af TechCrunch. Han tilføjer: \"We've spent nearly 15 years learning how families shop and eat, and Clementine puts that knowledge to work.\" Der er ikke oplyst lanceringsdato eller pris."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Clementine kan ifølge Instacart lave opskrifter og tilpasse anbefalinger til kostbehov.",
-        "Assistenten skal vise tilbud og foreslå billigere alternativer.",
-        "Brugere kan uploade foto eller skærmbillede af indkøbsseddel til kurv.",
-        "Instacart oplyser ikke pris, adgang eller tilgængelighed for Clementine."
-      ],
-      "betydning": "Leveringsapps forsøger at flytte indkøbsbeslutningen ind i deres egen app, før brugerne når til kurven, og dermed konkurrere med chatbotter som ChatGPT om planlægningen.",
-      "pointer": [
-        "Instacart annoncerer AI-assistenten Clementine.",
-        "Clementine omdanner samtaler og indkøbssedler til kurve.",
-        "Uber Eats og DoorDash har lignende assistenter."
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Instacart lancerer Clementine, der laver indkøbslister om til kurve og hjælper med madplan og budget.",
-        "forbehold": "",
-        "emne": "instacart, clementine"
-      },
-      "prio": 6,
-      "side": "artikel/489fd9472b6bee4b.html",
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "brief_instruks": "748464c0b45c6acc"
-    },
-    {
       "titel": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
       "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
       "resume": "The round for the two-year-old startup is coming together months after Mecka announced its Series A.",
@@ -2718,6 +2733,71 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 4,
       "side": "artikel/c923ead07513500b.html"
+    },
+    {
+      "titel": "Instacart launches an AI grocery shopping assistant called Clementine",
+      "link": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
+      "resume": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
+      "dato": "2026-09-09T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "eget_foerst_set": "2026-09-09T13:51:27.769975+00:00",
+      "rubrik": "Instacart lancerer AI-indkøbsassistenten Clementine",
+      "resume_da": "Instacart har annonceret Clementine, en AI-assistent der omdanner samtaler, indkøbssedler og opskrifter til færdige indkøbskurve. Den skal også foreslå tilbud og billigere alternativer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra samtale til kurv",
+          "tekst": "Instacart har offentliggjort en ny AI-assistent kaldet **Clementine**, som ifølge selskabet kan omsætte en samtale, en indkøbsseddel eller en opskrift til en klar indkøbskurv. Eksempler fra Instacart er forespørgsler som \"I need a week of budget-friendly kids' lunches\", \"high-protein, easy dinners for two\" eller \"order my usuals\". Instacart oplyser ikke præcise tilgængelighedsdetaljer i det medsendte materiale."
+        },
+        {
+          "overskrift": "Personlige opskrifter og tilbud",
+          "tekst": "Clementine kan ifølge Instacart generere personlige opskrifter eller hente dem fra udgivere, og tilpasse anbefalinger til husstandens præferencer som glutenfri, vegetarisk, nøddefri eller økologisk. Assistenten skal desuden vise relevante tilbud og foreslå billigere alternativer. Brugere kan angiveligt uploade et foto af en håndskrevet indkøbsseddel eller et skærmbillede af en digital seddel og få den lavet om til en kurv."
+        },
+        {
+          "overskrift": "Konkurrence om planlægningen",
+          "tekst": "Instacart er ikke alene: **Uber Eats** og **DoorDash** har ifølge TechCrunch allerede introduceret lignende AI-assistenter, der kan omdanne naturligt sprog og indkøbssedler til personlige kurve. Ifølge TechCrunch viser det en bevægelse, hvor leveringsapps ikke kun vil være steder, hvor man finder og køber varer, men også der, hvor beslutningen træffes. De konkurrerer dermed også om at blive husstandens faste planlægningsværktøj og holde brugerne væk fra chatbotter som ChatGPT."
+        },
+        {
+          "overskrift": "Instacarts begrundelse",
+          "tekst": "\"Every night, millions of families ask the same question: 'What's for dinner?' Not knowing the answer, let alone what to shop for, is one of the most universal human experiences, and a problem Instacart is built to solve,\" siger CEO **Chris Rogers** i en e-mailet pressemeddelelse gengivet af TechCrunch. Han tilføjer: \"We've spent nearly 15 years learning how families shop and eat, and Clementine puts that knowledge to work.\" Der er ikke oplyst lanceringsdato eller pris."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Clementine kan ifølge Instacart lave opskrifter og tilpasse anbefalinger til kostbehov.",
+        "Assistenten skal vise tilbud og foreslå billigere alternativer.",
+        "Brugere kan uploade foto eller skærmbillede af indkøbsseddel til kurv.",
+        "Instacart oplyser ikke pris, adgang eller tilgængelighed for Clementine."
+      ],
+      "betydning": "Leveringsapps forsøger at flytte indkøbsbeslutningen ind i deres egen app, før brugerne når til kurven, og dermed konkurrere med chatbotter som ChatGPT om planlægningen.",
+      "pointer": [
+        "Instacart annoncerer AI-assistenten Clementine.",
+        "Clementine omdanner samtaler og indkøbssedler til kurve.",
+        "Uber Eats og DoorDash har lignende assistenter."
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Instacart lancerer Clementine, der laver indkøbslister om til kurve og hjælper med madplan og budget.",
+        "forbehold": "",
+        "emne": "instacart, clementine"
+      },
+      "prio": 6,
+      "side": "artikel/489fd9472b6bee4b.html",
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "brief_instruks": "748464c0b45c6acc"
     },
     {
       "titel": "Man told ChatGPT he was feeling delusional. ChatGPT insisted he was Jesus.",
@@ -2852,36 +2932,6 @@
       "side": "artikel/8e610a2233c8a93e.html"
     },
     {
-      "titel": "Powering AI is an architecture problem",
-      "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-      "resume": "On July 22, 2026, a transmission line fault in Ashburn, Virginia—the heart of the world’s largest data center cluster—knocked more than 3 gigawatts of load off the grid in seconds. And it wasn’t the first time. Two years earlier, a single failed surge arrester dropped roughly 60 Virginia facilities and 1,500 megawatts at once. No…",
-      "dato": "2026-09-10T11:00:00+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-10T13:45:53.815708+00:00",
-      "eget_foerst_set": "2026-09-10T13:45:53.815708+00:00",
-      "rubrik": "Ashburn-strømsvigt rammer AI-datacentre i Virginia",
-      "resume_da": "En fejl på en højspændingsledning i Ashburn i Virginia slog over 3 gigawatt fra i sekunder og ramte AI-datacentrene for anden gang på to år.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Konkrete episoder med strømsvigt i Ashburn ramte AI-datacentre; ser arkitektur som problemet.",
-        "forbehold": "Eksemplerne er enkelthændelser; ingen samlet kvantificering af AI's andel.",
-        "emne": "ai-datacentre strømforsyning"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 5
-    },
-    {
       "titel": "Six Chinese AI firms accused of aggressively copying US frontier models",
       "link": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
       "resume": "US urges AI firms to ID, then secretly switch, Chinese users to less-capable models.",
@@ -2956,6 +3006,36 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 5,
       "side": "artikel/0bbc043a229b6781.html"
+    },
+    {
+      "titel": "Powering AI is an architecture problem",
+      "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+      "resume": "On July 22, 2026, a transmission line fault in Ashburn, Virginia—the heart of the world’s largest data center cluster—knocked more than 3 gigawatts of load off the grid in seconds. And it wasn’t the first time. Two years earlier, a single failed surge arrester dropped roughly 60 Virginia facilities and 1,500 megawatts at once. No…",
+      "dato": "2026-09-10T11:00:00+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-10T13:45:53.815708+00:00",
+      "eget_foerst_set": "2026-09-10T13:45:53.815708+00:00",
+      "rubrik": "Ashburn-strømsvigt rammer AI-datacentre i Virginia",
+      "resume_da": "En fejl på en højspændingsledning i Ashburn i Virginia slog over 3 gigawatt fra i sekunder og ramte AI-datacentrene for anden gang på to år.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Konkrete episoder med strømsvigt i Ashburn ramte AI-datacentre; ser arkitektur som problemet.",
+        "forbehold": "Eksemplerne er enkelthændelser; ingen samlet kvantificering af AI's andel.",
+        "emne": "ai-datacentre strømforsyning"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 5
     },
     {
       "titel": "I spent $4,000 on a robot dog from China",
@@ -3349,6 +3429,36 @@
       "prio": 4
     },
     {
+      "titel": "Roundtables: AI’s apocalypse crisis",
+      "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+      "resume": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…",
+      "dato": "2026-09-11T20:05:06+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "rubrik": "MIT debatterer AI-truslen mod menneskeheden",
+      "resume_da": "Ansatte på verdens førende AI-laboratorier siger, at avanceret AI kan udslette menneskeheden. MIT Technology Review samler eksperter til en samtale om truslen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "MIT-arrangement debatterer AI-labs ansattes advarsler om menneskehedens udslettelse",
+        "forbehold": "Arrangement og debat, ikke nye undersøgelsesresultater",
+        "emne": "ai-udslettelsesrisiko debat"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "Adobe is trying to make its AI generators idiot-proof in Premiere",
       "link": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
       "resume": "Adobe is overhauling how editors interact with AI in its Premiere professional video editing software. Its new Generative Media tool makes it easier to generate video, sound effects, music, and soundscapes without ever leaving the project timeline. The generators themselves aren't entirely new; the big change is how easily you can access them without breaking […]",
@@ -3406,36 +3516,6 @@
       "prio": 6,
       "side": "artikel/926902b984e8d2e0.html",
       "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
-      "titel": "Roundtables: AI’s apocalypse crisis",
-      "link": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
-      "resume": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…",
-      "dato": "2026-09-11T20:05:06+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "MIT debatterer AI-truslen mod menneskeheden",
-      "resume_da": "Ansatte på verdens førende AI-laboratorier siger, at avanceret AI kan udslette menneskeheden. MIT Technology Review samler eksperter til en samtale om truslen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "MIT-arrangement debatterer AI-labs ansattes advarsler om menneskehedens udslettelse",
-        "forbehold": "Arrangement og debat, ikke nye undersøgelsesresultater",
-        "emne": "ai-udslettelsesrisiko debat"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "Why this month's Microsoft patch release is a doozy",
@@ -3591,6 +3671,36 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
+      "titel": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
+      "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+      "resume": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
+      "dato": "2026-09-11T16:46:25+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-11T17:51:30.603573+00:00",
+      "eget_foerst_set": "2026-09-11T17:51:30.603573+00:00",
+      "rubrik": "OpenAI-topchef Fidji Simo til Nscale før børsnotering",
+      "resume_da": "Hun har tidligere ført Instacart gennem en børsnotering i 2023. Nscale forbereder sig nu på at gå på børsen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Fidji Simo tiltræder Nscale-bestyrelse forud for mulig børsnotering.",
+        "forbehold": "IPO omtales kun som mulig og uden tidsplan.",
+        "emne": "nscale fidji simo"
+      },
+      "redaktion_instruks": "30b24f5dd9bb0019",
+      "prio": 4
+    },
+    {
       "titel": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
       "link": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
       "resume": "Meta dragged its feet removing ads that nudify young girls' Instagram pics.",
@@ -3671,36 +3781,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 6,
       "side": "artikel/8221c7cdd090e3aa.html"
-    },
-    {
-      "titel": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
-      "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "resume": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
-      "dato": "2026-09-11T16:46:25+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-11T17:51:30.603573+00:00",
-      "eget_foerst_set": "2026-09-11T17:51:30.603573+00:00",
-      "rubrik": "OpenAI-topchef Fidji Simo til Nscale før børsnotering",
-      "resume_da": "Hun har tidligere ført Instacart gennem en børsnotering i 2023. Nscale forbereder sig nu på at gå på børsen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Fidji Simo tiltræder Nscale-bestyrelse forud for mulig børsnotering.",
-        "forbehold": "IPO omtales kun som mulig og uden tidsplan.",
-        "emne": "nscale fidji simo"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 4
     },
     {
       "titel": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
@@ -4073,6 +4153,36 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
+      "titel": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+      "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
+      "resume": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say.",
+      "dato": "2026-09-10T00:00:37+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-10T05:12:15.577694+00:00",
+      "eget_foerst_set": "2026-09-10T05:12:15.577694+00:00",
+      "rubrik": "Listen Labs dropper milliardinvestering fra Menlo Ventures",
+      "resume_da": "Listen Labs havde en underskrevet aftale om 1,5 milliarder dollars. Nu vil startupen hellere forhandle med Salesforce.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Listen Labs droppede underskrevet Series C fra Menlo Ventures for i stedet at forhandle med Salesforce.",
+        "forbehold": "Baseret på anonyme kilder; ingen bekræftelse fra parterne.",
+        "emne": "listen labs finansiering salesforce"
+      },
+      "prio": 4,
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
       "titel": "Funding grants for new research into AI and teen development",
       "link": "https://openai.com/index/teen-development-research-grants",
       "resume": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
@@ -4135,36 +4245,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 6,
       "side": "artikel/c34d7a764f86c6e9.html"
-    },
-    {
-      "titel": "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
-      "link": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-      "resume": "Listen Labs walked away from a signed Series C term sheet from Menlo Ventures, sources say.",
-      "dato": "2026-09-10T00:00:37+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-10T05:12:15.577694+00:00",
-      "eget_foerst_set": "2026-09-10T05:12:15.577694+00:00",
-      "rubrik": "Listen Labs dropper milliardinvestering fra Menlo Ventures",
-      "resume_da": "Listen Labs havde en underskrevet aftale om 1,5 milliarder dollars. Nu vil startupen hellere forhandle med Salesforce.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Listen Labs droppede underskrevet Series C fra Menlo Ventures for i stedet at forhandle med Salesforce.",
-        "forbehold": "Baseret på anonyme kilder; ingen bekræftelse fra parterne.",
-        "emne": "listen labs finansiering salesforce"
-      },
-      "prio": 4,
-      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "Apple’s revamped Health app will calculate your ‘health age’ and readiness score",
@@ -4437,36 +4517,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
-      "titel": "Introducing GPT-6 Astra for developers",
-      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "resume": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredible renderings of gardens, shipyards, animals , cityscapes, even Dyson spheres.…",
-      "dato": "2026-09-05T23:27:48+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-      "resume_da": "Den nye model er mere detaljeret og forstår opgaver bedre. Ifølge OpenAI er den især stærk til at bygge 3D-modeller.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI præsenterer GPT-6 Astra for udviklere med bedre promptforståelse og især styrke til 3D-modeller.",
-        "forbehold": "Producentpåstande om evner; ingen uafhængige tests, priser eller tilgængelighed fremgår.",
-        "emne": "gpt-6 astra"
-      },
-      "prio": 7,
-      "redaktion_instruks": "30b24f5dd9bb0019"
-    },
-    {
       "titel": "How GPT-5.6 Sol helps run quantum computing experiments",
       "link": "https://openai.com/index/codex-quantum-computing-experiments",
       "resume": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
@@ -4660,6 +4710,45 @@
       "prio": 4
     },
     {
+      "titel": "OpenAI adds a prominent AI doomer to its board of directors",
+      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
+      "dato": "2026-09-09T22:25:22+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
+      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
+      "rubrik": "OpenAI henter forsker Paul Christiano i bestyrelsen",
+      "resume_da": "Christiano er kendt for at advare om AI-risici og arbejder med at få AI til at følge menneskelige værdier. Han skal sidde i OpenAI Foundations bestyrelse.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-forsker Paul Christiano med fokus på alignment er udpeget til OpenAI Foundations bestyrelse.",
+        "forbehold": "",
+        "emne": "openai foundation bestyrelse"
+      },
+      "prio": 3,
+      "andre": [
+        {
+          "kilde": "OpenAI Blog",
+          "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
+          "resume_da": "Han har mange års erfaring med AI-sikkerhed og skal også sidde i udvalget for sikkerhed. Det skriver OpenAI selv.",
+          "foerst_set": "2026-09-09T17:56:17.353477+00:00"
+        }
+      ],
+      "redaktion_instruks": "30b24f5dd9bb0019"
+    },
+    {
       "titel": "The complex corporate web behind a $3.2 billion AI data center",
       "link": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
       "resume": "When multiple companies are behind one project, who bears responsibility for problems?",
@@ -4738,45 +4827,6 @@
       "redaktion_instruks": "30b24f5dd9bb0019",
       "prio": 6,
       "side": "artikel/e2dfaa2c905c18fc.html"
-    },
-    {
-      "titel": "OpenAI adds a prominent AI doomer to its board of directors",
-      "link": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-      "resume": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board.",
-      "dato": "2026-09-09T22:25:22+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-09T17:56:17.353477+00:00",
-      "eget_foerst_set": "2026-09-09T23:28:16.094724+00:00",
-      "rubrik": "OpenAI henter forsker Paul Christiano i bestyrelsen",
-      "resume_da": "Christiano er kendt for at advare om AI-risici og arbejder med at få AI til at følge menneskelige værdier. Han skal sidde i OpenAI Foundations bestyrelse.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AI-forsker Paul Christiano med fokus på alignment er udpeget til OpenAI Foundations bestyrelse.",
-        "forbehold": "",
-        "emne": "openai foundation bestyrelse"
-      },
-      "prio": 3,
-      "andre": [
-        {
-          "kilde": "OpenAI Blog",
-          "link": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-          "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
-          "resume_da": "Han har mange års erfaring med AI-sikkerhed og skal også sidde i udvalget for sikkerhed. Det skriver OpenAI selv.",
-          "foerst_set": "2026-09-09T17:56:17.353477+00:00"
-        }
-      ],
-      "redaktion_instruks": "30b24f5dd9bb0019"
     },
     {
       "titel": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
@@ -7459,10 +7509,11 @@
       "dato": "2026-09-11T20:30:17+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "foerst_set": "2026-09-10T23:21:33.190760+00:00",
       "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
       "rubrik": "Sidste frist for Disrupt-sidebegivenheder i aften",
       "resume_da": "Ansøgninger om at være vært for en officiel sidebegivenhed under TechCrunch Disrupt 2026 skal være inde senest 11. september kl. 23.59 PT.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -7479,47 +7530,23 @@
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "30b24f5dd9bb0019",
-      "kat_ai": true,
       "prio": 1,
       "andre": [
         {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
-          "rubrik": "TechCrunch Disrupt 2026 udstillerborde haster",
-          "resume_da": "Der er en uge tilbage til at sikre sig et udstillerbord. Bordene er begrænsede og kan blive udsolgt før fristen 18. september.",
+          "rubrik": "TechCrunch Disrupt 2026: en uge til udstillingsborde",
+          "resume_da": "Borde er begrænsede og kan blive udsolgt før fristen 18. september, oplyser TechCrunch.",
           "foerst_set": "2026-09-11T21:11:45.274854+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
+          "rubrik": "Mark Wahlberg taler arbejde på TechCrunch Disrupt",
+          "resume_da": "Skuespilleren kommer til Disrupt 2026 sammen med Bruce K. Lee. Han vil tale om investeringer, iværksætteri og sundhed - ikke om sine film.",
+          "foerst_set": "2026-09-10T23:21:33.190760+00:00"
         }
       ]
-    },
-    {
-      "titel": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
-      "link": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-      "resume": "Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness, and building businesses.",
-      "dato": "2026-09-10T21:35:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-10T23:21:33.190760+00:00",
-      "eget_foerst_set": "2026-09-10T23:21:33.190760+00:00",
-      "rubrik": "Mark Wahlberg taler arbejde på TechCrunch Disrupt",
-      "resume_da": "Skuespilleren kommer til Disrupt 2026 sammen med Bruce K. Lee. Han vil tale om investeringer, iværksætteri og sundhed - ikke om sine film.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Skuespiller deltager i TechCrunch Disrupt 2026 for at tale om investering og iværksætteri, ikke om AI-produkter.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt, mark wahlberg"
-      },
-      "redaktion_instruks": "30b24f5dd9bb0019",
-      "prio": 1
     },
     {
       "titel": "Native is now the future of mobile at Shopify",
@@ -7761,13 +7788,14 @@
       "https://x.ai/news/grok-4-6-amazon-bedrock",
       "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
       "https://x.ai/news/grok-4-6-github-copilot",
-      "https://www.anthropic.com/news/claude-text-watermark"
+      "https://www.anthropic.com/news/claude-text-watermark",
+      "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa"
     ],
     "ai_vurderet": 150,
     "metode": "agent",
     "agent_version": 1,
     "kontrolleret": true,
-    "data_opdateret": "2026-09-12T14:21:32.813244+00:00",
+    "data_opdateret": "2026-09-12T15:15:33.289402+00:00",
     "samlede": {},
     "anbefalede": [
       "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",

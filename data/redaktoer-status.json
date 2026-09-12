@@ -1,17 +1,16 @@
 {
-  "opdateret": "2026-09-12T14:21:32.813244+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-09-12T15:15:33.289402+00:00",
+  "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
     "https://openai.com/index/cognition-devin-testing-with-astra",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "948b04f803f6df52",
-  "redaktionsnote": "Ingen historie udvalgt i denne udgave, fordi de læste kilder med tilstrækkeligt materiale ikke kan underbygge en forsidehistorie inden for de fejlgrænser, der er angivet. Muse-omtalerne findes kun som kandidatresuméer og en hands-on-test, hvor den officielle Meta-side ikke kunne hentes; Suno v6 og Googles Windows-app blev gennemlæst, men Suno har været hovedhistorie på de to seneste forsider, og Windows-appen er en afgrænset adgangsnyhed, der egner sig bedre som anbefaling. Udgaven leveres derfor tom med anbefalinger, og Suno v6 samt Googles Gemini-app til Windows kan løftes til forsiden i en senere udgave, når der foreligger et uafhængigt, læst grundlag.",
-  "beslutninger": [],
-  "modelkald": 7,
-  "kildehentninger": 6,
+  "input_fingerprint": "b430e68615d122d1",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -70,12 +69,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -84,19 +83,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "grundlag": "utilgaengelig"
-    },
-    {
-      "link": "https://ai.meta.com/muse/",
-      "grundlag": "utilgaengelig"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://suno.com/blog/introducing-v6",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
       "grundlag": "kildetekst"
     },
     {
@@ -104,7 +91,27 @@
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
       "grundlag": "kildetekst"
     }
   ],
