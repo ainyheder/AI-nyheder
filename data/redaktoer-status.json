@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-12T07:32:40.327948+00:00",
+  "opdateret": "2026-09-12T09:04:56.158941+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,27 +7,11 @@
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "ecf9c2f774751e96",
+  "input_fingerprint": "8eaa9491014a96ce",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "modelkald": 4,
   "kildehentninger": 8,
   "vaerktoejer": [
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
     {
       "vaerktoej": "laes_kilde",
       "fejl": null
@@ -62,7 +46,7 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Expecting value: line 1 column 3862 (char 3861)"
+      "fejl": "Mangler kort redaktionsnote"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -71,19 +55,11 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "grundlag": "kildetekst"
     },
     {
@@ -91,15 +67,23 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "grundlag": "kildetekst"
     }
   ],
