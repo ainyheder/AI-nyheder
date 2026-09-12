@@ -40,9 +40,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 50 }}
     env:
-      U2NET_HOME: ${{ runner.temp }}/ai-news-models
       OMP_NUM_THREADS: '2'
     steps:
+      - name: Klargør modelmappe
+        # RUNNER_TEMP findes først på runneren. GITHUB_ENV deler stien med
+        # både cache-trinnet og crawleren i resten af jobbet.
+        run: echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
+
       - name: Hent koden
         uses: actions/checkout@v4
         with:

@@ -89,3 +89,10 @@ kontoen. Buttondowns egen ramme kan stadig begrænse den leverede mails bredde.
 Et forsøg med Classic-skabelonen blev ikke gemt: browserfanen blev lukket under
 kontrollen. Ingen opgradering er købt. Deres logo nederst (Powered by Buttondown)
 er tjenestens branding; fuld fjernelse kræver ifølge dokumentationen Professional.
+
+Senere samme dag: Prøve 5 blev indsat og sendt via Buttondowns almindelige
+HTML/Markdown-editor. Den faktiske mailforhåndsvisning viste yderramme 0px og
+max-width none samt ét afmeldingslink. Det virker derfor i denne forhåndsvisning
+uden ændring af kontoens betalte Custom CSS-indstilling. Den modtagne mail er
+stadig den endelige kontrol i Outlook. Testen blev kun sendt til Torben, og
+abonnentprofilen bekræftede Received. Se prøve 5's statusfil for mail-id.
