@@ -96,7 +96,7 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   ok(md.querySelector('.lead-story h2').textContent.includes('Astra'),'Astra med den gamle AI-vurdering er hovedhistorie');
   ok(!md.querySelector('.news-row'),'De to udvalgte gentages ikke i listen');
   ok(md.querySelector('.empty-state h3').textContent==='Du har set alle historierne','Kort udgave får en retvisende afslutning');
-  ok(md.querySelector('.pick-label').textContent==='Ny AI-model','Modellancering fremhæves tydeligt');
+  ok(md.querySelector('.lead-story .category').textContent==='Ny AI-model','Modellancering fremhæves tydeligt');
   md.querySelector('[data-category="Modeller"]').click();
   ok(md.querySelectorAll('.news-row').length===1,'Modelfilter viser kun modellanceringer');
   ok(md.querySelector('.news-row h3').textContent.includes('Astra'),'Astra findes under modellanceringer');

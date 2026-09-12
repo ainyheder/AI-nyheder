@@ -207,15 +207,21 @@
     const count=new Set(sources(a).map(source)).size;
     return `<div class="story-meta"><span>${escapeHtml(a.kilde||"Originalkilde")}</span><span>${escapeHtml(dateText(a))}</span><span>${readingTime(a)}</span>${count>1?`<span>${count} kilder</span>`:""}${read[a.link]?'<span class="read-label">Læst</span>':""}${!a.rubrik?'<span>På engelsk</span>':""}</div>`;
   }
+  function cardTopline(a, featured=false) {
+    const ts=timestamp(a),label=featured&&modelLaunch(a)?"Ny AI-model":a.kategori||"AI-nyt";
+    const date=ts===null?`<span class="story-date">${escapeHtml(dateText(a))}</span>`:`<time class="story-date" datetime="${new Date(ts).toISOString()}">${escapeHtml(dateText(a))}</time>`;
+    return `<div class="story-topline"><span class="category">${escapeHtml(label)}</span>${date}</div>`;
+  }
   function image(a,cls,lazy=true) {
     const src=safeUrl(a.billede,true);
-    return src?`<img class="${cls}" src="${escapeHtml(src)}" alt="${escapeHtml(a.billedmotiv||'AI-genereret illustration')}" ${lazy?'loading="lazy"':'fetchpriority="high"'} decoding="async">`:"";
+    const alt=cls==="story-thumbnail"?"AI-genereret illustration":a.billedmotiv||"AI-genereret illustration";
+    return src?`<img class="${cls}" src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" ${lazy?'loading="lazy"':'fetchpriority="high"'} decoding="async">`:"";
   }
   function renderFeatured() {
     const box=$("udvalgte");box.setAttribute("aria-busy","false");
     if(!selected.length) { box.innerHTML="";return; }
     const [lead,...rest]=selected;
-    box.innerHTML=`<div class="lead-grid${rest.length?'':' single-story'}"><article class="lead-story"><div class="story-topline"><span class="pick-label">${modelLaunch(lead)?"Ny AI-model":"I fokus"}</span><span class="category">${escapeHtml(lead.kategori||"AI-nyt")}</span></div>${image(lead,"lead-image",false)}<h2><a class="story-link" ${linkAttrs(lead)}>${escapeHtml(title(lead))}</a></h2><p class="lead-summary">${escapeHtml(summary(lead))}</p>${meta(lead)}<a class="read-link" ${linkAttrs(lead)}>Læs historien <span aria-hidden="true">↗</span></a></article>${rest.length?`<div class="feature-stack">${rest.map(a=>`<article class="feature-story"><span class="category">${modelLaunch(a)?"Ny AI-model":escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><p>${escapeHtml(summary(a))}</p>${meta(a)}</article>`).join("")}</div>`:""}</div>`;
+    box.innerHTML=`<div class="lead-grid${rest.length?'':' single-story'}"><article class="lead-story">${cardTopline(lead,true)}<h2><a class="story-link" ${linkAttrs(lead)}>${escapeHtml(title(lead))}</a></h2><div class="story-excerpt">${image(lead,"story-thumbnail",false)}<p class="lead-summary">${escapeHtml(summary(lead))}</p></div></article>${rest.length?`<div class="feature-stack">${rest.map(a=>`<article class="feature-story">${cardTopline(a,true)}<h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><div class="story-excerpt">${image(a,"story-thumbnail")}<p>${escapeHtml(summary(a))}</p></div></article>`).join("")}</div>`:""}</div>`;
   }
   function renderCategories() {
     $("kategorier").innerHTML=Object.entries(categoryNames).map(([key,label])=>`<button type="button" data-category="${escapeHtml(key)}" aria-pressed="${key===category}">${label}</button>`).join("");
@@ -239,11 +245,12 @@
   function renderList() {
     const list=filtered();$("nyhedsliste").setAttribute("aria-busy","false");
     const browsing=browsingAll();$("udvalgte").hidden=browsing||!selected.length;
-    $("nyhederTitel").textContent=query.trim()?"Søgeresultater":(category!=="Alle"?categoryNames[category]:(browsing?"Alle nyheder":"Mere at opdage"));
+    $("nyhederTitel").textContent=query.trim()?"Søgeresultater":(category!=="Alle"?categoryNames[category]:"Nyheder");
+    $("nyhedsoverskrift").classList.toggle("sr-only",!browsing);
     $("antalNyheder").textContent=`${list.length} ${list.length===1?"historie":"historier"}`;
     $("filterBeskrivelse").textContent=query.trim()?`Søger efter “${query.trim()}”`:(order==="nyeste"?"Sorteret efter kildens udgivelsesdato":"Nye modeller og væsentlige nyheder først");
     $("nulstil").hidden=!browsing;
-    $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content"><span class="category">${escapeHtml(a.kategori||"AI-nyt")}</span><h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><p>${escapeHtml(summary(a))}</p>${meta(a)}</div>${image(a,"news-row-image")}<a class="row-arrow" ${linkAttrs(a)} aria-label="${escapeHtml('Læs '+title(a))}">↗</a></article>`).join(""):`<div class="empty-state"><h3>${browsing?"Ingen historier matcher":"Du har set alle historierne"}</h3><p>${browsing?"Prøv et andet søgeord, eller vælg alle emner.":"Der er ikke flere historier i denne udgave."}</p>${browsing?'<button data-reset>Vis alle nyheder</button>':""}</div>`;
+    $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content">${cardTopline(a)}<h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><div class="story-excerpt">${image(a,"story-thumbnail")}<p>${escapeHtml(summary(a))}</p></div></div></article>`).join(""):`<div class="empty-state"><h3>${browsing?"Ingen historier matcher":"Du har set alle historierne"}</h3><p>${browsing?"Prøv et andet søgeord, eller vælg alle emner.":"Der er ikke flere historier i denne udgave."}</p>${browsing?'<button data-reset>Vis alle nyheder</button>':""}</div>`;
     $("visFlere").hidden=list.length<=visible;
     $("visFlere").innerHTML=`Vis flere nyheder <span class="section-note">${Math.min(visible,list.length)} af ${list.length}</span><span aria-hidden="true">↓</span>`;
   }

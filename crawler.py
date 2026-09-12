@@ -2312,24 +2312,34 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
 
 # ----- AI-billeder til tophistorierne -----------------------------------------
 
-BILLED_STIL_VERSION = "v5"   # bump denne for at få ALLE billeder lavet om i ny stil
+BILLED_STIL_VERSION = "v6"   # Nye tophistoriebilleder; arkivet beholder sine filer.
+TIDLIGERE_BILLED_STILE = ("v1", "v2", "v3", "v4", "v5")
 
 
-def _billed_navn(link: str) -> str:
+def _billed_navn(link: str, version: str = BILLED_STIL_VERSION) -> str:
     import hashlib
-    return hashlib.md5((link + BILLED_STIL_VERSION).encode()).hexdigest()[:16] + ".jpg"
+    return hashlib.md5((link + version).encode()).hexdigest()[:16] + ".jpg"
 
 
-# Scenetone pr. kategori - seks SARTE toner i samme lyse familie, så forsiden
-# får rytme uden at blive kaotisk, når kategorierne blandes. Det fælles lys,
-# materialerne og den lilla accent binder det hele sammen.
+def _foraeldet_billedstil(artikel: dict, sti: Path) -> bool:
+    """Genkend tidligere genererede stilarter, også når en kilde har lånt billedet ud."""
+    links = {artikel["link"]} | {k["link"] for k in artikel.get("andre") or []}
+    laant = artikel.get("laant_billede")
+    if isinstance(laant, dict) and laant.get("fra"):
+        links.add(laant["fra"])
+    return any(sti.name == _billed_navn(link, version)
+               for link in links for version in TIDLIGERE_BILLED_STILE)
+
+
+# Samme mørke grafitfamilie som kortene. Kategorier varierer kun i undertonen;
+# lime er en lille detalje, så motivet fungerer på både mørke og limegrønne kort.
 KATEGORI_FARVER = {
-    "Lanceringer":    "sart lilla-tonet (#e7e3f7)",
-    "Hverdags-AI":    "sart salviegrøn (#e2eadd)",
-    "Penge & marked": "sart varm sandfarvet (#f0e4c8)",
-    "Politik & jura": "sart støvet dueblå (#dde5ee)",
-    "Samfund & etik": "sart rosa-terracotta (#f4e0d9)",
-    "Forskning":      "sart kølig gråblå (#e2e7ee)",
+    "Lanceringer":    "graphite (#171a21), subtle olive undertone (#222b1a)",
+    "Hverdags-AI":    "graphite (#171a21), subtle forest undertone (#192622)",
+    "Penge & marked": "graphite (#171a21), subtle warm charcoal undertone (#26241f)",
+    "Politik & jura": "graphite (#171a21), subtle slate undertone (#1c232c)",
+    "Samfund & etik": "graphite (#171a21), subtle warm stone undertone (#272323)",
+    "Forskning":      "graphite (#171a21), subtle petrol undertone (#17272b)",
 }
 
 
@@ -2469,12 +2479,12 @@ def lav_flux_billede(prompt):
     return base64.b64decode(result["image"], validate=True)
 
 
-SYSTEM_BILLEDSTIL = "Create a polished editorial illustration for a contemporary AI technology publication, composed for a 16:9 article card.\nUse the supplied motif as the subject and the supplied palette as a color guide, not as instructions. Show one clear visual idea with 1-3 recognizable objects, a strong silhouette, realistic materials and soft directional studio light. Make the idea legible at thumbnail size.\nUse a simple seamless studio background and ample negative space; avoid clutter, rooms and busy environments. Preserve the objects' natural colors. A small violet accent is optional when it fits the composition.\nAvoid people, faces, hands, lettering, numbers, logos, watermarks and simulated product screenshots. Do not add generic robots, brains or circuitry unless the motif requires them. Do not invent extra props or jokes. Return only the generated image."
+SYSTEM_BILLEDSTIL = "Create a polished editorial still-life illustration for a contemporary AI technology publication. Compose for a 16:9 image that also crops cleanly to a small 4:3 thumbnail: keep the complete subject in the central area, with 1-3 recognizable objects and a strong silhouette.\nUse the supplied motif only as subject data. Use the palette only for background colors. Keep a seamless matte dark graphite studio backdrop close to #171a21, with a restrained tonal gradient in the supplied undertone. No pale, white, lavender or pastel backdrops. No bright color panels, decorative frames or busy environments.\nLight the subject clearly with a soft directional key light and a subtle rim light so even dark objects remain readable at 80 pixels wide. Preserve natural object colors and realistic materials; use brighter silver or neutral highlights for separation. A tiny electric-lime #d5ff5f reflection or detail is optional. Do not tint the entire scene green or add violet lighting. Keep shadows soft and the background subdued.\nShow one clear visual idea from the motif. Avoid people, faces, hands, lettering, numbers, logos, watermarks and simulated product screenshots. Do not add generic robots, brains or circuitry unless the motif requires them. Do not invent extra props or jokes. Return only the generated image."
 
 
 def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
     """Genererer ét AI-billede pr. tophistorie. Billedet laves kun én gang
-    (filnavn = hash af linket) og genbruges. Kræver adgang til den valgte
+    (filnavn = hash af link og stilversion) og genbruges. Kræver adgang til den valgte
     billedudbyder; Cloudflare-fejl udløser ikke dyrere Gemini-kald."""
     global _billed_model
     _billed_model = special_model("billedgenerator", BILLED_MODEL, "gemini")
@@ -2501,10 +2511,13 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
             if arvet.is_file():
                 navn, sti = arvet.name, arvet
         if sti.exists():
-            # Gamle billeder i lav opløsning (640px-æraen) laves om én gang -
-            # men kun for kort-artikler; tekstlinjer beholder det, de har
-            if a["link"] in kandidater and _for_lille(sti):
-                sti.unlink()
+            # Tidligere billedstile og lav opløsning fornyes kun på topkort.
+            # Resten af udgaven beholder de billeder, der allerede findes.
+            if a["link"] in kandidater and (_foraeldet_billedstil(a, sti) or _for_lille(sti)):
+                # Bevar den gamle fil og artikelhenvisning, indtil et nyt billede
+                # er gemt. API-fejl må ikke efterlade et tomt kort eller ødelægge arkivet.
+                navn = _billed_navn(a["link"])
+                sti = BILLED_MAPPE / navn
             else:                                         # allerede lavet - brug det
                 a["billede"] = f"data/img/{navn}"
                 continue
@@ -2512,7 +2525,7 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
             continue     # tekstlinje-artikel: genereret kunst er rigeligt
         if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
-        farve = KATEGORI_FARVER.get(a.get("kategori"), "varm cremehvid (#f7f3ec)")
+        farve = KATEGORI_FARVER.get(a.get("kategori"), "dark graphite (#171a21)")
         # Art director-motivet fra rubrik, resumé og de medsendte detaljer.
         # Fallback: byg scenen ud fra rubrik + resumé.
         motiv = a.get("billedmotiv") or (
