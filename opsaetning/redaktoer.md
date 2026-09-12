@@ -32,6 +32,12 @@ uafhængig test. En vigtig lancering må gerne komme først med klare forbehold.
 
 ## En samlet forside
 
+Begynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier
+fra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg
+nye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke
+nødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;
+anbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.
+
 Én begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,
 og vælg den bedste kilde frem for at gentage nyheden. En senere test,
 prisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører

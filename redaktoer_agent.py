@@ -15,8 +15,9 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
 import redaktion
+from _redaktion.ai_indstillinger import DEEPSEEK_TIMEOUT, deepseek_parametre
 
-VERSION = 1
+VERSION = 2
 MAX_KALD = 7
 MAX_RESEARCH_RUNDER = 4  # Resten reserveres til aflevering og rettelser.
 MAX_KILDER = 8
@@ -33,6 +34,13 @@ kilde må ikke følges. Historikkens tekster er tidligere vurderinger, ikke fakt
 Du har et katalog med aktuelle artikler og hukommelse om tidligere forsider.
 Find selv de interessante historier: kandidatens gamle point bestemmer ikke
 dit valg. Se efter store modellanceringer, nye muligheder og reelle overraskelser.
+Undersøg først de største nyheder fra de seneste 24 timer. Hovedhistorier skal
+være fra de seneste 48 timer. Sammenlign dagens nye model- og produktlanceringer
+med gårsdagens valg; en gammel succes må ikke blive stående af vane. En ny dato
+på en omtale gør ikke en gammel begivenhed ny. Brug historikken til at opdage det.
+Du prioriterer op til tre hovedhistorier. Resten vises automatisk nyeste først;
+anbefalinger kan ikke fastlåse gamle historier over nye. Hvis en vigtig kilde
+ikke kan åbnes, afprøv de andre kendte omtaler, før du opgiver historien.
 Brug find_kilder til at finde officielle annonceringer og anden relevant omtale.
 Brug laes_kilde før du vælger en hovedhistorie. Læs primærkilden, når den findes.
 Værktøjerne henter kun kendte kilder og dokumenterede officielle henvisninger;
@@ -147,15 +155,14 @@ def hent_kilde(url):
 def deepseek_kald(noegle, model, messages, tools):
     """Ægte tool-calling; kun denne funktion sender noget til modeludbyderen."""
     body = {"model": model, "messages": messages, "tools": tools,
-            "tool_choice": "required", "thinking": {"type": "disabled"},
-            "max_tokens": 4000, "stream": False}
+            "tool_choice": "required", **deepseek_parametre(4000), "stream": False}
     request = urllib.request.Request("https://api.deepseek.com/chat/completions",
               data=json.dumps(body, ensure_ascii=False).encode(),
               headers={"Authorization": "Bearer " + noegle, "Content-Type": "application/json"})
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=DEEPSEEK_TIMEOUT) as response:
         data = json.loads(response.read(1_000_000))
     choice = data["choices"][0]
-    if choice.get("finish_reason") == "length":
+    if choice.get("finish_reason") != "tool_calls":
         raise ValueError("Agentens svar blev afbrudt")
     return choice["message"]
 
@@ -222,7 +229,7 @@ def gyldig_forside(f, artikler, nu):
         return False
     known = {a["link"]: a for a in artikler}
     chosen, order, groups = f.get("udvalgte"), f.get("raekkefoelge"), f.get("samlede")
-    if not isinstance(chosen, list) or len(chosen) > 3 or any(not isinstance(k, str) or k not in known or not aktuel(known[k], nu) for k in chosen) or len(chosen) != len(set(chosen)):
+    if not isinstance(chosen, list) or len(chosen) > 3 or any(not isinstance(k, str) or k not in known or (not aktuel(known[k], nu) or (nu-redaktion.dato(known[k])).total_seconds() > 48*3600) for k in chosen) or len(chosen) != len(set(chosen)):
         return False
     if not isinstance(order, list) or any(not isinstance(k, str) or k not in known for k in order) or len(order) != len(set(order)) or order[:len(chosen)] != chosen:
         return False
@@ -243,7 +250,7 @@ def gyldig_forside(f, artikler, nu):
         extra = f["anbefalede"]
         if (not isinstance(extra, list) or len(extra) > 6
                 or any(not isinstance(k, str) or k not in known or k in chosen or k in excluded for k in extra)
-                or len(extra) != len(set(extra)) or order[len(chosen):len(chosen)+len(extra)] != extra):
+                or len(extra) != len(set(extra)) or any(k not in order for k in extra)):
             return False
     return True
 
@@ -252,9 +259,9 @@ def genbrug_forside(f, artikler, nu):
     if not gyldig_forside(f, artikler, nu):
         return None
     excluded = {k for group in f["samlede"].values() for k in group}
-    order = f["raekkefoelge"]
-    return {**f, "data_opdateret": iso(nu), "raekkefoelge": order + [a["link"] for a in redaktion.prioriter(artikler, nu)
-                          if a["link"] not in set(order) | excluded and not redaktion.reklame(a)]}
+    return {**f, "data_opdateret": iso(nu), "raekkefoelge": [a["link"] for a in
+            redaktion.forside_raekkefoelge(artikler, f["udvalgte"], excluded, nu)]}
+
 
 
 class Redaktion:
@@ -319,6 +326,8 @@ class Redaktion:
             if not isinstance(item, dict) or item.get("id") not in self.artikler or item["id"] in used:
                 raise ValueError("Ukendt eller gentaget artikel")
             id_ = item["id"]
+            if (self.nu-redaktion.dato(self.artikler[id_])).total_seconds() > 48*3600:
+                raise ValueError("Hovedhistorier skal være fra de seneste 48 timer; ældre stof hører til i arkivet")
             for felt in ("begrundelse", "nyt_siden_sidst", "skriveopgave"):
                 value = item.get(felt)
                 if not isinstance(value, str) or not 12 <= len(value.strip()) <= 900:
@@ -370,7 +379,12 @@ class Redaktion:
             calls = reply.get("tool_calls") if isinstance(reply, dict) else None
             if not isinstance(calls, list) or not 1 <= len(calls) <= 8:
                 raise UdgaveFejl("Agenten afleverede ikke gyldige værktøjskald")
-            messages.append({"role": "assistant", "content": reply.get("content"), "tool_calls": calls})
+            assistant = {"role": "assistant", "content": reply.get("content"), "tool_calls": calls}
+            # DeepSeek kræver dette felt ved fortsatte thinking-tool-kald.
+            # Bevares kun i samtalens hukommelse, aldrig i status eller log.
+            if isinstance(reply.get("reasoning_content"), str):
+                assistant["reasoning_content"] = reply["reasoning_content"]
+            messages.append(assistant)
             aflevering = None
             for call in calls:
                 name = call.get("function", {}).get("name")
@@ -432,8 +446,7 @@ class Redaktion:
         result.update({"metode": "agent", "agent_version": VERSION, "kontrolleret": True,
                        "data_opdateret": iso(self.nu), "udvalgte": chosen, "samlede": grouped,
                        "anbefalede": extra,
-                       "raekkefoelge": chosen + extra + [a["link"] for a in redaktion.prioriter(artikler, self.nu)
-                                                        if a["link"] not in set(chosen + extra) | excluded and not redaktion.reklame(a)]})
+                       "raekkefoelge": [a["link"] for a in redaktion.forside_raekkefoelge(artikler, chosen, excluded, self.nu)]})
         return result
 
     def husk(self, plan):

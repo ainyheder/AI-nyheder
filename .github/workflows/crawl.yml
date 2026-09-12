@@ -38,9 +38,11 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 50 }}
+    # Max reasoning kræver længere svartid. Timerytmen er uændret; jobs overlapper ikke.
+    timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 120 }}
     env:
       OMP_NUM_THREADS: '2'
+      PYTHONUNBUFFERED: '1'
     steps:
       - name: Klargør modelmappe
         # RUNNER_TEMP findes først på runneren. GITHUB_ENV deler stien med
@@ -74,6 +76,7 @@ jobs:
         run: |
           python3 _redaktion/proeve-redaktion.py
           python3 _redaktion/proeve-redaktoer-agent.py
+          python3 _redaktion/proeve-modelvalg.py
           python3 _redaktion/proeve-nyhedskilder.py
           python3 _redaktion/proeve-kommandocentral.py
           python3 _redaktion/proeve-modelkatalog.py

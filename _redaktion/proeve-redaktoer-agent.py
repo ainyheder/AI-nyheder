@@ -272,6 +272,48 @@ class AgentTests(unittest.TestCase):
         a = {**self.a, "redaktoer_kilder": [{"link": "https://openai.com/index/nova", "kilde": "Officiel kilde"}]}
         self.assertIn('href="https://openai.com/index/nova"', c._artikel_side_html(a))
 
+    def test_nye_historier_kommer_foran_gammel_liste_ved_genbrug(self):
+        old = [artikel("Arkiv-"+str(i), dato=(NU-timedelta(days=3, minutes=i)).isoformat()) for i in range(40)]
+        editor = self.lav()
+        f = editor.forside(plan(self.a), [self.a]+old)
+        new = artikel("Dagens-robot", dato=(NU-timedelta(minutes=5)).isoformat())
+        reused = agent.genbrug_forside(f, [self.a]+old+[new], NU)
+        self.assertEqual(reused["raekkefoelge"][:2], [self.a["link"], new["link"]])
+        self.assertTrue(agent.gyldig_forside(reused, [self.a]+old+[new], NU))
+
+    def test_gammel_anbefaling_kan_ikke_overhale_dagens_nyhed(self):
+        old = artikel("Gammel-anbefaling", dato=(NU-timedelta(days=3)).isoformat())
+        editor = agent.Redaktion([old,self.a], {}, "", NU, lambda *_: None)
+        p = {"udvalgte": [], "anbefalede": [agent.ident(old["link"])], "redaktionsnote": "En anbefaling"}
+        f = editor.forside(p, [old,self.a])
+        self.assertEqual(f["raekkefoelge"], [self.a["link"], old["link"]])
+        self.assertTrue(agent.gyldig_forside(f, [old,self.a], NU))
+        editor.laes(agent.ident(old["link"]))
+        with self.assertRaisesRegex(ValueError, "48 timer"):
+            editor.valider(plan(old))
+
+    def test_anbefalinger_kontrolleres_ogsaa_uden_hovedhistorier(self):
+        seen = []
+        editor = self.lav(lambda m,t: seen.append(m) or tool("godkend_udgave", {"godkendt":False,"problemer":["Gentagelse"]}))
+        context = {"agent":editor, "plan":{"udvalgte":[],"anbefalede":[agent.ident(self.a["link"])],"redaktionsnote":""},
+                   "forside":r.forside([self.a,self.b],NU),"status":{}}
+        c.afslut_redaktoer(context,[self.a,self.b],NU)
+        self.assertEqual(len(seen),1)
+        self.assertEqual(context["status"]["status"],"reserve")
+
+    def test_thinking_fortsat_i_vaerktoejssamtalen_men_ikke_i_log(self):
+        seen = []
+        def respond(messages, tools):
+            seen.append(copy.deepcopy(messages))
+            if len(seen)==1:
+                return {**tool("laes_kilde", {"id":agent.ident(self.a["link"])}), "reasoning_content":"test-only-private-reasoning"}
+            self.assertEqual(messages[2]["reasoning_content"],"test-only-private-reasoning")
+            return tool("aflever_udgave", plan(self.a))
+        editor = self.lav(respond)
+        p = editor.koer()
+        self.assertEqual(len(seen),2)
+        self.assertNotIn("test-only-private-reasoning",json.dumps([p,editor.log,editor.husk(p)]))
+
     def test_transport_bruger_rigtigt_endpoint_model_og_vaerktoejer(self):
         class Svar:
             def __enter__(self): return self
@@ -284,6 +326,10 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(request.full_url, "https://api.deepseek.com/chat/completions")
         self.assertEqual(body["model"], "deepseek-flash")
         self.assertEqual(body["tools"], agent.TOOLS)
+        self.assertEqual(body["thinking"], {"type": "enabled"})
+        self.assertEqual(body["reasoning_effort"], "max")
+        self.assertGreaterEqual(body["max_tokens"], 32768)
+        self.assertEqual(urlopen.call_args.kwargs["timeout"], 600)
         self.assertEqual(result["tool_calls"][0]["function"]["name"], "laes_kilde")
 
     def test_godkendt_udgave_gemmer_hukommelse_uden_kildetekst(self):

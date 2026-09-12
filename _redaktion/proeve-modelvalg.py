@@ -171,8 +171,8 @@ ok("E2 og bærer DeepSeeks nøgle, ikke Googles",
    sendt["headers"].get("Authorization"))
 ok("E3 modelnavnet kommer udefra, ikke fra konstanten",
    sendt["body"]["model"] == "deepseek-v4-pro", sendt["body"]["model"])
-ok("E4 tænkning er slået fra — ellers afregnes tankerne som udskrift",
-   sendt["body"].get("thinking") == {"type": "disabled"}, sendt["body"].get("thinking"))
+ok("E4 alle DeepSeek-opgaver bruger maksimal tænkning",
+   sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "max", sendt["body"].get("thinking"))
 c.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, "deepseek-flash", reasoning_effort="max")
 ok("E4a nyhedsbrevet bevarer Flash og får maksimal tænkning",
    sendt["body"]["model"] == "deepseek-flash" and sendt["body"].get("thinking") == {"type": "enabled"}
@@ -180,16 +180,30 @@ ok("E4a nyhedsbrevet bevarer Flash og får maksimal tænkning",
    and sendt["body"].get("response_format") == {"type": "json_object"}
    and sendt["timeout"] == 600)
 c.kald_deepseek_model("system", "bruger", 50, "deepseek-flash")
-ok("E4b almindelige kald beholder deres hidtidige budget og tilstand",
-   sendt["body"].get("thinking") == {"type": "disabled"} and "reasoning_effort" not in sendt["body"]
+ok("E4b almindelige kald får max og plads til tænkning uden at tvinge JSON-objekter",
+   sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "max"
+   and sendt["body"]["max_tokens"] >= 32768
    and "response_format" not in sendt["body"]
-   and sendt["timeout"] is None)
+   and sendt["timeout"] == 600)
 c_fallback = indlaes(udbyder="deepseek")
 c_fallback.hent_url = falsk_hent
 c_fallback.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, reasoning_effort="max")
 ok("E4c den daglige DeepSeek-model bevarer også max ved fallback",
    sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "max"
    and sendt["timeout"] == 600)
+# Batch-opgaver returnerer arrays, billedprompter kan returnere almindelig tekst.
+for content in ('[{"rubrik":"Ny model"}]', 'Et lyst objekt uden baggrund'):
+    def response(url, data=None, **kwargs):
+        body = json.loads(data)
+        assert body["reasoning_effort"] == "max"
+        assert body["thinking"]["type"] == "enabled"
+        assert body["max_tokens"] >= 32768
+        assert "response_format" not in body
+        return json.dumps({"choices":[{"finish_reason":"stop", "message":{"content":content}}]}).encode()
+    c.hent_url = response
+    c_fallback.hent_url = response
+    ok("E4d eget modelvalg bevarer array/tekst med max", c.kald_deepseek_model("s", "b", 50, "deepseek-flash") == content)
+    ok("E4e daglig model bevarer array/tekst med max", c_fallback.kald_ai("s", "b", 50) == content)
 c2 = indlaes(deepseek="")
 try:
     c2.kald_deepseek_model("s", "b", 10, "deepseek-v4-pro")

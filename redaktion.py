@@ -363,11 +363,28 @@ def udvaelg(artikler, antal=6, nu=None, max_timer=168):
     return valgte
 
 
+def forside_raekkefoelge(artikler, udvalgte=(), udelad=(), nu=None):
+    """Op til tre hovedhistorier; resten nyeste først, også ved genbrug."""
+    nu = nu or datetime.now(timezone.utc)
+    known = {a["link"]: a for a in artikler if not reklame(a) and a["link"] not in udelad}
+    chosen = [known[k] for k in udvalgte if k in known]
+    def tid(a):
+        d = dato(a)
+        return d.timestamp() if d and d <= nu + timedelta(hours=2) else 0
+    tail = sorted((a for k, a in known.items() if k not in udvalgte),
+                  key=lambda a: (-tid(a), a["link"]))
+    return unikke_historier(chosen + tail)
+
+
 def forside(artikler, nu=None):
     nu = nu or datetime.now(timezone.utc)
+    # Bevar kvalitet og modelprioritet i toppen, men lad ikke sidste uges
+    # lanceringer vinde over en ny udgave. På stille dage bruges ugepuljen.
+    valgte = udvaelg(artikler, antal=3, nu=nu, max_timer=48) or udvaelg(artikler, antal=3, nu=nu)
+    links = [a["link"] for a in valgte]
     return {"version": VERSION, "beregnet": nu.isoformat(),
-            "udvalgte": [a["link"] for a in udvaelg(artikler, nu=nu)],
-            "raekkefoelge": [a["link"] for a in unikke_historier(prioriter(artikler, nu)) if not reklame(a)],
+            "udvalgte": links,
+            "raekkefoelge": [a["link"] for a in forside_raekkefoelge(artikler, links, nu=nu)],
             "ai_vurderet": sum(vurdering(a) is not None for a in artikler)}
 
 

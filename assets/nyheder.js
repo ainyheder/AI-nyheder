@@ -137,14 +137,26 @@
     }
     return chosen;
   }
+  function frontSelect(all, now=Date.now()) {
+    const fresh=all.filter(a=>timestamp(a)!==null&&now-timestamp(a)<=48*HOUR);
+    const chosen=select(fresh,3,now);
+    return chosen.length?chosen:select(all,3,now);
+  }
+  function frontOrder(all, chosen=[], excluded=new Set(), now=Date.now()) {
+    const pool=all.filter(a=>!promotional(a)&&!excluded.has(a.link));
+    const known=new Map(pool.map(a=>[a.link,a]));
+    const time=a=>timestamp(a)!==null&&timestamp(a)<=now+2*HOUR?timestamp(a):0;
+    const tail=pool.filter(a=>!chosen.includes(a.link)).sort((a,b)=>time(b)-time(a)||(a.link<b.link?-1:a.link>b.link?1:0));
+    return uniqueStories([...chosen.map(k=>known.get(k)).filter(Boolean),...tail]);
+  }
   function editorEdition(all, f, updated, now=Date.now()) {
     // Kun en kontrolleret plan fra PRÆCIS denne datafil må overtage pointlisten.
-    if(!f||f.metode!=='agent'||f.agent_version!==1||f.kontrolleret!==true||f.data_opdateret!==updated)return null;
+    if(!f||f.metode!=='agent'||f.agent_version!==2||f.kontrolleret!==true||f.data_opdateret!==updated)return null;
     const time=Date.parse(f.beregnet),age=now-time;
     if(!Number.isFinite(time)||age < -300000||age>24*HOUR)return null;
     const known=new Map(all.map(a=>[a.link,a])),chosen=f.udvalgte,order=f.raekkefoelge,groups=f.samlede;
     if(!Array.isArray(chosen)||chosen.length>3||new Set(chosen).size!==chosen.length)return null;
-    if(chosen.some(k=>{const a=known.get(k);if(!a)return true;const d=timestamp(a),v=assessment(a);return !a.rubrik||promotional(a)||d===null||now-d < -2*HOUR||now-d>168*HOUR||(v&&(v.dokumentation<=1||v.type==='rygte'));}))return null;
+    if(chosen.some(k=>{const a=known.get(k);if(!a)return true;const d=timestamp(a),v=assessment(a);return !a.rubrik||promotional(a)||d===null||now-d < -2*HOUR||now-d>48*HOUR||(v&&(v.dokumentation<=1||v.type==='rygte'));}))return null;
     if(!Array.isArray(order)||new Set(order).size!==order.length||order.some(k=>!known.has(k))||chosen.some((k,i)=>order[i]!==k))return null;
     if(!groups||Array.isArray(groups)||typeof groups!=='object'||Object.keys(groups).some(k=>!chosen.includes(k)))return null;
     const excluded=new Set();
@@ -157,8 +169,7 @@
       const a=known.get(k),others=(groups[k]||[]).map(x=>known.get(x));
       merged.set(k,{...a,andre:[...(Array.isArray(a.andre)?a.andre:[]),...others.flatMap(b=>[{link:b.link,kilde:b.kilde},...(Array.isArray(b.andre)?b.andre:[])])]});
     }
-    const sequence=[...order,...rank(all,now).map(a=>a.link).filter(k=>!order.includes(k)&&!excluded.has(k))];
-    const list=uniqueStories(sequence.map(k=>merged.get(k)).filter(a=>!promotional(a)));
+    const list=frontOrder([...merged.values()],chosen,excluded,now);
     // Automatiske dubletregler må ikke erstatte chefens valgte repræsentant.
     const selected=chosen.map(k=>list.find(a=>a.link===k));
     if(selected.some(a=>!a))return null;
@@ -171,7 +182,7 @@
   }
   function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]); }
   function bold(value) { return escapeHtml(value).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"); }
-  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,storyKeys,uniqueStories,editorEdition,safeUrl,escapeHtml};
+  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,frontSelect,frontOrder,storyKeys,uniqueStories,editorEdition,safeUrl,escapeHtml};
   if(typeof module!=="undefined" && module.exports) module.exports=api;
   root.AINews=api;
   if(typeof document==="undefined") return;
@@ -243,6 +254,15 @@
     if(order==="nyeste") list=[...list].sort((a,b)=>(timestamp(b)||0)-(timestamp(a)||0));
     return list;
   }
+  function mobileCardStyle(list, index) {
+    // Par kun nabohistorier uden billeder. Bevar læserækkefølgen og giv
+    // illustrationer hele bredden, også efter filtrering og "Vis flere".
+    const slot=index%6, start=slot===2?index-1:index;
+    if((slot===1||slot===2)&&list[start+1]&&
+       !safeUrl(list[start].billede,true)&&!safeUrl(list[start+1].billede,true))return " news-row--pair";
+    if(slot===0)return " news-row--accent"+(Math.floor(index/6)%2?" news-row--teal":"");
+    return " news-row--plain";
+  }
   function renderList() {
     const list=filtered();$("nyhedsliste").setAttribute("aria-busy","false");
     const browsing=browsingAll();$("udvalgte").hidden=browsing||!selected.length;
@@ -253,7 +273,7 @@
     $("nulstil").hidden=!browsing;
     $("soegeKnap").classList.toggle("has-filters",browsing);
     $("soegeKnap").setAttribute("aria-label",browsing?"Søg og filtrér nyheder — filtre er aktive":"Søg og filtrér nyheder");
-    $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map(a=>`<article class="news-row"><div class="news-row-content">${cardTopline(a)}<h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><div class="story-excerpt">${image(a,"story-thumbnail")}<p>${escapeHtml(summary(a))}</p></div></div></article>`).join(""):`<div class="empty-state"><h3>${browsing?"Ingen historier matcher":"Du har set alle historierne"}</h3><p>${browsing?"Prøv et andet søgeord, eller vælg alle emner.":"Der er ikke flere historier i denne udgave."}</p>${browsing?'<button data-reset>Vis alle nyheder</button>':""}</div>`;
+    $("nyhedsliste").innerHTML=list.length?list.slice(0,visible).map((a,i)=>`<article class="news-row${mobileCardStyle(list,i)}"><div class="news-row-content">${cardTopline(a)}<h3><a class="story-link" ${linkAttrs(a)}>${escapeHtml(title(a))}</a></h3><div class="story-excerpt">${image(a,"story-thumbnail")}<p>${escapeHtml(summary(a))}</p></div></div></article>`).join(""):`<div class="empty-state"><h3>${browsing?"Ingen historier matcher":"Du har set alle historierne"}</h3><p>${browsing?"Prøv et andet søgeord, eller vælg alle emner.":"Der er ikke flere historier i denne udgave."}</p>${browsing?'<button data-reset>Vis alle nyheder</button>':""}</div>`;
     $("visFlere").hidden=list.length<=visible;
     $("visFlere").innerHTML=`Vis flere nyheder <span class="section-note">${Math.min(visible,list.length)} af ${list.length}</span><span aria-hidden="true">↓</span>`;
   }
@@ -327,8 +347,8 @@
       // på alle aktuelle artikler, så gamle metadata ikke skjuler nye modeller.
       catalog=all;
       const edition=editorEdition(all,data.forside,data.opdateret);
-      articles=edition?edition.articles:uniqueStories(rank(all));
-      selected=edition?edition.selected:select(articles,3);
+      selected=edition?edition.selected:frontSelect(all);
+      articles=edition?edition.articles:frontOrder(all,selected.map(a=>a.link));
       const updated=Date.parse(data.opdateret);
       if(Number.isFinite(updated)){
         $("opdateret").textContent=`Opdateret ${formatDate(updated,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}`;

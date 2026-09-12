@@ -1796,3 +1796,110 @@ body.reader-open {
 .brand{gap:5px}
 @media(max-width:650px){.brand{gap:4px}}
 @media(max-width:380px){.masthead .brand{gap:4px}}
+
+
+/* Mobil: en kompakt rytme af brede kort, par og åbne rækker. */
+@media (max-width:650px) {
+  .lead-summary {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+    overflow:hidden;
+  }
+  .feature-stack {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    align-items:stretch;
+  }
+  .feature-story {
+    border:0;
+    border-top:2px solid #aaa0ef;
+    border-radius:3px 3px 12px 12px;
+    background:linear-gradient(155deg,#25213b,#171921);
+  }
+  .feature-story:nth-child(2) {
+    border-top-color:#74d6c5;
+    background:linear-gradient(155deg,#183334,#151e24);
+  }
+  .feature-story .category {color:#c4baf9;}
+  .feature-story:nth-child(2) .category {color:#8cdfd1;}
+  .feature-story .story-topline {gap:1px 6px;}
+  .feature-story .category,.feature-story .story-date {font-size:.6875rem;}
+  .feature-story h3 {font-size:1.125rem;line-height:1.25;letter-spacing:-.025em;}
+  .feature-story p {font-size:.875rem;line-height:1.5;color:#c3c7d2;}
+  /* Billedhistorier får hele linjen frem for en klemt tekstspalte. */
+  .feature-stack:has(.story-thumbnail) {grid-template-columns:minmax(0,1fr);}
+  #nyhedsliste {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  .news-row {grid-column:1/-1;}
+  .news-row p {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+    overflow:hidden;
+    line-height:1.5;
+  }
+  .news-row--accent {
+    isolation:isolate;
+    overflow:hidden;
+    padding:11px 12px;
+    border-color:#37496a;
+    background:linear-gradient(125deg,#1d304e 0%,#141c2a 80%);
+  }
+  .news-row--accent::before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    pointer-events:none;
+    width:128px;
+    height:128px;
+    right:-64px;
+    top:-70px;
+    border:1px solid #8cbcf32b;
+    border-radius:50%;
+    box-shadow:0 0 0 18px #8cbcf30a,0 0 0 36px #8cbcf307;
+  }
+  .news-row--accent .category {color:#a9d2ff;}
+  .news-row--accent h3 {font-size:1.375rem;line-height:1.22;}
+  .news-row--accent p {color:#c4cedc;}
+  .news-row--teal {
+    border-color:#2b514f;
+    background:linear-gradient(125deg,#173737 0%,#141f25 80%);
+  }
+  .news-row--teal .category {color:#8cdfd1;}
+  .news-row--pair {
+    grid-column:auto;
+    align-self:stretch;
+    padding:9px 10px;
+    border:0;
+    border-radius:10px;
+    background:#1b2029;
+  }
+  .news-row--pair + .news-row--pair {background:#22232c;}
+  .news-row--pair .story-topline {gap:1px 6px;}
+  .news-row--pair .category,.news-row--pair .story-date {font-size:.6875rem;}
+  .news-row--pair .category {color:#c2ccdc;}
+  .news-row--pair h3 {font-size:1.125rem;line-height:1.25;}
+  .news-row--pair p {font-size:.875rem;line-height:1.5;color:#bdc3ce;}
+  .news-row--plain {
+    padding:8px 2px 10px;
+    border:0;
+    border-bottom:1px solid #29303a;
+    border-radius:0;
+    background:transparent;
+  }
+  .news-row--plain h3 {margin:5px 0;font-size:1.1875rem;}
+  .news-row--plain .category {color:#b6c997;}
+  .news-row--plain .story-thumbnail {object-position:left top;left:0;right:auto;}
+  .news-row--plain .story-excerpt:has(.story-thumbnail)>p {
+    margin-right:0;
+    margin-left:calc(var(--thumbnail-width) + 6px);
+  }
+}
+@media (max-width:359px) {
+  .feature-stack {grid-template-columns:minmax(0,1fr);}
+  .news-row--pair {grid-column:1/-1;}
+  .feature-story h3,.news-row--pair h3 {font-size:1.1875rem;}
+  .feature-story p,.news-row--pair p {font-size:1rem;}
+}

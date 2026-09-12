@@ -41,7 +41,7 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   const sunoTime=Date.parse('2026-09-11T12:00:00Z');
   const oneSuno=api.uniqueStories(sunoFixture);
   ok(oneSuno.length===1&&oneSuno[0].andre[0].link===sunoFixture[1].link,'De to faktiske Suno-overskrifter bliver én historie med begge kilder');
-  const sunoPlan={metode:'agent',agent_version:1,kontrolleret:true,data_opdateret:new Date(sunoTime).toISOString(),beregnet:new Date(sunoTime).toISOString(),udvalgte:sunoFixture.map(a=>a.link),raekkefoelge:sunoFixture.map(a=>a.link),samlede:{}};
+  const sunoPlan={metode:'agent',agent_version:2,kontrolleret:true,data_opdateret:new Date(sunoTime).toISOString(),beregnet:new Date(sunoTime).toISOString(),udvalgte:sunoFixture.map(a=>a.link),raekkefoelge:sunoFixture.map(a=>a.link),samlede:{}};
   ok(api.editorEdition(sunoFixture,sunoPlan,sunoPlan.data_opdateret,sunoTime)===null,'En ellers godkendt plan med to Suno-lanceringer bliver afvist');
   const sunoPage=await mount({artikler:sunoFixture,opdateret:sunoPlan.data_opdateret,forside:sunoPlan},{now:sunoTime});
   ok(sunoPage.w.document.querySelectorAll('.lead-story,.feature-story').length===1,'En fejlbehæftet agentplan kan ikke vise begge Suno-omtaler');
@@ -133,7 +133,7 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
   ok(md.querySelector('.news-row h3').textContent.includes('Astra'),'Astra findes under modellanceringer');
   ok(!modelTest.errors.length,'Ny modelprioritet uden scriptfejl');modelTest.close();
   const editorTime=new Date(testNow).toISOString();
-  const editorPlan={metode:'agent',agent_version:1,kontrolleret:true,beregnet:editorTime,data_opdateret:editorTime,
+  const editorPlan={metode:'agent',agent_version:2,kontrolleret:true,beregnet:editorTime,data_opdateret:editorTime,
     udvalgte:[financeArticle.link],raekkefoelge:[financeArticle.link,launchArticle.link],samlede:{[financeArticle.link]:[]}};
   const editorial=await mount({artikler:[launchArticle,financeArticle],opdateret:editorTime,forside:editorPlan});
   ok(editorial.w.document.querySelector('.lead-story h2 a').dataset.article===financeArticle.link,'Godkendt redaktørvalg overtager pointlistens Astra-valg');
@@ -146,6 +146,18 @@ async function mount(data=real,{hash='',blockedStorage=false,fail=false,now=test
     {...editorPlan,samlede:{[financeArticle.link]:[launchArticle.link]}}]){
     ok(api.editorEdition([launchArticle,financeArticle],invalidPlan,editorTime,testNow)===null,'Ugyldig, forældet eller blandet agentplan afvises');
   }
+  const oldRecommendation={...financeArticle,link:'https://example.org/old',titel:'Gammel handel',rubrik:'Gammel handel',dato:new Date(testNow-72*3600000).toISOString()};
+  const freshStory={...financeArticle,link:'https://example.org/robot',titel:'Robot lanceret i dag',rubrik:'Robot lanceret i dag',dato:new Date(testNow-5*60000).toISOString()};
+  const reused=api.editorEdition([launchArticle,financeArticle,oldRecommendation,freshStory],{...editorPlan,
+    raekkefoelge:[financeArticle.link,oldRecommendation.link,launchArticle.link],anbefalede:[oldRecommendation.link]},editorTime,testNow);
+  assert.deepEqual(reused.articles.map(a=>a.link),[financeArticle.link,freshStory.link,launchArticle.link,oldRecommendation.link]);checks++;
+  ok(api.editorEdition([oldRecommendation],{...editorPlan,udvalgte:[oldRecommendation.link],raekkefoelge:[oldRecommendation.link],samlede:{}},editorTime,testNow)===null,'En 72 timer gammel hovedhistorie kan ikke fastholdes');
+  const realFront=api.frontOrder(real.artikler,api.frontSelect(real.artikler,testNow).map(a=>a.link),new Set(),testNow);
+  const unitree=realFront.findIndex(a=>(a.rubrik||'').includes('Unitree'));
+  if(real.artikler.some(a=>(a.rubrik||'').includes('Unitree')&&testNow-api.timestamp(a)<24*3600000))ok(unitree>=0&&unitree<12,'Dagens Unitree-nyhed ligger på første side');
+  const pyFront=JSON.parse(execFileSync('python3',['-c',`import json,redaktion;from datetime import datetime;d=json.load(open('data/articles.json'));print(json.dumps(redaktion.forside(d['artikler'],datetime.fromisoformat('${new Date(testNow).toISOString()}'))))`],{cwd:repo,encoding:'utf8'}));
+  assert.deepEqual(realFront.map(a=>a.link),pyFront.raekkefoelge);checks++;
+  assert.deepEqual(api.frontSelect(real.artikler,testNow).map(a=>a.link),pyFront.udvalgte);checks++;
   const emptyEditorial=api.editorEdition([launchArticle,financeArticle],{...editorPlan,udvalgte:[],samlede:{},raekkefoelge:[launchArticle.link,financeArticle.link]},editorTime,testNow);
   ok(emptyEditorial.selected.length===0,'En godkendt stille dag tvinger ingen hovedhistorie ind');
   const duplicate={...launchArticle,link:'https://second.example/astra',titel:'En ny udgave til alle',rubrik:'En ny udgave til alle',andre:[{link:launchArticle.link,kilde:'Originalkilden'}]};

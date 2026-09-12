@@ -16,6 +16,7 @@ aktuelle topartikler inden for de eksisterende budgetter.
 
 import json
 import redaktion
+from _redaktion.ai_indstillinger import DEEPSEEK_REASONING, DEEPSEEK_TIMEOUT, deepseek_parametre
 import redaktoer_agent
 from kommandocentral import skriv_kommando_data
 from nyhedskilder import parse_nyhedsoversigt
@@ -713,6 +714,7 @@ def _skriv_hjerne_status() -> None:
                 # Hvem kaldet faktisk går til. Uden det felt kan panelet ikke
                 # vise, at et trin er flyttet til en anden udbyder end resten.
                 "udbyder": trin_udbyder(navn),
+                "reasoning_effort": DEEPSEEK_REASONING if trin_udbyder(navn) == "deepseek" else None,
                 "egen_model": bool(hjerne_model(navn)),
                 "egen_prompt": bool((_hjerner().get(navn) or {}).get("prompt")),
                 "standard_prompt": std.get(navn, ""),
@@ -990,7 +992,7 @@ class DeepSeekSvarFejl(RuntimeError):
     """Kun sikre fejlbeskrivelser; aldrig API-nøgler eller intern tænkning."""
 
 
-def deepseek_json_svar(raw: bytes) -> str:
+def deepseek_json_svar(raw: bytes, *, require_object: bool = True) -> str:
     try:
         payload = json.loads(raw)
     except (ValueError, UnicodeError):
@@ -1020,6 +1022,8 @@ def deepseek_json_svar(raw: bytes) -> str:
         raise DeepSeekSvarFejl("DeepSeek afsluttede ikke svaret normalt: " + summary)
     if not isinstance(content, str) or not content.strip():
         raise DeepSeekSvarFejl("DeepSeek returnerede tomt indhold: " + summary)
+    if not require_object:
+        return content
     try:
         parsed = json.loads(content)
     except ValueError:
@@ -1044,42 +1048,36 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
         "model": model,
         "messages": [{"role": "system", "content": system},
                      {"role": "user", "content": bruger_tekst}],
-        "max_tokens": max_tokens,
-        "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
-        **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+        **deepseek_parametre(max_tokens),
         **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
         "stream": False,
     }).encode()
     svar = hent_url(DEEPSEEK_URL, data=body, headers={
         "Authorization": f"Bearer {DEEPSEEK_KEY}",
         "content-type": "application/json",
-    }, **({"timeout": 600} if reasoning_effort else {}))
-    return deepseek_json_svar(svar) if reasoning_effort else json.loads(svar)["choices"][0]["message"]["content"]
+    }, timeout=DEEPSEEK_TIMEOUT)
+    return deepseek_json_svar(svar, require_object=bool(reasoning_effort))
 
 
 def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None) -> str:
     """Ét fælles AI-kald - taler med DeepSeek eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
     if UDBYDER == "deepseek":
-        # OpenAI-formatet. VIGTIGT: "thinking" er slået TIL som standard hos
-        # DeepSeek, og tankerne afregnes som udskrift. Til omskrivning af
-        # nyheder er de normalt slået fra. Nyhedsbrevet vælger eksplicit
-        # maksimal tænkning til sine længere redaktionelle opgaver.
+        # Alle DeepSeek-opgaver bruger max. JSON-objektformat vælges kun
+        # eksplicit: andre opgaver må stadig returnere arrays eller tekst.
         body = json.dumps({
             "model": DEEPSEEK_MODEL,
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": bruger_tekst}],
-            "max_tokens": max_tokens,
-            "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
-            **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
+            **deepseek_parametre(max_tokens),
             **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
             "stream": False,
         }).encode()
         svar = hent_url(DEEPSEEK_URL, data=body, headers={
             "Authorization": f"Bearer {API_KEY}",
             "content-type": "application/json",
-        }, **({"timeout": 600} if reasoning_effort else {}))
-        return deepseek_json_svar(svar) if reasoning_effort else json.loads(svar)["choices"][0]["message"]["content"]
+        }, timeout=DEEPSEEK_TIMEOUT)
+        return deepseek_json_svar(svar, require_object=bool(reasoning_effort))
 
     # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises
     global _gemini_model
@@ -5668,13 +5666,13 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
     baseline = redaktion.forside(artikler, nu)
     result = {"agent": None, "plan": None, "opgaver": {}, "tekster": {}, "originaler": {},
               "forside": baseline, "status": {"opdateret": nu.isoformat(), "status": "reserve",
-              "model": agent_model, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
+              "model": agent_model, "reasoning_effort": DEEPSEEK_REASONING, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
     old = redaktoer_agent.genbrug_forside(tidligere_forside, artikler, nu)
     if old:
         result["forside"] = old
     try:
         retning = (OPSAETNING / "redaktoer.md").read_text(encoding="utf-8")[:10000]
-        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": agent_model,
+        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": agent_model, "reasoning_effort": DEEPSEEK_REASONING,
             "agent_version": redaktoer_agent.VERSION, "system": redaktoer_agent.SYSTEM, "kontrol": redaktoer_agent.KONTROL,
             "skriveinstruks": instruks_signatur("brief", "redaktoer"),
             "artikler": sorted([{k: a.get(k) for k in ("link", "titel", "dato", "resume", "redaktion")}
@@ -5721,7 +5719,7 @@ def afslut_redaktoer(context, artikler, nu):
         try:
             chosen = {agent.artikler[s["id"]]["link"] for s in plan["udvalgte"]}
             afvist = any(a.get("redaktoer_afvist") for a in artikler if a["link"] in chosen)
-            if not afvist and (not chosen or agent.kontroller(plan, artikler)):
+            if not afvist and agent.kontroller(plan, artikler):
                 forside = agent.forside(plan, artikler)
                 if not redaktoer_agent.gyldig_forside(forside, artikler, nu):
                     raise ValueError("Den færdige forside har ugyldige artikelhenvisninger")
@@ -5782,7 +5780,7 @@ def main() -> None:
     if not API_KEY:
         print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
     elif UDBYDER == "deepseek":
-        print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (tænkning slået fra)")
+        print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (reasoning: max)")
     else:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     print(f"🎨 Valgt billedmodel: {special_model('billedgenerator', BILLED_MODEL, 'gemini')}")

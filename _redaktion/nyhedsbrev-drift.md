@@ -258,7 +258,7 @@ DeepSeek-kald får `thinking: enabled`, `reasoning_effort: max` med samme
 valgte model. Niveauet står i `opsaetning/nyhedsbrev.json` og logges for begge
 roller. Loftet er 32.768 outputtokens pr. kald til både skriveren og kontrollen,
 inklusive tænkning. Tænkning afregnes som output; rå reasoning_content gemmes
-eller vises ikke. Crawlerens almindelige kald beholder tænkning slået fra.
+eller vises ikke. Alle crawlerens DeepSeek-kald bruger nu også max (se nedenfor).
 AI-kaldene tillader op til 600 sekunders netværksventetid; workflowet har
 75 minutter til højst tre skrive-/kontrolrunder plus billeder og udsendelse.
 Dokumentation: https://api-docs.deepseek.com/guides/thinking_mode/
@@ -321,3 +321,29 @@ RSS-læserens API: https://rss2json.com/docs
 
 Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication
 Curls genforsøg: https://curl.se/docs/manpage.html#--retry
+
+
+### Fælles max reasoning og en aktuel forside
+
+Alle tre DeepSeek-transportveje bruger `_redaktion/ai_indstillinger.py`:
+`thinking: enabled`, `reasoning_effort: max`, mindst 32.768 tokens til
+samlet tænkning/svar og 600 sekunders timeout. Det gælder også batchvurdering,
+omskrivning, billedmotiver, ugens overblik og agentens research/slutkontrol.
+Nyhedsbrevets tidligere effort-felt kan ikke sænke den fælles max-politik.
+Arrays og almindelig tekst er stadig tilladt i opgaver, som kræver dem.
+Kun nyhedsbrevets eksplicitte objektkontrakt tvinger JSON-objekter.
+Tool-samtalen viderefører reasoning_content til næste værktøjsrunde i
+hukommelsen, som API'et kræver; feltet skrives aldrig i log eller historik.
+
+Agentversion 2 forkaster tidligere planer med den gamle sortering. Op til
+3 kildekontrollerede hovedhistorier vælges blandt de seneste 48 timer.
+Resten vises nyeste først, også når en godkendt plan genbruges og nye artikler
+kommer til. Anbefalinger bliver kontrolleret selv uden hovedhistorier og
+kan ikke fastholde gamle artikler foran nye. Ved AI-fejl prioriterer reserven
+også de seneste 48 timer; kun helt stille perioder bruger ældre hovedhistorier.
+
+Crawlerens planlagte job kan nu bruge op til 120 minutter (manuelt 180).
+Timerytmen er bevaret, men kørsler overlapper ikke. Max kan øge både
+svartid og tokenforbrug; faktisk køretid og redaktionel kvalitet skal vurderes
+på den første GitHub-kørsel efter push. Lokale kontrakttests bruger simulerede
+API-svar og dokumenterer ikke modellens faktiske kvalitet.

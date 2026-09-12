@@ -410,7 +410,7 @@ def ai_call(step, prompt, payload):
     import crawler
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
     model = crawler.hjerne_model(step) or config["model"]
-    effort = config.get("reasoning_effort", "max")
+    effort = crawler.DEEPSEEK_REASONING
     print("AI-trin " + step + ": valgt model " + model
           + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else ""), flush=True)
     # Samme Flash-model, med maksimal tænkning til den lange tekst/kildekontrol.
