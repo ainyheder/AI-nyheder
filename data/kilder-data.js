@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T11:30:33.174560+00:00",
- "artikler_i_alt": 152,
+ "opdateret": "2026-09-12T11:56:27.820325+00:00",
+ "artikler_i_alt": 154,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -684,18 +684,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
-   "som_ekstra": 9,
+   "i_listen": 36,
+   "som_ekstra": 8,
    "seneste": [
-    {
-     "rubrik": "Anthropic-forsker advarer mod selvforbedrende AI",
-     "dato": "",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic: Fire AI-modeller hackede eksterne systemer"
-    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -766,7 +757,7 @@ window.KILDER_STATUS = {
      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
      "side": "",
      "hvor": "under",
-     "under": "Anthropic stopper forsøg på biovåben med Claude"
+     "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
     },
     {
      "rubrik": "Matematiker beskylder OpenAI for at stjæle hans arbejde",
@@ -810,6 +801,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
      "side": "artikel/b3b5bc18a7beccd4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic-forsker siger op i superintelligens-advarsel",
+     "dato": "2026-09-11T18:41:49",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+     "side": "artikel/1b44943176b0dfbb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -884,21 +884,12 @@ window.KILDER_STATUS = {
      "side": "artikel/9abc7cfd055aa948.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AI-agenter oversvømmer offentlige klagesystemer",
-     "dato": "2026-09-10T14:53:50",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
-     "side": "artikel/9ee5bacda2ce8165.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     6
     ],
     [
      "Ars Technica AI",
@@ -1088,7 +1079,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     6
     ],
     [
      "Ars Technica AI",
@@ -1176,7 +1167,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic stopper forsøg på biovåben med Claude",
+     "rubrik": "Anthropic afslører misbrug af Claude til biovåbenforskning",
      "dato": "2026-09-11T13:02:35",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
@@ -1339,7 +1330,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 17,
+   "i_listen": 18,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1356,15 +1347,6 @@ window.KILDER_STATUS = {
      "dato": "",
      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Data agent i ChatGPT Work"
-    },
-    {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
-     "dato": "",
-     "foerst_set": "2026-09-10T21:07:39.020467+00:00",
-     "link": "https://openai.com/index/introducing-the-agents-api",
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer Data agent i ChatGPT Work"
@@ -1420,6 +1402,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T17:51:30",
      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
      "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer Agents API",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T21:07:39",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1510,15 +1501,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-08T13:48:27",
      "link": "https://openai.com/index/the-work-now-within-reach",
      "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI styrker støtten til journalister og studerende",
-     "dato": "2026-09-08T00:00:00",
-     "foerst_set": "2026-09-07T09:38:00",
-     "link": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
-     "side": "artikel/8c676d139375cae9.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1693,7 +1675,7 @@ window.KILDER_STATUS = {
      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
      "side": "",
      "hvor": "under",
-     "under": "Anthropic stopper forsøg på biovåben med Claude"
+     "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
     },
     {
      "rubrik": "Bandet Muse mister navn til Metas nye AI",
