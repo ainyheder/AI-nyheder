@@ -15,7 +15,16 @@ import tempfile
 from pathlib import Path
 
 REPO = Path(os.environ.get("PROEVE_REPO", Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(REPO))
 groen = roed = 0
+
+
+def newsletter_fixtures(root):
+    # Statuspanelet har også nyhedsbrevets to prompts i en frisk checkout.
+    folder = root / 'opsaetning'
+    folder.mkdir()
+    for name in ('nyhedsbrev-prompt.md', 'nyhedsbrev-kontrol-prompt.md'):
+        (folder / name).write_text('Prøveinstruks til nyhedsbrevet')
 
 
 def indlaes(gemini="G-NOEGLE", deepseek="D-NOEGLE", udbyder=""):
@@ -149,6 +158,7 @@ def falsk_hent(url, data=None, headers=None, **kw):
     sendt["url"] = url
     sendt["headers"] = headers or {}
     sendt["body"] = json.loads(data.decode()) if data else None
+    sendt["timeout"] = kw.get("timeout")
     return json.dumps({"choices": [{"message": {"content": "svar"}}]}).encode()
 
 
@@ -162,6 +172,21 @@ ok("E3 modelnavnet kommer udefra, ikke fra konstanten",
    sendt["body"]["model"] == "deepseek-v4-pro", sendt["body"]["model"])
 ok("E4 tænkning er slået fra — ellers afregnes tankerne som udskrift",
    sendt["body"].get("thinking") == {"type": "disabled"}, sendt["body"].get("thinking"))
+c.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, "deepseek-flash", reasoning_effort="max")
+ok("E4a nyhedsbrevet bevarer Flash og får maksimal tænkning",
+   sendt["body"]["model"] == "deepseek-flash" and sendt["body"].get("thinking") == {"type": "enabled"}
+   and sendt["body"].get("reasoning_effort") == "max" and sendt["body"]["max_tokens"] == 32768
+   and sendt["timeout"] == 600)
+c.kald_deepseek_model("system", "bruger", 50, "deepseek-flash")
+ok("E4b almindelige kald beholder deres hidtidige budget og tilstand",
+   sendt["body"].get("thinking") == {"type": "disabled"} and "reasoning_effort" not in sendt["body"]
+   and sendt["timeout"] is None)
+c_fallback = indlaes(udbyder="deepseek")
+c_fallback.hent_url = falsk_hent
+c_fallback.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, reasoning_effort="max")
+ok("E4c den daglige DeepSeek-model bevarer også max ved fallback",
+   sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "max"
+   and sendt["timeout"] == 600)
 c2 = indlaes(deepseek="")
 try:
     c2.kald_deepseek_model("s", "b", 10, "deepseek-v4-pro")
@@ -332,6 +357,7 @@ try:
     (midl_x / "_redaktion").mkdir()
     (midl_x / "_redaktion" / "opgavekoe.md").write_bytes(b"Overskrift med \xe9\n")
     (midl_x / "data").mkdir()
+    newsletter_fixtures(midl_x)
     c.ROOT = midl_x
     c.HJERNER_STATUS = midl_x / "data" / "status.json"
     baand = io.StringIO()
@@ -372,6 +398,7 @@ midl_i = Path(tempfile.mkdtemp(prefix="proeve-loop-"))
 try:
     (midl_i / "_redaktion").mkdir()
     (midl_i / "data").mkdir()
+    newsletter_fixtures(midl_i)
 
     def kør(filer):
         """filer: navn -> bytes (eller None for 'findes ikke'). Returnerer JS-data."""
@@ -515,7 +542,9 @@ try:
         ok("F5 hvert trin siger hvem det kalder",
            all(h.get("udbyder") == "deepseek" for h in d["hjerner"].values()),
            [n for n, h in d["hjerner"].items() if h.get("udbyder") != "deepseek"][:3])
-        ok("F6 alle 14 trin er med", len(d["hjerner"]) == 14, len(d["hjerner"]))
+        ok("F6 alle 16 trin, inklusive nyhedsbrevets to roller, er med",
+           len(d["hjerner"]) == 16 and {"nyhedsbrev", "nyhedsbrev_kontrol"} <= set(d["hjerner"]),
+           len(d["hjerner"]))
     # Og uden nøgler skal den sige "ingen" — ikke lade som om Gemini kører.
     os.environ.pop("GITHUB_ACTIONS", None)
     c3 = indlaes(gemini="", deepseek="")
@@ -527,7 +556,7 @@ try:
     # Dette er fejlen fra før, spejlet: `daglig` falder tilbage til Gemini-navnet,
     # når der ikke er nogen udbyder. Skrev vi model_udbyder(daglig) pr. trin,
     # ville alle 14 kort påstå "gemini" på en maskine uden en Google-nøgle.
-    ok("F8 og ingen af de 14 trin påstår at køre på Google",
+    ok("F8 og ingen af de 16 trin påstår at køre på Google",
        all(h.get("udbyder") == "" for h in d3["hjerner"].values()),
        sorted({h.get("udbyder") for h in d3["hjerner"].values()}))
 finally:

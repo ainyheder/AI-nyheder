@@ -51,7 +51,10 @@ def send_test(api, draft, source, run_id, folder, config=None):
         (folder / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=2))
     save()
     check = api.get(email_id)
-    if check.get("status") != "draft" or check.get("body") != body or check.get("subject") != draft["emne"]:
+    if not n.unchanged_draft(check, draft["emne"], body):
+        # Kun den relevante kladde; ingen kontooplysninger, headers eller nøgler.
+        (folder / "buttondown-kladde.json").write_text(json.dumps(
+            {k: check.get(k) for k in ("status", "subject", "body")}, ensure_ascii=False, indent=2))
         raise ValueError("Kladden er ændret efter kontrollen")
     status["status"] = "testafsendelse_påbegyndt"
     save()

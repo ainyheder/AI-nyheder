@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    timeout-minutes: 20
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,6 +67,10 @@ jobs:
           python3 _redaktion/proeve-nyhedsbrev-feed.py
           python3 _redaktion/proeve-nyhedsbrev.py
           python3 _redaktion/proeve-nyhedsbrev-test.py
+          python3 _redaktion/proeve-modelvalg.py
+          python3 _redaktion/proeve-fritlaegning.py
+      - name: Kontrollér fritlægning før AI og billedkøb
+        run: python3 -m _redaktion.nyhedsbrev_billeder --check-engine
       - name: Skriv, kontrollér og send prøve til Gmail
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -87,7 +91,7 @@ jobs:
   rediger-og-send:
     if: github.event_name != 'workflow_dispatch' || (!inputs.test_gmail && !inputs.check_feed)
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:

@@ -245,6 +245,43 @@ De nye prompts skal efter push afprøves i en ny Gmail-test. Lokale tests med
 falske AI-svar kontrollerer rettelsesforløb og udsendelsesgrænser, ikke kvaliteten
 af næste rigtige brev. FLUX → BiRefNet → Buttondown er stadig ikke bekræftet.
 
+### Gmail-prøve 8 og de næste rettelser
+
+[Kørsel 34695026486](https://github.com/ainyheder/AI-nyheder/actions/runs/34695026486)
+på `8c554ea` hentede igen originalen automatisk. AI-kontrollen godkendte tredje
+udkast. En efterfølgende gennemlæsning fandt dog fortsat gentagelser og flere
+passager tæt på originalens formuleringer. Godkendelsen beviser altså ikke,
+at tekstkvaliteten er tilstrækkelig.
+
+Torben ønsker fortsat Flash og har valgt maksimal tænkning. Nyhedsbrevets
+DeepSeek-kald får `thinking: enabled`, `reasoning_effort: max` med samme
+valgte model. Niveauet står i `opsaetning/nyhedsbrev.json` og logges for begge
+roller. Loftet er 32.768 outputtokens pr. kald til både skriveren og kontrollen,
+inklusive tænkning. Tænkning afregnes som output; rå reasoning_content gemmes
+eller vises ikke. Crawlerens almindelige kald beholder tænkning slået fra.
+AI-kaldene tillader op til 600 sekunders netværksventetid; workflowet har
+75 minutter til højst tre skrive-/kontrolrunder plus billeder og udsendelse.
+Dokumentation: https://api-docs.deepseek.com/guides/thinking_mode/
+
+Prøve 8 oprettede Buttondown-kladde `em_5p5vbxhqxa8d6sm2e0h23h2zsd`, men
+stoppede før send-draft. Der er ikke sendt en testmail. Buttondowns viste
+HTML var indholdsmæssigt identisk med den indsendte: forskellen var automatisk
+indsat tbody, normaliserede mellemrum i CSS og afkodede tegnkoder. Den nye
+sammenligning læser HTML-tags, attributter og tekst frem for at sammenligne
+rå bytes. Den tillader disse serialiseringsforskelle og editorens dokumenterede
+markør, men stopper fortsat ved ændret emne, status, tekst, links, billeder
+eller stil. Ved afvigelse gemmer Gmail-testen nu også kladden i artefaktet.
+Formatmarkør: https://docs.buttondown.com/api-emails-create
+
+Prøvens ene illustration blev udeladt efter CalledProcessError i fritlægningen.
+Den gamle kode kasserede stdout/stderr, så den præcise årsag er ukendt.
+FLUX-kaldet nåede at returnere et billede; BiRefNet og billedhosting er ikke
+bekræftet fra den kørsel. Fritlægningens proces rapporterer nu trin, returkode
+og fejltype uden rå udbydersvar. Gmail-testen prøver desuden hele BiRefNet-
+konverteringen på en teknisk prøvefigur før betalte AI- og billedkald.
+Denne kontrol er bestået lokalt med den samme rembg-version, men skal stadig
+bestå på GitHub. Den tekniske figur indsættes aldrig i nyhedsbrevet.
+
 RSS-læserens API: https://rss2json.com/docs
 
 Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/360038239391-Is-there-an-RSS-feed-for-my-publication

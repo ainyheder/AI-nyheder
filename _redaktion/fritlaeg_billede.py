@@ -16,13 +16,18 @@ def kontroller_maske(image):
         raise ValueError('Masken bevarer for lidt motiv eller for meget baggrund')
 
 
-def fritlaeg(source, destination, session=None):
+def fritlaeg(source, destination, session=None, progress=None):
+    progress = progress or (lambda stage: None)
+    progress('biblioteker')
     from PIL import Image
     from rembg import new_session, remove
     if session is None:
+        progress('model')
         session = new_session(MODEL, providers=['CPUExecutionProvider'])
+    progress('maske')
     with Image.open(source) as original:
         output = remove(original.convert('RGB'), session=session).convert('RGBA')
+    progress('kontrol')
     kontroller_maske(output)
     destination = Path(destination)
     # Hele motivet i en 4:3 flade med luft omkring. Undgå at små objekter
@@ -37,6 +42,7 @@ def fritlaeg(source, destination, session=None):
     canvas = Image.new('RGBA', (width, width * 3 // 4))
     canvas.alpha_composite(subject, ((canvas.width-subject.width)//2, (canvas.height-subject.height)//2))
     temporary = destination.with_suffix('.webp.tmp')
+    progress('gem')
     try:
         canvas.save(temporary, 'WEBP', quality=92, method=6)
         temporary.replace(destination)
@@ -50,4 +56,10 @@ if __name__ == '__main__':
     parser.add_argument('original', type=Path)
     parser.add_argument('output', type=Path)
     args = parser.parse_args()
-    fritlaeg(args.original, args.output)
+    try:
+        fritlaeg(args.original, args.output, progress=lambda stage: print('CUTOUT_STAGE=' + stage, flush=True))
+    except Exception as exc:
+        # Fejltype og trin kan logges uden udbydersvar, headers eller nøgler.
+        import sys
+        print('CUTOUT_ERROR=' + type(exc).__name__, file=sys.stderr, flush=True)
+        sys.exit(1)

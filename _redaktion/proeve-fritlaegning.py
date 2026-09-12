@@ -11,6 +11,7 @@ from PIL import Image, ImageDraw
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import crawler as c
 from fritlaeg_billede import fritlaeg, kontroller_maske
+from _redaktion.nyhedsbrev_billeder import cutout_png, CutoutError
 
 
 class Fritlaegning(unittest.TestCase):
@@ -68,6 +69,15 @@ class Fritlaegning(unittest.TestCase):
         with patch('subprocess.run',side_effect=run):
             self.assertEqual(c._gem_artikelbillede(self.bytes,self.path),self.path.with_suffix('.webp'))
         self.assertTrue(self.path.is_file())
+
+    def test_newsletter_reports_cutout_stage_and_exit_without_provider_data(self):
+        for code, stderr, expected in [(-9, 'Private request-data', 'ProcesAfbrudt'),
+                                       (1, 'Private request-data\nCUTOUT_ERROR=ValueError\n', 'ValueError')]:
+            result = SimpleNamespace(returncode=code, stdout='CUTOUT_STAGE=model\nCUTOUT_STAGE=kontrol\n', stderr=stderr)
+            with patch('subprocess.run', return_value=result), self.assertRaises(CutoutError) as error:
+                cutout_png(self.bytes)
+            self.assertEqual(error.exception.details, {'trin':'kontrol', 'returkode':code, 'fejltype':expected})
+            self.assertNotIn('Private request-data', str(error.exception))
 
 
 if __name__=='__main__': unittest.main(verbosity=2)

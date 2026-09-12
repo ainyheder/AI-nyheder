@@ -172,6 +172,71 @@ def validate_review(review):
         raise ValueError("Kvalitetskontrollen afviste brevet")
 
 
+class EmailHTML(HTMLParser):
+    """Sammenlign indhold, tags og attributter efter harmløs HTML-serialisering."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.tokens = []
+        self.in_style = False
+
+    @staticmethod
+    def spaces(value):
+        return re.sub(r"[\t\n\r\f ]+", " ", value)
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tbody" and not attrs:
+            return  # Browseren indsætter denne valgfrie tabelgruppe.
+        if len({key for key, _ in attrs}) != len(attrs):
+            raise ValueError("Tvetydige HTML-attributter")
+        self.tokens.append(("start", tag, sorted(attrs)))
+        self.in_style = tag == "style"
+
+    def handle_endtag(self, tag):
+        if tag != "tbody":
+            self.tokens.append(("end", tag))
+        if tag == "style":
+            self.in_style = False
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}:
+            self.handle_endtag(tag)
+
+    def handle_data(self, value):
+        value = self.spaces(value)
+        self.tokens.append(("text", value.strip() if self.in_style else value))
+
+    def handle_comment(self, value):
+        self.tokens.append(("comment", value))
+
+    def handle_decl(self, value):
+        self.tokens.append(("declaration", value))
+
+    def handle_pi(self, value):
+        self.tokens.append(("instruction", value))
+
+
+def same_email_html(expected, actual):
+    if not isinstance(actual, str):
+        return False
+    def tokens(value):
+        # Buttondowns dokumenterede editor-markør er transportmetadata.
+        value = re.sub(r"\A<!-- buttondown-editor-mode: (?:plaintext|fancy) -->", "", value)
+        parser = EmailHTML()
+        parser.feed(value)
+        parser.close()
+        return parser.tokens
+    try:
+        return tokens(expected) == tokens(actual)
+    except (ValueError, TypeError):
+        return False
+
+
+def unchanged_draft(remote, subject, body):
+    return (remote.get("status") == "draft" and remote.get("subject") == subject
+            and same_email_html(body, remote.get("body")))
+
+
 def inline(text):
     # Ingen rå model-HTML. Kun sikre, eksplicitte HTTPS-links og fed tekst.
     escaped = html.escape(text)
@@ -344,9 +409,14 @@ class GitStore:
 def ai_call(step, prompt, payload):
     import crawler
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
-    print("AI-trin " + step + ": valgt model " + (crawler.hjerne_model(step) or config["model"]))
+    model = crawler.hjerne_model(step) or config["model"]
+    effort = config.get("reasoning_effort", "max")
+    print("AI-trin " + step + ": valgt model " + model
+          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else ""))
+    # Samme Flash-model, med maksimal tænkning til den lange tekst/kildekontrol.
+    # Tokenloftet omfatter også tænkning. Rå reasoning_content gemmes ikke.
     return crawler.parse_json_objekt(crawler.hjerne_kald(step, prompt, json.dumps(payload, ensure_ascii=False),
-                                                       6500 if step == "nyhedsbrev" else 2200, config["model"]))
+                                                       32768, config["model"], reasoning_effort=effort))
 
 
 def editorial_attempt(source, writer_prompt, review_prompt, previous=None, errors="", ai=ai_call):
@@ -461,7 +531,7 @@ def process(items, config, store, api, ai=ai_call):
                 store.save()
                 continue
             # Stop hvis et menneske har ændret kladden efter AI-kontrollen.
-            if remote.get("status") != "draft" or remote.get("subject") != entry["draft"]["emne"] or remote.get("body") != entry["html"]:
+            if not unchanged_draft(remote, entry["draft"]["emne"], entry["html"]):
                 entry.update(status="afventer", fejl="Buttondown-kladden er ændret efter kontrollen")
                 store.save()
                 attention.append(entry["titel"])

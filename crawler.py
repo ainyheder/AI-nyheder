@@ -103,10 +103,10 @@ NS = {"atom": "http://www.w3.org/2005/Atom"}
 
 # ----- Hjælpefunktioner (crawl) ----------------------------------------------
 
-def hent_url(url: str, data: bytes | None = None, headers: dict | None = None) -> bytes:
+def hent_url(url: str, data: bytes | None = None, headers: dict | None = None, *, timeout: int | None = None) -> bytes:
     req = urllib.request.Request(url, data=data,
                                  headers={"User-Agent": USER_AGENT, **(headers or {})})
-    with urllib.request.urlopen(req, timeout=60 if data else TIMEOUT_SEK) as svar:
+    with urllib.request.urlopen(req, timeout=timeout if timeout is not None else (60 if data else TIMEOUT_SEK)) as svar:
         return svar.read()
 
 
@@ -454,7 +454,7 @@ def _er_endelig_fejl(fejl: Exception) -> bool:
 
 
 def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
-                max_tokens: int, standard_model: str | None = None) -> str:
+                max_tokens: int, standard_model: str | None = None, *, reasoning_effort: str | None = None) -> str:
     """Kalder AI'en for ét arbejdstrin. Er der valgt en bestemt model til
     trinnet, sendes den til DEN udbyder, der ejer navnet - ellers kører trinnet
     på den daglige udbyder.
@@ -462,6 +462,9 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     Hver gang vi falder tilbage til den daglige model, skal det stå i loggen.
     Et tavst fald er værre end en fejl: panelet bliver ved med at vise valget,
     og ingen opdager, at det ikke bliver brugt."""
+    if reasoning_effort not in (None, "low", "high", "max"):
+        raise ValueError("Ukendt reasoning_effort")
+    reasoning = {"reasoning_effort": reasoning_effort} if reasoning_effort else {}
     system = hjerne_prompt(navn, standard_prompt)
     model = hjerne_model(navn) or standard_model
     if model:
@@ -478,7 +481,7 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
             _doede_modeller.add(model)
         else:
             try:
-                svar = (kald_deepseek_model(system, bruger, max_tokens, model)
+                svar = (kald_deepseek_model(system, bruger, max_tokens, model, **reasoning)
                         if udbyder == "deepseek"
                         else kald_gemini_model(system, bruger, max_tokens, model))
                 _model_fejl.pop(model, None)     # rækken er brudt
@@ -503,7 +506,7 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                           f"({type(fejl).__name__}, {antal}/"
                           f"{MODEL_FEJL_GRAENSE}) - dette trin bruger "
                           f"den daglige model")
-    return kald_ai(system, bruger, max_tokens)
+    return kald_ai(system, bruger, max_tokens, **reasoning)
 
 
 # Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
@@ -978,7 +981,7 @@ def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
 
 
 def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
-                        model: str) -> str:
+                        model: str, *, reasoning_effort: str | None = None) -> str:
     """Kalder en BESTEMT DeepSeek-model. Samme krop som det daglige kald, men
     modelnavnet kommer udefra, så panelet kan løfte ét enkelt trin op i klasse
     uden at flytte hele siden. Ingen fallback: virker modellen ikke, skal vi
@@ -993,35 +996,38 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
         "messages": [{"role": "system", "content": system},
                      {"role": "user", "content": bruger_tekst}],
         "max_tokens": max_tokens,
-        "thinking": {"type": "disabled"},
+        "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
+        **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
         "stream": False,
     }).encode()
     svar = hent_url(DEEPSEEK_URL, data=body, headers={
         "Authorization": f"Bearer {DEEPSEEK_KEY}",
         "content-type": "application/json",
-    })
+    }, **({"timeout": 600} if reasoning_effort else {}))
     return json.loads(svar)["choices"][0]["message"]["content"]
 
 
-def kald_ai(system: str, bruger_tekst: str, max_tokens: int) -> str:
+def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None) -> str:
     """Ét fælles AI-kald - taler med DeepSeek eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
     if UDBYDER == "deepseek":
         # OpenAI-formatet. VIGTIGT: "thinking" er slået TIL som standard hos
         # DeepSeek, og tankerne afregnes som udskrift. Til omskrivning af
-        # nyheder har vi ikke brug for dem - så de slås fra her.
+        # nyheder er de normalt slået fra. Nyhedsbrevet vælger eksplicit
+        # maksimal tænkning til sine længere redaktionelle opgaver.
         body = json.dumps({
             "model": DEEPSEEK_MODEL,
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": bruger_tekst}],
             "max_tokens": max_tokens,
-            "thinking": {"type": "disabled"},
+            "thinking": {"type": "enabled" if reasoning_effort else "disabled"},
+            **({"reasoning_effort": reasoning_effort} if reasoning_effort else {}),
             "stream": False,
         }).encode()
         svar = hent_url(DEEPSEEK_URL, data=body, headers={
             "Authorization": f"Bearer {API_KEY}",
             "content-type": "application/json",
-        })
+        }, **({"timeout": 600} if reasoning_effort else {}))
         return json.loads(svar)["choices"][0]["message"]["content"]
 
     # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises

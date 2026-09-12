@@ -45,19 +45,27 @@ def public_image_url(url):
     return url
 
 
-def generate_png(motif):
-    import crawler
+class CutoutError(RuntimeError):
+    def __init__(self, stage, returncode, error_type):
+        self.details = {'trin': stage, 'returkode': returncode, 'fejltype': error_type}
+        super().__init__(json.dumps(self.details, ensure_ascii=False))
+
+
+def cutout_png(raw):
     from PIL import Image
     from _redaktion.fritlaeg_billede import kontroller_maske
-    prompt = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()
-    raw = crawler.lav_flux_billede(prompt + '\n\nSUBJECT DATA:\n' + json.dumps({'motif': motif}, ensure_ascii=False))
     with tempfile.TemporaryDirectory(prefix='ai-newsletter-image-') as folder:
         original = Path(folder) / 'original.png'
         original.write_bytes(raw)
         cutout = Path(folder) / 'cutout.webp'
-        subprocess.run([sys.executable, str(ROOT / '_redaktion/fritlaeg_billede.py'), str(original), str(cutout)],
-                       cwd=folder, env={**os.environ, 'OMP_NUM_THREADS': '2'},
-                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True, timeout=180)
+        result = subprocess.run([sys.executable, str(ROOT / '_redaktion/fritlaeg_billede.py'), str(original), str(cutout)],
+                                cwd=folder, env={**os.environ, 'OMP_NUM_THREADS': '2'},
+                                capture_output=True, text=True, timeout=180)
+        if result.returncode:
+            stages = re.findall(r'^CUTOUT_STAGE=([a-z]+)$', result.stdout, re.M)
+            errors = re.findall(r'^CUTOUT_ERROR=([A-Za-z]+)$', result.stderr, re.M)
+            raise CutoutError(stages[-1] if stages else 'start', result.returncode,
+                              errors[-1] if errors else 'ProcesAfbrudt')
         with Image.open(cutout) as image:
             image = image.convert('RGBA')
             kontroller_maske(image)
@@ -66,6 +74,13 @@ def generate_png(motif):
             image.save(output, 'PNG', optimize=True)
     # Mailen får aldrig den mørke original som skjult fallback.
     return output.getvalue()
+
+
+def generate_png(motif):
+    import crawler
+    prompt = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()
+    raw = crawler.lav_flux_billede(prompt + '\n\nSUBJECT DATA:\n' + json.dumps({'motif': motif}, ensure_ascii=False))
+    return cutout_png(raw)
 
 
 def prepare(entry, config, api, save, generator=generate_png):
@@ -95,8 +110,34 @@ def prepare(entry, config, api, save, generator=generate_png):
             except Exception as exc:
                 # Kun fejltype: udbydernes svar kan indeholde request-data.
                 record.update(status='udeladt', fejl=type(exc).__name__)
+                if isinstance(exc, CutoutError):
+                    record['detaljer'] = exc.details
                 print('Nyhedsbrevsillustration udeladt: ' + type(exc).__name__)
+                if isinstance(exc, CutoutError):
+                    print(str(exc))
             save()
         if record['status'] == 'klar':
             ready.append({'placering': spec['placering'], 'url': public_image_url(record['url']), 'alt': record['alt']})
     return ready
+
+
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description='Kontrollér fritlægning uden billedkøb eller mail.')
+    parser.add_argument('--check-engine', action='store_true', required=True)
+    parser.parse_args()
+    config = json.loads((ROOT / 'opsaetning/nyhedsbrev.json').read_text())
+    if config.get('billeder', {}).get('aktiv', False):
+        from PIL import Image, ImageDraw
+        # Teknisk prøvefigur: ingen AI-generering, og filen bruges aldrig i brevet.
+        sample = Image.new('RGB', (640, 480), 'white')
+        ImageDraw.Draw(sample).ellipse((160, 70, 480, 410), fill='#167aa5')
+        raw = io.BytesIO(); sample.save(raw, 'PNG')
+        try:
+            png = cutout_png(raw.getvalue())
+        except CutoutError as exc:
+            print('Fritlægningskontrol fejlede: ' + str(exc))
+            sys.exit(1)
+        print('BiRefNet-kontrol bestået: gennemsigtig PNG, ' + str(len(png)) + ' bytes. Ingen billedkøb eller mail.')
+    else:
+        print('Illustrationer er slået fra; fritlægningskontrol springes over.')

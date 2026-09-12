@@ -80,6 +80,19 @@ def ai(step, prompt, payload):
 
 
 class NewsletterTests(unittest.TestCase):
+    def test_writer_and_reviewer_use_flash_with_max_from_settings(self):
+        import crawler
+        config = json.loads((n.ROOT / "opsaetning/nyhedsbrev.json").read_text())
+        self.assertEqual(config["model"], "deepseek-flash")
+        self.assertEqual(config["reasoning_effort"], "max")
+        with patch.object(crawler, 'hjerne_model', return_value=None), \
+             patch.object(crawler, 'hjerne_kald', return_value='{"ok": true}') as call:
+            for step in ('nyhedsbrev', 'nyhedsbrev_kontrol'):
+                self.assertEqual(n.ai_call(step, 'Prompt', {'original': SOURCE}), {'ok': True})
+                self.assertEqual(call.call_args.args[0], step)
+                self.assertEqual(call.call_args.args[3:5], (32768, 'deepseek-flash'))
+                self.assertEqual(call.call_args.kwargs, {'reasoning_effort': 'max'})
+
     def run_flow(self, store, api, items=None, writer=ai):
         n.process(items if items is not None else [SOURCE], CONFIG, store, api, writer)
 
@@ -218,6 +231,23 @@ class NewsletterTests(unittest.TestCase):
         self.assertEqual(rendered.count('href="' + SOURCE["url"] + '"'), 1)
         self.assertNotIn('href="javascript:', n.inline('[Klik](javascript:alert)'))
         self.assertIn('&lt;script&gt;', n.inline('<script>attack</script>'))
+
+    def test_buttondown_serialization_preserves_approved_content(self):
+        body = '<style>\np { color:red; }\n</style><table><tr><td><p>Peter&#x27;s tekst &amp; forklaring</p></td></tr></table>'
+        remote = '<!-- buttondown-editor-mode: fancy --><style>p { color:red; }</style><table><tbody><tr><td><p>Peter\'s tekst &amp; forklaring</p></td></tr></tbody></table>'
+        self.assertTrue(n.unchanged_draft({'status':'draft','subject':'Prøve','body':remote}, 'Prøve', body))
+        self.assertFalse(n.unchanged_draft({'status':'draft','subject':'Ændret','body':remote}, 'Prøve', body))
+        self.assertFalse(n.unchanged_draft({'status':'sent','subject':'Prøve','body':remote}, 'Prøve', body))
+        self.assertFalse(n.same_email_html(body, remote.replace('forklaring','anbefaling')))
+
+    def test_html_comparison_preserves_links_images_styles_and_literal_text(self):
+        body = '<p>&lt;b&gt;tekst&lt;/b&gt; <a href="https://example.org" style="color:red">Kilde</a></p><img src="https://example.org/a.png" alt="Illustration">'
+        for changed in (body.replace('&lt;b&gt;tekst&lt;/b&gt;', '<b>tekst</b>'),
+                        body.replace('https://example.org"', 'https://other.example"'),
+                        body.replace('/a.png', '/b.png'), body.replace('Illustration', 'Fotografi'),
+                        body.replace('color:red', 'color:white'), body.replace('</p>', '<script>run()</script></p>')):
+            self.assertFalse(n.same_email_html(body, changed))
+        self.assertFalse(n.same_email_html(body, None))
 
     def test_feed_uses_full_body_canonical_link_and_original_metadata(self):
         raw = b'''<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><item><title>Original</title><link>https://metatrends.substack.com/p/test?utm_source=mail</link><pubDate>Thu, 10 Sep 2026 16:54:27 GMT</pubDate><dc:creator>Peter H. Diamandis</dc:creator><description>Kort</description><content:encoded><![CDATA[<p>Hele teksten</p><script>Skjult</script>]]></content:encoded></item></channel></rss>'''
