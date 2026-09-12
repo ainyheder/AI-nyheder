@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T09:04:56.158941+00:00",
- "artikler_i_alt": 151,
+ "opdateret": "2026-09-12T11:13:05.623181+00:00",
+ "artikler_i_alt": 153,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -583,6 +583,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+     "dato": "2026-09-05T23:27:48",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
      "dato": "2026-09-10T00:56:41",
      "foerst_set": "2026-09-11T14:38:09",
@@ -597,15 +606,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
      "side": "artikel/3b42aec52f1320a9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-     "dato": "2026-09-05T23:27:48",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-     "side": "",
      "hvor": "forside",
      "under": ""
     },
@@ -684,18 +684,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
+   "i_listen": 36,
    "som_ekstra": 8,
    "seneste": [
-    {
-     "rubrik": "Sidste chance for Side Events på Disrupt",
-     "dato": "",
-     "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-     "side": "",
-     "hvor": "under",
-     "under": "TechCrunch Disrupt udstillerborde udsolgte snart"
-    },
     {
      "rubrik": "Metas nye AI-app Muse er nummer to i USA",
      "dato": "",
@@ -814,11 +805,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic-forsker advarer ved exit",
+     "rubrik": "Anthropic-forsker advarer mod selvforbedrende AI",
      "dato": "2026-09-11T18:41:49",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
-     "side": "",
+     "side": "artikel/1b44943176b0dfbb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -836,6 +827,15 @@ window.KILDER_STATUS = {
      "dato": "2026-09-11T20:33:18",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Frist for TechCrunch-sideevents udløber i nat",
+     "dato": "2026-09-11T20:30:17",
+     "foerst_set": "2026-09-11T21:11:45",
+     "link": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -884,15 +884,6 @@ window.KILDER_STATUS = {
      "side": "artikel/9abc7cfd055aa948.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AI-klager vælter CFPB og britisk ombudsmand",
-     "dato": "2026-09-10T14:53:50",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
-     "side": "artikel/9ee5bacda2ce8165.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -938,7 +929,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
      "side": "",
      "hvor": "under",
-     "under": "ChatGPT-sjusk koster advokat 5.000 dollar"
+     "under": "New Mexico straffer advokat for ChatGPT-falsknerier"
     },
     {
      "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
@@ -1118,7 +1109,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
+   "i_listen": 12,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1131,7 +1122,16 @@ window.KILDER_STATUS = {
      "under": "Anthropic-forsker: AI kan slå os alle ihjel"
     },
     {
-     "rubrik": "ChatGPT-sjusk koster advokat 5.000 dollar",
+     "rubrik": "Unitree-robot hund koster 4.000 dollar",
+     "dato": "2026-09-12T11:00:53",
+     "foerst_set": "2026-09-12T11:13:05",
+     "link": "https://arstechnica.com/gadgets/2026/09/i-spent-4000-on-a-robot-dog-from-china/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "New Mexico straffer advokat for ChatGPT-falsknerier",
      "dato": "2026-09-11T19:34:09",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
@@ -1140,7 +1140,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google køber Spirit-data i konkurs – nu protesterer startups",
+     "rubrik": "Google køber Spirit-data trods protester",
      "dato": "2026-09-10T18:14:14",
      "foerst_set": "2026-09-10T21:07:39",
      "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
@@ -1240,10 +1240,6 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Google DeepMind",
-     1
-    ],
-    [
      "Hacker News: AI",
      1
     ]
@@ -1334,7 +1330,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 19,
+   "i_listen": 18,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1347,13 +1343,22 @@ window.KILDER_STATUS = {
      "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
-     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren",
      "dato": "",
      "foerst_set": "2026-09-10T21:07:39.020467+00:00",
-     "link": "https://openai.com/index/introducing-the-agents-api",
+     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
      "side": "",
      "hvor": "under",
      "under": "OpenAI lancerer Data agent i ChatGPT Work"
+    },
+    {
+     "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
+     "dato": "",
+     "foerst_set": "2026-09-09T23:28:16.094724+00:00",
+     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
+     "side": "",
+     "hvor": "under",
+     "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
      "rubrik": "Paul Christiano får plads i OpenAI Foundations bestyrelse",
@@ -1392,15 +1397,6 @@ window.KILDER_STATUS = {
      "under": "OpenAI styrker støtten til journalister og studerende"
     },
     {
-     "rubrik": "GPT-6 Astra forbedrer Devins egen test",
-     "dato": "2026-09-11T16:00:00",
-     "foerst_set": "2026-09-12T00:50:07",
-     "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-     "side": "artikel/bb3fa770c5976f2e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI bygger lager til 1 milliard ChatGPT-brugere",
      "dato": "2026-09-11T10:00:00",
      "foerst_set": "2026-09-11T17:51:30",
@@ -1410,11 +1406,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI annoncerer ChatGPT til finanssektoren",
-     "dato": "2026-09-10T07:00:00",
+     "rubrik": "OpenAI lancerer Agents API til cloud-agenter",
+     "dato": "2026-09-10T00:00:00",
      "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-     "side": "",
+     "link": "https://openai.com/index/introducing-the-agents-api",
+     "side": "artikel/96db0e24a08a20fe.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1464,11 +1460,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
-     "dato": "2026-09-09T11:00:00",
+     "rubrik": "GPT-6 Astra forbedrer Devins egen test",
+     "dato": "2026-09-11T16:00:00",
      "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-     "side": "artikel/dc8c3baa32f27c68.html",
+     "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+     "side": "artikel/bb3fa770c5976f2e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1498,6 +1494,15 @@ window.KILDER_STATUS = {
      "side": "artikel/c34d7a764f86c6e9.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "OpenAI: Billigere AI kan klare mere",
+     "dato": "2026-09-08T13:00:00",
+     "foerst_set": "2026-09-08T13:48:27",
+     "link": "https://openai.com/index/the-work-now-within-reach",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -1525,18 +1530,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 9,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "DeepMind: AlphaGenome Atlas kortlægger DNA-varianter",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google AI forudsiger alle dna-ændringer"
-    },
     {
      "rubrik": "Google DeepMind præsenterer Gemini 3.8 Flash med cyberfunktion",
      "dato": "",
@@ -1545,6 +1541,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Gemini springer i videoer og sparer tid"
+    },
+    {
+     "rubrik": "DeepMind kortlægger 9 milliarder DNA-varianter",
+     "dato": "2026-09-08T14:00:15",
+     "foerst_set": "2026-09-08T18:02:43",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "side": "",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google klar med vejr-AI'en WeatherNext 3",
@@ -1632,10 +1637,6 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
