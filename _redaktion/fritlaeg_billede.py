@@ -29,8 +29,12 @@ def fritlaeg(source, destination, session=None):
     # drukner i den oprindelige 16:9 baggrund eller klippes af CSS object-fit.
     box = output.getchannel('A').point(lambda v: 255 if v >= 16 else 0).getbbox()
     subject = output.crop(box)
-    canvas = Image.new('RGBA', (1024, 768))
     subject.thumbnail((920, 680), Image.Resampling.LANCZOS)
+    # Tilpas fladen til motivet i stedet for at sætte et lille motiv midt i
+    # 1024×768 tomme pixels. Fast 4:3 og ca. 10 % luft, uden opskalering.
+    import math
+    width = 4 * math.ceil(max(subject.width / .9, subject.height / .88 * 4 / 3) / 4)
+    canvas = Image.new('RGBA', (width, width * 3 // 4))
     canvas.alpha_composite(subject, ((canvas.width-subject.width)//2, (canvas.height-subject.height)//2))
     temporary = destination.with_suffix('.webp.tmp')
     try:

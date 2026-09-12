@@ -38,7 +38,9 @@ class Fritlaegning(unittest.TestCase):
             fake.new_session=lambda *a,**kw:object()
             dest=fritlaeg(self.path,self.path.with_suffix('.webp'),session=object())
         with Image.open(dest) as img:
-            self.assertEqual(img.size,(1024,768))
+            self.assertEqual(img.width * 3, img.height * 4)
+            bounds=img.getchannel('A').getbbox()
+            self.assertGreater(max((bounds[2]-bounds[0])/img.width,(bounds[3]-bounds[1])/img.height),.8)
             self.assertEqual(img.mode,'RGBA')
             self.assertEqual(img.getchannel('A').getextrema(),(0,255))
             self.assertEqual(img.getpixel((0,0))[3],0)
