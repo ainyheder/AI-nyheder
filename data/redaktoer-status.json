@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-12T06:53:48.023528+00:00",
+  "opdateret": "2026-09-12T07:03:00.381936+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "regelbaseret_udvalg": [
@@ -7,10 +7,10 @@
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api"
   ],
-  "input_fingerprint": "d1310a627e1dfc1d",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "input_fingerprint": "13557a5034b391b9",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Henvis kun til læste kilder med tilstrækkeligt materiale",
+  "modelkald": 7,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -29,7 +29,19 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -54,7 +66,7 @@
     },
     {
       "vaerktoej": "laes_kilde",
-      "fejl": null
+      "fejl": "Expecting ':' delimiter: line 1 column 32 (char 31)"
     },
     {
       "vaerktoej": "laes_kilde",
@@ -62,40 +74,36 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Expecting value: line 1 column 4303 (char 4302)"
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/introducing-the-agents-api",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
       "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "grundlag": "kildetekst"
     },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      "grundlag": "utilgaengelig"
+      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "link": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
       "grundlag": "kildetekst"
     },
     {
