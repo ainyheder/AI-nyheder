@@ -111,9 +111,12 @@ def validate_draft(draft, source):
     words = len(body.split())
     if not 650 <= words <= 1600:
         raise ValueError("Brevet skal have substans uden at blive for langt (650–1600 ord)")
-    credit = f"[Peter Diamandis’ læserbrev]({source['url']})"
-    if body.count(credit) != 1 or body.index(credit) > 1400 or len(re.findall("diamandis", body, re.I)) != 1:
-        raise ValueError("Krediteringen skal stå én gang i introen med originalens link")
+    credit = re.search(r"\[Peter Diamandis[’'] læserbrev\]\(" + re.escape(source['url']) + r"\)", body)
+    mentions = len(re.findall("diamandis", body, re.I))
+    if not credit or credit.start() > 1400 or mentions != 1:
+        raise ValueError(f"Kreditering: navnet Diamandis står {mentions} gange; det må kun stå én gang, "
+                         f"i linket [Peter Diamandis’ læserbrev]({source['url']}) inden for de første 1400 tegn. "
+                         "Fjern alle andre navneforekomster, også i åbning og overskrifter.")
     if re.search(r"unsubscribe|afmeld|manage your subscription|<[^>]+>|\{\{|!\[", body, re.I):
         raise ValueError("HTML, billeder, skabelonkode eller ekstra afmelding er ikke tilladt")
     note = draft.get("redaktionsnote")

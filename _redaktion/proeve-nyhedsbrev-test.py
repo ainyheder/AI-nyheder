@@ -46,13 +46,22 @@ class TestMail(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             t['generate'](f['SOURCE'], f['CONFIG'], Path(tmp), ai)
         self.assertIn('gentager', ai.call_args_list[2].args[2]['tidligere_fejl'])
+        self.assertEqual(ai.call_args_list[2].args[2]['tidligere_udkast'], f['draft']())
         self.assertEqual(ai.call_count, 4)
 
     def test_rejected_output_never_returns_a_letter(self):
         ai = Mock(return_value={'status': 'kraever_mere_materiale'})
         with tempfile.TemporaryDirectory() as tmp, self.assertRaises(ValueError):
             t['generate'](f['SOURCE'], f['CONFIG'], Path(tmp), ai)
-        self.assertEqual(ai.call_count, 3)
+        self.assertEqual(ai.call_count, 6)
+
+    def test_ascii_apostrophe_is_valid_but_repeated_author_is_not(self):
+        draft = f['draft']()
+        draft['brev_markdown'] = draft['brev_markdown'].replace('Diamandis’', "Diamandis'")
+        t['n'].validate_draft(draft, f['SOURCE'])
+        draft['brev_markdown'] += '\n\nDiamandis siger mere.'
+        with self.assertRaisesRegex(ValueError, '2 gange'):
+            t['n'].validate_draft(draft, f['SOURCE'])
 
 if __name__ == '__main__':
     unittest.main()

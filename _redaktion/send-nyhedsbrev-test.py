@@ -31,15 +31,26 @@ def generate(source, config, folder, ai=n.ai_call):
     writer = (n.ROOT / "opsaetning/nyhedsbrev-prompt.md").read_text()
     reviewer = (n.ROOT / "opsaetning/nyhedsbrev-kontrol-prompt.md").read_text()
     errors = ""
+    previous = None
     for attempt in range(1, min(config["maks_forsog"], 3) + 1):
         evidence = {"forsog": attempt}
         try:
-            draft = ai("nyhedsbrev", writer, {"original": source, "tidligere_fejl": errors})
+            draft = ai("nyhedsbrev", writer, {"original": source, "tidligere_fejl": errors,
+                                               "tidligere_udkast": previous})
             evidence["udkast"] = draft
-            n.validate_draft(draft, source)
+            previous = draft
+            # Indhent også kvalitetskritik, når en formatregel er brudt, så
+            # næste forsøg retter indholdet frem for kun én navneforekomst.
+            format_error = ""
+            try:
+                n.validate_draft(draft, source)
+            except ValueError as exc:
+                format_error = str(exc)
             review = ai("nyhedsbrev_kontrol", reviewer,
                         {"original": source, "skriveinstruks": writer, "udkast": draft})
             evidence["kontrol"] = review
+            if format_error:
+                raise ValueError(format_error)
             n.validate_review(review)
         except (ValueError, RuntimeError) as exc:
             problems = evidence.get("kontrol", {}).get("problemer", [])
