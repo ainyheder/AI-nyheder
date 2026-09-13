@@ -120,21 +120,40 @@ class WorkflowTests(unittest.TestCase):
 
     def test_billeder_foelger_agenten_selvom_pointlisten_er_uenig(self):
         self.assertEqual(r.udvaelg([self.a, self.b], nu=NU)[0], self.b)
-        self.assertEqual(c._kort_artikler([self.b, self.a], self.edition, NU), {self.a["link"]})
-        with patch.object(c, "API_KEY", "test"), patch.object(c, "BILLED_ANTAL", 1), patch.object(c, "hjerne_kald", return_value='[{"motiv":"A glass prism"}]') as ai:
+        self.assertEqual(c._billedartikler([self.b, self.a], self.edition, NU), [self.a, self.b])
+        with patch.object(c, "API_KEY", "test"), patch.object(c, "MAX_BILLEDER_PR_KOERSEL", 1), patch.object(c, "hjerne_kald", return_value='[{"motiv":"A glass prism"}]') as ai:
             c.udfyld_billedmotiver([self.b, self.a], self.edition, NU)
         self.assertIn(self.a["rubrik"], ai.call_args.args[2])
         self.assertNotIn("billedmotiv", self.b)
 
-    def test_tom_godkendt_plan_fyldes_ikke_op_fra_pointlisten(self):
+    def test_tom_topplan_forhindrer_ikke_billeder_til_resten_af_historierne(self):
         empty = self.editor.forside({"udvalgte": [], "anbefalede": [], "redaktionsnote": "Stille dag"}, [self.a, self.b])
-        self.assertEqual(c._kort_artikler([self.a, self.b], empty, NU), set())
+        self.assertEqual({a["link"] for a in c._billedartikler([self.a, self.b], empty, NU)}, {self.a["link"], self.b["link"]})
         self.assertEqual(c.udgavens_artikler([self.a, self.b], empty, nu=NU), [])
+
+    def test_billedreserve_foelger_aktuel_forside_frem_for_gamle_lanceringer(self):
+        old = {**self.b, "dato": (NU-timedelta(days=3)).isoformat(), "billede": "data/img/gammelt.webp"}
+        fresh = {**self.a, "dato": (NU-timedelta(hours=1)).isoformat()}
+        articles = [old, fresh]
+        self.assertEqual(r.udvaelg(articles, antal=1, nu=NU)[0]["link"], old["link"])
+        for edition in (None, r.forside(articles, NU), {**self.edition, "agent_version": 1}):
+            with self.subTest(edition=edition):
+                self.assertEqual(c._billedartikler(articles, edition, NU), [fresh, old])
+                with patch.object(c, "API_KEY", "test"), patch.object(c, "MAX_BILLEDER_PR_KOERSEL", 1), \
+                     patch.object(c, "hjerne_kald", return_value='[{"motiv":"En solid genstand"}]') as writer:
+                    c.udfyld_billedmotiver(copy.deepcopy(articles), edition, NU)
+                self.assertIn(fresh["rubrik"], writer.call_args.args[2])
+                self.assertNotIn(old["rubrik"], writer.call_args.args[2])
+
+    def test_billedreserve_beholder_ugepuljen_paa_stille_dage(self):
+        old = {**self.a, "dato": (NU-timedelta(days=3)).isoformat()}
+        self.assertEqual(c._billedartikler([old], nu=NU), [old])
 
     def test_samlet_dublet_kommer_ikke_tilbage_i_overblik_eller_billeder(self):
         self.editor.laes(agent.ident(self.b["link"]))
         f = self.editor.forside(plan(self.a, [agent.ident(self.b["link"])]), [self.a, self.b])
         self.assertEqual(c.udgavens_artikler([self.b, self.a], f, nu=NU), [self.a])
+        self.assertEqual(c._billedartikler([self.b, self.a], f, nu=NU), [self.a])
         f["beregnet"] = (NU-timedelta(days=2)).isoformat()
         self.assertEqual(c.udgavens_artikler([self.a, self.b], f, nu=NU), r.udvaelg([self.a, self.b], nu=NU))
 

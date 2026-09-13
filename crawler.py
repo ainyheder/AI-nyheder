@@ -74,12 +74,10 @@ GEMINI_PAUSE_SEK = 2             # pause mellem Gemini-kald (værn mod fartgræn
 
 # --- Dybe briefs (hele artiklen hentes og genfortælles) ---
 DYBDE_ANTAL = 40                 # de højest prioriterede historier får dybde først
-BILLED_ANTAL = 250               # loft for billedgennemgangen; kun forsidens tre
-                                # fremhævede historier kan få nye billeder
 MIN_TEKST = 400                  # mindste brugbare artikeltekst (tegn)
 MAX_TEKST = 7000                 # så meget af artiklen sender vi til Claude
 
-# --- AI-billeder til tophistorierne via den valgte udbyder ---
+# --- AI-billeder til alle historier via den valgte udbyder ---
 FLUX_MODEL = "@cf/black-forest-labs/flux-2-klein-4b"
 BILLED_MODEL = "gemini-3.1-flash-lite-image"   # ca. $0.034 pr. billede
 BILLED_FALLBACK = "gemini-2.5-flash-image"     # bruges hvis Lite-billedmodellen afvises
@@ -2381,9 +2379,9 @@ def _slaa_sammen(medlemmer: list[dict], vagt=None) -> set:
     return {m["link"] for m in andre}
 
 
-# ----- AI-billeder til tophistorierne -----------------------------------------
+# ----- AI-billeder til alle historier ----------------------------------------
 
-BILLED_STIL_VERSION = "v6"   # Nye tophistoriebilleder; arkivet beholder sine filer.
+BILLED_STIL_VERSION = "v6"   # Nye artikelbilleder; arkivet beholder sine filer.
 
 
 def _billed_navn(link: str, version: str = BILLED_STIL_VERSION) -> str:
@@ -2476,18 +2474,34 @@ def udgavens_artikler(artikler, forside=None, antal=6, nu=None, kun_udvalgte=Fal
     return redaktion.udvaelg(artikler, antal=antal, nu=nu, max_timer=max_timer)
 
 
-def _kort_artikler(artikler: list[dict], forside=None, nu=None) -> set:
-    """Billedbudgettet følger de tre historier, læseren faktisk ser øverst."""
-    return {a["link"] for a in udgavens_artikler(artikler, forside, antal=3, nu=nu, kun_udvalgte=True)}
+def _billedartikler(artikler: list[dict], forside=None, nu=None) -> list[dict]:
+    """Alle synlige historier i forsidens rækkefølge, også under topkortene."""
+    nu = nu or datetime.now(timezone.utc)
+    if redaktoer_agent.gyldig_forside(forside, artikler, nu):
+        valgte = forside["udvalgte"]
+        samlede = {link for gruppe in forside["samlede"].values() for link in gruppe}
+    else:
+        valgte = redaktion.forside(artikler, nu)["udvalgte"]
+        samlede = set()
+    return [a for a in redaktion.forside_raekkefoelge(artikler, valgte, samlede, nu)
+            if a.get("rubrik")]
+
+
+def _gemt_artikelbillede(a: dict) -> Path | None:
+    """Genbrug også tidligere stilarter og billeder fra en sammenlagt kilde."""
+    sti = BILLED_MAPPE / _billed_navn(a["link"])
+    filer = [BILLED_MAPPE / Path(a["billede"]).name] if a.get("billede") else []
+    filer += [sti.with_suffix(".webp"), sti]
+    return next((fil for fil in filer if fil.is_file()), None)
 
 
 def udfyld_billedmotiver(artikler: list[dict], forside=None, nu=None) -> None:
     """Sørger for at billedkandidaterne har et konkret art director-motiv,
     før der genereres billeder."""
-    kandidater = _kort_artikler(artikler, forside, nu)
-    top = [a for a in artikler
-           if a.get("rubrik") and not a.get("billedmotiv")
-           and a["link"] in kandidater][:BILLED_ANTAL]
+    # Skriv kun motiver til den portion, billedgeneratoren kan nå i denne kørsel.
+    portion = [a for a in _billedartikler(artikler, forside, nu)
+               if _gemt_artikelbillede(a) is None][:MAX_BILLEDER_PR_KOERSEL]
+    top = [a for a in portion if not a.get("billedmotiv")]
     if not top or not API_KEY:
         return
     print(f"🎬 Finder billedmotiver til {len(top)} artikler …")
@@ -2569,7 +2583,8 @@ SYSTEM_BILLEDSTIL = "Create a polished editorial still-life illustration, prepar
 
 
 def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
-    """Genererer ét AI-billede pr. tophistorie. Billedet laves kun én gang
+    """Genererer ét AI-billede pr. historie, løbende i forsidens rækkefølge.
+    Billedet laves kun én gang
     (filnavn = hash af link og stilversion) og genbruges. Kræver adgang til den valgte
     billedudbyder; Cloudflare-fejl udløser ikke dyrere Gemini-kald."""
     global _billed_model
@@ -2579,26 +2594,20 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
         return
     BILLED_MAPPE.mkdir(parents=True, exist_ok=True)
 
-    kandidater = _kort_artikler(artikler, forside, nu)
-    # En chefvalgt historie kan ligge uden for den gamle pointlistes billedbudget.
-    top = sorted((a for a in artikler if a.get("rubrik")),
-                 key=lambda a: a["link"] not in kandidater)[:BILLED_ANTAL]
-    lavet, fejl_i_traek = 0, 0
+    top = _billedartikler(artikler, forside, nu)
+    lavet, forsoeg, fejl_i_traek = 0, 0, 0
     for a in top:
         navn = _billed_navn(a["link"])
         sti = BILLED_MAPPE / navn
         # Et eksisterende billede, også fra en anden kilde, genbruges som det er.
         # Gamle JPG'er skal ikke massefritlægges eller betales for igen.
-        eksisterende = [BILLED_MAPPE / Path(a["billede"]).name] if a.get("billede") else []
-        eksisterende += [sti.with_suffix(".webp"), sti]
-        gemt = next((fil for fil in eksisterende if fil.is_file()), None)
+        gemt = _gemt_artikelbillede(a)
         if gemt:
             a["billede"] = f"data/img/{gemt.name}"
             continue
-        if a["link"] not in kandidater:
-            continue     # tekstlinje-artikel: genereret kunst er rigeligt
-        if lavet >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
+        if forsoeg >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
             continue
+        forsoeg += 1
         farve = KATEGORI_FARVER.get(a.get("kategori"), "dark graphite (#171a21)")
         # Art director-motivet fra rubrik, resumé og de medsendte detaljer.
         # Fallback: byg scenen ud fra rubrik + resumé.
@@ -2657,8 +2666,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
     # forsiden taber et kort ad gangen, uden at nogen får besked. Det skete
     # 30.07-01.08: 16 kort nåede at stå uden billede, før det blev opdaget i
     # hånden. Derfor råber vi op, når der VAR noget at lave og intet blev lavet.
-    mangler = sum(1 for a in top
-                  if a["link"] in kandidater and not a.get("billede"))
+    mangler = sum(_gemt_artikelbillede(a) is None for a in top)
+    print(f"🎨 Billedstatus: {len(top)} historier · {lavet} nye billeder · {mangler} venter på billede")
     if mangler and not lavet:
         print(f"🚨 INGEN billeder lavet, men {mangler} kort mangler et. "
               f"Model: {_billed_model}. Tjek fejlen ovenfor - typisk en "
