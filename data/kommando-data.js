@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-13T18:29:31.534009+00:00",
+ "genereret": "2026-09-13T21:17:36.634275+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,27 +160,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-13T18:19:53.657385+00:00",
-  "antal": 154,
+  "opdateret": "2026-09-13T21:06:13.791167+00:00",
+  "antal": 156,
   "med_billede": 103,
-  "paa_dansk": 154,
+  "paa_dansk": 156,
   "kategorier": {
    "Lanceringer": 34,
    "Penge \u0026 marked": 21,
    "Politik \u0026 jura": 20,
-   "Samfund \u0026 etik": 24,
+   "Samfund \u0026 etik": 25,
    "Hverdags-AI": 26,
-   "Forskning": 29
+   "Forskning": 30
   },
   "kilder": {
    "OpenAI Blog": 19,
    "The Verge AI": 20,
    "Ars Technica AI": 11,
-   "TechCrunch AI": 35,
+   "TechCrunch AI": 36,
    "Simon Willison AI": 14,
    "Hugging Face": 12,
    "Google Gemini": 8,
-   "MIT Tech Review AI": 5,
+   "MIT Tech Review AI": 6,
    "Mistral AI": 4,
    "Google DeepMind": 8,
    "Anthropic News": 7,
@@ -198,16 +198,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/191365ae11d4a90c.webp"
    },
    {
-    "titel": "OpenAI’s feud with mathematicians is only escalating",
-    "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
-    "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-    "side": "artikel/d4514d27691b0738.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T20:57:36+00:00",
-    "billede": "data/img/44681dd9947d9870.webp"
-   },
-   {
     "titel": "Generating running routes with GPT-6 Astra and ChatGPT Work",
     "rubrik": "GPT-6 Astra byggede løberuter i ChatGPT Work",
     "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
@@ -216,9 +206,29 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T23:56:42+00:00",
     "billede": "data/img/7e2fd7d85ee1040b.webp"
+   },
+   {
+    "titel": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+    "rubrik": "Obama kræver klar AI-plan fra Demokraterne",
+    "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+    "side": "artikel/6b54256d4afbc2dd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-13T16:30:00+00:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "What’s behind the AI industry’s latest warnings of doom?",
+    "rubrik": "Anthropic-forsker siger op i protest mod AI-risiko",
+    "link": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+    "side": "artikel/423bcba40c75a135.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-13T19:40:15+00:00",
+    "billede": ""
+   },
    {
     "titel": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
     "rubrik": "Obama kræver klar AI-plan fra Demokraterne",
@@ -326,21 +336,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-09-11T22:49:18+00:00",
     "billede": "data/img/67e5cad3e217d817.webp"
-   },
-   {
-    "titel": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-    "rubrik": "Mecka AI nærmer sig 500 mio. dollars i værdi",
-    "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-    "side": "artikel/c923ead07513500b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T22:58:17+00:00",
-    "billede": "data/img/a262c77165ed82ef.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-13T18:19:53.657385+00:00",
+  "opdateret": "2026-09-13T21:06:13.791167+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -348,19 +348,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-   "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-   "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+   "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+   "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-   "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-   "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+   "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+   "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-13T18:19:52.902753+00:00",
+  "opdateret": "2026-09-13T21:06:13.258452+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -578,8 +578,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-13T18:19:53.657385+00:00",
-  "artikler_i_alt": 154,
+  "opdateret": "2026-09-13T21:06:13.791167+00:00",
+  "artikler_i_alt": 156,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1212,7 +1212,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 35,
+    "i_listen": 36,
     "som_ekstra": 9,
     "seneste": [
      {
@@ -1315,11 +1315,11 @@ window.KOMMANDO_DATA = {
       "under": "Seattle Times og Newsday sagsøger OpenAI"
      },
      {
-      "rubrik": "Obama kræver klar AI-plan fra Demokraterne",
-      "dato": "2026-09-13T16:30:00",
-      "foerst_set": "2026-09-13T18:19:53",
-      "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-      "side": "artikel/6b54256d4afbc2dd.html",
+      "rubrik": "Anthropic-forsker siger op i protest mod AI-risiko",
+      "dato": "2026-09-13T19:40:15",
+      "foerst_set": "2026-09-13T21:06:13",
+      "link": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+      "side": "artikel/423bcba40c75a135.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1338,6 +1338,15 @@ window.KOMMANDO_DATA = {
     "i_listen": 20,
     "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Trump og Johnson mener, at AI-industrien overreagerer",
+      "dato": "",
+      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin"
+     },
      {
       "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
       "dato": "",
@@ -1434,15 +1443,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-12T11:30:33",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
       "side": "artikel/41bb568b2b6096a5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-model hackede løs i fire sager",
-      "dato": "2026-09-11T12:09:14",
-      "foerst_set": "2026-09-11T17:51:30",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "side": "artikel/3409c3c31dfa6b1f.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1581,18 +1581,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 5,
-    "som_ekstra": 1,
+    "i_listen": 6,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "OpenAI løser matematikpris - og møder kritik",
-      "dato": "",
-      "foerst_set": "2026-09-09T05:10:35",
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI løser milliongåde – men snød de?"
-     },
      {
       "rubrik": "MIT debatterer AI-truslen mod menneskeheden",
       "dato": "2026-09-11T20:05:06",
@@ -1607,6 +1598,15 @@ window.KOMMANDO_DATA = {
       "dato": "2026-09-10T11:00:00",
       "foerst_set": "2026-09-10T13:45:53",
       "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+      "side": "",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI melder, at agenter løste millenniumprisproblem",
+      "dato": "2026-09-09T03:10:08",
+      "foerst_set": "2026-09-09T05:10:35",
+      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -1918,12 +1918,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-13T18:29:23.181116+00:00",
+  "opdateret": "2026-09-13T21:17:30.237281+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 67,
-  "sidevisninger_i_alt": 253,
+  "besoeg_i_alt": 68,
+  "sidevisninger_i_alt": 254,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2080,8 +2080,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 66,
-    "visninger": 226
+    "besoeg": 67,
+    "visninger": 227
    },
    {
     "sti": "/uge.html",
@@ -2137,7 +2137,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 65
+    "besoeg": 66
    },
    {
     "fra": "m.facebook.com",
