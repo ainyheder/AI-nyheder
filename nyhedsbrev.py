@@ -354,7 +354,14 @@ class Buttondown:
                       data=json.dumps(data).encode() if data is not None else None,
                       headers=headers, method=method)
         with urlopen(req, timeout=45) as response:
-            return json.load(response)
+            body = response.read()
+            # send-draft kvitterer også med HTTP 200 uden JSON. Afsendelsen
+            # er da accepteret; en JSON-fejl ville fejlagtigt invitere til gensend.
+            # Oprettelse, opslag og abonnentudsendelse kræver stadig et JSON-svar.
+            if (method == "POST" and re.fullmatch(r"/[A-Za-z0-9_-]+/send-draft", path)
+                    and response.status in (200, 204) and not body.strip()):
+                return {}
+            return json.loads(body)
 
     def create(self, entry):
         return self.call("POST", "", {"subject": entry["draft"]["emne"], "body": entry["html"],

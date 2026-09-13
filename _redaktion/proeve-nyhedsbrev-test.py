@@ -1,16 +1,65 @@
 """Test Gmail-isolation og AI-kontrol uden rigtige kald."""
 import json
+import io
 from pathlib import Path
 import runpy
 import tempfile
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
+from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 t = runpy.run_path(str(ROOT / '_redaktion/send-nyhedsbrev-test.py'))
 f = runpy.run_path(str(ROOT / '_redaktion/proeve-nyhedsbrev.py'))
 
 class TestMail(unittest.TestCase):
+    def test_empty_send_receipt_completes_gmail_test_once(self):
+        draft = f['draft']()
+        for status_code in (200, 204):
+            with self.subTest(status=status_code), tempfile.TemporaryDirectory() as tmp:
+                responses = [
+                    json.dumps({'id': 'em_test', 'status': 'draft'}).encode(),
+                    json.dumps({'status': 'draft', 'subject': draft['emne'],
+                                'body': t['n'].render(draft)}).encode(),
+                    b'',
+                ]
+                def response(request, **kwargs):
+                    body = io.BytesIO(responses.pop(0))
+                    body.status = status_code if not responses else 200
+                    return body
+                with patch.object(t['n'], 'urlopen', side_effect=response) as call:
+                    t['send_test'](t['n'].Buttondown('test-token'), draft,
+                                   f['SOURCE'], '123', Path(tmp))
+                saved = json.loads((Path(tmp) / 'status.json').read_text())
+                self.assertEqual(saved['status'], 'test_accepteret')
+                self.assertEqual(call.call_count, 3)
+                request = call.call_args.args[0]
+                self.assertEqual(request.method, 'POST')
+                self.assertTrue(request.full_url.endswith('/em_test/send-draft'))
+                self.assertEqual(json.loads(request.data), {'recipients': ['soemandtorben@gmail.com']})
+
+    def test_empty_receipt_exception_does_not_hide_other_bad_responses(self):
+        for method, path, body, status in [
+            ('GET', '/em_test', b'', 200),
+            ('POST', '', b'', 201),
+            ('PATCH', '/em_test', b'', 200),
+            ('POST', '/em_test/send-draft', b'<html>unexpected</html>', 200),
+            ('POST', '/em_test/send-draft', b'', 500),
+        ]:
+            with self.subTest(method=method, path=path, status=status):
+                response = io.BytesIO(body)
+                response.status = status
+                with patch.object(t['n'], 'urlopen', return_value=response):
+                    with self.assertRaises(json.JSONDecodeError):
+                        t['n'].Buttondown('test-token').call(method, path)
+
+    def test_send_http_error_is_not_retried_or_accepted(self):
+        error = HTTPError('https://api.buttondown.com', 403, 'Forbidden', {}, None)
+        with patch.object(t['n'], 'urlopen', side_effect=error) as call:
+            with self.assertRaises(HTTPError):
+                t['n'].Buttondown('test-token').call('POST', '/em_test/send-draft')
+        call.assert_called_once()
+
     def test_test_mail_requires_live_feed_and_chooses_latest(self):
         from unittest.mock import patch
         config = {'feed': 'https://metatrends.substack.com/feed'}

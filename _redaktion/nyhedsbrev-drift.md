@@ -1,6 +1,36 @@
 # Nyhedsbrev — drift
 
-## Aktuel teststatus — prøve 10
+## Aktuel teststatus — prøve 12
+
+[Kørsel 34737586357](https://github.com/ainyheder/AI-nyheder/actions/runs/34737586357)
+på `d5d90db` hentede “What's Your Moonshot?” fra 12. september via RSS2JSON.
+Skriver og kontrol brugte begge `deepseek-flash` med max reasoning. Skriveren
+afleverede første udkast med 31.286 outputtokens; kontrollen godkendte det med
+51.021. Begge FLUX-illustrationer blev genereret, fritlagt med BiRefNet og
+uploadet til Buttondown.
+
+Testen til `soemandtorben@gmail.com` blev accepteret 13. september kl. 06.29
+dansk tid: Buttondowns API-historik viser HTTP 200 på
+`/v1/emails/em_2rxq0jae2w9kc9rjrx9tatnb54/send-draft`
+(request `api_req_41fyaptc6w9pva8y4w3xxmnqha`). Emne:
+“AI forstærker alt, du peger den mod – også støj”. Modtagelse i Gmail er ikke
+bekræftet. Ingen abonnentudsendelse blev startet af denne prøve.
+
+GitHub-kørslen står fejlet, fordi klienten forsøgte at læse den tomme
+HTTP 200-kvittering som JSON efter afsendelsen. Klienten håndterer nu tomme
+200/204-svar specifikt fra test-endpointet. Andre svar kræver stadig JSON;
+HTTP-fejl accepteres eller genprøves ikke. 37 nyhedsbrevstests og 11 Gmail-tests
+bestod lokalt efter rettelsen. Prøve 12 må ikke genudsendes for at gøre den grøn.
+
+Den menneskelige efterkontrol finder stadig indholdsfejl trods AI-godkendelsen:
+introen gør oplæsning af Altmans ord til hans deltagelse i podcasten; brevet
+bruger meget plads på arrangementsprogram, navne og billetter; afslutningen
+placerer virksomhedernes levedygtighed efter arrangementet uden kildebelæg.
+Sproget har også engelske rester og gentagne henvisninger til “originalen”.
+Dette er en teknisk gennemført prøve, ikke dokumentation for færdig
+redaktionel kvalitet. Det allerede afsendte prøvebrev er bevaret uændret.
+
+## Tidligere test — prøve 10
 
 [Kørsel 34704214872](https://github.com/ainyheder/AI-nyheder/actions/runs/34704214872)
 på `7f17aa9` bestod de tekniske tests og den rigtige BiRefNet-prøve på GitHub.
@@ -16,7 +46,7 @@ kontrolsvigt genprøver samme validerede udkast. En rigtig afvisning sender
 fortsat teksten og kritikken til skriveren. Højst tre redaktionsrunder i alt,
 og udkast, næste trin og forbrugt forsøgsbudget gemmes før det lange kontrolkald.
 37 nyhedsbrevstests, 8 Gmail-tests og 83 modelvalgskontroller bestod lokalt.
-En ny GitHub-kørsel skal fortsat bevise AI-kvalitet, illustrationer og udsendelse.
+Prøve 12 ovenfor har siden afprøvet det større budget, billeder og testafsendelse.
 
 Feedets aktualitet har en begrænsning: Det direkte feed viste allerede
 “What’s Your Moonshot?” fra 12. september kl. 15.01 UTC, mens RSS2JSON stadig
