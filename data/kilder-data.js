@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-13T00:13:36.946723+00:00",
+ "opdateret": "2026-09-13T05:19:09.228289+00:00",
  "artikler_i_alt": 153,
  "kilder": [
   {
@@ -941,7 +941,7 @@ window.KILDER_STATUS = {
      "under": "OpenAI-agenter bag angreb på RubyGems"
     },
     {
-     "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
+     "rubrik": "Aarons idømt bøde for ChatGPT-opdigtede vidner",
      "dato": "",
      "foerst_set": "2026-09-11T21:11:45",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
@@ -1113,11 +1113,11 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "Hacker News: AI",
+     "Ars Technica AI",
      2
     ],
     [
-     "Ars Technica AI",
+     "Hacker News: AI",
      2
     ],
     [
