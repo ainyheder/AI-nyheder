@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-12T21:46:43.946090+00:00",
+ "genereret": "2026-09-13T00:24:43.254909+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,25 +160,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-12T21:37:46.132954+00:00",
-  "antal": 155,
+  "opdateret": "2026-09-13T00:13:36.946723+00:00",
+  "antal": 153,
   "med_billede": 7,
-  "paa_dansk": 155,
+  "paa_dansk": 153,
   "kategorier": {
    "Lanceringer": 34,
    "Penge \u0026 marked": 21,
    "Politik \u0026 jura": 19,
-   "Samfund \u0026 etik": 27,
-   "Forskning": 29,
-   "Hverdags-AI": 25
+   "Samfund \u0026 etik": 24,
+   "Hverdags-AI": 26,
+   "Forskning": 29
   },
   "kilder": {
    "OpenAI Blog": 18,
-   "The Verge AI": 21,
+   "The Verge AI": 20,
    "Hugging Face": 12,
-   "TechCrunch AI": 35,
-   "Ars Technica AI": 12,
-   "Simon Willison AI": 13,
+   "TechCrunch AI": 34,
+   "Ars Technica AI": 11,
+   "Simon Willison AI": 14,
    "Google Gemini": 8,
    "MIT Tech Review AI": 5,
    "Mistral AI": 4,
@@ -219,6 +219,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+    "rubrik": "GPT-6 Astra byggede løberuter i ChatGPT Work",
+    "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+    "side": "artikel/0dd87f86ad01fab9.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-12T23:56:42+00:00",
+    "billede": ""
+   },
    {
     "titel": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
     "rubrik": "Sam Altman afviser OpenAI-børsnotering i 2026",
@@ -325,21 +335,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-09-11T17:28:37+00:00",
     "billede": ""
-   },
-   {
-    "titel": "OpenAI’s feud with mathematicians is only escalating",
-    "rubrik": "25 Fields-medaljevindere i brev mod AI-labbers beviskapløb",
-    "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-    "side": "artikel/d4514d27691b0738.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T20:57:36+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-12T21:37:46.132954+00:00",
+  "opdateret": "2026-09-13T00:13:36.946723+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -359,7 +359,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-12T21:37:45.386151+00:00",
+  "opdateret": "2026-09-13T00:13:36.488872+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -577,8 +577,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-12T21:37:46.132954+00:00",
-  "artikler_i_alt": 155,
+  "opdateret": "2026-09-13T00:13:36.946723+00:00",
+  "artikler_i_alt": 153,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1088,7 +1088,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 13,
+    "i_listen": 14,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1108,6 +1108,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+     },
+     {
+      "rubrik": "GPT-6 Astra byggede løberuter i ChatGPT Work",
+      "dato": "2026-09-12T23:56:42",
+      "foerst_set": "2026-09-13T00:13:36",
+      "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+      "side": "artikel/0dd87f86ad01fab9.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Paul Ford: Avanceret software kræver stadig mennesker",
@@ -1173,15 +1182,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-      "dato": "2026-09-05T23:27:48",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Terence Tao advarer om AI jagter matematikproblemer",
       "dato": "2026-09-09T00:20:17",
       "foerst_set": "2026-09-11T14:38:09",
@@ -1191,10 +1191,10 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Simon Willison viser .blend-URL-fremviser",
-      "dato": "2026-09-09T23:58:32",
+      "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+      "dato": "2026-09-05T23:27:48",
       "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+      "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -1211,7 +1211,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 35,
+    "i_listen": 34,
     "som_ekstra": 9,
     "seneste": [
      {
@@ -1334,9 +1334,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 21,
-    "som_ekstra": 5,
+    "i_listen": 20,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
+      "dato": "",
+      "foerst_set": "2026-09-13T00:13:36",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI-agenter bag angreb på RubyGems"
+     },
      {
       "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
       "dato": "",
@@ -1435,15 +1444,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/3409c3c31dfa6b1f.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Meta ændrer AI-forslag efter viral sag",
-      "dato": "2026-09-11T10:25:21",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
-      "side": "artikel/e32e3658be55881a.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1457,7 +1457,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 12,
+    "i_listen": 11,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1926,19 +1926,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-12T21:46:39.973131+00:00",
+  "opdateret": "2026-09-13T00:24:40.698718+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 48,
-  "sidevisninger_i_alt": 187,
+  "besoeg_i_alt": 49,
+  "sidevisninger_i_alt": 192,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-14",
-    "besoeg": 10,
-    "visninger": 20
-   },
    {
     "dato": "2026-08-15",
     "besoeg": 10,
@@ -2081,15 +2076,20 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-12",
-    "besoeg": 20,
-    "visninger": 90
+    "besoeg": 30,
+    "visninger": 100
+   },
+   {
+    "dato": "2026-09-13",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 47,
-    "visninger": 159
+    "besoeg": 48,
+    "visninger": 164
    },
    {
     "sti": "/uge.html",
@@ -2141,7 +2141,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 48
+    "besoeg": 49
    }
   ],
   "laeste_temaer": []
