@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-13T00:24:43.254909+00:00",
+ "genereret": "2026-09-13T04:50:56.970346+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,21 +160,21 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-13T00:13:36.946723+00:00",
-  "antal": 153,
-  "med_billede": 7,
-  "paa_dansk": 153,
+  "opdateret": "2026-09-13T04:07:22.122175+00:00",
+  "antal": 154,
+  "med_billede": 42,
+  "paa_dansk": 154,
   "kategorier": {
    "Lanceringer": 34,
    "Penge \u0026 marked": 21,
-   "Politik \u0026 jura": 19,
+   "Politik \u0026 jura": 20,
    "Samfund \u0026 etik": 24,
    "Hverdags-AI": 26,
    "Forskning": 29
   },
   "kilder": {
    "OpenAI Blog": 18,
-   "The Verge AI": 20,
+   "The Verge AI": 21,
    "Hugging Face": 12,
    "TechCrunch AI": 34,
    "Ars Technica AI": 11,
@@ -205,7 +205,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T17:16:28-04:00",
-    "billede": ""
+    "billede": "data/img/191365ae11d4a90c.webp"
    },
    {
     "titel": "Claude users found ways around safeguards for bioweapons research",
@@ -227,7 +227,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T23:56:42+00:00",
-    "billede": ""
+    "billede": "data/img/7e2fd7d85ee1040b.webp"
    },
    {
     "titel": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
@@ -237,7 +237,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T17:16:28-04:00",
-    "billede": ""
+    "billede": "data/img/191365ae11d4a90c.webp"
    },
    {
     "titel": "Quoting Paul Ford",
@@ -246,7 +246,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T18:00:21+00:00",
-    "billede": ""
+    "billede": "data/img/cc31c555245b3e98.webp"
    },
    {
     "titel": "Anthropic CEO says it’s time to pump the brakes on AI",
@@ -256,7 +256,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T12:23:40-04:00",
-    "billede": ""
+    "billede": "data/img/ee6399f4fad763ad.webp"
    },
    {
     "titel": "Trump is giving data centers a pass to pollute",
@@ -266,7 +266,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T10:41:27-04:00",
-    "billede": ""
+    "billede": "data/img/8b08c1ad14cc96a7.webp"
    },
    {
     "titel": "OpenAI just wants to win",
@@ -276,7 +276,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Forskning",
     "kilde": "The Verge AI",
     "dato": "2026-09-12T07:00:00-04:00",
-    "billede": ""
+    "billede": "data/img/3de0430d8c9d4e53.webp"
    },
    {
     "titel": "I spent $4,000 on a robot dog from China",
@@ -285,7 +285,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Ars Technica AI",
     "dato": "2026-09-12T11:00:53+00:00",
-    "billede": ""
+    "billede": "data/img/a43be59e003a8509.webp"
    },
    {
     "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
@@ -305,7 +305,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T00:42:25+00:00",
-    "billede": ""
+    "billede": "data/img/11cf33ac30928fec.webp"
    },
    {
     "titel": "So you want to use OpenRouter?",
@@ -315,7 +315,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-11T22:49:18+00:00",
-    "billede": ""
+    "billede": "data/img/67e5cad3e217d817.webp"
    },
    {
     "titel": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
@@ -325,7 +325,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-11T22:58:17+00:00",
-    "billede": ""
+    "billede": "data/img/a262c77165ed82ef.jpg"
    },
    {
     "titel": "Feeling sad about AI",
@@ -334,12 +334,12 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "Simon Willison AI",
     "dato": "2026-09-11T17:28:37+00:00",
-    "billede": ""
+    "billede": "data/img/1b7f15bfe6ef7973.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-13T00:13:36.946723+00:00",
+  "opdateret": "2026-09-13T04:07:22.122175+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -359,7 +359,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-13T00:13:36.488872+00:00",
+  "opdateret": "2026-09-13T04:07:21.488295+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -577,8 +577,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-13T00:13:36.946723+00:00",
-  "artikler_i_alt": 153,
+  "opdateret": "2026-09-13T04:07:22.122175+00:00",
+  "artikler_i_alt": 154,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1334,8 +1334,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 20,
-    "som_ekstra": 6,
+    "i_listen": 21,
+    "som_ekstra": 5,
     "seneste": [
      {
       "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
@@ -1345,15 +1345,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI-agenter bag angreb på RubyGems"
-     },
-     {
-      "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
-      "dato": "",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-      "side": "",
-      "hvor": "under",
-      "under": "New Mexico straffer advokat for ChatGPT-falsknerier"
      },
      {
       "rubrik": "Metas nye Muse-AI kender dine Instagram-interesser",
@@ -1433,6 +1424,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-12T11:30:33",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
       "side": "artikel/41bb568b2b6096a5.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Aarons idømt bøde for ChatGPT-opdigtede vidner",
+      "dato": "2026-09-11T16:44:02",
+      "foerst_set": "2026-09-11T21:11:45",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "side": "artikel/c71016307bb8686e.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1926,12 +1926,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-13T00:24:40.698718+00:00",
+  "opdateret": "2026-09-13T04:50:51.751853+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 49,
-  "sidevisninger_i_alt": 192,
+  "besoeg_i_alt": 52,
+  "sidevisninger_i_alt": 201,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2088,8 +2088,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 48,
-    "visninger": 164
+    "besoeg": 51,
+    "visninger": 173
    },
    {
     "sti": "/uge.html",
@@ -2141,7 +2141,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 49
+    "besoeg": 52
    }
   ],
   "laeste_temaer": []
