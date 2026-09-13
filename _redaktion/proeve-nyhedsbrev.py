@@ -24,7 +24,9 @@ REVIEW["problemer"] = []
 def draft(source=SOURCE):
     # Indholdet er en teknisk fixture; ingen test hævder at kontrollere AI-kvalitet.
     return {"status": "udkast", "emne": "En ny forståelse", "preheader": "Et konkret eksempel.",
-            "brev_markdown": "# En ny forståelse\n\nLæs [Peter Diamandis’ læserbrev](" + source["url"] + ").\n\n" + "Forklaring med eksempel. " * 240,
+            "brev_markdown": "# En ny forståelse\n\nLæs [Peter Diamandis’ læserbrev](" + source["url"] + ").\n\n" +
+                '\n\n'.join('## Eksempel ' + str(i) + '\n\n' + ('Forklaring med eksempel. ' * 12).strip()
+                            + '\n\n' + ('Forklaring med eksempel. ' * 12).strip() for i in range(10)),
             "redaktionsnote": {"original": {k: source[k] for k in ("url", "titel", "dato", "forfatter")},
                                "uafklaret": [], "hovedide": "Ny forståelse", "bevarede_pointer": ["Eksempel"],
                                "selvstaendige_greb": ["Ny disposition"]}}
@@ -83,6 +85,38 @@ def ai(step, prompt, payload):
 
 
 class NewsletterTests(unittest.TestCase):
+    def test_dense_letter_is_returned_to_writer_before_it_can_be_sent(self):
+        dense = draft()
+        dense['brev_markdown'] += '\n\n## En tekstmur\n\n' + 'Lang sammenhængende forklaring. ' * 35
+        writer = Mock(side_effect=[dense, REVIEW, draft(), REVIEW])
+        with tempfile.TemporaryDirectory() as tmp:
+            import runpy
+            generate = runpy.run_path(str(n.ROOT / '_redaktion/send-nyhedsbrev-test.py'))['generate']
+            generate(SOURCE, CONFIG, Path(tmp), writer)
+        self.assertEqual([call.args[0] for call in writer.call_args_list],
+                         ['nyhedsbrev', 'nyhedsbrev_kontrol', 'nyhedsbrev', 'nyhedsbrev_kontrol'])
+        self.assertIn('70 ord', writer.call_args_list[2].args[2]['tidligere_fejl'])
+
+    def test_rhythm_check_rejects_unbroken_prose_and_prose_hidden_in_a_table(self):
+        for body in ('# Test\n\nEt kort afsnit.\n\nNæste afsnit.\n\nEt tredje afsnit.',
+                     '# Test\n\n| A | B |\n| --- | --- |\n| ' + 'ord ' * 25 + '| kort |'):
+            with self.assertRaisesRegex(ValueError, 'Læserytme'):
+                n.validate_reading_rhythm(body)
+        n.validate_reading_rhythm('# Test\n\nKort.\n\nOgså kort.\n\n> En konkret pause.\n\nVidere.')
+
+    def test_images_belong_to_heading_cells_without_narrowing_body_copy(self):
+        content = draft()
+        content['brev_markdown'] = '# Titel\n\nIntro.\n\n## Midten\n\n- En kort liste.\n- Et nyt punkt.'
+        images = [{'placering': position, 'url': 'https://example.org/' + name + '.png',
+                   'alt': 'AI-illustration: Et motiv.'}
+                  for position, name in [('intro', 'a'), ('Midten', 'b')]]
+        rendered = n.render(content, images)
+        self.assertEqual(rendered.count('<img '), 2)
+        self.assertNotIn('float:right', rendered)
+        self.assertRegex(rendered, r'<td class="heading-art"[^>]*><img ')
+        self.assertNotRegex(rendered, r'<p[^>]*><img ')
+        self.assertIn('font-weight:400', rendered)
+
     def test_deepseek_diagnostics_never_expose_reasoning_or_provider_text(self):
         import crawler
         reply = {'choices': [{'finish_reason': 'stop', 'message': {

@@ -8,13 +8,19 @@ body.email-body { background-color:#0c0e12!important; color:#f2f3f5!important; p
 .email-container table[role="presentation"] { border:0!important; border-spacing:0!important; }
 .email-actions--unsubscribe,.powered-by,.powered-by-container { color:#a6adb9!important; }
 .email-actions--unsubscribe a,.powered-by a { color:#d5ff5f!important; }
+.body-copy { font-weight:400!important; }
+.body-copy strong { font-weight:700; }
+.heading-block,.editorial-image { break-inside:avoid; page-break-inside:avoid; }
 @media(max-width:480px) {
   .outer { padding:0!important; }
   .pad { padding:16px 12px!important; }
-  .hero-pad { padding:22px 18px!important; }
-  .title { font-size:32px!important; letter-spacing:-0.8px!important; }
-  .comparison-cell { padding:16px 11px!important; }
+  .heading-copy { padding:18px 14px!important; }
+  .title { font-size:26px!important; letter-spacing:-0.5px!important; }
+  .section-title { font-size:21px!important; }
+  .heading-art { width:100px!important; padding:10px 10px 10px 0!important; }
+  .comparison-cell { display:block!important; box-sizing:border-box!important; width:100%!important; padding:18px 16px!important; }
+  .comparison-cell + .comparison-cell { border-top:1px solid #33404c!important; }
   .comparison-value { font-size:26px!important; }
   .callout-pad { padding:18px 16px!important; }
-  .editorial-image { width:32%!important; max-width:132px!important; margin-left:12px!important; }
+  .editorial-image { width:100px!important; height:auto!important; }
 }

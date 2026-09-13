@@ -134,6 +134,32 @@ def reader_items(data):
     return sorted(items.values(), key=lambda p: p["dato"])
 
 
+def validate_reading_rhythm(body):
+    """Stop tekstmure selv ved AI-godkendelse. Ret ikke i teksten under rendering."""
+    def words(text):
+        return len(re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text).split())
+    section = 'Intro'
+    consecutive = 0
+    for block in re.split(r'\n\s*\n', body.strip()):
+        lines = block.splitlines()
+        if re.fullmatch(r'#{1,2} .+', block):
+            section = block.lstrip('# ')
+            consecutive = 0
+        elif all(line.startswith('|') for line in lines):
+            consecutive = 0
+            rows = [[cell.strip() for cell in line.strip().strip('|').split('|')] for line in lines]
+            if len(rows) > 5 or any(words(cell) > 20 for row in rows for cell in row):
+                raise ValueError('Læserytme ved ' + section + ': sammenligningen er for teksttung; brug højst tre indholdsrækker og korte celler')
+        elif all(line.startswith(('- ', '> ')) for line in lines):
+            consecutive = 0
+        else:
+            consecutive += 1
+            if words(block) > 70:
+                raise ValueError('Læserytme ved ' + section + ': afsnittet har over 70 ord; del ved naturlige tankeskift med tomme linjer')
+            if consecutive > 2:
+                raise ValueError('Læserytme ved ' + section + ': mere end to tekstafsnit i træk; skab en meningsfuld pause uden at gentage indhold')
+
+
 def validate_draft(draft, source):
     if not isinstance(draft, dict) or draft.get("status") != "udkast":
         raise ValueError("Redaktøren kræver mere materiale eller afklaring")
@@ -163,6 +189,7 @@ def validate_draft(draft, source):
     if not note.get("hovedide") or not note.get("bevarede_pointer") or not note.get("selvstaendige_greb"):
         raise ValueError("Redaktionsnoten mangler konkrete redaktionelle valg")
     nyhedsbrev_billeder.validate_plan(draft)
+    validate_reading_rhythm(body)
     return draft
 
 
@@ -279,7 +306,7 @@ def comparison(block):
                 content.append('<p class="comparison-value" style="font-size:30px;line-height:1.1;font-weight:750;color:' + color + '!important;margin:0 0 12px">' + inline(emphasis[1]) + '</p>')
             else:
                 content.append('<p style="font-size:15px;line-height:1.5;color:#d8dde6!important;margin:0 0 10px">' + inline(value) + '</p>')
-        cells.append('<td width="50%" valign="top" class="comparison-cell" style="width:50%;padding:18px 16px;background:#171d26;color:#f2f3f5!important;overflow-wrap:break-word;word-wrap:break-word;hyphens:auto">'
+        cells.append('<td width="50%" valign="top" class="comparison-cell" style="width:50%;padding:18px 16px;background:#171d26;color:#f2f3f5!important;font-weight:400;overflow-wrap:break-word;word-wrap:break-word;hyphens:auto">'
                      '<p style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.7px;text-transform:uppercase;color:' + color + '!important;margin:0 0 16px">'
                      + inline(rows[0][col]) + '</p>' + ''.join(content) + '</td>')
     return ('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;table-layout:fixed;margin:8px 0 18px;border:0;background:#171d26;border-radius:12px;overflow:hidden"><tr>'
@@ -290,10 +317,25 @@ def illustration(image, preview=False):
     url = image['url']
     if not (preview and re.fullmatch(r'illustrationer/[a-z0-9-]+\.png', url)):
         nyhedsbrev_billeder.public_image_url(url)
-    # align giver en læsbar fallback i mailklienter uden moderne layout-CSS.
-    return ('<img class="editorial-image" align="right" width="180" src="' + html.escape(url, quote=True)
+    # Egen tabelcelle: billeder må ikke presse brødteksten ind i en smal spalte.
+    return ('<img class="editorial-image" width="176" height="132" src="' + html.escape(url, quote=True)
             + '" alt="' + html.escape(image['alt'], quote=True)
-            + '" style="float:right;width:30%;max-width:180px;height:auto;margin:0 0 12px 18px;border:0;background:transparent">')
+            + '" style="display:block;width:176px;max-width:100%;height:auto;margin:0;border:0;background:transparent;color:#aebac6;font-size:12px;font-weight:400;line-height:1.4">')
+
+
+def heading_block(title, number=None, image=None, *, preview=False):
+    hero = number is None
+    background = '#d5ff5f' if hero else '#131c26'
+    color = '#101609' if hero else '#f2f3f5'
+    tag = 'h1' if hero else 'h2'
+    marker = '' if hero else ('<div aria-hidden="true" style="font:400 12px/1.4 monospace;letter-spacing:2px;color:#d5ff5f;margin:0 0 8px">' + f'{number:02d}' + '</div>')
+    art = ('<td class="heading-art" width="176" align="center" valign="middle" style="width:176px;padding:14px 14px 14px 0">'
+           + illustration(image, preview) + '</td>') if image else ''
+    return ('<table role="presentation" class="heading-block" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + background
+            + '" style="width:100%;margin:' + ('20px 0 24px' if hero else '30px 0 22px') + ';border:0;border-radius:12px;background:' + background + '"><tr>'
+            '<td class="heading-copy" valign="middle" style="padding:22px 20px;font-weight:400">' + marker
+            + '<' + tag + ' class="' + ('title' if hero else 'section-title') + '" style="font-family:Arial,sans-serif;font-size:' + ('32px' if hero else '23px')
+            + ';line-height:1.2;letter-spacing:-0.5px;font-weight:700;color:' + color + '!important;margin:0">' + inline(title) + '</' + tag + '></td>' + art + '</tr></table>')
 
 
 def render(draft, images=None, *, preview=False):
@@ -303,39 +345,35 @@ def render(draft, images=None, *, preview=False):
     blocks = []
     first_paragraph = True
     images = {item['placering']: item for item in (images or [])[:2]}
-    pending_image = images.get('intro')
+    section_number = 0
     for block in re.split(r"\n\s*\n", body):
         lines = block.splitlines()
         if block.startswith("# ") and len(lines) == 1:
-            blocks.append('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:20px 0 24px;background:#d5ff5f;border:0;border-radius:14px"><tr><td class="hero-pad" style="padding:26px 22px">'
-                          '<h1 class="title" style="font-size:38px;line-height:1.1;letter-spacing:-1.2px;font-weight:800;color:#101609!important;margin:0">' + inline(block[2:]) + '</h1></td></tr></table>')
+            blocks.append(heading_block(block[2:], image=images.get('intro'), preview=preview))
         elif block.startswith("## ") and len(lines) == 1:
-            pending_image = images.get(block[3:])
-            blocks.append('<h2 style="font-size:24px;line-height:1.25;letter-spacing:-0.4px;color:#f2f3f5!important;margin:30px 0 16px">'
-                          '<span aria-hidden="true" style="color:#d5ff5f!important">/ </span>' + inline(block[3:]) + '</h2>')
+            section_number += 1
+            blocks.append(heading_block(block[3:], section_number, images.get(block[3:]), preview=preview))
         elif (panel := comparison(block)) is not None:
             blocks.append(panel)
         elif all(line.startswith("> ") for line in lines):
             # Egen redaktionel pointe, ikke et citat: ingen citationstegn eller blockquote-semantik.
             text = " ".join(line[2:] for line in lines)
             blocks.append('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:22px 0;background:#162b32;border:0;border-radius:12px"><tr><td class="callout-pad" style="padding:20px">'
-                          '<p style="font-size:19px;line-height:1.5;color:#c3f1fb!important;margin:0">' + inline(text) + '</p></td></tr></table>')
+                          '<p style="font-size:18px;line-height:1.6;font-weight:400;color:#c3f1fb!important;margin:0">' + inline(text) + '</p></td></tr></table>')
         elif all(line.startswith("- ") for line in lines):
             blocks.append('<ul style="margin:8px 0 22px;padding-left:23px;color:#d5ff5f!important">' + ''.join(
-                '<li style="font-size:17px;line-height:1.6;margin:0 0 12px;padding-left:4px"><span style="color:#e1e5ec!important">' + inline(line[2:]) + '</span></li>' for line in lines) + '</ul>')
+                '<li style="font-size:17px;line-height:1.65;font-weight:400;margin:0 0 14px;padding-left:4px"><span style="color:#e1e5ec!important">' + inline(line[2:]) + '</span></li>' for line in lines) + '</ul>')
         else:
             lead = first_paragraph and len(block.split()) <= 80
-            size = "20px" if lead else "17px"
+            size = "18px" if lead else "17px"
             color = "#f2f3f5" if lead else "#d8dde6"
-            picture = illustration(pending_image, preview) if pending_image else ''
-            pending_image = None
-            blocks.append('<p style="font-size:' + size + ';line-height:1.65;color:' + color + '!important;margin:0 0 18px">' + picture + inline(block.replace("\n", " ")) + '</p>')
+            blocks.append('<p class="body-copy" style="font-family:Arial,sans-serif;font-size:' + size + ';line-height:1.7;font-weight:400;color:' + color + '!important;margin:0 0 22px">' + inline(block.replace("\n", " ")) + '</p>')
             first_paragraph = False
     css = (ROOT / "opsaetning/nyhedsbrev-design.css").read_text()
     # Buttondown leverer den eneste afmeldingsfooter.
     return ('<style>' + css + '</style><div style="display:none;max-height:0;overflow:hidden;mso-hide:all">'
             + html.escape(draft["preheader"]) + '</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0c0e12"><tr><td align="center" class="outer" style="padding:0">'
-            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:none;background:#0c0e12;border:0;font-family:Arial,sans-serif">'
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:none;background:#0c0e12;border:0;font-family:Arial,sans-serif;font-weight:400">'
             '<tr><td class="pad" style="padding:20px 16px"><div style="font-size:22px;letter-spacing:-0.7px;color:#f2f3f5!important"><b style="display:inline-block;padding:5px 7px;background:#d5ff5f;color:#0c0e12!important;border-radius:7px">AI</b> nyheder</div>'
             + "".join(blocks) + '<p style="padding-top:8px;margin:24px 0 8px"><a href="https://ainyheder.com" style="display:inline-block;padding:12px 16px;background:#202833;border-radius:8px;color:#d5ff5f!important;font-size:15px;font-weight:700;text-decoration:none">Besøg AI-nyheder</a></p></td></tr></table></td></tr></table>')
 
