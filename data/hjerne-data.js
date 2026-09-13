@@ -1,5 +1,5 @@
 window.HJERNE_STATUS = {
- "opdateret": "2026-09-13T21:46:08.803005+00:00",
+ "opdateret": "2026-09-13T23:27:06.834129+00:00",
  "daglig_model": "deepseek-flash",
  "udbyder": "deepseek",
  "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
