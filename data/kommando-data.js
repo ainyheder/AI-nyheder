@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-13T07:29:01.586898+00:00",
+ "genereret": "2026-09-13T10:44:35.502802+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,7 +160,7 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-13T06:28:47.420753+00:00",
+  "opdateret": "2026-09-13T10:35:04.880470+00:00",
   "antal": 153,
   "med_billede": 103,
   "paa_dansk": 153,
@@ -176,8 +176,8 @@ window.KOMMANDO_DATA = {
    "OpenAI Blog": 18,
    "The Verge AI": 20,
    "TechCrunch AI": 34,
-   "Hugging Face": 12,
    "Ars Technica AI": 11,
+   "Hugging Face": 12,
    "Simon Willison AI": 14,
    "Google Gemini": 8,
    "MIT Tech Review AI": 5,
@@ -339,7 +339,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-13T06:28:47.420753+00:00",
+  "opdateret": "2026-09-13T10:35:04.880470+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -359,7 +359,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-13T06:28:46.305505+00:00",
+  "opdateret": "2026-09-13T10:35:04.466360+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -577,7 +577,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-13T06:28:47.420753+00:00",
+  "opdateret": "2026-09-13T10:35:04.880470+00:00",
   "artikler_i_alt": 153,
   "kilder": [
    {
@@ -681,19 +681,19 @@ window.KOMMANDO_DATA = {
       "under": "Mistral rejser rekordstore tre milliarder euro"
      },
      {
-      "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
-      "dato": "2026-09-09T12:00:46",
+      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
+      "dato": "2026-09-10T10:42:55",
       "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://mistral.ai/news/legacy-code-modernization/",
+      "link": "https://mistral.ai/news/mistral-x-cloudera/",
       "side": "",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
-      "dato": "2026-09-10T10:42:55",
+      "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
+      "dato": "2026-09-09T12:00:46",
       "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://mistral.ai/news/mistral-x-cloudera/",
+      "link": "https://mistral.ai/news/legacy-code-modernization/",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -1926,12 +1926,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-13T07:03:09.087733+00:00",
+  "opdateret": "2026-09-13T10:44:30.564198+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 54,
-  "sidevisninger_i_alt": 203,
+  "besoeg_i_alt": 55,
+  "sidevisninger_i_alt": 204,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2088,8 +2088,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 53,
-    "visninger": 175
+    "besoeg": 54,
+    "visninger": 176
    },
    {
     "sti": "/uge.html",
@@ -2142,6 +2142,10 @@ window.KOMMANDO_DATA = {
    {
     "fra": "direkte",
     "besoeg": 54
+   },
+   {
+    "fra": "m.facebook.com",
+    "besoeg": 1
    }
   ],
   "laeste_temaer": []
