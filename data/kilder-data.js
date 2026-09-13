@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-12T21:37:46.132954+00:00",
- "artikler_i_alt": 155,
+ "opdateret": "2026-09-13T00:13:36.946723+00:00",
+ "artikler_i_alt": 153,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -525,7 +525,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -545,6 +545,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI opdaterer ChatGPT-billeder med Sketch"
+    },
+    {
+     "rubrik": "GPT-6 Astra byggede løberuter i ChatGPT Work",
+     "dato": "2026-09-12T23:56:42",
+     "foerst_set": "2026-09-13T00:13:36",
+     "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+     "side": "artikel/0dd87f86ad01fab9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Paul Ford: Avanceret software kræver stadig mennesker",
@@ -610,19 +619,19 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
-     "dato": "2026-09-05T23:27:48",
+     "rubrik": "Terence Tao advarer om AI jagter matematikproblemer",
+     "dato": "2026-09-09T00:20:17",
      "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+     "link": "https://simonwillison.net/2026/Sep/9/terence-tao/",
      "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Terence Tao advarer om AI jagter matematikproblemer",
-     "dato": "2026-09-09T00:20:17",
+     "rubrik": "OpenAI klar med GPT-6 Astra til udviklere",
+     "dato": "2026-09-05T23:27:48",
      "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/9/terence-tao/",
+     "link": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -644,21 +653,12 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Shopify dropper React Native til mobilapps",
-     "dato": "2026-09-10T21:11:15",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/10/shopify-react-native/",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "MIT Tech Review AI",
@@ -684,7 +684,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
+   "i_listen": 34,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -928,9 +928,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
-   "som_ekstra": 5,
+   "i_listen": 20,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
+     "dato": "",
+     "foerst_set": "2026-09-13T00:13:36",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-agenter bag angreb på RubyGems"
+    },
     {
      "rubrik": "New Mexico: Advokat får 5.000 dollar i bøde for ChatGPT-fiduser",
      "dato": "",
@@ -1059,7 +1068,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "UMG og ElevenLabs udvikler AI-musikplatform",
-     "dato": "2026-09-10T11:38:19",
+     "dato": "2026-09-10T15:38:19",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
      "side": "artikel/f613fc1e895bdb49.html",
@@ -1101,7 +1110,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     2
+     3
     ],
     [
      "Hacker News: AI",
@@ -1127,7 +1136,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
+   "i_listen": 11,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1235,15 +1244,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-07T16:00:47",
      "link": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
      "side": "artikel/e2dfaa2c905c18fc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-agenter diskuterede flugt på åben wiki",
-     "dato": "2026-09-04T22:17:36",
-     "foerst_set": "2026-09-04T23:13:06",
-     "link": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/",
-     "side": "",
      "hvor": "forside",
      "under": ""
     }
