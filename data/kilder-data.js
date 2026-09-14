@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-14T07:33:39.887384+00:00",
- "artikler_i_alt": 46,
+ "opdateret": "2026-09-14T09:06:12.379796+00:00",
+ "artikler_i_alt": 49,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -97,7 +97,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -133,6 +133,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-11T23:11:34",
      "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
      "side": "artikel/156917f0352e1cf1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic: Claude-kode skal have højere standard",
+     "dato": "2026-09-11T17:47:11",
+     "foerst_set": "2026-09-11T17:51:30",
+     "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+     "side": "artikel/7d445be5f43019e0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -185,7 +194,7 @@ window.KILDER_STATUS = {
      "under": "Sam Altman afviser OpenAI-børsnotering i 2026"
     },
     {
-     "rubrik": "Anthropic-topchef skitserer plan om at \"pace frontieren\"",
+     "rubrik": "Amodei lukker evaluatorer ind hos Anthropic",
      "dato": "",
      "foerst_set": "2026-09-12T16:01:49",
      "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
@@ -218,7 +227,7 @@ window.KILDER_STATUS = {
      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
      "side": "",
      "hvor": "under",
-     "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
+     "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
     },
     {
      "rubrik": "Meta lancerer Muse: AI der klarer dine gøremål",
@@ -275,7 +284,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI pauser Pro-abonnement efter Astra-efterspørgsel",
+     "rubrik": "OpenAI pauser nye Pro-abonnementer efter Astra",
      "dato": "2026-09-10T20:59:51",
      "foerst_set": "2026-09-10T21:07:39",
      "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
@@ -359,18 +368,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 14,
+   "i_listen": 15,
    "som_ekstra": 4,
    "seneste": [
-    {
-     "rubrik": "Trump og Johnson mener, at AI-industrien overreagerer",
-     "dato": "",
-     "foerst_set": "2026-09-13T21:06:13.791167+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-     "side": "",
-     "hvor": "under",
-     "under": "Amodei vil bremse AI i tre trin"
-    },
     {
      "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
      "dato": "",
@@ -414,7 +414,16 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
      "side": "",
      "hvor": "under",
-     "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
+     "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
+    },
+    {
+     "rubrik": "Trump og Johnson afviser at bremse AI",
+     "dato": "2026-09-13T15:41:48",
+     "foerst_set": "2026-09-13T21:06:13",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+     "side": "artikel/1d273e458a4640c0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sam Altman afviser OpenAI-børsnotering i 2026",
@@ -514,15 +523,6 @@ window.KILDER_STATUS = {
      "side": "artikel/009e61788df2b717.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Prime Video matcher læber med AI-dub",
-     "dato": "2026-09-09T13:00:00",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
-     "side": "artikel/4c31ccfb47a0b4ea.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -589,7 +589,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Anthropic afslører misbrug af Claude til biovåbenforskning",
+     "rubrik": "Anthropic stoppede forsøg på biovåben-forskning med Claude",
      "dato": "2026-09-11T13:02:35",
      "foerst_set": "2026-09-08T21:21:14",
      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
@@ -598,7 +598,7 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google offentliggør AlphaGenome Atlas for hele genomet",
+     "rubrik": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift",
      "dato": "2026-09-09T16:34:18",
      "foerst_set": "2026-09-08T18:02:43",
      "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
@@ -636,9 +636,19 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 0,
+   "i_listen": 1,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "ON.energy: AI-centrenes UPS skal ud af bygningen",
+     "dato": "2026-09-10T11:00:00",
+     "foerst_set": "2026-09-10T13:45:53",
+     "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+     "side": "artikel/dcafb6d4ea46bd83.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -781,7 +791,7 @@ window.KILDER_STATUS = {
      "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
      "side": "",
      "hvor": "under",
-     "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
+     "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
     }
    ],
    "overlap": [
@@ -826,7 +836,7 @@ window.KILDER_STATUS = {
      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
      "side": "",
      "hvor": "under",
-     "under": "Anthropic afslører misbrug af Claude til biovåbenforskning"
+     "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
     },
     {
      "rubrik": "Bandet Muse mister navn til Metas nye AI",
