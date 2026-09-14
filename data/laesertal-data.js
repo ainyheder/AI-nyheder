@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-14T09:46:21.728496+00:00",
+ "opdateret": "2026-09-14T12:23:19.819441+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -99,7 +99,7 @@ window.LAESERTAL = {
      1,
      3,
      2,
-     3,
+     4,
      6,
      1,
      1,
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      1,
      3,
      2,
-     1,
+     2,
      0
     ]
    },
@@ -245,53 +245,18 @@ window.LAESERTAL = {
      0,
      0
     ]
-   },
-   {
-    "navn": "Nyheder",
-    "tal": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0
-    ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 75,
- "sidevisninger_i_alt": 309,
+ "besoeg_i_alt": 74,
+ "sidevisninger_i_alt": 308,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 74,
-   "visninger": 284
+   "besoeg": 73,
+   "visninger": 283
   },
   {
    "sti": "/uge.html",
@@ -332,7 +297,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 73
+   "besoeg": 72
   },
   {
    "fra": "m.facebook.com",
@@ -349,8 +314,8 @@ window.LAESERTAL = {
    },
    {
     "fra": "direkte",
-    "besoeg": 72,
-    "visninger": 72
+    "besoeg": 71,
+    "visninger": 71
    },
    {
     "fra": "m.facebook.com",
