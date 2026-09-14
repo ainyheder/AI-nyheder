@@ -61,10 +61,14 @@ jobs:
         run: |
           echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
           pip install -r _redaktion/requirements-billeder.txt -q
-      - uses: actions/cache@v4
+      - name: Genbrug BiRefNet-modellen
+        id: birefnet-cache
+        uses: actions/cache/restore@v4
         with:
           path: ${{ env.U2NET_HOME }}
-          key: birefnet-general-newsletter-v1
+          key: birefnet-general-newsletter-v2-${{ runner.os }}
+          # Crawleren bruger samme model, mappe og Linux-runner.
+          restore-keys: birefnet-general-v1-${{ runner.os }}
       - name: Kontrollér testudsendelsen
         run: |
           python3 _redaktion/proeve-nyhedsbrev-feed.py
@@ -73,7 +77,15 @@ jobs:
           python3 _redaktion/proeve-modelvalg.py
           python3 _redaktion/proeve-fritlaegning.py
       - name: Kontrollér fritlægning før AI og billedkøb
+        id: cutout-check
         run: python3 -m _redaktion.nyhedsbrev_billeder --check-engine
+      - name: Gem den kontrollerede BiRefNet-model
+        # Bevar modellen, selv hvis et senere AI- eller mailtrin fejler.
+        if: steps.cutout-check.outcome == 'success' && steps.birefnet-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.U2NET_HOME }}
+          key: ${{ steps.birefnet-cache.outputs.cache-primary-key }}
       - name: Skriv, kontrollér og send prøve til Gmail
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -108,15 +120,28 @@ jobs:
         run: |
           echo "U2NET_HOME=$RUNNER_TEMP/ai-news-models" >> "$GITHUB_ENV"
           pip install -r _redaktion/requirements-billeder.txt -q
-      - uses: actions/cache@v4
+      - name: Genbrug BiRefNet-modellen
+        id: birefnet-cache
+        uses: actions/cache/restore@v4
         with:
           path: ${{ env.U2NET_HOME }}
-          key: birefnet-general-newsletter-v1
+          key: birefnet-general-newsletter-v2-${{ runner.os }}
+          restore-keys: birefnet-general-v1-${{ runner.os }}
       - name: Kontrollér kvalitet og beskyttelse mod dobbelt udsendelse
         working-directory: app
         run: |
           python3 _redaktion/proeve-nyhedsbrev-feed.py
           python3 _redaktion/proeve-nyhedsbrev.py
+      - name: Kontrollér fritlægning før AI og billedkøb
+        id: cutout-check
+        working-directory: app
+        run: python3 -m _redaktion.nyhedsbrev_billeder --check-engine
+      - name: Gem den kontrollerede BiRefNet-model
+        if: steps.cutout-check.outcome == 'success' && steps.birefnet-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.U2NET_HOME }}
+          key: ${{ steps.birefnet-cache.outputs.cache-primary-key }}
       - name: Hent separat checkout til udsendelseshistorik
         uses: actions/checkout@v4
         with:

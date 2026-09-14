@@ -1,8 +1,33 @@
 """Fritlæg én ny illustration med BiRefNet General. Originalen ændres aldrig."""
 from pathlib import Path
 import argparse
+import json
 
 MODEL = 'birefnet-general'
+# Samme fil og checksum som rembg 2.0.84. Cachen må ikke skjule en defekt download.
+MODEL_URL = 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-epoch_244.onnx'
+MODEL_MD5 = '7a35a0141cbbc80de11d9c9a28f52697'
+
+
+def klargoer_model(progress):
+    import pooch
+    from rembg.sessions.birefnet_general import BiRefNetSessionGeneral
+    filename = MODEL + '.onnx'
+    existing = BiRefNetSessionGeneral.resolve_existing(filename)
+    # Genbrug også crawlerens ældre, flade cache uden en ny 973 MB-download.
+    folder = Path(existing).parent if existing else Path(BiRefNetSessionGeneral.model_dir())
+    candidate = folder / filename
+    progress('modelkontrol')
+    if candidate.is_file() and pooch.file_hash(candidate, alg='md5') == MODEL_MD5:
+        return candidate
+    progress('modeldownload')
+    cache = pooch.create(path=folder, base_url='',
+                         registry={filename: 'md5:' + MODEL_MD5},
+                         urls={filename: MODEL_URL}, retry_if_failed=2)
+    # Pooch downloader til en midlertidig fil og kontrollerer checksum før flytning.
+    # Kun modeldownload genforsøges; aldrig et betalt billedkøb.
+    return Path(cache.fetch(filename, downloader=pooch.HTTPDownloader(
+        timeout=(15, 60), chunk_size=1024 * 1024, progressbar=False)))
 
 
 def kontroller_maske(image):
@@ -22,7 +47,8 @@ def fritlaeg(source, destination, session=None, progress=None):
     from PIL import Image
     from rembg import new_session, remove
     if session is None:
-        progress('model')
+        klargoer_model(progress)
+        progress('modelindlaesning')
         session = new_session(MODEL, providers=['CPUExecutionProvider'])
     progress('maske')
     with Image.open(source) as original:
@@ -51,15 +77,42 @@ def fritlaeg(source, destination, session=None, progress=None):
     return destination
 
 
-if __name__ == '__main__':
+def main(argv=None):
+    import sys
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('original', type=Path)
     parser.add_argument('output', type=Path)
-    args = parser.parse_args()
+    parser.add_argument('--status-fil', type=Path)
+    args = parser.parse_args(argv)
+    status = {'trin': 'start'}
+
+    def save_status():
+        if args.status_fil:
+            temporary = args.status_fil.with_suffix('.tmp')
+            temporary.write_text(json.dumps(status), encoding='utf-8')
+            temporary.replace(args.status_fil)
+
+    def progress(stage):
+        status['trin'] = stage
+        save_status()
+        print('\nCUTOUT_STAGE=' + stage, flush=True)
+
     try:
-        fritlaeg(args.original, args.output, progress=lambda stage: print('CUTOUT_STAGE=' + stage, flush=True))
-    except Exception as exc:
-        # Fejltype og trin kan logges uden udbydersvar, headers eller nøgler.
-        import sys
-        print('CUTOUT_ERROR=' + type(exc).__name__, file=sys.stderr, flush=True)
-        sys.exit(1)
+        fritlaeg(args.original, args.output, progress=progress)
+    except (Exception, SystemExit) as exc:
+        # En separat statusfil kan ikke blive opslugt af en download-progressbar.
+        # Ingen fejltekst, request-data, headers eller nøgler kopieres til loggen.
+        status['fejltype'] = type(exc).__name__
+        http_status = getattr(getattr(exc, 'response', None), 'status_code', None)
+        if type(http_status) is int:
+            status['http_status'] = http_status
+        if isinstance(exc, OSError) and type(exc.errno) is int:
+            status['errno'] = exc.errno
+        save_status()
+        print('\nCUTOUT_ERROR=' + type(exc).__name__, file=sys.stderr, flush=True)
+        return 1
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

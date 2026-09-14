@@ -2,7 +2,35 @@ Aktuel indstilling fra 14. september 2026: Alle tekstopgaver bruger `deepseek-fl
 
 # Nyhedsbrev — drift
 
-## Aktuel teststatus — prøve 12
+## Aktuel teststatus — fritlægning, 14. september 2026
+
+[Kørsel 34815469159](https://github.com/ainyheder/AI-nyheder/actions/runs/34815469159)
+stoppede før AI og mail: BiRefNet-trinnet sluttede efter 61 sekunder med
+`model / ProcesAfbrudt / returkode 1`. Loggen skelnede ikke mellem download
+og ONNX-indlæsning, så den præcise procesfejl er ikke fastslået.
+
+Nyhedsbrevets cache blev kun gemt ved succes for hele jobbet. Der fandtes
+ingen newsletter-cache, selv om crawlerens samme model allerede lå i cache.
+Begge newsletter-jobs genbruger nu også crawlerens cache og gemmer modellen
+lige efter en bestået fritlægningsprøve, før betalte AI-kald og mail.
+
+Modelhentningen kontrollerer checksum, reparerer defekte modeldownloads og
+har højst to genforsøg. Kontrollen har 600 sekunder til en eventuel kold
+download på cirka 973 MB; de efterfølgende billeder beholder 180-sekundersloftet.
+Loggen skelner mellem `modelkontrol`, `modeldownload` og `modelindlaesning`.
+Trin, fejltype og eventuel HTTP-status gemmes separat fra bibliotekernes
+progress-output. Installerede biblioteksversioner vises også, uden API-nøgler
+eller udbydernes request-data.
+
+166 lokale kontroller bestod: 16 for fritlægning/cache/fejl, 14 for feed,
+42 for nyhedsbrev, 11 for Gmail og 83 for modelvalg. Modelcachetestene bruger
+små testfiler og simulerede netværksfejl; de er ikke en fuld BiRefNet-kørsel.
+
+En ny Gmail-test på GitHub skal stadig bekræfte hele forløbet efter push.
+Start **Run workflow** med Gmail-test valgt; brug ikke **Re-run jobs**,
+da testscriptet kræver en ny kørsel for at undgå dobbelt afsendelse.
+
+## Tidligere modtaget prøve — prøve 12
 
 [Kørsel 34737586357](https://github.com/ainyheder/AI-nyheder/actions/runs/34737586357)
 på `d5d90db` hentede “What's Your Moonshot?” fra 12. september via RSS2JSON.
@@ -70,7 +98,7 @@ AI- og mailtjenester; de dokumenterer ikke den næste AI-teksts billedkvalitet.
 `nyhedsbrev-proever/design-2026-09-13.html` er en manuelt redigeret, usendt
 designprøve med to genbrugte billeder fra prøve 12. Den viser tekstretningen,
 læsetiden og layoutet; den er ikke output fra de nye prompts. En ny manuel
-Gmail-test skal efter push hente det levende feed, skrive med Flash/max,
+Gmail-test skal efter push hente det levende feed, skrive med Flash/high,
 generere nye motiver og sende kun til Torbens Gmail.
 
 ## Tidligere test — prøve 10

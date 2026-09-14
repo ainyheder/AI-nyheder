@@ -47,26 +47,53 @@ def public_image_url(url):
 
 
 class CutoutError(RuntimeError):
-    def __init__(self, stage, returncode, error_type):
+    def __init__(self, stage, returncode, error_type, diagnostics=None):
         self.details = {'trin': stage, 'returkode': returncode, 'fejltype': error_type}
+        for key in ('http_status', 'errno'):
+            value = (diagnostics or {}).get(key)
+            if type(value) is int:
+                self.details[key] = value
         super().__init__(json.dumps(self.details, ensure_ascii=False))
 
 
-def cutout_png(raw):
+def cutout_failure(status_file, returncode, stdout='', stderr='', timed_out=False):
+    """Læs kun kontrollerede metadata; send aldrig hele underprocessens log videre."""
+    try:
+        status = json.loads(status_file.read_text())
+        if not isinstance(status, dict):
+            status = {}
+    except (OSError, ValueError):
+        status = {}
+    stdout = stdout.decode('utf-8', errors='replace') if isinstance(stdout, bytes) else (stdout or '')
+    stderr = stderr.decode('utf-8', errors='replace') if isinstance(stderr, bytes) else (stderr or '')
+    stages = re.findall(r'CUTOUT_STAGE=([a-z]+)\b', stdout)
+    errors = re.findall(r'CUTOUT_ERROR=([A-Za-z_][A-Za-z0-9_]{0,79})\b', stderr)
+    stage = status.get('trin', '')
+    if not isinstance(stage, str) or not re.fullmatch(r'[a-z]{1,40}', stage):
+        stage = stages[-1] if stages else 'start'
+    error_type = status.get('fejltype', '')
+    if not isinstance(error_type, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_]{0,79}', error_type):
+        error_type = errors[-1] if errors else 'ProcesAfbrudt'
+    return CutoutError(stage, returncode, 'TimeoutExpired' if timed_out else error_type, status)
+
+
+def cutout_png(raw, timeout=180):
     from PIL import Image
     from _redaktion.fritlaeg_billede import kontroller_maske
     with tempfile.TemporaryDirectory(prefix='ai-newsletter-image-') as folder:
         original = Path(folder) / 'original.png'
         original.write_bytes(raw)
         cutout = Path(folder) / 'cutout.webp'
-        result = subprocess.run([sys.executable, str(ROOT / '_redaktion/fritlaeg_billede.py'), str(original), str(cutout)],
-                                cwd=folder, env={**os.environ, 'OMP_NUM_THREADS': '2'},
-                                capture_output=True, text=True, timeout=180)
+        status_file = Path(folder) / 'status.json'
+        try:
+            result = subprocess.run([sys.executable, str(ROOT / '_redaktion/fritlaeg_billede.py'),
+                                     str(original), str(cutout), '--status-fil', str(status_file)],
+                                    cwd=folder, env={**os.environ, 'OMP_NUM_THREADS': '2'},
+                                    capture_output=True, text=True, timeout=timeout)
+        except subprocess.TimeoutExpired as exc:
+            raise cutout_failure(status_file, None, exc.stdout, exc.stderr, timed_out=True) from None
         if result.returncode:
-            stages = re.findall(r'^CUTOUT_STAGE=([a-z]+)$', result.stdout, re.M)
-            errors = re.findall(r'^CUTOUT_ERROR=([A-Za-z]+)$', result.stderr, re.M)
-            raise CutoutError(stages[-1] if stages else 'start', result.returncode,
-                              errors[-1] if errors else 'ProcesAfbrudt')
+            raise cutout_failure(status_file, result.returncode, result.stdout, result.stderr)
         with Image.open(cutout) as image:
             image = image.convert('RGBA')
             kontroller_maske(image)
@@ -129,13 +156,18 @@ if __name__ == '__main__':
     parser.parse_args()
     config = json.loads((ROOT / 'opsaetning/nyhedsbrev.json').read_text())
     if config.get('billeder', {}).get('aktiv', False):
+        from importlib.metadata import version
         from PIL import Image, ImageDraw
+        print('BiRefNet-værktøjer: ' + ', '.join(
+            name + '=' + version(name) for name in ('rembg', 'onnxruntime', 'pooch', 'numpy')), flush=True)
         # Teknisk prøvefigur: ingen AI-generering, og filen bruges aldrig i brevet.
         sample = Image.new('RGB', (640, 480), 'white')
         ImageDraw.Draw(sample).ellipse((160, 70, 480, 410), fill='#167aa5')
         raw = io.BytesIO(); sample.save(raw, 'PNG')
         try:
-            png = cutout_png(raw.getvalue())
+            # En kold cache kan kræve næsten 1 GB download. Betalte billeder
+            # bruger bagefter den kontrollerede cache og det normale 180s-loft.
+            png = cutout_png(raw.getvalue(), timeout=600)
         except CutoutError as exc:
             print('Fritlægningskontrol fejlede: ' + str(exc))
             sys.exit(1)
