@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · OpenRouter-endpoint kan give forskellig modeladfærd</title>
-<meta name="description" content="Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.">
+<title>AI-nyheder.com · OpenRouter-routing giver samme model forskellig adfærd</title>
+<meta name="description" content="Automatisk ruting er et salgspunkt, men udbyderne kører forskelligt software, så ensartede svar ikke er givet.">
 <link rel="canonical" href="https://ainyheder.com/artikel/156917f0352e1cf1.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="OpenRouter-endpoint kan give forskellig modeladfærd">
-<meta property="og:description" content="Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.">
+<meta property="og:title" content="OpenRouter-routing giver samme model forskellig adfærd">
+<meta property="og:description" content="Automatisk ruting er et salgspunkt, men udbyderne kører forskelligt software, så ensartede svar ikke er givet.">
 <meta property="og:url" content="https://ainyheder.com/artikel/156917f0352e1cf1.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/67e5cad3e217d817.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "OpenRouter-endpoint kan give forskellig modeladfærd", "description": "Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.", "url": "https://ainyheder.com/artikel/156917f0352e1cf1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/156917f0352e1cf1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/67e5cad3e217d817.jpg", "datePublished": "2026-09-11T22:49:18+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "OpenRouter-routing giver samme model forskellig adfærd", "description": "Automatisk ruting er et salgspunkt, men udbyderne kører forskelligt software, så ensartede svar ikke er givet.", "url": "https://ainyheder.com/artikel/156917f0352e1cf1.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/156917f0352e1cf1.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/67e5cad3e217d817.jpg", "datePublished": "2026-09-11T22:49:18+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -56,18 +56,18 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
-<div class="kicker">Hverdags-AI · Simon Willison AI · 11.09.2026 · 1 min. læsning</div>
-<h1>OpenRouter-endpoint kan give forskellig modeladfærd</h1>
-<div class="article-intro"><img class="top" src="/data/img/67e5cad3e217d817.webp" alt="A single metal key turned in one of three differently shaped padlocks lined up in a row, the other two closed and untouched."><p class="manchet">Samme OpenRouter-endpoint kan føre til forskellige udbyderes versioner af en model, og det kan ændre både evner og adfærd. Udbyderen kan vælges med provider.only.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Routing bag kulissen</h2>
-<p>OpenRouter markedsfører ifølge Simon Willison, at tjenesten automatisk håndterer fallbacks og vælger den mest omkostningseffektive mulighed for hver forespørgsel. Derfor kan man kalde ét API-endpoint for en model og blive sendt videre til en udbyder, der kører modellen. Problemet er, at udbyderne ikke nødvendigvis kører modellen ens.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Forskelle mellem udbydere</h2>
-<p>Mohamed Moustafa peger på en række måder, hvor routing kan skabe problemer. Udbydere bruger forskelligt serveringssoftware med forskellige optimeringer og indstillinger, så samme endpoint kan give forespørgsler, der opfører sig forskelligt. Nogle udbydere mangler ifølge kilden endda synsevne til synsmodeller, og behandlingen af indstillingen for reasoning effort kan også variere.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Styr udbyderen selv</h2>
-<p>Man kan styre, hvilken udbyder der bruges, med indstillingen provider.only. Metoden /endpoints returnerer listen over tilgængelige udbydere for et bestemt model-ID, så man kan se, hvad der er til rådighed, før man vælger. Dermed kan man undgå de udbydere, hvis version af modellen ikke passer til ens behov.</p></section>
+<div class="kicker">Hverdags-AI · Simon Willison AI · 11.09.2026 · 2 min. læsning</div>
+<h1>OpenRouter-routing giver samme model forskellig adfærd</h1>
+<div class="article-intro"><img class="top" src="/data/img/67e5cad3e217d817.webp" alt="A single metal key turned in one of three differently shaped padlocks lined up in a row, the other two closed and untouched."><p class="manchet">Automatisk ruting er et salgspunkt, men udbyderne kører forskelligt software, så ensartede svar ikke er givet.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Én adresse, mange udbydere</h2>
+<p>OpenRouter markedsfører sig med, at tjenesten selv håndterer fallbacks og vælger den mest omkostningseffektive løsning for hver enkelt forespørgsel.</p><p>I praksis kan man derfor kalde ét API-endpoint for en model og lade OpenRouter sende opgaven videre til den bedst tilgængelige udbyder bag kulissen. Netop den automatiske ruting er et af tjenestens helt centrale salgspunkter – og samtidig kernen i den kritik, Simon Willison samler op i et linkindlæg.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Samme model svarer ikke ens</h2>
+<p>Mohamed Moustafa peger på en række måder, hvor den automatiske ruting kan give problemer. Forskellige udbydere kører nemlig forskelligt serveringssoftware med forskellige optimeringer og indstillinger.</p><p>Det betyder, at det samme OpenRouter-endpoint kan levere modelsvar, der opfører sig forskelligt. Nogle udbydere mangler ligefrem billedforståelse, selv for modeller der ellers er bygget til at læse billeder. Også måden, indstillingen for hvor grundigt modellen skal ræsonnere, bliver behandlet på, kan variere fra udbyder til udbyder.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Sådan låser man udbyderen</h2>
+<p>Willison forklarer, at man kan styre, hvilken udbyder der bliver valgt. Indstillingen <strong>provider.only</strong> lader brugeren pege på en bestemt udbyder frem for at overlade valget til OpenRouter.</p><p>Vil man vide, hvem der overhovedet er i spil, returnerer metoden /endpoints en liste over de tilgængelige udbydere for et bestemt model-ID. Dermed kan man tjekke udvalget, før man binder sig til en rute.</p></section>
 
-<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>OpenRouter er ifølge kilden et samlet API-endpoint for flere modeludbydere.</li><li>provider.only begrænser hvilke udbydere der kan bruges til en forespørgsel.</li><li>/endpoints viser tilgængelige udbydere for et model-ID.</li><li>Forskelligt serveringssoftware kan give forskellig optimering og adfærd.</li><li>Reasoning effort kan behandles forskelligt afhængigt af udbyder.</li></ul></details>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Vælger man ikke udbyder bevidst, kan samme model-ID give uventet adfærd eller mangle funktioner som syn.</div>
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Indlægget er et linkindlæg af Simon Willison, offentliggjort 11. september 2026.</li><li>OpenRouter fremhæver selv automatiske fallbacks og omkostningsoptimering som salgspunkter.</li><li>Kritikken kommer fra Mohamed Moustafa, som Willison henviser til.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>For udviklere, der vil have ensartet adfærd, betyder det, at man selv må vælge udbyder med provider.only i stedet for at lade OpenRouter rute automatisk.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

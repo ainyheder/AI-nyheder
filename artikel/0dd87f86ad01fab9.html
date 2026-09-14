@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI-nyheder.com · GPT-6 Astra byggede løberuter i ChatGPT Work</title>
-<meta name="description" content="ChatGPT Work med GPT-6 Astra fandt 5K- og 10K-løberuter for Simon Willison via OpenStreetMap. Efter 27 minutter kom de som visualisering og GPX-filer — men den kørte kode var skjult.">
+<title>AI-nyheder.com · GPT-6 Astra tegner 5 km-rute på 27 minutter</title>
+<meta name="description" content="ChatGPT Work med GPT-6 Astra regnede løberuter ud fra OpenStreetMap og leverede kort, GPX og GeoJSON. Bagefter kunne Simon Willison ikke få den brugte kode at se.">
 <link rel="canonical" href="https://ainyheder.com/artikel/0dd87f86ad01fab9.html">
 <meta name="theme-color" content="#0c0e12">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI-nyheder">
-<meta property="og:title" content="GPT-6 Astra byggede løberuter i ChatGPT Work">
-<meta property="og:description" content="ChatGPT Work med GPT-6 Astra fandt 5K- og 10K-løberuter for Simon Willison via OpenStreetMap. Efter 27 minutter kom de som visualisering og GPX-filer — men den kørte kode var skjult.">
+<meta property="og:title" content="GPT-6 Astra tegner 5 km-rute på 27 minutter">
+<meta property="og:description" content="ChatGPT Work med GPT-6 Astra regnede løberuter ud fra OpenStreetMap og leverede kort, GPX og GeoJSON. Bagefter kunne Simon Willison ikke få den brugte kode at se.">
 <meta property="og:url" content="https://ainyheder.com/artikel/0dd87f86ad01fab9.html">
 <meta property="og:image" content="https://ainyheder.com/data/img/7e2fd7d85ee1040b.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "GPT-6 Astra byggede løberuter i ChatGPT Work", "description": "ChatGPT Work med GPT-6 Astra fandt 5K- og 10K-løberuter for Simon Willison via OpenStreetMap. Efter 27 minutter kom de som visualisering og GPX-filer — men den kørte kode var skjult.", "url": "https://ainyheder.com/artikel/0dd87f86ad01fab9.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/0dd87f86ad01fab9.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/7e2fd7d85ee1040b.jpg", "datePublished": "2026-09-12T23:56:42+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/12/astra-running-routes/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "GPT-6 Astra tegner 5 km-rute på 27 minutter", "description": "ChatGPT Work med GPT-6 Astra regnede løberuter ud fra OpenStreetMap og leverede kort, GPX og GeoJSON. Bagefter kunne Simon Willison ikke få den brugte kode at se.", "url": "https://ainyheder.com/artikel/0dd87f86ad01fab9.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/0dd87f86ad01fab9.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/7e2fd7d85ee1040b.jpg", "datePublished": "2026-09-12T23:56:42+00:00", "articleSection": "Hverdags-AI", "isBasedOn": "https://simonwillison.net/2026/Sep/12/astra-running-routes/"}</script>
 <style>
 :root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
   --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
@@ -56,18 +56,18 @@ footer a { color:var(--accent); }
 <div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
-<div class="kicker">Hverdags-AI · Simon Willison AI · 12.09.2026 · 1 min. læsning</div>
-<h1>GPT-6 Astra byggede løberuter i ChatGPT Work</h1>
-<div class="article-intro"><img class="top" src="/data/img/7e2fd7d85ee1040b.webp" alt="A thick red cord tracing a looping running route across a folded paper map, ending at a small brass compass placed beside the map."><p class="manchet">ChatGPT Work med GPT-6 Astra fandt 5K- og 10K-løberuter for Simon Willison via OpenStreetMap. Efter 27 minutter kom de som visualisering og GPX-filer — men den kørte kode var skjult.</p></div>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Ruter fra egen adresse</h2>
-<p>Simon Willison gav ChatGPT Work med GPT-6 Astra (Max) en konkret opgave: Find 5K- og 10K-løberuter, der starter og slutter ved hans hjem, og brug OpenStreetMap-data. Efter 27 minutters arbejde leverede modellen præcis det, han bad om: en indlejret visualisering samt downloadbare GPX- og GeoJSON-filer. Den viste 5K-rute, kaldet El Granada harbor loop, måler 5,1 km.</p></section>
-<dl class="article-metrics"><div><dt>ChatGPT Works arbejdstid på opgaven</dt><dd>27 minutter</dd></div><div><dt>den viste 5K-rute, El Granada harbor loop</dt><dd>5,1 km</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Sådan blev ruterne lavet</h2>
-<p>Ifølge Willison brugte værktøjet Nominatim til at finde adressen og Overpass til at hente lokale veje og stier fra OpenStreetMap, hvorefter løkkerne blev beregnet lokalt. Selve kortet blev vist gennem den såkaldte visualize-skill, der skabte filen /workspace/el-granada-5k-share.html til indlejring i ChatGPTs grænseflade. Hele rutens geometri ligger som JSON i HTML-filen.</p></section>
-<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Skjult kode irriterer</h2>
-<p>Willison er begejstret for resultatet, men ikke for gennemsigtigheden. Han kunne ikke se den kode, ChatGPT Work faktisk kørte, eller de præcise detaljer i udførelsen, og det kalder han en anti-feature i ChatGPT-grænsefladen. Uden indsigt i koden kan han ikke selv efterprøve, hvordan ruterne blev beregnet.</p></section>
+<div class="kicker">Hverdags-AI · Simon Willison AI · 12.09.2026 · 2 min. læsning</div>
+<h1>GPT-6 Astra tegner 5 km-rute på 27 minutter</h1>
+<div class="article-intro"><img class="top" src="/data/img/7e2fd7d85ee1040b.webp" alt="A thick red cord tracing a looping running route across a folded paper map, ending at a small brass compass placed beside the map."><p class="manchet">ChatGPT Work med GPT-6 Astra regnede løberuter ud fra OpenStreetMap og leverede kort, GPX og GeoJSON. Bagefter kunne Simon Willison ikke få den brugte kode at se.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>To løberuter klar efter 27 minutter</h2>
+<p>Simon Willison, der skriver om AI på sin blog, gav en morgen ChatGPT Work med modellen GPT-6 Astra i varianten Max en opgave: Find 5 km- og 10 km-løberuter, der løber i ring fra min adresse, og brug data fra OpenStreetMap.</p><p>Værktøjet arbejdede i <strong>27 minutter</strong> og leverede præcis det ønskede: et indlejret kort i ChatGPT-grænsefladen samt GPX- og GeoJSON-filer, han kunne hente ned. GPX og GeoJSON er filformater, der gemmer en rute som koordinater, så den kan åbnes i andre programmer.</p></section>
+<dl class="article-metrics"><div><dt>Tid GPT-6 Astra brugte på at finde 5 km- og 10 km-ruter</dt><dd>27 minutter</dd></div><div><dt>Længde på ruten &quot;El Granada harbor loop&quot; ifølge kortets visning</dt><dd>5,1 km</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Nominatim fandt adressen, Overpass hentede vejene</h2>
+<p>Adressen blev lokaliseret med tjenesten Nominatim, mens lokale veje og stier blev hentet fra OpenStreetMap via tjenesten Overpass. Selve ruterne blev derefter regnet ud lokalt.</p><p>Kortet over 5 km-ruten bærer navnet &quot;El Granada harbor loop&quot; og viser en længde på 5,1 km. Det blev tegnet med funktionen &quot;visualize skill&quot;, som skabte en HTML-fil, der blev vist direkte i ChatGPT. Grafikken bruger biblioteket D3 fra en CDN-adresse, som værktøjet har på sin liste over tilladte kilder.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Koden var væk, da han spurgte</h2>
+<p>Willison kunne ikke se den kode, der blev kørt, eller de nøjagtige detaljer i ChatGPTs grænseflade. Den manglende gennemsigtighed kalder han en &quot;anti-feature&quot;.</p><p>Da han senere bad om en kopi af den Python-kode, der var brugt, kunne ChatGPT ikke levere den. Det skyldes efter hans vurdering, at samtaletråden var blevet komprimeret. Han mener, at systemer med komprimering bør bevare teksten fra før komprimeringen og gøre den tilgængelig gennem værktøjskald.</p></section>
 
-<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Modellen kaldes GPT-6 Astra (Max) og kørte i produktet ChatGPT Work.</li><li>Kortet tegnes med D3, hentet fra en CDN-adresse som visualize-skillen tillader.</li><li>Indlægget blev offentliggjort 12. september 2026.</li></ul></details>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Eksemplet viser, at ChatGPT Work kan løse flertrinsopgaver med eksterne datakilder og selv producere filer — men at den skjulte udførelse gør resultatet svært at efterprøve ifølge Willison.</div>
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Funktionen &quot;visualize skill&quot; skabte filen /workspace/el-granada-5k-share.html til visning i ChatGPT.</li><li>Kortet bruger D3 version 7.9.0 fra en CDN-adresse på værktøjets liste over tilladte.</li><li>Indlægget er skrevet af Simon Willison og dateret 12. september 2026.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Hvis agenter regner lokalt, bliver manglende adgang til den kørte kode et konkret problem: brugeren kan ikke efterprøve eller genbruge resultatet.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Sep/12/astra-running-routes/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
