@@ -2,7 +2,18 @@ Aktuel indstilling fra 14. september 2026: Alle tekstopgaver bruger `deepseek-fl
 
 # Nyhedsbrev — drift
 
-## Aktuel teststatus — fritlægning, 14. september 2026
+## Aktuel teststatus — tokenloft, 14. september 2026
+
+Den seneste Gmail-prøve bestod fritlægningskontrollen og gemte BiRefNet-cachen.
+Feedet blev hentet via RSS2JSON. Skriveren brugte derefter alle 32.768 tokens
+på tænkning uden synligt svar i tre forsøg, selv med Flash/high.
+
+Nyhedsbrevets skriver og kvalitetskontrol har nu begge et loft på **100.000
+tokens pr. kald**, inklusive tænkning. Det gælder både Gmail-test og daglig
+drift. DeepSeek Flash/high og forsøgsgrænsen på tre redaktionsrunder er bevaret.
+En ny GitHub-test efter push skal stadig bekræfte et færdigt brev og afsendelse.
+
+## Tidligere fejl — fritlægning, 14. september 2026
 
 [Kørsel 34815469159](https://github.com/ainyheder/AI-nyheder/actions/runs/34815469159)
 stoppede før AI og mail: BiRefNet-trinnet sluttede efter 61 sekunder med

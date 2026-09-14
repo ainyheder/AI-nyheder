@@ -474,9 +474,9 @@ def ai_call(step, prompt, payload):
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
     model = crawler.hjerne_model(step) or config["model"]
     effort = crawler.DEEPSEEK_REASONING
-    # Den første liveprøve brugte alle 32K på kontrollens tænkning uden et svar.
-    # Giv kildekontrollen 64K; skriverens gennemførte svar brugte ca. 21K.
-    token_limit = 65536 if step == "nyhedsbrev_kontrol" else 32768
+    # Flash/high ramte også 32K uden synligt svar. Begge redaktionstrin får
+    # nu brugerens valgte loft på 100.000 tokens, inklusive tænkning.
+    token_limit = 100_000
     print("AI-trin " + step + ": valgt model " + model
           + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else "")
           + " · tokenloft: " + str(token_limit), flush=True)

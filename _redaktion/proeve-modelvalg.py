@@ -176,10 +176,10 @@ ok("E3 modelnavnet kommer udefra, ikke fra konstanten",
    sendt["body"]["model"] == "deepseek-v4-pro", sendt["body"]["model"])
 ok("E4 alle DeepSeek-opgaver bruger high-tænkning",
    sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "high", sendt["body"].get("thinking"))
-c.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, "deepseek-flash", reasoning_effort="max")
-ok("E4a nyhedsbrevet bevarer Flash og får high-tænkning",
+c.hjerne_kald("nyhedsbrev", "system", "bruger", 100_000, "deepseek-flash", reasoning_effort="max")
+ok("E4a nyhedsbrevet sender 100.000 tokens med Flash/high til API'et",
    sendt["body"]["model"] == "deepseek-flash" and sendt["body"].get("thinking") == {"type": "enabled"}
-   and sendt["body"].get("reasoning_effort") == "high" and sendt["body"]["max_tokens"] == 32768
+   and sendt["body"].get("reasoning_effort") == "high" and sendt["body"]["max_tokens"] == 100_000
    and sendt["body"].get("response_format") == {"type": "json_object"}
    and sendt["timeout"] == 600)
 c.kald_deepseek_model("system", "bruger", 50, "deepseek-flash")
@@ -190,9 +190,10 @@ ok("E4b almindelige kald får high og plads til tænkning uden at tvinge JSON-ob
    and sendt["timeout"] == 600)
 c_fallback = indlaes(udbyder="deepseek")
 c_fallback.hent_url = falsk_hent
-c_fallback.hjerne_kald("nyhedsbrev", "system", "bruger", 32768, reasoning_effort="max")
+c_fallback.hjerne_kald("nyhedsbrev", "system", "bruger", 100_000, reasoning_effort="max")
 ok("E4c den daglige DeepSeek-model bevarer også high ved fallback",
    sendt["body"].get("thinking") == {"type": "enabled"} and sendt["body"].get("reasoning_effort") == "high"
+   and sendt["body"]["max_tokens"] == 100_000
    and sendt["timeout"] == 600)
 # Batch-opgaver returnerer arrays, billedprompter kan returnere almindelig tekst.
 for content in ('[{"rubrik":"Ny model"}]', 'Et lyst objekt uden baggrund'):

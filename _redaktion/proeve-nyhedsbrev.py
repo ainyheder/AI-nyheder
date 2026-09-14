@@ -169,7 +169,7 @@ class NewsletterTests(unittest.TestCase):
         self.assertEqual(config["reasoning_effort"], "high")
         with patch.object(crawler, 'hjerne_model', return_value=None), \
              patch.object(crawler, 'hjerne_kald', return_value='{"ok": true}') as call:
-            for step, budget in (('nyhedsbrev', 32768), ('nyhedsbrev_kontrol', 65536)):
+            for step, budget in (('nyhedsbrev', 100_000), ('nyhedsbrev_kontrol', 100_000)):
                 self.assertEqual(n.ai_call(step, 'Prompt', {'original': SOURCE}), {'ok': True})
                 self.assertEqual(call.call_args.args[0], step)
                 self.assertEqual(call.call_args.args[3:5], (budget, 'deepseek-flash'))
