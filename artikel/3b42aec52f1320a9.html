@@ -49,26 +49,25 @@ li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
 footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
 footer a { color:var(--accent); }
 </style>
-<link rel="stylesheet" href="/assets/artikel.css">
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
 </head>
 <body>
 <a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
-<div class="topbar"><a class="brand" href="/"><img class="brand-logo" src="/assets/ai-logo.png" alt="" width="128" height="128" decoding="async">AI<em>-nyheder</em></a></div>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
 <main id="artikeltekst" tabindex="-1">
 <a class="article-back" href="/">← Tilbage til nyhederne</a>
-<div class="kicker">Hverdags-AI · Simon Willison AI · 2026-09-11</div>
+<div class="kicker">Hverdags-AI · Simon Willison AI · 11.09.2026 · 1 min. læsning</div>
 <h1>Datasette får sikkerhedsrettelser efter AI-audit</h1>
-<p class="manchet">Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.</p>
-<img class="top" src="/data/img/10c584e0244f3391.jpg" alt="To små, identiske hængelåse på en rustfri stålwire - den ene låst, den anden åben med nøglen siddende i.">
-<h2>To versioner udgivet</h2>
-<p>Simon Willison har udgivet <strong>Datasette 1.0a39</strong> og <strong>0.65.4</strong>. Den ene er til den aktuelle alpha-serie, den anden til den stabile 0.65.x-familie. Begge er sikkerhedsrettelser, som ifølge Willison bør installeres, hvis man kører en Datasette-instans offentligt på nettet – især hvis instansen blander både offentlige og private tabeller.</p>
-<h2>Audit med AI-modeller</h2>
-<p>Efter rapporter fra Sevban Dönmez gennemførte Alex Garcia og Simon Willison en omfattende audit af Datasette ved hjælp af <strong>Claude Fable 5.1</strong>, <strong>GPT-5.6</strong> og <strong>GPT-6 Astra</strong>. De brugte næsten en uge på at samarbejde om og gennemgå rettelserne. Ifølge Willison fandt modellerne meget subtile fejl, og sikkerhedsaudits med frontier-modeller skal fremover indgå i al udvikling.</p>
-<h2>To personer pr. fejl</h2>
-<p>Arbejdet blev delt i et privat repository. For de fleste fejl skrev den ene person automatiske tests, der fremhævede problemet, mens den anden implementerede rettelsen. På den måde havde to forskellige mennesker øje på hver sag – ud over de kodende agenter, som kørte forskellige modeller.</p>
+<div class="article-intro"><img class="top" src="/data/img/10c584e0244f3391.jpg" alt="To små, identiske hængelåse på en rustfri stålwire - den ene låst, den anden åben med nøglen siddende i."><p class="manchet">Simon Willison udgiver Datasette 1.0a39 og 0.65.4 med sikkerhedsrettelser. Fejl blev fundet via audit med flere AI-modeller, især ved offentlige instanser med både offentlige og private tabeller.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>To versioner udgivet</h2>
+<p>Simon Willison har udgivet <strong>Datasette 1.0a39</strong> og <strong>0.65.4</strong>. Den ene er til den aktuelle alpha-serie, den anden til den stabile 0.65.x-familie. Begge er sikkerhedsrettelser, som ifølge Willison bør installeres, hvis man kører en Datasette-instans offentligt på nettet – især hvis instansen blander både offentlige og private tabeller.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Audit med AI-modeller</h2>
+<p>Efter rapporter fra Sevban Dönmez gennemførte Alex Garcia og Simon Willison en omfattende audit af Datasette ved hjælp af <strong>Claude Fable 5.1</strong>, <strong>GPT-5.6</strong> og <strong>GPT-6 Astra</strong>. De brugte næsten en uge på at samarbejde om og gennemgå rettelserne. Ifølge Willison fandt modellerne meget subtile fejl, og sikkerhedsaudits med frontier-modeller skal fremover indgå i al udvikling.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>To personer pr. fejl</h2>
+<p>Arbejdet blev delt i et privat repository. For de fleste fejl skrev den ene person automatiske tests, der fremhævede problemet, mens den anden implementerede rettelsen. På den måde havde to forskellige mennesker øje på hver sag – ud over de kodende agenter, som kørte forskellige modeller.</p></section>
 
-<div class="boks"><strong>Detaljerne</strong><ul><li>Udgiver: Simon Willison.</li><li>Fejl rapporteret af Sevban Dönmez.</li><li>Audit og rettelser: Alex Garcia og Simon Willison.</li><li>Auditten brugte Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.</li><li>Rettelserne tog næsten en uge at samarbejde om og gennemgå.</li></ul></div>
-<div class="boks" style="border-left-color:#2e9e5b;"><strong>Hvad betyder det for dig?</strong><br>Kører du en offentlig Datasette-instans med både offentlige og private tabeller, bør du opdatere til en af de to nye versioner.</div>
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Udgiver: Simon Willison.</li><li>Fejl rapporteret af Sevban Dönmez.</li><li>Audit og rettelser: Alex Garcia og Simon Willison.</li><li>Auditten brugte Claude Fable 5.1, GPT-5.6 og GPT-6 Astra.</li><li>Rettelserne tog næsten en uge at samarbejde om og gennemgå.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Kører du en offentlig Datasette-instans med både offentlige og private tabeller, bør du opdatere til en af de to nye versioner.</div>
 <p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Sep/11/datasette-security/" rel="noopener">Simon Willison AI →</a></p>
 <a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
 <p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>

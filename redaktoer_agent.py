@@ -62,8 +62,12 @@ En lancering har kun én plads i hele udgaven, også når forskellige medier
 fremhæver fx licenser, nye funktioner eller udfasning af den gamle model.
 Sammenlign altid de valgte historier og anbefalingerne indbyrdes før aflevering.
 Henvisninger der blot handler om beslægtede emner må ikke blandes ind som fakta.
-Skeln mellem kildens påstand og uafhængig dokumentation. Ved kun et kort resumé:
-bestil en kort, tydeligt afgrænset artikel. Officielle produktløfter er påstande.
+Skeln mellem kildens påstand og uafhængig dokumentation. Et RSS-resumé alene
+er ikke nok til en færdig artikel. Find en læsbar kilde eller lad historien afvente.
+Skriveopgaven skal give en fængende, konkret overskrift, en letforståelig
+forklaring og korte afsnit med meningsfulde mellemoverskrifter. Forklar tekniske
+ord ved første brug. Brug relevante tal og faktabokse, når de hjælper læseren.
+Officielle produktløfter er påstande.
 Gentagelser af tidligere hovedhistorier kræver en konkret forklaring i
 nyt_siden_sidst. Skriv dansk. Aflever kun kendte id'er og brug ingen frie URL'er.
 """
@@ -79,6 +83,7 @@ Se også anbefalingerne og kandidatoversigten efter gentagelser af hovedhistorie
 En gentagelse blandt de udvalgte eller anbefalingerne skal afvises, selv når
 hvert enkelt artikeludkast er faktuelt korrekt.
 Producenters løfter skal tilskrives dem. Et RSS-resumé er ikke en fuld artikel.
+Afvis ufærdige tekster, pladsholdere, indforstået sprog og enslydende afsnit.
 Godkend ikke opdigtede fakta eller en væsentligt misvisende overskrift. Aflever
 godkend_udgave med godkendt og en kort liste over konkrete problemer.
 """

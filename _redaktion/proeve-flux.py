@@ -29,7 +29,8 @@ with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
     root = Path(folder)
     images = root / 'data' / 'img'
     images.mkdir(parents=True)
-    article = {'link':'https://example.com/launch','rubrik':'Ny model','kategori':'Lanceringer'}
+    article = {'link':'https://example.com/launch','rubrik':'Ny model','kategori':'Lanceringer',
+               'billedmotiv': 'The white six-loop OpenAI Blossom beside a microphone and two solid speech bubbles.'}
     archive = {'link':'https://example.com/archive','rubrik':'Arkiv'}
     name = c._billed_navn(archive['link'], 'v5')
     (images / name).write_bytes(b'old image')
@@ -52,6 +53,8 @@ with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
         c.lav_billeder([article,archive])
         assert api.call_count == 1
         assert '#171a21' in api.call_args.args[0] and '#d5ff5f' in api.call_args.args[0]
+        prompt = api.call_args.args[0]
+        assert prompt.index(article['billedmotiv']) < prompt.index('ART DIRECTION:'), 'Motiv og identitet skal komme før stilregler'
         assert article['billede'].endswith('.webp') and (root / article['billede']).is_file()
         assert (root / article['billede']).with_suffix('.jpg').is_file()
         c.lav_billeder([article,archive])
@@ -89,7 +92,7 @@ with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
     stack.enter_context(patch.object(c, 'hjerne_prompt', side_effect=lambda name,default:default))
     stack.enter_context(patch.object(c, '_gem_artikelbillede', side_effect=save))
     motif = stack.enter_context(patch.object(c, 'hjerne_kald', side_effect=lambda name,prompt,body,budget:
-        json.dumps([{'motiv': item['rubrik']} for item in json.loads(body)])))
+        json.dumps([{'nr': item['nr'], 'motiv': item['rubrik']} for item in json.loads(body)])))
     api = stack.enter_context(patch.object(c, 'lav_flux_billede', return_value=b'image'))
     assert len(c._billedartikler(articles, nu=nu)) == 6
     for count in (2, 2, 1):

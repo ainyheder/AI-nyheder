@@ -13,8 +13,9 @@ Testen til `soemandtorben@gmail.com` blev accepteret 13. september kl. 06.29
 dansk tid: Buttondowns API-historik viser HTTP 200 på
 `/v1/emails/em_2rxq0jae2w9kc9rjrx9tatnb54/send-draft`
 (request `api_req_41fyaptc6w9pva8y4w3xxmnqha`). Emne:
-“AI forstærker alt, du peger den mod – også støj”. Modtagelse i Gmail er ikke
-bekræftet. Ingen abonnentudsendelse blev startet af denne prøve.
+“AI forstærker alt, du peger den mod – også støj”. Torben har bekræftet
+modtagelsen og delt en PDF af brevet. Ingen abonnentudsendelse blev startet af
+denne prøve.
 
 GitHub-kørslen står fejlet, fordi klienten forsøgte at læse den tomme
 HTTP 200-kvittering som JSON efter afsendelsen. Klienten håndterer nu tomme
@@ -29,6 +30,46 @@ placerer virksomhedernes levedygtighed efter arrangementet uden kildebelæg.
 Sproget har også engelske rester og gentagne henvisninger til “originalen”.
 Dette er en teknisk gennemført prøve, ikke dokumentation for færdig
 redaktionel kvalitet. Det allerede afsendte prøvebrev er bevaret uændret.
+
+## Rettelser efter den modtagne prøve — 14. september 2026
+
+Den delte PDF viste lange tekstflader og to billedfelter uden indlæste billeder.
+Ved efterfølgende kontrol af samme mail i Outlook blev både telefonen og
+filmklapperen vist. Det bekræfter, at billederne kan indlæses i den modtagne
+mail; den præcise årsag til de manglende billeder i PDF'en er ikke fastslået.
+Ingen indstillinger for automatisk billedhentning eller sikkerhed er ændret.
+Torbens vurdering er, at selve motiverne er for generiske.
+
+Skrive- og kontrolprompten kræver nu en forståelig fortælling med konkrete
+eksempler, korte afsnit og indbydende overskrifter. Nødvendige fagord forklares;
+gentagne henvisninger til originalen, salgsprogram og navnelister skal ikke
+fylde brevet. Lokale forbehold og præcist ophav bevares ved usikre påstande.
+Lange afsnit og teksttunge tabeller afvises også af formatkontrollen, så et
+AI-godkendt brev stadig skal have en brugbar læserytme.
+
+Skabelonen viser normal brødtekstvægt, afsnitsfelter, korte fremhævninger og
+større fritlagte illustrationer i overskrifternes egne celler. Billeder presser
+dermed ikke brødteksten ind i en smal spalte. Ved logoet står en automatisk
+beregnet læsetid: cirka 200 synlige ord pr. minut, rundet op. Linkadresser tæller
+ikke med. Visningen er kontrolleret ved 320, 390 og 960 pixels uden vandret
+overløb; den faktiske næste mail skal stadig kontrolleres i mailprogrammet.
+
+Der planlægges normalt tre billeder fordelt over intro, midte og sidste del,
+og både billedbudget og rendering understøtter tre. Billedprompten sigter nu
+mod kompakte tredimensionelle scener med en tydelig forbindelse til historien,
+dybde, bred silhuet og farvekontrast. En løs telefon eller filmklapper opfylder
+ikke længere motivinstruksen alene. FLUX 2 Klein og BiRefNet er bevaret.
+Kontrollanten vurderer fortsat kun motivplanen, ikke de genererede billeder.
+
+42 nyhedsbrevstests og 11 Gmail-tests består lokalt, inklusive at tre billeder
+genereres én gang og alle tre kommer med i HTML'en. Testene bruger falske
+AI- og mailtjenester; de dokumenterer ikke den næste AI-teksts billedkvalitet.
+
+`nyhedsbrev-proever/design-2026-09-13.html` er en manuelt redigeret, usendt
+designprøve med to genbrugte billeder fra prøve 12. Den viser tekstretningen,
+læsetiden og layoutet; den er ikke output fra de nye prompts. En ny manuel
+Gmail-test skal efter push hente det levende feed, skrive med Flash/max,
+generere nye motiver og sende kun til Torbens Gmail.
 
 ## Tidligere test — prøve 10
 
@@ -185,7 +226,7 @@ at næste automatisk skrevne brev bliver godkendt.
 ## Fritlagte illustrationer
 
 `opsaetning/nyhedsbrev.json` har `billeder.aktiv` og `billeder.maks_pr_brev`
-(0–2). Skriveren foreslår højst to motiver i `illustrationer`; kontrollanten
+(0–3, normalt 3). Skriveren foreslår højst tre motiver i `illustrationer`; kontrollanten
 vurderer relevans og misvisende billedidéer sammen med teksten. Billederne
 genereres først efter tekstens godkendelse. Kontrollanten ser motivplanen,
 ikke de færdige billeder. Maskekontrollen er teknisk, ikke en semantisk kontrol.
@@ -404,3 +445,28 @@ Timerytmen er bevaret, men kørsler overlapper ikke. Max kan øge både
 svartid og tokenforbrug; faktisk køretid og redaktionel kvalitet skal vurderes
 på den første GitHub-kørsel efter push. Lokale kontrakttests bruger simulerede
 API-svar og dokumenterer ikke modellens faktiske kvalitet.
+
+### Billedmotiver og genkendelige selskaber
+
+Artikelrollen `motiv` læser nu rubrik, resumé og den færdige artikeltekst
+(op til 8.000 tegn). Den vælger scenens handling og den centrale aktør.
+OpenAI, Anthropic/Claude, Google/Gemini, DeepSeek og Meta har beskrevne
+kendetegn; en tilfældig omtale af et andet selskab skal ikke give et ekstra logo.
+Motivet skal forklare nyheden samtidig med, at mærket identificerer aktøren.
+De aktive artikelprompts ligger fortsat i `_redaktion/hjerner.json` og kan
+redigeres i kommandocentralen. De indbyggede standarder i `crawler.py` er
+opdateret tilsvarende. Nyhedsbrevets skrive-, kontrol- og billedprompts i
+`opsaetning/` følger samme princip.
+
+Begge billedforløb sender motivet før stilreglerne, i tråd med
+[FLUX' anbefaling om at placere motiv og handling først](https://docs.bfl.ai/guides/prompting_guide_flux2).
+Gemini beskrives med den firspidsede form og Googles fire farver efter
+[Googles opdatering af G-ikonet og Gemini-mærket](https://blog.google/company-news/inside-google/company-announcements/gradient-g-logo-design/).
+
+Artikelmotiver returneres med `nr`, så ændret svarrækkefølge ikke bytter dem
+mellem artikler. Tvetydige numre bruges ikke. Et motiv uden et gemt billede
+opdateres, når skriveinstruksen eller artikelteksten ændres. Eksisterende
+billeder genbruges fortsat, og billedbudgetterne er bevaret. FLUX og BiRefNet
+har samme opgaver som før; de lokale prøver køber eller sender intet.
+Form og motivrelevans i de faktiske billeder skal vurderes ved næste
+generering. Prompts alene garanterer ikke en pixelpræcis gengivelse af et logo.

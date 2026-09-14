@@ -84,6 +84,7 @@ jobs:
           python3 _redaktion/proeve-fritlaegning.py
           python3 _redaktion/proeve-redaktionsprompter.py
           python3 _redaktion/proeve-workflow.py
+          python3 _redaktion/proeve-udgivelse.py
           python3 _redaktion/proeve-uge.py
           python3 _redaktion/proeve-nyhedsbrev.py
 
@@ -120,6 +121,7 @@ jobs:
           git config user.name "ai-news-bot"
           git config user.email "actions@github.com"
           git add data feed.xml
+          git add _redaktion/udgivelsesdata.json
           git add uge.html feed-uge.xml 2>/dev/null || true
           # De statiske artikelsider + deres sitemap. UDEN denne linje bliver
           # siderne genereret i hver kørsel og smidt væk igen - så peger både

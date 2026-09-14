@@ -318,9 +318,9 @@ def illustration(image, preview=False):
     if not (preview and re.fullmatch(r'illustrationer/[a-z0-9-]+\.png', url)):
         nyhedsbrev_billeder.public_image_url(url)
     # Egen tabelcelle: billeder må ikke presse brødteksten ind i en smal spalte.
-    return ('<img class="editorial-image" width="176" height="132" src="' + html.escape(url, quote=True)
+    return ('<img class="editorial-image" width="224" height="168" src="' + html.escape(url, quote=True)
             + '" alt="' + html.escape(image['alt'], quote=True)
-            + '" style="display:block;width:176px;max-width:100%;height:auto;margin:0;border:0;background:transparent;color:#aebac6;font-size:12px;font-weight:400;line-height:1.4">')
+            + '" style="display:block;width:224px;max-width:100%;height:auto;margin:0;border:0;background:transparent;color:#aebac6;font-size:12px;font-weight:400;line-height:1.4">')
 
 
 def heading_block(title, number=None, image=None, *, preview=False):
@@ -329,7 +329,7 @@ def heading_block(title, number=None, image=None, *, preview=False):
     color = '#101609' if hero else '#f2f3f5'
     tag = 'h1' if hero else 'h2'
     marker = '' if hero else ('<div aria-hidden="true" style="font:400 12px/1.4 monospace;letter-spacing:2px;color:#d5ff5f;margin:0 0 8px">' + f'{number:02d}' + '</div>')
-    art = ('<td class="heading-art" width="176" align="center" valign="middle" style="width:176px;padding:14px 14px 14px 0">'
+    art = ('<td class="heading-art" width="224" align="center" valign="middle" style="width:224px;padding:14px 14px 14px 0">'
            + illustration(image, preview) + '</td>') if image else ''
     return ('<table role="presentation" class="heading-block" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + background
             + '" style="width:100%;margin:' + ('20px 0 24px' if hero else '30px 0 22px') + ';border:0;border-radius:12px;background:' + background + '"><tr>'
@@ -338,13 +338,20 @@ def heading_block(title, number=None, image=None, *, preview=False):
             + ';line-height:1.2;letter-spacing:-0.5px;font-weight:700;color:' + color + '!important;margin:0">' + inline(title) + '</' + tag + '></td>' + art + '</tr></table>')
 
 
+def reading_minutes(markdown):
+    # 200 ord/minut. URL'er og Markdown-markører er ikke ord, læseren ser.
+    visible = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', markdown)
+    words = len(re.findall(r"\b\w+(?:[’'-]\w+)*\b", visible))
+    return max(1, (words + 199) // 200)
+
+
 def render(draft, images=None, *, preview=False):
     body = draft["brev_markdown"].strip()
     if r"\n" in body or r"\r" in body:
         raise ValueError("Brevets linjeskift er dobbelt-escaped; layoutet kan ikke bygges")
     blocks = []
     first_paragraph = True
-    images = {item['placering']: item for item in (images or [])[:2]}
+    images = {item['placering']: item for item in (images or [])[:nyhedsbrev_billeder.MAX_IMAGES]}
     section_number = 0
     for block in re.split(r"\n\s*\n", body):
         lines = block.splitlines()
@@ -366,7 +373,7 @@ def render(draft, images=None, *, preview=False):
         else:
             lead = first_paragraph and len(block.split()) <= 80
             size = "18px" if lead else "17px"
-            color = "#f2f3f5" if lead else "#d8dde6"
+            color = "#e4e9f0" if lead else "#cbd2dc"
             blocks.append('<p class="body-copy" style="font-family:Arial,sans-serif;font-size:' + size + ';line-height:1.7;font-weight:400;color:' + color + '!important;margin:0 0 22px">' + inline(block.replace("\n", " ")) + '</p>')
             first_paragraph = False
     css = (ROOT / "opsaetning/nyhedsbrev-design.css").read_text()
@@ -374,7 +381,8 @@ def render(draft, images=None, *, preview=False):
     return ('<style>' + css + '</style><div style="display:none;max-height:0;overflow:hidden;mso-hide:all">'
             + html.escape(draft["preheader"]) + '</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0c0e12"><tr><td align="center" class="outer" style="padding:0">'
             '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:none;background:#0c0e12;border:0;font-family:Arial,sans-serif;font-weight:400">'
-            '<tr><td class="pad" style="padding:20px 16px"><div style="font-size:22px;letter-spacing:-0.7px;color:#f2f3f5!important"><b style="display:inline-block;padding:5px 7px;background:#d5ff5f;color:#0c0e12!important;border-radius:7px">AI</b> nyheder</div>'
+            '<tr><td class="pad" style="padding:20px 16px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="font-size:22px;letter-spacing:-0.7px;color:#f2f3f5!important"><b style="display:inline-block;padding:5px 7px;background:#d5ff5f;color:#0c0e12!important;border-radius:7px">AI</b> nyheder</td>'
+            '<td align="right" valign="middle" style="font:400 12px/1.4 Arial,sans-serif;white-space:nowrap;color:#aab3c0!important">Ca. ' + str(reading_minutes(body)) + ' min. læsning</td></tr></table>'
             + "".join(blocks) + '<p style="padding-top:8px;margin:24px 0 8px"><a href="https://ainyheder.com" style="display:inline-block;padding:12px 16px;background:#202833;border-radius:8px;color:#d5ff5f!important;font-size:15px;font-weight:700;text-decoration:none">Besøg AI-nyheder</a></p></td></tr></table></td></tr></table>')
 
 

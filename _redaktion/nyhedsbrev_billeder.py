@@ -1,4 +1,4 @@
-"""FLUX → BiRefNet → gennemsigtig PNG → Buttondown. Højst to motiver pr. brev."""
+"""FLUX → BiRefNet → gennemsigtig PNG → Buttondown. Højst tre motiver pr. brev."""
 import hashlib
 import io
 import json
@@ -12,12 +12,13 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = '@cf/black-forest-labs/flux-2-klein-4b'
+MAX_IMAGES = 3
 
 
 def validate_plan(draft):
     plan = draft.get('illustrationer', [])
-    if not isinstance(plan, list) or len(plan) > 2:
-        raise ValueError('Vælg højst to illustrationer til brevet')
+    if not isinstance(plan, list) or len(plan) > MAX_IMAGES:
+        raise ValueError('Vælg højst tre illustrationer til brevet')
     headings = re.findall(r'^## (.+)$', draft['brev_markdown'], re.M)
     positions = set()
     for item in plan:
@@ -79,7 +80,7 @@ def cutout_png(raw):
 def generate_png(motif):
     import crawler
     prompt = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()
-    raw = crawler.lav_flux_billede(prompt + '\n\nSUBJECT DATA:\n' + json.dumps({'motif': motif}, ensure_ascii=False))
+    raw = crawler.lav_flux_billede(crawler.billedprompt(motif, prompt))
     return cutout_png(raw)
 
 
@@ -89,9 +90,9 @@ def prepare(entry, config, api, save, generator=generate_png):
     settings = config.get('billeder', {})
     if not settings.get('aktiv', False) or not plan:
         return []
-    budget = settings.get('maks_pr_brev', 2)
-    if type(budget) is not int or not 0 <= budget <= 2:
-        raise ValueError('Billedbudgettet skal være 0, 1 eller 2')
+    budget = settings.get('maks_pr_brev', MAX_IMAGES)
+    if type(budget) is not int or not 0 <= budget <= MAX_IMAGES:
+        raise ValueError('Billedbudgettet skal være 0, 1, 2 eller 3')
     existing = entry.setdefault('billeder', {})
     ready = []
     style = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()

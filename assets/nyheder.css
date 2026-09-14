@@ -1,3 +1,4 @@
+@import url("laesning.css?v=1");
 /* AI-nyheder / 2026. Grafit, elektrisk lime og indhold med plads til at ånde. */
 :root {
   --ink:#f2f3f5;
@@ -1903,3 +1904,35 @@ body.reader-open {
   .feature-story h3,.news-row--pair h3 {font-size:1.1875rem;}
   .feature-story p,.news-row--pair p {font-size:1rem;}
 }
+
+/* Modelgenvejen ligger ved siden af de eksisterende mobilhandlinger. */
+.mobile-models{display:none}
+.reader-intro{display:flow-root;margin:20px 0}
+.reader-intro .reader-image{float:right;width:180px;height:160px;object-fit:contain;margin:0 0 12px 20px;border-radius:0}
+.reader-intro .reader-deck{margin:0;line-height:1.65}
+@media(max-width:650px){
+ .mobile-models{display:inline-flex;align-items:center;min-height:44px;color:var(--blue);font-size:.75rem;font-weight:650;text-decoration:none;white-space:nowrap}
+ .mobile-models[aria-current]{text-decoration:underline;text-underline-offset:5px}
+ .navigation .nav-models{display:none}
+ .masthead{gap:8px}
+ .header-actions{gap:6px}
+ .masthead .brand{font-size:1.3rem}
+ .masthead .brand img{width:30px;height:30px}
+ .masthead .search-toggle,.masthead .menu-button{width:36px}
+ .reader-intro .reader-image{width:120px;height:115px;margin:0 0 8px 12px}
+}
+@media(max-width:380px){
+ .masthead.wrap{width:calc(100% - 20px);gap:4px}
+ .masthead .brand{font-size:1.16rem;gap:3px}
+ .masthead .brand img{width:26px;height:26px}
+ .header-actions{gap:4px}
+ .mobile-models,.mobile-benchmarks{font-size:.6875rem}
+ .masthead .search-toggle,.masthead .menu-button{width:32px;min-width:32px}
+}
+
+/* Ét rigtigt link dækker hele kortet: tryk, tastatur og åbn i ny fane. */
+.lead-story,.feature-story,.news-row{position:relative}
+.story-link::after{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit}
+.lead-story:focus-within,.feature-story:focus-within,.news-row:focus-within{outline:2px solid var(--blue);outline-offset:3px}
+
+@media(max-width:380px){.reader-intro .reader-image{width:90px;height:90px}}

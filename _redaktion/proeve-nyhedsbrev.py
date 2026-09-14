@@ -85,6 +85,14 @@ def ai(step, prompt, payload):
 
 
 class NewsletterTests(unittest.TestCase):
+    def test_reading_time_counts_visible_copy_and_is_shown_once_at_top(self):
+        linked = '[ord](https://example.org/' + '/'.join(['long-path'] * 500) + ')'
+        self.assertEqual(n.reading_minutes('ord ' * 199 + linked), 1)
+        self.assertEqual(n.reading_minutes('ord ' * 200 + linked), 2)
+        rendered = n.render(draft())
+        self.assertEqual(rendered.count('min. læsning'), 1)
+        self.assertLess(rendered.index('min. læsning'), rendered.index('<h1 '))
+
     def test_dense_letter_is_returned_to_writer_before_it_can_be_sent(self):
         dense = draft()
         dense['brev_markdown'] += '\n\n## En tekstmur\n\n' + 'Lang sammenhængende forklaring. ' * 35
@@ -447,6 +455,34 @@ class NewsletterTests(unittest.TestCase):
         entry['draft']['illustrationer'][0]['motiv'] = 'Et ændret motiv'
         n.nyhedsbrev_billeder.prepare(entry, config, api, save, generator)
         self.assertEqual(generator.call_count, 1)
+
+    def test_three_images_are_generated_once_and_all_reach_the_email(self):
+        content = draft()
+        positions = ['intro', 'Eksempel 4', 'Eksempel 8']
+        content['illustrationer'] = [
+            {'placering': position, 'motiv': 'Scene ' + str(i), 'alt': 'AI-illustration: motiv ' + str(i)}
+            for i, position in enumerate(positions)]
+        n.validate_draft(content, SOURCE)
+        config = json.loads((n.ROOT / 'opsaetning/nyhedsbrev.json').read_text())
+        self.assertEqual(config['billeder']['maks_pr_brev'], 3)
+        entry = {'url': SOURCE['url'], 'draft': content}
+        api = Mock()
+        api.upload_image.side_effect = [{'id': 'im_' + str(i), 'image': f'https://example.org/image-{i}.png'} for i in range(3)]
+        generator = Mock(return_value=b'PNG')
+        images = n.nyhedsbrev_billeder.prepare(entry, config, api, lambda: None, generator)
+        self.assertEqual(len(images), 3)
+        self.assertEqual(n.nyhedsbrev_billeder.prepare(entry, config, api, lambda: None, generator), images)
+        self.assertEqual(generator.call_count, 3)
+        rendered = n.render(content, images)
+        self.assertEqual(rendered.count('<img '), 3)
+        for i in range(3):
+            self.assertIn(f'src="https://example.org/image-{i}.png"', rendered)
+        with self.assertRaisesRegex(ValueError, 'højst tre'):
+            n.validate_draft({**content, 'illustrationer': content['illustrationer'] + [
+                {'placering': 'Eksempel 9', 'motiv': 'En scene', 'alt': 'AI-illustration: scene.'}]}, SOURCE)
+        with self.assertRaisesRegex(ValueError, 'Billedbudgettet'):
+            n.nyhedsbrev_billeder.prepare(entry, {'billeder': {'aktiv': True, 'maks_pr_brev': 4}}, api, lambda: None, generator)
+        self.assertEqual(generator.call_count, 3)
 
     def test_image_failure_or_interruption_never_inserts_a_dark_original(self):
         entry = {'url': SOURCE['url'], 'draft': {**draft(), 'illustrationer': [

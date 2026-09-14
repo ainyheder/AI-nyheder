@@ -13,7 +13,7 @@
     return v && [2, VERSION].includes(v.version) && Object.keys(WEIGHTS).every(k => Number.isInteger(v[k]) && v[k] >= 0 && v[k] <= 5) ? v : null;
   }
   function timestamp(a) {
-    for (const value of [a.dato, a.eget_foerst_set, a.foerst_set]) {
+    for (const value of [a.historie_dato, a.dato, a.eget_foerst_set, a.foerst_set]) {
       if (!value) continue;
       if(typeof value!=="string" || !/^\d{4}-\d{2}-\d{2}(?:T|$)/.test(value))continue;
       const iso=value.includes("T")&&!/(Z|[+-]\d{2}:?\d{2})$/i.test(value)?value+"Z":value;
@@ -182,10 +182,26 @@
   }
   function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[x]); }
   function bold(value) { return escapeHtml(value).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>"); }
-  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,frontSelect,frontOrder,storyKeys,uniqueStories,editorEdition,safeUrl,escapeHtml};
+  function publishable(a) {
+    if (a?.publicering?.status && a.publicering.status !== 'godkendt') return false;
+    if (!a || a.kun_aktuel || !(a.publicering?.status === 'godkendt' || a.brief_instruks)) return false;
+    if (typeof a.rubrik !== 'string' || !a.rubrik.trim() || typeof a.resume_da !== 'string' || !a.resume_da.trim()) return false;
+    if (!Array.isArray(a.sektioner)) return false;
+    const sections = Array.isArray(a.sektioner) ? a.sektioner.filter(s => s && typeof s.overskrift === 'string' && s.overskrift.trim() && typeof s.tekst === 'string' && s.tekst.trim().length >= 40) : [];
+    if (sections.length !== a.sektioner.length || sections.length < 2 || sections.reduce((n,s) => n + s.tekst.trim().split(/\s+/).length, 0) < 80) return false;
+    const normalized = sections.map(s => s.tekst.toLowerCase().replace(/[^\p{L}\p{N}_]+/gu, ' ').trim());
+    if (new Set(normalized).size !== normalized.length) return false;
+    return !/(?:resum[eé](?:et)?|genfortælling(?:en)?|artikeltekst(?:en)?)\s+(?:mangler|kommer senere)|foreløbig kun et kort resum[eé]|\bTODO\b/i.test([a.rubrik,a.resume_da,a.brief,...sections.map(s => s.tekst)].join(' '));
+  }
+  function articleBody(a) {
+    const metrics = (a.noegletal || []).filter(n => n && typeof n.tal === 'string' && typeof n.label === 'string' && n.tal.trim() && n.label.trim()).slice(0,3);
+    const facts = metrics.length ? `<dl class="article-metrics">${metrics.map(n => `<div><dt>${escapeHtml(n.label)}</dt><dd>${escapeHtml(n.tal)}</dd></div>`).join('')}</dl>` : '';
+    return a.sektioner.map((s,i) => `<section class="article-section"><h2><span class="section-index" aria-hidden="true">${String(i+1).padStart(2,'0')}</span>${escapeHtml(s.overskrift)}</h2>${s.tekst.split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${bold(p)}</p>`).join('')}</section>${i===0?facts:''}`).join('');
+  }
+  const api={modelLaunch,assessment,timestamp,promotional,baseScore,score,rank,select,frontSelect,frontOrder,storyKeys,uniqueStories,editorEdition,safeUrl,escapeHtml,publishable,articleBody};
   if(typeof module!=="undefined" && module.exports) module.exports=api;
   root.AINews=api;
-  if(typeof document==="undefined") return;
+  if(typeof document==="undefined" || !document.getElementById('nyhedsliste')) return;
 
   const $=id=>document.getElementById(id);
   const categoryNames={"Alle":"Alle emner","Modeller":"Modellanceringer","Lanceringer":"Produkter","Hverdags-AI":"I hverdagen","Samfund & etik":"Samfund","Penge & marked":"Forretning","Politik & jura":"Politik","Forskning":"Forskning"};
@@ -296,14 +312,15 @@
     $("besked").textContent=message;$("besked").hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{$("besked").hidden=true;},3500);
   }
   function openArticle(a,fromHistory=false,trigger=null) {
+    if(!publishable(a)) return;
     if(a.kun_aktuel){location.assign(safeUrl(a.link));return;}
     if(!$("laeser").showModal){location.assign(articleUrl(a));return;}
     if(!$("laeser").open) lastFocus=trigger||document.activeElement;
     readerArticle=a;markRead(a);
     const sections=Array.isArray(a.sektioner)?a.sektioner:[];
-    const body=sections.length?sections.map(s=>`<section><h2>${escapeHtml(s.overskrift||"")}</h2>${String(s.tekst||"").split(/\n\n+/).map(p=>`<p>${bold(p)}</p>`).join("")}</section>`).join(""):(a.brief?String(a.brief).split(/\n\n+/).map(p=>`<p>${bold(p)}</p>`).join(""):'<p>Vi har foreløbig kun et kort resumé. Læs mere hos originalkilden nedenfor.</p>');
+    const body=articleBody(a);
     const local=safeUrl(a.side,true),sourceItems=sources(a),v=assessment(a);
-    $("artikelIndhold").innerHTML=`<div class="category">${escapeHtml(a.kategori||"AI-nyt")}</div><h1 id="laeserTitel" tabindex="-1">${escapeHtml(title(a))}</h1>${meta(a)}<p class="reader-deck">${escapeHtml(summary(a))}</p><div class="reader-actions">${local?`<a class="permalink" href="${escapeHtml(local)}">Åbn artikelsiden ↗</a>`:""}<button class="share-button" id="delArtikel">Kopiér link ↗</button><span id="delStatus" role="status" class="reader-note"></span></div>${a.billede?`<figure class="reader-figure">${image(a,"reader-image")}<figcaption>AI-genereret illustration</figcaption></figure>`:""}<div class="reader-body">${a.betydning?`<aside class="reader-callout"><h2>Hvad betyder det for dig?</h2><p>${bold(a.betydning)}</p></aside>`:""}${body}${(a.figurer||[]).filter(f=>safeUrl(f.url)).map(f=>`<figure class="reader-figure"><img src="${escapeHtml(safeUrl(f.url))}" alt="${escapeHtml(f.tekst||"")}" loading="lazy"><figcaption>${escapeHtml(f.tekst||"")} · ${escapeHtml(f.kilde||a.kilde||"")}</figcaption></figure>`).join("")}${a.detaljer?.length?`<details class="reader-callout"><summary>Flere detaljer</summary><ul>${a.detaljer.map(d=>`<li>${bold(d)}</li>`).join("")}</ul></details>`:""}${v?.forbehold?`<aside class="reader-callout"><h2>Det ved vi endnu ikke</h2><p>${escapeHtml(v.forbehold)}</p></aside>`:""}</div><section class="reader-source"><h2 class="category">Læs originalkilderne</h2><div class="source-links">${sourceItems.map(s=>`<a href="${escapeHtml(safeUrl(s.link))}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.kilde||source(s))} ↗</a>`).join("")}</div><p class="reader-note">Bearbejdet af AI med udgangspunkt i de viste kilder. Flere omtaler er ikke nødvendigvis uafhængige bekræftelser.</p></section>`;
+    $("artikelIndhold").innerHTML=`<div class="category">${escapeHtml(a.kategori||"AI-nyt")}</div><h1 id="laeserTitel" tabindex="-1">${escapeHtml(title(a))}</h1>${meta(a)}<div class="reader-intro">${image(a,"reader-image",false)}<p class="reader-deck">${escapeHtml(summary(a))}</p></div><div class="reader-actions">${local?`<a class="permalink" href="${escapeHtml(local)}">Åbn artikelsiden ↗</a>`:""}<button class="share-button" id="delArtikel">Kopiér link ↗</button><span id="delStatus" role="status" class="reader-note"></span></div><div class="reader-body">${body}${a.betydning?`<aside class="reader-callout"><h2>Derfor er det interessant</h2><p>${bold(a.betydning)}</p></aside>`:""}${(a.figurer||[]).filter(f=>safeUrl(f.url)).map(f=>`<figure class="reader-figure"><img src="${escapeHtml(safeUrl(f.url))}" alt="${escapeHtml(f.tekst||"")}" loading="lazy"><figcaption>${escapeHtml(f.tekst||"")} · ${escapeHtml(f.kilde||a.kilde||"")}</figcaption></figure>`).join("")}${a.detaljer?.length?`<details class="reader-callout"><summary>Flere detaljer</summary><ul>${a.detaljer.map(d=>`<li>${bold(d)}</li>`).join("")}</ul></details>`:""}${v?.forbehold?`<aside class="reader-callout"><h2>Det ved vi endnu ikke</h2><p>${escapeHtml(v.forbehold)}</p></aside>`:""}</div><section class="reader-source"><h2 class="category">Læs originalkilderne</h2><div class="source-links">${sourceItems.map(s=>`<a href="${escapeHtml(safeUrl(s.link))}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.kilde||source(s))} ↗</a>`).join("")}</div><p class="reader-note">Bearbejdet af AI med udgangspunkt i de viste kilder. Flere omtaler er ikke nødvendigvis uafhængige bekræftelser.</p></section>`;
     if(!fromHistory){history.pushState({aiArticle:a.link},"",`#a=${encodeURIComponent(a.link)}`);ownHistory=true;}
     document.title=`${title(a)} · AI-nyheder`;
     document.body.classList.add("reader-open");
@@ -337,7 +354,7 @@
     try{
       const data=await getJSON("data/articles.json");if(!Array.isArray(data.artikler))throw new Error("Ugyldigt nyhedsformat");
       const unique=new Map();
-      data.artikler.filter(a=>a&&typeof a==="object"&&safeUrl(a.link)).forEach(a=>{
+      data.artikler.filter(a=>a&&typeof a==="object"&&safeUrl(a.link)&&publishable(a)).forEach(a=>{
         a={...a,sektioner:Array.isArray(a.sektioner)?a.sektioner.filter(s=>s&&typeof s==="object"):[],detaljer:Array.isArray(a.detaljer)?a.detaljer:[],figurer:Array.isArray(a.figurer)?a.figurer.filter(f=>f&&typeof f==="object"):[]};
         if(a.kategori==="Benchmarks")a.kategori="Lanceringer";
         unique.set(a.link,a);

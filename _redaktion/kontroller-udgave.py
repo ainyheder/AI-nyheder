@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import redaktion
 import redaktoer_agent
+import udgivelse
 
 
 def kontroller(root):
@@ -15,12 +16,14 @@ def kontroller(root):
     data = json.loads((root / "data/articles.json").read_text(encoding="utf-8"))
     artikler = data.get("artikler")
     nu = redaktion.dato({"dato": data.get("opdateret")})
-    if not nu or not isinstance(artikler, list) or not artikler or data.get("antal") != len(artikler):
+    if not nu or not isinstance(artikler, list) or data.get("antal") != len(artikler):
         raise ValueError("Nyhedslisten er tom, har forkert antal eller mangler et gyldigt tidspunkt")
     links = [a.get("link") for a in artikler]
     if any(not isinstance(k, str) or not k.startswith(("https://", "http://")) for k in links) or len(set(links)) != len(links):
         raise ValueError("Nyhedslisten har ugyldige eller gentagne kildelinks")
     for a in artikler:
+        if not udgivelse.klar(a):
+            raise ValueError('En ufærdig eller ukontrolleret artikel er med i udgaven: ' + a.get('link', ''))
         for felt, moenster in (("side", r"artikel/[a-zA-Z0-9_-]+\.html"),
                                ("billede", r"data/img/[a-zA-Z0-9_.-]+")):
             sti = a.get(felt)

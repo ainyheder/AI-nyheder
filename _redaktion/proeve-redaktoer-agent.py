@@ -351,7 +351,7 @@ class AgentTests(unittest.TestCase):
     def test_skriveopgave_naar_skriver_og_kildekontrol(self):
         a = {**self.a, "sektioner": [{"overskrift": "Gammelt", "tekst": "Gammel tekst"}]}
         opgave = "Forklar den nye billedforståelse."
-        draft = {"rubrik": "Ny model med billeder", "resume": "Kort", "sektioner": [{"overskrift": "Nyt", "tekst": "Modellen kan læse billeder."}]}
+        draft = json.loads((Path(__file__).resolve().parent / "fixtures/faerdig-artikel.json").read_text())
         with patch.object(c, "API_KEY", "test"), patch.object(c, "GENKOER_ALT", False), patch.object(c, "GENKOER_FILTER", ""), patch.object(c, "kald_ai_brief", return_value=draft) as writer, patch.object(c, "redaktoer_tjek", return_value={"godkendt": True, "problemer": []}) as check:
             c.dybe_briefs([a], {a["link"]: opgave}, {a["link"]: KILDE})
         self.assertEqual(writer.call_args.kwargs["redaktoer_noter"], opgave)

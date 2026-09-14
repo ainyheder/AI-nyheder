@@ -66,6 +66,12 @@ model_lancering: bool; sand KUN når historiens hovednyhed er udgivelsen
 eller den bekræftede præsentation af en NY AI-model eller modelversion.
 Så er type altid lancering. Almindelige appfunktioner, plugins, hardware,
 kundecases, nedbrud, tests af eksisterende modeller og rygter er falsk.
+
+En artikel om en virksomheds brug af en eksisterende model er en kundecase,
+ikke en modeludgivelse. En ny AI-agent, app eller integration er heller ikke
+automatisk en ny model. Find den konkrete nye model/version i kildeteksten,
+og kontrollér at netop dens udgivelse er hovednyheden før model_lancering=true.
+
 ai_relevant: bool; falsk når AI kun nævnes perifert, fx en almindelig
 direktørudskiftning uden en konkret AI-nyhed.
 begrundelse: én konkret dansk sætning, max 160 tegn, om den nye indsigt eller
@@ -81,8 +87,8 @@ Returnér KUN JSON-array med præcis ét objekt pr. input, identificeret ved id:
 
 
 def dato(a):
-    """Kildens udgivelsestid. Opdagelsestid er kun reserve, aldrig en foryngelse."""
-    for value in (a.get("dato"), a.get("eget_foerst_set"), a.get("foerst_set")):
+    """Hændelsens kendte dato, ellers kildens udgivelsestid. Aldrig en foryngelse."""
+    for value in (a.get("historie_dato"), a.get("dato"), a.get("eget_foerst_set"), a.get("foerst_set")):
         try:
             d = value if isinstance(value, datetime) else datetime.fromisoformat(str(value).replace("Z", "+00:00"))
             return d.replace(tzinfo=timezone.utc) if d.tzinfo is None else d.astimezone(timezone.utc)
@@ -407,6 +413,6 @@ def behold_aktuelle(artikler, arkiv, feeds, nu=None):
         if (gammel.get("link") not in links and gammel.get("kilde") in tilladte
                 and not gammel.get("kun_aktuel") and d
                 and graense <= d <= nu):
-            resultat.append({**gammel, "dato": d})
+            resultat.append({**gammel, "dato": dato({'dato': gammel.get('dato')}) or d})
             links.add(gammel["link"])
     return resultat

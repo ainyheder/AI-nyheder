@@ -19,8 +19,7 @@ import redaktion as r
 fixtures = runpy.run_path(str(ROOT / "_redaktion/proeve-redaktoer-agent.py"))
 artikel, plan, tool, NU, KILDE = (fixtures[k] for k in ("artikel", "plan", "tool", "NU", "KILDE"))
 kontroller = runpy.run_path(str(ROOT / "_redaktion/kontroller-udgave.py"))["kontroller"]
-DRAFT = {"rubrik": "Nova kan læse billeder", "resume": "Ny model med billedforståelse.",
-         "sektioner": [{"overskrift": "Muligheder", "tekst": "Nova kan behandle tekst og billeder."}]}
+DRAFT = json.loads((ROOT / '_redaktion/fixtures/faerdig-artikel.json').read_text())
 
 
 class WorkflowTests(unittest.TestCase):
@@ -111,19 +110,22 @@ class WorkflowTests(unittest.TestCase):
             c.klassificer([a]); self.assertNotEqual(a["redaktion_instruks"], before["redaktion_instruks"])
 
     def test_cache_gemmer_instrukssignaturer(self):
-        cached = {**self.a, "brief": "Tekst", "brief_instruks": "skriver", "redaktion_instruks": "vurderer"}
+        cached = {**self.a, "brief": "Tekst", "brief_instruks": "skriver", "redaktion_instruks": "vurderer",
+                  "billedmotiv": "Et konkret motiv", "billedmotiv_instruks": "billedredaktoer"}
         fresh = {k: self.a[k] for k in ("titel", "link", "dato", "resume", "kilde")}
         with patch.object(c, "API_KEY", ""):
             c.omskriv_nye([fresh], {fresh["link"]: cached})
         self.assertEqual(fresh["brief_instruks"], "skriver")
         self.assertEqual(fresh["redaktion_instruks"], "vurderer")
+        self.assertEqual(fresh["billedmotiv_instruks"], "billedredaktoer")
 
     def test_billeder_foelger_agenten_selvom_pointlisten_er_uenig(self):
         self.assertEqual(r.udvaelg([self.a, self.b], nu=NU)[0], self.b)
         self.assertEqual(c._billedartikler([self.b, self.a], self.edition, NU), [self.a, self.b])
-        with patch.object(c, "API_KEY", "test"), patch.object(c, "MAX_BILLEDER_PR_KOERSEL", 1), patch.object(c, "hjerne_kald", return_value='[{"motiv":"A glass prism"}]') as ai:
+        with patch.object(c, "API_KEY", "test"), patch.object(c, "MAX_BILLEDER_PR_KOERSEL", 1), patch.object(c, "hjerne_kald", return_value='[{"nr":1,"motiv":"A solid ivory prism"}]') as ai:
             c.udfyld_billedmotiver([self.b, self.a], self.edition, NU)
         self.assertIn(self.a["rubrik"], ai.call_args.args[2])
+        self.assertEqual(self.a["billedmotiv"], "A solid ivory prism")
         self.assertNotIn("billedmotiv", self.b)
 
     def test_tom_topplan_forhindrer_ikke_billeder_til_resten_af_historierne(self):
@@ -140,7 +142,7 @@ class WorkflowTests(unittest.TestCase):
             with self.subTest(edition=edition):
                 self.assertEqual(c._billedartikler(articles, edition, NU), [fresh, old])
                 with patch.object(c, "API_KEY", "test"), patch.object(c, "MAX_BILLEDER_PR_KOERSEL", 1), \
-                     patch.object(c, "hjerne_kald", return_value='[{"motiv":"En solid genstand"}]') as writer:
+                     patch.object(c, "hjerne_kald", return_value='[{"nr":1,"motiv":"En solid genstand"}]') as writer:
                     c.udfyld_billedmotiver(copy.deepcopy(articles), edition, NU)
                 self.assertIn(fresh["rubrik"], writer.call_args.args[2])
                 self.assertNotIn(old["rubrik"], writer.call_args.args[2])
@@ -161,13 +163,15 @@ class WorkflowTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); (root / "data").mkdir(); (root / "artikel").mkdir()
             for name in ("feed.xml", "sitemap-artikler.xml"): (root/name).write_text("<root/>")
-            a = {**self.a, "side": "artikel/nova.html", "sektioner": [{"tekst": "Kildetekst"}]}
+            a = {**self.a, "side": "artikel/nova.html", "sektioner": copy.deepcopy(DRAFT["sektioner"]), "publicering": {"status": "godkendt"}}
             side = root / a["side"]; side.write_text("<!doctype html><p>Ny model</p>")
             data = {"artikler": [a], "antal": 1, "opdateret": NU.isoformat(), "forside": r.forside([a], NU)}
             def save(d): (root/"data/articles.json").write_text(json.dumps(d))
             save(data); self.assertEqual(kontroller(root), 1)
             # Forskellige links og rubrikker må ikke omgå udgivelseskontrollen.
             suno=json.loads((ROOT/'_redaktion/fixtures/suno-v6.json').read_text())
+            for x in suno:
+                x.update(sektioner=copy.deepcopy(DRAFT['sektioner']), publicering={'status':'godkendt'}, side='artikel/nova.html')
             duplicated={'artikler':suno,'antal':2,'opdateret':NU.isoformat(),
                         'forside':{'udvalgte':[s['link'] for s in suno],'raekkefoelge':[s['link'] for s in suno]}}
             save(duplicated)
@@ -205,7 +209,7 @@ class WorkflowTests(unittest.TestCase):
             self.assertEqual(ai.call_count, 2)
 
     def test_main_godkender_foer_billeder_og_bruger_samme_plan_til_overblik(self):
-        a = {**self.a, "dato": datetime.now(timezone.utc)}
+        a = {**self.a, "dato": datetime.now(timezone.utc), "sektioner": copy.deepcopy(DRAFT["sektioner"]), "publicering": {"status": "godkendt"}}
         feed = {"navn": "Test", "url": "https://example.com/feed"}
         events, planer = [], []
         def skriv(artikler, *_):
@@ -216,7 +220,7 @@ class WorkflowTests(unittest.TestCase):
         def modtag(navn):
             def trin(artikler, forside=None, *args):
                 self.assertEqual(artikler[0]["rubrik"], "Godkendt artikel")
-                if forside is not None: self.assertIs(forside, planer[0])
+                if forside is not None: self.assertEqual(forside["udvalgte"], planer[0]["udvalgte"])
                 events.append(navn)
             return trin
         with tempfile.TemporaryDirectory() as tmp, ExitStack() as stack:
@@ -235,7 +239,7 @@ class WorkflowTests(unittest.TestCase):
             stack.enter_context(patch.object(c, "_aktive_feeds", return_value=([feed], [])))
             stack.enter_context(patch.object(c, "crawl_feed", return_value=(feed, [a], None)))
             stack.enter_context(patch.object(c, "_laes_foerst_set_butik", return_value={}))
-            stack.enter_context(patch.object(c, "saml_dublet_historier", side_effect=lambda rows: rows))
+            stack.enter_context(patch.object(c, "saml_dublet_historier", side_effect=lambda rows, *args, **kwargs: rows))
             stack.enter_context(patch.object(c, "forbered_redaktoer", return_value={"opgaver": {}, "tekster": {}}))
             stack.enter_context(patch.object(c, "dybe_briefs", side_effect=skriv))
             stack.enter_context(patch.object(c, "afslut_redaktoer", side_effect=godkend))
