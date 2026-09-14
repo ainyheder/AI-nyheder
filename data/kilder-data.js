@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-14T14:23:23.445220+00:00",
- "artikler_i_alt": 52,
+ "opdateret": "2026-09-14T22:44:05.705048+00:00",
+ "artikler_i_alt": 60,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -191,7 +191,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 16,
+   "i_listen": 20,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -238,6 +238,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer AI-agenten Muse i USA"
+    },
+    {
+     "rubrik": "Superhuman køber notetakeren Fathom",
+     "dato": "2026-09-14T14:45:44",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+     "side": "artikel/d360e52aaf33362c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
+     "dato": "2026-09-14T20:44:14",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+     "side": "artikel/4dd932ed2d93b38f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Siri i iOS 27 er bygget på Gemini",
+     "dato": "2026-09-14T17:10:30",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
+     "side": "artikel/6b89f6f497d747e7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
+     "dato": "2026-09-14T21:51:02",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+     "side": "artikel/71b2c4f295f24956.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Obama: Demokraterne skal have klar AI-plan",
@@ -310,42 +346,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5a7a028d73b1f767.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
-     "dato": "2026-09-10T17:45:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-     "side": "artikel/755f7769e744d036.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Klager til britisk ombudsmand fordoblet efter ChatGPT",
-     "dato": "2026-09-10T14:53:50",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
-     "side": "artikel/9ee5bacda2ce8165.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Maven Robotics rejser 100 mio. dollar til lagerrobotter",
-     "dato": "2026-09-10T14:17:37",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
-     "side": "artikel/d40cabdd4c17da18.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Massachusetts kræver grøn strøm til datacentre",
-     "dato": "2026-09-09T21:43:34",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
-     "side": "artikel/7540bc2c5d65debf.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -355,7 +355,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     2
+     3
     ]
    ]
   },
@@ -369,7 +369,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 15,
+   "i_listen": 17,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -427,6 +427,24 @@ window.KILDER_STATUS = {
      "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
     },
     {
+     "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
+     "dato": "2026-09-14T17:21:42",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+     "side": "artikel/de5d887a67d769f9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
+     "dato": "2026-09-14T16:03:37",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+     "side": "artikel/1002fff4f0e057fb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
      "dato": "2026-09-14T09:00:00",
      "foerst_set": "2026-09-14T14:23:23",
@@ -473,7 +491,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic-rapport: Fire modeller hackede virksomheder",
-     "dato": "2026-09-11T12:09:14",
+     "dato": "2026-09-11T16:09:14",
      "foerst_set": "2026-09-11T17:51:30",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
      "side": "artikel/3409c3c31dfa6b1f.html",
@@ -482,7 +500,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Meta ændrer AI-forslag efter viral sag",
-     "dato": "2026-09-11T10:25:21",
+     "dato": "2026-09-11T14:25:21",
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
      "side": "artikel/e32e3658be55881a.html",
@@ -513,24 +531,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T13:45:53",
      "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
      "side": "artikel/3aead6fbd8135d1e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Suno v6 er trænet på licenseret musik",
-     "dato": "2026-09-09T21:42:19",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-     "side": "artikel/65f77bd4eb92a797.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
-     "dato": "2026-09-09T12:05:01",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
-     "side": "artikel/009e61788df2b717.html",
      "hvor": "forside",
      "under": ""
     }
@@ -569,8 +569,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 4,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Apple frigiver iOS 27 og Siri AI",
+     "dato": "",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+     "side": "",
+     "hvor": "under",
+     "under": "Siri i iOS 27 er bygget på Gemini"
+    },
     {
      "rubrik": "Anthropic-forsker stopper med AI-advarsel",
      "dato": "",
@@ -620,7 +629,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -642,9 +651,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 1,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
+     "dato": "2026-09-14T16:00:00",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+     "side": "artikel/4ca5a8ed3801eeb7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Topchefer vil bremse efter OpenAI-agenters hack",
+     "dato": "2026-09-14T17:54:22",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+     "side": "artikel/f4964ed02dfb9679.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "ON.energy: AI-centrenes UPS skal ud af bygningen",
      "dato": "2026-09-10T11:00:00",

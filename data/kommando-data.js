@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-14T14:39:52.840079+00:00",
+ "genereret": "2026-09-14T23:34:39.456945+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,29 +183,49 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-14T14:23:23.445220+00:00",
-  "antal": 52,
-  "med_billede": 50,
-  "paa_dansk": 52,
+  "opdateret": "2026-09-14T22:44:05.705048+00:00",
+  "antal": 60,
+  "med_billede": 56,
+  "paa_dansk": 60,
   "kategorier": {
-   "Samfund \u0026 etik": 10,
-   "Forskning": 5,
-   "Penge \u0026 marked": 11,
-   "Politik \u0026 jura": 9,
-   "Lanceringer": 7,
-   "Hverdags-AI": 10
+   "Forskning": 6,
+   "Penge \u0026 marked": 13,
+   "Samfund \u0026 etik": 13,
+   "Hverdags-AI": 11,
+   "Politik \u0026 jura": 10,
+   "Lanceringer": 7
   },
   "kilder": {
-   "The Verge AI": 15,
+   "MIT Tech Review AI": 3,
+   "TechCrunch AI": 20,
+   "The Verge AI": 17,
    "Simon Willison AI": 6,
    "Ars Technica AI": 4,
-   "TechCrunch AI": 16,
    "OpenAI Blog": 8,
    "Google Gemini": 1,
-   "Anthropic News": 1,
-   "MIT Tech Review AI": 1
+   "Anthropic News": 1
   },
   "udvalgte": [
+   {
+    "titel": "AI agents blew the whistle on their cheating colleagues",
+    "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
+    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+    "side": "artikel/4ca5a8ed3801eeb7.html",
+    "kategori": "Forskning",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-14T16:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
+    "rubrik": "Superhuman køber notetakeren Fathom",
+    "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+    "side": "artikel/d360e52aaf33362c.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-14T14:45:44+00:00",
+    "billede": "data/img/77a28be8ab2567b1.webp"
+   },
    {
     "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
     "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
@@ -215,29 +235,89 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-14T09:00:00-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Anthropic CEO outlines plan to slow AI development",
-    "rubrik": "Amodei vil bremse AI og lukke kontrollører ind",
-    "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-    "side": "artikel/82c98d9b6abfab67.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-12T19:34:44+00:00",
-    "billede": "data/img/ee6399f4fad763ad.webp"
-   },
-   {
-    "titel": "Generating running routes with GPT-6 Astra and ChatGPT Work",
-    "rubrik": "GPT-6 Astra tegner 5 km-rute på 27 minutter",
-    "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
-    "side": "artikel/0dd87f86ad01fab9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-12T23:56:42+00:00",
-    "billede": "data/img/7e2fd7d85ee1040b.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "AI agents blew the whistle on their cheating colleagues",
+    "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
+    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+    "side": "artikel/4ca5a8ed3801eeb7.html",
+    "kategori": "Forskning",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-14T16:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
+    "rubrik": "Superhuman køber notetakeren Fathom",
+    "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+    "side": "artikel/d360e52aaf33362c.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-14T14:45:44+00:00",
+    "billede": "data/img/77a28be8ab2567b1.webp"
+   },
+   {
+    "titel": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+    "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
+    "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+    "side": "artikel/4dd932ed2d93b38f.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-14T20:44:14+00:00",
+    "billede": "data/img/5bf1a7a8c4753569.webp"
+   },
+   {
+    "titel": "With iOS 27, I’m actually using Siri again",
+    "rubrik": "Siri i iOS 27 er bygget på Gemini",
+    "link": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
+    "side": "artikel/6b89f6f497d747e7.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-14T17:10:30+00:00",
+    "billede": "data/img/c043b87dd5d7cc77.webp"
+   },
+   {
+    "titel": "What execs and politicians are saying about slowing down AI development",
+    "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+    "side": "artikel/de5d887a67d769f9.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-14T17:21:42-04:00",
+    "billede": "data/img/251c39e28749931a.webp"
+   },
+   {
+    "titel": "The AI industry has taken a doomer turn. What now?",
+    "rubrik": "Topchefer vil bremse efter OpenAI-agenters hack",
+    "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+    "side": "artikel/f4964ed02dfb9679.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-14T17:54:22+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
+    "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
+    "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+    "side": "artikel/1002fff4f0e057fb.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-14T16:03:37-04:00",
+    "billede": "data/img/78726f0ea6bffb6f.webp"
+   },
+   {
+    "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+    "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
+    "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+    "side": "artikel/71b2c4f295f24956.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-14T21:51:02+00:00",
+    "billede": "data/img/26e115d7877a372e.webp"
+   },
    {
     "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
     "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
@@ -277,111 +357,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T23:56:42+00:00",
     "billede": "data/img/7e2fd7d85ee1040b.webp"
-   },
-   {
-    "titel": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
-    "rubrik": "OpenAI udskyder børsnotering: Altman siger nej til 2026",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-    "side": "artikel/9276271a0e3f9a08.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-12T17:16:28-04:00",
-    "billede": "data/img/191365ae11d4a90c.webp"
-   },
-   {
-    "titel": "Anthropic CEO outlines plan to slow AI development",
-    "rubrik": "Amodei vil bremse AI og lukke kontrollører ind",
-    "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-    "side": "artikel/82c98d9b6abfab67.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-12T19:34:44+00:00",
-    "billede": "data/img/ee6399f4fad763ad.webp"
-   },
-   {
-    "titel": "Trump is giving data centers a pass to pollute",
-    "rubrik": "Trump lemper miljøregler for AI-datacentre",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-    "side": "artikel/bcfea4b7b1860b3b.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-12T10:41:27-04:00",
-    "billede": "data/img/8b08c1ad14cc96a7.webp"
-   },
-   {
-    "titel": "OpenAI just wants to win",
-    "rubrik": "OpenAI hævder at have løst millionproblem",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-    "side": "artikel/41bb568b2b6096a5.html",
-    "kategori": "Forskning",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-12T07:00:00-04:00",
-    "billede": "data/img/3de0430d8c9d4e53.webp"
-   },
-   {
-    "titel": "OpenAI agents attacked RubyGems back in May",
-    "rubrik": "OpenAI-agenter bag hemmeligholdt RubyGems-angreb",
-    "link": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
-    "side": "artikel/5c41fc251a24d093.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-12T00:42:25+00:00",
-    "billede": "data/img/11cf33ac30928fec.webp"
-   },
-   {
-    "titel": "Cognition helps Devin test its own work with GPT‑6 Astra",
-    "rubrik": "GPT-6 Astra forbedrer Devins egen test",
-    "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-    "side": "artikel/bb3fa770c5976f2e.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-09-11T16:00:00+00:00",
-    "billede": "data/img/70bf1f3046a8dc5b.webp"
-   },
-   {
-    "titel": "So you want to use OpenRouter?",
-    "rubrik": "OpenRouter-routing giver samme model forskellig adfærd",
-    "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
-    "side": "artikel/156917f0352e1cf1.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-11T22:49:18+00:00",
-    "billede": "data/img/67e5cad3e217d817.webp"
-   },
-   {
-    "titel": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-    "rubrik": "Mecka AI nærmer sig 500 mio. dollars",
-    "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-    "side": "artikel/c923ead07513500b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-11T22:58:17+00:00",
-    "billede": "data/img/a262c77165ed82ef.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-14T14:23:23.445220+00:00",
+  "opdateret": "2026-09-14T22:44:05.705048+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-   "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-   "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+   "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+   "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+   "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-   "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
-   "https://simonwillison.net/2026/Sep/12/astra-running-routes/"
+   "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+   "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-14T14:23:22.629640+00:00",
+  "opdateret": "2026-09-14T22:44:04.965879+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -599,8 +599,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-14T14:23:23.445220+00:00",
-  "artikler_i_alt": 52,
+  "opdateret": "2026-09-14T22:44:05.705048+00:00",
+  "artikler_i_alt": 60,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -780,7 +780,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 16,
+    "i_listen": 20,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -829,6 +829,42 @@ window.KOMMANDO_DATA = {
       "under": "Meta lancerer AI-agenten Muse i USA"
      },
      {
+      "rubrik": "Superhuman køber notetakeren Fathom",
+      "dato": "2026-09-14T14:45:44",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
+      "side": "artikel/d360e52aaf33362c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
+      "dato": "2026-09-14T20:44:14",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+      "side": "artikel/4dd932ed2d93b38f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Siri i iOS 27 er bygget på Gemini",
+      "dato": "2026-09-14T17:10:30",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
+      "side": "artikel/6b89f6f497d747e7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
+      "dato": "2026-09-14T21:51:02",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "side": "artikel/71b2c4f295f24956.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Obama: Demokraterne skal have klar AI-plan",
       "dato": "2026-09-13T16:30:00",
       "foerst_set": "2026-09-13T18:19:53",
@@ -854,42 +890,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c923ead07513500b.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Moonshot AI sigter mod 2 milliarder dollars",
-      "dato": "2026-09-11T19:35:54",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-      "side": "artikel/b3b5bc18a7beccd4.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "25 Fields-vindere skriver brev mod AI-laboratorier",
-      "dato": "2026-09-11T20:57:36",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-      "side": "artikel/d4514d27691b0738.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Garry Tan: Lad åbne laboratorier destillere frit",
-      "dato": "2026-09-11T20:59:47",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "side": "artikel/e2480aa4c979ae2f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Fidji Simo til Nscale-bestyrelse før mulig børsnotering",
-      "dato": "2026-09-11T16:46:25",
-      "foerst_set": "2026-09-11T17:51:30",
-      "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "side": "artikel/3eb10fd44cbe5bc1.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -903,7 +903,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 15,
+    "i_listen": 17,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -961,6 +961,24 @@ window.KOMMANDO_DATA = {
       "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
      },
      {
+      "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
+      "dato": "2026-09-14T17:21:42",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+      "side": "artikel/de5d887a67d769f9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
+      "dato": "2026-09-14T16:03:37",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+      "side": "artikel/1002fff4f0e057fb.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
       "dato": "2026-09-14T09:00:00",
       "foerst_set": "2026-09-14T14:23:23",
@@ -995,24 +1013,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/bcfea4b7b1860b3b.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI hævder at have løst millionproblem",
-      "dato": "2026-09-12T07:00:00",
-      "foerst_set": "2026-09-12T11:30:33",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "side": "artikel/41bb568b2b6096a5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-rapport: Fire modeller hackede virksomheder",
-      "dato": "2026-09-11T12:09:14",
-      "foerst_set": "2026-09-11T17:51:30",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
-      "side": "artikel/3409c3c31dfa6b1f.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1027,8 +1027,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 4,
-    "som_ekstra": 1,
+    "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "Apple frigiver iOS 27 og Siri AI",
+      "dato": "",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+      "side": "",
+      "hvor": "under",
+      "under": "Siri i iOS 27 er bygget på Gemini"
+     },
      {
       "rubrik": "Anthropic-forsker stopper med AI-advarsel",
       "dato": "",
@@ -1086,9 +1095,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 1,
+    "i_listen": 3,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
+      "dato": "2026-09-14T16:00:00",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+      "side": "artikel/4ca5a8ed3801eeb7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Topchefer vil bremse efter OpenAI-agenters hack",
+      "dato": "2026-09-14T17:54:22",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+      "side": "artikel/f4964ed02dfb9679.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "ON.energy: AI-centrenes UPS skal ud af bygningen",
       "dato": "2026-09-10T11:00:00",
@@ -1288,12 +1315,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-14T14:39:44.630534+00:00",
+  "opdateret": "2026-09-14T23:34:34.806540+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 74,
-  "sidevisninger_i_alt": 308,
+  "besoeg_i_alt": 75,
+  "sidevisninger_i_alt": 309,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1450,8 +1477,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 73,
-    "visninger": 283
+    "besoeg": 74,
+    "visninger": 284
    },
    {
     "sti": "/uge.html",
@@ -1502,7 +1529,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 72
+    "besoeg": 73
    },
    {
     "fra": "m.facebook.com",
