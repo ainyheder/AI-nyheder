@@ -480,7 +480,7 @@ def ai_call(step, prompt, payload):
     print("AI-trin " + step + ": valgt model " + model
           + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else "")
           + " · tokenloft: " + str(token_limit), flush=True)
-    # Samme Flash-model, med maksimal tænkning til den lange tekst/kildekontrol.
+    # Samme Flash-model, med fælles high-tænkning til tekst og kildekontrol.
     # Tokenloftet omfatter også tænkning. Rå reasoning_content gemmes ikke.
     return crawler.parse_json_objekt(crawler.hjerne_kald(step, prompt, json.dumps(payload, ensure_ascii=False),
                                                        token_limit, config["model"], reasoning_effort=effort))

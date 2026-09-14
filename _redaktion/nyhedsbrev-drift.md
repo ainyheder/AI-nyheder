@@ -1,3 +1,5 @@
+Aktuel indstilling fra 14. september 2026: Alle tekstopgaver bruger `deepseek-flash` med `reasoning_effort: high`. Historiske kørsler nedenfor kan omtale max.
+
 # Nyhedsbrev — drift
 
 ## Aktuel teststatus — prøve 12
@@ -421,13 +423,13 @@ Officiel RSS-adresse: https://support.substack.com/hc/en-us/articles/36003823939
 Curls genforsøg: https://curl.se/docs/manpage.html#--retry
 
 
-### Fælles max reasoning og en aktuel forside
+### Fælles high reasoning og en aktuel forside
 
 Alle tre DeepSeek-transportveje bruger `_redaktion/ai_indstillinger.py`:
-`thinking: enabled`, `reasoning_effort: max`, mindst 32.768 tokens til
+`thinking: enabled`, `reasoning_effort: high`, mindst 32.768 tokens til
 samlet tænkning/svar og 600 sekunders timeout. Det gælder også batchvurdering,
 omskrivning, billedmotiver, ugens overblik og agentens research/slutkontrol.
-Nyhedsbrevets tidligere effort-felt kan ikke sænke den fælles max-politik.
+Alle transportveje følger den fælles high-politik, også ved et gammelt max-argument.
 Arrays og almindelig tekst er stadig tilladt i opgaver, som kræver dem.
 Kun nyhedsbrevets eksplicitte objektkontrakt tvinger JSON-objekter.
 Tool-samtalen viderefører reasoning_content til næste værktøjsrunde i

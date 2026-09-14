@@ -327,7 +327,7 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(body["model"], "deepseek-flash")
         self.assertEqual(body["tools"], agent.TOOLS)
         self.assertEqual(body["thinking"], {"type": "enabled"})
-        self.assertEqual(body["reasoning_effort"], "max")
+        self.assertEqual(body["reasoning_effort"], "high")
         self.assertGreaterEqual(body["max_tokens"], 32768)
         self.assertEqual(urlopen.call_args.kwargs["timeout"], 600)
         self.assertEqual(result["tool_calls"][0]["function"]["name"], "laes_kilde")

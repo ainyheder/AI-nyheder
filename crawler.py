@@ -5815,7 +5815,7 @@ def main() -> None:
     if not API_KEY:
         print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
     elif UDBYDER == "deepseek":
-        print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (reasoning: max)")
+        print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (reasoning: {DEEPSEEK_REASONING})")
     else:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     print(f"🎨 Valgt billedmodel: {special_model('billedgenerator', BILLED_MODEL, 'gemini')}")

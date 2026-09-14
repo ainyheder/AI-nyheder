@@ -162,18 +162,18 @@ class NewsletterTests(unittest.TestCase):
                 crawler.hjerne_kald('nyhedsbrev', 'JSON', 'data', 32768, reasoning_effort='max')
             fallback.assert_not_called()
 
-    def test_writer_and_reviewer_use_flash_with_max_from_settings(self):
+    def test_writer_and_reviewer_use_flash_with_high_from_settings(self):
         import crawler
         config = json.loads((n.ROOT / "opsaetning/nyhedsbrev.json").read_text())
         self.assertEqual(config["model"], "deepseek-flash")
-        self.assertEqual(config["reasoning_effort"], "max")
+        self.assertEqual(config["reasoning_effort"], "high")
         with patch.object(crawler, 'hjerne_model', return_value=None), \
              patch.object(crawler, 'hjerne_kald', return_value='{"ok": true}') as call:
             for step, budget in (('nyhedsbrev', 32768), ('nyhedsbrev_kontrol', 65536)):
                 self.assertEqual(n.ai_call(step, 'Prompt', {'original': SOURCE}), {'ok': True})
                 self.assertEqual(call.call_args.args[0], step)
                 self.assertEqual(call.call_args.args[3:5], (budget, 'deepseek-flash'))
-                self.assertEqual(call.call_args.kwargs, {'reasoning_effort': 'max'})
+                self.assertEqual(call.call_args.kwargs, {'reasoning_effort': 'high'})
 
     def run_flow(self, store, api, items=None, writer=ai):
         n.process(items if items is not None else [SOURCE], CONFIG, store, api, writer)
