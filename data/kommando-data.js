@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-13T23:36:06.386508+00:00",
+ "genereret": "2026-09-14T01:42:22.371638+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -160,21 +160,21 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved tyndt materiale: en kort artikel.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n",
  "artikler": {
-  "opdateret": "2026-09-13T23:27:07.265895+00:00",
-  "antal": 153,
+  "opdateret": "2026-09-14T01:33:22.429714+00:00",
+  "antal": 152,
   "med_billede": 100,
-  "paa_dansk": 153,
+  "paa_dansk": 152,
   "kategorier": {
-   "Lanceringer": 33,
+   "Lanceringer": 32,
    "Penge \u0026 marked": 19,
-   "Politik \u0026 jura": 20,
-   "Samfund \u0026 etik": 25,
+   "Politik \u0026 jura": 21,
+   "Samfund \u0026 etik": 24,
    "Hverdags-AI": 26,
    "Forskning": 30
   },
   "kilder": {
    "OpenAI Blog": 19,
-   "The Verge AI": 20,
+   "The Verge AI": 21,
    "Ars Technica AI": 12,
    "TechCrunch AI": 33,
    "Simon Willison AI": 13,
@@ -183,8 +183,8 @@ window.KOMMANDO_DATA = {
    "MIT Tech Review AI": 6,
    "Mistral AI": 4,
    "Google DeepMind": 8,
-   "Anthropic News": 7,
-   "xAI News": 11
+   "Anthropic News": 6,
+   "xAI News": 10
   },
   "udvalgte": [
    {
@@ -219,6 +219,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Trump and Mike Johnson think the AI industry is overreacting",
+    "rubrik": "Trump og Johnson afviser Amodeis AI-pause",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+    "side": "artikel/1d273e458a4640c0.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-13T15:41:48-04:00",
+    "billede": ""
+   },
    {
     "titel": "What’s behind the AI industry’s latest warnings of doom?",
     "rubrik": "Anthropic-forsker siger op i protest mod AI-risiko",
@@ -326,21 +336,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-09-12T00:42:25+00:00",
     "billede": "data/img/11cf33ac30928fec.webp"
-   },
-   {
-    "titel": "So you want to use OpenRouter?",
-    "rubrik": "OpenRouter-endpoint kan give forskellig modeladfærd",
-    "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
-    "side": "artikel/156917f0352e1cf1.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-11T22:49:18+00:00",
-    "billede": "data/img/67e5cad3e217d817.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-13T23:27:07.265895+00:00",
+  "opdateret": "2026-09-14T01:33:22.429714+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -360,7 +360,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-13T23:27:06.834129+00:00",
+  "opdateret": "2026-09-14T01:33:21.705223+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -578,8 +578,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-13T23:27:07.265895+00:00",
-  "artikler_i_alt": 153,
+  "opdateret": "2026-09-14T01:33:22.429714+00:00",
+  "artikler_i_alt": 152,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -591,7 +591,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 13,
-    "i_listen": 7,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -647,15 +647,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropic forklarer Claudes tekstvandmærke",
-      "dato": "2026-08-14T00:00:00",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://www.anthropic.com/news/claude-text-watermark",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -682,19 +673,19 @@ window.KOMMANDO_DATA = {
       "under": "Mistral rejser rekordstore tre milliarder euro"
      },
      {
-      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
-      "dato": "2026-09-10T10:42:55",
+      "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
+      "dato": "2026-09-09T12:00:46",
       "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://mistral.ai/news/mistral-x-cloudera/",
+      "link": "https://mistral.ai/news/legacy-code-modernization/",
       "side": "",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
-      "dato": "2026-09-09T12:00:46",
+      "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
+      "dato": "2026-09-10T10:42:55",
       "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://mistral.ai/news/legacy-code-modernization/",
+      "link": "https://mistral.ai/news/mistral-x-cloudera/",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -852,7 +843,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 11,
+    "i_listen": 10,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -932,15 +923,6 @@ window.KOMMANDO_DATA = {
       "dato": "2026-08-19T00:00:00",
       "foerst_set": "2026-09-11T14:38:09",
       "link": "https://x.ai/news/grok-4-6-amazon-bedrock",
-      "side": "",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok 4.6 kommer ind i GitHub Copilot",
-      "dato": "2026-08-14T00:00:00",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://x.ai/news/grok-4-6-github-copilot",
       "side": "",
       "hvor": "forside",
       "under": ""
@@ -1165,20 +1147,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
-      "dato": "2026-09-10T00:56:41",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
-      "side": "artikel/180b6c6ca2d33492.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
       "dato": "2026-09-11T03:27:16",
       "foerst_set": "2026-09-11T14:38:09",
       "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
       "side": "artikel/3b42aec52f1320a9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
+      "dato": "2026-09-10T00:56:41",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
+      "side": "artikel/180b6c6ca2d33492.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1335,18 +1317,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 20,
+    "i_listen": 21,
     "som_ekstra": 5,
     "seneste": [
-     {
-      "rubrik": "Trump og Johnson mener, at AI-industrien overreagerer",
-      "dato": "",
-      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin"
-     },
      {
       "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
       "dato": "",
@@ -1400,6 +1373,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
+     },
+     {
+      "rubrik": "Trump og Johnson afviser Amodeis AI-pause",
+      "dato": "2026-09-13T15:41:48",
+      "foerst_set": "2026-09-13T21:06:13",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "side": "artikel/1d273e458a4640c0.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Sam Altman afviser OpenAI-børsnotering i 2026",
@@ -1918,7 +1900,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-13T23:36:02.173076+00:00",
+  "opdateret": "2026-09-14T01:42:16.388521+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
@@ -1926,11 +1908,6 @@ window.KOMMANDO_DATA = {
   "sidevisninger_i_alt": 271,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-15",
-    "besoeg": 10,
-    "visninger": 10
-   },
    {
     "dato": "2026-08-16",
     "besoeg": 0,
@@ -2075,6 +2052,11 @@ window.KOMMANDO_DATA = {
     "dato": "2026-09-13",
     "besoeg": 20,
     "visninger": 80
+   },
+   {
+    "dato": "2026-09-14",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [

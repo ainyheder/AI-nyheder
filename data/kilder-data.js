@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-13T23:27:07.265895+00:00",
- "artikler_i_alt": 153,
+ "opdateret": "2026-09-14T01:33:22.429714+00:00",
+ "artikler_i_alt": 152,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 13,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -68,15 +68,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic forklarer Claudes tekstvandmærke",
-     "dato": "2026-08-14T00:00:00",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://www.anthropic.com/news/claude-text-watermark",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -104,19 +95,19 @@ window.KILDER_STATUS = {
      "under": "Mistral rejser rekordstore tre milliarder euro"
     },
     {
-     "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
-     "dato": "2026-09-10T10:42:55",
+     "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
+     "dato": "2026-09-09T12:00:46",
      "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://mistral.ai/news/mistral-x-cloudera/",
+     "link": "https://mistral.ai/news/legacy-code-modernization/",
      "side": "",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Mistral flytter 40.000 linjer Fortran for elselskab",
-     "dato": "2026-09-09T12:00:46",
+     "rubrik": "Cloudera og Mistral laver AI til regulerede brancher",
+     "dato": "2026-09-10T10:42:55",
      "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://mistral.ai/news/legacy-code-modernization/",
+     "link": "https://mistral.ai/news/mistral-x-cloudera/",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -286,7 +277,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 11,
+   "i_listen": 10,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -366,15 +357,6 @@ window.KILDER_STATUS = {
      "dato": "2026-08-19T00:00:00",
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://x.ai/news/grok-4-6-amazon-bedrock",
-     "side": "",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok 4.6 kommer ind i GitHub Copilot",
-     "dato": "2026-08-14T00:00:00",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://x.ai/news/grok-4-6-github-copilot",
      "side": "",
      "hvor": "forside",
      "under": ""
@@ -601,20 +583,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
-     "dato": "2026-09-10T00:56:41",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
-     "side": "artikel/180b6c6ca2d33492.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
      "dato": "2026-09-11T03:27:16",
      "foerst_set": "2026-09-11T14:38:09",
      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
      "side": "artikel/3b42aec52f1320a9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
+     "dato": "2026-09-10T00:56:41",
+     "foerst_set": "2026-09-11T14:38:09",
+     "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
+     "side": "artikel/180b6c6ca2d33492.html",
      "hvor": "forside",
      "under": ""
     },
@@ -933,18 +915,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "Trump og Johnson mener, at AI-industrien overreagerer",
-     "dato": "",
-     "foerst_set": "2026-09-13T21:06:13.791167+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-chef Amodei vil bremse AI-udviklingen i tre trin"
-    },
     {
      "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
      "dato": "",
@@ -998,6 +971,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google offentliggør AlphaGenome Atlas for hele genomet"
+    },
+    {
+     "rubrik": "Trump og Johnson afviser Amodeis AI-pause",
+     "dato": "2026-09-13T15:41:48",
+     "foerst_set": "2026-09-13T21:06:13",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+     "side": "artikel/1d273e458a4640c0.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sam Altman afviser OpenAI-børsnotering i 2026",
@@ -1095,15 +1077,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-10T13:45:53",
      "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
      "side": "artikel/3aead6fbd8135d1e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Suno ruller v6 ud med tre modeller",
-     "dato": "2026-09-09T21:42:19",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-     "side": "artikel/65f77bd4eb92a797.html",
      "hvor": "forside",
      "under": ""
     }
