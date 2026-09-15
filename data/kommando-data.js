@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-14T23:34:39.456945+00:00",
+ "genereret": "2026-09-15T02:15:51.582462+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,16 +183,16 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-14T22:44:05.705048+00:00",
-  "antal": 60,
-  "med_billede": 56,
-  "paa_dansk": 60,
+  "opdateret": "2026-09-15T01:52:19.071835+00:00",
+  "antal": 62,
+  "med_billede": 55,
+  "paa_dansk": 62,
   "kategorier": {
    "Forskning": 6,
-   "Penge \u0026 marked": 13,
+   "Penge \u0026 marked": 15,
    "Samfund \u0026 etik": 13,
-   "Hverdags-AI": 11,
    "Politik \u0026 jura": 10,
+   "Hverdags-AI": 11,
    "Lanceringer": 7
   },
   "kilder": {
@@ -200,7 +200,7 @@ window.KOMMANDO_DATA = {
    "TechCrunch AI": 20,
    "The Verge AI": 17,
    "Simon Willison AI": 6,
-   "Ars Technica AI": 4,
+   "Ars Technica AI": 6,
    "OpenAI Blog": 8,
    "Google Gemini": 1,
    "Anthropic News": 1
@@ -239,6 +239,16 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
+    "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+    "side": "artikel/c9c7e7aae9376f42.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-14T18:59:41-04:00",
+    "billede": ""
+   },
+   {
     "titel": "AI agents blew the whistle on their cheating colleagues",
     "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
     "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
@@ -267,6 +277,26 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-14T20:44:14+00:00",
     "billede": "data/img/5bf1a7a8c4753569.webp"
+   },
+   {
+    "titel": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
+    "rubrik": "Musk dropper Apple – men ikke OpenAI",
+    "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+    "side": "artikel/8f91eecbb9dc32c2.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-14T19:45:13+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
+    "rubrik": "Wang Xingxing styrer Unitree ned til skruerne",
+    "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+    "side": "artikel/c884bb2181557996.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-14T19:38:46+00:00",
+    "billede": ""
    },
    {
     "titel": "With iOS 27, I’m actually using Siri again",
@@ -299,16 +329,6 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Jensen Huang puts Trump on speakerphone onstage to announce robots won’t take over the world",
-    "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
-    "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
-    "side": "artikel/1002fff4f0e057fb.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-14T16:03:37-04:00",
-    "billede": "data/img/78726f0ea6bffb6f.webp"
-   },
-   {
     "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
     "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
     "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
@@ -337,31 +357,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-13T15:41:48-04:00",
     "billede": "data/img/984a20159ac8b04f.webp"
-   },
-   {
-    "titel": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
-    "rubrik": "Obama: Demokraterne skal have klar AI-plan",
-    "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-    "side": "artikel/6b54256d4afbc2dd.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-13T16:30:00+00:00",
-    "billede": "data/img/89d63a6b9f834426.webp"
-   },
-   {
-    "titel": "Generating running routes with GPT-6 Astra and ChatGPT Work",
-    "rubrik": "GPT-6 Astra tegner 5 km-rute på 27 minutter",
-    "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
-    "side": "artikel/0dd87f86ad01fab9.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-12T23:56:42+00:00",
-    "billede": "data/img/7e2fd7d85ee1040b.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-14T22:44:05.705048+00:00",
+  "opdateret": "2026-09-15T01:52:19.071835+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -381,7 +381,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-14T22:44:04.965879+00:00",
+  "opdateret": "2026-09-15T01:52:18.335538+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -599,8 +599,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-14T22:44:05.705048+00:00",
-  "artikler_i_alt": 60,
+  "opdateret": "2026-09-15T01:52:19.071835+00:00",
+  "artikler_i_alt": 62,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -781,8 +781,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 20,
-    "som_ekstra": 5,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Microsoft forbyder sine AI-modeller at hacke og snyde",
+      "dato": "",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
+      "side": "",
+      "hvor": "under",
+      "under": "Microsoft vil holde AI under menneskelig kontrol"
+     },
      {
       "rubrik": "Altman: OpenAI bliver ikke børsnoteret i 2026",
       "dato": "",
@@ -881,15 +890,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/82c98d9b6abfab67.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Mecka AI nærmer sig 500 mio. dollars",
-      "dato": "2026-09-11T22:58:17",
-      "foerst_set": "2026-09-11T23:11:34",
-      "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-      "side": "artikel/c923ead07513500b.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -904,8 +904,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 17,
-    "som_ekstra": 5,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
+      "dato": "",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+      "side": "",
+      "hvor": "under",
+      "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
+     },
      {
       "rubrik": "Forskere beskylder OpenAI-agenter for RubyGems-angreb",
       "dato": "",
@@ -961,20 +970,20 @@ window.KOMMANDO_DATA = {
       "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
      },
      {
+      "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
+      "dato": "2026-09-14T18:59:41",
+      "foerst_set": "2026-09-15T01:52:19",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+      "side": "artikel/c9c7e7aae9376f42.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
       "dato": "2026-09-14T17:21:42",
       "foerst_set": "2026-09-14T22:44:05",
       "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
       "side": "artikel/de5d887a67d769f9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
-      "dato": "2026-09-14T16:03:37",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
-      "side": "artikel/1002fff4f0e057fb.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1004,15 +1013,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/9276271a0e3f9a08.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Trump lemper miljøregler for AI-datacentre",
-      "dato": "2026-09-12T10:41:27",
-      "foerst_set": "2026-09-12T15:15:33",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-      "side": "artikel/bcfea4b7b1860b3b.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1026,18 +1026,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
-    "som_ekstra": 2,
+    "i_listen": 6,
+    "som_ekstra": 1,
     "seneste": [
-     {
-      "rubrik": "Apple frigiver iOS 27 og Siri AI",
-      "dato": "",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-      "side": "",
-      "hvor": "under",
-      "under": "Siri i iOS 27 er bygget på Gemini"
-     },
      {
       "rubrik": "Anthropic-forsker stopper med AI-advarsel",
       "dato": "",
@@ -1046,6 +1037,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic-forsker siger op i superintelligens-advarsel"
+     },
+     {
+      "rubrik": "Musk dropper Apple – men ikke OpenAI",
+      "dato": "2026-09-14T19:45:13",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+      "side": "artikel/8f91eecbb9dc32c2.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Wang Xingxing styrer Unitree ned til skruerne",
+      "dato": "2026-09-14T19:38:46",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
+      "side": "artikel/c884bb2181557996.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "New Mexico straffer advokat for ChatGPTs falske vidner",
@@ -1315,19 +1324,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-14T23:34:34.806540+00:00",
+  "opdateret": "2026-09-15T02:15:45.656602+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 75,
-  "sidevisninger_i_alt": 309,
+  "besoeg_i_alt": 77,
+  "sidevisninger_i_alt": 311,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-16",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-08-17",
     "besoeg": 0,
@@ -1472,6 +1476,11 @@ window.KOMMANDO_DATA = {
     "dato": "2026-09-14",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-09-15",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
@@ -1479,6 +1488,11 @@ window.KOMMANDO_DATA = {
     "sti": "/",
     "besoeg": 74,
     "visninger": 284
+   },
+   {
+    "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
+    "besoeg": 2,
+    "visninger": 2
    },
    {
     "sti": "/uge.html",
@@ -1518,6 +1532,14 @@ window.KOMMANDO_DATA = {
   ],
   "artikler": [
    {
+    "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
+    "besoeg": 2,
+    "visninger": 2,
+    "rubrik": "link\u0026gt;\u0026lt;guid",
+    "kategori": "",
+    "dato": ""
+   },
+   {
     "sti": "/artikel/5c41fc251a24d093.html",
     "besoeg": 0,
     "visninger": 1,
@@ -1529,7 +1551,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 73
+    "besoeg": 75
    },
    {
     "fra": "m.facebook.com",
