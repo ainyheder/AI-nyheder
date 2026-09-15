@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-15T14:24:39.538130+00:00",
+ "genereret": "2026-09-15T19:05:25.584255+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,20 +183,21 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-15T13:50:34.662345+00:00",
-  "antal": 69,
-  "med_billede": 63,
-  "paa_dansk": 69,
+  "opdateret": "2026-09-15T18:27:03.971686+00:00",
+  "antal": 74,
+  "med_billede": 68,
+  "paa_dansk": 74,
   "kategorier": {
-   "Lanceringer": 9,
+   "Lanceringer": 10,
+   "Penge \u0026 marked": 19,
    "Forskning": 7,
-   "Penge \u0026 marked": 17,
-   "Samfund \u0026 etik": 14,
+   "Samfund \u0026 etik": 15,
    "Politik \u0026 jura": 10,
-   "Hverdags-AI": 12
+   "Hverdags-AI": 13
   },
   "kilder": {
-   "TechCrunch AI": 22,
+   "TechCrunch AI": 26,
+   "Google DeepMind": 1,
    "Ars Technica AI": 9,
    "MIT Tech Review AI": 4,
    "The Verge AI": 18,
@@ -217,6 +218,16 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
+    "titel": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+    "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+    "side": "artikel/392b6ec46b4e96bc.html",
+    "kategori": "Lanceringer",
+    "kilde": "Google DeepMind",
+    "dato": "2026-09-15T17:05:57+00:00",
+    "billede": "data/img/6c89a4c5768cee71.webp"
+   },
+   {
     "titel": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
     "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
     "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
@@ -225,19 +236,59 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-15T12:00:41+00:00",
     "billede": "data/img/7057661105f9d64e.webp"
-   },
-   {
-    "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
-    "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
-    "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-    "side": "artikel/3a588dc9c7bf53d6.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-14T09:00:00-04:00",
-    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+    "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+    "side": "artikel/392b6ec46b4e96bc.html",
+    "kategori": "Lanceringer",
+    "kilde": "Google DeepMind",
+    "dato": "2026-09-15T17:05:57+00:00",
+    "billede": "data/img/6c89a4c5768cee71.webp"
+   },
+   {
+    "titel": "Meta expands subscription push with new AI-focused plans",
+    "rubrik": "Meta One samler AI i nye abonnementer",
+    "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+    "side": "artikel/5e497c447da816d2.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T17:05:24+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
+    "rubrik": "Profound henter 180 mio. dollar i Serie D",
+    "link": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+    "side": "artikel/a99284cc094f15db.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T15:22:48+00:00",
+    "billede": "data/img/1e65fc0072c052b7.webp"
+   },
+   {
+    "titel": "AI agents now have a place to snitch",
+    "rubrik": "Ryan Greenblatt åbner hotline for AI-angivere",
+    "link": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
+    "side": "artikel/1e9eb8a1b0c06025.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T17:42:59+00:00",
+    "billede": "data/img/58fb2985645cdea7.webp"
+   },
+   {
+    "titel": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
+    "rubrik": "Superpose lader AI foreslå dine poser",
+    "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+    "side": "artikel/7ca90a5021c373bf.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T14:42:37+00:00",
+    "billede": "data/img/0baa074c91374470.webp"
+   },
    {
     "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
     "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
@@ -286,7 +337,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-15T13:00:00+00:00",
-    "billede": ""
+    "billede": "data/img/f7d468088e2a26bf.webp"
    },
    {
     "titel": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
@@ -307,61 +358,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-14T19:28:42+00:00",
     "billede": "data/img/c043b87dd5d7cc77.webp"
-   },
-   {
-    "titel": "AI agents blew the whistle on their cheating colleagues",
-    "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
-    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-    "side": "artikel/4ca5a8ed3801eeb7.html",
-    "kategori": "Forskning",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-09-14T16:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
-    "rubrik": "Superhuman køber notetakeren Fathom",
-    "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
-    "side": "artikel/d360e52aaf33362c.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-14T14:45:44+00:00",
-    "billede": "data/img/77a28be8ab2567b1.webp"
-   },
-   {
-    "titel": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-    "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
-    "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-    "side": "artikel/4dd932ed2d93b38f.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-14T20:44:14+00:00",
-    "billede": "data/img/5bf1a7a8c4753569.webp"
-   },
-   {
-    "titel": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
-    "rubrik": "iLands-bots som Ren oversvømmer sociale medier",
-    "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
-    "side": "artikel/29ba46951f8a05b0.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-14T21:04:32+00:00",
-    "billede": "data/img/277cd28643d96eb0.webp"
-   },
-   {
-    "titel": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
-    "rubrik": "Musk dropper Apple – men ikke OpenAI",
-    "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
-    "side": "artikel/8f91eecbb9dc32c2.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-14T19:45:13+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-15T13:50:34.662345+00:00",
+  "opdateret": "2026-09-15T18:27:03.971686+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -369,19 +370,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
-   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
-   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
+   "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+   "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
-   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
-   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
+   "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-15T13:50:34.102197+00:00",
+  "opdateret": "2026-09-15T18:27:03.272839+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -599,8 +600,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-15T13:50:34.662345+00:00",
-  "artikler_i_alt": 69,
+  "opdateret": "2026-09-15T18:27:03.971686+00:00",
+  "artikler_i_alt": 74,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -651,8 +652,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 1,
-    "som_ekstra": 0,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+      "dato": "",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
      {
       "rubrik": "Gemini-app åbner på Windows med Alt + Space",
       "dato": "2026-09-10T16:00:00",
@@ -780,7 +790,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
+    "i_listen": 26,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -847,47 +857,47 @@ window.KOMMANDO_DATA = {
       "under": "Meta lancerer AI-agenten Muse i USA"
      },
      {
+      "rubrik": "Meta One samler AI i nye abonnementer",
+      "dato": "2026-09-15T17:05:24",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+      "side": "artikel/5e497c447da816d2.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Profound henter 180 mio. dollar i Serie D",
+      "dato": "2026-09-15T15:22:48",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+      "side": "artikel/a99284cc094f15db.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Ryan Greenblatt åbner hotline for AI-angivere",
+      "dato": "2026-09-15T17:42:59",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
+      "side": "artikel/1e9eb8a1b0c06025.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Superpose lader AI foreslå dine poser",
+      "dato": "2026-09-15T14:42:37",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+      "side": "artikel/7ca90a5021c373bf.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
       "dato": "2026-09-15T12:00:00",
       "foerst_set": "2026-09-15T13:50:34",
       "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "side": "artikel/221b10e9623a92a5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "AIUC vil certificere AI-agenter med 5.000 test",
-      "dato": "2026-09-15T13:00:00",
-      "foerst_set": "2026-09-15T13:50:34",
-      "link": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
-      "side": "artikel/06261c41c45c66cd.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Superhuman køber notetakeren Fathom",
-      "dato": "2026-09-14T14:45:44",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
-      "side": "artikel/d360e52aaf33362c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
-      "dato": "2026-09-14T20:44:14",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-      "side": "artikel/4dd932ed2d93b38f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
-      "dato": "2026-09-14T21:51:02",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-      "side": "artikel/71b2c4f295f24956.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1296,7 +1306,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 0,
+    "i_listen": 1,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1307,6 +1317,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+      "dato": "2026-09-15T17:05:57",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "side": "artikel/392b6ec46b4e96bc.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1360,7 +1379,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-15T14:24:29.207482+00:00",
+  "opdateret": "2026-09-15T19:05:18.722668+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

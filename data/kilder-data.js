@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-15T13:50:34.662345+00:00",
- "artikler_i_alt": 69,
+ "opdateret": "2026-09-15T18:27:03.971686+00:00",
+ "artikler_i_alt": 74,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -53,8 +53,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 1,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+     "dato": "",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
+    },
     {
      "rubrik": "Gemini-app åbner på Windows med Alt + Space",
      "dato": "2026-09-10T16:00:00",
@@ -65,7 +74,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Google DeepMind",
+     1
+    ]
+   ]
   },
   {
    "navn": "xAI News",
@@ -191,7 +205,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
+   "i_listen": 26,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -256,6 +270,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer AI-agenten Muse i USA"
+    },
+    {
+     "rubrik": "Meta One samler AI i nye abonnementer",
+     "dato": "2026-09-15T17:05:24",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+     "side": "artikel/5e497c447da816d2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Profound henter 180 mio. dollar i Serie D",
+     "dato": "2026-09-15T15:22:48",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+     "side": "artikel/a99284cc094f15db.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Ryan Greenblatt åbner hotline for AI-angivere",
+     "dato": "2026-09-15T17:42:59",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
+     "side": "artikel/1e9eb8a1b0c06025.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Superpose lader AI foreslå dine poser",
+     "dato": "2026-09-15T14:42:37",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+     "side": "artikel/7ca90a5021c373bf.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
@@ -326,42 +376,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-12T16:01:49",
      "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
      "side": "artikel/82c98d9b6abfab67.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mecka AI nærmer sig 500 mio. dollars",
-     "dato": "2026-09-11T22:58:17",
-     "foerst_set": "2026-09-11T23:11:34",
-     "link": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-     "side": "artikel/c923ead07513500b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Moonshot AI sigter mod 2 milliarder dollars",
-     "dato": "2026-09-11T19:35:54",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-     "side": "artikel/b3b5bc18a7beccd4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "25 Fields-vindere skriver brev mod AI-laboratorier",
-     "dato": "2026-09-11T20:57:36",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
-     "side": "artikel/d4514d27691b0738.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Garry Tan: Lad åbne laboratorier destillere frit",
-     "dato": "2026-09-11T20:59:47",
-     "foerst_set": "2026-09-11T21:11:45",
-     "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-     "side": "artikel/e2480aa4c979ae2f.html",
      "hvor": "forside",
      "under": ""
     }
@@ -509,7 +523,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Trump lemper miljøregler for AI-datacentre",
-     "dato": "2026-09-12T10:41:27",
+     "dato": "2026-09-12T14:41:27",
      "foerst_set": "2026-09-12T15:15:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
      "side": "artikel/bcfea4b7b1860b3b.html",
@@ -886,7 +900,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 0,
+   "i_listen": 1,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -897,9 +911,22 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
+    },
+    {
+     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+     "dato": "2026-09-15T17:05:57",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+     "side": "artikel/392b6ec46b4e96bc.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
+    [
+     "Google Gemini",
+     1
+    ],
     [
      "Ars Technica AI",
      1
