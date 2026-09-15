@@ -9,6 +9,7 @@ import subprocess
 import sys
 import tempfile
 from urllib.parse import urlsplit
+from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = '@cf/black-forest-labs/flux-2-klein-4b'
@@ -104,10 +105,19 @@ def cutout_png(raw, timeout=180):
     return output.getvalue()
 
 
+class ImageProviderError(RuntimeError):
+    def __init__(self, stage, provider, status):
+        self.details = {'trin': stage, 'udbyder': provider, 'http_status': status}
+        super().__init__(json.dumps(self.details, ensure_ascii=False))
+
+
 def generate_png(motif):
     import crawler
     prompt = (ROOT / 'opsaetning/nyhedsbrev-billedprompt.md').read_text()
-    raw = crawler.lav_flux_billede(crawler.billedprompt(motif, prompt))
+    try:
+        raw = crawler.lav_flux_billede(crawler.billedprompt(motif, prompt))
+    except HTTPError as exc:
+        raise ImageProviderError('billedgenerering', 'Cloudflare', exc.code) from None
     return cutout_png(raw)
 
 
@@ -131,21 +141,28 @@ def prepare(entry, config, api, save, generator=generate_png):
                 continue  # Et nyt prompt eller en ændret stil må ikke nulstille brevets budget.
             record = existing[key] = {'status': 'genererer', 'placering': spec['placering']}
             save()
+            stage = 'billedgenerering'
             try:
                 png = generator(spec['motiv'])
+                stage = 'upload'
                 remote = api.upload_image(png, key)
                 record.update(status='klar', url=public_image_url(remote['image']), alt=spec['alt'], image_id=remote.get('id'))
             except Exception as exc:
                 # Kun fejltype: udbydernes svar kan indeholde request-data.
                 record.update(status='udeladt', fejl=type(exc).__name__)
-                if isinstance(exc, CutoutError):
+                if isinstance(exc, (CutoutError, ImageProviderError)):
                     record['detaljer'] = exc.details
+                elif isinstance(exc, HTTPError):
+                    record['detaljer'] = {'trin': stage, 'http_status': exc.code}
+                    if stage == 'upload':
+                        record['detaljer']['udbyder'] = 'Buttondown'
                 print('Nyhedsbrevsillustration udeladt: ' + type(exc).__name__)
-                if isinstance(exc, CutoutError):
-                    print(str(exc))
+                if 'detaljer' in record:
+                    print(json.dumps(record['detaljer'], ensure_ascii=False))
             save()
         if record['status'] == 'klar':
             ready.append({'placering': spec['placering'], 'url': public_image_url(record['url']), 'alt': record['alt']})
+    print(f'Nyhedsbrevsbilleder klar: {len(ready)} af {min(len(plan), budget)} planlagte.')
     return ready
 
 

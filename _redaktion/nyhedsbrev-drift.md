@@ -511,3 +511,31 @@ billeder genbruges fortsat, og billedbudgetterne er bevaret. FLUX og BiRefNet
 har samme opgaver som før; de lokale prøver køber eller sender intet.
 Form og motivrelevans i de faktiske billeder skal vurderes ved næste
 generering. Prompts alene garanterer ikke en pixelpræcis gengivelse af et logo.
+
+### Kompakte overskrifter og mere konkret indhold — 15. september 2026
+
+Mellemoverskrifternes numre står nu inde i overskriften på samme linje.
+De har ingen farvet boks eller indvendig luft; hovedtitlens limefelt er
+bevaret med mindre padding. Billeder står i en selvstændig række efter
+det første indholdsafsnit ved deres placering, så de ikke gør overskriften
+høj. De vises i op til 280 px bredde på computer og 240 px på mobil.
+
+Skrive- og kontrolprompten prioriterer 3–4 forskellige hovedpointer,
+konkrete overskrifter, forklarede egennavne og færre gentagelser.
+Arrangementer og konkurrencedetaljer må ikke fylde brevet ud.
+Usikkerheden ved en påstand skal bevares, også når den bruges senere.
+Billedplanen skal normalt fordele tre tydelige, forskellige scener fra
+intro til afslutning. Symbolske rekvisitter alene opfylder ikke opgaven.
+
+Billedfejl logger nu trin, udbyder og HTTP-status, når de er tilgængelige,
+samt antal færdige billeder. Det skelner Cloudflare-generering fra
+Buttondown-upload uden at logge udbyderens svar eller private request-data.
+Den tidligere mails HTTPError kan ikke diagnosticeres bagudrettet ud fra
+den gamle log. Fejlede billeder genkøbes fortsat ikke automatisk.
+
+Valideret med 44 nyhedsbrevstests, 11 testudsendelsestests og 14 tests af
+redaktionelle prompts. Layoutet er kontrolleret i Chromium ved 320, 390 og
+960 px: ingen vandret overflow, billeder indlæst og alle numre på første
+overskriftslinje. En lokal layoutprøve bruger den modtagne mails eksisterende
+tekst og billeder. Nye formuleringer og billedmotiver skal vurderes i en
+frisk GitHub-kørsel efter push; lokale tests bruger simulerede API-svar.

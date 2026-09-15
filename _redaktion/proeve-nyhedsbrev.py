@@ -112,7 +112,7 @@ class NewsletterTests(unittest.TestCase):
                 n.validate_reading_rhythm(body)
         n.validate_reading_rhythm('# Test\n\nKort.\n\nOgså kort.\n\n> En konkret pause.\n\nVidere.')
 
-    def test_images_belong_to_heading_cells_without_narrowing_body_copy(self):
+    def test_images_follow_first_section_content_without_enlarging_headings(self):
         content = draft()
         content['brev_markdown'] = '# Titel\n\nIntro.\n\n## Midten\n\n- En kort liste.\n- Et nyt punkt.'
         images = [{'placering': position, 'url': 'https://example.org/' + name + '.png',
@@ -121,9 +121,24 @@ class NewsletterTests(unittest.TestCase):
         rendered = n.render(content, images)
         self.assertEqual(rendered.count('<img '), 2)
         self.assertNotIn('float:right', rendered)
-        self.assertRegex(rendered, r'<td class="heading-art"[^>]*><img ')
+        self.assertNotIn('heading-art', rendered)
+        self.assertLess(rendered.index('Intro.</p>'), rendered.index('src="https://example.org/a.png"'))
+        self.assertLess(rendered.index('</ul>'), rendered.index('src="https://example.org/b.png"'))
         self.assertNotRegex(rendered, r'<p[^>]*><img ')
         self.assertIn('font-weight:400', rendered)
+
+    def test_section_numbers_are_inline_and_headings_have_no_padded_box(self):
+        from xml.etree import ElementTree
+        for number in (1, 2, 10):
+            section = ElementTree.fromstring(n.heading_block('En overskrift', number).replace('&nbsp;', '&#160;'))
+            heading = section.find('.//h2')
+            self.assertEqual(heading.find('span').text, f'{number:02d}')
+            self.assertIn('padding:0;', section.find('.//td').attrib['style'])
+            self.assertEqual(section.attrib['bgcolor'], '#0c0e12')
+            self.assertIsNone(section.find('.//img'))
+        # Inline formatting must remain valid when the title starts with bold text.
+        section = ElementTree.fromstring(n.heading_block('**AI med mod** og præcision', 1).replace('&nbsp;', '&#160;'))
+        self.assertEqual(section.find('.//h2/strong').text, 'AI med mod')
 
     def test_deepseek_diagnostics_never_expose_reasoning_or_provider_text(self):
         import crawler
@@ -502,6 +517,35 @@ class NewsletterTests(unittest.TestCase):
         with self.assertRaises(OSError):
             n.nyhedsbrev_billeder.prepare(entry, config, api, failed_save, generator)
         self.assertEqual(generator.call_count, 1)
+
+    def test_image_http_failures_identify_provider_without_leaking_or_retrying(self):
+        from urllib.error import HTTPError
+        images = n.nyhedsbrev_billeder
+        for provider in ('Cloudflare', 'Buttondown'):
+            with self.subTest(provider=provider):
+                entry = {'url': SOURCE['url'], 'draft': {**draft(), 'illustrationer': [
+                    {'placering': 'intro', 'motiv': 'Et protein', 'alt': 'AI-illustration: protein.'}]}}
+                failure = HTTPError('https://example.org/SECRET', 429, 'PRIVATE RESPONSE', {}, None)
+                api = Mock()
+                if provider == 'Cloudflare':
+                    generator = Mock(side_effect=images.ImageProviderError('billedgenerering', provider, 429))
+                else:
+                    generator = Mock(return_value=b'PNG')
+                    api.upload_image.side_effect = failure
+                log = io.StringIO()
+                with contextlib.redirect_stdout(log):
+                    for _ in range(2):
+                        self.assertEqual(images.prepare(entry, {'billeder': {'aktiv': True}}, api, lambda: None, generator), [])
+                record = next(iter(entry['billeder'].values()))
+                self.assertEqual(record['detaljer']['udbyder'], provider)
+                self.assertEqual(record['detaljer']['http_status'], 429)
+                self.assertEqual(generator.call_count, 1)
+                self.assertNotIn('SECRET', log.getvalue() + json.dumps(record))
+                self.assertNotIn('PRIVATE RESPONSE', log.getvalue() + json.dumps(record))
+        with patch('crawler.lav_flux_billede', side_effect=failure):
+            with self.assertRaises(images.ImageProviderError) as caught:
+                images.generate_png('Et protein')
+        self.assertEqual(caught.exception.details['udbyder'], 'Cloudflare')
 
     def test_images_only_reach_rendering_after_approved_review(self):
         store = Store(); api = API(store)

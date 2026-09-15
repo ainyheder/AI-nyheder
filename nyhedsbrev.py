@@ -317,25 +317,34 @@ def illustration(image, preview=False):
     url = image['url']
     if not (preview and re.fullmatch(r'illustrationer/[a-z0-9-]+\.png', url)):
         nyhedsbrev_billeder.public_image_url(url)
-    # Egen tabelcelle: billeder må ikke presse brødteksten ind i en smal spalte.
-    return ('<img class="editorial-image" width="224" height="168" src="' + html.escape(url, quote=True)
+    # Egen række: billeder må hverken gøre overskriften høj eller indsnævre teksten.
+    return ('<img class="editorial-image" width="280" height="210" src="' + html.escape(url, quote=True)
             + '" alt="' + html.escape(image['alt'], quote=True)
-            + '" style="display:block;width:224px;max-width:100%;height:auto;margin:0;border:0;background:transparent;color:#aebac6;font-size:12px;font-weight:400;line-height:1.4">')
+            + '" style="display:block;width:280px;max-width:100%;height:auto;margin:0;border:0;background:transparent;color:#aebac6;font-size:12px;font-weight:400;line-height:1.4">')
 
 
-def heading_block(title, number=None, image=None, *, preview=False):
+def heading_block(title, number=None):
     hero = number is None
-    background = '#d5ff5f' if hero else '#131c26'
+    background = '#d5ff5f' if hero else '#0c0e12'
     color = '#101609' if hero else '#f2f3f5'
     tag = 'h1' if hero else 'h2'
-    marker = '' if hero else ('<div aria-hidden="true" style="font:400 12px/1.4 monospace;letter-spacing:2px;color:#d5ff5f;margin:0 0 8px">' + f'{number:02d}' + '</div>')
-    art = ('<td class="heading-art" width="224" align="center" valign="middle" style="width:224px;padding:14px 14px 14px 0">'
-           + illustration(image, preview) + '</td>') if image else ''
-    return ('<table role="presentation" class="heading-block" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + background
-            + '" style="width:100%;margin:' + ('20px 0 24px' if hero else '30px 0 22px') + ';border:0;border-radius:12px;background:' + background + '"><tr>'
-            '<td class="heading-copy" valign="middle" style="padding:22px 20px;font-weight:400">' + marker
+    title_html = inline(title)
+    if not hero:
+        # Bind nummeret til første ord; lange overskrifter kan stadig ombrydes.
+        title_html = ('<span class="section-number" aria-hidden="true" '
+                      'style="font:400 14px/1.3 monospace;color:#d5ff5f!important;letter-spacing:1px">'
+                      + f'{number:02d}' + '</span>&nbsp;' + title_html)
+    return ('<table role="presentation" class="heading-block ' + ('hero-heading' if hero else 'section-heading') + '" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="' + background
+            + '" style="width:100%;margin:' + ('18px 0 20px' if hero else '24px 0 12px') + ';border:0;border-radius:' + ('12px' if hero else '0') + ';background:' + background + '"><tr>'
+            '<td class="heading-copy" valign="middle" style="padding:' + ('18px 16px' if hero else '0') + ';font-weight:400">'
             + '<' + tag + ' class="' + ('title' if hero else 'section-title') + '" style="font-family:Arial,sans-serif;font-size:' + ('32px' if hero else '23px')
-            + ';line-height:1.2;letter-spacing:-0.5px;font-weight:700;color:' + color + '!important;margin:0">' + inline(title) + '</' + tag + '></td>' + art + '</tr></table>')
+            + ';line-height:1.25;letter-spacing:-0.5px;font-weight:700;color:' + color + '!important;margin:0">' + title_html + '</' + tag + '></td></tr></table>')
+
+
+def illustration_block(image, *, preview=False):
+    return ('<table role="presentation" class="illustration-block" width="100%" cellpadding="0" cellspacing="0" border="0" '
+            'style="width:100%;margin:0 0 18px;border:0"><tr><td align="center" style="padding:0">'
+            + illustration(image, preview) + '</td></tr></table>')
 
 
 def reading_minutes(markdown):
@@ -353,13 +362,22 @@ def render(draft, images=None, *, preview=False):
     first_paragraph = True
     images = {item['placering']: item for item in (images or [])[:nyhedsbrev_billeder.MAX_IMAGES]}
     section_number = 0
+    pending_image = None
     for block in re.split(r"\n\s*\n", body):
         lines = block.splitlines()
         if block.startswith("# ") and len(lines) == 1:
-            blocks.append(heading_block(block[2:], image=images.get('intro'), preview=preview))
+            if pending_image:
+                blocks.append(illustration_block(pending_image, preview=preview))
+            blocks.append(heading_block(block[2:]))
+            pending_image = images.get('intro')
+            continue
         elif block.startswith("## ") and len(lines) == 1:
+            if pending_image:
+                blocks.append(illustration_block(pending_image, preview=preview))
             section_number += 1
-            blocks.append(heading_block(block[3:], section_number, images.get(block[3:]), preview=preview))
+            blocks.append(heading_block(block[3:], section_number))
+            pending_image = images.get(block[3:])
+            continue
         elif (panel := comparison(block)) is not None:
             blocks.append(panel)
         elif all(line.startswith("> ") for line in lines):
@@ -376,6 +394,13 @@ def render(draft, images=None, *, preview=False):
             color = "#e4e9f0" if lead else "#cbd2dc"
             blocks.append('<p class="body-copy" style="font-family:Arial,sans-serif;font-size:' + size + ';line-height:1.7;font-weight:400;color:' + color + '!important;margin:0 0 22px">' + inline(block.replace("\n", " ")) + '</p>')
             first_paragraph = False
+        # Lad læseren møde afsnittets pointe før illustrationen. Næste tekstblok
+        # fortsætter i fuld bredde, også i mailklienter uden media queries.
+        if pending_image:
+            blocks.append(illustration_block(pending_image, preview=preview))
+            pending_image = None
+    if pending_image:
+        blocks.append(illustration_block(pending_image, preview=preview))
     css = (ROOT / "opsaetning/nyhedsbrev-design.css").read_text()
     # Buttondown leverer den eneste afmeldingsfooter.
     return ('<style>' + css + '</style><div style="display:none;max-height:0;overflow:hidden;mso-hide:all">'
