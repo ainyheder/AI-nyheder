@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-15T08:46:29.749742+00:00",
+ "genereret": "2026-09-15T14:24:39.538130+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,23 +183,23 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-15T08:17:01.146357+00:00",
-  "antal": 63,
-  "med_billede": 59,
-  "paa_dansk": 63,
+  "opdateret": "2026-09-15T13:50:34.662345+00:00",
+  "antal": 69,
+  "med_billede": 63,
+  "paa_dansk": 69,
   "kategorier": {
-   "Lanceringer": 8,
-   "Forskning": 6,
-   "Penge \u0026 marked": 15,
-   "Samfund \u0026 etik": 13,
+   "Lanceringer": 9,
+   "Forskning": 7,
+   "Penge \u0026 marked": 17,
+   "Samfund \u0026 etik": 14,
    "Politik \u0026 jura": 10,
-   "Hverdags-AI": 11
+   "Hverdags-AI": 12
   },
   "kilder": {
-   "Ars Technica AI": 7,
-   "MIT Tech Review AI": 3,
-   "TechCrunch AI": 20,
-   "The Verge AI": 17,
+   "TechCrunch AI": 22,
+   "Ars Technica AI": 9,
+   "MIT Tech Review AI": 4,
+   "The Verge AI": 18,
    "Simon Willison AI": 6,
    "OpenAI Blog": 8,
    "Google Gemini": 1,
@@ -207,37 +207,87 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
-    "rubrik": "Apple frigiver iOS 27 med Siri AI",
-    "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-    "side": "artikel/47def91e50bdda56.html",
+    "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
+    "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+    "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+    "side": "artikel/221b10e9623a92a5.html",
     "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-14T19:28:42+00:00",
-    "billede": "data/img/c043b87dd5d7cc77.webp"
-   },
-   {
-    "titel": "AI agents blew the whistle on their cheating colleagues",
-    "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
-    "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-    "side": "artikel/4ca5a8ed3801eeb7.html",
-    "kategori": "Forskning",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-09-14T16:00:00+00:00",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T12:00:00+00:00",
     "billede": ""
    },
    {
-    "titel": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
-    "rubrik": "Superhuman køber notetakeren Fathom",
-    "link": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
-    "side": "artikel/d360e52aaf33362c.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-14T14:45:44+00:00",
-    "billede": "data/img/77a28be8ab2567b1.webp"
+    "titel": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
+    "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
+    "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+    "side": "artikel/f9a32ab8fe3eaef7.html",
+    "kategori": "Forskning",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-15T12:00:41+00:00",
+    "billede": "data/img/7057661105f9d64e.webp"
+   },
+   {
+    "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
+    "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
+    "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+    "side": "artikel/3a588dc9c7bf53d6.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-14T09:00:00-04:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
+    "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+    "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+    "side": "artikel/221b10e9623a92a5.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T12:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
+    "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
+    "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+    "side": "artikel/f9a32ab8fe3eaef7.html",
+    "kategori": "Forskning",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-15T12:00:41+00:00",
+    "billede": "data/img/7057661105f9d64e.webp"
+   },
+   {
+    "titel": "What’s at stake in AI’s trillion-dollar gamble",
+    "rubrik": "Hyperscalerne skal være 2,7 gange mere produktive",
+    "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+    "side": "artikel/03f235e72691ef06.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-15T10:00:00+00:00",
+    "billede": "data/img/9e33bee7d5775ef4.webp"
+   },
+   {
+    "titel": "This doorbell camera lets a human security guard watch your front door",
+    "rubrik": "SimpliSafe lader vagter tale gennem dørklokken",
+    "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+    "side": "artikel/81cef9ef2f5c5442.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-15T09:36:45-04:00",
+    "billede": "data/img/ae2c93b2b1c97985.webp"
+   },
+   {
+    "titel": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
+    "rubrik": "AIUC vil certificere AI-agenter med 5.000 test",
+    "link": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+    "side": "artikel/06261c41c45c66cd.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T13:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
     "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
@@ -289,6 +339,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/5bf1a7a8c4753569.webp"
    },
    {
+    "titel": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
+    "rubrik": "iLands-bots som Ren oversvømmer sociale medier",
+    "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+    "side": "artikel/29ba46951f8a05b0.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-14T21:04:32+00:00",
+    "billede": "data/img/277cd28643d96eb0.webp"
+   },
+   {
     "titel": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
     "rubrik": "Musk dropper Apple – men ikke OpenAI",
     "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
@@ -297,91 +357,31 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-14T19:45:13+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
-    "rubrik": "Wang Xingxing styrer Unitree ned til skruerne",
-    "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
-    "side": "artikel/c884bb2181557996.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-14T19:38:46+00:00",
-    "billede": "data/img/964deb50a24fa24e.webp"
-   },
-   {
-    "titel": "What execs and politicians are saying about slowing down AI development",
-    "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-    "side": "artikel/de5d887a67d769f9.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-14T17:21:42-04:00",
-    "billede": "data/img/251c39e28749931a.webp"
-   },
-   {
-    "titel": "The AI industry has taken a doomer turn. What now?",
-    "rubrik": "Topchefer vil bremse efter OpenAI-agenters hack",
-    "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
-    "side": "artikel/f4964ed02dfb9679.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-09-14T17:54:22+00:00",
-    "billede": "data/img/f4c470ff0f208a1b.webp"
-   },
-   {
-    "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-    "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
-    "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-    "side": "artikel/71b2c4f295f24956.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-14T21:51:02+00:00",
-    "billede": "data/img/26e115d7877a372e.webp"
-   },
-   {
-    "titel": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll",
-    "rubrik": "Daydream gør gemte outfitbilleder til shopping",
-    "link": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
-    "side": "artikel/a047fb9f02fd0b05.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-14T17:00:00+00:00",
-    "billede": "data/img/7ff92ea83e84c30f.webp"
-   },
-   {
-    "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
-    "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
-    "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-    "side": "artikel/3a588dc9c7bf53d6.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-14T09:00:00-04:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-15T08:17:01.146357+00:00",
+  "opdateret": "2026-09-15T13:50:34.662345+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-   "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-   "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/"
+   "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
   ],
   "udgivet_udvalg": [
-   "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-   "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-   "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/"
+   "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+   "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-15T08:17:00.704497+00:00",
+  "opdateret": "2026-09-15T13:50:34.102197+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -599,8 +599,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-15T08:17:01.146357+00:00",
-  "artikler_i_alt": 63,
+  "opdateret": "2026-09-15T13:50:34.662345+00:00",
+  "artikler_i_alt": 69,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -780,7 +780,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 20,
+    "i_listen": 22,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -847,6 +847,24 @@ window.KOMMANDO_DATA = {
       "under": "Meta lancerer AI-agenten Muse i USA"
      },
      {
+      "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+      "dato": "2026-09-15T12:00:00",
+      "foerst_set": "2026-09-15T13:50:34",
+      "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+      "side": "artikel/221b10e9623a92a5.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "AIUC vil certificere AI-agenter med 5.000 test",
+      "dato": "2026-09-15T13:00:00",
+      "foerst_set": "2026-09-15T13:50:34",
+      "link": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+      "side": "artikel/06261c41c45c66cd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Superhuman køber notetakeren Fathom",
       "dato": "2026-09-14T14:45:44",
       "foerst_set": "2026-09-14T22:44:05",
@@ -872,24 +890,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/71b2c4f295f24956.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Daydream gør gemte outfitbilleder til shopping",
-      "dato": "2026-09-14T17:00:00",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
-      "side": "artikel/a047fb9f02fd0b05.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Obama: Demokraterne skal have klar AI-plan",
-      "dato": "2026-09-13T16:30:00",
-      "foerst_set": "2026-09-13T18:19:53",
-      "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-      "side": "artikel/6b54256d4afbc2dd.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -903,7 +903,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 17,
+    "i_listen": 18,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -970,6 +970,15 @@ window.KOMMANDO_DATA = {
       "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
      },
      {
+      "rubrik": "SimpliSafe lader vagter tale gennem dørklokken",
+      "dato": "2026-09-15T09:36:45",
+      "foerst_set": "2026-09-15T13:50:34",
+      "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+      "side": "artikel/81cef9ef2f5c5442.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
       "dato": "2026-09-14T18:59:41",
       "foerst_set": "2026-09-15T01:52:19",
@@ -1004,15 +1013,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/1d273e458a4640c0.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI udskyder børsnotering: Altman siger nej til 2026",
-      "dato": "2026-09-12T17:16:28",
-      "foerst_set": "2026-09-12T21:37:46",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-      "side": "artikel/9276271a0e3f9a08.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1026,7 +1026,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 7,
+    "i_listen": 9,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1039,11 +1039,29 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic-forsker siger op i superintelligens-advarsel"
      },
      {
+      "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
+      "dato": "2026-09-15T12:00:41",
+      "foerst_set": "2026-09-15T13:50:34",
+      "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+      "side": "artikel/f9a32ab8fe3eaef7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Apple frigiver iOS 27 med Siri AI",
       "dato": "2026-09-14T19:28:42",
       "foerst_set": "2026-09-14T22:44:05",
       "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
       "side": "artikel/47def91e50bdda56.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "iLands-bots som Ren oversvømmer sociale medier",
+      "dato": "2026-09-14T21:04:32",
+      "foerst_set": "2026-09-14T22:44:05",
+      "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+      "side": "artikel/29ba46951f8a05b0.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1113,9 +1131,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 3,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Hyperscalerne skal være 2,7 gange mere produktive",
+      "dato": "2026-09-15T10:00:00",
+      "foerst_set": "2026-09-15T13:50:34",
+      "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+      "side": "artikel/03f235e72691ef06.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
       "dato": "2026-09-14T16:00:00",
@@ -1333,12 +1360,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-15T08:46:20.397125+00:00",
+  "opdateret": "2026-09-15T14:24:29.207482+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 80,
-  "sidevisninger_i_alt": 314,
+  "besoeg_i_alt": 81,
+  "sidevisninger_i_alt": 315,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1495,8 +1522,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 77,
-    "visninger": 287
+    "besoeg": 78,
+    "visninger": 288
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1560,7 +1587,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 78
+    "besoeg": 79
    },
    {
     "fra": "m.facebook.com",

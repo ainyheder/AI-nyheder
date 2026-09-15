@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-15T08:17:01.146357+00:00",
- "artikler_i_alt": 63,
+ "opdateret": "2026-09-15T13:50:34.662345+00:00",
+ "artikler_i_alt": 69,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -191,7 +191,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 22,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -256,6 +256,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta lancerer AI-agenten Muse i USA"
+    },
+    {
+     "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+     "dato": "2026-09-15T12:00:00",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+     "side": "artikel/221b10e9623a92a5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AIUC vil certificere AI-agenter med 5.000 test",
+     "dato": "2026-09-15T13:00:00",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+     "side": "artikel/06261c41c45c66cd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Superhuman køber notetakeren Fathom",
@@ -346,24 +364,6 @@ window.KILDER_STATUS = {
      "side": "artikel/e2480aa4c979ae2f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Fidji Simo til Nscale-bestyrelse før mulig børsnotering",
-     "dato": "2026-09-11T16:46:25",
-     "foerst_set": "2026-09-11T17:51:30",
-     "link": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-     "side": "artikel/3eb10fd44cbe5bc1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI pauser nye Pro-abonnementer efter Astra",
-     "dato": "2026-09-10T20:59:51",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-     "side": "artikel/5a7a028d73b1f767.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -387,7 +387,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 17,
+   "i_listen": 18,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -454,6 +454,15 @@ window.KILDER_STATUS = {
      "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
     },
     {
+     "rubrik": "SimpliSafe lader vagter tale gennem dørklokken",
+     "dato": "2026-09-15T09:36:45",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+     "side": "artikel/81cef9ef2f5c5442.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
      "dato": "2026-09-14T18:59:41",
      "foerst_set": "2026-09-15T01:52:19",
@@ -509,7 +518,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI hævder at have løst millionproblem",
-     "dato": "2026-09-12T07:00:00",
+     "dato": "2026-09-12T11:00:00",
      "foerst_set": "2026-09-12T11:30:33",
      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
      "side": "artikel/41bb568b2b6096a5.html",
@@ -551,15 +560,6 @@ window.KILDER_STATUS = {
      "side": "artikel/f613fc1e895bdb49.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI beskyldes for uærlighed om træningsdata",
-     "dato": "2026-09-10T11:00:57",
-     "foerst_set": "2026-09-10T13:45:53",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-     "side": "artikel/3aead6fbd8135d1e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -595,7 +595,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 7,
+   "i_listen": 9,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -608,11 +608,29 @@ window.KILDER_STATUS = {
      "under": "Anthropic-forsker siger op i superintelligens-advarsel"
     },
     {
+     "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
+     "dato": "2026-09-15T12:00:41",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+     "side": "artikel/f9a32ab8fe3eaef7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Apple frigiver iOS 27 med Siri AI",
      "dato": "2026-09-14T19:28:42",
      "foerst_set": "2026-09-14T22:44:05",
      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
      "side": "artikel/47def91e50bdda56.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "iLands-bots som Ren oversvømmer sociale medier",
+     "dato": "2026-09-14T21:04:32",
+     "foerst_set": "2026-09-14T22:44:05",
+     "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+     "side": "artikel/29ba46951f8a05b0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -696,9 +714,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Hyperscalerne skal være 2,7 gange mere produktive",
+     "dato": "2026-09-15T10:00:00",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+     "side": "artikel/03f235e72691ef06.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "DeepMinds AI-agenter sladrede om hinandens snyd",
      "dato": "2026-09-14T16:00:00",
