@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · GPT-4.1: Ny metrik afslører ustabile agenter</title>
+<meta name="description" content="IBM-forskere måler, hvor ofte en agent klarer samme opgave i alle fem forsøg, og foreslår kandidat-retningslinjer, der skal mindske variationen.">
+<link rel="canonical" href="https://ainyheder.com/artikel/5236dbdf16446213.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="GPT-4.1: Ny metrik afslører ustabile agenter">
+<meta property="og:description" content="IBM-forskere måler, hvor ofte en agent klarer samme opgave i alle fem forsøg, og foreslår kandidat-retningslinjer, der skal mindske variationen.">
+<meta property="og:url" content="https://ainyheder.com/artikel/5236dbdf16446213.html">
+<meta property="og:image" content="https://ainyheder.com/data/img/ea86a6397d2cb60a.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "GPT-4.1: Ny metrik afslører ustabile agenter", "description": "IBM-forskere måler, hvor ofte en agent klarer samme opgave i alle fem forsøg, og foreslår kandidat-retningslinjer, der skal mindske variationen.", "url": "https://ainyheder.com/artikel/5236dbdf16446213.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/5236dbdf16446213.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/ea86a6397d2cb60a.jpg", "datePublished": "2026-09-15T16:00:44+00:00", "articleSection": "Forskning", "isBasedOn": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Forskning · Hugging Face · 15.09.2026 · 2 min. læsning</div>
+<h1>GPT-4.1: Ny metrik afslører ustabile agenter</h1>
+<div class="article-intro"><img class="top" src="/data/img/ea86a6397d2cb60a.webp" alt="A solid black OpenAI Blossom symbol centered on an opaque white chip, connected to five identical rounded task tokens arranged in a row; three tokens carry a green checkmark and tw"><p class="manchet">IBM-forskere måler, hvor ofte en agent klarer samme opgave i alle fem forsøg, og foreslår kandidat-retningslinjer, der skal mindske variationen.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>77 procent i snit, 53 hver gang</h2>
+<p>En agent er et AI-system, der selv tager flere skridt: kalder værktøjer, læser noter og skriver svar. På benchmarken AppWorld klarede en ReAct-agent med GPT-4.1 opgaven i 77,4 % af kørslerne, når den blev gentaget fem gange.</p><p>Det er gennemsnittet, Mean@5. Men kun 53,0 % af opgaverne blev løst i alle fem forsøg – en forskel på 24,4 point.</p><p>IBM-forskerne kalder hullet for consistency gap. Næsten en fjerdedel af opgaverne lykkes altså nogle gange og mislykkes andre gange, uden at opgaven ændrer sig.</p></section>
+<dl class="article-metrics"><div><dt>Mean@5: andel beståede kørsler i fem gennemløb, ReAct-agent med GPT-4.1 på AppWorld</dt><dd>77,4 %</dd></div><div><dt>Pass^5: andel opgaver løst i alle fem gennemløb</dt><dd>53,0 %</dd></div><div><dt>Consistency gap: forskellen mellem Mean@5 og Pass^5</dt><dd>24,4 point</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Hvorfor agenten skifter mening</h2>
+<p>Hver beslutning i en AI-model kommer ud af en sandsynlighedsfordeling over det næste ord. Er fordelingen skarp, ligger næsten al vægten på ét ord, og valget bliver det samme igen og igen.</p><p>Er den flad, ligger flere ord næsten lige. Så kan små udsving – fra GPU-beregninger eller fra batching af forespørgsler – vende rækkefølgen. En kørsel kæder snesevis af beslutninger sammen, så risikoen vokser for, at mindst én vender.</p><p>Agenten kørte ved temperature 0.0, altså med mindst mulig tilfældighed. Det hjælper ikke, fordi temperaturen styrer, hvordan fordelingen bliver til et ord – ikke fordelingen selv.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Diagnose: hvilke skridt vipper</h2>
+<p>Til at finde de usikre beslutninger har forskerne bygget Consistency Analyzer. Den tager én optaget kørsel og sender hvert beslutningsskridt gennem modellen igen med fem nye svar pr. skridt som standard.</p><p>Det koster ét ekstra modelkald pr. beslutning, kørt offline. Analyzeren gentager ikke opgaven og rører hverken værktøjer eller omgivelser. Ud kommer en konsistensscore pr. skridt i et scorecard.</p><p>Metoden er black-box: den bruger ikke logits – modellens rå sandsynligheder – eller anden adgang til modellens indre, kun den kørsel man allerede har.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">04</span>Kandidat til en ny retningslinje</h2>
+<p>Hvert markeret skridt bliver til en kandidat til en consistency guideline, ikke en færdig regel. Forslaget skrives i samme format som ALTK-Evolve, et system der omdanner en agents tidligere kørsler til genbrugelige retningslinjer og fører dem ind igen under kørslen.</p><p>I artiklen viser forskerne et eksempel, som GPT-4.1 selv har skrevet ud fra en AppWorld-opgave om at tælle aktiviteter på en huskeliste i SimpleNote. Retningslinjen handler om at tælle afkrydsningsfelter i noteteksten.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">05</span>Færre udsving uden tabt nøjagtighed</h2>
+<p>Artiklens resultatafsnit hedder &quot;Reducing the Gap Without Losing Accuracy&quot;. Ifølge forskerne mindsker retningslinjerne hullet mellem gennemsnit og gentagelse, uden at nøjagtigheden falder, og de gælder bredere end den enkelte kørsel.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Pass^k kræver succes i alle forsøg, mens Pass@k kun kræver ét.</li><li>Agenten kørte ved temperature 0.0, så variationen kommer ikke fra almindelig sampling.</li><li>Consistency Analyzer er bygget ind i ALTK-Evolve, der blev præsenteret i et tidligere opslag.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>For opgaver som at afstemme en finansiel transaktion eller kontrollere en kontrakt for en forpligtelse kan en agent, der kun lykkes nogle gange, være en stopklods.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/ibm-research/altk-evolve-consistency" rel="noopener">Hugging Face →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
