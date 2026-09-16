@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-16T13:02:18.083399+00:00",
+ "genereret": "2026-09-16T18:06:08.925841+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,24 +183,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-16T12:48:27.967549+00:00",
-  "antal": 83,
+  "opdateret": "2026-09-16T17:43:50.882013+00:00",
+  "antal": 90,
   "med_billede": 74,
-  "paa_dansk": 83,
+  "paa_dansk": 90,
   "kategorier": {
-   "Lanceringer": 11,
-   "Penge \u0026 marked": 21,
-   "Forskning": 8,
-   "Samfund \u0026 etik": 18,
-   "Politik \u0026 jura": 12,
-   "Hverdags-AI": 13
+   "Lanceringer": 12,
+   "Hverdags-AI": 15,
+   "Samfund \u0026 etik": 19,
+   "Penge \u0026 marked": 23,
+   "Forskning": 9,
+   "Politik \u0026 jura": 12
   },
   "kilder": {
-   "TechCrunch AI": 32,
+   "TechCrunch AI": 34,
    "Google DeepMind": 1,
+   "The Verge AI": 21,
    "Ars Technica AI": 11,
-   "The Verge AI": 17,
-   "MIT Tech Review AI": 4,
+   "MIT Tech Review AI": 5,
    "Mistral AI": 1,
    "Simon Willison AI": 6,
    "Hugging Face": 1,
@@ -230,17 +230,87 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/6c89a4c5768cee71.webp"
    },
    {
-    "titel": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
-    "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
-    "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
-    "side": "artikel/f9a32ab8fe3eaef7.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-15T12:00:41+00:00",
-    "billede": "data/img/7057661105f9d64e.webp"
+    "titel": "Google will now let any AI agent run your smart home",
+    "rubrik": "Google Home åbner for fremmede AI-agenter",
+    "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+    "side": "artikel/45384c84a9f2d30d.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T13:00:00-04:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Google will now let any AI agent run your smart home",
+    "rubrik": "Google Home åbner for fremmede AI-agenter",
+    "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+    "side": "artikel/45384c84a9f2d30d.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T13:00:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Claude comes for Gemini with its own take on Docs and Slides",
+    "rubrik": "Claude får Docs og Slides i samme chat",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+    "side": "artikel/25ccc59e06a2349b.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T12:30:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "The sexy AI-powered dating app scams are here",
+    "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+    "side": "artikel/45890a1118c84f70.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T10:45:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Building the materials foundation for AI",
+    "rubrik": "Syensqo lader AI-agenter finde nye materialer",
+    "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+    "side": "artikel/c81fa26a50d635d6.html",
+    "kategori": "Forskning",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-16T12:47:34+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Former Infosys chief’s AI startup nabs another $53M",
+    "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
+    "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+    "side": "artikel/766bd696566c6e2f.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-16T13:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Apple might make servers again to cash in on the AI rush",
+    "rubrik": "Apple vil tilbage til servere med M8 Ultra",
+    "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+    "side": "artikel/bdc341c044799952.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T13:20:29-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Amazon launches Alexa+ in India with Hindi support",
+    "rubrik": "Amazon åbner Alexa+ i Indien med hindi",
+    "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+    "side": "artikel/5960227fd9e8cd26.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-16T10:34:47+00:00",
+    "billede": ""
+   },
    {
     "titel": "Mistral and Mozilla are bringing open, private and multilingual AI to your web browser",
     "rubrik": "Mistral skal drive Firefox' AI-assistent",
@@ -290,81 +360,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-15T18:33:02+00:00",
     "billede": "data/img/0a588c402c193818.webp"
-   },
-   {
-    "titel": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-    "rubrik": "Meta lader AI-agenter sætte WhatsApp Business op",
-    "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-    "side": "artikel/c8e966977fdfbf21.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T20:12:53+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
-    "rubrik": "BloombergNEF: Datacentre overgår Tyskland og Japan i gasforbrug",
-    "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
-    "side": "artikel/837180ecd6ea084b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T18:29:20+00:00",
-    "billede": "data/img/ca2578b52cd8103d.webp"
-   },
-   {
-    "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "rubrik": "Relay lukker, da OpenAI bygger automatiken ind",
-    "link": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-    "side": "artikel/7eb39231f1badccc.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T19:00:00+00:00",
-    "billede": "data/img/0360dc9b8ab5e0a3.webp"
-   },
-   {
-    "titel": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-    "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-    "side": "artikel/392b6ec46b4e96bc.html",
-    "kategori": "Lanceringer",
-    "kilde": "Google DeepMind",
-    "dato": "2026-09-15T17:05:57+00:00",
-    "billede": "data/img/6c89a4c5768cee71.webp"
-   },
-   {
-    "titel": "Meta expands subscription push with new AI-focused plans",
-    "rubrik": "Meta One samler AI i nye abonnementer",
-    "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
-    "side": "artikel/5e497c447da816d2.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T17:05:24+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
-    "rubrik": "OpenAI bekræfter sikkerhedssamtaler med Anthropic og Google",
-    "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-    "side": "artikel/7ca41db25b66a63f.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T15:47:03+00:00",
-    "billede": "data/img/ca86aa56a301d8eb.webp"
-   },
-   {
-    "titel": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
-    "rubrik": "Profound henter 180 mio. dollar i Serie D",
-    "link": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-    "side": "artikel/a99284cc094f15db.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T15:22:48+00:00",
-    "billede": "data/img/1e65fc0072c052b7.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-16T12:48:27.967549+00:00",
+  "opdateret": "2026-09-16T17:43:50.882013+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -373,18 +373,18 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
    "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/"
+   "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
    "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-   "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/"
+   "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-16T12:48:27.535897+00:00",
+  "opdateret": "2026-09-16T17:43:50.455258+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-16T12:48:27.967549+00:00",
-  "artikler_i_alt": 83,
+  "opdateret": "2026-09-16T17:43:50.882013+00:00",
+  "artikler_i_alt": 90,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -803,9 +803,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
-    "som_ekstra": 5,
+    "i_listen": 34,
+    "som_ekstra": 7,
     "seneste": [
+     {
+      "rubrik": "ChatGPT og Claude kan nu styre Google Home",
+      "dato": "",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+      "side": "",
+      "hvor": "under",
+      "under": "Google Home åbner for fremmede AI-agenter"
+     },
+     {
+      "rubrik": "Anthropic smelter Claude chat og Cowork sammen",
+      "dato": "",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude får Docs og Slides i samme chat"
+     },
      {
       "rubrik": "Siri i iOS 27 er bygget på Gemini",
       "dato": "",
@@ -852,6 +870,24 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
      },
      {
+      "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
+      "dato": "2026-09-16T13:00:00",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+      "side": "artikel/766bd696566c6e2f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon åbner Alexa+ i Indien med hindi",
+      "dato": "2026-09-16T10:34:47",
+      "foerst_set": "2026-09-16T12:48:27",
+      "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+      "side": "artikel/5960227fd9e8cd26.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Nvidia-chef: AI-sikkerhed er et ingeniørproblem, ikke jura",
       "dato": "2026-09-16T00:20:39",
       "foerst_set": "2026-09-16T00:45:26",
@@ -877,42 +913,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c8e966977fdfbf21.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "BloombergNEF: Datacentre overgår Tyskland og Japan i gasforbrug",
-      "dato": "2026-09-15T18:29:20",
-      "foerst_set": "2026-09-15T21:43:26",
-      "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
-      "side": "artikel/837180ecd6ea084b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Relay lukker, da OpenAI bygger automatiken ind",
-      "dato": "2026-09-15T19:00:00",
-      "foerst_set": "2026-09-15T21:43:26",
-      "link": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "side": "artikel/7eb39231f1badccc.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta One samler AI i nye abonnementer",
-      "dato": "2026-09-15T17:05:24",
-      "foerst_set": "2026-09-15T18:27:03",
-      "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
-      "side": "artikel/5e497c447da816d2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI bekræfter sikkerhedssamtaler med Anthropic og Google",
-      "dato": "2026-09-15T15:47:03",
-      "foerst_set": "2026-09-15T18:27:03",
-      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-      "side": "artikel/7ca41db25b66a63f.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -926,7 +926,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 17,
+    "i_listen": 21,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -993,47 +993,47 @@ window.KOMMANDO_DATA = {
       "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
      },
      {
+      "rubrik": "Google Home åbner for fremmede AI-agenter",
+      "dato": "2026-09-16T13:00:00",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "side": "artikel/45384c84a9f2d30d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude får Docs og Slides i samme chat",
+      "dato": "2026-09-16T12:30:00",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+      "side": "artikel/25ccc59e06a2349b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
+      "dato": "2026-09-16T10:45:00",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "side": "artikel/45890a1118c84f70.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Apple vil tilbage til servere med M8 Ultra",
+      "dato": "2026-09-16T13:20:29",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "side": "artikel/bdc341c044799952.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "New York Times-måling: 61 procent afviser AI-datacentre",
       "dato": "2026-09-15T19:34:25",
       "foerst_set": "2026-09-16T00:45:26",
       "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
       "side": "artikel/066a2ef821973007.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "SimpliSafe lader vagter tale gennem dørklokken",
-      "dato": "2026-09-15T09:36:45",
-      "foerst_set": "2026-09-15T13:50:34",
-      "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
-      "side": "artikel/81cef9ef2f5c5442.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
-      "dato": "2026-09-14T18:59:41",
-      "foerst_set": "2026-09-15T01:52:19",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-      "side": "artikel/c9c7e7aae9376f42.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
-      "dato": "2026-09-14T17:21:42",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-      "side": "artikel/de5d887a67d769f9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Microsoft vil holde AI under menneskelig kontrol",
-      "dato": "2026-09-14T09:00:00",
-      "foerst_set": "2026-09-14T14:23:23",
-      "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
-      "side": "artikel/3a588dc9c7bf53d6.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1172,9 +1172,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Syensqo lader AI-agenter finde nye materialer",
+      "dato": "2026-09-16T12:47:34",
+      "foerst_set": "2026-09-16T17:43:50",
+      "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+      "side": "artikel/c81fa26a50d635d6.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Hyperscalerne skal være 2,7 gange mere produktive",
       "dato": "2026-09-15T10:00:00",
@@ -1382,12 +1391,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-16T13:02:13.015819+00:00",
+  "opdateret": "2026-09-16T18:06:01.130058+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 83,
-  "sidevisninger_i_alt": 319,
+  "sidevisninger_i_alt": 321,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1545,7 +1554,7 @@ window.KOMMANDO_DATA = {
    {
     "sti": "/",
     "besoeg": 80,
-    "visninger": 292
+    "visninger": 294
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",

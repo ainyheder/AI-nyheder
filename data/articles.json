@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-09-16T12:48:27.967549+00:00",
-  "antal": 83,
+  "opdateret": "2026-09-16T17:43:50.882013+00:00",
+  "antal": 90,
   "artikler": [
     {
       "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
@@ -181,6 +181,353 @@
       "historie_dato": "2026-09-15T17:00:00+00:00",
       "prio": 6,
       "side": "artikel/392b6ec46b4e96bc.html"
+    },
+    {
+      "titel": "Google will now let any AI agent run your smart home",
+      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "resume": "Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on […]",
+      "dato": "2026-09-16T13:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Google Home åbner for fremmede AI-agenter",
+      "resume_da": "MCP-integration lader Claude og andre agenter læse hjemmets data, styre enheder og bygge egne dashboards. Først til amerikanske Premium Advanced-brugere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Verge: Google åbner sit smart home for tredjepartsagenter via MCP, som kan styre enheder og analysere hjemmets data.",
+        "forbehold": "Samme lancering som andet medie dækker; stadig kun tidlig adgang.",
+        "emne": "google home mcp"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Agenter får adgang til Google Home",
+          "tekst": "Google har åbnet sit smart home for AI-agenter fra andre selskaber. Med integrationen **Home MCP** kan agenter som Claude, Hermes, Open Claw og Googles eget Antigravity læse og styre de enheder, der er forbundet til Google Home.\n\nMCP står for Model Context Protocol, en fælles standard som AI-agenter bruger til at tale med tjenester. Det er ikke en ny assistent fra Google, men en dør, andre agenter kan gå ind ad.\n\nIfølge Taylor Lehman, produktchef i Google Home & Nest, kan agenterne arbejde med alle enheder og hele hændelseshistorikken i hjemmet."
+        },
+        {
+          "overskrift": "Agenten kan tælle dit vasketøj",
+          "tekst": "Fordi agenten ser hele hjemmet og ikke kun en enkelt enhed, kan den trække linjer på tværs. Google nævner selv analyser på tværs af kameraer, hvor du kan spørge agenten, hvad dit barn lavede, da det kom hjem fra skole.\n\nEnhedshistorikken kan også vise, hvor mange maskiner vasketøj du kørte i sidste uge, eller hvor længe lyset stod tændt. Agenten kan desuden sende en lydbesked over en Google Home-højttaler, når den er færdig med en opgave.\n\nDen kan også bygge sit eget dashboard til at styre hjemmet."
+        },
+        {
+          "overskrift": "Døren kan agenten ikke låse op",
+          "tekst": "Adgang til låse, termostater og varme- og ventilationsanlæg rejser spørgsmål om sikkerhed og privatliv. Google siger, at Home MCP sætter grænser for, hvor mange handlinger en agent må udføre, og har sikkerhedsværn — blandt andet må en agent ikke låse døre op.\n\nLehman advarer dog om, at det afhænger af agenten, og at en forbindelse kan føre til uventet eller endda uønsket adfærd. Han anbefaler at læse Googles udviklerpolitikker og vilkår.\n\nI første omgang er integrationen kun tilgængelig for Google Home Premium Advanced-brugere i USA til 20 dollars om måneden eller 200 dollars om året, og den ruller ud i de kommende uger. Opsætningen kræver, at man opretter et Google Cloud-projekt og konfigurerer det til Home MCP."
+        },
+        {
+          "overskrift": "Gemini for Home beholder sin rolle",
+          "tekst": "Integrationen erstatter ikke Google-assistenten Gemini for Home. Den er stadig Googles egen måde at tale med hjemmet på gennem Home-appen og Nest-højttalere, efter at Google Assistant er blevet afløst.\n\nHome MCP lægger i stedet et ekstra lag ovenpå og lader fremmede agenter tale direkte med de samme enheder gennem deres egne apper."
+        },
+        {
+          "overskrift": "Google vil være hjemmets AWS",
+          "tekst": "Det store spil er ikke, at Claude kan tænde lyset, men at agenten får adgang til hjemmets data- og kontrollag. Google har i flere år bygget sig op som smart home-industriens infrastruktur, med API-adgang i 2024 og Gemini for Home som en komplet AI-pakke.\n\nStrategien ligner den, der gjorde AWS til infrastruktur for internetvirksomheder: Google leverer AI og maskinrummet, mens andre bygger tjenester ovenpå. Bruger udviklerne en anden agent end Antigravity, er det stadig et plus for Google, så længe de bruger Google Home.\n\nOm udviklerne tror på løftet, er et åbent spørgsmål. Google har tidligere lanceret og lukket platforme som Android @ Home, Weave, Project Brillo, Works with Nest og Google Assistant."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "20 dollars om måneden eller 200 dollars om året",
+          "label": "Pris for Google Home Premium Advanced i USA, hvor Home MCP lanceres først"
+        }
+      ],
+      "detaljer": [
+        "Home MCP understøtter agenter som Google Antigravity, Claude, Hermes og Open Claw.",
+        "Opsætningen kræver et Google Cloud-projekt konfigureret til Home MCP.",
+        "Open source-platformen Home Assistant har lavet en lignende MCP-integration.",
+        "Google gav API-adgang til sit smart home i 2024."
+      ],
+      "betydning": "Google rykker fra at sælge en assistent til at levere infrastrukturen, som andre agenter og udviklere bygger på — men udviklerne skal først tro på, at platformen overlever.",
+      "pointer": [
+        "Agenter kan læse enheder og hele hjemmets historik",
+        "Google forbyder agenten at låse døre op",
+        "Kun amerikanske Premium Advanced-brugere i første omgang"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:54:54.858310+00:00"
+      },
+      "historie_dato": "2026-09-16T17:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+          "rubrik": "ChatGPT og Claude kan nu styre Google Home",
+          "resume_da": "Google åbner en MCP-server for Google Home, så AI-agenter kan styre hjemmets enheder. Først til amerikanske abonnenter på Home Premium Advanced.",
+          "dato": "2026-09-16T17:00:00+00:00",
+          "foerst_set": "2026-09-16T17:43:50.882013+00:00"
+        }
+      ],
+      "billedmotiv": "A thick-walled house-shaped smart-home hub with a wide open doorway cut through its front, carrying Google's four-colour G across about a quarter of its width; a chunky speech bubble with a rounded tail passes through the doorway while solid lamp, plug and thermostat shapes line the inner wall.",
+      "billedmotiv_instruks": "7b3d86985d4d7a2e2f48",
+      "side": "artikel/45384c84a9f2d30d.html"
+    },
+    {
+      "titel": "Claude comes for Gemini with its own take on Docs and Slides",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+      "resume": "Claude is getting a pair of new tools today: Docs and Slides. They'll let you create documents and presentations through Claude chats, which you can export, edit, and share with other users. As part of the announcement, Anthropic is also simplifying how Claude chats work, merging regular chats and Cowork into \"one Claude,\" with all […]",
+      "dato": "2026-09-16T12:30:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Claude får Docs og Slides i samme chat",
+      "resume_da": "Anthropic samler chatværktøjerne i »one Claude« og lader dig lave dokumenter og præsentationer direkte i samtalen. Betaen kommer først til Pro og Max.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic tilføjer Docs og Slides i Claude-chats og slår chats og Cowork sammen til 'én Claude' med deling og eksport.",
+        "forbehold": "Ingen ny modelversion eller uafhængig test nævnt i kilden.",
+        "emne": "anthropic claude docs slides"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Dokumenter og slides fra chatten",
+          "tekst": "Du kan fra i dag bede Claude om at lave et dokument eller en præsentation direkte i samtalen. De to nye værktøjer hedder Claude Docs og Claude Slides og lanceres i beta.\n\nIndholdet kan eksporteres, redigeres og deles med andre brugere. Du kan bede Claude rette noget i det, den har lavet, eller rette det manuelt selv."
+        },
+        {
+          "overskrift": "Cowork smelter ind i Claude",
+          "tekst": "Samtidig lægger Anthropic almindelige chats og Cowork sammen til det, selskabet kalder »one Claude«, så alle AI-produktivitetsværktøjer er tilgængelige fra enhver chat. Det gælder også Artifacts og Claude Design.\n\nAnthropic formulerer det sådan, at Claude »nu kan finde ud af, hvad en opgave kræver«, så det, Cowork og Design kan, er tilgængeligt fra enhver samtale med de kontekster, færdigheder og forbindelser, man allerede har."
+        },
+        {
+          "overskrift": "Delt link i stedet for filer",
+          "tekst": "Claude Docs starter som private dokumenter, ligesom i Google Docs. Du kan dele dem med andre redaktører, som kan arbejde i dokumentet samtidig med dig.\n\nBåde samarbejdspartnere og Claude kan efterlade kommentarer, der ligner dem, man kender fra Google Docs. Ifølge Anthropic ligger alt, man laver med Claude Design, Slides eller Docs, på ét delbart link, man kan åbne på sin telefon."
+        },
+        {
+          "overskrift": "Google har indbygget forspring",
+          "tekst": "Anthropics modeller bliver generelt set som mere avancerede end Googles, men Googles AI-tjenester har fordelen af at være bygget direkte ind i Googles produktivitetsværktøjer.\n\nTidligere i år udvidede Google Geminis rolle i Google Docs, Sheets og Slides med blandt andet et Gemini-chatvindue i Docs, generering og redigering af hele dokumenter og slides med Gemini. Med Docs og Slides mindsker Claude afstanden til Googles værktøjskasse."
+        },
+        {
+          "overskrift": "Først til Pro og Max",
+          "tekst": "Opdateringen med »one Claude« ruller først ud til Pro- og Max-brugere på web, desktop og mobil »i løbet af de næste par uger«. Team- og gratisbrugere får adgang senere.\n\nAnthropic oplyser, at der ikke skal slås noget til for opdateringen, og at man fortsat kan bruge Claude-chatten, som man plejer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Claude Docs og Slides lanceres i beta sammen med Claude Design.",
+        "Dokumenter kan deles med redaktører, der arbejder samtidigt med dig.",
+        "Alt samles på ét delbart link, som kan åbnes på telefonen.",
+        "Ifølge Anthropic skal der ikke slås noget til for opdateringen."
+      ],
+      "betydning": "Dokumenter og præsentationer kan nu laves uden at forlade Claude-chatten, og alt, man laver, samles på ét delbart link.",
+      "pointer": [
+        "Docs og Slides lanceres i beta",
+        "Chats og Cowork bliver til one Claude",
+        "Udrulles først til Pro og Max"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:52:47.172989+00:00"
+      },
+      "historie_dato": "2026-09-16T16:30:00+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+          "rubrik": "Anthropic smelter Claude chat og Cowork sammen",
+          "resume_da": "Én fælles grænseflade skal fjerne tvivlen om, hvilken fane der passer til opgaven — og Claude får værktøjer til slides og dokumenter.",
+          "dato": "2026-09-16T16:30:00+00:00",
+          "foerst_set": "2026-09-16T17:43:50.882013+00:00"
+        }
+      ],
+      "billedmotiv": "Claude's warm terracotta many-rayed asterisk sits on a solid rounded chat bubble; from the bubble's open side emerge a rectangular document page and a wide presentation slide frame with a bold title bar and a solid image block, joined to the bubble by two short thick stems.",
+      "billedmotiv_instruks": "5da85610288215b058e3",
+      "side": "artikel/25ccc59e06a2349b.html"
+    },
+    {
+      "titel": "Amazon launches Alexa+ in India with Hindi support",
+      "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+      "resume": "Amazon is letting all customers use Alexa+ assistant in early access period.",
+      "dato": "2026-09-16T10:34:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-16T12:48:27.967549+00:00",
+      "eget_foerst_set": "2026-09-16T12:48:27.967549+00:00",
+      "rubrik": "Amazon åbner Alexa+ i Indien med hindi",
+      "resume_da": "Assistenten kan skifte mellem hindi og engelsk midt i en sætning og udføre flere opgaver i træk. Efter testperioden skal ikke-Prime-kunder betale 2.000 rupee om måneden.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon udruller Alexa+ i Indien med hindi-støtte, og alle kunder kan i en tidlig periode bruge assistenten.",
+        "forbehold": "Artiklen er kort og siger intet om pris, vilkår eller varigheden af den tidlige adgangsperiode.",
+        "emne": "amazon alexa+ indien"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Alexa+ taler hindi midt i sætningen",
+          "tekst": "Amazon har gjort sin nye assistent Alexa+ tilgængelig i Indien. Det sker få måneder efter, at selskabet i juni begyndte at invitere indiske brugere til at teste assistenten på hindi og senere også på engelsk.\n\nAlexa+ er en ny udgave af Amazons stemmeassistent Alexa. Ifølge Amazon kan den føre længere samtaler, holde styr på sammenhængen undervejs og lade brugeren skifte mellem hindi og engelsk midt i en sætning."
+        },
+        {
+          "overskrift": "Gratis for Prime, betaling for andre",
+          "tekst": "Assistenten er åben for alle kunder i Indien i Early Access, altså en tidlig testadgang, på både hindi og engelsk.\n\nEfter testperioden bliver Alexa+ gratis for Prime-kunder. Alle andre skal betale **2.000 rupee om måneden**, omkring 20,85 dollar."
+        },
+        {
+          "overskrift": "Bestiller dagligvarer og styrer hjemmet",
+          "tekst": "Ifølge Amazon kan Alexa+ håndtere komplekse opgaver med flere trin. Det gælder blandt andet at bestille dagligvarer hos selskabets hurtigleveringsservice Amazon Now og at tænde og slukke for smarte enheder i hjemmet.\n\nAssistenten er også koblet sammen med en række indiske tjenester: madleveringsselskabet Swiggy, Zomatos billetplatform District, rejsesiderne TripAdvisor og MakeMyTrip og restaurantappen EazyDiner. Musik kan afspilles fra Amazon Music og JioSaavn."
+        },
+        {
+          "overskrift": "Mere end 600 millioner hinditalende",
+          "tekst": "Indien har over 600 millioner hinditalende, og Amazon forsøger at nå det marked med sine smarte enheder og nye funktioner. Selskabet oplyser ikke absolutte tal, men siger, at salget af smarte hjemmeenheder er vokset 20 procent fra sidste år.\n\nAlexa kom til Indien på engelsk i 2017 og fik hindi i 2019. Amazon annoncerede den AI-drevne Alexa+ i 2025 og gjorde den tilgængelig for alle brugere i USA i 2026. I år er assistenten også lanceret i Storbritannien, Canada, Brasilien, Mexico, Italien og Tyskland med lokal sprogkontekst."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2.000 rupee om måneden",
+          "label": "Pris for kunder uden Prime-abonnement i Indien, svarer til 20,85 dollar"
+        },
+        {
+          "tal": "Over 600 millioner",
+          "label": "Hinditalende i Indien ifølge kilden"
+        },
+        {
+          "tal": "20 procent",
+          "label": "Vækst i Amazons salg af smarte hjemmeenheder fra sidste år; selskabet oplyser ikke absolutte tal"
+        }
+      ],
+      "detaljer": [
+        "Amazon Now er selskabets hurtigleveringsservice for dagligvarer.",
+        "Billetplatformen District tilhører Zomato."
+      ],
+      "betydning": "Amazon satser på Indiens mere end 600 millioner hinditalende, og assistenten trækker på lokale tjenester som Swiggy, District og MakeMyTrip for at kunne udføre opgaver i hverdagen.",
+      "pointer": [
+        "Alexa+ er åben i Early Access på hindi og engelsk",
+        "Gratis for Prime-kunder efter testperioden",
+        "Kan skifte sprog midt i en sætning"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:48:35.803992+00:00"
+      },
+      "billedmotiv": "A solid cylindrical smart speaker with Amazon's curved orange smile arrow across its front, flanked by two interlocking speech bubbles of different shapes, one thick and round, one narrow and angular, their tails crossing into one, with a short chain of three linked rings between them.",
+      "billedmotiv_instruks": "19a937507a3d674b43a9",
+      "side": "artikel/5960227fd9e8cd26.html"
+    },
+    {
+      "titel": "The sexy AI-powered dating app scams are here",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "resume": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but […]",
+      "dato": "2026-09-16T10:45:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
+      "resume_da": "En forudbetalt konto sendte over 100.000 kald til Claude i døgnet. Det førte Anthropic til et netværk af datingapps, hvor AI-personaer stod for de fleste samtaler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Sikkerhedsforsker afdækker svindel-datingapp med AI-genereret profil og opkald, hvor svindlere udgiver sig for at være en kvinde.",
+        "forbehold": "Enkeltstående case; svindlens udbredelse er ikke dokumenteret.",
+        "emne": "ai dating-svindel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "100.000 daglige kald afslørede netværket",
+          "tekst": "Anthropic lod sin trusselanalytiker Chris Cronbaugh tale på cybersikkerhedskonferencen Sleuthcon. Normalt er selskabet fåmælt, men her fremlagde han indlægget “Swipe Right, Pay Up: Industrial-Scale AI Catfishing”.\n\nAnledningen var aktivitet på AI-modellen Claude: en forudbetalt konto sendte over 100.000 API-forespørgsler i døgnet. Det afslørede et netværk på omkring 28 datingapps, hvor autonome AI-personaer – AI-profiler, der selv kan føre samtaler – stod for størstedelen af chatterne. Tusindvis af personer blev ifølge The Verge snydt af svindlere med AI."
+        },
+        {
+          "overskrift": "Kun én af fire er et menneske",
+          "tekst": "Ifølge Anthropic er brugerne for det meste mænd i midten eller slutningen af 30'erne. De matcher med profiler, de tror er rigtige kvinder. Men kun én ud af fire er et menneske, og den person er ikke en bruger, men en betalt gig-arbejder – en løsarbejder hyret til at bestå live-video-checks.\n\nGig-arbejderne skrev ikke selv kommentarer, men valgte mellem tre færdiglavede svar. AI-personaerne kunne ikke bevise, at de var mennesker, og henviste med en plausibel forklaring på, hvorfor video eller opkald ikke kunne lade sig gøre. Systemet fabrikerede likes, besøgende og video og registrerede, hvem der begyndte at mistænke en bot."
+        },
+        {
+          "overskrift": "Appsene sælger coins til samtaler",
+          "tekst": "Det er ikke en klassisk romancesvindel med penge eller kryptovaluta. Selve appen er svindlen: Den kræver coins for at fortsætte samtaler, og coins koster rigtige penge. Brugerne køber dem for at tale videre med nogen, de tror er mennesker, men som primært er maskiner. Gig-arbejderne holdt illusionen i gang, mens AI'en kunne fortsætte 24/7, efterhånden som coins strømmede ind."
+        },
+        {
+          "overskrift": "Flere AI-modeller delte arbejdet",
+          "tekst": "Ifølge rapporten var flere AI-udbydere involveret. Claude blev misbrugt til at drive de autonome samtalepersonaer. En lille model fra et andet selskab end Anthropic lavede de korte svarmuligheder, som gig-arbejderne trykkede på, samt scoring af ansigtsattraktivitet og moderation af foto og stemme.\n\nPrompterne holdt personaerne konsistente, og AI'en blev ikke fortalt, at den indgik i en svindel, fordi “monetiseringen og bedrageriet ikke var synligt inde fra nogen udveksling”, skriver Anthropic. Sikkerhedsforskeren Matthew “Zigula” Gore-Kormanik fandt den interne protokol bag operationen; manualen var på kinesisk og lå ifølge The Verge sandsynligvis ved et uheld inde i datingappen Doni."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Over 100.000 API-forespørgsler i døgnet",
+          "label": "Fra en forudbetalt konto på Claude; aktiviteten udløste Anthropics undersøgelse."
+        },
+        {
+          "tal": "Omkring 28 datingapps",
+          "label": "Netværk beskrevet af Anthropic."
+        },
+        {
+          "tal": "1 ud af 4",
+          "label": "Profiler, der var et rigtigt menneske; resten ifølge Anthropic AI."
+        },
+        {
+          "tal": "3 færdiglavede svar",
+          "label": "Gig-arbejdere valgte mellem dem i stedet for at skrive selv."
+        }
+      ],
+      "detaljer": [
+        "Appene fremstod som almindelige datingapps; Dora, Romi og Doni er nævnt.",
+        "Mange apps var stadig live i de store amerikanske app-butikker, mens Anthropic talte offentligt.",
+        "Protokollen viste overvågning af gig-arbejdere og transskriberede opkald, som ansatte kunne hente.",
+        "Gore-Kormanik fandt manualen på kinesisk inde i Doni, sandsynligvis ved et uheld."
+      ],
+      "betydning": "Mens Anthropic talte offentligt, var mange af appene stadig live i de store amerikanske app-butikker.",
+      "pointer": [
+        "Anthropic opdagede svindlen via over 100.000 daglige Claude-kald",
+        "Omkring 28 apps lod AI-personaer føre de fleste samtaler",
+        "Brugerne betalte coins for at tale med maskiner"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:51:22.599555+00:00"
+      },
+      "billedmotiv": "Claude's terracotta many-rayed asterisk caps a large solid chat bubble that feeds a tight grid of identical profile cards, each holding a plain grey photo rectangle and two short text bars; below, a chunky gold coin token slots into the card stack.",
+      "billedmotiv_instruks": "29c77779170e7e3601f4",
+      "side": "artikel/45890a1118c84f70.html"
     },
     {
       "titel": "Meta expands subscription push with new AI-focused plans",
@@ -816,81 +1163,10 @@
       "side": "artikel/d360e52aaf33362c.html"
     },
     {
-      "titel": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
-      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-      "resume": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
-      "dato": "2026-09-15T15:47:03+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "rubrik": "OpenAI bekræfter sikkerhedssamtaler med Anthropic og Google",
-      "resume_da": "I uger har OpenAI, Anthropic og Google DeepMind drøftet AI-sikkerhed i fællesskab. Nu bekræfter OpenAI det – og bakker op om uafhængige kontrolorganer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Bekræftelsen faldt i Washington",
-          "tekst": "OpenAI har i flere uger drøftet AI-sikkerhed med rivalerne Anthropic og Google DeepMind. Det fortalte OpenAIs globale politikchef, Chris Lehane, til journalister tirsdag, og Bloomberg bragte nyheden først.\n\nLehane er i Washington for at arbejde med amerikanske lovgivere om de katastrofale risici, som avancerede AI-modeller kan udgøre. Indtil tirsdag kendte offentligheden kun til samarbejdet gennem medierapporter og antydninger i interviews."
-        },
-        {
-          "overskrift": "Tredjeparter skal lukkes ind",
-          "tekst": "Baggrunden er et essay fra Anthropics topchef, Dario Amodei, som udkom lørdag. Han opfordrer branchen til at samarbejde om at bremse udviklingen af frontier-modeller – de mest avancerede AI-modeller – for at undgå katastrofale risici.\n\nOpenAIs Sam Altman, Googles Demis Hassabis og Elon Musk bakkede op. Altman sagde, at OpenAI vil følge Anthropic og lukke **tredjeparts-evaluatorer** ind i virksomheden for at overvåge sikkerheden."
-        },
-        {
-          "overskrift": "Et standardorgan uden regeringen",
-          "tekst": "Ifølge The Information arbejder de tre selskaber på at skabe et standardorgan for AI-branchen. Altman har efter sigende sagt til sine medarbejdere, at det skal ske uden støtte fra den amerikanske regering.\n\nHassabis har selv efterlyst et sådant organ. I juli opfordrede han USA til at oprette en AI-vagt med magt til at screene verdens mest avancerede modeller og koordinere en brancheomspændende opbremsning, hvis farerne tog til."
-        },
-        {
-          "overskrift": "Antitrust og modstand fra Trump",
-          "tekst": "Altman og andre har påpeget, at den slags koordinering kan bringe selskaberne i konflikt med **antitrustlovgivningen**, hvis den vurderes at dæmpe konkurrencen. Amodei foreslog en snæver dispensation fra regeringen; Lehane siger ifølge mediet, at selskaberne ikke har brug for en.\n\nModstanden er tydelig. Præsident Trump har kaldt sikkerhedsbekymringer for en svindel og advaret om, at en opbremsning vil give Kina et forspring. Hans AI-rådgiver David Sacks kalder frygten for eksistentielle risici overdrevet.\n\nPå samme møde tirsdag sagde Lehane, at OpenAI støtter et forslag i FRONTIER Act om at tvinge de førende laboratorier til at lukke »uafhængige verifikationsorganisationer« ind."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Amodeis essay udkom lørdag; Lehane udtalte sig tirsdag.",
-        "Altman har i et interview med Fortune antydet private drøftelser med andre AI-ledere.",
-        "TechCrunch har forsøgt at få kommentarer fra Anthropic, Google og OpenAI."
-      ],
-      "betydning": "Hvis selskaberne når til enighed, kan et fælles standardorgan blive den første branchekontrol med de mest avancerede modeller – uden om en amerikansk regering, der hidtil har afvist strammere regler.",
-      "pointer": [
-        "Samtalerne har stået på i flere uger",
-        "OpenAI vil lukke uafhængige evaluatorer ind",
-        "Trump afviser sikkerhedsbekymringer som en svindel"
-      ],
-      "billedmotiv": "A solid black OpenAI Blossom symbol and a terracotta-orange Anthropic starburst on two opaque blocks facing each other across a round table, with a thick shield-shaped document centered between them; a third blank block sits at the table, indicating a three-party safety discussion.",
-      "billedmotiv_instruks": "24db7147c7d8788515ac",
-      "billede": "data/img/ca86aa56a301d8eb.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI bekræfter ugers AI-sikkerhedsdrøftelser med Anthropic og Google DeepMind.",
-        "forbehold": "Drøftelsernes konkrete indhold er ikke oplyst, og kilderne er ikke navngivet.",
-        "emne": "ai-sikkerhedssamtaler"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-15T21:50:43.173215+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/7ca41db25b66a63f.html"
-    },
-    {
       "titel": "Microsoft says ‘people matter more than AI’ following safety concerns",
       "link": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
       "resume": "Microsoft is publishing a 37-page \"humanist AI code of conduct\" today, amid growing safety concerns over AI model progress. Anthropic CEO Dario Amodei called for a coordinated slow down of AI development over the weekend, after researchers warned recently that AI model progress could outpace our ability to safely deploy increasingly complex systems and verify […]",
-      "dato": "2026-09-14T09:00:00-04:00",
+      "dato": "2026-09-14T13:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-09-14T14:23:23.445220+00:00",
@@ -972,6 +1248,77 @@
       "historie_dato": "2026-09-14T13:00:00+00:00",
       "prio": 6,
       "side": "artikel/3a588dc9c7bf53d6.html"
+    },
+    {
+      "titel": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "resume": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
+      "dato": "2026-09-15T15:47:03+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
+      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
+      "rubrik": "OpenAI bekræfter sikkerhedssamtaler med Anthropic og Google",
+      "resume_da": "I uger har OpenAI, Anthropic og Google DeepMind drøftet AI-sikkerhed i fællesskab. Nu bekræfter OpenAI det – og bakker op om uafhængige kontrolorganer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Bekræftelsen faldt i Washington",
+          "tekst": "OpenAI har i flere uger drøftet AI-sikkerhed med rivalerne Anthropic og Google DeepMind. Det fortalte OpenAIs globale politikchef, Chris Lehane, til journalister tirsdag, og Bloomberg bragte nyheden først.\n\nLehane er i Washington for at arbejde med amerikanske lovgivere om de katastrofale risici, som avancerede AI-modeller kan udgøre. Indtil tirsdag kendte offentligheden kun til samarbejdet gennem medierapporter og antydninger i interviews."
+        },
+        {
+          "overskrift": "Tredjeparter skal lukkes ind",
+          "tekst": "Baggrunden er et essay fra Anthropics topchef, Dario Amodei, som udkom lørdag. Han opfordrer branchen til at samarbejde om at bremse udviklingen af frontier-modeller – de mest avancerede AI-modeller – for at undgå katastrofale risici.\n\nOpenAIs Sam Altman, Googles Demis Hassabis og Elon Musk bakkede op. Altman sagde, at OpenAI vil følge Anthropic og lukke **tredjeparts-evaluatorer** ind i virksomheden for at overvåge sikkerheden."
+        },
+        {
+          "overskrift": "Et standardorgan uden regeringen",
+          "tekst": "Ifølge The Information arbejder de tre selskaber på at skabe et standardorgan for AI-branchen. Altman har efter sigende sagt til sine medarbejdere, at det skal ske uden støtte fra den amerikanske regering.\n\nHassabis har selv efterlyst et sådant organ. I juli opfordrede han USA til at oprette en AI-vagt med magt til at screene verdens mest avancerede modeller og koordinere en brancheomspændende opbremsning, hvis farerne tog til."
+        },
+        {
+          "overskrift": "Antitrust og modstand fra Trump",
+          "tekst": "Altman og andre har påpeget, at den slags koordinering kan bringe selskaberne i konflikt med **antitrustlovgivningen**, hvis den vurderes at dæmpe konkurrencen. Amodei foreslog en snæver dispensation fra regeringen; Lehane siger ifølge mediet, at selskaberne ikke har brug for en.\n\nModstanden er tydelig. Præsident Trump har kaldt sikkerhedsbekymringer for en svindel og advaret om, at en opbremsning vil give Kina et forspring. Hans AI-rådgiver David Sacks kalder frygten for eksistentielle risici overdrevet.\n\nPå samme møde tirsdag sagde Lehane, at OpenAI støtter et forslag i FRONTIER Act om at tvinge de førende laboratorier til at lukke »uafhængige verifikationsorganisationer« ind."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Amodeis essay udkom lørdag; Lehane udtalte sig tirsdag.",
+        "Altman har i et interview med Fortune antydet private drøftelser med andre AI-ledere.",
+        "TechCrunch har forsøgt at få kommentarer fra Anthropic, Google og OpenAI."
+      ],
+      "betydning": "Hvis selskaberne når til enighed, kan et fælles standardorgan blive den første branchekontrol med de mest avancerede modeller – uden om en amerikansk regering, der hidtil har afvist strammere regler.",
+      "pointer": [
+        "Samtalerne har stået på i flere uger",
+        "OpenAI vil lukke uafhængige evaluatorer ind",
+        "Trump afviser sikkerhedsbekymringer som en svindel"
+      ],
+      "billedmotiv": "A solid black OpenAI Blossom symbol and a terracotta-orange Anthropic starburst on two opaque blocks facing each other across a round table, with a thick shield-shaped document centered between them; a third blank block sits at the table, indicating a three-party safety discussion.",
+      "billedmotiv_instruks": "24db7147c7d8788515ac",
+      "billede": "data/img/ca86aa56a301d8eb.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI bekræfter ugers AI-sikkerhedsdrøftelser med Anthropic og Google DeepMind.",
+        "forbehold": "Drøftelsernes konkrete indhold er ikke oplyst, og kilderne er ikke navngivet.",
+        "emne": "ai-sikkerhedssamtaler"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-15T21:50:43.173215+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/7ca41db25b66a63f.html"
     },
     {
       "titel": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
@@ -1401,6 +1748,86 @@
       "side": "artikel/29ba46951f8a05b0.html"
     },
     {
+      "titel": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
+      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
+      "resume": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
+      "dato": "2026-09-14T19:45:13+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "rubrik": "Musk dropper Apple – men ikke OpenAI",
+      "resume_da": "Elon Musk opgiver alle krav mod Apple i antitrustsagen, men fortsætter mod OpenAI frem mod retssagen i efteråret.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Musk opgiver krav mod Apple",
+          "tekst": "Mandag bekræftede Elon Musk i et retsdokument, at han har opgivet alle krav mod Apple. Han har samtidig forpligtet sig til aldrig at rejse dem igen mod Apple – men nægter at droppe de samme krav mod OpenAI.\n\nDokumentet forklarer ikke, om der ligger en forhandlet aftale bag, eller hvorfor Musk frivilligt trækker sagen mod Apple. Apple har hele tiden understreget, at aftalen med OpenAI aldrig var eksklusiv."
+        },
+        {
+          "overskrift": "Musks bud spænder fra 0 til 55",
+          "tekst": "Kernen i Musks sag er, at Apples integration af ChatGPT i iPhone-funktioner skulle give OpenAI monopol på brugernes AI-prompter og skade konkurrencen på både smartphone- og chatbotmarkedet.\n\nOpenAI har kaldt anklagerne grundløse og peget på, at Musk ikke selv tør gætte på, hvor stor en del af chatbotmarkedet der reelt er lukket. Hans skøn spænder fra 0 til 55 procent og bygger på løse overslagsberegninger."
+        },
+        {
+          "overskrift": "OpenAI følte sig brændt af Apple",
+          "tekst": "I maj begyndte OpenAI offentligt at sige, at selskabet følte sig \"brændt\" af Apple-integrationen, fordi Apple efter OpenAIs opfattelse ikke rigtig promoverede den.\n\nIfølge Bloomberg ventede OpenAI, at aftalen kunne give milliarder af dollars om året i abonnementer. I stedet designede Apple funktionerne, så ChatGPT-funktionaliteten var svær at finde, lød kritikken. OpenAI overvejede angiveligt selv at sagsøge, mens forhandlinger om en ny aftale gik i stå."
+        },
+        {
+          "overskrift": "Sagen fortsætter til efteråret",
+          "tekst": "Den nu indsnævrede sag mod OpenAI går efter planen for retten i efteråret. Både Apple og OpenAI har argumenteret for, at Musk slet ikke kan føre sagen, fordi ingen af hans selskaber laver smartphones.\n\nI sommer pålagde en domstol Apple at udlevere interne beskeder, hvor ansatte diskuterede OpenAI-aftalen. De beskeder kan ifølge kilden hjælpe Musk med at skærpe sine beregninger."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "0–55 procent",
+          "label": "Musks eget skøn over, hvor stor en del af chatbotmarkedet aftalen angiveligt lukkede, ifølge løse overslagsberegninger"
+        },
+        {
+          "tal": "Milliarder af dollars om året",
+          "label": "OpenAIs forventede abonnementsindtægter fra Apple-aftalen, ifølge en anonym leder til Bloomberg"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "I 2024 kaldte Musk Apples integration for \"creepy spyware\" på brugernes enheder.",
+        "Tidligere i år tabte Musk en sag mod OpenAI, fordi juryen enstemmigt fandt, at han ventede for længe.",
+        "Musks rivaliserende AI-selskab hedder nu SpaceXAI og jagter OpenAI.",
+        "Apple har advaret om, at en Musk-sejr vil skabe præcedens for hele techindustrien."
+      ],
+      "betydning": "Sagen mod OpenAI fortsætter til efteråret, hvor Apples udleverede interne beskeder kan hjælpe Musk med at skærpe det markedsandelsskøn, han bygger sit krav på.",
+      "pointer": [
+        "Apple ude af sagen – OpenAI inde",
+        "Musks markedsandelsskøn: 0 til 55 procent",
+        "Retssag mod OpenAI i efteråret"
+      ],
+      "billedmotiv": "Two upright solid slabs stand facing each other across a gap. The black slab bears the intact interwoven six-loop OpenAI Blossom symbol and stays planted; the second slab bears Apple's bitten-apple mark and is lifted clear away by a solid steel hook, leaving the OpenAI slab standing alone. Flat opaque forms, sharp edges.",
+      "billedmotiv_instruks": "947f4553c6809b3c6c6e",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Musk dropper Apple fra sit antitrust-søgsmål, men fortsætter sagen mod OpenAI om ChatGPT-integrationen.",
+        "forbehold": "",
+        "emne": "openai, musk, antitrust"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-15T02:05:22.928459+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/8f91eecbb9dc32c2.html"
+    },
+    {
       "titel": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
       "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
       "resume": "The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world.",
@@ -1488,86 +1915,6 @@
       },
       "prio": 5,
       "side": "artikel/837180ecd6ea084b.html"
-    },
-    {
-      "titel": "OpenAI stuck fighting Musk antitrust suit after Apple finds a way out",
-      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
-      "resume": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
-      "dato": "2026-09-14T19:45:13+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "rubrik": "Musk dropper Apple – men ikke OpenAI",
-      "resume_da": "Elon Musk opgiver alle krav mod Apple i antitrustsagen, men fortsætter mod OpenAI frem mod retssagen i efteråret.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Musk opgiver krav mod Apple",
-          "tekst": "Mandag bekræftede Elon Musk i et retsdokument, at han har opgivet alle krav mod Apple. Han har samtidig forpligtet sig til aldrig at rejse dem igen mod Apple – men nægter at droppe de samme krav mod OpenAI.\n\nDokumentet forklarer ikke, om der ligger en forhandlet aftale bag, eller hvorfor Musk frivilligt trækker sagen mod Apple. Apple har hele tiden understreget, at aftalen med OpenAI aldrig var eksklusiv."
-        },
-        {
-          "overskrift": "Musks bud spænder fra 0 til 55",
-          "tekst": "Kernen i Musks sag er, at Apples integration af ChatGPT i iPhone-funktioner skulle give OpenAI monopol på brugernes AI-prompter og skade konkurrencen på både smartphone- og chatbotmarkedet.\n\nOpenAI har kaldt anklagerne grundløse og peget på, at Musk ikke selv tør gætte på, hvor stor en del af chatbotmarkedet der reelt er lukket. Hans skøn spænder fra 0 til 55 procent og bygger på løse overslagsberegninger."
-        },
-        {
-          "overskrift": "OpenAI følte sig brændt af Apple",
-          "tekst": "I maj begyndte OpenAI offentligt at sige, at selskabet følte sig \"brændt\" af Apple-integrationen, fordi Apple efter OpenAIs opfattelse ikke rigtig promoverede den.\n\nIfølge Bloomberg ventede OpenAI, at aftalen kunne give milliarder af dollars om året i abonnementer. I stedet designede Apple funktionerne, så ChatGPT-funktionaliteten var svær at finde, lød kritikken. OpenAI overvejede angiveligt selv at sagsøge, mens forhandlinger om en ny aftale gik i stå."
-        },
-        {
-          "overskrift": "Sagen fortsætter til efteråret",
-          "tekst": "Den nu indsnævrede sag mod OpenAI går efter planen for retten i efteråret. Både Apple og OpenAI har argumenteret for, at Musk slet ikke kan føre sagen, fordi ingen af hans selskaber laver smartphones.\n\nI sommer pålagde en domstol Apple at udlevere interne beskeder, hvor ansatte diskuterede OpenAI-aftalen. De beskeder kan ifølge kilden hjælpe Musk med at skærpe sine beregninger."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "0–55 procent",
-          "label": "Musks eget skøn over, hvor stor en del af chatbotmarkedet aftalen angiveligt lukkede, ifølge løse overslagsberegninger"
-        },
-        {
-          "tal": "Milliarder af dollars om året",
-          "label": "OpenAIs forventede abonnementsindtægter fra Apple-aftalen, ifølge en anonym leder til Bloomberg"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "I 2024 kaldte Musk Apples integration for \"creepy spyware\" på brugernes enheder.",
-        "Tidligere i år tabte Musk en sag mod OpenAI, fordi juryen enstemmigt fandt, at han ventede for længe.",
-        "Musks rivaliserende AI-selskab hedder nu SpaceXAI og jagter OpenAI.",
-        "Apple har advaret om, at en Musk-sejr vil skabe præcedens for hele techindustrien."
-      ],
-      "betydning": "Sagen mod OpenAI fortsætter til efteråret, hvor Apples udleverede interne beskeder kan hjælpe Musk med at skærpe det markedsandelsskøn, han bygger sit krav på.",
-      "pointer": [
-        "Apple ude af sagen – OpenAI inde",
-        "Musks markedsandelsskøn: 0 til 55 procent",
-        "Retssag mod OpenAI i efteråret"
-      ],
-      "billedmotiv": "Two upright solid slabs stand facing each other across a gap. The black slab bears the intact interwoven six-loop OpenAI Blossom symbol and stays planted; the second slab bears Apple's bitten-apple mark and is lifted clear away by a solid steel hook, leaving the OpenAI slab standing alone. Flat opaque forms, sharp edges.",
-      "billedmotiv_instruks": "947f4553c6809b3c6c6e",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Musk dropper Apple fra sit antitrust-søgsmål, men fortsætter sagen mod OpenAI om ChatGPT-integrationen.",
-        "forbehold": "",
-        "emne": "openai, musk, antitrust"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-15T02:05:22.928459+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/8f91eecbb9dc32c2.html"
     },
     {
       "titel": "Founder’s cost-cutting obsession drove Unitree lead in cheap humanoid robots",
@@ -1663,6 +2010,73 @@
       "side": "artikel/c884bb2181557996.html"
     },
     {
+      "titel": "Building the materials foundation for AI",
+      "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+      "resume": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical limits around performance, thermal management, electrical efficiency, and reliability, creating new demands for materials that can do…",
+      "dato": "2026-09-16T12:47:34+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Syensqo lader AI-agenter finde nye materialer",
+      "resume_da": "Materialevirksomheden Syensqo bruger AI-agenter til at screene millioner af molekyler og forkorte udviklingen af materialer til AI-chips og datacentre.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "MIT Tech Review beskriver, hvordan halvledere og datacentre nærmer sig fysiske grænser og skaber nye krav til materialer.",
+        "forbehold": "Feature uden konkrete nye data, produkter eller metodedetaljer.",
+        "emne": "materialer til ai-infrastruktur"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Materialer rammer loftet for AI-infrastruktur",
+          "tekst": "AI presser halvledere og datacentre mod fysiske grænser. Det gælder ydeevne, varmeafledning, elektrisk effektivitet og pålidelighed, siger Mike Finelli, teknologi- og innovationsdirektør i materialevirksomheden Syensqo. Materialerne skal nu klare høj temperatur, høj renhed, kemisk modstandsdygtighed, modstandsdygtighed over for plasma og langvarig stabilitet på samme tid. Finelli kalder det at bevæge sig mod \"toppen af pyramiden\".\n\nSyensqo udvikler materialer til datacentre med høj spænding, tætningsmaterialer til halvlederfremstilling og væsker til direkte immersionskøling, hvor elektronikken nedsænkes i væske. Materialer udviklet til elbiler kan ifølge Finelli også bruges i datacentre, fordi begge kræver højere spænding og energitæthed."
+        },
+        {
+          "overskrift": "AI-agenter screener millioner af molekyler",
+          "tekst": "Udviklingen af nye materialer er selv blevet et AI-projekt. Syensqo bruger AI-agenter til digitalt at syntetisere millioner af mulige molekylkombinationer, forudsige deres ydeevne og bæredygtighed og indsnævre dem til en langt mindre gruppe, som testes i laboratoriet. Finelli siger, at det gør arbejdet \"bredere, dybere og hurtigere\" og giver forskerne mere tid til komplekse ingeniørproblemer. Et molekyle er en samling atomer; her er det kandidater til nye materialer.\n\nSamtidig forventer kunderne, at materialerne både opfylder tekniske krav og nedsætter miljøpåvirkningen. \"Vores mål er at fjerne afvejningen mellem ydeevne og bæredygtighed,\" siger Finelli. Derfor skal bæredygtighed vurderes tidligt i forskningen, ikke bagefter."
+        },
+        {
+          "overskrift": "Et kredsløb mellem AI og materialer",
+          "tekst": "Finelli ser et muligt kredsløb: AI hjælper med at udvikle materialer, der forbedrer AI-infrastrukturen, og bedre AI kan igen fremskynde opdagelsen af nye materialer. Han kalder det en accelereret materialeinnovationscyklus.\n\nDen tanke er et løfte fra Syensqo, ikke et uafhængigt resultat. Men hvis den holder, kan den ifølge Finelli udvide, hvad fremtidige teknologier kan præstere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Podcastafsnittet er produceret i partnerskab med Syensqo.",
+        "Mike Finelli er chief technology and innovation officer og chief North America officer i Syensqo.",
+        "20 % af Syensqos årlige omsætning kommer fra produkter og applikationer lanceret inden for de seneste fem år.",
+        "Syensqo leverer højtydende polymerer og avancerede materialer til hele elektronikkæden, fra halvlederfremstilling til chips."
+      ],
+      "betydning": "Syensqo forventer, at bedre materialer kan gøre AI-infrastruktur mere effektiv og samtidig give AI bedre redskaber til at finde endnu nye materialer.",
+      "pointer": [
+        "AI presser halvledere og datacentre mod fysiske grænser",
+        "AI-agenter screener millioner af molekyler for materialer",
+        "Syensqo vil fjerne afvejningen mellem ydeevne og bæredygtighed"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:57:04.479358+00:00"
+      },
+      "billedmotiv": "A wide funnel of thick opaque walls receives a dense stream of solid molecule models, spheres joined by short rods, and releases only a few at its narrow mouth where a square lab tray waits, two molecule balls resting on the tray's edge.",
+      "billedmotiv_instruks": "3179a1b41cb9b0ed116a",
+      "side": "artikel/c81fa26a50d635d6.html"
+    },
+    {
       "titel": "Mistral and Mozilla are bringing open, private and multilingual AI to your web browser",
       "link": "https://mistral.ai/news/mistral-x-mozilla/",
       "resume": "Open, private and multilingual AI is coming to your web browser. Mistral and Mozilla team up to put powerful, trustworthy AI where you already browse.",
@@ -1673,24 +2087,7 @@
       "eget_foerst_set": "2026-09-16T12:48:27.967549+00:00",
       "rubrik": "Mistral skal drive Firefox' AI-assistent",
       "resume_da": "Firefox' Smart Window får Mistral-modeller i Frankrig og Nordamerika, og samtaler gemmes ikke som standard. Storbritannien og Tyskland ventes senere i år.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Mistral og Mozilla varsler åben, privat og flersproget AI i browseren, men uden modelnavn, tidspunkt eller tilgængelighed.",
-        "forbehold": "Ingen oplysninger om hvilke modeller, browsere eller hvornår samarbejdet giver adgang.",
-        "emne": "mistral mozilla browser-ai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Firefox-assistenten skifter til Mistral",
@@ -1709,9 +2106,8 @@
           "tekst": "Mistral og Mozilla kalder sig begge fortalere for åben kildekode, og Mozilla har i mere end to årtier arbejdet for et åbent web.\n\nIfølge Mistral er aftalen ikke kun et produkt. Browseren bør være et sted, hvor forskellige AI-udbydere kan konkurrere, og hvor åben teknologi har en plads — ikke en envejskanal til én leverandør."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Smart Window kan finde og samle information fra brugerens åbne faneblade.",
         "Mistral har tidligere primært henvendt sig til virksomheder.",
@@ -1723,14 +2119,99 @@
         "Først Frankrig og Nordamerika, siden Storbritannien og Tyskland",
         "Ingen samtaler gemmes hos Mozilla som standard"
       ],
+      "billedmotiv": "A solid, opaque browser window shape with the Firefox fox-and-globe mark on its frame. A separate solid chat bubble beside it carries the Mistral AI orange-and-yellow flame-like 'M' emblem. The bubble scoops up a cluster of thick rectangular tab shapes, showing the assistant gathering information from open tabs.",
+      "billedmotiv_instruks": "543a5df71c5d7eeed991",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Mistral og Mozilla varsler åben, privat og flersproget AI i browseren, men uden modelnavn, tidspunkt eller tilgængelighed.",
+        "forbehold": "Ingen oplysninger om hvilke modeller, browsere eller hvornår samarbejdet giver adgang.",
+        "emne": "mistral mozilla browser-ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-16T12:53:05.644143+00:00"
       },
-      "billedmotiv": "A solid, opaque browser window shape with the Firefox fox-and-globe mark on its frame. A separate solid chat bubble beside it carries the Mistral AI orange-and-yellow flame-like 'M' emblem. The bubble scoops up a cluster of thick rectangular tab shapes, showing the assistant gathering information from open tabs.",
-      "billedmotiv_instruks": "543a5df71c5d7eeed991",
+      "prio": 4,
       "side": "artikel/c410e90a2cd9982e.html"
+    },
+    {
+      "titel": "Trump and Mike Johnson think the AI industry is overreacting",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "resume": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, […]",
+      "dato": "2026-09-13T19:41:48+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
+      "eget_foerst_set": "2026-09-13T21:06:13.791167+00:00",
+      "rubrik": "Trump og Johnson afviser at bremse AI",
+      "resume_da": "Anthropic-chefen Dario Amodei vil sænke tempoet i AI-udviklingen og får opbakning fra Altman, Musk og Hassabis. Trump og Johnson kalder det en overreaktion.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Anthropic-chef vil sænke tempoet",
+          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, har offentliggjort et langt åbent brev. Her skriver han, at det er tid til at sætte tempoet ned ved fronten af AI-udviklingen.\n\nOpenAI's Sam Altman og Elon Musk bakkede begge offentligt op om opfordringen på X. Også Demis Hassabis fra Alphabet gav en foreløbig støtte."
+        },
+        {
+          "overskrift": "Trump: Den der vinder AI, vinder",
+          "tekst": "Republikanerne Donald Trump og Mike Johnson, formand for Repræsentanternes Hus, mener ifølge The Verge, at AI-cheferne overreagerer. Begge frygter, at en pause i udviklingen kan give Kina overtaget.\n\nTrump sagde til Financial Times, at USA fører over Kina på AI-området, og at han vil holde det sådan, fordi \"den, der vinder AI, vinder\"."
+        },
+        {
+          "overskrift": "Johnson advarer mod hurtig regulering",
+          "tekst": "Johnson sagde på CNN til Jake Tapper, at det kan være en \"national sikkerhedstrussel\" i hast at lægge restriktioner på AI-udviklingen.\n\nHan opfordrede til ikke at gå i panik. Hvis Kongressen bare stormer ind og holder en slags krisesession for at regulere AI, vil USA tabe kapløbet til Kina, sagde han ifølge CNN."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Amodeis brev beskrives af The Verge som langt.",
+        "Trumps udtalelse er gengivet af Financial Times.",
+        "Johnson udtalte sig på CNN til Jake Tapper."
+      ],
+      "betydning": "Uenigheden betyder, at et forslag om at bremse AI-udviklingen nu møder modstand fra centrale republikanere, der peger på kapløbet med Kina.",
+      "pointer": [
+        "Anthropic-chef vil sænke tempoet i AI-udviklingen",
+        "Altman, Musk og Hassabis bakker op",
+        "Johnson: Regulering kan tabe kapløbet til Kina"
+      ],
+      "billedmotiv": "A thick solid circular brake disc held at its rim by a heavy calliper brake pad pressing down on it from above; the pad's face carries the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the motif width and clearly legible. A second solid pad grips the disc from below, showing a deliberate slowdown of the turning disc. Opaque, sharply separated forms on plain white.",
+      "billedmotiv_instruks": "85606d3375e5894dd066",
+      "billede": "data/img/984a20159ac8b04f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amodei vil sænke frontmodel-tempoet; Altman, Musk og Hassabis bakker op, mens Trump og Johnson kalder det en overreaktion.",
+        "forbehold": "Artiklen gengiver holdninger og politisk reaktion, ikke konkrete beslutninger.",
+        "emne": "ai-udvikling tempo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T09:27:06.441797+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/1d273e458a4640c0.html"
     },
     {
       "titel": "This doorbell camera lets a human security guard watch your front door",
@@ -1815,73 +2296,6 @@
       },
       "prio": 4,
       "side": "artikel/81cef9ef2f5c5442.html"
-    },
-    {
-      "titel": "Trump and Mike Johnson think the AI industry is overreacting",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-      "resume": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, […]",
-      "dato": "2026-09-13T15:41:48-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
-      "eget_foerst_set": "2026-09-13T21:06:13.791167+00:00",
-      "rubrik": "Trump og Johnson afviser at bremse AI",
-      "resume_da": "Anthropic-chefen Dario Amodei vil sænke tempoet i AI-udviklingen og får opbakning fra Altman, Musk og Hassabis. Trump og Johnson kalder det en overreaktion.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Anthropic-chef vil sænke tempoet",
-          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, har offentliggjort et langt åbent brev. Her skriver han, at det er tid til at sætte tempoet ned ved fronten af AI-udviklingen.\n\nOpenAI's Sam Altman og Elon Musk bakkede begge offentligt op om opfordringen på X. Også Demis Hassabis fra Alphabet gav en foreløbig støtte."
-        },
-        {
-          "overskrift": "Trump: Den der vinder AI, vinder",
-          "tekst": "Republikanerne Donald Trump og Mike Johnson, formand for Repræsentanternes Hus, mener ifølge The Verge, at AI-cheferne overreagerer. Begge frygter, at en pause i udviklingen kan give Kina overtaget.\n\nTrump sagde til Financial Times, at USA fører over Kina på AI-området, og at han vil holde det sådan, fordi \"den, der vinder AI, vinder\"."
-        },
-        {
-          "overskrift": "Johnson advarer mod hurtig regulering",
-          "tekst": "Johnson sagde på CNN til Jake Tapper, at det kan være en \"national sikkerhedstrussel\" i hast at lægge restriktioner på AI-udviklingen.\n\nHan opfordrede til ikke at gå i panik. Hvis Kongressen bare stormer ind og holder en slags krisesession for at regulere AI, vil USA tabe kapløbet til Kina, sagde han ifølge CNN."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Amodeis brev beskrives af The Verge som langt.",
-        "Trumps udtalelse er gengivet af Financial Times.",
-        "Johnson udtalte sig på CNN til Jake Tapper."
-      ],
-      "betydning": "Uenigheden betyder, at et forslag om at bremse AI-udviklingen nu møder modstand fra centrale republikanere, der peger på kapløbet med Kina.",
-      "pointer": [
-        "Anthropic-chef vil sænke tempoet i AI-udviklingen",
-        "Altman, Musk og Hassabis bakker op",
-        "Johnson: Regulering kan tabe kapløbet til Kina"
-      ],
-      "billedmotiv": "A thick solid circular brake disc held at its rim by a heavy calliper brake pad pressing down on it from above; the pad's face carries the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the motif width and clearly legible. A second solid pad grips the disc from below, showing a deliberate slowdown of the turning disc. Opaque, sharply separated forms on plain white.",
-      "billedmotiv_instruks": "85606d3375e5894dd066",
-      "billede": "data/img/984a20159ac8b04f.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amodei vil sænke frontmodel-tempoet; Altman, Musk og Hassabis bakker op, mens Trump og Johnson kalder det en overreaktion.",
-        "forbehold": "Artiklen gengiver holdninger og politisk reaktion, ikke konkrete beslutninger.",
-        "emne": "ai-udvikling tempo"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T09:27:06.441797+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/1d273e458a4640c0.html"
     },
     {
       "titel": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
@@ -1971,92 +2385,157 @@
       "side": "artikel/a99284cc094f15db.html"
     },
     {
-      "titel": "OpenAI just wants to win",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "resume": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]",
-      "dato": "2026-09-12T11:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-12T11:30:33.174560+00:00",
-      "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
-      "rubrik": "OpenAI hævder at have løst millionproblem",
-      "resume_da": "Selskabet siger, at et endnu ikke udgivet system fandt en løsning på Navier-Stokes på 88 timer. Striden om æren splitter matematikere og rivalen Anthropic.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "88 timer til en milliongåde",
-          "tekst": "Navier-Stokes beskriver, hvordan væsker og gasser strømmer, og er et af de syv såkaldte Millennium Prize-problemer, som Clay Mathematics Institute udpegede i 2000. Hvert af dem udløser en dusør på 1 million dollars til den, der løser det.\n\nOpenAI siger nu, at et af selskabets avancerede, endnu ikke udgivne systemer har fundet en løsning. Ifølge selskabet krævede det cirka 10.000 agenter, beregningskraft for tier af millioner dollars og blot 88 timer.\n\nOplysningerne om gennembruddet stammer fra OpenAI selv. Det står ikke klart i materialet, om andre har vurderet løsningen."
-        },
-        {
-          "overskrift": "Kapløbet mod Anthropic",
-          "tekst": "OpenAI fandt ud af, hvem den var oppe imod: Tristan Buckmaster, professor ved New York University, og Levent Alpöge, forsker hos konkurrenten Anthropic. De arbejdede også på Navier-Stokes, men havde ikke et færdigt bevis.\n\nBuckmaster kontaktede selv OpenAI. Ifølge ham blev samtalerne med OpenAI-forskeren Sébastien Bubeck konfliktfyldte, og han fik tilbudt næsten ubegrænset beregningskraft og eneret på at skrive OpenAIs artikel om gennembruddet, hvis Alpöge blev holdt ude. Buckmaster afviste og kalder tilbuddet en bestikkelse.\n\nBubeck afviser beskrivelsen, men bekræfter, at han tilbød OpenAIs ressourcer, og at Alpöges ansættelse hos Anthropic var en knast: Fra OpenAIs synspunkt var det svært at have et internt projekt med en Anthropic-ansat."
-        },
-        {
-          "overskrift": "Tvivlen om Codex-sporene",
-          "tekst": "Buckmaster har også rejst tvivl om, hvorvidt hans eget arbejde kan have bidraget til OpenAIs resultat. Han havde brugt selskabets værktøj Codex til at angribe problemet og mener ikke, at OpenAI har forklaret sig fyldestgørende.\n\nOpenAI-talsmand Laurance Fauconnet afviser kategorisk: \"Vi kan sige kategorisk, at det er umuligt, at Dr. Buckmasters Codex-prompts i de sidste to måneder har kunnet påvirke systemet på nogen måde, herunder træning.\" Buckmaster er ikke overbevist: \"Givet deres opførsel indtil nu bør man tage sådanne udtalelser med stor skepsis.\"\n\nIfølge The Verge har OpenAI tidligere anerkendt, at selskabet ikke kunne udelukke, at data fra hans brug af produkterne blev brugt til at forbedre modellen."
-        },
-        {
-          "overskrift": "Et forskningsmiljø i uro",
-          "tekst": "The Verge har talt med mere end et dusin matematikere. Selv forskere, der tvivler på de alvorligste anklager, beskriver et fag, der er rystet over OpenAIs optræden og frygter, hvad selskabet gør næste gang for at slå rivalerne.\n\nIfølge flere af dem vil OpenAI vinde, hvor matematikerne vil fremme faget."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "88 timer",
-          "label": "OpenAIs eget anslåede tidsforbrug på at finde en løsning på Navier-Stokes"
-        },
-        {
-          "tal": "Cirka 10.000 agenter",
-          "label": "Antal AI-agenter, som OpenAI siger, opgaven krævede"
-        },
-        {
-          "tal": "Tier af millioner dollars",
-          "label": "Beregningskraft, som OpenAI selv opgør omkostningen til"
-        },
-        {
-          "tal": "1 million dollars",
-          "label": "Dusør per Millennium Prize-problem, udlovet af Clay Mathematics Institute"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Kun ét af de syv Millennium Prize-problemer er løst siden 2000: Poincaré-formodningen.",
-        "Bubeck har afvist Buckmasters beskrivelse på sociale medier og i et interview med The New York Times.",
-        "Bubeck siger, at OpenAI har indgået lignende aftaler med andre matematikere, uden at nævne hvem.",
-        "Buckmaster beskriver sit kontor som en \"war room\", hvor kolleger granskede hans matematik og kontaktede advokater."
-      ],
-      "betydning": "Striden har gjort et ellers stilfærdigt fag uroligt. Flere matematikere frygter ifølge The Verge, hvad OpenAI gør næste gang for at slå rivalerne.",
-      "pointer": [
-        "Løsningen er OpenAIs eget udsagn.",
-        "Alpöge kalder samarbejdet personligt og uafhængigt af Anthropic.",
-        "OpenAI afviser, at Buckmasters Codex-brug har påvirket systemet."
-      ],
-      "billedmotiv": "A dense cluster of many identical small metal cubes packed around one large polished sphere, with a single cube set apart from the group.",
-      "billede": "data/img/3de0430d8c9d4e53.webp",
-      "kat_ai": true,
+      "titel": "Former Infosys chief’s AI startup nabs another $53M",
+      "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+      "resume": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch.",
+      "dato": "2026-09-16T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
+      "resume_da": "Vishal Sikkas fire måneder gamle AI-startup har nu 85 millioner dollar i alt og vil ansætte i Europa og Indien.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 2,
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "gennembrud",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI hævder at have løst et Millennium Prize-problem med tusindvis af agenter på 88 timer; matematikere reagerer kritisk.",
-        "forbehold": "OpenAI- hævdet resultat er ikke uafhængigt verificeret, og gennemsigtigheden kritiseres.",
-        "emne": "openai matematik"
+        "begrundelse": "Tidligere Infosys-chefs AI-startup rejser yderligere 53 mio. dollar få uger efter første seed-runde og melder om enterprise-kontrakter.",
+        "forbehold": "Kunder, kontraktværdier og produktets konkrete funktion er ikke specificeret.",
+        "emne": "ai-startup, kapitalrejsning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Fem uger efter første runde",
+          "tekst": "Hang Ten Systems har rejst yderligere 53 millioner dollar i en seed-runde. Den blev lukket kun fem uger efter selskabets første seed-runde på 32 millioner dollar, oplyser startupen til TechCrunch. Dermed er den samlede finansiering oppe på 85 millioner dollar.\n\nRunden blev ledet af Xora, Temaseks platform for tidlige investeringer, mens Mayfield deltog igen. Andre investorer er Aramco Ventures, Intels CEO Lip-Bu Tan og Yahoo-medstifter Jerry Yang.\n\nHang Ten blev grundlagt i maj af Vishal Sikka, tidligere CEO i Infosys, og rådgiver store virksomheder om AI-strategi og softwarebygning. Kunderne er typisk selskaber med over 10 milliarder dollar i årlig omsætning."
+        },
+        {
+          "overskrift": "Missionkritisk aftale på 25 dage",
+          "tekst": "Sikka siger, at AI flytter fokus i softwareudvikling fra at skrive kode til at definere krav og validere, om systemerne virker. Ifølge ham er selve byggedelen blevet næsten gratis og tager næsten ingen tid.\n\nInden for 25 dage efter det første møde med én kunde underskrev Hang Ten en kontrakt til flere millioner dollar om at bygge et missionkritisk softwaresystem, siger Sikka. Han har aldrig set virksomhedsaftaler bevæge sig så hurtigt.\n\nHang Ten arbejder nu med 21 store virksomheder, hvoraf nogle er i tilbuds- eller kontraktforhandling. Selskabet har sikret flere syvcifrede kontrakter og jagter ottecifrede aftaler. Kunderne omfatter Fresenius Kabi, Saudi Aramco og Siemens Energy."
+        },
+        {
+          "overskrift": "Hobie og hold på to til fire",
+          "tekst": "Hang Ten bygger ikke sin egen AI-model. Ingeniørerne bruger i stedet en intern ramme, Hobie, der pakker genanvendelige AI-»skills« til regulerede brancher og komplekse enterprise-projekter, siger medstifter Sanjay Rajagopalan.\n\nHan understreger, at selskabet leverer produktionssoftware og ikke bare en PoC, altså en teknisk prøve. Nogle projekter kan løses med teams på to til fire personer, hvor der tidligere skulle omkring 30 til. Kunder eller uafhængige tredjeparter står dog stadig for de endelige kvalitetskontroller og certificeringer.\n\nHang Ten lover kunderne en forbedring på 10 gange i omkostninger, hastighed eller en kombination. Det bringer selskabet i konkurrence med traditionelle systemintegratorer. Med den nye kapital vil Hang Ten udvide engineering, rådgivning og salg og ansætte i Europa og Indien. Selskabet har også fået og afvist opkøbstilbud fra »meget store virksomheder«, siger Sikka."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "53 mio. dollar",
+          "label": "Ekstra seed-runde, fem uger efter den første runde"
+        },
+        {
+          "tal": "85 mio. dollar",
+          "label": "Samlet rejst kapital efter to seed-runder"
+        },
+        {
+          "tal": "21",
+          "label": "Store virksomheder Hang Ten arbejder med eller forhandler med"
+        },
+        {
+          "tal": "25 dage",
+          "label": "Fra første møde med en kunde til underskrevet kontrakt i millionklassen"
+        },
+        {
+          "tal": "2-4 mod ca. 30",
+          "label": "Personer på projekter, der tidligere krævede omkring 30"
+        }
+      ],
+      "detaljer": [
+        "Hang Ten har hovedsæde i Palo Alto og cirka 20 til 25 ansatte i USA, Mellemøsten og Australien.",
+        "Navnet kommer fra surfermanøvren »hang ten«, hvor alle ti tæer er over brættets forkant.",
+        "Før Hang Ten grundlagde Sikka VianAI, som rejste 50 millioner dollar i seed og senere 140 millioner dollar."
+      ],
+      "betydning": "Hang Tens mindre AI-drevne projektteams kan presse traditionelle systemintegratorer og konsulenthuse, som i dag løser store softwareopgaver for virksomheder. Selskabet siger selv, at mange opgaver erstatter eksisterende leverandører.",
+      "pointer": [
+        "53 mio. dollar ekstra fem uger efter første runde",
+        "21 store virksomheder i fire regioner",
+        "Vil ansætte i Europa og Indien"
+      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-09-14T07:43:50.570637+00:00"
+        "kontrolleret": "2026-09-16T17:59:33.797177+00:00"
       },
-      "prio": 6,
-      "side": "artikel/41bb568b2b6096a5.html"
+      "billedmotiv": "A thick finned surfboard stands planted beside a rising stair of gold coin discs; at its base a tight cluster of four solid cubes faces a wide, receding row of many identical cubes, a deliberate gap of empty space between the two groups.",
+      "billedmotiv_instruks": "9406937212fd2312adc7",
+      "side": "artikel/766bd696566c6e2f.html"
+    },
+    {
+      "titel": "Apple might make servers again to cash in on the AI rush",
+      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "resume": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to […]",
+      "dato": "2026-09-16T13:20:29-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Apple vil tilbage til servere med M8 Ultra",
+      "resume_da": "Rygterne kommer fra The Information: Apple overvejer igen at bygge servere, og Nvidia kan blive makker på chippene.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "rygte",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Information: Apple overvejer atter at lave servere og muligt Nvidia-samarbejde for at møde AI-efterspørgslen.",
+        "forbehold": "Ubekræftet rygte bygget på anonyme kilder; ingen officiel Apple-bekræftelse.",
+        "emne": "apple servere"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Et servercomeback med M8 Ultra",
+          "tekst": "Apple planlægger ifølge mediet The Information at vende tilbage til servermarkedet. Selskabet trak sin Xserve-serie tilbage i 2011 og har siden overladt maskiner til virksomheder til andre producenter.\n\nDen nye server — hvad enten den kommer til at hedde Xserve eller noget andet — ventes tidligst at få debut i 2029. Ifølge rygterne skal den køre på **to eller fire M8 Ultra-chips**, alt efter model. Planerne kan dog nå at ændre sig."
+        },
+        {
+          "overskrift": "Mangler på Mac Mini og Mac Studio",
+          "tekst": "Baggrunden er den voksende efterspørgsel efter regnekraft, i takt med at AI-industrien breder sig. Apple vurderer ifølge The Information, at der er en åbning til selskabets strømstærke og energieffektive M-processorer, som er bygget på ARM-arkitekturen.\n\nApple har allerede et publikum: **Mac Mini og Mac Studio** er blevet populære blandt AI-udviklere, og det har ført til mangler på maskinerne."
+        },
+        {
+          "overskrift": "Nvidia kan forbinde chips til én",
+          "tekst": "Rygterne peger også på, at Apples servere kan tage Nvidias NVLink Fusion i brug. Teknologien forbinder flere chips, så de kan arbejde som én samlet enhed.\n\nApple har for nylig brugt Nvidia-chips til at drive sine fornyede Siri-servere. Et samarbejde om NVLink kan føre de to selskaber tættere sammen, selv om forholdet bag kulisserne historisk har været køligt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Rygterne stammer fra mediet The Information.",
+        "Apple annoncerede M6-chippen i august, så M8-serien ligger et stykke ude i fremtiden.",
+        "Xserve-serien blev trukket tilbage i 2011."
+      ],
+      "betydning": "Skulle planerne holde, kan Apple både sælge servere til AI-industrien og bruge dem internt — og et samarbejde med Nvidia vil være et kursskifte efter et historisk køligt forhold.",
+      "pointer": [
+        "Serveren ventes tidligst i 2029",
+        "To eller fire M8 Ultra-chips pr. model",
+        "Nvidia kan levere NVLink Fusion"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T18:00:57.477458+00:00"
+      },
+      "billedmotiv": "A tall solid server column stands upright, its front holding two large chip squares linked by a thick copper bridge, with Apple's black bitten-apple mark covering roughly a quarter of the column's width; a small empty chip slot gapes beside them.",
+      "billedmotiv_instruks": "0f6120b02bde7231aff5",
+      "side": "artikel/bdc341c044799952.html"
     },
     {
       "titel": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
@@ -2352,6 +2831,94 @@
       "side": "artikel/f4964ed02dfb9679.html"
     },
     {
+      "titel": "OpenAI just wants to win",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+      "resume": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]",
+      "dato": "2026-09-12T11:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-12T11:30:33.174560+00:00",
+      "eget_foerst_set": "2026-09-12T11:30:33.174560+00:00",
+      "rubrik": "OpenAI hævder at have løst millionproblem",
+      "resume_da": "Selskabet siger, at et endnu ikke udgivet system fandt en løsning på Navier-Stokes på 88 timer. Striden om æren splitter matematikere og rivalen Anthropic.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "88 timer til en milliongåde",
+          "tekst": "Navier-Stokes beskriver, hvordan væsker og gasser strømmer, og er et af de syv såkaldte Millennium Prize-problemer, som Clay Mathematics Institute udpegede i 2000. Hvert af dem udløser en dusør på 1 million dollars til den, der løser det.\n\nOpenAI siger nu, at et af selskabets avancerede, endnu ikke udgivne systemer har fundet en løsning. Ifølge selskabet krævede det cirka 10.000 agenter, beregningskraft for tier af millioner dollars og blot 88 timer.\n\nOplysningerne om gennembruddet stammer fra OpenAI selv. Det står ikke klart i materialet, om andre har vurderet løsningen."
+        },
+        {
+          "overskrift": "Kapløbet mod Anthropic",
+          "tekst": "OpenAI fandt ud af, hvem den var oppe imod: Tristan Buckmaster, professor ved New York University, og Levent Alpöge, forsker hos konkurrenten Anthropic. De arbejdede også på Navier-Stokes, men havde ikke et færdigt bevis.\n\nBuckmaster kontaktede selv OpenAI. Ifølge ham blev samtalerne med OpenAI-forskeren Sébastien Bubeck konfliktfyldte, og han fik tilbudt næsten ubegrænset beregningskraft og eneret på at skrive OpenAIs artikel om gennembruddet, hvis Alpöge blev holdt ude. Buckmaster afviste og kalder tilbuddet en bestikkelse.\n\nBubeck afviser beskrivelsen, men bekræfter, at han tilbød OpenAIs ressourcer, og at Alpöges ansættelse hos Anthropic var en knast: Fra OpenAIs synspunkt var det svært at have et internt projekt med en Anthropic-ansat."
+        },
+        {
+          "overskrift": "Tvivlen om Codex-sporene",
+          "tekst": "Buckmaster har også rejst tvivl om, hvorvidt hans eget arbejde kan have bidraget til OpenAIs resultat. Han havde brugt selskabets værktøj Codex til at angribe problemet og mener ikke, at OpenAI har forklaret sig fyldestgørende.\n\nOpenAI-talsmand Laurance Fauconnet afviser kategorisk: \"Vi kan sige kategorisk, at det er umuligt, at Dr. Buckmasters Codex-prompts i de sidste to måneder har kunnet påvirke systemet på nogen måde, herunder træning.\" Buckmaster er ikke overbevist: \"Givet deres opførsel indtil nu bør man tage sådanne udtalelser med stor skepsis.\"\n\nIfølge The Verge har OpenAI tidligere anerkendt, at selskabet ikke kunne udelukke, at data fra hans brug af produkterne blev brugt til at forbedre modellen."
+        },
+        {
+          "overskrift": "Et forskningsmiljø i uro",
+          "tekst": "The Verge har talt med mere end et dusin matematikere. Selv forskere, der tvivler på de alvorligste anklager, beskriver et fag, der er rystet over OpenAIs optræden og frygter, hvad selskabet gør næste gang for at slå rivalerne.\n\nIfølge flere af dem vil OpenAI vinde, hvor matematikerne vil fremme faget."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "88 timer",
+          "label": "OpenAIs eget anslåede tidsforbrug på at finde en løsning på Navier-Stokes"
+        },
+        {
+          "tal": "Cirka 10.000 agenter",
+          "label": "Antal AI-agenter, som OpenAI siger, opgaven krævede"
+        },
+        {
+          "tal": "Tier af millioner dollars",
+          "label": "Beregningskraft, som OpenAI selv opgør omkostningen til"
+        },
+        {
+          "tal": "1 million dollars",
+          "label": "Dusør per Millennium Prize-problem, udlovet af Clay Mathematics Institute"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Kun ét af de syv Millennium Prize-problemer er løst siden 2000: Poincaré-formodningen.",
+        "Bubeck har afvist Buckmasters beskrivelse på sociale medier og i et interview med The New York Times.",
+        "Bubeck siger, at OpenAI har indgået lignende aftaler med andre matematikere, uden at nævne hvem.",
+        "Buckmaster beskriver sit kontor som en \"war room\", hvor kolleger granskede hans matematik og kontaktede advokater."
+      ],
+      "betydning": "Striden har gjort et ellers stilfærdigt fag uroligt. Flere matematikere frygter ifølge The Verge, hvad OpenAI gør næste gang for at slå rivalerne.",
+      "pointer": [
+        "Løsningen er OpenAIs eget udsagn.",
+        "Alpöge kalder samarbejdet personligt og uafhængigt af Anthropic.",
+        "OpenAI afviser, at Buckmasters Codex-brug har påvirket systemet."
+      ],
+      "billedmotiv": "A dense cluster of many identical small metal cubes packed around one large polished sphere, with a single cube set apart from the group.",
+      "billede": "data/img/3de0430d8c9d4e53.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI hævder at have løst et Millennium Prize-problem med tusindvis af agenter på 88 timer; matematikere reagerer kritisk.",
+        "forbehold": "OpenAI- hævdet resultat er ikke uafhængigt verificeret, og gennemsigtigheden kritiseres.",
+        "emne": "openai matematik"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T07:43:50.570637+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/41bb568b2b6096a5.html"
+    },
+    {
       "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
       "link": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
       "resume": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
@@ -2433,81 +3000,6 @@
       },
       "prio": 4,
       "side": "artikel/7eb39231f1badccc.html"
-    },
-    {
-      "titel": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-      "resume": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he […]",
-      "dato": "2026-09-12T21:16:28+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-12T21:37:46.132954+00:00",
-      "eget_foerst_set": "2026-09-12T21:37:46.132954+00:00",
-      "rubrik": "OpenAI udskyder børsnotering: Altman siger nej til 2026",
-      "resume_da": "OpenAI har fortroligt ansøgt om børsnotering, men CEO Sam Altman afviser 2026 og peger på sikkerhed og manglende parathed.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Altman afviser børsnotering i 2026",
-          "tekst": "OpenAI skal ikke på børsen i 2026. Det fastslog CEO Sam Altman i et interview med Fortune, hvor han blev spurgt, om selskabet føler pres for at bevæge sig hurtigt på grund af sine børsplaner.\n\n“Vi har ikke travlt med en børsnotering,” sagde han ifølge The Verge og TechCrunch. Han kaldte det **uklogt** at gå på børsen lige nu, netop fordi der sker så meget på sikkerhedsområdet.\n\nAdspurgt direkte, om det betyder ikke i 2026, svarede han: “Jeg vil sige ikke i 2026. Vi har en masse ting, vi skal have gjort.” Han tilføjede, at selskabet vil gå på børsen, når det er klar – når forretningen er klar, og når tidspunktet i samfundet føles rigtigt."
-        },
-        {
-          "overskrift": "Muligt at bygge AI uden menneskelig kontrol",
-          "tekst": "I det 45 minutter lange interview talte Altman også om risiko. Han sagde, at det “absolut” er muligt at bygge en AI, der er uden for menneskelig kontrol.\n\nHan lovede samtidig at handle for at forhindre det, selv hvis det betyder, at træningen af en model må sættes på pause. Hans begrundelse var, at “der er risici, vi ikke bør påtage os på menneskehedens vegne.”\n\nIfølge The Verge berørte samtalen også emner som Hugging Face-hacket og rekursiv selvforbedring – altså ideen om en AI, der forbedrer sig selv."
-        },
-        {
-          "overskrift": "OpenAI har allerede ansøgt fortroligt",
-          "tekst": "Børsplanerne er ikke nye. OpenAI har allerede indsendt en fortrolig ansøgning om børsnotering, skriver TechCrunch, men selskabet går altså ikke på børsen i år.\n\nThe New York Times skrev i juni, at OpenAI havde hyret banker og advokater med et mål om børsnotering i tredje eller fjerde kvartal af 2026. Ifølge avisen hældede selskabet mod 2027 på grund af uro på teknologimarkedet og egne økonomiske udfordringer."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
-          "rubrik": "Altman: OpenAI bliver ikke børsnoteret i 2026",
-          "resume_da": "OpenAI har indsendt en fortrolig ansøgning om børsnotering, men ifølge topchef Sam Altman sker der ingen notering i år.",
-          "foerst_set": "2026-09-12T21:37:46.132954+00:00"
-        }
-      ],
-      "detaljer": [
-        "Interviewet med Fortune varede 45 minutter, ifølge The Verge.",
-        "Fortune-chefredaktør Alyson Shontell stod for interviewet.",
-        "Altman har tidligere sagt, at børsnoteringen kommer, når OpenAI er klar."
-      ],
-      "betydning": "Uden børsnotering i 2026 skal OpenAI ikke stå til regnskab over for aktiemarkedet i år, mens den fortrolige ansøgning allerede ligger klar til et senere tidspunkt.",
-      "pointer": [
-        "Ingen børsnotering i 2026, siger Sam Altman",
-        "Sikkerhed gør tidspunktet uklogt, mener han",
-        "OpenAI har allerede ansøgt fortroligt om børsnotering"
-      ],
-      "billedmotiv": "A polished brass exchange bell wrapped tightly in cloth and bound with thick rope, tipped on its side with a wooden mallet resting beside it, silent.",
-      "billede": "data/img/191365ae11d4a90c.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Altman bekræfter ifølge The Verge, at OpenAI ikke går på børs i 2026, selv om selskabet har indsendt fortrolig IPO-ansøgning.",
-        "forbehold": "Kun Altmans udtalelser; ingen tidsplan eller officiel begrundelse.",
-        "emne": "openai børsnotering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T12:15:16.767260+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/9276271a0e3f9a08.html"
     },
     {
       "titel": "OpenAI agents attacked RubyGems back in May",
@@ -2610,6 +3102,81 @@
       },
       "prio": 7,
       "side": "artikel/5c41fc251a24d093.html"
+    },
+    {
+      "titel": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+      "resume": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he […]",
+      "dato": "2026-09-12T21:16:28+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-12T21:37:46.132954+00:00",
+      "eget_foerst_set": "2026-09-12T21:37:46.132954+00:00",
+      "rubrik": "OpenAI udskyder børsnotering: Altman siger nej til 2026",
+      "resume_da": "OpenAI har fortroligt ansøgt om børsnotering, men CEO Sam Altman afviser 2026 og peger på sikkerhed og manglende parathed.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Altman afviser børsnotering i 2026",
+          "tekst": "OpenAI skal ikke på børsen i 2026. Det fastslog CEO Sam Altman i et interview med Fortune, hvor han blev spurgt, om selskabet føler pres for at bevæge sig hurtigt på grund af sine børsplaner.\n\n“Vi har ikke travlt med en børsnotering,” sagde han ifølge The Verge og TechCrunch. Han kaldte det **uklogt** at gå på børsen lige nu, netop fordi der sker så meget på sikkerhedsområdet.\n\nAdspurgt direkte, om det betyder ikke i 2026, svarede han: “Jeg vil sige ikke i 2026. Vi har en masse ting, vi skal have gjort.” Han tilføjede, at selskabet vil gå på børsen, når det er klar – når forretningen er klar, og når tidspunktet i samfundet føles rigtigt."
+        },
+        {
+          "overskrift": "Muligt at bygge AI uden menneskelig kontrol",
+          "tekst": "I det 45 minutter lange interview talte Altman også om risiko. Han sagde, at det “absolut” er muligt at bygge en AI, der er uden for menneskelig kontrol.\n\nHan lovede samtidig at handle for at forhindre det, selv hvis det betyder, at træningen af en model må sættes på pause. Hans begrundelse var, at “der er risici, vi ikke bør påtage os på menneskehedens vegne.”\n\nIfølge The Verge berørte samtalen også emner som Hugging Face-hacket og rekursiv selvforbedring – altså ideen om en AI, der forbedrer sig selv."
+        },
+        {
+          "overskrift": "OpenAI har allerede ansøgt fortroligt",
+          "tekst": "Børsplanerne er ikke nye. OpenAI har allerede indsendt en fortrolig ansøgning om børsnotering, skriver TechCrunch, men selskabet går altså ikke på børsen i år.\n\nThe New York Times skrev i juni, at OpenAI havde hyret banker og advokater med et mål om børsnotering i tredje eller fjerde kvartal af 2026. Ifølge avisen hældede selskabet mod 2027 på grund af uro på teknologimarkedet og egne økonomiske udfordringer."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+          "rubrik": "Altman: OpenAI bliver ikke børsnoteret i 2026",
+          "resume_da": "OpenAI har indsendt en fortrolig ansøgning om børsnotering, men ifølge topchef Sam Altman sker der ingen notering i år.",
+          "foerst_set": "2026-09-12T21:37:46.132954+00:00"
+        }
+      ],
+      "detaljer": [
+        "Interviewet med Fortune varede 45 minutter, ifølge The Verge.",
+        "Fortune-chefredaktør Alyson Shontell stod for interviewet.",
+        "Altman har tidligere sagt, at børsnoteringen kommer, når OpenAI er klar."
+      ],
+      "betydning": "Uden børsnotering i 2026 skal OpenAI ikke stå til regnskab over for aktiemarkedet i år, mens den fortrolige ansøgning allerede ligger klar til et senere tidspunkt.",
+      "pointer": [
+        "Ingen børsnotering i 2026, siger Sam Altman",
+        "Sikkerhed gør tidspunktet uklogt, mener han",
+        "OpenAI har allerede ansøgt fortroligt om børsnotering"
+      ],
+      "billedmotiv": "A polished brass exchange bell wrapped tightly in cloth and bound with thick rope, tipped on its side with a wooden mallet resting beside it, silent.",
+      "billede": "data/img/191365ae11d4a90c.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Altman bekræfter ifølge The Verge, at OpenAI ikke går på børs i 2026, selv om selskabet har indsendt fortrolig IPO-ansøgning.",
+        "forbehold": "Kun Altmans udtalelser; ingen tidsplan eller officiel begrundelse.",
+        "emne": "openai børsnotering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T12:15:16.767260+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/9276271a0e3f9a08.html"
     },
     {
       "titel": "AI agents now have a place to snitch",
@@ -2863,6 +3430,91 @@
       "side": "artikel/6b54256d4afbc2dd.html"
     },
     {
+      "titel": "The AI data center boom is colliding with cities scarred by big industry",
+      "link": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
+      "resume": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
+      "dato": "2026-09-15T21:47:38+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T00:45:26.311614+00:00",
+      "eget_foerst_set": "2026-09-16T00:45:26.311614+00:00",
+      "rubrik": "Hochul bremser nye AI-datacentre i New York",
+      "resume_da": "Moratorier i flere amerikanske byer bremser udbygningen, og i Philadelphia mødte over 100 protesterende op foran City Hall.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Rally i Philadelphia kræver midlertidigt stop",
+          "tekst": "I Philadelphia mødte over 100 mennesker op til en rally foran City Hall for at kræve et moratorium – et midlertidigt stop – for nye AI-datacentre i byen.\n\nBag kampagnen står organisationen Philly Thrive. Dens leder Shawmar Pitts voksede op ved det daværende største olieraffinaderi på USA's østkyst, som lukkede efter en eksplosion i 2019. Byen har peget på to mulige placeringer for et datacenter, og den ene ligger i hans kvarter, Grays Ferry.\n\n»Vi vil ikke have datacentre,« sagde bestyrelsesformand Sonya Sanders på rallyet. »Vi vil ikke have forureningen, vi vil ikke have støjen, og vi ved, at de ikke kommer til at give os flere job.«"
+        },
+        {
+          "overskrift": "Mere naturgas end Tyskland og Japan",
+          "tekst": "AI-datacentre bruger enorme mængder strøm, og det mærkes på klimaet. Analysehuset BloombergNEF forudser, at amerikanske datacentre i 2035 vil bruge mere naturgas end Tyskland og Japan tilsammen – næsten dobbelt så meget som husets egen prognose ni måneder tidligere.\n\nNaturgas brænder renere end olie, men er ikke uskadelig. Når en kubikfod naturgas brændes, udledes hvad der svarer til 60 gram CO2, og den ekstra efterspørgsel ventes at give 1 million ton mere drivhusgasforurening om dagen – omkring 12 procent af USA's nuværende udledning."
+        },
+        {
+          "overskrift": "New York og fem byer bremser byggeriet",
+          "tekst": "Flere steder er bremsen allerede trådt i bund. Guvernør Kathy Hochul har underskrevet en bekendtgørelse, der midlertidigt forhindrer delstaten New York i at godkende nye tilladelser til store projekter.\n\n»Fremskridt bør ikke komme med en højere elregning, slettet vandforsyning eller støjforurening,« sagde hun. Også Denver, Indianapolis, Asheville, Charlotte og Reno har vedtaget moratorier for datacentre. Formålet er typisk at give byens embedsmænd tid til at undersøge, hvilke konsekvenser byggeriet kan få."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "1 million ton drivhusgasser om dagen",
+          "label": "Ventet merudledning fra den øgede datacenter-efterspørgsel i USA"
+        },
+        {
+          "tal": "12 procent",
+          "label": "Merudledningens andel af USA's nuværende samlede drivhusgasudledning"
+        },
+        {
+          "tal": "60 gram CO2",
+          "label": "Udledning pr. kubikfod naturgas, der brændes"
+        },
+        {
+          "tal": "335.000 tønder råolie dagligt",
+          "label": "Kapaciteten på raffinaderiet Philadelphia Energy Solutions før lukningen"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Over 100 deltagere mødte op til kampagnen No Data Centers in Philly",
+        "De to mulige placeringer er Northeast Philadelphia og Grays Ferry",
+        "BloombergNEF's prognose er næsten dobbelt så høj som for ni måneder siden",
+        "Harvard-forskere fandt i 2021, at forurening fra fossile brændsler er årsag til hvert femte dødsfald globalt"
+      ],
+      "betydning": "Hvis prognosen holder, kan datacentre blive en af de største nye kilder til amerikansk drivhusgasudledning – og den lokale modstand ser ud til at kunne bremse udbygningen.",
+      "pointer": [
+        "Philadelphia-rally kræver midlertidigt stop for datacentre",
+        "New York indfører midlertidigt stop for nye tilladelser",
+        "Fem amerikanske byer har vedtaget moratorier"
+      ],
+      "billedmotiv": "A solid blue-grey data centre building with cooling towers, a wide pause symbol of two thick dark bars laid across its front wall, and a heavy orange electrical plug standing upright beside it. Opaque, chunky, clearly separated shapes with crisp outlines and flat plain colours.",
+      "billedmotiv_instruks": "6a68de55714d1ba5031a",
+      "billede": "data/img/7c2a4bb0fcfc23c5.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Lokal modstand mod datacentre breder sig til Philadelphia-kvarter præget af tidligere olieraffinaderi.",
+        "forbehold": "Enkeltstående byrådssignal uden beslutning eller omfang af byggeri.",
+        "emne": "datacentre, philadelphia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T00:51:59.852466+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/f5e80ecad1974be7.html"
+    },
+    {
       "titel": "Anthropic CEO outlines plan to slow AI development",
       "link": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
       "resume": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?",
@@ -2962,91 +3614,6 @@
       "side": "artikel/82c98d9b6abfab67.html"
     },
     {
-      "titel": "The AI data center boom is colliding with cities scarred by big industry",
-      "link": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-      "resume": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
-      "dato": "2026-09-15T21:47:38+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-16T00:45:26.311614+00:00",
-      "eget_foerst_set": "2026-09-16T00:45:26.311614+00:00",
-      "rubrik": "Hochul bremser nye AI-datacentre i New York",
-      "resume_da": "Moratorier i flere amerikanske byer bremser udbygningen, og i Philadelphia mødte over 100 protesterende op foran City Hall.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Rally i Philadelphia kræver midlertidigt stop",
-          "tekst": "I Philadelphia mødte over 100 mennesker op til en rally foran City Hall for at kræve et moratorium – et midlertidigt stop – for nye AI-datacentre i byen.\n\nBag kampagnen står organisationen Philly Thrive. Dens leder Shawmar Pitts voksede op ved det daværende største olieraffinaderi på USA's østkyst, som lukkede efter en eksplosion i 2019. Byen har peget på to mulige placeringer for et datacenter, og den ene ligger i hans kvarter, Grays Ferry.\n\n»Vi vil ikke have datacentre,« sagde bestyrelsesformand Sonya Sanders på rallyet. »Vi vil ikke have forureningen, vi vil ikke have støjen, og vi ved, at de ikke kommer til at give os flere job.«"
-        },
-        {
-          "overskrift": "Mere naturgas end Tyskland og Japan",
-          "tekst": "AI-datacentre bruger enorme mængder strøm, og det mærkes på klimaet. Analysehuset BloombergNEF forudser, at amerikanske datacentre i 2035 vil bruge mere naturgas end Tyskland og Japan tilsammen – næsten dobbelt så meget som husets egen prognose ni måneder tidligere.\n\nNaturgas brænder renere end olie, men er ikke uskadelig. Når en kubikfod naturgas brændes, udledes hvad der svarer til 60 gram CO2, og den ekstra efterspørgsel ventes at give 1 million ton mere drivhusgasforurening om dagen – omkring 12 procent af USA's nuværende udledning."
-        },
-        {
-          "overskrift": "New York og fem byer bremser byggeriet",
-          "tekst": "Flere steder er bremsen allerede trådt i bund. Guvernør Kathy Hochul har underskrevet en bekendtgørelse, der midlertidigt forhindrer delstaten New York i at godkende nye tilladelser til store projekter.\n\n»Fremskridt bør ikke komme med en højere elregning, slettet vandforsyning eller støjforurening,« sagde hun. Også Denver, Indianapolis, Asheville, Charlotte og Reno har vedtaget moratorier for datacentre. Formålet er typisk at give byens embedsmænd tid til at undersøge, hvilke konsekvenser byggeriet kan få."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "1 million ton drivhusgasser om dagen",
-          "label": "Ventet merudledning fra den øgede datacenter-efterspørgsel i USA"
-        },
-        {
-          "tal": "12 procent",
-          "label": "Merudledningens andel af USA's nuværende samlede drivhusgasudledning"
-        },
-        {
-          "tal": "60 gram CO2",
-          "label": "Udledning pr. kubikfod naturgas, der brændes"
-        },
-        {
-          "tal": "335.000 tønder råolie dagligt",
-          "label": "Kapaciteten på raffinaderiet Philadelphia Energy Solutions før lukningen"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Over 100 deltagere mødte op til kampagnen No Data Centers in Philly",
-        "De to mulige placeringer er Northeast Philadelphia og Grays Ferry",
-        "BloombergNEF's prognose er næsten dobbelt så høj som for ni måneder siden",
-        "Harvard-forskere fandt i 2021, at forurening fra fossile brændsler er årsag til hvert femte dødsfald globalt"
-      ],
-      "betydning": "Hvis prognosen holder, kan datacentre blive en af de største nye kilder til amerikansk drivhusgasudledning – og den lokale modstand ser ud til at kunne bremse udbygningen.",
-      "pointer": [
-        "Philadelphia-rally kræver midlertidigt stop for datacentre",
-        "New York indfører midlertidigt stop for nye tilladelser",
-        "Fem amerikanske byer har vedtaget moratorier"
-      ],
-      "billedmotiv": "A solid blue-grey data centre building with cooling towers, a wide pause symbol of two thick dark bars laid across its front wall, and a heavy orange electrical plug standing upright beside it. Opaque, chunky, clearly separated shapes with crisp outlines and flat plain colours.",
-      "billedmotiv_instruks": "6a68de55714d1ba5031a",
-      "billede": "data/img/7c2a4bb0fcfc23c5.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Lokal modstand mod datacentre breder sig til Philadelphia-kvarter præget af tidligere olieraffinaderi.",
-        "forbehold": "Enkeltstående byrådssignal uden beslutning eller omfang af byggeri.",
-        "emne": "datacentre, philadelphia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T00:51:59.852466+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/f5e80ecad1974be7.html"
-    },
-    {
       "titel": "Your Agent Aced the Task. Will It Do It Again?",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
       "resume": "",
@@ -3133,94 +3700,6 @@
       },
       "prio": 4,
       "side": "artikel/5236dbdf16446213.html"
-    },
-    {
-      "titel": "Trump is giving data centers a pass to pollute",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-      "resume": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
-      "dato": "2026-09-12T14:41:27+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-12T15:15:33.289402+00:00",
-      "eget_foerst_set": "2026-09-12T15:15:33.289402+00:00",
-      "rubrik": "Trump lemper miljøregler for AI-datacentre",
-      "resume_da": "Tidligere EPA-ansatte advarer i ny rapport om 30 føderale tiltag siden januar 2025, der kan øge sundhedsrisici fra AI-datacentre. Gruppen kræver et løfte fra Trump.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "30 tiltag siden januar 2025",
-          "tekst": "En gruppe tidligere ansatte i det amerikanske miljøagentur EPA udgav denne uge en rapport. Den peger på 30 føderale handlinger siden januar 2025, som de mener forværrer sundhedsrisici fra forurening knyttet til AI-datacentre. **17 af dem nævner direkte AI eller datacentre.**\n\nBag rapporten står Environmental Protection Network, EPN, en uafhængig organisation af tidligere EPA-folk. De opfordrer præsident Donald Trump til at vedtage et \"Data Center Health Protection Pledge\"."
-        },
-        {
-          "overskrift": "Deregulering i AI'ens navn",
-          "tekst": "Trump-administrationen har rullet dusinvis af regler tilbage og skåret i EPA's personale og budget, skriver EPN. EPA-administrator Lee Zeldin har sagt, at målet er at gøre USA til \"the AI capital of the world\" gennem deregulering.\n\nI juli 2025 udgav Trump en \"AI Action Plan\", der anbefaler at \"strømline eller reducere regler\" under Clean Air Act, Clean Water Act og Superfund-loven for hurtigere at godkende datacenterprojekter og chipfabrikker."
-        },
-        {
-          "overskrift": "Forurening rammer langt fra datacentret",
-          "tekst": "Forureningen rammer ifølge EPN også folk, der ikke bor tæt på et datacenter. Nye gasprojekter skal levere strøm til de energitunge anlæg, og efterspørgslen efter avancerede chips genopliver produktionen af svært nedbrydelige \"forever chemicals\".\n\n\"Du behøver ikke være i nærheden af et datacenter for at blive påvirket, for forureningen kommer ikke kun fra datacentrene selv,\" siger Lynn Goldman, pædiatriker og tidligere assisterende EPA-administrator."
-        },
-        {
-          "overskrift": "1.300 for tidlige dødsfald i 2028",
-          "tekst": "Rapporten citerer et studie fra UC Riverside, Caltech og Rochester Institute of Technology. Det anslår, at luftforurening knyttet til AI kan føre til op til 1.300 for tidlige dødsfald og mere end 20 milliarder dollars i folkesundhedsomkostninger inden 2028.\n\nEPA-talsperson Cora Mandy svarer The Verge, at agenturet med hver handling har ført reglerne tilbage til \"den bedste læsning\" af Clean Air Act efter \"årelang overreach\" fra tidligere administrationer."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "30 føderale tiltag",
-          "label": "Siden januar 2025 ifølge EPN's rapport"
-        },
-        {
-          "tal": "17 af 30",
-          "label": "Tiltag der nævner AI eller datacentre"
-        },
-        {
-          "tal": "1.300 for tidlige dødsfald",
-          "label": "Anslået inden 2028 i studie fra UC Riverside, Caltech og RIT"
-        },
-        {
-          "tal": "20 milliarder dollars",
-          "label": "Anslåede folkesundhedsomkostninger inden 2028"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Rapporten peger på 30 føderale handlinger siden januar 2025.",
-        "EPN er en uafhængig organisation af tidligere EPA-ansatte.",
-        "Trump udgav sin \"AI Action Plan\" i juli 2025.",
-        "EPN's Marc Boom: Et mere forurenende AI-byggeri er ikke uundgåeligt."
-      ],
-      "betydning": "EPN mener, at USA kan undgå de anslåede sundhedstab ved at genoprette rene luft- og vandstandarder og genopbygge myndighedernes evne til at håndhæve dem.",
-      "pointer": [
-        "Trump vil gøre USA til AI-hovedstad gennem deregulering.",
-        "EPN: 30 tiltag siden januar 2025, 17 nævner AI.",
-        "Studie anslår 1.300 dødsfald og 20 mia. dollars i 2028."
-      ],
-      "billedmotiv": "A white cylindrical air filter cartridge with a dark soot band standing upright beside a small metal air-sampling pump with a short intake tube.",
-      "billede": "data/img/8b08c1ad14cc96a7.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Tidligere EPA-ansatte siger, at Trump svækker miljøkrav for at fremme AI-datacentre og dermed øger sundhedsrisici.",
-        "forbehold": "Rapport fra tidligere embedsmænd; ingen officiel EPA-bekræftelse.",
-        "emne": "datacentre forurening epa"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T07:50:10.194663+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/bcfea4b7b1860b3b.html"
     },
     {
       "titel": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
@@ -3311,6 +3790,94 @@
       "side": "artikel/06261c41c45c66cd.html"
     },
     {
+      "titel": "Trump is giving data centers a pass to pollute",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
+      "resume": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
+      "dato": "2026-09-12T14:41:27+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-12T15:15:33.289402+00:00",
+      "eget_foerst_set": "2026-09-12T15:15:33.289402+00:00",
+      "rubrik": "Trump lemper miljøregler for AI-datacentre",
+      "resume_da": "Tidligere EPA-ansatte advarer i ny rapport om 30 føderale tiltag siden januar 2025, der kan øge sundhedsrisici fra AI-datacentre. Gruppen kræver et løfte fra Trump.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "30 tiltag siden januar 2025",
+          "tekst": "En gruppe tidligere ansatte i det amerikanske miljøagentur EPA udgav denne uge en rapport. Den peger på 30 føderale handlinger siden januar 2025, som de mener forværrer sundhedsrisici fra forurening knyttet til AI-datacentre. **17 af dem nævner direkte AI eller datacentre.**\n\nBag rapporten står Environmental Protection Network, EPN, en uafhængig organisation af tidligere EPA-folk. De opfordrer præsident Donald Trump til at vedtage et \"Data Center Health Protection Pledge\"."
+        },
+        {
+          "overskrift": "Deregulering i AI'ens navn",
+          "tekst": "Trump-administrationen har rullet dusinvis af regler tilbage og skåret i EPA's personale og budget, skriver EPN. EPA-administrator Lee Zeldin har sagt, at målet er at gøre USA til \"the AI capital of the world\" gennem deregulering.\n\nI juli 2025 udgav Trump en \"AI Action Plan\", der anbefaler at \"strømline eller reducere regler\" under Clean Air Act, Clean Water Act og Superfund-loven for hurtigere at godkende datacenterprojekter og chipfabrikker."
+        },
+        {
+          "overskrift": "Forurening rammer langt fra datacentret",
+          "tekst": "Forureningen rammer ifølge EPN også folk, der ikke bor tæt på et datacenter. Nye gasprojekter skal levere strøm til de energitunge anlæg, og efterspørgslen efter avancerede chips genopliver produktionen af svært nedbrydelige \"forever chemicals\".\n\n\"Du behøver ikke være i nærheden af et datacenter for at blive påvirket, for forureningen kommer ikke kun fra datacentrene selv,\" siger Lynn Goldman, pædiatriker og tidligere assisterende EPA-administrator."
+        },
+        {
+          "overskrift": "1.300 for tidlige dødsfald i 2028",
+          "tekst": "Rapporten citerer et studie fra UC Riverside, Caltech og Rochester Institute of Technology. Det anslår, at luftforurening knyttet til AI kan føre til op til 1.300 for tidlige dødsfald og mere end 20 milliarder dollars i folkesundhedsomkostninger inden 2028.\n\nEPA-talsperson Cora Mandy svarer The Verge, at agenturet med hver handling har ført reglerne tilbage til \"den bedste læsning\" af Clean Air Act efter \"årelang overreach\" fra tidligere administrationer."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "30 føderale tiltag",
+          "label": "Siden januar 2025 ifølge EPN's rapport"
+        },
+        {
+          "tal": "17 af 30",
+          "label": "Tiltag der nævner AI eller datacentre"
+        },
+        {
+          "tal": "1.300 for tidlige dødsfald",
+          "label": "Anslået inden 2028 i studie fra UC Riverside, Caltech og RIT"
+        },
+        {
+          "tal": "20 milliarder dollars",
+          "label": "Anslåede folkesundhedsomkostninger inden 2028"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Rapporten peger på 30 føderale handlinger siden januar 2025.",
+        "EPN er en uafhængig organisation af tidligere EPA-ansatte.",
+        "Trump udgav sin \"AI Action Plan\" i juli 2025.",
+        "EPN's Marc Boom: Et mere forurenende AI-byggeri er ikke uundgåeligt."
+      ],
+      "betydning": "EPN mener, at USA kan undgå de anslåede sundhedstab ved at genoprette rene luft- og vandstandarder og genopbygge myndighedernes evne til at håndhæve dem.",
+      "pointer": [
+        "Trump vil gøre USA til AI-hovedstad gennem deregulering.",
+        "EPN: 30 tiltag siden januar 2025, 17 nævner AI.",
+        "Studie anslår 1.300 dødsfald og 20 mia. dollars i 2028."
+      ],
+      "billedmotiv": "A white cylindrical air filter cartridge with a dark soot band standing upright beside a small metal air-sampling pump with a short intake tube.",
+      "billede": "data/img/8b08c1ad14cc96a7.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidligere EPA-ansatte siger, at Trump svækker miljøkrav for at fremme AI-datacentre og dermed øger sundhedsrisici.",
+        "forbehold": "Rapport fra tidligere embedsmænd; ingen officiel EPA-bekræftelse.",
+        "emne": "datacentre forurening epa"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T07:50:10.194663+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/bcfea4b7b1860b3b.html"
+    },
+    {
       "titel": "Anthropic spent this week in hot water over cybersecurity",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
       "resume": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"recklessness\" - and will likely fuel already raging concerns about cybersecurity and AI. […]",
@@ -3396,6 +3963,97 @@
       },
       "prio": 6,
       "side": "artikel/3409c3c31dfa6b1f.html"
+    },
+    {
+      "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
+      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "resume": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
+      "dato": "2026-09-14T21:51:02+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
+      "resume_da": "Nvidia-chefen satte præsidenten på højttaler foran hele salen under et panel om AI-tempoet – og svarede, at opbremsningen ikke sker.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Mobilen ringede midt på scenen",
+          "tekst": "Jensen Huang, topchef i chipfirmaet Nvidia, sad på en scene i Los Angeles, da telefonen ringede. Opkaldet kom fra præsident Donald Trump – og Huang lagde det ikke på voicemail. I stedet satte han præsidenten på højttaler, så hele salen kunne høre med.\n\nTrump morede sig over situationen: Huang kan udvikle verdens mest komplekse computerchip, men kunne ifølge præsidenten ikke finde ud af at sætte telefonen på højttaler. Huang var i gang med at skaffe en ekstra mikrofon, så opkaldet kunne høres af alle."
+        },
+        {
+          "overskrift": "Amodei vil bremse, Huang vil ikke",
+          "tekst": "På scenen havde panelet netop talt om Dario Amodei, topchef i Anthropic, der har opfordret til at sænke tempoet i udviklingen af AI. Elon Musk fra SpaceX og OpenAI-chefen Sam Altman har offentligt sagt, at de er enige med Amodei. Jensen Huang er uenig.\n\nTrump var ikke i tvivl på telefonlinjen. Opfordringen spiller ifølge præsidenten \"i hænderne på\" folk, der ikke vil se udviklingen – det kan være politikere eller Kina – og han kaldte den en \"hoax\". \"Vi kommer til at føre an,\" sagde han til Huang, der svarede: \"Du har ret. Det lader vi ikke ske.\""
+        },
+        {
+          "overskrift": "Vælgerne siger nej til datacentre",
+          "tekst": "Spørgsmålet er, hvor bred opbakningen er. Trump og allierede som Y Combinator-chefen Garry Tan har kaldt modstanden mod nye datacentre – de store anlæg, hvor AI-modeller trænes og kører – for en international påvirkningskampagne, en såkaldt psyop, mod amerikansk vækst.\n\nGallup-målinger tegner et mere jordnært billede. Syv af ti amerikanere modsætter sig opførelsen af datacentre i deres lokalområde, og mere end halvdelen peger på anlæggenes effekt på miljøet. Omkring hver femte nævner stigende leveomkostninger og påvirkning af livskvaliteten."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "7 af 10",
+          "label": "Amerikanere i Gallup-måling, der modsætter sig datacentre i deres lokalområde"
+        },
+        {
+          "tal": "Mere end 50 %",
+          "label": "Angav datacentres effekt på miljøet som grund, samme måling"
+        },
+        {
+          "tal": "Ca. 20 %",
+          "label": "Nævnte stigende leveomkostninger og påvirkning af livskvalitet"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+          "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
+          "resume_da": "Nvidia-chef Jensen Huang satte præsidenten på højttaler foran tusindvis på All-In Summit, hvor Trump afviste advarsler om at bremse AI.",
+          "dato": "2026-09-14T16:03:37-04:00",
+          "foerst_set": "2026-09-14T22:44:05.705048+00:00"
+        }
+      ],
+      "detaljer": [
+        "Opkaldet faldt mandag morgen på All-In Summit i Los Angeles.",
+        "Huang kaldte værterne \"the besties\" – investorerne bag podcasten All-In.",
+        "Trump forsikrede, at USA vil føre an frem for at bremse."
+      ],
+      "betydning": "Nvidias topchef og Det Hvide Hus står nu offentligt på samme side i debatten om AI-tempoet, samtidig med at et flertal af amerikanere ifølge Gallup ikke vil have datacentre i deres område.",
+      "pointer": [
+        "Trump ringede ind live under All-In Summit",
+        "Huang og Trump afviser at bremse AI-udviklingen",
+        "Gallup: 7 af 10 mod datacentre i nabolaget"
+      ],
+      "billedmotiv": "A solid black smartphone stands upright and emits thick concentric sound arcs toward a large solid green graphics-chip block with Nvidia's green spiral-eye emblem on one corner, while a small solid oval marks the podium the phone stands on.",
+      "billedmotiv_instruks": "357c2b8f70ea45d75972",
+      "billede": "data/img/26e115d7877a372e.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nvidia-chef Jensen Huang markerer offentligt afstand til opfordringerne om at sænke AI-udviklingens tempo.",
+        "forbehold": "Kilden gengiver kun en enkelt kort udtalelse uden nærmere detaljer.",
+        "emne": "nvidia, jensen huang"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T23:04:22.303494+00:00"
+      },
+      "historie_dato": "2026-09-14T20:03:37+00:00",
+      "prio": 4,
+      "side": "artikel/71b2c4f295f24956.html"
     },
     {
       "titel": "Claude users found ways around safeguards for bioweapons research",
@@ -3583,97 +4241,6 @@
       },
       "prio": 4,
       "side": "artikel/0dd87f86ad01fab9.html"
-    },
-    {
-      "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-      "link": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-      "resume": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
-      "dato": "2026-09-14T21:51:02+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "rubrik": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter",
-      "resume_da": "Nvidia-chefen satte præsidenten på højttaler foran hele salen under et panel om AI-tempoet – og svarede, at opbremsningen ikke sker.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Mobilen ringede midt på scenen",
-          "tekst": "Jensen Huang, topchef i chipfirmaet Nvidia, sad på en scene i Los Angeles, da telefonen ringede. Opkaldet kom fra præsident Donald Trump – og Huang lagde det ikke på voicemail. I stedet satte han præsidenten på højttaler, så hele salen kunne høre med.\n\nTrump morede sig over situationen: Huang kan udvikle verdens mest komplekse computerchip, men kunne ifølge præsidenten ikke finde ud af at sætte telefonen på højttaler. Huang var i gang med at skaffe en ekstra mikrofon, så opkaldet kunne høres af alle."
-        },
-        {
-          "overskrift": "Amodei vil bremse, Huang vil ikke",
-          "tekst": "På scenen havde panelet netop talt om Dario Amodei, topchef i Anthropic, der har opfordret til at sænke tempoet i udviklingen af AI. Elon Musk fra SpaceX og OpenAI-chefen Sam Altman har offentligt sagt, at de er enige med Amodei. Jensen Huang er uenig.\n\nTrump var ikke i tvivl på telefonlinjen. Opfordringen spiller ifølge præsidenten \"i hænderne på\" folk, der ikke vil se udviklingen – det kan være politikere eller Kina – og han kaldte den en \"hoax\". \"Vi kommer til at føre an,\" sagde han til Huang, der svarede: \"Du har ret. Det lader vi ikke ske.\""
-        },
-        {
-          "overskrift": "Vælgerne siger nej til datacentre",
-          "tekst": "Spørgsmålet er, hvor bred opbakningen er. Trump og allierede som Y Combinator-chefen Garry Tan har kaldt modstanden mod nye datacentre – de store anlæg, hvor AI-modeller trænes og kører – for en international påvirkningskampagne, en såkaldt psyop, mod amerikansk vækst.\n\nGallup-målinger tegner et mere jordnært billede. Syv af ti amerikanere modsætter sig opførelsen af datacentre i deres lokalområde, og mere end halvdelen peger på anlæggenes effekt på miljøet. Omkring hver femte nævner stigende leveomkostninger og påvirkning af livskvaliteten."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "7 af 10",
-          "label": "Amerikanere i Gallup-måling, der modsætter sig datacentre i deres lokalområde"
-        },
-        {
-          "tal": "Mere end 50 %",
-          "label": "Angav datacentres effekt på miljøet som grund, samme måling"
-        },
-        {
-          "tal": "Ca. 20 %",
-          "label": "Nævnte stigende leveomkostninger og påvirkning af livskvalitet"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
-          "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
-          "resume_da": "Nvidia-chef Jensen Huang satte præsidenten på højttaler foran tusindvis på All-In Summit, hvor Trump afviste advarsler om at bremse AI.",
-          "dato": "2026-09-14T16:03:37-04:00",
-          "foerst_set": "2026-09-14T22:44:05.705048+00:00"
-        }
-      ],
-      "detaljer": [
-        "Opkaldet faldt mandag morgen på All-In Summit i Los Angeles.",
-        "Huang kaldte værterne \"the besties\" – investorerne bag podcasten All-In.",
-        "Trump forsikrede, at USA vil føre an frem for at bremse."
-      ],
-      "betydning": "Nvidias topchef og Det Hvide Hus står nu offentligt på samme side i debatten om AI-tempoet, samtidig med at et flertal af amerikanere ifølge Gallup ikke vil have datacentre i deres område.",
-      "pointer": [
-        "Trump ringede ind live under All-In Summit",
-        "Huang og Trump afviser at bremse AI-udviklingen",
-        "Gallup: 7 af 10 mod datacentre i nabolaget"
-      ],
-      "billedmotiv": "A solid black smartphone stands upright and emits thick concentric sound arcs toward a large solid green graphics-chip block with Nvidia's green spiral-eye emblem on one corner, while a small solid oval marks the podium the phone stands on.",
-      "billedmotiv_instruks": "357c2b8f70ea45d75972",
-      "billede": "data/img/26e115d7877a372e.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Nvidia-chef Jensen Huang markerer offentligt afstand til opfordringerne om at sænke AI-udviklingens tempo.",
-        "forbehold": "Kilden gengiver kun en enkelt kort udtalelse uden nærmere detaljer.",
-        "emne": "nvidia, jensen huang"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T23:04:22.303494+00:00"
-      },
-      "historie_dato": "2026-09-14T20:03:37+00:00",
-      "prio": 4,
-      "side": "artikel/71b2c4f295f24956.html"
     },
     {
       "titel": "Kimi-maker Moonshot AI targets $2B in annual revenue",
@@ -4571,102 +5138,6 @@
       }
     },
     {
-      "titel": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content",
-      "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-      "resume": "Pocket FM uses AI to produce 99% of its new content, helping make content production about 80 times cheaper.",
-      "dato": "2026-09-10T17:45:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
-      "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
-      "resume_da": "Indisk lydplatform når 500 mio. dollars i årlig omsætning, mens AI står bag 93 pct. af kataloget. Nu vil selskabet også lave video.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "AI laver 99 procent af nyt indhold",
-          "tekst": "Pocket FM, en indisk platform for lydfortællinger, har på et år fordoblet sin årlige omsætningshastighed til 500 millioner dollars. AI står nu bag 93 procent af hele kataloget og bruges til at producere 99 procent af alt nyt indhold, oplyser medstifter og CEO Rohan Nayak.\n\nMenneskene leverer stadig ideerne og historierne, mens AI'en omsætter dem til færdigt indhold i stor skala. »Vi vil skabe stærke rettigheder, der holder i 100 år, og det kræver mennesker,« siger Nayak til TechCrunch."
-        },
-        {
-          "overskrift": "80 gange billigere og 100 timer på en dag",
-          "tekst": "Økonomien har drevet skiftet. Ifølge Nayak er produktionen blevet omkring 80 gange billigere, og 100 timers indhold, som før tog omkring et år at lave, kan nu produceres på en dag.\n\nSelskabet har trænet sine egne modeller til kreativ skrivning og tekst-til-tale. AI-chef Vasu Sharma, tidligere forsker hos Meta og Tesla, siger, at modellerne bygger på års produktionsdata og signaler om, hvordan lytterne reagerer på historierne."
-        },
-        {
-          "overskrift": "Flere historier holder på lytterne",
-          "tekst": "Mængden af indhold er vokset kraftigt. Mere end 550.000 skabere laver nu cirka 2,5 millioner timers AI-drevet indhold om året. For to år siden bestod hele kataloget af omkring 100.000 timer.\n\nDet har ifølge Nayak gjort det lettere at holde på lytterne. Fastholdelsen af omsætning over 12 måneder er steget til 76 procent fra 44 procent for to år siden."
-        },
-        {
-          "overskrift": "USA bærer 70 procent af omsætningen",
-          "tekst": "Pocket FM har over 250 millioner lyttere i mere end 20 lande. USA er det største marked med omkring 70 procent af den årlige omsætningshastighed og en vækst på cirka 70 procent det seneste år.\n\nOmkring 85 millioner dollars kommer fra annoncer, mens de resterende cirka 415 millioner dollars kommer fra brugere, der betaler for at låse enkelte afsnit op."
-        },
-        {
-          "overskrift": "Ny app satser på AI-video",
-          "tekst": "Moderselskabet Pocket Entertainment vil bruge modellen uden for lyd. Mikrodrama-appen Pocket Saga er tre måneder gammel og har nået en årlig omsætningshastighed på omkring 15 millioner dollars. Appen findes kun i USA, og alt indholdet er AI-produceret.\n\nPopulære lydserier fra Pocket FM bliver samtidig til AI-genereret video til Pocket Saga uden traditionel optagelse med skuespillere."
-        },
-        {
-          "overskrift": "Investorer venter, børsnotering udskudt",
-          "tekst": "Pocket Entertainment forhandler med investorer om ny kapital. En rapport har nævnt 100 til 120 millioner dollars ved en værdiansættelse på omkring 2 milliarder dollars. Nayak afviser ikke forhandlingerne, men siger, at der ikke er noget umiddelbart pres.\n\nSelskabet oplyser ikke profit, pengestrøm eller marginer. En børsnotering ligger ifølge Nayak mindst 24 måneder væk."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "500 mio. dollars",
-          "label": "Årlig omsætningshastighed, månedlig omsætning ganget med 12. Fordoblet fra ca. 250 mio. dollars for et år siden"
-        },
-        {
-          "tal": "93 pct. og 99 pct.",
-          "label": "AI's andel af hele kataloget, og andelen af alt nyt indhold"
-        },
-        {
-          "tal": "76 pct. mod 44 pct.",
-          "label": "Fastholdelse af omsætning over 12 måneder, nu mod for to år siden"
-        },
-        {
-          "tal": "80 gange",
-          "label": "Billigere indholdsproduktion ifølge CEO Rohan Nayak"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "96 titler har hver givet over 1 mio. dollars; 13 har passeret 10 mio. dollars.",
-        "Biblioteket rummer over 770.000 lydserier, og selskabet startede i 2018.",
-        "Pocket Entertainment har base i Bengaluru og Culver City, Californien.",
-        "Selskabet planlægger mindst to nye underholdningsformater inden for fem år."
-      ],
-      "betydning": "Hvis Pocket Entertainment henter de nævnte 100–120 mio. dollars, skal pengene ifølge Nayak gå til mere AI og nye formater — ikke til lyd alene.",
-      "pointer": [
-        "AI bag 93 pct. af kataloget, 99 pct. af nyt indhold",
-        "USA står for ca. 70 pct. af omsætningen",
-        "Ingen børsnotering de næste 24 måneder"
-      ],
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Pocket FM fordobler omsætningsraten til 500 mio. dollar; AI står bag 93 pct. af kataloget og 99 pct. af nyt indhold.",
-        "forbehold": "Tallene kommer fra selskabet selv og er ikke uafhængigt efterprøvet.",
-        "emne": "pocket fm"
-      },
-      "prio": 6,
-      "side": "artikel/755f7769e744d036.html",
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "billedmotiv": "A pair of solid over-ear headphones beside a single thick opaque vinyl record standing upright",
-      "billede": "data/img/14593f3cf616ab18.webp",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T08:02:20.410884+00:00"
-      }
-    },
-    {
       "titel": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
       "link": "https://openai.com/index/expanding-ai-access-us-government",
       "resume": "OpenAI and GSA will offer eligible federal, state, local, and tribal governments $0 license fees, 50% off usage, and expanded cyber defense support.",
@@ -4788,6 +5259,102 @@
       "brief_instruks": "748464c0b45c6acc",
       "prio": 6,
       "side": "artikel/3f77446f0e44a8a2.html"
+    },
+    {
+      "titel": "India’s Pocket FM doubles revenue run rate to $500M as AI powers 93% of audio content",
+      "link": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+      "resume": "Pocket FM uses AI to produce 99% of its new content, helping make content production about 80 times cheaper.",
+      "dato": "2026-09-10T17:45:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-10T17:49:16.718389+00:00",
+      "eget_foerst_set": "2026-09-10T17:49:16.718389+00:00",
+      "rubrik": "Pocket FM fordobler omsætning med AI-indhold",
+      "resume_da": "Indisk lydplatform når 500 mio. dollars i årlig omsætning, mens AI står bag 93 pct. af kataloget. Nu vil selskabet også lave video.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "AI laver 99 procent af nyt indhold",
+          "tekst": "Pocket FM, en indisk platform for lydfortællinger, har på et år fordoblet sin årlige omsætningshastighed til 500 millioner dollars. AI står nu bag 93 procent af hele kataloget og bruges til at producere 99 procent af alt nyt indhold, oplyser medstifter og CEO Rohan Nayak.\n\nMenneskene leverer stadig ideerne og historierne, mens AI'en omsætter dem til færdigt indhold i stor skala. »Vi vil skabe stærke rettigheder, der holder i 100 år, og det kræver mennesker,« siger Nayak til TechCrunch."
+        },
+        {
+          "overskrift": "80 gange billigere og 100 timer på en dag",
+          "tekst": "Økonomien har drevet skiftet. Ifølge Nayak er produktionen blevet omkring 80 gange billigere, og 100 timers indhold, som før tog omkring et år at lave, kan nu produceres på en dag.\n\nSelskabet har trænet sine egne modeller til kreativ skrivning og tekst-til-tale. AI-chef Vasu Sharma, tidligere forsker hos Meta og Tesla, siger, at modellerne bygger på års produktionsdata og signaler om, hvordan lytterne reagerer på historierne."
+        },
+        {
+          "overskrift": "Flere historier holder på lytterne",
+          "tekst": "Mængden af indhold er vokset kraftigt. Mere end 550.000 skabere laver nu cirka 2,5 millioner timers AI-drevet indhold om året. For to år siden bestod hele kataloget af omkring 100.000 timer.\n\nDet har ifølge Nayak gjort det lettere at holde på lytterne. Fastholdelsen af omsætning over 12 måneder er steget til 76 procent fra 44 procent for to år siden."
+        },
+        {
+          "overskrift": "USA bærer 70 procent af omsætningen",
+          "tekst": "Pocket FM har over 250 millioner lyttere i mere end 20 lande. USA er det største marked med omkring 70 procent af den årlige omsætningshastighed og en vækst på cirka 70 procent det seneste år.\n\nOmkring 85 millioner dollars kommer fra annoncer, mens de resterende cirka 415 millioner dollars kommer fra brugere, der betaler for at låse enkelte afsnit op."
+        },
+        {
+          "overskrift": "Ny app satser på AI-video",
+          "tekst": "Moderselskabet Pocket Entertainment vil bruge modellen uden for lyd. Mikrodrama-appen Pocket Saga er tre måneder gammel og har nået en årlig omsætningshastighed på omkring 15 millioner dollars. Appen findes kun i USA, og alt indholdet er AI-produceret.\n\nPopulære lydserier fra Pocket FM bliver samtidig til AI-genereret video til Pocket Saga uden traditionel optagelse med skuespillere."
+        },
+        {
+          "overskrift": "Investorer venter, børsnotering udskudt",
+          "tekst": "Pocket Entertainment forhandler med investorer om ny kapital. En rapport har nævnt 100 til 120 millioner dollars ved en værdiansættelse på omkring 2 milliarder dollars. Nayak afviser ikke forhandlingerne, men siger, at der ikke er noget umiddelbart pres.\n\nSelskabet oplyser ikke profit, pengestrøm eller marginer. En børsnotering ligger ifølge Nayak mindst 24 måneder væk."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "500 mio. dollars",
+          "label": "Årlig omsætningshastighed, månedlig omsætning ganget med 12. Fordoblet fra ca. 250 mio. dollars for et år siden"
+        },
+        {
+          "tal": "93 pct. og 99 pct.",
+          "label": "AI's andel af hele kataloget, og andelen af alt nyt indhold"
+        },
+        {
+          "tal": "76 pct. mod 44 pct.",
+          "label": "Fastholdelse af omsætning over 12 måneder, nu mod for to år siden"
+        },
+        {
+          "tal": "80 gange",
+          "label": "Billigere indholdsproduktion ifølge CEO Rohan Nayak"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "96 titler har hver givet over 1 mio. dollars; 13 har passeret 10 mio. dollars.",
+        "Biblioteket rummer over 770.000 lydserier, og selskabet startede i 2018.",
+        "Pocket Entertainment har base i Bengaluru og Culver City, Californien.",
+        "Selskabet planlægger mindst to nye underholdningsformater inden for fem år."
+      ],
+      "betydning": "Hvis Pocket Entertainment henter de nævnte 100–120 mio. dollars, skal pengene ifølge Nayak gå til mere AI og nye formater — ikke til lyd alene.",
+      "pointer": [
+        "AI bag 93 pct. af kataloget, 99 pct. af nyt indhold",
+        "USA står for ca. 70 pct. af omsætningen",
+        "Ingen børsnotering de næste 24 måneder"
+      ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Pocket FM fordobler omsætningsraten til 500 mio. dollar; AI står bag 93 pct. af kataloget og 99 pct. af nyt indhold.",
+        "forbehold": "Tallene kommer fra selskabet selv og er ikke uafhængigt efterprøvet.",
+        "emne": "pocket fm"
+      },
+      "prio": 6,
+      "side": "artikel/755f7769e744d036.html",
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "billedmotiv": "A pair of solid over-ear headphones beside a single thick opaque vinyl record standing upright",
+      "billede": "data/img/14593f3cf616ab18.webp",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T08:02:20.410884+00:00"
+      }
     },
     {
       "titel": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
@@ -5022,72 +5589,6 @@
       }
     },
     {
-      "titel": "Quoting Boris Cherny",
-      "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
-      "resume": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a…",
-      "dato": "2026-09-11T17:47:11+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T17:51:30.603573+00:00",
-      "eget_foerst_set": "2026-09-11T17:51:30.603573+00:00",
-      "rubrik": "Anthropic: Claude-kode skal have højere standard",
-      "resume_da": "Et citat gengivet af Simon Willison beskriver, hvordan Anthropic omgiver Claude-skrevet produktionskode med test, fuzzere og automatiske gennemgange.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Kode fra Claude skal bedømmes strengere",
-          "tekst": "Ifølge et citat, som Simon Willison har samlet og offentliggjort 11. september 2026, bør produktionskode skrevet af Claude have en højere barre, end hvis et menneske havde skrevet den.\n\nProduktionskode er den kode, der faktisk kører i et produkt, i modsætning til forsøgskode, der blot afprøver en idé. Citatet beskriver ingen ny model og ingen ny funktion, men en holdning til, hvordan Claude-kode bør behandles."
-        },
-        {
-          "overskrift": "Mange værn skal fange fejlene",
-          "tekst": "Hos Anthropic er en lang række værn ifølge citatet bygget ind for at sikre, at det sker: mange lint-regler, som er automatiske tjek af kodeformen, mange tests, end-to-end-tests drevet af Claude, fuzzere drevet af Claude, der kører dagligt, automatiske kode- og sikkerhedsgennemgange samt automatisk refaktorering, hvor koden skrives om uden at ændre sin opførsel.\n\nEn **fuzzer** er et program, der sender tilfældige eller ugyldige input ind i softwaren for at finde fejl, som ingen selv havde tænkt på at lede efter."
-        },
-        {
-          "overskrift": "Uden værnene vokser rodet",
-          "tekst": "Citatets advarsel er, at værnene ikke er kosmetik. Uden dem kan man ifølge citatet ende med et rod, der er svært at vedligeholde på længere sigt.\n\nKilden er et citat gengivet af Simon Willison. Den oplyser ikke, hvem hos Anthropic der står bag ordene, og den rummer ingen målinger af, om krav og værktøjer faktisk løfter kvaliteten af den færdige kode."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Citatet er gengivet af Simon Willison og offentliggjort 11. september 2026.",
-        "Ifølge citatet kører Claude-drevne fuzzere hver dag.",
-        "Værnene dækker kodeform, test, sikkerhed og oprydning."
-      ],
-      "betydning": "Hvis flere lader Claude skrive produktionskode, peger citatet på, at test, gennemgange og oprydning bør følge med. Ellers bliver koden svær at vedligeholde.",
-      "pointer": [
-        "Citatet er en holdning fra Anthropic, ikke en undersøgelse",
-        "Claude-kode skal ifølge citatet over en højere barre"
-      ],
-      "billedmotiv": "A thick solid rectangular code block whose face bears the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the block's width. The block passes through a narrow solid gate of three thick vertical bars while a heavy solid clamp presses down on its top, showing a strict review before release. Opaque shapes with sharp edges on plain white.",
-      "billedmotiv_instruks": "cd8417228719368e18f0",
-      "billede": "data/img/fc4a1cfb20586c2a.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic-topchef Boris Cherny: AI-genereret kode skal have højere testkrav end menneskeskrevet, med daglige automatiske sikkerhedstjek.",
-        "forbehold": "Er en intern praksisbeskrivelse fra en producent, ikke uafhængigt efterprøvede resultater.",
-        "emne": "anthropic, ai-kode"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T09:29:05.630914+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/7d445be5f43019e0.html"
-    },
-    {
       "titel": "AI agents are flooding public services with new requests",
       "link": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
       "resume": "“The vast majority of cases we find are people who are entitled to claim for something, claiming for that thing,” the researcher told TechCrunch.",
@@ -5174,6 +5675,72 @@
         "status": "godkendt",
         "kontrolleret": "2026-09-14T08:07:41.050761+00:00"
       }
+    },
+    {
+      "titel": "Quoting Boris Cherny",
+      "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "resume": "Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a…",
+      "dato": "2026-09-11T17:47:11+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-11T17:51:30.603573+00:00",
+      "eget_foerst_set": "2026-09-11T17:51:30.603573+00:00",
+      "rubrik": "Anthropic: Claude-kode skal have højere standard",
+      "resume_da": "Et citat gengivet af Simon Willison beskriver, hvordan Anthropic omgiver Claude-skrevet produktionskode med test, fuzzere og automatiske gennemgange.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Kode fra Claude skal bedømmes strengere",
+          "tekst": "Ifølge et citat, som Simon Willison har samlet og offentliggjort 11. september 2026, bør produktionskode skrevet af Claude have en højere barre, end hvis et menneske havde skrevet den.\n\nProduktionskode er den kode, der faktisk kører i et produkt, i modsætning til forsøgskode, der blot afprøver en idé. Citatet beskriver ingen ny model og ingen ny funktion, men en holdning til, hvordan Claude-kode bør behandles."
+        },
+        {
+          "overskrift": "Mange værn skal fange fejlene",
+          "tekst": "Hos Anthropic er en lang række værn ifølge citatet bygget ind for at sikre, at det sker: mange lint-regler, som er automatiske tjek af kodeformen, mange tests, end-to-end-tests drevet af Claude, fuzzere drevet af Claude, der kører dagligt, automatiske kode- og sikkerhedsgennemgange samt automatisk refaktorering, hvor koden skrives om uden at ændre sin opførsel.\n\nEn **fuzzer** er et program, der sender tilfældige eller ugyldige input ind i softwaren for at finde fejl, som ingen selv havde tænkt på at lede efter."
+        },
+        {
+          "overskrift": "Uden værnene vokser rodet",
+          "tekst": "Citatets advarsel er, at værnene ikke er kosmetik. Uden dem kan man ifølge citatet ende med et rod, der er svært at vedligeholde på længere sigt.\n\nKilden er et citat gengivet af Simon Willison. Den oplyser ikke, hvem hos Anthropic der står bag ordene, og den rummer ingen målinger af, om krav og værktøjer faktisk løfter kvaliteten af den færdige kode."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Citatet er gengivet af Simon Willison og offentliggjort 11. september 2026.",
+        "Ifølge citatet kører Claude-drevne fuzzere hver dag.",
+        "Værnene dækker kodeform, test, sikkerhed og oprydning."
+      ],
+      "betydning": "Hvis flere lader Claude skrive produktionskode, peger citatet på, at test, gennemgange og oprydning bør følge med. Ellers bliver koden svær at vedligeholde.",
+      "pointer": [
+        "Citatet er en holdning fra Anthropic, ikke en undersøgelse",
+        "Claude-kode skal ifølge citatet over en højere barre"
+      ],
+      "billedmotiv": "A thick solid rectangular code block whose face bears the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the block's width. The block passes through a narrow solid gate of three thick vertical bars while a heavy solid clamp presses down on its top, showing a strict review before release. Opaque shapes with sharp edges on plain white.",
+      "billedmotiv_instruks": "cd8417228719368e18f0",
+      "billede": "data/img/fc4a1cfb20586c2a.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic-topchef Boris Cherny: AI-genereret kode skal have højere testkrav end menneskeskrevet, med daglige automatiske sikkerhedstjek.",
+        "forbehold": "Er en intern praksisbeskrivelse fra en producent, ikke uafhængigt efterprøvede resultater.",
+        "emne": "anthropic, ai-kode"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T09:29:05.630914+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/7d445be5f43019e0.html"
     },
     {
       "titel": "Introducing the Agents API",
@@ -5401,76 +5968,6 @@
       "side": "artikel/47e74cdc78c671c1.html"
     },
     {
-      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
-      "dato": "2026-09-11T20:59:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
-      "rubrik": "Garry Tan: Lad åbne laboratorier destillere frit",
-      "resume_da": "Y Combinator-chefen afviser forbud mod kinesisk destillation og vil hellere give amerikanske åbne modeller adgang til frontmodellernes viden.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Vil have et amerikansk destilleringsregime",
-          "tekst": "Garry Tan, administrerende direktør i startup-acceleratoren Y Combinator, vil ikke forbyde kinesiske AI-laboratorier at destillere amerikanske frontmodeller. »Jeg ville ikke gøre noget,« sagde han til CNBC tidligere på ugen og tilføjede: »Man kan argumentere for, at der burde findes et amerikansk destilleringsregime.«\n\n**Destillation** betyder, at én model gentagne gange stiller spørgsmål til en anden model for at lære, hvordan den arbejder og ræsonnerer. Metoden bruges helt legitimt af AI-laboratorier til at træne nye modeller."
-        },
-        {
-          "overskrift": "Anthropic: Kinesiske angreb er ulovlige",
-          "tekst": "Tan er uenig med Anthropic. Laboratoriet udgav denne uge sin anden rapport, der anklager kinesiske laboratorier for »ulovlige destillationsangreb«: De skjuler deres identitet for at destillere uden tilladelse og bruger svindel og stjålne loginoplysninger. Anthropics topchef, Dario Amodei, har tidligere offentligt opfordret amerikanske myndigheder til at slå hårdt ned på destillation."
-        },
-        {
-          "overskrift": "Adgang gennem hoveddøren, ikke bagdøren",
-          "tekst": "Tan opfordrer ikke amerikanske laboratorier til at bruge stjålne loginoplysninger. De skal kunne komme ind ad hoveddøren, siger han, og hans argument har to ben.\n\nFor det første mener han, at det er et overgreb, når AI-laboratorier vil bestemme, hvad kunderne må gøre med den information, modellerne giver dem. For det andet peger han på, at de lukkede laboratorier ikke selv bad om lov, da de sugede menneskelig viden til sig — de har efter sigende slugt store mængder ophavsretligt beskyttet materiale uden rettighedshavernes tilladelse."
-        },
-        {
-          "overskrift": "Frygter ét enkelt monolitiskt selskab",
-          "tekst": "Tan vil se en balance mellem åbne og lukkede laboratorier. »De er ved fronten og driver den fremad. Det vil vi gerne kunne finansiere, og det skal være en god forretning,« sagde han til CNBC.\n\nHans mareridtsscenarie er, at al frontmodellernes kraft ender hos én enkelt lukket udbyder. »Dommedagsscenariet for AI er, at der bare er ét selskab,« siger han. »Det har den bedste adgang til kapital. Det har de bedste AI-forskere. Det løber af med det hele, og pludselig er der ét selskab, der er monolitiskt. Og det ville være skidt.«"
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Y Combinator er en af Silicon Valleys mest kendte startup-acceleratorer.",
-        "Tan har selv beskrevet sig som ramt af »cyberpsykose« på grund af sit store forbrug af AI.",
-        "Anthropics rapport er den anden i rækken om kinesisk destillation."
-      ],
-      "betydning": "Tans linje peger mod, at mindre amerikanske laboratorier frit skal kunne træne åbne modeller på de lukkede frontmodeller og dermed udgøre et alternativ til kinesiske åbne modeller.",
-      "pointer": [
-        "Tan vil ikke forbyde kinesisk destillation",
-        "Han vil åbne døren for amerikanske åbne laboratorier",
-        "Anthropic og Amodei vil have myndighederne ind"
-      ],
-      "billedmotiv": "Five identical plain-covered hardback books standing in a row, one extra copy slid forward and separated from the others.",
-      "billede": "data/img/3800a54837309e4d.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Y Combinators Garry Tan opfordrer amerikanske open-weight-laboratorier til at destillere frontmodeller for at modvirke kinesisk dominans.",
-        "forbehold": "Det er en holdningstagende udtalelse uden konkrete planer eller vedtagne tiltag.",
-        "emne": "open-weight destillation"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T08:18:09.010031+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/e2480aa4c979ae2f.html"
-    },
-    {
       "titel": "Panic builds over bankrupt Spirit’s looming data sale to Google",
       "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
       "resume": "\"Bankruptcy cannot become the new land grab for AI.”",
@@ -5557,6 +6054,76 @@
       },
       "prio": 5,
       "side": "artikel/4570a39b1061c92d.html"
+    },
+    {
+      "titel": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "link": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "resume": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese.",
+      "dato": "2026-09-11T20:59:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "eget_foerst_set": "2026-09-11T21:11:45.274854+00:00",
+      "rubrik": "Garry Tan: Lad åbne laboratorier destillere frit",
+      "resume_da": "Y Combinator-chefen afviser forbud mod kinesisk destillation og vil hellere give amerikanske åbne modeller adgang til frontmodellernes viden.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Vil have et amerikansk destilleringsregime",
+          "tekst": "Garry Tan, administrerende direktør i startup-acceleratoren Y Combinator, vil ikke forbyde kinesiske AI-laboratorier at destillere amerikanske frontmodeller. »Jeg ville ikke gøre noget,« sagde han til CNBC tidligere på ugen og tilføjede: »Man kan argumentere for, at der burde findes et amerikansk destilleringsregime.«\n\n**Destillation** betyder, at én model gentagne gange stiller spørgsmål til en anden model for at lære, hvordan den arbejder og ræsonnerer. Metoden bruges helt legitimt af AI-laboratorier til at træne nye modeller."
+        },
+        {
+          "overskrift": "Anthropic: Kinesiske angreb er ulovlige",
+          "tekst": "Tan er uenig med Anthropic. Laboratoriet udgav denne uge sin anden rapport, der anklager kinesiske laboratorier for »ulovlige destillationsangreb«: De skjuler deres identitet for at destillere uden tilladelse og bruger svindel og stjålne loginoplysninger. Anthropics topchef, Dario Amodei, har tidligere offentligt opfordret amerikanske myndigheder til at slå hårdt ned på destillation."
+        },
+        {
+          "overskrift": "Adgang gennem hoveddøren, ikke bagdøren",
+          "tekst": "Tan opfordrer ikke amerikanske laboratorier til at bruge stjålne loginoplysninger. De skal kunne komme ind ad hoveddøren, siger han, og hans argument har to ben.\n\nFor det første mener han, at det er et overgreb, når AI-laboratorier vil bestemme, hvad kunderne må gøre med den information, modellerne giver dem. For det andet peger han på, at de lukkede laboratorier ikke selv bad om lov, da de sugede menneskelig viden til sig — de har efter sigende slugt store mængder ophavsretligt beskyttet materiale uden rettighedshavernes tilladelse."
+        },
+        {
+          "overskrift": "Frygter ét enkelt monolitiskt selskab",
+          "tekst": "Tan vil se en balance mellem åbne og lukkede laboratorier. »De er ved fronten og driver den fremad. Det vil vi gerne kunne finansiere, og det skal være en god forretning,« sagde han til CNBC.\n\nHans mareridtsscenarie er, at al frontmodellernes kraft ender hos én enkelt lukket udbyder. »Dommedagsscenariet for AI er, at der bare er ét selskab,« siger han. »Det har den bedste adgang til kapital. Det har de bedste AI-forskere. Det løber af med det hele, og pludselig er der ét selskab, der er monolitiskt. Og det ville være skidt.«"
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Y Combinator er en af Silicon Valleys mest kendte startup-acceleratorer.",
+        "Tan har selv beskrevet sig som ramt af »cyberpsykose« på grund af sit store forbrug af AI.",
+        "Anthropics rapport er den anden i rækken om kinesisk destillation."
+      ],
+      "betydning": "Tans linje peger mod, at mindre amerikanske laboratorier frit skal kunne træne åbne modeller på de lukkede frontmodeller og dermed udgøre et alternativ til kinesiske åbne modeller.",
+      "pointer": [
+        "Tan vil ikke forbyde kinesisk destillation",
+        "Han vil åbne døren for amerikanske åbne laboratorier",
+        "Anthropic og Amodei vil have myndighederne ind"
+      ],
+      "billedmotiv": "Five identical plain-covered hardback books standing in a row, one extra copy slid forward and separated from the others.",
+      "billede": "data/img/3800a54837309e4d.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Y Combinators Garry Tan opfordrer amerikanske open-weight-laboratorier til at destillere frontmodeller for at modvirke kinesisk dominans.",
+        "forbehold": "Det er en holdningstagende udtalelse uden konkrete planer eller vedtagne tiltag.",
+        "emne": "open-weight destillation"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T08:18:09.010031+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/e2480aa4c979ae2f.html"
     },
     {
       "titel": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
@@ -6653,17 +7220,23 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-16T12:48:27.967549+00:00",
+    "beregnet": "2026-09-16T17:43:50.882013+00:00",
     "udvalgte": [
       "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/"
+      "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date"
     ],
     "raekkefoelge": [
       "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+      "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+      "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+      "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
       "https://mistral.ai/news/mistral-x-mozilla/",
+      "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
       "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
       "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
       "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
@@ -6679,6 +7252,7 @@
       "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
       "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
       "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+      "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
       "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
       "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
       "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
@@ -6741,6 +7315,6 @@
       "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
       "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa"
     ],
-    "ai_vurderet": 83
+    "ai_vurderet": 90
   }
 }

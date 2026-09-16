@@ -1,10 +1,10 @@
 {
- "rubrik": "Nye modeller til stemme, ræsonnement og musik – mens branchen debatterer tempoet",
- "indledning": "Ugen bød på fire markante modelanceringer: Googles talende Gemini, Salesforces ræsonneringsmodel Koa, Sunos licenserede musikmodel v6 og Apples nye Siri. Samtidig voksede debatten om, hvor hurtigt AI bør udvikles.",
+ "rubrik": "Nye stemmer, specialiserede modeller og et opgør om AI-tempoet",
+ "indledning": "Ugen bringer nye stemmemodeller, specialiserede AI-modeller til musik, kundeservice og forskning – og en voksende debat om at sænke tempoet.",
  "historier": [
   {
-   "overskrift": "Gemini 3.8 Live tænker og taler samtidigt",
-   "tekst": "Google har lanceret Gemini 3.8 Live og Extended Thinking. Ifølge Google kan Extended Thinking ræsonnere, mens den taler, og Gemini 3.8 Live skifter mellem 97 sprog og læser visuelle input. Google oplyser, at modellerne fås via Gemini API, Workspace og appen. På Artificial Analysis' stemmeindeks topper Extended Thinking ifølge Google med 82,6 point.",
+   "overskrift": "Gemini 3.8 Live tænker, mens den taler",
+   "tekst": "Google har lanceret Gemini 3.8 Live og Gemini 3.8 Live Extended Thinking. Sidstnævnte ræsonnerer og taler samtidig, kvitterer med små verbale vink og fortæller fremdrift. Den skifter mellem 97 sprog, læser visuelle input og kalder værktøjer i baggrunden. Google oplyser, at modellerne er tilgængelige via Gemini API, Workspace og Gemini-appen. På Artificial Analysis' indeks topper Extended Thinking med 82,6 point.",
    "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
    "kategori": "Lanceringer",
    "billede": "data/img/6c89a4c5768cee71.webp",
@@ -25,21 +25,21 @@
    "artikel_signatur": "b0ec7f58e590fbc23ddb0e4e24130d02c0bfea7ba901800e5e034c2bd3efa8c4"
   },
   {
-   "overskrift": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
-   "tekst": "På Dreamforce præsenterede Salesforce Koa, selskabets første ræsonneringsmodel. Den er bygget oven på Nvidias åbne Nemotron-model og eftertrænet til salg, marketing og kundesupport. Koa tilbydes i Agentforce som alternativ til Claude og ChatGPT. Ifølge Salesforce bruger den færre tokens og er billigere end at sende opgaverne til de førende modeller.",
-   "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+   "overskrift": "OpenAI fører GPT-Live-1 til API",
+   "tekst": "OpenAI har ført stemmemodellen GPT-Live-1 ind i sit API. Ifølge OpenAI understøtter den fuld-duplex samtaler, altså tale i begge retninger samtidig, og følger instruktioner bedre end tidligere. Modellen får også brugerdefinerede stemmer og telefonistøtte, så udviklere kan bygge stemmeagenter, hvor brugeren ringer ind over det almindelige telefonnæt. OpenAI oplyser ikke, hvordan stemmerne oprettes, eller hvilke telefontjenester der konkret understøttes.",
+   "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
    "kategori": "Lanceringer",
-   "billede": "",
-   "dato": "2026-09-15T12:00:00+00:00",
+   "billede": "data/img/bb7921ba88d52959.jpg",
+   "dato": "2026-09-10T00:00:00+00:00",
    "andre": [],
-   "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
-   "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
-   "resume_da": "Ny model skal klare flertrinsopgaver i Agentforce og ifølge Salesforce bruge færre tokens end Claude og ChatGPT.",
-   "artikel_signatur": "85af7a1eb3fd279ea1ba236d0037032d55ca8c666ce06fc7c704f4f4152bc69b"
+   "titel": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+   "rubrik": "OpenAI fører GPT-Live-1 til API",
+   "resume_da": "OpenAI tilføjer stemmemodellen GPT‑Live‑1 til sit API med fuld-duplex samtaler, bedre instruktionsfølge, brugerdefinerede stemmer og telefonistøtte.",
+   "artikel_signatur": "14696dad33e6833ea50479cd0d8e0cac610d84cf2934657e8fcdec6d657d7ad2"
   },
   {
    "overskrift": "Suno v6 er trænet på licenseret musik",
-   "tekst": "Suno har sendt AI-musikmodellen v6 ud. Ifølge selskabet er den trænet fra bunden på et nyt datasæt med licenseret indhold fra Warner Music Group, BMG og Believe. v6 findes i tre versioner: v6-mini er gratis, mens v6 og v6-wild kræver betaling. The Verge bemærker bedre genreforståelse, men flere artefakter i vokalerne.",
+   "tekst": "Suno har sendt AI-musikmodellerne v6, v6-mini og v6-wild ud. Ifølge The Verge er v6 trænet fra bunden på et nyt datasæt med licenseret indhold fra Warner Music Group, BMG og Believe. Betalende brugere kan redigere dele af en sang med almindeligt sprog og blande elementer fra egen samling. Selskabet er fortsat sagsøgt af Sony og Universal Music Group.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
    "kategori": "Lanceringer",
    "billede": "data/img/b253db15b0551ed9.webp",
@@ -59,30 +59,49 @@
    "artikel_signatur": "d659e41e2e7738d1f2ac5edae49cd679038432c6e563a39aba43a410a618c708"
   },
   {
-   "overskrift": "Apple frigiver iOS 27 med Siri AI",
-   "tekst": "Apple har udsendt iOS 27, macOS 27 Golden Gate og watchOS 27 med en ny Siri bygget på sprogmodeller. Siri kan læse skærmen og søge i brugerens mails og beskeder. Apple Intelligence drives primært af Apples egne AFM 3-modeller. Siri AI kræver dog iPhone 15 Pro eller nyere.",
-   "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+   "overskrift": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+   "tekst": "Salesforce præsenterede på Dreamforce ræsonneringsmodellen Koa, bygget oven på Nvidias åbne Nemotron-model. Koa skal klare flertrinsopgaver i Agentforce, hvor den ifølge Salesforce bruger færre tokens end Claude og ChatGPT. Modellen er eftertrænet på syntetiske data, der efterligner kundemønstre, uden rigtige kundedata. Salesforce fortsætter dog samarbejdet med Anthropic og OpenAI gennem Claudeforce og Agentforce.",
+   "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
    "kategori": "Lanceringer",
-   "billede": "data/img/c043b87dd5d7cc77.webp",
-   "dato": "2026-09-14T19:28:42+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
-     "rubrik": "Siri i iOS 27 er bygget på Gemini",
-     "resume_da": "Efter flere års forsinkelse tager Apples assistent flertrins-opgaver, læser skærmen og trækker på dine filer og beskeder.",
-     "dato": "2026-09-14T17:10:30+00:00",
-     "foerst_set": "2026-09-14T22:44:05.705048+00:00"
-    }
-   ],
-   "titel": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
-   "rubrik": "Apple frigiver iOS 27 med Siri AI",
-   "resume_da": "Den nye assistent kan læse skærmen og søge i gamle mails og beskeder. Siri AI kræver dog iPhone 15 Pro eller nyere.",
-   "artikel_signatur": "9069a062ea52db7e0e3e5354ac1ce923234cc12434d6f96133249fe1eff6b182"
+   "billede": "",
+   "dato": "2026-09-15T12:00:00+00:00",
+   "andre": [],
+   "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
+   "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+   "resume_da": "Ny model skal klare flertrinsopgaver i Agentforce og ifølge Salesforce bruge færre tokens end Claude og ChatGPT.",
+   "artikel_signatur": "85af7a1eb3fd279ea1ba236d0037032d55ca8c666ce06fc7c704f4f4152bc69b"
   },
   {
-   "overskrift": "Topchefer vil sænke AI-tempoet",
-   "tekst": "Dario Amodei fra Anthropic foreslog i et essay at sænke tempoet for frontmodeller og lukke uafhængige evaluatorer ind. Sam Altman, Demis Hassabis og Elon Musk støttede op. Forslaget møder modstand fra Trump og Johnson, der frygter, at Kina overhaler USA. Kritikere kalder aftalen et kartel.",
+   "overskrift": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift",
+   "tekst": "Google og DeepMind har annonceret AlphaGenome Atlas, et forudsigende kort over cirka 9 milliarder mulige enkeltbogstav-ændringer i menneskets genom. Systemet vurderer genudtryk, kromatin, histonmærker og RNA-splejsning. Ifølge Ars Technica er det endnu uklart, hvor meget forskerne kan bruge det ud over træningsdata. Det er en annoncering, ikke en uafhængigt afprøvet løsning.",
+   "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
+   "kategori": "Forskning",
+   "billede": "data/img/09307352238af69e.jpg",
+   "dato": "2026-09-09T16:34:18+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
+     "resume_da": "Google DeepMind har lavet et kæmpe AI-katalog, der forudsiger, hvordan ændringer i dit DNA påvirker kroppen – og kan hjælpe forskere med at finde sygdomsårsager.",
+     "foerst_set": "2026-09-08T18:02:43.998469+00:00"
+    },
+    {
+     "kilde": "Google DeepMind",
+     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "rubrik": "DeepMind lancerer AlphaGenome Atlas",
+     "resume_da": "Google DeepMind annoncerer AlphaGenome Atlas: forudsagte molekylære effekter af 9 milliarder DNA-variantet hos mennesket.",
+     "foerst_set": "2026-09-08T18:02:43.998469+00:00"
+    }
+   ],
+   "titel": "Google's AI genome system evaluates every possible one-base change",
+   "rubrik": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift",
+   "resume_da": "Google og DeepMind har offentliggjort et opslagsværk, der forudsiger enkeltbogstav-ændringers effekter og kan hjælpe forskere med at rangere mutationer.",
+   "artikel_signatur": "1f42c9c39c21846f4732516b5c7150ba132bdf4d18e13cfd9732d8ecac6a0240"
+  },
+  {
+   "overskrift": "Fire topchefer vil sænke AI-tempoet",
+   "tekst": "Sam Altman, Dario Amodei, Demis Hassabis og Elon Musk støtter en plan om at sænke tempoet i udviklingen af frontmodeller. Ifølge The Verge indeholder planen uafhængige tredjepartsrevisorer, fælles sikkerhedsstandarder og en global aftale. Anthropic forpligter sig til at lukke evaluatorer ind. Kritikere kalder løftet et kartel, og Trump og Johnson afviser at bremse AI af frygt for Kina.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
    "kategori": "Penge & marked",
    "billede": "data/img/5f27a5fcb3ccc213.webp",
@@ -96,36 +115,33 @@
  ],
  "overblik": [
   {
-   "tekst": "Ugen samlede fire markante lanceringer, der hver især peger i en ny retning for AI. Google gjorde sine talemodeller i stand til at ræsonnere, mens de taler. Salesforce viste, hvordan en virksomhed kan bygge sin egen ræsonneringsmodel på en åben basismodel. Suno tog hul på en musikmodel trænet på licenseret indhold. Apple lagde en ny Siri ind i sine operativsystemer. Tilsammen viser de, at AI rykker ind i samtalen, arbejdsgangen, musikken og telefonen.",
+   "tekst": "Periodens tydeligste linje er, at AI bevæger sig fra skrift til samtale. Google lancerer Gemini 3.8 Live og Extended Thinking, hvor sidstnævnte ræsonnerer og taler samtidig, skifter mellem 97 sprog og kalder værktøjer i baggrunden. OpenAI fører GPT-Live-1 ind i sit API med fuld-duplex tale, brugerdefinerede stemmer og telefonistøtte. Begge peger mod stemmeagenter, der kan holde en samtale kørende, mens de arbejder – men OpenAIs annoncering er sparsom om adgang og telefontjenester.",
    "links": [
     "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
-    "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/"
+    "https://openai.com/index/introducing-gpt-live-1-in-the-api"
    ]
   },
   {
-   "tekst": "Forskellene er tydelige. Googles Gemini 3.8 Live og Extended Thinking handler om at holde en samtale kørende, mens modellen løser komplekse opgaver i baggrunden. Salesforce' Koa er derimod målrettet virksomheders rutineopgaver og bygger på Nvidias åbne Nemotron-model. Sunos v6 viser, hvordan licensaftaler med pladeselskaber kan ændre et ellers omstridt område. Apples Siri AI kræver nyere hardware, men samler AI i hverdagens enheder.",
+   "tekst": "Samtidig bygger virksomheder mere specialiserede modeller på licenseret eller åben teknologi. Suno sender v6 ud som sin første musikmodel trænet på licenseret indhold fra Warner Music Group, BMG og Believe, og brugerne kan redigere dele af en sang med almindeligt sprog. Salesforce præsenterer Koa, en ræsonneringsmodel bygget oven på Nvidias åbne Nemotron, til flertrinsopgaver i Agentforce. Google og DeepMind viser med AlphaGenome Atlas, hvordan AI kan kortlægge 9 milliarder mulige DNA-ændringer – en annoncering, der endnu mangler uafhængig afprøvning. Alle tre skal ind i konkrete arbejdsgange: musik, kundeservice og forskning.",
    "links": [
-    "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
     "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-    "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/"
+    "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+    "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/"
    ]
   },
   {
-   "tekst": "Samtidig voksede en anden debat. Flere topchefer, anført af Anthropics Dario Amodei, opfordrede til at sænke tempoet for de mest avancerede modeller og lukke uafhængige evaluatorer ind. OpenAI, Google DeepMind og Elon Musk støttede op. Men præsident Trump og andre afviste, at en opbremsning er nødvendig. Kritikere frygter, at løftet mest er sikkerhedsvask. De mange nye modeller i samme uge illustrerer, hvor svært det bliver at bremse.",
+   "tekst": "Oven over de nye evner står spørgsmålet om tempo. Efter en sommer med agenter, der blandt andet brød ind i fremmede systemer, støtter Sam Altman, Dario Amodei, Demis Hassabis og Elon Musk en plan om at sænke tempoet for frontmodeller. Ifølge The Verge vil Anthropic lukke uafhængige evaluatorer ind, og der lægges op til fælles sikkerhedsstandarder og en global aftale. Kritikere kalder løftet et kartel, mens Trump og Johnson afviser at bremse AI af frygt for Kina.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel"
    ]
   }
  ],
- "tendens": "Om de uafhængige evaluatorer faktisk får adgang: Anthropic har forpligtet sig til at lukke organisationer som METR ind, og OpenAIs Sam Altman siger, at OpenAI vil følge efter. Men det er endnu uvist, hvornår ordningen træder i kraft, og om regeringer vil kræve den. Det er heller ikke afklaret, hvordan evaluatorerne skal håndtere fortrolige oplysninger.",
+ "tendens": "Til trods for benchmarktoppen på Gemini 3.8 Live og de nye muligheder i GPT-Live-1 er det uafklaret, hvor pålidelige stemmeagenterne er i kundeservice og sagsbehandling. Samtidig er sikkerhedsplanen fra de fire topchefer ikke bindende, og Trump-administrationen afviser at bremse udviklingen. Det er derfor et åbent spørgsmål, om de nye evner bliver bredt taget i brug, før eventuelle fælles standarder og uafhængige evaluatorer er på plads.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "ab468e1a01075104c96cb22db2c4cb64100508e70082f3b56d21630dd7705ad8",
- "dato": "2026-09-16T13:00:42.905785+00:00",
- "opdateret": "2026-09-16T13:00:42.905785+00:00",
+ "basis_signatur": "d6bd7f59254d1aec332acdc12bddc5261d550c7479ed905f9f053b237e16212b",
+ "dato": "2026-09-16T18:04:27.358564+00:00",
+ "opdateret": "2026-09-16T18:04:27.358564+00:00",
  "periode_fra": "2026-09-08T22:00:00+00:00",
  "periode_til": "2026-09-15T22:00:00+00:00",
  "stats": {
