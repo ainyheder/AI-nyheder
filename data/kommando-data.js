@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-16T01:06:11.657336+00:00",
+ "genereret": "2026-09-16T06:47:53.781290+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,12 +183,12 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-16T00:45:26.311614+00:00",
-  "antal": 81,
+  "opdateret": "2026-09-16T06:39:49.110550+00:00",
+  "antal": 82,
   "med_billede": 74,
-  "paa_dansk": 81,
+  "paa_dansk": 82,
   "kategorier": {
-   "Lanceringer": 9,
+   "Lanceringer": 10,
    "Penge \u0026 marked": 21,
    "Forskning": 8,
    "Samfund \u0026 etik": 18,
@@ -196,15 +196,15 @@ window.KOMMANDO_DATA = {
    "Hverdags-AI": 13
   },
   "kilder": {
-   "TechCrunch AI": 31,
+   "TechCrunch AI": 32,
    "Google DeepMind": 1,
    "Ars Technica AI": 11,
    "The Verge AI": 17,
    "MIT Tech Review AI": 4,
    "Simon Willison AI": 6,
    "Hugging Face": 1,
-   "OpenAI Blog": 8,
    "Google Gemini": 1,
+   "OpenAI Blog": 8,
    "Anthropic News": 1
   },
   "udvalgte": [
@@ -281,6 +281,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/0a588c402c193818.webp"
    },
    {
+    "titel": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
+    "rubrik": "Meta lader AI-agenter sætte WhatsApp Business op",
+    "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+    "side": "artikel/c8e966977fdfbf21.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-15T20:12:53+00:00",
+    "billede": ""
+   },
+   {
     "titel": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
     "rubrik": "BloombergNEF: Datacentre overgår Tyskland og Japan i gasforbrug",
     "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
@@ -349,21 +359,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-15T17:42:59+00:00",
     "billede": "data/img/58fb2985645cdea7.webp"
-   },
-   {
-    "titel": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
-    "rubrik": "Superpose lader AI foreslå dine poser",
-    "link": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
-    "side": "artikel/7ca90a5021c373bf.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T14:42:37+00:00",
-    "billede": "data/img/0baa074c91374470.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-16T00:45:26.311614+00:00",
+  "opdateret": "2026-09-16T06:39:49.110550+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -383,7 +383,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-16T00:45:25.846491+00:00",
+  "opdateret": "2026-09-16T06:39:48.643496+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -601,8 +601,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-16T00:45:26.311614+00:00",
-  "artikler_i_alt": 81,
+  "opdateret": "2026-09-16T06:39:49.110550+00:00",
+  "artikler_i_alt": 82,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -792,7 +792,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 31,
+    "i_listen": 32,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -859,6 +859,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Meta lader AI-agenter sætte WhatsApp Business op",
+      "dato": "2026-09-15T20:12:53",
+      "foerst_set": "2026-09-15T21:43:26",
+      "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+      "side": "artikel/c8e966977fdfbf21.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "BloombergNEF: Datacentre overgår Tyskland og Japan i gasforbrug",
       "dato": "2026-09-15T18:29:20",
       "foerst_set": "2026-09-15T21:43:26",
@@ -891,15 +900,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-15T18:27:03",
       "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
       "side": "artikel/7ca41db25b66a63f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Profound henter 180 mio. dollar i Serie D",
-      "dato": "2026-09-15T15:22:48",
-      "foerst_set": "2026-09-15T18:27:03",
-      "link": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-      "side": "artikel/a99284cc094f15db.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1371,12 +1371,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-16T01:06:04.580969+00:00",
+  "opdateret": "2026-09-16T06:47:49.868493+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 83,
-  "sidevisninger_i_alt": 317,
+  "besoeg_i_alt": 84,
+  "sidevisninger_i_alt": 318,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1533,8 +1533,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 80,
-    "visninger": 290
+    "besoeg": 81,
+    "visninger": 291
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1598,7 +1598,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 81
+    "besoeg": 82
    },
    {
     "fra": "m.facebook.com",
