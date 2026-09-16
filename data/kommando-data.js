@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-16T07:42:34.531492+00:00",
+ "genereret": "2026-09-16T13:02:18.083399+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,12 +183,12 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-16T06:39:49.110550+00:00",
-  "antal": 82,
+  "opdateret": "2026-09-16T12:48:27.967549+00:00",
+  "antal": 83,
   "med_billede": 74,
-  "paa_dansk": 82,
+  "paa_dansk": 83,
   "kategorier": {
-   "Lanceringer": 10,
+   "Lanceringer": 11,
    "Penge \u0026 marked": 21,
    "Forskning": 8,
    "Samfund \u0026 etik": 18,
@@ -201,6 +201,7 @@ window.KOMMANDO_DATA = {
    "Ars Technica AI": 11,
    "The Verge AI": 17,
    "MIT Tech Review AI": 4,
+   "Mistral AI": 1,
    "Simon Willison AI": 6,
    "Hugging Face": 1,
    "Google Gemini": 1,
@@ -240,6 +241,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Mistral and Mozilla are bringing open, private and multilingual AI to your web browser",
+    "rubrik": "Mistral skal drive Firefox' AI-assistent",
+    "link": "https://mistral.ai/news/mistral-x-mozilla/",
+    "side": "artikel/c410e90a2cd9982e.html",
+    "kategori": "Lanceringer",
+    "kilde": "Mistral AI",
+    "dato": "2026-09-16T12:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "AI and data centers are incredibly unpopular in every poll",
     "rubrik": "New York Times-måling: 61 procent afviser AI-datacentre",
@@ -349,21 +360,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-15T15:22:48+00:00",
     "billede": "data/img/1e65fc0072c052b7.webp"
-   },
-   {
-    "titel": "AI agents now have a place to snitch",
-    "rubrik": "Ryan Greenblatt åbner hotline for AI-angivere",
-    "link": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
-    "side": "artikel/1e9eb8a1b0c06025.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T17:42:59+00:00",
-    "billede": "data/img/58fb2985645cdea7.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-16T06:39:49.110550+00:00",
+  "opdateret": "2026-09-16T12:48:27.967549+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -383,7 +384,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-16T06:39:48.643496+00:00",
+  "opdateret": "2026-09-16T12:48:27.535897+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -601,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-16T06:39:49.110550+00:00",
-  "artikler_i_alt": 82,
+  "opdateret": "2026-09-16T12:48:27.967549+00:00",
+  "artikler_i_alt": 83,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -638,9 +639,19 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 0,
+    "i_listen": 1,
     "som_ekstra": 0,
-    "seneste": []
+    "seneste": [
+     {
+      "rubrik": "Mistral skal drive Firefox' AI-assistent",
+      "dato": "2026-09-16T12:00:00",
+      "foerst_set": "2026-09-16T12:48:27",
+      "link": "https://mistral.ai/news/mistral-x-mozilla/",
+      "side": "artikel/c410e90a2cd9982e.html",
+      "hvor": "forside",
+      "under": ""
+     }
+    ]
    },
    {
     "navn": "Google Gemini",
@@ -1252,20 +1263,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI fører GPT-Live-1 til API",
-      "dato": "2026-09-10T00:00:00",
-      "foerst_set": "2026-09-10T17:49:16",
-      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-      "side": "artikel/031421652db5e34f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "OpenAI præsenterer Data agent i ChatGPT Work",
       "dato": "2026-09-10T15:00:00",
       "foerst_set": "2026-09-10T17:49:16",
       "link": "https://openai.com/index/put-data-to-work",
       "side": "artikel/d86fa96aa31ae332.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI fører GPT-Live-1 til API",
+      "dato": "2026-09-10T00:00:00",
+      "foerst_set": "2026-09-10T17:49:16",
+      "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "side": "artikel/031421652db5e34f.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1371,12 +1382,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-16T06:47:49.868493+00:00",
+  "opdateret": "2026-09-16T13:02:13.015819+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 84,
-  "sidevisninger_i_alt": 318,
+  "besoeg_i_alt": 83,
+  "sidevisninger_i_alt": 319,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1533,8 +1544,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 81,
-    "visninger": 291
+    "besoeg": 80,
+    "visninger": 292
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1598,7 +1609,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 82
+    "besoeg": 81
    },
    {
     "fra": "m.facebook.com",
