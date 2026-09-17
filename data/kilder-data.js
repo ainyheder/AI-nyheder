@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-16T21:39:37.526404+00:00",
- "artikler_i_alt": 91,
+ "opdateret": "2026-09-17T00:51:48.169313+00:00",
+ "artikler_i_alt": 82,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -141,7 +141,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -152,6 +152,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får Docs og Slides i samme chat"
+    },
+    {
+     "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
+     "dato": "2026-09-16T16:00:54",
+     "foerst_set": "2026-09-16T17:43:50",
+     "link": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+     "side": "artikel/7e460d3dba3c11bb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "GPT-6 Astra tegner 5 km-rute på 27 minutter",
@@ -225,8 +234,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 7,
+   "i_listen": 28,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "Anthropic og OpenAI vil lukke evaluatorer ind",
@@ -256,6 +265,15 @@ window.KILDER_STATUS = {
      "under": "Claude får Docs og Slides i samme chat"
     },
     {
+     "rubrik": "Nvidia-chef: AI-sikkerhed er et ingeniørproblem, ikke jura",
+     "dato": "",
+     "foerst_set": "2026-09-16T00:45:26.311614+00:00",
+     "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+     "side": "",
+     "hvor": "under",
+     "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
+    },
+    {
      "rubrik": "Siri i iOS 27 er bygget på Gemini",
      "dato": "",
      "foerst_set": "2026-09-14T22:44:05",
@@ -283,15 +301,6 @@ window.KILDER_STATUS = {
      "under": "OpenAI udskyder børsnotering: Altman siger nej til 2026"
     },
     {
-     "rubrik": "Suno v6: egen model på licenseret musik",
-     "dato": "",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-     "side": "",
-     "hvor": "under",
-     "under": "Suno v6 er trænet på licenseret musik"
-    },
-    {
      "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
      "dato": "",
      "foerst_set": "2026-09-08T21:21:14",
@@ -315,15 +324,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-16T12:48:27",
      "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
      "side": "artikel/5960227fd9e8cd26.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia-chef: AI-sikkerhed er et ingeniørproblem, ikke jura",
-     "dato": "2026-09-16T00:20:39",
-     "foerst_set": "2026-09-16T00:45:26",
-     "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
-     "side": "artikel/6a5d552d9722f338.html",
      "hvor": "forside",
      "under": ""
     },
@@ -407,16 +407,25 @@ window.KILDER_STATUS = {
      "side": "artikel/7ca90a5021c373bf.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Salesforce og Nvidia lancerer ræsonneringsmodellen Koa",
+     "dato": "2026-09-15T12:00:00",
+     "foerst_set": "2026-09-15T13:50:34",
+     "link": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+     "side": "artikel/221b10e9623a92a5.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     7
     ],
     [
      "Ars Technica AI",
-     3
+     2
     ]
    ]
   },
@@ -430,8 +439,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
-   "som_ekstra": 7,
+   "i_listen": 19,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "Meta One sælger ekstra AI-brug fra 7,99 dollar",
@@ -479,26 +488,8 @@ window.KILDER_STATUS = {
      "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
     },
     {
-     "rubrik": "Anthropic-forsker: AI kan slå os alle ihjel",
-     "dato": "",
-     "foerst_set": "2026-09-09T13:51:27",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-forsker siger op i superintelligens-advarsel"
-    },
-    {
-     "rubrik": "Googles AlphaGenome Atlas kan bane vej for nye behandlinger",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
-     "side": "",
-     "hvor": "under",
-     "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
-    },
-    {
      "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-     "dato": "2026-09-16T16:40:46",
+     "dato": "2026-09-16T20:40:46",
      "foerst_set": "2026-09-16T21:39:37",
      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
      "side": "artikel/418dbc769c8c49eb.html",
@@ -561,7 +552,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Altman, Amodei, Hassabis og Musk vil bremse AI",
-     "dato": "2026-09-14T22:59:41",
+     "dato": "2026-09-14T18:59:41",
      "foerst_set": "2026-09-15T01:52:19",
      "link": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
      "side": "artikel/c9c7e7aae9376f42.html",
@@ -570,7 +561,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
-     "dato": "2026-09-14T21:21:42",
+     "dato": "2026-09-14T17:21:42",
      "foerst_set": "2026-09-14T22:44:05",
      "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
      "side": "artikel/de5d887a67d769f9.html",
@@ -608,7 +599,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     7
     ],
     [
      "Simon Willison AI",
@@ -616,7 +607,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     2
+     1
     ]
    ]
   },
@@ -630,18 +621,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Anthropic-forsker stopper med AI-advarsel",
-     "dato": "",
-     "foerst_set": "2026-09-09T17:56:17",
-     "link": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
-     "side": "",
-     "hvor": "under",
-     "under": "Anthropic-forsker siger op i superintelligens-advarsel"
-    },
     {
      "rubrik": "Agilitys Digit 5 undviger folk og sætter sig",
      "dato": "2026-09-15T18:33:02",
@@ -731,28 +713,15 @@ window.KILDER_STATUS = {
      "side": "artikel/e4ed798161e112b3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift",
-     "dato": "2026-09-09T16:34:18",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change/",
-     "side": "artikel/3c17b6b72442d35f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     3
-    ],
-    [
-     "The Verge AI",
      2
     ],
     [
-     "Google DeepMind",
+     "The Verge AI",
      1
     ]
    ]
@@ -877,20 +846,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI fører GPT-Live-1 til API",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-     "side": "artikel/031421652db5e34f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI og GSA giver USA's myndigheder AI-rabat",
      "dato": "2026-09-10T07:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://openai.com/index/expanding-ai-access-us-government",
      "side": "artikel/aa2ea623e7d1a173.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI fører GPT-Live-1 til API",
+     "dato": "2026-09-10T00:00:00",
+     "foerst_set": "2026-09-10T17:49:16",
+     "link": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+     "side": "artikel/031421652db5e34f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -935,17 +904,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 1,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "DeepMind lancerer AlphaGenome Atlas",
-     "dato": "",
-     "foerst_set": "2026-09-08T18:02:43",
-     "link": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-     "side": "",
-     "hvor": "under",
-     "under": "AlphaGenome Atlas kortlægger 9 milliarder DNA-skift"
-    },
     {
      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
      "dato": "2026-09-15T17:05:57",
@@ -959,10 +919,6 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
