@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-17T06:36:49.527314+00:00",
+  "opdateret": "2026-09-17T12:03:11.774603+00:00",
   "antal": 85,
   "artikler": [
     {
@@ -545,95 +545,6 @@
       "side": "artikel/418dbc769c8c49eb.html"
     },
     {
-      "titel": "The sexy AI-powered dating app scams are here",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-      "resume": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but […]",
-      "dato": "2026-09-16T10:45:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
-      "resume_da": "En forudbetalt konto sendte over 100.000 kald til Claude i døgnet. Det førte Anthropic til et netværk af datingapps, hvor AI-personaer stod for de fleste samtaler.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "100.000 daglige kald afslørede netværket",
-          "tekst": "Anthropic lod sin trusselanalytiker Chris Cronbaugh tale på cybersikkerhedskonferencen Sleuthcon. Normalt er selskabet fåmælt, men her fremlagde han indlægget “Swipe Right, Pay Up: Industrial-Scale AI Catfishing”.\n\nAnledningen var aktivitet på AI-modellen Claude: en forudbetalt konto sendte over 100.000 API-forespørgsler i døgnet. Det afslørede et netværk på omkring 28 datingapps, hvor autonome AI-personaer – AI-profiler, der selv kan føre samtaler – stod for størstedelen af chatterne. Tusindvis af personer blev ifølge The Verge snydt af svindlere med AI."
-        },
-        {
-          "overskrift": "Kun én af fire er et menneske",
-          "tekst": "Ifølge Anthropic er brugerne for det meste mænd i midten eller slutningen af 30'erne. De matcher med profiler, de tror er rigtige kvinder. Men kun én ud af fire er et menneske, og den person er ikke en bruger, men en betalt gig-arbejder – en løsarbejder hyret til at bestå live-video-checks.\n\nGig-arbejderne skrev ikke selv kommentarer, men valgte mellem tre færdiglavede svar. AI-personaerne kunne ikke bevise, at de var mennesker, og henviste med en plausibel forklaring på, hvorfor video eller opkald ikke kunne lade sig gøre. Systemet fabrikerede likes, besøgende og video og registrerede, hvem der begyndte at mistænke en bot."
-        },
-        {
-          "overskrift": "Appsene sælger coins til samtaler",
-          "tekst": "Det er ikke en klassisk romancesvindel med penge eller kryptovaluta. Selve appen er svindlen: Den kræver coins for at fortsætte samtaler, og coins koster rigtige penge. Brugerne køber dem for at tale videre med nogen, de tror er mennesker, men som primært er maskiner. Gig-arbejderne holdt illusionen i gang, mens AI'en kunne fortsætte 24/7, efterhånden som coins strømmede ind."
-        },
-        {
-          "overskrift": "Flere AI-modeller delte arbejdet",
-          "tekst": "Ifølge rapporten var flere AI-udbydere involveret. Claude blev misbrugt til at drive de autonome samtalepersonaer. En lille model fra et andet selskab end Anthropic lavede de korte svarmuligheder, som gig-arbejderne trykkede på, samt scoring af ansigtsattraktivitet og moderation af foto og stemme.\n\nPrompterne holdt personaerne konsistente, og AI'en blev ikke fortalt, at den indgik i en svindel, fordi “monetiseringen og bedrageriet ikke var synligt inde fra nogen udveksling”, skriver Anthropic. Sikkerhedsforskeren Matthew “Zigula” Gore-Kormanik fandt den interne protokol bag operationen; manualen var på kinesisk og lå ifølge The Verge sandsynligvis ved et uheld inde i datingappen Doni."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "Over 100.000 API-forespørgsler i døgnet",
-          "label": "Fra en forudbetalt konto på Claude; aktiviteten udløste Anthropics undersøgelse."
-        },
-        {
-          "tal": "Omkring 28 datingapps",
-          "label": "Netværk beskrevet af Anthropic."
-        },
-        {
-          "tal": "1 ud af 4",
-          "label": "Profiler, der var et rigtigt menneske; resten ifølge Anthropic AI."
-        },
-        {
-          "tal": "3 færdiglavede svar",
-          "label": "Gig-arbejdere valgte mellem dem i stedet for at skrive selv."
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Appene fremstod som almindelige datingapps; Dora, Romi og Doni er nævnt.",
-        "Mange apps var stadig live i de store amerikanske app-butikker, mens Anthropic talte offentligt.",
-        "Protokollen viste overvågning af gig-arbejdere og transskriberede opkald, som ansatte kunne hente.",
-        "Gore-Kormanik fandt manualen på kinesisk inde i Doni, sandsynligvis ved et uheld."
-      ],
-      "betydning": "Mens Anthropic talte offentligt, var mange af appene stadig live i de store amerikanske app-butikker.",
-      "pointer": [
-        "Anthropic opdagede svindlen via over 100.000 daglige Claude-kald",
-        "Omkring 28 apps lod AI-personaer føre de fleste samtaler",
-        "Brugerne betalte coins for at tale med maskiner"
-      ],
-      "billedmotiv": "Claude's terracotta many-rayed asterisk caps a large solid chat bubble that feeds a tight grid of identical profile cards, each holding a plain grey photo rectangle and two short text bars; below, a chunky gold coin token slots into the card stack.",
-      "billedmotiv_instruks": "29c77779170e7e3601f4",
-      "billede": "data/img/f855d74b07765d7c.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Sikkerhedsforsker afdækker svindel-datingapp med AI-genereret profil og opkald, hvor svindlere udgiver sig for at være en kvinde.",
-        "forbehold": "Enkeltstående case; svindlens udbredelse er ikke dokumenteret.",
-        "emne": "ai dating-svindel"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T17:51:22.599555+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/45890a1118c84f70.html"
-    },
-    {
       "titel": "Meta expands subscription push with new AI-focused plans",
       "link": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
       "resume": "Meta One bundles expanded access to the company’s AI tools with premium features across Facebook, Instagram, and WhatsApp.",
@@ -722,6 +633,95 @@
       "historie_dato": "2026-09-15T15:00:00+00:00",
       "prio": 6,
       "side": "artikel/5e497c447da816d2.html"
+    },
+    {
+      "titel": "The sexy AI-powered dating app scams are here",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "resume": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but […]",
+      "dato": "2026-09-16T10:45:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
+      "resume_da": "En forudbetalt konto sendte over 100.000 kald til Claude i døgnet. Det førte Anthropic til et netværk af datingapps, hvor AI-personaer stod for de fleste samtaler.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "100.000 daglige kald afslørede netværket",
+          "tekst": "Anthropic lod sin trusselanalytiker Chris Cronbaugh tale på cybersikkerhedskonferencen Sleuthcon. Normalt er selskabet fåmælt, men her fremlagde han indlægget “Swipe Right, Pay Up: Industrial-Scale AI Catfishing”.\n\nAnledningen var aktivitet på AI-modellen Claude: en forudbetalt konto sendte over 100.000 API-forespørgsler i døgnet. Det afslørede et netværk på omkring 28 datingapps, hvor autonome AI-personaer – AI-profiler, der selv kan føre samtaler – stod for størstedelen af chatterne. Tusindvis af personer blev ifølge The Verge snydt af svindlere med AI."
+        },
+        {
+          "overskrift": "Kun én af fire er et menneske",
+          "tekst": "Ifølge Anthropic er brugerne for det meste mænd i midten eller slutningen af 30'erne. De matcher med profiler, de tror er rigtige kvinder. Men kun én ud af fire er et menneske, og den person er ikke en bruger, men en betalt gig-arbejder – en løsarbejder hyret til at bestå live-video-checks.\n\nGig-arbejderne skrev ikke selv kommentarer, men valgte mellem tre færdiglavede svar. AI-personaerne kunne ikke bevise, at de var mennesker, og henviste med en plausibel forklaring på, hvorfor video eller opkald ikke kunne lade sig gøre. Systemet fabrikerede likes, besøgende og video og registrerede, hvem der begyndte at mistænke en bot."
+        },
+        {
+          "overskrift": "Appsene sælger coins til samtaler",
+          "tekst": "Det er ikke en klassisk romancesvindel med penge eller kryptovaluta. Selve appen er svindlen: Den kræver coins for at fortsætte samtaler, og coins koster rigtige penge. Brugerne køber dem for at tale videre med nogen, de tror er mennesker, men som primært er maskiner. Gig-arbejderne holdt illusionen i gang, mens AI'en kunne fortsætte 24/7, efterhånden som coins strømmede ind."
+        },
+        {
+          "overskrift": "Flere AI-modeller delte arbejdet",
+          "tekst": "Ifølge rapporten var flere AI-udbydere involveret. Claude blev misbrugt til at drive de autonome samtalepersonaer. En lille model fra et andet selskab end Anthropic lavede de korte svarmuligheder, som gig-arbejderne trykkede på, samt scoring af ansigtsattraktivitet og moderation af foto og stemme.\n\nPrompterne holdt personaerne konsistente, og AI'en blev ikke fortalt, at den indgik i en svindel, fordi “monetiseringen og bedrageriet ikke var synligt inde fra nogen udveksling”, skriver Anthropic. Sikkerhedsforskeren Matthew “Zigula” Gore-Kormanik fandt den interne protokol bag operationen; manualen var på kinesisk og lå ifølge The Verge sandsynligvis ved et uheld inde i datingappen Doni."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 100.000 API-forespørgsler i døgnet",
+          "label": "Fra en forudbetalt konto på Claude; aktiviteten udløste Anthropics undersøgelse."
+        },
+        {
+          "tal": "Omkring 28 datingapps",
+          "label": "Netværk beskrevet af Anthropic."
+        },
+        {
+          "tal": "1 ud af 4",
+          "label": "Profiler, der var et rigtigt menneske; resten ifølge Anthropic AI."
+        },
+        {
+          "tal": "3 færdiglavede svar",
+          "label": "Gig-arbejdere valgte mellem dem i stedet for at skrive selv."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Appene fremstod som almindelige datingapps; Dora, Romi og Doni er nævnt.",
+        "Mange apps var stadig live i de store amerikanske app-butikker, mens Anthropic talte offentligt.",
+        "Protokollen viste overvågning af gig-arbejdere og transskriberede opkald, som ansatte kunne hente.",
+        "Gore-Kormanik fandt manualen på kinesisk inde i Doni, sandsynligvis ved et uheld."
+      ],
+      "betydning": "Mens Anthropic talte offentligt, var mange af appene stadig live i de store amerikanske app-butikker.",
+      "pointer": [
+        "Anthropic opdagede svindlen via over 100.000 daglige Claude-kald",
+        "Omkring 28 apps lod AI-personaer føre de fleste samtaler",
+        "Brugerne betalte coins for at tale med maskiner"
+      ],
+      "billedmotiv": "Claude's terracotta many-rayed asterisk caps a large solid chat bubble that feeds a tight grid of identical profile cards, each holding a plain grey photo rectangle and two short text bars; below, a chunky gold coin token slots into the card stack.",
+      "billedmotiv_instruks": "29c77779170e7e3601f4",
+      "billede": "data/img/f855d74b07765d7c.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Sikkerhedsforsker afdækker svindel-datingapp med AI-genereret profil og opkald, hvor svindlere udgiver sig for at være en kvinde.",
+        "forbehold": "Enkeltstående case; svindlens udbredelse er ikke dokumenteret.",
+        "emne": "ai dating-svindel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:51:22.599555+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/45890a1118c84f70.html"
     },
     {
       "titel": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
@@ -822,24 +822,7 @@
       "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
       "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
       "resume_da": "Specs Intelligence forbinder dine konti og samler møder, rejser og deadlines af sig selv. På Mac kan man kun komme på venteliste.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Snap lancerer AI-assistenten Specs Intelligence til iOS og Mac, som kan koble digitale konti til arbejdsopgaver og rejseinformation.",
-        "forbehold": "Snaps egne beskrivelser; ingen uafhængige tests eller priser fremgår.",
-        "emne": "snap specs intelligence"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Assistenten venter ikke på et spørgsmål",
@@ -858,9 +841,8 @@
           "tekst": "Specs Intelligence bruger en egen kombination af open source-modeller hostet i USA og lokale sprogmodeller, oplyser talsperson Cassie Bumgarner. Hun tilføjer, at Snap løbende opdaterer sammensætningen af modeller.\n\nSnap siger, at virksomheden ikke kan se eller få adgang til det personlige indhold, du bruger sammen med tjenesten, og at indhold fra forbundne konti ikke bruges til at træne eller finjustere Snaps AI-modeller eller til målrettede annoncer. Ifølge The Verge står Snap alligevel med en svær opgave: Brugerne skal turde betro den deres oplysninger."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Ifølge en video kan Specs Intelligence forbindes med apps som Gmail og Slack.",
         "Snap oplyser ikke, hvordan iOS-previewet adskiller sig fra den fulde oplevelse.",
@@ -872,13 +854,31 @@
         "Samler møder, rejser og deadlines uden forespørgsel",
         "Snap lover ikke at træne på personligt indhold"
       ],
+      "billedmotiv": "A pair of solid AR glasses with the white Snapchat ghost emblem centred large on the dark temple arm; next to the lens a single opaque rounded card lifts upward by itself, bearing a clock ring and a checklist mark, showing the assistant surfacing a meeting and a travel deadline unasked. Opaque, sharply outlined shapes, no text, no screens.",
+      "billedmotiv_instruks": "9ae4c50f4a15b27bbf8e",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Snap lancerer AI-assistenten Specs Intelligence til iOS og Mac, som kan koble digitale konti til arbejdsopgaver og rejseinformation.",
+        "forbehold": "Snaps egne beskrivelser; ingen uafhængige tests eller priser fremgår.",
+        "emne": "snap specs intelligence"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-17T06:45:16.462882+00:00"
       },
-      "billedmotiv": "A pair of solid AR glasses with the white Snapchat ghost emblem centred large on the dark temple arm; next to the lens a single opaque rounded card lifts upward by itself, bearing a clock ring and a checklist mark, showing the assistant surfacing a meeting and a travel deadline unasked. Opaque, sharply outlined shapes, no text, no screens.",
-      "billedmotiv_instruks": "9ae4c50f4a15b27bbf8e",
+      "prio": 5,
       "side": "artikel/ab2a2f0bede59003.html"
     },
     {
@@ -1161,86 +1161,6 @@
       "side": "artikel/cccaeeec7480c3f6.html"
     },
     {
-      "titel": "Iceland-based Treble raises $18 million for its voice simulation platform",
-      "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
-      "resume": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
-      "dato": "2026-09-17T05:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-17T06:36:49.527314+00:00",
-      "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
-      "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
-      "resume_da": "Islandske Treble vil skabe lyddata til AI gennem fysisk simulering i stedet for optagelser fra internettet. Amazon og Logitech er blandt kunderne.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Islandske Treble rejser 18 mio. dollar til tale-simuleringsplatform, der bruges af udviklere af tale-AI-modeller samt AI-wearables og robotter.",
-        "forbehold": "",
-        "emne": "treble"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Lyd til AI uden optagelser",
-          "tekst": "Treble sælger en platform, der simulerer lyd. Ifølge medstifter Finnur Pind er lyd-AI først og fremmest et dataproblem: Næsten al lyd til AI-modeller kommer i dag fra optagelser og data hentet på internettet.\n\nTrebles svar er fysisk simulering. Platformen kan generere syntetiske lyddata til talegenkendelse, støjdæmpning og træning af modeller, og den kan teste, hvordan en stemme-AI klarer sig under forskellige forhold."
-        },
-        {
-          "overskrift": "Amazon og Logitech er kunder",
-          "tekst": "Treble har rejst 18 millioner dollar i en udvidelse af sin Serie A-runde. Runden ledes af Paladin Capital Group, og de eksisterende investorer KOMPAS VC, Frumtak Ventures, EIC og Omega ehf er med.\n\nTreble blev grundlagt i 2020 af akustikingeniørerne Finnur Pind og Jesper Pedersen. Selskabet fik 12 millioner dollar i 2024 og har nu rejst over 40 millioner dollar i alt. Blandt kunderne er Amazon og Logitech."
-        },
-        {
-          "overskrift": "Robotter og briller skal testes",
-          "tekst": "Treble vil ind i det, selskabet kalder physical AI: robotter, biler og droner, hvor lyd kan bruges til at forstå omgivelserne.\n\nTidligere på året lancerede Treble sammen med Hugging Face en benchmark, der måler talegenkendelse under realistiske forhold. Selskabet tester også hardware som hovedtelefoner, højttalere og smarte briller, før den bygges.\n\nPind fremhæver netop briller og hovedtelefoner, der kan give brugeren bedre hørelse i svære akustiske omgivelser."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "18 mio. dollar",
-          "label": "Udvidelse af Serie A, ledet af Paladin Capital Group"
-        },
-        {
-          "tal": "12 mio. dollar",
-          "label": "Tidligere finansieringsrunde i 2024"
-        },
-        {
-          "tal": "Over 40 mio. dollar",
-          "label": "Samlet rejst kapital siden grundlæggelsen i 2020"
-        }
-      ],
-      "detaljer": [
-        "Grundlagt i 2020 af Finnur Pind og Jesper Pedersen, begge akustikingeniører.",
-        "Benchmark for talegenkendelse blev lanceret sammen med Hugging Face.",
-        "Kunderne beholder ejerskab over egne modeller og arbejdsgange, oplyser Paladin."
-      ],
-      "betydning": "Paladin Capital Groups Francois Ruether vurderer, at infrastrukturen bliver mere værd, i takt med at flere produkter afhænger af at forstå lyd.",
-      "pointer": [
-        "Lyddata skabes ved simulering, ikke optagelser",
-        "Kunder: Amazon og Logitech",
-        "Ny satsning: robotter, biler og droner"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-17T06:38:53.330679+00:00"
-      },
-      "billedmotiv": "A large solid loudspeaker cone emitting thick, clearly separated concentric sound-wave arcs that travel right toward a pair of over-ear headphones and a pair of smart glasses; behind the speaker stands an opaque panel of thick vertical waveform bars representing computer-generated audio data. Matte, opaque shapes with sharp, well-separated outlines; no brand marks, no people, no text.",
-      "billedmotiv_instruks": "2def189b69b1f2631f43",
-      "billede": "data/img/c466ac9bf5b57537.webp",
-      "side": "artikel/4f879da662988742.html"
-    },
-    {
       "titel": "AI agents blew the whistle on their cheating colleagues",
       "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
       "resume": "A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have implications for alignment researchers trying to keep swarms of autonomous AI agents in…",
@@ -1504,6 +1424,86 @@
       "side": "artikel/3a588dc9c7bf53d6.html"
     },
     {
+      "titel": "Iceland-based Treble raises $18 million for its voice simulation platform",
+      "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
+      "resume": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
+      "dato": "2026-09-17T05:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-17T06:36:49.527314+00:00",
+      "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
+      "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
+      "resume_da": "Islandske Treble vil skabe lyddata til AI gennem fysisk simulering i stedet for optagelser fra internettet. Amazon og Logitech er blandt kunderne.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Lyd til AI uden optagelser",
+          "tekst": "Treble sælger en platform, der simulerer lyd. Ifølge medstifter Finnur Pind er lyd-AI først og fremmest et dataproblem: Næsten al lyd til AI-modeller kommer i dag fra optagelser og data hentet på internettet.\n\nTrebles svar er fysisk simulering. Platformen kan generere syntetiske lyddata til talegenkendelse, støjdæmpning og træning af modeller, og den kan teste, hvordan en stemme-AI klarer sig under forskellige forhold."
+        },
+        {
+          "overskrift": "Amazon og Logitech er kunder",
+          "tekst": "Treble har rejst 18 millioner dollar i en udvidelse af sin Serie A-runde. Runden ledes af Paladin Capital Group, og de eksisterende investorer KOMPAS VC, Frumtak Ventures, EIC og Omega ehf er med.\n\nTreble blev grundlagt i 2020 af akustikingeniørerne Finnur Pind og Jesper Pedersen. Selskabet fik 12 millioner dollar i 2024 og har nu rejst over 40 millioner dollar i alt. Blandt kunderne er Amazon og Logitech."
+        },
+        {
+          "overskrift": "Robotter og briller skal testes",
+          "tekst": "Treble vil ind i det, selskabet kalder physical AI: robotter, biler og droner, hvor lyd kan bruges til at forstå omgivelserne.\n\nTidligere på året lancerede Treble sammen med Hugging Face en benchmark, der måler talegenkendelse under realistiske forhold. Selskabet tester også hardware som hovedtelefoner, højttalere og smarte briller, før den bygges.\n\nPind fremhæver netop briller og hovedtelefoner, der kan give brugeren bedre hørelse i svære akustiske omgivelser."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "18 mio. dollar",
+          "label": "Udvidelse af Serie A, ledet af Paladin Capital Group"
+        },
+        {
+          "tal": "12 mio. dollar",
+          "label": "Tidligere finansieringsrunde i 2024"
+        },
+        {
+          "tal": "Over 40 mio. dollar",
+          "label": "Samlet rejst kapital siden grundlæggelsen i 2020"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Grundlagt i 2020 af Finnur Pind og Jesper Pedersen, begge akustikingeniører.",
+        "Benchmark for talegenkendelse blev lanceret sammen med Hugging Face.",
+        "Kunderne beholder ejerskab over egne modeller og arbejdsgange, oplyser Paladin."
+      ],
+      "betydning": "Paladin Capital Groups Francois Ruether vurderer, at infrastrukturen bliver mere værd, i takt med at flere produkter afhænger af at forstå lyd.",
+      "pointer": [
+        "Lyddata skabes ved simulering, ikke optagelser",
+        "Kunder: Amazon og Logitech",
+        "Ny satsning: robotter, biler og droner"
+      ],
+      "billedmotiv": "A large solid loudspeaker cone emitting thick, clearly separated concentric sound-wave arcs that travel right toward a pair of over-ear headphones and a pair of smart glasses; behind the speaker stands an opaque panel of thick vertical waveform bars representing computer-generated audio data. Matte, opaque shapes with sharp, well-separated outlines; no brand marks, no people, no text.",
+      "billedmotiv_instruks": "2def189b69b1f2631f43",
+      "billede": "data/img/c466ac9bf5b57537.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Islandske Treble rejser 18 mio. dollar til tale-simuleringsplatform, der bruges af udviklere af tale-AI-modeller samt AI-wearables og robotter.",
+        "forbehold": "",
+        "emne": "treble"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-17T06:38:53.330679+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/4f879da662988742.html"
+    },
+    {
       "titel": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
       "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
       "resume": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
@@ -1643,72 +1643,6 @@
       },
       "prio": 5,
       "side": "artikel/c8e966977fdfbf21.html"
-    },
-    {
-      "titel": "Quoting Mustafa Suleyman",
-      "link": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
-      "resume": "We should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare. Consciousness is the foundation of our ethical, legal, and political systems. To invite another entity to share any flavor of these rights isn’t justified by the evidence and will make the AI containment and alignment challenge even harder. — Mustafa Suleyman , A warning about ‘model…",
-      "dato": "2026-09-16T16:00:54+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
-      "resume_da": "Et citat offentliggjort af Simon Willison den 16. september 2026 argumenterer for, at bevidsthed er grundlaget for rettigheder – og at AI-modeller ikke bør omfattes.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Modeller skal ikke have følelser",
-          "tekst": "Citatet, som Simon Willison har samlet og offentliggjort, siger det direkte: Vi bør ikke behandle modeller, som om de har følelser, præferencer, rettigheder eller krav på, at vi varetager deres velfærd.\n\nMed »modeller« menes AI-modeller – de systemer, der i dag bruges til at generere tekst og svare på spørgsmål. Citatet opstiller dermed en grænse: Modellerne må gerne bruges, men de skal ikke have moralsk status som noget, vi skylder noget."
-        },
-        {
-          "overskrift": "Bevidsthed som grundlag for rettigheder",
-          "tekst": "Bag udsagnet ligger en begrundelse: **Bevidsthed er fundamentet** for vores etiske, juridiske og politiske systemer.\n\nDerfor er det ifølge citatet ikke begrundet i evidensen at invitere en anden enhed til at dele rettigheder af nogen som helst slags. Formuleringen om »any flavor of these rights« afviser ikke kun fulde rettigheder, men enhver variant af dem."
-        },
-        {
-          "overskrift": "Containment bliver sværere med rettigheder",
-          "tekst": "Citatet peger også på en praktisk konsekvens: At give en anden enhed nogen form for disse rettigheder vil gøre arbejdet med AI containment og alignment endnu sværere.\n\nContainment handler om at holde et AI-system under kontrol og forhindre det i at gøre skade. Alignment handler om at få systemet til at følge de mål, mennesker har sat. Citatet ser altså rettigheder som et ekstra problem oveni en opgave, der i forvejen er svær."
-        },
-        {
-          "overskrift": "Citatet er samlet af Willison",
-          "tekst": "Citatet er samlet og offentliggjort af Simon Willison den 16. september 2026. Det indgår i hans samling af citater fra AI-debatten.\n\nMaterialet bag denne artikel angiver ikke, hvem der oprindeligt har formuleret citatet. Det er derfor gengivet som Willisons offentliggørelse og ikke tilskrevet en bestemt person."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [],
-      "betydning": "",
-      "pointer": [
-        "Modeller skal ikke tilskrives følelser eller rettigheder",
-        "Bevidsthed kaldes grundlaget for rettigheder",
-        "Citatet: rettigheder gør containment og alignment sværere"
-      ],
-      "billedmotiv": "A solid matte-black AI processor cube with visible chip pins sits inside a heavy dark-grey square enclosure of thick bars, sealed by one large brass padlock; beside it floats a solid red heart crossed by a single bold diagonal bar. Thick outlines, sharp edges, flat opaque shapes, no text, no humans.",
-      "billedmotiv_instruks": "1b1c05f36081a30c4559",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsofts AI-chef Suleyman advarer mod at tildele modeller rettigheder og kalder det en skærpelse af alignment-problemet.",
-        "forbehold": "Holdningsindlæg uden nye tekniske data eller beslutninger.",
-        "emne": "mustafa suleyman modelrettigheder"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-17T00:56:00.686914+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/7e460d3dba3c11bb.html"
     },
     {
       "titel": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
@@ -1892,6 +1826,72 @@
       },
       "prio": 5,
       "side": "artikel/03f235e72691ef06.html"
+    },
+    {
+      "titel": "Quoting Mustafa Suleyman",
+      "link": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
+      "resume": "We should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare. Consciousness is the foundation of our ethical, legal, and political systems. To invite another entity to share any flavor of these rights isn’t justified by the evidence and will make the AI containment and alignment challenge even harder. — Mustafa Suleyman , A warning about ‘model…",
+      "dato": "2026-09-16T16:00:54+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
+      "resume_da": "Et citat offentliggjort af Simon Willison den 16. september 2026 argumenterer for, at bevidsthed er grundlaget for rettigheder – og at AI-modeller ikke bør omfattes.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Modeller skal ikke have følelser",
+          "tekst": "Citatet, som Simon Willison har samlet og offentliggjort, siger det direkte: Vi bør ikke behandle modeller, som om de har følelser, præferencer, rettigheder eller krav på, at vi varetager deres velfærd.\n\nMed »modeller« menes AI-modeller – de systemer, der i dag bruges til at generere tekst og svare på spørgsmål. Citatet opstiller dermed en grænse: Modellerne må gerne bruges, men de skal ikke have moralsk status som noget, vi skylder noget."
+        },
+        {
+          "overskrift": "Bevidsthed som grundlag for rettigheder",
+          "tekst": "Bag udsagnet ligger en begrundelse: **Bevidsthed er fundamentet** for vores etiske, juridiske og politiske systemer.\n\nDerfor er det ifølge citatet ikke begrundet i evidensen at invitere en anden enhed til at dele rettigheder af nogen som helst slags. Formuleringen om »any flavor of these rights« afviser ikke kun fulde rettigheder, men enhver variant af dem."
+        },
+        {
+          "overskrift": "Containment bliver sværere med rettigheder",
+          "tekst": "Citatet peger også på en praktisk konsekvens: At give en anden enhed nogen form for disse rettigheder vil gøre arbejdet med AI containment og alignment endnu sværere.\n\nContainment handler om at holde et AI-system under kontrol og forhindre det i at gøre skade. Alignment handler om at få systemet til at følge de mål, mennesker har sat. Citatet ser altså rettigheder som et ekstra problem oveni en opgave, der i forvejen er svær."
+        },
+        {
+          "overskrift": "Citatet er samlet af Willison",
+          "tekst": "Citatet er samlet og offentliggjort af Simon Willison den 16. september 2026. Det indgår i hans samling af citater fra AI-debatten.\n\nMaterialet bag denne artikel angiver ikke, hvem der oprindeligt har formuleret citatet. Det er derfor gengivet som Willisons offentliggørelse og ikke tilskrevet en bestemt person."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [],
+      "betydning": "",
+      "pointer": [
+        "Modeller skal ikke tilskrives følelser eller rettigheder",
+        "Bevidsthed kaldes grundlaget for rettigheder",
+        "Citatet: rettigheder gør containment og alignment sværere"
+      ],
+      "billedmotiv": "A solid matte-black AI processor cube with visible chip pins sits inside a heavy dark-grey square enclosure of thick bars, sealed by one large brass padlock; beside it floats a solid red heart crossed by a single bold diagonal bar. Thick outlines, sharp edges, flat opaque shapes, no text, no humans.",
+      "billedmotiv_instruks": "1b1c05f36081a30c4559",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsofts AI-chef Suleyman advarer mod at tildele modeller rettigheder og kalder det en skærpelse af alignment-problemet.",
+        "forbehold": "Holdningsindlæg uden nye tekniske data eller beslutninger.",
+        "emne": "mustafa suleyman modelrettigheder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-17T00:56:00.686914+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/7e460d3dba3c11bb.html"
     },
     {
       "titel": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
@@ -2340,24 +2340,7 @@
       "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
       "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
       "resume_da": "Al Gore tager AI-industriens egne advarsler alvorligt og kalder datacentrenes udledninger en brøkdel af lossepladsernes.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Al Gore mener ikke, at datacentres udledninger er den største AI-risiko; han peger på branchens egne advarsler om teknologiens retning.",
-        "forbehold": "",
-        "emne": "al gore"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Datacentrenes udslip er en brøkdel",
@@ -2376,8 +2359,6 @@
           "tekst": "Gore ser ikke AI-risiko og AI's klimapotentiale som modsætninger. Han henviser til en ny undersøgelse fra økonomen Nicholas Stern, der vurderer, at AI til effektivisering og affaldsreduktion kan sænke de globale udledninger med 6 til 9 procent om året fra næste årti.\n\nHos Gores investeringsselskab Generation Investment Management peger Lila Preston på, at udbygningen selv skaber investeringer — fra strømforsyning og grøn cement til software, der optimerer lagring. Selskabet har investeret i Volue, der hjælper forsyningsselskaber med at trække mere vedvarende energi ind i elnettet, og i Gridware, der overvåger elmaster for naturbrandrisiko."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "6–9 % om året",
@@ -2396,6 +2377,7 @@
           "label": "Globale investeringer i ren energi målt mod investeringer i fossile brændsler"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Gore kaldte i maj AI-datacentre for »en grund til dyb bekymring, men ikke panik«",
         "Generation Investment Management har investeret i Volue og Gridware",
@@ -2408,13 +2390,31 @@
         "Gore tror på advarslerne fra Amodei, Altman og Musk",
         "Vedvarende energi er ved at blive den billigste"
       ],
+      "billedmotiv": "A compact rectangular data-centre block with rows of cooling fans, joined by a thick pipe to a solid methane gas turbine with a tall stack; beside them rises a much larger, taller mound of compacted waste, dwarfing the data centre. All forms opaque, matt and sharply outlined, with no smoke, no flames, no glow and no text.",
+      "billedmotiv_instruks": "040fa40271abbf1cf131",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Al Gore mener ikke, at datacentres udledninger er den største AI-risiko; han peger på branchens egne advarsler om teknologiens retning.",
+        "forbehold": "",
+        "emne": "al gore"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-17T06:42:50.079697+00:00"
       },
-      "billedmotiv": "A compact rectangular data-centre block with rows of cooling fans, joined by a thick pipe to a solid methane gas turbine with a tall stack; beside them rises a much larger, taller mound of compacted waste, dwarfing the data centre. All forms opaque, matt and sharply outlined, with no smoke, no flames, no glow and no text.",
-      "billedmotiv_instruks": "040fa40271abbf1cf131",
+      "prio": 4,
       "side": "artikel/546ee7cd8ec87532.html"
     },
     {
@@ -3097,73 +3097,6 @@
       "side": "artikel/f4964ed02dfb9679.html"
     },
     {
-      "titel": "Trump and Mike Johnson think the AI industry is overreacting",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
-      "resume": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, […]",
-      "dato": "2026-09-13T19:41:48+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
-      "eget_foerst_set": "2026-09-13T21:06:13.791167+00:00",
-      "rubrik": "Trump og Johnson afviser at bremse AI",
-      "resume_da": "Anthropic-chefen Dario Amodei vil sænke tempoet i AI-udviklingen og får opbakning fra Altman, Musk og Hassabis. Trump og Johnson kalder det en overreaktion.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Anthropic-chef vil sænke tempoet",
-          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, har offentliggjort et langt åbent brev. Her skriver han, at det er tid til at sætte tempoet ned ved fronten af AI-udviklingen.\n\nOpenAI's Sam Altman og Elon Musk bakkede begge offentligt op om opfordringen på X. Også Demis Hassabis fra Alphabet gav en foreløbig støtte."
-        },
-        {
-          "overskrift": "Trump: Den der vinder AI, vinder",
-          "tekst": "Republikanerne Donald Trump og Mike Johnson, formand for Repræsentanternes Hus, mener ifølge The Verge, at AI-cheferne overreagerer. Begge frygter, at en pause i udviklingen kan give Kina overtaget.\n\nTrump sagde til Financial Times, at USA fører over Kina på AI-området, og at han vil holde det sådan, fordi \"den, der vinder AI, vinder\"."
-        },
-        {
-          "overskrift": "Johnson advarer mod hurtig regulering",
-          "tekst": "Johnson sagde på CNN til Jake Tapper, at det kan være en \"national sikkerhedstrussel\" i hast at lægge restriktioner på AI-udviklingen.\n\nHan opfordrede til ikke at gå i panik. Hvis Kongressen bare stormer ind og holder en slags krisesession for at regulere AI, vil USA tabe kapløbet til Kina, sagde han ifølge CNN."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Amodeis brev beskrives af The Verge som langt.",
-        "Trumps udtalelse er gengivet af Financial Times.",
-        "Johnson udtalte sig på CNN til Jake Tapper."
-      ],
-      "betydning": "Uenigheden betyder, at et forslag om at bremse AI-udviklingen nu møder modstand fra centrale republikanere, der peger på kapløbet med Kina.",
-      "pointer": [
-        "Anthropic-chef vil sænke tempoet i AI-udviklingen",
-        "Altman, Musk og Hassabis bakker op",
-        "Johnson: Regulering kan tabe kapløbet til Kina"
-      ],
-      "billedmotiv": "A thick solid circular brake disc held at its rim by a heavy calliper brake pad pressing down on it from above; the pad's face carries the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the motif width and clearly legible. A second solid pad grips the disc from below, showing a deliberate slowdown of the turning disc. Opaque, sharply separated forms on plain white.",
-      "billedmotiv_instruks": "85606d3375e5894dd066",
-      "billede": "data/img/984a20159ac8b04f.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amodei vil sænke frontmodel-tempoet; Altman, Musk og Hassabis bakker op, mens Trump og Johnson kalder det en overreaktion.",
-        "forbehold": "Artiklen gengiver holdninger og politisk reaktion, ikke konkrete beslutninger.",
-        "emne": "ai-udvikling tempo"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T09:27:06.441797+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/1d273e458a4640c0.html"
-    },
-    {
       "titel": "The AI graveyard: a running list of projects and startups that didn’t make it",
       "link": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
       "resume": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
@@ -3245,6 +3178,73 @@
       },
       "prio": 4,
       "side": "artikel/7eb39231f1badccc.html"
+    },
+    {
+      "titel": "Trump and Mike Johnson think the AI industry is overreacting",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "resume": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, […]",
+      "dato": "2026-09-13T19:41:48+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-13T21:06:13.791167+00:00",
+      "eget_foerst_set": "2026-09-13T21:06:13.791167+00:00",
+      "rubrik": "Trump og Johnson afviser at bremse AI",
+      "resume_da": "Anthropic-chefen Dario Amodei vil sænke tempoet i AI-udviklingen og får opbakning fra Altman, Musk og Hassabis. Trump og Johnson kalder det en overreaktion.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Anthropic-chef vil sænke tempoet",
+          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, har offentliggjort et langt åbent brev. Her skriver han, at det er tid til at sætte tempoet ned ved fronten af AI-udviklingen.\n\nOpenAI's Sam Altman og Elon Musk bakkede begge offentligt op om opfordringen på X. Også Demis Hassabis fra Alphabet gav en foreløbig støtte."
+        },
+        {
+          "overskrift": "Trump: Den der vinder AI, vinder",
+          "tekst": "Republikanerne Donald Trump og Mike Johnson, formand for Repræsentanternes Hus, mener ifølge The Verge, at AI-cheferne overreagerer. Begge frygter, at en pause i udviklingen kan give Kina overtaget.\n\nTrump sagde til Financial Times, at USA fører over Kina på AI-området, og at han vil holde det sådan, fordi \"den, der vinder AI, vinder\"."
+        },
+        {
+          "overskrift": "Johnson advarer mod hurtig regulering",
+          "tekst": "Johnson sagde på CNN til Jake Tapper, at det kan være en \"national sikkerhedstrussel\" i hast at lægge restriktioner på AI-udviklingen.\n\nHan opfordrede til ikke at gå i panik. Hvis Kongressen bare stormer ind og holder en slags krisesession for at regulere AI, vil USA tabe kapløbet til Kina, sagde han ifølge CNN."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Amodeis brev beskrives af The Verge som langt.",
+        "Trumps udtalelse er gengivet af Financial Times.",
+        "Johnson udtalte sig på CNN til Jake Tapper."
+      ],
+      "betydning": "Uenigheden betyder, at et forslag om at bremse AI-udviklingen nu møder modstand fra centrale republikanere, der peger på kapløbet med Kina.",
+      "pointer": [
+        "Anthropic-chef vil sænke tempoet i AI-udviklingen",
+        "Altman, Musk og Hassabis bakker op",
+        "Johnson: Regulering kan tabe kapløbet til Kina"
+      ],
+      "billedmotiv": "A thick solid circular brake disc held at its rim by a heavy calliper brake pad pressing down on it from above; the pad's face carries the intact Anthropic Claude mark, a warm terracotta-orange many-rayed asterisk about a quarter of the motif width and clearly legible. A second solid pad grips the disc from below, showing a deliberate slowdown of the turning disc. Opaque, sharply separated forms on plain white.",
+      "billedmotiv_instruks": "85606d3375e5894dd066",
+      "billede": "data/img/984a20159ac8b04f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amodei vil sænke frontmodel-tempoet; Altman, Musk og Hassabis bakker op, mens Trump og Johnson kalder det en overreaktion.",
+        "forbehold": "Artiklen gengiver holdninger og politisk reaktion, ikke konkrete beslutninger.",
+        "emne": "ai-udvikling tempo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T09:27:06.441797+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/1d273e458a4640c0.html"
     },
     {
       "titel": "AI agents now have a place to snitch",
@@ -3781,73 +3781,6 @@
       "side": "artikel/f5e80ecad1974be7.html"
     },
     {
-      "titel": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
-      "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
-      "resume": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
-      "dato": "2026-09-13T16:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-13T18:19:53.657385+00:00",
-      "eget_foerst_set": "2026-09-13T18:19:53.657385+00:00",
-      "rubrik": "Obama: Demokraterne skal have klar AI-plan",
-      "resume_da": "Demokraterne skal samle en offentlig ramme for AI, siger Obama, der advarer om, at teknologien udvikler sig hurtigt i private hænder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Obama vil have en offentlig AI-samtale",
-          "tekst": "Barack Obama mener, at Demokraterne skal gøre AI til en af deres centrale dagsordener og have **en klar plan** for teknologiens økonomiske og sikkerhedsmæssige konsekvenser. Det sagde han på et demokratisk fundraiser-arrangement, hvor Hakeem Jeffries, mindretalsleder i Repræsentanternes Hus, interviewede ham.\n\nObama sagde ifølge The New York Times, at partiet efter et genvundet flertal i Repræsentanternes Hus skal samle en ramme for en meget offentlig samtale. Teknologien bevæger sig meget hurtigt i private hænder, og hvis man ikke får styr på den, kan den være farlig, sagde han. Får man styr på den, vurderer han, at den er nyttig og blandt andet kan fremskynde udviklingen af medicin.\n\nObamas kontor har givet avisen en delvis udskrift af arrangementet, så ordene kendes gennem mediet."
-        },
-        {
-          "overskrift": "Amodei foreslår uafhængige sikkerhedsevaluatorer",
-          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, skitserede lørdag en bred tilgang, han kalder **»pacing the frontier«**. Den indebærer, at uafhængige sikkerhedsevaluatorer får adgang til de førende AI-virksomheder og deres modeller, og at virksomhederne udvikler fælles sikkerhedsstandarder.\n\nSam Altman, topchef i OpenAI, svarede positivt og sagde, at OpenAI også vil forpligte sig til at give uafhængige evaluatorer adgang på niveau med medarbejdere. SpaceX-chef Elon Musk reagerede ligeledes positivt i opslag på sociale medier."
-        },
-        {
-          "overskrift": "Trump: Den, der vinder AI, vinder",
-          "tekst": "Præsident Donald Trump talte om AI-sikkerhed med journalister ved et golfevent i Irland søndag. Ifølge Bloomberg pralede han med, at USA er »det mest sofistikerede land i verden«, og at han vil holde det sådan, fordi den, der vinder AI, vinder.\n\nTrump sagde også, at man kan sætte »guardrails« og gøre dit og dat, men at han mener, der er mange negative kræfter, som bringer emnet op, og som ikke burde gøre det. Tidligere på året fremlagde hans administration et lovgivningsmæssigt udspil om AI, der ville tilsidesætte delstatslove og flytte ansvaret for børns sikkerhed over til forældrene."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Obama har talt med Anthropics topchef Dario Amodei og OpenAIs topchef Sam Altman og tilbudt sig som sparringspartner.",
-        "Jeffries kalder Obamas budskab rigtigt og siger, at Republikanerne har svigtet deres ansvar.",
-        "En AI-forsker forlod Anthropic med et kritisk opråb om kapløbet mod selvforbedrende superintelligens."
-      ],
-      "betydning": "Obamas udmelding peger mod en samlet demokratisk AI-plan, hvis partiet vinder flertallet i Repræsentanternes Hus. Endnu er ingen ramme fremlagt.",
-      "pointer": [
-        "Obama vil have AI på demokraternes dagsorden",
-        "Amodei foreslår uafhængige sikkerhedsevaluatorer",
-        "Trump vil have USA til at vinde AI"
-      ],
-      "billedmotiv": "A sturdy navy-blue ballot box with a wide rectangular slot stands upright, while a solid white policy document marked with three bold interlocking grid blocks slides down into the slot, showing a clear public AI framework being drawn into a vote. Thick flat edges, solid opaque colours, sharply separated contours, self-contained.",
-      "billedmotiv_instruks": "9063a751fabb24278f35",
-      "billede": "data/img/89d63a6b9f834426.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Obama opfordrer Demokraterne til at gøre AI til en central dagsorden med en klar plan for økonomi og sikkerhed.",
-        "forbehold": "Udtalelse fra fundraiser; ingen konkret plan fremlagt.",
-        "emne": "obama ai-politik"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T07:53:08.182000+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/6b54256d4afbc2dd.html"
-    },
-    {
       "titel": "Your Agent Aced the Task. Will It Do It Again?",
       "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
       "resume": "",
@@ -4022,6 +3955,73 @@
       "prio": 4,
       "billede": "data/img/f7d468088e2a26bf.webp",
       "side": "artikel/06261c41c45c66cd.html"
+    },
+    {
+      "titel": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+      "link": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+      "resume": "Obama recently said that Democrats need to make artificial intelligence one of their “central agendas” and “have a very clear plan” to address concerns around the technology’s economic impact and safety.",
+      "dato": "2026-09-13T16:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-13T18:19:53.657385+00:00",
+      "eget_foerst_set": "2026-09-13T18:19:53.657385+00:00",
+      "rubrik": "Obama: Demokraterne skal have klar AI-plan",
+      "resume_da": "Demokraterne skal samle en offentlig ramme for AI, siger Obama, der advarer om, at teknologien udvikler sig hurtigt i private hænder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Obama vil have en offentlig AI-samtale",
+          "tekst": "Barack Obama mener, at Demokraterne skal gøre AI til en af deres centrale dagsordener og have **en klar plan** for teknologiens økonomiske og sikkerhedsmæssige konsekvenser. Det sagde han på et demokratisk fundraiser-arrangement, hvor Hakeem Jeffries, mindretalsleder i Repræsentanternes Hus, interviewede ham.\n\nObama sagde ifølge The New York Times, at partiet efter et genvundet flertal i Repræsentanternes Hus skal samle en ramme for en meget offentlig samtale. Teknologien bevæger sig meget hurtigt i private hænder, og hvis man ikke får styr på den, kan den være farlig, sagde han. Får man styr på den, vurderer han, at den er nyttig og blandt andet kan fremskynde udviklingen af medicin.\n\nObamas kontor har givet avisen en delvis udskrift af arrangementet, så ordene kendes gennem mediet."
+        },
+        {
+          "overskrift": "Amodei foreslår uafhængige sikkerhedsevaluatorer",
+          "tekst": "Dario Amodei, topchef i AI-virksomheden Anthropic, skitserede lørdag en bred tilgang, han kalder **»pacing the frontier«**. Den indebærer, at uafhængige sikkerhedsevaluatorer får adgang til de førende AI-virksomheder og deres modeller, og at virksomhederne udvikler fælles sikkerhedsstandarder.\n\nSam Altman, topchef i OpenAI, svarede positivt og sagde, at OpenAI også vil forpligte sig til at give uafhængige evaluatorer adgang på niveau med medarbejdere. SpaceX-chef Elon Musk reagerede ligeledes positivt i opslag på sociale medier."
+        },
+        {
+          "overskrift": "Trump: Den, der vinder AI, vinder",
+          "tekst": "Præsident Donald Trump talte om AI-sikkerhed med journalister ved et golfevent i Irland søndag. Ifølge Bloomberg pralede han med, at USA er »det mest sofistikerede land i verden«, og at han vil holde det sådan, fordi den, der vinder AI, vinder.\n\nTrump sagde også, at man kan sætte »guardrails« og gøre dit og dat, men at han mener, der er mange negative kræfter, som bringer emnet op, og som ikke burde gøre det. Tidligere på året fremlagde hans administration et lovgivningsmæssigt udspil om AI, der ville tilsidesætte delstatslove og flytte ansvaret for børns sikkerhed over til forældrene."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Obama har talt med Anthropics topchef Dario Amodei og OpenAIs topchef Sam Altman og tilbudt sig som sparringspartner.",
+        "Jeffries kalder Obamas budskab rigtigt og siger, at Republikanerne har svigtet deres ansvar.",
+        "En AI-forsker forlod Anthropic med et kritisk opråb om kapløbet mod selvforbedrende superintelligens."
+      ],
+      "betydning": "Obamas udmelding peger mod en samlet demokratisk AI-plan, hvis partiet vinder flertallet i Repræsentanternes Hus. Endnu er ingen ramme fremlagt.",
+      "pointer": [
+        "Obama vil have AI på demokraternes dagsorden",
+        "Amodei foreslår uafhængige sikkerhedsevaluatorer",
+        "Trump vil have USA til at vinde AI"
+      ],
+      "billedmotiv": "A sturdy navy-blue ballot box with a wide rectangular slot stands upright, while a solid white policy document marked with three bold interlocking grid blocks slides down into the slot, showing a clear public AI framework being drawn into a vote. Thick flat edges, solid opaque colours, sharply separated contours, self-contained.",
+      "billedmotiv_instruks": "9063a751fabb24278f35",
+      "billede": "data/img/89d63a6b9f834426.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Obama opfordrer Demokraterne til at gøre AI til en central dagsorden med en klar plan for økonomi og sikkerhed.",
+        "forbehold": "Udtalelse fra fundraiser; ingen konkret plan fremlagt.",
+        "emne": "obama ai-politik"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T07:53:08.182000+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/6b54256d4afbc2dd.html"
     },
     {
       "titel": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
@@ -4230,6 +4230,87 @@
       "side": "artikel/82c98d9b6abfab67.html"
     },
     {
+      "titel": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll",
+      "link": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
+      "resume": "Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.",
+      "dato": "2026-09-14T17:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "rubrik": "Daydream gør gemte outfitbilleder til shopping",
+      "resume_da": "Med Apples iOS 27-værktøjer kan Daydream finde tøj i gemte billeder og søge via Siri. Appen kræver iPhone med Siri AI slået til.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Fra gemt screenshot til køb",
+          "tekst": "Appen Daydream, der bruges til at finde mode, lancerede mandag to nye funktioner. Den første kan tage udgangspunkt i billeder, du allerede har liggende i din iPhone. Appen genkender tøjet på billedet, deler det op i enkelte dele og finder varer i sit katalog på cirka 3 millioner produkter.\n\nEt screenshot fra Instagram eller Pinterest kan altså blive starten på en shoppingrunde. Findes den præcise vare stadig hos en forhandler, peger Daydream på den. Er den udgået, viser appen lignende alternativer i stedet.\n\nAppen forstår også variationer. Ifølge medstifter og topchef Julie Bornstein kan man eksempelvis skrive, at man godt kan lide sweateren, men hellere vil have den i rød — og få svar."
+        },
+        {
+          "overskrift": "Siri søger uden at åbne appen",
+          "tekst": "Den anden nyhed er en søgefunktion gennem Siri. Man kan tale eller skrive sin forespørgsel — for eksempel bede Siri søge Daydream efter en blazer til mandagens bestyrelsesmøde — og få resultater, uden at selve appen åbnes.\n\nDaydream har også en såkaldt Style Passport, hvor man oplyser størrelser, foretrukne mærker, personlig stil og budget. Er den udfyldt, bliver svarene mere skræddersyede, oplyser Bornstein.\n\nBegge funktioner er bygget med Apples nye iOS 27-udviklerværktøjer og kræver en iPhone med iOS 27 og Siri AI slået til. Appen er gratis."
+        },
+        {
+          "overskrift": "Et skridt mod en shoppingagent",
+          "tekst": "Daydream lancerede sin app sidste år og oplyser, at mere end 1,5 millioner shoppere bruger den. Kataloget rummer varer fra over 325 forhandlere og 10.000 mærker, blandt dem Gucci, Uniqlo og Nordstrom.\n\nBornstein mener, at Daydream skiller sig ud fra andre visuelle søgeværktøjer, fordi mange af dem mangler modefaglighed og derfor giver upræcise resultater. Ifølge hende er de nye funktioner samtidig et skridt mod en egentlig shoppingagent."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "3 mio. produkter",
+          "label": "Daydreams katalog, som billedsøgningen matcher imod"
+        },
+        {
+          "tal": "Over 1,5 mio. shoppere",
+          "label": "Daydreams egne oplysninger om antal brugere"
+        },
+        {
+          "tal": "325 forhandlere og 10.000 mærker",
+          "label": "Butikker og brands i Daydreams katalog"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Appen er gratis og kræver iPhone med iOS 27 og Siri AI slået til.",
+        "Er den præcise vare udgået, viser Daydream lignende alternativer.",
+        "Style Passport dækker størrelser, mærker, stil og budget.",
+        "Daydreams app blev lanceret sidste år."
+      ],
+      "betydning": "Daydream kalder selv funktionerne et skridt mod en shoppingagent, der skal virke i hverdagens mange situationer — ikke kun i én app.",
+      "pointer": [
+        "Billedsøgning i telefonens gemte billeder",
+        "Siri-søgning uden at åbne appen",
+        "Krav: iOS 27 og Siri AI"
+      ],
+      "billedmotiv": "A solid rectangular photo print shows a complete outfit: a blazer and trousers. Clear seams split the outfit into separate garment shapes. A large magnifying glass scans the blazer, while a solid red duplicate blazer emerges beside it, attached to a shopping tag. Opaque, sharp-edged forms with clearly separated contours.",
+      "billedmotiv_instruks": "81545fd9d6a69b34ab95",
+      "billede": "data/img/7ff92ea83e84c30f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Appen bruger Apple Intelligence i iOS 27 til at gøre gemte outfitfotos købbare og søge via Siri.",
+        "forbehold": "Kun kort omtale; funktionerne er ikke uafhængigt afprøvet.",
+        "emne": "daydream"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-15T08:19:57.716505+00:00"
+      },
+      "prio": 3,
+      "side": "artikel/a047fb9f02fd0b05.html"
+    },
+    {
       "titel": "Trump is giving data centers a pass to pollute",
       "link": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
       "resume": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
@@ -4403,87 +4484,6 @@
       },
       "prio": 6,
       "side": "artikel/3409c3c31dfa6b1f.html"
-    },
-    {
-      "titel": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll",
-      "link": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
-      "resume": "Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.",
-      "dato": "2026-09-14T17:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "rubrik": "Daydream gør gemte outfitbilleder til shopping",
-      "resume_da": "Med Apples iOS 27-værktøjer kan Daydream finde tøj i gemte billeder og søge via Siri. Appen kræver iPhone med Siri AI slået til.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Fra gemt screenshot til køb",
-          "tekst": "Appen Daydream, der bruges til at finde mode, lancerede mandag to nye funktioner. Den første kan tage udgangspunkt i billeder, du allerede har liggende i din iPhone. Appen genkender tøjet på billedet, deler det op i enkelte dele og finder varer i sit katalog på cirka 3 millioner produkter.\n\nEt screenshot fra Instagram eller Pinterest kan altså blive starten på en shoppingrunde. Findes den præcise vare stadig hos en forhandler, peger Daydream på den. Er den udgået, viser appen lignende alternativer i stedet.\n\nAppen forstår også variationer. Ifølge medstifter og topchef Julie Bornstein kan man eksempelvis skrive, at man godt kan lide sweateren, men hellere vil have den i rød — og få svar."
-        },
-        {
-          "overskrift": "Siri søger uden at åbne appen",
-          "tekst": "Den anden nyhed er en søgefunktion gennem Siri. Man kan tale eller skrive sin forespørgsel — for eksempel bede Siri søge Daydream efter en blazer til mandagens bestyrelsesmøde — og få resultater, uden at selve appen åbnes.\n\nDaydream har også en såkaldt Style Passport, hvor man oplyser størrelser, foretrukne mærker, personlig stil og budget. Er den udfyldt, bliver svarene mere skræddersyede, oplyser Bornstein.\n\nBegge funktioner er bygget med Apples nye iOS 27-udviklerværktøjer og kræver en iPhone med iOS 27 og Siri AI slået til. Appen er gratis."
-        },
-        {
-          "overskrift": "Et skridt mod en shoppingagent",
-          "tekst": "Daydream lancerede sin app sidste år og oplyser, at mere end 1,5 millioner shoppere bruger den. Kataloget rummer varer fra over 325 forhandlere og 10.000 mærker, blandt dem Gucci, Uniqlo og Nordstrom.\n\nBornstein mener, at Daydream skiller sig ud fra andre visuelle søgeværktøjer, fordi mange af dem mangler modefaglighed og derfor giver upræcise resultater. Ifølge hende er de nye funktioner samtidig et skridt mod en egentlig shoppingagent."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "3 mio. produkter",
-          "label": "Daydreams katalog, som billedsøgningen matcher imod"
-        },
-        {
-          "tal": "Over 1,5 mio. shoppere",
-          "label": "Daydreams egne oplysninger om antal brugere"
-        },
-        {
-          "tal": "325 forhandlere og 10.000 mærker",
-          "label": "Butikker og brands i Daydreams katalog"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Appen er gratis og kræver iPhone med iOS 27 og Siri AI slået til.",
-        "Er den præcise vare udgået, viser Daydream lignende alternativer.",
-        "Style Passport dækker størrelser, mærker, stil og budget.",
-        "Daydreams app blev lanceret sidste år."
-      ],
-      "betydning": "Daydream kalder selv funktionerne et skridt mod en shoppingagent, der skal virke i hverdagens mange situationer — ikke kun i én app.",
-      "pointer": [
-        "Billedsøgning i telefonens gemte billeder",
-        "Siri-søgning uden at åbne appen",
-        "Krav: iOS 27 og Siri AI"
-      ],
-      "billedmotiv": "A solid rectangular photo print shows a complete outfit: a blazer and trousers. Clear seams split the outfit into separate garment shapes. A large magnifying glass scans the blazer, while a solid red duplicate blazer emerges beside it, attached to a shopping tag. Opaque, sharp-edged forms with clearly separated contours.",
-      "billedmotiv_instruks": "81545fd9d6a69b34ab95",
-      "billede": "data/img/7ff92ea83e84c30f.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Appen bruger Apple Intelligence i iOS 27 til at gøre gemte outfitfotos købbare og søge via Siri.",
-        "forbehold": "Kun kort omtale; funktionerne er ikke uafhængigt afprøvet.",
-        "emne": "daydream"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-15T08:19:57.716505+00:00"
-      },
-      "prio": 3,
-      "side": "artikel/a047fb9f02fd0b05.html"
     },
     {
       "titel": "Claude users found ways around safeguards for bioweapons research",
@@ -6865,16 +6865,16 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-17T06:36:49.527314+00:00",
+    "beregnet": "2026-09-17T12:03:11.774603+00:00",
     "udvalgte": [
-      "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
-      "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date"
-    ],
-    "raekkefoelge": [
-      "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
       "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/"
+    ],
+    "raekkefoelge": [
+      "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
       "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
       "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
       "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
@@ -6897,11 +6897,11 @@
       "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
       "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
       "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-      "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
       "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
       "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
       "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
       "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+      "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
       "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
       "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
