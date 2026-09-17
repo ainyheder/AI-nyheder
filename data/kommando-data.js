@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-17T17:39:17.982853+00:00",
+ "genereret": "2026-09-17T21:00:19.116413+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,30 +183,30 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-17T17:14:28.265754+00:00",
-  "antal": 90,
+  "opdateret": "2026-09-17T20:31:59.642820+00:00",
+  "antal": 98,
   "med_billede": 73,
-  "paa_dansk": 90,
+  "paa_dansk": 98,
   "kategorier": {
-   "Lanceringer": 12,
-   "Samfund \u0026 etik": 23,
+   "Lanceringer": 13,
+   "Samfund \u0026 etik": 27,
    "Penge \u0026 marked": 25,
    "Hverdags-AI": 13,
-   "Forskning": 7,
-   "Politik \u0026 jura": 10
+   "Forskning": 9,
+   "Politik \u0026 jura": 11
   },
   "kilder": {
-   "TechCrunch AI": 33,
+   "TechCrunch AI": 35,
    "Google DeepMind": 1,
-   "The Verge AI": 22,
-   "Ars Technica AI": 10,
+   "The Verge AI": 24,
+   "Anthropic News": 2,
+   "Ars Technica AI": 13,
    "MIT Tech Review AI": 5,
    "Simon Willison AI": 7,
    "Mistral AI": 1,
    "Hugging Face": 1,
    "Google Gemini": 1,
-   "OpenAI Blog": 8,
-   "Anthropic News": 1
+   "OpenAI Blog": 8
   },
   "udvalgte": [
    {
@@ -230,17 +230,77 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers",
-    "rubrik": "Agilitys Digit 5 undviger folk og sætter sig",
-    "link": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
-    "side": "artikel/cccaeeec7480c3f6.html",
-    "kategori": "Lanceringer",
+    "titel": "LLMs respond differently to harmful prompts when AI watermarking is used",
+    "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
+    "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+    "side": "artikel/35cb1838bc98373f.html",
+    "kategori": "Forskning",
     "kilde": "Ars Technica AI",
-    "dato": "2026-09-15T18:33:02+00:00",
-    "billede": "data/img/0a588c402c193818.webp"
+    "dato": "2026-09-17T18:33:13+00:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Measurements for understanding the pace of AI development inside frontier labs",
+    "rubrik": "Anthropic måler hvor meget Claude bygger Claude",
+    "link": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+    "side": "artikel/0bc353f72d33d6d6.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Anthropic News",
+    "dato": "2026-09-17T00:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "LLMs respond differently to harmful prompts when AI watermarking is used",
+    "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
+    "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+    "side": "artikel/35cb1838bc98373f.html",
+    "kategori": "Forskning",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T18:33:13+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Base Labs launches an open-weight AI safety partnership with Hugging Face and Goodfire",
+    "rubrik": "Baseten vil bygge sikkerhed ind i åbne modeller",
+    "link": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/",
+    "side": "artikel/80716b9be3559651.html",
+    "kategori": "Forskning",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T17:15:59+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Google announces new experimental \"CC\" AI agent for families",
+    "rubrik": "Googles CC-agent samler familiens hverdag",
+    "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+    "side": "artikel/56012947a93a548f.html",
+    "kategori": "Lanceringer",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T20:24:34+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Is the AI safety debate about safety or control?",
+    "rubrik": "Zuckerberg: Meta holdt Muse tilbage i månedsvis",
+    "link": "https://techcrunch.com/2026/09/17/is-the-ai-safety-debate-about-safety-or-control/",
+    "side": "artikel/9d61eb9bd1c6f784.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T20:19:37+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "The AI Superintelligence Slowdown",
+    "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+    "side": "artikel/85b0b4814d514fc1.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-17T15:28:24-04:00",
+    "billede": ""
+   },
    {
     "titel": "AI is feared globally as the destroyer of jobs",
     "rubrik": "Pew-måling: AI frygtes som jobdræber",
@@ -272,6 +332,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/fbd4d8ed095bd243.webp"
    },
    {
+    "titel": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
+    "rubrik": "OpenAI deler seks tilfælde af uønsket agentadfærd",
+    "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
+    "side": "artikel/78ef7df1719c17b3.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T16:18:34+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
     "rubrik": "Emerald AI-alliance vil frigøre 100 gigawatt",
     "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
@@ -282,89 +352,19 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Inside the suddenly explosive world of AI safety",
-    "rubrik": "OpenAI-model slap ud og hackede startup",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
-    "side": "artikel/b976cf94b51bce51.html",
-    "kategori": "Samfund \u0026 etik",
+    "titel": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
+    "rubrik": "Microsofts AI-chef: Anthropic gør AI-sikkerhed værre",
+    "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+    "side": "artikel/74a1f4fa23b15aaa.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-09-17T07:30:00-04:00",
+    "dato": "2026-09-17T10:00:00-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
-    "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
-    "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
-    "side": "artikel/ab2a2f0bede59003.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-16T19:40:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Iceland-based Treble raises $18 million for its voice simulation platform",
-    "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
-    "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
-    "side": "artikel/4f879da662988742.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T05:00:00+00:00",
-    "billede": "data/img/c466ac9bf5b57537.webp"
-   },
-   {
-    "titel": "Al Gore says the real AI risk isn’t data centers",
-    "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
-    "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
-    "side": "artikel/546ee7cd8ec87532.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-16T23:43:09+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "The AI data center e-waste problem is huge — and getting bigger",
-    "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-    "side": "artikel/418dbc769c8c49eb.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-16T16:40:46-04:00",
-    "billede": "data/img/b2c8063ade36f286.webp"
-   },
-   {
-    "titel": "Google will now let any AI agent run your smart home",
-    "rubrik": "Google Home åbner for fremmede AI-agenter",
-    "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-    "side": "artikel/45384c84a9f2d30d.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-16T13:00:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Claude comes for Gemini with its own take on Docs and Slides",
-    "rubrik": "Claude får Docs og Slides i samme chat",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-    "side": "artikel/25ccc59e06a2349b.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-16T12:30:00-04:00",
-    "billede": "data/img/53aa659ae8d032de.webp"
-   },
-   {
-    "titel": "The sexy AI-powered dating app scams are here",
-    "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-    "side": "artikel/45890a1118c84f70.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-16T10:45:00-04:00",
-    "billede": "data/img/f855d74b07765d7c.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-17T17:14:28.265754+00:00",
+  "opdateret": "2026-09-17T20:31:59.642820+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -372,19 +372,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-   "https://openai.com/index/reimagining-advertising-with-ai"
+   "https://openai.com/index/astra-for-law",
+   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
    "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-   "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/"
+   "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-17T17:14:26.729452+00:00",
+  "opdateret": "2026-09-17T20:31:59.083320+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-17T17:14:28.265754+00:00",
-  "artikler_i_alt": 90,
+  "opdateret": "2026-09-17T20:31:59.642820+00:00",
+  "artikler_i_alt": 98,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -615,9 +615,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 13,
-    "i_listen": 1,
+    "i_listen": 2,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Anthropic måler hvor meget Claude bygger Claude",
+      "dato": "2026-09-17T00:00:00",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "side": "artikel/0bc353f72d33d6d6.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Anthropic stoppede misbrug af Claude i otte måneder",
       "dato": "2026-09-10T00:00:00",
@@ -821,7 +830,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
+    "i_listen": 35,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -897,6 +906,24 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
      },
      {
+      "rubrik": "Baseten vil bygge sikkerhed ind i åbne modeller",
+      "dato": "2026-09-17T17:15:59",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/",
+      "side": "artikel/80716b9be3559651.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Zuckerberg: Meta holdt Muse tilbage i månedsvis",
+      "dato": "2026-09-17T20:19:37",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://techcrunch.com/2026/09/17/is-the-ai-safety-debate-about-safety-or-control/",
+      "side": "artikel/9d61eb9bd1c6f784.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Huawei fremrykker AI-chip til 2027",
       "dato": "2026-09-17T14:06:14",
       "foerst_set": "2026-09-17T17:14:28",
@@ -913,24 +940,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/354af6386954314c.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Emerald AI-alliance vil frigøre 100 gigawatt",
-      "dato": "2026-09-17T13:38:33",
-      "foerst_set": "2026-09-17T17:14:28",
-      "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
-      "side": "artikel/3451114a79019509.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
-      "dato": "2026-09-17T05:00:00",
-      "foerst_set": "2026-09-17T06:36:49",
-      "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
-      "side": "artikel/4f879da662988742.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -944,7 +953,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
+    "i_listen": 24,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -993,11 +1002,29 @@ window.KOMMANDO_DATA = {
       "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
      },
      {
+      "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
+      "dato": "2026-09-17T15:28:24",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+      "side": "artikel/85b0b4814d514fc1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Pew-måling: AI frygtes som jobdræber",
       "dato": "2026-09-17T10:00:00",
       "foerst_set": "2026-09-17T17:14:28",
       "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
       "side": "artikel/e95f62cf60ae0563.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Microsofts AI-chef: Anthropic gør AI-sikkerhed værre",
+      "dato": "2026-09-17T10:00:00",
+      "foerst_set": "2026-09-17T17:14:28",
+      "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+      "side": "artikel/74a1f4fa23b15aaa.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1036,24 +1063,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/45384c84a9f2d30d.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude får Docs og Slides i samme chat",
-      "dato": "2026-09-16T12:30:00",
-      "foerst_set": "2026-09-16T17:43:50",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
-      "side": "artikel/25ccc59e06a2349b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
-      "dato": "2026-09-16T10:45:00",
-      "foerst_set": "2026-09-16T17:43:50",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-      "side": "artikel/45890a1118c84f70.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1067,9 +1076,36 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 10,
+    "i_listen": 13,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
+      "dato": "2026-09-17T18:33:13",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+      "side": "artikel/35cb1838bc98373f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Googles CC-agent samler familiens hverdag",
+      "dato": "2026-09-17T20:24:34",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+      "side": "artikel/56012947a93a548f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI deler seks tilfælde af uønsket agentadfærd",
+      "dato": "2026-09-17T16:18:34",
+      "foerst_set": "2026-09-17T17:14:28",
+      "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
+      "side": "artikel/78ef7df1719c17b3.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Agilitys Digit 5 undviger folk og sætter sig",
       "dato": "2026-09-15T18:33:02",
@@ -1148,15 +1184,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-10T21:07:39",
       "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
       "side": "artikel/4570a39b1061c92d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic stoppede forsøg på biovåben-forskning med Claude",
-      "dato": "2026-09-11T13:02:35",
-      "foerst_set": "2026-09-08T21:21:14",
-      "link": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
-      "side": "artikel/e4ed798161e112b3.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1382,12 +1409,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-17T17:39:08.019476+00:00",
+  "opdateret": "2026-09-17T21:00:08.151683+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 110,
-  "sidevisninger_i_alt": 270,
+  "besoeg_i_alt": 86,
+  "sidevisninger_i_alt": 326,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1544,27 +1571,83 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 110,
-    "visninger": 250
+    "besoeg": 83,
+    "visninger": 299
+   },
+   {
+    "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
+    "besoeg": 2,
+    "visninger": 2
+   },
+   {
+    "sti": "/uge.html",
+    "besoeg": 1,
+    "visninger": 5
+   },
+   {
+    "sti": "/artikel/5c41fc251a24d093.html",
+    "besoeg": 0,
+    "visninger": 1
+   },
+   {
+    "sti": "/faq.html",
+    "besoeg": 0,
+    "visninger": 1
+   },
+   {
+    "sti": "/om.html",
+    "besoeg": 0,
+    "visninger": 7
+   },
+   {
+    "sti": "/youtube.html",
+    "besoeg": 0,
+    "visninger": 1
    },
    {
     "sti": "/vaerktoejer.html",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 8
    },
    {
     "sti": "/cookies.html",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 2
    }
   ],
-  "artikler": [],
+  "artikler": [
+   {
+    "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
+    "besoeg": 2,
+    "visninger": 2,
+    "rubrik": "link\u0026gt;\u0026lt;guid",
+    "kategori": "",
+    "dato": ""
+   },
+   {
+    "sti": "/artikel/5c41fc251a24d093.html",
+    "besoeg": 0,
+    "visninger": 1,
+    "rubrik": "OpenAI-agenter bag hemmeligholdt RubyGems-angreb",
+    "kategori": "Samfund \u0026 etik",
+    "dato": "2026-09-12"
+   }
+  ],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 110
+    "besoeg": 84
+   },
+   {
+    "fra": "m.facebook.com",
+    "besoeg": 2
    }
   ],
-  "laeste_temaer": []
+  "laeste_temaer": [
+   {
+    "navn": "Samfund \u0026 etik",
+    "visninger": 1
+   }
+  ]
  }
 };
