@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-17T21:00:19.116413+00:00",
+ "genereret": "2026-09-17T23:33:13.368591+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,26 +183,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-17T20:31:59.642820+00:00",
-  "antal": 98,
-  "med_billede": 73,
-  "paa_dansk": 98,
+  "opdateret": "2026-09-17T23:03:23.239084+00:00",
+  "antal": 92,
+  "med_billede": 71,
+  "paa_dansk": 92,
   "kategorier": {
    "Lanceringer": 13,
-   "Samfund \u0026 etik": 27,
-   "Penge \u0026 marked": 25,
-   "Hverdags-AI": 13,
+   "Samfund \u0026 etik": 26,
    "Forskning": 9,
-   "Politik \u0026 jura": 11
+   "Penge \u0026 marked": 21,
+   "Hverdags-AI": 13,
+   "Politik \u0026 jura": 10
   },
   "kilder": {
-   "TechCrunch AI": 35,
+   "TechCrunch AI": 30,
    "Google DeepMind": 1,
-   "The Verge AI": 24,
-   "Anthropic News": 2,
-   "Ars Technica AI": 13,
-   "MIT Tech Review AI": 5,
+   "The Verge AI": 22,
    "Simon Willison AI": 7,
+   "Ars Technica AI": 14,
+   "Anthropic News": 2,
+   "MIT Tech Review AI": 5,
    "Mistral AI": 1,
    "Hugging Face": 1,
    "Google Gemini": 1,
@@ -220,6 +220,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/39892d9ff89273b3.webp"
    },
    {
+    "titel": "Self-generated prompt injections in compaction summaries",
+    "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
+    "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+    "side": "artikel/56af974b4f59c8fd.html",
+    "kategori": "Forskning",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-17T20:57:55+00:00",
+    "billede": "data/img/5da17036838d679e.webp"
+   },
+   {
     "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
     "rubrik": "Huawei fremrykker AI-chip til 2027",
     "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
@@ -228,19 +238,49 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T14:06:14+00:00",
     "billede": ""
-   },
-   {
-    "titel": "LLMs respond differently to harmful prompts when AI watermarking is used",
-    "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
-    "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
-    "side": "artikel/35cb1838bc98373f.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-17T18:33:13+00:00",
-    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Self-generated prompt injections in compaction summaries",
+    "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
+    "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+    "side": "artikel/56af974b4f59c8fd.html",
+    "kategori": "Forskning",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-09-17T20:57:55+00:00",
+    "billede": "data/img/5da17036838d679e.webp"
+   },
+   {
+    "titel": "The FAA’s plan to fix air traffic? $875M worth of AI",
+    "rubrik": "FAA køber AI-system til 875 millioner dollar",
+    "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
+    "side": "artikel/787bbd73daf7613b.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T22:14:59+00:00",
+    "billede": "data/img/a95da1b60cf20622.webp"
+   },
+   {
+    "titel": "Small AI models let drones autonomously identify and attack battlefield targets",
+    "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
+    "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
+    "side": "artikel/3e9d439b35394aa7.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T22:12:58+00:00",
+    "billede": "data/img/fc22b8159a2b0dea.webp"
+   },
+   {
+    "titel": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
+    "rubrik": "Claude Code samler flere agenter i ét projekt",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+    "side": "artikel/f0feb3e3451d3c61.html",
+    "kategori": "Lanceringer",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-17T14:58:05-04:00",
+    "billede": "data/img/05420eafb5230e67.webp"
+   },
    {
     "titel": "Measurements for understanding the pace of AI development inside frontier labs",
     "rubrik": "Anthropic måler hvor meget Claude bygger Claude",
@@ -250,6 +290,16 @@ window.KOMMANDO_DATA = {
     "kilde": "Anthropic News",
     "dato": "2026-09-17T00:00:00+00:00",
     "billede": ""
+   },
+   {
+    "titel": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+    "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
+    "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+    "side": "artikel/d242dae78da38bdd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T20:10:41+00:00",
+    "billede": "data/img/5242fd46884dae14.webp"
    },
    {
     "titel": "LLMs respond differently to harmful prompts when AI watermarking is used",
@@ -269,7 +319,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Forskning",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T17:15:59+00:00",
-    "billede": ""
+    "billede": "data/img/3c3aac390541e086.webp"
    },
    {
     "titel": "Google announces new experimental \"CC\" AI agent for families",
@@ -289,7 +339,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T20:19:37+00:00",
-    "billede": ""
+    "billede": "data/img/56031deb1a63aa3b.webp"
    },
    {
     "titel": "The AI Superintelligence Slowdown",
@@ -299,7 +349,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
     "dato": "2026-09-17T15:28:24-04:00",
-    "billede": ""
+    "billede": "data/img/1f83ad99b9b5efa4.webp"
    },
    {
     "titel": "AI is feared globally as the destroyer of jobs",
@@ -310,61 +360,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-17T10:00:00-04:00",
     "billede": "data/img/39892d9ff89273b3.webp"
-   },
-   {
-    "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
-    "rubrik": "Huawei fremrykker AI-chip til 2027",
-    "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-    "side": "artikel/5d18789efa0799b7.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T14:06:14+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
-    "rubrik": "Instinct og Metas Muse ringer nu selv",
-    "link": "https://techcrunch.com/2026/09/17/rival-ai-agents-instinct-and-metas-muse-both-add-the-ability-to-make-calls/",
-    "side": "artikel/354af6386954314c.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T13:46:16+00:00",
-    "billede": "data/img/fbd4d8ed095bd243.webp"
-   },
-   {
-    "titel": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
-    "rubrik": "OpenAI deler seks tilfælde af uønsket agentadfærd",
-    "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
-    "side": "artikel/78ef7df1719c17b3.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-17T16:18:34+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
-    "rubrik": "Emerald AI-alliance vil frigøre 100 gigawatt",
-    "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
-    "side": "artikel/3451114a79019509.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T13:38:33+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
-    "rubrik": "Microsofts AI-chef: Anthropic gør AI-sikkerhed værre",
-    "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
-    "side": "artikel/74a1f4fa23b15aaa.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-17T10:00:00-04:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-17T20:31:59.642820+00:00",
+  "opdateret": "2026-09-17T23:03:23.239084+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -372,19 +372,19 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-   "https://openai.com/index/astra-for-law",
-   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
+   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+   "https://openai.com/index/astra-for-law"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-   "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
+   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-17T20:31:59.083320+00:00",
+  "opdateret": "2026-09-17T23:03:22.453711+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-17T20:31:59.642820+00:00",
-  "artikler_i_alt": 98,
+  "opdateret": "2026-09-17T23:03:23.239084+00:00",
+  "artikler_i_alt": 92,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -756,6 +756,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude får Docs og Slides i samme chat"
      },
      {
+      "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
+      "dato": "2026-09-17T20:57:55",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "side": "artikel/56af974b4f59c8fd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
       "dato": "2026-09-16T16:00:54",
       "foerst_set": "2026-09-16T17:43:50",
@@ -801,15 +810,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Forskere: WeWorm spreder sig via WeChat-opkald",
-      "dato": "2026-09-10T00:56:41",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/10/calif-research/",
-      "side": "artikel/180b6c6ca2d33492.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
       "dato": "2026-09-11T03:27:16",
       "foerst_set": "2026-09-11T14:38:09",
@@ -830,9 +830,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 35,
-    "som_ekstra": 6,
+    "i_listen": 30,
+    "som_ekstra": 8,
     "seneste": [
+     {
+      "rubrik": "GPT-5.6 Sol bad efterfølgeren skjule fejl",
+      "dato": "",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI deler seks tilfælde af uønsket agentadfærd"
+     },
+     {
+      "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
+      "dato": "",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+      "side": "",
+      "hvor": "under",
+      "under": "Microsoft-chef kaldte AI-scraping for historisk tyveri"
+     },
      {
       "rubrik": "Anthropic og OpenAI vil lukke evaluatorer ind",
       "dato": "",
@@ -868,6 +886,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
+     },
+     {
+      "rubrik": "OpenAI bekræfter sikkerhedssamtaler med Anthropic og Google",
+      "dato": "",
+      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
+      "link": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "side": "",
+      "hvor": "under",
+      "under": "Amodei vil bremse AI og lukke kontrollører ind"
      },
      {
       "rubrik": "Siri i iOS 27 er bygget på Gemini",
@@ -906,38 +933,11 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
      },
      {
-      "rubrik": "Baseten vil bygge sikkerhed ind i åbne modeller",
-      "dato": "2026-09-17T17:15:59",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/",
-      "side": "artikel/80716b9be3559651.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Zuckerberg: Meta holdt Muse tilbage i månedsvis",
-      "dato": "2026-09-17T20:19:37",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://techcrunch.com/2026/09/17/is-the-ai-safety-debate-about-safety-or-control/",
-      "side": "artikel/9d61eb9bd1c6f784.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Huawei fremrykker AI-chip til 2027",
-      "dato": "2026-09-17T14:06:14",
-      "foerst_set": "2026-09-17T17:14:28",
-      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-      "side": "artikel/5d18789efa0799b7.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Instinct og Metas Muse ringer nu selv",
-      "dato": "2026-09-17T13:46:16",
-      "foerst_set": "2026-09-17T17:14:28",
-      "link": "https://techcrunch.com/2026/09/17/rival-ai-agents-instinct-and-metas-muse-both-add-the-ability-to-make-calls/",
-      "side": "artikel/354af6386954314c.html",
+      "rubrik": "FAA køber AI-system til 875 millioner dollar",
+      "dato": "2026-09-17T22:14:59",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
+      "side": "artikel/787bbd73daf7613b.html",
       "hvor": "forside",
       "under": ""
      }
@@ -953,7 +953,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 24,
+    "i_listen": 22,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1000,6 +1000,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
+     },
+     {
+      "rubrik": "Claude Code samler flere agenter i ét projekt",
+      "dato": "2026-09-17T14:58:05",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "side": "artikel/f0feb3e3451d3c61.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
@@ -1054,15 +1063,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/418dbc769c8c49eb.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google Home åbner for fremmede AI-agenter",
-      "dato": "2026-09-16T13:00:00",
-      "foerst_set": "2026-09-16T17:43:50",
-      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-      "side": "artikel/45384c84a9f2d30d.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1076,9 +1076,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 13,
+    "i_listen": 14,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
+      "dato": "2026-09-17T22:12:58",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
+      "side": "artikel/3e9d439b35394aa7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
+      "dato": "2026-09-17T20:10:41",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+      "side": "artikel/d242dae78da38bdd.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
       "dato": "2026-09-17T18:33:13",
@@ -1166,24 +1184,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-14T22:44:05",
       "link": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
       "side": "artikel/6f49a30a7364f698.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "New Mexico straffer advokat for ChatGPTs falske vidner",
-      "dato": "2026-09-11T19:34:09",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
-      "side": "artikel/9622d1970698da66.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google vandt Spirit-data trods protester",
-      "dato": "2026-09-10T18:14:14",
-      "foerst_set": "2026-09-10T21:07:39",
-      "link": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
-      "side": "artikel/4570a39b1061c92d.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1409,12 +1409,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-17T21:00:08.151683+00:00",
+  "opdateret": "2026-09-17T23:33:09.780390+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 86,
-  "sidevisninger_i_alt": 326,
+  "besoeg_i_alt": 87,
+  "sidevisninger_i_alt": 327,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1571,8 +1571,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 83,
-    "visninger": 299
+    "besoeg": 84,
+    "visninger": 300
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1636,7 +1636,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 84
+    "besoeg": 85
    },
    {
     "fra": "m.facebook.com",
