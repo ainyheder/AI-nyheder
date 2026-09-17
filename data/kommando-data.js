@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-17T01:01:40.604118+00:00",
+ "genereret": "2026-09-17T06:54:11.523834+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,22 +183,22 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-17T00:51:48.169313+00:00",
-  "antal": 82,
-  "med_billede": 70,
-  "paa_dansk": 82,
+  "opdateret": "2026-09-17T06:36:49.527314+00:00",
+  "antal": 85,
+  "med_billede": 71,
+  "paa_dansk": 85,
   "kategorier": {
-   "Lanceringer": 11,
+   "Lanceringer": 12,
    "Hverdags-AI": 12,
-   "Samfund \u0026 etik": 20,
-   "Penge \u0026 marked": 22,
+   "Samfund \u0026 etik": 21,
+   "Penge \u0026 marked": 23,
    "Forskning": 7,
    "Politik \u0026 jura": 10
   },
   "kilder": {
-   "TechCrunch AI": 28,
+   "TechCrunch AI": 30,
    "Google DeepMind": 1,
-   "The Verge AI": 19,
+   "The Verge AI": 20,
    "Ars Technica AI": 10,
    "MIT Tech Review AI": 5,
    "Simon Willison AI": 7,
@@ -242,13 +242,43 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
+    "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
+    "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+    "side": "artikel/ab2a2f0bede59003.html",
+    "kategori": "Lanceringer",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-16T19:40:00-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Iceland-based Treble raises $18 million for its voice simulation platform",
+    "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
+    "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
+    "side": "artikel/4f879da662988742.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T05:00:00+00:00",
+    "billede": "data/img/c466ac9bf5b57537.webp"
+   },
+   {
+    "titel": "Al Gore says the real AI risk isn’t data centers",
+    "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
+    "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+    "side": "artikel/546ee7cd8ec87532.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-16T23:43:09+00:00",
+    "billede": ""
+   },
+   {
     "titel": "The AI data center e-waste problem is huge — and getting bigger",
     "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
     "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
     "side": "artikel/418dbc769c8c49eb.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
-    "dato": "2026-09-16T20:40:46+00:00",
+    "dato": "2026-09-16T16:40:46-04:00",
     "billede": "data/img/b2c8063ade36f286.webp"
    },
    {
@@ -330,41 +360,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-16T10:34:47+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Mistral and Mozilla are bringing open, private and multilingual AI to your web browser",
-    "rubrik": "Mistral skal drive Firefox' AI-assistent",
-    "link": "https://mistral.ai/news/mistral-x-mozilla/",
-    "side": "artikel/c410e90a2cd9982e.html",
-    "kategori": "Lanceringer",
-    "kilde": "Mistral AI",
-    "dato": "2026-09-16T12:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "AI and data centers are incredibly unpopular in every poll",
-    "rubrik": "New York Times-måling: 61 procent afviser AI-datacentre",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-    "side": "artikel/066a2ef821973007.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-15T19:34:25-04:00",
-    "billede": "data/img/b00df44a7f04565d.webp"
-   },
-   {
-    "titel": "The AI data center boom is colliding with cities scarred by big industry",
-    "rubrik": "Hochul bremser nye AI-datacentre i New York",
-    "link": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-    "side": "artikel/f5e80ecad1974be7.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-15T21:47:38+00:00",
-    "billede": "data/img/7c2a4bb0fcfc23c5.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-17T00:51:48.169313+00:00",
+  "opdateret": "2026-09-17T06:36:49.527314+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -384,7 +384,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-17T00:51:47.514849+00:00",
+  "opdateret": "2026-09-17T06:36:48.766293+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-17T00:51:48.169313+00:00",
-  "artikler_i_alt": 82,
+  "opdateret": "2026-09-17T06:36:49.527314+00:00",
+  "artikler_i_alt": 85,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -821,7 +821,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 28,
+    "i_listen": 30,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -897,6 +897,24 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
      },
      {
+      "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
+      "dato": "2026-09-17T05:00:00",
+      "foerst_set": "2026-09-17T06:36:49",
+      "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
+      "side": "artikel/4f879da662988742.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
+      "dato": "2026-09-16T23:43:09",
+      "foerst_set": "2026-09-17T06:36:49",
+      "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+      "side": "artikel/546ee7cd8ec87532.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
       "dato": "2026-09-16T13:00:00",
       "foerst_set": "2026-09-16T17:43:50",
@@ -913,24 +931,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/5960227fd9e8cd26.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Hochul bremser nye AI-datacentre i New York",
-      "dato": "2026-09-15T21:47:38",
-      "foerst_set": "2026-09-16T00:45:26",
-      "link": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
-      "side": "artikel/f5e80ecad1974be7.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta lader AI-agenter sætte WhatsApp Business op",
-      "dato": "2026-09-15T20:12:53",
-      "foerst_set": "2026-09-15T21:43:26",
-      "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-      "side": "artikel/c8e966977fdfbf21.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -944,7 +944,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 19,
+    "i_listen": 20,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -993,8 +993,17 @@ window.KOMMANDO_DATA = {
       "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
      },
      {
+      "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
+      "dato": "2026-09-16T19:40:00",
+      "foerst_set": "2026-09-17T06:36:49",
+      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
+      "side": "artikel/ab2a2f0bede59003.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-      "dato": "2026-09-16T20:40:46",
+      "dato": "2026-09-16T16:40:46",
       "foerst_set": "2026-09-16T21:39:37",
       "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
       "side": "artikel/418dbc769c8c49eb.html",
@@ -1043,15 +1052,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-16T00:45:26",
       "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
       "side": "artikel/066a2ef821973007.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "SimpliSafe lader vagter tale gennem dørklokken",
-      "dato": "2026-09-15T09:36:45",
-      "foerst_set": "2026-09-15T13:50:34",
-      "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
-      "side": "artikel/81cef9ef2f5c5442.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1382,12 +1382,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-17T01:01:34.099439+00:00",
+  "opdateret": "2026-09-17T06:54:07.494302+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 84,
-  "sidevisninger_i_alt": 318,
+  "besoeg_i_alt": 86,
+  "sidevisninger_i_alt": 320,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1537,15 +1537,15 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-17",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 20,
+    "visninger": 20
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 81,
-    "visninger": 291
+    "besoeg": 83,
+    "visninger": 293
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1609,7 +1609,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 82
+    "besoeg": 84
    },
    {
     "fra": "m.facebook.com",
