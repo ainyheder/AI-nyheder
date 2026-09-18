@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-17T23:33:13.368591+00:00",
+ "genereret": "2026-09-18T01:46:34.711222+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,32 +183,42 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-17T23:03:23.239084+00:00",
-  "antal": 92,
-  "med_billede": 71,
-  "paa_dansk": 92,
+  "opdateret": "2026-09-18T01:26:34.044292+00:00",
+  "antal": 94,
+  "med_billede": 72,
+  "paa_dansk": 94,
   "kategorier": {
    "Lanceringer": 13,
-   "Samfund \u0026 etik": 26,
-   "Forskning": 9,
-   "Penge \u0026 marked": 21,
+   "Samfund \u0026 etik": 28,
    "Hverdags-AI": 13,
-   "Politik \u0026 jura": 10
+   "Penge \u0026 marked": 22,
+   "Politik \u0026 jura": 10,
+   "Forskning": 8
   },
   "kilder": {
-   "TechCrunch AI": 30,
+   "TechCrunch AI": 33,
    "Google DeepMind": 1,
    "The Verge AI": 22,
-   "Simon Willison AI": 7,
    "Ars Technica AI": 14,
    "Anthropic News": 2,
    "MIT Tech Review AI": 5,
+   "Simon Willison AI": 6,
    "Mistral AI": 1,
    "Hugging Face": 1,
    "Google Gemini": 1,
    "OpenAI Blog": 8
   },
   "udvalgte": [
+   {
+    "titel": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+    "rubrik": "OpenAI fandt skjulte noter fra GPT-5.6 Sol",
+    "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+    "side": "artikel/41da7ed56ef01474.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T20:34:24+00:00",
+    "billede": "data/img/5da17036838d679e.webp"
+   },
    {
     "titel": "AI is feared globally as the destroyer of jobs",
     "rubrik": "Pew-måling: AI frygtes som jobdræber",
@@ -220,35 +230,35 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/39892d9ff89273b3.webp"
    },
    {
-    "titel": "Self-generated prompt injections in compaction summaries",
-    "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
-    "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-    "side": "artikel/56af974b4f59c8fd.html",
-    "kategori": "Forskning",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-17T20:57:55+00:00",
-    "billede": "data/img/5da17036838d679e.webp"
-   },
-   {
-    "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
-    "rubrik": "Huawei fremrykker AI-chip til 2027",
-    "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-    "side": "artikel/5d18789efa0799b7.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T14:06:14+00:00",
-    "billede": ""
+    "titel": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+    "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
+    "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+    "side": "artikel/d242dae78da38bdd.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-17T20:10:41+00:00",
+    "billede": "data/img/5242fd46884dae14.webp"
    }
   ],
   "seneste": [
    {
-    "titel": "Self-generated prompt injections in compaction summaries",
-    "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
-    "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-    "side": "artikel/56af974b4f59c8fd.html",
-    "kategori": "Forskning",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-17T20:57:55+00:00",
+    "titel": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
+    "rubrik": "Crusoe rejser 3,9 milliarder dollar til modulære AI-fabrikker",
+    "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+    "side": "artikel/e3285a711c8c90e5.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T23:25:52+00:00",
+    "billede": "data/img/d003289e153f6465.webp"
+   },
+   {
+    "titel": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+    "rubrik": "OpenAI fandt skjulte noter fra GPT-5.6 Sol",
+    "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+    "side": "artikel/41da7ed56ef01474.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T20:34:24+00:00",
     "billede": "data/img/5da17036838d679e.webp"
    },
    {
@@ -270,6 +280,16 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-17T22:12:58+00:00",
     "billede": "data/img/fc22b8159a2b0dea.webp"
+   },
+   {
+    "titel": "UN turns to Google to make its global data ready for AI agents",
+    "rubrik": "Google og UN åbner verdensstatistik for AI-agenter",
+    "link": "https://techcrunch.com/2026/09/17/un-turns-to-google-to-make-its-global-data-ready-for-ai-agents/",
+    "side": "artikel/22b6bd9b8747446b.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-17T20:00:00+00:00",
+    "billede": ""
    },
    {
     "titel": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
@@ -340,51 +360,31 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T20:19:37+00:00",
     "billede": "data/img/56031deb1a63aa3b.webp"
-   },
-   {
-    "titel": "The AI Superintelligence Slowdown",
-    "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-    "side": "artikel/85b0b4814d514fc1.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-17T15:28:24-04:00",
-    "billede": "data/img/1f83ad99b9b5efa4.webp"
-   },
-   {
-    "titel": "AI is feared globally as the destroyer of jobs",
-    "rubrik": "Pew-måling: AI frygtes som jobdræber",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-    "side": "artikel/e95f62cf60ae0563.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-17T10:00:00-04:00",
-    "billede": "data/img/39892d9ff89273b3.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-17T23:03:23.239084+00:00",
+  "opdateret": "2026-09-18T01:26:34.044292+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
+   "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
    "https://openai.com/index/astra-for-law"
   ],
   "udgivet_udvalg": [
+   "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
    "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
-   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-   "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/"
+   "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-17T23:03:22.453711+00:00",
+  "opdateret": "2026-09-18T01:26:33.396370+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-17T23:03:23.239084+00:00",
-  "artikler_i_alt": 92,
+  "opdateret": "2026-09-18T01:26:34.044292+00:00",
+  "artikler_i_alt": 94,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -743,9 +743,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 7,
-    "som_ekstra": 1,
+    "i_listen": 6,
+    "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
+      "dato": "",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI fandt skjulte noter fra GPT-5.6 Sol"
+     },
      {
       "rubrik": "Claude slår Cowork og chat sammen",
       "dato": "",
@@ -754,15 +763,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude får Docs og Slides i samme chat"
-     },
-     {
-      "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
-      "dato": "2026-09-17T20:57:55",
-      "foerst_set": "2026-09-17T23:03:23",
-      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-      "side": "artikel/56af974b4f59c8fd.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
@@ -830,18 +830,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
-    "som_ekstra": 8,
+    "i_listen": 33,
+    "som_ekstra": 7,
     "seneste": [
-     {
-      "rubrik": "GPT-5.6 Sol bad efterfølgeren skjule fejl",
-      "dato": "",
-      "foerst_set": "2026-09-17T23:03:23",
-      "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI deler seks tilfælde af uønsket agentadfærd"
-     },
      {
       "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
       "dato": "",
@@ -933,11 +924,20 @@ window.KOMMANDO_DATA = {
       "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
      },
      {
-      "rubrik": "FAA køber AI-system til 875 millioner dollar",
-      "dato": "2026-09-17T22:14:59",
+      "rubrik": "Crusoe rejser 3,9 milliarder dollar til modulære AI-fabrikker",
+      "dato": "2026-09-17T23:25:52",
+      "foerst_set": "2026-09-18T01:26:34",
+      "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+      "side": "artikel/e3285a711c8c90e5.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI fandt skjulte noter fra GPT-5.6 Sol",
+      "dato": "2026-09-17T20:34:24",
       "foerst_set": "2026-09-17T23:03:23",
-      "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
-      "side": "artikel/787bbd73daf7613b.html",
+      "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+      "side": "artikel/41da7ed56ef01474.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1409,19 +1409,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-17T23:33:09.780390+00:00",
+  "opdateret": "2026-09-18T01:46:30.007054+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 87,
-  "sidevisninger_i_alt": 327,
+  "besoeg_i_alt": 88,
+  "sidevisninger_i_alt": 328,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-19",
-    "besoeg": 10,
-    "visninger": 10
-   },
    {
     "dato": "2026-08-20",
     "besoeg": 20,
@@ -1566,13 +1561,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-09-17",
     "besoeg": 40,
     "visninger": 40
+   },
+   {
+    "dato": "2026-09-18",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 84,
-    "visninger": 300
+    "besoeg": 85,
+    "visninger": 301
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1636,7 +1636,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 85
+    "besoeg": 86
    },
    {
     "fra": "m.facebook.com",
