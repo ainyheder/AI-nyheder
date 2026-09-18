@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-18T11:59:07.977455+00:00",
+ "opdateret": "2026-09-18T16:58:05.573972+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      3,
      4,
      11,
-     0
+     1
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      6,
      2,
      4,
-     0
+     1
     ]
    },
    {
@@ -173,7 +173,7 @@ window.LAESERTAL = {
      4,
      3,
      2,
-     0
+     1
     ]
    },
    {
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 88,
- "sidevisninger_i_alt": 323,
+ "besoeg_i_alt": 86,
+ "sidevisninger_i_alt": 318,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 85,
-   "visninger": 294
+   "besoeg": 83,
+   "visninger": 290
   },
   {
    "sti": "/artikel/9eeacf6b78b6dd62.html&lt;/link&gt;&lt;guid",
@@ -284,11 +284,6 @@ window.LAESERTAL = {
    "visninger": 7
   },
   {
-   "sti": "/youtube.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
    "sti": "/vaerktoejer.html",
    "besoeg": 0,
    "visninger": 10
@@ -302,7 +297,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 86
+   "besoeg": 84
   },
   {
    "fra": "m.facebook.com",
@@ -311,84 +306,14 @@ window.LAESERTAL = {
  ],
  "ai_chats": [],
  "sidehenvisere": {
-  "/": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 209
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 83,
-    "visninger": 83
-   },
-   {
-    "fra": "m.facebook.com",
-    "besoeg": 2,
-    "visninger": 2
-   }
-  ],
-  "/artikel/9eeacf6b78b6dd62.html&lt;/link&gt;&lt;guid": [
-   {
-    "fra": "direkte",
-    "besoeg": 2,
-    "visninger": 2
-   }
-  ],
-  "/uge.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 4
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/5c41fc251a24d093.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/faq.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 7
-   }
-  ],
-  "/youtube.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 10
-   }
-  ],
-  "/cookies.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ]
+  "/": [],
+  "/artikel/9eeacf6b78b6dd62.html&lt;/link&gt;&lt;guid": [],
+  "/uge.html": [],
+  "/artikel/5c41fc251a24d093.html": [],
+  "/faq.html": [],
+  "/om.html": [],
+  "/vaerktoejer.html": [],
+  "/cookies.html": []
  },
  "faste_uden_besoeg": [],
  "serie": [
@@ -539,8 +464,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-18",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 20,
+   "visninger": 20
   }
  ],
  "artikler": [
@@ -551,13 +476,7 @@ window.LAESERTAL = {
    "rubrik": "link&gt;&lt;guid",
    "kategori": "",
    "dato": "",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 2,
-     "visninger": 2
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/5c41fc251a24d093.html",
@@ -566,13 +485,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI-agenter bag hemmeligholdt RubyGems-angreb",
    "kategori": "Samfund & etik",
    "dato": "2026-09-12",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   }
  ],
  "laeste_temaer": [

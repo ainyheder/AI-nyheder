@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-18T11:46:00.191551+00:00",
- "artikler_i_alt": 96,
+ "opdateret": "2026-09-18T16:41:48.111060+00:00",
+ "artikler_i_alt": 98,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -154,7 +154,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI-model skrev skjulte instrukser til sig selv",
+     "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
      "dato": "",
      "foerst_set": "2026-09-17T23:03:23",
      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
@@ -247,7 +247,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 37,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -341,6 +341,33 @@ window.KILDER_STATUS = {
      "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
     },
     {
+     "rubrik": "Metas Muse kan handle på din Mac",
+     "dato": "2026-09-18T15:22:48",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/",
+     "side": "artikel/02e22737315fe005.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacktron brugte Opus 5 til at hacke OpenAI",
+     "dato": "2026-09-18T14:00:14",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+     "side": "artikel/0d70097db208a060.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Manus forhandler om 4 mia. dollar og børsnotering",
+     "dato": "2026-09-18T16:35:49",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
+     "side": "artikel/ecfc994dbcabff84.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Crusoe rejser 3,9 milliarder dollar til modulære AI-fabrikker",
      "dato": "2026-09-17T23:25:52",
      "foerst_set": "2026-09-18T01:26:34",
@@ -420,43 +447,16 @@ window.KILDER_STATUS = {
      "side": "artikel/354af6386954314c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Emerald AI-alliance vil frigøre 100 gigawatt",
-     "dato": "2026-09-17T13:38:33",
-     "foerst_set": "2026-09-17T17:14:28",
-     "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
-     "side": "artikel/3451114a79019509.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Treble rejser 18 millioner dollar til lydsimulering",
-     "dato": "2026-09-17T05:00:00",
-     "foerst_set": "2026-09-17T06:36:49",
-     "link": "https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/",
-     "side": "artikel/4f879da662988742.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
-     "dato": "2026-09-16T23:43:09",
-     "foerst_set": "2026-09-17T06:36:49",
-     "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
-     "side": "artikel/546ee7cd8ec87532.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
-     3
+     4
     ],
     [
      "Simon Willison AI",
@@ -475,8 +475,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 23,
-   "som_ekstra": 5,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Tre forskere brød ind i OpenAI med Claude",
+     "dato": "",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+     "side": "",
+     "hvor": "under",
+     "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+    },
     {
      "rubrik": "Meta One sælger ekstra AI-brug fra 7,99 dollar",
      "dato": "",
@@ -587,7 +596,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-     "dato": "2026-09-16T16:40:46",
+     "dato": "2026-09-16T20:40:46",
      "foerst_set": "2026-09-16T21:39:37",
      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
      "side": "artikel/418dbc769c8c49eb.html",
@@ -623,7 +632,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Apple vil tilbage til servere med M8 Ultra",
-     "dato": "2026-09-16T13:20:29",
+     "dato": "2026-09-16T17:20:29",
      "foerst_set": "2026-09-16T17:43:50",
      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
      "side": "artikel/bdc341c044799952.html",
@@ -634,7 +643,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
     ],
     [
      "Simon Willison AI",
@@ -657,8 +666,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 14,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Sikkerhedsfirma hackede OpenAI med Claude",
+     "dato": "",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
+     "side": "",
+     "hvor": "under",
+     "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+    },
     {
      "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
      "dato": "2026-09-17T22:12:58",
@@ -771,7 +789,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     3
+     4
     ],
     [
      "The Verge AI",
@@ -789,7 +807,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -825,15 +843,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-14T22:44:05",
      "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
      "side": "artikel/f4964ed02dfb9679.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ON.energy: AI-centrenes UPS skal ud af bygningen",
-     "dato": "2026-09-10T11:00:00",
-     "foerst_set": "2026-09-10T13:45:53",
-     "link": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-     "side": "artikel/dcafb6d4ea46bd83.html",
      "hvor": "forside",
      "under": ""
     }
