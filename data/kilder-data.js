@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-18T06:34:47.566665+00:00",
- "artikler_i_alt": 95,
+ "opdateret": "2026-09-18T11:46:00.191551+00:00",
+ "artikler_i_alt": 96,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -151,8 +151,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 6,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI-model skrev skjulte instrukser til sig selv",
+     "dato": "",
+     "foerst_set": "2026-09-17T23:03:23",
+     "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI fandt skjulte noter fra GPT-5.6 Sol"
+    },
     {
      "rubrik": "Claude slår Cowork og chat sammen",
      "dato": "",
@@ -221,6 +230,10 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      2
+    ],
+    [
+     "TechCrunch AI",
+     1
     ]
    ]
   },
@@ -444,6 +457,10 @@ window.KILDER_STATUS = {
     [
      "Ars Technica AI",
      3
+    ],
+    [
+     "Simon Willison AI",
+     1
     ]
    ]
   },
@@ -457,7 +474,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
+   "i_listen": 23,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -504,6 +521,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
+    },
+    {
+     "rubrik": "TACLS skal varsle om flash floods tidligere",
+     "dato": "2026-09-18T07:00:00",
+     "foerst_set": "2026-09-18T11:46:00",
+     "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+     "side": "artikel/cc9d12fe9e378865.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Code samler flere agenter i ét projekt",
@@ -570,7 +596,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Google Home åbner for fremmede AI-agenter",
-     "dato": "2026-09-16T13:00:00",
+     "dato": "2026-09-16T17:00:00",
      "foerst_set": "2026-09-16T17:43:50",
      "link": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
      "side": "artikel/45384c84a9f2d30d.html",
@@ -601,15 +627,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-16T17:43:50",
      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
      "side": "artikel/bdc341c044799952.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "New York Times-måling: 61 procent afviser AI-datacentre",
-     "dato": "2026-09-15T23:34:25",
-     "foerst_set": "2026-09-16T00:45:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-     "side": "artikel/066a2ef821973007.html",
      "hvor": "forside",
      "under": ""
     }

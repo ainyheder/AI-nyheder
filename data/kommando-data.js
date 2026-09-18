@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-18T07:25:23.486761+00:00",
+ "genereret": "2026-09-18T11:59:14.437207+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,22 +183,22 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-18T06:34:47.566665+00:00",
-  "antal": 95,
-  "med_billede": 71,
-  "paa_dansk": 95,
+  "opdateret": "2026-09-18T11:46:00.191551+00:00",
+  "antal": 96,
+  "med_billede": 73,
+  "paa_dansk": 96,
   "kategorier": {
    "Lanceringer": 13,
    "Samfund \u0026 etik": 29,
    "Hverdags-AI": 13,
    "Penge \u0026 marked": 22,
-   "Politik \u0026 jura": 10,
-   "Forskning": 8
+   "Forskning": 9,
+   "Politik \u0026 jura": 10
   },
   "kilder": {
    "TechCrunch AI": 34,
    "Google DeepMind": 1,
-   "The Verge AI": 22,
+   "The Verge AI": 23,
    "Ars Technica AI": 14,
    "Anthropic News": 2,
    "MIT Tech Review AI": 5,
@@ -217,7 +217,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T20:34:24+00:00",
-    "billede": ""
+    "billede": "data/img/e4873fb03bddcfce.webp"
    },
    {
     "titel": "AI is feared globally as the destroyer of jobs",
@@ -241,6 +241,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Flash floods can strike without warning — this new technology could change that",
+    "rubrik": "TACLS skal varsle om flash floods tidligere",
+    "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+    "side": "artikel/cc9d12fe9e378865.html",
+    "kategori": "Forskning",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-18T07:00:00-04:00",
+    "billede": "data/img/85f6d90531291a38.webp"
+   },
    {
     "titel": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
     "rubrik": "Crusoe rejser 3,9 milliarder dollar til modulære AI-fabrikker",
@@ -269,7 +279,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Samfund \u0026 etik",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T20:34:24+00:00",
-    "billede": ""
+    "billede": "data/img/e4873fb03bddcfce.webp"
    },
    {
     "titel": "The FAA’s plan to fix air traffic? $875M worth of AI",
@@ -350,21 +360,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T17:15:59+00:00",
     "billede": "data/img/3c3aac390541e086.webp"
-   },
-   {
-    "titel": "Google announces new experimental \"CC\" AI agent for families",
-    "rubrik": "Googles CC-agent samler familiens hverdag",
-    "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-    "side": "artikel/56012947a93a548f.html",
-    "kategori": "Lanceringer",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-17T20:24:34+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-18T06:34:47.566665+00:00",
+  "opdateret": "2026-09-18T11:46:00.191551+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -372,8 +372,8 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-   "https://openai.com/index/astra-for-law"
+   "https://openai.com/index/astra-for-law",
+   "https://simonwillison.net/2026/Sep/17/compaction-summaries/"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
@@ -384,7 +384,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-18T06:34:47.094823+00:00",
+  "opdateret": "2026-09-18T11:45:59.345994+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +602,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-18T06:34:47.566665+00:00",
-  "artikler_i_alt": 95,
+  "opdateret": "2026-09-18T11:46:00.191551+00:00",
+  "artikler_i_alt": 96,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -744,8 +744,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 6,
-    "som_ekstra": 1,
+    "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "OpenAI-model skrev skjulte instrukser til sig selv",
+      "dato": "",
+      "foerst_set": "2026-09-17T23:03:23",
+      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI fandt skjulte noter fra GPT-5.6 Sol"
+     },
      {
       "rubrik": "Claude slår Cowork og chat sammen",
       "dato": "",
@@ -944,7 +953,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
+    "i_listen": 23,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -991,6 +1000,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
+     },
+     {
+      "rubrik": "TACLS skal varsle om flash floods tidligere",
+      "dato": "2026-09-18T07:00:00",
+      "foerst_set": "2026-09-18T11:46:00",
+      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+      "side": "artikel/cc9d12fe9e378865.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Claude Code samler flere agenter i ét projekt",
@@ -1043,15 +1061,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-17T06:36:49",
       "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
       "side": "artikel/ab2a2f0bede59003.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-      "dato": "2026-09-16T16:40:46",
-      "foerst_set": "2026-09-16T21:39:37",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-      "side": "artikel/418dbc769c8c49eb.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1400,12 +1409,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-18T06:44:47.306121+00:00",
+  "opdateret": "2026-09-18T11:59:07.977455+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 87,
-  "sidevisninger_i_alt": 320,
+  "besoeg_i_alt": 88,
+  "sidevisninger_i_alt": 323,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1555,15 +1564,15 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-18",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 84,
-    "visninger": 293
+    "besoeg": 85,
+    "visninger": 294
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1598,7 +1607,7 @@ window.KOMMANDO_DATA = {
    {
     "sti": "/vaerktoejer.html",
     "besoeg": 0,
-    "visninger": 8
+    "visninger": 10
    },
    {
     "sti": "/cookies.html",
@@ -1627,7 +1636,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 85
+    "besoeg": 86
    },
    {
     "fra": "m.facebook.com",
