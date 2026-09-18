@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-18T20:05:51.005241+00:00",
+ "genereret": "2026-09-18T23:23:22.621054+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,25 +183,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-18T19:56:02.404620+00:00",
-  "antal": 98,
-  "med_billede": 74,
-  "paa_dansk": 98,
+  "opdateret": "2026-09-18T22:47:50.159551+00:00",
+  "antal": 93,
+  "med_billede": 70,
+  "paa_dansk": 93,
   "kategorier": {
    "Lanceringer": 14,
-   "Samfund \u0026 etik": 30,
-   "Hverdags-AI": 13,
-   "Penge \u0026 marked": 22,
-   "Politik \u0026 jura": 10,
+   "Samfund \u0026 etik": 27,
+   "Hverdags-AI": 12,
+   "Politik \u0026 jura": 11,
+   "Penge \u0026 marked": 20,
    "Forskning": 9
   },
   "kilder": {
-   "TechCrunch AI": 37,
+   "xAI News": 1,
+   "TechCrunch AI": 35,
    "Google DeepMind": 1,
    "The Verge AI": 23,
-   "Ars Technica AI": 14,
+   "Ars Technica AI": 12,
    "Anthropic News": 2,
-   "Simon Willison AI": 6,
+   "Simon Willison AI": 4,
    "MIT Tech Review AI": 4,
    "Mistral AI": 1,
    "Hugging Face": 1,
@@ -209,6 +210,16 @@ window.KOMMANDO_DATA = {
    "OpenAI Blog": 8
   },
   "udvalgte": [
+   {
+    "titel": "Introducing Grok Voice Transcribe 2.0",
+    "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
+    "link": "https://x.ai/news/grok-voice-transcribe-2",
+    "side": "artikel/2125ef3b6ef2360a.html",
+    "kategori": "Lanceringer",
+    "kilde": "xAI News",
+    "dato": "2026-09-18T00:00:00+00:00",
+    "billede": "data/img/dcef6d92336ff2d5.webp"
+   },
    {
     "titel": "OpenAI caught its models leaving notes to successors to hide bad behavior",
     "rubrik": "OpenAI fandt skjulte noter fra GPT-5.6 Sol",
@@ -220,27 +231,67 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/e4873fb03bddcfce.webp"
    },
    {
-    "titel": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
-    "rubrik": "Claude Code samler flere agenter i ét projekt",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-    "side": "artikel/f0feb3e3451d3c61.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-17T14:58:05-04:00",
-    "billede": "data/img/05420eafb5230e67.webp"
-   },
-   {
-    "titel": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
-    "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
-    "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-    "side": "artikel/d242dae78da38bdd.html",
+    "titel": "Gavin Newsom is pushing for an AI kill switch",
+    "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
+    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "side": "artikel/a773bfa98d720806.html",
     "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-17T20:10:41+00:00",
-    "billede": "data/img/5242fd46884dae14.webp"
+    "kilde": "The Verge AI",
+    "dato": "2026-09-18T13:04:51-04:00",
+    "billede": "data/img/7e2c5f07447fac8b.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Introducing Grok Voice Transcribe 2.0",
+    "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
+    "link": "https://x.ai/news/grok-voice-transcribe-2",
+    "side": "artikel/2125ef3b6ef2360a.html",
+    "kategori": "Lanceringer",
+    "kilde": "xAI News",
+    "dato": "2026-09-18T00:00:00+00:00",
+    "billede": "data/img/dcef6d92336ff2d5.webp"
+   },
+   {
+    "titel": "Google’s new ‘CC’ is an AI agent that helps families run their households",
+    "rubrik": "Googles CC bliver familieagent med egen konto",
+    "link": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
+    "side": "artikel/37655c8141e2247a.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-18T17:33:50+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Gavin Newsom is pushing for an AI kill switch",
+    "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
+    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+    "side": "artikel/a773bfa98d720806.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-18T13:04:51-04:00",
+    "billede": "data/img/7e2c5f07447fac8b.webp"
+   },
+   {
+    "titel": "US government website used Chinese model the FBI called \"malicious\"",
+    "rubrik": "Federal Register fjernede Qwen efter opsigt",
+    "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+    "side": "artikel/82b3e82cb7035fd3.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-18T17:28:50+00:00",
+    "billede": "data/img/6cde14079eb110cc.webp"
+   },
+   {
+    "titel": "Virginia governor creates an AI task force and moves to restrain data centers",
+    "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
+    "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+    "side": "artikel/115cada6134fe4b1.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-18T14:29:17-04:00",
+    "billede": "data/img/f9cfdd45cddd4426.webp"
+   },
    {
     "titel": "Meta’s Muse hits Mac, letting the AI take actions on your computer",
     "rubrik": "Metas Muse kan handle på din Mac",
@@ -249,7 +300,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-18T15:22:48+00:00",
-    "billede": ""
+    "billede": "data/img/c0564418b07990b3.webp"
    },
    {
     "titel": "Researchers used Anthropic’s Claude to hack into OpenAI",
@@ -310,81 +361,31 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-17T20:34:24+00:00",
     "billede": "data/img/e4873fb03bddcfce.webp"
-   },
-   {
-    "titel": "The FAA’s plan to fix air traffic? $875M worth of AI",
-    "rubrik": "FAA køber AI-system til 875 millioner dollar",
-    "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
-    "side": "artikel/787bbd73daf7613b.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T22:14:59+00:00",
-    "billede": "data/img/a95da1b60cf20622.webp"
-   },
-   {
-    "titel": "Small AI models let drones autonomously identify and attack battlefield targets",
-    "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
-    "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
-    "side": "artikel/3e9d439b35394aa7.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-17T22:12:58+00:00",
-    "billede": "data/img/fc22b8159a2b0dea.webp"
-   },
-   {
-    "titel": "UN turns to Google to make its global data ready for AI agents",
-    "rubrik": "Google og UN åbner verdensstatistik for AI-agenter",
-    "link": "https://techcrunch.com/2026/09/17/un-turns-to-google-to-make-its-global-data-ready-for-ai-agents/",
-    "side": "artikel/22b6bd9b8747446b.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-17T20:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
-    "rubrik": "Claude Code samler flere agenter i ét projekt",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-    "side": "artikel/f0feb3e3451d3c61.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-17T14:58:05-04:00",
-    "billede": "data/img/05420eafb5230e67.webp"
-   },
-   {
-    "titel": "Measurements for understanding the pace of AI development inside frontier labs",
-    "rubrik": "Anthropic måler hvor meget Claude bygger Claude",
-    "link": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
-    "side": "artikel/0bc353f72d33d6d6.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Anthropic News",
-    "dato": "2026-09-17T00:00:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-18T19:56:02.404620+00:00",
+  "opdateret": "2026-09-18T22:47:50.159551+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
+   "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
    "https://x.ai/news/grok-voice-transcribe-2",
-   "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-   "https://simonwillison.net/2026/Sep/17/compaction-summaries/"
+   "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/"
   ],
   "udgivet_udvalg": [
+   "https://x.ai/news/grok-voice-transcribe-2",
    "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-   "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-   "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/"
+   "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-18T19:56:01.694759+00:00",
+  "opdateret": "2026-09-18T22:47:49.298651+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -602,8 +603,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-18T19:56:02.404620+00:00",
-  "artikler_i_alt": 98,
+  "opdateret": "2026-09-18T22:47:50.159551+00:00",
+  "artikler_i_alt": 93,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -705,9 +706,19 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 0,
+    "i_listen": 1,
     "som_ekstra": 0,
-    "seneste": []
+    "seneste": [
+     {
+      "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
+      "dato": "2026-09-18T00:00:00",
+      "foerst_set": "2026-09-18T19:56:02",
+      "link": "https://x.ai/news/grok-voice-transcribe-2",
+      "side": "artikel/2125ef3b6ef2360a.html",
+      "hvor": "forside",
+      "under": ""
+     }
+    ]
    },
    {
     "navn": "Hugging Face",
@@ -743,11 +754,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 6,
+    "i_listen": 4,
     "som_ekstra": 2,
     "seneste": [
      {
-      "rubrik": "OpenAI-model skjulte instrukser i eget resumé",
+      "rubrik": "OpenAI-model skrev persona-instrukser i egen opsummering",
       "dato": "",
       "foerst_set": "2026-09-17T23:03:23",
       "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
@@ -799,24 +810,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/156917f0352e1cf1.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Anthropic: Claude-kode skal have højere standard",
-      "dato": "2026-09-11T17:47:11",
-      "foerst_set": "2026-09-11T17:51:30",
-      "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
-      "side": "artikel/7d445be5f43019e0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Datasette får sikkerhedsrettelser efter AI-audit",
-      "dato": "2026-09-11T03:27:16",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
-      "side": "artikel/3b42aec52f1320a9.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -830,8 +823,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 37,
-    "som_ekstra": 7,
+    "i_listen": 35,
+    "som_ekstra": 6,
     "seneste": [
      {
       "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
@@ -915,15 +908,6 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI udskyder børsnotering: Altman siger nej til 2026"
      },
      {
-      "rubrik": "Anthropic-aboer får stjålet Claude-tokens",
-      "dato": "",
-      "foerst_set": "2026-09-08T21:21:14",
-      "link": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
-      "side": "",
-      "hvor": "under",
-      "under": "Anthropic stoppede forsøg på biovåben-forskning med Claude"
-     },
-     {
       "rubrik": "Metas Muse kan handle på din Mac",
       "dato": "2026-09-18T15:22:48",
       "foerst_set": "2026-09-18T16:41:48",
@@ -940,6 +924,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/0d70097db208a060.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Manus forhandler om 4 mia. dollar og børsnotering",
+      "dato": "2026-09-18T16:35:49",
+      "foerst_set": "2026-09-18T16:41:48",
+      "link": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
+      "side": "artikel/ecfc994dbcabff84.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -954,7 +947,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 23,
-    "som_ekstra": 6,
+    "som_ekstra": 5,
     "seneste": [
      {
       "rubrik": "Tre forskere brød ind i OpenAI med Claude",
@@ -1002,13 +995,22 @@ window.KOMMANDO_DATA = {
       "under": "Amodei vil bremse AI og lukke kontrollører ind"
      },
      {
-      "rubrik": "Aarons idømt bøde for ChatGPT-opdigtede vidner",
-      "dato": "",
-      "foerst_set": "2026-09-11T21:11:45",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
-      "side": "",
-      "hvor": "under",
-      "under": "New Mexico straffer advokat for ChatGPTs falske vidner"
+      "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
+      "dato": "2026-09-18T13:04:51",
+      "foerst_set": "2026-09-18T19:56:02",
+      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+      "side": "artikel/a773bfa98d720806.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
+      "dato": "2026-09-18T14:29:17",
+      "foerst_set": "2026-09-18T19:56:02",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "side": "artikel/115cada6134fe4b1.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "TACLS skal varsle om flash floods tidligere",
@@ -1054,15 +1056,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/74a1f4fa23b15aaa.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI-model slap ud og hackede startup",
-      "dato": "2026-09-17T07:30:00",
-      "foerst_set": "2026-09-17T12:03:11",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
-      "side": "artikel/b976cf94b51bce51.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1076,9 +1069,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 14,
-    "som_ekstra": 1,
+    "i_listen": 12,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "FAA tæt på at starte SMART over Washington",
+      "dato": "",
+      "foerst_set": "2026-09-18T19:56:02",
+      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
+      "side": "",
+      "hvor": "under",
+      "under": "FAA køber AI-system til 875 millioner dollar"
+     },
      {
       "rubrik": "Sikkerhedsfirma hackede OpenAI med Claude",
       "dato": "",
@@ -1087,6 +1089,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+     },
+     {
+      "rubrik": "Googles CC-agent samler familiens hverdag",
+      "dato": "",
+      "foerst_set": "2026-09-17T20:31:59",
+      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+      "side": "",
+      "hvor": "under",
+      "under": "Googles CC bliver familieagent med egen konto"
+     },
+     {
+      "rubrik": "Federal Register fjernede Qwen efter opsigt",
+      "dato": "2026-09-18T17:28:50",
+      "foerst_set": "2026-09-18T19:56:02",
+      "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+      "side": "artikel/82b3e82cb7035fd3.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
@@ -1112,15 +1132,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-17T20:31:59",
       "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
       "side": "artikel/35cb1838bc98373f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Googles CC-agent samler familiens hverdag",
-      "dato": "2026-09-17T20:24:34",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-      "side": "artikel/56012947a93a548f.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1166,24 +1177,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-14T22:44:05",
       "link": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
       "side": "artikel/29ba46951f8a05b0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Musk dropper Apple – men ikke OpenAI",
-      "dato": "2026-09-14T19:45:13",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai/",
-      "side": "artikel/8f91eecbb9dc32c2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Wang Xingxing styrer Unitree ned til skruerne",
-      "dato": "2026-09-14T19:38:46",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots/",
-      "side": "artikel/c884bb2181557996.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1400,7 +1393,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-18T20:05:46.652911+00:00",
+  "opdateret": "2026-09-18T23:23:15.396524+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
