@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-18T16:41:48.111060+00:00",
+ "opdateret": "2026-09-18T19:56:02.404620+00:00",
  "artikler_i_alt": 98,
  "kilder": [
   {
@@ -154,7 +154,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 2,
    "seneste": [
     {
-     "rubrik": "OpenAI-model skrev skjulte instruktioner til sig selv",
+     "rubrik": "OpenAI-model skjulte instrukser i eget resumé",
      "dato": "",
      "foerst_set": "2026-09-17T23:03:23",
      "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
@@ -587,7 +587,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
-     "dato": "2026-09-16T19:40:00",
+     "dato": "2026-09-16T23:40:00",
      "foerst_set": "2026-09-17T06:36:49",
      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
      "side": "artikel/ab2a2f0bede59003.html",
