@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-19T06:55:51.546995+00:00",
+ "opdateret": "2026-09-19T11:38:00.637983+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -172,7 +172,7 @@ window.LAESERTAL = {
      4,
      3,
      2,
-     2,
+     3,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 72,
- "sidevisninger_i_alt": 215,
+ "besoeg_i_alt": 71,
+ "sidevisninger_i_alt": 203,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 70,
-   "visninger": 204
+   "besoeg": 69,
+   "visninger": 198
   },
   {
    "sti": "/artikel/9eeacf6b78b6dd62.html&lt;/link&gt;&lt;guid",
@@ -269,22 +269,7 @@ window.LAESERTAL = {
    "visninger": 1
   },
   {
-   "sti": "/faq.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/om.html",
-   "besoeg": 0,
-   "visninger": 2
-  },
-  {
    "sti": "/vaerktoejer.html",
-   "besoeg": 0,
-   "visninger": 3
-  },
-  {
-   "sti": "/cookies.html",
    "besoeg": 0,
    "visninger": 2
   }
@@ -292,7 +277,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 70
+   "besoeg": 69
   },
   {
    "fra": "m.facebook.com",
@@ -305,12 +290,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 134
+    "visninger": 129
    },
    {
     "fra": "direkte",
-    "besoeg": 68,
-    "visninger": 68
+    "besoeg": 67,
+    "visninger": 67
    },
    {
     "fra": "m.facebook.com",
@@ -332,28 +317,7 @@ window.LAESERTAL = {
     "visninger": 1
    }
   ],
-  "/faq.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 2
-   }
-  ],
   "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 3
-   }
-  ],
-  "/cookies.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
@@ -362,7 +326,10 @@ window.LAESERTAL = {
   ]
  },
  "faste_uden_besoeg": [
-  "/uge.html"
+  "/uge.html",
+  "/faq.html",
+  "/om.html",
+  "/cookies.html"
  ],
  "serie": [
   {
