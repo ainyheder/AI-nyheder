@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-19T02:01:52.240842+00:00",
+ "opdateret": "2026-09-19T06:55:51.546995+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,7 +67,7 @@ window.LAESERTAL = {
      2,
      1,
      3,
-     1,
+     2,
      0
     ]
    },
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      3,
      4,
      11,
-     2,
+     4,
      0
     ]
    },
@@ -242,31 +242,26 @@ window.LAESERTAL = {
      2,
      2,
      1,
-     1,
+     2,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 84,
- "sidevisninger_i_alt": 261,
+ "besoeg_i_alt": 72,
+ "sidevisninger_i_alt": 215,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 81,
-   "visninger": 233
+   "besoeg": 70,
+   "visninger": 204
   },
   {
    "sti": "/artikel/9eeacf6b78b6dd62.html&lt;/link&gt;&lt;guid",
    "besoeg": 2,
    "visninger": 2
-  },
-  {
-   "sti": "/uge.html",
-   "besoeg": 1,
-   "visninger": 5
   },
   {
    "sti": "/artikel/5c41fc251a24d093.html",
@@ -281,12 +276,12 @@ window.LAESERTAL = {
   {
    "sti": "/om.html",
    "besoeg": 0,
-   "visninger": 7
+   "visninger": 2
   },
   {
    "sti": "/vaerktoejer.html",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 3
   },
   {
    "sti": "/cookies.html",
@@ -297,7 +292,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 82
+   "besoeg": 70
   },
   {
    "fra": "m.facebook.com",
@@ -310,12 +305,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 152
+    "visninger": 134
    },
    {
     "fra": "direkte",
-    "besoeg": 79,
-    "visninger": 79
+    "besoeg": 68,
+    "visninger": 68
    },
    {
     "fra": "m.facebook.com",
@@ -328,18 +323,6 @@ window.LAESERTAL = {
     "fra": "direkte",
     "besoeg": 2,
     "visninger": 2
-   }
-  ],
-  "/uge.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 4
-   },
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
    }
   ],
   "/artikel/5c41fc251a24d093.html": [
@@ -360,14 +343,14 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 7
+    "visninger": 2
    }
   ],
   "/vaerktoejer.html": [
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 3
    }
   ],
   "/cookies.html": [
@@ -378,7 +361,9 @@ window.LAESERTAL = {
    }
   ]
  },
- "faste_uden_besoeg": [],
+ "faste_uden_besoeg": [
+  "/uge.html"
+ ],
  "serie": [
   {
    "dato": "2026-08-21",
