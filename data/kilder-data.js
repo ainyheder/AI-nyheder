@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-19T18:12:03.466532+00:00",
- "artikler_i_alt": 101,
+ "opdateret": "2026-09-19T20:57:59.771433+00:00",
+ "artikler_i_alt": 102,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -257,7 +257,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 39,
+   "i_listen": 40,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -369,6 +369,15 @@ window.KILDER_STATUS = {
      "under": "OpenAI udskyder børsnotering: Altman siger nej til 2026"
     },
     {
+     "rubrik": "Trump vil omdøbe AI og oprette AI Force",
+     "dato": "2026-09-19T19:57:47",
+     "foerst_set": "2026-09-19T20:57:59",
+     "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
+     "side": "artikel/c0e5bbea1628d07f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Petlibro Granary 2 vejer hvor meget katten spiser",
      "dato": "2026-09-19T15:00:00",
      "foerst_set": "2026-09-19T18:12:03",
@@ -464,15 +473,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-17T23:03:23",
      "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
      "side": "artikel/787bbd73daf7613b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googles CC bliver familieagent med egen konto",
-     "dato": "2026-09-18T17:33:50",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
-     "side": "artikel/37655c8141e2247a.html",
      "hvor": "forside",
      "under": ""
     }
