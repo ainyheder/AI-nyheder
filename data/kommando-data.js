@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-19T06:55:54.510548+00:00",
+ "genereret": "2026-09-19T07:21:16.610419+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -557,7 +557,7 @@ window.KOMMANDO_DATA = {
  "modelkatalog": {
   "udbydere": {
    "DeepSeek": {
-    "opdateret": "2026-09-18T07:25:22.832353+00:00",
+    "opdateret": "2026-09-19T07:21:15.687945+00:00",
     "status": "Hentet",
     "modeller": [
      "deepseek-flash",
@@ -565,7 +565,7 @@ window.KOMMANDO_DATA = {
     ]
    },
    "Gemini": {
-    "opdateret": "2026-09-18T07:25:22.832353+00:00",
+    "opdateret": "2026-09-19T07:21:15.687945+00:00",
     "status": "Hentet",
     "modeller": [
      "gemini-2.5-computer-use-preview-10-2025",
