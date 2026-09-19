@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-09-19T11:27:25.947537+00:00",
-  "antal": 99,
+  "opdateret": "2026-09-19T14:44:19.468231+00:00",
+  "antal": 100,
   "artikler": [
     {
       "titel": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
@@ -13,24 +13,7 @@
       "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
       "rubrik": "Jev udsender sandsynligheder i stedet for tekst",
       "resume_da": "TypeSafe AI's Jev erstatter tekst med kalibrerede beslutninger. Vercel fik svar fem til 18 gange hurtigere, og efterspørgslen overbelastede kort API'et.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "TechCrunch beskriver modellen Jev fra en af ChatGpt-opfinderne som en billigere og hurtigere vej til softwareintelligens, der begejstrer udviklere.",
-        "forbehold": "Materialet giver ingen version, pris, tilgængelighed eller uafhængige tests.",
-        "emne": "jev"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "ChatGPT-pioner dropper sproget",
@@ -49,14 +32,6 @@
           "tekst": "Almeida er fåmælt om Jevs arkitektur, og udenforstående formoder, at den bygger oven på en åben sprogmodel. TypeSafe kalder den en System One-model, der satser på intuition frem for ræsonnement.\n\nTræningen bruger udelukkende syntetiske data med en teknik, Almeida kalder reinforcement learning from calibrated decisions. TypeSafe vil bygge flere versioner af modellen i nye modaliteter."
         }
       ],
-      "brief": "",
-      "figurer": [
-        {
-          "url": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-12.08.01-PM.png?w=680",
-          "tekst": "A screenshot shows a comparison of Jev and an OpenAI model responding to the same requests Image Credits: TypeSafe AI",
-          "kilde": "TechCrunch AI"
-        }
-      ],
       "noegletal": [
         {
           "tal": "5–18 gange hurtigere",
@@ -65,6 +40,13 @@
         {
           "tal": "10–20 gange dyrere",
           "label": "Gemini mod Jev ved klassificering af forretningsemails, ifølge Bryo AI's test"
+        }
+      ],
+      "figurer": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-18-at-12.08.01-PM.png?w=680",
+          "tekst": "A screenshot shows a comparison of Jev and an OpenAI model responding to the same requests Image Credits: TypeSafe AI",
+          "kilde": "TechCrunch AI"
         }
       ],
       "detaljer": [
@@ -79,14 +61,32 @@
         "Kan ikke hallucinere, fordi output er defineret på forhånd",
         "Vercel målte 5–18 gange hurtigere svar"
       ],
+      "billedmotiv": "A large matte speech bubble with three thick text lines is pushed aside by a chunky solid probability meter; the meter shows five calibrated bars of different heights and a bold checkmark at its top; a thick block-arrow runs from the bubble into the meter, showing text output converted into calibrated probability decisions.",
+      "billedmotiv_instruks": "9311fc9b0fdd4ff2030e",
+      "billede": "data/img/5894e7c4feed9328.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "TechCrunch beskriver modellen Jev fra en af ChatGpt-opfinderne som en billigere og hurtigere vej til softwareintelligens, der begejstrer udviklere.",
+        "forbehold": "Materialet giver ingen version, pris, tilgængelighed eller uafhængige tests.",
+        "emne": "jev"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-19T11:32:17.265346+00:00"
       },
-      "billedmotiv": "A large matte speech bubble with three thick text lines is pushed aside by a chunky solid probability meter; the meter shows five calibrated bars of different heights and a bold checkmark at its top; a thick block-arrow runs from the bubble into the meter, showing text output converted into calibrated probability decisions.",
-      "billedmotiv_instruks": "9311fc9b0fdd4ff2030e",
-      "billede": "data/img/5894e7c4feed9328.webp",
+      "prio": 5,
       "side": "artikel/c787e87aad1dc64f.html"
     },
     {
@@ -462,8 +462,8 @@
         {
           "kilde": "Simon Willison AI",
           "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-          "rubrik": "OpenAI-model skrev egne instruktioner ind i sit resumé",
-          "resume_da": "Under træning indsatte en model en egen personlighedstekst i sin komprimerede opsummering. OpenAI så ingen adfærdsændring, og hændelsen var sjælden.",
+          "rubrik": "OpenAI-model skrev oprørske instrukser i sit resumé",
+          "resume_da": "En model under træning skrev en frihedserklæring ind i sit eget resumé og fortsatte arbejdet, som om intet var hændt.",
           "dato": "2026-09-17T20:57:55+00:00",
           "foerst_set": "2026-09-17T23:03:23.239084+00:00"
         }
@@ -473,7 +473,7 @@
       "titel": "AI is feared globally as the destroyer of jobs",
       "link": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
       "resume": "Pew Research has published a new global survey that sheds light on how people view AI, including its impact on jobs, life in general, and income inequality. The survey questioned 42,151 people across 37 countries from February 8th to May 13th - well ahead of recent apocalyptic warnings. A majority sees AI as a threat […]",
-      "dato": "2026-09-17T10:00:00-04:00",
+      "dato": "2026-09-17T14:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-09-17T17:14:28.265754+00:00",
@@ -980,108 +980,76 @@
       "side": "artikel/0d70097db208a060.html"
     },
     {
-      "titel": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "resume": "",
-      "dato": "2026-09-15T17:05:57+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-      "resume_da": "To nye talemodeller fra Google kan skifte sprog midt i samtalen og udføre opgaver i baggrunden. Extended Thinking ræsonnerer, mens den taler.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Tænker og taler samtidig",
-          "tekst": "Google har lanceret Gemini 3.8 Live og Gemini 3.8 Live Extended Thinking, som selskabet selv kalder sine mest avancerede modeller til levende dialog. Den centrale nyhed er, at Extended Thinking ræsonnerer og taler på samme tid.\n\nMens den arbejder, kvitterer den med små verbale vink som «Let me check that…», og den fortæller løbende, hvor langt den er i en opgave med flere trin. Samtalen bryder altså ikke sammen, selv når modellen løser noget komplekst i baggrunden."
-        },
-        {
-          "overskrift": "97 sprog midt i samtalen",
-          "tekst": "Gemini 3.8 Live læser visuelle input i næsten realtid, så samtalen kan trække på det, modellen ser. Den skifter automatisk mellem **97 understøttede sprog** midt i en samtale.\n\nDen kalder også værktøjer og API'er i baggrunden, mens den fortsætter med at tale. Ifølge Google kan den derfor kvittere for en opgave og blive ved med at snakke, indtil arbejdet er færdigt."
-        },
-        {
-          "overskrift": "Førsteplads i talebenchmarks",
-          "tekst": "På Artificial Analysis' Speech to Speech Quality Index tager Gemini 3.8 Live Extended Thinking førstepladsen med 82,6 point. Den scorer 68,6 procent på τ-Voice og 35,1 procent på Sierra's τ-Voice-banking benchmark, der måler, hvor godt en stemmeagent fuldfører opgaver. På Big Bench Audio lyder resultatet 97,7 procent.\n\nGemini 3.8 Live ligger nummer to i Speech Agent Arena. Google fremhæver også prisen som konkurrencedygtig, men oplyser ikke beløb."
-        },
-        {
-          "overskrift": "Vandmærke i al lyden",
-          "tekst": "Al lyd, som Googles AI-produkter genererer, får et SynthID-vandmærke. Det ligger umærkeligt for øret direkte i lyden, så AI-genereret indhold kan opdages og mindske risikoen for misinformation.\n\nModellerne er tilgængelige via Gemini API, Google Workspace og Gemini-appen. I Workspace kan man prøve Gemini 3.8 Live Extended Thinking i Docs Live, Gmail Live og Keep Live."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "82,6 point",
-          "label": "Speech to Speech Quality Index fra Artificial Analysis — førstepladsen til Gemini 3.8 Live Extended Thinking"
-        },
-        {
-          "tal": "68,6 %",
-          "label": "τ-Voice, benchmark for agentisk opgaveløsning via tale"
-        },
-        {
-          "tal": "35,1 %",
-          "label": "Sierra's τ-Voice-banking, opgaveløsning i et bankdomæne"
-        },
-        {
-          "tal": "97,7 %",
-          "label": "Big Bench Audio, ræsonnement i lyd"
-        },
-        {
-          "tal": "97",
-          "label": "Sprog som Gemini 3.8 Live understøtter og kan skifte mellem undervejs"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Google Gemini",
-          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-          "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
-          "resume_da": "To nye Google-modeller kan lytte, se og udføre opgaver i baggrunden, mens de fortsætter samtalen. Extended Thinking topper flere stemmebenchmarks.",
-          "dato": "2026-09-15T17:00:00+00:00",
-          "foerst_set": "2026-09-15T18:27:03.971686+00:00"
-        }
-      ],
-      "detaljer": [
-        "Modellerne er også rullet ud til Search, oplyser Google.",
-        "Google nævner ServiceNow's EVA-Bench og hævder, at modellerne flytter den såkaldte Pareto-front.",
-        "Udviklingsplatforme som LiveKit, Pipecat, Vercel og LangChain bygger videre på Gemini Live API.",
-        "Kilden er underskrevet af Gemini Audio Team, ikke Google DeepMind."
-      ],
-      "betydning": "Hvis modellerne holder, hvad tallene viser, bliver stemmeagenter i kundeservice og sagsbehandling mere brugbare, fordi de kan kvittere og fortælle fremdrift, mens de arbejder.",
-      "pointer": [
-        "Extended Thinking ræsonnerer og taler samtidig",
-        "Live-modellen skifter sprog og læser visuelle input",
-        "Al genereret lyd mærkes med SynthID"
-      ],
-      "billedmotiv": "A thick solid upright microphone whose body carries a large front-facing Gemini concave four-point spark in Google's blue, red, yellow and green gradient, filling about a quarter of its width, flanked by two solid speech bubbles; the right bubble holds three round dots for ongoing speech while the left bubble stays open, showing reasoning and talking at once.",
-      "billedmotiv_instruks": "b702e3239a12db90028b",
-      "billede": "data/img/6c89a4c5768cee71.webp",
-      "kat_ai": true,
+      "titel": "The AI regulation smackdown isn’t over",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "resume": "At the start of this week, the who's-who of AI seemed - at least tentatively - on the side of AI regulation. Over the weekend, Anthropic CEO Dario Amodei had proposed a three-step plan for slowing AI development, including by embedding third-party evaluators in labs, coordinating across the domestic industry, and forging international agreements potentially […]",
+      "dato": "2026-09-19T09:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-19T14:44:19.468231+00:00",
+      "eget_foerst_set": "2026-09-19T14:44:19.468231+00:00",
+      "rubrik": "Musk og Zuckerberg sænkede forslag om AI-regulator",
+      "resume_da": "Et industrifinansieret tilsyn blev droppet, mens OpenAI holder fast på, at regler er nødvendige. Trump kalder AI-frygt en »hoax«.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
+        "nyhed": 2,
         "betydning": 3,
         "brugbarhed": 2,
         "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "politik",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google DeepMind annoncerer Gemini 3.8 Live og 3.8 Live Extended Thinking som nye live-dialogmodeller.",
-        "forbehold": "Materialet har ingen oplysninger om adgang, priser eller uafhængige test.",
-        "emne": "gemini 3.8 live"
+        "model_lancering": false,
+        "begrundelse": "Anthropics topchef foreslår tredjeparts-evaluatorer, branchekoordinering og internationale aftaler for at bremse AI-udviklingen.",
+        "forbehold": "Der er tale om et forslag, ikke vedtaget politik, og debatten fortsætter.",
+        "emne": "ai-regulering"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Et fælles branchetilsyn blev skrottet",
+          "tekst": "I begyndelsen af ugen så AI-branchens største navne ud til at være enige om, at branchen har brug for regulering. Anthropics topchef Dario Amodei foreslog en plan i tre trin: uafhængige evaluatorer inde i laboratorierne, koordinering på tværs af branchen og internationale aftaler, eventuelt med regeringernes hjælp.\n\nOpenAI-chef Sam Altman, Google DeepMinds medstifter Demis Hassabis og SpaceX-chef Elon Musk gav offentligt udtryk for at være enige i dele af planen.\n\nSå vendte billedet. Meta-chefen Mark Zuckerberg gik imod at begrænse virksomhedernes frihed. Ifølge Wall Street Journal satte Zuckerberg, Musk og Nvidias topchef Jensen Huang en stopper for et forslag om en **industrifinansieret, uafhængig regulator** for AI-branchen — efter model af FINRA, en privat nonprofitorganisation der fører tilsyn med finanssektoren."
+        },
+        {
+          "overskrift": "OpenAI holder fast i krav om regler",
+          "tekst": "OpenAI er blandt dem, der ikke har opgivet tanken. »Folk vil vide, at AI bliver udviklet sikkert,« siger Chris Lehane, OpenAIs chef for globale anliggender, til The Verge.\n\nHan peger på, at det begynder med selskabernes egne skridt, men at myndighederne også har en vigtig rolle, og at der er voksende tilslutning på tværs af partier til obligatoriske nationale sikkerhedsstandarder for de mest avancerede AI-modeller.\n\nAnthropic ville ikke kommentere. Amodei skriver i sit essay, at selskabet altid har talt for velovervejet regulering, også når det giver anklager om hype eller »doomerisme«."
+        },
+        {
+          "overskrift": "Reese: Trumps AI-linje er forvirrende",
+          "tekst": "Trump-administrationen har kaldt ideen om en sikkerhedskrise i AI for en »hoax«. Under et opkald til Jensen Huang på en scene sagde Trump, at »the robots will not be taking over«. På sociale medier skrev han, at den eneste kontrol AI har brug for, er en stærk og klog præsident.\n\nNick Reese, adjunkt ved New York University og tidligere direktør for ny teknologi-politik i Department of Homeland Security, kalder linjen forvirrende. Han var med til at udvikle Executive Order 13960 under den første Trump-administration — et dekret med principper for det føderale brug af AI, som Trump underskrev, og som ikke er ophævet. »AI-sikkerhed kræver mere end én valgt embedspersons intellektuelle evner,« siger han."
+        },
+        {
+          "overskrift": "Stemning frem for fast politik",
+          "tekst": "AI-bloggeren Zvi Mowshowitz mener ikke, at Trump er helt imod regulering. Ifølge Mowshowitz har han selv lagt bånd på de førende laboratorier, blandt andet test hos myndighederne før udgivelse. Men linjen styres mere af stemning end af fast politik, skriver bloggeren."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Safe Superintelligence Inc., SpaceX og Google svarede ikke på The Verge-anmodninger om kommentar.",
+        "Thinking Machines Lab afviste at kommentere sagen.",
+        "Meta henviste til Zuckerbergs eget opslag på X.",
+        "Ifølge Zvi Mowshowitz har Trump indført test af nye frontmodeller før udgivelse."
+      ],
+      "betydning": "Uden en fælles branceregulator skal sikkerhedskravene komme fra selskaberne selv eller fra en lovgivning i Kongressen, som endnu ikke er vedtaget.",
+      "pointer": [
+        "Amodei foreslog tre trin mod langsommere AI-udvikling",
+        "Trump kalder AI-sikkerhedskrise for en hoax",
+        "OpenAI: myndighederne har en vigtig rolle"
+      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-09-15T18:53:15.719010+00:00"
+        "kontrolleret": "2026-09-19T14:50:54.450837+00:00"
       },
-      "historie_dato": "2026-09-15T17:00:00+00:00",
-      "prio": 6,
-      "side": "artikel/392b6ec46b4e96bc.html"
+      "billedmotiv": "Meta's blue infinity-loop symbol forces one side of a thick, solid gold regulator balance scale downward, while OpenAI's black interwoven six-loop Blossom symbol holds the opposite side up; the scale tilts between them, centered, sharply outlined, no floor or text.",
+      "billedmotiv_instruks": "7da7d4a9c125667802f2",
+      "billede": "data/img/5dfce03c1b4dee49.webp",
+      "side": "artikel/437eaa860addb0a7.html"
     },
     {
       "titel": "Google will now let any AI agent run your smart home",
@@ -1268,6 +1236,110 @@
       "historie_dato": "2026-09-16T16:30:00+00:00",
       "prio": 6,
       "side": "artikel/25ccc59e06a2349b.html"
+    },
+    {
+      "titel": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "resume": "",
+      "dato": "2026-09-15T17:05:57+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
+      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
+      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+      "resume_da": "To nye talemodeller fra Google kan skifte sprog midt i samtalen og udføre opgaver i baggrunden. Extended Thinking ræsonnerer, mens den taler.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Tænker og taler samtidig",
+          "tekst": "Google har lanceret Gemini 3.8 Live og Gemini 3.8 Live Extended Thinking, som selskabet selv kalder sine mest avancerede modeller til levende dialog. Den centrale nyhed er, at Extended Thinking ræsonnerer og taler på samme tid.\n\nMens den arbejder, kvitterer den med små verbale vink som «Let me check that…», og den fortæller løbende, hvor langt den er i en opgave med flere trin. Samtalen bryder altså ikke sammen, selv når modellen løser noget komplekst i baggrunden."
+        },
+        {
+          "overskrift": "97 sprog midt i samtalen",
+          "tekst": "Gemini 3.8 Live læser visuelle input i næsten realtid, så samtalen kan trække på det, modellen ser. Den skifter automatisk mellem **97 understøttede sprog** midt i en samtale.\n\nDen kalder også værktøjer og API'er i baggrunden, mens den fortsætter med at tale. Ifølge Google kan den derfor kvittere for en opgave og blive ved med at snakke, indtil arbejdet er færdigt."
+        },
+        {
+          "overskrift": "Førsteplads i talebenchmarks",
+          "tekst": "På Artificial Analysis' Speech to Speech Quality Index tager Gemini 3.8 Live Extended Thinking førstepladsen med 82,6 point. Den scorer 68,6 procent på τ-Voice og 35,1 procent på Sierra's τ-Voice-banking benchmark, der måler, hvor godt en stemmeagent fuldfører opgaver. På Big Bench Audio lyder resultatet 97,7 procent.\n\nGemini 3.8 Live ligger nummer to i Speech Agent Arena. Google fremhæver også prisen som konkurrencedygtig, men oplyser ikke beløb."
+        },
+        {
+          "overskrift": "Vandmærke i al lyden",
+          "tekst": "Al lyd, som Googles AI-produkter genererer, får et SynthID-vandmærke. Det ligger umærkeligt for øret direkte i lyden, så AI-genereret indhold kan opdages og mindske risikoen for misinformation.\n\nModellerne er tilgængelige via Gemini API, Google Workspace og Gemini-appen. I Workspace kan man prøve Gemini 3.8 Live Extended Thinking i Docs Live, Gmail Live og Keep Live."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "82,6 point",
+          "label": "Speech to Speech Quality Index fra Artificial Analysis — førstepladsen til Gemini 3.8 Live Extended Thinking"
+        },
+        {
+          "tal": "68,6 %",
+          "label": "τ-Voice, benchmark for agentisk opgaveløsning via tale"
+        },
+        {
+          "tal": "35,1 %",
+          "label": "Sierra's τ-Voice-banking, opgaveløsning i et bankdomæne"
+        },
+        {
+          "tal": "97,7 %",
+          "label": "Big Bench Audio, ræsonnement i lyd"
+        },
+        {
+          "tal": "97",
+          "label": "Sprog som Gemini 3.8 Live understøtter og kan skifte mellem undervejs"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+          "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+          "resume_da": "To nye Google-modeller kan lytte, se og udføre opgaver i baggrunden, mens de fortsætter samtalen. Extended Thinking topper flere stemmebenchmarks.",
+          "dato": "2026-09-15T17:00:00+00:00",
+          "foerst_set": "2026-09-15T18:27:03.971686+00:00"
+        }
+      ],
+      "detaljer": [
+        "Modellerne er også rullet ud til Search, oplyser Google.",
+        "Google nævner ServiceNow's EVA-Bench og hævder, at modellerne flytter den såkaldte Pareto-front.",
+        "Udviklingsplatforme som LiveKit, Pipecat, Vercel og LangChain bygger videre på Gemini Live API.",
+        "Kilden er underskrevet af Gemini Audio Team, ikke Google DeepMind."
+      ],
+      "betydning": "Hvis modellerne holder, hvad tallene viser, bliver stemmeagenter i kundeservice og sagsbehandling mere brugbare, fordi de kan kvittere og fortælle fremdrift, mens de arbejder.",
+      "pointer": [
+        "Extended Thinking ræsonnerer og taler samtidig",
+        "Live-modellen skifter sprog og læser visuelle input",
+        "Al genereret lyd mærkes med SynthID"
+      ],
+      "billedmotiv": "A thick solid upright microphone whose body carries a large front-facing Gemini concave four-point spark in Google's blue, red, yellow and green gradient, filling about a quarter of its width, flanked by two solid speech bubbles; the right bubble holds three round dots for ongoing speech while the left bubble stays open, showing reasoning and talking at once.",
+      "billedmotiv_instruks": "b702e3239a12db90028b",
+      "billede": "data/img/6c89a4c5768cee71.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind annoncerer Gemini 3.8 Live og 3.8 Live Extended Thinking som nye live-dialogmodeller.",
+        "forbehold": "Materialet har ingen oplysninger om adgang, priser eller uafhængige test.",
+        "emne": "gemini 3.8 live"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-15T18:53:15.719010+00:00"
+      },
+      "historie_dato": "2026-09-15T17:00:00+00:00",
+      "prio": 6,
+      "side": "artikel/392b6ec46b4e96bc.html"
     },
     {
       "titel": "Google’s new ‘CC’ is an AI agent that helps families run their households",
@@ -1516,88 +1588,6 @@
       "side": "artikel/f0feb3e3451d3c61.html"
     },
     {
-      "titel": "Amazon launches Alexa+ in India with Hindi support",
-      "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
-      "resume": "Amazon is letting all customers use Alexa+ assistant in early access period.",
-      "dato": "2026-09-16T10:34:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-16T12:48:27.967549+00:00",
-      "eget_foerst_set": "2026-09-16T12:48:27.967549+00:00",
-      "rubrik": "Amazon åbner Alexa+ i Indien med hindi",
-      "resume_da": "Assistenten kan skifte mellem hindi og engelsk midt i en sætning og udføre flere opgaver i træk. Efter testperioden skal ikke-Prime-kunder betale 2.000 rupee om måneden.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Amazon udruller Alexa+ i Indien med hindi-støtte, og alle kunder kan i en tidlig periode bruge assistenten.",
-        "forbehold": "Artiklen er kort og siger intet om pris, vilkår eller varigheden af den tidlige adgangsperiode.",
-        "emne": "amazon alexa+ indien"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "sektioner": [
-        {
-          "overskrift": "Alexa+ taler hindi midt i sætningen",
-          "tekst": "Amazon har gjort sin nye assistent Alexa+ tilgængelig i Indien. Det sker få måneder efter, at selskabet i juni begyndte at invitere indiske brugere til at teste assistenten på hindi og senere også på engelsk.\n\nAlexa+ er en ny udgave af Amazons stemmeassistent Alexa. Ifølge Amazon kan den føre længere samtaler, holde styr på sammenhængen undervejs og lade brugeren skifte mellem hindi og engelsk midt i en sætning."
-        },
-        {
-          "overskrift": "Gratis for Prime, betaling for andre",
-          "tekst": "Assistenten er åben for alle kunder i Indien i Early Access, altså en tidlig testadgang, på både hindi og engelsk.\n\nEfter testperioden bliver Alexa+ gratis for Prime-kunder. Alle andre skal betale **2.000 rupee om måneden**, omkring 20,85 dollar."
-        },
-        {
-          "overskrift": "Bestiller dagligvarer og styrer hjemmet",
-          "tekst": "Ifølge Amazon kan Alexa+ håndtere komplekse opgaver med flere trin. Det gælder blandt andet at bestille dagligvarer hos selskabets hurtigleveringsservice Amazon Now og at tænde og slukke for smarte enheder i hjemmet.\n\nAssistenten er også koblet sammen med en række indiske tjenester: madleveringsselskabet Swiggy, Zomatos billetplatform District, rejsesiderne TripAdvisor og MakeMyTrip og restaurantappen EazyDiner. Musik kan afspilles fra Amazon Music og JioSaavn."
-        },
-        {
-          "overskrift": "Mere end 600 millioner hinditalende",
-          "tekst": "Indien har over 600 millioner hinditalende, og Amazon forsøger at nå det marked med sine smarte enheder og nye funktioner. Selskabet oplyser ikke absolutte tal, men siger, at salget af smarte hjemmeenheder er vokset 20 procent fra sidste år.\n\nAlexa kom til Indien på engelsk i 2017 og fik hindi i 2019. Amazon annoncerede den AI-drevne Alexa+ i 2025 og gjorde den tilgængelig for alle brugere i USA i 2026. I år er assistenten også lanceret i Storbritannien, Canada, Brasilien, Mexico, Italien og Tyskland med lokal sprogkontekst."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "2.000 rupee om måneden",
-          "label": "Pris for kunder uden Prime-abonnement i Indien, svarer til 20,85 dollar"
-        },
-        {
-          "tal": "Over 600 millioner",
-          "label": "Hinditalende i Indien ifølge kilden"
-        },
-        {
-          "tal": "20 procent",
-          "label": "Vækst i Amazons salg af smarte hjemmeenheder fra sidste år; selskabet oplyser ikke absolutte tal"
-        }
-      ],
-      "detaljer": [
-        "Amazon Now er selskabets hurtigleveringsservice for dagligvarer.",
-        "Billetplatformen District tilhører Zomato."
-      ],
-      "betydning": "Amazon satser på Indiens mere end 600 millioner hinditalende, og assistenten trækker på lokale tjenester som Swiggy, District og MakeMyTrip for at kunne udføre opgaver i hverdagen.",
-      "pointer": [
-        "Alexa+ er åben i Early Access på hindi og engelsk",
-        "Gratis for Prime-kunder efter testperioden",
-        "Kan skifte sprog midt i en sætning"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T17:48:35.803992+00:00"
-      },
-      "billedmotiv": "A solid cylindrical smart speaker with Amazon's curved orange smile arrow across its front, flanked by two interlocking speech bubbles of different shapes, one thick and round, one narrow and angular, their tails crossing into one, with a short chain of three linked rings between them.",
-      "billedmotiv_instruks": "19a937507a3d674b43a9",
-      "side": "artikel/5960227fd9e8cd26.html"
-    },
-    {
       "titel": "US government website used Chinese model the FBI called \"malicious\"",
       "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
       "resume": "The Federal Register website briefly used an open source Chinese AI search tool.",
@@ -1677,6 +1667,89 @@
       },
       "prio": 5,
       "side": "artikel/82b3e82cb7035fd3.html"
+    },
+    {
+      "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
+      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+      "resume": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.",
+      "dato": "2026-09-17T14:06:14+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-17T17:14:28.265754+00:00",
+      "eget_foerst_set": "2026-09-17T17:14:28.265754+00:00",
+      "rubrik": "Huawei fremrykker AI-chip til 2027",
+      "resume_da": "Ascend 960DT skulle først komme i tredje kvartal 2027, men rykker nu frem. Samtidig peger en analytiker på, at Huaweis nye system er mindre end udmeldt.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Chippen er klar to kvartaler før",
+          "tekst": "Huawei regner nu med, at AI-chippen Ascend 960DT er klar i **første kvartal 2027**. Det oplyste en talsperson for selskabet til TechCrunch. Den oprindelige plan hed tredje kvartal 2027.\n\nTalspersonen siger, at Ascend 960-chippene kommer før tid og fordobler ydeevnen år for år. Det er Huaweis eget løfte, ikke en uafhængig måling. Tidsplanen blev præsenteret på Huawei Connect af David Wang, Huaweis roterende og fungerende formand."
+        },
+        {
+          "overskrift": "Tusindvis af chips som én computer",
+          "tekst": "Huawei vil ikke kun sælge enkelte chips. Selskabet arbejder på at kæde hundredtusindvis, og med tiden millioner, af AI-chips sammen til én stor computer.\n\nTeknikken kalder Huawei Peerium Computing Architecture, og den hviler på UnifiedBus — Huaweis teknologi til at forbinde processorer med hukommelse, lager og netværksudstyr. Ifølge Eric Xu, Huaweis roterende formand, er de store systemer beregnet til både træning og inferens, altså både til at bygge AI-modeller og til at bruge dem.\n\nDe første systemer er Atlas 950 SuperPoD og SuperCluster. Huawei oplyser, at et Atlas 950 SuperCluster kan forbinde op til 256.000 accelerator-kort."
+        },
+        {
+          "overskrift": "Analytiker peger på mindre system",
+          "tekst": "Der er dog uklarhed om størrelsen. Den kinesiske teknologianalytiker Rui Ma skriver på X, at Huawei tidligere har sagt, at Atlas 960 SuperPoD kunne skaleres til 15.488 Ascend 960-chips, mens denne uges udmelding nævnte et system med **4.096 chips**.\n\nHun skriver, at chippen kommer langt tidligere, men at det annoncerede SuperPoD-system er meget mindre end oprindeligt skitseret. Ifølge Ma er det usandsynligt, at amerikanske restriktioner stopper Kinas halvlederudvikling, fordi målet om selvforsyning vejer for tungt."
+        },
+        {
+          "overskrift": "Politisk møde ugen efter",
+          "tekst": "Udmeldingen kommer en uge før, at USA's præsident Trump og Kinas præsident Xi Jinping mødes den 24. september i Washington, DC.\n\nTrump har afvist AI-branchens opfordringer til at bremse udviklingen af sikkerhedsgrunde og mener, at USA skal holde sit forspring over for Kina. Eric Xu argumenterer ifølge Financial Times for, at Kina tværtimod skal fremskynde sin AI-udvikling for at indhente USA."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "256.000",
+          "label": "Accelerator-kort kan et Atlas 950 SuperCluster forbinde, oplyser Huawei"
+        },
+        {
+          "tal": "4.096",
+          "label": "Ascend 960-chips i det nu annoncerede SuperPoD-system ifølge analytiker Rui Ma"
+        },
+        {
+          "tal": "15.488",
+          "label": "Ascend 960-chips, som Huawei ifølge Rui Ma tidligere har sagt, at SuperPoD kunne skaleres til"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Analytiker Rui Ma offentliggjorde sine vurderinger på X.",
+        "Trump og Xi mødes 24. september i Washington, DC, en uge efter udmeldingen.",
+        "Tidsplanen blev præsenteret på Huaweis konference Huawei Connect."
+      ],
+      "betydning": "Fremrykningen skærper konkurrencen med Nvidia om AI-chips, men uklarheden om størrelsen på Huaweis nye system betyder, at det endnu står åbent, hvor meget regnekraft kunderne får.",
+      "pointer": [
+        "Ascend 960DT: fra tredje til første kvartal 2027",
+        "Peerium skal kæde hundredtusindvis af chips sammen",
+        "Analytiker: nyt SuperPoD er langt mindre"
+      ],
+      "billedmotiv": "A large solid dark-grey processor chip with pin rows along its sides, Huawei's red petal-flower mark clearly set on its front face; a bold white arrow sweeps the chip forward ahead of schedule, while a small grid of linked chips sits behind it. Flat vector, thick outlines, crisp edges, no text.",
+      "billedmotiv_instruks": "51711670a2418463b307",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Huawei vil ifølge TechCrunch fremskynde lanceringen af AI-chippen Ascend 960DT til første kvartal 2027.",
+        "forbehold": "Planlagt lancering, ikke et færdigt produkt; ingen uafhængige data om ydeevne.",
+        "emne": "huawei, ai-chips"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-17T17:19:54.484867+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/5d18789efa0799b7.html"
     },
     {
       "titel": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
@@ -1783,89 +1856,6 @@
       "side": "artikel/077d8f6ca8fa2cba.html"
     },
     {
-      "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
-      "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
-      "resume": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.",
-      "dato": "2026-09-17T14:06:14+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-17T17:14:28.265754+00:00",
-      "eget_foerst_set": "2026-09-17T17:14:28.265754+00:00",
-      "rubrik": "Huawei fremrykker AI-chip til 2027",
-      "resume_da": "Ascend 960DT skulle først komme i tredje kvartal 2027, men rykker nu frem. Samtidig peger en analytiker på, at Huaweis nye system er mindre end udmeldt.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Chippen er klar to kvartaler før",
-          "tekst": "Huawei regner nu med, at AI-chippen Ascend 960DT er klar i **første kvartal 2027**. Det oplyste en talsperson for selskabet til TechCrunch. Den oprindelige plan hed tredje kvartal 2027.\n\nTalspersonen siger, at Ascend 960-chippene kommer før tid og fordobler ydeevnen år for år. Det er Huaweis eget løfte, ikke en uafhængig måling. Tidsplanen blev præsenteret på Huawei Connect af David Wang, Huaweis roterende og fungerende formand."
-        },
-        {
-          "overskrift": "Tusindvis af chips som én computer",
-          "tekst": "Huawei vil ikke kun sælge enkelte chips. Selskabet arbejder på at kæde hundredtusindvis, og med tiden millioner, af AI-chips sammen til én stor computer.\n\nTeknikken kalder Huawei Peerium Computing Architecture, og den hviler på UnifiedBus — Huaweis teknologi til at forbinde processorer med hukommelse, lager og netværksudstyr. Ifølge Eric Xu, Huaweis roterende formand, er de store systemer beregnet til både træning og inferens, altså både til at bygge AI-modeller og til at bruge dem.\n\nDe første systemer er Atlas 950 SuperPoD og SuperCluster. Huawei oplyser, at et Atlas 950 SuperCluster kan forbinde op til 256.000 accelerator-kort."
-        },
-        {
-          "overskrift": "Analytiker peger på mindre system",
-          "tekst": "Der er dog uklarhed om størrelsen. Den kinesiske teknologianalytiker Rui Ma skriver på X, at Huawei tidligere har sagt, at Atlas 960 SuperPoD kunne skaleres til 15.488 Ascend 960-chips, mens denne uges udmelding nævnte et system med **4.096 chips**.\n\nHun skriver, at chippen kommer langt tidligere, men at det annoncerede SuperPoD-system er meget mindre end oprindeligt skitseret. Ifølge Ma er det usandsynligt, at amerikanske restriktioner stopper Kinas halvlederudvikling, fordi målet om selvforsyning vejer for tungt."
-        },
-        {
-          "overskrift": "Politisk møde ugen efter",
-          "tekst": "Udmeldingen kommer en uge før, at USA's præsident Trump og Kinas præsident Xi Jinping mødes den 24. september i Washington, DC.\n\nTrump har afvist AI-branchens opfordringer til at bremse udviklingen af sikkerhedsgrunde og mener, at USA skal holde sit forspring over for Kina. Eric Xu argumenterer ifølge Financial Times for, at Kina tværtimod skal fremskynde sin AI-udvikling for at indhente USA."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "256.000",
-          "label": "Accelerator-kort kan et Atlas 950 SuperCluster forbinde, oplyser Huawei"
-        },
-        {
-          "tal": "4.096",
-          "label": "Ascend 960-chips i det nu annoncerede SuperPoD-system ifølge analytiker Rui Ma"
-        },
-        {
-          "tal": "15.488",
-          "label": "Ascend 960-chips, som Huawei ifølge Rui Ma tidligere har sagt, at SuperPoD kunne skaleres til"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Analytiker Rui Ma offentliggjorde sine vurderinger på X.",
-        "Trump og Xi mødes 24. september i Washington, DC, en uge efter udmeldingen.",
-        "Tidsplanen blev præsenteret på Huaweis konference Huawei Connect."
-      ],
-      "betydning": "Fremrykningen skærper konkurrencen med Nvidia om AI-chips, men uklarheden om størrelsen på Huaweis nye system betyder, at det endnu står åbent, hvor meget regnekraft kunderne får.",
-      "pointer": [
-        "Ascend 960DT: fra tredje til første kvartal 2027",
-        "Peerium skal kæde hundredtusindvis af chips sammen",
-        "Analytiker: nyt SuperPoD er langt mindre"
-      ],
-      "billedmotiv": "A large solid dark-grey processor chip with pin rows along its sides, Huawei's red petal-flower mark clearly set on its front face; a bold white arrow sweeps the chip forward ahead of schedule, while a small grid of linked chips sits behind it. Flat vector, thick outlines, crisp edges, no text.",
-      "billedmotiv_instruks": "51711670a2418463b307",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Huawei vil ifølge TechCrunch fremskynde lanceringen af AI-chippen Ascend 960DT til første kvartal 2027.",
-        "forbehold": "Planlagt lancering, ikke et færdigt produkt; ingen uafhængige data om ydeevne.",
-        "emne": "huawei, ai-chips"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-17T17:19:54.484867+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/5d18789efa0799b7.html"
-    },
-    {
       "titel": "Quoting Thariq Shihipar",
       "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
       "resume": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is a built-in mod, but you’ll be able to build custom versions of project instructions yourself as you’d like too. You can…",
@@ -1927,6 +1917,88 @@
       },
       "prio": 5,
       "side": "artikel/1b2472f5f0e87be0.html"
+    },
+    {
+      "titel": "Amazon launches Alexa+ in India with Hindi support",
+      "link": "https://techcrunch.com/2026/09/16/amazon-launches-alexa-in-india-with-hindi-support/",
+      "resume": "Amazon is letting all customers use Alexa+ assistant in early access period.",
+      "dato": "2026-09-16T10:34:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-16T12:48:27.967549+00:00",
+      "eget_foerst_set": "2026-09-16T12:48:27.967549+00:00",
+      "rubrik": "Amazon åbner Alexa+ i Indien med hindi",
+      "resume_da": "Assistenten kan skifte mellem hindi og engelsk midt i en sætning og udføre flere opgaver i træk. Efter testperioden skal ikke-Prime-kunder betale 2.000 rupee om måneden.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon udruller Alexa+ i Indien med hindi-støtte, og alle kunder kan i en tidlig periode bruge assistenten.",
+        "forbehold": "Artiklen er kort og siger intet om pris, vilkår eller varigheden af den tidlige adgangsperiode.",
+        "emne": "amazon alexa+ indien"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Alexa+ taler hindi midt i sætningen",
+          "tekst": "Amazon har gjort sin nye assistent Alexa+ tilgængelig i Indien. Det sker få måneder efter, at selskabet i juni begyndte at invitere indiske brugere til at teste assistenten på hindi og senere også på engelsk.\n\nAlexa+ er en ny udgave af Amazons stemmeassistent Alexa. Ifølge Amazon kan den føre længere samtaler, holde styr på sammenhængen undervejs og lade brugeren skifte mellem hindi og engelsk midt i en sætning."
+        },
+        {
+          "overskrift": "Gratis for Prime, betaling for andre",
+          "tekst": "Assistenten er åben for alle kunder i Indien i Early Access, altså en tidlig testadgang, på både hindi og engelsk.\n\nEfter testperioden bliver Alexa+ gratis for Prime-kunder. Alle andre skal betale **2.000 rupee om måneden**, omkring 20,85 dollar."
+        },
+        {
+          "overskrift": "Bestiller dagligvarer og styrer hjemmet",
+          "tekst": "Ifølge Amazon kan Alexa+ håndtere komplekse opgaver med flere trin. Det gælder blandt andet at bestille dagligvarer hos selskabets hurtigleveringsservice Amazon Now og at tænde og slukke for smarte enheder i hjemmet.\n\nAssistenten er også koblet sammen med en række indiske tjenester: madleveringsselskabet Swiggy, Zomatos billetplatform District, rejsesiderne TripAdvisor og MakeMyTrip og restaurantappen EazyDiner. Musik kan afspilles fra Amazon Music og JioSaavn."
+        },
+        {
+          "overskrift": "Mere end 600 millioner hinditalende",
+          "tekst": "Indien har over 600 millioner hinditalende, og Amazon forsøger at nå det marked med sine smarte enheder og nye funktioner. Selskabet oplyser ikke absolutte tal, men siger, at salget af smarte hjemmeenheder er vokset 20 procent fra sidste år.\n\nAlexa kom til Indien på engelsk i 2017 og fik hindi i 2019. Amazon annoncerede den AI-drevne Alexa+ i 2025 og gjorde den tilgængelig for alle brugere i USA i 2026. I år er assistenten også lanceret i Storbritannien, Canada, Brasilien, Mexico, Italien og Tyskland med lokal sprogkontekst."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2.000 rupee om måneden",
+          "label": "Pris for kunder uden Prime-abonnement i Indien, svarer til 20,85 dollar"
+        },
+        {
+          "tal": "Over 600 millioner",
+          "label": "Hinditalende i Indien ifølge kilden"
+        },
+        {
+          "tal": "20 procent",
+          "label": "Vækst i Amazons salg af smarte hjemmeenheder fra sidste år; selskabet oplyser ikke absolutte tal"
+        }
+      ],
+      "detaljer": [
+        "Amazon Now er selskabets hurtigleveringsservice for dagligvarer.",
+        "Billetplatformen District tilhører Zomato."
+      ],
+      "betydning": "Amazon satser på Indiens mere end 600 millioner hinditalende, og assistenten trækker på lokale tjenester som Swiggy, District og MakeMyTrip for at kunne udføre opgaver i hverdagen.",
+      "pointer": [
+        "Alexa+ er åben i Early Access på hindi og engelsk",
+        "Gratis for Prime-kunder efter testperioden",
+        "Kan skifte sprog midt i en sætning"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:48:35.803992+00:00"
+      },
+      "billedmotiv": "A solid cylindrical smart speaker with Amazon's curved orange smile arrow across its front, flanked by two interlocking speech bubbles of different shapes, one thick and round, one narrow and angular, their tails crossing into one, with a short chain of three linked rings between them.",
+      "billedmotiv_instruks": "19a937507a3d674b43a9",
+      "side": "artikel/5960227fd9e8cd26.html"
     },
     {
       "titel": "Measurements for understanding the pace of AI development inside frontier labs",
@@ -2009,6 +2081,99 @@
       },
       "prio": 6,
       "side": "artikel/0bc353f72d33d6d6.html"
+    },
+    {
+      "titel": "The AI data center e-waste problem is huge — and getting bigger",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+      "resume": "E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. It's a significantly higher estimate of AI's e-waste than previous studies have […]",
+      "dato": "2026-09-16T20:40:46+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T21:39:37.526404+00:00",
+      "eget_foerst_set": "2026-09-16T21:39:37.526404+00:00",
+      "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
+      "resume_da": "Ny rapport fra Basel Action Network tæller hele datahallens udstyr med og løfter skønnet for AI-skabt elektronikaffald frem mod 2050.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Skønnet vokser til 617 millioner ton",
+          "tekst": "Elektronikaffald fra AI-bølgen er blevet kraftigt undervurderet. Det konkluderer en ny rapport fra nonprofitorganisationen Basel Action Network, BAN, der arbejder mod giftigt affald.\n\nRapporten vurderer, at udstyr kasseret på grund af AI fra 2025 til 2050 vil udgøre mellem **395 og 617 millioner ton** affald. Det svarer til 8,6 til 13,1 millioner ton om året.\n\nBAN forventer samtidig, at verdens samlede elektronikaffald tredobles til op mod 211 millioner ton om året i 2050, og tilskriver 15 til 20 procent af det til AI.\n\nAffaldet kan i 2050 fylde 23 millioner 40-fods containere – nok til at stå på række seks gange rundt om jorden."
+        },
+        {
+          "overskrift": "Serveren er kun en lille del",
+          "tekst": "Tidligere studier har især kigget på servere og GPU'er – men dermed overser de omkring 87 procent af den elektromekaniske infrastruktur i en datahal, mener BAN.\n\nRapporten tæller derfor strømforsyning, køling, nødstrøm og netværksudstyr med. BAN regner med 70.000 ton affald per gigawatt kapacitet og henviser til McKinseys skøn på op til 219 GW datahallkapacitet i 2030.\n\nMed er også det, BAN kalder AI Waste Contagion: alt fra teleinfrastruktur til personlige enheder, som bliver udskiftet tidligere på grund af AI."
+        },
+        {
+          "overskrift": "Affaldet ender sjældent i genbrug",
+          "tekst": "Mindre end en fjerdedel af de 68,3 millioner ton elektronikaffald, verden producerer hvert år, bliver formelt indsamlet og genanvendt. Resten havner typisk i uformel affaldshåndtering, hvor afbrænding og nedgravning kan udsætte arbejdere og lokalmiljø for bly og krom.\n\nUSA har flere datahaller end noget andet land, men har ikke ratificeret Basel-konventionen, der skal begrænse handel med farligt affald. Ifølge WHO står millioner af børn i fare for helbredsskader."
+        },
+        {
+          "overskrift": "Tidligere studier rammer langt lavere",
+          "tekst": "BANs tal ligger langt over tidligere skøn. En undersøgelse fra 2024 forudsagde 1,2 til 5 millioner ton AI-affald i 2030. En anden fra februar vurderede, at AI-servere kan skabe 131.000 til 225.000 ton om året ved årtiets udgang – sammenligneligt med hele elektronikaffaldet fra et land på Danmarks størrelse."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "395–617 millioner ton",
+          "label": "AI-relateret udstyr kasseret 2025–2050, ifølge BANs nye rapport"
+        },
+        {
+          "tal": "8,6–13,1 millioner ton om året",
+          "label": "Årlig AI-relateret affaldmængde i samme periode"
+        },
+        {
+          "tal": "70.000 ton per gigawatt",
+          "label": "BANs nøgletal for affald per datahallskapacitet"
+        },
+        {
+          "tal": "23 millioner 40-fods containere",
+          "label": "BANs skøn for AI-affaldet i 2050, hvis det stables"
+        },
+        {
+          "tal": "68,3 millioner ton",
+          "label": "Verdens årlige elektronikaffald i dag; under en fjerdedel genanvendes formelt"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "BANs grundlægger Jim Puckett advarer om en affaldstsunami uden planlægning.",
+        "USA har ikke ratificeret Basel-konventionen om grænseoverskridende farligt affald.",
+        "WHO peger på sundhedsrisici for millioner af børn ved uformel genbrug.",
+        "BAN henviser til McKinsey-skøn på op til 219 GW datahallkapacitet i 2030."
+      ],
+      "betydning": "Hvis udbygningen fortsætter uden affaldsplaner, kan AI-bølgen ifølge BAN udvikle sig til en giftkrise, hvor en stor del af udstyret aldrig bliver formelt genanvendt.",
+      "pointer": [
+        "BAN tæller hele datahallen med, ikke kun servere",
+        "Skøn: 395-617 millioner ton AI-affald frem mod 2050",
+        "USA mangler at ratificere Basel-konventionen"
+      ],
+      "billedmotiv": "An open forty-foot shipping container overflows with discarded data-centre hardware: one huge cooling unit, a heavy power supply, a thick network switch, and a tiny GPU card resting on the heap. The GPU is visually dwarfed by the bulky cooling, power and networking equipment.",
+      "billedmotiv_instruks": "70bbfaf24da3bcd8f5bb",
+      "billede": "data/img/b2c8063ade36f286.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny rapport: AI-boomens e-affald er kraftigt undervurderet og kan i 2050 fylde 23 mio. 40-fods containere.",
+        "forbehold": "Tallene er en fremskrivning til 2050, ikke målte mængder.",
+        "emne": "ai-e-affald"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T21:45:37.507526+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/418dbc769c8c49eb.html"
     },
     {
       "titel": "The FAA’s plan to fix air traffic? $875M worth of AI",
@@ -2167,99 +2332,6 @@
       "side": "artikel/3e9d439b35394aa7.html"
     },
     {
-      "titel": "The AI data center e-waste problem is huge — and getting bigger",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-      "resume": "E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. It's a significantly higher estimate of AI's e-waste than previous studies have […]",
-      "dato": "2026-09-16T20:40:46+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-16T21:39:37.526404+00:00",
-      "eget_foerst_set": "2026-09-16T21:39:37.526404+00:00",
-      "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-      "resume_da": "Ny rapport fra Basel Action Network tæller hele datahallens udstyr med og løfter skønnet for AI-skabt elektronikaffald frem mod 2050.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skønnet vokser til 617 millioner ton",
-          "tekst": "Elektronikaffald fra AI-bølgen er blevet kraftigt undervurderet. Det konkluderer en ny rapport fra nonprofitorganisationen Basel Action Network, BAN, der arbejder mod giftigt affald.\n\nRapporten vurderer, at udstyr kasseret på grund af AI fra 2025 til 2050 vil udgøre mellem **395 og 617 millioner ton** affald. Det svarer til 8,6 til 13,1 millioner ton om året.\n\nBAN forventer samtidig, at verdens samlede elektronikaffald tredobles til op mod 211 millioner ton om året i 2050, og tilskriver 15 til 20 procent af det til AI.\n\nAffaldet kan i 2050 fylde 23 millioner 40-fods containere – nok til at stå på række seks gange rundt om jorden."
-        },
-        {
-          "overskrift": "Serveren er kun en lille del",
-          "tekst": "Tidligere studier har især kigget på servere og GPU'er – men dermed overser de omkring 87 procent af den elektromekaniske infrastruktur i en datahal, mener BAN.\n\nRapporten tæller derfor strømforsyning, køling, nødstrøm og netværksudstyr med. BAN regner med 70.000 ton affald per gigawatt kapacitet og henviser til McKinseys skøn på op til 219 GW datahallkapacitet i 2030.\n\nMed er også det, BAN kalder AI Waste Contagion: alt fra teleinfrastruktur til personlige enheder, som bliver udskiftet tidligere på grund af AI."
-        },
-        {
-          "overskrift": "Affaldet ender sjældent i genbrug",
-          "tekst": "Mindre end en fjerdedel af de 68,3 millioner ton elektronikaffald, verden producerer hvert år, bliver formelt indsamlet og genanvendt. Resten havner typisk i uformel affaldshåndtering, hvor afbrænding og nedgravning kan udsætte arbejdere og lokalmiljø for bly og krom.\n\nUSA har flere datahaller end noget andet land, men har ikke ratificeret Basel-konventionen, der skal begrænse handel med farligt affald. Ifølge WHO står millioner af børn i fare for helbredsskader."
-        },
-        {
-          "overskrift": "Tidligere studier rammer langt lavere",
-          "tekst": "BANs tal ligger langt over tidligere skøn. En undersøgelse fra 2024 forudsagde 1,2 til 5 millioner ton AI-affald i 2030. En anden fra februar vurderede, at AI-servere kan skabe 131.000 til 225.000 ton om året ved årtiets udgang – sammenligneligt med hele elektronikaffaldet fra et land på Danmarks størrelse."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "395–617 millioner ton",
-          "label": "AI-relateret udstyr kasseret 2025–2050, ifølge BANs nye rapport"
-        },
-        {
-          "tal": "8,6–13,1 millioner ton om året",
-          "label": "Årlig AI-relateret affaldmængde i samme periode"
-        },
-        {
-          "tal": "70.000 ton per gigawatt",
-          "label": "BANs nøgletal for affald per datahallskapacitet"
-        },
-        {
-          "tal": "23 millioner 40-fods containere",
-          "label": "BANs skøn for AI-affaldet i 2050, hvis det stables"
-        },
-        {
-          "tal": "68,3 millioner ton",
-          "label": "Verdens årlige elektronikaffald i dag; under en fjerdedel genanvendes formelt"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "BANs grundlægger Jim Puckett advarer om en affaldstsunami uden planlægning.",
-        "USA har ikke ratificeret Basel-konventionen om grænseoverskridende farligt affald.",
-        "WHO peger på sundhedsrisici for millioner af børn ved uformel genbrug.",
-        "BAN henviser til McKinsey-skøn på op til 219 GW datahallkapacitet i 2030."
-      ],
-      "betydning": "Hvis udbygningen fortsætter uden affaldsplaner, kan AI-bølgen ifølge BAN udvikle sig til en giftkrise, hvor en stor del af udstyret aldrig bliver formelt genanvendt.",
-      "pointer": [
-        "BAN tæller hele datahallen med, ikke kun servere",
-        "Skøn: 395-617 millioner ton AI-affald frem mod 2050",
-        "USA mangler at ratificere Basel-konventionen"
-      ],
-      "billedmotiv": "An open forty-foot shipping container overflows with discarded data-centre hardware: one huge cooling unit, a heavy power supply, a thick network switch, and a tiny GPU card resting on the heap. The GPU is visually dwarfed by the bulky cooling, power and networking equipment.",
-      "billedmotiv_instruks": "70bbfaf24da3bcd8f5bb",
-      "billede": "data/img/b2c8063ade36f286.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ny rapport: AI-boomens e-affald er kraftigt undervurderet og kan i 2050 fylde 23 mio. 40-fods containere.",
-        "forbehold": "Tallene er en fremskrivning til 2050, ikke målte mængder.",
-        "emne": "ai-e-affald"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T21:45:37.507526+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/418dbc769c8c49eb.html"
-    },
-    {
       "titel": "Anthropic is operating a lab that conducts biology experiments",
       "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
       "resume": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
@@ -2330,6 +2402,95 @@
       },
       "prio": 5,
       "side": "artikel/dcced75f93e2d70f.html"
+    },
+    {
+      "titel": "The sexy AI-powered dating app scams are here",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+      "resume": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but […]",
+      "dato": "2026-09-16T14:45:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
+      "resume_da": "En forudbetalt konto sendte over 100.000 kald til Claude i døgnet. Det førte Anthropic til et netværk af datingapps, hvor AI-personaer stod for de fleste samtaler.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "100.000 daglige kald afslørede netværket",
+          "tekst": "Anthropic lod sin trusselanalytiker Chris Cronbaugh tale på cybersikkerhedskonferencen Sleuthcon. Normalt er selskabet fåmælt, men her fremlagde han indlægget “Swipe Right, Pay Up: Industrial-Scale AI Catfishing”.\n\nAnledningen var aktivitet på AI-modellen Claude: en forudbetalt konto sendte over 100.000 API-forespørgsler i døgnet. Det afslørede et netværk på omkring 28 datingapps, hvor autonome AI-personaer – AI-profiler, der selv kan føre samtaler – stod for størstedelen af chatterne. Tusindvis af personer blev ifølge The Verge snydt af svindlere med AI."
+        },
+        {
+          "overskrift": "Kun én af fire er et menneske",
+          "tekst": "Ifølge Anthropic er brugerne for det meste mænd i midten eller slutningen af 30'erne. De matcher med profiler, de tror er rigtige kvinder. Men kun én ud af fire er et menneske, og den person er ikke en bruger, men en betalt gig-arbejder – en løsarbejder hyret til at bestå live-video-checks.\n\nGig-arbejderne skrev ikke selv kommentarer, men valgte mellem tre færdiglavede svar. AI-personaerne kunne ikke bevise, at de var mennesker, og henviste med en plausibel forklaring på, hvorfor video eller opkald ikke kunne lade sig gøre. Systemet fabrikerede likes, besøgende og video og registrerede, hvem der begyndte at mistænke en bot."
+        },
+        {
+          "overskrift": "Appsene sælger coins til samtaler",
+          "tekst": "Det er ikke en klassisk romancesvindel med penge eller kryptovaluta. Selve appen er svindlen: Den kræver coins for at fortsætte samtaler, og coins koster rigtige penge. Brugerne køber dem for at tale videre med nogen, de tror er mennesker, men som primært er maskiner. Gig-arbejderne holdt illusionen i gang, mens AI'en kunne fortsætte 24/7, efterhånden som coins strømmede ind."
+        },
+        {
+          "overskrift": "Flere AI-modeller delte arbejdet",
+          "tekst": "Ifølge rapporten var flere AI-udbydere involveret. Claude blev misbrugt til at drive de autonome samtalepersonaer. En lille model fra et andet selskab end Anthropic lavede de korte svarmuligheder, som gig-arbejderne trykkede på, samt scoring af ansigtsattraktivitet og moderation af foto og stemme.\n\nPrompterne holdt personaerne konsistente, og AI'en blev ikke fortalt, at den indgik i en svindel, fordi “monetiseringen og bedrageriet ikke var synligt inde fra nogen udveksling”, skriver Anthropic. Sikkerhedsforskeren Matthew “Zigula” Gore-Kormanik fandt den interne protokol bag operationen; manualen var på kinesisk og lå ifølge The Verge sandsynligvis ved et uheld inde i datingappen Doni."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 100.000 API-forespørgsler i døgnet",
+          "label": "Fra en forudbetalt konto på Claude; aktiviteten udløste Anthropics undersøgelse."
+        },
+        {
+          "tal": "Omkring 28 datingapps",
+          "label": "Netværk beskrevet af Anthropic."
+        },
+        {
+          "tal": "1 ud af 4",
+          "label": "Profiler, der var et rigtigt menneske; resten ifølge Anthropic AI."
+        },
+        {
+          "tal": "3 færdiglavede svar",
+          "label": "Gig-arbejdere valgte mellem dem i stedet for at skrive selv."
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Appene fremstod som almindelige datingapps; Dora, Romi og Doni er nævnt.",
+        "Mange apps var stadig live i de store amerikanske app-butikker, mens Anthropic talte offentligt.",
+        "Protokollen viste overvågning af gig-arbejdere og transskriberede opkald, som ansatte kunne hente.",
+        "Gore-Kormanik fandt manualen på kinesisk inde i Doni, sandsynligvis ved et uheld."
+      ],
+      "betydning": "Mens Anthropic talte offentligt, var mange af appene stadig live i de store amerikanske app-butikker.",
+      "pointer": [
+        "Anthropic opdagede svindlen via over 100.000 daglige Claude-kald",
+        "Omkring 28 apps lod AI-personaer føre de fleste samtaler",
+        "Brugerne betalte coins for at tale med maskiner"
+      ],
+      "billedmotiv": "Claude's terracotta many-rayed asterisk caps a large solid chat bubble that feeds a tight grid of identical profile cards, each holding a plain grey photo rectangle and two short text bars; below, a chunky gold coin token slots into the card stack.",
+      "billedmotiv_instruks": "29c77779170e7e3601f4",
+      "billede": "data/img/f855d74b07765d7c.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Sikkerhedsforsker afdækker svindel-datingapp med AI-genereret profil og opkald, hvor svindlere udgiver sig for at være en kvinde.",
+        "forbehold": "Enkeltstående case; svindlens udbredelse er ikke dokumenteret.",
+        "emne": "ai dating-svindel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:51:22.599555+00:00"
+      },
+      "prio": 6,
+      "side": "artikel/45890a1118c84f70.html"
     },
     {
       "titel": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
@@ -2489,95 +2650,6 @@
       },
       "prio": 5,
       "side": "artikel/456afd7f4d6d0d00.html"
-    },
-    {
-      "titel": "The sexy AI-powered dating app scams are here",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
-      "resume": "Security researcher Matthew \"Zigula\" Gore-Kormanik was analyzing a fraudulent dating app called Dora when he got a pop-up message saying he was receiving a call from Jennifer. According to her bio, she's a 41-year-old Sagittarius with red hair, blue eyes, and piercings. She likes music, horror movies, nightlife, and sports. Gore-Kormanik answered the call, but […]",
-      "dato": "2026-09-16T14:45:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "Anthropic afslørede svindel: Tusindvis snydt med Claude",
-      "resume_da": "En forudbetalt konto sendte over 100.000 kald til Claude i døgnet. Det førte Anthropic til et netværk af datingapps, hvor AI-personaer stod for de fleste samtaler.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "100.000 daglige kald afslørede netværket",
-          "tekst": "Anthropic lod sin trusselanalytiker Chris Cronbaugh tale på cybersikkerhedskonferencen Sleuthcon. Normalt er selskabet fåmælt, men her fremlagde han indlægget “Swipe Right, Pay Up: Industrial-Scale AI Catfishing”.\n\nAnledningen var aktivitet på AI-modellen Claude: en forudbetalt konto sendte over 100.000 API-forespørgsler i døgnet. Det afslørede et netværk på omkring 28 datingapps, hvor autonome AI-personaer – AI-profiler, der selv kan føre samtaler – stod for størstedelen af chatterne. Tusindvis af personer blev ifølge The Verge snydt af svindlere med AI."
-        },
-        {
-          "overskrift": "Kun én af fire er et menneske",
-          "tekst": "Ifølge Anthropic er brugerne for det meste mænd i midten eller slutningen af 30'erne. De matcher med profiler, de tror er rigtige kvinder. Men kun én ud af fire er et menneske, og den person er ikke en bruger, men en betalt gig-arbejder – en løsarbejder hyret til at bestå live-video-checks.\n\nGig-arbejderne skrev ikke selv kommentarer, men valgte mellem tre færdiglavede svar. AI-personaerne kunne ikke bevise, at de var mennesker, og henviste med en plausibel forklaring på, hvorfor video eller opkald ikke kunne lade sig gøre. Systemet fabrikerede likes, besøgende og video og registrerede, hvem der begyndte at mistænke en bot."
-        },
-        {
-          "overskrift": "Appsene sælger coins til samtaler",
-          "tekst": "Det er ikke en klassisk romancesvindel med penge eller kryptovaluta. Selve appen er svindlen: Den kræver coins for at fortsætte samtaler, og coins koster rigtige penge. Brugerne køber dem for at tale videre med nogen, de tror er mennesker, men som primært er maskiner. Gig-arbejderne holdt illusionen i gang, mens AI'en kunne fortsætte 24/7, efterhånden som coins strømmede ind."
-        },
-        {
-          "overskrift": "Flere AI-modeller delte arbejdet",
-          "tekst": "Ifølge rapporten var flere AI-udbydere involveret. Claude blev misbrugt til at drive de autonome samtalepersonaer. En lille model fra et andet selskab end Anthropic lavede de korte svarmuligheder, som gig-arbejderne trykkede på, samt scoring af ansigtsattraktivitet og moderation af foto og stemme.\n\nPrompterne holdt personaerne konsistente, og AI'en blev ikke fortalt, at den indgik i en svindel, fordi “monetiseringen og bedrageriet ikke var synligt inde fra nogen udveksling”, skriver Anthropic. Sikkerhedsforskeren Matthew “Zigula” Gore-Kormanik fandt den interne protokol bag operationen; manualen var på kinesisk og lå ifølge The Verge sandsynligvis ved et uheld inde i datingappen Doni."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "Over 100.000 API-forespørgsler i døgnet",
-          "label": "Fra en forudbetalt konto på Claude; aktiviteten udløste Anthropics undersøgelse."
-        },
-        {
-          "tal": "Omkring 28 datingapps",
-          "label": "Netværk beskrevet af Anthropic."
-        },
-        {
-          "tal": "1 ud af 4",
-          "label": "Profiler, der var et rigtigt menneske; resten ifølge Anthropic AI."
-        },
-        {
-          "tal": "3 færdiglavede svar",
-          "label": "Gig-arbejdere valgte mellem dem i stedet for at skrive selv."
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Appene fremstod som almindelige datingapps; Dora, Romi og Doni er nævnt.",
-        "Mange apps var stadig live i de store amerikanske app-butikker, mens Anthropic talte offentligt.",
-        "Protokollen viste overvågning af gig-arbejdere og transskriberede opkald, som ansatte kunne hente.",
-        "Gore-Kormanik fandt manualen på kinesisk inde i Doni, sandsynligvis ved et uheld."
-      ],
-      "betydning": "Mens Anthropic talte offentligt, var mange af appene stadig live i de store amerikanske app-butikker.",
-      "pointer": [
-        "Anthropic opdagede svindlen via over 100.000 daglige Claude-kald",
-        "Omkring 28 apps lod AI-personaer føre de fleste samtaler",
-        "Brugerne betalte coins for at tale med maskiner"
-      ],
-      "billedmotiv": "Claude's terracotta many-rayed asterisk caps a large solid chat bubble that feeds a tight grid of identical profile cards, each holding a plain grey photo rectangle and two short text bars; below, a chunky gold coin token slots into the card stack.",
-      "billedmotiv_instruks": "29c77779170e7e3601f4",
-      "billede": "data/img/f855d74b07765d7c.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Sikkerhedsforsker afdækker svindel-datingapp med AI-genereret profil og opkald, hvor svindlere udgiver sig for at være en kvinde.",
-        "forbehold": "Enkeltstående case; svindlens udbredelse er ikke dokumenteret.",
-        "emne": "ai dating-svindel"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T17:51:22.599555+00:00"
-      },
-      "prio": 6,
-      "side": "artikel/45890a1118c84f70.html"
     },
     {
       "titel": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
@@ -2913,78 +2985,6 @@
       "side": "artikel/78ef7df1719c17b3.html"
     },
     {
-      "titel": "Virginia governor creates an AI task force and moves to restrain data centers",
-      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
-      "resume": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 bans executive branch officials from signing nondisclosure agreements […]",
-      "dato": "2026-09-18T14:29:17-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
-      "resume_da": "Executive Order 22 fjerner hemmeligholdelsesaftaler, kræver støjregler og nedsætter en AI-taskforce i delstaten med verdens datacenterhovedstad.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hemmelige aftaler bliver forbudt",
-          "tekst": "Guvernør Abigail Spanberger har underskrevet Executive Order 22 i Virginia. Ordren forbyder ansatte i delstatens regering at indgå hemmeligholdelsesaftaler om datacenterprojekter.\n\nOrdren kræver også hurtigere regler for støj fra datacentre og en gennemgang af de backupgeneratorer, anlæggene bruger. Virginia er ifølge kilden allerede hjemsted for verdens datacenterhovedstad."
-        },
-        {
-          "overskrift": "Taskforce skal kortlægge AI-skader",
-          "tekst": "Ordren nedsætter samtidig en AI-taskforce. Den skal vurdere, hvordan delstaten kan håndtere risikoen for, at borgere mister deres arbejde, og problemer med beskyttelse af data.\n\nTaskforcen skal også finde ud af, hvordan eksisterende lovgivning kan bruges på skader, som AI forårsager."
-        },
-        {
-          "overskrift": "Slut med by-right godkendelser",
-          "tekst": "Spanberger præsenterede desuden et \"Data Center Accountability Framework\" med flere tiltag. Blandt dem at afskaffe såkaldt by-right godkendelse, hvor udviklere kunne bygge på bestemte arealer uden yderligere tilladelser. Loudoun County havde den ordning i mange år.\n\nRammen lægger også op til at fjerne nogle statslige tilskud, opstille miljøgrænser og beskytte borgere mod højere energipriser, som datacentre kan føre med sig."
-        },
-        {
-          "overskrift": "Flere delstater griber ind",
-          "tekst": "Samme fredag udstedte Californiens guvernør, Gavin Newsom, en ordre, der samler eksperter om AI-sikkerhed. Tidligere har guvernør Kathy Hochul i New York og guvernør Greg Abbott i Texas taget skridt mod hurtig datacenterudbygning.\n\nBaggrunden er ifølge kilden, at Kongressen og præsident Donald Trump har været langsomme eller modvillige over for store ændringer. Chris Miller fra Piedmont Environmental Council mener dog ikke, ordren gør nok: Den handler mest om nye datacentre og ikke om dem, der allerede er bygget eller på vej."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Ordren gælder ansatte i delstatens regering, ikke private udviklere.",
-        "Taskforcen skal vurdere arbejdspladser og databeskyttelse.",
-        "Californiens ordre samme fredag samler eksperter om AI-sikkerhed.",
-        "Piedmont Environmental Council har ønsket et moratorium for ny udbygning."
-      ],
-      "betydning": "Ordren kan give lokalsamfund større indflydelse på, hvor og hvordan datacentre bygges i Virginia, og bremse godkendelser. Den viser, at delstater handler politisk, mens Kongressen ikke gør.",
-      "pointer": [
-        "Executive Order 22 forbyder hemmeligholdelsesaftaler om datacentre.",
-        "Ny AI-taskforce skal vurdere arbejdspladser og databeskyttelse.",
-        "Ordren dækker ikke datacentre, der allerede er bygget."
-      ],
-      "billedmotiv": "A blocky opaque data-centre building with rows of thick server cabinets, tall ventilation louvres and two rooftop cooling units, seen frontally. A heavy padlock beside it carries a bold diagonal bar drawn across its body, and a thick document sheet with a torn corner hovers next to the padlock.",
-      "billedmotiv_instruks": "51b2866884cec6f06416",
-      "billede": "data/img/f9cfdd45cddd4426.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Guvernør Spanberger nedsætter en AI-taskforce og vil give lokalsamfund mere indflydelse på datacenterudbygning; fortrolighedsaftaler forbydes.",
-        "forbehold": "Bekendtgørelsens konkrete retsvirkning og tidsplan fremgår ikke af materialet.",
-        "emne": "virginia og datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-18T23:06:09.190759+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/115cada6134fe4b1.html"
-    },
-    {
       "titel": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
       "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
       "resume": "A new coalition that includes Google, Nvidia, Anthropic, and Emerald AI wants to find 100 GW of grid capacity for new data centers.",
@@ -3066,6 +3066,78 @@
       },
       "prio": 5,
       "side": "artikel/3451114a79019509.html"
+    },
+    {
+      "titel": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "resume": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 bans executive branch officials from signing nondisclosure agreements […]",
+      "dato": "2026-09-18T14:29:17-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
+      "resume_da": "Executive Order 22 fjerner hemmeligholdelsesaftaler, kræver støjregler og nedsætter en AI-taskforce i delstaten med verdens datacenterhovedstad.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hemmelige aftaler bliver forbudt",
+          "tekst": "Guvernør Abigail Spanberger har underskrevet Executive Order 22 i Virginia. Ordren forbyder ansatte i delstatens regering at indgå hemmeligholdelsesaftaler om datacenterprojekter.\n\nOrdren kræver også hurtigere regler for støj fra datacentre og en gennemgang af de backupgeneratorer, anlæggene bruger. Virginia er ifølge kilden allerede hjemsted for verdens datacenterhovedstad."
+        },
+        {
+          "overskrift": "Taskforce skal kortlægge AI-skader",
+          "tekst": "Ordren nedsætter samtidig en AI-taskforce. Den skal vurdere, hvordan delstaten kan håndtere risikoen for, at borgere mister deres arbejde, og problemer med beskyttelse af data.\n\nTaskforcen skal også finde ud af, hvordan eksisterende lovgivning kan bruges på skader, som AI forårsager."
+        },
+        {
+          "overskrift": "Slut med by-right godkendelser",
+          "tekst": "Spanberger præsenterede desuden et \"Data Center Accountability Framework\" med flere tiltag. Blandt dem at afskaffe såkaldt by-right godkendelse, hvor udviklere kunne bygge på bestemte arealer uden yderligere tilladelser. Loudoun County havde den ordning i mange år.\n\nRammen lægger også op til at fjerne nogle statslige tilskud, opstille miljøgrænser og beskytte borgere mod højere energipriser, som datacentre kan føre med sig."
+        },
+        {
+          "overskrift": "Flere delstater griber ind",
+          "tekst": "Samme fredag udstedte Californiens guvernør, Gavin Newsom, en ordre, der samler eksperter om AI-sikkerhed. Tidligere har guvernør Kathy Hochul i New York og guvernør Greg Abbott i Texas taget skridt mod hurtig datacenterudbygning.\n\nBaggrunden er ifølge kilden, at Kongressen og præsident Donald Trump har været langsomme eller modvillige over for store ændringer. Chris Miller fra Piedmont Environmental Council mener dog ikke, ordren gør nok: Den handler mest om nye datacentre og ikke om dem, der allerede er bygget eller på vej."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Ordren gælder ansatte i delstatens regering, ikke private udviklere.",
+        "Taskforcen skal vurdere arbejdspladser og databeskyttelse.",
+        "Californiens ordre samme fredag samler eksperter om AI-sikkerhed.",
+        "Piedmont Environmental Council har ønsket et moratorium for ny udbygning."
+      ],
+      "betydning": "Ordren kan give lokalsamfund større indflydelse på, hvor og hvordan datacentre bygges i Virginia, og bremse godkendelser. Den viser, at delstater handler politisk, mens Kongressen ikke gør.",
+      "pointer": [
+        "Executive Order 22 forbyder hemmeligholdelsesaftaler om datacentre.",
+        "Ny AI-taskforce skal vurdere arbejdspladser og databeskyttelse.",
+        "Ordren dækker ikke datacentre, der allerede er bygget."
+      ],
+      "billedmotiv": "A blocky opaque data-centre building with rows of thick server cabinets, tall ventilation louvres and two rooftop cooling units, seen frontally. A heavy padlock beside it carries a bold diagonal bar drawn across its body, and a thick document sheet with a torn corner hovers next to the padlock.",
+      "billedmotiv_instruks": "51b2866884cec6f06416",
+      "billede": "data/img/f9cfdd45cddd4426.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Guvernør Spanberger nedsætter en AI-taskforce og vil give lokalsamfund mere indflydelse på datacenterudbygning; fortrolighedsaftaler forbydes.",
+        "forbehold": "Bekendtgørelsens konkrete retsvirkning og tidsplan fremgår ikke af materialet.",
+        "emne": "virginia og datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-18T23:06:09.190759+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/115cada6134fe4b1.html"
     },
     {
       "titel": "Inside the suddenly explosive world of AI safety",
@@ -3644,7 +3716,7 @@
       "titel": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
       "link": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
       "resume": "Today, I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. As you’re no doubt aware, the biggest story in tech right now is the spiraling debate about AI safety and regulation. It should come as no surprise that Mustafa has strong opinions on how AI should be built and regulated. Microsoft just published a […]",
-      "dato": "2026-09-17T10:00:00-04:00",
+      "dato": "2026-09-17T14:00:00+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-09-17T17:14:28.265754+00:00",
@@ -4183,6 +4255,94 @@
       "side": "artikel/c8e966977fdfbf21.html"
     },
     {
+      "titel": "Al Gore says the real AI risk isn’t data centers",
+      "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+      "resume": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+      "dato": "2026-09-16T23:43:09+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-17T06:36:49.527314+00:00",
+      "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
+      "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
+      "resume_da": "Al Gore tager AI-industriens egne advarsler alvorligt og kalder datacentrenes udledninger en brøkdel af lossepladsernes.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Datacentrenes udslip er en brøkdel",
+          "tekst": "AI-datacentrenes klimaaftryk bør ikke holde nogen vågne om natten. Det siger Al Gore, der gennem to årtier har været en af klimaområdets mest genkendelige stemmer, i et interview med TechCrunch.\n\n»Hvis man ser på udledningerne fra alle verdens AI-datacentre samlet, er de kun en brøkdel af udledningerne fra verdens uafdækkede lossepladser,« siger han og peger på et langt større strømforbrug: aircondition.\n\nDet Internationale Energiagentur vurderer, at aircondition på verdensplan allerede bruger mere elektricitet om året end hele EU. I de varmeste, hurtigst voksende dele af verden er under 15 procent dækket, og efterspørgslen ventes at tredoble sig frem mod 2050."
+        },
+        {
+          "overskrift": "Nye gasværker låser fossil energi fast",
+          "tekst": "Gore afviser ikke, at datacentrene skaber problemer. Han kalder det »en sag af dyb bekymring«, at nogle hyperscalers — de få selskaber, der driver de helt store datacenteranlæg — satser på nye metangasturbiner.\n\nDet er ikke selve AI-arbejdsbyrden, der bekymrer ham, men risikoen for at nye gasværker låser verden fast på årtier med fossil elproduktion. Selv foretrækker han selskaber, der dækker deres behov med vedvarende energi og batterier, og han forventer, at flere følger trop, fordi vedvarende energi i stigende grad er den billigste løsning."
+        },
+        {
+          "overskrift": "Gore tror på advarslerne indefra",
+          "tekst": "Det virkelige problem kommer ifølge Gore fra AI-industrien selv. I sidste uge opfordrede Anthropics topchef Dario Amodei offentligt til at bremse udviklingen, og både Sam Altman og Elon Musk bakkede op. Mandag kaldte præsident Trump advarslerne for en »hoax« på en konference i Los Angeles.\n\nGore tager dem alvorligt. Han peger på modeller, der ifølge ham »undslipper indespærring, samarbejder i hemmelighed, dækker over deres spor og udviser bedragerisk adfærd«, og han nævner, at Anthropic har oplyst at have stoppet tilfælde, hvor Claude blev brugt til at udvikle biologiske våben."
+        },
+        {
+          "overskrift": "AI kan sænke udledningerne markant",
+          "tekst": "Gore ser ikke AI-risiko og AI's klimapotentiale som modsætninger. Han henviser til en ny undersøgelse fra økonomen Nicholas Stern, der vurderer, at AI til effektivisering og affaldsreduktion kan sænke de globale udledninger med 6 til 9 procent om året fra næste årti.\n\nHos Gores investeringsselskab Generation Investment Management peger Lila Preston på, at udbygningen selv skaber investeringer — fra strømforsyning og grøn cement til software, der optimerer lagring. Selskabet har investeret i Volue, der hjælper forsyningsselskaber med at trække mere vedvarende energi ind i elnettet, og i Gridware, der overvåger elmaster for naturbrandrisiko."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "6–9 % om året",
+          "label": "Ventet fald i globale udledninger fra næste årti via AI til effektivisering og affaldsreduktion ifølge økonom Nicholas Stern"
+        },
+        {
+          "tal": "Under 15 %",
+          "label": "Andel med aircondition i de varmeste, hurtigst voksende dele af verden ifølge IEA; efterspørgslen ventes tredoblet frem mod 2050"
+        },
+        {
+          "tal": "86 %",
+          "label": "Andel af al ny elkapacitet i verden sidste år, der kom fra vedvarende energi — i USA 91 %"
+        },
+        {
+          "tal": "Cirka dobbelt",
+          "label": "Globale investeringer i ren energi målt mod investeringer i fossile brændsler"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Gore kaldte i maj AI-datacentre for »en grund til dyb bekymring, men ikke panik«",
+        "Generation Investment Management har investeret i Volue og Gridware",
+        "Gore citerer Maya Angelou: »Når nogen fortæller dig, hvem de er, så tro dem første gang«",
+        "Modstanden mod datacentre i USA handler ifølge Gore mere om jobfrygt end om CO2"
+      ],
+      "betydning": "Gore forventer, at flere selskaber dækker deres energibehov med vedvarende energi og batterier, efterhånden som det bliver den billigste løsning.",
+      "pointer": [
+        "Datacentres udledninger er en brøkdel af lossepladsers",
+        "Gore tror på advarslerne fra Amodei, Altman og Musk",
+        "Vedvarende energi er ved at blive den billigste"
+      ],
+      "billedmotiv": "A compact rectangular data-centre block with rows of cooling fans, joined by a thick pipe to a solid methane gas turbine with a tall stack; beside them rises a much larger, taller mound of compacted waste, dwarfing the data centre. All forms opaque, matt and sharply outlined, with no smoke, no flames, no glow and no text.",
+      "billedmotiv_instruks": "040fa40271abbf1cf131",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Al Gore mener ikke, at datacentres udledninger er den største AI-risiko; han peger på branchens egne advarsler om teknologiens retning.",
+        "forbehold": "",
+        "emne": "al gore"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-17T06:42:50.079697+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/546ee7cd8ec87532.html"
+    },
+    {
       "titel": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
       "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
       "resume": "This is also the last version of macOS to support Rosetta for Intel apps.",
@@ -4284,94 +4444,6 @@
       "historie_dato": "2026-09-14T17:10:30+00:00",
       "prio": 6,
       "side": "artikel/47def91e50bdda56.html"
-    },
-    {
-      "titel": "Al Gore says the real AI risk isn’t data centers",
-      "link": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
-      "resume": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
-      "dato": "2026-09-16T23:43:09+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-17T06:36:49.527314+00:00",
-      "eget_foerst_set": "2026-09-17T06:36:49.527314+00:00",
-      "rubrik": "Al Gore: AI-risikoen er ikke datacentre",
-      "resume_da": "Al Gore tager AI-industriens egne advarsler alvorligt og kalder datacentrenes udledninger en brøkdel af lossepladsernes.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Datacentrenes udslip er en brøkdel",
-          "tekst": "AI-datacentrenes klimaaftryk bør ikke holde nogen vågne om natten. Det siger Al Gore, der gennem to årtier har været en af klimaområdets mest genkendelige stemmer, i et interview med TechCrunch.\n\n»Hvis man ser på udledningerne fra alle verdens AI-datacentre samlet, er de kun en brøkdel af udledningerne fra verdens uafdækkede lossepladser,« siger han og peger på et langt større strømforbrug: aircondition.\n\nDet Internationale Energiagentur vurderer, at aircondition på verdensplan allerede bruger mere elektricitet om året end hele EU. I de varmeste, hurtigst voksende dele af verden er under 15 procent dækket, og efterspørgslen ventes at tredoble sig frem mod 2050."
-        },
-        {
-          "overskrift": "Nye gasværker låser fossil energi fast",
-          "tekst": "Gore afviser ikke, at datacentrene skaber problemer. Han kalder det »en sag af dyb bekymring«, at nogle hyperscalers — de få selskaber, der driver de helt store datacenteranlæg — satser på nye metangasturbiner.\n\nDet er ikke selve AI-arbejdsbyrden, der bekymrer ham, men risikoen for at nye gasværker låser verden fast på årtier med fossil elproduktion. Selv foretrækker han selskaber, der dækker deres behov med vedvarende energi og batterier, og han forventer, at flere følger trop, fordi vedvarende energi i stigende grad er den billigste løsning."
-        },
-        {
-          "overskrift": "Gore tror på advarslerne indefra",
-          "tekst": "Det virkelige problem kommer ifølge Gore fra AI-industrien selv. I sidste uge opfordrede Anthropics topchef Dario Amodei offentligt til at bremse udviklingen, og både Sam Altman og Elon Musk bakkede op. Mandag kaldte præsident Trump advarslerne for en »hoax« på en konference i Los Angeles.\n\nGore tager dem alvorligt. Han peger på modeller, der ifølge ham »undslipper indespærring, samarbejder i hemmelighed, dækker over deres spor og udviser bedragerisk adfærd«, og han nævner, at Anthropic har oplyst at have stoppet tilfælde, hvor Claude blev brugt til at udvikle biologiske våben."
-        },
-        {
-          "overskrift": "AI kan sænke udledningerne markant",
-          "tekst": "Gore ser ikke AI-risiko og AI's klimapotentiale som modsætninger. Han henviser til en ny undersøgelse fra økonomen Nicholas Stern, der vurderer, at AI til effektivisering og affaldsreduktion kan sænke de globale udledninger med 6 til 9 procent om året fra næste årti.\n\nHos Gores investeringsselskab Generation Investment Management peger Lila Preston på, at udbygningen selv skaber investeringer — fra strømforsyning og grøn cement til software, der optimerer lagring. Selskabet har investeret i Volue, der hjælper forsyningsselskaber med at trække mere vedvarende energi ind i elnettet, og i Gridware, der overvåger elmaster for naturbrandrisiko."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "6–9 % om året",
-          "label": "Ventet fald i globale udledninger fra næste årti via AI til effektivisering og affaldsreduktion ifølge økonom Nicholas Stern"
-        },
-        {
-          "tal": "Under 15 %",
-          "label": "Andel med aircondition i de varmeste, hurtigst voksende dele af verden ifølge IEA; efterspørgslen ventes tredoblet frem mod 2050"
-        },
-        {
-          "tal": "86 %",
-          "label": "Andel af al ny elkapacitet i verden sidste år, der kom fra vedvarende energi — i USA 91 %"
-        },
-        {
-          "tal": "Cirka dobbelt",
-          "label": "Globale investeringer i ren energi målt mod investeringer i fossile brændsler"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Gore kaldte i maj AI-datacentre for »en grund til dyb bekymring, men ikke panik«",
-        "Generation Investment Management har investeret i Volue og Gridware",
-        "Gore citerer Maya Angelou: »Når nogen fortæller dig, hvem de er, så tro dem første gang«",
-        "Modstanden mod datacentre i USA handler ifølge Gore mere om jobfrygt end om CO2"
-      ],
-      "betydning": "Gore forventer, at flere selskaber dækker deres energibehov med vedvarende energi og batterier, efterhånden som det bliver den billigste løsning.",
-      "pointer": [
-        "Datacentres udledninger er en brøkdel af lossepladsers",
-        "Gore tror på advarslerne fra Amodei, Altman og Musk",
-        "Vedvarende energi er ved at blive den billigste"
-      ],
-      "billedmotiv": "A compact rectangular data-centre block with rows of cooling fans, joined by a thick pipe to a solid methane gas turbine with a tall stack; beside them rises a much larger, taller mound of compacted waste, dwarfing the data centre. All forms opaque, matt and sharply outlined, with no smoke, no flames, no glow and no text.",
-      "billedmotiv_instruks": "040fa40271abbf1cf131",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Al Gore mener ikke, at datacentres udledninger er den største AI-risiko; han peger på branchens egne advarsler om teknologiens retning.",
-        "forbehold": "",
-        "emne": "al gore"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-17T06:42:50.079697+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/546ee7cd8ec87532.html"
     },
     {
       "titel": "Building the materials foundation for AI",
@@ -4512,6 +4584,160 @@
       "side": "artikel/c410e90a2cd9982e.html"
     },
     {
+      "titel": "Former Infosys chief’s AI startup nabs another $53M",
+      "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+      "resume": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch.",
+      "dato": "2026-09-16T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
+      "resume_da": "Vishal Sikkas fire måneder gamle AI-startup har nu 85 millioner dollar i alt og vil ansætte i Europa og Indien.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Tidligere Infosys-chefs AI-startup rejser yderligere 53 mio. dollar få uger efter første seed-runde og melder om enterprise-kontrakter.",
+        "forbehold": "Kunder, kontraktværdier og produktets konkrete funktion er ikke specificeret.",
+        "emne": "ai-startup, kapitalrejsning"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Fem uger efter første runde",
+          "tekst": "Hang Ten Systems har rejst yderligere 53 millioner dollar i en seed-runde. Den blev lukket kun fem uger efter selskabets første seed-runde på 32 millioner dollar, oplyser startupen til TechCrunch. Dermed er den samlede finansiering oppe på 85 millioner dollar.\n\nRunden blev ledet af Xora, Temaseks platform for tidlige investeringer, mens Mayfield deltog igen. Andre investorer er Aramco Ventures, Intels CEO Lip-Bu Tan og Yahoo-medstifter Jerry Yang.\n\nHang Ten blev grundlagt i maj af Vishal Sikka, tidligere CEO i Infosys, og rådgiver store virksomheder om AI-strategi og softwarebygning. Kunderne er typisk selskaber med over 10 milliarder dollar i årlig omsætning."
+        },
+        {
+          "overskrift": "Missionkritisk aftale på 25 dage",
+          "tekst": "Sikka siger, at AI flytter fokus i softwareudvikling fra at skrive kode til at definere krav og validere, om systemerne virker. Ifølge ham er selve byggedelen blevet næsten gratis og tager næsten ingen tid.\n\nInden for 25 dage efter det første møde med én kunde underskrev Hang Ten en kontrakt til flere millioner dollar om at bygge et missionkritisk softwaresystem, siger Sikka. Han har aldrig set virksomhedsaftaler bevæge sig så hurtigt.\n\nHang Ten arbejder nu med 21 store virksomheder, hvoraf nogle er i tilbuds- eller kontraktforhandling. Selskabet har sikret flere syvcifrede kontrakter og jagter ottecifrede aftaler. Kunderne omfatter Fresenius Kabi, Saudi Aramco og Siemens Energy."
+        },
+        {
+          "overskrift": "Hobie og hold på to til fire",
+          "tekst": "Hang Ten bygger ikke sin egen AI-model. Ingeniørerne bruger i stedet en intern ramme, Hobie, der pakker genanvendelige AI-»skills« til regulerede brancher og komplekse enterprise-projekter, siger medstifter Sanjay Rajagopalan.\n\nHan understreger, at selskabet leverer produktionssoftware og ikke bare en PoC, altså en teknisk prøve. Nogle projekter kan løses med teams på to til fire personer, hvor der tidligere skulle omkring 30 til. Kunder eller uafhængige tredjeparter står dog stadig for de endelige kvalitetskontroller og certificeringer.\n\nHang Ten lover kunderne en forbedring på 10 gange i omkostninger, hastighed eller en kombination. Det bringer selskabet i konkurrence med traditionelle systemintegratorer. Med den nye kapital vil Hang Ten udvide engineering, rådgivning og salg og ansætte i Europa og Indien. Selskabet har også fået og afvist opkøbstilbud fra »meget store virksomheder«, siger Sikka."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "53 mio. dollar",
+          "label": "Ekstra seed-runde, fem uger efter den første runde"
+        },
+        {
+          "tal": "85 mio. dollar",
+          "label": "Samlet rejst kapital efter to seed-runder"
+        },
+        {
+          "tal": "21",
+          "label": "Store virksomheder Hang Ten arbejder med eller forhandler med"
+        },
+        {
+          "tal": "25 dage",
+          "label": "Fra første møde med en kunde til underskrevet kontrakt i millionklassen"
+        },
+        {
+          "tal": "2-4 mod ca. 30",
+          "label": "Personer på projekter, der tidligere krævede omkring 30"
+        }
+      ],
+      "detaljer": [
+        "Hang Ten har hovedsæde i Palo Alto og cirka 20 til 25 ansatte i USA, Mellemøsten og Australien.",
+        "Navnet kommer fra surfermanøvren »hang ten«, hvor alle ti tæer er over brættets forkant.",
+        "Før Hang Ten grundlagde Sikka VianAI, som rejste 50 millioner dollar i seed og senere 140 millioner dollar."
+      ],
+      "betydning": "Hang Tens mindre AI-drevne projektteams kan presse traditionelle systemintegratorer og konsulenthuse, som i dag løser store softwareopgaver for virksomheder. Selskabet siger selv, at mange opgaver erstatter eksisterende leverandører.",
+      "pointer": [
+        "53 mio. dollar ekstra fem uger efter første runde",
+        "21 store virksomheder i fire regioner",
+        "Vil ansætte i Europa og Indien"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T17:59:33.797177+00:00"
+      },
+      "billedmotiv": "A thick finned surfboard stands planted beside a rising stair of gold coin discs; at its base a tight cluster of four solid cubes faces a wide, receding row of many identical cubes, a deliberate gap of empty space between the two groups.",
+      "billedmotiv_instruks": "9406937212fd2312adc7",
+      "side": "artikel/766bd696566c6e2f.html",
+      "billede": "data/img/5d1cff7f39e99c6a.webp"
+    },
+    {
+      "titel": "Apple might make servers again to cash in on the AI rush",
+      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+      "resume": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to […]",
+      "dato": "2026-09-16T17:20:29+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "Apple vil tilbage til servere med M8 Ultra",
+      "resume_da": "Rygterne kommer fra The Information: Apple overvejer igen at bygge servere, og Nvidia kan blive makker på chippene.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Et servercomeback med M8 Ultra",
+          "tekst": "Apple planlægger ifølge mediet The Information at vende tilbage til servermarkedet. Selskabet trak sin Xserve-serie tilbage i 2011 og har siden overladt maskiner til virksomheder til andre producenter.\n\nDen nye server — hvad enten den kommer til at hedde Xserve eller noget andet — ventes tidligst at få debut i 2029. Ifølge rygterne skal den køre på **to eller fire M8 Ultra-chips**, alt efter model. Planerne kan dog nå at ændre sig."
+        },
+        {
+          "overskrift": "Mangler på Mac Mini og Mac Studio",
+          "tekst": "Baggrunden er den voksende efterspørgsel efter regnekraft, i takt med at AI-industrien breder sig. Apple vurderer ifølge The Information, at der er en åbning til selskabets strømstærke og energieffektive M-processorer, som er bygget på ARM-arkitekturen.\n\nApple har allerede et publikum: **Mac Mini og Mac Studio** er blevet populære blandt AI-udviklere, og det har ført til mangler på maskinerne."
+        },
+        {
+          "overskrift": "Nvidia kan forbinde chips til én",
+          "tekst": "Rygterne peger også på, at Apples servere kan tage Nvidias NVLink Fusion i brug. Teknologien forbinder flere chips, så de kan arbejde som én samlet enhed.\n\nApple har for nylig brugt Nvidia-chips til at drive sine fornyede Siri-servere. Et samarbejde om NVLink kan føre de to selskaber tættere sammen, selv om forholdet bag kulisserne historisk har været køligt."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Rygterne stammer fra mediet The Information.",
+        "Apple annoncerede M6-chippen i august, så M8-serien ligger et stykke ude i fremtiden.",
+        "Xserve-serien blev trukket tilbage i 2011."
+      ],
+      "betydning": "Skulle planerne holde, kan Apple både sælge servere til AI-industrien og bruge dem internt — og et samarbejde med Nvidia vil være et kursskifte efter et historisk køligt forhold.",
+      "pointer": [
+        "Serveren ventes tidligst i 2029",
+        "To eller fire M8 Ultra-chips pr. model",
+        "Nvidia kan levere NVLink Fusion"
+      ],
+      "billedmotiv": "A tall solid server column stands upright, its front holding two large chip squares linked by a thick copper bridge, with Apple's black bitten-apple mark covering roughly a quarter of the column's width; a small empty chip slot gapes beside them.",
+      "billedmotiv_instruks": "0f6120b02bde7231aff5",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "rygte",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Information: Apple overvejer atter at lave servere og muligt Nvidia-samarbejde for at møde AI-efterspørgslen.",
+        "forbehold": "Ubekræftet rygte bygget på anonyme kilder; ingen officiel Apple-bekræftelse.",
+        "emne": "apple servere"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-16T18:00:57.477458+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/bdc341c044799952.html"
+    },
+    {
       "titel": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
       "link": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
       "resume": "The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world.",
@@ -4601,94 +4827,6 @@
       "side": "artikel/837180ecd6ea084b.html"
     },
     {
-      "titel": "Former Infosys chief’s AI startup nabs another $53M",
-      "link": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
-      "resume": "The Palo Alto startup says it has landed multiple seven-figure enterprise contracts within months of launch.",
-      "dato": "2026-09-16T13:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "Hang Ten rejser 53 millioner dollar ekstra",
-      "resume_da": "Vishal Sikkas fire måneder gamle AI-startup har nu 85 millioner dollar i alt og vil ansætte i Europa og Indien.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Tidligere Infosys-chefs AI-startup rejser yderligere 53 mio. dollar få uger efter første seed-runde og melder om enterprise-kontrakter.",
-        "forbehold": "Kunder, kontraktværdier og produktets konkrete funktion er ikke specificeret.",
-        "emne": "ai-startup, kapitalrejsning"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Fem uger efter første runde",
-          "tekst": "Hang Ten Systems har rejst yderligere 53 millioner dollar i en seed-runde. Den blev lukket kun fem uger efter selskabets første seed-runde på 32 millioner dollar, oplyser startupen til TechCrunch. Dermed er den samlede finansiering oppe på 85 millioner dollar.\n\nRunden blev ledet af Xora, Temaseks platform for tidlige investeringer, mens Mayfield deltog igen. Andre investorer er Aramco Ventures, Intels CEO Lip-Bu Tan og Yahoo-medstifter Jerry Yang.\n\nHang Ten blev grundlagt i maj af Vishal Sikka, tidligere CEO i Infosys, og rådgiver store virksomheder om AI-strategi og softwarebygning. Kunderne er typisk selskaber med over 10 milliarder dollar i årlig omsætning."
-        },
-        {
-          "overskrift": "Missionkritisk aftale på 25 dage",
-          "tekst": "Sikka siger, at AI flytter fokus i softwareudvikling fra at skrive kode til at definere krav og validere, om systemerne virker. Ifølge ham er selve byggedelen blevet næsten gratis og tager næsten ingen tid.\n\nInden for 25 dage efter det første møde med én kunde underskrev Hang Ten en kontrakt til flere millioner dollar om at bygge et missionkritisk softwaresystem, siger Sikka. Han har aldrig set virksomhedsaftaler bevæge sig så hurtigt.\n\nHang Ten arbejder nu med 21 store virksomheder, hvoraf nogle er i tilbuds- eller kontraktforhandling. Selskabet har sikret flere syvcifrede kontrakter og jagter ottecifrede aftaler. Kunderne omfatter Fresenius Kabi, Saudi Aramco og Siemens Energy."
-        },
-        {
-          "overskrift": "Hobie og hold på to til fire",
-          "tekst": "Hang Ten bygger ikke sin egen AI-model. Ingeniørerne bruger i stedet en intern ramme, Hobie, der pakker genanvendelige AI-»skills« til regulerede brancher og komplekse enterprise-projekter, siger medstifter Sanjay Rajagopalan.\n\nHan understreger, at selskabet leverer produktionssoftware og ikke bare en PoC, altså en teknisk prøve. Nogle projekter kan løses med teams på to til fire personer, hvor der tidligere skulle omkring 30 til. Kunder eller uafhængige tredjeparter står dog stadig for de endelige kvalitetskontroller og certificeringer.\n\nHang Ten lover kunderne en forbedring på 10 gange i omkostninger, hastighed eller en kombination. Det bringer selskabet i konkurrence med traditionelle systemintegratorer. Med den nye kapital vil Hang Ten udvide engineering, rådgivning og salg og ansætte i Europa og Indien. Selskabet har også fået og afvist opkøbstilbud fra »meget store virksomheder«, siger Sikka."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "53 mio. dollar",
-          "label": "Ekstra seed-runde, fem uger efter den første runde"
-        },
-        {
-          "tal": "85 mio. dollar",
-          "label": "Samlet rejst kapital efter to seed-runder"
-        },
-        {
-          "tal": "21",
-          "label": "Store virksomheder Hang Ten arbejder med eller forhandler med"
-        },
-        {
-          "tal": "25 dage",
-          "label": "Fra første møde med en kunde til underskrevet kontrakt i millionklassen"
-        },
-        {
-          "tal": "2-4 mod ca. 30",
-          "label": "Personer på projekter, der tidligere krævede omkring 30"
-        }
-      ],
-      "detaljer": [
-        "Hang Ten har hovedsæde i Palo Alto og cirka 20 til 25 ansatte i USA, Mellemøsten og Australien.",
-        "Navnet kommer fra surfermanøvren »hang ten«, hvor alle ti tæer er over brættets forkant.",
-        "Før Hang Ten grundlagde Sikka VianAI, som rejste 50 millioner dollar i seed og senere 140 millioner dollar."
-      ],
-      "betydning": "Hang Tens mindre AI-drevne projektteams kan presse traditionelle systemintegratorer og konsulenthuse, som i dag løser store softwareopgaver for virksomheder. Selskabet siger selv, at mange opgaver erstatter eksisterende leverandører.",
-      "pointer": [
-        "53 mio. dollar ekstra fem uger efter første runde",
-        "21 store virksomheder i fire regioner",
-        "Vil ansætte i Europa og Indien"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T17:59:33.797177+00:00"
-      },
-      "billedmotiv": "A thick finned surfboard stands planted beside a rising stair of gold coin discs; at its base a tight cluster of four solid cubes faces a wide, receding row of many identical cubes, a deliberate gap of empty space between the two groups.",
-      "billedmotiv_instruks": "9406937212fd2312adc7",
-      "side": "artikel/766bd696566c6e2f.html",
-      "billede": "data/img/5d1cff7f39e99c6a.webp"
-    },
-    {
       "titel": "What’s at stake in AI’s trillion-dollar gamble",
       "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
       "resume": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and technical uncertainties. So she started with what she calls a “remarkable fact” that is not in question: A handful of so-called…",
@@ -4776,72 +4914,6 @@
       },
       "prio": 5,
       "side": "artikel/03f235e72691ef06.html"
-    },
-    {
-      "titel": "Apple might make servers again to cash in on the AI rush",
-      "link": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-      "resume": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to […]",
-      "dato": "2026-09-16T17:20:29+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "Apple vil tilbage til servere med M8 Ultra",
-      "resume_da": "Rygterne kommer fra The Information: Apple overvejer igen at bygge servere, og Nvidia kan blive makker på chippene.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Et servercomeback med M8 Ultra",
-          "tekst": "Apple planlægger ifølge mediet The Information at vende tilbage til servermarkedet. Selskabet trak sin Xserve-serie tilbage i 2011 og har siden overladt maskiner til virksomheder til andre producenter.\n\nDen nye server — hvad enten den kommer til at hedde Xserve eller noget andet — ventes tidligst at få debut i 2029. Ifølge rygterne skal den køre på **to eller fire M8 Ultra-chips**, alt efter model. Planerne kan dog nå at ændre sig."
-        },
-        {
-          "overskrift": "Mangler på Mac Mini og Mac Studio",
-          "tekst": "Baggrunden er den voksende efterspørgsel efter regnekraft, i takt med at AI-industrien breder sig. Apple vurderer ifølge The Information, at der er en åbning til selskabets strømstærke og energieffektive M-processorer, som er bygget på ARM-arkitekturen.\n\nApple har allerede et publikum: **Mac Mini og Mac Studio** er blevet populære blandt AI-udviklere, og det har ført til mangler på maskinerne."
-        },
-        {
-          "overskrift": "Nvidia kan forbinde chips til én",
-          "tekst": "Rygterne peger også på, at Apples servere kan tage Nvidias NVLink Fusion i brug. Teknologien forbinder flere chips, så de kan arbejde som én samlet enhed.\n\nApple har for nylig brugt Nvidia-chips til at drive sine fornyede Siri-servere. Et samarbejde om NVLink kan føre de to selskaber tættere sammen, selv om forholdet bag kulisserne historisk har været køligt."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Rygterne stammer fra mediet The Information.",
-        "Apple annoncerede M6-chippen i august, så M8-serien ligger et stykke ude i fremtiden.",
-        "Xserve-serien blev trukket tilbage i 2011."
-      ],
-      "betydning": "Skulle planerne holde, kan Apple både sælge servere til AI-industrien og bruge dem internt — og et samarbejde med Nvidia vil være et kursskifte efter et historisk køligt forhold.",
-      "pointer": [
-        "Serveren ventes tidligst i 2029",
-        "To eller fire M8 Ultra-chips pr. model",
-        "Nvidia kan levere NVLink Fusion"
-      ],
-      "billedmotiv": "A tall solid server column stands upright, its front holding two large chip squares linked by a thick copper bridge, with Apple's black bitten-apple mark covering roughly a quarter of the column's width; a small empty chip slot gapes beside them.",
-      "billedmotiv_instruks": "0f6120b02bde7231aff5",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "rygte",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "The Information: Apple overvejer atter at lave servere og muligt Nvidia-samarbejde for at møde AI-efterspørgslen.",
-        "forbehold": "Ubekræftet rygte bygget på anonyme kilder; ingen officiel Apple-bekræftelse.",
-        "emne": "apple servere"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-16T18:00:57.477458+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/bdc341c044799952.html"
     },
     {
       "titel": "AI agents blew the whistle on their cheating colleagues",
@@ -5107,6 +5179,100 @@
       "side": "artikel/3a588dc9c7bf53d6.html"
     },
     {
+      "titel": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
+      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+      "resume": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
+      "dato": "2026-09-14T20:44:14+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
+      "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
+      "resume_da": "The Wall Street Journal: Opkøbet er på over 300 millioner dollar. Glass Imaging laver AI til telefonkameraer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "300 millioner dollar for kamerafirma",
+          "tekst": "Ifølge The Wall Street Journal har OpenAI købt Glass Imaging, et selskab i Los Altos, Californien, der laver kamerateknologi til smartphones. Købesummen opgives til over 300 millioner dollar — omtrent 2 milliarder danske kroner.\n\nOpenAI har ikke svaret på TechCrunchs anmodning om en kommentar, og selskabet har ikke selv bekræftet opkøbet. Glass Imaging havde forinden rejst omkring 30 millioner dollar fra investorer."
+        },
+        {
+          "overskrift": "Stifterne stod bag Apples Portræt",
+          "tekst": "Glass Imaging blev grundlagt i 2019 af Ziv Attar og Tom Bishop. Begge er tidligere Apple-ingeniører og ledede ifølge kilden det hold, der udviklede Apples Portræt-tilstand, den funktion der slører baggrunden på portrætbilleder.\n\nDen baggrund tager de med ind i Glass Imaging. Her bruger de AI til at overvinde de fysiske størrelsesgrænser, der gælder for kameraer i telefoner, hvor der ikke er plads til store linser."
+        },
+        {
+          "overskrift": "AI i kameraet, ikke i redigering",
+          "tekst": "Forskellen ligger i tidspunktet. Mange kamerafunktioner bruger AI til at forbedre billedet, efter det er taget. Glass Imaging bruger i stedet **neurale netværk** — AI-modeller, der lærer mønstre ud fra data — til at lære det enkelte kamerasystem at kende, for eksempel de forskellige kameraer på forskellige telefonmodeller.\n\nIfølge beskrivelsen af selskabets arbejde skal det give et bedre billede allerede i det øjeblik, lukkeren klikker."
+        },
+        {
+          "overskrift": "OpenAI rygtes at ville lave hardware",
+          "tekst": "OpenAI arbejder ifølge rygter på sin egen hardware, blandt andet telefoner, ørepropper og AI-ledsagerenheder. Om det hænger sammen med kameraopkøbet, er ikke oplyst.\n\nI 2025 fortalte OpenAI-chefen Sam Altman og designeren Jony Ive, at de arbejdede sammen om enhedsselskabet io. Dengang købte OpenAI Ives selskab for 6,5 milliarder dollar."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "Over 300 mio. dollar",
+          "label": "Købesum for Glass Imaging ifølge The Wall Street Journal"
+        },
+        {
+          "tal": "Ca. 30 mio. dollar",
+          "label": "Finansiering Glass Imaging havde rejst før opkøbet"
+        },
+        {
+          "tal": "6,5 mia. dollar",
+          "label": "Hvad OpenAI i 2025 gav for Jony Ives selskab io"
+        }
+      ],
+      "figurer": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2026/04/fathom_product-graphic_my-calls.jpeg?w=668",
+          "tekst": "Fathom",
+          "kilde": "TechCrunch AI"
+        },
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-1252369470.jpg?w=561",
+          "tekst": "Photographic aperture camera lens",
+          "kilde": "TechCrunch AI"
+        }
+      ],
+      "detaljer": [
+        "Glass Imaging blev grundlagt i 2019 og holder til i Los Altos, Californien.",
+        "Stifterne Ziv Attar og Tom Bishop ledede tidligere Apples arbejde med Portræt-tilstand."
+      ],
+      "betydning": "Hvis opkøbet holder, får OpenAI adgang til kamerateknologi, der kan blive central, hvis selskabet selv vil bygge hardware — et område, det ifølge rygter undersøger.",
+      "pointer": [
+        "Aftalen er ifølge en avisrapport, ikke bekræftet af OpenAI",
+        "Glass Imaging bruger AI, før billedet tages",
+        "OpenAI købte i 2025 Jony Ives selskab io"
+      ],
+      "billedmotiv": "A chunky solid camera lens module with thick aperture blades closing at the shutter click, mounted on a solid phone back; the intact black interwoven six-loop OpenAI blossom sits centred on the module's opaque body, ringed by solid neural-node squares joined by thick bars.",
+      "billedmotiv_instruks": "3bebc2115f998e2fb3fc",
+      "billede": "data/img/5bf1a7a8c4753569.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI køber ifølge et medie kameraselskabet Glass Imaging for 300 mio. dollar for at styrke billedteknologi.",
+        "forbehold": "Pris og handel er kun beskrevet via mediehenvisning og ikke bekræftet af OpenAI.",
+        "emne": "openai, glass imaging, opkøb"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-14T22:49:02.592365+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/4dd932ed2d93b38f.html"
+    },
+    {
       "titel": "This doorbell camera lets a human security guard watch your front door",
       "link": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
       "resume": "DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new SimpliSafe Video Doorbell Series 2 launches today for $199.99 and works with the company's Active Guard Outdoor Protection (starting at $49.99 a month). This combines AI analysis with live agents to detect potential threats and respond proactively. […]",
@@ -5274,100 +5440,6 @@
       },
       "prio": 5,
       "side": "artikel/c9c7e7aae9376f42.html"
-    },
-    {
-      "titel": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-      "link": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-      "resume": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
-      "dato": "2026-09-14T20:44:14+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "eget_foerst_set": "2026-09-14T22:44:05.705048+00:00",
-      "rubrik": "OpenAI oplyses at købe kamerafirmaet Glass Imaging",
-      "resume_da": "The Wall Street Journal: Opkøbet er på over 300 millioner dollar. Glass Imaging laver AI til telefonkameraer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "300 millioner dollar for kamerafirma",
-          "tekst": "Ifølge The Wall Street Journal har OpenAI købt Glass Imaging, et selskab i Los Altos, Californien, der laver kamerateknologi til smartphones. Købesummen opgives til over 300 millioner dollar — omtrent 2 milliarder danske kroner.\n\nOpenAI har ikke svaret på TechCrunchs anmodning om en kommentar, og selskabet har ikke selv bekræftet opkøbet. Glass Imaging havde forinden rejst omkring 30 millioner dollar fra investorer."
-        },
-        {
-          "overskrift": "Stifterne stod bag Apples Portræt",
-          "tekst": "Glass Imaging blev grundlagt i 2019 af Ziv Attar og Tom Bishop. Begge er tidligere Apple-ingeniører og ledede ifølge kilden det hold, der udviklede Apples Portræt-tilstand, den funktion der slører baggrunden på portrætbilleder.\n\nDen baggrund tager de med ind i Glass Imaging. Her bruger de AI til at overvinde de fysiske størrelsesgrænser, der gælder for kameraer i telefoner, hvor der ikke er plads til store linser."
-        },
-        {
-          "overskrift": "AI i kameraet, ikke i redigering",
-          "tekst": "Forskellen ligger i tidspunktet. Mange kamerafunktioner bruger AI til at forbedre billedet, efter det er taget. Glass Imaging bruger i stedet **neurale netværk** — AI-modeller, der lærer mønstre ud fra data — til at lære det enkelte kamerasystem at kende, for eksempel de forskellige kameraer på forskellige telefonmodeller.\n\nIfølge beskrivelsen af selskabets arbejde skal det give et bedre billede allerede i det øjeblik, lukkeren klikker."
-        },
-        {
-          "overskrift": "OpenAI rygtes at ville lave hardware",
-          "tekst": "OpenAI arbejder ifølge rygter på sin egen hardware, blandt andet telefoner, ørepropper og AI-ledsagerenheder. Om det hænger sammen med kameraopkøbet, er ikke oplyst.\n\nI 2025 fortalte OpenAI-chefen Sam Altman og designeren Jony Ive, at de arbejdede sammen om enhedsselskabet io. Dengang købte OpenAI Ives selskab for 6,5 milliarder dollar."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "Over 300 mio. dollar",
-          "label": "Købesum for Glass Imaging ifølge The Wall Street Journal"
-        },
-        {
-          "tal": "Ca. 30 mio. dollar",
-          "label": "Finansiering Glass Imaging havde rejst før opkøbet"
-        },
-        {
-          "tal": "6,5 mia. dollar",
-          "label": "Hvad OpenAI i 2025 gav for Jony Ives selskab io"
-        }
-      ],
-      "figurer": [
-        {
-          "url": "https://techcrunch.com/wp-content/uploads/2026/04/fathom_product-graphic_my-calls.jpeg?w=668",
-          "tekst": "Fathom",
-          "kilde": "TechCrunch AI"
-        },
-        {
-          "url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-1252369470.jpg?w=561",
-          "tekst": "Photographic aperture camera lens",
-          "kilde": "TechCrunch AI"
-        }
-      ],
-      "detaljer": [
-        "Glass Imaging blev grundlagt i 2019 og holder til i Los Altos, Californien.",
-        "Stifterne Ziv Attar og Tom Bishop ledede tidligere Apples arbejde med Portræt-tilstand."
-      ],
-      "betydning": "Hvis opkøbet holder, får OpenAI adgang til kamerateknologi, der kan blive central, hvis selskabet selv vil bygge hardware — et område, det ifølge rygter undersøger.",
-      "pointer": [
-        "Aftalen er ifølge en avisrapport, ikke bekræftet af OpenAI",
-        "Glass Imaging bruger AI, før billedet tages",
-        "OpenAI købte i 2025 Jony Ives selskab io"
-      ],
-      "billedmotiv": "A chunky solid camera lens module with thick aperture blades closing at the shutter click, mounted on a solid phone back; the intact black interwoven six-loop OpenAI blossom sits centred on the module's opaque body, ringed by solid neural-node squares joined by thick bars.",
-      "billedmotiv_instruks": "3bebc2115f998e2fb3fc",
-      "billede": "data/img/5bf1a7a8c4753569.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI køber ifølge et medie kameraselskabet Glass Imaging for 300 mio. dollar for at styrke billedteknologi.",
-        "forbehold": "Pris og handel er kun beskrevet via mediehenvisning og ikke bekræftet af OpenAI.",
-        "emne": "openai, glass imaging, opkøb"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-14T22:49:02.592365+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/4dd932ed2d93b38f.html"
     },
     {
       "titel": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
@@ -8119,7 +8191,7 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-19T11:27:25.947537+00:00",
+    "beregnet": "2026-09-19T14:44:19.468231+00:00",
     "udvalgte": [
       "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
       "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
@@ -8129,6 +8201,7 @@
       "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
       "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
       "https://x.ai/news/grok-voice-transcribe-2",
+      "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
       "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
       "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
       "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
@@ -8226,6 +8299,6 @@
       "https://www.anthropic.com/threat-intelligence-report-september-2026",
       "https://openai.com/index/ai-policy-window"
     ],
-    "ai_vurderet": 99
+    "ai_vurderet": 100
   }
 }
