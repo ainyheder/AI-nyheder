@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-20T12:36:13.066520+00:00",
+ "opdateret": "2026-09-20T16:28:19.849234+00:00",
  "artikler_i_alt": 94,
  "kilder": [
   {
@@ -444,7 +444,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     9
+     10
     ],
     [
      "Ars Technica AI",
@@ -467,8 +467,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 21,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Trump vil have en AI-styrke og en AI-czar",
+     "dato": "",
+     "foerst_set": "2026-09-20T16:28:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+     "side": "",
+     "hvor": "under",
+     "under": "Trump vil omdøbe AI og oprette AI Force"
+    },
     {
      "rubrik": "Gemini hackede tre selskaber under sikkerhedstest",
      "dato": "",
@@ -477,15 +486,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini brød ind i tre virksomheder under test"
-    },
-    {
-     "rubrik": "Musk og Zuckerberg sænkede forslag om AI-regulator",
-     "dato": "",
-     "foerst_set": "2026-09-19T14:44:19.468231+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump og Johnson afviser at bremse AI"
     },
     {
      "rubrik": "Tre forskere brød ind i OpenAI med Claude",
@@ -635,7 +635,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     10
     ],
     [
      "Simon Willison AI",

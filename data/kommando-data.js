@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-20T12:44:59.882701+00:00",
+ "genereret": "2026-09-20T16:41:42.706930+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,7 +183,7 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-20T12:36:13.066520+00:00",
+  "opdateret": "2026-09-20T16:28:19.849234+00:00",
   "antal": 94,
   "med_billede": 71,
   "paa_dansk": 94,
@@ -198,8 +198,8 @@ window.KOMMANDO_DATA = {
   "kilder": {
    "TechCrunch AI": 37,
    "Simon Willison AI": 5,
-   "xAI News": 1,
    "Ars Technica AI": 12,
+   "xAI News": 1,
    "The Verge AI": 21,
    "Anthropic News": 2,
    "Google DeepMind": 1,
@@ -365,7 +365,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-20T12:36:13.066520+00:00",
+  "opdateret": "2026-09-20T16:28:19.849234+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -374,7 +374,7 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
    "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-   "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
+   "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
@@ -385,7 +385,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-20T12:36:12.075401+00:00",
+  "opdateret": "2026-09-20T16:28:19.156708+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -603,7 +603,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-20T12:36:13.066520+00:00",
+  "opdateret": "2026-09-20T16:28:19.849234+00:00",
   "artikler_i_alt": 94,
   "kilder": [
    {
@@ -947,8 +947,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 21,
-    "som_ekstra": 4,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "Trump vil have en AI-styrke og en AI-czar",
+      "dato": "",
+      "foerst_set": "2026-09-20T16:28:19",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "side": "",
+      "hvor": "under",
+      "under": "Trump vil omdøbe AI og oprette AI Force"
+     },
      {
       "rubrik": "Gemini hackede tre selskaber under sikkerhedstest",
       "dato": "",
@@ -957,15 +966,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini brød ind i tre virksomheder under test"
-     },
-     {
-      "rubrik": "Musk og Zuckerberg sænkede forslag om AI-regulator",
-      "dato": "",
-      "foerst_set": "2026-09-19T14:44:19.468231+00:00",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-      "side": "",
-      "hvor": "under",
-      "under": "Trump og Johnson afviser at bremse AI"
      },
      {
       "rubrik": "Tre forskere brød ind i OpenAI med Claude",
@@ -1393,12 +1393,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-20T12:44:56.031085+00:00",
+  "opdateret": "2026-09-20T16:41:35.834251+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 58,
-  "sidevisninger_i_alt": 161,
+  "besoeg_i_alt": 49,
+  "sidevisninger_i_alt": 118,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1549,24 +1549,19 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-09-20",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 20
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 56,
-    "visninger": 156
+    "besoeg": 47,
+    "visninger": 114
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
     "besoeg": 2,
     "visninger": 2
-   },
-   {
-    "sti": "/artikel/5c41fc251a24d093.html",
-    "besoeg": 0,
-    "visninger": 1
    },
    {
     "sti": "/vaerktoejer.html",
@@ -1582,31 +1577,14 @@ window.KOMMANDO_DATA = {
     "rubrik": "link\u0026gt;\u0026lt;guid",
     "kategori": "",
     "dato": ""
-   },
-   {
-    "sti": "/artikel/5c41fc251a24d093.html",
-    "besoeg": 0,
-    "visninger": 1,
-    "rubrik": "OpenAI-agenter bag hemmeligholdt RubyGems-angreb",
-    "kategori": "Samfund \u0026 etik",
-    "dato": "2026-09-12"
    }
   ],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 57
-   },
-   {
-    "fra": "m.facebook.com",
-    "besoeg": 1
+    "besoeg": 49
    }
   ],
-  "laeste_temaer": [
-   {
-    "navn": "Samfund \u0026 etik",
-    "visninger": 1
-   }
-  ]
+  "laeste_temaer": []
  }
 };
