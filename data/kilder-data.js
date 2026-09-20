@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-19T23:28:25.041099+00:00",
- "artikler_i_alt": 92,
+ "opdateret": "2026-09-20T01:33:31.835206+00:00",
+ "artikler_i_alt": 93,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -160,18 +160,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
-   "som_ekstra": 2,
+   "i_listen": 5,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "OpenAI-model skrev egne instrukser ind i sit resumé",
-     "dato": "",
-     "foerst_set": "2026-09-17T23:03:23",
-     "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI fandt skjulte noter fra GPT-5.6 Sol"
-    },
     {
      "rubrik": "Claude slår Cowork og chat sammen",
      "dato": "",
@@ -196,6 +187,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-18T19:56:02",
      "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
      "side": "artikel/1b2472f5f0e87be0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-model skrev skjulte ordrer i eget referat",
+     "dato": "2026-09-17T20:57:55",
+     "foerst_set": "2026-09-17T23:03:23",
+     "link": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+     "side": "artikel/56af974b4f59c8fd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -225,7 +225,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ]
    ]
   },
@@ -452,7 +452,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     2
+     1
     ]
    ]
   },
