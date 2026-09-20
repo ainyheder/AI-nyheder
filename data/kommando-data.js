@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-20T16:41:42.706930+00:00",
+ "genereret": "2026-09-20T19:24:03.606698+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,24 +183,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-20T16:28:19.849234+00:00",
-  "antal": 94,
-  "med_billede": 71,
-  "paa_dansk": 94,
+  "opdateret": "2026-09-20T19:01:37.066671+00:00",
+  "antal": 96,
+  "med_billede": 73,
+  "paa_dansk": 96,
   "kategorier": {
    "Lanceringer": 15,
    "Samfund \u0026 etik": 27,
-   "Politik \u0026 jura": 10,
-   "Hverdags-AI": 14,
+   "Politik \u0026 jura": 11,
+   "Hverdags-AI": 15,
    "Penge \u0026 marked": 18,
    "Forskning": 10
   },
   "kilder": {
-   "TechCrunch AI": 37,
+   "TechCrunch AI": 38,
    "Simon Willison AI": 5,
    "Ars Technica AI": 12,
    "xAI News": 1,
-   "The Verge AI": 21,
+   "The Verge AI": 22,
    "Anthropic News": 2,
    "Google DeepMind": 1,
    "MIT Tech Review AI": 4,
@@ -210,16 +210,6 @@ window.KOMMANDO_DATA = {
    "OpenAI Blog": 8
   },
   "udvalgte": [
-   {
-    "titel": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
-    "rubrik": "Jev udsender sandsynligheder i stedet for tekst",
-    "link": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
-    "side": "artikel/c787e87aad1dc64f.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-18T18:49:30+00:00",
-    "billede": "data/img/5894e7c4feed9328.webp"
-   },
    {
     "titel": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
     "rubrik": "Gemini brød ind i tre virksomheder under test",
@@ -231,17 +221,37 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/b0343d359d76c313.webp"
    },
    {
-    "titel": "Gavin Newsom is pushing for an AI kill switch",
-    "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
-    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-    "side": "artikel/a773bfa98d720806.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-18T13:04:51-04:00",
-    "billede": "data/img/7e2c5f07447fac8b.webp"
+    "titel": "AI hallucination of Chinese nuclear components almost led to US military attack",
+    "rubrik": "Opdigtet AI-rapport bragte USA tæt på krig",
+    "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+    "side": "artikel/3b74cb2107996a6e.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-18T20:26:33+00:00",
+    "billede": "data/img/0887aed550019430.webp"
+   },
+   {
+    "titel": "Vocci’s ring adds a new form factor to meeting note-taking",
+    "rubrik": "Vocci-ring optager møder med dobbelttryk",
+    "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+    "side": "artikel/4c292615ef53e08c.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-20T18:32:52+00:00",
+    "billede": "data/img/43456e293413cf6f.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Vocci’s ring adds a new form factor to meeting note-taking",
+    "rubrik": "Vocci-ring optager møder med dobbelttryk",
+    "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+    "side": "artikel/4c292615ef53e08c.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-20T18:32:52+00:00",
+    "billede": "data/img/43456e293413cf6f.webp"
+   },
    {
     "titel": "Meta’s Muse is creepy, but maybe not for the reasons you think",
     "rubrik": "Meta undskylder: Muse forklarede sig forkert",
@@ -271,6 +281,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-19T15:00:00+00:00",
     "billede": "data/img/1c0df54a30b91303.webp"
+   },
+   {
+    "titel": "The AI regulation smackdown isn’t over",
+    "rubrik": "Zuckerberg og Musk blokerer fælles AI-regulator",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+    "side": "artikel/437eaa860addb0a7.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-19T09:00:00-04:00",
+    "billede": "data/img/5dfce03c1b4dee49.webp"
    },
    {
     "titel": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
@@ -341,51 +361,31 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-18T13:04:51-04:00",
     "billede": "data/img/7e2c5f07447fac8b.webp"
-   },
-   {
-    "titel": "Google’s new ‘CC’ is an AI agent that helps families run their households",
-    "rubrik": "Googles CC bliver familieagent med egen konto",
-    "link": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
-    "side": "artikel/37655c8141e2247a.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-18T17:33:50+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "US government website used Chinese model the FBI called \"malicious\"",
-    "rubrik": "Federal Register fjernede Qwen efter opsigt",
-    "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
-    "side": "artikel/82b3e82cb7035fd3.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-18T17:28:50+00:00",
-    "billede": "data/img/6cde14079eb110cc.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-20T16:28:19.849234+00:00",
+  "opdateret": "2026-09-20T19:01:37.066671+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
    "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-   "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar"
+   "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+   "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
    "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-   "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch"
+   "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
+   "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-20T16:28:19.156708+00:00",
+  "opdateret": "2026-09-20T19:01:36.353822+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -603,8 +603,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-20T16:28:19.849234+00:00",
-  "artikler_i_alt": 94,
+  "opdateret": "2026-09-20T19:01:37.066671+00:00",
+  "artikler_i_alt": 96,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -823,7 +823,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 37,
+    "i_listen": 38,
     "som_ekstra": 9,
     "seneste": [
      {
@@ -917,20 +917,20 @@ window.KOMMANDO_DATA = {
       "under": "Microsoft vil holde AI under menneskelig kontrol"
      },
      {
+      "rubrik": "Vocci-ring optager møder med dobbelttryk",
+      "dato": "2026-09-20T18:32:52",
+      "foerst_set": "2026-09-20T19:01:37",
+      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "side": "artikel/4c292615ef53e08c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Trump vil omdøbe AI og oprette AI Force",
       "dato": "2026-09-19T19:57:47",
       "foerst_set": "2026-09-19T20:57:59",
       "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
       "side": "artikel/c0e5bbea1628d07f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Petlibro Granary 2 vejer hvor meget katten spiser",
-      "dato": "2026-09-19T15:00:00",
-      "foerst_set": "2026-09-19T18:12:03",
-      "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-      "side": "artikel/031e78fea7f65b89.html",
       "hvor": "forside",
       "under": ""
      }
@@ -946,7 +946,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 21,
+    "i_listen": 22,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1013,6 +1013,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Zuckerberg og Musk blokerer fælles AI-regulator",
+      "dato": "2026-09-19T09:00:00",
+      "foerst_set": "2026-09-19T14:44:19",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
+      "side": "artikel/437eaa860addb0a7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
       "dato": "2026-09-18T13:04:51",
       "foerst_set": "2026-09-18T19:56:02",
@@ -1045,15 +1054,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-17T20:31:59",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
       "side": "artikel/f0feb3e3451d3c61.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-      "dato": "2026-09-18T17:07:24",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-      "side": "artikel/077d8f6ca8fa2cba.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1393,7 +1393,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-20T16:41:35.834251+00:00",
+  "opdateret": "2026-09-20T19:23:53.351600+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
