@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-20T19:01:37.066671+00:00",
+  "opdateret": "2026-09-20T21:47:01.576508+00:00",
   "antal": 96,
   "artikler": [
     {
@@ -1258,6 +1258,69 @@
       "side": "artikel/82b3e82cb7035fd3.html"
     },
     {
+      "titel": "Quoting Thariq Shihipar",
+      "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+      "resume": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is a built-in mod, but you’ll be able to build custom versions of project instructions yourself as you’d like too. You can…",
+      "dato": "2026-09-18T19:09:27+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
+      "resume_da": "Fra version 2.1.277 slår Claude Code op i AGENTS.md, hvis CLAUDE.md ikke findes i mappen. Understøttelsen bygger på et nyt mod-system.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nyt filnavn træder ind i mappen",
+          "tekst": "Fra version 2.1.277 af Claude Code gælder en ny regel. Ligger der ingen CLAUDE.md-fil i en mappe, tjekker Claude Code for AGENTS.md og bruger den i stedet.\n\nCLAUDE.md er den fil, et projekt hidtil har lagt i mappen for at fortælle Claude Code, hvordan den skal arbejde. Med den nye version kan AGENTS.md træde ind i samme rolle, når den første fil ikke er der. Rækkefølgen er fast: CLAUDE.md først, AGENTS.md som det næste."
+        },
+        {
+          "overskrift": "Indbygget mod kan senere tilpasses",
+          "tekst": "Understøttelsen af AGENTS.md er ikke skrevet ind i Claude Code fra bunden. Ifølge citatet er den bygget oven på Claude Code mods, en kommende måde at tilpasse rammen omkring værktøjet.\n\nNetop denne mod er indbygget og følger med. Men citatet peger fremad: Brugerne skal selv kunne bygge egne versioner af de projektinstruktioner, de ønsker. Det er altså et løfte om en kommende mulighed, ikke en beskrivelse af noget, der allerede virker."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Citatet er gengivet af Simon Willison og offentliggjort 18. september 2026.",
+        "Kilden oplyser ikke, hvem der oprindeligt har formuleret citatet.",
+        "Mods beskrives som en kommende måde at tilpasse Claude Code."
+      ],
+      "betydning": "Hvis mod-systemet kommer som beskrevet, kan udviklere selv forme, hvordan Claude Code læser projektinstruktioner, i stedet for at være bundet til ét bestemt filnavn.",
+      "pointer": [
+        "Claude Code tjekker AGENTS.md, når CLAUDE.md mangler",
+        "Understøttelsen er bygget som en indbygget mod",
+        "Egne projektinstruktioner er varslet, ikke lanceret"
+      ],
+      "billedmotiv": "Claude's warm terracotta many-rayed asterisk centred on a solid opaque folder. A thick solid document block slides into the folder's open slot, and a small interlocking puzzle-tab piece clicks onto the folder's edge, showing the new file rule plugging into place. Solid shapes with thick, clearly separated outlines.",
+      "billedmotiv_instruks": "8aa0584c63196fa80ea0",
+      "billede": "data/img/cdd8d5402bae2e81.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Claude Code version 2.1.277 bruger AGENTS.md, når CLAUDE.md mangler, som første indbyggede mod i det kommende mods-system.",
+        "forbehold": "Kilden er en kort udtalelse fra en ansat; systemet bag funktionen er endnu ikke udgivet.",
+        "emne": "claude code"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-19T06:45:20.454271+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/1b2472f5f0e87be0.html"
+    },
+    {
       "titel": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
       "link": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
       "resume": "Huawei is accelerating the launch of its next-generation Ascend 960DT AI chip as it pushes to compete with Nvidia and close China’s AI computing gap with the U.S.",
@@ -1339,158 +1402,6 @@
       },
       "prio": 6,
       "side": "artikel/5d18789efa0799b7.html"
-    },
-    {
-      "titel": "Quoting Thariq Shihipar",
-      "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-      "resume": "We're adding support for AGENTS.md to Claude Code. Starting today in version 2.1.277, if there is no CLAUDE.md in a folder, Claude will check for and use AGENTS.md. AGENTS.md support is built off of Claude Code mods, our upcoming way to customize the Claude Code harness. This is a built-in mod, but you’ll be able to build custom versions of project instructions yourself as you’d like too. You can…",
-      "dato": "2026-09-18T19:09:27+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
-      "resume_da": "Fra version 2.1.277 slår Claude Code op i AGENTS.md, hvis CLAUDE.md ikke findes i mappen. Understøttelsen bygger på et nyt mod-system.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Nyt filnavn træder ind i mappen",
-          "tekst": "Fra version 2.1.277 af Claude Code gælder en ny regel. Ligger der ingen CLAUDE.md-fil i en mappe, tjekker Claude Code for AGENTS.md og bruger den i stedet.\n\nCLAUDE.md er den fil, et projekt hidtil har lagt i mappen for at fortælle Claude Code, hvordan den skal arbejde. Med den nye version kan AGENTS.md træde ind i samme rolle, når den første fil ikke er der. Rækkefølgen er fast: CLAUDE.md først, AGENTS.md som det næste."
-        },
-        {
-          "overskrift": "Indbygget mod kan senere tilpasses",
-          "tekst": "Understøttelsen af AGENTS.md er ikke skrevet ind i Claude Code fra bunden. Ifølge citatet er den bygget oven på Claude Code mods, en kommende måde at tilpasse rammen omkring værktøjet.\n\nNetop denne mod er indbygget og følger med. Men citatet peger fremad: Brugerne skal selv kunne bygge egne versioner af de projektinstruktioner, de ønsker. Det er altså et løfte om en kommende mulighed, ikke en beskrivelse af noget, der allerede virker."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Citatet er gengivet af Simon Willison og offentliggjort 18. september 2026.",
-        "Kilden oplyser ikke, hvem der oprindeligt har formuleret citatet.",
-        "Mods beskrives som en kommende måde at tilpasse Claude Code."
-      ],
-      "betydning": "Hvis mod-systemet kommer som beskrevet, kan udviklere selv forme, hvordan Claude Code læser projektinstruktioner, i stedet for at være bundet til ét bestemt filnavn.",
-      "pointer": [
-        "Claude Code tjekker AGENTS.md, når CLAUDE.md mangler",
-        "Understøttelsen er bygget som en indbygget mod",
-        "Egne projektinstruktioner er varslet, ikke lanceret"
-      ],
-      "billedmotiv": "Claude's warm terracotta many-rayed asterisk centred on a solid opaque folder. A thick solid document block slides into the folder's open slot, and a small interlocking puzzle-tab piece clicks onto the folder's edge, showing the new file rule plugging into place. Solid shapes with thick, clearly separated outlines.",
-      "billedmotiv_instruks": "8aa0584c63196fa80ea0",
-      "billede": "data/img/cdd8d5402bae2e81.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Claude Code version 2.1.277 bruger AGENTS.md, når CLAUDE.md mangler, som første indbyggede mod i det kommende mods-system.",
-        "forbehold": "Kilden er en kort udtalelse fra en ansat; systemet bag funktionen er endnu ikke udgivet.",
-        "emne": "claude code"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-19T06:45:20.454271+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/1b2472f5f0e87be0.html"
-    },
-    {
-      "titel": "Vocci’s ring adds a new form factor to meeting note-taking",
-      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
-      "resume": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
-      "dato": "2026-09-20T18:32:52+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "rubrik": "Vocci-ring optager møder med dobbelttryk",
-      "resume_da": "Ringen gør optagelse nem og diskret, men anmelderen er ikke imponeret af appen — og rejser privatlivsspørgsmål.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Vocci lancerer en ring til 249 dollar til mødenoter; nyt hardwareformat, ikke en ny model.",
-        "forbehold": "Pris og funktion er producentoplysninger; ingen uafhængig test.",
-        "emne": "vocci"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Dobbelttryk starter optagelsen",
-          "tekst": "Vocci har lanceret en ring, der optager møder. Et dobbelttryk på ringens knap starter optagelsen, og et nyt dobbelttryk stopper den. Et lys og en lille motor giver feedback undervejs.\n\nRingen vejer under 6 gram og har titanium på inder- og ydersiden, formentlig som coating. Ifølge producenten kan den optage i 8 timer på én opladning, og etuiet i plastik kan lade den op tre gange.\n\nMan kan også holde knappen inde og stille Vocci AI spørgsmål, men kun når appen er åben. Anmelderen fik i støjende caféer for det meste præcise transskriptioner af samtaler på over en time. Korte noter er ringen derimod ikke god til."
-        },
-        {
-          "overskrift": "Appen skuffer i testen",
-          "tekst": "Softwaren er den skuffende del, skriver anmelderen. Appen er forvirrende at bruge, og da han tog korte noter, blev de AI-genererede indsigter længere end selve noten.\n\nHver optagelse har tre dele: Chat, der er selve transskriptionen, Highlights med korte klip, man kan gemme undervejs, og Notes, der er et resumé af hele samtalen. Anmelderen kunne ikke finde en måde at starte en samtale med AI'en om en optagelse.\n\nEn fane kaldet Base samler transskriptioner, optagelser og det, man har genereret ud fra dem. Den fandt han overflødig."
-        },
-        {
-          "overskrift": "Indikatoren vender mod brugeren",
-          "tekst": "Ringen ligner et almindeligt smykke, indtil nogen opdager knappen på den. Den har en optageindikator, men den vender ind mod brugeren, og det giver bekymring om privatliv.\n\nDet anses for god skik at fortælle, at man optager en samtale, og i nogle lande og regioner er det et lovkrav. Vocci siger, at selskabet opfordrer folk til at være åbne om optagelsen, men det er måske ikke nok, mener anmelderen."
-        },
-        {
-          "overskrift": "249 dollar mod Plaud og Pocket",
-          "tekst": "Ringen koster 249 dollar, hvilket er dyrt sammenlignet med andre notetagere som Plaud eller Pocket. Prisen skyldes den lette formfaktor.\n\nVocci er ikke alene om idéen. Pebble har en Index 01 Ring, hvor man holder knappen inde for at tage en note eller påmindelse, og Stream Ring fra Sandbar bruger et kontrolfelt på toppen. Vocci har mødenoter som kernefunktion.\n\nAppen har ingen direkte integration med påmindelsesapps, og nye funktioner kommer langsomt. Selskabet oplyser, at man kan bruge Vocci's Model Context Protocol, MCP, til at forbinde ringen med andre assistenter, men muligheden dukkede først op i appen for få uger siden."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "8 timer",
-          "label": "Producentens opgivne optagetid på én opladning"
-        },
-        {
-          "tal": "Under 6 gram",
-          "label": "Ringens vægt ifølge kilden"
-        },
-        {
-          "tal": "249 dollar",
-          "label": "Pris for ringen"
-        },
-        {
-          "tal": "3 gange",
-          "label": "Så mange gange det medfølgende etui kan oplade ringen"
-        }
-      ],
-      "detaljer": [
-        "Ringen har både indikatorlys og haptisk motor, så brugeren kan mærke, at optagelsen kører.",
-        "Pebble har en Index 01 Ring, og Sandbar laver Stream Ring med et kontrolfelt på toppen.",
-        "Vocci kan ifølge selskabet forbindes til andre assistenter via Model Context Protocol, MCP.",
-        "I appen samles transskriptioner og optagelser i fanen Base."
-      ],
-      "betydning": "Ringen viser, at formfaktoren er på plads, mens softwaren halter. Om Vocci vinder frem, afhænger af, om appen og integrationerne bliver bygget færdige.",
-      "pointer": [
-        "Dobbelttryk starter og stopper optagelsen",
-        "8 timers optagetid og etui til tre opladninger",
-        "Anmelderen kritiserer appen og privatlivet"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-20T19:18:21.146228+00:00"
-      },
-      "billedmotiv": "A large brushed titanium smart ring seen face-on, with a raised round button on its outer band and two solid dark chevron arrows stacked beside it marking a quick double press; a small opaque amber indicator dot sits on the ring's inner edge, turned toward the wearer. Bold, solid, sharply outlined shapes with thick contours on a plain surface.",
-      "billedmotiv_instruks": "13f7ef6dfbcb006093f5",
-      "billede": "data/img/43456e293413cf6f.webp",
-      "side": "artikel/4c292615ef53e08c.html"
     },
     {
       "titel": "The FAA’s plan to fix air traffic? $875M worth of AI",
@@ -1647,6 +1558,95 @@
       },
       "prio": 5,
       "side": "artikel/3e9d439b35394aa7.html"
+    },
+    {
+      "titel": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "resume": "Vocci's lightweight ring costs $249, and might pose some privacy questions",
+      "dato": "2026-09-20T18:32:52+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
+      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
+      "rubrik": "Vocci-ring optager møder med dobbelttryk",
+      "resume_da": "Ringen gør optagelse nem og diskret, men anmelderen er ikke imponeret af appen — og rejser privatlivsspørgsmål.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Dobbelttryk starter optagelsen",
+          "tekst": "Vocci har lanceret en ring, der optager møder. Et dobbelttryk på ringens knap starter optagelsen, og et nyt dobbelttryk stopper den. Et lys og en lille motor giver feedback undervejs.\n\nRingen vejer under 6 gram og har titanium på inder- og ydersiden, formentlig som coating. Ifølge producenten kan den optage i 8 timer på én opladning, og etuiet i plastik kan lade den op tre gange.\n\nMan kan også holde knappen inde og stille Vocci AI spørgsmål, men kun når appen er åben. Anmelderen fik i støjende caféer for det meste præcise transskriptioner af samtaler på over en time. Korte noter er ringen derimod ikke god til."
+        },
+        {
+          "overskrift": "Appen skuffer i testen",
+          "tekst": "Softwaren er den skuffende del, skriver anmelderen. Appen er forvirrende at bruge, og da han tog korte noter, blev de AI-genererede indsigter længere end selve noten.\n\nHver optagelse har tre dele: Chat, der er selve transskriptionen, Highlights med korte klip, man kan gemme undervejs, og Notes, der er et resumé af hele samtalen. Anmelderen kunne ikke finde en måde at starte en samtale med AI'en om en optagelse.\n\nEn fane kaldet Base samler transskriptioner, optagelser og det, man har genereret ud fra dem. Den fandt han overflødig."
+        },
+        {
+          "overskrift": "Indikatoren vender mod brugeren",
+          "tekst": "Ringen ligner et almindeligt smykke, indtil nogen opdager knappen på den. Den har en optageindikator, men den vender ind mod brugeren, og det giver bekymring om privatliv.\n\nDet anses for god skik at fortælle, at man optager en samtale, og i nogle lande og regioner er det et lovkrav. Vocci siger, at selskabet opfordrer folk til at være åbne om optagelsen, men det er måske ikke nok, mener anmelderen."
+        },
+        {
+          "overskrift": "249 dollar mod Plaud og Pocket",
+          "tekst": "Ringen koster 249 dollar, hvilket er dyrt sammenlignet med andre notetagere som Plaud eller Pocket. Prisen skyldes den lette formfaktor.\n\nVocci er ikke alene om idéen. Pebble har en Index 01 Ring, hvor man holder knappen inde for at tage en note eller påmindelse, og Stream Ring fra Sandbar bruger et kontrolfelt på toppen. Vocci har mødenoter som kernefunktion.\n\nAppen har ingen direkte integration med påmindelsesapps, og nye funktioner kommer langsomt. Selskabet oplyser, at man kan bruge Vocci's Model Context Protocol, MCP, til at forbinde ringen med andre assistenter, men muligheden dukkede først op i appen for få uger siden."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "8 timer",
+          "label": "Producentens opgivne optagetid på én opladning"
+        },
+        {
+          "tal": "Under 6 gram",
+          "label": "Ringens vægt ifølge kilden"
+        },
+        {
+          "tal": "249 dollar",
+          "label": "Pris for ringen"
+        },
+        {
+          "tal": "3 gange",
+          "label": "Så mange gange det medfølgende etui kan oplade ringen"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Ringen har både indikatorlys og haptisk motor, så brugeren kan mærke, at optagelsen kører.",
+        "Pebble har en Index 01 Ring, og Sandbar laver Stream Ring med et kontrolfelt på toppen.",
+        "Vocci kan ifølge selskabet forbindes til andre assistenter via Model Context Protocol, MCP.",
+        "I appen samles transskriptioner og optagelser i fanen Base."
+      ],
+      "betydning": "Ringen viser, at formfaktoren er på plads, mens softwaren halter. Om Vocci vinder frem, afhænger af, om appen og integrationerne bliver bygget færdige.",
+      "pointer": [
+        "Dobbelttryk starter og stopper optagelsen",
+        "8 timers optagetid og etui til tre opladninger",
+        "Anmelderen kritiserer appen og privatlivet"
+      ],
+      "billedmotiv": "A large brushed titanium smart ring seen face-on, with a raised round button on its outer band and two solid dark chevron arrows stacked beside it marking a quick double press; a small opaque amber indicator dot sits on the ring's inner edge, turned toward the wearer. Bold, solid, sharply outlined shapes with thick contours on a plain surface.",
+      "billedmotiv_instruks": "13f7ef6dfbcb006093f5",
+      "billede": "data/img/43456e293413cf6f.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Vocci lancerer en ring til 249 dollar til mødenoter; nyt hardwareformat, ikke en ny model.",
+        "forbehold": "Pris og funktion er producentoplysninger; ingen uafhængig test.",
+        "emne": "vocci"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-20T19:18:21.146228+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/4c292615ef53e08c.html"
     },
     {
       "titel": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
@@ -2059,24 +2059,7 @@
       "eget_foerst_set": "2026-09-19T14:44:19.468231+00:00",
       "rubrik": "Zuckerberg og Musk blokerer fælles AI-regulator",
       "resume_da": "Amodei og Altman syntes at bakke op om regulering. Nu er forslaget om en uafhængig AI-regulator stoppet, og Trump kalder sikkerhedskrisen en \"hoax\".",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic-topchef Dario Amodei foreslår en tre-trins plan mod AI-udviklingen, bl.a. eksterne evaluatorer i laboratorierne.",
-        "forbehold": "Referat af en verserende debat, ikke en vedtaget beslutning eller aftale.",
-        "emne": "ai-regulering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Anthropic foreslår at bremse i tre trin",
@@ -2095,14 +2078,13 @@
           "tekst": "OpenAI presser stadig på. \"Vinduet for AI-politik står åbent, med voksende tværpolitisk støtte til obligatoriske nationale sikkerhedsstandarder for frontlinje-AI,\" siger Chris Lehane, OpenAIs chef for globale anliggender, til The Verge.\n\nHan opfordrer Kongressen til at omsætte momentum til en ramme, der styrker sikkerheden og holder USA foran i AI."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "3 trin",
           "label": "Amodeis forslag: uafhængige evaluatorer i laboratorierne, koordinering i branchen og internationale aftaler"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Safe Superintelligence, SpaceX og Google svarede ikke The Verge; Thinking Machines Lab afviste at kommentere.",
         "Anthropic afviste at kommentere; Amodei skriver, at selskabet altid har talt for velovervejet AI-regulering.",
@@ -2115,13 +2097,103 @@
         "Zuckerberg, Musk og Huang blokerede brancheregulator",
         "Trump kalder AI-frygt en hoax"
       ],
+      "billede": "data/img/5dfce03c1b4dee49.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic-topchef Dario Amodei foreslår en tre-trins plan mod AI-udviklingen, bl.a. eksterne evaluatorer i laboratorierne.",
+        "forbehold": "Referat af en verserende debat, ikke en vedtaget beslutning eller aftale.",
+        "emne": "ai-regulering"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-20T19:17:07.255586+00:00"
       },
-      "billede": "data/img/5dfce03c1b4dee49.webp",
+      "prio": 4,
       "side": "artikel/437eaa860addb0a7.html"
+    },
+    {
+      "titel": "Anthropic is operating a lab that conducts biology experiments",
+      "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+      "resume": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
+      "dato": "2026-09-18T23:13:31+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-19T01:31:11.145974+00:00",
+      "eget_foerst_set": "2026-09-19T01:31:11.145974+00:00",
+      "rubrik": "Anthropic lader AI-modeller lave biologiforsøg",
+      "resume_da": "Selskabet bekræfter et vådt laboratorium i Bay Area, hvor modellerne testes i fysiske forsøg – men fokus er grundforskning, ikke lægemidler.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Anthropics modeller skal testes i virkeligheden",
+          "tekst": "Anthropic har bekræftet over for TechCrunch, at selskabet driver et vådt laboratorium i Bay Area. Et vådt laboratorium er et biologilaboratorium, hvor der arbejdes med flydende prøver, celler og fysisk udstyr – i modsætning til beregninger på en computer.\n\nHer kan Anthropic bruge sine egne AI-modeller til at gennemføre fysiske eksperimenter. Ifølge Eric Kauderer-Abrams, Anthropics chef for life sciences, er virkeligt laboratoriearbejde stadig den endelige test, når man arbejder med biologi. Det sagde han til Reuters, og han fastslog, at det gør selskabet i dag."
+        },
+        {
+          "overskrift": "Grundforskning, ikke lægemidler",
+          "tekst": "Anthropic vil ikke oplyse, hvad laboratoriet arbejder på. Selskabet siger dog, at hovedfokus er grundforskning og ikke lægemiddeludvikling.\n\nDet er et bevidst signal. Anthropic vil ikke give indtryk af at konkurrere med medicinalindustrien, hvor det har mange store kunder og partnere. Selskabet har netop annonceret en aftale med Novo Nordisk om fælles lægemiddeludvikling, og det har tidligere fået kritik for at lancere produkter, som kunderne opfattede som konkurrenter."
+        },
+        {
+          "overskrift": "Verificerede forskere får adgang",
+          "tekst": "Samme uge lancerede Anthropic et Life Sciences Verification Program, der giver verificerede bioforskere adgang til selskabets mest kraftfulde modeller.\n\nAnthropic har også offentliggjort rapporter om sit arbejde med at støtte lægemiddeludvikling, blandt andet om hurtigere proteindesign og forbedret biomolekylær modellering. I april købte selskabet desuden AI-biotekselskabet Coefficient Bio."
+        },
+        {
+          "overskrift": "Løfter og advarsler side om side",
+          "tekst": "Baggrunden er et markant spændingsfelt. Dario Amodei, Anthropics CEO, vurderede for nylig, at AI kan kurere de fleste store sygdomme inden for 5–10 år. Samtidig har han gentagne gange kaldt bioterrorisme for en af AI's største risici og opfordret branchen til selvregulering og langsommere udvikling.\n\nAnthropics egen alignment-chef har vurderet sandsynligheden for, at AI udsletter menneskeheden inden for ti år, til over 10 %. Forskeren Jacob Coxon forlod selskabet med en advarsel om, at de, der bygger AI, oprigtigt tror, at den kan slå os alle ihjel inden årtiets udgang. Investor Chamath Palihapitiya bemærkede tørt på X, at gruppen bag budskaber som \"We're All Going To Die\" nu bygger et vådt laboratorium i SF, og at han ikke anbefaler det."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Laboratoriet ligger i Bay Area og fungerer som et almindeligt bioteklaboratorium.",
+        "Anthropic udfører selv forskning der og arbejder samtidig med eksterne partnere.",
+        "Selskabet offentliggjorde rapporter om proteindesign og biomolekylær modellering.",
+        "Amodei opfordrede i et opslag sidste weekend branchen til selvregulering."
+      ],
+      "betydning": "Hvis AI skal bruges til biologi, bliver fysiske forsøg det sted, hvor modellernes teorier holdes op mod virkeligheden. Laboratoriet bliver dermed et teststed for løftet om AI som medicinsk gennembrud.",
+      "pointer": [
+        "Vådt laboratorium betyder fysiske celle- og væskeforsøg",
+        "Anthropic vil ikke konkurrere med pharma-kunder",
+        "Fokus er grundforskning, ikke lægemidler"
+      ],
+      "billedmotiv": "Claude's warm terracotta many-rayed asterisk, large on the front of a solid opaque ceramic lab flask. A thick solid pipette lowers a droplet toward a solid petri dish holding raised round colonies, with a second sealed dish behind. Every shape is solid, opaque and sharply outlined.",
+      "billedmotiv_instruks": "770e7ec3b3e01fc5e482",
+      "billede": "data/img/f95864e749d5fa8a.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic driver ifølge TechCrunch et laboratorium med biologieksperimenter, mens selskabets forskere advarer om AI-risici.",
+        "forbehold": "Kort materiale uden metode, resultater eller navn på laboratoriet.",
+        "emne": "anthropic biolaboratorium"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-19T06:43:43.541472+00:00"
+      },
+      "prio": 5,
+      "side": "artikel/dcced75f93e2d70f.html"
     },
     {
       "titel": "LLMs respond differently to harmful prompts when AI watermarking is used",
@@ -2206,78 +2278,6 @@
       "side": "artikel/35cb1838bc98373f.html"
     },
     {
-      "titel": "Anthropic is operating a lab that conducts biology experiments",
-      "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
-      "resume": "AI leaders have been promising that AI is the key to curing human disease. Anthropic researchers have also been warning that AI might kill us all.",
-      "dato": "2026-09-18T23:13:31+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-19T01:31:11.145974+00:00",
-      "eget_foerst_set": "2026-09-19T01:31:11.145974+00:00",
-      "rubrik": "Anthropic lader AI-modeller lave biologiforsøg",
-      "resume_da": "Selskabet bekræfter et vådt laboratorium i Bay Area, hvor modellerne testes i fysiske forsøg – men fokus er grundforskning, ikke lægemidler.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Anthropics modeller skal testes i virkeligheden",
-          "tekst": "Anthropic har bekræftet over for TechCrunch, at selskabet driver et vådt laboratorium i Bay Area. Et vådt laboratorium er et biologilaboratorium, hvor der arbejdes med flydende prøver, celler og fysisk udstyr – i modsætning til beregninger på en computer.\n\nHer kan Anthropic bruge sine egne AI-modeller til at gennemføre fysiske eksperimenter. Ifølge Eric Kauderer-Abrams, Anthropics chef for life sciences, er virkeligt laboratoriearbejde stadig den endelige test, når man arbejder med biologi. Det sagde han til Reuters, og han fastslog, at det gør selskabet i dag."
-        },
-        {
-          "overskrift": "Grundforskning, ikke lægemidler",
-          "tekst": "Anthropic vil ikke oplyse, hvad laboratoriet arbejder på. Selskabet siger dog, at hovedfokus er grundforskning og ikke lægemiddeludvikling.\n\nDet er et bevidst signal. Anthropic vil ikke give indtryk af at konkurrere med medicinalindustrien, hvor det har mange store kunder og partnere. Selskabet har netop annonceret en aftale med Novo Nordisk om fælles lægemiddeludvikling, og det har tidligere fået kritik for at lancere produkter, som kunderne opfattede som konkurrenter."
-        },
-        {
-          "overskrift": "Verificerede forskere får adgang",
-          "tekst": "Samme uge lancerede Anthropic et Life Sciences Verification Program, der giver verificerede bioforskere adgang til selskabets mest kraftfulde modeller.\n\nAnthropic har også offentliggjort rapporter om sit arbejde med at støtte lægemiddeludvikling, blandt andet om hurtigere proteindesign og forbedret biomolekylær modellering. I april købte selskabet desuden AI-biotekselskabet Coefficient Bio."
-        },
-        {
-          "overskrift": "Løfter og advarsler side om side",
-          "tekst": "Baggrunden er et markant spændingsfelt. Dario Amodei, Anthropics CEO, vurderede for nylig, at AI kan kurere de fleste store sygdomme inden for 5–10 år. Samtidig har han gentagne gange kaldt bioterrorisme for en af AI's største risici og opfordret branchen til selvregulering og langsommere udvikling.\n\nAnthropics egen alignment-chef har vurderet sandsynligheden for, at AI udsletter menneskeheden inden for ti år, til over 10 %. Forskeren Jacob Coxon forlod selskabet med en advarsel om, at de, der bygger AI, oprigtigt tror, at den kan slå os alle ihjel inden årtiets udgang. Investor Chamath Palihapitiya bemærkede tørt på X, at gruppen bag budskaber som \"We're All Going To Die\" nu bygger et vådt laboratorium i SF, og at han ikke anbefaler det."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Laboratoriet ligger i Bay Area og fungerer som et almindeligt bioteklaboratorium.",
-        "Anthropic udfører selv forskning der og arbejder samtidig med eksterne partnere.",
-        "Selskabet offentliggjorde rapporter om proteindesign og biomolekylær modellering.",
-        "Amodei opfordrede i et opslag sidste weekend branchen til selvregulering."
-      ],
-      "betydning": "Hvis AI skal bruges til biologi, bliver fysiske forsøg det sted, hvor modellernes teorier holdes op mod virkeligheden. Laboratoriet bliver dermed et teststed for løftet om AI som medicinsk gennembrud.",
-      "pointer": [
-        "Vådt laboratorium betyder fysiske celle- og væskeforsøg",
-        "Anthropic vil ikke konkurrere med pharma-kunder",
-        "Fokus er grundforskning, ikke lægemidler"
-      ],
-      "billedmotiv": "Claude's warm terracotta many-rayed asterisk, large on the front of a solid opaque ceramic lab flask. A thick solid pipette lowers a droplet toward a solid petri dish holding raised round colonies, with a second sealed dish behind. Every shape is solid, opaque and sharply outlined.",
-      "billedmotiv_instruks": "770e7ec3b3e01fc5e482",
-      "billede": "data/img/f95864e749d5fa8a.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic driver ifølge TechCrunch et laboratorium med biologieksperimenter, mens selskabets forskere advarer om AI-risici.",
-        "forbehold": "Kort materiale uden metode, resultater eller navn på laboratoriet.",
-        "emne": "anthropic biolaboratorium"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-19T06:43:43.541472+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/dcced75f93e2d70f.html"
-    },
-    {
       "titel": "Base Labs launches an open-weight AI safety partnership with Hugging Face and Goodfire",
       "link": "https://techcrunch.com/2026/09/17/base-labs-launches-an-open-weight-ai-safety-partnership-with-hugging-face-and-goodfire/",
       "resume": "Base Labs, the research group Baseten spun up earlier this year, will develop and publish methods for training and monitoring open models.",
@@ -2352,6 +2352,78 @@
       "prio": 5,
       "billede": "data/img/3c3aac390541e086.webp",
       "side": "artikel/80716b9be3559651.html"
+    },
+    {
+      "titel": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "resume": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 bans executive branch officials from signing nondisclosure agreements […]",
+      "dato": "2026-09-18T14:29:17-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
+      "resume_da": "Executive Order 22 fjerner hemmeligholdelsesaftaler, kræver støjregler og nedsætter en AI-taskforce i delstaten med verdens datacenterhovedstad.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Hemmelige aftaler bliver forbudt",
+          "tekst": "Guvernør Abigail Spanberger har underskrevet Executive Order 22 i Virginia. Ordren forbyder ansatte i delstatens regering at indgå hemmeligholdelsesaftaler om datacenterprojekter.\n\nOrdren kræver også hurtigere regler for støj fra datacentre og en gennemgang af de backupgeneratorer, anlæggene bruger. Virginia er ifølge kilden allerede hjemsted for verdens datacenterhovedstad."
+        },
+        {
+          "overskrift": "Taskforce skal kortlægge AI-skader",
+          "tekst": "Ordren nedsætter samtidig en AI-taskforce. Den skal vurdere, hvordan delstaten kan håndtere risikoen for, at borgere mister deres arbejde, og problemer med beskyttelse af data.\n\nTaskforcen skal også finde ud af, hvordan eksisterende lovgivning kan bruges på skader, som AI forårsager."
+        },
+        {
+          "overskrift": "Slut med by-right godkendelser",
+          "tekst": "Spanberger præsenterede desuden et \"Data Center Accountability Framework\" med flere tiltag. Blandt dem at afskaffe såkaldt by-right godkendelse, hvor udviklere kunne bygge på bestemte arealer uden yderligere tilladelser. Loudoun County havde den ordning i mange år.\n\nRammen lægger også op til at fjerne nogle statslige tilskud, opstille miljøgrænser og beskytte borgere mod højere energipriser, som datacentre kan føre med sig."
+        },
+        {
+          "overskrift": "Flere delstater griber ind",
+          "tekst": "Samme fredag udstedte Californiens guvernør, Gavin Newsom, en ordre, der samler eksperter om AI-sikkerhed. Tidligere har guvernør Kathy Hochul i New York og guvernør Greg Abbott i Texas taget skridt mod hurtig datacenterudbygning.\n\nBaggrunden er ifølge kilden, at Kongressen og præsident Donald Trump har været langsomme eller modvillige over for store ændringer. Chris Miller fra Piedmont Environmental Council mener dog ikke, ordren gør nok: Den handler mest om nye datacentre og ikke om dem, der allerede er bygget eller på vej."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Ordren gælder ansatte i delstatens regering, ikke private udviklere.",
+        "Taskforcen skal vurdere arbejdspladser og databeskyttelse.",
+        "Californiens ordre samme fredag samler eksperter om AI-sikkerhed.",
+        "Piedmont Environmental Council har ønsket et moratorium for ny udbygning."
+      ],
+      "betydning": "Ordren kan give lokalsamfund større indflydelse på, hvor og hvordan datacentre bygges i Virginia, og bremse godkendelser. Den viser, at delstater handler politisk, mens Kongressen ikke gør.",
+      "pointer": [
+        "Executive Order 22 forbyder hemmeligholdelsesaftaler om datacentre.",
+        "Ny AI-taskforce skal vurdere arbejdspladser og databeskyttelse.",
+        "Ordren dækker ikke datacentre, der allerede er bygget."
+      ],
+      "billedmotiv": "A blocky opaque data-centre building with rows of thick server cabinets, tall ventilation louvres and two rooftop cooling units, seen frontally. A heavy padlock beside it carries a bold diagonal bar drawn across its body, and a thick document sheet with a torn corner hovers next to the padlock.",
+      "billedmotiv_instruks": "51b2866884cec6f06416",
+      "billede": "data/img/f9cfdd45cddd4426.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Guvernør Spanberger nedsætter en AI-taskforce og vil give lokalsamfund mere indflydelse på datacenterudbygning; fortrolighedsaftaler forbydes.",
+        "forbehold": "Bekendtgørelsens konkrete retsvirkning og tidsplan fremgår ikke af materialet.",
+        "emne": "virginia og datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-18T23:06:09.190759+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/115cada6134fe4b1.html"
     },
     {
       "titel": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
@@ -2529,78 +2601,6 @@
       "side": "artikel/354af6386954314c.html"
     },
     {
-      "titel": "Virginia governor creates an AI task force and moves to restrain data centers",
-      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
-      "resume": "Virginia Gov. Abigail Spanberger ordered the state government to take steps that could empower local communities to have a larger say in data center development and slow down approvals in a state that is already home to the data center capital of the world. Executive Order 22 bans executive branch officials from signing nondisclosure agreements […]",
-      "dato": "2026-09-18T14:29:17-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
-      "resume_da": "Executive Order 22 fjerner hemmeligholdelsesaftaler, kræver støjregler og nedsætter en AI-taskforce i delstaten med verdens datacenterhovedstad.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Hemmelige aftaler bliver forbudt",
-          "tekst": "Guvernør Abigail Spanberger har underskrevet Executive Order 22 i Virginia. Ordren forbyder ansatte i delstatens regering at indgå hemmeligholdelsesaftaler om datacenterprojekter.\n\nOrdren kræver også hurtigere regler for støj fra datacentre og en gennemgang af de backupgeneratorer, anlæggene bruger. Virginia er ifølge kilden allerede hjemsted for verdens datacenterhovedstad."
-        },
-        {
-          "overskrift": "Taskforce skal kortlægge AI-skader",
-          "tekst": "Ordren nedsætter samtidig en AI-taskforce. Den skal vurdere, hvordan delstaten kan håndtere risikoen for, at borgere mister deres arbejde, og problemer med beskyttelse af data.\n\nTaskforcen skal også finde ud af, hvordan eksisterende lovgivning kan bruges på skader, som AI forårsager."
-        },
-        {
-          "overskrift": "Slut med by-right godkendelser",
-          "tekst": "Spanberger præsenterede desuden et \"Data Center Accountability Framework\" med flere tiltag. Blandt dem at afskaffe såkaldt by-right godkendelse, hvor udviklere kunne bygge på bestemte arealer uden yderligere tilladelser. Loudoun County havde den ordning i mange år.\n\nRammen lægger også op til at fjerne nogle statslige tilskud, opstille miljøgrænser og beskytte borgere mod højere energipriser, som datacentre kan føre med sig."
-        },
-        {
-          "overskrift": "Flere delstater griber ind",
-          "tekst": "Samme fredag udstedte Californiens guvernør, Gavin Newsom, en ordre, der samler eksperter om AI-sikkerhed. Tidligere har guvernør Kathy Hochul i New York og guvernør Greg Abbott i Texas taget skridt mod hurtig datacenterudbygning.\n\nBaggrunden er ifølge kilden, at Kongressen og præsident Donald Trump har været langsomme eller modvillige over for store ændringer. Chris Miller fra Piedmont Environmental Council mener dog ikke, ordren gør nok: Den handler mest om nye datacentre og ikke om dem, der allerede er bygget eller på vej."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Ordren gælder ansatte i delstatens regering, ikke private udviklere.",
-        "Taskforcen skal vurdere arbejdspladser og databeskyttelse.",
-        "Californiens ordre samme fredag samler eksperter om AI-sikkerhed.",
-        "Piedmont Environmental Council har ønsket et moratorium for ny udbygning."
-      ],
-      "betydning": "Ordren kan give lokalsamfund større indflydelse på, hvor og hvordan datacentre bygges i Virginia, og bremse godkendelser. Den viser, at delstater handler politisk, mens Kongressen ikke gør.",
-      "pointer": [
-        "Executive Order 22 forbyder hemmeligholdelsesaftaler om datacentre.",
-        "Ny AI-taskforce skal vurdere arbejdspladser og databeskyttelse.",
-        "Ordren dækker ikke datacentre, der allerede er bygget."
-      ],
-      "billedmotiv": "A blocky opaque data-centre building with rows of thick server cabinets, tall ventilation louvres and two rooftop cooling units, seen frontally. A heavy padlock beside it carries a bold diagonal bar drawn across its body, and a thick document sheet with a torn corner hovers next to the padlock.",
-      "billedmotiv_instruks": "51b2866884cec6f06416",
-      "billede": "data/img/f9cfdd45cddd4426.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Guvernør Spanberger nedsætter en AI-taskforce og vil give lokalsamfund mere indflydelse på datacenterudbygning; fortrolighedsaftaler forbydes.",
-        "forbehold": "Bekendtgørelsens konkrete retsvirkning og tidsplan fremgår ikke af materialet.",
-        "emne": "virginia og datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-18T23:06:09.190759+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/115cada6134fe4b1.html"
-    },
-    {
       "titel": "Manus seeks $4B valuation in new $500M fundraise as it resumes independent ops",
       "link": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
       "resume": "Manus, which earlier this year had to break off a merger with Meta, is in discussions to raise $500M at a $4B valuation.",
@@ -2690,6 +2690,77 @@
       "side": "artikel/ecfc994dbcabff84.html"
     },
     {
+      "titel": "Flash floods can strike without warning — this new technology could change that",
+      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+      "resume": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is over there, […]",
+      "dato": "2026-09-18T11:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-18T11:46:00.191551+00:00",
+      "eget_foerst_set": "2026-09-18T11:46:00.191551+00:00",
+      "rubrik": "TACLS skal varsle om flash floods tidligere",
+      "resume_da": "Ny software kombinerer satellitdata og machine learning for at give meteorologer mere tid. Indtil videre virker den kun i Californien.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Softwaren skal finde vandet først",
+          "tekst": "En ny software ved navn TACLS — Transient Artifact and Continuous Learning System — kombinerer satellitdata med machine learning, hvor et program finder mønstre i store datamængder. Den skal pege på steder, hvor regn kan udvikle sig til en farlig flash flood og give varsler tidligere.\n\nDet amerikanske vejrvarslingsvæsen National Weather Service, NWS, skal bruge systemet. I dag virker det kun i Californien, men ifølge projektets bagmænd skal det snart være tilgængeligt for alle NWS' kontorer.\n\nForskere fra University of California San Diego, NWS og NASA står bag. NASAs Earth Science Technology Office har finansieret projektet."
+        },
+        {
+          "overskrift": "GNSS-nettet peger på jordskælv i dag",
+          "tekst": "TACLS hviler på GNSS, et globalt netværk af satellitter, som primært bruges til at forudsige jordskælv. Det fortæller Yehuda Bock, der leder projektet og er forskningsgeodæt ved Scripps Institution of Oceanography under University of California San Diego.\n\nNWS' nuværende værktøjer har begrænsninger, siger han. Satellitterne er mere detaljerede over havene end over land, og at følge regnen, mens den falder, giver for lidt forspring: Når nedbøren først er der, er man allerede inde i begivenheden.\n\nJayme Laber, senior hydrolog ved NWS' kontor i Oxnard, peger på en anden svaghed: Ørkner og tyndtbefolkede områder har færre regnmålere."
+        },
+        {
+          "overskrift": "Varslerne har tre niveauer",
+          "tekst": "NWS' omkring 122 vejrvarslingskontorer vurderer i dag situationen ud fra regn- og vandløbsmålere, satellitter og radar. De har også udregnet grænser for, hvor meget regn jorden og skråningerne i et bestemt område kan tåle, før vandet stiger farligt.\n\nVarslerne findes i tre trin. Et watch sendes 12 til 48 timer i forvejen og betyder, at en flash flood kan være på vej. En advisory dækker generende forhold, der ikke truer liv eller ejendom. En warning er den alvorligste, fordi den varsler om fare for liv."
+        },
+        {
+          "overskrift": "Varslerne kom, efter byen var oversvømmet",
+          "tekst": "Om morgenen den 9. juni arbejdede Laura Lin hjemmefra i den lille by Lanesville i det sydlige Indiana. Midt i et møde på skærmen så hun træstykker fra sin lade flyde rundt i haven.\n\nByen fik over 8 tommer regn på få timer samme dag. Vandet var væk igen et par timer senere. Lin og familien nåede i sikkerhed hos en nabo, men beskeden om at komme op på taget nåede først frem, efter at byens beboere allerede stod i vand, fortæller hun.\n\nOversvømmelser er den næstmest dødbringende type vejrbegivenhed i USA og den mest dødbringende på verdensplan."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "NWS kalder en oversvømmelse for en flash flood, hvis den sker på under seks timer.",
+        "6 tommer hurtigt strømmende vand kan vælte en voksen; 12 tommer kan løfte en bil.",
+        "2 fod vand kan flytte større køretøjer som lastbiler og SUVs."
+      ],
+      "betydning": "Ivory Small fra NWS vurderer, at TACLS kan være forskellen mellem at nå at advare folk og ikke at gøre det — og dermed mellem at redde liv eller ej.",
+      "pointer": [
+        "TACLS kombinerer satellitdata og machine learning",
+        "Virker kun i Californien, men er på vej til alle NWS-kontorer",
+        "Bygger på GNSS-satellitter, der også forudsiger jordskælv"
+      ],
+      "billedmotiv": "A solid weather satellite with four solar panels scans a heavy rain cloud with a broad, opaque beam. The beam feeds a compact solid data grid of thick connected nodes, which points to a rising blue flood surge and a bold yellow warning triangle: an earlier flash flood alert.",
+      "billedmotiv_instruks": "bbd8165f9bcd4b89b681",
+      "billede": "data/img/85f6d90531291a38.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny teknologi skal varsle pludselige oversvømmelser ved hjælp af satellitdata og maskinlæring, men artiklen er anekdotestyret.",
+        "forbehold": "Materialet er afkortet; metode, præcision og uafhængig afprøvning fremgår ikke.",
+        "emne": "oversvømmelsesvarsling"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-18T11:50:50.284323+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/cc9d12fe9e378865.html"
+    },
+    {
       "titel": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
       "link": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
       "resume": "A new coalition that includes Google, Nvidia, Anthropic, and Emerald AI wants to find 100 GW of grid capacity for new data centers.",
@@ -2771,6 +2842,74 @@
       },
       "prio": 5,
       "side": "artikel/3451114a79019509.html"
+    },
+    {
+      "titel": "Meta’s Muse is creepy, but maybe not for the reasons you think",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+      "resume": "Meta's Muse is apparently an effective AI assistant, but one that's a little creepy. Part of that is because of its new Mac app, which can access Messages, Calendar, and Notes. But for all its smarts, Muse doesn't actually know how to describe itself. Jason Aten, a contributing editor at Inc Magazine, posted on Threads […]",
+      "dato": "2026-09-19T16:44:40-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-19T23:28:25.041099+00:00",
+      "eget_foerst_set": "2026-09-19T23:28:25.041099+00:00",
+      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
+      "resume_da": "Metas AI-assistent Muse gav en forkert forklaring om, hvordan den fik adgang til en brugers beskeder.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Muse spurgte ind til private beskeder",
+          "tekst": "Jason Aten, contributing editor ved Inc Magazine, lagde skærmbilleder på Threads af en samtale med Metas AI-assistent Muse. Assistenten stillede ham spørgsmål om en samtale, han havde haft i Messages. Aten siger, at han ikke havde givet Muse adgang til sine beskeder.\n\nDa han spurgte, hvordan den vidste det, svarede Muse, at den havde set notifikationsforhåndsvisninger, ikke hans beskedhistorik. Presset på, hvordan de forhåndsvisninger nåede frem, kunne assistenten ikke forklare. Den kunne ikke redegøre for den præcise sammenhæng."
+        },
+        {
+          "overskrift": "Meta: Den overvåger ikke dine notifikationer",
+          "tekst": "Under opslaget forklarede David Singleton fra Meta Superintelligence Labs, hvad der foregår. Ifølge ham **overvåger Muse ikke notifikationer på din Mac**, men synkroniserer først data fra Messages, efter brugeren selv har slået adgangen til.\n\nFunktionerne er opt-in, altså noget man aktivt skal sige ja til, og Mac-appen skal blandt andet have fuld diskadgang for at kunne læse beskeder.\n\nSingleton indrømmede samtidig, at Muse ikke forstod sit eget svar. Da den talte om enhedsnotifikationer, forklarede den en funktion forkert. Det er vores ansvar, skrev han, og undskyldte."
+        },
+        {
+          "overskrift": "Problemet var Muses eget svar",
+          "tekst": "Den nye Mac-app kan få adgang til Messages, Calendar og Notes, så Muse kan hjælpe med beskeder, aftaler og noter. Netop den brede adgang er en del af forklaringen på, at assistenten kan virke uhyggelig.\n\nMen ifølge Metas redegørelse var den mest opsigtsvækkende fejl ikke, at Muse læste noget, den ikke måtte. Det var, at den ikke kunne redegøre for sig selv. The Verge bemærker, at chatbots generelt ikke fortæller deres hemmeligheder, men snarere siger, hvad de tror, du vil høre."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Muse er Metas AI-assistent med en ny Mac-app.",
+        "Appen kan få adgang til Messages, Calendar og Notes.",
+        "Jason Aten er contributing editor ved Inc Magazine.",
+        "Meta kalder adgangen opt-in: brugeren skal selv slå den til."
+      ],
+      "betydning": "Meta siger, at selskabet arbejder på at gøre Muse bedre til at forklare sine egne funktioner. Det kan mindske risikoen for, at assistenten vrøvler om, hvad den har adgang til.",
+      "pointer": [
+        "Muse hentede ikke beskedhistorik ifølge Meta",
+        "Assistenten gav selv en forkert forklaring",
+        "Adgangen kræver, at brugeren selv siger ja"
+      ],
+      "billedmotiv": "An opaque rounded chat bubble with a small tail, bearing Meta's blue infinity-loop symbol large and front-facing across its front, sits beside a solid opaque notification bell badge. A thick, blunt-ended tangled loop of the same blue curls out of the badge back toward the bubble, showing the assistant's muddled self-explanation. Flat, sharp-edged, clearly separated shapes.",
+      "billedmotiv_instruks": "4bc7ace80f09452d3126",
+      "billede": "data/img/1cddebe9fbeda1d1.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Verge omtaler Metas assistent Muse og dens nye Mac-app, der læser Beskeder, Kalender og Noter; Muse kan ikke beskrive sig selv.",
+        "forbehold": "Ingen officiel lancering af en ny model eller uafhængig test fremgår af materialet.",
+        "emne": "meta muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-20T12:38:42.714890+00:00"
+      },
+      "prio": 4,
+      "side": "artikel/45d620b21da13aea.html"
     },
     {
       "titel": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
@@ -3034,145 +3173,6 @@
       "historie_dato": "2026-09-16T16:30:00+00:00",
       "prio": 6,
       "side": "artikel/25ccc59e06a2349b.html"
-    },
-    {
-      "titel": "Flash floods can strike without warning — this new technology could change that",
-      "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-      "resume": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is over there, […]",
-      "dato": "2026-09-18T11:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-18T11:46:00.191551+00:00",
-      "eget_foerst_set": "2026-09-18T11:46:00.191551+00:00",
-      "rubrik": "TACLS skal varsle om flash floods tidligere",
-      "resume_da": "Ny software kombinerer satellitdata og machine learning for at give meteorologer mere tid. Indtil videre virker den kun i Californien.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Softwaren skal finde vandet først",
-          "tekst": "En ny software ved navn TACLS — Transient Artifact and Continuous Learning System — kombinerer satellitdata med machine learning, hvor et program finder mønstre i store datamængder. Den skal pege på steder, hvor regn kan udvikle sig til en farlig flash flood og give varsler tidligere.\n\nDet amerikanske vejrvarslingsvæsen National Weather Service, NWS, skal bruge systemet. I dag virker det kun i Californien, men ifølge projektets bagmænd skal det snart være tilgængeligt for alle NWS' kontorer.\n\nForskere fra University of California San Diego, NWS og NASA står bag. NASAs Earth Science Technology Office har finansieret projektet."
-        },
-        {
-          "overskrift": "GNSS-nettet peger på jordskælv i dag",
-          "tekst": "TACLS hviler på GNSS, et globalt netværk af satellitter, som primært bruges til at forudsige jordskælv. Det fortæller Yehuda Bock, der leder projektet og er forskningsgeodæt ved Scripps Institution of Oceanography under University of California San Diego.\n\nNWS' nuværende værktøjer har begrænsninger, siger han. Satellitterne er mere detaljerede over havene end over land, og at følge regnen, mens den falder, giver for lidt forspring: Når nedbøren først er der, er man allerede inde i begivenheden.\n\nJayme Laber, senior hydrolog ved NWS' kontor i Oxnard, peger på en anden svaghed: Ørkner og tyndtbefolkede områder har færre regnmålere."
-        },
-        {
-          "overskrift": "Varslerne har tre niveauer",
-          "tekst": "NWS' omkring 122 vejrvarslingskontorer vurderer i dag situationen ud fra regn- og vandløbsmålere, satellitter og radar. De har også udregnet grænser for, hvor meget regn jorden og skråningerne i et bestemt område kan tåle, før vandet stiger farligt.\n\nVarslerne findes i tre trin. Et watch sendes 12 til 48 timer i forvejen og betyder, at en flash flood kan være på vej. En advisory dækker generende forhold, der ikke truer liv eller ejendom. En warning er den alvorligste, fordi den varsler om fare for liv."
-        },
-        {
-          "overskrift": "Varslerne kom, efter byen var oversvømmet",
-          "tekst": "Om morgenen den 9. juni arbejdede Laura Lin hjemmefra i den lille by Lanesville i det sydlige Indiana. Midt i et møde på skærmen så hun træstykker fra sin lade flyde rundt i haven.\n\nByen fik over 8 tommer regn på få timer samme dag. Vandet var væk igen et par timer senere. Lin og familien nåede i sikkerhed hos en nabo, men beskeden om at komme op på taget nåede først frem, efter at byens beboere allerede stod i vand, fortæller hun.\n\nOversvømmelser er den næstmest dødbringende type vejrbegivenhed i USA og den mest dødbringende på verdensplan."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "NWS kalder en oversvømmelse for en flash flood, hvis den sker på under seks timer.",
-        "6 tommer hurtigt strømmende vand kan vælte en voksen; 12 tommer kan løfte en bil.",
-        "2 fod vand kan flytte større køretøjer som lastbiler og SUVs."
-      ],
-      "betydning": "Ivory Small fra NWS vurderer, at TACLS kan være forskellen mellem at nå at advare folk og ikke at gøre det — og dermed mellem at redde liv eller ej.",
-      "pointer": [
-        "TACLS kombinerer satellitdata og machine learning",
-        "Virker kun i Californien, men er på vej til alle NWS-kontorer",
-        "Bygger på GNSS-satellitter, der også forudsiger jordskælv"
-      ],
-      "billedmotiv": "A solid weather satellite with four solar panels scans a heavy rain cloud with a broad, opaque beam. The beam feeds a compact solid data grid of thick connected nodes, which points to a rising blue flood surge and a bold yellow warning triangle: an earlier flash flood alert.",
-      "billedmotiv_instruks": "bbd8165f9bcd4b89b681",
-      "billede": "data/img/85f6d90531291a38.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ny teknologi skal varsle pludselige oversvømmelser ved hjælp af satellitdata og maskinlæring, men artiklen er anekdotestyret.",
-        "forbehold": "Materialet er afkortet; metode, præcision og uafhængig afprøvning fremgår ikke.",
-        "emne": "oversvømmelsesvarsling"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-18T11:50:50.284323+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/cc9d12fe9e378865.html"
-    },
-    {
-      "titel": "Meta’s Muse is creepy, but maybe not for the reasons you think",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
-      "resume": "Meta's Muse is apparently an effective AI assistant, but one that's a little creepy. Part of that is because of its new Mac app, which can access Messages, Calendar, and Notes. But for all its smarts, Muse doesn't actually know how to describe itself. Jason Aten, a contributing editor at Inc Magazine, posted on Threads […]",
-      "dato": "2026-09-19T16:44:40-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-19T23:28:25.041099+00:00",
-      "eget_foerst_set": "2026-09-19T23:28:25.041099+00:00",
-      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
-      "resume_da": "Metas AI-assistent Muse gav en forkert forklaring om, hvordan den fik adgang til en brugers beskeder.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Muse spurgte ind til private beskeder",
-          "tekst": "Jason Aten, contributing editor ved Inc Magazine, lagde skærmbilleder på Threads af en samtale med Metas AI-assistent Muse. Assistenten stillede ham spørgsmål om en samtale, han havde haft i Messages. Aten siger, at han ikke havde givet Muse adgang til sine beskeder.\n\nDa han spurgte, hvordan den vidste det, svarede Muse, at den havde set notifikationsforhåndsvisninger, ikke hans beskedhistorik. Presset på, hvordan de forhåndsvisninger nåede frem, kunne assistenten ikke forklare. Den kunne ikke redegøre for den præcise sammenhæng."
-        },
-        {
-          "overskrift": "Meta: Den overvåger ikke dine notifikationer",
-          "tekst": "Under opslaget forklarede David Singleton fra Meta Superintelligence Labs, hvad der foregår. Ifølge ham **overvåger Muse ikke notifikationer på din Mac**, men synkroniserer først data fra Messages, efter brugeren selv har slået adgangen til.\n\nFunktionerne er opt-in, altså noget man aktivt skal sige ja til, og Mac-appen skal blandt andet have fuld diskadgang for at kunne læse beskeder.\n\nSingleton indrømmede samtidig, at Muse ikke forstod sit eget svar. Da den talte om enhedsnotifikationer, forklarede den en funktion forkert. Det er vores ansvar, skrev han, og undskyldte."
-        },
-        {
-          "overskrift": "Problemet var Muses eget svar",
-          "tekst": "Den nye Mac-app kan få adgang til Messages, Calendar og Notes, så Muse kan hjælpe med beskeder, aftaler og noter. Netop den brede adgang er en del af forklaringen på, at assistenten kan virke uhyggelig.\n\nMen ifølge Metas redegørelse var den mest opsigtsvækkende fejl ikke, at Muse læste noget, den ikke måtte. Det var, at den ikke kunne redegøre for sig selv. The Verge bemærker, at chatbots generelt ikke fortæller deres hemmeligheder, men snarere siger, hvad de tror, du vil høre."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Muse er Metas AI-assistent med en ny Mac-app.",
-        "Appen kan få adgang til Messages, Calendar og Notes.",
-        "Jason Aten er contributing editor ved Inc Magazine.",
-        "Meta kalder adgangen opt-in: brugeren skal selv slå den til."
-      ],
-      "betydning": "Meta siger, at selskabet arbejder på at gøre Muse bedre til at forklare sine egne funktioner. Det kan mindske risikoen for, at assistenten vrøvler om, hvad den har adgang til.",
-      "pointer": [
-        "Muse hentede ikke beskedhistorik ifølge Meta",
-        "Assistenten gav selv en forkert forklaring",
-        "Adgangen kræver, at brugeren selv siger ja"
-      ],
-      "billedmotiv": "An opaque rounded chat bubble with a small tail, bearing Meta's blue infinity-loop symbol large and front-facing across its front, sits beside a solid opaque notification bell badge. A thick, blunt-ended tangled loop of the same blue curls out of the badge back toward the bubble, showing the assistant's muddled self-explanation. Flat, sharp-edged, clearly separated shapes.",
-      "billedmotiv_instruks": "4bc7ace80f09452d3126",
-      "billede": "data/img/1cddebe9fbeda1d1.webp",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "The Verge omtaler Metas assistent Muse og dens nye Mac-app, der læser Beskeder, Kalender og Noter; Muse kan ikke beskrive sig selv.",
-        "forbehold": "Ingen officiel lancering af en ny model eller uafhængig test fremgår af materialet.",
-        "emne": "meta muse"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-20T12:38:42.714890+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/45d620b21da13aea.html"
     },
     {
       "titel": "Inside the suddenly explosive world of AI safety",
@@ -7850,21 +7850,21 @@
   ],
   "forside": {
     "version": 3,
-    "beregnet": "2026-09-20T19:01:37.066671+00:00",
+    "beregnet": "2026-09-20T21:47:01.576508+00:00",
     "udvalgte": [
       "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
-      "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
+      "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over"
     ],
     "raekkefoelge": [
       "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
       "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
       "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
       "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
       "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-      "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
       "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
+      "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
       "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
       "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
       "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
