@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-20T07:45:35.272153+00:00",
+ "genereret": "2026-09-20T12:44:59.882701+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,15 +183,15 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-20T06:55:56.202744+00:00",
-  "antal": 93,
-  "med_billede": 70,
-  "paa_dansk": 93,
+  "opdateret": "2026-09-20T12:36:13.066520+00:00",
+  "antal": 94,
+  "med_billede": 71,
+  "paa_dansk": 94,
   "kategorier": {
    "Lanceringer": 15,
    "Samfund \u0026 etik": 27,
    "Politik \u0026 jura": 10,
-   "Hverdags-AI": 13,
+   "Hverdags-AI": 14,
    "Penge \u0026 marked": 18,
    "Forskning": 10
   },
@@ -200,7 +200,7 @@ window.KOMMANDO_DATA = {
    "Simon Willison AI": 5,
    "xAI News": 1,
    "Ars Technica AI": 12,
-   "The Verge AI": 20,
+   "The Verge AI": 21,
    "Anthropic News": 2,
    "Google DeepMind": 1,
    "MIT Tech Review AI": 4,
@@ -242,6 +242,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Meta’s Muse is creepy, but maybe not for the reasons you think",
+    "rubrik": "Meta undskylder: Muse forklarede sig forkert",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+    "side": "artikel/45d620b21da13aea.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-19T16:44:40-04:00",
+    "billede": "data/img/1cddebe9fbeda1d1.webp"
+   },
    {
     "titel": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
     "rubrik": "Trump vil omdøbe AI og oprette AI Force",
@@ -351,21 +361,11 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-18T17:28:50+00:00",
     "billede": "data/img/6cde14079eb110cc.webp"
-   },
-   {
-    "titel": "Quoting Thariq Shihipar",
-    "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
-    "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-    "side": "artikel/1b2472f5f0e87be0.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-18T19:09:27+00:00",
-    "billede": "data/img/cdd8d5402bae2e81.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-20T06:55:56.202744+00:00",
+  "opdateret": "2026-09-20T12:36:13.066520+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -385,7 +385,7 @@ window.KOMMANDO_DATA = {
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-20T06:55:55.478422+00:00",
+  "opdateret": "2026-09-20T12:36:12.075401+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -603,8 +603,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-20T06:55:56.202744+00:00",
-  "artikler_i_alt": 93,
+  "opdateret": "2026-09-20T12:36:13.066520+00:00",
+  "artikler_i_alt": 94,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -946,7 +946,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 20,
+    "i_listen": 21,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1004,6 +1004,15 @@ window.KOMMANDO_DATA = {
       "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
      },
      {
+      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
+      "dato": "2026-09-19T16:44:40",
+      "foerst_set": "2026-09-19T23:28:25",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+      "side": "artikel/45d620b21da13aea.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
       "dato": "2026-09-18T13:04:51",
       "foerst_set": "2026-09-18T19:56:02",
@@ -1023,7 +1032,7 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "TACLS skal varsle om flash floods tidligere",
-      "dato": "2026-09-18T07:00:00",
+      "dato": "2026-09-18T11:00:00",
       "foerst_set": "2026-09-18T11:46:00",
       "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
       "side": "artikel/cc9d12fe9e378865.html",
@@ -1045,15 +1054,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-17T20:31:59",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
       "side": "artikel/077d8f6ca8fa2cba.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
-      "dato": "2026-09-17T19:28:24",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-      "side": "artikel/85b0b4814d514fc1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1393,12 +1393,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-20T07:01:02.168143+00:00",
+  "opdateret": "2026-09-20T12:44:56.031085+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 62,
-  "sidevisninger_i_alt": 165,
+  "besoeg_i_alt": 58,
+  "sidevisninger_i_alt": 161,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1555,8 +1555,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 60,
-    "visninger": 160
+    "besoeg": 56,
+    "visninger": 156
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1595,11 +1595,11 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 60
+    "besoeg": 57
    },
    {
     "fra": "m.facebook.com",
-    "besoeg": 2
+    "besoeg": 1
    }
   ],
   "laeste_temaer": [
