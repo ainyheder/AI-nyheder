@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-21T17:10:47.459588+00:00",
- "artikler_i_alt": 97,
+ "opdateret": "2026-09-21T21:13:22.292595+00:00",
+ "artikler_i_alt": 100,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -169,17 +169,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
-   "som_ekstra": 0,
+   "i_listen": 3,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Gemini brød ind i tre virksomheder under test",
-     "dato": "2026-09-18T23:57:57",
+     "dato": "",
      "foerst_set": "2026-09-19T01:31:11",
      "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-     "side": "artikel/e43332e97231c6f8.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
      "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
@@ -211,11 +211,7 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     1
-    ],
-    [
-     "TechCrunch AI",
+     "Ars Technica AI",
      1
     ]
    ]
@@ -230,9 +226,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 40,
-   "som_ekstra": 7,
+   "i_listen": 41,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "Amazon blokerer Metas AI-agent Muse",
+     "dato": "",
+     "foerst_set": "2026-09-21T21:13:22",
+     "link": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon blokerer Metas Muse-agent i butikken"
+    },
     {
      "rubrik": "Gemini hackede tre virksomheder under sikkerhedstest",
      "dato": "",
@@ -240,7 +245,7 @@ window.KILDER_STATUS = {
      "link": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini brød ind i tre virksomheder under test"
+     "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
      "rubrik": "Pentagon afblæste angreb efter AI-hallucination",
@@ -304,6 +309,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft vil holde AI under menneskelig kontrol"
+    },
+    {
+     "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
+     "dato": "2026-09-21T19:19:21",
+     "foerst_set": "2026-09-21T21:13:22",
+     "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+     "side": "artikel/285c3f889238df4e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Googlebook til 899 dollar satser på Gemini",
@@ -403,29 +417,16 @@ window.KILDER_STATUS = {
      "side": "artikel/ecfc994dbcabff84.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Crusoe rejser 3,9 milliarder dollar til modulære AI-fabrikker",
-     "dato": "2026-09-17T23:25:52",
-     "foerst_set": "2026-09-18T01:26:34",
-     "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
-     "side": "artikel/e3285a711c8c90e5.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     9
     ],
     [
      "Ars Technica AI",
-     5
-    ],
-    [
-     "Simon Willison AI",
-     1
+     6
     ]
    ]
   },
@@ -439,7 +440,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
+   "i_listen": 23,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -458,7 +459,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
      "side": "",
      "hvor": "under",
-     "under": "Gemini brød ind i tre virksomheder under test"
+     "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
      "rubrik": "Tre forskere brød ind i OpenAI med Claude",
@@ -486,6 +487,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
+    },
+    {
+     "rubrik": "Apple betaler 250 millioner i Siri-forlig",
+     "dato": "2026-09-21T09:36:52",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+     "side": "artikel/93b84abf7bbda6f3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
+     "dato": "2026-09-21T06:18:06",
+     "foerst_set": "2026-09-21T11:03:51",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+     "side": "artikel/13e93d540c1e658a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
@@ -576,38 +595,16 @@ window.KILDER_STATUS = {
      "side": "artikel/74a1f4fa23b15aaa.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI-model slap ud og hackede startup",
-     "dato": "2026-09-17T11:30:00",
-     "foerst_set": "2026-09-17T12:03:11",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
-     "side": "artikel/b976cf94b51bce51.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Snap lancerer Specs Intelligence til iOS, Mac senere",
-     "dato": "2026-09-16T23:40:00",
-     "foerst_set": "2026-09-17T06:36:49",
-     "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
-     "side": "artikel/ab2a2f0bede59003.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
-    ],
-    [
-     "Simon Willison AI",
-     1
+     9
     ],
     [
      "Ars Technica AI",
-     1
+     2
     ]
    ]
   },
@@ -621,7 +618,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
+   "i_listen": 13,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -659,6 +656,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft-dokument advarede om 'doom loop'"
+    },
+    {
+     "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
+     "dato": "2026-09-21T16:57:26",
+     "foerst_set": "2026-09-19T01:31:11",
+     "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+     "side": "artikel/ac91fe690f3a7f56.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Opdigtet AI-rapport bragte USA tæt på krig",
@@ -758,24 +764,19 @@ window.KILDER_STATUS = {
      "side": "artikel/c884bb2181557996.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Amodei vil sænke tempoet for AI-modeller",
-     "dato": "2026-09-14T19:06:13",
-     "foerst_set": "2026-09-14T22:44:05",
-     "link": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
-     "side": "artikel/6f49a30a7364f698.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     6
     ],
     [
      "The Verge AI",
+     2
+    ],
+    [
+     "Simon Willison AI",
      1
     ]
    ]
@@ -794,11 +795,29 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "MIT kortlægger næsten 4.000 dødsfald",
+     "dato": "",
+     "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+     "link": "https://www.technologyreview.com/2026/09/21/1144161/border-towers-surveillance-methodology/",
+     "side": "",
+     "hvor": "under",
+     "under": "CBP har aldrig auditeret grænsens AI-tårne"
+    },
+    {
      "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
+     "dato": "",
+     "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+     "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+     "side": "",
+     "hvor": "under",
+     "under": "CBP har aldrig auditeret grænsens AI-tårne"
+    },
+    {
+     "rubrik": "CBP har aldrig auditeret grænsens AI-tårne",
      "dato": "2026-09-21T12:00:00",
      "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
-     "side": "artikel/aec46d554e2ec7b8.html",
+     "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+     "side": "artikel/b4add5777c43334a.html",
      "hvor": "forside",
      "under": ""
     },

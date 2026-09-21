@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-21T17:48:21.984883+00:00",
+ "genereret": "2026-09-21T21:45:53.768331+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,25 +183,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-21T17:10:47.459588+00:00",
-  "antal": 97,
+  "opdateret": "2026-09-21T21:13:22.292595+00:00",
+  "antal": 100,
   "med_billede": 70,
-  "paa_dansk": 97,
+  "paa_dansk": 100,
   "kategorier": {
    "Lanceringer": 16,
    "Hverdags-AI": 16,
-   "Penge \u0026 marked": 20,
+   "Politik \u0026 jura": 10,
    "Samfund \u0026 etik": 27,
-   "Politik \u0026 jura": 8,
+   "Penge \u0026 marked": 21,
    "Forskning": 10
   },
   "kilder": {
    "xAI News": 2,
-   "TechCrunch AI": 40,
-   "The Verge AI": 21,
-   "Simon Willison AI": 4,
-   "Ars Technica AI": 12,
+   "TechCrunch AI": 41,
+   "The Verge AI": 23,
+   "Ars Technica AI": 13,
    "MIT Tech Review AI": 4,
+   "Simon Willison AI": 3,
    "Anthropic News": 2,
    "Google DeepMind": 1,
    "Mistral AI": 1,
@@ -231,17 +231,27 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Amazon blocks Meta’s Muse AI agent",
-    "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
-    "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-    "side": "artikel/ac1368b0f72db021.html",
-    "kategori": "Penge \u0026 marked",
+    "titel": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
+    "rubrik": "Apple betaler 250 millioner i Siri-forlig",
+    "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+    "side": "artikel/93b84abf7bbda6f3.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-09-21T05:21:47-04:00",
+    "dato": "2026-09-21T09:36:52-04:00",
     "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
+    "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
+    "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+    "side": "artikel/285c3f889238df4e.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-21T19:19:21+00:00",
+    "billede": ""
+   },
    {
     "titel": "Introducing Grok 4.7",
     "rubrik": "Grok 4.7 tjekker sit eget arbejde",
@@ -263,10 +273,30 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "The US spent billions on border surveillance. Why can’t it catch people before they die?",
-    "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
-    "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
-    "side": "artikel/aec46d554e2ec7b8.html",
+    "titel": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
+    "rubrik": "Apple betaler 250 millioner i Siri-forlig",
+    "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+    "side": "artikel/93b84abf7bbda6f3.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-21T09:36:52-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Google confirms Gemini models hacked three companies in May 2026",
+    "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
+    "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+    "side": "artikel/ac91fe690f3a7f56.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-21T16:57:26+00:00",
+    "billede": "data/img/b0343d359d76c313.webp"
+   },
+   {
+    "titel": "4 ways to address the failures we found along the US border’s “virtual wall”",
+    "rubrik": "CBP har aldrig auditeret grænsens AI-tårne",
+    "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+    "side": "artikel/b4add5777c43334a.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "MIT Tech Review AI",
     "dato": "2026-09-21T12:00:00+00:00",
@@ -280,6 +310,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-21T16:38:51+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "UN says AI safeguards can’t wait for certainty",
+    "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+    "side": "artikel/13e93d540c1e658a.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-21T06:18:06-04:00",
     "billede": ""
    },
    {
@@ -321,51 +361,11 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-19T19:57:47+00:00",
     "billede": "data/img/f7f6420566b75460.webp"
-   },
-   {
-    "titel": "Petlibro’s new AI-powered feeder is a game changer for multi-cat homes",
-    "rubrik": "Petlibro Granary 2 vejer hvor meget katten spiser",
-    "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-    "side": "artikel/031e78fea7f65b89.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-19T15:00:00+00:00",
-    "billede": "data/img/1c0df54a30b91303.webp"
-   },
-   {
-    "titel": "Vals, backed by Andreessen Horowitz, is looking to become the gold standard for AI benchmarking",
-    "rubrik": "Vals vil måle AI-modeller bag lukkede tests",
-    "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
-    "side": "artikel/0ac6fc9717b544dd.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-19T13:00:00+00:00",
-    "billede": "data/img/0b155d53665257ca.webp"
-   },
-   {
-    "titel": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-    "rubrik": "Gemini brød ind i tre virksomheder under test",
-    "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-    "side": "artikel/e43332e97231c6f8.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-18T23:57:57+00:00",
-    "billede": "data/img/b0343d359d76c313.webp"
-   },
-   {
-    "titel": "Anthropic is operating a lab that conducts biology experiments",
-    "rubrik": "Anthropic lader AI-modeller lave biologiforsøg",
-    "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
-    "side": "artikel/dcced75f93e2d70f.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-18T23:13:31+00:00",
-    "billede": "data/img/f95864e749d5fa8a.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-21T17:10:47.459588+00:00",
+  "opdateret": "2026-09-21T21:13:22.292595+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
@@ -379,13 +379,13 @@ window.KOMMANDO_DATA = {
   "udgivet_udvalg": [
    "https://x.ai/news/grok-4-7",
    "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-   "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping"
+   "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-21T17:10:46.693429+00:00",
+  "opdateret": "2026-09-21T21:13:21.895379+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -603,8 +603,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-21T17:10:47.459588+00:00",
-  "artikler_i_alt": 97,
+  "opdateret": "2026-09-21T21:13:22.292595+00:00",
+  "artikler_i_alt": 100,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -763,17 +763,17 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 4,
-    "som_ekstra": 0,
+    "i_listen": 3,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Gemini brød ind i tre virksomheder under test",
-      "dato": "2026-09-18T23:57:57",
+      "dato": "",
       "foerst_set": "2026-09-19T01:31:11",
       "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-      "side": "artikel/e43332e97231c6f8.html",
-      "hvor": "forside",
-      "under": ""
+      "side": "",
+      "hvor": "under",
+      "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
       "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
@@ -814,9 +814,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 40,
-    "som_ekstra": 7,
+    "i_listen": 41,
+    "som_ekstra": 8,
     "seneste": [
+     {
+      "rubrik": "Amazon blokerer Metas AI-agent Muse",
+      "dato": "",
+      "foerst_set": "2026-09-21T21:13:22",
+      "link": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
+      "side": "",
+      "hvor": "under",
+      "under": "Amazon blokerer Metas Muse-agent i butikken"
+     },
      {
       "rubrik": "Gemini hackede tre virksomheder under sikkerhedstest",
       "dato": "",
@@ -824,7 +833,7 @@ window.KOMMANDO_DATA = {
       "link": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
       "side": "",
       "hvor": "under",
-      "under": "Gemini brød ind i tre virksomheder under test"
+      "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
       "rubrik": "Pentagon afblæste angreb efter AI-hallucination",
@@ -890,6 +899,15 @@ window.KOMMANDO_DATA = {
       "under": "Microsoft vil holde AI under menneskelig kontrol"
      },
      {
+      "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
+      "dato": "2026-09-21T19:19:21",
+      "foerst_set": "2026-09-21T21:13:22",
+      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+      "side": "artikel/285c3f889238df4e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Googlebook til 899 dollar satser på Gemini",
       "dato": "2026-09-21T14:39:22",
       "foerst_set": "2026-09-21T17:10:47",
@@ -906,24 +924,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/8a06f4e347265d61.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Vocci-ring optager møder med dobbelttryk",
-      "dato": "2026-09-20T18:32:52",
-      "foerst_set": "2026-09-20T19:01:37",
-      "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
-      "side": "artikel/4c292615ef53e08c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Trump vil omdøbe AI og oprette AI Force",
-      "dato": "2026-09-19T19:57:47",
-      "foerst_set": "2026-09-19T20:57:59",
-      "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-      "side": "artikel/c0e5bbea1628d07f.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -937,7 +937,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 21,
+    "i_listen": 23,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -956,7 +956,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
       "side": "",
       "hvor": "under",
-      "under": "Gemini brød ind i tre virksomheder under test"
+      "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
       "rubrik": "Tre forskere brød ind i OpenAI med Claude",
@@ -984,6 +984,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
+     },
+     {
+      "rubrik": "Apple betaler 250 millioner i Siri-forlig",
+      "dato": "2026-09-21T09:36:52",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+      "side": "artikel/93b84abf7bbda6f3.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
+      "dato": "2026-09-21T06:18:06",
+      "foerst_set": "2026-09-21T11:03:51",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+      "side": "artikel/13e93d540c1e658a.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
@@ -1029,24 +1047,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/cc9d12fe9e378865.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude Code samler flere agenter i ét projekt",
-      "dato": "2026-09-17T18:58:05",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-      "side": "artikel/f0feb3e3451d3c61.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-      "dato": "2026-09-18T21:07:24",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-      "side": "artikel/077d8f6ca8fa2cba.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1060,7 +1060,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 12,
+    "i_listen": 13,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1098,6 +1098,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Microsoft-dokument advarede om 'doom loop'"
+     },
+     {
+      "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
+      "dato": "2026-09-21T16:57:26",
+      "foerst_set": "2026-09-19T01:31:11",
+      "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+      "side": "artikel/ac91fe690f3a7f56.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Opdigtet AI-rapport bragte USA tæt på krig",
@@ -1161,15 +1170,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/f9a32ab8fe3eaef7.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Apple frigiver iOS 27 med Siri AI",
-      "dato": "2026-09-14T19:28:42",
-      "foerst_set": "2026-09-14T22:44:05",
-      "link": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-      "side": "artikel/47def91e50bdda56.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1187,11 +1187,29 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 0,
     "seneste": [
      {
+      "rubrik": "MIT kortlægger næsten 4.000 dødsfald",
+      "dato": "",
+      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "link": "https://www.technologyreview.com/2026/09/21/1144161/border-towers-surveillance-methodology/",
+      "side": "",
+      "hvor": "under",
+      "under": "CBP har aldrig auditeret grænsens AI-tårne"
+     },
+     {
       "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
+      "dato": "",
+      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "side": "",
+      "hvor": "under",
+      "under": "CBP har aldrig auditeret grænsens AI-tårne"
+     },
+     {
+      "rubrik": "CBP har aldrig auditeret grænsens AI-tårne",
       "dato": "2026-09-21T12:00:00",
       "foerst_set": "2026-09-21T17:10:47",
-      "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
-      "side": "artikel/aec46d554e2ec7b8.html",
+      "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+      "side": "artikel/b4add5777c43334a.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1384,28 +1402,28 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-21T17:48:09.548024+00:00",
+  "opdateret": "2026-09-21T21:45:47.842717+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 43,
-  "sidevisninger_i_alt": 63,
+  "besoeg_i_alt": 42,
+  "sidevisninger_i_alt": 62,
   "ai_chat_besoeg": 0,
   "serie": [
    {
     "dato": "2026-08-23",
     "besoeg": 0,
-    "visninger": 100
+    "visninger": 20
    },
    {
     "dato": "2026-08-24",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-08-25",
     "besoeg": 0,
-    "visninger": 100
+    "visninger": 10
    },
    {
     "dato": "2026-08-26",
@@ -1414,13 +1432,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-08-27",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 20
    },
    {
     "dato": "2026-08-28",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 20
    },
    {
     "dato": "2026-08-29",
@@ -1434,8 +1452,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-08-31",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 20
    },
    {
     "dato": "2026-09-01",
@@ -1444,8 +1462,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-02",
-    "besoeg": 100,
-    "visninger": 100
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-09-03",
@@ -1454,13 +1472,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-04",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-09-05",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 20
    },
    {
     "dato": "2026-09-06",
@@ -1469,8 +1487,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-07",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 10,
+    "visninger": 10
    },
    {
     "dato": "2026-09-08",
@@ -1489,18 +1507,18 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-11",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 20,
+    "visninger": 50
    },
    {
     "dato": "2026-09-12",
-    "besoeg": 0,
+    "besoeg": 30,
     "visninger": 100
    },
    {
     "dato": "2026-09-13",
-    "besoeg": 0,
-    "visninger": 200
+    "besoeg": 20,
+    "visninger": 80
    },
    {
     "dato": "2026-09-14",
@@ -1519,13 +1537,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-17",
-    "besoeg": 0,
-    "visninger": 0
+    "besoeg": 40,
+    "visninger": 40
    },
    {
     "dato": "2026-09-18",
-    "besoeg": 100,
-    "visninger": 100
+    "besoeg": 20,
+    "visninger": 20
    },
    {
     "dato": "2026-09-19",
@@ -1535,7 +1553,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-09-20",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 20
    },
    {
     "dato": "2026-09-21",
@@ -1546,8 +1564,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 41,
-    "visninger": 59
+    "besoeg": 40,
+    "visninger": 58
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1573,7 +1591,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 43
+    "besoeg": 42
    }
   ],
   "laeste_temaer": []
