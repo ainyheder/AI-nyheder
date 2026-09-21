@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-21T05:23:53.085370+00:00",
- "artikler_i_alt": 92,
+ "opdateret": "2026-09-21T11:03:51.989369+00:00",
+ "artikler_i_alt": 93,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -439,7 +439,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -488,6 +488,15 @@ window.KILDER_STATUS = {
      "under": "Trump ringede til Nvidia-chef: AI-kapløbet fortsætter"
     },
     {
+     "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
+     "dato": "2026-09-21T05:21:47",
+     "foerst_set": "2026-09-21T11:03:51",
+     "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+     "side": "artikel/ac1368b0f72db021.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
      "dato": "2026-09-19T16:44:40",
      "foerst_set": "2026-09-19T23:28:25",
@@ -498,7 +507,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
-     "dato": "2026-09-18T13:04:51",
+     "dato": "2026-09-18T17:04:51",
      "foerst_set": "2026-09-18T19:56:02",
      "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
      "side": "artikel/a773bfa98d720806.html",
@@ -507,7 +516,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
-     "dato": "2026-09-18T14:29:17",
+     "dato": "2026-09-18T18:29:17",
      "foerst_set": "2026-09-18T19:56:02",
      "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
      "side": "artikel/115cada6134fe4b1.html",
@@ -583,15 +592,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-17T06:36:49",
      "link": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
      "side": "artikel/ab2a2f0bede59003.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
-     "dato": "2026-09-16T20:40:46",
-     "foerst_set": "2026-09-16T21:39:37",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-     "side": "artikel/418dbc769c8c49eb.html",
      "hvor": "forside",
      "under": ""
     }
@@ -777,10 +777,6 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      1
-    ],
-    [
-     "MIT Tech Review AI",
-     1
     ]
    ]
   },
@@ -795,17 +791,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 6,
    "i_listen": 3,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Topchefer vil bremse efter OpenAI-agenters hack",
-     "dato": "",
-     "foerst_set": "2026-09-14T22:44:05",
-     "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
-     "side": "",
-     "hvor": "under",
-     "under": "Amodei vil sænke tempoet for AI-modeller"
-    },
     {
      "rubrik": "Syensqo lader AI-agenter finde nye materialer",
      "dato": "2026-09-16T12:47:34",
@@ -834,12 +821,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Ars Technica AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",
