@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-21T11:03:51.989369+00:00",
- "artikler_i_alt": 93,
+ "opdateret": "2026-09-21T17:10:47.459588+00:00",
+ "artikler_i_alt": 97,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -110,9 +110,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 1,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Grok 4.7 tjekker sit eget arbejde",
+     "dato": "2026-09-21T00:00:00",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://x.ai/news/grok-4-7",
+     "side": "artikel/445ea2dff549947f.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
      "dato": "2026-09-18T00:00:00",
@@ -161,17 +170,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 4,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Claude slår Cowork og chat sammen",
-     "dato": "",
-     "foerst_set": "2026-09-16T21:39:37",
-     "link": "https://simonwillison.net/2026/Sep/16/one-claude/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får Docs og Slides i samme chat"
-    },
     {
      "rubrik": "Gemini brød ind i tre virksomheder under test",
      "dato": "2026-09-18T23:57:57",
@@ -212,7 +212,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     2
+     1
     ],
     [
      "TechCrunch AI",
@@ -230,7 +230,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 38,
+   "i_listen": 40,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -304,6 +304,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft vil holde AI under menneskelig kontrol"
+    },
+    {
+     "rubrik": "Googlebook til 899 dollar satser på Gemini",
+     "dato": "2026-09-21T14:39:22",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+     "side": "artikel/ce68e248589d5c28.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Tabby udfordrer QuickBooks med AI-bogføring",
+     "dato": "2026-09-21T16:38:51",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+     "side": "artikel/8a06f4e347265d61.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Vocci-ring optager møder med dobbelttryk",
@@ -392,24 +410,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-18T01:26:34",
      "link": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
      "side": "artikel/e3285a711c8c90e5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DeepMind opretter institut for debat om AGI",
-     "dato": "2026-09-17T23:21:17",
-     "foerst_set": "2026-09-18T01:26:34",
-     "link": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
-     "side": "artikel/456afd7f4d6d0d00.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI fandt skjulte noter fra GPT-5.6 Sol",
-     "dato": "2026-09-17T20:34:24",
-     "foerst_set": "2026-09-17T23:03:23",
-     "link": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
-     "side": "artikel/41da7ed56ef01474.html",
      "hvor": "forside",
      "under": ""
     }
@@ -543,7 +543,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-     "dato": "2026-09-18T17:07:24",
+     "dato": "2026-09-18T21:07:24",
      "foerst_set": "2026-09-17T20:31:59",
      "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
      "side": "artikel/077d8f6ca8fa2cba.html",
@@ -603,7 +603,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     2
+     1
     ],
     [
      "Ars Technica AI",
@@ -790,9 +790,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
+     "dato": "2026-09-21T12:00:00",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+     "side": "artikel/aec46d554e2ec7b8.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Syensqo lader AI-agenter finde nye materialer",
      "dato": "2026-09-16T12:47:34",

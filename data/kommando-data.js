@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-21T11:12:46.707608+00:00",
+ "genereret": "2026-09-21T17:48:21.984883+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -183,27 +183,27 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-21T11:03:51.989369+00:00",
-  "antal": 93,
-  "med_billede": 69,
-  "paa_dansk": 93,
+  "opdateret": "2026-09-21T17:10:47.459588+00:00",
+  "antal": 97,
+  "med_billede": 70,
+  "paa_dansk": 97,
   "kategorier": {
-   "Lanceringer": 15,
+   "Lanceringer": 16,
+   "Hverdags-AI": 16,
    "Penge \u0026 marked": 20,
-   "Samfund \u0026 etik": 26,
+   "Samfund \u0026 etik": 27,
    "Politik \u0026 jura": 8,
-   "Hverdags-AI": 14,
    "Forskning": 10
   },
   "kilder": {
-   "TechCrunch AI": 38,
+   "xAI News": 2,
+   "TechCrunch AI": 40,
    "The Verge AI": 21,
    "Simon Willison AI": 4,
    "Ars Technica AI": 12,
-   "xAI News": 1,
+   "MIT Tech Review AI": 4,
    "Anthropic News": 2,
    "Google DeepMind": 1,
-   "MIT Tech Review AI": 3,
    "Mistral AI": 1,
    "Hugging Face": 1,
    "Google Gemini": 1,
@@ -211,7 +211,27 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Amazon doesn’t trust Meta’s Muse AI agent",
+    "titel": "Introducing Grok 4.7",
+    "rubrik": "Grok 4.7 tjekker sit eget arbejde",
+    "link": "https://x.ai/news/grok-4-7",
+    "side": "artikel/445ea2dff549947f.html",
+    "kategori": "Lanceringer",
+    "kilde": "xAI News",
+    "dato": "2026-09-21T00:00:00+00:00",
+    "billede": "data/img/7110d00b09af16ae.webp"
+   },
+   {
+    "titel": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+    "rubrik": "Googlebook til 899 dollar satser på Gemini",
+    "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+    "side": "artikel/ce68e248589d5c28.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-21T14:39:22+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Amazon blocks Meta’s Muse AI agent",
     "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
     "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
     "side": "artikel/ac1368b0f72db021.html",
@@ -219,31 +239,51 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-21T05:21:47-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Trump says it’s time to rebrand AI with a new name — and he’s also creating an AI Force",
-    "rubrik": "Trump vil omdøbe AI og oprette AI Force",
-    "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-    "side": "artikel/c0e5bbea1628d07f.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-19T19:57:47+00:00",
-    "billede": "data/img/f7f6420566b75460.webp"
-   },
-   {
-    "titel": "Vocci’s ring adds a new form factor to meeting note-taking",
-    "rubrik": "Vocci-ring optager møder med dobbelttryk",
-    "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
-    "side": "artikel/4c292615ef53e08c.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-20T18:32:52+00:00",
-    "billede": "data/img/43456e293413cf6f.webp"
    }
   ],
   "seneste": [
    {
-    "titel": "Amazon doesn’t trust Meta’s Muse AI agent",
+    "titel": "Introducing Grok 4.7",
+    "rubrik": "Grok 4.7 tjekker sit eget arbejde",
+    "link": "https://x.ai/news/grok-4-7",
+    "side": "artikel/445ea2dff549947f.html",
+    "kategori": "Lanceringer",
+    "kilde": "xAI News",
+    "dato": "2026-09-21T00:00:00+00:00",
+    "billede": "data/img/7110d00b09af16ae.webp"
+   },
+   {
+    "titel": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+    "rubrik": "Googlebook til 899 dollar satser på Gemini",
+    "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+    "side": "artikel/ce68e248589d5c28.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-21T14:39:22+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "The US spent billions on border surveillance. Why can’t it catch people before they die?",
+    "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
+    "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+    "side": "artikel/aec46d554e2ec7b8.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-21T12:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "With Tabby, a former accountant is using AI to make accountants obsolete",
+    "rubrik": "Tabby udfordrer QuickBooks med AI-bogføring",
+    "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+    "side": "artikel/8a06f4e347265d61.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-21T16:38:51+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Amazon blocks Meta’s Muse AI agent",
     "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
     "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
     "side": "artikel/ac1368b0f72db021.html",
@@ -321,71 +361,31 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-18T23:13:31+00:00",
     "billede": "data/img/f95864e749d5fa8a.webp"
-   },
-   {
-    "titel": "AI hallucination of Chinese nuclear components almost led to US military attack",
-    "rubrik": "Opdigtet AI-rapport bragte USA tæt på krig",
-    "link": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/",
-    "side": "artikel/3b74cb2107996a6e.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-18T20:26:33+00:00",
-    "billede": "data/img/0887aed550019430.webp"
-   },
-   {
-    "titel": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
-    "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-    "side": "artikel/077d8f6ca8fa2cba.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-18T17:07:24-04:00",
-    "billede": "data/img/5242fd46884dae14.webp"
-   },
-   {
-    "titel": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
-    "rubrik": "Jev udsender sandsynligheder i stedet for tekst",
-    "link": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
-    "side": "artikel/c787e87aad1dc64f.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-18T18:49:30+00:00",
-    "billede": "data/img/5894e7c4feed9328.webp"
-   },
-   {
-    "titel": "Gavin Newsom is pushing for an AI kill switch",
-    "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
-    "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-    "side": "artikel/a773bfa98d720806.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-18T17:04:51+00:00",
-    "billede": "data/img/7e2c5f07447fac8b.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-21T11:03:51.989369+00:00",
+  "opdateret": "2026-09-21T17:10:47.459588+00:00",
   "status": "reserve",
   "model": "deepseek-flash",
   "forklaring": "Redaktionsmødet fejlede: HTTPError",
   "modelkald": 1,
   "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-   "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-   "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
+   "https://x.ai/news/grok-4-7",
+   "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+   "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-   "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-   "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/"
+   "https://x.ai/news/grok-4-7",
+   "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+   "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping"
   ],
   "vaerktoejer": [],
   "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-09-21T11:03:51.602384+00:00",
+  "opdateret": "2026-09-21T17:10:46.693429+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -603,8 +603,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-21T11:03:51.989369+00:00",
-  "artikler_i_alt": 93,
+  "opdateret": "2026-09-21T17:10:47.459588+00:00",
+  "artikler_i_alt": 97,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -706,9 +706,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 1,
+    "i_listen": 2,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Grok 4.7 tjekker sit eget arbejde",
+      "dato": "2026-09-21T00:00:00",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://x.ai/news/grok-4-7",
+      "side": "artikel/445ea2dff549947f.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
       "dato": "2026-09-18T00:00:00",
@@ -755,17 +764,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 4,
-    "som_ekstra": 1,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Claude slår Cowork og chat sammen",
-      "dato": "",
-      "foerst_set": "2026-09-16T21:39:37",
-      "link": "https://simonwillison.net/2026/Sep/16/one-claude/",
-      "side": "",
-      "hvor": "under",
-      "under": "Claude får Docs og Slides i samme chat"
-     },
      {
       "rubrik": "Gemini brød ind i tre virksomheder under test",
       "dato": "2026-09-18T23:57:57",
@@ -814,7 +814,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 38,
+    "i_listen": 40,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -890,6 +890,24 @@ window.KOMMANDO_DATA = {
       "under": "Microsoft vil holde AI under menneskelig kontrol"
      },
      {
+      "rubrik": "Googlebook til 899 dollar satser på Gemini",
+      "dato": "2026-09-21T14:39:22",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "side": "artikel/ce68e248589d5c28.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Tabby udfordrer QuickBooks med AI-bogføring",
+      "dato": "2026-09-21T16:38:51",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+      "side": "artikel/8a06f4e347265d61.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Vocci-ring optager møder med dobbelttryk",
       "dato": "2026-09-20T18:32:52",
       "foerst_set": "2026-09-20T19:01:37",
@@ -904,24 +922,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-19T20:57:59",
       "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
       "side": "artikel/c0e5bbea1628d07f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Petlibro Granary 2 vejer hvor meget katten spiser",
-      "dato": "2026-09-19T15:00:00",
-      "foerst_set": "2026-09-19T18:12:03",
-      "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-      "side": "artikel/031e78fea7f65b89.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Vals vil måle AI-modeller bag lukkede tests",
-      "dato": "2026-09-19T13:00:00",
-      "foerst_set": "2026-09-19T14:44:19",
-      "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
-      "side": "artikel/0ac6fc9717b544dd.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1041,7 +1041,7 @@ window.KOMMANDO_DATA = {
      },
      {
       "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-      "dato": "2026-09-18T17:07:24",
+      "dato": "2026-09-18T21:07:24",
       "foerst_set": "2026-09-17T20:31:59",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
       "side": "artikel/077d8f6ca8fa2cba.html",
@@ -1183,9 +1183,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 3,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
+      "dato": "2026-09-21T12:00:00",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+      "side": "artikel/aec46d554e2ec7b8.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Syensqo lader AI-agenter finde nye materialer",
       "dato": "2026-09-16T12:47:34",
@@ -1375,28 +1384,28 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-21T11:12:39.980549+00:00",
+  "opdateret": "2026-09-21T17:48:09.548024+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 42,
-  "sidevisninger_i_alt": 61,
+  "besoeg_i_alt": 43,
+  "sidevisninger_i_alt": 63,
   "ai_chat_besoeg": 0,
   "serie": [
    {
     "dato": "2026-08-23",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 100
    },
    {
     "dato": "2026-08-24",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-08-25",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 100
    },
    {
     "dato": "2026-08-26",
@@ -1405,13 +1414,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-08-27",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-08-28",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 0
    },
    {
     "dato": "2026-08-29",
@@ -1425,8 +1434,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-08-31",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-01",
@@ -1435,8 +1444,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-02",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-09-03",
@@ -1445,13 +1454,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-04",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-05",
-    "besoeg": 10,
-    "visninger": 20
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-06",
@@ -1460,8 +1469,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-07",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-08",
@@ -1480,18 +1489,18 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-11",
-    "besoeg": 20,
-    "visninger": 50
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-12",
-    "besoeg": 30,
+    "besoeg": 0,
     "visninger": 100
    },
    {
     "dato": "2026-09-13",
-    "besoeg": 20,
-    "visninger": 80
+    "besoeg": 0,
+    "visninger": 200
    },
    {
     "dato": "2026-09-14",
@@ -1510,13 +1519,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-17",
-    "besoeg": 40,
-    "visninger": 40
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-18",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-09-19",
@@ -1526,7 +1535,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-09-20",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 0
    },
    {
     "dato": "2026-09-21",
@@ -1537,8 +1546,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 40,
-    "visninger": 57
+    "besoeg": 41,
+    "visninger": 59
    },
    {
     "sti": "/artikel/9eeacf6b78b6dd62.html\u0026lt;/link\u0026gt;\u0026lt;guid",
@@ -1564,7 +1573,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 42
+    "besoeg": 43
    }
   ],
   "laeste_temaer": []
