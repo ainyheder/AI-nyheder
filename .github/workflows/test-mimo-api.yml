@@ -1,0 +1,54 @@
+name: Test MiMo API (ingen udgivelse)
+on:
+  push:
+    branches: [codex/test-mimo-api]
+    paths: [".github/workflows/test-mimo-api.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test tekst og agent uden udgivelse
+        env:
+          XIAOMI_API_KEY: ${{ secrets.XIAOMI_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys, urllib.error
+          import crawler as c
+          import redaktoer_agent as a
+          try:
+              assert c.XIAOMI_KEY, "Missing Xiaomi key"
+              model = c.hjerne_model("forside_agent")
+              assert c.model_udbyder(model) == "xiaomi"
+              thinking = c.hjerne_thinking("forside_agent", model) or "enabled"
+              print("Testing", model, "thinking", thinking, flush=True)
+              original = a.urllib.request.urlopen
+              def bounded(req, **kw):
+                  if req.data:
+                      body = json.loads(req.data)
+                      body["max_completion_tokens"] = 4096
+                      req.data = json.dumps(body).encode()
+                  return original(req, timeout=120)
+              a.urllib.request.urlopen = bounded
+              c._hjerner_cache = {"api_test": {"model": model, "thinking": thinking}}
+              result = c.hjerne_kald("api_test", 'Return only JSON {"ok":true}.', "Connection test", 64, reasoning_effort="high")
+              assert json.loads(result).get("ok") is True
+              print("PASS: Site text router and Xiaomi API key", flush=True)
+              tool = a.funktion("api_test_ok", "Confirm connection", {"ok": {"type": "boolean"}})
+              reply = a.xiaomi_kald(c.XIAOMI_KEY, model, [{"role":"user","content":"Call api_test_ok once with ok=true. Do not answer with text."}], [tool], thinking=thinking)
+              calls = reply.get("tool_calls") or []
+              assert len(calls) == 1 and calls[0]["function"]["name"] == "api_test_ok"
+              assert json.loads(calls[0]["function"]["arguments"]).get("ok") is True
+              print("PASS: Editor agent tool calling", flush=True)
+              print("No articles, images or messages published.")
+          except Exception as e:
+              print("FAIL:", type(e).__name__, "HTTP", getattr(e,"code", "n/a"))
+              sys.exit(1)
+          PY
