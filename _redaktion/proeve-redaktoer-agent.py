@@ -282,7 +282,7 @@ class AgentTests(unittest.TestCase):
             if len(seen) == 1: return tool("laes_kilde", {"id": agent.ident(self.a["link"])})
             if len(seen) == 2: return tool("aflever_udgave", plan(self.a))
             return tool("godkend_udgave", {"godkendt": True, "problemer": []})
-        with patch.object(c, "DEEPSEEK_KEY", "test"), patch.object(agent, "deepseek_kald", side_effect=kald), patch.object(agent, "hent_kilde", return_value={"tekst": KILDE, "henvisninger": []}):
+        with patch.object(c, "_hjerner_cache", {"forside_agent": {"model": "deepseek-flash"}}), patch.object(c, "DEEPSEEK_KEY", "test"), patch.object(agent, "deepseek_kald", side_effect=kald), patch.object(agent, "hent_kilde", return_value={"tekst": KILDE, "henvisninger": []}):
             context = c.forbered_redaktoer([self.a, self.b], None, NU)
             self.assertIn(self.a["link"], context["opgaver"])
             f = c.afslut_redaktoer(context, [self.a, self.b], NU)

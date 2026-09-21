@@ -2,7 +2,7 @@
 # Automatisk crawl af AI-nyheder
 # ---------------------------------------------------------------------
 # Denne workflow kører på GitHubs servere (gratis) og:
-#   1. Kører crawler.py hver time hele døgnet
+#   1. Kører crawler.py hver 4. time hele døgnet
 #   2. Committer den nye data/articles.json til main
 #   3. GitHub Pages serverer derefter automatisk den nye version
 #
@@ -15,8 +15,8 @@ name: Crawl AI-nyheder
 
 on:
   schedule:
-    # Hver time hele døgnet, 37 minutter over timen (UTC).
-    - cron: "37 * * * *"
+    # Hver 4. time hele døgnet, 37 minutter over timen (UTC).
+    - cron: "37 */4 * * *"
   workflow_dispatch:         # gør det muligt at køre den manuelt
     inputs:
       genkoer_alt:
@@ -38,7 +38,7 @@ concurrency:
 jobs:
   crawl:
     runs-on: ubuntu-latest
-    # Max reasoning kræver længere svartid. Timerytmen er uændret; jobs overlapper ikke.
+    # Max reasoning kræver længere svartid. Kørslerne overlapper ikke.
     timeout-minutes: ${{ github.event_name == 'workflow_dispatch' && 180 || 120 }}
     env:
       OMP_NUM_THREADS: '2'

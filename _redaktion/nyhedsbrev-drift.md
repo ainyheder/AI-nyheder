@@ -482,7 +482,7 @@ kan ikke fastholde gamle artikler foran nye. Ved AI-fejl prioriterer reserven
 også de seneste 48 timer; kun helt stille perioder bruger ældre hovedhistorier.
 
 Crawlerens planlagte job kan nu bruge op til 120 minutter (manuelt 180).
-Timerytmen er bevaret, men kørsler overlapper ikke. Max kan øge både
+Crawleren kører hver 4. time, og kørsler overlapper ikke. Max kan øge både
 svartid og tokenforbrug; faktisk køretid og redaktionel kvalitet skal vurderes
 på den første GitHub-kørsel efter push. Lokale kontrakttests bruger simulerede
 API-svar og dokumenterer ikke modellens faktiske kvalitet.

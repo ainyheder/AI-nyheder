@@ -168,7 +168,8 @@ class NewsletterTests(unittest.TestCase):
 
     def test_broken_max_reply_does_not_trigger_hidden_fallback_generation(self):
         import crawler
-        with patch.object(crawler, 'hjerne_model', return_value='deepseek-flash'), \
+        with patch.object(crawler, '_hjerner_cache', {}), \
+             patch.object(crawler, 'hjerne_model', return_value='deepseek-flash'), \
              patch.object(crawler, '_doede_modeller', set()), \
              patch.object(crawler, '_udbyder_noegle', return_value=True), \
              patch.object(crawler, 'kald_deepseek_model', side_effect=http.client.IncompleteRead(b'private')), \
@@ -182,7 +183,8 @@ class NewsletterTests(unittest.TestCase):
         config = json.loads((n.ROOT / "opsaetning/nyhedsbrev.json").read_text())
         self.assertEqual(config["model"], "deepseek-flash")
         self.assertEqual(config["reasoning_effort"], "high")
-        with patch.object(crawler, 'hjerne_model', return_value=None), \
+        with patch.object(crawler, '_hjerner_cache', {}), \
+             patch.object(crawler, 'hjerne_model', return_value=None), \
              patch.object(crawler, 'hjerne_kald', return_value='{"ok": true}') as call:
             for step, budget in (('nyhedsbrev', 100_000), ('nyhedsbrev_kontrol', 100_000)):
                 self.assertEqual(n.ai_call(step, 'Prompt', {'original': SOURCE}), {'ok': True})

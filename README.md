@@ -138,7 +138,7 @@ Et fuldt crawl startes med `python3 crawler.py`. Det bruger de konfigurerede API
 
 ## GitHub og automatisk opdatering
 
-Den eksisterende `.github/workflows/crawl.yml` bruges fortsat. Den kører ved push til `main`, manuelt og hver time. Den kører først regressionstest, derefter crawleren og til sidst kontrol af de genererede filer før commit. Køen deles med modelkataloget; en igangværende kørsel bliver ikke længere afbrudt af nye pushes. En kørsel henter seneste `main`, når den starter. Tidsgrænsen er 50 minutter, eller tre timer ved manuel genkørsel. GitHub Pages serverer filerne fra repoet som hidtil; `CNAME` er bevaret.
+Den eksisterende `.github/workflows/crawl.yml` bruges fortsat. Den kører ved push til `main`, manuelt og hver 4. time. Den kører først regressionstest, derefter crawleren og til sidst kontrol af de genererede filer før commit. Køen deles med modelkataloget; en igangværende kørsel bliver ikke længere afbrudt af nye pushes. En kørsel henter seneste `main`, når den starter. Tidsgrænsen er 50 minutter, eller tre timer ved manuel genkørsel. GitHub Pages serverer filerne fra repoet som hidtil; `CNAME` er bevaret.
 
 Secrets: `DEEPSEEK_API_KEY` eller `GEMINI_API_KEY` til teksten. FLUX kræver `CLOUDFLARE_ACCOUNT_ID` og `CLOUDFLARE_AI_TOKEN` eller et egnet `CLOUDFLARE_API_TOKEN`; Gemini-billeder kræver `GEMINI_API_KEY`. Eksisterende udbydervalg via `AI_UDBYDER` og individuelle instrukser i `_redaktion/hjerner.json` er bevaret. Ingen API-nøgler må lægges i kildekoden.
 

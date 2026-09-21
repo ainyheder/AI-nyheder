@@ -54,7 +54,8 @@ class WorkflowTests(unittest.TestCase):
 
     def test_reservestatus_forklarer_den_konkrete_afleveringsfejl(self):
         p = plan(self.a); p["udvalgte"][0]["skriveopgave"] = ""
-        with patch.object(c, "DEEPSEEK_KEY", "test"), patch.object(agent, "deepseek_kald", return_value=tool("aflever_udgave", p)):
+        with patch.object(c, "_hjerner_cache", {"forside_agent": {"model": "deepseek-flash"}}), \
+             patch.object(c, "DEEPSEEK_KEY", "test"), patch.object(agent, "deepseek_kald", return_value=tool("aflever_udgave", p)):
             context = c.forbered_redaktoer([self.a, self.b], None, NU)
         self.assertIn("skriveopgave har 0 tegn", context["status"]["forklaring"])
         self.assertEqual(context["status"]["status"], "reserve")
