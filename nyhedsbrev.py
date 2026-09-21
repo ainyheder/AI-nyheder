@@ -499,13 +499,14 @@ def ai_call(step, prompt, payload):
     config = json.loads((ROOT / "opsaetning/nyhedsbrev.json").read_text())
     model = crawler.hjerne_model(step) or config["model"]
     effort = crawler.DEEPSEEK_REASONING
+    selected_thinking = crawler.hjerne_thinking(step, model) or (effort if crawler.model_udbyder(model) == "deepseek" else "modelstandard")
     # Flash/high ramte også 32K uden synligt svar. Begge redaktionstrin får
     # nu brugerens valgte loft på 100.000 tokens, inklusive tænkning.
     token_limit = 100_000
     print("AI-trin " + step + ": valgt model " + model
-          + (" · tænkning: " + effort if crawler.model_udbyder(model) == "deepseek" else "")
+          + (" · tænkning: " + selected_thinking)
           + " · tokenloft: " + str(token_limit), flush=True)
-    # Samme Flash-model, med fælles high-tænkning til tekst og kildekontrol.
+    # Trinnets model og ræsonnement vælges i hjerner.json.
     # Tokenloftet omfatter også tænkning. Rå reasoning_content gemmes ikke.
     return crawler.parse_json_objekt(crawler.hjerne_kald(step, prompt, json.dumps(payload, ensure_ascii=False),
                                                        token_limit, config["model"], reasoning_effort=effort))
@@ -694,7 +695,7 @@ def main():
         return
     if os.environ.get("GITHUB_ACTIONS") != "true" or not args.state_dir:
         raise ValueError("Automatisk udsendelse køres kun af GitHub Actions med varig status")
-    if not (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("GEMINI_API_KEY")):
+    if not (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("GEMINI_API_KEY") or os.environ.get("XIAOMI_API_KEY")):
         raise ValueError("Redaktørens API-nøgle mangler")
     process(items, config, GitStore(args.state_dir), Buttondown(os.environ.get("BUTTONDOWN_API_KEY", "")))
 

@@ -194,12 +194,13 @@ python3 opsaetning/opgrader-gamle-artikelsider.py --toerloeb
 ### Modelvalg og modellister
 Under **Modeller & instrukser** viser hvert af de 16 trin sit præcise model-ID,
 valget til næste kørsel og den senest rapporterede model. Forsideagenten kan
-vælge DeepSeek; billedgeneratoren kan vælge Gemini-billedmodeller.
+vælge DeepSeek eller Xiaomi MiMo; billedgeneratoren kan vælge Gemini-billedmodeller.
 Vælg i menuen eller skriv et nyt API-ID. Manuelle modeller gemmes i feltet
 `modeller` i `_redaktion/hjerner.json`; de er ikke adgangskontrolleret.
 
-Modellisterne opdateres automatisk hver dag kl. 02.17 UTC af workflowen
-**Opdatér modellister**, samt ved ændring af selve workflowen eller hentekoden.
+Modellisterne opdateres kun manuelt. Knappen **Opdatér modelliste** i
+indstillingerne åbner workflowen **Opdatér modellister** på GitHub. Vælg
+**Run workflow** for at starte den. Der er hverken tidsplan eller push-trigger.
 Den bruger de eksisterende GitHub Secrets, henter alle sider fra API'erne og
 bevarer sidste gode liste ved fejl. Den starter ingen artikelgenerering eller
 opslag. Pull i GitHub Desktop og genindlæs centralen for at se nye modeller.
@@ -295,3 +296,54 @@ Der er ikke kørt et betalt redaktionsmøde eller sendt noget under gennemgangen
 Testene dokumenterer arbejdsgangen; næste rigtige kørsel skal vise, om modellen
 afleverer korrekt og vælger bedre historier. Agenten har fortsat et afgrænset
 kildekatalog og kan ikke opdage lanceringer, som ingen af kilderne dækker.
+
+
+### Xiaomi MiMo og ræsonnement pr. trin (22.09.2026)
+
+I **Indstillinger → Modeller & instrukser** kan teksttrinene nu vælge
+`mimo-v2.6-flash`, `mimo-v2.6-pro` og `mimo-v2.6-pro-ultraspeed`.
+GitHub-workflows bruger den eksisterende secret `XIAOMI_API_KEY` til Xiaomis
+API. Modelliste-opdateringen henter også Xiaomi og filtrerer TTS/ASR fra.
+Forsideagenten kan vælge DeepSeek eller Xiaomi MiMo; billedgeneratoren bruger FLUX/Gemini.
+Eksisterende aktive modelvalg ændres ikke.
+
+Modeldialogen har et **Ræsonnement · reasoning**-felt:
+
+- DeepSeek Flash/V4 Pro: fra, low, high, max. Standard er projektets fælles high.
+- MiMo 2.6 Flash/Pro/Pro UltraSpeed: til eller fra; standard er til.
+- Gemini 3 Flash/Flash-Lite: modellens dokumenterede niveauer. 3.5/3.6 Flash
+  tilbyder minimal/low/medium/high; 3.7/3.8 Flash og 3.1 Pro tilbyder low/medium/high.
+- Gemini 3.1 Flash Image/Flash-Lite Image: minimal eller high.
+- Gemini 2.5: dynamisk eller eget tokenbudget; Flash/Flash-Lite kan også slås fra.
+  Pro tillader 128–32768 tokens, Flash 1–24576 plus fra, Flash-Lite 512–24576 plus fra.
+- Ukendte model-ID'er bruger modelstandarden, indtil deres muligheder er verificeret.
+  FLUX og billedmodeller uden justerbare niveauer har intet niveauvalg.
+
+Valget gemmes som `thinking` i det enkelte trin i `_redaktion/hjerner.json`,
+fx `"high"`, `"enabled"` eller `"budget:2048"`. Det følger også nyhedsbrevets
+kald og forsideagentens værktøjskald. Skift af model nulstiller ræsonnement til
+standard, så en udbyders niveau aldrig sendes til en anden. Ved fallback
+bruges reservemodellens standard. Ræsonnement ændrer ikke JSON-formatkravene.
+
+Regler og officielle kildelinks findes i `_redaktion/reasoning.json` og deles
+af API-valideringen og modelmenuen. Nye modeller fra API-kataloget får ikke
+automatisk gættede ræsonnementsniveauer. Kilder:
+[Xiaomi Chat API](https://mimo.mi.com/docs/en-US/api/chat/openai-api),
+[DeepSeek thinking](https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/),
+[Gemini thinking](https://ai.google.dev/gemini-api/docs/generate-content/thinking),
+[Gemini billeder](https://ai.google.dev/gemini-api/docs/generate-content/image-generation).
+
+`python3 kommandocentral.py` opdaterer den lokale indstillingsvisning.
+Genindlæs siden, vælg model og ræsonnement, og gem i projektmappen. Som hidtil
+træder ændringer i GitHub-kørslerne i kraft efter commit/push.
+`python3 _redaktion/proeve-reasoning.py` tester transport, nøgleadskillelse,
+fejlsvar og gyldige/ugyldige niveauer uden livekald. DOM-testen
+`_redaktion/proeve-kommando.js` tester valg, modelskift, tokenbudget, gemning og nulstilling.
+
+
+Knappen **Skift alle tekstmodeller** under Modeller & instrukser ændrer model
+og ræsonnement for alle teksttrin i oversigten på én gang, inklusive
+redaktøragenten, motivbeskrivelsen og begge nyhedsbrevstrin. Fællesvalget viser
+DeepSeek og MiMo, som også understøttes af redaktøragenten. Alle instrukser
+og øvrige felter bevares; **Generér illustrationer** ændres ikke. Ændringerne
+lægges i kladden og gemmes med den almindelige Gem-knap.

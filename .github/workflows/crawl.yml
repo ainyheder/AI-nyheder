@@ -80,6 +80,7 @@ jobs:
           python3 _redaktion/proeve-nyhedskilder.py
           python3 _redaktion/proeve-kommandocentral.py
           python3 _redaktion/proeve-modelkatalog.py
+          python3 _redaktion/proeve-reasoning.py
           python3 _redaktion/proeve-flux.py
           python3 _redaktion/proeve-fritlaegning.py
           python3 _redaktion/proeve-redaktionsprompter.py
@@ -92,6 +93,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          XIAOMI_API_KEY: ${{ secrets.XIAOMI_API_KEY }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
           # Sociale opslag. Uden OPSLAG_LIVE=ja skrives der KUN udkast i loggen.
           OPSLAG_LIVE: ${{ vars.OPSLAG_LIVE }}

@@ -14,17 +14,26 @@ def hent(udbyder, key, request=urlopen):
     while True:
         if udbyder == 'DeepSeek':
             url, headers = 'https://api.deepseek.com/models', {'Authorization': 'Bearer ' + key}
+        elif udbyder == 'Xiaomi':
+            url, headers = 'https://api.xiaomimimo.com/v1/models', {'api-key': key}
         else:
             url = 'https://generativelanguage.googleapis.com/v1beta/models?' + urlencode({'pageSize': 100, 'pageToken': token})
             headers = {'x-goog-api-key': key}
         with request(Request(url, headers=headers), timeout=30) as response:
             data = json.load(response)
-        rows = data.get('data' if udbyder == 'DeepSeek' else 'models')
+        rows = data.get('data' if udbyder != 'Gemini' else 'models')
         if not isinstance(rows, list):
             raise ValueError('Ugyldigt modelsvar')
         for row in rows:
-            name = row.get('id', '') if udbyder == 'DeepSeek' else row.get('name', '').removeprefix('models/')
-            if udbyder == 'DeepSeek' and name.startswith('deepseek') or udbyder == 'Gemini' and name.startswith('gemini') and 'generateContent' in row.get('supportedGenerationMethods', []):
+            name = row.get('id', '') if udbyder != 'Gemini' else row.get('name', '').removeprefix('models/')
+            supported = (
+                udbyder == 'Xiaomi' and name.startswith('mimo-')
+                and not any(part in name.split('-') for part in ('tts', 'asr'))
+                or udbyder == 'DeepSeek' and name.startswith('deepseek')
+                or udbyder == 'Gemini' and name.startswith('gemini')
+                and 'generateContent' in row.get('supportedGenerationMethods', [])
+            )
+            if supported:
                 models.add(name)
         token = data.get('nextPageToken') if udbyder == 'Gemini' else None
         if not token:
@@ -44,7 +53,7 @@ def main():
     except (OSError, ValueError):
         data = {'udbydere': {}}
     now = datetime.now(timezone.utc).isoformat()
-    for name, env in [('DeepSeek', 'DEEPSEEK_API_KEY'), ('Gemini', 'GEMINI_API_KEY')]:
+    for name, env in [('DeepSeek', 'DEEPSEEK_API_KEY'), ('Gemini', 'GEMINI_API_KEY'), ('Xiaomi', 'XIAOMI_API_KEY')]:
         previous = data['udbydere'].get(name, {})
         try:
             key = os.environ.get(env)

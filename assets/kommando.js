@@ -56,10 +56,11 @@
       if(!value.feeds.some(f=>f.aktiv!==false)) throw new Error('Behold mindst én aktiv kilde. Hele automatiseringen kan pauses i GitHub Actions.');
     } else if(key==='hjerner') {
       if(value.modeller!==undefined&&(!Array.isArray(value.modeller)||value.modeller.some(m=>typeof m!=='string'||!(allowedModel('omskriv',m)||allowedModel('billedgenerator',m))))) throw new Error('Ugyldig modelliste.');
-      if(value.modelkatalog!==undefined&&(!plain(value.modelkatalog)||Object.entries(value.modelkatalog).some(([n,p])=>!['DeepSeek','Gemini'].includes(n)||!plain(p)||!Array.isArray(p.modeller)||p.modeller.some(m=>typeof m!=='string'||!(allowedModel('omskriv',m)||allowedModel('billedgenerator',m)))))) throw new Error('Ugyldigt API-modelkatalog.');
+      if(value.modelkatalog!==undefined&&(!plain(value.modelkatalog)||Object.entries(value.modelkatalog).some(([n,p])=>!['DeepSeek','Gemini','Xiaomi'].includes(n)||!plain(p)||!Array.isArray(p.modeller)||p.modeller.some(m=>typeof m!=='string'||!(allowedModel('omskriv',m)||allowedModel('billedgenerator',m)))))) throw new Error('Ugyldigt API-modelkatalog.');
       if(!plain(value.hjerner)) throw new Error('Dette er ikke en hjerner.json-fil.');
       for(const [name, step] of Object.entries(value.hjerner)) {
         if(['__proto__','constructor','prototype'].includes(name) || !plain(step)) throw new Error('Ugyldigt arbejdstrin.');
+        if(step.thinking!==undefined && typeof step.thinking!=='string') throw new Error('Ræsonnement skal være tekst.');
         if(step.model!==undefined && typeof step.model!=='string' || step.prompt!==undefined && typeof step.prompt!=='string') throw new Error('Model og instruktion skal være tekst.');
       }
     } else throw new Error('Ukendt indstillingsfil.');
@@ -124,7 +125,7 @@
   // Versionsnavn fra projektets konfiguration (10.09.2026).
   // API-aliaset beholdes synligt og sendes uændret til udbyderen.
   const FLUX_MODEL='@cf/black-forest-labs/flux-2-klein-4b';
-  const MODEL_NAMES = {[FLUX_MODEL]:'FLUX.2 Klein 4B','deepseek-flash':'DeepSeek V4.1 Flash'};
+  const MODEL_NAMES = {[FLUX_MODEL]:'FLUX.2 Klein 4B','deepseek-flash':'DeepSeek V4.1 Flash','mimo-v2.6-flash':'MiMo 2.6 Flash','mimo-v2.6-pro':'MiMo 2.6 Pro','mimo-v2.6-pro-ultraspeed':'MiMo 2.6 Pro UltraSpeed'};
   const modelLabel = id => MODEL_NAMES[id] ? MODEL_NAMES[id]+' · '+id : id;
   function modelDefault(name) {
     const h=brainStatus();
@@ -133,20 +134,23 @@
   function reportedModel(name) {
     return name.startsWith('nyhedsbrev')?null:name==='forside_agent'?editorStatus().model:name==='billedgenerator'?brainStatus().billedmodel:brainStatus().hjerner?.[name]?.model;
   }
+  const BULK_TEXT="all_text";
+  const textSteps=()=>Object.keys(STEP_NAMES).filter(n=>n!=="billedgenerator");
   function allowedModel(name,m) {
+    if(name===BULK_TEXT) return textSteps().every(n=>allowedModel(n,m));
     if(m===FLUX_MODEL) return name==='billedgenerator';
-    return /^(deepseek|gemini)[a-z0-9._-]*$/i.test(m) && (name!=='forside_agent'||m.startsWith('deepseek')) && (name!=='billedgenerator'||m.startsWith('gemini')&&m.includes('image'));
+    return /^(deepseek|gemini|mimo-)[a-z0-9._-]*$/i.test(m) && !/(?:^|-)(tts|asr)(?:-|$)/i.test(m) && (name!=='forside_agent'||m.startsWith('deepseek')||m.startsWith('mimo-')) && (name!=='billedgenerator'||m.startsWith('gemini')&&m.includes('image'));
   }
   function providerCatalog(name) {
     const local=state.drafts.hjerner?.modelkatalog?.[name],remote=state.snapshot.modelkatalog?.udbydere?.[name];
     return local&&(!remote||!(Date.parse(remote.opdateret)>Date.parse(local.opdateret)))?local:remote||{};
   }
   function modelList(name) {
-    return [...new Set([FLUX_MODEL,...(state.drafts.hjerner?.modeller||[]),...['DeepSeek','Gemini'].flatMap(n=>providerCatalog(n).modeller||[]),...Object.values(state.drafts.hjerner?.hjerner||{}).map(s=>s.model),...Object.keys(STEP_NAMES).flatMap(n=>[modelDefault(n),reportedModel(n)])])].filter(m=>typeof m==='string'&&allowedModel(name,m)).sort();
+    return [...new Set([FLUX_MODEL,'mimo-v2.6-flash','mimo-v2.6-pro','mimo-v2.6-pro-ultraspeed',...(state.drafts.hjerner?.modeller||[]),...['DeepSeek','Gemini','Xiaomi'].flatMap(n=>providerCatalog(n).modeller||[]),...Object.values(state.drafts.hjerner?.hjerner||{}).map(s=>s.model),...Object.keys(STEP_NAMES).flatMap(n=>[modelDefault(n),reportedModel(n)])])].filter(m=>typeof m==='string'&&allowedModel(name,m)).sort();
   }
   function models() {
     const h=brainStatus();
-    return `<section class="panel"><div class="panel-body"><h2>Nyhedsbrev · når der er nyt</h2><p>Metatrends kontrolleres én gang i døgnet. Nye breve bearbejdes og kontrolleres, før Buttondown sender dem. GitHub kan forsinke kørslerne. De to arbejdstrin har hver sin model og instruks nedenfor.</p><a class="btn btn-secondary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/nyhedsbrev.yml" target="_blank" rel="noopener">Se kørsler og udsendelsesstatus ↗</a><p class="help">Aktivt efter push til GitHub. Pause: deaktivér workflowet i Actions eller sæt aktiv til false i opsaetning/nyhedsbrev.json.</p></div></section><section class="panel"><div class="panel-body"><div class="inline-actions"><span class="badge badge-green">Automatisk opdatering hver dag</span><button class="btn btn-secondary" data-action="model-list">Administrér modelliste</button><a class="btn btn-secondary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/modeller.yml" target="_blank" rel="noopener">Se automatisk opdatering ↗</a></div><p>GitHub henter hver dag modellisterne fra DeepSeek og Gemini med de eksisterende hemmelige nøgler. Hent projektets ændringer med Pull i GitHub Desktop og genindlæs centralen. Nye modeller bliver valgbare; dine modelvalg ændres ikke automatisk.</p><small class="help">${['DeepSeek','Gemini'].map(n=>{const p=providerCatalog(n);return esc(n)+': '+(p.modeller?.length||0)+' modeller · '+esc(p.status||'Ikke hentet')+' · '+esc(when(p.opdateret));}).join(' · ')||'Modellisterne er endnu ikke hentet fra udbyderne.'}</small></div></section><div class="notice">“Valgt til næste kørsel” er din indstilling. “Senest rapporteret” er crawlerens status, ikke en garanti for, at alle kald lykkedes. Ved API-fejl kan crawleren bruge sin reserve.</div><div class="model-grid">${Object.entries(STEP_NAMES).map(([n,title])=>{const own=state.drafts.hjerner?.hjerner?.[n],s=h.hjerner?.[n]||{},m=own?.model||modelDefault(n);return `<button class="model-card" data-edit-model="${n}"${!state.drafts.hjerner?' disabled':''}><div class="model-card-top">${badge(m===FLUX_MODEL?'Cloudflare':m.startsWith('deepseek')?'DeepSeek':'Gemini', 'green')}${badge(own?.model?'Eget valg':'Standard')}</div><h2>${title}</h2><p>${esc(s.beskrivelse||(n==='forside_agent'?'Vælger og prioriterer historier på tværs af kilder.':n==='nyhedsbrev'?'Læser nye Metatrends-breve og skriver en fyldig dansk fortælling.':n==='nyhedsbrev_kontrol'?'Sammenholder brevet med originalen før afsendelse.':'Tegner billeder ud fra motivbeskrivelsen.'))}</p><small>Valgt til næste kørsel</small><div class="model-card-foot"><div>${MODEL_NAMES[m]?`<strong>${esc(MODEL_NAMES[m])}</strong><br>`:''}<code>${esc(m||'Standard ikke rapporteret')}</code>${m.startsWith('deepseek')?'<br><small>Reasoning: max · næste kørsel</small>':''}</div><span>Skift ↗</span></div><small>${n.startsWith('nyhedsbrev')?'Faktisk kørsel og eventuel reserve: se nyhedsbrevets Actions-log.':'Senest rapporteret: '+esc(modelLabel(reportedModel(n))||'Ikke målt')}</small>${(m.startsWith('deepseek')&&h.deepseek_tilgaengelig===false||m.startsWith('gemini')&&h.gemini_tilgaengelig===false)?'<p class="source-error">API-nøgle manglede ved seneste måling.</p>':''}</button>`;}).join('')}</div>`;
+    return `<section class="panel"><div class="panel-body"><h2>Nyhedsbrev · når der er nyt</h2><p>Metatrends kontrolleres én gang i døgnet. Nye breve bearbejdes og kontrolleres, før Buttondown sender dem. GitHub kan forsinke kørslerne. De to arbejdstrin har hver sin model og instruks nedenfor.</p><a class="btn btn-secondary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/nyhedsbrev.yml" target="_blank" rel="noopener">Se kørsler og udsendelsesstatus ↗</a><p class="help">Aktivt efter push til GitHub. Pause: deaktivér workflowet i Actions eller sæt aktiv til false i opsaetning/nyhedsbrev.json.</p></div></section><section class="panel"><div class="panel-body"><div class="inline-actions"><span class="badge badge-green">Manuel opdatering</span><button class="btn btn-primary" data-action="bulk-model"${!state.drafts.hjerner?' disabled':''}>Skift alle tekstmodeller</button><button class="btn btn-secondary" data-action="model-list">Administrér modelliste</button><a class="btn btn-secondary" href="https://github.com/ainyheder/AI-nyheder/actions/workflows/modeller.yml" target="_blank" rel="noopener" data-manual-model-update>Opdatér modelliste ↗</a></div><p>Tryk “Opdatér modelliste”, og vælg “Run workflow” på GitHub for at hente modeller fra DeepSeek, Gemini og Xiaomi MiMo. Når kørslen er færdig, tryk Pull i GitHub Desktop og genindlæs indstillingerne. Opdateringen kører kun, når du selv starter den. Dine modelvalg og kladder bevares.</p><small class="help">${['DeepSeek','Gemini','Xiaomi'].map(n=>{const p=providerCatalog(n);return esc(n)+': '+(p.modeller?.length||0)+' modeller · '+esc(p.status||'Ikke hentet')+' · '+esc(when(p.opdateret));}).join(' · ')||'Modellisterne er endnu ikke hentet fra udbyderne.'}</small></div></section><div class="notice">“Valgt til næste kørsel” er din indstilling. “Senest rapporteret” er crawlerens status, ikke en garanti for, at alle kald lykkedes. Ved API-fejl kan crawleren bruge sin reserve.</div><div class="model-grid">${Object.entries(STEP_NAMES).map(([n,title])=>{const own=state.drafts.hjerner?.hjerner?.[n],s=h.hjerner?.[n]||{},m=own?.model||modelDefault(n);return `<button class="model-card" data-edit-model="${n}"${!state.drafts.hjerner?' disabled':''}><div class="model-card-top">${badge(m===FLUX_MODEL?'Cloudflare':m.startsWith('deepseek')?'DeepSeek':m.startsWith('mimo-')?'Xiaomi':'Gemini', 'green')}${badge(own?.model?'Eget valg':'Standard')}</div><h2>${title}</h2><p>${esc(s.beskrivelse||(n==='forside_agent'?'Vælger og prioriterer historier på tværs af kilder.':n==='nyhedsbrev'?'Læser nye Metatrends-breve og skriver en fyldig dansk fortælling.':n==='nyhedsbrev_kontrol'?'Sammenholder brevet med originalen før afsendelse.':'Tegner billeder ud fra motivbeskrivelsen.'))}</p><small>Valgt til næste kørsel</small><div class="model-card-foot"><div>${MODEL_NAMES[m]?`<strong>${esc(MODEL_NAMES[m])}</strong><br>`:''}<code>${esc(m||'Standard ikke rapporteret')}</code><br><small>Ræsonnement: ${esc(thinkingLabel(n,m))} · næste kørsel</small></div><span>Skift ↗</span></div><small>${n.startsWith('nyhedsbrev')?'Faktisk kørsel og eventuel reserve: se nyhedsbrevets Actions-log.':'Senest rapporteret: '+esc(modelLabel(reportedModel(n))||'Ikke målt')}</small>${(m.startsWith('deepseek')&&h.deepseek_tilgaengelig===false||m.startsWith('gemini')&&h.gemini_tilgaengelig===false||m.startsWith('mimo-')&&h.xiaomi_tilgaengelig===false)?'<p class="source-error">API-nøgle manglede ved seneste måling.</p>':''}</button>`;}).join('')}</div>`;
   }
   function images() {
     const h=brainStatus(),a=articleStatus(),p=state.drafts.hjerner?.hjerner?.motiv?.prompt || h.hjerner?.motiv?.standard_prompt || '';
@@ -233,14 +237,38 @@
     const f=index===null?{navn:'',url:'',kategori:'Labs',max:12}:state.drafts.feeds.feeds[index];
     openDialog(index===null?'Tilføj nyhedskilde':f.navn,`<form id="source-form" data-index="${index===null?'new':index}"><div class="settings-grid"><div class="field"><label for="source-name">Kildens navn</label><input id="source-name" name="navn" value="${esc(f.navn)}" required></div><div class="field"><label for="source-max">Kandidater pr. kørsel</label><input id="source-max" type="number" name="max" min="1" value="${esc(f.max||25)}" required></div><div class="field field-wide"><label for="source-url">Feed eller nyhedsoversigt</label><input id="source-url" name="url" type="url" value="${esc(f.url)}" placeholder="https://…" required></div><div class="field"><label for="source-format">Format</label><select id="source-format" name="format"><option value="feed"${f.format!=='nyhedsoversigt'?' selected':''}>RSS / Atom</option><option value="nyhedsoversigt"${f.format==='nyhedsoversigt'?' selected':''}>Dateret nyhedsoversigt</option></select></div><div class="field"><label for="source-category">Reservekategori</label><input id="source-category" name="kategori" value="${esc(f.kategori||'Nyheder')}"></div><div class="field field-wide"><label class="checkbox-label"><input type="checkbox" name="kun_aktuel"${f.kun_aktuel?' checked':''}> Kun aktuelle overskrifter — ingen arkivering eller genfortælling</label></div></div><p class="help">Nyhedsoversigter er understøttet for Anthropic og xAI. En ny adresse kræver en kontrol af, at crawleren kan læse den.</p><p class="form-error" id="source-error" role="alert"></p><div class="inline-actions"><button class="btn btn-primary" type="submit">Brug ændringer</button><button class="btn btn-secondary" type="button" data-action="close-dialog">Annullér</button></div></form>`);
   }
+  const THINKING_LABELS={disabled:'Fra',enabled:'Til',minimal:'Minimal',low:'Low · lav',medium:'Medium · mellem',high:'High · høj',max:'Max · maksimal',dynamic:'Dynamisk',budget:'Eget tokenbudget'};
+  function reasoningRule(model) {
+    return (state.snapshot.reasoning_catalog?.rules||[]).find(r=>new RegExp(r.pattern).test(model||''))||{};
+  }
+  function thinkingLabel(name,model) {
+    const value=state.drafts.hjerner?.hjerner?.[name]?.thinking;
+    if(value) return value.startsWith('budget:')?value.slice(7)+' tænketokens':THINKING_LABELS[value]||value;
+    return reasoningRule(model).kind==='deepseek'?'Standard · '+(state.snapshot.deepseek_reasoning_default||'high'):'Modelstandard';
+  }
+  function updateThinking(saved='') {
+    const form=$('model-form');if(!form)return;
+    const model=form.elements.model.value==='manual'?form.elements.manualModel.value.trim():form.elements.model.value||modelDefault(form.dataset.step);
+    const rule=reasoningRule(model),levels=rule.levels||[],select=$('step-thinking');
+    select.innerHTML='<option value="">'+(rule.kind==='deepseek'?'Standard · '+esc(state.snapshot.deepseek_reasoning_default||'high'):'Modelstandard')+'</option>'+levels.map(v=>`<option value="${v}">${THINKING_LABELS[v]}</option>`).join('');
+    const choice=saved.startsWith('budget:')?'budget':saved;
+    select.value=levels.includes(choice)?choice:'';select.disabled=!levels.length;
+    const budget=$('thinking-budget');budget.min=rule.minimum||1;budget.max=rule.maximum||32768;
+    budget.value=saved.startsWith('budget:')?saved.slice(7):String(Math.max(rule.minimum||1,1024));
+    $('thinking-budget-field').hidden=select.value!=='budget';
+    $('thinking-help').textContent=rule.kind==='xiaomi'?'MiMo understøtter til/fra, ikke low/high/max.':rule.kind==='budget'?`Denne model bruger et budget på ${rule.minimum}–${rule.maximum} tænketokens. Dynamisk lader modellen vælge.`:rule.kind==='none'?'Denne model har ingen justerbare ræsonnementsniveauer.':levels.length?'Højere niveau kan give længere svartid og større tokenforbrug. Minimal betyder ikke nødvendigvis helt fra.':'Niveauerne for dette model-ID er ikke verificeret. Modelstandarden bruges.';
+    $('thinking-source').innerHTML=rule.source?`<a href="${esc(rule.source)}" target="_blank" rel="noopener">Udbyderens dokumentation ↗</a>`:'';
+  }
   function editModel(name) {
-    if(!STEP_NAMES[name]||!state.drafts.hjerner) return;
-    const h=name==='billedgenerator'?{standard_prompt:brainStatus().billed_standard_prompt||''}:brainStatus().hjerner?.[name]||{},own=state.drafts.hjerner.hjerner[name]||{},special=name==='forside_agent';
-    openDialog(STEP_NAMES[name],`<form id="model-form" data-step="${name}"><div class="field"><label for="step-model">Vælg præcis model</label><select id="step-model" name="model"><option value="">Standard · ${esc(modelLabel(modelDefault(name)))}</option>${modelList(name).map(m=>`<option value="${esc(m)}"${own.model===m?' selected':''}>${esc(modelLabel(m))}</option>`).join('')}<option value="manual">Skriv et nyt model-ID …</option></select></div><div class="field" id="manual-model-field" hidden><label for="manual-model">Nyt model-ID fra udbyderen</label><input id="manual-model" name="manualModel" placeholder="Præcist API-navn"></div><p class="help">${name==='forside_agent'?'Forsideagenten bruger DeepSeek med værktøjskald.':name==='billedgenerator'?'Vælg FLUX.2 Klein 4B via Cloudflare eller en Gemini-billedmodel.':'DeepSeek og Gemini er understøttet.'} Listen er ikke en garanti for adgang eller kvote på din konto.</p>${special?'':`<div class="field"><label for="step-prompt">${name==='billedgenerator'?'Visuel stil til billedgeneratoren':'Instruktion'}</label><textarea id="step-prompt" name="prompt" rows="16">${esc(own.prompt||h.standard_prompt||'')}</textarea></div>`}<p class="form-error" id="model-error" role="alert"></p><div class="inline-actions"><button class="btn btn-primary" type="submit">Brug ændringer</button><button class="btn btn-secondary" type="button" data-reset-model="${name}">Gendan indbygget standard</button></div></form>`);
+    const bulk=name===BULK_TEXT;
+    if((!STEP_NAMES[name]&&!bulk)||!state.drafts.hjerner) return;
+    const h=name==='billedgenerator'?{standard_prompt:brainStatus().billed_standard_prompt||''}:brainStatus().hjerner?.[name]||{},own=state.drafts.hjerner.hjerner[name]||{},special=name==='forside_agent'||bulk;
+    openDialog(bulk?'Skift alle tekstmodeller':STEP_NAMES[name],`<form id="model-form" data-step="${name}">${bulk?`<p>Vælg fælles model og ræsonnement til alle ${textSteps().length} teksttrin, inklusive redaktøragenten og nyhedsbrevet. Instrukserne og “Generér illustrationer” bevares.</p><p class="help">Fællesvalget tilbyder DeepSeek og MiMo, som også understøttes af redaktøragenten. Gemini kan fortsat vælges på de enkelte teksttrin.</p>`:''}<div class="field"><label for="step-model">Vælg præcis model</label><select id="step-model" name="model"><option value=""${bulk?' disabled selected':''}>${bulk?'Vælg en fælles model …':'Standard · '+esc(modelLabel(modelDefault(name)))}</option>${modelList(name).map(m=>`<option value="${esc(m)}"${own.model===m?' selected':''}>${esc(modelLabel(m))}</option>`).join('')}<option value="manual">Skriv et nyt model-ID …</option></select></div><div class="field" id="manual-model-field" hidden><label for="manual-model">Nyt model-ID fra udbyderen</label><input id="manual-model" name="manualModel" placeholder="Præcist API-navn"></div><p class="help">${name==='forside_agent'?'Forsideagenten understøtter DeepSeek og Xiaomi MiMo med værktøjskald.':name==='billedgenerator'?'Vælg FLUX.2 Klein 4B via Cloudflare eller en Gemini-billedmodel.':'DeepSeek, Gemini og Xiaomi MiMo er understøttet.'} Listen er ikke en garanti for adgang eller kvote på din konto.</p><div class="field"><label for="step-thinking">Ræsonnement · reasoning</label><select id="step-thinking" name="thinking"></select><p class="help" id="thinking-help"></p><small id="thinking-source"></small></div><div class="field" id="thinking-budget-field" hidden><label for="thinking-budget">Budget til tænkning (tokens)</label><input id="thinking-budget" type="number" step="1" name="thinkingBudget"></div>${special?'':`<div class="field"><label for="step-prompt">${name==='billedgenerator'?'Visuel stil til billedgeneratoren':'Instruktion'}</label><textarea id="step-prompt" name="prompt" rows="16">${esc(own.prompt||h.standard_prompt||'')}</textarea></div>`}<p class="form-error" id="model-error" role="alert"></p><div class="inline-actions"><button class="btn btn-primary" type="submit">${bulk?'Brug på alle teksttrin':'Brug ændringer'}</button>${bulk?'<button class="btn btn-secondary" type="button" data-action="close-dialog">Annullér</button>':`<button class="btn btn-secondary" type="button" data-reset-model="${name}">Gendan indbygget standard</button>`}</div></form>`);
+    updateThinking(own.thinking||'');
   }
   function setOverride(name,fields) {
     const all=state.drafts.hjerner.hjerner,old=copy(all[name]||{});
-    for(const key of ['model','prompt']) if(fields[key]?.trim()) old[key]=fields[key].trim();else delete old[key];
+    for(const key of ['model','prompt','thinking']) if(fields[key]?.trim()) old[key]=fields[key].trim();else delete old[key];
     if(Object.keys(old).length) all[name]=old;else delete all[name];changed();
   }
   document.addEventListener('click',async event=>{
@@ -252,6 +280,7 @@
     const target=event.target.closest('[data-action]');if(!target)return;
     try {
       switch(target.dataset.action) {
+        case 'bulk-model': editModel(BULK_TEXT);break;
         case 'model-list': if(!state.drafts.hjerner) break;openDialog('Din modelliste', `<form id="catalog-form"><p>Tilføj præcise API-navne, ét pr. linje. Manuelle modeller er ikke adgangskontrolleret. Udbydernes modeller og eksisterende valg bliver fortsat vist.</p><div class="field"><label for="catalog-models">Manuelt tilføjede modeller</label><textarea id="catalog-models" rows="12">${esc((state.drafts.hjerner.modeller||[]).join('\n'))}</textarea></div><p id="catalog-error" class="form-error" role="alert"></p><button class="btn btn-primary">Brug modellisten</button></form>`);break;
         case 'connect': await connect();break;
         case 'save': await saveChanges();break;
@@ -267,12 +296,14 @@
   });
   document.addEventListener('click',event=>{const button=event.target.closest('[data-download]');if(button)try {download(button.dataset.download);}catch(error){notify(error.message,'error');}});
   document.addEventListener('input',event=>{
+    if(event.target.id==='manual-model') updateThinking();
     if(event.target.id==='source-search') {state.query=event.target.value;$('source-list').innerHTML=sourceRows();}
     if(event.target.dataset.field==='direction') {state.drafts.retning=event.target.value;$('direction-count').textContent=event.target.value.length;changed();}
-    if(event.target.dataset.field==='image-prompt'&&state.drafts.hjerner) {const existing=state.drafts.hjerner.hjerner.motiv||{};setOverride('motiv',{model:existing.model,prompt:event.target.value===brainStatus().hjerner?.motiv?.standard_prompt?'':event.target.value});}
+    if(event.target.dataset.field==='image-prompt'&&state.drafts.hjerner) {const existing=state.drafts.hjerner.hjerner.motiv||{};setOverride('motiv',{model:existing.model,thinking:existing.thinking,prompt:event.target.value===brainStatus().hjerner?.motiv?.standard_prompt?'':event.target.value});}
   });
   document.addEventListener('change',event=>{
-    if(event.target.id==='step-model') $('manual-model-field').hidden=event.target.value!=='manual';
+    if(event.target.id==='step-model') {$('manual-model-field').hidden=event.target.value!=='manual';updateThinking();}
+    if(event.target.id==='step-thinking') $('thinking-budget-field').hidden=event.target.value!=='budget';
     const index=event.target.dataset.sourceToggle;if(index!==undefined) {state.drafts.feeds.feeds[Number(index)].aktiv=event.target.checked;changed();renderNav();$('source-list').innerHTML=sourceRows();}
   });
   document.addEventListener('submit',async event=>{
@@ -284,16 +315,28 @@
     }
     if(event.target.id==='catalog-form') {
       event.preventDefault();const models=[...new Set($('catalog-models').value.split(/\s+/).filter(Boolean))];
-      if(models.some(m=>!allowedModel('omskriv',m))) {$('catalog-error').textContent='Brug præcise DeepSeek- eller Gemini-modelnavne.';return;}
+      if(models.some(m=>!allowedModel('omskriv',m))) {$('catalog-error').textContent='Brug præcise DeepSeek-, Gemini- eller MiMo-modelnavne.';return;}
       state.drafts.hjerner.modeller=models;changed();$('edit-dialog').close();render();
     }
     if(event.target.id==='model-form') {
       event.preventDefault();const f=event.target,name=f.dataset.step,model=(f.elements.model.value==='manual'?f.elements.manualModel.value:f.elements.model.value).trim(),prompt=f.elements.prompt?.value||'';
       const original=state.drafts.hjerner.hjerner[name]?.model;
       if(model&&model!==original&&!allowedModel(name,model)) {$('model-error').textContent='Vælg en understøttet model til dette trin, som din API-konto har adgang til.';return;}
-      if(f.elements.model.value==='manual'&&!model) {$('model-error').textContent='Skriv et model-ID.';return;}
+      if((f.elements.model.value==='manual'||name===BULK_TEXT)&&!model) {$('model-error').textContent='Skriv et model-ID.';return;}
+      const thinking=f.elements.thinking.value==='budget'?'budget:'+f.elements.thinkingBudget.value:f.elements.thinking.value;
+      const rule=reasoningRule(model||modelDefault(name));
+      if(thinking.startsWith('budget:')&&(!/^budget:[0-9]+$/.test(thinking)||Number(thinking.slice(7))<rule.minimum||Number(thinking.slice(7))>rule.maximum)) {$('model-error').textContent='Vælg et helt tokenbudget inden for modellens interval.';return;}
       if(model) state.drafts.hjerner.modeller=[...new Set([...(state.drafts.hjerner.modeller||[]),model])];
-      setOverride(name,{model,prompt:prompt===brainStatus().hjerner?.[name]?.standard_prompt?'':prompt});$('edit-dialog').close();render();
+      if(name===BULK_TEXT) {
+        for(const step of textSteps()) {
+          const previous=state.drafts.hjerner.hjerner[step]||{};
+          const next={...previous,model};
+          if(thinking) next.thinking=thinking;else delete next.thinking;
+          state.drafts.hjerner.hjerner[step]=next;
+        }
+        changed();$('edit-dialog').close();render();notify('Model og ræsonnement er ændret for alle teksttrin. Gem ændringerne i projektmappen.');return;
+      }
+      setOverride(name,{model,thinking,prompt:prompt===brainStatus().hjerner?.[name]?.standard_prompt?'':prompt});$('edit-dialog').close();render();
     }
   });
   $('mobile-nav').addEventListener('click',()=>{const open=document.body.classList.toggle('nav-open');$('mobile-nav').setAttribute('aria-expanded',String(open));});
@@ -311,5 +354,5 @@
   const hash=location.hash.slice(1);if(VIEWS[hash])state.view=hash;
   render();
   if(!snapshot.version)notify('Statusfilen kunne ikke læses. Tilslut projektmappen for at redigere indstillinger, eller hent projektets seneste opdatering.','error');
-  window.Kommando={canonical,validateConfig,state,render,navigate,connectDirectory,saveChanges,dirtyKeys,setOverride,modelList};
+  window.Kommando={canonical,validateConfig,state,render,navigate,connectDirectory,saveChanges,dirtyKeys,setOverride,modelList,reasoningRule};
 })();

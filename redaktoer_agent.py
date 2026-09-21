@@ -15,7 +15,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
 import redaktion
-from _redaktion.ai_indstillinger import DEEPSEEK_TIMEOUT, deepseek_parametre
+from _redaktion.ai_indstillinger import DEEPSEEK_TIMEOUT, deepseek_parametre, validate_thinking
 
 VERSION = 2
 MAX_KALD = 7
@@ -157,10 +157,10 @@ def hent_kilde(url):
     return {"tekst": "\n\n".join(p for p in clean if len(p) >= 35)[:MAX_TEKST], "henvisninger": links[:12]}
 
 
-def deepseek_kald(noegle, model, messages, tools):
+def deepseek_kald(noegle, model, messages, tools, *, thinking=None):
     """Ægte tool-calling; kun denne funktion sender noget til modeludbyderen."""
     body = {"model": model, "messages": messages, "tools": tools,
-            "tool_choice": "required", **deepseek_parametre(4000), "stream": False}
+            "tool_choice": "required", **deepseek_parametre(4000, thinking), "stream": False}
     request = urllib.request.Request("https://api.deepseek.com/chat/completions",
               data=json.dumps(body, ensure_ascii=False).encode(),
               headers={"Authorization": "Bearer " + noegle, "Content-Type": "application/json"})
@@ -169,6 +169,25 @@ def deepseek_kald(noegle, model, messages, tools):
     choice = data["choices"][0]
     if choice.get("finish_reason") != "tool_calls":
         raise ValueError("Agentens svar blev afbrudt")
+    return choice["message"]
+
+
+def xiaomi_kald(noegle, model, messages, tools, *, thinking=None):
+    """MiMo understøtter auto-toolvalg; agenten validerer selve afleveringen."""
+    if not noegle:
+        raise ValueError("XIAOMI_API_KEY mangler")
+    body = {"model": model, "messages": messages, "tools": tools,
+            "tool_choice": "auto", "max_completion_tokens": 32768,
+            "thinking": {"type": validate_thinking(model, thinking) or "enabled"},
+            "stream": False}
+    request = urllib.request.Request("https://api.xiaomimimo.com/v1/chat/completions",
+              data=json.dumps(body, ensure_ascii=False).encode(),
+              headers={"api-key": noegle, "Content-Type": "application/json"})
+    with urllib.request.urlopen(request, timeout=DEEPSEEK_TIMEOUT) as response:
+        data = json.loads(response.read(1_000_000))
+    choice = data["choices"][0]
+    if choice.get("finish_reason") not in ("tool_calls", "stop"):
+        raise ValueError("MiMo-agentens svar blev afbrudt")
     return choice["message"]
 
 
@@ -382,10 +401,18 @@ class Redaktion:
             self.antal_kald += 1
             reply = self.kald(messages, aktive_tools)
             calls = reply.get("tool_calls") if isinstance(reply, dict) else None
+            if not calls and isinstance(reply, dict) and isinstance(reply.get("content"), str) and reply["content"].strip():
+                # MiMo har kun auto-toolvalg. Bed om værktøjskald igen inden
+                # for det eksisterende rundeloft; prosa er aldrig en aflevering.
+                messages.append({k: reply[k] for k in ("content", "reasoning_content") if k in reply} | {"role": "assistant"})
+                messages.append({"role": "user", "content":
+                    "Brug et af de tilgængelige værktøjer. En udgave skal afleveres med aflever_udgave; tekst alene er ikke en aflevering."})
+                sidste_fejl = "Agenten svarede med tekst uden værktøjskald"
+                continue
             if not isinstance(calls, list) or not 1 <= len(calls) <= 8:
                 raise UdgaveFejl("Agenten afleverede ikke gyldige værktøjskald")
             assistant = {"role": "assistant", "content": reply.get("content"), "tool_calls": calls}
-            # DeepSeek kræver dette felt ved fortsatte thinking-tool-kald.
+            # DeepSeek og MiMo bruger dette felt ved fortsatte thinking-tool-kald.
             # Bevares kun i samtalens hukommelse, aldrig i status eller log.
             if isinstance(reply.get("reasoning_content"), str):
                 assistant["reasoning_content"] = reply["reasoning_content"]

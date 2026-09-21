@@ -14,6 +14,8 @@ let passed = 0, failed = 0;
 
 function fixture() {
   return {
+    reasoning_catalog: JSON.parse(fs.readFileSync(path.join(ROOT,"_redaktion/reasoning.json"),"utf8")),
+    deepseek_reasoning_default:"high",
     version: 1, genereret: "2026-09-11T14:45:00Z",
     tilgaengelige: { feeds: true, hjerner: true, redaktoer: true, artikler: true,
       redaktoer_status: true, hjerner_status: true, kilder: true, laesertal: true },
@@ -227,6 +229,85 @@ async function run() {
     assert.equal(validate("hjerner", fixture().hjerner_fil), true);
   }));
 
+  await check("Bulk model changes every text card and preserves image settings and prompts", () => usingPanel(async p => {
+    const dir=fakeDirectory();await p.app.connectDirectory(dir.handle);p.app.navigate('models');
+    const steps=p.app.state.drafts.hjerner.hjerner;
+    steps.billedgenerator={model:'@cf/black-forest-labs/flux-2-klein-4b',prompt:'Image style',custom:{keep:1}};
+    steps.motiv={...steps.motiv,prompt:'  Keep whitespace exactly.  ',thinking:'high'};
+    steps.brief={model:'deepseek-flash',prompt:'Writer prompt',future:'preserve'};
+    const before=clone(steps);
+    p.d.querySelector('[data-action="bulk-model"]').click();
+    const form=p.d.getElementById('model-form');
+    form.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.deepEqual(clone(steps),before,'Empty choice changes nothing');
+    const choice=p.d.getElementById('step-model');
+    assert(Array.from(choice.options).some(o=>o.value==='mimo-v2.6-pro'));
+    assert(!Array.from(choice.options).some(o=>o.value.startsWith('gemini')));
+    choice.value='mimo-v2.6-pro';choice.dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    p.d.getElementById('step-thinking').value='enabled';
+    form.dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    for(const card of p.d.querySelectorAll('[data-edit-model]')) {
+      const name=card.dataset.editModel;if(name==='billedgenerator')continue;
+      assert.equal(steps[name].model,'mimo-v2.6-pro',name);
+      assert.equal(steps[name].thinking,'enabled',name);
+    }
+    assert.deepEqual(clone(steps.billedgenerator),before.billedgenerator);
+    assert.equal(steps.motiv.prompt,before.motiv.prompt);
+    assert.deepEqual(clone(steps.motiv.custom),before.motiv.custom);
+    assert.equal(steps.brief.future,'preserve');
+    await p.app.saveChanges();
+    const saved=JSON.parse(dir.content[CONFIG_PATHS[1]]).hjerner;
+    assert.equal(saved.forside_agent.model,'mimo-v2.6-pro');
+    assert.deepEqual(saved.billedgenerator,before.billedgenerator);
+    p.d.querySelector('[data-action="bulk-model"]').click();
+    p.d.getElementById('step-model').value='deepseek-flash';
+    p.d.getElementById('step-model').dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.equal(steps.brief.thinking,undefined,'Modelstandard removes old provider reasoning');
+    assert.equal(steps.brief.prompt,'Writer prompt');
+  }));
+
+  await check("Reasoning menus follow model, persist and reset", () => usingPanel(async p => {
+    const dir=fakeDirectory();await p.app.connectDirectory(dir.handle);p.app.navigate('models');
+    p.d.querySelector('[data-edit-model="motiv"]').click();
+    const choose=model=>{const el=p.d.getElementById('step-model');el.value='manual';el.dispatchEvent(new p.w.Event('change',{bubbles:true}));const input=p.d.getElementById('manual-model');input.value=model;input.dispatchEvent(new p.w.Event('input',{bubbles:true}));};
+    const levels=()=>Array.from(p.d.getElementById('step-thinking').options,o=>o.value);
+    choose('deepseek-flash');assert.deepEqual(levels(),['','disabled','low','high','max']);
+    choose('mimo-v2.6-pro');assert.deepEqual(levels(),['','disabled','enabled']);
+    p.d.getElementById('step-thinking').value='enabled';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,'enabled');
+    await p.app.saveChanges();assert.equal(JSON.parse(dir.content[CONFIG_PATHS[1]]).hjerner.motiv.thinking,'enabled');
+    p.d.querySelector('[data-edit-model="motiv"]').click();assert.equal(p.d.getElementById('step-thinking').value,'enabled');
+    choose('gemini-3.6-flash');assert.deepEqual(levels(),['','minimal','low','medium','high']);
+    assert.equal(p.d.getElementById('step-thinking').value,'');
+    choose('gemini-3.8-flash');assert.deepEqual(levels(),['','low','medium','high']);
+    choose('gemini-2.5-pro');assert.deepEqual(levels(),['','dynamic','budget']);
+    const select=p.d.getElementById('step-thinking');select.value='budget';select.dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    assert.equal(p.d.getElementById('thinking-budget-field').hidden,false);
+    p.d.getElementById('thinking-budget').value='10';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.match(p.d.getElementById('model-error').textContent,/interval/);
+    p.d.getElementById('thinking-budget').value='2048';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,'budget:2048');
+    p.d.querySelector('[data-edit-model="motiv"]').click();
+    choose('gemini-unknown');assert.equal(p.d.getElementById('step-thinking').disabled,true);
+    p.d.querySelector('[data-reset-model="motiv"]').click();
+    assert.equal(p.app.state.drafts.hjerner.hjerner.motiv.thinking,undefined);
+    assert(p.app.modelList('brief').includes('mimo-v2.6-flash'));
+    assert(p.app.modelList('forside_agent').includes('mimo-v2.6-flash'));
+    p.d.querySelector('[data-edit-model="forside_agent"]').click();
+    const agentModel=p.d.getElementById('step-model');agentModel.value='mimo-v2.6-pro';agentModel.dispatchEvent(new p.w.Event('change',{bubbles:true}));
+    assert.deepEqual(levels(),['','disabled','enabled']);
+    p.d.getElementById('step-thinking').value='enabled';
+    p.d.getElementById('model-form').dispatchEvent(new p.w.Event('submit',{bubbles:true,cancelable:true}));
+    assert.equal(p.app.state.drafts.hjerner.hjerner.forside_agent.model,'mimo-v2.6-pro');
+    await p.app.saveChanges();
+    assert.equal(JSON.parse(dir.content[CONFIG_PATHS[1]]).hjerner.forside_agent.thinking,'enabled');
+    assert(!p.app.modelList('billedgenerator').includes('mimo-v2.6-flash'));
+  }));
+
   await check("Source toggles preserve unknown fields and baseline until saved", () => usingPanel(async p => {
     const dir = fakeDirectory(); await p.app.connectDirectory(dir.handle); p.app.navigate("sources");
     const before = clone(p.app.state.baseline.feeds);
@@ -370,10 +451,20 @@ async function run() {
     assert.ok([...p.d.getElementById('step-model').options].every(o=>!o.value.startsWith('gemini')));
   }));
 
-  await check("Automatic catalogs need no browser keys or API requests", () => usingPanel(p => {
+  await check("Manual catalog update links to GitHub without browser keys", () => usingPanel(p => {
     p.app.navigate('models');
     assert.equal(p.d.querySelectorAll('[data-update-provider], #provider-key').length,0);
-    assert.match(p.d.getElementById('view-content').textContent,/Automatisk opdatering hver dag/);
+    const content=p.d.getElementById('view-content').textContent;
+    assert.match(content,/Manuel opdatering/);
+    assert.match(content,/Run workflow/);
+    assert.doesNotMatch(content,/Automatisk opdatering hver dag|Se automatisk opdatering/);
+    const update=p.d.querySelector('[data-manual-model-update]');
+    assert.equal(update.href,'https://github.com/ainyheder/AI-nyheder/actions/workflows/modeller.yml');
+    assert.equal(update.target,'_blank');
+    assert.match(update.textContent,/Opdatér modelliste/);
+    const workflow=fs.readFileSync(path.join(ROOT,'.github/workflows/modeller.yml'),'utf8');
+    assert.match(workflow,/^  workflow_dispatch:/m);
+    assert.doesNotMatch(workflow,/^  (schedule|push):/m);
     p.app.state.snapshot.modelkatalog={udbydere:{Gemini:{modeller:Array.from({length:40},(_,i)=>'gemini-model-'+i),opdateret:'2026-09-12T00:00:00Z'}}};
     assert.equal(p.app.modelList('omskriv').filter(m=>m.startsWith('gemini-model-')).length,40);
   }));

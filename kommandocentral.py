@@ -8,6 +8,7 @@ GitHub skriver udgivelsens pakke med --offentlig.
 
 from collections import Counter
 from datetime import datetime, timezone
+from _redaktion.ai_indstillinger import REASONING_CATALOG, DEEPSEEK_REASONING
 import json
 from pathlib import Path
 import re
@@ -85,11 +86,11 @@ def _artikelstatus(data, root):
 
 def _hjernerstatus(data):
     status = _felter(data, ("opdateret", "daglig_model", "udbyder", "billedmodel", "billed_standard", "forside_standard", "billed_standard_prompt",
-                           "gemini_tilgaengelig", "deepseek_tilgaengelig", "cloudflare_tilgaengelig"))
+                           "gemini_tilgaengelig", "deepseek_tilgaengelig", "xiaomi_tilgaengelig", "cloudflare_tilgaengelig"))
     hjerner = data.get("hjerner")
     status["hjerner"] = {
         k: _felter(v, ("beskrivelse", "model", "udbyder", "egen_model", "egen_prompt",
-                       "standard_prompt", "aktiv_prompt"))
+                       "standard_prompt", "aktiv_prompt", "thinking", "reasoning_effort"))
         for k, v in (hjerner.items() if isinstance(hjerner, dict) else [])
         if isinstance(v, dict)
     }
@@ -208,6 +209,8 @@ def skriv_kommando_data(root, *, offentlig=False):
         "redaktoer_status": _redaktoerstatus(redaktoer),
         "hjerner_status": _hjernerstatus(hjerne_status),
         "nyhedsbrev": newsletter,
+        "reasoning_catalog": REASONING_CATALOG,
+        "deepseek_reasoning_default": DEEPSEEK_REASONING,
         "modelkatalog": laes("modelkatalog", "data/modeller.json", {}),
         "kilder": _kildestatus(kilder),
         "laesertal": _laeserstatus(laesertal),

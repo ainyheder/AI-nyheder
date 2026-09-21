@@ -18,7 +18,7 @@ import json
 import redaktion
 import udgivelse
 import modellanceringer
-from _redaktion.ai_indstillinger import DEEPSEEK_REASONING, DEEPSEEK_TIMEOUT, deepseek_parametre
+from _redaktion.ai_indstillinger import DEEPSEEK_REASONING, DEEPSEEK_TIMEOUT, deepseek_parametre, validate_thinking, gemini_thinking
 import redaktoer_agent
 from kommandocentral import skriv_kommando_data
 from nyhedskilder import parse_nyhedsoversigt
@@ -53,8 +53,11 @@ MAX_PER_FEED = 25            # max artikler pr. feed
 MAX_DAGE_GAMMEL = 30         # smid artikler ældre end 30 dage væk
 TIMEOUT_SEK = 20
 
-# --- AI-omskrivning (Claude ELLER Gemini - crawleren bruger den nøgle der findes) ---
+# --- AI-omskrivning via DeepSeek, Gemini eller Xiaomi ---
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+XIAOMI_KEY = os.environ.get("XIAOMI_API_KEY", "").strip()
+XIAOMI_MODEL = "mimo-v2.6-flash"
+XIAOMI_URL = "https://api.xiaomimimo.com/v1/chat/completions"
 DEEPSEEK_KEY = os.environ.get("DEEPSEEK_API_KEY", "").strip()
 GEMINI_MODEL = "gemini-3.5-flash-lite"     # $0.30/$2.50 - billigst hos Google
 GEMINI_FALLBACK = "gemini-3.6-flash"       # bruges automatisk hvis Lite ikke svarer
@@ -63,12 +66,12 @@ GEMINI_FALLBACK = "gemini-3.6-flash"       # bruges automatisk hvis Lite ikke sv
 DEEPSEEK_MODEL = "deepseek-flash"          # DeepSeek V4.1 Flash (officielt API-navn fra 10.09.2026)
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 
-# Er begge nøgler sat, vinder AI_UDBYDER ("deepseek" eller "gemini").
-# Ellers vælges den billigste tilgængelige: DeepSeek → Gemini.
+# Er begge nøgler sat, vinder AI_UDBYDER ("deepseek", "gemini" eller "xiaomi").
+# Ellers vælges i denne rækkefølge: DeepSeek → Gemini → Xiaomi.
 # (Gemini-nøglen bruges under alle omstændigheder til artikelbillederne.)
 UDBYDER = os.environ.get("AI_UDBYDER", "").strip().lower() \
-    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "")
-API_KEY = {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY}.get(UDBYDER, "")
+    or ("deepseek" if DEEPSEEK_KEY else "gemini" if GEMINI_KEY else "xiaomi" if XIAOMI_KEY else "")
+API_KEY = {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY}.get(UDBYDER, "")
 
 BATCH_STR = 10                   # artikler pr. API-kald (korte resuméer)
 MAX_OMSKRIV_PR_KOERSEL = 200     # loft over API-forbrug pr. kørsel
@@ -392,6 +395,8 @@ def hjerne_prompt(navn: str, standard: str) -> str:
 
 def special_model(navn, standard, prefix):
     model = hjerne_model(navn)
+    if navn == "forside_agent" and model and model.startswith("mimo-") and not any(part in model.split("-") for part in ("tts", "asr")):
+        return model
     if navn == "billedgenerator" and model == FLUX_MODEL:
         return model
     return model if model and model.startswith(prefix) and (navn != "billedgenerator" or "image" in model) else standard
@@ -403,9 +408,13 @@ def hjerne_model(navn: str) -> str | None:
     return mo.strip() if isinstance(mo, str) and mo.strip() else None
 
 
+def hjerne_thinking(navn, model):
+    return validate_thinking(model, (_hjerner().get(navn) or {}).get("thinking"))
+
+
 # Hvem ejer hvilke modelnavne. Rækkefølgen betyder intet - præfikserne
 # overlapper ikke.
-MODEL_PRAEFIKS = (("deepseek", "deepseek"), ("gemini", "gemini"))
+MODEL_PRAEFIKS = (("deepseek", "deepseek"), ("gemini", "gemini"), ("mimo-", "xiaomi"))
 
 
 def model_udbyder(model: str) -> str:
@@ -429,7 +438,7 @@ def model_udbyder(model: str) -> str:
 
 def _udbyder_noegle(udbyder: str) -> str:
     """Nøglen der hører til en udbyder. Tom streng hvis den ikke er sat."""
-    return {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY}.get(udbyder, "")
+    return {"gemini": GEMINI_KEY, "deepseek": DEEPSEEK_KEY, "xiaomi": XIAOMI_KEY}.get(udbyder, "")
 
 
 # Modeller, der har svigtet i DENNE kørsel, og hvor mange gange.
@@ -470,6 +479,9 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     reasoning = {"reasoning_effort": reasoning_effort} if reasoning_effort else {}
     system = hjerne_prompt(navn, standard_prompt)
     model = hjerne_model(navn) or standard_model
+    effective_model = model or (DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else GEMINI_MODEL)
+    thinking = hjerne_thinking(navn, effective_model)
+    selected = {"thinking": thinking} if thinking else {}
     if model:
         udbyder = model_udbyder(model)
         if model in _doede_modeller:
@@ -484,9 +496,11 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
             _doede_modeller.add(model)
         else:
             try:
-                svar = (kald_deepseek_model(system, bruger, max_tokens, model, **reasoning)
+                svar = (kald_deepseek_model(system, bruger, max_tokens, model, **reasoning, **selected)
                         if udbyder == "deepseek"
-                        else kald_gemini_model(system, bruger, max_tokens, model))
+                        else kald_xiaomi_model(system, bruger, max_tokens, model, **reasoning, **selected)
+                        if udbyder == "xiaomi"
+                        else kald_gemini_model(system, bruger, max_tokens, model, **selected))
                 _model_fejl.pop(model, None)     # rækken er brudt
                 return svar
             except Exception as fejl:
@@ -495,7 +509,7 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                     # betalt generation på den daglige model ved et brudt svar.
                     if isinstance(fejl, DeepSeekSvarFejl):
                         raise
-                    raise DeepSeekSvarFejl("DeepSeek-kald afbrudt: " + type(fejl).__name__) from fejl
+                    raise DeepSeekSvarFejl(udbyder + "-kald afbrudt: " + type(fejl).__name__) from fejl
                 # Fejl i TRÆK. Tælles der sammen hen over hele kørslen, ville tre
                 # spredte timeouts blandt 500 lykkede kald kaste redaktionens valg
                 # væk - og loggen ville påstå "fejlede 3 gange i træk", hvilket
@@ -515,7 +529,7 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                           f"({type(fejl).__name__}, {antal}/"
                           f"{MODEL_FEJL_GRAENSE}) - dette trin bruger "
                           f"den daglige model")
-    return kald_ai(system, bruger, max_tokens, **reasoning)
+    return kald_ai(system, bruger, max_tokens, **reasoning, **(selected if not model else {}))
 
 
 # Arbejdsloopets dokumenter. De styrer, hvad sessionen laver - og kan redigeres
@@ -677,7 +691,7 @@ def skriv_hjerne_status() -> None:
 
 
 def _skriv_hjerne_status() -> None:
-    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else GEMINI_MODEL
+    daglig = DEEPSEEK_MODEL if UDBYDER == "deepseek" else XIAOMI_MODEL if UDBYDER == "xiaomi" else GEMINI_MODEL
     std = _standard_prompts()
 
     def trin_udbyder(navn: str) -> str:
@@ -709,6 +723,7 @@ def _skriv_hjerne_status() -> None:
         "forside_standard": DEEPSEEK_MODEL,
         "gemini_tilgaengelig": bool(GEMINI_KEY),
         "deepseek_tilgaengelig": bool(DEEPSEEK_KEY),
+        "xiaomi_tilgaengelig": bool(XIAOMI_KEY),
         "hjerner": {
             navn: {
                 "beskrivelse": besk,
@@ -716,7 +731,8 @@ def _skriv_hjerne_status() -> None:
                 # Hvem kaldet faktisk går til. Uden det felt kan panelet ikke
                 # vise, at et trin er flyttet til en anden udbyder end resten.
                 "udbyder": trin_udbyder(navn),
-                "reasoning_effort": DEEPSEEK_REASONING if trin_udbyder(navn) == "deepseek" else None,
+                "reasoning_effort": hjerne_thinking(navn, hjerne_model(navn) or daglig) or (DEEPSEEK_REASONING if trin_udbyder(navn) == "deepseek" else None),
+                "thinking": hjerne_thinking(navn, hjerne_model(navn) or daglig),
                 "egen_model": bool(hjerne_model(navn)),
                 "egen_prompt": bool((_hjerner().get(navn) or {}).get("prompt")),
                 "standard_prompt": std.get(navn, ""),
@@ -968,16 +984,22 @@ def skriv_kilde_status(feeds: list, resultat: dict, artikler: list,
 
 
 def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
-                      model: str) -> str:
+                      model: str, *, thinking: str | None = None) -> str:
     """Kalder en BESTEMT Gemini-model. Bruges til den natlige gennemgang, hvor
     vi vil have den kloge model uanset hvem der skriver artiklerne til daglig.
     Ingen fallback: virker modellen ikke, skal vi vide det."""
     if not GEMINI_KEY:
         raise RuntimeError("GEMINI_API_KEY mangler")
+    config = gemini_thinking(model, thinking)
+    output_limit = max_tokens
+    if thinking and thinking != "disabled":
+        # Gemini tæller tænkning med i outputloftet. Giv plads til begge dele.
+        reserve = int(thinking.split(":")[1]) if thinking.startswith("budget:") else 16384
+        output_limit = min(65536, max_tokens + reserve)
     body = json.dumps({
         "systemInstruction": {"parts": [{"text": system}]},
         "contents": [{"role": "user", "parts": [{"text": bruger_tekst}]}],
-        "generationConfig": {"maxOutputTokens": max_tokens},
+        "generationConfig": {"maxOutputTokens": output_limit, **config},
     }).encode()
     # Samme fartgrænse-værn som `kald_ai`. Uden den kunne et trin med en egen
     # Gemini-model banke op mod 500 kald igennem pr. kørsel uden pause, og den
@@ -987,7 +1009,13 @@ def kald_gemini_model(system: str, bruger_tekst: str, max_tokens: int,
         f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
         data=body, headers={"x-goog-api-key": GEMINI_KEY,
                             "content-type": "application/json"})
-    return json.loads(svar)["candidates"][0]["content"]["parts"][0]["text"]
+    candidate = json.loads(svar)["candidates"][0]
+    if candidate.get("finishReason", "STOP") != "STOP":
+        raise ValueError("Gemini afsluttede ikke svaret normalt")
+    content = "".join(p.get("text", "") for p in candidate["content"]["parts"] if not p.get("thought"))
+    if not content.strip():
+        raise ValueError("Gemini returnerede tomt indhold")
+    return content
 
 
 class DeepSeekSvarFejl(RuntimeError):
@@ -1036,7 +1064,7 @@ def deepseek_json_svar(raw: bytes, *, require_object: bool = True) -> str:
 
 
 def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
-                        model: str, *, reasoning_effort: str | None = None) -> str:
+                        model: str, *, reasoning_effort: str | None = None, thinking: str | None = None) -> str:
     """Kalder en BESTEMT DeepSeek-model. Samme krop som det daglige kald, men
     modelnavnet kommer udefra, så panelet kan løfte ét enkelt trin op i klasse
     uden at flytte hele siden. Ingen fallback: virker modellen ikke, skal vi
@@ -1050,7 +1078,7 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
         "model": model,
         "messages": [{"role": "system", "content": system},
                      {"role": "user", "content": bruger_tekst}],
-        **deepseek_parametre(max_tokens),
+        **deepseek_parametre(max_tokens, thinking),
         **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
         "stream": False,
     }).encode()
@@ -1061,17 +1089,48 @@ def kald_deepseek_model(system: str, bruger_tekst: str, max_tokens: int,
     return deepseek_json_svar(svar, require_object=bool(reasoning_effort))
 
 
-def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None) -> str:
+def kald_xiaomi_model(system: str, bruger_tekst: str, max_tokens: int,
+                      model: str, *, reasoning_effort: str | None = None, thinking: str | None = None) -> str:
+    """MiMo tekstkald med Xiaomis egen nøgle og valideret slutsvar."""
+    if not XIAOMI_KEY:
+        raise RuntimeError("XIAOMI_API_KEY mangler")
+    body = json.dumps({
+        "model": model,
+        "messages": [{"role": "system", "content": system},
+                     {"role": "user", "content": bruger_tekst}],
+        "max_completion_tokens": min(max(32768, max_tokens), 131072),
+        "thinking": {"type": validate_thinking(model, thinking) or "enabled"},
+        **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
+        "stream": False,
+    }).encode()
+    raw = hent_url(XIAOMI_URL, data=body, headers={
+        "api-key": XIAOMI_KEY, "content-type": "application/json",
+    }, timeout=DEEPSEEK_TIMEOUT)
+    payload = json.loads(raw)
+    choices = payload.get("choices") if isinstance(payload, dict) else None
+    choice = choices[0] if isinstance(choices, list) and choices else {}
+    message = choice.get("message") or {}
+    content = message.get("content")
+    if choice.get("finish_reason") != "stop" or not isinstance(content, str) or not content.strip():
+        raise ValueError("Xiaomi returnerede ikke et fuldstændigt tekstsvar")
+    if reasoning_effort and not isinstance(json.loads(content), dict):
+        raise ValueError("Xiaomi returnerede ikke et JSON-objekt")
+    return content
+
+
+def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort: str | None = None, thinking: str | None = None) -> str:
     """Ét fælles AI-kald - taler med DeepSeek eller Gemini alt efter hvilken
     nøgle der er sat. Returnerer modellens rå tekstsvar."""
+    if UDBYDER == "xiaomi":
+        return kald_xiaomi_model(system, bruger_tekst, max_tokens, XIAOMI_MODEL, reasoning_effort=reasoning_effort, thinking=thinking)
     if UDBYDER == "deepseek":
-        # Alle DeepSeek-opgaver bruger max. JSON-objektformat vælges kun
+        # DeepSeek følger trinnets valg eller fælles standard. JSON-objektformat vælges kun
         # eksplicit: andre opgaver må stadig returnere arrays eller tekst.
         body = json.dumps({
             "model": DEEPSEEK_MODEL,
             "messages": [{"role": "system", "content": system},
                          {"role": "user", "content": bruger_tekst}],
-            **deepseek_parametre(max_tokens),
+            **deepseek_parametre(max_tokens, thinking),
             **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
             "stream": False,
         }).encode()
@@ -1080,6 +1139,9 @@ def kald_ai(system: str, bruger_tekst: str, max_tokens: int, *, reasoning_effort
             "content-type": "application/json",
         }, timeout=DEEPSEEK_TIMEOUT)
         return deepseek_json_svar(svar, require_object=bool(reasoning_effort))
+
+    if thinking:
+        return kald_gemini_model(system, bruger_tekst, max_tokens, GEMINI_MODEL, thinking=thinking)
 
     # Gemini - prøv den billige Lite-model først, fald tilbage hvis den afvises
     global _gemini_model
@@ -1331,7 +1393,7 @@ def dybe_briefs(artikler: list[dict], redaktionsopgaver=None, kildetekster=None)
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
     if not API_KEY:
-        print("📰 Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY) - springer dybe briefs over")
+        print("📰 Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY) - springer dybe briefs over")
         return
 
     print(f"📰 Henter og genfortæller {len(kandidater)} artikler i fuld længde …")
@@ -2642,7 +2704,8 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
         body = json.dumps({
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["IMAGE"],
-                                 "imageConfig": {"aspectRatio": "16:9"}},
+                                 "imageConfig": {"aspectRatio": "16:9"},
+                                 **gemini_thinking(_billed_model, hjerne_thinking("billedgenerator", _billed_model) if _billed_model == special_model("billedgenerator", BILLED_MODEL, "gemini") else None)},
         }).encode()
         try:
             try:
@@ -2653,6 +2716,9 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 if f.code in (400, 404) and _billed_model != BILLED_FALLBACK:
                     print(f"  ℹ️  {_billed_model} ikke tilgængelig - prøver {BILLED_FALLBACK}")
                     _billed_model = BILLED_FALLBACK
+                    fallback_body = json.loads(body)
+                    fallback_body["generationConfig"].pop("thinkingConfig", None)
+                    body = json.dumps(fallback_body).encode()
                     svar = hent_url(
                         f"https://generativelanguage.googleapis.com/v1beta/models/{_billed_model}:generateContent",
                         data=body, headers={"x-goog-api-key": GEMINI_KEY, "content-type": "application/json"})
@@ -2803,7 +2869,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
         print("✍️  Alle artikler er allerede omskrevet (cache)")
         return
     if not API_KEY:
-        print(f"✍️  Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY) - springer omskrivning over "
+        print(f"✍️  Ingen AI-nøgle sat (DEEPSEEK_API_KEY/GEMINI_API_KEY/XIAOMI_API_KEY) - springer omskrivning over "
               f"({len(mangler)} artikler vises på engelsk)")
         return
 
@@ -5698,16 +5764,21 @@ def tjek_statisk_sitemap() -> list[str]:
 def forbered_redaktoer(artikler, tidligere_forside, nu):
     """Forbered redaktionsmødet. Fejl giver en synlig reserve, aldrig et stop."""
     agent_model = special_model("forside_agent", DEEPSEEK_MODEL, "deepseek")
+    agent_provider = model_udbyder(agent_model)
+    agent_key = _udbyder_noegle(agent_provider)
+    agent_call = redaktoer_agent.xiaomi_kald if agent_provider == "xiaomi" else redaktoer_agent.deepseek_kald
+    agent_thinking = hjerne_thinking("forside_agent", agent_model)
+    effective_thinking = agent_thinking or ("enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)
     baseline = redaktion.forside(artikler, nu)
     result = {"agent": None, "plan": None, "opgaver": {}, "tekster": {}, "originaler": {},
               "forside": baseline, "status": {"opdateret": nu.isoformat(), "status": "reserve",
-              "model": agent_model, "reasoning_effort": DEEPSEEK_REASONING, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
+              "model": agent_model, "reasoning_effort": effective_thinking, "regelbaseret_udvalg": baseline["udvalgte"][:3]}}
     old = redaktoer_agent.genbrug_forside(tidligere_forside, artikler, nu)
     if old:
         result["forside"] = old
     try:
         retning = (OPSAETNING / "redaktoer.md").read_text(encoding="utf-8")[:10000]
-        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": agent_model, "reasoning_effort": DEEPSEEK_REASONING,
+        fingerprint = redaktoer_agent.ident(json.dumps({"retning": retning, "model": agent_model, "reasoning_effort": effective_thinking,
             "agent_version": redaktoer_agent.VERSION, "system": redaktoer_agent.SYSTEM, "kontrol": redaktoer_agent.KONTROL,
             "skriveinstruks": instruks_signatur("brief", "redaktoer"),
             "artikler": sorted([{k: a.get(k) for k in ("link", "titel", "dato", "resume", "redaktion")}
@@ -5719,8 +5790,8 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
         if old and isinstance(last, dict) and last.get("input_fingerprint") == fingerprint and previous_time and (nu-previous_time).total_seconds() < 4*3600:
             result["status"].update({"status": "genbrugt", "forklaring": "Uændrede kandidater og instruktioner; tidligere kontrolleret udvalg genbruges"})
             return result
-        if not DEEPSEEK_KEY:
-            result["status"]["forklaring"] = "DeepSeek-nøgle mangler; bruger seneste gyldige udvalg eller reglerne"
+        if not agent_key:
+            result["status"]["forklaring"] = f"{agent_provider}-nøgle mangler; bruger seneste gyldige udvalg eller reglerne"
             return result
         memory = redaktoer_agent.laes_json(ROOT / "data/redaktoer-hukommelse.json", {})
         if not redaktoer_agent.hukommelse(memory, nu) and isinstance(tidligere_forside, dict):
@@ -5728,7 +5799,7 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
             memory = {"udgaver": [{"tid": tidligere_forside.get("beregnet"), "historier": [
                 {"link": k, "rubrik": lookup[k]["rubrik"]} for k in tidligere_forside.get("udvalgte", [])[:3] if k in lookup]}]}
         agent = redaktoer_agent.Redaktion(artikler, memory, retning, nu,
-            lambda messages, tools: redaktoer_agent.deepseek_kald(DEEPSEEK_KEY, agent_model, messages, tools))
+            lambda messages, tools: agent_call(agent_key, agent_model, messages, tools, **({"thinking": agent_thinking} if agent_thinking else {})))
         result["agent"] = agent
         plan = agent.koer()
         result["plan"] = plan
@@ -5816,6 +5887,8 @@ def main() -> None:
         print("🤖 Tekstmodel: INGEN (ingen API-nøgle) - artiklerne forbliver på engelsk")
     elif UDBYDER == "deepseek":
         print(f"🤖 Tekstmodel: DeepSeek · {DEEPSEEK_MODEL} (reasoning: {DEEPSEEK_REASONING})")
+    elif UDBYDER == "xiaomi":
+        print(f"🤖 Tekstmodel: Xiaomi · {XIAOMI_MODEL}")
     else:
         print(f"🤖 Tekstmodel: Gemini · {GEMINI_MODEL} (falder tilbage til {GEMINI_FALLBACK} hvis afvist)")
     print(f"🎨 Valgt billedmodel: {special_model('billedgenerator', BILLED_MODEL, 'gemini')}")

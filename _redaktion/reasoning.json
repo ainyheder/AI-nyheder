@@ -1,0 +1,104 @@
+{
+  "verified": "2026-09-22",
+  "rules": [
+    {
+      "pattern": "^deepseek-(flash|pro|v4-flash|v4-pro)$",
+      "kind": "deepseek",
+      "levels": [
+        "disabled",
+        "low",
+        "high",
+        "max"
+      ],
+      "default": "high",
+      "source": "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/"
+    },
+    {
+      "pattern": "^mimo-v2\\.(6-(flash|pro|pro-ultraspeed)|5(-pro)?)$",
+      "kind": "xiaomi",
+      "levels": [
+        "disabled",
+        "enabled"
+      ],
+      "default": "enabled",
+      "source": "https://mimo.mi.com/docs/en-US/api/chat/openai-api"
+    },
+    {
+      "pattern": "^gemini-3\\.1-flash-(lite-)?image(-preview)?$",
+      "kind": "level",
+      "levels": [
+        "minimal",
+        "high"
+      ],
+      "default": "minimal",
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/image-generation"
+    },
+    {
+      "pattern": "^gemini-(3-pro-image(-preview)?|2\\.5-flash-image)$",
+      "kind": "none",
+      "levels": [],
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/image-generation"
+    },
+    {
+      "pattern": "^gemini-(3\\.1-pro(-preview(-customtools)?)?|3\\.[78]-flash)$",
+      "kind": "level",
+      "levels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/thinking"
+    },
+    {
+      "pattern": "^gemini-(3-flash-preview|3\\.[56]-flash|3\\.[15]-flash-lite(-preview)?)$",
+      "kind": "level",
+      "levels": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/thinking"
+    },
+    {
+      "pattern": "^gemini-2\\.5-pro$",
+      "kind": "budget",
+      "levels": [
+        "dynamic",
+        "budget"
+      ],
+      "minimum": 128,
+      "maximum": 32768,
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/thinking"
+    },
+    {
+      "pattern": "^gemini-2\\.5-flash-lite$",
+      "kind": "budget",
+      "levels": [
+        "disabled",
+        "dynamic",
+        "budget"
+      ],
+      "minimum": 512,
+      "maximum": 24576,
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/thinking"
+    },
+    {
+      "pattern": "^gemini-2\\.5-flash$",
+      "kind": "budget",
+      "levels": [
+        "disabled",
+        "dynamic",
+        "budget"
+      ],
+      "minimum": 1,
+      "maximum": 24576,
+      "source": "https://ai.google.dev/gemini-api/docs/generate-content/thinking"
+    },
+    {
+      "pattern": "^@cf/black-forest-labs/flux-2-klein-4b$",
+      "kind": "none",
+      "levels": []
+    }
+  ]
+}

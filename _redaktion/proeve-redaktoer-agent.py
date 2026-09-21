@@ -54,6 +54,44 @@ class AgentTests(unittest.TestCase):
         return agent.Redaktion([self.a, self.b], memory or {}, "Modeller først", NU,
                                svar or (lambda *_: tool("aflever_udgave", plan(self.a))), hent)
 
+    def test_mimo_fra_indstilling_til_agent_med_egen_noegle(self):
+        calls = []
+        def kald(key, model, messages, tools, **kwargs):
+            calls.append((key, model, kwargs))
+            return tool("laes_kilde", {"id": agent.ident(self.a["link"])}) if len(calls) == 1 else tool("aflever_udgave", plan(self.a))
+        with patch.object(c, "_hjerner_cache", {"forside_agent": {"model": "mimo-v2.6-pro", "thinking": "disabled"}}), patch.object(c, "XIAOMI_KEY", "xiaomi-test"), patch.object(c, "DEEPSEEK_KEY", ""), patch.object(agent, "xiaomi_kald", side_effect=kald), patch.object(agent, "deepseek_kald") as wrong, patch.object(agent, "hent_kilde", return_value={"tekst": KILDE, "henvisninger": []}):
+            context = c.forbered_redaktoer([self.a, self.b], None, NU)
+        self.assertIsNotNone(context["plan"])
+        self.assertEqual(context["status"]["model"], "mimo-v2.6-pro")
+        self.assertEqual(context["status"]["reasoning_effort"], "disabled")
+        self.assertTrue(calls)
+        self.assertTrue(all(call == ("xiaomi-test", "mimo-v2.6-pro", {"thinking": "disabled"}) for call in calls))
+        wrong.assert_not_called()
+
+    def test_mimo_manglende_noegle_bruger_reserve(self):
+        with patch.object(c, "_hjerner_cache", {"forside_agent": {"model": "mimo-v2.6-flash"}}), patch.object(c, "XIAOMI_KEY", ""), patch.object(agent, "xiaomi_kald") as call:
+            context = c.forbered_redaktoer([self.a], None, NU)
+        call.assert_not_called()
+        self.assertIn("xiaomi-nøgle mangler", context["status"]["forklaring"])
+        self.assertEqual(context["status"]["reasoning_effort"], "enabled")
+
+    def test_auto_toolvalg_prosa_faar_afgraenset_nyt_forsoeg(self):
+        calls = []
+        def svar(messages, tools):
+            calls.append(copy.deepcopy(messages))
+            if len(calls) == 1:
+                return {"content": "Jeg undersøger kilderne.", "reasoning_content": "intern tænkning"}
+            if len(calls) == 2:
+                return tool("laes_kilde", {"id": agent.ident(self.a["link"])})
+            return tool("aflever_udgave", plan(self.a))
+        editor = self.lav(svar)
+        self.assertEqual(editor.koer()["udvalgte"][0]["id"], agent.ident(self.a["link"]))
+        self.assertEqual(calls[1][-2]["reasoning_content"], "intern tænkning")
+        self.assertNotIn("intern tænkning", json.dumps(editor.log))
+        editor = self.lav(lambda *_: {"content": "Kun prosa"})
+        with self.assertRaises(agent.UdgaveFejl): editor.koer()
+        self.assertEqual(editor.antal_kald, agent.MAX_KALD)
+
     def test_agenten_kan_vaelge_anderledes_end_pointlisten(self):
         calls = []
         def svar(messages, tools):
