@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-20T21:47:01.576508+00:00",
- "artikler_i_alt": 96,
+ "opdateret": "2026-09-21T00:27:55.768942+00:00",
+ "artikler_i_alt": 93,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -160,7 +160,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -207,15 +207,6 @@ window.KILDER_STATUS = {
      "side": "artikel/7e460d3dba3c11bb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "GPT-6 Astra tegner 5 km-rute på 27 minutter",
-     "dato": "2026-09-12T23:56:42",
-     "foerst_set": "2026-09-13T00:13:36",
-     "link": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
-     "side": "artikel/0dd87f86ad01fab9.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -240,7 +231,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 38,
-   "som_ekstra": 9,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Gemini hackede tre virksomheder under sikkerhedstest",
@@ -259,24 +250,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Opdigtet AI-rapport bragte USA tæt på krig"
-    },
-    {
-     "rubrik": "Amodei vil styre AI-tempoet med uafhængige evalueringer",
-     "dato": "",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://techcrunch.com/podcast/automattics-33-hour-coup-and-can-ai-labs-police-themselves/",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump og Johnson afviser at bremse AI"
-    },
-    {
-     "rubrik": "Amodei vil have uafhængige AI-sikkerhedsevaluatorer",
-     "dato": "",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://techcrunch.com/video/dario-amodei-and-other-ai-leaders-want-to-pace-the-frontier-buthow/",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump og Johnson afviser at bremse AI"
     },
     {
      "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
@@ -360,6 +333,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Vals vil måle AI-modeller bag lukkede tests",
+     "dato": "2026-09-19T13:00:00",
+     "foerst_set": "2026-09-19T14:44:19",
+     "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
+     "side": "artikel/0ac6fc9717b544dd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Anthropic lader AI-modeller lave biologiforsøg",
      "dato": "2026-09-18T23:13:31",
      "foerst_set": "2026-09-19T01:31:11",
@@ -430,21 +412,12 @@ window.KILDER_STATUS = {
      "side": "artikel/41da7ed56ef01474.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "FAA køber AI-system til 875 millioner dollar",
-     "dato": "2026-09-17T22:14:59",
-     "foerst_set": "2026-09-17T23:03:23",
-     "link": "https://techcrunch.com/2026/09/17/the-faas-plan-to-fix-air-traffic-875-million-worth-of-ai/",
-     "side": "artikel/787bbd73daf7613b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     10
+     8
     ],
     [
      "Ars Technica AI",
@@ -466,7 +439,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
+   "i_listen": 20,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -506,15 +479,6 @@ window.KILDER_STATUS = {
      "under": "Meta One samler AI i nye abonnementer"
     },
     {
-     "rubrik": "Amodei vil sætte tempoet ned – Trump siger nej",
-     "dato": "",
-     "foerst_set": "2026-09-14T22:44:05.705048+00:00",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump og Johnson afviser at bremse AI"
-    },
-    {
      "rubrik": "Trump i højttaleren: AI-frygt er en hoax",
      "dato": "",
      "foerst_set": "2026-09-14T22:44:05",
@@ -529,15 +493,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-19T23:28:25",
      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
      "side": "artikel/45d620b21da13aea.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Zuckerberg og Musk blokerer fælles AI-regulator",
-     "dato": "2026-09-19T09:00:00",
-     "foerst_set": "2026-09-19T14:44:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-     "side": "artikel/437eaa860addb0a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -630,12 +585,21 @@ window.KILDER_STATUS = {
      "side": "artikel/ab2a2f0bede59003.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "BAN: AI-affald kan fylde 23 millioner containere",
+     "dato": "2026-09-16T20:40:46",
+     "foerst_set": "2026-09-16T21:39:37",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
+     "side": "artikel/418dbc769c8c49eb.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     8
     ],
     [
      "Simon Willison AI",
