@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-09-22T13:37:55.361440+00:00",
+  "opdateret": "2026-09-22T19:51:24.838792+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://x.ai/news/grok-4-7",
-    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-    "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
+    "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+    "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity"
   ],
-  "input_fingerprint": "dcc98a1677568c18",
-  "forklaring": "Udgavekontrol fejlede: TypeError",
-  "modelkald": 4,
-  "kildehentninger": 4,
+  "input_fingerprint": "910e47303aadcc52",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 3,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -46,32 +46,56 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://x.ai/news/grok-4-7",
+      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+      "link": "https://www.anthropic.com/claude-opus-5-5",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://www.anthropic.com/claude-opus-5-5",
     "https://x.ai/news/grok-4-7",
-    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-    "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
+    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
   ],
-  "afventer_artikler": 117
+  "afventer_artikler": 130
 }
