@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-22T05:41:28.801912+00:00",
+ "genereret": "2026-09-22T14:42:34.383886+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-22T05:18:45.022179+00:00",
-  "antal": 92,
-  "med_billede": 63,
-  "paa_dansk": 92,
+  "opdateret": "2026-09-22T13:37:55.361440+00:00",
+  "antal": 97,
+  "med_billede": 69,
+  "paa_dansk": 97,
   "kategorier": {
    "Lanceringer": 15,
+   "Samfund \u0026 etik": 27,
+   "Politik \u0026 jura": 11,
    "Hverdags-AI": 15,
-   "Politik \u0026 jura": 10,
    "Penge \u0026 marked": 18,
-   "Samfund \u0026 etik": 24,
-   "Forskning": 10
+   "Forskning": 11
   },
   "kilder": {
    "xAI News": 2,
-   "TechCrunch AI": 38,
-   "The Verge AI": 22,
-   "Ars Technica AI": 9,
-   "MIT Tech Review AI": 4,
+   "Ars Technica AI": 10,
+   "The Verge AI": 23,
+   "TechCrunch AI": 39,
+   "MIT Tech Review AI": 5,
    "Simon Willison AI": 3,
+   "Hugging Face": 2,
    "Anthropic News": 2,
    "Google DeepMind": 1,
    "Mistral AI": 1,
-   "Hugging Face": 1,
    "Google Gemini": 1,
    "OpenAI Blog": 8
   },
@@ -233,27 +233,67 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/7110d00b09af16ae.webp"
    },
    {
-    "titel": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
-    "rubrik": "Googlebook til 899 dollar satser på Gemini",
-    "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-    "side": "artikel/ce68e248589d5c28.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-21T14:39:22+00:00",
-    "billede": ""
+    "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+    "rubrik": "Meta Muse kan kapres af enhver lokal app",
+    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "side": "artikel/64b9f3c8af56bfa0.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-21T22:24:38+00:00",
+    "billede": "data/img/97c155c7ccc42c89.webp"
    },
    {
-    "titel": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
-    "rubrik": "Apple betaler 250 millioner i Siri-forlig",
-    "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
-    "side": "artikel/93b84abf7bbda6f3.html",
+    "titel": "California tightens rules on AI data center energy and water use",
+    "rubrik": "California tvinger AI-datacentre til at betale",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "side": "artikel/83547d403e173182.html",
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
-    "dato": "2026-09-21T09:36:52-04:00",
-    "billede": ""
+    "dato": "2026-09-21T16:29:45-04:00",
+    "billede": "data/img/af9d7ea60f36a4ef.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Everyone can find a reason to dislike data center construction",
+    "rubrik": "Data \u0026 Society: Datacentre-modstand er post-partisan",
+    "link": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/",
+    "side": "artikel/2665fc5c20dcb8b4.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-22T13:00:00+00:00",
+    "billede": "data/img/1455cfe30c0e8dcd.webp"
+   },
+   {
+    "titel": "Don’t be fooled by this summer of AI hype",
+    "rubrik": "Timnit Gebru: AI-gennembrudene holder ikke",
+    "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+    "side": "artikel/d185f661c7d14e1d.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-22T11:04:51+00:00",
+    "billede": "data/img/bc218144b1530cd4.webp"
+   },
+   {
+    "titel": "California tightens rules on AI data center energy and water use",
+    "rubrik": "California tvinger AI-datacentre til at betale",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "side": "artikel/83547d403e173182.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-21T16:29:45-04:00",
+    "billede": "data/img/af9d7ea60f36a4ef.webp"
+   },
+   {
+    "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+    "rubrik": "Meta Muse kan kapres af enhver lokal app",
+    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "side": "artikel/64b9f3c8af56bfa0.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-21T22:24:38+00:00",
+    "billede": "data/img/97c155c7ccc42c89.webp"
+   },
    {
     "titel": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
     "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
@@ -262,7 +302,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-21T19:19:21+00:00",
-    "billede": ""
+    "billede": "data/img/dcbbcb6710e402fd.webp"
    },
    {
     "titel": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
@@ -312,17 +352,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "Ars Technica AI",
     "dato": "2026-09-21T15:37:56+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google confirms Gemini models hacked three companies in May 2026",
-    "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
-    "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
-    "side": "artikel/ac91fe690f3a7f56.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-21T16:57:26+00:00",
-    "billede": "data/img/b0343d359d76c313.webp"
+    "billede": "data/img/7b535a609458582c.webp"
    },
    {
     "titel": "4 ways to address the failures we found along the US border’s “virtual wall”",
@@ -335,54 +365,24 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "With Tabby, a former accountant is using AI to make accountants obsolete",
-    "rubrik": "Tabby udfordrer QuickBooks med AI-bogføring",
-    "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
-    "side": "artikel/8a06f4e347265d61.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-21T16:38:51+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "She died at the San Diego border. A surveillance camera was in plain sight",
-    "rubrik": "MIT Technology Review: 138 lig i kamerarækkevidde",
-    "link": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature/",
-    "side": "artikel/c90b91454dad1928.html",
+    "titel": "Google confirms Gemini models hacked three companies in May 2026",
+    "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
+    "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+    "side": "artikel/ac91fe690f3a7f56.html",
     "kategori": "Samfund \u0026 etik",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-09-21T12:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "UN says AI safeguards can’t wait for certainty",
-    "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-    "side": "artikel/13e93d540c1e658a.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-21T06:18:06-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Amazon blocks Meta’s Muse AI agent",
-    "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
-    "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-    "side": "artikel/ac1368b0f72db021.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-21T05:21:47-04:00",
-    "billede": ""
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-21T16:57:26+00:00",
+    "billede": "data/img/b0343d359d76c313.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-22T05:18:45.022179+00:00",
+  "opdateret": "2026-09-22T13:37:55.361440+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 4,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
    "https://x.ai/news/grok-4-7",
    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
@@ -390,28 +390,16 @@ window.KOMMANDO_DATA = {
   ],
   "udgivet_udvalg": [
    "https://x.ai/news/grok-4-7",
-   "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-   "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
+   "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+   "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -420,6 +408,10 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -445,7 +437,7 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
     "grundlag": "kildetekst"
    },
    {
@@ -453,29 +445,13 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+    "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
     "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-22T05:18:44.524946+00:00",
+  "opdateret": "2026-09-22T13:37:54.940524+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -831,8 +807,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-22T05:18:45.022179+00:00",
-  "artikler_i_alt": 92,
+  "opdateret": "2026-09-22T13:37:55.361440+00:00",
+  "artikler_i_alt": 97,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -967,9 +943,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 1,
+    "i_listen": 2,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "tokenizers v1 er tit tientals gange hurtigere",
+      "dato": "2026-09-21T00:00:00",
+      "foerst_set": "2026-09-21T17:10:47",
+      "link": "https://huggingface.co/blog/tokenizers-v1",
+      "side": "artikel/87a2ea6346f8c464.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "GPT-4.1: Ny metrik afslører ustabile agenter",
       "dato": "2026-09-15T16:00:44",
@@ -1051,7 +1036,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 38,
+    "i_listen": 39,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1109,6 +1094,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude får Docs og Slides i samme chat"
      },
      {
+      "rubrik": "Data \u0026 Society: Datacentre-modstand er post-partisan",
+      "dato": "2026-09-22T13:00:00",
+      "foerst_set": "2026-09-22T13:37:55",
+      "link": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/",
+      "side": "artikel/2665fc5c20dcb8b4.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
       "dato": "2026-09-21T19:19:21",
       "foerst_set": "2026-09-21T21:13:22",
@@ -1152,15 +1146,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4c292615ef53e08c.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Trump vil omdøbe AI og oprette AI Force",
-      "dato": "2026-09-19T19:57:47",
-      "foerst_set": "2026-09-19T20:57:59",
-      "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-      "side": "artikel/c0e5bbea1628d07f.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1174,7 +1159,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
+    "i_listen": 23,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1212,6 +1197,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta One samler AI i nye abonnementer"
+     },
+     {
+      "rubrik": "California tvinger AI-datacentre til at betale",
+      "dato": "2026-09-21T16:29:45",
+      "foerst_set": "2026-09-22T05:18:45",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "side": "artikel/83547d403e173182.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Apple betaler 250 millioner i Siri-forlig",
@@ -1275,15 +1269,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/cc9d12fe9e378865.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude Code samler flere agenter i ét projekt",
-      "dato": "2026-09-17T18:58:05",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-      "side": "artikel/f0feb3e3451d3c61.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1297,8 +1282,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 9,
-    "som_ekstra": 4,
+    "i_listen": 10,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "FAA tæt på at starte SMART over Washington",
@@ -1328,13 +1313,13 @@ window.KOMMANDO_DATA = {
       "under": "Googles CC bliver familieagent med egen konto"
      },
      {
-      "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
-      "dato": "",
-      "foerst_set": "2026-09-17T20:31:59",
-      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-      "side": "",
-      "hvor": "under",
-      "under": "Microsoft-dokument advarede om 'doom loop'"
+      "rubrik": "Meta Muse kan kapres af enhver lokal app",
+      "dato": "2026-09-21T22:24:38",
+      "foerst_set": "2026-09-21T23:58:03",
+      "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+      "side": "artikel/64b9f3c8af56bfa0.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Trump varsler AI-tsar og AI Force",
@@ -1420,9 +1405,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "Timnit Gebru: AI-gennembrudene holder ikke",
+      "dato": "2026-09-22T11:04:51",
+      "foerst_set": "2026-09-22T13:37:55",
+      "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+      "side": "artikel/d185f661c7d14e1d.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "CBP har aldrig auditeret grænsens AI-tårne",
       "dato": "2026-09-21T12:00:00",
@@ -1621,12 +1615,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-22T05:41:21.806856+00:00",
+  "opdateret": "2026-09-22T14:42:25.083614+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 40,
-  "sidevisninger_i_alt": 64,
+  "besoeg_i_alt": 45,
+  "sidevisninger_i_alt": 74,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1776,15 +1770,15 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-22",
-    "besoeg": 0,
-    "visninger": 10
+    "besoeg": 20,
+    "visninger": 30
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 40,
-    "visninger": 62
+    "besoeg": 45,
+    "visninger": 72
    },
    {
     "sti": "/vaerktoejer.html",
@@ -1796,7 +1790,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 40
+    "besoeg": 45
    }
   ],
   "laeste_temaer": []

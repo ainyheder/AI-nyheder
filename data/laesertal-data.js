@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-22T05:41:21.806856+00:00",
+ "opdateret": "2026-09-22T14:42:25.083614+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,7 +67,7 @@ window.LAESERTAL = {
      2,
      0,
      0,
-     1,
+     2,
      0
     ]
    },
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      4,
      0,
      0,
-     4,
-     0
+     5,
+     2
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      5,
      2,
      0,
-     3,
+     4,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 40,
- "sidevisninger_i_alt": 64,
+ "besoeg_i_alt": 45,
+ "sidevisninger_i_alt": 74,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 40,
-   "visninger": 62
+   "besoeg": 45,
+   "visninger": 72
   },
   {
    "sti": "/vaerktoejer.html",
@@ -267,7 +267,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 40
+   "besoeg": 45
   }
  ],
  "ai_chats": [],
@@ -275,13 +275,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 40,
-    "visninger": 40
+    "besoeg": 45,
+    "visninger": 45
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 22
+    "visninger": 27
    }
   ],
   "/vaerktoejer.html": [
@@ -446,8 +446,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-22",
-   "besoeg": 0,
-   "visninger": 10
+   "besoeg": 20,
+   "visninger": 30
   }
  ],
  "artikler": [],

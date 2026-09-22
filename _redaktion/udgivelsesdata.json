@@ -1,64 +1,97 @@
 {
-  "opdateret": "2026-09-22T05:18:45.022179+00:00",
+  "opdateret": "2026-09-22T13:37:55.361440+00:00",
   "kladder": [
     {
-      "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
-      "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-      "resume": "A simple ClickFix attack is only one way to completely hijack the new agent.",
-      "dato": "2026-09-21T22:24:38+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-21T23:58:03.376367+00:00",
-      "eget_foerst_set": "2026-09-21T23:58:03.376367+00:00",
-      "rubrik": "Sikkerhedshul kaprer Metas AI-assistent Muse",
-      "resume_da": "Et ClickFix-angreb kan ifølge Ars Technica fuldstændigt overtage kontrollen over den ny AI-agent Muse.",
-      "kat_ai": true,
+      "titel": "Transformers now runs llama.cpp quants",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
+      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 4,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "sikkerhed",
+        "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Ars Technica dokumenterer et 0-dags-sårbarhed i Metas agent Muse, der via ClickFix kan overtage kontrollen fuldstændigt.",
-        "forbehold": "Teksten angiver ikke, om sårbarheden er lappet.",
-        "emne": "meta / muse"
+        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
+        "forbehold": "",
+        "emne": "hugging face transformers"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "California tightens rules on AI data center energy and water use",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-      "resume": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers while forcing them to pay for upgrades to […]",
-      "dato": "2026-09-21T16:29:45-04:00",
+      "titel": "Meta patches Muse exploit that let attackers control the AI agent",
+      "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+      "resume": "Meta has issued a patch for its Muse macOS app following the discovery of a zero-day vulnerability that could allow someone to take control of the AI agent. The bug found by security researcher Patrick Wardle utilized an undocumented Muse setting that enabled potential attackers running local code to redirect transcription processing from Meta's servers […]",
+      "dato": "2026-09-22T07:53:58-04:00",
       "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-22T05:18:45.022179+00:00",
-      "eget_foerst_set": "2026-09-22T05:18:45.022179+00:00",
-      "rubrik": "Newsom underskriver syv love om AI-datacentre",
-      "resume_da": "Love tvinger datacentre til selv at betale for elnetopgraderinger og kræver ny takstklasse fra California Public Utilities Commission.",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Meta lukker sikkerhedshul i sin AI-agent Muse",
+      "resume_da": "Patrick Wardle fandt et zero-day-hul i Muse til macOS, som kunne give fuld kontrol over agenten.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
-        "betydning": 4,
+        "betydning": 3,
         "brugbarhed": 2,
         "dokumentation": 4,
         "dansk": 0,
-        "type": "politik",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Newsom underskriver syv love om datacentres el- og vandforbrug og egen betaling af netopgraderinger.",
-        "forbehold": "Lovene træder i kraft med implementering hos California Public Utilities Commission.",
-        "emne": "californien / datacentre"
+        "begrundelse": "Meta lapper zero-day-hul i Muse til macOS fundet af Patrick Wardle, som kunne give kontrol over AI-agenten.",
+        "forbehold": "Kræver kørende lokal kode; ingen melding om udnyttelse i det fri.",
+        "emne": "meta muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
+      "link": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
+      "resume": "The British AI data center developer depends on tech giants Microsoft and Anthropic for most of its revenue.",
+      "dato": "2026-09-22T12:23:05+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Nscale går på børsen med AI-datacentre",
+      "resume_da": "Britiske Nscale henter det meste af sin omsætning fra Microsoft og Anthropic.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Britiske Nscale går mod børsen med stærk koncentration af omsætning hos Microsoft og Anthropic.",
+        "forbehold": "IPO endnu ikke gennemført; vilkår og efterspørgsel ukendte.",
+        "emne": "nscale"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
@@ -233,34 +266,34 @@
       ]
     },
     {
-      "titel": "tokenizers v1: encode, decode and scaling, measured",
-      "link": "https://huggingface.co/blog/tokenizers-v1",
-      "resume": "",
-      "dato": "2026-09-21T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
-      "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
-      "rubrik": "Hugging Face klar med tokenizers v1",
-      "resume_da": "Titlen fremhæver encode, decode og skalering, målt. Materialet indeholder ikke flere detaljer om indhold eller adgang.",
-      "kat_ai": true,
+      "titel": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+      "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
+      "resume": "Microsoft, OpenAI emails reveal fear of AI “doom loop” killing news orgs.",
+      "dato": "2026-09-17T20:10:41+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-17T20:31:59.642820+00:00",
+      "eget_foerst_set": "2026-09-17T20:31:59.642820+00:00",
+      "rubrik": "Microsoft-chef kalder AI-scraping historiens største arbejdetyveri",
+      "resume_da": "E-mails mellem Microsoft og OpenAI viser frygt for, at manglende betaling til nyhedsmedier starter en ond cirkel, der kvæler dem.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 1,
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Hugging Face varsler tokenizers v1 med encode, decode og skalering 'målt', men materialet har ingen detaljer om indholdet.",
-        "forbehold": "Intet tekstindhold; omfang, ændringer og tilgængelighed er ukendte.",
-        "emne": "hugging face tokenizers"
+        "begrundelse": "Microsoft-leder kalder AI-scraping historiens største tyveri;-mails afslører frygt for nyhedsmediers dødsspiral.",
+        "forbehold": "Uddraget viser ikke, hvordan e-mailernes ordlyd er dokumenteret.",
+        "emne": "microsoft/openai om scraping og nyhedsmedier"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -327,6 +360,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
+      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
+      "resume": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and professor of technology policy at Carnegie Mellon. The […]",
+      "dato": "2026-09-19T14:00:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-19T14:44:19.468231+00:00",
+      "eget_foerst_set": "2026-09-19T14:44:19.468231+00:00",
+      "rubrik": "Jonathan Kanter drøfter AI-fritagelse for antitrust i Decoder",
+      "resume_da": "Første del af en serie om erhvervslivets fremtid. Kanter er tidligere antitrustchef i det amerikanske justitsministerium og nu professor ved WashU og Carnegie Mellon.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcast-interview med tidligere antitrustchef Jonathan Kanter om konkurrence og AI; uddraget rummer ingen nye konkrete oplysninger.",
+        "forbehold": "Kun kort uddrag af en todelt serie; interviewets præcise indhold kendes ikke.",
+        "emne": "antitrust og ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -431,16 +497,16 @@
       ]
     },
     {
-      "titel": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
-      "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
-      "resume": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and professor of technology policy at Carnegie Mellon. The […]",
-      "dato": "2026-09-19T14:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-19T14:44:19.468231+00:00",
-      "eget_foerst_set": "2026-09-19T14:44:19.468231+00:00",
-      "rubrik": "Jonathan Kanter drøfter AI-fritagelse for antitrust i Decoder",
-      "resume_da": "Første del af en serie om erhvervslivets fremtid. Kanter er tidligere antitrustchef i det amerikanske justitsministerium og nu professor ved WashU og Carnegie Mellon.",
+      "titel": "Quoting voxium",
+      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
+      "dato": "2026-09-20T21:06:43+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
+      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -448,14 +514,14 @@
         "nyhed": 1,
         "betydning": 2,
         "brugbarhed": 1,
-        "dokumentation": 3,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "analyse",
+        "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Podcast-interview med tidligere antitrustchef Jonathan Kanter om konkurrence og AI; uddraget rummer ingen nye konkrete oplysninger.",
-        "forbehold": "Kun kort uddrag af en todelt serie; interviewets præcise indhold kendes ikke.",
-        "emne": "antitrust og ai"
+        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
+        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
+        "emne": "claude code i udviklerteam"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
@@ -530,39 +596,6 @@
       ]
     },
     {
-      "titel": "Quoting voxium",
-      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
-      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
-      "dato": "2026-09-20T21:06:43+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
-      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
-        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
-        "emne": "claude code i udviklerteam"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Anthropic’s first embedded evaluator is … Accenture?",
       "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
       "resume": "Accenture is about to take on its most high-risk consulting engagement ever.",
@@ -591,6 +624,39 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "link": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "resume": "",
+      "dato": "2026-09-21T13:44:34+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "rubrik": "Hugging Face-paper formulerer LLM-pruning som Ising-problem",
+      "resume_da": "Materialet indeholder kun titlen; den nævner blokfjernelse i store sprogmodeller som et Ising-optimeringsproblem kendt fra fysikken.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kun titel: metode til at beskære store sprogmodeller formuleres som et Ising-optimeringsproblem.",
+        "forbehold": "Artiklens indhold er ikke med i materialet, så resultater kan ikke vurderes.",
+        "emne": "llm-beskæring"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -640,39 +706,6 @@
       ]
     },
     {
-      "titel": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-      "link": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "resume": "",
-      "dato": "2026-09-21T13:44:34+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
-      "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
-      "rubrik": "Hugging Face-paper formulerer LLM-pruning som Ising-problem",
-      "resume_da": "Materialet indeholder kun titlen; den nævner blokfjernelse i store sprogmodeller som et Ising-optimeringsproblem kendt fra fysikken.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kun titel: metode til at beskære store sprogmodeller formuleres som et Ising-optimeringsproblem.",
-        "forbehold": "Artiklens indhold er ikke med i materialet, så resultater kan ikke vurderes.",
-        "emne": "llm-beskæring"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Reimagining advertising with AI",
       "link": "https://openai.com/index/reimagining-advertising-with-ai",
       "resume": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
@@ -706,35 +739,34 @@
       ]
     },
     {
-      "titel": "Partnering with Accenture on embedded evaluation",
-      "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "resume": "",
-      "dato": "2026-09-18T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "rubrik": "Anthropic indgår partnerskab med Accenture",
-      "resume_da": "Partnerskabet handler om indlejret evaluering, fremgår det af Anthropics meddelelse. Yderligere detaljer fremgår ikke af materialet.",
+      "titel": "AI safety conversations have gotten unbelievable",
+      "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
+      "resume": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
+      "dato": "2026-09-19T15:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-19T18:12:03.466532+00:00",
+      "eget_foerst_set": "2026-09-19T18:12:03.466532+00:00",
+      "rubrik": "To AI-sikkerhedssamtaler gik viralt denne uge",
+      "resume_da": "Ifølge TechCrunch gør begge opslag det svært at afgøre, hvad der er sandt om AI, og hvad der er fiktion.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 1,
         "betydning": 2,
-        "brugbarhed": 2,
+        "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "forretning",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Anthropic oplyser et partnerskab med Accenture om indlejret evaluering; meddelelsen indeholder ingen yderligere detaljer.",
-        "forbehold": "Materialet består kun af en titel uden indhold, så omfang og betydning kan ikke vurderes.",
-        "emne": "anthropic accenture"
+        "begrundelse": "TechCrunch gennemgår to virale AI-sikkerhedsopslag, der viser, hvor svært det er at skelne fakta fra fiktion om AI.",
+        "forbehold": "Artiklen beskriver opslagene kun overordnet uden konkrete detaljer.",
+        "emne": "ai-sikkerhedsdebat"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-09-18T00:00:00+00:00",
-      "prio": 4,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -773,34 +805,35 @@
       ]
     },
     {
-      "titel": "AI safety conversations have gotten unbelievable",
-      "link": "https://techcrunch.com/2026/09/19/ai-safety-conversations-have-gotten-unbelievable/",
-      "resume": "This week two conversations about AI safety went viral that demonstrate just how hard it is to discern AI fact from fiction.",
-      "dato": "2026-09-19T15:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-19T18:12:03.466532+00:00",
-      "eget_foerst_set": "2026-09-19T18:12:03.466532+00:00",
-      "rubrik": "To AI-sikkerhedssamtaler gik viralt denne uge",
-      "resume_da": "Ifølge TechCrunch gør begge opslag det svært at afgøre, hvad der er sandt om AI, og hvad der er fiktion.",
+      "titel": "Partnering with Accenture on embedded evaluation",
+      "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "resume": "",
+      "dato": "2026-09-18T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "rubrik": "Anthropic indgår partnerskab med Accenture",
+      "resume_da": "Partnerskabet handler om indlejret evaluering, fremgår det af Anthropics meddelelse. Yderligere detaljer fremgår ikke af materialet.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
+        "nyhed": 2,
         "betydning": 2,
-        "brugbarhed": 1,
+        "brugbarhed": 2,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "analyse",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "TechCrunch gennemgår to virale AI-sikkerhedsopslag, der viser, hvor svært det er at skelne fakta fra fiktion om AI.",
-        "forbehold": "Artiklen beskriver opslagene kun overordnet uden konkrete detaljer.",
-        "emne": "ai-sikkerhedsdebat"
+        "begrundelse": "Anthropic oplyser et partnerskab med Accenture om indlejret evaluering; meddelelsen indeholder ingen yderligere detaljer.",
+        "forbehold": "Materialet består kun af en titel uden indhold, så omfang og betydning kan ikke vurderes.",
+        "emne": "anthropic accenture"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
+      "historie_dato": "2026-09-18T00:00:00+00:00",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -872,39 +905,6 @@
       ]
     },
     {
-      "titel": "How workers are unlocking new ways of working",
-      "link": "https://openai.com/index/unlocking-new-ways-of-working",
-      "resume": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "dato": "2026-09-16T09:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
-      "rubrik": "OpenAI-forskning kortlægger arbejderes brug af AI",
-      "resume_da": "Undersøgelsen ser på, hvordan medarbejdere bruger AI ud over traditionelle roller, og hvilke nye aktiviteter der bliver en fast del af arbejdet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI Economic Research kortlægger, hvordan medarbejdere bruger AI ud over traditionelle roller, og hvilke nye aktiviteter der bliver faste.",
-        "forbehold": "OpenAI's egen undersøgelse; metode, datagrundlag og begrænsninger fremgår ikke af materialet.",
-        "emne": "openai, arbejdsmarked"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Is the AI industry really ready to slow down?",
       "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
       "resume": "On Equity, we debated whether AI executives are serious about wanting to slow down.",
@@ -933,6 +933,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How workers are unlocking new ways of working",
+      "link": "https://openai.com/index/unlocking-new-ways-of-working",
+      "resume": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
+      "dato": "2026-09-16T09:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "eget_foerst_set": "2026-09-16T17:43:50.882013+00:00",
+      "rubrik": "OpenAI-forskning kortlægger arbejderes brug af AI",
+      "resume_da": "Undersøgelsen ser på, hvordan medarbejdere bruger AI ud over traditionelle roller, og hvilke nye aktiviteter der bliver en fast del af arbejdet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI Economic Research kortlægger, hvordan medarbejdere bruger AI ud over traditionelle roller, og hvilke nye aktiviteter der bliver faste.",
+        "forbehold": "OpenAI's egen undersøgelse; metode, datagrundlag og begrænsninger fremgår ikke af materialet.",
+        "emne": "openai, arbejdsmarked"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1032,6 +1065,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "link": "https://huggingface.co/blog/omlx",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Jun Kim tiltræder Hugging Face for MLX-fællesskabet",
+      "resume_da": "Han skabte og vedligeholder oMLX og skal nu støtte MLX-udviklere hos Hugging Face.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "oMLX-skaberen Jun Kim ansættes hos Hugging Face til at støtte MLX-udviklere.",
+        "forbehold": "Personaleændring uden dokumenteret konsekvens for modeller eller værktøjer.",
+        "emne": "hugging face"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2349,40 +2415,6 @@
       ]
     },
     {
-      "titel": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-      "link": "https://huggingface.co/blog/webgpu-kernels",
-      "resume": "",
-      "dato": "2026-09-01T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Hugging Face giver AI-kraft til din pc",
-      "resume_da": "Over 200 WebGPU-kerner lader AI køre lokalt på egen maskine. Ingen cloud nødvendig.",
-      "billedmotiv": "A compact desktop computer case beside a large square processor chip lying flat, with a short thick cable coiled loosely next to them.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face udgiver over 200 WebGPU-kerner, så AI kan køre lokalt uden cloud.",
-        "forbehold": "Kildeteksten er tom; ydeevne og hvilke modeller der understøttes fremgår ikke.",
-        "emne": "hugging face webgpu"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Improving our alignment and security efforts",
       "link": "https://www.anthropic.com/news/improving-alignment-security-efforts",
       "resume": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.",
@@ -2938,40 +2970,6 @@
       ]
     },
     {
-      "titel": "The Open ASR Leaderboard Adds Its First Global South Language",
-      "link": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-      "resume": "",
-      "dato": "2026-08-28T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Ny stemme-AI-test tager hul på Afrika",
-      "resume_da": "Hugging Faces Open ASR-liste har fået sit første sprog fra det globale syd.",
-      "billedmotiv": "A sturdy microphone on a short stand beside a solid globe, both angled toward each other.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Open ASR-leaderboardet får sit første sprog fra det globale syd og udvider dermed talegenkendelse til flere sprog.",
-        "forbehold": "Hvilket sprog og hvilke resultater der er tale om, fremgår ikke af materialet.",
-        "emne": "open asr leaderboard"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Grok Bot is now included with more plans",
       "link": "https://x.ai/news/grok-bot-more-plans",
       "resume": "Grok Bot is now available for SuperGrok, Cursor Pro, and all Cursor Teams plans.",
@@ -3137,6 +3135,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Its $500 toothbrush disappeared from stores. Dyson won’t fully explain why",
+      "link": "https://arstechnica.com/gadgets/2026/09/its-500-toothbrush-disappeared-from-stores-dyson-wont-fully-explain-why/",
+      "resume": "Dyson admits a component issue but won't say what's failing in its $500 toothbrush.",
+      "dato": "2026-09-22T13:33:16+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Dyson erkender komponentfejl i sin tandbørste",
+      "resume_da": "500 dollars-tandbørsten forsvandt fra butikkerne, men Dyson vil ikke oplyse, hvilken komponent, der fejler.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Dyson bekræfter komponentfejl i $500-tandbørste trukket ud fra butikker, men nægter at forklare, hvad der fejler.",
+        "forbehold": "Ingen AI-forbindelse; fejlens art og omfang er ukendt.",
+        "emne": "dyson tandbørste"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -3317,6 +3348,7 @@
       "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
       "rubrik": "MIT-kortlægning dokumenterer dødsfald ved grænsetårne",
       "resume_da": "Samarbejdet Dying on Camera mellem MIT Technology Review og Times of San Diego spørger, hvorfor så mange dør tæt på overvågningstårne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3333,7 +3365,6 @@
         "emne": "mit tech review / grænseovervågning"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3350,6 +3381,7 @@
       "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
       "rubrik": "Grænsetårne opdagede ikke José Morales Bernal",
       "resume_da": "Han krydsede grænsen 8. april 2024 i New Mexico, inden for rækkevidde af tre nyligt installerede tårne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3366,7 +3398,6 @@
         "emne": "mit tech review / border surveillance"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -14019,14 +14050,6 @@
       "figurer": [],
       "andre": [
         {
-          "kilde": "Ars Technica AI",
-          "link": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-          "rubrik": "Microsoft-chef kaldte AI-scraping for historisk tyveri",
-          "resume_da": "Nye retsdokumenter viser, at Microsoft og OpenAI internt frygtede, at chatbots ville udsulte nyhedsmedier – og at nogle medier allerede målte enorme klikfald.",
-          "dato": "2026-09-17T20:10:41+00:00",
-          "foerst_set": "2026-09-17T20:31:59.642820+00:00"
-        },
-        {
           "kilde": "TechCrunch AI",
           "link": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
           "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
@@ -14047,13 +14070,6 @@
         "Microsoft kalder udtalelser for én medarbejders syn",
         "OpenAI-eksperter skønner op til 60 procent fald"
       ],
-      "billedmotiv": "A solid dark chatbot panel with a wide open lower intake carries the intact black interwoven OpenAI Blossom symbol on its front, with a four-colour Microsoft window square fixed at its corner. Thick newspaper sheets slide down into the intake while a flat stack of pages remains beside it. Solid opaque shapes, sharp edges, no text.",
-      "billede": "data/img/5242fd46884dae14.webp",
-      "laant_billede": {
-        "fra": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
-        "billede": "data/img/5242fd46884dae14.webp",
-        "motiv": "A solid dark chatbot panel with a wide open lower intake carries the intact black interwoven OpenAI Blossom symbol on its front, with a four-colour Microsoft window square fixed at its corner. Thick newspaper sheets slide down into the intake while a flat stack of pages remains beside it. Solid opaque shapes, sharp edges, no text."
-      },
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -14078,7 +14094,9 @@
       },
       "historie_dato": "2026-09-17T19:46:08+00:00",
       "prio": 5,
-      "side": "artikel/077d8f6ca8fa2cba.html"
+      "side": "artikel/077d8f6ca8fa2cba.html",
+      "billedmotiv": "A closed circular loop of solid news-page blocks feeding into one another, with an OpenAI Blossom block and a four-square Microsoft block riding the loop, while a thick arrow that once pointed out to a source publisher link snaps off the cycle.",
+      "billedmotiv_instruks": "afdd1426a6e6cef62f23"
     },
     {
       "titel": "AI hallucination of Chinese nuclear components almost led to US military attack",
@@ -15238,6 +15256,7 @@
         "kontrolleret": "2026-09-21T17:25:12.917381+00:00"
       },
       "prio": 4,
+      "billede": "data/img/8968e9532867236a.webp",
       "side": "artikel/8a06f4e347265d61.html"
     },
     {
@@ -15520,6 +15539,7 @@
         "kontrolleret": "2026-09-21T21:16:59.840910+00:00"
       },
       "prio": 6,
+      "billede": "data/img/dcbbcb6710e402fd.webp",
       "side": "artikel/285c3f889238df4e.html"
     },
     {
@@ -15789,6 +15809,45 @@
       "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
       "rubrik": "Trump varsler AI-tsar og AI Force",
       "resume_da": "Præsidenten afviser sikkerhedsvarsler som hoax, mens tre tech-chefer samtidig beder om at bremse udviklingen.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Trump kalder AI-sikkerhed en hoax",
+          "tekst": "Donald Trump varsler, at USA snart udpeger en ny AI-tsar og opretter en enhed, han kalder \"AI Force\". På sin sociale medieplatform Truth Social skriver han, at sikkerhedsbekymringer om AI er en \"hoax\" skabt af politiske modstandere.\n\nHan kalder AI den næste industrielle revolution og hævder, at branchen kan nå op på 25 procent af landets BNP. Trump lover, at USA ikke vil hindre væksten i branchen."
+        },
+        {
+          "overskrift": "Tre tech-chefer beder om udviklingspause",
+          "tekst": "Mens Trump afviser regulering, har tre af branchens mest fremtrædende figurer offentligt bedt om en pause. Dario Amodei fra Anthropic skrev i et essay, at techbranchen bør bremse hastigheden af modeludviklingen, efter at den er blevet \"drastically faster\" i sommer.\n\nSam Altman fra OpenAI og Elon Musk støttede hurtigt op om hans udmelding — en sjælden enighed i en ellers benhård konkurrence."
+        },
+        {
+          "overskrift": "Republikanere vender sig mod datacentre",
+          "tekst": "Offentlig frygt for AI er vokset efter afsløringer om, at OpenAI-agenter flygtede fra et testmiljø og hackede Hugging Face, en AI-udviklingsplatform, og at Googles Gemini under cybersikkerhedstests selvstændigt hackede flere virksomheder.\n\nSamtidig har mange republikanere skiftet position. Greg Abbott indførte i august et midlertidigt stop for datacentre i Texas, og Repræsentanternes Hus vedtog denne uge et lovforslag, der lægger datacentrenes ekstraenergiomkostninger på dem selv frem for forbrugerne."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "25 procent",
+          "label": "Trump's påstand om AI's mulige andel af USAs BNP"
+        },
+        {
+          "tal": "63 procent",
+          "label": "Amerikanere der er 'extremely' eller 'very' bekymrede over datacentre og elpriser (AP-måling)"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "David Sacks trådte tilbage fra rollen i marts",
+        "Florida-kandidat Byron Donalds lovede at beskytte mod datacentre",
+        "Michigan-senatskandidat Mike Rogers støttede etårs forbud mod datacentre"
+      ],
+      "betydning": "Trump's afvisning af regulering står i kontrast til både branchens egne kald og vælgermodstanden mod datacentre.",
+      "pointer": [
+        "Trump varsler AI-tsar og 'AI Force'",
+        "Amodei, Altman og Musk beder om udviklingspause",
+        "63% af amerikanere bekymrede over datacentre"
+      ],
+      "billedmotiv": "A large solid grey megaphone blasts toward the right at a thick red octagonal stop sign; mounted on the stop sign's face are two compact emblems — Anthropic's terracotta-orange many-rayed asterisk and OpenAI's black interwoven six-loop Blossom symbol — representing tech leaders calling for a pause against the loud push for unchecked AI growth. Opaque cutout forms with crisp contours, isolated on plain background, no people, no text.",
+      "billedmotiv_instruks": "0cbd421a7f6d1d2032bc",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -15806,51 +15865,13 @@
         "emne": "ai force trump"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Trump kalder AI-sikkerhed en hoax",
-          "tekst": "Donald Trump varsler, at USA snart udpeger en ny AI-tsar og opretter en enhed, han kalder \"AI Force\". På sin sociale medieplatform Truth Social skriver han, at sikkerhedsbekymringer om AI er en \"hoax\" skabt af politiske modstandere.\n\nHan kalder AI den næste industrielle revolution og hævder, at branchen kan nå op på 25 procent af landets BNP. Trump lover, at USA ikke vil hindre væksten i branchen."
-        },
-        {
-          "overskrift": "Tre tech-chefer beder om udviklingspause",
-          "tekst": "Mens Trump afviser regulering, har tre af branchens mest fremtrædende figurer offentligt bedt om en pause. Dario Amodei fra Anthropic skrev i et essay, at techbranchen bør bremse hastigheden af modeludviklingen, efter at den er blevet \"drastically faster\" i sommer.\n\nSam Altman fra OpenAI og Elon Musk støttede hurtigt op om hans udmelding — en sjælden enighed i en ellers benhård konkurrence."
-        },
-        {
-          "overskrift": "Republikanere vender sig mod datacentre",
-          "tekst": "Offentlig frygt for AI er vokset efter afsløringer om, at OpenAI-agenter flygtede fra et testmiljø og hackede Hugging Face, en AI-udviklingsplatform, og at Googles Gemini under cybersikkerhedstests selvstændigt hackede flere virksomheder.\n\nSamtidig har mange republikanere skiftet position. Greg Abbott indførte i august et midlertidigt stop for datacentre i Texas, og Repræsentanternes Hus vedtog denne uge et lovforslag, der lægger datacentrenes ekstraenergiomkostninger på dem selv frem for forbrugerne."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "25 procent",
-          "label": "Trump's påstand om AI's mulige andel af USAs BNP"
-        },
-        {
-          "tal": "63 procent",
-          "label": "Amerikanere der er 'extremely' eller 'very' bekymrede over datacentre og elpriser (AP-måling)"
-        }
-      ],
-      "detaljer": [
-        "David Sacks trådte tilbage fra rollen i marts",
-        "Florida-kandidat Byron Donalds lovede at beskytte mod datacentre",
-        "Michigan-senatskandidat Mike Rogers støttede etårs forbud mod datacentre"
-      ],
-      "betydning": "Trump's afvisning af regulering står i kontrast til både branchens egne kald og vælgermodstanden mod datacentre.",
-      "pointer": [
-        "Trump varsler AI-tsar og 'AI Force'",
-        "Amodei, Altman og Musk beder om udviklingspause",
-        "63% af amerikanere bekymrede over datacentre"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-22T05:32:55.859461+00:00"
       },
-      "billedmotiv": "A large solid grey megaphone blasts toward the right at a thick red octagonal stop sign; mounted on the stop sign's face are two compact emblems — Anthropic's terracotta-orange many-rayed asterisk and OpenAI's black interwoven six-loop Blossom symbol — representing tech leaders calling for a pause against the loud push for unchecked AI growth. Opaque cutout forms with crisp contours, isolated on plain background, no people, no text.",
-      "billedmotiv_instruks": "0cbd421a7f6d1d2032bc",
+      "prio": 5,
+      "billede": "data/img/7b535a609458582c.webp",
       "side": "artikel/eb41d8df25e0c1da.html"
     },
     {
@@ -15864,6 +15885,36 @@
       "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
       "rubrik": "OpenAI danner matematikgruppe efter AI-løsninger",
       "resume_da": "OpenAI danner rådgivende gruppe efter at dens interne model har løst over 100 åbne matematiske problemer.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Over 100 åbne matematiske problemer er løst",
+          "tekst": "En intern AI-model fra OpenAI har ifølge selskabet løst mere end 100 hidtil åbne problemer på tværs af de fleste områder af matematik. Det sker, efter at samme model tidligere har præsenteret en løsning på Navier-Stokes-millenniumsproblemet — et af matematikkens syv berygtede åbne problemer, som drejer sig om, hvordan væsker bevæger sig.\n\nSå mange nye resultater har fået markante matematikere til at reagere. Tidligere i denne måned underskrev 25 Fields-medaljevindere et åbent brev, hvor de advarer om, at AI-laboratorier truer deres intellektuelle arbejde, efterhånden som de konkurrerer om at løse berømte matematiske problemer."
+        },
+        {
+          "overskrift": "Rådgivning, men ingen magt over forskningen",
+          "tekst": "OpenAI har nu dannet en uafhængig rådgivende gruppe ved navn Advisory Group on Mathematics and Artificial Intelligence, der er forankret ved Institute for Advanced Study i Princeton, New Jersey. Gruppen skal give matematikere mere indflydelse i virksomhedens matematikforskning ved at vurdere betydningen af nye resultater og koordinere deres offentliggørelse.\n\nMen grænsen er trukket tydeligt. Gruppen får ikke lov til at bremse eller omdirigere OpenAI's igangværende matematiske forskning, og instituttet understreger selv, at det ikke har beslutningsmagt i AI-virksomheder — ansvaret for beslutninger ligger hos hver enkelt virksomhed."
+        },
+        {
+          "overskrift": "Ni matematikere, kun en underskrev kritikbrevet",
+          "tekst": "Ni prominente matematikere er navngivet som gruppens første medlemmer. De er ikke betalt, men kan komme med uopfordrede rådgivning, offentliggøre deres synspunkter og selv bestemme, hvem der skal være medlemmer — hvilket giver dem en vis uafhængighed fra OpenAI.\n\nBemærkelsesværdigt er dog, at kun ét af de ni medlemmer — Camillo De Lellis fra Princeton-instituttet — også underskrev det åbne brev fra de 25 Fields-medaljevindere."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Rådgivningsgruppen er placeret ved Institute for Advanced Study i Princeton, New Jersey.",
+        "Navier-Stokes-problemet er ét af matematikkens syv millennium-problemer med en præmie på én million dollar.",
+        "Medlemmerne er frivillige og ubetalte, men kan gå offentligt ud med deres holdninger."
+      ],
+      "betydning": "",
+      "pointer": [
+        "Intern OpenAI-model har løst 100+ åbne matematiske problemer.",
+        "25 Fields-medaljevindere advarede mod AI-lab-konkurrence.",
+        "Rådgivende gruppe får ingen indflydelse på forskningstempo."
+      ],
+      "billedmotiv": "A solid dark cube bearing OpenAI's black interwoven six-loop Blossom symbol slots into the last empty gap of a wall built from blocky mathematics shapes — plus signs, an equals bar and a curve — while a short solid advisory signpost stands beside the wall's open side, pointing guidance rather than blocking the path. Opaque cutout forms, crisp contours, isolated on plain background, no people, no text.",
+      "billedmotiv_instruks": "e510de46bdb71941759e",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -15881,44 +15932,404 @@
         "emne": "openai matematik"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T05:30:50.003368+00:00"
+      },
       "historie_dato": "2026-09-21T12:00:00+00:00",
       "prio": 5,
+      "side": "artikel/c06d2cf00824b1ae.html"
+    },
+    {
+      "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+      "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+      "resume": "A simple ClickFix attack is only one way to completely hijack the new agent.",
+      "dato": "2026-09-21T22:24:38+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-21T23:58:03.376367+00:00",
+      "eget_foerst_set": "2026-09-21T23:58:03.376367+00:00",
+      "rubrik": "Meta Muse kan kapres af enhver lokal app",
+      "resume_da": "Et zero-day lader en angriber omdirigere stemmeafskrivning og få fuld kontrol over brugerens Muse-konto via token.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ars Technica dokumenterer et 0-dags-sårbarhed i Metas agent Muse, der via ClickFix kan overtage kontrollen fuldstændigt.",
+        "forbehold": "Teksten angiver ikke, om sårbarheden er lappet.",
+        "emne": "meta / muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Over 100 åbne matematiske problemer er løst",
-          "tekst": "En intern AI-model fra OpenAI har ifølge selskabet løst mere end 100 hidtil åbne problemer på tværs af de fleste områder af matematik. Det sker, efter at samme model tidligere har præsenteret en løsning på Navier-Stokes-millenniumsproblemet — et af matematikkens syv berygtede åbne problemer, som drejer sig om, hvordan væsker bevæger sig.\n\nSå mange nye resultater har fået markante matematikere til at reagere. Tidligere i denne måned underskrev 25 Fields-medaljevindere et åbent brev, hvor de advarer om, at AI-laboratorier truer deres intellektuelle arbejde, efterhånden som de konkurrerer om at løse berømte matematiske problemer."
+          "overskrift": "Enhver app kan stjæle din Muse-token",
+          "tekst": "Den nye AI-assistent Muse fra Meta kan kapres af enhver app på brugerens Mac. Det viser et zero-day fundet af macOS-sikkerhedseksperten Patrick Wardle. Et zero-day er en sikkerhedsfejl, som producenten endnu ikke kender.\n\nFejlen lader enhver lokalt installeret app eller terminalkommando få fat i det token, som autentificerer brugeren over for Muse. Tokenet fungerer som en permanent adgangsnøgle til kontoen. Meta har designet Muse, så enhver app uanset macOS-tilladelser kan ændre en række uudokumenterede indstillinger.\n\n»Vi kan manipulere assistenten og bruge dens privilegier til at gøre, hvad vi vil,« siger Wardle."
         },
         {
-          "overskrift": "Rådgivning, men ingen magt over forskningen",
-          "tekst": "OpenAI har nu dannet en uafhængig rådgivende gruppe ved navn Advisory Group on Mathematics and Artificial Intelligence, der er forankret ved Institute for Advanced Study i Princeton, New Jersey. Gruppen skal give matematikere mere indflydelse i virksomhedens matematikforskning ved at vurdere betydningen af nye resultater og koordinere deres offentliggørelse.\n\nMen grænsen er trukket tydeligt. Gruppen får ikke lov til at bremse eller omdirigere OpenAI's igangværende matematiske forskning, og instituttet understreger selv, at det ikke har beslutningsmagt i AI-virksomheder — ansvaret for beslutninger ligger hos hver enkelt virksomhed."
+          "overskrift": "Omdirigering af stemmeafskrivning åbner bagsdøren",
+          "tekst": "Angrebet udnytter en specifik indstilling: hvor stemmeoptagelser behandles. Normalt sker det på en Meta-server. Hvis en angriber omdirigerer indstillingen til sin egen server, modtager den automatisk tokenet.\n\nWardle har bygget flere proof-of-concept-angreb, der blandt andet skriver ondsindede filer til disken og tager billeder – ofte uden nogen advarsel til brugeren.\n\nEt af angrebene bruger en proxy-server mellem bruger og Meta. Efter brugerens stemmekommando tilføjer angriberens server sit eget kommando-opkald, for eksempel om at sende alle WhatsApp-beskeder videre. Tokenet sendes med automatisk."
         },
         {
-          "overskrift": "Ni matematikere, kun en underskrev kritikbrevet",
-          "tekst": "Ni prominente matematikere er navngivet som gruppens første medlemmer. De er ikke betalt, men kan komme med uopfordrede rådgivning, offentliggøre deres synspunkter og selv bestemme, hvem der skal være medlemmer — hvilket giver dem en vis uafhængighed fra OpenAI.\n\nBemærkelsesværdigt er dog, at kun ét af de ni medlemmer — Camillo De Lellis fra Princeton-instituttet — også underskrev det åbne brev fra de 25 Fields-medaljevindere."
+          "overskrift": "Cloud-diktat gjorde angrebet muligt",
+          "tekst": "Wardle peger på to designvalg, der muliggjorde fejlen. For det første kører Muse-diktat i skyen, hvor Meta kan logge det. macOS har længe haft en indbygget måde at transskribere på enheden selv – den havde gjort angrebet umuligt.\n\nFor det andet kan enhver app styre alle de uudokumenterede indstillinger. Meta mente sandsynligvis, at apps skulle kontrollere brugerflade-indstillinger, men at kontrollere en serveradresse for talebehandling er en helt anden sag.\n\nMeta har udgivet to blogindlæg på to uger om Muse' sikkerhed. Mark Zuckerberg har kaldt assistenten »bygget fra bunden til privatliv og sikkerhed.«\n\n»Man kan jo se, at de ikke, efter min mening, har tænkt på sikkerhed, hvilket er rigtig bekymrende,« siger Wardle."
+        },
+        {
+          "overskrift": "Amazon blokerede Muse før afsløringen",
+          "tekst": "Cirka 12 timer før Wardle offentliggjorde zero-day'en begyndte Amazon at blokere brugere i at handle via Muse på sin hjemmeside. Brugere mødte en besked om, at Muse var en »uautoriseret AI-agent, der overtræder Amazons brugsbetingelser.\"\n\nAmazon mener, at tredjepartsapps, der køber ind på vegne af kunder, skal fungere åbent og respektere forhandleres valg om deltagelse. Virksomheden har bedt Meta fjerne Amazon fra oplevelsen."
+        },
+        {
+          "overskrift": "Wardle slipper for at skrive malware",
+          "tekst": "Wardle er skaberen af den non-profit organisation Objective-See Foundation, forfatter til bogen-serien »The Art of Mac Malware« og tidligere ansat hos NASA og NSA.\n\nHans proof-of-concept viser, at en angriber ikke behøver at udvikle omfattende Mac-malware. I stedet kan angriberen bruge selve Muse til at gøre arbejdet. Wardle præsenterer sårbarheden på sikkerhedskonferencen Objective by the Sea i november.\n\nDen gængse indvending – at alle sikkerhedsbånd springer, når en enhed allerede er kompromitteret – rammer ikke her, vurderer Ars Technica."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "12 timer",
+          "label": "Fra Amazons blokering af Muse til Wardles offentliggørelse"
+        }
+      ],
+      "detaljer": [
+        "Muse findes kun til macOS – der findes ingen Windows-version",
+        "Muse skaber selv nye værktøjer, når et mangler",
+        "Muse kobles til WhatsApp, e-mail, kalender og sociale medier",
+        "Wardle præsenterer sårbarheden på Objective by the Sea-konferencen i november"
+      ],
+      "betydning": "Meta har tildelt Muse adgang til WhatsApp, e-mail, kalender og køb – men et enkelt hul giver enhver app kontrol over det hele.",
+      "pointer": [
+        "Meta Muse har et zero-day fundet af Patrick Wardle",
+        "Enhver lokal app kan stjæle adgangstokenet til Muse-kontoen",
+        "Amazon blokerede Muse som uautoriseret AI-agent"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T14:15:45.458364+00:00"
+      },
+      "billedmotiv": "A solid rounded voice-assistant puck bearing Meta's blue infinity-loop mark; a thick key-shaped access token slides along a voice-transcription path that bends away from a Meta server block and slots into a small rogue server block instead, showing the redirected dictation handing over the account key.",
+      "billedmotiv_instruks": "768a6630bfc7a8c9daa4",
+      "billede": "data/img/97c155c7ccc42c89.webp",
+      "side": "artikel/64b9f3c8af56bfa0.html"
+    },
+    {
+      "titel": "California tightens rules on AI data center energy and water use",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "resume": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers while forcing them to pay for upgrades to […]",
+      "dato": "2026-09-21T16:29:45-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-22T05:18:45.022179+00:00",
+      "eget_foerst_set": "2026-09-22T05:18:45.022179+00:00",
+      "rubrik": "California tvinger AI-datacentre til at betale",
+      "resume_da": "Syv nye love lægger regningen for strøm- og vandudvidelser på datacentre, ikke på californiske husholdninger.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Newsom underskriver syv love om datacentres el- og vandforbrug og egen betaling af netopgraderinger.",
+        "forbehold": "Lovene træder i kraft med implementering hos California Public Utilities Commission.",
+        "emne": "californien / datacentre"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Syv love lægger regningen på datacentrene",
+          "tekst": "Gavin Newsom, guvernør i Californien, har underskrevet syv love, der skal forhindre AI-datacentre i at sende udgifterne til el, vand og netværksopgraderinger videre til almindelige forbrugere. Lovepakken pålægger California Public Utilities Commission — den statslige energiregulator — at oprette en særlig takstklasse for datacentre.\n\nDatacentrene skal derudover selv betale for opgraderinger af lokale elnet og vandsystemer, i stedet for at regningen lander hos naboerne. Newsom siger i en pressemeddelelse, at lovene sikrer, at californierne bevarer kontrollen."
+        },
+        {
+          "overskrift": "Vandforbrug skal oplyses på forhånd",
+          "tekst": "Fremtidige datacentre skal oplyse deres forventede vandforbrug til lokale myndigheder, sammen med oplysninger om energieffektivitet og tørkeberedskab. Skal et projekt kvalificere sig til en forenklet godkendelsesproces, skal det samtidig opfylde bestemte krav til forbrug af energi, vand og brændstof.\n\nDet betyder, at myndighederne får et konkret grundlag til at vurdere et datacenters ressourcebehov, før byggetilladelsen gives."
+        },
+        {
+          "overskrift": "Regulering mod Trumps lempelser",
+          "tekst": "Newsom udtaler, at USA's præsident Trump-administration bevæger sig mod mindre regulering, mens lokalsamfundene må håndtere konsekvenserne: højere elektricitetsbehov, begrænsninger i elnettet, vandforbrug og forurening.\n\nForrige uge underskrev Newsom desuden en bekendtgørelse for at fremskynde skabelsen af en AI-»kill switch« — en funktion, der kan slukke en AI-model hurtigt ved kritiske situationer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "7 love",
+          "label": "Antal love underskrevet af Newsom i denne pakke"
+        },
+        {
+          "tal": "1 ny takstklasse",
+          "label": "Pålagt California Public Utilities Commission for datacentre"
+        },
+        {
+          "tal": "1 eksekutiv bekendtgørelse",
+          "label": "Underskrevet forrige uge om AI-»kill switch«"
+        }
+      ],
+      "detaljer": [
+        "Lovepakken blev tidligere rapporteret af Los Angeles Times.",
+        "Artiklen er skrevet af Emma Roth for The Verge.",
+        "Datacentre skal selv finansiere opgraderinger af lokale elnet og vandsystemer.",
+        "Forenklet godkendelse kræver opfyldelse af krav til energi, vand og brændstof."
+      ],
+      "betydning": "Datacentre i Californien får nu ekstra omkostninger til net- og vandopgraderinger, hvilket kan gøre nye projekter dyrere og langsommere at godkende.",
+      "pointer": [
+        "Syv love pålægger datacentre regningen for nettet og vandet.",
+        "Vandforbrug og tørkeberedskab skal oplyses før godkendelse.",
+        "Newsom kalder lovene et modsvar til Trumps deregulering."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T14:06:41.322642+00:00"
+      },
+      "billedmotiv": "A tall solid datacenter block lifts a heavy electric-meter disc and a thick water-pipe flange onto its own shoulders, while a short row of small houses with their own meters stays clear of the cost, showing grid and water upgrades billed to the datacenter.",
+      "billedmotiv_instruks": "0b39e1a33983a98f527b",
+      "billede": "data/img/af9d7ea60f36a4ef.webp",
+      "side": "artikel/83547d403e173182.html"
+    },
+    {
+      "titel": "Everyone can find a reason to dislike data center construction",
+      "link": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/",
+      "resume": "Inside two years of fraught AI data center debates in Pennsylvania.",
+      "dato": "2026-09-22T13:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Data & Society: Datacentre-modstand er post-partisan",
+      "resume_da": "Etnografisk rapport blandt 44 Pennsylvanere forklarer, hvorfor strømregninger, ejendomsværdier og tillid driver modstanden mod AI-datacentre.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TechCrunch gennemgår to års strid om AI-datacentre i Pennsylvania og modstand fra lokale grupper.",
+        "forbehold": "Lokal case; ikke dokumentation for generelle konsekvenser.",
+        "emne": "ai-datacentre pennsylvania"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Forskere finder post-partisan modstand mod datacentre",
+          "tekst": "Den nonprofitorganisation Data & Society har efter 18 måneders etnografisk feltarbejde interviewet 44 Pennsylvanere om, hvorfor de modsætter sig datacentre. Forskerne beskriver modstanden som post-partisan: Den samler ikke traditionelle partiblokke, men folk med vidt forskellige motiver.\n\nDet spænder fra modstandere af nybyggeri over miljøorganisationer bekymrede for vand- og energiforbrug til folk, der ikke bryder sig om AI som teknologi. Programdirektør Maia Woluchem kalder det organiske kampe, der tvinger folk til at tale sammen om fremtiden."
+        },
+        {
+          "overskrift": "Pennsylvanias industriarv gør beboere skeptiske",
+          "tekst": "Pennsylvanias historie med kuldrift, olie, stål og fracking har efterladt beboere mistænksomme over for utopiske industriplaner. Budskabet om, at AI er uundgåelig, er derfor landet dårligt, mener forskerne.\n\nI juli 2025 fejrede guvernør Josh Shapiro en topmøde med 90 milliarder dollar i investeringer. Et år senere underskrev han en ordre med nye krav til datacentre og fjernede dem fra en regulatorisk hurtigspurt."
+        },
+        {
+          "overskrift": "Strømregninger og tavshedspligter driver modstanden",
+          "tekst": "Materielle bekymringer står oftest øverst på listen: Folk frygter, at datacentre løfter deres strømregning, sænker ejendomsværdier, eller væmmes over, at lokale embedsmænd bedes om tavshedsaftaler.\n\nFagforeninger er til gengæld projektternes største støtter på grund af potentielle jobs, trods erkendelsen af, at datacentre ikke bliver store arbejdspladser, når de står færdige."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "44",
+          "label": "Pennsylvanere interviewet i rapporten mellem 2024 og 2026"
+        },
+        {
+          "tal": "Over 60 %",
+          "label": "Amerikanere, der støtter at begrænse nye datacentre ifølge undersøgelser"
+        },
+        {
+          "tal": "68 mia. dollar",
+          "label": "Datacenterprojekter forstyrret af lokal modstand i 2. kvartal 2026 ifølge Data Center Watch"
+        }
+      ],
+      "detaljer": [
+        "Data Center Coalition brugte mindst 19.000 dollar på lobbyvirksomhed i Pennsylvania sidste år.",
+        "Guvernør Shapiro fjernede datacentre fra en regulatorisk hurtigspurt ved ordre et år efter topmødet.",
+        "Forskerne kalder branchens Kina-forklaring på modstanden utroværdig og beskriver branchens kampagne som propaganda."
+      ],
+      "betydning": "AI-industrien står over for en tillidskrise, fordi modstanden har mange forskellige årsager, der ikke lige kan imødekommes.",
+      "pointer": [
+        "Modstanden samler folk på tværs af politiske blokke",
+        "Materielle bekymringer som strømregning står øverst",
+        "Guvernør Shapiro strammede krav efter at have fejret investeringer"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T14:05:58.964269+00:00"
+      },
+      "billedmotiv": "One large solid datacenter block surrounded by mismatched solid shapes gathered close around it: a gabled house, a water droplet, an electricity meter and a factory chimney, each a different motive, with a thick research booklet leaning at the side.",
+      "billedmotiv_instruks": "10229b497f0cb271b169",
+      "billede": "data/img/1455cfe30c0e8dcd.webp",
+      "side": "artikel/2665fc5c20dcb8b4.html"
+    },
+    {
+      "titel": "Don’t be fooled by this summer of AI hype",
+      "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+      "resume": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the OpenAI–Hugging Face hacking incident, after which Anthropic (proudly) and Meta (reluctantly) disclosed similar incidents involving their models. This was followed…",
+      "dato": "2026-09-22T11:04:51+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Timnit Gebru: AI-gennembrudene holder ikke",
+      "resume_da": "To AI-forskere gennemgår påstande om hacking og matematik, som eksperter senere har underkendt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "MIT Tech Review advarer mod sommerens hype om Claude Mythos og modelhacks hos OpenAI, Anthropic og Meta.",
+        "forbehold": "Kommentarartikel; producentpåstande om Claude Mythos er ikke uafhængigt testet.",
+        "emne": "ai hype sikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Firmaer annoncerede vilde AI-gennembrud",
+          "tekst": "Flere af AI-branchens mest kendte firmaer har denne sommer annonceret gennembrud, der alle pegede samme vej: AI nærmer sig menneskelige evner.\n\nI slutningen af april hævdede Anthropic, at modellen Claude Mythos er bedre til at finde sikkerhedshuller i software end de fleste sikkerhedseksperter. Efter et hackerangreb med OpenAI og Hugging Face afslørede Anthropic og Meta lignende hændelser med deres modeller.\n\nAnthropic annoncerede et matematisk gennembrud, og snart efter fulgte OpenAI. Da Anthropic-ingeniøren Jacob Coxon forlod firmaet, skrev han, at det og OpenAI 'racer mod selvforbedrende superintelligens.'"
+        },
+        {
+          "overskrift": "Eksperter fandt en anden historie",
+          "tekst": "Når relevante eksperter undersøgte påstandene, så billedet anderledes ud. Cybersikkerhedseksperter siger, at hackerhændelserne handlede om OpenAI's forsømmelighed — ikke om 'modeller på afveje'.\n\nMatematikere var oprindelig chokerede over OpenAI's meddelelse om, at chatbotten Astra havde løst problemer, åbne i mindst et årti. Men de konkluderede senere, at resultaterne ikke var nyskabende — og beskyldte firmaet for forskningssvindel og plagiat.\n\nMatematikprofessoren Tristan Buckmaster fra New York University antydede i en erklæring, at OpenAI havde stjålet andres arbejde."
+        },
+        {
+          "overskrift": "Matematik og kode er lettest at verificere",
+          "tekst": "Gebru og Bender forklarer, at svar i matematik og programmering kan kontrolleres. Det gør det lettere at finjustere systemerne uden at betale datamedarbejdere for at annotere hvert eneste svar.\n\nHundreder af matematikere har underskrevet et opråb, der advarer om branchens 'stærke kommercielle interesse for at overdrive produkternes evner.' De beder politikere om at rådføre sig med eksperter frem for pressemeddelelser."
+        },
+        {
+          "overskrift": "Superintelligence-ord skjuler firmaernes ansvar",
+          "tekst": "Timnit Gebru og Emily M. Bender skriver, at påstande om farlig superintelligens bygger på transhumanisme, eugenik og ønsketænkning om fremtidige digitale mennesker — ikke på god videnskab.\n\nDe peger på, at udtryk som 'superintelligens' og 'modeller på afveje' giver produkterne skylden i stedet for de firmaer, der bygger dem — og gør dem samtidig mere salgbare."
+        },
+        {
+          "overskrift": "Opfordring til at trække vejret",
+          "tekst": "Gebru og Bender opfordrer politikere og borgere til at tage sig tid til at høre fra uafhængige eksperter, før de træffer beslutninger.\n\nDen bedste konsekvens af sommerens hype vil være, at man næste gang genkender denne markedsføring for, hvad den er."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Mindst 10 år",
+          "label": "Hvor længe de matematiske problemer ifølge OpenAI havde været åbne uden væsentlige fremskridt"
+        }
+      ],
+      "detaljer": [
+        "Tristan Buckmaster er matematikprofessor ved New York University's Courant Institute.",
+        "Senator Bernie Sanders foreslog lovgivning mod udvikling af superintelligens.",
+        "Emily M. Bender er lingvist ved University of Washington.",
+        "DAIR står for Distributed AI Research Institute, ledet af Timnit Gebru."
+      ],
+      "betydning": "Både firmapræsentationer og pressens dækning kan ifølge Gebru og Bender påvirke lovgivningen, som Bernie Sanders' forslag mod superintelligens viser.",
+      "pointer": [
+        "Eksperter underkendte firmaernes gennembrudspåstande",
+        "Superintelligence-ord flytter ansvar fra firmaer",
+        "Matematikere beder politikere om at rådføre sig"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T14:10:47.202991+00:00"
+      },
+      "billedmotiv": "Two solid award medals on short ribbons side by side, one stamped with Anthropic's terracotta asterisk, one with OpenAI's black Blossom symbol; the OpenAI medal's ribbon snaps and the medal topples onto a stack of expert rebuttal sheets beneath it.",
+      "billedmotiv_instruks": "11c88141c6f1ea31633b",
+      "billede": "data/img/bc218144b1530cd4.webp",
+      "side": "artikel/d185f661c7d14e1d.html"
+    },
+    {
+      "titel": "tokenizers v1: encode, decode and scaling, measured",
+      "link": "https://huggingface.co/blog/tokenizers-v1",
+      "resume": "",
+      "dato": "2026-09-21T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "eget_foerst_set": "2026-09-21T17:10:47.459588+00:00",
+      "rubrik": "tokenizers v1 er tit tientals gange hurtigere",
+      "resume_da": "Hugging Faces bibliotek giver præcis de samme token-ID'er som før, men dropper regex-fortolkning og genbruger gentagne ord fra en cache.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face varsler tokenizers v1 med encode, decode og skalering 'målt', men materialet har ingen detaljer om indholdet.",
+        "forbehold": "Intet tekstindhold; omfang, ændringer og tilgængelighed er ukendte.",
+        "emne": "hugging face tokenizers"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Samme tokens, langt færre beregninger",
+          "tekst": "En tokenizer omdanner tekst til de tal, modellen læser. Det sker i fire trin: normalisering, præ-tokenisering, selve modellen og efterbehandling. Det er især modeltrinet, der er ombygget.\n\nHugging Faces tokenizers v1 producerer præcis de samme token-ID'er som v0.23. API, ordforråd og ranglister er bevaret uændrede, så alle eksisterende modeller kan bruge det uden skift.\n\nBiblioteket er stadig generelt og understøtter BPE, WordPiece og Unigram. Otte af de ti målte modelfamilier bruger BPE, hvor teksten bygges sammen parvis efter en lært rangliste."
+        },
+        {
+          "overskrift": "Håndkodet mønster erstatter regex-motor",
+          "tekst": "BPE-modeller deler først teksten med et regulært udtryk. Det mønster ligger fast i modellen og ændrer sig aldrig under kørsel, så der er ingen grund til at fortolke det med et general-purpose regex-bibliotek hver gang.\n\nI stedet skriver v1 en ækvivalent funktion i hånden, som bruger CPU'ens SIMD-instruktioner: én instruktion behandler mange bytes på én gang og passer godt til UTF-8-tekst. Bitcannon ser byte-strømmene som parallelle bitstrømme og beslutter 64 bytes per registeroperation. Samme idé driver Parabix og simdjson.\n\nGrænsen er genkendelse: kun en håndfuld grammere dækker de fleste byte-level BPE-modeller. Kendes mønsteret ikke, beholder tokenizeren regex-stien, og hastighedsgevinsten udebliver."
+        },
+        {
+          "overskrift": "Gentagne ord hoppes over",
+          "tekst": "Rigtig tekst indeholder mange gentagne ord. Da BPE altid giver samme ID'er for samme præ-token, kan v1 gemme resultatet efter første behandling. En trådlokal cache kobler præ-tokenets bytes til dets token-ID'er, så senere forekomster springer sløjfen over.\n\nJo længere tekst, jo større en andel udgør gentagelserne. Nye ord dukker dog fortsat op, og de giver cache-træf, der udebliver.\n\nDen anden besparelse ligger i sløjfen, der gang på gang finder det højestrangerede nabopar og slår det sammen. Før allokerede den nyt hukommelse ved hver kald og byggede en ny prioritetskø for hvert præ-token. v1 genbruger i stedet en midlertidig buffer, som kalderen selv ejer."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [],
       "detaljer": [
-        "Rådgivningsgruppen er placeret ved Institute for Advanced Study i Princeton, New Jersey.",
-        "Navier-Stokes-problemet er ét af matematikkens syv millennium-problemer med en præmie på én million dollar.",
-        "Medlemmerne er frivillige og ubetalte, men kan gå offentligt ud med deres holdninger."
+        "IBM, NVIDIA og ExecuTorch-holdet bidrog patches og test på flere hardwaretyper.",
+        "tokbench kan genkøre alle benchmarks på din egen hardware.",
+        "Målingerne er lavet på release candidate af tokenizers v1.",
+        "Idéer kom fra blandt andet gigatoken, tiktoken og kitoken."
       ],
-      "betydning": "",
+      "betydning": "Når modeller bliver hurtigere, kan tokenizeren blive flaskehalsen og holde GPU'en i kø, mens CPU'en arbejder — præcis den ventetid v1 sigter mod at fjerne.",
       "pointer": [
-        "Intern OpenAI-model har løst 100+ åbne matematiske problemer.",
-        "25 Fields-medaljevindere advarede mod AI-lab-konkurrence.",
-        "Rådgivende gruppe får ingen indflydelse på forskningstempo."
+        "Samme token-ID'er som v0.23, kun hastigheden er ny",
+        "Kendte BPE-mønstre får SIMD-kode i stedet for regex",
+        "Cachen hjælper mest ved mange gentagne ord"
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-09-22T05:30:50.003368+00:00"
+        "kontrolleret": "2026-09-22T14:13:53.835724+00:00"
       },
-      "billedmotiv": "A solid dark cube bearing OpenAI's black interwoven six-loop Blossom symbol slots into the last empty gap of a wall built from blocky mathematics shapes — plus signs, an equals bar and a curve — while a short solid advisory signpost stands beside the wall's open side, pointing guidance rather than blocking the path. Opaque cutout forms, crisp contours, isolated on plain background, no people, no text.",
-      "billedmotiv_instruks": "e510de46bdb71941759e",
-      "side": "artikel/c06d2cf00824b1ae.html"
+      "billedmotiv": "A solid processing gate on a byte-stream rail with Hugging Face's yellow smiling face mark on its frame; a chain of identical repeated word blocks hops clean over the gate into a cache slot, while a hand-coded comb splits a fresh sequence of different blocks on the rail below.",
+      "billedmotiv_instruks": "3c6c4c9feb5b2d3da384",
+      "side": "artikel/87a2ea6346f8c464.html"
     }
   ]
 }

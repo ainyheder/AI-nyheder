@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-22T05:18:45.022179+00:00",
+  "opdateret": "2026-09-22T13:37:55.361440+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,35 +8,17 @@
     "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
     "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
   ],
-  "input_fingerprint": "d8f460cec3901247",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Artikel 3, første afsnit: \"skal forhøre, at AI-datacentre skyder deres ekstraudgifter over\" er en fejl (bør være \"forhindre\") og giver som skrevet ingen mening.",
-    "Artikel 2: påstanden \"Meta har endnu ikke rettet hullet ifølge artiklen\" findes ikke i det læste Ars Technica-materiale, der afbrydes midt i artiklen. Kræver enten belæg eller fjernelse.",
-    "Artikel 1, afsnit 2: em-stregen binder xAIs to forskellige påstande sammen, så læseren kan tro, at den hurtige variant koster halv pris; \"halv pris\" gælder sammenligning med konkurrerende modeller, ikke varianten.",
-    "Artikel 1: \"Grok Bot-harnesset\" bruges uden forklaring, trods kravet om at læseren skal kunne følge med uden kendskab til AI-jargon; pointeren \"hastighed uden dyrere variant\" er utydelig, når der netop findes en dobbelt så dyr hurtig variant."
-  ],
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "input_fingerprint": "dcc98a1677568c18",
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 4,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -45,6 +27,10 @@
     },
     {
       "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -70,7 +56,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+      "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
       "grundlag": "kildetekst"
     },
     {
@@ -78,30 +64,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
     "https://x.ai/news/grok-4-7",
-    "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-    "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
+    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
   ],
-  "afventer_artikler": 116
+  "afventer_artikler": 117
 }
