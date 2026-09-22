@@ -1,60 +1,25 @@
 {
-  "opdateret": "2026-09-21T23:58:03.376367+00:00",
+  "opdateret": "2026-09-22T05:18:45.022179+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://simonwillison.net/2026/Sep/21/jev/",
     "https://x.ai/news/grok-4-7",
-    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
+    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
   ],
-  "input_fingerprint": "200ef117e351d3b9",
+  "input_fingerprint": "d8f460cec3901247",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Ingen modellancering blandt de tre hovedhistorier: Grok 4.7 (21/9, officiel xAI-kilde) og Jev (21/9, fuld kilde) ligger begge i 48-timers-vinduet, men er placeret i anbefalingerne. Det bryder retningens 'vigtigste modellanceringer først'.",
-    "Gentagelse: Amazons blokering af Muse optræder både i hovedhistorie 1 (afsnittet 'Amazon blokerede Muse på egen hånd') og som selvstændig anbefaling 7cd5365733ad83d6. Samme begivenhed optager to pladser.",
-    "Ufærdig tekst: anbefalingen b0723fcdb8fbabd7 (Trump/AI Force) har sektioner: null og ingen kilder - kun rubrik og resume. Pladsholder, ikke en artikel.",
-    "Anbefalingen 39b901174b543376 (Grok 4.7) har ingen kilder overhovedet. Alle tal (2 og 6 dollar per million tokens, GDPval 1695/1605/1735/1542, 62,4 procent, 3,3 procent) er uverificerbare i materialet, og firmaet skrives fejlagtigt 'SpaceXAI' i stedet for xAI.",
-    "Hovedhistorie 3 har en grammatiske fejl: 'Folk vandrede gennem områder, passes af AI-drevne overvågningstårne' (bør være 'passeres af' eller 'vogtet af').",
-    "Jev-anbefalingen oversætter 'confidence score' til 'et tal for, hvor sikker modellen er', hvilket læses som modelsikkerhed i stedet for svarsvished.",
-    "Bemærkning: hovedhistorie 2s officielle kilde 08ffdb24bebd9aa2 er kun et RSS-resumé; den fulde dækning hviler alene på TechCrunch-artiklen, da den officielle meddelelse ikke er læst i fuld længde."
+    "Artikel 3, første afsnit: \"skal forhøre, at AI-datacentre skyder deres ekstraudgifter over\" er en fejl (bør være \"forhindre\") og giver som skrevet ingen mening.",
+    "Artikel 2: påstanden \"Meta har endnu ikke rettet hullet ifølge artiklen\" findes ikke i det læste Ars Technica-materiale, der afbrydes midt i artiklen. Kræver enten belæg eller fjernelse.",
+    "Artikel 1, afsnit 2: em-stregen binder xAIs to forskellige påstande sammen, så læseren kan tro, at den hurtige variant koster halv pris; \"halv pris\" gælder sammenligning med konkurrerende modeller, ikke varianten.",
+    "Artikel 1: \"Grok Bot-harnesset\" bruges uden forklaring, trods kravet om at læseren skal kunne følge med uden kendskab til AI-jargon; pointeren \"hastighed uden dyrere variant\" er utydelig, når der netop findes en dobbelt så dyr hurtig variant."
   ],
-  "modelkald": 6,
+  "modelkald": 5,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -72,6 +37,14 @@
     },
     {
       "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -93,15 +66,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://simonwillison.net/2026/Sep/21/jev/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+      "link": "https://x.ai/news/grok-4-7",
       "grundlag": "kildetekst"
     },
     {
@@ -109,7 +74,15 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
       "grundlag": "kildetekst"
     },
     {
@@ -121,8 +94,8 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
@@ -130,5 +103,5 @@
     "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
     "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
   ],
-  "afventer_artikler": 115
+  "afventer_artikler": 116
 }

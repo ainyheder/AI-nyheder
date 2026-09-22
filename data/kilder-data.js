@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-21T23:58:03.376367+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-09-22T05:18:45.022179+00:00",
+ "artikler_i_alt": 92,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -239,7 +239,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 37,
+   "i_listen": 38,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -302,6 +302,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-21T21:13:22",
      "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
      "side": "artikel/285c3f889238df4e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI danner matematikgruppe efter AI-løsninger",
+     "dato": "2026-09-21T20:15:58",
+     "foerst_set": "2026-09-21T21:13:22",
+     "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+     "side": "artikel/c06d2cf00824b1ae.html",
      "hvor": "forside",
      "under": ""
     },
@@ -392,15 +401,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-18T16:41:48",
      "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
      "side": "artikel/0d70097db208a060.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Manus forhandler om 4 mia. dollar og børsnotering",
-     "dato": "2026-09-18T16:35:49",
-     "foerst_set": "2026-09-18T16:41:48",
-     "link": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
-     "side": "artikel/ecfc994dbcabff84.html",
      "hvor": "forside",
      "under": ""
     }
@@ -599,7 +599,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 8,
+   "i_listen": 9,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -637,6 +637,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft-dokument advarede om 'doom loop'"
+    },
+    {
+     "rubrik": "Trump varsler AI-tsar og AI Force",
+     "dato": "2026-09-21T15:37:56",
+     "foerst_set": "2026-09-21T17:10:47",
+     "link": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+     "side": "artikel/eb41d8df25e0c1da.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google bekræfter: Gemini hackede tre firmaer",
@@ -739,15 +748,6 @@ window.KILDER_STATUS = {
    "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "José Morales døde 360 fod fra Anduril-tårn",
-     "dato": "",
-     "foerst_set": "2026-09-21T17:10:47.459588+00:00",
-     "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
-     "side": "",
-     "hvor": "under",
-     "under": "CBP har aldrig auditeret grænsens AI-tårne"
-    },
     {
      "rubrik": "CBP har aldrig auditeret grænsens AI-tårne",
      "dato": "2026-09-21T12:00:00",
