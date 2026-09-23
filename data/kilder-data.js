@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-23T05:04:58.158407+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-09-23T13:49:23.779632+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -46,7 +46,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     1
+     2
     ],
     [
      "The Verge AI",
@@ -54,6 +54,10 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
+     1
+    ],
+    [
+     "OpenAI Blog",
      1
     ],
     [
@@ -287,23 +291,23 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
+   "i_listen": 35,
    "som_ekstra": 8,
    "seneste": [
-    {
-     "rubrik": "GPT-6 Sol og Luna halverer prisen",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI halverer prisen på GPT-6 Sol og Luna"
-    },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "GPT-6 Sol og Luna halverer prisen",
+     "dato": "",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
@@ -361,6 +365,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får Docs og Slides i samme chat"
+    },
+    {
+     "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
+     "dato": "2026-09-23T12:00:00",
+     "foerst_set": "2026-09-23T13:49:23",
+     "link": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+     "side": "artikel/ca7a2de7d13c02aa.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
@@ -460,33 +473,20 @@ window.KILDER_STATUS = {
      "side": "artikel/4c292615ef53e08c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Trump vil omdøbe AI og oprette AI Force",
-     "dato": "2026-09-19T19:57:47",
-     "foerst_set": "2026-09-19T20:57:59",
-     "link": "https://techcrunch.com/2026/09/19/trump-suggests-rebranding-ai-with-a-new-name-says-hes-also-creating-an-ai-force/",
-     "side": "artikel/c0e5bbea1628d07f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
      5
     ],
     [
-     "OpenAI Blog",
-     1
-    ],
-    [
      "Anthropic News",
-     1
+     2
     ],
     [
      "Simon Willison AI",
@@ -504,8 +504,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
-   "som_ekstra": 6,
+   "i_listen": 23,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -535,6 +535,15 @@ window.KILDER_STATUS = {
      "under": "Meta Muse kan kapres af enhver lokal app"
     },
     {
+     "rubrik": "Trump vil udnævne AI-zar og skabe AI-force",
+     "dato": "",
+     "foerst_set": "2026-09-20T16:28:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+     "side": "",
+     "hvor": "under",
+     "under": "Trump vil omdøbe AI og oprette AI Force"
+    },
+    {
      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
      "dato": "",
      "foerst_set": "2026-09-19T23:28:25",
@@ -560,6 +569,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+    },
+    {
+     "rubrik": "OpenAI henter tre ledere fra Patreon",
+     "dato": "2026-09-23T07:02:39",
+     "foerst_set": "2026-09-23T13:49:23",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
+     "side": "artikel/9767b09c228ae3fb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Rabbits OS3 kører uden R1-hardware",
@@ -599,7 +617,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
-     "dato": "2026-09-21T06:18:06",
+     "dato": "2026-09-21T10:18:06",
      "foerst_set": "2026-09-21T11:03:51",
      "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
      "side": "artikel/13e93d540c1e658a.html",
@@ -659,21 +677,12 @@ window.KILDER_STATUS = {
      "side": "artikel/077d8f6ca8fa2cba.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Amodei vil bremse kapløbet mod superintelligens",
-     "dato": "2026-09-17T19:28:24",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-     "side": "artikel/85b0b4814d514fc1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
@@ -699,7 +708,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Anthropic og OpenAI sænker prisen på AI-modeller",
+     "rubrik": "Opus 5.5 og GPT-6 Sol bliver billigere",
      "dato": "",
      "foerst_set": "2026-09-22T23:13:17",
      "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
@@ -906,9 +915,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 5,
-   "som_ekstra": 0,
+   "i_listen": 2,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+     "dato": "",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
     {
      "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
      "dato": "",
@@ -926,33 +944,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "GPT-6 Astra forbedrer Devins egen test"
-    },
-    {
-     "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-     "dato": "2026-09-22T18:00:00",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-     "side": "artikel/c4259d8daf829e3d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer ChatGPT til finanssektoren med GPT-6 Astra",
-     "dato": "2026-09-10T07:00:00",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-     "side": "artikel/3f77446f0e44a8a2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI præsenterer Data agent i ChatGPT Work",
-     "dato": "2026-09-10T15:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/put-data-to-work",
-     "side": "artikel/d86fa96aa31ae332.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Forsker bruger Codex og ChatGPT til antibiotika",
@@ -975,7 +966,7 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Anthropic News",
      1
     ]
    ]

@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-23T06:25:35.635025+00:00",
+ "genereret": "2026-09-23T14:37:39.906165+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,65 +195,85 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-23T05:04:58.158407+00:00",
-  "antal": 88,
-  "med_billede": 59,
-  "paa_dansk": 88,
+  "opdateret": "2026-09-23T13:49:23.779632+00:00",
+  "antal": 87,
+  "med_billede": 60,
+  "paa_dansk": 87,
   "kategorier": {
-   "Lanceringer": 14,
+   "Lanceringer": 12,
    "Samfund \u0026 etik": 27,
    "Politik \u0026 jura": 10,
-   "Hverdags-AI": 12,
-   "Penge \u0026 marked": 15,
+   "Hverdags-AI": 11,
+   "Penge \u0026 marked": 17,
    "Forskning": 10
   },
   "kilder": {
-   "OpenAI Blog": 5,
    "Anthropic News": 3,
    "xAI News": 2,
-   "TechCrunch AI": 34,
+   "TechCrunch AI": 35,
    "Ars Technica AI": 10,
-   "The Verge AI": 22,
+   "The Verge AI": 23,
    "MIT Tech Review AI": 4,
    "Hugging Face": 2,
    "Simon Willison AI": 3,
    "Google DeepMind": 1,
    "Mistral AI": 1,
-   "Google Gemini": 1
+   "Google Gemini": 1,
+   "OpenAI Blog": 2
   },
   "udvalgte": [
    {
-    "titel": "Introducing GPT-6 Sol and Luna",
-    "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-    "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "side": "artikel/c4259d8daf829e3d.html",
+    "titel": "Introducing Claude Opus 5.5",
+    "rubrik": "Claude Opus 5.5 matcher Fable-niveau til lavere pris",
+    "link": "https://www.anthropic.com/claude-opus-5-5",
+    "side": "artikel/23e9c366edfe97a9.html",
     "kategori": "Lanceringer",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-09-22T18:00:00+00:00",
-    "billede": "data/img/58eb6e2679ccbf82.webp"
+    "kilde": "Anthropic News",
+    "dato": "2026-09-22T00:00:00+00:00",
+    "billede": "data/img/41fe5a985927a032.webp"
    },
    {
-    "titel": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-    "rubrik": "Microsoft lukker AI-chatbot der solgte masseangreb",
-    "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-    "side": "artikel/90435c878e92426e.html",
+    "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+    "rubrik": "Meta Muse kan kapres af enhver lokal app",
+    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "side": "artikel/64b9f3c8af56bfa0.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "Ars Technica AI",
-    "dato": "2026-09-22T19:45:47+00:00",
-    "billede": ""
+    "dato": "2026-09-21T22:24:38+00:00",
+    "billede": "data/img/97c155c7ccc42c89.webp"
    },
    {
-    "titel": "Qualcomm launches two new smartphone chips with emphasis on AI",
-    "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
-    "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
-    "side": "artikel/f5417683ef6a173a.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-22T20:00:00+00:00",
-    "billede": "data/img/f239a9effbe8ad92.webp"
+    "titel": "California tightens rules on AI data center energy and water use",
+    "rubrik": "California tvinger AI-datacentre til at betale",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "side": "artikel/83547d403e173182.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-21T16:29:45-04:00",
+    "billede": "data/img/af9d7ea60f36a4ef.webp"
    }
   ],
   "seneste": [
+   {
+    "titel": "Ema raises $77M as AI starts eating into enterprise software and services",
+    "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
+    "link": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+    "side": "artikel/ca7a2de7d13c02aa.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-23T12:00:00+00:00",
+    "billede": "data/img/3f2b85e133c78bd0.webp"
+   },
+   {
+    "titel": "OpenAI nabs key Patreon execs ahead of upcoming announcement",
+    "rubrik": "OpenAI henter tre ledere fra Patreon",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
+    "side": "artikel/9767b09c228ae3fb.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-23T07:02:39-04:00",
+    "billede": "data/img/e15258e791382d8b.webp"
+   },
    {
     "titel": "Rabbit’s new AI agent doesn’t need an R1 to run",
     "rubrik": "Rabbits OS3 kører uden R1-hardware",
@@ -282,17 +302,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-09-22T21:56:43+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Introducing GPT-6 Sol and Luna",
-    "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-    "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "side": "artikel/c4259d8daf829e3d.html",
-    "kategori": "Lanceringer",
-    "kilde": "OpenAI Blog",
-    "dato": "2026-09-22T18:00:00+00:00",
-    "billede": "data/img/58eb6e2679ccbf82.webp"
+    "billede": "data/img/f3208dbaedb7b8e5.webp"
    },
    {
     "titel": "Introducing Claude Opus 5.5",
@@ -363,35 +373,25 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-22T15:00:00+00:00",
     "billede": "data/img/6fad85ecc4922b23.webp"
-   },
-   {
-    "titel": "Nscale’s IPO will test Wall Street’s appetite for concentrated AI bets once again",
-    "rubrik": "Nscale børsnotering hviler på kun to kunder",
-    "link": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
-    "side": "artikel/020fc8cb0d6ecf06.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-22T12:23:05+00:00",
-    "billede": "data/img/8c1ff679244feeb0.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-23T05:04:58.158407+00:00",
+  "opdateret": "2026-09-23T13:49:23.779632+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
-  "kildehentninger": 8,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel b55c6cd1054ed866: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
-   "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
    "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-   "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/"
+   "https://huggingface.co/blog/nvidia/nemotron-diarization",
+   "https://www.anthropic.com/claude-opus-5-5"
   ],
   "udgivet_udvalg": [
-   "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-   "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-   "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/"
+   "https://www.anthropic.com/claude-opus-5-5",
+   "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+   "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
   ],
   "vaerktoejer": [
    {
@@ -423,7 +423,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -431,63 +431,51 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 1066 tegn; skriv 12-900 tegn i dette felt"
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": null
+    "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 909 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel b55c6cd1054ed866: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt"
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
     "grundlag": "rss_resume"
    },
    {
-    "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.anthropic.com/claude-opus-5-5",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "grundlag": "rss_resume"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-23T05:04:57.613413+00:00",
+  "opdateret": "2026-09-23T13:49:23.263976+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -843,8 +831,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-23T05:04:58.158407+00:00",
-  "artikler_i_alt": 88,
+  "opdateret": "2026-09-23T13:49:23.779632+00:00",
+  "artikler_i_alt": 87,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1090,23 +1078,23 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 34,
+    "i_listen": 35,
     "som_ekstra": 8,
     "seneste": [
-     {
-      "rubrik": "GPT-6 Sol og Luna halverer prisen",
-      "dato": "",
-      "foerst_set": "2026-09-22T19:51:24",
-      "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI halverer prisen på GPT-6 Sol og Luna"
-     },
      {
       "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
       "dato": "",
       "foerst_set": "2026-09-22T19:51:24",
       "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     },
+     {
+      "rubrik": "GPT-6 Sol og Luna halverer prisen",
+      "dato": "",
+      "foerst_set": "2026-09-22T19:51:24",
+      "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
       "side": "",
       "hvor": "under",
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
@@ -1166,6 +1154,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude får Docs og Slides i samme chat"
      },
      {
+      "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
+      "dato": "2026-09-23T12:00:00",
+      "foerst_set": "2026-09-23T13:49:23",
+      "link": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+      "side": "artikel/ca7a2de7d13c02aa.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
       "dato": "2026-09-22T20:00:00",
       "foerst_set": "2026-09-22T23:13:17",
@@ -1191,15 +1188,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/176f90142d043408.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "AstroForge vil flyve med AI og uden radio",
-      "dato": "2026-09-22T15:00:00",
-      "foerst_set": "2026-09-22T19:51:24",
-      "link": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
-      "side": "artikel/63278f8d0a1c84a7.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1213,8 +1201,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
-    "som_ekstra": 6,
+    "i_listen": 23,
+    "som_ekstra": 7,
     "seneste": [
      {
       "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -1244,6 +1232,15 @@ window.KOMMANDO_DATA = {
       "under": "Meta Muse kan kapres af enhver lokal app"
      },
      {
+      "rubrik": "Trump vil udnævne AI-zar og skabe AI-force",
+      "dato": "",
+      "foerst_set": "2026-09-20T16:28:19",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "side": "",
+      "hvor": "under",
+      "under": "Trump vil omdøbe AI og oprette AI Force"
+     },
+     {
       "rubrik": "Meta undskylder: Muse forklarede sig forkert",
       "dato": "",
       "foerst_set": "2026-09-19T23:28:25",
@@ -1269,6 +1266,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+     },
+     {
+      "rubrik": "OpenAI henter tre ledere fra Patreon",
+      "dato": "2026-09-23T07:02:39",
+      "foerst_set": "2026-09-23T13:49:23",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
+      "side": "artikel/9767b09c228ae3fb.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Rabbits OS3 kører uden R1-hardware",
@@ -1305,24 +1311,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/93b84abf7bbda6f3.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
-      "dato": "2026-09-21T06:18:06",
-      "foerst_set": "2026-09-21T11:03:51",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-      "side": "artikel/13e93d540c1e658a.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Amazon blokerer Metas Muse-agent i butikken",
-      "dato": "2026-09-21T09:21:47",
-      "foerst_set": "2026-09-21T11:03:51",
-      "link": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
-      "side": "artikel/ac1368b0f72db021.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1340,7 +1328,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 4,
     "seneste": [
      {
-      "rubrik": "Anthropic og OpenAI sænker prisen på AI-modeller",
+      "rubrik": "Opus 5.5 og GPT-6 Sol bliver billigere",
       "dato": "",
       "foerst_set": "2026-09-22T23:13:17",
       "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
@@ -1510,9 +1498,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 25,
-    "i_listen": 5,
-    "som_ekstra": 0,
+    "i_listen": 2,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+      "dato": "",
+      "foerst_set": "2026-09-22T19:51:24",
+      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     },
      {
       "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
       "dato": "",
@@ -1530,33 +1527,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "GPT-6 Astra forbedrer Devins egen test"
-     },
-     {
-      "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-      "dato": "2026-09-22T18:00:00",
-      "foerst_set": "2026-09-22T19:51:24",
-      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "side": "artikel/c4259d8daf829e3d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI lancerer ChatGPT til finanssektoren med GPT-6 Astra",
-      "dato": "2026-09-10T07:00:00",
-      "foerst_set": "2026-09-10T21:07:39",
-      "link": "https://openai.com/index/introducing-chatgpt-financial-services",
-      "side": "artikel/3f77446f0e44a8a2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI præsenterer Data agent i ChatGPT Work",
-      "dato": "2026-09-10T15:00:00",
-      "foerst_set": "2026-09-10T17:49:16",
-      "link": "https://openai.com/index/put-data-to-work",
-      "side": "artikel/d86fa96aa31ae332.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Forsker bruger Codex og ChatGPT til antibiotika",
@@ -1633,12 +1603,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-23T06:25:31.527887+00:00",
+  "opdateret": "2026-09-23T14:37:28.234399+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 44,
-  "sidevisninger_i_alt": 75,
+  "besoeg_i_alt": 48,
+  "sidevisninger_i_alt": 82,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1795,22 +1765,41 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 44,
-    "visninger": 73
+    "besoeg": 48,
+    "visninger": 78
+   },
+   {
+    "sti": "/artikel/c4259d8daf829e3d.html",
+    "besoeg": 0,
+    "visninger": 1
    },
    {
     "sti": "/vaerktoejer.html",
     "besoeg": 0,
-    "visninger": 2
+    "visninger": 3
    }
   ],
-  "artikler": [],
+  "artikler": [
+   {
+    "sti": "/artikel/c4259d8daf829e3d.html",
+    "besoeg": 0,
+    "visninger": 1,
+    "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+    "kategori": "Lanceringer",
+    "dato": "2026-09-22"
+   }
+  ],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 44
+    "besoeg": 48
    }
   ],
-  "laeste_temaer": []
+  "laeste_temaer": [
+   {
+    "navn": "Lanceringer",
+    "visninger": 1
+   }
+  ]
  }
 };

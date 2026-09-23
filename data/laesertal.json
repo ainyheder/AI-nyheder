@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-23T06:25:31.527887+00:00",
+  "opdateret": "2026-09-23T14:37:28.234399+00:00",
   "dage": 7,
   "serie_dage": 30,
   "udgivne_temaer": {
@@ -138,7 +138,7 @@
           0,
           2,
           5,
-          0
+          2
         ]
       },
       {
@@ -249,25 +249,30 @@
     ]
   },
   "maaling": "ok",
-  "besoeg_i_alt": 44,
-  "sidevisninger_i_alt": 75,
+  "besoeg_i_alt": 48,
+  "sidevisninger_i_alt": 82,
   "ai_chat_besoeg": 0,
   "sider": [
     {
       "sti": "/",
-      "besoeg": 44,
-      "visninger": 73
+      "besoeg": 48,
+      "visninger": 78
+    },
+    {
+      "sti": "/artikel/c4259d8daf829e3d.html",
+      "besoeg": 0,
+      "visninger": 1
     },
     {
       "sti": "/vaerktoejer.html",
       "besoeg": 0,
-      "visninger": 2
+      "visninger": 3
     }
   ],
   "henvisere": [
     {
       "fra": "direkte",
-      "besoeg": 44
+      "besoeg": 48
     }
   ],
   "ai_chats": [],
@@ -275,20 +280,27 @@
     "/": [
       {
         "fra": "direkte",
-        "besoeg": 44,
-        "visninger": 44
+        "besoeg": 48,
+        "visninger": 48
       },
       {
         "fra": "herfra selv",
         "besoeg": 0,
-        "visninger": 29
+        "visninger": 30
+      }
+    ],
+    "/artikel/c4259d8daf829e3d.html": [
+      {
+        "fra": "herfra selv",
+        "besoeg": 0,
+        "visninger": 1
       }
     ],
     "/vaerktoejer.html": [
       {
         "fra": "herfra selv",
         "besoeg": 0,
-        "visninger": 2
+        "visninger": 3
       }
     ]
   },
@@ -450,6 +462,27 @@
       "visninger": 0
     }
   ],
-  "artikler": [],
-  "laeste_temaer": []
+  "artikler": [
+    {
+      "sti": "/artikel/c4259d8daf829e3d.html",
+      "besoeg": 0,
+      "visninger": 1,
+      "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+      "kategori": "Lanceringer",
+      "dato": "2026-09-22",
+      "henvisere": [
+        {
+          "fra": "herfra selv",
+          "besoeg": 0,
+          "visninger": 1
+        }
+      ]
+    }
+  ],
+  "laeste_temaer": [
+    {
+      "navn": "Lanceringer",
+      "visninger": 1
+    }
+  ]
 }
