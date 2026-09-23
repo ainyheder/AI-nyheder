@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-23T13:49:23.779632+00:00",
- "artikler_i_alt": 87,
+ "opdateret": "2026-09-23T19:47:07.099847+00:00",
+ "artikler_i_alt": 97,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -11,10 +11,19 @@ window.KILDER_STATUS = {
    "aktiv": true,
    "status": "ok",
    "fejl": "",
-   "hentet": 13,
-   "i_listen": 3,
+   "hentet": 14,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Claude skærer ebola-rapport fra dag til time",
+     "dato": "2026-09-22T00:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.anthropic.com/features/ebola-response",
+     "side": "artikel/9dde87711636ad1d.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude Opus 5.5 matcher Fable-niveau til lavere pris",
      "dato": "2026-09-22T00:00:00",
@@ -46,7 +55,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     1
     ],
     [
      "The Verge AI",
@@ -54,14 +63,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Simon Willison AI",
-     1
-    ],
-    [
-     "OpenAI Blog",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -291,23 +292,23 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
+   "i_listen": 40,
    "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "YouTube viser tre thumbnails til forskellige seergrupper",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
+     "side": "",
+     "hvor": "under",
+     "under": "YouTube AI-agent passer selv på gamle videoer"
+    },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
-    {
-     "rubrik": "GPT-6 Sol og Luna halverer prisen",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
@@ -365,6 +366,51 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude får Docs og Slides i samme chat"
+    },
+    {
+     "rubrik": "OpenAI giver mobilen stemmestyret arbejde",
+     "dato": "2026-09-23T17:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
+     "side": "artikel/3ecdce7d836ad40d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "YouTube Music svarer i samtale om musik",
+     "dato": "2026-09-23T15:19:30",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
+     "side": "artikel/ab0b2d96bb33495c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "YouTube lader dig bygge din egen feed",
+     "dato": "2026-09-23T14:30:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+     "side": "artikel/0869f53f8a88569c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gallup: Daglige AI-brugere er også bekymrede",
+     "dato": "2026-09-23T16:49:58",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
+     "side": "artikel/55b95be9dcae85a3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Spotify lader dig rette din smagsprofil",
+     "dato": "2026-09-23T13:00:00",
+     "foerst_set": "2026-09-23T13:49:23",
+     "link": "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/",
+     "side": "artikel/8c72904f696c9986.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
@@ -428,57 +474,12 @@ window.KILDER_STATUS = {
      "side": "artikel/2665fc5c20dcb8b4.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Muse slår ChatGPTs første 12 dage på downloads",
-     "dato": "2026-09-21T19:19:21",
-     "foerst_set": "2026-09-21T21:13:22",
-     "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
-     "side": "artikel/285c3f889238df4e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI danner matematikgruppe efter AI-løsninger",
-     "dato": "2026-09-21T20:15:58",
-     "foerst_set": "2026-09-21T21:13:22",
-     "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-     "side": "artikel/c06d2cf00824b1ae.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Googlebook til 899 dollar satser på Gemini",
-     "dato": "2026-09-21T14:39:22",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-     "side": "artikel/ce68e248589d5c28.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Tabby udfordrer QuickBooks med AI-bogføring",
-     "dato": "2026-09-21T16:38:51",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
-     "side": "artikel/8a06f4e347265d61.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Vocci-ring optager møder med dobbelttryk",
-     "dato": "2026-09-20T18:32:52",
-     "foerst_set": "2026-09-20T19:01:37",
-     "link": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
-     "side": "artikel/4c292615ef53e08c.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     10
     ],
     [
      "Ars Technica AI",
@@ -486,7 +487,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Anthropic News",
-     2
+     1
     ],
     [
      "Simon Willison AI",
@@ -504,9 +505,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
-   "som_ekstra": 7,
+   "i_listen": 27,
+   "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "OpenAI danner uafhængigt råd med ni elite-matematikere",
+     "dato": "",
+     "foerst_set": "2026-09-23T05:04:58",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI danner matematikgruppe efter AI-løsninger"
+    },
     {
      "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
      "dato": "",
@@ -571,6 +581,42 @@ window.KILDER_STATUS = {
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
     },
     {
+     "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
+     "dato": "2026-09-23T14:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+     "side": "artikel/9652a479122b8cee.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Newsom underskriver syv love om datacentre",
+     "dato": "2026-09-23T14:22:57",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+     "side": "artikel/10c165258146f68e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "YouTube AI-agent passer selv på gamle videoer",
+     "dato": "2026-09-23T10:30:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
+     "side": "artikel/8909ad75f4c2b214.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta's Muse surfer nettet, men kan ikke ringe",
+     "dato": "2026-09-23T15:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
+     "side": "artikel/2b824ca594e03d40.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI henter tre ledere fra Patreon",
      "dato": "2026-09-23T07:02:39",
      "foerst_set": "2026-09-23T13:49:23",
@@ -599,7 +645,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "California tvinger AI-datacentre til at betale",
-     "dato": "2026-09-21T16:29:45",
+     "dato": "2026-09-21T20:29:45",
      "foerst_set": "2026-09-22T05:18:45",
      "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
      "side": "artikel/83547d403e173182.html",
@@ -608,7 +654,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Apple betaler 250 millioner i Siri-forlig",
-     "dato": "2026-09-21T09:36:52",
+     "dato": "2026-09-21T13:36:52",
      "foerst_set": "2026-09-21T17:10:47",
      "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
      "side": "artikel/93b84abf7bbda6f3.html",
@@ -641,48 +687,12 @@ window.KILDER_STATUS = {
      "side": "artikel/a773bfa98d720806.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Spanberger forbyder hemmelige datacenter-aftaler",
-     "dato": "2026-09-18T18:29:17",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
-     "side": "artikel/115cada6134fe4b1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "TACLS skal varsle om flash floods tidligere",
-     "dato": "2026-09-18T11:00:00",
-     "foerst_set": "2026-09-18T11:46:00",
-     "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-     "side": "artikel/cc9d12fe9e378865.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Code samler flere agenter i ét projekt",
-     "dato": "2026-09-17T18:58:05",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
-     "side": "artikel/f0feb3e3451d3c61.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft-dokument advarede om 'doom loop'",
-     "dato": "2026-09-18T21:07:24",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-     "side": "artikel/077d8f6ca8fa2cba.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     10
     ],
     [
      "Ars Technica AI",
@@ -704,18 +714,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
-   "som_ekstra": 4,
+   "i_listen": 12,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Opus 5.5 og GPT-6 Sol bliver billigere",
-     "dato": "",
-     "foerst_set": "2026-09-22T23:13:17",
-     "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
     {
      "rubrik": "FAA tæt på at starte SMART over Washington",
      "dato": "",
@@ -742,6 +743,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles CC bliver familieagent med egen konto"
+    },
+    {
+     "rubrik": "YouTube lover egne feeds og mere AI",
+     "dato": "2026-09-23T19:35:53",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year/",
+     "side": "artikel/c7a045ac83cd13af.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Opus 5.5 og GPT-6 Sol koster mindre",
+     "dato": "2026-09-22T21:25:18",
+     "foerst_set": "2026-09-22T23:13:17",
+     "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+     "side": "artikel/2bd75cd10534f68e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Microsoft lukker AI-chatbot der solgte masseangreb",
@@ -844,10 +863,6 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "Anthropic News",
-     1
-    ],
-    [
      "Simon Willison AI",
      1
     ]
@@ -915,61 +930,10 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 2,
-   "som_ekstra": 1,
-   "seneste": [
-    {
-     "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
-    {
-     "rubrik": "Perplexity bruger GPT-6 Astra til at skrive og overvåge",
-     "dato": "",
-     "foerst_set": "2026-09-12T00:50:07.984240+00:00",
-     "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-     "side": "",
-     "hvor": "under",
-     "under": "GPT-6 Astra forbedrer Devins egen test"
-    },
-    {
-     "rubrik": "OpenAI annoncerer GPT-6 Astra til arbejde",
-     "dato": "",
-     "foerst_set": "2026-09-09T23:28:16.094724+00:00",
-     "link": "https://openai.com/index/gpt-6-astra-next-generation-work",
-     "side": "",
-     "hvor": "under",
-     "under": "GPT-6 Astra forbedrer Devins egen test"
-    },
-    {
-     "rubrik": "Forsker bruger Codex og ChatGPT til antibiotika",
-     "dato": "2026-09-10T16:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-     "side": "artikel/8e610a2233c8a93e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT-6 Astra forbedrer Devins egen test",
-     "dato": "2026-09-11T16:00:00",
-     "foerst_set": "2026-09-09T23:28:16",
-     "link": "https://openai.com/index/cognition-devin-testing-with-astra",
-     "side": "artikel/bb3fa770c5976f2e.html",
-     "hvor": "forside",
-     "under": ""
-    }
-   ],
-   "overlap": [
-    [
-     "Anthropic News",
-     1
-    ]
-   ]
+   "i_listen": 0,
+   "som_ekstra": 0,
+   "seneste": [],
+   "overlap": []
   },
   {
    "navn": "Google DeepMind",

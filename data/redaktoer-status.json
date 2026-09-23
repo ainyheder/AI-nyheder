@@ -1,32 +1,28 @@
 {
-  "opdateret": "2026-09-23T13:49:23.779632+00:00",
+  "opdateret": "2026-09-23T19:47:07.099847+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
     "https://www.anthropic.com/claude-opus-5-5"
   ],
-  "input_fingerprint": "037625b814d575c8",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel b55c6cd1054ed866: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
-  "kildehentninger": 4,
+  "input_fingerprint": "f9c2299eeccab27e",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 3,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -46,10 +42,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
@@ -58,44 +50,44 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 1066 tegn; skriv 12-900 tegn i dette felt"
+      "vaerktoej": "find_kilder",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 909 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel bf57ce3f2e77f395: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel b55c6cd1054ed866: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
+    {
+      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+      "grundlag": "kildetekst"
+    },
     {
       "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
+      "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.anthropic.com/claude-opus-5-5",
-    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-    "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
+    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+    "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/"
   ],
-  "afventer_artikler": 128
+  "afventer_artikler": 141
 }
