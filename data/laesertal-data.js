@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-22T21:06:58.104089+00:00",
+ "opdateret": "2026-09-23T00:16:01.029917+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-08-24",
    "2026-08-25",
    "2026-08-26",
    "2026-08-27",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-09-19",
    "2026-09-20",
    "2026-09-21",
-   "2026-09-22"
+   "2026-09-22",
+   "2026-09-23"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     26,
      26,
      2,
      28,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      0,
      0,
      2,
+     0,
      0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     3,
      4,
      14,
      8,
@@ -103,13 +102,13 @@ window.LAESERTAL = {
      0,
      0,
      5,
-     3
+     4,
+     0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     3,
      5,
      9,
      6,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      1,
      0,
      2,
-     3
+     5,
+     0
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     3,
      6,
      8,
      6,
@@ -173,14 +172,14 @@ window.LAESERTAL = {
      0,
      0,
      1,
-     1
+     3,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
      1,
-     1,
      3,
      4,
      3,
@@ -208,13 +207,13 @@ window.LAESERTAL = {
      2,
      0,
      4,
+     0,
      0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     1,
      0,
      2,
      2,
@@ -243,6 +242,7 @@ window.LAESERTAL = {
      2,
      1,
      2,
+     0,
      0
     ]
    }
@@ -250,13 +250,13 @@ window.LAESERTAL = {
  },
  "maaling": "ok",
  "besoeg_i_alt": 45,
- "sidevisninger_i_alt": 74,
+ "sidevisninger_i_alt": 76,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
    "besoeg": 45,
-   "visninger": 72
+   "visninger": 74
   },
   {
    "sti": "/vaerktoejer.html",
@@ -281,7 +281,7 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 27
+    "visninger": 29
    }
   ],
   "/vaerktoejer.html": [
@@ -299,11 +299,6 @@ window.LAESERTAL = {
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-08-24",
-   "besoeg": 10,
-   "visninger": 10
-  },
   {
    "dato": "2026-08-25",
    "besoeg": 0,
@@ -447,7 +442,12 @@ window.LAESERTAL = {
   {
    "dato": "2026-09-22",
    "besoeg": 20,
-   "visninger": 30
+   "visninger": 40
+  },
+  {
+   "dato": "2026-09-23",
+   "besoeg": 0,
+   "visninger": 0
   }
  ],
  "artikler": [],

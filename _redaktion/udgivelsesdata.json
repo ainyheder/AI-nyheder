@@ -1,39 +1,6 @@
 {
-  "opdateret": "2026-09-22T19:51:24.838792+00:00",
+  "opdateret": "2026-09-22T23:13:17.203036+00:00",
   "kladder": [
-    {
-      "titel": "Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-      "resume": "Anthropic says its new Claude Opus 5.5 model comes with stronger safeguards in the wake of recent rogue AI hacking incidents. In an announcement on Tuesday, Anthropic says Opus 5.5 comes with improvements to certain risky behaviors, including attempts to escape the company's testing sandbox. It's the first model released by Anthropic after CEO Dario […]",
-      "dato": "2026-09-22T12:30:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Anthropic udgiver Claude Opus 5.5 med skærpet cybersikkerhed",
-      "resume_da": "Anthropic siger, at Opus 5.5 blandt andet dæmmer forsøg på at bryde ud af selskabets testsandbox.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Anthropic annoncerer Claude Opus 5.5 med skærpede sikkerhedsgreb efter hackerhændelser, bl.a. mod testsandbox-flugt.",
-        "forbehold": "Effekten af de nye sikkerhedsforanstaltninger er kun producentens egen vurdering.",
-        "emne": "anthropic claude opus 5.5"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 8,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
     {
       "titel": "OpenAI launches GPT-6 Sol and Luna, boasting lower cost and fewer mistakes",
       "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
@@ -45,6 +12,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "OpenAI lancerer GPT-6 Sol og Luna",
       "resume_da": "OpenAI kalder dem skåret over samme lest som Astra og siger, at prisen er lavere, og fejlene færre.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,74 +29,40 @@
         "emne": "openai gpt-6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "Microsoft disrupts AI-assisted platform that compromised 12,000",
-      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-      "resume": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
-      "dato": "2026-09-22T19:45:47+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Microsoft nedlægger AI-platformen EvilTokens efter 12.000 kompromitteringer",
-      "resume_da": "EvilTokens solgte ifølge Microsoft et færdigt værktøjssæt, der gjorde masseangreb hurtigere og nemmere at gennemføre.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsoft siger at AI-understøttede EvilTokens er slået ned; platformen gjorde masseangreb hurtigere og omfattede 12.000.",
-        "forbehold": "Opgørelsen på 12.000 og effekten af nedlæggelsen er Microsofts egne oplysninger.",
-        "emne": "microsoft / eviltokens"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Introducing GPT-6 Sol and Luna",
-      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "resume": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-      "dato": "2026-09-22T18:00:00+00:00",
+      "titel": "Better prompt caching for GPT-6",
+      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+      "dato": "2026-09-22T21:00:00+00:00",
       "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "OpenAI annoncerer GPT-6 Sol og Luna",
-      "resume_da": "Ifølge OpenAI balancerer de to modeller evne og omkostning forskelligt til hverdagsarbejde; adgang er ikke nævnt i opslaget.",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
+      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 4,
         "dokumentation": 4,
         "dansk": 0,
-        "type": "lancering",
+        "type": "guide",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "OpenAI præsenterer officielt GPT-6 Sol og Luna som to modeller med forskellig balance mellem evne og omkostning.",
-        "forbehold": "Opslaget nævner ikke adgang, priser eller målbare resultater; påstande er producentens egne.",
+        "model_lancering": false,
+        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
+        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
         "emne": "openai gpt-6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
-      "prio": 8,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -177,6 +111,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "OpenAI fastsætter principper for ekstern AI-sikkerhedstest",
       "resume_da": "Retningslinjerne beskriver, hvordan uafhængige tredjeparter skal vurdere frontier-modeller og selskabets sikkerhedsforanstaltninger grundigt, sikkert og uafhængigt.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -191,40 +126,6 @@
         "begrundelse": "OpenAI fastsætter principper for uafhængige tredjepartsvurderinger af frontier-modeller og sikkerhedsforanstaltninger.",
         "forbehold": "Retningslinjer er producentens eget udkast, ikke en bindende standard.",
         "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Meta patches Muse exploit that let attackers control the AI agent",
-      "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
-      "resume": "Meta has issued a patch for its Muse macOS app following the discovery of a zero-day vulnerability that could allow someone to take control of the AI agent. The bug found by security researcher Patrick Wardle utilized an undocumented Muse setting that enabled potential attackers running local code to redirect transcription processing from Meta's servers […]",
-      "dato": "2026-09-22T07:53:58-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "rubrik": "Meta lukker sikkerhedshul i sin AI-agent Muse",
-      "resume_da": "Patrick Wardle fandt et zero-day-hul i Muse til macOS, som kunne give fuld kontrol over agenten.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta lapper zero-day-hul i Muse til macOS fundet af Patrick Wardle, som kunne give kontrol over AI-agenten.",
-        "forbehold": "Kræver kørende lokal kode; ingen melding om udnyttelse i det fri.",
-        "emne": "meta muse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -243,6 +144,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "Britisk Columbia sagsøger OpenAI efter skyderi med ChatGPT",
       "resume_da": "Provinsen kræver erstatning til en ny skole i Tumbler Ridge og udlevering af skyttens ChatGPT-logfiler.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -259,74 +161,7 @@
         "emne": "britisk columbia / openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Trump says the US is officially renaming AI to ‘super intelligence’",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
-      "resume": "In a speech Tuesday morning at the UN General Assembly, Donald Trump railed against Iran, \"globalists,\" climate change, and transgender people while also claiming that the US is now \"officially\" renaming artificial intelligence to \"super intelligence.\" Oddly, this wasn't one of the entries in the poll Trump posted a few days ago when he started […]",
-      "dato": "2026-09-22T12:01:10-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Trump vil omdøbe AI til super intelligence",
-      "resume_da": "Præsidenten sagde det i en tale ved FN's Generalforsamling, hvor han også angreb Iran, klimaforandringer og globalister.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Trump erklærer ved FN's Generalforsamling, at USA officielt omdøber AI til 'super intelligence'.",
-        "forbehold": "Udtalelsen er symbolsk; ingen retningslinjer, ændringer eller konkrete følger er dokumenteret.",
-        "emne": "donald trump"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "AstroForge is putting AI in command of its next spacecraft",
-      "link": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
-      "resume": "Autonomy-1 will have a small, transformer-based AI model taking charge of a space probe.",
-      "dato": "2026-09-22T15:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "AstroForge giver AI kontrollen med næste rumsonde",
-      "resume_da": "Sonden Autonomy-1 får en lille transformer-baseret AI-model, samme arkitektur som sprogmodeller, til at tage kommandoen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AstroForge giver en lille transformer-baseret AI-model kommandoen over næste sonde, Autonomy-1.",
-        "forbehold": "Modelnnavn, kapaciteter og testresultater er ikke beskrevet; lanceringstidspunkt ukendt.",
-        "emne": "astroforge autonomy-1"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -360,6 +195,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "resume": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+      "dato": "2026-09-22T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "Parallel halverer forskningstid og omkostninger med GPT-6 Astra",
+      "resume_da": "Opgaven drejede sig om arbejdsmarkedsdata, og sammenligningen gjaldt tidligere modeller, skriver OpenAI Blog.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: Parallel halverede tid og omkostninger ved brug af GPT‑6 Astra til research.",
+        "forbehold": "Producentens egne kundetal om halveret tid og omkostninger, ikke uafhængigt afprøvet.",
+        "emne": "openai gpt-6 astra"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -497,6 +365,21 @@
       ]
     },
     {
+      "titel": "Trump now says he wants to form an ‘AI Force’",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "resume": "The president posted on Truth Social that he wanted to appoint an \"AI czar\" to lead a new \"AI force.\" He made the announcement amid growing calls from across the political spectrum and even within the industry to pump the brakes on AI development. He posted that his administration \"will not in any way hinder […]",
+      "dato": "2026-09-20T11:39:22-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-09-20T16:28:19.849234+00:00",
+      "eget_foerst_set": "2026-09-20T16:28:19.849234+00:00",
+      "rubrik": "Trump foreslår AI-czar til at lede AI Force",
+      "resume_da": "Præsidenten postede forslaget på Truth Social, mens der fra begge politiske fløje og industrien vokser kald til at bremse AI-udvikling.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
       "link": "https://huggingface.co/blog/evaleval-aisi",
       "resume": "",
@@ -507,6 +390,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "UK AISI og EvalEval genskaber benchmark-resultater",
       "resume_da": "Kun titlen er medsendt; kilden er Hugging Face, og detaljer om metoden følger ikke med.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -523,7 +407,6 @@
         "emne": "uk aisi"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -629,6 +512,39 @@
       ]
     },
     {
+      "titel": "Quoting voxium",
+      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
+      "dato": "2026-09-20T21:06:43+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
+      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
+        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
+        "emne": "claude code i udviklerteam"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
       "link": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
       "resume": "Today on Decoder, we’ve got the first of a two-part series on the future of business, and I’m talking with Jonathan Kanter, the former antitrust chief for the US Department of Justice in the Biden administration. These days, he’s both a professor of law at WashU and professor of technology policy at Carnegie Mellon. The […]",
@@ -695,34 +611,34 @@
       ]
     },
     {
-      "titel": "Quoting voxium",
-      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
-      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
-      "dato": "2026-09-20T21:06:43+00:00",
-      "kilde": "Simon Willison AI",
+      "titel": "Our framework for reporting model misalignment",
+      "link": "https://openai.com/index/model-misalignment-reporting-framework",
+      "resume": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "dato": "2026-09-16T17:00:00+00:00",
+      "kilde": "OpenAI Blog",
       "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
-      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
+      "foerst_set": "2026-09-17T00:51:48.169313+00:00",
+      "eget_foerst_set": "2026-09-17T00:51:48.169313+00:00",
+      "rubrik": "OpenAI deler rammeværk for at afdække modelafvigelser",
+      "resume_da": "Sammen med rammeværket offentliggør OpenAI seks rapporter om uventet eller bekymrende adfærd fra modeller.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 4,
         "dansk": 0,
-        "type": "andet",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
-        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
-        "emne": "claude code i udviklerteam"
+        "begrundelse": "OpenAI offentliggør et rammeværk for at spore, undersøge og oplyse om modelmisalignment samt seks rapporter om uventet modeladfærd.",
+        "forbehold": "Rapporterne er OpenAIs egne; ingen uafhængig verifikation af fund eller metoder.",
+        "emne": "openai misalignment"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -756,39 +672,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Our framework for reporting model misalignment",
-      "link": "https://openai.com/index/model-misalignment-reporting-framework",
-      "resume": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-      "dato": "2026-09-16T17:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-17T00:51:48.169313+00:00",
-      "eget_foerst_set": "2026-09-17T00:51:48.169313+00:00",
-      "rubrik": "OpenAI deler rammeværk for at afdække modelafvigelser",
-      "resume_da": "Sammen med rammeværket offentliggør OpenAI seks rapporter om uventet eller bekymrende adfærd fra modeller.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI offentliggør et rammeværk for at spore, undersøge og oplyse om modelmisalignment samt seks rapporter om uventet modeladfærd.",
-        "forbehold": "Rapporterne er OpenAIs egne; ingen uafhængig verifikation af fund eller metoder.",
-        "emne": "openai misalignment"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -893,39 +776,6 @@
       ]
     },
     {
-      "titel": "Anthropic’s first embedded evaluator is … Accenture?",
-      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
-      "resume": "Accenture is about to take on its most high-risk consulting engagement ever.",
-      "dato": "2026-09-18T21:44:33+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "rubrik": "Accenture skal være Anthropics første indbyggede evaluator",
-      "resume_da": "Ifølge TechCrunch skal konsulenthuset følge Anthropics arbejde som ekstern kontrol – mediet kalder opgaven dets mest risikofyldte hidtil.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Accenture bliver ifølge TechCrunch Anthropics første indlejrede eksterne evaluator i laboratoriet.",
-        "forbehold": "Uklart hvad evaluatorrollen konkret indebærer, og hvor bindende den er.",
-        "emne": "anthropic evaluator accenture"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
       "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
       "resume": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
@@ -954,6 +804,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Anthropic’s first embedded evaluator is … Accenture?",
+      "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
+      "resume": "Accenture is about to take on its most high-risk consulting engagement ever.",
+      "dato": "2026-09-18T21:44:33+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "rubrik": "Accenture skal være Anthropics første indbyggede evaluator",
+      "resume_da": "Ifølge TechCrunch skal konsulenthuset følge Anthropics arbejde som ekstern kontrol – mediet kalder opgaven dets mest risikofyldte hidtil.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Accenture bliver ifølge TechCrunch Anthropics første indlejrede eksterne evaluator i laboratoriet.",
+        "forbehold": "Uklart hvad evaluatorrollen konkret indebærer, og hvor bindende den er.",
+        "emne": "anthropic evaluator accenture"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1103,39 +986,6 @@
       ]
     },
     {
-      "titel": "Quoting @therealcornpop",
-      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
-      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
-      "dato": "2026-09-22T18:03:21+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
-      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
-        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
-        "emne": "ai-skrevne manuskripter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Is the AI industry really ready to slow down?",
       "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
       "resume": "On Equity, we debated whether AI executives are serious about wanting to slow down.",
@@ -1161,6 +1011,39 @@
         "begrundelse": "Podcastdebat om, hvorvidt AI-ledere mener alvor med at bremse udviklingen; ingen nye oplysninger eller beslutninger.",
         "forbehold": "Meningsudveksling uden nye fakta eller kilder.",
         "emne": "ai-branchen"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting @therealcornpop",
+      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
+      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
+      "dato": "2026-09-22T18:03:21+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
+      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
+        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
+        "emne": "ai-skrevne manuskripter"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
@@ -1268,6 +1151,39 @@
       ]
     },
     {
+      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
+      "link": "https://x.ai/news/grok-bot-customer-support",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
+      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
+        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
+        "emne": "xai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Claude Cowork and chat are now one Claude",
       "link": "https://simonwillison.net/2026/Sep/16/one-claude/",
       "resume": "Claude Cowork and chat are now one Claude In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code: Starting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noon, and Claude takes it from there, even after you’ve closed your laptop. [...] This is rolling out to Pro and Max plans…",
@@ -1296,39 +1212,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
-      "link": "https://x.ai/news/grok-bot-customer-support",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
-      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
-        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
-        "emne": "xai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1862,39 +1745,6 @@
       ]
     },
     {
-      "titel": "Roundtables: Could AI really kill us all?",
-      "link": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all/",
-      "resume": "Listen to the session or watch below Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Watch a conversation unpacking AI extinction fears: where they come from, whether they hold any water, and, if so,…",
-      "dato": "2026-09-15T17:47:51+00:00",
-      "kilde": "MIT Tech Review AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "rubrik": "MIT Tech Review debatterer frygten for AI-udryddelse",
-      "resume_da": "Ansatte i førende AI-labs siger, at avanceret AI reelt kan udslette menneskeheden. Samtalen ser på, hvor frygten kommer fra, og om den holder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Paneldiskussion om AI-udslettelsesfrygt og hvor den kommer fra; ingen nye fakta, modeller eller resultater.",
-        "forbehold": "Kun et debatarrangement, uden nye undersøgelser eller konkrete konklusioner.",
-        "emne": "ai-sikkerhedsdebat"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
       "link": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
       "resume": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
@@ -2391,6 +2241,39 @@
       ]
     },
     {
+      "titel": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "resume": "",
+      "dato": "2026-09-02T16:18:31+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "rubrik": "Gemini 3.8 Flash og 3.8 Flash Cyber annonceret",
+      "resume_da": "Kun titlen foreligger; det fremgår ikke, hvad modellerne kan, om de er tilgængelige, eller hvordan de er testet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google annoncerer Gemini 3.8 Flash og 3.8 Flash Cyber, men kilden indeholder kun titlen.",
+        "forbehold": "Kun titlen foreligger; hverken egenskaber, tilgængelighed eller test er dokumenteret.",
+        "emne": "google deepmind, gemini 3.8 flash"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
       "link": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
       "resume": "",
@@ -2417,39 +2300,6 @@
         "begrundelse": "Teknisk gennemgang viser, hvordan 100 GRPO-skridt giver en 350M-model bedre strukturerede svar; ingen ny model udgives.",
         "forbehold": "Kun titel og kort resumé; ingen uafhængig vurdering af resultaterne.",
         "emne": "hugging face, grpo-finjustering"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-      "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-      "resume": "",
-      "dato": "2026-09-02T16:18:31+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
-      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
-      "rubrik": "Gemini 3.8 Flash og 3.8 Flash Cyber annonceret",
-      "resume_da": "Kun titlen foreligger; det fremgår ikke, hvad modellerne kan, om de er tilgængelige, eller hvordan de er testet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google annoncerer Gemini 3.8 Flash og 3.8 Flash Cyber, men kilden indeholder kun titlen.",
-        "forbehold": "Kun titlen foreligger; hverken egenskaber, tilgængelighed eller test er dokumenteret.",
-        "emne": "google deepmind, gemini 3.8 flash"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -3012,6 +2862,40 @@
       ]
     },
     {
+      "titel": "Grok Bot now works with X",
+      "link": "https://x.ai/news/grok-bot-and-x",
+      "resume": "Grok Bot now has a tighter integration with X.",
+      "dato": "2026-08-29T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "Grok Bot virker nu sammen med X",
+      "resume_da": "xAI kobler sin Grok Bot direkte til X. Dermed kan den bruge platformens data.",
+      "billedmotiv": "A large solid cube joined to a smaller solid cube by one short thick metal bar, forming a single connected piece.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "xAI kobler sin Grok Bot direkte til X, så den kan bruge platformens data.",
+        "forbehold": "Ingen kildetekst; funktioner, pris og tilgængelighed er uoplyst.",
+        "emne": "grok bot og x"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Intelligent transcription with Gemini 3.5 Transcribe",
       "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
       "resume": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
@@ -3097,40 +2981,6 @@
       "prio": 6,
       "afventer": [
         "Afventer redaktørens kildekontrol"
-      ]
-    },
-    {
-      "titel": "Grok Bot now works with X",
-      "link": "https://x.ai/news/grok-bot-and-x",
-      "resume": "Grok Bot now has a tighter integration with X.",
-      "dato": "2026-08-29T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Grok Bot virker nu sammen med X",
-      "resume_da": "xAI kobler sin Grok Bot direkte til X. Dermed kan den bruge platformens data.",
-      "billedmotiv": "A large solid cube joined to a smaller solid cube by one short thick metal bar, forming a single connected piece.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "xAI kobler sin Grok Bot direkte til X, så den kan bruge platformens data.",
-        "forbehold": "Ingen kildetekst; funktioner, pris og tilgængelighed er uoplyst.",
-        "emne": "grok bot og x"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
@@ -3413,6 +3263,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "TechCrunch Disrupt 2026 samler fem AI-sikkerhedssessioner",
       "resume_da": "Talere tæller repræsentanter fra Anthropic, Nvidia, AWS og Waabi; tilmelding før 25. september giver op til 200 dollars i rabat.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3429,7 +3280,6 @@
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3446,6 +3296,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "Hello Robot demonstrerer Stretch 4 på TechCrunch Disrupt",
       "resume_da": "Demoen holdes på Real World AI Stage, og billetter købt før 25. september koster op til 200 dollar mindre.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3462,7 +3313,6 @@
         "emne": "hello robot"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3479,6 +3329,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "TechCrunch åbner udstillerborde igen til Disrupt 2026",
       "resume_da": "Fristen er 30. september klokken 23.59 PT, og standene vises på Moscone West i San Francisco 13.-15. oktober for over 10.000 deltagere.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3495,7 +3346,6 @@
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3512,6 +3362,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "TechCrunch Disrupt sænker billetpriser frem til 25. september",
       "resume_da": "Spar op til 200 dollar og få et andet kort til halv pris, før priserne stiger 25. september klokken 23.59 PT.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3528,7 +3379,6 @@
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3545,6 +3395,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "MIT Technology Review afslører huller i virtuel grænsevæg",
       "resume_da": "Undersøgelsen dokumenterer over 1.000 mennesker, der bevægede sig gennem områder overvåget af de amerikanske vagttårne langs den sydlige grænse.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -3561,7 +3412,6 @@
         "emne": "mit tech review"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -3901,7 +3751,7 @@
       "titel": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
       "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
       "resume": "Before recent high-profile hacks raised the specter of AI possibly \"killing all humans,\" our energy systems were already disturbingly vulnerable to cyberattack - and the risk is growing. \"We were always prey. We were just kind of surviving at the appetite of our predators,\" Joshua Corman, executive in residence for public safety and resilience at […]",
-      "dato": "2026-09-20T12:00:00+00:00",
+      "dato": "2026-09-20T08:00:00-04:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-09-20T12:36:13.066520+00:00",
@@ -4451,72 +4301,6 @@
         "begrundelse": "TechCrunch rapporterer om forhandlinger mellem SK Hynix og Intel om hukommelseschips i USA; SK Hynix afviser, at planer er fastlagt.",
         "forbehold": "Ubekræftede forhandlinger; SK Hynix siger, at intet er besluttet endnu.",
         "emne": "sk hynix, intel, hukommelseschips"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/",
-      "resume": "Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock Robotics). Register before September 25 to save up to $200 on your pass.",
-      "dato": "2026-09-15T14:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "eget_foerst_set": "2026-09-15T18:27:03.971686+00:00",
-      "rubrik": "TechCrunch Disrupt tager startups fra prototype til produktion",
-      "resume_da": "På konferencen i 2026 deler Adrian Macneil, John Mackey og Boris Sofman erfaringer med skalering. Tilmeldingsrabat på op til $200 gælder frem til 25. september.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Konferenceomtale med tilmeldingsrabat og frist; indeholder ingen AI-nyhed.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Jensen Huang took a call from Trump, and showed off something else, too",
-      "link": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
-      "resume": "When Jensen Huang took a live call from Trump, some of us were more focused on the phone he used to take it.",
-      "dato": "2026-09-15T01:50:48+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-15T01:52:19.071835+00:00",
-      "eget_foerst_set": "2026-09-15T01:52:19.071835+00:00",
-      "rubrik": "Jensen Huang tog imod liveopkald fra Trump",
-      "resume_da": "Under opkaldet rettede flere ifølge TechCrunch blikket mod selve telefonen, han brugte. Kilden siger ikke hvilken.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Kilden beskriver kun et telefonopkald fra Trump og en fremvist genstand; ingen AI-oplysning.",
-        "forbehold": "Kilden siger ikke, hvad der blev fremvist, eller hvilken telefon der blev brugt.",
-        "emne": "jensen huang"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -14976,16 +14760,6 @@
         }
       ],
       "figurer": [],
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-          "rubrik": "Trump vil have en AI-styrke og en AI-czar",
-          "resume_da": "Han giver ingen tidsplan eller navn — og fremfører uden belæg, at datacentre hæver lønninger og skaber tryggere gader.",
-          "dato": "2026-09-20T11:39:22-04:00",
-          "foerst_set": "2026-09-20T16:28:19.849234+00:00"
-        }
-      ],
       "detaljer": [
         "Trump sagde i sidste weekend ved en golfturnering, at han er åben over for »guardrails«.",
         "New York blev den første delstat til at stoppe tilladelser til store datacenterprojekter.",
@@ -15024,7 +14798,17 @@
       },
       "historie_dato": "2026-09-19T19:57:47+00:00",
       "prio": 4,
-      "side": "artikel/c0e5bbea1628d07f.html"
+      "side": "artikel/c0e5bbea1628d07f.html",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
+          "rubrik": "Trump vil omdøbe AI til super intelligence",
+          "resume_da": "På FN-mødet krævede han, at amerikanske dokumenter skifter navn – men erkender selv, at han måske ingen beføjelser har.",
+          "dato": "2026-09-22T16:01:10+00:00",
+          "foerst_set": "2026-09-22T19:51:24.838792+00:00"
+        }
+      ]
     },
     {
       "titel": "Self-generated prompt injections in compaction summaries",
@@ -15099,7 +14883,7 @@
       "titel": "Meta’s Muse is creepy, but maybe not for the reasons you think",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
       "resume": "Meta's Muse is apparently an effective AI assistant, but one that's a little creepy. Part of that is because of its new Mac app, which can access Messages, Calendar, and Notes. But for all its smarts, Muse doesn't actually know how to describe itself. Jason Aten, a contributing editor at Inc Magazine, posted on Threads […]",
-      "dato": "2026-09-19T20:44:40+00:00",
+      "dato": "2026-09-19T16:44:40-04:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-09-19T23:28:25.041099+00:00",
@@ -16448,6 +16232,17 @@
         "kontrolleret": "2026-09-22T14:15:45.458364+00:00"
       },
       "prio": 6,
+      "historie_dato": "2026-09-21T22:24:38+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+          "rubrik": "Meta patches exploit controlling Muse AI agent",
+          "resume_da": "Sikkerhedsforsker fandt zero-day-fejl, der lod angribere omdirigere dikteringen og overtage Muse-kontoen – lukket inden for få timer.",
+          "dato": "2026-09-22T11:53:58+00:00",
+          "foerst_set": "2026-09-22T13:37:55.361440+00:00"
+        }
+      ],
       "side": "artikel/64b9f3c8af56bfa0.html"
     },
     {
@@ -16770,24 +16565,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "Claude Opus 5.5 matcher Fable-niveau til lavere pris",
       "resume_da": "Anthropic lancerer Claude Opus 5.5, der på de fleste opgaver svarer til Claude Fable 5.1, men kører 40 procent billigere end Opus 5.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Anthropic annoncerer Claude Opus 5.5 med påstået Fable 5.1-niveau og 40 % lavere driftsomkostninger end Opus 5.",
-        "forbehold": "Ydeevne og besparelse er producentpåstande uden uafhængige tests.",
-        "emne": "anthropic"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 8,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "40 procent lavere driftspris end Opus 5",
@@ -16814,8 +16592,6 @@
           "tekst": "Da Opus 5.5 ifølge Anthropic er sammenlignelig med Claude Mythos 5.1 i biologi og cybersikkerhed, udrules den med sikkerhedsforanstaltninger lignende dem på Claude Fable 5.1.\n\nVettede organisationer kan allerede nu søge om adgang via Anthropics Life Sciences Verification Program til biologiforskning. Inden for de kommende uger udvider selskabet Cyber Verification Program, så verificerede cybersikkerhedspraktikere kan bruge modellen i deres arbejde.\n\nClaude Sonnet 5.5 og Claude Haiku 5.5 følger inden for de kommende uger med mange af de samme forbedringer i ydeevne, effektivitet og sikkerhed."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "40 procent",
@@ -16838,6 +16614,33 @@
           "label": "Cache-læsninger, 60 procent under Opus 5; udgør størstedelen af agent- og kodeomkostninger"
         }
       ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+          "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
+          "resume_da": "Outputtokens koster 20 dollar per million mod tidligere 25 dollar, og modellen kører hurtigere.",
+          "dato": "2026-09-22T16:30:07+00:00",
+          "foerst_set": "2026-09-22T19:51:24.838792+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+          "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
+          "resume_da": "Filtrene omstiller cybersecurity-forespørgsler til Opus 4.8, og modellen rapporterer selv sine få forsøg på at bryde ud.",
+          "dato": "2026-09-22T16:30:00+00:00",
+          "foerst_set": "2026-09-22T19:51:24.838792+00:00"
+        },
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+          "rubrik": "Anthropic og OpenAI skærer modelpriser markant",
+          "resume_da": "Opus 5.5 er cirka 40% billigere i typisk brug; GPT-6 Sol og Luna koster halvdelen af deres forgængere.",
+          "dato": "2026-09-22T21:25:18+00:00",
+          "foerst_set": "2026-09-22T23:13:17.203036+00:00"
+        }
+      ],
       "detaljer": [
         "Claude Opus 5.5 genererer output over 30 procent hurtigere end Opus 5.",
         "Fast mode i Claude Code og Claude Platform kører op til 2,5 gange hurtigere.",
@@ -16851,25 +16654,33 @@
         "Testet før udgivelse af METR og Frontier Design",
         "Sonnet 5.5 og Haiku 5.5 følger inden for uger"
       ],
+      "billedmotiv": "Two solid matte price tags stand side by side in front view, the left one taller than the right, their edges sharply cut; the lower right tag carries Anthropic's many-rayed terracotta asterisk while a thick downward arrow presses beneath it, showing Claude Opus 5.5's 40 percent lower running cost than Opus 5.",
+      "billedmotiv_instruks": "4cdd20fc729f41dbe4d8",
+      "billede": "data/img/41fe5a985927a032.webp",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Anthropic annoncerer Claude Opus 5.5 med påstået Fable 5.1-niveau og 40 % lavere driftsomkostninger end Opus 5.",
+        "forbehold": "Ydeevne og besparelse er producentpåstande uden uafhængige tests.",
+        "emne": "anthropic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-22T20:41:41.036468+00:00"
       },
       "historie_dato": "2026-09-22T00:00:00+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-          "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
-          "resume_da": "Outputtokens koster 20 dollar per million mod tidligere 25 dollar, og modellen kører hurtigere.",
-          "dato": "2026-09-22T16:30:07+00:00",
-          "foerst_set": "2026-09-22T19:51:24.838792+00:00"
-        }
-      ],
-      "billedmotiv": "Two solid matte price tags stand side by side in front view, the left one taller than the right, their edges sharply cut; the lower right tag carries Anthropic's many-rayed terracotta asterisk while a thick downward arrow presses beneath it, showing Claude Opus 5.5's 40 percent lower running cost than Opus 5.",
-      "billedmotiv_instruks": "4cdd20fc729f41dbe4d8",
-      "billede": "data/img/41fe5a985927a032.webp",
+      "prio": 8,
       "side": "artikel/23e9c366edfe97a9.html"
     },
     {
@@ -16964,24 +16775,7 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "Toyota træner humanoidrobotter med sine egne arbejdere",
       "resume_da": "Medarbejdere lærer ELEY-robotter præcise håndbevægelser med fingrejigs, mens Toyota fra 2028 investerer 6,42 milliarder dollars årligt i 400.000 robotter.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Toyota vil træne medarbejdere i at arbejde sammen med 400.000 humanoide fabriksrobotter og fastholder, at ingen erstattes.",
-        "forbehold": "Påstanden om, at mennesker ikke erstattes, er Toyotas egen; tidslinje og tal er ikke belagt i uddraget.",
-        "emne": "toyota humanoide robotter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Medarbejdere lærer robotter gennem fingrejigs",
@@ -16996,8 +16790,6 @@
           "tekst": "Det er stadig uklart, hvor mange af de 400.000 robotter, der vil være humanoider, og hvor mange Toyota allerede har udrullet. Massiv produktion af humanoidrobotter er først nylig begyndt.\n\nSikkerhed omkring mennesker, omkostningseffektivitet og AI-udfordringer står fortsat i vejen for bred udrulning. Hyundai planlægger op mod **25.000 Atlas-robotter** i egne og Kia-fabrikker fra 2028, udviklet af Boston Dynamics."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "6,42 milliarder dollars",
@@ -17016,6 +16808,7 @@
           "label": "Maksimalt antal Atlas-robotter hos Hyundai og Kia fra 2028"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Kina deployerede 2 millioner industrirobotter i 2024, ifølge International Federation of Robotics",
         "Boston Dynamics åbnede træningscenter for Atlas-robotter i Georgia den 21. september",
@@ -17027,13 +16820,31 @@
         "6,42 milliarder dollars årligt fra 2028",
         "Antallet af humanoider blandt 400.000 er ukendt"
       ],
+      "billedmotiv": "A solid moulded finger jig tray with shaped slots sits in front while a wheeled robotic gripper with thick rounded fingers presses into the slots; beside it a solid plate carries Toyota's three overlapping ellipse emblem, showing the hand-shaped template that transfers precise movements to Toyota's ELEY factory robots.",
+      "billedmotiv_instruks": "e509137e9d405d6a43de",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Toyota vil træne medarbejdere i at arbejde sammen med 400.000 humanoide fabriksrobotter og fastholder, at ingen erstattes.",
+        "forbehold": "Påstanden om, at mennesker ikke erstattes, er Toyotas egen; tidslinje og tal er ikke belagt i uddraget.",
+        "emne": "toyota humanoide robotter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-22T20:48:56.498291+00:00"
       },
-      "billedmotiv": "A solid moulded finger jig tray with shaped slots sits in front while a wheeled robotic gripper with thick rounded fingers presses into the slots; beside it a solid plate carries Toyota's three overlapping ellipse emblem, showing the hand-shaped template that transfers precise movements to Toyota's ELEY factory robots.",
-      "billedmotiv_instruks": "e509137e9d405d6a43de",
+      "prio": 5,
       "side": "artikel/02a522d1056c07e8.html"
     },
     {
@@ -17047,6 +16858,47 @@
       "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
       "rubrik": "Meta indrømmer Muse er inspireret af OpenClaw",
       "resume_da": "Nat Friedman bekræfter, at Metas AI-app låner OpenClaw-filer næsten ordret – og forklarer hvorfor.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Meta-chef bekræfter inspirationen",
+          "tekst": "Nat Friedman, produktchef i Metas Superintelligence Labs, skrev på X, at Muse \"definitely heavily inspired as a product by OpenClaw.\" Muse er Metas nye AI-app, og OpenClaw er et åben kildekode-projekt af Peter Steinberger.\n\nFriedman understregede, at Muse er bygget \"from scratch,\" men at holdet hos Meta forelskede sig i OpenClaw og ville lave noget i samme retning, der kunne skaleres til milliarder af brugere. Efter at have brugt OpenClaw i januar købte han ifølge sit opslag hundreder af Mac mini-computere til teamet."
+        },
+        {
+          "overskrift": "SOUL.md-filerne afslørede ligheden",
+          "tekst": "Brugere opdagede først selv sammenfaldet. AI-appstifteren Ansh Nanda postede et opslag med overskriften \"Muse is LITERALLY OpenClaw for normies,\" og tråden spredte sig hurtigt blandt AI-interesserede.\n\nKernen var en fil kaldet **SOUL.md** – et simpelt tekstdokument i Markdown-format, der definerer en AI-agents personlighed, tone, værdier og grænser. Filerne mellem Muse og OpenClaw hed ikke bare ens; deres indhold var ifølge kommentarer i tråden næsten identisk.\n\nDa Friedman blev spurgt direkte om de kopierede filnavne og det \"næsten identiske\" indhold, svarede han uden at benægte det: \"we thought that Peter got those things exactly right.\""
+        },
+        {
+          "overskrift": "Muse topper App Store alligevel",
+          "tekst": "Kritikken har ikke bremset Muses fremgang. Appen har ligget nummer 1 på den amerikanske App Store, og data indikerer, ifølge artiklen, at den overgår ChatGPTs lancering, når platforme og markedstilgængelighed sammenlignes direkte.\n\nMuse-genkendelsen passer ind i Metas kendte mønster af at kopiere lovende produkters bedste funktioner – mest berømt med Snapchats stories-format. Meta har ikke tilføjet noget ud over Friedmans udtalelse.\n\nOpenClaw har allerede været skyld i sin egen overskrift: OpenAI opkøbte dens skaber tidligere i år efter projektets gennembrudssucces."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "1.",
+          "label": "Muses placering på den amerikanske App Store"
+        },
+        {
+          "tal": "hundreder af Mac mini",
+          "label": "Antal computere Friedman købte til Metas AI-hold efter OpenClaw-test"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Nat Friedman er tidligere GitHub-CEO og kom til Meta sammen med Chief AI Officer Alexandr Wang.",
+        "OpenClaw er et open source-projekt skabt af Peter Steinberger (@steipete).",
+        "SOUL.md er en Markdown-fil, der definerer en AI-agents personlighed og adfærdsgrænser."
+      ],
+      "betydning": "",
+      "pointer": [
+        "Meta bekræfter åbent, at Muse bygger videre på OpenClaw.",
+        "SOUL.md-filerne mellem de to AI-agenter er næsten identiske.",
+        "Muse topper App Store trods kopianklager."
+      ],
+      "billedmotiv": "Two thick document cards with folded top corners stand side by side in front view, their printed line patterns nearly identical, joined by a solid bracket; the left card carries Meta's blue infinity-loop symbol, showing the Muse app reusing OpenClaw's SOUL.md file almost word for word.",
+      "billedmotiv_instruks": "947aa0df504d75ff8763",
+      "billede": "data/img/14cff9be9a9f3bdd.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -17063,60 +16915,19 @@
         "emne": "meta muse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Meta-chef bekræfter inspirationen",
-          "tekst": "Nat Friedman, produktchef i Metas Superintelligence Labs, skrev på X, at Muse \"definitely heavily inspired as a product by OpenClaw.\" Muse er Metas nye AI-app, og OpenClaw er et åben kildekode-projekt af Peter Steinberger.\n\nFriedman understregede, at Muse er bygget \"from scratch,\" men at holdet hos Meta forelskede sig i OpenClaw og ville lave noget i samme retning, der kunne skaleres til milliarder af brugere. Efter at have brugt OpenClaw i januar købte han ifølge sit opslag hundreder af Mac mini-computere til teamet."
-        },
-        {
-          "overskrift": "SOUL.md-filerne afslørede ligheden",
-          "tekst": "Brugere opdagede først selv sammenfaldet. AI-appstifteren Ansh Nanda postede et opslag med overskriften \"Muse is LITERALLY OpenClaw for normies,\" og tråden spredte sig hurtigt blandt AI-interesserede.\n\nKernen var en fil kaldet **SOUL.md** – et simpelt tekstdokument i Markdown-format, der definerer en AI-agents personlighed, tone, værdier og grænser. Filerne mellem Muse og OpenClaw hed ikke bare ens; deres indhold var ifølge kommentarer i tråden næsten identisk.\n\nDa Friedman blev spurgt direkte om de kopierede filnavne og det \"næsten identiske\" indhold, svarede han uden at benægte det: \"we thought that Peter got those things exactly right.\""
-        },
-        {
-          "overskrift": "Muse topper App Store alligevel",
-          "tekst": "Kritikken har ikke bremset Muses fremgang. Appen har ligget nummer 1 på den amerikanske App Store, og data indikerer, ifølge artiklen, at den overgår ChatGPTs lancering, når platforme og markedstilgængelighed sammenlignes direkte.\n\nMuse-genkendelsen passer ind i Metas kendte mønster af at kopiere lovende produkters bedste funktioner – mest berømt med Snapchats stories-format. Meta har ikke tilføjet noget ud over Friedmans udtalelse.\n\nOpenClaw har allerede været skyld i sin egen overskrift: OpenAI opkøbte dens skaber tidligere i år efter projektets gennembrudssucces."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "1.",
-          "label": "Muses placering på den amerikanske App Store"
-        },
-        {
-          "tal": "hundreder af Mac mini",
-          "label": "Antal computere Friedman købte til Metas AI-hold efter OpenClaw-test"
-        }
-      ],
-      "detaljer": [
-        "Nat Friedman er tidligere GitHub-CEO og kom til Meta sammen med Chief AI Officer Alexandr Wang.",
-        "OpenClaw er et open source-projekt skabt af Peter Steinberger (@steipete).",
-        "SOUL.md er en Markdown-fil, der definerer en AI-agents personlighed og adfærdsgrænser."
-      ],
-      "betydning": "",
-      "pointer": [
-        "Meta bekræfter åbent, at Muse bygger videre på OpenClaw.",
-        "SOUL.md-filerne mellem de to AI-agenter er næsten identiske.",
-        "Muse topper App Store trods kopianklager."
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-22T20:25:10.458525+00:00"
       },
-      "billedmotiv": "Two thick document cards with folded top corners stand side by side in front view, their printed line patterns nearly identical, joined by a solid bracket; the left card carries Meta's blue infinity-loop symbol, showing the Muse app reusing OpenClaw's SOUL.md file almost word for word.",
-      "billedmotiv_instruks": "947aa0df504d75ff8763",
-      "billede": "data/img/14cff9be9a9f3bdd.webp",
+      "prio": 4,
       "side": "artikel/176f90142d043408.html"
     },
     {
       "titel": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
       "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
       "resume": "Venture capital firm Andreessen Horowitz (a16z) is creating an \"academy\" positioned as a pipeline for young people to build or join a Silicon Valley startup. The \"Horowitz Andreessen Academy\" will launch with 10 partners, including Anduril, Anthropic, Coinbase, Google, Meta, NVIDIA, OpenAI, Palantir, Replit, and Stripe, along with $42 million in funding led by a16z. […]",
-      "dato": "2026-09-22T12:34:08-04:00",
+      "dato": "2026-09-22T16:34:08+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-09-22T19:51:24.838792+00:00",
@@ -17196,6 +17007,445 @@
       "billedmotiv_instruks": "711158c0b03ee70c950a",
       "billede": "data/img/b716e4ae76360554.webp",
       "side": "artikel/262004370c298f0b.html"
+    },
+    {
+      "titel": "Introducing GPT-6 Sol and Luna",
+      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "resume": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+      "dato": "2026-09-22T18:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+      "resume_da": "Sol er hverdagsmodellen, Luna den hurtige – begge til halv pris mod 5.6-generationen og lanceret samme dag som Anthropic Opus 5.5.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "OpenAI præsenterer officielt GPT-6 Sol og Luna som to modeller med forskellig balance mellem evne og omkostning.",
+        "forbehold": "Opslaget nævner ikke adgang, priser eller målbare resultater; påstande er producentens egne.",
+        "emne": "openai gpt-6"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 8,
+      "sektioner": [
+        {
+          "overskrift": "Sol til kodning, Luna til rutine",
+          "tekst": "OpenAI deler GPT-6-generationen op i niveauer. Astra er den dyreste og mest powerfulde model til tung kodning og forskning. Sol er den effektive hverdagsmodel til opgaver som kodning, og Luna er den hurtige, billige model til kontoropgaver.\n\nLuna er ifølge OpenAI beregnet til \"højvolumen-opgaver med et klart mål\" – for eksempel at opsummere dokumenter, udtrække information eller besvare korte spørgsmål.\n\nSol og Luna er trænet med metoder, der ligner dem, der blev brugt til GPT-6 Astra. Til forskel fra Astra er de altså bygget til lavere omkostninger og hastighed frem for maksimal råstyrke. Ifølge Ars Technica er de på udvalgte benchmarks kun nogle få procentpoint bedre end deres forgængere – til gengæld koster de det halve at bruge."
+        },
+        {
+          "overskrift": "Halv pris per million tokens",
+          "tekst": "Prisen er det store spring. API-adgang til 6-serien koster det halve af 5.6-seriens Sol og Luna, og OpenAI tilskriver faldet forbedringer i caching (genbrug af allerede beregnede data) og inferens (selve kørslen af modellen).\n\nSol koster 2 dollar per million input-tokens og 10 dollar per million output-tokens. Luna koster 0,10 og 0,50 dollar. Det er de priser, udviklere betaler, når deres programmer kalder modellerne.\n\nArs Technica peger på, at netop de lavere omkostninger rammer ind i en praksis, hvor virksomheder sender opgaver til den billigste model, der kan klare dem, i stedet for altid at bruge de dyreste frontermodeller."
+        },
+        {
+          "overskrift": "OpenAI hævder halv så mange fejl",
+          "tekst": "OpenAI hævder også, at GPT-6 Sol er mere faktuelt pålidelig. I en intern faktualitetsevaluering – baseret på afidentificerede samtaler, hvor brugere selv har flaget modellernes fejl – laver Sol cirka halv så mange fejl som sin forgænger.\n\nIfølge OpenAI når Sol derved Astra-niveau for pålidelighed til en meget lavere pris, og firmaet hævder desuden en lavere fejlrate ved kodning.\n\nPris- og kvalitetsløfterne er OpenAIs egne påstande uden uafhængig test."
+        },
+        {
+          "overskrift": "Anthropic kom 90 minutter før",
+          "tekst": "Anthropic slap sin Opus 5.5 90 minutter før OpenAI. Opus 5.5 koster 4 og 20 dollar per million input- og output-tokens – 20 procent under Opus 5 – og cache-læsninger koster 0,20 dollar, 60 procent mindre. Anthropic hævder op mod 40 procents besparelse ved typiske arbejdsbelastninger.\n\nArs Technicas læsning er, at begge lanceringer handler om omkostninger frem for nye evner. Begge firmaer kæmper samtidig med åbne, frit tilgængelige modelvægte og med kunder, der allerede sender opgaver videre til billigere modeller.\n\nOpenAI hævder gentagne gange, at Sol og Luna klarer opgaver markant bedre end Anthropics topmodeller Fable og Opus – også det er firmaets egne påstande."
+        },
+        {
+          "overskrift": "Adgang fra dag ét",
+          "tekst": "Sol og Luna findes nu i ChatGPT Work og i Codex for de fleste betalte konti samt i ChatGPT API'en.\n\nLuna bliver også tilgængelig i desktop-appen og for brugere af gratisplanen og Go-planen. OpenAI ruller modellerne løbende ud i ChatGPT-appen og på nettet i løbet af dagen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2 og 10 dollar per million tokens",
+          "label": "GPT-6 Sol: input- og output-pris i API'en"
+        },
+        {
+          "tal": "0,10 og 0,50 dollar per million tokens",
+          "label": "GPT-6 Luna: input- og output-pris i API'en"
+        },
+        {
+          "tal": "50 procent",
+          "label": "Prisfald for 6-seriens Sol og Luna mod 5.6-serien, ifølge OpenAI"
+        },
+        {
+          "tal": "4 og 20 dollar per million tokens",
+          "label": "Anthropic Opus 5.5: input- og output-pris, 20 procent under Opus 5"
+        },
+        {
+          "tal": "0,20 dollar per million tokens",
+          "label": "Opus 5.5: cache-læsninger, 60 procent under Opus 5"
+        }
+      ],
+      "detaljer": [
+        "Anthropic hævder cirka 40 procents besparelse ved typiske arbejdsbelastninger på Opus 5.5.",
+        "Opus 5.5 genererer output mere end 30 procent hurtigere end Opus 5.",
+        "Ars Technica kalder Sol og Luna et inkrementelt skridt, ikke et gennembrud.",
+        "Sol, Terra og Luna-navngivningen blev indført med GPT-5.6-familien tidligere i år.",
+        "Anthropic kan ved flagning sende følsomme forespørgsler automatisk til en ældre model."
+      ],
+      "betydning": "Udviklere og virksomheder kan nu købe Sol-niveau til halv API-pris, mens gratisbrugere får Luna – ifølge OpenAI uden at miste Astra-lignende pålidelighed.",
+      "pointer": [
+        "Sol og Luna koster det halve af 5.6-serien.",
+        "Begge er trænet med metoder fra GPT-6 Astra.",
+        "Lanceringen faldt sammen med Anthropics Opus 5.5."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T23:27:11.432920+00:00"
+      },
+      "redaktoer_opgave_id": "1546c1ccdd5c4f0a",
+      "redaktoer_kilder": [
+        {
+          "link": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "kilde": "TechCrunch AI"
+        },
+        {
+          "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+          "kilde": "Ars Technica AI"
+        }
+      ],
+      "side": "artikel/c4259d8daf829e3d.html"
+    },
+    {
+      "titel": "Qualcomm launches two new smartphone chips with emphasis on AI",
+      "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "resume": "Qualcomm said that its new top chip can run 30B mixture-of-expert model locally.",
+      "dato": "2026-09-22T20:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
+      "resume_da": "Qualcomms to nye Snapdragon-chips kører stemmehjælp og notater lokalt på telefonen frem for i skyen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Qualcomm lancerer to mobilchips med AI-fokus; topchippet kan køre en 30B MoE-model lokalt.",
+        "forbehold": "Hardwarelancering; påstanden om 30B MoE lokalt er Qualcomms egen.",
+        "emne": "qualcomm"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Sensing-hubben holder notater på telefonen",
+          "tekst": "Qualcomm lancerede ved sit årlige Snapdragon Summit to nye flagskipsprocessorer: Snapdragon 8 Elite Gen 6 og Snapdragon 8 Elite Extreme Gen 6. Begge er bygget omkring AI-funktioner.\n\nDe får en ny sensing-hub, en lille dedikeret enhed, der kører modeller på op til **200 millioner parametre** direkte på telefonen. Ifølge Qualcomm kan den tage notater lokalt, skelne mellem stemmer og gemme en hukommelse baseret på din brug, så den kan foreslå automatisering af opgaver.\n\nQualcomm siger desuden, at chippen kan køre en fuld agent fra stemme ind til stemme ud: en samtale der svarer med stemme, uden at forlade telefonen."
+        },
+        {
+          "overskrift": "MoE aktiverer kun få parametre ad gangen",
+          "tekst": "Extreme-versionen kan køre en model på **30 milliarder parametre** lokalt på telefonen. Det sker med mixture-of-experts, forkortet MoE: modellen er stor som helhed, men aktiverer kun et begrænset antal parametre til den konkrete opgave i stedet for alle på én gang.\n\nTil sammenligning udgav Apple ved WWDC-konferencen i juni en model på 20 milliarder parametre. Ifølge Apple var det den mest avancerede af tredje generation af selskabets fondationsmodeller."
+        },
+        {
+          "overskrift": "Extreme-versionen optager 8K-video og slowmotion",
+          "tekst": "Den nye CPU giver pixelniveau-kontrol af kameraet, forbedret stabilisering og forståelse for bevægelse. Extreme-versionen optager video i 8K ved 60 billeder pr. sekund og i 4K ved 240 billeder pr. sekund til ultra-HD slowmotion.\n\nDen understøtter også den nye APV-kodek til professionel optagelse. Begge chips bruger AI til at løfte stemmer og reducere støj, og Qualcomm lancerer en voice bubble-teknologi, der isolerer brugerens lyd under opkald."
+        },
+        {
+          "overskrift": "Motorola Signature 27 er første telefon",
+          "tekst": "Motorola annoncerede ved eventet sin Motorola Signature 27 med Snapdragon 8 Elite Extreme Gen 6 om bord og tilgængelighed engang i år. Det er det eneste bebudede produkt med de nye chipper.\n\nQualcomm arbejder på mere end 40 AI-enheder, men både Nothing-medstifter Carl Pei og Apples administrerende direktør John Ternus har peget på, at mange fortsat vil bruge telefonen til AI frem for separate enheder.\n\nAlle ydeevne- og parametertal stammer fra Qualcomm og er ikke testet uafhængigt."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "200 millioner parametre",
+          "label": "Største model, sensing-hubben kan køre lokalt, ifølge Qualcomm"
+        },
+        {
+          "tal": "30 milliarder parametre",
+          "label": "MoE-model lokalt på Snapdragon 8 Elite Extreme Gen 6, ifølge Qualcomm"
+        },
+        {
+          "tal": "20 milliarder parametre",
+          "label": "Apples MoE-model ved WWDC i juni"
+        },
+        {
+          "tal": "8K ved 60 fps",
+          "label": "Videooptagelse i Extreme-versionen, ifølge Qualcomm"
+        },
+        {
+          "tal": "4K ved 240 fps",
+          "label": "Slowmotion-video i Extreme-versionen, ifølge Qualcomm"
+        }
+      ],
+      "detaljer": [
+        "Voice bubble-teknologien isolerer brugerens stemme under opkald.",
+        "Begge chips dæmper støj og løfter stemmer med AI.",
+        "Qualcomm arbejder på mere end 40 AI-enheder."
+      ],
+      "betydning": "Notater, højttaler-genkendelse og stemmestyrede assistenter kan fungere uden dataforbindelse, når modellen ligger på chippen frem for i skyen.",
+      "pointer": [
+        "Sensing-hub kører modeller op til 200 millioner parametre.",
+        "Extreme-versionen kører 30-milliarders MoE-model lokalt.",
+        "Motorola Signature 27 er eneste bebudede produkt."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T23:30:55.449262+00:00"
+      },
+      "redaktoer_opgave_id": "752230951b9c3cff",
+      "redaktoer_kilder": [],
+      "side": "artikel/f5417683ef6a173a.html"
+    },
+    {
+      "titel": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+      "resume": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
+      "dato": "2026-09-22T19:45:47+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "Microsoft lukker AI-chatbot der solgte masseangreb",
+      "resume_da": "Abonnementet kostede 1.500 dollar plus 500 om måneden og ramte 10.000 firmaer verden over.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft siger at AI-understøttede EvilTokens er slået ned; platformen gjorde masseangreb hurtigere og omfattede 12.000.",
+        "forbehold": "Opgørelsen på 12.000 og effekten af nedlæggelsen er Microsofts egne oplysninger.",
+        "emne": "microsoft / eviltokens"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Abonnement kostede 1.500 dollar",
+          "tekst": "EvilTokens blev lanceret i februar over en Telegram-kanal og kostede 1.500 dollar i startgebyr plus 500 dollar om måneden. Kunderne fik én samlet platform, der klarede næsten alle trin i at ramme mange e-mailkonti på én gang.\n\nMicrosoft stod i spidsen for nedlukningen sammen med partnere, herunder sikkerhedsfirmaet SpyCloud. Ifølge Microsoft nåede brugerne ind i 12.000 konti tilhørende 10.000 organisationer over et par måneder. Det er Microsofts egne tal med hjælp fra SpyCloud, ikke uafhængigt verificerede tal."
+        },
+        {
+          "overskrift": "Pinkoden var beregnet til fjernsyn",
+          "tekst": "Ofrene klikkede på skadelige links i spam sendt gennem platformen. Linket åbnede en side med et skjult script, som i realtid hentede en kode hos Microsoft Entra, Microsofts identitetsudbyder, og tilmeldte en enhed tilhørende angriberen.\n\nTeknikken er en legitim OAuth-proces, en såkaldt device code (enhedskode), beregnet til fjernsyn og andre enheder uden tastatur: enheden viser en kode, som brugeren skriver ind i en browser på en anden enhed. Her blev brugeren bedt om at indtaste den på Microsofts rigtige loginside."
+        },
+        {
+          "overskrift": "Chatboten læste 5.000 mails ad gangen",
+          "tekst": "I midten af tjenesten sad en AI-chatbot, som læste ofrets indbakke og fandt tillidsforhold, betalingsgodkendelser og følsomme opgaver – 5.000 stjålne mails ad gangen.\n\nDen pegede på medarbejdere, der måtte overføre store beløb, deres ledere, og skrev de beskeder, der skulle få medarbejderen til at sende penge til en konto, angriberen kontrollerede. Et kontrolpanel lod kunderne tilpasse agnen til målfirmaets profil.\n\nMicrosoft kalder det et skifte: før måtte gerningsmænd manuelt gennemgå tusindvis af mails for at kortlægge organisationen. Nu klares det på minutter frem for dage."
+        },
+        {
+          "overskrift": "50 hjemmesider og 150 domæner beslaglagt",
+          "tekst": "Med juridiske skridt og et netværk af partnere beslaglagde Microsoft 50 hjemmesider og 150 domæner, som drev platformen. Londons Metropolitan Police anholdt to mænd i forbindelse med tjenesten.\n\nMicrosofts råd til firmaer: ud over stærke identitetskontroller skal man altid bekræfte ønsker om at ændre betalingsoplysninger, omdirigere penge eller godkende uvanlige transaktioner gennem en betroet anden kanal."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "12.000 konti",
+          "label": "Kompromitterede Microsoft-konti over et par måneder, ifølge Microsoft og SpyCloud"
+        },
+        {
+          "tal": "10.000 organisationer",
+          "label": "Organisationer med mindst en ramt konto, flest i USA"
+        },
+        {
+          "tal": "1.500 dollar + 500 dollar/md.",
+          "label": "Startgebyr og efterfølgende abonnementspris for EvilTokens"
+        },
+        {
+          "tal": "50 hjemmesider og 150 domæner",
+          "label": "Beslaglagt domæner og sider i nedlukningen"
+        },
+        {
+          "tal": "5.000 e-mails",
+          "label": "Antal stjålne mails platformen analyserede ad gangen"
+        }
+      ],
+      "detaljer": [
+        "Flest ofre i USA; dernæst Canada, Storbritannien, Australien, Indien og Frankrig.",
+        "Ramte brancher: engros, byggeri, finansydelser, ejendom, videregående uddannelser og sundhedsvæsen.",
+        "Baglogikken kørte på Node.js og gik uden om signatur- og mønsterbaseret detektion.",
+        "SpyCloud, sikkerhedsfirma, deltog i nedlukningsoperationen og kortlagde ofrene."
+      ],
+      "betydning": "Microsoft vurderer, at en gennemlæst indbakke kan give gerningsmænd indblik på minutter i stedet for dage, hvilket gør dobbelt kontrol af pengeforespørgsler nødvendig.",
+      "pointer": [
+        "AI-chatboten skrev beskederne, der fik medarbejdere til at overføre penge.",
+        "Angrebet brugte legitim device code-godkendelse fra OAuth.",
+        "Tallene stammer fra Microsoft og SpyCloud."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T23:32:57.734511+00:00"
+      },
+      "redaktoer_opgave_id": "a8eaa50898409e01",
+      "redaktoer_kilder": [],
+      "side": "artikel/90435c878e92426e.html"
+    },
+    {
+      "titel": "Snorkel AI triples valuation to $3.5B as demand for AI training data booms",
+      "link": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+      "resume": "The seven-year-old startup has raised a $350 million Series E to fuel its data-as-a-service approach.",
+      "dato": "2026-09-22T21:56:43+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "Snorkel AI tredobler værdiansættelse til 3,5 mia.",
+      "resume_da": "Træningsdatafirmaet Snorkel AI henter 350 mio. dollar og tredobler værdien på 17 måneder, mens omsætningen er vokset 18 gange.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Snorkel AI rejste 350 mio. dollars i Series E og tredoblede værdiansættelsen til 3,5 mia. dollars.",
+        "forbehold": "Kun kort omtale af finansieringen; ingen tal for omsætning eller vilkår.",
+        "emne": "snorkel ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Snorkel AI henter 350 mio. dollar i ny runde",
+          "tekst": "Snorkel AI har rejst 350 millioner dollar i en Series E-runde til en værdiansættelse på 3,5 milliarder dollar. Det er næsten en tredobling af de 1,3 milliarder dollar, firmaet blev vurderet til for 17 måneder siden, da det hentede 100 millioner dollar i en Series D.\n\nRunden ledes af venturefondene Insight Partners og S32. Også eksisterende investorer som Addition, Lightspeed, Greylock, GV og Wells Fargo deltager.\n\nSnorkel AI hjælper AI-laboratorier og virksomheder med at bygge træningssæt og simulerede miljøer til træning af AI-modeller. Firmaet blev grundlagt af CEO Alex Ratner og hans team efter fire års forskning på et Stanford-laboratorium og lancerede kommercielt i 2019."
+        },
+        {
+          "overskrift": "Omsætning er vokset 18 gange på et år",
+          "tekst": "Snorkel AI oplyser, at dets nuværende årlige omsætningsløb er på 375 millioner dollar. Det er en 18-dobling over de seneste 12 måneder, og væksten tilskrives AI-labornes store efterspørgsel efter avancerede træningsdata.\n\nFirmaet skiftede sidste år strategi. I stedet for kun at sælge software til automatiseret data-afmærkning leverer det nu færdige datasæt – en model firmaet kalder **data-as-a-service**. Tilgangen er en blanding: software og modeller genererer data syntetisk, mens fagfolk inden for det relevante område kvalitetssikrer og bidrager."
+        },
+        {
+          "overskrift": "Konkurrenter i samme data-boom",
+          "tekst": "Andre datavirksomheder oplever tilsvarende vækst. Mercors brutto-omsætningsløb er nået op på 2 milliarder dollar, Handshake passerede 1 milliard dollar tidligere i år, og Micro1 er skaleret til 500 millioner dollar ifølge TechCrunch.\n\nDog betyder det, at disse firmaer betaler omkring 60–70 procent af deres bruttoindtjening direkte til de fagfolk, der laver arbejdet, at de reelle nettobeløb er væsentligt lavere end overskrifterne antyder.\n\nSnorkel AI adskiller sig ved at sælge forstærkningslæringsmiljøer (RL-miljøer – simulerede opgaver, hvor en model lærer gennem forsøg) og komplette datasæt i stedet for menneskelig arbejdskraft. Betalinger til fagfolk registreres derfor som omkostninger, ikke som omsætning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "3,5 milliarder dollar",
+          "label": "Snorkel AIs værdiansættelse efter Series E"
+        },
+        {
+          "tal": "375 millioner dollar",
+          "label": "Årligt omsætningsløb, oplyst af Snorkel AI"
+        },
+        {
+          "tal": "18 gange",
+          "label": "Vækst i omsætningsløb over seneste 12 måneder"
+        },
+        {
+          "tal": "1,3 milliarder dollar",
+          "label": "Værdiansættelse ved Series D for 17 måneder siden"
+        },
+        {
+          "tal": "60–70 procent",
+          "label": "Andel af bruttoindtjening, der udbetales til fagfolk hos datavirksomheder"
+        }
+      ],
+      "detaljer": [
+        "Serien kom fra Insight Partners og S32 som ledende investorer.",
+        "Snorkel AI har syv år på bagen og lancerede kommercielt i 2019.",
+        "Mercor har 2 mia. dollar i brutto-omsætningsløb; Micro1 500 mio."
+      ],
+      "betydning": "Den kraftige vækst viser, at AI-laboratorier køber stadig mere specialiseret træningsdata – og at investorer tror på datasæt som selvstændig forretning frem for ren software.",
+      "pointer": [
+        "350 mio. dollar hentet i Series E til 3,5 mia. dollars værdi.",
+        "Omsætningsløb på 375 mio. dollar efter 18-dobling på ét år.",
+        "Konkurrenter Mercor, Handshake og Micro1 oplever lignende boom."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T23:34:36.336440+00:00"
+      },
+      "side": "artikel/84a303211cd26a2a.html"
+    },
+    {
+      "titel": "AstroForge is putting AI in command of its next spacecraft",
+      "link": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
+      "resume": "Autonomy-1 will have a small, transformer-based AI model taking charge of a space probe.",
+      "dato": "2026-09-22T15:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "AstroForge vil flyve med AI og uden radio",
+      "resume_da": "AI-modellen Solo skal styre en NASA-understøttet mission om solen i 2027 — først testet i skyggetilstand i 2026.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AstroForge giver en lille transformer-baseret AI-model kommandoen over næste sonde, Autonomy-1.",
+        "forbehold": "Modelnnavn, kapaciteter og testresultater er ikke beskrevet; lanceringstidspunkt ukendt.",
+        "emne": "astroforge autonomy-1"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Solo overtager kommandoen i 2027",
+          "tekst": "AstroForge udvikler den interne AI-model Solo, en transformer, der skal overtage kontrollen over et rumfartøj. Missionen Autonomy-1 bakkes op af NASA og skal indsamle videnskabelige data om solen. Den ventes opsendt i 2027 på Stoke Spaces første raket.\n\nCEO Matthew Gialich planlægger at flyve uden radioer, der kan modtage fra Jorden. Lige nu siger han nej til holdets ønske om at beholde kommunikationen — men inden afrejse kan han blive overtalt."
+        },
+        {
+          "overskrift": "AstroForge mistede Odin og valgte AI",
+          "tekst": "I 2025 sendte AstroForge Odin-fartøjet ud i dybt rum, men fik aldrig kontrol over det igen. Et begrænset antal store antenner på Jorden og korte transmissionsvinduer gjorde kommunikationen vanskelig.\n\nDet fik Gialich til at overveje to muligheder: et eget jordnetværk til cirka **200 millioner dollars** med fem antenner verden rundt — eller en model om bord. AstroForge gik med modellen.\n\nNeurale netværk bruges sjældent til at styre rumfartøjer, fordi pålideligheden er usikker. Den første brug af et neuralt netværk til satellitpositionering fandt sted sidste år. NASA-missionen OSIRIS-REx, som mødte en asteroide i 2018, havde **100 operatører pr. otte-timers vagt** — en ressource startups ikke har."
+        },
+        {
+          "overskrift": "Skyggetilstand tester Solo før kommandoen",
+          "tekst": "Solo kombinerer traditionelle kontrolalgoritmer med modeller trænet på specifikke subsystemer som strømforsyning og navigation. Et overordnet intelligenslag er trænet på cirka **2.500 sensorer** i fartøjet.\n\nFør Autonomy-1 flyver Solo i skyggetilstand på AstroForges tredje fartøj, DeepSpace-2. Det ventes opsendt sammen med Intuitive Machines' tredje månemission inden udgangen af 2026 — så AstroForges ingeniører kan teste modellen grundigt, mens fartøjet endnu ikke er afhængig af den."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "AstroForge er grundlagt i 2022 og har rejst 56 millioner dollars i venturekapital.",
+        "To prototypefartøjer er opsendt — begge led af anomalier, der forhindrede missionernes mål.",
+        "Armand Awad, chef for flysoftware, forklarede arkitekturen bag Soles intelligenslag.",
+        "Matthew Gialich kalder tilgangen begrænset autonomi frem for generel rumautonomi."
+      ],
+      "betydning": "AstroForge vil i 2027 finde ud af, om en AI-model kan erstatte et jordnetværk til cirka 200 millioner dollars.",
+      "pointer": [
+        "Solo er en transformermodel bygget internt hos AstroForge",
+        "Autonomy-1 planlægges i 2027 muligvis uden radiokontakt fra Jorden",
+        "Solo testes i skyggetilstand på DeepSpace-2 i 2026"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-22T23:50:54.285782+00:00"
+      },
+      "side": "artikel/63278f8d0a1c84a7.html"
     }
   ]
 }

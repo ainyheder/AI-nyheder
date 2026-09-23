@@ -1,17 +1,60 @@
 {
-  "opdateret": "2026-09-22T19:51:24.838792+00:00",
-  "status": "reserve",
+  "opdateret": "2026-09-22T23:13:17.203036+00:00",
+  "status": "godkendt",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity"
+    "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+    "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
   ],
-  "input_fingerprint": "910e47303aadcc52",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 3,
-  "kildehentninger": 7,
+  "input_fingerprint": "f48584d6aacf0a1d",
+  "redaktionsnote": "Dagens tre hovedhistorier er alle fra de seneste 18 timer og dækker model, sikkerhed og hardware. Tidligere hovedhistorier (Claude Opus 5.5, Grok 4.7, Muse-zero-day) fra forrige forside få timer tilbage er droppet: de har ingen konkret nyhed siden valget, og Ars-analysen af de to labs' priser er i stedet brugt som kilde under GPT-6 Sol og Luna. Ars-artiklen cc03eb22570ae5a9 er ikke givet en selvstændig plads, fordi den alene analyserer allerede dækkede lanceringer. Anbefalingerne er nye historier fra i dag, der ikke nåede top 3. Manglende uafhængige kilder til Qualcomm og EvilTokens er angivet som forbehold i skriveopgaverne; begge hviler på én læsbar, detaljeret artikel med konkrete tal.",
+  "beslutninger": [
+    {
+      "id": "73461b3e97af0d93",
+      "begrundelse": "Dagens største modelnyhed: OpenAI udvider GPT-6-generationen med nye Sol- og Luna-modeller til halv pris mod 5.6-serien. Ars Technica bekræfter priserne og placerer lanceringen 90 minutter efter Anthropics Opus 5.5, hvilket gør dagen til et direkte prissammenligningsopgør mellem de to labs.",
+      "nyt_siden_sidst": "Aldrig valgt før. Modellerne blev annonceret i dag kl. 18:00 dansk tid og er en selvstændig lancering ved siden af gårsdagens Grok 4.7 og tidligere valgte Opus 5.5, som Sol og Luna direkte konkurrerer med på prisen.",
+      "skriveopgave": "Skriv: »OpenAI halverer prisen: GPT-6 Sol og Luna lander på samme dag som Anthropic«. Forklar kort, at Sol er hverdagsmodellen til kodning og Luna den hurtige, billige model, og at begge er trænet med metoder fra GPT-6 Astra. Nøgletal: Sol koster 2 og 10 dollar per million input- og output-tokens, Luna 0,10 og 0,50 – halv pris mod 5.6-generationen. OpenAI hævder, at Sol laver halv så mange faktuelle fejl som forgængeren i en intern evaluering. Adgang: ChatGPT Work, Codex og API med det samme, Luna til gratisbrugere, udrulning i ChatGPT-appen løbende. Spørgsmål: Hvad får udviklere og virksomheder konkret billigere, og hvordan adskiller Sol sig fra Astra? Forbehold: Pris- og kvalitetsløfter er OpenAIs egne påstande uden uafhængig test. Brug Ars-analysen til sammenligning med Opus 5.5, og husk mellemoverskrifter samt faktaboks med priser.",
+      "kilder": [
+        "73461b3e97af0d93",
+        "25f12aed5a135051",
+        "cc03eb22570ae5a9"
+      ],
+      "samme_historie": [
+        "25f12aed5a135051",
+        "cc03eb22570ae5a9"
+      ],
+      "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna"
+    },
+    {
+      "id": "5e8b60d2c8d4e6ee",
+      "begrundelse": "Microsoft offentliggjorde i dag nedlæggelsen af EvilTokens, en abonnementsplatform med AI-chatbot i centrum, der kompromitterede 12.000 konti i 10.000 organisationer på få måneder. Konkrete tal, beslaglæggelser og to anholdelser gør det til dagens stærkeste sikkerhedshistorie.",
+      "nyt_siden_sidst": "Microsoft annoncerede operationen i dag. Det er første gang omfanget – 12.000 kaprede konti, 50 beslaglagte hjemmesider og to anholdelser i London – dokumenteres samlet.",
+      "skriveopgave": "Skriv: »AI-chatbot solgte masseangreb som abonnement – Microsoft lukker EvilTokens«. Forklar angrebet i klart sprog: platformen solgte for 1.500 dollar plus 500 dollar om måneden, brugte Goles device code-godkendelse (en pinkode beregnet til TV og simple enheder) til at binde angriberens enhed til offerets konto, og en AI-chatbot læste 5.000 ad gangen for at finde ud af, hvem der kan overføre penge, og skrev svindelbeskederne. Nøgletal: 12.000 konti, 10.000 organisationer, flest i USA, 50 hjemmesider og 150 domæner beslaglagt, to anholdt af Metropolitans politi. Spørgsmål: Hvad kan almindelige brugere og firmaer gøre – Microsoft anbefaler at verificere pengeforespørgsler via en anden kanal? Forbehold: Tallene er Microsofts egne med hjælp fra SpyCloud; kilderne er ikke uafhængigt verificeret. Korte afsnit, faktaboks med ofre og pris.",
+      "kilder": [
+        "5e8b60d2c8d4e6ee"
+      ],
+      "samme_historie": [],
+      "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+      "rubrik": "Microsoft lukker AI-chatbot der solgte masseangreb"
+    },
+    {
+      "id": "8ea6cbfd1c9012c5",
+      "begrundelse": "Qualcomm annoncerede i dag to nye flagskibschips, hvor Extreme-udgaven kan køre en 30-milliarders mixture-of-expert-model helt lokalt på telefonen – en tredobling i forhold til Apples 20-milliarders model fra juni. Det flytter grænserne for, hvad telefoner kan uden skyen.",
+      "nyt_siden_sidst": "Chipserne blev annonceret i dag på Qualcomms årlige Snapdragon Summit. Første telefon, Motorola Signature 27, er netop blevet fremvist, og ingen tidligere forside har dæmt hardwaren.",
+      "skriveopgave": "Skriv: »Qualcomm lader mobilen køre en 30-milliarders AI-model uden skyen«. Forklar mixture-of-experts enkelt: modellen er stor, men vælger kun få parametre ad gangen, så den både er kraftig og strømsnål. Fakta: Snapdragon 8 Elite Gen 6 og 8 Elite Extreme Gen 6, sensing-hub til små modeller op til 200 millioner parametre (lokal notater, højttaler-genkendelse), fuld stemme-til-stemme-agent på chippen, 30B MoE lokalt i Extreme-modellen mod Apples 20B ved WWDC i juni. Spørgsmål: Hvad kan køre lokalt frem for i skyen, og hvilke telefoner får chipperne først? Forbehold: Alle ydeevne- og parametertal er Qualcomms egne påstande uden uafhængig test; Motorola Signature 27 er eneste bebudede produkt. Medbring faktaboks med specifikationer og korte mellemoverskrifter.",
+      "kilder": [
+        "8ea6cbfd1c9012c5"
+      ],
+      "samme_historie": [],
+      "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen"
+    }
+  ],
+  "modelkald": 5,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,35 +69,31 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -72,30 +111,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/claude-opus-5-5",
+      "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+      "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.anthropic.com/claude-opus-5-5",
-    "https://x.ai/news/grok-4-7",
-    "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
+    "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+    "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/"
   ],
-  "afventer_artikler": 130
+  "afventer_artikler": 124
 }

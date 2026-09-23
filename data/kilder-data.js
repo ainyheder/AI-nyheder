@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-22T19:51:24.838792+00:00",
- "artikler_i_alt": 100,
+ "opdateret": "2026-09-22T23:13:17.203036+00:00",
+ "artikler_i_alt": 88,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -46,6 +46,14 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
+     1
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
+    [
+     "Ars Technica AI",
      1
     ]
    ]
@@ -262,7 +270,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
+   "i_listen": 34,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -329,11 +337,38 @@ window.KILDER_STATUS = {
      "under": "Claude får Docs og Slides i samme chat"
     },
     {
+     "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
+     "dato": "2026-09-22T20:00:00",
+     "foerst_set": "2026-09-22T23:13:17",
+     "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+     "side": "artikel/f5417683ef6a173a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Snorkel AI tredobler værdiansættelse til 3,5 mia.",
+     "dato": "2026-09-22T21:56:43",
+     "foerst_set": "2026-09-22T23:13:17",
+     "link": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+     "side": "artikel/84a303211cd26a2a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta indrømmer Muse er inspireret af OpenClaw",
      "dato": "2026-09-22T19:09:11",
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
      "side": "artikel/176f90142d043408.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AstroForge vil flyve med AI og uden radio",
+     "dato": "2026-09-22T15:00:00",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
+     "side": "artikel/63278f8d0a1c84a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -408,39 +443,12 @@ window.KILDER_STATUS = {
      "side": "artikel/c0e5bbea1628d07f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Petlibro Granary 2 vejer hvor meget katten spiser",
-     "dato": "2026-09-19T15:00:00",
-     "foerst_set": "2026-09-19T18:12:03",
-     "link": "https://techcrunch.com/2026/09/19/petlibros-new-ai-powered-feeder-is-a-game-changer-for-multi-cat-homes/",
-     "side": "artikel/031e78fea7f65b89.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Vals vil måle AI-modeller bag lukkede tests",
-     "dato": "2026-09-19T13:00:00",
-     "foerst_set": "2026-09-19T14:44:19",
-     "link": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking/",
-     "side": "artikel/0ac6fc9717b544dd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic lader AI-modeller lave biologiforsøg",
-     "dato": "2026-09-18T23:13:31",
-     "foerst_set": "2026-09-19T01:31:11",
-     "link": "https://techcrunch.com/2026/09/18/anthropic-is-operating-a-lab-that-conducts-biology-experiments/",
-     "side": "artikel/dcced75f93e2d70f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     6
     ],
     [
      "Ars Technica AI",
@@ -466,17 +474,35 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 24,
-   "som_ekstra": 4,
+   "i_listen": 22,
+   "som_ekstra": 5,
    "seneste": [
     {
-     "rubrik": "Trump vil have en AI-styrke og en AI-czar",
+     "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
      "dato": "",
-     "foerst_set": "2026-09-20T16:28:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Trump vil omdøbe AI til super intelligence",
+     "dato": "",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
      "side": "",
      "hvor": "under",
      "under": "Trump vil omdøbe AI og oprette AI Force"
+    },
+    {
+     "rubrik": "Meta patches exploit controlling Muse AI agent",
+     "dato": "",
+     "foerst_set": "2026-09-22T13:37:55",
+     "link": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse kan kapres af enhver lokal app"
     },
     {
      "rubrik": "Gemini hackede tre selskaber under sikkerhedstest",
@@ -497,17 +523,8 @@ window.KILDER_STATUS = {
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
     },
     {
-     "rubrik": "Meta One sælger ekstra AI-brug fra 7,99 dollar",
-     "dato": "",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta One samler AI i nye abonnementer"
-    },
-    {
      "rubrik": "Andreessen Horowitz lancerer akademi uden grader",
-     "dato": "2026-09-22T12:34:08",
+     "dato": "2026-09-22T16:34:08",
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
      "side": "artikel/262004370c298f0b.html",
@@ -552,7 +569,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
-     "dato": "2026-09-19T20:44:40",
+     "dato": "2026-09-19T16:44:40",
      "foerst_set": "2026-09-19T23:28:25",
      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
      "side": "artikel/45d620b21da13aea.html",
@@ -617,10 +634,14 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     6
     ],
     [
      "Ars Technica AI",
+     2
+    ],
+    [
+     "Anthropic News",
      1
     ]
    ]
@@ -635,9 +656,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
-   "som_ekstra": 3,
+   "i_listen": 10,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Anthropic og OpenAI skærer modelpriser markant",
+     "dato": "",
+     "foerst_set": "2026-09-22T23:13:17",
+     "link": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
     {
      "rubrik": "FAA tæt på at starte SMART over Washington",
      "dato": "",
@@ -664,6 +694,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles CC bliver familieagent med egen konto"
+    },
+    {
+     "rubrik": "Microsoft lukker AI-chatbot der solgte masseangreb",
+     "dato": "2026-09-22T19:45:47",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+     "side": "artikel/90435c878e92426e.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Toyota træner humanoidrobotter med sine egne arbejdere",
@@ -745,24 +784,6 @@ window.KILDER_STATUS = {
      "side": "artikel/78ef7df1719c17b3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Agilitys Digit 5 undviger folk og sætter sig",
-     "dato": "2026-09-15T18:33:02",
-     "foerst_set": "2026-09-15T21:43:26",
-     "link": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
-     "side": "artikel/cccaeeec7480c3f6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mozilla: Åbne modeller 4,4 måneder bag Fable 5",
-     "dato": "2026-09-15T12:00:41",
-     "foerst_set": "2026-09-15T13:50:34",
-     "link": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
-     "side": "artikel/f9a32ab8fe3eaef7.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -771,11 +792,15 @@ window.KILDER_STATUS = {
      5
     ],
     [
-     "Simon Willison AI",
+     "The Verge AI",
+     2
+    ],
+    [
+     "Anthropic News",
      1
     ],
     [
-     "The Verge AI",
+     "Simon Willison AI",
      1
     ]
    ]
@@ -790,7 +815,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -828,15 +853,6 @@ window.KILDER_STATUS = {
      "side": "artikel/c81fa26a50d635d6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Hyperscalerne skal være 2,7 gange mere produktive",
-     "dato": "2026-09-15T10:00:00",
-     "foerst_set": "2026-09-15T13:50:34",
-     "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
-     "side": "artikel/03f235e72691ef06.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -851,7 +867,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 25,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -873,6 +889,15 @@ window.KILDER_STATUS = {
      "under": "GPT-6 Astra forbedrer Devins egen test"
     },
     {
+     "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
+     "dato": "2026-09-22T18:00:00",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+     "side": "artikel/c4259d8daf829e3d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lancerer ChatGPT til finanssektoren med GPT-6 Astra",
      "dato": "2026-09-10T07:00:00",
      "foerst_set": "2026-09-10T21:07:39",
@@ -882,29 +907,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI lancerer Agents API",
-     "dato": "2026-09-10T00:00:00",
-     "foerst_set": "2026-09-10T21:07:39",
-     "link": "https://openai.com/index/introducing-the-agents-api",
-     "side": "artikel/96db0e24a08a20fe.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI præsenterer Data agent i ChatGPT Work",
      "dato": "2026-09-10T15:00:00",
      "foerst_set": "2026-09-10T17:49:16",
      "link": "https://openai.com/index/put-data-to-work",
      "side": "artikel/d86fa96aa31ae332.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI og GSA giver USA's myndigheder AI-rabat",
-     "dato": "2026-09-10T07:00:00",
-     "foerst_set": "2026-09-10T17:49:16",
-     "link": "https://openai.com/index/expanding-ai-access-us-government",
-     "side": "artikel/aa2ea623e7d1a173.html",
      "hvor": "forside",
      "under": ""
     },
