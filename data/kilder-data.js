@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-23T23:05:35.233139+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-09-24T05:16:08.643426+00:00",
+ "artikler_i_alt": 93,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 14,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
+     "dato": "2026-09-23T00:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+     "side": "artikel/68024e28356d7cb5.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude skærer ebola-rapport fra dag til time",
      "dato": "2026-09-22T00:00:00",
@@ -54,11 +63,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "The Verge AI",
+     2
+    ],
+    [
      "TechCrunch AI",
      1
     ],
     [
-     "The Verge AI",
+     "Simon Willison AI",
      1
     ]
    ]
@@ -99,8 +112,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 1,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 TTS styres replik for replik"
+    },
     {
      "rubrik": "Gemini-app åbner på Windows med Alt + Space",
      "dato": "2026-09-10T16:00:00",
@@ -111,7 +133,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Google DeepMind",
+     1
+    ]
+   ]
   },
   {
    "navn": "xAI News",
@@ -192,8 +219,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 2,
-   "som_ekstra": 2,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "GPT-6 Luna halverer prisen over for GPT-5.6",
+     "dato": "",
+     "foerst_set": "2026-09-23T05:04:58",
+     "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
     {
      "rubrik": "Jev svarer med tal i stedet for tekst",
      "dato": "",
@@ -233,6 +269,10 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Anthropic News",
+     1
+    ],
+    [
      "TechCrunch AI",
      1
     ],
@@ -252,7 +292,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 39,
+   "i_listen": 41,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -299,6 +339,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Microsoft-dokument advarede om 'doom loop'"
+    },
+    {
+     "rubrik": "Meta lancerer kamerafri Ray-Ban Meta Audio-briller",
+     "dato": "2026-09-23T23:39:44",
+     "foerst_set": "2026-09-24T05:16:08",
+     "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+     "side": "artikel/abe26ab67059b729.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta annoncerer avatar og briller til Muse",
+     "dato": "2026-09-24T01:13:32",
+     "foerst_set": "2026-09-24T05:16:08",
+     "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+     "side": "artikel/a58dd3909ca16b4b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI giver mobilen stemmestyret arbejde",
@@ -389,30 +447,12 @@ window.KILDER_STATUS = {
      "side": "artikel/176f90142d043408.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "AstroForge vil flyve med AI og uden radio",
-     "dato": "2026-09-22T15:00:00",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
-     "side": "artikel/63278f8d0a1c84a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nscale børsnotering hviler på kun to kunder",
-     "dato": "2026-09-22T12:23:05",
-     "foerst_set": "2026-09-22T13:37:55",
-     "link": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
-     "side": "artikel/020fc8cb0d6ecf06.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     7
+     8
     ],
     [
      "Ars Technica AI",
@@ -438,9 +478,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
-   "som_ekstra": 8,
+   "i_listen": 21,
+   "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Meta Muse får videoopkald og egen mail",
+     "dato": "",
+     "foerst_set": "2026-09-24T05:16:08",
+     "link": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta annoncerer avatar og briller til Muse"
+    },
+    {
+     "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude opdager nyt enzymsystem med CRISPR-træk"
+    },
     {
      "rubrik": "OpenAI danner uafhængigt råd med ni elite-matematikere",
      "dato": "",
@@ -514,15 +572,6 @@ window.KILDER_STATUS = {
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
     },
     {
-     "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
-     "dato": "2026-09-23T14:00:00",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
-     "side": "artikel/9652a479122b8cee.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Newsom underskriver syv love om datacentre",
      "dato": "2026-09-23T14:22:57",
      "foerst_set": "2026-09-23T19:47:07",
@@ -542,7 +591,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "YouTube AI-agent passer selv på gamle videoer",
-     "dato": "2026-09-23T10:30:00",
+     "dato": "2026-09-23T14:30:00",
      "foerst_set": "2026-09-23T19:47:07",
      "link": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
      "side": "artikel/8909ad75f4c2b214.html",
@@ -560,7 +609,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI henter tre ledere fra Patreon",
-     "dato": "2026-09-23T07:02:39",
+     "dato": "2026-09-23T11:02:39",
      "foerst_set": "2026-09-23T13:49:23",
      "link": "https://www.theverge.com/ai-artificial-intelligence/999249/openai-creators-patreon-execs-hire-sam-yam",
      "side": "artikel/9767b09c228ae3fb.html",
@@ -569,7 +618,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Rabbits OS3 kører uden R1-hardware",
-     "dato": "2026-09-22T16:52:40",
+     "dato": "2026-09-22T20:52:40",
      "foerst_set": "2026-09-23T05:04:58",
      "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
      "side": "artikel/d0716c4b578fd51d.html",
@@ -578,7 +627,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Andreessen Horowitz lancerer akademi uden grader",
-     "dato": "2026-09-22T12:34:08",
+     "dato": "2026-09-22T16:34:08",
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
      "side": "artikel/262004370c298f0b.html",
@@ -620,20 +669,29 @@ window.KILDER_STATUS = {
      "side": "artikel/ac1368b0f72db021.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
+     "dato": "2026-09-18T17:04:51",
+     "foerst_set": "2026-09-18T19:56:02",
+     "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+     "side": "artikel/a773bfa98d720806.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     7
+     8
+    ],
+    [
+     "Anthropic News",
+     2
     ],
     [
      "Ars Technica AI",
      2
-    ],
-    [
-     "Anthropic News",
-     1
     ]
    ]
   },
@@ -647,7 +705,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
+   "i_listen": 13,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -676,6 +734,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles CC bliver familieagent med egen konto"
+    },
+    {
+     "rubrik": "XPRIZE Wildfire: Brande opdaget, ikke slukket",
+     "dato": "2026-09-23T20:28:42",
+     "foerst_set": "2026-09-23T23:05:35",
+     "link": "https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them/",
+     "side": "artikel/599cf760d003d77a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "YouTube lover egne feeds og mere AI",
@@ -773,15 +840,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-17T20:31:59",
      "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
      "side": "artikel/35cb1838bc98373f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI deler seks tilfælde af uønsket agentadfærd",
-     "dato": "2026-09-17T16:18:34",
-     "foerst_set": "2026-09-17T17:14:28",
-     "link": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
-     "side": "artikel/78ef7df1719c17b3.html",
      "hvor": "forside",
      "under": ""
     }
@@ -891,7 +949,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Google Gemini",
+     1
+    ]
+   ]
   },
   {
    "navn": "arXiv cs.AI",

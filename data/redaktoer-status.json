@@ -1,21 +1,16 @@
 {
-  "opdateret": "2026-09-23T23:05:35.233139+00:00",
+  "opdateret": "2026-09-24T05:16:08.643426+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://www.anthropic.com/claude-opus-5-5"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
   ],
-  "input_fingerprint": "c9e82e5b31d7663d",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Anbefalingen 'Gemini tilføjer Connected Apps fra Adobe og Airtable' (bafc49bea8fbb19f) er ufærdig: feltet 'sektioner' er null, så der er ingen afsnitstekst - en ren pladsholder, der ikke kan bringes.",
-    "Skriveopgaven til Nemotron 3 Diarization krævede en faktaboks med tal, bl.a. 16 kHz indgang. Artiklens noegletal er tom, og 16 kHz nævnes slet ikke i teksten.",
-    "Skriveopgaven til Claude-artiklen krævede tal og faktaboks (21 timers søgning, ca. 950 agenter, 210 millioner tokens). noegletal er tom, og betydning-feltet er en tom streng, selv om tallene står i brødteksten."
-  ],
-  "modelkald": 6,
+  "input_fingerprint": "b159a8e8b9d604d7",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 364e76eaa6a6943f: skriveopgave har 929 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
   "kildehentninger": 7,
   "vaerktoejer": [
     {
@@ -35,7 +30,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -44,18 +43,38 @@
     },
     {
       "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 1058 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 926 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 929 tegn; skriv 12-900 tegn i dette felt"
     }
   ],
   "kildegrundlag": [
+    {
+      "link": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "grundlag": "kildetekst"
+    },
     {
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
       "grundlag": "kildetekst"
@@ -69,26 +88,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.anthropic.com/claude-opus-5-5",
     "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills"
+    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+    "https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them/"
   ],
-  "afventer_artikler": 126
+  "afventer_artikler": 128
 }
