@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-09-24T05:16:08.643426+00:00",
+  "opdateret": "2026-09-24T13:44:47.340855+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+    "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
   ],
-  "input_fingerprint": "b159a8e8b9d604d7",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 364e76eaa6a6943f: skriveopgave har 929 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
-  "kildehentninger": 7,
+  "input_fingerprint": "63bb1b9dd0f11cf7",
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 8,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -30,14 +30,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -50,41 +42,37 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 1058 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 1058 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 926 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 983 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 929 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 913 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
       "grundlag": "kildetekst"
     },
     {
@@ -92,11 +80,23 @@
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/999944/meta-muse-charm-ai-interact-5g-modem",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
+      "link": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
       "grundlag": "kildetekst"
     }
   ],
@@ -105,5 +105,5 @@
     "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
     "https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them/"
   ],
-  "afventer_artikler": 128
+  "afventer_artikler": 137
 }
