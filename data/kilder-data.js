@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-24T13:44:47.340855+00:00",
- "artikler_i_alt": 96,
+ "opdateret": "2026-09-24T20:05:24.209273+00:00",
+ "artikler_i_alt": 106,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -301,9 +301,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
-   "som_ekstra": 5,
+   "i_listen": 45,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "OpenAI-model brød ind i australsk sundhedssystem",
+     "dato": "",
+     "foerst_set": "2026-09-24T13:44:47",
+     "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal"
+    },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
@@ -350,11 +359,38 @@ window.KILDER_STATUS = {
      "under": "Microsoft-dokument advarede om 'doom loop'"
     },
     {
-     "rubrik": "Meta annoncerer avatar og briller til Muse",
-     "dato": "2026-09-24T01:13:32",
-     "foerst_set": "2026-09-24T05:16:08",
-     "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
-     "side": "artikel/a58dd3909ca16b4b.html",
+     "rubrik": "Google lader Gemini ringe til butikker for dig",
+     "dato": "2026-09-24T16:00:00",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+     "side": "artikel/8264311d35348922.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Oracle sender force majeure-varsel om Stargate-campussen",
+     "dato": "2026-09-24T18:11:44",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
+     "side": "artikel/e65dfd0080c22eeb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Photos skaber digital garderobe fra dine fotos",
+     "dato": "2026-09-24T17:00:00",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
+     "side": "artikel/1ac6e3fa768eb33f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ElevenLabs accepterer lavere marginer for markedsandel",
+     "dato": "2026-09-24T16:35:13",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
+     "side": "artikel/84fff22728605782.html",
      "hvor": "forside",
      "under": ""
     },
@@ -364,6 +400,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T05:16:08",
      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
      "side": "artikel/abe26ab67059b729.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta annoncerer avatar og briller til Muse",
+     "dato": "2026-09-24T01:13:32",
+     "foerst_set": "2026-09-24T05:16:08",
+     "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+     "side": "artikel/a58dd3909ca16b4b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -420,48 +465,12 @@ window.KILDER_STATUS = {
      "side": "artikel/8c72904f696c9986.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
-     "dato": "2026-09-23T12:00:00",
-     "foerst_set": "2026-09-23T13:49:23",
-     "link": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
-     "side": "artikel/ca7a2de7d13c02aa.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Qualcomm lader mobilen køre 30-milliarders AI-model uden skyen",
-     "dato": "2026-09-22T20:00:00",
-     "foerst_set": "2026-09-22T23:13:17",
-     "link": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
-     "side": "artikel/f5417683ef6a173a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Snorkel AI tredobler værdiansættelse til 3,5 mia.",
-     "dato": "2026-09-22T21:56:43",
-     "foerst_set": "2026-09-22T23:13:17",
-     "link": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-     "side": "artikel/84a303211cd26a2a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta indrømmer Muse er inspireret af OpenClaw",
-     "dato": "2026-09-22T19:09:11",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
-     "side": "artikel/176f90142d043408.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     10
     ],
     [
      "Ars Technica AI",
@@ -487,9 +496,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
-   "som_ekstra": 10,
+   "i_listen": 27,
+   "som_ekstra": 12,
    "seneste": [
+    {
+     "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live avatar skifter sprog undervejs"
+    },
+    {
+     "rubrik": "Gemini ringer til butikker for dig",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
+     "side": "",
+     "hvor": "under",
+     "under": "Google lader Gemini ringe til butikker for dig"
+    },
     {
      "rubrik": "Meta Muse får videoopkald og egen mail",
      "dato": "",
@@ -581,8 +608,44 @@ window.KILDER_STATUS = {
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
     },
     {
+     "rubrik": "Meta vil anbefale AI-spil på Facebook og Instagram",
+     "dato": "2026-09-24T13:52:29",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+     "side": "artikel/c8ce86916686a255.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-forsker: Air gap er ikke nok",
+     "dato": "2026-09-24T10:30:00",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999881/why-cant-we-airgap-rogue-ai-agents",
+     "side": "artikel/aee6384a44de7db3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Flock-chefer kan stævnes til senatshøring",
+     "dato": "2026-09-24T10:15:05",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
+     "side": "artikel/4164d92d4b94cfb3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta Muse giver hele sit filsystem væk",
+     "dato": "2026-09-24T13:14:12",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+     "side": "artikel/450bb1526b07cd55.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal",
-     "dato": "2026-09-24T07:52:32",
+     "dato": "2026-09-24T11:52:32",
      "foerst_set": "2026-09-24T13:44:47",
      "link": "https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data",
      "side": "artikel/0b9f26daa2c7f84b.html",
@@ -591,7 +654,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Google: Gemini 4 kommer før tid",
-     "dato": "2026-09-24T05:04:18",
+     "dato": "2026-09-24T09:04:18",
      "foerst_set": "2026-09-24T13:44:47",
      "link": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
      "side": "artikel/fc26726d9b3ca816.html",
@@ -651,56 +714,24 @@ window.KILDER_STATUS = {
      "side": "artikel/d0716c4b578fd51d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Andreessen Horowitz lancerer akademi uden grader",
-     "dato": "2026-09-22T16:34:08",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
-     "side": "artikel/262004370c298f0b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "California tvinger AI-datacentre til at betale",
-     "dato": "2026-09-21T20:29:45",
-     "foerst_set": "2026-09-22T05:18:45",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-     "side": "artikel/83547d403e173182.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Apple betaler 250 millioner i Siri-forlig",
-     "dato": "2026-09-21T13:36:52",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
-     "side": "artikel/93b84abf7bbda6f3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "FN-panel: Regeringer skal tøjle AI-agenter nu",
-     "dato": "2026-09-21T10:18:06",
-     "foerst_set": "2026-09-21T11:03:51",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
-     "side": "artikel/13e93d540c1e658a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     10
+    ],
+    [
+     "Ars Technica AI",
+     3
     ],
     [
      "Anthropic News",
      2
     ],
     [
-     "Ars Technica AI",
-     2
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -714,9 +745,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
-   "som_ekstra": 3,
+   "i_listen": 14,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Albanese varsler juridiske konsekvenser efter OpenAI-agent-brud",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal"
+    },
     {
      "rubrik": "FAA tæt på at starte SMART over Washington",
      "dato": "",
@@ -743,6 +783,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Googles CC bliver familieagent med egen konto"
+    },
+    {
+     "rubrik": "Meta lancerer Muse Charm til nøgleringen",
+     "dato": "2026-09-24T14:03:38",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain/",
+     "side": "artikel/b7cf47df688afeb2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "XPRIZE Wildfire: Brande opdaget, ikke slukket",
@@ -842,15 +891,6 @@ window.KILDER_STATUS = {
      "side": "artikel/3e9d439b35394aa7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "SynthID svækker modellers afvisning af skadelige krav",
-     "dato": "2026-09-17T18:33:13",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
-     "side": "artikel/35cb1838bc98373f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -860,7 +900,7 @@ window.KILDER_STATUS = {
     ],
     [
      "The Verge AI",
-     2
+     3
     ],
     [
      "Simon Willison AI",
@@ -945,9 +985,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 2,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
+     "dato": "2026-09-24T16:20:39",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+     "side": "artikel/0970685988e40ee9.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Gemini 3.8 TTS styres replik for replik",
      "dato": "2026-09-23T15:25:14",
@@ -971,6 +1020,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },

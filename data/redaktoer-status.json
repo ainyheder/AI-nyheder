@@ -1,16 +1,16 @@
 {
-  "opdateret": "2026-09-24T13:44:47.340855+00:00",
+  "opdateret": "2026-09-24T20:05:24.209273+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://huggingface.co/blog/nvidia/nemotron-diarization",
-    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
+    "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+    "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+    "https://huggingface.co/blog/nvidia/nemotron-diarization"
   ],
-  "input_fingerprint": "63bb1b9dd0f11cf7",
-  "forklaring": "Udgavekontrol fejlede: TypeError",
-  "modelkald": 8,
+  "input_fingerprint": "435d4f250e2acc1c",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
@@ -47,19 +47,7 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 1058 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 983 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 0655c35997dfdd45: skriveopgave har 914 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 364e76eaa6a6943f: skriveopgave har 913 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel a3941e1cfa725415: skriveopgave har 930 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -68,19 +56,15 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
       "grundlag": "kildetekst"
     },
     {
@@ -88,22 +72,26 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/999944/meta-muse-charm-ai-interact-5g-modem",
+      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
+      "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
-    "https://arstechnica.com/gadgets/2026/09/xprize-wildfire-winners-spotted-fires-within-10-min-but-couldnt-stop-them/"
+    "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
   ],
-  "afventer_artikler": 137
+  "afventer_artikler": 147
 }
