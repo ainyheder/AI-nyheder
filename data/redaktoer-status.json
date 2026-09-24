@@ -1,17 +1,22 @@
 {
-  "opdateret": "2026-09-23T19:47:07.099847+00:00",
+  "opdateret": "2026-09-23T23:05:35.233139+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
+    "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
     "https://www.anthropic.com/claude-opus-5-5"
   ],
-  "input_fingerprint": "f9c2299eeccab27e",
+  "input_fingerprint": "c9e82e5b31d7663d",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 3,
-  "kildehentninger": 6,
+  "kontrolproblemer": [
+    "Anbefalingen 'Gemini tilføjer Connected Apps fra Adobe og Airtable' (bafc49bea8fbb19f) er ufærdig: feltet 'sektioner' er null, så der er ingen afsnitstekst - en ren pladsholder, der ikke kan bringes.",
+    "Skriveopgaven til Nemotron 3 Diarization krævede en faktaboks med tal, bl.a. 16 kHz indgang. Artiklens noegletal er tom, og 16 kHz nævnes slet ikke i teksten.",
+    "Skriveopgaven til Claude-artiklen krævede tal og faktaboks (21 timers søgning, ca. 950 agenter, 210 millioner tokens). noegletal er tom, og betydning-feltet er en tom streng, selv om tallene står i brødteksten."
+  ],
+  "modelkald": 6,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -38,20 +43,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -59,10 +56,6 @@
     }
   ],
   "kildegrundlag": [
-    {
-      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "grundlag": "kildetekst"
-    },
     {
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
       "grundlag": "kildetekst"
@@ -80,14 +73,22 @@
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
     "https://www.anthropic.com/claude-opus-5-5",
-    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
-    "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/"
+    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+    "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills"
   ],
-  "afventer_artikler": 141
+  "afventer_artikler": 126
 }

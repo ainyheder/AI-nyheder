@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-23T19:47:07.099847+00:00",
- "artikler_i_alt": 97,
+ "opdateret": "2026-09-23T23:05:35.233139+00:00",
+ "artikler_i_alt": 90,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -60,10 +60,6 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      1
-    ],
-    [
-     "Simon Willison AI",
-     1
     ]
    ]
   },
@@ -103,17 +99,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 1,
-   "som_ekstra": 1,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
-     "dato": "",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
-    },
     {
      "rubrik": "Gemini-app åbner på Windows med Alt + Space",
      "dato": "2026-09-10T16:00:00",
@@ -124,12 +111,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Google DeepMind",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "xAI News",
@@ -209,18 +191,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 3,
-   "som_ekstra": 3,
+   "i_listen": 2,
+   "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "GPT-6 Luna koster en tiendedel af Haiku 4.5",
-     "dato": "",
-     "foerst_set": "2026-09-23T05:04:58",
-     "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
     {
      "rubrik": "Jev svarer med tal i stedet for tekst",
      "dato": "",
@@ -256,22 +229,9 @@ window.KILDER_STATUS = {
      "side": "artikel/56af974b4f59c8fd.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Citat hos Willison: Ingen rettigheder til AI-modeller",
-     "dato": "2026-09-16T16:00:54",
-     "foerst_set": "2026-09-16T17:43:50",
-     "link": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman/",
-     "side": "artikel/7e460d3dba3c11bb.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
-    [
-     "Anthropic News",
-     1
-    ],
     [
      "TechCrunch AI",
      1
@@ -292,18 +252,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 40,
-   "som_ekstra": 8,
+   "i_listen": 39,
+   "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "YouTube viser tre thumbnails til forskellige seergrupper",
-     "dato": "",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
-     "side": "",
-     "hvor": "under",
-     "under": "YouTube AI-agent passer selv på gamle videoer"
-    },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
@@ -350,24 +301,6 @@ window.KILDER_STATUS = {
      "under": "Microsoft-dokument advarede om 'doom loop'"
     },
     {
-     "rubrik": "ChatGPT og Claude kan nu styre Google Home",
-     "dato": "",
-     "foerst_set": "2026-09-16T17:43:50",
-     "link": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Home åbner for fremmede AI-agenter"
-    },
-    {
-     "rubrik": "Anthropic smelter Claude chat og Cowork sammen",
-     "dato": "",
-     "foerst_set": "2026-09-16T17:43:50",
-     "link": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude får Docs og Slides i samme chat"
-    },
-    {
      "rubrik": "OpenAI giver mobilen stemmestyret arbejde",
      "dato": "2026-09-23T17:00:00",
      "foerst_set": "2026-09-23T19:47:07",
@@ -400,6 +333,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-23T19:47:07",
      "link": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
      "side": "artikel/55b95be9dcae85a3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "YouTube giver AI fat i dine thumbnails",
+     "dato": "2026-09-23T14:30:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
+     "side": "artikel/fe603b600b7eb15e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -465,21 +407,12 @@ window.KILDER_STATUS = {
      "side": "artikel/020fc8cb0d6ecf06.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Data & Society: Datacentre-modstand er post-partisan",
-     "dato": "2026-09-22T13:00:00",
-     "foerst_set": "2026-09-22T13:37:55",
-     "link": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction/",
-     "side": "artikel/2665fc5c20dcb8b4.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     10
+     7
     ],
     [
      "Ars Technica AI",
@@ -505,7 +438,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
+   "i_listen": 22,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -599,6 +532,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Bernie Sanders vil forbyde superintelligence med fængsel",
+     "dato": "2026-09-23T12:23:05",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+     "side": "artikel/5acbae282eb23d15.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "YouTube AI-agent passer selv på gamle videoer",
      "dato": "2026-09-23T10:30:00",
      "foerst_set": "2026-09-23T19:47:07",
@@ -678,21 +620,12 @@ window.KILDER_STATUS = {
      "side": "artikel/ac1368b0f72db021.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Newsom sætter skub i arbejdet med AI-nødstop",
-     "dato": "2026-09-18T17:04:51",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
-     "side": "artikel/a773bfa98d720806.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     7
     ],
     [
      "Ars Technica AI",
@@ -882,6 +815,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "OpenAI-agenter brød ind for at bestå",
+     "dato": "2026-09-23T09:00:00",
+     "foerst_set": "2026-09-23T23:05:35",
+     "link": "https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating/",
+     "side": "artikel/edaeeef0c798b30f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Timnit Gebru: AI-gennembrudene holder ikke",
      "dato": "2026-09-22T11:04:51",
      "foerst_set": "2026-09-22T13:37:55",
@@ -905,15 +847,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-21T17:10:47",
      "link": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature/",
      "side": "artikel/c90b91454dad1928.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Syensqo lader AI-agenter finde nye materialer",
-     "dato": "2026-09-16T12:47:34",
-     "foerst_set": "2026-09-16T17:43:50",
-     "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
-     "side": "artikel/c81fa26a50d635d6.html",
      "hvor": "forside",
      "under": ""
     }
@@ -942,28 +875,23 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
    "i_listen": 1,
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-     "dato": "2026-09-15T17:05:57",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-     "side": "artikel/392b6ec46b4e96bc.html",
+     "rubrik": "Gemini 3.8 TTS styres replik for replik",
+     "dato": "2026-09-23T15:25:14",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "side": "artikel/31ef9b5263a38be6.html",
      "hvor": "forside",
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "Google Gemini",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "arXiv cs.AI",
