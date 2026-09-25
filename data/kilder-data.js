@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-24T20:05:24.209273+00:00",
- "artikler_i_alt": 106,
+ "opdateret": "2026-09-24T23:22:48.195820+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,7 +12,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 14,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -39,15 +39,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://www.anthropic.com/claude-opus-5-5",
      "side": "artikel/23e9c366edfe97a9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic måler hvor meget Claude bygger Claude",
-     "dato": "2026-09-17T00:00:00",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
-     "side": "artikel/0bc353f72d33d6d6.html",
      "hvor": "forside",
      "under": ""
     },
@@ -111,7 +102,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 1,
+   "i_listen": 2,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -133,6 +124,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
+     "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+     "dato": "2026-09-24T15:30:00",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+     "side": "artikel/2b1da88efcb63533.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gemini-app åbner på Windows med Alt + Space",
      "dato": "2026-09-10T16:00:00",
      "foerst_set": "2026-09-11T14:38:09",
@@ -145,7 +145,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
+    ],
+    [
+     "The Verge AI",
+     1
     ]
    ]
   },
@@ -282,11 +286,11 @@ window.KILDER_STATUS = {
      1
     ],
     [
-     "TechCrunch AI",
+     "Ars Technica AI",
      1
     ],
     [
-     "Ars Technica AI",
+     "TechCrunch AI",
      1
     ]
    ]
@@ -301,8 +305,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 45,
-   "som_ekstra": 6,
+   "i_listen": 35,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "OpenAI-model brød ind i australsk sundhedssystem",
@@ -348,15 +352,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Opdigtet AI-rapport bragte USA tæt på krig"
-    },
-    {
-     "rubrik": "Microsoft kaldte OpenAI-datapraksis for tyveri i nye filer",
-     "dato": "",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
-     "side": "",
-     "hvor": "under",
-     "under": "Microsoft-dokument advarede om 'doom loop'"
     },
     {
      "rubrik": "Google lader Gemini ringe til butikker for dig",
@@ -470,11 +465,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     10
+     9
     ],
     [
      "Ars Technica AI",
-     5
+     4
     ],
     [
      "Anthropic News",
@@ -496,8 +491,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
-   "som_ekstra": 12,
+   "i_listen": 20,
+   "som_ekstra": 13,
    "seneste": [
     {
      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
@@ -506,7 +501,7 @@ window.KILDER_STATUS = {
      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 3.8 Live avatar skifter sprog undervejs"
+     "under": "Gemini 3.8 Live giver AI et ansigt"
     },
     {
      "rubrik": "Gemini ringer til butikker for dig",
@@ -516,6 +511,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google lader Gemini ringe til butikker for dig"
+    },
+    {
+     "rubrik": "Google sender AI-chip-satellit i rummet",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
+     "side": "",
+     "hvor": "under",
+     "under": "Google sender første AI-satellit i kredsløb"
     },
     {
      "rubrik": "Meta Muse får videoopkald og egen mail",
@@ -599,13 +603,13 @@ window.KILDER_STATUS = {
      "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
-     "rubrik": "Tre forskere brød ind i OpenAI med Claude",
-     "dato": "",
-     "foerst_set": "2026-09-18T16:41:48",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
-     "side": "",
-     "hvor": "under",
-     "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+     "rubrik": "Meta Muse giver hele sit filsystem væk",
+     "dato": "2026-09-24T13:14:12",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+     "side": "artikel/450bb1526b07cd55.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta vil anbefale AI-spil på Facebook og Instagram",
@@ -631,15 +635,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
      "side": "artikel/4164d92d4b94cfb3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta Muse giver hele sit filsystem væk",
-     "dato": "2026-09-24T13:14:12",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-     "side": "artikel/450bb1526b07cd55.html",
      "hvor": "forside",
      "under": ""
     },
@@ -719,18 +714,18 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     9
     ],
     [
      "Ars Technica AI",
-     3
+     4
     ],
     [
      "Anthropic News",
      2
     ],
     [
-     "Google DeepMind",
+     "Google Gemini",
      1
     ]
    ]
@@ -745,8 +740,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 14,
-   "som_ekstra": 4,
+   "i_listen": 13,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Albanese varsler juridiske konsekvenser efter OpenAI-agent-brud",
@@ -776,13 +771,13 @@ window.KILDER_STATUS = {
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
     },
     {
-     "rubrik": "Googles CC-agent samler familiens hverdag",
-     "dato": "",
-     "foerst_set": "2026-09-17T20:31:59",
-     "link": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
-     "side": "",
-     "hvor": "under",
-     "under": "Googles CC bliver familieagent med egen konto"
+     "rubrik": "Google sender første AI-satellit i kredsløb",
+     "dato": "2026-09-24T16:16:34",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/",
+     "side": "artikel/0250cb47c834bb18.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta lancerer Muse Charm til nøgleringen",
@@ -882,25 +877,16 @@ window.KILDER_STATUS = {
      "side": "artikel/82b3e82cb7035fd3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ALMA-drone angriber selvvalgt mål med indbygget AI",
-     "dato": "2026-09-17T22:12:58",
-     "foerst_set": "2026-09-17T23:03:23",
-     "link": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions/",
-     "side": "artikel/3e9d439b35394aa7.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "TechCrunch AI",
-     5
+     "The Verge AI",
+     4
     ],
     [
-     "The Verge AI",
-     3
+     "TechCrunch AI",
+     4
     ],
     [
      "Simon Willison AI",
@@ -985,17 +971,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 3,
-   "som_ekstra": 0,
+   "i_listen": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
-     "dato": "2026-09-24T16:20:39",
+     "dato": "",
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-     "side": "artikel/0970685988e40ee9.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live giver AI et ansigt"
     },
     {
      "rubrik": "Gemini 3.8 TTS styres replik for replik",
@@ -1019,11 +1005,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     2
-    ],
-    [
-     "The Verge AI",
-     1
+     3
     ]
    ]
   },

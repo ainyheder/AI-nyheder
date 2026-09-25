@@ -1,20 +1,28 @@
 {
-  "opdateret": "2026-09-24T20:05:24.209273+00:00",
+  "opdateret": "2026-09-24T23:22:48.195820+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-    "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-    "https://huggingface.co/blog/nvidia/nemotron-diarization"
+    "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
   ],
-  "input_fingerprint": "435d4f250e2acc1c",
+  "input_fingerprint": "a3636b1fefeaaebb",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 5,
-  "kildehentninger": 8,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -42,12 +50,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel a3941e1cfa725415: skriveopgave har 930 tegn; skriv 12-900 tegn i dette felt"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -56,11 +64,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "grundlag": "kildetekst"
     },
     {
@@ -68,30 +72,30 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
+      "link": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
-    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
   ],
-  "afventer_artikler": 147
+  "afventer_artikler": 137
 }
