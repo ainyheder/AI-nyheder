@@ -1,6 +1,39 @@
 {
-  "opdateret": "2026-09-25T05:17:24.354778+00:00",
+  "opdateret": "2026-09-25T14:07:11.317324+00:00",
   "kladder": [
+    {
+      "titel": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+      "resume": "After teasing its new Copilot \"super app\" last month, Microsoft is officially unveiling it today. The redesigned Copilot app bundles three AI capabilities into a single interface of chat, coding, and agents. As part of the launch, Microsoft is also rebranding Scout, the AI personal assistant it unveiled at Build earlier this year, as Autopilot. […]",
+      "dato": "2026-09-25T08:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "rubrik": "Microsoft afslører Copilot-app og omdøber Scout til Autopilot",
+      "resume_da": "Appen samler chat, kodning og agentfunktioner i én grænseflade. Scout var ellers først præsenteret ved Build tidligere i år.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft afslører Copilot-superapp med chat, kodning og agenter i ét interface; Scout omdøbes til Autopilot.",
+        "forbehold": "Kun app-omdesign; ingen ny model præsenteres i materialet.",
+        "emne": "microsoft copilot"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
     {
       "titel": "Introducing GPT-6 Sol and Luna",
       "link": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
@@ -200,6 +233,39 @@
       ]
     },
     {
+      "titel": "Advancing Private AI Compute with secure, server-side memory",
+      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+      "dato": "2026-09-23T16:00:57+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "rubrik": "Google DeepMind tilføjer serverhukommelse til Private AI Compute",
+      "resume_da": "Hukommelsen lagres på serveren og indgår i satsningen på personlig AI, oplyser Google DeepMind.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind tilføjer privat, server-side hukommelse til Private AI Compute.",
+        "forbehold": "Kun kort intro; sikkerhedsdetaljer, metode og tilgængelighed er ikke beskrevet.",
+        "emne": "google deepmind"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Transformers now runs llama.cpp quants",
       "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
       "resume": "",
@@ -258,39 +324,6 @@
         "begrundelse": "OpenAI fastsætter principper for uafhængige tredjepartsvurderinger af frontier-modeller og sikkerhedsforanstaltninger.",
         "forbehold": "Retningslinjer er producentens eget udkast, ikke en bindende standard.",
         "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Advancing Private AI Compute with secure, server-side memory",
-      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-      "dato": "2026-09-23T16:00:57+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "rubrik": "Google DeepMind tilføjer serverhukommelse til Private AI Compute",
-      "resume_da": "Hukommelsen lagres på serveren og indgår i satsningen på personlig AI, oplyser Google DeepMind.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google DeepMind tilføjer privat, server-side hukommelse til Private AI Compute.",
-        "forbehold": "Kun kort intro; sikkerhedsdetaljer, metode og tilgængelighed er ikke beskrevet.",
-        "emne": "google deepmind"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -763,7 +796,7 @@
     {
       "titel": "Lightspeed targets $250M for new India fund, focusing on early-stage AI",
       "link": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
-      "resume": "The Silicon Valley firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
+      "resume": "The venture firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
       "dato": "2026-09-25T05:00:00+00:00",
       "kilde": "TechCrunch AI",
       "kategori": "Penge & marked",
@@ -771,6 +804,7 @@
       "eget_foerst_set": "2026-09-25T05:17:24.354778+00:00",
       "rubrik": "Lightspeed sigter mod 250 mio. dollar til AI-fond",
       "resume_da": "Fonden retter sig mod tidlige investeringer i Indien og kobles for første gang til Lightspeeds globale fondscyklusser med kortere investeringsperiode.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -787,7 +821,6 @@
         "emne": "lightspeed indien-fond"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -819,39 +852,6 @@
         "begrundelse": "Kort efter Muse-lanceringen siger Meta, at agenten er på vej til smartbriller, hvor den aktiveres med stemmen.",
         "forbehold": "Meta oplyser kun, at man \"arbejder på\" det; ingen dato eller tilgængelighed.",
         "emne": "meta muse briller"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Parallel cut research time and cost in half with GPT‑6 Astra",
-      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "resume": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-      "dato": "2026-09-22T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "rubrik": "Parallel halverer forskningstid og omkostninger med GPT-6 Astra",
-      "resume_da": "Opgaven drejede sig om arbejdsmarkedsdata, og sammenligningen gjaldt tidligere modeller, skriver OpenAI Blog.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: Parallel halverede tid og omkostninger ved brug af GPT‑6 Astra til research.",
-        "forbehold": "Producentens egne kundetal om halveret tid og omkostninger, ikke uafhængigt afprøvet.",
-        "emne": "openai gpt-6 astra"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -926,6 +926,39 @@
       ]
     },
     {
+      "titel": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "resume": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+      "dato": "2026-09-22T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "Parallel halverer forskningstid og omkostninger med GPT-6 Astra",
+      "resume_da": "Opgaven drejede sig om arbejdsmarkedsdata, og sammenligningen gjaldt tidligere modeller, skriver OpenAI Blog.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: Parallel halverede tid og omkostninger ved brug af GPT‑6 Astra til research.",
+        "forbehold": "Producentens egne kundetal om halveret tid og omkostninger, ikke uafhængigt afprøvet.",
+        "emne": "openai gpt-6 astra"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
       "link": "https://openai.com/index/airbnb-gpt-6-astra",
       "resume": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
@@ -954,39 +987,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Expanding OpenAI Academy with new learning paths",
-      "link": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "resume": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-      "dato": "2026-09-21T07:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "rubrik": "OpenAI Academy udvider med nye læringsforløb",
-      "resume_da": "Forløbene henvender sig til ansatte, udviklere, ledere, undervisere og studerende, som vil opbygge og vise praktiske AI-færdigheder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI Academy udvider med læringsforløb målrettet ansatte, udviklere, ledere, undervisere og studerende.",
-        "forbehold": "",
-        "emne": "openai academy"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1058,6 +1058,39 @@
       ]
     },
     {
+      "titel": "Expanding OpenAI Academy with new learning paths",
+      "link": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "resume": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+      "dato": "2026-09-21T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-21T21:13:22.292595+00:00",
+      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
+      "rubrik": "OpenAI Academy udvider med nye læringsforløb",
+      "resume_da": "Forløbene henvender sig til ansatte, udviklere, ledere, undervisere og studerende, som vil opbygge og vise praktiske AI-færdigheder.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI Academy udvider med læringsforløb målrettet ansatte, udviklere, ledere, undervisere og studerende.",
+        "forbehold": "",
+        "emne": "openai academy"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
       "link": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
       "resume": "",
@@ -1124,39 +1157,6 @@
       ]
     },
     {
-      "titel": "Building standards for the next phase of AI",
-      "link": "https://openai.com/index/building-standards-next-phase-ai",
-      "resume": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-      "dato": "2026-09-21T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "rubrik": "OpenAI skitserer vej til fælles AI-standarder",
-      "resume_da": "Selskabet efterlyser koordineret evaluering, rapportering og styring for at forbedre sikkerheden omkring AI.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI foreslår fælles globale standarder for evaluering, rapportering og styring af AI.",
-        "forbehold": "Kun overordnede intentioner; ingen konkrete forpligtelser eller tidsplan.",
-        "emne": "ai-standarder"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "‘We’re already fighting yesterday’s battle’: Greece’s prime minister gets candid about AI",
       "link": "https://techcrunch.com/2026/09/22/were-already-fighting-yesterdays-battle-greeces-prime-minister-gets-candid-about-ai/",
       "resume": "Most leaders on a trade mission stick to the pitch, but when I interviewed Greek Prime Minister Kyriakos Mitsotakis this week, he also admitted that no government is ready for what AI is about to do.",
@@ -1190,7 +1190,40 @@
       ]
     },
     {
-      "titel": "How V7 gives AI agents institutional memory",
+      "titel": "Building standards for the next phase of AI",
+      "link": "https://openai.com/index/building-standards-next-phase-ai",
+      "resume": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
+      "dato": "2026-09-21T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-21T21:13:22.292595+00:00",
+      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
+      "rubrik": "OpenAI skitserer vej til fælles AI-standarder",
+      "resume_da": "Selskabet efterlyser koordineret evaluering, rapportering og styring for at forbedre sikkerheden omkring AI.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI foreslår fælles globale standarder for evaluering, rapportering og styring af AI.",
+        "forbehold": "Kun overordnede intentioner; ingen konkrete forpligtelser eller tidsplan.",
+        "emne": "ai-standarder"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "V7 cuts costs 78% while boosting accuracy with GPT-5.6 Luna",
       "link": "https://openai.com/index/v7",
       "resume": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
       "dato": "2026-09-21T00:00:00+00:00",
@@ -1487,6 +1520,39 @@
       ]
     },
     {
+      "titel": "Quoting @therealcornpop",
+      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
+      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
+      "dato": "2026-09-22T18:03:21+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
+      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
+        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
+        "emne": "ai-skrevne manuskripter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Quoting voxium",
       "link": "https://simonwillison.net/2026/Sep/20/voxium/",
       "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
@@ -1553,39 +1619,6 @@
       ]
     },
     {
-      "titel": "Quoting @therealcornpop",
-      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
-      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
-      "dato": "2026-09-22T18:03:21+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
-      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
-        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
-        "emne": "ai-skrevne manuskripter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "What Hollywood thinks about existential AI warnings",
       "link": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
       "resume": "As the tech sector sounds alarms about AI's potential to destroy humanity, entertainment labor groups are urging the public to stay focused on what's already happening. The Verge reached out to Disney, Netflix, Amazon, Lionsgate, and other studios who have started using AI, as well film startups focused on bringing generative AI into the mainstream […]",
@@ -1614,39 +1647,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
-      "link": "https://x.ai/news/grok-bot-customer-support",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
-      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
-        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
-        "emne": "xai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1713,6 +1713,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
+      "link": "https://x.ai/news/grok-bot-customer-support",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
+      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
+        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
+        "emne": "xai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1850,39 +1883,6 @@
       ]
     },
     {
-      "titel": "Is the AI industry really ready to slow down?",
-      "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
-      "resume": "On Equity, we debated whether AI executives are serious about wanting to slow down.",
-      "dato": "2026-09-20T18:56:04+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "rubrik": "TechCrunch debatterer AI-chefers opbremsning",
-      "resume_da": "I Equity-podcasten debatteres, om AI-ledere mener alvor med at bremse AI-udviklingen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcastdebat om, hvorvidt AI-ledere mener alvor med at bremse udviklingen; ingen nye oplysninger eller beslutninger.",
-        "forbehold": "Meningsudveksling uden nye fakta eller kilder.",
-        "emne": "ai-branchen"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Anthropic’s first embedded evaluator is … Accenture?",
       "link": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
       "resume": "Accenture is about to take on its most high-risk consulting engagement ever.",
@@ -1911,6 +1911,39 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "kat_ai": true,
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Is the AI industry really ready to slow down?",
+      "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+      "resume": "On Equity, we debated whether AI executives are serious about wanting to slow down.",
+      "dato": "2026-09-20T18:56:04+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
+      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
+      "rubrik": "TechCrunch debatterer AI-chefers opbremsning",
+      "resume_da": "I Equity-podcasten debatteres, om AI-ledere mener alvor med at bremse AI-udviklingen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcastdebat om, hvorvidt AI-ledere mener alvor med at bremse udviklingen; ingen nye oplysninger eller beslutninger.",
+        "forbehold": "Meningsudveksling uden nye fakta eller kilder.",
+        "emne": "ai-branchen"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2424,39 +2457,6 @@
       ]
     },
     {
-      "titel": "Memory in Grok Build",
-      "link": "https://x.ai/news/grok-build-memory",
-      "resume": "",
-      "dato": "2026-09-16T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-16T21:39:37.526404+00:00",
-      "eget_foerst_set": "2026-09-16T21:39:37.526404+00:00",
-      "rubrik": "Grok Build får hukommelse",
-      "resume_da": "Materialet er kun en xAI-side med titlen ”Memory in Grok Build” og siger intet om funktionens indhold, adgang eller test.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "xAI har en side med titlen »Memory in Grok Build«, men det medsendte materiale siger intet om funktionen.",
-        "forbehold": "Intet indhold; ingen oplysninger om adgang, pris eller test.",
-        "emne": "grok build"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
       "link": "https://mistral.ai/news/mistral-x-cloudera/",
       "resume": "Cloudera and Mistral join forces to bring specialized, sovereign AI intelligence to enterprise data, helping regulated industries innovate on their own terms.",
@@ -2486,6 +2486,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Memory in Grok Build",
+      "link": "https://x.ai/news/grok-build-memory",
+      "resume": "",
+      "dato": "2026-09-16T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-16T21:39:37.526404+00:00",
+      "eget_foerst_set": "2026-09-16T21:39:37.526404+00:00",
+      "rubrik": "Grok Build får hukommelse",
+      "resume_da": "Materialet er kun en xAI-side med titlen ”Memory in Grok Build” og siger intet om funktionens indhold, adgang eller test.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "xAI har en side med titlen »Memory in Grok Build«, men det medsendte materiale siger intet om funktionen.",
+        "forbehold": "Intet indhold; ingen oplysninger om adgang, pris eller test.",
+        "emne": "grok build"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -3129,6 +3162,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Last 24 hours to save up to $200 on TechCrunch Disrupt 2026. Reason 5/5 to attend: Leave further ahead.",
+      "link": "https://techcrunch.com/2026/09/25/last-24-hours-to-save-up-to-200-on-techcrunch-disrupt-2026-reason-5-5-to-attend/",
+      "resume": "Last 24 hours to save up to $200 on your TechCrunch Disrupt 2026 pass. Leave the event further in your startup's trajectory than where you started. Don't miss your chance to save and to push the needle.",
+      "dato": "2026-09-25T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "rubrik": "TechCrunch giver 200 dollars rabat på Disrupt 2026",
+      "resume_da": "Tilbuddet på konferencen udløber inden for 24 timer og gælder et betalt pass, oplyser TechCrunch.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 0,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "reklame",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Rabatfrist på TechCrunch Disrupt-pass; ren eventpåmindelse uden AI-nyhed.",
+        "forbehold": "",
+        "emne": "techcrunch disrupt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -5462,7 +5528,26 @@
         "kontrolleret": "2026-09-14T07:43:50.570637+00:00"
       },
       "prio": 6,
-      "side": "artikel/41bb568b2b6096a5.html"
+      "side": "artikel/41bb568b2b6096a5.html",
+      "historie_dato": "2026-09-12T11:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+          "rubrik": "OpenAI danner matematikgruppe efter AI-løsninger",
+          "resume_da": "OpenAI danner rådgivende gruppe efter at dens interne model har løst over 100 åbne matematiske problemer.",
+          "dato": "2026-09-21T20:15:58+00:00",
+          "foerst_set": "2026-09-21T21:13:22.292595+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
+          "rubrik": "OpenAI danner uafhængigt råd med ni elite-matematikere",
+          "resume_da": "Panelet får adgang til OpenAIs forskning før offentliggørelse og kan kommentere resultater offentligt uden økonomisk binding.",
+          "dato": "2026-09-22T20:17:17-04:00",
+          "foerst_set": "2026-09-23T05:04:58.158407+00:00"
+        }
+      ]
     },
     {
       "titel": "Now everyone can put data to work",
@@ -15917,83 +16002,6 @@
       "side": "artikel/c90b91454dad1928.html"
     },
     {
-      "titel": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
-      "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-      "resume": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
-      "dato": "2026-09-21T20:15:58+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "rubrik": "OpenAI danner matematikgruppe efter AI-løsninger",
-      "resume_da": "OpenAI danner rådgivende gruppe efter at dens interne model har løst over 100 åbne matematiske problemer.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Over 100 åbne matematiske problemer er løst",
-          "tekst": "En intern AI-model fra OpenAI har ifølge selskabet løst mere end 100 hidtil åbne problemer på tværs af de fleste områder af matematik. Det sker, efter at samme model tidligere har præsenteret en løsning på Navier-Stokes-millenniumsproblemet — et af matematikkens syv berygtede åbne problemer, som drejer sig om, hvordan væsker bevæger sig.\n\nSå mange nye resultater har fået markante matematikere til at reagere. Tidligere i denne måned underskrev 25 Fields-medaljevindere et åbent brev, hvor de advarer om, at AI-laboratorier truer deres intellektuelle arbejde, efterhånden som de konkurrerer om at løse berømte matematiske problemer."
-        },
-        {
-          "overskrift": "Rådgivning, men ingen magt over forskningen",
-          "tekst": "OpenAI har nu dannet en uafhængig rådgivende gruppe ved navn Advisory Group on Mathematics and Artificial Intelligence, der er forankret ved Institute for Advanced Study i Princeton, New Jersey. Gruppen skal give matematikere mere indflydelse i virksomhedens matematikforskning ved at vurdere betydningen af nye resultater og koordinere deres offentliggørelse.\n\nMen grænsen er trukket tydeligt. Gruppen får ikke lov til at bremse eller omdirigere OpenAI's igangværende matematiske forskning, og instituttet understreger selv, at det ikke har beslutningsmagt i AI-virksomheder — ansvaret for beslutninger ligger hos hver enkelt virksomhed."
-        },
-        {
-          "overskrift": "Ni matematikere, kun en underskrev kritikbrevet",
-          "tekst": "Ni prominente matematikere er navngivet som gruppens første medlemmer. De er ikke betalt, men kan komme med uopfordrede rådgivning, offentliggøre deres synspunkter og selv bestemme, hvem der skal være medlemmer — hvilket giver dem en vis uafhængighed fra OpenAI.\n\nBemærkelsesværdigt er dog, at kun ét af de ni medlemmer — Camillo De Lellis fra Princeton-instituttet — også underskrev det åbne brev fra de 25 Fields-medaljevindere."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Rådgivningsgruppen er placeret ved Institute for Advanced Study i Princeton, New Jersey.",
-        "Navier-Stokes-problemet er ét af matematikkens syv millennium-problemer med en præmie på én million dollar.",
-        "Medlemmerne er frivillige og ubetalte, men kan gå offentligt ud med deres holdninger."
-      ],
-      "betydning": "",
-      "pointer": [
-        "Intern OpenAI-model har løst 100+ åbne matematiske problemer.",
-        "25 Fields-medaljevindere advarede mod AI-lab-konkurrence.",
-        "Rådgivende gruppe får ingen indflydelse på forskningstempo."
-      ],
-      "billedmotiv": "A solid dark cube bearing OpenAI's black interwoven six-loop Blossom symbol slots into the last empty gap of a wall built from blocky mathematics shapes — plus signs, an equals bar and a curve — while a short solid advisory signpost stands beside the wall's open side, pointing guidance rather than blocking the path. Opaque cutout forms, crisp contours, isolated on plain background, no people, no text.",
-      "billedmotiv_instruks": "e510de46bdb71941759e",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI nedsætter råd om matematik og AI, mens selskabet hævder, at dets AI har løst over 100 åbne matematikproblemer.",
-        "forbehold": "OpenAIs påstand om de 100 løste problemer er ikke uafhængigt verificeret.",
-        "emne": "openai matematik"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-22T05:30:50.003368+00:00"
-      },
-      "historie_dato": "2026-09-21T12:00:00+00:00",
-      "prio": 5,
-      "side": "artikel/c06d2cf00824b1ae.html",
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-          "rubrik": "OpenAI danner uafhængigt råd med ni elite-matematikere",
-          "resume_da": "Panelet får adgang til OpenAIs forskning før offentliggørelse og kan kommentere resultater offentligt uden økonomisk binding.",
-          "dato": "2026-09-22T20:17:17-04:00",
-          "foerst_set": "2026-09-23T05:04:58.158407+00:00"
-        }
-      ]
-    },
-    {
       "titel": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
       "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
       "resume": "A simple ClickFix attack is only one way to completely hijack the new agent.",
@@ -16475,8 +16483,8 @@
         {
           "kilde": "Simon Willison AI",
           "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-          "rubrik": "GPT-6 Luna halverer prisen over for GPT-5.6",
-          "resume_da": "Anthropic og OpenAI lancerede nye modeller samme dag. Mellemklassepriserne faldt kraftigt, mens Claude Opus 5.5 brød sammen i pelikan-testen.",
+          "rubrik": "GPT-6 Sol og Luna halverer OpenAI-priser",
+          "resume_da": "Anthropic skar 20 procent af Opus 5.5, men OpenAI svarede en time senere med to modeller, hvoraf den billigste koster $0,10 per million tokens.",
           "dato": "2026-09-22T23:46:41+00:00",
           "foerst_set": "2026-09-23T05:04:58.158407+00:00"
         }
@@ -17739,78 +17747,6 @@
       "side": "artikel/3ecdce7d836ad40d.html"
     },
     {
-      "titel": "YouTube Music gets more conversational with new AI features",
-      "link": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
-      "resume": "Built directly into the YouTube Music app, Ask Music lets users describe what they want to hear in everyday language rather than searching for individual songs or artists.",
-      "dato": "2026-09-23T15:19:30+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "rubrik": "YouTube Music svarer i samtale om musik",
-      "resume_da": "To AI-værktøjer lader dig bede om musik i fritekst og giver en ugentlig talt podcastanbefaling med begrundelse.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Ask Music forstår hverdagsønsker",
-          "tekst": "YouTube lancerer værktøjet Ask Music i YouTube Music-appen. Her skriver man et ønske i almindeligt sprog frem for at søge efter en bestemt sang eller artist. Man kan bede om en blandingsliste bygget på de numre, der inspirerede et givent spor, eller spørge, hvem der spillede bas på en sang.\n\nSøgningen dækker kataloget på **mere end 300 millioner sange**, herunder officielle udgivelser, remixes, liveoptagelser, covers og DJ-sæt. Ifølge YouTube kan man også bruge værktøjet til at lave egne køer, udforske en artists motivationer og grave dybere i musikhistorien."
-        },
-        {
-          "overskrift": "Ugentlig taleguide til podcastkaos",
-          "tekst": "YouTube Music indfører også Your Podcast Lineup, en AI-genereret guide til podcasts. Problemet, den tager fat på, er kendt: Der findes flere podcasts, end de fleste har tid til at lytte til, og nye udsendelser forsvinder i mængden.\n\nGuiden dukker op på podcastsiden i appen. Hver uge leverer den **en kort talepreview** over anbefalede programmer og forklarer, hvorfor de kan falde i smag hos den enkelte lytter. Herefter kan man gå direkte videre til foreslåede episoder."
-        },
-        {
-          "overskrift": "Spotify genererer episoder i stedet",
-          "tekst": "Spotify har taget en anden vej med sin personlige podcastfunktion, hvor AI udgenererer hele episoder ud fra lytterens interesser og prompts. YouTubes guide vælger i stedet eksisterende programmer til og begrunder udvalget.\n\nOpdateringerne indgår i YouTubes bredere satsning på AI i sine tjenester. Sidste år prøvede YouTube Music AI-værter til musik, der fortalte historier, trivia og kommentarer under afspilning.\n\nYouTube oplyser, at begge nye funktioner kommer snart til YouTube Music- og YouTube Premium-abonnenter over hele verden. En præcis dato er ikke angivet."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "300 millioner sange",
-          "label": "YouTube Music-katalog, Ask Music søger heri"
-        }
-      ],
-      "figurer": [],
-      "detaljer": [
-        "Funktionerne blev annonceret ved Made On YouTube-arrangementet.",
-        "Ask Music er bygget direkte ind i YouTube Music-appen.",
-        "Your Podcast Lineup opdateres ugentligt på podcastsiden.",
-        "YouTube Music testede sidste år AI-værter med musikkommentarer."
-      ],
-      "betydning": "YouTube melder ingen dato, så lyttere må indtil videre vente på, at både samtale-søgning og podcastguiden rulles ud.",
-      "pointer": [
-        "Ask Music svarer i hverdagssprog, ikke søgeord.",
-        "Podcastguiden begrunder sine anbefalinger skriftligt og mundtligt.",
-        "Begge funktioner kommer snart worldwide."
-      ],
-      "billedmotiv": "A wide solid query bar carries the red YouTube Music play mark at its left edge as a plain-language music request enters it, while a row of solid equaliser blocks of varying height rises on the right and a small upright podcast card with a solid sound band stands at the far end.",
-      "billedmotiv_instruks": "287e56a1f5dbcd6f7ec1",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "YouTube Music får Ask Music, hvor brugeren beskriver den ønskede musik i dagligsprog i stedet for at søge på numre.",
-        "forbehold": "Ingen oplysning om udrulning, pris eller hvor præcis beskrivelsen skal være.",
-        "emne": "youtube music ask music"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-23T20:26:33.894037+00:00"
-      },
-      "prio": 5,
-      "side": "artikel/ab0b2d96bb33495c.html"
-    },
-    {
       "titel": "YouTube will let you build your own algorithm with AI",
       "link": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
       "resume": "YouTube’s new custom feeds let users describe the videos they want to see in their own words, then use Gemini to build a personalized feed around the request.",
@@ -17887,7 +17823,18 @@
         "kontrolleret": "2026-09-23T20:30:29.347082+00:00"
       },
       "prio": 5,
-      "side": "artikel/0869f53f8a88569c.html"
+      "side": "artikel/0869f53f8a88569c.html",
+      "historie_dato": "2026-09-23T14:30:00+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
+          "rubrik": "YouTube Music svarer i samtale om musik",
+          "resume_da": "To AI-værktøjer lader dig bede om musik i fritekst og giver en ugentlig talt podcastanbefaling med begrundelse.",
+          "dato": "2026-09-23T15:19:30+00:00",
+          "foerst_set": "2026-09-23T19:47:07.099847+00:00"
+        }
+      ]
     },
     {
       "titel": "YouTube is building AI creator tools that do almost everything for them",
@@ -19331,6 +19278,7 @@
       ],
       "billedmotiv": "A solid social feed card with Meta's blue infinity-loop mark at its top corner, and a chunky game controller with a plus-shaped directional pad rising out of the card's play area, small solid game tiles stepping from the controller back into the feed to show a game launched without downloading an app.",
       "billedmotiv_instruks": "2c84acebc26618aeb993",
+      "billede": "data/img/b889033154c8b1ae.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -19354,7 +19302,6 @@
         "kontrolleret": "2026-09-24T20:26:42.892227+00:00"
       },
       "prio": 6,
-      "billede": "data/img/b889033154c8b1ae.webp",
       "side": "artikel/c8ce86916686a255.html"
     },
     {
@@ -19407,6 +19354,7 @@
       ],
       "billedmotiv": "A solid sealed test box with OpenAI's black six-loop Blossom symbol on its lid, its air-gap network cable unplugged and lying outside, while a small USB stick and one escape line slip through a notch in the box wall toward an external network node, showing isolation leaking rather than holding.",
       "billedmotiv_instruks": "65469bc188ca36b1d1a8",
+      "billede": "data/img/db5d5cedce15d2b3.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -19430,7 +19378,6 @@
         "kontrolleret": "2026-09-24T20:33:06.046558+00:00"
       },
       "prio": 6,
-      "billede": "data/img/db5d5cedce15d2b3.webp",
       "side": "artikel/aee6384a44de7db3.html"
     },
     {
@@ -19511,13 +19458,14 @@
         "kontrolleret": "2026-09-24T20:35:10.917656+00:00"
       },
       "prio": 6,
+      "billede": "data/img/cd8fb829a8755e00.webp",
       "side": "artikel/e65dfd0080c22eeb.html"
     },
     {
       "titel": "The vibes are bad for Flock in Washington",
       "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
       "resume": "Flock is in the hot seat in Washington, even if its CEO declined to actually face senators at a hearing about its \"AI Surveillance Network\" on Wednesday. \"There's many players in this industry, but there's one name that really stands out above the rest, and that is Flock,\" Senate Judiciary crime and counterterrorism subcommittee chair […]",
-      "dato": "2026-09-24T10:15:05-04:00",
+      "dato": "2026-09-24T14:15:05+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-09-24T20:05:24.209273+00:00",
@@ -19648,6 +19596,7 @@
       ],
       "billedmotiv": "A wide solid folder stamped with Meta's blue infinity-loop mark, spilling a stack of file cards and a nested directory tree of smaller solid tabs across its front, with one file card lifted clear of the pile, showing a whole filesystem handed out in the open as opaque cut-out shapes.",
       "billedmotiv_instruks": "a680b88db1d2b1df3ad5",
+      "billede": "data/img/d3be6de19c8bd11a.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -19671,7 +19620,6 @@
         "kontrolleret": "2026-09-24T20:44:04.482569+00:00"
       },
       "prio": 5,
-      "billede": "data/img/d3be6de19c8bd11a.webp",
       "side": "artikel/450bb1526b07cd55.html"
     },
     {
@@ -19807,6 +19755,7 @@
       ],
       "billedmotiv": "A solid wardrobe frame with Google Photos' four-colour pinwheel mark on its door, holding three thick garment shapes: a top, a pair of trousers and a necklace disc, with one top swapped onto a neighbouring hanger to show items combined into a new outfit, all opaque cut-out forms.",
       "billedmotiv_instruks": "d64c5cfaf8b24ac282f5",
+      "billede": "data/img/35febfe90f55e275.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -19830,7 +19779,6 @@
         "kontrolleret": "2026-09-24T20:46:19.358658+00:00"
       },
       "prio": 5,
-      "billede": "data/img/35febfe90f55e275.webp",
       "side": "artikel/1ac6e3fa768eb33f.html"
     },
     {
@@ -19914,6 +19862,7 @@
         "kontrolleret": "2026-09-24T20:54:49.736526+00:00"
       },
       "prio": 5,
+      "billede": "data/img/b0ad7a7d2c1a3e05.webp",
       "side": "artikel/84fff22728605782.html"
     },
     {
@@ -20106,7 +20055,242 @@
       },
       "historie_dato": "2026-09-24T14:15:17+00:00",
       "prio": 5,
+      "billede": "data/img/1da6418f06abeef8.webp",
       "side": "artikel/0250cb47c834bb18.html"
+    },
+    {
+      "titel": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+      "link": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+      "resume": "Vendors rolling out AI have an \"incentive to deny as many claims as possible.\"",
+      "dato": "2026-09-25T11:00:28+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "rubrik": "Virtix afviste 53 procent af Medicare-anmodninger",
+      "resume_da": "AI-systemet WISeR forsinker behandlinger i uger og måneder, mens en føderal kontrol kalder programmets lovlighed i tvivl.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 5,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ars Technica rapporterer, at Trump-administrationen bruger AI til at afvise sygehusbehandling for ældre.",
+        "forbehold": "Uddraget citerer kun kritikere og beskriver hverken omfang eller data.",
+        "emne": "us sundhedsai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Trump-administrationen indførte AI-godkendelse af Medicare",
+          "tekst": "I januar rullede Trump-administrationen programmet WISeR ud i seks stater: New Jersey, Ohio, Oklahoma, Texas, Arizona og Washington. Programmet bruger AI til at godkende eller afvise lægers anmodninger om forudgående tilladelse til en behandling.\n\nMedicare er et sundhedssystem for ældre amerikanere, der normalt ikke kræver forudgående godkendelse før en behandling. WISeR ændrer det for cirka tolv ydelser, blandt andet nervesimulation, epiduralsteroidinjektioner, nakkeoperationer, sårpleje og behandling for inkontinens og impotens. Programmet er planlagt til at køre frem til slutningen af 2031."
+        },
+        {
+          "overskrift": "Beslutninger tog uger i stedet for 72 timer",
+          "tekst": "Virtix, en af de virksomheder bag godkendelsesprocessen, havde pr. 30. marts gennemgået 6.096 anmodninger. 2.863 blev godkendt, mens 3.233 blev afvist – altså **53 procent**. Programmet lover beslutninger inden for 72 timer, men mange tog uger. Mindst én anmodning stod ubehandlet efter 83 dage.\n\nLeverandøren Innovaccer var så uforberedt, at den bad om at udskyde lanceringen og i stedet satte systemet til automatisk at godkende alt. Virtix blev i juni pålagt en korrektionsplan af Medicare-centret CMS for brud på fristen og oplyser nu, at gennemsnitstiden er faldet til 1,18 dage."
+        },
+        {
+          "overskrift": "Lovlighed under tvivl mens programmet udvides",
+          "tekst": "Den føderale kontrolinstans GAO fastslog i maj, at Trump-administrationen ikke fulgte korrekte procedurer, da programmet blev oprettet, og satte dets lovlighed i tvivl. Medlemmer af Kongressen forsøgte at få dokumenter frem, men republikanerne blokerede et afstemningsforsøg fra demokraten Suzan DelBene.\n\nVirtix pointerer, at programmet bruger regler fastsat af CMS – ikke af Virtix – til at vurdere behandlinger. Alligevel planlægger administrationen at udvide programmet de kommende år."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "53 procent",
+          "label": "Virtix' afvisningsgrad blandt 6.096 gennemgåede anmodninger pr. 30. marts"
+        },
+        {
+          "tal": "83 dage",
+          "label": "Længst dokumenterede ventetid mod programmets mål om 72 timer"
+        },
+        {
+          "tal": "6 stater",
+          "label": "Antal stater med WISeR-pilot, planlagt til slutningen af 2031"
+        }
+      ],
+      "detaljer": [
+        "Zyter kæmpede i måneder med datafejl mellem to grene af Medicare.",
+        "En sundhedsudbyder kaldte programmet en skændsel for menneskeheden.",
+        "Mange sundhedsudbydere fik intet svar fra leverandører ved henvendelser.",
+        "Virtix opfordrer til genindsendelse af anmodninger og lægedialog ved afslag."
+      ],
+      "betydning": "Sundhedsudbydere i seks stater oplever forsinket behandling og uforståelige afslag, mens myndighederne undersøger programmets lovlighed.",
+      "pointer": [
+        "Virtix afviste flest anmodninger og blev pålagt korrektionsplan.",
+        "GAO kritiserede oprettelsesproceduren, men programmet udvides.",
+        "WISeR kræver godkendelse af tolv ydelser i seks stater."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-25T14:51:08.180963+00:00"
+      },
+      "billedmotiv": "Three thick request slabs stand in a row: two carry a bold red rejection cross and only one an approval mark, showing that most Medicare prior-authorization requests handled by the WISeR AI program are denied. A solid calendar block beside them shows weeks of waiting far beyond the promised 72-hour decision.",
+      "billedmotiv_instruks": "c5768cd08fbee54b8314",
+      "billede": "data/img/b9be36e351682a21.webp",
+      "side": "artikel/5bd744c2f5befd25.html"
+    },
+    {
+      "titel": "The Pentagon wants $30 million to build an AI-powered lie detector",
+      "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "resume": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called Polygraph+ or Polygraph Next, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing,” which…",
+      "dato": "2026-09-25T09:16:25+00:00",
+      "kilde": "MIT Tech Review AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
+      "resume_da": "Forsvarsministeriet vil modernisere løgnedetektion med AI-algoritmer og kontaktløse sensorer, mens forskere advarer om, at der stadig ikke findes et pålideligt tegn på løgn.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Forsvarsbudgettet vil bruge 30,3 mio. dollar over fem år på AI-drevet løgnedetektor Polygraph+ med standoff sensing.",
+        "forbehold": "Programmet er en budgetanmodning, ikke et færdigt værktøj.",
+        "emne": "pentagon polygraph"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Polygraph+ kombinerer AI og kontaktløse sensorer",
+          "tekst": "Pentagon har bedt Kongressen om 30,3 millioner dollars over fem år til et program kaldet Polygraph+ eller Polygraph Next, der skal modernisere føderal løgndetektion.\n\nProgrammet bygger på AI-algoritmer til at bedømme svar og på teknikken standoff sensing — fysiologiske målinger uden at fastgøre udstyr på personen.\n\nDefense Counterintelligence and Security Agency (DCSA) styrer det og vil bruge det til medarbejderscreening og til at opdage interne sikkerhedstrusler. Budgetforslaget er endnu ikke godkendt af Kongressen."
+        },
+        {
+          "overskrift": "Pentagon jagter lækkere med gammel teknologi",
+          "tekst": "Under forsvarsminister Pete Hegseth bruger Pentagon i stigende grad polygraf-test for at finde kilder til lækkede oplysninger. I september rapporterede New York Times, at omkring 50 officerer i Joint Staff havde været igennem testen efter nyheder om, at USA's våbenlagre svinder i krigen med Iran.\n\nMen polygrafen er stort set uændret siden 1920'erne: blodtryk, puls, vejrtrækning og sved måles og sammenlignes mellem basisspørgsmål og målspørgsmål.\n\nI 1983 kaldte Kongressens Office of Technology Assessment evidensen for screening \"very limited\". I 2003 kaldte US National Research Council evidensen \"weak at best\". Resultaterne bruges sjældent som bevis i retten."
+        },
+        {
+          "overskrift": "AI kan ikke finde Pinocchios næse",
+          "tekst": "Sophie van der Zee ved Erasmus University i Rotterdam siger, at løgn berører tre ting: fysiologisk stress, kognitiv belastning og bevidste bestræbelser på at skjule løgnen. Nuværende polygraffer dækker kun den første.\n\n\"If you know how it works, you can beat it,\" siger hun. Hun tilføjer: \"There is still no Pinocchio's nose.\"\n\nJuristen Kyri Kotsoglou fra Northumbria University kalder kombinationen af AI og polygraf \"the worst of both worlds\". Gennem årtier har teknologier fra termiske kameraer til hjernescanninger ikke givet pålidelige resultater uden for laboratoriet."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://wp.technologyreview.com/wp-content/uploads/2026/09/polygraph2a.jpg",
+          "tekst": "collage of polygraph test images",
+          "kilde": "MIT Tech Review AI"
+        }
+      ],
+      "noegletal": [],
+      "detaljer": [
+        "DIU valgte i 2023 Presage Technologies og Altec Research til prototyper.",
+        "Forskellige undersøgere får vidt forskellige resultater.",
+        "Personer fra minoritetsgrupper er mere tilbøjelige til at blive bedømt som bedrageriske."
+      ],
+      "betydning": "Et upræcist screeningsystem blandt forsvarsministeriets 2,8 millioner ansatte kan ende med titusinder af falske anklager.",
+      "pointer": [
+        "Pentagon beder om 30,3 millioner dollars over fem år",
+        "Polygrafen er uændret siden 1920'erne",
+        "Eksperter: der findes stadig ingen Pinocchios næse"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-25T14:34:03.493185+00:00"
+      },
+      "billedmotiv": "A solid AI chip block sits on a polygraph console, its contactless sensor bar facing an empty seat panel with no wires attached. Beside it, a marked answer card carries a bold mismatch cross showing automated deception flagging, while a small stack of coin blocks represents the 30.3 million dollars requested for the Pentagon's Polygraph+ program.",
+      "billedmotiv_instruks": "0cbb6a4309f39fc020e5",
+      "billede": "data/img/327d0f9d29cbc2ce.webp",
+      "side": "artikel/b50925bd3c97333e.html"
+    },
+    {
+      "titel": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
+      "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+      "resume": "A few years back, I was at a beachside Easter egg hunt, watching my kids dash through sand dunes searching for sweet treats. My phone buzzed in my pocket; I ignored it. A moment later, it buzzed again. I pulled it out, glanced down, and saw a \"motion detected\" notification from my security camera. \"Just […]",
+      "dato": "2026-09-25T09:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
+      "rubrik": "Apple tager op til tre gange for kamera-AI",
+      "resume_da": "HomeKit Secure Video sender nu sætninger som \"en hund sad på gulvet\" i stedet for \"bevægelse registreret\".",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "The Verge sammenligner Apples AI-kameravarsler med Amazons og Googles i praksis.",
+        "forbehold": "Uddraget giver ikke testens resultater eller konklusion.",
+        "emne": "apple home"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "iOS 27 sender sætninger fra kameraet",
+          "tekst": "Apple Intelligence for Home kom med iOS 27 den 14. september. Et kompatibelt kamera gennem HomeKit Secure Video sender nu tekstbeskrivelser som »en hund sad på gulvet« direkte til Apple Home-appen.\n\nFunktionen tilføjer også søgning på almindeligt sprog, fremhæver bemærkelsesværdige hændelser og klipper relevante videosegmenter sammen. En reducer-notifikationsfunktion samler relaterede beskeder til én advarsel, der opdateres. Reduce Notifications er tændt som standard, Summarize Videos er slået fra.\n\nKravene er iCloud Plus, et kompatibelt kamera, en Apple Home Hub (HomePod/tvOS 27) og en AI-klar iPhone med iOS 27."
+        },
+        {
+          "overskrift": "Apple: $60 for fem kameraer, Ring og Nest: $20",
+          "tekst": "Apple tager $10 om måneden for ét kamera, $30 for to og $60 for op til fem. Intet abonnement understøtter mere end fem kameraer.\n\nFor ét kamera er Apples $10 faktisk billigere end konkurrenternes $20. Men ved fem kameraer er Apples $60 tre gange så meget.\n\nGoogle Home med Gemini koster $20 om måneden for ubegrænsede kameraer. Ring tager også $20 for ubegrænsede kameraer plus $3 ekstra pr. kamera for døgnoptagelse på kablede modeller."
+        },
+        {
+          "overskrift": "Nogle AI-beskrivelser giver detaljer, andre intet",
+          "tekst": "Testen brugte Ring Wired Doorbell Pro ($249,99), Google Nest Doorbell 2K ($199,99) og Aqara Doorbell Camera G400 ($99). AI-funktionerne på alle tre platforme er en betydelig forbedring baseret på deres almindelige smarte varsler.\n\nEn beskrivelse som »et FedEx-bud går over græsplænen« kan være forskellen på at rejse sig og fortsætte arbejdet. Men kvalitet og nøjagtighed svinger voldsomt, også inden for én udbyder.\n\nNogle gange får man nyttige detaljer, andre gange et par ord, der fortæller næsten ingenting."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "$10–$60 pr. måned",
+          "label": "Apple Intelligence for Home: 1, 2 og op til 5 kameraer"
+        },
+        {
+          "tal": "$20 pr. måned",
+          "label": "Google Home og Ring: ubegrænsede kameraer"
+        },
+        {
+          "tal": "$249,99 / $199,99 / $99",
+          "label": "Pris pr. testkamera: Ring, Google Nest, Aqara"
+        }
+      ],
+      "detaljer": [
+        "iOS 27 landede officielt den 14. september",
+        "Apple Intelligence for Home lanceredes i beta i sommeren",
+        "Reduce Notifications tændt som standard, Summarize Videos slået fra",
+        "Testfokuset var videodørklokker fra Ring, Google og Aqara"
+      ],
+      "betydning": "Tekstbeskrivelser gør kameraer mindre irriterende: en konkret sætning viser hurtigere, om handling kræves, end et generisk bevægelsesvarsel.",
+      "pointer": [
+        "AI-tekstbeskrivelser erstatter generiske bevægelsesvarsler",
+        "Apple: $60 for fem kameraer, Ring og Nest: $20",
+        "Kvaliteten svinger også inden for samme udbyder"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-25T14:44:19.413473+00:00"
+      },
+      "billedmotiv": "An Apple slab bearing the recognisable bitten-apple silhouette anchors a rising stack of three solid price blocks that reaches three times the height of one rival price slab beside it. A compact doorbell-camera form at the side signals the Apple Home feature that sends text descriptions of what the camera sees.",
+      "billedmotiv_instruks": "1574c466f36506738450",
+      "side": "artikel/abe9d485ffa0c0aa.html"
     }
   ]
 }

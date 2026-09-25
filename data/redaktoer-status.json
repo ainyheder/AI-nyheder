@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-09-25T05:17:24.354778+00:00",
+  "opdateret": "2026-09-25T14:07:11.317324+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "https://huggingface.co/blog/nvidia/nemotron-diarization",
+    "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
     "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
   ],
-  "input_fingerprint": "88dd0e9f6089ed15",
+  "input_fingerprint": "813831a5975de24d",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "modelkald": 6,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -26,15 +26,19 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -60,15 +64,11 @@
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "grundlag": "kildetekst"
     },
     {
@@ -76,22 +76,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain/",
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
     "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
+    "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/"
   ],
-  "afventer_artikler": 130
+  "afventer_artikler": 132
 }

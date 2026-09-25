@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-25T05:17:24.354778+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-09-25T14:07:11.317324+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -226,7 +226,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "GPT-6 Luna halverer prisen over for GPT-5.6",
+     "rubrik": "GPT-6 Sol og Luna halverer OpenAI-priser",
      "dato": "",
      "foerst_set": "2026-09-23T05:04:58",
      "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
@@ -296,7 +296,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
+   "i_listen": 33,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -307,6 +307,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal"
+    },
+    {
+     "rubrik": "YouTube Music svarer i samtale om musik",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+     "link": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
+     "side": "",
+     "hvor": "under",
+     "under": "YouTube lader dig bygge din egen feed"
     },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
@@ -408,15 +417,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "YouTube Music svarer i samtale om musik",
-     "dato": "2026-09-23T15:19:30",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
-     "side": "artikel/ab0b2d96bb33495c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "YouTube lader dig bygge din egen feed",
      "dato": "2026-09-23T14:30:00",
      "foerst_set": "2026-09-23T19:47:07",
@@ -451,12 +451,21 @@ window.KILDER_STATUS = {
      "side": "artikel/8c72904f696c9986.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Ema henter 77 mio. dollars til AI-ansatte",
+     "dato": "2026-09-23T12:00:00",
+     "foerst_set": "2026-09-23T13:49:23",
+     "link": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/",
+     "side": "artikel/ca7a2de7d13c02aa.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     8
     ],
     [
      "Ars Technica AI",
@@ -482,8 +491,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
-   "som_ekstra": 13,
+   "i_listen": 21,
+   "som_ekstra": 12,
    "seneste": [
     {
      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
@@ -529,15 +538,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude opdager nyt enzymsystem med CRISPR-træk"
-    },
-    {
-     "rubrik": "OpenAI danner uafhængigt råd med ni elite-matematikere",
-     "dato": "",
-     "foerst_set": "2026-09-23T05:04:58",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI danner matematikgruppe efter AI-løsninger"
     },
     {
      "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -594,11 +594,20 @@ window.KILDER_STATUS = {
      "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
-     "rubrik": "Meta Muse giver hele sit filsystem væk",
-     "dato": "2026-09-24T13:14:12",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-     "side": "artikel/450bb1526b07cd55.html",
+     "rubrik": "Tre forskere brød ind i OpenAI med Claude",
+     "dato": "",
+     "foerst_set": "2026-09-18T16:41:48",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+     "side": "",
+     "hvor": "under",
+     "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+    },
+    {
+     "rubrik": "Apple tager op til tre gange for kamera-AI",
+     "dato": "2026-09-25T09:00:00",
+     "foerst_set": "2026-09-25T14:07:11",
+     "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+     "side": "artikel/abe9d485ffa0c0aa.html",
      "hvor": "forside",
      "under": ""
     },
@@ -622,10 +631,19 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Flock-chefer kan stævnes til senatshøring",
-     "dato": "2026-09-24T10:15:05",
+     "dato": "2026-09-24T14:15:05",
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
      "side": "artikel/4164d92d4b94cfb3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta Muse giver hele sit filsystem væk",
+     "dato": "2026-09-24T13:14:12",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+     "side": "artikel/450bb1526b07cd55.html",
      "hvor": "forside",
      "under": ""
     },
@@ -691,21 +709,12 @@ window.KILDER_STATUS = {
      "side": "artikel/9767b09c228ae3fb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Rabbits OS3 kører uden R1-hardware",
-     "dato": "2026-09-22T20:52:40",
-     "foerst_set": "2026-09-23T05:04:58",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
-     "side": "artikel/d0716c4b578fd51d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     8
     ],
     [
      "Ars Technica AI",
@@ -731,7 +740,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -760,6 +769,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+    },
+    {
+     "rubrik": "Virtix afviste 53 procent af Medicare-anmodninger",
+     "dato": "2026-09-25T11:00:28",
+     "foerst_set": "2026-09-25T14:07:11",
+     "link": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+     "side": "artikel/5bd744c2f5befd25.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Google sender første AI-satellit i kredsløb",
@@ -859,15 +877,6 @@ window.KILDER_STATUS = {
      "side": "artikel/3b74cb2107996a6e.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Federal Register fjernede Qwen efter opsigt",
-     "dato": "2026-09-18T17:28:50",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
-     "side": "artikel/82b3e82cb7035fd3.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -895,9 +904,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
+     "dato": "2026-09-25T09:16:25",
+     "foerst_set": "2026-09-25T14:07:11",
+     "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+     "side": "artikel/b50925bd3c97333e.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "OpenAI-agenter brød ind for at bestå",
      "dato": "2026-09-23T09:00:00",
