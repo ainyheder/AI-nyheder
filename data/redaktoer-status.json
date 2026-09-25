@@ -1,31 +1,19 @@
 {
-  "opdateret": "2026-09-24T23:22:48.195820+00:00",
+  "opdateret": "2026-09-25T05:17:24.354778+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
     "https://huggingface.co/blog/nvidia/nemotron-diarization",
-    "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
+    "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
   ],
-  "input_fingerprint": "a3636b1fefeaaebb",
+  "input_fingerprint": "88dd0e9f6089ed15",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 5,
-  "kildehentninger": 7,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -50,7 +38,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -59,12 +47,16 @@
     },
     {
       "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
       "grundlag": "kildetekst"
     },
     {
@@ -76,19 +68,23 @@
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "link": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain/",
       "grundlag": "kildetekst"
     }
   ],
@@ -97,5 +93,5 @@
     "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
     "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/"
   ],
-  "afventer_artikler": 137
+  "afventer_artikler": 130
 }
