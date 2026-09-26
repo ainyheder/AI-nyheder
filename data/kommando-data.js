@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-26T05:48:23.091602+00:00",
+ "genereret": "2026-09-26T14:27:47.336315+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,26 +195,26 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-26T05:22:21.927947+00:00",
-  "antal": 87,
-  "med_billede": 65,
-  "paa_dansk": 87,
+  "opdateret": "2026-09-26T13:21:05.914288+00:00",
+  "antal": 89,
+  "med_billede": 67,
+  "paa_dansk": 89,
   "kategorier": {
-   "Lanceringer": 16,
+   "Lanceringer": 17,
    "Politik \u0026 jura": 12,
    "Samfund \u0026 etik": 22,
    "Hverdags-AI": 17,
-   "Penge \u0026 marked": 16,
+   "Penge \u0026 marked": 17,
    "Forskning": 4
   },
   "kilder": {
    "Google Gemini": 2,
-   "Google DeepMind": 1,
-   "The Verge AI": 21,
    "Ars Technica AI": 14,
-   "TechCrunch AI": 33,
-   "Anthropic News": 4,
+   "TechCrunch AI": 34,
+   "The Verge AI": 21,
+   "Google DeepMind": 2,
    "Simon Willison AI": 2,
+   "Anthropic News": 4,
    "MIT Tech Review AI": 5,
    "xAI News": 2,
    "Hugging Face": 2,
@@ -232,7 +232,7 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/83307ffbcf389b7a.webp"
    },
    {
-    "titel": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+    "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
     "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
     "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "side": "artikel/725b5e9b15c1dbeb.html",
@@ -254,7 +254,7 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
-    "titel": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+    "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
     "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
     "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "side": "artikel/725b5e9b15c1dbeb.html",
@@ -282,6 +282,16 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-25T21:10:51+00:00",
     "billede": ""
+   },
+   {
+    "titel": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+    "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
+    "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+    "side": "artikel/4dc5a9b388b90b3e.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-25T23:11:10+00:00",
+    "billede": "data/img/c6ed674ef0f62dbd.webp"
    },
    {
     "titel": "Some Supabase customers are publicly exposing reams of people’s data to the web",
@@ -362,26 +372,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-25T19:13:38+00:00",
     "billede": "data/img/312ec74cb66e3e6e.webp"
-   },
-   {
-    "titel": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
-    "rubrik": "Nscale henter 3,36 milliarder dollar før IPO",
-    "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-    "side": "artikel/38b884af57575000.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T18:33:59+00:00",
-    "billede": "data/img/93c98e7383f98172.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-26T05:22:21.927947+00:00",
+  "opdateret": "2026-09-26T13:21:05.914288+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
-  "kildehentninger": 5,
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 6,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
    "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
@@ -394,15 +394,11 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -414,11 +410,11 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -427,19 +423,31 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel ab39be4845514124: skriveopgave har 966 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel ab39be4845514124: skriveopgave har 961 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
+    "fejl": null
    }
   ],
   "kildegrundlag": [
@@ -448,15 +456,11 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
     "grundlag": "kildetekst"
    },
    {
     "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
     "grundlag": "kildetekst"
    },
    {
@@ -466,7 +470,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-26T05:22:21.603905+00:00",
+  "opdateret": "2026-09-26T13:21:05.563521+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -822,8 +826,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-26T05:22:21.927947+00:00",
-  "artikler_i_alt": 87,
+  "opdateret": "2026-09-26T13:21:05.914288+00:00",
+  "artikler_i_alt": 89,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -911,7 +915,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 2,
-    "som_ekstra": 1,
+    "som_ekstra": 2,
     "seneste": [
      {
       "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
@@ -921,6 +925,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 3.8 TTS styres replik for replik"
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+      "dato": "",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
      },
      {
       "rubrik": "Gemini 3.8 Live giver AI et ansigt",
@@ -1069,7 +1082,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
+    "i_listen": 34,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1136,6 +1149,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
+      "dato": "2026-09-25T23:11:10",
+      "foerst_set": "2026-09-25T23:28:32",
+      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+      "side": "artikel/4dc5a9b388b90b3e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Supabase: 16.000 databaser har eksponeret persondata",
       "dato": "2026-09-25T17:29:46",
       "foerst_set": "2026-09-25T20:06:37",
@@ -1168,15 +1190,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-25T20:06:37",
       "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
       "side": "artikel/042f70b50965514c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic betaler Akamai 11,6 milliarder dollars",
-      "dato": "2026-09-25T19:13:38",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-      "side": "artikel/4b9cd4f252fed7b0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1509,10 +1522,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 1,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 2,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1530,6 +1543,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-23T19:47:07",
       "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
       "side": "artikel/31ef9b5263a38be6.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+      "dato": "2026-09-15T17:05:57",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "side": "artikel/392b6ec46b4e96bc.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1566,12 +1588,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-26T05:48:17.865337+00:00",
+  "opdateret": "2026-09-26T14:27:41.528738+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 41,
-  "sidevisninger_i_alt": 81,
+  "besoeg_i_alt": 38,
+  "sidevisninger_i_alt": 78,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1728,8 +1750,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 41,
-    "visninger": 79
+    "besoeg": 38,
+    "visninger": 76
    },
    {
     "sti": "/artikel/c4259d8daf829e3d.html",
@@ -1755,7 +1777,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 40
+    "besoeg": 37
    },
    {
     "fra": "www.ecosia.org",

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-26T05:22:21.927947+00:00",
- "artikler_i_alt": 87,
+ "opdateret": "2026-09-26T13:21:05.914288+00:00",
+ "artikler_i_alt": 89,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -103,7 +103,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 2,
-   "som_ekstra": 1,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
@@ -113,6 +113,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 TTS styres replik for replik"
+    },
+    {
+     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+     "dato": "",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
@@ -136,7 +145,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -283,7 +292,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -346,6 +355,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-25T23:28:32",
      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
      "side": "artikel/9550a58b2b1b218d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
+     "dato": "2026-09-25T23:11:10",
+     "foerst_set": "2026-09-25T23:28:32",
+     "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+     "side": "artikel/4dc5a9b388b90b3e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -436,15 +454,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
      "side": "artikel/84fff22728605782.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta lancerer kamerafri Ray-Ban Meta Audio-briller",
-     "dato": "2026-09-23T23:39:44",
-     "foerst_set": "2026-09-24T05:16:08",
-     "link": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
-     "side": "artikel/abe26ab67059b729.html",
      "hvor": "forside",
      "under": ""
     }
@@ -933,10 +942,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 1,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -956,12 +965,21 @@ window.KILDER_STATUS = {
      "side": "artikel/31ef9b5263a38be6.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+     "dato": "2026-09-15T17:05:57",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+     "side": "artikel/392b6ec46b4e96bc.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     2
+     3
     ]
    ]
   },

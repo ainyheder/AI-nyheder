@@ -1,39 +1,6 @@
 {
-  "opdateret": "2026-09-26T05:22:21.927947+00:00",
+  "opdateret": "2026-09-26T13:21:05.914288+00:00",
   "kladder": [
-    {
-      "titel": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
-      "resume": "",
-      "dato": "2026-09-23T13:17:01+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "rubrik": "NVIDIA annoncerer Nemotron 3 Diarization til flere talere",
-      "resume_da": "Modellen skal spore, hvem der taler hvornår i realtid; materialet fra Hugging Face nævner hverken pris eller adgang.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "NVIDIA præsenterer Nemotron 3 Diarization til realtidssporing af, hvem taler hvornår, på tværs af flere stemmer.",
-        "forbehold": "Kun titel og resume; kildekontekst, pris og adgang er ikke oplyst.",
-        "emne": "nvidia nemotron"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
     {
       "titel": "Accelerating vision-language models with LFM2.5-VL-DSpark",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
@@ -63,6 +30,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "resume": "",
+      "dato": "2026-09-23T13:17:01+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "rubrik": "NVIDIA annoncerer Nemotron 3 Diarization til flere talere",
+      "resume_da": "Modellen skal spore, hvem der taler hvornår i realtid; materialet fra Hugging Face nævner hverken pris eller adgang.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "NVIDIA præsenterer Nemotron 3 Diarization til realtidssporing af, hvem taler hvornår, på tværs af flere stemmer.",
+        "forbehold": "Kun titel og resume; kildekontekst, pris og adgang er ikke oplyst.",
+        "emne": "nvidia nemotron"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -167,72 +167,6 @@
       ]
     },
     {
-      "titel": "Better prompt caching for GPT-6",
-      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-      "dato": "2026-09-22T21:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
-      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
-        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
-        "emne": "openai gpt-6"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "At Meta Connect, the company’s smart glasses were everywhere",
-      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
-      "resume": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
-      "dato": "2026-09-26T01:08:57+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-26T05:22:21.927947+00:00",
-      "eget_foerst_set": "2026-09-26T05:22:21.927947+00:00",
-      "rubrik": "Metas smartbriller fyldte Meta Connect",
-      "resume_da": "Meta viste sin voksende linje af smartbriller, der skal holde forbrugere forbundet til den digitale verden via Facebook og Instagram-produkter.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta viste en bred linje af smartbriller på Connect, men kildeteksten nævner ingen konkret ny model eller specifikation.",
-        "forbehold": "Artiklen er sparsom; hvilke konkrete nye brillertyper der blev præsenteret, fremgår ikke.",
-        "emne": "meta smartbriller"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Advancing Private AI Compute with secure, server-side memory",
       "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
@@ -266,31 +200,31 @@
       ]
     },
     {
-      "titel": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-      "resume": "Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.",
-      "dato": "2026-09-25T23:11:10+00:00",
+      "titel": "At Meta Connect, the company’s smart glasses were everywhere",
+      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "resume": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
+      "dato": "2026-09-26T01:08:57+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "rubrik": "Crusoe dropper Boom Supersonics turbiner fra datacenterplan",
-      "resume_da": "Boom Supersonics direktør Blake Scholl siger, at stationære kraftværker for 1,25 mia. dollars ikke længere står på Crusoes plan.",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "eget_foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "rubrik": "Metas smartbriller fyldte Meta Connect",
+      "resume_da": "Meta viste sin voksende linje af smartbriller, der skal holde forbrugere forbundet til den digitale verden via Facebook og Instagram-produkter.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "forretning",
+        "type": "lancering",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Crusoe dropper plan om 1,25 mia. dollars Boom-turbiner til AI-datacentre; CEO bekræfter, at de ikke er i nærtidsplanerne.",
-        "forbehold": "Kun kort CEO-udsagn; årsag og konsekvens for AI-strømforsyning uddybes ikke.",
-        "emne": "crusoe / boom supersonic"
+        "begrundelse": "Meta viste en bred linje af smartbriller på Connect, men kildeteksten nævner ingen konkret ny model eller specifikation.",
+        "forbehold": "Artiklen er sparsom; hvilke konkrete nye brillertyper der blev præsenteret, fremgår ikke.",
+        "emne": "meta smartbriller"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -332,6 +266,39 @@
       ]
     },
     {
+      "titel": "Better prompt caching for GPT-6",
+      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+      "dato": "2026-09-22T21:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
+      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
+        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
+        "emne": "openai gpt-6"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "ChatGPT Ads expands to Southeast Asia and Taiwan",
       "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
       "resume": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
@@ -360,72 +327,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "resume": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-      "dato": "2026-09-23T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "rubrik": "OpenAI og Grab uddanner 30.000 partnere i AI",
-      "resume_da": "Programmet GO Forward skal udbrede praktiske AI-færdigheder i hele Sydøstasien.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI og Grab lancerer GO Forward with AI, der skal give 30.000 partnere praktiske AI-færdigheder i Sydøstasien.",
-        "forbehold": "Indhold, budget og tidsplan for programmet er ikke nævnt.",
-        "emne": "grab"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Transformers now runs llama.cpp quants",
-      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
-      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
-        "forbehold": "",
-        "emne": "hugging face transformers"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -464,72 +365,6 @@
       ]
     },
     {
-      "titel": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
-      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-      "resume": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s…",
-      "dato": "2026-09-25T18:22:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "rubrik": "Meta Muse stjæler spotlight fra Opus 5.5, GPT-6",
-      "resume_da": "Anthropic rullede Opus 5.5 ud, og 90 minutter senere fulgte OpenAI med opdateringer til GPT-6.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcast-episode om Metas Muse i samme uge som Anthropic Opus 5.5 og OpenAI GPT-6-opdateringer.",
-        "forbehold": "Opus 5.5 og GPT-6-opdateringerne nævnes kun i forbifarten uden detaljer eller kilder.",
-        "emne": "meta muse / podcast"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Priorities and principles for effective third party assessments",
-      "link": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "resume": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "OpenAI fastsætter principper for ekstern AI-sikkerhedstest",
-      "resume_da": "Retningslinjerne beskriver, hvordan uafhængige tredjeparter skal vurdere frontier-modeller og selskabets sikkerhedsforanstaltninger grundigt, sikkert og uafhængigt.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI fastsætter principper for uafhængige tredjepartsvurderinger af frontier-modeller og sikkerhedsforanstaltninger.",
-        "forbehold": "Retningslinjer er producentens eget udkast, ikke en bindende standard.",
-        "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Muse sure looks a lot like OpenClaw",
       "link": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
       "resume": "We seem to be entering into an AI agent renaissance. Meta's new consumer-facing AI agent, Muse, topped the App Store charts soon after its release and has 600,000 daily active users in the US, by an Apptopia estimate. And AI agent platform Instinct, whose eponymous creator is fundraising at a $2.5 billion valuation, has been […]",
@@ -555,6 +390,39 @@
         "begrundelse": "Artiklen mener Muse ligner OpenClaw og citerer 600.000 daglige brugere samt agentplatformen Instincts kapitalrunding.",
         "forbehold": "Brugertallet er et Apptopia-estimat, ikke en oplyst måling.",
         "emne": "meta muse / openclaw"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
+      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+      "resume": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s…",
+      "dato": "2026-09-25T18:22:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "rubrik": "Meta Muse stjæler spotlight fra Opus 5.5, GPT-6",
+      "resume_da": "Anthropic rullede Opus 5.5 ud, og 90 minutter senere fulgte OpenAI med opdateringer til GPT-6.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcast-episode om Metas Muse i samme uge som Anthropic Opus 5.5 og OpenAI GPT-6-opdateringer.",
+        "forbehold": "Opus 5.5 og GPT-6-opdateringerne nævnes kun i forbifarten uden detaljer eller kilder.",
+        "emne": "meta muse / podcast"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -629,34 +497,67 @@
       ]
     },
     {
-      "titel": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-      "resume": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
-      "dato": "2026-09-25T17:57:37+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "rubrik": "Microsoft fjerner Copilot+ PC-mærket fra nye laptops",
-      "resume_da": "Ars Technica skriver, at de nye Surface-bærbare slet ikke bruger betegnelsen.",
+      "titel": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "resume": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+      "dato": "2026-09-23T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "rubrik": "OpenAI og Grab uddanner 30.000 partnere i AI",
+      "resume_da": "Programmet GO Forward skal udbrede praktiske AI-færdigheder i hele Sydøstasien.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 4,
         "dansk": 0,
         "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Microsofts nye Surface-bærbare dropper 'Copilot+ PC'-mærket helt.",
-        "forbehold": "",
-        "emne": "microsoft surface"
+        "begrundelse": "OpenAI og Grab lancerer GO Forward with AI, der skal give 30.000 partnere praktiske AI-færdigheder i Sydøstasien.",
+        "forbehold": "Indhold, budget og tidsplan for programmet er ikke nævnt.",
+        "emne": "grab"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Transformers now runs llama.cpp quants",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
+      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
+        "forbehold": "",
+        "emne": "hugging face transformers"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -723,6 +624,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Microsoft stops insisting you need a \"Copilot+ PC\"",
+      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
+      "resume": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
+      "dato": "2026-09-25T17:57:37+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "rubrik": "Microsoft fjerner Copilot+ PC-mærket fra nye laptops",
+      "resume_da": "Ars Technica skriver, at de nye Surface-bærbare slet ikke bruger betegnelsen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsofts nye Surface-bærbare dropper 'Copilot+ PC'-mærket helt.",
+        "forbehold": "",
+        "emne": "microsoft surface"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Priorities and principles for effective third party assessments",
+      "link": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "resume": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "OpenAI fastsætter principper for ekstern AI-sikkerhedstest",
+      "resume_da": "Retningslinjerne beskriver, hvordan uafhængige tredjeparter skal vurdere frontier-modeller og selskabets sikkerhedsforanstaltninger grundigt, sikkert og uafhængigt.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI fastsætter principper for uafhængige tredjepartsvurderinger af frontier-modeller og sikkerhedsforanstaltninger.",
+        "forbehold": "Retningslinjer er producentens eget udkast, ikke en bindende standard.",
+        "emne": "openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -893,39 +860,6 @@
       ]
     },
     {
-      "titel": "Meta opens early access program for new Muse features",
-      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
-      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
-      "dato": "2026-09-25T20:34:53+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
-      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
-        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
-        "emne": "meta muse"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
       "link": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
       "resume": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
@@ -951,6 +885,39 @@
         "begrundelse": "Meta lancerer AI-gadgeten Muse Charm i hængende form, positioneret som taskesmykke og modeaccessoire.",
         "forbehold": "Ingen oplysninger om funktion, pris eller tilgængelighed i materialet.",
         "emne": "meta muse charm"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta opens early access program for new Muse features",
+      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
+      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
+      "dato": "2026-09-25T20:34:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
+      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
+        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
+        "emne": "meta muse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -1124,39 +1091,6 @@
       ]
     },
     {
-      "titel": "Parallel cut research time and cost in half with GPT‑6 Astra",
-      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "resume": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-      "dato": "2026-09-22T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "rubrik": "Parallel halverer forskningstid og omkostninger med GPT-6 Astra",
-      "resume_da": "Opgaven drejede sig om arbejdsmarkedsdata, og sammenligningen gjaldt tidligere modeller, skriver OpenAI Blog.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase: Parallel halverede tid og omkostninger ved brug af GPT‑6 Astra til research.",
-        "forbehold": "Producentens egne kundetal om halveret tid og omkostninger, ikke uafhængigt afprøvet.",
-        "emne": "openai gpt-6 astra"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Anthropic says its biology lab has already found something big",
       "link": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
       "resume": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
@@ -1182,39 +1116,6 @@
         "begrundelse": "Anthropic hævder et stort fund i sit biologilaboratorium, men resultatet beskrives ikke, og Claude er ikke sat fri i labet.",
         "forbehold": "Fundet er ikke nærmere dokumenteret eller detaljeret i materialet.",
         "emne": "anthropic biologilaboratorium"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-      "link": "https://openai.com/index/airbnb-gpt-6-astra",
-      "resume": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
-      "dato": "2026-09-23T01:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "rubrik": "Airbnb udvider adgangen til GPT-6 Astra og OpenAI-modeller",
-      "resume_da": "Ingeniørteams på Airbnb bruger modellerne til at finde fejl, designe systemer og sende kode hurtigere.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Airbnb udvider adgangen til GPT-6 Astra og OpenAI-modeller for ingeniørteams til fejlfinding og kode.",
-        "forbehold": "Kundecase fra OpenAI, ikke en ny model.",
-        "emne": "airbnb og openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -1251,6 +1152,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "link": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "resume": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+      "dato": "2026-09-22T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "Parallel halverer forskningstid og omkostninger med GPT-6 Astra",
+      "resume_da": "Opgaven drejede sig om arbejdsmarkedsdata, og sammenligningen gjaldt tidligere modeller, skriver OpenAI Blog.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: Parallel halverede tid og omkostninger ved brug af GPT‑6 Astra til research.",
+        "forbehold": "Producentens egne kundetal om halveret tid og omkostninger, ikke uafhængigt afprøvet.",
+        "emne": "openai gpt-6 astra"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+      "link": "https://openai.com/index/airbnb-gpt-6-astra",
+      "resume": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+      "dato": "2026-09-23T01:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "rubrik": "Airbnb udvider adgangen til GPT-6 Astra og OpenAI-modeller",
+      "resume_da": "Ingeniørteams på Airbnb bruger modellerne til at finde fejl, designe systemer og sende kode hurtigere.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Airbnb udvider adgangen til GPT-6 Astra og OpenAI-modeller for ingeniørteams til fejlfinding og kode.",
+        "forbehold": "Kundecase fra OpenAI, ikke en ny model.",
+        "emne": "airbnb og openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1751,39 +1718,6 @@
       ]
     },
     {
-      "titel": "Quoting voxium",
-      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
-      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
-      "dato": "2026-09-20T21:06:43+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
-      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
-      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
-        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
-        "emne": "claude code i udviklerteam"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Introducing Astra for Law",
       "link": "https://openai.com/index/astra-for-law",
       "resume": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
@@ -1812,6 +1746,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting voxium",
+      "link": "https://simonwillison.net/2026/Sep/20/voxium/",
+      "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
+      "dato": "2026-09-20T21:06:43+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "eget_foerst_set": "2026-09-20T21:47:01.576508+00:00",
+      "rubrik": "Ansat: hele kodebasen skrives af Claude Code",
+      "resume_da": "Indlægget er citeret på Simon Willisons blog og beskriver et team, hvor alt fra specifikationer til tests laves af Claude Code.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citeret forumindlæg fortæller, at et team lader Claude Code skrive specs, kode og tests – et anonymt vidnesbyrd uden yderligere oplysninger.",
+        "forbehold": "Anonymt forumindlæg, hvis påstande ikke kan efterprøves.",
+        "emne": "claude code i udviklerteam"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2381,39 +2348,6 @@
       ]
     },
     {
-      "titel": "Note on 18th September 2026",
-      "link": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
-      "resume": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Skeptical geneticist: \"pfft, it's just frog DNA. And they deliberately let them eat people for the marketing.\" Tags: ai , generative-ai , llms",
-      "dato": "2026-09-18T19:21:32+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
-      "rubrik": "Simon Willison sammenligner LLM-bølgen med Jurassic Park",
-      "resume_da": "I et kort notat skriver han, at en computerforsker, der afviser LLM'er som uinteressante lige nu, svarer til en genforsker i den nyåbnede Jurassic Park.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kort personligt notat med en analogi om LLM'ers betydning; ingen ny begivenhed eller nye oplysninger.",
-        "forbehold": "",
-        "emne": "simon willison, llm-debat"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Memory in Grok Build",
       "link": "https://x.ai/news/grok-build-memory",
       "resume": "",
@@ -2442,6 +2376,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Note on 18th September 2026",
+      "link": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
+      "resume": "Being a computer scientist who refuses to find anything about LLMs interesting right now is a bit like being a geneticist who refuses to find anything interesting about the recently opened Jurassic Park. Skeptical geneticist: \"pfft, it's just frog DNA. And they deliberately let them eat people for the marketing.\" Tags: ai , generative-ai , llms",
+      "dato": "2026-09-18T19:21:32+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "eget_foerst_set": "2026-09-18T19:56:02.404620+00:00",
+      "rubrik": "Simon Willison sammenligner LLM-bølgen med Jurassic Park",
+      "resume_da": "I et kort notat skriver han, at en computerforsker, der afviser LLM'er som uinteressante lige nu, svarer til en genforsker i den nyåbnede Jurassic Park.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 0,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kort personligt notat med en analogi om LLM'ers betydning; ingen ny begivenhed eller nye oplysninger.",
+        "forbehold": "",
+        "emne": "simon willison, llm-debat"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2544,6 +2511,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+      "link": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "resume": "",
+      "dato": "2026-09-03T15:02:08+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "eget_foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "rubrik": "Google DeepMind lancerer WeatherNext 3 til vejrprognoser",
+      "resume_da": "Google DeepMind kalder WeatherNext 3 sin mest avancerede globale AI-model til vejr; kun titlen er offentliggjort, så præcisionen er ikke dokumenteret her.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "DeepMind annoncerer WeatherNext 3 som sin mest avancerede og præcise globale vejrmodel.",
+        "forbehold": "Kun titlen er offentliggjort; præcision, metode og tilgængelighed er ikke dokumenteret.",
+        "emne": "weathernext 3"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2751,6 +2751,50 @@
       ]
     },
     {
+      "titel": "Introducing agentic video understanding with Gemini",
+      "link": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "resume": "",
+      "dato": "2026-09-01T17:08:51+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Gemini forstår nu video agenter",
+      "resume_da": "Google DeepMind annoncerer agentic video-forståelse med Gemini, hvor modellen selv bearbejder video; konkrete evner og adgang er ikke nævnt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind annoncerer agentic video-forståelse, hvor Gemini selv bearbejder videomateriale.",
+        "forbehold": "Ingen konkrete evner, resultater eller adgang oplyses; ny model nævnes ikke.",
+        "emne": "google deepmind, gemini video"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "historie_dato": "2026-09-01T17:08:51+00:00",
+      "andre": [
+        {
+          "kilde": "Google DeepMind",
+          "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+          "rubrik": "Google DeepMind introducerer Gemini 3.8 Flash-modeller",
+          "resume_da": "Gemini 3.8 Flash og en variant kaldet 3.8 Flash Cyber annonceres af Google DeepMind; ydelse og adgang er ikke beskrevet.",
+          "dato": "2026-09-02 16:18:31+00:00",
+          "foerst_set": "2026-09-02T17:59:53.964081+00:00"
+        }
+      ],
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Grok Bot for Enterprise",
       "link": "https://x.ai/news/grok-bot-for-enterprise",
       "resume": "Grok Bot is now available for enterprises. Grok and Cursor Enterprise customers have free usage for the next two weeks, and can invite their whole organization, including people without an existing seat.",
@@ -2847,6 +2891,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Proactive cyber defense for governments and enterprises",
+      "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "resume": "",
+      "dato": "2026-09-02T16:24:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "rubrik": "Google DeepMind udbyder proaktivt cyberforsvar",
+      "resume_da": "Google DeepMind præsenterer proaktivt cyberforsvar til regeringer og virksomheder; ingen detaljer om metode eller tilgængelighed er meddelt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "DeepMind præsenterer proaktivt cyberforsvar til regeringer og virksomheder.",
+        "forbehold": "Ingen detaljer om metode, resultater eller tilgængelig adgang i meddelelsen.",
+        "emne": "google deepmind cyberforsvar"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2954,6 +3031,39 @@
       ]
     },
     {
+      "titel": "Piloting the world's first double-blind AI evaluations",
+      "link": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "resume": "Piloting the world's first double-blind AI evaluations",
+      "dato": "2026-08-27T12:59:16+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Forskning",
+      "foerst_set": "2026-08-27T15:25:36.198133+00:00",
+      "eget_foerst_set": "2026-08-27T15:25:36.198133+00:00",
+      "rubrik": "Google DeepMind tester dobbeltblinde AI-evalueringer",
+      "resume_da": "Google DeepMind piloterer, hvad det kalder verdens første dobbeltblinde evalueringer af AI, hvor test og model er skjult for hinanden; metoden er ikke beskrevet nærmere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind piloterer dobbeltblinde AI-evalueringer, hvor test og model er skjult for hinanden.",
+        "forbehold": "Metoden beskrives ikke nærmere, så omfanget og effekten er uklart.",
+        "emne": "google deepmind, dobbeltblinde ai-evalueringer"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Previewing the Model Hardware Standard",
       "link": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
       "resume": "",
@@ -2983,6 +3093,72 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+      "resume": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+      "dato": "2026-08-26T17:01:00+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-26T18:18:44.689701+00:00",
+      "eget_foerst_set": "2026-08-26T18:18:44.689701+00:00",
+      "rubrik": "Gemini 3.5 Transcribe skriver tale intelligent om",
+      "resume_da": "Gemini 3.5 Transcribe gør speech-to-text mere intelligent ifølge Google DeepMind; hverken nøjagtighed eller adgang er oplyst.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind medgiver nu adgang til speech-to-text-modellen Gemini 3.5 Transcribe.",
+        "forbehold": "Ingen tal for nøjagtighed, pris eller platforme oplyses i meddelelsen.",
+        "emne": "google deepmind, gemini 3.5 transcribe"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Gemini Omni 1.1 Flash lets you build with more control",
+      "link": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "resume": "",
+      "dato": "2026-08-27T16:11:32+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "eget_foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "rubrik": "Gemini Omni 1.8 Flash giver mere kontrol",
+      "resume_da": "Gemini Omni 1.1 Flash giver udviklere mere kontrol over, hvordan modellen bygger; hvilke knapper der findes, står ikke i meddelelsen.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meddelelsen om Gemini Omni 1.1 Flash handler om øget udviklerkontrol, ikke en dokumenteret udgivelse.",
+        "forbehold": "Det fremgår ikke, om 1.1 Flash lanceres nu, eller om det er eksisterende indstillinger.",
+        "emne": "google deepmind, gemini omni 1.1 flash"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -19448,6 +19624,16 @@
         }
       ],
       "figurer": [],
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
+          "rubrik": "Meta Muse deler nu hele sit filsystem",
+          "resume_da": "Chatbotten skiftede fra at afvise filadgang med sikkerhed som grund til straks at pakke hele rodmappen ud som zip.",
+          "dato": "2026-09-25T12:49:53-04:00",
+          "foerst_set": "2026-09-25T20:06:37.963120+00:00"
+        }
+      ],
       "detaljer": [
         "Muse kører i en vedvarende Linux-virtuel maskine pr. bruger",
         "De såkaldt sikre kopier var strippet for bl.a. SSH-nøgler",
@@ -19485,18 +19671,8 @@
         "status": "godkendt",
         "kontrolleret": "2026-09-24T20:44:04.482569+00:00"
       },
-      "prio": 5,
       "historie_dato": "2026-09-24T17:14:12+00:00",
-      "andre": [
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
-          "rubrik": "Meta Muse deler nu hele sit filsystem",
-          "resume_da": "Chatbotten skiftede fra at afvise filadgang med sikkerhed som grund til straks at pakke hele rodmappen ud som zip.",
-          "dato": "2026-09-25T12:49:53-04:00",
-          "foerst_set": "2026-09-25T20:06:37.963120+00:00"
-        }
-      ],
+      "prio": 5,
       "side": "artikel/450bb1526b07cd55.html"
     },
     {
@@ -21114,24 +21290,7 @@
       "eget_foerst_set": "2026-09-25T14:07:11.317324+00:00",
       "rubrik": "Microsoft Copilot samler chat, kode og agenter",
       "resume_da": "Én app med tre faner erstatter to separate Copilot-udgaver, og prisen afhænger nu af, hvor meget AI hvert medlem bruger.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Microsoft afslører Copilot-superapp med chat, kodning og agenter i ét interface; Scout omdøbes til Autopilot.",
-        "forbehold": "Kun app-omdesign; ingen ny model præsenteres i materialet.",
-        "emne": "microsoft copilot"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Tre faner samler Microsofts AI-arbejde",
@@ -21158,8 +21317,6 @@
           "tekst": "Satya Nadella kalder Copilot »et nyt styresystem for arbejde«, der spænder over alle modeller og opgaver. Spataro sammenligner ambitionen med Office i PC-æraen.\n\nMen Copilot har tabt i forbrugermarkedet til Claude og ChatGPT. Microsoft satser nu på erhvervskunder og markedsfører appen som »AI bygget til arbejde.«"
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "3 faner",
@@ -21174,6 +21331,7 @@
           "label": "Frontier-udrulning, privat preview og M365 Premium/Pro-preview"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Scout blev vist frem på Microsofts Build-konferencen tidligere på året.",
         "Copilot har været redesignet flere gange siden lanceringen som chatbot i Bing.",
@@ -21186,17 +21344,35 @@
         "Brugerbetaling gælder Cowork, Code og Autopilot",
         "Copilot halter stadig bag Claude og ChatGPT"
       ],
+      "billedmotiv": "A solid dark app panel with Microsoft's four-colour square logo front and centre at the top, carrying three chunky attached tabs side by side: one holding a rounded chat bubble, one a bracket symbol, one a small gear. Bold flat opaque shapes with thick outlines, plain background.",
+      "billedmotiv_instruks": "6951374a78af7c0fb29b",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft afslører Copilot-superapp med chat, kodning og agenter i ét interface; Scout omdøbes til Autopilot.",
+        "forbehold": "Kun app-omdesign; ingen ny model præsenteres i materialet.",
+        "emne": "microsoft copilot"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-09-26T05:30:30.594003+00:00"
       },
-      "billedmotiv": "A solid dark app panel with Microsoft's four-colour square logo front and centre at the top, carrying three chunky attached tabs side by side: one holding a rounded chat bubble, one a bracket symbol, one a small gear. Bold flat opaque shapes with thick outlines, plain background.",
-      "billedmotiv_instruks": "6951374a78af7c0fb29b",
+      "prio": 7,
       "side": "artikel/7c931ccb38262d95.html"
     },
     {
-      "titel": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+      "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
       "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
       "resume": "\"Overly constrained AI models\" could cause military operations to fail, judges say.",
       "dato": "2026-09-25T21:36:20+00:00",
@@ -21206,6 +21382,47 @@
       "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
       "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
       "resume_da": "Appeldomstol fastslår i 2-1-afgørelse, at Pentagon kan udelukke Anthropic fra forsvarsleverandører, efter firmaet nægtede at aktivere Claude-funktioner for militæret.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Appeldomstol godkender Pentagon-sortlistning",
+          "tekst": "En appeldomstol i Washington, D.C. har godkendt, at Pentagon kan sortliste AI-firmaet Anthropic, som står bag AI-modellen Claude. I en 2-1-afgørelse fastslog dommerpanelet, at forsvarsminister Pete Hegseth ikke overskred sin beføjelse, da han forbød forsvarsleverandører at handle med Anthropic.\n\nSortlistningen skyldes, at Anthropic nægtede at aktivere bestemte Claude-funktioner for militæret. Domstolen beskrev to modstridende risici: for stærkt begrænsede AI-modeller kan lukke ned under operationer, mens ubegrænsede modeller kan hallucinere forkerte mål for dødbringende angreb."
+        },
+        {
+          "overskrift": "To love giver to modsatte domme",
+          "tekst": "En californisk føderal domstol slog sidste måned fast, at sortlistningen er ulovlig under **10 U.S.C. § 3252**, fordi den kun omfatter ondsindede handlinger fra en modstander. Anthropic har ikke ageret på den måde.\n\nD.C.-appeldomstolen modsagde ikke konklusionen, men læste sagen under en anden lov, **41 U.S.C. § 4713**, hvor »supply chain risk« omfatter enhver person og ordet »deny« (nægte). Det dækker Anthropics afslag på at give militæret Claude-funktioner. Kongressen har givet netop denne appeldomstol enehørsret under § 4713."
+        },
+        {
+          "overskrift": "Anthropic overvejer at tage sagen videre",
+          "tekst": "Anthropic siger, at firmaet »respektfuldt er uenig« med domstolens afgørelse og overvejer alle muligheder, herunder en høring ved alle appeldomstolens dommere eller en sag ved Højesteret.\n\nTrods striden sagde handelsminister Howard Lutnick for nylig, at regeringen og Anthropic har rettet op på forholdet og er »i tune«."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "2-1",
+          "label": "Stemmefordeling mod Anthropic i D.C.-appeldomstolen"
+        },
+        {
+          "tal": "2 love",
+          "label": "Sortlistningen vurderet under både § 3252 og § 4713"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Begge dommere, der stemte mod Anthropic, blev udpeget af Trump",
+        "Dommer Karen Henderson stemte imod med begrundelse i lovens oprindelige formål",
+        "Anthropic sagsøgte regeringen i marts efter ordren om at stoppe brugen",
+        "En nødanmodning om standset blev afvist af appeldomstolen i april"
+      ],
+      "betydning": "Pentagon kan nu udelukke Anthropic fra offentlige indkøb, mens en californisk domstol har kaldt samme tiltag ulovlig under en anden lov.",
+      "pointer": [
+        "Appeldomstol godkender Pentagon-sortlistning af Anthropic",
+        "To domstole giver modsatte afgørelser under to love",
+        "Anthropic overvejer anke til Højesteret"
+      ],
+      "billedmotiv": "A tall solid dark supplier badge showing Anthropic's terracotta many-rayed starburst mark, sliding out from a row of three identical plain blocks, while a thick flat bar clamps shut across the badge to lock it out. Bold matte opaque shapes with thick outlines and clear separation, plain neutral background.",
+      "billedmotiv_instruks": "3f60f7e7484b1185435f",
+      "billede": "data/img/0ac519b4dddd9c31.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -21223,54 +21440,102 @@
         "emne": "anthropic / trump-regeringen"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-26T05:35:41.650043+00:00"
+      },
       "prio": 6,
+      "side": "artikel/725b5e9b15c1dbeb.html"
+    },
+    {
+      "titel": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
+      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+      "resume": "Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.",
+      "dato": "2026-09-25T23:11:10+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
+      "resume_da": "Aftalen om 29 turbiner til AI-datacentre er ophævet – men Boom siger, det har andre kunder klar.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Crusoe dropper plan om 1,25 mia. dollars Boom-turbiner til AI-datacentre; CEO bekræfter, at de ikke er i nærtidsplanerne.",
+        "forbehold": "Kun kort CEO-udsagn; årsag og konsekvens for AI-strømforsyning uddybes ikke.",
+        "emne": "crusoe / boom supersonic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "sektioner": [
         {
-          "overskrift": "Appeldomstol godkender Pentagon-sortlistning",
-          "tekst": "En appeldomstol i Washington, D.C. har godkendt, at Pentagon kan sortliste AI-firmaet Anthropic, som står bag AI-modellen Claude. I en 2-1-afgørelse fastslog dommerpanelet, at forsvarsminister Pete Hegseth ikke overskred sin beføjelse, da han forbød forsvarsleverandører at handle med Anthropic.\n\nSortlistningen skyldes, at Anthropic nægtede at aktivere bestemte Claude-funktioner for militæret. Domstolen beskrev to modstridende risici: for stærkt begrænsede AI-modeller kan lukke ned under operationer, mens ubegrænsede modeller kan hallucinere forkerte mål for dødbringende angreb."
+          "overskrift": "Milliardaftalen mellem Crusoe og Boom er ophørt",
+          "tekst": "Crusoe, der bygger AI-datacentre og for nylig hentede 3,9 milliarder dollar, opgiver planen om at købe turbiner fra Boom Supersonic. Aftalen havde en værdi på 1,25 milliarder dollar for 29 styk.\n\nBoom Supersonics administrerende direktør, Blake Scholl, bekræftede bruddet i et opslag på X fredag. Han skrev, at turbiner ikke længere indgår i Crusoes strømforsyning på kort sigt.\n\nCrusoe bekræftede over for TechCrunch, at samarbejdet er slut."
         },
         {
-          "overskrift": "To love giver to modsatte domme",
-          "tekst": "En californisk føderal domstol slog sidste måned fast, at sortlistningen er ulovlig under **10 U.S.C. § 3252**, fordi den kun omfatter ondsindede handlinger fra en modstander. Anthropic har ikke ageret på den måde.\n\nD.C.-appeldomstolen modsagde ikke konklusionen, men læste sagen under en anden lov, **41 U.S.C. § 4713**, hvor »supply chain risk« omfatter enhver person og ordet »deny« (nægte). Det dækker Anthropics afslag på at give militæret Claude-funktioner. Kongressen har givet netop denne appeldomstol enehørsret under § 4713."
+          "overskrift": "Turbiner skulle levere strøm fra 2027",
+          "tekst": "Crusoe havde bestilt 29 Superpower-turbiner à 42 megawatt, med levering planlagt fra 2027. Turbinen kører på naturgas.\n\nSuperpower deler omkring 80 procent af sine dele med Symphonys-motoren, som Boom udvikler til sin kommende supersoniske passagerjet Overture. Ideen var, at overskuddet fra salg af stationære kraftværker skulle finansiere udviklingen af jetflyet.\n\nBoom hentede 300 millioner dollar sidste år netop til at commercialisere denne forretning. Nu mister de deres første kunde."
         },
         {
-          "overskrift": "Anthropic overvejer at tage sagen videre",
-          "tekst": "Anthropic siger, at firmaet »respektfuldt er uenig« med domstolens afgørelse og overvejer alle muligheder, herunder en høring ved alle appeldomstolens dommere eller en sag ved Højesteret.\n\nTrods striden sagde handelsminister Howard Lutnick for nylig, at regeringen og Anthropic har rettet op på forholdet og er »i tune«."
+          "overskrift": "Boom siger, andre kunder står klar",
+          "tekst": "Selvom launch-kunden forsvandt, forsikrer Blake Scholl, at Boom har andre ordrer i pipelinen. Han skriver, at selskabet leverer omkring 250 megawatt Superpower-turbiner til andre lokationer næste år og sigter mod 1 gigawatt i 2028.\n\nCrusoes talsperson Andrew Schmitt forklarer, at virksomheden vælger energiløsninger efter behov for hvert site – herunder turbiner, vind, sol, batterier og elnettet."
+        },
+        {
+          "overskrift": "Crusoe kører i dag på elnet og gas",
+          "tekst": "Crusoes nuværende campus i Abilene, Texas, er på 1,2 gigawatt og forsyner både Oracle og OpenAI. Det drives af elnettet, med en gaskraftværk som reservebackup.\n\nDer bygges samtidig et 900 megawatt datacenter for Microsoft i samme by, som får strøm fra lokale gasturbiner. Turbinerne indgår altså stadig i Crusoes planer – bare ikke Booms version."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "2-1",
-          "label": "Stemmefordeling mod Anthropic i D.C.-appeldomstolen"
+          "tal": "1,25 milliarder dollar",
+          "label": "Værdi af den ophævede aftale om 29 Superpower-turbiner"
         },
         {
-          "tal": "2 love",
-          "label": "Sortlistningen vurderet under både § 3252 og § 4713"
+          "tal": "42 megawatt pr. turbine",
+          "label": "Effekt pr. Superpower-turbin; aftalen omfattede 29 styk"
+        },
+        {
+          "tal": "1,2 gigawatt",
+          "label": "Effekt i Crusoes Abilene-campus til Oracle og OpenAI"
+        },
+        {
+          "tal": "250 megawatt",
+          "label": "Superpower-effekt, Boom forventer at levere til andre sites i 2027"
         }
       ],
       "detaljer": [
-        "Begge dommere, der stemte mod Anthropic, blev udpeget af Trump",
-        "Dommer Karen Henderson stemte imod med begrundelse i lovens oprindelige formål",
-        "Anthropic sagsøgte regeringen i marts efter ordren om at stoppe brugen",
-        "En nødanmodning om standset blev afvist af appeldomstolen i april"
+        "Crusoe blev grundlagt i 2018 som bitcoinminer på overskudsgas fra oliefelter.",
+        "Superpower deler ca. 80 procent af dele med flymotoren Symphony.",
+        "Boom Supersonic hentede 300 millioner dollar sidste år til stationære kraftværker.",
+        "Crusoe hentede 3,9 milliarder dollar ved seneste kapitalrunde."
       ],
-      "betydning": "Pentagon kan nu udelukke Anthropic fra offentlige indkøb, mens en californisk domstol har kaldt samme tiltag ulovlig under en anden lov.",
+      "betydning": "Tabet af launch-kunden er et tilbageslag for Boom Supersonics plan om at finansiere jetflyudvikling gennem salg af kraftværker.",
       "pointer": [
-        "Appeldomstol godkender Pentagon-sortlistning af Anthropic",
-        "To domstole giver modsatte afgørelser under to love",
-        "Anthropic overvejer anke til Højesteret"
+        "Crusoe bekræfter bruddet over for TechCrunch.",
+        "Boom opgiver Crusoe-samarbejde men ser andre kunder.",
+        "Crusoe vælger stadig gasturbiner til Microsoft-datacenter."
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-09-26T05:35:41.650043+00:00"
+        "kontrolleret": "2026-09-26T13:54:30.728207+00:00"
       },
-      "billedmotiv": "A tall solid dark supplier badge showing Anthropic's terracotta many-rayed starburst mark, sliding out from a row of three identical plain blocks, while a thick flat bar clamps shut across the badge to lock it out. Bold matte opaque shapes with thick outlines and clear separation, plain neutral background.",
-      "billedmotiv_instruks": "3f60f7e7484b1185435f",
-      "billede": "data/img/0ac519b4dddd9c31.webp",
-      "side": "artikel/725b5e9b15c1dbeb.html"
+      "billedmotiv": "A single large industrial gas turbine with a thick cylindrical housing and clear compressor blades sits on the left, separated by a wide gap from a solid opaque AI data-center block on the right; a thick power cable leaves the turbine but ends in a cut plug short of the building, while a row of smaller identical turbines behind it stops before the gap. Flat vector shapes, hard edges, no text, no logos.",
+      "billedmotiv_instruks": "b9f015558d42bda6843d",
+      "billede": "data/img/c6ed674ef0f62dbd.webp",
+      "side": "artikel/4dc5a9b388b90b3e.html"
     }
   ]
 }

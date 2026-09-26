@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-26T05:22:21.927947+00:00",
+  "opdateret": "2026-09-26T13:21:05.914288+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,21 +8,23 @@
     "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
   ],
-  "input_fingerprint": "491aabc98d7b050a",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
-  "kildehentninger": 5,
+  "input_fingerprint": "d9b23cd7d547de6c",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Artiklen om Anthropic-dommen: \"Flertallet tog ikke stilling til, om Anthropic havde handlet i ond tro\" er misvisende – flertallet tog i kilden udtrykkeligt afstand fra påstanden om ond vilje (\"no quarrel with ... no such bad motive\") for derefter at fastslå, at ond vilje ikke er et vilkår efter §4713. Rettens holdning bør gengives præcist.",
+    "Anbefalingens rubrik \"Anthropic betaler Akamai 11,6 milliarder dollars\" kalder en forpligtelse over syv år for en betaling uden tidsrum; beløbet støttes, men rubrikken er uden forbehold om, at aftalen kan opsiges og først begynder at løbe i 2027.",
+    "Rubrikkerne i alle tre hovedhistorier er forkortet i forhold til den bestilte ordlyd i skriveopgaverne (bl.a. manglende \"– nu i virksomheders kundeservice\"). Indholdet er dækket i brødteksten, så det er en afvigelse fra opgaven, ikke et faktafejl.",
+    "Kildegrundlaget er kun én kilde pr. hovedhistorie (Google-bloggen, TechCrunch, Ars Technica); uafhængig verifikation af Googles 97-sprogs- og kvalitetspåstande findes ikke i materialet – artiklen holder dog korrekt producenten ansvarlig for påstandene."
+  ],
+  "modelkald": 6,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -34,11 +36,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -47,19 +49,31 @@
     },
     {
       "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel ab39be4845514124: skriveopgave har 966 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel ab39be4845514124: skriveopgave har 961 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
@@ -68,15 +82,11 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "grundlag": "kildetekst"
     },
     {
@@ -89,5 +99,5 @@
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
-  "afventer_artikler": 128
+  "afventer_artikler": 133
 }
