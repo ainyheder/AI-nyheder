@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-26T00:30:03.272683+00:00",
+ "opdateret": "2026-09-26T05:48:17.865337+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -172,7 +172,7 @@ window.LAESERTAL = {
      4,
      4,
      6,
-     0,
+     1,
      0
     ]
    },
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      1,
      2,
      1,
-     3,
+     4,
      0
     ]
    },
@@ -249,14 +249,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 39,
- "sidevisninger_i_alt": 75,
+ "besoeg_i_alt": 41,
+ "sidevisninger_i_alt": 81,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 39,
-   "visninger": 73
+   "besoeg": 41,
+   "visninger": 79
   },
   {
    "sti": "/artikel/c4259d8daf829e3d.html",
@@ -272,7 +272,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 38
+   "besoeg": 40
   },
   {
    "fra": "www.ecosia.org",
@@ -284,13 +284,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 38,
-    "visninger": 38
+    "besoeg": 40,
+    "visninger": 40
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 34
+    "visninger": 38
    },
    {
     "fra": "www.ecosia.org",

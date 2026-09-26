@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-25T23:28:32.975541+00:00",
+  "opdateret": "2026-09-26T05:22:21.927947+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,48 +8,12 @@
     "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
   ],
-  "input_fingerprint": "180fe35c8ccc3932",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
+  "input_fingerprint": "491aabc98d7b050a",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
   "kildehentninger": 5,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -70,20 +34,32 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
       "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "fejl": "Artikel ab39be4845514124: skriveopgave har 966 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Artikel ab39be4845514124: skriveopgave har 961 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel ab39be4845514124: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
     }
   ],
   "kildegrundlag": [
@@ -100,18 +76,18 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
-  "afventer_artikler": 139
+  "afventer_artikler": 128
 }

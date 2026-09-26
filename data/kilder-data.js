@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-25T23:28:32.975541+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-09-26T05:22:21.927947+00:00",
+ "artikler_i_alt": 87,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -103,7 +103,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 2,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
@@ -113,15 +113,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 TTS styres replik for replik"
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
-     "dato": "",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
@@ -145,7 +136,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "The Verge AI",
@@ -483,9 +474,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 21,
    "som_ekstra": 10,
    "seneste": [
+    {
+     "rubrik": "Meta Muse deler nu hele sit filsystem",
+     "dato": "",
+     "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse giver hele sit filsystem væk"
+    },
     {
      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
      "dato": "",
@@ -595,6 +595,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Microsoft Copilot samler chat, kode og agenter",
+     "dato": "2026-09-25T08:00:00",
+     "foerst_set": "2026-09-25T14:07:11",
+     "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+     "side": "artikel/7c931ccb38262d95.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Apple tager op til tre gange for kamera-AI",
      "dato": "2026-09-25T09:00:00",
      "foerst_set": "2026-09-25T14:07:11",
@@ -674,15 +683,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5acbae282eb23d15.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "YouTube AI-agent passer selv på gamle videoer",
-     "dato": "2026-09-23T14:30:00",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
-     "side": "artikel/8909ad75f4c2b214.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -714,7 +714,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -725,6 +725,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal"
+    },
+    {
+     "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
+     "dato": "2026-09-25T21:36:20",
+     "foerst_set": "2026-09-25T23:28:32",
+     "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+     "side": "artikel/725b5e9b15c1dbeb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Tesla-arbejdere ville ikke træne afløsere",
@@ -822,15 +831,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://arstechnica.com/ai/2026/09/toyota-claims-plan-for-400000-factory-robots-wont-replace-human-workers/",
      "side": "artikel/02a522d1056c07e8.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta Muse kan kapres af enhver lokal app",
-     "dato": "2026-09-21T22:24:38",
-     "foerst_set": "2026-09-21T23:58:03",
-     "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-     "side": "artikel/64b9f3c8af56bfa0.html",
      "hvor": "forside",
      "under": ""
     }
@@ -933,10 +933,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 1,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -956,21 +956,12 @@ window.KILDER_STATUS = {
      "side": "artikel/31ef9b5263a38be6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-     "dato": "2026-09-15T17:05:57",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-     "side": "artikel/392b6ec46b4e96bc.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
     ]
    ]
   },
