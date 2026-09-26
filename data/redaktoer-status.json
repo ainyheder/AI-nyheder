@@ -1,23 +1,17 @@
 {
-  "opdateret": "2026-09-26T13:21:05.914288+00:00",
+  "opdateret": "2026-09-26T19:20:07.401740+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
+    "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+    "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
-  "input_fingerprint": "d9b23cd7d547de6c",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Artiklen om Anthropic-dommen: \"Flertallet tog ikke stilling til, om Anthropic havde handlet i ond tro\" er misvisende – flertallet tog i kilden udtrykkeligt afstand fra påstanden om ond vilje (\"no quarrel with ... no such bad motive\") for derefter at fastslå, at ond vilje ikke er et vilkår efter §4713. Rettens holdning bør gengives præcist.",
-    "Anbefalingens rubrik \"Anthropic betaler Akamai 11,6 milliarder dollars\" kalder en forpligtelse over syv år for en betaling uden tidsrum; beløbet støttes, men rubrikken er uden forbehold om, at aftalen kan opsiges og først begynder at løbe i 2027.",
-    "Rubrikkerne i alle tre hovedhistorier er forkortet i forhold til den bestilte ordlyd i skriveopgaverne (bl.a. manglende \"– nu i virksomheders kundeservice\"). Indholdet er dækket i brødteksten, så det er en afvigelse fra opgaven, ikke et faktafejl.",
-    "Kildegrundlaget er kun én kilde pr. hovedhistorie (Google-bloggen, TechCrunch, Ars Technica); uafhængig verifikation af Googles 97-sprogs- og kvalitetspåstande findes ikke i materialet – artiklen holder dog korrekt producenten ansvarlig for påstandene."
-  ],
-  "modelkald": 6,
-  "kildehentninger": 4,
+  "input_fingerprint": "ded0c5c73a3ed870",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
+  "modelkald": 7,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -28,27 +22,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -64,40 +38,44 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1009 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 947 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+      "link": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/hugging-face-incident-and-misalignment/",
+      "grundlag": "utilgaengelig"
     }
   ],
   "udgivet_udvalg": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+    "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
-  "afventer_artikler": 133
+  "afventer_artikler": 134
 }

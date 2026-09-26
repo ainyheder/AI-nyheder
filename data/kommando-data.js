@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-26T14:27:47.336315+00:00",
+ "genereret": "2026-09-26T19:54:16.237844+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,24 +195,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-26T13:21:05.914288+00:00",
-  "antal": 89,
+  "opdateret": "2026-09-26T19:20:07.401740+00:00",
+  "antal": 90,
   "med_billede": 67,
-  "paa_dansk": 89,
+  "paa_dansk": 90,
   "kategorier": {
-   "Lanceringer": 17,
+   "Lanceringer": 18,
+   "Samfund \u0026 etik": 23,
    "Politik \u0026 jura": 12,
-   "Samfund \u0026 etik": 22,
-   "Hverdags-AI": 17,
+   "Hverdags-AI": 16,
    "Penge \u0026 marked": 17,
    "Forskning": 4
   },
   "kilder": {
    "Google Gemini": 2,
+   "The Verge AI": 22,
+   "Google DeepMind": 2,
    "Ars Technica AI": 14,
    "TechCrunch AI": 34,
-   "The Verge AI": 21,
-   "Google DeepMind": 2,
    "Simon Willison AI": 2,
    "Anthropic News": 4,
    "MIT Tech Review AI": 5,
@@ -222,14 +222,14 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "Introducing Gemini 3.8 Live with Live Avatar",
-    "rubrik": "Gemini 3.8 Live giver AI et ansigt",
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "side": "artikel/2b1da88efcb63533.html",
+    "titel": "Microsoft thinks its new Copilot ‘super app’ will be as influential as Office",
+    "rubrik": "Microsoft Copilot samler chat, kode og agenter",
+    "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+    "side": "artikel/7c931ccb38262d95.html",
     "kategori": "Lanceringer",
-    "kilde": "Google Gemini",
-    "dato": "2026-09-24T15:30:00+00:00",
-    "billede": "data/img/83307ffbcf389b7a.webp"
+    "kilde": "The Verge AI",
+    "dato": "2026-09-25T08:00:00-04:00",
+    "billede": ""
    },
    {
     "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
@@ -253,6 +253,26 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "OpenAI pauses training of its ‘most capable models’",
+    "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "side": "artikel/ff2e233268a7a84e.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-26T12:34:59-04:00",
+    "billede": "data/img/182da8a1d0c28b72.webp"
+   },
+   {
+    "titel": "At Meta Connect, the company’s smart glasses were everywhere",
+    "rubrik": "Meta viste kamerafri briller og hørehjælp",
+    "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+    "side": "artikel/e0c16d6f1c1de1ee.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-26T01:08:57+00:00",
+    "billede": ""
+   },
    {
     "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
     "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
@@ -344,16 +364,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/c36f50d40f9453e8.webp"
    },
    {
-    "titel": "Meta’s AI Tamagotchi bet is…working?",
-    "rubrik": "Meta Muse overgår ChatGPTs tidlige lancering",
-    "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
-    "side": "artikel/6c6baa7010d71a0e.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T16:00:00+00:00",
-    "billede": "data/img/5df99f6fa7554da4.webp"
-   },
-   {
     "titel": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
     "rubrik": "OpenAI-agenter forsøgte at bryde ind i databaser",
     "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
@@ -362,33 +372,23 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-25T15:48:14+00:00",
     "billede": "data/img/eb0e4e674cb2cf77.webp"
-   },
-   {
-    "titel": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-    "rubrik": "Anthropic betaler Akamai 11,6 milliarder dollars",
-    "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-    "side": "artikel/4b9cd4f252fed7b0.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T19:13:38+00:00",
-    "billede": "data/img/312ec74cb66e3e6e.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-26T13:21:05.914288+00:00",
+  "opdateret": "2026-09-26T19:20:07.401740+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 4,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
+  "modelkald": 7,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-   "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-   "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
+   "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+   "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+   "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
   "udgivet_udvalg": [
-   "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+   "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
    "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/"
   ],
@@ -402,27 +402,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -438,39 +418,43 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": null
+    "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1009 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 960b51012f8d643a: skriveopgave har 947 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+    "link": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-    "grundlag": "kildetekst"
+    "link": "https://openai.com/hugging-face-incident-and-misalignment/",
+    "grundlag": "utilgaengelig"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-26T13:21:05.563521+00:00",
+  "opdateret": "2026-09-26T19:20:06.785597+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -826,8 +810,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-26T13:21:05.914288+00:00",
-  "artikler_i_alt": 89,
+  "opdateret": "2026-09-26T19:20:07.401740+00:00",
+  "artikler_i_alt": 90,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1095,6 +1079,15 @@ window.KOMMANDO_DATA = {
       "under": "Muse slår ChatGPTs første 12 dage på downloads"
      },
      {
+      "rubrik": "Meta Muse overgår ChatGPTs tidlige lancering",
+      "dato": "",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
+      "side": "",
+      "hvor": "under",
+      "under": "Muse slår ChatGPTs første 12 dage på downloads"
+     },
+     {
       "rubrik": "OpenAI-model brød ind i australsk sundhedssystem",
       "dato": "",
       "foerst_set": "2026-09-24T13:44:47",
@@ -1140,6 +1133,15 @@ window.KOMMANDO_DATA = {
       "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
+      "rubrik": "Meta viste kamerafri briller og hørehjælp",
+      "dato": "2026-09-26T01:08:57",
+      "foerst_set": "2026-09-26T05:22:21",
+      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "side": "artikel/e0c16d6f1c1de1ee.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "OpenAI-agenter lækkede 53 brugerbilleder på nettet",
       "dato": "2026-09-25T22:20:47",
       "foerst_set": "2026-09-25T23:28:32",
@@ -1174,24 +1176,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/e3cc5ff4f95d9b90.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Meta Muse overgår ChatGPTs tidlige lancering",
-      "dato": "2026-09-25T16:00:00",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
-      "side": "artikel/6c6baa7010d71a0e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI-agenter forsøgte at bryde ind i databaser",
-      "dato": "2026-09-25T15:48:14",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-      "side": "artikel/042f70b50965514c.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1205,7 +1189,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 21,
+    "i_listen": 22,
     "som_ekstra": 10,
     "seneste": [
      {
@@ -1308,11 +1292,11 @@ window.KOMMANDO_DATA = {
       "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
-      "rubrik": "Fejl hos Irregular sendte AI-agenter efter rigtige mål",
-      "dato": "2026-09-25T11:39:48",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-      "side": "artikel/c01ce16603fc2590.html",
+      "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
+      "dato": "2026-09-26T12:34:59",
+      "foerst_set": "2026-09-26T19:20:07",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+      "side": "artikel/ff2e233268a7a84e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1588,12 +1572,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-26T14:27:41.528738+00:00",
+  "opdateret": "2026-09-26T19:54:10.909081+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 38,
-  "sidevisninger_i_alt": 78,
+  "besoeg_i_alt": 39,
+  "sidevisninger_i_alt": 79,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1750,8 +1734,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 38,
-    "visninger": 76
+    "besoeg": 39,
+    "visninger": 77
    },
    {
     "sti": "/artikel/c4259d8daf829e3d.html",
@@ -1777,7 +1761,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 37
+    "besoeg": 38
    },
    {
     "fra": "www.ecosia.org",
