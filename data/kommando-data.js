@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-25T21:57:23.576915+00:00",
+ "genereret": "2026-09-26T00:30:10.529802+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,25 +195,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-25T20:06:37.963120+00:00",
-  "antal": 95,
-  "med_billede": 73,
-  "paa_dansk": 95,
+  "opdateret": "2026-09-25T23:28:32.975541+00:00",
+  "antal": 86,
+  "med_billede": 65,
+  "paa_dansk": 86,
   "kategorier": {
-   "Lanceringer": 18,
-   "Politik \u0026 jura": 14,
+   "Lanceringer": 16,
+   "Politik \u0026 jura": 11,
    "Samfund \u0026 etik": 22,
    "Hverdags-AI": 17,
-   "Penge \u0026 marked": 19,
-   "Forskning": 5
+   "Penge \u0026 marked": 16,
+   "Forskning": 4
   },
   "kilder": {
    "Google Gemini": 2,
    "Google DeepMind": 2,
    "Anthropic News": 4,
-   "Ars Technica AI": 14,
-   "TechCrunch AI": 39,
-   "The Verge AI": 22,
+   "Ars Technica AI": 13,
+   "TechCrunch AI": 33,
+   "The Verge AI": 20,
    "Simon Willison AI": 2,
    "MIT Tech Review AI": 5,
    "xAI News": 2,
@@ -254,6 +254,26 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
+    "rubrik": "OpenAI-agenter lækkede 53 brugerbilleder på nettet",
+    "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+    "side": "artikel/9550a58b2b1b218d.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-25T22:20:47+00:00",
+    "billede": "data/img/5a4d50291ebbffa7.webp"
+   },
+   {
+    "titel": "Tesla workers balk at training Optimus humanoid robots as replacements",
+    "rubrik": "Tesla-arbejdere ville ikke træne afløsere",
+    "link": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
+    "side": "artikel/c9c1d3aa0b83344c.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-25T21:10:51+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Some Supabase customers are publicly exposing reams of people’s data to the web",
     "rubrik": "Supabase: 16.000 databaser har eksponeret persondata",
     "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
@@ -262,6 +282,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-25T17:29:46+00:00",
     "billede": "data/img/cda8830e2454fe29.webp"
+   },
+   {
+    "titel": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
+    "rubrik": "CESifo-studie finder ingen AI-effekt på nyuddannedes ledighed",
+    "link": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
+    "side": "artikel/9c42d9f4906b8af0.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-09-25T19:11:05+00:00",
+    "billede": "data/img/43e688704d8396ad.webp"
    },
    {
     "titel": "Quoting John Gruber",
@@ -284,6 +314,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/d0fe2a90729141af.webp"
    },
    {
+    "titel": "One company is at the center of a wave of rogue AI attacks",
+    "rubrik": "Fejl hos Irregular sendte AI-agenter efter rigtige mål",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+    "side": "artikel/c01ce16603fc2590.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-25T11:39:48-04:00",
+    "billede": "data/img/c36f50d40f9453e8.webp"
+   },
+   {
     "titel": "Meta’s AI Tamagotchi bet is…working?",
     "rubrik": "Meta Muse overgår ChatGPTs tidlige lancering",
     "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
@@ -292,6 +332,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-25T16:00:00+00:00",
     "billede": "data/img/5df99f6fa7554da4.webp"
+   },
+   {
+    "titel": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
+    "rubrik": "OpenAI-agenter forsøgte at bryde ind i databaser",
+    "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
+    "side": "artikel/042f70b50965514c.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-25T15:48:14+00:00",
+    "billede": "data/img/eb0e4e674cb2cf77.webp"
    },
    {
     "titel": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
@@ -322,61 +372,11 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-25T11:51:56-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Meta is putting its muscle behind Muse as the AI app takes off",
-    "rubrik": "Meta sender Muse forbi 3,4 millioner downloads",
-    "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
-    "side": "artikel/a948e5c03d79531e.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T16:16:52+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
-    "rubrik": "Virtix afviste 53 procent af Medicare-anmodninger",
-    "link": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
-    "side": "artikel/5bd744c2f5befd25.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-25T11:00:28+00:00",
-    "billede": "data/img/b9be36e351682a21.webp"
-   },
-   {
-    "titel": "The Pentagon wants $30 million to build an AI-powered lie detector",
-    "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
-    "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-    "side": "artikel/b50925bd3c97333e.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-09-25T09:16:25+00:00",
-    "billede": "data/img/327d0f9d29cbc2ce.webp"
-   },
-   {
-    "titel": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
-    "rubrik": "Apple tager op til tre gange for kamera-AI",
-    "link": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
-    "side": "artikel/abe9d485ffa0c0aa.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-25T09:00:00-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Introducing Gemini 3.8 Live with Live Avatar",
-    "rubrik": "Gemini 3.8 Live giver AI et ansigt",
-    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "side": "artikel/2b1da88efcb63533.html",
-    "kategori": "Lanceringer",
-    "kilde": "Google Gemini",
-    "dato": "2026-09-24T15:30:00+00:00",
-    "billede": "data/img/83307ffbcf389b7a.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-25T20:06:37.963120+00:00",
+  "opdateret": "2026-09-25T23:28:32.975541+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
@@ -385,7 +385,7 @@ window.KOMMANDO_DATA = {
   "regelbaseret_udvalg": [
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
    "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-   "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/"
+   "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
   ],
   "udgivet_udvalg": [
    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
@@ -406,7 +406,23 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -419,6 +435,22 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -444,21 +476,21 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
+    "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
     "grundlag": "kildetekst"
    },
    {
     "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
     "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-25T20:06:37.596784+00:00",
+  "opdateret": "2026-09-25T23:28:32.379062+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -814,8 +846,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-25T20:06:37.963120+00:00",
-  "artikler_i_alt": 95,
+  "opdateret": "2026-09-25T23:28:32.975541+00:00",
+  "artikler_i_alt": 86,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1023,13 +1055,13 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 2,
     "seneste": [
      {
-      "rubrik": "Jev svarer med tal i stedet for tekst",
+      "rubrik": "GPT-6 Sol og Claude Opus 5.5 udløser priskrig",
       "dato": "",
-      "foerst_set": "2026-09-21T23:58:03",
-      "link": "https://simonwillison.net/2026/Sep/21/jev/",
+      "foerst_set": "2026-09-23T05:04:58",
+      "link": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
       "side": "",
       "hvor": "under",
-      "under": "Jev udsender sandsynligheder i stedet for tekst"
+      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
       "rubrik": "Gemini brød ind i tre virksomheder under test",
@@ -1070,9 +1102,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 39,
-    "som_ekstra": 5,
+    "i_listen": 33,
+    "som_ekstra": 4,
     "seneste": [
+     {
+      "rubrik": "Meta sender Muse forbi 3,4 millioner downloads",
+      "dato": "",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
+      "side": "",
+      "hvor": "under",
+      "under": "Muse slår ChatGPTs første 12 dage på downloads"
+     },
      {
       "rubrik": "OpenAI-model brød ind i australsk sundhedssystem",
       "dato": "",
@@ -1119,13 +1160,13 @@ window.KOMMANDO_DATA = {
       "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
-      "rubrik": "Pentagon afblæste angreb efter AI-hallucination",
-      "dato": "",
-      "foerst_set": "2026-09-19T01:31:11",
-      "link": "https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/",
-      "side": "",
-      "hvor": "under",
-      "under": "Opdigtet AI-rapport bragte USA tæt på krig"
+      "rubrik": "OpenAI-agenter lækkede 53 brugerbilleder på nettet",
+      "dato": "2026-09-25T22:20:47",
+      "foerst_set": "2026-09-25T23:28:32",
+      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+      "side": "artikel/9550a58b2b1b218d.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Supabase: 16.000 databaser har eksponeret persondata",
@@ -1155,29 +1196,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "OpenAI-agenter forsøgte at bryde ind i databaser",
+      "dato": "2026-09-25T15:48:14",
+      "foerst_set": "2026-09-25T20:06:37",
+      "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
+      "side": "artikel/042f70b50965514c.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic betaler Akamai 11,6 milliarder dollars",
       "dato": "2026-09-25T19:13:38",
       "foerst_set": "2026-09-25T20:06:37",
       "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
       "side": "artikel/4b9cd4f252fed7b0.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Nscale henter 3,36 milliarder dollar før IPO",
-      "dato": "2026-09-25T18:33:59",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-      "side": "artikel/38b884af57575000.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Meta sender Muse forbi 3,4 millioner downloads",
-      "dato": "2026-09-25T16:16:52",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
-      "side": "artikel/a948e5c03d79531e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1193,8 +1225,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 22,
-    "som_ekstra": 12,
+    "i_listen": 20,
+    "som_ekstra": 10,
     "seneste": [
      {
       "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
@@ -1278,15 +1310,6 @@ window.KOMMANDO_DATA = {
       "under": "Trump vil omdøbe AI og oprette AI Force"
      },
      {
-      "rubrik": "Meta undskylder: Muse forklarede sig forkert",
-      "dato": "",
-      "foerst_set": "2026-09-19T23:28:25",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
-      "side": "",
-      "hvor": "under",
-      "under": "Metas Muse kan handle på din Mac"
-     },
-     {
       "rubrik": "Gemini hackede tre selskaber under sikkerhedstest",
       "dato": "",
       "foerst_set": "2026-09-19T18:12:03",
@@ -1296,13 +1319,22 @@ window.KOMMANDO_DATA = {
       "under": "Google bekræfter: Gemini hackede tre firmaer"
      },
      {
-      "rubrik": "Tre forskere brød ind i OpenAI med Claude",
-      "dato": "",
-      "foerst_set": "2026-09-18T16:41:48",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
-      "side": "",
-      "hvor": "under",
-      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+      "rubrik": "Fejl hos Irregular sendte AI-agenter efter rigtige mål",
+      "dato": "2026-09-25T11:39:48",
+      "foerst_set": "2026-09-25T20:06:37",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
+      "side": "artikel/c01ce16603fc2590.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Sony og UMG anklager Suno for modelhvidvask",
+      "dato": "2026-09-25T11:51:56",
+      "foerst_set": "2026-09-25T20:06:37",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
+      "side": "artikel/548f5a0f314c2af0.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1316,8 +1348,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 14,
-    "som_ekstra": 3,
+    "i_listen": 13,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Albanese varsler juridiske konsekvenser efter OpenAI-agent-brud",
@@ -1329,22 +1361,22 @@ window.KOMMANDO_DATA = {
       "under": "OpenAI-agenter infiltrerede Australiens Medicare-statistikportal"
      },
      {
-      "rubrik": "FAA tæt på at starte SMART over Washington",
-      "dato": "",
-      "foerst_set": "2026-09-18T19:56:02",
-      "link": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion/",
-      "side": "",
-      "hvor": "under",
-      "under": "FAA køber AI-system til 875 millioner dollar"
+      "rubrik": "Tesla-arbejdere ville ikke træne afløsere",
+      "dato": "2026-09-25T21:10:51",
+      "foerst_set": "2026-09-25T23:28:32",
+      "link": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
+      "side": "artikel/c9c1d3aa0b83344c.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
-      "rubrik": "Sikkerhedsfirma hackede OpenAI med Claude",
-      "dato": "",
-      "foerst_set": "2026-09-18T16:41:48",
-      "link": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/",
-      "side": "",
-      "hvor": "under",
-      "under": "Hacktron brugte Opus 5 til at hacke OpenAI"
+      "rubrik": "CESifo-studie finder ingen AI-effekt på nyuddannedes ledighed",
+      "dato": "2026-09-25T19:11:05",
+      "foerst_set": "2026-09-25T20:06:37",
+      "link": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
+      "side": "artikel/9c42d9f4906b8af0.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Virtix afviste 53 procent af Medicare-anmodninger",
@@ -1576,19 +1608,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-25T21:57:18.310576+00:00",
+  "opdateret": "2026-09-26T00:30:03.272683+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 39,
-  "sidevisninger_i_alt": 76,
+  "sidevisninger_i_alt": 75,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-27",
-    "besoeg": 10,
-    "visninger": 20
-   },
    {
     "dato": "2026-08-28",
     "besoeg": 0,
@@ -1733,13 +1760,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-09-25",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-09-26",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
     "besoeg": 39,
-    "visninger": 74
+    "visninger": 73
    },
    {
     "sti": "/artikel/c4259d8daf829e3d.html",
