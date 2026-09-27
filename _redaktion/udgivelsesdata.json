@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-27T05:38:31.712741+00:00",
+  "opdateret": "2026-09-27T14:14:33.008518+00:00",
   "kladder": [
     {
       "titel": "Accelerating vision-language models with LFM2.5-VL-DSpark",
@@ -111,6 +111,7 @@
       "eget_foerst_set": "2026-09-27T05:38:31.712741+00:00",
       "rubrik": "Google tester Flipkart-køb via Gemini i Indien",
       "resume_da": "Testen dækker udvalgte produkter og brugere i både Gemini og AI Mode, og bredere udrulning er planlagt til senere i oktober.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -127,7 +128,6 @@
         "emne": "google gemini flipkart"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -225,39 +225,6 @@
         "begrundelse": "Google DeepMind tilføjer privat, server-side hukommelse til Private AI Compute.",
         "forbehold": "Kun kort intro; sikkerhedsdetaljer, metode og tilgængelighed er ikke beskrevet.",
         "emne": "google deepmind"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Better prompt caching for GPT-6",
-      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-      "dato": "2026-09-22T21:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
-      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
-        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
-        "emne": "openai gpt-6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -398,6 +365,39 @@
       ]
     },
     {
+      "titel": "Better prompt caching for GPT-6",
+      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+      "dato": "2026-09-22T21:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
+      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "guide",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
+        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
+        "emne": "openai gpt-6"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
       "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
       "resume": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s…",
@@ -530,138 +530,6 @@
       ]
     },
     {
-      "titel": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-      "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-      "resume": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-      "dato": "2026-09-23T02:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-24T05:16:08.643426+00:00",
-      "eget_foerst_set": "2026-09-24T05:16:08.643426+00:00",
-      "rubrik": "ChatGPT Ads udvides til Sydøstasien og Taiwan",
-      "resume_da": "Ifølge OpenAI kan annoncerne nå personer i mere end 60 lande, og kvalificerede virksomheder får nye måder at nå dem på.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI udvider ChatGPT Ads til Sydøstasien og Taiwan og siger, at annoncerne nu kan nå over 60 lande.",
-        "forbehold": "Ingen tal for rækkevidde eller effekt oplyses.",
-        "emne": "chatgpt ads"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
-      "link": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts/",
-      "resume": "Trump focus on winning “AI race” may deter China from sharing safety intel.",
-      "dato": "2026-09-23T20:52:28+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "rubrik": "Eksperter frygter Trumps AI-race mod Kina skader USA",
-      "resume_da": "Ifølge eksperterne kan Trumps fokus på at vinde AI-løbet få Kina til at holde sikkerhedsoplysninger tilbage.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Eksperter advarer mod, at Trumps AI-racedritik kan få Kina til at tilbageholde sikkerhedsoplysninger.",
-        "forbehold": "Vurderingen er eksperters vurdering, ikke en dokumenteret effekt.",
-        "emne": "trump og us-kina ai-samarbejde"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-      "resume": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-      "dato": "2026-09-23T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "rubrik": "OpenAI og Grab uddanner 30.000 partnere i AI",
-      "resume_da": "Programmet GO Forward skal udbrede praktiske AI-færdigheder i hele Sydøstasien.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI og Grab lancerer GO Forward with AI, der skal give 30.000 partnere praktiske AI-færdigheder i Sydøstasien.",
-        "forbehold": "Indhold, budget og tidsplan for programmet er ikke nævnt.",
-        "emne": "grab"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Transformers now runs llama.cpp quants",
-      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
-      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
-        "forbehold": "",
-        "emne": "hugging face transformers"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Jensen Huang talks about AI and climate change like a supervillain",
       "link": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
       "resume": "As Jensen Huang puts it, AI can help fight climate change - but only if it inflicts \"an enormous amount of pain and suffering\" first. The Nvidia CEO discussed the future of energy and AI's impact on our planet in the latest episode of The Ezra Klein Show. But his comments boil down to the […]",
@@ -720,6 +588,204 @@
         "begrundelse": "Meta lancerer AI-gadgeten Muse Charm i hængende form, positioneret som taskesmykke og modeaccessoire.",
         "forbehold": "Ingen oplysninger om funktion, pris eller tilgængelighed i materialet.",
         "emne": "meta muse charm"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+      "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "resume": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
+      "dato": "2026-09-23T02:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-24T05:16:08.643426+00:00",
+      "eget_foerst_set": "2026-09-24T05:16:08.643426+00:00",
+      "rubrik": "ChatGPT Ads udvides til Sydøstasien og Taiwan",
+      "resume_da": "Ifølge OpenAI kan annoncerne nå personer i mere end 60 lande, og kvalificerede virksomheder får nye måder at nå dem på.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI udvider ChatGPT Ads til Sydøstasien og Taiwan og siger, at annoncerne nu kan nå over 60 lande.",
+        "forbehold": "Ingen tal for rækkevidde eller effekt oplyses.",
+        "emne": "chatgpt ads"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "At Meta Connect, the company’s smart glasses were everywhere",
+      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "resume": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
+      "dato": "2026-09-26T01:08:57+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "eget_foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "rubrik": "Meta viste smartbriller frem ved Meta Connect",
+      "resume_da": "Meta vil holde forbrugere forbundet til den digitale verden gennem sin voksende linje af smartbriller.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta satte smartbriller i centrum ved Connect som middel til at holde forbrugere forbundet; ingen ny AI-model præsenteres.",
+        "forbehold": "Meget kort opsummering; hvilke brillenmodeller og funktioner der blev vist, framgår ikke.",
+        "emne": "meta smartbriller"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta opens early access program for new Muse features",
+      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
+      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
+      "dato": "2026-09-25T20:34:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
+      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
+        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
+        "emne": "meta muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Transformers now runs llama.cpp quants",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
+      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
+        "forbehold": "",
+        "emne": "hugging face transformers"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+      "link": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "resume": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+      "dato": "2026-09-23T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
+      "rubrik": "OpenAI og Grab uddanner 30.000 partnere i AI",
+      "resume_da": "Programmet GO Forward skal udbrede praktiske AI-færdigheder i hele Sydøstasien.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI og Grab lancerer GO Forward with AI, der skal give 30.000 partnere praktiske AI-færdigheder i Sydøstasien.",
+        "forbehold": "Indhold, budget og tidsplan for programmet er ikke nævnt.",
+        "emne": "grab"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
+      "link": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts/",
+      "resume": "Trump focus on winning “AI race” may deter China from sharing safety intel.",
+      "dato": "2026-09-23T20:52:28+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "rubrik": "Eksperter frygter Trumps AI-race mod Kina skader USA",
+      "resume_da": "Ifølge eksperterne kan Trumps fokus på at vinde AI-løbet få Kina til at holde sikkerhedsoplysninger tilbage.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Eksperter advarer mod, at Trumps AI-racedritik kan få Kina til at tilbageholde sikkerhedsoplysninger.",
+        "forbehold": "Vurderingen er eksperters vurdering, ikke en dokumenteret effekt.",
+        "emne": "trump og us-kina ai-samarbejde"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -794,16 +860,16 @@
       ]
     },
     {
-      "titel": "Meta opens early access program for new Muse features",
-      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
-      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
-      "dato": "2026-09-25T20:34:53+00:00",
+      "titel": "Lightspeed targets $250M for new India fund, focusing on early-stage AI",
+      "link": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
+      "resume": "The venture firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
+      "dato": "2026-09-25T05:00:00+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
-      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-25T05:17:24.354778+00:00",
+      "eget_foerst_set": "2026-09-25T05:17:24.354778+00:00",
+      "rubrik": "Lightspeed sigter mod 250 mio. dollar til AI-fond",
+      "resume_da": "Fonden retter sig mod tidlige investeringer i Indien og kobles for første gang til Lightspeeds globale fondscyklusser med kortere investeringsperiode.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -813,12 +879,12 @@
         "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forretning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
-        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
-        "emne": "meta muse"
+        "begrundelse": "Lightspeed vil rejse 250 mio. dollar til en ny Indien-fond med fokus på tidlig AI og kobler for første gang fondscyklussen til sine globale fonde.",
+        "forbehold": "Kun fondens måltalte beløb er beskrevet; ingen lukning, investorer eller konkrete AI-investeringer er bekræftet.",
+        "emne": "lightspeed indien-fond"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -885,39 +951,6 @@
         "begrundelse": "Sam Altman talte i FN's Sikkerhedsråd om menneskelig kontrol over AI og internationalt sikkerhedssamarbejde.",
         "forbehold": "",
         "emne": "sam altman / openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Lightspeed targets $250M for new India fund, focusing on early-stage AI",
-      "link": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
-      "resume": "The venture firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
-      "dato": "2026-09-25T05:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-25T05:17:24.354778+00:00",
-      "eget_foerst_set": "2026-09-25T05:17:24.354778+00:00",
-      "rubrik": "Lightspeed sigter mod 250 mio. dollar til AI-fond",
-      "resume_da": "Fonden retter sig mod tidlige investeringer i Indien og kobles for første gang til Lightspeeds globale fondscyklusser med kortere investeringsperiode.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Lightspeed vil rejse 250 mio. dollar til en ny Indien-fond med fokus på tidlig AI og kobler for første gang fondscyklussen til sine globale fonde.",
-        "forbehold": "Kun fondens måltalte beløb er beskrevet; ingen lukning, investorer eller konkrete AI-investeringer er bekræftet.",
-        "emne": "lightspeed indien-fond"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -1058,6 +1091,39 @@
       ]
     },
     {
+      "titel": "Note on 24th September 2026",
+      "link": "https://simonwillison.net/2026/Sep/24/harder/",
+      "resume": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: ai , llms , coding-agents",
+      "dato": "2026-09-24T23:31:08+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "rubrik": "Simon Willison: kodningsagenter gør softwareudvikling sværere",
+      "resume_da": "Han skriver, at agenter kan løse imponerende opgaver, men at potentialet kræver ekstraordinær disciplin og viden. Noten er dateret 24. september 2026.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Willison skriver, at kodningsagenter kræver ekstraordinær disciplin og viden for at indfri potentialet.",
+        "forbehold": "Personlig holdning uden målinger, data eller eksempler i noten.",
+        "emne": "simon willison"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Meta ditches the camera on its newest smart glasses",
       "link": "https://www.theverge.com/tech/999281/ray-ban-meta-audio-glasses-meta-connect-2026",
       "resume": "Walking around Meta Connect 2026, everyone's sporting smart glasses in all sorts of shapes, colors, and sizes. It's a marked difference here, a tech bubble where \"pervert glasses\" are not a concern. Outside Connect, the public backlash against wearable surveillance tech - a catchall term that encompasses not just smart glasses, but also smartwatches and […]",
@@ -1124,34 +1190,34 @@
       ]
     },
     {
-      "titel": "Note on 24th September 2026",
-      "link": "https://simonwillison.net/2026/Sep/24/harder/",
-      "resume": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: ai , llms , coding-agents",
-      "dato": "2026-09-24T23:31:08+00:00",
+      "titel": "Kākāpō Party",
+      "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
+      "resume": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos…",
+      "dato": "2026-09-26T23:39:06+00:00",
       "kilde": "Simon Willison AI",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "rubrik": "Simon Willison: kodningsagenter gør softwareudvikling sværere",
-      "resume_da": "Han skriver, at agenter kan løse imponerende opgaver, men at potentialet kræver ekstraordinær disciplin og viden. Noten er dateret 24. september 2026.",
+      "foerst_set": "2026-09-27T05:38:31.712741+00:00",
+      "eget_foerst_set": "2026-09-27T05:38:31.712741+00:00",
+      "rubrik": "Claude Opus 5.5 skulle tegne Simon Willisons keynote-slide",
+      "resume_da": "Ved WeAreDevelopers World Congress North America skulle sliden fejre en rekordsæson for kākāpō-yngel i 2026.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "analyse",
+        "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Willison skriver, at kodningsagenter kræver ekstraordinær disciplin og viden for at indfri potentialet.",
-        "forbehold": "Personlig holdning uden målinger, data eller eksempler i noten.",
-        "emne": "simon willison"
+        "begrundelse": "Willison brugte Claude Opus 5.5 til at skabe pixelart-animation til en afsluttende keynote-slide.",
+        "forbehold": "Personlig anekdote uden måling af modelkvalitet.",
+        "emne": "simon willison kakapo"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1190,16 +1256,17 @@
       ]
     },
     {
-      "titel": "Kākāpō Party",
-      "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
-      "resume": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos…",
-      "dato": "2026-09-26T23:39:06+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-27T05:38:31.712741+00:00",
-      "eget_foerst_set": "2026-09-27T05:38:31.712741+00:00",
-      "rubrik": "Claude Opus 5.5 skulle tegne Simon Willisons keynote-slide",
-      "resume_da": "Ved WeAreDevelopers World Congress North America skulle sliden fejre en rekordsæson for kākāpō-yngel i 2026.",
+      "titel": "I created an interactive digital avatar of myself — and you can talk to it",
+      "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+      "resume": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+      "dato": "2026-09-26T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-26T19:20:07.401740+00:00",
+      "eget_foerst_set": "2026-09-26T19:20:07.401740+00:00",
+      "rubrik": "TechCrunch-forfatter skabte sin egen digitale avatar",
+      "resume_da": "Avatar er trænet til at diskutere venture-svindel, og forfatteren er ambivalent om at gøre AI-kloner af os selv.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1211,12 +1278,11 @@
         "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Willison brugte Claude Opus 5.5 til at skabe pixelart-animation til en afsluttende keynote-slide.",
-        "forbehold": "Personlig anekdote uden måling af modelkvalitet.",
-        "emne": "simon willison kakapo"
+        "begrundelse": "TechCrunch-journalist trænede en samtaleavatar af sig selv og deler ambivalente personlige erfaringer med AI-kloner.",
+        "forbehold": "Personligt eksperiment uden dokumenterede resultater eller bredere konsekvenser.",
+        "emne": "techcrunch digital avatar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1317,39 +1383,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "I created an interactive digital avatar of myself — and you can talk to it",
-      "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
-      "resume": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
-      "dato": "2026-09-26T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-26T19:20:07.401740+00:00",
-      "eget_foerst_set": "2026-09-26T19:20:07.401740+00:00",
-      "rubrik": "TechCrunch-forfatter skabte sin egen digitale avatar",
-      "resume_da": "Avatar er trænet til at diskutere venture-svindel, og forfatteren er ambivalent om at gøre AI-kloner af os selv.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "TechCrunch-journalist trænede en samtaleavatar af sig selv og deler ambivalente personlige erfaringer med AI-kloner.",
-        "forbehold": "Personligt eksperiment uden dokumenterede resultater eller bredere konsekvenser.",
-        "emne": "techcrunch digital avatar"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1487,39 +1520,6 @@
       ]
     },
     {
-      "titel": "Meta Connect 2026: The biggest news and announcements",
-      "link": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
-      "resume": "It’s about time for Meta Connect, the company’s annual product launch event. This year, given the company’s major focus on AI and wearables like smart glasses, it seems likely that we’ll see updates from CEO Mark Zuckerberg and his team on those categories. The company has been facing significant scrutiny because of how some users […]",
-      "dato": "2026-09-23T22:45:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-24T05:16:08.643426+00:00",
-      "eget_foerst_set": "2026-09-24T05:16:08.643426+00:00",
-      "rubrik": "Meta samler Connect om AI og wearables",
-      "resume_da": "Metas årlige produktlancering ventes at byde på opdateringer om AI og briller fra CEO Mark Zuckerberg og hans team.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Optakt til Meta Connect 2026, hvor AI og wearables ventes at være hovedemnerne.",
-        "forbehold": "",
-        "emne": "meta connect"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
       "link": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
       "resume": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
@@ -1548,6 +1548,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta Connect 2026: The biggest news and announcements",
+      "link": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+      "resume": "It’s about time for Meta Connect, the company’s annual product launch event. This year, given the company’s major focus on AI and wearables like smart glasses, it seems likely that we’ll see updates from CEO Mark Zuckerberg and his team on those categories. The company has been facing significant scrutiny because of how some users […]",
+      "dato": "2026-09-23T22:45:00+00:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-24T05:16:08.643426+00:00",
+      "eget_foerst_set": "2026-09-24T05:16:08.643426+00:00",
+      "rubrik": "Meta samler Connect om AI og wearables",
+      "resume_da": "Metas årlige produktlancering ventes at byde på opdateringer om AI og briller fra CEO Mark Zuckerberg og hans team.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Optakt til Meta Connect 2026, hvor AI og wearables ventes at være hovedemnerne.",
+        "forbehold": "",
+        "emne": "meta connect"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1784,39 +1817,6 @@
       ]
     },
     {
-      "titel": "Quoting @therealcornpop",
-      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
-      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
-      "dato": "2026-09-22T18:03:21+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
-      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
-        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
-        "emne": "ai-skrevne manuskripter"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Quoting voxium",
       "link": "https://simonwillison.net/2026/Sep/20/voxium/",
       "resume": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are…",
@@ -1845,6 +1845,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting @therealcornpop",
+      "link": "https://simonwillison.net/2026/Sep/22/therealcornpop/",
+      "resume": "Hey, you know it's like super obvious if you're using AI to write your scripts for TikTok and YouTube, right? [...] It's not just the general AI-isms of \"it's not X, it's Y\", or the rule of three, or the really weird broken staccato-like way of writing where you just say a lot of things with all these punctuation marks. and it sounds really deep, but it's not. It's the lack of anything . It's the…",
+      "dato": "2026-09-22T18:03:21+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "Simon Willison citerer indlæg om synlige AI-scripts",
+      "resume_da": "Indlægget peger på faste vendinger som »det er ikke X, det er Y« og opremsninger som tegn på AI-skrevne manuskripter.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Citat penger faste vendinger og opremsninger som kendetegn ved AI-skrevne TikTok- og YouTube-manuskripter.",
+        "forbehold": "Holdningscitat uden metode, data eller belæg for udbredelsen.",
+        "emne": "ai-skrevne manuskripter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1883,39 +1916,6 @@
       ]
     },
     {
-      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
-      "link": "https://x.ai/news/grok-bot-customer-support",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
-      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
-        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
-        "emne": "xai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Reimagining advertising with AI",
       "link": "https://openai.com/index/reimagining-advertising-with-ai",
       "resume": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
@@ -1944,6 +1944,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
+      "link": "https://x.ai/news/grok-bot-customer-support",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
+      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
+        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
+        "emne": "xai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2450,6 +2483,39 @@
       ]
     },
     {
+      "titel": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+      "link": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+      "resume": "",
+      "dato": "2026-09-03T15:02:08+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "eget_foerst_set": "2026-09-03T17:59:19.388061+00:00",
+      "rubrik": "Google DeepMind præsenterer vejrmodellen WeatherNext 3",
+      "resume_da": "Google DeepMind kalder WeatherNext 3 sin hidtil mest præcise globale vejrmodel; ingen måltal for nøjagtigheden er angivet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind annoncerer WeatherNext 3 som sin hidtil mest præcise globale vejrmodel; ny modelversion præsenteret officielt.",
+        "forbehold": "Ingen måltal for nøjagtighed, metode eller sammenligningsgrundlag er angivet.",
+        "emne": "google deepmind weathernext 3"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
       "resume": "Gemini 3.8 Flash and 3.8 Flash Cyber deliver next-generation intelligence for agentic workflows and cybersecurity.",
@@ -2477,6 +2543,39 @@
         "emne": "google, gemini 3.8 flash"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+      "resume": "",
+      "dato": "2026-09-02T16:18:31+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "rubrik": "Google DeepMind lancerer Gemini 3.8 Flash-udgaver",
+      "resume_da": "Der er tale om to udgaver, hvoraf én bærer tillægget Cyber; hvad den udgave gør, er ikke beskrevet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind annoncerer to nye modeludgaver: Gemini 3.8 Flash og Gemini 3.8 Flash Cyber.",
+        "forbehold": "Hvad Cyber-udgaven gør, samt adgang og resultater, er ikke beskrevet.",
+        "emne": "gemini 3.8 flash"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -2613,6 +2712,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Introducing agentic video understanding with Gemini",
+      "link": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "resume": "",
+      "dato": "2026-09-01T17:08:51+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "eget_foerst_set": "2026-09-01T17:55:30.030967+00:00",
+      "rubrik": "Google DeepMind lancerer agentisk videoforståelse med Gemini",
+      "resume_da": "Begrebet 'agentic' dækker, at modellen selv udfører opgaver; konkrete funktioner, adgang og resultater er ikke nævnt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind introducerer agentic videoforståelse i Gemini, hvor modellen selv udfører opgaver med videomateriale.",
+        "forbehold": "Konkrete funktioner, adgang og resultater er ikke nævnt, så omfanget er uklart.",
+        "emne": "gemini video"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2787,6 +2919,39 @@
       ]
     },
     {
+      "titel": "Proactive cyber defense for governments and enterprises",
+      "link": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "resume": "",
+      "dato": "2026-09-02T16:24:24+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "eget_foerst_set": "2026-09-02T17:59:53.964081+00:00",
+      "rubrik": "Google DeepMind præsenterer cyberforsvar til regeringer og virksomheder",
+      "resume_da": "Google DeepMind beskriver det som proaktivt forsvar, men hverken produktnavn, funktioner eller testresultater er nævnt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind omtaler proaktivt cyberforsvar til myndigheder og virksomheder uden at nævne produkt eller funktioner.",
+        "forbehold": "Ingen produktnavn, funktioner eller testresultater; indholdet er stort set ukonkret.",
+        "emne": "google deepmind cyberforsvar"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Developing Enterprise Frontier Safeguards with our customers",
       "link": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "resume": "",
@@ -2849,6 +3014,39 @@
         "emne": "grok bot og x"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Gemini Omni 1.1 Flash lets you build with more control",
+      "link": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+      "resume": "",
+      "dato": "2026-08-27T16:11:32+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "eget_foerst_set": "2026-08-28T00:33:43.239930+00:00",
+      "rubrik": "Gemini Omni 1.1 Flash giver udviklere større styring",
+      "resume_da": "Google DeepMind præsenterer det som mulighed for at bygge med mere kontrol; hvilke indstillinger det drejer sig om, er ikke beskrevet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind præsenterer Gemini Omni 1.1 Flash med mere kontrol, beskrevet som mulighed for at bygge med kontrol.",
+        "forbehold": "Hvilke kontrolindstillinger der tilføjes, er ikke beskrevet; kan være konfiguration frem for ny model.",
+        "emne": "gemini omni 1.1 flash"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -9359,6 +9557,30 @@
           "resume_da": "To nye Google-modeller kan lytte, se og udføre opgaver i baggrunden, mens de fortsætter samtalen. Extended Thinking topper flere stemmebenchmarks.",
           "dato": "2026-09-15T17:00:00+00:00",
           "foerst_set": "2026-09-15T18:27:03.971686+00:00"
+        },
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+          "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+          "resume_da": "Avataren tilpasser læbesynk og udtryk på 97 sprog uden visuel forringelse og er tilgængelig fra i dag i Gemini Enterprise.",
+          "dato": "2026-09-24T15:30:00+00:00",
+          "foerst_set": "2026-09-24T20:05:24.209273+00:00"
+        },
+        {
+          "kilde": "Google DeepMind",
+          "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+          "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
+          "resume_da": "Google DeepMind giver sin samtale-AI ansigt med læbesynkronisering, baggrundsværktøjer og støtte til 97 sprog i realtid.",
+          "dato": "2026-09-24T16:20:39+00:00",
+          "foerst_set": "2026-09-24T20:05:24.209273+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+          "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
+          "resume_da": "Live Avatar synkroniserer læber og ansigtsudtryk i 97 sprog, men er foreløbig kun for Enterprise-kunder.",
+          "dato": "2026-09-24T15:59:26-04:00",
+          "foerst_set": "2026-09-24T20:05:24.209273+00:00"
         }
       ],
       "detaljer": [
@@ -18435,17 +18657,7 @@
       },
       "prio": 5,
       "side": "artikel/abe26ab67059b729.html",
-      "historie_dato": "2026-09-23T23:39:44+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
-          "rubrik": "Meta viste kamerafri briller og hørehjælp",
-          "resume_da": "Meta viste to nye briller ved Connect, heriblandt et par til hørehæmmede til 150 dollars mod høreapparater op til 1.600 dollars.",
-          "dato": "2026-09-26T01:08:57+00:00",
-          "foerst_set": "2026-09-26T05:22:21.927947+00:00"
-        }
-      ]
+      "historie_dato": "2026-09-23T23:39:44+00:00"
     },
     {
       "titel": "Everything new coming to Meta’s AI agent Muse",
@@ -19434,108 +19646,6 @@
       "prio": 5,
       "billede": "data/img/b0ad7a7d2c1a3e05.webp",
       "side": "artikel/84fff22728605782.html"
-    },
-    {
-      "titel": "Introducing Gemini 3.8 Live with Live Avatar",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-      "resume": "Introducing Gemini 3.8 Live with Live Avatar, which brings near real-time visual presence to Gemini’s conversational AI.",
-      "dato": "2026-09-24T15:30:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-24T20:05:24.209273+00:00",
-      "eget_foerst_set": "2026-09-24T20:05:24.209273+00:00",
-      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
-      "resume_da": "Avataren tilpasser læbesynk og udtryk på 97 sprog uden visuel forringelse og er tilgængelig fra i dag i Gemini Enterprise.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Avataren taler med synkroniserede læber",
-          "tekst": "Google har fra i dag udrullet Gemini 3.8 Live with Live Avatar i Gemini Enterprise. Funktionen kobler næsten realtidsvideogenerering med modellens talefunktion, så en visuel figur optræder med synkroniserede læbebevægelser, naturlige udtryk og flydende skift mellem samtaler.\n\nModellen behandler visuelle og lydmæssige input samtidig og svarer med udtryksfuld lyd og video. Det skaber samtaler, hvor ansigt, stemme og timing arbejder sammen. Funktionen bygger på Gemini 3.8 Live, der blev lanceret sidste uge."
-        },
-        {
-          "overskrift": "Værktøjer kører mens dialogen fortsætter",
-          "tekst": "Bag den visuelle figur ligger modellens ræsonnementsevne. Med **asynkront værktøjskald** udløser Live Avatar funktioner og henter data i baggrunden, mens samtalen fortsætter aktivt.\n\nDet betyder, at komplekse opgaver løses uden at afbryde dialogen. Google beskriver et eksempel med hotelindtjekning, hvor funktionen kalder værktøjer i baggrunden, mens samtalen fortsætter uafbrudt."
-        },
-        {
-          "overskrift": "97 sprog uden visuel forringelse",
-          "tekst": "Live Avatar har indbygget flersproget tale-til-tale-synkronisering. Funktionen tilpasser læbesynk og ansigtsudtryk dynamisk og kan skifte sprog midt i samtalen.\n\nDen understøtter **97 sprog** uden at nedsætte videokvaliteten eller introducere visuel forvrængning. Det gør det muligt at skifte sprog undervejs, mens den samme visuelle kvalitet bevares."
-        },
-        {
-          "overskrift": "Egen avatar fra referencebillede",
-          "tekst": "Google tilbyder et bibliotek med færdige avatarer. Derudover kan udviklere fra et højkvalitets referencebillede generere en fuldt animeret, responsiv avatar, der bevarer ansigtslighed, brandstil eller figuridentitet.\n\nEgen avataroprettelse er foreløbig kun tilgængelig via særlig adgangskontrol. Funktionen er fra i dag tilgængelig i Gemini Enterprise, og Google fremhæver kundeservice og interaktive gennemgange som anvendelsesområder."
-        },
-        {
-          "overskrift": "SynthID-vandmærke beskytter mod fejlagtig tilskrivning",
-          "tekst": "Google har bygget Live Avatar med strenge sikkerhedsforanstaltninger, der skal respektere identitet og holde AI-genereret indhold gennemsigtigt.\n\nAlt udgang fra Googles AI-produkter vandmærkes med **SynthID** – en usynlig kode indvævet direkte i lyd- og videoudgang. Vandmærket holder AI-genereret indhold sporbart for at mindske misinformation og fejlagtig tilskrivning."
-        }
-      ],
-      "noegletal": [
-        {
-          "tal": "97 sprog",
-          "label": "Antal sprog Live Avatar understøtter med læbesynk og ansigtsudtryk"
-        }
-      ],
-      "figurer": [],
-      "andre": [
-        {
-          "kilde": "Google DeepMind",
-          "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-          "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
-          "resume_da": "Google DeepMind giver sin samtale-AI ansigt med læbesynkronisering, baggrundsværktøjer og støtte til 97 sprog i realtid.",
-          "dato": "2026-09-24T16:20:39+00:00",
-          "foerst_set": "2026-09-24T20:05:24.209273+00:00"
-        },
-        {
-          "kilde": "The Verge AI",
-          "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-          "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
-          "resume_da": "Live Avatar synkroniserer læber og ansigtsudtryk i 97 sprog, men er foreløbig kun for Enterprise-kunder.",
-          "dato": "2026-09-24T15:59:26-04:00",
-          "foerst_set": "2026-09-24T20:05:24.209273+00:00"
-        }
-      ],
-      "detaljer": [
-        "Google har udgivet en model card med sin tilgang til ansvarlig udrulning.",
-        "Google stiller API-dokumentation til rådighed for udviklere."
-      ],
-      "betydning": "Virksomheder kan udrulle avatarer til kundeservice og gennemgange, hvor tale, video og værktøjskalde foregår samtidigt.",
-      "pointer": [
-        "Live Avatar tilgængelig fra i dag i Gemini Enterprise.",
-        "97 sprog understøttes med synkroniserede læbebevægelser.",
-        "Skræddersyede avatarer kræver foreløbig særlig adgang."
-      ],
-      "billedmotiv": "A front-facing opaque avatar head panel carrying Google's four-colour concave Gemini spark mark across a quarter of its width, flanked by two thick solid speech bubbles, where one bubble divides into three smaller bubbles of different sizes to show the avatar switching language mid-sentence, with a solid mouth bar aligned to the bubbles.",
-      "billede": "data/img/83307ffbcf389b7a.webp",
-      "laant_billede": {
-        "fra": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-        "billede": "data/img/83307ffbcf389b7a.webp",
-        "motiv": "A front-facing opaque avatar head panel carrying Google's four-colour concave Gemini spark mark across a quarter of its width, flanked by two thick solid speech bubbles, where one bubble divides into three smaller bubbles of different sizes to show the avatar switching language mid-sentence, with a solid mouth bar aligned to the bubbles."
-      },
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google annoncerer selv Gemini 3.8 Live med Live Avatar, der giver nær-realtid visuel tilstedeværelse.",
-        "forbehold": "Kun annonceringstekst; omfang, pris og udrulning er ikke beskrevet.",
-        "emne": "google gemini 3.8 live"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-09-24T23:44:53.463108+00:00"
-      },
-      "historie_dato": "2026-09-24T15:30:00+00:00",
-      "prio": 7,
-      "side": "artikel/2b1da88efcb63533.html"
     },
     {
       "titel": "Google's first Suncatcher orbital data center test launches October 1",
