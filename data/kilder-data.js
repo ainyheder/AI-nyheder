@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-26T19:20:07.401740+00:00",
- "artikler_i_alt": 90,
+ "opdateret": "2026-09-26T23:06:36.145833+00:00",
+ "artikler_i_alt": 86,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -103,7 +103,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 2,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
@@ -113,15 +113,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 TTS styres replik for replik"
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
-     "dato": "",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
@@ -145,7 +136,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     2
     ],
     [
      "The Verge AI",
@@ -232,7 +223,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 2,
-   "som_ekstra": 2,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "GPT-6 Sol og Claude Opus 5.5 udløser priskrig",
@@ -242,15 +233,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
-    {
-     "rubrik": "Gemini brød ind i tre virksomheder under test",
-     "dato": "",
-     "foerst_set": "2026-09-19T01:31:11",
-     "link": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
      "rubrik": "John Gruber advarer mod Metas Muse",
@@ -275,10 +257,6 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      1
-    ],
-    [
-     "Ars Technica AI",
-     1
     ]
    ]
   },
@@ -292,8 +270,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 34,
-   "som_ekstra": 4,
+   "i_listen": 32,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Meta sender Muse forbi 3,4 millioner downloads",
@@ -350,13 +328,13 @@ window.KILDER_STATUS = {
      "under": "Amazon blokerer Metas Muse-agent i butikken"
     },
     {
-     "rubrik": "Gemini hackede tre virksomheder under sikkerhedstest",
-     "dato": "",
-     "foerst_set": "2026-09-19T18:12:03",
-     "link": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google bekræfter: Gemini hackede tre firmaer"
+     "rubrik": "Blue Cross: AI-brug kostede 942 mio. dollars ekstra",
+     "dato": "2026-09-26T21:02:06",
+     "foerst_set": "2026-09-26T23:06:36",
+     "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+     "side": "artikel/db474621d18afa36.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Meta viste kamerafri briller og hørehjælp",
@@ -431,6 +409,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Astra og Opus knækkede to Enigma-beskeder",
+     "dato": "2026-09-25T17:24:36",
+     "foerst_set": "2026-09-25T20:06:37",
+     "link": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
+     "side": "artikel/656dc5dcef2da3c0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google lader Gemini ringe til butikker for dig",
      "dato": "2026-09-24T16:00:00",
      "foerst_set": "2026-09-24T20:05:24",
@@ -447,37 +434,15 @@ window.KILDER_STATUS = {
      "side": "artikel/e65dfd0080c22eeb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google Photos skaber digital garderobe fra dine fotos",
-     "dato": "2026-09-24T17:00:00",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
-     "side": "artikel/1ac6e3fa768eb33f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ElevenLabs accepterer lavere marginer for markedsandel",
-     "dato": "2026-09-24T16:35:13",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
-     "side": "artikel/84fff22728605782.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     4
     ],
     [
      "Anthropic News",
-     1
-    ],
-    [
-     "Ars Technica AI",
      1
     ]
    ]
@@ -493,7 +458,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 22,
-   "som_ekstra": 10,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Meta Muse deler nu hele sit filsystem",
@@ -559,15 +524,6 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
-     "rubrik": "Trump vil omdøbe AI til super intelligence",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump vil omdøbe AI og oprette AI Force"
-    },
-    {
      "rubrik": "Meta patches exploit controlling Muse AI agent",
      "dato": "",
      "foerst_set": "2026-09-22T13:37:55",
@@ -575,24 +531,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta Muse kan kapres af enhver lokal app"
-    },
-    {
-     "rubrik": "Trump vil udnævne AI-zar og skabe AI-force",
-     "dato": "",
-     "foerst_set": "2026-09-20T16:28:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-     "side": "",
-     "hvor": "under",
-     "under": "Trump vil omdøbe AI og oprette AI Force"
-    },
-    {
-     "rubrik": "Gemini hackede tre selskaber under sikkerhedstest",
-     "dato": "",
-     "foerst_set": "2026-09-19T18:12:03",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack",
-     "side": "",
-     "hvor": "under",
-     "under": "Google bekræfter: Gemini hackede tre firmaer"
     },
     {
      "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
@@ -706,11 +644,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     4
     ],
     [
      "Ars Technica AI",
-     4
+     3
     ],
     [
      "Anthropic News",
@@ -732,7 +670,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 14,
+   "i_listen": 13,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -856,15 +794,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     4
-    ],
-    [
-     "Simon Willison AI",
-     1
-    ],
-    [
-     "TechCrunch AI",
-     1
+     3
     ]
    ]
   },
@@ -951,10 +881,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 1,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -974,21 +904,12 @@ window.KILDER_STATUS = {
      "side": "artikel/31ef9b5263a38be6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-     "dato": "2026-09-15T17:05:57",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-     "side": "artikel/392b6ec46b4e96bc.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     3
+     2
     ]
    ]
   },
