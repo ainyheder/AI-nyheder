@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-27T19:51:10.044331+00:00",
+ "opdateret": "2026-09-27T23:20:35.908948+00:00",
  "artikler_i_alt": 83,
  "kilder": [
   {
@@ -266,7 +266,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
+   "i_listen": 29,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -462,7 +462,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 22,
+   "i_listen": 23,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -536,6 +536,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Meta Muse kan kapres af enhver lokal app"
+    },
+    {
+     "rubrik": "Engram lader AI hallucinere nye lyde",
+     "dato": "2026-09-27T16:46:36",
+     "foerst_set": "2026-09-27T23:20:35",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+     "side": "artikel/14fc67fa9a509213.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
@@ -633,15 +642,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T13:44:47",
      "link": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
      "side": "artikel/fc26726d9b3ca816.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Newsom underskriver syv love om datacentre",
-     "dato": "2026-09-23T18:22:57",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
-     "side": "artikel/10c165258146f68e.html",
      "hvor": "forside",
      "under": ""
     }

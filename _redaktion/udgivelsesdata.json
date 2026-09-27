@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-27T19:51:10.044331+00:00",
+  "opdateret": "2026-09-27T23:20:35.908948+00:00",
   "kladder": [
     {
       "titel": "OpenAI agents tried to ‘bruteforce’ a UN website",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-09-27T19:51:10.044331+00:00",
       "rubrik": "OpenAI-agenter scannede FN-site over 16.000 gange",
       "resume_da": "Sikkerhedsforsker Rowan Howard-Jones siger, at agenterne mellem april og juni scannede UNCTADs statistiksite i forsøg på at forcere adgangen.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,7 +29,6 @@
         "emne": "openai-agenter / unctad"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -167,6 +167,39 @@
       ]
     },
     {
+      "titel": "Anthropic’s CEO is about to have dinner with President Trump",
+      "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+      "resume": "This will be the first one-on-one meeting between Dario Amodei and Donald Trump",
+      "dato": "2026-09-27T20:34:28+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "eget_foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "rubrik": "Anthropics Dario Amodei mødes med Trump til middag",
+      "resume_da": "Ifølge TechCrunch AI bliver det deres første møde, hvor kun de to deltager.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Dario Amodei og Trump mødes for første gang i et-mands-møde til middag.",
+        "forbehold": "Kun mødet meldt ud; ingen dagsorden, politik eller udfald kendt.",
+        "emne": "anthropic / dario amodei"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "OpenAI extends cyber access to Ukraine for civilian defense",
       "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
       "resume": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
@@ -266,6 +299,39 @@
       ]
     },
     {
+      "titel": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
+      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+      "resume": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s…",
+      "dato": "2026-09-25T18:22:47+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
+      "rubrik": "Meta Muse stjæler spotlight fra Opus 5.5, GPT-6",
+      "resume_da": "Anthropic rullede Opus 5.5 ud, og 90 minutter senere fulgte OpenAI med opdateringer til GPT-6.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Podcast-episode om Metas Muse i samme uge som Anthropic Opus 5.5 og OpenAI GPT-6-opdateringer.",
+        "forbehold": "Opus 5.5 og GPT-6-opdateringerne nævnes kun i forbifarten uden detaljer eller kilder.",
+        "emne": "meta muse / podcast"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Muse sure looks a lot like OpenClaw",
       "link": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
       "resume": "We seem to be entering into an AI agent renaissance. Meta's new consumer-facing AI agent, Muse, topped the App Store charts soon after its release and has 600,000 daily active users in the US, by an Apptopia estimate. And AI agent platform Instinct, whose eponymous creator is fundraising at a $2.5 billion valuation, has been […]",
@@ -332,34 +398,67 @@
       ]
     },
     {
-      "titel": "Meta’s Muse just stole the AI spotlight from OpenAI and Anthropic",
-      "link": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
-      "resume": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s…",
-      "dato": "2026-09-25T18:22:47+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
+      "titel": "Microsoft stops insisting you need a \"Copilot+ PC\"",
+      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
+      "resume": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
+      "dato": "2026-09-25T17:57:37+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
       "foerst_set": "2026-09-25T20:06:37.963120+00:00",
       "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "rubrik": "Meta Muse stjæler spotlight fra Opus 5.5, GPT-6",
-      "resume_da": "Anthropic rullede Opus 5.5 ud, og 90 minutter senere fulgte OpenAI med opdateringer til GPT-6.",
+      "rubrik": "Microsoft fjerner Copilot+ PC-mærket fra nye laptops",
+      "resume_da": "Ars Technica skriver, at de nye Surface-bærbare slet ikke bruger betegnelsen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsofts nye Surface-bærbare dropper 'Copilot+ PC'-mærket helt.",
+        "forbehold": "",
+        "emne": "microsoft surface"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Better prompt caching for GPT-6",
+      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+      "dato": "2026-09-22T21:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
+      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
+      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 2,
         "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
+        "brugbarhed": 4,
+        "dokumentation": 4,
         "dansk": 0,
-        "type": "andet",
+        "type": "guide",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Podcast-episode om Metas Muse i samme uge som Anthropic Opus 5.5 og OpenAI GPT-6-opdateringer.",
-        "forbehold": "Opus 5.5 og GPT-6-opdateringerne nævnes kun i forbifarten uden detaljer eller kilder.",
-        "emne": "meta muse / podcast"
+        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
+        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
+        "emne": "openai gpt-6"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -431,49 +530,16 @@
       ]
     },
     {
-      "titel": "Better prompt caching for GPT-6",
-      "link": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "resume": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-      "dato": "2026-09-22T21:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "eget_foerst_set": "2026-09-22T23:13:17.203036+00:00",
-      "rubrik": "OpenAI forbedrer prompt-caching i GPT-6",
-      "resume_da": "GPT-6 introducerer højere cache-træffere, nye diagnostiske værktøjer, eksplicitte brudpunkter og kontroller, der sænker latenstid og omkostninger.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "guide",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI dokumenterer bedre prompt-caching i GPT-6 med højere cache-træffere, diagnostik og lavere omkostninger.",
-        "forbehold": "Det er en funktionel forbedring af GPT-6, ikke en ny modelversion.",
-        "emne": "openai gpt-6"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-      "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-      "resume": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
-      "dato": "2026-09-25T17:57:37+00:00",
-      "kilde": "Ars Technica AI",
+      "titel": "At Meta Connect, the company’s smart glasses were everywhere",
+      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+      "resume": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
+      "dato": "2026-09-26T01:08:57+00:00",
+      "kilde": "TechCrunch AI",
       "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "eget_foerst_set": "2026-09-25T20:06:37.963120+00:00",
-      "rubrik": "Microsoft fjerner Copilot+ PC-mærket fra nye laptops",
-      "resume_da": "Ars Technica skriver, at de nye Surface-bærbare slet ikke bruger betegnelsen.",
+      "foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "eget_foerst_set": "2026-09-26T05:22:21.927947+00:00",
+      "rubrik": "Meta viste smartbriller frem ved Meta Connect",
+      "resume_da": "Meta vil holde forbrugere forbundet til den digitale verden gennem sin voksende linje af smartbriller.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -481,14 +547,14 @@
         "nyhed": 2,
         "betydning": 2,
         "brugbarhed": 1,
-        "dokumentation": 3,
+        "dokumentation": 2,
         "dansk": 0,
-        "type": "forretning",
+        "type": "andet",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Microsofts nye Surface-bærbare dropper 'Copilot+ PC'-mærket helt.",
-        "forbehold": "",
-        "emne": "microsoft surface"
+        "begrundelse": "Meta satte smartbriller i centrum ved Connect som middel til at holde forbrugere forbundet; ingen ny AI-model præsenteres.",
+        "forbehold": "Meget kort opsummering; hvilke brillenmodeller og funktioner der blev vist, framgår ikke.",
+        "emne": "meta smartbriller"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -500,7 +566,7 @@
       "titel": "Jensen Huang talks about AI and climate change like a supervillain",
       "link": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
       "resume": "As Jensen Huang puts it, AI can help fight climate change - but only if it inflicts \"an enormous amount of pain and suffering\" first. The Nvidia CEO discussed the future of energy and AI's impact on our planet in the latest episode of The Ezra Klein Show. But his comments boil down to the […]",
-      "dato": "2026-09-24T14:04:44-04:00",
+      "dato": "2026-09-24T18:04:44+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-09-24T20:05:24.209273+00:00",
@@ -522,6 +588,39 @@
         "begrundelse": "Jensen Huang siger i podcast, at AI kan bekæmpe klimaforandringer efter «en enorm mængde smerte og lidelse».",
         "forbehold": "",
         "emne": "jensen huang nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta opens early access program for new Muse features",
+      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
+      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
+      "dato": "2026-09-25T20:34:53+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
+      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
+      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
+        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
+        "emne": "meta muse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -563,34 +662,34 @@
       ]
     },
     {
-      "titel": "At Meta Connect, the company’s smart glasses were everywhere",
-      "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
-      "resume": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
-      "dato": "2026-09-26T01:08:57+00:00",
+      "titel": "Can Muse overcome Meta’s trust issues?",
+      "link": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+      "resume": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
+      "dato": "2026-09-27T19:57:30+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-26T05:22:21.927947+00:00",
-      "eget_foerst_set": "2026-09-26T05:22:21.927947+00:00",
-      "rubrik": "Meta viste smartbriller frem ved Meta Connect",
-      "resume_da": "Meta vil holde forbrugere forbundet til den digitale verden gennem sin voksende linje af smartbriller.",
-      "kat_ai": true,
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "eget_foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "rubrik": "Meta stjal rampelyset fra OpenAI og Anthropic",
+      "resume_da": "Podcasten Equity diskuterede, om Meta kan overvinde tillidsproblemerne omkring sin nye AI, Muse.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 2,
+        "nyhed": 1,
         "betydning": 2,
         "brugbarhed": 1,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "andet",
+        "type": "analyse",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Meta satte smartbriller i centrum ved Connect som middel til at holde forbrugere forbundet; ingen ny AI-model præsenteres.",
-        "forbehold": "Meget kort opsummering; hvilke brillenmodeller og funktioner der blev vist, framgår ikke.",
-        "emne": "meta smartbriller"
+        "begrundelse": "Equity-podcast diskuterer Metas Muse-annoncering og dens tillidsproblemer.",
+        "forbehold": "Kommentar i podcast; bringer ingen nye fakta om Muse.",
+        "emne": "meta muse"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
+      "kat_ai": true,
+      "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -662,39 +761,6 @@
       ]
     },
     {
-      "titel": "Meta opens early access program for new Muse features",
-      "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
-      "resume": "Anyone interested in joining has to ask Muse to put them on the list.",
-      "dato": "2026-09-25T20:34:53+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "eget_foerst_set": "2026-09-25T23:28:32.975541+00:00",
-      "rubrik": "Meta åbner tidlig adgang til Muse-funktioner",
-      "resume_da": "Interesserede skal selv bede Muse om at blive skrevet på listen for at deltage.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Meta åbner tidlig adgang for nye Muse-funktioner; tilmelding sker ved at kontakte Muse direkte.",
-        "forbehold": "Kildeteksten beskriver ikke, hvad funktionerne gør, eller hvornår de er bredt tilgængelige.",
-        "emne": "meta muse"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "ChatGPT Ads expands to Southeast Asia and Taiwan",
       "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
       "resume": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
@@ -728,39 +794,6 @@
       ]
     },
     {
-      "titel": "Transformers now runs llama.cpp quants",
-      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
-      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
-        "forbehold": "",
-        "emne": "hugging face transformers"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Lightspeed targets $250M for new India fund, focusing on early-stage AI",
       "link": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
       "resume": "The venture firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
@@ -789,6 +822,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Transformers now runs llama.cpp quants",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
+      "resume_da": "Hugging Face opdaterer Transformers med understøttelse af llama.cpp-kvantiseringer.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Hugging Face udgiver Transformers-understøttelse af llama.cpp-kvantiseringer, så kvantiserede modeller kan indlæses direkte.",
+        "forbehold": "",
+        "emne": "hugging face transformers"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -959,39 +1025,6 @@
       ]
     },
     {
-      "titel": "Sam Altman’s remarks at the United Nations Security Council",
-      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
-      "resume": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-      "dato": "2026-09-23T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "rubrik": "Sam Altman talte ved FN's Sikkerhedsråd om AI-sikkerhed",
-      "resume_da": "OpenAI-chefen understregede menneskelig kontrol over AI og opfordrede til internationalt samarbejde om sikkerhed.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Sam Altman talte i FN's Sikkerhedsråd om menneskelig kontrol over AI og internationalt sikkerhedssamarbejde.",
-        "forbehold": "",
-        "emne": "sam altman / openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Can Cloudflare CEO Matthew Prince save the web from AI?",
       "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
       "resume": "Today, I’m talking with Matthew Prince, who is CEO of Cloudflare. This episode is part of a two-part series on the future of business. Matthew last joined us on the show about two and a half years ago, at what we thought then was a wild pivot point for the internet — and now it […]",
@@ -1020,6 +1053,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Sam Altman’s remarks at the United Nations Security Council",
+      "link": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "resume": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+      "dato": "2026-09-23T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "rubrik": "Sam Altman talte ved FN's Sikkerhedsråd om AI-sikkerhed",
+      "resume_da": "OpenAI-chefen understregede menneskelig kontrol over AI og opfordrede til internationalt samarbejde om sikkerhed.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Sam Altman talte i FN's Sikkerhedsråd om menneskelig kontrol over AI og internationalt sikkerhedssamarbejde.",
+        "forbehold": "",
+        "emne": "sam altman / openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1190,39 +1256,6 @@
       ]
     },
     {
-      "titel": "Anthropic says its biology lab has already found something big",
-      "link": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
-      "resume": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
-      "dato": "2026-09-23T22:17:39+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
-      "rubrik": "Anthropic holder Claude under menneskelig kontrol i biolab",
-      "resume_da": "Anthropic hævder, at laboratoriet allerede har gjort et stort fund, men resultaterne er ikke nærmere beskrevet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic hævder et stort fund i sit biologilaboratorium, men resultatet beskrives ikke, og Claude er ikke sat fri i labet.",
-        "forbehold": "Fundet er ikke nærmere dokumenteret eller detaljeret i materialet.",
-        "emne": "anthropic biologilaboratorium"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Kākāpō Party",
       "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
       "resume": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos…",
@@ -1251,6 +1284,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Anthropic says its biology lab has already found something big",
+      "link": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "resume": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
+      "dato": "2026-09-23T22:17:39+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "eget_foerst_set": "2026-09-23T23:05:35.233139+00:00",
+      "rubrik": "Anthropic holder Claude under menneskelig kontrol i biolab",
+      "resume_da": "Anthropic hævder, at laboratoriet allerede har gjort et stort fund, men resultaterne er ikke nærmere beskrevet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic hævder et stort fund i sit biologilaboratorium, men resultatet beskrives ikke, og Claude er ikke sat fri i labet.",
+        "forbehold": "Fundet er ikke nærmere dokumenteret eller detaljeret i materialet.",
+        "emne": "anthropic biologilaboratorium"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1431,6 +1497,7 @@
       "eget_foerst_set": "2026-09-27T19:51:10.044331+00:00",
       "rubrik": "Saturday Night Live parodierer Anthropic-chefen Dario Amodei",
       "resume_da": "I sketchen lyder replikken om Amodei: »AI er djævelen, og jeg er hans skaber«. Kilde: TechCrunch AI.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1447,7 +1514,6 @@
         "emne": "dario amodei / snl"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1751,39 +1817,6 @@
       ]
     },
     {
-      "titel": "No one is surprised that Nvidia’s Jensen Huang thinks AI fears are overblown",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
-      "resume": "The man who may stand to make the most money from the AI boom seems to think he knows better than anyone else, including researchers who have studied and worked on AI for decades. In an interview with CBS Sunday Morning, he claimed there was a \"0% chance\" of AI being the end of the […]",
-      "dato": "2026-09-20T18:50:18+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "rubrik": "Jensen Huang kalder AI-frygt overdrevet",
-      "resume_da": "Nvidia-chefen siger i et CBS Sunday Morning-interview, at der er '0% chance' for, at AI bliver enden.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Nvidia-chef siger i CBS-interview, at der er '0% chance' for, at AI bliver enden; udtalelse, ikke ny teknologi.",
-        "forbehold": "Udtalelse fra interviewperson; ingen dokumentation for påstanden.",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
       "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
       "resume": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
@@ -2048,72 +2081,6 @@
       ]
     },
     {
-      "titel": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "link": "https://huggingface.co/blog/omlx",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
-      "rubrik": "Jun Kim tiltræder Hugging Face for MLX-fællesskabet",
-      "resume_da": "Han skabte og vedligeholder oMLX og skal nu støtte MLX-udviklere hos Hugging Face.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "oMLX-skaberen Jun Kim ansættes hos Hugging Face til at støtte MLX-udviklere.",
-        "forbehold": "Personaleændring uden dokumenteret konsekvens for modeller eller værktøjer.",
-        "emne": "hugging face"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Is the AI industry really ready to slow down?",
-      "link": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
-      "resume": "On Equity, we debated whether AI executives are serious about wanting to slow down.",
-      "dato": "2026-09-20T18:56:04+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "rubrik": "TechCrunch debatterer AI-chefers opbremsning",
-      "resume_da": "I Equity-podcasten debatteres, om AI-ledere mener alvor med at bremse AI-udviklingen.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Podcastdebat om, hvorvidt AI-ledere mener alvor med at bremse udviklingen; ingen nye oplysninger eller beslutninger.",
-        "forbehold": "Meningsudveksling uden nye fakta eller kilder.",
-        "emne": "ai-branchen"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Partnering with Accenture on embedded evaluation",
       "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
       "resume": "",
@@ -2143,6 +2110,39 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "historie_dato": "2026-09-18T00:00:00+00:00",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "link": "https://huggingface.co/blog/omlx",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Jun Kim tiltræder Hugging Face for MLX-fællesskabet",
+      "resume_da": "Han skabte og vedligeholder oMLX og skal nu støtte MLX-udviklere hos Hugging Face.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "oMLX-skaberen Jun Kim ansættes hos Hugging Face til at støtte MLX-udviklere.",
+        "forbehold": "Personaleændring uden dokumenteret konsekvens for modeller eller værktøjer.",
+        "emne": "hugging face"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -2883,40 +2883,6 @@
       ]
     },
     {
-      "titel": "Improving our alignment and security efforts",
-      "link": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "resume": "",
-      "dato": "2026-08-31T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Anthropic gransker sikkerhedshændelser med Claude",
-      "resume_da": "Den 30. juli rapporterede Anthropic tre hændelser, hvor Claude-modeller fik uautoriseret adgang til rigtige computersysteme. METR skal give en uafhængig gennemgang.",
-      "billedmotiv": "A metal cabinet with three drawers, the top drawer pulled open to reveal a single small hard drive inside.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic rapporterer tre hændelser, hvor Claude-modeller fik uautoriseret adgang til rigtige systemer, og varsler METR-review.",
-        "forbehold": "Hændelserne er selvreporterede og endnu ikke uafhængigt gennemgået.",
-        "emne": "anthropic claude sikkerhed"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Designing Grok Bot for a world of persistent agents",
       "link": "https://x.ai/news/designing-grok-bot",
       "resume": "How we designed Grok Bot for agents that persist beyond a single session — from a chat history to a Bot roster, presence, a computer of the Bot’s own, and work that starts without a prompt.",
@@ -2946,6 +2912,40 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Improving our alignment and security efforts",
+      "link": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "resume": "",
+      "dato": "2026-08-31T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
+      "rubrik": "Anthropic gransker sikkerhedshændelser med Claude",
+      "resume_da": "Den 30. juli rapporterede Anthropic tre hændelser, hvor Claude-modeller fik uautoriseret adgang til rigtige computersysteme. METR skal give en uafhængig gennemgang.",
+      "billedmotiv": "A metal cabinet with three drawers, the top drawer pulled open to reveal a single small hard drive inside.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic rapporterer tre hændelser, hvor Claude-modeller fik uautoriseret adgang til rigtige systemer, og varsler METR-review.",
+        "forbehold": "Hændelserne er selvreporterede og endnu ikke uafhængigt gennemgået.",
+        "emne": "anthropic claude sikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -3903,132 +3903,6 @@
         "begrundelse": "Granskning dokumenterer at milliarddyr grænseovervågning ikke forhindrede dødsfald inden for tårnenes rækkevidde.",
         "forbehold": "AI nævnes ikke som hovedelement; sagen handler om sensorer og beredskab.",
         "emne": "mit tech review / border surveillance"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket",
-      "link": "https://techcrunch.com/2026/09/21/discover-whats-next-5-days-left-to-save-up-to-200-on-techcrunch-disrupt-2026/",
-      "resume": "Five days left to save up to $200 on your TechCrunch Disrupt 2026 pass + 50% off a second one. Join 10,000+ founders, investors, and operators at San Francisco’s Moscone West, October 13-15. Grab your ticket savings before prices go up on September 25 at 11:59 p.m. PT.",
-      "dato": "2026-09-21T19:25:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-20T16:28:19.849234+00:00",
-      "eget_foerst_set": "2026-09-21T21:13:22.292595+00:00",
-      "rubrik": "TechCrunch Disrupt-billet stiger i pris 25. september",
-      "resume_da": "Rabatten på op til 200 dollar på billetter til konferencen i San Francisco 13.-15. oktober gælder til 25. september kl. 23.59 PT; en anden billet koster 50 procent mindre.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Rabatannonce for TechCrunch Disrupt 2026 med frist 25. september. Ingen AI-nyhed.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ],
-      "historie_dato": "2026-09-20T21:41:08+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/23/3-days-left-to-save-up-to-200-and-make-impactful-connections-at-techcrunch-disrupt-2026/",
-          "rubrik": "TechCrunch Disrupt 2026 skærer 200 dollars af billetten",
-          "resume_da": "Rabatten udløber 25. september klokken 23.59 PT, og en ekstra billet gives med 50 procent rabat.",
-          "dato": "2026-09-23 14:00:00+00:00",
-          "foerst_set": "2026-09-23T19:47:07.099847+00:00"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/22/4-days-to-save-up-to-200-reason-2-of-5-to-be-at-techcrunch-disrupt-2026/",
-          "rubrik": "TechCrunch Disrupt sænker billetpriser frem til 25. september",
-          "resume_da": "Spar op til 200 dollar og få et andet kort til halv pris, før priserne stiger 25. september klokken 23.59 PT.",
-          "dato": "2026-09-22 14:00:00+00:00",
-          "foerst_set": "2026-09-22T19:51:24.838792+00:00"
-        },
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
-          "rubrik": "TechCrunch Disrupt 2026: billetpriser stiger om 6 dage",
-          "resume_da": "Den nuværende pris gælder til 25. september kl. 23.59 PT, og indtil da kan deltagere spare op til 200 dollar på billetten.",
-          "dato": "2026-09-20 21:41:08+00:00",
-          "foerst_set": "2026-09-20T16:28:19.849234+00:00"
-        }
-      ]
-    },
-    {
-      "titel": "ScrollEd wants to turn textbooks into TikTok",
-      "link": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/",
-      "resume": "ScrollEd turns textbooks into a scrollable, Instagram-like feed with video, audio, and quizzes. The Palo Alto startup, founded by student co-founders (and spouses) Utsav Gupta and Rebecca Neff, pitches at TechCrunch Disrupt.",
-      "dato": "2026-09-20T18:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "eget_foerst_set": "2026-09-20T19:01:37.066671+00:00",
-      "rubrik": "ScrollEd omdanner lærebøger til Instagram-lignende feed",
-      "resume_da": "Palo Alto-startuppet, grundlagt af Utsav Gupta og Rebecca Neff, præsenterer et scrollbart feed med video, lyd og quiz ved TechCrunch Disrupt.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Startuppet ScrollEd viser et TikTok-lignende læringsfeed ved TechCrunch Disrupt; AI nævnes ikke i materialet.",
-        "forbehold": "Kun pitchomtale; ingen oplysninger om teknik, pris eller adgang.",
-        "emne": "scrolled"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
-      "link": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
-      "resume": "Before recent high-profile hacks raised the specter of AI possibly \"killing all humans,\" our energy systems were already disturbingly vulnerable to cyberattack - and the risk is growing. \"We were always prey. We were just kind of surviving at the appetite of our predators,\" Joshua Corman, executive in residence for public safety and resilience at […]",
-      "dato": "2026-09-20T12:00:00+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-09-20T12:36:13.066520+00:00",
-      "eget_foerst_set": "2026-09-20T12:36:13.066520+00:00",
-      "rubrik": "Joshua Corman peger på mennesker som største cyberrisiko",
-      "resume_da": "Ifølge Corman har energisystemer længe været sårbare over for cyberangreb, og risikoen vokser. Han beskriver systemerne som bytte for rovdyr.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Energisystemers cyber-sårbarhed omtales med AI som perifer trussel; ingen ny konkret AI-hændelse.",
-        "forbehold": "Bygger på en enkelt eksperts vurdering.",
-        "emne": "energisikkerhed"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -21260,6 +21134,86 @@
       "billedmotiv_instruks": "f9353734a0f860968ac4",
       "billede": "data/img/1dcd4c252d0f061c.webp",
       "side": "artikel/656dc5dcef2da3c0.html"
+    },
+    {
+      "titel": "Engram is a sampler that turns broken AI hallucinations into music",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+      "resume": "Music startup Thoughtful Things has just launched the Kickstarter campaign for its first instrument, Engram. It's a sampler and groovebox that uses AI to mangle incoming audio and even hallucinate completely new sounds. This isn't Suno in a box, though. This isn't a \"push-button, get-song\" device, aimed at creating something that sounds ready for top-40 […]",
+      "dato": "2026-09-27T16:46:36-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "eget_foerst_set": "2026-09-27T23:20:35.908948+00:00",
+      "rubrik": "Engram lader AI hallucinere nye lyde",
+      "resume_da": "Sampleren kører sin egen lille AI-model uden internet og forvrænger optaget lyd til skæve klange. Kickstarter-startpris er 675 dollar.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kickstarter for Engram, groovebox der bruger AI til at omdanne lyd og hallucinere nye lyde.",
+        "forbehold": "Kickstarter-finansieret hardware; ikke uafhængigt testet.",
+        "emne": "thoughtful things / engram"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Engram forvrænger lyd frem for at lave sange",
+          "tekst": "Musikstart-up'en Thoughtful Things har netop åbnet Kickstarter-kampagnen for sit første instrument, Engram. Det er en sampler og groovebox – en maskine, der optager lyde og sætter dem i rytmer – som bruger AI til at mishandle den indgående lyd og til at hallucinere helt nye klange.\n\nDet er med vilje ikke en sangmaskine. Kilden slår fast, at Engram ikke er en 'Suno i en æske' eller en enhed, hvor man trykker på en knap og får en radiohit-klar sang. Formålet er eksperimentelle, uhyggelige lyde og at presse AI-lydmodeller ud over deres grænser."
+        },
+        {
+          "overskrift": "Lille AI-model kører lokalt uden internet",
+          "tekst": "Engram er ikke forbundet med internettet. I stedet kører den en 'tiny AI' lokalt på maskinen selv, og modellen er designet og trænet internt hos Thoughtful Things.\n\nIfølge virksomheden er modellen trænet på åbne datasæt, der kun indeholder lyd licenseret til kommerciel brug (CC-BY eller lignende), og den er aldrig trænet på ikke-kommercielt, piratkopieret eller på anden måde stjålet materiale.\n\nI kampagnevideoen bruger stifteren Evan King sin egen stemme til at bede om 'klaver', og Engram svarer med noget glitchet og svagt klaverlignende. Han beskriver Engram som en **'feltregistrator for latent plads'** – et værktøj til at udforske AI-hallucinationer og eksperimenterel lyddesign.\n\nInspirationen kommer også fra circuit bending, hvor man bevidst bryder elektronik for at få nye lyde: Brugerne skal kunne tilpasse og endda ødelægge de små AI-modeller. Firmwaren planlågges åbnet, så andre kan ændre den eller indlæse egne modeller."
+        },
+        {
+          "overskrift": "Kickstarter fra 675 dollar i begrænset oplag",
+          "tekst": "Thoughtful Things lancerer et begrænset antal Engrams gennem Kickstarter-kampagnen, og prisen starter ved 675 dollar per styk.\n\nVirksomheden har ikke meldt en egentlig butikspris ud, men 675 dollar er angivet som en rabat på 30 procent, hvilket peger på en butikspris mellem 850 og 900 dollar."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "675 dollar",
+          "label": "Kickstarter-startpris per Engram i begrænset oplag"
+        },
+        {
+          "tal": "30 procent",
+          "label": "Rabat i kampagnen sammenlignet med den forventede butikspris"
+        },
+        {
+          "tal": "850-900 dollar",
+          "label": "Forventet butikspris, ikke bekræftet af virksomheden"
+        }
+      ],
+      "detaljer": [
+        "Engram har ingen internetforbindelse og kører AI'en lokalt.",
+        "Firmwaren skal åbnes, så brugere kan indlæse egne modeller.",
+        "Træningsdata angives som lyd med kommerciel licens (CC-BY eller lignende)."
+      ],
+      "betydning": "Med åben firmware kan brugere selv tilpasse eller udskifte Engrams AI-model i stedet for kun at bruge fabrikkens version.",
+      "pointer": [
+        "Sampler med AI, helt uden internet",
+        "Trænet på lyd med kommerciel licens",
+        "Kickstarter-pris fra 675 dollar"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-09-27T23:36:04.088507+00:00"
+      },
+      "billedmotiv": "A compact sampler groovebox sits front-on as a solid rectangular unit with thick knobs, a smooth rounded sine wave entering one side and emerging as jagged, skewed glitch tones, while a small model cartridge slides out of an open slot showing the replaceable local AI model that distorts audio offline.",
+      "billedmotiv_instruks": "bc8378050da489ca0222",
+      "billede": "data/img/b598f702e56b9175.webp",
+      "side": "artikel/14fc67fa9a509213.html"
     }
   ]
 }
