@@ -1,17 +1,25 @@
 {
-  "opdateret": "2026-09-26T23:06:36.145833+00:00",
+  "opdateret": "2026-09-27T05:38:31.712741+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
+    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
   ],
-  "input_fingerprint": "f8882f213398c00e",
-  "forklaring": "Udgavekontrol fejlede: IncompleteRead",
-  "modelkald": 7,
-  "kildehentninger": 2,
+  "input_fingerprint": "87d34ca47a2558ca",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Hovedhistorien om OpenAI er faktuelt dækket af både OpenAI-rapporten og The Verge (DNS-hullet, 15 minutter, 2,5 time, ophængt træning/evaluering/inference, 53 billeder, to blokeringslag) – men anbefalingerne holder ikke samme standard.",
+    "Anbefaling 3e5c288472f5aa9b (Flipkart/Gemini) har sektioner: null – kun titel og RSS-resumé. Ufærdig tekst, må ikke udgives.",
+    "Anbefaling 669d8cd0cb0cb12c (Kākāpō Party/Claude Opus 5.5) har sektioner: null – kun RSS-resumé. Ufærdig tekst.",
+    "Anbefaling 3eda5db8c05960eb (Blue Cross) har ingen kilder. De 942 mio. dollars over to år findes kun i RSS-resuméet; citaterne fra Dr. Shiv Rao og Luke Chalker samt påstanden om, at behandlingen ikke ændrede sig, findes ikke i noget læst materiale.",
+    "Anbefaling 2a2deb3a612229aa (Meta-briller) har ingen kilder. Seks mikrofoner, fem års udvikling, Muse-integrationen, demofejlen og 50 mio. amerikanere med høretab er ikke dokumenteret i det vedlagte materiale; kun 150 vs. 1.600 dollars fremgår af kandidatoversigten.",
+    "Dato-detalje i hovedhistorien: »lørdag aften 25. september« gengives ordret fra The Verge, men 25. september 2026 er en fredag – datoen bør tjekkes, før artiklen bringes."
+  ],
+  "modelkald": 8,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -22,14 +30,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -39,6 +39,14 @@
     },
     {
       "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -47,7 +55,11 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1179 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1131 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 913 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -62,12 +74,16 @@
     {
       "link": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/hugging-face-incident-and-misalignment/",
+      "grundlag": "utilgaengelig"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/"
+    "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
   ],
   "afventer_artikler": 117
 }

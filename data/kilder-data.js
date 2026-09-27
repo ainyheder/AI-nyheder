@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-26T23:06:36.145833+00:00",
- "artikler_i_alt": 86,
+ "opdateret": "2026-09-27T05:38:31.712741+00:00",
+ "artikler_i_alt": 83,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -222,7 +222,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 2,
+   "i_listen": 1,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -240,15 +240,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-25T20:06:37",
      "link": "https://simonwillison.net/2026/Sep/25/john-gruber/",
      "side": "artikel/9a043ee76389049b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Code læser AGENTS.md, når filen mangler",
-     "dato": "2026-09-18T19:09:27",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
-     "side": "artikel/1b2472f5f0e87be0.html",
      "hvor": "forside",
      "under": ""
     }
@@ -270,9 +261,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
+   "i_listen": 30,
    "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Meta viste kamerafri briller og hørehjælp",
+     "dato": "",
+     "foerst_set": "2026-09-26T05:22:21.927947+00:00",
+     "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer kamerafri Ray-Ban Meta Audio-briller"
+    },
+    {
+     "rubrik": "Nscale henter 3,36 milliarder dollar før IPO",
+     "dato": "",
+     "foerst_set": "2026-09-25T20:06:37.963120+00:00",
+     "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nscale børsnotering hviler på kun to kunder"
+    },
     {
      "rubrik": "Meta sender Muse forbi 3,4 millioner downloads",
      "dato": "",
@@ -337,15 +346,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Meta viste kamerafri briller og hørehjælp",
-     "dato": "2026-09-26T01:08:57",
-     "foerst_set": "2026-09-26T05:22:21",
-     "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
-     "side": "artikel/e0c16d6f1c1de1ee.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI-agenter lækkede 53 brugerbilleder på nettet",
      "dato": "2026-09-25T22:20:47",
      "foerst_set": "2026-09-25T23:28:32",
@@ -400,15 +400,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nscale henter 3,36 milliarder dollar før IPO",
-     "dato": "2026-09-25T18:33:59",
-     "foerst_set": "2026-09-25T20:06:37",
-     "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-     "side": "artikel/38b884af57575000.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Astra og Opus knækkede to Enigma-beskeder",
      "dato": "2026-09-25T17:24:36",
      "foerst_set": "2026-09-25T20:06:37",
@@ -432,6 +423,24 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
      "side": "artikel/e65dfd0080c22eeb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Photos skaber digital garderobe fra dine fotos",
+     "dato": "2026-09-24T17:00:00",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
+     "side": "artikel/1ac6e3fa768eb33f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "ElevenLabs accepterer lavere marginer for markedsandel",
+     "dato": "2026-09-24T16:35:13",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
+     "side": "artikel/84fff22728605782.html",
      "hvor": "forside",
      "under": ""
     }
