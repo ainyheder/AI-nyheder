@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-09-27T14:14:33.008518+00:00",
+  "opdateret": "2026-09-27T19:51:10.044331+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,10 +8,10 @@
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
   ],
-  "input_fingerprint": "3d6dc74663ecfa26",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 960b51012f8d643a: skriveopgave har 994 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
-  "kildehentninger": 3,
+  "input_fingerprint": "82d60a9ee391a1ba",
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 6,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -26,23 +26,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -62,21 +50,25 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1147 tegn; skriv 12-900 tegn i dette felt"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 1059 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 960b51012f8d643a: skriveopgave har 994 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
       "grundlag": "kildetekst"
     },
     {
@@ -86,6 +78,14 @@
     {
       "link": "https://openai.com/hugging-face-incident-and-misalignment/",
       "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
@@ -93,5 +93,5 @@
     "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
     "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/"
   ],
-  "afventer_artikler": 123
+  "afventer_artikler": 124
 }

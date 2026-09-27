@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-27T14:14:33.008518+00:00",
+ "opdateret": "2026-09-27T19:51:10.044331+00:00",
  "artikler_i_alt": 83,
  "kilder": [
   {
@@ -584,7 +584,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Meta vil anbefale AI-spil på Facebook og Instagram",
-     "dato": "2026-09-24T13:52:29",
+     "dato": "2026-09-24T17:52:29",
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
      "side": "artikel/c8ce86916686a255.html",
