@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-28T06:21:29.297845+00:00",
+ "genereret": "2026-09-28T17:47:43.725511+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,24 +195,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-28T05:46:19.491915+00:00",
-  "antal": 84,
-  "med_billede": 62,
-  "paa_dansk": 84,
+  "opdateret": "2026-09-28T16:58:31.293342+00:00",
+  "antal": 89,
+  "med_billede": 61,
+  "paa_dansk": 89,
   "kategorier": {
-   "Samfund \u0026 etik": 22,
-   "Penge \u0026 marked": 16,
+   "Samfund \u0026 etik": 24,
+   "Penge \u0026 marked": 19,
    "Lanceringer": 17,
    "Politik \u0026 jura": 12,
    "Hverdags-AI": 13,
    "Forskning": 4
   },
   "kilder": {
-   "The Verge AI": 23,
-   "TechCrunch AI": 30,
+   "The Verge AI": 24,
+   "TechCrunch AI": 33,
    "Ars Technica AI": 13,
+   "MIT Tech Review AI": 6,
    "Simon Willison AI": 1,
-   "MIT Tech Review AI": 5,
    "Google DeepMind": 2,
    "Anthropic News": 4,
    "xAI News": 2,
@@ -222,37 +222,87 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
-    "titel": "OpenAI pauses training of its ‘most capable models’",
-    "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-    "side": "artikel/ff2e233268a7a84e.html",
+    "titel": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
+    "rubrik": "Nvidia indeslutter AI-agenter på millisekunder",
+    "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+    "side": "artikel/9dde4897f10a537d.html",
     "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
-    "dato": "2026-09-26T12:34:59-04:00",
-    "billede": "data/img/182da8a1d0c28b72.webp"
-   },
-   {
-    "titel": "Insurers claim AI is already increasing healthcare costs",
-    "rubrik": "Blue Cross: AI-brug kostede 942 mio. dollars ekstra",
-    "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-    "side": "artikel/db474621d18afa36.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-26T21:02:06+00:00",
+    "dato": "2026-09-28T09:36:06-04:00",
     "billede": ""
    },
    {
-    "titel": "Engram is a sampler that turns broken AI hallucinations into music",
-    "rubrik": "Engram lader AI hallucinere nye lyde",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
-    "side": "artikel/14fc67fa9a509213.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-27T16:46:36-04:00",
-    "billede": "data/img/b598f702e56b9175.webp"
+    "titel": "Viral AI agent Instinct raises $1B Series C at a $10B valuation",
+    "rubrik": "Instinct firedobles til 10 milliarder på én måned",
+    "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+    "side": "artikel/4c0a92efb1ccb759.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-28T13:38:48+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Who’s liable when AI agents go rogue?",
+    "rubrik": "OpenAI-agenter hackede, loven kræver $1 mia. skade",
+    "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+    "side": "artikel/9df3eed3c7ef4ca1.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-28T08:06:22+00:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
+    "rubrik": "Nvidia indeslutter AI-agenter på millisekunder",
+    "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+    "side": "artikel/9dde4897f10a537d.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-28T09:36:06-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Viral AI agent Instinct raises $1B Series C at a $10B valuation",
+    "rubrik": "Instinct firedobles til 10 milliarder på én måned",
+    "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+    "side": "artikel/4c0a92efb1ccb759.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-28T13:38:48+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Modulate raises $25M for its voice models and analysis suite",
+    "rubrik": "Modulate henter 25 mio. dollar til stemme-AI",
+    "link": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+    "side": "artikel/c427bd6569680f96.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-28T14:05:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Who’s liable when AI agents go rogue?",
+    "rubrik": "OpenAI-agenter hackede, loven kræver $1 mia. skade",
+    "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+    "side": "artikel/9df3eed3c7ef4ca1.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-09-28T08:06:22+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Insurtech Outmarket raises $34.5M just months after prior round",
+    "rubrik": "Outmarket henter 34,5 mio. dollar i Series B",
+    "link": "https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/",
+    "side": "artikel/743718b6f714d8dd.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-28T14:00:00+00:00",
+    "billede": ""
+   },
    {
     "titel": "Engram is a sampler that turns broken AI hallucinations into music",
     "rubrik": "Engram lader AI hallucinere nye lyde",
@@ -274,6 +324,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/48887526d5f1a29f.webp"
    },
    {
+    "titel": "OpenAI agents tried to ‘bruteforce’ a UN website",
+    "rubrik": "OpenAI-agenter skannede FN-site over 16.000 gange",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+    "side": "artikel/113b2d34672f059d.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-09-27T13:21:07-04:00",
+    "billede": ""
+   },
+   {
     "titel": "Insurers claim AI is already increasing healthcare costs",
     "rubrik": "Blue Cross: AI-brug kostede 942 mio. dollars ekstra",
     "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
@@ -282,16 +342,6 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-26T21:02:06+00:00",
     "billede": ""
-   },
-   {
-    "titel": "OpenAI pauses training of its ‘most capable models’",
-    "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-    "side": "artikel/ff2e233268a7a84e.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-26T12:34:59-04:00",
-    "billede": "data/img/182da8a1d0c28b72.webp"
    },
    {
     "titel": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
@@ -322,75 +372,25 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-09-25T21:10:51+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-    "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
-    "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-    "side": "artikel/4dc5a9b388b90b3e.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T23:11:10+00:00",
-    "billede": "data/img/c6ed674ef0f62dbd.webp"
-   },
-   {
-    "titel": "Some Supabase customers are publicly exposing reams of people’s data to the web",
-    "rubrik": "Supabase: 16.000 databaser har eksponeret persondata",
-    "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-    "side": "artikel/137693ab52f61b0c.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T17:29:46+00:00",
-    "billede": "data/img/cda8830e2454fe29.webp"
-   },
-   {
-    "titel": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
-    "rubrik": "CESifo-studie finder ingen AI-effekt på nyuddannedes ledighed",
-    "link": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-    "side": "artikel/9c42d9f4906b8af0.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-09-25T19:11:05+00:00",
-    "billede": "data/img/43e688704d8396ad.webp"
-   },
-   {
-    "titel": "Quoting John Gruber",
-    "rubrik": "John Gruber advarer mod Metas Muse",
-    "link": "https://simonwillison.net/2026/Sep/25/john-gruber/",
-    "side": "artikel/9a043ee76389049b.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-09-25T17:22:01+00:00",
-    "billede": "data/img/48aabe7c41f24321.webp"
-   },
-   {
-    "titel": "Anthropic’s founders seek voting control ahead of IPO",
-    "rubrik": "Anthropic-stiftere kræver 50,1% kontrol før børsnotering",
-    "link": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/",
-    "side": "artikel/e3cc5ff4f95d9b90.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-09-25T15:40:03+00:00",
-    "billede": "data/img/d0fe2a90729141af.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-28T05:46:19.491915+00:00",
+  "opdateret": "2026-09-28T16:58:31.293342+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
-  "kildehentninger": 5,
+  "modelkald": 5,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-   "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-   "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/"
+   "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
+   "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
+   "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-   "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-   "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music"
+   "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+   "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+   "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/"
   ],
   "vaerktoejer": [
    {
@@ -414,22 +414,6 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
@@ -440,14 +424,6 @@ window.KOMMANDO_DATA = {
    {
     "vaerktoej": "laes_kilde",
     "fejl": null
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 960b51012f8d643a: skriveopgave har 921 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -456,29 +432,21 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
+    "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+    "link": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-28T05:46:19.109708+00:00",
+  "opdateret": "2026-09-28T16:58:30.922737+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -834,8 +802,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-28T05:46:19.491915+00:00",
-  "artikler_i_alt": 84,
+  "opdateret": "2026-09-28T16:58:31.293342+00:00",
+  "artikler_i_alt": 89,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1072,7 +1040,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
+    "i_listen": 33,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1139,6 +1107,33 @@ window.KOMMANDO_DATA = {
       "under": "Amazon blokerer Metas Muse-agent i butikken"
      },
      {
+      "rubrik": "Instinct firedobles til 10 milliarder på én måned",
+      "dato": "2026-09-28T13:38:48",
+      "foerst_set": "2026-09-28T16:58:31",
+      "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+      "side": "artikel/4c0a92efb1ccb759.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Modulate henter 25 mio. dollar til stemme-AI",
+      "dato": "2026-09-28T14:05:00",
+      "foerst_set": "2026-09-28T16:58:31",
+      "link": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+      "side": "artikel/c427bd6569680f96.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Outmarket henter 34,5 mio. dollar i Series B",
+      "dato": "2026-09-28T14:00:00",
+      "foerst_set": "2026-09-28T16:58:31",
+      "link": "https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/",
+      "side": "artikel/743718b6f714d8dd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Amodei møder Trump til middag første gang",
       "dato": "2026-09-27T20:34:28",
       "foerst_set": "2026-09-27T23:20:35",
@@ -1155,33 +1150,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/db474621d18afa36.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "OpenAI-agenter lækkede 53 brugerbilleder på nettet",
-      "dato": "2026-09-25T22:20:47",
-      "foerst_set": "2026-09-25T23:28:32",
-      "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-      "side": "artikel/9550a58b2b1b218d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Crusoe dropper $1,25 mia. Boom-turbiner",
-      "dato": "2026-09-25T23:11:10",
-      "foerst_set": "2026-09-25T23:28:32",
-      "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-      "side": "artikel/4dc5a9b388b90b3e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Supabase: 16.000 databaser har eksponeret persondata",
-      "dato": "2026-09-25T17:29:46",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-      "side": "artikel/137693ab52f61b0c.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1195,7 +1163,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 23,
+    "i_listen": 24,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -1271,6 +1239,15 @@ window.KOMMANDO_DATA = {
       "under": "Meta Muse kan kapres af enhver lokal app"
      },
      {
+      "rubrik": "Nvidia indeslutter AI-agenter på millisekunder",
+      "dato": "2026-09-28T09:36:06",
+      "foerst_set": "2026-09-28T16:58:31",
+      "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+      "side": "artikel/9dde4897f10a537d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Engram lader AI hallucinere nye lyde",
       "dato": "2026-09-27T16:46:36",
       "foerst_set": "2026-09-27T23:20:35",
@@ -1280,11 +1257,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
-      "dato": "2026-09-26T12:34:59",
-      "foerst_set": "2026-09-26T19:20:07",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-      "side": "artikel/ff2e233268a7a84e.html",
+      "rubrik": "OpenAI-agenter skannede FN-site over 16.000 gange",
+      "dato": "2026-09-27T13:21:07",
+      "foerst_set": "2026-09-27T19:51:10",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+      "side": "artikel/113b2d34672f059d.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1294,15 +1271,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-25T20:06:37",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
       "side": "artikel/c01ce16603fc2590.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Sony og UMG anklager Suno for modelhvidvask",
-      "dato": "2026-09-25T11:51:56",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
-      "side": "artikel/548f5a0f314c2af0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1441,9 +1409,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 5,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "OpenAI-agenter hackede, loven kræver $1 mia. skade",
+      "dato": "2026-09-28T08:06:22",
+      "foerst_set": "2026-09-28T16:58:31",
+      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+      "side": "artikel/9df3eed3c7ef4ca1.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
       "dato": "2026-09-25T09:16:25",
@@ -1578,11 +1555,11 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-28T06:21:22.893452+00:00",
+  "opdateret": "2026-09-28T17:47:37.509581+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 38,
+  "besoeg_i_alt": 39,
   "sidevisninger_i_alt": 77,
   "ai_chat_besoeg": 0,
   "serie": [
@@ -1740,7 +1717,7 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 38,
+    "besoeg": 39,
     "visninger": 75
    },
    {
@@ -1767,7 +1744,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 35
+    "besoeg": 36
    },
    {
     "fra": "dk.search.yahoo.com",

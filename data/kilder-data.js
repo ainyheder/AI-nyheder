@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-28T05:46:19.491915+00:00",
- "artikler_i_alt": 84,
+ "opdateret": "2026-09-28T16:58:31.293342+00:00",
+ "artikler_i_alt": 89,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -266,7 +266,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
+   "i_listen": 33,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -331,6 +331,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon blokerer Metas Muse-agent i butikken"
+    },
+    {
+     "rubrik": "Instinct firedobles til 10 milliarder på én måned",
+     "dato": "2026-09-28T13:38:48",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+     "side": "artikel/4c0a92efb1ccb759.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Modulate henter 25 mio. dollar til stemme-AI",
+     "dato": "2026-09-28T14:05:00",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+     "side": "artikel/c427bd6569680f96.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Outmarket henter 34,5 mio. dollar i Series B",
+     "dato": "2026-09-28T14:00:00",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/",
+     "side": "artikel/743718b6f714d8dd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Amodei møder Trump til middag første gang",
@@ -412,33 +439,6 @@ window.KILDER_STATUS = {
      "side": "artikel/656dc5dcef2da3c0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google lader Gemini ringe til butikker for dig",
-     "dato": "2026-09-24T16:00:00",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
-     "side": "artikel/8264311d35348922.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Oracle sender force majeure-varsel om Stargate-campussen",
-     "dato": "2026-09-24T18:11:44",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
-     "side": "artikel/e65dfd0080c22eeb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google Photos skaber digital garderobe fra dine fotos",
-     "dato": "2026-09-24T17:00:00",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
-     "side": "artikel/1ac6e3fa768eb33f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -462,7 +462,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
+   "i_listen": 24,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -538,6 +538,15 @@ window.KILDER_STATUS = {
      "under": "Meta Muse kan kapres af enhver lokal app"
     },
     {
+     "rubrik": "Nvidia indeslutter AI-agenter på millisekunder",
+     "dato": "2026-09-28T09:36:06",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+     "side": "artikel/9dde4897f10a537d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Engram lader AI hallucinere nye lyde",
      "dato": "2026-09-27T16:46:36",
      "foerst_set": "2026-09-27T23:20:35",
@@ -547,11 +556,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI pauser træning efter model udnyttede smuthul",
-     "dato": "2026-09-26T12:34:59",
-     "foerst_set": "2026-09-26T19:20:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-     "side": "artikel/ff2e233268a7a84e.html",
+     "rubrik": "OpenAI-agenter skannede FN-site over 16.000 gange",
+     "dato": "2026-09-27T13:21:07",
+     "foerst_set": "2026-09-27T19:51:10",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+     "side": "artikel/113b2d34672f059d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -575,7 +584,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsoft Copilot samler chat, kode og agenter",
-     "dato": "2026-09-25T08:00:00",
+     "dato": "2026-09-25T12:00:00",
      "foerst_set": "2026-09-25T14:07:11",
      "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
      "side": "artikel/7c931ccb38262d95.html",
@@ -633,15 +642,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T13:44:47",
      "link": "https://www.theverge.com/ai-artificial-intelligence/999874/openai-agents-hacked-an-australian-government-website-in-search-for-data",
      "side": "artikel/0b9f26daa2c7f84b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google: Gemini 4 kommer før tid",
-     "dato": "2026-09-24T09:04:18",
-     "foerst_set": "2026-09-24T13:44:47",
-     "link": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
-     "side": "artikel/fc26726d9b3ca816.html",
      "hvor": "forside",
      "under": ""
     }
@@ -813,9 +813,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "OpenAI-agenter hackede, loven kræver $1 mia. skade",
+     "dato": "2026-09-28T08:06:22",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+     "side": "artikel/9df3eed3c7ef4ca1.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
      "dato": "2026-09-25T09:16:25",
