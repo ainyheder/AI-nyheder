@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-09-27T23:20:35.908948+00:00",
- "artikler_i_alt": 83,
+ "opdateret": "2026-09-28T05:46:19.491915+00:00",
+ "artikler_i_alt": 84,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -266,7 +266,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 29,
+   "i_listen": 30,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -331,6 +331,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon blokerer Metas Muse-agent i butikken"
+    },
+    {
+     "rubrik": "Amodei møder Trump til middag første gang",
+     "dato": "2026-09-27T20:34:28",
+     "foerst_set": "2026-09-27T23:20:35",
+     "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+     "side": "artikel/920676792664d129.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Blue Cross: AI-brug kostede 942 mio. dollars ekstra",
@@ -428,15 +437,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-24T20:05:24",
      "link": "https://techcrunch.com/2026/09/24/google-photos-clueless-inspired-virtual-closet-is-now-available-on-android-and-ios/",
      "side": "artikel/1ac6e3fa768eb33f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "ElevenLabs accepterer lavere marginer for markedsandel",
-     "dato": "2026-09-24T16:35:13",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
-     "side": "artikel/84fff22728605782.html",
      "hvor": "forside",
      "under": ""
     }

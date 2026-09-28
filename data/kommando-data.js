@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-09-27T23:47:30.295854+00:00",
+ "genereret": "2026-09-28T06:21:29.297845+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,22 +195,22 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-09-27T23:20:35.908948+00:00",
-  "antal": 83,
-  "med_billede": 61,
-  "paa_dansk": 83,
+  "opdateret": "2026-09-28T05:46:19.491915+00:00",
+  "antal": 84,
+  "med_billede": 62,
+  "paa_dansk": 84,
   "kategorier": {
    "Samfund \u0026 etik": 22,
-   "Lanceringer": 17,
-   "Politik \u0026 jura": 11,
    "Penge \u0026 marked": 16,
+   "Lanceringer": 17,
+   "Politik \u0026 jura": 12,
    "Hverdags-AI": 13,
    "Forskning": 4
   },
   "kilder": {
    "The Verge AI": 23,
+   "TechCrunch AI": 30,
    "Ars Technica AI": 13,
-   "TechCrunch AI": 29,
    "Simon Willison AI": 1,
    "MIT Tech Review AI": 5,
    "Google DeepMind": 2,
@@ -262,6 +262,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-09-27T16:46:36-04:00",
     "billede": "data/img/b598f702e56b9175.webp"
+   },
+   {
+    "titel": "Anthropic’s CEO is about to have dinner with President Trump",
+    "rubrik": "Amodei møder Trump til middag første gang",
+    "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+    "side": "artikel/920676792664d129.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-09-27T20:34:28+00:00",
+    "billede": "data/img/48887526d5f1a29f.webp"
    },
    {
     "titel": "Insurers claim AI is already increasing healthcare costs",
@@ -362,30 +372,20 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-09-25T15:40:03+00:00",
     "billede": "data/img/d0fe2a90729141af.webp"
-   },
-   {
-    "titel": "One company is at the center of a wave of rogue AI attacks",
-    "rubrik": "Fejl hos Irregular sendte AI-agenter efter rigtige mål",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-    "side": "artikel/c01ce16603fc2590.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-09-25T11:39:48-04:00",
-    "billede": "data/img/c36f50d40f9453e8.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-09-27T23:20:35.908948+00:00",
+  "opdateret": "2026-09-28T05:46:19.491915+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "modelkald": 7,
   "kildehentninger": 5,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
    "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
-   "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music"
+   "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
@@ -394,18 +394,6 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
     "vaerktoej": "find_kilder",
     "fejl": null
    },
@@ -422,12 +410,44 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
     "vaerktoej": "laes_kilde",
     "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 960b51012f8d643a: skriveopgave har 921 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -444,21 +464,21 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
-    "grundlag": "kildetekst"
-   },
-   {
     "link": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://openai.com/hugging-face-incident-and-misalignment/",
-    "grundlag": "utilgaengelig"
+    "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-09-27T23:20:35.524479+00:00",
+  "opdateret": "2026-09-28T05:46:19.109708+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -814,8 +834,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-09-27T23:20:35.908948+00:00",
-  "artikler_i_alt": 83,
+  "opdateret": "2026-09-28T05:46:19.491915+00:00",
+  "artikler_i_alt": 84,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1052,7 +1072,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 29,
+    "i_listen": 30,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1119,6 +1139,15 @@ window.KOMMANDO_DATA = {
       "under": "Amazon blokerer Metas Muse-agent i butikken"
      },
      {
+      "rubrik": "Amodei møder Trump til middag første gang",
+      "dato": "2026-09-27T20:34:28",
+      "foerst_set": "2026-09-27T23:20:35",
+      "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+      "side": "artikel/920676792664d129.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Blue Cross: AI-brug kostede 942 mio. dollars ekstra",
       "dato": "2026-09-26T21:02:06",
       "foerst_set": "2026-09-26T23:06:36",
@@ -1151,15 +1180,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-25T20:06:37",
       "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
       "side": "artikel/137693ab52f61b0c.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic-stiftere kræver 50,1% kontrol før børsnotering",
-      "dato": "2026-09-25T15:40:03",
-      "foerst_set": "2026-09-25T20:06:37",
-      "link": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/",
-      "side": "artikel/e3cc5ff4f95d9b90.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1558,19 +1578,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-09-27T23:47:26.435177+00:00",
+  "opdateret": "2026-09-28T06:21:22.893452+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 39,
+  "besoeg_i_alt": 38,
   "sidevisninger_i_alt": 77,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-08-29",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-08-30",
     "besoeg": 0,
@@ -1715,12 +1730,17 @@ window.KOMMANDO_DATA = {
     "dato": "2026-09-27",
     "besoeg": 10,
     "visninger": 10
+   },
+   {
+    "dato": "2026-09-28",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 39,
+    "besoeg": 38,
     "visninger": 75
    },
    {
@@ -1747,7 +1767,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 36
+    "besoeg": 35
    },
    {
     "fra": "dk.search.yahoo.com",
