@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-02T15:52:35.211239+00:00",
+ "opdateret": "2026-10-02T21:45:12.240753+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,8 +67,8 @@ window.LAESERTAL = {
      0,
      1,
      0,
-     1,
-     0
+     2,
+     1
     ]
    },
    {
@@ -101,9 +101,9 @@ window.LAESERTAL = {
      1,
      3,
      0,
+     2,
      1,
-     1,
-     0
+     3
     ]
    },
    {
@@ -135,9 +135,9 @@ window.LAESERTAL = {
      1,
      0,
      3,
-     0,
      1,
-     2,
+     1,
+     3,
      1
     ]
    },
@@ -170,9 +170,9 @@ window.LAESERTAL = {
      1,
      1,
      1,
-     0,
+     1,
      2,
-     5,
+     6,
      0
     ]
    },
@@ -205,10 +205,10 @@ window.LAESERTAL = {
      0,
      1,
      0,
-     0,
-     3,
      1,
-     0
+     3,
+     2,
+     1
     ]
    },
    {
@@ -278,26 +278,61 @@ window.LAESERTAL = {
      0,
      2,
      0,
-     0
+     1
+    ]
+   },
+   {
+    "navn": "Dybde",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 20,
- "sidevisninger_i_alt": 30,
+ "besoeg_i_alt": 32,
+ "sidevisninger_i_alt": 47,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 20,
-   "visninger": 30
+   "besoeg": 32,
+   "visninger": 47
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 31
+   "besoeg": 30
   },
   {
    "fra": "dk.search.yahoo.com",
@@ -309,13 +344,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 31,
-    "visninger": 31
+    "besoeg": 30,
+    "visninger": 30
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 17
+    "visninger": 15
    },
    {
     "fra": "dk.search.yahoo.com",
