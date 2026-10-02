@@ -4,6 +4,38 @@ Nyeste øverst. Skrevet af natsessionen efter hvert færdigt punkt.
 
 ---
 
+## 2026-10-02 · Effektivisering af crawler efter gentagne to-timers afbrydelser
+
+Direkte bestilt af Torben. Mappen var ren og blev fast-forward-opdateret med
+27 datacommits fra GitHub før ændringerne. Den seneste crawlerkørsel
+36971831425 blev stoppet efter to timer før udgivelse; seneste nyhedsdata er
+fra 28. september. Den detaljerede Actions-log kræver autentifikation, så
+en præcis hidtidig flaskehals er ikke målt.
+
+Artikler behandles nu i højst tre samtidige spor med uændret kildekontrol.
+Nye/ufærdige historier får plads før arkivændringer, og færdige cachede
+historier optager ikke skrivebudgettet. Mellemresultater og nye billeder
+gemmes privat og genoptages via Actions-cache, også efter fejl. Chefens
+omskrivninger holdes tilbage indtil samlet udgavekontrol. Uændret dubletinput
+genbruger sit kontrolsvar.
+
+75 minutters AI-budget, særskilte trinbudgetter, højst 180 sekunders ventetid
+pr. netværkskald under crawl og en ydre procesgrænse på 95 minutter. MiMo
+thinking er slået fra for resuméer, vurderinger og billedmotiver, bevaret for
+artikler og kildekontrol. Højst otte nye billeder pr. kørsel og 45 sekunders
+fritlægning; originalbilledet er reserve. Ny status viser tidsforbrug pr. trin
+og AI-opgave. Nyhedsbrevets selvstændige tidsbudget er bevaret.
+
+Kontrol: alle 15 testgrupper fra crawl-workflow bestået med bundlet Python;
+fire valgfrie Pooch-modeldownload-tests sprunget over. De ti nye driftstests
+dækker genoptagelse, parallel godkendelse/afvisning, billedgenbrug, budgetstop
+og cache-invalidering. YAML-parsing og diff-kontrol bestået. Ingen betalte
+modelkald, udsendelser eller ændringer af publicerede artikler i testen.
+Faktisk køretid og liveudgivelse afventer upload og første GitHub-kørsel.
+Ændringerne er ucommittede som krævet af projektets arbejdsinstruks.
+
+---
+
 ## 2026-09-01 kl. 04:03 · Sprang over — mappen er 289 commits bagud
 
 **UAFHENTET ARBEJDE ØVERST, som instruksen kræver:** de samme seks filer ligger

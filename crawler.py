@@ -18,6 +18,7 @@ import json
 import redaktion
 import udgivelse
 import modellanceringer
+from _redaktion.crawl_drift import Drift, TidOpbrugt
 from _redaktion.ai_indstillinger import DEEPSEEK_REASONING, DEEPSEEK_TIMEOUT, deepseek_parametre, validate_thinking, gemini_thinking
 import redaktoer_agent
 from kommandocentral import skriv_kommando_data
@@ -35,6 +36,24 @@ from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
+from contextlib import nullcontext
+
+_drift = None  # Kun aktiv under et crawl; nyhedsbrevet beholder sine egne budgetter.
+_model_lock = Lock()
+
+
+def gem_fremskridt(artikler):
+    if _drift:
+        try:
+            _drift.gem(artikler)
+        except OSError as fejl:
+            print(f'💾 Mellemlagring fejlede: {type(fejl).__name__}; fortsætter udgivelsen')
+
+
+def koer_trin(navn, minutter, funktion, *args, **kwargs):
+    with _drift.fase(navn, minutter) if _drift else nullcontext():
+        return funktion(*args, **kwargs)
 
 # ----- Indstillinger ---------------------------------------------------------
 
@@ -95,7 +114,7 @@ BILLED_MAPPE = ROOT / "data" / "img"
 # (`src="data/img/…"`). Krævede mønstret skråstregen, ville ugesidens billeder
 # ikke være fredet - og det var netop dem, oprydningen havde slettet.
 _BILLED_I_HTML = re.compile(r"\bdata/img/([0-9a-f]{16}\.(?:jpg|webp))")
-MAX_BILLEDER_PR_KOERSEL = 35     # loft pr. kørsel (værn mod løbske omkostninger)
+MAX_BILLEDER_PR_KOERSEL = 8      # resten får billeder i de følgende kørsler
 BILLED_BREDDE = 1280             # nedskaleres til denne bredde (kræver pillow, ellers fuld str.)
 
 _gemini_model = GEMINI_MODEL     # den model vi aktuelt bruger (kan falde tilbage)
@@ -110,7 +129,10 @@ NS = {"atom": "http://www.w3.org/2005/Atom"}
 def hent_url(url: str, data: bytes | None = None, headers: dict | None = None, *, timeout: int | None = None) -> bytes:
     req = urllib.request.Request(url, data=data,
                                  headers={"User-Agent": USER_AGENT, **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout if timeout is not None else (60 if data else TIMEOUT_SEK)) as svar:
+    vent = timeout if timeout is not None else (60 if data else TIMEOUT_SEK)
+    if _drift:
+        vent = _drift.tid(min(vent, 180))
+    with urllib.request.urlopen(req, timeout=vent) as svar:
         return svar.read()
 
 
@@ -465,7 +487,12 @@ def _er_endelig_fejl(fejl: Exception) -> bool:
     return isinstance(kode, int) and kode in _ENDELIGE_KODER
 
 
-def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
+def hjerne_kald(navn, standard_prompt, bruger, max_tokens, standard_model=None, **kwargs):
+    with _drift.modelkald(navn) if _drift else nullcontext():
+        return _hjerne_kald(navn, standard_prompt, bruger, max_tokens, standard_model, **kwargs)
+
+
+def _hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                 max_tokens: int, standard_model: str | None = None, *, reasoning_effort: str | None = None) -> str:
     """Kalder AI'en for ét arbejdstrin. Er der valgt en bestemt model til
     trinnet, sendes den til DEN udbyder, der ejer navnet - ellers kører trinnet
@@ -484,7 +511,9 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
     selected = {"thinking": thinking} if thinking else {}
     if model:
         udbyder = model_udbyder(model)
-        if model in _doede_modeller:
+        with _model_lock:
+            doed = model in _doede_modeller
+        if doed:
             pass                      # sagt én gang, det er rigeligt
         elif not udbyder:
             print(f"🧠 ⚠️ {navn}: kender ikke udbyderen bag \"{model}\" "
@@ -501,8 +530,11 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                         else kald_xiaomi_model(system, bruger, max_tokens, model, **reasoning, **selected)
                         if udbyder == "xiaomi"
                         else kald_gemini_model(system, bruger, max_tokens, model, **selected))
-                _model_fejl.pop(model, None)     # rækken er brudt
+                with _model_lock:
+                    _model_fejl.pop(model, None)     # rækken er brudt
                 return svar
+            except TidOpbrugt:
+                raise  # Et opbrugt tidsbudget må ikke udløse et reservekald.
             except Exception as fejl:
                 if reasoning_effort:
                     # Nyhedsbrevet tæller selv sine forsøg. Ingen skjult ny
@@ -514,11 +546,13 @@ def hjerne_kald(navn: str, standard_prompt: str, bruger: str,
                 # spredte timeouts blandt 500 lykkede kald kaste redaktionens valg
                 # væk - og loggen ville påstå "fejlede 3 gange i træk", hvilket
                 # ikke er sandt.
-                _model_fejl[model] = _model_fejl.get(model, 0) + 1
-                antal = _model_fejl[model]
                 endelig = _er_endelig_fejl(fejl)
+                with _model_lock:
+                    _model_fejl[model] = _model_fejl.get(model, 0) + 1
+                    antal = _model_fejl[model]
+                    if endelig or antal >= MODEL_FEJL_GRAENSE:
+                        _doede_modeller.add(model)
                 if endelig or antal >= MODEL_FEJL_GRAENSE:
-                    _doede_modeller.add(model)
                     hvorfor = ("afviste os" if endelig
                                else f"fejlede {antal} gange i træk")
                     print(f"🧠 ⚠️ {navn}: {model} {hvorfor} "
@@ -1098,7 +1132,8 @@ def kald_xiaomi_model(system: str, bruger_tekst: str, max_tokens: int,
         "model": model,
         "messages": [{"role": "system", "content": system},
                      {"role": "user", "content": bruger_tekst}],
-        "max_completion_tokens": min(max(32768, max_tokens), 131072),
+        "max_completion_tokens": (max(1024, max_tokens) if thinking == "disabled"
+                                  else min(max(32768, max_tokens), 131072)),
         "thinking": {"type": validate_thinking(model, thinking) or "enabled"},
         **({"response_format": {"type": "json_object"}} if reasoning_effort else {}),
         "stream": False,
@@ -1373,22 +1408,25 @@ def dybe_briefs(artikler: list[dict], redaktionsopgaver=None, kildetekster=None)
         # Målrettet genkørsel: kun de artikler, hvis "Hvad betyder det for dig?"
         # bryder de målbare krav. Strammes kravene til feltet, koster det så
         # nogle få kald i stedet for at genskrive hele arkivet.
-        kandidater = [a for a in artikler[:graense]
+        kandidater = [a for a in artikler
                       if not a.get("kun_aktuel")
                       and _betydning_problemer(a.get("betydning", ""))]
         print(f'📰 Genkører {len(kandidater)} artikler med en svag "betydning"')
     elif GENKOER_FILTER:
-        kandidater = [a for a in artikler[:graense]
+        kandidater = [a for a in artikler
                       if GENKOER_FILTER in (a.get("rubrik", "") + " " + a["titel"]
                                             + " " + a["kilde"]).lower()]
         print(f"📰 Genkører {len(kandidater)} artikler der matcher '{GENKOER_FILTER}'")
     else:
-        kandidater = [a for a in artikler[:graense]
+        kandidater = [a for a in artikler
                       if (GENKOER_ALT or not a.get("sektioner")
                           or a.get("brief_instruks") != signatur
                           or (a["link"] in opgaver and a.get("redaktoer_opgave_id") != opgave_id(a)))
                       and not a.get("kun_aktuel")]   # ingen fuld genfortælling
                                                      # af kilder med arkivforbud
+    # Chefbestillinger og ufærdige nye artikler før genbehandling af arkivet.
+    kandidater.sort(key=lambda a: (a["link"] not in opgaver, udgivelse.klar(a)))
+    kandidater = kandidater[:graense]
     if not kandidater:
         print("📰 Alle topartikler har allerede et brief (cache)")
         return
@@ -1408,8 +1446,13 @@ def dybe_briefs(artikler: list[dict], redaktionsopgaver=None, kildetekster=None)
                 # så en senere kildehentning kan færdiggøre den uden at udgive fyld.
                 print(f"   ⏳ {a['kilde']}: utilstrækkelig kildetekst — afventer i kladdekøen")
 
-    rettet = 0
-    for i, (a, tekst, billeder) in enumerate(med_tekst, 1):
+    def skriv_artikel(a, tekst, billeder):
+        a = copy.deepcopy(a)  # Arbejderne deler aldrig mutable artikeldata.
+        if _drift and not _drift.plads():
+            if a['link'] in opgaver:
+                a['redaktoer_afvist'] = True
+            return a, 0
+        rettet = 0
         foer = copy.deepcopy(a)
         opgave = opgaver.get(a["link"], "")
         r = kald_ai_brief(a, tekst, billeder, redaktoer_noter=opgave)
@@ -1456,7 +1499,26 @@ def dybe_briefs(artikler: list[dict], redaktionsopgaver=None, kildetekster=None)
                 print("   ↩️  Ingen godkendelse: beholder tidligere tekst eller kildens korte resumé")
         elif opgave:
             a["redaktoer_afvist"] = True
-        print(f"   … {i}/{len(med_tekst)}")
+        return a, rettet
+
+    # Gemini bruger ét spor af hensyn til fartgrænsen. MiMo/DeepSeek højst tre.
+    modeller = [hjerne_model(n) for n in ("brief", "redaktoer")]
+    gemini = UDBYDER == 'gemini' or any((model_udbyder(m) if m else UDBYDER) == "gemini" for m in modeller)
+    spor = 1 if gemini else 3
+    opslag = {a["link"]: a for a in artikler}
+    prioritet = {a['link']: i for i, a in enumerate(kandidater)}
+    med_tekst.sort(key=lambda row: prioritet[row[0]['link']])
+    with ThreadPoolExecutor(max_workers=spor) as pool:
+        jobs = [pool.submit(skriv_artikel, *row) for row in med_tekst]
+        rettet = 0
+        for i, job in enumerate(as_completed(jobs), 1):
+            a, antal_rettet = job.result()
+            original = opslag[a["link"]]
+            original.clear()
+            original.update(a)
+            rettet += antal_rettet
+            gem_fremskridt(artikler)
+            print(f"   … {i}/{len(med_tekst)} (højst {spor} samtidige artikler)")
     if rettet:
         print(f"✏️  Redaktøren fik omskrevet {rettet} af {len(med_tekst)} briefs")
 
@@ -1548,6 +1610,8 @@ def klassificer(artikler: list[dict]) -> None:
     # Migration af gamle vurderinger er begrænset og fortsætter næste kørsel.
     mangler.sort(key=lambda a: redaktion.dato(a) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
     for i in range(0, min(len(mangler), 120), 12):
+        if _drift and not _drift.plads():
+            break
         batch = mangler[i:i + 12]
         opslag = {_artikel_slug(a["link"]): a for a in batch}
         liste = [{"id": ident, "titel": a.get("titel", ""),
@@ -1582,6 +1646,7 @@ def klassificer(artikler: list[dict]) -> None:
                 # Kompatibilitet med quiz, kontrolpanel og eksisterende arkiv.
                 a["prio"] = max(1, min(10, round(redaktion.grundscore(a) / 10)))
                 accepteret += 1
+            gem_fremskridt(artikler)
             print(f"🗞️  Redaktion: {accepteret}/{len(batch)} vurderinger godkendt")
         except Exception as fejl:
             print(f"  ⚠️  Redaktionel vurdering fejlede: {type(fejl).__name__}")
@@ -2227,11 +2292,24 @@ def saml_dublet_historier(artikler: list[dict], historik=None, brug_ai=True) -> 
         return tekst
 
     liste = "\n".join(_linje(i, a) for i, a in enumerate(kandidater))
+    # Samme artikler og samme instruks skal ikke udløse et nyt stort AI-kald.
+    cache_fil = ROOT / '_redaktion/.crawl-cache/dubletter.json'
+    fingerprint = redaktoer_agent.ident(hjerne_prompt('dublet', SYSTEM_DUBLET) + liste)
     grupper = None
-    for forsoeg in (1, 2):
+    if _drift:
+        try:
+            gemt = json.loads(cache_fil.read_text(encoding='utf-8'))
+            if gemt.get('input') == fingerprint and isinstance(gemt.get('grupper'), list):
+                grupper = gemt['grupper']
+                print('🔗 Genbruger dubletkontrollen for uændrede artikler')
+        except (OSError, ValueError, AttributeError):
+            pass
+    for forsoeg in (() if grupper is not None else (1, 2)):
         try:
             grupper = parse_json_svar(hjerne_kald("dublet", SYSTEM_DUBLET, liste, 1500))
             assert isinstance(grupper, list)
+            if _drift:
+                _drift.skriv(cache_fil, {'input': fingerprint, 'grupper': grupper})
             break
         except Exception as fejl:
             print(f"  ⚠️  Dublet-tjek fejlede (forsøg {forsoeg}): {type(fejl).__name__}")
@@ -2442,13 +2520,13 @@ def _gem_artikelbillede(raa: bytes, sti: Path) -> Path:
                  str(sti.resolve()), str(fritlagt.resolve())],
                 cwd=temp, env={**os.environ, "OMP_NUM_THREADS": "2"},
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-                check=True, timeout=180,
+                check=True, timeout=_drift.tid(45) if _drift else 180,
             )
         if not fritlagt.is_file():
             raise ValueError("Fritlagt billede mangler")
         print("  ✂️ BiRefNet General: gemt med gennemsigtig baggrund")
         return fritlagt
-    except (OSError, ValueError, subprocess.SubprocessError) as fejl:
+    except (OSError, ValueError, subprocess.SubprocessError, TidOpbrugt) as fejl:
         print(f"  ℹ️ Fritlægning sprang over ({type(fejl).__name__}); originalbilledet bruges")
         return sti
 
@@ -2677,7 +2755,7 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
         if gemt:
             a["billede"] = f"data/img/{gemt.name}"
             continue
-        if forsoeg >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2:
+        if forsoeg >= MAX_BILLEDER_PR_KOERSEL or fejl_i_traek >= 2 or (_drift and not _drift.plads()):
             continue
         forsoeg += 1
         motiv = a.get("billedmotiv")
@@ -2697,6 +2775,7 @@ def lav_billeder(artikler: list[dict], forside=None, nu=None) -> None:
                 a["billede"] = f"data/img/{gemt.name}"
                 lavet += 1
                 fejl_i_traek = 0
+                gem_fremskridt(artikler)
             except Exception as f:
                 fejl_i_traek += 1
                 print(f"  ⚠️ Cloudflare-billede fejlede: {type(f).__name__}. Kontrollér Workers AI-adgang og kvote.")
@@ -2876,6 +2955,8 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
     mangler = mangler[:MAX_OMSKRIV_PR_KOERSEL]
     print(f"✍️  Omskriver {len(mangler)} nye artikler til letlæst dansk …")
     for i in range(0, len(mangler), BATCH_STR):
+        if _drift and not _drift.plads():
+            break
         batch = mangler[i:i + BATCH_STR]
         resultat = kald_ai_batch(batch)
         if not resultat:
@@ -2886,6 +2967,7 @@ def omskriv_nye(artikler: list[dict], cache: dict) -> None:
             if rubrik and resume:
                 a["rubrik"] = rubrik
                 a["resume_da"] = resume
+        gem_fremskridt(artikler)
         print(f"   … {min(i + BATCH_STR, len(mangler))}/{len(mangler)}")
 
 
@@ -5767,6 +5849,12 @@ def forbered_redaktoer(artikler, tidligere_forside, nu):
     agent_provider = model_udbyder(agent_model)
     agent_key = _udbyder_noegle(agent_provider)
     agent_call = redaktoer_agent.xiaomi_kald if agent_provider == "xiaomi" else redaktoer_agent.deepseek_kald
+    transport = agent_call
+    def agent_call(*args, **kwargs):
+        with _drift.modelkald("forside_agent") if _drift else nullcontext():
+            if _drift:
+                kwargs["timeout"] = _drift.tid()
+            return transport(*args, **kwargs)
     agent_thinking = hjerne_thinking("forside_agent", agent_model)
     effective_thinking = agent_thinking or ("enabled" if agent_provider == "xiaomi" else DEEPSEEK_REASONING)
     baseline = redaktion.forside(artikler, nu)
@@ -5881,6 +5969,21 @@ def gem_redaktoer_status(context):
 
 
 def main() -> None:
+    global _drift
+    tidligere = _drift
+    _drift = Drift(ROOT)
+    ok = False
+    try:
+        _main()
+        ok = True
+    finally:
+        try:
+            _drift.rapport(ok)
+        finally:
+            _drift = tidligere
+
+
+def _main() -> None:
     # Skriv ALTID hvilken model der skriver teksten - så det kan ses i
     # Actions-loggen, uden at gætte ud fra hvilke nøgler der er sat.
     if not API_KEY:
@@ -5944,6 +6047,7 @@ def main() -> None:
     udgivelsesdata = udgivelse.laes(udgivelsesfil)
     cache: dict = {}
     tidligere_forside = None
+    udgivet_tid = None
     gemte_artikler: list[dict] = udgivelsesdata["historik"] + udgivelsesdata["kladder"]
     foerst_set_gammel: dict = {}
     # `eget_foerst_set` hentes HER og ikke gennem `cache`. Cachen kræver en
@@ -5958,8 +6062,14 @@ def main() -> None:
             gemte_artikler = list({a['link']: a for a in
                 udgivelsesdata['historik'] + udgivelsesdata['kladder'] + gammel_udgave["artikler"]}.values())
             tidligere_forside = gammel_udgave.get("forside")
+            udgivet_tid = gammel_udgave.get("opdateret")
         except (json.JSONDecodeError, KeyError):
             pass
+
+    genoptaget = _drift.laes(udgivet_tid) if _drift else []
+    if genoptaget:
+        gemte_artikler = list({a["link"]: a for a in gemte_artikler + genoptaget}.values())
+        print(f"💾 Genoptager gemt arbejde fra {len(genoptaget)} artikler")
 
     for a in gemte_artikler:
         if a.get("foerst_set") or a.get("dato"):
@@ -6019,18 +6129,21 @@ def main() -> None:
         if "arxiv" in a.get("kilde", "").lower():
             a["kategori"] = "Forskning"
 
-    omskriv_nye(unikke, cache)
-    klassificer(unikke)
+    koer_trin("Danske resuméer", 6, omskriv_nye, unikke, cache)
+    gem_fremskridt(unikke)
+    koer_trin("Nyhedsvurdering", 6, klassificer, unikke)
     for a in unikke:                         # arXiv-reglen igen EFTER klassificering
         if "arxiv" in a.get("kilde", "").lower():
             a["kategori"] = "Forskning"
     unikke = saml_dublet_historier(unikke, udgivelsesdata['historik'], brug_ai=False)
     unikke = redaktion.prioriter(unikke, nu)
-    redaktionsmoede = forbered_redaktoer(unikke, tidligere_forside, nu)
+    redaktionsmoede = koer_trin("Redaktionsmøde", 6, forbered_redaktoer, unikke, tidligere_forside, nu)
     # Chefens skriveopgaver får plads i skrivebudgettet før pointlisten.
     opgaver = redaktionsmoede["opgaver"]
     unikke.sort(key=lambda a: a["link"] not in opgaver)
-    dybe_briefs([a for a in unikke if not redaktion.reklame(a)], opgaver, redaktionsmoede["tekster"])
+    _drift.beskyttede = redaktionsmoede.get("originaler", {})
+    koer_trin("Artikler og kildekontrol", 30, dybe_briefs,
+             [a for a in unikke if not redaktion.reklame(a)], opgaver, redaktionsmoede["tekster"])
     # Sprogændringer sker i det kildekontrollerede brief. Separate AI-kald må
     # ikke ændre en godkendt rubrik eller betydning bagefter.
     # Glem billeder, hvis fil ikke er der længere, FØR vi prøver at lave nye.
@@ -6075,9 +6188,11 @@ def main() -> None:
     for a in unikke:
         a["dato"] = a["dato"].isoformat() if a["dato"] else None
 
-    valgt_forside = afslut_redaktoer(redaktionsmoede, unikke, nu)
+    valgt_forside = koer_trin("Udgavekontrol", 3, afslut_redaktoer, redaktionsmoede, unikke, nu)
+    _drift.beskyttede = {}
+    gem_fremskridt(unikke)
     # Sammenlign de færdige artikler og udgivelseshistorikken én gang.
-    unikke = saml_dublet_historier(unikke, udgivelsesdata['historik'])
+    unikke = koer_trin("Dubletkontrol", 4, saml_dublet_historier, unikke, udgivelsesdata['historik'])
     unikke = udgivelse.gem(udgivelsesfil, unikke, udgivelsesdata['historik'], nu)
     # Ingen kladder må lække via reserveudvalget, RSS, ugeside eller deling.
     links = {a['link'] for a in unikke}
@@ -6090,8 +6205,9 @@ def main() -> None:
     redaktionsmoede['forside'] = valgt_forside
     redaktionsmoede.setdefault('status', {})['udgivet_udvalg'] = valgt_forside['udvalgte'][:3]
     redaktionsmoede['status']['afventer_artikler'] = len(udgivelse.laes(udgivelsesfil)['kladder'])
-    udfyld_billedmotiver(unikke, valgt_forside, nu)
-    lav_billeder(unikke, valgt_forside, nu)
+    koer_trin("Billedmotiver", 3, udfyld_billedmotiver, unikke, valgt_forside, nu)
+    koer_trin("Billeder", 10, lav_billeder, unikke, valgt_forside, nu)
+    gem_fremskridt(unikke)
     lav_artikelsider(unikke)   # efter kildekontrol, så de nye henvisninger kommer med
     # Gem også de permanente sider, som netop er oprettet, i historikken.
     udgivelse.gem(udgivelsesfil, unikke + udgivelse.laes(udgivelsesfil)['kladder'], udgivelsesdata['historik'], nu)
@@ -6113,9 +6229,9 @@ def main() -> None:
     # med 12 i listen, fordi de øvrige var dubletter eller for gamle.
     skriv_kilde_status(alle_feeds, kilde_resultat, unikke, nu)
     lav_rss([a for a in unikke if not redaktion.reklame(a)])
-    lav_ugens_overblik(unikke)
-    lav_dagens_brief(unikke, valgt_forside)
-    del_paa_platforme(udgavens_artikler(unikke, valgt_forside, nu=nu))  # tørkørsel indtil OPSLAG_LIVE=ja
+    koer_trin("Ugens overblik", 4, lav_ugens_overblik, unikke)
+    koer_trin("Dagens overblik", 2, lav_dagens_brief, unikke, valgt_forside)
+    koer_trin("Sociale opslag", 2, del_paa_platforme, udgavens_artikler(unikke, valgt_forside, nu=nu))  # tørkørsel indtil OPSLAG_LIVE=ja
     hent_laesertal()           # så gennemgangen kan se, hvad folk faktisk læser
     # Videoer, kurser og læserprompts er nedlagt; kun nyhedsudgaven produceres.
     tjek_statisk_sitemap()     # siger til, hvis en ny side er glemt i sitemap.xml

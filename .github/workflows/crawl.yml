@@ -58,6 +58,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: _redaktion/requirements-billeder.txt
 
       - name: Installér billedbibliotek
         run: pip install 'pillow>=12.1,<13' -q
@@ -70,6 +72,7 @@ jobs:
 
       - name: Installér baggrundsfjernelse
         continue-on-error: true # Crawleren bruger originalen, hvis værktøjet mangler.
+        timeout-minutes: 10
         run: pip install -r _redaktion/requirements-billeder.txt -q
 
       - name: Kontrollér redaktionel udvælgelse
@@ -88,8 +91,18 @@ jobs:
           python3 _redaktion/proeve-udgivelse.py
           python3 _redaktion/proeve-uge.py
           python3 _redaktion/proeve-nyhedsbrev.py
+          python3 _redaktion/proeve-crawl-drift.py
+
+      - name: Genoptag ufærdigt artikelarbejde
+        uses: actions/cache/restore@v4
+        with:
+          path: _redaktion/.crawl-cache
+          key: crawl-work-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            crawl-work-${{ runner.os }}-
 
       - name: Kør crawleren (med AI-omskrivning hvis en nøgle findes)
+        id: crawler
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -113,7 +126,34 @@ jobs:
           AI_UDBYDER: ${{ vars.AI_UDBYDER }}
           GENKOER_ALT: ${{ inputs.genkoer_alt || vars.GENKOER_ALT }}
         run: |
-          python3 crawler.py
+          rm -f data/crawl-status.json
+          timeout --signal=TERM --kill-after=30s 95m python3 crawler.py
+
+      - name: Bevar artikelarbejdet også efter en afbrudt kørsel
+        if: always() && steps.crawler.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: _redaktion/.crawl-cache
+          key: crawl-work-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Vis tidsforbrug
+        if: always() && steps.crawler.outcome != 'skipped'
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = Path('data/crawl-status.json')
+          if p.exists():
+              d = json.loads(p.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+                  f.write('## Crawlerens tidsforbrug\n\n')
+                  f.write(f"Samlet: {d['sekunder']/60:.1f} minutter. Færdig: {d['faerdig']}.\n\n")
+                  for t in d['trin']:
+                      f.write(f"- {t['trin']}: {t['sekunder']/60:.1f} minutter\n")
+          else:
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+                  f.write('Crawleren blev afbrudt før afslutningsrapporten. Se trinloggen; mellemresultater gemmes i Actions-cache.\n')
+          PY
 
       - name: Kontrollér den færdige udgave før commit
         run: python3 _redaktion/kontroller-udgave.py

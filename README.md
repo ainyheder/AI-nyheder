@@ -53,6 +53,37 @@ Søgning, emnefiltre og **Nyeste først** viser én samlet liste og skjuler topf
 
 Alle eksisterende sider i `artikel/` bruger det fælles læsedesign i `assets/artikel.css`. Deres artikler, kilder, permanente adresser og canonical-links er bevaret. Det store antal ændrede arkivfiler skyldes tilføjelsen af fælles CSS, en tilbagegenvej og tastaturadgang.
 
+## Crawlerens tid og genoptagelse
+
+Artikler skrives og kildekontrolleres i op til tre samtidige spor. Gemini
+bruger ét spor af hensyn til fartgrænsen. Chefens opgaver og nye, ufærdige
+artikler kommer før genbehandling af færdige artikler. Grænsen på 40 artikler
+gælder arbejde, der mangler, så allerede færdige historier ikke optager pladser.
+Kravene til kildekontrol og færdige tekster er uændrede.
+
+Et crawl har 75 minutters AI-budget med særskilte budgetter for hvert trin.
+Netværkskald under crawleren venter højst 180 sekunder ad gangen og begrænses
+af den resterende tid. Budgettet stopper nye kald; det afbryder ikke et svar,
+der allerede modtages. GitHub bruger derfor også en ydre grænse på 95 minutter,
+så en hængende proces kan stoppes med tid til at gemme Actions-cachen.
+Resuméer, vurderinger og billedmotiver bruger MiMo uden thinking; artikler og
+kildekontrol beholder det. Dubletkontrollen genbruges ved helt uændret input.
+Billeder laves løbende, højst otte pr. kørsel, og fritlægning får højst 45
+sekunder pr. nyt billede. Ved fejl beholdes originalbilledet.
+
+Mellemresultater og nye billeder gemmes i `_redaktion/.crawl-cache`, som er
+Git-ignoreret og ikke udgives. GitHub gendanner og gemmer mappen, også når
+crawleren fejler. Artikelarbejde genbruges i højst 24 timer og kun med samme
+udgivne udgave som udgangspunkt. Chefbestilte ændringer gemmes først efter
+udgavekontrollen; ved afvisning bevares de tidligere tekster. Ændrede instrukser
+udløser fortsat ny behandling. `data/crawl-status.json` og Actions-resuméet
+viser tid pr. trin og AI-opgave uden kildetekster eller API-nøgler. Summen af
+AI-opgavernes tid kan overstige samlet køretid, fordi artikler behandles samtidig.
+
+Offlinekontrol: `python3 _redaktion/proeve-crawl-drift.py` tester bl.a.
+parallel godkendelse/afvisning, genoptagelse, billedgenbrug og opbrugt budget.
+Den faktiske svartid og udgivelse skal måles ved første GitHub-kørsel efter upload.
+
 ## AI-model
 
 Den daglige tekstmodel er **DeepSeek V4.1 Flash**, med API-navnet `deepseek-flash`. Alle arbejdstrin uden et særskilt modelvalg følger denne standard. Den valgte billedmodel er FLUX.2 Klein 4B via Cloudflare. Ændringer træder i kraft ved næste crawlerkørsel efter upload.
