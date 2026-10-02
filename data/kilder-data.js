@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-02T12:20:39.330113+00:00",
- "artikler_i_alt": 53,
+ "opdateret": "2026-10-02T14:56:39.031038+00:00",
+ "artikler_i_alt": 59,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
+     "dato": "2026-09-28T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/claude-sonnet-5-5",
+     "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
      "dato": "2026-09-23T00:00:00",
@@ -54,15 +63,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Simon Willison AI",
+     2
+    ],
+    [
      "The Verge AI",
      2
     ],
     [
      "TechCrunch AI",
-     1
-    ],
-    [
-     "Simon Willison AI",
      1
     ]
    ]
@@ -102,7 +111,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -131,6 +140,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 Live tænker, mens den taler"
+    },
+    {
+     "rubrik": "Gemini 4 Argon finder sårbarhed andre modeller missede",
+     "dato": "2026-09-30T20:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+     "side": "artikel/445ecd27631acaed.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -163,7 +181,15 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google DeepMind",
-     3
+     4
+    ],
+    [
+     "The Verge AI",
+     1
+    ],
+    [
+     "Ars Technica AI",
+     1
     ]
    ]
   },
@@ -254,9 +280,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 2,
-   "som_ekstra": 1,
+   "i_listen": 3,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Claude Sonnet 5.5 er nu gratisniveauets model",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Sonnet 5.5 knuser forgængerens kodetest"
+    },
     {
      "rubrik": "GPT-6 Sol og Claude Opus 5.5 udløser priskrig",
      "dato": "",
@@ -265,6 +300,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Matthew Green: Fælles software-cache ændrede agenters adfærd",
+     "dato": "2026-10-01T06:29:01",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+     "side": "artikel/55278edd569df1d2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "GLM-5.3 og Claude Mythos kaprer nu kode",
@@ -288,7 +332,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Anthropic News",
-     1
+     2
     ]
    ]
   },
@@ -302,7 +346,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 14,
+   "i_listen": 15,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -313,6 +357,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "OpenAI lancerer virtuel tøjprøvning i ChatGPT",
+     "dato": "2026-10-01T19:21:53",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
+     "side": "artikel/a4548c383007ff68.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "OpenAI skiltes med tre sikkerhedsforskere efter regelbrud",
@@ -412,15 +465,6 @@ window.KILDER_STATUS = {
      "side": "artikel/e3cc5ff4f95d9b90.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic betaler Akamai 11,6 milliarder dollars",
-     "dato": "2026-09-25T19:13:38",
-     "foerst_set": "2026-09-25T20:06:37",
-     "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-     "side": "artikel/4b9cd4f252fed7b0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -441,8 +485,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 11,
-   "som_ekstra": 3,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
     {
      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
      "dato": "",
@@ -480,15 +533,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "2026-09-30T16:41:41",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "artikel/58c6c873a601ee0c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Amazon advarer mod datacenter-stoppus i ny blog",
      "dato": "2026-10-02T07:52:20",
      "foerst_set": "2026-10-02T12:20:39",
@@ -503,6 +547,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
      "side": "artikel/73e415512ac969ca.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kevin O'Learys datacenter i Utah blev standset",
+     "dato": "2026-10-01T10:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+     "side": "artikel/800f6ad00c946bb9.html",
      "hvor": "forside",
      "under": ""
     },
@@ -576,6 +629,10 @@ window.KILDER_STATUS = {
      2
     ],
     [
+     "Google Gemini",
+     1
+    ],
+    [
      "Google DeepMind",
      1
     ]
@@ -591,15 +648,24 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
-   "som_ekstra": 0,
+   "i_listen": 11,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Google annoncerer Gemini 4 Argon – kun for testere",
-     "dato": "2026-09-30T20:11:08",
+     "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
-     "side": "artikel/511151e2c14f97ff.html",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Trump får 24 techfirmaer til frivillige AI-sikkerhedstests",
+     "dato": "2026-09-30T18:47:01",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
+     "side": "artikel/46a3a5a996fbe157.html",
      "hvor": "forside",
      "under": ""
     },
@@ -640,6 +706,24 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "RFK Jr. sagde AI ville modsige sundhedseksperter",
+     "dato": "2026-09-30T19:31:25",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://arstechnica.com/health/2026/09/rfk-jr-says-ai-backs-his-anti-vaccine-views-we-checked-it-doesnt/",
+     "side": "artikel/ec6e91eb380c09e4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI stopper træning: agent forsøgte at bryde ud",
+     "dato": "2026-09-28T16:43:18",
+     "foerst_set": "2026-09-28T16:58:31",
+     "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
+     "side": "artikel/3eb7c225ebe6dfc6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
      "dato": "2026-09-25T21:36:20",
      "foerst_set": "2026-09-25T23:28:32",
@@ -676,7 +760,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "Google Gemini",
+     1
+    ]
+   ]
   },
   {
    "navn": "MIT Tech Review AI",
@@ -738,8 +827,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 2,
-   "som_ekstra": 0,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Gemini 4 Argon udrulles forsigtigt til cybersikkerhedshold",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
     {
      "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
      "dato": "",
@@ -771,7 +869,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Google Gemini",
-     3
+     4
     ],
     [
      "The Verge AI",

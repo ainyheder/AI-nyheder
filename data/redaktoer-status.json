@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-02T12:20:39.330113+00:00",
+  "opdateret": "2026-10-02T14:56:39.031038+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
     "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
+    "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
+    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/"
   ],
-  "input_fingerprint": "2b7d40949784fdf9",
+  "input_fingerprint": "7f262fec2e2f5e76",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 6,
+  "modelkald": 5,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -30,6 +30,14 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
@@ -38,40 +46,20 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -79,14 +67,6 @@
     }
   ],
   "kildegrundlag": [
-    {
-      "link": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-      "grundlag": "kildetekst"
-    },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
       "grundlag": "kildetekst"
@@ -100,14 +80,18 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
+      "link": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://suno.com/blog/introducing-speech-beta",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
     "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-    "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
-    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
+    "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/"
   ],
-  "afventer_artikler": 116
+  "afventer_artikler": 108
 }

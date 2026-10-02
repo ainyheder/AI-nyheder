@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-02T13:18:21.174319+00:00",
+ "opdateret": "2026-10-02T15:52:35.211239+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -99,10 +99,10 @@ window.LAESERTAL = {
      6,
      1,
      1,
-     2,
+     3,
      0,
      1,
-     0,
+     1,
      0
     ]
    },
@@ -137,7 +137,7 @@ window.LAESERTAL = {
      3,
      0,
      1,
-     1,
+     2,
      1
     ]
    },
@@ -169,10 +169,45 @@ window.LAESERTAL = {
      1,
      1,
      1,
+     1,
      0,
+     2,
+     5,
+     0
+    ]
+   },
+   {
+    "navn": "Politik & jura",
+    "tal": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     3,
+     3,
+     1,
+     3,
+     3,
+     2,
+     2,
+     1,
+     1,
+     3,
+     4,
+     2,
      0,
+     4,
+     1,
+     2,
      1,
      4,
+     0,
+     1,
+     0,
+     0,
+     3,
+     1,
      0
     ]
    },
@@ -208,41 +243,6 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
-    ]
-   },
-   {
-    "navn": "Politik & jura",
-    "tal": [
-     1,
-     1,
-     1,
-     1,
-     1,
-     3,
-     3,
-     1,
-     3,
-     3,
-     2,
-     2,
-     1,
-     1,
-     3,
-     4,
-     2,
-     0,
-     4,
-     1,
-     2,
-     1,
-     4,
-     0,
-     1,
-     0,
-     0,
-     1,
-     1,
      0
     ]
    },
@@ -284,14 +284,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 34,
- "sidevisninger_i_alt": 49,
+ "besoeg_i_alt": 20,
+ "sidevisninger_i_alt": 30,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 34,
-   "visninger": 49
+   "besoeg": 20,
+   "visninger": 30
   }
  ],
  "henvisere": [
@@ -302,10 +302,6 @@ window.LAESERTAL = {
   {
    "fra": "dk.search.yahoo.com",
    "besoeg": 2
-  },
-  {
-   "fra": "www.ecosia.org",
-   "besoeg": 1
   }
  ],
  "ai_chats": [],
@@ -319,17 +315,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 15
+    "visninger": 17
    },
    {
     "fra": "dk.search.yahoo.com",
     "besoeg": 2,
     "visninger": 2
-   },
-   {
-    "fra": "www.ecosia.org",
-    "besoeg": 1,
-    "visninger": 1
    }
   ]
  },
@@ -489,7 +480,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-02",
    "besoeg": 0,
-   "visninger": 0
+   "visninger": 10
   }
  ],
  "artikler": [],
