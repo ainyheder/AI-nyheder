@@ -1,13 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-09-28T17:47:37.509581+00:00",
+ "opdateret": "2026-10-02T13:18:21.174319+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-08-30",
-   "2026-08-31",
-   "2026-09-01",
-   "2026-09-02",
    "2026-09-03",
    "2026-09-04",
    "2026-09-05",
@@ -33,16 +29,16 @@ window.LAESERTAL = {
    "2026-09-25",
    "2026-09-26",
    "2026-09-27",
-   "2026-09-28"
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02"
   ],
   "serier": [
    {
     "navn": "Forskning",
     "tal": [
-     0,
-     0,
-     25,
-     25,
      26,
      2,
      25,
@@ -68,16 +64,16 @@ window.LAESERTAL = {
      1,
      0,
      0,
+     0,
+     1,
+     0,
+     1,
      0
     ]
    },
    {
     "navn": "Samfund & etik",
     "tal": [
-     2,
-     3,
-     5,
-     4,
      2,
      6,
      4,
@@ -103,16 +99,16 @@ window.LAESERTAL = {
      6,
      1,
      1,
-     2
+     2,
+     0,
+     1,
+     0,
+     0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     1,
-     6,
-     5,
-     7,
      3,
      8,
      0,
@@ -138,16 +134,16 @@ window.LAESERTAL = {
      5,
      1,
      0,
-     3
+     3,
+     0,
+     1,
+     1,
+     1
     ]
    },
    {
     "navn": "Lanceringer",
     "tal": [
-     1,
-     2,
-     9,
-     7,
      9,
      4,
      0,
@@ -168,11 +164,50 @@ window.LAESERTAL = {
      0,
      1,
      4,
+     5,
+     5,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
      4,
+     0
+    ]
+   },
+   {
+    "navn": "Hverdags-AI",
+    "tal": [
+     3,
+     3,
+     0,
+     0,
+     0,
+     2,
      6,
+     3,
+     4,
      1,
+     0,
+     2,
+     2,
+     2,
+     2,
      1,
+     2,
      1,
+     2,
+     0,
+     6,
+     3,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      0
     ]
    },
@@ -180,10 +215,6 @@ window.LAESERTAL = {
     "navn": "Politik & jura",
     "tal": [
      1,
-     7,
-     4,
-     5,
-     1,
      1,
      1,
      1,
@@ -207,41 +238,45 @@ window.LAESERTAL = {
      1,
      4,
      0,
+     1,
+     0,
+     0,
+     1,
      1,
      0
     ]
    },
    {
-    "navn": "Hverdags-AI",
+    "navn": "Nyheder",
     "tal": [
-     1,
-     1,
-     4,
-     2,
-     3,
-     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      0,
      0,
      0,
      2,
-     6,
-     3,
-     4,
-     1,
-     0,
-     2,
-     2,
-     2,
-     2,
-     1,
-     2,
-     1,
-     2,
-     0,
-     6,
-     3,
-     3,
-     0,
      0,
      0
     ]
@@ -249,30 +284,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 39,
- "sidevisninger_i_alt": 77,
+ "besoeg_i_alt": 34,
+ "sidevisninger_i_alt": 49,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 39,
-   "visninger": 75
-  },
-  {
-   "sti": "/artikel/c4259d8daf829e3d.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/vaerktoejer.html",
-   "besoeg": 0,
-   "visninger": 1
+   "besoeg": 34,
+   "visninger": 49
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 36
+   "besoeg": 31
   },
   {
    "fra": "dk.search.yahoo.com",
@@ -288,13 +313,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 36,
-    "visninger": 36
+    "besoeg": 31,
+    "visninger": 31
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 36
+    "visninger": 15
    },
    {
     "fra": "dk.search.yahoo.com",
@@ -306,49 +331,16 @@ window.LAESERTAL = {
     "besoeg": 1,
     "visninger": 1
    }
-  ],
-  "/artikel/c4259d8daf829e3d.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
   ]
  },
  "faste_uden_besoeg": [
   "/uge.html",
+  "/vaerktoejer.html",
   "/faq.html",
   "/om.html",
   "/cookies.html"
  ],
  "serie": [
-  {
-   "dato": "2026-08-30",
-   "besoeg": 0,
-   "visninger": 0
-  },
-  {
-   "dato": "2026-08-31",
-   "besoeg": 10,
-   "visninger": 20
-  },
-  {
-   "dato": "2026-09-01",
-   "besoeg": 0,
-   "visninger": 0
-  },
-  {
-   "dato": "2026-09-02",
-   "besoeg": 10,
-   "visninger": 10
-  },
   {
    "dato": "2026-09-03",
    "besoeg": 0,
@@ -478,29 +470,28 @@ window.LAESERTAL = {
    "dato": "2026-09-28",
    "besoeg": 0,
    "visninger": 0
-  }
- ],
- "artikler": [
+  },
   {
-   "sti": "/artikel/c4259d8daf829e3d.html",
+   "dato": "2026-09-29",
    "besoeg": 0,
-   "visninger": 1,
-   "rubrik": "OpenAI halverer prisen på GPT-6 Sol og Luna",
-   "kategori": "Lanceringer",
-   "dato": "2026-09-22",
-   "henvisere": [
-    {
-     "fra": "herfra selv",
-     "besoeg": 0,
-     "visninger": 1
-    }
-   ]
+   "visninger": 0
+  },
+  {
+   "dato": "2026-09-30",
+   "besoeg": 0,
+   "visninger": 0
+  },
+  {
+   "dato": "2026-10-01",
+   "besoeg": 10,
+   "visninger": 10
+  },
+  {
+   "dato": "2026-10-02",
+   "besoeg": 0,
+   "visninger": 0
   }
  ],
- "laeste_temaer": [
-  {
-   "navn": "Lanceringer",
-   "visninger": 1
-  }
- ]
+ "artikler": [],
+ "laeste_temaer": []
 };
