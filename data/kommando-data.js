@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-03T19:57:29.932269+00:00",
+ "genereret": "2026-10-03T23:38:19.711657+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,30 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-03T19:22:05.720080+00:00",
-  "antal": 83,
-  "med_billede": 30,
-  "paa_dansk": 83,
+  "opdateret": "2026-10-03T23:17:18.732337+00:00",
+  "antal": 84,
+  "med_billede": 26,
+  "paa_dansk": 84,
   "kategorier": {
    "Lanceringer": 25,
    "Politik \u0026 jura": 9,
-   "Forskning": 8,
+   "Forskning": 5,
    "Penge \u0026 marked": 18,
-   "Samfund \u0026 etik": 16,
-   "Hverdags-AI": 4,
+   "Samfund \u0026 etik": 18,
+   "Hverdags-AI": 7,
    "Dybde": 1,
-   "Nyheder": 1,
    "Labs": 1
   },
   "kilder": {
-   "TechCrunch AI": 27,
-   "Google Gemini": 3,
-   "The Verge AI": 14,
+   "The Verge AI": 15,
+   "TechCrunch AI": 25,
+   "Google Gemini": 4,
    "Ars Technica AI": 11,
-   "Hugging Face": 3,
-   "Simon Willison AI": 6,
-   "MIT Tech Review AI": 6,
-   "Anthropic News": 6,
+   "MIT Tech Review AI": 5,
+   "Hugging Face": 1,
+   "Simon Willison AI": 9,
+   "Anthropic News": 7,
    "Mistral AI": 2,
    "xAI News": 3,
    "Google DeepMind": 2
@@ -267,13 +266,13 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Amazon responds to data center backlash, says it no longer uses NDAs",
-    "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
-    "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-    "side": "artikel/f31587f812325d66.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-03T18:43:57+00:00",
+    "titel": "An OpenAI safety employee has quit and is sounding the alarm",
+    "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "side": "artikel/f8fc0aa18dcc03fd.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-03T10:31:56-04:00",
     "billede": ""
    },
    {
@@ -284,6 +283,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-03T14:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Amazon responds to data center backlash, says it no longer uses NDAs",
+    "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
+    "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+    "side": "artikel/f31587f812325d66.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-03T18:43:57+00:00",
     "billede": ""
    },
    {
@@ -337,6 +346,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/2cd2bb3fb3668775.webp"
    },
    {
+    "titel": "Redefining enterprise intelligence with autonomous AI",
+    "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
+    "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+    "side": "artikel/ed9dd57bde8283bb.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-02T15:49:04+00:00",
+    "billede": "data/img/9b2ef9dd11581fc4.webp"
+   },
+   {
     "titel": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
     "rubrik": "Topchef anholdt for Nvidia-smugling til Kina",
     "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
@@ -347,48 +366,28 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
-    "rubrik": "Circuit Breaker Labs tester AI som krashtestdukker",
-    "link": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
-    "side": "artikel/0b1cf3414054dc07.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-02T17:00:00+00:00",
-    "billede": "data/img/f825fa3cf9b97f6f.webp"
-   },
-   {
-    "titel": "Redefining enterprise intelligence with autonomous AI",
-    "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
-    "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
-    "side": "artikel/ed9dd57bde8283bb.html",
-    "kategori": "Dybde",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-02T15:49:04+00:00",
-    "billede": "data/img/9b2ef9dd11581fc4.webp"
-   },
-   {
-    "titel": "Pope Leo XIV is not a fan of AI-generated art",
-    "rubrik": "Pope Leo XIV: Algoritmer mangler gnist",
-    "link": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
-    "side": "artikel/acfe1bdd02dab4ff.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-02T15:39:41+00:00",
-    "billede": "data/img/b0d5553c3ee95d2e.webp"
+    "titel": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+    "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
+    "link": "https://www.anthropic.com/news/claude-frontier-academy",
+    "side": "artikel/93dc283205dabb91.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "Anthropic News",
+    "dato": "2026-10-02T00:00:00+00:00",
+    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-03T19:22:05.720080+00:00",
+  "opdateret": "2026-10-03T23:17:18.732337+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
+  "modelkald": 6,
   "kildehentninger": 4,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-   "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-   "https://openai.com/index/practical-guide-building-gpt-6"
+   "https://huggingface.co/blog/allenai/astabrief",
+   "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
@@ -409,30 +408,6 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
@@ -446,15 +421,19 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 5671402926db891c: skriveopgave har 943 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    "fejl": "Artikel 7a09b2d0105640ac: skriveopgave har 1035 tegn; skriv 12-900 tegn i dette felt"
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -463,25 +442,25 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
-    "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-    "grundlag": "kildetekst"
-   },
-   {
     "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://huggingface.co/blog/allenai/astabrief",
+    "grundlag": "utilgaengelig"
+   },
+   {
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-03T19:22:05.086730+00:00",
+  "opdateret": "2026-10-03T23:17:17.824704+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -837,8 +816,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-03T19:22:05.720080+00:00",
-  "artikler_i_alt": 83,
+  "opdateret": "2026-10-03T23:17:18.732337+00:00",
+  "artikler_i_alt": 84,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -850,18 +829,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 6,
-    "som_ekstra": 1,
+    "i_listen": 7,
+    "som_ekstra": 0,
     "seneste": [
-     {
-      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
-      "dato": "",
-      "foerst_set": "2026-09-23T19:47:07",
-      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "side": "",
-      "hvor": "under",
-      "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
-     },
      {
       "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
       "dato": "2026-10-02T00:00:00",
@@ -895,6 +865,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-23T19:47:07",
       "link": "https://www.anthropic.com/features/ebola-response",
       "side": "artikel/9dde87711636ad1d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser",
+      "dato": "2026-09-23T00:00:00",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "side": "artikel/68024e28356d7cb5.html",
       "hvor": "forside",
       "under": ""
      },
@@ -961,18 +940,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 3,
+    "i_listen": 4,
     "som_ekstra": 3,
     "seneste": [
-     {
-      "rubrik": "Gemini 4 Argon udrulles først til cybersikkerhed",
-      "dato": "",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-     },
      {
       "rubrik": "Gemini 3.8 Live giver AI et ansigt",
       "dato": "",
@@ -1024,6 +994,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
       "side": "artikel/11d10b87b5eb0f3a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Google Gemini kobler apps direkte i chatten",
+      "dato": "2026-09-23T16:00:00",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+      "side": "artikel/2fcf2c8b0f4dd9b8.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1078,10 +1057,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 12,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 12,
-    "i_listen": 3,
+    "status": "fejl",
+    "fejl": "HTTPError: HTTP Error 429: Too Many Requests",
+    "hentet": 0,
+    "i_listen": 1,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1090,24 +1069,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://huggingface.co/blog/allenai/olmocore3",
       "side": "artikel/500c90923e00d828.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "tokenizers v1 er tit tientals gange hurtigere",
-      "dato": "2026-09-21T00:00:00",
-      "foerst_set": "2026-09-21T17:10:47",
-      "link": "https://huggingface.co/blog/tokenizers-v1",
-      "side": "artikel/87a2ea6346f8c464.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "GPT-4.1: Ny metrik afslører ustabile agenter",
-      "dato": "2026-09-15T16:00:44",
-      "foerst_set": "2026-09-15T18:27:03",
-      "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-      "side": "artikel/5236dbdf16446213.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1123,7 +1084,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 6,
+    "i_listen": 9,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1145,15 +1106,6 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Willison: GPT-6.1 Sol til femtedelen",
-      "dato": "2026-09-29T18:27:48",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
-      "side": "artikel/15ed8bb0ae8124e9.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Matthew Green: Fælles software-cache ændrede agenters adfærd",
       "dato": "2026-10-01T06:29:01",
       "foerst_set": "2026-10-02T12:20:39",
@@ -1163,11 +1115,29 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Willison: GPT-6.1 Sol til femtedelen",
+      "dato": "2026-09-29T18:27:48",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "side": "artikel/15ed8bb0ae8124e9.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "GLM-5.3 og Claude Mythos kaprer nu kode",
       "dato": "2026-09-29T22:20:28",
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
       "side": "artikel/92506a30955d5038.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI lancerer agenten Dot og model GPT-6.1 Sol",
+      "dato": "2026-09-29T15:55:13",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+      "side": "artikel/e0ba6a4a3da58e8b.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1186,6 +1156,24 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-28T05:46:19",
       "link": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
       "side": "artikel/922b779b0327582b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "AI-agent lovede forkert ved afhentning",
+      "dato": "2026-09-28T04:01:30",
+      "foerst_set": "2026-09-28T05:46:19",
+      "link": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+      "side": "artikel/7e040f4942c4c74d.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude Code filmede kākāpō-animation til keynote",
+      "dato": "2026-09-26T23:39:06",
+      "foerst_set": "2026-09-27T05:38:31",
+      "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
+      "side": "artikel/8e142628e031c730.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1210,9 +1198,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 27,
-    "som_ekstra": 1,
+    "i_listen": 25,
+    "som_ekstra": 2,
     "seneste": [
+     {
+      "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
+      "dato": "",
+      "foerst_set": "2026-10-03T19:22:05",
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI"
+     },
      {
       "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
       "dato": "",
@@ -1304,15 +1301,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
-      "dato": "2026-10-03T18:43:57",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-      "side": "artikel/f31587f812325d66.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Grok fortalte Trump, at Maduro var upopulær",
       "dato": "2026-10-01T21:08:11",
       "foerst_set": "2026-10-02T12:20:39",
@@ -1333,8 +1321,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 14,
-    "som_ekstra": 7,
+    "i_listen": 15,
+    "som_ekstra": 8,
     "seneste": [
      {
       "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
@@ -1344,6 +1332,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta lader udviklere bygge Muse-hardware selv"
+     },
+     {
+      "rubrik": "Apple strammer Mac-diske adgang for AI-agenter",
+      "dato": "",
+      "foerst_set": "2026-10-02T20:55:07",
+      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "side": "",
+      "hvor": "under",
+      "under": "Apple strammer Full Disk Access til AI-agenter"
      },
      {
       "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
@@ -1388,7 +1385,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
       "side": "",
       "hvor": "under",
-      "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
+      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
      },
      {
       "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -1409,6 +1406,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+      "dato": "2026-10-03T10:31:56",
+      "foerst_set": "2026-10-03T19:22:05",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "side": "artikel/f8fc0aa18dcc03fd.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Kakul Srivastava advarer: AI-tekst giver dårligere samtaler",
       "dato": "2026-10-03T11:00:00",
       "foerst_set": "2026-10-03T19:22:05",
@@ -1423,24 +1429,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T20:55:07",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
       "side": "artikel/edef5e5d6249ea7f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
-      "dato": "2026-10-01T14:36:50",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-      "side": "artikel/cdc4b946eb257199.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Suno skaber nu også tale og talestemmer",
-      "dato": "2026-10-02T09:42:19",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-      "side": "artikel/190c03ca19ef6f66.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1579,9 +1567,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 6,
-    "som_ekstra": 0,
+    "i_listen": 5,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
+      "dato": "",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+     },
      {
       "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
       "dato": "2026-10-02T15:49:04",
@@ -1624,15 +1621,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-28T16:58:31",
       "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
       "side": "artikel/9df3eed3c7ef4ca1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
-      "dato": "2026-09-28T17:03:16",
-      "foerst_set": "2026-09-23T19:47:07",
-      "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
-      "side": "artikel/f073d5eb416e6fc1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1734,12 +1722,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-03T19:57:25.819158+00:00",
+  "opdateret": "2026-10-03T23:38:17.034152+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 31,
-  "sidevisninger_i_alt": 44,
+  "besoeg_i_alt": 30,
+  "sidevisninger_i_alt": 39,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1896,15 +1884,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 31,
-    "visninger": 44
+    "besoeg": 30,
+    "visninger": 39
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 29
+    "besoeg": 28
    },
    {
     "fra": "dk.search.yahoo.com",

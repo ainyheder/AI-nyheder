@@ -1,16 +1,24 @@
 {
-  "opdateret": "2026-10-03T19:22:05.720080+00:00",
+  "opdateret": "2026-10-03T23:17:18.732337+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-    "https://openai.com/index/practical-guide-building-gpt-6"
+    "https://huggingface.co/blog/allenai/astabrief",
+    "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents"
   ],
-  "input_fingerprint": "df089ec51254aed3",
+  "input_fingerprint": "96874a34a6449030",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
+  "kontrolproblemer": [
+    "Anbefalingen 'OpenAI udgiver guide til GPT-6-familien' (c38af6e5cae43e23) har sektioner: null - en ufærdig tekst/pladsholder må ikke stå på forsiden.",
+    "Ingen af de fem anbefalinger har kilder. Tal og priser kan derfor ikke kontrolleres mod læst materiale, fx 8,33 dollar og 21 dollar om måneden, 100 og 35 dollars, 299.99 dollars og PS5 Pro til 899.99 dollars, samt Instincts 350 mio./2,5 mia. dollar i tidligere runde.",
+    "Markdown-felterskrevet står tilbage i publiceret brødtekst: '**AI-generation game engine**' i Capcom-artiklen og '**AI-upscaling**' i Shield-anbefalingen.",
+    "Rækkefølge i udvalget: Capcom-artiklen er fra 16:49 og Robinson-artiklen fra 16:30, men Robinson står øverst. Da ingen af hovedhistorierne er modeludgivelser, skulle den nyeste ligge først.",
+    "Kandidatoversigten markerer Stability AI's tre nye lydmodeller (2. oktober, model_lancering: true) inden for 48-timers-vinduet, men den er hverken udvalgt eller afvist med begrundelse, selv om modeludgivelser er førsteprioritet. Materialet er dog kun et RSS-resumé, så den kan ikke udgives som den er.",
+    "Begge hovedhistorier er faktuelt godt dækket af de to læste kilder (Robinsons opsigelse samlet i én plads på trods af to medier, Capcom-planen korrekt adskilt som plan og ikke lanceret) - ingen dubletter eller opdigtede fakta fundet i udvalget."
+  ],
+  "modelkald": 6,
   "kildehentninger": 4,
   "vaerktoejer": [
     {
@@ -26,30 +34,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -63,15 +47,19 @@
     },
     {
       "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 5671402926db891c: skriveopgave har 943 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": "Artikel 7a09b2d0105640ac: skriveopgave har 1035 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -80,19 +68,19 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://huggingface.co/blog/allenai/astabrief",
+      "grundlag": "utilgaengelig"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
       "grundlag": "kildetekst"
     }
   ],
@@ -101,5 +89,5 @@
     "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
     "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
   ],
-  "afventer_artikler": 74
+  "afventer_artikler": 60
 }

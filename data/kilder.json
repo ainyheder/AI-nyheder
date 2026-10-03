@@ -1,6 +1,6 @@
 {
- "opdateret": "2026-10-03T19:22:05.720080+00:00",
- "artikler_i_alt": 83,
+ "opdateret": "2026-10-03T23:17:18.732337+00:00",
+ "artikler_i_alt": 84,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,18 +12,9 @@
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 6,
-   "som_ekstra": 1,
+   "i_listen": 7,
+   "som_ekstra": 0,
    "seneste": [
-    {
-     "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
-     "dato": "",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
-    },
     {
      "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
      "dato": "2026-10-02T00:00:00",
@@ -61,6 +52,15 @@
      "under": ""
     },
     {
+     "rubrik": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser",
+     "dato": "2026-09-23T00:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+     "side": "artikel/68024e28356d7cb5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Claude Opus 5.5 matcher Fable-niveau til lavere pris",
      "dato": "2026-09-22T00:00:00",
      "foerst_set": "2026-09-22T19:51:24",
@@ -85,11 +85,11 @@
      2
     ],
     [
-     "TechCrunch AI",
-     1
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "TechCrunch AI",
      1
     ],
     [
@@ -142,18 +142,9 @@
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 3,
+   "i_listen": 4,
    "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Gemini 4 Argon udrulles først til cybersikkerhed",
-     "dato": "",
-     "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
     {
      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
      "dato": "",
@@ -205,6 +196,15 @@
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
      "side": "artikel/11d10b87b5eb0f3a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Gemini kobler apps direkte i chatten",
+     "dato": "2026-09-23T16:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+     "side": "artikel/2fcf2c8b0f4dd9b8.html",
      "hvor": "forside",
      "under": ""
     }
@@ -274,10 +274,10 @@
    "kun_aktuel": false,
    "max": 12,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 12,
-   "i_listen": 3,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 429: Too Many Requests",
+   "hentet": 0,
+   "i_listen": 1,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -286,24 +286,6 @@
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://huggingface.co/blog/allenai/olmocore3",
      "side": "artikel/500c90923e00d828.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "tokenizers v1 er tit tientals gange hurtigere",
-     "dato": "2026-09-21T00:00:00",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://huggingface.co/blog/tokenizers-v1",
-     "side": "artikel/87a2ea6346f8c464.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "GPT-4.1: Ny metrik afslører ustabile agenter",
-     "dato": "2026-09-15T16:00:44",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
-     "side": "artikel/5236dbdf16446213.html",
      "hvor": "forside",
      "under": ""
     }
@@ -320,7 +302,7 @@
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
+   "i_listen": 9,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -342,15 +324,6 @@
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
-     "rubrik": "Willison: GPT-6.1 Sol til femtedelen",
-     "dato": "2026-09-29T18:27:48",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
-     "side": "artikel/15ed8bb0ae8124e9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Matthew Green: Fælles software-cache ændrede agenters adfærd",
      "dato": "2026-10-01T06:29:01",
      "foerst_set": "2026-10-02T12:20:39",
@@ -360,11 +333,29 @@
      "under": ""
     },
     {
+     "rubrik": "Willison: GPT-6.1 Sol til femtedelen",
+     "dato": "2026-09-29T18:27:48",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+     "side": "artikel/15ed8bb0ae8124e9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "GLM-5.3 og Claude Mythos kaprer nu kode",
      "dato": "2026-09-29T22:20:28",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
      "side": "artikel/92506a30955d5038.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer agenten Dot og model GPT-6.1 Sol",
+     "dato": "2026-09-29T15:55:13",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+     "side": "artikel/e0ba6a4a3da58e8b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -383,6 +374,24 @@
      "foerst_set": "2026-09-28T05:46:19",
      "link": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
      "side": "artikel/922b779b0327582b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "AI-agent lovede forkert ved afhentning",
+     "dato": "2026-09-28T04:01:30",
+     "foerst_set": "2026-09-28T05:46:19",
+     "link": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+     "side": "artikel/7e040f4942c4c74d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Code filmede kākāpō-animation til keynote",
+     "dato": "2026-09-26T23:39:06",
+     "foerst_set": "2026-09-27T05:38:31",
+     "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
+     "side": "artikel/8e142628e031c730.html",
      "hvor": "forside",
      "under": ""
     },
@@ -413,9 +422,18 @@
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
-   "som_ekstra": 1,
+   "i_listen": 25,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
+     "dato": "",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI"
+    },
     {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
@@ -507,15 +525,6 @@
      "under": ""
     },
     {
-     "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
-     "dato": "2026-10-03T18:43:57",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-     "side": "artikel/f31587f812325d66.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Grok fortalte Trump, at Maduro var upopulær",
      "dato": "2026-10-01T21:08:11",
      "foerst_set": "2026-10-02T12:20:39",
@@ -532,12 +541,21 @@
      "side": "artikel/b56eb6fb25bd9dd2.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Shopify Canvas bygger butikker ved at chatte",
+     "dato": "2026-10-01T16:44:35",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+     "side": "artikel/4aa9873d3078b314.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     2
+     4
     ],
     [
      "Ars Technica AI",
@@ -559,8 +577,8 @@
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 14,
-   "som_ekstra": 7,
+   "i_listen": 15,
+   "som_ekstra": 8,
    "seneste": [
     {
      "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
@@ -570,6 +588,15 @@
      "side": "",
      "hvor": "under",
      "under": "Meta lader udviklere bygge Muse-hardware selv"
+    },
+    {
+     "rubrik": "Apple strammer Mac-diske adgang for AI-agenter",
+     "dato": "",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+     "side": "",
+     "hvor": "under",
+     "under": "Apple strammer Full Disk Access til AI-agenter"
     },
     {
      "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
@@ -614,7 +641,7 @@
      "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
      "side": "",
      "hvor": "under",
-     "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
+     "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
     },
     {
      "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -631,6 +658,15 @@
      "foerst_set": "2026-10-03T19:22:05",
      "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
      "side": "artikel/cc9d67938b46f0ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+     "dato": "2026-10-03T10:31:56",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+     "side": "artikel/f8fc0aa18dcc03fd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -723,36 +759,23 @@
      "side": "artikel/9dde4897f10a537d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Cannon-Brookes afviser AI's SaaSpocalypse",
-     "dato": "2026-09-28T14:00:00",
-     "foerst_set": "2026-09-28T16:58:31",
-     "link": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
-     "side": "artikel/4982fc62dce43b2d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     4
     ],
     [
      "Google Gemini",
      2
     ],
     [
-     "Ars Technica AI",
-     1
-    ],
-    [
      "Anthropic News",
-     1
+     2
     ],
     [
-     "MIT Tech Review AI",
+     "Ars Technica AI",
      1
     ],
     [
@@ -903,11 +926,11 @@
    ],
    "overlap": [
     [
-     "TechCrunch AI",
+     "Google Gemini",
      1
     ],
     [
-     "Google Gemini",
+     "TechCrunch AI",
      1
     ],
     [
@@ -926,9 +949,18 @@
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
-   "som_ekstra": 0,
+   "i_listen": 5,
+   "som_ekstra": 1,
    "seneste": [
+    {
+     "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
     {
      "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
      "dato": "2026-10-02T15:49:04",
@@ -973,24 +1005,11 @@
      "side": "artikel/9df3eed3c7ef4ca1.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
-     "dato": "2026-09-28T17:03:16",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
-     "side": "artikel/f073d5eb416e6fc1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Anthropic News",
-     1
-    ],
-    [
-     "The Verge AI",
      1
     ]
    ]
