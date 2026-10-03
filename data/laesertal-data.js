@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-03T14:18:17.762253+00:00",
+ "opdateret": "2026-10-03T19:57:25.819158+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -134,7 +134,7 @@ window.LAESERTAL = {
      1,
      1,
      6,
-     1,
+     2,
      1,
      5,
      2,
@@ -168,12 +168,12 @@ window.LAESERTAL = {
      1,
      1,
      1,
-     1,
+     2,
      1,
      2,
      8,
-     2,
-     0
+     3,
+     2
     ]
    },
    {
@@ -207,8 +207,8 @@ window.LAESERTAL = {
      1,
      3,
      2,
-     2,
-     0
+     3,
+     1
     ]
    },
    {
@@ -243,7 +243,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     2
     ]
    },
    {
@@ -277,8 +277,8 @@ window.LAESERTAL = {
      0,
      2,
      0,
-     3,
-     1
+     2,
+     0
     ]
    },
    {
@@ -354,20 +354,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 32,
- "sidevisninger_i_alt": 45,
+ "besoeg_i_alt": 31,
+ "sidevisninger_i_alt": 44,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 32,
-   "visninger": 45
+   "besoeg": 31,
+   "visninger": 44
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 30
+   "besoeg": 29
   },
   {
    "fra": "dk.search.yahoo.com",
@@ -379,8 +379,8 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 30,
-    "visninger": 30
+    "besoeg": 29,
+    "visninger": 29
    },
    {
     "fra": "herfra selv",

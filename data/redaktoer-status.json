@@ -1,14 +1,14 @@
 {
-  "opdateret": "2026-10-03T13:38:53.854812+00:00",
+  "opdateret": "2026-10-03T19:22:05.720080+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
     "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
+    "https://openai.com/index/practical-guide-building-gpt-6"
   ],
-  "input_fingerprint": "58180773b466b716",
+  "input_fingerprint": "df089ec51254aed3",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 7,
   "kildehentninger": 4,
@@ -38,15 +38,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -55,6 +47,18 @@
     },
     {
       "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -63,7 +67,7 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": "Artikel 5671402926db891c: skriveopgave har 943 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -76,10 +80,6 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
       "grundlag": "kildetekst"
     },
@@ -88,14 +88,18 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-    "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
-    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
+    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+    "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+    "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
   ],
-  "afventer_artikler": 77
+  "afventer_artikler": 74
 }

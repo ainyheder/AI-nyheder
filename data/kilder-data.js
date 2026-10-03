@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-03T13:38:53.854812+00:00",
- "artikler_i_alt": 77,
+ "opdateret": "2026-10-03T19:22:05.720080+00:00",
+ "artikler_i_alt": 83,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -85,15 +85,15 @@ window.KILDER_STATUS = {
      2
     ],
     [
-     "MIT Tech Review AI",
-     1
-    ],
-    [
      "TechCrunch AI",
      1
     ],
     [
      "The Verge AI",
+     1
+    ],
+    [
+     "MIT Tech Review AI",
      1
     ]
    ]
@@ -145,6 +145,15 @@ window.KILDER_STATUS = {
    "i_listen": 3,
    "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Gemini 4 Argon udrulles først til cybersikkerhed",
+     "dato": "",
+     "foerst_set": "2026-10-02T20:55:07.620979+00:00",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
     {
      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
      "dato": "",
@@ -225,9 +234,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 2,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Grok Team Bots deler viden på tværs",
+     "dato": "2026-09-28T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://x.ai/news/team-bots",
+     "side": "artikel/e1809a640e69e7c2.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Grok 4.7 tjekker sit eget arbejde",
      "dato": "2026-09-21T00:00:00",
@@ -303,17 +321,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 6,
-   "som_ekstra": 3,
+   "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "OpenAI Dot kan allerede bruge Slack og Codex",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Dots – Metas Muse er gratis"
-    },
     {
      "rubrik": "Claude Sonnet 5.5 er nu gratisniveauets model",
      "dato": "",
@@ -391,10 +400,6 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
-    ],
-    [
-     "The Verge AI",
-     1
     ]
    ]
   },
@@ -408,7 +413,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 25,
+   "i_listen": 27,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -419,6 +424,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Instinct, Folk og Caddy bor nu i sms'en",
+     "dato": "2026-10-03T14:00:00",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+     "side": "artikel/6ae30ec75fda881d.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Sean Parker bygger Stability AI om til musik",
@@ -493,6 +507,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
+     "dato": "2026-10-03T18:43:57",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+     "side": "artikel/f31587f812325d66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Grok fortalte Trump, at Maduro var upopulær",
      "dato": "2026-10-01T21:08:11",
      "foerst_set": "2026-10-02T12:20:39",
@@ -509,30 +532,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b56eb6fb25bd9dd2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Shopify Canvas bygger butikker ved at chatte",
-     "dato": "2026-10-01T16:44:35",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-     "side": "artikel/4aa9873d3078b314.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Opus 5.5 afsløres af 'this matters'",
-     "dato": "2026-10-01T17:50:19",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
-     "side": "artikel/33280aa886acff1b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     1
+     2
     ],
     [
      "Ars Technica AI",
@@ -554,8 +559,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 13,
-   "som_ekstra": 6,
+   "i_listen": 14,
+   "som_ekstra": 7,
    "seneste": [
     {
      "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
@@ -585,6 +590,15 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
+     "rubrik": "Amazon advarer mod datacenter-stoppus i ny blog",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon dropper hemmeligholdelse om datacentre"
+    },
+    {
      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
      "dato": "",
      "foerst_set": "2026-09-24T20:05:24",
@@ -612,6 +626,24 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Capcom vil bygge AI ind i RE Engine",
+     "dato": "2026-10-03T12:49:10",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+     "side": "artikel/cc9d67938b46f0ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kakul Srivastava advarer: AI-tekst giver dårligere samtaler",
+     "dato": "2026-10-03T11:00:00",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
+     "side": "artikel/177ca5e89d7b6072.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI Dot ordner både hjemmeside og video",
      "dato": "2026-10-02T14:00:00",
      "foerst_set": "2026-10-02T20:55:07",
@@ -631,7 +663,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Suno skaber nu også tale og talestemmer",
-     "dato": "2026-10-02T05:42:19",
+     "dato": "2026-10-02T09:42:19",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
      "side": "artikel/190c03ca19ef6f66.html",
@@ -640,19 +672,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Chegg og PMC tabte søgsmål mod Google",
-     "dato": "2026-10-01T13:12:21",
+     "dato": "2026-10-01T17:12:21",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
      "side": "artikel/73e415512ac969ca.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon advarer mod datacenter-stoppus i ny blog",
-     "dato": "2026-10-02T07:52:20",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
-     "side": "artikel/53b624def7e0cc92.html",
      "hvor": "forside",
      "under": ""
     },
@@ -709,40 +732,27 @@ window.KILDER_STATUS = {
      "side": "artikel/4982fc62dce43b2d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Engram lader AI hallucinere nye lyde",
-     "dato": "2026-09-27T20:46:36",
-     "foerst_set": "2026-09-27T23:20:35",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
-     "side": "artikel/14fc67fa9a509213.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Google Gemini",
+     "TechCrunch AI",
      2
     ],
     [
-     "TechCrunch AI",
-     1
-    ],
-    [
-     "Simon Willison AI",
-     1
+     "Google Gemini",
+     2
     ],
     [
      "Ars Technica AI",
      1
     ],
     [
-     "MIT Tech Review AI",
+     "Anthropic News",
      1
     ],
     [
-     "Anthropic News",
+     "MIT Tech Review AI",
      1
     ],
     [
@@ -761,7 +771,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
+   "i_listen": 11,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -790,6 +800,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Chegg og PMC tabte søgsmål mod Google"
+    },
+    {
+     "rubrik": "Topchef anholdt for Nvidia-smugling til Kina",
+     "dato": "2026-10-02T18:39:36",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+     "side": "artikel/00a7c45278c3c4fc.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia hæver Shield TV Pro med 100 dollars",
@@ -884,11 +903,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "Google Gemini",
+     "TechCrunch AI",
      1
     ],
     [
-     "TechCrunch AI",
+     "Google Gemini",
      1
     ],
     [
@@ -907,7 +926,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -934,6 +953,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
      "side": "artikel/249c91905a11c4f5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "HPE: Køb AI-kapacitet når forbruget er stabilt",
+     "dato": "2026-09-29T10:43:45",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+     "side": "artikel/2665823bec02153f.html",
      "hvor": "forside",
      "under": ""
     },
