@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-03T05:39:48.461066+00:00",
+  "opdateret": "2026-10-03T13:38:53.854812+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,10 +8,10 @@
     "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
     "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
   ],
-  "input_fingerprint": "328e02ee0610fdfb",
+  "input_fingerprint": "58180773b466b716",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "modelkald": 7,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -38,26 +38,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -75,10 +55,6 @@
     },
     {
       "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -87,47 +63,39 @@
     },
     {
       "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://huggingface.co/blog/allenai/astabrief",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-    "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-    "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
+    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+    "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
   ],
-  "afventer_artikler": 87
+  "afventer_artikler": 77
 }

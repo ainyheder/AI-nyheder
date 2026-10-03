@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-03T06:09:36.890131+00:00",
+ "genereret": "2026-10-03T14:18:22.703292+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,67 +195,77 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-03T05:39:48.461066+00:00",
-  "antal": 69,
+  "opdateret": "2026-10-03T13:38:53.854812+00:00",
+  "antal": 77,
   "med_billede": 30,
-  "paa_dansk": 69,
+  "paa_dansk": 77,
   "kategorier": {
-   "Lanceringer": 19,
-   "Politik \u0026 jura": 6,
-   "Penge \u0026 marked": 16,
-   "Forskning": 7,
-   "Samfund \u0026 etik": 14,
-   "Nyheder": 4,
+   "Nyheder": 3,
+   "Lanceringer": 21,
+   "Politik \u0026 jura": 7,
+   "Penge \u0026 marked": 18,
+   "Forskning": 8,
+   "Samfund \u0026 etik": 16,
    "Dybde": 1,
    "Labs": 1,
-   "Hverdags-AI": 1
+   "Hverdags-AI": 2
   },
   "kilder": {
+   "TechCrunch AI": 25,
    "Google Gemini": 3,
-   "The Verge AI": 12,
-   "TechCrunch AI": 19,
+   "The Verge AI": 13,
    "Ars Technica AI": 10,
-   "Simon Willison AI": 5,
+   "Simon Willison AI": 6,
    "Hugging Face": 3,
-   "Anthropic News": 7,
-   "MIT Tech Review AI": 4,
+   "Anthropic News": 6,
+   "MIT Tech Review AI": 5,
    "Mistral AI": 2,
    "Google DeepMind": 2,
    "xAI News": 2
   },
   "udvalgte": [
    {
-    "titel": "OpenAI’s new agent is a shot at Meta — but can it compete with free?",
-    "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-    "side": "artikel/cdc4b946eb257199.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-01T14:36:50+00:00",
-    "billede": "data/img/cc070af53380a188.jpg"
-   },
-   {
-    "titel": "ChatGPT can now virtually try on clothes for you",
-    "rubrik": "OpenAI lancerer virtuel tøjprøvning i ChatGPT",
-    "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-    "side": "artikel/a4548c383007ff68.html",
+    "titel": "Amazon releases its own Jev clone as decision models flood the web",
+    "rubrik": "Amazon udgiver åben beslutningsmodel Strands Decider",
+    "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+    "side": "artikel/d807344c9cb1da49.html",
     "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-01T19:21:53+00:00",
-    "billede": "data/img/8c662e77df4c3f41.webp"
+    "dato": "2026-10-01T16:49:22+00:00",
+    "billede": ""
    },
    {
-    "titel": "With most information hidden, the game Stratego had stumped AI—until now",
-    "rubrik": "Ataraxos slog verdens bedste Stratego-spiller",
-    "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-    "side": "artikel/6c08f4cc37ece942.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-01T16:28:04+00:00",
-    "billede": "data/img/19216534e63ae027.webp"
+    "titel": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
+    "rubrik": "Chegg og PMC tabte søgsmål mod Google",
+    "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+    "side": "artikel/73e415512ac969ca.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-01T13:12:21-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Guided Vision in Gemini Live: built for accessibility",
+    "rubrik": "Gemini Live beskriver verden for blinde",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
+    "side": "artikel/f6b1aa53f7c239e8.html",
+    "kategori": "Lanceringer",
+    "kilde": "Google Gemini",
+    "dato": "2026-10-01T16:00:00+00:00",
+    "billede": "data/img/795b1b31fe719961.jpg"
    }
   ],
   "seneste": [
+   {
+    "titel": "Sean Parker is rebuilding Stability AI around music",
+    "rubrik": "Sean Parker bygger Stability AI om til musik",
+    "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+    "side": "artikel/f8f9945809c1e062.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-02T21:09:14+00:00",
+    "billede": "data/img/22a57f058aa5b0db.jpg"
+   },
    {
     "titel": "Meta wants your next gadget to be Muse-infused",
     "rubrik": "Meta lader udviklere bygge Muse-hardware selv",
@@ -267,24 +277,14 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/36cffa2985e1b5e7.webp"
    },
    {
-    "titel": "Apple changes full-disk access permissions to curb abuse from AI agents",
-    "rubrik": "Apple strammer diskadgangen mod AI-agent-misbrug",
-    "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
-    "side": "artikel/23fa5ac9f6f6f465.html",
-    "kategori": "Nyheder",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-02T23:03:16+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Sean Parker is rebuilding Stability AI around music",
-    "rubrik": "Sean Parker bygger Stability AI om til musik",
-    "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "side": "artikel/f8f9945809c1e062.html",
-    "kategori": "Nyheder",
+    "titel": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+    "rubrik": "Apple strammer Full Disk Access til AI-agenter",
+    "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+    "side": "artikel/6a225a11d9fca6a9.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-02T21:09:14+00:00",
-    "billede": "data/img/22a57f058aa5b0db.jpg"
+    "dato": "2026-10-02T18:11:27+00:00",
+    "billede": ""
    },
    {
     "titel": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
@@ -357,6 +357,16 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
+    "titel": "Amazon releases its own Jev clone as decision models flood the web",
+    "rubrik": "Amazon udgiver åben beslutningsmodel Strands Decider",
+    "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+    "side": "artikel/d807344c9cb1da49.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-01T16:49:22+00:00",
+    "billede": ""
+   },
+   {
     "titel": "OpenAI’s new agent is a shot at Meta — but can it compete with free?",
     "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
@@ -365,35 +375,25 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-01T14:36:50+00:00",
     "billede": "data/img/cc070af53380a188.jpg"
-   },
-   {
-    "titel": "ChatGPT can now virtually try on clothes for you",
-    "rubrik": "OpenAI lancerer virtuel tøjprøvning i ChatGPT",
-    "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-    "side": "artikel/a4548c383007ff68.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-01T19:21:53+00:00",
-    "billede": "data/img/8c662e77df4c3f41.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-03T05:39:48.461066+00:00",
+  "opdateret": "2026-10-03T13:38:53.854812+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 8,
+  "modelkald": 7,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
    "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
    "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
   ],
   "udgivet_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-   "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-   "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
+   "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+   "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+   "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/"
   ],
   "vaerktoejer": [
    {
@@ -421,26 +421,6 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
@@ -458,10 +438,6 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -470,46 +446,38 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+    "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
     "grundlag": "kildetekst"
    },
    {
     "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
     "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://huggingface.co/blog/allenai/astabrief",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
-    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-03T05:39:48.098231+00:00",
+  "opdateret": "2026-10-03T13:38:53.280821+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -865,8 +833,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-03T05:39:48.461066+00:00",
-  "artikler_i_alt": 69,
+  "opdateret": "2026-10-03T13:38:53.854812+00:00",
+  "artikler_i_alt": 77,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -878,9 +846,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 7,
-    "som_ekstra": 0,
+    "i_listen": 6,
+    "som_ekstra": 1,
     "seneste": [
+     {
+      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
+      "dato": "",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
+     },
      {
       "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
       "dato": "2026-10-02T00:00:00",
@@ -905,15 +882,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://www.anthropic.com/news/barclays-scales-claude",
       "side": "artikel/9393e9cf493067a7.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-træk",
-      "dato": "2026-09-23T00:00:00",
-      "foerst_set": "2026-09-23T19:47:07",
-      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "side": "artikel/68024e28356d7cb5.html",
       "hvor": "forside",
       "under": ""
      },
@@ -992,15 +960,6 @@ window.KOMMANDO_DATA = {
     "i_listen": 3,
     "som_ekstra": 3,
     "seneste": [
-     {
-      "rubrik": "Gemini 4 Argon ruller først ud til forsvarere",
-      "dato": "",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-     },
      {
       "rubrik": "Gemini 3.8 Live giver AI et ansigt",
       "dato": "",
@@ -1142,9 +1101,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 5,
-    "som_ekstra": 2,
+    "i_listen": 6,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "OpenAI Dot kan allerede bruge Slack og Codex",
+      "dato": "",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI lancerer Dots – Metas Muse er gratis"
+     },
      {
       "rubrik": "Claude Sonnet 5.5 er nu gratisniveauets model",
       "dato": "",
@@ -1200,6 +1168,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Claude Opus 4.5 krydsede grænsen til pålidelig kode",
+      "dato": "2026-09-27T23:54:15",
+      "foerst_set": "2026-09-28T05:46:19",
+      "link": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+      "side": "artikel/922b779b0327582b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "John Gruber advarer mod Metas Muse",
       "dato": "2026-09-25T17:22:01",
       "foerst_set": "2026-09-25T20:06:37",
@@ -1220,7 +1197,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 19,
+    "i_listen": 25,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1233,6 +1210,15 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
+      "rubrik": "Sean Parker bygger Stability AI om til musik",
+      "dato": "2026-10-02T21:09:14",
+      "foerst_set": "2026-10-03T05:39:48",
+      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "side": "artikel/f8f9945809c1e062.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Meta lader udviklere bygge Muse-hardware selv",
       "dato": "2026-10-03T00:45:39",
       "foerst_set": "2026-10-03T05:39:48",
@@ -1242,11 +1228,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Sean Parker bygger Stability AI om til musik",
-      "dato": "2026-10-02T21:09:14",
-      "foerst_set": "2026-10-03T05:39:48",
-      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "side": "artikel/f8f9945809c1e062.html",
+      "rubrik": "Apple strammer Full Disk Access til AI-agenter",
+      "dato": "2026-10-02T18:11:27",
+      "foerst_set": "2026-10-02T20:55:07",
+      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "side": "artikel/6a225a11d9fca6a9.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1269,11 +1255,29 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Amazon udgiver åben beslutningsmodel Strands Decider",
+      "dato": "2026-10-01T16:49:22",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+      "side": "artikel/d807344c9cb1da49.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "OpenAI lancerer virtuel tøjprøvning i ChatGPT",
       "dato": "2026-10-01T19:21:53",
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
       "side": "artikel/a4548c383007ff68.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Legato lancerer AI-hørebriller til 999 dollar",
+      "dato": "2026-10-01T13:00:00",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
+      "side": "artikel/b2aa71ddeef46e8d.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1303,33 +1307,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/4aa9873d3078b314.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Claude Opus 5.5 afsløres af 'this matters'",
-      "dato": "2026-10-01T17:50:19",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
-      "side": "artikel/33280aa886acff1b.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Chesky: AI-agenter mangler deres eget styresystem",
-      "dato": "2026-10-01T15:12:00",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
-      "side": "artikel/e0ffe3730fa17abf.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Photon henter 4,5 mio. dollar efter app-begravelse",
-      "dato": "2026-10-01T14:00:00",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
-      "side": "artikel/3f4ea9f16a21e959.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1343,7 +1320,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 12,
+    "i_listen": 13,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1389,7 +1366,7 @@ window.KOMMANDO_DATA = {
       "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
       "side": "",
       "hvor": "under",
-      "under": "Claude opdager nyt enzymsystem med CRISPR-træk"
+      "under": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen"
      },
      {
       "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
@@ -1467,8 +1444,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 10,
-    "som_ekstra": 2,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Apple strammer diskadgangen mod AI-agent-misbrug",
+      "dato": "",
+      "foerst_set": "2026-10-03T05:39:48",
+      "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+      "side": "",
+      "hvor": "under",
+      "under": "Apple strammer Full Disk Access til AI-agenter"
+     },
      {
       "rubrik": "Google annoncerer Gemini 4 Argon – kun for testere",
       "dato": "",
@@ -1486,15 +1472,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Chegg og PMC tabte søgsmål mod Google"
-     },
-     {
-      "rubrik": "Apple strammer diskadgangen mod AI-agent-misbrug",
-      "dato": "2026-10-02T23:03:16",
-      "foerst_set": "2026-10-03T05:39:48",
-      "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
-      "side": "artikel/23fa5ac9f6f6f465.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Nvidia hæver Shield TV Pro med 100 dollars",
@@ -1569,11 +1546,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "OpenAI stopper træning: agent forsøgte at bryde ud",
-      "dato": "2026-09-28T16:43:18",
-      "foerst_set": "2026-09-28T16:58:31",
-      "link": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents/",
-      "side": "artikel/3eb7c225ebe6dfc6.html",
+      "rubrik": "OpenAI-kritikere udstiller skulptur af flygtende ledere",
+      "dato": "2026-09-29T21:52:58",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://arstechnica.com/ai/2026/09/what-iceberg-bay-area-artists-target-openai-with-titanic-themed-protest-art/",
+      "side": "artikel/2ace8317ac1f6698.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1589,7 +1566,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1625,6 +1602,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-28T16:58:31",
       "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
       "side": "artikel/9df3eed3c7ef4ca1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
+      "dato": "2026-09-28T17:03:16",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+      "side": "artikel/f073d5eb416e6fc1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1726,12 +1712,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-03T06:09:32.901284+00:00",
+  "opdateret": "2026-10-03T14:18:17.762253+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 30,
-  "sidevisninger_i_alt": 41,
+  "besoeg_i_alt": 32,
+  "sidevisninger_i_alt": 45,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1888,15 +1874,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 30,
-    "visninger": 41
+    "besoeg": 32,
+    "visninger": 45
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 28
+    "besoeg": 30
    },
    {
     "fra": "dk.search.yahoo.com",
