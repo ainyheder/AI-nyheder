@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-02T20:55:07.620979+00:00",
- "artikler_i_alt": 72,
+ "opdateret": "2026-10-03T05:39:48.461066+00:00",
+ "artikler_i_alt": 69,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
+     "dato": "2026-10-02T00:00:00",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://www.anthropic.com/news/claude-frontier-academy",
+     "side": "artikel/93dc283205dabb91.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
      "dato": "2026-09-28T00:00:00",
@@ -95,9 +104,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 1,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Mistral åbner München-hub for fysik-AI",
+     "dato": "2026-09-28T15:57:59",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://mistral.ai/news/hallo-deutschland/",
+     "side": "artikel/1e688dbfb03ab730.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Mistral skal drive Firefox' AI-assistent",
      "dato": "2026-09-16T12:00:00",
@@ -124,7 +142,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Google Argon skriver 1 million tokens ad gangen",
+     "rubrik": "Gemini 4 Argon ruller først ud til forsvarere",
      "dato": "",
      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
@@ -289,7 +307,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -338,6 +356,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "OpenAI-medarbejder: Modelhop overraskede sikkerhedsteamet",
+     "dato": "2026-09-28T19:11:42",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://simonwillison.net/2026/Sep/28/joedaroo/",
+     "side": "artikel/12d854ee0c6b2a17.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "John Gruber advarer mod Metas Muse",
      "dato": "2026-09-25T17:22:01",
      "foerst_set": "2026-09-25T20:06:37",
@@ -364,7 +391,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 20,
+   "i_listen": 19,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -377,11 +404,20 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
-     "rubrik": "Trump omdøber AI til super intelligence",
-     "dato": "2026-10-02T17:48:16",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
-     "side": "artikel/398e0e7a6913fdf1.html",
+     "rubrik": "Meta lader udviklere bygge Muse-hardware selv",
+     "dato": "2026-10-03T00:45:39",
+     "foerst_set": "2026-10-03T05:39:48",
+     "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+     "side": "artikel/c0e86fd993a7b72e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sean Parker bygger Stability AI om til musik",
+     "dato": "2026-10-02T21:09:14",
+     "foerst_set": "2026-10-03T05:39:48",
+     "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+     "side": "artikel/f8f9945809c1e062.html",
      "hvor": "forside",
      "under": ""
     },
@@ -449,43 +485,38 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Instinct firedobles til 10 milliarder på én måned",
-     "dato": "2026-09-28T13:38:48",
-     "foerst_set": "2026-09-28T16:58:31",
-     "link": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
-     "side": "artikel/4c0a92efb1ccb759.html",
+     "rubrik": "Chesky: AI-agenter mangler deres eget styresystem",
+     "dato": "2026-10-01T15:12:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
+     "side": "artikel/e0ffe3730fa17abf.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Modulate henter 25 mio. dollar til stemme-AI",
-     "dato": "2026-09-28T14:05:00",
-     "foerst_set": "2026-09-28T16:58:31",
-     "link": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
-     "side": "artikel/c427bd6569680f96.html",
+     "rubrik": "Photon henter 4,5 mio. dollar efter app-begravelse",
+     "dato": "2026-10-01T14:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+     "side": "artikel/3f4ea9f16a21e959.html",
      "hvor": "forside",
      "under": ""
     },
     {
-     "rubrik": "Outmarket henter 34,5 mio. dollar i Series B",
-     "dato": "2026-09-28T14:00:00",
+     "rubrik": "Meta hyrer MongoDB-ceo til erhvervsplatform",
+     "dato": "2026-09-28T16:52:38",
      "foerst_set": "2026-09-28T16:58:31",
-     "link": "https://techcrunch.com/2026/09/28/insuretech-outmarket-raises-34-5m-just-months-after-prior-round/",
-     "side": "artikel/743718b6f714d8dd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amodei møder Trump til middag første gang",
-     "dato": "2026-09-27T20:34:28",
-     "foerst_set": "2026-09-27T23:20:35",
-     "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
-     "side": "artikel/920676792664d129.html",
+     "link": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
+     "side": "artikel/2d794519f8a76196.html",
      "hvor": "forside",
      "under": ""
     }
    ],
    "overlap": [
+    [
+     "The Verge AI",
+     1
+    ],
     [
      "Anthropic News",
      1
@@ -502,9 +533,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 13,
-   "som_ekstra": 5,
+   "i_listen": 12,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
+     "dato": "",
+     "foerst_set": "2026-10-03T05:39:48",
+     "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lader udviklere bygge Muse-hardware selv"
+    },
     {
      "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
      "dato": "",
@@ -515,7 +555,7 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
-     "rubrik": "Google Guided Vision beskriver verden via kameraet",
+     "rubrik": "Google lancerer Guided Vision i Gemini Live",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
@@ -551,11 +591,38 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "OpenAI Dot ordner både hjemmeside og video",
+     "dato": "2026-10-02T14:00:00",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+     "side": "artikel/edef5e5d6249ea7f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
-     "dato": "2026-10-01T10:36:50",
+     "dato": "2026-10-01T14:36:50",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
      "side": "artikel/cdc4b946eb257199.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Suno skaber nu også tale og talestemmer",
+     "dato": "2026-10-02T05:42:19",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+     "side": "artikel/190c03ca19ef6f66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Chegg og PMC tabte søgsmål mod Google",
+     "dato": "2026-10-01T13:12:21",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+     "side": "artikel/73e415512ac969ca.html",
      "hvor": "forside",
      "under": ""
     },
@@ -630,33 +697,6 @@ window.KILDER_STATUS = {
      "side": "artikel/113b2d34672f059d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Fejl hos Irregular sendte AI-agenter efter rigtige mål",
-     "dato": "2026-09-25T15:39:48",
-     "foerst_set": "2026-09-25T20:06:37",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-     "side": "artikel/c01ce16603fc2590.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sony og UMG anklager Suno for modelhvidvask",
-     "dato": "2026-09-25T15:51:56",
-     "foerst_set": "2026-09-25T20:06:37",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
-     "side": "artikel/548f5a0f314c2af0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft Copilot samler chat, kode og agenter",
-     "dato": "2026-09-25T12:00:00",
-     "foerst_set": "2026-09-25T14:07:11",
-     "link": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
-     "side": "artikel/7c931ccb38262d95.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -667,6 +707,14 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
+    ],
+    [
+     "TechCrunch AI",
+     1
     ],
     [
      "Google DeepMind",
@@ -684,8 +732,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
-   "som_ekstra": 1,
+   "i_listen": 10,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Google annoncerer Gemini 4 Argon – kun for testere",
@@ -695,6 +743,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Dommer: Forventet trafik er ikke aftale med Google",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
+     "side": "",
+     "hvor": "under",
+     "under": "Chegg og PMC tabte søgsmål mod Google"
+    },
+    {
+     "rubrik": "Apple strammer diskadgangen mod AI-agent-misbrug",
+     "dato": "2026-10-02T23:03:16",
+     "foerst_set": "2026-10-03T05:39:48",
+     "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+     "side": "artikel/23fa5ac9f6f6f465.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia hæver Shield TV Pro med 100 dollars",
+     "dato": "2026-10-02T14:52:16",
+     "foerst_set": "2026-10-02T14:56:39",
+     "link": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
+     "side": "artikel/df8c3961bd400855.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Trump får 24 techfirmaer til frivillige AI-sikkerhedstests",
@@ -733,15 +808,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI sagsøges: 'AI gjorde det' er intet forsvar",
-     "dato": "2026-09-30T18:25:04",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/",
-     "side": "artikel/ad5d5e6f185d798a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "RFK Jr. sagde AI ville modsige sundhedseksperter",
      "dato": "2026-09-30T19:31:25",
      "foerst_set": "2026-10-02T12:20:39",
@@ -776,38 +842,15 @@ window.KILDER_STATUS = {
      "side": "artikel/3eb7c225ebe6dfc6.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Domstol godkender sortlistning af Anthropic efter Claude-nej",
-     "dato": "2026-09-25T21:36:20",
-     "foerst_set": "2026-09-25T23:28:32",
-     "link": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-     "side": "artikel/725b5e9b15c1dbeb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Tesla-arbejdere ville ikke træne afløsere",
-     "dato": "2026-09-25T21:10:51",
-     "foerst_set": "2026-09-25T23:28:32",
-     "link": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
-     "side": "artikel/c9c1d3aa0b83344c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "CESifo-studie finder ingen AI-effekt på nyuddannedes ledighed",
-     "dato": "2026-09-25T19:11:05",
-     "foerst_set": "2026-09-25T20:06:37",
-     "link": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-     "side": "artikel/9c42d9f4906b8af0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
+     1
+    ],
+    [
+     "The Verge AI",
      1
     ]
    ]
@@ -822,7 +865,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -858,15 +901,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-28T16:58:31",
      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
      "side": "artikel/9df3eed3c7ef4ca1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pentagon søger 30,3 millioner dollars til AI-løgndetektion",
-     "dato": "2026-09-25T09:16:25",
-     "foerst_set": "2026-09-25T14:07:11",
-     "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-     "side": "artikel/b50925bd3c97333e.html",
      "hvor": "forside",
      "under": ""
     }
