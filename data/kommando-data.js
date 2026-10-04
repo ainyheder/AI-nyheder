@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-04T06:40:37.924368+00:00",
+ "genereret": "2026-10-04T14:47:22.775042+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,30 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-04T06:14:53.966311+00:00",
-  "antal": 87,
+  "opdateret": "2026-10-04T14:19:28.765696+00:00",
+  "antal": 93,
   "med_billede": 29,
-  "paa_dansk": 87,
+  "paa_dansk": 93,
   "kategorier": {
-   "Samfund \u0026 etik": 18,
-   "Lanceringer": 24,
+   "Lanceringer": 25,
    "Politik \u0026 jura": 10,
    "Forskning": 9,
-   "Penge \u0026 marked": 20,
-   "Hverdags-AI": 6
+   "Penge \u0026 marked": 22,
+   "Samfund \u0026 etik": 18,
+   "Hverdags-AI": 8,
+   "Dybde": 1
   },
   "kilder": {
-   "The Verge AI": 15,
    "TechCrunch AI": 25,
-   "Google Gemini": 4,
+   "Google Gemini": 5,
+   "The Verge AI": 15,
    "Ars Technica AI": 11,
    "MIT Tech Review AI": 5,
    "Hugging Face": 4,
-   "Simon Willison AI": 6,
+   "Simon Willison AI": 8,
    "Anthropic News": 9,
-   "Mistral AI": 2,
-   "xAI News": 4,
+   "Mistral AI": 4,
+   "xAI News": 5,
    "Google DeepMind": 2
   },
   "udvalgte": [
@@ -242,26 +243,26 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "AI music maker Suno now generates spoken words",
-    "rubrik": "Suno skaber nu også tale og talestemmer",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-    "side": "artikel/190c03ca19ef6f66.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-02T09:42:19+00:00",
-    "billede": "data/img/6dc5dc991c91b1ec.webp"
+    "titel": "Redefining enterprise intelligence with autonomous AI",
+    "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
+    "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+    "side": "artikel/ed9dd57bde8283bb.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-02T15:49:04+00:00",
+    "billede": "data/img/9b2ef9dd11581fc4.webp"
    }
   ],
   "seneste": [
    {
-    "titel": "An OpenAI safety employee has quit and is sounding the alarm",
-    "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-    "side": "artikel/f8fc0aa18dcc03fd.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-03T10:31:56-04:00",
-    "billede": "data/img/663a991bf2a629ea.webp"
+    "titel": "We're going to need default hard budget caps on pretty much everything",
+    "rubrik": "AWS vil nu lukke projekt ved budgetgrænse",
+    "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+    "side": "artikel/81b68c5ee25b3bb6.html",
+    "kategori": "Dybde",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-03T23:34:02+00:00",
+    "billede": ""
    },
    {
     "titel": "Capcom is preparing for a ‘future where we create games together with AI’",
@@ -272,6 +273,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-03T12:49:10-04:00",
     "billede": "data/img/16784d4161e007c2.jpg"
+   },
+   {
+    "titel": "An OpenAI safety employee has quit and is sounding the alarm",
+    "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "side": "artikel/f8fc0aa18dcc03fd.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-03T10:31:56-04:00",
+    "billede": "data/img/663a991bf2a629ea.webp"
    },
    {
     "titel": "All the AI agents that can live in your text messages",
@@ -362,26 +373,16 @@ window.KOMMANDO_DATA = {
     "kilde": "Ars Technica AI",
     "dato": "2026-10-02T18:39:36+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-    "rubrik": "Anthropic lancerer Claude-akademi for 10.000 ingeniører",
-    "link": "https://www.anthropic.com/news/claude-frontier-academy",
-    "side": "artikel/93dc283205dabb91.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "Anthropic News",
-    "dato": "2026-10-02T00:00:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-04T06:14:53.966311+00:00",
+  "opdateret": "2026-10-04T14:19:28.765696+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
-  "kildehentninger": 4,
+  "modelkald": 6,
+  "kildehentninger": 0,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
    "https://huggingface.co/blog/allenai/astabrief",
@@ -390,7 +391,7 @@ window.KOMMANDO_DATA = {
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
    "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-   "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+   "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/"
   ],
   "vaerktoejer": [
    {
@@ -414,7 +415,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -422,47 +423,18 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
    },
    {
     "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
-  "kildegrundlag": [
-   {
-    "link": "https://huggingface.co/blog/allenai/astabrief",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-    "grundlag": "kildetekst"
-   }
-  ]
+  "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-04T06:14:53.324046+00:00",
+  "opdateret": "2026-10-04T14:19:27.949795+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -818,8 +790,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-04T06:14:53.966311+00:00",
-  "artikler_i_alt": 87,
+  "opdateret": "2026-10-04T14:19:28.765696+00:00",
+  "artikler_i_alt": 93,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -927,7 +899,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 2,
+    "i_listen": 4,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -947,6 +919,24 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c410e90a2cd9982e.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Mistral henter 3 mia. euro i europæisk rekordrunde",
+      "dato": "2026-09-08T12:00:22",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "side": "artikel/fca2a8ea89680b45.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Mistral migrerede 40.000 linjer Fortran til C++",
+      "dato": "2026-09-09T12:00:46",
+      "foerst_set": "2026-09-11T14:38:09",
+      "link": "https://mistral.ai/news/legacy-code-modernization/",
+      "side": "artikel/026c0f4593e4520d.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -960,11 +950,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 3,
     "seneste": [
      {
-      "rubrik": "Gemini 4 Argon ruller først ud til sikkerhedsfolk",
+      "rubrik": "Gemini 4 Argon lukker kun cyberforsvarere ind",
       "dato": "",
       "foerst_set": "2026-10-02T20:55:07.620979+00:00",
       "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
@@ -1034,6 +1024,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/2fcf2c8b0f4dd9b8.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Google: 86 procent af AI-samtaler sker privat",
+      "dato": "2026-09-15T16:00:00",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/household-chores-tips/",
+      "side": "artikel/accf8ea74b91d9de.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1047,7 +1046,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1083,6 +1082,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-18T19:56:02",
       "link": "https://x.ai/news/grok-voice-transcribe-2",
       "side": "artikel/2125ef3b6ef2360a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Grok Build husker nu på tværs af sessioner",
+      "dato": "2026-09-16T00:00:00",
+      "foerst_set": "2026-09-16T21:39:37",
+      "link": "https://x.ai/news/grok-build-memory",
+      "side": "artikel/fd1347c92d831b8e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1149,18 +1157,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 6,
-    "som_ekstra": 3,
+    "i_listen": 8,
+    "som_ekstra": 2,
     "seneste": [
-     {
-      "rubrik": "OpenAI lancerer agenten Dot og model GPT-6.1 Sol",
-      "dato": "",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI lancerer Dots – Metas Muse er gratis"
-     },
      {
       "rubrik": "Claude Sonnet 5.5 er nu gratisniveauets model",
       "dato": "",
@@ -1180,11 +1179,29 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
+      "rubrik": "AWS vil nu lukke projekt ved budgetgrænse",
+      "dato": "2026-10-03T23:34:02",
+      "foerst_set": "2026-10-04T06:14:53",
+      "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "side": "artikel/81b68c5ee25b3bb6.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Matthew Green: Fælles software-cache ændrede agenters adfærd",
       "dato": "2026-10-01T06:29:01",
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://simonwillison.net/2026/Oct/1/matthew-green/",
       "side": "artikel/55278edd569df1d2.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Willison: GPT-6.1 Sol til femtedelen",
+      "dato": "2026-09-29T18:27:48",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "side": "artikel/15ed8bb0ae8124e9.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1444,20 +1461,20 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
-      "dato": "2026-10-03T10:31:56",
-      "foerst_set": "2026-10-03T19:22:05",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "side": "artikel/f8fc0aa18dcc03fd.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Capcom vil bygge AI ind i RE Engine",
       "dato": "2026-10-03T12:49:10",
       "foerst_set": "2026-10-03T19:22:05",
       "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
       "side": "artikel/cc9d67938b46f0ab.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+      "dato": "2026-10-03T10:31:56",
+      "foerst_set": "2026-10-03T19:22:05",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "side": "artikel/f8fc0aa18dcc03fd.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1540,20 +1557,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Trump får 24 techfirmaer til frivillige AI-sikkerhedstests",
-      "dato": "2026-09-30T18:47:01",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
-      "side": "artikel/46a3a5a996fbe157.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Ataraxos slog verdens bedste Stratego-spiller",
       "dato": "2026-10-01T16:28:04",
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
       "side": "artikel/6c08f4cc37ece942.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Trump får 24 techfirmaer til frivillige AI-sikkerhedstests",
+      "dato": "2026-09-30T18:47:01",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
+      "side": "artikel/46a3a5a996fbe157.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1769,12 +1786,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-04T06:40:30.532433+00:00",
+  "opdateret": "2026-10-04T14:47:14.033831+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 30,
-  "sidevisninger_i_alt": 39,
+  "besoeg_i_alt": 28,
+  "sidevisninger_i_alt": 37,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1931,8 +1948,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 30,
-    "visninger": 39
+    "besoeg": 28,
+    "visninger": 37
    }
   ],
   "artikler": [],
@@ -1940,10 +1957,6 @@ window.KOMMANDO_DATA = {
    {
     "fra": "direkte",
     "besoeg": 28
-   },
-   {
-    "fra": "dk.search.yahoo.com",
-    "besoeg": 2
    }
   ],
   "laeste_temaer": []

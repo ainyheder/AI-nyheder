@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-04T06:14:53.966311+00:00",
+  "opdateret": "2026-10-04T14:19:28.765696+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,16 +8,16 @@
     "https://huggingface.co/blog/allenai/astabrief",
     "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
   ],
-  "input_fingerprint": "c431a80adaaec99c",
+  "input_fingerprint": "c1171e12026d429f",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "AstaBrief: 'Hvor andre systemer skriver rapporten sektion for sektion' generaliserer ud over kilden, der dokumenterer sektion-for-sektion-tilgangen hos Ai2's egen pipeline",
-    "AstaBrief: stamfejl i 'repræsenterer dengang den dengang gældende frontier'",
-    "OpenAI: 'ansællelsestid' i nøgletal skal være 'ansættelsestid'",
-    "Rubrikkerne på artikel 1 og 3 er paraphraseret i forhold til den bestilte skriveopgave (dækkende, ikke misvisende)"
+    "Udgaven er tom: der er ikke valgt nogen hovedhistorier. Retningen kræver, at forsiden begynder med de seneste 24 timer og op til tre hovedhistorier fra de seneste 48 timer – her ligger bl.a. Stability AI's tre lydmodeller og musikværktøj (2. okt., markeret som modellancering) og Suno Speech (2. okt.) ubenyttet, så forsiden består kun af anbefalinger.",
+    "Det eneste reelle modellancering-kandidat i udvalget (Stability AI, 5671402926db891c) er ikke ført som hovedhistorie, selv om nye modeller er førsteprioritet; den ligger i stedet nederst blandt anbefalingerne.",
+    "Rubrikken 'AWS vil nu lukke projekt ved budgetgrænse' (345f1755705d282a) fremstiller funktionen som generelt tilgængelig, mens artiklen selv slår fast, at den nye oplevelse rulles ud til et begrænset antal kunder – den forbehold bør også stå i rubrik/resumé.",
+    "Øvrige anbefalinger er internt uden dubletter og indholdsmæssigt dækkende, men kan ikke udgøre en komplet forside alene."
   ],
-  "modelkald": 7,
-  "kildehentninger": 4,
+  "modelkald": 6,
+  "kildehentninger": 0,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -40,7 +40,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -48,48 +48,19 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
-  "kildegrundlag": [
-    {
-      "link": "https://huggingface.co/blog/allenai/astabrief",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "grundlag": "kildetekst"
-    }
-  ],
+  "kildegrundlag": [],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
     "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-    "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability"
+    "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/"
   ],
-  "afventer_artikler": 58
+  "afventer_artikler": 54
 }
