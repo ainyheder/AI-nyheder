@@ -1,23 +1,17 @@
 {
-  "opdateret": "2026-10-04T14:19:28.765696+00:00",
+  "opdateret": "2026-10-04T19:46:52.694128+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "https://huggingface.co/blog/allenai/astabrief",
-    "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/"
+    "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
   ],
-  "input_fingerprint": "c1171e12026d429f",
+  "input_fingerprint": "bf9bc85c40aea0c5",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Udgaven er tom: der er ikke valgt nogen hovedhistorier. Retningen kræver, at forsiden begynder med de seneste 24 timer og op til tre hovedhistorier fra de seneste 48 timer – her ligger bl.a. Stability AI's tre lydmodeller og musikværktøj (2. okt., markeret som modellancering) og Suno Speech (2. okt.) ubenyttet, så forsiden består kun af anbefalinger.",
-    "Det eneste reelle modellancering-kandidat i udvalget (Stability AI, 5671402926db891c) er ikke ført som hovedhistorie, selv om nye modeller er førsteprioritet; den ligger i stedet nederst blandt anbefalingerne.",
-    "Rubrikken 'AWS vil nu lukke projekt ved budgetgrænse' (345f1755705d282a) fremstiller funktionen som generelt tilgængelig, mens artiklen selv slår fast, at den nye oplevelse rulles ud til et begrænset antal kunder – den forbehold bør også stå i rubrik/resumé.",
-    "Øvrige anbefalinger er internt uden dubletter og indholdsmæssigt dækkende, men kan ikke udgøre en komplet forside alene."
-  ],
-  "modelkald": 6,
-  "kildehentninger": 0,
+  "modelkald": 7,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -44,23 +38,72 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
-  "kildegrundlag": [],
+  "kildegrundlag": [
+    {
+      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "grundlag": "kildetekst"
+    }
+  ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
-    "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/"
+    "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
   ],
-  "afventer_artikler": 54
+  "afventer_artikler": 53
 }
