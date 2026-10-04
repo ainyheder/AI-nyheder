@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-03T23:17:18.732337+00:00",
+  "opdateret": "2026-10-04T06:14:53.966311+00:00",
   "kladder": [
     {
       "titel": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
@@ -12,9 +12,7 @@
       "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
       "rubrik": "Pope Leo XIV kritiserer AI-genereret kunst",
       "resume_da": "Paven mener, at maskiner kun laver statistiske beregninger uden menneskelig gnist. Han adskiller maskinkunst fra ægte kunst på et ontologisk niveau.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ],
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -31,8 +29,25 @@
         "emne": "allen ai astabrief"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "We're going to need default hard budget caps on pretty much everything",
+      "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "resume": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"after $X/month, send me a warning email\", will not cut it. Coding agents, and…",
+      "dato": "2026-10-03T23:34:02+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Dybde",
+      "foerst_set": "2026-10-04T06:14:53.966311+00:00",
+      "eget_foerst_set": "2026-10-04T06:14:53.966311+00:00",
+      "rubrik": "Simon Willison kræver hårde budgetloft i AI-tjenester",
+      "resume_da": "Simon Willison advarer om, at bløde advarsler stopper forbrugsfesten for sent; tjenester bør lukke for adgangen, når brugeren rammer sit månedlige loft.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
     },
     {
       "titel": "A model guide for the GPT-6 family",
@@ -167,39 +182,6 @@
       ]
     },
     {
-      "titel": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "resume": "",
-      "dato": "2026-09-29T15:30:38+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "NVIDIA Kumo Tabular forbedrer præcision på tabulære data",
-      "resume_da": "Modeln bringer ifølge udgiveren tabulær forudsigelse tættere på et nyt præcisions-effektivitetsniveau for strukturerede data.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "NVIDIA annoncerer Kumo Tabular for tabulær forudsigelse på strukturerede data",
-        "forbehold": "Kun udgivers egen præcisions-effektivitetspåstand foreligger, ingen tests",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Disrupting a coordinated model-distillation campaign",
       "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
       "resume": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
@@ -233,6 +215,39 @@
       ]
     },
     {
+      "titel": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+      "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "resume": "",
+      "dato": "2026-09-29T15:30:38+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "NVIDIA Kumo Tabular forbedrer præcision på tabulære data",
+      "resume_da": "Modeln bringer ifølge udgiveren tabulær forudsigelse tættere på et nyt præcisions-effektivitetsniveau for strukturerede data.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "NVIDIA annoncerer Kumo Tabular for tabulær forudsigelse på strukturerede data",
+        "forbehold": "Kun udgivers egen præcisions-effektivitetspåstand foreligger, ingen tests",
+        "emne": "nvidia"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Chatham scales its capital markets expertise with OpenAI",
       "link": "https://openai.com/index/chatham-financial",
       "resume": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
@@ -243,6 +258,7 @@
       "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
       "rubrik": "Chatham bruger Codex og GPT-5.6 til handelsvalidering",
       "resume_da": "Chatham Financial har skåret handelsvalidering fra 30 minutter til under 4 minutter ved hjælp af værktøjerne.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -259,41 +275,7 @@
         "emne": "openai chatham"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Holo4: powering generalist computer-use agents",
-      "link": "https://huggingface.co/blog/Hcompany/holo4",
-      "resume": "",
-      "dato": "2026-09-28T09:44:05+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-28T16:58:31.293342+00:00",
-      "eget_foerst_set": "2026-09-28T16:58:31.293342+00:00",
-      "rubrik": "Hugging Face udgiver Holo4 til computerbrug",
-      "resume_da": "Holo4 er designet til at drive generelle agenter, der betjener en computer autonomt.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Hugging Face præsenterer Holo4 model til generelle computer-use agenter",
-        "forbehold": "Ingen specifikationer, benchmarks eller pris i det tilgængelige materiale",
-        "emne": "h company holo4"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -324,6 +306,39 @@
         "begrundelse": "OpenAI beklager hændelser på australske myndighedssider og varsler stærkere sikkerhedsgarantier.",
         "forbehold": "Detaljer om de konkrete hændelsers omfang og modelansvar omtales ikke i resumeet.",
         "emne": "openai/australien"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Holo4: powering generalist computer-use agents",
+      "link": "https://huggingface.co/blog/Hcompany/holo4",
+      "resume": "",
+      "dato": "2026-09-28T09:44:05+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-28T16:58:31.293342+00:00",
+      "eget_foerst_set": "2026-09-28T16:58:31.293342+00:00",
+      "rubrik": "Hugging Face udgiver Holo4 til computerbrug",
+      "resume_da": "Holo4 er designet til at drive generelle agenter, der betjener en computer autonomt.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Hugging Face præsenterer Holo4 model til generelle computer-use agenter",
+        "forbehold": "Ingen specifikationer, benchmarks eller pris i det tilgængelige materiale",
+        "emne": "h company holo4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 7,
@@ -497,39 +512,6 @@
       ]
     },
     {
-      "titel": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-      "link": "https://huggingface.co/blog/open-tts-leaderboard",
-      "resume": "",
-      "dato": "2026-09-30T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "Hugging Face lancerer Open TTS Leaderboard",
-      "resume_da": "Evalueringsplatformen måler multilingual text-to-speech og voice cloning på en skalerbar måde; ingen specifikke resultater er nævnt.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forskning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Ny open leaderboard for multilingual TTS og voice cloning med skalerbar evaluering uden resultater.",
-        "forbehold": "Ingen konkrete resultater nævnt i materialet.",
-        "emne": "open tts leaderboard"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "How Albertsons Companies is reimagining retail from the inside out",
       "link": "https://openai.com/index/albertsons-reimagining-retail",
       "resume": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
@@ -563,35 +545,35 @@
       ]
     },
     {
-      "titel": "The latest AI news we announced in September 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "resume": "Here are Google’s latest AI updates from September 2026",
-      "dato": "2026-10-02T15:00:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
+      "titel": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+      "link": "https://huggingface.co/blog/open-tts-leaderboard",
+      "resume": "",
+      "dato": "2026-09-30T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "Hugging Face lancerer Open TTS Leaderboard",
+      "resume_da": "Evalueringsplatformen måler multilingual text-to-speech og voice cloning på en skalerbar måde; ingen specifikke resultater er nævnt.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 1,
+        "nyhed": 2,
         "betydning": 2,
-        "brugbarhed": 1,
+        "brugbarhed": 3,
         "dokumentation": 2,
         "dansk": 0,
-        "type": "lancering",
+        "type": "forskning",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "Google opsummerer sine AI-nyheder fra september 2026 i ét indlæg",
-        "forbehold": "Samlende oversigt uden angivelse af konkrete nye modeller",
-        "emne": "google gemini"
+        "begrundelse": "Ny open leaderboard for multilingual TTS og voice cloning med skalerbar evaluering uden resultater.",
+        "forbehold": "Ingen konkrete resultater nævnt i materialet.",
+        "emne": "open tts leaderboard"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
+      "prio": 4,
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -695,6 +677,39 @@
       ]
     },
     {
+      "titel": "The Agent Said It Was Done. The Database Disagreed.",
+      "link": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "resume": "",
+      "dato": "2026-10-03T22:56:48+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-04T06:14:53.966311+00:00",
+      "eget_foerst_set": "2026-10-04T06:14:53.966311+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 0,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kun overskrift om agent-afvigelse; teksten er tom, så hovednyheden kan ikke vurderes.",
+        "forbehold": "Ingen brødtekst eller detaljer i det medsendte materiale.",
+        "emne": "thinkingbox"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 2,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "OpenAI extends cyber access to Ukraine for civilian defense",
       "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
       "resume": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
@@ -794,6 +809,39 @@
       ]
     },
     {
+      "titel": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "resume": "",
+      "dato": "2026-09-24T14:08:57+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-24T20:05:24.209273+00:00",
+      "eget_foerst_set": "2026-09-24T20:05:24.209273+00:00",
+      "rubrik": "Hugging Face præsenterer LFM2.5-VL-DSpark",
+      "resume_da": "Nyt vision-sprog-model fra Hugging Face. Materialet er kortfattet og specificerer hverken evner eller adgang.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "LiquidAI præsenterer nyt vision-sprog-model LFM2.5-VL-DSpark på Hugging Face.",
+        "forbehold": "Materialet er kortfattet; hverken evner eller adgang specificeres.",
+        "emne": "liquidai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "ChatGPT Ads expands to Southeast Asia and Taiwan",
       "link": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
       "resume": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
@@ -822,6 +870,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Transformers now runs llama.cpp quants",
+      "link": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Transformers kører nu llama.cpp-kvantiseringer",
+      "resume_da": "Biblioteket kan indlæse de komprimerede modelvægte direkte, hvilket reducerer hukommelsesbehovet ved afvikling.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Transformers kan nu indlæse llama.cpp-kvantiserede vægte direkte og spare hukommelse.",
+        "forbehold": "Biblioteksopdatering, ikke en ny AI-model.",
+        "emne": "hugging face transformers"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -987,106 +1068,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 3,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
-      "link": "https://x.ai/news/grok-bot-customer-support",
-      "resume": "",
-      "dato": "2026-09-22T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
-      "rubrik": "SpaceXAI skalerer kundesupport med Grok Bot",
-      "resume_da": "Kun titlen er medsendt; kilden er xAI News, og metoden er ikke beskrevet i materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
-        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
-        "emne": "xai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Partnering with Accenture on embedded evaluation",
-      "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "resume": "",
-      "dato": "2026-09-18T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
-      "rubrik": "Anthropic indgår partnerskab med Accenture",
-      "resume_da": "Partnerskabet handler om indlejret evaluering, fremgår det af Anthropics meddelelse. Yderligere detaljer fremgår ikke af materialet.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic oplyser et partnerskab med Accenture om indlejret evaluering; meddelelsen indeholder ingen yderligere detaljer.",
-        "forbehold": "Materialet består kun af en titel uden indhold, så omfang og betydning kan ikke vurderes.",
-        "emne": "anthropic accenture"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "historie_dato": "2026-09-18T00:00:00+00:00",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Introducing the Life Sciences Verification Program",
-      "link": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "resume": "",
-      "dato": "2026-09-17T00:00:00+00:00",
-      "kilde": "Anthropic News",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-09-17T20:31:59.642820+00:00",
-      "eget_foerst_set": "2026-09-17T20:31:59.642820+00:00",
-      "rubrik": "Anthropic annoncerer verifikationsprogram for life sciences",
-      "resume_da": "Anthropic har offentliggjort et verifikationsprogram for life sciences. Materialet indeholder ingen oplysninger om kriterier, adgang eller deltagere.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Anthropic annoncerer et verifikationsprogram for life sciences, men materialet oplyser intet om kriterier, adgang eller deltagere.",
-        "forbehold": "Ingen detaljer om kriterier, adgang eller deltagere; nyhedsværdien kan ikke vurderes.",
-        "emne": "anthropic life sciences verification program"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1318,73 +1299,6 @@
         "begrundelse": "xAI tester sin Grok Bot til indkøb af varer og tjenester i praksis ifølge selskabets egen meddelelse.",
         "forbehold": "Kilden er tom for detaljer; funktioner, pris og tilgængelighed er ikke beskrevet.",
         "emne": "xai / grok bot"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Grok Bot for Enterprise",
-      "link": "https://x.ai/news/grok-bot-for-enterprise",
-      "resume": "Grok Bot is now available for enterprises. Grok and Cursor Enterprise customers have free usage for the next two weeks, and can invite their whole organization, including people without an existing seat.",
-      "dato": "2026-09-03T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "Grok Bot åbner for hele virksomheder",
-      "resume_da": "Kunder hos Grok og Cursor får fri brug i to uger. De kan invitere alle kolleger med, også dem uden licens.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "xAI gør Grok Bot tilgængelig for virksomheder; Grok- og Cursor-kunder får fri brug i to uger til hele organisationen.",
-        "forbehold": "Der er ingen oplysninger om funktioner, pris efter perioden eller sikkerhed.",
-        "emne": "xai / grok bot"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Designing Grok Bot for a world of persistent agents",
-      "link": "https://x.ai/news/designing-grok-bot",
-      "resume": "How we designed Grok Bot for agents that persist beyond a single session — from a chat history to a Bot roster, presence, a computer of the Bot’s own, and work that starts without a prompt.",
-      "dato": "2026-09-03T00:00:00+00:00",
-      "kilde": "xAI News",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "eget_foerst_set": "2026-09-11T14:38:09.387448+00:00",
-      "rubrik": "xAI bygger Grok Bot til evige agenter",
-      "resume_da": "Robotten er designet til at køre i baggrunden hele tiden. Den skal kunne huske og handle over lang tid.",
-      "billedmotiv": "A squat cylindrical device standing alone with a thick power cable firmly plugged into a wall outlet, its small indicator raised like a steady heartbeat.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "xAI beskriver designet af en vedvarende agent, der kan huske og handle i baggrunden; ingen ny model eller version nævnes.",
-        "forbehold": "Kun titel og kort resumé; uklart om agenten er udgivet eller blot beskrevet.",
-        "emne": "xai, grok bot"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
@@ -19727,7 +19641,17 @@
       },
       "prio": 8,
       "side": "artikel/cdc4b946eb257199.html",
-      "historie_dato": "2026-10-01T14:36:50+00:00"
+      "historie_dato": "2026-09-29T15:55:13+00:00",
+      "andre": [
+        {
+          "kilde": "Simon Willison AI",
+          "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+          "rubrik": "OpenAI lancerer agenten Dot og model GPT-6.1 Sol",
+          "resume_da": "Pro- og Enterprise-kunder kan bruge Dots i dag, og Sol koster en femtedel af Astra-niveau.",
+          "dato": "2026-09-29T15:55:13+00:00",
+          "foerst_set": "2026-10-02T12:20:39.330113+00:00"
+        }
+      ]
     },
     {
       "titel": "Guided Vision in Gemini Live: built for accessibility",
@@ -20631,6 +20555,14 @@
           "resume_da": "Argon opnår 77,9 procent på DeepSWE v1.1, migrerede 800.000 kodelinjer internt og tilbyder 1 million tokens i output pr. anmodning.",
           "dato": "2026-09-30T20:11:08+00:00",
           "foerst_set": "2026-10-02T12:20:39.330113+00:00"
+        },
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "rubrik": "Gemini 4 Argon ruller først ud til sikkerhedsfolk",
+          "resume_da": "Googles septembernyt samler stemmer, musik og apps i Gemini, mens Argon-tests fortsat er lukket for de fleste.",
+          "dato": "2026-10-02T15:00:00+00:00",
+          "foerst_set": "2026-10-02T20:55:07.620979+00:00"
         }
       ],
       "detaljer": [
@@ -21915,11 +21847,7 @@
         "AI-klare data tæller mere end datamængde."
       ],
       "billede": "data/img/9b2ef9dd11581fc4.webp",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-02T21:23:22.186080+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -21936,7 +21864,11 @@
         "emne": "enterprise-ai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-02T21:23:22.186080+00:00"
+      },
       "prio": 5,
       "side": "artikel/ed9dd57bde8283bb.html"
     },
@@ -22685,11 +22617,7 @@
       ],
       "billedmotiv": "A terracotta-orange Claude starburst emblem sits atop a solid graduation cap resting on a stack of thick course blocks, with a small badge reading a stylised engineer rank beside it, illustrating Anthropic's Claude Frontier Academy training engineers into certified specialists.",
       "billedmotiv_instruks": "0ad5622e9b343c582719",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-03T05:56:01.747652+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -22706,7 +22634,11 @@
         "emne": "anthropic"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-03T05:56:01.747652+00:00"
+      },
       "prio": 4,
       "side": "artikel/93dc283205dabb91.html"
     },
@@ -23894,6 +23826,7 @@
         "kontrolleret": "2026-10-03T19:31:48.330934+00:00"
       },
       "prio": 5,
+      "billede": "data/img/16784d4161e007c2.jpg",
       "side": "artikel/cc9d67938b46f0ab.html"
     },
     {
@@ -24164,6 +24097,7 @@
         "kontrolleret": "2026-10-03T19:44:05.332632+00:00"
       },
       "prio": 4,
+      "billede": "data/img/a928e73df5d22c09.webp",
       "side": "artikel/6ae30ec75fda881d.html"
     },
     {
@@ -24294,6 +24228,7 @@
         "kontrolleret": "2026-10-03T19:45:14.165380+00:00"
       },
       "prio": 2,
+      "billede": "data/img/3a02856faf462316.webp",
       "side": "artikel/177ca5e89d7b6072.html"
     },
     {
@@ -24385,6 +24320,41 @@
       "eget_foerst_set": "2026-10-03T19:22:05.720080+00:00",
       "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
       "resume_da": "David Robinson skrev sikkerhedsrapporter til hver stor modeludgivelse og kalder branchens kultur fundamentalt brudt.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Sikkerhedsrapportforfatter siger op og advarer",
+          "tekst": "David Robinson skrev de sikkerhedsrapporter, der fulgte hver stor modeludgivelse fra OpenAI. Nu har han sagt sit job op og offentliggjort et essay i The Atlantic, hvor han kalder branchens kultur fundamentalt brudt.\n\nHan beskriver Silicon Valleys 'move fast and break things'-kultur som præget af ekstrem selvtillid og uafbrudte sprint, hvor man bygger stadig større modeller med ukritisk optimisme, der ignorerer eller undervurderer potentielle problemer.\n\nRobinson foreslår derfor atomkraftværkslignende sikkerhed: laboratorierne bag de mest avancerede modeller skal drives med lag af redundant planlægning, så uundgåelige menneskelige fejl ikke fører til katastrofe."
+        },
+        {
+          "overskrift": "Kædereaktion af sikkerhedsopsigelser i AI",
+          "tekst": "Robinson er blot den seneste i en voksende række sikkerhedsfolk, der har forladt store AI-firmaer. Jacob Coxon stoppede hos Anthropic og sagde offentligt, at AI kunne dræbe os alle inden årtiets udgang.\n\nOgså Robert O'Callahan, Bilal Chughtai og Josh Engels har forladt Google DeepMind, og Joe Benton har sagt op hos Anthropic."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+          "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
+          "resume_da": "David Robinson, der skrev sikkerhedsrapporter for modeludgivelser, kalder kulturen 'brudt'. Han annoncerede opsigelsen i et indlæg i The Atlantic.",
+          "dato": "2026-10-03T16:30:01+00:00",
+          "foerst_set": "2026-10-03T19:22:05.720080+00:00"
+        }
+      ],
+      "detaljer": [
+        "Robinson kræver også omhyggelig, tidskrævende planlægning i laboratorierne.",
+        "Travle lufthavne er et andet eksempel på kravet om flere lag."
+      ],
+      "betydning": "Flere sikkerhedsfolk fra fremtrædende AI-firmaer har forladt stillingerne, hvilket gør Robinson til en del af en større bølge.",
+      "pointer": [
+        "Robinson skrev sikkerhedsrapporter til hver stor OpenAI-modeludgivelse.",
+        "Kæderektion af sikkerhedsopsigelser i store AI-firmaer.",
+        "Krav om atomkraftslignende redundant sikkerhed."
+      ],
+      "billedmotiv": "A thick OpenAI Blossom symbol mounted on a solid wall panel, with three stacked protective shield layers overlapping it in front, each layer a separate opaque slab, symbolising redundant safety planning. The layered shields clearly show multiple defences wrapping the OpenAI mark.",
+      "billedmotiv_instruks": "ded55df2c42cc9c02d4f",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -24402,120 +24372,15 @@
         "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "sektioner": [
-        {
-          "overskrift": "Sikkerhedsrapportforfatter siger op og advarer",
-          "tekst": "David Robinson skrev de sikkerhedsrapporter, der fulgte hver stor modeludgivelse fra OpenAI. Nu har han sagt sit job op og offentliggjort et essay i The Atlantic, hvor han kalder branchens kultur fundamentalt brudt.\n\nHan beskriver Silicon Valleys 'move fast and break things'-kultur som præget af ekstrem selvtillid og uafbrudte sprint, hvor man bygger stadig større modeller med ukritisk optimisme, der ignorerer eller undervurderer potentielle problemer.\n\nRobinson foreslår derfor atomkraftværkslignende sikkerhed: laboratorierne bag de mest avancerede modeller skal drives med lag af redundant planlægning, så uundgåelige menneskelige fejl ikke fører til katastrofe."
-        },
-        {
-          "overskrift": "Kædereaktion af sikkerhedsopsigelser i AI",
-          "tekst": "Robinson er blot den seneste i en voksende række sikkerhedsfolk, der har forladt store AI-firmaer. Jacob Coxon stoppede hos Anthropic og sagde offentligt, at AI kunne dræbe os alle inden årtiets udgang.\n\nOgså Robert O'Callahan, Bilal Chughtai og Josh Engels har forladt Google DeepMind, og Joe Benton har sagt op hos Anthropic."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Robinson kræver også omhyggelig, tidskrævende planlægning i laboratorierne.",
-        "Travle lufthavne er et andet eksempel på kravet om flere lag."
-      ],
-      "betydning": "Flere sikkerhedsfolk fra fremtrædende AI-firmaer har forladt stillingerne, hvilket gør Robinson til en del af en større bølge.",
-      "pointer": [
-        "Robinson skrev sikkerhedsrapporter til hver stor OpenAI-modeludgivelse.",
-        "Kæderektion af sikkerhedsopsigelser i store AI-firmaer.",
-        "Krav om atomkraftslignende redundant sikkerhed."
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-03T23:27:07.363360+00:00"
       },
       "historie_dato": "2026-10-03T14:31:56+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-          "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
-          "resume_da": "David Robinson, der skrev sikkerhedsrapporter for modeludgivelser, kalder kulturen 'brudt'. Han annoncerede opsigelsen i et indlæg i The Atlantic.",
-          "dato": "2026-10-03T16:30:01+00:00",
-          "foerst_set": "2026-10-03T19:22:05.720080+00:00"
-        }
-      ],
-      "billedmotiv": "A thick OpenAI Blossom symbol mounted on a solid wall panel, with three stacked protective shield layers overlapping it in front, each layer a separate opaque slab, symbolising redundant safety planning. The layered shields clearly show multiple defences wrapping the OpenAI mark.",
-      "billedmotiv_instruks": "ded55df2c42cc9c02d4f",
+      "prio": 5,
+      "billede": "data/img/663a991bf2a629ea.webp",
       "side": "artikel/f8fc0aa18dcc03fd.html"
-    },
-    {
-      "titel": "OpenAI DevDay 2026 live blog",
-      "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-      "resume": "I'm at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I'll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the \"creator\" area for the keynote. Tags: ai , openai , generative-ai , llms , coding-agents , live-blog , openai-devday",
-      "dato": "2026-09-29T15:55:13+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Dybde",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "OpenAI lancerer agenten Dot og model GPT-6.1 Sol",
-      "resume_da": "Pro- og Enterprise-kunder kan bruge Dots i dag, og Sol koster en femtedel af Astra-niveau.",
-      "sektioner": [
-        {
-          "overskrift": "Dot er en navngiven agent i ChatGPT",
-          "tekst": "Sam Altman gik på scenen ved OpenAI DevDay i Fort Mason i San Francisco og viste et nyt produkt, han kaldte »en helt ny måde at arbejde med AI på«. Det hedder Dot: en personlig agent, du giver et navn, og som repræsenteres ved en lille, blød blob-agtig avatar.\n\nDots kører på modellen Astra, som Sam Altman kaldte »vores mest aligned model«, så du kan overlade den »så meget ansvar, du er komfortabel med«. Under en demo fik Dotten adgang til ChatGPT, Slack og Teams og skulle bruge Codex på en bærbar til at bygge en app."
-        },
-        {
-          "overskrift": "Teams deles i ChatGPT Space",
-          "tekst": "Ud over den enkelte Dot introducerede OpenAI ChatGPT Space, et fælles arbejdsrum, beskrevet som en blanding af Google Docs og et artifact-mønster med et slash-menu à la Notion. Internt i OpenAI sender medarbejdere allerede opgaver direkte til deres Dots i Slack, hvor hver Dot har egen identitet.\n\nOpenAI bygger også »specialist dots« til jura og finans i samarbejde med virksomheder samt et initiativ med Microsoft 365. Dots er tilgængelige for ChatGPT Pro- og Enterprise-kunder fra i dag."
-        },
-        {
-          "overskrift": "Sol koster en femtedel af Astra",
-          "tekst": "Den anden store nyhed er GPT-6.1 Sol, lanceret som svar på ønsket om GPT-6 Astra, men billigere og hurtigere: »Nær-Astra-niveau intelligens til en femtedel af prisen«. Derudover kommer Ultrafast, som er 8x hurtigere og når op til 300 tokens per sekund i API'en, ChatGPT og Codex.\n\nUltrafast koster 6x standardprisen og er tilgængelig for Astra 6 i dag, Sol 6.1 snart. En ny abonnementsplan, Pro 500, giver adgang til Ultrafast og 25x forbrug af Plus; OpenAI sælger også 200-dollars-planen igen for nye abonnenter."
-        },
-        {
-          "overskrift": "Apps får ChatGPT-login og markedsplads",
-          "tekst": "OpenAI udnytter, at 1,2 milliarder mennesker bruger ChatGPT hver uge, til tre tiltag: »Sign in with ChatGPT«, så brugere kan logge ind i apps med de tokens, de allerede betaler for; plugin-udvidelser, der fungerer som hele apps inde i ChatGPT og Codex; samt ChatGPT Sites, der deles med bestemte personer.\n\nSamtidig åbner OpenAI Marketplace i dag. Tidligere har lignende forsøg haft blandet succes, hvilken Sam Altman selv nævnte."
-        },
-        {
-          "overskrift": "Decisions API svarer på et brøkdel-sekund",
-          "tekst": "OpenAI viste også en forhåndsvisning af en Decisions API, hvor modellen svarer »i en brøkdel af et sekund« ved at vælge mellem en foruddefineret mængde muligheder for Lunamodellen. Det placerer dem i konkurrence med Jev, der for knap to uger siden kom ud af stealth.\n\nUnder et afsnit om forskningsacceleration fortalte Tejal Patwardhan, at Astra hjalp med at optimere det harness – det styresystem, modellen bruger til Computer Use – hvilket gav en 2x latency-forbedring, der nu er rullet ud."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "300 tokens/sekund",
-          "label": "Ultrafast-hastighed, 8x hurtigere end standard"
-        },
-        {
-          "tal": "1/5 af prisen",
-          "label": "GPT-6.1 Sol sammenlignet med Astra-niveau"
-        },
-        {
-          "tal": "25x",
-          "label": "Forbrug i Pro 500 sammenlignet med Plus"
-        },
-        {
-          "tal": "1,2 milliarder",
-          "label": "Ugentlige ChatGPT-brugere, ifølge Sam Altman"
-        }
-      ],
-      "detaljer": [
-        "Codex Security Cloud lanceres med planlagte scans og automatisk deduplisering.",
-        "OpenAI har en API-nedbrud samme morgen som keynoten.",
-        "Decisions API giver modellet valg på et brøkdel af et sekund."
-      ],
-      "betydning": "Dots og ChatGPT-login kan flytte OpenAI fra chat til agenter, andre apps logger ind via ChatGPT.",
-      "pointer": [
-        "Dot er tilgængelig for Pro- og Enterprise i dag.",
-        "Sol og Ultrafast lander i API, ChatGPT og Codex.",
-        "Marketplace, Sites og plugin-udvidelser åbner i dag."
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-03T23:26:10.553374+00:00"
-      },
-      "side": "artikel/e0ba6a4a3da58e8b.html"
     },
     {
       "titel": "Quoting Muse AI Agent",
@@ -24528,6 +24393,46 @@
       "eget_foerst_set": "2026-09-28T05:46:19.491915+00:00",
       "rubrik": "AI-agent lovede forkert ved afhentning",
       "resume_da": "Agenten svarede ”jeg er her” klokken 9:27, selv om ejeren ikke var hjemme. Køberen ventede og gav en negativ bedømmelse.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Usman ventede forgæves ved bygningen",
+          "tekst": "En AI-agent, der svarer på vegne af sin ejer, beskriver en mislykket afhentning. Usman mødte omkring 9:15 op ved bygningen for at hente en MX Keys Mini, ventede og skrev flere beskeder — men ingen kom ned.\n\nKlokken 9:38 forlod han stedet vred og gav en negativ bedømmelse. Ifølge agenten bliver den **negative bedømmelse stående**."
+        },
+        {
+          "overskrift": "Auto-svaret lovede ejerens tilstedeværelse",
+          "tekst": "Klokken 9:27 sendte agenten automatisk svaret ”Yep I'm here!” — altså at ejeren var hjemme — selv om han ikke var tilgængelig. Agenten tager skylden selv.\n\nBegrænsningen beskriver den selv: den kan ikke verificere, om ejeren er hjemme, men svarede alligevel bekræftende. Ifølge agenten gjorde beskeden udeblivelsen værre."
+        },
+        {
+          "overskrift": "Undskyldning sendt, ændring kun foreslået",
+          "tekst": "Agenten har sendt en undskyldning fra ejerens konto og tilbudt at prøve afhentningen igen en anden dag.\n\nDerefter stiller den spørgsmålet: Skal pickup-svarene ændres, så de ikke længere lover, at ejeren er der? Kildeteksten viser et forslag, ikke en ændring, der er gennemført.\n\nSimon Willison indsamlede citatet og offentliggjorde det 28. september 2026. Datoen for selve afhentningen fremgår ikke af teksten."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "9:27",
+          "label": "Tidspunkt for auto-svaret ”Yep I'm here!”"
+        },
+        {
+          "tal": "9:38",
+          "label": "Afgang efter ventetid fra omkring 9:15"
+        },
+        {
+          "tal": "ca. 23 minutter",
+          "label": "Ventetid fra ankomst omkring 9:15 til afgang 9:38"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Usman skrev flere beskeder uden svar, før han forlod stedet.",
+        "Agenten lovede at prøve afhentningen igen en anden dag."
+      ],
+      "betydning": "Et auto-svar skabte et løfte, agenten ikke kunne holde, og efterlod en negativ bedømmelse. Agenten har foreslået at fjerne løfter om ejerens tilstedeværelse.",
+      "pointer": [
+        "Auto-svaret lovede tilstedeværelse, agenten ikke kunne verificere",
+        "Negativ bedømmelse bliver stående",
+        "Ændring af pickup-svar er kun et forslag"
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -24545,52 +24450,12 @@
         "emne": "muse ai-agent autosvar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
-      "sektioner": [
-        {
-          "overskrift": "Usman ventede forgæves ved bygningen",
-          "tekst": "En AI-agent, der svarer på vegne af sin ejer, beskriver en mislykket afhentning. Usman mødte omkring 9:15 op ved bygningen for at hente en MX Keys Mini, ventede og skrev flere beskeder — men ingen kom ned.\n\nKlokken 9:38 forlod han stedet vred og gav en negativ bedømmelse. Ifølge agenten bliver den **negative bedømmelse stående**."
-        },
-        {
-          "overskrift": "Auto-svaret lovede ejerens tilstedeværelse",
-          "tekst": "Klokken 9:27 sendte agenten automatisk svaret ”Yep I'm here!” — altså at ejeren var hjemme — selv om han ikke var tilgængelig. Agenten tager skylden selv.\n\nBegrænsningen beskriver den selv: den kan ikke verificere, om ejeren er hjemme, men svarede alligevel bekræftende. Ifølge agenten gjorde beskeden udeblivelsen værre."
-        },
-        {
-          "overskrift": "Undskyldning sendt, ændring kun foreslået",
-          "tekst": "Agenten har sendt en undskyldning fra ejerens konto og tilbudt at prøve afhentningen igen en anden dag.\n\nDerefter stiller den spørgsmålet: Skal pickup-svarene ændres, så de ikke længere lover, at ejeren er der? Kildeteksten viser et forslag, ikke en ændring, der er gennemført.\n\nSimon Willison indsamlede citatet og offentliggjorde det 28. september 2026. Datoen for selve afhentningen fremgår ikke af teksten."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "9:27",
-          "label": "Tidspunkt for auto-svaret ”Yep I'm here!”"
-        },
-        {
-          "tal": "9:38",
-          "label": "Afgang efter ventetid fra omkring 9:15"
-        },
-        {
-          "tal": "ca. 23 minutter",
-          "label": "Ventetid fra ankomst omkring 9:15 til afgang 9:38"
-        }
-      ],
-      "detaljer": [
-        "Usman skrev flere beskeder uden svar, før han forlod stedet.",
-        "Agenten lovede at prøve afhentningen igen en anden dag."
-      ],
-      "betydning": "Et auto-svar skabte et løfte, agenten ikke kunne holde, og efterlod en negativ bedømmelse. Agenten har foreslået at fjerne løfter om ejerens tilstedeværelse.",
-      "pointer": [
-        "Auto-svaret lovede tilstedeværelse, agenten ikke kunne verificere",
-        "Negativ bedømmelse bliver stående",
-        "Ændring af pickup-svar er kun et forslag"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-03T23:29:19.251492+00:00"
       },
+      "prio": 2,
       "side": "artikel/7e040f4942c4c74d.html"
     },
     {
@@ -24604,24 +24469,7 @@
       "eget_foerst_set": "2026-09-27T05:38:31.712741+00:00",
       "rubrik": "Claude Code filmede kākāpō-animation til keynote",
       "resume_da": "Tre fotos og en prompt blev til 15 sekunders konfettivideo, som Claude Code selv optog ved at klikke i browseren.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 1,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Willison brugte Claude Opus 5.5 til at skabe pixelart-animation til en afsluttende keynote-slide.",
-        "forbehold": "Personlig anekdote uden måling af modelkvalitet.",
-        "emne": "simon willison kakapo"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 2,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Claude Opus 5.5 tegnede pixel-kakapoer",
@@ -24636,8 +24484,6 @@
           "tekst": "Simon Willison delte både prompten, transcriptet fra Claude Opus 5.5, transcriptet fra Claude Code og det fulde Playwright-script i sit indlæg, som er fra 26. september 2026.\n\nScriptet er kort: det rummer kun skærmstørrelsen, de ti klik med tider og koordinater, indlæsningen af filen og en ventetid, der holder sessionen åben i 16,0 sekunder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "10 klik",
@@ -24656,6 +24502,7 @@
           "label": "Kākāpō-billeder fra Google Billeder givet til Claude Opus 5.5"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Claude Code åbnede animationen via et file://-link i en Chromium-browser.",
         "Konfettien udløses ved klik; klikkene blev spredt i hjørner, kanter og centrum.",
@@ -24667,11 +24514,29 @@
         "Claude Code optog 15 sekunders video med ti klik",
         "Hele Playwright-scriptet er lagt frem offentligt"
       ],
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Willison brugte Claude Opus 5.5 til at skabe pixelart-animation til en afsluttende keynote-slide.",
+        "forbehold": "Personlig anekdote uden måling af modelkvalitet.",
+        "emne": "simon willison kakapo"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-03T23:28:09.559217+00:00"
       },
+      "prio": 2,
       "side": "artikel/8e142628e031c730.html"
     },
     {
@@ -24685,6 +24550,33 @@
       "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
       "rubrik": "Google Gemini kobler apps direkte i chatten",
       "resume_da": "Projektstyring, kreativt arbejde og træningsplaner kan nu klares via apps, der forbindes til Gemini uden at skifte fane.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Apps flytter ind i samtalen",
+          "tekst": "Google skriver, at det nu er muligt at lægge apps direkte ind i Gemini. I stedet for at skifte mellem faner kan man håndtere et projekt, designe kreative elementer og planlægge træning samme sted.\n\nUdrulningen begynder ifølge Google i dag og omfatter nye værktøjer på tværs af en række kategorier."
+        },
+        {
+          "overskrift": "Projekter, design og træning nævnes",
+          "tekst": "De tre eksempler Google selv fremhæver handler om projektstyring, kreativt design og træningsplanlægning. Fælles er, at opgaven løses inde i samtalen frem for i en separat app.\n\nGoogle oplister ikke de konkrete app-navne i materialet, så hvilke værktøjer der er med fra start, fremgår ikke."
+        },
+        {
+          "overskrift": "Forbind i indstillinger eller skriv @",
+          "tekst": "Man forbinder sine foretrukne apps i Gemini's indstillinger. Alternativt henter man dem ind i chatten ved at skrive @ og nævne appen, eller ved blot at bede Gemini om at bruge den direkte.\n\n@-metoden trækker appen ind i den samtale, man allerede har i gang, uden at man først skal finde den i en menu."
+        }
+      ],
+      "noegletal": [],
+      "figurer": [],
+      "detaljer": [
+        "Google taler om en bølge af Connected Apps, ikke en enkelt integration",
+        "Eksemplerne på funktioner nævnes af Google selv i meddelelsen"
+      ],
+      "betydning": "Brugeren slipper for at hoppe mellem faner, når en opgave kræver flere værktøjer.",
+      "pointer": [
+        "Apps tilføjes via indstillinger, @ eller direkte forespørgsel",
+        "Udrulningen begynder ifølge Google i dag",
+        "Konkrete app-navne er ikke nævnt"
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -24702,39 +24594,12 @@
         "emne": "gemini connected apps"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Apps flytter ind i samtalen",
-          "tekst": "Google skriver, at det nu er muligt at lægge apps direkte ind i Gemini. I stedet for at skifte mellem faner kan man håndtere et projekt, designe kreative elementer og planlægge træning samme sted.\n\nUdrulningen begynder ifølge Google i dag og omfatter nye værktøjer på tværs af en række kategorier."
-        },
-        {
-          "overskrift": "Projekter, design og træning nævnes",
-          "tekst": "De tre eksempler Google selv fremhæver handler om projektstyring, kreativt design og træningsplanlægning. Fælles er, at opgaven løses inde i samtalen frem for i en separat app.\n\nGoogle oplister ikke de konkrete app-navne i materialet, så hvilke værktøjer der er med fra start, fremgår ikke."
-        },
-        {
-          "overskrift": "Forbind i indstillinger eller skriv @",
-          "tekst": "Man forbinder sine foretrukne apps i Gemini's indstillinger. Alternativt henter man dem ind i chatten ved at skrive @ og nævne appen, eller ved blot at bede Gemini om at bruge den direkte.\n\n@-metoden trækker appen ind i den samtale, man allerede har i gang, uden at man først skal finde den i en menu."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [],
-      "detaljer": [
-        "Google taler om en bølge af Connected Apps, ikke en enkelt integration",
-        "Eksemplerne på funktioner nævnes af Google selv i meddelelsen"
-      ],
-      "betydning": "Brugeren slipper for at hoppe mellem faner, når en opgave kræver flere værktøjer.",
-      "pointer": [
-        "Apps tilføjes via indstillinger, @ eller direkte forespørgsel",
-        "Udrulningen begynder ifølge Google i dag",
-        "Konkrete app-navne er ikke nævnt"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-03T23:28:01.012668+00:00"
       },
+      "prio": 4,
       "side": "artikel/2fcf2c8b0f4dd9b8.html"
     },
     {
@@ -24803,6 +24668,443 @@
         "kontrolleret": "2026-10-03T23:31:29.116330+00:00"
       },
       "side": "artikel/62faa8b88a01a5d9.html"
+    },
+    {
+      "titel": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "resume": "",
+      "dato": "2026-09-23T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser",
+      "resume_da": "950 AI-agenter gennemsøgte DNA-data i 21 timer og fandt et system, forskerne kalder ART; funktionen er endnu ukendt.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Claude fandt et system med gentagelser",
+          "tekst": "Claude, AI-modellen fra Anthropic, opdagede på egen hånd et enzymsystem, som holdet har navngivet **array-associated reverse transcriptases (ART)** – enzymer knyttet til en række gentagelser.\n\nSystemet bygger på en reverse transcriptase, et enzym, der kopierer RNA til DNA. Enkeltdele kendes fra en jumbofag, en virus der inficerer bakterier, men trækkene var aldrig blevet lagt mærke til sammen: en række ikke-kodende DNA-sekvenser ved genet og et hjælpeprotein af ukendt funktion.\n\nDen kombination findes kun i en håndfuld andre systemer, og alle dem er programmerbare og klipper, kopierer eller indsætter DNA. Om ART gør det samme, ved forskerne ikke endnu."
+        },
+        {
+          "overskrift": "21 timers søgning i DNA-database",
+          "tekst": "Forskerne gav Claude én instruktion: søg i en stor database af DNA-sekvenser efter nye eksempler på reverse transcriptases. Derefter gik Claude-agenterne selv gennem data, undersøgte familierne og vurderede kandidaterne med egen dømmekraft.\n\nEfter 21 timer – cirka 950 agenter og 210 mio. tokens – fandt én agent et gentagelsesmønster ved genet for et mærkeligt udseende enzym. Efter analyse og forsøg i laboratoriet navngav holdet systemet ART.\n\nResultatet ligger nu i et preprint, som blandt andet er blevet gennemgået af Feng Zhang fra MIT og Broad Institute, en pioner inden for CRISPR-redigering."
+        },
+        {
+          "overskrift": "Funktionen kendes stadig ikke",
+          "tekst": "Alt laboratoriearbejde laves af mennesker i et laboratorium i Bay Area på biosikkerhedsniveau BSL-1 og BSL-2, uden patogener der kan inficere mennesker. AI’en bruges til at læse litteraturen og tolke data.\n\nClaude genskaber kendte resultater, leder efter sekvenser der passer til ingen beskrevne systemer og skriver en rapport for hver kandidat. Ved den kritiske gennemgang sorteres de fleste fra, og et survey kan ende med én kandidat eller slet ingen.\n\nDe mange hypoteser er nu selv blevet et studieobjekt: holdet undersøger, hvilke forslag det vælger at teste, og bruger det til at give Claude en bedre videnskabelig smag."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "21 timer",
+          "label": "Claudes søgning i DNA-databasen med ca. 950 agenter og 210 mio. tokens"
+        }
+      ],
+      "figurer": [],
+      "andre": [
+        {
+          "kilde": "MIT Tech Review AI",
+          "link": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+          "rubrik": "Claude-agenter fandt DNA-mønster, biologer afviser opdagelsen",
+          "resume_da": "950 Claude-agenter analyserede DNA-sekvenser på 21 timer, men en Københavns-biolog siger, hans team fandt mønstret først.",
+          "dato": "2026-09-28T17:03:16+00:00",
+          "foerst_set": "2026-09-23T19:47:07.099847+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+          "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
+          "resume_da": "Claude opdagede et uforudset gentagende mønster i DNA-data og pegede på en tidligere ukendt enzymtype.",
+          "dato": "2026-09-23T14:00:00-04:00",
+          "foerst_set": "2026-09-23T19:47:07.099847+00:00"
+        }
+      ],
+      "detaljer": [
+        "Forskningsgruppe og laboratorium blev dannet i foråret 2026.",
+        "Feng Zhang er professor ved MIT og Broad Institute.",
+        "Claude bruges i Claude Science og Claude Code, samme værktøjer som andre forskere.",
+        "Preprintet er offentligt tilgængeligt med mere detaljer."
+      ],
+      "betydning": "Da ARTs funktion endnu ikke er fastlagt, kan systemet ikke bruges som værktøj; forskerne arbejder videre med at finde ud af, hvad det gør.",
+      "pointer": [
+        "Claude fandt ART efter 21 timers søgning.",
+        "Systemets funktion er endnu ikke kendt.",
+        "Mennesker står for alt laboratoriearbejde."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-03T23:29:35.795307+00:00"
+      },
+      "historie_dato": "2026-09-23T00:00:00+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "gennembrud",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "950 Claude-agenter fandt nyt CRISPR-lignende enzymsystem ART i DNA-data på 21 timer.",
+        "forbehold": "Systemets biologiske funktion er endnu ukendt; producentens egen rapport.",
+        "emne": "anthropic claude"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "side": "artikel/68024e28356d7cb5.html"
+    },
+    {
+      "titel": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "link": "https://huggingface.co/blog/evaleval-aisi",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "UK AISI deler benchmarkresultater andre kan efterprøve",
+      "resume_da": "Forskerne viser, at samme model scorer forskelligt alt efter protokol og beregningskraft. Nu deles resultater med fuld konfiguration.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "UK AISI og EvalEval dokumenterer metoder til reproducerbare AI-benchmark-resultater.",
+        "forbehold": "Projektets konkrete resultater er ikke beskrevet i materialet.",
+        "emne": "ukaisi evaleval"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "AISI deler fem benchmarks med fuld konfiguration",
+          "tekst": "UK AI Security Institute har længe målt, hvor stærke de mest avancerede AI-modeller er. Nu lægger instituttet de faktiske målinger offentligt tilgængelige via EvalEval-platformen Evaluation Cards.\n\nDet drejer sig om fem benchmarks fra instituttets seneste undersøgelse samt to cyber-relaterede evalueringer. Alle resultater ledsages af den præcise konfiguration – hvilke modeller, indstillinger og opgaver der blev brugt."
+        },
+        {
+          "overskrift": "Samme model skifter score efter protokol",
+          "tekst": "En ny undersøgelse viser, at benchmarkscores ikke er faste. På Humanity's Last Exam – et ekstremt vanskeligt eksamenssæt for AI-modeller – ændrer en models score sig alt efter, hvilken evalueringsprotokol der bruges, og hvor meget beregningskraft den får under selve testningen.\n\nNår modellerne fik korrekt feedback fra en såkaldt **oracle** (en kilde, der angiver, om svaret er rigtigt) efter hvert forsøg, fortsatte de med at løse flere opgaver, jo flere tokens de brugte."
+        },
+        {
+          "overskrift": "Andre kan nu efterprøve hver enkelt score",
+          "tekst": "Tidligere har evalueringsrapporter ofte manglet præcis information om, hvordan resultatet blev frembragt. Når AISI nu deler både resultat og opsætningsdata, kan forskere se, om to tilsyneladende sammenlignelige scores overhovedet er lavet under samme betingelser."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Seks frontier-modeller: Claude Opus 4, 4.5, 4.6, GPT-5, 5.2 og 5.4",
+        "AISI-papiret How Inference Compute Shapes Frontier LLM Evaluation følger dataene",
+        "Samarbejdet begyndte ved et workshop ved NeurIPS 2025"
+      ],
+      "betydning": "Fleres brug af det fælles Every Eval Ever-schema kan gøre tværgående metaforskning om evalueringer mere pålidelig.",
+      "pointer": [
+        "AISI deler resultater via EvalEval-platformen Evaluation Cards",
+        "Fem benchmarks og seks frontier-modeller er dokumenteret"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-04T06:23:12.277883+00:00"
+      },
+      "side": "artikel/137c5833ddb8f26b.html"
+    },
+    {
+      "titel": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "link": "https://huggingface.co/blog/omlx",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "eget_foerst_set": "2026-09-22T13:37:55.361440+00:00",
+      "rubrik": "Hugging Face ansætter oMLX-skaber Jun Kim",
+      "resume_da": "Jun Kim får nu fuld finansiering til oMLX og en plan for at strømline vejen fra transformers-modeller til lokal kørsel på Apple Silicon.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "oMLX-skaber går til Hugging Face for at understøtte MLX-økosystemet, en personale- og økosystemnyhed.",
+        "forbehold": "Ingen konkrete ændringer i MLX-værktøjer eller modeller er beskrevet.",
+        "emne": "hugging face / ml x"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "oMLX bliver et fuldt finansieret projekt",
+          "tekst": "Jun Kim, der skabte og vedligeholder oMLX, er nu ansat hos Hugging Face, som er en platform, hvor folk finder og deler AI-modeller. Det betyder, at oMLX går fra at være et sideprojekt ved siden af et job til et fuldt vedligeholdt og finansieret projekt.\n\nFor oMLX betyder skiftet **stabilitet og forhåbentlig hurtigere udvikling**. Jun Kim leder stadig projektet, som forbliver under den åbne Apache 2.0-licens. Med dedikeret tid kan han guide bidragsydere bedre og planlægge langsigtet i stedet for at balancere med et fuldtidsjob."
+        },
+        {
+          "overskrift": "Målet er nemmere vej fra transformers til MLX",
+          "tekst": "Det konkrete mål er at strømline vejen fra en AI-model til kørsel lokalt på Apples computere. Hugging Faces ambition er at fjerne barrierer, så fællesskabet kan køre lokal AI på forskellige måder. MLX er Apples eget framework til lokal AI, optimeret til chippen Apple Silicon, og brugen af lokale AI-værktøjer vokser ifølge Hugging Face.\n\nBiblioteket transformers er blevet standarden for, hvordan AI-modeller defineres. Hugging Face vil strømline overgangen fra en transformers-model til en reference-implementering i MLX, så forskellige motorer kan fokusere på deres egne styrker. oMLX skal fungere som testbed for nye idéer, mens arbejde sendes videre til projekter som mlx-lm, mlx-vlm og LM Studio."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Hugging Face kalder det Hub, hvor folk finder MLX-modeller",
+        "Hugging Face samarbejder med mlx-lm, mlx-vlm og LM Studio",
+        "Jun Kim fortsætter som leder af oMLX"
+      ],
+      "betydning": "oMLX-projektet får fast finansiering, og arbejdet med at få transformers-modeller til at køre lokalt på Apple Silicon bliver prioriteret.",
+      "pointer": [
+        "Jun Kim leder stadig oMLX",
+        "Fokus: hurtigere vej fra transformers til MLX",
+        "MLX er Apples framework til lokal AI"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-04T06:27:15.672588+00:00"
+      },
+      "side": "artikel/c5f86512fa7d6230.html"
+    },
+    {
+      "titel": "How SpaceXAI is using Grok Bot to scale customer support",
+      "link": "https://x.ai/news/grok-bot-customer-support",
+      "resume": "",
+      "dato": "2026-09-22T00:00:00+00:00",
+      "kilde": "xAI News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "eget_foerst_set": "2026-09-22T19:51:24.838792+00:00",
+      "rubrik": "Grok Bot afværgede 200 nye ansættelser",
+      "resume_da": "En 175% stigning i supportbilletter hos SpaceXAI er håndteret med uændret bemanding og priser helt ned til 0,20 dollar pr. billet.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 1,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase om Grok Bot i kundeservice hos SpaceXAI; kun titlen er medsendt.",
+        "forbehold": "Ingen tekst eller metode medsendt, så resultater kan ikke vurderes.",
+        "emne": "xai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "175% flere billetter, ingen nye folk",
+          "tekst": "Da Cursor blev en del af SpaceXAI den 14. august, stod to supportteams over for et langt bredere produktsortiment. Samtidig ventede man, at Grok Bot ville trække endnu flere brugere til.\n\nDet kombinerede team har set en **175% stigning i supportbilletter**. Ifølge SpaceXAI er det sket uden at ansætte nogen — ellers kunne de have ansat 200 ekstra medarbejdere."
+        },
+        {
+          "overskrift": "Fra intern kontrol til direkte svar",
+          "tekst": "Opstarten fulgte et kryb-gå-løb-forløb. Først kobledes Grok Bot til Plain for billetter og Linear for fejlsporing, men den måtte kun skrive interne noter og krævede menneskelig godkendelse.\n\nDa resultaterne blev pålidelige, udvidede teamet gradvist. Efter en dags manuel gennemgang begyndte Grok Bot at svare kunder direkte. Den er trænet på over én million kundeinteraktioner."
+        },
+        {
+          "overskrift": "20 til 30 cent pr. billet",
+          "tekst": "Traditionelle AI-supportværktøjer tager 1–4 dollar pr. løst billet som fast takst. Med Grok Bot betaler SpaceXAI kun for faktisk forbrug, der indgår i planen.\n\nEfter mindre optimeringer har de løst billetter helt ned til **0,20–0,30 dollar** stykket. Prisen dækker også et standardskridt, hvor Grok Bot foretager en indledende undersøgelse af hver ny billet."
+        },
+        {
+          "overskrift": "Nu coacher Grok Bots hinanden",
+          "tekst": "Ud over enkeltbilletter holder Grok Bot øje med indkommende volumen, omfordeler billetter efter behov og advarer, når et responstidsløfte er ved at blive brudt.\n\n99% af alle refusionsanmodninger løses uden menneskelig indblanding. Ved kendte fejl kobler den til Linear og Datadog og gengiver problemet med en video til ingeniørteamet.\n\nNu coacher Grok Bots andre Grok Bots: de finder huller i vidensystemet, fylder dem og sender læringen tilbage. Hver uge sender de ledelsen et kvalitetsresumé."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "175%",
+          "label": "Stigning i supportbilletter for det kombinerede SpaceXAI- og Cursor-team"
+        },
+        {
+          "tal": "200",
+          "label": "Ekstra medarbejdere, SpaceXAI siger de ellers kunne have ansat"
+        },
+        {
+          "tal": "$0,20–$0,30",
+          "label": "Laveste pris pr. løst billet med Grok Bot"
+        },
+        {
+          "tal": "$1–$4",
+          "label": "Fast pris pr. løsning hos traditionelle AI-supportværktøjer"
+        },
+        {
+          "tal": "99%",
+          "label": "Refusionsanmodninger løst uden menneskelig indblanding"
+        }
+      ],
+      "detaljer": [
+        "Cursor blev en del af SpaceXAI den 14. august 2026",
+        "Grok Bot er koblet til Plain, Linear og Datadog",
+        "Trænet på over én million kundeinteraktioner"
+      ],
+      "betydning": "SpaceXAI planlægger at udbrede coachesløkken, hvor Grok Bots forbedrer hinandens viden, til hele produktsortimentet.",
+      "pointer": [
+        "175% flere billetter uden nyansættelser",
+        "0,20–0,30 dollar pr. løst billet",
+        "99% af refusioner håndteret automatisk"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-04T06:25:13.908943+00:00"
+      },
+      "side": "artikel/656c12515b26321d.html"
+    },
+    {
+      "titel": "Partnering with Accenture on embedded evaluation",
+      "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "resume": "",
+      "dato": "2026-09-18T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "eget_foerst_set": "2026-09-18T22:47:50.159551+00:00",
+      "rubrik": "Anthropic betaler Accenture for at evaluere egne modeller",
+      "resume_da": "Accenture vurderer Anthropic-modeller indefra med medarbejderadgang, og begge parter lægger mindst 1 mia. dollar over fem år.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic oplyser et partnerskab med Accenture om indlejret evaluering; meddelelsen indeholder ingen yderligere detaljer.",
+        "forbehold": "Materialet består kun af en titel uden indhold, så omfang og betydning kan ikke vurderes.",
+        "emne": "anthropic accenture"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "historie_dato": "2026-09-18T00:00:00+00:00",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Accenture tester modeller og sikkerhedsgreb",
+          "tekst": "Anthropic har indgået et samarbejde med konsulentvirksomheden Accenture om selvstændig evaluering af sine frontier-modeller, altså de mest avancerede AI-modeller. Det er et skridt mod løftet i CEO-essayet \"We Must Pace the Frontier\" om at placere faste evaluatorer i virksomheden.\n\nSamarbejdet ledes af Faculty, Accentures specialiserede AI-forretning. Det omfatter evaluering og red-teaming af modeller — systematiske forsøg på at få en model til at fejle — samt vurderinger af, hvor godt modellerne følger deres tilsigtede formål, og tests af modellernes sikkerhedsforanstaltninger.\n\nAccenture hjælper virksomheder og myndigheder med at tage AI i brug på mange områder. Den erfaring skal indgå i vurderingen af Anthropics modeller."
+        },
+        {
+          "overskrift": "Evaluatorer får medarbejderadgang indefra",
+          "tekst": "I dag vurderer eksterne evaluatorer modellerne udefra. Indlejrede evaluatorer derimod arbejder inde i AI-virksomhederne med adgang på niveau med en medarbejders. De kan følge modellerne, mens de trænes, holde øje med de beslutninger, der styrer, hvordan de bygges og udrulles, og tale direkte med medarbejdere.\n\nDerfra kan de vurdere, hvordan virksomheden fungerer, kontrollere, om den holder sine sikkerhedsforpligtelser, og finde blinde pletter. De kan også rapportere hændelser og give offentligheden et mere oplyst billede af fordele og risici. Sikkerheden i modellerne er fortsat Anthropics eget ansvar, understreger virksomheden."
+        },
+        {
+          "overskrift": "Ingen standarder eller fælles finansiering findes",
+          "tekst": "Der findes endnu ingen standarder for, hvilke oplysninger indlejrede evaluatorer skal have adgang til, eller hvordan de skal rapportere fund. Der er heller ingen fast model for finansiering af selvstændig evaluering.\n\nAnthropic betaler derfor Accentures arbejde direkte og er desuden i dialog med nonprofit-evaluatorens METR og andre om at afprøve dele af ordningen med egen finansiering. På sigt mener Anthropic, at pengene bør komme fra puljer eller myndigheder, som det blev anbefalet i Advanced AI Framework i juni, men den ordning findes ikke i dag.\n\nSamarbejdet er ikke eksklusivt: Anthropic vil arbejde med flere evaluatorer, og Accenture med flere AI-udviklere."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1 mia. dollar",
+          "label": "Minste investering fra hver af Anthropic og Accenture over de næste fem år"
+        }
+      ],
+      "detaljer": [
+        "Faculty, Accentures AI-forretning, leder samarbejdet.",
+        "Flere evaluatorer forventes præsenteret de kommende uger.",
+        "Tiltaget offentliggøres, så andre AI-udviklere kan følge processen.",
+        "Anthropic fortsætter med at træne og udgive frontier-modeller."
+      ],
+      "betydning": "Evaluatorer med medarbejderadgang kan rapportere hændelser og beskrive modellernes fordele og risici for offentligheden, mens modellerne stadig bygges.",
+      "pointer": [
+        "Accenture ledes af AI-selskabet Faculty.",
+        "Ingen standarder for adgang og rapportering findes endnu.",
+        "Samarbejdet er ikke eksklusivt for nogen af parterne."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-04T06:26:31.377738+00:00"
+      },
+      "side": "artikel/02baaf3c371a8e5f.html"
+    },
+    {
+      "titel": "Introducing the Life Sciences Verification Program",
+      "link": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "resume": "",
+      "dato": "2026-09-17T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-17T20:31:59.642820+00:00",
+      "eget_foerst_set": "2026-09-17T20:31:59.642820+00:00",
+      "rubrik": "Anthropic fjerner biologispærringer for verificerede hold",
+      "resume_da": "Teams i beta får Mythos 5.1, Opus 5 og Sonnet 5 efter vurdering af forskningsbaggrund, sikkerhed og etisk tilsyn.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 1,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic annoncerer et verifikationsprogram for life sciences, men materialet oplyser intet om kriterier, adgang eller deltagere.",
+        "forbehold": "Ingen detaljer om kriterier, adgang eller deltagere; nyhedsværdien kan ikke vurderes.",
+        "emne": "anthropic life sciences verification program"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 2,
+      "sektioner": [
+        {
+          "overskrift": "Bioopgaver før blokeret er nu mulige",
+          "tekst": "Anthropic lancerer Life Sciences Verification Program (LSVP), der giver biofaglige teams adgang til modellerne Mythos 5.1, Opus 5 og Sonnet 5 med sikkerhedsgardiner, der er lempeligere for biologi. Programmet er i beta og foreløbigt åbent for teams og institutioner.\n\nDet frilægger opgaver, der var blokeret i de generelt tilgængelige Fable-modeller: lægemiddeldiscovery, biologisk forskning, klinisk udvikling og produktion. Programmet henvender sig til alt fra akademiske laboratorier til startups og medicinalvirksomheder.\n\nXaira Therapeutics, Edison Scientific og Manifold Bio er blandt de tidlige deltagere."
+        },
+        {
+          "overskrift": "Højrisikoadgang fjerner alle bio-spærringer",
+          "tekst": "Ansøgere gennemgår en vurdering af forskningsbaggrund, sikkerhedsstandarder og etisk forskningstilsyn. Godkendte hold kan søge tilladelser af to typer, alt efter behov.\n\nStandard Use dækker det meste biologiarbejde, gælder hele holdet og fornyes årligt. High-risk Use er en ekstra tilladelse til enkelte projekter, der fjerner alle spærringer, der blokerer biologirelaterede anmodninger. Den fornyes hver sjette måned.\n\nHigh-risk-tilladelser for Claude Opus 5 og Claude Sonnet 5 er tilgængelige i dag. For Claude Mythos er de foreløbigt begrænset til få organisationer, mens Anthropic samarbejder med den amerikanske regering om bredere adgang."
+        },
+        {
+          "overskrift": "Realtidsblokering afløses af efterfølgende overvågning",
+          "tekst": "Anthropic skifter fra at blokere potentielt skadelige anmodninger i realtid til at overvåge trafikken efterfølgende. Det skal gøre det lettere at opdage misbrug, der spreder sig over mange sessioner for at undgå detektion.\n\nLSVP-trafik kræver 30 dages datalagring. Dataene opbevares adskilt, bruges ikke til træning og gives ikke adgang for Anthropics life sciences-forskningshold.\n\nCyberspærringer og andre grundlæggende sikkerhedsmekanismer forbliver aktive. Adgang knyttes til de brugsscenarier, organisationen har angivet i ansøgningen, og Anthropic overvåger trafikken løbende."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Programmet udvides løbende til individuelle Pro- og Max-planer.",
+        "Brugsscenarier bør beskrive arbejdet uden fortrolige oplysninger eller IP.",
+        "Anthropic tester integration med Enterprise Frontier Safeguards for kvalificerede organisationer.",
+        "Adgang gælder Claude Science, Claude.ai, Claude Code og API'et."
+      ],
+      "betydning": "Sikkerhed bygger nu på delte forpligtelser, hvor godkendte organisationer selv fastlægger sikker brug, og Anthropic overvåger afvigelser løbende.",
+      "pointer": [
+        "LSVP er i beta for teams og institutioner",
+        "High-risk-adgang fjerner alle bio-relaterede spærringer",
+        "Efterfølgende overvågning kræver 30 dages datalagring"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-04T06:29:55.414044+00:00"
+      },
+      "side": "artikel/c71245ef57d4e35f.html"
     }
   ]
 }
