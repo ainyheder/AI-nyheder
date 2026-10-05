@@ -1,27 +1,17 @@
 {
-  "opdateret": "2026-10-05T06:07:28.091788+00:00",
+  "opdateret": "2026-10-05T17:20:56.106326+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
-    "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
-    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+    "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+    "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+    "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
   ],
-  "input_fingerprint": "5ee6b488db864df1",
+  "input_fingerprint": "90b95120d242fe1c",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Artikel 3, detalje: 'Claude Opus 5.5 er Anthrics' - firmanavnet skal være Anthropic (stavefejl).",
-    "Artikel 3, afsnit 2: 'ikke læst direkte i originalkilden' er redaktionens egen læseproces læseren ikke kan bruge; formuler det som et rent kildeforbehold (The Verge henviser til Kotaku).",
-    "Artikel 1, nøgletal/pointer: 'seks sikkerhedsansatte' er bredere end belægget - The Verge kalder gruppen 'researchers and safety workers' og navngiver ikke O'Callahan, Chughtai og Engels' roller; skriv forskere/sikkerhedsfolk.",
-    "Udvalget: ingen modeludgivelse blandt de tre hovedhistorier på trods af førsteprioriteten. Stability AI's tre lydmodeller (2. oktober 21:09, markeret model_lancering) ligger inden for 48-timers-vinduet og er hverken læst eller fravalgt med begrundelse - enten læs kilden eller afvis kandidaten eksplicit.",
-    "Rækkefølge: forsiden begynder med Robinson (3. oktober 14:31), mens to hovedhistorier fra de seneste 24 timer (Google-pausen og StarCraft, begge 4. oktober) står under; retningen vil begynde med seneste 24 timer.",
-    "Trump-anbefalingen: 'en præsidentiel ordre, der omdøber AI til super intelligence' og 120-dages-fristen/formandskabet gengives som entydige, mens kilden siger 'seeking to rebrand' og 'reportedly' (WSJ); skriv kilden ind i påstandene.",
-    "Trump-anbefalingen, afslutning: 'Det er derfor naturligt, at taskforcen bærer netop dette navn' er TechCrunch' kommentar gengivet som egen konklusion.",
-    "Kandidatoversigten: to poster har byttede rubrikker (AstaBrief-bidraget bærer Pope-Leo-rubrikken, Hugging Face-posten om AutoSynthData bærer Grok-rubrikken) - rettes, så en senere udgave ikke vælger på falsk grundlag."
-  ],
-  "modelkald": 7,
-  "kildehentninger": 5,
+  "modelkald": 4,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -48,14 +38,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -64,11 +46,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -84,8 +62,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -94,30 +76,42 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "link": "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
-      "grundlag": "kildetekst"
+      "link": "https://openai.com/index/eu-text-provenance",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/games/1004418/capcom-ai-game-development",
-    "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
-    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+    "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+    "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/"
   ],
-  "afventer_artikler": 53
+  "afventer_artikler": 67
 }

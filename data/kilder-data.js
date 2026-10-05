@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-05T06:07:28.091788+00:00",
- "artikler_i_alt": 88,
+ "opdateret": "2026-10-05T17:20:56.106326+00:00",
+ "artikler_i_alt": 91,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -191,7 +191,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Gemini 4 Argon indleder forsigtig udrulning",
+     "rubrik": "Gemini 4 Argon er begrænset til cybersikkerhed",
      "dato": "",
      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
@@ -358,7 +358,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -387,15 +387,6 @@ window.KILDER_STATUS = {
      "side": "artikel/c5f86512fa7d6230.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "tokenizers v1 er tit tientals gange hurtigere",
-     "dato": "2026-09-21T00:00:00",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://huggingface.co/blog/tokenizers-v1",
-     "side": "artikel/87a2ea6346f8c464.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": []
@@ -410,18 +401,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 7,
-   "som_ekstra": 3,
+   "i_listen": 6,
+   "som_ekstra": 2,
    "seneste": [
-    {
-     "rubrik": "OpenAI lancerer Dots og GPT-6.1 Sol",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI lancerer Dots – Metas Muse er gratis"
-    },
     {
      "rubrik": "Claude Sonnet 5.5 er nu gratisniveauets model",
      "dato": "",
@@ -493,25 +475,12 @@ window.KILDER_STATUS = {
      "side": "artikel/7e040f4942c4c74d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude Code filmede kākāpō-animation til keynote",
-     "dato": "2026-09-26T23:39:06",
-     "foerst_set": "2026-09-27T05:38:31",
-     "link": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
-     "side": "artikel/8e142628e031c730.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Anthropic News",
      2
-    ],
-    [
-     "The Verge AI",
-     1
     ]
    ]
   },
@@ -525,9 +494,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 21,
-   "som_ekstra": 2,
+   "i_listen": 23,
+   "som_ekstra": 3,
    "seneste": [
+    {
+     "rubrik": "Trump omdøber AI til super intelligence",
+     "dato": "",
+     "foerst_set": "2026-10-04T23:32:02",
+     "link": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
+     "side": "",
+     "hvor": "under",
+     "under": "Trump får 24 techfirmaer til frivillige AI-sikkerhedstests"
+    },
     {
      "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
      "dato": "",
@@ -545,6 +523,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Nvidia og Oumi skal rådgive om modelvalg",
+     "dato": "2026-10-05T15:00:00",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
+     "side": "artikel/78ad6176e72652b8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TechCrunch afslører sidste talere til Disrupt 2026",
+     "dato": "2026-10-05T14:00:00",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://techcrunch.com/2026/10/05/the-final-disrupt-stage-lineup-three-days-of-conversations-you-wont-hear-anywhere-outside-of-techcrunch-disrupt-2026/",
+     "side": "artikel/6fae5d6111d322f8.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Instinct, Folk og Caddy bor nu i sms'en",
@@ -601,20 +597,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Amazon udgiver åben beslutningsmodel Strands Decider",
-     "dato": "2026-10-01T16:49:22",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-     "side": "artikel/d807344c9cb1da49.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI lancerer virtuel tøjprøvning i ChatGPT",
      "dato": "2026-10-01T19:21:53",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
      "side": "artikel/a4548c383007ff68.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon udgiver åben beslutningsmodel Strands Decider",
+     "dato": "2026-10-01T16:49:22",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+     "side": "artikel/d807344c9cb1da49.html",
      "hvor": "forside",
      "under": ""
     },
@@ -635,24 +631,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b2aa71ddeef46e8d.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI skiltes med tre sikkerhedsforskere efter regelbrud",
-     "dato": "2026-10-01T18:14:42",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
-     "side": "artikel/b56eb6fb25bd9dd2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amazon dropper hemmeligholdelse om datacentre",
-     "dato": "2026-10-03T18:43:57",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-     "side": "artikel/f31587f812325d66.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -662,7 +640,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     1
+     2
     ],
     [
      "Anthropic News",
@@ -680,9 +658,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 14,
+   "i_listen": 17,
    "som_ekstra": 8,
    "seneste": [
+    {
+     "rubrik": "OpenAI tilføjer billeder i annoncer i ChatGPT",
+     "dato": "",
+     "foerst_set": "2026-10-05T17:20:56.106326+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI tester billedreklamer i ChatGPT"
+    },
     {
      "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
      "dato": "",
@@ -756,6 +743,33 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "OpenAI tester billedreklamer i ChatGPT",
+     "dato": "2026-10-05T09:09:48",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+     "side": "artikel/d4ec394db9bf0a40.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's presseperson afbrød spørgsmål om brugers selvmord",
+     "dato": "2026-10-05T12:55:42",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+     "side": "artikel/69da73e8cd7f75ed.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "GPT-6 Astra hentede menneskernes bedste bot i stedet",
+     "dato": "2026-10-04T11:21:59",
+     "foerst_set": "2026-10-04T19:46:52",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+     "side": "artikel/a255f4ac5ad47e6e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Dale Caldwell bruger AI til at påstå uskyld",
      "dato": "2026-10-04T12:16:04",
      "foerst_set": "2026-10-04T19:46:52",
@@ -765,20 +779,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
-     "dato": "2026-10-03T10:31:56",
-     "foerst_set": "2026-10-03T19:22:05",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-     "side": "artikel/f8fc0aa18dcc03fd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Capcom vil bygge AI ind i RE Engine",
      "dato": "2026-10-03T12:49:10",
      "foerst_set": "2026-10-03T19:22:05",
      "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
      "side": "artikel/cc9d67938b46f0ab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI",
+     "dato": "2026-10-03T14:31:56",
+     "foerst_set": "2026-10-03T19:22:05",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+     "side": "artikel/f8fc0aa18dcc03fd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -793,19 +807,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "OpenAI Dot ordner både hjemmeside og video",
-     "dato": "2026-10-02T14:00:00",
+     "dato": "2026-10-02T18:00:00",
      "foerst_set": "2026-10-02T20:55:07",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
      "side": "artikel/edef5e5d6249ea7f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
-     "dato": "2026-10-01T14:36:50",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-     "side": "artikel/cdc4b946eb257199.html",
      "hvor": "forside",
      "under": ""
     },
@@ -815,6 +820,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
      "side": "artikel/190c03ca19ef6f66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI lancerer Dots – Metas Muse er gratis",
+     "dato": "2026-10-01T14:36:50",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+     "side": "artikel/cdc4b946eb257199.html",
      "hvor": "forside",
      "under": ""
     },
@@ -835,33 +849,6 @@ window.KILDER_STATUS = {
      "side": "artikel/800f6ad00c946bb9.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gæster tror mere på ChatGPT end på personalet",
-     "dato": "2026-10-02T08:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
-     "side": "artikel/1f69f98b0809fe93.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft planter skov omkring datacentre",
-     "dato": "2026-10-02T12:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry",
-     "side": "artikel/e962ec7552612600.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grokipedia får nyt logo og opdateres igen",
-     "dato": "2026-10-01T00:23:45",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1003068/elon-musk-grokipedia-v-0-3-spacexai",
-     "side": "artikel/5ee3ca38d10b4546.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -876,10 +863,6 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
-    ],
-    [
-     "Simon Willison AI",
-     1
     ],
     [
      "Ars Technica AI",
@@ -1034,7 +1017,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     1
+     2
     ],
     [
      "Google Gemini",
