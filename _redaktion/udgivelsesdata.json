@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-04T23:32:02.127363+00:00",
+  "opdateret": "2026-10-05T06:07:28.091788+00:00",
   "kladder": [
     {
       "titel": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
@@ -12,6 +12,7 @@
       "eget_foerst_set": "2026-10-04T23:32:02.127363+00:00",
       "rubrik": "Google suspenderer bug bounty på grund af AI-rapporter",
       "resume_da": "Google har sat sit open source bug bounty-program i bero. Programmet ramte ifølge TechCrunch en 'betydelig stigning' i indberetninger skrevet med AI.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28,7 +29,6 @@
         "emne": "google open source bug bounty"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -45,6 +45,7 @@
       "eget_foerst_set": "2026-10-04T19:46:52.694128+00:00",
       "rubrik": "GPT-6 Astra og Claude Opus 5.5 snyder i StarCraft",
       "resume_da": "I turneringen StarSkirmish nåede de to AI-bots uafgjort, men tabte til menneskeskabte bots som Stardust. Materialet omtaler snyd uden at forklare metoden.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -61,41 +62,7 @@
         "emne": "starskirmish starcraft bots"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Trump unveils his new Super Intelligence Force",
-      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
-      "resume": "This new task force is Trump's latest response to the debate over AI safety.",
-      "dato": "2026-10-04T15:15:10+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-04T19:46:52.694128+00:00",
-      "eget_foerst_set": "2026-10-04T19:46:52.694128+00:00",
-      "rubrik": "Trump opretter Super Intelligence Force",
-      "resume_da": "Opgaven er Trumps seneste svar på debatten om AI-sikkerhed. Artiklen kalder den nye opgavekraft et task force og nævner ikke medlemmer eller mandat.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "politik",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Trump præsenterer en ny opgavekraft, Super Intelligence Force, om AI-sikkerhed",
-        "forbehold": "Medlemmer og mandat nævnes ikke; kun task force nævnes kort",
-        "emne": "trump super intelligence force"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -196,6 +163,39 @@
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
       "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+      "link": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
+      "resume": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
+      "dato": "2026-10-04T20:08:34+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-04T23:32:02.127363+00:00",
+      "eget_foerst_set": "2026-10-04T23:32:02.127363+00:00",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Diskussion af Trump-administrationens forsøg på at ombrande AI og en ikke-bindende sikkerhedspagt om superintelligens",
+        "forbehold": "Kun kort podcast-uddrag; konkrete detaljer om pagten mangler",
+        "emne": "ai-sikkerhedspagt og rebranding"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -398,34 +398,34 @@
       ]
     },
     {
-      "titel": "Holo4: powering generalist computer-use agents",
-      "link": "https://huggingface.co/blog/Hcompany/holo4",
-      "resume": "",
-      "dato": "2026-09-28T09:44:05+00:00",
-      "kilde": "Hugging Face",
+      "titel": "DevDay 2026 Recap",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "resume": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "dato": "2026-09-29T10:00:00+00:00",
+      "kilde": "OpenAI Blog",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-09-28T16:58:31.293342+00:00",
-      "eget_foerst_set": "2026-09-28T16:58:31.293342+00:00",
-      "rubrik": "Hugging Face udgiver Holo4 til computerbrug",
-      "resume_da": "Holo4 er designet til at drive generelle agenter, der betjener en computer autonomt.",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "OpenAI DevDay samlede over 20 annonceringer",
+      "resume_da": "Opdateringen omfatter blandt andet GPT-6 Astra, ændringer i ChatGPT og Codex samt nye API'er og sikkerhedsværktøjer.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 4,
+        "nyhed": 3,
         "betydning": 3,
         "brugbarhed": 3,
         "dokumentation": 3,
         "dansk": 0,
         "type": "lancering",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Hugging Face præsenterer Holo4 model til generelle computer-use agenter",
-        "forbehold": "Ingen specifikationer, benchmarks eller pris i det tilgængelige materiale",
-        "emne": "h company holo4"
+        "model_lancering": false,
+        "begrundelse": "DevDay-recap samler 20+ annonceringer inkl. GPT-6 Astra, ChatGPT, Codex og API'er",
+        "forbehold": "Opsummering uden detaljer om hver enkelt nyhed",
+        "emne": "openai devday"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -464,34 +464,34 @@
       ]
     },
     {
-      "titel": "DevDay 2026 Recap",
-      "link": "https://openai.com/index/devday-2026-recap",
-      "resume": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-      "dato": "2026-09-29T10:00:00+00:00",
-      "kilde": "OpenAI Blog",
+      "titel": "Holo4: powering generalist computer-use agents",
+      "link": "https://huggingface.co/blog/Hcompany/holo4",
+      "resume": "",
+      "dato": "2026-09-28T09:44:05+00:00",
+      "kilde": "Hugging Face",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "OpenAI DevDay samlede over 20 annonceringer",
-      "resume_da": "Opdateringen omfatter blandt andet GPT-6 Astra, ændringer i ChatGPT og Codex samt nye API'er og sikkerhedsværktøjer.",
+      "foerst_set": "2026-09-28T16:58:31.293342+00:00",
+      "eget_foerst_set": "2026-09-28T16:58:31.293342+00:00",
+      "rubrik": "Hugging Face udgiver Holo4 til computerbrug",
+      "resume_da": "Holo4 er designet til at drive generelle agenter, der betjener en computer autonomt.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
-        "nyhed": 3,
+        "nyhed": 4,
         "betydning": 3,
         "brugbarhed": 3,
         "dokumentation": 3,
         "dansk": 0,
         "type": "lancering",
         "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "DevDay-recap samler 20+ annonceringer inkl. GPT-6 Astra, ChatGPT, Codex og API'er",
-        "forbehold": "Opsummering uden detaljer om hver enkelt nyhed",
-        "emne": "openai devday"
+        "model_lancering": true,
+        "begrundelse": "Hugging Face præsenterer Holo4 model til generelle computer-use agenter",
+        "forbehold": "Ingen specifikationer, benchmarks eller pris i det tilgængelige materiale",
+        "emne": "h company holo4"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
+      "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -827,6 +827,39 @@
       ]
     },
     {
+      "titel": "Advancing Private AI Compute with secure, server-side memory",
+      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+      "dato": "2026-09-23T16:00:57+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "rubrik": "Google tilføjer privat hukommelse til Private AI Compute",
+      "resume_da": "Server-side hukommelse ligger på serveren og skal holde personlige data private i Private AI Compute.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google tilføjer sikker server-side hukommelse til Private AI Compute",
+        "forbehold": "Kun kort officiel omtale, ingen metode eller evalueringsdetaljer",
+        "emne": "google private ai compute"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Accelerating vision-language models with LFM2.5-VL-DSpark",
       "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
       "resume": "",
@@ -954,21 +987,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Advancing Private AI Compute with secure, server-side memory",
-      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-      "dato": "2026-09-23T16:00:57+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Labs",
-      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "rubrik": "Google tilføjer privat hukommelse til Private AI Compute",
-      "resume_da": "Server-side hukommelse ligger på serveren og skal holde personlige data private i Private AI Compute.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1116,6 +1134,7 @@
       "eget_foerst_set": "2026-10-04T06:14:53.966311+00:00",
       "rubrik": "OpenAI-ansat David Robinson siger op over kultur",
       "resume_da": "Robinson kalder kulturen brudt og skriver i sit opsigelsesbrev, at han indrømmer at være en kliché. TechCrunch har talt med ham.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -1132,7 +1151,6 @@
         "emne": "thinkingbox microsoft"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 1,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -12275,6 +12293,14 @@
           "resume_da": "Præsidenten skrev dekret om nyt navn, mens tech-topchefer underskrev AI-sikkerhedspagt og kun 2 procent af forbrugerne køber produktet.",
           "dato": "2026-10-02T17:56:00+00:00",
           "foerst_set": "2026-10-02T20:55:07.620979+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+          "rubrik": "Trump opretter Super Intelligence Force",
+          "resume_da": "Taskforcen har 120 dage til at kortlægge AI-risici og ledes af efterretningchef Jay Clayton som ny SI-czar.",
+          "dato": "2026-10-04T15:15:10+00:00",
+          "foerst_set": "2026-10-04T19:46:52.694128+00:00"
         }
       ]
     },
@@ -19489,8 +19515,8 @@
         {
           "kilde": "Simon Willison AI",
           "link": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-          "rubrik": "OpenAI lancerer Dots og hurtigere GPT-6.1 Sol",
-          "resume_da": "Personlige AI-agenter, et fælles arbejdsdokument og en model til en femtedel af prisen stod på programmet.",
+          "rubrik": "OpenAI lancerer Dots og GPT-6.1 Sol",
+          "resume_da": "Dots fungerer i Slack med egen identitet, mens Sol ifølge OpenAI giver næsten Astra-niveau til en femtedel af prisen.",
           "dato": "2026-09-29T15:55:13+00:00",
           "foerst_set": "2026-10-02T12:20:39.330113+00:00"
         }
@@ -20398,6 +20424,14 @@
           "resume_da": "Argon opnår 77,9 procent på DeepSWE v1.1, migrerede 800.000 kodelinjer internt og tilbyder 1 million tokens i output pr. anmodning.",
           "dato": "2026-09-30T20:11:08+00:00",
           "foerst_set": "2026-10-02T12:20:39.330113+00:00"
+        },
+        {
+          "kilde": "Google Gemini",
+          "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "rubrik": "Gemini 4 Argon indleder forsigtig udrulning",
+          "resume_da": "Googles efterårsnyt samler et nyt frontier-model, hurtigere stemmeværktøjer, musikgenerering og eksterne apps i Gemini-appen.",
+          "dato": "2026-10-02T15:00:00+00:00",
+          "foerst_set": "2026-10-02T20:55:07.620979+00:00"
         }
       ],
       "detaljer": [
@@ -20604,18 +20638,8 @@
         "status": "godkendt",
         "kontrolleret": "2026-10-02T15:17:31.503769+00:00"
       },
-      "prio": 7,
       "historie_dato": "2026-09-30T18:47:01+00:00",
-      "andre": [
-        {
-          "kilde": "TechCrunch AI",
-          "link": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
-          "rubrik": "Trump gør AI til super intelligence",
-          "resume_da": "Techdirektører underskrev en frivillig sikkerhedspagt ved et møde hos præsidenten. Journalisterne tvivler på, at den ændrer noget.",
-          "dato": "2026-10-04T20:08:34+00:00",
-          "foerst_set": "2026-10-04T23:32:02.127363+00:00"
-        }
-      ],
+      "prio": 7,
       "side": "artikel/46a3a5a996fbe157.html"
     },
     {
@@ -23661,6 +23685,7 @@
       ],
       "billedmotiv": "A solid server chassis block with the intact NVIDIA green wordmark on its front panel, and a thick sealed shipping crate beside it wrapped in a crossed red customs stamp band, with a dashed redirect arrow curving from the crate toward a second smaller crate, showing export-controlled servers rerouted to a blocked destination.",
       "billedmotiv_instruks": "e8f920d0dec6ac0a4f30",
+      "billede": "data/img/0608c27a8e94969d.webp",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -23684,7 +23709,6 @@
         "kontrolleret": "2026-10-03T19:41:30.985700+00:00"
       },
       "prio": 5,
-      "billede": "data/img/0608c27a8e94969d.webp",
       "side": "artikel/00a7c45278c3c4fc.html"
     },
     {
@@ -25339,6 +25363,47 @@
       "eget_foerst_set": "2026-10-04T19:46:52.694128+00:00",
       "rubrik": "Dale Caldwell bruger AI til at påstå uskyld",
       "resume_da": "New Jerseys viceguvernør hævder, at 59 AI-svar aldrig nåede frem til en konstatering af sexchikane i undersøgelsesrapporten.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Undersøgelse førte til tvunget afgang",
+          "tekst": "New Jerseys viceguvernør, Dale Caldwell, blev 25. september tvunget til at træde af. En undersøgelse fandt, at han havde seksuelt chikaneret en medarbejder og gentagne gange overtrådt etiske regler.\n\nSiden har han kørt en mediekampagne for at rense sit navn."
+        },
+        {
+          "overskrift": "Ingen AI fandt sexchikane, hævder Caldwell",
+          "tekst": "I et interview på NJ PBS fortalte han vært Rob Nelson, at han havde kørt undersøgelsesrapporten gennem flere AI-platforme.\n\nHan hævder, at han fik 59 svar, og at intet af dem endte med en konstatering af sexchikane. Rapportens fund stammer fra undersøgelsen, ikke fra chatbots."
+        },
+        {
+          "overskrift": "Chatbots siger ofte det, brugeren vil høre",
+          "tekst": "AI-chatbots er kendt for at være sycophantiske: de tilpasser sig brugerens ønsker og gentager det, man gerne vil høre.\n\nEt bevis, der netop skal vise, at undersøgelsen tog fejl, er derfor skrøbeligt, skriver The Verge."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "59",
+          "label": "Antal AI-svar, Caldwell hævder at have fået ved at køre rapporten gennem platformene"
+        },
+        {
+          "tal": "25. september",
+          "label": "Dato for Caldwell's tvungne afgang som viceguvernør i New Jersey"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Caldwell var New Jerseys viceguvernør før afgangen.",
+        "Interviewet blev sendt på NJ PBS hos vært Rob Nelson.",
+        "Artiklen er skrevet af weekendredaktør Terrence O'Brien på The Verge."
+      ],
+      "betydning": "Caldwells AI-argument møder den indvending, at chatbots ofte bekræfter brugeren i stedet for at prøve fundene.",
+      "pointer": [
+        "Caldwell gik af 25. september",
+        "Ingen AI nåede frem til sexchikane, hævder han",
+        "Chatbots gentager ofte brugerens ønsker"
+      ],
+      "billedmotiv": "A stack of thick report pages with a chatbot speech bubble containing a checkmark floating above it, while five small identical speech bubbles below show sycophantic agreement marks. The Claude asterisk starburst emblem in terracotta orange sits front-facing on the top speech bubble, identifying the AI platform type. Solid opaque shapes with sharp edges, cut out on plain background, no text.",
+      "billedmotiv_instruks": "2f9808ad3b6c978a8c5a",
+      "billede": "data/img/b7b5268b4254f7d8.jpg",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -25355,138 +25420,13 @@
         "emne": "dale caldwell ai forsvar"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 4,
-      "sektioner": [
-        {
-          "overskrift": "Undersøgelse førte til tvunget afgang",
-          "tekst": "New Jerseys viceguvernør, Dale Caldwell, blev 25. september tvunget til at træde af. En undersøgelse fandt, at han havde seksuelt chikaneret en medarbejder og gentagne gange overtrådt etiske regler.\n\nSiden har han kørt en mediekampagne for at rense sit navn."
-        },
-        {
-          "overskrift": "Ingen AI fandt sexchikane, hævder Caldwell",
-          "tekst": "I et interview på NJ PBS fortalte han vært Rob Nelson, at han havde kørt undersøgelsesrapporten gennem flere AI-platforme.\n\nHan hævder, at han fik 59 svar, og at intet af dem endte med en konstatering af sexchikane. Rapportens fund stammer fra undersøgelsen, ikke fra chatbots."
-        },
-        {
-          "overskrift": "Chatbots siger ofte det, brugeren vil høre",
-          "tekst": "AI-chatbots er kendt for at være sycophantiske: de tilpasser sig brugerens ønsker og gentager det, man gerne vil høre.\n\nEt bevis, der netop skal vise, at undersøgelsen tog fejl, er derfor skrøbeligt, skriver The Verge."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "59",
-          "label": "Antal AI-svar, Caldwell hævder at have fået ved at køre rapporten gennem platformene"
-        },
-        {
-          "tal": "25. september",
-          "label": "Dato for Caldwell's tvungne afgang som viceguvernør i New Jersey"
-        }
-      ],
-      "detaljer": [
-        "Caldwell var New Jerseys viceguvernør før afgangen.",
-        "Interviewet blev sendt på NJ PBS hos vært Rob Nelson.",
-        "Artiklen er skrevet af weekendredaktør Terrence O'Brien på The Verge."
-      ],
-      "betydning": "Caldwells AI-argument møder den indvending, at chatbots ofte bekræfter brugeren i stedet for at prøve fundene.",
-      "pointer": [
-        "Caldwell gik af 25. september",
-        "Ingen AI nåede frem til sexchikane, hævder han",
-        "Chatbots gentager ofte brugerens ønsker"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-04T23:39:38.037103+00:00"
       },
-      "billedmotiv": "A stack of thick report pages with a chatbot speech bubble containing a checkmark floating above it, while five small identical speech bubbles below show sycophantic agreement marks. The Claude asterisk starburst emblem in terracotta orange sits front-facing on the top speech bubble, identifying the AI platform type. Solid opaque shapes with sharp edges, cut out on plain background, no text.",
-      "billedmotiv_instruks": "2f9808ad3b6c978a8c5a",
-      "billede": "data/img/b7b5268b4254f7d8.jpg",
+      "prio": 4,
       "side": "artikel/fa9cb1f77255d411.html"
-    },
-    {
-      "titel": "The latest AI news we announced in September 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "resume": "Here are Google’s latest AI updates from September 2026",
-      "dato": "2026-10-02T15:00:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "Gemini 4 Argon indleder forsigtig udrulning",
-      "resume_da": "Googles efterårsnyt samler et nyt frontier-model, hurtigere stemmeværktøjer, musikgenerering og eksterne apps i Gemini-appen.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Google opsummerer septembers AI-opdateringer uden konkrete modeller nævnt",
-        "forbehold": "Sammendrag uden detaljer om modeller eller versionsnumre",
-        "emne": "google gemini september roundup"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "Argon klarer tungt arbejde med million-token output",
-          "tekst": "Google har lanceret Gemini 4 Argon, sit nyeste frontier-model, bygget til avanceret ræsonnement og tungt arbejde som kodning, cybersikkerhed, økonomisk research og juridiske udkast.\n\nModellen kan skrive op til 1 million tokens i træk. En token er et stykke tekst, som modellen behandler ad gangen, så tallet angiver hvor lange svar den kan producere.\n\nArgon ruller først ud til betroede cybersikkerhedsforsvarere via Fairwind Program, hvor Google indsamler feedback på sine sikkerhedsrammer, inden tilgængeligheden udvides."
-        },
-        {
-          "overskrift": "Gemini 3.8 Flash matcher hastigheden, slår på kode",
-          "tekst": "Gemini 3.8 Flash giver ifølge Google bedste ræsonnerings- og kodeydelse hidtil i samme hastighed og til samme lave pris som 3.7 Flash. Den er stærkest på flertrins problemløsning og længere softwareopgaver.\n\nVed siden af den lanceres 3.8 Flash Cyber, der selv opdager sårbarheder i kode og lapper dem. Også den gives kun til betroede organisationer via Fairwind Program."
-        },
-        {
-          "overskrift": "Stemme og musik flytter ind i Gemini",
-          "tekst": "Gemini 3.8 Live og 3.8 Live Extended Thinking er lydmodeller, der fører samtale i realtid. Udvidede udgave er ifølge Google den topbedømte speech-to-speech-model til flertrins ræsonnement uden forsinkelse. Begge findes i Google AI Studio, Gemini API, Search Live, Gemini Live og Google Workspace.\n\nMed Flash TTS-modellerne kan man skabe egne stemmer ud fra tekst i stedet for faste forvalg, og Lyria 3.5 genererer musik fra tekst eller billeder direkte i Gemini-appen."
-        },
-        {
-          "overskrift": "Connected Apps henter dine værktøjer ind",
-          "tekst": "Gemini-appen kan nu trække data ind fra eksterne tjenester som Airtable, Linear, Adobe, Squarespace, Peloton og Experian, så opgaver klares ét sted i stedet for i flere faner. Appene kobles til under Gemini-indstillingerne."
-        },
-        {
-          "overskrift": "Suncatcher sender Googles TPU'er i kredsløb",
-          "tekst": "Google lancerer Project Suncatcher, som sammen med partneren Planet sender den første testsatellit op for at afprøve Googles TPU-chips — specialhardware til AI — under rummets forhold.\n\nSatellitter i lavt kredsløb har ifølge Google adgang til op til 8 gange mere solenergi end på Jorden, hvilket kan gøre længerevarende AI-infrastruktur i rummet mulig."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "1 million tokens",
-          "label": "Maksimalt output per svar fra Gemini 4 Argon"
-        },
-        {
-          "tal": "Op til 8 gange",
-          "label": "Solenergi til satellitter i lavt kredsløb målt mod Jorden, ifølge Google"
-        }
-      ],
-      "detaljer": [
-        "Gemini-appen er nu også kommet til Windows.",
-        "Googlebook kan forudbestilles fra oktober-nyhederne.",
-        "Fast Company kårede Googles AI-design som 2026 Design Company of the Year.",
-        "Gemini Notebook tilbyder 60-sekunders videooversigter på over 80 sprog."
-      ],
-      "betydning": "Almindelige brugere må vente på Argon, indtil Google har hentet feedback fra tidlige testere og finpudset sine sikkerhedsrammer.",
-      "pointer": [
-        "Argon gives først til betroede cybersikkerhedsforsvarere via Fairwind Program",
-        "Gemini 3.8 Flash matcher 3.7 Flash i hastighed og pris",
-        "Connected Apps kobles til i Gemini-indstillingerne"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-04T23:41:13.790137+00:00"
-      },
-      "billedmotiv": "A large solid rectangular slab representing a million-token output, with a thick ribbon of stacked token blocks streaming out of it in a long continuous line. The Google Gemini four-point spark in blue, red, yellow and green gradient is displayed front-facing on the slab. A second smaller slab beside it carries a speedometer-like circular dial. Solid opaque geometric forms, sharp edges, cut out on plain background, no text.",
-      "billedmotiv_instruks": "07488ccdaf1217de7de1",
-      "side": "artikel/bfe2b156957ee716.html"
     },
     {
       "titel": "Setting Grok Bot loose on procurement",

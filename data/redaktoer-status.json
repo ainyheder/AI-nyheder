@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-04T23:32:02.127363+00:00",
+  "opdateret": "2026-10-05T06:07:28.091788+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,15 +8,20 @@
     "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
     "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
   ],
-  "input_fingerprint": "3ba9e82d82973de5",
+  "input_fingerprint": "5ee6b488db864df1",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "kontrolproblemer": [
-    "Artikel 1: rubrikken 'Google fryser open source-bug bounty til 2027', punktet 'Programmet forventes genåbnet i første kvartal 2027' og betydningen 'holdes lukket til 2027' fastslår en varme og en genåbning, TechCrunch ikke dokumenterer. Kilden siger kun, at Google lover 'an update' i første kvartal 2027 – artiklens eget afsnit skriver det korrekt, så udgaven er internt modstridende.",
-    "Artikel 1, sektion 'Flertallet af indberetninger er ugyldige': generaliserer Googles citat, der handler om automatiserede indberetninger ('a significant rise in automated submissions, the vast majority of which are not valid'). Resumeet har samme udvidelse ('overvejende ugyldige AI-indberetninger fylder køen').",
-    "Artikel 3 opfylder ikke skriveopgavens faktaboks med deltagende bots og placeringer – noegletal er tom, og botlisten/placeringerne står ikke i nogen faktaboks."
+    "Artikel 3, detalje: 'Claude Opus 5.5 er Anthrics' - firmanavnet skal være Anthropic (stavefejl).",
+    "Artikel 3, afsnit 2: 'ikke læst direkte i originalkilden' er redaktionens egen læseproces læseren ikke kan bruge; formuler det som et rent kildeforbehold (The Verge henviser til Kotaku).",
+    "Artikel 1, nøgletal/pointer: 'seks sikkerhedsansatte' er bredere end belægget - The Verge kalder gruppen 'researchers and safety workers' og navngiver ikke O'Callahan, Chughtai og Engels' roller; skriv forskere/sikkerhedsfolk.",
+    "Udvalget: ingen modeludgivelse blandt de tre hovedhistorier på trods af førsteprioriteten. Stability AI's tre lydmodeller (2. oktober 21:09, markeret model_lancering) ligger inden for 48-timers-vinduet og er hverken læst eller fravalgt med begrundelse - enten læs kilden eller afvis kandidaten eksplicit.",
+    "Rækkefølge: forsiden begynder med Robinson (3. oktober 14:31), mens to hovedhistorier fra de seneste 24 timer (Google-pausen og StarCraft, begge 4. oktober) står under; retningen vil begynde med seneste 24 timer.",
+    "Trump-anbefalingen: 'en præsidentiel ordre, der omdøber AI til super intelligence' og 120-dages-fristen/formandskabet gengives som entydige, mens kilden siger 'seeking to rebrand' og 'reportedly' (WSJ); skriv kilden ind i påstandene.",
+    "Trump-anbefalingen, afslutning: 'Det er derfor naturligt, at taskforcen bærer netop dette navn' er TechCrunch' kommentar gengivet som egen konklusion.",
+    "Kandidatoversigten: to poster har byttede rubrikker (AstaBrief-bidraget bærer Pope-Leo-rubrikken, Hugging Face-posten om AutoSynthData bærer Grok-rubrikken) - rettes, så en senere udgave ikke vælger på falsk grundlag."
   ],
   "modelkald": 7,
-  "kildehentninger": 3,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -71,12 +76,16 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 562acc36900e8903: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -89,11 +98,19 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
       "grundlag": "kildetekst"
     }
   ],
