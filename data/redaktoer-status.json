@@ -1,17 +1,22 @@
 {
-  "opdateret": "2026-10-04T19:46:52.694128+00:00",
+  "opdateret": "2026-10-04T23:32:02.127363+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+    "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
     "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
   ],
-  "input_fingerprint": "bf9bc85c40aea0c5",
+  "input_fingerprint": "3ba9e82d82973de5",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Artikel 1: rubrikken 'Google fryser open source-bug bounty til 2027', punktet 'Programmet forventes genåbnet i første kvartal 2027' og betydningen 'holdes lukket til 2027' fastslår en varme og en genåbning, TechCrunch ikke dokumenterer. Kilden siger kun, at Google lover 'an update' i første kvartal 2027 – artiklens eget afsnit skriver det korrekt, så udgaven er internt modstridende.",
+    "Artikel 1, sektion 'Flertallet af indberetninger er ugyldige': generaliserer Googles citat, der handler om automatiserede indberetninger ('a significant rise in automated submissions, the vast majority of which are not valid'). Resumeet har samme udvidelse ('overvejende ugyldige AI-indberetninger fylder køen').",
+    "Artikel 3 opfylder ikke skriveopgavens faktaboks med deltagende bots og placeringer – noegletal er tom, og botlisten/placeringerne står ikke i nogen faktaboks."
+  ],
   "modelkald": 7,
-  "kildehentninger": 6,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -38,7 +43,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -50,7 +59,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -58,16 +71,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": "Artikel 562acc36900e8903: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -76,33 +85,21 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-    "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+    "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+    "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
     "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
   ],
   "afventer_artikler": 53
