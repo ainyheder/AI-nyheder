@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-05T17:20:56.106326+00:00",
+  "opdateret": "2026-10-06T01:24:34.977372+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
-    "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
-    "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/"
+    "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+    "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/"
   ],
-  "input_fingerprint": "90b95120d242fe1c",
+  "input_fingerprint": "bb73ee75478f64f7",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
-  "kildehentninger": 8,
+  "modelkald": 7,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -62,12 +62,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel a3e25dbd2a96b0bf: skriveopgave har 912 tegn; skriv 12-900 tegn i dette felt"
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel d16241c2084e0d1d: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -76,27 +76,19 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/eu-text-provenance",
       "grundlag": "rss_resume"
     },
     {
-      "link": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+      "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "link": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/",
       "grundlag": "kildetekst"
     },
     {
@@ -104,14 +96,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/eu-text-provenance",
-      "grundlag": "rss_resume"
+      "link": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
-    "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-    "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/"
+    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+    "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+    "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions"
   ],
-  "afventer_artikler": 67
+  "afventer_artikler": 57
 }
