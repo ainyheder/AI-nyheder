@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-06T01:24:34.977372+00:00",
- "artikler_i_alt": 97,
+ "opdateret": "2026-10-06T11:28:03.701227+00:00",
+ "artikler_i_alt": 103,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -188,16 +188,34 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 0,
+   "som_ekstra": 3,
    "seneste": [
     {
-     "rubrik": "Gemini 4 Argon finder sårbarhed andre modeller missede",
-     "dato": "2026-09-30T20:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-     "side": "artikel/445ecd27631acaed.html",
-     "hvor": "forside",
-     "under": ""
+     "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
+    },
+    {
+     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 TTS styres replik for replik"
+    },
+    {
+     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+     "dato": "",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -205,6 +223,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
      "side": "artikel/f6b1aa53f7c239e8.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon finder sårbarhed andre modeller missede",
+     "dato": "2026-09-30T20:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+     "side": "artikel/445ecd27631acaed.html",
      "hvor": "forside",
      "under": ""
     },
@@ -238,12 +265,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "Google DeepMind",
+     4
     ],
     [
-     "Google DeepMind",
-     1
+     "The Verge AI",
+     2
     ],
     [
      "Ars Technica AI",
@@ -322,7 +349,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 3,
+   "i_listen": 2,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -340,15 +367,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://huggingface.co/blog/evaleval-aisi",
      "side": "artikel/137c5833ddb8f26b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hugging Face ansætter oMLX-skaber Jun Kim",
-     "dato": "2026-09-22T00:00:00",
-     "foerst_set": "2026-09-22T13:37:55",
-     "link": "https://huggingface.co/blog/omlx",
-     "side": "artikel/c5f86512fa7d6230.html",
      "hvor": "forside",
      "under": ""
     }
@@ -458,7 +476,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 26,
+   "i_listen": 28,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -543,11 +561,29 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "HackerRank sender AI-intervieweren Chakra til alle kunder",
+     "dato": "2026-10-05T16:43:35",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/",
+     "side": "artikel/9b91fcda04f797f9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "AI-agenter spørger Alibabas Amap om ruter",
      "dato": "2026-10-05T14:35:09",
      "foerst_set": "2026-10-05T17:20:56",
      "link": "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/",
      "side": "artikel/b70963ac4f5c2e75.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Safeworld rejser 12 mio. dollar til robotsikkerhed",
+     "dato": "2026-10-05T12:00:00",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://techcrunch.com/2026/10/05/can-safeworld-convince-people-that-gen-ai-robots-wont-hurt-them/",
+     "side": "artikel/a733d4518e7a0141.html",
      "hvor": "forside",
      "under": ""
     },
@@ -577,30 +613,12 @@ window.KILDER_STATUS = {
      "side": "artikel/072378cdfd56a51b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Instinct, Folk og Caddy bor nu i sms'en",
-     "dato": "2026-10-03T14:00:00",
-     "foerst_set": "2026-10-03T19:22:05",
-     "link": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
-     "side": "artikel/6ae30ec75fda881d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sean Parker bygger Stability AI om til musik",
-     "dato": "2026-10-02T21:09:14",
-     "foerst_set": "2026-10-03T05:39:48",
-     "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-     "side": "artikel/f8f9945809c1e062.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "Ars Technica AI",
@@ -622,9 +640,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 19,
-   "som_ekstra": 9,
+   "i_listen": 21,
+   "som_ekstra": 11,
    "seneste": [
+    {
+     "rubrik": "OpenAI indfører tekstvandmærke i ChatGPT og Codex",
+     "dato": "",
+     "foerst_set": "2026-10-06T01:24:34",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI vandmærker ChatGPT-tekst i EU"
+    },
     {
      "rubrik": "OpenAI tester billedreklamer i ChatGPT",
      "dato": "",
@@ -662,15 +689,6 @@ window.KILDER_STATUS = {
      "under": "Apple strammer Full Disk Access til AI-agenter"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
-    {
      "rubrik": "Google lancerer Guided Vision i Gemini Live",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -680,6 +698,15 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
+     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
      "rubrik": "Amazon advarer mod datacenter-stoppus i ny blog",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -687,6 +714,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Amazon dropper hemmeligholdelse om datacentre"
+    },
+    {
+     "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24",
+     "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
     },
     {
      "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
@@ -707,11 +743,29 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Alexa Plus synger “lalala” i flere minutter",
+     "dato": "2026-10-06T06:53:11",
+     "foerst_set": "2026-10-06T11:28:03",
+     "link": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+     "side": "artikel/d7617a592abc80bc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nolla Health lader AI scanne ansigter og ordinere",
      "dato": "2026-10-05T16:14:57",
      "foerst_set": "2026-10-06T01:24:34",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
      "side": "artikel/5b8c439bb6210497.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Wikimedia: OpenAI-agenter bag millioner af kald",
+     "dato": "2026-10-05T15:05:19",
+     "foerst_set": "2026-10-06T01:24:34",
+     "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+     "side": "artikel/aea90afb465bda47.html",
      "hvor": "forside",
      "under": ""
     },
@@ -795,30 +849,12 @@ window.KILDER_STATUS = {
      "side": "artikel/f8fc0aa18dcc03fd.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Kakul Srivastava advarer: AI-tekst giver dårligere samtaler",
-     "dato": "2026-10-03T15:00:00",
-     "foerst_set": "2026-10-03T19:22:05",
-     "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
-     "side": "artikel/177ca5e89d7b6072.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI Dot ordner både hjemmeside og video",
-     "dato": "2026-10-02T18:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
-     "side": "artikel/edef5e5d6249ea7f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     5
+     6
     ],
     [
      "Google Gemini",
@@ -831,6 +867,10 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
+    ],
+    [
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -1008,7 +1048,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1019,6 +1059,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
+    {
+     "rubrik": "Everest Group: AI skal selv tage forretningsbeslutninger",
+     "dato": "2026-10-05T13:29:32",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+     "side": "artikel/10d6f4f6fd7bc57f.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "MIT Technology Review: Kun 34 procent i produktion",
@@ -1104,10 +1153,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 0,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 2,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1118,11 +1167,42 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
+     "dato": "",
+     "foerst_set": "2026-09-24T20:05:24.209273+00:00",
+     "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 Live tænker, mens den taler"
+    },
+    {
+     "rubrik": "Gemini 3.8 TTS styres replik for replik",
+     "dato": "2026-09-23T15:25:14",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "side": "artikel/31ef9b5263a38be6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+     "dato": "2026-09-15T17:05:57",
+     "foerst_set": "2026-09-15T18:27:03",
+     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+     "side": "artikel/392b6ec46b4e96bc.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
+     4
+    ],
+    [
+     "The Verge AI",
      1
     ]
    ]
