@@ -1,40 +1,28 @@
 {
-  "opdateret": "2026-10-06T18:34:36.521432+00:00",
+  "opdateret": "2026-10-07T00:01:34.898825+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-    "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
-    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+    "https://simonwillison.net/2026/Oct/6/le-chonk/"
   ],
-  "input_fingerprint": "c510b429a7a39b0b",
+  "input_fingerprint": "b6b48ffc27857f52",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
-  "kildehentninger": 5,
+  "modelkald": 6,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -59,7 +47,7 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 183fcacc2014829e: skriveopgave har 922 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Artikel 183fcacc2014829e: skriveopgave har 1021 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -72,7 +60,19 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
       "grundlag": "kildetekst"
     },
     {
@@ -80,7 +80,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
+      "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
       "grundlag": "kildetekst"
     },
     {
@@ -88,14 +88,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-    "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
-    "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions"
+    "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+    "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only"
   ],
-  "afventer_artikler": 58
+  "afventer_artikler": 54
 }
