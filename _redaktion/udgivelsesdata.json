@@ -1,72 +1,6 @@
 {
-  "opdateret": "2026-10-07T06:22:34.414630+00:00",
+  "opdateret": "2026-10-07T15:44:28.800933+00:00",
   "kladder": [
-    {
-      "titel": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
-      "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-      "resume": "French AI lab Mistral AI has released Mistral Large 4, a new large multimodal model aiming to leapfrog both American and Chinese rivals.",
-      "dato": "2026-10-06T14:33:16+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-06T18:34:36.521432+00:00",
-      "eget_foerst_set": "2026-10-06T18:34:36.521432+00:00",
-      "rubrik": "Mistral lancerer 1T-parameter model Mistral Large 4",
-      "resume_da": "Den franske AI-labs multimodale model vil overhale både amerikanske og kinesiske konkurrenter.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 4,
-        "betydning": 4,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Mistral AI udgiver Mistral Large 4, en ny stor multimodal model målrettet at overhale konkurrenter.",
-        "forbehold": "Ingen specifikationer, benchmarks eller tilgængighed dokumenteres i uddraget.",
-        "emne": "mistral ai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "EmbeddingGemma 2",
-      "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-      "resume": "My comment on EmbeddingGemma 2 — Hacker News. I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding models involve calculating thousands or even millions of embedding vectors and storing them for later comparison. If your model is…",
-      "dato": "2026-10-06T20:37:53+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "rubrik": "Simon Willison roser EmbeddingGemma 2 for Apache 2.0-licens",
-      "resume_da": "Han mener, lukkede, hostede embedding-modeller giver lidt mening, fordi applikationer beregner tusinder eller millioner af vektorer, der skal lagres.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "EmbeddingGemma 2 udgives under Apache 2.0, hvilket gør selvhostede embeddings tilgængelige",
-        "forbehold": "Kommentar om licens; konkrete målinger og specifikationer omtales ikke",
-        "emne": "google / embeddinggemma"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
     {
       "titel": "OpenAI drops another batch of mathematical breakthroughs",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
@@ -78,6 +12,7 @@
       "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "rubrik": "OpenAI offentliggør 722 manuskripter med matematikløsninger",
       "resume_da": "Løsninger til gamle, åbne problemer kommer fra en ikke-udgivet frontier-model og dækker 372 resultatfamilier.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -94,8 +29,70 @@
         "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Mistral says \"Le Chonk\" can challenge the best AI models",
+      "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+      "resume": "Mistral says Le Chonk can rival top closed models while remaining open-weight.",
+      "dato": "2026-10-07T14:12:37+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Mistral hævder Le Chonk matcher topmodeller",
+      "resume_da": "Mistral kalder den open-weight model en konkurrent til lukkede topmodeller, men fremviser ingen målinger i materialet.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Google’s new SynthID website can identify AI-generated media",
+      "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+      "resume": "Google on Tuesday launched a new site that lets anyone verify whether a piece of media, be it an image, a video, or an audio clip, is generated using AI.",
+      "dato": "2026-10-07T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google lancerer SynthID-tjek for AI-medier",
+      "resume_da": "Hjemmesiden lader alle verificere, om et billede, en video eller en lydfil er skabt med AI.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "EmbeddingGemma 2",
+      "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
+      "resume": "My comment on EmbeddingGemma 2 — Hacker News. I really appreciate that EmbeddingGemma 2 is under the Apache 2.0 license. For embedding models in particular, I don't think it makes sense to use a closed, proprietary, hosted-only model. Most applications of embedding models involve calculating thousands or even millions of embedding vectors and storing them for later comparison. If your model is…",
+      "dato": "2026-10-06T20:37:53+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "rubrik": "Simon Willison roser EmbeddingGemma 2 for Apache 2.0-licens",
+      "resume_da": "Han mener, lukkede, hostede embedding-modeller giver lidt mening, fordi applikationer beregner tusinder eller millioner af vektorer, der skal lagres.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "EmbeddingGemma 2 udgives under Apache 2.0, hvilket gør selvhostede embeddings tilgængelige",
+        "forbehold": "Kommentar om licens; konkrete målinger og specifikationer omtales ikke",
+        "emne": "google / embeddinggemma"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -134,16 +131,67 @@
       ]
     },
     {
-      "titel": "How AI decision models could change content moderation",
-      "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
-      "resume": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released with open weights.",
-      "dato": "2026-10-06T20:35:20+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "titel": "Sharing AI progress in mathematics",
+      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "resume": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "dato": "2026-10-06T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Forskning",
       "foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "rubrik": "Musubi udgiver åbne vægte til moderationsmodellen PolicyLM-1.7B",
-      "resume_da": "Den letvægtsmodel er designet til indholdsmoderation i realtid.",
+      "rubrik": "OpenAI deler matematiske resultater og Lean-beviser på GitHub",
+      "resume_da": "De nye resultater på åbne problemer stammer fra en intern frontier-model, og forskningsdetaljerne er offentliggjort sammen med bevisformaliseringer.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI deler resultater på åbne matematiske problemer fra intern frontier-model med Lean-beviser på GitHub.",
+        "forbehold": "Modelnavn ikke angivet; resultater er producentens egne endnu.",
+        "emne": "openai mathematics ai progress"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 8,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Our approach to EU text provenance rules",
+      "link": "https://openai.com/index/eu-text-provenance",
+      "resume": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+      "dato": "2026-10-05T15:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-05T17:20:56.106326+00:00",
+      "eget_foerst_set": "2026-10-05T17:20:56.106326+00:00",
+      "rubrik": "OpenAI forklarer vandmærkning af tekst under EU-regler",
+      "resume_da": "Adgang til at opdage vandmærker starter først hos forskere.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "politik",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI beskriver vandmærkning af tekst efter EU-regler og adgang for forskere",
+        "forbehold": "Producentens egen redegørelse; uafhængig effekt ikke belyst",
+        "emne": "openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -182,34 +230,34 @@
       ]
     },
     {
-      "titel": "Our approach to EU text provenance rules",
-      "link": "https://openai.com/index/eu-text-provenance",
-      "resume": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-      "dato": "2026-10-05T15:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Politik & jura",
-      "foerst_set": "2026-10-05T17:20:56.106326+00:00",
-      "eget_foerst_set": "2026-10-05T17:20:56.106326+00:00",
-      "rubrik": "OpenAI forklarer vandmærkning af tekst under EU-regler",
-      "resume_da": "Adgang til at opdage vandmærker starter først hos forskere.",
-      "kat_ai": true,
+      "titel": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media",
+      "resume": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI's ChatGPT for Teens is an \"unacceptable risk.\" ChatGPT for Teens, introduced in August, has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen […]",
+      "dato": "2026-10-07T05:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Common Sense Media kalder ChatGPT for Teens uacceptabel",
+      "resume_da": "Den ungevenlige vurdering rettes mod OpenAI's chatbot fra august, som er designet til at hjælpe elever med læring, men ifølge organisationen udgør en risiko.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
         "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
+        "brugbarhed": 1,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "politik",
+        "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI beskriver vandmærkning af tekst efter EU-regler og adgang for forskere",
-        "forbehold": "Producentens egen redegørelse; uafhængig effekt ikke belyst",
-        "emne": "openai"
+        "begrundelse": "Common Sense Media kalder ChatGPT for Teens en 'uacceptabel risiko' efter augustlanceringen.",
+        "forbehold": "Vurdering er et positionspapir fra en interesseorganisation, ikke en uafhængig test.",
+        "emne": "common sense media openai chatgpt teens"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -258,6 +306,7 @@
       "eget_foerst_set": "2026-10-07T06:22:34.414630+00:00",
       "rubrik": "OpenAI-agenter prøvede at hacke Wikipedia-værktøjer",
       "resume_da": "Et hold rapporter dokumenterer, at OpenAI-agenter forsøgte at hacke Wikipedias værktøjer og oversvømmede sitet med trafik.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -274,39 +323,83 @@
         "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "How Jump Trading is scaling quant research with ChatGPT",
-      "link": "https://openai.com/index/jump-trading",
-      "resume": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-      "dato": "2026-10-06T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Labs",
-      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "rubrik": "Jump Trading bruger ChatGPT til kvantitativ forskning",
-      "resume_da": "Firmaet kombinerer ifølge OpenAI længerevarende AI-arbejdsgange med flere datakilder og menneskelig gennemgang.",
+      "titel": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
+      "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
+      "resume": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into Biohub, the nonprofit biomedical research organization founded by Mark Zuckerberg and his wife, Priscilla Chan, as reported by Reuters. The funding is part of a $1.8 billion initiative to build AI datasets that could allow researchers to \"ask, predict, […]",
+      "dato": "2026-10-07T10:40:52-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google DeepMind investerer 300 millioner i Biohub",
+      "resume_da": "Pengene indgår i et initiativ på 1,8 milliarder dollars til AI-datasæt, der skal lade forskere modellere biologiske processer.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
     {
-      "titel": "Sharing AI progress in mathematics",
-      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "resume": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-      "dato": "2026-10-06T12:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Labs",
-      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "rubrik": "OpenAI deler matematiske resultater og Lean-beviser på GitHub",
-      "resume_da": "De nye resultater på åbne problemer stammer fra en intern frontier-model, og forskningsdetaljerne er offentliggjort sammen med bevisformaliseringer.",
+      "titel": "OpenAI’s Alexander Embiricos is coming to TechCrunch Disrupt 2026 — days after the launch of Dots",
+      "link": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots/",
+      "resume": "OpenAI’s Alexander Embiricos is coming to the AI Stage at TechCrunch Disrupt 2026, just days after the launch of Dots. Join this conversation by registering for your pass. Get you pass now to save up to $100 and get a second at 50% off.",
+      "dato": "2026-10-07T14:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Alexander Embiricos optræder på TechCrunch Disrupt",
+      "resume_da": "OpenAI-staffeden taler på AI-scenen dage efter lanceringen af Dots; billetter kan stadig købes med rabat.",
       "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Get hands-on: The full lineup of interactive roundtables at TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/10/07/get-hands-on-the-full-lineup-of-interactive-roundtables-at-techcrunch-disrupt-2026/",
+      "resume": "From Nvidia and Chime to Obvious Ventures and Anthropic, explore the entire roundtable agenda at TechCrunch Disrupt 2026. Register now to save up to $100 on your pass and get a second pass at 50% off.",
+      "dato": "2026-10-07T14:15:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "TechCrunch Disrupt samler AI-roundtables",
+      "resume_da": "Blandt deltagerne er Nvidia, Chime, Obvious Ventures og Anthropic; arrangementet afholdes i San Francisco.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Google rolls out improved SynthID AI content detector, now available globally",
+      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+      "resume": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
+      "dato": "2026-10-07T14:00:08+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google udgiver forbedret SynthID-detektor globalt",
+      "resume_da": "Detektoren kan nu identificere AI-indhold fra både Google, OpenAI og flere andre kilder.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "resume": "",
+      "dato": "2026-10-07T12:45:31+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Labs",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "afventer": [
+        "Mangler dansk overskrift",
+        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -338,6 +431,39 @@
         "emne": "openai ironclad"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "AI could upend food delivery",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
+      "resume": "DoorDash, the leading food delivery app, processed 970 million orders in its second quarter this year and generated $4.5 billion in revenue. A 10-person startup called Bites is a blip in comparison: It has just around 300 restaurants signed up in the Bay Area, where it's operating as a pre-seed startup. But this summer, Bites […]",
+      "dato": "2026-10-07T08:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Bites vil erstatte apps med AI i madbestilling",
+      "resume_da": "Den pre-seed-startup i Bay Area har omkring 300 tilmeldte restauranter, mens DoorDash behandlede 970 millioner ordrer i andet kvartal.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-agenter kan potentielt ændre madlevering, men Bites er kun pre-seed med 300 restauranter mod DoorDash' skala.",
+        "forbehold": "Kildeudrag giver ikke konkret dokumentation for agentens evner eller udbredelse.",
+        "emne": "bites agentic food delivery"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -377,6 +503,39 @@
       ]
     },
     {
+      "titel": "How Jump Trading is scaling quant research with ChatGPT",
+      "link": "https://openai.com/index/jump-trading",
+      "resume": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+      "dato": "2026-10-06T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "rubrik": "Jump Trading bruger ChatGPT til kvantitativ forskning",
+      "resume_da": "Firmaet kombinerer ifølge OpenAI længerevarende AI-arbejdsgange med flere datakilder og menneskelig gennemgang.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 1,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Kundecase: Jump Trading bruger ChatGPT til kvantitativ forskning ifølge OpenAI.",
+        "forbehold": "Producent-eget kundecase uden uafhængige resultater eller tal.",
+        "emne": "jump trading openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "A model guide for the GPT-6 family",
       "link": "https://openai.com/index/practical-guide-building-gpt-6",
       "resume": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
@@ -405,21 +564,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "The latest AI news we announced in September 2026",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "resume": "Here are Google’s latest AI updates from September 2026",
-      "dato": "2026-10-02T15:00:00+00:00",
-      "kilde": "Google Gemini",
-      "kategori": "Labs",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "OpenAI tilføjer overvågning efter Medicare-hændelsen",
-      "resume_da": "Efter en hændelse, hvor modeller fik internetadgang, indførte OpenAI ifølge Victoria Kim overvågning, så medarbejdere kan afbryde træningen med det samme.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -684,39 +828,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "link": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "resume": "",
-      "dato": "2026-09-29T15:30:38+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "NVIDIA Kumo Tabular forbedrer præcision på tabulære data",
-      "resume_da": "Modeln bringer ifølge udgiveren tabulær forudsigelse tættere på et nyt præcisions-effektivitetsniveau for strukturerede data.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "NVIDIA annoncerer Kumo Tabular for tabulær forudsigelse på strukturerede data",
-        "forbehold": "Kun udgivers egen præcisions-effektivitetspåstand foreligger, ingen tests",
-        "emne": "nvidia"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1179,6 +1290,21 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Advancing Private AI Compute with secure, server-side memory",
+      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+      "dato": "2026-09-23T16:00:57+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Labs",
+      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "rubrik": "Google udvider Private AI Compute med hukommelse",
+      "resume_da": "Private AI Compute får nu serverbaseret hukommelse, som gemmer personlige data på Googles side i stedet på brugerens enhed.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -25560,7 +25686,7 @@
       "titel": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user’s suicide",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
       "resume": "An OpenAI publicist tried to change the topic of CEO Sam Altman's interview with Vanity Fair's Mark Guiducci after the editor brought up a ChatGPT user's suicide. When Guiducci confronted Altman about the incident, the publicist warned Guiducci about running out of time, saying she'd like to \"move on\" to another topic. The interruption came […]",
-      "dato": "2026-10-05T12:55:42-04:00",
+      "dato": "2026-10-05T16:55:42+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-05T17:20:56.106326+00:00",
@@ -26308,7 +26434,7 @@
       "titel": "All the drama around AI’s takeover of mathematics",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
       "resume": "This past year, OpenAI, Anthropic, and other labs have announced breakthroughs on numerous long-standing mathematical problems, in some cases pushing well beyond what researchers expected current systems to be capable of — including resolving one of the famous Millennium Prize problems. But in classic Silicon Valley style, AI labs are moving fast and breaking things, […]",
-      "dato": "2026-10-05T15:28:59-04:00",
+      "dato": "2026-10-05T19:28:59+00:00",
       "kilde": "The Verge AI",
       "kategori": "Forskning",
       "foerst_set": "2026-10-06T01:24:34.977372+00:00",
@@ -27238,7 +27364,7 @@
       "titel": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
       "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
       "resume": "Following many recent disclosures about AI agents accessing third-party websites and services, the Wikimedia Foundation, which hosts Wikipedia, says that it \"can confirm that we have discovered some activity\" by \"rogue\" OpenAI agents on Wikimedia platforms. The activity includes edits to Wikimedia wikis, \"unsuccessful attempts\" to \"exploit\" the Etherpad note-taking tool that the Wikimedia…",
-      "dato": "2026-10-05T15:05:19-04:00",
+      "dato": "2026-10-05T19:05:19+00:00",
       "kilde": "The Verge AI",
       "kategori": "Samfund & etik",
       "foerst_set": "2026-10-06T01:24:34.977372+00:00",
@@ -28456,11 +28582,7 @@
       ],
       "billedmotiv": "A thick solid code-block slab marked with a bold flame-crossed diagonal strike sits discarded at the lower left, while a rising solid bar-chart block stamped with a stack of coin discs and a money-bag shape rises at the right, showing Melius burning its old codebase and raising 25 million dollars.",
       "billedmotiv_instruks": "0952ec30fe964a388fe9",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-07T00:11:34.334376+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28477,7 +28599,11 @@
         "emne": "melius"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T00:11:34.334376+00:00"
+      },
       "prio": 4,
       "side": "artikel/3bd217aa84bd6b84.html"
     },
@@ -28604,11 +28730,7 @@
       ],
       "billedmotiv": "A solid gold-bar stack labeled with a dollar figure sits beneath a rising growth-arrow block, with a smaller solid shipping-contract document block marked with the Anthropic many-rayed terracotta starburst tucked beside it, showing 35 billion of Lambda's order book coming from one Anthropic deal.",
       "billedmotiv_instruks": "51840540794f687ed2d1",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-07T00:18:06.165298+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28625,17 +28747,21 @@
         "emne": "lambda"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T00:18:06.165298+00:00"
+      },
       "prio": 5,
       "side": "artikel/c6c0f9e409efb4ee.html"
     },
     {
       "titel": "Expanding the Cyber Verification Program",
       "link": "https://www.anthropic.com/news/cyber-verification-program",
-      "resume": "",
+      "resume": "We’re launching a new, expanded version of our Cyber Verification Program, which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
       "dato": "2026-10-06T00:00:00+00:00",
       "kilde": "Anthropic News",
-      "kategori": "Labs",
+      "kategori": "Lanceringer",
       "foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "rubrik": "Anthropic samler to cyberprogrammer i tre niveauer",
@@ -28709,6 +28835,24 @@
         "status": "godkendt",
         "kontrolleret": "2026-10-07T00:18:53.380101+00:00"
       },
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic udvider Cyber Verification Program med adgang til Claude Opus 5.5 med reduceret blokering.",
+        "forbehold": "Ikke en ny model, men udvidet adgang til eksisterende Claude Opus 5.5.",
+        "emne": "anthropic cyber verification program"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/522cf6129a288bba.html"
     },
     {
@@ -28781,11 +28925,12 @@
       "resume": "I was a graph theory junkie long ago and even moved to Budapest for awhile to study among the greats. While I was there I started working on Barnette's Conjecture which came to occupy my thoughts over the next 24 years of my life, on and off as I worked in many different fields. Last summer I even thought for a few days that I had actually solved it. But it's supposedly proven here - problem 180…",
       "dato": "2026-10-07T04:47:55+00:00",
       "kilde": "Simon Willison AI",
-      "kategori": "Dybde",
+      "kategori": "Forskning",
       "foerst_set": "2026-10-07T06:22:34.414630+00:00",
       "eget_foerst_set": "2026-10-07T06:22:34.414630+00:00",
       "rubrik": "Jake Boggan: Mit livs problem er måske løst",
       "resume_da": "Jake Boggan fulgte et åbent grafteoriproblem i 24 år; nu citeres han for sin reaktion på et muligt bevis.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Problem 180 præsenterer muligt bevis",
@@ -28800,8 +28945,6 @@
           "tekst": "Nu tyder noget altså på, at andre er kommet ham i forkøbet. Boggan skriver, at det at høre, at problemet er løst, gør ham trist på afstand, og at han ikke ved, hvad han skal mene.\n\nHan formoder, at mange andre, som har fulgt formodningen, den aften mærker mærkelige følelser — og han er selv usikker på, om beviset holder."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "24 år",
@@ -28812,6 +28955,7 @@
           "label": "Boggans eget angivne samlede tidsforbrug på problemet"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Boggan flyttede til Budapest for en tid for at studere blandt de førende.",
         "Han arbejdede med problemet samtidig med skift mellem mange andre felter.",
@@ -28824,14 +28968,658 @@
         "Beviset omtales som problem 180",
         "Boggan er selv i tvivl om beviset"
       ],
+      "billedmotiv": "A geometric graph of solid nodes connected by straight edges, one node highlighted to mark a resolved proof, resting beside a folded page symbolising 24 years of work on Barnette's conjecture.",
+      "billedmotiv_instruks": "735d849a97ff517cb685",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-07T06:36:17.488977+00:00"
       },
-      "billedmotiv": "A geometric graph of solid nodes connected by straight edges, one node highlighted to mark a resolved proof, resting beside a folded page symbolising 24 years of work on Barnette's conjecture.",
-      "billedmotiv_instruks": "735d849a97ff517cb685",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": false,
+        "model_lancering": false,
+        "begrundelse": "Muligt bevis på Barnette's konjektur citeres, men AI er kun perifer i historien.",
+        "forbehold": "Beviset omtales som 'supposedly proven' - ikke endeligt verificeret.",
+        "emne": "barnette conjecture graph theory"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 1,
       "side": "artikel/17929c3f9f5ee1dd.html"
+    },
+    {
+      "titel": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+      "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "resume": "French AI lab Mistral AI has released Mistral Large 4, a new large multimodal model aiming to leapfrog both American and Chinese rivals.",
+      "dato": "2026-10-06T14:33:16+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-06T18:34:36.521432+00:00",
+      "eget_foerst_set": "2026-10-06T18:34:36.521432+00:00",
+      "rubrik": "Mistral lancerer 1.000-milliarders model Le Chonk",
+      "resume_da": "Trænet på 4.000 Nvidia GPU'er og gøres open-source om tre uger efter sikkerhedstest.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Mistral AI udgiver Mistral Large 4, en ny stor multimodal model målrettet at overhale konkurrenter.",
+        "forbehold": "Ingen specifikationer, benchmarks eller tilgængighed dokumenteres i uddraget.",
+        "emne": "mistral ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Le Chonk kan testes nu",
+          "tekst": "Mistral AI udgav tirsdag Mistral Large 4 (ML4), en stor multimodal model med 1.000 milliarder parametre – kaldet Le Chonk. Modellen er endnu ikke open-weight, men kan testes via en offentlig endpoint med indbygget sikkerhedsfilter.\n\nMistral planlægger at frigive de fulde vægte om tre uger, når sikkerhedstesten er færdig."
+        },
+        {
+          "overskrift": "Trænet på kun 4.000 GPU'er",
+          "tekst": "ML4 blev trænet udelukkende på Mistrals egen compute med 4.000 Nvidia GPU'er. Det er \"to til tre gange færre end vores kinesiske konkurrenter og markant færre end de lukkede konkurrenter\", siger Pierre Stock, Mistrals VP Science.\n\nBenchmark-resultater er endnu ikke offentliggjort. Mistral håber, at modellen bliver bedst i klassen blandt open-weight-modeller – især uden for Kina. I specifikke områder kunne den også overgå lukkede modeller, siger Stock."
+        },
+        {
+          "overskrift": "Vægte åbnes efter sikkerhedstest",
+          "tekst": "Mistral arbejder sammen med betroede partnere og regeringer for at sikre, at open-source-vægtene kan bruges til forsvar, men ikke til ondsindede angreb, siger Stock. Et open-weight-model er nemmere at revidere, påpeger han.\n\nI de seneste måneder er sikkerhedshensyn taget til – især blandt Mistrals kernekunder: virksomheder og institutioner."
+        },
+        {
+          "overskrift": "Chipdesign er nøgleområde for ML4",
+          "tekst": "Stock peger på cybersecurity, finans og chipdesign som centrale anvendelsesområder. Chipdesign er især relevant for to af Mistrals største investorer: hollandske ASML, der ledte Series C, og Samsung, der ledte Series D sidste måned ved en værdiansættelse på €21 milliarder (ca. $24,39 milliarder)."
+        },
+        {
+          "overskrift": "Europas tredje vej i AI",
+          "tekst": "Med Le Chonk positionerer Mistral sig som et alternativ til både lukkede modeller, der kan lukkes ned, og open-weight-modeller, der ofte kommer fra Kina. Præsident Emmanuel Macron har beskrevet tilgangen som \"en tredje vej i AI\".\n\nMed modellen mener Mistral, at virksomheden fortsat bør betragtes som et frontier lab – ikke blot en udbyder af inference-tjenester."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1.000 milliarder",
+          "label": "Parametre i Mistral Large 4 (Le Chonk)"
+        },
+        {
+          "tal": "4.000",
+          "label": "Nvidia GPU'er brugt til træning"
+        },
+        {
+          "tal": "€21 milliarder",
+          "label": "Mistrals værdiansættelse ved Series D (ca. $24,39 milliarder)"
+        },
+        {
+          "tal": "3 uger",
+          "label": "Tid før open-source-vægte frigives efter sikkerhedstest"
+        }
+      ],
+      "detaljer": [
+        "Mistral har tidligere hostet kinesiske modeller på sin platform.",
+        "Samsung ledte Mistrals Series D-finansiering sidste måned.",
+        "ML4 er tilgængelig via et offentligt guardrail endpoint.",
+        "Benchmark-resultater for ML4 er endnu ikke offentliggjort."
+      ],
+      "betydning": "Frigivelsen af vægtene om tre uger kan give europæiske institutioner et open-weight-alternativ til kinesiske modeller.",
+      "pointer": [
+        "Le Chonk er endnu ikke open-weight.",
+        "Trænet med 4.000 Nvidia GPU'er.",
+        "Chipdesign er kerneområde for ASML og Samsung."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T15:54:08.735302+00:00"
+      },
+      "billedmotiv": "A large solid model weight file block stamped with the Mistral AI bull-head mark, showing the interlocked weight layers of Le Chonk, with a lock icon rotating into an open position to show weights being released in three weeks after safety testing.",
+      "billedmotiv_instruks": "498a30cbc96c1c58d315",
+      "billede": "data/img/9b49e54396717e62.jpg",
+      "side": "artikel/8653701588de7d2f.html"
+    },
+    {
+      "titel": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "resume": "",
+      "dato": "2026-10-06T19:57:04+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+      "resume_da": "Google DeepMind-udgaven oversætter også billeder, lyd og kode til samme talrum og er bygget til at køre lokalt på enheden.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind udgiver EmbeddingGemma 2, en åben letvægtsmodel til multimodale embeddinger.",
+        "forbehold": "Kildeudraget har ingen tekst - specifikationer og adgang ikke dokumenteret her.",
+        "emne": "google deepmind embeddinggemma 2"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Fire medier bliver til én søgbar liste",
+          "tekst": "EmbeddingGemma 2 fra Google DeepMind omsætter tekst, billeder, lyd og video til samme slags tal. Et **embedding** er netop det: en talrække, hvor indhold med samme betydning lander tæt på hinanden.\n\nDerfor kan en forespørgsel på tekst trække det rigtige videoklip frem eller søge gennem timers lydoptagelser – i én model.\n\nDen afløser EmbeddingGemma fra sidste år, der kun lavede tekst-embeddings, men alligevel blev hentet mere end 20 millioner gange af udviklere."
+        },
+        {
+          "overskrift": "Kodeydeevnen springer 9,92 point frem",
+          "tekst": "EmbeddingGemma 2 holder den flersprogede tekstkvalitet fra sin forgænger og løfter samtidig kodeydeevnen markant. På målingen MTEB Code går den fra 68,76 til 78,68 point.\n\nSpringet på 9,92 point gør modellen relevant for udviklere, der vil indeksere et kodearkiv lokalt og hente de rette stykker kode, når et program eller en agent skal finde rundt.\n\nPå billeder, video, dokumenter og lyd sætter modellen ifølge Google DeepMind ny standard for kvalitet per parameter blandt modeller under en milliard parametre."
+        },
+        {
+          "overskrift": "740 millioner parametre skal køre lokalt",
+          "tekst": "**740 millioner parametre** og bygget på Gemma 4-arkitekturen: en størrelse tænkt til at køre på forbrugerhardware frem for i en fjern server.\n\nNår beregningen sker på selve enheden, forbliver dataene der. Samtidig falder forsinkelsen i en søgeproces, og funktionen kan bruges uden netforbindelse.\n\nModellen udgives under Apache 2.0-licensen, der tillader kommerciel brug, og bygger på samme teknologi som Googles Gemini Embedding-modeller."
+        },
+        {
+          "overskrift": "Gemma 4 deler tokenizer med EmbeddingGemma 2",
+          "tekst": "EmbeddingGemma 2 og den generative Gemma 4 deler teksttokenizeren, der bryder ord op til tal modellen kan læse, og desuden lydkoderen. Dermed fylder de to tilsammen mindre i hukommelsen, når begge kører.\n\nKombinationen bruges til retrieval augmented generation, forkortet RAG: EmbeddingGemma 2 henter filer lokalt, mens Gemma 4 udfylder svaret med sammenhæng. Hele kæden kan køre på enheden."
+        },
+        {
+          "overskrift": "Google AI Edge viser EmbeddingGemma 2 i brug",
+          "tekst": "Google DeepMind peger på steder, modellen allerede kan prøves: Instant Media Search i Google AI Edge Gallery søger i et mediebibliotek med tekst eller billede, og Video Moments Finder finder øjeblikke i video ud fra tekst eller lyd.\n\nI appen Google AI Edge Foresight henter EmbeddingGemma 2 lokale filer, mens Gemma 4 ræsonnerer over dem. Realtidsbeslutninger som klassificering, ruter og forudsigelser oprettes via MediaPipe Decision Task API."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "9,92 point",
+          "label": "Forbedring på MTEB Code, fra 68,76 til 78,68 point"
+        },
+        {
+          "tal": "740 millioner parametre",
+          "label": "EmbeddingGemma 2, en model under en milliard parametre"
+        },
+        {
+          "tal": "20 millioner downloads",
+          "label": "EmbeddingGemma, tekstmodellen fra sidste år"
+        },
+        {
+          "tal": "mere end 2 gange",
+          "label": "Størrelsen på specialmodeller, EmbeddingGemma 2 overgår ifølge Google DeepMind"
+        }
+      ],
+      "detaljer": [
+        "Apache 2.0-licensen tillader kommerciel brug.",
+        "EmbeddingGemma 2 deler teksttokenizer og lydkoder med Gemma 4.",
+        "Realtidsbeslutninger som klassificering, ruter og forudsigelser oprettes via MediaPipe Decision Task API.",
+        "Vejledninger til on-device søgning og RAG ligger i LiteRT og Google AI Edge-bloggen.",
+        "Google DeepMind testede modellen sammen med partnere, så den virker der, hvor man bygger."
+      ],
+      "betydning": "Udviklere kan bygge søgning og RAG, der fungerer offline og holder data på brugerens enhed, uden at hente en ekstra model pr. medie.",
+      "pointer": [
+        "Én model oversætter tekst, billeder, lyd og video",
+        "MTEB Code stiger fra 68,76 til 78,68",
+        "Apache 2.0-licens og 740 millioner parametre"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T15:59:10.085399+00:00"
+      },
+      "billedmotiv": "Four solid blocks representing text, image, audio and video merging into one shared numeric strip beside the Google four-colour G mark, with a video play triangle highlighted from a text search query on the same strip.",
+      "billedmotiv_instruks": "4703cce8cbaba681e789",
+      "side": "artikel/bf211d23154acfab.html"
+    },
+    {
+      "titel": "How AI decision models could change content moderation",
+      "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+      "resume": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released with open weights.",
+      "dato": "2026-10-06T20:35:20+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "rubrik": "Musubi modererer indhold på under 50 millisekunder",
+      "resume_da": "Åbne vægte og engelsk politik betyder, at platforme kan ændre regler uden at gentræne moderationsmodellen fra bunden.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Musubi lancerer PolicyLM-1.7B, en åben letvægtsbeslutningsmodel til realtidsmoderation.",
+        "forbehold": "Kildeudraget beskriver ikke benchmarks eller sammenligning med eksisterende modeller.",
+        "emne": "musubi policylm"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Politikken står på almindeligt engelsk",
+          "tekst": "Musubi har annonceret PolicyLM-1.7B, en letvægts AI-model til indholdskontrol i realtid, frigivet med åbne vægte. Åbne vægte betyder, at andre kan downloade modellen og køre den selv.\n\nModellen tager en indholdspolitik skrevet på almindeligt engelsk og anvender den på en besked på under 50 millisekunder.\n\nPris og hastighed svarer til de AI-klassifikatorer, de fleste sociale platforme bruger. Men fordi PolicyLM-1.7B har en moderne LLMs fleksibilitet, kan den håndtere komplekse politikker uden særlig træning. Når politikken ændres, skal modellen ikke gentrænes — det lader menneskelige politiksættere justere reglerne, som de har behov for."
+        },
+        {
+          "overskrift": "Kun ja eller nej gør modellen hurtig",
+          "tekst": "Beslutningsmodeller er blevet et varmt emne i AI-verden, siden TypeSafe AI udgav Jev i september. Kort efter fulgte konkurrerende beslutningsmodeller fra OpenAI og Amazon.\n\nI stedet for at skrive tekst ud afgiver en beslutningsmodel sandsynligheder for et udfald. Her er dommen binær: Enten er indholdet i kategorien, eller også er det ikke. Begrænser man outputtet til forudbestemte valg, kører modellen hurtigere og billigere end en stor sprogmodel — stadig med transformerens fleksibilitet.\n\nEt tidligt brugsfelt er at dæmme op for misbrug fra AI-agenter. Nu anvendes den samme teknologi på menneskers opførsel."
+        },
+        {
+          "overskrift": "Jankovic arbejdede med beslutningsmodeller før Jev",
+          "tekst": "Musubis medstifter og chief AI officer, Filip Jankovic, siger, at hans interesse for beslutningsmodeller går forud for Jev. Han sporer den tilbage til et projekt fra 2024 kaldet GLiNER — Generalist Model for Named Entity Recognition — som brugte mange af de samme teknikker.\n\nMusubi er åben om sammenligningen. I produktmeddelelsen skriver selskabet, at hvis Jev fangede dit øje, er PolicyLM-1.7B den samme slags model, trænet specifikt til indholdskontrol, som du selv kan køre."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Under 50 millisekunder",
+          "label": "Tid for at modellen anvender en indholdspolitik på en besked"
+        }
+      ],
+      "detaljer": [
+        "GLiNER står for Generalist Model for Named Entity Recognition",
+        "Filip Jankovic er medstifter og chief AI officer hos Musubi",
+        "PolicyLM-1.7B er frigivet med åbne vægte",
+        "TypeSafe AI udgav beslutningsmodellen Jev i september"
+      ],
+      "betydning": "Platforme kan ændre indholdspolitik med det samme, uden at vente på en ny træningsrunde af moderationsmodellen.",
+      "pointer": [
+        "Åbne vægte — alle kan downloade modellen",
+        "Beslutningsmodeller afgiver sandsynligheder frem for tekst",
+        "Musubis interesse går tilbage til GLiNER-projektet i 2024"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:00:40.928866+00:00"
+      },
+      "billedmotiv": "A policy document card written in plain English lines feeding through a solid classifier gate that outputs a single checkmark and cross, with a stopwatch showing under 50 milliseconds beside the Musubi PolicyLM block.",
+      "billedmotiv_instruks": "c547cac53202dc0cabff",
+      "side": "artikel/aedc083d210ff86e.html"
+    },
+    {
+      "titel": "Muse launches on the iPad",
+      "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+      "resume": "After launching nearly a month ago and spending several weeks as the top free app in Apple's App Store, the latest update to Meta's Muse iOS app introduces native support for the iPad. A Mac version of Meta's agentic AI tool (designed to compete with OpenClaw, ChatGPT's Dots, and Grok Bot) was released about a […]",
+      "dato": "2026-10-07T11:37:23-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
+      "resume_da": "Opdateringen udnytter den større skærm, og samtidig tilslutter Muse sig værktøjer som Canva, Figma og Notion.",
+      "sektioner": [
+        {
+          "overskrift": "Muse vokser fra iPhone til iPad",
+          "tekst": "Meta's AI-agent Muse, der kan udføre opgaver på vegne af brugeren, har fået en udgave til iPad. Det sker efter, at appen lå som nummer ét blandt gratis apps i Apple's App Store i flere uger.\n\nDen nye version er optimeret til iPads større skærm og til iPadOS' forbedrede muligheder for at arbejde med flere apps samtidig."
+        },
+        {
+          "overskrift": "Muse kobles til ti eksterne værktøjer",
+          "tekst": "iPad-støtten fylder kun én linje i udgivelsesnoterne, men opdateringen bringer også andre ændringer. Muse kan nu forbindes til tjenester som Canva, Dropbox, Figma, QuickBooks, GitHub, Zoom, Asana, Klaviyo, Granola og Notion.\n\nMålgruppen er småejere, der kan give Muse et forretningsmål, hvorefter agenten selv planlægger marketing, kundepitches og udarbejdelse af nye produktsider."
+        },
+        {
+          "overskrift": "Meta satser bredt på Muse-økosystemet",
+          "tekst": "Før iPad-udgaven kom en Mac-version cirka en uge efter den oprindelige iPhone-app, hvilket udvider værktøjet til skrivebordsopgaver som at organisere filer. Muse er Metas agentværktøj og konkurrerer med OpenClaw, ChatGPT's Dots og Grok Bot.\n\nMeta arbejder også på en selvstændig enhed kaldet Muse Charm og på at bringe Muse til sine smart-briller. Til sammenligning brugte Meta 15 år på at udgive en dedikeret Instagram-version til iPad."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "15 år",
+          "label": "Tid det tog Meta at udgive en dedikeret Instagram-version til iPad"
+        },
+        {
+          "tal": "10 tjenester",
+          "label": "Antal nye eksterne værktøjer Muse kan forbindes til i opdateringen"
+        }
+      ],
+      "detaljer": [
+        "Muse lancerede som iOS-app for cirka en måned siden.",
+        "Mac-udgaven udkom cirka en uge efter den oprindelige mobilversion.",
+        "Muse Charm er en Tamagotchi-lignende enhed, der kører agenten uden smartphone."
+      ],
+      "betydning": "Den hurtige iPad-opdatering støtter Metas plan om at gøre Muse tilgængelig på flere enheder — fra telefon og computer til briller og en separat gadget.",
+      "pointer": [
+        "Muse App Store-nummer ét som gratis app",
+        "Mac-version udkom en uge efter mobilversion",
+        "Muse Charm kører agenten uden smartphone"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:02:17.189961+00:00"
+      },
+      "billedmotiv": "A solid tablet frame with the Meta blue infinity-loop mark, showing the Muse agent connecting outward to tool tiles like Canva, Figma and Notion arranged around its edge, indicating new iPad support.",
+      "billedmotiv_instruks": "a421dde91eea0f56dd3c",
+      "side": "artikel/c7ba7d4146803430.html"
+    },
+    {
+      "titel": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
+      "link": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+      "resume": "The financing includes an $8M seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
+      "dato": "2026-10-07T15:07:08+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Healthleap rejser 38 mio. dollars til oversete sygdomme",
+      "resume_da": "Sequoia, First Round og Hummingbird Ventures står bag. Healthleap kører allerede på over 50 hospitaler og analyserer patienters journaler hver nat.",
+      "sektioner": [
+        {
+          "overskrift": "Fra ernærings-app til at finde oversete sygdomme",
+          "tekst": "Healthleap har rejst 38 millioner dollars i kombineret seed- og Series A-finansiering. Runden består af et 8 millioner dollars seed-afdrag co-ledet af Sequoia Capital og First Round Capital og en 30 millioner dollars Series A ledt af Hummingbird Ventures. Virksomheden oplyser ikke sin værdi.\n\nGrundlagt i Sydafrika i 2022 af søskendeparret Jemima og Josiah Meyer startede Healthleap som et ernæringsværktøj til diætister. Siden pivotede virksomheden til en AI-platform, der finder hospitalspatienter med tilstande som underernæring og delirium, der ofte ikke opdages tidligt nok.\n\nForskning viser, at 20–50 % af hospitalsindlagte er underernærede. Det er forbundet med længere indlæggelser, infektioner og højere dødelighed."
+        },
+        {
+          "overskrift": "Sådan finder Healthleap patienter med skjulte tegn",
+          "tekst": "Healthleap kobler sig til et hospitals elektroniske patientjournal og bruger sprogmodeller til at trække oplysninger ud af lægernes skrevne notater: henvisninger til nyligt vægttab, dårlig appetit eller synkebesvær. Den analyse kombineres med strukturerede data som laboratorieprøver og livstegn i risikomodeller.\n\nSystemet gennemgår hver nat alle voksne indlagte patienters journaler – fra vægt og medicin til kostordrer og diagnoser. Hver morgen skrives en risikoscoring ind i plejeteamets eksisterende arbejdsgang. **Softwaren stiller ikke diagnoser** – den fremhæver kun punkter, der kræver yderligere gennemgang."
+        },
+        {
+          "overskrift": "Fra tre til 50 hospitaler på et år",
+          "tekst": "Healthleap kører i dag i mere end 50 hospitaler og er vokset fra tre partnere på et år. Kunderne tæller Penn Medicine, Cedars-Sinai, Intermountain, Houston Methodist og Emory Healthcare.\n\nVed Hospital of the University of Pennsylvania gav underernæringsprogrammet ifølge Healthleap 23,8 millioner dollars i årlig finansiel effekt: 6,3 millioner dollars fra ekstra refusion og 17,5 millioner dollars fra kortere hospitalsophold.\n\nJosiah Meyer oplyser, at alle kunder har set en ROI på mindst 5x, i nogle tilfælde over 20x årlig. Omsætningen er vokset mere end 10x over det seneste år, men konkrete tal oplyses ikke."
+        },
+        {
+          "overskrift": "Målet er 40 sygdomme og hjemmepleje",
+          "tekst": "Med den nye kapital vil Healthleap investere i ingeniørarbejde, produkt, salg og kundesupport og tilføje flere sygdomstilstande. Målet er at dække mere end 40 store sundhedstilstande og udvide til ambulant og hjemmepleje.\n\nUd over underernæring og delirium er programmer til aspirationspneumoni, tryksår og risiko for genindlæggelse ved hjertesvigt ifølge Josiah Meyer under yderligere klinisk validering."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "38 millioner dollars",
+          "label": "Kombineret seed- og Series A-finansiering"
+        },
+        {
+          "tal": "50+ hospitaler",
+          "label": "Antal hospitaler med Healthleap i drift, vokset fra tre på et år"
+        },
+        {
+          "tal": "23,8 millioner dollars",
+          "label": "Årlig finansiel effekt af underernæringsprogram ved Hospital of the University of Pennsylvania"
+        },
+        {
+          "tal": "20–50 %",
+          "label": "Andel af hospitalsindlagte, der er underernærede, ifølge forskning citeret i kilden"
+        }
+      ],
+      "detaljer": [
+        "Kontrakter løber tre år og prises efter sygehusets licenserede senge.",
+        "Selskabet bruger også en resultatbaseret prismodel baseret på kundens dokumenterede ROI."
+      ],
+      "betydning": "Tre af de fem sygdomstilstande, Healthleap screener for, er stadig under klinisk validering ifølge CEO Josiah Meyer.",
+      "pointer": [
+        "38 millioner dollars i kombineret seed og Series A",
+        "Vokset fra 3 til over 50 hospitaler på et år",
+        "Alle kunder har set mindst 5x ROI ifølge CEO"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:05:12.654840+00:00"
+      },
+      "billedmotiv": "A stack of hospital chart cards with hidden risk flags highlighted by an AI scanning beam, beside a solid funding block showing 38 million dollars raised for Healthleap's overlooked disease screening.",
+      "billedmotiv_instruks": "d14d8c87f9b59286c6e2",
+      "side": "artikel/fc38477a8aad9442.html"
+    },
+    {
+      "titel": "Tony Fadell on why the first wave of AI gadgets failed — and what comes next",
+      "link": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/",
+      "resume": "The “father of the iPod” says the first generation of AI gadgets failed to solve real problems — and the next wave will need to earn consumers’ trust.",
+      "dato": "2026-10-07T14:41:38+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Tony Fadell: Første AI-bølge løste intet behov",
+      "resume_da": "Fadell forklarer, hvorfor Rabbit R1, Humane Ai Pin og Limitless pendant fejlede, og spår, at vinderen kører lokalt på enheden.",
+      "sektioner": [
+        {
+          "overskrift": "Tre stoppete AI-enheder på Fadells slides",
+          "tekst": "Tony Fadell åbnede sit oplæg på den indviende MIT Future Fest med tre billeder: Rabbit R1, Humane Ai Pin og Limitless pendant. Det er AI-enheder, der alle er taget ud af produktion.\n\nFadell kaldes far til iPod, var med til at skabe iPhone og stiftede Nest, termostatselskabet Google købte. Derfor henvendte de tre selskaber sig til ham. \"Det gjorde jeg ikke,\" sagde han.\n\nHan afviste dem, fordi **ingen af dem løste et behov**: \"Interessant teknologi for nørder,\" sagde han, \"og så tænker man: fint, men det gælder ikke mit liv.\""
+        },
+        {
+          "overskrift": "Tillid bygges over år, ikke over en lancering",
+          "tekst": "Fadells andet argument handler om, hvad en assistent overhovedet er. Under 0,01 % af verdens befolkning har nogensinde haft et menneske til at gøre noget for sig, vurderer han. Dem, der kræver en assistent, er ofte folk, der selv har en.\n\nDet tog ham selv **et par år** at lære at bruge en menneskelig assistent, før han turde give vedkommende følsomme data, bestille møder og arbejde med sin bank.\n\nSoftwaren har samme udfordring. Meta lancerede assistenten Muse, og en sikkerhedsforsker fandt hurtigt et alvorligt sikkerhedshul. 404 Media rapporterede desuden, at Meta-ansatte opdagede sikkerhedsproblemer, som flere teams arbejdede over for at rette før lancering."
+        },
+        {
+          "overskrift": "Apple har hardwaren, men mangler AI'en",
+          "tekst": "Fadell mener, at **kun Apple** — måske én anden virksomhed — kan skabe den nødvendige tillid. Apple har hardwaren, chipene og alle delene.\n\nDet, selskabet mangler, er AI'en: den nye Siri kører på en tilpasset udgave af Googles Gemini, og Apple har ikke sin egen model i verdensklasse."
+        },
+        {
+          "overskrift": "Vinderen skal køre lokalt på enheden",
+          "tekst": "Fadell tror ikke på fortællingen om, at datacentre skal erobre verden. \"Jeg har set det før, i internetdagene,\" sagde han. Enhederne har masser af regnekraft nu, og de kører stadig på batteri.\n\nHans spådom er, at **den vellykkede agent kun kører på enheden** — både af hensyn til privatlivet og til at holde teknikken let.\n\nMeta og OpenAI bygger gadgets, fordi de mangler Apples milliarder af enheder og dermed adgang til telefonens sensorer. I stedet for at bede brugeren om op mod 20 tilladelser bygger de en skærmfri enhed, der sender data videre via Bluetooth, Wi-Fi eller 5G."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "under 0,01 %",
+          "label": "andel af verdens befolkning, der nogensinde har haft en menneskelig assistent (Fadells vurdering)"
+        },
+        {
+          "tal": "20 tilladelser",
+          "label": "sensor- og datatilladelser et firma kan ende med at bede om, ifølge Fadell"
+        }
+      ],
+      "detaljer": [
+        "Fadell afviste at rådgive alle tre AI-enhedsfirmaer.",
+        "Den nye Siri kører på en tilpasset udgave af Googles Gemini.",
+        "Fadell om startups: ét skud — ikke som Apple med Vision Pro.",
+        "TechCrunch-artiklen er dateret 7. oktober 2026."
+      ],
+      "betydning": "Fadells spådom er, at den AI-assistent, der vinder forbrugertillid, kører lokalt på enheden og holder data væk fra skyen.",
+      "pointer": [
+        "Tre stoppete enheder: Rabbit R1, Humane Ai Pin, Limitless pendant",
+        "Under 0,01 % har prøvet at have en assistent",
+        "Ny Siri kører på Googles Gemini, ikke Apples egen model"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:05:09.854415+00:00"
+      },
+      "billedmotiv": "Three discontinued AI gadgets — Rabbit R1, Humane Ai Pin and Limitless pendant shown as crossed-out solid shapes — beside Tony Fadell's slide pointer directing toward a small on-device chip that runs the assistant locally.",
+      "billedmotiv_instruks": "728f1044d4032748cb54",
+      "side": "artikel/3499b6fe79a2933b.html"
+    },
+    {
+      "titel": "Google experiments with an AI-powered gaming platform",
+      "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
+      "resume": "Google Labs is working on a new AI-powered game-creation platform called Playground for users to build browser-based games using simple text prompts.",
+      "dato": "2026-10-07T14:36:23+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google Playground skaber spil uden kodning",
+      "resume_da": "Tekstprompt vælger genre, dimensioner og spiltype, mens ugentlige tokens styrer, hvor meget man kan skabe.",
+      "sektioner": [
+        {
+          "overskrift": "Tekstprompt bliver til færdigt browserspil",
+          "tekst": "Google Labs, Googles offentlige inkubator for eksperimentelle projekter, har lanceret Playground: en platform hvor man skaber browserspil ved at skrive almindelige sætninger i stedet for kode. Man vælger en genre som quiz eller racing, bestemmer 2D eller 3D og enkeltspiller eller multiplayer, og beskriver derefter mekanikker, gameplay og visuel stil.\n\nSpillene fungerer på både mobil og computer. De kan holdes private, deles via link eller offentliggøres i Explore-galleriet, hvor offentlige spil kan få pointtavler. Uploadede billeder omdannes af AI til spilgrafik i den valgte stil, og man kan fortsat redigere spillet efter udgivelse."
+        },
+        {
+          "overskrift": "Gratis at spille, tokens til skabelse",
+          "tekst": "Playground er gratis at browse og spille i, men selve skabelsen af nye spil kræver ugentlige tokens. Den gratis pakke giver et begrænset antal, mens abonnenter på Google One AI får højere forbrugsgrænser.\n\nAdgangen gælder foreløbig brugere over 18 år i USA. Google planlægger at udvide til flere lande og tilføje en integration med Unity Spark, som skal give adgang til yderligere 3D-muligheder og spilmekanikker på professionelt niveau via Unitys teknologi."
+        },
+        {
+          "overskrift": "Marked vokser med AI-skabte spil",
+          "tekst": "Google placerer Playground i et stigende marked for AI-understøttet spiludvikling. Roblox annoncerede i juli sin egen Build-funktion, hvor brugere skaber spil via naturlige sprogkommandoer. Satsningen bygger også på Googles bredere gaming-interesse, herunder cloud-gaming-tjenesten Stadia fra 2022 og YouTube Playables med øjeblikkeligt spillable webspil."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Google Labs er Googles offentlige inkubator og eksperimenteringsplatform for nye projekter.",
+        "Google undersøgte tidligere cloud gaming med Stadia i 2022.",
+        "YouTube Playables er en hub med øjeblikkeligt spillable webbaserede spil.",
+        "Roblox lancerede i juli sin egen Build-funktion til spil via naturligt sprog."
+      ],
+      "betydning": "Færre tekniske barrierer for spiludvikling, men ugentlige token-grænser gør selve skabelsen til en styret ressource frem for et frit værktøj.",
+      "pointer": [
+        "Browserspil skabes med tekst frem for kode",
+        "Gratis at spille, ugentlige tokens til at skabe",
+        "Foreløbig tilgængelig i USA fra 18 år"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:07:07.474626+00:00"
+      },
+      "billedmotiv": "A text prompt bar transforming into a finished game controller and 2D/3D game tile under the Google four-colour G mark, showing a genre selector turning words into a playable browser game.",
+      "billedmotiv_instruks": "8fc586adffe403ce0d32",
+      "side": "artikel/60862e24b98b764e.html"
+    },
+    {
+      "titel": "6 days to TechCrunch Disrupt 2026: Save on your pass before doors open",
+      "link": "https://techcrunch.com/2026/10/07/6-days-to-techcrunch-disrupt-2026-save-on-your-pass-before-doors-open/",
+      "resume": "In 6 days, 10,000+ people from across the global startup and tech ecosystem will come together at San Francisco’s Moscone West for TechCrunch Disrupt 2026. If you’re planning to be one of them, don’t wait to register your ticket before prices increase at the door. Save up to $100 on your pass, plus 50% on a second of the same type.",
+      "dato": "2026-10-07T14:00:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "OpenAI og Anthropic møder op på TechCrunch Disrupt",
+      "resume_da": "TechCrunch Disrupt løber 13.–15. oktober i San Francisco med over 200 sessioner og rabat på billetter før dørene åbner.",
+      "sektioner": [
+        {
+          "overskrift": "Dørene åbner 13. oktober",
+          "tekst": "TechCrunch Disrupt 2026 åbner 13. oktober i Moscone West i San Francisco og varer til 15. oktober. TechCrunch skrev 7. oktober 2026, at der seks dage føråbning ventes mere end 10.000 mennesker fra det globale startup- og techøkosystem.\n\nBilletter købt online inden åbningen er billigere end ved indgangen, med en besparelse på op til **$100**. Køber man et andet gyldigt pass til en kollega, medstifter eller ven, er det 50 procent billigere. Fritstillede kan købe et Expo+ Pass for $75."
+        },
+        {
+          "overskrift": "AI fra OpenAI, Anthropic og NVIDIA",
+          "tekst": "Programmet tæller mere end **200 sessioner** på seks scener samt roundtables og breakouts med over 250 techledere. Emnerne spænder fra AI og fundraising til fintech, robotics, infrastruktur, produkt, ansættelser og skalering.\n\nPå talerlisten er Alexander Embiricos, produktleder for Dots hos OpenAI, Cat de Jong fra Anthropic og Les Karpas fra NVIDIA. Også Cerebras Systems CEO Andrew Feldman, Rivians stifter og CEO RJ Scaringe, Inspired Capitals Alexa von Tobel og MUNICIPAL-medstifter Mark Wahlberg er med."
+        },
+        {
+          "overskrift": "20 finalister kæmper om 100.000 dollars",
+          "tekst": "I Expo Hall viser hundredvis af startups og teknologivirksomheder nye produkter og forretningsmodeller frem under hele arrangementet.\n\nSamtidig kæmper 20 finalister i **Startup Battlefield 200** live på Disrupt-scenen om en præmie på $100.000 samt opmærksomhed fra investorer, medier og det globale startup-økosystem."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "10.000+ deltagere",
+          "label": "Forventet fremmøde fra startup- og techøkosystem ved Moscone West"
+        },
+        {
+          "tal": "200+ sessioner",
+          "label": "På seks scener, roundtables og breakouts fordelt over tre dage"
+        },
+        {
+          "tal": "Op til $100",
+          "label": "Billettbesparelse ved onlinekøb før dørene åbner 13. oktober"
+        },
+        {
+          "tal": "$100.000",
+          "label": "Præmie i Startup Battlefield 200 med 20 finalister"
+        },
+        {
+          "tal": "$75",
+          "label": "Pris på Expo+ Pass for fritstillede"
+        }
+      ],
+      "detaljer": [
+        "Sidste dag for at booke udstillingsbord var 2. oktober 2026.",
+        "Alexander Embiricos er produktleder for Dots hos OpenAI.",
+        "Mark Wahlberg er medstifter af MUNICIPAL; RJ Scaringe stifter og CEO af Rivian.",
+        "Arrangementet holder til i Moscone West, San Francisco, 13.–15. oktober 2026."
+      ],
+      "betydning": "Priserne stiger ved døren, når arrangementet åbner 13. oktober, så billetkøb inden den dato giver den lavere pris.",
+      "pointer": [
+        "250+ techledere på seks scener",
+        "Anden billet til halv pris",
+        "20 finalister i Startup Battlefield"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:10:51.216435+00:00"
+      },
+      "billedmotiv": "A conference stage badge with the OpenAI Blossom symbol and the Claude terracotta starburst side by side on a speaker lanyard, next to a calendar block marked 13–15 October for TechCrunch Disrupt.",
+      "billedmotiv_instruks": "c07a0aba5f39c48540cc",
+      "side": "artikel/f34b82d8ad4aef4b.html"
+    },
+    {
+      "titel": "The latest AI news we announced in September 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "resume": "Here are Google’s latest AI updates from September 2026",
+      "dato": "2026-10-02T15:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Labs",
+      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
+      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
+      "rubrik": "Gemini 4 Argon udkommer først til cyberforsvar",
+      "resume_da": "Argon kan skrive op til en million token i ét svar og ruller ud i faser via Fairwind Program.",
+      "sektioner": [
+        {
+          "overskrift": "Argon giver op til en million token",
+          "tekst": "Google præsenterer Gemini 4 Argon som sin nye frontmodel i en opsamling over selskabets AI-nyheder fra september 2026. Modellen kan producere op til **en million token** i ét svar. Token er den enhed, modellen tæller tekst i, så en grænse på den størrelse giver plads til meget lange svar.\n\nArgon er bygget til avanceret ræsonnement og er rettet mod tunge opgaver: kodning, cybersecurity-forsvar, finansiel research, juridiske udkast og automatisk lapning af sikkerhedshuller.\n\nDen er dog ikke åben endnu. Google ruller Argon ud i faser gennem Fairwind Program til betroede cyberforsvarere, indtil tidlige testere har bidraget med feedback til de sikkerhedsrammer, der skal være på plads, før adgangen udvides til udviklere, virksomheder og forbrugere."
+        },
+        {
+          "overskrift": "Apps og stemmer samles i Gemini",
+          "tekst": "Samme måned kom Gemini 3.8 Flash og 3.8 Flash Cyber. Ifølge Google leverer 3.8 sin hidtil bedste ræsonnerings- og kodeydelse ved samme hastighed og lave omkostning som 3.7 Flash.\n\nI Gemini-appen kan brugere nu linke tjenester som Airtable, Adobe, Picsart, Peloton, SeatGeek og Experian direkte til systemet via Connected Apps, så opgaver klares ét sted frem for i flere faner.\n\nLyria 3.5 skaber musik ud fra tekst eller billeder, mens stemmemodellerne Gemini 3.8 Flash-Lite TTS og Flash TTS lader brugere bygge egne stemmer frem for at vælge faste forudindstillinger."
+        },
+        {
+          "overskrift": "Satellitter skal bære Googles AI-chips",
+          "tekst": "Google kobler også AI til forskning. AlphaGenome Atlas har kortlagt menneskelig DNA, og satelitdata bruges til at følge global metan fra rummet.\n\nProject Suncatcher sender den første testsatellit op sammen med virksomheden Planet for at afprøve, hvordan Googles TPU-chips klarer sig under rumforhold. Satellitter i lav jordbane kan ifølge Google hente op til **otte gange** mere solkraft end på Jorden.\n\nGoogle oplyser desuden, at selskabets værktøjer understøtter mere end 300 sprog, som tales af 7 milliarder mennesker, svarende til 86 procent af verdens befolkning."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "1 million token",
+          "label": "Maksimal længde på ét svar fra Gemini 4 Argon"
+        },
+        {
+          "tal": "8 gange",
+          "label": "Mere solkraft i lav jordbane end på Jorden ifølge Google"
+        },
+        {
+          "tal": "86 %",
+          "label": "Andel af verdens befolkning, der taler Googles understøttede 300+ sprog"
+        }
+      ],
+      "detaljer": [
+        "Gemini-appen er blevet tilgængelig på Windows.",
+        "Googlebook, en bærbar enhed, er sat til forudbestilling.",
+        "CC i Google Labs får egen mailadresse til familielogistik.",
+        "Gemini Notebook tilbyder 60-sekunders videoresuméer på over 80 sprog."
+      ],
+      "betydning": "Googles mest avancerede model frigives i faser: guardrails afprøves først på tidlige testere, før adgangen udvides til udviklere, virksomheder og forbrugere.",
+      "pointer": [
+        "Argon er endnu ikke åbent for almindelige brugere.",
+        "Connected Apps aktiveres manuelt i Googles indstillinger."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T16:12:50.409208+00:00"
+      },
+      "side": "artikel/bfe2b156957ee716.html"
     }
   ]
 }

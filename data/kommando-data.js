@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-07T06:49:49.457508+00:00",
+ "genereret": "2026-10-07T16:30:01.579681+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,73 +195,154 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-07T06:22:34.414630+00:00",
-  "antal": 111,
-  "med_billede": 41,
-  "paa_dansk": 111,
+  "opdateret": "2026-10-07T15:44:28.800933+00:00",
+  "antal": 122,
+  "med_billede": 43,
+  "paa_dansk": 122,
   "kategorier": {
-   "Lanceringer": 26,
+   "Lanceringer": 32,
    "Hverdags-AI": 17,
    "Penge \u0026 marked": 22,
-   "Samfund \u0026 etik": 18,
+   "Samfund \u0026 etik": 17,
    "Politik \u0026 jura": 14,
-   "Forskning": 12,
-   "Dybde": 1,
+   "Forskning": 14,
+   "Nyheder": 5,
    "Labs": 1
   },
   "kilder": {
-   "TechCrunch AI": 35,
+   "TechCrunch AI": 41,
+   "Google DeepMind": 3,
    "Simon Willison AI": 7,
-   "The Verge AI": 24,
+   "The Verge AI": 25,
+   "Anthropic News": 9,
    "Ars Technica AI": 10,
    "MIT Tech Review AI": 7,
-   "Anthropic News": 10,
    "Mistral AI": 6,
-   "Google Gemini": 5,
-   "Hugging Face": 2,
+   "Google Gemini": 6,
+   "Hugging Face": 3,
    "xAI News": 5
   },
   "udvalgte": [
    {
-    "titel": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
-    "rubrik": "Reflection lancerer Beam mod kinesiske AI-modeller",
-    "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-    "side": "artikel/13557b75794fecc1.html",
+    "titel": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+    "rubrik": "Mistral lancerer 1.000-milliarders model Le Chonk",
+    "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+    "side": "artikel/8653701588de7d2f.html",
     "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-05T19:33:53+00:00",
+    "dato": "2026-10-06T14:33:16+00:00",
+    "billede": "data/img/9b49e54396717e62.jpg"
+   },
+   {
+    "titel": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+    "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "side": "artikel/bf211d23154acfab.html",
+    "kategori": "Lanceringer",
+    "kilde": "Google DeepMind",
+    "dato": "2026-10-06T19:57:04+00:00",
     "billede": ""
    },
    {
-    "titel": "This startup is issuing AI-generated acne prescriptions",
-    "rubrik": "Nolla Health lader AI scanne ansigter og ordinere",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
-    "side": "artikel/5b8c439bb6210497.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-05T16:14:57-04:00",
-    "billede": "data/img/0cc7f19121ca8889.webp"
-   },
-   {
-    "titel": "Google is about to remove free access to Gemini Flash and Pro",
-    "rubrik": "Google spærrer Gemini Pro for gratisbrugere",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-    "side": "artikel/8afef565706a7a71.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-06T09:19:01-04:00",
+    "titel": "How AI decision models could change content moderation",
+    "rubrik": "Musubi modererer indhold på under 50 millisekunder",
+    "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+    "side": "artikel/aedc083d210ff86e.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-06T20:35:20+00:00",
     "billede": ""
    }
   ],
   "seneste": [
    {
+    "titel": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+    "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "side": "artikel/bf211d23154acfab.html",
+    "kategori": "Lanceringer",
+    "kilde": "Google DeepMind",
+    "dato": "2026-10-06T19:57:04+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Muse launches on the iPad",
+    "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
+    "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+    "side": "artikel/c7ba7d4146803430.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-07T11:37:23-04:00",
+    "billede": ""
+   },
+   {
+    "titel": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
+    "rubrik": "Healthleap rejser 38 mio. dollars til oversete sygdomme",
+    "link": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+    "side": "artikel/fc38477a8aad9442.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-07T15:07:08+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Tony Fadell on why the first wave of AI gadgets failed — and what comes next",
+    "rubrik": "Tony Fadell: Første AI-bølge løste intet behov",
+    "link": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/",
+    "side": "artikel/3499b6fe79a2933b.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-07T14:41:38+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Google experiments with an AI-powered gaming platform",
+    "rubrik": "Google Playground skaber spil uden kodning",
+    "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
+    "side": "artikel/60862e24b98b764e.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-07T14:36:23+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "6 days to TechCrunch Disrupt 2026: Save on your pass before doors open",
+    "rubrik": "OpenAI og Anthropic møder op på TechCrunch Disrupt",
+    "link": "https://techcrunch.com/2026/10/07/6-days-to-techcrunch-disrupt-2026-save-on-your-pass-before-doors-open/",
+    "side": "artikel/f34b82d8ad4aef4b.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-07T14:00:00+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Quoting Jake Boggan",
     "rubrik": "Jake Boggan: Mit livs problem er måske løst",
     "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
     "side": "artikel/17929c3f9f5ee1dd.html",
-    "kategori": "Dybde",
+    "kategori": "Forskning",
     "kilde": "Simon Willison AI",
     "dato": "2026-10-07T04:47:55+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "How AI decision models could change content moderation",
+    "rubrik": "Musubi modererer indhold på under 50 millisekunder",
+    "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+    "side": "artikel/aedc083d210ff86e.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-06T20:35:20+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Expanding the Cyber Verification Program",
+    "rubrik": "Anthropic samler to cyberprogrammer i tre niveauer",
+    "link": "https://www.anthropic.com/news/cyber-verification-program",
+    "side": "artikel/522cf6129a288bba.html",
+    "kategori": "Lanceringer",
+    "kilde": "Anthropic News",
+    "dato": "2026-10-06T00:00:00+00:00",
     "billede": ""
    },
    {
@@ -285,113 +366,33 @@ window.KOMMANDO_DATA = {
     "billede": ""
    },
    {
-    "titel": "Expanding the Cyber Verification Program",
-    "rubrik": "Anthropic samler to cyberprogrammer i tre niveauer",
-    "link": "https://www.anthropic.com/news/cyber-verification-program",
-    "side": "artikel/522cf6129a288bba.html",
-    "kategori": "Labs",
-    "kilde": "Anthropic News",
-    "dato": "2026-10-06T00:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google is about to remove free access to Gemini Flash and Pro",
-    "rubrik": "Google spærrer Gemini Pro for gratisbrugere",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-    "side": "artikel/8afef565706a7a71.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-06T09:19:01-04:00",
-    "billede": ""
-   },
-   {
-    "titel": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
-    "rubrik": "Anthropic giver startups gratis Claude Team og credits",
-    "link": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
-    "side": "artikel/e5ed95e929eaa4eb.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T16:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Hark releases an AI personal assistant with a focus on privacy",
-    "rubrik": "Hark Pro bruger din computer for dig",
-    "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
-    "side": "artikel/47e6fb94fc925c4a.html",
+    "titel": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+    "rubrik": "Mistral lancerer 1.000-milliarders model Le Chonk",
+    "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+    "side": "artikel/8653701588de7d2f.html",
     "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T18:22:45+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Pinterest’s AI now turns beauty Pins into action plans",
-    "rubrik": "Pinterest oversætter skønhedspins til salonplaner",
-    "link": "https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/",
-    "side": "artikel/8a2aa9dafacda070.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T14:00:49+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Mirror Particle is building a ‘world model’ of human behavior",
-    "rubrik": "Mirror Particle bygger verdensmodel af menneskelig adfærd",
-    "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
-    "side": "artikel/23d4205c2c0b5e9a.html",
-    "kategori": "Forskning",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T16:35:00+00:00",
-    "billede": "data/img/21a6b4ed8d5cd196.jpg"
-   },
-   {
-    "titel": "We can’t just change the definition of ‘recording’",
-    "rubrik": "Apple udvikler kamera uden videolagring",
-    "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
-    "side": "artikel/9208b0a8180b04c5.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-06T12:29:44-04:00",
-    "billede": "data/img/1478781aa38ed89e.webp"
-   },
-   {
-    "titel": "LibreOffice says ‘no AI’ is now a software feature",
-    "rubrik": "LibreOffice holder fast i nej til AI",
-    "link": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/",
-    "side": "artikel/2823d2b903a5e4e5.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T15:25:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Scrimshaw Jukebox",
-    "rubrik": "Claude Opus 5.5 komponerede spilmusik",
-    "link": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
-    "side": "artikel/56c07856ac05cdfe.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-06T15:17:39+00:00",
-    "billede": "data/img/c0a51c7dc4ea3e1c.webp"
+    "dato": "2026-10-06T14:33:16+00:00",
+    "billede": "data/img/9b49e54396717e62.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-07T06:22:34.414630+00:00",
+  "opdateret": "2026-10-07T15:44:28.800933+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 8,
+  "modelkald": 5,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
    "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-   "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+   "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
   ],
   "udgivet_udvalg": [
-   "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-   "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
-   "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only"
+   "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+   "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+   "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/"
   ],
   "vaerktoejer": [
    {
@@ -407,51 +408,19 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
     "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -460,46 +429,34 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+    "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-    "grundlag": "rss_resume"
+    "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+    "grundlag": "kildetekst"
    },
    {
     "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://mistral.ai/news/mistral-large-4/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
-    "grundlag": "kildetekst"
+    "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+    "grundlag": "rss_resume"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-07T06:22:33.766507+00:00",
+  "opdateret": "2026-10-07T15:44:28.227974+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -855,8 +812,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-07T06:22:34.414630+00:00",
-  "artikler_i_alt": 111,
+  "opdateret": "2026-10-07T15:44:28.800933+00:00",
+  "artikler_i_alt": 122,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -867,8 +824,8 @@ window.KOMMANDO_DATA = {
     "aktiv": true,
     "status": "ok",
     "fejl": "",
-    "hentet": 15,
-    "i_listen": 10,
+    "hentet": 14,
+    "i_listen": 9,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -949,15 +906,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-17T20:31:59",
       "link": "https://www.anthropic.com/news/life-sciences-verification-program",
       "side": "artikel/c71245ef57d4e35f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic stoppede misbrug af Claude i otte måneder",
-      "dato": "2026-09-10T00:00:00",
-      "foerst_set": "2026-09-11T13:30:47",
-      "link": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "side": "artikel/47e74cdc78c671c1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1042,9 +990,45 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 5,
-    "som_ekstra": 0,
+    "i_listen": 6,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+      "dato": "",
+      "foerst_set": "2026-09-24T20:05:24",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
+      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+      "dato": "",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 TTS styres replik for replik"
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+      "dato": "",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
+      "rubrik": "Gemini 4 Argon udkommer først til cyberforsvar",
+      "dato": "2026-10-02T15:00:00",
+      "foerst_set": "2026-10-02T20:55:07",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "side": "artikel/bfe2b156957ee716.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Gemini Live beskriver verden for blinde",
       "dato": "2026-10-01T16:00:00",
@@ -1162,7 +1146,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 2,
+    "i_listen": 3,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1180,6 +1164,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-22T19:51:24",
       "link": "https://huggingface.co/blog/evaleval-aisi",
       "side": "artikel/137c5833ddb8f26b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Hugging Face ansætter oMLX-skaber Jun Kim",
+      "dato": "2026-09-22T00:00:00",
+      "foerst_set": "2026-09-22T13:37:55",
+      "link": "https://huggingface.co/blog/omlx",
+      "side": "artikel/c5f86512fa7d6230.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1309,7 +1302,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 35,
+    "i_listen": 41,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1340,6 +1333,51 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
+      "rubrik": "Healthleap rejser 38 mio. dollars til oversete sygdomme",
+      "dato": "2026-10-07T15:07:08",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+      "side": "artikel/fc38477a8aad9442.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Tony Fadell: Første AI-bølge løste intet behov",
+      "dato": "2026-10-07T14:41:38",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/",
+      "side": "artikel/3499b6fe79a2933b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Google Playground skaber spil uden kodning",
+      "dato": "2026-10-07T14:36:23",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
+      "side": "artikel/60862e24b98b764e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI og Anthropic møder op på TechCrunch Disrupt",
+      "dato": "2026-10-07T14:00:00",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://techcrunch.com/2026/10/07/6-days-to-techcrunch-disrupt-2026-save-on-your-pass-before-doors-open/",
+      "side": "artikel/f34b82d8ad4aef4b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Musubi modererer indhold på under 50 millisekunder",
+      "dato": "2026-10-06T20:35:20",
+      "foerst_set": "2026-10-07T00:01:34",
+      "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+      "side": "artikel/aedc083d210ff86e.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Lambda rejser op til $4 mia. før børsnotering",
       "dato": "2026-10-06T20:00:30",
       "foerst_set": "2026-10-07T00:01:34",
@@ -1358,65 +1396,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Mistral lancerer 1.000-milliarders model Le Chonk",
+      "dato": "2026-10-06T14:33:16",
+      "foerst_set": "2026-10-06T18:34:36",
+      "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "side": "artikel/8653701588de7d2f.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Anthropic giver startups gratis Claude Team og credits",
       "dato": "2026-10-06T16:00:00",
       "foerst_set": "2026-10-06T18:34:36",
       "link": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
       "side": "artikel/e5ed95e929eaa4eb.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Hark Pro bruger din computer for dig",
-      "dato": "2026-10-06T18:22:45",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
-      "side": "artikel/47e6fb94fc925c4a.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Pinterest oversætter skønhedspins til salonplaner",
-      "dato": "2026-10-06T14:00:49",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/",
-      "side": "artikel/8a2aa9dafacda070.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Mirror Particle bygger verdensmodel af menneskelig adfærd",
-      "dato": "2026-10-06T16:35:00",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
-      "side": "artikel/23d4205c2c0b5e9a.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "LibreOffice holder fast i nej til AI",
-      "dato": "2026-10-06T15:25:00",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/",
-      "side": "artikel/2823d2b903a5e4e5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Reflection lancerer Beam mod kinesiske AI-modeller",
-      "dato": "2026-10-05T19:33:53",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-      "side": "artikel/13557b75794fecc1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI vandmærker ChatGPT-tekst i EU",
-      "dato": "2026-10-05T20:36:48",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
-      "side": "artikel/212da1d35ed9326d.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1432,8 +1425,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 24,
-    "som_ekstra": 10,
+    "i_listen": 25,
+    "som_ekstra": 11,
     "seneste": [
      {
       "rubrik": "OpenAI indfører tekstvandmærke i ChatGPT og Codex",
@@ -1508,6 +1501,15 @@ window.KOMMANDO_DATA = {
       "under": "Amazon dropper hemmeligholdelse om datacentre"
      },
      {
+      "rubrik": "Google Gemini 3.8 Live giver AI'en en ansigt",
+      "dato": "",
+      "foerst_set": "2026-09-24T20:05:24",
+      "link": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
       "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
       "dato": "",
       "foerst_set": "2026-09-23T19:47:07",
@@ -1526,20 +1528,11 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Google spærrer Gemini Pro for gratisbrugere",
-      "dato": "2026-10-06T09:19:01",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-      "side": "artikel/8afef565706a7a71.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Apple udvikler kamera uden videolagring",
-      "dato": "2026-10-06T12:29:44",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
-      "side": "artikel/9208b0a8180b04c5.html",
+      "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
+      "dato": "2026-10-07T11:37:23",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+      "side": "artikel/c7ba7d4146803430.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1776,10 +1769,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 0,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 3,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1790,6 +1783,42 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     },
+     {
+      "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
+      "dato": "",
+      "foerst_set": "2026-09-24T20:05:24.209273+00:00",
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
+      "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+      "dato": "2026-10-06T19:57:04",
+      "foerst_set": "2026-10-07T15:44:28",
+      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "side": "artikel/bf211d23154acfab.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 TTS styres replik for replik",
+      "dato": "2026-09-23T15:25:14",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "side": "artikel/31ef9b5263a38be6.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+      "dato": "2026-09-15T17:05:57",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "side": "artikel/392b6ec46b4e96bc.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1824,7 +1853,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-07T06:49:43.841670+00:00",
+  "opdateret": "2026-10-07T16:29:55.502141+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

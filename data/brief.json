@@ -1,10 +1,10 @@
 {
  "dato": "2026-10-07",
- "blok": 0,
- "opdateret": "08:48",
+ "blok": 2,
+ "opdateret": "18:29",
  "redaktion_version": 3,
- "udvalg_signatur": "f191ae30b1f7ea98",
- "gyldig_fra": "2026-10-07T06:00:00+02:00",
+ "udvalg_signatur": "70597b8eead21f53",
+ "gyldig_fra": "2026-10-07T16:00:00+02:00",
  "skift": [
   6,
   11,
@@ -13,30 +13,33 @@
  ],
  "punkter": [
   {
-   "tekst": "Reflection lancerer Beam med 501 milliarder parametre og hævder 3-4x lavere beregningskraft end Z.ai's GLM-5.2 på ræsonnerings-benchmarks.",
+   "tekst": "Mistral lancerer 1.000-milliardersmodellen Le Chonk, trænet på 4.000 Nvidia GPU'er og open-source om tre uger efter sikkerhedstest.",
+   "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
+  },
+  {
+   "tekst": "Google DeepMinds EmbeddingGemma 2 finder videoklip ud fra tale og er bygget til at køre lokalt på enheden.",
+   "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+  },
+  {
+   "tekst": "Reflection lancerer Beam med 501 milliarder parametre og hævder 3-4x lavere beregningskraft end Z.ai's GLM-5.2.",
    "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
   },
   {
-   "tekst": "Qwen3.8-27B fik 167 af 169 rigtige i lokal test på store tal-lægning med og uden reasoning.",
-   "link": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/"
+   "tekst": "Fem organisationer har anerkendt MCP-sårbarheder, onde instruktioner kan hoppe mellem AI-agenter gennem tillidsgap.",
+   "link": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/"
   },
   {
-   "tekst": "Google spærrer Gemini Pro for gratisbrugere fra 9. oktober, der kun får Flash Lite; AI Plus mister også Pro-adgang.",
+   "tekst": "Google spærrer Gemini Pro for gratisbrugere fra 9. oktober, mens AI Plus også mister Pro-adgang.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only"
-  },
-  {
-   "tekst": "OpenAI vandmærker usynligt ChatGPT-tekst i EU, så detektorer kan genkende den, og udviklere overalt kan slå ordningen til.",
-   "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
-  },
-  {
-   "tekst": "Anthropic samler to cyberprogrammer i tre niveauer og åbner adgang til Claude Opus 5.5 fra forsvar til penetrationstest.",
-   "link": "https://www.anthropic.com/news/cyber-verification-program"
   }
  ],
  "brugte": [
+  "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+  "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
   "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
   "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
   "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+  "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
   "https://www.anthropic.com/news/cyber-verification-program",
   "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only"
  ]
