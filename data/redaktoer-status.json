@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-07T15:44:28.800933+00:00",
+  "opdateret": "2026-10-07T21:31:02.551414+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-    "https://simonwillison.net/2026/Oct/6/hn-49983751/",
-    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+    "https://www.anthropic.com/claude-haiku-5-5",
+    "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+    "https://huggingface.co/blog/LiquidAI/open-d1"
   ],
-  "input_fingerprint": "1e0462d0221ba7e2",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 4,
+  "input_fingerprint": "fded591f7bc40fb2",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel f213b8d3eadf23cd: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -46,30 +46,58 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel f213b8d3eadf23cd: skriveopgave har 948 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel f213b8d3eadf23cd: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+      "link": "https://www.anthropic.com/claude-haiku-5-5",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+      "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "link": "https://openai.com/index/gpt-6-for-everyone",
       "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
@@ -77,5 +105,5 @@
     "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
     "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/"
   ],
-  "afventer_artikler": 60
+  "afventer_artikler": 57
 }

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-07T15:44:28.800933+00:00",
- "artikler_i_alt": 122,
+ "opdateret": "2026-10-07T21:31:02.551414+00:00",
+ "artikler_i_alt": 133,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -543,9 +543,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
-   "som_ekstra": 3,
+   "i_listen": 46,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Microsoft afslører pris på AI-PC'er med RTX Spark",
+     "dato": "",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia RTX Spark debuterer i Surface Laptop Ultra"
+    },
+    {
+     "rubrik": "Google åbner SynthID-tjek for alle",
+     "dato": "",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google lancerer global SynthID-detektor til alle"
+    },
     {
      "rubrik": "Trump omdøber AI til super intelligence",
      "dato": "",
@@ -574,11 +592,47 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "ChatGPT får knapper, grafer og lommeregnere",
+     "dato": "2026-10-07T18:00:19",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+     "side": "artikel/b81f72b7c1ca73df.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nous Research rejser 90 mio. dollars til erhvervs-AI-agenter",
+     "dato": "2026-10-07T20:48:45",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+     "side": "artikel/1d6dcd635bc7906e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google Playground skaber spil uden kodning",
+     "dato": "2026-10-07T14:36:23",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
+     "side": "artikel/60862e24b98b764e.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Healthleap rejser 38 mio. dollars til oversete sygdomme",
      "dato": "2026-10-07T15:07:08",
      "foerst_set": "2026-10-07T15:44:28",
      "link": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
      "side": "artikel/fc38477a8aad9442.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta Muse er nu tilgængelig på iPad",
+     "dato": "2026-10-07T18:30:57",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
+     "side": "artikel/7d49c27e2bd019e0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -592,11 +646,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google Playground skaber spil uden kodning",
-     "dato": "2026-10-07T14:36:23",
+     "rubrik": "OpenAI's Dots-chef Embiricos taler på Disrupt",
+     "dato": "2026-10-07T14:30:00",
      "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
-     "side": "artikel/60862e24b98b764e.html",
+     "link": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots/",
+     "side": "artikel/3cadd0110a707051.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "TechCrunch Disrupt 2026 udgiver fuldt roundtable-program",
+     "dato": "2026-10-07T14:15:00",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://techcrunch.com/2026/10/07/get-hands-on-the-full-lineup-of-interactive-roundtables-at-techcrunch-disrupt-2026/",
+     "side": "artikel/504b159a61622b29.html",
      "hvor": "forside",
      "under": ""
     },
@@ -635,61 +698,16 @@ window.KILDER_STATUS = {
      "side": "artikel/3bd217aa84bd6b84.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Mistral lancerer 1.000-milliarders model Le Chonk",
-     "dato": "2026-10-06T14:33:16",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-     "side": "artikel/8653701588de7d2f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic giver startups gratis Claude Team og credits",
-     "dato": "2026-10-06T16:00:00",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
-     "side": "artikel/e5ed95e929eaa4eb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Hark Pro bruger din computer for dig",
-     "dato": "2026-10-06T18:22:45",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
-     "side": "artikel/47e6fb94fc925c4a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Pinterest oversætter skønhedspins til salonplaner",
-     "dato": "2026-10-06T14:00:49",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/",
-     "side": "artikel/8a2aa9dafacda070.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mirror Particle bygger verdensmodel af menneskelig adfærd",
-     "dato": "2026-10-06T16:35:00",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
-     "side": "artikel/23d4205c2c0b5e9a.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     9
     ],
     [
      "Ars Technica AI",
-     3
+     5
     ],
     [
      "Anthropic News",
@@ -707,9 +725,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 25,
-   "som_ekstra": 11,
+   "i_listen": 29,
+   "som_ekstra": 13,
    "seneste": [
+    {
+     "rubrik": "GPT-6 tilføjer knapper og diagrammer i ChatGPT",
+     "dato": "",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+     "side": "",
+     "hvor": "under",
+     "under": "ChatGPT får knapper, grafer og lommeregnere"
+    },
+    {
+     "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
+     "dato": "",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse er nu tilgængelig på iPad"
+    },
     {
      "rubrik": "OpenAI indfører tekstvandmærke i ChatGPT og Codex",
      "dato": "",
@@ -801,26 +837,62 @@ window.KILDER_STATUS = {
      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
     },
     {
-     "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     "rubrik": "Copilot kan finde og sende dine filer",
+     "dato": "2026-10-07T14:01:20",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+     "side": "artikel/b768f5cf6d656bc9.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
-     "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
-     "dato": "2026-10-07T11:37:23",
+     "rubrik": "Nvidia RTX Spark debuterer i Surface Laptop Ultra",
+     "dato": "2026-10-07T14:42:22",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+     "side": "artikel/f7ce188fe18489b0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsofts Surface RTX Spark kan nu forudbestilles",
+     "dato": "2026-10-07T13:46:44",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+     "side": "artikel/46b0057f882868d6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google og Meta finansierer virtuel celle til forskning",
+     "dato": "2026-10-07T10:40:52",
      "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
-     "side": "artikel/c7ba7d4146803430.html",
+     "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
+     "side": "artikel/a238c94c5dbb4587.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "DoorDash advarer restauranter om Bites' ChatGPT-bestillinger",
+     "dato": "2026-10-07T08:00:00",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
+     "side": "artikel/5b086971e9bdbe66.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI udsender 722 manuskripter med matematiske resultater",
+     "dato": "2026-10-06T19:26:38",
+     "foerst_set": "2026-10-07T00:01:34",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+     "side": "artikel/9edaf582bfe592c5.html",
      "hvor": "forside",
      "under": ""
     },
     {
      "rubrik": "Google spærrer Gemini Pro for gratisbrugere",
-     "dato": "2026-10-06T09:19:01",
+     "dato": "2026-10-06T13:19:01",
      "foerst_set": "2026-10-06T18:34:36",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
      "side": "artikel/8afef565706a7a71.html",
@@ -829,7 +901,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Apple udvikler kamera uden videolagring",
-     "dato": "2026-10-06T12:29:44",
+     "dato": "2026-10-06T16:29:44",
      "foerst_set": "2026-10-06T18:34:36",
      "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
      "side": "artikel/9208b0a8180b04c5.html",
@@ -838,7 +910,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Alexa Plus synger “lalala” i flere minutter",
-     "dato": "2026-10-06T06:53:11",
+     "dato": "2026-10-06T10:53:11",
      "foerst_set": "2026-10-06T11:28:03",
      "link": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
      "side": "artikel/d7617a592abc80bc.html",
@@ -847,7 +919,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Nolla Health lader AI scanne ansigter og ordinere",
-     "dato": "2026-10-05T16:14:57",
+     "dato": "2026-10-05T20:14:57",
      "foerst_set": "2026-10-06T01:24:34",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
      "side": "artikel/5b8c439bb6210497.html",
@@ -871,57 +943,12 @@ window.KILDER_STATUS = {
      "side": "artikel/a2264bd4ba738a5a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini Calling kan ringe til din mor for dig",
-     "dato": "2026-10-05T19:09:55",
-     "foerst_set": "2026-10-06T01:24:34",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
-     "side": "artikel/a2b98cad80f6c5b5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI's presseperson afbrød spørgsmål om brugers selvmord",
-     "dato": "2026-10-05T16:55:42",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
-     "side": "artikel/69da73e8cd7f75ed.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Sam Altman: AI-skader er værd at acceptere",
-     "dato": "2026-10-05T16:44:21",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1004811/openai-altman-bad-things-ai-tradeoff",
-     "side": "artikel/abe17cd905b61bb7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Schiff vil ny AI-myndighed, domstole kan bremse",
-     "dato": "2026-10-05T14:30:00",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption",
-     "side": "artikel/76ea28d1e12d3565.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Benjamin Riley kalder AI hjernens junkfood",
-     "dato": "2026-10-05T10:00:00",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
-     "side": "artikel/c92be47c04d50143.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     6
+     9
     ],
     [
      "Ars Technica AI",
@@ -955,9 +982,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
-   "som_ekstra": 5,
+   "i_listen": 12,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Mistral udgiver Le Chonk med en billion parametre",
+     "dato": "",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+     "side": "",
+     "hvor": "under",
+     "under": "Mistral lancerer 1.000-milliarders model Le Chonk"
+    },
     {
      "rubrik": "OpenAI vandmærker ChatGPT-tekst som standard i EU",
      "dato": "",
@@ -986,6 +1022,15 @@ window.KILDER_STATUS = {
      "under": "Apple strammer Full Disk Access til AI-agenter"
     },
     {
+     "rubrik": "Dommer: Forventet trafik er ikke aftale med Google",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
+     "side": "",
+     "hvor": "under",
+     "under": "Chegg og PMC tabte søgsmål mod Google"
+    },
+    {
      "rubrik": "Google Gemini 4 Argon springer over 3.5 Pro",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -995,13 +1040,22 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
-     "rubrik": "Dommer: Forventet trafik er ikke aftale med Google",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/",
-     "side": "",
-     "hvor": "under",
-     "under": "Chegg og PMC tabte søgsmål mod Google"
+     "rubrik": "Michael Smith får 18 måneders fængsel for AI-fup",
+     "dato": "2026-10-07T17:57:39",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/",
+     "side": "artikel/482f5b7f64b54381.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google lancerer global SynthID-detektor til alle",
+     "dato": "2026-10-07T14:00:08",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+     "side": "artikel/49bf44826c74a3eb.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "MCP huller lader én agent styre den næste",
@@ -1096,11 +1150,11 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
-     3
+     "TechCrunch AI",
+     5
     ],
     [
-     "TechCrunch AI",
+     "The Verge AI",
      3
     ],
     [

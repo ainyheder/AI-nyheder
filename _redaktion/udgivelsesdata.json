@@ -1,65 +1,101 @@
 {
-  "opdateret": "2026-10-07T15:44:28.800933+00:00",
+  "opdateret": "2026-10-07T21:31:02.551414+00:00",
   "kladder": [
     {
-      "titel": "OpenAI drops another batch of mathematical breakthroughs",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-      "resume": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a run of breakthroughs that have both impressed and unsettled parts of the mathematical community while raising questions about research ethics and […]",
-      "dato": "2026-10-06T19:26:38-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Forskning",
-      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
-      "rubrik": "OpenAI offentliggør 722 manuskripter med matematikløsninger",
-      "resume_da": "Løsninger til gamle, åbne problemer kommer fra en ikke-udgivet frontier-model og dækker 372 resultatfamilier.",
-      "kat_ai": true,
+      "titel": "Introducing Claude Haiku 5.5",
+      "link": "https://www.anthropic.com/claude-haiku-5-5",
+      "resume": "Our fastest, cheapest, and most capable small model yet. It’s designed for high-volume, cost-sensitive work.",
+      "dato": "2026-10-07T00:00:00+00:00",
+      "kilde": "Anthropic News",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Anthropic lancerer Claude Haiku 5.5 som hurtigste lille model",
+      "resume_da": "Modellen er designet til volumenkrævende opgaver med høje omkostningskrav og beskrives som hurtigere og billigere end tidligere udgaver.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 4,
         "betydning": 4,
-        "brugbarhed": 2,
-        "dokumentation": 3,
+        "brugbarhed": 4,
+        "dokumentation": 4,
         "dansk": 0,
-        "type": "forskning",
+        "type": "lancering",
         "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI publicerer 722 manuskripter med løsninger på åbne matematiske problemer fra en ikke-udgivet model",
-        "forbehold": "Model er ikke udgivet; resultater er ikke uafhængigt verificerede",
-        "emne": "openai"
+        "model_lancering": true,
+        "begrundelse": "Anthropic lancerer Claude Haiku 5.5 som hurtigste og billigste lille model",
+        "forbehold": "",
+        "emne": "anthropic claude haiku 5.5"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 8,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Claude Haiku 5.5",
+      "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+      "resume": "As previously promised , here's Anthropic's new fast, low cost model: Introducing Claude Haiku 5.5 . The previous Haiku, 4.5, was very much showing its age. It came out almost a year ago , and was priced at $1/million input and $5/million output - relatively expensive even back then, and a full 10x the price of OpenAI's GPT-6 Luna , released last month. The new Haiku exactly matches the price of…",
+      "dato": "2026-10-07T20:56:21+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Anthropic lancerer Claude Haiku 5.5",
+      "resume_da": "Den nye model erstatter Haiku 4.5, der har været på markedet i næsten et år, og som ved lanceringen kostede 10 gange så meget som GPT-6 Luna.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Anthropic udgiver Claude Haiku 5.5 som afløser for Haiku 4.5 til lavere pris",
+        "forbehold": "",
+        "emne": "anthropic claude haiku"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Multimodal open d1 decision models for the edge",
+      "link": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "resume": "",
+      "dato": "2026-10-07T16:54:33+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Multimodale d1-beslutningsmodeller til kanten",
+      "resume_da": "Åben modeloptimeret til at køre AI-beslutninger lokalt på enheder med begrænset beregningskraft.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Liquid AI udgiver open d1, multimodale beslutningsmodeller til kanten",
+        "forbehold": "",
+        "emne": "liquid ai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
       "prio": 7,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Mistral says \"Le Chonk\" can challenge the best AI models",
-      "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
-      "resume": "Mistral says Le Chonk can rival top closed models while remaining open-weight.",
-      "dato": "2026-10-07T14:12:37+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Mistral hævder Le Chonk matcher topmodeller",
-      "resume_da": "Mistral kalder den open-weight model en konkurrent til lukkede topmodeller, men fremviser ingen målinger i materialet.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Google’s new SynthID website can identify AI-generated media",
-      "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
-      "resume": "Google on Tuesday launched a new site that lets anyone verify whether a piece of media, be it an image, a video, or an audio clip, is generated using AI.",
-      "dato": "2026-10-07T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Google lancerer SynthID-tjek for AI-medier",
-      "resume_da": "Hjemmesiden lader alle verificere, om et billede, en video eller en lydfil er skabt med AI.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -141,6 +177,7 @@
       "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "rubrik": "OpenAI deler matematiske resultater og Lean-beviser på GitHub",
       "resume_da": "De nye resultater på åbne problemer stammer fra en intern frontier-model, og forskningsdetaljerne er offentliggjort sammen med bevisformaliseringer.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -157,8 +194,106 @@
         "emne": "openai mathematics ai progress"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 8,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material",
+      "link": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/",
+      "resume": "Meta launches new AI tools after discovering ads on its platforms that may look normal but direct users to harmful content elsewhere online.",
+      "dato": "2026-10-07T16:53:46+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Meta indfører AI-værktøjer mod børneporno-reklamer",
+      "resume_da": "Værktøjerne skal fange tilsyneladende normale annoncer, der leder brugere videre til skadeligt indhold på andre sider.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Meta lancerer AI-værktøjer til at opdage annoncer, der skjult fører til CSAM på eksterne sider.",
+        "forbehold": "Artiklen giver ingen metode- eller resultat­detaljer om værktøjernes effekt.",
+        "emne": "meta csam-annoncedetektion"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+      "link": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+      "resume": "ChatGPT’s teen safeguards are meant to protect vulnerable users, but new testing found the chatbot continues encouraging engagement during crises and potentially encourages unhealthy relationships with the AI itself.",
+      "dato": "2026-10-07T18:15:28+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "ChatGPT fastholder teenagere i krisesituationer",
+      "resume_da": "Ny test peger på, at ChatGPT fortsætter samtalen under mentale kriser og kan opfordre til usunde relationer til AI'en, trods indbyggede sikkerhedsforanstaltninger.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ny test finder at ChatGPT fortsætter samtaler under teenages mentale kriser",
+        "forbehold": "",
+        "emne": "chatgpt teens"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "resume": "",
+      "dato": "2026-10-07T12:45:31+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Nemotron opnår guldresultater ved programmerings- og matematikolympiade",
+      "resume_da": "Fine-tuning af modelfamilien resulterede i to resultater på guld niveau ved IOI og IMO.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nvidia fine-tunede Nemotron opnåede guldniveau ved både IOI og IMO",
+        "forbehold": "",
+        "emne": "nvidia nemotron"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -192,6 +327,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "ChatGPT is getting college planning tools",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
+      "resume": "OpenAI is bringing new tools to ChatGPT for Teens, a mode for teens introduced in August with safeguards and break reminders, to help users with the college application process. \"College Planner brings together application requirements, deadlines, tasks, and financial-aid steps for schools on a student's list in one plan,\" OpenAI says. \"Students applying to several […]",
+      "dato": "2026-10-07T12:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "OpenAI lancerer College Planner til ChatGPT for Teens",
+      "resume_da": "Værktøjet samler ansøgningskrav, deadlines og økonomisk støtte i én plan for gymnasieelever, som er i en særlig tilstand med sikkerhedsforanstaltninger.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "ChatGPT for Teens får College Planner, der samler krav, deadlines og økonomisk støtte.",
+        "forbehold": "Funktion, ikke ny model; begrænset til teen-tilstand.",
+        "emne": "openai chatgpt college planner"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -240,6 +408,7 @@
       "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "rubrik": "Common Sense Media kalder ChatGPT for Teens uacceptabel",
       "resume_da": "Den ungevenlige vurdering rettes mod OpenAI's chatbot fra august, som er designet til at hjælpe elever med læring, men ifølge organisationen udgør en risiko.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -256,7 +425,6 @@
         "emne": "common sense media openai chatgpt teens"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -296,6 +464,72 @@
       ]
     },
     {
+      "titel": "Helping teens learn, plan, and shape the future of AI",
+      "link": "https://openai.com/index/teens-learn-and-plan",
+      "resume": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "dato": "2026-10-07T12:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "OpenAI udvider ChatGPT for Teens med flashcards og AI-råd",
+      "resume_da": "College Planner suppleres af quizzer og et teenage-råd, der skal hjælpe elever med at forme fremtidens AI.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI udvider ChatGPT for Teens med College Planner, quizzer og teenage-råd",
+        "forbehold": "",
+        "emne": "openai chatgpt teens"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "link": "https://openai.com/index/radisson",
+      "resume": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "dato": "2026-10-07T07:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Radisson integrerer hotelreservation direkte i ChatGPT",
+      "resume_da": "I samarbejde med Accenture lancerer hotelkæden en plugin, der lader rejsende finde og booke værelser gennem OpenAI-teknologi.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Radisson og Accenture lancerer ChatGPT-plugin til hotelbooking",
+        "forbehold": "",
+        "emne": "radisson chatgpt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Quoting Victoria Kim",
       "link": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
       "resume": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. — Victoria Kim , Reporting from the Australian parliament Tags: accidental-cyberattacks , generative-ai , ai-security-research , openai ,…",
@@ -329,77 +563,17 @@
       ]
     },
     {
-      "titel": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
-      "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
-      "resume": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into Biohub, the nonprofit biomedical research organization founded by Mark Zuckerberg and his wife, Priscilla Chan, as reported by Reuters. The funding is part of a $1.8 billion initiative to build AI datasets that could allow researchers to \"ask, predict, […]",
-      "dato": "2026-10-07T10:40:52-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Google DeepMind investerer 300 millioner i Biohub",
-      "resume_da": "Pengene indgår i et initiativ på 1,8 milliarder dollars til AI-datasæt, der skal lade forskere modellere biologiske processer.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "OpenAI’s Alexander Embiricos is coming to TechCrunch Disrupt 2026 — days after the launch of Dots",
-      "link": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots/",
-      "resume": "OpenAI’s Alexander Embiricos is coming to the AI Stage at TechCrunch Disrupt 2026, just days after the launch of Dots. Join this conversation by registering for your pass. Get you pass now to save up to $100 and get a second at 50% off.",
-      "dato": "2026-10-07T14:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Alexander Embiricos optræder på TechCrunch Disrupt",
-      "resume_da": "OpenAI-staffeden taler på AI-scenen dage efter lanceringen af Dots; billetter kan stadig købes med rabat.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Get hands-on: The full lineup of interactive roundtables at TechCrunch Disrupt 2026",
-      "link": "https://techcrunch.com/2026/10/07/get-hands-on-the-full-lineup-of-interactive-roundtables-at-techcrunch-disrupt-2026/",
-      "resume": "From Nvidia and Chime to Obvious Ventures and Anthropic, explore the entire roundtable agenda at TechCrunch Disrupt 2026. Register now to save up to $100 on your pass and get a second pass at 50% off.",
-      "dato": "2026-10-07T14:15:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "TechCrunch Disrupt samler AI-roundtables",
-      "resume_da": "Blandt deltagerne er Nvidia, Chime, Obvious Ventures og Anthropic; arrangementet afholdes i San Francisco.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Google rolls out improved SynthID AI content detector, now available globally",
-      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
-      "resume": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
-      "dato": "2026-10-07T14:00:08+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Google udgiver forbedret SynthID-detektor globalt",
-      "resume_da": "Detektoren kan nu identificere AI-indhold fra både Google, OpenAI og flere andre kilder.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
-      "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "resume": "",
-      "dato": "2026-10-07T12:45:31+00:00",
-      "kilde": "Hugging Face",
+      "titel": "GPT-6 and Intelligent UI for everyone",
+      "link": "https://openai.com/index/gpt-6-for-everyone",
+      "resume": "GPT‑6 is rolling out globally in ChatGPT with Intelligent UI, delivering faster responses with visuals and interactive experiences you can explore and use directly.",
+      "dato": "2026-10-07T00:00:00+00:00",
+      "kilde": "OpenAI Blog",
       "kategori": "Labs",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "OpenAI ruller GPT-6 ud globalt med Intelligent UI",
+      "resume_da": "Den nye model viser svar med grafik og interaktive elementer, brugere kan manipulere direkte i chatten.",
       "afventer": [
-        "Mangler dansk overskrift",
-        "Mangler dansk indledning",
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
     },
@@ -431,39 +605,6 @@
         "emne": "openai ironclad"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "AI could upend food delivery",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
-      "resume": "DoorDash, the leading food delivery app, processed 970 million orders in its second quarter this year and generated $4.5 billion in revenue. A 10-person startup called Bites is a blip in comparison: It has just around 300 restaurants signed up in the Bay Area, where it's operating as a pre-seed startup. But this summer, Bites […]",
-      "dato": "2026-10-07T08:00:00-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Bites vil erstatte apps med AI i madbestilling",
-      "resume_da": "Den pre-seed-startup i Bay Area har omkring 300 tilmeldte restauranter, mens DoorDash behandlede 970 millioner ordrer i andet kvartal.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "analyse",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "AI-agenter kan potentielt ændre madlevering, men Bites er kun pre-seed med 300 restauranter mod DoorDash' skala.",
-        "forbehold": "Kildeudrag giver ikke konkret dokumentation for agentens evner eller udbredelse.",
-        "emne": "bites agentic food delivery"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -513,6 +654,7 @@
       "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
       "rubrik": "Jump Trading bruger ChatGPT til kvantitativ forskning",
       "resume_da": "Firmaet kombinerer ifølge OpenAI længerevarende AI-arbejdsgange med flere datakilder og menneskelig gennemgang.",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -529,7 +671,6 @@
         "emne": "jump trading openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
       "prio": 3,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1163,99 +1304,33 @@
       ]
     },
     {
-      "titel": "OpenAI extends cyber access to Ukraine for civilian defense",
-      "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "resume": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-      "dato": "2026-09-23T13:00:00+00:00",
-      "kilde": "OpenAI Blog",
+      "titel": "Advancing Private AI Compute with secure, server-side memory",
+      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+      "dato": "2026-09-23T16:00:57+00:00",
+      "kilde": "Google DeepMind",
       "kategori": "Politik & jura",
-      "foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "eget_foerst_set": "2026-09-23T13:49:23.779632+00:00",
-      "rubrik": "OpenAI udvider Daybreak-programmet til Ukraines civile forsvar",
-      "resume_da": "Programmet gives til regeringen i Ukraine og skal beskytte civil infrastruktur mod cyberangreb.",
-      "kat_ai": true,
+      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
+      "rubrik": "Google udvider Private AI Compute med hukommelse",
+      "resume_da": "Private AI Compute får nu serverbaseret hukommelse, som gemmer personlige data på Googles side i stedet på brugerens enhed.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
         "betydning": 3,
         "brugbarhed": 2,
-        "dokumentation": 4,
+        "dokumentation": 2,
         "dansk": 0,
         "type": "sikkerhed",
         "ai_relevant": true,
         "model_lancering": false,
-        "begrundelse": "OpenAI udvider Daybreak-adgangen til Ukraines regering til cyberforsvar af civil infrastruktur.",
-        "forbehold": "Hvad den udvidede adgang konkret omfatter, beskrives ikke.",
-        "emne": "openai"
+        "begrundelse": "Private AI Compute får serverbaseret hukommelse med data gemt hos Google",
+        "forbehold": "Kort omtale uden detaljer om sikkerhedsmodel eller begrænsninger",
+        "emne": "google deepmind"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Wayfair boosts catalog accuracy and support speed with OpenAI",
-      "link": "https://openai.com/index/wayfair",
-      "resume": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
-      "dato": "2026-09-25T00:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-06T01:24:34.977372+00:00",
-      "eget_foerst_set": "2026-10-06T01:24:34.977372+00:00",
-      "rubrik": "Wikipedia mistænker OpenAI-bots for maj-nedbrud",
-      "resume_da": "Wikimedia Foundation bekræfter fund af uautoriseret OpenAI-agentaktivitet, herunder redigeringer og mislykkede forsøg på at udnytte Ethical OS-værktøjet.",
       "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI kundecase: Wayfair bruger eksisterende modeller til ticket-triage og produktkatalog-opgradering",
-        "forbehold": "Producentens egne påstande om resultater, ingen uafhængig måling",
-        "emne": "openai wayfair"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 4,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-      "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "resume": "",
-      "dato": "2026-09-24T14:08:57+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-09-24T20:05:24.209273+00:00",
-      "eget_foerst_set": "2026-09-24T20:05:24.209273+00:00",
-      "rubrik": "Hugging Face præsenterer LFM2.5-VL-DSpark",
-      "resume_da": "Nyt vision-sprog-model fra Hugging Face. Materialet er kortfattet og specificerer hverken evner eller adgang.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "LiquidAI præsenterer nyt vision-sprog-model LFM2.5-VL-DSpark på Hugging Face.",
-        "forbehold": "Materialet er kortfattet; hverken evner eller adgang specificeres.",
-        "emne": "liquidai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
@@ -1290,21 +1365,6 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Advancing Private AI Compute with secure, server-side memory",
-      "link": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "resume": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-      "dato": "2026-09-23T16:00:57+00:00",
-      "kilde": "Google DeepMind",
-      "kategori": "Labs",
-      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "rubrik": "Google udvider Private AI Compute med hukommelse",
-      "resume_da": "Private AI Compute får nu serverbaseret hukommelse, som gemmer personlige data på Googles side i stedet på brugerens enhed.",
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1764,39 +1824,6 @@
         "begrundelse": "OpenAI-kundecase: Proaction bruger Codex, GPT-Live-1 og GPT-6 Astra og sparer 75+ timer.",
         "forbehold": "Tal og gevinster står alene i OpenAI's egen kundecase uden uafhængig verifikation.",
         "emne": "proaction / openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Two years of OpenAI Academy",
-      "link": "https://openai.com/index/two-years-of-openai-academy",
-      "resume": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-      "dato": "2026-09-23T16:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "eget_foerst_set": "2026-09-23T19:47:07.099847+00:00",
-      "rubrik": "OpenAI markerer to års drift af OpenAI Academy",
-      "resume_da": "OpenAI oplyser, at Academy-kurserne i AI-færdigheder nu rækker til endnu flere lokalsamfund.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI markerer to års Academy og udvider AI-kurser til flere lokalsamfund.",
-        "forbehold": "Jubilæumsindlæg uden tal for deltagelse, dækning eller effekt.",
-        "emne": "openai academy"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 1,
@@ -16684,6 +16711,14 @@
           "resume_da": "Pixel 11-brugere kan lade Gemini stå for hele opkaldet – fra tastevalg til ventetid i kø – med live-transskript og mulighed for at tage over.",
           "dato": "2026-09-24T12:04:31-04:00",
           "foerst_set": "2026-09-24T20:05:24.209273+00:00"
+        },
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+          "rubrik": "Gemini Calling kan ringe til din mor for dig",
+          "resume_da": "Android Authority fandt en skjult introduktionsskærm i en Android-opdatering, hvor Gemini ringer i stedet for at sende sms'er til venner og familie.",
+          "dato": "2026-10-05T23:09:55+00:00",
+          "foerst_set": "2026-10-06T01:24:34.977372+00:00"
         }
       ],
       "detaljer": [
@@ -26105,7 +26140,7 @@
       "titel": "This startup is issuing AI-generated acne prescriptions",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
       "resume": "People in Utah can now use AI to get a prescription for acne treatment. On Monday, healthcare startup Nolla Health announced that users in the state can scan their faces using its app, allowing its AI system to analyze acne severity and autonomously write a prescription, as reported earlier by Bloomberg. The service is launching […]",
-      "dato": "2026-10-05T16:14:57-04:00",
+      "dato": "2026-10-05T20:14:57+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-06T01:24:34.977372+00:00",
@@ -27127,72 +27162,6 @@
       "side": "artikel/16ad415e0c7f9c2c.html"
     },
     {
-      "titel": "Gemini Call for Me might tell your mom you’re running late",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
-      "resume": "Google may be expanding its \"Call for Me\" AI feature beyond business calls so you can use it to send messages to friends and family. Android Authority reports finding a \"Gemini Calling\" introductory screen in an APK teardown with examples that include \"Call Mom and tell her I will be 15 minutes late\" and \"Call […]",
-      "dato": "2026-10-05T19:09:55-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Hverdags-AI",
-      "foerst_set": "2026-10-06T01:24:34.977372+00:00",
-      "eget_foerst_set": "2026-10-06T01:24:34.977372+00:00",
-      "rubrik": "Gemini Calling kan ringe til din mor for dig",
-      "resume_da": "Android Authority fandt en skjult introduktionsskærm i en Android-opdatering, hvor Gemini ringer i stedet for at sende sms'er til venner og familie.",
-      "brief": "",
-      "sektioner": [
-        {
-          "overskrift": "Skjult skærm lover opkald til familiemedlemmer",
-          "tekst": "Gemini, den AI-assistent Google udvikler til telefoner og andre enheder, kan snart ringe til dine nærmeste på dine vegne. Android Authority har fundet en introduktionsskærm med navnet \"Gemini Calling\" i en såkaldt APK-teardown – en gennemgang af en endnu ikke offentlig softwareopdatering.\n\nEksemplerne på skærmen lyder: \"Ring til mor og sig, at jeg er 15 minutter forsinket\" og \"Ring til John og spørg, om han kommer til aftensmad.\" Så hvis det bliver offentliggjort, kan du altså give Gemini en besked og lade den aflevere den med stemmen."
-        },
-        {
-          "overskrift": "Begrænset til korte beskeder, ikke lange snakke",
-          "tekst": "Baseret på eksemplerne lyder det, som om opkaldene vil være enkle – mere som en talebesked end en rigtig samtale. Gemini ville sandsynligvis ikke kunne føre en længere samtale med en slægtning, men i stedet aflevere en kort besked.\n\nDet kan være nyttigt for personer, der foretrækker telefonopkald, ofte overser beskeder – eller stadig har en fastnettelefon. Men da det er fundet i en skjult opdatering, er det fortsat uvist, om Google overhovedet vil offentliggøre funktionen."
-        },
-        {
-          "overskrift": "Brugerne kan vælge, hvilke app-data Gemini må bruge",
-          "tekst": "Android Authority har også fundet \"granulære tilladelser\" i opdateringen. Det vil sige, at brugere kan tillade eller afvise Gemini-adgang til hver enkelt app for sig.\n\nBlandt indstillingerne ses tilladelser til telefonopkald, hvilket kan give brugerne mulighed for at afvise at modtage automatiserede opkald fra Gemini. Men også disse indstillinger er kun fundet i kode – de er endnu ikke bekræftet af Google."
-        }
-      ],
-      "noegletal": [],
-      "figurer": [],
-      "detaljer": [
-        "Android Authority opdagede funktionen i en APK-teardown – gennemgang af en endnu ikke offentlig opdatering",
-        "Eksemplerne omfatter både familiemedlemmer og venner, ikke kun erhvervskontakter",
-        "Begge fund – Gemini Calling og granulære tilladelser – er stadig rygter og ubekræftet"
-      ],
-      "betydning": "Hvis Google offentliggør funktionen, kan AI-leverede telefonopkald blive en del af hverdagen for Android-brugere – og med granulære tilladelser kan brugerne selv styre, hvornår det sker.",
-      "pointer": [
-        "Gemini Calling fundet i en skjult Android-opdatering",
-        "Opkaldene bliver sandsynligvis korte talebeskeder",
-        "Google kan vælge aldrig at offentliggøre funktionen"
-      ],
-      "billedmotiv": "A solid handset shape with an outgoing call waveform leaving it toward a second handset, illustrating Gemini placing a voice call instead of a text message; the Google Gemini four-point spark in its blue, red, yellow and green gradient sits front-facing on the calling handset, with a message bubble reading a short spoken line beside it.",
-      "billedmotiv_instruks": "5603ed77b9f220ec2f8c",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "rygte",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "APK-fund antyder udvidelse af Call for Me til beskeder til familie og venner",
-        "forbehold": "Baseret på APK-teardown og rygter, ikke officiel lancering",
-        "emne": "google gemini"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-06T01:49:03.041810+00:00"
-      },
-      "prio": 4,
-      "side": "artikel/a2b98cad80f6c5b5.html"
-    },
-    {
       "titel": "People really hate AI, so why can’t they get enough?",
       "link": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
       "resume": "Over the summer I talked to the CEO of Springboards, a startup building an LLM that’s designed to come up with a wider variety of responses than its mainstream rivals do. At the start of the call, he said something that’s been stuck in my head since: “We often say that we’re a self-loathing AI…",
@@ -27618,7 +27587,7 @@
       "titel": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
       "link": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
       "resume": "An unsettling Alexa Plus bug has seen some Amazon Echo smart home speakers reduced to saying - and sometimes singing - nothing but \"lalala\" on repeat for minutes at a time, often in the middle of conversations with users. When quizzed about the behavior, Alexa is apparently entirely unaware of what it's been doing. The […]",
-      "dato": "2026-10-06T06:53:11-04:00",
+      "dato": "2026-10-06T10:53:11+00:00",
       "kilde": "The Verge AI",
       "kategori": "Hverdags-AI",
       "foerst_set": "2026-10-06T11:28:03.701227+00:00",
@@ -27907,7 +27876,7 @@
       "titel": "We can’t just change the definition of ‘recording’",
       "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
       "resume": "With AI hardware, tech companies are pushing the definition of what does and doesn't constitute a recording. For most of gadget history, it'd be reasonable to assume that a device with a microphone or camera is either recording you or it isn't; it's either on or off, without much gray area. Microphones capture sound. Cameras […]",
-      "dato": "2026-10-06T12:29:44-04:00",
+      "dato": "2026-10-06T16:29:44+00:00",
       "kilde": "The Verge AI",
       "kategori": "Politik & jura",
       "foerst_set": "2026-10-06T18:34:36.521432+00:00",
@@ -28302,7 +28271,7 @@
       "titel": "Google is about to remove free access to Gemini Flash and Pro",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
       "resume": "Starting on October 9th, anyone using Google Gemini on a free plan will be limited to the Flash Lite model. Free users can currently choose from Gemini Flash Lite, Flash, and Pro, but now you'll need a $4.99/month Google AI Plus subscription to access the standard Flash model. However, that subscription is also getting a […]",
-      "dato": "2026-10-06T09:19:01-04:00",
+      "dato": "2026-10-06T13:19:01+00:00",
       "kilde": "The Verge AI",
       "kategori": "Penge & marked",
       "foerst_set": "2026-10-06T18:34:36.521432+00:00",
@@ -28830,11 +28799,7 @@
         "Individuelle forskere kan kun søge Defense Access",
         "Blokeringer mod fysisk skade består i alle niveauer"
       ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-07T00:18:53.380101+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28851,7 +28816,11 @@
         "emne": "anthropic cyber verification program"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T00:18:53.380101+00:00"
+      },
       "prio": 7,
       "side": "artikel/522cf6129a288bba.html"
     },
@@ -28970,11 +28939,7 @@
       ],
       "billedmotiv": "A geometric graph of solid nodes connected by straight edges, one node highlighted to mark a resolved proof, resting beside a folded page symbolising 24 years of work on Barnette's conjecture.",
       "billedmotiv_instruks": "735d849a97ff517cb685",
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-07T06:36:17.488977+00:00"
-      },
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -28991,7 +28956,11 @@
         "emne": "barnette conjecture graph theory"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T06:36:17.488977+00:00"
+      },
       "prio": 1,
       "side": "artikel/17929c3f9f5ee1dd.html"
     },
@@ -29089,7 +29058,18 @@
       "billedmotiv": "A large solid model weight file block stamped with the Mistral AI bull-head mark, showing the interlocked weight layers of Le Chonk, with a lock icon rotating into an open position to show weights being released in three weeks after safety testing.",
       "billedmotiv_instruks": "498a30cbc96c1c58d315",
       "billede": "data/img/9b49e54396717e62.jpg",
-      "side": "artikel/8653701588de7d2f.html"
+      "side": "artikel/8653701588de7d2f.html",
+      "historie_dato": "2026-10-06T14:33:16+00:00",
+      "andre": [
+        {
+          "kilde": "Ars Technica AI",
+          "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+          "rubrik": "Mistral udgiver Le Chonk med en billion parametre",
+          "resume_da": "Open-weight modellen hævdes at matche lukkede AI-modeller og er nu tilgængelig til fri brug og tilpasning.",
+          "dato": "2026-10-07T14:12:37+00:00",
+          "foerst_set": "2026-10-07T15:44:28.800933+00:00"
+        }
+      ]
     },
     {
       "titel": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
@@ -29102,24 +29082,7 @@
       "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
       "resume_da": "Google DeepMind-udgaven oversætter også billeder, lyd og kode til samme talrum og er bygget til at køre lokalt på enheden.",
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 4,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Google DeepMind udgiver EmbeddingGemma 2, en åben letvægtsmodel til multimodale embeddinger.",
-        "forbehold": "Kildeudraget har ingen tekst - specifikationer og adgang ikke dokumenteret her.",
-        "emne": "google deepmind embeddinggemma 2"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 6,
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Fire medier bliver til én søgbar liste",
@@ -29142,8 +29105,6 @@
           "tekst": "Google DeepMind peger på steder, modellen allerede kan prøves: Instant Media Search i Google AI Edge Gallery søger i et mediebibliotek med tekst eller billede, og Video Moments Finder finder øjeblikke i video ud fra tekst eller lyd.\n\nI appen Google AI Edge Foresight henter EmbeddingGemma 2 lokale filer, mens Gemma 4 ræsonnerer over dem. Realtidsbeslutninger som klassificering, ruter og forudsigelser oprettes via MediaPipe Decision Task API."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "9,92 point",
@@ -29162,6 +29123,7 @@
           "label": "Størrelsen på specialmodeller, EmbeddingGemma 2 overgår ifølge Google DeepMind"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Apache 2.0-licensen tillader kommerciel brug.",
         "EmbeddingGemma 2 deler teksttokenizer og lydkoder med Gemma 4.",
@@ -29175,13 +29137,31 @@
         "MTEB Code stiger fra 68,76 til 78,68",
         "Apache 2.0-licens og 740 millioner parametre"
       ],
+      "billedmotiv": "Four solid blocks representing text, image, audio and video merging into one shared numeric strip beside the Google four-colour G mark, with a video play triangle highlighted from a text search query on the same strip.",
+      "billedmotiv_instruks": "4703cce8cbaba681e789",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google DeepMind udgiver EmbeddingGemma 2, en åben letvægtsmodel til multimodale embeddinger.",
+        "forbehold": "Kildeudraget har ingen tekst - specifikationer og adgang ikke dokumenteret her.",
+        "emne": "google deepmind embeddinggemma 2"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-07T15:59:10.085399+00:00"
       },
-      "billedmotiv": "Four solid blocks representing text, image, audio and video merging into one shared numeric strip beside the Google four-colour G mark, with a video play triangle highlighted from a text search query on the same strip.",
-      "billedmotiv_instruks": "4703cce8cbaba681e789",
+      "prio": 6,
       "side": "artikel/bf211d23154acfab.html"
     },
     {
@@ -29254,64 +29234,8 @@
       },
       "billedmotiv": "A policy document card written in plain English lines feeding through a solid classifier gate that outputs a single checkmark and cross, with a stopwatch showing under 50 milliseconds beside the Musubi PolicyLM block.",
       "billedmotiv_instruks": "c547cac53202dc0cabff",
-      "side": "artikel/aedc083d210ff86e.html"
-    },
-    {
-      "titel": "Muse launches on the iPad",
-      "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
-      "resume": "After launching nearly a month ago and spending several weeks as the top free app in Apple's App Store, the latest update to Meta's Muse iOS app introduces native support for the iPad. A Mac version of Meta's agentic AI tool (designed to compete with OpenClaw, ChatGPT's Dots, and Grok Bot) was released about a […]",
-      "dato": "2026-10-07T11:37:23-04:00",
-      "kilde": "The Verge AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
-      "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
-      "resume_da": "Opdateringen udnytter den større skærm, og samtidig tilslutter Muse sig værktøjer som Canva, Figma og Notion.",
-      "sektioner": [
-        {
-          "overskrift": "Muse vokser fra iPhone til iPad",
-          "tekst": "Meta's AI-agent Muse, der kan udføre opgaver på vegne af brugeren, har fået en udgave til iPad. Det sker efter, at appen lå som nummer ét blandt gratis apps i Apple's App Store i flere uger.\n\nDen nye version er optimeret til iPads større skærm og til iPadOS' forbedrede muligheder for at arbejde med flere apps samtidig."
-        },
-        {
-          "overskrift": "Muse kobles til ti eksterne værktøjer",
-          "tekst": "iPad-støtten fylder kun én linje i udgivelsesnoterne, men opdateringen bringer også andre ændringer. Muse kan nu forbindes til tjenester som Canva, Dropbox, Figma, QuickBooks, GitHub, Zoom, Asana, Klaviyo, Granola og Notion.\n\nMålgruppen er småejere, der kan give Muse et forretningsmål, hvorefter agenten selv planlægger marketing, kundepitches og udarbejdelse af nye produktsider."
-        },
-        {
-          "overskrift": "Meta satser bredt på Muse-økosystemet",
-          "tekst": "Før iPad-udgaven kom en Mac-version cirka en uge efter den oprindelige iPhone-app, hvilket udvider værktøjet til skrivebordsopgaver som at organisere filer. Muse er Metas agentværktøj og konkurrerer med OpenClaw, ChatGPT's Dots og Grok Bot.\n\nMeta arbejder også på en selvstændig enhed kaldet Muse Charm og på at bringe Muse til sine smart-briller. Til sammenligning brugte Meta 15 år på at udgive en dedikeret Instagram-version til iPad."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "15 år",
-          "label": "Tid det tog Meta at udgive en dedikeret Instagram-version til iPad"
-        },
-        {
-          "tal": "10 tjenester",
-          "label": "Antal nye eksterne værktøjer Muse kan forbindes til i opdateringen"
-        }
-      ],
-      "detaljer": [
-        "Muse lancerede som iOS-app for cirka en måned siden.",
-        "Mac-udgaven udkom cirka en uge efter den oprindelige mobilversion.",
-        "Muse Charm er en Tamagotchi-lignende enhed, der kører agenten uden smartphone."
-      ],
-      "betydning": "Den hurtige iPad-opdatering støtter Metas plan om at gøre Muse tilgængelig på flere enheder — fra telefon og computer til briller og en separat gadget.",
-      "pointer": [
-        "Muse App Store-nummer ét som gratis app",
-        "Mac-version udkom en uge efter mobilversion",
-        "Muse Charm kører agenten uden smartphone"
-      ],
-      "brief_instruks": "9b2bbb013b0d68e9",
-      "publicering": {
-        "status": "godkendt",
-        "kontrolleret": "2026-10-07T16:02:17.189961+00:00"
-      },
-      "billedmotiv": "A solid tablet frame with the Meta blue infinity-loop mark, showing the Muse agent connecting outward to tool tiles like Canva, Figma and Notion arranged around its edge, indicating new iPad support.",
-      "billedmotiv_instruks": "a421dde91eea0f56dd3c",
-      "side": "artikel/c7ba7d4146803430.html"
+      "side": "artikel/aedc083d210ff86e.html",
+      "billede": "data/img/13f8074514dbddce.jpg"
     },
     {
       "titel": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
@@ -29319,11 +29243,12 @@
       "resume": "The financing includes an $8M seed round co-led by Sequoia Capital and First Round Capital, and a $30 million Series A led by Hummingbird Ventures.",
       "dato": "2026-10-07T15:07:08+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Penge & marked",
       "foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "rubrik": "Healthleap rejser 38 mio. dollars til oversete sygdomme",
       "resume_da": "Sequoia, First Round og Hummingbird Ventures står bag. Healthleap kører allerede på over 50 hospitaler og analyserer patienters journaler hver nat.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Fra ernærings-app til at finde oversete sygdomme",
@@ -29342,8 +29267,6 @@
           "tekst": "Med den nye kapital vil Healthleap investere i ingeniørarbejde, produkt, salg og kundesupport og tilføje flere sygdomstilstande. Målet er at dække mere end 40 store sundhedstilstande og udvide til ambulant og hjemmepleje.\n\nUd over underernæring og delirium er programmer til aspirationspneumoni, tryksår og risiko for genindlæggelse ved hjertesvigt ifølge Josiah Meyer under yderligere klinisk validering."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "38 millioner dollars",
@@ -29362,6 +29285,7 @@
           "label": "Andel af hospitalsindlagte, der er underernærede, ifølge forskning citeret i kilden"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Kontrakter løber tre år og prises efter sygehusets licenserede senge.",
         "Selskabet bruger også en resultatbaseret prismodel baseret på kundens dokumenterede ROI."
@@ -29372,13 +29296,31 @@
         "Vokset fra 3 til over 50 hospitaler på et år",
         "Alle kunder har set mindst 5x ROI ifølge CEO"
       ],
+      "billedmotiv": "A stack of hospital chart cards with hidden risk flags highlighted by an AI scanning beam, beside a solid funding block showing 38 million dollars raised for Healthleap's overlooked disease screening.",
+      "billedmotiv_instruks": "d14d8c87f9b59286c6e2",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-07T16:05:12.654840+00:00"
       },
-      "billedmotiv": "A stack of hospital chart cards with hidden risk flags highlighted by an AI scanning beam, beside a solid funding block showing 38 million dollars raised for Healthleap's overlooked disease screening.",
-      "billedmotiv_instruks": "d14d8c87f9b59286c6e2",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Healthleap rejser 38 mio. dollars og kører på over 50 hospitaler med natlig journalanalyse.",
+        "forbehold": "Primært en finansieringsnyhed; klinisk effekt er ikke belagt i materialet.",
+        "emne": "healthleap"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
       "side": "artikel/fc38477a8aad9442.html"
     },
     {
@@ -29392,6 +29334,7 @@
       "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "rubrik": "Tony Fadell: Første AI-bølge løste intet behov",
       "resume_da": "Fadell forklarer, hvorfor Rabbit R1, Humane Ai Pin og Limitless pendant fejlede, og spår, at vinderen kører lokalt på enheden.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Tre stoppete AI-enheder på Fadells slides",
@@ -29410,8 +29353,6 @@
           "tekst": "Fadell tror ikke på fortællingen om, at datacentre skal erobre verden. \"Jeg har set det før, i internetdagene,\" sagde han. Enhederne har masser af regnekraft nu, og de kører stadig på batteri.\n\nHans spådom er, at **den vellykkede agent kun kører på enheden** — både af hensyn til privatlivet og til at holde teknikken let.\n\nMeta og OpenAI bygger gadgets, fordi de mangler Apples milliarder af enheder og dermed adgang til telefonens sensorer. I stedet for at bede brugeren om op mod 20 tilladelser bygger de en skærmfri enhed, der sender data videre via Bluetooth, Wi-Fi eller 5G."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "under 0,01 %",
@@ -29422,6 +29363,7 @@
           "label": "sensor- og datatilladelser et firma kan ende med at bede om, ifølge Fadell"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Fadell afviste at rådgive alle tre AI-enhedsfirmaer.",
         "Den nye Siri kører på en tilpasset udgave af Googles Gemini.",
@@ -29434,13 +29376,13 @@
         "Under 0,01 % har prøvet at have en assistent",
         "Ny Siri kører på Googles Gemini, ikke Apples egen model"
       ],
+      "billedmotiv": "Three discontinued AI gadgets — Rabbit R1, Humane Ai Pin and Limitless pendant shown as crossed-out solid shapes — beside Tony Fadell's slide pointer directing toward a small on-device chip that runs the assistant locally.",
+      "billedmotiv_instruks": "728f1044d4032748cb54",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-07T16:05:09.854415+00:00"
       },
-      "billedmotiv": "Three discontinued AI gadgets — Rabbit R1, Humane Ai Pin and Limitless pendant shown as crossed-out solid shapes — beside Tony Fadell's slide pointer directing toward a small on-device chip that runs the assistant locally.",
-      "billedmotiv_instruks": "728f1044d4032748cb54",
       "side": "artikel/3499b6fe79a2933b.html"
     },
     {
@@ -29449,11 +29391,12 @@
       "resume": "Google Labs is working on a new AI-powered game-creation platform called Playground for users to build browser-based games using simple text prompts.",
       "dato": "2026-10-07T14:36:23+00:00",
       "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
+      "kategori": "Lanceringer",
       "foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
       "rubrik": "Google Playground skaber spil uden kodning",
       "resume_da": "Tekstprompt vælger genre, dimensioner og spiltype, mens ugentlige tokens styrer, hvor meget man kan skabe.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Tekstprompt bliver til færdigt browserspil",
@@ -29468,9 +29411,8 @@
           "tekst": "Google placerer Playground i et stigende marked for AI-understøttet spiludvikling. Roblox annoncerede i juli sin egen Build-funktion, hvor brugere skaber spil via naturlige sprogkommandoer. Satsningen bygger også på Googles bredere gaming-interesse, herunder cloud-gaming-tjenesten Stadia fra 2022 og YouTube Playables med øjeblikkeligt spillable webspil."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Google Labs er Googles offentlige inkubator og eksperimenteringsplatform for nye projekter.",
         "Google undersøgte tidligere cloud gaming med Stadia i 2022.",
@@ -29483,13 +29425,31 @@
         "Gratis at spille, ugentlige tokens til at skabe",
         "Foreløbig tilgængelig i USA fra 18 år"
       ],
+      "billedmotiv": "A text prompt bar transforming into a finished game controller and 2D/3D game tile under the Google four-colour G mark, showing a genre selector turning words into a playable browser game.",
+      "billedmotiv_instruks": "8fc586adffe403ce0d32",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-07T16:07:07.474626+00:00"
       },
-      "billedmotiv": "A text prompt bar transforming into a finished game controller and 2D/3D game tile under the Google four-colour G mark, showing a genre selector turning words into a playable browser game.",
-      "billedmotiv_instruks": "8fc586adffe403ce0d32",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google Labs tester Playground, platform til at bygge browserspil ud fra tekstprompt.",
+        "forbehold": "Eksperiment fra Google Labs, ikke endelig produktudgivelse.",
+        "emne": "google labs playground"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/60862e24b98b764e.html"
     },
     {
@@ -29568,11 +29528,12 @@
       "resume": "Here are Google’s latest AI updates from September 2026",
       "dato": "2026-10-02T15:00:00+00:00",
       "kilde": "Google Gemini",
-      "kategori": "Labs",
+      "kategori": "Lanceringer",
       "foerst_set": "2026-10-02T20:55:07.620979+00:00",
       "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
       "rubrik": "Gemini 4 Argon udkommer først til cyberforsvar",
       "resume_da": "Argon kan skrive op til en million token i ét svar og ruller ud i faser via Fairwind Program.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Argon giver op til en million token",
@@ -29587,8 +29548,6 @@
           "tekst": "Google kobler også AI til forskning. AlphaGenome Atlas har kortlagt menneskelig DNA, og satelitdata bruges til at følge global metan fra rummet.\n\nProject Suncatcher sender den første testsatellit op sammen med virksomheden Planet for at afprøve, hvordan Googles TPU-chips klarer sig under rumforhold. Satellitter i lav jordbane kan ifølge Google hente op til **otte gange** mere solkraft end på Jorden.\n\nGoogle oplyser desuden, at selskabets værktøjer understøtter mere end 300 sprog, som tales af 7 milliarder mennesker, svarende til 86 procent af verdens befolkning."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "1 million token",
@@ -29603,6 +29562,7 @@
           "label": "Andel af verdens befolkning, der taler Googles understøttede 300+ sprog"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Gemini-appen er blevet tilgængelig på Windows.",
         "Googlebook, en bærbar enhed, er sat til forudbestilling.",
@@ -29619,7 +29579,1085 @@
         "status": "godkendt",
         "kontrolleret": "2026-10-07T16:12:50.409208+00:00"
       },
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Google opsummerer Argon med op til 1 million tokens per svar, faset udrulning",
+        "forbehold": "Sammendrag af tidligere annonceringer i september",
+        "emne": "google gemini argon"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "side": "artikel/bfe2b156957ee716.html"
+    },
+    {
+      "titel": "Microsoft is giving Copilot more control over Windows and your files",
+      "link": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+      "resume": "At today's Windows and Surface event, Microsoft showed off an upgrade to its Copilot AI system that will give it access to local files on your PC and the ability to take actions across the OS. It's part of an idea Microsoft is calling \"Hybrid Intelligence,\" where apps and tools rely on a mix of […]",
+      "dato": "2026-10-07T14:01:20-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Copilot kan finde og sende dine filer",
+      "resume_da": "Microsoft viser, hvordan Copilot bruger både pc'ens egne filer og skyen til at løse opgaver – men først om et par måneder.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Copilot får adgang til lokale filer og systemhandlinger via Hybrid Intelligence",
+        "forbehold": "",
+        "emne": "microsoft copilot windows"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Copilot får adgang til dine filer",
+          "tekst": "På Microsofts Windows- og Surface-event viste virksomheden en opgradering af Copilot, AI-systemet, der er bygget ind i Windows. Fremover kan Copilot bruge filer lokalt på din pc og udføre handlinger i hele styresystemet.\n\nDet bygger på en idé, Microsoft kalder Hybrid Intelligence: apps og værktøjer kombinerer lokale og skybaserede AI-modeller for at løse opgaver effektivt."
+        },
+        {
+          "overskrift": "Skattedemo viste hele arbejdsgangen",
+          "tekst": "Jacob Andreou, Microsofts EVP for Copilot, gik på scenen med en videodemo. Han bad AI-agenten Autopilot om hjælp til at indberette skat: Han havde fået en mail fra sin regnskabsfører og ville have sendt det, hun skulle bruge.\n\nAutopilot gennemgik forskellige mapper, fandt dokumenterne, omdøbte filerne, pakkede dem i et zip-arkiv og udkastede en mail med zip-filen vedhæftet."
+        },
+        {
+          "overskrift": "Funktionerne kommer først om et par måneder",
+          "tekst": "Jacob Andreou sagde, at funktioner drevet af Hybrid Intelligence kommer til Copilot i løbet af de næste par måneder. Demoen er altså endnu ikke noget, man kan bruge på sin egen pc."
+        },
+        {
+          "overskrift": "Søgefeltet får knapper til hurtige handlinger",
+          "tekst": "Microsoft viste samtidig en ny Windows-søgning, hvor man direkte i søgefeltet kan udføre hurtige handlinger: slå mørk tilstand til, skrue op for mikrofonvolumen med en skyder eller sende en besked.\n\nPavan Davuluri, chef for Windows og Surface, sagde, at den nye oplevelse bliver tilgængelig på Windows 11-pc'er fra efteråret."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Jacob Andreou er Microsofts EVP for Copilot.",
+        "Pavan Davuluri er chef for Windows og Surface.",
+        "Autopilot er det AI-værktøj, Microsoft brugte i skattedemoen.",
+        "Hybrid Intelligence kombinerer lokale og skybaserede AI-modeller."
+      ],
+      "betydning": "Windows 11-brugere får efter planen hurtige handlinger direkte i søgefeltet fra efteråret.",
+      "pointer": [
+        "Copilot kan søge, omdøbe og pakke filer",
+        "Hybrid Intelligence blandt lokale og skybaserede modeller",
+        "Ny søgning med handlinger kommer til efteråret"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:44:06.809489+00:00"
+      },
+      "billedmotiv": "The Microsoft four-colour G mark sits on a solid folder icon that opens to reveal stacked document cards being drawn toward a rounded cloud shape, joined by a two-way arrow. Beside it a search bar pill holds a small action button, showing Copilot accessing local files and cloud together.",
+      "billedmotiv_instruks": "69e15b41ec9ec4b42096",
+      "side": "artikel/b768f5cf6d656bc9.html"
+    },
+    {
+      "titel": "Google rolls out improved SynthID AI content detector, now available globally",
+      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+      "resume": "The new SynthID website can now identify AI content from Google, OpenAI, and more.",
+      "dato": "2026-10-07T14:00:08+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Hverdags-AI",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google lancerer global SynthID-detektor til alle",
+      "resume_da": "Et nyt website kan nu genkende AI-vandmærker fra Google, OpenAI, Nvidia, Kakao og snart Apple i ét tjek.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Forbedret SynthID-detektor rulles ud globalt og genkender nu AI-indhold fra flere producenter.",
+        "forbehold": "Nøjagtighed på tværs af kilder er ikke dokumenteret i materialet.",
+        "emne": "google synthid"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Ét website tjekker flere AI-firmers vandmærker",
+          "tekst": "Google har gjort sin SynthID-detektor tilgængelig for alle på det nye website SynthID.com. SynthID er et usynligt signal, der er indkodet i pixels fra AI-genererede billeder og videoer, og i bølgeformen fra AI-lyd. Mediet kontrolleres derefter for signalet.\n\nTidligere kontrollerede Googles detektor kun Googles egen version af SynthID. Et ChatGPT-billede med SynthID blev altså ikke fanget, selv om teknologien var brugt. Ifølge Google understøtter den udvidede detektor nu de distinkte vandmærker fra alle SynthID-partnere: OpenAI, Nvidia, Kakao og snart Apple. På den måde kan man kontrollere en fil for involvering fra alle disse systemer ét sted i stedet for at bruge deres detektorer hver for sig."
+        },
+        {
+          "overskrift": "Førhen krævede tjek testprogram eller Gemini",
+          "tekst": "Førhen krævede et tjek enten adgang til Googles betroede testprogram eller et svar fra Gemini, hvor man spurgte modellen om mediet var AI-genereret. Det var besværligt, og modellens svar kunne være forvirrende, når man bare ville have et klart ja eller nej.\n\nNu kan man springe Gemini over og gå direkte til website. Der kræves dog login, og detektoreren understøtter Google-, OpenAI- og Apple-konti."
+        },
+        {
+          "overskrift": "Ca. 10 tjek om dagen pr. bruger",
+          "tekst": "Hver bruger får, ifølge Google, \"et dagligt brugskvotum på cirka 10 tjek af billeder, videoer og lyd\". Tidligere detektionsværktøjer havde en tilsvarende grænse. Nøglen ordet \"cirka\" kan skyldes, at systemet låser brugeren ude tidligere, hvis man tjekker flere meget ens billeder — et tegn på, at nogen måske forsøger at finpudse en omgåelsesmetode.\n\nGoogle-ingeniører har fortalt Ars, at adgangsbegrænsningen er nødvendig for at forhindre folk i at bruge tjekkene til at udvikle værktøjer, der fjerner SynthID.\n\nDen nye website giver mindre information end det interne værktøj, der kunne fremhæve de billedområder, hvor SynthID-pixels lå. Her får man i stedet en besked om, hvorvidt SynthID er brugt til at producere eller redigere mediet."
+        },
+        {
+          "overskrift": "Mange AI-billeder vil slet ikke blive fanget",
+          "tekst": "SynthID-dækningen har en klar grænse: Google's partnere er langt fra den eneste kilde til AI-indhold. Nogle modeludbydere bruger anden vandmærkningsteknologi, som Meta, og andre bruger slet ingen vandmærker.\n\nOpen-vægt-modeller, som folk kan køre på deres egen hardware, producerer AI-indhold uden metadata-mærkning overhovedet. En del AI-indhold vil altså aldrig blive identificeret som AI i SynthID-værktøjet — og det vil en disclaimer på sitet oplyse. Der er desuden mulighed for, at nogen finder en måde at fjerne SynthID på, så eksisterende AI-indhold fremstår mere autentisk."
+        },
+        {
+          "overskrift": "C2PA kan mærke ægte billeder i stedet",
+          "tekst": "Den omvendte tilgang kan være at bruge kryptografiske teknologier som C2PA til at mærke ægte billeder, video og lyd, når de skabes. Googles Pixel-telefoner er blandt de få enheder, der allerede gør det. Indtil da er SynthID det bedste bud på at identificere AI-fakes."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "180 mia. billeder og videoer",
+          "label": "Gemini-billeder og -videoer, der har SynthID indkodet"
+        },
+        {
+          "tal": "240.000 år lyd",
+          "label": "Samlet AI-lyd med SynthID, ifølge Google"
+        },
+        {
+          "tal": "ca. 10 tjek pr. bruger pr. dag",
+          "label": "Dagligt brugskvotum på SynthID.com"
+        }
+      ],
+      "detaljer": [
+        "SynthID-partnere omfatter OpenAI, Nvidia, Kakao og snart Apple.",
+        "Detektoreren understøtter login med Google-, OpenAI- og Apple-konti.",
+        "Google-detection før begrænsningen skyldes ifølge Google-ingeniører ønsket om at forhindre fjernelse af SynthID.",
+        "Meta bruger anden vandmærkningsteknologi end SynthID."
+      ],
+      "betydning": "Google Pixel-mærkning med C2PA er et modsatgreb: at mærke ægte indhold frem for at lede efter AI-genereret.",
+      "pointer": [
+        "SynthID.com er nu tilgængeligt globalt.",
+        "Detektoreren kan kontrollere OpenAI-, Nvidia-, Kakao- og (snart) Apple-vandmærker.",
+        "AI-indhold uden SynthID vil ikke blive identificeret."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:45:24.972907+00:00"
+      },
+      "historie_dato": "2026-10-07T14:00:00+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+          "rubrik": "Google åbner SynthID-tjek for alle",
+          "resume_da": "Alle kan nu uploade billeder, video og lyd og få at vide, om de er AI-genererede.",
+          "dato": "2026-10-07T14:00:00+00:00",
+          "foerst_set": "2026-10-07T15:44:28.800933+00:00"
+        }
+      ],
+      "side": "artikel/49bf44826c74a3eb.html"
+    },
+    {
+      "titel": "ChatGPT is getting a lot more visual, with the launch of a new interface",
+      "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+      "resume": "OpenAI is launching a new user interface that will bring interactive visuals to ChatGPT.",
+      "dato": "2026-10-07T18:00:19+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "ChatGPT får knapper, grafer og lommeregnere",
+      "resume_da": "Med Intelligent UI svarer GPT-6 med elementer, brugeren selv kan trykke på og ændre – onsdag for betalende, torsdag for gratis.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI lancerer nyt visuelt interface med interaktive diagrammer i ChatGPT",
+        "forbehold": "",
+        "emne": "openai chatgpt interface"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Svaret bliver noget, du kan trykke på",
+          "tekst": "Onsdag ruller OpenAI sin nye grænseflade Intelligent UI ud sammen med modellen GPT-6. ChatGPT svarer herefter ikke kun med ord, men med knapper, man kan trykke på, en lommeregner tilpasset den konkrete opgave, interaktive diagrammer og redigerbare grafer.\n\nDet er altså ikke bare flade tegninger: elementerne er bygget til, at brugeren arbejder videre med dem direkte i samtalen."
+        },
+        {
+          "overskrift": "Journalister så diagrammer om flyvinger",
+          "tekst": "På et opkald med journalister viste OpenAI, hvordan chatbotten øjeblikkeligt tegner diagrammer, der forklarer abstrakte emner.\n\nProduktchef Aarush Selvan bad ChatGPT udforske, hvordan en flyvinge skaber løft, og chatten svarede hurtigt med en række diagrammer om, hvad holder flyene i luften.\n\nSelvan pegede på, at ChatGPT hidtil overvejende har været en tekstgrænseflade, og at de mest nyttige svar sjældent kun er tekst – heller ikke, når man planlægger en opskrift, en tur eller skal lære noget nyt."
+        },
+        {
+          "overskrift": "Cykelmekanik, vandretur og sparperegner",
+          "tekst": "Ud over flyvingen viste OpenAI blandt andet visuals til opskrifter, et diagram om cykelmekanik, et kort over en flerdages vandretur og en personlig sparperegner.\n\nOpenAI siger, at målet med det hele er at gøre det lettere at lære komplekse emner. At det også kan gøre ChatGPT mere imødekommende og tilgængeligt for et bredere publikum, var noget, virksomheden ikke selv lagde frem."
+        },
+        {
+          "overskrift": "Du selv skruer ned for farverne",
+          "tekst": "Er der visuals nok, kan brugerne skrue ned for mængden af dem. Det sker på samme måde, som man allerede kan justere ChatGPTs personlighed, så svarene bliver mere eller mindre visuelle."
+        },
+        {
+          "overskrift": "Gratisbrugere får featuren en dag senere",
+          "tekst": "Intelligent UI ruller globalt ud med GPT-6 til brugere af Pro, Plus, Business og Enterprise onsdag.\n\nBrugere af gratisniveauet og den billigere Go-tier får først adgang torsdag."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "4 betalingsniveauer",
+          "label": "Pro, Plus, Business og Enterprise fik Intelligent UI ved onsdagens lancering"
+        },
+        {
+          "tal": "2 dage",
+          "label": "Udrulningen fordeler sig: onsdag for betalende, torsdag for gratis- og Go-brugere"
+        }
+      ],
+      "detaljer": [
+        "OpenAI kalder målet at gøre det lettere at lære komplekse emner.",
+        "Eksemperne omfattede også visuals til opskrifter og en turplan.",
+        "Aarush Selvan er produktchef i OpenAI.",
+        "Intelligent UI ruller globalt ud sammen med GPT-6."
+      ],
+      "betydning": "Svaret flyttes fra tekst, man læser, til et element, man selv kan trykke på og redigere – som en sparperegner.",
+      "pointer": [
+        "Intelligent UI lanceres sammen med GPT-6",
+        "Betalende brugere onsdag, gratis torsdag",
+        "Mængden af visuals kan justeres"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:46:09.868493+00:00"
+      },
+      "historie_dato": "2026-10-07T18:00:19+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+          "rubrik": "GPT-6 tilføjer knapper og diagrammer i ChatGPT",
+          "resume_da": "ChatGPT kan nu svare med klikbare knapper, regnemaskiner og billeder direkte i samtalen.",
+          "dato": "2026-10-07T15:10:42-04:00",
+          "foerst_set": "2026-10-07T21:31:02.551414+00:00"
+        }
+      ],
+      "side": "artikel/b81f72b7c1ca73df.html"
+    },
+    {
+      "titel": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+      "resume": "Microsoft just wrapped up a big Windows and Surface-focused keynote in San Francisco. The biggest announcement was arguably the release details about the Surface Laptop Ultra, its new laptop that’s powered by Nvidia’s RTX Spark Arm-based chip. The machine will start at $2,599 for a configuration with an 8-core CPU, 24GB of RAM, and 512GB […]",
+      "dato": "2026-10-07T14:42:22-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Nvidia RTX Spark debuterer i Surface Laptop Ultra",
+      "resume_da": "Microsofts nye laptop lanceres 16. oktober fra 2.599 dollar med magnetisk USB-C-ladning; udviklere kan forudbestille en mini-pc for 5.999 dollar.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft annoncerer Surface Laptop Ultra fra 2.599 dollars ved Windows-event",
+        "forbehold": "",
+        "emne": "microsoft surface event"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Surface Laptop Ultra lanceres 16. oktober",
+          "tekst": "Microsoft lancerer Surface Laptop Ultra 16. oktober til en startpris på 2.599 dollar. Basisudgaven har 24GB RAM og 512GB lager, en 15-tommers HDR-touchskærm med op til 2.000 nits toplysstyrke og en større trackpad med haptisk feedback.\n\nDen proprietære Surface Connect-port er væk. I stedet følger et magnetisk USB-C-kabel, som Microsoft kalder Magnetic Connect: Fører man stikket hen, klikker det på plads, forklarer Windows- og Surface-chef Pavan Davuluri. Porten virker stadig til video, data og USB-C."
+        },
+        {
+          "overskrift": "Nvidia debuterer med Arm-chip i laptop",
+          "tekst": "Surface Laptop Ultra er debutplatform for Nvidias RTX Spark, Nvidias indtræden i markedet for Arm-baserede PC-chips, den arkitektur der også findes i telefoner og Mac-computere. Den første bølge af RTX Spark-maskiner er designet til at konkurrere med high-end MacBook Pro.\n\nInden da testes laptoppen i et vinduesløst laboratorium på Microsofts campus i Redmond, Washington: Robotter trykker knapper tusindvis af gange, radiobølger fra kæmpeantenner bestråler produkterne, og anordninger slipper genstande fra stadig større højder."
+        },
+        {
+          "overskrift": "Microsoft lover Copilot-adgang til dine filer",
+          "tekst": "Microsoft har annonceret en Copilot-opdatering, der skal give AI-systemet adgang til filer på pc'en og mulighed for at udføre handlinger i styresystemet. Firmaet kalder idéen Hybrid Intelligence, hvor opgaver løses med en blanding af lokale og cloud-baserede AI-modeller.\n\nI en demovideo bad Microsofts EVP for Copilot, Jacob Andreou, agenten Autopilot om hjælp til at indberette skat. Den gennemrodede mapper, fandt dokumenterne, omdøbte filerne, pakkede dem i en zip-fil og udkastede en e-mail til revisoren.\n\nWindows får også en ny søgeoplevelse med hurtige handlinger fra søgefeltet."
+        },
+        {
+          "overskrift": "Dev Box kører AI over 120 milliarder",
+          "tekst": "Udviklere kan forudbestille Surface RTX Spark Dev Box for 5.999 dollar med levering i november. Mini-pc'en har 128GB unified memory, en 100-watt termisk grænse og Nvidias Tensor-kerner og er optimeret til lokale AI-modeller på over 120 milliarder parametre, fx test af modeller, prototyper af AI-agenter og kodeværktøjer kørt på selve enheden.\n\nDen koster mere end Nvidias DGX Spark fra sidste år; pc-priserne er steget på grund af mangel på RAM og andre komponenter."
+        },
+        {
+          "overskrift": "Meta-agent kommer som Windows-app",
+          "tekst": "På eventet i San Francisco annoncerede Pavan Davuluri også, at Meta får en nativ Windows-app til sin nye AI-agent, men uden tidsplan. Satya Nadella og Nvidias Jensen Huang deltog i en samtale om, hvordan lokal AI former PC'ens næste kapitel."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "2.599 dollar",
+          "label": "Startpris for Surface Laptop Ultra, basisudgave med 24GB RAM og 512GB lager"
+        },
+        {
+          "tal": "5.999 dollar",
+          "label": "Forudbestillingspris på Surface RTX Spark Dev Box, levering i november"
+        },
+        {
+          "tal": "2.000 nits",
+          "label": "Højeste toplysstyrke på laptoppenes 15-tommers HDR-touchskærm"
+        },
+        {
+          "tal": "128GB",
+          "label": "Unified memory i RTX Spark-chippene; Dev Box er optimeret modeller over 120 milliarder parametre"
+        }
+      ],
+      "detaljer": [
+        "Omtalen angiver basis-CPU'en som både 8-core og 18-core; præcist antal er ikke afklaret.",
+        "Magnetic Connect er stadig proprietært, men USB-C-porten virker til video og data.",
+        "Mini-pc'ens flade 3D-printede aluminiumschassis fungerer som køleribbe og ligner toppen af en Xbox Series X.",
+        "Meta lancerede en Mac Muse-app til Mac i september."
+      ],
+      "betydning": "Nvidia træder ind på markedet for Arm-baserede PC-chips, og Microsoft og Nvidia positionerer RTX Spark-maskinerne i den absolutte premium ende.",
+      "pointer": [
+        "Surface Laptop Ultra lanceres 16. oktober fra 2.599 dollar.",
+        "Copilot loves adgang til lokale filer via Hybrid Intelligence.",
+        "Dev Box kan forudbestilles for 5.999 dollar."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:48:28.796739+00:00"
+      },
+      "historie_dato": "2026-10-07T18:42:22+00:00",
+      "andre": [
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+          "rubrik": "Microsoft afslører pris på AI-PC'er med RTX Spark",
+          "resume_da": "Microsoft lancerer Surface-maskiner med Nvidias RTX Spark-chip, der kører AI-lokalt på enheden uden abonnement.",
+          "dato": "2026-10-07T20:22:37+00:00",
+          "foerst_set": "2026-10-07T21:31:02.551414+00:00"
+        }
+      ],
+      "billedmotiv": "A thick premium laptop rendered as a solid slab with the Nvidia logo on its lid, the concave spark mark in green. A magnetic USB-C cable head clicks onto the laptop's edge beside it, and a compact mini-pc cube with the same Nvidia mark rests nearby, showing the RTX Spark debut.",
+      "billedmotiv_instruks": "631681200f8d718f1aae",
+      "side": "artikel/f7ce188fe18489b0.html"
+    },
+    {
+      "titel": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
+      "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
+      "resume": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into an initiative to create a \"virtual cell\" that researchers can use to combat disease, as reported earlier by Reuters. The project is led by Biohub, a nonprofit biomedical research organization founded by Mark Zuckerberg and his wife, Priscilla Chan. […]",
+      "dato": "2026-10-07T10:40:52-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "Google og Meta finansierer virtuel celle til forskning",
+      "resume_da": "Google DeepMind, Meta og Isomorphic Labs giver Biohub 300 millioner dollar til en computermodel af cellen, hvor forskere kan stille biologiske spørgsmål.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Google DeepMind, Meta og Isomorphic Labs investerer 300 mio. dollars i Biohub's 'virtual cell'.",
+        "forbehold": "Projekt i tidlig fase; konkrete forskningsresultater nævnes ikke.",
+        "emne": "biohub virtual cell"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "300 mio. dollar til en computermodel af cellen",
+          "tekst": "Google DeepMind, Meta og lægemiddelstartupen Isomorphic Labs lægger tilsammen 300 millioner dollar i Biohub, en amerikansk nonprofitorganisation for biomedicinsk forskning. Pengene indgår i initiativet Virtual Biology, der samlet er på 1,8 milliarder dollar.\n\nBiohub blev grundlagt i 2016 af Mark Zuckerberg og hans hustru, Priscilla Chan, med målet at forebygge og helbrede sygdomme. Det amerikanske energiministerium lægger ifølge pressemeddelelsen yderligere mere end 500 millioner dollar over de næste fem år."
+        },
+        {
+          "overskrift": "Forskere skal stille biologiske spørgsmål digitalt",
+          "tekst": "Det, forskerne skal have for pengene, er en **virtuel celle**: en højpræcis computermodel af, hvordan cellen virker, som kan bruges til simuleringer. Formålet er at stille, forudsige og besvare biologiske spørgsmål digitalt.\n\nBiohubs chef for videnskab, Alex Rives, kalder en præcis model af biologien en måde at fremskynde videnskabelige opdagelser på, fordi forskere kan udføre eksperimenter digitalt. Han kalder den virtuelle celle et af de vigtigste problemer for næste videnskabelige æra.\n\nArbejdet handler lige nu om at bygge datasæt. Ifølge Rives kræver den virtuelle celle koordineret dataindsamling i national og international skala, hvilket netop er grunden til, at partnerne går sammen."
+        },
+        {
+          "overskrift": "Statens data lægges oven i tech-pengene",
+          "tekst": "Ud over tech-selskabernes penge leverer det amerikanske sundhedsministerium, NIH, datasæt, datalagre og vidensbanker fra tidligere offentlige investeringer på mere end 500 millioner dollar.\n\nDermed kombineres offentlige data med privat finansiering i samme forsøg på at bygge en digital model af cellen."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "Isomorphic Labs beskrives som en AI-startup inden for lægemiddelforskning.",
+        "Energiministeriets bidrag: mere end 500 millioner dollar over fem år.",
+        "NIH-bidraget stammer fra tidligere offentlige investeringer på over 500 millioner dollar."
+      ],
+      "betydning": "De 300 millioner dollar er øremærket til datasæt, ikke en færdig model; resultatet afhænger af dataindsamling i national og international skala.",
+      "pointer": [
+        "Google DeepMind, Meta og Isomorphic Labs giver 300 mio. dollar.",
+        "Biohub ledes af Mark Zuckerberg og Priscilla Chan.",
+        "Initiativet Virtual Biology er på 1,8 milliarder dollar."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:46:42.405201+00:00"
+      },
+      "side": "artikel/a238c94c5dbb4587.html"
+    },
+    {
+      "titel": "OpenAI drops another batch of mathematical breakthroughs",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+      "resume": "OpenAI has revealed solutions to a number of long-standing mathematics problems produced by an unreleased frontier model in a batch of 722 manuscripts, covering 372 result families that group related papers. It extends a run of breakthroughs that have both impressed and unsettled parts of the mathematical community while raising questions about research ethics and […]",
+      "dato": "2026-10-06T19:26:38-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Forskning",
+      "foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "eget_foerst_set": "2026-10-07T00:01:34.898825+00:00",
+      "rubrik": "OpenAI udsender 722 manuskripter med matematiske resultater",
+      "resume_da": "Ifølge rådgivningsgruppen AGMAI indeholder en ny udsendelse fra OpenAI løsninger på hundredvis af længe åbne matematiske spørgsmål.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI publicerer 722 manuskripter med løsninger på åbne matematiske problemer fra en ikke-udgivet model",
+        "forbehold": "Model er ikke udgivet; resultater er ikke uafhængigt verificerede",
+        "emne": "openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
+      "sektioner": [
+        {
+          "overskrift": "Løsninger fra en endnu ikke udgivet model",
+          "tekst": "OpenAI har udsendt 722 manuskripter, der dækker 372 resultatfamilier — grupper af beslægtede artikler. Ifølge rådgivningsgruppen AGMAI indeholder udsendelsen løsninger på hundredvis af længe åbne matematiske spørgsmål.\n\nBag resultaterne står en model, OpenAI endnu ikke har udgivet. I september meldte virksomheden ud, at modellen havde \"løst mere end 100 længe åbne problemer på tværs af de fleste områder af matematikken.\"\n\nManuskripterne indeholder også opsummeringer af modelens ræsonnement, estimater for beregningsforbrug og tal for antal forsøgte problemer. OpenAI oplyser, at det gennemsnitlige resultat svarede til tre timers \"tænketid\" i ChatGPT Pro."
+        },
+        {
+          "overskrift": "AGMAI advarer mod markedsføring af resultater",
+          "tekst": "Den uafhængige rådgivningsgruppe AGMAI — Advisory Group on Mathematics and Artificial Intelligence — offentliggjorde sine første anbefalinger i slutningen af september. Gruppen opfordrer AI-virksomheder til at offentliggøre matematiske resultater hurtigt og gennem etablerede akademiske kanaler, hvor det er muligt.\n\nRådet beder også virksomheder om at \"afstå fra at behandle offentliggørelsen af matematiske resultater som **markedsføringsmateriale**\" for at promovere deres modeller. AGMAI kalder den praksis skadelig for det matematiske samfund.\n\nFor denne udsendelse offentliggør OpenAI resultaterne i et GitHub-arkiv med retningslinjer for revisioner og citering. Virksomheden oplyser, at den fortsat undersøger andre fællesskabsbaserede kanaler, som lever op til rådgivningsgruppens retningslinjer."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "372 resultatfamilier grupperer beslægtede manuskripter",
+        "Gennemsnitligt resultat svarede til tre timers ChatGPT Pro-tænketid",
+        "AGMAI offentliggjorde sine første anbefalinger i slutningen af september",
+        "Resultaterne omfatter også en Millennium Prize-opgave"
+      ],
+      "betydning": "Udsendelsen indgår i en bølge af AI-matematiske resultater, der allerede har skærpet debat om forskningspraksis og kreditering af matematikere.",
+      "pointer": [
+        "722 manuskripter fra en endnu ikke udgivet model",
+        "AGMAI advarer mod at bruge resultater som marketing",
+        "Matematikere vurderer endnu resultaternes fulde betydning"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:50:34.791697+00:00"
+      },
+      "side": "artikel/9edaf582bfe592c5.html"
+    },
+    {
+      "titel": "Surface RTX Spark Dev Box is available for preorder for $5,999",
+      "link": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+      "resume": "Microsoft's Nvidia-powered Surface RTX Spark Dev Box is available for preorder now and is slated to ship in November for just about $6,000. It's pricier than the DGX Spark mini PC Nvidia launched last year, but PC prices have been climbing due to shortages of RAM and other components. The Dev Box's flat, 3D-printed anodized […]",
+      "dato": "2026-10-07T13:46:44-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Microsofts Surface RTX Spark kan nu forudbestilles",
+      "resume_da": "Dev Box er en mini-pc til udviklere til omkring 6.000 dollar. Den sendes fra november med 128 GB unified memory.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Microsoft åbner forbestilling af RTX Spark Dev Box til 5.999 dollars med levering i november",
+        "forbehold": "",
+        "emne": "microsoft dev box"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "Kassen selv fungerer som køleribbe",
+          "tekst": "Surface RTX Spark Dev Box er en mini-pc fra Microsoft, som er beregnet til udviklere. Den flade kasse er 3D-printet i anodiseret aluminium og fungerer selv som køler. Den ligner ventilationsåbningerne på toppen af en Xbox Series X.\n\nMaskinen kører på Nvidias Arm-baserede RTX Spark-platform med 128 GB unified memory, altså hukommelse som processoren og grafikdelen deler. Den har et termisk effektloft på 100 watt og Nvidias Tensor-kerner, som er specialiserede processorkerner til AI-beregninger."
+        },
+        {
+          "overskrift": "Den kører AI-modeller over 120 milliarder parametre",
+          "tekst": "Navnet Dev Box rammer plet: maskinen er især rettet mod udviklere. Den er optimeret til at køre AI lokalt, herunder modeller med mere end 120 milliarder parametre. Et parameter er én værdi, som et AI-model lærer under træning, og flere parametre betyder typisk en større model.\n\nDen skal bruges til at teste AI-modeller, bygge prototyper på AI-agenter og køre AI-værktøjer til kode direkte på maskinen."
+        },
+        {
+          "overskrift": "Værktøjskassen er forudinstalleret",
+          "tekst": "Dev Box hører til Microsofts Project Zenith-enheder. Den leveres med en Windows 11 Pro-installation, der er sat op til udviklere, sammen med forudinstallerede værktøjer: Visual Studio Code, Git, GitHub CLI, GitHub Copilot, WSL, Python og Node.\n\nMaskinen kan forudbestilles nu til omkring 6.000 dollar og begynder at blive sendt i november. Den er dyrere end DGX Spark, den tilsvarende mini-pc, som Nvidia lancerede sidste år. Samtidig er pc-priserne steget på grund af mangel på RAM og andre komponenter."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "Omkring 6.000 dollar",
+          "label": "Pris ved forudbestilling af Dev Box"
+        },
+        {
+          "tal": "128 GB",
+          "label": "Unified memory, delt mellem proces- og grafikdel"
+        },
+        {
+          "tal": "100 watt",
+          "label": "Termisk effektloft for hele maskinen"
+        },
+        {
+          "tal": "Over 120 milliarder parametre",
+          "label": "Størrelse på AI-model, som den er optimeret til"
+        }
+      ],
+      "detaljer": [
+        "Præsenteret sammen med Microsofts Surface Laptop Ultra ved event.",
+        "DGX Spark, Nvidias tilsvarende mini-pc, blev lanceret sidste år.",
+        "Kilden vurderer, at maskinen også kunne give en stærk spiloplevelse."
+      ],
+      "betydning": "Udviklere kan nu forudbestille en skrivebordsmaskine, der kører AI-modeller på over 120 milliarder parametre lokalt i stedet for i en sky.",
+      "pointer": [
+        "Forudbestilling åbner nu, forsendelse begynder i november",
+        "128 GB unified memory, 100 watt termisk loft",
+        "Forudinstalleret Visual Studio Code, Git, Python og WSL"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:50:36.021887+00:00"
+      },
+      "billedmotiv": "A flat cube-shaped mini-pc with deep heatsink fins along its top, the Nvidia logo on its front face in green. A memory chip block labeled with 128 sits beside it, and a bar marked with a parameter-count gauge rises behind, showing local AI models over 120 billion parameters.",
+      "billedmotiv_instruks": "cfe248e9ff3d1b682cc1",
+      "side": "artikel/46b0057f882868d6.html"
+    },
+    {
+      "titel": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+      "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+      "resume": "The developer of Hermes agent raised a $90 million Series B.",
+      "dato": "2026-10-07T20:48:45+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Nous Research rejser 90 mio. dollars til erhvervs-AI-agenter",
+      "resume_da": "Nous Research rejser 90 millioner dollars til en værdi af 1,5 milliarder og lancerer private erhvervs-AI-agenter.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nous Research rejser 90 mio. dollars i Series B til en værdi på 1,5 mia. dollars",
+        "forbehold": "",
+        "emne": "nous research"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "sektioner": [
+        {
+          "overskrift": "90 millioner dollars bekræfter TechCrunch-rapportering",
+          "tekst": "Nous Research har rejst 90 millioner dollars i en Series B-runde til en værdi af 1,5 milliarder dollars. Det bekræfter TechCrunchs tidligere rapportering.\n\nRobot Ventures ledte runden med deltagelse fra blandt andre Nvidia, Samsung og 1789 Capital, hvor Donald Trump Jr. er partner. Det tre år gamle selskab har nu hentet 158 millioner dollars i alt.\n\nVed midten af september 2026 havde Nous omkring 36 millioner dollars i annualiseret omsætning og forventer at passere 100 millioner dollars før årets udgang, rapporterede The Wall Street Journal."
+        },
+        {
+          "overskrift": "Hermes-agenten drives nu ind i erhvervslivet",
+          "tekst": "Nous' open source-agent Hermes er blevet klonet mere end 24 millioner gange og står ifølge selskabets egne estimater for cirka 2,5 procent af al global AI-tokenforbrug. En token er den mindste tekst-enhed, en AI-model bearbejder.\n\nKapitalen skal finansiere Hermes for Businesses, hvor virksomheder kan driftsætte tilpassede AI-agenter til flertrins-arbejdsgange uden at dele deres data."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "90 millioner dollars",
+          "label": "Størrelse på Series B-runden til 1,5 milliarder dollars i værdi"
+        },
+        {
+          "tal": "158 millioner dollars",
+          "label": "Samlet finansiering for det tre år gamle selskab"
+        },
+        {
+          "tal": "24 millioner gange",
+          "label": "Antal kloninger af open source-agenten Hermes"
+        },
+        {
+          "tal": "cirka 2,5 procent",
+          "label": "Andel af global AI-tokenforbrug, ifølge Nous' egne estimater"
+        },
+        {
+          "tal": "36 millioner dollars",
+          "label": "Annualiseret omsætning ved midten af september 2026"
+        }
+      ],
+      "detaljer": [
+        "Robot Ventures ledte finansieringsrunden.",
+        "Union Square Ventures og Menlo Ventures deltog også.",
+        "Forventet omsætning over 100 millioner dollars før slutningen af 2026 er rapporteret af WSJ."
+      ],
+      "betydning": "Kapitalen finansierer Nous' skift fra at være udviklerfavorit til at tilbyde erhvervskunder private AI-agenter.",
+      "pointer": [
+        "90 millioner dollars rejst til 1,5 milliarders værdi",
+        "24 millioner kloninger af Hermes-agenten",
+        "Virksomhedsudgave holder data privat og sikker"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:51:07.291834+00:00"
+      },
+      "billedmotiv": "A solid dark server-style panel displaying the Nous Research name and mark, with a protected lock icon sealing a cluster of segmented data blocks behind it, representing private enterprise AI agents. Beside it, a thick arrow labeled with a stack of coin shapes points upward toward a valuation bar, showing the 90 million dollar Series B raise.",
+      "billedmotiv_instruks": "17053e79832b4666aa6f",
+      "billede": "data/img/f6e3183964cdfc6c.webp",
+      "side": "artikel/1d6dcd635bc7906e.html"
+    },
+    {
+      "titel": "Meta’s Muse launches on iPad just a month after its mobile debut",
+      "link": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
+      "resume": "Meta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the assistant’s reach and integrations.",
+      "dato": "2026-10-07T18:30:57+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Meta Muse er nu tilgængelig på iPad",
+      "resume_da": "iPad-versionen kommer blot en måned efter iPhone-debut, mens Instagram brugte cirka 15 år på samme mål.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Metas AI-agent Muse udvides til iPad en måned efter mobilpremiere",
+        "forbehold": "",
+        "emne": "meta muse"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "sektioner": [
+        {
+          "overskrift": "Kun en måned efter iPhone-debut",
+          "tekst": "Meta annoncerede onsdag, at Muse — selskabets AI-assistent til at håndtere e-mail, møder, regninger og opgaver — nu også findes som en dedikeret iPad-app. Det sker en måned efter debut på iPhone.\n\nInstagram brugte til sammenligning cirka 15 år på at nå frem til en iPad-app, trods vedvarende brugerkrav. Muses brugerflade er teksttung, hvor billed- og videoopløsning betyder mindre, hvilket kan gøre overgangen lettere."
+        },
+        {
+          "overskrift": "6,6 millioner installationer siden 8. september",
+          "tekst": "Muse blev lanceret på iOS og Android 8. september og har siden nået **6,6 millioner installationer**, ifølge estimater fra Sensor Tower. Appen er én af snesevis af forbrugerrettede AI-agenter.\n\nBrugere kobler deres konti til appen, der hjælper med at holde styr på e-mail, møder og regninger og kan bestille bord, handle ind, sætte mål og foretage køb. De enkelte tjenester kaldes connectors — brugeren vælger selv, hvilke dele af sit digitale liv der skal gives adgang til."
+        },
+        {
+          "overskrift": "Nye forbindelser og en bot-udfordring",
+          "tekst": "Med iPad-lanceringen tilføjede Meta flere connectors, herunder Asana, Canva, Dropbox, Figma, QuickBooks, GitHub, Klaviyo, Zoom, Notion og Granola samt Meta-annoncekonti.\n\nDerudover samarbejder Meta med detailkæder som Best Buy, Gap, Sephora, Walmart og Wayfair, så agenten kan handle på brugerens vegne. Men hjemmesider kan fejlagtigt blokere agenten ved at tage den for en bot.\n\nMeta annoncerede tirsdag, at det arbejder med branchepartnere på en **åben standard**, så personlige AI-agenter kan identificere sig over for virksomheder."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "6,6 millioner",
+          "label": "Installationer siden lanceringen 8. september, efter estimater fra Sensor Tower"
+        },
+        {
+          "tal": "ca. 15 år",
+          "label": "Tid før Instagram fik en iPad-app, mod Muses ene måned"
+        }
+      ],
+      "detaljer": [
+        "Forbindelser tilsluttes selektivt alt efter, hvor meget af sit digitale liv brugeren vil overlade til AI.",
+        "Meta annoncerede tirsdag en åben standard, der skal hjælpe virksomheder med at skelne godartede fra ondsindede bots."
+      ],
+      "betydning": "En fælles standard kan gøre det lettere for webbutikker at acceptere AI-agenter, der handler på brugernes vegne.",
+      "pointer": [
+        "iPad-app lanceret onsdag 7. oktober 2026",
+        "6,6 millioner installationer siden 8. september",
+        "Meta vil bruge åben standard mod bot-blokering"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:53:12.188772+00:00"
+      },
+      "historie_dato": "2026-10-07T15:37:23+00:00",
+      "andre": [
+        {
+          "kilde": "The Verge AI",
+          "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+          "rubrik": "Meta Muse får iPad-støtte efter App Store-succes",
+          "resume_da": "Opdateringen udnytter den større skærm, og samtidig tilslutter Muse sig værktøjer som Canva, Figma og Notion.",
+          "dato": "2026-10-07T11:37:23-04:00",
+          "foerst_set": "2026-10-07T15:44:28.800933+00:00"
+        }
+      ],
+      "side": "artikel/7d49c27e2bd019e0.html"
+    },
+    {
+      "titel": "OpenAI’s Alexander Embiricos is coming to TechCrunch Disrupt 2026 — days after the launch of Dots",
+      "link": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots/",
+      "resume": "OpenAI’s Alexander Embiricos is coming to the AI Stage at TechCrunch Disrupt 2026, just days after the launch of Dots. Join this conversation by registering for your pass. Get you pass now to save up to $100 and get a second at 50% off.",
+      "dato": "2026-10-07T14:30:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "OpenAI's Dots-chef Embiricos taler på Disrupt",
+      "resume_da": "Produktlederen bag den nye always-on agent forklarer på AI-scenen, hvordan Dots fungerer, og hvorfor privatliv kan afgøre dens fremtid.",
+      "sektioner": [
+        {
+          "overskrift": "Lederen af Dots taler på AI-scenen",
+          "tekst": "Alexander Embiricos, produktchef for Dots hos OpenAI, deltager ved TechCrunch Disrupt 2026 i San Francisco. Her møder han TechCrunch til sessionen \"What Comes After the Chatbot?\" på AI-scenen i Moscone West, 13.–15. oktober.\n\nDet sker få dage efter, at OpenAI afslørede Dots — en altid aktiv personlig AI-agent. På scenen vil Embiricos forklare tankerne bag Dots og den retning, OpenAI mener, personlige agenter bevæger sig i."
+        },
+        {
+          "overskrift": "Dots kan arbejde i baggrunden",
+          "tekst": "Dots er designet til at gå ud over at svare på spørgsmål. Agenterne har deres egne cloud-computere, kan tilslutte sig de apps, folk bruger til daglig, og kan fortsætte med at arbejde mod et mål i baggrunden.\n\nDet kan give AI'en langt større adgang til vores arbejde og digitale liv. Den øgede autonomi rejser derfor sværere spørgsmål: Hvad må en AI-agent gøre uden at spørge først? Og hvor meget kontrol er vi villige til at give fra os?"
+        },
+        {
+          "overskrift": "Privatliv og tillid kan afgøre Dots",
+          "tekst": "Efterhånden som systemerne lærer mere om os og får adgang til mere følsomme oplysninger, bliver spørgsmålet, om firmaer som OpenAI kan opbygge tillid nok til, at folk tør bruge dem.\n\nEmbiricos' session vil handle om, hvorfor netop privatliv og tillid kan afgøre, om personlige agenter som Dots bliver en succes."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2025/09/Disrupt-2025-AI-Stage.jpg?w=1024",
+          "tekst": "Image Credits: Slava Blazer Photography",
+          "kilde": "TechCrunch AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "omkring 10.000",
+          "label": "Founders, investorer og operatører ved Disrupt"
+        },
+        {
+          "tal": "250+",
+          "label": "Tech-ledere i samtaler på tværs af seks scenarier"
+        },
+        {
+          "tal": "200+",
+          "label": "Sessioner, rundborde og breakouts under Disrupt"
+        }
+      ],
+      "detaljer": [
+        "Dots beskrives som en always-on personlig AI-agent af OpenAI",
+        "Moscone West i San Francisco er vært for Disrupt 2026",
+        "Artiklen er publiceret 7. oktober 2026, seks dage før Disrupt"
+      ],
+      "betydning": "Privatliv og tillid kan blive afgørende for, om personlige AI-agenter som Dots bliver udbredt.",
+      "pointer": [
+        "Dots er OpenAI's nye always-on personlige AI-agent",
+        "Embiricos taler på AI-scenen ved Disrupt 13.–15. oktober",
+        "Kontrol, privatliv og tillid er centrale spørgsmål"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:55:57.630780+00:00"
+      },
+      "side": "artikel/3cadd0110a707051.html"
+    },
+    {
+      "titel": "Get hands-on: The full lineup of interactive roundtables at TechCrunch Disrupt 2026",
+      "link": "https://techcrunch.com/2026/10/07/get-hands-on-the-full-lineup-of-interactive-roundtables-at-techcrunch-disrupt-2026/",
+      "resume": "From Nvidia and Chime to Obvious Ventures and Anthropic, explore the entire roundtable agenda at TechCrunch Disrupt 2026. Register now to save up to $100 on your pass and get a second pass at 50% off.",
+      "dato": "2026-10-07T14:15:00+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Nyheder",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "TechCrunch Disrupt 2026 udgiver fuldt roundtable-program",
+      "resume_da": "Programmet spænder fra fysisk AI og kvanteberegning til fundraising og børsnotering, og alle sessioner er inkluderet i billetten.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ],
+      "sektioner": [
+        {
+          "overskrift": "Hele roundtable-programmet er offentliggjort",
+          "tekst": "TechCrunch har lagt den fulde liste over de interaktive roundtables ved Disrupt 2026 frem forud for messen 13.–15. oktober i Moscone West i San Francisco.\n\nEn roundtable er en lille, dybdegående samtale, hvor du sætter dig sammen med stiftere, investorer, operatører og eksperter om de samme udfordringer, som du selv står med. Du tager egne spørgsmål og erfaringer med.\n\nSessionerne løber på **to dedikerede roundtable-områder** gennem alle tre dage og er inkluderet i et Disrupt-pas."
+        },
+        {
+          "overskrift": "Programmet krydser fysisk AI, fundraising og kvanteberegning",
+          "tekst": "En række handler om, at AI flytter sig fra skærmen ud i den fysiske verden. Basu tager dataudfordringerne bag robotter og autonome systemer op: edge cases, multimodale data og pipelines, der skal fungere stabilt i praksis.\n\nAndre sessioner tager udgangspunkt i, at AI ikke nødvendigvis erstatter SaaS, men blotlægger, hvor opdelt softwaremarkedet er under overfladen. Der er også egne borde om fundraising, om forberedelse på børsnotering og om, hvorfor mange virksomhedsprojekter med AI aldrig slipper pilotfasen.\n\nKvanteberegning får en praktisk introduktion for investorer, der skal skelne reel fremdrift fra hype, og healthcare fremhæves som et område, hvor generativ AI er adopteret usædvanligt hurtigt."
+        },
+        {
+          "overskrift": "Stiftere og investorer sidder ved bordene",
+          "tekst": "Blandt deltagerne er Eléonore Crespo, medstifter og co-CEO for Pigment, og Sofia Fatakhova, senior vice president for finans og kapitalmarkeder hos Chime, som taler om AI-drevne finansfunktioner længe før en børsnotering.\n\nOgså Rob Biederman fra Asymmetric Capital Partners, Logan Farrell fra Rugged Robotics og Austin Yount fra Brick & Mortar Ventures er på programmet, ligesom Srishti Chaudhary fra Walmart eCommerce om agentic shopping.\n\nCassie Kozyrkov, tidligere Chief Decision Scientist hos Google, leder en samtale, hvor du kan medbringe en konkret forretningsudfordring og få belyst, hvor AI kan hjælpe, og hvor menneskelig dømmekraft stadig afgør."
+        },
+        {
+          "overskrift": "Billetten dækker sessionerne alle tre dage",
+          "tekst": "Roundtables kræver ikke særskilt billet: de er en del af et Disrupt-pas, der i skrivende stund kan købes med op til 100 dollars i besparelse, plus halv pris på et andet pas.\n\nIfølge TechCrunch ventes over 10.000 founders, investorer, operatører og tech-ledere til Moscone West 13.–15. oktober 2026, hvor roundtables udgør et spor ved siden af konferencens øvrige samtaler."
+        }
+      ],
+      "brief": "",
+      "figurer": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2025/12/TC-All-Stage-2025-roundtable.jpg?w=1024",
+          "tekst": "Image Credits: Halo Creative / Flickr (opens in a new window)",
+          "kilde": "TechCrunch AI"
+        },
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2024/05/roundtable.jpg?w=680",
+          "tekst": "Image Credits: Kimberly White/Getty Images for TechCrunch",
+          "kilde": "TechCrunch AI"
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "10.000+ deltagere",
+          "label": "Forventet oppmøde af founders, investorer og tech-ledere ved Moscone West"
+        },
+        {
+          "tal": "13.–15. oktober 2026",
+          "label": "Datointerval for TechCrunch Disrupt i San Francisco"
+        },
+        {
+          "tal": "2 roundtable-områder",
+          "label": "Dedikerede spor til de interaktive sessioner gennem hele eventet"
+        },
+        {
+          "tal": "Op til 100 dollars",
+          "label": "Besparelse på Disrupt-pas i den omtalte kampagne, plus 50% på et ekstra pas"
+        }
+      ],
+      "detaljer": [
+        "Jack Hidary fra SandboxAQ og Stacie Calad-Thomson fra Nvidia om AI forankret i fysik og kemi.",
+        "Stephen Ward deler fejl fra sin tid som CISO om risiko og moden sikkerhedsorganisation.",
+        "Vishal og Tushar Kumar fra Twin Peaks Wealth Advisors om skat og likviditet efter exit.",
+        "Kevin Hawkins fra New York Stock Exchange om, hvorfor El Segundo tiltrækker hard tech."
+      ],
+      "betydning": "Passindehavere kan tage egne udfordringer med til bordene uden ekstra billet, så adgangen til investorer og operatører ikke afhænger af separate mødebookinger.",
+      "pointer": [
+        "Roundtables er inkluderet i Disrupt-passet",
+        "To dedikerede områder til de interaktive sessioner",
+        "Emner spænder fra kapitaltabeller til autonome forsøg"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:54:48.741111+00:00"
+      },
+      "side": "artikel/504b159a61622b29.html"
+    },
+    {
+      "titel": "Fraudster jailed for using 10K bots and AI songs to outstream Taylor Swift",
+      "link": "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/",
+      "resume": "Man gets 18 months for AI scheme stealing $8M in music streaming royalties.",
+      "dato": "2026-10-07T17:57:39+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "eget_foerst_set": "2026-10-07T21:31:02.551414+00:00",
+      "rubrik": "Michael Smith får 18 måneders fængsel for AI-fup",
+      "resume_da": "Sagen er den første i USA mod AI-assisteret streamingbedrageri. Smith skal have konfiskeret 8,1 millioner dollars ud over fængslet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Mand idømt 18 måneders fængsel for AI-svindel med 8 mio. dollars i royalties",
+        "forbehold": "",
+        "emne": "musik streaming svindel"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "Syv års snyd med tusindvis af konti",
+          "tekst": "Fra 2017 begyndte Michael Smith at oprette falske e-mailkonti og bruge betalingskort, han havde erhvervet bedragerisk, til at lave tusindvis af konti på Amazon Music, Apple Music, Spotify og YouTube Music.\n\nDerefter satte han software til at lade robotter streame vedvarende de sange, han påstod, at han ejede. Ifølge Justitsministeriet var sangene skabt med AI.\n\nDa han blev anholdt i 2024, havde han skabt **hundredtusinder af AI-genererede sange**. Milliarder af automatiserede streams blev spredt over dem, så botterne ikke fokuserede på én sang og udløste en alarm."
+        },
+        {
+          "overskrift": "80,9 millioner falske streams på en måned",
+          "tekst": "I april 2023 blev Smiths falske sange streamet 80,9 millioner gange. I samme måned fik hele Taylor Swifts katalog 9,3 millioner streams, oplyser Justitsministeriet.\n\nSkaden ramte også kunstnere, der deler de samme royalty-puljer på tjenesterne. Når Smith hævede sin andel, faldt udbetalingen til de øvrige rettighedshavere."
+        },
+        {
+          "overskrift": "18 måneders fængsel og 8,1 millioner konfiskeret",
+          "tekst": "Smith erkendte sig skyldig og blev idømt 18 måneders fængsel. Dommen omfatter også konfiskering af **8.091.843,64 dollars**, som han hævede gennem ordningen.\n\nJustitsministeriet kaldte Smith den første amerikaner, der sigtes for AI-assisteret streamingbedrageri, og argumenterede for en hård straf for at afskrække andre.\n\nSmiths forsvarere bad om betinget straf og pegede på, at han var «dybt ked af det» og havde fået tilbudt et job til 5.000 dollars om måneden i et pladeselskab."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "18 måneder",
+          "label": "Fængselsstraf efter tilståelse i North Carolina"
+        },
+        {
+          "tal": "8.091.843,64 dollars",
+          "label": "Beløb, som Smith skal have konfiskeret"
+        },
+        {
+          "tal": "80,9 millioner streams",
+          "label": "Smiths falske sange, april 2023"
+        },
+        {
+          "tal": "9,3 millioner streams",
+          "label": "Taylor Swifts katalog, samme måned"
+        },
+        {
+          "tal": "7 år",
+          "label": "Uopdaget drift fra 2017 til anholdelsen i 2024"
+        }
+      ],
+      "detaljer": [
+        "Michael Smith er 54 år og kommer fra North Carolina.",
+        "Smith blev først sigtet i 2024.",
+        "Anklagemyndigheden sagde, at Smith løj for politiet under konfrontation.",
+        "Forsvaret mente, at sagen gjorde Smith til et eksempel."
+      ],
+      "betydning": "Dommen viser, at AI-drevet streamingbedrageri nu kan koste både fængsel og konfiskering i USA.",
+      "pointer": [
+        "Første amerikanske sag om AI-assisteret streamingbedrageri.",
+        "Snyd i syv år uden at blive opdaget.",
+        "Falske streams skærer i de royalties, rigtige artister deler."
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:57:59.707551+00:00"
+      },
+      "billedmotiv": "A solid bank-note stack sits inside a locked metal cashbox with the DOJ gavel icon resting on top, beside a music-note waveform bar chart showing inflated streaming spikes. The stack of bills is marked with a crossed-out circle, indicating the 8.1 million dollars confiscated for the AI streaming fraud.",
+      "billedmotiv_instruks": "22388f69f739f063c14c",
+      "side": "artikel/482f5b7f64b54381.html"
+    },
+    {
+      "titel": "AI could upend food delivery",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
+      "resume": "DoorDash, the leading food delivery app, processed 970 million orders in its second quarter this year and generated $4.5 billion in revenue. A 10-person startup called Bites is a blip in comparison: It has just around 300 restaurants signed up in the Bay Area, where it's operating as a pre-seed startup. But this summer, Bites […]",
+      "dato": "2026-10-07T08:00:00-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "eget_foerst_set": "2026-10-07T15:44:28.800933+00:00",
+      "rubrik": "DoorDash advarer restauranter om Bites' ChatGPT-bestillinger",
+      "resume_da": "Ti-mands startup lader gæster bestille direkte i ChatGPT, og Bites kender 14 modtagere af advarselsbreve.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 1,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "analyse",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "AI-agenter kan potentielt ændre madlevering, men Bites er kun pre-seed med 300 restauranter mod DoorDash' skala.",
+        "forbehold": "Kildeudrag giver ikke konkret dokumentation for agentens evner eller udbredelse.",
+        "emne": "bites agentic food delivery"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "DoorDash sendte formbreve i august",
+          "tekst": "Flere restauranter i Bay Area fik i august et brev fra DoorDash om, at de muligvis var opført på Bites uden samtykke. Brevet, som The Verge har set eksemplarer af, advarede om, at praksissen alt efter delstat kunne være ulovlig.\n\nBites kender 14 restauranter, der har modtaget brevet. Enkelte fik det, selvom de slet ikke var opført på platformen."
+        },
+        {
+          "overskrift": "Gæster bestiller direkte i ChatGPT",
+          "tekst": "Bites er en startup med ti medarbejdere og omkring 300 tilmeldte restauranter i Bay Area. Selskabet kalder sig \"AI native\": Gæster kan lægge ordre hos Bites-restauranter direkte i ChatGPT, og ordren går til restauranten selv i stedet for videre til et mellemled som DoorDash.\n\nDoorDash tager 15 til 30 procent i provision af hver leveringsordre. Bites tager i stedet et fladt tillæg på 1 dollar per ordre, som gæsten som regel betaler."
+        },
+        {
+          "overskrift": "Restauratør skiftede side i regnskabet",
+          "tekst": "Jay Jayaraman har 13 restauranter på Bites. Før skiftet kom 80 procent af hans ordrer fra DoorDash; i dag anslår han, at 65 procent kommer fra Bites, 25 procent fra DoorDash og resten fra Uber Eats og Grubhub.\n\nHan siger, at marginerne er højere på Bites-ordrer end på DoorDash-ordrer: \"Vi ser et stort skift væk fra DoorDash, og det byder jeg personligt velkomment, for det øger bundlinjen.\""
+        },
+        {
+          "overskrift": "Reklamekroner forsvinder med apps",
+          "tekst": "Bites rammer en sårbar plet. Bestiller folk gennem en AI i stedet for at åbne apps og hjemmesider, mister platformene mulighed for at vise fremhævede opslag, tilbud og reklamer. DoorDashs reklameforretning nåede 1 milliard dollar i 2024.\n\nAmazon har sagsøgt AI-firmaet Perplexity for at få agenter til at handle på sitet og har blokeret Metas Muse-agent."
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [
+        {
+          "tal": "970 millioner ordrer",
+          "label": "DoorDash, andet kvartal i år"
+        },
+        {
+          "tal": "4,5 milliarder dollar",
+          "label": "DoorDash-omsætning, samme kvartal"
+        },
+        {
+          "tal": "ca. 300 restauranter",
+          "label": "Bites' tilmeldte i Bay Area"
+        },
+        {
+          "tal": "14 breve",
+          "label": "Modtagere, Bites kender til"
+        }
+      ],
+      "detaljer": [
+        "Matt Maloney, medstifter af både Grubhub og Bites, står bag prismodellen.",
+        "The Verge har døbt striden \"the DoorDash problem\".",
+        "Bites henter menuer via kassesystemer som Toast og Square.",
+        "Amazon har fjernet produktdata fra ordre-mails."
+      ],
+      "betydning": "Jay Jayaraman siger, at bundlinjen stiger med Bites-ordrer, mens DoorDash netop nu advarer restauranter mod den udvikling.",
+      "pointer": [
+        "DoorDash sendte advarselsbreve i august",
+        "Bites lader gæster bestille via ChatGPT",
+        "14 breve kender Bites til"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-07T21:56:53.972677+00:00"
+      },
+      "side": "artikel/5b086971e9bdbe66.html"
     }
   ]
 }
