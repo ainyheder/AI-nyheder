@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-07T00:28:06.866335+00:00",
+ "genereret": "2026-10-07T06:49:49.457508+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,23 +195,23 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-07T00:01:34.898825+00:00",
+  "opdateret": "2026-10-07T06:22:34.414630+00:00",
   "antal": 111,
   "med_billede": 41,
   "paa_dansk": 111,
   "kategorier": {
    "Lanceringer": 26,
    "Hverdags-AI": 17,
-   "Penge \u0026 marked": 20,
+   "Penge \u0026 marked": 22,
    "Samfund \u0026 etik": 18,
    "Politik \u0026 jura": 14,
    "Forskning": 12,
-   "Nyheder": 3,
+   "Dybde": 1,
    "Labs": 1
   },
   "kilder": {
-   "TechCrunch AI": 36,
-   "Simon Willison AI": 6,
+   "TechCrunch AI": 35,
+   "Simon Willison AI": 7,
    "The Verge AI": 24,
    "Ars Technica AI": 10,
    "MIT Tech Review AI": 7,
@@ -255,13 +255,13 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
-    "titel": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
-    "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
-    "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
-    "side": "artikel/3bd217aa84bd6b84.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T22:34:03+00:00",
+    "titel": "Quoting Jake Boggan",
+    "rubrik": "Jake Boggan: Mit livs problem er måske løst",
+    "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+    "side": "artikel/17929c3f9f5ee1dd.html",
+    "kategori": "Dybde",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-07T04:47:55+00:00",
     "billede": ""
    },
    {
@@ -269,19 +269,19 @@ window.KOMMANDO_DATA = {
     "rubrik": "Lambda rejser op til $4 mia. før børsnotering",
     "link": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
     "side": "artikel/c6c0f9e409efb4ee.html",
-    "kategori": "Nyheder",
+    "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-06T20:00:30+00:00",
     "billede": ""
    },
    {
-    "titel": "The next hurdle for AI agents: getting websites to let them in",
-    "rubrik": "Amazon spærrer Meta Muse fra sin webshop",
-    "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-    "side": "artikel/159ed2438ba175b0.html",
-    "kategori": "Nyheder",
+    "titel": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+    "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
+    "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+    "side": "artikel/3bd217aa84bd6b84.html",
+    "kategori": "Penge \u0026 marked",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-06T19:56:50+00:00",
+    "dato": "2026-10-06T22:34:03+00:00",
     "billede": ""
    },
    {
@@ -377,7 +377,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-07T00:01:34.898825+00:00",
+  "opdateret": "2026-10-07T06:22:34.414630+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
@@ -385,8 +385,8 @@ window.KOMMANDO_DATA = {
   "kildehentninger": 8,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-   "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-   "https://simonwillison.net/2026/Oct/6/le-chonk/"
+   "https://simonwillison.net/2026/Oct/6/hn-49983751/",
+   "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
@@ -395,7 +395,35 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -427,12 +455,8 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 183fcacc2014829e: skriveopgave har 1021 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    "vaerktoej": "laes_kilde",
+    "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
@@ -440,10 +464,6 @@ window.KOMMANDO_DATA = {
    }
   ],
   "kildegrundlag": [
-   {
-    "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-    "grundlag": "kildetekst"
-   },
    {
     "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
     "grundlag": "kildetekst"
@@ -457,10 +477,6 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-    "grundlag": "kildetekst"
-   },
-   {
     "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
     "grundlag": "kildetekst"
    },
@@ -469,13 +485,21 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
+    "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-07T00:01:34.063268+00:00",
+  "opdateret": "2026-10-07T06:22:33.766507+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -831,7 +855,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-07T00:01:34.898825+00:00",
+  "opdateret": "2026-10-07T06:22:34.414630+00:00",
   "artikler_i_alt": 111,
   "kilder": [
    {
@@ -1022,15 +1046,6 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 0,
     "seneste": [
      {
-      "rubrik": "Gemini 4 Argon ruller ud til cyberforsvar",
-      "dato": "",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-     },
-     {
       "rubrik": "Gemini Live beskriver verden for blinde",
       "dato": "2026-10-01T16:00:00",
       "foerst_set": "2026-10-02T12:20:39",
@@ -1180,9 +1195,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 6,
-    "som_ekstra": 3,
+    "i_listen": 7,
+    "som_ekstra": 4,
     "seneste": [
+     {
+      "rubrik": "OpenAI-agenter redigerede Wikipedias wikis",
+      "dato": "",
+      "foerst_set": "2026-10-07T06:22:34",
+      "link": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
+      "side": "",
+      "hvor": "under",
+      "under": "Wikimedia: OpenAI-agenter bag millioner af kald"
+     },
      {
       "rubrik": "Mistral Large 4 springer fra 9 til 38",
       "dato": "",
@@ -1209,6 +1233,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     },
+     {
+      "rubrik": "Jake Boggan: Mit livs problem er måske løst",
+      "dato": "2026-10-07T04:47:55",
+      "foerst_set": "2026-10-07T06:22:34",
+      "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+      "side": "artikel/17929c3f9f5ee1dd.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Claude Opus 5.5 komponerede spilmusik",
@@ -1276,7 +1309,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 36,
+    "i_listen": 35,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1307,15 +1340,6 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
-      "dato": "2026-10-06T22:34:03",
-      "foerst_set": "2026-10-07T00:01:34",
-      "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
-      "side": "artikel/3bd217aa84bd6b84.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Lambda rejser op til $4 mia. før børsnotering",
       "dato": "2026-10-06T20:00:30",
       "foerst_set": "2026-10-07T00:01:34",
@@ -1325,11 +1349,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Amazon spærrer Meta Muse fra sin webshop",
-      "dato": "2026-10-06T19:56:50",
+      "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
+      "dato": "2026-10-06T22:34:03",
       "foerst_set": "2026-10-07T00:01:34",
-      "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-      "side": "artikel/159ed2438ba175b0.html",
+      "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+      "side": "artikel/3bd217aa84bd6b84.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1384,6 +1408,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-06T01:24:34",
       "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
       "side": "artikel/13557b75794fecc1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "OpenAI vandmærker ChatGPT-tekst i EU",
+      "dato": "2026-10-05T20:36:48",
+      "foerst_set": "2026-10-06T01:24:34",
+      "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+      "side": "artikel/212da1d35ed9326d.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1523,8 +1556,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 10,
-    "som_ekstra": 4,
+    "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "OpenAI vandmærker ChatGPT-tekst som standard i EU",
+      "dato": "",
+      "foerst_set": "2026-10-07T00:01:34",
+      "link": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI vandmærker ChatGPT-tekst i EU"
+     },
      {
       "rubrik": "OpenAI-agenter forsøgte at hacke Wikipedias værktøjer",
       "dato": "",
@@ -1621,15 +1663,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves/",
       "side": "artikel/46a3a5a996fbe157.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google betaler udgivere 0,1 procent for AI-svar",
-      "dato": "2026-09-30T16:03:48",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://arstechnica.com/google/2026/09/google-is-paying-100-websites-for-contributions-to-ai-overviews-but-the-amounts-are-tiny/",
-      "side": "artikel/ea96d51faf9b0f3b.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1791,12 +1824,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-07T00:28:02.221589+00:00",
+  "opdateret": "2026-10-07T06:49:43.841670+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
   "besoeg_i_alt": 22,
-  "sidevisninger_i_alt": 29,
+  "sidevisninger_i_alt": 31,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1947,14 +1980,14 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-10-07",
     "besoeg": 0,
-    "visninger": 0
+    "visninger": 10
    }
   ],
   "sider": [
    {
     "sti": "/",
     "besoeg": 22,
-    "visninger": 29
+    "visninger": 31
    }
   ],
   "artikler": [],

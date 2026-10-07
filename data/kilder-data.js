@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-07T00:01:34.898825+00:00",
+ "opdateret": "2026-10-07T06:22:34.414630+00:00",
  "artikler_i_alt": 111,
  "kilder": [
   {
@@ -214,15 +214,6 @@ window.KILDER_STATUS = {
    "som_ekstra": 0,
    "seneste": [
     {
-     "rubrik": "Gemini 4 Argon ruller ud til cyberforsvar",
-     "dato": "",
-     "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
-    {
      "rubrik": "Gemini Live beskriver verden for blinde",
      "dato": "2026-10-01T16:00:00",
      "foerst_set": "2026-10-02T12:20:39",
@@ -388,9 +379,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
-   "som_ekstra": 3,
+   "i_listen": 7,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "OpenAI-agenter redigerede Wikipedias wikis",
+     "dato": "",
+     "foerst_set": "2026-10-07T06:22:34",
+     "link": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
+     "side": "",
+     "hvor": "under",
+     "under": "Wikimedia: OpenAI-agenter bag millioner af kald"
+    },
     {
      "rubrik": "Mistral Large 4 springer fra 9 til 38",
      "dato": "",
@@ -417,6 +417,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Jake Boggan: Mit livs problem er måske løst",
+     "dato": "2026-10-07T04:47:55",
+     "foerst_set": "2026-10-07T06:22:34",
+     "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+     "side": "artikel/17929c3f9f5ee1dd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude Opus 5.5 komponerede spilmusik",
@@ -479,6 +488,10 @@ window.KILDER_STATUS = {
      2
     ],
     [
+     "The Verge AI",
+     1
+    ],
+    [
      "Mistral AI",
      1
     ]
@@ -494,7 +507,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 35,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -525,15 +538,6 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
-     "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
-     "dato": "2026-10-06T22:34:03",
-     "foerst_set": "2026-10-07T00:01:34",
-     "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
-     "side": "artikel/3bd217aa84bd6b84.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Lambda rejser op til $4 mia. før børsnotering",
      "dato": "2026-10-06T20:00:30",
      "foerst_set": "2026-10-07T00:01:34",
@@ -543,11 +547,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Amazon spærrer Meta Muse fra sin webshop",
-     "dato": "2026-10-06T19:56:50",
+     "rubrik": "Melius rejser 20 mio. dollar efter kasseret produkt",
+     "dato": "2026-10-06T22:34:03",
      "foerst_set": "2026-10-07T00:01:34",
-     "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-     "side": "artikel/159ed2438ba175b0.html",
+     "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+     "side": "artikel/3bd217aa84bd6b84.html",
      "hvor": "forside",
      "under": ""
     },
@@ -631,6 +635,15 @@ window.KILDER_STATUS = {
      "side": "artikel/a8ac03afa12de270.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Hot Girl Hotline stopper chatten med vilje",
+     "dato": "2026-10-05T17:29:22",
+     "foerst_set": "2026-10-06T01:24:34",
+     "link": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/",
+     "side": "artikel/d31c63ac3bf436dc.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -640,7 +653,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     2
+     3
     ],
     [
      "Anthropic News",
@@ -876,6 +889,10 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
+    ],
+    [
+     "Simon Willison AI",
+     1
     ]
    ]
   },
@@ -890,8 +907,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 10,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "OpenAI vandmærker ChatGPT-tekst som standard i EU",
+     "dato": "",
+     "foerst_set": "2026-10-07T00:01:34",
+     "link": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI vandmærker ChatGPT-tekst i EU"
+    },
     {
      "rubrik": "OpenAI-agenter forsøgte at hacke Wikipedias værktøjer",
      "dato": "",
@@ -1026,7 +1052,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "Google Gemini",

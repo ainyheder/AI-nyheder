@@ -1,20 +1,53 @@
 {
-  "opdateret": "2026-10-07T00:01:34.898825+00:00",
+  "opdateret": "2026-10-07T06:22:34.414630+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
-    "https://simonwillison.net/2026/Oct/6/le-chonk/"
+    "https://simonwillison.net/2026/Oct/6/hn-49983751/",
+    "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
   ],
-  "input_fingerprint": "b6b48ffc27857f52",
+  "input_fingerprint": "1fbf018c325c14b1",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "OpenAI-rubrikken (\"OpenAI hævder hundredvis...\") tillægger OpenAI påstanden om hundredvis; i The Verge-kilden er det AGMAI, der vurderer, at udgivelsen rummer løsninger på 'hundreds', mens OpenAI selv annoncerede 'mere end 100'. Kropsteksten skelner korrekt, men overskriften udvisker forskellen.",
+    "I Mistral-artiklens kodeafsnit står de konkrete benchmark-procenter (61,7 / 59,4 / 28,3) i første sætning uden producentmarkering; 'oplyser Mistral' først i næste sætning. Påstande er dog dækket af kilden og i øvrigt tydeligt mærket som Mistrals egne tal.",
+    "EmbeddingGemma 2-artiklen bruger markdown-fed markering i to afsnit, hvilket afviger fra de øvrige artiklers formatering (rent formelt, ikke faktuelt)."
+  ],
   "modelkald": 6,
   "kildehentninger": 8,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -46,12 +79,8 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 183fcacc2014829e: skriveopgave har 1021 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -59,10 +88,6 @@
     }
   ],
   "kildegrundlag": [
-    {
-      "link": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-      "grundlag": "kildetekst"
-    },
     {
       "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
       "grundlag": "kildetekst"
@@ -76,10 +101,6 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
       "grundlag": "kildetekst"
     },
@@ -88,7 +109,15 @@
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://simonwillison.net/2026/Oct/7/jake-boggan/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
       "grundlag": "kildetekst"
     }
   ],
