@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-08T06:34:10.814454+00:00",
+  "opdateret": "2026-10-08T15:50:15.445415+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,10 +8,10 @@
     "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
     "https://huggingface.co/blog/LiquidAI/open-d1"
   ],
-  "input_fingerprint": "70bf7636e5a46ac2",
-  "forklaring": "Redaktionsmødet fejlede: IncompleteRead",
+  "input_fingerprint": "bc9ecafec42ef945",
+  "forklaring": "Redaktionsmødet fejlede: TidOpbrugt",
   "modelkald": 6,
-  "kildehentninger": 7,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -54,29 +54,21 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Ukendt eller gentaget artikel"
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.anthropic.com/claude-haiku-5-5",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/gpt-6-for-everyone",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+      "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
       "grundlag": "kildetekst"
     },
     {
@@ -84,18 +76,26 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+      "link": "https://openai.com/index/gpt-6-for-everyone",
+      "grundlag": "rss_resume"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+      "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.anthropic.com/claude-haiku-5-5",
-    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 56
 }
