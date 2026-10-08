@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-10-08T15:50:15.445415+00:00",
-  "status": "reserve",
+  "opdateret": "2026-10-08T21:27:54.455074+00:00",
+  "status": "godkendt",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
@@ -8,10 +8,27 @@
     "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
     "https://huggingface.co/blog/LiquidAI/open-d1"
   ],
-  "input_fingerprint": "bc9ecafec42ef945",
-  "forklaring": "Redaktionsmødet fejlede: TidOpbrugt",
+  "input_fingerprint": "84f80d4b2da8e95d",
+  "redaktionsnote": "Kun Gemini-agent-annonceringen er læst i kilder (TechCrunch og The Verge dokumenterer samme event og er slået sammen til én plads). Den er dagens største nyhed fra de seneste 24 timer og fylder hovedhistorien. Øvrige stærke kandidater fra i dag – Anthropic-stramning af brugspolitikken (The Verge og TechCrunch er samme begivenhed, kun én anbefaling), fyrede OpenAI-sikkerhedsforskeres åbne brev, Goodfire's agentmonitorer, USA Today's søgsmål mod OpenAI, Googles offline mødeapp og kritik af OpenAI's matematiske beviser – anbefales, men venter på kilde læsning før evt. optagelse som hovedhistorie. Ingen genvalg af gårsdagens historier.",
+  "beslutninger": [
+    {
+      "id": "34de0981eaae0131",
+      "begrundelse": "Google annoncerede på Gemini at Work-eventet en samlet Gemini-agent, der planlægger opgaver på tværs af Workspace, Microsoft 365, Slack og Jira, delegerer til subagents og får sin egen Workspace-konto med e-mailadresse. To uafhængige kilder dokumenterer samme lancering, og TechCrunch-teksten giver flest konkrete detaljer om modelvalg, MCP-forbindelser og tasks-inbox.",
+      "nyt_siden_sidst": "Ikke omtalt på den seneste forside. Det er nyt, at Google samler agenten i ét interface med eget login i virksomheders systemer; adgangen er indtil videre privat preview for Gemini Enterprise-kunder, ikke en offentlig lancering.",
+      "skriveopgave": "Overskrift med konkret anslag, fx: »Google giver Gemini sin egen e-mailadresse på jobbet«. Forklar kort, hvad der er nyt i forhold til den tidligere Gemini Spark: én agent, ét sted, opgaver i baggrunden på tværs af apps. Afsnit om, hvad agenten faktisk kan (planlægge, bruge egne færdigheder, forbinde til interne systemer via MCP, vælge model – herunder Anthropic's Claude), og et afsnit om adgang: privat preview for erhvervskunder, først til forbrugere senere. Medtag faktaboks med Pichais tal (1 mia. månedlige brugere, næsten 90 procent af Fortune 100) som producentpåstande. Forbehold: ingen uafhængig test af agenten, ingen offentlig pris, og audition af audit trail og subagent-delegation er endnu ikke dokumenteret udefra. Kort mellemoverskrift pr. afsnit, tekniske ord som MCP forklaredes ved første brug.",
+      "kilder": [
+        "34de0981eaae0131",
+        "651222944a43adc3"
+      ],
+      "samme_historie": [
+        "651222944a43adc3"
+      ],
+      "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "rubrik": "Google giver Gemini egen e-mailadresse på jobbet"
+    }
+  ],
   "modelkald": 6,
-  "kildehentninger": 6,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -30,40 +47,24 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
@@ -72,30 +73,12 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://openai.com/index/gpt-6-for-everyone",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+      "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.anthropic.com/claude-haiku-5-5",
-    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-    "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/"
+    "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
   ],
-  "afventer_artikler": 56
+  "afventer_artikler": 57
 }
