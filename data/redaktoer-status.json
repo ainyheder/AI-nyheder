@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-07T21:31:02.551414+00:00",
+  "opdateret": "2026-10-08T06:34:10.814454+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,9 +8,9 @@
     "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
     "https://huggingface.co/blog/LiquidAI/open-d1"
   ],
-  "input_fingerprint": "fded591f7bc40fb2",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel f213b8d3eadf23cd: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt",
-  "modelkald": 7,
+  "input_fingerprint": "70bf7636e5a46ac2",
+  "forklaring": "Redaktionsmødet fejlede: IncompleteRead",
+  "modelkald": 6,
   "kildehentninger": 7,
   "vaerktoejer": [
     {
@@ -26,18 +26,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
@@ -58,16 +46,20 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel f213b8d3eadf23cd: skriveopgave har 948 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel f213b8d3eadf23cd: skriveopgave har 901 tegn; skriv 12-900 tegn i dette felt"
+      "fejl": "Ukendt eller gentaget artikel"
     }
   ],
   "kildegrundlag": [
@@ -80,10 +72,6 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://openai.com/index/gpt-6-for-everyone",
       "grundlag": "rss_resume"
     },
@@ -92,18 +80,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "link": "https://huggingface.co/blog/LiquidAI/open-d1",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://www.anthropic.com/claude-haiku-5-5",
     "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-    "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/"
+    "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
   ],
-  "afventer_artikler": 57
+  "afventer_artikler": 52
 }
