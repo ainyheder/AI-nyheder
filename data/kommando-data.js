@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-09T16:08:19.012301+00:00",
+ "genereret": "2026-10-09T21:49:23.767381+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,28 +195,28 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-09T15:32:07.803403+00:00",
-  "antal": 139,
-  "med_billede": 65,
-  "paa_dansk": 139,
+  "opdateret": "2026-10-09T21:10:26.397423+00:00",
+  "antal": 150,
+  "med_billede": 72,
+  "paa_dansk": 150,
   "kategorier": {
-   "Lanceringer": 36,
+   "Lanceringer": 37,
    "Samfund \u0026 etik": 20,
    "Hverdags-AI": 21,
    "Forskning": 15,
    "Politik \u0026 jura": 14,
    "Penge \u0026 marked": 25,
-   "Nyheder": 4,
+   "Nyheder": 14,
    "Dybde": 2,
    "Labs": 2
   },
   "kilder": {
    "Anthropic News": 13,
-   "TechCrunch AI": 46,
    "Google DeepMind": 3,
-   "The Verge AI": 32,
-   "Ars Technica AI": 9,
-   "Simon Willison AI": 9,
+   "TechCrunch AI": 51,
+   "The Verge AI": 35,
+   "Ars Technica AI": 11,
+   "Simon Willison AI": 10,
    "MIT Tech Review AI": 10,
    "Mistral AI": 5,
    "Google Gemini": 6,
@@ -257,6 +257,86 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "AI coding agents generate more code, but not more software",
+    "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
+    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "side": "artikel/cc82babf92365087.html",
+    "kategori": "Nyheder",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-09T19:43:50+00:00",
+    "billede": "data/img/4155f1be4f290b08.jpg"
+   },
+   {
+    "titel": "AI disqualification yields new Nikon Small World in Motion winner",
+    "rubrik": "Nikon kårer ny Small World-vinder efter AI-diskvalifikation",
+    "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+    "side": "artikel/84b1e1a1c6a0d05b.html",
+    "kategori": "Nyheder",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-09T18:44:06+00:00",
+    "billede": "data/img/a37dd3be0d514b5b.webp"
+   },
+   {
+    "titel": "Nikon microscopic video competition winner disqualified for using generative AI",
+    "rubrik": "Nikon diskvalificerede mikrovinder efter AI-brug",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+    "side": "artikel/b54eaa9c1d3d30b0.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-09T14:06:57-04:00",
+    "billede": "data/img/ffe4147b2c7c5a63.webp"
+   },
+   {
+    "titel": "Danu Robotics’ fight to build a better recycling robot",
+    "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
+    "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+    "side": "artikel/50fcb2172953f7fa.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-09T16:45:00+00:00",
+    "billede": "data/img/418c7a186cc2255e.webp"
+   },
+   {
+    "titel": "We can’t help treating AI like it’s human. But should we?",
+    "rubrik": "Sherry Turkle advarer: AI lokker os til tillid",
+    "link": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+    "side": "artikel/3b30e472897bc4e0.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-09T16:40:14+00:00",
+    "billede": "data/img/973f89e1352d6ab7.webp"
+   },
+   {
+    "titel": "a16z’s Olivia Moore on the state of consumer AI",
+    "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
+    "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+    "side": "artikel/80b34c260cbbb646.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-09T15:43:33+00:00",
+    "billede": "data/img/099fd941b2964be0.webp"
+   },
+   {
+    "titel": "Trump’s attempt to rename AI is looking awfully artificial",
+    "rubrik": "Trump forbyder betegnelsen AI og kræver super intelligence",
+    "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+    "side": "artikel/f4d9eec7f132858c.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-09T10:25:43-04:00",
+    "billede": "data/img/704db7adb16a6785.webp"
+   },
+   {
+    "titel": "Instinct was the buzziest AI agent around — can it survive Muse?",
+    "rubrik": "Instinct klarer sig mod Muse og Dots",
+    "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+    "side": "artikel/d3a475a54b31bfe7.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-09T10:00:00-04:00",
+    "billede": ""
+   },
+   {
     "titel": "We’re putting too much faith in AI’s ability to say no",
     "rubrik": "AI-modellers nej er skrøbeligt og kan censurere",
     "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
@@ -273,7 +353,7 @@ window.KOMMANDO_DATA = {
     "side": "artikel/459308b0986ff8cc.html",
     "kategori": "Nyheder",
     "kilde": "The Verge AI",
-    "dato": "2026-10-08T10:00:22-04:00",
+    "dato": "2026-10-08T14:00:22+00:00",
     "billede": ""
    },
    {
@@ -295,99 +375,19 @@ window.KOMMANDO_DATA = {
     "kilde": "Simon Willison AI",
     "dato": "2026-10-09T12:54:06+00:00",
     "billede": "data/img/b246fa8f92b0a48e.webp"
-   },
-   {
-    "titel": "Anthropic launches free AI security scans for open-source projects",
-    "rubrik": "Anthropic tilbyder gratis AI-sikkerhedsscans",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-    "side": "artikel/6b44d5cdfd6f4fb3.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-08T17:53:51-04:00",
-    "billede": "data/img/d056d2318428bb9e.jpg"
-   },
-   {
-    "titel": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-    "rubrik": "Samuel King fik AI til at foreslå virusgener",
-    "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-    "side": "artikel/080bc68c6b739656.html",
-    "kategori": "Forskning",
-    "kilde": "MIT Tech Review AI",
-    "dato": "2026-10-09T00:08:24+00:00",
-    "billede": "data/img/4ebea264b7338ddf.webp"
-   },
-   {
-    "titel": "ttok 1.0",
-    "rubrik": "Simon Willison skifter ttok til GPT-6",
-    "link": "https://simonwillison.net/2026/Oct/9/ttok/",
-    "side": "artikel/e0bf43abd8095859.html",
-    "kategori": "Lanceringer",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-09T00:34:43+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Google brings agentic AI to Gemini, starting with businesses",
-    "rubrik": "Google giver Gemini egen e-mailadresse på jobbet",
-    "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-    "side": "artikel/ceca2e2c1a06a203.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-08T18:18:00+00:00",
-    "billede": "data/img/622ddd9cb88776a0.jpg"
-   },
-   {
-    "titel": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
-    "rubrik": "Goodfire fanger AI-agenter indefra langt billigere",
-    "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
-    "side": "artikel/7db2500e1227a520.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-08T16:00:00+00:00",
-    "billede": "data/img/7842990e99759e5f.webp"
-   },
-   {
-    "titel": "USA Today becomes the latest publisher to sue OpenAI",
-    "rubrik": "USA Today sagsøger OpenAI for hundredtusinder af artikler",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
-    "side": "artikel/c24725d4c0d47210.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-08T13:58:33-04:00",
-    "billede": "data/img/0c60a477891b21af.webp"
-   },
-   {
-    "titel": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-    "rubrik": "OpenAI fortæller investorer om 20 milliarder mindre",
-    "link": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
-    "side": "artikel/c48d7960551d8f36.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-08T18:19:42+00:00",
-    "billede": "data/img/8f2c14cd391a29e1.webp"
-   },
-   {
-    "titel": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "rubrik": "Arena fordobler næsten værdien til 3,1 mia. dollars",
-    "link": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-    "side": "artikel/494307aa9111eef1.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-08T18:19:45+00:00",
-    "billede": "data/img/b3047ab6ea84c9c0.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-09T15:32:07.803403+00:00",
+  "opdateret": "2026-10-09T21:10:26.397423+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Redaktionsmødet fejlede: IncompleteRead",
-  "modelkald": 5,
-  "kildehentninger": 4,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 42d1906c74af83c6: skriveopgave har 981 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
+  "kildehentninger": 7,
   "regelbaseret_udvalg": [
-   "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-   "https://huggingface.co/blog/LiquidAI/open-d1",
+   "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+   "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
    "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/"
   ],
   "udgivet_udvalg": [
@@ -421,15 +421,19 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -445,31 +449,51 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 42d1906c74af83c6: skriveopgave har 1196 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 42d1906c74af83c6: skriveopgave har 1030 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 42d1906c74af83c6: skriveopgave har 981 tegn; skriv 12-900 tegn i dette felt"
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+    "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+    "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://openai.com/index/sophos",
+    "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+    "grundlag": "rss_resume"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-09T15:32:07.254229+00:00",
+  "opdateret": "2026-10-09T21:10:25.863365+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -825,8 +849,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-09T15:32:07.803403+00:00",
-  "artikler_i_alt": 139,
+  "opdateret": "2026-10-09T21:10:26.397423+00:00",
+  "artikler_i_alt": 150,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1201,7 +1225,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 9,
+    "i_listen": 10,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1277,6 +1301,15 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Simon Willisons ttok kan nu liste modeller",
+      "dato": "2026-10-08T23:34:28",
+      "foerst_set": "2026-10-09T06:35:11",
+      "link": "https://simonwillison.net/2026/Oct/8/ttok/",
+      "side": "artikel/0e3b627310d21f33.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Jake Boggan: Mit livs problem er måske løst",
       "dato": "2026-10-07T04:47:55",
       "foerst_set": "2026-10-07T06:22:34",
@@ -1302,15 +1335,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/56c07856ac05cdfe.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Cowork flytter nu også VM'en i skyen",
-      "dato": "2026-10-05T23:56:47",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
-      "side": "artikel/cc72b44609fc8c8c.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1324,9 +1348,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 46,
+    "i_listen": 51,
     "som_ekstra": 5,
     "seneste": [
+     {
+      "rubrik": "TechCrunch Disrupt 2026 åbner om fire dage",
+      "dato": "",
+      "foerst_set": "2026-10-09T15:32:07.803403+00:00",
+      "link": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI og Anthropic møder op på TechCrunch Disrupt"
+     },
      {
       "rubrik": "Anthropic forbyder misbrug af Claude og valgindblanding",
       "dato": "",
@@ -1335,6 +1368,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic samler forbud mod falske kampagner"
+     },
+     {
+      "rubrik": "TechCrunch Disrupt åbner i Moscone West om fem dage",
+      "dato": "",
+      "foerst_set": "2026-10-08T15:50:15.445415+00:00",
+      "link": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door/",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI og Anthropic møder op på TechCrunch Disrupt"
      },
      {
       "rubrik": "Microsoft afslører pris på AI-PC'er med RTX Spark",
@@ -1373,6 +1415,33 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
+      "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
+      "dato": "2026-10-09T16:45:00",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+      "side": "artikel/50fcb2172953f7fa.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Sherry Turkle advarer: AI lokker os til tillid",
+      "dato": "2026-10-09T16:40:14",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+      "side": "artikel/3b30e472897bc4e0.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
+      "dato": "2026-10-09T15:43:33",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "side": "artikel/80b34c260cbbb646.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Goodfire fanger AI-agenter indefra langt billigere",
       "dato": "2026-10-08T16:00:00",
       "foerst_set": "2026-10-08T21:27:54",
@@ -1389,51 +1458,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/c48d7960551d8f36.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Arena fordobler næsten værdien til 3,1 mia. dollars",
-      "dato": "2026-10-08T18:19:45",
-      "foerst_set": "2026-10-08T21:27:54",
-      "link": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-      "side": "artikel/494307aa9111eef1.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Naturas Interface sender AI-agenter på fingeren",
-      "dato": "2026-10-08T16:00:00",
-      "foerst_set": "2026-10-08T21:27:54",
-      "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
-      "side": "artikel/02f01addd62e86c2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "OpenAI's beviser halter efter matematikkens krav",
-      "dato": "2026-10-08T18:10:55",
-      "foerst_set": "2026-10-08T21:27:54",
-      "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-      "side": "artikel/81c67bededb8c6b2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Ben Afflecks AI-video går viralt",
-      "dato": "2026-10-08T18:20:32",
-      "foerst_set": "2026-10-08T21:27:54",
-      "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-      "side": "artikel/d20ef6d9bc50893f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Google giver Gemini egen e-mailadresse på jobbet",
-      "dato": "2026-10-08T18:18:00",
-      "foerst_set": "2026-10-08T15:50:15",
-      "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-      "side": "artikel/ceca2e2c1a06a203.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1447,9 +1471,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
+    "i_listen": 35,
     "som_ekstra": 17,
     "seneste": [
+     {
+      "rubrik": "OpenAI dropper knap 400 matematiske resultater",
+      "dato": "",
+      "foerst_set": "2026-10-09T21:10:26.397423+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+      "side": "",
+      "hvor": "under",
+      "under": "OpenAI udsender 722 manuskripter med matematiske resultater"
+     },
      {
       "rubrik": "Google Foresight transskriberer møder helt offline",
       "dato": "",
@@ -1548,15 +1581,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Meta lader udviklere bygge Muse-hardware selv"
-     },
-     {
-      "rubrik": "Apple strammer Mac-diske adgang for AI-agenter",
-      "dato": "",
-      "foerst_set": "2026-10-02T20:55:07",
-      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-      "side": "",
-      "hvor": "under",
-      "under": "Apple strammer Full Disk Access til AI-agenter"
      }
     ]
    },
@@ -1570,7 +1594,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 9,
+    "i_listen": 11,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1628,6 +1652,24 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
+      "dato": "2026-10-09T19:43:50",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "side": "artikel/cc82babf92365087.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Nikon kårer ny Small World-vinder efter AI-diskvalifikation",
+      "dato": "2026-10-09T18:44:06",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+      "side": "artikel/84b1e1a1c6a0d05b.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Nvidia vil gøre robotter sikre med Halos",
       "dato": "2026-10-08T11:15:33",
       "foerst_set": "2026-10-08T15:50:15",
@@ -1660,24 +1702,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-07T15:44:28",
       "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
       "side": "artikel/49bf44826c74a3eb.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "MCP huller lader én agent styre den næste",
-      "dato": "2026-10-05T22:26:35",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
-      "side": "artikel/fb0b068eb35bb874.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Norge vil midlertidigt forbyde AI-briller",
-      "dato": "2026-10-05T13:39:30",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/",
-      "side": "artikel/1cc087e12e3ab549.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1902,7 +1926,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-09T16:08:13.320173+00:00",
+  "opdateret": "2026-10-09T21:49:18.894678+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-09T15:32:07.803403+00:00",
- "artikler_i_alt": 139,
+ "opdateret": "2026-10-09T21:10:26.397423+00:00",
+ "artikler_i_alt": 150,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -415,7 +415,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -487,6 +487,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-09T06:35:11",
      "link": "https://simonwillison.net/2026/Oct/9/ttok/",
      "side": "artikel/e0bf43abd8095859.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Simon Willisons ttok kan nu liste modeller",
+     "dato": "2026-10-08T23:34:28",
+     "foerst_set": "2026-10-09T06:35:11",
+     "link": "https://simonwillison.net/2026/Oct/8/ttok/",
+     "side": "artikel/0e3b627310d21f33.html",
      "hvor": "forside",
      "under": ""
     },
@@ -570,9 +579,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 46,
+   "i_listen": 51,
    "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "TechCrunch Disrupt 2026 åbner om fire dage",
+     "dato": "",
+     "foerst_set": "2026-10-09T15:32:07.803403+00:00",
+     "link": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Anthropic møder op på TechCrunch Disrupt"
+    },
     {
      "rubrik": "Anthropic forbyder misbrug af Claude og valgindblanding",
      "dato": "",
@@ -581,6 +599,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic samler forbud mod falske kampagner"
+    },
+    {
+     "rubrik": "TechCrunch Disrupt åbner i Moscone West om fem dage",
+     "dato": "",
+     "foerst_set": "2026-10-08T15:50:15.445415+00:00",
+     "link": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door/",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI og Anthropic møder op på TechCrunch Disrupt"
     },
     {
      "rubrik": "Microsoft afslører pris på AI-PC'er med RTX Spark",
@@ -617,6 +644,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
+     "dato": "2026-10-09T16:45:00",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+     "side": "artikel/50fcb2172953f7fa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Sherry Turkle advarer: AI lokker os til tillid",
+     "dato": "2026-10-09T16:40:14",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+     "side": "artikel/3b30e472897bc4e0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
+     "dato": "2026-10-09T15:43:33",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+     "side": "artikel/80b34c260cbbb646.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Goodfire fanger AI-agenter indefra langt billigere",
@@ -698,33 +752,6 @@ window.KILDER_STATUS = {
      "side": "artikel/87922315e033f710.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ChatGPT får knapper, grafer og lommeregnere",
-     "dato": "2026-10-07T18:00:19",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
-     "side": "artikel/b81f72b7c1ca73df.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta jagter reklamer der fører til børnemisbrug",
-     "dato": "2026-10-07T16:53:46",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/",
-     "side": "artikel/dfd3923fff903b86.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nous Research rejser 90 mio. dollars til erhvervs-AI-agenter",
-     "dato": "2026-10-07T20:48:45",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
-     "side": "artikel/1d6dcd635bc7906e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -752,9 +779,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 32,
+   "i_listen": 35,
    "som_ekstra": 17,
    "seneste": [
+    {
+     "rubrik": "OpenAI dropper knap 400 matematiske resultater",
+     "dato": "",
+     "foerst_set": "2026-10-09T21:10:26.397423+00:00",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+     "side": "",
+     "hvor": "under",
+     "under": "OpenAI udsender 722 manuskripter med matematiske resultater"
+    },
     {
      "rubrik": "Google Foresight transskriberer møder helt offline",
      "dato": "",
@@ -855,17 +891,35 @@ window.KILDER_STATUS = {
      "under": "Meta lader udviklere bygge Muse-hardware selv"
     },
     {
-     "rubrik": "Apple strammer Mac-diske adgang for AI-agenter",
-     "dato": "",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-     "side": "",
-     "hvor": "under",
-     "under": "Apple strammer Full Disk Access til AI-agenter"
+     "rubrik": "Nikon diskvalificerede mikrovinder efter AI-brug",
+     "dato": "2026-10-09T14:06:57",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+     "side": "artikel/b54eaa9c1d3d30b0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump forbyder betegnelsen AI og kræver super intelligence",
+     "dato": "2026-10-09T10:25:43",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+     "side": "artikel/f4d9eec7f132858c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Instinct klarer sig mod Muse og Dots",
+     "dato": "2026-10-09T10:00:00",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+     "side": "artikel/d3a475a54b31bfe7.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Alexa Plus styrer hjemmet, men husker ikke dig",
-     "dato": "2026-10-08T10:00:22",
+     "dato": "2026-10-08T14:00:22",
      "foerst_set": "2026-10-09T15:32:07",
      "link": "https://www.theverge.com/tech/1007565/amazon-alexa-plus-review-one-year-echo-show-dot-max",
      "side": "artikel/459308b0986ff8cc.html",
@@ -943,33 +997,6 @@ window.KILDER_STATUS = {
      "side": "artikel/f7ce188fe18489b0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI annoncerer College Planner til teenagere",
-     "dato": "2026-10-07T16:00:00",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
-     "side": "artikel/3295326fef13f33e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google og Meta finansierer virtuel celle til forskning",
-     "dato": "2026-10-07T14:40:52",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
-     "side": "artikel/a238c94c5dbb4587.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DoorDash advarer restauranter om Bites' ChatGPT-bestillinger",
-     "dato": "2026-10-07T12:00:00",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
-     "side": "artikel/5b086971e9bdbe66.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1009,7 +1036,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
+   "i_listen": 11,
    "som_ekstra": 6,
    "seneste": [
     {
@@ -1065,6 +1092,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
+     "dato": "2026-10-09T19:43:50",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+     "side": "artikel/cc82babf92365087.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nikon kårer ny Small World-vinder efter AI-diskvalifikation",
+     "dato": "2026-10-09T18:44:06",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+     "side": "artikel/84b1e1a1c6a0d05b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Nvidia vil gøre robotter sikre med Halos",
