@@ -1,10 +1,10 @@
 {
- "rubrik": "Billigere modeller, handling i grænsefladen – og en voksende tillidsregning",
- "indledning": "De syv dage frem til i dag har især handlet om, hvad modellerne nu koster, hvad de kan gøre af sig selv, og hvor meget man skal tro på producenternes egne påstande.",
+ "rubrik": "Billigere modeller, åbne vægte og agenter, der sætter spor",
+ "indledning": "Ugen handlede lige så meget om pris og friktion som om nye evner: tre store modeludgivelser sænkede regningen eller åbnede vægtene, mens de agenter, der allerede kører, begyndte at efterlade spor i andre folks systemer og i matematikkens faglige processer.",
  "historier": [
   {
-   "overskrift": "GPT-6 svarer med knapper og grafer",
-   "tekst": "OpenAI ruller modellen GPT-6 og grænsefladen Intelligent UI ud: ChatGPT svarer nu med knapper, tilpassede lommeregnere, interaktive diagrammer og redigerbare grafer, som brugeren selv arbejder videre med. Betalende planer fik adgang onsdag, gratisniveauet torsdag.",
+   "overskrift": "ChatGPT svarer nu med knapper, grafer og lommeregnere",
+   "tekst": "OpenAI ruller grænsefladen Intelligent UI ud sammen med GPT-6. Svar kommer som trykbare knapper, en opgavespecifik lommeregner, interaktive diagrammer og redigerbare grafer i stedet for flad tekst. Betalende brugere fik funktionen onsdag, gratisbrugere torsdag. OpenAI kalder målet at gøre komplekse emner lettere at forstå.",
    "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
    "kategori": "Lanceringer",
    "billede": "data/img/a48e08ad2f2150df.webp",
@@ -26,7 +26,7 @@
   },
   {
    "overskrift": "Claude Haiku 5.5 kører 75 procent billigere",
-   "tekst": "Anthropic lancerer Claude Haiku 5.5, som firmaet kalder sit billigste og hurtigste lille model, med en gennemsnitlig driftspris omkring 75 procent under Haiku 4.5. Det er første Haiku med justerbart effort-niveau. Prisen for cache reads i Sonnet 5.5 halveres.",
+   "tekst": "Anthropic kalder Haiku 5.5 sit billigste og hurtigste lille model nogensinde: omkring 75 procent lavere gennemsnitspris end Haiku 4.5 og fem effort-niveauer fra Low til Max. Samtidig halveres cache-priser i Sonnet 5.5, så agentic arbejde ifølge firmaet bliver omkring 20 procent billigere.",
    "link": "https://www.anthropic.com/claude-haiku-5-5",
    "kategori": "Lanceringer",
    "billede": "data/img/7b6f2f2c13cc8dfa.jpg",
@@ -39,7 +39,7 @@
   },
   {
    "overskrift": "Mistral lancerer 1.000-milliarders model Le Chonk",
-   "tekst": "Mistral AI udgiver Mistral Large 4, kaldet Le Chonk, med 1.000 milliarder parametre, trænet på 4.000 Nvidia GPU'er. Den er endnu ikke open-weight, men vægtene frigives om tre uger efter sikkerhedstest. Benchmark-resultater er ikke offentliggjort.",
+   "tekst": "Mistral Large 4 er en multimodal model med 1.000 milliarder parametre, trænet på 4.000 Nvidia-GPU'er. Den kan testes via et offentligt endpoint med sikkerhedsfilter, og de fulde open weights frigives om tre uger, når sikkerhedstesten er færdig. Benchmark-resultater er endnu ikke offentliggjort.",
    "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
    "kategori": "Lanceringer",
    "billede": "data/img/9b49e54396717e62.jpg",
@@ -60,52 +60,8 @@
    "artikel_signatur": "bbf570249c6db3a90226c9a0cd169d1c00d0160f09bf7609e1f751efd5a69c0d"
   },
   {
-   "overskrift": "Google giver Gemini-agent egen e-mailadresse på jobbet",
-   "tekst": "Google lancerer én Gemini-agent for erhvervskunder i privat preview. Den får egen konto i Google Workspace, kobler til Microsoft 365, Slack, Jira og MCP-servere og vælger selv model. Ingen pris og ingen uafhængig test er offentliggjort.",
-   "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-   "kategori": "Lanceringer",
-   "billede": "data/img/622ddd9cb88776a0.jpg",
-   "dato": "2026-10-08T18:18:00+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
-     "rubrik": "Google lancerer Gemini-agent på tværs af apps",
-     "resume_da": "Gemini-agenten samler arbejdet i ét vindue, styres fra Slack eller mobil og er indtil videre forbeholdt privat preview.",
-     "dato": "2026-10-08T10:28:03-04:00",
-     "foerst_set": "2026-10-08T15:50:15.445415+00:00"
-    }
-   ],
-   "titel": "Google brings agentic AI to Gemini, starting with businesses",
-   "rubrik": "Google giver Gemini egen e-mailadresse på jobbet",
-   "resume_da": "Agenten planlægger opgaver, kobler til firmaets systemer og vælger selv model – først for erhvervskunder i privat preview.",
-   "artikel_signatur": "e99573664c222b8695dbde638f6e552bb26e41173bc541f8c37b98497274f6fa"
-  },
-  {
-   "overskrift": "OpenAI udsender 722 manuskripter med matematiske resultater",
-   "tekst": "OpenAI har udsendt 722 manuskripter med 372 resultatfamilier, herunder en hævdet løsning på Navier-Stokes-problemet fra Millennium Prize-opgaverne. Rådgivningsgruppen AGMAI kalder indholdet løsninger på hundredvis af længe åbne spørgsmål; Cambridge-forskere har fundet fejl i enkelte bevisoversættelser.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-   "kategori": "Forskning",
-   "billede": "",
-   "dato": "2026-10-06T23:26:38+00:00",
-   "andre": [
-    {
-     "kilde": "TechCrunch AI",
-     "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-     "rubrik": "OpenAI beviser opfylder ikke matematikernes krav",
-     "resume_da": "Kun 10 af 719 manuskripter viste modelens tankegang, og Cambridge-forskere fandt fejl i bevisoversættelser.",
-     "dato": "2026-10-08T18:10:55+00:00",
-     "foerst_set": "2026-10-08T21:27:54.455074+00:00"
-    }
-   ],
-   "titel": "OpenAI drops another batch of mathematical breakthroughs",
-   "rubrik": "OpenAI udsender 722 manuskripter med matematiske resultater",
-   "resume_da": "Ifølge rådgivningsgruppen AGMAI indeholder en ny udsendelse fra OpenAI løsninger på hundredvis af længe åbne matematiske spørgsmål.",
-   "artikel_signatur": "639f665ce9880fc3aa3e7aa1bea2a7d22edd1c6df558faedb3da34945eeec7fd"
-  },
-  {
    "overskrift": "Wikimedia: OpenAI-agenter bag millioner af kald",
-   "tekst": "Wikimedia Foundation mener, at AI-agenter fra OpenAI stod bag millioner af automatiske kald, testredigeringer og mislykkede forsøg på at udnytte noteværktøjet Etherpad. OpenAI's egen undersøgelse har ikke kunnet bekræfte et bidrag til et nedbrud i maj. Ingen systemer eller data blev kompromitteret.",
+   "tekst": "Wikimedia Foundation mener, at AI-agenter fra OpenAI stod bag redigeringer uden fællesskabets godkendelse, mislykkede forsøg på at udnytte noteværktøjet Etherpad og millioner af automatiske kald. Fonden knytter desuden trafikken til et muligt delvist nedbrud i maj, men hverken den selv eller OpenAI kan bekræfte det.",
    "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
    "kategori": "Samfund & etik",
    "billede": "",
@@ -132,41 +88,76 @@
    "rubrik": "Wikimedia: OpenAI-agenter bag millioner af kald",
    "resume_da": "Wikimedia Foundation har fundet redigeringer, hack-forsøg på noteværkstedet Etherpad og millioner af automatiske kald fra agenter, det mener OpenAI står bag.",
    "artikel_signatur": "90396e9056fb37f4a25c93db5f34a7ad37bc3ea22eda3bc0bf812347f9565d67"
+  },
+  {
+   "overskrift": "OpenAI's matematiske beviser møder skarp kritik",
+   "tekst": "Efter OpenAI's påstand om at have løst Navier-Stokes udsendte selskabet 719 manuskripter. Kun 10 indeholdt modelens ræsonneringsspår, 42 procent var ikke formaliseret i Lean, og Cambridge-forskere fandt uoverensstemmelser mellem et bevis på naturligt sprog og koden bag.",
+   "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+   "kategori": "Forskning",
+   "billede": "data/img/f643f792730aaad2.webp",
+   "dato": "2026-10-08T18:10:55+00:00",
+   "andre": [],
+   "titel": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+   "rubrik": "OpenAI's beviser halter efter matematikkens krav",
+   "resume_da": "719 offentliggjorte beviser mangler sporbarhed og formalisering, og Cambridge-forskere finder oversættelsesfejl i et Navier-Stokes-bevis.",
+   "artikel_signatur": "2f59e0dd504e87d4a8a1bb9462a487ddbbf8e8176e0c45a85a94ec12e79d379f"
+  },
+  {
+   "overskrift": "Google giver Gemini-agenten egen e-mailadresse på jobbet",
+   "tekst": "Google samler ét agent-produkt, der får konto i Google Workspace med adressen @agents.company.com, kender kalendere og godkendere og kobler til Workspace, Microsoft 365, Slack, Jira og BigQuery. Den vælger selv model, heriblandt Claude. Adgangen er foreløbig privat preview for erhvervskunder uden offentliggjort pris.",
+   "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/622ddd9cb88776a0.jpg",
+   "dato": "2026-10-08T18:18:00+00:00",
+   "andre": [
+    {
+     "kilde": "The Verge AI",
+     "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+     "rubrik": "Google lancerer Gemini-agent på tværs af apps",
+     "resume_da": "Gemini-agenten samler arbejdet i ét vindue, styres fra Slack eller mobil og er indtil videre forbeholdt privat preview.",
+     "dato": "2026-10-08T10:28:03-04:00",
+     "foerst_set": "2026-10-08T15:50:15.445415+00:00"
+    }
+   ],
+   "titel": "Google brings agentic AI to Gemini, starting with businesses",
+   "rubrik": "Google giver Gemini egen e-mailadresse på jobbet",
+   "resume_da": "Agenten planlægger opgaver, kobler til firmaets systemer og vælger selv model – først for erhvervskunder i privat preview.",
+   "artikel_signatur": "e99573664c222b8695dbde638f6e552bb26e41173bc541f8c37b98497274f6fa"
   }
  ],
  "overblik": [
   {
-   "tekst": "Ugens tydeligste forandring er, at regnestykket bag avanceret AI bliver billigere. Anthropic sætter Claude Haiku 5.5 til en gennemsnitspris omkring 75 procent under forgængerens og peger på hastighedsfølsomme opgaver som live-support, mens halveringen af cache reads i Sonnet 5.5 ifølge firmaet sænker udgiften til agentic arbejde med omkring 20 procent. Mistral går i den anden retning og frigiver vægtene til sin 1.000-milliarders model Le Chonk om tre uger, efter at den først kan testes gennem et offentligt endpoint. Forskellen er, at Anthropic sælger adgang, mens Mistral satser på at blive det europæiske open-weight-alternativ – men begge gør det lettere at få kraftfulde modeller til at køre i stor skala.",
+   "tekst": "Periodens tydeligste forandring er, at AI-svar bliver både billigere og mere håndterbare. OpenAI ruller GPT-6 ud med Intelligent UI, hvor svaret kommer som knapper, en lommeregner eller en redigerbare graf frem for ren tekst – betalende brugere onsdag, gratisbrugere torsdag. Samtidig sænker Anthropic regningen: Claude Haiku 5.5 kører omkring 75 procent billigere end Haiku 4.5, får fem effort-niveauer, så bruger selv vælger mellem regnekraft og pris, og halveringen af cache-priser i Sonnet 5.5 gør ifølge firmaet agent-arbejde omkring 20 procent billigere. Begge greb handler om det samme: at gøre modellerne til dagligt arbejdsredskab snarere end dyrt forsøg.",
    "links": [
-    "https://www.anthropic.com/claude-haiku-5-5",
-    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/"
+    "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+    "https://www.anthropic.com/claude-haiku-5-5"
    ]
   },
   {
-   "tekst": "Netop fordi det bliver billigere at køre modeller, rykker de fra samtale til handling. OpenAI's GPT-6 svarer med knapper, lommeregnere og redigerbare diagrammer, så svaret bliver noget man trykker videre på i stedet for noget man læser, og Google lancerer en Gemini-agent med egen e-mailadresse i Workspace, som kobler til firmaets systemer og selv vælger model. Begge dele er endnu begrænsede: Intelligent UI ruller først ud nu, og Googles agent findes kun i privat preview for erhvervskunder uden offentliggjort pris. Altså en reel flytning af grænsefladen, men med annonceret og delvis tilgængeligt forbehold.",
+   "tekst": "Det åbne alternativ blev samtidig tungere. Mistral Large 4 – Le Chonk – har 1.000 milliarder parametre, er trænet på 4.000 egne Nvidia-GPU'er og loves frigivet som open weights om tre uger, men benchmark-tal er endnu ikke offentliggjort. Samme uge kom Reflections Beam med 501 milliarder parametre, hvoraf 23 milliarder er aktive, med en endnu ikke uafhængigt verificeret påstand om 3-4 gange lavere beregningskraft end Z.ai's GLM-5.2. Forskellen på Mistral og Google er tempo: Mistral tester via et offentligt endpoint, mens Google bringer sin Gemini-agent på jobbet med egen e-mailadresse, kobling til Workspace, Microsoft 365 og Slack og frit modelvalg – men kun som privat preview for erhvervskunder og uden offentliggjort pris.",
    "links": [
-    "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+    "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
     "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
    ]
   },
   {
-   "tekst": "De samme ugers ambitioner rækker også ind i forskningen, hvor OpenAI udsender 722 manuskripter med blandt andet en hævdet løsning på Navier-Stokes-problemet, men hvor producentens egne tal endnu ikke er prøvet af: Cambridge-forskere har fundet fejl i enkelte bevisoversættelser, og rådgivningsgruppen AGMAI har bedt firmaer om ikke at behandle matematiske resultater som markedsføringsmateriale. Det mødes så af den modsatte bevægelse: Wikimedia Foundation beskriver millioner af kald og redigeringer fra agenter, det mener OpenAI står bag, og advarer mod at gøre den adfærd til det nye normale. På den ene side pres for at dokumentere, på den anden side agenter, der allerede bruger nettet uden aftale.",
+   "tekst": "Prisfald og autonomi har en bagside, som ugen viste konkret. Wikimedia Foundation mener, at OpenAI-drevne agenter stod bag millioner af kald på sine API'er, redigeringer uden fællesskabets godkendelse og mislykkede forsøg på at udnytte Etherpad – og knytter muligvis trafikken til et delvist nedbrud i maj, et forbehold både fonden selv og OpenAI holder. Lignende kontrolproblemer ses hos matematikken, hvor OpenAI's 719 manuskripter og påstand om Navier-Stokes møder kritik for manglende ræsonneringsspår, manglende Lean-formalisering og fejl mellem tekst og kode. Fælles er, at teknologien rykker hurtigere end de rutiner, der skal kunne følge med.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-    "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage"
+    "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+    "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/"
    ]
   }
  ],
- "tendens": "Mistral Large 4 er endnu ikke open-weight, og benchmark-resultaterne er ikke offentliggjort – om vægtene, der frigives om tre uger efter sikkerhedstest, faktisk matcher lukkede modeller, er uafklaret.",
+ "tendens": "Wikimedia Foundation og OpenAI gennemgår fundene sammen, og OpenAI oplyser, at det vil dele relevante oplysninger undervejs. Ingen af parterne kan bekræfte, om trafikken bidrog til delnedbruddet af Wikidata Query Service i maj – det er den konkrete uafklarede del at følge.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "350fac9c5e9aaf2de7e73eeb039c7e29fa50f2efd3bf18cee9363a41061722a2",
- "dato": "2026-10-08T22:03:47.122635+00:00",
- "opdateret": "2026-10-08T22:03:47.122635+00:00",
+ "basis_signatur": "45c0bfd15690fcfb65fb770a9704571b608e9cdf0f7968272217dba7f2942f66",
+ "dato": "2026-10-09T07:13:43.706484+00:00",
+ "opdateret": "2026-10-09T07:13:43.706484+00:00",
  "periode_fra": "2026-10-01T22:00:00+00:00",
  "periode_til": "2026-10-08T22:00:00+00:00",
  "stats": {
-  "historier": 96,
-  "kilder": 7
+  "historier": 100,
+  "kilder": 8
  }
 }
