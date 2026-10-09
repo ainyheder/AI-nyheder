@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-09T07:16:54.940476+00:00",
+ "opdateret": "2026-10-09T16:08:13.320173+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      0,
      2,
      3,
-     0
+     2
     ]
    },
    {
@@ -101,7 +101,7 @@ window.LAESERTAL = {
      0,
      4,
      4,
-     4,
+     5,
      4,
      0
     ]
@@ -137,8 +137,8 @@ window.LAESERTAL = {
      2,
      6,
      7,
-     4,
-     0
+     5,
+     1
     ]
    },
    {
@@ -172,8 +172,8 @@ window.LAESERTAL = {
      7,
      4,
      2,
-     1,
-     0
+     2,
+     1
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      4,
      1,
      0,
-     2,
+     4,
      0
     ]
    },
@@ -282,41 +282,6 @@ window.LAESERTAL = {
     ]
    },
    {
-    "navn": "Labs",
-    "tal": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     3,
-     0
-    ]
-   },
-   {
     "navn": "Dybde",
     "tal": [
      0,
@@ -350,24 +315,108 @@ window.LAESERTAL = {
      1,
      0
     ]
+   },
+   {
+    "navn": "Labs",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 22,
- "sidevisninger_i_alt": 34,
+ "besoeg_i_alt": 31,
+ "sidevisninger_i_alt": 44,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 22,
+   "besoeg": 24,
    "visninger": 34
+  },
+  {
+   "sti": "/artikel/024315d82a76560f.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/om.html",
+   "besoeg": 1,
+   "visninger": 2
+  },
+  {
+   "sti": "/artikel/020fc8cb0d6ecf06.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/009e61788df2b717.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/0081d2e6c395e5ff.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/artikel/01be0a47d716a83c.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/cookies.html",
+   "besoeg": 1,
+   "visninger": 1
+  },
+  {
+   "sti": "/faq.html",
+   "besoeg": 0,
+   "visninger": 1
+  },
+  {
+   "sti": "/vaerktoejer.html",
+   "besoeg": 0,
+   "visninger": 1
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 22
+   "besoeg": 30
+  },
+  {
+   "fra": "www.google.com",
+   "besoeg": 1
   }
  ],
  "ai_chats": [],
@@ -375,22 +424,91 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 22,
-    "visninger": 22
+    "besoeg": 23,
+    "visninger": 23
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 12
+    "visninger": 10
+   },
+   {
+    "fra": "www.google.com",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/024315d82a76560f.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/om.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   },
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/artikel/020fc8cb0d6ecf06.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/009e61788df2b717.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/0081d2e6c395e5ff.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/artikel/01be0a47d716a83c.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/cookies.html": [
+   {
+    "fra": "direkte",
+    "besoeg": 1,
+    "visninger": 1
+   }
+  ],
+  "/faq.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
+   }
+  ],
+  "/vaerktoejer.html": [
+   {
+    "fra": "herfra selv",
+    "besoeg": 0,
+    "visninger": 1
    }
   ]
  },
  "faste_uden_besoeg": [
-  "/uge.html",
-  "/vaerktoejer.html",
-  "/faq.html",
-  "/om.html",
-  "/cookies.html"
+  "/uge.html"
  ],
  "serie": [
   {
@@ -544,6 +662,103 @@ window.LAESERTAL = {
    "visninger": 0
   }
  ],
- "artikler": [],
- "laeste_temaer": []
+ "artikler": [
+  {
+   "sti": "/artikel/024315d82a76560f.html",
+   "besoeg": 1,
+   "visninger": 1,
+   "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
+   "kategori": "Samfund & etik",
+   "dato": "2026-08-18",
+   "henvisere": [
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/020fc8cb0d6ecf06.html",
+   "besoeg": 1,
+   "visninger": 1,
+   "rubrik": "Nscale børsnotering hviler på kun to kunder",
+   "kategori": "Penge & marked",
+   "dato": "2026-09-22",
+   "henvisere": [
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/009e61788df2b717.html",
+   "besoeg": 1,
+   "visninger": 1,
+   "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
+   "kategori": "Forskning",
+   "dato": "2026-09-09",
+   "henvisere": [
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/0081d2e6c395e5ff.html",
+   "besoeg": 1,
+   "visninger": 1,
+   "rubrik": "OpenAI bygger super-hacker til at finde svagheder",
+   "kategori": "Lanceringer",
+   "dato": "2026-07-15",
+   "henvisere": [
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  },
+  {
+   "sti": "/artikel/01be0a47d716a83c.html",
+   "besoeg": 1,
+   "visninger": 1,
+   "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
+   "kategori": "Politik & jura",
+   "dato": "2026-09-02",
+   "henvisere": [
+    {
+     "fra": "direkte",
+     "besoeg": 1,
+     "visninger": 1
+    }
+   ]
+  }
+ ],
+ "laeste_temaer": [
+  {
+   "navn": "Samfund & etik",
+   "visninger": 1
+  },
+  {
+   "navn": "Penge & marked",
+   "visninger": 1
+  },
+  {
+   "navn": "Forskning",
+   "visninger": 1
+  },
+  {
+   "navn": "Lanceringer",
+   "visninger": 1
+  },
+  {
+   "navn": "Politik & jura",
+   "visninger": 1
+  }
+ ]
 };

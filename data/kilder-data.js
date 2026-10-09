@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-09T06:35:11.465075+00:00",
- "artikler_i_alt": 136,
+ "opdateret": "2026-10-09T15:32:07.803403+00:00",
+ "artikler_i_alt": 139,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -126,15 +126,15 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
+     "Simon Willison AI",
+     3
+    ],
+    [
      "The Verge AI",
      3
     ],
     [
      "TechCrunch AI",
-     2
-    ],
-    [
-     "Simon Willison AI",
      2
     ],
     [
@@ -153,7 +153,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -180,15 +180,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-16T12:48:27",
      "link": "https://mistral.ai/news/mistral-x-mozilla/",
      "side": "artikel/c410e90a2cd9982e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Mistral henter 3 mia. euro i europæisk rekordrunde",
-     "dato": "2026-09-08T12:00:22",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
-     "side": "artikel/fca2a8ea89680b45.html",
      "hvor": "forside",
      "under": ""
     },
@@ -424,9 +415,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 6,
-   "som_ekstra": 4,
+   "i_listen": 9,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
+     "dato": "",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Haiku 5.5 kører 75 procent billigere"
+    },
     {
      "rubrik": "OpenAI-agenter redigerede Wikipedias wikis",
      "dato": "",
@@ -462,6 +462,33 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Matthew Green giver 15 procent chance for kryptotvivl",
+     "dato": "2026-10-09T15:02:29",
+     "foerst_set": "2026-10-09T15:32:07",
+     "link": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+     "side": "artikel/f9c6e1e0e5f65525.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Simon Willisons blogfunktion blev bygget med stemmen",
+     "dato": "2026-10-09T12:54:06",
+     "foerst_set": "2026-10-09T15:32:07",
+     "link": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+     "side": "artikel/37449593cc208a97.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Simon Willison skifter ttok til GPT-6",
+     "dato": "2026-10-09T00:34:43",
+     "foerst_set": "2026-10-09T06:35:11",
+     "link": "https://simonwillison.net/2026/Oct/9/ttok/",
+     "side": "artikel/e0bf43abd8095859.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Jake Boggan: Mit livs problem er måske løst",
@@ -521,7 +548,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Anthropic News",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -543,7 +570,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 48,
+   "i_listen": 46,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -554,15 +581,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic samler forbud mod falske kampagner"
-    },
-    {
-     "rubrik": "TechCrunch Disrupt åbner i Moscone West om fem dage",
-     "dato": "",
-     "foerst_set": "2026-10-08T15:50:15.445415+00:00",
-     "link": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI og Anthropic møder op på TechCrunch Disrupt"
     },
     {
      "rubrik": "Microsoft afslører pris på AI-PC'er med RTX Spark",
@@ -628,20 +646,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "OpenAI's beviser halter efter matematikkens krav",
-     "dato": "2026-10-08T18:10:55",
-     "foerst_set": "2026-10-08T21:27:54",
-     "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-     "side": "artikel/81c67bededb8c6b2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Naturas Interface sender AI-agenter på fingeren",
      "dato": "2026-10-08T16:00:00",
      "foerst_set": "2026-10-08T21:27:54",
      "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
      "side": "artikel/02f01addd62e86c2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI's beviser halter efter matematikkens krav",
+     "dato": "2026-10-08T18:10:55",
+     "foerst_set": "2026-10-08T21:27:54",
+     "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+     "side": "artikel/81c67bededb8c6b2.html",
      "hvor": "forside",
      "under": ""
     },
@@ -655,20 +673,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google AI Edge Foresight kører helt offline",
-     "dato": "2026-10-08T13:28:39",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
-     "side": "artikel/49a73efd5324972b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Google giver Gemini egen e-mailadresse på jobbet",
      "dato": "2026-10-08T18:18:00",
      "foerst_set": "2026-10-08T15:50:15",
      "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
      "side": "artikel/ceca2e2c1a06a203.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google AI Edge Foresight kører helt offline",
+     "dato": "2026-10-08T13:28:39",
+     "foerst_set": "2026-10-08T15:50:15",
+     "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
+     "side": "artikel/49a73efd5324972b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -734,7 +752,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 30,
+   "i_listen": 32,
    "som_ekstra": 17,
    "seneste": [
     {
@@ -846,6 +864,24 @@ window.KILDER_STATUS = {
      "under": "Apple strammer Full Disk Access til AI-agenter"
     },
     {
+     "rubrik": "Alexa Plus styrer hjemmet, men husker ikke dig",
+     "dato": "2026-10-08T10:00:22",
+     "foerst_set": "2026-10-09T15:32:07",
+     "link": "https://www.theverge.com/tech/1007565/amazon-alexa-plus-review-one-year-echo-show-dot-max",
+     "side": "artikel/459308b0986ff8cc.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic tilbyder gratis AI-sikkerhedsscans",
+     "dato": "2026-10-08T17:53:51",
+     "foerst_set": "2026-10-09T06:35:11",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+     "side": "artikel/6b44d5cdfd6f4fb3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "USA Today sagsøger OpenAI for hundredtusinder af artikler",
      "dato": "2026-10-08T13:58:33",
      "foerst_set": "2026-10-08T21:27:54",
@@ -873,17 +909,17 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Meta Muse er gratis, OpenAI Dots koster penge",
-     "dato": "2026-10-08T10:00:00",
+     "rubrik": "ICANN får 1.615 ansøgninger om AI-domæneendelser",
+     "dato": "2026-10-07T18:46:16",
      "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
-     "side": "artikel/6aa7e6e2367a0524.html",
+     "link": "https://www.theverge.com/tech/1007132/icann-domains-2026-ai-agi",
+     "side": "artikel/975282e2b7fc4c08.html",
      "hvor": "forside",
      "under": ""
     },
     {
      "rubrik": "Artificial skildrer Sam Altmans magtkamp tæt på fakta",
-     "dato": "2026-10-08T10:00:00",
+     "dato": "2026-10-08T14:00:00",
      "foerst_set": "2026-10-08T15:50:15",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
      "side": "artikel/cb609755b367796d.html",
@@ -934,24 +970,6 @@ window.KILDER_STATUS = {
      "side": "artikel/5b086971e9bdbe66.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI udsender 722 manuskripter med matematiske resultater",
-     "dato": "2026-10-06T23:26:38",
-     "foerst_set": "2026-10-07T00:01:34",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-     "side": "artikel/9edaf582bfe592c5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google spærrer Gemini Pro for gratisbrugere",
-     "dato": "2026-10-06T13:19:01",
-     "foerst_set": "2026-10-06T18:34:36",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
-     "side": "artikel/8afef565706a7a71.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -995,7 +1013,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 6,
    "seneste": [
     {
-     "rubrik": "Microsoft lancerer lokal AI-hardware og ændrer Windows",
+     "rubrik": "Microsoft flytter Windows AI fra skyen til maskinen",
      "dato": "",
      "foerst_set": "2026-10-08T06:34:10",
      "link": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
@@ -1155,7 +1173,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 9,
+   "i_listen": 10,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1166,6 +1184,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
+    {
+     "rubrik": "AI-modellers nej er skrøbeligt og kan censurere",
+     "dato": "2026-10-09T09:00:00",
+     "foerst_set": "2026-10-09T15:32:07",
+     "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+     "side": "artikel/12d2afa3a1ac678b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Samuel King fik AI til at foreslå virusgener",
