@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-10T06:19:16.364726+00:00",
+  "opdateret": "2026-10-10T14:39:43.668895+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+    "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
-  "input_fingerprint": "a08b0489f664bc95",
+  "input_fingerprint": "99fd82d8b39ff2ea",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 6,
-  "kildehentninger": 4,
+  "modelkald": 5,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -22,6 +22,18 @@
       "fejl": null
     },
     {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -38,28 +50,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 6fafcbf095655c1f: skriveopgave har 973 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -68,7 +64,15 @@
   ],
   "kildegrundlag": [
     {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
       "grundlag": "kildetekst"
     },
     {
@@ -76,18 +80,18 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+    "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
     "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
   ],
-  "afventer_artikler": 53
+  "afventer_artikler": 48
 }

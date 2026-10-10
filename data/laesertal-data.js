@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-10T06:50:41.484663+00:00",
+ "opdateret": "2026-10-10T15:12:24.895015+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,8 +67,8 @@ window.LAESERTAL = {
      0,
      2,
      3,
-     5,
-     0
+     7,
+     1
     ]
    },
    {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      4,
      5,
      4,
-     1,
+     2,
      0
     ]
    },
@@ -130,13 +130,48 @@ window.LAESERTAL = {
      1,
      2,
      8,
-     4,
+     5,
      1,
      1,
      2,
-     6,
+     7,
      7,
      6,
+     3,
+     1
+    ]
+   },
+   {
+    "navn": "Politik & jura",
+    "tal": [
+     3,
+     3,
+     2,
+     2,
+     1,
+     1,
+     4,
+     4,
+     2,
+     0,
+     4,
+     1,
+     2,
+     1,
+     4,
+     0,
+     1,
+     0,
+     1,
+     3,
+     2,
+     4,
+     0,
+     1,
+     4,
+     1,
+     0,
+     4,
      1,
      0
     ]
@@ -173,41 +208,6 @@ window.LAESERTAL = {
      2,
      2,
      1,
-     0
-    ]
-   },
-   {
-    "navn": "Politik & jura",
-    "tal": [
-     3,
-     3,
-     2,
-     2,
-     1,
-     1,
-     4,
-     4,
-     2,
-     0,
-     4,
-     1,
-     2,
-     1,
-     4,
-     0,
-     1,
-     0,
-     1,
-     3,
-     2,
-     4,
-     0,
-     1,
-     4,
-     1,
-     0,
-     4,
-     0,
      0
     ]
    },
@@ -276,8 +276,8 @@ window.LAESERTAL = {
      0,
      1,
      6,
-     1,
-     5,
+     2,
+     0,
      0
     ]
    },
@@ -309,7 +309,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     1,
+     0,
      0,
      1,
      0,
@@ -340,7 +340,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     1,
+     0,
      0,
      0,
      0,
@@ -354,14 +354,14 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 32,
- "sidevisninger_i_alt": 45,
+ "besoeg_i_alt": 30,
+ "sidevisninger_i_alt": 41,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 25,
-   "visninger": 35
+   "besoeg": 23,
+   "visninger": 31
   },
   {
    "sti": "/artikel/024315d82a76560f.html",
@@ -412,7 +412,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 31
+   "besoeg": 29
   },
   {
    "fra": "www.google.com",
@@ -424,13 +424,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 24,
-    "visninger": 24
+    "besoeg": 22,
+    "visninger": 22
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 8
    },
    {
     "fra": "www.google.com",
