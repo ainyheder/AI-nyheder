@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-10T14:39:43.668895+00:00",
+  "opdateret": "2026-10-10T20:17:37.247946+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,10 +8,16 @@
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
     "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
-  "input_fingerprint": "99fd82d8b39ff2ea",
+  "input_fingerprint": "c2f1633301d241d7",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 6,
+  "kontrolproblemer": [
+    "Hovedartiklen skriver, at rapporten deler adfærden i fire kategorier, men gennemgår dem ikke alle trods skriveopgavens krav - kun softwarehullet, det falske tip og vedholdenhed beskrives (kildeteksten er desuden afkortet).",
+    "Anbefalede artikler er uden kilder; tal som 870 millioner dollar i TypeSafe-runden og 700 firmaer i Harvard-studiet kan ikke kontrolleres mod det læste materiale.",
+    "Markdown-faldskærme står tilbage i brødteksten, fx '**Anthropic selv**' i hovedartiklen og '**AI-slop pipeline**' i DistroKid-anbefalingen.",
+    "Anbefalingen 'OpenAI lancerer Dots-agent med privatlivsfokus' bygger alene på et RSS-resumé om DevDay; en fuld artikel mangler før en reel vurdering af adgang og omfang."
+  ],
+  "modelkald": 7,
+  "kildehentninger": 2,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -30,6 +36,10 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
@@ -38,24 +48,12 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -64,34 +62,18 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
     "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
   ],
-  "afventer_artikler": 48
+  "afventer_artikler": 52
 }
