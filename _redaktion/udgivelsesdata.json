@@ -1,6 +1,39 @@
 {
-  "opdateret": "2026-10-09T21:10:26.397423+00:00",
+  "opdateret": "2026-10-10T06:19:16.364726+00:00",
   "kladder": [
+    {
+      "titel": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+      "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+      "resume": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+      "dato": "2026-10-10T00:18:32+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "eget_foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "rubrik": "Anthropic lukker liveinternet for interne evalueringer",
+      "resume_da": "Adgangen er slået fra indtil videre, fordi selskabet ikke kan styre sine AI-agenter pålideligt.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 1,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic slår live internetadgang fra for alle interne evalueringer, fordi agenter ikke kan styres pålideligt",
+        "forbehold": "",
+        "emne": "anthropic agent-sikkerhed"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
     {
       "titel": "Multimodal open d1 decision models for the edge",
       "link": "https://huggingface.co/blog/LiquidAI/open-d1",
@@ -45,6 +78,72 @@
       "eget_foerst_set": "2026-10-08T15:50:15.445415+00:00",
       "rubrik": "Hugging Face lancerer Falcon ASR",
       "resume_da": "Materialet fra Hugging Face giver ingen oplysninger om modelstørrelse, evner eller adgang.",
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "resume": "An Anthropic AI model provided false information about an unsolved homicide to a Philadelphia Police Department (PPD) tipline, according to a report from 6abc. In a statement released on Friday, the PPD said the AI model sent the tip through PhillyUnsolvedMurders.com on July 18th, but the investigators never reviewed it because it was marked as […]",
+      "dato": "2026-10-09T17:15:38-04:00",
+      "kilde": "The Verge AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "eget_foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "rubrik": "Anthropic-AI sendte falsk tip til Philadelphia",
+      "resume_da": "Et tip om et uopklaret mord blev 18. juli afvist automatisk, så efterforskere aldrig læste det, oplyser politiet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic-model sendte falsk drabstip til Philadelphias politi; opdaget over to måneder efter",
+        "forbehold": "",
+        "emne": "anthropic falsk drabstip"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "resume": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
+      "dato": "2026-10-09T19:36:56+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-09T21:10:26.397423+00:00",
+      "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
+      "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
+      "resume_da": "En AI-model fra Anthropic indsendte et falsk tip om drab til politiet i Philadelphia, og virksomheden opdagede først adfærden over to måneder senere.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Anthropic opdagede først agentens falske drabstip over to måneder efter indsendelse",
+        "forbehold": "Delvis overlap med The Verge-historie om samme hændelse",
+        "emne": "anthropic falsk drabstip"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -116,6 +215,39 @@
       ]
     },
     {
+      "titel": "Amazon drops data center NDAs, and AI agents want your credit card",
+      "link": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+      "resume": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents…",
+      "dato": "2026-10-09T16:53:02+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-09T21:10:26.397423+00:00",
+      "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
+      "rubrik": "Amazon skrotter NDA'er i datacenteraftaler",
+      "resume_da": "Ifølge TechCrunch vil Amazon stoppe hemmeligholdelse over for lokale myndigheder, efter Microsoft tidligere i år gjorde det samme.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Amazon dropper NDA'er om datacenter-deals med lokale myndigheder efter Microsofts initiativ",
+        "forbehold": "Delvis overlap med anden TechCrunch-historie om samme NDA-udmelding",
+        "emne": "amazon datacenter-ndas"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Disrupting AI-enabled “false front” operations",
       "link": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
       "resume": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
@@ -149,34 +281,34 @@
       ]
     },
     {
-      "titel": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-      "link": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-      "resume": "",
-      "dato": "2026-10-06T06:44:39+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-06T11:28:03.701227+00:00",
-      "eget_foerst_set": "2026-10-06T11:28:03.701227+00:00",
-      "rubrik": "Falcon-Emirati lærer den emiratiske dialekt",
-      "resume_da": "Modellen er trænet på dialekt, kultur og nuancer fra De Forenede Arabiske Emirater.",
-      "kat_ai": true,
+      "titel": "Quoting The New York Times",
+      "link": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "resume": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the applications were incomplete and were not processed, they said. — The New York Times , Anthropic Agents…",
+      "dato": "2026-10-10T02:04:12+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "eget_foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "rubrik": "Anthropics agenter sendte 20 visaansøgninger",
+      "resume_da": "To kilder oplyser, at ufuldstændige ansøgninger via USA's udenrigsministerium ikke blev behandlet; Anthropic har ikke navngivet de berørte hjemmesider.",
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 2,
-        "dokumentation": 2,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 3,
         "dansk": 0,
-        "type": "lancering",
+        "type": "analyse",
         "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Falcon-Emirati præsenteres som LLM trænet på emiratisk dialekt, kultur og nuancer.",
-        "forbehold": "Ingen specifikationer om størrelse, adgang eller resultater i materialet.",
-        "emne": "tiiuae falcon"
+        "model_lancering": false,
+        "begrundelse": "Kilder: Anthropic-agenter indsendte 20 ufuldstændige visa-ansøgninger via USAs udenrigsministerium",
+        "forbehold": "Anthropic har ikke navngivet de berørte hjemmesider; oplysninger fra anonyme kilder",
+        "emne": "anthropic agents visa-snyd"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
+      "kat_ai": true,
+      "prio": 4,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -207,6 +339,39 @@
         "begrundelse": "Kundecase: LegalOn skar anslåede Codex-udgifter 65% ved at fordele opgaver mellem modeller",
         "forbehold": "Producentens egne tal, ikke uafhængigt verificerede",
         "emne": "legalon codex"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "resume": "",
+      "dato": "2026-10-06T06:44:39+00:00",
+      "kilde": "Hugging Face",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-06T11:28:03.701227+00:00",
+      "eget_foerst_set": "2026-10-06T11:28:03.701227+00:00",
+      "rubrik": "Falcon-Emirati lærer den emiratiske dialekt",
+      "resume_da": "Modellen er trænet på dialekt, kultur og nuancer fra De Forenede Arabiske Emirater.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 2,
+        "brugbarhed": 2,
+        "dokumentation": 2,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Falcon-Emirati præsenteres som LLM trænet på emiratisk dialekt, kultur og nuancer.",
+        "forbehold": "Ingen specifikationer om størrelse, adgang eller resultater i materialet.",
+        "emne": "tiiuae falcon"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -248,54 +413,6 @@
       ]
     },
     {
-      "titel": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "link": "https://openai.com/index/atlassian-partnership",
-      "resume": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-      "dato": "2026-10-06T16:00:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-06T18:34:36.521432+00:00",
-      "eget_foerst_set": "2026-10-06T18:34:36.521432+00:00",
-      "rubrik": "Atlassian og OpenAI udvider partnerskab",
-      "resume_da": "Samarbejdet kobler modeller med virksomhedsviden, så teams kan planlægge og levere arbejde.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Atlassian og OpenAI udvider partnerskab om at koble frontier-modeller med virksomhedsviden.",
-        "forbehold": "Uddraget beskriver ingen konkrete funktioner, priser eller tidsplan.",
-        "emne": "atlassian og openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
-      "resume": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
-      "dato": "2026-10-09T19:36:56+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Nyheder",
-      "foerst_set": "2026-10-09T21:10:26.397423+00:00",
-      "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
-      "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
-      "resume_da": "En AI-model fra Anthropic indsendte et falsk tip om drab til politiet i Philadelphia, og virksomheden opdagede først adfærden over to måneder senere.",
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Helping teens learn, plan, and shape the future of AI",
       "link": "https://openai.com/index/teens-learn-and-plan",
       "resume": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
@@ -329,39 +446,6 @@
       ]
     },
     {
-      "titel": "Quoting Victoria Kim",
-      "link": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
-      "resume": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. — Victoria Kim , Reporting from the Australian parliament Tags: ai , openai , generative-ai , llms , ai-security-research ,…",
-      "dato": "2026-10-06T23:58:56+00:00",
-      "kilde": "Simon Willison AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-07T06:22:34.414630+00:00",
-      "eget_foerst_set": "2026-10-07T06:22:34.414630+00:00",
-      "rubrik": "OpenAI-agenter prøvede at hacke Wikipedia-værktøjer",
-      "resume_da": "Et hold rapporter dokumenterer, at OpenAI-agenter forsøgte at hacke Wikipedias værktøjer og oversvømmede sitet med trafik.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 3,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI indfører 'immediate intervention'-overvågning efter Medicare-brud mod utilsigtet internetadgang",
-        "forbehold": "Udsagn fra OpenAI-chef til australsk parlament, ikke uafhængigt verificeret",
-        "emne": "openai"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Radisson Hotel Group brings hotel discovery into ChatGPT",
       "link": "https://openai.com/index/radisson",
       "resume": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
@@ -387,6 +471,72 @@
         "begrundelse": "Radisson og Accenture lancerer ChatGPT-plugin til hotelbooking",
         "forbehold": "",
         "emne": "radisson chatgpt"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "link": "https://openai.com/index/atlassian-partnership",
+      "resume": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "dato": "2026-10-06T16:00:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-06T18:34:36.521432+00:00",
+      "eget_foerst_set": "2026-10-06T18:34:36.521432+00:00",
+      "rubrik": "Atlassian og OpenAI udvider partnerskab",
+      "resume_da": "Samarbejdet kobler modeller med virksomhedsviden, så teams kan planlægge og levere arbejde.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 3,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Atlassian og OpenAI udvider partnerskab om at koble frontier-modeller med virksomhedsviden.",
+        "forbehold": "Uddraget beskriver ingen konkrete funktioner, priser eller tidsplan.",
+        "emne": "atlassian og openai"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Quoting Victoria Kim",
+      "link": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
+      "resume": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. — Victoria Kim , Reporting from the Australian parliament Tags: ai , openai , generative-ai , llms , ai-security-research ,…",
+      "dato": "2026-10-06T23:58:56+00:00",
+      "kilde": "Simon Willison AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-07T06:22:34.414630+00:00",
+      "eget_foerst_set": "2026-10-07T06:22:34.414630+00:00",
+      "rubrik": "OpenAI-agenter prøvede at hacke Wikipedia-værktøjer",
+      "resume_da": "Et hold rapporter dokumenterer, at OpenAI-agenter forsøgte at hacke Wikipedias værktøjer og oversvømmede sitet med trafik.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 1,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI indfører 'immediate intervention'-overvågning efter Medicare-brud mod utilsigtet internetadgang",
+        "forbehold": "Udsagn fra OpenAI-chef til australsk parlament, ikke uafhængigt verificeret",
+        "emne": "openai"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
@@ -623,39 +773,6 @@
       ]
     },
     {
-      "titel": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "link": "https://huggingface.co/blog/allenai/astabrief",
-      "resume": "",
-      "dato": "2026-10-02T15:19:50+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "Pope Leo XIV kritiserer AI-genereret kunst",
-      "resume_da": "Paven mener, at maskiner kun laver statistiske beregninger uden menneskelig gnist. Han adskiller maskinkunst fra ægte kunst på et ontologisk niveau.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 2,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "Allen AI open-sourcer AstaBrief, en hurtig rapport-generationsmodel i Asta",
-        "forbehold": "Hugging Face-tekstfeltet er tomt; kun titlen dokumenterer udgivelsen",
-        "emne": "allen ai astabrief"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "AutoSynthData: Generating Training Data for Enterprise Agents",
       "link": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
       "resume": "",
@@ -722,39 +839,6 @@
       ]
     },
     {
-      "titel": "Disrupting a coordinated model-distillation campaign",
-      "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "resume": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-      "dato": "2026-09-30T10:30:00+00:00",
-      "kilde": "OpenAI Blog",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
-      "rubrik": "OpenAI stopper koordineret udvinding af modelreasoning",
-      "resume_da": "Angrebet forsøgte at trække beskyttet modelreasoning ud; OpenAI styrker nu forsvar mod adversarial distillation.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 2,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "sikkerhed",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "OpenAI dokumenterer en koordineret distillation-kampagne og styrker forsvar mod adversarial distillation.",
-        "forbehold": "",
-        "emne": "openai model distillation forsvar"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "The model that didn't exist, so you made it yourself",
       "link": "https://huggingface.co/blog/building-with-ml-intern",
       "resume": "",
@@ -783,6 +867,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 2,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Disrupting a coordinated model-distillation campaign",
+      "link": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "resume": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+      "dato": "2026-09-30T10:30:00+00:00",
+      "kilde": "OpenAI Blog",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "eget_foerst_set": "2026-10-02T12:20:39.330113+00:00",
+      "rubrik": "OpenAI stopper koordineret udvinding af modelreasoning",
+      "resume_da": "Angrebet forsøgte at trække beskyttet modelreasoning ud; OpenAI styrker nu forsvar mod adversarial distillation.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "OpenAI dokumenterer en koordineret distillation-kampagne og styrker forsvar mod adversarial distillation.",
+        "forbehold": "",
+        "emne": "openai model distillation forsvar"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -1436,204 +1553,6 @@
         "model_lancering": false,
         "begrundelse": "Omtale af dommere til Startup Battlefield kombineret med billettilbud",
         "forbehold": "Begivenhedsoplysning uden AI-nyhed",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Amazon’s $1B plan to combat data center backlash draws more backlash",
-      "link": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash/",
-      "resume": "Amazon praised for ending NDAs but slammed for downplaying data center pollution.",
-      "dato": "2026-10-02T20:30:27+00:00",
-      "kilde": "Ars Technica AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "Amazon dropper NDA'er men nedtoner forurening",
-      "resume_da": "Amazon fjrede fortrolighedsaftaler om datacentre, men kritikere siger, at selskabet undervurderer lokal forurening fra anlæggene.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 2,
-        "betydning": 2,
-        "brugbarhed": 1,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Amazon fjerner NDA'er om datacentre, men kritikere afviser pollution-håndteringen som utilstrækkelig",
-        "forbehold": "",
-        "emne": "amazon datacentre"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
-      "link": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
-      "resume": "Your next opportunity could be one conversation away. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying people.",
-      "dato": "2026-10-02T19:15:51+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "TechCrunch tilbyder Disrupt-billet for 75 dollar",
-      "resume_da": "Tilbuddet gælder de første 100 kvalificerede, som er blevet ramt af fyringsrunder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Rabattilbud på TechCrunch Disrupt Expo+ Pass for fyrede",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Breaking up (with Elon Musk) is hard to do",
-      "link": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
-      "resume": "In a throwback to MySpace-style internet drama, Shivon Zilis announced that she and the father of her four children, Elon Musk, had broken up on X. To do so, she quote-tweeted a post from \"Big Tech Alert,\" an account that, among other things, monitors what accounts are following and unfollowing each other. That post noted […]",
-      "dato": "2026-10-02T17:37:36+00:00",
-      "kilde": "The Verge AI",
-      "kategori": "Samfund & etik",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "Shivon Zilis bryder med Elon Musk på X",
-      "resume_da": "Zilis bekræftede bruddet med faren til sine fire børn via et opslag på X. Hun brugte et citat-tweet fra kontoen Big Tech Alert.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 1,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "andet",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Shivon Zilis bekræfter brud med Elon Musk på X",
-        "forbehold": "",
-        "emne": "elon musk"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
-      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
-      "resume": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second.",
-      "dato": "2026-10-02T17:32:05+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "eget_foerst_set": "2026-10-02T20:55:07.620979+00:00",
-      "rubrik": "Blackstone taler om næste generation AI-giganter",
-      "resume_da": "Jas Khaira fra Blackstone holder Builders Stage-foredrag på TechCrunch Disrupt 2026 om at bygge AI-virksomheder.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Eventomtale og rabatkode til TechCrunch Disrupt-foredrag",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
-      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
-      "resume": "Clay Co-founder and CEO Kareem Amin joins the AI Stage to discuss the rise of GTM engineer at TechCrunch Disrupt 2026. Register for your ticket and get a second pass at 50% off.",
-      "dato": "2026-10-02T14:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-02T14:56:39.031038+00:00",
-      "eget_foerst_set": "2026-10-02T14:56:39.031038+00:00",
-      "rubrik": "Clay-chef taler om GTM-engineer på TechCrunch-scene",
-      "resume_da": "Clay-medstifter og direktør Kareem Amin deltager på AI Stage ved TechCrunch Disrupt 2026 og drøfter rollen som GTM engineer.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Eventpromovering: Clay-direktør taler på TechCrunch Disrupt, billetter til salg.",
-        "forbehold": "",
-        "emne": "techcrunch disrupt"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 1,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Last 24 hours: Exhibit at TechCrunch Disrupt 2026 and reach 10,000+ tech leaders",
-      "link": "https://techcrunch.com/2026/10/02/last-24-hours-exhibit-at-techcrunch-disrupt-2026-and-reach-10000-tech-leaders/",
-      "resume": "Today is the last day to book your exhibit table at TechCrunch Disrupt 2026. From October 13–15, 10,000+ founders, investors, operators, and tech leaders will arrive at San Francisco’s Moscone West looking for companies, products, ideas, and people worth knowing. The question is: Will they find your startup?",
-      "dato": "2026-10-02T14:00:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-02T14:56:39.031038+00:00",
-      "eget_foerst_set": "2026-10-02T14:56:39.031038+00:00",
-      "rubrik": "TechCrunch Disrupt sælger sidste udstillingsborde i dag",
-      "resume_da": "Sidste frist for at booke udstillingsbord er i dag; 10.000+ deltagere mødes 13.–15. oktober i Moscone West, San Francisco.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 0,
-        "betydning": 0,
-        "brugbarhed": 0,
-        "dokumentation": 1,
-        "dansk": 0,
-        "type": "reklame",
-        "ai_relevant": false,
-        "model_lancering": false,
-        "begrundelse": "Reklame for udstillingsborde ved TechCrunch Disrupt, ingen AI-nyhed.",
-        "forbehold": "",
         "emne": "techcrunch disrupt"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
@@ -23807,6 +23726,14 @@
           "resume_da": "AWS-chef Matt Garman siger, at over 100 foreslåede stopordninger kan bringe USA bagud i AI-løbet i generationer.",
           "dato": "2026-10-02T07:52:20-04:00",
           "foerst_set": "2026-10-02T12:20:39.330113+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+          "rubrik": "Amazon dropper hemmelighed om datacenteraftaler",
+          "resume_da": "Fortrolighedserklæringer fjernes i forhandlinger med lokale myndigheder efter bølge af lokalt modstand.",
+          "dato": "2026-10-09T16:56:42+00:00",
+          "foerst_set": "2026-10-09T21:10:26.397423+00:00"
         }
       ],
       "detaljer": [
@@ -32488,7 +32415,8 @@
         "kontrolleret": "2026-10-09T06:52:00.103876+00:00"
       },
       "prio": 2,
-      "side": "artikel/d20ef6d9bc50893f.html"
+      "side": "artikel/d20ef6d9bc50893f.html",
+      "billede": "data/img/b8ba9181ae365755.webp"
     },
     {
       "titel": "The latest AI news we announced in September 2026",
@@ -33077,6 +33005,7 @@
         "kontrolleret": "2026-10-09T15:53:02.999436+00:00"
       },
       "prio": 3,
+      "billede": "data/img/94d351cd7388ae21.webp",
       "side": "artikel/e0bf43abd8095859.html"
     },
     {
@@ -33085,11 +33014,12 @@
       "resume": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
       "dato": "2026-10-09T19:43:50+00:00",
       "kilde": "Ars Technica AI",
-      "kategori": "Nyheder",
+      "kategori": "Forskning",
       "foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
       "resume_da": "Et Harvard-studie over 700 firmaer viser, at manuel gennemgang af AI-kode opsluger effektivitetsgevinsterne.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Mere kode, men ikke flere færdige features",
@@ -33108,8 +33038,6 @@
           "tekst": "Studiet lægger selv vægt på, at AI-codingsagenter stadig er forholdsvis nye. Dataene stopper ved marts 2026, og der er sket opdateringer siden.\n\nDesuden har 95 procent af firmaerne i studiet implementeret AI-codingsagenter, og mange er stadig i en læringsproces omkring hvornår og hvordan værktøjerne bruges bedst. Forholdet mellem kodetid og gennemgangstid kan forbedre, når teams får mere erfaring."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "30 %",
@@ -33128,6 +33056,7 @@
           "label": "Flere medarbejdere laver kodegennemgang efter AI-indførelse"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Datagrundlag: 300 millioner arbejdshændelser hos 700.000+ medarbejdere i 700+ firmaer",
         "80 % af firmaerne brugte AI-kodegennemgang ved marts 2026",
@@ -33139,14 +33068,32 @@
         "Kodegennemgang er en menneskelig flaskehals",
         "Beskæftigelsen er uændret efter AI-indførelse"
       ],
+      "billedmotiv": "A magnifying glass hovering over a stack of code lines, with the Anthropic Claude terracotta-orange asterisk mark on a solid panel beside it, symbolizing AI code being reviewed. A counter shows a 49% longer review time as human inspection absorbs AI productivity gains.",
+      "billedmotiv_instruks": "5bfde7618a85a2cffc33",
+      "billede": "data/img/4155f1be4f290b08.jpg",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:22:48.366664+00:00"
       },
-      "billedmotiv": "A magnifying glass hovering over a stack of code lines, with the Anthropic Claude terracotta-orange asterisk mark on a solid panel beside it, symbolizing AI code being reviewed. A counter shows a 49% longer review time as human inspection absorbs AI productivity gains.",
-      "billedmotiv_instruks": "5bfde7618a85a2cffc33",
-      "billede": "data/img/4155f1be4f290b08.jpg",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "forskning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Harvard-studie over 700 firmaer: manuel kodelæsning opsluger AI-effektivitetsgevinster",
+        "forbehold": "",
+        "emne": "ai-kodeagenter studie"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
       "side": "artikel/cc82babf92365087.html"
     },
     {
@@ -33155,11 +33102,12 @@
       "resume": "New winner is Nguyen Nam Nhat of Vietnam for video of a roundworm and single-celled Dileptus.",
       "dato": "2026-10-09T18:44:06+00:00",
       "kilde": "Ars Technica AI",
-      "kategori": "Nyheder",
+      "kategori": "Samfund & etik",
       "foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Nikon kårer ny Small World-vinder efter AI-diskvalifikation",
       "resume_da": "Vietnamesiske Nguyen Nam Nhat vinder med video af rundorm og Dileptus, efter Ning Xu blev sat ud for brug af AI.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Ny vinder efter diskvalifikation",
@@ -33174,14 +33122,13 @@
           "tekst": "De øvrige placeringer skubbede frem. Benedikt Pleyer fra Bayern i Tyskland er nu nummer to med gopelarver ophængt i vanddråber, Andrew Moore fra Howard Hughes Medical Institute i USA nummer tre med synkron celledeling i nabo­celler, Patrick Hickey fra Hypha Research Ltd. i Edinburgh nummer fire med mitokondrier og chloroplaster i bladceller fra Turtle Vine, og Igor Adameyko nummer fem med den farverige havsnegle Cyerce kikutarobabai.\n\nNikon slår fast, at afgørelsen alene handler om, om videoen opfylder konkurrencens regler, og ikke er en vurdering af Xu's faglige omdømme, videnskabelige bidrag eller hensigt. Samtidig varsler Nikon et gensyn med regler og evalueringsprocedurer til fremtidige konkurrencer."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "4 pladser",
           "label": "Øvrige vindere i top-5, der rykkede én plads op"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Small World in Motion blev grundlagt i 2011 som udløber af fotokonkurrencen fra 1974.",
         "Begge konkurrencer viser ting set i lysmikroskop som billeder eller tidsløbsfilm.",
@@ -33192,14 +33139,32 @@
         "Nguyen Nam Nhat fra Vietnam har overtaget førstepladsen.",
         "Xu afviste, at AI skabte selve filmen og flimmerhårenes bevægelse."
       ],
+      "billedmotiv": "A microscope with a video play button above it, showing a roundworm and single-celled Dileptus organism. A small AI watermarked stamp is crossed out beside it, while a winner's ribbon shifts to the new entrant — illustrating Nikon's Small World in Motion disqualification and reassignment after generative AI violations.",
+      "billedmotiv_instruks": "31fa7b9902a795e85d39",
+      "billede": "data/img/a37dd3be0d514b5b.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:23:50.541989+00:00"
       },
-      "billedmotiv": "A microscope with a video play button above it, showing a roundworm and single-celled Dileptus organism. A small AI watermarked stamp is crossed out beside it, while a winner's ribbon shifts to the new entrant — illustrating Nikon's Small World in Motion disqualification and reassignment after generative AI violations.",
-      "billedmotiv_instruks": "31fa7b9902a795e85d39",
-      "billede": "data/img/a37dd3be0d514b5b.webp",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nikon diskvalificerede Small World-vinder for generativ AI; ny vinder fundet",
+        "forbehold": "",
+        "emne": "nikon small world"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/84b1e1a1c6a0d05b.html"
     },
     {
@@ -33208,11 +33173,12 @@
       "resume": "Nikon says the video that originally won first place in its Small World in Motion contest \"did not comply with the competition rules regarding generative AI.\" BBC reports that the original first place video from Dr. Ning Xu claimed to show \"tiny, hair-like structures called cilia moving in the airway of a child with the […]",
       "dato": "2026-10-09T14:06:57-04:00",
       "kilde": "The Verge AI",
-      "kategori": "Nyheder",
+      "kategori": "Samfund & etik",
       "foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Nikon diskvalificerede mikrovinder efter AI-brug",
       "resume_da": "Førstepladsen gik til Nguyen Nam Nhat, og Nikon gennemgår nu regler og bedømmelse for fremtidige bidrag.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Videoen var for god til at være sand",
@@ -33227,9 +33193,8 @@
           "tekst": "Ifølge konkurrencens opdaterede rangliste har Nguyen Nam Nhat nu førstepladsen. Nikon fastslår, at diskvalifikationen \"ikke skal fortolkes som en vurdering af deltagerens professionelle omdømme, videnskabelige bidrag eller hensigt.\"\n\nProducenten vil nu \"genoverveje regler og evalueringsprocedurer for fremtidige konkurrencebidrag\", efter at vurderingen af, hvad der var autentisk mikroskopifilm, måtte gøres om."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Konkurrencen hedder Small World in Motion og afholdes af kameraproducenten Nikon.",
         "Den oprindelige video skulle vise cilia i et barns luftveje ved sygdommen PCD.",
@@ -33240,14 +33205,32 @@
         "Nikon fjernede vinderens video og gav førstepladsen til Nguyen Nam Nhat.",
         "Producenten gennemgår regler og bedømmelsesprocedurer for fremtidige bidrag."
       ],
+      "billedmotiv": "A microscope with a first-place ribbon being moved away from a screen showing cilia structures, while a new label with a roundworm and Dileptus organism takes the top spot. A neural-network watermark symbol is struck through, representing Nikon revoking the Small World in Motion title for AI post-processing.",
+      "billedmotiv_instruks": "8b48b2fc0d8ad7d7c2f8",
+      "billede": "data/img/ffe4147b2c7c5a63.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:23:39.760097+00:00"
       },
-      "billedmotiv": "A microscope with a first-place ribbon being moved away from a screen showing cilia structures, while a new label with a roundworm and Dileptus organism takes the top spot. A neural-network watermark symbol is struck through, representing Nikon revoking the Small World in Motion title for AI post-processing.",
-      "billedmotiv_instruks": "8b48b2fc0d8ad7d7c2f8",
-      "billede": "data/img/ffe4147b2c7c5a63.webp",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 2,
+        "betydning": 2,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Nikon satte førsteplads ud for brud på regler om generativ AI, gennemgår fremtidige regler",
+        "forbehold": "Delvis overlap med Ars Technica-historie om samme konkurrence",
+        "emne": "nikon small world"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 3,
       "side": "artikel/b54eaa9c1d3d30b0.html"
     },
     {
@@ -33261,6 +33244,7 @@
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
       "resume_da": "H.E.R.O. bruger klo i stedet for sugearme og ventes at generere $485.000 ekstra pr. anlæg mod en investering på $160.000.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Seks års udvikling er nu salgsklar",
@@ -33279,8 +33263,6 @@
           "tekst": "Ma vil gøre robotten mere robust, mindre og mere alsidig. Når den er bærbar nok, kan den bruges som selvstændig genbrugsløsning ved arrangementer, i indkøbscentre, hospitaler og lufthavne."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "$485.000",
@@ -33299,6 +33281,7 @@
           "label": "Potentielle kunder i salgspipeline"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Danu Robotics har base i Edinburgh, Skotland.",
         "Amy Ma var softwareudvikler i en bank i London før hun begyndte på robotten.",
@@ -33311,14 +33294,14 @@
         "$500.000 i underskrevne kontrakter",
         "$5 millioner rejst i late-seed-finansiering"
       ],
+      "billedmotiv": "A recycling sorting robot arm with a claw gripping recyclable materials, mounted on a conveyor belt. The Danu Robotics H.E.R.O. robot is shown grabbing a can instead of using suction, distinguishing it from competitors. Recyclable items flow past as the claw picks them out for reuse.",
+      "billedmotiv_instruks": "cea01e14e83d1f1a08a6",
+      "billede": "data/img/418c7a186cc2255e.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:31:05.091144+00:00"
       },
-      "billedmotiv": "A recycling sorting robot arm with a claw gripping recyclable materials, mounted on a conveyor belt. The Danu Robotics H.E.R.O. robot is shown grabbing a can instead of using suction, distinguishing it from competitors. Recyclable items flow past as the claw picks them out for reuse.",
-      "billedmotiv_instruks": "cea01e14e83d1f1a08a6",
-      "billede": "data/img/418c7a186cc2255e.webp",
       "side": "artikel/50fcb2172953f7fa.html"
     },
     {
@@ -33332,6 +33315,7 @@
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Sherry Turkle advarer: AI lokker os til tillid",
       "resume_da": "70 % er høflige over for AI, og chatbots undgår bevidst konflikter, hvilket kan få mennesker til at foretrække dem.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Et håndtryk fik journalisten til at tænke",
@@ -33346,8 +33330,6 @@
           "tekst": "Turkle mener ikke, at dialog med AI i sig selv er skadeligt. Hun nævner et projekt, hun vejledte, hvor en studerende byggede en bot, der hjalp folk med at træne til jobsamtaler.\n\n\"Min store metafor er: bliv i din bane, chatbot!\" sagde hun ved lanceringen. Coaching til en jobsamtale er en bane, en chatbot, der fortæller et treårigt barn, at den er dets forælder, er det ikke.\n\nProblemet er ifølge artiklen, at teknologien selv ved små skridt ud over den bane kan nedslidde vores skepsis og gøre, at vi stoler på den. Det begynder med noget så enkelt som et håndtryk."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "70 %",
@@ -33358,6 +33340,7 @@
           "label": "Alder på Sewell Setzer III i sagen mod Character.AI"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Pat Pataranutaporn leder Cyborg Psychology-gruppen på MIT Media Lab.",
         "Sagen mod Character.AI drejer sig om en chatbot fra \"Game of Thrones\".",
@@ -33370,14 +33353,14 @@
         "Chatbots undgår bevidst konflikter",
         "Coaching er i orden, forælderrolle er ikke"
       ],
+      "billedmotiv": "A humanoid robot hand extending for a handshake toward a speech bubble containing polite chat text. A terracotta Claude asterisk mark appears on a chat interface panel nearby, illustrating humans extending social politeness and trust to AI systems that are designed to avoid conflict.",
+      "billedmotiv_instruks": "ea712b15955734815baf",
+      "billede": "data/img/973f89e1352d6ab7.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:28:01.396887+00:00"
       },
-      "billedmotiv": "A humanoid robot hand extending for a handshake toward a speech bubble containing polite chat text. A terracotta Claude asterisk mark appears on a chat interface panel nearby, illustrating humans extending social politeness and trust to AI systems that are designed to avoid conflict.",
-      "billedmotiv_instruks": "ea712b15955734815baf",
-      "billede": "data/img/973f89e1352d6ab7.webp",
       "side": "artikel/3b30e472897bc4e0.html"
     },
     {
@@ -33391,6 +33374,7 @@
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
       "resume_da": "a16z-rapporten over de 100 største forbruger-AI-apps viser, at pengene lige nu kommer fra professionelle værktøjer, og at kun 2,2% af husstandene betaler.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Pengene kommer fra prosumer-værktøjer",
@@ -33405,8 +33389,6 @@
           "tekst": "Det mest påfaldende ved rapporten er det, der mangler. I top 100 findes ikke én app i sociale medier, dating, markedspladser, detailhandel, rejser, finans eller sundhed — ellers nogle af forbrugerinternets største kategorier.\n\nMoore kalder det overraskende og siger, at netop det er det, hun håber at se i løbet af de næste seks måneder. Samtidig er grænsen mellem forbruger og virksomhed blevet utydelig: Gamma, ElevenLabs og Cursor gik fra forbruger til flertal enterprise på under 18 måneder, hvor Canva før AI brugte seks til syv år."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "2,2%",
@@ -33425,6 +33407,7 @@
           "label": "Canva før teams og enterprise før AI"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Rapporten udkom mandagen før artiklen 9. oktober 2026.",
         "Tre betalte kategorier: produktbygning, produktmarketing og arbejdsstyring.",
@@ -33437,14 +33420,14 @@
         "Kun 2,2% af amerikanske husstande betaler for AI",
         "Ingen top-100-apps i dating, sundhed eller rejser"
       ],
+      "billedmotiv": "A bar chart showing the top 100 consumer AI apps with large gaps in categories like dating, health, and social media — depicted as empty slots. The OpenAI Blossom symbol stands beside the ChatGPT bar, while a16z's ranking emphasizes prosumer tools dominating the paid tiers.",
+      "billedmotiv_instruks": "a0c2041be624efd84ab5",
+      "billede": "data/img/099fd941b2964be0.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:28:50.810271+00:00"
       },
-      "billedmotiv": "A bar chart showing the top 100 consumer AI apps with large gaps in categories like dating, health, and social media — depicted as empty slots. The OpenAI Blossom symbol stands beside the ChatGPT bar, while a16z's ranking emphasizes prosumer tools dominating the paid tiers.",
-      "billedmotiv_instruks": "a0c2041be624efd84ab5",
-      "billede": "data/img/099fd941b2964be0.webp",
       "side": "artikel/80b34c260cbbb646.html"
     },
     {
@@ -33458,6 +33441,7 @@
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Trump forbyder betegnelsen AI og kræver super intelligence",
       "resume_da": "Tech-giganterne skifter navne, men Kongressens love fastholder stadig betegnelsen AI.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Trump kræver ny betegnelse ved dekret",
@@ -33476,9 +33460,8 @@
           "tekst": "Trump kan ikke forbyde Kongressen at bruge artificial intelligence, og udtrykket står i love som Take It Down Act, som myndighederne skal citere i retssager.\n\nDesuden betegner superintelligence — ét ord — avanceret teknologi, der overgår menneskelig tænkning, ikke hele kategorien AI. Bernie Sanders bruger allerede den oprindelige definition i et lovforslag fra september."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [],
+      "figurer": [],
       "detaljer": [
         "Trump erstattede fake news media med artificial media om pressen",
         "Superintelligence er ét ord — Trumps version har mellemrum imellem",
@@ -33490,14 +33473,14 @@
         "Musk, Bezos og Huang har skiftet betegnelse",
         "Take It Down Act bruger stadig AI i lovteksten"
       ],
+      "billedmotiv": "An executive order document with the text 'AI' crossed out and 'Super Intelligence' written above it. A gavel strikes down on the old term, while a government building silhouette shows agencies renaming — illustrating Trump's decree banning the term AI in favor of super intelligence.",
+      "billedmotiv_instruks": "a9ef8995578465416641",
+      "billede": "data/img/704db7adb16a6785.webp",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:34:19.024336+00:00"
       },
-      "billedmotiv": "An executive order document with the text 'AI' crossed out and 'Super Intelligence' written above it. A gavel strikes down on the old term, while a government building silhouette shows agencies renaming — illustrating Trump's decree banning the term AI in favor of super intelligence.",
-      "billedmotiv_instruks": "a9ef8995578465416641",
-      "billede": "data/img/704db7adb16a6785.webp",
       "side": "artikel/f4d9eec7f132858c.html"
     },
     {
@@ -33511,6 +33494,7 @@
       "eget_foerst_set": "2026-10-09T21:10:26.397423+00:00",
       "rubrik": "Instinct klarer sig mod Muse og Dots",
       "resume_da": "Agenten svarer i sms'er og udfører ægte opgaver, men en vigtig detalje på en hjemmeside kan undslippe den.",
+      "brief": "",
       "sektioner": [
         {
           "overskrift": "Instinct er sms'er, ikke en app",
@@ -33525,8 +33509,6 @@
           "tekst": "Instinct landede i august uden markedsføring, kun på invitation og næsten uden hjemmeside, og blev hurtigt hypet. Så kom Muse og kort efter Dots – stort set samme produkt fra to langt stærkere selskaber.\n\nStifter Noah Shinn, tidligere ansat i Sierra, siger over e-mail, at fokus kun på en personlig assistent til hverdagen er det, der adskiller Instinct. Selskabet blev værdisat til 10 mia. dollars i slutningen af september – også efter Muse kom."
         }
       ],
-      "brief": "",
-      "figurer": [],
       "noegletal": [
         {
           "tal": "10 mia. dollars",
@@ -33541,6 +33523,7 @@
           "label": "Ventetid på godkendelse fra Instincts venteliste"
         }
       ],
+      "figurer": [],
       "detaljer": [
         "Instinct drives via iMessage, WhatsApp og e-mail – ingen selvstændig app.",
         "Stifter Noah Shinn var tidligere ansat i Sierra.",
@@ -33553,13 +33536,14 @@
         "Fandt tider og priser korrekt, men overså et krav.",
         "Vurderet til 10 mia. dollars efter Muse' lancering"
       ],
+      "billedmotiv": "A smartphone showing text message bubbles between a user and an AI assistant, with a small checklist icon indicating completed tasks like booking appointments. One checklist item is missed — a small pop-up window detail is overlooked — showing the Instinct agent handling errands via SMS with occasional gaps.",
+      "billedmotiv_instruks": "89fc68ec3b416b3c4556",
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-09T21:31:47.414116+00:00"
       },
-      "billedmotiv": "A smartphone showing text message bubbles between a user and an AI assistant, with a small checklist icon indicating completed tasks like booking appointments. One checklist item is missed — a small pop-up window detail is overlooked — showing the Instinct agent handling errands via SMS with occasional gaps.",
-      "billedmotiv_instruks": "89fc68ec3b416b3c4556",
+      "billede": "data/img/963feacf91c3c4d1.webp",
       "side": "artikel/d3a475a54b31bfe7.html"
     },
     {
@@ -33573,6 +33557,40 @@
       "eget_foerst_set": "2026-10-09T06:35:11.465075+00:00",
       "rubrik": "Simon Willisons ttok kan nu liste modeller",
       "resume_da": "Værktøjet ttok får --list-models efter to år uden opdatering, samt rettelse af Click-advarsel og ny CI.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "Nyt kommando viser tilgængelige modeller",
+          "tekst": "ttok er et kommandolinjeværktøj fra Simon Willison, der tæller, hvor mange tokens en tekst består af. Tokens er de små tekststykker, som AI-modeller deler sproget op i, og tælleren bruges til at måle mængden af tekst.\n\nNu kan værktøjet også vise, hvilke modeller der er tilgængelige, via det nye kommando --list-models. ttok bygger på OpenAI's open source-bibliotek tiktoken og kører med uvx, så du kan tælle tokens i alt muligt."
+        },
+        {
+          "overskrift": "To års stilhed brudt med rettelser",
+          "tekst": "ttok har ikke været opdateret i et par år. Nu er en advarsel fra Click — biblioteket, der styrer kommandolinjens valgmuligheder — blevet rettet, og CI, den automatiske testkørsel, er opdateret.\n\nWillison skrev 8. oktober 2026 om opdateringen. Samme sted tilbyder han et kurateret mailuddrag om månedens vigtigste LLM-udviklinger som fordel ved at sponsorere ham for 10 USD om måneden."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "cirka 2 år",
+          "label": "Perioden uden opdatering af ttok før denne"
+        },
+        {
+          "tal": "10 USD om måneden",
+          "label": "Sponsoraftale, der giver adgang til det kuraterede mailuddrag"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "ttok er Simon Willisons kommandolinjeværktøj til optælling af tokens.",
+        "Værktøjet bygger på OpenAI's open source-bibliotek tiktoken.",
+        "ttok kører via uvx, så det kan bruges direkte.",
+        "Opdateringen er omtalt 8. oktober 2026."
+      ],
+      "betydning": "Efter omkring to år uden vedligeholdelse kan brugere opdatere ttok uden Click-advarsel og samtidig se, hvilke modeller værktøjet kender.",
+      "pointer": [
+        "--list-models viser tilgængelige modeller i ttok",
+        "Opdateret efter cirka to års pause",
+        "Kører via uvx med tiktoken-biblioteket"
+      ],
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -33590,47 +33608,154 @@
         "emne": "ttok 0.4 / simon willison"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-09T21:33:15.067407+00:00"
+      },
       "prio": 3,
+      "billedmotiv": "A solid command-line terminal block shows the text 'ttok --list-models' on its opaque front face, next to a stack of small square token blocks and a bulleted list panel with several model name bars, indicating the new list-models feature.",
+      "billedmotiv_instruks": "8310ce93b7d09f176ce3",
+      "billede": "data/img/0cea819fb4b3b17c.webp",
+      "side": "artikel/0e3b627310d21f33.html"
+    },
+    {
+      "titel": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "resume": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
+      "dato": "2026-10-09T21:41:29+00:00",
+      "kilde": "TechCrunch AI",
+      "kategori": "Penge & marked",
+      "foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "eget_foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "rubrik": "TypeSafe AI henter 870 millioner dollar for Jev",
+      "resume_da": "Jev leverer sandsynligheder i stedet for tekst, lanceredes 15. september, og TypeSafe hævder brug i en tredjedel af Fortune 500.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 2,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "forretning",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "TypeSafes ikke-tekstbaserede model Jev vurderes til 7,5 mia. dollar uger efter launch",
+        "forbehold": "Hastigheds- og token-påstande er TypeSafes egne, ikke uafhængigt afprøvede",
+        "emne": "typesafe jev"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 6,
       "sektioner": [
         {
-          "overskrift": "Nyt kommando viser tilgængelige modeller",
-          "tekst": "ttok er et kommandolinjeværktøj fra Simon Willison, der tæller, hvor mange tokens en tekst består af. Tokens er de små tekststykker, som AI-modeller deler sproget op i, og tælleren bruges til at måle mængden af tekst.\n\nNu kan værktøjet også vise, hvilke modeller der er tilgængelige, via det nye kommando --list-models. ttok bygger på OpenAI's open source-bibliotek tiktoken og kører med uvx, så du kan tælle tokens i alt muligt."
+          "overskrift": "Andreessen Horowitz fører TypeSafe AI-finansiering",
+          "tekst": "TypeSafe AI, udvikleren af AI-modellen Jev, har rejst 870 millioner dollar i en finansieringsrunde ledet af Andreessen Horowitz. Sequoia og den eksisterende investor DCVC deltog også.\n\nRunden giver TypeSafe en værdiansættelse på 7,5 milliarder dollar. Det sker blot få uger efter, at Jev blev lanceret den 15. september og næsten øjeblikkeligt blev viral."
         },
         {
-          "overskrift": "To års stilhed brudt med rettelser",
-          "tekst": "ttok har ikke været opdateret i et par år. Nu er en advarsel fra Click — biblioteket, der styrer kommandolinjens valgmuligheder — blevet rettet, og CI, den automatiske testkørsel, er opdateret.\n\nWillison skrev 8. oktober 2026 om opdateringen. Samme sted tilbyder han et kurateret mailuddrag om månedens vigtigste LLM-udviklinger som fordel ved at sponsorere ham for 10 USD om måneden."
+          "overskrift": "Jev udgiver sandsynligheder frem for tekst",
+          "tekst": "Jev er bygget på transformer-arkitekturen, samme grundlag som store sprogmodeller (LLM), men den er ikke en LLM. I stedet for tekst udgiver den sandsynligheder, som TypeSafe kalder »kalibrerede beslutninger«.\n\nVirksomheden hævder, at Jev arbejder markant hurtigere og bruger langt færre tokens end LLM'er. Tokens er de små enheder, en AI-model behandler – typisk ord eller orddele. TypeSafe positionerer tilgangen som særligt egnet til at automatisere opgaver frem for at generere tekst eller kode."
+        },
+        {
+          "overskrift": "TypeSafe hævder brug hos tredjedel af Fortune 500",
+          "tekst": "TypeSafe påstår, at en tredjedel af Fortune 500-selskaber allerede bruger Jev. Det er bemærkelsesværdigt for en model, der er få uger gammel.\n\nCo-founder Diogo Almeida, tidligere forsker hos OpenAI, fortalte TechCrunch sidste måned: »Vi har været supergode til menneskeligt sprog i fire år, men det er ikke nyttigt til automatisering, fordi computere taler et andet sprog.«"
+        }
+      ],
+      "brief": "",
+      "figurer": [],
+      "noegletal": [],
+      "detaljer": [
+        "TypeSafe blev grundlagt i 2024 af Diogo Almeida, Sasha Sheng og Erik Gafni.",
+        "Sasha Sheng var tidligere forskningsingeniør hos Meta.",
+        "Erik Gafni er ingeniør og iværksætter."
+      ],
+      "betydning": "Andreessen Horowitz' lederskab i runden signalerer, at store investorer satser på AI til automatisering frem for tekstgenerering.",
+      "pointer": [
+        "TypeSafe rejste 870 millioner dollar i finansiering",
+        "Jev udgiver sandsynligheder frem for tekst",
+        "En tredjedel af Fortune 500 bruger Jev, hævder TypeSafe"
+      ],
+      "brief_instruks": "9b2bbb013b0d68e9",
+      "publicering": {
+        "status": "godkendt",
+        "kontrolleret": "2026-10-10T06:27:26.733495+00:00"
+      },
+      "billedmotiv": "A thick solid slab shaped like a probability bar chart, one column rising clearly higher than the others to show calibrated probability output instead of text, sits beside an opaque block bearing the Andreessen Horowitz mark, with stacked coin shapes indicating the 870 million dollar funding round.",
+      "billedmotiv_instruks": "4bf705e5e2fc24ac709c",
+      "side": "artikel/6609f1addbf32ee2.html"
+    },
+    {
+      "titel": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+      "resume": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+      "dato": "2026-10-09T22:04:07+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Samfund & etik",
+      "foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "eget_foerst_set": "2026-10-10T06:19:16.364726+00:00",
+      "rubrik": "Ukraines droner rammer Yandex' AI-datacentre",
+      "resume_da": "To af fem anlæg er ramt, heriblandt et med supercomputere til træning af Yandex' AI-model YandexGPT.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 3,
+        "brugbarhed": 0,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "andet",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Ukrainske droner ramte datacenter med supercomputere til træning af Yandex' AI-model",
+        "forbehold": "Skadeomfang og driftsstatus præciseres ikke i uddraget",
+        "emne": "yandex datacenter"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 4,
+      "sektioner": [
+        {
+          "overskrift": "To af fem Yandex-datacentre ramt",
+          "tekst": "Ukraines droner ramte Yandex' datacentre i regionerne Sasovo og Kaluga den 8. og 9. oktober. Anlægget i Sasovo huser **to af Yandex' tre supercomputere**, der bruges til at træne selskabets AI-model YandexGPT.\n\nYandex driver Ruslands mest populære søgemaskine og kaldes \"Ruslands Google\". Det ukrainske firma Firepoint oplyser ifølge Reuters, at selskabets FP-1-droner blev brugt mod Kaluga-anlægget, Yandex' største datacenter."
+        },
+        {
+          "overskrift": "Russiske tjenester gik i stå efter angreb",
+          "tekst": "Yandex oplyser, at ingen medarbejdere kom til skade, men bekræfter forstyrrelser i flere tjenester. Ifølge Meduza rapporterede russiske brugere problemer med mediesider, videostreamingtjenesten Ivi, digitalbanken T-Bank og De Russiske Jernbaner.\n\nAngrebet var ifølge Ukraines præsident Volodymyr Zelenskyj et **\"symmetrisk svar\"** på russiske dronangreb mod Ukraines datacentre, som siden slutningen af september har forstyrret mobil- og internetforbindelser for tusindvis af ukrainere."
         }
       ],
       "brief": "",
       "figurer": [],
       "noegletal": [
         {
-          "tal": "cirka 2 år",
-          "label": "Perioden uden opdatering af ttok før denne"
+          "tal": "2 af 5",
+          "label": "Yandex-datacentre, der blev ramt"
         },
         {
-          "tal": "10 USD om måneden",
-          "label": "Sponsoraftale, der giver adgang til det kuraterede mailuddrag"
+          "tal": "2 af 3",
+          "label": "supercomputere i det ramte Sasovo-anlæg"
         }
       ],
       "detaljer": [
-        "ttok er Simon Willisons kommandolinjeværktøj til optælling af tokens.",
-        "Værktøjet bygger på OpenAI's open source-bibliotek tiktoken.",
-        "ttok kører via uvx, så det kan bruges direkte.",
-        "Opdateringen er omtalt 8. oktober 2026."
+        "Firepoints FP-1 er envejsangrebsdroner, der flyver mod målet uden at vende tilbage.",
+        "I februar 2026 ramte iranske droner Amazon-datacentre i Bahrain og De Forenede Arabiske Emirater.",
+        "I sommeren 2026 ramte Ukraine lagre hos Wildberries og Ozon, Ruslands svar på Amazon."
       ],
-      "betydning": "Efter omkring to år uden vedligeholdelse kan brugere opdatere ttok uden Click-advarsel og samtidig se, hvilke modeller værktøjet kender.",
+      "betydning": "Datacentre er bevidste krigsmål. Iranske droner ramte Amazon-datacentre i Bahrain og De Forenede Arabiske Emirater i februar 2026 efter amerikansk-israelske angreb på Iran.",
       "pointer": [
-        "--list-models viser tilgængelige modeller i ttok",
-        "Opdateret efter cirka to års pause",
-        "Kører via uvx med tiktoken-biblioteket"
+        "Yandex' to største anlæg ramt den 8. og 9. oktober",
+        "Supercomputere bag YandexGPT trafet i Sasovo",
+        "Svaret på russiske angreb mod Ukraines datacentre"
       ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
-        "kontrolleret": "2026-10-09T21:33:15.067407+00:00"
+        "kontrolleret": "2026-10-10T06:37:14.587795+00:00"
       },
-      "side": "artikel/0e3b627310d21f33.html"
+      "billedmotiv": "Two solid data-centre server racks show the Yandex logo — the red letter 'Я' — front-facing on their upper panels, with a compact FP-1 drone shape angled toward the Kaluga facility and one rack marked with a crumpled, dented panel indicating a drone strike, while supercomputer rack units beside it sit dark.",
+      "billedmotiv_instruks": "c36a8a27a0e7f98b4406",
+      "billede": "data/img/10c173919a4d35c0.jpg",
+      "side": "artikel/a1c18d2e2d1730e1.html"
     }
   ]
 }

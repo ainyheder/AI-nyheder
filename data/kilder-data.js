@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-09T21:10:26.397423+00:00",
- "artikler_i_alt": 150,
+ "opdateret": "2026-10-10T06:19:16.364726+00:00",
+ "artikler_i_alt": 138,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -579,7 +579,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 51,
+   "i_listen": 46,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -644,6 +644,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "TypeSafe AI henter 870 millioner dollar for Jev",
+     "dato": "2026-10-09T21:41:29",
+     "foerst_set": "2026-10-10T06:19:16",
+     "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+     "side": "artikel/6609f1addbf32ee2.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
@@ -743,25 +752,16 @@ window.KILDER_STATUS = {
      "side": "artikel/49a73efd5324972b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Persona-armbåndet lytter kun efter knap eller vift",
-     "dato": "2026-10-08T14:00:00",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
-     "side": "artikel/87922315e033f710.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     12
+     9
     ],
     [
      "Ars Technica AI",
-     4
+     3
     ],
     [
      "Anthropic News",
@@ -779,8 +779,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
-   "som_ekstra": 17,
+   "i_listen": 31,
+   "som_ekstra": 14,
    "seneste": [
     {
      "rubrik": "OpenAI dropper knap 400 matematiske resultater",
@@ -882,22 +882,13 @@ window.KILDER_STATUS = {
      "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
     },
     {
-     "rubrik": "Meta lader dig bygge dine egne Muse-enheder",
+     "rubrik": "Google lancerer Guided Vision i Gemini Live",
      "dato": "",
-     "foerst_set": "2026-10-03T05:39:48",
-     "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
      "side": "",
      "hvor": "under",
-     "under": "Meta lader udviklere bygge Muse-hardware selv"
-    },
-    {
-     "rubrik": "Nikon diskvalificerede mikrovinder efter AI-brug",
-     "dato": "2026-10-09T14:06:57",
-     "foerst_set": "2026-10-09T21:10:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
-     "side": "artikel/b54eaa9c1d3d30b0.html",
-     "hvor": "forside",
-     "under": ""
+     "under": "Gemini Live beskriver verden for blinde"
     },
     {
      "rubrik": "Trump forbyder betegnelsen AI og kræver super intelligence",
@@ -914,6 +905,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-09T21:10:26",
      "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
      "side": "artikel/d3a475a54b31bfe7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nikon diskvalificerede mikrovinder efter AI-brug",
+     "dato": "2026-10-09T14:06:57",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+     "side": "artikel/b54eaa9c1d3d30b0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1002,7 +1002,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     12
+     9
     ],
     [
      "Ars Technica AI",
@@ -1036,8 +1036,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 11,
-   "som_ekstra": 6,
+   "i_listen": 10,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "Microsoft flytter Windows AI fra skyen til maskinen",
@@ -1076,15 +1076,6 @@ window.KILDER_STATUS = {
      "under": "Wikimedia: OpenAI-agenter bag millioner af kald"
     },
     {
-     "rubrik": "Apple strammer diskadgangen mod AI-agent-misbrug",
-     "dato": "",
-     "foerst_set": "2026-10-03T05:39:48",
-     "link": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
-     "side": "",
-     "hvor": "under",
-     "under": "Apple strammer Full Disk Access til AI-agenter"
-    },
-    {
      "rubrik": "Google Gemini 4 Argon springer over 3.5 Pro",
      "dato": "",
      "foerst_set": "2026-10-02T12:20:39",
@@ -1092,6 +1083,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Ukraines droner rammer Yandex' AI-datacentre",
+     "dato": "2026-10-09T22:04:07",
+     "foerst_set": "2026-10-10T06:19:16",
+     "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+     "side": "artikel/a1c18d2e2d1730e1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
@@ -1173,30 +1173,12 @@ window.KILDER_STATUS = {
      "side": "artikel/b885ab921e9a2f2a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Topchef anholdt for Nvidia-smugling til Kina",
-     "dato": "2026-10-02T18:39:36",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
-     "side": "artikel/00a7c45278c3c4fc.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia hæver Shield TV Pro med 100 dollars",
-     "dato": "2026-10-02T14:52:16",
-     "foerst_set": "2026-10-02T14:56:39",
-     "link": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
-     "side": "artikel/df8c3961bd400855.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     4
+     3
     ],
     [
      "The Verge AI",
@@ -1218,7 +1200,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 10,
+   "i_listen": 8,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1299,24 +1281,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-05T17:20:56",
      "link": "https://www.technologyreview.com/2026/10/05/1145413/emtech-future-2026-when-ai-meets-everything/",
      "side": "artikel/c8d1f5dc3656c849.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "MIT Technology Review: AI kræver ombygget datagrundlag",
-     "dato": "2026-10-02T15:49:04",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
-     "side": "artikel/ed9dd57bde8283bb.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AlphaGo-agtig søgning mangler i dagens AI",
-     "dato": "2026-10-02T08:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
-     "side": "artikel/6714225038a5289d.html",
      "hvor": "forside",
      "under": ""
     }
