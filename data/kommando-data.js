@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-11T00:07:55.036648+00:00",
+ "genereret": "2026-10-11T06:34:38.026118+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,24 +195,24 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-10T23:47:18.598902+00:00",
-  "antal": 142,
+  "opdateret": "2026-10-11T06:19:03.087803+00:00",
+  "antal": 141,
   "med_billede": 71,
-  "paa_dansk": 142,
+  "paa_dansk": 141,
   "kategorier": {
+   "Samfund \u0026 etik": 24,
+   "Politik \u0026 jura": 14,
    "Forskning": 15,
    "Lanceringer": 38,
-   "Samfund \u0026 etik": 24,
-   "Penge \u0026 marked": 29,
+   "Penge \u0026 marked": 28,
    "Hverdags-AI": 20,
-   "Politik \u0026 jura": 14,
    "Dybde": 1,
    "Nyheder": 1
   },
   "kilder": {
+   "TechCrunch AI": 48,
    "Ars Technica AI": 11,
    "Anthropic News": 13,
-   "TechCrunch AI": 49,
    "The Verge AI": 31,
    "Google DeepMind": 3,
    "Simon Willison AI": 11,
@@ -251,7 +251,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
     "dato": "2026-10-10T09:00:00-04:00",
-    "billede": ""
+    "billede": "data/img/60418486563012db.jpg"
    }
   ],
   "seneste": [
@@ -293,7 +293,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
     "dato": "2026-10-10T09:00:00-04:00",
-    "billede": ""
+    "billede": "data/img/60418486563012db.jpg"
    },
    {
     "titel": "Here are the top AI agents that can live in your text messages",
@@ -314,16 +314,6 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-10T00:18:32+00:00",
     "billede": "data/img/b2f12cba29391b1a.jpg"
-   },
-   {
-    "titel": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-    "rubrik": "TypeSafe AI henter 870 millioner dollar for Jev",
-    "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-    "side": "artikel/6609f1addbf32ee2.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-09T21:41:29+00:00",
-    "billede": "data/img/b36dd08cb2da0b3e.webp"
    },
    {
     "titel": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
@@ -374,20 +364,30 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-09T15:43:33+00:00",
     "billede": "data/img/099fd941b2964be0.webp"
+   },
+   {
+    "titel": "Danu Robotics’ fight to build a better recycling robot",
+    "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
+    "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+    "side": "artikel/50fcb2172953f7fa.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-09T16:45:00+00:00",
+    "billede": "data/img/418c7a186cc2255e.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-10T23:47:18.598902+00:00",
+  "opdateret": "2026-10-11T06:19:03.087803+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Udgavekontrol fejlede: TypeError",
-  "modelkald": 8,
-  "kildehentninger": 0,
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 4,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+   "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-   "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
+   "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
   "udgivet_udvalg": [
    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
@@ -412,7 +412,11 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -420,46 +424,31 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
    },
    {
     "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
-  "kildegrundlag": []
+  "kildegrundlag": [
+   {
+    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+    "grundlag": "kildetekst"
+   }
+  ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-10T23:47:18.186648+00:00",
+  "opdateret": "2026-10-11T06:19:02.547274+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -815,8 +804,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-10T23:47:18.598902+00:00",
-  "artikler_i_alt": 142,
+  "opdateret": "2026-10-11T06:19:03.087803+00:00",
+  "artikler_i_alt": 141,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1305,7 +1294,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 49,
+    "i_listen": 48,
     "som_ekstra": 5,
     "seneste": [
      {
@@ -1408,11 +1397,11 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "TypeSafe AI henter 870 millioner dollar for Jev",
-      "dato": "2026-10-09T21:41:29",
-      "foerst_set": "2026-10-10T06:19:16",
-      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-      "side": "artikel/6609f1addbf32ee2.html",
+      "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
+      "dato": "2026-10-09T15:43:33",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "side": "artikel/80b34c260cbbb646.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1865,12 +1854,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-11T00:07:50.059271+00:00",
+  "opdateret": "2026-10-11T06:34:32.625139+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 30,
-  "sidevisninger_i_alt": 41,
+  "besoeg_i_alt": 32,
+  "sidevisninger_i_alt": 45,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2027,8 +2016,8 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 23,
-    "visninger": 31
+    "besoeg": 25,
+    "visninger": 35
    },
    {
     "sti": "/artikel/024315d82a76560f.html",
@@ -2121,7 +2110,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 29
+    "besoeg": 31
    },
    {
     "fra": "www.google.com",
