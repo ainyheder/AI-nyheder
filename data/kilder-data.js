@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-10T20:17:37.247946+00:00",
- "artikler_i_alt": 143,
+ "opdateret": "2026-10-10T23:47:18.598902+00:00",
+ "artikler_i_alt": 142,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -579,8 +579,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 48,
-   "som_ekstra": 6,
+   "i_listen": 49,
+   "som_ekstra": 5,
    "seneste": [
     {
      "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
@@ -637,15 +637,6 @@ window.KILDER_STATUS = {
      "under": "Google lancerer global SynthID-detektor til alle"
     },
     {
-     "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
-     "dato": "",
-     "foerst_set": "2026-10-03T19:22:05",
-     "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-     "side": "",
-     "hvor": "under",
-     "under": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI"
-    },
-    {
      "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
      "dato": "",
      "foerst_set": "2026-09-22T19:51:24",
@@ -653,6 +644,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
+     "dato": "2026-10-10T21:47:51",
+     "foerst_set": "2026-10-10T23:47:18",
+     "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+     "side": "artikel/a132e85074c45aec.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Apple hyrer Huxe-team og licenserer deres AI",
+     "dato": "2026-10-10T19:50:00",
+     "foerst_set": "2026-10-10T20:17:37",
+     "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+     "side": "artikel/719244ff4837f34b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Instinct når 10 milliarder dollars i værdi",
@@ -743,30 +752,12 @@ window.KILDER_STATUS = {
      "side": "artikel/02f01addd62e86c2.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI's beviser halter efter matematikkens krav",
-     "dato": "2026-10-08T18:10:55",
-     "foerst_set": "2026-10-08T21:27:54",
-     "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-     "side": "artikel/81c67bededb8c6b2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Ben Afflecks AI-video går viralt",
-     "dato": "2026-10-08T18:20:32",
-     "foerst_set": "2026-10-08T21:27:54",
-     "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-     "side": "artikel/d20ef6d9bc50893f.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     10
+     11
     ],
     [
      "Ars Technica AI",
@@ -788,9 +779,27 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
-   "som_ekstra": 14,
+   "i_listen": 31,
+   "som_ekstra": 16,
    "seneste": [
+    {
+     "rubrik": "Satya Nadella vil indføre nødbremse på AI-modeller",
+     "dato": "",
+     "foerst_set": "2026-10-10T23:47:18",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+     "side": "",
+     "hvor": "under",
+     "under": "Satya Nadella kræver nødbremse til AI-modeller"
+    },
+    {
+     "rubrik": "Anthropic spærrer AI-agenter fra nettet under test",
+     "dato": "",
+     "foerst_set": "2026-10-10T20:17:37",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic spærrer nettet for egne AI-agenter"
+    },
     {
      "rubrik": "OpenAI dropper knap 400 matematiske resultater",
      "dato": "",
@@ -882,29 +891,20 @@ window.KILDER_STATUS = {
      "under": "OpenAI sender annoncer ind blandt billedsvar"
     },
     {
-     "rubrik": "RemoveMacAI sletter 12 GB Apple AI-data",
-     "dato": "",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
-     "side": "",
-     "hvor": "under",
-     "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
-    },
-    {
-     "rubrik": "Google lancerer Guided Vision i Gemini Live",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini Live beskriver verden for blinde"
-    },
-    {
      "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
      "dato": "2026-10-10T14:52:07",
      "foerst_set": "2026-10-10T20:17:37",
      "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
      "side": "artikel/6cf45b6f27cad9cd.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "OpenAI Dots lover privatliv Meta Muse ikke holdt",
+     "dato": "2026-10-10T09:00:00",
+     "foerst_set": "2026-10-10T14:39:43",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+     "side": "artikel/65008a0b40dae798.html",
      "hvor": "forside",
      "under": ""
     },
@@ -955,7 +955,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic tilbyder gratis AI-sikkerhedsscans",
-     "dato": "2026-10-08T17:53:51",
+     "dato": "2026-10-08T21:53:51",
      "foerst_set": "2026-10-09T06:35:11",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
      "side": "artikel/6b44d5cdfd6f4fb3.html",
@@ -997,21 +997,12 @@ window.KILDER_STATUS = {
      "side": "artikel/975282e2b7fc4c08.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Artificial skildrer Sam Altmans magtkamp tæt på fakta",
-     "dato": "2026-10-08T14:00:00",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
-     "side": "artikel/cb609755b367796d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     10
+     11
     ],
     [
      "Anthropic News",
@@ -1049,7 +1040,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Mistral udfordrer med milliardparametermodel",
+     "rubrik": "Mistral udgiver Le Chonk som rival til topmodeller",
      "dato": "",
      "foerst_set": "2026-10-07T15:44:28",
      "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",

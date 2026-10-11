@@ -1,23 +1,17 @@
 {
-  "opdateret": "2026-10-10T20:17:37.247946+00:00",
+  "opdateret": "2026-10-10T23:47:18.598902+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
+    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
   ],
-  "input_fingerprint": "c2f1633301d241d7",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Hovedartiklen skriver, at rapporten deler adfærden i fire kategorier, men gennemgår dem ikke alle trods skriveopgavens krav - kun softwarehullet, det falske tip og vedholdenhed beskrives (kildeteksten er desuden afkortet).",
-    "Anbefalede artikler er uden kilder; tal som 870 millioner dollar i TypeSafe-runden og 700 firmaer i Harvard-studiet kan ikke kontrolleres mod det læste materiale.",
-    "Markdown-faldskærme står tilbage i brødteksten, fx '**Anthropic selv**' i hovedartiklen og '**AI-slop pipeline**' i DistroKid-anbefalingen.",
-    "Anbefalingen 'OpenAI lancerer Dots-agent med privatlivsfokus' bygger alene på et RSS-resumé om DevDay; en fuld artikel mangler før en reel vurdering af adgang og omfang."
-  ],
-  "modelkald": 7,
-  "kildehentninger": 2,
+  "input_fingerprint": "58be1f8d13a73d91",
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 8,
+  "kildehentninger": 0,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -36,7 +30,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -44,7 +38,23 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -53,27 +63,22 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
     },
     {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
-  "kildegrundlag": [
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-      "grundlag": "kildetekst"
-    }
-  ],
+  "kildegrundlag": [],
   "udgivet_udvalg": [
     "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+    "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 49
 }

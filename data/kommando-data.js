@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-10T20:54:43.958016+00:00",
+ "genereret": "2026-10-11T00:07:55.036648+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,25 +195,25 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-10T20:17:37.247946+00:00",
-  "antal": 143,
-  "med_billede": 74,
-  "paa_dansk": 143,
+  "opdateret": "2026-10-10T23:47:18.598902+00:00",
+  "antal": 142,
+  "med_billede": 71,
+  "paa_dansk": 142,
   "kategorier": {
-   "Lanceringer": 39,
    "Forskning": 15,
+   "Lanceringer": 38,
    "Samfund \u0026 etik": 24,
-   "Hverdags-AI": 21,
-   "Penge \u0026 marked": 27,
-   "Politik \u0026 jura": 13,
-   "Nyheder": 3,
-   "Dybde": 1
+   "Penge \u0026 marked": 29,
+   "Hverdags-AI": 20,
+   "Politik \u0026 jura": 14,
+   "Dybde": 1,
+   "Nyheder": 1
   },
   "kilder": {
-   "Anthropic News": 13,
    "Ars Technica AI": 11,
-   "TechCrunch AI": 48,
-   "The Verge AI": 33,
+   "Anthropic News": 13,
+   "TechCrunch AI": 49,
+   "The Verge AI": 31,
    "Google DeepMind": 3,
    "Simon Willison AI": 11,
    "MIT Tech Review AI": 8,
@@ -244,26 +244,56 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/b2f12cba29391b1a.jpg"
    },
    {
-    "titel": "Anthropic launches free AI security scans for open-source projects",
-    "rubrik": "Anthropic tilbyder gratis AI-sikkerhedsscans",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-    "side": "artikel/6b44d5cdfd6f4fb3.html",
-    "kategori": "Hverdags-AI",
+    "titel": "AI agent makers are promising privacy — will they deliver?",
+    "rubrik": "OpenAI Dots lover privatliv Meta Muse ikke holdt",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+    "side": "artikel/65008a0b40dae798.html",
+    "kategori": "Penge \u0026 marked",
     "kilde": "The Verge AI",
-    "dato": "2026-10-08T17:53:51-04:00",
-    "billede": "data/img/d056d2318428bb9e.jpg"
+    "dato": "2026-10-10T09:00:00-04:00",
+    "billede": ""
    }
   ],
   "seneste": [
+   {
+    "titel": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+    "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
+    "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+    "side": "artikel/a132e85074c45aec.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-10T21:47:51+00:00",
+    "billede": "data/img/3bf67d2ff1d3ee3e.jpg"
+   },
    {
     "titel": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
     "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
     "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
     "side": "artikel/6cf45b6f27cad9cd.html",
-    "kategori": "Nyheder",
+    "kategori": "Samfund \u0026 etik",
     "kilde": "The Verge AI",
     "dato": "2026-10-10T14:52:07-04:00",
     "billede": "data/img/0b1b57301ad94d7b.webp"
+   },
+   {
+    "titel": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+    "rubrik": "Apple hyrer Huxe-team og licenserer deres AI",
+    "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+    "side": "artikel/719244ff4837f34b.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-10T19:50:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "AI agent makers are promising privacy — will they deliver?",
+    "rubrik": "OpenAI Dots lover privatliv Meta Muse ikke holdt",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+    "side": "artikel/65008a0b40dae798.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-10T09:00:00-04:00",
+    "billede": ""
    },
    {
     "titel": "Here are the top AI agents that can live in your text messages",
@@ -344,55 +374,25 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-09T15:43:33+00:00",
     "billede": "data/img/099fd941b2964be0.webp"
-   },
-   {
-    "titel": "Danu Robotics’ fight to build a better recycling robot",
-    "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
-    "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
-    "side": "artikel/50fcb2172953f7fa.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-09T16:45:00+00:00",
-    "billede": "data/img/418c7a186cc2255e.webp"
-   },
-   {
-    "titel": "Instinct was the buzziest AI agent around — can it survive Muse?",
-    "rubrik": "Instinct klarer sig mod Muse og Dots",
-    "link": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
-    "side": "artikel/d3a475a54b31bfe7.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-09T10:00:00-04:00",
-    "billede": "data/img/963feacf91c3c4d1.webp"
-   },
-   {
-    "titel": "Trump’s attempt to rename AI is looking awfully artificial",
-    "rubrik": "Trump forbyder betegnelsen AI og kræver super intelligence",
-    "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
-    "side": "artikel/f4d9eec7f132858c.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-09T10:25:43-04:00",
-    "billede": "data/img/704db7adb16a6785.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-10T20:17:37.247946+00:00",
+  "opdateret": "2026-10-10T23:47:18.598902+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 7,
-  "kildehentninger": 2,
+  "forklaring": "Udgavekontrol fejlede: TypeError",
+  "modelkald": 8,
+  "kildehentninger": 0,
   "regelbaseret_udvalg": [
-   "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+   "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-   "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
+   "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/"
   ],
   "udgivet_udvalg": [
    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-   "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
+   "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
   "vaerktoejer": [
    {
@@ -412,7 +412,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -420,7 +420,23 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -429,26 +445,21 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
    },
    {
     "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
-  "kildegrundlag": [
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-    "grundlag": "kildetekst"
-   }
-  ]
+  "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-10T20:17:36.568918+00:00",
+  "opdateret": "2026-10-10T23:47:18.186648+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -804,8 +815,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-10T20:17:37.247946+00:00",
-  "artikler_i_alt": 143,
+  "opdateret": "2026-10-10T23:47:18.598902+00:00",
+  "artikler_i_alt": 142,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1294,8 +1305,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 48,
-    "som_ekstra": 6,
+    "i_listen": 49,
+    "som_ekstra": 5,
     "seneste": [
      {
       "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
@@ -1352,15 +1363,6 @@ window.KOMMANDO_DATA = {
       "under": "Google lancerer global SynthID-detektor til alle"
      },
      {
-      "rubrik": "OpenAI-sikkerhedsmedarbejder siger op og advarer",
-      "dato": "",
-      "foerst_set": "2026-10-03T19:22:05",
-      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI-sikkerhedsansat kræver atomkraftsikkerhed for AI"
-     },
-     {
       "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
       "dato": "",
       "foerst_set": "2026-09-22T19:51:24",
@@ -1368,6 +1370,24 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     },
+     {
+      "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
+      "dato": "2026-10-10T21:47:51",
+      "foerst_set": "2026-10-10T23:47:18",
+      "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "side": "artikel/a132e85074c45aec.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Apple hyrer Huxe-team og licenserer deres AI",
+      "dato": "2026-10-10T19:50:00",
+      "foerst_set": "2026-10-10T20:17:37",
+      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "side": "artikel/719244ff4837f34b.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Instinct når 10 milliarder dollars i værdi",
@@ -1395,15 +1415,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/6609f1addbf32ee2.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
-      "dato": "2026-10-09T15:43:33",
-      "foerst_set": "2026-10-09T21:10:26",
-      "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
-      "side": "artikel/80b34c260cbbb646.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1417,9 +1428,27 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 33,
-    "som_ekstra": 14,
+    "i_listen": 31,
+    "som_ekstra": 16,
     "seneste": [
+     {
+      "rubrik": "Satya Nadella vil indføre nødbremse på AI-modeller",
+      "dato": "",
+      "foerst_set": "2026-10-10T23:47:18",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "side": "",
+      "hvor": "under",
+      "under": "Satya Nadella kræver nødbremse til AI-modeller"
+     },
+     {
+      "rubrik": "Anthropic spærrer AI-agenter fra nettet under test",
+      "dato": "",
+      "foerst_set": "2026-10-10T20:17:37",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic spærrer nettet for egne AI-agenter"
+     },
      {
       "rubrik": "OpenAI dropper knap 400 matematiske resultater",
       "dato": "",
@@ -1509,24 +1538,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI sender annoncer ind blandt billedsvar"
-     },
-     {
-      "rubrik": "RemoveMacAI sletter 12 GB Apple AI-data",
-      "dato": "",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
-      "side": "",
-      "hvor": "under",
-      "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
-     },
-     {
-      "rubrik": "Google lancerer Guided Vision i Gemini Live",
-      "dato": "",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini Live beskriver verden for blinde"
      }
     ]
    },
@@ -1544,7 +1555,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 4,
     "seneste": [
      {
-      "rubrik": "Mistral udfordrer med milliardparametermodel",
+      "rubrik": "Mistral udgiver Le Chonk som rival til topmodeller",
       "dato": "",
       "foerst_set": "2026-10-07T15:44:28",
       "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
@@ -1854,7 +1865,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-10T20:54:38.729363+00:00",
+  "opdateret": "2026-10-11T00:07:50.059271+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
@@ -1862,11 +1873,6 @@ window.KOMMANDO_DATA = {
   "sidevisninger_i_alt": 41,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-11",
-    "besoeg": 20,
-    "visninger": 50
-   },
    {
     "dato": "2026-09-12",
     "besoeg": 30,
@@ -2009,6 +2015,11 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-10",
+    "besoeg": 0,
+    "visninger": 0
+   },
+   {
+    "dato": "2026-10-11",
     "besoeg": 0,
     "visninger": 0
    }

@@ -1,10 +1,9 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-10T20:54:38.729363+00:00",
+ "opdateret": "2026-10-11T00:07:50.059271+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
   "datoer": [
-   "2026-09-11",
    "2026-09-12",
    "2026-09-13",
    "2026-09-14",
@@ -33,13 +32,13 @@ window.LAESERTAL = {
    "2026-10-07",
    "2026-10-08",
    "2026-10-09",
-   "2026-10-10"
+   "2026-10-10",
+   "2026-10-11"
   ],
   "serier": [
    {
     "navn": "Samfund & etik",
     "tal": [
-     5,
      1,
      1,
      6,
@@ -68,13 +67,13 @@ window.LAESERTAL = {
      3,
      3,
      7,
-     2
+     3,
+     0
     ]
    },
    {
     "navn": "Penge & marked",
     "tal": [
-     3,
      1,
      0,
      4,
@@ -102,6 +101,7 @@ window.LAESERTAL = {
      4,
      8,
      4,
+     2,
      2,
      0
     ]
@@ -111,7 +111,6 @@ window.LAESERTAL = {
     "tal": [
      0,
      0,
-     0,
      1,
      4,
      3,
@@ -138,13 +137,13 @@ window.LAESERTAL = {
      8,
      6,
      3,
-     1
+     1,
+     0
     ]
    },
    {
     "navn": "Politik & jura",
     "tal": [
-     3,
      3,
      2,
      2,
@@ -173,13 +172,13 @@ window.LAESERTAL = {
      0,
      5,
      1,
+     1,
      0
     ]
    },
    {
     "navn": "Hverdags-AI",
     "tal": [
-     4,
      1,
      0,
      2,
@@ -206,15 +205,15 @@ window.LAESERTAL = {
      7,
      4,
      2,
-     2,
+     3,
      1,
+     0,
      0
     ]
    },
    {
     "navn": "Forskning",
     "tal": [
-     11,
      1,
      0,
      1,
@@ -243,6 +242,7 @@ window.LAESERTAL = {
      2,
      2,
      2,
+     0,
      0
     ]
    },
@@ -267,7 +267,6 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0,
      2,
      0,
      1,
@@ -276,9 +275,10 @@ window.LAESERTAL = {
      0,
      1,
      1,
-     2,
+     1,
      0,
-     1
+     0,
+     0
     ]
    },
    {
@@ -301,7 +301,6 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0,
      1,
      0,
      0,
@@ -312,6 +311,7 @@ window.LAESERTAL = {
      0,
      0,
      1,
+     0,
      0,
      0
     ]
@@ -477,11 +477,6 @@ window.LAESERTAL = {
  ],
  "serie": [
   {
-   "dato": "2026-09-11",
-   "besoeg": 20,
-   "visninger": 50
-  },
-  {
    "dato": "2026-09-12",
    "besoeg": 30,
    "visninger": 100
@@ -623,6 +618,11 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-10",
+   "besoeg": 0,
+   "visninger": 0
+  },
+  {
+   "dato": "2026-10-11",
    "besoeg": 0,
    "visninger": 0
   }
