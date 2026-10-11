@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-11T06:34:38.026118+00:00",
+ "genereret": "2026-10-11T15:26:34.054875+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-11T06:19:03.087803+00:00",
+  "opdateret": "2026-10-11T15:02:54.310835+00:00",
   "antal": 141,
-  "med_billede": 71,
+  "med_billede": 75,
   "paa_dansk": 141,
   "kategorier": {
    "Samfund \u0026 etik": 24,
-   "Politik \u0026 jura": 14,
    "Forskning": 15,
    "Lanceringer": 38,
-   "Penge \u0026 marked": 28,
+   "Penge \u0026 marked": 27,
    "Hverdags-AI": 20,
-   "Dybde": 1,
-   "Nyheder": 1
+   "Politik \u0026 jura": 13,
+   "Nyheder": 3,
+   "Dybde": 1
   },
   "kilder": {
    "TechCrunch AI": 48,
+   "The Verge AI": 32,
    "Ars Technica AI": 11,
    "Anthropic News": 13,
-   "The Verge AI": 31,
    "Google DeepMind": 3,
    "Simon Willison AI": 11,
    "MIT Tech Review AI": 8,
-   "Mistral AI": 4,
+   "Mistral AI": 3,
    "Google Gemini": 6,
    "xAI News": 5,
    "Hugging Face": 1
@@ -256,13 +256,23 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
-    "titel": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
-    "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
-    "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-    "side": "artikel/a132e85074c45aec.html",
-    "kategori": "Politik \u0026 jura",
+    "titel": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+    "rubrik": "PolyAI og Otter: Stemme-AI mangler sit ChatGPT-moment",
+    "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+    "side": "artikel/1b97ced39af63380.html",
+    "kategori": "Nyheder",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-10T21:47:51+00:00",
+    "dato": "2026-10-11T14:00:00+00:00",
+    "billede": "data/img/60e09016bc4a9fb2.jpg"
+   },
+   {
+    "titel": "Satya Nadella says we should assume all AI models are ‘compromised’",
+    "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+    "side": "artikel/05298e9bf6406faf.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-10T18:10:17-04:00",
     "billede": "data/img/3bf67d2ff1d3ee3e.jpg"
    },
    {
@@ -364,26 +374,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-09T15:43:33+00:00",
     "billede": "data/img/099fd941b2964be0.webp"
-   },
-   {
-    "titel": "Danu Robotics’ fight to build a better recycling robot",
-    "rubrik": "Danu Robotics' sorteringsrobot er nu salgsklar",
-    "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
-    "side": "artikel/50fcb2172953f7fa.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-09T16:45:00+00:00",
-    "billede": "data/img/418c7a186cc2255e.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-11T06:19:03.087803+00:00",
+  "opdateret": "2026-10-11T15:02:54.310835+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
-  "kildehentninger": 3,
+  "modelkald": 5,
+  "kildehentninger": 5,
   "regelbaseret_udvalg": [
    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
@@ -412,15 +412,23 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
     "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -438,17 +446,25 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
+    "link": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
     "grundlag": "kildetekst"
    },
    {
     "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
     "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+    "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-11T06:19:02.547274+00:00",
+  "opdateret": "2026-10-11T15:02:53.646372+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -804,7 +820,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-11T06:19:03.087803+00:00",
+  "opdateret": "2026-10-11T15:02:54.310835+00:00",
   "artikler_i_alt": 141,
   "kilder": [
    {
@@ -940,7 +956,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 4,
+    "i_listen": 3,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -967,15 +983,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-09-16T12:48:27",
       "link": "https://mistral.ai/news/mistral-x-mozilla/",
       "side": "artikel/c410e90a2cd9982e.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Cloudera kører Mistral-modeller i kundens eget miljø",
-      "dato": "2026-09-10T10:42:55",
-      "foerst_set": "2026-09-11T14:38:09",
-      "link": "https://mistral.ai/news/mistral-x-cloudera/",
-      "side": "artikel/fd217b5fad9dd53a.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1295,8 +1302,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 48,
-    "som_ekstra": 5,
+    "som_ekstra": 6,
     "seneste": [
+     {
+      "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
+      "dato": "",
+      "foerst_set": "2026-10-10T23:47:18",
+      "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "side": "",
+      "hvor": "under",
+      "under": "Satya Nadella kræver nødbremse til alle AI-modeller"
+     },
      {
       "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
       "dato": "",
@@ -1361,11 +1377,11 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
-      "dato": "2026-10-10T21:47:51",
-      "foerst_set": "2026-10-10T23:47:18",
-      "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-      "side": "artikel/a132e85074c45aec.html",
+      "rubrik": "PolyAI og Otter: Stemme-AI mangler sit ChatGPT-moment",
+      "dato": "2026-10-11T14:00:00",
+      "foerst_set": "2026-10-11T15:02:54",
+      "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "side": "artikel/1b97ced39af63380.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1395,15 +1411,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/3fc0fe8ac680d444.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Olivia Moore: dating og sundhed mangler AI-apps",
-      "dato": "2026-10-09T15:43:33",
-      "foerst_set": "2026-10-09T21:10:26",
-      "link": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
-      "side": "artikel/80b34c260cbbb646.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1417,18 +1424,9 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 31,
-    "som_ekstra": 16,
+    "i_listen": 32,
+    "som_ekstra": 15,
     "seneste": [
-     {
-      "rubrik": "Satya Nadella vil indføre nødbremse på AI-modeller",
-      "dato": "",
-      "foerst_set": "2026-10-10T23:47:18",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-      "side": "",
-      "hvor": "under",
-      "under": "Satya Nadella kræver nødbremse til AI-modeller"
-     },
      {
       "rubrik": "Anthropic spærrer AI-agenter fra nettet under test",
       "dato": "",
@@ -1527,6 +1525,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI sender annoncer ind blandt billedsvar"
+     },
+     {
+      "rubrik": "RemoveMacAI sletter 12 GB Apple AI-data",
+      "dato": "",
+      "foerst_set": "2026-10-05T17:20:56",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+      "side": "",
+      "hvor": "under",
+      "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
      }
     ]
    },
@@ -1544,7 +1551,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 4,
     "seneste": [
      {
-      "rubrik": "Mistral udgiver Le Chonk som rival til topmodeller",
+      "rubrik": "Mistral udgiver åben AI-model der udfordrer de bedste",
       "dato": "",
       "foerst_set": "2026-10-07T15:44:28",
       "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
@@ -1854,12 +1861,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-11T06:34:32.625139+00:00",
+  "opdateret": "2026-10-11T15:26:24.985912+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 32,
-  "sidevisninger_i_alt": 45,
+  "besoeg_i_alt": 0,
+  "sidevisninger_i_alt": 10,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2016,128 +2023,12 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 25,
-    "visninger": 35
-   },
-   {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/om.html",
-    "besoeg": 1,
-    "visninger": 2
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/cookies.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/faq.html",
     "besoeg": 0,
-    "visninger": 1
-   },
-   {
-    "sti": "/vaerktoejer.html",
-    "besoeg": 0,
-    "visninger": 1
+    "visninger": 10
    }
   ],
-  "artikler": [
-   {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
-    "kategori": "Samfund \u0026 etik",
-    "dato": "2026-08-18"
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Nscale børsnotering hviler på kun to kunder",
-    "kategori": "Penge \u0026 marked",
-    "dato": "2026-09-22"
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
-    "kategori": "Forskning",
-    "dato": "2026-09-09"
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "OpenAI bygger super-hacker til at finde svagheder",
-    "kategori": "Lanceringer",
-    "dato": "2026-07-15"
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-    "kategori": "Politik \u0026 jura",
-    "dato": "2026-09-02"
-   }
-  ],
-  "henvisere": [
-   {
-    "fra": "direkte",
-    "besoeg": 31
-   },
-   {
-    "fra": "www.google.com",
-    "besoeg": 1
-   }
-  ],
-  "laeste_temaer": [
-   {
-    "navn": "Samfund \u0026 etik",
-    "visninger": 1
-   },
-   {
-    "navn": "Penge \u0026 marked",
-    "visninger": 1
-   },
-   {
-    "navn": "Forskning",
-    "visninger": 1
-   },
-   {
-    "navn": "Lanceringer",
-    "visninger": 1
-   },
-   {
-    "navn": "Politik \u0026 jura",
-    "visninger": 1
-   }
-  ]
+  "artikler": [],
+  "henvisere": [],
+  "laeste_temaer": []
  }
 };

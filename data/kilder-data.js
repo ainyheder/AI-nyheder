@@ -1,5 +1,5 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-11T06:19:03.087803+00:00",
+ "opdateret": "2026-10-11T15:02:54.310835+00:00",
  "artikler_i_alt": 141,
  "kilder": [
   {
@@ -153,7 +153,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -180,15 +180,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-16T12:48:27",
      "link": "https://mistral.ai/news/mistral-x-mozilla/",
      "side": "artikel/c410e90a2cd9982e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cloudera kører Mistral-modeller i kundens eget miljø",
-     "dato": "2026-09-10T10:42:55",
-     "foerst_set": "2026-09-11T14:38:09",
-     "link": "https://mistral.ai/news/mistral-x-cloudera/",
-     "side": "artikel/fd217b5fad9dd53a.html",
      "hvor": "forside",
      "under": ""
     }
@@ -580,8 +571,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 48,
-   "som_ekstra": 5,
+   "som_ekstra": 6,
    "seneste": [
+    {
+     "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
+     "dato": "",
+     "foerst_set": "2026-10-10T23:47:18",
+     "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+     "side": "",
+     "hvor": "under",
+     "under": "Satya Nadella kræver nødbremse til alle AI-modeller"
+    },
     {
      "rubrik": "Anthropic opdagede falsk drabstip til politi efter to måneder",
      "dato": "",
@@ -646,11 +646,11 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
-     "rubrik": "Satya Nadella kræver nødbremse til AI-modeller",
-     "dato": "2026-10-10T21:47:51",
-     "foerst_set": "2026-10-10T23:47:18",
-     "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-     "side": "artikel/a132e85074c45aec.html",
+     "rubrik": "PolyAI og Otter: Stemme-AI mangler sit ChatGPT-moment",
+     "dato": "2026-10-11T14:00:00",
+     "foerst_set": "2026-10-11T15:02:54",
+     "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+     "side": "artikel/1b97ced39af63380.html",
      "hvor": "forside",
      "under": ""
     },
@@ -779,18 +779,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 31,
-   "som_ekstra": 16,
+   "i_listen": 32,
+   "som_ekstra": 15,
    "seneste": [
-    {
-     "rubrik": "Satya Nadella vil indføre nødbremse på AI-modeller",
-     "dato": "",
-     "foerst_set": "2026-10-10T23:47:18",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-     "side": "",
-     "hvor": "under",
-     "under": "Satya Nadella kræver nødbremse til AI-modeller"
-    },
     {
      "rubrik": "Anthropic spærrer AI-agenter fra nettet under test",
      "dato": "",
@@ -891,6 +882,24 @@ window.KILDER_STATUS = {
      "under": "OpenAI sender annoncer ind blandt billedsvar"
     },
     {
+     "rubrik": "RemoveMacAI sletter 12 GB Apple AI-data",
+     "dato": "",
+     "foerst_set": "2026-10-05T17:20:56",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+     "side": "",
+     "hvor": "under",
+     "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
+    },
+    {
+     "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
+     "dato": "2026-10-10T18:10:17",
+     "foerst_set": "2026-10-10T23:47:18",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+     "side": "artikel/05298e9bf6406faf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
      "dato": "2026-10-10T14:52:07",
      "foerst_set": "2026-10-10T20:17:37",
@@ -988,15 +997,6 @@ window.KILDER_STATUS = {
      "side": "artikel/dd63e1acf981a5e7.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "ICANN får 1.615 ansøgninger om AI-domæneendelser",
-     "dato": "2026-10-07T18:46:16",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://www.theverge.com/tech/1007132/icann-domains-2026-ai-agi",
-     "side": "artikel/975282e2b7fc4c08.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1040,7 +1040,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 4,
    "seneste": [
     {
-     "rubrik": "Mistral udgiver Le Chonk som rival til topmodeller",
+     "rubrik": "Mistral udgiver åben AI-model der udfordrer de bedste",
      "dato": "",
      "foerst_set": "2026-10-07T15:44:28",
      "link": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
