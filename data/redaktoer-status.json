@@ -1,22 +1,16 @@
 {
-  "opdateret": "2026-10-11T23:54:07.147957+00:00",
+  "opdateret": "2026-10-12T06:25:21.150054+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
+    "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
   ],
-  "input_fingerprint": "b9ffc9524faffabe",
+  "input_fingerprint": "435f3a0f18feba7f",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Artikkel 1's rubrik 'Anthropic lukker nettet for AI-agenter' udelader, at det kun drejer sig om interne evalueringer; brødtekst og resumé præciserer det, men rubrikken er bredere end kilderne.",
-    "Artikkel 2's mellemoverskrift 'Fire forslag med bred branchestøtte' overdriver The Verges formulering ('align with what we've heard from others'), og 'går længere end flere andre' svarer til kildens 'slightly farther'.",
-    "Artikkel 2 bygger på én kilde (The Verge); Nadellas eget X-opslag findes ikke blandt de læste kilder, selv om kandidatoversigten angiver et andet kilde-id.",
-    "Anbefalingen om Trumps omdøbning citerer det samme Nadella-opslag som hovedhistorie 2, men har omdøbningen som selvstændig begivenhed – ikke en dublet."
-  ],
-  "modelkald": 7,
+  "modelkald": 5,
   "kildehentninger": 4,
   "vaerktoejer": [
     {
@@ -32,6 +26,26 @@
       "fejl": null
     },
     {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -46,30 +60,6 @@
     {
       "vaerktoej": "laes_kilde",
       "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -82,7 +72,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
       "grundlag": "kildetekst"
     },
     {
@@ -90,14 +80,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
+    "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
   ],
-  "afventer_artikler": 51
+  "afventer_artikler": 48
 }

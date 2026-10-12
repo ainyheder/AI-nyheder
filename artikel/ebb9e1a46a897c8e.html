@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Ai2 deler GPU-tid ud som budgetter</title>
+<meta name="description" content="Forskningsprojekter får en fast procent af clusterens tid i stedet for at kæmpe om prioriteringsniveauer.">
+<link rel="canonical" href="https://ainyheder.com/artikel/ebb9e1a46a897c8e.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Ai2 deler GPU-tid ud som budgetter">
+<meta property="og:description" content="Forskningsprojekter får en fast procent af clusterens tid i stedet for at kæmpe om prioriteringsniveauer.">
+<meta property="og:url" content="https://ainyheder.com/artikel/ebb9e1a46a897c8e.html">
+<meta property="og:image" content="https://ainyheder.com/data/img/3051385068ee1340.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Ai2 deler GPU-tid ud som budgetter", "description": "Forskningsprojekter får en fast procent af clusterens tid i stedet for at kæmpe om prioriteringsniveauer.", "url": "https://ainyheder.com/artikel/ebb9e1a46a897c8e.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/ebb9e1a46a897c8e.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/3051385068ee1340.jpg", "datePublished": "2026-10-09T15:20:29+00:00", "articleSection": "Forskning", "isBasedOn": "https://huggingface.co/blog/allenai/impactful-scheduling"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Forskning · Hugging Face · 09.10.2026 · 2 min. læsning</div>
+<h1>Ai2 deler GPU-tid ud som budgetter</h1>
+<div class="article-intro"><img class="top" src="/data/img/3051385068ee1340.webp" alt="A cluster of solid GPU server blades sharing one segmented pie-chart ring, where each wedge is a fixed percentage share of GPU time, with one wedge marked 35 percent, showing proje"><p class="manchet">Forskningsprojekter får en fast procent af clusterens tid i stedet for at kæmpe om prioriteringsniveauer.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Hver ledige GPU-time har 2-3 krav</h2>
+<p>På Ai2 står tusindvis af NVIDIA H100, B200 og B300 GPU&#x27;er i klynger på mellem 88 og 1024 GPU&#x27;er, drevet af AI-infrastrukturteamet til store, distribuerede træningsopgaver. Omkring 150 interne forskere deler kapaciteten.</p><p>Efterspørgslen overhaler udbuddet med en faktor 2-3. <strong>Hver eneste ledige GPU-time har 2-3 forskningsopgaver, som kæmper om den.</strong></p><p>Teamet styrer sig selv efter fire mål i pynten: tilgængelighed (sund hardware), beskæftigelse (tildelt tid), impact (de mest værdifulde opgaver vælges) og udnyttelse (brugt GPU-kapacitet over arbejdsløbet). Artiklen handler om det tredje.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Alle opgaver endte som højeste prioritet</h2>
+<p>Den gamle planlægger arbejdede med prioriteringsniveauer, og opgaver kunne fravælge at blive afbrudt. Forskere parkerede inaktive GPU-opgaver, som de kunne koble på senere, fordi de ikke kunne starte fejlfindingskørsler hurtigt nok.</p><p>Samtidig endte 100 % af de planlagte opgaver med at køre på niveauet HIGH. Lavere niveauer fik slet ingen GPU-tid, og vagtteamet brugte størstedelen af billettiden på at forhandle lukning af ikke-afbrudelige opgaver.</p><p>Ai2 kalder mønsteret » tragediens fælleseng «: den enkelte maksimerer sit eget udbytte af en knap fælles ressource, og resultatet bliver dårligt for alle.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Chefer fordelte tid før opgaverne fandtes</h2>
+<p>Prædiktion af efterspørgsel kræver kendskab til resultatet af nye videnskabelige eksperimenter og kan ikke forudsiges præcist. Prioritet er derimod en strategisk beslutning, som kan debatteres på forhånd.</p><p>Teamet skiftede derfor fra at tildele GPU-ejerskab til at tildele en andel af <strong>GPU-tiden</strong>. Chefer fordeler procentvise andele ned gennem hierarkiet, før arbejdsopgaverne overhovedet findes.</p><p>Et projekt med 35 % andel har krav på 35 % af samlet kapacitet, uanset hvor mange andre projekter der står i kø andre steder.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">04</span>Gamle ressourceproblemer overlever nye maskiner</h2>
+<p>Fordeling af fælles ressourcer er et gammelt forskningsfelt. I Dominant Resource Fairness fra 2011 fortæller Ghodsi og kolleger om et søgefirma, der kun gav dedikerede maskiner til job med garanteret høj udnyttelse – og opdagede, at brugerne skrev uendelige løkker i koden for at puste tallet op.</p><p>Hardwaren skifter, men de grundlæggende incitamenter består. Ai2&#x27;s svar er at gøre ejerskabet finere: tildel tid i stedet for maskiner, og lad planlæggeren bruge budgettet, når opgaverne kommer.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Klyngerne hos Ai2 spænder fra 88 til 1024 GPU&#x27;er.</li><li>Arbejdsområder omfatter LLM- og VLM-træning, robot-RL-simulation og eftertræning.</li><li>Ai2 har også indført en tidsdelingskontrakt (time-slicing) i det nye system.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Debatten om, hvor meget GPU-tid et projekt fortjener, flyttes fra sag-til-sag-drift til en gennemsigtig budgetproces.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/allenai/impactful-scheduling" rel="noopener">Hugging Face →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>
