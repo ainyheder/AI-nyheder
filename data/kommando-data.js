@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-12T06:43:54.427131+00:00",
+ "genereret": "2026-10-12T18:34:32.853228+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,22 +195,23 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-12T06:25:21.150054+00:00",
-  "antal": 134,
-  "med_billede": 71,
-  "paa_dansk": 134,
+  "opdateret": "2026-10-12T18:09:49.054408+00:00",
+  "antal": 141,
+  "med_billede": 76,
+  "paa_dansk": 141,
   "kategorier": {
-   "Politik \u0026 jura": 13,
+   "Nyheder": 4,
    "Forskning": 16,
+   "Politik \u0026 jura": 13,
    "Samfund \u0026 etik": 24,
-   "Lanceringer": 36,
-   "Hverdags-AI": 19,
-   "Penge \u0026 marked": 26
+   "Hverdags-AI": 20,
+   "Lanceringer": 37,
+   "Penge \u0026 marked": 27
   },
   "kilder": {
-   "The Verge AI": 29,
+   "TechCrunch AI": 52,
+   "The Verge AI": 30,
    "Ars Technica AI": 11,
-   "TechCrunch AI": 46,
    "Anthropic News": 13,
    "Simon Willison AI": 10,
    "Google DeepMind": 1,
@@ -222,6 +223,16 @@ window.KOMMANDO_DATA = {
   },
   "udvalgte": [
    {
+    "titel": "Meta releases its first frontier model, Muse Wonder",
+    "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "side": "artikel/15f0749a6da14105.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T17:56:56+00:00",
+    "billede": "data/img/7d63c3821d627542.jpg"
+   },
+   {
     "titel": "Satya Nadella says we should assume all AI models are ‘compromised’",
     "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
@@ -230,16 +241,6 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-10T18:10:17-04:00",
     "billede": "data/img/3bf67d2ff1d3ee3e.jpg"
-   },
-   {
-    "titel": "Here are the top AI agents that can live in your text messages",
-    "rubrik": "Instinct når 10 milliarder dollars i værdi",
-    "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-    "side": "artikel/d8d2c1c3d579359d.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-10T14:00:00+00:00",
-    "billede": "data/img/c47ea4471e25e7ca.jpg"
    },
    {
     "titel": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
@@ -253,6 +254,66 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Meta releases its first frontier model, Muse Wonder",
+    "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "side": "artikel/15f0749a6da14105.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T17:56:56+00:00",
+    "billede": "data/img/7d63c3821d627542.jpg"
+   },
+   {
+    "titel": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+    "rubrik": "Microsoft Maia 300 giver syvdoblet rack-gennemstrømning",
+    "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "side": "artikel/d4b50bc6b2e0a17a.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-12T09:00:00-04:00",
+    "billede": "data/img/fe271d7575aa5d0a.webp"
+   },
+   {
+    "titel": "This AI startup says it can generate permit-ready blueprints in minutes",
+    "rubrik": "Blueprints AI laver byggetilladelsesklare tegninger fra skitse",
+    "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+    "side": "artikel/b32e4e4429644b2a.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T15:27:59+00:00",
+    "billede": "data/img/8c98f3f5c24ca8eb.webp"
+   },
+   {
+    "titel": "WindBorne wins a hefty US Air Force contract for its balloon data",
+    "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
+    "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+    "side": "artikel/7b6bf13f385b34a2.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T17:19:14+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+    "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
+    "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+    "side": "artikel/d9350c73bbc30fd0.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T14:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+    "rubrik": "Ambi rejser 26 mio. dollar til baggrundslytning",
+    "link": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+    "side": "artikel/f1588e6ffbfd9c42.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T12:47:59+00:00",
+    "billede": "data/img/6709414cc0463b16.webp"
+   },
    {
     "titel": "Will the HomeView be Apple’s first smart home success?",
     "rubrik": "Apple HomeView kan blive smart home-gennembrud",
@@ -312,84 +373,24 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-10T19:50:00+00:00",
     "billede": ""
-   },
-   {
-    "titel": "Here are the top AI agents that can live in your text messages",
-    "rubrik": "Instinct når 10 milliarder dollars i værdi",
-    "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-    "side": "artikel/d8d2c1c3d579359d.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-10T14:00:00+00:00",
-    "billede": "data/img/c47ea4471e25e7ca.jpg"
-   },
-   {
-    "titel": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-    "rubrik": "Anthropic spærrer nettet for egne AI-agenter",
-    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "side": "artikel/3fc0fe8ac680d444.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-10T00:18:32+00:00",
-    "billede": "data/img/b2f12cba29391b1a.jpg"
-   },
-   {
-    "titel": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
-    "rubrik": "Claude Haiku 4.5 opdigtede tip til uopklaret mord",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-    "side": "artikel/5b834ed3369b1b39.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-09T17:15:38-04:00",
-    "billede": "data/img/1f4c98074894ca91.webp"
-   },
-   {
-    "titel": "Quoting The New York Times",
-    "rubrik": "Anthropic-agenter indsendte 20 visaansøgninger",
-    "link": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
-    "side": "artikel/8f95f5a15e2719dc.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-10T02:04:12+00:00",
-    "billede": "data/img/5b620878277aaeba.webp"
-   },
-   {
-    "titel": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-    "rubrik": "Ukraines droner rammer Yandex' AI-datacentre",
-    "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-    "side": "artikel/a1c18d2e2d1730e1.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-09T22:04:07+00:00",
-    "billede": "data/img/10c173919a4d35c0.jpg"
-   },
-   {
-    "titel": "AI coding agents generate more code, but not more software",
-    "rubrik": "AI-codingsagenter skriver mere kode, ikke mere software",
-    "link": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "side": "artikel/cc82babf92365087.html",
-    "kategori": "Forskning",
-    "kilde": "Ars Technica AI",
-    "dato": "2026-10-09T19:43:50+00:00",
-    "billede": "data/img/4155f1be4f290b08.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-12T06:25:21.150054+00:00",
+  "opdateret": "2026-10-12T18:09:49.054408+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 4,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
+  "modelkald": 7,
+  "kildehentninger": 3,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-   "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-   "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+   "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+   "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+   "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
   ],
   "udgivet_udvalg": [
+   "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
    "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-   "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
    "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
   ],
   "vaerktoejer": [
@@ -418,6 +419,18 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
     "vaerktoej": "find_kilder",
     "fejl": null
    },
@@ -426,47 +439,39 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": null
+    "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 1018 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 926 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+    "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-12T06:25:20.755563+00:00",
+  "opdateret": "2026-10-12T18:09:48.777940+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -822,8 +827,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-12T06:25:21.150054+00:00",
-  "artikler_i_alt": 134,
+  "opdateret": "2026-10-12T18:09:49.054408+00:00",
+  "artikler_i_alt": 141,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1285,7 +1290,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 46,
+    "i_listen": 52,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1361,38 +1366,38 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Apple HomeView kan blive smart home-gennembrud",
-      "dato": "2026-10-11T21:14:40",
-      "foerst_set": "2026-10-11T23:54:07",
-      "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-      "side": "artikel/268296192501d0e8.html",
+      "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
+      "dato": "2026-10-12T17:56:56",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "side": "artikel/15f0749a6da14105.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "PolyAI og Otter: Stemme-AI mangler sit ChatGPT-moment",
-      "dato": "2026-10-11T14:00:00",
-      "foerst_set": "2026-10-11T15:02:54",
-      "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-      "side": "artikel/1b97ced39af63380.html",
+      "rubrik": "Blueprints AI laver byggetilladelsesklare tegninger fra skitse",
+      "dato": "2026-10-12T15:27:59",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+      "side": "artikel/b32e4e4429644b2a.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Apple hyrer Huxe-team og licenserer deres AI",
-      "dato": "2026-10-10T19:50:00",
-      "foerst_set": "2026-10-10T20:17:37",
-      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-      "side": "artikel/719244ff4837f34b.html",
+      "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
+      "dato": "2026-10-12T17:19:14",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+      "side": "artikel/7b6bf13f385b34a2.html",
       "hvor": "forside",
       "under": ""
      },
      {
-      "rubrik": "Instinct når 10 milliarder dollars i værdi",
-      "dato": "2026-10-10T14:00:00",
-      "foerst_set": "2026-10-10T14:39:43",
-      "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "side": "artikel/d8d2c1c3d579359d.html",
+      "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
+      "dato": "2026-10-12T14:00:00",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+      "side": "artikel/d9350c73bbc30fd0.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1408,9 +1413,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 29,
-    "som_ekstra": 13,
+    "i_listen": 30,
+    "som_ekstra": 14,
     "seneste": [
+     {
+      "rubrik": "Silicon Valley omdøber AI til super intelligence",
+      "dato": "",
+      "foerst_set": "2026-10-11T23:54:07.147957+00:00",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "side": "",
+      "hvor": "under",
+      "under": "Trump forbyder betegnelsen AI og kræver super intelligence"
+     },
      {
       "rubrik": "Anthropic spærrer AI-agenter fra nettet under test",
       "dato": "",
@@ -1446,6 +1460,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Anthropic samler forbud mod falske kampagner"
+     },
+     {
+      "rubrik": "Google lancerer Gemini-agent på tværs af apps",
+      "dato": "",
+      "foerst_set": "2026-10-08T15:50:15",
+      "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+      "side": "",
+      "hvor": "under",
+      "under": "Google giver Gemini egen e-mailadresse på jobbet"
      },
      {
       "rubrik": "Microsofts Surface RTX Spark kan nu forudbestilles",
@@ -1500,24 +1523,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI sender annoncer ind blandt billedsvar"
-     },
-     {
-      "rubrik": "RemoveMacAI sletter 12 GB Apple AI-data",
-      "dato": "",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
-      "side": "",
-      "hvor": "under",
-      "under": "RemoveMacAI fjerner Apple Intelligence fra macOS 27"
-     },
-     {
-      "rubrik": "Google lancerer Guided Vision i Gemini Live",
-      "dato": "",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini Live beskriver verden for blinde"
      }
     ]
    },
@@ -1818,11 +1823,11 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-12T06:43:44.897936+00:00",
+  "opdateret": "2026-10-12T18:34:27.527775+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 32,
+  "besoeg_i_alt": 31,
   "sidevisninger_i_alt": 45,
   "ai_chat_besoeg": 0,
   "serie": [
@@ -1980,7 +1985,7 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 25,
+    "besoeg": 24,
     "visninger": 35
    },
    {
@@ -2074,7 +2079,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 31
+    "besoeg": 30
    },
    {
     "fra": "www.google.com",
