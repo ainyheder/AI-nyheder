@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-11T20:31:16.265435+00:00",
+  "opdateret": "2026-10-11T23:54:07.147957+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,9 +8,15 @@
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
     "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
-  "input_fingerprint": "9cbcbe856b9f5f1f",
+  "input_fingerprint": "b9ffc9524faffabe",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
+  "kontrolproblemer": [
+    "Artikkel 1's rubrik 'Anthropic lukker nettet for AI-agenter' udelader, at det kun drejer sig om interne evalueringer; brødtekst og resumé præciserer det, men rubrikken er bredere end kilderne.",
+    "Artikkel 2's mellemoverskrift 'Fire forslag med bred branchestøtte' overdriver The Verges formulering ('align with what we've heard from others'), og 'går længere end flere andre' svarer til kildens 'slightly farther'.",
+    "Artikkel 2 bygger på én kilde (The Verge); Nadellas eget X-opslag findes ikke blandt de læste kilder, selv om kandidatoversigten angiver et andet kilde-id.",
+    "Anbefalingen om Trumps omdøbning citerer det samme Nadella-opslag som hovedhistorie 2, men har omdøbningen som selvstændig begivenhed – ikke en dublet."
+  ],
+  "modelkald": 7,
   "kildehentninger": 4,
   "vaerktoejer": [
     {
@@ -26,24 +32,44 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -60,7 +86,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
       "grundlag": "kildetekst"
     },
     {
@@ -73,5 +99,5 @@
     "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
     "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots"
   ],
-  "afventer_artikler": 48
+  "afventer_artikler": 51
 }
