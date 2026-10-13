@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-13T02:37:26.017301+00:00",
+ "genereret": "2026-10-13T12:40:19.908245+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,27 +195,28 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-13T02:13:00.436755+00:00",
-  "antal": 123,
+  "opdateret": "2026-10-13T12:05:45.412805+00:00",
+  "antal": 119,
   "med_billede": 74,
-  "paa_dansk": 123,
+  "paa_dansk": 119,
   "kategorier": {
-   "Lanceringer": 38,
-   "Penge \u0026 marked": 27,
-   "Politik \u0026 jura": 10,
-   "Forskning": 14,
-   "Samfund \u0026 etik": 18,
-   "Hverdags-AI": 16
+   "Lanceringer": 35,
+   "Politik \u0026 jura": 11,
+   "Penge \u0026 marked": 26,
+   "Samfund \u0026 etik": 19,
+   "Forskning": 12,
+   "Hverdags-AI": 15,
+   "Dybde": 1
   },
   "kilder": {
    "TechCrunch AI": 42,
-   "The Verge AI": 23,
-   "Ars Technica AI": 9,
+   "The Verge AI": 22,
+   "Ars Technica AI": 12,
    "Simon Willison AI": 10,
+   "MIT Tech Review AI": 5,
    "Anthropic News": 13,
+   "xAI News": 1,
    "Google DeepMind": 3,
-   "MIT Tech Review AI": 6,
-   "xAI News": 6,
    "Mistral AI": 3,
    "Google Gemini": 6,
    "Hugging Face": 2
@@ -249,10 +250,30 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Simon Willison AI",
     "dato": "2026-10-12T15:54:36+00:00",
-    "billede": ""
+    "billede": "data/img/825218e93af2c9df.jpg"
    }
   ],
   "seneste": [
+   {
+    "titel": "AI labs are buying data from dead startups to train their models",
+    "rubrik": "SimpleClosure sælger døde startups' data til AI",
+    "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+    "side": "artikel/4cdfa2663efa70d1.html",
+    "kategori": "Dybde",
+    "kilde": "MIT Tech Review AI",
+    "dato": "2026-10-13T09:00:00+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+    "rubrik": "Claude indsendte falsk mordtip til politiet",
+    "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+    "side": "artikel/791f9de3f5f5dec8.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-12T18:21:36+00:00",
+    "billede": "data/img/1f4c98074894ca91.webp"
+   },
    {
     "titel": "web-edit 0.1a0",
     "rubrik": "Simon Willison redigerer filer fra telefonen",
@@ -261,7 +282,17 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "Simon Willison AI",
     "dato": "2026-10-12T15:54:36+00:00",
-    "billede": ""
+    "billede": "data/img/825218e93af2c9df.jpg"
+   },
+   {
+    "titel": "Epic Games reportedly pivoting to \"AI first\" game development model",
+    "rubrik": "Epic Games lader AI skrive al kode",
+    "link": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+    "side": "artikel/3ba8d5b9b01b1ab3.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-12T20:59:50+00:00",
+    "billede": "data/img/ae7011713ed5ee63.webp"
    },
    {
     "titel": "Introducing The X Subscription",
@@ -324,6 +355,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/fbdccf42277b31bb.webp"
    },
    {
+    "titel": "Amazon has over 1 million robot workers. What’s next for human employees?",
+    "rubrik": "Amazon vil fordoble sine robotarme i år",
+    "link": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+    "side": "artikel/a75e3873befdc7fe.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "Ars Technica AI",
+    "dato": "2026-10-12T12:43:10+00:00",
+    "billede": ""
+   },
+   {
     "titel": "Former Plaud exec raises $26M for AI app that listens to you in the background",
     "rubrik": "Ambi rejser 26 mio. dollar til baggrundslytning",
     "link": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
@@ -332,56 +373,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-12T12:47:59+00:00",
     "billede": "data/img/6709414cc0463b16.webp"
-   },
-   {
-    "titel": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
-    "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
-    "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
-    "side": "artikel/d9350c73bbc30fd0.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-12T14:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "Will the HomeView be Apple’s first smart home success?",
-    "rubrik": "Apple HomeView kan blive smart home-gennembrud",
-    "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
-    "side": "artikel/268296192501d0e8.html",
-    "kategori": "Lanceringer",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-11T21:14:40+00:00",
-    "billede": "data/img/7f4cc045e7e3d8b6.jpg"
-   },
-   {
-    "titel": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-    "rubrik": "PolyAI og Otter: Stemme-AI mangler sit ChatGPT-moment",
-    "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-    "side": "artikel/1b97ced39af63380.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-11T14:00:00+00:00",
-    "billede": "data/img/60e09016bc4a9fb2.jpg"
-   },
-   {
-    "titel": "Learning to use local AI is exciting, overwhelming, and frustrating",
-    "rubrik": "Di Benedetto kører lokal AI på Mac Studio",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-    "side": "artikel/90bfa0449fc870c1.html",
-    "kategori": "Hverdags-AI",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-11T07:00:00-04:00",
-    "billede": "data/img/35eca1289f620049.jpg"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-13T02:13:00.436755+00:00",
+  "opdateret": "2026-10-13T12:05:45.412805+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 4,
+  "modelkald": 4,
+  "kildehentninger": 5,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
    "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
@@ -394,27 +395,7 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -431,6 +412,10 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
@@ -448,11 +433,15 @@ window.KOMMANDO_DATA = {
   ],
   "kildegrundlag": [
    {
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
     "grundlag": "kildetekst"
    },
    {
@@ -460,13 +449,13 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+    "link": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-13T02:12:59.866478+00:00",
+  "opdateret": "2026-10-13T12:05:44.716078+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -822,8 +811,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-13T02:13:00.436755+00:00",
-  "artikler_i_alt": 123,
+  "opdateret": "2026-10-13T12:05:45.412805+00:00",
+  "artikler_i_alt": 119,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1093,10 +1082,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "ok",
-    "fejl": "",
-    "hentet": 15,
-    "i_listen": 6,
+    "status": "fejl",
+    "fejl": "HTTPError: HTTP Error 403: Forbidden",
+    "hentet": 0,
+    "i_listen": 1,
     "som_ekstra": 0,
     "seneste": [
      {
@@ -1105,51 +1094,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-13T02:13:00",
       "link": "https://x.ai/news/x-subscription",
       "side": "artikel/e2fefe67055501a3.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok Team Bots deler viden på tværs",
-      "dato": "2026-09-28T00:00:00",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://x.ai/news/team-bots",
-      "side": "artikel/e1809a640e69e7c2.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok Bot afværgede 200 nye ansættelser",
-      "dato": "2026-09-22T00:00:00",
-      "foerst_set": "2026-09-22T19:51:24",
-      "link": "https://x.ai/news/grok-bot-customer-support",
-      "side": "artikel/656c12515b26321d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok 4.7 tjekker sit eget arbejde",
-      "dato": "2026-09-21T00:00:00",
-      "foerst_set": "2026-09-21T17:10:47",
-      "link": "https://x.ai/news/grok-4-7",
-      "side": "artikel/445ea2dff549947f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
-      "dato": "2026-09-18T00:00:00",
-      "foerst_set": "2026-09-18T19:56:02",
-      "link": "https://x.ai/news/grok-voice-transcribe-2",
-      "side": "artikel/2125ef3b6ef2360a.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Grok Build husker nu på tværs af sessioner",
-      "dato": "2026-09-16T00:00:00",
-      "foerst_set": "2026-09-16T21:39:37",
-      "link": "https://x.ai/news/grok-build-memory",
-      "side": "artikel/fd1347c92d831b8e.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1340,7 +1284,7 @@ window.KOMMANDO_DATA = {
       "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
       "side": "",
       "hvor": "under",
-      "under": "Claude Haiku 4.5 opdigtede tip til uopklaret mord"
+      "under": "Claude indsendte falsk mordtip til politiet"
      },
      {
       "rubrik": "TechCrunch Disrupt 2026 åbner om fire dage",
@@ -1444,9 +1388,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 23,
-    "som_ekstra": 12,
+    "i_listen": 22,
+    "som_ekstra": 14,
     "seneste": [
+     {
+      "rubrik": "Meta lancerer to AI-modeller mod GPT-6 og Claude",
+      "dato": "",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "side": "",
+      "hvor": "under",
+      "under": "Meta lancerer to frontier-modeller, Muse Wonder"
+     },
      {
       "rubrik": "Silicon Valley omdøber AI til super intelligence",
       "dato": "",
@@ -1473,6 +1426,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "OpenAI udsender 722 manuskripter med matematiske resultater"
+     },
+     {
+      "rubrik": "Claude Haiku 4.5 opdigtede tip til uopklaret mord",
+      "dato": "",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "side": "",
+      "hvor": "under",
+      "under": "Claude indsendte falsk mordtip til politiet"
      },
      {
       "rubrik": "Google Foresight transskriberer møder helt offline",
@@ -1536,24 +1498,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "ChatGPT for Teens fastholder teenagere selv i krise"
-     },
-     {
-      "rubrik": "Google lancerer Guided Vision i Gemini Live",
-      "dato": "",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini Live beskriver verden for blinde"
-     },
-     {
-      "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-      "dato": "",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-      "side": "",
-      "hvor": "under",
-      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      }
     ]
    },
@@ -1567,7 +1511,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 9,
+    "i_listen": 12,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1589,11 +1533,38 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "Epic Games lader AI skrive al kode",
+      "dato": "2026-10-12T20:59:50",
+      "foerst_set": "2026-10-13T02:13:00",
+      "link": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+      "side": "artikel/3ba8d5b9b01b1ab3.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Amazon vil fordoble sine robotarme i år",
+      "dato": "2026-10-12T12:43:10",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+      "side": "artikel/a75e3873befdc7fe.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Ukraines droner rammer Yandex' AI-datacentre",
       "dato": "2026-10-09T22:04:07",
       "foerst_set": "2026-10-10T06:19:16",
       "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
       "side": "artikel/a1c18d2e2d1730e1.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude indsendte falsk mordtip til politiet",
+      "dato": "2026-10-12T18:21:36",
+      "foerst_set": "2026-10-09T21:10:26",
+      "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+      "side": "artikel/791f9de3f5f5dec8.html",
       "hvor": "forside",
       "under": ""
      },
@@ -1650,24 +1621,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/482f5b7f64b54381.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "Google lancerer global SynthID-detektor til alle",
-      "dato": "2026-10-07T14:00:08",
-      "foerst_set": "2026-10-07T15:44:28",
-      "link": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
-      "side": "artikel/49bf44826c74a3eb.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "MCP huller lader én agent styre den næste",
-      "dato": "2026-10-05T22:26:35",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
-      "side": "artikel/fb0b068eb35bb874.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1681,7 +1634,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 6,
+    "i_listen": 5,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1692,6 +1645,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+     },
+     {
+      "rubrik": "SimpleClosure sælger døde startups' data til AI",
+      "dato": "2026-10-13T09:00:00",
+      "foerst_set": "2026-10-13T12:05:45",
+      "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "side": "artikel/4cdfa2663efa70d1.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "AI-modellers nej er skrøbeligt og kan censurere",
@@ -1726,24 +1688,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-08T15:50:15",
       "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
       "side": "artikel/488361a6555fc1f5.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Everest Group: AI skal selv tage forretningsbeslutninger",
-      "dato": "2026-10-05T13:29:32",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
-      "side": "artikel/10d6f4f6fd7bc57f.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "MIT Technology Review: Kun 34 procent i produktion",
-      "dato": "2026-10-05T15:47:52",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
-      "side": "artikel/16ad415e0c7f9c2c.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1854,12 +1798,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-13T02:37:18.808098+00:00",
+  "opdateret": "2026-10-13T12:40:01.068385+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 32,
-  "sidevisninger_i_alt": 46,
+  "besoeg_i_alt": 0,
+  "sidevisninger_i_alt": 10,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1879,13 +1823,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-17",
-    "besoeg": 40,
-    "visninger": 40
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-18",
-    "besoeg": 20,
-    "visninger": 20
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-09-19",
@@ -1895,7 +1839,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-09-20",
     "besoeg": 0,
-    "visninger": 20
+    "visninger": 0
    },
    {
     "dato": "2026-09-21",
@@ -1904,13 +1848,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-22",
-    "besoeg": 20,
-    "visninger": 40
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-09-23",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 100
    },
    {
     "dato": "2026-09-24",
@@ -1929,8 +1873,8 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-09-27",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 100,
+    "visninger": 100
    },
    {
     "dato": "2026-09-28",
@@ -1949,13 +1893,13 @@ window.KOMMANDO_DATA = {
    },
    {
     "dato": "2026-10-01",
-    "besoeg": 10,
-    "visninger": 10
+    "besoeg": 0,
+    "visninger": 0
    },
    {
     "dato": "2026-10-02",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-10-03",
@@ -1980,7 +1924,7 @@ window.KOMMANDO_DATA = {
    {
     "dato": "2026-10-07",
     "besoeg": 0,
-    "visninger": 10
+    "visninger": 0
    },
    {
     "dato": "2026-10-08",
@@ -2016,128 +1960,21 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 25,
-    "visninger": 36
-   },
-   {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/om.html",
-    "besoeg": 1,
-    "visninger": 2
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/cookies.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/faq.html",
     "besoeg": 0,
-    "visninger": 1
-   },
-   {
-    "sti": "/vaerktoejer.html",
-    "besoeg": 0,
-    "visninger": 1
+    "visninger": 10
    }
   ],
-  "artikler": [
-   {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
-    "kategori": "Samfund \u0026 etik",
-    "dato": "2026-08-18"
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Nscale børsnotering hviler på kun to kunder",
-    "kategori": "Penge \u0026 marked",
-    "dato": "2026-09-22"
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
-    "kategori": "Forskning",
-    "dato": "2026-09-09"
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "OpenAI bygger super-hacker til at finde svagheder",
-    "kategori": "Lanceringer",
-    "dato": "2026-07-15"
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-    "kategori": "Politik \u0026 jura",
-    "dato": "2026-09-02"
-   }
-  ],
+  "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 31
+    "besoeg": 29
    },
    {
     "fra": "www.google.com",
     "besoeg": 1
    }
   ],
-  "laeste_temaer": [
-   {
-    "navn": "Samfund \u0026 etik",
-    "visninger": 1
-   },
-   {
-    "navn": "Penge \u0026 marked",
-    "visninger": 1
-   },
-   {
-    "navn": "Forskning",
-    "visninger": 1
-   },
-   {
-    "navn": "Lanceringer",
-    "visninger": 1
-   },
-   {
-    "navn": "Politik \u0026 jura",
-    "visninger": 1
-   }
-  ]
+  "laeste_temaer": []
  }
 };

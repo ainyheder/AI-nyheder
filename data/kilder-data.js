@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-13T02:13:00.436755+00:00",
- "artikler_i_alt": 123,
+ "opdateret": "2026-10-13T12:05:45.412805+00:00",
+ "artikler_i_alt": 119,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -308,10 +308,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 6,
+   "status": "fejl",
+   "fejl": "HTTPError: HTTP Error 403: Forbidden",
+   "hentet": 0,
+   "i_listen": 1,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -320,51 +320,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-13T02:13:00",
      "link": "https://x.ai/news/x-subscription",
      "side": "artikel/e2fefe67055501a3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok Team Bots deler viden på tværs",
-     "dato": "2026-09-28T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://x.ai/news/team-bots",
-     "side": "artikel/e1809a640e69e7c2.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok Bot afværgede 200 nye ansættelser",
-     "dato": "2026-09-22T00:00:00",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://x.ai/news/grok-bot-customer-support",
-     "side": "artikel/656c12515b26321d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok 4.7 tjekker sit eget arbejde",
-     "dato": "2026-09-21T00:00:00",
-     "foerst_set": "2026-09-21T17:10:47",
-     "link": "https://x.ai/news/grok-4-7",
-     "side": "artikel/445ea2dff549947f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok Voice Transcribe 2.0 er dobbelt så præcis",
-     "dato": "2026-09-18T00:00:00",
-     "foerst_set": "2026-09-18T19:56:02",
-     "link": "https://x.ai/news/grok-voice-transcribe-2",
-     "side": "artikel/2125ef3b6ef2360a.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Grok Build husker nu på tværs af sessioner",
-     "dato": "2026-09-16T00:00:00",
-     "foerst_set": "2026-09-16T21:39:37",
-     "link": "https://x.ai/news/grok-build-memory",
-     "side": "artikel/fd1347c92d831b8e.html",
      "hvor": "forside",
      "under": ""
     }
@@ -585,7 +540,7 @@ window.KILDER_STATUS = {
      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
      "side": "",
      "hvor": "under",
-     "under": "Claude Haiku 4.5 opdigtede tip til uopklaret mord"
+     "under": "Claude indsendte falsk mordtip til politiet"
     },
     {
      "rubrik": "TechCrunch Disrupt 2026 åbner om fire dage",
@@ -757,7 +712,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     2
+     3
     ],
     [
      "Anthropic News",
@@ -775,9 +730,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 23,
-   "som_ekstra": 12,
+   "i_listen": 22,
+   "som_ekstra": 14,
    "seneste": [
+    {
+     "rubrik": "Meta lancerer to AI-modeller mod GPT-6 og Claude",
+     "dato": "",
+     "foerst_set": "2026-10-12T18:09:49",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer to frontier-modeller, Muse Wonder"
+    },
     {
      "rubrik": "Silicon Valley omdøber AI til super intelligence",
      "dato": "",
@@ -804,6 +768,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "OpenAI udsender 722 manuskripter med matematiske resultater"
+    },
+    {
+     "rubrik": "Claude Haiku 4.5 opdigtede tip til uopklaret mord",
+     "dato": "",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude indsendte falsk mordtip til politiet"
     },
     {
      "rubrik": "Google Foresight transskriberer møder helt offline",
@@ -869,24 +842,6 @@ window.KILDER_STATUS = {
      "under": "ChatGPT for Teens fastholder teenagere selv i krise"
     },
     {
-     "rubrik": "Google lancerer Guided Vision i Gemini Live",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini Live beskriver verden for blinde"
-    },
-    {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
-    {
      "rubrik": "Microsoft Maia 300 giver syvdoblet rack-gennemstrømning",
      "dato": "2026-10-12T09:00:00",
      "foerst_set": "2026-10-12T18:09:49",
@@ -919,15 +874,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-10T20:17:37",
      "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
      "side": "artikel/6cf45b6f27cad9cd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude Haiku 4.5 opdigtede tip til uopklaret mord",
-     "dato": "2026-10-09T17:15:38",
-     "foerst_set": "2026-10-09T21:10:26",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-     "side": "artikel/5b834ed3369b1b39.html",
      "hvor": "forside",
      "under": ""
     },
@@ -993,6 +939,15 @@ window.KILDER_STATUS = {
      "side": "artikel/59ead62f06a25712.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "SpaceXAI finansierer Omarchy med Grok-tokens",
+     "dato": "2026-10-08T17:57:01",
+     "foerst_set": "2026-10-08T21:27:54",
+     "link": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+     "side": "artikel/dd63e1acf981a5e7.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -1007,6 +962,10 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      2
+    ],
+    [
+     "Ars Technica AI",
+     1
     ],
     [
      "Google DeepMind",
@@ -1024,7 +983,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 9,
+   "i_listen": 12,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1046,11 +1005,38 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "Epic Games lader AI skrive al kode",
+     "dato": "2026-10-12T20:59:50",
+     "foerst_set": "2026-10-13T02:13:00",
+     "link": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+     "side": "artikel/3ba8d5b9b01b1ab3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Amazon vil fordoble sine robotarme i år",
+     "dato": "2026-10-12T12:43:10",
+     "foerst_set": "2026-10-12T18:09:49",
+     "link": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+     "side": "artikel/a75e3873befdc7fe.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ukraines droner rammer Yandex' AI-datacentre",
      "dato": "2026-10-09T22:04:07",
      "foerst_set": "2026-10-10T06:19:16",
      "link": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
      "side": "artikel/a1c18d2e2d1730e1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude indsendte falsk mordtip til politiet",
+     "dato": "2026-10-12T18:21:36",
+     "foerst_set": "2026-10-09T21:10:26",
+     "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+     "side": "artikel/791f9de3f5f5dec8.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1130,7 +1116,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     2
+     3
+    ],
+    [
+     "The Verge AI",
+     1
     ],
     [
      "Google Gemini",
@@ -1148,7 +1138,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
+   "i_listen": 5,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1159,6 +1149,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
+    {
+     "rubrik": "SimpleClosure sælger døde startups' data til AI",
+     "dato": "2026-10-13T09:00:00",
+     "foerst_set": "2026-10-13T12:05:45",
+     "link": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+     "side": "artikel/4cdfa2663efa70d1.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "AI-modellers nej er skrøbeligt og kan censurere",
@@ -1193,24 +1192,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-08T15:50:15",
      "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
      "side": "artikel/488361a6555fc1f5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Everest Group: AI skal selv tage forretningsbeslutninger",
-     "dato": "2026-10-05T13:29:32",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
-     "side": "artikel/10d6f4f6fd7bc57f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "MIT Technology Review: Kun 34 procent i produktion",
-     "dato": "2026-10-05T15:47:52",
-     "foerst_set": "2026-10-05T17:20:56",
-     "link": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
-     "side": "artikel/16ad415e0c7f9c2c.html",
      "hvor": "forside",
      "under": ""
     }
