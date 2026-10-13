@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-12T18:34:32.853228+00:00",
+ "genereret": "2026-10-13T02:37:26.017301+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,30 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-12T18:09:49.054408+00:00",
-  "antal": 141,
-  "med_billede": 76,
-  "paa_dansk": 141,
+  "opdateret": "2026-10-13T02:13:00.436755+00:00",
+  "antal": 123,
+  "med_billede": 74,
+  "paa_dansk": 123,
   "kategorier": {
-   "Nyheder": 4,
-   "Forskning": 16,
-   "Politik \u0026 jura": 13,
-   "Samfund \u0026 etik": 24,
-   "Hverdags-AI": 20,
-   "Lanceringer": 37,
-   "Penge \u0026 marked": 27
+   "Lanceringer": 38,
+   "Penge \u0026 marked": 27,
+   "Politik \u0026 jura": 10,
+   "Forskning": 14,
+   "Samfund \u0026 etik": 18,
+   "Hverdags-AI": 16
   },
   "kilder": {
-   "TechCrunch AI": 52,
-   "The Verge AI": 30,
-   "Ars Technica AI": 11,
-   "Anthropic News": 13,
+   "TechCrunch AI": 42,
+   "The Verge AI": 23,
+   "Ars Technica AI": 9,
    "Simon Willison AI": 10,
-   "Google DeepMind": 1,
-   "MIT Tech Review AI": 8,
+   "Anthropic News": 13,
+   "Google DeepMind": 3,
+   "MIT Tech Review AI": 6,
+   "xAI News": 6,
    "Mistral AI": 3,
    "Google Gemini": 6,
-   "xAI News": 5,
    "Hugging Face": 2
   },
   "udvalgte": [
@@ -227,39 +226,7 @@ window.KOMMANDO_DATA = {
     "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
     "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
     "side": "artikel/15f0749a6da14105.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-12T17:56:56+00:00",
-    "billede": "data/img/7d63c3821d627542.jpg"
-   },
-   {
-    "titel": "Satya Nadella says we should assume all AI models are ‘compromised’",
-    "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "side": "artikel/05298e9bf6406faf.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-10T18:10:17-04:00",
-    "billede": "data/img/3bf67d2ff1d3ee3e.jpg"
-   },
-   {
-    "titel": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-    "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
-    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-    "side": "artikel/6cf45b6f27cad9cd.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-10T14:52:07-04:00",
-    "billede": "data/img/0b1b57301ad94d7b.webp"
-   }
-  ],
-  "seneste": [
-   {
-    "titel": "Meta releases its first frontier model, Muse Wonder",
-    "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
-    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "side": "artikel/15f0749a6da14105.html",
-    "kategori": "Nyheder",
+    "kategori": "Lanceringer",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-12T17:56:56+00:00",
     "billede": "data/img/7d63c3821d627542.jpg"
@@ -269,10 +236,72 @@ window.KOMMANDO_DATA = {
     "rubrik": "Microsoft Maia 300 giver syvdoblet rack-gennemstrømning",
     "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
     "side": "artikel/d4b50bc6b2e0a17a.html",
-    "kategori": "Nyheder",
+    "kategori": "Lanceringer",
     "kilde": "The Verge AI",
     "dato": "2026-10-12T09:00:00-04:00",
     "billede": "data/img/fe271d7575aa5d0a.webp"
+   },
+   {
+    "titel": "web-edit 0.1a0",
+    "rubrik": "Simon Willison redigerer filer fra telefonen",
+    "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
+    "side": "artikel/90d1c46cc2bbf346.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-12T15:54:36+00:00",
+    "billede": ""
+   }
+  ],
+  "seneste": [
+   {
+    "titel": "web-edit 0.1a0",
+    "rubrik": "Simon Willison redigerer filer fra telefonen",
+    "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
+    "side": "artikel/90d1c46cc2bbf346.html",
+    "kategori": "Hverdags-AI",
+    "kilde": "Simon Willison AI",
+    "dato": "2026-10-12T15:54:36+00:00",
+    "billede": ""
+   },
+   {
+    "titel": "Introducing The X Subscription",
+    "rubrik": "xAI samler Grok og Cursor i én plan",
+    "link": "https://x.ai/news/x-subscription",
+    "side": "artikel/e2fefe67055501a3.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "xAI News",
+    "dato": "2026-10-12T00:00:00+00:00",
+    "billede": "data/img/157e04fb242f07ee.webp"
+   },
+   {
+    "titel": "Meta releases its first frontier model, Muse Wonder",
+    "rubrik": "Meta lancerer to frontier-modeller, Muse Wonder",
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "side": "artikel/15f0749a6da14105.html",
+    "kategori": "Lanceringer",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T17:56:56+00:00",
+    "billede": "data/img/7d63c3821d627542.jpg"
+   },
+   {
+    "titel": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+    "rubrik": "Microsoft Maia 300 giver syvdoblet rack-gennemstrømning",
+    "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "side": "artikel/d4b50bc6b2e0a17a.html",
+    "kategori": "Lanceringer",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-12T09:00:00-04:00",
+    "billede": "data/img/fe271d7575aa5d0a.webp"
+   },
+   {
+    "titel": "WindBorne wins a hefty US Air Force contract for its balloon data",
+    "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
+    "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+    "side": "artikel/7b6bf13f385b34a2.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T17:19:14+00:00",
+    "billede": "data/img/b2ecbf16ca34413d.jpg"
    },
    {
     "titel": "This AI startup says it can generate permit-ready blueprints in minutes",
@@ -285,24 +314,14 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/8c98f3f5c24ca8eb.webp"
    },
    {
-    "titel": "WindBorne wins a hefty US Air Force contract for its balloon data",
-    "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
-    "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
-    "side": "artikel/7b6bf13f385b34a2.html",
-    "kategori": "Nyheder",
+    "titel": "Microsoft president says UK is best placed to drive AI regulation",
+    "rubrik": "Brad Smith: Storbritannien bør lede AI-regler",
+    "link": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+    "side": "artikel/e9c9ac8e21acdd90.html",
+    "kategori": "Politik \u0026 jura",
     "kilde": "TechCrunch AI",
-    "dato": "2026-10-12T17:19:14+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
-    "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
-    "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
-    "side": "artikel/d9350c73bbc30fd0.html",
-    "kategori": "Nyheder",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-12T14:00:00+00:00",
-    "billede": ""
+    "dato": "2026-10-12T15:31:19+00:00",
+    "billede": "data/img/fbdccf42277b31bb.webp"
    },
    {
     "titel": "Former Plaud exec raises $26M for AI app that listens to you in the background",
@@ -313,6 +332,16 @@ window.KOMMANDO_DATA = {
     "kilde": "TechCrunch AI",
     "dato": "2026-10-12T12:47:59+00:00",
     "billede": "data/img/6709414cc0463b16.webp"
+   },
+   {
+    "titel": "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+    "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
+    "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
+    "side": "artikel/d9350c73bbc30fd0.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-12T14:00:00+00:00",
+    "billede": ""
    },
    {
     "titel": "Will the HomeView be Apple’s first smart home success?",
@@ -343,55 +372,25 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-11T07:00:00-04:00",
     "billede": "data/img/35eca1289f620049.jpg"
-   },
-   {
-    "titel": "Satya Nadella says we should assume all AI models are ‘compromised’",
-    "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "side": "artikel/05298e9bf6406faf.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-10T18:10:17-04:00",
-    "billede": "data/img/3bf67d2ff1d3ee3e.jpg"
-   },
-   {
-    "titel": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
-    "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
-    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-    "side": "artikel/6cf45b6f27cad9cd.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-10T14:52:07-04:00",
-    "billede": "data/img/0b1b57301ad94d7b.webp"
-   },
-   {
-    "titel": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-    "rubrik": "Apple hyrer Huxe-team og licenserer deres AI",
-    "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
-    "side": "artikel/719244ff4837f34b.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-10T19:50:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-12T18:09:49.054408+00:00",
+  "opdateret": "2026-10-13T02:13:00.436755+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
-  "modelkald": 7,
-  "kildehentninger": 3,
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
+  "kildehentninger": 4,
   "regelbaseret_udvalg": [
-   "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-   "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+   "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+   "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/"
   ],
   "udgivet_udvalg": [
    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-   "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-   "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+   "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+   "https://simonwillison.net/2026/Oct/12/web-edit/"
   ],
   "vaerktoejer": [
    {
@@ -431,7 +430,7 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -444,34 +443,30 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 1018 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 926 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    "fejl": null
    }
   ],
   "kildegrundlag": [
-   {
-    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "grundlag": "kildetekst"
-   },
    {
     "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
     "grundlag": "kildetekst"
    },
    {
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "grundlag": "kildetekst"
+   },
+   {
     "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-12T18:09:48.777940+00:00",
+  "opdateret": "2026-10-13T02:12:59.866478+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -827,8 +822,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-12T18:09:49.054408+00:00",
-  "artikler_i_alt": 141,
+  "opdateret": "2026-10-13T02:13:00.436755+00:00",
+  "artikler_i_alt": 123,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1006,8 +1001,35 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 6,
-    "som_ekstra": 0,
+    "som_ekstra": 3,
     "seneste": [
+     {
+      "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+      "dato": "",
+      "foerst_set": "2026-09-24T20:05:24",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
+      "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+      "dato": "",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 TTS styres replik for replik"
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
+      "dato": "",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
      {
       "rubrik": "Gemini 4 Argon skriver en million tokens ud",
       "dato": "2026-10-02T15:00:00",
@@ -1074,9 +1096,18 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 5,
+    "i_listen": 6,
     "som_ekstra": 0,
     "seneste": [
+     {
+      "rubrik": "xAI samler Grok og Cursor i én plan",
+      "dato": "2026-10-12T00:00:00",
+      "foerst_set": "2026-10-13T02:13:00",
+      "link": "https://x.ai/news/x-subscription",
+      "side": "artikel/e2fefe67055501a3.html",
+      "hvor": "forside",
+      "under": ""
+     },
      {
       "rubrik": "Grok Team Bots deler viden på tværs",
       "dato": "2026-09-28T00:00:00",
@@ -1168,7 +1199,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 10,
-    "som_ekstra": 5,
+    "som_ekstra": 4,
     "seneste": [
      {
       "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
@@ -1178,15 +1209,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Haiku 5.5 kører 75 procent billigere"
-     },
-     {
-      "rubrik": "OpenAI-agenter redigerede Wikipedias wikis",
-      "dato": "",
-      "foerst_set": "2026-10-07T06:22:34",
-      "link": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
-      "side": "",
-      "hvor": "under",
-      "under": "Wikimedia: OpenAI-agenter bag millioner af kald"
      },
      {
       "rubrik": "Mistral Large 4 springer fra 9 til 38",
@@ -1214,6 +1236,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     },
+     {
+      "rubrik": "Simon Willison redigerer filer fra telefonen",
+      "dato": "2026-10-12T15:54:36",
+      "foerst_set": "2026-10-13T02:13:00",
+      "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
+      "side": "artikel/90d1c46cc2bbf346.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Anthropic-agenter indsendte 20 visaansøgninger",
@@ -1290,7 +1321,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 52,
+    "i_listen": 42,
     "som_ekstra": 6,
     "seneste": [
      {
@@ -1375,15 +1406,6 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Blueprints AI laver byggetilladelsesklare tegninger fra skitse",
-      "dato": "2026-10-12T15:27:59",
-      "foerst_set": "2026-10-12T18:09:49",
-      "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
-      "side": "artikel/b32e4e4429644b2a.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
       "dato": "2026-10-12T17:19:14",
       "foerst_set": "2026-10-12T18:09:49",
@@ -1393,11 +1415,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "TechCrunch Disrupt 2026 samler 10.000+ i San Francisco",
-      "dato": "2026-10-12T14:00:00",
+      "rubrik": "Blueprints AI laver byggetilladelsesklare tegninger fra skitse",
+      "dato": "2026-10-12T15:27:59",
       "foerst_set": "2026-10-12T18:09:49",
-      "link": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
-      "side": "artikel/d9350c73bbc30fd0.html",
+      "link": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+      "side": "artikel/b32e4e4429644b2a.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Brad Smith: Storbritannien bør lede AI-regler",
+      "dato": "2026-10-12T15:31:19",
+      "foerst_set": "2026-10-12T18:09:49",
+      "link": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+      "side": "artikel/e9c9ac8e21acdd90.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1413,8 +1444,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 30,
-    "som_ekstra": 14,
+    "i_listen": 23,
+    "som_ekstra": 12,
     "seneste": [
      {
       "rubrik": "Silicon Valley omdøber AI til super intelligence",
@@ -1507,22 +1538,22 @@ window.KOMMANDO_DATA = {
       "under": "ChatGPT for Teens fastholder teenagere selv i krise"
      },
      {
-      "rubrik": "OpenAI indfører tekstvandmærke i ChatGPT og Codex",
+      "rubrik": "Google lancerer Guided Vision i Gemini Live",
       "dato": "",
-      "foerst_set": "2026-10-06T01:24:34",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
       "side": "",
       "hvor": "under",
-      "under": "OpenAI vandmærker ChatGPT-tekst i EU"
+      "under": "Gemini Live beskriver verden for blinde"
      },
      {
-      "rubrik": "OpenAI tester billedreklamer i ChatGPT",
+      "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
       "dato": "",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
       "side": "",
       "hvor": "under",
-      "under": "OpenAI sender annoncer ind blandt billedsvar"
+      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      }
     ]
    },
@@ -1536,8 +1567,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 11,
-    "som_ekstra": 4,
+    "i_listen": 9,
+    "som_ekstra": 2,
     "seneste": [
      {
       "rubrik": "Mistral udgiver åben AI-model der udfordrer de bedste",
@@ -1547,24 +1578,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Mistral lancerer 1.000-milliarders model Le Chonk"
-     },
-     {
-      "rubrik": "OpenAI vandmærker ChatGPT-tekst som standard i EU",
-      "dato": "",
-      "foerst_set": "2026-10-07T00:01:34",
-      "link": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
-      "side": "",
-      "hvor": "under",
-      "under": "OpenAI vandmærker ChatGPT-tekst i EU"
-     },
-     {
-      "rubrik": "OpenAI-agenter forsøgte at hacke Wikipedias værktøjer",
-      "dato": "",
-      "foerst_set": "2026-10-06T18:34:36",
-      "link": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
-      "side": "",
-      "hvor": "under",
-      "under": "Wikimedia: OpenAI-agenter bag millioner af kald"
      },
      {
       "rubrik": "Google Gemini 4 Argon springer over 3.5 Pro",
@@ -1646,6 +1659,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/49bf44826c74a3eb.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "MCP huller lader én agent styre den næste",
+      "dato": "2026-10-05T22:26:35",
+      "foerst_set": "2026-10-06T01:24:34",
+      "link": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+      "side": "artikel/fb0b068eb35bb874.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1659,7 +1681,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 6,
-    "i_listen": 8,
+    "i_listen": 6,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1724,24 +1746,6 @@ window.KOMMANDO_DATA = {
       "side": "artikel/16ad415e0c7f9c2c.html",
       "hvor": "forside",
       "under": ""
-     },
-     {
-      "rubrik": "En milliard bruger ChatGPT trods stigende AI-modstand",
-      "dato": "2026-10-05T08:00:00",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
-      "side": "artikel/cc4fbf263535e81d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "MIT Technology Review åbner EmTech-program on demand",
-      "dato": "2026-10-05T04:00:00",
-      "foerst_set": "2026-10-05T17:20:56",
-      "link": "https://www.technologyreview.com/2026/10/05/1145413/emtech-future-2026-when-ai-meets-everything/",
-      "side": "artikel/c8d1f5dc3656c849.html",
-      "hvor": "forside",
-      "under": ""
      }
     ]
    },
@@ -1766,10 +1770,10 @@ window.KOMMANDO_DATA = {
     "kun_aktuel": false,
     "max": 15,
     "aktiv": true,
-    "status": "fejl",
-    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-    "hentet": 0,
-    "i_listen": 1,
+    "status": "ok",
+    "fejl": "",
+    "hentet": 15,
+    "i_listen": 3,
     "som_ekstra": 1,
     "seneste": [
      {
@@ -1782,11 +1786,38 @@ window.KOMMANDO_DATA = {
       "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
      },
      {
+      "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
+      "dato": "",
+      "foerst_set": "2026-09-24T20:05:24.209273+00:00",
+      "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
       "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
       "dato": "2026-10-06T19:57:04",
       "foerst_set": "2026-10-07T15:44:28",
       "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
       "side": "artikel/bf211d23154acfab.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 TTS styres replik for replik",
+      "dato": "2026-09-23T15:25:14",
+      "foerst_set": "2026-09-23T19:47:07",
+      "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "side": "artikel/31ef9b5263a38be6.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 3.8 Live tænker, mens den taler",
+      "dato": "2026-09-15T17:05:57",
+      "foerst_set": "2026-09-15T18:27:03",
+      "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "side": "artikel/392b6ec46b4e96bc.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1823,19 +1854,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-12T18:34:27.527775+00:00",
+  "opdateret": "2026-10-13T02:37:18.808098+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 31,
-  "sidevisninger_i_alt": 45,
+  "besoeg_i_alt": 32,
+  "sidevisninger_i_alt": 46,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-13",
-    "besoeg": 20,
-    "visninger": 80
-   },
    {
     "dato": "2026-09-14",
     "besoeg": 0,
@@ -1980,13 +2006,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-12",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-13",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 24,
-    "visninger": 35
+    "besoeg": 25,
+    "visninger": 36
    },
    {
     "sti": "/artikel/024315d82a76560f.html",
@@ -2079,7 +2110,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 30
+    "besoeg": 31
    },
    {
     "fra": "www.google.com",

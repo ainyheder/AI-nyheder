@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-12T18:09:49.054408+00:00",
+  "opdateret": "2026-10-13T02:13:00.436755+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+    "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+    "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/"
   ],
-  "input_fingerprint": "b7403f74285c129e",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
-  "modelkald": 7,
-  "kildehentninger": 3,
+  "input_fingerprint": "c17d2794e33b0ddd",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -50,7 +50,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -63,35 +63,31 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 1018 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Artikel 0aa3802f6f2a1aeb: skriveopgave har 926 tegn; skriv 12-900 tegn i dette felt"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "fejl": null
     }
   ],
   "kildegrundlag": [
-    {
-      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-      "grundlag": "kildetekst"
-    },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
       "grundlag": "kildetekst"
     },
     {
+      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-    "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit"
+    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+    "https://simonwillison.net/2026/Oct/12/web-edit/"
   ],
-  "afventer_artikler": 51
+  "afventer_artikler": 54
 }
