@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-13T12:05:45.412805+00:00",
+  "opdateret": "2026-10-13T19:29:19.321800+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
+    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
-    "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/"
+    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
   ],
-  "input_fingerprint": "f2cf7b21307d3bde",
+  "input_fingerprint": "b9c6b1ec572cc18e",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
-  "kildehentninger": 5,
+  "modelkald": 5,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -34,16 +34,16 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "aflever_udgave",
@@ -52,11 +52,15 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "grundlag": "kildetekst"
     },
     {
@@ -64,18 +68,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+      "link": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "link": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
-    "https://simonwillison.net/2026/Oct/12/web-edit/"
+    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 57
 }
