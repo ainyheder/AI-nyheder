@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-13T19:29:19.321800+00:00",
+  "opdateret": "2026-10-13T23:50:16.091252+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,10 +8,17 @@
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
     "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
   ],
-  "input_fingerprint": "b9c6b1ec572cc18e",
+  "input_fingerprint": "8640aae3e95b31bd",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 7,
+  "kontrolproblemer": [
+    "Meta-artiklen kalder Wonder-modellerne 'dyrere' end Muse Spark – prisen på Muse Spark findes ikke i kilderne, så sammenligningen er ikke belagt.",
+    "Meta-opgaven bad om en faktaboks med modelnavne, pris og adgang; artiklen har tom noegletal-felt, selv om tallene (4/20 dollars, to modeller) lægger op til det.",
+    "Afsnit 1 i Argon-artiklen udelader Ars Technicas bemærkning om, at også AI Studio's grænseflade kræver AI Ultra-abonnement, mens API-adgang i AI Studio står som åben – adgangsvejene kunne skelnes skarpere.",
+    "Udtrykket 'forskningsvidenskabskvinde' for research scientist og den knudrede sætning om 'første gang siden august 2025, at Alexandr Wang …, at selskabet udsender' er uheldigt dansk.",
+    "Sætningen 'Den testfase er nu slut' om trusted-cyber-defenders-perioden er en tolkning; kilderne siger kun, at den brede udrulning begynder."
+  ],
+  "modelkald": 7,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -42,6 +49,14 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 74c9e10c02543c49: skriveopgave har 999 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
       "vaerktoej": "aflever_udgave",
       "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
@@ -52,7 +67,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
       "grundlag": "kildetekst"
     },
     {
@@ -64,26 +79,30 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
     "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon"
+    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
   ],
-  "afventer_artikler": 57
+  "afventer_artikler": 55
 }
