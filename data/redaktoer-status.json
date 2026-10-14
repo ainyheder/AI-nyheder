@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-14T05:17:23.558972+00:00",
+  "opdateret": "2026-10-14T13:58:43.953146+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+    "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
   ],
-  "input_fingerprint": "43ee55f66c531ebc",
+  "input_fingerprint": "01c88bb3409844f9",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 4,
-  "kildehentninger": 6,
+  "modelkald": 3,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "laes_kilde",
@@ -34,7 +34,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -56,26 +60,34 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.anthropic.com/research/self-replicating-ai",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-    "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-    "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+    "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
   ],
-  "afventer_artikler": 51
+  "afventer_artikler": 52
 }

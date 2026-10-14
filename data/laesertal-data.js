@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-14T05:47:25.004844+00:00",
+ "opdateret": "2026-10-14T14:25:40.389947+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,8 +67,8 @@ window.LAESERTAL = {
      3,
      1,
      2,
-     0,
-     0
+     4,
+     1
     ]
    },
    {
@@ -102,7 +102,7 @@ window.LAESERTAL = {
      1,
      1,
      2,
-     4,
+     5,
      0
     ]
    },
@@ -137,8 +137,8 @@ window.LAESERTAL = {
      2,
      0,
      4,
-     1,
-     0
+     2,
+     2
     ]
    },
    {
@@ -172,8 +172,8 @@ window.LAESERTAL = {
      0,
      1,
      2,
-     1,
-     0
+     4,
+     1
     ]
    },
    {
@@ -242,7 +242,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0,
+     2,
      0
     ]
    },
@@ -277,7 +277,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     19,
+     12,
      0
     ]
    },
@@ -312,7 +312,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     5,
+     3,
      0
     ]
    },
@@ -347,21 +347,21 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     2,
+     1,
      0
     ]
    }
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 29,
- "sidevisninger_i_alt": 47,
+ "besoeg_i_alt": 27,
+ "sidevisninger_i_alt": 45,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 22,
-   "visninger": 37
+   "besoeg": 20,
+   "visninger": 35
   },
   {
    "sti": "/artikel/024315d82a76560f.html",
@@ -412,7 +412,7 @@ window.LAESERTAL = {
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 28
+   "besoeg": 26
   },
   {
    "fra": "www.google.com",
@@ -421,91 +421,16 @@ window.LAESERTAL = {
  ],
  "ai_chats": [],
  "sidehenvisere": {
-  "/": [
-   {
-    "fra": "direkte",
-    "besoeg": 21,
-    "visninger": 21
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 15
-   },
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/024315d82a76560f.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/artikel/020fc8cb0d6ecf06.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/009e61788df2b717.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/0081d2e6c395e5ff.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/artikel/01be0a47d716a83c.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/cookies.html": [
-   {
-    "fra": "direkte",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/faq.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ]
+  "/": [],
+  "/artikel/024315d82a76560f.html": [],
+  "/om.html": [],
+  "/artikel/020fc8cb0d6ecf06.html": [],
+  "/artikel/009e61788df2b717.html": [],
+  "/artikel/0081d2e6c395e5ff.html": [],
+  "/artikel/01be0a47d716a83c.html": [],
+  "/cookies.html": [],
+  "/faq.html": [],
+  "/vaerktoejer.html": []
  },
  "faste_uden_besoeg": [
   "/uge.html"
@@ -670,13 +595,7 @@ window.LAESERTAL = {
    "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
    "kategori": "Samfund & etik",
    "dato": "2026-08-18",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 1,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/020fc8cb0d6ecf06.html",
@@ -685,13 +604,7 @@ window.LAESERTAL = {
    "rubrik": "Nscale børsnotering hviler på kun to kunder",
    "kategori": "Penge & marked",
    "dato": "2026-09-22",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 1,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/009e61788df2b717.html",
@@ -700,13 +613,7 @@ window.LAESERTAL = {
    "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
    "kategori": "Forskning",
    "dato": "2026-09-09",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 1,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/0081d2e6c395e5ff.html",
@@ -715,13 +622,7 @@ window.LAESERTAL = {
    "rubrik": "OpenAI bygger super-hacker til at finde svagheder",
    "kategori": "Lanceringer",
    "dato": "2026-07-15",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 1,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   },
   {
    "sti": "/artikel/01be0a47d716a83c.html",
@@ -730,13 +631,7 @@ window.LAESERTAL = {
    "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
    "kategori": "Politik & jura",
    "dato": "2026-09-02",
-   "henvisere": [
-    {
-     "fra": "direkte",
-     "besoeg": 1,
-     "visninger": 1
-    }
-   ]
+   "henvisere": []
   }
  ],
  "laeste_temaer": [

@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-14T05:17:23.558972+00:00",
- "artikler_i_alt": 129,
+ "opdateret": "2026-10-14T13:58:43.953146+00:00",
+ "artikler_i_alt": 132,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,9 +12,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 14,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Anthropic åbner femte Asien-kontor i Singapore med regeringssamarbejde",
+     "dato": "2026-10-14T00:00:00",
+     "foerst_set": "2026-10-14T13:58:43",
+     "link": "https://www.anthropic.com/news/singapore-office-opening",
+     "side": "artikel/2922d5d8f3c24cb9.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Anthropic forsvarer kritisk infrastruktur med 11 partnere",
      "dato": "2026-10-08T00:00:00",
@@ -70,20 +79,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
-     "dato": "2026-09-28T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/claude-sonnet-5-5",
-     "side": "artikel/18d398716f5aa44d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
      "dato": "2026-10-01T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/news/barclays-scales-claude",
      "side": "artikel/9393e9cf493067a7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
+     "dato": "2026-09-28T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/claude-sonnet-5-5",
+     "side": "artikel/18d398716f5aa44d.html",
      "hvor": "forside",
      "under": ""
     },
@@ -111,15 +120,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-09-22T19:51:24",
      "link": "https://www.anthropic.com/claude-opus-5-5",
      "side": "artikel/23e9c366edfe97a9.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic betaler Accenture for at evaluere egne modeller",
-     "dato": "2026-09-18T00:00:00",
-     "foerst_set": "2026-09-18T22:47:50",
-     "link": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-     "side": "artikel/02baaf3c371a8e5f.html",
      "hvor": "forside",
      "under": ""
     }
@@ -201,8 +201,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
-   "som_ekstra": 7,
+   "i_listen": 4,
+   "som_ekstra": 6,
    "seneste": [
     {
      "rubrik": "Gemini 4 Argon kan arbejde uden dig",
@@ -227,15 +227,6 @@ window.KILDER_STATUS = {
      "dato": "",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon ruller ud bag betalingsmur"
-    },
-    {
-     "rubrik": "Google lancerer Gemini 4 Argon globalt",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon ruller ud bag betalingsmur"
@@ -266,15 +257,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 Live tænker, mens den taler"
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -316,7 +298,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "Ars Technica AI",
-     5
+     4
     ],
     [
      "Google DeepMind",
@@ -402,7 +384,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 10,
+   "i_listen": 9,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -447,15 +429,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
      "side": "artikel/01892a7693f14e4f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon pris fordobles 1. december",
-     "dato": "2026-10-13T22:28:54",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-     "side": "artikel/285c1f1903787d89.html",
      "hvor": "forside",
      "under": ""
     },
@@ -553,7 +526,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 44,
+   "i_listen": 45,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -665,20 +638,20 @@ window.KILDER_STATUS = {
      "under": "Nvidia RTX Spark debuterer i Surface Laptop Ultra"
     },
     {
+     "rubrik": "Scimplify henter $25M til specialkemikalier med AI",
+     "dato": "2026-10-14T11:00:00",
+     "foerst_set": "2026-10-14T13:58:43",
+     "link": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+     "side": "artikel/7f10a36369ecef37.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Science Corporation indsat synchip hos første Stargardt-patient",
      "dato": "2026-10-13T23:13:31",
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
      "side": "artikel/f698b7de989cb7f0.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cerebras-chef: Personlig AI-assistent kommer i hjemmet",
-     "dato": "2026-10-13T23:05:34",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-     "side": "artikel/b982fab38e0cdceb.html",
      "hvor": "forside",
      "under": ""
     },
@@ -692,20 +665,29 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Cerebras-chef: Dommedagssnak skader AI-branchen",
-     "dato": "2026-10-13T22:36:59",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-     "side": "artikel/ef5219e107b24173.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "OpenAI skal udlevere ansættelsesdokumenter til Apple",
      "dato": "2026-10-13T20:36:44",
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
      "side": "artikel/025ffa23c0156c26.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cerebras-chef: Personlig AI-assistent kommer i hjemmet",
+     "dato": "2026-10-13T23:05:34",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+     "side": "artikel/b982fab38e0cdceb.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cerebras-chef: Dommedagssnak skader AI-branchen",
+     "dato": "2026-10-13T22:36:59",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
+     "side": "artikel/ef5219e107b24173.html",
      "hvor": "forside",
      "under": ""
     },
@@ -762,15 +744,6 @@ window.KILDER_STATUS = {
      "side": "artikel/15f0749a6da14105.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "WindBorne vinder US Air Force-kontrakt på ballondata",
-     "dato": "2026-10-12T17:19:14",
-     "foerst_set": "2026-10-12T18:09:49",
-     "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
-     "side": "artikel/7b6bf13f385b34a2.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -802,18 +775,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 27,
-   "som_ekstra": 16,
+   "i_listen": 30,
+   "som_ekstra": 15,
    "seneste": [
-    {
-     "rubrik": "Google lancerer Gemini 4 Argon efter måneders pause",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon ruller ud bag betalingsmur"
-    },
     {
      "rubrik": "Google udsender apps direkte fra AI Studio til Play Store",
      "dato": "",
@@ -914,6 +878,24 @@ window.KILDER_STATUS = {
      "under": "ChatGPT får knapper, grafer og lommeregnere"
     },
     {
+     "rubrik": "OpenAI annoncerer College Planner til teenagere",
+     "dato": "",
+     "foerst_set": "2026-10-07T21:31:02",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
+     "side": "",
+     "hvor": "under",
+     "under": "ChatGPT for Teens fastholder teenagere selv i krise"
+    },
+    {
+     "rubrik": "Epic Games Launcher er vibe coded",
+     "dato": "2026-10-14T09:55:02",
+     "foerst_set": "2026-10-14T13:58:43",
+     "link": "https://www.theverge.com/games/1010751/epic-games-launcher-vibe-coded-ai-linux",
+     "side": "artikel/9eae47a00eae4fbf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenAI-ingeniør anholdt for at plante optager",
      "dato": "2026-10-13T16:45:25",
      "foerst_set": "2026-10-13T23:50:16",
@@ -941,11 +923,29 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Google Argon koster en femtedel af rivalernes pris",
+     "dato": "2026-10-13T12:00:00",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+     "side": "artikel/4b1e7d7541c43614.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Nvidia DLSS 5 dæmpes før Hogwarts-debut",
-     "dato": "2026-10-13T09:55:45",
+     "dato": "2026-10-13T13:55:45",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
      "side": "artikel/6d9ab5acc0eca32f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Facebook lader dig tale dig til nyt feed",
+     "dato": "2026-10-13T13:01:31",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+     "side": "artikel/11f5b582c405af4c.html",
      "hvor": "forside",
      "under": ""
     },
@@ -968,20 +968,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Facebook lader dig tale dig til nyt feed",
-     "dato": "2026-10-13T13:01:31",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
-     "side": "artikel/11f5b582c405af4c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Apple HomeView er en iPhone til køkkenbordet",
      "dato": "2026-10-13T13:00:00",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
      "side": "artikel/d63684ddf35a0c96.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta fjernede Mia Goth-fanprofil efter falskt AI-billede",
+     "dato": "2026-10-13T12:42:51",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+     "side": "artikel/fa8ac12a74de014f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -993,33 +993,6 @@ window.KILDER_STATUS = {
      "side": "artikel/d4b50bc6b2e0a17a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Di Benedetto kører lokal AI på Mac Studio",
-     "dato": "2026-10-11T11:00:00",
-     "foerst_set": "2026-10-11T15:02:54",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-     "side": "artikel/90bfa0449fc870c1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Satya Nadella kræver nødbremse til alle AI-modeller",
-     "dato": "2026-10-10T22:10:17",
-     "foerst_set": "2026-10-10T23:47:18",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-     "side": "artikel/05298e9bf6406faf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "DistroKid fjerner sange uden varsel efter UMG-krav",
-     "dato": "2026-10-10T18:52:07",
-     "foerst_set": "2026-10-10T20:17:37",
-     "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
-     "side": "artikel/6cf45b6f27cad9cd.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1029,7 +1002,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     4
+     3
     ],
     [
      "Anthropic News",
@@ -1055,7 +1028,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1077,6 +1050,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "White Circle: Nye AI-modeller brydes lettere",
+     "dato": "2026-10-14T11:00:30",
+     "foerst_set": "2026-10-14T13:58:43",
+     "link": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
+     "side": "artikel/40993dd7517604bf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Gemini 4 Argon ruller ud bag betalingsmur",
      "dato": "2026-10-13T16:00:02",
      "foerst_set": "2026-10-13T19:29:19",
@@ -1086,20 +1068,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Disney byder 20 millioner dollar på Character.AI-teknologi",
-     "dato": "2026-10-13T18:23:33",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-     "side": "artikel/18cda7676ca2b1e4.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Google sender dine AI-apps i Play Store",
      "dato": "2026-10-13T17:00:39",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store/",
      "side": "artikel/655bcbd4e6ef7ab3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Disney byder 20 millioner dollar på Character.AI-teknologi",
+     "dato": "2026-10-13T18:23:33",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
+     "side": "artikel/18cda7676ca2b1e4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1174,24 +1156,11 @@ window.KILDER_STATUS = {
      "side": "artikel/19284ca8faef1917.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Michael Smith får 18 måneders fængsel for AI-fup",
-     "dato": "2026-10-07T17:57:39",
-     "foerst_set": "2026-10-07T21:31:02",
-     "link": "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/",
-     "side": "artikel/482f5b7f64b54381.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
-     5
-    ],
-    [
-     "The Verge AI",
      4
     ],
     [
@@ -1199,8 +1168,8 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "Google DeepMind",
-     1
+     "The Verge AI",
+     3
     ]
    ]
   },
@@ -1313,18 +1282,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 5,
-   "som_ekstra": 2,
+   "i_listen": 4,
+   "som_ekstra": 1,
    "seneste": [
-    {
-     "rubrik": "Gemini 4 Argon topper Vals Index",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon ruller ud bag betalingsmur"
-    },
     {
      "rubrik": "Gemini 4 Argon udrulles forsigtigt til cybersikkerhedshold",
      "dato": "",
@@ -1342,15 +1302,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 Live tænker, mens den taler"
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Gemini 4 Argon scorer 87 procent i ERQA",
@@ -1393,10 +1344,6 @@ window.KILDER_STATUS = {
     [
      "Google Gemini",
      4
-    ],
-    [
-     "Ars Technica AI",
-     1
     ],
     [
      "The Verge AI",
