@@ -1,24 +1,36 @@
 {
-  "opdateret": "2026-10-14T13:58:43.953146+00:00",
+  "opdateret": "2026-10-14T20:18:45.914469+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
     "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
   ],
-  "input_fingerprint": "01c88bb3409844f9",
+  "input_fingerprint": "1b06b74c97832305",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 3,
-  "kildehentninger": 8,
+  "kontrolproblemer": [
+    "YouTube-artiklen: stavefejl i 'Sangerne kommer i tre kategorier' (skal være 'sangene')",
+    "Mindre unøjagtighed i detaljen om Meta: kilderne siger, at Meta lancerede to frontier-modeller (Muse Wonder og Muse Wonder Full), ikke kun 'Muse Wonder Full'"
+  ],
+  "modelkald": 8,
+  "kildehentninger": 6,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -47,6 +59,14 @@
     },
     {
       "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Hovedhistorier skal være fra de seneste 48 timer; ældre stof hører til i arkivet"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
@@ -56,7 +76,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
       "grundlag": "kildetekst"
     },
     {
@@ -64,30 +84,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/research/self-replicating-ai",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
+    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 59
 }
