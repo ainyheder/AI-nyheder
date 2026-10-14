@@ -1,20 +1,16 @@
 {
-  "opdateret": "2026-10-14T20:18:45.914469+00:00",
+  "opdateret": "2026-10-14T23:23:45.744266+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
     "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-    "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
   ],
-  "input_fingerprint": "1b06b74c97832305",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "YouTube-artiklen: stavefejl i 'Sangerne kommer i tre kategorier' (skal være 'sangene')",
-    "Mindre unøjagtighed i detaljen om Meta: kilderne siger, at Meta lancerede to frontier-modeller (Muse Wonder og Muse Wonder Full), ikke kun 'Muse Wonder Full'"
-  ],
-  "modelkald": 8,
+  "input_fingerprint": "ea3fac5aeec4f973",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
+  "modelkald": 7,
   "kildehentninger": 6,
   "vaerktoejer": [
     {
@@ -34,7 +30,7 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -56,18 +52,22 @@
     {
       "vaerktoej": "laes_kilde",
       "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel f9f5ac5db3b603f4: skriveopgave har 1145 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel f9f5ac5db3b603f4: skriveopgave har 1007 tegn; skriv 12-900 tegn i dette felt"
     },
     {
       "vaerktoej": "aflever_udgave",
       "fejl": "Dubletter skal være kendte, læste og forskellige historier"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Hovedhistorier skal være fra de seneste 48 timer; ældre stof hører til i arkivet"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": null
     }
   ],
   "kildegrundlag": [
@@ -80,26 +80,26 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "grundlag": "rss_resume"
     },
     {
       "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-    "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
+    "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+    "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
   ],
-  "afventer_artikler": 59
+  "afventer_artikler": 50
 }
