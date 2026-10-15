@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-15T05:05:01.890316+00:00",
- "artikler_i_alt": 126,
+ "opdateret": "2026-10-15T13:39:48.297801+00:00",
+ "artikler_i_alt": 131,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -88,20 +88,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
-     "dato": "2026-10-01T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/news/barclays-scales-claude",
-     "side": "artikel/9393e9cf493067a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
      "dato": "2026-09-28T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/claude-sonnet-5-5",
      "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
+     "dato": "2026-10-01T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/news/barclays-scales-claude",
+     "side": "artikel/9393e9cf493067a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -201,9 +201,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
-   "som_ekstra": 3,
+   "i_listen": 4,
+   "som_ekstra": 5,
    "seneste": [
+    {
+     "rubrik": "Google lancerer Universal Cart i USA",
+     "dato": "",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Universal Cart samler indkøb fra flere butikker"
+    },
     {
      "rubrik": "Gemini 4 Argon kan arbejde uden dig",
      "dato": "",
@@ -223,13 +232,22 @@ window.KILDER_STATUS = {
      "under": "Google Argon koster en femtedel af rivalernes pris"
     },
     {
+     "rubrik": "Gemini 4 Argon er nu globalt tilgængelig",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Argon koster en femtedel af rivalernes pris"
+    },
+    {
      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
      "dato": "",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
      "side": "",
      "hvor": "under",
-     "under": "Google Argon koster en femtedel af rivalernes pris"
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
     },
     {
      "rubrik": "Gemini 4 Argon skriver en million tokens ud",
@@ -266,25 +284,16 @@ window.KILDER_STATUS = {
      "side": "artikel/11d10b87b5eb0f3a.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Google Gemini kobler apps direkte i chatten",
-     "dato": "2026-09-23T16:00:00",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
-     "side": "artikel/2fcf2c8b0f4dd9b8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "Google DeepMind",
-     1
+     2
     ],
     [
      "Ars Technica AI",
@@ -332,7 +341,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 2,
+   "i_listen": 1,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -341,15 +350,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-09T15:32:07",
      "link": "https://huggingface.co/blog/allenai/impactful-scheduling",
      "side": "artikel/ebb9e1a46a897c8e.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "UK AISI deler benchmarkresultater andre kan efterprøve",
-     "dato": "2026-09-22T00:00:00",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://huggingface.co/blog/evaleval-aisi",
-     "side": "artikel/137c5833ddb8f26b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -366,7 +366,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 12,
    "som_ekstra": 5,
    "seneste": [
     {
@@ -415,6 +415,24 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Anthropic hæver omsætningen næsten 50 pct. før børsnotering",
+     "dato": "2026-10-15T13:04:03",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+     "side": "artikel/dcec1526c02c2dfa.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Opus 5.5 byggede spil i tre timer",
+     "dato": "2026-10-14T21:23:01",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+     "side": "artikel/0c100d2e0ef8e493.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Popcar: AI decompilerer spil i massevis",
      "dato": "2026-10-14T16:26:53",
      "foerst_set": "2026-10-14T20:18:45",
@@ -429,6 +447,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
      "side": "artikel/01892a7693f14e4f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
+     "dato": "2026-10-13T22:28:54",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+     "side": "artikel/285c1f1903787d89.html",
      "hvor": "forside",
      "under": ""
     },
@@ -521,7 +548,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
+   "i_listen": 43,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -624,11 +651,29 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Amazon Bee lancerer to AI-enheder fra 75 dollars",
+     "dato": "2026-10-15T12:00:00",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
+     "side": "artikel/2d7de8707312b3f0.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Ricursive Intelligence sigter mod chipdesign på én uge",
      "dato": "2026-10-15T01:01:32",
      "foerst_set": "2026-10-15T05:05:01",
      "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
      "side": "artikel/7624c31011dc0b4f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Figma definerer designregler for AI-agenter",
+     "dato": "2026-10-15T04:30:00",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+     "side": "artikel/74a5b05214cca33f.html",
      "hvor": "forside",
      "under": ""
     },
@@ -712,30 +757,12 @@ window.KILDER_STATUS = {
      "side": "artikel/757b6b0d2cd89021.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI skal udlevere ansættelsesdokumenter til Apple",
-     "dato": "2026-10-13T20:36:44",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
-     "side": "artikel/025ffa23c0156c26.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Cerebras-chef: Personlig AI-assistent kommer i hjemmet",
-     "dato": "2026-10-13T23:05:34",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-     "side": "artikel/b982fab38e0cdceb.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     8
+     9
     ],
     [
      "Ars Technica AI",
@@ -766,8 +793,17 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 33,
-   "som_ekstra": 13,
+   "som_ekstra": 14,
    "seneste": [
+    {
+     "rubrik": "Google og Meta stormer ind i AI-racet",
+     "dato": "",
+     "foerst_set": "2026-10-14T20:18:45",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta lancerer to frontier-modeller, Muse Wonder"
+    },
     {
      "rubrik": "Google udsender apps direkte fra AI Studio til Play Store",
      "dato": "",
@@ -868,13 +904,22 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     "rubrik": "Google Universal Cart samler indkøb fra flere butikker",
+     "dato": "2026-10-15T09:00:00",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
+     "side": "artikel/72902d9fb08155e5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
+     "dato": "2026-10-14T17:11:28",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+     "side": "artikel/b72f25cbab4b4e5b.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "McKinsey lader ansøgere møde AI-kunde i interview",
@@ -887,7 +932,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Microsoft: AI-værktøj retter bias i vejrprognoser",
-     "dato": "2026-10-14T12:05:21",
+     "dato": "2026-10-14T16:05:21",
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
      "side": "artikel/d99057e6f86ea6a1.html",
@@ -896,7 +941,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Gemini vurderer svindlere i Google Messages",
-     "dato": "2026-10-14T12:00:00",
+     "dato": "2026-10-14T16:00:00",
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
      "side": "artikel/dddc82c41680e0dd.html",
@@ -923,7 +968,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Square lancerer bestillingskiosk med samtale-AI",
-     "dato": "2026-10-14T12:00:00",
+     "dato": "2026-10-14T16:00:00",
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
      "side": "artikel/4a6f042ad36ad03b.html",
@@ -936,15 +981,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
      "side": "artikel/bbf21dc9263f9517.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Google og Meta stormer ind i AI-racet",
-     "dato": "2026-10-14T15:06:03",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
-     "side": "artikel/bcd6e2061a074724.html",
      "hvor": "forside",
      "under": ""
     },
@@ -974,25 +1010,16 @@ window.KILDER_STATUS = {
      "side": "artikel/9eae47a00eae4fbf.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Shopify åbner katalog for alle AI-agenter",
-     "dato": "2026-10-13T19:42:42",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
-     "side": "artikel/7d53aa171cd33136.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "TechCrunch AI",
-     8
+     9
     ],
     [
      "Google Gemini",
-     5
+     6
     ],
     [
      "Ars Technica AI",
@@ -1001,6 +1028,10 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      3
+    ],
+    [
+     "Google DeepMind",
+     1
     ]
    ]
   },
@@ -1014,7 +1045,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 12,
+   "i_listen": 13,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1045,6 +1076,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "Epic Games Launcher: vibe-codet og hurtigere end Steam",
+     "dato": "2026-10-14T21:15:56",
+     "foerst_set": "2026-10-14T23:23:45",
+     "link": "https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/",
+     "side": "artikel/435c65b4f2bd74b9.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "RFdiffusion2 designer proteaser der klipper sygdomsproteiner",
      "dato": "2026-10-14T17:10:15",
      "foerst_set": "2026-10-14T20:18:45",
@@ -1063,20 +1103,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Google sender dine AI-apps i Play Store",
-     "dato": "2026-10-13T17:00:39",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store/",
-     "side": "artikel/655bcbd4e6ef7ab3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Gemini 4 Argon udrulles nu til betalende brugere",
      "dato": "2026-10-13T16:00:02",
      "foerst_set": "2026-10-13T19:29:19",
      "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
      "side": "artikel/c8fb00551e71de0f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Google sender dine AI-apps i Play Store",
+     "dato": "2026-10-13T17:00:39",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store/",
+     "side": "artikel/655bcbd4e6ef7ab3.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1140,15 +1180,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-09T21:10:26",
      "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
      "side": "artikel/84b1e1a1c6a0d05b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Nvidia vil gøre robotter sikre med Halos",
-     "dato": "2026-10-08T11:15:33",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
-     "side": "artikel/d5a7e64f4d4efa02.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1277,9 +1308,18 @@ window.KILDER_STATUS = {
    "status": "fejl",
    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
    "hentet": 0,
-   "i_listen": 0,
-   "som_ekstra": 1,
+   "i_listen": 1,
+   "som_ekstra": 2,
    "seneste": [
+    {
+     "rubrik": "Gemini 4 Argon scorer 87 procent i ERQA",
+     "dato": "",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Argon koster en femtedel af rivalernes pris"
+    },
     {
      "rubrik": "Gemini 4 Argon udrulles forsigtigt til cybersikkerhedshold",
      "dato": "",
@@ -1288,11 +1328,24 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
      "Google Gemini",
+     2
+    ],
+    [
+     "The Verge AI",
      1
     ]
    ]

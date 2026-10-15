@@ -1,26 +1,32 @@
 {
-  "opdateret": "2026-10-15T05:05:01.890316+00:00",
+  "opdateret": "2026-10-15T13:39:48.297801+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
+    "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
   ],
-  "input_fingerprint": "a1df8f37ee2c2163",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Fire af seks anbefalinger (Microsoft-vejrprognoser, YouTube AI-mærker, Googles svindeldetektion i Google Messages, RFdiffusion2-proteaser) har tomme kildefelter. Deres konkrete tal og påstande - fx 98 procent af nedbørsmålene, 69 designs/13 virkende, 19 procent - understøttes ikke af noget læst materiale i udgaven.",
-    "YouTube-anbefalingen skriver, at Deezer »har tilføjet et filter« mod AI-sange. Kandidatmaterialet for Deezer siger omvendt, at kontakten først rulles ud inden årets udgang. Påstanden er enten misvisende eller ubelyst.",
-    "Rækkefølgen af hovedhistorierne: Liquid AIs åbne modeludgivelse (LFM2.5-24B-A2B) står efter Anthropics forskningshistorie, men retningen placerer modeludgivelser og åbne vægte som førsteprioritet og forskning bagefter. Argon står korrekt øverst.",
-    "Anbefalingerne er ikke nyeste først: Figma-artiklen fra 15. oktober 04.30 står efter OpenAI-søgsmålet fra 14. oktober 21.11."
-  ],
+  "input_fingerprint": "5623435609c32fce",
+  "forklaring": "Redaktionsmødet fejlede: TidOpbrugt",
   "modelkald": 6,
-  "kildehentninger": 8,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -53,18 +59,18 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
-    },
-    {
-      "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Ukendt eller gentaget artikel"
     }
   ],
   "kildegrundlag": [
+    {
+      "link": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
+      "grundlag": "kildetekst"
+    },
     {
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "grundlag": "kildetekst"
@@ -74,34 +80,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "link": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-      "grundlag": "rss_resume"
-    },
-    {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+      "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "link": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
-    "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 50
 }
