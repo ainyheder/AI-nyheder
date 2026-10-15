@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-15T13:39:48.297801+00:00",
- "artikler_i_alt": 131,
+ "opdateret": "2026-10-15T20:00:28.349873+00:00",
+ "artikler_i_alt": 136,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -15,6 +15,15 @@ window.KILDER_STATUS = {
    "i_listen": 14,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Anthropic giver METR adgang som medarbejder",
+     "dato": "2026-10-15T00:00:00",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+     "side": "artikel/eb77f6484e453b05.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Claude viser valgdata og stemmested",
      "dato": "2026-10-14T00:00:00",
@@ -88,15 +97,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
-     "dato": "2026-09-28T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/claude-sonnet-5-5",
-     "side": "artikel/18d398716f5aa44d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
      "dato": "2026-10-01T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
@@ -106,20 +106,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
+     "dato": "2026-09-28T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/claude-sonnet-5-5",
+     "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser",
      "dato": "2026-09-23T00:00:00",
      "foerst_set": "2026-09-23T19:47:07",
      "link": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
      "side": "artikel/68024e28356d7cb5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Claude skærer ebola-rapport fra dag til time",
-     "dato": "2026-09-22T00:00:00",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://www.anthropic.com/features/ebola-response",
-     "side": "artikel/9dde87711636ad1d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -201,8 +201,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
-   "som_ekstra": 5,
+   "i_listen": 3,
+   "som_ekstra": 4,
    "seneste": [
     {
      "rubrik": "Google lancerer Universal Cart i USA",
@@ -232,15 +232,6 @@ window.KILDER_STATUS = {
      "under": "Google Argon koster en femtedel af rivalernes pris"
     },
     {
-     "rubrik": "Gemini 4 Argon er nu globalt tilgængelig",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Argon koster en femtedel af rivalernes pris"
-    },
-    {
      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
      "dato": "",
      "foerst_set": "2026-10-13T19:29:19",
@@ -248,15 +239,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -289,7 +271,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     6
+     5
     ],
     [
      "Google DeepMind",
@@ -366,18 +348,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 12,
-   "som_ekstra": 5,
+   "i_listen": 13,
+   "som_ekstra": 4,
    "seneste": [
-    {
-     "rubrik": "Meta AI udsender to nye Muse Wonder-modeller",
-     "dato": "",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/12/llm-meta-ai/",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta lancerer to frontier-modeller, Muse Wonder"
-    },
     {
      "rubrik": "Claude Haiku 5.5 matcher GPT-6 Luna på pris",
      "dato": "",
@@ -413,6 +386,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "Simon Willison sender spildata som lydfløjt",
+     "dato": "2026-10-15T19:47:52",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+     "side": "artikel/f5b798307b7f141a.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Anthropic hæver omsætningen næsten 50 pct. før børsnotering",
@@ -512,25 +494,12 @@ window.KILDER_STATUS = {
      "side": "artikel/e0bf43abd8095859.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Simon Willisons ttok kan nu liste modeller",
-     "dato": "2026-10-08T23:34:28",
-     "foerst_set": "2026-10-09T06:35:11",
-     "link": "https://simonwillison.net/2026/Oct/8/ttok/",
-     "side": "artikel/0e3b627310d21f33.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "Anthropic News",
      3
-    ],
-    [
-     "TechCrunch AI",
-     1
     ],
     [
      "Mistral AI",
@@ -549,8 +518,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 43,
-   "som_ekstra": 8,
+   "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "Panay: AI-enheder kan gøre apps overflødige",
+     "dato": "",
+     "foerst_set": "2026-10-15T20:00:28.349873+00:00",
+     "link": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon Bee lancerer to AI-enheder fra 75 dollars"
+    },
+    {
+     "rubrik": "Google lancerer Universal Cart i USA",
+     "dato": "",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Universal Cart samler indkøb fra flere butikker"
+    },
     {
      "rubrik": "YouTube Music mærker AI-genererede sange",
      "dato": "",
@@ -642,13 +629,13 @@ window.KILDER_STATUS = {
      "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
-     "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+     "rubrik": "Rivian åbner for AI-agenter fra Anthropic",
+     "dato": "2026-10-15T15:02:36",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+     "side": "artikel/534bc46e6ba20de3.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Amazon Bee lancerer to AI-enheder fra 75 dollars",
@@ -748,15 +735,6 @@ window.KILDER_STATUS = {
      "side": "artikel/f698b7de989cb7f0.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Industrial Next omstiller fabriksrobotter på minutter",
-     "dato": "2026-10-13T23:00:00",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-     "side": "artikel/757b6b0d2cd89021.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -771,10 +749,6 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      2
-    ],
-    [
-     "Simon Willison AI",
-     1
     ],
     [
      "xAI News",
@@ -792,17 +766,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
-   "som_ekstra": 14,
+   "i_listen": 37,
+   "som_ekstra": 13,
    "seneste": [
     {
-     "rubrik": "Google og Meta stormer ind i AI-racet",
+     "rubrik": "Amazons Bee-enheder foreslår nu varer fra samtaler",
      "dato": "",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
      "side": "",
      "hvor": "under",
-     "under": "Meta lancerer to frontier-modeller, Muse Wonder"
+     "under": "Amazon Bee lancerer to AI-enheder fra 75 dollars"
     },
     {
      "rubrik": "Google udsender apps direkte fra AI Studio til Play Store",
@@ -830,15 +804,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Disney byder 20 millioner dollar på Character.AI-teknologi"
-    },
-    {
-     "rubrik": "Meta lancerer to AI-modeller mod GPT-6 og Claude",
-     "dato": "",
-     "foerst_set": "2026-10-12T18:09:49",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
-     "side": "",
-     "hvor": "under",
-     "under": "Meta lancerer to frontier-modeller, Muse Wonder"
     },
     {
      "rubrik": "Silicon Valley omdøber AI til super intelligence",
@@ -904,11 +869,56 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
+     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
+     "dato": "",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "AI-deepfakes af kendisser får millioner af visninger",
+     "dato": "2026-10-15T10:03:42",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
+     "side": "artikel/8431ec80e60810be.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta Muse gemmer profiler om dine venner",
+     "dato": "2026-10-15T12:21:45",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+     "side": "artikel/253eb4f225982c81.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Nvidia RTX Spark-bærbare kører spil og AI-agenter",
+     "dato": "2026-10-15T10:30:00",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+     "side": "artikel/81d93d8659efbf19.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google Universal Cart samler indkøb fra flere butikker",
      "dato": "2026-10-15T09:00:00",
      "foerst_set": "2026-10-15T13:39:48",
      "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
      "side": "artikel/72902d9fb08155e5.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Hacker kunne aflæse Eiliko-samtaler og fjernhijacke AI",
+     "dato": "2026-10-15T07:00:00",
+     "foerst_set": "2026-10-15T13:39:48",
+     "link": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
+     "side": "artikel/c487c6058b4685cd.html",
      "hvor": "forside",
      "under": ""
     },
@@ -950,7 +960,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "40 statsadvokater vil beskytte Character.AI-brugernes chats",
-     "dato": "2026-10-14T14:47:54",
+     "dato": "2026-10-14T18:47:54",
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
      "side": "artikel/9bdb5eeae001970b.html",
@@ -959,7 +969,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "YouTube mærker AI-sange i afspilleren",
-     "dato": "2026-10-14T14:22:56",
+     "dato": "2026-10-14T18:22:56",
      "foerst_set": "2026-10-14T20:18:45",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
      "side": "artikel/9ba5013167fead00.html",
@@ -974,42 +984,6 @@ window.KILDER_STATUS = {
      "side": "artikel/4a6f042ad36ad03b.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "OpenAI anklager tidligere ansat for at stjæle filer",
-     "dato": "2026-10-14T12:43:24",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-     "side": "artikel/bbf21dc9263f9517.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Twin Health tvilling forudsiger glukose med farvekoder",
-     "dato": "2026-10-14T13:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
-     "side": "artikel/3c346375618a4496.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic advarer om selvreplikerende AI-orme",
-     "dato": "2026-10-14T15:19:02",
-     "foerst_set": "2026-10-14T13:58:43",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
-     "side": "artikel/0436ab56c6264f38.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Epic Games Launcher er vibe coded",
-     "dato": "2026-10-14T13:55:02",
-     "foerst_set": "2026-10-14T13:58:43",
-     "link": "https://www.theverge.com/games/1010751/epic-games-launcher-vibe-coded-ai-linux",
-     "side": "artikel/9eae47a00eae4fbf.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1018,11 +992,11 @@ window.KILDER_STATUS = {
      9
     ],
     [
-     "Google Gemini",
+     "Ars Technica AI",
      6
     ],
     [
-     "Ars Technica AI",
+     "Google Gemini",
      5
     ],
     [
@@ -1045,9 +1019,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
-   "som_ekstra": 3,
+   "i_listen": 14,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "YouTube Music mærker sange lavet med AI",
+     "dato": "",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://arstechnica.com/ai/2026/10/youtube-music-begins-labeling-ai-songs/",
+     "side": "",
+     "hvor": "under",
+     "under": "YouTube mærker AI-sange i afspilleren"
+    },
     {
      "rubrik": "OpenAI-ingeniør arresteret for spionage i mødelokale",
      "dato": "",
@@ -1074,6 +1057,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "FTC undersøger Anthropic og OpenAI for forbrugerskader",
+     "dato": "2026-10-15T15:43:24",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+     "side": "artikel/f50c5ed4ecd63b19.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Epic Games Launcher: vibe-codet og hurtigere end Steam",
@@ -1173,21 +1165,12 @@ window.KILDER_STATUS = {
      "side": "artikel/791f9de3f5f5dec8.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Nikon kårer ny Small World-vinder efter AI-diskvalifikation",
-     "dato": "2026-10-09T18:44:06",
-     "foerst_set": "2026-10-09T21:10:26",
-     "link": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
-     "side": "artikel/84b1e1a1c6a0d05b.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "TechCrunch AI",
