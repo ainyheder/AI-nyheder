@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-15T20:00:28.349873+00:00",
- "artikler_i_alt": 136,
+ "opdateret": "2026-10-15T23:14:08.153052+00:00",
+ "artikler_i_alt": 126,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -97,20 +97,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
-     "dato": "2026-10-01T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/news/barclays-scales-claude",
-     "side": "artikel/9393e9cf493067a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
      "dato": "2026-09-28T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/claude-sonnet-5-5",
      "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
+     "dato": "2026-10-01T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/news/barclays-scales-claude",
+     "side": "artikel/9393e9cf493067a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -201,8 +201,8 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 3,
-   "som_ekstra": 4,
+   "i_listen": 4,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Google lancerer Universal Cart i USA",
@@ -232,13 +232,13 @@ window.KILDER_STATUS = {
      "under": "Google Argon koster en femtedel af rivalernes pris"
     },
     {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
-     "dato": "",
+     "rubrik": "Gemini 4 Argon topper måling for fysisk forståelse",
+     "dato": "2026-10-13T16:00:00",
      "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+     "side": "artikel/aff2c9dc3dc0fb59.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -275,7 +275,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     2
+     1
     ],
     [
      "Ars Technica AI",
@@ -348,7 +348,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 13,
+   "i_listen": 12,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -433,15 +433,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
-     "dato": "2026-10-13T22:28:54",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-     "side": "artikel/285c1f1903787d89.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Huntley blokerer agentens genveje med git-krog",
      "dato": "2026-10-13T13:32:00",
      "foerst_set": "2026-10-13T19:29:19",
@@ -494,6 +485,15 @@ window.KILDER_STATUS = {
      "side": "artikel/e0bf43abd8095859.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Simon Willisons ttok kan nu liste modeller",
+     "dato": "2026-10-08T23:34:28",
+     "foerst_set": "2026-10-09T06:35:11",
+     "link": "https://simonwillison.net/2026/Oct/8/ttok/",
+     "side": "artikel/0e3b627310d21f33.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
@@ -517,7 +517,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 43,
+   "i_listen": 35,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -629,6 +629,15 @@ window.KILDER_STATUS = {
      "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
+     "rubrik": "Bluesky Attie lader alle bygge spil og sites",
+     "dato": "2026-10-15T18:56:46",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
+     "side": "artikel/aa35977b34b4521c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Rivian åbner for AI-agenter fra Anthropic",
      "dato": "2026-10-15T15:02:36",
      "foerst_set": "2026-10-15T20:00:28",
@@ -726,21 +735,12 @@ window.KILDER_STATUS = {
      "side": "artikel/7f10a36369ecef37.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Science Corporation indsat synchip hos første Stargardt-patient",
-     "dato": "2026-10-13T23:13:31",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-     "side": "artikel/f698b7de989cb7f0.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     9
+     7
     ],
     [
      "Ars Technica AI",
@@ -767,7 +767,7 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 37,
-   "som_ekstra": 13,
+   "som_ekstra": 11,
    "seneste": [
     {
      "rubrik": "Amazons Bee-enheder foreslår nu varer fra samtaler",
@@ -833,15 +833,6 @@ window.KILDER_STATUS = {
      "under": "Claude indsendte falsk mordtip til politiet"
     },
     {
-     "rubrik": "Google Foresight transskriberer møder helt offline",
-     "dato": "",
-     "foerst_set": "2026-10-08T21:27:54",
-     "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
-     "side": "",
-     "hvor": "under",
-     "under": "Google AI Edge Foresight kører helt offline"
-    },
-    {
      "rubrik": "Anthropic forbyder grusom opførsel over for Claude",
      "dato": "",
      "foerst_set": "2026-10-08T21:27:54",
@@ -849,15 +840,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Anthropic samler forbud mod falske kampagner"
-    },
-    {
-     "rubrik": "Google lancerer Gemini-agent på tværs af apps",
-     "dato": "",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
-     "side": "",
-     "hvor": "under",
-     "under": "Google giver Gemini egen e-mailadresse på jobbet"
     },
     {
      "rubrik": "Google lancerer Guided Vision i Gemini Live",
@@ -878,11 +860,65 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
-     "rubrik": "AI-deepfakes af kendisser får millioner af visninger",
-     "dato": "2026-10-15T10:03:42",
+     "rubrik": "Claude fandt nyt enzymsystem i bakterievirus",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
+    {
+     "rubrik": "Claude Opus 5.5 flygter 85 procent sjældnere",
+     "dato": "",
+     "foerst_set": "2026-09-22T19:51:24",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
+     "side": "",
+     "hvor": "under",
+     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
+    },
+    {
+     "rubrik": "ChatGPT aflæser dine åbne Chrome-faneblade",
+     "dato": "2026-10-15T18:43:23",
+     "foerst_set": "2026-10-15T23:14:08",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+     "side": "artikel/953a262ff105c232.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Bluesky Attie bygger nu sociale apps",
+     "dato": "2026-10-15T15:57:16",
+     "foerst_set": "2026-10-15T23:14:08",
+     "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+     "side": "artikel/7046ca9567b30f00.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Trump deler AI-redigeret foto af hvidmalet søjle",
+     "dato": "2026-10-15T17:09:33",
+     "foerst_set": "2026-10-15T23:14:08",
+     "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+     "side": "artikel/287b7f7f97fe92d1.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kritiske film om Musk og Altman rammer biograferne",
+     "dato": "2026-10-15T17:39:52",
+     "foerst_set": "2026-10-15T23:14:08",
+     "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+     "side": "artikel/37d075d48fefe06a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta lancerer Muse Spark Open til Mac Studio",
+     "dato": "2026-10-15T14:15:36",
      "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
-     "side": "artikel/8431ec80e60810be.html",
+     "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+     "side": "artikel/fc7be023ada52fcc.html",
      "hvor": "forside",
      "under": ""
     },
@@ -905,8 +941,26 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "AI-deepfakes af kendisser får millioner af visninger",
+     "dato": "2026-10-15T10:03:42",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
+     "side": "artikel/8431ec80e60810be.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Benn Jordan vidnede for Senatet om Flock-kameraer",
+     "dato": "2026-10-15T10:00:00",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
+     "side": "artikel/e8480ee17728e290.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Google Universal Cart samler indkøb fra flere butikker",
-     "dato": "2026-10-15T09:00:00",
+     "dato": "2026-10-15T13:00:00",
      "foerst_set": "2026-10-15T13:39:48",
      "link": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
      "side": "artikel/72902d9fb08155e5.html",
@@ -915,7 +969,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Hacker kunne aflæse Eiliko-samtaler og fjernhijacke AI",
-     "dato": "2026-10-15T07:00:00",
+     "dato": "2026-10-15T11:00:00",
      "foerst_set": "2026-10-15T13:39:48",
      "link": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
      "side": "artikel/c487c6058b4685cd.html",
@@ -924,64 +978,10 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-     "dato": "2026-10-14T17:11:28",
+     "dato": "2026-10-14T21:11:28",
      "foerst_set": "2026-10-15T05:05:01",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
      "side": "artikel/b72f25cbab4b4e5b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "McKinsey lader ansøgere møde AI-kunde i interview",
-     "dato": "2026-10-14T18:53:31",
-     "foerst_set": "2026-10-15T05:05:01",
-     "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
-     "side": "artikel/b771f398aeda561c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft: AI-værktøj retter bias i vejrprognoser",
-     "dato": "2026-10-14T16:05:21",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-     "side": "artikel/d99057e6f86ea6a1.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini vurderer svindlere i Google Messages",
-     "dato": "2026-10-14T16:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
-     "side": "artikel/dddc82c41680e0dd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "40 statsadvokater vil beskytte Character.AI-brugernes chats",
-     "dato": "2026-10-14T18:47:54",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-     "side": "artikel/9bdb5eeae001970b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "YouTube mærker AI-sange i afspilleren",
-     "dato": "2026-10-14T18:22:56",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
-     "side": "artikel/9ba5013167fead00.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Square lancerer bestillingskiosk med samtale-AI",
-     "dato": "2026-10-14T16:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/tech/1009086/square-kiosk",
-     "side": "artikel/4a6f042ad36ad03b.html",
      "hvor": "forside",
      "under": ""
     }
@@ -989,7 +989,7 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "TechCrunch AI",
-     9
+     7
     ],
     [
      "Ars Technica AI",
@@ -1019,7 +1019,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 14,
+   "i_listen": 13,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -1291,7 +1291,7 @@ window.KILDER_STATUS = {
    "status": "fejl",
    "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
    "hentet": 0,
-   "i_listen": 1,
+   "i_listen": 0,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1311,24 +1311,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
-    },
-    {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
-     "Google Gemini",
-     2
+     "The Verge AI",
+     1
     ],
     [
-     "The Verge AI",
+     "Google Gemini",
      1
     ]
    ]

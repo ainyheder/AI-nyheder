@@ -1,34 +1,24 @@
 {
-  "opdateret": "2026-10-15T20:00:28.349873+00:00",
+  "opdateret": "2026-10-15T23:14:08.153052+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-    "https://mistral.ai/news/timestral/",
-    "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/"
+    "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+    "https://mistral.ai/news/timestral/"
   ],
-  "input_fingerprint": "5cffd686a99ebb18",
+  "input_fingerprint": "dce76fd756b0fe04",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Forsiderubrikken 'Meta åbner Muse Spark – Apple hjælper på Mac' navngiver den forkerte model. Begge kilder taler om Muse Spark Open (816B MoE); Muse Spark er ifølge omtalen af Muse Wonder en separat letvægtsmodel i samme serie. Rubrikken skal hedde Muse Spark Open – præcise modelnavne er et krav, og overskriften ændrer, hvilken model læseren trives er åbnet.",
-    "Timestral-artiklen: 'Mistral understreger dog selv, at resultaterne er producentens egne og indsendt til leaderboardne – ikke uafhængig verifikation.' Kilden siger kun, at 'Results have been submitted to the GIFT-Eval and TIME leaderboards'; Mistral fremhæver ikke selv manglende uafhængig verifikation. Egne forbehold må ikke tilskrives producenten.",
-    "Timestral-artiklen: påstanden om 'en teknisk rapport, der endnu ikke foreligger i fuld form' støttes ikke af kilden, der alene skriver, at detaljerne 'will be described in detail in the technical report'. Det er en fyldt skabelon-plads, ikke belæg.",
-    "Små præcisionsfejl: overskriften 'Apple kører modellen på to Mac-stations' (dansk fejl, og kilden siger to M5 Ultra Mac Studios), og nøgletalslabellen '83 opslag – ... top 10'/'Afhæng mellem 123M og 209M models score' er misvisende formuleringer (83 er antal entries på GIFT-Eval; 0,2 % er afstanden mellem scoringerne)."
-  ],
-  "modelkald": 6,
-  "kildehentninger": 6,
+  "modelkald": 4,
+  "kildehentninger": 7,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -40,10 +30,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -52,12 +38,8 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
     },
     {
       "vaerktoej": "laes_kilde",
@@ -74,7 +56,7 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
       "grundlag": "kildetekst"
     },
     {
@@ -82,22 +64,26 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "link": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "link": "https://huggingface.co/blog/flux-3",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
       "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "grundlag": "rss_resume"
     }
   ],
   "udgivet_udvalg": [
+    "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
     "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
     "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/"
   ],
-  "afventer_artikler": 56
+  "afventer_artikler": 52
 }
