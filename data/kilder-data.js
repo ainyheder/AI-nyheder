@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-14T23:23:45.744266+00:00",
- "artikler_i_alt": 121,
+ "opdateret": "2026-10-15T05:05:01.890316+00:00",
+ "artikler_i_alt": 126,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -201,7 +201,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -230,6 +230,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Google Argon koster en femtedel af rivalernes pris"
+    },
+    {
+     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
+     "dato": "2026-10-02T15:00:00",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+     "side": "artikel/bfe2b156957ee716.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -358,17 +367,8 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 9,
-   "som_ekstra": 6,
+   "som_ekstra": 5,
    "seneste": [
-    {
-     "rubrik": "Gemini 4 Argon pris fordobles 1. december",
-     "dato": "",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Argon koster en femtedel af rivalernes pris"
-    },
     {
      "rubrik": "Meta AI udsender to nye Muse Wonder-modeller",
      "dato": "",
@@ -502,10 +502,6 @@ window.KILDER_STATUS = {
      3
     ],
     [
-     "The Verge AI",
-     1
-    ],
-    [
      "TechCrunch AI",
      1
     ],
@@ -525,7 +521,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 39,
+   "i_listen": 41,
    "som_ekstra": 8,
    "seneste": [
     {
@@ -628,6 +624,24 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Ricursive Intelligence sigter mod chipdesign på én uge",
+     "dato": "2026-10-15T01:01:32",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+     "side": "artikel/7624c31011dc0b4f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gudea rejser 7 mio. dollar til krisevarsling",
+     "dato": "2026-10-15T00:00:00",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+     "side": "artikel/1919b268be460d4b.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Flock siger kun skud, hjemmesiden nævner mere",
      "dato": "2026-10-14T21:30:33",
      "foerst_set": "2026-10-14T23:23:45",
@@ -716,24 +730,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b982fab38e0cdceb.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Cerebras-chef: Dommedagssnak skader AI-branchen",
-     "dato": "2026-10-13T22:36:59",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-     "side": "artikel/ef5219e107b24173.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Amex fanger købsintention før AI-agenten handler",
-     "dato": "2026-10-13T13:00:00",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
-     "side": "artikel/65a5bbabecb61619.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -769,7 +765,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 31,
+   "i_listen": 33,
    "som_ekstra": 13,
    "seneste": [
     {
@@ -881,6 +877,15 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
+     "rubrik": "McKinsey lader ansøgere møde AI-kunde i interview",
+     "dato": "2026-10-14T18:53:31",
+     "foerst_set": "2026-10-15T05:05:01",
+     "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+     "side": "artikel/b771f398aeda561c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Microsoft: AI-værktøj retter bias i vejrprognoser",
      "dato": "2026-10-14T12:05:21",
      "foerst_set": "2026-10-14T20:18:45",
@@ -935,6 +940,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Google og Meta stormer ind i AI-racet",
+     "dato": "2026-10-14T15:06:03",
+     "foerst_set": "2026-10-14T20:18:45",
+     "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+     "side": "artikel/bcd6e2061a074724.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Twin Health tvilling forudsiger glukose med farvekoder",
      "dato": "2026-10-14T13:00:00",
      "foerst_set": "2026-10-14T20:18:45",
@@ -945,7 +959,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Anthropic advarer om selvreplikerende AI-orme",
-     "dato": "2026-10-14T11:19:02",
+     "dato": "2026-10-14T15:19:02",
      "foerst_set": "2026-10-14T13:58:43",
      "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
      "side": "artikel/0436ab56c6264f38.html",
@@ -954,7 +968,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Epic Games Launcher er vibe coded",
-     "dato": "2026-10-14T09:55:02",
+     "dato": "2026-10-14T13:55:02",
      "foerst_set": "2026-10-14T13:58:43",
      "link": "https://www.theverge.com/games/1010751/epic-games-launcher-vibe-coded-ai-linux",
      "side": "artikel/9eae47a00eae4fbf.html",
@@ -967,24 +981,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
      "side": "artikel/7d53aa171cd33136.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "OpenAI-ingeniør anholdt for at plante optager",
-     "dato": "2026-10-13T20:45:25",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-     "side": "artikel/40b44721e47fb99f.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft opretter Xbox Labs til AI-mods",
-     "dato": "2026-10-13T19:00:48",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
-     "side": "artikel/8d2f4b6c365d8958.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1005,10 +1001,6 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      3
-    ],
-    [
-     "Simon Willison AI",
-     1
     ]
    ]
   },

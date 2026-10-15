@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-14T23:52:21.118543+00:00",
+ "genereret": "2026-10-15T05:37:55.300216+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-14T23:23:45.744266+00:00",
-  "antal": 121,
-  "med_billede": 76,
-  "paa_dansk": 121,
+  "opdateret": "2026-10-15T05:05:01.890316+00:00",
+  "antal": 126,
+  "med_billede": 79,
+  "paa_dansk": 126,
   "kategorier": {
-   "Lanceringer": 24,
+   "Lanceringer": 25,
+   "Samfund \u0026 etik": 26,
    "Forskning": 12,
    "Hverdags-AI": 22,
    "Politik \u0026 jura": 12,
-   "Samfund \u0026 etik": 26,
-   "Penge \u0026 marked": 23,
-   "Nyheder": 2
+   "Penge \u0026 marked": 24,
+   "Nyheder": 5
   },
   "kilder": {
-   "The Verge AI": 31,
-   "TechCrunch AI": 39,
+   "The Verge AI": 33,
+   "TechCrunch AI": 41,
    "Ars Technica AI": 12,
    "Simon Willison AI": 9,
    "Anthropic News": 14,
    "MIT Tech Review AI": 6,
    "xAI News": 1,
    "Mistral AI": 3,
-   "Google Gemini": 4,
+   "Google Gemini": 5,
    "Hugging Face": 2
   },
   "udvalgte": [
@@ -254,6 +254,36 @@ window.KOMMANDO_DATA = {
   ],
   "seneste": [
    {
+    "titel": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+    "rubrik": "Ricursive Intelligence sigter mod chipdesign på én uge",
+    "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+    "side": "artikel/7624c31011dc0b4f.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-15T01:01:32+00:00",
+    "billede": "data/img/fc058a226cd2f12c.jpg"
+   },
+   {
+    "titel": "Gudea leverages AI to help organizations prevent social media crises before they erupt",
+    "rubrik": "Gudea rejser 7 mio. dollar til krisevarsling",
+    "link": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+    "side": "artikel/1919b268be460d4b.html",
+    "kategori": "Nyheder",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-15T00:00:00+00:00",
+    "billede": "data/img/8cc7c577e684e8d6.webp"
+   },
+   {
+    "titel": "McKinsey is making job applicants spar with a fake AI client",
+    "rubrik": "McKinsey lader ansøgere møde AI-kunde i interview",
+    "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+    "side": "artikel/b771f398aeda561c.html",
+    "kategori": "Nyheder",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-14T18:53:31-04:00",
+    "billede": ""
+   },
+   {
     "titel": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
     "rubrik": "Flock siger kun skud, hjemmesiden nævner mere",
     "link": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
@@ -261,6 +291,16 @@ window.KOMMANDO_DATA = {
     "kategori": "Nyheder",
     "kilde": "TechCrunch AI",
     "dato": "2026-10-14T21:30:33+00:00",
+    "billede": "data/img/6c649885c97405e3.webp"
+   },
+   {
+    "titel": "Anthropic’s self-replicating AI warning is alarming deja vu",
+    "rubrik": "Anthropic advarer om selvreplikerende AI-orme",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+    "side": "artikel/0436ab56c6264f38.html",
+    "kategori": "Samfund \u0026 etik",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-14T15:19:02+00:00",
     "billede": ""
    },
    {
@@ -324,16 +364,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/3b8c9ee66d9ee8b1.webp"
    },
    {
-    "titel": "Anthropic’s self-replicating AI warning is alarming deja vu",
-    "rubrik": "Anthropic advarer om selvreplikerende AI-orme",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
-    "side": "artikel/0436ab56c6264f38.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-14T11:19:02-04:00",
-    "billede": ""
-   },
-   {
     "titel": "Square’s new kiosk lets you talk to AI for help with your order",
     "rubrik": "Square lancerer bestillingskiosk med samtale-AI",
     "link": "https://www.theverge.com/tech/1009086/square-kiosk",
@@ -342,46 +372,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-14T12:00:00-04:00",
     "billede": ""
-   },
-   {
-    "titel": "Preparing for the 2026 US midterms",
-    "rubrik": "Claude viser valgdata og stemmested",
-    "link": "https://www.anthropic.com/news/2026-us-midterms",
-    "side": "artikel/a326a9536354e596.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Anthropic News",
-    "dato": "2026-10-14T00:00:00+00:00",
-    "billede": ""
-   },
-   {
-    "titel": "AI is mass decompiling games. That's both awesome and scary.",
-    "rubrik": "Popcar: AI decompilerer spil i massevis",
-    "link": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
-    "side": "artikel/bddfd6e5b0debcf2.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-14T16:26:53+00:00",
-    "billede": "data/img/16ff07ac3a82f1b1.webp"
-   },
-   {
-    "titel": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-    "rubrik": "OpenAI anklager tidligere ansat for at stjæle filer",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-    "side": "artikel/bbf21dc9263f9517.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-14T12:43:24-04:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-14T23:23:45.744266+00:00",
+  "opdateret": "2026-10-15T05:05:01.890316+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Dubletter skal være kendte, læste og forskellige historier",
-  "modelkald": 7,
-  "kildehentninger": 6,
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 6,
+  "kildehentninger": 8,
   "regelbaseret_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
    "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
@@ -394,23 +394,7 @@ window.KOMMANDO_DATA = {
   ],
   "vaerktoejer": [
    {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "find_kilder",
+    "vaerktoej": "laes_kilde",
     "fejl": null
    },
    {
@@ -438,16 +422,20 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel f9f5ac5db3b603f4: skriveopgave har 1145 tegn; skriv 12-900 tegn i dette felt"
-   },
-   {
-    "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel f9f5ac5db3b603f4: skriveopgave har 1007 tegn; skriv 12-900 tegn i dette felt"
+    "vaerktoej": "laes_kilde",
+    "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
     "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": null
    }
   ],
   "kildegrundlag": [
@@ -460,7 +448,7 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+    "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
     "grundlag": "kildetekst"
    },
    {
@@ -468,17 +456,25 @@ window.KOMMANDO_DATA = {
     "grundlag": "rss_resume"
    },
    {
-    "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-14T23:23:45.133076+00:00",
+  "opdateret": "2026-10-15T05:05:01.415534+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -834,8 +830,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-14T23:23:45.744266+00:00",
-  "artikler_i_alt": 121,
+  "opdateret": "2026-10-15T05:05:01.890316+00:00",
+  "artikler_i_alt": 126,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -1012,7 +1008,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 3,
     "seneste": [
      {
@@ -1041,6 +1037,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google Argon koster en femtedel af rivalernes pris"
+     },
+     {
+      "rubrik": "Gemini 4 Argon skriver en million tokens ud",
+      "dato": "2026-10-02T15:00:00",
+      "foerst_set": "2026-10-02T20:55:07",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "side": "artikel/bfe2b156957ee716.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Gemini Live beskriver verden for blinde",
@@ -1148,17 +1153,8 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 9,
-    "som_ekstra": 6,
+    "som_ekstra": 5,
     "seneste": [
-     {
-      "rubrik": "Gemini 4 Argon pris fordobles 1. december",
-      "dato": "",
-      "foerst_set": "2026-10-13T23:50:16",
-      "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google Argon koster en femtedel af rivalernes pris"
-     },
      {
       "rubrik": "Meta AI udsender to nye Muse Wonder-modeller",
       "dato": "",
@@ -1257,6 +1253,15 @@ window.KOMMANDO_DATA = {
       "side": "artikel/f9c6e1e0e5f65525.html",
       "hvor": "forside",
       "under": ""
+     },
+     {
+      "rubrik": "Simon Willisons blogfunktion blev bygget med stemmen",
+      "dato": "2026-10-09T12:54:06",
+      "foerst_set": "2026-10-09T15:32:07",
+      "link": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+      "side": "artikel/37449593cc208a97.html",
+      "hvor": "forside",
+      "under": ""
      }
     ]
    },
@@ -1270,7 +1275,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 39,
+    "i_listen": 41,
     "som_ekstra": 8,
     "seneste": [
      {
@@ -1373,11 +1378,11 @@ window.KOMMANDO_DATA = {
       "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
      },
      {
-      "rubrik": "Flock siger kun skud, hjemmesiden nævner mere",
-      "dato": "2026-10-14T21:30:33",
-      "foerst_set": "2026-10-14T23:23:45",
-      "link": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
-      "side": "artikel/b212bc9f8ea1f7b3.html",
+      "rubrik": "Ricursive Intelligence sigter mod chipdesign på én uge",
+      "dato": "2026-10-15T01:01:32",
+      "foerst_set": "2026-10-15T05:05:01",
+      "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+      "side": "artikel/7624c31011dc0b4f.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1393,7 +1398,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 31,
+    "i_listen": 33,
     "som_ekstra": 13,
     "seneste": [
      {
@@ -1776,19 +1781,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-14T23:52:15.371719+00:00",
+  "opdateret": "2026-10-15T05:37:47.882531+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 28,
-  "sidevisninger_i_alt": 46,
+  "besoeg_i_alt": 27,
+  "sidevisninger_i_alt": 45,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-15",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-09-16",
     "besoeg": 0,
@@ -1933,13 +1933,18 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-14",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-15",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 21,
-    "visninger": 36
+    "besoeg": 20,
+    "visninger": 35
    },
    {
     "sti": "/artikel/024315d82a76560f.html",
@@ -2032,7 +2037,7 @@ window.KOMMANDO_DATA = {
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 27
+    "besoeg": 26
    },
    {
     "fra": "www.google.com",
