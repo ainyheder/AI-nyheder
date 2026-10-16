@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-16T05:34:47.986965+00:00",
+ "genereret": "2026-10-16T13:59:13.275529+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,29 +195,29 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-16T04:53:41.312812+00:00",
-  "antal": 130,
-  "med_billede": 81,
-  "paa_dansk": 130,
+  "opdateret": "2026-10-16T13:29:30.248358+00:00",
+  "antal": 128,
+  "med_billede": 84,
+  "paa_dansk": 128,
   "kategorier": {
-   "Lanceringer": 34,
+   "Lanceringer": 32,
    "Penge \u0026 marked": 20,
    "Politik \u0026 jura": 16,
-   "Forskning": 12,
+   "Forskning": 13,
    "Hverdags-AI": 19,
-   "Samfund \u0026 etik": 29
+   "Samfund \u0026 etik": 28
   },
   "kilder": {
    "TechCrunch AI": 36,
-   "The Verge AI": 36,
-   "Google DeepMind": 4,
+   "The Verge AI": 35,
+   "Google DeepMind": 5,
    "Simon Willison AI": 12,
    "Ars Technica AI": 13,
+   "Anthropic News": 13,
    "MIT Tech Review AI": 6,
-   "Anthropic News": 14,
    "xAI News": 1,
    "Mistral AI": 3,
-   "Google Gemini": 4,
+   "Google Gemini": 3,
    "Hugging Face": 1
   },
   "udvalgte": [
@@ -253,6 +253,16 @@ window.KOMMANDO_DATA = {
    }
   ],
   "seneste": [
+   {
+    "titel": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+    "rubrik": "Google Antigravity finder ny peptidkandidat",
+    "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+    "side": "artikel/ba028f76ed47c779.html",
+    "kategori": "Forskning",
+    "kilde": "Google DeepMind",
+    "dato": "2026-10-15T16:08:03+00:00",
+    "billede": "data/img/86bd60fe95e3fb28.webp"
+   },
    {
     "titel": "Meta launches an open-weight AI model that runs on Macs",
     "rubrik": "Meta lancerer Muse Spark Open til Mac",
@@ -301,7 +311,17 @@ window.KOMMANDO_DATA = {
     "kategori": "Hverdags-AI",
     "kilde": "The Verge AI",
     "dato": "2026-10-15T18:35:55-04:00",
-    "billede": ""
+    "billede": "data/img/4264665535424c82.jpg"
+   },
+   {
+    "titel": "Anthropic is letting METR researchers look under the hood with employee-level access",
+    "rubrik": "Anthropic åbner systemer for METR-forskere",
+    "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+    "side": "artikel/6b32532a16524cf4.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-15T19:14:26+00:00",
+    "billede": "data/img/52334efbf29b9155.webp"
    },
    {
     "titel": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
@@ -334,16 +354,6 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/aea7e5a3291fa4bc.webp"
    },
    {
-    "titel": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
-    "rubrik": "Nvidia RTX Spark-bærbare kører spil og AI-agenter",
-    "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
-    "side": "artikel/81d93d8659efbf19.html",
-    "kategori": "Lanceringer",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-15T10:30:00-04:00",
-    "billede": "data/img/a12500ee49d7c2f6.webp"
-   },
-   {
     "titel": "AI agents are coming to Rivian’s cars",
     "rubrik": "Rivian åbner for AI-agenter fra Anthropic",
     "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
@@ -362,26 +372,16 @@ window.KOMMANDO_DATA = {
     "kilde": "The Verge AI",
     "dato": "2026-10-15T10:03:42-04:00",
     "billede": "data/img/6bf6c918db318a97.webp"
-   },
-   {
-    "titel": "An update on independent evaluators",
-    "rubrik": "Anthropic giver METR adgang som medarbejder",
-    "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-    "side": "artikel/eb77f6484e453b05.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "Anthropic News",
-    "dato": "2026-10-15T00:00:00+00:00",
-    "billede": ""
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-16T04:53:41.312812+00:00",
+  "opdateret": "2026-10-16T13:29:30.248358+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 4,
-  "kildehentninger": 7,
+  "kildehentninger": 6,
   "regelbaseret_udvalg": [
    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
@@ -434,21 +434,17 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
     "vaerktoej": "aflever_udgave",
     "fejl": null
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+    "link": "https://huggingface.co/blog/reflection-beam",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://mistral.ai/news/timestral/",
+    "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
     "grundlag": "kildetekst"
    },
    {
@@ -456,15 +452,11 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://huggingface.co/blog/meta-muse-spark-open",
-    "grundlag": "kildetekst"
-   },
-   {
     "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+    "link": "https://mistral.ai/news/timestral/",
     "grundlag": "kildetekst"
    },
    {
@@ -474,7 +466,7 @@ window.KOMMANDO_DATA = {
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-16T04:53:40.906619+00:00",
+  "opdateret": "2026-10-16T13:29:29.544681+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -830,8 +822,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-16T04:53:41.312812+00:00",
-  "artikler_i_alt": 130,
+  "opdateret": "2026-10-16T13:29:30.248358+00:00",
+  "artikler_i_alt": 128,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -843,17 +835,17 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 14,
-    "i_listen": 14,
-    "som_ekstra": 0,
+    "i_listen": 13,
+    "som_ekstra": 1,
     "seneste": [
      {
       "rubrik": "Anthropic giver METR adgang som medarbejder",
-      "dato": "2026-10-15T00:00:00",
+      "dato": "",
       "foerst_set": "2026-10-15T20:00:28",
       "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "side": "artikel/eb77f6484e453b05.html",
-      "hvor": "forside",
-      "under": ""
+      "side": "",
+      "hvor": "under",
+      "under": "Anthropic åbner systemer for METR-forskere"
      },
      {
       "rubrik": "Claude viser valgdata og stemmested",
@@ -1008,7 +1000,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 4,
+    "i_listen": 3,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -1073,15 +1065,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 3.8 Live tænker, mens den taler"
-     },
-     {
-      "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-      "dato": "2026-10-02T15:00:00",
-      "foerst_set": "2026-10-02T20:55:07",
-      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "side": "artikel/bfe2b156957ee716.html",
-      "hvor": "forside",
-      "under": ""
      },
      {
       "rubrik": "Gemini Live beskriver verden for blinde",
@@ -1297,7 +1280,7 @@ window.KOMMANDO_DATA = {
     "som_ekstra": 9,
     "seneste": [
      {
-      "rubrik": "Panos Panay tror generation dropper apps",
+      "rubrik": "Panay: Bee-enheder peger mod en fremtid uden apps",
       "dato": "",
       "foerst_set": "2026-10-15T20:00:28.349873+00:00",
       "link": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
@@ -1416,7 +1399,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 36,
+    "i_listen": 35,
     "som_ekstra": 14,
     "seneste": [
      {
@@ -1754,7 +1737,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 15,
-    "i_listen": 4,
+    "i_listen": 5,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1783,6 +1766,15 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Gemini 3.8 Live tænker, mens den taler"
+     },
+     {
+      "rubrik": "Google Antigravity finder ny peptidkandidat",
+      "dato": "2026-10-15T16:08:03",
+      "foerst_set": "2026-10-16T04:53:41",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Gemini 4 Argon lærer bevægelse fra video",
@@ -1853,12 +1845,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-16T05:34:44.046851+00:00",
+  "opdateret": "2026-10-16T13:59:03.364457+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 27,
-  "sidevisninger_i_alt": 45,
+  "besoeg_i_alt": 20,
+  "sidevisninger_i_alt": 46,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -2016,45 +2008,15 @@ window.KOMMANDO_DATA = {
    {
     "sti": "/",
     "besoeg": 20,
-    "visninger": 35
+    "visninger": 43
    },
    {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
+    "sti": "/faq.html",
+    "besoeg": 0,
     "visninger": 1
    },
    {
     "sti": "/om.html",
-    "besoeg": 1,
-    "visninger": 2
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/cookies.html",
-    "besoeg": 1,
-    "visninger": 1
-   },
-   {
-    "sti": "/faq.html",
     "besoeg": 0,
     "visninger": 1
    },
@@ -2064,79 +2026,17 @@ window.KOMMANDO_DATA = {
     "visninger": 1
    }
   ],
-  "artikler": [
-   {
-    "sti": "/artikel/024315d82a76560f.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Robin Williams' børn genåbner hans Instagram mod AI-misbrug",
-    "kategori": "Samfund \u0026 etik",
-    "dato": "2026-08-18"
-   },
-   {
-    "sti": "/artikel/020fc8cb0d6ecf06.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Nscale børsnotering hviler på kun to kunder",
-    "kategori": "Penge \u0026 marked",
-    "dato": "2026-09-22"
-   },
-   {
-    "sti": "/artikel/009e61788df2b717.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "PISA: AI-brugere klarer sig dårligere i skolen",
-    "kategori": "Forskning",
-    "dato": "2026-09-09"
-   },
-   {
-    "sti": "/artikel/0081d2e6c395e5ff.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "OpenAI bygger super-hacker til at finde svagheder",
-    "kategori": "Lanceringer",
-    "dato": "2026-07-15"
-   },
-   {
-    "sti": "/artikel/01be0a47d716a83c.html",
-    "besoeg": 1,
-    "visninger": 1,
-    "rubrik": "Trump sagsøgt: Skjulte AI-regler skal frem i lyset",
-    "kategori": "Politik \u0026 jura",
-    "dato": "2026-09-02"
-   }
-  ],
+  "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 26
+    "besoeg": 19
    },
    {
     "fra": "www.google.com",
     "besoeg": 1
    }
   ],
-  "laeste_temaer": [
-   {
-    "navn": "Samfund \u0026 etik",
-    "visninger": 1
-   },
-   {
-    "navn": "Penge \u0026 marked",
-    "visninger": 1
-   },
-   {
-    "navn": "Forskning",
-    "visninger": 1
-   },
-   {
-    "navn": "Lanceringer",
-    "visninger": 1
-   },
-   {
-    "navn": "Politik \u0026 jura",
-    "visninger": 1
-   }
-  ]
+  "laeste_temaer": []
  }
 };

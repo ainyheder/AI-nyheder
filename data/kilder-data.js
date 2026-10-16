@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-16T04:53:41.312812+00:00",
- "artikler_i_alt": 130,
+ "opdateret": "2026-10-16T13:29:30.248358+00:00",
+ "artikler_i_alt": 128,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -12,17 +12,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 14,
-   "i_listen": 14,
-   "som_ekstra": 0,
+   "i_listen": 13,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "Anthropic giver METR adgang som medarbejder",
-     "dato": "2026-10-15T00:00:00",
+     "dato": "",
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-     "side": "artikel/eb77f6484e453b05.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Anthropic åbner systemer for METR-forskere"
     },
     {
      "rubrik": "Claude viser valgdata og stemmested",
@@ -122,9 +122,22 @@ window.KILDER_STATUS = {
      "side": "artikel/68024e28356d7cb5.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "Claude skærer ebola-rapport fra dag til time",
+     "dato": "2026-09-22T00:00:00",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://www.anthropic.com/features/ebola-response",
+     "side": "artikel/9dde87711636ad1d.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
+    [
+     "TechCrunch AI",
+     3
+    ],
     [
      "Simon Willison AI",
      3
@@ -132,10 +145,6 @@ window.KILDER_STATUS = {
     [
      "The Verge AI",
      3
-    ],
-    [
-     "TechCrunch AI",
-     2
     ],
     [
      "MIT Tech Review AI",
@@ -201,7 +210,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -266,15 +275,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 Live tænker, mens den taler"
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -557,7 +557,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 9,
    "seneste": [
     {
-     "rubrik": "Panos Panay tror generation dropper apps",
+     "rubrik": "Panay: Bee-enheder peger mod en fremtid uden apps",
      "dato": "",
      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
      "link": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
@@ -674,6 +674,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Anthropic åbner systemer for METR-forskere",
+     "dato": "2026-10-15T19:14:26",
+     "foerst_set": "2026-10-15T20:00:28",
+     "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+     "side": "artikel/6b32532a16524cf4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Bluesky Attie lader alle bygge spil og sites",
      "dato": "2026-10-15T18:56:46",
      "foerst_set": "2026-10-15T20:00:28",
@@ -762,15 +771,6 @@ window.KILDER_STATUS = {
      "side": "artikel/25b16452fb4e1cda.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Zenzap rejser $44 mio. til AI-chat på arbejdspladsen",
-     "dato": "2026-10-14T15:08:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
-     "side": "artikel/e94f7f5d5e491b3d.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -779,11 +779,11 @@ window.KILDER_STATUS = {
      9
     ],
     [
-     "Ars Technica AI",
-     2
+     "Anthropic News",
+     3
     ],
     [
-     "Anthropic News",
+     "Ars Technica AI",
      2
     ],
     [
@@ -802,7 +802,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 35,
    "som_ekstra": 14,
    "seneste": [
     {
@@ -959,15 +959,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nvidia RTX Spark-bærbare kører spil og AI-agenter",
-     "dato": "2026-10-15T10:30:00",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
-     "side": "artikel/81d93d8659efbf19.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "AI-deepfakes af kendisser får millioner af visninger",
      "dato": "2026-10-15T10:03:42",
      "foerst_set": "2026-10-15T20:00:28",
@@ -1018,6 +1009,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-15T05:05:01",
      "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
      "side": "artikel/b771f398aeda561c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Microsoft: AI-værktøj retter bias i vejrprognoser",
+     "dato": "2026-10-14T16:05:21",
+     "foerst_set": "2026-10-14T20:18:45",
+     "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+     "side": "artikel/d99057e6f86ea6a1.html",
      "hvor": "forside",
      "under": ""
     }
@@ -1327,7 +1327,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 5,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1356,6 +1356,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 Live tænker, mens den taler"
+    },
+    {
+     "rubrik": "Google Antigravity finder ny peptidkandidat",
+     "dato": "2026-10-15T16:08:03",
+     "foerst_set": "2026-10-16T04:53:41",
+     "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "side": "artikel/ba028f76ed47c779.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini 4 Argon lærer bevægelse fra video",
