@@ -1,20 +1,32 @@
 {
-  "opdateret": "2026-10-15T23:14:08.153052+00:00",
+  "opdateret": "2026-10-16T04:53:41.312812+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
+    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-    "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
     "https://mistral.ai/news/timestral/"
   ],
-  "input_fingerprint": "dce76fd756b0fe04",
+  "input_fingerprint": "c894f1466d1e6d6f",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 4,
   "kildehentninger": 7,
   "vaerktoejer": [
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -38,8 +50,8 @@
       "fejl": null
     },
     {
-      "vaerktoej": "aflever_udgave",
-      "fejl": "Dubletter skal være kendte, læste og forskellige historier"
+      "vaerktoej": "laes_kilde",
+      "fejl": null
     },
     {
       "vaerktoej": "laes_kilde",
@@ -52,11 +64,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/meta-muse-spark-open",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "grundlag": "kildetekst"
     },
     {
@@ -64,11 +72,15 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "link": "https://huggingface.co/blog/flux-3",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/flux-3",
+      "link": "https://huggingface.co/blog/meta-muse-spark-open",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
       "grundlag": "kildetekst"
     },
     {
@@ -76,14 +88,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-      "grundlag": "rss_resume"
+      "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-    "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/"
+    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 54
 }
