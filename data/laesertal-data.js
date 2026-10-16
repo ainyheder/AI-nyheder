@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-16T13:59:03.364457+00:00",
+ "opdateret": "2026-10-16T20:18:38.046646+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      7,
      5,
      4,
-     0
+     1
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      8,
      1,
      11,
-     0
+     1
     ]
    },
    {
@@ -138,7 +138,7 @@ window.LAESERTAL = {
      5,
      6,
      1,
-     0
+     2
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      1,
      4,
      5,
-     0
+     1
     ]
    },
    {
@@ -278,7 +278,7 @@ window.LAESERTAL = {
      3,
      0,
      0,
-     0
+     1
     ]
    },
    {
@@ -354,39 +354,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 20,
- "sidevisninger_i_alt": 46,
+ "besoeg_i_alt": 17,
+ "sidevisninger_i_alt": 40,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 20,
-   "visninger": 43
-  },
-  {
-   "sti": "/faq.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/om.html",
-   "besoeg": 0,
-   "visninger": 1
-  },
-  {
-   "sti": "/vaerktoejer.html",
-   "besoeg": 0,
-   "visninger": 1
+   "besoeg": 17,
+   "visninger": 40
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 19
-  },
-  {
-   "fra": "www.google.com",
-   "besoeg": 1
+   "besoeg": 17
   }
  ],
  "ai_chats": [],
@@ -399,39 +380,16 @@ window.LAESERTAL = {
    },
    {
     "fra": "direkte",
-    "besoeg": 19,
-    "visninger": 19
-   },
-   {
-    "fra": "www.google.com",
-    "besoeg": 1,
-    "visninger": 1
-   }
-  ],
-  "/faq.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/om.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
-   }
-  ],
-  "/vaerktoejer.html": [
-   {
-    "fra": "herfra selv",
-    "besoeg": 0,
-    "visninger": 1
+    "besoeg": 17,
+    "visninger": 17
    }
   ]
  },
  "faste_uden_besoeg": [
   "/uge.html",
+  "/vaerktoejer.html",
+  "/faq.html",
+  "/om.html",
   "/cookies.html"
  ],
  "serie": [

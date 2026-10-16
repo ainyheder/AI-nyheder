@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-16T13:29:30.248358+00:00",
- "artikler_i_alt": 128,
+ "opdateret": "2026-10-16T19:40:12.067536+00:00",
+ "artikler_i_alt": 134,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -16,7 +16,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 1,
    "seneste": [
     {
-     "rubrik": "Anthropic giver METR adgang som medarbejder",
+     "rubrik": "Anthropic åbner indre systemer for METR",
      "dato": "",
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
@@ -210,11 +210,11 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 3,
-   "som_ekstra": 7,
+   "i_listen": 4,
+   "som_ekstra": 5,
    "seneste": [
     {
-     "rubrik": "Google lancerer Universal Cart i USA",
+     "rubrik": "Google Universal Cart forener indkøb fra mange butikker",
      "dato": "",
      "foerst_set": "2026-10-15T13:39:48",
      "link": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
@@ -247,34 +247,25 @@ window.KILDER_STATUS = {
      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Argon lærer bevægelse fra video"
+     "under": "Google Argon koster en femtedel af rivalernes pris"
     },
     {
-     "rubrik": "Gemini 3.8 Live giver AI et ansigt",
+     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
      "dato": "",
-     "foerst_set": "2026-09-24T20:05:24",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
+     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
     },
     {
-     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
-     "dato": "",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 TTS styres replik for replik"
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker og taler samtidigt",
-     "dato": "",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
+     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
+     "dato": "2026-10-02T15:00:00",
+     "foerst_set": "2026-10-02T20:55:07",
+     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+     "side": "artikel/bfe2b156957ee716.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -307,11 +298,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     5
+     6
     ],
     [
      "Google DeepMind",
-     5
+     2
     ],
     [
      "Ars Technica AI",
@@ -384,7 +375,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 12,
+   "i_listen": 13,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -469,6 +460,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
+     "dato": "2026-10-13T22:28:54",
+     "foerst_set": "2026-10-13T23:50:16",
+     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+     "side": "artikel/285c1f1903787d89.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Huntley blokerer agentens genveje med git-krog",
      "dato": "2026-10-13T13:32:00",
      "foerst_set": "2026-10-13T19:29:19",
@@ -521,15 +521,6 @@ window.KILDER_STATUS = {
      "side": "artikel/e0bf43abd8095859.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Simon Willisons ttok kan nu liste modeller",
-     "dato": "2026-10-08T23:34:28",
-     "foerst_set": "2026-10-09T06:35:11",
-     "link": "https://simonwillison.net/2026/Oct/8/ttok/",
-     "side": "artikel/0e3b627310d21f33.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -553,7 +544,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 36,
+   "i_listen": 40,
    "som_ekstra": 9,
    "seneste": [
     {
@@ -665,6 +656,33 @@ window.KILDER_STATUS = {
      "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
+     "rubrik": "CERT-In: AI-agenter fra flere firmaer læste persondata",
+     "dato": "2026-10-16T17:52:24",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+     "side": "artikel/4466435dcf8e678c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Jev er hurtigst adopterede AI-model hos Vercel",
+     "dato": "2026-10-16T15:33:49",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+     "side": "artikel/805c6efc7dd4cb7f.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Replit-chef Masad kalder firmaet selvstyrende med AI-agenter",
+     "dato": "2026-10-16T12:55:09",
+     "foerst_set": "2026-10-16T13:29:30",
+     "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+     "side": "artikel/62c95b03adf65dd4.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Meta lancerer Muse Spark Open til Mac",
      "dato": "2026-10-15T20:04:53",
      "foerst_set": "2026-10-15T20:00:28",
@@ -744,33 +762,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b212bc9f8ea1f7b3.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Apate sender AI-agenter undercover mod svindlere",
-     "dato": "2026-10-14T18:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-     "side": "artikel/ea05e081087d0ccf.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Deezer vil lade brugerne filtrere AI-musik væk",
-     "dato": "2026-10-14T15:16:04",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
-     "side": "artikel/eee648a48220cdb3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Floqer vil åbne sin AI-database for alle",
-     "dato": "2026-10-14T15:00:00",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/",
-     "side": "artikel/25b16452fb4e1cda.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -802,11 +793,20 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 35,
+   "i_listen": 36,
    "som_ekstra": 14,
    "seneste": [
     {
-     "rubrik": "Bluesky Attie bygger nu sociale apps",
+     "rubrik": "Meta kan træne AI på nyhedsmediers indhold gratis",
+     "dato": "",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta vil træne AI på firmernes egne hjemmesider"
+    },
+    {
+     "rubrik": "Blueskys Attie skaber nu spil og apps",
      "dato": "",
      "foerst_set": "2026-10-15T23:14:08",
      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
@@ -905,13 +905,13 @@ window.KILDER_STATUS = {
      "under": "Gemini Live beskriver verden for blinde"
     },
     {
-     "rubrik": "Google lancerer Gemini 4 Argon med snæver adgang",
-     "dato": "",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+     "rubrik": "Nvidia RTX Spark løfter Windows-spil men CPU'en halter",
+     "dato": "2026-10-16T11:00:00",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+     "side": "artikel/ff1bad63817f4bde.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "ChatGPT aflæser dine åbne Chrome-faneblade",
@@ -960,7 +960,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "AI-deepfakes af kendisser får millioner af visninger",
-     "dato": "2026-10-15T10:03:42",
+     "dato": "2026-10-15T14:03:42",
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
      "side": "artikel/8431ec80e60810be.html",
@@ -969,7 +969,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Benn Jordan vidnede for Senatet om Flock-kameraer",
-     "dato": "2026-10-15T10:00:00",
+     "dato": "2026-10-15T14:00:00",
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
      "side": "artikel/e8480ee17728e290.html",
@@ -1011,15 +1011,6 @@ window.KILDER_STATUS = {
      "side": "artikel/b771f398aeda561c.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Microsoft: AI-værktøj retter bias i vejrprognoser",
-     "dato": "2026-10-14T16:05:21",
-     "foerst_set": "2026-10-14T20:18:45",
-     "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-     "side": "artikel/d99057e6f86ea6a1.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -1029,11 +1020,11 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     6
+     7
     ],
     [
      "Google Gemini",
-     5
+     6
     ],
     [
      "Anthropic News",
@@ -1055,7 +1046,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 13,
+   "i_listen": 14,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -1093,6 +1084,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
+    },
+    {
+     "rubrik": "Meta vil træne AI på firmernes egne hjemmesider",
+     "dato": "2026-10-16T15:41:00",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+     "side": "artikel/284333ed2818a37c.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "FTC undersøger Anthropic og OpenAI for forbrugerskader",
@@ -1192,21 +1192,12 @@ window.KILDER_STATUS = {
      "side": "artikel/cc82babf92365087.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Claude indsendte falsk mordtip til politiet",
-     "dato": "2026-10-12T18:21:36",
-     "foerst_set": "2026-10-09T21:10:26",
-     "link": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
-     "side": "artikel/791f9de3f5f5dec8.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
     [
      "The Verge AI",
-     6
+     7
     ],
     [
      "TechCrunch AI",
@@ -1228,7 +1219,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 6,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -1239,6 +1230,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Claude opdager nyt enzymsystem med CRISPR-lignende gentagelser"
+    },
+    {
+     "rubrik": "Samuel King lod AI foreslå virusgener",
+     "dato": "2026-10-16T18:00:00",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+     "side": "artikel/57c41972947ec5cd.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "SimpleClosure sælger døde startups' data til AI",
@@ -1324,17 +1324,26 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "ok",
-   "fejl": "",
-   "hentet": 15,
-   "i_listen": 5,
-   "som_ekstra": 2,
+   "status": "fejl",
+   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
+   "hentet": 0,
+   "i_listen": 2,
+   "som_ekstra": 3,
    "seneste": [
     {
      "rubrik": "Gemini 4 Argon scorer 87 procent i ERQA",
      "dato": "",
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+     "side": "",
+     "hvor": "under",
+     "under": "Google Argon koster en femtedel af rivalernes pris"
+    },
+    {
+     "rubrik": "Gemini 4 Argon lærer bevægelse fra video",
+     "dato": "",
+     "foerst_set": "2026-10-13T19:29:19",
+     "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
      "side": "",
      "hvor": "under",
      "under": "Google Argon koster en femtedel af rivalernes pris"
@@ -1349,15 +1358,6 @@ window.KILDER_STATUS = {
      "under": "Gemini 4 Argon finder sårbarhed andre modeller missede"
     },
     {
-     "rubrik": "Gemini 3.8 Live avatar skifter sprog undervejs",
-     "dato": "",
-     "foerst_set": "2026-09-24T20:05:24.209273+00:00",
-     "link": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-     "side": "",
-     "hvor": "under",
-     "under": "Gemini 3.8 Live tænker, mens den taler"
-    },
-    {
      "rubrik": "Google Antigravity finder ny peptidkandidat",
      "dato": "2026-10-15T16:08:03",
      "foerst_set": "2026-10-16T04:53:41",
@@ -1367,49 +1367,22 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Gemini 4 Argon lærer bevægelse fra video",
-     "dato": "2026-10-13T16:01:52",
+     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+     "dato": "2026-10-13T19:43:07",
      "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-     "side": "artikel/fa170ce8a5ccc7bd.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
-     "dato": "2026-10-06T19:57:04",
-     "foerst_set": "2026-10-07T15:44:28",
-     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "side": "artikel/bf211d23154acfab.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.8 TTS styres replik for replik",
-     "dato": "2026-09-23T15:25:14",
-     "foerst_set": "2026-09-23T19:47:07",
-     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-     "side": "artikel/31ef9b5263a38be6.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 3.8 Live tænker, mens den taler",
-     "dato": "2026-09-15T17:05:57",
-     "foerst_set": "2026-09-15T18:27:03",
-     "link": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-     "side": "artikel/392b6ec46b4e96bc.html",
+     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "side": "artikel/42f1c245f492d3d1.html",
      "hvor": "forside",
      "under": ""
     }
    ],
    "overlap": [
     [
-     "Google Gemini",
-     5
+     "The Verge AI",
+     2
     ],
     [
-     "The Verge AI",
+     "Google Gemini",
      2
     ]
    ]

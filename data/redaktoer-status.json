@@ -1,17 +1,25 @@
 {
-  "opdateret": "2026-10-16T13:29:30.248358+00:00",
+  "opdateret": "2026-10-16T19:40:12.067536+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
     "https://mistral.ai/news/timestral/"
   ],
-  "input_fingerprint": "06e0bd41134991d9",
+  "input_fingerprint": "715f63c8c49e9a0b",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "kontrolproblemer": [
+    "Fire anbefalinger er udgivet uden vedlagte kilder (CERT-In, Anthropic/METR, Meta-TOS og Indic-datasættet), så deres konkrete tal og hændelser – bl.a. 30. oktober-vilkårene, 2,8 billioner tokens og agenthændelser i juli/september – ikke støttes af noget læst materiale.",
+    "Anbefalingen 'Open datasæt på 2,8 billioner tokens til indisk sprogtræning' er en pladsholder: ingen sektioner, ingen kilde og tom original summary – kun titel, rubrik og et resume, der er hentet fra overskriften. Granite Switch-anbefalingen er ligeledes kun titel + resume uden brødtekst, selv om en fuld kildetekst findes.",
+    "Glimpse-artiklen skriver, at 'de første kunder' er robotfirmaer, videnskabelige laboratorier, medier og kreative brancher. Kilden siger 'initial targets' – det er en målgruppe, ikke dokumenterede kunder.",
+    "Beam-artiklen kalder BF16-kontrollpunktet 'den fuldpræcisionsudgave'. BF16 er 16-bit-precision, ikke fuld præcision, og kilden kalder det ikke det.",
+    "Kandidatoversigten har sammenblandede rubrik/resume-par (fx 'Introducing Timestral' bærer Muse Spark-oplysninger, og et Muse Spark-forslag har et resume om deepfakes), hvilket gør grundlaget for udvalget uklart.",
+    "Termen 'visuel arbejdssketchube' er ikke et forståeligt dansk ord for kildens 'visual scratch space' – læseren får en uforståelig term serveret indforstået."
+  ],
   "modelkald": 4,
-  "kildehentninger": 6,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -46,14 +54,6 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
@@ -64,30 +64,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://huggingface.co/blog/flux-3",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "grundlag": "kildetekst"
     },
     {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
       "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://mistral.ai/news/timestral/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-    "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+    "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+    "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
   ],
-  "afventer_artikler": 53
+  "afventer_artikler": 55
 }
