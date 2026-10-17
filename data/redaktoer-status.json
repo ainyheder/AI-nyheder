@@ -1,60 +1,27 @@
 {
-  "opdateret": "2026-10-17T18:45:38.022213+00:00",
+  "opdateret": "2026-10-17T22:35:34.227146+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
     "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-    "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+    "https://huggingface.co/blog/reflection-beam",
     "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
   ],
-  "input_fingerprint": "d0f5a3d3015db61d",
+  "input_fingerprint": "b7be70391584fdf5",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 5,
+  "kontrolproblemer": [
+    "Meta-artiklen: forkert tidspunkt — teksten siger, opdateringen »trådte i kraft 30. oktober«, men kilderne (Ars 16.10, Verge 17.10) viser, at vilkårene først træder i kraft 30. oktober, og at formulerings­ fjernelsen skete inden ikrafttræden. Sektionen »de bredere vilkår fra 30. oktober« gentager samme fejl.",
+    "Meta-artiklen opfylder ikke skriveopgaven: den krævede faktaboks med den gamle formulering gengivet kort og Metas nuværende forklaring mangler helt.",
+    "Udvalget overholder ikke prioriteringen af modellanceringer: ingen af de tre hovedhistorier er modeludgivelser, selv om der er flere kandidater inden for 48 timer — bl.a. Reflection Beams 501-milliarders åbne model (16.10), Elorian Glimpse (16.10), Mistral Timestral (15.10), Meta Muse Spark Open (15.10) og IBM Granite Switch 4.1 (15.10).",
+    "Anbefalingen 138e9b7e7d974724 (indisk datasæt på 2,8 billioner tokens) har sektioner: null — kun rubrik og resumé, altså ufærdig tekst/pladsholder, der bør fjernes.",
+    "Mindre belægsproblemer: »Ars Technica kalder ... 'tying'« — det var retseksperter citeret af Ars, ikke Ars selv; IND-artiklen skriver »overskrev agenternes handlinger den tilladelse«, hvor kilden siger exceeded (overskred); Australien-hændelsen gjaldt fire regeringshjemmesider, ikke blot »offentlige« hjemmesider; nøgletalsfeltet indeholder dobbelttegn »i i«."
+  ],
+  "modelkald": 3,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
-      "fejl": null
-    },
-    {
       "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "laes_kilde",
-      "fejl": null
-    },
-    {
-      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
@@ -76,15 +43,11 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://huggingface.co/blog/reflection-beam",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "grundlag": "kildetekst"
-    },
-    {
       "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
       "grundlag": "kildetekst"
     },
     {
@@ -92,13 +55,14 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "link": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
+    "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
     "https://huggingface.co/blog/reflection-beam",
-    "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
+    "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
   ],
-  "afventer_artikler": 54
+  "afventer_artikler": 53
 }
