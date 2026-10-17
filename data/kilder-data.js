@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-17T04:54:55.013625+00:00",
- "artikler_i_alt": 129,
+ "opdateret": "2026-10-17T12:21:37.777729+00:00",
+ "artikler_i_alt": 131,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -153,7 +153,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -182,15 +182,6 @@ window.KILDER_STATUS = {
      "side": "artikel/1e688dbfb03ab730.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Mistral skal drive Firefox' AI-assistent",
-     "dato": "2026-09-16T12:00:00",
-     "foerst_set": "2026-09-16T12:48:27",
-     "link": "https://mistral.ai/news/mistral-x-mozilla/",
-     "side": "artikel/c410e90a2cd9982e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -211,10 +202,10 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 12,
    "i_listen": 5,
-   "som_ekstra": 4,
+   "som_ekstra": 5,
    "seneste": [
     {
-     "rubrik": "Google Universal Cart forener indkøb fra mange butikker",
+     "rubrik": "Google samler indkøb fra flere butikker",
      "dato": "",
      "foerst_set": "2026-10-15T13:39:48",
      "link": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
@@ -248,6 +239,15 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+    },
+    {
+     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
+     "dato": "",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini 3.8 TTS styres replik for replik"
     },
     {
      "rubrik": "Gemini 4 Argon lanceres globalt i dag",
@@ -302,7 +302,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     2
+     3
     ],
     [
      "Ars Technica AI",
@@ -350,9 +350,19 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 0,
+   "i_listen": 1,
    "som_ekstra": 0,
-   "seneste": [],
+   "seneste": [
+    {
+     "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
+     "dato": "2026-10-16T00:00:00",
+     "foerst_set": "2026-10-16T13:29:30",
+     "link": "https://huggingface.co/blog/reflection-beam",
+     "side": "artikel/752ec58d0f63cb7e.html",
+     "hvor": "forside",
+     "under": ""
+    }
+   ],
    "overlap": []
   },
   {
@@ -520,6 +530,15 @@ window.KILDER_STATUS = {
    "som_ekstra": 8,
    "seneste": [
     {
+     "rubrik": "Nvidia-veteran siger robotter er i Lego-æra",
+     "dato": "",
+     "foerst_set": "2026-10-16T19:40:12.067536+00:00",
+     "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+     "side": "",
+     "hvor": "under",
+     "under": "Nvidia-veteran kalder robotik sin Lego-periode"
+    },
+    {
      "rubrik": "Panay: Bee-enheder peger mod en fremtid uden apps",
      "dato": "",
      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
@@ -619,20 +638,20 @@ window.KILDER_STATUS = {
      "under": "Anthropic samler forbud mod falske kampagner"
     },
     {
-     "rubrik": "Anthropic Opus 5.5 overgår Fable i tests",
-     "dato": "",
-     "foerst_set": "2026-09-22T19:51:24",
-     "link": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-     "side": "",
-     "hvor": "under",
-     "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
-    },
-    {
      "rubrik": "Replit dropper Anthropic for ChatGPT",
      "dato": "2026-10-16T21:22:28",
      "foerst_set": "2026-10-16T22:59:01",
      "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
      "side": "artikel/13131774e8114bcf.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Elorians Glimpse zoomer ind, mens den tænker",
+     "dato": "2026-10-16T16:01:37",
+     "foerst_set": "2026-10-16T19:40:12",
+     "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+     "side": "artikel/33eae345cea5336e.html",
      "hvor": "forside",
      "under": ""
     },
@@ -655,11 +674,11 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Nvidia-veteran siger robotter er i Lego-æra",
+     "rubrik": "Nvidia-veteran kalder robotik sin Lego-periode",
      "dato": "2026-10-16T16:30:00",
      "foerst_set": "2026-10-16T19:40:12",
-     "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-     "side": "artikel/c43b789ab8004e80.html",
+     "link": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+     "side": "artikel/0ee63cc50f718ae0.html",
      "hvor": "forside",
      "under": ""
     },
@@ -696,15 +715,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-15T20:00:28",
      "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
      "side": "artikel/b79cf62ab2acf241.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Anthropic åbner systemer for METR-forskere",
-     "dato": "2026-10-15T19:14:26",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-     "side": "artikel/6b32532a16524cf4.html",
      "hvor": "forside",
      "under": ""
     },
@@ -769,7 +779,7 @@ window.KILDER_STATUS = {
    "som_ekstra": 13,
    "seneste": [
     {
-     "rubrik": "Meta kan træne AI på nyhedsmediers indhold gratis",
+     "rubrik": "Meta kan fra oktober kravle nyhedssider gratis",
      "dato": "",
      "foerst_set": "2026-10-16T19:40:12",
      "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
@@ -778,7 +788,7 @@ window.KILDER_STATUS = {
      "under": "Meta vil træne AI på firmernes egne hjemmesider"
     },
     {
-     "rubrik": "Blueskys Attie skaber nu spil og apps",
+     "rubrik": "Bluesky Attie skaber nu spil og apps",
      "dato": "",
      "foerst_set": "2026-10-15T23:14:08",
      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
@@ -1287,10 +1297,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 2,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 4,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -1337,15 +1347,33 @@ window.KILDER_STATUS = {
      "side": "artikel/42f1c245f492d3d1.html",
      "hvor": "forside",
      "under": ""
+    },
+    {
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 TTS styres replik for replik",
+     "dato": "2026-09-23T15:25:14",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "side": "artikel/31ef9b5263a38be6.html",
+     "hvor": "forside",
+     "under": ""
     }
    ],
    "overlap": [
     [
-     "The Verge AI",
-     2
+     "Google Gemini",
+     3
     ],
     [
-     "Google Gemini",
+     "The Verge AI",
      2
     ]
    ]
