@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-17T15:52:44.114667+00:00",
- "artikler_i_alt": 128,
+ "opdateret": "2026-10-17T18:45:38.022213+00:00",
+ "artikler_i_alt": 127,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -97,20 +97,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
-     "dato": "2026-10-01T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/news/barclays-scales-claude",
-     "side": "artikel/9393e9cf493067a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
      "dato": "2026-09-28T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/claude-sonnet-5-5",
      "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
+     "dato": "2026-10-01T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/news/barclays-scales-claude",
+     "side": "artikel/9393e9cf493067a7.html",
      "hvor": "forside",
      "under": ""
     },
@@ -201,7 +201,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 4,
+   "i_listen": 3,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -239,15 +239,6 @@ window.KILDER_STATUS = {
      "side": "",
      "hvor": "under",
      "under": "Gemini 3.8 TTS styres replik for replik"
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
-     "hvor": "forside",
-     "under": ""
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -761,7 +752,7 @@ window.KILDER_STATUS = {
      "under": "Meta vil træne AI på firmernes egne hjemmesider"
     },
     {
-     "rubrik": "Bluesky Attie skaber nu spil og apps",
+     "rubrik": "Blueskys Attie laver nu spil og apps",
      "dato": "",
      "foerst_set": "2026-10-15T23:14:08",
      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
@@ -987,7 +978,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     2
+     1
     ]
    ]
   },
@@ -1274,22 +1265,13 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 15,
    "i_listen": 3,
-   "som_ekstra": 3,
+   "som_ekstra": 2,
    "seneste": [
     {
      "rubrik": "Gemini 4 Argon scorer 87 procent i ERQA",
      "dato": "",
      "foerst_set": "2026-10-13T23:50:16",
      "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-     "side": "",
-     "hvor": "under",
-     "under": "Google Argon koster en femtedel af rivalernes pris"
-    },
-    {
-     "rubrik": "Gemini 4 Argon lærer bevægelse fra video",
-     "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
      "side": "",
      "hvor": "under",
      "under": "Google Argon koster en femtedel af rivalernes pris"
@@ -1333,12 +1315,12 @@ window.KILDER_STATUS = {
    ],
    "overlap": [
     [
-     "The Verge AI",
+     "Google Gemini",
      2
     ],
     [
-     "Google Gemini",
-     2
+     "The Verge AI",
+     1
     ]
    ]
   },
