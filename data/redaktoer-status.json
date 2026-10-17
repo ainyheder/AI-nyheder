@@ -1,6 +1,6 @@
 {
-  "opdateret": "2026-10-17T12:21:37.777729+00:00",
-  "status": "godkendt",
+  "opdateret": "2026-10-17T15:52:44.114667+00:00",
+  "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
@@ -8,36 +8,10 @@
     "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
     "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
   ],
-  "input_fingerprint": "c431f9e8240b3716",
-  "redaktionsnote": "Kun to kilder blev læst før research afsluttede, derfor to hovedhistorier: Beam (Reflection, åbne vægte) og Glimpse (visual reasoning, research preview). Ingen af dem stod på gårsdagens forside. Gårdsdagens frontfigurer – Muse Spark Open, Timestral og OpenAI-sikkerhedshistorien – er udeladt, da de kræver ny dokumenteret udvikling. Anbefalingerne er nye kandidater fra de seneste 24 timer, som ikke blev kildelæst; de må afvente, før de kan blive hovedhistorier.",
-  "beslutninger": [
-    {
-      "id": "c9a6184923cc1a58",
-      "begrundelse": "Reflection udgiver Beam: en 501B-parameter åben model under Apache 2.0 fra et nyt laboratorie. Den er dokumenteret i Hugging Faces officielle blog med tal for aktive parametre, kontekstvindue og hardwarekrav.",
-      "nyt_siden_sidst": "Nyhed fra 16. oktober: nye åbne vægte i frontier-størrelse. Den er ikke set på tidligere forsider, og den officielle kilde er læst.",
-      "skriveopgave": "Rubrik: »Nyt laboratorium åbner 501-milliarders model for alle«. Forklar kort, hvad åbne vægte betyder, og at Beam er en mixture-of-experts-model: 501B parametre i alt, men kun ca. 23B aktive pr. token, 1M tokens kontekst, tekstindgang, Apache 2.0. Afsnit: hvad er nyt (nyt lab Reflection, åben licens, dag-0-understøttelse i vLLM/SGLang), hvad kan man bruge den til (egen hardware, kodning og agenter), hvad vi ikke ved (ingen uafhængig test læst; benchmarks er Reflections egne tal). Husk faktaboks om hukommelseskrav: ca. 1 TB i BF16, ca. 280 GB i NVFP4. Vær påstande om ydeevne i producentens ord.",
-      "kilder": [
-        "c9a6184923cc1a58"
-      ],
-      "samme_historie": [],
-      "link": "https://huggingface.co/blog/reflection-beam",
-      "rubrik": "Reflection åbner 501-milliarders model Beam for alle"
-    },
-    {
-      "id": "5cea1aeddd4affb9",
-      "begrundelse": "Elorian lancerer sin første model, Glimpse, som et research preview med API og chat. Den vender tilbage til billedkilden midt i ræsonnementet – en konkret ny evne med dokumenteret pris pr. token.",
-      "nyt_siden_sidst": "Fredag 16. oktober udgav Palo Alto-startup'en Glimpse som sin første model nogensinde, i research preview med API-adgang og en fast prissætning.",
-      "skriveopgave": "Rubrik: »Ny model zoomer ind på billedet, mens den tænker«. Forklar forskellen: de fleste modeller oversætter et billede til tekst én gang, Glimpse kan beskære, hente videoframe og køre kode under ræsonnementet (»visual scratch space«). Spørgsmål: hvad er adgangen (research preview, API, chat), hvad koster det (0,60 dollar pr. million input-tokens, 3 dollar pr. million output-tokens), og hvem er kunderne (robotik, laboratorier, medier). Forbehold: benchmarkpåstandene om at slå GPT-6 Astra er Elorians egne evalueringer, ingen uafhængig test er læst; træningen skete ifølge firmaet på få hundrede GPU'er.",
-      "kilder": [
-        "5cea1aeddd4affb9"
-      ],
-      "samme_historie": [],
-      "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "rubrik": "Elorians Glimpse zoomer ind, mens den tænker"
-    }
-  ],
-  "modelkald": 6,
-  "kildehentninger": 2,
+  "input_fingerprint": "26cffa36bd0843f5",
+  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "modelkald": 5,
+  "kildehentninger": 4,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -64,11 +38,11 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -77,6 +51,14 @@
     }
   ],
   "kildegrundlag": [
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "grundlag": "kildetekst"
+    },
     {
       "link": "https://huggingface.co/blog/reflection-beam",
       "grundlag": "kildetekst"
@@ -90,5 +72,5 @@
     "https://huggingface.co/blog/reflection-beam",
     "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
   ],
-  "afventer_artikler": 52
+  "afventer_artikler": 54
 }
