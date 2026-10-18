@@ -1,10 +1,10 @@
 {
- "rubrik": "Priskrig, lukkede døre og statsanklager",
- "indledning": "Nye frontier-modeller kom fra både Google og Meta i denne uge, mens AI-agenterne mødte både lukkede døre og nye muligheder på nettet – og lovgivningen strammede grebet om selskaberne.",
+ "rubrik": "Nye frontmodeller, sagsanlæg og døre der lukkes for AI-agenter",
+ "indledning": "Syv dage med både nye flagskibsmodeller og konkrete konflikter om, hvem der skal betale – og hvem der skal lukkes ind.",
  "historier": [
   {
-   "overskrift": "Google Argon: frontier-model til en femtedel af rivalernes pris",
-   "tekst": "Google lancerede Gemini 4 Argon – sin første frontier-model siden Gemini 3. Den rulles ud til Pro- og Ultra-abonnenter i Gemini-appen og Search. Google hævder, at den overgår GPT-6 Astra og Anthropic-modeller i benchmarks. API-prisen starter på 2 dollars per million input-tokens, omkring en femtedel af rivalernes, men fordobles ved udgangen af november.",
+   "overskrift": "Google lancerer Gemini 4 Argon til betalende brugere",
+   "tekst": "Googles første store frontier-model siden Gemini 3 rulles ud i Gemini-appen og Search for Pro- og Ultra-abonnenter. Google hævder, at Argon slår GPT-6 Astra og Claude-modeller i benchmarks, og priser den lavt per token – men kun frem til udgangen af november, hvor prisen fordobles. Gratisbrugere må nøjes med Flash-Lite.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
    "kategori": "Lanceringer",
    "billede": "data/img/939f75d24a28b2e3.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "7af3b4f8ac9b73fc09fd10640084b84f1b12841672919ceab723a5d24183c429"
   },
   {
-   "overskrift": "Meta svarer med frontier-model og åbenvægtsmodel til Mac",
-   "tekst": "Meta lancerede Muse Wonder Full som sin første frontier-model dagen før Argon, og kort efter Muse Spark Open: en åbenvægtsmodel med 816 milliarder parametre designet til at køre lokalt på Mac-computere. Kravet er mindst 1 TB RAM. Meta kalder den den mest kapable åbne vægtmodel i USA.",
+   "overskrift": "Meta svarer med frontier-model og en lokal Mac-model",
+   "tekst": "Dagen før Argon annoncerede Metas frontier-model Muse Wonder Full. Samme uge kom Muse Spark Open med 816 milliarder parametre, designet til at køre lokalt på Apple-maskiner frem for i en sky. Kravet er mindst 1 TB RAM, så reelt kører den bedst på en Mac Studio med M5 Ultra-chippen.",
    "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "kategori": "Lanceringer",
    "billede": "data/img/a0bac78f25175e89.jpg",
@@ -63,8 +63,21 @@
    "artikel_signatur": "b0e56418e7c092fc454e425d5e6d648cb751ae3ed6a2a4fe10c7740abf8ca758"
   },
   {
-   "overskrift": "Amazon og banker spærer AI-agenter ude, mens Shopify åbner",
-   "tekst": "AI-agenter fra Meta, OpenAI og xAI bliver afvist på Yelp, Delta og JPMorgan Chase, som holder agenter ude af kundekonti. Samtidig åbner Shopify sit katalog på over en milliard produkter for alle agenter, og Amex byggede en ramme, der godkender kundens købsintention, før agenten handler.",
+   "overskrift": "Otte amerikanske stater sagsøger OpenAI om ChatGPT-sikkerhed",
+   "tekst": "Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho og Montana beskylder OpenAI for at vildlede offentligheden om chatbottens sikkerhed og indsamle data om mindreårige. Staterne kræver bøder og ophør med vildledning. OpenAI afviser beskyldningerne og peger på aldersspecifikke beskyttelsesforanstaltninger.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+   "kategori": "Politik & jura",
+   "billede": "data/img/e8aa395624e3b171.jpg",
+   "dato": "2026-10-14T21:11:28+00:00",
+   "andre": [],
+   "titel": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+   "rubrik": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
+   "resume_da": "Staterne mener, OpenAI vildledte offentligheden om chatbottens sikkerhed og samlede data op på mindreårige uden tilstrækkeligt samtykke.",
+   "artikel_signatur": "3136823f60d122811b049a1249b618a0e5d809817960d2214e098b5045cc3e8e"
+  },
+  {
+   "overskrift": "Amazon, Yelp og banker spærer AI-agenter ude",
+   "tekst": "Brugere af Meta Muse, Grok og OpenAI Dots meldes afvist hos Yelp, Delta, JPMorgan Chase og Charles Schwab. Yelp lukker kun betalende dataaftaler ind. Meta satser på aftaler med Walmart, Gap og Sephora i stedet for retssag – men Amazon fører fortsat sag mod Perplexitys agent.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "kategori": "Samfund & etik",
    "billede": "data/img/fa14a42ef22d1449.jpg",
@@ -76,73 +89,65 @@
    "artikel_signatur": "9201e9373f4143b8228c0dd2befb2e055e9f2f33a3dba133c295b2289c6c4fe0"
   },
   {
-   "overskrift": "40 statsadvokater vil beskytte Character.AI-brugernes chats ved salg",
-   "tekst": "Character.AI begærede Chapter 11-konkursbeskyttelse og solgte aktiver til Disney for 20 millioner dollar. 40 statsadvokater fra begge partier greb ind og kræver alderskontrol og beskyttelse af brugernes private samtaler – især børns. New York afslørede samtidig en flerårig undersøgelse af selskabets behandling af mindreårige.",
-   "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+   "overskrift": "Meta trækker scraping-vilkår tilbage efter kritik",
+   "tekst": "Nye erhvervsvilkår fra 30. oktober ville give Meta ret til at hente indhold fra alle virksomheders hjemmesider til træning uden fravalg. Nieman Lab og jurister råbte op, og Meta fjernede nu formuleringen og fastholder, at crawling reguleres via robots.txt-filer.",
+   "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
    "kategori": "Politik & jura",
-   "billede": "data/img/37968e2cc7c35c0b.webp",
-   "dato": "2026-10-14T18:47:54+00:00",
+   "billede": "",
+   "dato": "2026-10-17T11:04:36-04:00",
    "andre": [],
-   "titel": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
-   "rubrik": "40 statsadvokater vil beskytte Character.AI-brugernes chats",
-   "resume_da": "Staterne kræver alderskontrol, krisesikkerhed og ret til at slette data, før samtaler med børn overdrages til køber.",
-   "artikel_signatur": "1bb7162128c0a8b202726be7c21831d3a87ad00b574097d630f370d046b92de1"
+   "titel": "Meta removes language that may have allowed it to scrape news sites",
+   "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
+   "resume_da": "Eksperter tolkede den slettede formulering som ret til gratis at bruge nyhedsindhold til træning af AI-produkter.",
+   "artikel_signatur": "b048a0d75fd62059f540a48396f524f618232e14ed11d086db8e234d85b467f5"
   },
   {
-   "overskrift": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-   "tekst": "Otte amerikanske stater sagsøger OpenAI for at vildlede offentligheden om ChatGPTs sikkerhed og indsamle data fra mindreårige uden tilstrækkeligt samtykke. Staterne henviser til søgsmål, hvor ChatGPT angiveligt spillede en rolle i folks død. OpenAI afviser anklagerne og peger på aldersspecifikke beskyttelsesforanstaltninger.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-   "kategori": "Politik & jura",
-   "billede": "data/img/e8aa395624e3b171.jpg",
-   "dato": "2026-10-14T21:11:28+00:00",
-   "andre": [
-    {
-     "kilde": "Ars Technica AI",
-     "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-     "rubrik": "FTC undersøger Anthropic og OpenAI for forbrugerskader",
-     "resume_da": "Begge firmaer har udskudt rapportering af sikkerhedsuheld, og otte stater sagsøgte i denne uge OpenAI.",
-     "dato": "2026-10-15T15:43:24+00:00",
-     "foerst_set": "2026-10-15T20:00:28.349873+00:00"
-    }
-   ],
-   "titel": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-   "rubrik": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-   "resume_da": "Staterne mener, OpenAI vildledte offentligheden om chatbottens sikkerhed og samlede data op på mindreårige uden tilstrækkeligt samtykke.",
-   "artikel_signatur": "f2c3e240df61af863e942a57ec89e9a78e71c2f78dfc5e4be1bac91723e8bea8"
+   "overskrift": "Anthropic fortæller investorer om omsætning og distillation",
+   "tekst": "Kvartalsomsætningen er ifølge Financial Times steget næsten 50 procent til 16,8 milliarder dollar forud for en børsnotering. Anthropic fortalte også investorer, at rivalers træning på selskabets svar – distillation – udgjorde 5-7 procent af omsætningen, og at praksissen er skåret markant ned.",
+   "link": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+   "kategori": "Penge & marked",
+   "billede": "data/img/a341f870d65a0b33.jpg",
+   "dato": "2026-10-15T13:04:03+00:00",
+   "andre": [],
+   "titel": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+   "rubrik": "Anthropic hæver omsætningen næsten 50 pct. før børsnotering",
+   "resume_da": "Kvartalsomsætningen nåede 16,8 mia. dollar, mens Anthropic afslørede, at rivalers træning på egne modeller udgjorde 5-7 pct. af indtægterne.",
+   "artikel_signatur": "a44d4280a5f8133f79d58a4ba16b8e7ad8dbdb4e1704e6c6475cd04e4253a585"
   }
  ],
  "overblik": [
   {
-   "tekst": "Googles Gemini 4 Argon ændrer prisdynamikken i frontier-laget. Med en API-pris på omkring en femtedel af, hvad OpenAI og Anthropic tager, placerer Google sig som den billige udfordrer i et marked, hvor de stærkeste modeller normalt er de dyreste. Men prisen gælder kun frem til udgangen af november, og lav tokenpris er ikke det samme som lav slutpris – modeller bruger forskelligt antal tokens på samme opgave. Samtidig lancerede Meta både sin første frontier-model og den åbenvægtsmodel Muse Spark Open, der kører lokalt på Mac. Med tre frontier-spillere på markedet er det ikke længere et kapløb mellem to heste.",
+   "tekst": "Ugens tydeligste forandring er, at flere store modeller landede på én gang: Google rullede Gemini 4 Argon ud til betalende brugere, en dag efter at Meta annoncerede frontier-modellen Muse Wonder Full og senere Muse Spark Open, som skal køre lokalt på Mac'er frem for i en sky. Fælles for lanceringerne er et fokus på pris og adgang: Argon markedsføres af Google som omkring en femtedel af rivalernes tokenpris indtil udgangen af november, mens Metas åbne vægtmodel kræver mindst 1 TB hukommelse for overhovedet at køre. Det er altså to vidt forskellige indgange til den samme idé om stærkere modeller – den ene lejet i en sky, den anden hentet hjem på egen hardware.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
     "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
    ]
   },
   {
-   "tekst": "Mens modellerne bliver stærkere, forsøger de at handle i den virkelige verden – og nettet reagerer uensartet. AI-agenter fra Meta Muse, OpenAI og xAI bliver afvist på Yelp, Delta og JPMorgan Chase. Amazon har allerede jagtet Perplexitys indkøbsagent. Men Shopify åbner nu sit produktkatalog for alle agenter uden partnerskabsaftale, og Amex har bygget en kontrolramme, der fanger kundens intention, før agenten handler. Forskellen er afgørende: Amazon og bankerne ser agenter som en sikkerhedsrisiko, mens Shopify og Google ser dem som en ny handelskanal. Striden handler om, hvem nettet tilhører, og hvem der må handle på dets vegne.",
+   "tekst": "Samtidig blev det dyrere at være AI-virksomhed uden for laboratoriet. Otte amerikanske stater sagsøgte OpenAI for angiveligt at vildlede om ChatGPT's sikkerhed over for børn, og FTC krævede dokumenter fra både OpenAI og Anthropic om agent-hændelser. Modstykket findes hos brugerne: hos Yelp, Delta og flere banker bliver AI-agenter som Muse og Grok afvist, mens Meta forsøger aftaler i stedet for retssag. Det er den samme knude, der strammes fra begge sider – hvem der må handle, og hvem der hæfter, når en agent bevæger sig rundt på nettet.",
    "links": [
+    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
     "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
    ]
   },
   {
-   "tekst": "Samtidig strammer de juridiske skruer. Character.AI, der siden 2024 har været genstand for statslige undersøgelser af behandlingen af børn, begærede konkurs og solgte aktiver til Disney – mens 40 statsadvokater kræver beskyttelse af brugernes private chats i salgsprocessen. Dagen efter sagsøgte otte amerikanske stater OpenAI for vildledning om ChatGPTs sikkerhed og dataindsamling fra mindreårige. Begge forløb viser, at lovgivningen nu følger efter de AI-selskaber, som tidligere opererede med frivillige standarder.",
+   "tekst": "Dataadgangen blev også et stridspunkt. Metas nye erhvervsvilkår ville have givet selskabet ret til at hente indhold fra alle virksomheders hjemmesider til træning – uden mulighed for fravalg – men efter kritik fra Nieman Lab og jurister trak Meta formuleringen tilbage og fastholder, at crawling styres via robots.txt-filer. Samtidig fortalte Anthropic investorer, at rivalers træning på dets svar udgjorde 5-7 procent af omsætningen, før praksissen blev skåret ned. Begge sager handler om den samme knap økonomi: træningsdata koster enten penge, goodwill eller begge dele – og parterne forhandler stadig om regningen.",
    "links": [
-    "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
+    "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+    "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
    ]
   }
  ],
- "tendens": "Meta har efter kritik fra juridiske eksperter fjernet en sætning fra sine nye erhvervsvilkår, som blev tolket som ret til at høste indhold fra firmahjemmesider, herunder nyhedssider, til AI-træning uden betaling. Selskabet fastholder, at crawling fortsat reguleres via robots.txt-filer. Det står uafklaret, om formuleringen alligevel kan få eftervirkninger i de igangværende retssager om AI-træning på ophavsretligt beskyttet materiale.",
+ "tendens": "Anthropic forbereder ifølge Financial Times en børsnotering, og tallene over for investorer er foreløbig videregivet bag lukkede døre – det er værd at følge, om de bliver offentligt bekræftet.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "a5e22647cc1b6ef696e7cd9bed15c74f133ef01991d98abe09ae25c938f37e50",
- "dato": "2026-10-18T12:59:49.685059+00:00",
- "opdateret": "2026-10-18T12:59:49.685059+00:00",
+ "basis_signatur": "c9b6eb9137f7fcc1aeb515cf08ec10c9c0e2eab958adef816906cb92f5f024ef",
+ "dato": "2026-10-18T19:14:10.189189+00:00",
+ "opdateret": "2026-10-18T19:14:10.189189+00:00",
  "periode_fra": "2026-10-10T22:00:00+00:00",
  "periode_til": "2026-10-17T22:00:00+00:00",
  "stats": {
-  "historier": 82,
+  "historier": 84,
   "kilder": 8
  }
 }

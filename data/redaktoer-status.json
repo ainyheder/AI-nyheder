@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-18T12:46:20.094782+00:00",
+  "opdateret": "2026-10-18T18:50:54.284465+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-    "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-    "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
+    "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
   ],
-  "input_fingerprint": "3487aecd4a155add",
+  "input_fingerprint": "9c3e4b0101264ec2",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
   "modelkald": 5,
-  "kildehentninger": 3,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -50,28 +50,44 @@
       "fejl": null
     },
     {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "aflever_udgave",
       "fejl": null
     }
   ],
   "kildegrundlag": [
     {
+      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "grundlag": "kildetekst"
+    },
+    {
       "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "grundlag": "kildetekst"
-    },
-    {
-      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-    "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
-    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+    "https://simonwillison.net/2026/Oct/16/code-review/"
   ],
-  "afventer_artikler": 54
+  "afventer_artikler": 52
 }
