@@ -1,5 +1,5 @@
 {
-  "opdateret": "2026-10-18T05:02:17.425747+00:00",
+  "opdateret": "2026-10-18T12:46:20.094782+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
@@ -8,18 +8,10 @@
     "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
     "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
   ],
-  "input_fingerprint": "d4fed2e4b862ca9f",
+  "input_fingerprint": "3487aecd4a155add",
   "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "kontrolproblemer": [
-    "Udgaven har ingen hovedhistorier: udvalget er tomt, og hele nyhedsdækningen er lagt i anbefalingerne. Retningen kræver, at forsiden begynder med op til tre hovedhistorier fra de seneste 48 timer, med de vigtigste modellanceringer først – der ligger fulde artikler klar (Meta-vilkår, Replit, AI-agenter, Anthropic-rapport).",
-    "To modeludgivelser i 48-timers-vinduet er ikke behandlet: Elorian Glimpse (16.10. kl. 16.01) og Reflection Beam 501B (16.10. kl. 00.00) er begge markeret som modellanceringer, men har kun rubrik og kort resume. Ifølge retningen må de ikke udgives som de er; der skal enten bestilles en færdig artikel eller afvises med begrundelse.",
-    "Anbefalingerne er ikke nyeste-først: Anthropic-artiklen (17.10. kl. 20.21) står som fjerde artikel efter Replit (18.48) og AI-agent-artiklen (13.00).",
-    "Meta-artiklen indeholder en ufuldstændig og meningsløs sætning: »Selskabet har præcis vilkårene i teksten selv« – tillægsforms-endelsen på »præciseret« mangler.",
-    "Dansk sproglige fejl flere steder: engelske possessiv-apostroffer i dansk tekst (»Anthropic's Claude«, »Anthropic's flagskibsmodel«, »Replit's udgifter«), »xAIs Grok« i stedet for »xAI's Grok«, og Meta-citatet »de crawling-vilkår, vi samlede« er en ordret oversættelse, der ikke fungerer på dansk.",
-    "Ingen kilder er vedhæftet nogen af de fire artikler, så de præcise tal og påstande ikke kan kontrolleres: 21→14 og 27→9 pct. juniorer, 61→56 pct. tekniske teams og 20 pct. mødetid i Anthropic-artiklen, 2→15 pct. enterprise og over 50 pct. B2B i Replit-artiklen samt påstanden om, at Meta vandt en højprofileret ophavsretsag sidste år."
-  ],
-  "modelkald": 6,
-  "kildehentninger": 0,
+  "modelkald": 5,
+  "kildehentninger": 3,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -46,11 +38,15 @@
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
-      "vaerktoej": "find_kilder",
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -58,11 +54,24 @@
       "fejl": null
     }
   ],
-  "kildegrundlag": [],
+  "kildegrundlag": [
+    {
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "grundlag": "kildetekst"
+    }
+  ],
   "udgivet_udvalg": [
     "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-    "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+    "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
     "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
   ],
-  "afventer_artikler": 53
+  "afventer_artikler": 54
 }
