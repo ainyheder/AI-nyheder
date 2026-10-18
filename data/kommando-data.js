@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-18T19:15:27.425684+00:00",
+ "genereret": "2026-10-18T22:53:31.399497+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,30 +195,30 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-18T18:50:54.284465+00:00",
-  "antal": 116,
-  "med_billede": 77,
-  "paa_dansk": 116,
+  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "antal": 118,
+  "med_billede": 78,
+  "paa_dansk": 118,
   "kategorier": {
-   "Samfund \u0026 etik": 26,
+   "Lanceringer": 27,
    "Politik \u0026 jura": 16,
-   "Lanceringer": 24,
-   "Penge \u0026 marked": 22,
+   "Samfund \u0026 etik": 25,
+   "Penge \u0026 marked": 23,
    "Forskning": 10,
-   "Hverdags-AI": 18
+   "Hverdags-AI": 17
   },
   "kilder": {
-   "The Verge AI": 32,
-   "TechCrunch AI": 38,
+   "TechCrunch AI": 37,
    "Hugging Face": 1,
    "Ars Technica AI": 11,
-   "Simon Willison AI": 8,
-   "Google DeepMind": 1,
+   "The Verge AI": 31,
+   "Simon Willison AI": 9,
+   "Google DeepMind": 2,
    "MIT Tech Review AI": 5,
+   "Google Gemini": 5,
    "Anthropic News": 14,
    "xAI News": 1,
-   "Mistral AI": 2,
-   "Google Gemini": 3
+   "Mistral AI": 2
   },
   "udvalgte": [
    {
@@ -242,14 +242,14 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/4318475ea0f491c7.jpg"
    },
    {
-    "titel": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
-    "rubrik": "Claude retter de fleste kodeændringer før mennesker",
-    "link": "https://simonwillison.net/2026/Oct/16/code-review/",
-    "side": "artikel/3b2978d86ab4604d.html",
-    "kategori": "Samfund \u0026 etik",
-    "kilde": "Simon Willison AI",
-    "dato": "2026-10-16T22:06:37+00:00",
-    "billede": "data/img/54de05e2b4c5c35f.webp"
+    "titel": "Meta removes language that may have allowed it to scrape news sites",
+    "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
+    "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+    "side": "artikel/39a7adebb3b0f4f2.html",
+    "kategori": "Politik \u0026 jura",
+    "kilde": "The Verge AI",
+    "dato": "2026-10-17T11:04:36-04:00",
+    "billede": "data/img/27a5bcf866d94611.jpg"
    }
   ],
   "seneste": [
@@ -284,6 +284,16 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/ee66805047f7589e.jpg"
    },
    {
+    "titel": "Replit makes OpenAI its default over Anthropic, CEO says",
+    "rubrik": "Replit vælger OpenAI som standard frem for Anthropic",
+    "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+    "side": "artikel/5329074f895835a3.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-17T18:48:08+00:00",
+    "billede": "data/img/0e7bda55a9ffb0d8.webp"
+   },
+   {
     "titel": "Websites are closing their doors to AI agents",
     "rubrik": "Amazon og banker lukker døren for AI-agenter",
     "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
@@ -301,7 +311,7 @@ window.KOMMANDO_DATA = {
     "kategori": "Politik \u0026 jura",
     "kilde": "The Verge AI",
     "dato": "2026-10-17T11:04:36-04:00",
-    "billede": ""
+    "billede": "data/img/27a5bcf866d94611.jpg"
    },
    {
     "titel": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
@@ -362,35 +372,25 @@ window.KOMMANDO_DATA = {
     "kilde": "MIT Tech Review AI",
     "dato": "2026-10-16T18:00:00+00:00",
     "billede": "data/img/1cec9955c9450ff9.jpg"
-   },
-   {
-    "titel": "Jev is Vercel’s fastest-adopted AI model ever",
-    "rubrik": "Jev er hurtigst adopterede AI-model hos Vercel",
-    "link": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-    "side": "artikel/805c6efc7dd4cb7f.html",
-    "kategori": "Penge \u0026 marked",
-    "kilde": "TechCrunch AI",
-    "dato": "2026-10-16T15:33:49+00:00",
-    "billede": "data/img/50a624dad66f5b2f.webp"
    }
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-18T18:50:54.284465+00:00",
+  "opdateret": "2026-10-18T22:33:18.203514+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 5,
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
+  "kildehentninger": 8,
   "regelbaseret_udvalg": [
-   "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
    "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-   "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+   "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+   "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-   "https://simonwillison.net/2026/Oct/16/code-review/"
+   "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
   ],
   "vaerktoejer": [
    {
@@ -418,6 +418,34 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "find_kilder",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
+    "vaerktoej": "laes_kilde",
+    "fejl": null
+   },
+   {
     "vaerktoej": "laes_kilde",
     "fejl": null
    },
@@ -439,16 +467,20 @@ window.KOMMANDO_DATA = {
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": null
+    "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 996 tegn; skriv 12-900 tegn i dette felt"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt"
    }
   ],
   "kildegrundlag": [
    {
-    "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+    "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
     "grundlag": "kildetekst"
    },
    {
@@ -460,13 +492,25 @@ window.KOMMANDO_DATA = {
     "grundlag": "kildetekst"
    },
    {
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://www.anthropic.com/news/public-benefit-fund",
+    "grundlag": "kildetekst"
+   },
+   {
+    "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
     "grundlag": "kildetekst"
    }
   ]
  },
  "hjerner_status": {
-  "opdateret": "2026-10-18T18:50:53.955090+00:00",
+  "opdateret": "2026-10-18T22:33:17.299259+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -822,8 +866,8 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-18T18:50:54.284465+00:00",
-  "artikler_i_alt": 116,
+  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "artikler_i_alt": 118,
   "kilder": [
    {
     "navn": "Anthropic News",
@@ -991,11 +1035,11 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 12,
-    "i_listen": 3,
-    "som_ekstra": 3,
+    "i_listen": 5,
+    "som_ekstra": 4,
     "seneste": [
      {
-      "rubrik": "Google Universal Cart samler varer fra flere butikker",
+      "rubrik": "Google Universal Cart samler flere butikker",
       "dato": "",
       "foerst_set": "2026-10-15T13:39:48",
       "link": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
@@ -1020,6 +1064,33 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google Argon koster en femtedel af rivalernes pris"
+     },
+     {
+      "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+      "dato": "",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+      "side": "",
+      "hvor": "under",
+      "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
+     },
+     {
+      "rubrik": "Gemini 4 Argon lanceres globalt i dag",
+      "dato": "2026-10-13T16:00:00",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "side": "artikel/aff2c9dc3dc0fb59.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Argon skriver en million tokens ud",
+      "dato": "2026-10-02T15:00:00",
+      "foerst_set": "2026-10-02T20:55:07",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "side": "artikel/bfe2b156957ee716.html",
+      "hvor": "forside",
+      "under": ""
      },
      {
       "rubrik": "Gemini Live beskriver verden for blinde",
@@ -1108,7 +1179,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 8,
+    "i_listen": 9,
     "som_ekstra": 4,
     "seneste": [
      {
@@ -1202,20 +1273,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
+      "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
+      "dato": "2026-10-13T22:28:54",
+      "foerst_set": "2026-10-13T23:50:16",
+      "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
+      "side": "artikel/285c1f1903787d89.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
       "rubrik": "Huntley blokerer agentens genveje med git-krog",
       "dato": "2026-10-13T13:32:00",
       "foerst_set": "2026-10-13T19:29:19",
       "link": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
       "side": "artikel/66a589a2dc4baf06.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Simon Willison redigerer filer fra telefonen",
-      "dato": "2026-10-12T15:54:36",
-      "foerst_set": "2026-10-13T02:13:00",
-      "link": "https://simonwillison.net/2026/Oct/12/web-edit/",
-      "side": "artikel/90d1c46cc2bbf346.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1231,7 +1302,7 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 38,
+    "i_listen": 37,
     "som_ekstra": 7,
     "seneste": [
      {
@@ -1354,8 +1425,8 @@ window.KOMMANDO_DATA = {
     "status": "ok",
     "fejl": "",
     "hentet": 10,
-    "i_listen": 32,
-    "som_ekstra": 11,
+    "i_listen": 31,
+    "som_ekstra": 10,
     "seneste": [
      {
       "rubrik": "Meta vil træne AI på virksomheders sider",
@@ -1401,15 +1472,6 @@ window.KOMMANDO_DATA = {
       "side": "",
       "hvor": "under",
       "under": "Google sender dine AI-apps i Play Store"
-     },
-     {
-      "rubrik": "Apple HomeView er en iPhone til køkkenbordet",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
-      "side": "",
-      "hvor": "under",
-      "under": "Apple HomeView kan blive smart home-gennembrud"
      },
      {
       "rubrik": "Character.AI begærer konkurs, Disney byder først",
@@ -1462,6 +1524,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-17T15:52:44",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
       "side": "artikel/657279cf248cf6ba.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
+      "dato": "2026-10-17T11:04:36",
+      "foerst_set": "2026-10-17T15:52:44",
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "side": "artikel/39a7adebb3b0f4f2.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1674,7 +1745,7 @@ window.KOMMANDO_DATA = {
     "status": "fejl",
     "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
     "hentet": 0,
-    "i_listen": 1,
+    "i_listen": 2,
     "som_ekstra": 2,
     "seneste": [
      {
@@ -1701,6 +1772,15 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-16T04:53:41",
       "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
       "side": "artikel/ba028f76ed47c779.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
+      "dato": "2026-10-13T19:43:07",
+      "foerst_set": "2026-10-13T19:29:19",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "side": "artikel/42f1c245f492d3d1.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1737,12 +1817,12 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-18T19:15:17.138970+00:00",
+  "opdateret": "2026-10-18T22:53:23.663440+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 18,
-  "sidevisninger_i_alt": 41,
+  "besoeg_i_alt": 20,
+  "sidevisninger_i_alt": 43,
   "ai_chat_besoeg": 0,
   "serie": [
    {
@@ -1899,15 +1979,15 @@ window.KOMMANDO_DATA = {
   "sider": [
    {
     "sti": "/",
-    "besoeg": 18,
-    "visninger": 41
+    "besoeg": 20,
+    "visninger": 43
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 18
+    "besoeg": 20
    }
   ],
   "laeste_temaer": []

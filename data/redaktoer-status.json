@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-18T18:50:54.284465+00:00",
+  "opdateret": "2026-10-18T22:33:18.203514+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
-    "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
     "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
+    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+    "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
   ],
-  "input_fingerprint": "9c3e4b0101264ec2",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
-  "modelkald": 5,
-  "kildehentninger": 5,
+  "input_fingerprint": "842bff416fd53314",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt",
+  "modelkald": 7,
+  "kildehentninger": 8,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -38,6 +38,34 @@
       "fejl": null
     },
     {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
       "vaerktoej": "laes_kilde",
       "fejl": null
     },
@@ -59,16 +87,20 @@
     },
     {
       "vaerktoej": "aflever_udgave",
-      "fejl": null
+      "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 996 tegn; skriv 12-900 tegn i dette felt"
+    },
+    {
+      "vaerktoej": "aflever_udgave",
+      "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt"
     }
   ],
   "kildegrundlag": [
     {
-      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
       "grundlag": "kildetekst"
     },
     {
@@ -80,14 +112,26 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://www.anthropic.com/news/public-benefit-fund",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
     "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
     "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-    "https://simonwillison.net/2026/Oct/16/code-review/"
+    "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
   ],
   "afventer_artikler": 52
 }
