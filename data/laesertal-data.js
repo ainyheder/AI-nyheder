@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-19T16:17:48.113638+00:00",
+ "opdateret": "2026-10-19T21:59:00.542763+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -68,7 +68,7 @@ window.LAESERTAL = {
      3,
      0,
      0,
-     0
+     1
     ]
    },
    {
@@ -103,7 +103,7 @@ window.LAESERTAL = {
      5,
      1,
      0,
-     0
+     1
     ]
    },
    {
@@ -208,7 +208,7 @@ window.LAESERTAL = {
      2,
      2,
      0,
-     0
+     1
     ]
    },
    {
@@ -243,7 +243,7 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     0
+     2
     ]
    },
    {
@@ -278,7 +278,42 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0
+     6
+    ]
+   },
+   {
+    "navn": "Labs",
+    "tal": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
     ]
    },
    {
@@ -319,20 +354,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 21,
+ "besoeg_i_alt": 22,
  "sidevisninger_i_alt": 46,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 21,
+   "besoeg": 22,
    "visninger": 46
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 21
+   "besoeg": 22
   }
  ],
  "ai_chats": [],
@@ -341,12 +376,12 @@ window.LAESERTAL = {
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 25
+    "visninger": 24
    },
    {
     "fra": "direkte",
-    "besoeg": 21,
-    "visninger": 21
+    "besoeg": 22,
+    "visninger": 22
    }
   ]
  },
