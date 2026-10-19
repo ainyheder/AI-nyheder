@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-19T05:11:37.105587+00:00",
- "artikler_i_alt": 118,
+ "opdateret": "2026-10-19T15:50:01.745273+00:00",
+ "artikler_i_alt": 115,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -106,20 +106,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
-     "dato": "2026-10-01T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/news/barclays-scales-claude",
-     "side": "artikel/9393e9cf493067a7.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
      "dato": "2026-09-28T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/claude-sonnet-5-5",
      "side": "artikel/18d398716f5aa44d.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
+     "dato": "2026-10-01T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/news/barclays-scales-claude",
+     "side": "artikel/9393e9cf493067a7.html",
      "hvor": "forside",
      "under": ""
     }
@@ -131,7 +131,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     3
     ],
     [
      "The Verge AI",
@@ -188,7 +188,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 5,
+   "i_listen": 3,
    "som_ekstra": 3,
    "seneste": [
     {
@@ -210,31 +210,13 @@ window.KILDER_STATUS = {
      "under": "Google Argon koster en femtedel af rivalernes pris"
     },
     {
-     "rubrik": "Google ruller Gemini 4 Argon bredt ud",
+     "rubrik": "Google Gemini 3.8 skaber stemmer fra bunden",
      "dato": "",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/technology/safety-security/gemini-4-model-safety-security/",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
      "side": "",
      "hvor": "under",
-     "under": "Gemini 4 Argon udrulles bredt efter sikkerhedstests"
-    },
-    {
-     "rubrik": "Gemini 4 Argon lanceres globalt i dag",
-     "dato": "2026-10-13T16:00:00",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-     "side": "artikel/aff2c9dc3dc0fb59.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon skriver en million tokens ud",
-     "dato": "2026-10-02T15:00:00",
-     "foerst_set": "2026-10-02T20:55:07",
-     "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-     "side": "artikel/bfe2b156957ee716.html",
-     "hvor": "forside",
-     "under": ""
+     "under": "Gemini 3.8 TTS styres replik for replik"
     },
     {
      "rubrik": "Gemini Live beskriver verden for blinde",
@@ -344,7 +326,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 9,
+   "i_listen": 8,
    "som_ekstra": 4,
    "seneste": [
     {
@@ -438,15 +420,6 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
-     "dato": "2026-10-13T22:28:54",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-     "side": "artikel/285c1f1903787d89.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Huntley blokerer agentens genveje med git-krog",
      "dato": "2026-10-13T13:32:00",
      "foerst_set": "2026-10-13T19:29:19",
@@ -490,13 +463,13 @@ window.KILDER_STATUS = {
    "som_ekstra": 8,
    "seneste": [
     {
-     "rubrik": "Disney ansætter 60 af Character.AI-medarbejderne",
+     "rubrik": "Anthropic afsætter fem procent af aktier til fond",
      "dato": "",
-     "foerst_set": "2026-10-18T18:50:54",
-     "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+     "foerst_set": "2026-10-18T22:33:18",
+     "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
      "side": "",
      "hvor": "under",
-     "under": "Disney byder 20 millioner dollar på Character.AI-teknologi"
+     "under": "Anthropic afsætter fem procent af aktierne til fond"
     },
     {
      "rubrik": "Replit dropper Anthropic for ChatGPT",
@@ -703,12 +676,12 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Ars Technica AI",
-     2
+     "Anthropic News",
+     3
     ],
     [
-     "Anthropic News",
-     2
+     "Ars Technica AI",
+     1
     ],
     [
      "xAI News",
@@ -848,7 +821,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Trump deler AI-redigeret foto af hvidmalet søjle",
-     "dato": "2026-10-15T17:09:33",
+     "dato": "2026-10-15T21:09:33",
      "foerst_set": "2026-10-15T23:14:08",
      "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
      "side": "artikel/287b7f7f97fe92d1.html",
@@ -857,7 +830,7 @@ window.KILDER_STATUS = {
     },
     {
      "rubrik": "Kritiske film om Musk og Altman rammer biograferne",
-     "dato": "2026-10-15T17:39:52",
+     "dato": "2026-10-15T21:39:52",
      "foerst_set": "2026-10-15T23:14:08",
      "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
      "side": "artikel/37d075d48fefe06a.html",
@@ -1107,7 +1080,7 @@ window.KILDER_STATUS = {
     ],
     [
      "TechCrunch AI",
-     2
+     1
     ],
     [
      "Google Gemini",
@@ -1125,7 +1098,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 5,
+   "i_listen": 4,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -1152,15 +1125,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-09T15:32:07",
      "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
      "side": "artikel/12d2afa3a1ac678b.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "AVEVA-robotter kan hente data i farlige zoner",
-     "dato": "2026-10-08T08:17:32",
-     "foerst_set": "2026-10-08T15:50:15",
-     "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-     "side": "artikel/a80a806ab60304c5.html",
      "hvor": "forside",
      "under": ""
     },
@@ -1198,10 +1162,10 @@ window.KILDER_STATUS = {
    "kun_aktuel": false,
    "max": 15,
    "aktiv": true,
-   "status": "fejl",
-   "fejl": "ParseError: not well-formed (invalid token): line 1, column 0",
-   "hentet": 0,
-   "i_listen": 2,
+   "status": "ok",
+   "fejl": "",
+   "hentet": 15,
+   "i_listen": 3,
    "som_ekstra": 2,
    "seneste": [
     {
@@ -1232,11 +1196,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Gemini 4 Argon udrulles bredt efter sikkerhedstests",
-     "dato": "2026-10-13T19:43:07",
-     "foerst_set": "2026-10-13T19:29:19",
-     "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "side": "artikel/42f1c245f492d3d1.html",
+     "rubrik": "EmbeddingGemma 2 finder videoklip ud fra tale",
+     "dato": "2026-10-06T19:57:04",
+     "foerst_set": "2026-10-07T15:44:28",
+     "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "side": "artikel/bf211d23154acfab.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Gemini 3.8 TTS styres replik for replik",
+     "dato": "2026-09-23T15:25:14",
+     "foerst_set": "2026-09-23T19:47:07",
+     "link": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "side": "artikel/31ef9b5263a38be6.html",
      "hvor": "forside",
      "under": ""
     }
