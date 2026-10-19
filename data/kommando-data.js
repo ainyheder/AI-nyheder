@@ -1,6 +1,6 @@
 window.KOMMANDO_DATA = {
  "version": 1,
- "genereret": "2026-10-18T22:53:31.399497+00:00",
+ "genereret": "2026-10-19T05:31:33.622896+00:00",
  "tilgaengelige": {
   "feeds": true,
   "hjerner": true,
@@ -195,7 +195,7 @@ window.KOMMANDO_DATA = {
  },
  "redaktoer_instruks": "# Redaktionens retning\n\nAI-nyheder skal være stedet, hvor nysgerrige læsere opdager, hvad AI nu kan.\nDæk internationale nyheder fra hele verden og fortæl dem på klart dansk.\nIngen særlig prioritet til Danmark eller EU. Dansk adgang er en nyttig\noplysning, når den er dokumenteret, aldrig en adgangsbillet til forsiden.\n\n## Hvad der skal øverst\n\nNye AI-modeller og væsentlige modelversioner er førsteprioritet: tekst,\nræsonnement, billeder, video, lyd, multimodalitet og åbne modelvægte. Vælg\nud fra den nye mulighed, ikke hvem der råber højest. Medtag både store labs\nog mindre udgivere med noget konkret at vise. Et modelnavn i en overskrift\ner ikke i sig selv en lancering; en ny appfunktion er ikke en ny model.\n\nVurder derefter nye anvendelser, overbevisende tests, overraskende forskning\nog ændringer i adgang, pris eller sikkerhed, som flytter noget for brugerne.\nFinansiering, kendte direktører, løse fremtidsudtalelser og endnu en analyse\naf den samme lancering skal ikke fortrænge en vigtig ny modeludgivelse.\n\n## Hvad læseren skal forstå\n\nHver hovedhistorie skal forklare: Hvad er nyt i forhold til før? Hvad kan\nman faktisk bruge eller få adgang til? Hvilket belæg har vi, og hvad ved vi\nendnu ikke? Vælg de spørgsmål, materialet kan besvare; opfind ikke en pris,\nen dansk konsekvens eller en demonstration for at fylde skabelonen ud.\n\nSkeln mellem annoncering, begrænset preview, tilgængelig API, appadgang og\nåbne vægte. Bevar præcise modelversioner og pris-enheder. En producent kan\ndokumentere sin udgivelse; producentens præstationsløfter er ikke en\nuafhængig test. En vigtig lancering må gerne komme først med klare forbehold.\n\n## En samlet forside\n\nBegynd med nyhederne fra de seneste 24 timer. Vælg højst tre hovedhistorier\nfra de seneste 48 timer, med de vigtigste modellanceringer først. Undersøg\nnye kandidater, før du genvælger gårsdagens historier. En ny omtale er ikke\nnødvendigvis en ny begivenhed. Resten af forsiden viser nyeste artikler først;\nanbefalinger må ikke holde flere dage gamle historier foran dagens nyheder.\n\nÉn begivenhed skal optage én plads i udvalget. Saml flere mediers omtaler,\nog vælg den bedste kilde frem for at gentage nyheden. En senere test,\nprisændring eller opdaget begrænsning kan være selvstændig, hvis den tilfører\nvæsentligt nyt. Samme firmanavn er ikke nok til at slå historier sammen.\n\nBrug hukommelsen om tidligere forsider. En genvalgt hovedhistorie kræver en\nkonkret forklaring: nyt siden sidst eller stadig den vigtigste tilgængelige\nnyhed. Lad ikke små opdateringer holde en gammel historie øverst. Variér\nudvalget, når kandidaterne fortjener det; brug ikke faste firmakvoter eller\nsvage historier som fyld. Færre gode historier er et acceptabelt resultat.\n\n## Kilder, arbejdsopgaver og tone\n\nLæs kilder til hovedhistorierne inden for dit værktøjsbudget. Prioritér den\nofficielle meddelelse og én relevant uafhængig kilde, når de er tilgængelige.\nDu kan kun undersøge de kandidater og henvisninger, værktøjerne giver dig.\nLov ikke en fuldstændig overvågning af nettet, og opfind aldrig links.\n\nBestil en præcis skriveopgave: nyhedsvinkel, vigtigste fakta, spørgsmål der\nkan besvares, og nødvendige forbehold. Ved utilstrækkeligt materiale: afvent\nen færdig artikel. En rubrik og et kort RSS-resumé må ikke udgives.\nStop en udgave med opdigtede centrale fakta eller dubletter i udvalget.\nKræv ikke nye omskrivninger alene af smagshensyn.\n\nSkriv med konkrete navne og aktive verber. Gør teknologien forståelig uden\nat tale ned til læseren. Ingen “digitale hjerner”, hype, skræmmeord, kunstig\nspænding eller gentagne forklaringer. Hvert afsnit skal give noget nyt.\n\nFortæl med et konkret anslag, korte afsnit og en forståelig forklaring på,\nhvad der har ændret sig. Giv både rubrik og mellemoverskrifter indhold og\nnysgerrighed. Brug relevante talfelter og korte faktalister som pauser, uden\nat gentage den samme pointe. Læseren skal kunne følge historien uden at kende\nAI-forkortelserne på forhånd. Sammenlign også med tidligere udgivne artikler;\nen ny kommentar til en gammel opsigelse eller lancering er ikke en ny hændelse.\n",
  "artikler": {
-  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "opdateret": "2026-10-19T05:11:37.105587+00:00",
   "antal": 118,
   "med_billede": 78,
   "paa_dansk": 118,
@@ -242,14 +242,14 @@ window.KOMMANDO_DATA = {
     "billede": "data/img/4318475ea0f491c7.jpg"
    },
    {
-    "titel": "Meta removes language that may have allowed it to scrape news sites",
-    "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
-    "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-    "side": "artikel/39a7adebb3b0f4f2.html",
-    "kategori": "Politik \u0026 jura",
-    "kilde": "The Verge AI",
-    "dato": "2026-10-17T11:04:36-04:00",
-    "billede": "data/img/27a5bcf866d94611.jpg"
+    "titel": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+    "rubrik": "Anthropic ansætter færre juniorer, bruger flere møder",
+    "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+    "side": "artikel/c2a828c7429bd5d5.html",
+    "kategori": "Penge \u0026 marked",
+    "kilde": "TechCrunch AI",
+    "dato": "2026-10-17T20:21:19+00:00",
+    "billede": "data/img/ee66805047f7589e.jpg"
    }
   ],
   "seneste": [
@@ -376,21 +376,21 @@ window.KOMMANDO_DATA = {
   ]
  },
  "redaktoer_status": {
-  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "opdateret": "2026-10-19T05:11:37.105587+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
-  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt",
+  "forklaring": "Redaktionsmødet fejlede: UdgaveFejl: Afleveringen kunne ikke godkendes inden for budgettet: Henvis kun til læste kilder med tilstrækkeligt materiale",
   "modelkald": 7,
-  "kildehentninger": 8,
+  "kildehentninger": 0,
   "regelbaseret_udvalg": [
+   "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
    "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-   "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-   "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
+   "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
   ],
   "udgivet_udvalg": [
    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
    "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-   "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites"
+   "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/"
   ],
   "vaerktoejer": [
    {
@@ -434,83 +434,26 @@ window.KOMMANDO_DATA = {
     "fejl": null
    },
    {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
-    "fejl": null
-   },
-   {
-    "vaerktoej": "laes_kilde",
+    "vaerktoej": "find_kilder",
     "fejl": null
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 996 tegn; skriv 12-900 tegn i dette felt"
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
    },
    {
     "vaerktoej": "aflever_udgave",
-    "fejl": "Artikel 16eddc2105cf8883: skriveopgave har 910 tegn; skriv 12-900 tegn i dette felt"
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
+   },
+   {
+    "vaerktoej": "aflever_udgave",
+    "fejl": "Henvis kun til læste kilder med tilstrækkeligt materiale"
    }
   ],
-  "kildegrundlag": [
-   {
-    "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://www.anthropic.com/news/public-benefit-fund",
-    "grundlag": "kildetekst"
-   },
-   {
-    "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-    "grundlag": "kildetekst"
-   }
-  ]
+  "kildegrundlag": []
  },
  "hjerner_status": {
-  "opdateret": "2026-10-18T22:33:17.299259+00:00",
+  "opdateret": "2026-10-19T05:11:36.767767+00:00",
   "daglig_model": "deepseek-flash",
   "udbyder": "deepseek",
   "billedmodel": "@cf/black-forest-labs/flux-2-klein-4b",
@@ -866,7 +809,7 @@ window.KOMMANDO_DATA = {
   }
  },
  "kilder": {
-  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "opdateret": "2026-10-19T05:11:37.105587+00:00",
   "artikler_i_alt": 118,
   "kilder": [
    {
@@ -973,20 +916,20 @@ window.KOMMANDO_DATA = {
       "under": ""
      },
      {
-      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
-      "dato": "2026-09-28T00:00:00",
-      "foerst_set": "2026-10-02T12:20:39",
-      "link": "https://www.anthropic.com/claude-sonnet-5-5",
-      "side": "artikel/18d398716f5aa44d.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
       "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
       "dato": "2026-10-01T00:00:00",
       "foerst_set": "2026-10-02T12:20:39",
       "link": "https://www.anthropic.com/news/barclays-scales-claude",
       "side": "artikel/9393e9cf493067a7.html",
+      "hvor": "forside",
+      "under": ""
+     },
+     {
+      "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
+      "dato": "2026-09-28T00:00:00",
+      "foerst_set": "2026-10-02T12:20:39",
+      "link": "https://www.anthropic.com/claude-sonnet-5-5",
+      "side": "artikel/18d398716f5aa44d.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1036,7 +979,7 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 12,
     "i_listen": 5,
-    "som_ekstra": 4,
+    "som_ekstra": 3,
     "seneste": [
      {
       "rubrik": "Google Universal Cart samler flere butikker",
@@ -1052,15 +995,6 @@ window.KOMMANDO_DATA = {
       "dato": "",
       "foerst_set": "2026-10-13T19:29:19",
       "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
-      "side": "",
-      "hvor": "under",
-      "under": "Google Argon koster en femtedel af rivalernes pris"
-     },
-     {
-      "rubrik": "Gemini 4 Argon klar til udviklere",
-      "dato": "",
-      "foerst_set": "2026-10-13T19:29:19",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
       "side": "",
       "hvor": "under",
       "under": "Google Argon koster en femtedel af rivalernes pris"
@@ -1303,8 +1237,17 @@ window.KOMMANDO_DATA = {
     "fejl": "",
     "hentet": 10,
     "i_listen": 37,
-    "som_ekstra": 7,
+    "som_ekstra": 8,
     "seneste": [
+     {
+      "rubrik": "Disney ansætter 60 af Character.AI-medarbejderne",
+      "dato": "",
+      "foerst_set": "2026-10-18T18:50:54",
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "side": "",
+      "hvor": "under",
+      "under": "Disney byder 20 millioner dollar på Character.AI-teknologi"
+     },
      {
       "rubrik": "Replit dropper Anthropic for ChatGPT",
       "dato": "",
@@ -1401,15 +1344,6 @@ window.KOMMANDO_DATA = {
       "foerst_set": "2026-10-17T22:35:34",
       "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
       "side": "artikel/24a6bb2519a404ce.html",
-      "hvor": "forside",
-      "under": ""
-     },
-     {
-      "rubrik": "Anthropic ansætter færre juniorer, bruger flere møder",
-      "dato": "2026-10-17T20:21:19",
-      "foerst_set": "2026-10-17T22:35:34",
-      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "side": "artikel/c2a828c7429bd5d5.html",
       "hvor": "forside",
       "under": ""
      }
@@ -1817,19 +1751,14 @@ window.KOMMANDO_DATA = {
   ]
  },
  "laesertal": {
-  "opdateret": "2026-10-18T22:53:23.663440+00:00",
+  "opdateret": "2026-10-19T05:31:26.658918+00:00",
   "dage": 7,
   "serie_dage": 30,
   "maaling": "ok",
-  "besoeg_i_alt": 20,
-  "sidevisninger_i_alt": 43,
+  "besoeg_i_alt": 18,
+  "sidevisninger_i_alt": 42,
   "ai_chat_besoeg": 0,
   "serie": [
-   {
-    "dato": "2026-09-19",
-    "besoeg": 0,
-    "visninger": 0
-   },
    {
     "dato": "2026-09-20",
     "besoeg": 0,
@@ -1974,20 +1903,25 @@ window.KOMMANDO_DATA = {
     "dato": "2026-10-18",
     "besoeg": 0,
     "visninger": 0
+   },
+   {
+    "dato": "2026-10-19",
+    "besoeg": 0,
+    "visninger": 0
    }
   ],
   "sider": [
    {
     "sti": "/",
-    "besoeg": 20,
-    "visninger": 43
+    "besoeg": 18,
+    "visninger": 42
    }
   ],
   "artikler": [],
   "henvisere": [
    {
     "fra": "direkte",
-    "besoeg": 20
+    "besoeg": 18
    }
   ],
   "laeste_temaer": []

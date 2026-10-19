@@ -1,6 +1,39 @@
 {
-  "opdateret": "2026-10-18T22:33:18.203514+00:00",
+  "opdateret": "2026-10-19T05:11:37.105587+00:00",
   "kladder": [
+    {
+      "titel": "Anthropic gives outside AI watchdog “employee-like” access",
+      "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "resume": "The outside watchdog can publish its findings without Anthropic's approval.",
+      "dato": "2026-10-18T16:25:19+00:00",
+      "kilde": "Ars Technica AI",
+      "kategori": "Politik & jura",
+      "foerst_set": "2026-10-18T18:50:54.284465+00:00",
+      "eget_foerst_set": "2026-10-18T18:50:54.284465+00:00",
+      "rubrik": "Anthropic giver ekstern AI-watchdog medarbejderadgang",
+      "resume_da": "Den uafhængige tilsynsinstans kan nu offentliggøre sine konklusioner om Anthropics modeller uden først at skulle godkendes af selskabet.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 4,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "sikkerhed",
+        "ai_relevant": true,
+        "model_lancering": false,
+        "begrundelse": "Uafhængig AI-tilsynsinstans får medarbejderlignende adgang og kan offentliggøre fund uden Anthropics godkendelse.",
+        "forbehold": "Watchdogs identitet, beføjelsers omfang og håndhævelse er ikke beskrevet i materialet.",
+        "emne": "anthropic"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
     {
       "titel": "Apertus 1.5 Release Notes",
       "link": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
@@ -101,39 +134,6 @@
       ]
     },
     {
-      "titel": "Disney agrees to hire the majority of Character.AI’s workforce",
-      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "resume": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
-      "dato": "2026-10-18T16:30:00+00:00",
-      "kilde": "TechCrunch AI",
-      "kategori": "Penge & marked",
-      "foerst_set": "2026-10-18T18:50:54.284465+00:00",
-      "eget_foerst_set": "2026-10-18T18:50:54.284465+00:00",
-      "rubrik": "Disney ansætter størstedelen af Character.AI’s medarbejdere",
-      "resume_da": "Selskabet begærede sig konkurs i sidste uge, men en aftale på 20 millioner dollars sikrer job til mange ansatte under ny CTO.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 1,
-        "dokumentation": 4,
-        "dansk": 0,
-        "type": "forretning",
-        "ai_relevant": true,
-        "model_lancering": false,
-        "begrundelse": "Disney ansætter flertallet af Character.AIs medarbejdere efter konkurs; tidligere CEO er nu Disneys første CTO, aktiver købt for 20 mio. dollars.",
-        "forbehold": "",
-        "emne": "character.ai / disney"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 5,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
       "titel": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
       "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "resume": "",
@@ -159,39 +159,6 @@
         "begrundelse": "NVIDIA og Hugging Face offentliggør en åben datagenererings-pipeline og 2,8 billioner tokens til indiske sprog.",
         "forbehold": "Ingen oplysninger om modelkvalitet, licens for datasættet eller reproducerbarhed i det korte uddrag.",
         "emne": "nvidia indic pretraining"
-      },
-      "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 6,
-      "afventer": [
-        "Mangler en færdig artikel med mindst to udfoldede afsnit"
-      ]
-    },
-    {
-      "titel": "Welcome FLUX.3 Image Klein in Diffusers",
-      "link": "https://huggingface.co/blog/flux-3",
-      "resume": "",
-      "dato": "2026-10-15T00:00:00+00:00",
-      "kilde": "Hugging Face",
-      "kategori": "Lanceringer",
-      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
-      "eget_foerst_set": "2026-10-15T20:00:28.349873+00:00",
-      "rubrik": "Deepfake med Mia Goth spreder sig på Instagram",
-      "resume_da": "Et opslag viste angiveligt skuespilleren med en skjorte rettet mod eksmanden Shia LaBeouf.",
-      "kat_ai": true,
-      "redaktion": {
-        "version": 3,
-        "metode": "ai",
-        "nyhed": 3,
-        "betydning": 3,
-        "brugbarhed": 3,
-        "dokumentation": 2,
-        "dansk": 0,
-        "type": "lancering",
-        "ai_relevant": true,
-        "model_lancering": true,
-        "begrundelse": "FLUX.3 Image Klein tilføjes i Diffusers; open-weight billedmodel i Hugging Face-økosystemet.",
-        "forbehold": "Tom artikeltekst; kun overskrift dokumenterer udgivelsen.",
-        "emne": "flux"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 6,
@@ -233,34 +200,34 @@
       ]
     },
     {
-      "titel": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-      "resume": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-      "dato": "2026-10-14T02:00:14+00:00",
-      "kilde": "Google DeepMind",
+      "titel": "Welcome FLUX.3 Image Klein in Diffusers",
+      "link": "https://huggingface.co/blog/flux-3",
+      "resume": "",
+      "dato": "2026-10-15T00:00:00+00:00",
+      "kilde": "Hugging Face",
       "kategori": "Lanceringer",
-      "foerst_set": "2026-10-14T05:17:23.558972+00:00",
-      "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
-      "rubrik": "Google DeepMind træner Gemma til scam-detektion",
-      "resume_da": "Letvægtsmodellen kører lokalt på enheden og blokerer svindel i chats uden data i skyen.",
+      "foerst_set": "2026-10-15T20:00:28.349873+00:00",
+      "eget_foerst_set": "2026-10-15T20:00:28.349873+00:00",
+      "rubrik": "Deepfake med Mia Goth spreder sig på Instagram",
+      "resume_da": "Et opslag viste angiveligt skuespilleren med en skjorte rettet mod eksmanden Shia LaBeouf.",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
         "nyhed": 3,
-        "betydning": 4,
+        "betydning": 3,
         "brugbarhed": 3,
-        "dokumentation": 4,
+        "dokumentation": 2,
         "dansk": 0,
         "type": "lancering",
         "ai_relevant": true,
         "model_lancering": true,
-        "begrundelse": "DeepMind og Singapores regering lancerer finjusteret letvægts Gemma-model til on-device svindeldetektion uden cloud-data",
-        "forbehold": "Annoncering fra DeepMind selv; uafhængig dokumentation af præcision mangler",
-        "emne": "google deepmind/gemma"
+        "begrundelse": "FLUX.3 Image Klein tilføjes i Diffusers; open-weight billedmodel i Hugging Face-økosystemet.",
+        "forbehold": "Tom artikeltekst; kun overskrift dokumenterer udgivelsen.",
+        "emne": "flux"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "prio": 7,
+      "prio": 6,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -299,6 +266,39 @@
       ]
     },
     {
+      "titel": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "resume": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "dato": "2026-10-14T02:00:14+00:00",
+      "kilde": "Google DeepMind",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "eget_foerst_set": "2026-10-14T05:17:23.558972+00:00",
+      "rubrik": "Google DeepMind træner Gemma til scam-detektion",
+      "resume_da": "Letvægtsmodellen kører lokalt på enheden og blokerer svindel i chats uden data i skyen.",
+      "kat_ai": true,
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 3,
+        "dokumentation": 4,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "DeepMind og Singapores regering lancerer finjusteret letvægts Gemma-model til on-device svindeldetektion uden cloud-data",
+        "forbehold": "Annoncering fra DeepMind selv; uafhængig dokumentation af præcision mangler",
+        "emne": "google deepmind/gemma"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "prio": 7,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
       "titel": "Bringing GPT-Rosalind to academic research labs",
       "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
       "resume": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
@@ -327,6 +327,39 @@
       },
       "redaktion_instruks": "2aa979b64d83cf66",
       "prio": 5,
+      "afventer": [
+        "Mangler en færdig artikel med mindst to udfoldede afsnit"
+      ]
+    },
+    {
+      "titel": "Gemini 4 Argon is now available for developers.",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+      "resume": "Build complex software and cybersecurity workflows with Google Gemini 4 Argon. Check out the Gemini API Developer Guide and read the Google Antigravity and Android Studi…",
+      "dato": "2026-10-13T16:00:00+00:00",
+      "kilde": "Google Gemini",
+      "kategori": "Lanceringer",
+      "foerst_set": "2026-10-13T19:29:19.321800+00:00",
+      "eget_foerst_set": "2026-10-13T19:29:19.321800+00:00",
+      "rubrik": "Google åbner Gemini 4 Argon for udviklere",
+      "resume_da": "Udviklere kan nu bygge komplekse software- og cybersecurity-workflows via Gemini API. Google har opdateret Developer Guide samt værktøjerne Google Antigravity og Android Studio.",
+      "redaktion": {
+        "version": 3,
+        "metode": "ai",
+        "nyhed": 3,
+        "betydning": 4,
+        "brugbarhed": 4,
+        "dokumentation": 3,
+        "dansk": 0,
+        "type": "lancering",
+        "ai_relevant": true,
+        "model_lancering": true,
+        "begrundelse": "Gemini 4 Argon åbnes for udviklere via API med opdateret Developer Guide og værktøjer.",
+        "forbehold": "Del af samme lancering; priser og konkrete evner ikke angivet i materialet.",
+        "emne": "gemini 4 argon api"
+      },
+      "redaktion_instruks": "2aa979b64d83cf66",
+      "kat_ai": true,
+      "prio": 7,
       "afventer": [
         "Mangler en færdig artikel med mindst to udfoldede afsnit"
       ]
@@ -37157,6 +37190,14 @@
           "resume_da": "Virksomheden anslår gæld til 50–100 millioner dollar og forventer salgsprocessen afsluttet i slutningen af november.",
           "dato": "2026-10-13T10:32:23+00:00",
           "foerst_set": "2026-10-13T12:05:45.412805+00:00"
+        },
+        {
+          "kilde": "TechCrunch AI",
+          "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+          "rubrik": "Disney ansætter 60 af Character.AI-medarbejderne",
+          "resume_da": "Konkursramte Character.AI sender flertallet af sit personale til Disney for årlig lønsum på 60 millioner dollars.",
+          "dato": "2026-10-18T16:30:00+00:00",
+          "foerst_set": "2026-10-18T18:50:54.284465+00:00"
         }
       ],
       "detaljer": [
@@ -37543,14 +37584,6 @@
           "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
           "rubrik": "Gemini 4 Argon kan arbejde uden dig",
           "resume_da": "Gemini 4 Argon svarer mere direkte, kan køre opgaver i baggrunden og er koblet til over 40 apps.",
-          "dato": "2026-10-13T16:00:00+00:00",
-          "foerst_set": "2026-10-13T19:29:19.321800+00:00"
-        },
-        {
-          "kilde": "Google Gemini",
-          "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
-          "rubrik": "Gemini 4 Argon klar til udviklere",
-          "resume_da": "Googles nye model er målrettet flertrinsopgaver som kode­migration og avanceret research.",
           "dato": "2026-10-13T16:00:00+00:00",
           "foerst_set": "2026-10-13T19:29:19.321800+00:00"
         },
@@ -42636,6 +42669,7 @@
       ],
       "billedmotiv": "A white document page with black text lines, where one paragraph line is struck through and dissolving into small fragments, showing a clause being removed from Meta's terms. The blue Meta infinity-loop symbol sits prominently on the document's opaque header bar, about a quarter of the frame width. A small sealed file icon labeled with a robots.txt-style folded corner sits beside it, representing the standard file governing crawler access.",
       "billedmotiv_instruks": "a925d0f69ed5f63dfec2",
+      "billede": "data/img/27a5bcf866d94611.jpg",
       "kat_ai": true,
       "redaktion": {
         "version": 3,
@@ -42659,7 +42693,6 @@
         "kontrolleret": "2026-10-18T12:55:52.352734+00:00"
       },
       "prio": 6,
-      "billede": "data/img/27a5bcf866d94611.jpg",
       "side": "artikel/39a7adebb3b0f4f2.html"
     },
     {
@@ -42912,6 +42945,47 @@
       "eget_foerst_set": "2026-10-17T22:35:34.227146+00:00",
       "rubrik": "Replit vælger OpenAI som standard frem for Anthropic",
       "resume_da": "Men Anthropic-kilder afviser meldingen og siger, at samarbejdet består, mens de fleste kunder følger standarden.",
+      "brief": "",
+      "sektioner": [
+        {
+          "overskrift": "OpenAI erstatter Claude som standard",
+          "tekst": "Replits direktør og medstifter, Amjad Masad, sagde torsdag på TechCrunch Disrupt, at Replit ikke længere arbejder med Anthropic. OpenAIs ChatGPT er nu standardvalget på platformen.\n\nReplit er en skybaseret platform, hvor man bygger og drifter apps direkte i browseren – et værktøj, mange startups og udviklere bruger.\n\nBegrundelserne var omkostninger, partnerskab og ydeevne. »Jeg mener, ChatGPT er bedre nu,« sagde Masad og henviste til både en intern og en offentlig benchmark. I den sidste klarer modellerne Sol og Astra sig bedst ved at bygge apps fra bunden ud fra almindelige sprogkommandoer – det, man kalder vibe-coding."
+        },
+        {
+          "overskrift": "Anthropic-insidere afviser meldingen",
+          "tekst": "Efter messen præciserede Masad, at kunder stadig kan vælge Anthropic Claude-modeller, men at ChatGPT nu er standarden. Han understregede, at Replit er »model-agnostisk«.\n\nMen personer tæt på samarbejdet mellem Anthropic og Replit afviste hans udtalelser på scenen. Én kilde, der ikke ville navngives, sagde, at partnerskabet stadig består.\n\nReplits egne kanaler peger den anden vej: Et blogindlæg fra slutningen af september nævner Claude Fable 5 og Claude Fable 5.1 som modeller i Replit Agents produktion, og en produktmedarbejder promoverede flagskibet Opus 5.5 på X for få uger siden."
+        },
+        {
+          "overskrift": "Standarden kan skære Anthropic-regningen",
+          "tekst": "Skiftet kan reducere Replits udgifter til Anthropic betydeligt, fordi de fleste kunder bliver ved standarden frem for selv at vælge model, vurderer TechCrunch. Replit var indtil for nylig en af Anthropics fem største kunder.\n\nSamtidig ændrer forretningen sig: Enterprise udgjorde 2 procent af omsætningen sidste år og omkring 15 procent i år, og mere end halvdelen af omsætningen er nu B2B, sagde Masad. Replit deler ikke ARR-tal endnu."
+        }
+      ],
+      "noegletal": [
+        {
+          "tal": "2 % → 15 %",
+          "label": "Enterprise som andel af Replits omsætning, sidste år mod i år (Masad)"
+        },
+        {
+          "tal": "> 50 %",
+          "label": "Andel af Replits omsætning fra B2B, ifølge Masad på TechCrunch Disrupt"
+        }
+      ],
+      "figurer": [],
+      "detaljer": [
+        "Replit annoncerede partnerskab med OpenAI allerede i august.",
+        "Masad kaldte god AI-sikkerhed en »habitat« for agenter med sandboxing og fejlhåndtering.",
+        "Artiklen blev udgivet 16. oktober og siden opdateret med mere kontekst."
+      ],
+      "betydning": "Da de fleste kunder bliver ved standarden, kan skiftet fjerne en stor del af Replits indkøb fra Anthropic – mens Claude stadig kan vælges.",
+      "pointer": [
+        "OpenAI er nu standard på Replit",
+        "Anthropic-kilder siger, partnerskabet består stadig",
+        "Enterprise står for cirka 15 % af omsætningen"
+      ],
+      "billedmotiv": "A solid toggle switch on a dark panel slides from a Claude terracotta-orange asterisk starburst icon toward an OpenAI black Blossom symbol, with the Claude starburst still visible but pushed to the off side, showing OpenAI now selected as the default model choice while Anthropic remains available.",
+      "billedmotiv_instruks": "14315fc4d7c23c709d12",
+      "billede": "data/img/0e7bda55a9ffb0d8.webp",
+      "kat_ai": true,
       "redaktion": {
         "version": 3,
         "metode": "ai",
@@ -42928,53 +43002,12 @@
         "emne": "replit"
       },
       "redaktion_instruks": "2aa979b64d83cf66",
-      "kat_ai": true,
-      "prio": 3,
-      "sektioner": [
-        {
-          "overskrift": "OpenAI erstatter Claude som standard",
-          "tekst": "Replits direktør og medstifter, Amjad Masad, sagde torsdag på TechCrunch Disrupt, at Replit ikke længere arbejder med Anthropic. OpenAIs ChatGPT er nu standardvalget på platformen.\n\nReplit er en skybaseret platform, hvor man bygger og drifter apps direkte i browseren – et værktøj, mange startups og udviklere bruger.\n\nBegrundelserne var omkostninger, partnerskab og ydeevne. »Jeg mener, ChatGPT er bedre nu,« sagde Masad og henviste til både en intern og en offentlig benchmark. I den sidste klarer modellerne Sol og Astra sig bedst ved at bygge apps fra bunden ud fra almindelige sprogkommandoer – det, man kalder vibe-coding."
-        },
-        {
-          "overskrift": "Anthropic-insidere afviser meldingen",
-          "tekst": "Efter messen præciserede Masad, at kunder stadig kan vælge Anthropic Claude-modeller, men at ChatGPT nu er standarden. Han understregede, at Replit er »model-agnostisk«.\n\nMen personer tæt på samarbejdet mellem Anthropic og Replit afviste hans udtalelser på scenen. Én kilde, der ikke ville navngives, sagde, at partnerskabet stadig består.\n\nReplits egne kanaler peger den anden vej: Et blogindlæg fra slutningen af september nævner Claude Fable 5 og Claude Fable 5.1 som modeller i Replit Agents produktion, og en produktmedarbejder promoverede flagskibet Opus 5.5 på X for få uger siden."
-        },
-        {
-          "overskrift": "Standarden kan skære Anthropic-regningen",
-          "tekst": "Skiftet kan reducere Replits udgifter til Anthropic betydeligt, fordi de fleste kunder bliver ved standarden frem for selv at vælge model, vurderer TechCrunch. Replit var indtil for nylig en af Anthropics fem største kunder.\n\nSamtidig ændrer forretningen sig: Enterprise udgjorde 2 procent af omsætningen sidste år og omkring 15 procent i år, og mere end halvdelen af omsætningen er nu B2B, sagde Masad. Replit deler ikke ARR-tal endnu."
-        }
-      ],
-      "brief": "",
-      "figurer": [],
-      "noegletal": [
-        {
-          "tal": "2 % → 15 %",
-          "label": "Enterprise som andel af Replits omsætning, sidste år mod i år (Masad)"
-        },
-        {
-          "tal": "> 50 %",
-          "label": "Andel af Replits omsætning fra B2B, ifølge Masad på TechCrunch Disrupt"
-        }
-      ],
-      "detaljer": [
-        "Replit annoncerede partnerskab med OpenAI allerede i august.",
-        "Masad kaldte god AI-sikkerhed en »habitat« for agenter med sandboxing og fejlhåndtering.",
-        "Artiklen blev udgivet 16. oktober og siden opdateret med mere kontekst."
-      ],
-      "betydning": "Da de fleste kunder bliver ved standarden, kan skiftet fjerne en stor del af Replits indkøb fra Anthropic – mens Claude stadig kan vælges.",
-      "pointer": [
-        "OpenAI er nu standard på Replit",
-        "Anthropic-kilder siger, partnerskabet består stadig",
-        "Enterprise står for cirka 15 % af omsætningen"
-      ],
       "brief_instruks": "9b2bbb013b0d68e9",
       "publicering": {
         "status": "godkendt",
         "kontrolleret": "2026-10-18T22:46:23.897046+00:00"
       },
-      "billedmotiv": "A solid toggle switch on a dark panel slides from a Claude terracotta-orange asterisk starburst icon toward an OpenAI black Blossom symbol, with the Claude starburst still visible but pushed to the off side, showing OpenAI now selected as the default model choice while Anthropic remains available.",
-      "billedmotiv_instruks": "14315fc4d7c23c709d12",
-      "billede": "data/img/0e7bda55a9ffb0d8.webp",
+      "prio": 3,
       "side": "artikel/5329074f895835a3.html"
     }
   ]
