@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-20T05:10:40.089605+00:00",
- "artikler_i_alt": 119,
+ "opdateret": "2026-10-20T13:48:46.699225+00:00",
+ "artikler_i_alt": 126,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -106,20 +106,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
-     "dato": "2026-09-28T00:00:00",
-     "foerst_set": "2026-10-02T12:20:39",
-     "link": "https://www.anthropic.com/claude-sonnet-5-5",
-     "side": "artikel/18d398716f5aa44d.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Barclays udvider Claude-samarbejde til hele banken",
      "dato": "2026-10-01T00:00:00",
      "foerst_set": "2026-10-02T12:20:39",
      "link": "https://www.anthropic.com/news/barclays-scales-claude",
      "side": "artikel/9393e9cf493067a7.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Claude Sonnet 5.5 knuser forgængerens kodetest",
+     "dato": "2026-09-28T00:00:00",
+     "foerst_set": "2026-10-02T12:20:39",
+     "link": "https://www.anthropic.com/claude-sonnet-5-5",
+     "side": "artikel/18d398716f5aa44d.html",
      "hvor": "forside",
      "under": ""
     }
@@ -295,17 +295,17 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 2,
-   "som_ekstra": 0,
+   "i_listen": 1,
+   "som_ekstra": 1,
    "seneste": [
     {
      "rubrik": "TorchNeuron kører Hugging Face-modeller direkte på Trainium",
-     "dato": "2026-10-19T00:00:00",
+     "dato": "",
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://huggingface.co/blog/hf-torchneuron",
-     "side": "artikel/9fba733ce125d2be.html",
-     "hvor": "forside",
-     "under": ""
+     "side": "",
+     "hvor": "under",
+     "under": "Amazon vil løsne Nvidias greb om AI-udviklere"
     },
     {
      "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
@@ -317,7 +317,12 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": []
+   "overlap": [
+    [
+     "TechCrunch AI",
+     1
+    ]
+   ]
   },
   {
    "navn": "Simon Willison AI",
@@ -462,7 +467,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 41,
+   "i_listen": 45,
    "som_ekstra": 7,
    "seneste": [
     {
@@ -556,6 +561,33 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Yelp ringer restauranten for dig efter ventetid",
+     "dato": "2026-10-20T11:00:00",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
+     "side": "artikel/06aafb86abeb1480.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Otter.ai henter 320 millioner dollarer uden aktiesalg",
+     "dato": "2026-10-20T11:00:00",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+     "side": "artikel/85e233d0b1664751.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Eka-robot henter 1.500 objekter i timen",
+     "dato": "2026-10-20T13:00:00",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+     "side": "artikel/185426ba2ac3ad8c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Hugging Faces chef: AI-evalueringer er ikke klar",
      "dato": "2026-10-19T22:49:27",
      "foerst_set": "2026-10-20T05:10:40",
@@ -574,6 +606,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "Amazon vil løsne Nvidias greb om AI-udviklere",
+     "dato": "2026-10-19T20:09:24",
+     "foerst_set": "2026-10-19T21:12:53",
+     "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+     "side": "artikel/37fc3e207694607a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "OpenCode-angreb udløste massive AI-regninger",
      "dato": "2026-10-19T19:28:34",
      "foerst_set": "2026-10-19T21:12:53",
@@ -583,20 +624,20 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
-     "rubrik": "Kuyda lancerer Wabi som delt AI-assistent",
-     "dato": "2026-10-19T18:49:04",
-     "foerst_set": "2026-10-19T21:12:53",
-     "link": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
-     "side": "artikel/1ca7c3eb83546059.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
      "rubrik": "Tenstorrent rejser 1,5 mia. dollar til åbne AI-chips",
      "dato": "2026-10-19T18:37:27",
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
      "side": "artikel/67511f2f58d33991.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Kuyda lancerer Wabi som delt AI-assistent",
+     "dato": "2026-10-19T18:49:04",
+     "foerst_set": "2026-10-19T21:12:53",
+     "link": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
+     "side": "artikel/1ca7c3eb83546059.html",
      "hvor": "forside",
      "under": ""
     },
@@ -626,42 +667,6 @@ window.KILDER_STATUS = {
      "side": "artikel/094a1cc1de9ee0cc.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Anthropic ansætter færre juniorer, bruger flere møder",
-     "dato": "2026-10-17T20:21:19",
-     "foerst_set": "2026-10-17T22:35:34",
-     "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-     "side": "artikel/c2a828c7429bd5d5.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Replit vælger OpenAI som standard frem for Anthropic",
-     "dato": "2026-10-17T18:48:08",
-     "foerst_set": "2026-10-17T22:35:34",
-     "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-     "side": "artikel/5329074f895835a3.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Meta fjerner vilkår om AI-træning af websites",
-     "dato": "2026-10-17T21:31:32",
-     "foerst_set": "2026-10-17T15:52:44",
-     "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-     "side": "artikel/24a6bb2519a404ce.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Elorians Glimpse zoomer ind, mens den tænker",
-     "dato": "2026-10-16T16:01:37",
-     "foerst_set": "2026-10-16T19:40:12",
-     "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-     "side": "artikel/33eae345cea5336e.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -672,6 +677,10 @@ window.KILDER_STATUS = {
     [
      "Anthropic News",
      3
+    ],
+    [
+     "Hugging Face",
+     1
     ],
     [
      "Ars Technica AI",
@@ -689,7 +698,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 33,
+   "i_listen": 34,
    "som_ekstra": 11,
    "seneste": [
     {
@@ -792,6 +801,15 @@ window.KILDER_STATUS = {
      "under": "Claude Opus 5.5 matcher Fable-niveau til lavere pris"
     },
     {
+     "rubrik": "Lightroom åbner lukkede øjne med ét tap",
+     "dato": "2026-10-20T09:06:44",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
+     "side": "artikel/07b0468a851267a3.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "CoreWeaves gæld presser hele AI-industrien",
      "dato": "2026-10-19T17:28:20",
      "foerst_set": "2026-10-20T05:10:40",
@@ -889,15 +907,6 @@ window.KILDER_STATUS = {
      "side": "artikel/8431ec80e60810be.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Benn Jordan vidnede for Senatet om Flock-kameraer",
-     "dato": "2026-10-15T14:00:00",
-     "foerst_set": "2026-10-15T20:00:28",
-     "link": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
-     "side": "artikel/e8480ee17728e290.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -919,10 +928,6 @@ window.KILDER_STATUS = {
     ],
     [
      "Google DeepMind",
-     1
-    ],
-    [
-     "MIT Tech Review AI",
      1
     ]
    ]
@@ -1101,17 +1106,35 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 3,
-   "som_ekstra": 1,
+   "i_listen": 6,
+   "som_ekstra": 0,
    "seneste": [
     {
+     "rubrik": "Samsung genoptager byggeriet af femte chipfabrik",
+     "dato": "2026-10-20T09:00:00",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
+     "side": "artikel/cec229fed3dc3902.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Cammarata: Neurale netværk er måske læselige",
+     "dato": "2026-10-19T17:45:55",
+     "foerst_set": "2026-10-19T21:12:53",
+     "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+     "side": "artikel/e7a08d8bbd49f19c.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Shopify åbner egne kasser til AI-agenter",
-     "dato": "",
+     "dato": "2026-10-19T18:22:47",
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-     "side": "",
-     "hvor": "under",
-     "under": "Shopify åbner katalog for alle AI-agenter"
+     "side": "artikel/007fe264c1b33c11.html",
+     "hvor": "forside",
+     "under": ""
     },
     {
      "rubrik": "Claude opfandt spil og lærte af leg",
@@ -1141,12 +1164,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "The Verge AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "OpenAI Blog",

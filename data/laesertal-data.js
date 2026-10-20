@@ -1,5 +1,5 @@
 window.LAESERTAL = {
- "opdateret": "2026-10-20T05:56:15.827632+00:00",
+ "opdateret": "2026-10-20T14:38:13.563887+00:00",
  "dage": 7,
  "serie_dage": 30,
  "udgivne_temaer": {
@@ -67,8 +67,8 @@ window.LAESERTAL = {
      3,
      0,
      0,
-     2,
-     0
+     4,
+     1
     ]
    },
    {
@@ -102,8 +102,8 @@ window.LAESERTAL = {
      4,
      2,
      1,
-     4,
-     0
+     5,
+     3
     ]
    },
    {
@@ -137,7 +137,7 @@ window.LAESERTAL = {
      5,
      1,
      0,
-     2,
+     3,
      0
     ]
    },
@@ -172,8 +172,8 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     0,
-     0
+     1,
+     1
     ]
    },
    {
@@ -207,7 +207,7 @@ window.LAESERTAL = {
      2,
      2,
      0,
-     4,
+     5,
      0
     ]
    },
@@ -242,7 +242,7 @@ window.LAESERTAL = {
      1,
      0,
      0,
-     2,
+     3,
      0
     ]
    },
@@ -277,42 +277,7 @@ window.LAESERTAL = {
      0,
      0,
      0,
-     3,
-     0
-    ]
-   },
-   {
-    "navn": "Labs",
-    "tal": [
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
      0
     ]
    },
@@ -354,20 +319,20 @@ window.LAESERTAL = {
   ]
  },
  "maaling": "ok",
- "besoeg_i_alt": 23,
- "sidevisninger_i_alt": 42,
+ "besoeg_i_alt": 25,
+ "sidevisninger_i_alt": 41,
  "ai_chat_besoeg": 0,
  "sider": [
   {
    "sti": "/",
-   "besoeg": 23,
-   "visninger": 42
+   "besoeg": 25,
+   "visninger": 41
   }
  ],
  "henvisere": [
   {
    "fra": "direkte",
-   "besoeg": 23
+   "besoeg": 25
   }
  ],
  "ai_chats": [],
@@ -375,13 +340,13 @@ window.LAESERTAL = {
   "/": [
    {
     "fra": "direkte",
-    "besoeg": 23,
-    "visninger": 23
+    "besoeg": 25,
+    "visninger": 25
    },
    {
     "fra": "herfra selv",
     "besoeg": 0,
-    "visninger": 19
+    "visninger": 16
    }
   ]
  },
@@ -400,13 +365,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-22",
-   "besoeg": 20,
-   "visninger": 40
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-09-23",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 100
   },
   {
    "dato": "2026-09-24",
@@ -425,8 +390,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-09-27",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 100,
+   "visninger": 100
   },
   {
    "dato": "2026-09-28",
@@ -445,13 +410,13 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-01",
-   "besoeg": 10,
-   "visninger": 10
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-10-02",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-10-03",
@@ -476,7 +441,7 @@ window.LAESERTAL = {
   {
    "dato": "2026-10-07",
    "besoeg": 0,
-   "visninger": 10
+   "visninger": 0
   },
   {
    "dato": "2026-10-08",
@@ -525,8 +490,8 @@ window.LAESERTAL = {
   },
   {
    "dato": "2026-10-17",
-   "besoeg": 10,
-   "visninger": 20
+   "besoeg": 0,
+   "visninger": 0
   },
   {
    "dato": "2026-10-18",
