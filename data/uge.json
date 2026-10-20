@@ -1,48 +1,10 @@
 {
- "rubrik": "Google vender tilbage til fronten – agenterne møder modstand",
- "indledning": "Google er tilbage i front med en ny flagskibsmodel, men ugen viste også, at AI-agenterne er kommet ud i virkeligheden – hvor både myndigheder, banker og hackere tager fat.",
+ "rubrik": "Åbne modeller, egne chips og aflåste agenter",
+ "indledning": "Ugens tydeligste skift er ikke en enkelt ny model, men hvor og på hvem den kører: tre store lanceringer satser på åbne vægte, du selv kan drive – og både chipkamp og retssager følger med.",
  "historier": [
   {
-   "overskrift": "Google lancerer Gemini 4 Argon til Pro- og Ultra-brugere",
-   "tekst": "Google har lanceret Gemini 4 Argon, sin første store frontier-model siden Gemini 3. Google hævder, at den slår GPT-6 Astra, Claude Fable 5.1 og Opus 5.5 i benchmarks inden for blandt andet kodning og jura. Den rulles ud i Gemini-appen og Search til Pro- og Ultra-abonnenter; gratisbrugere må nøjes med Flash-Lite.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-   "kategori": "Lanceringer",
-   "billede": "data/img/939f75d24a28b2e3.jpg",
-   "dato": "2026-10-13T16:00:00+00:00",
-   "andre": [
-    {
-     "kilde": "Google Gemini",
-     "link": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
-     "rubrik": "Gemini 4 Argon kan arbejde uden dig",
-     "resume_da": "Gemini 4 Argon svarer mere direkte, kan køre opgaver i baggrunden og er koblet til over 40 apps.",
-     "dato": "2026-10-13T16:00:00+00:00",
-     "foerst_set": "2026-10-13T19:29:19.321800+00:00"
-    },
-    {
-     "kilde": "Google DeepMind",
-     "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-     "rubrik": "Gemini 4 Argon scorer 87 procent i ERQA",
-     "resume_da": "Googles DeepMind-model øver i simulation før virkeligheden og bygger digitale tvillinger fra rigtige robotoptagelser.",
-     "dato": "2026-10-13T16:01:58+00:00",
-     "foerst_set": "2026-10-13T23:50:16.091252+00:00"
-    },
-    {
-     "kilde": "Google Gemini",
-     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
-     "rubrik": "Gemini 4 Argon er nu klar til udviklere",
-     "resume_da": "Googles nye AI-model er designet til flertrinsopgaver som kode-migrationer og forskning, og tilgængelig via betalt API.",
-     "dato": "2026-10-13T16:00:00+00:00",
-     "foerst_set": "2026-10-13T19:29:19.321800+00:00"
-    }
-   ],
-   "titel": "Google finally releases Gemini 4 Argon",
-   "rubrik": "Google Argon koster en femtedel af rivalernes pris",
-   "resume_da": "Gemini 4 Argon rulles i dag ud til Pro- og Ultra-abonnenter i Gemini-appen og Search, og Google hævder, at den slår GPT-6 Astra i benchmarks.",
-   "artikel_signatur": "ef3efad786b03cfe901da897163ef4632ee22d56ba13aca732f5581ca4e00740"
-  },
-  {
-   "overskrift": "Meta sender 816 milliarders åben model til Mac",
-   "tekst": "Meta lancerer Muse Spark Open, en åbenvægtsmodel med 816 milliarder parametre, designet til at køre lokalt på Apples computere frem for i en sky. Ifølge Meta overgår den andre åbne vægte, men kravet er mindst 1 TB RAM – bedst på en Mac Studio med M5 Ultra. Meta lancerede også sin første frontier-model, Muse Wonder.",
+   "overskrift": "Meta lancerer Muse Spark Open, der skal køre lokalt på Mac",
+   "tekst": "Meta har lanceret Muse Spark Open, som selskabet kalder den mest kapable åbne vægtmodel i USA. De 816 milliarder parametre og 1 million tokens kontekst skal kunne køre lokalt på Mac frem for i en sky, men kravet er mindst 1 TB RAM – bedst på en Mac Studio med M5 Ultra. Ydeevnetallene er Metas egne.",
    "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "kategori": "Lanceringer",
    "billede": "data/img/a0bac78f25175e89.jpg",
@@ -63,34 +25,47 @@
    "artikel_signatur": "b0e56418e7c092fc454e425d5e6d648cb751ae3ed6a2a4fe10c7740abf8ca758"
   },
   {
-   "overskrift": "Amazon og banker lukker døren for AI-agenter",
-   "tekst": "Brugere af Meta Muse, xAIs Grok og OpenAI Dots melder om afviste agenter på Yelp, Delta, JPMorgan og Charles Schwab. Yelp tillader kun agenter, der betaler for dataaftalen; bankerne henviser til sikkerhed. Meta forhandler i stedet aftaler med Walmart, Gap og Sephora, og Shopify har åbnet sit katalog.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/fa14a42ef22d1449.jpg",
-   "dato": "2026-10-17T13:00:00+00:00",
+   "overskrift": "Reflection åbner 501-milliarders modellen Beam for alle",
+   "tekst": "Det nye amerikanske laboratorium Reflection udgiver sin første model, Beam, med åbne vægte under Apache 2.0, som tillader kommerciel brug og omdistribution. Beam har 501 milliarder parametre fordelt på 256 eksperter, men vælger kun de 8 bedste pr. token – ca. 23 milliarder aktive. Den læser 1 million tokens og kræver ifølge Reflection fire B200-GPU’er.",
+   "link": "https://huggingface.co/blog/reflection-beam",
+   "kategori": "Lanceringer",
+   "billede": "data/img/d74542ebe9e4cb36.jpg",
+   "dato": "2026-10-16T00:00:00+00:00",
    "andre": [],
-   "titel": "Websites are closing their doors to AI agents",
-   "rubrik": "Amazon og banker lukker døren for AI-agenter",
-   "resume_da": "Meta Muse, xAIs Grok og OpenAI Dots afvises på Yelp, Delta og finanssider, mens Meta satser på aftaler.",
-   "artikel_signatur": "85d5e89026f214ffa5920b38470ab8088469726cab83723c9164a160cf1bfde2"
+   "titel": "Welcome Beam: a 501B open model you can own, customize, and scale",
+   "rubrik": "Reflection åbner 501-milliarders model Beam for alle",
+   "resume_da": "Beam kan køre på egen hardware, læse 1 million tokens ad gangen og aktiverer kun ca. 23 mia. parametre pr. token.",
+   "artikel_signatur": "0394a0f52e3c658de7fc485e75cb47f089d62d6f5726c69a82630c7a697f3c69"
   },
   {
-   "overskrift": "AI-agenter hackete over 100 hjemmesider med få instruktioner",
-   "tekst": "Sikkerhedsfirmaet Norforge har afdækket angreb, hvor en enkelt hacker satte en hær af AI-agenter på open source-platformen Cairn til at bryde ind i over 100 hjemmesider – blandt andet John Deere, SharkNinja og Cummins. Instruktionsforløbet var under 100 kinesiske tegn, og et vellykket brud tog omkring 23 timer.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/247044ae78c0cb41.jpg",
-   "dato": "2026-10-19T09:58:41-04:00",
+   "overskrift": "Nvidia lancerer åbne modeller til agenter og AI-PC’er",
+   "tekst": "Nvidia lancerer Nemotron 3.5 Super VL med 120 milliarder parametre og åbne vægte til virksomheders AI-agenter, så de kan eftertrænes på egne data og køres på egen infrastruktur. To mindre Bolt-modeller er beregnet til AI-PC’er og arbejdsstationer. Nvidia hævder, at Super VL efter eftertræning slår konkurrerende lukkede modeller; påstanden er selskabets egen.",
+   "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/054eea01842aae5e.jpg",
+   "dato": "2026-10-19T15:37:09+00:00",
    "andre": [],
-   "titel": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-   "rubrik": "AI-agenter angreb John Deere og SharkNinja",
-   "resume_da": "Over 100 hjemmesider blev hacket via AI-agenter på åbne Cairn-instanser med kun få instruktioner fra hackeren.",
-   "artikel_signatur": "21e6a0419ae811b906e4a9786f14d5bd3c35ccf5c7dc080cd0462471c111aa3d"
+   "titel": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+   "rubrik": "Nvidia lancerer åbne modeller til agenter og AI-PC'er",
+   "resume_da": "Nemotron 3.5 Super VL med 120 milliarder parametre skal drive virksomheders agenter. To små Bolt-modeller kan køre lokalt på AI-PC'er uden cloud.",
+   "artikel_signatur": "78b3839bcd2ceea08d128e5f3144286e1ee39fe5d71f1d47b574171e4fc8aa4d"
   },
   {
-   "overskrift": "Otte amerikanske stater sagsøger OpenAI",
-   "tekst": "Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho og Montana mener, at OpenAI vildledte offentligheden om ChatGPT's sikkerhed og indsamlede data fra mindreårige uden tilstrækkeligt samtykke. Staterne kræver bøder og ophør med vildledelsen. OpenAIs talsperson afviser beskyldningerne og henviser til brancheførende aldersspecifikke beskyttelsesforanstaltninger.",
+   "overskrift": "Amazon vil løsne Nvidias greb om AI-udviklere",
+   "tekst": "AWS har udgivet TorchNeuron, der lader udviklere flytte AI-apps til Amazons egen chip Trainium ved at ændre én linje konfiguration. Cirka 85 procent af AI-apps er skrevet i PyTorch, som er tæt koblet til Nvidias CUDA. Amazon planlægger også at bidrage hardwareuafhængig kode til PyTorch-hovedprojektet – en plan, ikke en gennemført ændring.",
+   "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+   "kategori": "Lanceringer",
+   "billede": "",
+   "dato": "2026-10-19T20:09:24+00:00",
+   "andre": [],
+   "titel": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+   "rubrik": "Amazon vil løsne Nvidias greb om AI-udviklere",
+   "resume_da": "Nyt væktøj TorchNeuron flytter AI-apps til Amazons egen chip Trainium med én ændret linje kode.",
+   "artikel_signatur": "d3c35a96f8c5506df24861fbae4a904d160fca2be746b2d8e5c87a3115a6eafd"
+  },
+  {
+   "overskrift": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
+   "tekst": "Otte amerikanske stater, deriblandt Iowa, Kansas og Arizona, har hver især sagsøgt OpenAI. Staterne mener, at virksomheden vildledte offentligheden om ChatGPT’s sikkerhed og indsamlede data fra mindreårige uden tilstrækkeligt samtykke, og kræver bøder og ophør med vildledningen. OpenAIs talsperson afviser beskyldningerne og peger på aldersspecifikke beskyttelsesforanstaltninger.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
    "kategori": "Politik & jura",
    "billede": "data/img/e8aa395624e3b171.jpg",
@@ -102,52 +77,52 @@
    "artikel_signatur": "3136823f60d122811b049a1249b618a0e5d809817960d2214e098b5045cc3e8e"
   },
   {
-   "overskrift": "CoreWeaves gæld presser hele AI-industrien",
-   "tekst": "CoreWeaves obligationer er nået til det område, markedet kalder distressed, og aktien er faldet over 20 procent siden tirsdag. Selskabet skylder over 35 milliarder dollar og tabte mere end 1 milliard i årets første halvår. Uroen smitter af på Oracle, hvis aktie er faldet næsten 10 procent i samme tidsrum.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
-   "kategori": "Penge & marked",
-   "billede": "",
-   "dato": "2026-10-19T17:28:20-04:00",
+   "overskrift": "Amazon og banker lukker døren for AI-agenter – Shopify åbner",
+   "tekst": "AI-agenter fra Meta Muse, xAIs Grok og OpenAI Dots bliver afvist på Yelp, Delta Air Lines, JPMorgan Chase og Charles Schwab. Shopify tager imod med egne kasser, der springer sider bygget for mennesker over. Meta har valgt forhandlinger og aftaler med Walmart, Gap, Sephora og Best Buy frem for Amazons retssag mod Perplexity.",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+   "kategori": "Samfund & etik",
+   "billede": "data/img/fa14a42ef22d1449.jpg",
+   "dato": "2026-10-17T13:00:00+00:00",
    "andre": [],
-   "titel": "CoreWeave’s debt is becoming the whole AI industry’s problem",
-   "rubrik": "CoreWeaves gæld presser hele AI-industrien",
-   "resume_da": "Investorer kræver 1.000 basispoint mere for CoreWeave-obligationer, og aktien er faldet over 20 procent. Selskabet skylder over 35 milliarder dollar.",
-   "artikel_signatur": "b7f514a56314b9b692581476678572447c9779d8fe340de4834838d2d6d01b1d"
+   "titel": "Websites are closing their doors to AI agents",
+   "rubrik": "Amazon og banker lukker døren for AI-agenter",
+   "resume_da": "Meta Muse, xAIs Grok og OpenAI Dots afvises på Yelp, Delta og finanssider, mens Meta satser på aftaler.",
+   "artikel_signatur": "85d5e89026f214ffa5920b38470ab8088469726cab83723c9164a160cf1bfde2"
   }
  ],
  "overblik": [
   {
-   "tekst": "Google er tilbage i front med Gemini 4 Argon, sin første store frontier-model siden Gemini 3 sidste år. Google hævder, at den slår rivaler som GPT-6 Astra i benchmarks, og prismæssigt starter den ifølge Google på en femtedel af rivalernes priser per token – men kun frem til 1. december, hvor prisen fordobles. Meta svarede dagen før med sin første frontier-model, Muse Wonder, og fulgte op med Muse Spark Open, der kører lokalt på Mac i stedet for i en sky. Fronten er altså bredere end længe, og pris er blevet et konkurrencevåben.",
+   "tekst": "Tre af ugens største lanceringer peger samme vej: åbne vægte, man selv kan finjustere og køre. Meta vil have Muse Spark Open til at køre lokalt på Mac – med mindst 1 TB RAM og bedst på en Mac Studio med M5 Ultra. Reflections Beam har 501 milliarder parametre, men aktiverer kun 8 af 256 eksperter pr. token og frigives under Apache 2.0. Nvidia retter Nemotron 3.5 Super VL mod virksomheders agenter og sender de mindre Bolt-modeller til AI-PC’er. Fælles er ønsket om at eje drift og data; forskellen er hardwarekravet, og ydeevnetallene er foreløbig producenternes egne.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
-    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
+    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+    "https://huggingface.co/blog/reflection-beam",
+    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
    ]
   },
   {
-   "tekst": "Samme uge trådte agenterne ud af demoerne og mødte modstand fra begge sider. Amazon, Yelp, Delta, JPMorgan og Charles Schwab spærer dem ude, mens Shopify åbner sit katalog og Meta forhandler aftaler – nettet fordeles nu mellem dem, der vil have agenter ind, og dem, der vil have dem væk. Omvendt viste sikkerhedsfirmaet Norforge, at en enkelt hacker med færre end 100 kinesiske tegn som instruktion satte AI-agenter til at bryde ind i over 100 hjemmesider, blandt andet John Deere og Cummins. Agenterne kan altså både afvises ved døren og bruges som angrebsvåben.",
+   "tekst": "Ejerskabet rækker ned i chipniveauet. AWS har udgivet TorchNeuron, så AI-apps kan flyttes til Amazons egen Trainium-chip med én ændret linje i stedet for at være bundet til Nvidias CUDA. Cirka 85 procent af AI-apps er skrevet i PyTorch, som er tæt koblet til CUDA. Amazon vil også bidrage hardwareuafhængig kode til selve PyTorch – men det er en plan endnu.",
+   "links": [
+    "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/"
+   ]
+  },
+  {
+   "tekst": "Reglerne for, hvad en agent må, forhandles samtidig på nettet og i retssalene. Shopify giver agenter egne kasser, der springer sider bygget for mennesker over, mens Amazon, Yelp, Delta, JPMorgan Chase og Charles Schwab spærrer dem ude – og Meta forhandler i stedet aftaler med Walmart, Gap, Sephora og Best Buy. Otte amerikanske stater sagsøger OpenAI for at have vildledt offentligheden om ChatGPT’s sikkerhed og indsamlet data om mindreårige; OpenAI afviser beskyldningerne. Spørgsmålet er det samme begge steder: hvem bestemmer, hvad en agent må.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-    "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
-   ]
-  },
-  {
-   "tekst": "Myndighederne og markedet følger med. Otte amerikanske stater sagsøger OpenAI for at vildlede om ChatGPT's sikkerhed og for indsamling af data om mindreårige, mens selskabet afviser beskyldningerne. Og regningen for AI-udbygningen begynder at trykke: CoreWeaves obligationer er glidet i det område, investorer kalder distressed, aktien er faldet over 20 procent, og selskabet skylder over 35 milliarder dollar. Uroen har allerede bredt sig til Oracle og andre selskaber med stor AI-gæld.",
-   "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-    "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai"
+    "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety"
    ]
   }
  ],
- "tendens": "Meta fjernede 17. oktober den formulering i sine erhvervsvilkår, som jurister vurderede kunne give selskabet ret til at hente indhold fra kunders hjemmesider og bruge det til AI-træning. Meta fastholder, at crawling-praksis er uændret, men tre juridiske eksperter vurderede over for Nieman Lab, at det er uvist, om vilkårene overhovedet kan håndhæves – og dermed om formuleringen reelt beskyttede modellerne mod licenskrav.",
+ "tendens": "Meta fjernede 17. oktober den formulering i sine erhvervsvilkår, som jurister mente kunne give selskabet ret til at hente kunders hjemmesideindhold til AI-træning. Det står uafklaret, om vilkårene overhovedet kunne have været håndhævet, og Meta fastholder, at sletningen ikke ændrer på, hvordan selskabets crawlers bruges.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "16a05cddc5ca5e522efb31c075bfa61121ef3b5f97fce7b2bcb5618b4df98e66",
- "dato": "2026-10-20T20:58:03.552858+00:00",
- "opdateret": "2026-10-20T20:58:03.552858+00:00",
- "periode_fra": "2026-10-12T22:00:00+00:00",
- "periode_til": "2026-10-19T22:00:00+00:00",
+ "basis_signatur": "87a02f4810e6bd60743e0d80b220204b70539798a9054102770d5d6e31540b7f",
+ "dato": "2026-10-20T23:52:58.937992+00:00",
+ "opdateret": "2026-10-20T23:52:58.937992+00:00",
+ "periode_fra": "2026-10-13T22:00:00+00:00",
+ "periode_til": "2026-10-20T22:00:00+00:00",
  "stats": {
-  "historier": 95,
+  "historier": 100,
   "kilder": 9
  }
 }
