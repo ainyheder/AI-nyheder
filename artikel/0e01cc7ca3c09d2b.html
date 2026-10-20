@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Simon Willison: LLM&#x27;er tager puslespillet fra programmører</title>
+<meta name="description" content="Willison henviser til Jeremy Scheffs farvel til kodegåderne, efter at kodeagenter har overtaget en del af programmeringen.">
+<link rel="canonical" href="https://ainyheder.com/artikel/0e01cc7ca3c09d2b.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Simon Willison: LLM&#x27;er tager puslespillet fra programmører">
+<meta property="og:description" content="Willison henviser til Jeremy Scheffs farvel til kodegåderne, efter at kodeagenter har overtaget en del af programmeringen.">
+<meta property="og:url" content="https://ainyheder.com/artikel/0e01cc7ca3c09d2b.html">
+<meta property="og:image" content="https://ainyheder.com/data/img/f93d3a61ff7c5ad7.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Simon Willison: LLM'er tager puslespillet fra programmører", "description": "Willison henviser til Jeremy Scheffs farvel til kodegåderne, efter at kodeagenter har overtaget en del af programmeringen.", "url": "https://ainyheder.com/artikel/0e01cc7ca3c09d2b.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/0e01cc7ca3c09d2b.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "image": "https://ainyheder.com/data/img/f93d3a61ff7c5ad7.jpg", "datePublished": "2026-10-19T23:58:25+00:00", "articleSection": "Samfund \u0026 etik", "isBasedOn": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Samfund &amp; etik · Simon Willison AI · 19.10.2026 · 2 min. læsning</div>
+<h1>Simon Willison: LLM&#x27;er tager puslespillet fra programmører</h1>
+<div class="article-intro"><img class="top" src="/data/img/f93d3a61ff7c5ad7.webp" alt="A jigsaw puzzle half-assembled on a solid plate, with the loose remaining pieces lifting away from the puzzle into a robotic claw arm, while one finished corner section stays intac"><p class="manchet">Willison henviser til Jeremy Scheffs farvel til kodegåderne, efter at kodeagenter har overtaget en del af programmeringen.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>Programmørens job var et betalt puslespil</h2>
+<p>Jeremy Scheff beskriver i et indlæg, som Simon Willison har linket til, programmørjobbet som et af de bedste, man kan forestille sig: Man blev betalt for at løse svære logiske puslespil.</p><p>Jo sværere puslespillet var, jo mere tjente man. Men selv ret simple opgaver var mange penge værd, fordi almindelige mennesker bare ikke kunne løse dem.</p><p>De, der stillede opgaven, fik den løst på programmørens præmisser. Strategien, tidsplanen og vurderingen af, hvad der overhovedet var muligt, lå hos programmøren.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Tabet rammer ikke alle programmører</h2>
+<p>LLM&#x27;er (sprogmodeller, der blandt andet kan skrive kode) samt kodeagenter, der udfører programmeringsopgaver for brugeren, overtager nu en del af arbejdet. Willisons pointe er, at konsekvensen afhænger af, hvad man egentlig nød ved jobbet.</p><p><strong>Tabet afhænger af, hvad man nød ved jobbet.</strong> Hvis man trives med at bygge systemer, der virker, og ikke bekymrer sig nærværende om problemerne undervejs, er modellerne ifølge Willison en gave, der bliver ved med at give.</p><p>Hvis selve gådeløsningen var en stor del af fornøjelsen, er tabet ifølge ham meget reelt.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Kommentar, ikke et nyt værktøj</h2>
+<p>Det er vigtigt at placere indlægget rigtigt. Der er tale om et linkopslag fra Willison, der peger videre til Jeremy Scheffs tekst - ikke om lanceringen af et nyt system eller et nyt forskningsresultat.</p><p>Ingen tal for fejlrater, hastighed eller priser optræder i materialet. Tabet beskrives som en ændring i oplevelsen af jobbet, ikke som en målt effekt.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>Jeremy Scheff har skrevet det indlæg, som Willison linker til.</li><li>Linkopslaget er dateret 19. oktober 2026.</li><li>Willison udgiver desuden en betalt e-mailopsummering af månedens vigtigste LLM-udviklinger for 10 dollar om måneden.</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>Programmører, som primært nød at løse gåderne selv, mister mere af jobbet end kolleger, som bare vil have systemet til at virke.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/" rel="noopener">Simon Willison AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · AI-genereret illustration · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

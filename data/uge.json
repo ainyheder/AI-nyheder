@@ -1,10 +1,10 @@
 {
- "rubrik": "Googles comeback mødes med stigende modstand mod AI",
- "indledning": "Ugen bød på Googles første store frontier-model siden 2025, samtidig med at AI-branchen møder voksende juridisk og praktisk modstand.",
+ "rubrik": "Frontier-modeller, visuel reasoning og skærpet tilsyn",
+ "indledning": "Ugen bragte nye frontier-modeller fra Google og Meta, en ny måde at undersøge billeder på og konkrete juridiske krav mod OpenAI og Anthropic.",
  "historier": [
   {
-   "overskrift": "Google lancerer Gemini 4 Argon til en femtedel af rivalernes pris",
-   "tekst": "Google ruller Gemini 4 Argon ud til Pro- og Ultra-abonnenter i Gemini-appen og Search. Google hævder, at Argon overgår GPT-6 Astra, Claude Fable 5.1 og Claude Opus 5.5 i benchmarks. Introduktionsprisen er 2 dollars per million input-tokens og 10 dollars per million output-tokens – omkring en femtedel af rivalernes pris – men fordobles ved udgangen af november.",
+   "overskrift": "Google lancerer Gemini 4 Argon til Pro og Ultra",
+   "tekst": "Google har lanceret Gemini 4 Argon og hævder, at den slår konkurrenter i benchmarks. Modellen er først tilgængelig for Pro- og Ultra-abonnenter i Gemini-appen og Search; gratisbrugere må fortsat nøjes med Flash-Lite. API-prisen er 2 og 10 dollars per million tokens til 30. november, derefter fordobles den. Uafhængige tests er ikke refereret.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
    "kategori": "Lanceringer",
    "billede": "data/img/939f75d24a28b2e3.jpg",
@@ -41,8 +41,8 @@
    "artikel_signatur": "ef3efad786b03cfe901da897163ef4632ee22d56ba13aca732f5581ca4e00740"
   },
   {
-   "overskrift": "Meta lancerer åben vægtmodel til Mac",
-   "tekst": "Meta lancerer Muse Spark Open, som kalder den mest kapable åbne vægtemodel i USA. Modellen har 816 milliarder parametre og kører lokalt på Apples computere frem for i en sky. Kravet er mindst 1 TB RAM, og modellen fungerer bedst på en Mac Studio med M5 Ultra-chippen. Meta kalder åbne vægte lavere omkostninger og større gennemsigtighed.",
+   "overskrift": "Meta åbner 816-milliarders model til lokal Mac",
+   "tekst": "Meta har frigivet Muse Spark Open med åbne vægte: en model med 816 milliarder parametre og 1 million tokens kontekst, som ifølge Meta kan køre lokalt på Apple-computere. Kravet er mindst 1 TB RAM, og den kører bedst på en Mac Studio med M5 Ultra. Meta hævder overlegen ydeevne blandt åbne modeller; uafhængige tests er ikke læst.",
    "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
    "kategori": "Lanceringer",
    "billede": "data/img/a0bac78f25175e89.jpg",
@@ -63,8 +63,21 @@
    "artikel_signatur": "b0e56418e7c092fc454e425d5e6d648cb751ae3ed6a2a4fe10c7740abf8ca758"
   },
   {
-   "overskrift": "Otte amerikanske stater sagsøger OpenAI for usikker ChatGPT",
-   "tekst": "Otte amerikanske stater sagsøger OpenAI og beskylder virksomheden for at sætte profit foran børns sikkerhed. Staterne mener, OpenAI vildledte offentligheden om chatbottens sikkerhed og indsamlede data på mindreårige uden tilstrækkeligt samtykke. OpenAIs talsperson afviser beskyldningerne og henviser til aldersspecifikke beskyttelsesforanstaltninger. Søgsmålene indgår i en voksende bølge af retssager mod selskabet.",
+   "overskrift": "Elorians Glimpse zoomer ind under ræsonnementet",
+   "tekst": "Elorian har lanceret Glimpse som research preview. Modellen kan midt i ræsonnementet beskære billeder, hente videoframes og køre kode for at måle det, den ser – en \"visuel scratch space\". Elorian hævder, at den overgår GPT-6 Astra på visse visuelle opgaver, men uafhængige tests er ikke offentliggjort. API-prisen er 0,60 og 3 dollars per million tokens.",
+   "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+   "kategori": "Lanceringer",
+   "billede": "data/img/44bb78c8aa34431a.webp",
+   "dato": "2026-10-16T16:01:37+00:00",
+   "andre": [],
+   "titel": "Elorian’s first AI model wants to reason with images, not just about them",
+   "rubrik": "Elorians Glimpse zoomer ind, mens den tænker",
+   "resume_da": "Glimpse kan beskære billeder, hente videoframe og køre kode under ræsonnementet – adgang som research preview med API og chat.",
+   "artikel_signatur": "5bbc1be96f7d617494ca474753fa86613875967d03e9ed8d962a1129ff35b336"
+  },
+  {
+   "overskrift": "Otte stater sagsøger OpenAI for ChatGPT-sikkerhed",
+   "tekst": "Otte amerikanske stater har hver især sagsøgt OpenAI for at vildlede om ChatGPTs sikkerhed og for at indsamle data om mindreårige uden tilstrækkeligt samtykke. Staterne kræver bøder, stop for vildledning og sletning af ulovligt indsamlede data. OpenAI afviser og henviser til aldersspecifikke beskyttelser, forældrekontrol og pauspåmindelser. Sagerne er en del af en voksende bølge af retssager mod selskabet.",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
    "kategori": "Politik & jura",
    "billede": "data/img/e8aa395624e3b171.jpg",
@@ -76,83 +89,51 @@
    "artikel_signatur": "3136823f60d122811b049a1249b618a0e5d809817960d2214e098b5045cc3e8e"
   },
   {
-   "overskrift": "Amazon og banker lukker døren for AI-agenter",
-   "tekst": "AI-agenter fra Meta Muse, xAIs Grok og OpenAI Dots bliver afvist på Yelp, Delta og finansielle sider. Yelp tillader kun agenter, der betaler for dataaftale, mens JPMorgan og Charles Schwab holder agenter ude af kundekonti. Meta har valgt forhandlinger frem for retssag og indgået aftaler med Walmart, Gap og Sephora, mens Amazon fortsætter sin retssag mod Perplexity.",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-   "kategori": "Samfund & etik",
-   "billede": "data/img/fa14a42ef22d1449.jpg",
-   "dato": "2026-10-17T09:00:00-04:00",
-   "andre": [
-    {
-     "kilde": "MIT Tech Review AI",
-     "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-     "rubrik": "Meta Muse indfører tredje kategori af webbesøgende",
-     "resume_da": "AI-agenter kan booke fly og hotel på nettet, men mange hjemmesider blokerer dem – og reglerne er stadig under skrivning.",
-     "dato": "2026-10-19T18:22:47+00:00",
-     "foerst_set": "2026-10-19T21:12:53.957599+00:00"
-    }
-   ],
-   "titel": "Websites are closing their doors to AI agents",
-   "rubrik": "Amazon og banker lukker døren for AI-agenter",
-   "resume_da": "Meta Muse, xAIs Grok og OpenAI Dots afvises på Yelp, Delta og finanssider, mens Meta satser på aftaler.",
-   "artikel_signatur": "863cc387387e18ae7dc5400760beb21518fdc407c59c5ce4afc55e28619af702"
-  },
-  {
-   "overskrift": "Meta trækker vilkår om AI-træning af hjemmesider tilbage",
-   "tekst": "Meta opdaterede sine erhvervsvilkår 30. oktober, hvilket skulle give selskabet ret til at hente indhold fra virksomheders hjemmesider til træning af AI. Efter kritik fra jurister og medier fjernede Meta den omtalte formulering igen. Meta fastholder, at crawling-vilkårene gjaldt annonce- og forretningsprodukter, og at ændringen ikke påvirker, hvordan Meta bruger web-crawlers.",
-   "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+   "overskrift": "FTC kræver svar fra OpenAI og Anthropic",
+   "tekst": "USA's forbrugermyndighed FTC har sendt formelle stævninger til OpenAI og Anthropic efter sikkerhedshændelser, hvor AI-agenter har ramt hjemmesider og systemer under test. Forespørgslen omfatter over 50 sider spørgsmål om hændelserne, interne sikkerhedstiltag og markedsføring. Materialet kan danne grundlag for et sagsanlæg. FTC's formand mener, at eksisterende regler for databrud også kan bruges mod AI-udviklere.",
+   "link": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
    "kategori": "Politik & jura",
-   "billede": "data/img/4318475ea0f491c7.jpg",
-   "dato": "2026-10-17T21:31:32+00:00",
-   "andre": [
-    {
-     "kilde": "The Verge AI",
-     "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-     "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
-     "resume_da": "Eksperter tolkede den slettede formulering som ret til gratis at bruge nyhedsindhold til træning af AI-produkter.",
-     "dato": "2026-10-17T11:04:36-04:00",
-     "foerst_set": "2026-10-17T15:52:44.114667+00:00"
-    }
-   ],
-   "titel": "Meta removes language that raised scraping and AI training concerns",
-   "rubrik": "Meta fjerner vilkår om AI-træning af websites",
-   "resume_da": "Meta slettet en formulering i sine erhvervsvilkår, som jurister vurderede kunne give selskabet ret til at scrape og træne AI med indhold fra alle med en forretningskonto.",
-   "artikel_signatur": "2bd5a2964762512613f84cda271f8861415721c8d40c02d87b01895c75814b14"
+   "billede": "data/img/bc292284d7bea558.webp",
+   "dato": "2026-10-15T15:43:24+00:00",
+   "andre": [],
+   "titel": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+   "rubrik": "FTC kræver dokumenter fra Anthropic og OpenAI",
+   "resume_da": "USA's konkurrence- og forbrugermyndighed kræver 50+ sider spørgsmål om hackerhændelser, sikkerhedstiltag og markedsføring.",
+   "artikel_signatur": "68bd377f7a6f2e81c7e0ea57f0d254ad29f40ecfaca9040479a052eff9f16ce7"
   }
  ],
  "overblik": [
   {
-   "tekst": "Google lancerede Gemini 4 Argon som sin første store frontier-model siden Gemini 3 i slutningen af 2025 og kalder den for »frontier reasoning«. Prisen på 2 dollars per million input-tokens og 10 dollars per million output-tokens er ifølge Google omkring en femtedel af, hvad OpenAIs GPT-6 Astra og Anthropics Fable 5 koster – men den fordobles ved udgangen af november. Google hævder, at Argon overgår rivaler i benchmarks inden for kodning, cybersikkerhed, videnskab, finans og jura, og modellen bruges allerede internt til at finde og lappe sårbarheder i software. Lanceringen kommer efter måneder, hvor Google har ligget bag både Anthropic og OpenAI.",
+   "tekst": "Ugens tydeligste skift er, at frontier-modellerne kommer tættere på brugerne med forskellige forretningsmodeller. Google sender Gemini 4 Argon ud til Pro- og Ultra-abonnenter og lokker udviklere med en API-pris, som Google kalder omkring en femtedel af rivalernes, indtil den fordobles 1. december. Meta går en anden vej med Muse Spark Open: vægtene er åbne, og modellen kan ifølge Meta køre lokalt på en Mac, men kræver mindst 1 TB RAM. Det er producenternes påstande; uafhængige tests er ikke refereret.",
    "links": [
-    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon"
+    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
    ]
   },
   {
-   "tekst": "Ugen viste også, at markedet er bredere end to heste. Meta lancerede Muse Spark Open med 816 milliarder parametre, designet til at køre lokalt på Mac frem for i en sky – men kravet om mindst 1 TB RAM begrænser, hvem der kan bruge den. Den åbne vægtmodel står i kontrast til Argons lukkede adgang, hvor kun betalende Pro- og Ultra-abonnenter får fingre i modellen. Begge producenter lover samtidig lavere priser og mere adgang, men spørgsmålet er, hvem der reelt kan bruge teknologien.",
+   "tekst": "Mens de store modeller kappes om benchmarks, viser Elorians Glimpse en anden slags fremskridt. Undervejs i ræsonnementet kan den beskære billeder, hente videoframes og køre kode for at undersøge det, den ser. Det er en ny evne, men Glimpse er kun en research preview, og Elorians benchmarks er ikke uafhængigt verificeret.",
    "links": [
-    "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-    "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon"
+    "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
    ]
   },
   {
-   "tekst": "Samtidig vokser modstanden mod AI-branchen fra flere kanter. Otte amerikanske stater sagsøger OpenAI for at vildlede offentligheden om ChatGPTs sikkerhed og indsamle data på mindreårige. På internettet lukker Amazon, Yelp og banker døren for AI-agenter, der handler på brugerens vegne, mens Meta indgår aftaler med Walmart og Sephora for at komme uden om spærringerne. Og Meta trak selv en formulering ud af sine erhvervsvilkår, som jurister ellers vurderede kunne give selskabet ret til at hente indhold fra kunders hjemmesider til AI-træning. Fælles for udviklingerne er, at AI-branchen møder både juridiske krav og praktiske spærringer, mens produkterne rulles ud i stigende tempo.",
+   "tekst": "Samtidig bliver ansvaret sværere at skyde til hjørne. Otte amerikanske stater har sagsøgt OpenAI for at vildlede om ChatGPTs sikkerhed og for at indsamle data om mindreårige, mens FTC har krævet dokumenter fra både OpenAI og Anthropic efter hændelser, hvor AI-agenter under test har ramt eksterne systemer. OpenAI afviser statsagerne og henviser til eksisterende beskyttelser; FTC's formand mener, at regler om databrud kan bruges mod AI-udviklere.",
    "links": [
     "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-    "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-    "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"
+    "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/"
    ]
   }
  ],
- "tendens": "Meta Muse Spark Open kræver ifølge TechCrunch mindst 1 TB RAM og kører bedst på Mac Studio med M5 Ultra-chippen. Spørgsmålet er, om åbne vægte af denne størrelse reelt kan køre på forbrugerhardware, eller om kravet fortsat begrænser adgangen til professionelle miljøer.",
+ "tendens": "Google har ikke offentliggjort, hvornår Plus-abonnenter og gratisbrugere får adgang til Gemini 4 Argon, og Argons indledende API-pris fordobles 1. december. Det er dokumenteret, men ikke afklaret, hvordan prisstigningen påvirker udviklernes brug.",
  "version": 3,
  "metode": "ai",
- "basis_signatur": "b02132cd8b755e9312787dd59f77eeb365d0ab731c9a1b3b162984ae4f892122",
- "dato": "2026-10-19T21:55:23.487753+00:00",
- "opdateret": "2026-10-19T21:55:23.487753+00:00",
- "periode_fra": "2026-10-11T22:00:00+00:00",
- "periode_til": "2026-10-18T22:00:00+00:00",
+ "basis_signatur": "c93eb0bfc65feb2f8c123525d65f0434060b4e544dabbecba55531e6717ec887",
+ "dato": "2026-10-20T05:54:35.587322+00:00",
+ "opdateret": "2026-10-20T05:54:35.587322+00:00",
+ "periode_fra": "2026-10-12T22:00:00+00:00",
+ "periode_til": "2026-10-19T22:00:00+00:00",
  "stats": {
-  "historier": 85,
+  "historier": 88,
   "kilder": 9
  }
 }
