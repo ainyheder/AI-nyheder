@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-nyheder.com · Hugging Face gør TPU til almindelig PyTorch-enhed</title>
+<meta name="description" content="Med TorchTPU kører Transformers og Diffusers direkte på Googles TPU-chips uden omskrivning af koden.">
+<link rel="canonical" href="https://ainyheder.com/artikel/7c77a58ac56bd9a6.html">
+<meta name="theme-color" content="#0c0e12">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI-nyheder">
+<meta property="og:title" content="Hugging Face gør TPU til almindelig PyTorch-enhed">
+<meta property="og:description" content="Med TorchTPU kører Transformers og Diffusers direkte på Googles TPU-chips uden omskrivning af koden.">
+<meta property="og:url" content="https://ainyheder.com/artikel/7c77a58ac56bd9a6.html">
+<meta property="og:image" content="https://ainyheder.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/fonts/skrifter.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Hugging Face gør TPU til almindelig PyTorch-enhed", "description": "Med TorchTPU kører Transformers og Diffusers direkte på Googles TPU-chips uden omskrivning af koden.", "url": "https://ainyheder.com/artikel/7c77a58ac56bd9a6.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ainyheder.com/artikel/7c77a58ac56bd9a6.html"}, "inLanguage": "da-DK", "isAccessibleForFree": true, "author": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "publisher": {"@type": "Organization", "name": "AI-nyheder", "url": "https://ainyheder.com"}, "datePublished": "2026-10-20T00:00:00+00:00", "articleSection": "Labs", "isBasedOn": "https://huggingface.co/blog/hf-torchtpu"}</script>
+<style>
+:root { --bg:#f6f7f9; --bg-kort:#ffffff; --blaek:#15171c; --blaek-svag:#5f6672;
+  --linje:#e4e7ec; --accent:#5b4bf0; --accent-svag:#ecebfd; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Inter",-apple-system,sans-serif; background:var(--bg); color:var(--blaek); line-height:1.6; }
+.topbar { position:sticky; top:0; background:color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--linje); padding:14px 28px; }
+.brand { font-family:"Fraunces",Georgia,serif; font-weight:900; font-size:24px; letter-spacing:-.03em; text-decoration:none; color:inherit; display:inline-flex; align-items:center; }
+.brand-logo { width:28px; height:28px; margin-right:9px; display:block; flex:none; }
+.brand em { font-style:normal; color:var(--accent); }
+main { max-width:720px; margin:0 auto; padding:44px 24px 80px; }
+.kicker { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+h1 { font-family:"Fraunces",Georgia,serif; font-weight:900; letter-spacing:-.02em;
+  font-size:clamp(28px,5vw,40px); line-height:1.12; margin-bottom:14px; }
+.manchet { font-size:17px; line-height:1.65; color:var(--blaek-svag); margin-bottom:22px; }
+img.top { width:100%; border-radius:16px; margin-bottom:24px; }
+h2 { font-family:"Fraunces",Georgia,serif; font-weight:800; font-size:21px; margin:28px 0 8px; }
+p { font-size:15.5px; line-height:1.75; margin-bottom:13px; }
+li { font-size:14.5px; line-height:1.7; margin:6px 0 6px 20px; }
+.boks { background:var(--accent-svag); border-left:3px solid var(--accent); border-radius:0 12px 12px 0;
+  padding:14px 18px; margin:20px 0; font-size:15px; }
+.kilde { display:inline-block; font-size:13px; font-weight:700; text-decoration:none; color:inherit;
+  border:1px solid var(--linje); background:var(--bg-kort); padding:8px 16px; border-radius:999px; margin:4px 6px 0 0; }
+.kilde:hover { border-color:var(--accent); color:var(--accent); }
+.cta { display:inline-block; font-size:14px; font-weight:700; text-decoration:none; color:#fff;
+  background:var(--accent); padding:12px 24px; border-radius:999px; margin-top:26px; }
+.note { font-size:12.5px; color:var(--blaek-svag); margin-top:22px; }
+footer { border-top:1px solid var(--linje); padding:30px 26px; text-align:center; font-size:12px; color:var(--blaek-svag); }
+footer a { color:var(--accent); }
+</style>
+<link rel="stylesheet" href="/assets/artikel.css?v=2">
+</head>
+<body>
+<a class="article-skip" href="#artikeltekst">Spring til artiklen</a>
+<div class="topbar"><a class="brand" href="/" aria-label="AI-nyheder, forsiden"><img class="brand-logo" src="/assets/ai-mark.svg" alt="" width="32" height="32" decoding="async"><span>nyheder</span></a><a class="article-models" href="/modeller.html">Modellanceringer</a></div>
+<main id="artikeltekst" tabindex="-1">
+<a class="article-back" href="/">← Tilbage til nyhederne</a>
+<div class="kicker">Labs · Hugging Face · 20.10.2026 · 2 min. læsning</div>
+<h1>Hugging Face gør TPU til almindelig PyTorch-enhed</h1>
+<div class="article-intro"><p class="manchet">Med TorchTPU kører Transformers og Diffusers direkte på Googles TPU-chips uden omskrivning af koden.</p></div>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">01</span>TPU kræver ikke længere omvej via JAX</h2>
+<p>Hvis du tidligere ville køre PyTorch på Googles TPU-chips, måtte du oversætte koden til torch_xla eller skifte til JAX. Med TorchTPU bliver TPU blot endnu en enhed i PyTorch: du skriver almindelig kode og sender modellen til &quot;tpu&quot;.</p><p>TorchTPU er en ny backend til PyTorch, der tilføjer native TPU-funktioner – herunder Pallas-kerner (lavt-faldende kodning til TPU-hardwaren), distribueret træning og integration med torch.compile for ekstra hastighed. Det installeres med én kommando på en TPU-VM.</p></section>
+<dl class="article-metrics"><div><dt>Hastigere decoding ved batch 64 på Qwen3-30B-A3B, Hub-kernel vs. standard</dt><dd>21,5×</dd></div><div><dt>Hastigere decoding ved batch 64 på Gemma 4 26B-A4B, Hub-kernel vs. standard</dt><dd>12,8×</dd></div><div><dt>Andel af testsuite-tests der bestås på TPU</dt><dd>96,5 %</dd></div></dl><section class="article-section"><h2><span class="section-index" aria-hidden="true">02</span>Transformers og Diffusers kører direkte på TPU</h2>
+<p>For at indlæse en model fra Hugging Face Hub på TPU sætter du bare enhedskortet til &quot;tpu&quot; – modellen indlæses direkte på chippen. Koden ændres i én linje.</p><p>I Diffusers, som bruges til at generere billeder og video, er TPU nu en førsteklasses enhed. I debug-tilstand er ændringen blot en linje: pipe.to(&quot;tpu&quot;). Til drift kan du tilføje ét compile-kald for bedre ydeevne, uden at pipeline-koden ændres.</p><p>Modeller, der er for store til én enkelt chip, kan fordeles automatisk over flere med TensorParallelConfig – så modellen aldrig skal være ét sted samtidig.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">03</span>Optimum TPU overflødiggjort</h2>
+<p>Hugging Face havde tidligere bygget Optimum TPU for at give Transformers- og Diffusers-modeller understøttelse på TPU. Med TorchTPU&#x27;ernes native understøttelse er Optimum TPU ikke længere nødvendigt for at køre Hugging Face-modeller.</p><p>Hugging Face tester også løbende TPU-understøttelse ved at køre bibliotekets testsuite på TPU. Lige nu består 96.5 % af de TPU-kørende tests. Af 34 rapporterede fejl er 19 allerede rettet i TorchTPU-repositoriet.</p></section>
+<section class="article-section"><h2><span class="section-index" aria-hidden="true">04</span>Kerner giver op mod 21,5× hurtigere decoding</h2>
+<p>Kernels Hub indeholder færdige TPU-kerner skrevet i Pallas, som giver kontrol direkte på hardwaren. Hugging Face har også integreret kerner fra Tokamax-biblioteket i Mixture-of-Experts-modeller.</p><p>Målt på en TPU v6e-8 ved batchstørrelse 64 opnås decoding 21,5× hurtigere på Qwen3-30B-A3B og 12,8× hurtigere på Gemma 4 26B-A4B sammenlignet med standardimplementeringen.</p></section>
+
+<details class="boks article-details"><summary>Flere detaljer</summary><ul><li>TorchTPU installeres med pip install torch-tpu på en TPU-VM</li><li>Transformers v5 er bygget til at køre ethvert sted – nu også TPU</li><li>TPU&#x27;er er tilgængelige på Google Cloud fra en chip til pods med tusindvis</li><li>TPU-rapporter vises i et Transformers CI-dashboard (arbejde i gang)</li></ul></details>
+<div class="boks" style="border-left-color:#2e9e5b;"><strong>Derfor er det interessant</strong>PyTorch-brugere får adgang til Googles TPU-kapacitet uden at skifte frameworks, hvilket sænker barrieren for træning og drift på store chipklynger.</div>
+<p style="margin-top:24px"><strong>Kilder:</strong><br><a class="kilde" href="https://huggingface.co/blog/hf-torchtpu" rel="noopener">Hugging Face →</a> <a class="kilde" href="https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/" rel="noopener">TechCrunch AI →</a></p>
+<a class="cta" href="/">Læs dagens AI-nyheder på letlæst dansk →</a>
+<p class="note">Genfortalt i egne ord af AI-nyheder.com · Tjek altid originalkilden, før du handler på vigtige oplysninger.</p>
+</main>
+<footer>© 2026 AI-nyheder · <a href="/om.html">Om os</a> · <a href="/vaerktoejer.html">Værktøjer</a></footer>
+<!-- Cloudflare Web Analytics (privatlivsvenlig besøgsstatistik, ingen cookies) -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fda17dd7ade34a579f4ec6d615265fa6"}'></script>
+</body>
+</html>

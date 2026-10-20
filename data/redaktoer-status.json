@@ -1,17 +1,17 @@
 {
-  "opdateret": "2026-10-20T13:48:46.699225+00:00",
+  "opdateret": "2026-10-20T20:06:38.203833+00:00",
   "status": "reserve",
   "model": "mimo-v2.6-flash",
   "reasoning_effort": "enabled",
   "regelbaseret_udvalg": [
+    "https://mistral.ai/news/voxtral-3/",
     "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-    "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
-    "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+    "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed"
   ],
-  "input_fingerprint": "e593422b71f0b080",
-  "forklaring": "Den færdige udgave blev ikke godkendt mod kilderne",
+  "input_fingerprint": "21b31ca571a3ea13",
+  "forklaring": "Udgavekontrol fejlede: TypeError",
   "modelkald": 6,
-  "kildehentninger": 4,
+  "kildehentninger": 5,
   "vaerktoejer": [
     {
       "vaerktoej": "find_kilder",
@@ -46,11 +46,23 @@
       "fejl": null
     },
     {
-      "vaerktoej": "laes_kilde",
+      "vaerktoej": "find_kilder",
       "fejl": null
     },
     {
       "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "find_kilder",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
+      "fejl": null
+    },
+    {
+      "vaerktoej": "laes_kilde",
       "fejl": null
     },
     {
@@ -60,7 +72,7 @@
   ],
   "kildegrundlag": [
     {
-      "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "link": "https://mistral.ai/news/voxtral-3/",
       "grundlag": "kildetekst"
     },
     {
@@ -68,18 +80,22 @@
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+      "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
       "grundlag": "kildetekst"
     },
     {
-      "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+      "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+      "grundlag": "kildetekst"
+    },
+    {
+      "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
       "grundlag": "kildetekst"
     }
   ],
   "udgivet_udvalg": [
-    "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-    "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+    "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
     "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/"
   ],
-  "afventer_artikler": 55
+  "afventer_artikler": 59
 }
