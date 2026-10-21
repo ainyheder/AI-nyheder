@@ -1,6 +1,6 @@
 window.KILDER_STATUS = {
- "opdateret": "2026-10-20T23:20:11.721476+00:00",
- "artikler_i_alt": 120,
+ "opdateret": "2026-10-21T05:13:21.754506+00:00",
+ "artikler_i_alt": 122,
  "kilder": [
   {
    "navn": "Anthropic News",
@@ -69,9 +69,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 15,
-   "i_listen": 2,
+   "i_listen": 3,
    "som_ekstra": 0,
    "seneste": [
+    {
+     "rubrik": "Mistral bygger taleagent i én pipeline",
+     "dato": "2026-10-20T12:00:22",
+     "foerst_set": "2026-10-20T20:06:38",
+     "link": "https://mistral.ai/news/voxtral-3/",
+     "side": "artikel/90e3b37a09eaeb60.html",
+     "hvor": "forside",
+     "under": ""
+    },
     {
      "rubrik": "Mistral Large 4 klarer opgaver andre afviser",
      "dato": "2026-10-06T12:00:27",
@@ -264,12 +273,7 @@ window.KILDER_STATUS = {
      "under": ""
     }
    ],
-   "overlap": [
-    [
-     "TechCrunch AI",
-     1
-    ]
-   ]
+   "overlap": []
   },
   {
    "navn": "Simon Willison AI",
@@ -281,7 +285,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 8,
+   "i_listen": 7,
    "som_ekstra": 1,
    "seneste": [
     {
@@ -355,15 +359,6 @@ window.KILDER_STATUS = {
      "side": "artikel/01892a7693f14e4f.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Gemini 4 Argon lanceres billigt, men prisen fordobles",
-     "dato": "2026-10-13T22:28:54",
-     "foerst_set": "2026-10-13T23:50:16",
-     "link": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-     "side": "artikel/285c1f1903787d89.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -383,18 +378,9 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 10,
-   "i_listen": 50,
-   "som_ekstra": 4,
+   "i_listen": 52,
+   "som_ekstra": 3,
    "seneste": [
-    {
-     "rubrik": "Google udgiver TorchTPU og udfordrer Nvidia",
-     "dato": "",
-     "foerst_set": "2026-10-20T20:06:38",
-     "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-     "side": "",
-     "hvor": "under",
-     "under": "Hugging Face gør TPU til almindelig PyTorch-enhed"
-    },
     {
      "rubrik": "Anthropic afsætter fem procent af aktier til fond",
      "dato": "",
@@ -455,6 +441,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-20T23:20:11",
      "link": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
      "side": "artikel/d0ed25b4adb5b94a.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Anthropic mangler cloudkapacitet hos AWS, Google og Microsoft",
+     "dato": "2026-10-20T21:25:22",
+     "foerst_set": "2026-10-20T23:20:11",
+     "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+     "side": "artikel/b14d2c98d7d92c02.html",
      "hvor": "forside",
      "under": ""
     },
@@ -522,6 +517,15 @@ window.KILDER_STATUS = {
      "under": ""
     },
     {
+     "rubrik": "USA beordrer DeepSeek fjernet fra føderale systemer",
+     "dato": "2026-10-20T13:07:24",
+     "foerst_set": "2026-10-20T13:48:46",
+     "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+     "side": "artikel/baab9c27d2ea33a2.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
      "rubrik": "Yelp ringer restauranten for dig efter ventetid",
      "dato": "2026-10-20T11:00:00",
      "foerst_set": "2026-10-20T13:48:46",
@@ -538,24 +542,6 @@ window.KILDER_STATUS = {
      "side": "artikel/85e233d0b1664751.html",
      "hvor": "forside",
      "under": ""
-    },
-    {
-     "rubrik": "Eka-robot henter 1.500 objekter i timen",
-     "dato": "2026-10-20T13:00:00",
-     "foerst_set": "2026-10-20T13:48:46",
-     "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
-     "side": "artikel/185426ba2ac3ad8c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Microsoft kalder AI-agenter for interne trusler",
-     "dato": "2026-10-19T22:04:28",
-     "foerst_set": "2026-10-20T05:10:40",
-     "link": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
-     "side": "artikel/244c6a89b0fc2289.html",
-     "hvor": "forside",
-     "under": ""
     }
    ],
    "overlap": [
@@ -564,11 +550,11 @@ window.KILDER_STATUS = {
      6
     ],
     [
-     "Hugging Face",
+     "OpenAI Blog",
      1
     ],
     [
-     "OpenAI Blog",
+     "Ars Technica AI",
      1
     ],
     [
@@ -588,8 +574,26 @@ window.KILDER_STATUS = {
    "fejl": "",
    "hentet": 10,
    "i_listen": 27,
-   "som_ekstra": 7,
+   "som_ekstra": 9,
    "seneste": [
+    {
+     "rubrik": "Gemini i bilen bruger nu dine Google-apps",
+     "dato": "",
+     "foerst_set": "2026-10-20T23:20:11",
+     "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+     "side": "",
+     "hvor": "under",
+     "under": "Gemini trænger ind i bilens kabine"
+    },
+    {
+     "rubrik": "Meta pauser Muse-deling efter over 6.800 links",
+     "dato": "",
+     "foerst_set": "2026-10-20T20:06:38",
+     "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta Muse suspenderer deling af links"
+    },
     {
      "rubrik": "Meta fjerner sprog om scraping af nyhedssider",
      "dato": "",
@@ -769,7 +773,7 @@ window.KILDER_STATUS = {
     ],
     [
      "Ars Technica AI",
-     3
+     5
     ],
     [
      "Google Gemini",
@@ -787,9 +791,18 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 12,
-   "i_listen": 10,
-   "som_ekstra": 3,
+   "i_listen": 11,
+   "som_ekstra": 4,
    "seneste": [
+    {
+     "rubrik": "Meta fjerner train fra kommercielle vilkår",
+     "dato": "",
+     "foerst_set": "2026-10-20T23:20:11",
+     "link": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
+     "side": "",
+     "hvor": "under",
+     "under": "Meta fjerner vilkår om AI-træning af websites"
+    },
     {
      "rubrik": "YouTube Music mærker sange lavet med AI",
      "dato": "",
@@ -823,6 +836,15 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-20T20:06:38",
      "link": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
      "side": "artikel/5a9bfc2289e051b6.html",
+     "hvor": "forside",
+     "under": ""
+    },
+    {
+     "rubrik": "Meta skal navngive chefer bag pirat-download",
+     "dato": "2026-10-20T17:40:20",
+     "foerst_set": "2026-10-20T20:06:38",
+     "link": "https://arstechnica.com/tech-policy/2026/10/meta-ordered-to-name-execs-who-approved-torrenting-for-ai-training/",
+     "side": "artikel/4d4ede3ec5f0316b.html",
      "hvor": "forside",
      "under": ""
     },
@@ -911,7 +933,11 @@ window.KILDER_STATUS = {
    "overlap": [
     [
      "The Verge AI",
-     3
+     5
+    ],
+    [
+     "TechCrunch AI",
+     1
     ],
     [
      "Google Gemini",
@@ -929,7 +955,7 @@ window.KILDER_STATUS = {
    "status": "ok",
    "fejl": "",
    "hentet": 6,
-   "i_listen": 7,
+   "i_listen": 6,
    "som_ekstra": 0,
    "seneste": [
     {
@@ -965,15 +991,6 @@ window.KILDER_STATUS = {
      "foerst_set": "2026-10-19T21:12:53",
      "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
      "side": "artikel/e7a08d8bbd49f19c.html",
-     "hvor": "forside",
-     "under": ""
-    },
-    {
-     "rubrik": "Shopify åbner egne kasser til AI-agenter",
-     "dato": "2026-10-19T18:22:47",
-     "foerst_set": "2026-10-19T21:12:53",
-     "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-     "side": "artikel/007fe264c1b33c11.html",
      "hvor": "forside",
      "under": ""
     },
